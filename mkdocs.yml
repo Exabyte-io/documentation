@@ -1,0 +1,12 @@
+site_name: Exabyte.io
+theme_dir: exabyte_theme
+pages:
+- ['index.md', 'Home']
+# Web
+- ['tutorials/first-steps.md', 'Tutorials', 'Quickstart']
+# Cluster
+- ['cluster/index.md', 'Advanced', 'Compute Platform (CP)']
+- ['cluster/general.md', 'Advanced', 'CP:Overview']
+- ['cluster/accounting.md', 'Advanced', 'CP:Accounting']
+- ['cluster/environment.md', 'Advanced', 'CP:Environment']
+- ['cluster/jobs.md', 'Advanced', 'CP:Jobs']
