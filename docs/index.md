@@ -6,7 +6,7 @@ Welcome to our documentation repository. We aim to provide all necessary informa
 ## QuickStart
 
 If you are new to Exabyte you can get started by following this tutorial summarizing the
-[first steps with Exabyte](user-guides/first-steps.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
+[first steps with Exabyte](tutorials/first-steps.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
 
 ## Projects
 
