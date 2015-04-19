@@ -60,10 +60,10 @@ An example below explains how to login for a user with username `amy`, who creat
     chmod 400 /myfolder/exabyte-cluster
     ```
 
-2. Connect to cluster.exabyte.io
+2. Connect to compute platform at `login.exabyte.io`
 
     ```
-    ssh -i /myfolder/exabyte-cluster amy@cluster.exabyte.io`
+    ssh -i /myfolder/exabyte-cluster amy@login.exabyte.io
     ```
 
 ---
