@@ -42,7 +42,7 @@ If you are not a member of a project that already has an allocation, you may pur
 
 ### Passwords and ssh keys
 
-Each person has a single password associated with their login account on the web. As a new user, you will be able to download a private [ssh-key](https://wiki.archlinux.org/index.php/SSH_keys) directly from your profile page. This key together with your username can be used to access computational resources via command line terminal. This is a private key, sharing it with any third party is not advised. Anyone who is logged in using this key will have access to compute allocation registered under your username.
+Each person has a single password associated with their login account on the web. As a new user, you will be able to upload a public [ssh-key](https://wiki.archlinux.org/index.php/SSH_keys) directly from your profile page. This key together with your username can be used to access computational resources via command line terminal. Sharing a corresponfing private key with any third party is not advised. Anyone who is logged in using this key will have access to compute allocation registered under your username.
 
 <!-- TODO: add gif images showing how to get started -->
 
