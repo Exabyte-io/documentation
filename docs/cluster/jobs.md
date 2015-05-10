@@ -38,7 +38,7 @@ Typically, the user submits a batch script to the batch system. This script spec
 
 ## Sample Batch Scripts
 
-Althought there are default values for all batch parameters, it is a good idea always to specify the name of the queue, the number of nodes, and the walltime for all batch jobs. To minimize the time spent waiting in the queue, specify the smallest walltime that will safely allow the job to complete.
+Although there are default values for all batch parameters, it is a good idea always to specify the name of the queue, the number of nodes, and the walltime for all batch jobs. To minimize the time spent waiting in the queue, specify the smallest walltime that will safely allow the job to complete.
 
 A common convention is to append the suffix ".pbs" to batch scripts.
 
@@ -46,13 +46,15 @@ A common convention is to append the suffix ".pbs" to batch scripts.
 
 ### Batch Script for Regular Compute
 
-This example requests 16 nodes, and 8 tasks per node, for 10 minutes, on regular (PARTITION:O) compute resources.
+This example requests 16 nodes, and 8 tasks per node, for 10 minutes, on regular (partition=O) compute resources.
 
 ```bash
 #PBS -N my_job
-#PBS -W PARTITION:O
-#PBS -l nodes=16:ppn=8
+#PBS -l partition=O
+#PBS -l nodes=16
+#PBS -l ppn=8
 #PBS -l walltime=00:10:00:00
+#PBS -m abe
 #PBS -M user@email-service.com
 
 cd $PBS_O_WORKDIR
@@ -64,19 +66,25 @@ mpirun -np 128 ./my_executable
 
 ### Batch Script for Cost-saving Compute
 
-This example requests 16 nodes, and 8 tasks per node, for 10 minutes, on regular (PARTITION:O) compute resources.
+This example requests 16 nodes, and 8 tasks per node, for 10 minutes, on Cost-saving (partition=S) compute resources.
 
 ```bash
 #PBS -N my_job
-#PBS -W PARTITION:O
-#PBS -l nodes=16:ppn=8
-#PBS -l walltime=00:10:00
+#PBS -l partition=S
+#PBS -l nodes=16
+#PBS -l ppn=8
+#PBS -l walltime=00:10:00:00
+#PBS -m abe
 #PBS -M user@email-service.com
 
 cd $PBS_O_WORKDIR
 module load mpi/intel/ips-2013
 mpirun -np 128 ./my_executable
 ```
+
+If you want PBS to automatically restart your jobs in case of spot node termination by price, please set `#PBS -r y` directive in job script file. 
+
+In order to get notified of spot node termination via email, the `#PBS -m abe` and `#PBS -M email_address` directives should be set in job script file.
 
 ---
 
@@ -106,7 +114,7 @@ Job ID                    Name             User            Time Use S Queue
 157.cluster                QE               steve                  0 R batch
 ```
 
-The qsub command displays the information about your job organized by its ID. You can also view detailed information about each job by passin -f flag: `qstat -f $JOB_ID`.
+The qsub command displays the information about your job organized by its ID. You can also view detailed information about each job by passing -f flag: `qstat -f $JOB_ID`.
 
 ---
 
@@ -126,20 +134,27 @@ The following keywords may be specified as qsub command line options, or as dire
             <th style="text-align: center;">Description</th>
         </tr>
         <tr>
-            <td>-l nodes=Nodes:ppn=tasksPNode</td>
-            <td>1 node and 1 task per node</td>
+            <td>-l nodes=Nodes</td>
+            <td>1 node</td>
             <td>
-                Number of nodes assigned to job and number of tasks per node **Note:** ppn must be less than or equal to 8 on all queues but reg_xlmem on which it can be up to 32
+                Number of nodes assigned to the job.
             </td>
         </tr>
         <tr>
-            <td>-W x=PARTITION:O</td>
-            <td>PARTITION:O</td>
+            <td>-l ppn=ProcessPerNode</td>
+            <td>1 process per node</td>
+            <td>
+                Number of processes per node **Note:** ppn must be less than or equal to the maximum available cores on the target compute node.
+            </td>
+        </tr>
+        <tr>
+            <td>-l partition=O</td>
+            <td>O</td>
             <td>Compute resorces allocated to the job, could be "O" for regular On-demand resources and "S" for cost-saving Spot-based resources</td>
         </tr>
         <tr>
-            <td>-l walltime=HH:MM:SS</td>
-            <td>00:05:00</td>
+            <td>-l walltime=DD:HH:MM:SS</td>
+            <td>00:00:05:00</td>
             <td>Maximum wallclock time for job</td>
         </tr>
         <tr>
@@ -156,15 +171,15 @@ The following keywords may be specified as qsub command line options, or as dire
         </tr>
         <tr>
             <td>-q queue_name</td>
-            <td>debug</td>
+            <td>batch</td>
             <td>Name of submit queue</td>
         </tr>
         <tr>
-        <tr>
+        <!--<tr>
             <td>-A repo</td>
             <td>Default repo</td>
             <td>Charge job to repo</td>
-        </tr>
+        </tr>-->
         <tr>
             <td>-e filename</td>
             <td>&lt;job_name&gt;.e&lt;job_id&gt;</td>
@@ -181,11 +196,16 @@ The following keywords may be specified as qsub command line options, or as dire
             <td>Merge (join) stdout and stderr. If oe, merge as output file; ie eo, merge as error file</td>
         </tr>
         <tr>
-            <td>-m [m | b | e | n]</td>
+            <td>-m [a | b | e | n]</td>
             <td>a</td>
             <td>Email notification: a=send mail if job aborted by system b=send mail when job begins e=send mail when job ends n=never send email Options a, b, e may be combined</td>
         </tr>
         <tr>
+            <td>-M email_address</td>
+            <td>None</td>
+            <td>User email address</td>
+        </tr>
+        <!--<tr>
             <td>-S shell</td>
             <td>Login shell</td>
             <td>Specify shell to interpret batch script</td>
@@ -199,7 +219,7 @@ The following keywords may be specified as qsub command line options, or as dire
             <td>-V</td>
             <td>Do not export</td>
             <td>Export current environment variables into the batch job environment. NOTE: this option is not recommended by NERSC; it can make it difficult to reproduce results (including diagnosing job failures).</td>
-        </tr>
+        </tr>-->
     </tbody>
 </table>
 <hr>
