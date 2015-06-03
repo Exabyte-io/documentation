@@ -85,6 +85,9 @@ mpirun -np 128 ./my_executable
 ### Cost-saving Compute Termination
 Due to the spot price fluctuation, cost-saving compute may be terminated. In order to get notified of cost-saving compute termination via email, the `#PBS -m abe` and `#PBS -M email_address` directives must be set in the job script file. In addition, PBS automatically restarts jobs in case of cost-saving compute termination. If you don not want PBS to restart your jobs, please set `#PBS -r n` directive in the job script file. A temporary directory for job's intermediate results are created in user's home directory when a job is killed or restarted due to cost-saving compute termination.
 
+### Specify Job Project
+In order to specify a project that job belongs to and should be charged on, `#PBS -A PROJECT_NAME` directive should be used in job script file. Each user has a default project that jobs are charged on by default.
+
 ---
 
 ## Submit Example
