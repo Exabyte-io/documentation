@@ -120,6 +120,25 @@ The qsub command displays the information about your job organized by its ID. Yo
 
 ---
 
+## Parallel provisioning
+
+It takes a couple of minutes for each job to get requested nodes and goes from queue to running state, e.g. about 5 minutes for on-demand nodes. In case that you have N jobs and submit them at once you should wait for N*5 minutes for the last job to be started because jobs are processed one at a time. If you want the resource manager to provision nodes in parallel and wait only for a couple of minutes to start all jobs use PARALLEL extension directive within your job script file:
+
+```bash
+#PBS -N SAMPLE
+#PBS -j oe
+#PBS -l nodes=2
+#PBS -l ppn=8
+#PBS -l partition=O
+#PBS -l walltime=00:00:10:00
+#PBS -W x=PARALLEL:TRUE
+
+module add mpi/intel/ips-2013
+mpirun -np $PBS_NP hostname
+```
+
+Please note that if you use PARALLEL extension directive in your job script file the job will be executed exclusively on requested nodes. For above example 2 nodes with their all cores are assigned to the job but mpirun uses only 8 cores of each node. In addition the job is charged for the number of hours not seconds or minutes. So if the above job runs for 10 minutes it will be charged an hour.
+   
 ## Torque Keywords
 
 The following keywords may be specified as qsub command line options, or as directives (preceded by #PBS) embedded in a batch script.
