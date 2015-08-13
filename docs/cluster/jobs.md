@@ -20,7 +20,7 @@ In Development
 <!-- , debugging, and testing of parallel code demands interactivity. You can run parallel jobs interactively, subject to a 30-minute time limit and limit on the number of nodes. Instead of submitted a batch job script, you tell the batch system that you want interactive access and then run your command at the command prompt:
 
 ```
-qsub -V -I -lmppwidth=<number of cores> 
+qsub -V -I -lmppwidth=<number of cores>
 cd $PBS_O_WORKDIR
 mpirun -n <number of tasks> <name_of_executable_binary>
 ```
@@ -30,7 +30,7 @@ mpirun -n <number of tasks> <name_of_executable_binary>
 
 ### Non-interactive batch jobs
 
-A batch job is the most common way users run production applications on parallel machines. Our batch system is based on the PBS model, implemented with the Moab scheduler and Torque resource manager.
+A batch job is the most common way users run production applications on parallel machines. Our batch system is based on the PBS model, implemented with the Moab scheduler and Torque resource manager.T
 
 Typically, the user submits a batch script to the batch system. This script specifies, at the very least, how many nodes and cores the job will use, how long the job will run, and the name of the application to run. The job will advance in the queue until it has reached the top. At this point, Torque will allocate the requested number of nodes to the batch job. The batch script itself will execute on the "head node" (sometimes known as the "MOM" node).
 
@@ -112,7 +112,7 @@ qstat
 [steve@cluster example_QE]$ qstat
 Job ID                    Name             User            Time Use S Queue
 ------------------------- ---------------- --------------- -------- - -----
-156.cluster                QE               steve           00:00:05 C batch          
+156.cluster                QE               steve           00:00:05 C batch
 157.cluster                QE               steve                  0 R batch
 ```
 
@@ -122,7 +122,7 @@ The qsub command displays the information about your job organized by its ID. Yo
 
 ## Parallel provisioning
 
-It takes a couple of minutes for each job to get requested nodes and goes from queue to running state, e.g. about 5 minutes for on-demand nodes. In case that you have N jobs and submit them at once you should wait for N*5 minutes for the last job to be started because jobs are processed one at a time. If you want the resource manager to provision nodes in parallel and wait only for a couple of minutes to start all jobs use PARALLEL extension directive within your job script file:
+It takes a few minutes for each job to get requested nodes and transition from "queued" to "running" state (5 minutes or more usually). When N jobs are submitted at once, the total wait time is N*5 minutes for the last job to be started. This is done to facilitate efficient resource allocation. Sometimes, one may want to provision nodes for all the jobs in parallel and wait only once to start all jobs. In that case PARALLEL extension directive should be used within the job script file as shown below:
 
 ```bash
 #PBS -N SAMPLE
@@ -137,8 +137,8 @@ module add mpi/intel/ips-2013
 mpirun -np $PBS_NP hostname
 ```
 
-Please note that if you use PARALLEL extension directive in your job script file the job will be executed exclusively on requested nodes. For above example 2 nodes with their all cores are assigned to the job but mpirun uses only 8 cores of each node. In addition the job is charged for the number of hours not seconds or minutes. So if the above job runs for 10 minutes it will be charged an hour.
-   
+Please note that if you use PARALLEL extension directive in your job script file the job will be executed exclusively on requested nodes. For above example 2 nodes with **all** cores available are assigned to the job but mpirun uses only 8 cores on each node. In addition the job is charged for the number of whole CPU-hours (not CPU-seconds). So if the above job runs for 10 minutes it will be charged 1 hour times the total number of CPUs available on the requested nodes.
+
 ## Torque Keywords
 
 The following keywords may be specified as qsub command line options, or as directives (preceded by #PBS) embedded in a batch script.
