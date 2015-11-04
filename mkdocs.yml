@@ -10,3 +10,4 @@ pages:
 - ['cluster/accounting.md', 'Advanced', 'CP:Accounting']
 - ['cluster/environment.md', 'Advanced', 'CP:Environment']
 - ['cluster/jobs.md', 'Advanced', 'CP:Jobs']
+- ['cluster/jobs-angstrom.md', 'Advanced', 'CP:Jobs-angstrom']
