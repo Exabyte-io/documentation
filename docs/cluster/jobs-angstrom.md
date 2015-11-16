@@ -21,7 +21,7 @@ We have multiple job routing queues implemented.
     - on-demand regular (OR), with the following rules per job:
         - node cout == 1
         - CPU cout <= 36
-      jobs in OR queue are charged according to consumed walltime in seconds, number of compute nodes in the queue is 10
+        jobs in OR queue are charged according to consumed walltime in seconds, number of compute nodes in the queue is 10
 
     - saving regular (SR): same parameters as above
 
@@ -30,7 +30,7 @@ We have multiple job routing queues implemented.
     - on-demand fast (OF), with the following rules per job:
         - node cout < 50
         - CPU count <= 1800
-      jobs in OF queue are charged according to the number of CPU-hours consumed, each partial hour is charged as whole, number of compute nodes in the queue is 50
+        jobs in OF queue are charged according to the number of CPU-hours consumed, each partial hour is charged as whole, number of compute nodes in the queue is 50
 
     - saving fast (SF): same parameters as above
 
