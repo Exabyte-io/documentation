@@ -23,7 +23,7 @@ We have multiple job routing queues implemented.
         - CPU cout <= 36
       jobs in OR queue are charged according to consumed walltime in seconds, number of compute nodes in the queue is 10
 
-    - saving regular (SR), **coming soon**
+    - saving regular (SR): same parameters as above
 
 - fast: for large-scale tasks, new compute resources are added in parallel
 
@@ -32,7 +32,7 @@ We have multiple job routing queues implemented.
         - CPU count <= 1800
       jobs in OF queue are charged according to the number of CPU-hours consumed, each partial hour is charged as whole, number of compute nodes in the queue is 50
 
-    - saving fast (SF), **coming soon**
+    - saving fast (SF): same parameters as above
 
 Debug queue is charged at 2x the base rate, on-demand queues are charged at 1x the base price and saving queues are charged at 0.2x the base price.
 
