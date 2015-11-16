@@ -36,6 +36,12 @@ We have multiple job routing queues implemented.
 
 Debug queue is charged at 2x the base rate, on-demand queues are charged at 1x the base price and saving queues are charged at 0.2x the base price.
 
+Approximate waiting times for a single job execution for the queues (dependent on the load):
+
+- debug: no wait (unless queue is fulfilled)
+- on-demand: within 5 min
+- saving: usually within 15 min (unless datacenter capacity is exceeded)
+
 ### Interactive parallel jobs
 
 Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the master node (using 2-8 CPU and <1min walltime per user) instead, and submit larger debug tasks into the debug queue.
@@ -137,11 +143,53 @@ module load <MODULE_NAME>
 mpirun -np 128 ./my_executable
 ```
 
----
-
 ### Cost-saving compute
 
-Coming soon
+Job submission process to cost-saving queues is identical to on-demand ones, except for the queue names.
+
+#### Saving regular (SR)
+
+This example requests 1 node, and 36 tasks per node, for 10 minutes
+
+```bash
+#!/bin/bash
+
+#PBS -N job_name
+#PBS -l nodes=1
+#PBS -l ppn=36
+#PBS -q SR
+#PBS -j oe
+#PBS -l walltime=00:10:00
+#PBS -m abe
+#PBS -M name@domain.com
+
+cd $PBS_O_WORKDIR
+module load <MODULE_NAME>
+mpirun -np 128 ./my_executable
+```
+
+#### Saving fast (SF)
+
+This example requests 16 nodes, and 8 tasks per node, for 10 minutes
+
+```bash
+#!/bin/bash
+
+#PBS -N job_name
+#PBS -l nodes=16
+#PBS -l ppn=8
+#PBS -q SF
+#PBS -j oe
+#PBS -l walltime=00:10:00
+#PBS -m abe
+#PBS -M name@domain.com
+
+cd $PBS_O_WORKDIR
+module load <MODULE_NAME>
+mpirun -np 128 ./my_executable
+```
+
+---
 
 ### Cost-saving Compute Termination
 
