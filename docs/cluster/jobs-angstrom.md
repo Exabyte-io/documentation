@@ -90,7 +90,7 @@ This example explains the keywords and requests 1 node with 8 processors per nod
 #PBS -N job_name
 #PBS -l nodes=16
 #PBS -l ppn=8
-#PBS -q OF
+#PBS -q D
 #PBS -j oe
 #PBS -l walltime=00:10:00
 #PBS -m abe
