@@ -98,7 +98,7 @@ This example explains the keywords and requests 1 node with 8 processors per nod
 
 cd $PBS_O_WORKDIR
 module load <MODULE_NAME>
-mpirun -np 128 ./my_executable
+mpirun -np 8 ./my_executable
 ```
 
 #### On-demand regular (OR)
@@ -119,7 +119,7 @@ This example requests 1 node, and 36 tasks per node, for 10 minutes
 
 cd $PBS_O_WORKDIR
 module load <MODULE_NAME>
-mpirun -np 128 ./my_executable
+mpirun -np 36 ./my_executable
 ```
 
 #### On-demand fast (OF)
@@ -165,7 +165,7 @@ This example requests 1 node, and 36 tasks per node, for 10 minutes
 
 cd $PBS_O_WORKDIR
 module load <MODULE_NAME>
-mpirun -np 128 ./my_executable
+mpirun -np 36 ./my_executable
 ```
 
 #### Saving fast (SF)
