@@ -1,5 +1,7 @@
 site_name: Exabyte.io
 theme_dir: exabyte_theme
+extra_css:
+    - extra.css
 pages:
 - ['index.md', 'Home']
 # Web
