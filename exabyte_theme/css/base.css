@@ -382,7 +382,7 @@ h1:hover .headerlink, h2:hover .headerlink, h3:hover .headerlink, h4:hover .head
 
 #header .navbar-nav>li>a {
     height: 52px;
-    font-size: 15px;
+    font-size: 17px;
     text-transform: lowercase;
     font-variant: small-caps;
 }
