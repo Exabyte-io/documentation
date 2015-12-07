@@ -51,11 +51,10 @@
         {% endblock %}
 
         <footer id="footer">
-            <hr>
             {% if copyright %}
                 <p>{{ copyright }}</p>
             {% endif %}
-            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+            <p>© 2015 Exabyte Inc. All rights reserved.</p>
         </footer>
 
         <script src="{{ base_url }}/js/jquery-1.10.2.min.js"></script>
@@ -82,7 +81,9 @@
                         </p>
                         <form role="form">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                                <div class="fg-line">
+                                    <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                                </div>
                             </div>
                         </form>
                         <div id="mkdocs-search-results"></div>
