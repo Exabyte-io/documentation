@@ -95,7 +95,7 @@ $(document).ready(function() {
 
 
 $('body').scrollspy({
-    target: '.bs-sidebar'
+    target: '#sidebar'
 });
 
 /* Prevent disabled links from causing a page reload */
