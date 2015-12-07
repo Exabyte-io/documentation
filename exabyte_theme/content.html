@@ -1,13 +1,19 @@
 <section id="content">
     <div class="container">
-        {% if meta.source %}
-        <div class="source-links">
-        {% for filename in meta.source %}
-            <span class="label label-primary">{{ filename }}</span>
-        {% endfor %}
-        </div>
-        {% endif %}
+        <div class="card">
+            <div class="card-body card-padding">
+                {% if meta.source %}
+                <div class="source-links">
+                {% for filename in meta.source %}
+                    <span class="label label-primary">{{ filename }}</span>
+                {% endfor %}
+                </div>
+                {% endif %}
 
-        {{ content }}
+                {{ content }}
+            </div>
+        </div>
     </div>
 </section>
+
+
