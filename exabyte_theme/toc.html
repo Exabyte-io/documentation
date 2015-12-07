@@ -1,5 +1,5 @@
-<aside id="sidebar">
-    <ul class="main-menu">
+<div id="sidebar" role="complementary">
+    <ul class="main-menu nav">
         {% for toc_item in toc %}
             <li class="main {% if toc_item.active %}active{% endif %}">
                 <a href="{{ toc_item.url }}">
@@ -11,5 +11,5 @@
             </li>
         {% endfor %}
     </ul>
-</aside>
+</div>
 
