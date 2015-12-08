@@ -342,7 +342,16 @@ body:not(.sw-toggled) #sidebar {
     padding: 7px 20px;
     display: block;
     color: #4C4C4C;
-    font-weight: 400;
+    font-weight: 500;
+    position: relative;
+}
+
+/* child entries in Table of Contents */
+.main-menu > li.toc-child > a {
+    padding: 7px 20px;
+    display: block;
+    color: #4C4C4C;
+    font-weight: 300;
     position: relative;
 }
 
@@ -980,21 +989,12 @@ a:hover {
     text-decoration: none;
 }
 
-p {
-    margin: 0 0 20px 0;
-    line-height: 24px;
-}
-ul {
-    margin: 0 0 20px 0;
-    line-height: 24px;
-}
 
 @media (min-width: 768px) {
     h2 {
         font-size: 19.5px;
     }
 }
-
 img {
     vertical-align: middle;
     width: 100%;
@@ -1006,7 +1006,25 @@ img {
 }
 
 /* --------------------------------------------------------- *
- *                  Heading font styles
+ *                  Paragraph/list
+ * --------------------------------------------------------- */
+p + h1, p + h2, p + h3,
+ul + h1, ul + h2, ul + h3 {
+    margin: 30px 0 10px 0;
+}
+p, :not(footer.p) {
+    line-height: 24px;
+}
+li > p {
+    margin: 0;
+    line-height: 18px;
+}
+.card-body ul {
+    margin: 15px 0 15px 0;
+    line-height: 24px;
+}
+/* --------------------------------------------------------- *
+ *                  Headings font
  * --------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
@@ -1014,26 +1032,31 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 18px;
     font-family: roboto, sans-serif;
 }
-
 h1 {
-    margin-top: 18px;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+    margin-top: 27px;
     font-size: 36px;
     font-variant: small-caps;
     text-transform: lowercase;
     font-family: roboto, sans-serif;
 }
-
 h2 {
-    margin-top: 16px;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
+    margin-top: 24px;
     font-weight: 300;
     line-height: 1.4;
     font-family: roboto, sans-serif;
 }
 /* --------------------------------------------------------- *
- *                  Source code styles
+ *                  Source code
  * --------------------------------------------------------- */
 pre {
     background-color: #F9F9F9;
+}
+/* --------------------------------------------------------- *
+ *                  Horizontal ruler
+ * --------------------------------------------------------- */
+hr {
+    border-top: 1px solid #53719F;
+}
 }
