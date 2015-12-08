@@ -1,15 +1,17 @@
-<div id="sidebar" role="complementary">
-    <ul class="main-menu nav">
-        {% for toc_item in toc %}
-            <li class="main {% if toc_item.active %}active{% endif %}">
-                <a href="{{ toc_item.url }}">
-                    {{ toc_item.title }}
-                </a>
-                {% for toc_item in toc_item.children %}
-                    <li class="toc-child"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-                {% endfor %}
-            </li>
-        {% endfor %}
-    </ul>
+<div id="sidebar">
+    <div class="sidebar-inner c-overflow">
+        <ul class="main-menu nav">
+            {% for toc_item in toc %}
+                <li class="main {% if toc_item.active %}active{% endif %}">
+                    <a href="{{ toc_item.url }}">
+                        {{ toc_item.title }}
+                    </a>
+                    {% for toc_item in toc_item.children %}
+                        <li class="toc-child"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                    {% endfor %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
 </div>
 

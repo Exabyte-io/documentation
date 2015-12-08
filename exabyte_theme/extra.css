@@ -143,7 +143,7 @@ body {
 .header-inner .logo {
     vertical-align: middle;
     padding: 9px 0;
-    margin-right: 5px;
+    margin-right: 5px !important;
 }
 
 .header-inner .logo a {
@@ -153,13 +153,46 @@ body {
     background: url(/img/exabyte-logo-without-slogan-blue.png) 0 -5px no-repeat;
     background-size: cover;
     padding: 0px;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-top: 2px;
+}
+
+.navbar-toggle {
+    margin-right: 10px;
+}
+
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #9d9fa2;
 }
 
 @media (max-width: 1200px) {
     .header-inner .logo a {
         margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .header-inner .logo a {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        background: url(/img/exabyte-symbol.png) 0 0 no-repeat;
+        background-size: cover;
+        padding: 0px;
+        margin-left: 5px;
+        margin-top: 4px;
+    }
+
+    .navbar-collapse {
+        width: 100%;
+        background: #fff;
+        margin-left: 5px;
+        box-shadow: 0 0 2px rgba(0, 0, 0, 0.15);
     }
 }
 
@@ -283,7 +316,7 @@ body {
     -webkit-transform: translate3d(-268px, 0, 0);
     transform: translate3d(-268px, 0, 0);
     z-index: 5;
-    width: 210px;
+    width: 265px;
     overflow: hidden;
     opacity: 0;
     filter: alpha(opacity=0);
@@ -297,8 +330,8 @@ body {
 #sidebar .sidebar-inner {
     height: 100%;
     overflow-y: auto;
-    width: 210px;
-    overflow: hidden;
+    width: 265px;
+    overflow: auto;
 }
 
 #sidebar.toggled {
@@ -472,7 +505,7 @@ body #content {
 
 @media (min-width: 1200px) {
     body.sw-toggled #content {
-        padding: 15px 0 30px 210px;
+        padding: 15px 0 30px 265px;
     }
 }
 
@@ -889,7 +922,7 @@ body #content {
 .modal-body {
     position: relative;
     padding: 15px;
-    max-height: calc(100vh - 250px);
+    max-height: calc(100vh - 270px);
     overflow: auto;
 }
 
@@ -1077,4 +1110,12 @@ pre {
 hr {
     border-top: 1px solid #53719F;
 }
+
+h1[id]:before, h2[id]:before, h3[id]:before, h4[id]:before, h5[id]:before, h6[id]:before {
+    content: "";
+    display: block;
+    margin-top: -75px;
+    height: 75px;
+    pointer-events: none;
 }
+
