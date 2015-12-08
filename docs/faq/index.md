@@ -1,3 +1,11 @@
+<!--
+other questions to add:
+- how long does it take for my calculation to start?
+- who else is using it?
+- where can I leave a feature request?
+- how do I know that you will exist tomorrow?
+-->
+
 # General
 
 ## What is exabyte.io?
