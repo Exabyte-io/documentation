@@ -1,6 +1,9 @@
 $(document).ready(function() {
 
-    // Sidebar
+    /*
+     * Sidebar open/close logic
+     * Open sidebar on cliking to #menu-trigger and close on click outside sidebar
+     */
     $('body').on('click', '#menu-trigger', function(e){
         e.preventDefault();
         var x = '#sidebar';
@@ -37,10 +40,9 @@ $(document).ready(function() {
     });
 
     /*
-     * Text Feild
+     * Text field (used in search)
+     * Add blue animated border and remove with condition on focus and blur
      */
-
-    //Add blue animated border and remove with condition when focus and blur
     if($('.fg-line')[0]) {
         $('body').on('focus', '.form-control', function(){
             $(this).closest('.fg-line').addClass('fg-toggled');
