@@ -37,7 +37,7 @@
         {% endif %}
     </head>
 
-    <body class="sw-toggled {% if current_page and current_page.is_homepage %} homepage {% endif %}">
+    <body class="{% if config.extra.full_width %} sw-toggled {% endif %} {% if current_page and current_page.is_homepage %} homepage {% endif %}">
 
         {% include "nav.html" %}
 
