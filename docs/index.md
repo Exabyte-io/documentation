@@ -1,5 +1,5 @@
 
-# Welcome!
+# Documentation
 
 Welcome to our documentation repository. We aim to provide all necessary information for you to be able to use our platform here. In case you find that something is missing of you are still puzzled after reading this documentation, please <a href="mailto:support@exabyte.io" target="_blank">contact us</a> .
 
