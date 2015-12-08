@@ -338,16 +338,17 @@ body:not(.sw-toggled) #sidebar {
 }
 
 .main-menu > li > a {
-    padding: 14px 20px;
+    padding: 7px 20px;
     display: block;
     color: #4C4C4C;
-    font-weight: 500;
+    font-weight: 400;
     position: relative;
 }
 
 .main-menu > li > a:hover {
     color: #262626;
     background-color: #f7f7f7;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -444,6 +445,7 @@ body:not(.sw-toggled) #sidebar {
 .main-menu > li.active > a {
     color: #262626;
     background-color: #F4F4F4;
+    font-weight: 600;
 }
 
 /*
@@ -776,13 +778,13 @@ body #content {
 
 @media screen and (min-width: 768px) {
     .card .card-body.card-padding {
-        padding:23px 26px
+        padding: 25px 40px;
     }
 }
 
 @media screen and (max-width: 991px) {
     .card .card-body.card-padding {
-        padding:18px
+        padding: 20px 30px;
     }
 }
 
@@ -979,21 +981,11 @@ a:hover {
 
 p {
     margin: 0 0 20px 0;
-    line-height: 20px;
+    line-height: 24px;
 }
-
-h1 {
-    font-variant: small-caps;
-    text-transform: lowercase;
-    font-family: roboto, sans-serif;
-}
-
-h2 {
-    margin-bottom: 18px;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.4;
-    font-family: roboto, sans-serif;
+ul {
+    margin: 0 0 20px 0;
+    line-height: 24px;
 }
 
 @media (min-width: 768px) {
@@ -1005,6 +997,43 @@ h2 {
 img {
     vertical-align: middle;
     width: 100%;
-    max-width: 600px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.31);
+    border-radius: 5px;
+    border: 1px solid #AAA;
+    padding: 5px;
+    /*max-width: 600px;*/
 }
 
+/* --------------------------------------------------------- *
+ *                  Heading font styles
+ * --------------------------------------------------------- */
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    margin-bottom: 14px;
+    margin-top: 18px;
+    font-family: roboto, sans-serif;
+}
+
+h1 {
+    margin-top: 18px;
+    margin-bottom: 22px;
+    font-size: 36px;
+    font-variant: small-caps;
+    text-transform: lowercase;
+    font-family: roboto, sans-serif;
+}
+
+h2 {
+    margin-top: 16px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.4;
+    font-family: roboto, sans-serif;
+}
+/* --------------------------------------------------------- *
+ *                  Source code styles
+ * --------------------------------------------------------- */
+pre {
+    background-color: #F9F9F9;
+}
