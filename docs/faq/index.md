@@ -16,7 +16,7 @@ We believe that focusing on core materials science is the most effective way to 
 
 ## Where does your name come from?
 
-Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drives. Or 1 thousand datacenter storage units. It is a pretty big number and it illustrates well the complexity and scale of the problem we solve.
+Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drives. Or 1 thousand datacenter storage units. It is a pretty big number and it illustrates the complexity and scale of the problem we solve.
 
 Rumor has it that our founding team together with the leading minds in the field had figured out that after surpassing 1 exabyte of accumulated materials data computers will be able to run simulations without needing humans...
 
