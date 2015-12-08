@@ -1,44 +1,36 @@
 
 # Documentation
 
-Welcome to our documentation repository. We aim to provide all necessary information for you to be able to use our platform here. In case you find that something is missing of you are still puzzled after reading this documentation, please <a href="mailto:support@exabyte.io" target="_blank">contact us</a> .
+Welcome to our documentation repository! We aim to provide all the necessary information for you to use our product here. In case you find that something is missing of you are still puzzled after reading this documentation, please <a href="mailto:support@exabyte.io" target="_blank">contact us</a> .
 
-## QuickStart
+# QuickStart
 
-If you are new to Exabyte you can get started by following this tutorial summarizing the
+If you are new to Exabyte and feeling impatient, you can get started by following this tutorial summarizing the
 [first steps with Exabyte](tutorials/first-steps.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
+
+# Basic concepts
 
 ## Projects
 
-We organize user workspace using projects. Project shall contain a study of a particular material or a set of materials that are related to each other. Projects are owned by an administrator and can have multiple users that collaborate together (coming soon).
+We organize user workspace using projects. Project contains a study of a particular material or a set of materials that are related to each other. Projects have a single owner, and can have multiple users that collaborate together.
 
-#### Project Properties
-
-- Name: name of a project
-- Jobs: number of [jobs](#jobs) that belong to this project
-- Status: "idle" if no jobs are running, "active" otherwise
-- Owner: creator of a project (by default)
-- Created At: date and time of project creation
-
-When you login to our application, the first thing you see is list of projects.
+Here is how the list of projects looks like from within the application.
 
 <br>
 <img src="images/list_of_projects.png" width="800">
 <br>
 
-You can create a new project by clicking "New Project" button at the top right corner of the page.
+You can create a new project by clicking (+) button at the top right corner of the page.
 
-To see the jobs that belong to a project, click on project's name.
+To see the jobs that belong to a project, click on the project's name.
 
 
 ## Jobs
 
-Job is a computation abstraction. Job contains set of [units](#units).
-Units formulate a workflow. You can imagine workflow as an array of units.
-Order matters - each unit will run computation one by one starting from the first
-unit of the workflow.
+Job is a computational abstraction. It contains set of [units](#units).
+Units formulate a workflow. You can imagine workflow as an entity that defines how a materials simulation should be run: which models, methods application should be employed and the order.
 
-#### Job Properties
+### Job Properties
 
 - Title
 - Type: a brief description of a workflow that this job is using
@@ -48,14 +40,17 @@ unit of the workflow.
 - Actions: available actions applicable to this job - example: clone, delete
 
 
-#### Job Statuses
+### Job Statuses
 
-- pre-submission: job is created on the front-end only
-- submitted: submitted to resource manager on compute cluster
-- active: execution is in process
-- finished: execution finished
-- terminated: execution or submission terminated by user
-- error: execution resulted in error
+| Label    |      Meaning  |
+|----------|:--------------|
+<span class="label label-info">pre-submission</span> | created and saved
+<span class="label label-primary">submitted</span> | scheduled for execution
+<span class="label label-warning">active</span> | currently running
+<span class="label label-success">finished</span> | finished successfully <br>
+<span class="label label-danger">error</span> | something is wrong <br>
+<span class="label label-default">timeout</span> | exceeded walltime <br>
+<span class="label label-default">terminated</span> | terminated by user <br>
 
 When you click on one of the Projects you see the list of jobs.
 
