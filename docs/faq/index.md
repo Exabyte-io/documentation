@@ -14,7 +14,7 @@ Rumor has it that our founding team together with the leading minds in the field
 
 ## Why are you doing this?
 
-The world of today is broken. Humans now faces global challenges too many to count. We exist to solve the most fundamental ones that affect all others. In our vision the world of tomorrow is created not through long and expensive physical tests by trial-and-error, but through fast, accurate and intelligent models.
+The world of today is broken. Humans now faces global challenges too many to count. We exist to solve the most fundamental challenges, that affect all others, by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models.
 
 ## Why should I care?
 
