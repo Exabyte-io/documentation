@@ -1,5 +1,7 @@
 site_name: exabyte.io documentation
 theme_dir: exabyte_theme
+extra_css:
+    - extra.css
 pages:
 - ['index.md', 'Home']
 # FAQ
