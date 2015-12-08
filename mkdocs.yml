@@ -3,9 +3,8 @@ theme_dir: exabyte_theme
 extra_css:
     - extra.css
 pages:
+# Home page - must be present
 - ['index.md', 'Home']
-# FAQ
-- ['faq/index.md', 'Other', 'FAQ']
 # Web
 - ['tutorials/first-steps.md', 'Tutorials', 'Quickstart']
 # Command-Line
@@ -15,3 +14,5 @@ pages:
 - ['cluster/environment.md', 'Advanced', 'CP:Environment']
 - ['cluster/jobs.md', 'Advanced', 'CP:Jobs']
 - ['cluster/jobs-angstrom.md', 'Advanced', 'CP:Jobs-angstrom']
+# FAQ
+- ['faq/index.md', 'Other', 'FAQ']
