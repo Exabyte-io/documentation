@@ -12,9 +12,7 @@
 
 	<title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
-        <link href="{{ base_url }}/css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="{{ base_url }}/css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="{{ base_url }}/css/base.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">
         {%- for path in extra_css %}
         <link href="{{ path }}" rel="stylesheet">
@@ -54,7 +52,6 @@
             {% if copyright %}
                 <p>{{ copyright }}</p>
             {% endif %}
-            <p>© 2015 Exabyte Inc. All rights reserved.</p>
         </footer>
 
         <script src="{{ base_url }}/js/jquery-1.10.2.min.js"></script>
@@ -74,7 +71,7 @@
                         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
                         <h4 class="modal-title" id="exampleModalLabel">Search</h4>
                         <p>
-                            You can search the documentatin from here. Start typing
+                            You can search the documentation from here. Start typing
                             your search terms below.
                         </p>
                         <form role="form">
