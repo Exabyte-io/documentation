@@ -1,15 +1,18 @@
-site_name: Exabyte.io
+site_name: exabyte.io documentation
 theme_dir: exabyte_theme
 extra_css:
     - extra.css
 pages:
+# Home page - must be present
 - ['index.md', 'Home']
 # Web
 - ['tutorials/first-steps.md', 'Tutorials', 'Quickstart']
-# Cluster
+# Command-Line
 - ['cluster/index.md', 'Advanced', 'Compute Platform (CP)']
 - ['cluster/general.md', 'Advanced', 'CP:Overview']
 - ['cluster/accounting.md', 'Advanced', 'CP:Accounting']
 - ['cluster/environment.md', 'Advanced', 'CP:Environment']
 - ['cluster/jobs.md', 'Advanced', 'CP:Jobs']
 - ['cluster/jobs-angstrom.md', 'Advanced', 'CP:Jobs-angstrom']
+# FAQ
+- ['faq/index.md', 'Other', 'FAQ']
