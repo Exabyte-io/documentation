@@ -1,17 +1,10 @@
 # First Steps
 
-This page explains how to run a basic simulation based on [density functional theory](http://en.wikipedia.org/wiki/Density_functional_theory) to obtain an [electronic bandstructure](http://en.wikipedia.org/wiki/Electronic_band_structure). We will be studying silicon in conventional face-centered cubic structure and using [Quantum ESPRESSO](quantum-espresso.org) as our simulation engine.
-
-
-## Assumptions:
-
-- Basic knowledge of materials science and crystallography
-- Google Chrome, Mozilla Firefox or Apple Safari web browsers
-
+This page explains how to run a basic simulation based on [density functional theory](http://en.wikipedia.org/wiki/Density_functional_theory) to obtain an [electronic bandstructure](http://en.wikipedia.org/wiki/Electronic_band_structure). We will be studying silicon in face-centered cubic structure and using [Quantum ESPRESSO](quantum-espresso.org) as our simulation engine during this tutorial.
 
 ## Create a New Project
 
-To create a new project, one needs to click on the "Project" link located in the sidebar on the left. After that, click "New Project" button in the top right corner, as it is show in the animation below.
+To create a new project, one needs to click on the "Project" link located in the sidebar on the left. After that, click "New Project" button in the top right corner, as it is shown in the animation below.
 
 <br>
 <img src="create_project.gif" width="800">
