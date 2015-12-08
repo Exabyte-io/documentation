@@ -5,7 +5,7 @@ extra_css:
 pages:
 - ['index.md', 'Home']
 # FAQ
-- ['faq/index.md', 'FAQ', 'FAQ']
+- ['faq/index.md', 'Other', 'FAQ']
 # Web
 - ['tutorials/first-steps.md', 'Tutorials', 'Quickstart']
 # Command-Line
