@@ -33,7 +33,8 @@
                     {% endfor %}
                     </ul>
                 </li>
-            {% else %}
+            <!-- avoiding `Home` tab in navbar -->
+            {% elif nav_item is equalto 'Home - / [*]' %}
                 <li {% if nav_item.active %}class="active"{% endif %}>
                     <a href="{{ nav_item.url }}">{{ nav_item.title }}</a>
                 </li>
