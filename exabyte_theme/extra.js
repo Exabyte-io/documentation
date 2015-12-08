@@ -18,9 +18,8 @@ $(document).ready(function() {
         $elem = '#sidebar';
         $elem2 = '#menu-trigger';
 
-        if (!$('#sidebar').hasClass('toggled')) {
-            $('#header').toggleClass('sidebar-toggled');
-        }
+
+        $('#header').toggleClass('sidebar-toggled');
 
         //When clicking outside
         if ($('#header').hasClass('sidebar-toggled')) {
