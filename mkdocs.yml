@@ -5,7 +5,10 @@ extra_css:
     - extra.css
 extra_javascript:
     - extra.js
+site_favicon: /img/favicon.ico
 copyright: © 2015 Exabyte Inc. All rights reserved.
+extra:
+    home_url: https://platform.exabyte.io
 pages:
 # Home page - must be present
 - ['index.md', 'Home']
