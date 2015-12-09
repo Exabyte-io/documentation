@@ -829,6 +829,11 @@ h4 {
  * --------------------------------------------------------- */
 pre {
     background-color: #F9F9F9;
+    overflow-x: auto;
+}
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
 }
 /* --------------------------------------------------------- *
  *                  Horizontal ruler
