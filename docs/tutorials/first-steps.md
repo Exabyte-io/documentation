@@ -7,7 +7,7 @@ This page explains how to run a basic simulation based on [density functional th
 To create a new project, one needs to click on the "Project" link located in the sidebar on the left. After that, click "New Project" button in the top right corner, as it is shown in the animation below.
 
 <br>
-<img src="create_project.gif" width="800">
+<img src="../images/create_project.gif" width="800">
 <br>
 
 ## Create a New Job
@@ -35,7 +35,7 @@ You have created your first material, simulation workflow and allocated compute 
 Look through the animation below to view each step.
 
 <br>
-<img src="create_job.gif" width="800">
+<img src="../images/create_job.gif" width="800">
 <br>
 
 ## Run your first Job
@@ -51,5 +51,5 @@ You can click on the job name and monitor the progress on the job in real time. 
 Look through the animation below to view a running job in action.
 
 <br>
-<img src="run_job.gif" width="800">
+<img src="../images/run_job.gif" width="800">
 <br>
