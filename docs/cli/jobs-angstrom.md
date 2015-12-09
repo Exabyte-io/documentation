@@ -46,7 +46,6 @@ Approximate waiting times for a single job execution for the queues (dependent o
 
 Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the master node (using 2-8 CPU and <1min walltime per user) instead, and submit larger debug tasks into the debug queue.
 
----
 
 ### Non-interactive batch jobs
 
@@ -54,13 +53,11 @@ Our batch system is based on the PBS model, implemented with the Moab scheduler 
 
 Typically, the user submits a batch script to the batch system. This script specifies, at the very least, how many nodes and cores the job will use, how long the job will run, and the name of the application to run.
 
----
 
 ## Sample Batch Scripts
 
 A common convention is to append the suffix ".pbs" or ".job" or ".sh" to batch scripts.
 
----
 
 ### Example Batch Scripts
 
@@ -189,7 +186,6 @@ module load <MODULE_NAME>
 mpirun -np 128 ./my_executable
 ```
 
----
 
 ### Cost-saving Compute Termination
 
@@ -198,7 +194,6 @@ Due to the spot price fluctuation, cost-saving compute may be terminated. In ord
 ### Specify Job Project
 In order to specify a project that job belongs to and should be charged upon, a `#PBS -A PROJECT_NAME` directive should be used in job script file. Each user has a default project that jobs are charged on by default.
 
----
 
 ## Submit Example
 
@@ -211,7 +206,6 @@ qsub my_job.pbs
 
 The qsub command displays the job_id (123456.cluster in the above example). It is important to keep track of your job_id for job tracking and problem resolution.
 
----
 
 ## View Example
 
@@ -229,4 +223,3 @@ Job ID                    Name             User            Time Use S Queue
 The qsub command displays the information about your job organized by its ID. You can also view detailed information about each job by passing -f flag: `qstat -f $JOB_ID`.
 
 
----
