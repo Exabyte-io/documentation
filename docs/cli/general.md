@@ -1,4 +1,9 @@
-## Compute and Storage Resources
+# CLI
+---
+
+Advanced users can request to access our compute platform via command-line interface (CLI).
+
+## Compute and storage resources
 
 As of Dec 9, 2015 major compute and storage systems are:
 
