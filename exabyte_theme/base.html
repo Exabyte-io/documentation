@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        {%- for path in config.extra.preload_javascript %}
+        <script src="{{ path }}"></script>
+        {%- endfor %}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +13,7 @@
         {% if favicon %}<link rel="shortcut icon" href="{{ base_url }}/{{ favicon }}">
         {% else %}<link rel="shortcut icon" href="{{ base_url }}/img/favicon.ico">{% endif %}
 
-	<title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
+	    <title>{% if page_title %}{{ page_title }} - {% endif %}{{ site_name }}</title>
 
         <link href="{{ base_url }}/css/font-awesome-4.0.3.css" rel="stylesheet">
         <link rel="stylesheet" href="{{ base_url }}/css/highlight.css">
