@@ -770,7 +770,8 @@ img {
  * --------------------------------------------------------- */
 p + h1, p + h2, p + h3, p + h4,
 pre + h1, pre + h2, pre + h3, pre + h4,
-ul + h1, ul + h2, ul + h3, ul + h4 {
+ul + h1, ul + h2, ul + h3, ul + h4,
+ol + h1, ol + h2, ol + h3, ol + h4 {
     margin: 30px 0 10px 0;
 }
 p, :not(footer.p) {
@@ -815,6 +816,7 @@ h4 {
     font-weight: 200;
     line-height: 1.0;
 }
+
 /* --------------------------------------------------------- *
  *                  Source code
  * --------------------------------------------------------- */
@@ -825,6 +827,9 @@ pre {
 pre code {
     overflow-wrap: normal;
     white-space: pre;
+}
+p + pre, ul + pre {
+    margin-top: 10px;
 }
 /* --------------------------------------------------------- *
  *                  Horizontal ruler

@@ -123,22 +123,25 @@ Your public will be saved with exabyte.io. This could take a few seconds. If eve
 
 There is a variety of SSH clients that you can use to connect to a our platform. We will cover the following two:</p>
 
-- OpenSSH (Linux and Mac OS X): a collection of software that ships with most Unix-like operating systems
+- command-line terminal with OpenSSH (Linux and Mac OS X): a collection of software that ships with most Unix-like operating systems
 - PuTTY (Windows): a free SSH client that can run on Windows, and is available for download on the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTY Download Page</a>. The client executable is named *putty.exe*. <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe" target="_blank">puttygen.exe</a> is also necessary to handle SSH keys.
 
-### SSH Login via OpenSSH
+### SSH Login via terminal
+
+Replace the text inside braces below with the corresponding names/paths:
 
 1. Change the permissions on the private key to be accessible to you only:
 
-    ```
-    chmod 400 <path/to/your/private_key>
-    ```
+    <pre>
+    chmod 400 {path/to/your/private_key}
+    </pre>
 
 2. At the command prompt, enter the following command:
 
-```bash
-ssh -i <path/to/your/private_key> <exabyte.io_username>@angstrom.exabyte.io
-```
+    <pre>
+    ssh -i {path/to/your/private_key} {exabyte.io_username}@angstrom.exabyte.io
+    </pre>
+
 
 ### SSH Login via PuTTY
 
@@ -193,3 +196,27 @@ Once the ssh connection is established, you will see the following screen:
  *  of obtaining access credentials. ® 2015 Exabyte Inc.         *
 ------------------------------------------------------------------
 </pre>
+
+## Data transfer
+
+Depenging on your client, you may use one of the options below
+
+### Transfer data via secure copy
+
+Replace the text inside braces below with the corresponding names/paths:
+
+1. To transfer files to exabyte.io:
+
+    <pre>
+    scp -i {path/to/your/private_key} {path/to/your/local/file} {exabyte.io_username}@angstrom.exabyte.io:{path/inside/your/home/}
+    </pre>
+
+2. To transfer files from exabyte.io::
+
+    <pre>
+    scp -i {path/to/your/private_key} {exabyte.io_username}@angstrom.exabyte.io:{path/inside/your/home/} {path/to/your/local/file}
+    </pre>
+
+### Transfer data via WinSCP
+
+When using <a class="text-muted" href="https://winscp.net" target="_blank">WinSCP</a>, one would need to load the private key through its interface before connecting. <a href="https://winscp.net/eng/docs/ui_login_authentication#private_key" target="_blank">This page</a> explains how to do so.
