@@ -1,5 +1,4 @@
 # Compute Environment
----
 
 When you log in to exabyte.io via command-line, you are in your global $HOME directory. You initially land in the same place all the time. This means that if you have files or binary executables that are located in your home directory, they will be available on all cluster nodes through a network-shared filesystem.
 
@@ -37,13 +36,13 @@ Currently Loaded Modulefiles:
 
 Let's say you want to use a compiler. The "module avail" command will list all the available modules. It could be a very long list. But you can use the module's name stem to do a useful search. For example
 
-`# > module avail compiler`
-```
---------------------------- /opt/modulefiles -------------------------------
+`# > module avail applications`
 
-PrgEnv-gnu/4.0.46
-PrgEnv-intel/3.1.61
-PrgEnv-intel/4.0.30
+```
+--------------------- /export/compute/modulefiles ---------------------
+applications/espresso/521-i-174-impi-044
+applications/vasp/535-i-174-impi-044
+
 ```
 
 ### module swap
@@ -56,19 +55,8 @@ That's all you have to do. You don't have to change your makefiles, or anything 
 
 ### module load
 
-If you want to use [Quantum ESPRESSO](http://quantum-espresso.org) application. Try "module avail qe"
+If you want to use [Quantum ESPRESSO](http://quantum-espresso.org) application, just load that module.
 
-`# > module avail qe`
+`# > module load applications/espresso/521-i-174-impi-044`
 
-```
------------------- /usr/common/usg/Modules/modulefiles -----------------------------
-qe/4.1.0  qe/5.0(default)  qe/5.1.1
-```
-
-The default version is 5.0, but say you'd rather use some features available only in version 5.1.1. In that case, just load that module.
-
-`# > module load qe/5.1.1`
-
-Now you can invoke Quantum ESPRESSO with the `qe` command (that's the name of the binary executable) in the proper way (see Running Jobs below).
-
-If you want to use the default version, you can type either "module load qe" or "module load qe/5.0". (The word "default" is not part of the name.)
+Now you can invoke Quantum ESPRESSO with the `pw.x` command (that's the name of the binary executable).
