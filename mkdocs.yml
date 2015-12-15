@@ -16,7 +16,8 @@ pages:
     - Home: 'index.md'
     # Web
     - Tutorials:
-        - 'Quickstart': 'tutorials/first-steps.md'
+        - 'UI overview': 'tutorials/ui.md'
+        - 'Quickstart':  'tutorials/quickstart.md'
     - Terminology:
     #     # Characteristic, descriptive, materials bank etc
     #     - 'Materials':        'terminology/materials.md'
@@ -32,6 +33,8 @@ pages:
         - 'CLI: Environment':   'cli/environment.md'
         - 'CLI: Batch jobs':    'cli/jobs.md'
         - 'CLI: Extra':         'cli/extra.md'
+    - Billing:
+        - 'Pricing':            'billing/pricing.md'
     # Other
     - Other:
         - 'FAQ': 'other/faq.md'
