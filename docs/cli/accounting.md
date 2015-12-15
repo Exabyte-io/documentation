@@ -1,10 +1,12 @@
 # Accounting
----
+
 This page explains how to retrieve accounting information for users logged-in via command line.
 
 ## Total remaining allocation
 
-`# > gbalance`
+Total remaining allocation (in US dollars) is accessed using:
+
+`# > balance`
 
 ```bash
 Id Name     Amount Reserved Balance CreditLimit Available
@@ -24,7 +26,7 @@ The information above shows:
 
 ## Itemized account statement
 
-Example belows shows how to view the account statement since the beginning of time
+Example below shows how to view the account statement since the beginning of time
 
 `# > statement`
 
@@ -89,6 +91,8 @@ Job    Charge 92    steven   steven   cluster.exabyte.io  -0.01 2015-02-11 11:57
 
 
 ## Detailed list of jobs
+
+To get detailed information about all the jobs submitted on our system:
 
 `# > lsjob`
 
