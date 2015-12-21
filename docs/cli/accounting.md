@@ -1,24 +1,14 @@
-# Accounting Information
----
-Accounting information currently available to the users logged-in via command line.
+# Accounting
 
-## Quick information about user balance
+This page explains how to retrieve accounting information for users logged-in via command line.
 
-`# > gbalance`
+## Total remaining allocation
 
-```
-Project  Machines Balance
--------- -------- -------
-steven   ANY       999.09
-```
+Total remaining allocation (in US dollars) is accessed using:
 
----
+`# > balance`
 
-## Total remaining allocation for a user
-
-`# > gbalance`
-
-```
+```bash
 Id Name     Amount Reserved Balance CreditLimit Available
 -- -------- ------ -------- ------- ----------- ---------
 1  steven  1000.00     0.00 1000.00        0.00   1000.00
@@ -28,18 +18,19 @@ The information above shows:
 
 - username (*Name*) for the
 - the allocation *Amount* in US dollars,
-- *Reserved* amount for the currently queued jobs,
+- *Reserved* amount reserved for the currently running jobs,
 - *Balance* available to the user,
-- *CreditLimit* illustrating how much credit user has with Exabyte.io
-- *Available* amount for the current user (for team project allocations)
+- *CreditLimit* illustrating how much credit user has with exabyte.io
+- *Available* amount allocated for the current user (for team allocations)
 
----
 
 ## Itemized account statement
 
-`# > gstatement`
+Example below shows how to view the account statement since the beginning of time
 
-```
+`# > statement`
+
+```bash
 ################################################################################
 #
 # Statement for user steven
@@ -98,15 +89,14 @@ Job    Charge 92    steven   steven   cluster.exabyte.io  -0.01 2015-02-11 11:57
 
 ```
 
-Example above shows the account statement over all time
-
----
 
 ## Detailed list of jobs
 
-`# > glsjob`
+To get detailed information about all the jobs submitted on our system:
 
-```
+`# > lsjob`
+
+```bash
 Id JobId User     Project  Machine            Queue QualityOfService Stage   Charge Processors Nodes WallDuration StartTime           EndTime             Description
 -- ----- -------- -------- ------------------ ----- ---------------- ------- ------ ---------- ----- ------------ ------------------- ------------------- -----------
 28 75    christie christie cluster.exabyte.io batch GS               Charge    0.00 8                109          2015-02-11 01:36:58 2015-02-11 01:38:47

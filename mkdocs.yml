@@ -13,16 +13,29 @@ extra:
     preload_javascript:
         - preload.js
 pages:
-# Home page - must be present
-- ['index.md', 'Home']
-# Web
-- ['tutorials/first-steps.md', 'Tutorials', 'Quickstart']
-# Command-Line
-- ['cluster/index.md', 'Advanced', 'Compute Platform (CP)']
-- ['cluster/general.md', 'Advanced', 'CP:Overview']
-- ['cluster/accounting.md', 'Advanced', 'CP:Accounting']
-- ['cluster/environment.md', 'Advanced', 'CP:Environment']
-- ['cluster/jobs.md', 'Advanced', 'CP:Jobs']
-- ['cluster/jobs-angstrom.md', 'Advanced', 'CP:Jobs-angstrom']
-# FAQ
-- ['faq/index.md', 'Other', 'FAQ']
+    # Home page - must be present
+    - Home: 'index.md'
+    # Web
+    - Tutorials:
+        - 'UI overview': 'tutorials/ui.md'
+        - 'Quickstart':  'tutorials/quickstart.md'
+    - Terminology:
+    #     # Characteristic, descriptive, materials bank etc
+    #     - 'Materials':        'terminology/materials.md'
+    #     # Model, Method, Unit, Job, Workflow
+        - 'Simulations':      'terminology/simulations.md'
+    #     # Parameters that set up compute
+    #     - 'Compute':          'terminology/compute.md'
+    # Command-Line
+    - Advanced:
+        - 'Command-line (CLI)': 'cli/general.md'
+        - 'CLI: Login':         'cli/login.md'
+        - 'CLI: Accounting':    'cli/accounting.md'
+        - 'CLI: Environment':   'cli/environment.md'
+        - 'CLI: Batch jobs':    'cli/jobs.md'
+        - 'CLI: Extra':         'cli/extra.md'
+    - Billing:
+        - 'Pricing':            'billing/pricing.md'
+    # Other
+    - Other:
+        - 'FAQ': 'other/faq.md'
