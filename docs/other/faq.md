@@ -16,13 +16,11 @@ We believe that focusing on core materials science is the most effective way to 
 
 ## Where does your name come from?
 
-Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drives. Or 1 thousand datacenter storage units. It is a pretty big number and it illustrates the complexity and scale of the problem we solve.
-
-Rumor has it that our founding team together with the leading minds in the field had figured out that after surpassing 1 exabyte of accumulated materials data computers will be able to run simulations without needing humans...
+Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drives. Or 1 thousand datacenter storage units. It is a pretty big number and it illustrates the complexity and scale of the problem we solve. Rumor has it that our founding team together with the leading minds in the field had figured out that after surpassing 1 exabyte of accumulated materials data computers will be able to run simulations without needing humans...
 
 ## Why are you doing this?
 
-The world of today is broken. Humans now faces global challenges too many to count. We exist to solve the most fundamental challenges, that affect all others, by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models.
+The world of today is broken. Humans now face global challenges too many to count. We exist to solve the most fundamental and most important of these challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models.
 
 ## Why should I care?
 
@@ -121,4 +119,4 @@ Our current customers routinely run their simulation workflows on ~1k CPU (centr
 
 ## Can I run a simulation workflow on a thousand CPU in a couple of clicks?
 
-Yes, you can already do so using our current beta product.
+Yes, you can. Although we are still in private beta, we have already scaled far beyon 1k CPU.
