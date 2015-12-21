@@ -1,143 +1,5 @@
-# Submitting Batch Jobs
+Advanced batch job configuration
 ---
-
-High performance parallel computing codes generally run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to a batch system that manages the compute resource and schedules the job to run based on a set of policies. In general, batch systems work on a first-in, first-out basis, but this is subject to a number of constraints.
-
----
-
-## Batch Jobs
-
-Batch scripts consist of two parts: 1) a set of directives that describe your resource requirements (time, number of processors, etc.) and 2) UNIX commands that perform your computations. These UNIX command may create directories, transfer files, etc.; anything you can type at a UNIX shell prompt.
-
-The actual execution of your parallel job, however, is handled by a special command, called a job launcher. In a generic Linux environment this utility is often called "mpirun".
-
----
-
-### Interactive parallel jobs
-
-In Development
-
-<!-- , debugging, and testing of parallel code demands interactivity. You can run parallel jobs interactively, subject to a 30-minute time limit and limit on the number of nodes. Instead of submitted a batch job script, you tell the batch system that you want interactive access and then run your command at the command prompt:
-
-```
-qsub -V -I -lmppwidth=<number of cores>
-cd $PBS_O_WORKDIR
-mpirun -n <number of tasks> <name_of_executable_binary>
-```
- -->
-
----
-
-### Non-interactive batch jobs
-
-A batch job is the most common way users run production applications on parallel machines. Our batch system is based on the PBS model, implemented with the Moab scheduler and Torque resource manager.T
-
-Typically, the user submits a batch script to the batch system. This script specifies, at the very least, how many nodes and cores the job will use, how long the job will run, and the name of the application to run. The job will advance in the queue until it has reached the top. At this point, Torque will allocate the requested number of nodes to the batch job. The batch script itself will execute on the "head node" (sometimes known as the "MOM" node).
-
----
-
-## Sample Batch Scripts
-
-Although there are default values for all batch parameters, it is a good idea always to specify the name of the queue, the number of nodes, and the walltime for all batch jobs. To minimize the time spent waiting in the queue, specify the smallest walltime that will safely allow the job to complete.
-
-A common convention is to append the suffix ".pbs" to batch scripts.
-
----
-
-### Batch Script for Regular Compute
-
-This example requests 16 nodes, and 8 tasks per node, for 10 minutes, on regular (partition=O) compute resources.
-
-```bash
-#PBS -N my_job
-#PBS -l partition=O
-#PBS -l nodes=16
-#PBS -l ppn=8
-#PBS -l walltime=00:10:00:00
-#PBS -m abe
-#PBS -M user@email-service.com
-
-cd $PBS_O_WORKDIR
-module load mpi/intel/ips-2013
-mpirun -np 128 ./my_executable
-```
-
----
-
-### Batch Script for Cost-saving Compute
-
-This example requests 16 nodes, and 8 tasks per node, for 10 minutes, on Cost-saving (partition=S) compute resources.
-
-```bash
-#PBS -N my_job
-#PBS -l partition=S
-#PBS -l nodes=16
-#PBS -l ppn=8
-#PBS -l walltime=00:10:00:00
-#PBS -m abe
-#PBS -M user@email-service.com
-
-cd $PBS_O_WORKDIR
-module load mpi/intel/ips-2013
-mpirun -np 128 ./my_executable
-```
-
-### Cost-saving Compute Termination
-Due to the spot price fluctuation, cost-saving compute may be terminated. In order to get notified of cost-saving compute termination via email, the `#PBS -m abe` and `#PBS -M email_address` directives must be set in the job script file. In addition, PBS automatically restarts jobs in case of cost-saving compute termination. If you don not want PBS to restart your jobs, please set `#PBS -r n` directive in the job script file. A temporary directory for job's intermediate results are created in user's home directory when a job is killed or restarted due to cost-saving compute termination.
-
-### Specify Job Project
-In order to specify a project that job belongs to and should be charged on, `#PBS -A PROJECT_NAME` directive should be used in job script file. Each user has a default project that jobs are charged on by default.
-
----
-
-## Submit Example
-
-Submit your batch script with the qsub command:
-
-```
-qsub my_job.pbs
-123456.cluster
-```
-
-The qsub command displays the job_id (12346.cluster in the above example). It is important to keep track of your job_id for job tracking and problem resolution.
-
----
-
-## View Example
-
-View your currently submitted jobs with the qstat command:
-
-```
-qstat
-[steve@cluster example_QE]$ qstat
-Job ID                    Name             User            Time Use S Queue
-------------------------- ---------------- --------------- -------- - -----
-156.cluster                QE               steve           00:00:05 C batch
-157.cluster                QE               steve                  0 R batch
-```
-
-The qsub command displays the information about your job organized by its ID. You can also view detailed information about each job by passing -f flag: `qstat -f $JOB_ID`.
-
----
-
-## Parallel provisioning
-
-It takes a few minutes for each job to get requested nodes and transition from "queued" to "running" state (5 minutes or more usually). When N jobs are submitted at once, the total wait time is N*5 minutes for the last job to be started. This is done to facilitate efficient resource allocation. Sometimes, one may want to provision nodes for all the jobs in parallel and wait only once to start all jobs. In that case PARALLEL extension directive should be used within the job script file as shown below:
-
-```bash
-#PBS -N SAMPLE
-#PBS -j oe
-#PBS -l nodes=2
-#PBS -l ppn=8
-#PBS -l partition=O
-#PBS -l walltime=00:00:10:00
-#PBS -W x=PARALLEL:TRUE
-
-module add mpi/intel/ips-2013
-mpirun -np $PBS_NP hostname
-```
-
-Please note that if you use PARALLEL extension directive in your job script file the job will be executed exclusively on requested nodes. For above example 2 nodes with **all** cores available are assigned to the job but mpirun uses only 8 cores on each node. In addition the job is charged for the number of whole CPU-hours (not CPU-seconds). So if the above job runs for 10 minutes it will be charged 1 hour times the total number of CPUs available on the requested nodes.
 
 ## Torque Keywords
 
@@ -186,6 +48,7 @@ The following keywords may be specified as qsub command line options, or as dire
         <tr>
             <th style="text-align: center; padding:10px;" colspan="3">Useful Torque Options/Directives</th>
         </tr>
+        <tr>
             <th style="text-align: center;">Option</th>
             <th style="text-align: center;">Default</th>
             <th style="text-align: center;">Description</th>
@@ -196,11 +59,10 @@ The following keywords may be specified as qsub command line options, or as dire
             <td>Name of submit queue</td>
         </tr>
         <tr>
-        <!--<tr>
             <td>-A repo</td>
             <td>Default repo</td>
             <td>Charge job to repo</td>
-        </tr>-->
+        </tr>
         <tr>
             <td>-e filename</td>
             <td>&lt;job_name&gt;.e&lt;job_id&gt;</td>
@@ -253,8 +115,8 @@ The batch system defines many environment variables, which are available for use
 <table border="0">
     <tbody>
         <tr style="padding:10px;">
-            <td><strong>Variable Name<strong></td>
-            <td><strong>Meaning<strong></td>
+            <td><strong>Variable Name</strong></td>
+            <td><strong>Meaning</strong></td>
         </tr>
         <tr>
             <td>PBS_O_LOGNAME</td>
@@ -317,12 +179,7 @@ These files will be updated in real-time while the job is running, allowing you 
 
 After your batch job completes, the above files will be renamed to the corresponding stdout/stderr files (for example: my_job.o123456 and my_job .e123456).
 
----
-
 ## Links
 
-[1] [PBS](http://en.wikipedia.org/wiki/TORQUE)
-
-[2] [A tutorial on running batch jobs using PBS](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)
-
----
+1. [PBS/Torque](http://en.wikipedia.org/wiki/TORQUE)
+2. [A tutorial on running batch jobs using PBS](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)

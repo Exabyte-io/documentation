@@ -1,22 +1,34 @@
-Submitting jobs on `angstrom.exabyte.io`
----
+# Batch jobs
 
-### Architecture
 
-`angstrom.exabyte.io` currently has a login node that is connected to 3 compute clusters. Each cluster is running a separate instance of queueing and resource management systems, but has access to the same data. `exalist_masters` shows the cluster master nodes that can be accessed via ssh.
+## Architecture
 
-The explanation below is the same for each compute cluster.
+Login node at `angstrom.exabyte.io` currently serves as an entry point to our compute cluster. It is running a single instance of the resource management system (RMS). `exalist_nodes` shows the cluster nodes that are currently active.
 
-### Queues overview
+Simulation codes are generally expected to be run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to RMS.
 
-We have multiple job routing queues implemented.
+## Batch Jobs
 
-- debug (D): for small-sized and short debug calculations
+Batch scripts consist of two parts: 1) a set of directives that describe your resource requirements (time, number of processors, etc.) and 2) UNIX commands that perform your computations. These UNIX command may create directories, transfer files, etc.; anything you can type at a UNIX shell prompt.
+
+The actual execution of your parallel job, however, is handled by a special command, called a job launcher. In a generic Linux environment this utility is often called "mpirun".
+
+## Compute levels
+
+We have two levels of compute resources: *Regular* and *Saving*. Saving level is charged at a significantly lower price than Regular, because it is using compute resources that are currently idle. Users should be aware, however, that cost-saving compute resources may be terminated time depenging on the load in the datacenter.
+
+In order to get notified about cost-saving compute termination via email, `#PBS -m abe` and `#PBS -M < email_address >` directives must be set in the job script file. In addition, our scheduling system automatically restarts terminated jobs and re-submits them into the regular queue. If you do not your job to be restarted this way, please set `#PBS -r n` directive in the job script. A temporary directory for job's intermediate results are created in user's home directory when a job is killed or restarted due to cost-saving compute termination.
+
+## Queues
+
+`angstrom.exabyte.io` has multiple job routing queues:
+
+- **debug (D)**: for small-sized and short debug calculations
     - node cout == 1
     - CPU cout <= 36
     - number of compute nodes in the queue is 1
 
-- regular: for most regular tasks, new compute resources are added one-by-one
+- **regular**: for most regular tasks, new compute resources are added one-by-one
 
     - on-demand regular (OR), with the following rules per job:
         - node cout == 1
@@ -25,7 +37,7 @@ We have multiple job routing queues implemented.
 
     - saving regular (SR): same parameters as above
 
-- fast: for large-scale tasks, new compute resources are added in parallel
+- **fast**: for large-scale tasks, new compute resources are added in parallel
 
     - on-demand fast (OF), with the following rules per job:
         - node cout < 50
@@ -42,29 +54,23 @@ Approximate waiting times for a single job execution for the queues (dependent o
 - on-demand: within 5 min
 - saving: usually within 15 min (unless datacenter capacity is exceeded)
 
-### Interactive parallel jobs
+## Interactive parallel jobs
 
-Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the master node (using 2-8 CPU and <1min walltime per user) instead, and submit larger debug tasks into the debug queue.
+Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the master node (using 2-8 CPU and < 1min walltime per user) instead, and submit larger debug tasks into the debug queue.
 
----
 
-### Non-interactive batch jobs
+## Non-interactive batch jobs
 
 Our batch system is based on the PBS model, implemented with the Moab scheduler and Torque resource manager.
 
 Typically, the user submits a batch script to the batch system. This script specifies, at the very least, how many nodes and cores the job will use, how long the job will run, and the name of the application to run.
 
----
 
 ## Sample Batch Scripts
 
 A common convention is to append the suffix ".pbs" or ".job" or ".sh" to batch scripts.
 
----
-
-### Example Batch Scripts
-
-#### Debug queue (D)
+### Debug queue (D)
 
 This example explains the keywords and requests 1 node with 8 processors per node for 10 minutes:
 
@@ -97,11 +103,11 @@ This example explains the keywords and requests 1 node with 8 processors per nod
 #PBS -M name@domain.com
 
 cd $PBS_O_WORKDIR
-module load <MODULE_NAME>
+module load < MODULE_NAME >
 mpirun -np 8 ./my_executable
 ```
 
-#### On-demand regular (OR)
+### On-demand regular (OR)
 
 This example requests 1 node, and 36 tasks per node, for 10 minutes
 
@@ -118,11 +124,11 @@ This example requests 1 node, and 36 tasks per node, for 10 minutes
 #PBS -M name@domain.com
 
 cd $PBS_O_WORKDIR
-module load <MODULE_NAME>
+module load < MODULE_NAME >
 mpirun -np 36 ./my_executable
 ```
 
-#### On-demand fast (OF)
+### On-demand fast (OF)
 
 This example requests 16 nodes, and 8 tasks per node, for 10 minutes
 
@@ -139,15 +145,12 @@ This example requests 16 nodes, and 8 tasks per node, for 10 minutes
 #PBS -M name@domain.com
 
 cd $PBS_O_WORKDIR
-module load <MODULE_NAME>
+module load < MODULE_NAME >
 mpirun -np 128 ./my_executable
 ```
 
-### Cost-saving compute
 
-Job submission process to cost-saving queues is identical to on-demand ones, except for the queue names.
-
-#### Saving regular (SR)
+### Saving regular (SR)
 
 This example requests 1 node, and 36 tasks per node, for 10 minutes
 
@@ -164,11 +167,11 @@ This example requests 1 node, and 36 tasks per node, for 10 minutes
 #PBS -M name@domain.com
 
 cd $PBS_O_WORKDIR
-module load <MODULE_NAME>
+module load < MODULE_NAME >
 mpirun -np 36 ./my_executable
 ```
 
-#### Saving fast (SF)
+### Saving fast (SF)
 
 This example requests 16 nodes, and 8 tasks per node, for 10 minutes
 
@@ -185,24 +188,18 @@ This example requests 16 nodes, and 8 tasks per node, for 10 minutes
 #PBS -M name@domain.com
 
 cd $PBS_O_WORKDIR
-module load <MODULE_NAME>
+module load < MODULE_NAME >
 mpirun -np 128 ./my_executable
 ```
 
----
-
-### Cost-saving Compute Termination
-
-Due to the spot price fluctuation, cost-saving compute may be terminated. In order to get notified of cost-saving compute termination via email, the `#PBS -m abe` and `#PBS -M email_address` directives must be set in the job script file. In addition, PBS automatically restarts jobs in case of cost-saving compute termination. If you don not want PBS to restart your jobs, please set `#PBS -r n` directive in the job script file. A temporary directory for job's intermediate results are created in user's home directory when a job is killed or restarted due to cost-saving compute termination.
 
 ### Specify Job Project
 In order to specify a project that job belongs to and should be charged upon, a `#PBS -A PROJECT_NAME` directive should be used in job script file. Each user has a default project that jobs are charged on by default.
 
----
 
 ## Submit Example
 
-Submit your batch script with the qsub command:
+Submit your batch script with `qsub` command:
 
 ```
 qsub my_job.pbs
@@ -211,11 +208,10 @@ qsub my_job.pbs
 
 The qsub command displays the job_id (123456.cluster in the above example). It is important to keep track of your job_id for job tracking and problem resolution.
 
----
 
 ## View Example
 
-View your currently submitted jobs with the qstat command:
+View your currently submitted jobs with `qstat` command:
 
 ```
 qstat
@@ -229,4 +225,3 @@ Job ID                    Name             User            Time Use S Queue
 The qsub command displays the information about your job organized by its ID. You can also view detailed information about each job by passing -f flag: `qstat -f $JOB_ID`.
 
 
----
