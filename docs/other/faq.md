@@ -119,4 +119,4 @@ Our current customers routinely run their simulation workflows on ~1k CPU (centr
 
 ## Can I run a simulation workflow on a thousand CPU in a couple of clicks?
 
-Yes, you can. Although we are still in private beta, we have already scaled far beyon 1k CPU.
+Yes, you can. Although we are still in private beta, we have already scaled far beyond 1k CPU.
