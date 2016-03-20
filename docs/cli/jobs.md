@@ -1,58 +1,12 @@
 # Batch jobs
 
-
-## Architecture
-
-Login node at `angstrom.exabyte.io` currently serves as an entry point to our compute cluster. It is running a single instance of the resource management system (RMS). `exalist_nodes` shows the cluster nodes that are currently active.
-
-Simulation codes are generally expected to be run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to RMS.
+Simulation tasks submitted through command-line interface are expected to be run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to the resource management system.
 
 ## Batch Jobs
 
 Batch scripts consist of two parts: 1) a set of directives that describe your resource requirements (time, number of processors, etc.) and 2) UNIX commands that perform your computations. These UNIX command may create directories, transfer files, etc.; anything you can type at a UNIX shell prompt.
 
 The actual execution of your parallel job, however, is handled by a special command, called a job launcher. In a generic Linux environment this utility is often called "mpirun".
-
-## Compute levels
-
-We have two levels of compute resources: *Regular* and *Saving*. Saving level is charged at a significantly lower price than Regular, because it is using compute resources that are currently idle. Users should be aware, however, that cost-saving compute resources may be terminated time depenging on the load in the datacenter.
-
-In order to get notified about cost-saving compute termination via email, `#PBS -m abe` and `#PBS -M < email_address >` directives must be set in the job script file. In addition, our scheduling system automatically restarts terminated jobs and re-submits them into the regular queue. If you do not your job to be restarted this way, please set `#PBS -r n` directive in the job script. A temporary directory for job's intermediate results are created in user's home directory when a job is killed or restarted due to cost-saving compute termination.
-
-## Queues
-
-`angstrom.exabyte.io` has multiple job routing queues:
-
-- **debug (D)**: for small-sized and short debug calculations
-    - node cout == 1
-    - CPU cout <= 36
-    - number of compute nodes in the queue is 1
-
-- **regular**: for most regular tasks, new compute resources are added one-by-one
-
-    - on-demand regular (OR), with the following rules per job:
-        - node cout == 1
-        - CPU cout <= 36
-        - jobs in OR queue are charged according to consumed walltime in seconds, number of compute nodes in the queue is 10
-
-    - saving regular (SR): same parameters as above
-
-- **fast**: for large-scale tasks, new compute resources are added in parallel
-
-    - on-demand fast (OF), with the following rules per job:
-        - node cout < 50
-        - CPU count <= 1800
-        - jobs in OF queue are charged according to the number of CPU-hours consumed, each partial hour is charged as whole, number of compute nodes in the queue is 50
-
-    - saving fast (SF): same parameters as above
-
-Debug queue is charged at 2x the base rate, on-demand queues are charged at 1x the base price and saving queues are charged at 0.2x the base price.
-
-Approximate waiting times for a single job execution for the queues (dependent on the load):
-
-- debug: no wait (unless queue is fulfilled)
-- on-demand: within 5 min
-- saving: usually within 15 min (unless datacenter capacity is exceeded)
 
 ## Interactive parallel jobs
 
@@ -68,7 +22,7 @@ Typically, the user submits a batch script to the batch system. This script spec
 
 ## Sample Batch Scripts
 
-A common convention is to append the suffix ".pbs" or ".job" or ".sh" to batch scripts.
+Sample batch scripts for the available [queue types]() are given below. A common convention is to append the suffix ".pbs" or ".job" or ".sh" to batch scripts.
 
 ### Debug queue (D)
 
@@ -225,3 +179,6 @@ Job ID                    Name             User            Time Use S Queue
 The qsub command displays the information about your job organized by its ID. You can also view detailed information about each job by passing -f flag: `qstat -f $JOB_ID`.
 
 
+## Job termination
+
+In order to get notified about capacity-based termination of a task in saving queue via email, `#PBS -m abe` and `#PBS -M < email_address >` directives must be set inside the job script file. In addition, our scheduling system automatically restarts terminated jobs and re-submits them into the regular queue. If you do not want your job to be restarted this way, set `#PBS -r n` directive in the job script. A temporary directory for job's intermediate results are created in user's home directory.
