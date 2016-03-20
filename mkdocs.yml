@@ -6,7 +6,7 @@ extra_css:
 extra_javascript:
     - extra.js
 site_favicon: /img/favicon.ico
-copyright: © 2015 Exabyte Inc. All rights reserved.
+copyright: © 2016 Exabyte Inc. All rights reserved.
 extra:
     home_url: https://platform.exabyte.io
     full_width: False
@@ -25,14 +25,16 @@ pages:
     #     # Model, Method, Unit, Job, Workflow
         - 'Simulations':      'terminology/simulations.md'
     #     # Parameters that set up compute
-    #     - 'Compute':          'terminology/compute.md'
+    - Compute:
+        - 'Overview':           'compute/overview.md'
+        - 'Queues':             'compute/queues.md'
     # Command-Line
     - Advanced:
         - 'Command-line (CLI)': 'cli/general.md'
         - 'CLI: Login':         'cli/login.md'
         - 'CLI: Accounting':    'cli/accounting.md'
         - 'CLI: Environment':   'cli/environment.md'
-        - 'CLI: Batch jobs':    'cli/jobs.md'
+        - 'CLI: Jobs':          'cli/jobs.md'
         - 'CLI: Extra':         'cli/extra.md'
     - Billing:
         - 'Pricing':            'billing/pricing.md'
