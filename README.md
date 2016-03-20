@@ -1,6 +1,6 @@
 # Overview
 
-This repo holds public documentation for exabyte.io. Currently deployed version is available at [this link](http://docs.exabyte.io:81)
+This repo holds public documentation for exabyte.io. Currently deployed version is available at [this link](http://docs.exabyte.io) (you will need to be logged in at platform.exabyte.io to try).
 
 Uses [MkDocs](http://www.mkdocs.org/#getting-started) to convert Markdown files (*.md) in `docs/` directory into static html.
 
