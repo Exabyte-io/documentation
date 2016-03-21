@@ -13,7 +13,7 @@ Below is a quick overview of our subscription levels:
 
 ```py
 +------------------------------------------------------------------------------------------------------------------------+
-| Feature/Plan            |  Newbie      Paid(short-term)    Paid(mid-term)      Enterprise(long-t)  Enterprise(extra)   |
+| Feature/Plan            |  Newbie      Advanced            Pro                 Enterprise          Enterprise-extra    |
 |------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                                        |
 | minimum payment            -           $50                 $500                $5,000              $50,000             |
