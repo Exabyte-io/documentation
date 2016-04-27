@@ -17,13 +17,13 @@ Below is a quick overview of our subscription levels:
 |------------------------------------------------------------------------------------------------------------------------|
 |                                                                                                                        |
 | minimum payment            -           $50                 $500                $5,000              $50,000             |
-| price per CPU-hour         $0.20       $0.20               $0.15               $0.12               $0.10               |
+| price per CPU-hour         $0.20       $0.20               $0.18               $0.15               $0.10               |
 | validity period            -           1 month             3 months            6 months            12 months           |
 | reserved compute nodes     -           -                   -                   +                   +                   |
 | monthly data usage         10Gb        50Gb                100Gb               500Gb               5Tb                 |
 | private data               -           -                   +                   +                   +                   |
 | organizations/teams        -           -                   -                   +                   +                   |
-| maximum team size          -           -                   -                   5                   50                  |
+| maximum team size          -           -                   -                   5                   15                  |
 | support level              web/email   web/email           web/email/phone     web/email/phone     <- + in person      |
 | command line access        -           -                   +                   +                   +                   |
 |                                                                                                                        |
@@ -69,3 +69,7 @@ The price above refers to the base rate for each subscription level. You can fur
 Detailed description on submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks).
 
 Debug queue is charged at `2x` the [base rate](../billing/pricing.md), on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base.
+
+## Extra storage
+
+You can purchase extra storage to increase the limits beyond the default value for your subscription level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details.
