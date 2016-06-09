@@ -2,7 +2,7 @@
 
 ## Overview
 
-Depending on the size and degree of urgency, simulation tasks can be directed to different submission queues to optimize cost/efficiency ration. We have multiple queues, as explained below:
+Depending on the size and degree of urgency, simulation tasks can be directed to different submission queues to optimize cost/efficiency ratio. We have multiple queues, as explained below:
 
 - **debug (D)**: for small-sized and short debug calculations
     * node cout == 1
@@ -18,12 +18,14 @@ Depending on the size and degree of urgency, simulation tasks can be directed to
 
 - **on-demand fast (OF)**: for large-scale tasks, with the following rules per job:
     * node cout < 50
-    * CPU count <= 1800
-    * jobs in OF queue are charged according to the number of CPU-hours consumed, each partial hour is charged as whole
+    * CPU count <= 1800 (total)
+    * jobs in OF queue are charged according to the number of Node-hours consumed, each partial hour is charged as whole
     * number of compute nodes in the queue is regulated between 100-1000
 
 - **saving regular (SR)**: same settings as (OR) above
 - **saving fast (SF)**: same settings as (OF) above
+
+> NOTE: 1 Node-hour = CPU count per node  x  1 CPU-hour
 
 
 ## Wait time
