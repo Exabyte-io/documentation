@@ -25,7 +25,7 @@ Depending on the size and degree of urgency, simulation tasks can be directed to
 - **saving regular (SR)**: same settings as (OR) above
 - **saving fast (SF)**: same settings as (OF) above
 
-> NOTE: 1 Node-hour = CPU count per node  x  1 CPU-hour
+NOTE: 1 Node-hour = CPU count per node  x  1 CPU-hour
 
 
 ## Wait time
