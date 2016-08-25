@@ -12,9 +12,14 @@ extra:
     full_width: False
     preload_javascript:
         - preload.js
+markdown_extensions:
+    - toc:
+        permalink: true
 pages:
     # Home page - must be present
     - Home: 'index.md'
+    # Registration
+    - registration/registration.md
     # Web
     - Tutorials:
         - 'UI overview': 'tutorials/ui.md'
