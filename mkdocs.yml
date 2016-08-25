@@ -6,7 +6,7 @@ extra_css:
 extra_javascript:
     - extra.js
 site_favicon: /img/favicon.ico
-copyright: © 2016 Exabyte Inc. All rights reserved.
+copyright: © 2016 <a href="http://platform.exabyte.io">Exabyte Inc</a>. All rights reserved.
 extra:
     home_url: https://platform.exabyte.io
     full_width: False
