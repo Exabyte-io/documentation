@@ -1,0 +1,52 @@
+*, *:active, *:hover {
+    outline: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0) !important;
+}
+
+*, button, input, i, a {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    line-height: 1.42857143;
+    color: #5e5e5e;
+    font-weight: 300;
+    background-attachment: fixed;
+    background-color: #f8f8f8;
+}
+
+/* --------------------------------------------------------- *
+ *                  Paragraph/list
+ * --------------------------------------------------------- */
+p + h1, p + h2, p + h3, p + h4,
+pre + h1, pre + h2, pre + h3, pre + h4,
+ul + h1, ul + h2, ul + h3, ul + h4,
+ol + h1, ol + h2, ol + h3, ol + h4 {
+    margin: 30px 0 10px 0;
+}
+p, :not(footer.p) {
+    line-height: 24px;
+}
+li > p {
+    margin: 0;
+    line-height: 18px;
+}
+.card-body ul {
+    margin: 15px 0 15px 0;
+    line-height: 24px;
+}
+
+/* --------------------------------------------------------- *
+ *                  Source code
+ * --------------------------------------------------------- */
+pre {
+    background-color: #F9F9F9;
+    overflow-x: auto;
+}
+pre code {
+    overflow-wrap: normal;
+    white-space: pre;
+}
+p + pre, ul + pre {
+    margin-top: 10px;
+}
