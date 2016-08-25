@@ -66,7 +66,9 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
       <div class="wy-side-nav-search">
 	{%- block site_name %}
-        <a href="{{ homepage_url }}" class="icon icon-home"> {{ site_name }}</a>
+        <a href="{{ homepage_url }}">
+          <img src="/img/logo-white.png" />
+        </a>
 	{%- endblock %}
 	{%- block search_button %}
         {% include "searchbox.html" %}
@@ -90,7 +92,9 @@
       {# MOBILE NAV, TRIGGLES SIDE NAV ON TOGGLE #}
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
         <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="{{ homepage_url }}">{{ site_name }}</a>
+        <a href="{{ homepage_url }}">
+          <img src="/img/logo-white.png" />
+        </a>
       </nav>
 
       {# PAGE CONTENT #}
