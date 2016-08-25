@@ -1,17 +1,23 @@
-<div id="sidebar">
-    <div class="sidebar-inner c-overflow">
-        <ul class="main-menu nav">
-            {% for toc_item in toc %}
-                <li class="main {% if toc_item.active %}active{% endif %}">
-                    <a href="{{ toc_item.url }}">
-                        {{ toc_item.title }}
-                    </a>
-                    {% for toc_item in toc_item.children %}
-                        <li class="toc-child"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
-                    {% endfor %}
-                </li>
-            {% endfor %}
-        </ul>
-    </div>
-</div>
+{% if nav_item.children %}
+    <ul class="subnav">
+    <li><span>{{ nav_item.title }}</span></li>
 
+        {% for nav_item in nav_item.children %}
+            {% include 'toc.html' %}
+        {% endfor %}
+    </ul>
+{% else %}
+    <li class="toctree-l1 {% if nav_item.active%}current{%endif%}">
+        <a class="{% if nav_item.active%}current{%endif%}" href="{{ nav_item.url }}">{{ nav_item.title }}</a>
+        {% if nav_item == page %}
+            <ul>
+            {% for toc_item in page.toc %}
+                <li class="toctree-l3"><a href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                {% for toc_item in toc_item.children %}
+                    <li><a class="toctree-l4" href="{{ toc_item.url }}">{{ toc_item.title }}</a></li>
+                {% endfor %}
+            {% endfor %}
+            </ul>
+        {% endif %}
+    </li>
+{% endif %}
