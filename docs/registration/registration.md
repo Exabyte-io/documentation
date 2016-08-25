@@ -1,33 +1,33 @@
 [TOC]
 
 ## Filling in the form
-Currently we manually approve applications to join Exabyte, and in order to do so we require certain details from applicants, all the fields *except affiliation* are required. See descriptions of each field in the table shown underneath the below screenshot.
+Currently we manually approve applications to join Exabyte, and in order to do so we require certain details from applicants, all the fields are required. See descriptions of each field in the table shown underneath the below screenshot.
 
 > All newly registered users have $10 credited to their personal allocations. If you are not a member of a project that already has an allocation, you may purchase an allocation using our web application.
 
 ![Exabyte Registration Form](img/RegistrationForm.png "Logo Title Text 1")
 
 
-| Field         | Description               ||
-| ------------- |:-------------             | -----:
-| Email         | a valid email             | required
-| Username      | 8-24 letters, no spaces   | required
-| Affiliation   | university affiliation    ||
-| Phone Number  | With country code         | required
-| Privacy       | Please read and accept    | required
+| Field         | Description                                       ||
+| ------------- |:-------------                                     | -----:
+| Email         | A valid email                                     | required
+| Username      | Alphanumeric & lowercase from 5 to 10 symbols     | required
+| Affiliation   | Organisational affiliation                        | required
+| Phone Number  | With country code (+001 for example)              | required
+| Privacy       | Please read and accept                            | required
 
 
-## Invitations and Credit
+## Invitations and credit
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We hope to encourage a sharing environment, and in order to facilitate this we offer users incentives via invitation links and crediting accounts. You can, as a user, invite other members and both will receive balance credits. When you receive an invitation from another user, follow the link in the email to the registration page so that we can track your information and credit both your, and your friend's, account.
 
-## How Quickly are Registrations Approved
+## How quickly are registrations approved
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We try to respond with 24 hours to each request, we may need to request further information before activating the account.
 
 ## How your data is used to approve a registration
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+We vet all applications based on the information you provide, and what is available publicly. We will decide the application based on this combined information. We may need to request more information and will respond as quickly as possible in order to process the activation quickly.
 
 ## Already have an account?
 
