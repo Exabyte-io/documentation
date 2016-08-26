@@ -20,6 +20,8 @@ pages:
     - Home: 'index.md'
     # Registration
     - registration/registration.md
+    - Getting Started:
+        - gettingstarted/ui-overview.md
     # Web
     - Tutorials:
         - 'UI overview': 'tutorials/ui.md'
