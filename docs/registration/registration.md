@@ -5,7 +5,7 @@ Currently we manually approve applications to join Exabyte, and in order to do s
 
 > All newly registered users have $10 credited to their personal allocations. If you are not a member of a project that already has an allocation, you may purchase an allocation using our web application.
 
-![Exabyte Registration Form](img/RegistrationForm.png "Logo Title Text 1")
+![Exabyte Registration Form](../images/RegistrationForm.png "Logo Title Text 1")
 
 
 | Field         | Description                                       ||
