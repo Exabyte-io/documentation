@@ -1,5 +1,3 @@
-[TOC]
-
 ## Filling in the form
 Currently we manually approve applications to join Exabyte, and in order to do so we require certain details from applicants, all the fields are required. See descriptions of each field in the table shown underneath the below screenshot.
 
