@@ -159,12 +159,3 @@ code.cs, code.c {
   border: 1px solid rgba(0, 0, 0, 0.2);
   background: rgba(255, 255, 255, 0.7);
 }
-
-.rst-content blockquote {
-    margin-left: 30px;
-    border-left: 5px solid #EFEFF0;
-    padding-left: 2em;
-    width: 80%;
-    margin-top: 20px;
-    font-weight: 600;
-}
