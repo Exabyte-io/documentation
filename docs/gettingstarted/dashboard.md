@@ -1,5 +1,3 @@
-[TOC]
-
 ## User Dashboard
 The dashboard is the first page you will see when you log in to Exabyte.
 
