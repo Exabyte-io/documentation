@@ -21,10 +21,10 @@ pages:
     # Registration
     - registration/registration.md
     - Getting Started:
-        - gettingstarted/ui-overview.md
+        - 'Dashboard':  'getting-started/dashboard.md'
+        - 'UI Overview':  'getting-started/ui-overview.md'
     # Web
     - Tutorials:
-        - 'UI overview': 'tutorials/ui.md'
         - 'Quickstart':  'tutorials/quickstart.md'
     - Terminology:
     #     # Characteristic, descriptive, materials bank etc
