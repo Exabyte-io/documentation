@@ -8,7 +8,7 @@ We have multiple levels of compute:
 - Regular
 - Saving
 
-`Regular` level is meant for most production tasks. It provides extensive compute resources at the base rate defined by [subscription level](../billing/pricing.md).
+`Regular` level is meant for most production tasks. It provides extensive compute resources at the base rate defined by [subscription level](/billing/accounts-and-billing#pricing).
 
 `Debug` level provides a relatively small amount of compute resources immediately with no wait time at an increased cos.
 

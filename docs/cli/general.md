@@ -1,8 +1,8 @@
-# COMMAND LINE INTERFACE
+# Command Line Interface
 
 Advanced users can request to access our compute platform via command-line interface (CLI) by contacting support team at support@exabyte.io.
 
-In order to deliver the best quality service, we make command-line interface available only for certain [subscription levels](../billing/pricing.md), when long-term mutual commitment is established.
+In order to deliver the best quality service, we make command-line interface available only for certain [subscription levels](/billing/accounts-and-billing#pricing), when long-term mutual commitment is established.
 
 ## Passwords and ssh keys
 
@@ -22,5 +22,3 @@ When as a CLI user, the following storage systems become available:
 
 
 <!-- TODO: add gif images showing how to get started -->
-
-

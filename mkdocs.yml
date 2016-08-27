@@ -16,35 +16,52 @@ markdown_extensions:
     - toc:
         permalink: true
 pages:
-    # Home page - must be present
     - Home: 'index.md'
-    # Registration
     - registration/registration.md
     - Getting Started:
-        - 'Dashboard':  'getting-started/dashboard.md'
+        - Quickstart:
+            - 'First Simulation':  'getting-started/first-simulation.md'
+            - 'First Material Import':  'getting-started/first-material-import.md'
+            - 'First Analytics':  'getting-started/first-analytics.md'
         - 'UI Overview':  'getting-started/ui-overview.md'
-    # Web
-    - Tutorials:
-        - 'Quickstart':  'tutorials/quickstart.md'
-    - Terminology:
-    #     # Characteristic, descriptive, materials bank etc
-    #     - 'Materials':        'terminology/materials.md'
-    #     # Model, Method, Unit, Job, Workflow
-        - 'Simulations':      'terminology/simulations.md'
-    #     # Parameters that set up compute
+        - 'Billing Overview':  'getting-started/billing-overview.md'
+    - Materials:
+        - 'Creating an ideal crystal':  'materials/creating-an-ideal-crystal.md'
+        - 'How to compare materials':  'materials/how-to-compare-materials.md'
+    - Model & Method:
+        - 'Models supported and planned':  'models/models-supported-and-planned.md'
     - Compute:
         - 'Overview':           'compute/overview.md'
         - 'Queues':             'compute/queues.md'
-    # Command-Line
-    - Advanced:
-        - 'Command-line (CLI)': 'cli/general.md'
-        - 'CLI: Login':         'cli/login.md'
-        - 'CLI: Accounting':    'cli/accounting.md'
-        - 'CLI: Environment':   'cli/environment.md'
-        - 'CLI: Jobs':          'cli/jobs.md'
-        - 'CLI: Extra':         'cli/extra.md'
-    - Billing:
-        - 'Pricing':            'billing/pricing.md'
-    # Other
-    - Other:
-        - 'FAQ': 'other/faq.md'
+    - Sharing & Collaboration:
+        - 'Organizations and sharing of data':  'collaboration/organizations-and-sharing-of-data.md'
+    - CLI:
+        - 'Introduction':  'cli/general.md'
+        - 'Login':         'cli/login.md'
+        - 'Accounting':    'cli/accounting.md'
+        - 'Environment':   'cli/environment.md'
+        - 'Jobs':          'cli/jobs.md'
+        - 'Extra':         'cli/extra.md'
+    - Tutorials:
+        - 'Quickstart':  'tutorials/quickstart.md'
+        # - 'First Simulation':            'tutorials/first-simulation.md'
+    - Accounts & Billing:
+        - 'Settings and Profile':                         'billing/settings-and-profile.md'
+        - 'Billing and Adding Credit':                    'billing/billing-and-adding-credit.md'
+        - 'Pricing and Service Levels':                   'billing/pricing-and-service-levels.md'
+        - 'How to increase your account balance':         'billing/how-to-add-credit.md'
+        - 'How to upgrade your service level':            'billing/how-to-upgrade-your-service-level.md'
+        - 'How to increase your storage quota':           'billing/how-to-add-storage.md'
+    - How to Participate:
+        # - 'Student Program': 'participate/student-program.md'
+        # - 'Developer Program': 'participate/developer-programer.md'
+        - 'Trello Roadmap': 'participate/trello-roadmap.md'
+    - Help & Support:
+        - 'Phone/Email': 'support/email.md'
+        - 'Helpdesk': 'support/helpdesk.md'
+        - 'FAQ': 'support/faq.md'
+    - Security:
+        - 'Data Security in transfer': 'security/data-security-in-transfer.md'
+    #     - 'Data Security at rest': 'security/data-security-at-rest.md'
+    - Terminology:
+        - 'Simulations':      'terminology/simulations.md'
