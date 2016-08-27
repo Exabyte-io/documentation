@@ -35,7 +35,7 @@ pages:
         - 'Queues':             'compute/queues.md'
     - Sharing & Collaboration:
         - 'Organizations and sharing of data':  'collaboration/organizations-and-sharing-of-data.md'
-    - CLI:
+    - Command Line Interface:
         - 'Introduction':  'cli/general.md'
         - 'Login':         'cli/login.md'
         - 'Accounting':    'cli/accounting.md'
