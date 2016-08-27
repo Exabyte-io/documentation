@@ -34,7 +34,7 @@ If you are new to Exabyte.io and feeling impatient, you can get started by follo
 
 ## UI overview
 
-We have summarized the information about the main elements of our user interface on [this page](tutorials/ui.md).
+We have summarized the information about the main elements of our user interface on [this page](getting-started/ui-overview.md).
 
 ## Search
 
