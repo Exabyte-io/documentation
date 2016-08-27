@@ -17,24 +17,19 @@ You always pay on-demand, however dependent on your subscription level your pric
 
 Below is a quick overview of our subscription levels:
 
-```py
-+------------------------------------------------------------------------------------------------------------------------+
-| Feature/Plan            |  Promo      Advanced            Pro                 Enterprise          Enterprise-extra    |
-|------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                        |
-| minimum payment            -           $50                 $500                $5,000              $50,000             |
-| price per CPU-hour         $0.20       $0.20               $0.18               $0.15               $0.10               |
-| validity period            -           1 month             3 months            6 months            12 months           |
-| reserved compute nodes     -           -                   -                   +                   +                   |
-| monthly data usage         10Gb        50Gb                100Gb               500Gb               5Tb                 |
-| private data               -           -                   +                   +                   +                   |
-| organizations/teams        -           -                   -                   +                   +                   |
-| maximum team size          -           -                   -                   5                   15                  |
-| support level              web/email   web/email           web/email/phone     web/email/phone     <- + in person      |
-| command line access        -           -                   +                   +                   +                   |
-|                                                                                                                        |
-+------------------------------------------------------------------------------------------------------------------------+
-```
+| Feature/Plan             |  Promo      | Advanced           | Pro              | Enterprise        |  Enterprise-extra    |
+| -------------            |:----------- |:-------------      |:-------------    |:-------------     |:-------------
+| minimum payment          |  -          | $50                | $500               | $5,000             | $50,000             |
+| price per CPU-hour       |  $0.20      | $0.20              | $0.18              | $0.15              | $0.10               |
+| validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months           |
+| reserved compute nodes   |  -          | -                  | -                  | +                  | +                   |
+| monthly data usage       |  10Gb       | 50Gb               | 100Gb              | 500Gb              | 5Tb                 |
+| private data             |  -          | -                  | +                  | +                  | +                   |
+| organizations/teams      |  -          | -                  | -                  | +                  | +                   |
+| maximum team size        |  -          | -                  | -                  | 5                  | 15                  |
+| support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal
+| command line access      |  -          | -                  | +                  | +                  | +
+
 
 ## How subscription levels are set
 
@@ -42,7 +37,7 @@ Your subscription level is defined by the payment that you make. **Organizations
 
 Here's how it works:
 
-- Upon signup you are given $10 credit to try the platform and your subscription level is set to `Newbie`.
+- Upon signup you are given $10 credit to try the platform and your subscription level is set to `Promo`.
 - When you provide a payment method, purchase allocation and pay $50 - your subscription level is set to `Advanced`
 - If you decide to pay $500 instead, your subscription level is set to `Pro`
 - Users with valid payment method can create **organizations**:
