@@ -54,7 +54,7 @@ pages:
         - 'How to increase your storage quota':           'billing/how-to-add-storage.md'
     - How to Participate:
         # - 'Student Program': 'participate/student-program.md'
-        # - 'Developer Program': 'participate/developer-programer.md'
+        - 'Developer Program': 'participate/developer-program.md'
         - 'Trello Roadmap': 'participate/trello-roadmap.md'
     - Help & Support:
         - 'Phone/Email': 'support/email.md'
