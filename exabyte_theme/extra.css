@@ -158,6 +158,9 @@ p + pre, ul + pre {
 
 }
 
+/* --------------------------------------------------------- *
+ *                  BLOCKQUOTE
+ * --------------------------------------------------------- */
 .rst-content blockquote {
     margin-left: 30px;
     border-left: 5px solid #EFEFF0;
@@ -165,4 +168,51 @@ p + pre, ul + pre {
     width: 80%;
     margin-top: 20px;
     color: #999;
+}
+
+/* --------------------------------------------------------- *
+ *  NAV COLLAPSE
+ * --------------------------------------------------------- */
+
+.wy-menu ul.subnav {
+    cursor: pointer;
+}
+
+.wy-menu ul.subnav > ul.subnav span {
+    color: #aaa;
+    padding-left: 1.3em;
+}
+
+.wy-menu ul.subnav > ul.subnav.active span {
+    color: white;
+    padding-left: 1.3em;
+}
+
+ul.subnav .fa {
+    display: none;
+}
+
+ul.subnav > .subnav .fa {
+    display:inline-block;
+}
+
+ul.subnav .subnav li.toctree-l1 {
+    display: none;
+}
+
+ul.subnav .subnav.active {}
+
+ul.subnav .subnav.active li.toctree-l1 {
+    display: block;
+}
+
+/* Font awesome icon */
+ul.subnav .fa {
+    color: gray;
+    margin: 0px 5px;
+}
+
+ul.subnav.active .fa {
+    color: white;
+    margin: 0px 5px;
 }

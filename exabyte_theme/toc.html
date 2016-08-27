@@ -1,6 +1,8 @@
 {% if nav_item.children %}
     <ul class="subnav">
-    <li><span>{{ nav_item.title }}</span></li>
+    <li class='subnav-title'>
+        <span>{{ nav_item.title }} <i data-toggle="wy-nav-top" class="fa fa-plus-square"></i></span>
+    </li>
 
         {% for nav_item in nav_item.children %}
             {% include 'toc.html' %}
