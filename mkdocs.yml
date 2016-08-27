@@ -16,52 +16,65 @@ markdown_extensions:
     - toc:
         permalink: true
 pages:
-    - Home: 'index.md'
-    - registration/registration.md
+
+    - Home: index.md
+
     - Getting Started:
-        - Quickstart:
-            - 'First Simulation':  'getting-started/first-simulation.md'
-            - 'First Material Import':  'getting-started/first-material-import.md'
-            - 'First Analytics':  'getting-started/first-analytics.md'
-        - 'UI Overview':  'getting-started/ui-overview.md'
-        - 'Billing Overview':  'getting-started/billing-overview.md'
+        - Creating materials:   getting-started/first-material-import.md
+        - Running simulations:  getting-started/first-simulation.md
+        - First Analytics:      getting-started/first-analytics.md
+        - UI Overview:          getting-started/ui-overview.md
+        - Billing Overview:     getting-started/billing-overview.md
+
     - Materials:
-        - 'Creating an ideal crystal':  'materials/creating-an-ideal-crystal.md'
-        - 'How to compare materials':  'materials/how-to-compare-materials.md'
+        - Creating an ideal crystal:    materials/creating-an-ideal-crystal.md
+        - How to compare materials:     materials/how-to-compare-materials.md
+
     - Model & Method:
-        - 'Models supported and planned':  'models/models-supported-and-planned.md'
+        - Models supported and planned: models/models-supported-and-planned.md
+
     - Compute:
-        - 'Overview':           'compute/overview.md'
-        - 'Queues':             'compute/queues.md'
+        - Overview:           compute/overview.md
+        - Queues:             compute/queues.md
+
     - Sharing & Collaboration:
-        - 'Organizations and sharing of data':  'collaboration/organizations-and-sharing-of-data.md'
+        - Organizations and sharing of data:  collaboration/organizations-and-sharing-of-data.md
+
     - Command Line Interface:
-        - 'Introduction':  'cli/general.md'
-        - 'Login':         'cli/login.md'
-        - 'Accounting':    'cli/accounting.md'
-        - 'Environment':   'cli/environment.md'
-        - 'Jobs':          'cli/jobs.md'
-        - 'Extra':         'cli/extra.md'
+        - Introduction:  cli/general.md
+        - Login:         cli/login.md
+        - Accounting:    cli/accounting.md
+        - Environment:   cli/environment.md
+        - Jobs:          cli/jobs.md
+        - Extra:         cli/extra.md
+
     - Tutorials:
-        - 'Quickstart':  'tutorials/quickstart.md'
-        # - 'First Simulation':            'tutorials/first-simulation.md'
+        - Quickstart:  tutorials/quickstart.md
+        # - First Simulation:            tutorials/first-simulation.md
+
     - Accounts & Billing:
-        - 'Settings and Profile':                         'billing/settings-and-profile.md'
-        - 'Billing and Adding Credit':                    'billing/billing-and-adding-credit.md'
-        - 'Pricing and Service Levels':                   'billing/pricing-and-service-levels.md'
-        - 'How to increase your account balance':         'billing/how-to-add-credit.md'
-        - 'How to upgrade your service level':            'billing/how-to-upgrade-your-service-level.md'
-        - 'How to increase your storage quota':           'billing/how-to-add-storage.md'
+        - Settings and Profile:                         billing/settings-and-profile.md
+        - Billing and Adding Credit:                    billing/billing-and-adding-credit.md
+        - Pricing and Service Levels:                   billing/pricing-and-service-levels.md
+        - How to increase your account balance:         billing/how-to-add-credit.md
+        - How to upgrade your service level:            billing/how-to-upgrade-your-service-level.md
+        - How to increase your storage quota:           billing/how-to-add-storage.md
+    - Other:
+        - Registration:     registration/registration.md
+
     - How to Participate:
-        # - 'Student Program': 'participate/student-program.md'
-        # - 'Developer Program': 'participate/developer-programer.md'
-        - 'Trello Roadmap': 'participate/trello-roadmap.md'
+        # - Student Program: participate/student-program.md
+        # - Developer Program: participate/developer-programer.md
+        - Trello Roadmap:   participate/trello-roadmap.md
+
     - Help & Support:
-        - 'Phone/Email': 'support/email.md'
-        - 'Helpdesk': 'support/helpdesk.md'
-        - 'FAQ': 'support/faq.md'
+        - Phone/Email:  support/email.md
+        - Helpdesk:     support/helpdesk.md
+        - FAQ:          support/faq.md
+
     - Security:
-        - 'Data Security in transfer': 'security/data-security-in-transfer.md'
-    #     - 'Data Security at rest': 'security/data-security-at-rest.md'
+        - Data Security in transfer: security/data-security-in-transfer.md
+    #     - Data Security at rest: security/data-security-at-rest.md
+
     - Terminology:
-        - 'Simulations':      'terminology/simulations.md'
+        - Simulations:      terminology/simulations.md
