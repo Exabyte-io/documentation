@@ -1,4 +1,4 @@
-# LOGIN VIA COMMAND LINE
+# Login via Command Line
 
 This page explains the process of connecting to exabyte.io though command-line interface: how to generate, upload ssh keys and use them to connect.
 
