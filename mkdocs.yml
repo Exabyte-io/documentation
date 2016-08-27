@@ -46,12 +46,13 @@ pages:
         - 'Quickstart':  'tutorials/quickstart.md'
         # - 'First Simulation':            'tutorials/first-simulation.md'
     - Accounts & Billing:
+        - More:
+            - 'How to increase your account balance':         'billing/how-to-add-credit.md'
+            - 'How to upgrade your service level':            'billing/how-to-upgrade-your-service-level.md'
+            - 'How to increase your storage quota':           'billing/how-to-add-storage.md'
         - 'Settings and Profile':                         'billing/settings-and-profile.md'
         - 'Billing and Adding Credit':                    'billing/billing-and-adding-credit.md'
         - 'Pricing and Service Levels':                   'billing/pricing-and-service-levels.md'
-        - 'How to increase your account balance':         'billing/how-to-add-credit.md'
-        - 'How to upgrade your service level':            'billing/how-to-upgrade-your-service-level.md'
-        - 'How to increase your storage quota':           'billing/how-to-add-storage.md'
     - How to Participate:
         # - 'Student Program': 'participate/student-program.md'
         - 'Developer Program': 'participate/developer-program.md'
