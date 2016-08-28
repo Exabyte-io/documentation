@@ -84,7 +84,7 @@ p + pre, ul + pre {
 }
 
 /* --------------------------------------------------------- *
- *                  LOGO
+ *                  LOGO AND SIDEBAR
  * --------------------------------------------------------- */
 .wy-nav-top img,
 .wy-side-nav-search img {
@@ -113,6 +113,13 @@ p + pre, ul + pre {
     .wy-nav-content-wrap.shift {
         left: 80%;
     }
+}
+
+.wy-nav-content {
+    padding: 1.618em 3.236em;
+    height: 100%;
+    max-width: 1280px;
+    margin: auto;
 }
 
 .wy-side-nav-search img {
@@ -171,7 +178,7 @@ p + pre, ul + pre {
 }
 
 /* --------------------------------------------------------- *
- *  NAV COLLAPSE
+ *                  NAV COLLAPSE
  * --------------------------------------------------------- */
 
 .wy-menu ul.subnav {

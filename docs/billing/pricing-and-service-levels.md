@@ -17,8 +17,8 @@ You always pay on-demand, however dependent on your subscription level your pric
 
 Below is a quick overview of our subscription levels:
 
-| Feature/Plan             |  Promo      | Advanced           | Pro              | Enterprise        |  Enterprise-extra    |
-| -------------            |:----------- |:-------------      |:-------------    |:-------------     |:-------------
+| Feature/Plan             |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-extra   |
+| -------------            |:----------- |:-------------      |:-------------      |:-------------      |:-------------
 | minimum payment          |  -          | $50                | $500               | $5,000             | $50,000             |
 | price per CPU-hour       |  $0.20      | $0.20              | $0.18              | $0.15              | $0.10               |
 | validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months           |
@@ -29,7 +29,6 @@ Below is a quick overview of our subscription levels:
 | maximum team size        |  -          | -                  | -                  | 5                  | 15                  |
 | support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal
 | command line access      |  -          | -                  | +                  | +                  | +
-
 
 ## How subscription levels are set
 
