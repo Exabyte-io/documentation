@@ -74,3 +74,7 @@ Debug queue is charged at `2x` the [base rate](/billing/accounts-and-billing#pri
 ## Increasing Quota
 
 You can purchase extra storage to increase the limits beyond the default value for your subscription level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details or follow the tutorial [How to increase your Storage Quota](/billing/how-to-add-storage.md) for more information
+
+## Changing Service Level
+
+<!-- TODO: DB to add -->
