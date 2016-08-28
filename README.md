@@ -23,3 +23,11 @@ mkdocs serve
 ```
 
 You should have the documentation available at `http://localhost:8000`
+
+# Important
+
+In order to make it easier to merge ongoing updates from mkdocs, do not change the content of:
+
+    ./exabyte_theme/*
+
+except for extra.css/extra.js files.

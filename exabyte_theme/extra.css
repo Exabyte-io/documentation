@@ -30,17 +30,6 @@ img {
     /*max-width: 600px;*/
 }
 
-.wy-side-nav-search input[type=text] {
-    padding: 10px 12px;
-}
-
-
-.wy-menu-vertical span {
-    color: #fff;
-    font-weight: 600;
-}
-
-
 /* --------------------------------------------------------- *
  *                  Paragraph/list
  * --------------------------------------------------------- */
@@ -87,17 +76,19 @@ p + pre, ul + pre {
  *                  LOGO AND SIDEBAR
  * --------------------------------------------------------- */
 .wy-nav-side {
-    background: #0A3677
+    border-right: 1px solid #CCC;
+    overflow-y: none;
+    /*background: #3677d9; TODO: re-add and fix hover link colors*/
 }
 
 .rst-versions {
-    background: #0A3677;
     border-top: 2px solid #CCC;
+    /*background: #0A3677; TODO: re-add and fix hover link colors*/
 }
 
 .rst-versions .rst-current-version {
-    background: #0A3677;
     padding: 8px;
+    /*background: #0A3677; TODO: re-add and fix hover link colors*/
 }
 
 .wy-nav-top img,
@@ -114,15 +105,17 @@ p + pre, ul + pre {
 }
 
 .wy-side-nav-search {
-    padding-top: 0px;
     position: fixed;
-    width: 300px;
-    background: #0A3677;
+    margin-bottom: 0;
+    padding-top: 0px;
+    width: inherit;
+    background: #343131;
     border-bottom: 2px solid #CCC;
+    /*background: #0A3677; TODO: re-add and fix hover link colors*/
 }
 
 .wy-menu.wy-menu-vertical {
-    margin-top: 120px;
+    margin-top: 105px;
 }
 
 @media screen and (max-width: 768px) {
@@ -145,7 +138,7 @@ p + pre, ul + pre {
 }
 
 .wy-side-nav-search img {
-    width:80%;
+    width: 200px;
 }
 
 .wy-nav-top img, .wy-side-nav-search a:hover, .wy-side-nav-search img:hover {
@@ -160,15 +153,28 @@ p + pre, ul + pre {
     margin:0;
 }
 
+/* search box input */
+#rtd-search-form {
+    padding-right: 15px;
+    padding-left: 12px;
+}
+
 .wy-side-nav-search input[type=text] {
     border: none;
+    /*padding: 10px 12px;*/
+}
+
+.wy-menu-vertical span {
+    color: #fff;
+    font-weight: 600;
 }
 
 /* --------------------------------------------------------- *
  *                  BURGER AND MENU SMALL SCREEN
  * --------------------------------------------------------- */
 .wy-nav-top {
-    background: #0A3677;
+    background: #343131;
+    /*background: #0A3677; TODO: re-add and fix hover link colors*/
 }
 
 .wy-nav-top i {
@@ -180,7 +186,7 @@ p + pre, ul + pre {
 
 .wy-nav-top img {
     display: inherit;
-    width:160px;
+    width: 160px;
     margin-left: -20px;
 
 }
