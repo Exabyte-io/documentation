@@ -15,6 +15,10 @@ body {
     background-color: #f8f8f8;
 }
 
+.section {
+    text-align: justify;
+}
+
 a:visited {
     color: #999;
 }
@@ -248,4 +252,11 @@ ul.subnav .fa {
 ul.subnav.active .fa {
     color: white;
     margin: 0px 5px;
+}
+
+/* --------------------------------------------------------- *
+ *                  GENERIC CLASSES
+ * --------------------------------------------------------- */
+.text-muted {
+    color: #5e5e5e;
 }
