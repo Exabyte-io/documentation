@@ -86,6 +86,20 @@ p + pre, ul + pre {
 /* --------------------------------------------------------- *
  *                  LOGO AND SIDEBAR
  * --------------------------------------------------------- */
+.wy-nav-side {
+    background: #0A3677
+}
+
+.rst-versions {
+    background: #0A3677;
+    border-top: 2px solid #CCC;
+}
+
+.rst-versions .rst-current-version {
+    background: #0A3677;
+    padding: 8px;
+}
+
 .wy-nav-top img,
 .wy-side-nav-search img {
     display: inherit;
@@ -101,6 +115,14 @@ p + pre, ul + pre {
 
 .wy-side-nav-search {
     padding-top: 0px;
+    position: fixed;
+    width: 300px;
+    background: #0A3677;
+    border-bottom: 2px solid #CCC;
+}
+
+.wy-menu.wy-menu-vertical {
+    margin-top: 120px;
 }
 
 @media screen and (max-width: 768px) {
@@ -142,13 +164,11 @@ p + pre, ul + pre {
     border: none;
 }
 
-
-
 /* --------------------------------------------------------- *
  *                  BURGER AND MENU SMALL SCREEN
  * --------------------------------------------------------- */
 .wy-nav-top {
-    background: #333;
+    background: #0A3677;
 }
 
 .wy-nav-top i {
