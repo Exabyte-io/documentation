@@ -12,7 +12,7 @@ For quick installation run:
 
 ```bash
 easy_install pip  # if pip is not installed yet
-sudo pip install mkdocs
+sudo pip install https://github.com/mkdocs/mkdocs/archive/master.zip
 ```
 
 After that inside the repo directory run:
