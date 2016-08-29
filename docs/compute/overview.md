@@ -1,3 +1,5 @@
+<!-- TODO: to be revised by MM, add hardware specification, information about cloud providers -->
+
 # Compute platform
 
 ## Compute levels
