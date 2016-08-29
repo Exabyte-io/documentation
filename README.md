@@ -13,6 +13,7 @@ For quick installation run:
 ```bash
 easy_install pip  # if pip is not installed yet
 sudo pip install https://github.com/mkdocs/mkdocs/archive/master.zip
+sh ./scripts/download_images.sh
 ```
 
 After that inside the repo directory run:
@@ -31,3 +32,19 @@ In order to make it easier to merge ongoing updates from mkdocs, do not change t
     ./exabyte_theme/*
 
 except for extra.css/extra.js files.
+
+# Development
+
+Images (screenshots) are kept separately at http://files.exabyte.io:18/uploads/images/ and synchronized into `./docs/images` folder through running:
+
+```bash
+sh ./scripts/download_images.sh
+```
+
+or
+
+```bash
+sh ./scripts/upload_images.sh
+```
+
+Do not push images to this repository.
