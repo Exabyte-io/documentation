@@ -14,7 +14,7 @@ We have multiple levels of compute:
 
 `Debug` level provides a relatively small amount of compute resources immediately with no wait time at an increased cos.
 
-`Saving` compute level is charged at a significantly lower price than Regular, because it is using compute resources that are currently idle. Users need to be aware, however, that cost-saving compute resources may be terminated depenging on the load in the datacenter. More information of this subject is [here](../cli/jobs.md#job-termination)
+`Saving` compute level is charged at a significantly lower price than Regular, because it is using compute resources that are currently idle. Users need to be aware, however, that cost-saving compute resources may be terminated depenging on the load in the datacenter. More information on this subject is [here](../cli/jobs.md#job-termination)
 
 ## Resources
 
