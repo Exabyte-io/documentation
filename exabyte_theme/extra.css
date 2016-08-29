@@ -86,7 +86,6 @@ p + pre, ul + pre {
  * --------------------------------------------------------- */
 .wy-nav-side {
     border-right: 1px solid #CCC;
-    overflow-y: none;
     /*background: #3677d9; TODO: re-add and fix hover link colors*/
 }
 
