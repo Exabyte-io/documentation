@@ -1,41 +1,57 @@
+# Overview
 
-# Documentation
+Exabyte.io is a team of scientists and engineers building the fastest way to design and develop new materials from concept to product. We do so by providing an all-in-one highly scalable framework for atomistic design, high fidelity simulations and large-scale data analytics. You can read more about it at this <a href="https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov" target="_blank">link</a>.
 
-Welcome to our documentation repository! We aim to provide all the necessary information for you to use our product here. In case you find that something is missing of you still have questions after reading this documentation, please <a href="mailto:support@exabyte.io" target="_blank">contact us</a> .
-
-## How to Get Help
-
-We encourage you to ask lots of questions. There are many ways to do that.
-Our support team can be contacted by phone, email, or the web during working hours Pacific Time. Our consultants are experts in high performance and cloud computing and can answer just about all of your questions.
-
-Technical questions, computer operations, passwords, and account support
-
-- email: support@exabyte.io
-- phone: 1.510.473.7770
-- feedback: https://platform.exabyte.io/
-
-## New Accounts
-
-In order to use our facilities you need:
-
-1. A user account with an associated username
-2. Access to an allocation of resources under the above username
-
-All newly registered users have $10 credited to their personal allocations. If you are not a member of a project that already has an allocation, you may purchase an allocation using our web application.
-
-<!-- TODO: add explanation about how to purchase above -->
-<!-- TODO: add pricing description -->
+This documentation contains information about how our product works. You can search by using the search field in the top left corner or just read on. In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.
 
 
-## QuickStart
+## Quickstart
 
-If you are new to Exabyte.io and feeling impatient, you can get started by following this tutorial summarizing the
-[first steps with Exabyte](tutorials/quickstart.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
+In case you feel impatient, you can skip straight to our first tutorial summarizing
+[first steps with exabyte.io](tutorials/quickstart.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
 
-## UI overview
+## Contents
 
-We have summarized the information about the main elements of our user interface on [this page](getting-started/ui-overview.md).
+Our users compute characteristic properties of materials through high-fidelity modeling. Therefore, the main content of this documentation is divided into three categories:
 
-## Search
+- **Materials**:
+    - how to design, upload or import material geometries
+    - supported characteristic properties (eg. band gap, formation energy, electron mobility) supported
+    - advanced topics:
+        - creation of combinatorial sets of materials for high-throughput screening,
+        - overview of materials analytics (eg. how to make sense of all the characteristic properties)
 
-You can use the search button above to find your subject of interest or just browse the content of the navbar.
+- **Models & Methods**:
+    - explanation the models used to extract the properties of materials and their particular implementations (methods),
+    - how to apply these models and run simulations
+    - advanced topics:
+        - editing simulation input,
+        - dissecting convergence and relaxation algorithms,
+        - calculation of compound characteristic properties (eg. formation energy)
+
+- **Compute**:
+    - how to submit a simulation job
+    - how to choose the count
+    - job queues and urgency factors
+    - advanced topics:
+        - benchmarks and scaling
+        - limits per compute queue
+        - alternate connection methods:
+            - secure shell terminal:
+            - web-browser terminal:
+            - remote desktop via VNC
+
+Other parts explain data security, sharing and collaboration, billing/pricing and terminology that we employ.
+
+## How to get help
+
+We have support team that is active 24/7 and will do our best to reply to your requests within 24 hours. Our support team can be contacted by phone, email, or the web during working hours Pacific Time:
+
+- email: <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>,
+- phone: +1.510.473.7770,
+- web: chat box at the bottom of our main <a href="https://platform.exabyte.io" target="_blank">web application</a>.
+
+
+<!-- LINKS -->
+
+[ln-post-what-is-mdc]: https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov  "What is Exabyte.io"
