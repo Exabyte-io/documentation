@@ -1,3 +1,4 @@
+<!-- TODO: to be revised by MM - queue limits as set per cloud provider -->
 # Submission queues
 
 ## Overview

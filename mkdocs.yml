@@ -27,11 +27,13 @@ pages:
         - Billing Overview:         getting-started/billing-overview.md
 
     - Materials:
-        - Creating ideal crystal:   materials/creating-ideal-crystal.md
+        - Creating structures:      materials/creating-structures.md
+        - Upload & Import:          materials/upload-and-import.md
+        - Creating ideal crystal:   materials/characteristic-properties.md
         - Comparing materials:      materials/comparing-materials.md
 
     - Models & Methods:
-        - Models supported and planned: models/models-supported-and-planned.md
+        - Models supported and planned: models/overview.md
 
     - Compute:
         - Overview:             compute/overview.md
