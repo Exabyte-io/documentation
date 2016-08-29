@@ -20,15 +20,15 @@ pages:
     - Home: index.md
 
     - Getting Started:
-        - Creating materials:   getting-started/first-material-import.md
-        - Running simulations:  getting-started/first-simulation.md
-        - First Analytics:      getting-started/first-analytics.md
-        - UI Overview:          getting-started/ui-overview.md
-        - Billing Overview:     getting-started/billing-overview.md
+        - Creating materials:       getting-started/creating-materials.md
+        - Running simulations:      getting-started/running-simulations.md
+        - Analyzing results:        getting-started/analyzing-results.md
+        - User interface overview:  getting-started/ui-overview.md
+        - Billing Overview:         getting-started/billing-overview.md
 
     - Materials:
-        - Creating an ideal crystal:    materials/creating-an-ideal-crystal.md
-        - How to compare materials:     materials/how-to-compare-materials.md
+        - Creating ideal crystal:   materials/creating-ideal-crystal.md
+        - Comparing materials:      materials/comparing-materials.md
 
     - Models & Methods:
         - Models supported and planned: models/models-supported-and-planned.md
