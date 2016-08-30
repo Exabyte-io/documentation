@@ -60,7 +60,7 @@ pages:
         - Settings and Profile:         billing/settings-and-profile.md
         - Billing and Payments:         billing/billing-and-payments.md
         - Pricing and Service Levels:   billing/pricing-and-service-levels.md
-        - Storage Pricing:              billing/storage-pricing.md
+        - Storage Pricing:              billing/storage-and-pricing.md
 
     - Security:
         - Data Security in transfer:    security/data-security-in-transfer.md
