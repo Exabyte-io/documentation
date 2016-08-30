@@ -255,6 +255,8 @@ ul.subnav.active .fa {
 /* Font awesome icon */
 ul.subnav .fa {
     margin: 0px 5px;
+    font-size: 10px;
+    display: none;
 }
 
 ul.subnav li.toctree-l1 {
