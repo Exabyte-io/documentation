@@ -20,7 +20,7 @@ body {
 }
 
 /* adjust margins for nested lists */
-.section>ul>li>ul>li:last-child {
+.section > ul > li > ul > li:last-child {
     margin-bottom: 20px;
 }
 
@@ -48,13 +48,16 @@ ul + h1, ul + h2, ul + h3, ul + h4,
 ol + h1, ol + h2, ol + h3, ol + h4 {
     margin: 30px 0 10px 0;
 }
+
 p, :not(footer.p) {
     line-height: 24px;
 }
+
 li > p {
     margin: 0;
     line-height: 18px;
 }
+
 .card-body ul {
     margin: 15px 0 15px 0;
     line-height: 24px;
@@ -67,14 +70,15 @@ pre {
     background-color: #F9F9F9;
     overflow-x: auto;
 }
+
 pre code {
     overflow-wrap: normal;
     white-space: pre;
 }
+
 p + pre, ul + pre {
     margin-top: 10px;
 }
-
 
 .wy-side-nav-search,
 .wy-side-nav-search img {
@@ -108,7 +112,7 @@ p + pre, ul + pre {
     background-color: none;
     padding: 0px;
     border-radius: 0;
-    border:none;
+    border: none;
     box-shadow: none;
 }
 
@@ -140,16 +144,21 @@ p + pre, ul + pre {
 }
 
 .wy-menu-vertical li ul li a {
-    color:#ddd;
+    color: #ddd;
+}
+
+.wy-menu-vertical a:visited {
+    /*color: #0A3677;*/
+    color: rgba(137, 167, 210, 0.1);
 }
 
 .wy-menu-vertical li ul li a:hover {
-    background-color:rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 768px) {
     .wy-nav-side.shift {
-        width:300px;
+        width: 300px;
     }
 }
 
@@ -170,12 +179,13 @@ p + pre, ul + pre {
     background-color: none;
 }
 
-.wy-nav-top img, .wy-side-nav-search>a:hover {
+.wy-nav-top img, .wy-side-nav-search > a:hover {
     background: none;
 }
-.wy-nav-top img, .wy-side-nav-search>a {
-    padding:0;
-    margin:0;
+
+.wy-nav-top img, .wy-side-nav-search > a {
+    padding: 0;
+    margin: 0;
 }
 
 /* search box input */
@@ -204,7 +214,7 @@ p + pre, ul + pre {
 
 .wy-nav-top i {
     font-size: 24px;
-    margin-top:15px;
+    margin-top: 15px;
     margin-left: 10px;
     margin-right: 0px;
 }
@@ -251,14 +261,15 @@ ul.subnav .fa {
 }
 
 ul.subnav > .subnav .fa {
-    display:inline-block;
+    display: inline-block;
 }
 
 ul.subnav .subnav li.toctree-l1 {
     display: none;
 }
 
-ul.subnav .subnav.active {}
+ul.subnav .subnav.active {
+}
 
 ul.subnav .subnav.active li.toctree-l1 {
     display: block;
