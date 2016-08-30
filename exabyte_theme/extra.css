@@ -239,52 +239,78 @@ p + pre, ul + pre {
 }
 
 /* --------------------------------------------------------- *
- *                  NAV COLLAPSE
+ *                  NAV COLLAPSE FIRST LEVEL
  * --------------------------------------------------------- */
+
 
 .wy-menu ul.subnav {
     cursor: pointer;
-}
-
-.wy-menu ul.subnav > ul.subnav span {
-    color: #aaa;
-    padding-left: 1.3em;
-}
-
-.wy-menu ul.subnav > ul.subnav.active span {
-    color: white;
-    padding-left: 1.3em;
-}
-
-ul.subnav .fa {
-    display: none;
-}
-
-ul.subnav > .subnav .fa {
-    display: inline-block;
-}
-
-ul.subnav .subnav li.toctree-l1 {
-    display: none;
-}
-
-ul.subnav .subnav.active {
-}
-
-ul.subnav .subnav.active li.toctree-l1 {
-    display: block;
-}
-
-/* Font awesome icon */
-ul.subnav .fa {
-    color: gray;
-    margin: 0px 5px;
 }
 
 ul.subnav.active .fa {
     color: white;
     margin: 0px 5px;
 }
+
+/* Font awesome icon */
+ul.subnav .fa {
+    margin: 0px 5px;
+}
+
+ul.subnav li.toctree-l1 {
+    display: none;
+}
+
+ul.subnav.active li.toctree-l1 {
+    display: block;
+}
+
+/* --------------------------------------------------------- *
+ *                  NAV COLLAPSE SECOND LEVEL ONLY
+ * --------------------------------------------------------- */
+
+/*.wy-menu-vertical a:visited {*/
+    /*!*color: #0A3677;*!*/
+    /*color: rgba(137, 167, 210, 0.1);*/
+/*}*/
+
+/*.wy-menu-vertical li ul li a:hover {*/
+    /*background-color: rgba(255, 255, 255, 0.1);*/
+/*}*/
+
+
+/*.wy-menu ul.subnav > ul.subnav span {*/
+    /*color: #ddd;*/
+    /*padding-left: 1.3em;*/
+    /*font-weight: 400;*/
+/*}*/
+
+/*.wy-menu ul.subnav > ul.subnav.active span {*/
+    /*color: white;*/
+    /*padding-left: 1.3em;*/
+/*}*/
+
+/*ul.subnav .fa {*/
+    /*display: none;*/
+/*}*/
+
+/*ul.subnav > .subnav .fa {*/
+    /*display: inline-block;*/
+/*}*/
+
+/*ul.subnav .subnav li.toctree-l1 {*/
+    /*display: none;*/
+/*}*/
+
+/*ul.subnav .subnav.active {*/
+/*}*/
+
+/*ul.subnav .subnav.active li.toctree-l1 {*/
+    /*display: block;*/
+/*}*/
+
+
+
 
 /* --------------------------------------------------------- *
  *                  GENERIC CLASSES
