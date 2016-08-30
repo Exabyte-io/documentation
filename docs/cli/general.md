@@ -1,3 +1,4 @@
+<!-- TODO by MM: revise and add necessary content about helper functions and default options/template scripts available -->
 # Command Line Interface
 
 Advanced users can request to access our compute platform via command-line interface (CLI) by contacting support team at support@exabyte.io.
