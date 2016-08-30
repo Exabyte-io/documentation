@@ -1,5 +1,3 @@
-# Accounting
-
 This page explains how to retrieve accounting information for users logged-in via command line.
 
 ## Total remaining allocation
@@ -117,3 +115,5 @@ Id JobId User     Project  Machine            Queue QualityOfService Stage   Cha
 ```
 
 ---
+
+Each of the above commands accept options, that can be viewed by passing `--help`.

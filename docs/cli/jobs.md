@@ -1,3 +1,5 @@
+<!-- TODO by MM: revise and make sure information is up-to-date -->
+
 # Batch jobs
 
 Simulation tasks submitted through command-line interface are expected to be run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to the resource management system.
