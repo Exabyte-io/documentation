@@ -5,7 +5,7 @@ The Service Level page is shown in the Account page. This page shows details abo
 
 + Click on Add Credit to add funds to your account balance
 + Click on Add Storage to increase your storage quota
-+ If there are better conditions according to your use of Exabyte, you can upgrade your Service Level by clicking Upgrade, follow our tutorial [How to upgrade your service level](how-to-upgrade-your-service-level.md)
++ If there are better conditions according to your use of Exabyte, you can upgrade your Service Level by clicking Upgrade.
 
 ![Exabyte Registration Form](/images/UserServiceLevel.png "User Service Level")
 
@@ -72,7 +72,7 @@ Debug queue is charged at `2x` the [base rate](/billing/accounts-and-billing#pri
 
 ## Increasing Quota
 
-You can purchase extra storage to increase the limits beyond the default value for your subscription level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details or follow the tutorial [How to increase your Storage Quota](/billing/how-to-add-storage.md) for more information
+You can purchase extra storage to increase the limits beyond the default value for your subscription level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details.
 
 ## Changing Service Level
 
