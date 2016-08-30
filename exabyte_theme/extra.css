@@ -85,18 +85,18 @@ p + pre, ul + pre {
  *                  LOGO AND SIDEBAR
  * --------------------------------------------------------- */
 .wy-nav-side {
-    border-right: 1px solid #CCC;
-    /*background: #3677d9; TODO: re-add and fix hover link colors*/
+    background: #3677d9;
 }
 
 .rst-versions {
-    border-top: 2px solid #CCC;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    /*border-top: 2px solid #CCC;*/
+    background: #0A3677;
+    border-top: 0px;
 }
 
 .rst-versions .rst-current-version {
-    padding: 8px;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    /*padding: 8px;*/
+    background: #0A3677;
 }
 
 .wy-nav-top img,
@@ -118,12 +118,25 @@ p + pre, ul + pre {
     padding-top: 0px;
     width: inherit;
     background: #343131;
-    border-bottom: 2px solid #CCC;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    /*border-bottom: 2px solid #CCC;*/
+    background: #0A3677;
+    width: 300px;
+}
+
+.wy-side-nav-search img {
+    width: 200px;
+}
+
+.wy-side-scroll {
+    width: 320px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .wy-menu.wy-menu-vertical {
-    margin-top: 105px;
+    margin-top: 104px;
 }
 
 @media screen and (max-width: 768px) {
@@ -143,10 +156,6 @@ p + pre, ul + pre {
     height: 100%;
     max-width: 1280px;
     margin: auto;
-}
-
-.wy-side-nav-search img {
-    width: 200px;
 }
 
 .wy-nav-top img, .wy-side-nav-search a:hover, .wy-side-nav-search img:hover {
@@ -181,8 +190,8 @@ p + pre, ul + pre {
  *                  BURGER AND MENU SMALL SCREEN
  * --------------------------------------------------------- */
 .wy-nav-top {
-    background: #343131;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    /*background: #343131;*/
+    background: #0A3677;
 }
 
 .wy-nav-top i {
