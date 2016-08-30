@@ -38,6 +38,8 @@ pages:
     - Compute:
         - Overview:             compute/overview.md
         - Queues:               compute/queues.md
+        - Benchmarks:           compute/benchmarks-and-scalability.md
+        - Connection:           compute/connection-options.md
 
     - Sharing & Collaboration:
         - Organizations:        collaboration/organizations.md
