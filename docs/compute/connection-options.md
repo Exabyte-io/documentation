@@ -1,4 +1,4 @@
-<!-- TODO by M2 -->
+<!-- TODO by MM -->
 Basic description about connection options available with screenshots:
 
 CLI via ssh terminal:
