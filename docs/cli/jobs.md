@@ -1,3 +1,5 @@
+<!-- TODO by MM: revise and make sure information is up-to-date -->
+
 # Batch jobs
 
 Simulation tasks submitted through command-line interface are expected to be run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to the resource management system.
@@ -11,7 +13,6 @@ The actual execution of your parallel job, however, is handled by a special comm
 ## Interactive parallel jobs
 
 Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the master node (using 2-8 CPU and < 1min walltime per user) instead, and submit larger debug tasks into the debug queue.
-
 
 ## Non-interactive batch jobs
 
