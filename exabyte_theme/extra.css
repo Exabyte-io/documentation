@@ -261,9 +261,9 @@ ul.subnav li.toctree-l1 {
     display: none;
 }
 
-ul.subnav.active li.toctree-l1 {
-    display: block;
-}
+/*ul.subnav.active li.toctree-l1 {*/
+    /*display: block;*/
+/*}*/
 
 /* --------------------------------------------------------- *
  *                  NAV COLLAPSE SECOND LEVEL ONLY
