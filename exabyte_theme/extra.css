@@ -152,7 +152,8 @@ p + pre, ul + pre {
     color: rgba(137, 167, 210, 0.1);
 }
 
-.wy-menu-vertical li ul li a:hover {
+.wy-menu-vertical li ul li a:hover,
+.wy-menu-vertical li.toctree-l1 a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
@@ -241,8 +242,6 @@ p + pre, ul + pre {
 /* --------------------------------------------------------- *
  *                  NAV COLLAPSE FIRST LEVEL
  * --------------------------------------------------------- */
-
-
 .wy-menu ul.subnav {
     cursor: pointer;
 }
@@ -262,57 +261,6 @@ ul.subnav .fa {
 ul.subnav li.toctree-l1 {
     display: none;
 }
-
-/*ul.subnav.active li.toctree-l1 {*/
-    /*display: block;*/
-/*}*/
-
-/* --------------------------------------------------------- *
- *                  NAV COLLAPSE SECOND LEVEL ONLY
- * --------------------------------------------------------- */
-
-/*.wy-menu-vertical a:visited {*/
-    /*!*color: #0A3677;*!*/
-    /*color: rgba(137, 167, 210, 0.1);*/
-/*}*/
-
-/*.wy-menu-vertical li ul li a:hover {*/
-    /*background-color: rgba(255, 255, 255, 0.1);*/
-/*}*/
-
-
-/*.wy-menu ul.subnav > ul.subnav span {*/
-    /*color: #ddd;*/
-    /*padding-left: 1.3em;*/
-    /*font-weight: 400;*/
-/*}*/
-
-/*.wy-menu ul.subnav > ul.subnav.active span {*/
-    /*color: white;*/
-    /*padding-left: 1.3em;*/
-/*}*/
-
-/*ul.subnav .fa {*/
-    /*display: none;*/
-/*}*/
-
-/*ul.subnav > .subnav .fa {*/
-    /*display: inline-block;*/
-/*}*/
-
-/*ul.subnav .subnav li.toctree-l1 {*/
-    /*display: none;*/
-/*}*/
-
-/*ul.subnav .subnav.active {*/
-/*}*/
-
-/*ul.subnav .subnav.active li.toctree-l1 {*/
-    /*display: block;*/
-/*}*/
-
-
-
 
 /* --------------------------------------------------------- *
  *                  GENERIC CLASSES
