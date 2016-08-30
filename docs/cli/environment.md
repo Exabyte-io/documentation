@@ -1,3 +1,5 @@
+<!-- TODO by MM: revise, adjust module names and examples -->
+
 # Compute Environment
 
 When you log in to exabyte.io via command-line, you are in your global $HOME directory. You initially land in the same place all the time. This means that if you have files or binary executables that are located in your home directory, they will be available on all cluster nodes through a network-shared filesystem.
