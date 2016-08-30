@@ -33,22 +33,23 @@ pages:
         - Comparing materials:      materials/comparing-materials.md
 
     - Models & Methods:
-        - Models supported and planned: models/overview.md
+        - Overview:             models/overview.md
 
     - Compute:
         - Overview:             compute/overview.md
         - Queues:               compute/queues.md
         - Benchmarks:           compute/benchmarks-and-scalability.md
         - Connection:           compute/connection-options.md
+        - Setting parameters:   compute/setting-parameters.md
 
     - Sharing & Collaboration:
         - Organizations:        collaboration/organizations.md
 
     - Command Line Interface:
-        - Introduction:         cli/general.md
+        - Overview:             cli/overview.md
         - Login:                cli/login.md
         - Accounting:           cli/accounting.md
-        - Environment:          cli/environment.md
+        - Environment:          cli/modules-environment.md
         - Jobs:                 cli/jobs.md
         - Extra:                cli/extra.md
 
