@@ -89,7 +89,7 @@ p + pre, ul + pre {
  *                  LOGO AND SIDEBAR
  * --------------------------------------------------------- */
 .wy-nav-side {
-    background: #3677d9;
+    background: rgba(10, 54, 119, 0.6);
 }
 
 .rst-versions {
