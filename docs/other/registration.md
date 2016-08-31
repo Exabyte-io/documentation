@@ -1,5 +1,16 @@
+<!-- TODO by DB - revisit -->
+
+Who the data is shared with
+
+Explain additional checkboxes:
+
+- non-disclosure - b/c we are unique and innovative
+- data unavailability notice - for maintenance purposes
+- feedback - important to hear back
+
 ## Filling in the form
-Currently we manually approve applications to join Exabyte, and in order to do so we require certain details from applicants, all the fields are required. See descriptions of each field in the table shown underneath the below screenshot.
+
+In order to deliver the best service possible, we currently review all registration requests before accepting. Thus we require certain details from applicants, all the fields are required. See descriptions of each field in the table shown underneath the below screenshot.
 
 > All newly registered users have $10 credited to their personal allocations. If you are not a member of a project that already has an allocation, you may purchase an allocation using our web application.
 
