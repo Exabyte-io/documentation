@@ -50,6 +50,7 @@ pages:
     - Sharing & Collaboration:
         - Organizations:        collaboration/organizations.md
         - Organizations:        collaboration/create-organization.md
+        - Invite Friends:       collaboration/invite-friends.md
 
     - Command Line Interface:
         - Overview:             cli/overview.md
