@@ -21,16 +21,16 @@ pages:
 
     - Getting Started:
         - Creating materials:       getting-started/creating-materials.md
-        - Running simulations:      getting-started/running-simulations.md
+        - Running simulations:      tutorials/first-simulation.md
         - Analyzing results:        getting-started/analyzing-results.md
         - User interface overview:  getting-started/ui-overview.md
-        - Billing Overview:         getting-started/billing-overview.md
+        - Billing overview:         getting-started/billing-overview.md
 
     - Materials:
-        - Creating structures:      materials/creating-structures.md
-        - Upload & Import:          materials/upload-and-import.md
-        - Creating ideal crystal:   materials/characteristic-properties.md
-        - Comparing materials:      materials/comparing-materials.md
+        - Creating structures:          materials/creating-structures.md
+        - Upload & Import:              materials/upload-and-import.md
+        - Characteristic properties:    materials/characteristic-properties.md
+        - Comparing materials:          materials/comparing-materials.md
 
     - Models & Methods:
         - Overview:             models/overview.md
@@ -54,18 +54,25 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - Quickstart:           tutorials/quickstart.md
-        # - First Simulation:            tutorials/first-simulation.md
+        - Electronic bandstructure:             tutorials/bandstructure.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
         - Billing and Payments:         billing/billing-and-payments.md
+            # Include:
+            # - Add payment method:         add-card-and-credit.md
+            # - Increase account balance:   increase-balance.md
         - Pricing and Service Levels:   billing/pricing-and-service-levels.md
+            # Include:
+            # - Adjust service level:       adjust-service-level.md
         - Storage Pricing:              billing/storage-pricing.md
+            # Include:
+            # - Check balance & quota:      check-balance-quota.md
+            # - Increase quota:             increase-quota.md
 
     - Security:
         - Data Security in transfer:    security/data-security-in-transfer.md
-    #     - Data Security at rest: security/data-security-at-rest.md
+        - Data Security at rest:        security/data-security-at-rest.md
 
     - Other:
         - Registration:         other/registration.md
