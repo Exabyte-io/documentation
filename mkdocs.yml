@@ -61,87 +61,19 @@ pages:
 
     - Tutorials:
         - Electronic band structure:        tutorials/band-structure.md
-        # - Electronic band gap:              tutorials/band-gap.md
-        # - Electronic density of states:     tutorials/density-of-states.md
-        # - Zero point energy:                tutorials/zero-point-energy.md
-        # - Formation energy:                 tutorials/formation-energy.md
-        #       - create job in web app
-        #       - choose "XXX" workflow
-        #       - run the job
-        #       - monitor progress
-        #       - view results
-        #       - zoom in on graphs, if graphs are present
-
-        # - Structural relaxation:            tutorials/relaxation.md
-        #       - create job in web app
-        #       - choose "total energy" workflow
-        #       - choose relaxation from "Workflow options"
-        #       - monitor progress
-        #       - view results
-
-        # - Automatic convergence:            tutorials/kpt-convergence.md
-        #       - create job in web app
-        #       - choose "total energy" workflow
-        #       - choose kpt convergence from "Workflow options"
-        #       - monitor progress
-        #       - view results
-
-        # - Combinatorial-screening:          tutorials/combinatorial-screening.md
-        #        - enable combinatorial set
-        #        - create a set with combinations for 3-5 semiconductors with unique names
-        #        - create a set with permutations for a ~10 atom supercell with 2 dopants
-        #        - submit both sets for execution
-        #        - fast-forward
-        #        - when finished navigate to analytics
-        #        - find materials by Formula and compare bandgaps for both cases
-
-        # - Custom-input workflow:            tutorials/custom-input-workflow.md
-        #       - remove extra units
-        #       - open unit editor
-        #       - paste content from elsewhere
-        #       - save workflow under new name
-        #       - run simulation
-
-        # - Electronic density mesh:          tutorials/electronic-density-mesh.md
-        #       - create job in web app
-        #       - choose density mesh workflow
-        #       - run the job
-        #       - point out to remember the name of the job
-        #       - connect via remote desktop
-        #       - open Xcrysden
-        #       - find the job directory and visualize mesh in XCrysden
-
-        # - Fermi surface:                    tutorials/fermi-surface.md
-        #       - start with job for total energy in web app
-        #       - add custom unit with high k-point-mesh for fermi surface
-        #       - run the job
-        #       - connect via web terminal
-        #       - run post-processing script inside job dir to generate bxsf file
-        #       - logout of web terminal, connect via VNC
-        #       - open Xcrysden
-        #       - find the job directory and visualize mesh in XCrysden
-        #       - include explanation on how to visualize surface in XCrysden
-
-        # - Remote desktop visualization:     tutorials/remote-desktop.md
-        #       - use previously created input file for espresso
-        #       - visualize it using XCrysden/Vesta
-
-        # - Job submission via terminal:      tutorials/cli-job.md
-        #       - connect in via web terminal
-        #       - copy example input file from job templates folder
-        #       - adjust input
-        #       - submit the job
-        #       - monitor status with qstat
-        #       - tail output with tail
-        #       - view job accounting information
-
-        # - CLI data import:                  tutorials/cli-job-import.md
-        #       - connect in via web terminal
-        #       - copy example input file from job templates folder
-        #       - adjust input to include `#PBS -web` pragma
-        #       - submit the job
-        #       - view progress on webapp
-        #       - view files on webapp after finish
+        - Electronic band gap:              tutorials/band-gap.md
+        - Electronic density of states:     tutorials/density-of-states.md
+        - Zero point energy:                tutorials/zero-point-energy.md
+        - Formation energy:                 tutorials/formation-energy.md
+        - Structural relaxation:            tutorials/relaxation.md
+        - Automatic convergence:            tutorials/kpt-convergence.md
+        - Combinatorial-screening:          tutorials/combinatorial-screening.md
+        - Custom-input workflow:            tutorials/custom-input-workflow.md
+        - Electronic density mesh:          tutorials/electronic-density-mesh.md
+        - Fermi surface:                    tutorials/fermi-surface.md
+        - Remote desktop visualization:     tutorials/remote-desktop.md
+        - Job submission via terminal:      tutorials/cli-job.md
+        - CLI data import:                  tutorials/cli-job-import.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
