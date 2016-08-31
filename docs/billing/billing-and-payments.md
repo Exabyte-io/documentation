@@ -12,7 +12,7 @@ The Payments page lists all of the times you have credited your balance. You can
 ![Exabyte Registration Form](/images/Payments.png "Payments")
 
 ## Payment Methods
-The Payment Methods page lists all the credit cards we have listed for you, and available to credit your balance. On this pqge you can:
+The Payment Methods page lists all the credit cards we have listed for you, and available to credit your balance. [Click here to for details on adding a new credit card](/billing/add-credit-card.md). On this page you can:
 
 + Add a new credit card by click on on the plus icon, and filling in the form details.
 + Remove a credit card, by clicking on Remove in the correct row
