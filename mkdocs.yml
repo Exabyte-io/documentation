@@ -65,7 +65,7 @@ pages:
         - Pricing and Service Levels:   billing/pricing-and-service-levels.md
             # Include:
             # - Adjust service level:       adjust-service-level.md
-        - Storage Pricing:              billing/storage-pricing.md
+        - Storage Pricing:              billing/storage-quota.md
             # Include:
             # - Check balance & quota:      check-balance-quota.md
             # - Increase quota:             increase-quota.md

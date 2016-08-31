@@ -10,7 +10,7 @@ Clicking on the Left Hand Menu Icon (top left) will open the Project & File Navi
 | -------------                                 |:-------------
 | Compute Load                                  | The compute load shows in a simple indicator of how busy the compute nodes are. There are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
 | [Dashboard](ui-overview.md#dashboard)         | The dashboard highlights important datapoints and files of recent activity
-| [Create Job](first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
+| [Create Job](running-simulations.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
 | [Projects](ui-overview.md#projects)           | Shows your list of projects
 | [Jobs](ui-overview.md#jobs)                   | Shows your list of jobs
 | [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
@@ -33,7 +33,7 @@ Clicking on the Left Hand Menu Icon (top left) will open the Project & File Navi
 | Quota, Queue & Service Level      | This section shows a quick snapshot of the status of your quota: Storage, job queue breakdown and your service level. You can easily upgrade your service level, to obtain more compute power, simply by clicking the upgrade button. If you want to compare service levels, you will find more information in the Account menu, below.
 | Account Balance                   | A snapshot of your current balance, quickly credit the balance using the Apply Credit Button
 | [Account](../billing/settings-and-profile.md)                           | A link to [your account](../billing/settings-and-profile) page. In here you will find your user profile, your preferences and service level.
-| [Billings & Payments](../billing/billing-and-adding-credit.md)               | A link to the [billings and payments](../billing/billing-and-adding-credit.md) section. In here you will your compute charges, payment records and payment methods.
+| [Billings & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
 | Terminal                          | Access to an in-browser CLI terminal thorugh which you can directly access your cloud account.
 | Logout                            | Securely logout of the service.
 
@@ -81,7 +81,7 @@ The Jobs page is a complete list of all the jobs you have run, regardless of pro
 ![Exabyte Registration Form](../images/Jobs.png "Jobs")
 
 ## Analytics
-The analytics page allows you to select Multiple materials and compare the results of the simulations. The first step is to select which materials you would like to compare by ticking the boxes on the left. See the Tutorial on [How to compare materials](/materials/how-to-compare-materials.md)
+The analytics page allows you to select Multiple materials and compare the results of the simulations. The first step is to select which materials you would like to compare by ticking the boxes on the left.
 
 ![Exabyte Registration Form](../images/Analytics.png "Analytics")
 
