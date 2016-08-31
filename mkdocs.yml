@@ -51,16 +51,34 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - Electronic band structure:        tutorials/bandstructure.md
         # TODO by MH: add files below and corresponding explanations
+        - Electronic band structure:        tutorials/band-structure.md
+        # - Electronic band gap:              tutorials/band-gap.md
+        # - Electronic density of states:     tutorials/density-of-states.md
+        # - Zero point energy:                tutorials/zero-point-energy.md
+        # - Formation energy:                 tutorials/formation-energy.md
+        #       - create job in web app
+        #       - choose "XXX" workflow
+        #       - run the job
+        #       - monitor progress
+        #       - view results
+        #       - zoom in on graphs, if graphs are present
 
-        # - Electronic band gap:              tutorials/bandstructure.md
-        # - Electronic density of states:     tutorials/bandstructure.md
-        # - Zero point energy:                tutorials/bandstructure.md
-        # - Formation energy:                 tutorials/bandstructure.md
-        # - Structural relaxation:            tutorials/bandstructure.md
+        # - Structural relaxation:            tutorials/relaxation.md
+        #       - create job in web app
+        #       - choose "total energy" workflow
+        #       - choose relaxation from "Workflow options"
+        #       - monitor progress
+        #       - view results
 
-        # - Combinatorial-screening:          tutorials/bandstructure.md
+        # - Automatic convergence:            tutorials/kpt-convergence.md
+        #       - create job in web app
+        #       - choose "total energy" workflow
+        #       - choose kpt convergence from "Workflow options"
+        #       - monitor progress
+        #       - view results
+
+        # - Combinatorial-screening:          tutorials/combinatorial-screening.md
         #        - enable combinatorial set
         #        - create a set with combinations for 3-5 semiconductors with unique names
         #        - create a set with permutations for a ~10 atom supercell with 2 dopants
@@ -69,14 +87,14 @@ pages:
         #        - when finished navigate to analytics
         #        - find materials by Formula and compare bandgaps for both cases
 
-        # - Custom-input workflow:            tutorials/bandstructure.md
+        # - Custom-input workflow:            tutorials/custom-input-workflow.md
         #       - remove extra units
         #       - open unit editor
         #       - paste content from elsewhere
         #       - save workflow under new name
         #       - run simulation
 
-        # - Electronic density mesh:          tutorials/bandstructure.md
+        # - Electronic density mesh:          tutorials/electronic-density-mesh.md
         #       - create job in web app
         #       - choose density mesh workflow
         #       - run the job
@@ -85,14 +103,14 @@ pages:
         #       - open Xcrysden
         #       - find the job directory and visualize mesh in XCrysden
 
-        # - Fermi surface:                    tutorials/bandstructure.md
+        # - Fermi surface:                    tutorials/fermi-surface.md
         #       - include explanation on how to visualize surface in XCrysden
 
         # - Remote desktop visualization:     tutorials/remote-desktop.md
         #       - use previously created input file for espresso
         #       - visualize it using XCrysden/Vesta
 
-        # - Job submission via terminal:      tutorials/remote-desktop.md
+        # - Job submission via terminal:      tutorials/cli-job.md
         #       - connect in via web terminal
         #       - copy example input file from job templates folder
         #       - adjust input
@@ -101,7 +119,7 @@ pages:
         #       - tail output with tail
         #       - view job accounting information
 
-        # - CLI data import:                  tutorials/remote-desktop.md
+        # - CLI data import:                  tutorials/cli-job-import.md
         #       - connect in via web terminal
         #       - copy example input file from job templates folder
         #       - adjust input to include `#PBS -web` pragma
