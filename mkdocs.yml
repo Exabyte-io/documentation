@@ -81,8 +81,8 @@ pages:
         - Pricing and Service Levels:   billing/pricing-and-service-levels.md
         - Storage Pricing:              billing/storage-quota.md
         - Add payment method:           billing/add-credit-card.md
-        - Increase account balance:     billing/increase-balance.md
         - Check balance & quota:        billing/check-balance-quota.md
+        - Increase account balance:     billing/increase-balance.md
         - Increase quota:               billing/increase-quota.md
         - Upgrade Service Level:        billing/upgrade-service-level.md
 
