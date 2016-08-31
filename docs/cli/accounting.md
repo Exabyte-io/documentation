@@ -115,8 +115,5 @@ Id JobId User     Project  Machine            Queue QualityOfService Stage   Cha
 ```
 
 ---
-<<<<<<< HEAD:docs/cli/accounting.md
-=======
 
-Each of the above commands accept options, that can be viewed by passing `--help`.
->>>>>>> 144d4e15afdc13bff2848f3a232b8e40cc9a7320:docs/cli/accounting.md
+Each of the above commands accept options, that can be viewed by passing `--help` option.
