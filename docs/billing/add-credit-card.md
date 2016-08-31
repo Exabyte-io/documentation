@@ -5,7 +5,7 @@ We keep a list of payment methods (currently, credit cards only) in the Payment 
 ## Open the Billing Page
 Open the account navigation by clicking on your user profile card in the top right art of the header, then click on Billing and Payments.
 
-![Billing Page](/images/Billing.png "Billing Page")
+![Billing Menu](/images/BillingsMenuItem.png "Billing Menu Item")
 
 ## Click on Payment Methods tab
 Click on the the Payment Methods tab in the billing page, if this is the first time you add a card, the list will be empty, otherwise you will see a list of cards you have already added.
