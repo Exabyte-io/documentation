@@ -14,7 +14,7 @@ The Payments page lists all of the times you have credited your balance. You can
 
 ![Exabyte Registration Form](/images/AddCredit.png "Add Credit")
 
-There is also a shortcut to this form in the right hand sidebar. For more detail read out [How to add credit](/billing/how-to-add-credit.md) tutorial
+There is also a shortcut to this form in the right hand sidebar. For more detail read out [How to add credit](/billing/billing-and-payments.md) tutorial
 
 ## Payment Methods
 The Payment Methods page lists all the credit cards we have listed for you, and available to credit your balance. On this pqge you can:

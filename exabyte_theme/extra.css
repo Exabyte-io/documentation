@@ -20,7 +20,7 @@ body {
 }
 
 /* adjust margins for nested lists */
-.section>ul>li>ul>li:last-child {
+.section > ul > li > ul > li:last-child {
     margin-bottom: 20px;
 }
 
@@ -48,13 +48,16 @@ ul + h1, ul + h2, ul + h3, ul + h4,
 ol + h1, ol + h2, ol + h3, ol + h4 {
     margin: 30px 0 10px 0;
 }
+
 p, :not(footer.p) {
     line-height: 24px;
 }
+
 li > p {
     margin: 0;
     line-height: 18px;
 }
+
 .card-body ul {
     margin: 15px 0 15px 0;
     line-height: 24px;
@@ -67,14 +70,15 @@ pre {
     background-color: #F9F9F9;
     overflow-x: auto;
 }
+
 pre code {
     overflow-wrap: normal;
     white-space: pre;
 }
+
 p + pre, ul + pre {
     margin-top: 10px;
 }
-
 
 .wy-side-nav-search,
 .wy-side-nav-search img {
@@ -85,18 +89,17 @@ p + pre, ul + pre {
  *                  LOGO AND SIDEBAR
  * --------------------------------------------------------- */
 .wy-nav-side {
-    border-right: 1px solid #CCC;
-    /*background: #3677d9; TODO: re-add and fix hover link colors*/
+    background: rgba(10, 54, 119, 0.6);
 }
 
 .rst-versions {
-    border-top: 2px solid #CCC;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    border-top: 1px solid #555;
+    background: #0A3677;
 }
 
 .rst-versions .rst-current-version {
-    padding: 8px;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    /*padding: 8px;*/
+    background: #0A3677;
 }
 
 .wy-nav-top img,
@@ -108,7 +111,7 @@ p + pre, ul + pre {
     background-color: none;
     padding: 0px;
     border-radius: 0;
-    border:none;
+    border: none;
     box-shadow: none;
 }
 
@@ -118,23 +121,50 @@ p + pre, ul + pre {
     padding-top: 0px;
     width: inherit;
     background: #343131;
-    border-bottom: 2px solid #CCC;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    border-bottom: 1px solid #555;
+    background: #0A3677;
+    width: 300px;
+}
+
+.wy-side-nav-search img {
+    width: 200px;
+}
+
+.wy-side-scroll {
+    width: 320px;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 100%;
 }
 
 .wy-menu.wy-menu-vertical {
-    margin-top: 105px;
+    margin-top: 104px;
+}
+
+.wy-menu-vertical li ul li a {
+    color: #ddd;
+}
+
+.wy-menu-vertical a:visited {
+    /*color: #0A3677;*/
+    color: rgba(137, 167, 210, 0.1);
+}
+
+.wy-menu-vertical li ul li a:hover,
+.wy-menu-vertical li.toctree-l1 a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 @media screen and (max-width: 768px) {
     .wy-nav-side.shift {
-        width:80%;
+        width: 300px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .wy-nav-content-wrap.shift {
-        left: 80%;
+        left: 300px;
     }
 }
 
@@ -145,20 +175,17 @@ p + pre, ul + pre {
     margin: auto;
 }
 
-.wy-side-nav-search img {
-    width: 200px;
-}
-
 .wy-nav-top img, .wy-side-nav-search a:hover, .wy-side-nav-search img:hover {
     background-color: none;
 }
 
-.wy-nav-top img, .wy-side-nav-search>a:hover {
+.wy-nav-top img, .wy-side-nav-search > a:hover {
     background: none;
 }
-.wy-nav-top img, .wy-side-nav-search>a {
-    padding:0;
-    margin:0;
+
+.wy-nav-top img, .wy-side-nav-search > a {
+    padding: 0;
+    margin: 0;
 }
 
 /* search box input */
@@ -181,13 +208,13 @@ p + pre, ul + pre {
  *                  BURGER AND MENU SMALL SCREEN
  * --------------------------------------------------------- */
 .wy-nav-top {
-    background: #343131;
-    /*background: #0A3677; TODO: re-add and fix hover link colors*/
+    /*background: #343131;*/
+    background: #0A3677;
 }
 
 .wy-nav-top i {
     font-size: 24px;
-    margin-top:15px;
+    margin-top: 15px;
     margin-left: 10px;
     margin-right: 0px;
 }
@@ -212,50 +239,26 @@ p + pre, ul + pre {
 }
 
 /* --------------------------------------------------------- *
- *                  NAV COLLAPSE
+ *                  NAV COLLAPSE FIRST LEVEL
  * --------------------------------------------------------- */
-
 .wy-menu ul.subnav {
     cursor: pointer;
-}
-
-.wy-menu ul.subnav > ul.subnav span {
-    color: #aaa;
-    padding-left: 1.3em;
-}
-
-.wy-menu ul.subnav > ul.subnav.active span {
-    color: white;
-    padding-left: 1.3em;
-}
-
-ul.subnav .fa {
-    display: none;
-}
-
-ul.subnav > .subnav .fa {
-    display:inline-block;
-}
-
-ul.subnav .subnav li.toctree-l1 {
-    display: none;
-}
-
-ul.subnav .subnav.active {}
-
-ul.subnav .subnav.active li.toctree-l1 {
-    display: block;
-}
-
-/* Font awesome icon */
-ul.subnav .fa {
-    color: gray;
-    margin: 0px 5px;
 }
 
 ul.subnav.active .fa {
     color: white;
     margin: 0px 5px;
+}
+
+/* Font awesome icon */
+ul.subnav .fa {
+    margin: 0px 5px;
+    font-size: 10px;
+    display: none;
+}
+
+ul.subnav li.toctree-l1 {
+    display: none;
 }
 
 /* --------------------------------------------------------- *
