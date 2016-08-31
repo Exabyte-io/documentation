@@ -1,2 +1,3 @@
 <!-- TODO by MH -->
-What is a model, method, which ones we support and current and which ones will support soon.
+
+What is a model, method, which ones we support at current and which ones will be supported soon.

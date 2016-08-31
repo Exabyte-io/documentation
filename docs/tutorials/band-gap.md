@@ -1,5 +1,5 @@
 <!-- TODO by MH -->
-How to calculate bandstructure of Si
+Band gap of Si:
 
 - create job in web app
 - choose workflow
@@ -7,4 +7,3 @@ How to calculate bandstructure of Si
 - monitor progress
 - view results
 - zoom in on graphs, if graphs are present
-
