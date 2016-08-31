@@ -1,7 +1,10 @@
 $( document ).ready(function() {
-    $('ul.subnav > ul.subnav').on("click", function() {
-        console.log("Clicked");
+    $('ul.subnav').on("click", function(event) {
+        //$(".toctree-l1").hide(90); // Close other menus
         $(this).toggleClass("active");
-        $(this).next('ul.subnav').slideToggle(200).toggleClass("active");
+        $(".toctree-l1", this).show(200);
     })
+
+    $('li.current').show(50);
+    $('li.current').siblings().show(0);
 });
