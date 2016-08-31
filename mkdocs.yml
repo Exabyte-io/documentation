@@ -28,9 +28,17 @@ pages:
         - Upload & Import:              materials/upload-and-import.md
         - Characteristic properties:    materials/characteristic-properties.md
         - Comparing materials:          materials/comparing-materials.md
+        - Combinatorial sets:           materials/combinatorial-sets.md
 
     - Models & Methods:
-        - Overview:             models/overview.md
+        - Overview:                     models/overview.md
+        - Advanced:                     models/advanced-characteristics.md
+        - Convergence algorithms:       models/convergence-algorithms.md
+        - Structural relaxation:        models/structural-relaxation.md
+        - Combinatorial set input:      models/combinatorial-set-input.md
+        - Density Functional Theory:    models/density-functional-theory.md
+        - Simulation workflows:         models/simulation-workflows.md
+        - Example simulations:          models/example-simulations.md
 
     - Compute:
         - Overview:             compute/overview.md
@@ -41,6 +49,7 @@ pages:
 
     - Sharing & Collaboration:
         - Organizations:        collaboration/organizations.md
+        - Organizations:        collaboration/create-organization.md
 
     - Command Line Interface:
         - Overview:             cli/overview.md
@@ -51,7 +60,6 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        # TODO by MH: add files below and corresponding explanations
         - Electronic band structure:        tutorials/band-structure.md
         # - Electronic band gap:              tutorials/band-gap.md
         # - Electronic density of states:     tutorials/density-of-states.md
@@ -104,6 +112,14 @@ pages:
         #       - find the job directory and visualize mesh in XCrysden
 
         # - Fermi surface:                    tutorials/fermi-surface.md
+        #       - start with job for total energy in web app
+        #       - add custom unit with high k-point-mesh for fermi surface
+        #       - run the job
+        #       - connect via web terminal
+        #       - run post-processing script inside job dir to generate bxsf file
+        #       - logout of web terminal, connect via VNC
+        #       - open Xcrysden
+        #       - find the job directory and visualize mesh in XCrysden
         #       - include explanation on how to visualize surface in XCrysden
 
         # - Remote desktop visualization:     tutorials/remote-desktop.md

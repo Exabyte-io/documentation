@@ -1,5 +1,6 @@
 <!-- TODO by MH -->
-How to calculate bandstructure of Si
+
+Formation energy of CuO2:
 
 - create job in web app
 - choose workflow
@@ -7,4 +8,3 @@ How to calculate bandstructure of Si
 - monitor progress
 - view results
 - zoom in on graphs, if graphs are present
-
