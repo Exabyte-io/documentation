@@ -56,16 +56,13 @@ pages:
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
         - Billing and Payments:         billing/billing-and-payments.md
-            # Include:
-            # - Add payment method:         add-card-and-credit.md
-            # - Increase account balance:   increase-balance.md
         - Pricing and Service Levels:   billing/pricing-and-service-levels.md
-            # Include:
-            # - Adjust service level:       adjust-service-level.md
         - Storage Pricing:              billing/storage-quota.md
-            # Include:
-            # - Check balance & quota:      check-balance-quota.md
-            # - Increase quota:             increase-quota.md
+        - Add payment method:           billing/add-credit-card.md
+        - Increase account balance:     billing/increase-balance.md
+        - Check balance & quota:        billing/check-balance-quota.md
+        - Increase quota:               billing/increase-quota.md
+        - Upgrade Service Level:        billing/upgrade-service-level.md
 
     - Security:
         - Data Security in transfer:    security/data-security-in-transfer.md

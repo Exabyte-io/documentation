@@ -1,4 +1,4 @@
-<!-- TODO by DB - revisit-->
+<!-- DB -->
 
 ## Service Levels
 
@@ -10,12 +10,9 @@ The Service Level page is shown in the Account page. This page shows details abo
 
 ![Exabyte Registration Form](/images/UserServiceLevel.png "User Service Level")
 
-The amount of compute you consume while using our product. We measure the amount in compute-units, or [CPU-hours](https://en.wikipedia.org/wiki/CPU_time).
+The amount of compute you consume while using our product. We measure the amount in compute-units, or [CPU-hours](https://en.wikipedia.org/wiki/CPU_time). You always pay on-demand, however dependent on your service level your price per compute unit may vary and you may have additional services and features included.
 
-You always pay on-demand, however dependent on your service level your price per compute unit may vary and you may have additional services and features included.
-
-## Subscription levels comparison
-
+## Service levels comparison
 Below is a quick overview of our service levels:
 
 | Feature/Plan             |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-extra   |
@@ -32,7 +29,6 @@ Below is a quick overview of our service levels:
 | command line access      |  -          | -                  | +                  | +                  | +
 
 ## How service levels are set
-
 Your service level is defined by the payment that you make. **Organizations** let users set up a collaboration, sharing and work in teams, and are well suited for enterprise users and those working in groups.
 
 Here's how it works:
@@ -47,11 +43,8 @@ Here's how it works:
     - by paying $50,000 a user can secure `Enterprise-extra` service level for his/her organization
     - other special rates are available upon request
 
-
 ## Validity period
-
 You get to access our services for free. We only charge for what you use, however we require that you use the allocations within a certain validity period (as shown in the table above).
-
 Every 1st day of the week we run a check on each user and organization account and the account balance is set to 0 in if any of the following is true:
 
 - account value X is `<$50` and last payment happened >1 month ago
@@ -59,14 +52,12 @@ Every 1st day of the week we run a check on each user and organization account a
 - account value X is `$500<=X <$5000` and last payment happened >6 month ago
 - account value X is `>$5000` and last payment happened >12 month ago
 
-We recommend setting up an automatic payment option, so that your service level is automatically renewed after validity period is over.
+We recommend setting automatic payment option (auto-renew) when upgrading or adding credit, so that your service level is automatically renewed after validity period is over.
 
 ## Base rate
-
 The price above refers to the base rate for each service level. You can further control how quickly your calculations are finished by using submission queues.
 
 ## Queue-based pricing
-
 Detailed description on submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks).
 
 Debug queue is charged at `2x` the [base rate](/billing/accounts-and-billing#pricing.md), on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base.
@@ -76,5 +67,4 @@ Debug queue is charged at `2x` the [base rate](/billing/accounts-and-billing#pri
 You can purchase extra storage to increase the limits beyond the default value for your service level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details.
 
 ## Changing Service Level
-
-<!-- TODO: DB to add -->
+You can secure better compute costs and other perks by optimising the service level to suit your needs, [Click here for a guide on upgrading your service level](upgrade-service-level.md)
