@@ -5,10 +5,10 @@ This page will show how you can check your current balance and storage quota. Th
 ## Open the right hand sidebar
 Click on your profile card in the top right of the header to open the Account right hand sidebar.
 
-![Account Navigation](/images/RightHandSidebar.png "Account Navigation")
+![Account Navigation](/images/RightHandNavigationTablet.png "Account Navigation")
 
 ### Storage quota
-You will see your current storage quota shown just under the account switcher: It is labelled Storage Quota on the left, and to the right are shown the used storage amount and storage limit. For convenience we also show the used percentage of total in the little bar underneath. The bar is grey by default, once your storage begins to be used the meter will begin to fill with colour: Blue until 50%, orange from 50% to 75% and red when your used storage amount exceeds 75% of the total.
+You will see your current storage quota shown just under the account switcher: It is labelled Storage Quota on the left, and to the right are shown the used storage amount used and storage limit. For convenience we also show the used percentage of total in the little bar underneath. The bar is grey by default, once your storage begins to be used the meter will begin to fill with colour: Blue until 50%, orange from 50% to 75% and red when your used storage amount exceeds 75% of the total.
 
 You can easily increase your storage by clicking the Add Storage button.
 
