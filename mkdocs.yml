@@ -51,7 +51,63 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - Electronic bandstructure:             tutorials/bandstructure.md
+        - Electronic band structure:        tutorials/bandstructure.md
+        # TODO by MH: add files below and corresponding explanations
+
+        # - Electronic band gap:              tutorials/bandstructure.md
+        # - Electronic density of states:     tutorials/bandstructure.md
+        # - Zero point energy:                tutorials/bandstructure.md
+        # - Formation energy:                 tutorials/bandstructure.md
+        # - Structural relaxation:            tutorials/bandstructure.md
+
+        # - Combinatorial-screening:          tutorials/bandstructure.md
+        #        - enable combinatorial set
+        #        - create a set with combinations for 3-5 semiconductors with unique names
+        #        - create a set with permutations for a ~10 atom supercell with 2 dopants
+        #        - submit both sets for execution
+        #        - fast-forward
+        #        - when finished navigate to analytics
+        #        - find materials by Formula and compare bandgaps for both cases
+
+        # - Custom-input workflow:            tutorials/bandstructure.md
+        #       - remove extra units
+        #       - open unit editor
+        #       - paste content from elsewhere
+        #       - save workflow under new name
+        #       - run simulation
+
+        # - Electronic density mesh:          tutorials/bandstructure.md
+        #       - create job in web app
+        #       - choose density mesh workflow
+        #       - run the job
+        #       - point out to remember the name of the job
+        #       - connect via remote desktop
+        #       - open Xcrysden
+        #       - find the job directory and visualize mesh in XCrysden
+
+        # - Fermi surface:                    tutorials/bandstructure.md
+        #       - include explanation on how to visualize surface in XCrysden
+
+        # - Remote desktop visualization:     tutorials/remote-desktop.md
+        #       - use previously created input file for espresso
+        #       - visualize it using XCrysden/Vesta
+
+        # - Job submission via terminal:      tutorials/remote-desktop.md
+        #       - connect in via web terminal
+        #       - copy example input file from job templates folder
+        #       - adjust input
+        #       - submit the job
+        #       - monitor status with qstat
+        #       - tail output with tail
+        #       - view job accounting information
+
+        # - CLI data import:                  tutorials/remote-desktop.md
+        #       - connect in via web terminal
+        #       - copy example input file from job templates folder
+        #       - adjust input to include `#PBS -web` pragma
+        #       - submit the job
+        #       - view progress on webapp
+        #       - view files on webapp after finish
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
