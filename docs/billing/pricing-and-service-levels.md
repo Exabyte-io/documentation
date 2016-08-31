@@ -1,6 +1,7 @@
-# Service Levels and Pricing
+<!-- TODO by DB - revisit-->
 
 ## Service Levels
+
 The Service Level page is shown in the Account page. This page shows details about your current balance, storage quota and service level. Other service levels are also shown in order that you might consider shaving money off your compute costs, amongst other benefits, by upgrading to a higher service level. Your current service level is greyed out. From this page you can:
 
 + Click on Add Credit to add funds to your account balance
@@ -11,11 +12,11 @@ The Service Level page is shown in the Account page. This page shows details abo
 
 The amount of compute you consume while using our product. We measure the amount in compute-units, or [CPU-hours](https://en.wikipedia.org/wiki/CPU_time).
 
-You always pay on-demand, however dependent on your subscription level your price per compute unit may vary and you may have additional services and features included.
+You always pay on-demand, however dependent on your service level your price per compute unit may vary and you may have additional services and features included.
 
-## Subscription levels
+## Subscription levels comparison
 
-Below is a quick overview of our subscription levels:
+Below is a quick overview of our service levels:
 
 | Feature/Plan             |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-extra   |
 | -------------            |:----------- |:-------------      |:-------------      |:-------------      |:-------------
@@ -30,20 +31,20 @@ Below is a quick overview of our subscription levels:
 | support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal
 | command line access      |  -          | -                  | +                  | +                  | +
 
-## How subscription levels are set
+## How service levels are set
 
-Your subscription level is defined by the payment that you make. **Organizations** let users set up a collaboration, sharing and work in teams, and are well suited for enterprise users and those working in groups.
+Your service level is defined by the payment that you make. **Organizations** let users set up a collaboration, sharing and work in teams, and are well suited for enterprise users and those working in groups.
 
 Here's how it works:
 
-- Upon signup you are given $10 credit to try the platform and your subscription level is set to `Promo`.
-- When you provide a payment method, purchase allocation and pay $50 - your subscription level is set to `Advanced`
-- If you decide to pay $500 instead, your subscription level is set to `Pro`
+- Upon signup you are given $10 credit to try the platform and your service level is set to `Promo`.
+- When you provide a payment method, purchase allocation and pay $50 - your service level is set to `Advanced`
+- If you decide to pay $500 instead, your service level is set to `Pro`
 - Users with valid payment method can create **organizations**:
     - the first organization per user is given $10 credit to try the functionality
-    - by paying $5,000 a user can secure 'Enterprise' subscription level (and rates) for his/her organization
-    - all entities created under the organization account will be charged according to `Enterprise` subscription level rates
-    - by paying $50,000 a user can secure `Enterprise-extra` subscription level for his/her organization
+    - by paying $5,000 a user can secure 'Enterprise' service level (and rates) for his/her organization
+    - all entities created under the organization account will be charged according to `Enterprise` service level rates
+    - by paying $50,000 a user can secure `Enterprise-extra` service level for his/her organization
     - other special rates are available upon request
 
 
@@ -58,11 +59,11 @@ Every 1st day of the week we run a check on each user and organization account a
 - account value X is `$500<=X <$5000` and last payment happened >6 month ago
 - account value X is `>$5000` and last payment happened >12 month ago
 
-We recommend setting up an automatic payment option, so that your subscription level is automatically renewed after validity period is over.
+We recommend setting up an automatic payment option, so that your service level is automatically renewed after validity period is over.
 
 ## Base rate
 
-The price above refers to the base rate for each subscription level. You can further control how quickly your calculations are finished by using submission queues.
+The price above refers to the base rate for each service level. You can further control how quickly your calculations are finished by using submission queues.
 
 ## Queue-based pricing
 
@@ -72,7 +73,7 @@ Debug queue is charged at `2x` the [base rate](/billing/accounts-and-billing#pri
 
 ## Increasing Quota
 
-You can purchase extra storage to increase the limits beyond the default value for your subscription level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details.
+You can purchase extra storage to increase the limits beyond the default value for your service level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details.
 
 ## Changing Service Level
 

@@ -8,7 +8,7 @@ This documentation contains information about how our product works. You can sea
 ## Quickstart
 
 In case you feel impatient, you can skip straight to our first tutorial summarizing
-[first steps with exabyte.io](tutorials/quickstart.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
+[first steps with exabyte.io](tutorials/first-simulation.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
 
 ## Contents
 
