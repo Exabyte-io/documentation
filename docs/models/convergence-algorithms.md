@@ -1,2 +1,3 @@
 <!-- TODO by MH -->
-Explain how to add convergence workflows and what they are underneath.
+
+What are convergence algorithms, which convergence algorithms we use and why.

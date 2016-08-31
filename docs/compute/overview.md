@@ -1,4 +1,4 @@
-<!-- TODO: to be revised by MM, add hardware specification, information about cloud providers -->
+<!-- TODO: to be revised by MM, add hardware specification, information about cloud providers, add note about support for on-premises deployment -->
 
 # Compute platform
 

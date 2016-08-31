@@ -1,5 +1,7 @@
 <!-- TODO by DB -->
 
+Basic overview of sidebars - left/right, header with title and back arrow, user account name area, switching between accounts, main content area, black background area for materials editor
+
 # Project Navigation (left-side)
 Clicking on the Left Hand Menu Icon (top left) will open the Project & File Navigator
 
