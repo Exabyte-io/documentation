@@ -1,3 +1,5 @@
+<!-- TODO: DB to edit this file and remove redundand data -->
+
 # Billing and Adding Credit
 
 ## Charges
@@ -24,8 +26,6 @@ The Payment Methods page lists all the credit cards we have listed for you, and 
 + Set a payment method as the default one, the one that will be used when crediting your account by default.
 
 ![Exabyte Registration Form](/images/PaymentMethods.png "PaymentMethods")
-
-<!-- TODO: DB to edit this file and remove redundand data -->
 
 The easiest and quickest way to increase your account balance is to add credit using the button from the right hand sidebar
 

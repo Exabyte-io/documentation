@@ -20,11 +20,8 @@ pages:
     - Home: index.md
 
     - Getting Started:
-        - Creating materials:       getting-started/creating-materials.md
-        - Running simulations:      tutorials/first-simulation.md
-        - Analyzing results:        getting-started/analyzing-results.md
+        - Run first simulation:     getting-started/run-first-simulation.md
         - User interface overview:  getting-started/ui-overview.md
-        - Billing overview:         getting-started/billing-overview.md
 
     - Materials:
         - Creating structures:          materials/creating-structures.md
@@ -76,8 +73,8 @@ pages:
 
     - Other:
         - Registration:         other/registration.md
-        # - Student Program: other/student-program.md
-        # - Developer Program: other/developer-programer.md
+        # - Student Program:    other/student-program.md
+        # - Developer Program:  other/developer-program.md
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
         - FAQ:                  other/faq.md
