@@ -28,9 +28,17 @@ pages:
         - Upload & Import:              materials/upload-and-import.md
         - Characteristic properties:    materials/characteristic-properties.md
         - Comparing materials:          materials/comparing-materials.md
+        - Combinatorial sets:           materials/combinatorial-sets.md
 
     - Models & Methods:
-        - Overview:             models/overview.md
+        - Overview:                     models/overview.md
+        - Advanced:                     models/advanced-characteristics.md
+        - Convergence algorithms:       models/convergence-algorithms.md
+        - Structural relaxation:        models/structural-relaxation.md
+        - Combinatorial set input:      models/combinatorial-set-input.md
+        - Density Functional Theory:    models/density-functional-theory.md
+        - Simulation workflows:         models/simulation-workflows.md
+        - Example simulations:          models/example-simulations.md
 
     - Compute:
         - Overview:             compute/overview.md
@@ -41,6 +49,7 @@ pages:
 
     - Sharing & Collaboration:
         - Organizations:        collaboration/organizations.md
+        - Organizations:        collaboration/create-organization.md
 
     - Command Line Interface:
         - Overview:             cli/overview.md
@@ -51,7 +60,20 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - Electronic bandstructure:             tutorials/bandstructure.md
+        - Electronic band structure:        tutorials/band-structure.md
+        - Electronic band gap:              tutorials/band-gap.md
+        - Electronic density of states:     tutorials/density-of-states.md
+        - Zero point energy:                tutorials/zero-point-energy.md
+        - Formation energy:                 tutorials/formation-energy.md
+        - Structural relaxation:            tutorials/relaxation.md
+        - Automatic convergence:            tutorials/kpt-convergence.md
+        - Combinatorial-screening:          tutorials/combinatorial-screening.md
+        - Custom-input workflow:            tutorials/custom-input-workflow.md
+        - Electronic density mesh:          tutorials/electronic-density-mesh.md
+        - Fermi surface:                    tutorials/fermi-surface.md
+        - Remote desktop visualization:     tutorials/remote-desktop.md
+        - Job submission via terminal:      tutorials/cli-job.md
+        - CLI data import:                  tutorials/cli-job-import.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
