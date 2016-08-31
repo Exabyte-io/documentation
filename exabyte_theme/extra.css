@@ -93,9 +93,8 @@ p + pre, ul + pre {
 }
 
 .rst-versions {
-    /*border-top: 2px solid #CCC;*/
+    border-top: 1px solid #555;
     background: #0A3677;
-    border-top: 0px;
 }
 
 .rst-versions .rst-current-version {
@@ -122,7 +121,7 @@ p + pre, ul + pre {
     padding-top: 0px;
     width: inherit;
     background: #343131;
-    /*border-bottom: 2px solid #CCC;*/
+    border-bottom: 1px solid #555;
     background: #0A3677;
     width: 300px;
 }
