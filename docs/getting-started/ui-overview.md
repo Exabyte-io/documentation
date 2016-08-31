@@ -1,9 +1,26 @@
 <!-- TODO by DB -->
+# UI Overview
+This page summarises the main components of the web user interface, a basic overview of the navigation through sidebars left and right, the header with title and back arrow and user account name area, how to switch between user accounts, the main content area, the materials editor and a snapshot of the other main pages.
 
-Basic overview of sidebars - left/right, header with title and back arrow, user account name area, switching between accounts, main content area, black background area for materials editor
+## Header Bar
+The header bar has the following items:
 
-# Project Navigation (left-side)
-Clicking on the Left Hand Menu Icon (top left) will open the Project & File Navigator
++ Left Hand Project Navigation Trigger
++ Exabyte Logo
++ Back arrow: used in certain circumstances, such as inside project jobs - see image below)
++ Page Title
++ Project Navigation toggle: This will trigger the left hand navigation tray to be always open
++ Account Name: your current account profile; avatar and name.
+
+## Main Content Area
+The main content area is shown below the header bar. Most often it contains either a Profile view (with header and subnavigation) or an Explorer list view element (listing projects and jobs, for example.)
+
+The screenshot below shows an example page, with the header bar and the main content and a profile view containing the explorer list view. In this case the main content area shows the Project View: showing the Project name and description, plus a secondary navigation showing the project files. The Jobs tab is open, and we are showing the list of the Jobs for this project. We can return to the list of projects by clicking the backarrow in the header.
+
+![Project Jobs List](../images/ProjectJobs.png "Project Jobs List")
+
+## Project Navigation (left-side)
+Clicking on the Left Hand Menu Icon (top left) will open the Project and File Navigator
 
 ![Projects and Files Navigation](../images/LeftNavigation.png "Projects and Files Navigation")
 
@@ -63,6 +80,11 @@ This widget displays a summary of your current data storage quota: used and tota
 
 ### Jobs summary
 The Jobs summary widget summarises the total number of jobs run during this same period, and also offers a break down of the job types. There is a quick link to jump to the jobs list.
+
+## Create Job & Material Editor
+The Create Job shortcut link takes you to the simulation wizard where you can quickly run a simulation. The first tab is the Material Design tab. The material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
+
+![Material Editor](../images/MaterialEditor.png "Material Editor")
 
 ## Projects
 The Projects page lists all the projects you have created. Projects contain collections of Jobs, cLick on a project to go into more details of this project. Click on the plus icon to create a new one.
@@ -125,4 +147,4 @@ The billings link takes you to the Billing page which shows your account Charges
 Alternative, in-browser, access to your Exabyte.io account.
 
 ## Invite a friend
-You both will get $10 credit when registration request is approved.
+You both will get $10 credit when registration request is approved. Find out how in the [Refer a friend page](/collaboration/invite-friends.md)
