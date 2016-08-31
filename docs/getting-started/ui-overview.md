@@ -1,6 +1,6 @@
-<!-- TODO by DB -->
+<!-- DB -->
 # UI Overview
-This page summarises the main components of the web user interface, a basic overview of the navigation through sidebars left and right, the header with title and back arrow and user account name area, how to switch between user accounts, the main content area, the materials editor and a snapshot of the other main pages.
+This page summarises the main components of the web user interface, a basic overview of the navigation through sidebars left and right, the header with title and back arrow and user account name area, user accounts switcher, the main content area, the materials editor and a snapshot of the other main pages.
 
 ## Header Bar
 The header bar has the following items:
@@ -11,6 +11,8 @@ The header bar has the following items:
 + Page Title
 + Project Navigation toggle: This will trigger the left hand navigation tray to be always open
 + Account Name: your current account profile; avatar and name.
+
+![Header Bar](../images/HeaderBar.png "Header Bar")
 
 ## Main Content Area
 The main content area is shown below the header bar. Most often it contains either a Profile view (with header and subnavigation) or an Explorer list view element (listing projects and jobs, for example.)
@@ -26,7 +28,7 @@ Clicking on the Left Hand Menu Icon (top left) will open the Project and File Na
 
 
 | Menu Item                                     | Description
-| -------------                                 |:-------------
+| :-------------                                 |:-------------
 | Compute Load                                  | The compute load shows in a simple indicator of how busy the compute nodes are. There are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
 | [Dashboard](ui-overview.md#dashboard)         | The dashboard highlights important datapoints and files of recent activity
 | [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
@@ -40,12 +42,12 @@ Clicking on the Left Hand Menu Icon (top left) will open the Project and File Na
 | Documentation                                 | A link to this documentation is always here
 
 # Account Navigation (right-side)
-Clicking on your Profile card (header top right) will open the Account and Billings navigation.
+Clicking on your Profile card (header top right) will open the Account navigation.
 
 ![Account and Billing Navigation](../images/RightNavigation.png "Account")
 
 | Menu Item                         | Description
-| -------------                     |:-------------
+| :-------------                     |:-------------
 | Account Switcher                  | You can easiliy switch between your personal account and your organizational accounts by clicking here. This will open a small window showing your other active accounts. Click on one to switch to that account.
 | Quota, Queue & Service Level      | This section shows a quick snapshot of the status of your quota: Storage, job queue breakdown and your service level. You can easily upgrade your service level, to obtain more compute power, simply by clicking the upgrade button. If you want to compare service levels, you will find more information in the Account menu, below.
 | Account Balance                   | A snapshot of your current balance, quickly credit the balance using the Apply Credit Button
