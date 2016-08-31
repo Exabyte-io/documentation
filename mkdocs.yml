@@ -12,8 +12,6 @@ extra:
     full_width: False
     preload_javascript:
         - preload.js
-repo_name: Github
-repo_url: https://github.com/mkdocs/mkdocs
 markdown_extensions:
     - toc:
         permalink: true
