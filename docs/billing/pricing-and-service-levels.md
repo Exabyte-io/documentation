@@ -70,9 +70,9 @@ We recommend setting automatic payment option (auto-renew) when upgrading or add
 
 ## Queue-based pricing
 
-Detailed description on submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks).
+Detailed description of submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks).
 
-Debug queue is charged at `2x` the base rate shown above, on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base.
+Debug queue is charged at `2x` the base rate shown above, on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base. More information available [here](increase-quota.md).
 
 ## Increasing Quota
 
@@ -80,13 +80,5 @@ You can purchase extra storage to increase the limits beyond the default value f
 
 ## Changing Service Level
 
-You can secure better compute costs and other benefits by optimising the service level to suit your needs, [Click here to learn how to upgrade your service level](upgrade-service-level.md)
-
-Service Level page is located under the Account link inside righ-hand sidebar. This page shows details about your current balance, storage quota and service level. Other service levels are also shown for comparison. Your current service level is dimmed out. From this page you can:
-
-1. Click on Add Credit to add funds to your account balance
-2. Click on Add Storage to increase your storage quota
-3. If you wish to do so, you can upgrade your Service Level by clicking Upgrade.
-
-![Exabyte.io Registration Form](/images/UserServiceLevel.png "User Service Level")
+You can secure better compute costs and other benefits by optimising the service level to suit your needs, Click [here](upgrade-service-level.md) to learn how to upgrade your service level.
 
