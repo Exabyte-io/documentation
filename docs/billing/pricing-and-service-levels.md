@@ -2,69 +2,91 @@
 
 ## Service Levels
 
-The Service Level page is shown in the Account page. This page shows details about your current balance, storage quota and service level. Other service levels are also shown in order that you might consider shaving money off your compute costs, amongst other benefits, by upgrading to a higher service level. Your current service level is greyed out. From this page you can:
-
-+ Click on Add Credit to add funds to your account balance
-+ Click on Add Storage to increase your storage quota
-+ If there are better conditions according to your use of Exabyte, you can upgrade your Service Level by clicking Upgrade.
-
-![Exabyte Registration Form](/images/UserServiceLevel.png "User Service Level")
-
-The amount of compute you consume while using our product. We measure the amount in compute-units, or [CPU-hours](https://en.wikipedia.org/wiki/CPU_time). You always pay on-demand, however dependent on your service level your price per compute unit may vary and you may have additional services and features included.
+Service levels define the price per the amount of compute you consume while using our product. We measure the amount in compute-units, or [CPU-hours](https://en.wikipedia.org/wiki/CPU_time). You always pay on-demand, however dependent on your service level your price per compute unit may vary and you may have additional services and features included.
 
 ## Service levels comparison
+
 Below is a quick overview of our service levels:
 
-| Feature/Plan             |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-extra   |
-| -------------            |:----------- |:-------------      |:-------------      |:-------------      |:-------------
-| minimum payment          |  -          | $50                | $500               | $5,000             | $50,000             |
-| price per CPU-hour       |  $0.20      | $0.20              | $0.18              | $0.15              | $0.10               |
-| validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months           |
-| reserved compute nodes   |  -          | -                  | -                  | +                  | +                   |
-| monthly data usage       |  10Gb       | 50Gb               | 100Gb              | 500Gb              | 5Tb                 |
-| private data             |  -          | -                  | +                  | +                  | +                   |
-| organizations/teams      |  -          | -                  | -                  | +                  | +                   |
-| maximum team size        |  -          | -                  | -                  | 5                  | 15                  |
-| support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal
-| command line access      |  -          | -                  | +                  | +                  | +
+| Feature/Plan             |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-extra         |
+| -------------            |:----------- |:-------------      |:-------------      |:-------------      |:-------------             |
+| minimum payment          |  -          | $50                | $500               | $5,000             | $50,000                   |
+| price per CPU-hour       |  $0.20      | $0.20              | $0.18              | $0.15              | $0.10                     |
+| validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months                 |
+| reserved compute nodes   |  -          | -                  | -                  | +                  | +                         |
+| monthly data usage       |  10Gb       | 50Gb               | 100Gb              | 500Gb              | 5Tb                       |
+| private data             |  -          | -                  | +                  | +                  | +                         |
+| organizations/teams      |  -          | -                  | -                  | +                  | +                         |
+| maximum team size        |  -          | -                  | -                  | 5                  | 15                        |
+| support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal   |
+| command line access      |  -          | -                  | +                  | +                  | +                         |
+
+<div class="warning">
+<b><u>Base rate</u></b>: the price above refers to the base rate for each service level. You can further control how quickly your calculations are finished by varying submission queues.
+</div>
 
 ## How service levels are set
+
 Your service level is defined by the payment that you make. **Organizations** let users set up a collaboration, sharing and work in teams, and are well suited for enterprise users and those working in groups.
+
+> Service level is defined by the maximum amount of the recent payment(s) that you make.
 
 Here's how it works:
 
-- Upon signup you are given $10 credit to try the platform and your service level is set to `Promo`.
-- When you provide a payment method, purchase allocation and pay $50 - your service level is set to `Advanced`
-- If you decide to pay $500 instead, your service level is set to `Pro`
-- Users with valid payment method can create **organizations**:
+1. Upon signup your service level is set to `Promo`.
+
+2. When you provide a payment method, purchase allocation and pay the minimum amount ($50) - your service level is set to `Advanced`
+
+3. If you decide to pay in excess of $500 instead, your service level is set to `Pro`
+
+4. Users with valid payment method can create **organizations**:
+
     - the first organization per user is given $10 credit to try the functionality
+
     - by paying $5,000 a user can secure 'Enterprise' service level (and rates) for his/her organization
+
     - all entities created under the organization account will be charged according to `Enterprise` service level rates
+
     - by paying $50,000 a user can secure `Enterprise-extra` service level for his/her organization
+
     - other special rates are available upon request
 
 ## Validity period
-You get to access our services for free. We only charge for what you use, however we require that you use the allocations within a certain validity period (as shown in the table above).
+
+You get to access our services free of charge, and only pay for what you use, however we require that you use the allocations within the validity period (as shown in the table above).
+
 Every 1st day of the week we run a check on each user and organization account and the account balance is set to 0 in if any of the following is true:
 
-- account value X is `<$50` and last payment happened >1 month ago
-- account value X is `$50<=X<$500` and last payment happened >3 month ago
-- account value X is `$500<=X <$5000` and last payment happened >6 month ago
-- account value X is `>$5000` and last payment happened >12 month ago
+- account value X is `< $50` and last payment happened >1 month ago
+- account value X is `$50 <= X < $500` and last payment happened >3 month ago
+- account value X is `$500 <= X < $5000` and last payment happened >6 month ago
+- account value X is `> $5000` and last payment happened >12 month ago
 
 We recommend setting automatic payment option (auto-renew) when upgrading or adding credit, so that your service level is automatically renewed after validity period is over.
 
-## Base rate
-The price above refers to the base rate for each service level. You can further control how quickly your calculations are finished by using submission queues.
+<div class="warning">
+<b><u>Unused credits</u></b>: all unused credits automatically roll over into the next validity period.
+</div>
 
 ## Queue-based pricing
+
 Detailed description on submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks).
 
-Debug queue is charged at `2x` the [base rate](/billing/accounts-and-billing#pricing.md), on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base.
+Debug queue is charged at `2x` the base rate shown above, on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base.
 
 ## Increasing Quota
 
-You can purchase extra storage to increase the limits beyond the default value for your service level at $0.2 per Gb per month. Thus, 100Gb of extra storage would cost $20 per calendar month. Contact us at support@exabyte.io for more details.
+You can purchase extra storage to increase the limits beyond the default value for your service level at `$0.2` per GB per month. Thus, 100GB of extra storage would cost $20 per calendar month.
 
 ## Changing Service Level
-You can secure better compute costs and other perks by optimising the service level to suit your needs, [Click here for a guide on upgrading your service level](upgrade-service-level.md)
+
+You can secure better compute costs and other benefits by optimising the service level to suit your needs, [Click here to learn how to upgrade your service level](upgrade-service-level.md)
+
+Service Level page is located under the Account link inside righ-hand sidebar. This page shows details about your current balance, storage quota and service level. Other service levels are also shown for comparison. Your current service level is dimmed out. From this page you can:
+
+1. Click on Add Credit to add funds to your account balance
+2. Click on Add Storage to increase your storage quota
+3. If you wish to do so, you can upgrade your Service Level by clicking Upgrade.
+
+![Exabyte.io Registration Form](/images/UserServiceLevel.png "User Service Level")
+
