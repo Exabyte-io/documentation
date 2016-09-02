@@ -6,7 +6,7 @@ Service levels define the price per the amount of compute you consume while usin
 
 ## Service levels comparison
 
-Below is a quick overview of our service levels:
+Below is a quick comparison of our service levels:
 
 | Feature/Plan             |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-extra         |
 | -------------            |:----------- |:-------------      |:-------------      |:-------------      |:-------------             |
@@ -21,9 +21,8 @@ Below is a quick overview of our service levels:
 | support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal   |
 | command line access      |  -          | -                  | +                  | +                  | +                         |
 
-<div class="warning">
-<b><u>Base rate</u></b>: the price above refers to the base rate for each service level. You can further control how quickly your calculations are finished by varying submission queues.
-</div>
+!!! note "Base rate"
+    The price above refers to the base rate for each service level. You can further control how quickly your calculations are finished by varying submission queues.
 
 ## How service levels are set
 
@@ -64,19 +63,22 @@ Every 1st day of the week we run a check on each user and organization account a
 
 We recommend setting automatic payment option (auto-renew) when upgrading or adding credit, so that your service level is automatically renewed after validity period is over.
 
-<div class="warning">
-<b><u>Unused credits</u></b>: all unused credits automatically roll over into the next validity period.
-</div>
+!!! tip "Unused credits"
+    All unused credits automatically roll over into the next validity period.
 
 ## Queue-based pricing
 
-Detailed description of submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks).
+Detailed description of submission queues is available [elsewhere](../compute/queues.md). In brief, there are three types: debug (for short calculations with very quick turnaround), on-demand (for most production runs) and saving (for lower priority tasks). Charge factors for each queue types wrt the base price are shown below
 
-Debug queue is charged at `2x` the base rate shown above, on-demand queues are charged at `1x` the base rate and saving queues are charged at `0.2x` the base. More information available [here](increase-quota.md).
+|Queue type| Charge factor
+|:---------|:------------
+|Debug     | 2.0
+|On-demand | 1.0
+|Saving    | 0.2
 
 ## Increasing Quota
 
-You can purchase extra storage to increase the limits beyond the default value for your service level at `$0.2` per GB per month. Thus, 100GB of extra storage would cost $20 per calendar month.
+You can purchase extra storage to increase the limits beyond the default value for your service level at $0.2 per GB per month. Thus, 100GB of extra storage would cost $20 per calendar month. More information available [here](increase-quota.md).
 
 ## Changing Service Level
 

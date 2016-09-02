@@ -13,6 +13,7 @@ extra:
     preload_javascript:
         - preload.js
 markdown_extensions:
+    - admonition
     - toc:
         permalink: true
 pages:
