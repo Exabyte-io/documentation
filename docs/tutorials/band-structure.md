@@ -1,5 +1,5 @@
 <!-- TODO by MH -->
-How to calculate bandstructure of Si
+How to calculate bandstructure of Si (in more details than getting-started/run-first-simulation.md)
 
 - create job in web app
 - choose workflow
