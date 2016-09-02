@@ -1,8 +1,8 @@
 site_name: exabyte.io documentation
 theme_dir: exabyte_theme
 extra_css:
-    - app.css
     - extra.css
+    - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
 extra_javascript:
     - extra.js
 site_favicon: /img/favicon.ico
@@ -13,6 +13,7 @@ extra:
     preload_javascript:
         - preload.js
 markdown_extensions:
+    - admonition
     - toc:
         permalink: true
 pages:
@@ -50,6 +51,7 @@ pages:
     - Sharing & Collaboration:
         - Organizations:        collaboration/organizations.md
         - Organizations:        collaboration/create-organization.md
+        - Invite Friends:       collaboration/invite-friends.md
 
     - Command Line Interface:
         - Overview:             cli/overview.md
@@ -78,16 +80,13 @@ pages:
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
         - Billing and Payments:         billing/billing-and-payments.md
-            # Include:
-            # - Add payment method:         add-card-and-credit.md
-            # - Increase account balance:   increase-balance.md
         - Pricing and Service Levels:   billing/pricing-and-service-levels.md
-            # Include:
-            # - Adjust service level:       adjust-service-level.md
         - Storage Pricing:              billing/storage-quota.md
-            # Include:
-            # - Check balance & quota:      check-balance-quota.md
-            # - Increase quota:             increase-quota.md
+        - Add payment method:           billing/add-credit-card.md
+        - Check balance & quota:        billing/check-balance-quota.md
+        - Increase account balance:     billing/increase-balance.md
+        - Increase quota:               billing/increase-quota.md
+        - Upgrade Service Level:        billing/upgrade-service-level.md
 
     - Security:
         - Data Security in transfer:    security/data-security-in-transfer.md
