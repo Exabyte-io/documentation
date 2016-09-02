@@ -50,3 +50,20 @@ sh ./scripts/upload_images.sh
 Do not push images to this repository.
 
 > **NOTE**: files named with verbs (eg. create-organization.md) are meant to contain step-by-step tutorials with visuals, files named with nouns (eg. advanced-characteristics.md) are meant to contain 'static' and more in-depth explanation of the terms with minimum visuals.
+
+# Example elements
+
+There are multiple [admonition](https://pythonhosted.org/Markdown/extensions/admonition.html) classes: tip (green), warning (orange), error (red), note (blue):
+
+```txt
+!!! tip "Unused credits"
+    All unused credits automatically roll over into the next validity period.
+```
+
+is rendered into:
+
+<div class="tip">
+    <p class="first admonition-title">Unused credits</p>
+    <p class="last">All unused credits automatically roll over into the next validity period.</p>
+</div>
+

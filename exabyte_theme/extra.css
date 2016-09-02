@@ -267,3 +267,14 @@ ul.subnav li.toctree-l1 {
 .text-muted {
     color: #5e5e5e;
 }
+
+/* --------------------------------------------------------- *
+ *                  BREADCRUMBS
+ * --------------------------------------------------------- */
+.wy-breadcrumbs {
+    font-size: 24px;
+    padding: 5px;
+}
+.wy-breadcrumbs li:nth-last-of-type(2) {
+    font-weight: 600;
+}
