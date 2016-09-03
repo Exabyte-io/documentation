@@ -8,7 +8,7 @@ Charges page lists all charges related to compute costs as well as other charges
 
 ## Payments
 
-The Payments page lists all of the times you have credited your balance. You can click view receipts by clicking on the payment amount (in the first column) or the icon in the receipt column. Add credit to your account by clicking the large Plus icon. Click [here](/billing/increase-balance.md) for more details.
+The Payments page lists all of the times you have credited your balance. You can click view receipts by clicking on the payment amount (in the first column) or the icon in the receipt column <i class="zmdi zmdi-file-text"></i>. Add credit to your account by clicking the large Plus icon <i class="zmdi zmdi-plus-circle"></i>. Click [here](/billing/increase-balance.md) for more details.
 
 ![Exabyte Registration Form](/images/Payments.png "Payments")
 
