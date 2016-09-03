@@ -35,24 +35,24 @@ Screenshot below shows an example page, with the header bar and the main content
 
 ## Project Navigation (left sidebar)
 
-Clicking on the Left Hand Menu Icon (top left) will open the Project and File Navigator
+Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> will open the Project and File Navigator
 
 ![Projects and Files Navigation](../images/LeftNavigation.png "Projects and Files Navigation")
 
 
 | Menu Item                                         | Description
-| :-------------                                    |:-------------
+| :---------------------------                      |:-------------
 | Compute Load                                      | Compute load shows in a simple indicator of how busy the compute nodes are. E are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
-| <i class="zmdi zmdi-view-dashboard zmdi-hc-border"></i> [Dashboard](ui-overview.md#dashboard)         | Dashboard highlights important datapoints and files of recent activity
-| <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
-| <i class="zmdi zmdi-folder zmdi-hc-border"></i> [Projects](ui-overview.md#projects)           | Shows your list of projects
-| <i class="zmdi zmdi-file zmdi-hc-border"></i> [Jobs](ui-overview.md#jobs)                   | Shows your list of jobs
-| <i class="zmdi zmdi-chart zmdi-hc-border"></i> [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
-| <i class="zmdi zmdi-widgets zmdi-hc-border"></i> [Materials](ui-overview.md#materials)         | Shows your list of materials
-| <i class="zmdi zmdi-account zmdi-hc-border"></i> Users                                         | Shows a list of public users of Exabyte
-| <i class="zmdi zmdi-globe-alt zmdi-hc-border"></i> Organizations                                 | Shows a list of public organizations in Exabyte
-| <i class="zmdi zmdi-comments zmdi-hc-border"></i> Forum                                         | Discuss issues with other users and Exabyte.io staff
-| <i class="zmdi zmdi-file zmdi-hc-border"></i> Documentation                                 | A link to this documentation is always here
+| <i class="zmdi zmdi-view-dashboard"></i> &nbsp; [Dashboard](ui-overview.md#dashboard)         | Dashboard highlights important datapoints and files of recent activity
+| <i class="zmdi zmdi-file-plus"></i> &nbsp; [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
+| <i class="zmdi zmdi-folder"></i> &nbsp; [Projects](ui-overview.md#projects)           | Shows your list of projects
+| <i class="zmdi zmdi-file"></i> &nbsp; [Jobs](ui-overview.md#jobs)                   | Shows your list of jobs
+| <i class="zmdi zmdi-chart"></i> &nbsp; [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
+| <i class="zmdi zmdi-widgets"></i> &nbsp; [Materials](ui-overview.md#materials)         | Shows your list of materials
+| <i class="zmdi zmdi-account"></i> &nbsp; Users                                         | Shows a list of public users of Exabyte
+| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Shows a list of public organizations in Exabyte
+| <i class="zmdi zmdi-comments"></i> &nbsp; Forum                                         | Discuss issues with other users and Exabyte.io staff
+| <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation is always here
 
 ## Account Navigation (right sidebar)
 
