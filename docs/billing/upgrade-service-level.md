@@ -4,11 +4,11 @@ Payments are linked to service levels. Higher payment amounts trigger greater le
 
 ## Open your Account page
 
-Open the Account navigation by clicking on your account profile card in the header, then select the **Account** menu item.
+Open the Account navigation by clicking on your account profile card in the header, then select the <i class="zmdi zmdi-settings zmdi-hc-border"></i> **Account** menu item.
 
 ## Open Service Level tab
 
-From your account page click on the Service Level tab.
+From your account page click on the <i class="zmdi zmdi-layers zmdi-hc-border"></i> Service Level tab.
 
 ![Service Levels](/images/UserServiceLevel.png "Service Levels")
 
@@ -18,4 +18,4 @@ Below the account balance and storage quota widgets are listed the Service Level
 
 ## Make the payment to activate the service
 
-In the same way as adding credit, you can select Auto-renew, in order to safeguard this level of service before the validity period expires. Click Confirm to make the payment and activate your new service level.
+In the same way as adding credit, you can select **Auto-renew**, in order to safeguard this level of service before the validity period expires. Click **Confirm** to make the payment and activate your new service level.
