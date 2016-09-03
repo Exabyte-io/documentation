@@ -40,19 +40,19 @@ Clicking on the Left Hand Menu Icon (top left) will open the Project and File Na
 ![Projects and Files Navigation](../images/LeftNavigation.png "Projects and Files Navigation")
 
 
-| Menu Item                                     | Description
-| :-------------                                 |:-------------
-| Compute Load                                  | Compute load shows in a simple indicator of how busy the compute nodes are. E are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
-| [Dashboard](ui-overview.md#dashboard)         | Dashboard highlights important datapoints and files of recent activity
-| [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
-| [Projects](ui-overview.md#projects)           | Shows your list of projects
-| [Jobs](ui-overview.md#jobs)                   | Shows your list of jobs
-| [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
-| [Materials](ui-overview.md#materials)         | Shows your list of materials
-| Users                                         | Shows a list of public users of Exabyte
-| Organizations                                 | Shows a list of public organizations in Exabyte
-| Forum                                         | Discuss issues with other users and Exabyte.io staff
-| Documentation                                 | A link to this documentation is always here
+| Menu Item                                         | Description
+| :-------------                                    |:-------------
+| Compute Load                                      | Compute load shows in a simple indicator of how busy the compute nodes are. E are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
+| <i class="zmdi zmdi-view-dashboard zmdi-hc-border"></i> [Dashboard](ui-overview.md#dashboard)         | Dashboard highlights important datapoints and files of recent activity
+| <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
+| <i class="zmdi zmdi-folder zmdi-hc-border"></i> [Projects](ui-overview.md#projects)           | Shows your list of projects
+| <i class="zmdi zmdi-file zmdi-hc-border"></i> [Jobs](ui-overview.md#jobs)                   | Shows your list of jobs
+| <i class="zmdi zmdi-chart zmdi-hc-border"></i> [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
+| <i class="zmdi zmdi-widgets zmdi-hc-border"></i> [Materials](ui-overview.md#materials)         | Shows your list of materials
+| <i class="zmdi zmdi-account zmdi-hc-border"></i> Users                                         | Shows a list of public users of Exabyte
+| <i class="zmdi zmdi-globe-alt zmdi-hc-border"></i> Organizations                                 | Shows a list of public organizations in Exabyte
+| <i class="zmdi zmdi-comments zmdi-hc-border"></i> Forum                                         | Discuss issues with other users and Exabyte.io staff
+| <i class="zmdi zmdi-file zmdi-hc-border"></i> Documentation                                 | A link to this documentation is always here
 
 ## Account Navigation (right sidebar)
 
@@ -61,16 +61,16 @@ Clicking on your Profile card (header top right) will open the Account navigatio
 ![Account and Billing Navigation](../images/RightNavigation.png "Account")
 
 | Menu Item                                                               | Description
-|:-----------------------------------------------------------------------:|:-------------
+|:-----------------------------------------------------------------------   |:-------------
 | Account Switcher                                                        | Enables switching between personal and organizational accounts. Opens in a small window showing your active accounts. Clicking on one triggers switch to that account.
 | Quota, Queue, Service Level                                             | This section shows a quick snapshot of the status of your quota: Storage, job queue breakdown and your service level. You can easily upgrade your service level, to obtain more compute power, simply by clicking the upgrade button. If you want to compare service levels, you will find more information in the Account menu, below.
 | Account Balance                                                         | A snapshot of your current balance, quickly credit the balance using the Apply Credit Button
-| [Account](../billing/settings-and-profile.md)                           | A link to [your account](../billing/settings-and-profile) page. In here you will find your user profile, your preferences and service level.
-| [Billings & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
-| Terminal                                                                | Access to an in-browser CLI terminal thorugh which you can directly access your cloud account.
-| Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
-| Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
-| Logout                                                                  | Secure logout
+| <i class="zmdi zmdi-settings zmdi-hc-border"></i> [Account](../billing/settings-and-profile.md)                           | A link to [your account](../billing/settings-and-profile) page. In here you will find your user profile, your preferences and service level.
+| <i class="zmdi zmdi-card zmdi-hc-border"></i> [Billings & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
+| <i class="zmdi zmdi-code zmdi-hc-border"></i> Terminal                                                                | Access to an in-browser CLI terminal thorugh which you can directly access your cloud account.
+| <i class="zmdi zmdi-laptop zmdi-hc-border"></i> Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
+| <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
+| <i class="zmdi zmdi-power zmdi-hc-border"></i> Logout                                                                  | Secure logout
 
 ## User Dashboard
 
@@ -104,7 +104,7 @@ Jobs summary widget summarizes the total number of jobs run during this same per
 
 ## Create Job
 
-Create Job shortcut link takes you to the simulation wizard where you can quickly create and run a simulation. By default the job is saved in your [default project](XXX.md). <!-- TODO: add link --> First tab is the Material Design tab. Material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
+Create Job shortcut link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the simulation wizard where you can quickly create and run a simulation. By default the job is saved in your [default project](XXX.md). <!-- TODO: add link --> First tab is the Material Design tab. Material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
 
 ![Material Editor](../images/MaterialEditor.png "Material Editor")
 
@@ -120,8 +120,8 @@ Jobs page is a complete list of *all* the jobs you have run, regardless of proje
 
 - Click on a job name to quickly open it,
 - Preview job results by clicking the icon in the preview column,
-- Clicking on the three vertical dots icon will open a submenu from where you can Run, Terminate, Clone, Delete or Open the job,
-- Click on the Plus icon (top right) to create a new job,
+- Clicking on the three vertical dots icon <i class="zmdi zmdi-more-vert zmdi-hc-border"></i> will open a submenu from where you can Run <i class="zmdi zmdi-play zmdi-hc-border"></i>, Terminate <i class="zmdi zmdi-stop zmdi-hc-border"></i>, Clone <i class="zmdi zmdi-copy zmdi-hc-border"></i>, Delete <i class="zmdi zmdi-delete zmdi-hc-border"></i> or Open <i class="zmdi zmdi-chevron-right zmdi-hc-border"></i> the job,
+- Click on the Plus icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> to create a new job,
 - Use the checkboxes to select multiple jobs, and the toolbar icons (top right) to run actions on all the jobs selected. eg. For running multiple jobs at once.
 
 ![Jobs](../images/Jobs.png "Jobs")
@@ -144,10 +144,10 @@ Analytics page allows you to select multiple materials and compare the results o
 
 A list of all the materials you have imported, created or uploaded into your account. Principle actions on this screen:
 
-- Use the cloud icon with the down arrow to import materials into your account from cloud services
-- Use the cloud icon with the up arrow to upload materials from your computer to your account
-- Use the large Plus icon button to create a new material
-- Use the search icon for a simple search mechanism to filter the materials list once it become large.
+- Use the cloud icon with the down arrow <i class="zmdi zmdi-cloud-download zmdi-hc-border"></i> to import materials into your account from cloud services
+- Use the cloud icon with the up arrow <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> to upload materials from your computer to your account
+- Use the large Plus icon button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> to create a new material
+- Use the search icon <i class="zmdi zmdi-search zmdi-hc-border"></i> for a simple search mechanism to filter the materials list once it become large.
 
 ![Materials](../images/Materials.png "Materials")
 
@@ -163,15 +163,15 @@ Below the account switcher is a snapshot of your account (or that of an organiza
 
 Account page has three tabs:
 
-+ Bio shows your public profile information and recent work
-+ Preferences holds your account preferences such as Tour, Cloning suffixes and other tools
-+ Service Level shows details about your current balance, storage quota and Service Level. See the [Accounts & Billings](/getting-started/billing-overview.md) section for more details.
++ Bio <i class="zmdi zmdi-eye zmdi-hc-border"></i> shows your public profile information and recent work
++ Preferences <i class="zmdi zmdi-settings zmdi-hc-border"></i> holds your account preferences such as Tour, Cloning suffixes and other tools
++ Service Level <i class="zmdi zmdi-layers zmdi-hc-border"></i> shows details about your current balance, storage quota and Service Level. See the [Accounts & Billings](/billing/settings-and-profile.md) section for more details.
 
 ![Account](../images/Account.png "Account")
 
 ## Billing
 
-Billings link takes you to the Billing page which shows your account Charges, Payments and Payment Methods. [Click here to find more details](/billing/billing-and-payments.md).
+Billings link takes you to the Billing page which shows your account Charges <i class="zmdi zmdi-file-text zmdi-hc-border"></i>, Payments <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> and Payment Methods <i class="zmdi zmdi-card zmdi-hc-border"></i>. [Click here to find more details](/billing/billing-and-payments.md).
 
 ![Billing](../images/Billing.png "Billing")
 
