@@ -286,3 +286,11 @@ ul.subnav li.toctree-l1 {
 .wy-alert-title, .rst-content .admonition-title, .rst-content .note .admonition-title {
     background-color: #3161A8;
 }
+
+.wy-alert-title, .rst-content .admonition-title, .rst-content .tip .admonition-title {
+    background-color: #466d60;
+}
+
+.rst-content .tip {
+    background:#e5fffa;
+}
