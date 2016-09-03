@@ -245,16 +245,17 @@ p + pre, ul + pre {
     cursor: pointer;
 }
 
-ul.subnav.active .fa {
+ul.subnav.active .zmdi {
     color: white;
-    margin: 0px 5px;
 }
 
 /* Font awesome icon */
-ul.subnav .fa {
-    margin: 0px 5px;
-    font-size: 10px;
+ul.subnav .zmdi {
+    margin: 0px 10px;
+    font-size: 14px;
+    color: gray;
     display: none;
+
 }
 
 ul.subnav li.toctree-l1 {
@@ -277,4 +278,19 @@ ul.subnav li.toctree-l1 {
 }
 .wy-breadcrumbs li:nth-last-of-type(2) {
     font-weight: 600;
+}
+
+/* --------------------------------------------------------- *
+ *                  NOTES
+ * --------------------------------------------------------- */
+.wy-alert-title, .rst-content .admonition-title, .rst-content .note .admonition-title {
+    background-color: #3161A8;
+}
+
+.wy-alert-title, .rst-content .admonition-title, .rst-content .tip .admonition-title {
+    background-color: #466d60;
+}
+
+.rst-content .tip {
+    background:#ddf4ef;
 }
