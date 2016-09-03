@@ -65,12 +65,12 @@ Clicking on your Profile card (header top right) will open the Account navigatio
 | Account Switcher                                                        | Enables switching between personal and organizational accounts. Opens in a small window showing your active accounts. Clicking on one triggers switch to that account.
 | Quota, Queue, Service Level                                             | This section shows a quick snapshot of the status of your quota: Storage, job queue breakdown and your service level. You can easily upgrade your service level, to obtain more compute power, simply by clicking the upgrade button. If you want to compare service levels, you will find more information in the Account menu, below.
 | Account Balance                                                         | A snapshot of your current balance, quickly credit the balance using the Apply Credit Button
-| <i class="zmdi zmdi-settings zmdi-hc-border"></i> [Account](../billing/settings-and-profile.md)                           | A link to [your account](../billing/settings-and-profile) page. In here you will find your user profile, your preferences and service level.
-| <i class="zmdi zmdi-card zmdi-hc-border"></i> [Billings & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
-| <i class="zmdi zmdi-code zmdi-hc-border"></i> Terminal                                                                | Access to an in-browser CLI terminal thorugh which you can directly access your cloud account.
-| <i class="zmdi zmdi-laptop zmdi-hc-border"></i> Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
-| <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
-| <i class="zmdi zmdi-power zmdi-hc-border"></i> Logout                                                                  | Secure logout
+| <i class="zmdi zmdi-settings"></i> &nbsp; [Account](../billing/settings-and-profile.md)                           | A link to [your account](../billing/settings-and-profile) page. In here you will find your user profile, your preferences and service level.
+| <i class="zmdi zmdi-card"></i> &nbsp; [Billings & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
+| <i class="zmdi zmdi-code"></i> &nbsp; Terminal                                                                | Access to an in-browser CLI terminal thorugh which you can directly access your cloud account.
+| <i class="zmdi zmdi-laptop"></i> &nbsp; Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
+| <i class="zmdi zmdi-accounts-add"></i> &nbsp; Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
+| <i class="zmdi zmdi-power"></i> &nbsp; Logout                                                                  | Secure logout
 
 ## User Dashboard
 
