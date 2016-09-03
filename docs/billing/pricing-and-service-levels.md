@@ -63,7 +63,7 @@ Every 1st day of the week we run a check on each user and organization account a
 
 We recommend setting automatic payment option (auto-renew) when upgrading or adding credit, so that your service level is automatically renewed after validity period is over.
 
-!!! note "Unused credits"
+!!! tip "Unused credits"
     All unused credits automatically roll over into the next validity period.
 
 ## Queue-based pricing
