@@ -2,7 +2,7 @@
 
 This page shows how you can check your current balance and storage quota. There are two ways to do so: in your Account service page, and also in the right hand sidebar.
 
-## Open the right hand sidebar
+## Open right hand sidebar
 
 Click on your profile card in the top right of the header to open the Account right hand sidebar.
 
