@@ -36,7 +36,10 @@ img {
     border-radius: 5px;
     border: 1px solid #AAA;
     padding: 2px;
-    /*max-width: 600px;*/
+    max-width: 800px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 /* --------------------------------------------------------- *
