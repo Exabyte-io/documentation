@@ -1,3 +1,3 @@
-<!-- TODO by MM -->
+## Storage quota
 
-Explain what storage quota is and how we calculate it.
+There is a limit on the amount of data in Gigabyte you can store on our platform which depends on your [service level](pricing-and-service-levels/#service-levels-comparison). You are only charged for the limits beyond the default value for your service level. When you increase the storage quota you will be charged for the extra limit beyond the default value at the beginning of every 30 days since your quota increase is approved. Please note that if you increase the limit once more during the previous charging period, for example 20 days after the prior increase, your charing period is reset and a new one is started.

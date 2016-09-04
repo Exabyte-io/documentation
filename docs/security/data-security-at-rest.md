@@ -1,1 +1,3 @@
-<!-- TODO by MM -->
+## Data at rest encryption
+
+At rest encryption refers to the encryption of data that is not moving. This data is usually stored on hardware such as local disk, SAN, NAS, or other portable storage devices. Regardless of how the data gets there, as long as it remains on that device and is not transferred or transmitted over a network, it is considered at rest data. There are different methodologies to encrypt at rest data. The most common one is disk encryption. Disk encryption is a method where all data on a particular physical disk is encrypted. We use AES 256 bits encryption algorithm to encrypt your data while is at rest. 
