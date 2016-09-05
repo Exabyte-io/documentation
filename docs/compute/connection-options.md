@@ -1,7 +1,8 @@
-There are 3 ways you can connect to our compute platform, CLI via ssh terminal, CLI via web portal and remote desktop via web portal.
+There are 3 ways you can connect to our compute platform, command-line interface (CLI) via ssh terminal, command-line interface via web portal and remote desktop via web portal.
 
 ## CLI via ssh terminal
-In order to use CLI via ssh terminal you need to generate ssh keys and upload your public key to our compute platform. For more information please visit [login via command line](../cli/login/#login-via-command-line). When you have ssh keys in place you can use a ssh terminal or Putty for windows to connect to the compute platform.
+
+In order to use CLI via ssh terminal you need to generate ssh keys and upload your public key to our compute platform. For more information please visit [login via command line](../cli/login/#login-via-command-line) <!-- TODO: fix this link -->. When you have ssh keys in place you can use a ssh terminal or Putty for windows to connect to the compute platform.
 
 ```
 % ssh steve@bohr.exabyte.io
@@ -50,11 +51,11 @@ In order to use CLI via ssh terminal you need to generate ssh keys and upload yo
 ------------------------------------------------------------------
 
 [steve@bohr.exabyte.io:~]$
-``` 
+```
 
-## CLI via web portal
+## CLI via web browser
 
- Web terminal is an alternative for users who want to use a web-based SSH terminal or are behind a firewall that blocks SSH connections. We use [Apache Guacamole](https://guacamole.incubator.apache.org/), a clientless remote desktop gateway that supports standard protocols like VNC, RDP, and SSH. Guacamole SSH terminal is accessible from the [right sidebar](../getting-started/ui-overview/#account-navigation-right-sidebar) of the web application.
+Web terminal is an alternative for users who want to use a web-based SSH terminal or are behind a firewall that blocks SSH connections. We use [Apache Guacamole](https://guacamole.incubator.apache.org/), a clientless remote desktop gateway that supports standard protocols like VNC, RDP, and SSH. In-browser SSH terminal is accessible from the [right sidebar](../getting-started/ui-overview/#account-navigation-right-sidebar) of the web application.
 
 ![Guacamole SSH Terminal Sidebar](../images/GuacamoleSSHTerminalSidebar.png "Guacamole SSH Terminal Sidebar")
 
@@ -62,10 +63,10 @@ Guacamole SSH terminal covers the whole page. You need to click on the close bot
 
 ![Guacamole SSH Terminal](../images/GuacamoleSSHTerminal.png "Guacamole SSH Terminal")
 
-### Guacamole menu
-The Guacamole menu is a sidebar which is hidden until explicitly shown. On a desktop or other device which has a hardware keyboard, you can show this menu by pressing Ctrl+Alt+Shift. If you are using a mobile or touchscreen device that lacks a keyboard, you can also show the menu by swiping right from the left edge of the screen. To hide the menu, you press Ctrl+Alt+Shift again or swipe left across the screen. 
+### Terminal menu
+The Termila menu is a sidebar which is hidden until explicitly shown. On a desktop or other device which has a hardware keyboard, you can show this menu by pressing Ctrl+Alt+Shift. If you are using a mobile or touchscreen device that lacks a keyboard, you can also show the menu by swiping right from the left edge of the screen. To hide the menu, you press Ctrl+Alt+Shift again or swipe left across the screen.
 
-The Guacamole menu provides options for:
+The menu provides options for:
 
 * Navigating back to the home screen
 * Reading from (and writing to) the clipboard of the remote desktop
@@ -74,11 +75,14 @@ The Guacamole menu provides options for:
 * Zooming in and out of the remote display
 * Disconnecting from the current connection entirely
 
-For more information please visit [Guacamole Manual](https://guacamole.incubator.apache.org/doc/gug/using-guacamole.html).
+For more information please visit [this manual](https://guacamole.incubator.apache.org/doc/gug/using-guacamole.html).
 
 ![Guacamole SSH Terminal Menu](../images/GuacamoleSSHTerminalMenu.png "Guacamole SSH Terminal Menu")
 
 ## Remote desktop via web portal:
+
 Remote desktop on the [right sidebar](../getting-started/ui-overview/#account-navigation-right-sidebar) provides you with a way to connect to our platform visually from the web application. This type of connection is recommended to users who are not familiar with SSH terminal or want to run GUI-based applications.
+
+<!-- TODO: adjust desktop background with exabyte.io visual and create another screenshot -->
 
 ![Guacamole Remote Desktop](../images/GuacamoleRemoteDesktop.png "Guacamole Remote Desktop")
