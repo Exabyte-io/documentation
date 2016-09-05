@@ -15,7 +15,7 @@ There are three main entities that we deal with:
 - **Model**: an entity that contains scientifically valuable information about the approximations that can be used to calculate characteristic properties of a material; contains multiple *Methods* or numerical implementation of the Model
 
     !!! note "Example Model and Method"
-        Example will be here
+        Density Functional Theory (DFT) [[1](#links)] is an example of a model, and pseudopotential planewave method [[2](#links)] is an example method. Besides planewave pseudopotential method, DFT can be implemented using local orbitals [[3](#links)] and/or full-potential calculations [[4](#links)].
 
 - **Compute**: or "compute platform" an entity that contains information about the computation that makes the application of the Model (and subsequently Method) possible
 
@@ -28,7 +28,7 @@ More explanation follows.
 
 Descriptive properties has information required to uniquely define a material in a way that prevent duplicates. To identify a material one must know its geometrical and elemental composition. Every material can be periodic in either 3D (crystals), 2D (surface/film), 1D (polymer) or non-periodic (molecule, amorphous solids). For the purpose of this explanation, we will consider 3D periodic case only, as all the others can be approximated by it in practice.
 
-Every 3D periodic structure has a minimal unit of repetition, which is called a Unit cell [[1](#links)]. Unit cell is repeated on a crystal lattice, or simply **lattice**, that is periodic. Material's composition inside the unit cell is called crystal basis, or simply **basis**. Thus, the information about lattice and basis fully describes a material.
+Every 3D periodic structure has a minimal unit of repetition, which is called a Unit cell [[5](#links)]. Unit cell is repeated on a crystal lattice, or simply **lattice**, that is periodic. Material's composition inside the unit cell is called crystal basis, or simply **basis**. Thus, the information about lattice and basis fully describes a material.
 
 !!! note "Note about symmetry"
     Since multiple crystal lattice and basis combinations can represent the same material (eg. primitive vs conventional cells, translations and rotations or basis coordinates) we let users store arbitrary representation at their will, but only store one "standardized" entry inside [Materials Bank](#materials-bank)
@@ -71,8 +71,7 @@ In order to better understand the difference between Model, Method and Simulatio
 
 4. The plane could take multiple routes and reach multiple intermediate destinations along the way, by analogy a method can be realized through multiple **workflows** that contain specifically arranged **units**
 
-!!! note "Nested properties"
-    Model, Method, Workflow and Units are nested properties, meaning that the information about units is stored within workflow, workflow in turn is stored within method and method is contained inside a model.
+Model, Method, Workflow and Units are nested properties, meaning that the information about units is stored within workflow, workflow in turn is stored within method and method is contained inside a model.
 
 # Compute
 
@@ -107,4 +106,8 @@ Jobs are organized into **Projects** for convenience. One can think about projec
 
 ## Links
 
-[1] [Unit Cell](https://en.wikipedia.org/wiki/Crystal_structure)
+1. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+1. [Planewave pseudopotential method, presentation](https://www.archer.ac.uk/training/course-material/2014/04/PMMP_UCL/Slides/castep_1.pdf)
+1. [Basis sets in quantum chemistry, presentation](http://vergil.chemistry.gatech.edu/courses/chem6485/pdf/basis-sets.pdf)
+1. [Full-potential local orbital approach, presentation](http://www.fplo.de/download/Richter-1.pdf)
+1. [Crystal Structure, Wikipedia](https://en.wikipedia.org/wiki/Crystal_structure)
