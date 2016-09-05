@@ -1,6 +1,10 @@
 <!-- by MM -->
 
-This page describes how to set up compute parameters for a job. It is assumed that you've already created a project and have started creating a job inside it. Job wizard has 3 main tabs, MATERIAL, WORKFLOW and COMPUTE. MATERIAL tab lets you create and save materials for future use. The default structure corresponds to Silicon in face-centered cubic configuration. We will leave it so. Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow". By default the first workflow - "Bandstructure" - is selected. One can modify the input files for each part of the calculation, available under input tabs. One can also customize the workflow by adding and deleting individual "Units" by adding and deleting the tabs containing input files. We will leave parameters at their default values here again. These steps are explained in more details in [here](https://docs.exabyte.io/tutorials/quickstart).
+This page describes how to set up compute parameters for a job. It is assumed that you've already created a project and have started creating a job inside it.
+
+## Job wizard
+
+Job wizard has 3 main tabs: MATERIAL, WORKFLOW and COMPUTE. MATERIAL tab lets you create and save materials for future use. Simulations usually have multiple steps that need to be executed in a certain order. This sequence is called a workflow and can be set up under the corresponding page "WORKFLOW". These are explained in more details in [here](https://docs.exabyte.io/tutorials/quickstart).
 
 COMPUTE tab lets you set up the compute parameters.
 
