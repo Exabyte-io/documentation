@@ -8,6 +8,15 @@ Data "at rest" refers to the encryption of data that is not moving. This data is
 
 ## How data at rest is secured
 
-There are different methodologies to encrypt at rest data. The most common one is disk encryption. Disk encryption is a method where all data on a particular physical disk is encrypted. We use AES 256 bits encryption algorithm to encrypt your data while is at rest.
+There are different methodologies to encrypt at rest data. The most common one is disk encryption. Disk encryption is a method where all data on a particular physical disk is encrypted. We use Linux Unified Key Setup-on-disk-format (or LUKS) along with AES-256 to encrypt partitions on our servers. 
 
-<!-- TODO: explain more about how the encryption works, why we chose this particular type and how users can be assured that this type of encryption provides good protection -->
+### LUKS
+
+LUKS is the standard for Linux hard disk encryption. By providing a standard on-disk-format, it does not only facilitate compatibility among distributions, but also provides secure management of multiple user passwords. In contrast to existing solution, LUKS stores all setup necessary setup information in the partition header, enabling the user to transport or migrate his data seamlessly.
+
+Why LUKS?
+
+* compatiblity via standardization,
+* secure against low entropy attacks,
+* support for multiple keys,
+* effective passphrase revocation
