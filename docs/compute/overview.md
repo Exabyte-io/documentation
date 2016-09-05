@@ -24,3 +24,11 @@ As of Mar, 2016 major compute and storage systems have:
 * 100 terabytes of memory,
 * 8 exabytes of disk storage,
 * low latency interconnect
+
+## Storage systems
+
+When as a CLI user, the following storage systems become available:
+
+- `/home`: provides each user with storage space; this is permanent storage accessible from all cluster nodes
+
+- `/share`: provides user signed up for subscription levels that support organizations with a global storage space that can be accessed by multiple users within the organization; this is permanent storage accessible from all cluster nodes
