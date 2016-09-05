@@ -1,3 +1,7 @@
+<!-- by MM -->
+
+This page explains the basics of command-line interface for batch job submission.
+
 # Batch jobs
 
 Simulation tasks submitted through command-line interface are expected to be run in "batch" mode. Batch jobs are controlled by scripts written by the user and submitted to the resource management system.
@@ -10,14 +14,13 @@ The actual execution of your parallel job, however, is handled by a special comm
 
 ## Interactive parallel jobs
 
-Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the master node (using 2-8 CPU and < 1min walltime per user) instead, and submit larger debug tasks into the debug queue.
+Interactive parallel jobs are not supported by design. Users are encouraged to prototype calculations on the login node (using 2-8 CPU with < 1min walltime per user) instead, and submit larger debug tasks into the debug queue.
 
 ## Non-interactive batch jobs
 
 Our batch system is based on the PBS model, implemented with the Moab scheduler and Torque resource manager.
 
 Typically, the user submits a batch script to the batch system. This script specifies, at the very least, how many nodes and cores the job will use, how long the job will run, and the name of the application to run.
-
 
 ## Sample Batch Scripts
 
@@ -52,7 +55,7 @@ This example explains the keywords and requests 1 node with 2 processors (cores)
 #PBS -l ppn=2
 #PBS -q D
 #PBS -j oe
-#PBS -l walltime=00:00:10:00
+#PBS -l walltime=00:10:00
 #PBS -m abe
 #PBS -M name@domain.com
 
@@ -73,7 +76,7 @@ This example requests 1 node, and 18 cores per node, for 10 minutes
 #PBS -l ppn=18
 #PBS -q OR
 #PBS -j oe
-#PBS -l walltime=00:00:10:00
+#PBS -l walltime=00:10:00
 #PBS -m abe
 #PBS -M name@domain.com
 
@@ -94,7 +97,7 @@ This example requests 4 nodes, and 8 cores per node, for 10 minutes
 #PBS -l ppn=8
 #PBS -q OF
 #PBS -j oe
-#PBS -l walltime=00:00:10:00
+#PBS -l walltime=00:10:00
 #PBS -m abe
 #PBS -M name@domain.com
 
@@ -116,7 +119,7 @@ This example requests 1 node, and 18 cores per node, for 10 minutes
 #PBS -l ppn=18
 #PBS -q SR
 #PBS -j oe
-#PBS -l walltime=00:00:10:00
+#PBS -l walltime=00:10:00
 #PBS -m abe
 #PBS -M name@domain.com
 
@@ -137,7 +140,7 @@ This example requests 4 nodes, and 8 tasks per node, for 10 minutes
 #PBS -l ppn=8
 #PBS -q SF
 #PBS -j oe
-#PBS -l walltime=00:00:10:00
+#PBS -l walltime=00:10:00
 #PBS -m abe
 #PBS -M name@domain.com
 
@@ -156,7 +159,7 @@ In order to specify a project that job belongs to and should be charged upon, a 
 Submit your batch script with `qsub` command:
 
 ```
-[steve@bohr.exabyte.io:~]$ qsub -c cluster-001 my_job.pbs 
+[steve@bohr.exabyte.io:~]$ qsub -c cluster-001 my_job.pbs
 11665.cluster-001
 ```
 
@@ -171,7 +174,8 @@ View your currently submitted jobs with `qstat` command:
 [steve@bohr.exabyte.io:~]$ qstat
 JOBID              USERNAME    QUEUE    JOBNAME    STATE    MEMORY    USEDTIME    WALLTIME      NODES    CPU
 -----------------  ----------  -------  ---------  -------  --------  ----------  ----------  -------  -----
-11665.cluster-001  steve       D        QE         C        0kb       00:00:10    00:10:00          1      1
+11665.cluster-001  steve       D        my_job     C        0kb       00:00:10    00:10:00          1      1
+11666.cluster-001  steve       OR       my_job     R        1235kb    00:00:10    00:10:00          1      1
 ```
 
 The qsub command displays the information about your job organized by its ID.
