@@ -21,7 +21,9 @@ We have multiple levels of compute:
 
 ## Resources
 
-As of Mar, 2016 major compute and storage systems have:
+As of Sep, 2016 our major compute and storage systems have:
+
+<!-- TODO by MM: move the below to a table and give breakdown by cloud provider -->
 
 * 100,000 compute cores,
 * 100 terabytes of memory,
@@ -41,6 +43,8 @@ Our resources are all hosted by top best cloud vendors, [Amazon Web Services](ht
     For customers who want to use their on-premises resources instead of cloud resources because of high security concerns, easier access and management or specific hardware and software support, we are ready to deploy our application stack on top of your private resources. Please contact us at support@exabyte.io for more information.
 
 ## Storage systems
+
+<!-- TODO: move the explanation of storage system into its own page and add in-depth description of unionFS and how multiple clusters are aggregated -->
 
 When as a CLI user, the following storage systems become available:
 
