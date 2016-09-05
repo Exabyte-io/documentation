@@ -1,3 +1,13 @@
+<!-- by MM -->
+
+<!-- TODO: add input files and structures for the materials and use cases studied -->
+
+This page contains benchmarks for three usage scenarios considered:
+
+- high-throughput calculations
+- distributed memory calculations
+- performance within one compute-node
+
 ## High-throughput scalability study
 
 ### Overview
@@ -69,16 +79,16 @@ Material: FeSe monolayer with 4 atoms
 
 ### Conclusions
 
-* VASP and QE were studied for scalability for a single material - single calculation.
-* K-point sampling based parallelization appears to be feasible and scales efficiently up to 16 nodes.
+* VASP and QE were studied for scalability for a single material - single calculation,
+* K-point sampling based parallelization appears to be feasible and scales efficiently up to 16 nodes,
 * Parallelization over the electronic bands for the cases studied shows efficient scalability up to 4 nodes for VASP, for QE an adjustment of parallelization parameters is necessary to reach efficient parallelization over electronic bands.
 
-## Cloud vendors performance comparison study
+## Cloud vendors performance comparison
 
 Exabyte.io utilizes multiple cloud vendors resources to provide users with a large scale computing infrastructure. Since Each cloud provider uses a specific type of resources, applications performance vary on different cloud vendors. We ran the same calculation on four cloud providers, AWS, Rackspace, SoftLayer and Microsoft Azure and got the following result.
 
-|Provider  |CPU                                      |Memory(GB) |Disk(GB) |Bandwidth(Gbps) |Benchmark(Second)|
-|:--------:|:---------------------------------------:|:---------:|:-------:|:--------------:|:---------------:|
+|Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps) |Runtime (sec)|
+|:---------|:---------------------------------------:|:---------:|:-------:|:--------------:|:---------------:|
 |AWS       |36 cores, Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |37.8             |
 |Azure     |16 cores, Intel Xeon E5-2673-v3, 2.40GHz |32         |256      |10              |43.5             |
 |Rackspace |32 cores, Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |49               |
