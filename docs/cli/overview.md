@@ -6,9 +6,9 @@ Advanced users can request to access our compute platform via command-line inter
 
 ## In-browser terminal and ssh terminal
 
-We provide a convenient way to connect to exabyte.io via command-line interface directly from within out web application. In order to do so you can open righ-hand sidebar and click "Terminal icon" as it is illustrated below:
+We provide a convenient way to connect to exabyte.io via command-line interface directly from within our web application. In order to do so you can open righ-hand sidebar and click "Terminal icon" as it is illustrated below:
 
-<!-- TODO: add a gif animation of opening sidebar and connecting to remote terminal session -->
+![Guacamole SSH Terminal Sidebar](../images/GuacamoleSSHTerminalSidebar.png "Guacamole SSH Terminal Sidebar")
 
 In case you prefer standard secure shell terminal over web-based terminal, we support it as well. Each user has a single password associated with their login account on the web. As a new user, you are able to upload a public ssh key directly from your profile page. This key together with your username can be used to access computational resources via command line interface.
 

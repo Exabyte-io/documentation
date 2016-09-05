@@ -1,4 +1,4 @@
-<!-- TODO by MM: revise -->
+<!-- by MM -->
 
 This page contains information about how data "in transfer" is protected at exabyte.io.
 
@@ -10,4 +10,8 @@ Protecting data "in flight" or "in transfer" involves encrypting the data stream
 
 Since the data exchange is very brief, the keys used to encrypt the frames or packets are no longer needed after the data is decrypted at the other end so they are discarded. Most common protocols used for in flight data encryption are IPsec, VPN and TLS/SSL. We use strong TLS/SSL encryption for exchanging data between all components of our application stack to make sure no one has access to your data while it leaves or enters our servers.
 
-<!-- TODO: explain more about how the encryption works, why we chose this particular type and how users can be assured that this type of encryption provides good protection -->
+### What Is SSL?
+
+SSL (Secure Sockets Layer) is a standard security technology for establishing an encrypted link between a server and a client—typically a web server (website) and a browser; or a mail server and a mail client (e.g., Outlook). SSL allows sensitive information such as credit card numbers, social security numbers, and login credentials to be transmitted securely. Normally, data sent between browsers and web servers is sent in plain text—leaving you vulnerable to eavesdropping. If an attacker is able to intercept all data being sent between a browser and a web server they can see and use that information. More specifically, SSL is a security protocol. Protocols describe how algorithms should be used; in this case, the SSL protocol determines variables of the encryption for both the link and the data being transmitted.
+
+SSL secures millions of peoples' data on the Internet every day, especially during online transactions or when transmitting confidential information. Internet users have come to associate their online security with the lock icon that comes with an SSL-secured website or green address bar that comes with an extended validation SSL-secured website. SSL-secured websites also begin with https rather than http.
