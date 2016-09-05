@@ -6,6 +6,13 @@ This page contains benchmarks for three usage scenarios considered:
 - distributed memory calculations
 - performance within one compute-node
 
+<!-- TODO by MM: move long content sections into expandable blocks like below -->
+
+<details>
+    <summary>Expandable section</summary>
+    Section content
+</details>
+
 ## High-throughput scalability study
 
 ### Overview
@@ -448,7 +455,7 @@ Gamma
   pseudo_dir = './'
   outdir = './out/'
 /
- 
+
 &SYSTEM
   ibrav = 8,
   celldm(1) = 38.7583,
@@ -461,26 +468,26 @@ Gamma
   ecutrho = 100.0,
   occupations='smearing', smearing='marzari-vanderbilt', degauss=0.05
 /
- 
+
 &ELECTRONS
     diagonalization='david'
     mixing_beta = 0.7
 /
- 
+
 &IONS
   ion_dynamics = 'none',
 /
- 
+
 &CELL
   cell_dynamics = 'none',
 /
- 
+
 ATOMIC_SPECIES
  AU  196.96  Au.pbe-nd-van.UPF
- 
+
 K_POINTS (automatic)
 2 2 1 1 1 0
- 
+
 ATOMIC_POSITIONS (angstrom)
 AU       29.285000       40.578999        7.173000
 AU       29.285000       35.511002        7.173000
@@ -649,7 +656,7 @@ Aluminum surface containing 112 atoms
  cell_dynamics = 'bfgs'
  cell_dofree = 'xy'
 /
- 
+
 ATOMIC_SPECIES
   Fe1 55.845    fe_pbe_gbrv_1.5.upf
   Fe2 55.845    fe_pbe_gbrv_1.5.upf
@@ -679,6 +686,9 @@ FeSe monolayer with 4 atoms
 ## Case studies
 
 For more information about our case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [here](https://exabyte.io/#case-study).
+
+
+<!-- TODO by MM: the content below seems to be deserving its own page that should include description of the input files used for this benchmark, number of CPUs and such. Right now it's not written like technical documentation, more like a blog post. -->
 
 ## Cloud vendors performance comparison
 
