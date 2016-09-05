@@ -26,6 +26,10 @@ Typically, the user submits a batch script to the batch system. This script spec
 
 Sample batch scripts for the available [queue types]() are given below. A common convention is to append the suffix ".pbs" or ".job" or ".sh" to batch scripts.
 
+!!! tip "Template job scripts"
+    Inside your home directory there is a link to "job-script-template" directory that contains template job scripts for different applications. You can copy template scripts into your job directory and use it after adjusting according to your taste.
+
+
 ### Debug queue (D)
 
 This example explains the keywords and requests 1 node with 2 processors (cores) for 10 minutes:
