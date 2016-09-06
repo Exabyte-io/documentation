@@ -80,15 +80,16 @@ ffmpeg -i $INPUT -ss ${BEGIN} -c copy -t ${DURATION} ${TIMESTAMP}_${INPUT}
 
 # Create images from video
 mkdir $TMP_DIR
-ffmpeg -i ${TIMESTAMP}_${INPUT} -vf scale=1280:-1 -r 10 ${TMP_DIR}/ffout%3d.png
+#  -r option affects per-second frame resolution
+ffmpeg -i ${TIMESTAMP}_${INPUT} -vf scale=960:-1 -r 10 ${TMP_DIR}/ffout%3d.png
 
 # Convert images to gif
-convert -delay 4 -loop 0 \
-    -layers OptimizeTransparency \
-    $TMP_DIR/ffout*.png ${GIF}
+#  -delay option affects delay between subsequent frames (corrlates with `-r` above)
+convert -delay 4 -loop 0 -layers optimize $TMP_DIR/ffout*.png +map +dither ${GIF}
 
 # Optimize gif size
-gifsicle -O2 ${GIF} --colors 256 -o ${GIF}
+convert -colors 64 ${GIF} ${GIF}
+convert -layers remove-zero ${GIF} ${GIF}
 
 # Clean up
 rm ${TIMESTAMP}_${INPUT}
