@@ -59,6 +59,7 @@ pages:
         - Accounting:           cli/accounting.md
         - Environment:          cli/modules-environment.md
         - Jobs:                 cli/jobs.md
+        - Storage System:       cli/storage-system.md
         - Extra:                cli/extra.md
 
     - Tutorials:
@@ -92,6 +93,7 @@ pages:
         - Data Security in transfer:        security/data-security-in-transfer.md
         - Data Security at rest:            security/data-security-at-rest.md
         - CLI users permissions:            security/cli-users-permissions.md
+        - Data Ownership And Visibility:    security/data-ownership-and-visibility.md
 
     - Other:
         - Registration:         other/registration.md

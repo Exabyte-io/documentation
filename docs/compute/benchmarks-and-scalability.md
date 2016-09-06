@@ -6,13 +6,6 @@ This page contains benchmarks for three usage scenarios considered:
 - distributed memory calculations
 - performance within one compute-node
 
-<!-- TODO by MM: move long content sections into expandable blocks like below -->
-
-<details>
-    <summary>Expandable section</summary>
-    Section content
-</details>
-
 ## High-throughput scalability study
 
 ### Overview
@@ -32,7 +25,8 @@ Below is an example visualization of a structure employed in this run.
 
 ### Inputs
 
-**INCAR**
+<details>
+    <summary>**INCAR**</summary>
 ```
 ALGO = Normal
 EDIFF = 0.0001
@@ -52,8 +46,10 @@ NSW = 50
 PREC = Accurate
 SIGMA = 0.2
 ```
+</details>
 
-**POSCAR**
+<details>
+    <summary>**POSCAR**</summary>
 ```
 Li8 Al8 Cu8
 1.0
@@ -88,13 +84,17 @@ direct
 0.041667 0.208333 0.500000 Li
 0.166667 0.833333 1.000000 Li
 ```
+</details>
 
-**KPOINTS**
+<details>
+    <summary>**KPOINTS**</summary>
 ```
 0
 Gamma
 1 1 2
 ```
+</details>
+
 
 ### Results
 
@@ -134,7 +134,8 @@ Compute nodes with a total of 36 CPU per node were used. Number of cores per nod
 
 ##### Inputs
 
-**INCAR**
+<details>
+    <summary>**INCAR**</summary>
 ```
 ALGO = Normal
 EDIFF = 0.0001
@@ -150,8 +151,10 @@ PREC = Low
 NCORE = 1
 LPLANE = .TRUE.
 ```
+</details>
 
-**POSCAR**
+<details>
+    <summary>**POSCAR**</summary>
 ```
 50 Bi30 O108
 1.0
@@ -350,13 +353,16 @@ direct
 0.001386 0.743805 0.126414 O
 0.951725 0.000000 0.175704 O
 ```
+</details>
 
-**KPOINTS**
+<details>
+    <summary>**KPOINTS**</summary>
 ```
 0
 Gamma
 1 1 2
 ```
+</details>
 
 ##### Material
 
@@ -368,7 +374,8 @@ Gamma
 
 ##### Inputs
 
-**INCAR**
+<details>
+    <summary>**INCAR**</summary>
 ```
 ALGO = Normal
 EDIFF = 0.0001
@@ -389,8 +396,10 @@ NSW = 1
 PREC = Med
 SIGMA = 0.2
 ```
+</details>
 
-**POSCAR**
+<details>
+    <summary>**POSCAR**</summary>
 ```
 Li8 V8 Mo8
 1.0
@@ -425,13 +434,16 @@ direct
 0.041667 0.208333 0.500000 Mo
 0.166667 0.833333 1.000000 Mo
 ```
+</details>
 
-**KPOINTS**
+<details>
+    <summary>**KPOINTS**</summary>
 ```
 0
 Gamma
 1 1 2
 ```
+</details>
 
 ##### Material
 
@@ -443,7 +455,8 @@ Gamma
 
 ##### Inputs
 
-**pw_scf.in**
+<details>
+    <summary>**pw_scf.in**</summary>
 ```
 &CONTROL
   title = ' DEISA pw benchmark ',
@@ -602,6 +615,7 @@ AU       45.391998       38.047001        0.000000
 AU       48.320999       43.115002        0.000000
 AU       48.320999       38.047001        0.000000
 ```
+</details>
 
 ##### Material
 
@@ -613,7 +627,8 @@ Aluminum surface containing 112 atoms
 
 ##### Inputs
 
-**pw_scf.in**
+<details>
+    <summary>**pw_scf.in**</summary>
 ```
 &control
     calculation='scf'
@@ -669,6 +684,7 @@ Fe2      0.250000000   0.750000000   0.000000000
 K_POINTS automatic
 32 32 1 0 0 0
 ```
+</details>
 
 ##### Material
 
