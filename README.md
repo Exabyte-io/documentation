@@ -91,6 +91,7 @@ is rendered into:
     ```
 </details>
 
+
 # Basic guidelines
 
 1. Leave comment at the top about the original author:
@@ -118,6 +119,13 @@ is rendered into:
     We use the same icon set for the main application.
 
 5. Including an external link
-6. Including a local link
+6. Including a local link to a page, within a page
+```
+[subscription level](/billing/accounts-and-billing)
+```
+
+```
+[subscription level](/billing/accounts-and-billing#pricing)
+```
 7. Including a screenshot
 8. Including a gif
