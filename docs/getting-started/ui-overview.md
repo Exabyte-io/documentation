@@ -37,7 +37,7 @@ Screenshot below shows an example page, with the header bar and the main content
 
 Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> will open the Project and File Navigator
 
-![Projects and Files Navigation](../images/LeftNavigation.png "Projects and Files Navigation")
+<img data-gifffer="/images/OpenLeftHandSidebar.gif" />
 
 
 | Menu Item                                         | Description
@@ -58,7 +58,7 @@ Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i
 
 Clicking on your Profile card (header top right) will open the Account navigation.
 
-![Account and Billing Navigation](../images/RightNavigation.png "Account")
+<img data-gifffer="/images/OpenRightHandSidebar.gif" />
 
 | Menu Item                                                               | Description
 |:-----------------------------------------------------------------------   |:-------------
