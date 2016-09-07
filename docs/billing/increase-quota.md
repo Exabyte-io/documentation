@@ -1,14 +1,14 @@
 <!-- DB -->
 This page explains how to increase your storage quota. If you need more storage for your simulations beyond that provided by your service level you can add extra storage quota from your account page.
 
-## Open your account page
+## Open your account page 
 
 Click on your user account card in the header to open the right hand navigation, then select **Account** from the menu.
 
-## Open the Service Level tab
+## Open the Service Level tab 
 
-1. Click on "Service Level" tab to view your account details
-2. Click on "Add Storage" in the storage quota widget to open the dialog.
+1. Click on <i class="zmdi zmdi-layers zmdi-hc-border"></i> **Service Level** tab to view your account details
+2. Click on **Add Storage** in the storage quota widget to open the dialog.
 
 ![Service Levels](/images/UserServiceLevel.png "Service Levels")
 

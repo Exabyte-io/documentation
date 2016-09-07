@@ -1,6 +1,6 @@
 <!-- DB -->
 
-When you first register with Exabyte.io we open a personal account for you. You account has a service level, and serves as the owner of projects, jobs and files. Account also has balance and storage quota. Details about your account are available inside "Account" page which can be accessed by clicking the profile card in the header (to open the right hand navigation) and clicking Account after.
+When you first register with Exabyte.io we open a personal account for you. You account has a service level, and serves as the owner of projects, jobs and files. Account also has balance and storage quota. Details about your account are available inside "Account" page which can be accessed by clicking the profile card in the header (to open the right hand navigation) and clicking <i class="zmdi zmdi-settings zmdi-hc-border"></i> **Account** after.
 
 Your account is split into three tabs:
 
@@ -24,7 +24,7 @@ Here you can set preferences for your account. We also have further features pla
 
 Details about your current account levels are shown in this tab: Your current account balance, storage quota and service level. You can quickly add to your account balance, increase your quota and change service levels from this page. For more information see the [Pricing and Service Levels page](/billing/pricing-and-service-levels.md)
 
-![Exabyte Registration Form](/images/UserPreferences.png "User Preferences")
+![Exabyte Registration Form](/images/UserServiceLevel.png "User Service Levels")
 
 ## Edit Profile
 
