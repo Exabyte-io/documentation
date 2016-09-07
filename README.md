@@ -67,6 +67,29 @@ is rendered into:
     <p class="last">All unused credits automatically roll over into the next validity period.</p>
 </div>
 
+Expandable section can be added using:
+
+```
+<details>
+    <summary>**INCAR**</summary>
+    ```
+    ALGO = Normal
+    EDIFF = 0.0001
+    ...
+    ```
+</details>
+```
+
+is rendered into:
+
+<details>
+    <summary>**INCAR**</summary>
+    ```
+    ALGO = Normal
+    EDIFF = 0.0001
+    ...
+    ```
+</details>
 
 # Basic guidelines
 
@@ -93,3 +116,8 @@ is rendered into:
     will be rendered as: a [zmdi-plus-circle](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icon
 
     We use the same icon set for the main application.
+
+5. Including an external link
+6. Including a local link
+7. Including a screenshot
+8. Including a gif
