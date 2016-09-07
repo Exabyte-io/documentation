@@ -1,4 +1,5 @@
 <!-- by MH -->
+
 We subdivide all properties into [**Core**](../terminology/property-classification#core-properties), [**Principal**](../terminology/property-classification#principal-properties), and [**Derived**](../terminology/property-classification#derived-properties) classifications (see the [terminology section](../terminology/property-classification.md)for more detailed explanation):
 
 # Core Properties
