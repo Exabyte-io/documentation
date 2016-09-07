@@ -2,6 +2,8 @@
 
 This page explains how to make a payment to credit your account.
 
+<img data-gifffer="/images/AddCredit.gif" />
+
 ## Open the Billing Page
 
 Open the account navigation by clicking on your user profile card in the top right art of the header, then click on <i class="zmdi zmdi-card zmdi-hc-border"></i> Billing and Payments.
