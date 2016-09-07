@@ -4,6 +4,7 @@ extra_css:
     - extra.css
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
 extra_javascript:
+    - giffer.js
     - extra.js
 site_favicon: /img/favicon.ico
 copyright: © 2016 <a href="http://platform.exabyte.io">Exabyte Inc</a>. All rights reserved.

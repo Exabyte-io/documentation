@@ -28,13 +28,13 @@ a:visited {
     color: #999;
 }
 
-img {
+img, .giffer {
     margin-bottom: 20px;
     vertical-align: middle;
     width: 100%;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.31);
     border-radius: 5px;
-    border: 1px solid #AAA;
+    border: 1px solid #AAA !important;
     padding: 2px;
     max-width: 800px !important;
     margin-left: auto;
