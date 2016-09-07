@@ -1,5 +1,4 @@
-<!-- TODO by DB: go through the page and replace icon mentions with the corresponding zmdi icons -->
-
+<!-- DB -->
 This page summarizes the main components of Exabyte.io user interface, and contains a basic overview of the navigation through:
 
 - header bar
@@ -106,7 +105,7 @@ Jobs summary widget summarizes the total number of jobs run during this same per
 
 Create Job shortcut link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the simulation wizard where you can quickly create and run a simulation. By default the job is saved in your [default project](XXX.md). <!-- TODO: add link --> First tab is the Material Design tab. Material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
 
-![Material Editor](../images/MaterialEditor.png "Material Editor")
+<img data-gifffer="/images/ShortCutCreateJob.gif" />
 
 ## Projects
 
@@ -154,6 +153,8 @@ A list of all the materials you have imported, created or uploaded into your acc
 ## Account Switcher
 
 Profile card at the top of the right hand menu shows the account you are currently using. Normally this would be your personal profile, but if you have created, or are a member of, an organization, clicking here will open the list of organizations to which you belong. You can then click on one to begin using Exabyte.io as that organization member instead of your personal account. Interface will now show data related to the organization profile: eg. storage quota and balance will be that of the organization. Projects and jobs will be those submitted by the organization. You can switch back to your personal profile by using the account switcher again and selecting your personal account.
+
+<img data-gifffer="/images/AccountSwitcher.gif" />
 
 ## Account Snapshot
 
