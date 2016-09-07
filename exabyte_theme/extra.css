@@ -28,7 +28,8 @@ a:visited {
     color: #999;
 }
 
-img, .giffer {
+.rst-content img,
+.rst-content .giffer {
     margin-bottom: 20px;
     vertical-align: middle;
     width: 100%;
