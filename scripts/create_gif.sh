@@ -2,9 +2,9 @@
 # Derived from https://gist.github.com/tskaggs/6394639
 # Requires:
 #   imagemagick, ffmpeg
-# On OSX:
-#   brew install imagemagick
-#   brew install ffmpeg
+#   On OSX:
+#       brew install imagemagick
+#       brew install ffmpeg
 
 get_script_dir () {
     SOURCE="${BASH_SOURCE[0]}"
@@ -26,7 +26,7 @@ THIS_SCRIPT_DIR=$(get_script_dir)
 # Print usage
 #
 usage () {
-    echo "create_gif.sh -i=INPUT -o=GIF -b=BEGIN(00:00:00.0) -d=DURATION(00:00:01.0) "
+    echo "create_gif.sh -i=INPUT -o=OUTPUT -b=00:00:00.0 -d=00:00:01.0"
     exit 1
 }
 
@@ -76,15 +76,15 @@ TIMESTAMP=$(date +'%s')
 TMP_DIR="${THIS_SCRIPT_DIR}/png_${TIMESTAMP}"
 
 # Trim the video
-ffmpeg -i $INPUT -ss ${BEGIN} -c copy -t ${DURATION} ${TIMESTAMP}_${INPUT}
+ffmpeg -i $INPUT -ss ${BEGIN} -c copy -t ${DURATION} ${TIMESTAMP}_$(basename $INPUT)
 
 # Create images from video
 mkdir $TMP_DIR
 #  -r option affects per-second frame resolution
-ffmpeg -i ${TIMESTAMP}_${INPUT} -vf scale=960:-1 -r 10 ${TMP_DIR}/ffout%3d.png
+ffmpeg -i ${TIMESTAMP}_$(basename $INPUT) -vf scale=960:-1 -r 10 ${TMP_DIR}/ffout%3d.png
 
 # Convert images to gif
-#  -delay option affects delay between subsequent frames (corrlates with `-r` above)
+# -delay option affects delay between subsequent frames (corrlates with `-r` above)
 convert -delay 4 -loop 0 -layers optimize $TMP_DIR/ffout*.png +map +dither ${GIF}
 
 # Optimize gif size
@@ -92,5 +92,5 @@ convert -colors 64 ${GIF} ${GIF}
 convert -layers remove-zero ${GIF} ${GIF}
 
 # Clean up
-rm ${TIMESTAMP}_${INPUT}
+rm ${TIMESTAMP}_$(basename $INPUT)
 rm -rf $TMP_DIR
