@@ -2,6 +2,8 @@
 
 We keep the list of payment methods (currently, credit cards only) in the Payment Methods tab of the Billing Page.
 
+<img data-gifffer="/images/AddPaymentMethod.gif" />
+
 ## Open the Billing Page
 
 Open the account navigation by clicking on your user profile card in the top right art of the header, then click on <i class="zmdi zmdi-card zmdi-hc-border"></i> **Billing and Payments**.

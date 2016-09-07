@@ -1,6 +1,9 @@
 <!-- DB -->
 
-This page shows how you can check your current balance and storage quota. There are two ways to do so: in your Account service page, and also in the right hand sidebar.
+This page shows how you can check your current balance and storage quota. There are two ways to do so: in your Account service page, and also in the right hand sidebar. The short movie below illustrates the process, and below there is more detail guide.
+
+<img data-gifffer="/images/CheckBalanceAndQuota.gif" />
+
 
 ## Open right hand sidebar
 
