@@ -67,3 +67,29 @@ is rendered into:
     <p class="last">All unused credits automatically roll over into the next validity period.</p>
 </div>
 
+
+# Basic guidelines
+
+1. Leave comment at the top about the original author:
+    ```
+    <!-- by MH -->
+    ```
+
+2. Do not duplicate the name of the page at the top, it will already be inside breadcrumbs, better add a short 1-paragraph description of the contents
+
+3. Leave a newline after heading elements:
+    ```
+    ## Create a new job
+
+    You can create a new job by clicking on the ...
+    ```
+
+4. Use [zmdi](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icons instead of saying "click" on the button with 3 stripes:
+
+    ```
+    <i class="zmdi zmdi-plus-circle"></i>
+    ```
+
+    will be rendered as: a [zmdi-plus-circle](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icon
+
+    We use the same icon set for the main application.
