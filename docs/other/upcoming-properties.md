@@ -100,7 +100,7 @@ Measure of how resistant solid matter is to various kinds of permanent shape cha
 ### Fracture toughness
 Fracture toughness is related to the hardness but is also structure dependent upon the surface to be created to form a crack.  [[6](#links)]
 
-
+<hr>
 
 ## Chemistry Properties
 

@@ -106,5 +106,5 @@ pages:
         - FAQ:                  other/faq.md
 
     - Terminology:
-        - Simulations:          terminology/simulations.md
-        - Property Classification:          terminology/property-classification.md
+        - Simulations:              terminology/simulations.md
+        - Materials Properties:     terminology/property-classification.md

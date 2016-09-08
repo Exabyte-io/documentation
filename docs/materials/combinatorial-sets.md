@@ -2,7 +2,7 @@
 
 Combinatorial sets are used to study a wide variety of modifications to a base crystal structure through atomic substituion of elements at particular atomic positions.  To this end it is possible to specify what elements are substituted for each element in a structure and specify a different substituion rule for each position in the atomic structure as well.
 
-To activate this automated capability, go to the `Create Job` webpage.  On this page near the upper right corner of the three dimensional window showing the visual representation of the atoms you will see a box called `Activate Comibinatorial`.  If you click on this button new functionality will appear on your screen that may not be immediately self-explanatory.  To get more information to read on how to set up the combinatorics, click on the `i` information button.  The contents of that page are also displayed below as well.
+To activate this capability, go to the `Create Job` webpage.  On this page near the upper right corner of the three dimensional window showing the visual representation of the atoms you will see a box called `Activate Comibinatorial`.  If you click on this button new functionality will appear on your screen that may not be immediately self-explanatory.  To get more information to read on how to set up the combinatorics, click on the `i` information button.  The contents of that page are also displayed below as well.
 
 # Overview
 This feature lets users create multiple jobs at the same time using a combinatorial set of materials and input templates for workflows.
@@ -10,10 +10,12 @@ This feature lets users create multiple jobs at the same time using a combinator
 The combinatorial part is reflected in 2 input fields: `basis` and `lattice basis`
 Any input line that has element characters separated by slashes is triggering the generation of the set.
 
-**Basis**
+## Basis
+
+### Permutations
 <details>
 <summary>**1st scenario - input**</summary>
-```
+```py
 Si/Ge/As 0.0 0.0 0.0
 Si/Ge    0.5 0.5 0.0
 ```
@@ -42,6 +44,7 @@ Ge 0.5 0.5 0.0
 ```
 </details>
 
+### Combinations
 <details>
 <summary>**2nd scenario - input**</summary>
 ```
@@ -93,7 +96,7 @@ Ge 0.5 0.5 0.0
 ```
 </details>
 
-**Lattice**
+## Lattice
 
 Multiple lattices could also be selected at the same time from UI: for example BCC, FCC, SC. For each of them a new material will be created.
 

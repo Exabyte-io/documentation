@@ -2,14 +2,16 @@
 
 [**Setup of combinatorial materials described here**](../materials/combinatorial-sets.md)
 
-**Input file display in the online GUI**
+##Input file display
 
-Input files contain template placeholders in place of the elements that are replaced and/or in place of the parameters that define lattice type.  These are pseudo files which will be further processed by Exabyte.io software and can not be run directly by the software tool (quantum espresso) in this case.
-
+Input files contain template placeholders in place of the elements that are replaced and/or in place of the parameters that define lattice type.  These are pseudopotential files which will be further processed by Exabyte.io software and can not be run directly by the software tool (quantum espresso) in this case.
 
 !!! warning "Special sections of input files"
-    Please note that all variables ($something) & placeholders ({{something}}) are important in Exabyte.io functionality.
-    If altered the calculation result will give unexpected results if they do not fail completely.
+    Please note that all variables `$something` & placeholders (`{{something}}`) are important in Exabyte.io functionality. If altered the calculation result will give unexpected results or fail completely.
+
+## Quantum ESPRESSO
+
+...
 
 <details>
 <summary>**Example pw_scf.in file**</summary>
@@ -63,3 +65,7 @@ K_POINTS automatic
 1 1 1 0 0 0
 ```
 </details>
+
+## VASP
+
+...

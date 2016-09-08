@@ -18,8 +18,13 @@ Energy of the given electronic state (eigenvalues of the electronic Hamiltonian 
 # Principal Properties
 There are some parameters that are directly extracted from Density Functional Theory simulations (as implemented in Quantum ESPRESSO and similar software packages).
 
+
+| Characteristic | Explanation |
+|:---------------|:------------|
+| Total Energy   | The ground state energy of the system (NOTE: not equal to the sum of electronic energies)
+
+
 ## Total energy
-The ground state energy of the system (NOTE: not equal to the sum of electronic energies)
 ## Entropy
 Measures the disorder of the structure
 ## Energy contributions
