@@ -21,13 +21,19 @@ For the sake of this tutorial, we will keep the default parameters at each step.
 
 Materials Designer lets you create and save materials for future use. We will use the default structure of Silicon in diamond-centered cubic configuration
 
+<img data-gifffer="/images/FirstJobCreate.gif" />
+
 ## Workflow
 
 Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow". By default the first workflow - "Bandstructure" - is selected. One can modify the input files for each part of the calculation, available under input tabs by double clicking on each file tab. One can also customize the workflow by adding and deleting individual "Units" by adding and deleting the tabs containing input files.
 
+<img data-gifffer="/images/FirstJobWorkflow.gif" />
+
 ## Compute parameters
 
 This tab lets you set up the compute parameters of the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficent to add anymore cores to the simulation. We also need to set the maximum time limit for the calculation to properly schedule the allocation of compute resources to this job. Leave all parameters at their default values and click "Save calculation".
+
+<img data-gifffer="/images/FirstJobCompute.gif" />
 
 ## Summary
 
@@ -42,6 +48,8 @@ Run the job by clicking the checkbox on the left and choosing the left-pointing 
 
 You will see the status changing from "pre-submission" to "submitted", and to "active". This means that the job was submitted to our compute platform and was started successfully.  Depending on the load of your computer and the cloud services it may take some time to become active.
 
+<img data-gifffer="/images/FirstJobSubmit.gif" />
+
 ### View summary
 
 You can view the summary information for the job by clicking down-pointing arrow button next to the "actions" column while the job is active.
@@ -50,9 +58,13 @@ You can view the summary information for the job by clicking down-pointing arrow
 
 You can click on the job name and monitor the progress of the job in real time.
 
+<img data-gifffer="/images/FirstJobStatus.gif" />
+
 ### View results and access output files
 
 Job view screen lets you track the input parameters, output text, convergence parameters (total energy in this tutorial), and view the results of the calculation and download output files when finished.
+
+<img data-gifffer="/images/FirstJobResults.gif" />
 
 # Done
 This is how you can run a band structure calculation using exabyte.io.
