@@ -4,6 +4,9 @@ There are many ways developers can work with Exabyte. Exabyte openly encourages 
 ## Developer program
 We want developers worldwide to join our mission in opening material design science to everyone. The aim of our developer program is to help developers successfully build products and services around the Exabyte platform. Here are our plans:
 
+### Upcoming Features
+We want your feedback on potential development efforts and have posted a review of [**upcoming property features**](upcoming-properties.md)
+
 ### API documentation
 Development of a clear and standard API documentation to plug into the Exabyte platform
 
