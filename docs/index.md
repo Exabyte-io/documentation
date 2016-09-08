@@ -43,6 +43,12 @@ Our users compute characteristic properties of materials through high-fidelity m
 
 Other parts explain data security, sharing and collaboration, billing/pricing and terminology that we employ.
 
+## Specific features
+
+### Combinatorial screening
+
+At Exabyte.io we want to enable automation of your combinatorial materials screening process to make it easier to set-up, monitor, and analyze the results. This [page]() contains more information
+
 ## How to get help
 
 We have support team that is active 24/7 and will do our best to reply to your requests within 24 hours. Our support team can be contacted by phone, email, or the web during working hours Pacific Time:
