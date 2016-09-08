@@ -1,5 +1,7 @@
 <!-- DB -->
-This page explains how to increase your storage quota. If you need more storage for your simulations beyond that provided by your service level you can add extra storage quota from your account page.
+This page explains how to increase your storage quota. If you need more storage for your simulations beyond that provided by your service level you can add extra storage quota from your account page. The short movie below illustrates the process, and below there is a step-by-step guide. 
+
+<img data-gifffer="/images/AddStorage.gif" />
 
 ## Open your account page 
 
@@ -27,3 +29,5 @@ We will send you an email within 24 hours confirmaing the storage quota upgrade.
 You can also use the shortcut link to upgrade your storage quota by opening the Account navigation right hand menu and clicking the Add Storage button which is shown next to the Service Level information.
 
 ![Add Storage Menu Item](/images/AddStorageMenuItem.png "Add Storage Menu Item")
+
+<img data-gifffer="/images/ShortcutAddStorage.gif" />

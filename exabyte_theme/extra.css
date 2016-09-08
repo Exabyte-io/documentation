@@ -28,7 +28,8 @@ a:visited {
     color: #999;
 }
 
-img {
+.rst-content img,
+.rst-content .giffer {
     margin-bottom: 20px;
     vertical-align: middle;
     width: 100%;
@@ -40,6 +41,10 @@ img {
     margin-left: auto;
     margin-right: auto;
     display: block;
+}
+
+.giffer {
+    border: 1px solid #AAA !important;
 }
 
 /* --------------------------------------------------------- *
