@@ -14,10 +14,11 @@ Upon logging into your Exabyte.io account, the home page contains details of you
 2. Upcoming Capabilities: surfaces, interfaces, slabs, interstitials
 3. Future Capabilities (longer-term): polymers
 
-### Ideal crystal - bravais lattices supported, basis options
+### Ideal crystal
 
 To create your first structure you need to [open sidebar](/getting-started/ui-overview/#project-navigation-left-sidebar).
 
+<!-- TODO: use `Materials` page instead of `Create Job` -->
 <img data-gifffer="/images/CreateJobSidebar.gif" />
 
 This brings up a new page with a default silicon atomic structure.  The 3 dimension model on the lower right is interactive and can be manipulated by clicking and dragging with your mouse to rotate the structure.  You can also zoom in and out if you have a trackball on your mouse.
@@ -30,9 +31,10 @@ It is possible to manually set all lattice constants and angles between the latt
 
 The default representation of the atomic cooridates is in direct corrdinates (also commonly called fractional coordinates [[2](#links)]).  If you would like to work with the actual cartesian coordinates simply click on the "Cartesian" to convert the coordinates.
 
+<!-- TODO: split into lattice and basis separately -->
 <img data-gifffer="/images/AlterMaterialStructure.gif" />
 
-### Supercells - how to create
+### Supercells
 
 A supercell most commonly refers to an atomic structure that is a multiplicative representation of a smaller building block structure.  A primitive unit cell is the smallest possible building block structure to represent the material.  Most elements in the periodic table contain 2 atoms or less in their primitive unit cell.  If however you want an impurity at less than 50% in a 2-atom primitive unit cell element, you would need to make a copy of the unit cell in one or more directions on each axis in the structure.  That structure created after the copies of the unit cell are made is a supercell.
 
@@ -45,12 +47,13 @@ The ability to create a supercell can be accessed through the `Advanced Geometry
 Please note that you are multiplying the structure of what is currently reprentated in the `Crystal Basis` and 3D visualization window.  If Si is replicated by 2x2x2 that results in a 16 atom supercell.  If you then do another 2x2x2 replication, that will result in a 128-atom Si supercell.
 
 ## Upcoming Capabilities
-### Surface generation
-### Passivation
-### Interface generation
-### Interstitials
-### Polymers
-[More detailed descriptions](/other/upcoming-capabilities.md)
+- Surface generation
+- Passivation
+- Interface generation
+- Interstitials
+- Polymers
+
+More detailed description [here](/other/upcoming-capabilities.md).
 
 ### Links
 

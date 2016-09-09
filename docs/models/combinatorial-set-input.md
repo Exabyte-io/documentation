@@ -1,8 +1,8 @@
-<!-- TODO by MH -->
+<!-- TODO by TB -->
 
-[**Setup of combinatorial materials described here**](../materials/combinatorial-sets.md)
+**Setup of combinatorial materials described** [here](../materials/combinatorial-sets.md)
 
-##Input file display
+## Input file display
 
 Input files contain template placeholders in place of the elements that are replaced and/or in place of the parameters that define lattice type.  These are pseudopotential files which will be further processed by Exabyte.io software and can not be run directly by the software tool (quantum espresso) in this case.
 

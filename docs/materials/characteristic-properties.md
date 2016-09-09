@@ -1,8 +1,7 @@
 <!-- by MH -->
 
-We subdivide all properties into [**Core**](../terminology/property-classification#core-properties), [**Principal**](../terminology/property-classification#principal-properties), and [**Derived**](../terminology/property-classification#derived-properties) classifications (see the [terminology section](../terminology/property-classification.md)for more detailed explanation):
-
-<BR>
+!!! note "Classification"
+    We subdivide all properties into [**Core**](../terminology/property-classification#core-properties), [**Principal**](../terminology/property-classification#principal-properties), and [**Derived**](../terminology/property-classification#derived-properties) (see the [terminology section](../terminology/property-classification.md) for more explanation)
 
 # Core Properties
 
@@ -39,7 +38,7 @@ We further subdivide all derived properties into:
 - [**Chemistry Properties**](#chemistry-properties)
 - [**Vibrational Properties**](#vibrational-properties)
 
-<BR>
+<hr>
 
 ## Electronic Properties
 
@@ -56,21 +55,21 @@ NOTE: there are also projections of total electronic density onto each of the at
 ### Fermi surface
 Surface of constant energy (Fermi Energy) in reciprocal space that separates the unfilled electronic levels from the filled ones.  NOTE: usually expressed in one of the formats for 3d surface plotting
 
-<BR>
+<hr>
 
 ## Chemistry Properties
 
 ### Formation energy at 0K
 Formation energy measures the stability of a material.  For example the formation energy of CO2 is the energy that results from forming CO2 from C and O2.  The formation energy of elements in their standard state is 0 eV.  At exabyte we have pre-calculated the total energy and zero point energy of all built-it pseudopotentials and provided a template workflow for calculatio of these properties for user-defined pseudopotentials.  Computed formation energy at 0K, 0atm using a reference state of zero for the pure elements. This quantity is often a good approximation for formation enthalpy at ambient conditions.
 
-<BR>
+<hr>
 
 ## Vibrational Properties
 
 ### Zero Point Energy
 The zero pointe energy is a purely quantum mechanical property that is the amount of energy presence in a material due to quantum mechanical uncertainty of the supposition of electronic states at 0K.  It is generally most important for lighter elements and is critical to making accurate predictions of the energetic stability and changes in chemistry.
 
-<BR>
+<hr>
 
 ### Links
 
