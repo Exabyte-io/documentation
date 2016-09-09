@@ -4,8 +4,6 @@ Combinatorial sets are used to study a wide variety of modifications to a base c
 
 To activate this capability, go to the `Create Job` webpage.  On this page near the upper right corner of the three dimensional window showing the visual representation of the atoms you will see a box called `Activate Comibinatorial`.  If you click on this button new functionality will appear on your screen that may not be immediately self-explanatory.  To get more information to read on how to set up the combinatorics, click on the `i` information button.  The contents of that page are also displayed below as well.
 
-<img data-gifffer="/images/ActivateCombinatorial.gif" />
-
 
 # Feature Overview
 This feature lets users create multiple jobs at the same time using a combinatorial set of materials and input templates for workflows.
@@ -14,6 +12,10 @@ The combinatorial part is reflected in 2 input fields: `basis` and `lattice basi
 Any input line that has element characters separated by slashes is triggering the generation of the set.
 
 ## Basis
+
+Here's how you can activate combinatorial set and edit crystal basis.
+
+<img data-gifffer="/images/ActivateCombinatorial.gif" />
 
 ### Permutations
 <details>
@@ -27,21 +29,21 @@ Si/Ge    0.5 0.5 0.0
 In case slashes are used the elements are changed all at once, eg. in the above case there will be 3 total basises created
 
 <details>
-<summary>**Quantum Espresso - Case 1 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 1 - structure used**</summary>
 ```
 Si 0.0 0.0 0.0
 Si 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 2 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 2 - structure used**</summary>
 ```
 Ge 0.0 0.0 0.0
 Ge 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 3 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 3 - structure used**</summary>
 ```
 As 0.0 0.0 0.0
 Ge 0.5 0.5 0.0
@@ -60,42 +62,42 @@ Si,Ge    0.5 0.5 0.0
 In case commas are used the elements are changed one at a time, eg. in the above case there will be 6 total basises created
 
 <details>
-<summary>**Quantum Espresso - Case 1 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 1 - structure used**</summary>
 ```
 Si 0.0 0.0 0.0
 Si 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 2 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 2 - structure used**</summary>
 ```
 Si 0.0 0.0 0.0
 Ge 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 3 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 3 - structure used**</summary>
 ```
 Ge 0.0 0.0 0.0
 Si 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 4 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 4 - structure used**</summary>
 ```
 Si 0.0 0.0 0.0
 Si 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 5 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 5 - structure used**</summary>
 ```
 As 0.0 0.0 0.0
 Si 0.5 0.5 0.0
 ```
 </details>
 <details>
-<summary>**Quantum Espresso - Case 6 - executed structure**</summary>
+<summary>**Quantum Espresso - Case 6 - structure used**</summary>
 ```
 As 0.0 0.0 0.0
 Ge 0.5 0.5 0.0
