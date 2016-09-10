@@ -704,11 +704,90 @@ FeSe monolayer with 4 atoms
 For more information about our case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [here](https://exabyte.io/#case-study).
 
 
-<!-- TODO by MM: the content below seems to be deserving its own page that should include description of the input files used for this benchmark, number of CPUs and such. Right now it's not written like technical documentation, more like a blog post. -->
+<!-- I believe this part should be in the same page as other benchmarks. -->
 
 ## Cloud vendors performance comparison
 
-Exabyte.io utilizes multiple cloud vendors resources to provide users with a large scale computing infrastructure. Since Each cloud provider uses a specific type of resources, applications performance vary on different cloud vendors. We ran the same calculation on four cloud providers, AWS, Rackspace, SoftLayer and Microsoft Azure and got the following result.
+Exabyte.io utilizes multiple cloud vendors resources to provide users with a large scale computing infrastructure. Since Each cloud provider uses a specific type of resources, applications performance vary on different cloud vendors. For the sake of simplicity, a short VASP calculation utilizing 1 CPU with the following characteristics was used to compare the performance of four cloud providers, AWS, Rackspace, SoftLayer and Microsoft Azure.
+
+### Model and Method
+
+<!-- Please adjust this-->
+Plane-wave Pseudopotential Density Functional Theory formalism as implemented in Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials was employed in this run.
+
+### Inputs
+
+<details>
+    <summary>**INCAR**</summary>
+```
+ALGO = Normal
+EDIFF = 0.0001
+ENCUT = 520
+IBRION = 2
+ICHARG = 1
+ISIF = 3
+ISMEAR = 1
+ISPIN = 2
+LORBIT = 11
+LREAL = Auto
+LWAVE = False
+MAGMOM = 24*0.6
+NELM = 100
+NPAR = 1
+NSW = 50
+PREC = Accurate
+SIGMA = 0.2
+```
+</details>
+
+<details>
+    <summary>**POSCAR**</summary>
+```
+Li8 Al8 Cu8
+1.0
+11.687317 3.895772 -3.895772
+-11.687317 3.895772 -3.895772
+0.000000 1.947886 1.947886
+Al Cu Li
+8 8 8
+direct
+0.666667 0.333333 1.000000 Al
+0.958333 0.791667 0.500000 Al
+0.500000 0.500000 1.000000 Al
+0.208333 0.041667 0.500000 Al
+0.583333 0.916667 1.000000 Al
+0.333333 0.666667 1.000000 Al
+0.291667 0.458333 0.500000 Al
+0.125000 0.625000 0.500000 Al
+0.916667 0.583333 1.000000 Cu
+0.875000 0.375000 0.500000 Cu
+0.625000 0.125000 0.500000 Cu
+0.750000 0.750000 1.000000 Cu
+0.458333 0.291667 0.500000 Cu
+0.791667 0.958333 0.500000 Cu
+0.083333 0.416667 1.000000 Cu
+0.375000 0.875000 0.500000 Cu
+0.833333 0.166667 1.000000 Li
+0.416667 0.083333 1.000000 Li
+0.708333 0.541667 0.500000 Li
+0.250000 0.250000 1.000000 Li
+1.000000 1.000000 1.000000 Li
+0.541667 0.708333 0.500000 Li
+0.041667 0.208333 0.500000 Li
+0.166667 0.833333 1.000000 Li
+```
+</details>
+
+<details>
+    <summary>**KPOINTS**</summary>
+```
+0
+Gamma
+1 1 2
+```
+</details>
+
+### Results
 
 |Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps) |Runtime (sec)|
 |:---------|:---------------------------------------:|:---------:|:-------:|:--------------:|:---------------:|
