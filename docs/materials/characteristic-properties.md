@@ -50,10 +50,13 @@ The minimum energy difference between the highest occupied (valence) band and th
 
 ### Density of States and Partial DOS
 Density of states is a summation over the all possible points in reciprocal space and measures the unit density of the number of electronic states per unit energy.  Describes the number of electronic states per interval of energy at each energy level that are available to be occupied (more on Wikipedia).
-NOTE: there are also projections of total electronic density onto each of the atomic states that are often useful
+!!! note
+    There are also projections of total electronic density onto each of the atomic states that are often useful
 
 ### Fermi surface
-Surface of constant energy (Fermi Energy) in reciprocal space that separates the unfilled electronic levels from the filled ones.  NOTE: usually expressed in one of the formats for 3d surface plotting
+Surface of constant energy (Fermi Energy) in reciprocal space that separates the unfilled electronic levels from the filled ones.
+!!!note
+    Usually expressed in one of the formats for 3d surface plotting
 
 <hr>
 
