@@ -13,10 +13,10 @@ A simulation engine is an implementation of a simulation algorithm in software.
 ## Currently Exabyte.io supports:
 ### Quantum ESPRESSO
 ### VASP
-## Upcoming simulation engines:
+## Upcoming simulation engines supported:
 ### BerkelyGW
 ### NWChem
-## Future simulation engines:
+## Future simulation engines planned:
 ### LAMMPS
 ### OMEN/NEMO
 ### NEGF/DFT
