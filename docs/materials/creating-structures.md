@@ -39,6 +39,7 @@ The default representation of the atomic cooridates is in direct corrdinates (al
 <img data-gifffer="/images/ChangeMaterialBasis.gif" />
 
 Alternating you can generate a custom lattice structure
+
 ### Supercells
 
 A supercell most commonly refers to an atomic structure that is a multiplicative representation of a smaller building block structure.  A primitive unit cell is the smallest possible building block structure to represent the material.  Most elements in the periodic table contain 2 atoms or less in their primitive unit cell.  If however you want an impurity at less than 50% in a 2-atom primitive unit cell element, you would need to make a copy of the unit cell in one or more directions on each axis in the structure.  That structure created after the copies of the unit cell are made is a supercell.
