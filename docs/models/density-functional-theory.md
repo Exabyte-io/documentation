@@ -1,7 +1,6 @@
 <!-- TODO by MH -->
 <!-- TODO: add input file examples and reasons for using these parameters, link to relaxation page for relaxation examples, convergence for convergence examples -->
 
-
 We use density functional theory, are currently support pseudopotential approximation as implemented in quantum espresso and VASP.
 
 In most cases to have a reasonable level of confidence that a result can be trusted the total energy should not increase significantly when the k-point density is increassed.  This search for the appropriate density of k-points is called [k-point convergence](convergence-algorithms.md).
