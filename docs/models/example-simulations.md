@@ -1,7 +1,4 @@
-<!-- TODO by MH
-For all of the characteristic properties:
-        explain how we assert fidelity
--->
+<!-- TODO by MH For all of the characteristic properties: explain how we assert fidelity -->
 Currently we support the characteristic property simulations [**here**](../materials/characteristic-properties)
 
 # Core Properties
