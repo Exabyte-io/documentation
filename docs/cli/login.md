@@ -1,64 +1,60 @@
-<!-- TODO by MM: cleanup the page to have similar styles as others and revise content -->
+<!-- by MM -->
 
 # Login via Command Line
 
-This page explains the process of connecting to exabyte.io though command-line interface: how to generate, upload ssh keys and use them to connect.
-
+This page explains the process of connecting to exabyte.io through command-line interface: how to generate, upload ssh keys and use them to connect.
 
 ## Overview
 
-We use <a class="text-muted" href="https://wiki.archlinux.org/index.php/SSH_keys" target="_blank">SSH keys</a> as a way to identify users and trusted computers during command-line sessions. Keys provide improved security, however they need to be set properly before use. The steps below will walk you through generating SSH key pair and adding the public key to your account.
-
+We use [SSH keys](https://wiki.archlinux.org/index.php/SSH_keys) as a way to identify users and trusted computers during command-line sessions. Keys provide improved security, however they need to be set properly before use. The steps below will walk you through generating SSH key pair and adding the public key to your account.
 
 ## Create SSH keys
 
 ### Directives for Windows
 
-If you are using <a class="text-muted" href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTY</a> as an SSH client, you will need to set it up with <a class="text-muted" href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe" target="_blank">puttygen.exe</a> to generate SSH keys. <a href="http://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen" target="_blank">This page</a> illustrates how to do that. Otherwise, please use directives below.
+If you are using [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) as an SSH client, you will need to set it up with [puttygen.exe](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe) to generate SSH keys. [This page](http://www.rackspace.com/knowledge_center/article/generating-rsa-keys-with-ssh-puttygen) illustrates how to do that. Otherwise, please use directives below.
 
 #### Step One: check for existing keys
 
 Open command-line prompt, and run:
 
-```bash
+```
 cd %userprofile%/.ssh
 ```
 
-If you see "No such file or directory", then there aren't any existing keys: go to *Step Three*. Otherwise, check to see if you have a key already:
+If you see "No such file or directory", then there aren't any existing keys: go to [Step Three](#step-three-generate-a-new-key). Otherwise, check to see if you have a key already:
 
-```bash
+```
 dir id_*
 ```
 
 If there are existing keys, you may want to use those: go to [Upload key](#upload-ssh-key) section.
 
-#### Step Two - back up old keys</p>
+#### Step Two - back up old keys
 
 If you have existing SSH keys, but you don't want to use them when connecting to exabyte.io, you should back them up. In a command prompt on your local computer, run:
 
-```bash
+```
 mkdir key_backup
 copy id_rsa* key_backup
 ```
 
-
-#### Step Three - generate a new key</p>
+#### Step Three - generate a new key
 
 If you don't have an existing SSH key that you wish to use, generate one as follows:
 
 - log in to your local computer as an administrator
 - In a command prompt, run:
 
-    <pre>
+    ```
     ssh-keygen -t rsa -C "your_email@example.com"
-    </pre>
+    ```
 
-    Associating the key with your email address helps you to identify the key later on. Note that the ssh-keygen command is only available if you have already installed <a class="text-muted" href="https://git-scm.com/download/win">Git</a> (with Git Bash).
+    Associating the key with your email address helps you to identify the key later on. Note that the ssh-keygen command is only available if you have already installed [Git](https://git-scm.com/download/win) (with Git Bash).
 
 - press "Enter" to accept the default location and file name. If .ssh directory does not exist, the system creates one for you.
 - enter, and re-enter, a passphrase when prompted.
 - done, go to go to [Upload key](#upload-ssh-key) section.
-
 
 ### Directives for Linux and Mac OSX
 
@@ -66,13 +62,13 @@ If you don't have an existing SSH key that you wish to use, generate one as foll
 
 Open command-line prompt, and run:
 
-```bash
+```
 cd ~/.ssh
 ```
 
-If you see "No such file or directory", then there aren't any existing keys: go to *Step Three*. Otherwise, check to see if you have a key already:
+If you see "No such file or directory", then there aren't any existing keys: go to [Step Three](#step-three-generate-a-new-key_1). Otherwise, check to see if you have a key already:
 
-```bash
+```
 ls id_*
 ```
 
@@ -82,7 +78,7 @@ If there are existing keys, you may want to use those: go to [Upload key](#uploa
 
 If you have existing SSH keys, but you don't want to use them when connecting to exabyte.io, you should back them up. In a command prompt on your local computer, run:
 
-```bash
+```
 mkdir key_backup
 cp id_rsa* key_backup
 ```
@@ -94,9 +90,9 @@ If you don't have an existing SSH key that you wish to use, generate one as foll
 - log in to your local computer as an administrator
 - In a command prompt, run:
 
-    <pre>
+    ```
     ssh-keygen -t rsa -C "your_email@example.com"
-    </pre>
+    ```
 
     Associating the key with your email address helps you to identify the key later on.
 
@@ -108,7 +104,8 @@ If you don't have an existing SSH key that you wish to use, generate one as foll
 
 Now you should have two files that start with *id_rsa* in your ".ssh" directory. One of them contains private key (.ssh/id_rsa by default) and one of them contains public key (.ssh/id_rsa.pub). We will upload public key to Exabyte.io.
 
-> NOTE: **never** share your private key with anyone. It is only for you and is used to identify you with exabyte.io. A user logged in with your private key will automatically have access to your data and allocation.
+!!! warning "**Never** share your private key with anyone"
+    Your private key is only for you and is used to identify you with exabyte.io. A user logged in with your private key will automatically have access to your data and allocation.
 
 To upload a public key:
 
@@ -116,17 +113,19 @@ To upload a public key:
 
 - add a key using the (+) button. When the input form appears, print a name for your key in the "Title" field and upload (or copy/paste) your public key (.ssh/id_rsa.pub) to the "Key" textarea. Then click "Save".
 
-Your public will be saved with exabyte.io. This could take a few seconds. If everything is OK, the key label  (small circle in the left side of the saved key) becomes green <!-- <i class="zmdi zmdi-circle m-t-15 sl-state-indicator recent"></i> -->. This means that your key is active and you are all set and ready to connect to exabyte.io via command-line.
+Your public will be saved with exabyte.io. This could take a few seconds. If everything is OK, the key label  (small circle in the left side of the saved key) becomes green. This means that your key is active and you are all set and ready to connect to exabyte.io via command-line.
 
+<img data-gifffer="/images/SSHKeyUpload.gif">
 
 ## Connect to exabyte.io
 
 ### SSH Client Software
 
-There is a variety of SSH clients that you can use to connect to a our platform. We will cover the following two:</p>
+There is a variety of SSH clients that you can use to connect to a our platform. We will cover the following two:
 
 - command-line terminal with OpenSSH (Linux and Mac OS X): a collection of software that ships with most Unix-like operating systems
-- PuTTY (Windows): a free SSH client that can run on Windows, and is available for download on the <a href="http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html" target="_blank">PuTTY Download Page</a>. The client executable is named *putty.exe*. <a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe" target="_blank">puttygen.exe</a> is also necessary to handle SSH keys.
+
+- PuTTY (Windows): a free SSH client that can run on Windows, and is available for download on the [PuTTY Download Page](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html). The client executable is named [*putty.exe*](http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe). **puttygen.exe** is also necessary to handle SSH keys.
 
 ### SSH Login via terminal
 
@@ -134,26 +133,26 @@ Replace the text inside braces below with the corresponding names/paths:
 
 1. Change the permissions on the private key to be accessible to you only:
 
-    <pre>
+    ```
     chmod 400 {path/to/your/private_key}
-    </pre>
+    ```
 
 2. At the command prompt, enter the following command:
 
-    <pre>
+    ```
     ssh -i {path/to/your/private_key} {exabyte.io_username}@angstrom.exabyte.io
-    </pre>
+    ```
 
 
 ### SSH Login via PuTTY
 
-When using PuTTY, one would need to load the SSH keys through its interface before connecting. <a href="http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows" target="_blank">This page</a> has a great tutorial with visuals.
+When using PuTTY, one would need to load the SSH keys through its interface before connecting. [This page](http://www.rackspace.com/knowledge_center/article/logging-in-with-an-ssh-private-key-on-windows) has a great tutorial with visuals.
 
 ### Welcome screen
 
 Once the ssh connection is established, you will see the following screen:
 
-<pre>
+```
 ------------------------------------------------------------------
                           _           _
         ___ __   __ __ _ | |__ __  __| |_ ___     _   ___ 18
@@ -197,7 +196,7 @@ Once the ssh connection is established, you will see the following screen:
  *  to the terms and conditions you were presented at the time   *
  *  of obtaining access credentials. ® 2015 Exabyte Inc.         *
 ------------------------------------------------------------------
-</pre>
+```
 
 ## Data transfer
 
@@ -209,16 +208,16 @@ Replace the text inside braces below with the corresponding names/paths:
 
 1. To transfer files to exabyte.io:
 
-    <pre>
+    ```
     scp -i {path/to/your/private_key} {path/to/your/local/file} {exabyte.io_username}@angstrom.exabyte.io:{path/inside/your/home/}
-    </pre>
+    ```
 
 2. To transfer files from exabyte.io::
 
-    <pre>
+    ```
     scp -i {path/to/your/private_key} {exabyte.io_username}@angstrom.exabyte.io:{path/inside/your/home/} {path/to/your/local/file}
-    </pre>
+    ```
 
 ### Transfer data via WinSCP
 
-When using <a class="text-muted" href="https://winscp.net" target="_blank">WinSCP</a>, one would need to load the private key through its interface before connecting. <a href="https://winscp.net/eng/docs/ui_login_authentication#private_key" target="_blank">This page</a> explains how to do so.
+When using [WinSCP](https://winscp.net), one would need to load the private key through its interface before connecting. [This page](https://winscp.net/eng/docs/ui_login_authentication#private_key) explains how to do so.
