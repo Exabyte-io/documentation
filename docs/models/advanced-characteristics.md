@@ -14,13 +14,11 @@ We have calculated a series of simulations on all pseudopotentials that we curre
 
 <hr>
 
-
 # Band Gap
 
 The band gap is defined as the energy difference between the highest occupied energy state of a material and the lowest unoccupied energy state of the material.  However, a band gap can either be a direct or indirect band gap.  Direct band gap means the minimum change in energy between occupied and unoccupied states at the same k-point.  The indirect band gap means the minimum change in energy between occupied and unoccupied states at different k-points.  The indirect band gap could potentially be smaller than the direct band gap.  We have automated the search for both types of band gaps, but require a band structure calculation first to determine these values.
 
 <hr>
-
 
 # Convergence and Relaxation
 
