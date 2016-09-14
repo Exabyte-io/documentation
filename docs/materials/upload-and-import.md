@@ -17,7 +17,6 @@ This new overlay will contain another blue button called `Select File`.  Clickin
 
 After selecting the file from your computer you should be able to click the `Load Material` button in the overlay back on the Exabyte.io website.  If successful this material load will then be read into the website and visualized.  You will have an opportunity to problem a material name to the structure as well.  By default the name of the material will be the first line of whatever file you imported.
 
-<!-- TODO: start from materials editor -->
 <img data-gifffer="/images/UploadPOSCAR.gif" />
 
 
@@ -25,7 +24,6 @@ After selecting the file from your computer you should be able to click the `Loa
 
 On the create job page there is a box called `Chose a material`.  If you click on this box a searchable dropdown menu will appear displaying the name of every material in your personal materials data bank
 
-<!-- TODO: strip last 1 sec -->
 <img data-gifffer="/images/ChooseSavedMaterial.gif" />
 
 # Importing a structure
