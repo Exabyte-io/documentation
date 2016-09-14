@@ -93,3 +93,5 @@ direct
    0.250000000    0.250000000    0.250000000 Si,P
 ```
 </details>
+
+Please see the [combinatorial screening tutorial](../tutorials/combinatorial-screening.md) for more details.

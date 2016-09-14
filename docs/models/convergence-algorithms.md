@@ -12,6 +12,7 @@ In most cases to have a reasonable level of confidence that a result can be trus
 Currently our k-point convergence algorithm systematically increments the starting k-point density by 1 in each lattice vector direction until the total energy of the system does not increase by more than 0.001 eV.  This feature is accessible as an stand-alone workflow or as an add-on initial step before the final total energy or property calculation desired (similar to relaxation).
 
 <img data-gifffer="/images/AddKpointConvergence.gif" />
+Please see the [k-point convergence tutorial](../tutorials/kpt-convergence.md) for more details.
 
 !!! note "Convergence + Relaxation"
     If both k-point convergence and relaxation preparation steps are added to your simulation flow the k-point convergence flow will be executed prior to the relaxation flow.
