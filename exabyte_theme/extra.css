@@ -24,6 +24,21 @@ body {
     margin-bottom: 20px;
 }
 
+/*
+ * Adjust margins for numbered lists
+ * Ignore `#links` items
+ */
+.section > ol > li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.section #links ~ ol > li {
+    margin-bottom: 0px;
+}
+.section > ol > li:last-child) {
+    margin-bottom: 25px;
+}
+
+
 a:visited {
     color: #999;
 }
