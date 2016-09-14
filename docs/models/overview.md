@@ -11,32 +11,33 @@ If we use Newtonian mechanics as the model, then the method would be the algorit
 # Simulation Engine
 A simulation engine is an implementation of a simulation algorithm in software.
 ## Currently Exabyte.io supports:
-### Quantum ESPRESSO
-### VASP
+1. Quantum ESPRESSO
+2. VASP
 ## Upcoming simulation engines supported:
-### BerkelyGW
-### NWChem
+1. BerkelyGW
+2. NWChem
 ## Future simulation engines planned:
-### LAMMPS
-### OMEN/NEMO
-### NEGF/DFT
+1. LAMMPS
+2. OMEN/NEMO
+3. NEGF/DFT
 
 # Precision
 Precision characterizes the degree of numerical approximation.  For the planewave pseudopotential method the input parameters that affect precision are:
-## k-point sampling
-## Number of points in irreducible Brillouin zone (N kIBZ)
-## Additional parameters - may affect precision significantly
-### Electronic occupations (smearing, tetrahedra, fixed)
-### Smearing (gaussian, Methfessel-Paxton, Marzari-Vanderbilt, Fermi-Dirac)
-### Electronic wavefunction cutoff energy (or kinetic energy cutoff) - (e_cut_wfc)
-### Electronic density cutoff energy (e_cut_den)
+
+1. k-point sampling
+2. Number of points in irreducible Brillouin zone (N kIBZ)
+3. Electronic occupations (smearing, tetrahedra, fixed)
+4. Smearing (gaussian, Methfessel-Paxton, Marzari-Vanderbilt, Fermi-Dirac)
+5. Electronic wavefunction cutoff energy (or kinetic energy cutoff) - (e_cut_wfc)
+6. Electronic density cutoff energy (e_cut_den)
 
 # Accuracy
 Accuracy measures  the degree of proximity between the result of a simulation to the results of an experimental measurement. When one model is more accurate than another one, the end results of a simulation based on the first model is closer to an experimental value.
 
 For Density Functional Theory Model. the input parameters that affect accuracy include:
-## Electronic exchange and correlation functional used in the pseudopotentials (pseudo_xc_type)
-## Type of the model applied (DFT LDA, DFT GGA, DFT LDA + U, DFT GGA + U, DFT HSE, DFT LDA + GW, DFT GGA + GW - as explained on wikipedia
+
+1. Electronic exchange and correlation functional used in the pseudopotentials (pseudo_xc_type)
+2. Type of the model applied (DFT LDA, DFT GGA, DFT LDA + U, DFT GGA + U, DFT HSE, DFT LDA + GW, DFT GGA + GW)
 
 !!! warning "Accuracy and Precision are unique"
     Although Accuracy and Precision are often used interchangeably, they have different meanings.
