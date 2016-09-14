@@ -25,15 +25,20 @@ This brings up a new page with a default silicon atomic structure.  The 3 dimens
 
 If you would like to work with something other than Silicon, please follow the directions on the upload-and-import.md webpage and return to this webpage.
 
+#### Lattice selection
+
 If you move your mouse to the box containing `angstrom, FCC` the `>` inside that box will turn to `<`.  If you click anywhere inside that box an overlay will pop up on your screen.  The overlay will allow you to set the parameters of the crystal structure. (Crystal structure reference [[1](#links)])
 
 It is possible to manually set all lattice constants and angles between the lattice vectors.  Alternately, to choose a default crystal cell other than Face-Centered Cubic, click on the `Face-centered Cubic` line below the `Lattice type` heading and a selection box with the 14 possible crystal cells will appear.  You can select an alternate crystal lattice by clicking on a different cell type and the displayed angles and lattice constants will automatically change.  When you select a new crystal lattice click the "Update Lattice" button.  The overlay will disappear and the 3D visual representation of the structure will change to reflect the new lattice type.
 
-The default representation of the atomic cooridates is in direct corrdinates (also commonly called fractional coordinates [[2](#links)]).  If you would like to work with the actual cartesian coordinates simply click on the "Cartesian" to convert the coordinates.
+#### Atomic basis/coordinates selection
+
+The default representation of the atomic cooridates is in direct corrdinates (also commonly called fractional coordinates [[2](#links)]) and specified under the basis section.  If you would like to work with the actual cartesian coordinates simply click on the "Cartesian" to convert the coordinates.
 
 <!-- TODO: split into lattice and basis separately -->
 <img data-gifffer="/images/AlterMaterialStructure.gif" />
 
+Alternating you can generate a custom lattice structure
 ### Supercells
 
 A supercell most commonly refers to an atomic structure that is a multiplicative representation of a smaller building block structure.  A primitive unit cell is the smallest possible building block structure to represent the material.  Most elements in the periodic table contain 2 atoms or less in their primitive unit cell.  If however you want an impurity at less than 50% in a 2-atom primitive unit cell element, you would need to make a copy of the unit cell in one or more directions on each axis in the structure.  That structure created after the copies of the unit cell are made is a supercell.
