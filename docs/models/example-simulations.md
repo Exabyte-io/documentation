@@ -1,47 +1,59 @@
-<!-- TODO by MH -->
+<!-- TODO by MH
 For all of the characteristic properties:
-    for all supported simulation engines:
-        list default input files used to to extract the property
         explain how we assert fidelity
-
-Currently we support the characteristic property simulations [**here**](../materials/characterisitc-properties.md)
+-->
+Currently we support the characteristic property simulations [**here**](../materials/characteristic-properties)
 
 # Core Properties
 
-## [Electronic wave functions](../materials/characterisitc-properties#Electronic-wave-functions)
+**VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
+
+**Quantum Espresso**: requires the standard *.in and *.upf files only
+
+## [Electronic wave functions](../materials/characteristic-properties#electronic-wave-functions)
 Please see the [first simulation tutorial](../tutorials/first-simulation.md) for more details.
 
-## [Electronic energies](../materials/characterisitc-properties#Electronic-energies)
+## [Electronic energies](../materials/characteristic-properties#electronic-energies)
 Please see the [first simulation tutorial](../tutorials/first-simulation.md) for more details.
 
 Both electronic energies and wave functions are calculated concurrently in the example below:
 
-# [Principal Properties](../materials/characterisitc-properties#Principal-properties)
+# [Principal Properties](../materials/characteristic-properties#principal-properties)
 Please see the [first simulation tutorial](../tutorials/first-simulation.md) for more details.
 Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, Average pressure, and Charge density are all usually calculated concurrently as shown in the example below:
 
-# [Derived Properties](../materials/characterisitc-properties#Derived-Properties)
+# [Derived Properties](../materials/characteristic-properties#derived-properties)
+**VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files unless otherwise noted
 
-## [Electronic Properties](../materials/characterisitc-properties#Electronic-Properties)
+**Quantum Espresso**: requires the standard *.in and *.upf files only unless otherwise noted
 
-### [Band Structure](../materials/characterisitc-properties#Band-structure)
+## [Electronic Properties](../materials/characteristic-properties#electronic-properties)
+
+### [Band Structure](../materials/characteristic-properties#band-structure)
 Please see the [band structure tutorial](../tutorials/band-structure.md) for more details.
 
-### [Band Gap](../materials/characterisitc-properties#Band-gap)
+**VASP**: requires INCAR, KPOINTS, POTCAR, & POSCAR files as well a second version of the KPOINTS file and the CHGCAR file for the second step of the simulation
+
+**Quantum Espresso**: requires the standard *.in and *.upf files for pw.x execution and alternate *.in and input wavefunctions and charge density for executions of bands.x
+
+
+### [Band Gap](../materials/characteristic-properties#band-gap)
 Please see the [band gap tutorial](../tutorials/band-gap.md) for more details.
 
-### [Density of States and Partial DOS](../materials/characterisitc-properties#Density-of-States-and-Partial-DOS)
+### [Density of States and Partial DOS](../materials/characteristic-properties#sensity-of-states-and-partial-dos)
 Please see the [density of states tutorial](../tutorials/density-of-states.md) for more details.
 
-### [Fermi surface](../materials/characterisitc-properties#Fermi-surface)
+### [Fermi surface](../materials/characteristic-properties#fermi-surface)
 Please see the [Fermi surface tutorial](../tutorials/fermi-surface.md) for more details.
 
-## [Chemistry Properties](../materials/characterisitc-properties#Chemical-Properties)
+## [Chemistry Properties](../materials/characteristic-properties#chemical-properties)
 
-### [Formation energy at 0K](../materials/characterisitc-properties#Formation-energy-at-0K)
+### [Formation energy at 0K](../materials/characteristic-properties#formation-energy-at-0K)
 Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.
 
-## [Vibrational Properties](../materials/characterisitc-properties#Vibrational-Properties)
+## [Vibrational Properties](../materials/characteristic-properties#vibrational-properties)
 
-### [Zero Point Energy](../materials/characterisitc-properties#Zero-Point-Energy)
+### [Zero Point Energy](../materials/characteristic-properties#zero-point-energy)
 Please see the [zero point enegry tutorial](../tutorials/zero-point-energy.md) for more details.
+
+**Quantum Espresso**: requires the standard *.in and *.upf files as well as a ph.in input file as well as the wavefunctions from the first step in the methodology
