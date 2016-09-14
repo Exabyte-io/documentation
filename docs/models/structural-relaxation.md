@@ -25,4 +25,6 @@ Relaxations are usually classified by the number of degrees of freedom allowed t
 
 In many cases simulation software allows one to specify constraints in certain directions in the material or on specific atoms of the material.  These are more advanced features of the simulation engine and must be used with caution but are critical in some cases.  For example, for interface calculations, constraining the lattice parameter perpendicular to the interface plane may be critical otherwise the stress involved in building the interface would result in the supercell structure expanding to the point at which the distance between interface atoms suggest there is no bonding across the interface.
 
+Please see the [relaxation tutorial](../tutorials/relaxation.md) for more details.
+
 In some cases like interfaces it may be necessary to constrain the relaxation to not allow growth of the cell in a direction perpendicular to the interface but it is generally advisable to allow your atomic positions to at least relax in most cases.
