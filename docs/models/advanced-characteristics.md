@@ -9,6 +9,8 @@ The calculation of some characteristic properties requires multiple calculations
 
 We have calculated a series of simulations on all pseudopotentials that we currently supported for an automated formation energy calculation.  We have pre-calculated the converged k-point density, total energy, and zero point energy of all elemental pseduopotentials and saved these values.  When choosing the formation energy workflows for either application, the correct elemental total and zero point energies are used to calculate the formation energy of the material in question.  Please note that the reference state for the elements is at 0 K and 0 pressure.  The formation energy of a material as well as the reference state total and zero point energy for each element in the material are displayed in the "Results" tab within their own text box.
 
+Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.
+
 !!! warning "Formation energy automation"
     Currently we only support automated calculation of formation energy for the pseudopotentials that we currently provide (PAW for VASP and gbrv for quantum espresso).  If you chose to import your own pseudopotential for your calculation, you will need to manually calculate your reference total and zero point energies at converged k-point densities.  In the future we will automate this entire flow for user-imported pseudopotentials as well.  The full automation of formation energy also only currently works for 2-element compounds.  This will be upgraded to enable automation on a arbitrary number of elements in a compound in the future.
 
@@ -17,6 +19,8 @@ We have calculated a series of simulations on all pseudopotentials that we curre
 # Band Gap
 
 The band gap is defined as the energy difference between the highest occupied energy state of a material and the lowest unoccupied energy state of the material.  However, a band gap can either be a direct or indirect band gap.  Direct band gap means the minimum change in energy between occupied and unoccupied states at the same k-point.  The indirect band gap means the minimum change in energy between occupied and unoccupied states at different k-points.  The indirect band gap could potentially be smaller than the direct band gap.  We have automated the search for both types of band gaps, but require a band structure calculation first to determine these values.
+
+Please see the [band gap tutorial](../tutorials/band-gap.md) for more details.
 
 <hr>
 
