@@ -57,7 +57,7 @@ In order to use CLI via ssh terminal you need to generate ssh keys and upload yo
 
 Web terminal is an alternative for users who want to use a web-based SSH terminal or are behind a firewall that blocks SSH connections. We use [Apache Guacamole](https://guacamole.incubator.apache.org/), a clientless remote desktop gateway that supports standard protocols like VNC, RDP, and SSH. In-browser SSH terminal is accessible from the [right sidebar](../getting-started/ui-overview/#account-navigation-right-sidebar) of the web application.
 
-![Guacamole SSH Terminal Sidebar](../images/GuacamoleSSHTerminalSidebar.png "Guacamole SSH Terminal Sidebar")
+<img data-gifffer="/images/GuacamoleSSHTerminalSidebar.gif">
 
 Guacamole SSH terminal covers the whole page. You need to click on the close bottom at the top right corner to go back to the main content area.
 
