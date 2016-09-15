@@ -25,6 +25,6 @@ This options lets you get notified on certain events, including job start, abort
 
 ### Advanced Options
 
-There are multiple data centers with different specifications that you can submit your job to. When selecting the data center you should consider the current load on each data center. This information is available on Load page located in left hand sidebar.
+There are multiple clusters (datacenters) with different specifications available. When selecting cluster/datacenter one should consider the current load on each. This information is available on Compute Load page located in left hand sidebar.
 
-![Data Centers Load](../images/DataCentersLoad.png "Data Centers Load")
+![Data Centers Load](../images/DataCentersLoad.png "Compute Load")
