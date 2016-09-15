@@ -1,12 +1,34 @@
 <!-- TODO by MH -->
-We will calculate the band structure of Silicon.  Please note that this calculation will be performed using standard DFT-LDA and therefore underprediction of the band gap is to be expected.  Further modifications to the input files and settings to correctly predict the band structure and the distance between the highest occupied band and lowest unoccupied band are possible and will be explored and implemented in the future.
+
+We will calculate the band structure of Silicon.
+!!! Note "Accuracy of technique"
+    This calculation will be performed using standard DFT-LDA and therefore underprediction of the band gap is to be expected.  Further modifications to the input files and settings to correctly predict the band structure and the distance between the highest occupied band and lowest unoccupied band are possible and will be explored and implemented in the future.
 
 Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.  Under workflow chose the "Bandstructure" for either VASP or Quantum Espresso.
 
-In Quantum Espresso, this will result in 3 workflow units being automatically populated.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation.  The 3rd unit calculates the bands energy at each of the kpoints in the non self-consistent calculation.
+<img data-gifffer="/images/BandStep1.gif" />
+
+In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.  For this reason we add both k-point convergence and relaxation as pre-processors to the band structure calculation.  You can see more details of these workflows at [kpt-convergence](kpt-convergence) and [relaxation tutorials](relaxation)
+
+<img data-gifffer="/images/BandStep2.gif" />
+
+In VASP, this will result in 2 workflow units being automatically populated.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation.
 
 If we examine the input files for each step in the workflow we will see that the k-point path for Si has been defined along special high symmetry k-points.  Currently we only support the automatic generation of high symmetry k-points for FCC structures.  Support for high symmetry k-point path sampling for band structure calculations of all 14 lattice types will be supported in a future release.
 
+<img data-gifffer="/images/BandStep3.gif" />
+
+Before submitting the calculation, click on the "Go to Compute" button and examine the compute parameters.  The example below shows how to increase the total run time to 15 minutes, the number of cores to 2 cores, and how to turn on email notifications of when the job starts and ends.  Click "No" when it asks if you want to save a duplicate material.
+
+<img data-gifffer="/images/BandStep4.gif" />
+
+
+
 As each workflow is executing, you can monitor it's progress live by monitoring both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.
 
-When all 3 units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the band structure of silicon as a function of the special k-point paths chosen
+<img data-gifffer="/images/BandStep5.gif" />
+
+
+When all 5 units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the band structure of silicon as a function of the special k-point paths chosen
+
+<img data-gifffer="/images/BandStep6.gif" />
