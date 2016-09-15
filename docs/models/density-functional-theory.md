@@ -1,15 +1,16 @@
 <!-- by MH -->
 
-We currently support Density Functional Theory in the planewave pseudopotential approximation as implemented in Quantum ESPRESSO and VASP simulation packages. Both have similar inputs but structure their inputs in a distinctive way through different input files. Quantum Espresso also breaks its execution workflow up into seperate executables but Exabyte.io makes this difference transparent to the user.  However, especially for more advanced users it is critical to understand the input file options to customize your work.  We've provided a few references and examples below with links back to the application information pages for more details.
+We currently support Density Functional Theory in the planewave pseudopotential approximation as implemented in Quantum ESPRESSO and VASP simulation packages. Both have similar inputs but structure their inputs in a distinctive way through different input files. Quantum Espresso also breaks its execution workflow up into separate executables and we make this difference transparent to the user.  However, especially for more advanced users it is critical to understand the input file options to customize your work.  We've provided a few references and examples below with links back to the application information pages for more details.
 
-# Input File Primer/Examples:
+# Input File Examples:
 
 <hr>
 
-## VASP Input Files:
+## VASP
 
 ### INCAR
-Control file of algorithm and methodology setting. A comprehensive list of available parameters is available at http://cms.mpi.univie.ac.at/wiki/index.php/Category:INCAR
+
+Control file of algorithm and methodology setting. A comprehensive list of available parameters is available [here](http://cms.mpi.univie.ac.at/wiki/index.php/Category:INCAR)
 
 <details>
 <summary>**Example INCAR file**</summary>
@@ -24,6 +25,7 @@ LCHARG = .FALSE.   Do not output the charge density file CHGCAR
 </details>
 
 ### KPOINTS
+
 Information about the k-points used in the calculation.  Full explanation of available settings available at http://cms.mpi.univie.ac.at/vasp/vasp/KPOINTS_file.html
 
 <details>
@@ -38,7 +40,8 @@ Gamma
 </details>
 
 ### POSCAR
-The structure of the supercell/material and information on relaxation constraints.  Full explanation of available settings available at http://cms.mpi.univie.ac.at/vasp/vasp/POSCAR_file.html
+
+The structure of the crystal cell and information about relaxation constraints.  Full explanation of available settings available at http://cms.mpi.univie.ac.at/vasp/vasp/POSCAR_file.html
 
 <details>
 <summary>**Example POSCAR file**</summary>
@@ -57,14 +60,19 @@ Direct
 </details>
 
 ### POTCAR
-Pseudopotential input file.  Instructions onc creating the POTCAR file http://cms.mpi.univie.ac.at/vasp/vasp/POTCAR_file.html
+
+Pseudopotential input file.  Instructions on creating the POTCAR file can be found [here](http://cms.mpi.univie.ac.at/vasp/vasp/POTCAR_file.html).
 
 <hr>
 
-## Quantum Espresso Input Files:
-As mentioned above, quantum espresso breaks its execution up into multiple executables in contrast to VASP.  On this page we will just focus on the pw.x executable input files (http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html) as the input settings for other executables can be quite advanced and is explained in depth on the quantum espresso website at http://www.quantum-espresso.org/users-manual/input-data-description/
-### *.in
+## Quantum Espresso
+
+As mentioned above, Quantum ESPRESSO breaks its execution up into multiple executables in contrast to VASP.  On this page we will just focus on the pw.x executable [input](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html) as the input settings for other executables can be quite advanced and is explained in depth on [Quantum ESPRESSO website](http://www.quantum-espresso.org/users-manual/input-data-description/)
+
+### pw.in
+
 Summary input file that combines similar functionality to INCAR, KPOINTS, & POSCAR in vasp
+
 <details>
 <summary>**pw_scf.in file structure**</summary>
 ```
@@ -117,6 +125,7 @@ if (not automatic)
    label_n Fx(n) Fy(n) Fz(n) ]
 ```
 </details>
+
 <details>
 <summary>**pw_scf.in Example file**</summary>
 ```
@@ -145,12 +154,15 @@ K_POINTS
    0.25 0.25 0.25 1.0
 ```
 </details>
+
 ### *.upf
+
 Pseudopotential input file.  List of pseudopotentials currently available on the Quantum Espresso website http://www.quantum-espresso.org/pseudopotentials/
 
 <hr>
 
 # Convergence and Relaxation
+
 In most cases to have a reasonable level of confidence that a result can be trusted the total energy should not increase significantly when the k-point density is increassed.  This search for the appropriate density of k-points is called [k-point convergence](convergence-algorithms.md).
 
 It is often desirable to obtain [relaxed structures](structural-relaxation.md) to ensure that your system is in the lowest total energy state configuration possible before computing your property.
@@ -158,6 +170,7 @@ It is often desirable to obtain [relaxed structures](structural-relaxation.md) t
 <hr>
 
 # Additional resources
+
 There are many well developed Density Functional Theory reviews on the web and below we list a few that we find the most helpful:
 1. P. Hohenberg and W. Kohn, Phys. Rev. 136, B864 1964, http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B864
 
