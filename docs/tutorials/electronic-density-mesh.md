@@ -2,10 +2,11 @@
 
 We will calculate the electon density mesh of Silicon.  The electron density mesh is a pre-requisite for any band structure calculation so this tutorial is closely related to the [band structure tutorial](band-structure.md)
 
-Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.  Under workflow chose the "Bandstructure" for either VASP or Quantum Espresso.
+Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
 
 <img data-gifffer="/images/BandStep1.gif" />
 
+Under workflow chose the "Bandstructure" for either VASP or Quantum Espresso.
 In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.  For this reason we add both k-point convergence and relaxation as pre-processors to the band structure calculation.  You can see more details of these workflows at [kpt-convergence](kpt-convergence) and [relaxation tutorials](relaxation)
 
 <img data-gifffer="/images/BandStep2.gif" />
@@ -24,10 +25,18 @@ As each workflow is executing, you can monitor it's progress live by monitoring 
 
 <img data-gifffer="/images/BandStep5.gif" />
 
-When all 5 units are complete we are ready to go to the terminal window to visualize the electron density mesh.  The next step is to open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  In the right sidebar obtained when clicking on your username or avatar in the upper right hand corner is a "Remote Desktop" option.  Select this and a different overlay will appear in your web browser of a graphical user session.
+When all 5 units are complete we are ready to go to the terminal window to visualize the electron density mesh.  The next step is to open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar you used earlier in the tutorial is a "Remote Desktop" option.
 
-<img data-gifffer="/images/OpenRemoteDesktop.gif" />
+![Remote Desktop](../images/ChooseRemoteDesktop.png "Remote Desktop")
 
-Find and open XCrysden from ???.  Within XCrysden, go to file->Open and navigate to the directory where you the electron density file ??? is and open to a visualization of the electron density
+Select this and a different overlay will appear in your web browser of a graphical user session.
+
+![Start Remote Desktop](../images/StartRemoteDesktop.png "Start Remote Desktop")
+
+Find and open XCrysden under the "Other" dropdown menu item.
+
+![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
+
+Within XCrysden, go to file->Open and navigate to the directory where you the electron density file is and open to a visualization of the electron density.
 
 <img data-gifffer="/images/VisualizeElectronDensity.gif" />
