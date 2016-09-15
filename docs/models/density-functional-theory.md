@@ -1,9 +1,6 @@
-<!-- TODO by MH -->
-<!-- TODO: MH-->
+<!-- by MH -->
 
-We use density functional theory and currently support the pseudopotential approximation as implemented in quantum espresso and VASP.
-
-Both VASP and quantum espresso have similar inputs but structure their inputs in a unique way through different input files.  Quantum Espresso also breaks its execution workflow up into seperate executables but Exabyte.io makes this difference transparent to the user.  However, especially for more advanced users it is critical to understand the input file options to customize your work.  We've provided a few references and examples below with links back to the application information pages for more details.
+We currently support Density Functional Theory in the planewave pseudopotential approximation as implemented in Quantum ESPRESSO and VASP simulation packages. Both have similar inputs but structure their inputs in a distinctive way through different input files. Quantum Espresso also breaks its execution workflow up into seperate executables but Exabyte.io makes this difference transparent to the user.  However, especially for more advanced users it is critical to understand the input file options to customize your work.  We've provided a few references and examples below with links back to the application information pages for more details.
 
 # Input File Primer/Examples:
 
