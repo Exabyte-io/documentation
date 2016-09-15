@@ -41,9 +41,18 @@ Finally you can also browse the actual output and input files that are part of t
 
 To use the terminal interface, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.  One of the options in this side bar is "Terminal".  After clicking on "Terminal" an overlay will appear filling up your browser window with a text based terminal emulator called Guacamole.
 
-Run "ls -ort ~" to see the directories present and then "cd ~/data" to enter the directory.  Once in that directory run "grep 'Copper Fermi Surface Test' */*" to find the directory that contains the results of your most recent Fermi Surface calculation.  "cd" into the appropriate directory.  Then run the following command to generate the post-processing bxsf file.
+<img data-gifffer="/images/OpenTerminal.gif" />
+
+Run "ls -ort ~" to see the directories present and then "cd ~/data" to enter the directory.  Once in that directory run "grep 'Copper Fermi Surface Test' */*" to find the directory that contains the results of your most recent Fermi Surface calculation.  "cd" into the appropriate directory.  Then run the following command to generate the post-processing bxsf file:
+
+<img data-gifffer="/images/GenerateBXSFFile.gif" />
+
 
 Now type "exit" in the terminal to log out of the terminal.  The next step is to open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar you used earlier in the tutorial is a "Remote Desktop" option.  Select this and a different overlay will appear in your web browser of a graphical user session.
 
-Find and open XCrysden from ???.  Within XCrysden, go to file->Open and navigate to the directory where you created the bxsf file to open a visualization of the Fermi Surface
+<img data-gifffer="/images/OpenRemoteDesktop.gif" />
+
+Find and open XCrysden from ???.  Within XCrysden, go to file->Open and navigate to the directory where you created the bxsf file to open a visualization of the Fermi Surface.
+
+<img data-gifffer="/images/VisualizeFermiSurface.gif" />
 
