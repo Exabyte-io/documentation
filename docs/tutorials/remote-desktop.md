@@ -7,7 +7,14 @@ We provide a remote desktop function directly through the web to enable this.  W
 1. XCrysden
 2. Vesta
 
-To use the remote desktop, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.  One of the options in this side bar is "Remote Desktop".  After clicking on "Remote Desktop" an overlay will appear filling up your browser window with a desktop  emulator called Guacamole.
+One must open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar you used earlier in the tutorial is a "Remote Desktop" option.
 
-If you open Vesta you can navigate to your home ~/data/ directory tree where all the directories of your past and present simulations reside.  Go into one of this directories and you can visualize any quantum espresso input file.
+![Remote Desktop](../images/ChooseRemoteDesktop.png "Remote Desktop")
 
+Select this and a different overlay will appear in your web browser of a graphical user session.
+
+![Start Remote Desktop](../images/StartRemoteDesktop.png "Start Remote Desktop")
+
+Find and open XCrysden or Vesta under the "Other" dropdown menu item.
+
+![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
