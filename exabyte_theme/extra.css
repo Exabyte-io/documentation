@@ -15,6 +15,10 @@ body {
     background-color: #f8f8f8;
 }
 
+details {
+    color: #1b345b;
+}
+
 .section {
     text-align: justify;
 }
@@ -23,6 +27,21 @@ body {
 .section > ul > li > ul > li:last-child {
     margin-bottom: 20px;
 }
+
+/*
+ * Adjust margins for numbered lists
+ * Ignore `#links` items
+ */
+.section > ol > li:not(:last-child) {
+    margin-bottom: 15px;
+}
+.section #links ~ ol > li {
+    margin-bottom: 0px;
+}
+.section > ol > li:last-child) {
+    margin-bottom: 25px;
+}
+
 
 a:visited {
     color: #999;
@@ -281,11 +300,13 @@ ul.subnav li.toctree-l1 {
  *                  BREADCRUMBS
  * --------------------------------------------------------- */
 .wy-breadcrumbs {
-    font-size: 24px;
-    padding: 5px;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
 }
 .wy-breadcrumbs li:nth-last-of-type(2) {
-    font-weight: 600;
+    font-weight: 400;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
 /* --------------------------------------------------------- *
