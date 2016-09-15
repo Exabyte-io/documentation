@@ -1,11 +1,12 @@
 <!-- by MH -->
 
-Combinatorial sets are used to study a wide variety of modifications to a base crystal structure through atomic substituion of elements at particular atomic positions.  To this end it is possible to specify what elements are substituted for each element in a structure and specify a different substituion rule for each position in the atomic structure as well.
+Combinatorial sets are used to study a wide variety of modifications to a base crystal structure through atomic substituion of elements at particular atomic positions.  To this end it is possible to specify what elements are substituted for each atomic site in a structure and specify a different substituion rule for each position as well.
 
-To activate this capability, go to the `Create Job` webpage.  On this page near the upper right corner of the three dimensional window showing the visual representation of the atoms you will see a box called `Activate Comibinatorial`.  If you click on this button new functionality will appear on your screen that may not be immediately self-explanatory.  To get more information to read on how to set up the combinatorics, click on the `i` information button.  The contents of that page are also displayed below as well.
+To activate combinatorial set generation, go to `Create Job` webpage. On this page near the upper right corner of the structure visualization you will see the corresponding button. To get more information to read on how to set up the combinatorics, click on the <i class="zmdi zmdi-info"></i> button.  The contents of the page are also displayed below.
 
 
 # Feature Overview
+
 This feature lets users create multiple jobs at the same time using a combinatorial set of materials and input templates for workflows.
 
 The combinatorial part is reflected in 2 input fields: `basis` and `lattice basis`
