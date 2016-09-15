@@ -1,10 +1,12 @@
 <!-- by MM -->
 
-This page contains benchmarks for three usage scenarios considered:
+This page contains brief overview of the benchmarks for three usage scenarios considered:
 
 - high-throughput calculations
 - distributed memory calculations
 - performance within one compute-node
+
+For more detailed information about case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [this page](https://exabyte.io/#case-study).
 
 ## High-throughput scalability study
 
@@ -109,6 +111,7 @@ All tasks were finished within 38 hours from the start, with the shortest ones t
 
 A "real-world" example high-throughput materials discovery run scaling to nearly 300 materials (each with an advanced geometrical configuration involving 24 atoms inside a crystal unit cell) and nearly 11 thousand CPU was successfully attempted by an enterprise customer. Without large upfront expenditures and while using familiar environments and tools, they were able to quickly obtain the necessary data about the formation energies of metallic alloys. This data is now being used by the customer to guide their experimental search for better alloys. The scale of this run was, however, is far from the limit on the resources available at exabyte.io, and we have internal data in possession that shows significantly higher scale reached by our engineering team in development (contact us in case you would like to learn more).
 
+<hr>
 
 ## Distributed memory calculations
 
@@ -699,9 +702,7 @@ FeSe monolayer with 4 atoms
 * K-point sampling based parallelization appears to be feasible and scales efficiently up to 16 nodes,
 * Parallelization over the electronic bands for the cases studied shows efficient scalability up to 4 nodes for VASP, for QE an adjustment of parallelization parameters is necessary to reach efficient parallelization over electronic bands.
 
-## Case studies
-
-For more information about our case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [here](https://exabyte.io/#case-study).
+<hr>
 
 ## Cloud vendors performance comparison
 
@@ -716,29 +717,31 @@ Plane-wave Pseudopotential Density Functional Theory formalism as implemented in
 <details>
     <summary>**INCAR**</summary>
 ```
- SYSTEM =  Si
-
-   NWRITE = 2
-   IALGO  = 48 ! uncomment this line to get timings
-   NELM = 13
-   ENMAX  = 140 eV ; IALGO = -1 ; NELMIN = 3 ; NELMDL = 7
-   NSIM  = 4
-
-   LREAL  = .TRUE.   real space projections
-   BMIX   = 2.5      mixing parameter
-   ISYM   = 0        switch of symmetry
-   EDIFF  = 1E-4
-   LWAVE  = .FALSE.
-   LCHARG = .FALSE.
-
- Ionic Relaxation
-   NSW    =      0    number of steps for IOM
-   POTIM  =   5.00    time-step for ion-motion
-   TEBEG  =   423     temperature
-
- DOS related values:
-   ISMEAR =    1  ; SIGMA = 0.1
-   EMIN   =   -15 ;  EMAX = 0
+SYSTEM = Si
+!!
+NWRITE = 2
+IALGO = 48
+NELM = 13
+ENMAX = 140 eV
+IALGO = -1
+NELMIN = 3
+NELMDL = 7
+NSIM = 4
+LREAL = .TRUE.
+BMIX = 2.5
+ISYM = 0
+EDIFF = 1E-4
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+!!
+NSW = 0
+POTIM = 5.00
+TEBEG = 423
+!!
+ISMEAR = 1
+SIGMA = 0.1
+EMIN = -15
+EMAX = 0
 ```
 </details>
 
@@ -779,7 +782,7 @@ Gamma
 
 |Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps) |Runtime (sec)|
 |:---------|:---------------------------------------:|:---------:|:-------:|:--------------:|:---------------:|
-|AWS       |36 cores, Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |37.8             |
-|Azure     |16 cores, Intel Xeon E5-2673-v3, 2.40GHz |32         |256      |10              |43.5             |
-|Rackspace |32 cores, Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |49               |
-|Softlayer |32 cores, Intel Xeon E5-2650-v0, 2.00GHz |64         |25       |1               |89.5             |
+|AWS       |36 core, Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |37.8             |
+|Azure     |16 core, Intel Xeon E5-2673-v3, 2.40GHz |32         |256      |10              |43.5             |
+|Rackspace |32 core, Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |49               |
+|Softlayer |32 core, Intel Xeon E5-2650-v0, 2.00GHz |64         |25       |1               |89.5             |
