@@ -296,11 +296,13 @@ ul.subnav li.toctree-l1 {
  *                  BREADCRUMBS
  * --------------------------------------------------------- */
 .wy-breadcrumbs {
-    font-size: 24px;
-    padding: 5px;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
 }
 .wy-breadcrumbs li:nth-last-of-type(2) {
-    font-weight: 600;
+    font-weight: 400;
+    font-family: "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
 }
 
 /* --------------------------------------------------------- *
