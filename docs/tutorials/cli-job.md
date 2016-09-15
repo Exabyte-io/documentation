@@ -4,3 +4,6 @@ Our website provides you with a quick and easy way to submit your multi-step cal
 We provide a interface to a terminal command line window directly throught the web to enable this.  This is also the preferred method of execution for a software tool that we have not yet implemented in our automated framework.  It is expected that the user will have to set up any connection to license servers or bring the appropriate license files for their calculations.
 
 To use the terminal interface, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.  One of the options in this side bar is "Terminal".  After clicking on "Terminal" an overlay will appear filling up your browser window with a text based terminal emulator called Guacamole.
+
+<img data-gifffer="/images/OpenTerminal.gif" />
+
