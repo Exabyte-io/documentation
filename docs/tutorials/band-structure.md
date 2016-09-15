@@ -1,6 +1,7 @@
 <!-- TODO by MH -->
 
 We will calculate the band structure of Silicon.
+
 !!! Note "Accuracy of technique"
     This calculation will be performed using standard DFT-LDA and therefore underprediction of the band gap is to be expected.  Further modifications to the input files and settings to correctly predict the band structure and the distance between the highest occupied band and lowest unoccupied band are possible and will be explored and implemented in the future.
 
