@@ -1,41 +1,29 @@
 <!-- by MM -->
 
-# Compute platform
-
 ## Compute levels
 
-We have multiple levels of compute:
+We have multiple levels of compute that let users diversify and optimize the cost-to-performance ratio.
 
-- Debug
-- Regular
-- Fast
-- Saving
+|Level     |Description | Charge factor|
+|:---------|:-----------|:-------------|
+|`Debug`     |provides limited compute resources with no-to-little wait time at a cost premium       |2.0
+|`On-demand` | is meant for most production tasks, provides extensive compute resources at the base rate  |1.0
+|`Saving`    | provides significantly lower rate by utilizing currently idle compute resources; compute resources may be terminated at any time depending on the load in the data center   |0.2
 
-`Debug` level provides a relatively small amount of compute resources immediately with no wait time at an increased cost.
+It is advised to use Debug level while prototyping your calculations, On-demand for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
 
-`Regular` level is meant for most production tasks. It provides extensive compute resources at the base rate defined by [subscription level](/billing/accounts-and-billing#pricing).
+!!! note "&quot;Saving&quot; compute level and compute resources termination"
+    The concept of saving resources is very similar to the spot-based instances introduced by [AWS](https://aws.amazon.com/ec2/spot/). When the datacenter has increased load, some or all saving compute servers may be terminated. We attempt restarting the calculations by resubmitting the corresponding job to resource manager queue. At current, no charge for the first whole hour is incurred upon compute resource termination. More information available [here](../cli/jobs.md#job-termination)
 
-'Fast' level is meant for large-scale tasks. It provides extensive compute resources with almost no wait time and slightly higher price.
+## Platform Architecture
 
-`Saving` compute level is charged at a significantly lower price than Regular, because it is using compute resources that are currently idle. Users need to be aware, however, that cost-saving compute resources may be terminated depending on the load in the data center. More information on this subject is [here](../cli/jobs.md#job-termination)
+Our product is build out of multiple microservices that together form a distributed web application deployable both on public- and private cloud infrastructure. We aggregate together multiple computing clusters that in turn can be deployed in shared- and single-occupancy modes depending on customer preferences and data restrictions. The architecture diagram below demonstrates the basics:
 
-## Resources
+![Service Levels](/images/Architecture.png "Architecture diagram")
 
-As of Sep, 2016 our major compute and storage systems have:
+## Hardware Specifications
 
-|Provider  |Total CPU |Total Memory (GB)|Total Disk (GB)|
-|:---------|:--------:|:---------------:|:-------------:|
-|AWS       |36000     |60000            |Unlimited      |
-|Azure     |10000     |20000            |Unlimited      |
-|Rackspace |6400      |12000            |Unlimited      |
-|Softlayer |3200      |6400             |Unlimited      |
-
-
-* We provide you with unlimited disk storage space. Elastic File System lets us reach to 8EB (exabytes) of disk storage.
-
-* All nodes are connected together via fast low latency interconnection networks with bandwidth ranging from 1-10 Gbps.
-
-Our resources are all hosted by top best cloud vendors, [Amazon Web Services](http://www.aws.amazon.com), [Microsoft Azure](http://www.azure.microsoft.com), [IBM SoftLayer](http://www.softlayer.com) and [Rackspace](http://www.rackspace.com). The following shows the hardware specification for each cloud vendor.
+Our public cloud resources are all hosted by trusted vendors: [Amazon Web Services](http://www.aws.amazon.com), [Microsoft Azure](http://www.azure.microsoft.com), [IBM SoftLayer](http://www.softlayer.com) and [Rackspace](http://www.rackspace.com). The following shows the hardware specification for each vendor.
 
 |Provider  |CPU Count |CPU Type                       |Memory (GB)|Disk (GB)|Bandwidth (Gbps)|
 |:---------|:--------:|:-----------------------------:|:---------:|:-------:|:--------------:|
@@ -46,3 +34,20 @@ Our resources are all hosted by top best cloud vendors, [Amazon Web Services](ht
 
 !!! tip "On-Premises Deployment"
     For customers who want to use their on-premises resources instead of cloud resources because of high security concerns, easier access and management or specific hardware and software support, we are ready to deploy our application stack on top of your private resources. Please contact us at support@exabyte.io for more information.
+
+
+## Available Resources
+
+As of Sep, 2016 our major compute and storage systems have:
+
+|Provider  |Total CPU |Total Memory (GB)|Total Disk (GB)|
+|:---------|:--------:|:---------------:|:-------------:|
+|AWS       |36,000     |60,000            |Unlimited**      |
+|Azure     |10,000     |20,000            |Unlimited**      |
+|Rackspace |6,400      |12,000            |Unlimited**      |
+|Softlayer |3,200      |6,400             |Unlimited**      |
+
+
+** We provide virtually unlimited disk storage space. Elastically grown file system lets us reach to 8EB (exabytes) of disk storage per single compute cluster.
+
+*** All nodes are connected together via fast low latency interconnection networks with bandwidth ranging from 1-10 Gbps.
