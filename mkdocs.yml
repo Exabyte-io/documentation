@@ -34,7 +34,7 @@ pages:
 
     - Models & Methods:
         - Overview:                     models/overview.md
-        - Advanced:                     models/advanced-characteristics.md
+        - Advanced Properties:                     models/advanced-characteristics.md
         - Convergence algorithms:       models/convergence-algorithms.md
         - Structural relaxation:        models/structural-relaxation.md
         - Combinatorial set input:      models/combinatorial-set-input.md
@@ -64,6 +64,7 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
+        - First simulation:        tutorials/first-simulation.md
         - Electronic band structure:        tutorials/band-structure.md
         - Electronic band gap:              tutorials/band-gap.md
         - Electronic density of states:     tutorials/density-of-states.md
@@ -101,10 +102,14 @@ pages:
     - Other:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
-        # - Developer Program:  other/developer-program.md
+        - Developer Program:  other/developer-program.md
+        - Upcoming properties:  other/upcoming-properties.md
+        - Upcoming capabilities:  other/upcoming-capabilities.md
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
         - FAQ:                  other/faq.md
 
     - Terminology:
-        - Simulations:          terminology/simulations.md
+        - Simulations:              terminology/simulations.md
+        - Materials Properties:     terminology/property-classification.md
+        - Crystallography:     terminology/crystallography.md
