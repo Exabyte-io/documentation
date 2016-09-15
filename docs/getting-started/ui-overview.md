@@ -1,15 +1,6 @@
 <!-- DB -->
-This page summarizes the main components of Exabyte.io user interface, and contains a basic overview of the navigation through:
 
-- header bar
-- sidebars: left and right,
-- user account name area,
-- user accounts switcher,
-- dashboard,
-- main content area,
-- materials editor
-
-and other pages.
+This page summarizes the main components of Exabyte.io user interface, and contains a basic overview of the navigation through:header bar, sidebars left and right, user account name area, user accounts switcher, dashboard, main content area, materials editor and other pages.
 
 ## Header Bar
 
@@ -71,6 +62,8 @@ Clicking on your Profile card (header top right) will open the Account navigatio
 | <i class="zmdi zmdi-accounts-add"></i> &nbsp; Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
 | <i class="zmdi zmdi-power"></i> &nbsp; Logout                                                                  | Secure logout
 
+<hr>
+
 ## User Dashboard
 
 Dashboard is the first page you will see when you log in to Exabyte. Its purpose is to quickly fill you on on the status of the system and your recent work.
@@ -100,6 +93,8 @@ This widget displays a summary of your current data storage quota: used and tota
 ### Jobs summary
 
 Jobs summary widget summarizes the total number of jobs run during this same period, and also offers a break down of the job types. There is also a quick link to jump to the jobs list.
+
+<hr>
 
 ## Create Job
 
