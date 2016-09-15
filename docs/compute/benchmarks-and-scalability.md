@@ -1,10 +1,12 @@
 <!-- by MM -->
 
-This page contains benchmarks for three usage scenarios considered:
+This page contains brief overview of the benchmarks for three usage scenarios considered:
 
 - high-throughput calculations
 - distributed memory calculations
 - performance within one compute-node
+
+For more detailed information about case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [this page](https://exabyte.io/#case-study).
 
 ## High-throughput scalability study
 
@@ -109,6 +111,7 @@ All tasks were finished within 38 hours from the start, with the shortest ones t
 
 A "real-world" example high-throughput materials discovery run scaling to nearly 300 materials (each with an advanced geometrical configuration involving 24 atoms inside a crystal unit cell) and nearly 11 thousand CPU was successfully attempted by an enterprise customer. Without large upfront expenditures and while using familiar environments and tools, they were able to quickly obtain the necessary data about the formation energies of metallic alloys. This data is now being used by the customer to guide their experimental search for better alloys. The scale of this run was, however, is far from the limit on the resources available at exabyte.io, and we have internal data in possession that shows significantly higher scale reached by our engineering team in development (contact us in case you would like to learn more).
 
+<hr>
 
 ## Distributed memory calculations
 
@@ -699,12 +702,7 @@ FeSe monolayer with 4 atoms
 * K-point sampling based parallelization appears to be feasible and scales efficiently up to 16 nodes,
 * Parallelization over the electronic bands for the cases studied shows efficient scalability up to 4 nodes for VASP, for QE an adjustment of parallelization parameters is necessary to reach efficient parallelization over electronic bands.
 
-## Case studies
-
-For more information about our case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [here](https://exabyte.io/#case-study).
-
-
-<!-- I believe this part should be in the same page as other benchmarks. -->
+<hr>
 
 ## Cloud vendors performance comparison
 
@@ -712,7 +710,6 @@ Exabyte.io utilizes multiple cloud vendors resources to provide users with a lar
 
 ### Model and Method
 
-<!-- Please adjust this-->
 Plane-wave Pseudopotential Density Functional Theory formalism as implemented in Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials was employed in this run.
 
 ### Inputs
@@ -720,70 +717,64 @@ Plane-wave Pseudopotential Density Functional Theory formalism as implemented in
 <details>
     <summary>**INCAR**</summary>
 ```
-ALGO = Normal
-EDIFF = 0.0001
-ENCUT = 520
-IBRION = 2
-ICHARG = 1
-ISIF = 3
+SYSTEM = Si
+!!
+NWRITE = 2
+IALGO = 48
+NELM = 13
+ENMAX = 140 eV
+IALGO = -1
+NELMIN = 3
+NELMDL = 7
+NSIM = 4
+LREAL = .TRUE.
+BMIX = 2.5
+ISYM = 0
+EDIFF = 1E-4
+LWAVE = .FALSE.
+LCHARG = .FALSE.
+!!
+NSW = 0
+POTIM = 5.00
+TEBEG = 423
+!!
 ISMEAR = 1
-ISPIN = 2
-LORBIT = 11
-LREAL = Auto
-LWAVE = False
-MAGMOM = 24*0.6
-NELM = 100
-NPAR = 1
-NSW = 50
-PREC = Accurate
-SIGMA = 0.2
+SIGMA = 0.1
+EMIN = -15
+EMAX = 0
 ```
 </details>
 
 <details>
     <summary>**POSCAR**</summary>
 ```
-Li8 Al8 Cu8
+Silicon8
 1.0
-11.687317 3.895772 -3.895772
--11.687317 3.895772 -3.895772
-0.000000 1.947886 1.947886
-Al Cu Li
-8 8 8
+5.468728 0.000000 0.000000
+0.000000 5.468728 0.000000
+0.000000 0.000000 5.468728
+Si
+8
 direct
-0.666667 0.333333 1.000000 Al
-0.958333 0.791667 0.500000 Al
-0.500000 0.500000 1.000000 Al
-0.208333 0.041667 0.500000 Al
-0.583333 0.916667 1.000000 Al
-0.333333 0.666667 1.000000 Al
-0.291667 0.458333 0.500000 Al
-0.125000 0.625000 0.500000 Al
-0.916667 0.583333 1.000000 Cu
-0.875000 0.375000 0.500000 Cu
-0.625000 0.125000 0.500000 Cu
-0.750000 0.750000 1.000000 Cu
-0.458333 0.291667 0.500000 Cu
-0.791667 0.958333 0.500000 Cu
-0.083333 0.416667 1.000000 Cu
-0.375000 0.875000 0.500000 Cu
-0.833333 0.166667 1.000000 Li
-0.416667 0.083333 1.000000 Li
-0.708333 0.541667 0.500000 Li
-0.250000 0.250000 1.000000 Li
-1.000000 1.000000 1.000000 Li
-0.541667 0.708333 0.500000 Li
-0.041667 0.208333 0.500000 Li
-0.166667 0.833333 1.000000 Li
+0.250000 0.250000 0.250000 Si
+0.750000 0.750000 0.250000 Si
+0.500000 0.500000 0.000000 Si
+0.000000 0.500000 0.500000 Si
+0.250000 0.750000 0.750000 Si
+0.000000 0.000000 0.000000 Si
+0.750000 0.250000 0.750000 Si
+0.500000 0.000000 0.500000 Si
 ```
 </details>
 
 <details>
     <summary>**KPOINTS**</summary>
 ```
+Automatic mesh
 0
 Gamma
-1 1 2
+  8  8  8
+  0.  0.  0.
 ```
 </details>
 
@@ -791,7 +782,7 @@ Gamma
 
 |Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps) |Runtime (sec)|
 |:---------|:---------------------------------------:|:---------:|:-------:|:--------------:|:---------------:|
-|AWS       |36 cores, Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |37.8             |
-|Azure     |16 cores, Intel Xeon E5-2673-v3, 2.40GHz |32         |256      |10              |43.5             |
-|Rackspace |32 cores, Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |49               |
-|Softlayer |32 cores, Intel Xeon E5-2650-v0, 2.00GHz |64         |25       |1               |89.5             |
+|AWS       |36 core, Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |37.8             |
+|Azure     |16 core, Intel Xeon E5-2673-v3, 2.40GHz |32         |256      |10              |43.5             |
+|Rackspace |32 core, Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |49               |
+|Softlayer |32 core, Intel Xeon E5-2650-v0, 2.00GHz |64         |25       |1               |89.5             |
