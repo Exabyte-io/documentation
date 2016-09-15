@@ -1,9 +1,6 @@
 <!-- TODO by MH -->
-DOS of Si:
+We will calculate the density of states of Silicon.  Please note that this calculation will be performed using standard DFT-LDA and therefore underprediction of the band gap is to be expected.  Further modifications to the input files and settings to correctly predict the band gap are possible and will be explored in the future.
 
-- create job in web app
-- choose workflow
-- run the job
-- monitor progress
-- view results
-- zoom in on graphs, if graphs are present
+Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.  Density of states is calculated in conjunction with band structure calculation so under workflow chose the "Bandstructure + DOS" for either VASP or Quantum Espresso.  Please follow the steps of the band structure tutorial calculation before returing this page.
+
+When all 3 units are complete, switching to the Results tab and the sub-tabs of each will show both density of states and partial density of states calculated for the material.  VASP partial density of states calculations and visualization are not yet implemented, but will be in a future release.
