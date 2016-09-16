@@ -9,10 +9,8 @@ extra_javascript:
 site_favicon: /img/favicon.ico
 copyright: © 2016 <a href="http://platform.exabyte.io">Exabyte Inc</a>. All rights reserved.
 extra:
-    home_url: https://platform.exabyte.io
-    full_width: False
     preload_javascript:
-        - preload.js
+        - /preload.js
 markdown_extensions:
     - admonition
     - toc:
@@ -105,6 +103,8 @@ pages:
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
         - FAQ:                  other/faq.md
+        # Restricted content login page
+        - restricted.md
 
     - Terminology:
         - Simulations:          terminology/simulations.md
