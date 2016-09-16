@@ -4,5 +4,5 @@
 
 <!-- 4:3 aspect ratio -->
 <div class="embed-responsive embed-responsive-4by3">
-  <iframe class="embed-responsive-item" src="http://platform.exabyte.io/login"></iframe>
+  <iframe class="embed-responsive-item" src="https://platform.exabyte.io/login"></iframe>
 </div>
