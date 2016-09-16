@@ -9,31 +9,34 @@ Si is the default material, so if you choose "Create a Job" from the sidebar on 
 
 # Create Workflow
 
-Under workflow chose the "Bandstructure" for either VASP or Quantum Espresso.
-In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.  For this reason we add both k-point convergence and relaxation as pre-processors to the band structure calculation.  You can see more details of these workflows at [kpt-convergence](kpt-convergence) and [relaxation tutorials](relaxation)
+Under workflow chose the "Electronic Density Mesh" for Quantum Espresso.  In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.
 
-<img data-gifffer="/images/BandStep2.gif" />
+<img data-gifffer="/images/Charge1.gif" />
 
-## Adjust KPoints
+## Adjust K-points
 
-In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.
+For charge density it is critical to have a high k-point density to properly sample the isosurfaces.  In VASP, the band structure workflow has 2 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
 
-In VASP, the band structure workflow has 2 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation.
+<img data-gifffer="/images/Charge2.gif" />
 
-We set the kpoint density to 11x11x11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure.  In addition we also apply the recommended k-point path to effectively sample the electronic states based on the symmetry of the crystal.
-
-<img data-gifffer="/images/BandStep3.gif" />
 # Submit job
 
 Before submitting the calculation, click on the "Go to Compute" button and examine the compute parameters.  This is a small structure so 1 core and 5 minutes are sufficient.  Click "No" when it asks if you want to save a duplicate material.
 
-<img data-gifffer="/images/BandStep4.gif" />
+<img data-gifffer="/images/Charge3.gif" />
 
 # Monitoring status
 
 As each workflow is executing, you can monitor it's progress live by monitoring both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.
 
-<img data-gifffer="/images/BandStep5.gif" />
+<img data-gifffer="/images/Charge4.gif" />
+
+# Checking Results
+
+Once the calculation is complete, under the Results tab at the bottom of the page there will be a listing of the files and directories on the system that is clickable to download and transit directories.  The screen shots below show the location of the charge density file
+
+<img data-gifffer="/images/Charge5.gif" />
+
 
 # Preparing for Visualization
 
@@ -53,6 +56,12 @@ Find and open XCrysden under the "Other" dropdown menu item.
 
 ![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
 
+# Visualize Charge Density
+
 Within XCrysden, go to file->Open and navigate to the directory where you the electron density file is and open to a visualization of the electron density.
 
-<img data-gifffer="/images/VisualizeElectronDensity.gif" />
+<img data-gifffer="/images/Charge6.gif" />
+
+Adjust the value of charge density to be displayed and toggle the isosurface buttons to display the data.
+
+<img data-gifffer="/images/Charge7.gif" />
