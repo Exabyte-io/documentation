@@ -40,12 +40,11 @@ Our users compute characteristic properties of materials through high-fidelity m
 
 Other parts explain data security, sharing and collaboration, billing/pricing and our terminology.
 
-
-## Specific features
+## Highlighted features
 
 ### Combinatorial screening
 
-At Exabyte.io we want to enable automation of your combinatorial materials screening process to make it easier to set-up, monitor, and analyze the results. This [page]() contains more information
+We enable automation of materials screening processes to make it easier to create leads, set-up and monitor simulations, and analyze the results. This [page](/materials/combinatorial-sets.md) contains more information about combinatorial materials sets.
 
 ## How to get help
 
