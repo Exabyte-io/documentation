@@ -2,7 +2,7 @@
 
 This page explains how to run a band gap simulation based on density functional theory. We will be studying silicon in the standard diamond-centered cubic structure and use VASP as our simulation engine during this tutorial.
 
-## Create a new job
+# Create a new job
 
 To create a new job, click on the "Create Job" link located in the sidebar/menu on the left.
 
@@ -14,21 +14,21 @@ You will be taken to the "Job wizard" page where you can:
 
 <img data-gifffer="/images/FirstJobCreate.gif" />
 
-## Workflow
+# Workflow
 
 Upon switching to the VASP simulation engine, the Total Energy workflow will become the default workflow.  Total Energy consists of only one execution unit and will also calculate the band gap.  We show below how to click on the execution unit and modify the k-point density to 11x11x11 to ensure a dense enough k-mesh for an accurate band gap prediction.
 
 <img data-gifffer="/images/BandGapWorkflow.gif" />
 
-## Compute parameters
+# Compute parameters
 
 This tab lets you set up the compute parameters of the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficent to add anymore cores to the simulation. Since Si is a small supercell there is no need to increase the number of cores or the simulation runtime. We just need to click "Submit Job" as shown below. You will be asked if you want to keep a copy of the material since it is already save, but answer "No"
 
 <img data-gifffer="/images/BandGapCompute.gif" />
 
-## Monitoring Status and Results
+# Monitoring Status + Results
 
-Once the job is submitted it you will be taken to the Job Status page and can monitor the progress of the self-consitent calculation.  Once the calculation is complete the light on the Status tab will turn Green and the Results tab will become clickable.  You can scroll through the Results tab to see the results including the 0.649 eV indirect band gap found for Si.
+Once the job is submitted it you will be taken to the Job Status page and can monitor the progress of the self-consitent calculation.  Once the calculation is complete the light on the Status tab will turn Green and the Results tab will become clickable.  You can scroll through the Results tab to see the results including the 0.643 eV indirect band gap found for Si.
 
 <img data-gifffer="/images/BandGapResults.gif" />
 
