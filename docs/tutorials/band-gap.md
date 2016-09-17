@@ -8,7 +8,7 @@ This page explains how to calculate an electronic band gap based on density func
 
 # Create job
 
-To create a new job, click on the "Create Job" link located in the sidebar/menu on the left.
+To create a new job, click on the "Create Job" link located in left-hand sidebar menu.
 
 You will be taken to the "Job wizard" page where you can create a material or choose one that you created and saved before using Materials Designer tab.
 
