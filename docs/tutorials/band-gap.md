@@ -2,7 +2,7 @@
 
 This page explains how to calculate an electronic band gap based on density functional theory. We study silicon in the standard diamond-centered cubic structure and use [VASP](https://www.vasp.at/) as our simulation engine during this tutorial.
 
-!!! Note "Band Gap error"
+!!! Note "Accuracy of the estimate"
     Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation ([DFT-GGA](https://en.wikipedia.org/wiki/Density_functional_theory)) and therefore a systematic under-estimate of the band gap is to be expected.  Further modifications to the input files and settings to correctly predict the band gap are possible and explained elsewhere.
 
 
