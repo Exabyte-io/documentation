@@ -1,26 +1,26 @@
 <!-- TODO by MH -->
 
-This page explains how to run a k-point convergence study in density functional theory. K-point convergence can be run either as a stand-alone workflow or prepended to any property calculation.
+This page explains how to run a k-point convergence study using pseudopotential density functional theory. K-point convergence can be run either as a stand-alone workflow or prepended to any property calculation.
 
 # Background
 
-The motivation behind using k-point convergence is explained in detail [here](/models/convergence-algorithms.png "kpt convergence")  This page will focus on the practical steps to use k-point convergence.
+The motivation behind using k-point convergence is explained in detail [here](/models/convergence-algorithms)  This page will focus on the practical steps to use k-point convergence.
 
 # Create job
 
-K-point convergence studies are useful for many different property calculations, but we will use k-point convergence for a simple Total Energy calculation in this tutorial
+K-point convergence studies can be employed for a variety of characteristic properties. We will use k-point convergence for a Total Energy calculation in this tutorial
 
-To create a new project, click on the "Project" link located in the sidebar/menu on the left. After that, click <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> button in the top right corner, as shown in the animation below. Every user has a default project and we will use during this tutorial.
-
-Chose the FCC Si structure provided by default for every user.  The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
+To create a new job, click on the "Create Job" link located in the sidebar/menu on the left. Use the default FCC Si structure. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
 
 <img data-gifffer="/images/ConvergeStep1.gif" />
 
 # Choose workflow
 
-Next, click on the "Workflow" tab choose VASP as the simulation engine to be used and choose the "Total Energy" workflow.
+Next, click on the "Workflow" tab choose VASP as the simulation engine and select "Total Energy" workflow.
 
-Then, to add k-point convergence as a pre-processor to total energy calculation, expand the <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> Advanced section to show un-highlighted buttons for Relaxation and k-point convergence.  Click on the k-point convergence.  If you scroll down the screen to look at the computation units and then toggle the k-point convergence button on and off in the "Advanced" section you will see the units various units that are added for convergence to set up the parameters to increase k-point density and track the total energy throughout the study.
+Then, to add k-point convergence as a pre-processor to total energy calculation, expand the <i class="zmdi zmdi-plus zmdi-hc-border"></i> "Advanced Options" section to show trigger buttons for Relaxation and k-point convergence.  Click on the k-point convergence.
+
+If you scroll down to view the workflow units and then toggle the k-point convergence button on and off in the "Advanced" section you will see the  various units that are added for convergence to set up the parameters to increase k-point density and track the corresponding total energy difference throughout the study.
 
 <img data-gifffer="/images/ConvergeStep2.gif" />
 
