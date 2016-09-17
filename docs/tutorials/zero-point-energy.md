@@ -1,37 +1,37 @@
-<!-- TODO by MH -->
+<!-- by MH -->
 
-This page explains how to run a zero point energy simulation based on density functional theory. We will calculate the zero point energy of silicon.
+This page explains how to run a zero point energy simulation based on density functional theory. We will calculate zero point energy for silicon in face-centered cubic structure.
 
 # Background
 
-The zero point energy is a purely quantum mechanical property that is related to the uncertainty of the electrons position and momentum at 0K.  It is sometimes referred to as a vibration due to the uncertainty principle of the inability to define an exact location for each atom.  It is critical that a well-relaxed structure with converged k-point density is used for zero point energy calculations.
+The zero point energy is a quantum mechanical property that is related to the uncertainty of the electronic position and momentum at 0K. It is sometimes referred to as a vibration due to the uncertainty principle. It is critical that a well-relaxed structure with converged k-point density is used for zero point energy calculations.
 
 # Create job
 
-On the "Create a Job" from the sidebar on the home page Si will automatically be loaded as it is the default material.  We will use the default material for this tutorial
+Click "Create a Job" in left-hand sidebar on the home page. FCC Si will automatically be loaded as it is the default material.
 
 <img data-gifffer="/images/CreateZPEStructure.gif" />
 
 # Choose workflow
 
-Next go to the workflow tab and select "Zero Point Energy" as the workflow type.  As mentioned above, k-point convergence, and relaxing the structure is critical for this property, so we add them by expanding the "Advanced" section and adding them both to the workflow units.  Each individual workflow is described in detail in their own tutorials on [kpt-convergence](kpt-convergence) and [relaxation](relaxation).
+Next go to the workflow tab and select "Zero Point Energy" as the workflow type. As mentioned before, k-point convergence, and structural relaxation are or critical importance for this property, so we add them by expanding the "Advanced" section and adding them both to the workflow. Each individual workflow from within "Advanced Options" is described in detail in their own tutorials. See [kpt-convergence](kpt-convergence) and [relaxation](relaxation).
 
 <img data-gifffer="/images/CreateZPEWorkflow.gif" />
 
 # Examine input file
 
-The unique unit for this tutorial is the vasp_zpe unit.  Clicking on that unit will show the input files for that calculation.  The "IBRION=5" is the key for VASP to run the displacements for the zero point energy calculation.
+The unique unit for this tutorial is the vasp_zpe unit. Clicking on it will show the corresponding input files. "IBRION=5" flag within INCAR enables VASP to run the displacements for the zero point energy calculation.
 
-<img data-gifffer="/images/ShowZPEUnit.gif"  />
+<img data-gifffer="/images/ShowZPEUnit.gif" />
 
 # Monitor status
 
-As each unit in the workflow executes, you can monitor its progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.  The animated GIF below shows the zero point calculation unit of calculations of the total energy of various atom displacements
+As each unit in the workflow is executed, you can monitor progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the "Status" tab under each execution's sub-tab. The animation below shows zero point calculation output for various atom displacements.
 
 <img data-gifffer="/images/TrackZPEResults.gif" />
 
 # Check results
 
-When all units are complete, switching to the Results tab and the sub-tab for the final execution unit will have a card titled "Zero Point Energy" that will display to zero point energy of the material.  The larger the energy the more critical it is to include the zero point energy in your thermodynamic calculations.
+When the execution of all units finished, switching to the "Results" tab and the sub-tab for the final execution unit will have a card titled "Zero Point Energy" that will display the value of zero point energy for the material in question. The larger its value - the more critical it is to include zero point energy in thermodynamic calculations.
 
 <img data-gifffer="/images/ShowZPEResults.gif" />
