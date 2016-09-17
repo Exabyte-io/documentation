@@ -5,19 +5,19 @@ This page explains how to calculate electronic band structure based on density f
 !!! Note "Accuracy of the estimate"
     Please note that this calculation is performed using standard [DFT-GGA](https://en.wikipedia.org/wiki/Density_functional_theory) and therefore underprediction of the energy of unoccupied electronic states expected.  Further modifications to the input files and settings to correctly predict the band gap are possible and will be explored later.
 
-# Create new job
+# Create job
 
 FCC Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
 
 <img data-gifffer="/images/BandStep1.gif" />
 
-# Create workflow
+# Choose workflow
 
 Under workflow chose VASP as your simulation energy and then "Bandstructure" for the workflow.
 
 <img data-gifffer="/images/BandStep2.gif" />
 
-## Adjust KPoints
+## Adjust kpoints
 
 It is critical to have a high k-point density in order to resolve enough details for the band structure plot.
 
@@ -33,13 +33,13 @@ Before submitting the calculation, click on the "Compute" tab and examine comput
 
 <img data-gifffer="/images/BandStep4.gif" />
 
-# Monitoring status
+# Monitor status
 
 As each unit is being executed, you can monitor progress in real-time by viewing both standard output and the graph of the total energy convergence on the "Status" tab.
 
 <img data-gifffer="/images/BandStep5.gif" />
 
-# Examining Results
+# Examine Results
 
 When both units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the band structure of silicon as a function of the special k-point paths chosen.
 
