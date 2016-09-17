@@ -5,13 +5,13 @@ This page explains how to run a density of state calculation based on density fu
 !!! Note "Accuracy of DFT-GGA model"
     Please note that this calculation is performed using standard [DFT-GGA](https://en.wikipedia.org/wiki/Density_functional_theory) and therefore underprediction of the energy of unoccupied electronic states expected.  Further modifications to the input files and settings to correctly predict the band gap are possible and will be explored in the future.
 
-# Create new job
+# Create job
 
 Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
 
 <img data-gifffer="/images/BandStep1.gif" />
 
-# Create workflow
+# Choose workflow
 
 Density of states is calculated in conjunction with band structure calculation so under workflow chose the "Bandstructure + DOS" for either Quantum Espresso.
 

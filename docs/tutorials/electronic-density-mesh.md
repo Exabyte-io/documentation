@@ -2,7 +2,7 @@
 
 This page explains how to calculate and visualize the electron density mesh of FCC Silicon.
 
-# Create new job
+# Create job
 
 Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
 
@@ -16,48 +16,47 @@ Under "Workflow" tab chose the "Electronic Density Mesh" for Quantum Espresso.  
 
 ## Adjust kpoints
 
-For charge density it is critical to have a high k-point density to properly visualize charge isosurfaces.  In VASP, the band structure workflow has 2 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
+For charge density it is critical to have a high k-point density to properly visualize charge isosurfaces.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
 
 <img data-gifffer="/images/Charge2.gif" />
 
 # Submit job
 
-Before submitting the calculation, click on the "Go to Compute" button and examine the compute parameters.  This is a small structure so 1 core and 5 minutes are sufficient.  Click "No" when it asks if you want to save a duplicate material.
+Before submitting the calculation, click on the "Compute" tab and examine the compute parameters.  This is a small structure so 1 CPU and 5 minutes are sufficient.  Click "No" when asked if you want to save a duplicate material.
 
 <img data-gifffer="/images/Charge3.gif" />
 
-# Monitoring status
+# Monitor status
 
-As each workflow is executing, you can monitor it's progress live by monitoring both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.
+As each unit in the workflow is executing, you can monitor its progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.
 
 <img data-gifffer="/images/Charge4.gif" />
 
-# Checking Results
+# Checking results
 
 Once the calculation is complete, under the Results tab at the bottom of the page there will be a listing of the files and directories on the system that is clickable to download and transit directories.  The screen shots below show the location of the charge density file
 
 <img data-gifffer="/images/Charge5.gif" />
 
-
-# Preparing for Visualization
+# Preparing for visualization
 
 When all 5 units are complete we are ready to go to the terminal window to visualize the electron density mesh.  The next step is to open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar you used earlier in the tutorial is a "Remote Desktop" option.
 
 ![Remote Desktop](../images/ChooseRemoteDesktop.png "Remote Desktop")
 
-# Remote Desktop
+# Remote desktop
 
 Select this and a different overlay will appear in your web browser of a graphical user session.
 
 ![Start Remote Desktop](../images/StartRemoteDesktop.png "Start Remote Desktop")
 
-# Open Crysden
+# Open XCrysden
 
 Find and open XCrysden under the "Other" dropdown menu item.
 
 ![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
 
-# Visualize Charge Density
+# Visualize charge density
 
 Within XCrysden, go to file->Open and navigate to the directory where you the electron density file is and open to a visualization of the electron density.
 
