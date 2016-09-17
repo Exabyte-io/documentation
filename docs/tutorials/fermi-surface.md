@@ -16,39 +16,34 @@ To import Cu go to the sidebar, and select "Materials".  Then click the cloud bu
 
 To create a new project, click on the "Project" link located in the sidebar/menu on the left. After that, click <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> button in the top right corner, as shown in the animation below. Every user has a default project and we will use during this tutorial.
 
-<img data-gifffer="/images/CreateCuJob.gif" />
-
 # Select material
 
 The FCC Si structure is provided by default for every user.  The exact list of materials in your personal database will differ, so you may need to search for the Cu structure you just imported and select it as shown below:
 
-<img data-gifffer="/images/SetUpCuETotWithConvergence.gif" />
+<img data-gifffer="/images/CreateCuJob.gif" />
 
 # Choose workflow
 
-Next, click on the "Workflow" tab choose VASP as the simulation engine to be used and choose the "Total Energy" workflow.
+Next, click on the "Workflow" tab choose Quantum ESPRESSO as the simulation engine to be used and choose the "Band Structure + DOS" workflow.
 
 ## Adjust kpoints
 
-For charge density it is critical to have a high k-point density to properly visualize charge isosurfaces.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
+For fermi surface it is critical to have a high k-point density to properly visualize charges.  We set the kpoint density to 11x11x11 in the first workflow unit.
 
-<img data-gifffer="/images/Charge2.gif" />
+<img data-gifffer="/images/ChargeCu2.gif" />
 
 # Compute parameters
 
-Before submitting the calculation, click on the "Compute" tab and examine the compute parameters.  The example below shows how to increase the total run time to 15 minutes, the number of cores to 2 cores, and how to turn on email notifications of when the job starts and ends.
+Before submitting the calculation, click on the "Compute" tab and examine the compute parameters.
 
-<img data-gifffer="/images/ComputCuFermiSurface.gif" />
 
 # Monitor status
 
-Finally while the calculation is running you will see a tab for each of the VASP execution units in the workflow.  You will notice the kpt-convergence tab will update in real time as the simulations progress.  The graphical interface will show the delta energy between successive self-consistent steps.  The text based output of VASP also updates in real time with the output of the VASP simulation.
-
-<img data-gifffer="/images/RunningCuFermiSurface.gif" />
+Finally while the calculation is running you will see a tab for each of the Quantum ESPRESSO execution units in the workflow.  The graphical interface will show the delta energy between successive self-consistent steps.  The text based output of Quantum ESPRESSO also updates in real time with the output of the Quantum ESPRESSO simulation.
 
 # Examine results
 
-When both calculation units are complete, the yellow buttons will have turned green and the "Results" tab will become clickable.  You can click on the "Results" tab to see the final total energy, Fermi energy, and more information about each execution unit.
+When all calculation units are complete, the yellow buttons will have turned green and the "Results" tab will become clickable.  You can click on the "Results" tab to see the final total energy, Fermi energy, and more information about each execution unit.
 
 <img data-gifffer="/images/ConvergeStep6.gif" />
 
@@ -74,13 +69,9 @@ After clicking on "Terminal" an overlay will appear filling up your browser wind
 
 # Prepare fermi surface file
 
-As below, navigate into the directory containing all your simulation results.  "cd ~/data/demo; ls -ort" to see the directories present where all your simulation files are held.
+As below, navigate into the directory containing all your simulation results.  Once in the correct simulation directory run the commands in the window below to generate the post-processing bxsf file:
 
-![Jobs Directory List](../images/JobDirectoryList.png "Job Directory List")
-
-Once in the correct simulation directory run the following command to generate the post-processing bxsf file:
-
-<img data-gifffer="/images/GenerateBXSFFile.gif" />
+![Generate BXSF File](../images/GenerateBXSFFile.png "Generate BXSF File")
 
 # Exit terminal
 
@@ -104,7 +95,9 @@ Find and open XCrysden under the "Other" dropdown menu item.
 
 ![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
 
-Within XCrysden, go to file->Open and navigate to the directory where you created the bxsf file to open a visualization of the Fermi Surface.
+Within XCrysden, go to file->Open and navigate to the directory where you created the *.bxsf file to open a visualization of the Fermi Surface.
 
-<img data-gifffer="/images/VisualizeFermiSurface.gif" />
+![Visualize Fermi Surface 1](../images/FermiSurface1.png "Visualize Fermi Surface 1")
+![Visualize Fermi Surface 2](../images/FermiSurface2.png "Visualize Fermi Surface 2")
+![Visualize Fermi Surface 3](../images/FermiSurface3.png "Visualize Fermi Surface 3")
 
