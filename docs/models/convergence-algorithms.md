@@ -1,6 +1,6 @@
 <!-- TODO by MH -->
 
-One of the most important things to learn about atomic simulations is that it is critical how you prepare your structures and inputs to ensure you can trust your results. A study of input file settings with individual simulations on the same structure versus some result is called a convergence study.  The focus of most convergence studies are to determine the lowest possible energy state of your material system with the minimum computational settings.
+It is critical how you prepare your structures and inputs to ensure you can trust your results. A study of input file settings with individual simulations on the same structure versus some result is called a convergence study.  The focus of most convergence studies are to determine the lowest possible energy state of your material system with the minimum computational settings.
 
 !!! Note "Relaxation is also critical for quality of results"
     Please note that although not technically convergence, [**relaxation**](structural-relaxation.md) of structures also serves a similar purpose to ensure your calculation is computing the lowest total energy state of the material that you can trust.
