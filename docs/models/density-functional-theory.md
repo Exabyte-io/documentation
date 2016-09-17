@@ -6,7 +6,7 @@ We currently support Density Functional Theory in the planewave pseudopotential 
 
 <hr>
 
-## VASP
+## [VASP](https://www.vasp.at/)
 
 ### INCAR
 
@@ -26,7 +26,7 @@ LCHARG = .FALSE.   Do not output the charge density file CHGCAR
 
 ### KPOINTS
 
-Information about the k-points used in the calculation.  Full explanation of available settings available at http://cms.mpi.univie.ac.at/vasp/vasp/KPOINTS_file.html
+Information about the k-points used in the calculation.  Full explanation of available settings available [here](http://cms.mpi.univie.ac.at/vasp/vasp/KPOINTS_file.html)
 
 <details>
 <summary>**Example KPOINTS file**</summary>
@@ -65,7 +65,7 @@ Pseudopotential input file.  Instructions on creating the POTCAR file can be fou
 
 <hr>
 
-## Quantum Espresso
+## [Quantum Espresso](http://www.quantum-espresso.org/)
 
 As mentioned above, Quantum ESPRESSO breaks its execution up into multiple executables in contrast to VASP.  On this page we will just focus on the pw.x executable [input](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html) as the input settings for other executables can be quite advanced and is explained in depth on [Quantum ESPRESSO website](http://www.quantum-espresso.org/users-manual/input-data-description/)
 
