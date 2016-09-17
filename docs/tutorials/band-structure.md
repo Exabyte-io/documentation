@@ -7,13 +7,13 @@ This page explains how to calculate electronic band structure based on density f
 
 # Create job
 
-FCC Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
+Silicon in face-centered cubic structure is the default material that is shown on new job initialization. Therefore, if you select "Create a Job" from the left-hand sidebar, Si will automatically be loaded.
 
 <img data-gifffer="/images/BandStep1.gif" />
 
 # Choose workflow
 
-Under workflow chose VASP as your simulation energy and then "Bandstructure" for the workflow.
+Under workflow chose VASP as simulation engine and then "Bandstructure" for the workflow.
 
 <img data-gifffer="/images/BandStep2.gif" />
 
@@ -29,7 +29,7 @@ We set the kpoint density to 11 x 11 x 11 in the first workflow unit to provide 
 
 # Submit job
 
-Before submitting the calculation, click on the "Compute" tab and examine compute parameters.  This is a small structure so 1 CPU and 5 minutes are sufficient.  Click "No" when asked if you want to save a duplicate material.
+Before submitting the job, click on the "Compute" tab and examine compute parameters.  This is a small structure so 1 CPU and 5 minutes are sufficient.  Click "No" when asked if you want to save a duplicate material.
 
 <img data-gifffer="/images/BandStep4.gif" />
 
