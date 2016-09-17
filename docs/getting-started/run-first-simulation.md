@@ -1,10 +1,10 @@
 <!-- by MH -->
 
-This page explains how to run a basic simulation based on density functional theory to obtain an electronic bandstructure. We will be study silicon in the standard diamond-centered cubic structure and use Quantum ESPRESSO as our simulation engine during this tutorial.
+This page explains how to run a basic simulation based on density functional theory to obtain an electronic bandstructure. We will study silicon in the standard diamond-centered cubic structure and use Quantum ESPRESSO as our simulation engine during this tutorial.
 
-## Create a new project or use default
+## Open default project
 
-To create a new project, click on the "Project" link located in the sidebar/menu on the left. After that, click "(+)" button in the top right corner, as shown in the animation below. Every user has a default project and we will use during this tutorial.
+To create a new project, click on the "Project" link located in the sidebar/menu on the left. After that, click <i class="zmdi zmdi-plus-circle"></i> button in the top right corner, as shown in the animation below. Every user has a default project and we will use during this tutorial.
 
 ## Create a new job
 
@@ -31,22 +31,21 @@ Simulations usually have multiple steps that need to be executed in a certain or
 
 ## Compute parameters
 
-This tab lets you set up the compute parameters of the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficent to add anymore cores to the simulation. We also need to set the maximum time limit for the calculation to properly schedule the allocation of compute resources to this job. Leave all parameters at their default values and click "Save calculation".  We can also choose to be notified of the job status by clicking on our name in the "Notifications" section.
+This tab lets you set up the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficent to add anymore cores to the simulation. We also need to set the maximum time limit for the calculation to properly schedule the allocation of compute resources to this job. We can also choose to be notified of the job status by clicking on our name in the "Notifications" section. Leave all parameters at their default values and click "Save calculation". If asked if you want to save a copy of the material since it already exists in the database, answer "No"
 
 <img data-gifffer="/images/FirstJobCompute.gif" />
 
-## Summary
-
-You have created your first material, simulation workflow, and allocated compute parameters for it. You saved your first job to be run in the future. Now you are ready to submit your job.
+!!! Note: Summary
+    You have created your first material, simulation workflow, and allocated compute parameters for it. You saved your first job to be run in the future. Now you are ready to submit your job.
 
 ## Execute the job
 After saving the job, you are redirected back to the project page. Here you can start the job and track its status.
 
 ### Submit for execution
 
-Run the job by clicking the checkbox on the left and choosing the left-pointing triangle icon at the top.
+Run the job by clicking the 3 verticle dots to the right of the "Pre-Submission" box and choosing the right-pointing triangle icon labeled "Run".
 
-You will see the status changing from "pre-submission" to "submitted", and to "active". This means that the job was submitted to our compute platform and was started successfully.  Depending on the load of your computer and the cloud services it may take some time to become active.
+You will see the status changing from "pre-submission" to "submitted", and then "active". This means that the job was submitted to our compute platform and was started successfully.  Depending on the load of your computer and the cloud services it may take some time to become active.
 
 <img data-gifffer="/images/FirstJobSubmit.gif" />
 
@@ -68,4 +67,4 @@ Job view screen lets you track the input parameters, output text, convergence pa
 
 # Done
 
-This is how you can run a band structure calculation using exabyte.io. For a more comprehensive tutorial on how to run a bandstructure calculation including editing input files click [here](/tutorials/first-simulation.md).
+This is how you can run a band structure calculation using exabyte.io. For a more comprehensive tutorial on how to run a bandstructure calculation including editing input files click [here](/tutorials/band-structure.md).
