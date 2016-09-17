@@ -1,21 +1,22 @@
 <!-- TODO by MH -->
 
-This page explains how to calculate the electon density mesh of Silicon. The electron density mesh is a pre-requisite for any band structure calculation so this tutorial is closely related to the [band structure tutorial](band-structure.md)
+This page explains how to calculate and visualize the electron density mesh of FCC Silicon.
 
 # Create new job
+
 Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
 
 <img data-gifffer="/images/BandStep1.gif" />
 
-# Create Workflow
+# Choose workflow
 
-Under workflow chose the "Electronic Density Mesh" for Quantum Espresso.  In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.
+Under "Workflow" tab chose the "Electronic Density Mesh" for Quantum Espresso.  In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate band structure.
 
 <img data-gifffer="/images/Charge1.gif" />
 
-## Adjust K-points
+## Adjust kpoints
 
-For charge density it is critical to have a high k-point density to properly sample the isosurfaces.  In VASP, the band structure workflow has 2 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
+For charge density it is critical to have a high k-point density to properly visualize charge isosurfaces.  In VASP, the band structure workflow has 2 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
 
 <img data-gifffer="/images/Charge2.gif" />
 
