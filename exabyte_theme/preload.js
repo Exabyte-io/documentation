@@ -78,24 +78,6 @@ var PRIVATE_URLS = [
 (function () {
     var checkInterval = 60000; // check login state every min
     var mainAppLoginURL = "https://platform.exabyte.io/login"; // non-logged-in go here
-    /**
-     * @summary Redirect to a login page if the url is private
-     *          Parses url.
-     * @private
-     * @param {String} url
-     * @param {jQuery event} event - used to get click target
-     */
-    function _redirectIfPrivate(url, event) {
-        if (new RegExp(PRIVATE_URLS.join("|")).test(url)) {
-            event && event.preventDefault();
-            // Only redirect in production:
-            if (!window.location.hostname.includes("localhost")) {
-                window.location.href = "/restricted";
-            } else {
-                console.log("Redirect statement found. Ingnored on localhost.");
-            }
-        }
-    }
     /*
      * @summary Login state sharing with the main web application through cookies
      *          Expects webapp to have exabyte:login-state package installed.
@@ -147,6 +129,25 @@ var PRIVATE_URLS = [
             return false;
         }
     };
+    /**
+     * @summary Redirect to a login page if the url is private
+     *          Parses url.
+     * @private
+     * @param {String} url
+     * @param {jQuery event} event - used to get click target
+     */
+    function _redirectIfPrivate(url, event) {
+        var _loggedIn = checkLoginState();
+        if (new RegExp(PRIVATE_URLS.join("|")).test(url)) {
+            event && event.preventDefault();
+            // Only redirect in production:
+            if (!window.location.hostname.includes("localhost") && !_loggedIn) {
+                window.location.href = "/restricted";
+            } else {
+                console.log("Redirect statement ignored on localhost. Login status: ", _loggedIn);
+            }
+        }
+    }
     // fire the check on document ready
     $(document).ready(function() {
         _redirectIfPrivate(window.location);
