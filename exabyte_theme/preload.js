@@ -139,12 +139,14 @@ var PRIVATE_URLS = [
     function _redirectIfPrivate(url, event) {
         var _loggedIn = checkLoginState();
         if (new RegExp(PRIVATE_URLS.join("|")).test(url)) {
-            event && event.preventDefault();
-            // Only redirect in production:
-            if (!window.location.hostname.includes("localhost") && !_loggedIn) {
-                window.location.href = "/restricted";
-            } else {
-                console.log("Redirect statement ignored on localhost. Login status: ", _loggedIn);
+            if (!_loggedIn) {
+                event && event.preventDefault();
+                // Only redirect in production:
+                if (!window.location.hostname.includes("localhost") && !_loggedIn) {
+                    window.location.href = "/restricted";
+                } else {
+                    console.log("Redirect statement ignored on localhost. Login status: ");
+                }
             }
         }
     }
