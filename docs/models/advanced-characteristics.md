@@ -12,7 +12,7 @@ We have calculated a series of simulations on all pseudopotentials that we curre
 Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.
 
 !!! warning "Formation energy automation"
-    Currently we only support automated calculation of formation energy for the pseudopotentials that we currently provide (PAW for VASP and gbrv for quantum espresso).  If you chose to import your own pseudopotential for your calculation, you will need to manually calculate your reference total and zero point energies at converged k-point densities.  In the future we will automate this entire flow for user-imported pseudopotentials as well.  The full automation of formation energy also only currently works for 2-element compounds.  This will be upgraded to enable automation on a arbitrary number of elements in a compound in the future.
+    Currently we only support automated calculation of formation energy for the pseudopotentials that we currently provide ([PAW for VASP](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html) and [gbrv for Quantum ESPRESSO](https://www.physics.rutgers.edu/gbrv/)).  If you chose to import your own pseudopotential for your calculation, you will need to manually calculate your reference total and zero point energies at converged k-point densities.  In the future we will automate this entire flow for user-imported pseudopotentials as well.  The full automation of formation energy also only currently works for 2-element compounds.  This will be upgraded to enable automation on a arbitrary number of elements in a compound in the future.
 
 <hr>
 

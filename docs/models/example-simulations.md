@@ -12,22 +12,27 @@ Both electronic energies and wave functions are calculated concurrently in  [fir
 **VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
 <details>
 <summary>**Example INCAR file**</summary>
+```
 SYSTEM =  Silicon-FCC
 LWAVE  = .TRUE.
 LCHARG  = .TRUE.
 ISMEAR =    0
 SIGMA  = 0.1
+```
 </details>
 <details>
 <summary>**Example KPOINTS file**</summary>
+```
 Automatic mesh
 0
 Gamma
   1  1  1
   0.  0.  0.
+```
 </details>
 <details>
 <summary>**Example POSCAR file**</summary>
+```
 Silicon FCC
 1.0
    5.000000000     0.000000000     0.000000000
@@ -38,11 +43,13 @@ Si
 direct
    0.000000000    0.000000000    0.000000000 Si
    0.250000000    0.250000000    0.250000000 Si
+```
 </details>
 
 **Quantum Espresso**: requires the standard *.in and *.upf files only
 <details>
 <summary>**Example pw_scf.in file**</summary>
+```
 &CONTROL
     calculation= 'scf'
     title= ''
@@ -83,6 +90,7 @@ Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
 1 1 1 0 0 0
+```
 </details>
 
 <hr>
@@ -93,22 +101,27 @@ Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, Average press
 **VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
 <details>
 <summary>**Example INCAR file**</summary>
+```
 SYSTEM =  Silicon-FCC
 LWAVE  = .TRUE.
 LCHARG  = .TRUE.
 ISMEAR =    0
 SIGMA  = 0.1
+```
 </details>
 <details>
 <summary>**Example KPOINTS file**</summary>
+```
 Automatic mesh
 0
 Gamma
   1  1  1
   0.  0.  0.
+```
 </details>
 <details>
 <summary>**Example POSCAR file**</summary>
+```
 Silicon FCC
 1.0
    5.000000000     0.000000000     0.000000000
@@ -119,11 +132,13 @@ Si
 direct
    0.000000000    0.000000000    0.000000000 Si
    0.250000000    0.250000000    0.250000000 Si
+```
 </details>
 
 ### Quantum Espresso
 <details>
 <summary>**Example pw_scf.in file**</summary>
+```
 &CONTROL
     calculation= 'scf'
     title= ''
@@ -164,6 +179,7 @@ Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
 1 1 1 0 0 0
+```
 </details>
 
 <hr>
@@ -175,24 +191,33 @@ K_POINTS automatic
 Please see the [band structure tutorial](../tutorials/band-structure.md) for more details.
 
 **VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
+
+!!! note: POTCAR's
+    POTCAR's provided are the [PAW database of potentials from vasp](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)
+
 <details>
 <summary>**Example INCAR file**</summary>
+```
 SYSTEM =  Silicon-FCC
 LWAVE  = .TRUE.
 LCHARG  = .TRUE.
 ISMEAR =    0
 SIGMA  = 0.1
+```
 </details>
 <details>
 <summary>**Example KPOINTS file**</summary>
+```
 Automatic mesh
 0
 Gamma
   1  1  1
   0.  0.  0.
+```
 </details>
 <details>
 <summary>**Example POSCAR file**</summary>
+```
 Silicon FCC
 1.0
    5.000000000     0.000000000     0.000000000
@@ -203,26 +228,32 @@ Si
 direct
    0.000000000    0.000000000    0.000000000 Si
    0.250000000    0.250000000    0.250000000 Si
+```
 </details>
 <details>
 <summary>**Example second step INCAR file**</summary>
+```
 System = fcc Si
 ICHARG = 11
 ISMEAR = 0;
 SIGMA = 0.1;
 LORBIT=11
+```
 </details>
 <details>
 <summary>**Example second step KPOINTS file**</summary>
+```
 kpoints path
 3
 reciprocal
 0.0  0.0  0.0   1
 0.0  0.0  0.5   1
 0.0  0.5  0.5   1
+```
 </details>
 <details>
 <summary>**Example second step POSCAR file**</summary>
+```
 Silicon FCC
 1.0
    5.000000000     0.000000000     0.000000000
@@ -233,11 +264,13 @@ Si
 direct
    0.000000000    0.000000000    0.000000000 Si
    0.250000000    0.250000000    0.250000000 Si
+```
 </details>
 
 ### Quantum Espresso
 <details>
 <summary>**Example pw_scf.in file**</summary>
+```
 &CONTROL
     calculation= 'scf'
     title= ''
@@ -278,9 +311,11 @@ Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
 1 1 1 0 0 0
+```
 </details>
 <details>
 <summary>**Example pw_bands.in file**</summary>
+```
 &CONTROL
     calculation= 'bands'
     title= ''
@@ -324,15 +359,18 @@ K_POINTS crystal_b
 0.50000000  0.50000000  0.50000000  10
 0.00000000  0.00000000  0.00000000  10
 0.50000000  0.00000000  0.50000000  10
+```
 </details>
 <details>
 <summary>**Example bands.in file**</summary>
+```
 &BANDS
     prefix= '__prefix__'
     outdir= '$OUTPUT_DIR'
     filband= '$JOB_WORK_DIR/bands.dat'
     no_overlap= .true.
 /
+```
 </details>
 
 ### [Band Gap](../materials/characteristic-properties#band-gap)
@@ -346,6 +384,7 @@ VASP calculates the density of states for every simulation so see the example in
 ### Quantum Espresso
 <details>
 <summary>**Example pw_scf.in file**</summary>
+```
 &CONTROL
     calculation= 'scf'
     title= ''
@@ -386,9 +425,11 @@ Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
 1 1 1 0 0 0
+```
 </details>
 <details>
 <summary>**Example pw_bands.in file**</summary>
+```
 &CONTROL
     calculation= 'bands'
     title= ''
@@ -432,18 +473,22 @@ K_POINTS crystal_b
 0.50000000  0.50000000  0.50000000  10
 0.00000000  0.00000000  0.00000000  10
 0.50000000  0.00000000  0.50000000  10
+```
 </details>
 <details>
 <summary>**Example bands.in file**</summary>
+```
 &BANDS
     prefix= '__prefix__'
     outdir= '$OUTPUT_DIR'
     filband= '$JOB_WORK_DIR/bands.dat'
     no_overlap= .true.
 /
+```
 </details>
 <details>
 <summary>**Example pw_nscf.in file**</summary>
+```
 &CONTROL
     calculation= 'nscf'
     title= ''
@@ -484,14 +529,17 @@ Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
 1 1 1 0 0 0
+```
 </details>
 <details>
 <summary>**Example projwfc.in file**</summary>
+```
 &PROJWFC
     prefix= '__prefix__'
     outdir= '$OUTPUT_DIR/'
     degauss= 0.01
 /
+```
 </details>
 
 ### [Fermi surface](../materials/characteristic-properties#fermi-surface)
@@ -515,22 +563,27 @@ Please see the [zero point enegry tutorial](../tutorials/zero-point-energy.md) f
 
 <details>
 <summary>**Example INCAR file**</summary>
+```
 IBRION = 5
 LWAVE = .FALSE.
 LCHARG = .FALSE.
 ISMEAR = 1
 SIGMA = 0.1
+```
 </details>
 <details>
 <summary>**Example KPOINTS file**</summary>
+```
 Automatic mesh
 0
 Gamma
   1  1  1
   0.  0.  0.
+```
 </details>
 <details>
-<summary>**Example POCSAR file**</summary>
+<summary>**Example POSCAR file**</summary>
+```
 Silicon FCC
 1.0
    5.000000000     0.000000000     0.000000000
@@ -541,12 +594,14 @@ Si
 direct
    0.000000000    0.000000000    0.000000000 Si
    0.250000000    0.250000000    0.250000000 Si
+```
 </details>
 
 **Quantum Espresso**
 
 <details>
 <summary>**Example pw_scf.in file**</summary>
+```
 &CONTROL
     calculation= 'scf'
     title= ''
@@ -587,9 +642,11 @@ Si 0 0 0
 Si 0.25 0.25 0.25
 K_POINTS automatic
 1 1 1 0 0 0
+```
 </details>
 <details>
 <summary>**Example ph.in file**</summary>
+```
 &INPUTPH
     tr2_ph= 1.0d-12
     asr= .true.
@@ -597,4 +654,5 @@ K_POINTS automatic
     outdir='$OUTPUT_DIR/'
 /
 0.0 0.0 0.0
+```
 </details>
