@@ -103,8 +103,7 @@ pages:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
         - Developer Program:  other/developer-program.md
-        - Upcoming properties:  other/upcoming-properties.md
-        - Upcoming capabilities:  other/upcoming-capabilities.md
+        - Upcoming features:  other/upcoming-features.md
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
         - FAQ:                  other/faq.md
