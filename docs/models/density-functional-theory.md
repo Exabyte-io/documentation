@@ -6,7 +6,7 @@ We currently support Density Functional Theory in the planewave pseudopotential 
 
 <hr>
 
-## VASP
+## [VASP](https://www.vasp.at/)
 
 ### INCAR
 
@@ -26,7 +26,7 @@ LCHARG = .FALSE.   Do not output the charge density file CHGCAR
 
 ### KPOINTS
 
-Information about the k-points used in the calculation.  Full explanation of available settings available at http://cms.mpi.univie.ac.at/vasp/vasp/KPOINTS_file.html
+Information about the k-points used in the calculation.  Full explanation of available settings available [here](http://cms.mpi.univie.ac.at/vasp/vasp/KPOINTS_file.html)
 
 <details>
 <summary>**Example KPOINTS file**</summary>
@@ -61,11 +61,11 @@ Direct
 
 ### POTCAR
 
-Pseudopotential input file.  Instructions on creating the POTCAR file can be found [here](http://cms.mpi.univie.ac.at/vasp/vasp/POTCAR_file.html).
+Pseudopotential input file.  Instructions on creating the POTCAR file can be found [here](http://cms.mpi.univie.ac.at/vasp/vasp/POTCAR_file.html).  Exabyte support [PAW Potentials from VASP](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)
 
 <hr>
 
-## Quantum Espresso
+## [Quantum Espresso](http://www.quantum-espresso.org/)
 
 As mentioned above, Quantum ESPRESSO breaks its execution up into multiple executables in contrast to VASP.  On this page we will just focus on the pw.x executable [input](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html) as the input settings for other executables can be quite advanced and is explained in depth on [Quantum ESPRESSO website](http://www.quantum-espresso.org/users-manual/input-data-description/)
 
@@ -157,7 +157,7 @@ K_POINTS
 
 ### *.upf
 
-Pseudopotential input file.  List of pseudopotentials currently available on the Quantum Espresso website http://www.quantum-espresso.org/pseudopotentials/
+Pseudopotential input file.  List of pseudopotentials currently available on the Quantum Espresso website http://www.quantum-espresso.org/pseudopotentials/  Exabyte supports [gbrv potentials from Rutgers](https://www.physics.rutgers.edu/gbrv/)
 
 <hr>
 
@@ -172,6 +172,7 @@ It is often desirable to obtain [relaxed structures](structural-relaxation.md) t
 # Additional resources
 
 There are many well developed Density Functional Theory reviews on the web and below we list a few that we find the most helpful:
+
 1. P. Hohenberg and W. Kohn, Phys. Rev. 136, B864 1964, http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B864
 
 2. W. Kohn and L. J. Sham, Phys. Rev. 140, A1133 1965, http://journals.aps.org/pr/abstract/10.1103/PhysRev.140.A1133
