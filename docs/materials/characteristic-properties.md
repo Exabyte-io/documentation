@@ -19,7 +19,7 @@
 ### Band Structure
 Property that describes the ranges of energy that an electron within the solid may have (called energy bands,allowed bands, or simply bands) and ranges of energy that it may not have (called band gaps or forbidden bands).  The band structure refers to a mapping of the energy individual electronic bands within a material in reciprocal space.
 
-!!! note:
+!!! Note "DFT-LDA Excited State Energies"
     A well-known deficiency of Density Functional Theory in the Local Density Approximation is the energy of the excited or unoccupied states are lower than in reality.  This can be addressed through more advanced methods like the GW Approximation and modifications to DFT such as LDA+U and metaGGA.
 
 ### Band Gap
@@ -28,13 +28,13 @@ The minimum energy difference between the highest occupied (valence) band and th
 ### Density of States and Partial DOS
 Density of states is a summation over the all possible points in reciprocal space and measures the unit density of the number of electronic states per unit energy.  Describes the number of electronic states per interval of energy at each energy level that are available to be occupied (more on Wikipedia).
 
-!!! Note: "Projection of states for electronic character"
+!!! Note "Projection of states for electronic character"
     There are also projections of total electronic density onto each of the atomic states that are often useful
 
 ### Fermi surface
 Surface of constant energy (Fermi Energy) in reciprocal space that separates the unfilled electronic levels from the filled ones.
 
-!!! Note: "Fermi surface visualization"
+!!! Note "Fermi surface visualization"
     Usually expressed in one of multiple formats for visualization of the 3D surface, Ex: BXSF for XCrysden is used by Exabyte
 
 <hr>

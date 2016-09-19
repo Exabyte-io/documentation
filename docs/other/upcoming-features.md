@@ -195,7 +195,7 @@ Magnitude of an induced thermoelectric voltage in response to a temperature diff
 ## Optical Properties
 
 ### Absorption spectra
-Measured through the imaginary part of Dielectric Permittivity [[20](#links)] Symmetry analysis of vibrational modes at the center of the Brillouin zone with classification in IR active, Raman active and silent modes
+Measured through the imaginary part of Dielectric Permittivity Symmetry analysis of vibrational modes at the center of the Brillouin zone with classification in IR active, Raman active and silent modes
 
 <hr>
 
@@ -230,22 +230,27 @@ Creation of polymer structures is a rich and diverse area that requires a multit
 ### Links
 
 1. [Wikipedia Effective Mass, Website](https://en.wikipedia.org/wiki/Effective_mass_(solid-state_physics))
-2. [, PDF](https://www.jim.or.jp/journal/e/pdf3/47/11/2690.pdf)
-3. [, PDF](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.81.165312)
-4. [, PDF](http://arxiv.org/pdf/1007.3423.pdf)
+2. [First-Principles Calculations of Schottky Barrier Heights
+of Monolayer Metal/6H-SiC{0001} Interfaces, PDF](https://www.jim.or.jp/journal/e/pdf3/47/11/2690.pdf)
+3. [Theoretical study of Schottky-barrier formation at epitaxial rare-earth-metal/semiconductor interfaces, PDF](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.81.165312)
+4. [First-principles studies on electrical resistivity of iron under pressure , PDF](http://arxiv.org/pdf/1007.3423.pdf)
 5. [Wikipedia Adhesion, Website](https://en.wikipedia.org/wiki/Adhesion)
 6. [Wikipedia Fracture Toughness, Website](https://en.wikipedia.org/wiki/Fracture_toughness)
-7. [, PDF](http://arxiv.org/pdf/1111.4429v3.pdf)
+7. [BerkeleyGW: A Massively Parallel Computer Package
+for the Calculation of the Quasiparticle and Optical
+Properties of Materials and Nanostructures, PDF](http://arxiv.org/pdf/1111.4429v3.pdf)
 8. [Wikipedia Surface Energy, Website](https://en.wikipedia.org/wiki/Surface_energy)
-9. [, PDF](http://www.sciencedirect.com/science/article/pii/S0166128007008159)
-10. [, PDF](http://www.cchem.berkeley.edu/akcgrp/arups%20papers/96.pdf)
-11. [, PDF](http://www.sumitomo-chem.co.jp/english/rd/report/theses/docs/2013E_5.pdf)
-12. [, Book](https://books.google.com/books?id=9nu5BQAAQBAJ)
-13. [, PDF](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.134517)
-14. [, PDF](http://www.nature.com/articles/srep08964)
-15. [, PDF](hhttp://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.184509)
-16. [, PDF](http://arxiv.org/pdf/1208.2260v2.pdf)
-17. [, PDF](https://www.jim.or.jp/journal/e/pdf3/51/03/574.pdf)
-18. [, PDF](http://dspace.mit.edu/handle/1721.1/63802)
-19. [, PDF](http://arxiv.org/pdf/1311.6805v1.pdf http://arxiv.org/pdf/1305.1587.pdf)
-20. [, PDF](http://arxiv.org/pdf/1111.4429v3.pdf)
+9. [A DFT study of bond dissociation energies of several alkyl nitrate and nitrite compounds, PDF](http://www.sciencedirect.com/science/article/pii/S0166128007008159)
+10. [A growing string method for determining transition states:
+Comparison to the nudged elastic band and string methods, PDF](http://www.cchem.berkeley.edu/akcgrp/arups%20papers/96.pdf)
+11. [Theoretical Calculations in
+Reaction Mechanism Studies, PDF](http://www.sumitomo-chem.co.jp/english/rd/report/theses/docs/2013E_5.pdf)
+12. [Prediction and Calculation of Crystal Structures: Methods and Applications, Book](https://books.google.com/books?id=9nu5BQAAQBAJ)
+13. [Spin-resolved electron-phonon coupling in FeSe and KFe2Se2, PDF](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.134517)
+14. [Electron-Phonon Coupling and its implication for the superconducting topological insulators, PDF](http://www.nature.com/articles/srep08964)
+15. [Superconductivity and electron-phonon coupling in lithium at high pressures, PDF](http://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.184509)
+16. [Effects of charge doping and constrained magnetization on the electronic structure of
+an FeSe monolayer, PDF](http://arxiv.org/pdf/1208.2260v2.pdf)
+17. [First-Principles Calculations of the Specific Heats of Cubic Carbides and Nitrides, PDF](https://www.jim.or.jp/journal/e/pdf3/51/03/574.pdf)
+18. [Role of Disorder and Anharmonicity in the Thermal Conductivity of Silicon-Germanium Alloys: A First-Principles Study, PDF](http://dspace.mit.edu/handle/1721.1/63802)
+19. [First Principles explanation of the positive Seebeck coefficient of lithium, PDF](http://arxiv.org/pdf/1311.6805v1.pdf http://arxiv.org/pdf/1305.1587.pdf)
