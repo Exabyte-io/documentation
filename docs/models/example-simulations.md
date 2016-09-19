@@ -192,7 +192,7 @@ Please see the [band structure tutorial](../tutorials/band-structure.md) for mor
 
 **VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
 
-!!! note: POTCAR's
+!!! Note "POTCAR's"
     POTCAR's provided are the [PAW database of potentials from vasp](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)
 
 <details>
