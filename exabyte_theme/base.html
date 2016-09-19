@@ -56,6 +56,9 @@
   </script>
   {% endif %}
   {%- endblock %}
+  {%- for path in config.extra.preload_javascript %}
+    <script src="{{ path }}"></script>
+  {%- endfor %}
 </head>
 
 <body class="wy-body-for-nav" role="document">
