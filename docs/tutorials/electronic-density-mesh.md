@@ -14,6 +14,8 @@ Under "Workflow" tab chose the "Electronic Density Mesh" for Quantum Espresso.  
 
 <img data-gifffer="/images/Charge1.gif" />
 
+For VASP the workflow for "Electronic Density Mesh" is simpler and just one unit that produces a file called CHGCAR.
+
 ## Adjust kpoints
 
 For charge density it is critical to have a high k-point density to properly visualize charge isosurfaces.  The second unit is a post-processing unit to generate the file for visualization. We set the kpoint density to 11x11x11 in the first workflow unit.
@@ -36,7 +38,14 @@ As each unit in the workflow is executing, you can monitor its progress live by 
 
 Once the calculation is complete, under the Results tab at the bottom of the page there will be a listing of the files and directories on the system that is clickable to download and transit directories.  The screen shots below show the location of the charge density file
 
+For Quantum ESPRESSO:
+
 <img data-gifffer="/images/Charge5.gif" />
+
+For VASP:
+
+![VASP CHGCAR](../images/CHGCARFile.png "VASP CHGCAR")
+
 
 # Preparing for visualization
 
@@ -50,13 +59,13 @@ Select this and a different overlay will appear in your web browser of a graphic
 
 ![Start Remote Desktop](../images/StartRemoteDesktop.png "Start Remote Desktop")
 
-# Open XCrysden
+# Open XCrysden (Quantum ESPRESSO)
 
 Find and open XCrysden under the "Other" dropdown menu item.
 
 ![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
 
-# Visualize charge density
+# Visualize charge density (Quantum ESPRESSO)
 
 Within XCrysden, go to file->Open and navigate to the directory where you the electron density file is and open to a visualization of the electron density.
 
@@ -65,3 +74,17 @@ Within XCrysden, go to file->Open and navigate to the directory where you the el
 Adjust the value of charge density to be displayed and toggle the isosurface buttons to display the data.
 
 <img data-gifffer="/images/Charge7.gif" />
+
+# Open Vesta (VASP)
+
+Find and open Vesta under the "Other" dropdown menu item.
+
+![Other->Vesta](../images/RemoteDesktopApps.png "Other->Vesta")
+
+# Visualize charge density (VASP)
+
+Within Vesta, go to file->Open and navigate to the directory where you the electron density file (CHGCAR) is and open to a visualization of the electron density.
+
+![Open CHGCAR File](../images/VESTAOpenCHGCAR.png "Open CHGCAR File")
+
+![Visualize CHGCAR](../images/VESTACHGCAR.png "Visualize CHGCAR")
