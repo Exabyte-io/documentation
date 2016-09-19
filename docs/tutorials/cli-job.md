@@ -1,10 +1,12 @@
-<!-- TODO by MH - finish tutorial -->
+<!-- TODO by MH -->
 
 Our product provides you with a quick and easy way to set up custom simulation methods. Our focus is to automate as much of this functionality as possible, but it is always possible that you may want more control over the execution flow or run a type of calculation different from anything we have yet implemented.  Our focus is to enable as much of this as possible through the web interface, but this may not be possible yet in all cases and some experienced users may be more comfortable submitting their simulations directly.
 
 # Command-line terminal
 
-We provide a interface to a terminal command line window directly through the web to enable this.  This is also the preferred method of execution for a software tool that we have not yet implemented in our automated framework.
+We provide a interface to a terminal command line window directly through the web to enable this.  This is also the preferred method of execution for a software tool that we have not yet implemented in our automated framework.  You can see many details on setting up your terminal connection and ssh keys [here](../cli/login.md)
+
+In addition if you would like to set up your environment in the terminal window to access some of our resources you can see detailed information [here](../cli/modules-environment.md)
 
 To use the terminal interface, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.
 
@@ -20,13 +22,19 @@ After clicking on "Terminal" an overlay will appear filling up your browser wind
 
 The data directory where your simulations that have been submitted through the web are under the data/<your_username> sub-directory under your home directory.
 
-Our queuing system is a variant of PBS and is controlled through a script called job.script.  You can find a template of this script linked to your home directory under ~/job_script.template
+Our queuing system is a variant of Torque and is controlled through a script called job.script.  You can find a template of this script linked to your home directory under ~/job_script.template
 
 # Create first terminal job
 
 To submit a job, we recommend working inside the same sub-directory where all your jobs are submitted from the website.  Create a new directory under this sub-directory called first_terminal_test.
 
-Copying in the job.script template file for submission and any necessary input files or executables into this directory as well.  To run you will need to edit at least the line within the file that starts with "mpirun".  The directions on how to set the various PBS related variables are here.  The template version of the script will submit a job to our on-demand regular queue using 2 cores on 1 machine and have a maximum run-time of 5 minutes.  It also will name any output files with a pre-fix of "".
+Copying in the job.script template file for submission and any necessary input files or executables into this directory as well.  To run you will need to edit at least the line within the file that starts with "mpirun".  The directions on how to set the various Torque related variables are here.  The template version of the script will submit a job to our on-demand regular queue using 2 cores on 1 machine and have a maximum run-time of 5 minutes.  It also will name any output files with a pre-fix of "".
+
+For a more detailed explaination of the features available using the job.script file, please check out the [jobs.md](../cli/jobs.md) page.  A more complete list of the job.script and environment setting options is available on the [extra.md](../cli/extra.md) page.
+
+In addition if you would like to set up your environment in the terminal window to access some of our resources you can see detailed information [here](../cli/modules-environment.md)
+
+You can see the options for choosing your queue to submit the job [here](../compute/queues.md)
 
 # Submit first terminal job
 
