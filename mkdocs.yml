@@ -64,21 +64,20 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - First simulation:        tutorials/first-simulation.md
         - Electronic band structure:        tutorials/band-structure.md
         - Electronic band gap:              tutorials/band-gap.md
         - Electronic density of states:     tutorials/density-of-states.md
+        - Electronic density mesh:          tutorials/electronic-density-mesh.md
         - Zero point energy:                tutorials/zero-point-energy.md
         - Formation energy:                 tutorials/formation-energy.md
         - Structural relaxation:            tutorials/relaxation.md
         - Automatic convergence:            tutorials/kpt-convergence.md
         - Combinatorial-screening:          tutorials/combinatorial-screening.md
         - Custom-input workflow:            tutorials/custom-input-workflow.md
-        - Electronic density mesh:          tutorials/electronic-density-mesh.md
         - Fermi surface:                    tutorials/fermi-surface.md
         - Remote desktop visualization:     tutorials/remote-desktop.md
         - Job submission via terminal:      tutorials/cli-job.md
-        - CLI data import:                  tutorials/cli-job-import.md
+        # - CLI data import:                  tutorials/cli-job-import.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
@@ -102,7 +101,7 @@ pages:
     - Other:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
-        - Developer Program:  other/developer-program.md
+        # - Developer Program:  other/developer-program.md
         - Upcoming features:  other/upcoming-features.md
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
