@@ -2,7 +2,7 @@
 
 We define a "characteristic" property as any property that describes the physical nature of the material.
 
-One potential way to break down characteristic properties is by their character such as electronic, mechnical, chemistry, & vibrational related properties.  Any choice of classification is somewhat arbitrary and leads to some overlap but we think it serves as a good guide for the users and developers to associate similar properties and focus on a modular software development to enable reuse of tools and properties.
+One potential way to break down characteristic properties is by their character such as electronic, mechnical, chemical, & vibrational related properties.  Any choice of classification is somewhat arbitrary and leads to some overlap but we think it serves as a good guide for the users and developers to associate similar properties and focus on a modular software development to enable reuse of tools and properties.
 
 
 
