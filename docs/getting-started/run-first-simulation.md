@@ -35,7 +35,7 @@ This tab lets you set up the number of processors and the maximum time limit for
 
 <img data-gifffer="/images/FirstJobCompute.gif" />
 
-!!! Note: Summary
+!!! Note "Summary"
     You have created your first material, simulation workflow, and allocated compute parameters for it. You saved your first job to be run in the future. Now you are ready to submit your job.
 
 ## Execute the job
