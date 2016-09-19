@@ -225,9 +225,22 @@ Many crystal structure have natural voids in their structures called interstitic
 Creation of polymer structures is a rich and diverse area that requires a multitude of functionality.
 
 
+# Upcoming convergence workflows
+
+1. Pseudopotential Energy Cutoff
+2. Pseudopotential Radius Cutoff
+3. Number of bands
 
 
-### Links
+# Upcoming simulation engines:
+
+1. BerkelyGW
+1. NWChem
+1. LAMMPS
+1. OMEN/NEMO
+
+
+# Links
 
 1. [Wikipedia Effective Mass, Website](https://en.wikipedia.org/wiki/Effective_mass_(solid-state_physics))
 2. [First-Principles Calculations of Schottky Barrier Heights
