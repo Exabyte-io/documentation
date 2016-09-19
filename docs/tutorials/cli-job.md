@@ -22,13 +22,15 @@ After clicking on "Terminal" an overlay will appear filling up your browser wind
 
 The data directory where your simulations that have been submitted through the web are under the data/<your_username> sub-directory under your home directory.
 
-Our queuing system is a variant of Torque and is controlled through a script called job.script.  You can find a template of this script linked to your home directory under ~/job_script.template
+Our queuing system is a variant of Torque and is controlled through a script called job.script.  You can find templates of these script linked to your home directory under ~/job-script-templates/*.job
 
 # Create first terminal job
 
 To submit a job, we recommend working inside the same sub-directory where all your jobs are submitted from the website.  Create a new directory under this sub-directory called first_terminal_test.
 
-Copying in the job.script template file for submission and any necessary input files or executables into this directory as well.  To run you will need to edit at least the line within the file that starts with "mpirun".  The directions on how to set the various Torque related variables are here.  The template version of the script will submit a job to our on-demand regular queue using 2 cores on 1 machine and have a maximum run-time of 5 minutes.  It also will name any output files with a pre-fix of "".
+Copy in the espresso.job template file and rename it as job.script for submission and any necessary input files or executables into this directory as well.  To run you will need to edit at least the line within the file that starts with "mpirun" if you want to use a tool other than Quantum ESPRESSO.  The directions on how to set the various Torque related variables are here.  The template version of the script will submit a job to our "on-demand regular" queue using 8 cores on 1 machine and have a maximum run-time of 10 minutes.  The screen shot below shows had to add your username and adjust the cores per node to 4.
+
+![Edit Job Script](../images/CreateJobScript.png "Edit Job Script")
 
 For a more detailed explaination of the features available using the job.script file, please check out the [jobs.md](../cli/jobs.md) page.  A more complete list of the job.script and environment setting options is available on the [extra.md](../cli/extra.md) page.
 
@@ -43,6 +45,9 @@ Once you have edited the job.script file that you copied in and set up all your 
 # Monitoring first terminal job
 
 If you'd like to check on the status of the job, type "qstat" for a one-time view of the current status of your jobs, or type "watch qstat" for a continuously updated screen showing the status of your jobs.  Once your job starts running all the output from the job will be placed in the directory where the qsub command was run from unless you changed the "directory" line within the job.script file.
+
+![Submit Job Script](../images/SubmitJobScript.png "Submit Job Script")
+
 
 
 
