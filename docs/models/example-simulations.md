@@ -1,17 +1,22 @@
-<!-- TODO by MH For all of the characteristic properties: explain how we assert fidelity -->
-Currently we support the characteristic property simulations [**here**](../materials/characteristic-properties)
+<!-- by MH & TB -->
+
+This page contains explanation about the characteristic properties of materials and the corresponding simulation input parameters.
 
 # Core Properties
 
-## [Electronic wave functions](../materials/characteristic-properties#electronic-wave-functions)
+## Electronic energies and wave functions
 
-## [Electronic energies](../materials/characteristic-properties#electronic-energies)
+Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](../tutorials/first-simulation.md) to learn more. Example input files used for the calculation are given below:
 
-Both electronic energies and wave functions are calculated concurrently in  [first simulation tutorial](../tutorials/first-simulation.md) and by the example files below:
+#### VASP
 
-**VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
+Vienna ab-initio simulation package requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files.
+
+!!! Note "POTCAR files"
+    POTCARs used are from the PAW database of potentials ([link](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)) at version 5.3.5 (default)
+
 <details>
-<summary>**Example INCAR file**</summary>
+<summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
 LWAVE  = .TRUE.
@@ -20,8 +25,9 @@ ISMEAR =    0
 SIGMA  = 0.1
 ```
 </details>
+
 <details>
-<summary>**Example KPOINTS file**</summary>
+<summary>**KPOINTS**</summary>
 ```
 Automatic mesh
 0
@@ -30,8 +36,9 @@ Gamma
   0.  0.  0.
 ```
 </details>
+
 <details>
-<summary>**Example POSCAR file**</summary>
+<summary>**POSCAR**</summary>
 ```
 Silicon FCC
 1.0
@@ -46,9 +53,15 @@ direct
 ```
 </details>
 
-**Quantum Espresso**: requires the standard *.in and *.upf files only
+#### Quantum Espresso
+
+Quantum ESPRESSO ("QE" or "espresso") requires the input file and pseudopotentials.
+
+!!! Note "UPF pseudopotentials"
+    Default pseudopotentials for QE are from the GBRV database ([link](https://www.physics.rutgers.edu/gbrv/)) at version 1.5 (default)
+
 <details>
-<summary>**Example pw_scf.in file**</summary>
+<summary>**pw_scf.in**</summary>
 ```
 &CONTROL
     calculation= 'scf'
@@ -95,12 +108,14 @@ K_POINTS automatic
 
 <hr>
 
-# [Principal Properties](../materials/characteristic-properties#principal-properties)
-Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, Average pressure, and Charge density are all usually calculated concurrently as shown in the example below:
+# Principal Properties
 
-**VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
+We classify Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, Average pressure, and Charge density as the [Principal Properties](../materials/characteristic-properties#principal-properties). All these are all usually calculated concurrently as shown in the example below:
+
+### VASP
+
 <details>
-<summary>**Example INCAR file**</summary>
+<summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
 LWAVE  = .TRUE.
@@ -110,7 +125,7 @@ SIGMA  = 0.1
 ```
 </details>
 <details>
-<summary>**Example KPOINTS file**</summary>
+<summary>**KPOINTS**</summary>
 ```
 Automatic mesh
 0
@@ -120,7 +135,7 @@ Gamma
 ```
 </details>
 <details>
-<summary>**Example POSCAR file**</summary>
+<summary>**POSCAR**</summary>
 ```
 Silicon FCC
 1.0
@@ -136,8 +151,9 @@ direct
 </details>
 
 ### Quantum Espresso
+
 <details>
-<summary>**Example pw_scf.in file**</summary>
+<summary>**pw_scf.in**</summary>
 ```
 &CONTROL
     calculation= 'scf'
@@ -184,19 +200,17 @@ K_POINTS automatic
 
 <hr>
 
-# [Derived Properties](../materials/characteristic-properties#derived-properties)
-## [Electronic Properties](../materials/characteristic-properties#electronic-properties)
+# Derived Properties
+
+## Electronic Properties
 
 ### [Band Structure](../materials/characteristic-properties#band-structure)
 Please see the [band structure tutorial](../tutorials/band-structure.md) for more details.
 
-**VASP**: requires the standard INCAR, KPOINTS, POTCAR, & POSCAR files
-
-!!! Note "POTCAR's"
-    POTCAR's provided are the [PAW database of potentials from vasp](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)
+#### VASP
 
 <details>
-<summary>**Example INCAR file**</summary>
+<summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
 LWAVE  = .TRUE.
@@ -205,8 +219,9 @@ ISMEAR =    0
 SIGMA  = 0.1
 ```
 </details>
+
 <details>
-<summary>**Example KPOINTS file**</summary>
+<summary>**KPOINTS**</summary>
 ```
 Automatic mesh
 0
@@ -215,8 +230,9 @@ Gamma
   0.  0.  0.
 ```
 </details>
+
 <details>
-<summary>**Example POSCAR file**</summary>
+<summary>**POSCAR**</summary>
 ```
 Silicon FCC
 1.0
@@ -230,8 +246,9 @@ direct
    0.250000000    0.250000000    0.250000000 Si
 ```
 </details>
+
 <details>
-<summary>**Example second step INCAR file**</summary>
+<summary>**second step INCAR**</summary>
 ```
 System = fcc Si
 ICHARG = 11
@@ -240,8 +257,9 @@ SIGMA = 0.1;
 LORBIT=11
 ```
 </details>
+
 <details>
-<summary>**Example second step KPOINTS file**</summary>
+<summary>**second step KPOINTS**</summary>
 ```
 kpoints path
 3
@@ -251,8 +269,9 @@ reciprocal
 0.0  0.5  0.5   1
 ```
 </details>
+
 <details>
-<summary>**Example second step POSCAR file**</summary>
+<summary>**second step POSCAR**</summary>
 ```
 Silicon FCC
 1.0
@@ -267,9 +286,10 @@ direct
 ```
 </details>
 
-### Quantum Espresso
+#### Quantum Espresso
+
 <details>
-<summary>**Example pw_scf.in file**</summary>
+<summary>**pw_scf.in**</summary>
 ```
 &CONTROL
     calculation= 'scf'
@@ -314,7 +334,8 @@ K_POINTS automatic
 ```
 </details>
 <details>
-<summary>**Example pw_bands.in file**</summary>
+
+<summary>**pw_bands.in**</summary>
 ```
 &CONTROL
     calculation= 'bands'
@@ -361,8 +382,9 @@ K_POINTS crystal_b
 0.50000000  0.00000000  0.50000000  10
 ```
 </details>
+
 <details>
-<summary>**Example bands.in file**</summary>
+<summary>**bands.in**</summary>
 ```
 &BANDS
     prefix= '__prefix__'
@@ -378,12 +400,17 @@ Please see the [band gap tutorial](../tutorials/band-gap.md) for more details an
 
 ### [Density of States and Partial DOS](../materials/characteristic-properties#sensity-of-states-and-partial-dos)
 Please see the [density of states tutorial](../tutorials/density-of-states.md) for more details.
-### VASP
+
+#### VASP
+
 VASP calculates the density of states for every simulation so see the example input files for Total energy
-<!--To Do, get partial DOS running for VASP -->
-### Quantum Espresso
+
+<!--TODO, get partial DOS running for VASP -->
+
+#### Quantum Espresso
+
 <details>
-<summary>**Example pw_scf.in file**</summary>
+<summary>**pw_scf.in**</summary>
 ```
 &CONTROL
     calculation= 'scf'
@@ -428,7 +455,7 @@ K_POINTS automatic
 ```
 </details>
 <details>
-<summary>**Example pw_bands.in file**</summary>
+<summary>**pw_bands.in**</summary>
 ```
 &CONTROL
     calculation= 'bands'
@@ -476,7 +503,7 @@ K_POINTS crystal_b
 ```
 </details>
 <details>
-<summary>**Example bands.in file**</summary>
+<summary>**bands.in**</summary>
 ```
 &BANDS
     prefix= '__prefix__'
@@ -487,7 +514,7 @@ K_POINTS crystal_b
 ```
 </details>
 <details>
-<summary>**Example pw_nscf.in file**</summary>
+<summary>**pw_nscf.in**</summary>
 ```
 &CONTROL
     calculation= 'nscf'
@@ -532,7 +559,7 @@ K_POINTS automatic
 ```
 </details>
 <details>
-<summary>**Example projwfc.in file**</summary>
+<summary>**projwfc.in**</summary>
 ```
 &PROJWFC
     prefix= '__prefix__'
@@ -547,9 +574,7 @@ Please see the [Fermi surface tutorial](../tutorials/fermi-surface.md) for more 
 
 <hr>
 
-## [Chemistry Properties](../materials/characteristic-properties#chemical-properties)
-
-### [Formation energy at 0K](../materials/characteristic-properties#formation-energy-at-0K)
+### [Formation energy](../materials/characteristic-properties#formation-energy-at-0K)
 Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.  A formation energy calculation is simply a total energy calculation following a k-point convergence study and a relaxation calculation
 
 <hr>
@@ -559,10 +584,10 @@ Please see the [formation energy tutorial](../tutorials/formation-energy.md) for
 ### [Zero Point Energy](../materials/characteristic-properties#zero-point-energy)
 Please see the [zero point enegry tutorial](../tutorials/zero-point-energy.md) for more details.
 
-**VASP**
+#### VASP
 
 <details>
-<summary>**Example INCAR file**</summary>
+<summary>**INCAR**</summary>
 ```
 IBRION = 5
 LWAVE = .FALSE.
@@ -571,8 +596,9 @@ ISMEAR = 1
 SIGMA = 0.1
 ```
 </details>
+
 <details>
-<summary>**Example KPOINTS file**</summary>
+<summary>**KPOINTS**</summary>
 ```
 Automatic mesh
 0
@@ -581,8 +607,9 @@ Gamma
   0.  0.  0.
 ```
 </details>
+
 <details>
-<summary>**Example POSCAR file**</summary>
+<summary>**POSCAR**</summary>
 ```
 Silicon FCC
 1.0
@@ -597,10 +624,10 @@ direct
 ```
 </details>
 
-**Quantum Espresso**
+#### Quantum Espresso
 
 <details>
-<summary>**Example pw_scf.in file**</summary>
+<summary>**pw_scf.in**</summary>
 ```
 &CONTROL
     calculation= 'scf'
@@ -644,8 +671,9 @@ K_POINTS automatic
 1 1 1 0 0 0
 ```
 </details>
+
 <details>
-<summary>**Example ph.in file**</summary>
+<summary>**ph.in**</summary>
 ```
 &INPUTPH
     tr2_ph= 1.0d-12
