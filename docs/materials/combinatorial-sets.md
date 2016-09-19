@@ -1,8 +1,8 @@
 <!-- by MH -->
 
-Combinatorial sets are used to study a wide variety of modifications to a base crystal structure through substitution of elements at particular atomic positions.  To this end it is possible to specify what elements are substituted for each atomic site in a structure and specify a different substituion rule for each position as well.
+Combinatorial sets are used to study a wide variety of modifications to a base crystal structure through substitution of elements at particular atomic positions.  To this end it is possible to specify what elements are substituted for each atomic site in a structure and specify a different substitution rule for each position as well.
 
-To activate combinatorial set generation, go to `Create Job` webpage. On this page near the upper right corner of the structure visualization you will see the corresponding button. To get more information to read on how to set up the combinatorics, click on the <i class="zmdi zmdi-info"></i> button.  The contents of the page are also displayed below.
+To activate combinatorial set generation, go to `Create Job` webpage. On this page near the upper right corner of the structure visualization you will see the corresponding button to get more information to read on how to set up the combinatorics, click on the <i class="zmdi zmdi-info"></i> button.  The contents of the page are also displayed below.
 
 
 # Overview
@@ -28,7 +28,7 @@ Si/Ge/As 0.0 0.0 0.0
 Si/Ge    0.5 0.5 0.0
 ```
 
-In case slashes are used the elements are changed all at once, eg. in the above case there will be 3 total basises created.
+In case slashes ("/") are used as separators, the elements are changed all at once, eg. there will be 3 total bases created in the above example:
 
 **Case 1 - structure used**
 ```
@@ -55,7 +55,7 @@ Ge 0.5 0.5 0.0
 Si,Ge,As 0.0 0.0 0.0
 Si,Ge    0.5 0.5 0.0
 ```
-In case commas are used the elements are changed one at a time, eg. in the above case there will be 6 total basises created
+In case commas are used the elements are changed one at a time, eg. there will be 6 total bases created in the example above
 
 **Case 1 - structure used**
 ```
@@ -88,7 +88,7 @@ As 0.0 0.0 0.0
 Ge 0.5 0.5 0.0
 ```
 
-To see the result of these capabilities on the [input files generated](/models/combinatorial-set-input.md).
+To explore these capabilities further and find out about input files generation for combinatorial sets, continue [here](/models/combinatorial-set-input.md).
 
 <BR>
 
