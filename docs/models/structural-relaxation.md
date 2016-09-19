@@ -19,7 +19,7 @@ Relaxations are usually classified by the number of degrees of freedom allowed t
 3. Cell size - length of lattice vectors and/or parameters
 
 
-!!! note "Exabyte.io default relaxation settings"
+!!! note "Default relaxation settings"
     When clicking the "Workflow Options" section on "Relaxation" the default settings relax the atoms, cell shape, and cell size of the structure.  The experienced user can open up the input files for QuantumEspresso and VASP to change the exact behavior of this relaxation
 
 
