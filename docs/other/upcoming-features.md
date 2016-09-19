@@ -1,6 +1,6 @@
 <!-- by MH -->
 # Properties
-Exabyte is focused on quickly expanding the number and range of properties we can predict.  If you don't see something on your wish list, feel free to email new@exabyte.io to request it.
+Exabyte is focused on quickly expanding the number and range of properties we can predict.  We want your feedback on potential development efforts, if you don't see something on your wish list, feel free to email info@exabyte.io to request it.
 
 <hr>
 # Principal Properties
@@ -202,7 +202,7 @@ Measured through the imaginary part of Dielectric Permittivity Symmetry analysis
 
 # Capabilities
 
-Exabyte.io is focused on building a capable structure generator and manipulator to enable you to create a wide variety of structures interactivey and online.  Toward that vision we currently are working on the following capabilties review in brief below.  If you are particularly interested in one of the below capabilities or think a different capability is more important than those listed below, please don't hesitate to send us your suggestions at new@exabyte.io
+Exabyte.io is focused on building a capable structure generator and manipulator to enable you to create a wide variety of structures interactivey and online.  Toward that vision we currently are working on the following capabilties review in brief below.  If you are particularly interested in one of the below capabilities or think a different capability is more important than those listed below, please don't hesitate to send us your suggestions at info@exabyte.io
 
 ## Surface generation
 
