@@ -44,4 +44,4 @@ As each unit in the workflow is executing, you can monitor its progress live by 
 
 When the execution of all unitls finished, switching to the Results tab and the sub-tab for the final execution unit will have an entry titled "Formation Energy" that will display formation energy of the material. The more negative the value, the more stable the material is. This "Formation Energy" box will also show the energetic parameters (total energy and zero-point energy) for constituent elements used to calculate the property.
 
-<img data-gifffer="/images/FinalFormationEnergyDetails.gif" />
+<img data-gifffer="/images/FinalFormationEnergy.png" />
