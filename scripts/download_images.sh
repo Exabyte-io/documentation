@@ -61,7 +61,9 @@ EOF
 chmod 400 ./tmp.files.key
 
 # Try scp and exit if it fails
-scp -r -i tmp.files.key files@exabyte.io:${FILE_DIR}/${REMOTE_DIRNAME} ${LOCAL_DIRNAME} || exit 1
+# scp -r -i tmp.files.key files@exabyte.io:${FILE_DIR}/${REMOTE_DIRNAME} ${LOCAL_DIRNAME} || exit 1
+rsync -avz -e "ssh -i tmp.files.key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+    --progress files@exabyte.io:${FILE_DIR}/${REMOTE_DIRNAME} ${LOCAL_DIRNAME}/ || exit 1
 rm -f tmp.files.key*
 
 echo "Images downloaded successfully to ${LOCAL_DIRNAME}"
