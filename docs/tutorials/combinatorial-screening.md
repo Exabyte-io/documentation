@@ -49,6 +49,8 @@ After all the jobs are complete, the best way to aggregate the results are throu
 
 # Compare materials
 
-Within the analytics page, you will see a list of all materials, select the Al, Ga, & In compounds as well as the doped Si materials.  Next find the graph icon on the top of the page it will be named "Compare".  That will bring up a new page.  At the top of the page will be a listing of all the available properties for each material to compare.  If you click the X next to any property other than "Band Gap", you will be left with one chart showing the band gap of all materials.
+Within the analytics page, you will see a list of all materials, select the Al, Ga, & In compounds.  Next find the graph icon on the top of the page it will be named "Compare".  That will bring up a new page.  At the top of the page will be a listing of all the available properties for each material to compare.  If you click the X next to any property other than "Band Gap", you will be left with one chart showing the band gap of all materials.
 
-<img data-gifffer="/images/BandGaps.gif" />
+<img data-gifffer="/images/CombinatorialBandGap.gif" />
+
+We have not graphed the combinatorial set of dopants in Silicon due to the fact that with doping the fermi energy moves into the valence band edge or conduction band edge.  In effect, this turns the material into a conductor with a 0 band gap. In the future we expect to develop an automated way to predict the change in the band gap of the original base material (pure silicon in this case) by adjusting the fermi energy back to the valence band edge for the doped band gap calculation.
