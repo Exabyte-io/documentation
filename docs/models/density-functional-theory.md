@@ -171,8 +171,6 @@ It is often desirable to obtain [relaxed structures](structural-relaxation.md) t
 
 # Additional resources
 
-There are many well developed Density Functional Theory reviews on the web and below we list a few that we find the most helpful:
-
 1. P. Hohenberg and W. Kohn, Phys. Rev. 136, B864 1964, http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B864
 
 2. W. Kohn and L. J. Sham, Phys. Rev. 140, A1133 1965, http://journals.aps.org/pr/abstract/10.1103/PhysRev.140.A1133
