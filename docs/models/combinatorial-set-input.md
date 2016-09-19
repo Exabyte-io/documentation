@@ -4,7 +4,7 @@ Generation of combinatorial materials sets is described [here](../materials/comb
 
 ## Input files
 
-Input files contain template placeholders in place of the elements that are replaced and/or in place of the parameters that define lattice type.  These are pseudopotential files which will be further processed by software and can not be run directly by a simulation engine (eg. Quantum ESPRESSO, VASP).
+Input files contain template variables (eg. text similar to {{VAR}}) in place of the elements that are replaced and/or in place of the parameters that define aspects of the lattice.  These are pseudopotential files which will be further processed by software and can not be run directly by a simulation engine (eg. Quantum ESPRESSO, VASP).
 
 !!! warning "Special sections of input files"
     Please note that `$something` and (`{{something}}`) are important for the proper operation of combinatorial sets. If altered, the calculation result may give unexpected results or fail.
