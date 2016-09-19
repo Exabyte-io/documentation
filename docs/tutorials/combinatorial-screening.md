@@ -41,7 +41,7 @@ Next we will set up the jobs for the permutation set for doped Silicon.  We will
 <img data-gifffer="/images/CreateSiDopant.gif" />
 <img data-gifffer="/images/CreateSiDopant2.gif" />
 
-!!! Warning "Not all III-V's will exit successfully.
+!!! Warning "Not all III-V's will exit successfully."
     Combinatorial runs can be challenging especially when all atoms in a base material are replaced.  In the case of III-V's, depending on your relaxation settings, likely some of your materials will fail to relax to the correct structure, or end up in a local minimum during relaxation and a 0 eV band gap.  While this is not ideal, ~50% of the simulations will relax into the correct new material unit cells and generate useful band gap results.  The remaining material currently require more hands-on management of the relaxation settings with follow-up calculations.  The power of the combinatorics module is that it has automated as much of this process as possible and identified the materials that require your more detailed attention and manual follow-up.
 
 # Navigate to analytics
@@ -56,5 +56,5 @@ Within the analytics page, you will see a list of all materials, search for and 
 
 <img data-gifffer="/images/CombinatorialBandGap.gif" />
 
-!!! Note "Dopant band gaps report as 0 eV due to Fermi energy shift"
+!!! Warning "Dopant band gaps report as 0 eV due to Fermi energy shift"
     We have not graphed the combinatorial set of dopants in Silicon in this tutorial as doping results in the Fermi energy moves into the valence band edge or conduction band edge. In effect, this turns the material into a conductor with a 0 band gap. In the future we expect to develop an automated way to predict the change in the band gap of the original base material (pure silicon in this case).
