@@ -38,7 +38,7 @@ Once you decide which structure you want to use, move your cursor to the right s
 
 <img data-gifffer="/images/ImportMaterialsProjectMaterial.gif" />
 
-To use the newly imported structure, go back to the `Create Job` page and you will now see the material as an option to `Chose a material` as explained above.
+To use the newly imported structure, go back to the `Create Job` page and you will now see the material as an option to `Choose a material` as explained above.
 
 ## Links
 
