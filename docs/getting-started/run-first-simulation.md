@@ -25,13 +25,13 @@ Materials Designer lets you create and save materials for future use. We will us
 
 ## Workflow
 
-Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow". By default the first workflow - "Bandstructure" - is selected. One can modify the input files for each part of the calculation, available under input tabs by double clicking on each file tab. One can also customize the workflow by adding and deleting individual "Units" by adding and deleting the tabs containing input files.  We will set the k-point density to 7x7x7.
+Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow". Go to the dropdown menu of "Workflows" and select "Bandstructure".  One can modify the input files for each part of the calculation, available under input tabs by double clicking on each file tab. One can also customize the workflow by adding and deleting individual "Units" by adding and deleting the tabs containing input files.  We will set the k-point density to 7x7x7.
 
 <img data-gifffer="/images/FirstJobWorkflow.gif" />
 
 ## Compute parameters
 
-This tab lets you set up the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficent to add anymore cores to the simulation. We also need to set the maximum time limit for the calculation to properly schedule the allocation of compute resources to this job. We can also choose to be notified of the job status by clicking on our name in the "Notifications" section. Leave all parameters at their default values and click "Save calculation". If asked if you want to save a copy of the material since it already exists in the database, answer "No"
+This tab lets you set up the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficient to add anymore cores to the simulation. We also need to set the maximum time limit for the calculation to properly schedule the allocation of compute resources to this job. We can also choose to be notified of the job status by clicking on our name in the "Notifications" section. Leave all parameters at their default values and click "Save calculation". If asked if you want to save a copy of the material since it already exists in the database, answer "No"
 
 <img data-gifffer="/images/FirstJobCompute.gif" />
 
@@ -43,9 +43,9 @@ After saving the job, you are redirected back to the project page. Here you can 
 
 ### Submit for execution
 
-Run the job by clicking the 3 verticle dots to the right of the "Pre-Submission" box and choosing the right-pointing triangle icon labeled "Run".
+Run the job by clicking the 3 vertical dots to the right of the "Pre-Submission" box and choosing the right-pointing triangle icon labeled "Run".
 
-You will see the status changing from "pre-submission" to "submitted", and then "active". This means that the job was submitted to our compute platform and was started successfully.  Depending on the load of your computer and the cloud services it may take some time to become active.
+You will see the status changing from "pre-submission" to "submitted". This means that the job was submitted to our compute platform.  Depending on the load of your computer and the cloud services it may take some time to become "Active".
 
 <img data-gifffer="/images/FirstJobSubmit.gif" />
 
