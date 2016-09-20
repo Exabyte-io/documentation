@@ -22,6 +22,7 @@ pages:
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
         - User interface overview:  getting-started/ui-overview.md
+        - Data conventions:         getting-started/data-conventions.md
 
     - Materials:
         - Creating structures:          materials/creating-structures.md
@@ -48,8 +49,8 @@ pages:
         - Setting parameters:   compute/setting-parameters.md
 
     - Sharing & Collaboration:
-        - Organizations:        collaboration/organizations.md
-        - Organizations:        collaboration/create-organization.md
+        # - Organizations:        collaboration/organizations.md
+        # - Create Organizations: collaboration/create-organization.md
         - Invite Friends:       collaboration/invite-friends.md
 
     - Command Line Interface:
@@ -102,7 +103,7 @@ pages:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
         # - Developer Program:  other/developer-program.md
-        - Upcoming features:  other/upcoming-features.md
+        - Upcoming features:    other/upcoming-features.md
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
         - FAQ:                  other/faq.md
