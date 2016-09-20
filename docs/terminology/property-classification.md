@@ -19,5 +19,14 @@ Derived
 We further subdivide all derived properties into:
 
 - **Electronic Properties**
+    - Band Structure
+    - Band Gap
+    - Density of States and Partial DOS
+    - Fermi surface
+
 - **Chemical Properties**
+    - Formation energy at 0K
+
 - **Vibrational Properties**
+    - Zero Point Energy
+
