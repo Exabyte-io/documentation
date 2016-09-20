@@ -1,10 +1,9 @@
 <!-- TODO by MH -->
 
-This page explains how to calculate an electronic band gap based on density functional theory. We study silicon in the standard diamond-centered cubic structure and use [VASP](https://www.vasp.at/) as our simulation engine during this tutorial.
+This page explains how to calculate an electronic band gap [[1](#links)] based on density functional theory. We study silicon in the standard diamond-centered cubic structure and use VASP [[2](#links)] as our simulation engine during this tutorial.
 
-!!! Note "Accuracy of the estimate"
-    Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation ([DFT-GGA](https://en.wikipedia.org/wiki/Density_functional_theory)) and therefore a systematic under-estimate of the band gap is to be expected.  Further modifications to the input files and settings to correctly predict the band gap are possible and explained elsewhere.
-
+!!! Note "Accuracy of the results"
+    Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation [[3](#links)] and therefore a systematic under-estimate of the band gap is to be expected. Further modifications to the input files and settings to correctly predict the band gap are possible and explained elsewhere.
 
 # Create job
 
@@ -39,3 +38,9 @@ Once the job is submitted it you will be taken to the Job Status page and can mo
 # Summary
 
 You will notice that we identify both the direct band gap and the indirect band gap.  This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh.  As you can see the indirect band gap is significantly smaller than the smallest direct band gap.  The calculated value of ~0.6 eV is significantly below the experimental band gap of Silicon of ~1.1 eV but this is expected with the model and method employed.
+
+# Links
+
+1. [Electronic Band gap, Wikipedia](https://en.wikipedia.org/wiki/Band_gap)
+2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
+3. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)

@@ -2,7 +2,7 @@
 
 This page explains how to calculate electronic band structure [[1](#links)] based on density functional theory. We will be studying Silicon in the standard diamond-like face-centered cubic structure and will use VASP [[2](#links)] as our simulation engine.
 
-!!! Note "Accuracy of the estimate"
+!!! Note "Accuracy of the results"
     Please note that this calculation is performed using standard Density Functional Theory [[3](#links)] and therefore underprediction of the energy of unoccupied electronic states is expected. Further modifications to the input files and settings to correctly predict the band gap are possible and will be explored later.
 
 # Create job
