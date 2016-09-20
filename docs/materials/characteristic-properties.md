@@ -26,7 +26,7 @@ Property that describes the ranges of energy that an electron within the solid m
 The minimum energy difference between the highest occupied (valence) band and the lowest unoccupied (conduction) band.  Can be direct - when the difference is between the energy points at the same point in reciprocal space, and indirect - when the difference between two inequivalent points.  Insulators and semiconductors have a gap in energy between their highest occupied electronic state and their lowest unoccupied electronic state.  We automatically search the k-point grid for the smallest band gap between occupied and unoccupied states.  An indirect band gap refers to the global minimum distance between the highest occupied band and the lowest unoccupied band.  A direct band gap refers to the energy gap at the same point in reciprocal space.
 
 ### Density of States and Partial DOS
-Density of states is a summation over the all possible points in reciprocal space and measures the unit density of the number of electronic states per unit energy.  Describes the number of electronic states per interval of energy at each energy level that are available to be occupied ([Density of States on Wikipedia](https://en.wikipedia.org/wiki/Density_of_states)).
+Density of states is a summation over the all possible points in reciprocal space and measures the unit density of the number of electronic states per unit energy.  Describes the number of electronic states per interval of energy at each energy level that are available to be occupied ([4](#links)).
 
 !!! Note "Projection of states for electronic character"
     There are also projections of total electronic density onto each of the atomic states that are often useful
@@ -58,3 +58,4 @@ The zero point energy is a purely quantum mechanical property that is the amount
 1. [Density Functional Theory energy contributions overview, PDF](http://elk.sourceforge.net/CECAM/Burke-DFT.pdf)
 2. [Zero point energy of Silicon, PDF](http://www.sciencedirect.com/science/article/pii/S0009261414002425)
 3. [Formation energy of intermetallics, PDF](http://www.sciencedirect.com/science/article/pii/S096697951200252X)
+4. [Density of States on Wikipedia](https://en.wikipedia.org/wiki/Density_of_states)).
