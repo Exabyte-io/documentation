@@ -333,8 +333,8 @@ K_POINTS automatic
 1 1 1 0 0 0
 ```
 </details>
-<details>
 
+<details>
 <summary>**pw_bands.in**</summary>
 ```
 &CONTROL
@@ -405,7 +405,44 @@ Please see the [density of states tutorial](../tutorials/density-of-states.md) f
 
 VASP calculates the density of states for every simulation so see the example input files for Total energy
 
-<!--TODO, get partial DOS running for VASP -->
+
+<details>
+<summary>**INCAR**</summary>
+```
+SYSTEM =  Silicon-FCC
+LWAVE  = .FALSE.
+LCHARG  = .FALSE.
+ISMEAR =    0
+SIGMA  = 0.05
+LORBIT=11
+```
+</details>
+
+<details>
+<summary>**KPOINTS**</summary>
+```
+Automatic mesh
+0
+Gamma
+  2 2 2
+  0.  0.  0.
+```
+</details>
+<details>
+<summary>**POSCAR**</summary>
+```
+Cubic Diamond Si
+5.43
+0.0 0.5 0.5
+0.5 0.0 0.5
+0.5 0.5 0.0
+Si
+2
+Direct
+0.0 0.0 0.0 Si
+0.25 0.25 0.25 Si
+```
+</details>
 
 #### Quantum Espresso
 
