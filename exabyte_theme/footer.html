@@ -1,4 +1,4 @@
-<footer>
+<footer
   {%- block next_prev %}
   {% if page and page.next_page or page.previous_page %}
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
@@ -20,5 +20,34 @@
       <p>{{ copyright }}</p>
     {% endif %}
   </div>
+
+  <hr/>
+
+  <details>
+      <summary class="text-muted">Suggest edits</summary>
+      <br>
+      <form role="form" onsubmit="return post_to_parse();">
+          <div class="col-xs-12 col-sm-7 col-md-7">
+              <div style="margin-bottom: 5px" class="col-xs-12 form-group">
+                  <input style="width: 49.5%" type="text" name="name" placeholder="Name..."
+                         class="contact-name form-control" id="contact-name">
+                  <div style="width: 49.5%" class="col-xs-12 text-danger">Please enter a name</div>
+                  <input style="width: 50%" type="text" name="email" placeholder="Email..."
+                         class="contact-email form-control" id="contact-email">
+                  <div style="width: 49.5%" class="col-xs-12 text-danger">Please enter a valid email</div>
+              </div>
+              <div style="margin-bottom: 5px" class="col-xs-12 form-group">
+                  <textarea name="message" placeholder="Message... Please include the url of the page you are on and detailed description of the edit you are suggesting."
+                            class="contact-message form-control" id="contact-message"></textarea>
+                  <div class="col-xs-12 text-danger">Please enter a message</div>
+              </div>
+
+              <div class="col-xs-12 i">
+                  <button type="submit" class="btn btn-outline submit">Suggest Edits
+                  </button>
+              </div>
+          </div>
+      </form>
+  </details>
 
 </footer>
