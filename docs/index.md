@@ -1,4 +1,4 @@
-Exabyte.io platform is the fastest way to design and develop new materials from concept to product. It is an all-in-one highly scalable framework for atomistic design, high fidelity simulations and large-scale data analytics. The [links](#links) section below can direct reader to sources of more in-depth explanation about what we are building and why [[1]](#links), quick demonstration of the scalability of our product [[2]](#links) and example case studies [[3]](#links).
+Exabyte.io is the fastest way to design and develop new materials from concept to product. It is an all-in-one highly scalable framework for atomistic design, high fidelity simulations and large-scale data analytics. The [links](#links) section below can direct reader to sources of more in-depth explanation about what we are building and why [[1]](#links), quick demonstration of the scalability of our product [[2]](#links) and example case studies [[3]](#links).
 
 This documentation contains information about how our product works. You can search by using the search field in the top left corner or just read on. In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.
 
@@ -46,7 +46,7 @@ Other parts explain data security, sharing and collaboration, billing/pricing an
 
 We enable automation of materials screening processes to make it easier to create leads, set-up and monitor simulations, and analyze the results. This [page](/materials/combinatorial-sets.md) contains more information about combinatorial materials sets.
 
-# How to get help
+## How to get help
 
 We have support team that is active 24/7 and will do our best to reply to your requests within 24 hours. Our support team can be contacted by phone, email, or the web during working hours Pacific Time:
 
