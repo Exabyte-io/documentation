@@ -1,6 +1,6 @@
 <!-- TODO by TB -->
 
-This page explains how to calculate the Fermi surface for metallic FCC copper.
+This page explains how to calculate the Fermi surface [[1](#links)] for metallic FCC Cu using pseudopotential density functional theory [[2](#links)]. We will use Quantum ESPRESSO [[3](#links)] as our simulation engine for this tutorial.
 
 # Create job
 
@@ -101,3 +101,8 @@ Within XCrysden, go to file->Open and navigate to the directory where you create
 ![Visualize Fermi Surface 2](../images/FermiSurface2.png "Visualize Fermi Surface 2")
 ![Visualize Fermi Surface 3](../images/FermiSurface3.png "Visualize Fermi Surface 3")
 
+# Links
+
+1. [Fermi Surface, Wikipedia](https://en.wikipedia.org/wiki/Fermi_surface)
+2. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+3. [Quantum ESPRESSO, Website](http://www.quantum-espresso.org/)

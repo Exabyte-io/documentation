@@ -1,10 +1,10 @@
-<!-- TODO by MH -->
+<!-- by MH -->
 
-This page explains how to run an structural relaxation using density functional theory. Relaxation can be run either as a stand-alone workflow or prepended to any property calculation.
+This page explains how to run an structural relaxation using density functional theory [[1](#links)]. Relaxation can be run either as a stand-alone workflow or can be prepended to any property calculation.
 
 # Background
 
-The motivation behind using relaxation is explained in detail [here](/models/structural-relaxation)  This page focuses on the practical steps and usage.
+The motivation behind using relaxation is explained in detail [here](/models/structural-relaxation). This page focuses on the practical steps and usage.
 
 # Create job
 
@@ -18,7 +18,7 @@ Chose the Si structure provided by default for every user. The exact list of mat
 
 # Create workflow
 
-Next, choose VASP as the simulation engine to be used and choose the "Total Energy" workflow:
+Next, choose VASP [[2](#links)] as the simulation engine to be used and choose the "Total Energy" workflow:
 
 Then, to add relaxation as a pre-processor to total energy calculation, expand the <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> Advanced section to show un-highlighted buttons for Relaxation and k-point convergence. Click on the Relaxation and you will see the relaxation unit added to the workflow.
 
@@ -56,3 +56,8 @@ When both calculation units are complete, the yellow buttons will have turned gr
 
 !!! tip "Tip"
     You can also browse standard output and input files for each unit of the calculation.
+
+# Links
+
+1. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
