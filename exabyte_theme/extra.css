@@ -193,13 +193,16 @@ p + pre, ul + pre {
     color: rgba(137, 167, 210, 0.1);
 }
 
-// h1,h2,h3... subnavigation
+/*
+ * h1,h2,h3... subnavigation
+ * */
 .wy-menu-vertical li ul li a:hover,
 .wy-menu-vertical li.toctree-l1 a:hover {
     background-color: rgba(255, 255, 255, 0.1);
 }
 a.toctree-l4 {
-    padding-left: 4.4em !important;
+    padding-left: 4.3em !important;
+    color: #aaa !important;
 }
 
 @media screen and (max-width: 768px) {
@@ -248,6 +251,10 @@ a.toctree-l4 {
 .wy-menu-vertical span {
     color: #fff;
     font-weight: 600;
+}
+
+.wy-nav-shift {
+    border-left: 1px solid #ccc;
 }
 
 /* --------------------------------------------------------- *
