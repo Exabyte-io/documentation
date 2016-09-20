@@ -1,10 +1,10 @@
 <!-- by MH -->
+<!-- by MH -->
+<!-- TODO: add list of example characteristic properties for each type -->
 
 We define a "characteristic" property as any property that describes the physical nature of the material.
 
 One potential way to break down characteristic properties is by their character such as electronic, mechnical, chemical, & vibrational related properties.  Any choice of classification is somewhat arbitrary and leads to some overlap but we think it serves as a good guide for the users and developers to associate similar properties and focus on a modular software development to enable reuse of tools and properties.
-
-
 
 We subdivide all properties into:
 
@@ -16,7 +16,6 @@ We subdivide all properties into:
 Derived Principal   Obtained from Principal through a complex workflow and, potentially, additional processing (or through multiple application).   For a moving set of atoms - diffusion coefficient is an example of a derived property that requires calculation of temperature at multiple time steps.
 Derived
 
-# Derived Properties
 We further subdivide all derived properties into:
 
 - **Electronic Properties**
