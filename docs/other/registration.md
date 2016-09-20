@@ -1,6 +1,6 @@
 <!-- DB -->
 
-This page explains some of the details of registering for the Exabyte.io platform.
+This page explains the details of registration process.
 
 ## Filling in the initial registration form
 
