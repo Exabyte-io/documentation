@@ -1,6 +1,6 @@
-<!-- TODO by MH -->
+<!-- by MH -->
 
-This page explains how to calculate and visualize the electron density mesh of FCC Silicon.
+This page explains how to calculate and visualize the electronic density mesh for FCC Silicon.
 
 # Create job
 
@@ -59,15 +59,21 @@ Select this and a different overlay will appear in your web browser of a graphic
 
 ![Start Remote Desktop](../images/StartRemoteDesktop.png "Start Remote Desktop")
 
-# Open XCrysden (Quantum ESPRESSO)
+> Next steps depend on the simulation engine used
 
-Find and open XCrysden under the "Other" dropdown menu item.
+# Quantum ESPRESSO
+
+## Open XCrysden
+
+Find and open XCrysden under "Applications" > "Other" dropdown menu item.
 
 ![Other->XCrysden](../images/RemoteDesktopApps.png "Other->XCrysden")
 
-# Visualize charge density (Quantum ESPRESSO)
+## Visualize charge density
 
-Within XCrysden, go to file->Open and navigate to the directory where you the electron density file is and open to a visualization of the electron density.
+Within XCrysden, go to "File" > "Open" and navigate to the directory where the electron density file is and open to a visualization of the electron density.
+
+> If you used the default project for this calculation, then the location will be: `/home/<your username>/data/<your username>/<job name>/`
 
 <img data-gifffer="/images/Charge6.gif" />
 
@@ -75,16 +81,23 @@ Adjust the value of charge density to be displayed and toggle the isosurface but
 
 <img data-gifffer="/images/Charge7.gif" />
 
-# Open Vesta (VASP)
+# VASP
+
+# Open Vesta
 
 Find and open Vesta under the "Other" dropdown menu item.
 
 ![Other->Vesta](../images/RemoteDesktopApps.png "Other->Vesta")
 
-# Visualize charge density (VASP)
+# Visualize charge density
 
-Within Vesta, go to file->Open and navigate to the directory where you the electron density file (CHGCAR) is and open to a visualization of the electron density.
+Within Vesta, go to file->Open and navigate to the directory where the electron density file (CHGCAR) is and open to a visualization of the electron density.
+
+> If you used the default project for this calculation, then the location will be: `/home/<your username>/data/<your username>/<job name>/`
+
 
 ![Open CHGCAR File](../images/VESTAOpenCHGCAR.png "Open CHGCAR File")
+
+Your results should look similar to the image below:
 
 ![Visualize CHGCAR](../images/VESTACHGCAR.png "Visualize CHGCAR")
