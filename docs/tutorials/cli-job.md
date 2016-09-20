@@ -8,13 +8,9 @@ We provide a interface to a terminal command line window directly through the we
 
 In addition if you would like to set up your environment in the terminal window to access some of our resources you can see detailed information [here](../cli/modules-environment.md)
 
-To use the terminal interface, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.
+To use the terminal interface, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.  One of the options in this side bar is "Terminal".
 
-![Right Sidebar](../images/RightSidebar.png "Right Sidebar")
-
-One of the options in this side bar is "Terminal".
-
-![Right Sidebar->Terminal](../images/StartTerminal.png "Right Sidebar->Terminal")
+<img data-gifffer="/images/LoadTerminal.gif"/>
 
 After clicking on "Terminal" an overlay will appear filling up your browser window with a text based terminal emulator called Guacamole.
 
