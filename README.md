@@ -67,3 +67,65 @@ is rendered into:
     <p class="last">All unused credits automatically roll over into the next validity period.</p>
 </div>
 
+Expandable section can be added using:
+
+```
+<details>
+    <summary>**INCAR**</summary>
+    ```
+    ALGO = Normal
+    EDIFF = 0.0001
+    ...
+    ```
+</details>
+```
+
+is rendered into:
+
+<details>
+    <summary>**INCAR**</summary>
+    ```
+    ALGO = Normal
+    EDIFF = 0.0001
+    ...
+    ```
+</details>
+
+
+# Basic guidelines
+
+1. Leave comment at the top about the original author:
+    ```
+    <!-- by MH -->
+    ```
+
+2. Do not duplicate the name of the page at the top, it will already be inside breadcrumbs, better add a short 1-paragraph description of the contents
+
+3. Leave a newline after heading elements:
+    ```
+    ## Create a new job
+
+    You can create a new job by clicking on the ...
+    ```
+
+4. Use [zmdi](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icons instead of saying "click" on the button with 3 stripes:
+
+    ```
+    <i class="zmdi zmdi-plus-circle"></i>
+    ```
+
+    will be rendered as: a [zmdi-plus-circle](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icon
+
+    We use the same icon set for the main application.
+
+5. Including an external link
+6. Including a local link to a page, within a page
+```
+[subscription level](/billing/accounts-and-billing)
+```
+
+```
+[subscription level](/billing/accounts-and-billing#pricing)
+```
+7. Including a screenshot
+8. Including a gif
