@@ -1,5 +1,4 @@
-<!-- TODO by MH - Link to corresponding step-by-step tutorial inside 'tutorials' folder.
--->
+<!-- TODO by MH -->
 
 In addition to [k-point convergence](convergence-algorithms.md) it is also important to ensure that your system is in the lowest total energy state configuration possible before computing your property.  This usually involves some sort of "relaxation" before running your property calculation.
 
