@@ -45,6 +45,6 @@ For Density Functional Theory Model the input parameters that affect accuracy in
 !!! note "Example Accuracy for a Model"
     If we use Newtonian mechanics as the model, then the Accuracy would be limited by the relativistic effects - for example, for a spaceship it is important to introduce corrections beyond the Newtonian laws because the accuracy of it does not match experimentally found flight trajectories.
 
-# Difference between Accuracy and Precision"
+# Difference between Accuracy and Precision
 
 Although Accuracy and Precision are often used interchangeably, they have different meanings. Accuracy is a direct property of the Model and can be thought about as a limit for when all computational parameters are at their optimum values. Precision is a characteristic of a particular computational implementation of the Model (property of Method) and is directly dependent on the input parameters.
