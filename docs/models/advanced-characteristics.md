@@ -11,6 +11,10 @@ We pre-calculated the total energy and zero point energy of all elemental pseduo
 
 Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.
 
+```
+    E_Formation = E_tot - #_element_1 * (zero_point_energy_element_1 + E_tot_element_1) - #_element_2 * (zero_point_energy_element_2 + E_tot_element_2)
+```
+
 !!! warning "Formation energy automation"
     We support calculation of formation energy for the pseudopotentials that we currently provide ([1](#links) and [2](#links)).  If you chose to import your own pseudopotentials, you will need to manually calculate your reference total and zero point energies at converged k-point densities at the moment. In the future we will automate this entire flow for user-imported pseudopotentials as well.
 
