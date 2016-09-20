@@ -1,12 +1,9 @@
 <!-- by MH -->
 
 This tutorial shows how to create a structure prior to running a simulation.
-
-# First step
-
 The first step in calculation is creating an atomic structure that is a 3 dimensional representation of (1) the position of each atom and (2) the types of elements of each atom.  This structure serves as a primary input.
 
-### Ideal crystal
+# Ideal crystal
 
 To create the first structure you need to [open sidebar](/getting-started/ui-overview/#project-navigation-left-sidebar).
 
@@ -16,7 +13,7 @@ This brings up a new page with a default structure for FCC Si.  The 3 dimension 
 
 If you would like to work with something other than Silicon, please follow the directions on the [upload-and-import](upload-and-import.md) webpage and return to this webpage.
 
-#### Lattice selection
+## Crystal Lattice
 
 If you move your mouse to the box containing `angstrom, FCC` the `>` inside that box will turn to `<`. If you click anywhere inside that box an overlay will pop up on your screen.  The overlay will allow you to set the parameters of the crystal structure. (Crystal structure reference [[1](#links)])
 
@@ -27,7 +24,7 @@ Click on the animation below to view:
 <img data-gifffer="/images/ChangeMaterialLattice.gif" />
 
 
-#### Atomic basis/coordinates selection
+## Crystal Basis Coordinates
 
 The default representation of the atomic coordinates is in direct coordinates (also commonly called fractional coordinates [[2](#links)]) and specified under the basis section.  If you would like to work with the actual cartesian coordinates simply click on the "Cartesian" to convert the coordinates.
 
@@ -37,7 +34,7 @@ Click on the animation below to view:
 
 Alternating you can generate a custom lattice structure
 
-### Supercells
+# Supercells
 
 A supercell most commonly refers to an atomic structure that is a multiplicative representation of a smaller building block structure.  A primitive unit cell is the smallest possible building block structure to represent the material.  Most elements in the periodic table contain 2 atoms or less in their primitive unit cell.  If however you want an impurity at less than 50% in a 2-atom primitive unit cell element, you would need to make a copy of the unit cell in one or more directions on each axis in the structure.  That structure created after the copies of the unit cell are made is a supercell.
 
@@ -53,7 +50,7 @@ Please note that you are multiplying the structure of what is currently represen
 
 Upcoming capabilities are noted [here](/other/upcoming-features.md).
 
-### Links
+# Links
 
 1. [Wikipedia Bravais Lattice, Website](https://en.wikipedia.org/wiki/Bravais_lattice)
 2. [Wikipedia Fractional Coordinates, Website](https://en.wikipedia.org/wiki/Fractional_coordinates)
