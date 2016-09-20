@@ -1,3 +1,5 @@
+<!-- by TB -->
+
 Exabyte.io is the fastest way to design and develop new materials from concept to product. It is an all-in-one highly scalable framework for atomistic design, high fidelity simulations and large-scale data analytics. The [links](#links) section below can direct reader to sources of more in-depth explanation about what we are building and why [[1]](#links), quick demonstration of the scalability of our product [[2]](#links) and example case studies [[3]](#links).
 
 This documentation contains information about how our product works. You can search by using the search field in the top left corner or just read on. In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.
@@ -11,36 +13,47 @@ In case you feel impatient, you can skip straight to our first tutorial summariz
 
 Our users compute characteristic properties of materials through high-fidelity modeling. Therefore, the content of this documentation is divided into three main categories:
 
-- **Materials**:
-    - how to design, upload or import material geometries
-    - supported characteristic properties (eg. band gap, formation energy, electron mobility) supported
-    - advanced topics:
-        - creation of combinatorial sets of materials for high-throughput screening,
-        - overview of materials analytics (eg. how to make sense of all the characteristic properties)
+## Materials
 
-- **Models & Methods**:
-    - explanation the models used to extract the properties of materials and their particular implementations (methods),
-    - how to apply these models and run simulations
-    - advanced topics:
-        - editing simulation input,
-        - dissecting convergence and relaxation algorithms,
-        - calculation of compound characteristic properties (eg. formation energy)
+* how to design, upload or import material geometries
+* supported characteristic properties (eg. band gap, formation energy, electron mobility) supported
+* advanced topics:
+    * creation of combinatorial sets of materials for high-throughput screening,
+    * overview of materials analytics (eg. how to make sense of all the characteristic properties)
 
-- **Compute**:
-    - how to submit a simulation job
-    - how to choose the count
-    - job queues and urgency factors
-    - advanced topics:
-        - benchmarks and scaling
-        - limits per compute queue
-        - alternate connection methods:
-            - secure shell terminal:
-            - web-browser terminal:
-            - remote desktop via VNC
+## Models & Methods
+
+* explanation the models used to extract the properties of materials and their particular implementations (methods),
+* how to apply these models and run simulations
+* advanced topics:
+    * editing simulation input,
+    * dissecting convergence and relaxation algorithms,
+    * calculation of compound characteristic properties (eg. formation energy)
+
+## Compute
+
+* how to submit a simulation job
+* how to choose set compute resources
+* job submission queues and urgency factors
+* advanced topics:
+    * benchmarks and scaling
+    * limits per compute queue
+    * alternate connection methods:
+        * secure shell terminal:
+        * web-browser terminal:
+        * remote desktop via VNC
 
 Other parts explain data security, sharing and collaboration, billing/pricing and our terminology.
 
 ## Highlighted features
+
+### Materials Design/Upload/Import
+
+We let one develop material concepts from scratch by designing new geometries or reuse/extend prior works by uploading structures from disk or importing from trusted database sources. More information on the topic available on this [page](/materials/upload-and-import.md).
+
+### High performance and massive scalability
+
+Materials simulations are often computationally demanding. We put extreme attention to performance and scalability of our product. More information available [here](/compute/overview.md) and [here](/compute/benchmarks.md).
 
 ### Combinatorial screening
 
@@ -57,10 +70,6 @@ We have support team that is active 24/7 and will do our best to reply to your r
 
 # Links
 
-<small class="text-muted">(open in existing window)</small>
-
-1. [What is materials discover cloud, LinkedIn post](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
-
-2. [How big is "cloud-scale", LinkedIn post](https://www.linkedin.com/pulse/how-big-cloud-scale-timur-bazhirov)
-
+1. [What is materials discover cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
+2. [How big is "cloud-scale", article](https://www.linkedin.com/pulse/how-big-cloud-scale-timur-bazhirov)
 3. [High-throughput computer-aided discovery of new metallic alloys, case study](https://exabyte.io/#case-study)
