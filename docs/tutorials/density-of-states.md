@@ -1,9 +1,9 @@
 <!-- by MH -->
 
-This page explains how to run a density of state calculation based on density functional theory (DFT). We study silicon in the standard diamond-centered cubic structure and use [Quantum ESPRESSO](http://www.quantum-espresso.org/) as our simulation engine during this tutorial.
+This page explains how to calculate electronic density of states [[1](#links)] using density functional theory. We study silicon in the standard diamond-centered cubic structure and use Quantum ESPRESSO [[2](#links)] as our simulation engine during this tutorial.
 
-!!! Note "Accuracy of DFT-GGA model"
-    Please note that this calculation is performed using standard [DFT-GGA](https://en.wikipedia.org/wiki/Density_functional_theory) and therefore underprediction of the energy of unoccupied electronic states expected.  Further modifications to the input files and settings to correctly predict the band gap are possible and will be explored in the future.
+!!! Note "Accuracy of the results"
+    Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation [[3](#links)] which is known to under-estimate the energy of unoccupied electronic states.
 
 # Create job
 
@@ -15,11 +15,13 @@ Si is the default material, so if you choose "Create a Job" from the sidebar on 
 
 Density of states is calculated in conjunction with band structure calculation so under workflow chose the "Bandstructure + DOS" for either Quantum Espresso.
 
+Click on the animation below to view:
+
 <img data-gifffer="/images/DOSStep2.gif" />
 
 ## Adjust kpoints
 
-In addition, for electronic properties with a non-self consistent step it is critical to have a high k-point density to give enough detail to calculate an accurate density of states.
+It is critical to have a high sampling in reciprocal cell (high k-point density) to give enough detail to calculate an accurate density of states.
 
 In QuantumEspresso, the band structure + DOS workflow has 5 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation. Subsequent calculations calculate the density of states and also the projection of those states for partial density of states analysis
 
@@ -44,3 +46,9 @@ As each unit in the workflow is executing, you can monitor its progress live by 
 When all 5 units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the density of states as well as the partial density of states due to each atom in the structure as well as their s and p electron-like character.  By moving your cursor along each data series it will highlight which element electronic character that data series corresponds to.
 
 <img data-gifffer="/images/DOSStep6.gif" />
+
+# Links
+
+1. [Electronic Density of States, Wikipedia](https://en.wikipedia.org/wiki/Density_of_states)
+2. [Quantum ESPRESSO, Website](http://www.quantum-espresso.org/)
+3. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
