@@ -230,7 +230,8 @@ function post_to_parse() {
     var testObject = new TestObject();
     var name = jQuery('#contact-name').val();
     var email = jQuery('#contact-email').val();
-    var message = "--- DOCUMENTATION ---\n\n" + jQuery('#contact-message').val();
+    var message = "--- DOCUMENTATION ---\n\n" + window.location + "\n\n\n" +
+        jQuery('#contact-message').val();
     console.log("-------", name, email, message);
     if (formValidation.validateForm(name, email, message)) {
         testObject.save({
