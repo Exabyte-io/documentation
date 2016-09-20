@@ -1,6 +1,6 @@
 <!-- TODO by MH -->
 
-The calculation of some characteristic properties requires multiple calculations, inputs, and analysis.  Our focus is to automate these multi-step methodologies to free up the user's time to do real science.  Currently we have 2 such flows for formation energy and band gap described below.  In addition we provide automation to add both k-point convergence and relaxation as initial steps in any subsequent property calculation you chose to do.
+Extraction of some characteristic properties require multiple calculations.  We automate these multi-step workflows. Currently we have two of such workflows for formation energy and band gap described below.  We provide a convenient way to add both k-point convergence and relaxation as initial steps in any subsequent property calculation.
 
 <hr>
 

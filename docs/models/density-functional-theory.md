@@ -171,10 +171,8 @@ It is often desirable to obtain [relaxed structures](structural-relaxation.md) t
 
 # Additional resources
 
-1. P. Hohenberg and W. Kohn, Phys. Rev. 136, B864 1964, http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B864
-
-2. W. Kohn and L. J. Sham, Phys. Rev. 140, A1133 1965, http://journals.aps.org/pr/abstract/10.1103/PhysRev.140.A1133
-
-3. J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865, http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.77.3865
+1. P. Hohenberg and W. Kohn, Phys. Rev. 136, B864 1964, [source](http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B864)
+2. W. Kohn and L. J. Sham, Phys. Rev. 140, A1133 1965, [source](http://journals.aps.org/pr/abstract/10.1103/PhysRev.140.A1133)
+3. J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865, [source](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.77.3865)
 
 
