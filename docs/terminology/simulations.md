@@ -6,7 +6,7 @@ This page explains the basics concepts that are used within Exabyte.io when refe
 
 Characteristic properties of materials can be obtained either in experiment, or from pure analytical standpoint, or via the application of computational techniques, or **simulations**. This last case is what we employ at exabyte.io.
 
-> **Simulation** is an application of a computational model or technique aimed at extracting a specific property of materials.
+- **Simulation** is an application of a computational model or technique aimed at extracting a specific property of materials.
 
 There are three main entities that we deal with:
 
