@@ -67,9 +67,8 @@ We have support team that is active 24/7 and will do our best to reply to your r
 - phone: +1.510.473.7770,
 - web: chat box at the bottom of our main <a href="https://platform.exabyte.io" target="_blank">web application</a>.
 
-
 # Links
 
-1. [What is materials discover cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
+1. [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
 2. [How big is "cloud-scale", article](https://www.linkedin.com/pulse/how-big-cloud-scale-timur-bazhirov)
 3. [High-throughput computer-aided discovery of new metallic alloys, case study](https://exabyte.io/#case-study)
