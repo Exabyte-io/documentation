@@ -11,6 +11,12 @@ We pre-calculated the total energy and zero point energy of all elemental pseduo
 
 Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.
 
+```
+    E_fmt = E_tot (compound) - \sum{all elements} \sum{all atoms for element} (E_zpe + E_tot)
+```
+
+above, `E_fmt` and `E_tot`, `E_zpe` are the formation energy, total energy and zero point energy for the compound and lowest energy elemental structures.
+
 !!! warning "Formation energy automation"
     We support calculation of formation energy for the pseudopotentials that we currently provide ([1](#links) and [2](#links)).  If you chose to import your own pseudopotentials, you will need to manually calculate your reference total and zero point energies at converged k-point densities at the moment. In the future we will automate this entire flow for user-imported pseudopotentials as well.
 
