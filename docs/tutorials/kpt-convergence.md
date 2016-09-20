@@ -1,6 +1,6 @@
-<!-- TODO by MH -->
+<!-- by MH -->
 
-This page explains how to run a k-point convergence study using planewave pseudopotential density functional theory. K-point convergence can be run either as a stand-alone workflow or prepended to characteristic property calculation.
+This page explains how to run a k-point convergence study using planewave pseudopotential density functional theory [[1](#links)]. K-point convergence can be run either as a stand-alone workflow or prepended to characteristic property calculation.
 
 # Background
 
@@ -8,7 +8,7 @@ The motivation behind using k-point convergence is explained in detail [here](/m
 
 # Create job
 
-We will use k-point convergence for a Total Energy calculation in this tutorial. To create a new job, click on the "Create Job" link located in the sidebar/menu on the left. Use the default FCC Si structure. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
+We will use k-point convergence for a Total Energy calculation in this tutorial. To create a new job, click "Create Job" located in the sidebar/menu on the left. Use the default FCC Si structure. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
 
 <img data-gifffer="/images/ConvergeStep1.gif" />
 
@@ -43,7 +43,7 @@ While the calculation is running you will see a tab for each of the VASP executi
 <img data-gifffer="/images/ConvergeStep5.gif" />
 
 !!! Note "Future developments"
-    In the future we will split each simulation of a k-point convergence study into different data series to make the progress of each step more clear.  In addition we will also separate the text output of each individual simulation into it's own tracking box.
+    In the future we will split each iteration of the k-point convergence study into different data series to make the progress of each step more clear.  In addition we will also separate the text output of each individual simulation into it's own tracking box.
 
 # Check results
 
@@ -53,4 +53,9 @@ When calculation is complete, "Results" tab will have turned green and will beco
 
 # Converged k-point density
 
-Finally you can also browse the actual output and input files that are part of the calculation at the bottom of the results page.  If you are interested in determining the k-point density at which convergence was reached, simply open the KPOINTS file and you will see the converged density of 21x21x21.
+Finally you can also browse the actual output and input files that are part of the calculation at the bottom of the results page.  If you are interested in determining the k-point density at which convergence was reached, simply open the KPOINTS file and you will see the converged density of 21 x 21 x 21.
+
+# Links
+
+1. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
