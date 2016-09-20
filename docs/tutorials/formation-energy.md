@@ -1,6 +1,6 @@
 <!-- TODO by MH -->
 
-This page explains how to calculate formation energy based on density functional theory. We will be studying copper oxide and use VASP as our simulation engine.
+This page explains how to calculate formation energy [[1](#links)] based on density functional theory [[2](#links)]. We will be studying copper oxide CuO<sub>2</sub> and use VASP [[3](#links)] as our simulation engine.
 
 !!! Note "Pre-calculated energy values for defautl pseudopotentials"
     Formation energy requires the knowledge of the total and zero point energies of constituents in their standard state. We have pre-calculated these values at a converged k-point density for all supported pseudopotentials. These values are automatically populated to eliminate the need to recalculate them again.
@@ -45,3 +45,7 @@ As each unit in the workflow is executing, you can monitor its progress live by 
 When the execution of all unitls finished, switching to the Results tab and the sub-tab for the final execution unit will have an entry titled "Formation Energy" that will display formation energy of the material. The more negative the value, the more stable the material is. This "Formation Energy" box will also show the energetic parameters (total energy and zero-point energy) for constituent elements used to calculate the property.
 
 <img data-gifffer="/images/FinalFormationEnergy.png" />
+
+1. [Formation Energy, Wikipedia](https://en.wikipedia.org/wiki/Standard_Gibbs_free_energy_of_formation)
+2. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+3. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)

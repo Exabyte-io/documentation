@@ -26,13 +26,13 @@ The unique unit for this tutorial is the vasp_zpe unit. Clicking on it will show
 
 # Monitor status
 
-As each unit in the workflow is executed, you can monitor progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the "Status" tab under each execution's sub-tab. The animation below shows zero point calculation output for various atom displacements.
+As each unit in the workflow is executed, you can monitor progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the "Status" tab under each execution unit's sub-tab. The animation below shows zero point calculation output for various atom displacements.
 
 <img data-gifffer="/images/TrackZPEResults.gif" />
 
 # Check results
 
-When the execution of all units finished, switching to the "Results" tab and the sub-tab for the final execution unit will have a card titled "Zero Point Energy" that will display the value of zero point energy for the material in question. The larger its value - the more critical it is to include zero point energy in thermodynamic calculations.
+When the execution finished, switching to the "Results" tab will have a card titled "Zero Point Energy" that displays the value of zero point energy for the material in question. The larger its value - the more critical it is to include zero point energy in thermodynamic calculations.
 
 <img data-gifffer="/images/ShowZPEResults.gif" />
 
