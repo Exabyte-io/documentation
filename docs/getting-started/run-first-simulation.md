@@ -59,7 +59,7 @@ You can click on the job name and monitor the progress of the job in real time.
 
 <img data-gifffer="/images/FirstJobStatus.gif" />
 
-### View results and access output files
+### View results and access files
 
 Job view screen lets you track the input parameters, output text, convergence parameters (total energy in this tutorial), and view the results of the calculation and download output files when finished.
 
