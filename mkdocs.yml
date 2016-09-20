@@ -63,7 +63,6 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - First simulation:                 tutorials/first-simulation.md
         - Electronic band structure:        tutorials/band-structure.md
         - Electronic band gap:              tutorials/band-gap.md
         - Electronic density of states:     tutorials/density-of-states.md
