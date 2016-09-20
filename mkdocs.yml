@@ -32,13 +32,13 @@ pages:
 
     - Models & Methods:
         - Overview:                     models/overview.md
-        - Advanced Properties:                     models/advanced-characteristics.md
-        - Convergence algorithms:       models/convergence-algorithms.md
-        - Structural relaxation:        models/structural-relaxation.md
-        - Combinatorial set input:      models/combinatorial-set-input.md
         - Density Functional Theory:    models/density-functional-theory.md
         - Simulation workflows:         models/simulation-workflows.md
         - Example simulations:          models/example-simulations.md
+        - Advanced Properties:          models/advanced-characteristics.md
+        - Convergence algorithms:       models/convergence-algorithms.md
+        - Structural relaxation:        models/structural-relaxation.md
+        - Combinatorial set input:      models/combinatorial-set-input.md
 
     - Compute:
         - Overview:             compute/overview.md

@@ -1,6 +1,6 @@
 <!-- by MH -->
 # Properties
-Exabyte is focused on quickly expanding the number and range of properties we can predict.  If you don't see something on your wish list, feel free to email new@exabyte.io to request it.
+Exabyte is focused on quickly expanding the number and range of properties we can predict.  We want your feedback on potential development efforts, if you don't see something on your wish list, feel free to email info@exabyte.io to request it.
 
 <hr>
 # Principal Properties
@@ -202,7 +202,7 @@ Measured through the imaginary part of Dielectric Permittivity Symmetry analysis
 
 # Capabilities
 
-Exabyte.io is focused on building a capable structure generator and manipulator to enable you to create a wide variety of structures interactivey and online.  Toward that vision we currently are working on the following capabilties review in brief below.  If you are particularly interested in one of the below capabilities or think a different capability is more important than those listed below, please don't hesitate to send us your suggestions at new@exabyte.io
+Exabyte.io is focused on building a capable structure generator and manipulator to enable you to create a wide variety of structures interactivey and online.  Toward that vision we currently are working on the following capabilties review in brief below.  If you are particularly interested in one of the below capabilities or think a different capability is more important than those listed below, please don't hesitate to send us your suggestions at info@exabyte.io
 
 ## Surface generation
 
@@ -225,9 +225,22 @@ Many crystal structure have natural voids in their structures called interstitic
 Creation of polymer structures is a rich and diverse area that requires a multitude of functionality.
 
 
+# Upcoming convergence workflows
+
+1. Pseudopotential Energy Cutoff
+2. Pseudopotential Radius Cutoff
+3. Number of bands
 
 
-### Links
+# Upcoming simulation engines:
+
+1. BerkelyGW
+1. NWChem
+1. LAMMPS
+1. OMEN/NEMO
+
+
+# Links
 
 1. [Wikipedia Effective Mass, Website](https://en.wikipedia.org/wiki/Effective_mass_(solid-state_physics))
 2. [First-Principles Calculations of Schottky Barrier Heights
