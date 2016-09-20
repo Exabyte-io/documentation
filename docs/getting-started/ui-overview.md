@@ -173,7 +173,7 @@ Billings link takes you to the Billing page which shows your account Charges <i 
 
 ## Terminal and Remote Desktop
 
-Alternative access to your Exabyte.io account. More information [here](../cli/terminal.md). <!-- TODO: put link -->
+Alternative access to your Exabyte.io account. More information [here](../cli/login.md).
 
 ## Invite a friend
 

@@ -14,7 +14,7 @@ To create the first structure you need to [open sidebar](/getting-started/ui-ove
 
 This brings up a new page with a default structure for FCC Si.  The 3 dimension model on the lower right is interactive and can be manipulated by clicking and dragging with your mouse to rotate the structure.  You can also zoom in and out if you have a trackball on your mouse.
 
-If you would like to work with something other than Silicon, please follow the directions on the [upload-and-import](/upload-and-import.md) webpage and return to this webpage.
+If you would like to work with something other than Silicon, please follow the directions on the [upload-and-import](upload-and-import.md) webpage and return to this webpage.
 
 #### Lattice selection
 
@@ -51,7 +51,7 @@ Click on the animation below to view:
 
 Please note that you are multiplying the structure of what is currently represented in the `Crystal Basis` and 3D visualization window.  If Si is replicated by 2x2x2 that results in a 16 atom supercell.  If you then do another 2x2x2 replication, that will result in a 128-atom Si supercell.
 
-Upcoming capabilities are noted [here](/other/upcoming-capabilities.md).
+Upcoming capabilities are noted [here](/other/upcoming-features.md).
 
 ### Links
 

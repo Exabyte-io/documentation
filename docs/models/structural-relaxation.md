@@ -11,7 +11,7 @@ The following shows the steps to add relaxation to a property calculation such a
 <img data-gifffer="/images/RelaxBandstructure.gif" />
 
 !!! Note "Relaxation Tutorial"
-    Please visit the [relaxation tutorial](tutorial/relaxation.md) for a more expansive and detailed look at adding a relaxation.
+    Please visit the [relaxation tutorial](../tutorials/relaxation.md) for a more expansive and detailed look at adding a relaxation.
 
 # Relaxation types
 
