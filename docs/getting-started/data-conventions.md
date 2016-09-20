@@ -45,4 +45,3 @@ Access levels for a project could be set to private or public. Default project f
 ## Private data
 
 Depending on the [service level](/billing/pricing-and-service-levels.md), it is possible to set up access level for a project to private. In this case no other users will be able to view jobs belonging to such project, unless they are given permission to do so.
-
