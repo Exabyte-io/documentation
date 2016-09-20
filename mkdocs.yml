@@ -75,7 +75,7 @@ pages:
         - Combinatorial-screening:          tutorials/combinatorial-screening.md
         - Custom-input workflow:            tutorials/custom-input-workflow.md
         - Fermi surface:                    tutorials/fermi-surface.md
-        - Restart from previous results:    tutorials/restart-job.md
+        - Restart from previous run:        tutorials/restart-job.md
         - Remote desktop visualization:     tutorials/remote-desktop.md
         - Job submission via terminal:      tutorials/cli-job.md
         # - CLI data import:                  tutorials/cli-job-import.md
