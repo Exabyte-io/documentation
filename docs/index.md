@@ -40,6 +40,11 @@ Our users compute characteristic properties of materials through high-fidelity m
 
 Other parts explain data security, sharing and collaboration, billing/pricing and our terminology.
 
+## Highlighted features
+
+### Combinatorial screening
+
+We enable automation of materials screening processes to make it easier to create leads, set-up and monitor simulations, and analyze the results. This [page](/materials/combinatorial-sets.md) contains more information about combinatorial materials sets.
 
 # How to get help
 
