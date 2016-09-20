@@ -1,6 +1,6 @@
 <!-- TODO by MH -->
 
-This tutorial shows you how to provide your own custom workflow for property calculation.  We have made our framework extenable to enable you to add, edit and delete any execution unit.
+This tutorial shows you how to set up a custom workflow for characteristic property calculation.  We have made our framework customizable to enable you to add, edit and delete any execution unit.
 
 # Create job
 
@@ -16,9 +16,11 @@ By default when creating a job a workflow is chosen. With Quantum ESPRESSO that 
 
 <img data-gifffer="/images/CustomAddDelete.gif" />
 
-# Paste in custom input files
+# Paste input files text
 
-There are a wide variety of example simulation input files available on the web.  If we have not supported those workflows yet, we provide a method to run multiple step workflows.  For example, there is a [VASP Wiki](http://cms.mpi.univie.ac.at/wiki/index.php/VASP_example_calculations) with a large number of examples with all input files.  Below we show how to add a dielectric constant static and frequency calculation into our workflow units.  The simulations could then be executed automatically as normal by pressing the "Compute" tab and "Submit Job".  Exabyte will only display the standard output of each unit but all output files will be present at the end of the simulation accessible on the web or in the terminal window for further analysis.
+There are a wide variety of example simulation input files available on the web.  If we have not supported those workflows yet, we provide a method to run multiple step workflows.  For example, there is a [VASP Wiki](http://cms.mpi.univie.ac.at/wiki/index.php/VASP_example_calculations) with a large number of example input files.
+
+Below we show how to add a dielectric constant and frequency calculation into our workflow units.  The simulations could then be executed by pressing the "Compute" tab and then "Submit Job". Exabyte will only display the standard output of each unit but all output files will be present at the end of the simulation accessible on the web.
 
 <img data-gifffer="/images/AddIncar1.gif" />
 

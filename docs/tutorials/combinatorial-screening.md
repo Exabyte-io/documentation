@@ -1,6 +1,6 @@
 <!-- TODO by MH -->
 
-This tutorial demonstrates the combinatorial capabilities to set up combinations of III-V compound semiconductor and permutations of n and p-type dopants in a 16-atom Si supercell and track the impact on electronic band gap.
+This tutorial demonstrates how to create a set of of III-V compound semiconductor materials with permutations of n and p-type dopants in a 16-atom Si supercell, and subsequently track the impact on electronic band gap. We use Quantum ESPRESSO as our simulation engine for this tutorial.
 
 # Import materials
 
@@ -8,16 +8,16 @@ To import III-V compound semiconductors go to the Materials webpage using the si
 
 <img data-gifffer="/images/ImportAlP.gif" />
 
-# Create combination job
+# Create material combinations
 
-To create a job go to the "Create Job" webpage using the sidebar on the homepage.  Once on the "Create Job" webpage and "Material" tab scroll down to the visualization of the atomic structure.  Just above and to the right of the visualization will be a button to "Activate Combinatorial".  Click this button and the box surrounding the atomic positions will be highlighted in orange.  To create the combinatorial set, change the elements labels for each atom to Al/Al/Al/In/In/In/Ga/Ga/Ga and P/As/Sb/P/As/Sb/P/As/Sb.
+To create a job go to the "Create Job" webpage using left sidebar.  Once on the "Create Job" webpage and "Material" tab scroll down to the visualization of the atomic structure.  Just above and to the right of the visualization will be a button to "Activate Combinatorial".  Click this button and the box surrounding the atomic positions will be highlighted in orange.  To create the combinatorial set, change the elements labels for each atom to `Al/Al/Al/In/In/In/Ga/Ga/Ga` and `P/As/Sb/P/As/Sb/P/As/Sb`.
 
 <img data-gifffer="/images/CreateAlP.gif" />
 <img data-gifffer="/images/CreateAlP2.gif" />
 
 # Choose workflow
 
-Click on the "Workflow" tab.  Since we are substituting different elements into an AlP crystal structure it's important to relax the cell parameters to the new lattice parameters.  Click the "+" next to the "Advanced" text then click on the "Relaxation" button.  For an accurate band gap calculation it's also important to have a high k-point density so click on the "+" button next to "k-points grid" and increase the density to 9x9x9 as shown below.  If you click on the first relaxation unit in the workflow at the bottom of the page you will see that the input file includes all the pseudopotentials for all elements.  When the jobs are created, 9 unique input files will be created automatically that can be run directly in Quantum ESPRESSO.
+Click on the "Workflow" tab.  Since we are substituting different elements in AlP crystal structure it's important to relax the cell parameters to the new lattice parameters.  Click the "+" next to the "Advanced" accordion then click on the "Relaxation" button.  For an accurate band gap calculation it's also important to have a high k-point density so click on the "+" button next to "k-points grid" and increase the density to 9 x 9 x 9 as shown below.  If you click on the first relaxation unit in the workflow at the bottom of the page you will see that the input file includes all the pseudopotentials for all elements.  When the jobs are created, 9 unique input files will be created automatically that can be run directly in Quantum ESPRESSO.
 
 <img data-gifffer="/images/WorkflowAlP.gif" />
 
@@ -42,9 +42,9 @@ Next we will set up the jobs for the permutation set for doped Silicon.  We will
 <img data-gifffer="/images/CreateSiDopant2.gif" />
 
 !!! Warning "Not all III-V's will exit successfully."
-    Combinatorial runs can be challenging especially when all atoms in a base material are replaced.  In the case of III-V's, depending on your relaxation settings, likely some of your materials will fail to relax to the correct structure, or end up in a local minimum during relaxation and a 0 eV band gap.  While this is not ideal, ~50% of the simulations will relax into the correct new material unit cells and generate useful band gap results.  The remaining material currently require more hands-on management of the relaxation settings with follow-up calculations.  The power of the combinatorics module is that it has automated as much of this process as possible and identified the materials that require your more detailed attention and manual follow-up.
+    Combinatorial runs can be challenging especially when all atoms in a base material are replaced.  In the case of III-V's, depending on your relaxation settings, likely some of your materials will fail to relax to the correct structure, or end up in a local minimum during relaxation and a 0 eV band gap.  Other simulations will relax into the correct new material unit cells and generate results for the band gap. Some materials currently require more hands-on management of the relaxation settings with follow-up calculations.  The power of the combinatorics module is that it has automated as much of this process as possible and identified the materials that require your more detailed attention and manual follow-up.
 
-# Navigate to analytics
+# Analytics
 
 After all the jobs complete, the best way to aggregate the results are through the "Analytics" tab.  From the home page bring up the left-hand sidebar on the "Analytics" entry to bring up the analysis window.
 
@@ -58,3 +58,8 @@ Within the analytics page, you will see a list of all materials, search for and 
 
 !!! Warning "Dopant band gaps report as 0 eV due to Fermi energy shift"
     We have not graphed the combinatorial set of dopants in Silicon in this tutorial as doping results in the Fermi energy moves into the valence band edge or conduction band edge. In effect, this turns the material into a conductor with a 0 band gap. In the future we expect to develop an automated way to predict the change in the band gap of the original base material (pure silicon in this case).
+
+# Links
+
+1. [Combinatorial Screening, Wikipedia](1. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+2. [Quantum ESPRESSO, Website](http://www.quantum-espresso.org/)
