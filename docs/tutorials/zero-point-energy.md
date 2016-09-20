@@ -1,6 +1,6 @@
 <!-- by MH -->
 
-This page explains how to run a zero point energy simulation based on density functional theory. We will calculate zero point energy for silicon in face-centered cubic structure.
+This page explains how to run a zero point energy calculation [[1](#links)] based on density functional theory [[2](#links)]. We will calculate zero point energy for silicon in face-centered cubic structure. We will be studying Silicon in the standard diamond-like face-centered cubic structure and will use VASP [[3](#links)] as our simulation engine.
 
 # Background
 
@@ -20,7 +20,7 @@ Next go to the workflow tab and select "Zero Point Energy" as the workflow type.
 
 # Examine input file
 
-The unique unit for this tutorial is the vasp_zpe unit. Clicking on it will show the corresponding input files. "IBRION=5" flag within INCAR enables VASP to run the displacements for the zero point energy calculation.
+The unique unit for this tutorial is the vasp_zpe unit. Clicking on it will show the corresponding input files. `IBRION = 5` flag within INCAR enables VASP to run the displacements for the zero point energy calculation.
 
 <img data-gifffer="/images/ShowZPEUnit.gif" />
 
@@ -35,3 +35,9 @@ As each unit in the workflow is executed, you can monitor progress live by viewi
 When the execution of all units finished, switching to the "Results" tab and the sub-tab for the final execution unit will have a card titled "Zero Point Energy" that will display the value of zero point energy for the material in question. The larger its value - the more critical it is to include zero point energy in thermodynamic calculations.
 
 <img data-gifffer="/images/ShowZPEResults.gif" />
+
+# Links
+
+1. [Zero-point Energy, Wikipedia](https://en.wikipedia.org/wiki/Zero-point_energy)
+2. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+3. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
