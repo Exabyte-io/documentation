@@ -12,9 +12,3 @@ When this unit cell is repeated in 3 dimensions, a crystal lattice is formed (un
 On the figure above the content of unit cell is repeated infinite amount of times in three dimensions. At every border between the cells, all conditions within the 2 cells have to match exactly, as it is illustrated below:
 
 In this formalism, if one wants to study a system with less symmetry (eg. not a perfect crystal, but a defect, surface, slab or molecule), it would be necessary to add enough vacuum to unit cell
-
-# K-point sampling
-
-In principle we need to integrate over all possible k when constructing the density. Fortunately the wavefunctions change slowly as we vary k, so we can approximate the integral with a summation:
-
-here g k is a spectral weight of a point k in the reciprocal space formed by all such vectors.
