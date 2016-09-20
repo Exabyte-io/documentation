@@ -2,6 +2,8 @@
 
 A workflow is a set of distinct units combined together in a hierarchical way to calculate a specific characteristic property. A workflow is specific to a particular simulation engine
 
+<hr>
+
 # Workflow types
 
 ## Convergence
@@ -39,6 +41,8 @@ The diagram below shows an example implementation of a conditional that adjusts 
 ## Mapping
 
 Step replicated for a set of input parameters.  For example: change the element name using a list "Li, Na, K, Rb, Cs, Fr"
+
+<hr>
 
 ### Workflow example:
 
