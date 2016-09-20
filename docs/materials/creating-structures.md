@@ -4,7 +4,7 @@ This tutorial shows how to create a structure prior to running a simulation.
 
 # First step
 
-The first step in calculation is creating an atomic structure that is a 3 dimensional representation of (1) the position of each atom and (2) the types of elements of each atom.  This structure serves as a primary input for the various methods and software that Exabyte.io provides.
+The first step in calculation is creating an atomic structure that is a 3 dimensional representation of (1) the position of each atom and (2) the types of elements of each atom.  This structure serves as a primary input.
 
 ### Ideal crystal
 
@@ -18,11 +18,11 @@ If you would like to work with something other than Silicon, please follow the d
 
 #### Lattice selection
 
-If you move your mouse to the box containing `angstrom, FCC` the `>` inside that box will turn to `<`.  If you click anywhere inside that box an overlay will pop up on your screen.  The overlay will allow you to set the parameters of the crystal structure. (Crystal structure reference [[1](#links)])
+If you move your mouse to the box containing `angstrom, FCC` the `>` inside that box will turn to `<`. If you click anywhere inside that box an overlay will pop up on your screen.  The overlay will allow you to set the parameters of the crystal structure. (Crystal structure reference [[1](#links)])
 
 It is possible to manually set all lattice constants and angles between the lattice vectors.  Alternately, to choose a default crystal cell other than Face-Centered Cubic, click on the `Face-centered Cubic` line below the `Lattice type` heading and a selection box with the 14 possible crystal cells will appear.  You can select an alternate crystal lattice by clicking on a different cell type and the displayed angles and lattice constants will automatically change.  When you select a new crystal lattice click the "Update Lattice" button.  The overlay will disappear and the 3D visual representation of the structure will change to reflect the new lattice type.
 
-"Click on the animation below to view it"
+Click on the animation below to view:
 
 <img data-gifffer="/images/ChangeMaterialLattice.gif" />
 
@@ -31,7 +31,7 @@ It is possible to manually set all lattice constants and angles between the latt
 
 The default representation of the atomic coordinates is in direct coordinates (also commonly called fractional coordinates [[2](#links)]) and specified under the basis section.  If you would like to work with the actual cartesian coordinates simply click on the "Cartesian" to convert the coordinates.
 
-"Click on the animation below to view it"
+Click on the animation below to view:
 
 <img data-gifffer="/images/ChangeMaterialBasis.gif" />
 
@@ -45,7 +45,7 @@ For example, silicon which a 2 atom unit cell, being replication by 2x2x2 leads 
 
 The ability to create a supercell can be accessed through the `Advanced Geometry Tools` box below the `Crystal Basis` section.  Once again moving your mouse into the box the  `>` inside that box will turn to `<`.  If you click anywhere inside that box an overlay will pop up on your screen.  The overlay will allow you to set the number of multiplicative copies of the unit cell displayed in all 3 directions of the crystal cell.  After clicking the `Create Supercell` button, both the `Crystal Basis` and 3D visual representation of the structure will change according to the replication entered.
 
-"Click on the animation below to view it"
+Click on the animation below to view:
 
 <img data-gifffer="/images/CreateMaterialSupercell.gif" />
 

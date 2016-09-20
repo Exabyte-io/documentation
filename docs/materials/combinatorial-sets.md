@@ -2,8 +2,7 @@
 
 Combinatorial sets are used to study a wide variety of modifications to a base crystal structure through substitution of elements at particular atomic positions.  To this end it is possible to specify what elements are substituted for each atomic site in a structure and specify a different substitution rule for each position as well.
 
-To activate combinatorial set generation, go to `Create Job` webpage. On this page near the upper right corner of the structure visualization you will see the corresponding button to get more information to read on how to set up the combinatorics, click on the <i class="zmdi zmdi-info"></i> button.  The contents of the page are also displayed below.
-
+To activate combinatorial set generation, go to `Create Job` webpage. On this page near the upper right corner of the structure visualization you will see to get more information on how to set up the combinatorics.
 
 # Overview
 
@@ -55,7 +54,8 @@ Ge 0.5 0.5 0.0
 Si,Ge,As 0.0 0.0 0.0
 Si,Ge    0.5 0.5 0.0
 ```
-In case commas are used the elements are changed one at a time, eg. there will be 6 total bases created in the example above
+
+In case commas (",") are used as separators, the elements are changed one at a time, eg. there will be 6 total bases created in the example above:
 
 **Case 1 - structure used**
 ```
