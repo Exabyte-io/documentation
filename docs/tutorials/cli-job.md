@@ -28,6 +28,8 @@ Copy in the espresso.job template file from within `~/job-script-templates` dire
 
 ![Edit Job Script](../images/CreateJobScript.png "Edit Job Script")
 
+![Final Job Script](../images/FinalJobScript.png "Final Job Script")
+
 For a more detailed explaination of the features available using the job.script file, please check out the [jobs.md](../cli/jobs.md) page.  A more complete list of the job.script and environment setting options is available on the [extra.md](../cli/extra.md) page.
 
 In addition if you would like to set up your environment in the terminal window to access some of our resources you can see detailed information [here](../cli/modules-environment.md)

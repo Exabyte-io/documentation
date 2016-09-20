@@ -62,6 +62,7 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
+        - First simulation:                 tutorials/first-simulation.md
         - Electronic band structure:        tutorials/band-structure.md
         - Electronic band gap:              tutorials/band-gap.md
         - Electronic density of states:     tutorials/density-of-states.md
@@ -73,6 +74,7 @@ pages:
         - Combinatorial-screening:          tutorials/combinatorial-screening.md
         - Custom-input workflow:            tutorials/custom-input-workflow.md
         - Fermi surface:                    tutorials/fermi-surface.md
+        - Restart from previous results:    tutorials/restart-job.md
         - Remote desktop visualization:     tutorials/remote-desktop.md
         - Job submission via terminal:      tutorials/cli-job.md
         # - CLI data import:                  tutorials/cli-job-import.md
@@ -110,4 +112,4 @@ pages:
     - Terminology:
         - Simulations:              terminology/simulations.md
         - Materials Properties:     terminology/property-classification.md
-        - Crystallography:     terminology/crystallography.md
+        - Crystallography:          terminology/crystallography.md
