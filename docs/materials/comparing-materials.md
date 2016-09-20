@@ -1,10 +1,12 @@
 <!-- by MH -->
 
-The analytics explorer webpage is a powerful tool to aggregate, sort, organize, and compare materials and visualize properties quickly. It is especially useful for combinatorial studies on a large number of materials.
+The "Analytics" page is a powerful tool to aggregate, sort, organize, and compare materials and visualize their properties quickly. It is especially useful for combinatorial studies on a large number of materials.
 
-# Search analytics
+# Search
 
-The analytics page is reached through the left-hand side-bar. By default the page shows displays all materials in the user collection.  The search button (magnifying glass on upper right side of page) can focus your comparison on a subset of the materials.  The animated gif below, shows how using "Ga|In|As" we can focus on all results for compounds with group III elements.
+The analytics page is reached through the left-hand side-bar. By default the page displays all materials inside site-wide materials bank collection. The latter includes all publicly available materials, plus user-owned ones and the ones directly shared with the user.
+
+The search (magnifying glasses on upper right side of page) can focus your comparison on a subset of the materials. The animated gif below, shows how using "Ga|In|As" we can focus on all results for compounds with group III elements.
 
 <img data-gifffer="/images/SearchAnalytics.gif" />
 
@@ -14,9 +16,11 @@ In many cases a workflow or property calculation quantifies multiple properties 
 
 <img data-gifffer="/images/ChooseProperties.gif" />
 
-# Examine all results for one material
+# Examine all results for single material
 
-In many cases a property calculation will be run multiple times on the same material with results depending upon the simulation settings.  If this is the case the property of interest will have a note below the property such as "2 more".  This signifies there are 2 additional instances of property calculation than the value displayed on the summary page.  By clicking on the material you will obtain a detailed summary page of all the instances of property calculation. If a particular result of interest, you can click on the 3 vertical dots to the extreme right of the data and select "source" to go to the job status page that generated the result.
+In many cases a property calculation will be run multiple times on the same material with results depending upon the simulation settings.  If this is the case the property of interest will have a note below the property such as "2 more".  This signifies there are 2 additional instances of property calculation than the value displayed on the summary page.  By default only the value with highest precision (eg. highest kpoint density, cutoff energy for planewave pseudopotential density functional theory) is shown.
+
+By clicking on the material you will obtain a detailed summary page of all the instances of property calculation. If a particular result of interest, you can click on the 3 vertical dots to the extreme right of the data and select "source" to go to the job status page that generated the result.
 
 <img data-gifffer="/images/AllMaterialResults.gif" />
 

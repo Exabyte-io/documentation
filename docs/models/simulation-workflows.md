@@ -1,6 +1,10 @@
 <!-- by MH -->
 
-A workflow is a set of distinct units combined in a structures flow to calculate a specific characteristic property. A workflow is specific to a particular simulation engine.
+This page contains the basics about simulation workflows, their types and constituent units.
+
+# Workflow
+
+A workflow is a set of distinct units (elementary calculations) combined together in flowchart (algorithm) to calculate a specific characteristic property. A workflow is specific to a particular simulation engine, model and method.
 
 <hr>
 
@@ -24,7 +28,11 @@ Often multiple convergences are performed to choose a set of input parameters. T
 
 <hr>
 
-# Workflow unit building blocks
+# Workflow unit
+
+Workflows are made of units, or elementary calculations that can be executed in succession based on algorithmic conditions.
+
+# Workflow unit types
 
 ## Assignment
 
