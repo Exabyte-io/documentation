@@ -16,7 +16,7 @@ Converges a certain property with respect to the input parameters (Example: [k-p
 
 ## Optimization
 
-Optimizes a material's structure usually with respect to total energy (Example: [geometry optimization/structural relaxation](strucural-relaxation.md))
+Optimizes a material's structure usually with respect to total energy (Example: [geometry optimization/structural relaxation](structural-relaxation.md))
 
 ## Primary
 
