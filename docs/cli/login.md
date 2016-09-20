@@ -140,7 +140,7 @@ Replace the text inside braces below with the corresponding names/paths:
 2. At the command prompt, enter the following command:
 
     ```
-    ssh -i {path/to/your/private_key} {exabyte.io_username}@angstrom.exabyte.io
+    ssh -i {path/to/your/private_key} {exabyte.io_username}@bohr.exabyte.io
     ```
 
 
@@ -208,15 +208,15 @@ Replace the text inside braces below with the corresponding names/paths:
 
 1. To transfer files to exabyte.io:
 
-    ```
-    scp -i {path/to/your/private_key} {path/to/your/local/file} {exabyte.io_username}@angstrom.exabyte.io:{path/inside/your/home/}
-    ```
+```bash
+scp -i <path to private_key> <path to file> <username>@bohr.exabyte.io:<path inside home dir>
+```
 
 2. To transfer files from exabyte.io::
 
-    ```
-    scp -i {path/to/your/private_key} {exabyte.io_username}@angstrom.exabyte.io:{path/inside/your/home/} {path/to/your/local/file}
-    ```
+```
+scp -i <path to private_key> <username>@bohr.exabyte.io:<path inside home dir> <path to file>
+```
 
 ### Transfer data via WinSCP
 
