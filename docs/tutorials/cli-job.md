@@ -1,6 +1,6 @@
 <!-- TODO by MH -->
 
-Our product provides you with a quick and easy way to set up custom simulation methods. Our focus is to automate as much of this functionality as possible, but it is always possible that you may want more control over the execution flow or run a type of calculation different from anything we have yet implemented.  Our focus is to enable as much of this as possible through the web interface, but this may not be possible yet in all cases and some experienced users may be more comfortable submitting their simulations directly.
+Our product provides a quick and easy way to set up custom simulations. It is always possible that you may want more control over the execution flow or run a type of calculation different from anything we have yet implemented. Some experienced users may be more comfortable submitting their simulations directly through command-line terminal.
 
 # Command-line terminal
 
@@ -24,11 +24,11 @@ The data directory where your simulations that have been submitted through the w
 
 Our queuing system is a variant of Torque and is controlled through a script called job.script.  You can find templates of these script linked to your home directory under ~/job-script-templates/*.job
 
-# Create first terminal job
+# Create job
 
-To submit a job, we recommend working inside the same sub-directory where all your jobs are submitted from the website.  Create a new directory under this sub-directory called first_terminal_test.
+To create a job, we recommend working inside the same sub-directory where all your jobs are submitted from the website.  Create a new directory under this sub-directory called `test_job`.
 
-Copy in the espresso.job template file and rename it as job.script for submission and any necessary input files or executables into this directory as well.  To run you will need to edit at least the line within the file that starts with "mpirun" if you want to use a tool other than Quantum ESPRESSO.  The directions on how to set the various Torque related variables are here.  The template version of the script will submit a job to our "on-demand regular" queue using 8 cores on 1 machine and have a maximum run-time of 10 minutes.  The screen shot below shows had to add your username and adjust the cores per node to 4.
+Copy in the espresso.job template file from within `~/job-script-templates` directory and rename it as `job.script`. Copy any necessary input files or executables into this directory as well.  To run you will need to edit at least the line within the file that starts with "mpirun" if you want to use a tool other than Quantum ESPRESSO.  The directions on how to set the various Torque related variables are here.  The template version of the script will submit a job to "on-demand regular" queue using 8 cores on 1 machine and have a maximum run-time of 10 minutes.  The screen shot below shows how to add your username and adjust the number of cores per node to 4.
 
 ![Edit Job Script](../images/CreateJobScript.png "Edit Job Script")
 
@@ -38,17 +38,19 @@ In addition if you would like to set up your environment in the terminal window 
 
 You can see the options for choosing your queue to submit the job [here](../compute/queues.md)
 
-# Submit first terminal job
+# Submit job
 
 Once you have edited the job.script file that you copied in and set up all your simulation input files, then you can submit the command via the "qsub" script.  To submit the job simply run the command "qsub job.script".  The queueing system will give a message letting you know if the job was accepted.
 
-# Monitoring first terminal job
+# Monitor job
 
 If you'd like to check on the status of the job, type "qstat" for a one-time view of the current status of your jobs, or type "watch qstat" for a continuously updated screen showing the status of your jobs.  Once your job starts running all the output from the job will be placed in the directory where the qsub command was run from unless you changed the "directory" line within the job.script file.
 
 ![Submit Job Script](../images/SubmitJobScript.png "Submit Job Script")
 
+# Links
 
+1. [Command Line Usage Documentation](/cli/overview.md)
 
 
 
