@@ -1,4 +1,4 @@
-<!-- TODO by TB -->
+<!-- by TB -->
 
 This page explains the basics concepts that are used within Exabyte.io when referring to simulations.
 
