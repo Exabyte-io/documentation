@@ -98,7 +98,7 @@ Jobs summary widget summarizes the total number of jobs run during this same per
 
 ## Create Job
 
-Create Job shortcut link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the simulation wizard where you can quickly create and run a simulation. By default the job is saved in your [default project](XXX.md). <!-- TODO: add link --> First tab is the Material Design tab. Material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
+Create Job shortcut link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the simulation wizard where you can quickly create and run a simulation. By default the job is saved in your [default project](/getting-started/data-conventions.md). First tab is the Material Designer tab. Material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
 
 <img data-gifffer="/images/ShortCutCreateJob.gif" />
 
