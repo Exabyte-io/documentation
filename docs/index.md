@@ -23,7 +23,7 @@ Our users compute characteristic properties of materials through high-fidelity m
 
 ## Models & Methods
 
-* explanation the models used to extract the properties of materials and their particular implementations (methods),
+* explanation of the models used to extract the properties of materials and their particular implementations (methods),
 * how to apply these models and run simulations
 * advanced topics:
     * editing simulation input,
@@ -33,7 +33,7 @@ Our users compute characteristic properties of materials through high-fidelity m
 ## Compute
 
 * how to submit a simulation job
-* how to choose set compute resources
+* how to set compute resources
 * job submission queues and urgency factors
 * advanced topics:
     * benchmarks and scaling
