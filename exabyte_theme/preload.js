@@ -1,6 +1,7 @@
 var PRIVATE_URLS = [
     // "getting-started/run-first-simulation",
     // "getting-started/ui-overview",
+    // "getting-started/data-conventions",
 
     // "materials/creating-structures",
     // "materials/upload-and-import",
@@ -48,6 +49,7 @@ var PRIVATE_URLS = [
     "tutorials/fermi-surface",
     "tutorials/remote-desktop",
     "tutorials/cli-job",
+    "tutorials/restart-job",
     "tutorials/cli-job-import",
 
     "billing/settings-and-profile",
