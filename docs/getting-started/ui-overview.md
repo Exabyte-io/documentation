@@ -40,7 +40,7 @@ Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i
 | <i class="zmdi zmdi-chart"></i> &nbsp; [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
 | <i class="zmdi zmdi-widgets"></i> &nbsp; [Materials](ui-overview.md#materials)         | Shows your list of materials
 | <i class="zmdi zmdi-account"></i> &nbsp; Users                                         | Shows a list of public users of Exabyte
-| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Coming soon to Exabyte, collaborate with teams and colleagues in Organizations.
+| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Coming soon: teams collaboration and extended privacy
 | <i class="zmdi zmdi-comments"></i> &nbsp; Forum                                         | Discuss issues with other users and Exabyte.io staff
 | <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation is always here
 
