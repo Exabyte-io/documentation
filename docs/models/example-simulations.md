@@ -6,7 +6,7 @@ This page contains explanation about the characteristic properties of materials 
 
 ## Electronic energies and wave functions
 
-Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](../tutorials/first-simulation.md) to learn more. Example input files used for the calculation are given below:
+Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](../tutorials/band-structure.md) to learn more. Example input files are given below:
 
 #### VASP
 
