@@ -9,7 +9,7 @@ The process of finding input parameters that deliver a certain level of precisio
 
 In most cases to ensure fidelity the total energy should not increase significantly when the k-point density is increased.  This search for the appropriate density of k-points is called k-point convergence. Below you can see the flowchart of the optimization algorithm used:
 
-<img src="/images/kpointConvergenceDiagram.png" style="width: 560px">
+<img src="/images/KpointConvergenceDiagram.png" style="width: 560px">
 
 Here we use a uniform k-point mesh (same in each of the three spatial directions) and first initiate the number of kpoints `N_K` at 1. We then run self-consistent density functional theory calculation (`pw_scf` - using Quantum ESPRESSO's terminology) and check whether the `Output` value difference at current step and at previus one (`x`) is less than convergence threshold.
 
