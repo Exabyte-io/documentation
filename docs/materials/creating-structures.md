@@ -24,7 +24,7 @@ Click on the animation below to view:
 <img data-gifffer="/images/ChangeMaterialLattice.gif" />
 
 
-## Crystal Basis Coordinates
+## Crystal Basis
 
 The default representation of the atomic coordinates is in direct coordinates (also commonly called fractional coordinates [[2](#links)]) and specified under the basis section.  If you would like to work with the actual cartesian coordinates simply click on the "Cartesian" to convert the coordinates.
 
