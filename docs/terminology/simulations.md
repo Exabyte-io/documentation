@@ -1,6 +1,6 @@
 <!-- by TB -->
 
-This page explains the basics concepts that are used within Exabyte.io when referring to simulations.
+This page explains the basic concepts that are used within Exabyte.io when referring to simulations.
 
 # Introduction
 
