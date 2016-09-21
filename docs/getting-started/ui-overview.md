@@ -40,7 +40,7 @@ Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i
 | <i class="zmdi zmdi-chart"></i> &nbsp; [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
 | <i class="zmdi zmdi-widgets"></i> &nbsp; [Materials](ui-overview.md#materials)         | Shows your list of materials
 | <i class="zmdi zmdi-account"></i> &nbsp; Users                                         | Shows a list of public users of Exabyte
-| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Shows a list of public organizations in Exabyte
+| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Coming soon to Exabyte, collaborate with teams and colleagues in Organizations.
 | <i class="zmdi zmdi-comments"></i> &nbsp; Forum                                         | Discuss issues with other users and Exabyte.io staff
 | <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation is always here
 
@@ -126,7 +126,7 @@ Users page shows all the user profiles that are accessible to you.
 
 ## Organizations
 
-Organizations page shows all the organization profiles that are accessible to you.
+Coming soon to Exabyte are Organizations, where collaboration happens between teams. The Organizations page will show all the organization profiles that are accessible to you.
 
 ## Analytics
 
@@ -147,7 +147,7 @@ A list of all the materials you have imported, created or uploaded into your acc
 
 ## Account Switcher
 
-Profile card at the top of the right hand menu shows the account you are currently using. Normally this would be your personal profile, but if you have created, or are a member of, an organization, clicking here will open the list of organizations to which you belong. You can then click on one to begin using Exabyte.io as that organization member instead of your personal account. Interface will now show data related to the organization profile: eg. storage quota and balance will be that of the organization. Projects and jobs will be those submitted by the organization. You can switch back to your personal profile by using the account switcher again and selecting your personal account.
+Coming soon to Exabyte are Organizations, where collaboration happens between teams. The Profile card at the top of the right hand menu shows the account you are currently using. Normally this would be your personal profile, but if you have created, or are a member of, an organization, clicking here will open the list of organizations to which you belong. You can then click on one to begin using Exabyte.io as that organization member instead of your personal account. Interface will now show data related to the organization profile: eg. storage quota and balance will be that of the organization. Projects and jobs will be those submitted by the organization. You can switch back to your personal profile by using the account switcher again and selecting your personal account.
 
 <img data-gifffer="/images/AccountSwitcher.gif" />
 
