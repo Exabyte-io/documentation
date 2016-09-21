@@ -14,13 +14,11 @@ If you have an idea that you want to see on our roadmap head over to our Trello 
 + Recently released = things we have already released
 
 #### Labels
-Label colours indicate the current status of a card in our roadmap.
+Label colours indicate the area of cards in our roadmap.
 
-+ Green = Currently being discussed / spec’d
-+ Yellow = Currently being designed
-+ Orange = Currently being developed
-+ Red = Stalled/On-hold
-+ Purple = Currently being reviewed
-+ Blue = Ready/done
-
-If you just want to tell us how awesome Exabyte is drop us a line on Twitter or Facebook or Google+
++ Discovery: Social, Sharing & Project Collaboration (blue)
++ Material Design (black)
++ Models & Methods (purple)
++ Cloud & Supercomputing (cyan)
++ Command Line Interface (grey)
++ Artifical Intelligence & Analytics (green)
