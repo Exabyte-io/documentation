@@ -7,7 +7,7 @@ This documentation contains information about how our product works. You can sea
 # Quickstart
 
 In case you feel impatient, you can skip straight to our first tutorial summarizing
-[first steps with exabyte.io](tutorials/first-simulation.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
+[first steps with exabyte.io](getting-started/run-first-simulation.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
 
 # Contents
 
@@ -53,7 +53,7 @@ We let one develop material concepts from scratch by designing new geometries or
 
 ### High performance and massive scalability
 
-Materials simulations are often computationally demanding. We put extreme attention to performance and scalability of our product. More information available [here](/compute/overview.md) and [here](/compute/benchmarks.md).
+Materials simulations are often computationally demanding. We put extreme attention to performance and scalability of our product. More information available [here](/compute/overview.md) and [here](/compute/benchmarks-and-scalability.md).
 
 ### Combinatorial screening
 
