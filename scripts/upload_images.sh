@@ -62,7 +62,7 @@ chmod 400 ./tmp.files.key
 
 # Try scp and exit if it fails
 # scp -r -i tmp.files.key ${LOCAL_DIRNAME} files@exabyte.io:${FILE_DIR}/${REMOTE_DIRNAME} || exit 1
-rsync -avz --no-perms --no-owner --no-group \
+rsync -avz --update --no-perms --no-owner --no-group \
     -e "ssh -i tmp.files.key -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
     --progress ${LOCAL_DIRNAME} files@exabyte.io:${FILE_DIR}/${REMOTE_DIRNAME}/
 
