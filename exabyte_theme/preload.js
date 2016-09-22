@@ -1,5 +1,5 @@
 var PRIVATE_URLS = [
-    // "getting-started/run-first-simulation",
+    "getting-started/run-first-simulation",
     // "getting-started/ui-overview",
     // "getting-started/data-conventions",
 
