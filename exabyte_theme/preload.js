@@ -1,7 +1,7 @@
 var PRIVATE_URLS = [
-    "getting-started/run-first-simulation",
-    // "getting-started/ui-overview",
-    // "getting-started/data-conventions",
+    // "getting-started/run-first-simulation",
+    "getting-started/ui-overview",
+    "getting-started/data-conventions",
 
     // "materials/creating-structures",
     // "materials/upload-and-import",
