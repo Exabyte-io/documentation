@@ -78,7 +78,7 @@ pages:
         - Restart from previous run:        tutorials/restart-job.md
         - Remote desktop visualization:     tutorials/remote-desktop.md
         - Job submission via terminal:      tutorials/cli-job.md
-        # - CLI data import:                  tutorials/cli-job-import.md
+        - CLI data import:                  tutorials/cli-job-import.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
