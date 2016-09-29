@@ -66,14 +66,14 @@ After the subsequent HSE calculations have finished, you can once again go to th
 
 | Material | Band Gap (eV) with traditional DFT | Band Gap (eV) with HSE DFT | Experimental Band Gap (eV)|
 |:---------------|:------------|:------------|:------------|
-| InAs | 0 | 1.60 | 0.36 |
 | InSb | 0 | 0.45 | 0.17 |
+| InAs | 0 | 1.60 | 0.36 |
 | GaSb | 0 | 0.73 | 0.75 |
-| GaAs | 0.156 | 1.88 | 1.424 |
 | InP | 0.392 | 2.06 | 1.344 |
+| GaAs | 0.156 | 1.88 | 1.424 |
 | AlSb | 1.22 | 1.04 | 1.615 |
-| GaP | 1.51 | 2.31 | 2.272 |
 | AlAs | 1.51 | 2.05 | 2.153 |
+| GaP | 1.51 | 2.31 | 2.272 |
 | AlP | 1.63 | 2.43 | 2.45 |
 
 # Links
