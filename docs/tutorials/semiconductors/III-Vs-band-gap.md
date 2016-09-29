@@ -4,7 +4,7 @@ This tutorial explains how to use the combinatorial screening capabilities to ca
 
 # Import material
 
-We will use InAs as our base structure for materials screening because its lattice parameter is in the middle of the range of lattice parameters of the III-V's we will study.  To import AlP go to the Materials webpage using the sidebar on the homepage.  Once on the homepage you can click on the cloud icon in the upper right with an embedded down arrow.  In the resulting overlay search enter AlP for Aluminum Phosphide.  After a few seconds the search results from Materials Project will appear.  The F-43m space group option is the lowest energy AlP.  Click on the right side on this line and choose "import".  This will load the material into your database.
+We will use InAs as our base structure for materials screening because its lattice parameter is in the middle of the range of lattice parameters of the III-V's we will study.  To import AlP go to the Materials web page using the sidebar on the homepage.  Once on the homepage you can click on the cloud icon in the upper right with an embedded down arrow.  In the resulting overlay search enter AlP for Aluminum Phosphide.  After a few seconds the search results from Materials Project will appear.  The F-43m space group option is the lowest energy AlP.  Click on the right side on this line and choose "import".  This will load the material into your database.
 
 <img data-gifffer="/images/IIIVImport.gif" />
 
@@ -26,7 +26,7 @@ Because we are doing a combinatorial study with different materials, it is impor
 
 # Compute parameters
 
-Next we set up compute parameters for the number of processors and the maximum time limit (walltime).  Increasing the number of processors allocated to the job may accelerate the calculation, especially if you have a larger unit cell.  Since we added a relaxation unit to this workflow and are using a dense mesh for the band gap calculation, we increased the wall time to 55 minutes and the number of cores to 2.
+Next we set up compute parameters for the number of processors and the maximum time limit (wall-time).  Increasing the number of processors allocated to the job may accelerate the calculation, especially if you have a larger unit cell.  Since we added a relaxation unit to this workflow and are using a dense mesh for the band gap calculation, we increased the wall time to 55 minutes and the number of cores to 2.
 
 # Submit job
 
@@ -48,13 +48,13 @@ After all the jobs complete, the best way to aggregate the results are through t
 
 # Compare materials
 
-Within the analytics page, you will see a list of all materials, search for and select the Al, Ga, & In compounds.  Next find the graph icon on the top of the page it will be named "Compare" and click.  By default pressure will be the default property for comparison.  Clicking next to the "Pressure" will bring up a new selection box where you can add "Direct Band Gap" and "Indirect Band Gap".  All 3 properties will be displayed for all 3 materialsin the charts .
+Within the analytics page, you will see a list of all materials, search for and select the Al, Ga, & In compounds.  Next find the graph icon on the top of the page it will be named "Compare" and click.  By default pressure will be the default property for comparison.  Clicking next to the "Pressure" will bring up a new selection box where you can add "Direct Band Gap" and "Indirect Band Gap".  All 3 properties will be displayed for all 3 materials in the charts .
 
 <img data-gifffer="/images/IIIVBandGaps.gif" />
 
 # Increasing accuracy with HSE
 
-Hybrid Screened Exchange is a more computationally expensive model to be used within DFT that more accurately predicts the energy of excited state electrons.  The screenshots below show how to edit a similar workflow as described above to set us the HSE calculation.  As this is more computationally intensive we increase the maximum runtime to 3 hours and use 4 cores for each simulation.
+Hybrid Screened Exchange is a more computationally expensive model to be used within DFT that more accurately predicts the energy of excited state electrons.  The screen shots below show how to edit a similar workflow as described above to set us the HSE calculation.  As this is more computationally intensive we increase the maximum runtime to 3 hours and use 4 cores for each simulation.
 
 <img data-gifffer="/images/IIIVHSECreate.gif" />
 
