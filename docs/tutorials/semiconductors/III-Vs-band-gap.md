@@ -64,7 +64,7 @@ After the subsequent HSE calculations have finished, you can once again go to th
 
 <img data-gifffer="/images/IIIVHSEAnalytics.gif" />
 
-| Material | Band Gap (eV) with traditional DFT | Band Gap (eV) with HSE DFT | Experimental Band Gap (eV)|
+| Material | Band Gap (eV) with traditional DFT | Band Gap (eV) with HSE DFT | Experimental Band Gap (eV) [[5](#links)]|
 |:---------------|:------------|:------------|:------------|
 | InSb | 0 | 0.45 | 0.17 |
 | InAs | 0 | 1.60 | 0.36 |
@@ -82,3 +82,4 @@ After the subsequent HSE calculations have finished, you can once again go to th
 2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
 3. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
 4. [Hybrid Screened Exchange, PDF](https://www.vasp.at/index.php/news/36-highlights/68-hse-hybrid-functional)
+5. [III-V Semiconductors, Website](http://www.semiconductors.co.uk/propiiiv5653.htm)
