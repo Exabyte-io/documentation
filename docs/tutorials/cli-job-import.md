@@ -11,10 +11,29 @@ When you use this feature, you can see job output files and also the following p
 * Total forces
 * Stress tensor
 * Total energy contributions
-* Estimated scf accuracy
 
-!!! Note "Support for simple workflows"
-    Currently, only simple job scripts containing single mpirun command are supported.
+We use the content of job submission script file to collect job information and create an entry for it inside the web application. Currently, only simple job scripts containing single mpirun command are supported. Hence, make sure that its content is properly formatted and straightforward.  Here is a sample job script file for a Vasp simulation that you can use as a template:
+```bash
+#!/bin/bash
+
+#PBS -web
+#PBS -N job_name
+#PBS -l nodes=1
+#PBS -l ppn=1
+#PBS -q D
+#PBS -j oe
+#PBS -l walltime=00:10:00
+#PBS -m abe
+#PBS -M name@domain.com
+
+cd $PBS_O_WORKDIR
+module load vasp/535-g-485-ompi-110
+mpirun -np 1 vasp > vasp.log
+
+```
+
+!!! Note "Simple job scripts"
+    Please avoid using complex formatting and extra indentations or spacing in the job script.
 
 # Open terminal
 
