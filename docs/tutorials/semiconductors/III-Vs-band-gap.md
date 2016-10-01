@@ -86,7 +86,7 @@ After the subsequent HSE calculations have finished, you can once again go to th
 | GaAs | 0.16 | 0.93  | 1.42  |
 | BAs  |      | 1.86  | 1.5   |
 | AlSb | 1.22 | 1.88  | 1.62  |
-| BSb  |      | 1.29  | Not Available |
+| BSb  |      | 1.29  | -     |
 | BP   |      | 2.31  | 2.1   |
 | AlAs | 1.51 | 2.18  | 2.153 |
 | GaP  | 1.51 | 2.38  | 2.272 |
