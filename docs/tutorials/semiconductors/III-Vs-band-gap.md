@@ -4,7 +4,7 @@ This tutorial explains how to use the combinatorial screening capabilities to ca
 
 # Import material
 
-We will use InAs as our base structure for materials screening because its lattice parameter is in the middle of the range of lattice parameters of the III-V's we will study.  To import AlP go to the Materials web page using the sidebar on the homepage.  Once on the homepage you can click on the cloud icon in the upper right with an embedded down arrow.  In the resulting overlay search enter AlP for Aluminum Phosphide.  After a few seconds the search results from Materials Project will appear.  The F-43m space group option is the lowest energy AlP.  Click on the right side on this line and choose "import".  This will load the material into your database.
+We will use InAs as our base structure for materials screening because its lattice parameter is in the middle of the range of lattice parameters of the III-V's we will study.  To import AlP go to the Materials web page using the sidebar on the homepage.  Once on the homepage you can click on the cloud icon in the upper right with an embedded down arrow.  In the resulting overlay search enter AlP for Aluminum Phosphide.  After a few seconds the search results will appear.  The F-43m space group option is the lowest energy AlP structure.  Click on the right side on this line and choose "import".  This will load the material into your database.
 
 <img data-gifffer="/images/IIIVImport.gif"/>
 
