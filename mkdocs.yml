@@ -66,7 +66,7 @@ pages:
     - Tutorials:
         - Semiconductors:
             - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
-            - HSE Combinatorial Screening of III-V's: tutorials/semiconductors/III-Vs-band-gap.md
+            - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
         - Electronic band structure:        tutorials/band-structure.md
         - Electronic band gap:              tutorials/band-gap.md
         - Electronic density of states:     tutorials/density-of-states.md
