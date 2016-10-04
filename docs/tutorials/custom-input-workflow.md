@@ -16,6 +16,10 @@ By default when creating a job a workflow is chosen. With Quantum ESPRESSO that 
 
 <img data-gifffer="/images/CustomAddDelete.gif" />
 
+!!! Warning "Custom workflows REQUIRE user input"
+    A custom workflow will not work if a unit is added without the user adjusting the input file text. Once the unit is added the user will need to open the unit and enter text into the input files to enable the simulation to run. As shown above, the control sections of a Quantum ESPRESSO file will be empty.  Below, we show adding a custom VASP unit leads to empty INCAR and KPOINTS files that must be edited to enable the workflow to run.
+
+
 # Paste input files text
 
 There are a wide variety of example simulation input files available on the web.  If we have not supported those workflows yet, we provide a method to run multiple step workflows.  For example, there is a [VASP Wiki](http://cms.mpi.univie.ac.at/wiki/index.php/VASP_example_calculations) with a large number of example input files.
