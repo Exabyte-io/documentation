@@ -4,7 +4,7 @@ Our product provides a quick and easy way to set up custom simulations. It is al
 
 # Command-line terminal
 
-We provide a interface to a terminal command line window directly through the web to enable this.  This is also the preferred method of execution for a software tool that we have not yet implemented in our automated framework.  You can see many details on setting up your terminal connection and ssh keys [here](../cli/login.md)
+We provide an interface to a terminal command line window directly through the web to enable this.  This is also the preferred method of execution for a software tool that we have not yet implemented in our automated framework.  You can see many details on setting up your terminal connection and ssh keys [here](../cli/login.md)
 
 In addition if you would like to set up your environment in the terminal window to access some of our resources you can see detailed information [here](../cli/modules-environment.md)
 
