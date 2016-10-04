@@ -11,6 +11,7 @@ site_favicon: /img/favicon.ico
 copyright: © 2016 <a href="http://platform.exabyte.io">Exabyte Inc</a>. All rights reserved.
 extra:
     preload_javascript:
+        - /preload_hotjar.js
         - /preload.js
 markdown_extensions:
     - admonition
