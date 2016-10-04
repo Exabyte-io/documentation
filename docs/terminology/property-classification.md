@@ -35,7 +35,7 @@ Obtained from Principal through a complex workflow and, potentially, additional 
 
 - Formation energy at 0K
 
-#### Vibrational Propertie
+#### Vibrational Properties
 
 - Zero Point Energy
 
