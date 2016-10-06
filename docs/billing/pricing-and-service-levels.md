@@ -18,7 +18,7 @@ Below is a quick comparison of our service levels:
 | private data             |  -          | -                  | +                  | +                  | +                         |
 | organizations/teams      |  -          | -                  | -                  | +                  | +                         |
 | maximum team size        |  -          | -                  | -                  | 5                  | 15                        |
-| support level            |  web/email  | web/email          | web/email/phone    | web/email/phone    | web/mail/email/personal   |
+| support level            |  email  | email          | email/phone    | email/phone    | email/phone/on-site   |
 | command line access      |  -          | -                  | +                  | +                  | +                         |
 
 !!! note "Base rate"
