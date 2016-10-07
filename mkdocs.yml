@@ -106,7 +106,7 @@ pages:
     - Other:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
-        # - Developer Program:  other/developer-program.md
+        - Community Programs:  other/community-programs.md
         - Upcoming features:    other/upcoming-features.md
         - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md

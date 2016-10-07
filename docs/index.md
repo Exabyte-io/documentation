@@ -59,6 +59,8 @@ Materials simulations are often computationally demanding. We put extreme attent
 
 We enable automation of materials screening processes to make it easier to create leads, set-up and monitor simulations, and analyze the results. This [page](/materials/combinatorial-sets.md) contains more information about combinatorial materials sets.
 
+You can view our upcoming features [here](other/upcoming-features.md) also.
+
 ## How to get help
 
 We have support team that is active 24/7 and will do our best to reply to your requests within 24 hours. Our support team can be contacted by phone, email, or the web during working hours Pacific Time:
