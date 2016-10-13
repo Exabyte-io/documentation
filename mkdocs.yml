@@ -8,7 +8,7 @@ extra_javascript:
     - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
 site_favicon: /img/favicon.ico
-copyright: © 2016 <a href="http://platform.exabyte.io">Exabyte Inc</a>. All rights reserved.
+copyright: © 2016 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
     preload_javascript:
         - /preload_hotjar.js
