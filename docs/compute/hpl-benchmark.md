@@ -1,14 +1,12 @@
-# HPL Scalability Benchmark
+# Methodology
 
-## Methodology
+## HPL
 
-### HPL
+HPL is a software package that solves a (random) dense linear system in double precision (64 bits) arithmetic on distributed-memory computers. It can thus be regarded as a portable as well as freely available implementation of the High Performance Computing Linpack Benchmark.
 
-HPL is a software package that solves a (random) dense linear system in double precision (64 bits) arithmetic on distributed-memory computers. It can thus be regarded as a portable as well as freely available implementation of the High Performance Computing Linpack Benchmark. 
+The algorithm used by HPL can be summarized by the following keywords: Two-dimensional block-cyclic data distribution - Right-looking variant of the LU factorization with row partial pivoting featuring multiple look-ahead depths - Recursive panel factorization with pivot search and column broadcast combined - Various virtual panel broadcast topologies - bandwidth reducing swap-broadcast algorithm - backward substitution with look-ahead of depth 1.
 
-The algorithm used by HPL can be summarized by the following keywords: Two-dimensional block-cyclic data distribution - Right-looking variant of the LU factorization with row partial pivoting featuring multiple look-ahead depths - Recursive panel factorization with pivot search and column broadcast combined - Various virtual panel broadcast topologies - bandwidth reducing swap-broadcast algorithm - backward substitution with look-ahead of depth 1. 
-
-The HPL package provides a testing and timing program to quantify the accuracy of the obtained solution as well as the time it took to compute it. The best performance achievable by this software depends on a large variety of factors. The following shows a smaple HPL.dat that we use for running HPL on 32 nodes on AWS. 
+The HPL package provides a testing and timing program to quantify the accuracy of the obtained solution as well as the time it took to compute it. The best performance achievable by this software depends on a large variety of factors. The following shows a sample HPL.dat used for running HPL on 32 nodes on Amazon Web Services (AWS).
 
 <details>
     <summary>**HPL.dat**</summary>
@@ -47,7 +45,7 @@ HPL.out      output file name (if any)
 ```
 </details>
 
-The specification of AWS and Azure resources are as follow:
+The specification of Amazon Web Services (AWS) and Microsoft Azure (Azure) resources are as follow:
 
 |Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps)|
 |:---------|:---------------------------------------:|:----------:|:-------:|:---------------:|
@@ -55,11 +53,11 @@ The specification of AWS and Azure resources are as follow:
 |Azure     |16 core, Intel Xeon E5-2673-v3, 2.40GHz  |32          |256      |10               |
 
 
-## Results
+# Results
 
 The maximal LINPACK performance achieved (Rmax), theoretical peak performance (Rpeak), speedup and speedup ratio (speedup / ideal speedup) are shown below. The HPL benchmark is executed on 1-32 nodes on AWS and Azure resources.
 
-### AWS
+## AWS
 
 | Nodes | Cores | Rmax (TFlop/s) | Rpeak (TFlop/s) | Speedup | Ideal speedup | Speedup Ratio |
 |:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
@@ -70,16 +68,16 @@ The maximal LINPACK performance achieved (Rmax), theoretical peak performance (R
 |   16  |  576  |      5.23      |      26.10      |   9.92  |       16      |      0.62     |
 |   32  |  1152 |      8.65      |      52.20      |  16.41  |       32      |      0.51     |
 
-#### Performance
+### Performance
 
 ![AWS Performance](../images/aws-preformance.png "AWS Performance")
 
-#### Speedup
+### Speedup
 
 ![AWS Speedup](../images/aws-speedup.png "AWS Speedup")
 
 
-### Azure
+## Azure
 
 | Nodes | Cores | Rmax (TFlop/s) | Rpeak (TFlop/s) | Speedup | Ideal speedup | Speedup Ratio |
 |:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
@@ -90,22 +88,22 @@ The maximal LINPACK performance achieved (Rmax), theoretical peak performance (R
 |   16  |  256  |      5.33      |       9.6       |  11.18  |       16      |      0.70     |
 |   32  |  512  |      10.53     |       19.2      |  22.11  |       32      |      0.69     |
 
-#### Performance
+### Performance
 
 ![Azure Performance](../images/azure-preformance.png "Azure Performance")
 
-#### Speedup
+### Speedup
 
 ![Azure Speedup](../images/azure-speedup.png "Azure Speedup")
 
-The following diagram shows the speedup ratio for AWS with Hyper-Threading enabled and Azure.
+# Speedup Ratio
 
-### Speedup Ratio
+The following visual shows the speedup ratio for AWS with Hyper-Threading enabled and Azure.
 
 ![Speedup Ratio](../images/speedup-ratio.png "Speedup Ratio")
 
 
-## Links
+# Links
 
 - [HPL](http://www.netlib.org/benchmark/hpl)
 
