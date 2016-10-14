@@ -21,6 +21,7 @@ var PRIVATE_URLS = [
     // "compute/overview",
     "compute/queues",
     "compute/benchmarks-and-scalability",
+    "compute/hpl-benchmark",
     "compute/connection-options",
     "compute/setting-parameters",
 
