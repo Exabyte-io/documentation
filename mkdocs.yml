@@ -49,6 +49,7 @@ pages:
         - Benchmarks:           compute/benchmarks-and-scalability.md
         - Connection:           compute/connection-options.md
         - Setting parameters:   compute/setting-parameters.md
+        - HPL Benchmark:        compute/hpl-benchmark.md
 
     - Sharing & Collaboration:
         # - Organizations:        collaboration/organizations.md
