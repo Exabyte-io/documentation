@@ -63,52 +63,52 @@ The maximal LINPACK performance achieved (Rmax), theoretical peak performance (R
 The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances with Hyper-Threading disabled to get to the turbo frequency. To do so, only 18 cores of 36 cores were used to run HPL benchmarks.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
-|   1   |   18  |      0.64      |       0.82      |  36.48  |       1       |      1.00     |
-|   2   |   36  |      1.14      |       1.63      |  32.34  |       2       |      0.89     |
-|   4   |   72  |      1.94      |       3.26      |  27.55  |       4       |      0.76     |
-|   8   |  144  |      3.51      |       6.53      |  24.96  |       8       |      0.68     |
-|   16  |  288  |      5.59      |      13.05      |  19.87  |       16      |      0.54     |
-|   32  |  576  |      10.68     |      26.10      |  18.98  |       32      |      0.52     |
+|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   18  |      0.64      |       0.82    |   1.00  |       1       |      1.00     |
+|   2   |   36  |      1.14      |       1.63    |   1.77  |       2       |      0.89     |
+|   4   |   72  |      1.94      |       3.26    |   3.02  |       4       |      0.76     |
+|   8   |  144  |      3.51      |       6.53    |   5.47  |       8       |      0.68     |
+|   16  |  288  |      5.59      |      13.05    |   8.71  |       16      |      0.54     |
+|   32  |  576  |      10.68     |      26.10    |  16.65  |       32      |      0.52     |
 
 ## AWS-HT
 
 The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances with Hyper-Threading enabled (enabled by default).
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
-|   1   |   36  |      0.53      |       1.63      |   1.00  |       1       |      1.00     |
-|   2   |   72  |      0.98      |       3.26      |   1.85  |       2       |      0.93     |
-|   4   |  144  |      1.51      |       6.53      |   2.87  |       4       |      0.72     |
-|   8   |  288  |      2.90      |      13.05      |   5.50  |       8       |      0.69     |
-|   16  |  576  |      5.23      |      26.10      |   9.92  |       16      |      0.62     |
-|   32  |  1152 |      8.65      |      52.20      |  16.41  |       32      |      0.51     |
+|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   36  |      0.53      |       1.63    |   1.00  |       1       |      1.00     |
+|   2   |   72  |      0.98      |       3.26    |   1.85  |       2       |      0.93     |
+|   4   |  144  |      1.51      |       6.53    |   2.87  |       4       |      0.72     |
+|   8   |  288  |      2.90      |      13.05    |   5.50  |       8       |      0.69     |
+|   16  |  576  |      5.23      |      26.10    |   9.92  |       16      |      0.62     |
+|   32  |  1152 |      8.65      |      52.20    |  16.41  |       32      |      0.51     |
 
 ## AWS-PG
 
-The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances with [placement group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) enabled. A placement group is a logical grouping of instances within a single Availability Zone, recommended for applications that benefit from low network latency, high network throughput, or both.
+The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances Hyper-Threading disabled and [placement group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) enabled. A placement group is a logical grouping of instances within a single Availability Zone, recommended for applications that benefit from low network latency, high network throughput, or both.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
-|   1   |   18  |      0.62      |       0.82      |  35.55  |       1       |      1.00     |
-|   2   |   36  |      1.14      |       1.63      |  32.37  |       2       |      0.91     |
-|   4   |   72  |      1.97      |       3.26      |  27.97  |       4       |      0.79     |
-|   8   |  144  |      3.51      |       6.53      |  24.95  |       8       |      0.70     |
-|   16  |  288  |      5.70      |      13.05      |  20.26  |       16      |      0.57     |
-|   32  |  576  |      10.74     |      26.10      |  19.09  |       32      |      0.54     |
+|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   18  |      0.62      |       0.82    |   1.00  |       1       |      1.00     |
+|   2   |   36  |      1.14      |       1.63    |   1.82  |       2       |      0.91     |
+|   4   |   72  |      1.97      |       3.26    |   3.15  |       4       |      0.79     |
+|   8   |  144  |      3.51      |       6.53    |   5.61  |       8       |      0.70     |
+|   16  |  288  |      5.70      |      13.05    |   9.12  |       16      |      0.57     |
+|   32  |  576  |      10.74     |      26.10    |  17.18  |       32      |      0.54     |
 
 ## Azure
 
 The following shows the HPL benchmark results running on Azure [Standard_F16](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#fs-series) VMs.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
-|   1   |   16  |      0.48      |       0.6       |   1.00  |       1       |      1.00     |
-|   2   |   32  |      0.87      |       1.2       |   1.82  |       2       |      0.91     |
-|   4   |   64  |      1.49      |       2.4       |   3.14  |       4       |      0.78     |
-|   8   |  128  |      3.04      |       4.8       |   6.38  |       8       |      0.80     |
-|   16  |  256  |      5.33      |       9.6       |  11.18  |       16      |      0.70     |
-|   32  |  512  |      10.53     |       19.2      |  22.11  |       32      |      0.69     |
+|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   16  |      0.48      |       0.6     |   1.00  |       1       |      1.00     |
+|   2   |   32  |      0.87      |       1.2     |   1.82  |       2       |      0.91     |
+|   4   |   64  |      1.49      |       2.4     |   3.14  |       4       |      0.78     |
+|   8   |  128  |      3.04      |       4.8     |   6.38  |       8       |      0.80     |
+|   16  |  256  |      5.33      |       9.6     |  11.18  |       16      |      0.70     |
+|   32  |  512  |      10.53     |       19.2    |  22.11  |       32      |      0.69     |
 
 
 ## Azure-IB
@@ -116,13 +116,13 @@ The following shows the HPL benchmark results running on Azure [Standard_F16](ht
 The following shows the HPL benchmark results running on Azure [Standard_A9](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#a-series) VMs using infiniband interconnection network.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:---------------:|:-------:|:-------------:|:-------------:|
-|   1   |   16  |      0.30      |       0.65      |  19.01  |       1       |      1.00     |
-|   2   |   32  |      0.58      |       1.30      |  18.56  |       2       |      0.98     |
-|   4   |   64  |      1.16      |       2.60      |  18.58  |       4       |      0.98     |
-|   8   |  128  |      2.25      |       5.20      |  17.97  |       8       |      0.95     |
-|   16  |  256  |      4.42      |      10.40      |  17.68  |       16      |      0.93     |
-|   32  |  512  |      8.59      |      20.80      |  17.19  |       32      |      0.90     |
+|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   16  |      0.30      |       0.65    |  19.01  |       1       |      1.00     |
+|   2   |   32  |      0.58      |       1.30    |  18.56  |       2       |      0.98     |
+|   4   |   64  |      1.16      |       2.60    |  18.58  |       4       |      0.98     |
+|   8   |  128  |      2.25      |       5.20    |  17.97  |       8       |      0.95     |
+|   16  |  256  |      4.42      |      10.40    |  17.68  |       16      |      0.93     |
+|   32  |  512  |      8.59      |      20.80    |  17.19  |       32      |      0.90     |
 
 # Speedup Ratio
 
