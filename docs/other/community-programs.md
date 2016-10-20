@@ -6,7 +6,7 @@ We want materials scientists, chemists, physicists, computer scientists and othe
 
 ### Case studies
 
-For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide up to **100,000 CPU-hours** of computing free of charge.
+For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](/getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide up to **100,000 CPU-hours** of computing free of charge.
 
 **In order to apply**:
 
