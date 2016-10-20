@@ -45,6 +45,12 @@ HPL.out      output file name (if any)
 ```
 </details>
 
+!!! warning "HPL optimization"
+    Little effort has been put to the optimization of HPL benchmark for each of the cases studied. The results should be considered a quick estimate rather than exhaustive study. We expect a ~20% improvement to be possible.
+
+
+# Hardware
+
 The specification of Amazon Web Services (AWS) and Microsoft Azure (Azure) resources are as follow:
 
 |Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps)|
@@ -60,20 +66,11 @@ The maximal LINPACK performance achieved (Rmax), theoretical peak performance (R
 
 ## AWS
 
-The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances with Hyper-Threading disabled to get to the turbo frequency. To do so, only 18 cores of 36 cores were used to run HPL benchmarks.
+For Amazon Web Services we study 3 different scenarios: the default hyper-threaded, non-hyperthreaded and non-hyperthreaded mode with placement group enabled. [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instance types are used.
 
-| Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
-|   1   |   18  |      0.64      |       0.82    |   1.00  |       1       |      1.00     |
-|   2   |   36  |      1.14      |       1.63    |   1.77  |       2       |      0.89     |
-|   4   |   72  |      1.94      |       3.26    |   3.02  |       4       |      0.76     |
-|   8   |  144  |      3.51      |       6.53    |   5.47  |       8       |      0.68     |
-|   16  |  288  |      5.59      |      13.05    |   8.71  |       16      |      0.54     |
-|   32  |  576  |      10.68     |      26.10    |  16.65  |       32      |      0.52     |
+### AWS default (AWS)
 
-## AWS-HT
-
-The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances with Hyper-Threading enabled (enabled by default).
+The following shows the HPL benchmark results running on AWS instances with Hyper-Threading enabled (default).
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
 |:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
@@ -84,9 +81,23 @@ The following shows the HPL benchmark results running on AWS [c4.8xlrage](https:
 |   16  |  576  |      5.23      |      26.10    |   9.92  |       16      |      0.62     |
 |   32  |  1152 |      8.65      |      52.20    |  16.41  |       32      |      0.51     |
 
-## AWS-PG
 
-The following shows the HPL benchmark results running on AWS [c4.8xlrage](https://aws.amazon.com/ec2/instance-types) instances Hyper-Threading disabled and [placement group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) enabled. A placement group is a logical grouping of instances within a single Availability Zone, recommended for applications that benefit from low network latency, high network throughput, or both.
+### AWS non-hyperthreaded (AWS-NHT)
+
+The following shows the HPL benchmark results running with Hyper-Threading disabled to get to the turbo frequency. To do so, only 18 cores of 36 cores were used to run HPL benchmarks.
+
+| Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
+|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   18  |      0.64      |       0.82    |   1.00  |       1       |      1.00     |
+|   2   |   36  |      1.14      |       1.63    |   1.77  |       2       |      0.89     |
+|   4   |   72  |      1.94      |       3.26    |   3.02  |       4       |      0.76     |
+|   8   |  144  |      3.51      |       6.53    |   5.47  |       8       |      0.68     |
+|   16  |  288  |      5.59      |      13.05    |   8.71  |       16      |      0.54     |
+|   32  |  576  |      10.68     |      26.10    |  16.65  |       32      |      0.52     |
+
+## AWS non-hyperthreaded with placement groups (AWS-NHT-PG)
+
+The following shows the HPL benchmark results with Hyper-Threading disabled and [placement group](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) enabled. A placement group is a logical grouping of instances within a single Availability Zone, recommended for applications that benefit from low network latency, high network throughput, or both.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
 |:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
@@ -98,6 +109,10 @@ The following shows the HPL benchmark results running on AWS [c4.8xlrage](https:
 |   32  |  576  |      10.74     |      26.10    |  17.18  |       32      |      0.54     |
 
 ## Azure
+
+For Microsoft Azure we study 2 scenarios as explained below.
+
+### Azure default (AZ)
 
 The following shows the HPL benchmark results running on Azure [Standard_F16](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#fs-series) VMs.
 
@@ -111,9 +126,9 @@ The following shows the HPL benchmark results running on Azure [Standard_F16](ht
 |   32  |  512  |      10.53     |       19.2    |  22.11  |       32      |      0.69     |
 
 
-## Azure-IB
+## Azure Infiniband (AZ-IB)
 
-The following shows the HPL benchmark results running on Azure [Standard_A9](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#a-series) VMs using infiniband interconnection network.
+The following shows the HPL benchmark results running on Azure [Standard_A9](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#a-series) VMs using Infiniband interconnection network.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
 |:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
@@ -126,16 +141,15 @@ The following shows the HPL benchmark results running on Azure [Standard_A9](htt
 
 # Speedup Ratio
 
-The following visual shows the speedup ratio for AWS without Hyper-Threading(AWS), AWS with Hyper-Threading enabled(AWS-HT), Azure and Azure with IB (Azure-IB). It is obvious that Azure outperforms AWS because of a faster, low latency interconnection network which makes HPL scale more efficiently.
+Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL.
 
 ![Speedup Ratio](../images/speedup-ratio.png "Speedup Ratio")
 
-# Performance per Core 
+# Performance per Core
 
-The following visual shows the performance per core in GFLOPS for AWS without Hyper-Threading(AWS), AWS with Hyper-Threading enabled(AWS-HT), Azure and Azure with IB (Azure-IB). Although Azure has a better interconnection network and performs better on scaling, but still AWS has better performance per core for up to 16 nodes because of faster processors.
+The following visual shows a comparative plot of performance per core in GFLOPS for the scenarios described above. Although Azure shows better scaling, AWS has better performance per core for up to 16 nodes, likely because of faster processors.
 
 ![Performance per Core](../images/performance-per-core.png "Performance per Core")
-
 
 # Links
 
