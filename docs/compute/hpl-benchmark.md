@@ -46,7 +46,7 @@ HPL.out      output file name (if any)
 </details>
 
 !!! warning "HPL optimization"
-    Little effort has been put to the optimization of HPL benchmark for each of the cases studied. The results should be considered a quick estimate rather than exhaustive study. We expect a ~20% improvement to be possible.
+    Moderate effort has been put into the optimization of HPL benchmark for each of the cases studied. The results should be considered a quick estimate rather than exhaustive study. We expect a ~20% improvement to be possible with further optimization.
 
 
 # Hardware
