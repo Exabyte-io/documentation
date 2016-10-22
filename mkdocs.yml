@@ -25,6 +25,7 @@ pages:
         - Run first simulation:     getting-started/run-first-simulation.md
         - User interface overview:  getting-started/ui-overview.md
         - Data conventions:         getting-started/data-conventions.md
+        - Content highlights:       getting-started/content-highlights.md
 
     - Materials:
         - Creating structures:          materials/creating-structures.md
@@ -97,12 +98,12 @@ pages:
         - Upgrade Service Level:        billing/upgrade-service-level.md
 
     - Security:
-        - Overview:                         security/security-overview.md
+        #- Overview:                         security/security-overview.md
         - Privacy:                          security/privacy-statement.md
         - Data Security in transfer:        security/data-security-in-transfer.md
         - Data Security at rest:            security/data-security-at-rest.md
         - CLI users permissions:            security/cli-users-permissions.md
-        - Data Ownership And Visibility:    security/data-ownership-and-visibility.md
+        #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
 
     - Other:
         - Registration:         other/registration.md
