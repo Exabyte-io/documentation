@@ -6,10 +6,10 @@ This page helps users quickly get through the documentation.
 
 We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more at:
 
-- [login via web-page](http://platform.exabyte.io/login)
 - [secure shell and in-browser terminals](/cli/overview/#in-browser-terminal-and-ssh-terminal)
 - [remote desktop session example](/electronic-density-mesh/#preparing-for-visualization)
 - [connection options explained](/connection-options/)
+- <a href="http://platform.exabyte.io/login" target="_blank">login page</a>
 
 # Data conventions
 
@@ -30,7 +30,7 @@ There are 3 basic ways to input material geometries:
 
 # Running simulations
 
-Next step after setting up material geometry is to simulate it and extract [characteristic properties](http://localhost:8000/materials/characteristic-properties/). In order to do so, users have to construct a simulation workflow and set up compute parameters.
+Next step after setting up material geometry is to simulate it and extract [characteristic properties](/materials/characteristic-properties/). In order to do so, users have to construct a simulation workflow and set up compute parameters.
 
 ## Workflows
 
@@ -71,7 +71,7 @@ Advanced users connecting via command line terminal may use our unified queuing 
 
 - [job submission: tutorial](/tutorials/cli-job)
 - [job submission examples](/cli/jobs/)
-- [job script templates](http://localhost:8000/cli/jobs/#pre-configured-submit-scripts)
+- [job script templates](/cli/jobs/#pre-configured-submit-scripts)
 - [modules environment](/cli/modules-environment/)
 
 ## Extra simulation capabilities
@@ -91,5 +91,5 @@ We store all data about simulations and materials. Data originated from web appl
 
 # Other
 
-- [service levels and pricing](http://localhost:8000/billing/pricing-and-service-levels/)
+- [service levels and pricing](/billing/pricing-and-service-levels/)
 - [storage quotas](/billing/storage-quota/)
