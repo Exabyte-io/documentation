@@ -49,7 +49,7 @@ More information about specific workflows, including tutorials and input date:
 - [custom-input workflow](/tutorials/custom-input-workflow)
 - [fermi surface](/tutorials/fermi-surface)
 - [combinatorial screening general](/tutorials/combinatorial-screening)
-- [combinatorial screening of iii-v semiconductor band gaps](/tutorials/semiconductors/iii-vs-band-gap.md)
+- [combinatorial screening of iii-v semiconductor band gaps](/tutorials/semiconductors/III-Vs-band-gap.md)
 - [default simulation input files](/models/example-simulations/)
 
 ## Compute parameters

@@ -100,7 +100,7 @@ Please see our section on [email communication](#How-we-communicate-with-you) to
 
 Exabyte.io takes all measures reasonably necessary to protect User Personal Information from unauthorized access, alteration, or destruction; maintain data accuracy; and help ensure the appropriate use of User Personal Information. We follow generally accepted industry standards to protect the personal information submitted to us, both during transmission and once we receive it.
 
-No method of transmission, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security. For more information, see our [security disclosures](security-overview.md).
+No method of transmission, or method of electronic storage, is 100% secure. Therefore, we cannot guarantee its absolute security. For more information, see our security disclosures.
 
 ### Exabyte.io's global privacy practices
 
