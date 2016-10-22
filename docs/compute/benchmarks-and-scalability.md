@@ -18,12 +18,12 @@ A team of researchers from a public enterprise company used exabyte.io to study 
 
 Plane-wave Pseudopotential Density Functional Theory formalism as implemented in Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials was employed in this run.
 
-### Visualization
+<!-- ### Visualization
 
 Below is an example visualization of a structure employed in this run.
 
 ![High-Throughput Scalability Structure](../images/HighThroughputScalabilityStructure.png "High-Throughput Scalability Structure")
-
+ -->
 
 ### Inputs
 
