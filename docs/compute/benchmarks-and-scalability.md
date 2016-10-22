@@ -1,10 +1,6 @@
 <!-- by MM -->
 
-This page contains brief overview of the benchmarks for three usage scenarios considered:
-
-- high-throughput calculations
-- distributed memory calculations
-- performance within one compute-node
+This page contains brief overview of the benchmarks for high-throughput calculations, distributed memory calculations and performance within one compute node.
 
 For more detailed information about case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [this page](https://exabyte.io/#case-study).
 
