@@ -2,6 +2,7 @@ var PRIVATE_URLS = [
     // "getting-started/run-first-simulation",
     "getting-started/ui-overview",
     "getting-started/data-conventions",
+    "getting-started/content-highlights",
 
     // "materials/creating-structures",
     // "materials/upload-and-import",
@@ -19,9 +20,9 @@ var PRIVATE_URLS = [
     // "models/example-simulations",
 
     // "compute/overview",
-    "compute/queues",
-    "compute/benchmarks-and-scalability",
-    "compute/hpl-benchmark",
+    // "compute/queues",
+    // "compute/benchmarks-and-scalability",
+    // "compute/hpl-benchmark",
     "compute/connection-options",
     "compute/setting-parameters",
 
@@ -70,10 +71,10 @@ var PRIVATE_URLS = [
     // "security/cli-users-permissions",
     // "security/data-ownership-and-visibility",
 
-    "other/registration",
+    // "other/registration",
     // "other/roadmap",
     // "other/support",
-    "other/faq",
+    // "other/faq",
 
     "terminology/simulations"
 ];
