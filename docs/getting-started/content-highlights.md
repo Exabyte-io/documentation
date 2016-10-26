@@ -26,7 +26,7 @@ There are 3 basic ways to input material geometries:
 - [import structure from a third-party database](/materials/upload-and-import/#import-structure) (materialsproject.org is supported at current)
 
 !!! note "Combinatorial sets"
-    [Combinatorial set](/materials/combinatorial-sets/) make it possible to create a large number (eg. hundreds) of material geometries at one.
+    [Combinatorial sets](/materials/combinatorial-sets/) make it possible to create a large number (eg. hundreds) of material geometries at one.
 
 # Running simulations
 
