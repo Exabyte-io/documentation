@@ -2,24 +2,33 @@
 
 This page a contains brief overview of the benchmarks for high-throughput calculations, distributed memory calculations and performance within one compute node. For more detailed information about case studies, including "high-throughput study of new metallic alloys" and "study of solid-state battery materials" please visit [this page](https://exabyte.io/#case-study).
 
-## High-throughput scalability study
+<!-- [TOC] -->
 
-### Overview
+<hr>
+
+# High-throughput scalability study
+
+> Date: 2016/03
+
+## Overview
 
 A team of researchers from a public enterprise company used exabyte.io to study equilibrium geometries and formation energies for a set of promising metallic alloys. The team employed quantum mechanical modeling approaches based on density functional theory and vast compute power available on public cloud. During a single run researchers were able to scale to 10,656 CPUs within a few minutes from the start, and obtain accurate results for 296 compounds that represent ternary metallic alloys within 36 hours. The purpose of this study was to estimate the extent to which compute resources can be efficiently scaled while sustaining a constant level of performance.
 
-### Model and Method
+!!! note "Hardware configuration"
+    Amazon Web Services with the hardware configuration explained [here](/compute/overview/#hardware-specifications) were used for benchmarking
+
+## Model and Method
 
 Plane-wave Pseudopotential Density Functional Theory formalism as implemented in Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials was employed in this run.
 
-<!-- ### Visualization
+<!-- ## Visualization
 
 Below is an example visualization of a structure employed in this run.
 
 ![High-Throughput Scalability Structure](../images/HighThroughputScalabilityStructure.png "High-Throughput Scalability Structure")
  -->
 
-### Inputs
+## Inputs
 
 <details>
     <summary>**INCAR**</summary>
@@ -92,7 +101,7 @@ Gamma
 </details>
 
 
-### Results
+## Results
 
 High-performance computing resources were assembled on-demand using the infrastructure available at one of the public cloud vendors. For the first run, a total of 296 tasks (one-per-material) were submitted to exabyte.io cloud-scale resource-management system. Within 7 minutes after submission 296 compute nodes with 10,656 cores total were provisioned, configured and had compute tasks running on them.
 
@@ -101,20 +110,24 @@ High-performance computing resources were assembled on-demand using the infrastr
 All tasks were finished within 38 hours from the start, with the shortest ones taking about 2 hours. The size of compute system was dynamically scaled with the number of active calculations. The total cost of the calculation was within a few thousand dollars (for comparison - the cost of buying 10,000 CPU can be estimated at several million dollars).
 
 
-### Conclusion
+## Conclusion
 
 A "real-world" example high-throughput materials discovery run scaling to nearly 300 materials (each with an advanced geometrical configuration involving 24 atoms inside a crystal unit cell) and nearly 11 thousand CPU was successfully attempted by an enterprise customer. Without large upfront expenditures and while using familiar environments and tools, they were able to quickly obtain the necessary data about the formation energies of metallic alloys. This data is now being used by the customer to guide their experimental search for better alloys. The scale of this run was, however, is far from the limit on the resources available at exabyte.io, and we have internal data in possession that shows significantly higher scale reached by our engineering team in development (contact us in case you would like to learn more).
 
 <hr>
 
-## Distributed memory calculations
+# Distributed memory calculations
 
-### Overview
+> Date: 2016/05
+
+## Overview
 
 The purpose of this study was to estimate the extent to which a calculation for a single materials can be efficiently scaled.
 
+!!! note "Hardware configuration"
+    Amazon Web Services with the hardware configuration explained [here](/compute/overview) were used for benchmarking. Lowest latency Ethernet network interconnect option was chosen.
 
-### Model and Method
+## Model and Method
 
 Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials, and Quantum ESPRESSO (QE) at version 5.2.1 with a set of pseudo-potentials as explained below were employed for this study.
 
@@ -125,11 +138,11 @@ Two basic parallelization schemes were attempted:
 
 Compute nodes with a total of 36 CPU per node were used. Number of cores per node (PPN) and total number of nodes (NODES) were used to distinguish between parallelization levels.
 
-### Results
+## Results
 
-#### VASP-ELB
+### VASP-ELB
 
-##### Inputs
+#### Inputs
 
 <details>
     <summary>**INCAR**</summary>
@@ -361,15 +374,15 @@ Gamma
 ```
 </details>
 
-##### Material
+#### Material
 
 "Ba25 Bi15 O54" with a supercell containing 188 atoms
 
 ![Distributed Memory Calculations VASP ELB](../images/DistributedMemoryCalculationsVASPELB.png "Distributed Memory Calculations VASP ELB")
 
-#### VASP-KPT
+### VASP-KPT
 
-##### Inputs
+#### Inputs
 
 <details>
     <summary>**INCAR**</summary>
@@ -442,15 +455,15 @@ Gamma
 ```
 </details>
 
-##### Material
+#### Material
 
 "Li8 V8 Mo8" with a unit cell containing 24 atoms
 
 ![Distributed Memory Calculations VASP KPT](../images/DistributedMemoryCalculationsVASPKPT.png "Distributed Memory Calculations VASP KPT")
 
-#### QE-ELB
+### QE-ELB
 
-##### Inputs
+#### Inputs
 
 <details>
     <summary>**pw_scf.in**</summary>
@@ -614,15 +627,15 @@ AU       48.320999       38.047001        0.000000
 ```
 </details>
 
-##### Material
+#### Material
 
 Aluminum surface containing 112 atoms
 
 ![Distributed Memory Calculations QE ELB](../images/DistributedMemoryCalculationsQEELB.png "Distributed Memory Calculations QE ELB")
 
-#### QE-KPT
+### QE-KPT
 
-##### Inputs
+#### Inputs
 
 <details>
     <summary>**pw_scf.in**</summary>
@@ -683,14 +696,14 @@ K_POINTS automatic
 ```
 </details>
 
-##### Material
+#### Material
 
 FeSe monolayer with 4 atoms
 
 ![Distributed Memory Calculations QE KPT](../images/DistributedMemoryCalculationsQEKPT.png "Distributed Memory Calculations QE KOT")
 
 
-### Conclusions
+## Conclusions
 
 * VASP and QE were studied for scalability for a single material - single calculation,
 * K-point sampling based parallelization appears to be feasible and scales efficiently up to 16 nodes,
@@ -698,15 +711,17 @@ FeSe monolayer with 4 atoms
 
 <hr>
 
-## Cloud vendors performance comparison
+# Cloud vendors performance comparison
+
+> Date: 2016/09
 
 Exabyte.io utilizes multiple cloud vendors resources to provide users with a large scale computing infrastructure. Since Each cloud provider uses a specific type of resources, applications performance vary on different cloud vendors. For the sake of simplicity, a short VASP calculation utilizing 1 CPU with the following characteristics was used to compare the performance of four cloud providers, AWS, Rackspace, SoftLayer and Microsoft Azure.
 
-### Model and Method
+## Model and Method
 
 Plane-wave Pseudopotential Density Functional Theory formalism as implemented in Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials was employed in this run.
 
-### Inputs
+## Inputs
 
 <details>
     <summary>**INCAR**</summary>
@@ -772,7 +787,7 @@ Gamma
 ```
 </details>
 
-### Results
+## Results
 
 |Provider  |CPU                                      |Memory (GB) |Disk (GB) |Bandwidth (Gbps) |Runtime (sec)|
 |:---------|:---------------------------------------:|:---------:|:-------:|:--------------:|:---------------:|
