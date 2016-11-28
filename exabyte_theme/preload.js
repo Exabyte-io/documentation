@@ -1,9 +1,9 @@
 var PRIVATE_URLS = [
     /* indented entries used to be private */
     // "getting-started/run-first-simulation",
-    "getting-started/ui-overview",
+        // "getting-started/ui-overview",
     "getting-started/data-conventions",
-    "getting-started/content-highlights",
+        // "getting-started/content-highlights",
 
     // "materials/creating-structures",
     // "materials/upload-and-import",
