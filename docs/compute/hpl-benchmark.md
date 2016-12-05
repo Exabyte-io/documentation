@@ -167,13 +167,13 @@ The following shows the HPL benchmark results running on [NERSC Edison](http://w
 
 # Speedup Ratio
 
-Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the result shows that IB-based Azure VMs outperform on-premise NERSC Edison supercomputer which indicates that cloud computing is becoming an efficient, cost-effective alternative for traditional high performance computing centers.
+Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the results show that IB-based Azure VMs can deliver better performance than top-tier traditional high-performance computing systems like NERSC Edison, and confirm that cloud computing is becoming a viable and cost-effective alternative.
 
 ![Speedup Ratio](../images/speedup-ratio.png "Speedup Ratio")
 
 # Performance per Core
 
-The following visual shows a comparative plot of performance per core in GFLOPS for the scenarios described above. Although Azure shows better scaling, AWS has better performance per core for up to 16 nodes, likely because of faster processors. As it can be seen NERSC Edison supercomputer with Hyper-Threading enabled has the least performance per core, likely because of slower processors.
+The following visual shows a comparative plot of performance per core in GFLOPS for the scenarios described above. Although Azure shows better scaling, AWS has better performance per core for up to 16 nodes, likely because of faster processors. As it can be seen, NERSC Edison supercomputer with Hyper-Threading enabled showed the lowest performance per core, likely because of the processor type.
 
 ![Performance per Core](../images/performance-per-core.png "Performance per Core")
 
