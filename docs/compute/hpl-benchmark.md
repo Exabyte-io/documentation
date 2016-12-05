@@ -152,15 +152,28 @@ The following shows the HPL benchmark results running on Azure [Standard_H16r](h
 |   16  |  256  |      9.09     |      10.4      |  14.91  |       16      |      0.93     |
 |   32  |  512  |     17.26     |      20.8      |  28.33  |       32      |      0.89     |
 
+## NERSC Edison Supercomputer (NERSC-E)
+
+The following shows the HPL benchmark results running on [NERSC Edison](http://www.nersc.gov/users/computational-systems/edison) supercomputer with Hyper-Threading enabled. Edison is a Cray XC30, with a peak performance of 2.57 PFLOPS, 133,824 compute cores, 357 terabytes of memory, and 7.56 petabytes of disk.
+
+| nodes | cores | Rmax (TFLOPS) | Rpeak (TFLOPS | Speedup | Ideal speedup | Speedup Ratio |
+|:-----:|:-----:|:-------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   48  |      0.38     |      0.9      |   1.00  |       1       |      1.00     |
+|   2   |   96  |      0.73     |      1.8      |   1.91  |       2       |      0.95     |
+|   4   |  192  |      1.34     |      3.6      |   3.48  |       4       |      0.87     |
+|   8   |  384  |      2.79     |      7.2      |   7.27  |       8       |      0.91     |
+|   16  |  768  |      5.40     |      14.4     |  14.06  |       16      |      0.88     |
+|   32  |  1536 |     10.44     |      28.8     |  27.17  |       32      |      0.85     |
+
 # Speedup Ratio
 
-Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL.
+Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the result shows that IB-based Azure VMs outperform on-premise NERSC Edison supercomputer which indicates that cloud computing is becoming an efficient, cost-effective alternative for traditional high performance computing centers.
 
 ![Speedup Ratio](../images/speedup-ratio.png "Speedup Ratio")
 
 # Performance per Core
 
-The following visual shows a comparative plot of performance per core in GFLOPS for the scenarios described above. Although Azure shows better scaling, AWS has better performance per core for up to 16 nodes, likely because of faster processors.
+The following visual shows a comparative plot of performance per core in GFLOPS for the scenarios described above. Although Azure shows better scaling, AWS has better performance per core for up to 16 nodes, likely because of faster processors. As it can be seen NERSC Edison supercomputer with Hyper-Threading enabled has the least performance per core, likely because of slower processors.
 
 ![Performance per Core](../images/performance-per-core.png "Performance per Core")
 
