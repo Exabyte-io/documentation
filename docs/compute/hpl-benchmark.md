@@ -125,19 +125,18 @@ The following shows the HPL benchmark results running on Azure [Standard_F16](ht
 |   16  |  256  |      5.33      |       9.6     |  11.18  |       16      |      0.70     |
 |   32  |  512  |      10.53     |       19.2    |  22.11  |       32      |      0.69     |
 
-
 ## Azure Infiniband on A-series VMs (AZ-IB-A)
 
 The following shows the HPL benchmark results running on Azure [Standard_A9](https://azure.microsoft.com/en-us/documentation/articles/virtual-machines-windows-sizes/#a-series) VMs using Infiniband interconnect network.
 
 | Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
-|:-----:|:-----:|:--------------:|:-------------:|:-------:|:-------------:|:-------------:|
-|   1   |   16  |      0.30      |       0.65    |  19.01  |       1       |      1.00     |
-|   2   |   32  |      0.58      |       1.30    |  18.56  |       2       |      0.98     |
-|   4   |   64  |      1.16      |       2.60    |  18.58  |       4       |      0.98     |
-|   8   |  128  |      2.25      |       5.20    |  17.97  |       8       |      0.95     |
-|   16  |  256  |      4.42      |      10.40    |  17.68  |       16      |      0.93     |
-|   32  |  512  |      8.59      |      20.80    |  17.19  |       32      |      0.90     |
+|:-----:|:-----:|:-------------:|:--------------:|:-------:|:-------------:|:-------------:|
+|   1   |   16  |      0.30     |      0.65      |   1.00  |       1       |      1.00     |
+|   2   |   32  |      0.58     |       1.3      |   1.95  |       2       |      0.98     |
+|   4   |   64  |      1.16     |       2.6      |   3.91  |       4       |      0.98     |
+|   8   |  128  |      2.25     |       5.2      |   7.56  |       8       |      0.95     |
+|   16  |  256  |      4.42     |      10.4      |  14.88  |       16      |      0.93     |
+|   32  |  512  |      8.59     |      20.8      |  28.94  |       32      |      0.90     |
 
 ## Azure Infiniband on H-series VMs (AZ-IB-H)
 
