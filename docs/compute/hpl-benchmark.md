@@ -164,9 +164,35 @@ The following shows the HPL benchmark results running on [NERSC Edison](http://w
 |   16  |  768  |      5.40     |      14.4     |  14.06  |       16      |      0.88     |
 |   32  |  1536 |     10.44     |      28.8     |  27.17  |       32      |      0.85     |
 
+## RackSpace (RS)
+
+The following shows the HPL benchmark results running on RackSpace [Compute1-60](https://www.rackspace.com/en-us/cloud/servers) VMs. Compute1-60 VM has 32 VCPUs, 60GB RAM and 5,000Mb/s bandwidth.
+
+| nodes | cores | Rmax (TFLOPS) | Rpeak (TFLOPS | Speedup | Ideal speedup | Speedup Ratio |
+|:-----:|:-----:|:-------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   48  |      0.38     |      0.9      |   1.00  |       1       |      1.00     |
+|   2   |   96  |      0.73     |      1.8      |   1.91  |       2       |      0.95     |
+|   4   |  192  |      1.34     |      3.6      |   3.48  |       4       |      0.87     |
+|   8   |  384  |      2.79     |      7.2      |   7.27  |       8       |      0.91     |
+|   16  |  768  |      5.40     |      14.4     |  14.06  |       16      |      0.88     |
+|   32  |  1536 |     10.44     |      28.8     |  27.17  |       32      |      0.85     |
+
+## SoftLayer (SL)
+
+The following shows the HPL benchmark results running on SoftLayer [virtual servers](http://www.softlayer.com/virtual-servers), each has 32 cores, 64 GB RAM and 1Gb/s bandwidth.
+
+| nodes | cores | Rmax (TFLOPS) | Rpeak (TFLOPS | Speedup | Ideal speedup | Speedup Ratio |
+|:-----:|:-----:|:-------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   48  |      0.38     |      0.9      |   1.00  |       1       |      1.00     |
+|   2   |   96  |      0.73     |      1.8      |   1.91  |       2       |      0.95     |
+|   4   |  192  |      1.34     |      3.6      |   3.48  |       4       |      0.87     |
+|   8   |  384  |      2.79     |      7.2      |   7.27  |       8       |      0.91     |
+|   16  |  768  |      5.40     |      14.4     |  14.06  |       16      |      0.88     |
+|   32  |  1536 |     10.44     |      28.8     |  27.17  |       32      |      0.85     |
+
 # Speedup Ratio
 
-Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the results show that IB-based Azure VMs can deliver better performance than top-tier traditional high-performance computing systems like NERSC Edison, and confirm that cloud computing is becoming a viable and cost-effective alternative.
+Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the results show that IB-based Azure VMs can deliver better performance than top-tier traditional high-performance computing systems like NERSC Edison, and confirm that cloud computing is becoming a viable and cost-effective alternative. SoftLayer has the least speedup ratio likely because of low speed interconnect network.
 
 ![Speedup Ratio](../images/speedup-ratio.png "Speedup Ratio")
 
