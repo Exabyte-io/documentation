@@ -155,18 +155,44 @@ The following shows the HPL benchmark results running on Azure [Standard_H16r](h
 
 The following shows the HPL benchmark results running on [NERSC Edison](http://www.nersc.gov/users/computational-systems/edison) supercomputer with Hyper-Threading enabled. Edison is a Cray XC30, with a peak performance of 2.57 PFLOPS, 133,824 compute cores, 357 terabytes of memory, and 7.56 petabytes of disk.
 
-| nodes | cores | Rmax (TFLOPS) | Rpeak (TFLOPS | Speedup | Ideal speedup | Speedup Ratio |
+| Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS) | Speedup | Ideal speedup | Speedup Ratio |
+|:-----:|:-----:|:-------------:|:--------------:|:-------:|:-------------:|:-------------:|
+|   1   |   48  |      0.38     |       0.9      |   1.00  |       1       |      1.00     |
+|   2   |   96  |      0.73     |       1.8      |   1.91  |       2       |      0.95     |
+|   4   |  192  |      1.34     |       3.6      |   3.48  |       4       |      0.87     |
+|   8   |  384  |      2.79     |       7.2      |   7.27  |       8       |      0.91     |
+|   16  |  768  |      5.40     |      14.4      |  14.06  |       16      |      0.88     |
+|   32  |  1536 |     10.44     |      28.8      |  27.17  |       32      |      0.85     |
+
+## RackSpace (RS)
+
+The following shows the HPL benchmark results running on RackSpace [Compute1-60](https://www.rackspace.com/en-us/cloud/servers) VMs. Compute1-60 VM has 32 VCPUs, 60GB RAM and 5,000Mb/s bandwidth.
+
+| Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS | Speedup | Ideal speedup | Speedup Ratio |
 |:-----:|:-----:|:-------------:|:-------------:|:-------:|:-------------:|:-------------:|
-|   1   |   48  |      0.38     |      0.9      |   1.00  |       1       |      1.00     |
-|   2   |   96  |      0.73     |      1.8      |   1.91  |       2       |      0.95     |
-|   4   |  192  |      1.34     |      3.6      |   3.48  |       4       |      0.87     |
-|   8   |  384  |      2.79     |      7.2      |   7.27  |       8       |      0.91     |
-|   16  |  768  |      5.40     |      14.4     |  14.06  |       16      |      0.88     |
-|   32  |  1536 |     10.44     |      28.8     |  27.17  |       32      |      0.85     |
+|   1   |   32  |      0.16     |      0.7      |   1.00  |       1       |      1.00     |
+|   2   |   64  |      0.28     |      1.4      |   1.68  |       2       |      0.84     |
+|   4   |  128  |      0.57     |      2.8      |   3.46  |       4       |      0.86     |
+|   8   |  256  |      0.98     |      5.6      |   5.97  |       8       |      0.75     |
+|   16  |  512  |      2.14     |      11.2     |  13.07  |       16      |      0.82     |
+|   32  |  1024 |      3.04     |      22.4     |  18.55  |       32      |      0.58     |
+
+## SoftLayer (SL)
+
+The following shows the HPL benchmark results running on SoftLayer [virtual servers](http://www.softlayer.com/virtual-servers), each has 32 cores, 64 GB RAM and 1Gb/s bandwidth.
+
+| Nodes | Cores | Rmax (TFLOPS) | Rpeak (TFLOPS | Speedup | Ideal speedup | Speedup Ratio |
+|:-----:|:-----:|:-------------:|:-------------:|:-------:|:-------------:|:-------------:|
+|   1   |   32  |      0.57     |     0.525     |   1.00  |       1       |      1.00     |
+|   2   |   64  |      0.66     |      1.05     |   1.16  |       2       |      0.58     |
+|   4   |  128  |      0.44     |      2.1      |   0.77  |       4       |      0.19     |
+|   8   |  256  |      0.67     |      4.2      |   1.17  |       8       |      0.15     |
+|   16  |  512  |      1.46     |      8.4      |   2.58  |       16      |      0.16     |
+|   32  |  1024 |      2.46     |      16.8     |   4.33  |       32      |      0.14     |
 
 # Speedup Ratio
 
-Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the results show that IB-based Azure VMs can deliver better performance than top-tier traditional high-performance computing systems like NERSC Edison, and confirm that cloud computing is becoming a viable and cost-effective alternative.
+Here is a comparison of speedup ratios for the scenarios described above. As it can be seen, Azure outperforms AWS because of a low latency interconnection network which facilitates more efficient scaling of HPL. In addition the results show that IB-based Azure VMs can deliver better performance than top-tier traditional high-performance computing systems like NERSC Edison, and confirm that cloud computing is becoming a viable and cost-effective alternative. SoftLayer has the least speedup ratio likely because of low speed interconnect network.
 
 ![Speedup Ratio](../images/speedup-ratio.png "Speedup Ratio")
 
