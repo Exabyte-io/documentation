@@ -18,11 +18,11 @@ Depending on the size and degree of urgency, simulation tasks can be directed by
 
 <sup>***</sup> whole hours = jobs are charged according to the number of Node-hours consumed, each partial hour is charged as whole
 
-<sup>****</sup> CPU count per node is 36 on cluster-001, 32 on cluster-002 and 16 on cluster-003 and cluster-004
+<sup>****</sup> CPU count per node is 36 on cluster-001, 32 on cluster-002 and 16 on cluster-003, cluster-004, and cluster-005
 
 
 !!! note "What is 1 Node-hour"
-    1 Node-hour = (36 on cluster-001, 32 on cluster-002, 16 on cluster-003 and cluster-004)  x  1 CPU-hour
+    1 Node-hour = (36 on cluster-001, 32 on cluster-002, 16 on cluster-003, cluster-004 and cluster-005)  x  1 CPU-hour
 
 
 ## Wait time
