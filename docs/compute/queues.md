@@ -10,7 +10,7 @@ Depending on the size and degree of urgency, simulation tasks can be directed by
 | OR   | on-demand regular   | 1             | 36****            | exact seconds | 10
 | OF   | on-demand fast      | &le; 50             | 36****             | whole hours*** | 75
 | SR   | saving regular   | 1             | 36****            | exact seconds | 10
-| SF   | saving fast      | &le; 50             | 36****             | exact seconds | 75
+| SF   | saving fast      | &le; 50             | 36****             | whole hours*** | 75
 
 <sup>*</sup> maximum number of nodes per single cluster, may be administratively adjusted depending on load
 
