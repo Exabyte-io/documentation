@@ -105,6 +105,17 @@ pages:
         - CLI users permissions:            security/cli-users-permissions.md
         #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
 
+    - RESTful API:
+        - Query structure:                  rest-api/query-structure.md
+        - Authentication:                   rest-api/authentication.md
+        - Endpoints:
+            - Materials:                    rest-api/endpoints/materials.md
+            - Materials-Bank:               rest-api/endpoints/materials-bank.md
+            - Characteristics:              rest-api/endpoints/characteristics.md
+            - Jobs:                         rest-api/endpoints/jobs.md
+            - Workflows:                    rest-api/endpoints/workflows.md
+            - Pseudos:                      rest-api/endpoints/pseudos.md
+
     - Other:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
