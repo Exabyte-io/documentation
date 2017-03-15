@@ -16,7 +16,7 @@ curl -X POST https://platform.exabyte.io/api/v1/login -d "username=USERNAME&pass
 
 And the response will look like:
 
-```bash
+```json
 {
     "data": {
         "authToken": "f2KpRW7KeN9aPmjSZ",
