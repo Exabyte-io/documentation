@@ -16,7 +16,7 @@ curl -X GET https://platform.exabyte.io/api/v1/characteristics -H "X-Auth-Token:
 ```
 
 !!! tip "Number of Returned Results"
-    The number of returned results are limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
+    The number of returned results is limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
 
 * Get characteristic by ID:
 
