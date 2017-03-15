@@ -18,7 +18,7 @@ curl -X GET https://platform.exabyte.io/api/v1/materials -H "X-Auth-Token: f2KpR
 ```
 
 !!! tip "Number of Returned Results"
-    The number of returned results are limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
+    The number of returned results is limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
 
 * Get material by ID:
 
@@ -44,7 +44,7 @@ curl -X GET https://platform.exabyte.io/api/v1/materials?query%3D%7B%27derivedPr
 !!! tip "Query Parameter"
     The query parameter before encoding is `query={"derivedProperties.symmetry.spaceGroup": "F-43m"}`.
 
-The returned materials do not contain material's characteristics by default, as we store characteristics inside a separate collection. Although characteristics can be queried separately via `characteristics` endpoint, you can use `includeCharacteristics` parameter to get material's characteristics with one call to the REST API.
+The returned materials do not contain material's characteristics by default, as we store them inside a separate collection. Although characteristics can be queried separately via `characteristics` endpoint, you can use `includeCharacteristics` parameter to get material's characteristics with one call to the REST API.
 
 * Get material with characteristics:
 
