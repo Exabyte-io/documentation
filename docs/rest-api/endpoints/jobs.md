@@ -16,7 +16,7 @@ curl -X GET https://platform.exabyte.io/api/v1/jobs -H "X-Auth-Token: f2KpRW7KeN
 ```
 
 !!! tip "Number of Returned Results"
-    The number of returned results are limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
+    The number of returned results is limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
 
 * Get job by ID:
 
@@ -101,7 +101,6 @@ curl -X DELETE https://platform.exabyte.io/api/v1/jobs/HmeWjp69jHYkZYMkh
   }
 }
 ```
-</details>
 
 ### Update
 

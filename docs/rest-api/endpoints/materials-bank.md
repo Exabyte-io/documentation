@@ -16,15 +16,15 @@ curl -X GET https://platform.exabyte.io/api/v1/materials-bank -H "X-Auth-Token: 
 ```
 
 !!! tip "Number of Returned Results"
-    The number of returned results are limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
+    The number of returned results is limited to 20 by default ([Results Pagination](../query-structure/#results-pagination)).
 
-* Get material-bank item by ID:
+* Get materials bank item by ID:
 
 ```bash
 curl -X GET https://platform.exabyte.io/api/v1/materials-bank/hXFvhjYWfR2fmDFJ9 -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ"
 ```
 
-* Get material-bank by formula:
+* Get materials bank by formula:
 
 ```bash
 curl -X GET https://platform.exabyte.io/api/v1/materials-bank?query%3D%7B%27formula%27%3A+%27SiGe%27%7D -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ"
@@ -33,7 +33,7 @@ curl -X GET https://platform.exabyte.io/api/v1/materials-bank?query%3D%7B%27form
 !!! tip "Query Parameter"
     The query parameter before encoding is `query={"formula': "SiGe"}`.
 
-The returned materials do not contain material's characteristics by default, as we store characteristics inside a separate collection. Although characteristics can be queried separately via `characteristics` endpoint, you can use `includeCharacteristics` parameter to get material's characteristics with one call to the REST API.
+The returned materials do not contain material's characteristics by default, as we store them inside a separate collection. Although characteristics can be queried separately via `characteristics` endpoint, you can use `includeCharacteristics` parameter to get material's characteristics with one call to the REST API.
 
 * Get material-bank item with characteristics:
 ```bash
