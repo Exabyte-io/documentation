@@ -44,9 +44,6 @@ curl -X POST https://platform.exabyte.io/api/v1/jobs -H "X-Auth-Token: f2KpRW7Ke
     "_id": "gyfPHZk56QAxRpAqv"
   },
   "compute": {
-    "cluster": {
-      "fqdn": "AWS-cluster-001"
-    },
     "nodes": 1,
     "notify": "n",
     "ppn": 1,
