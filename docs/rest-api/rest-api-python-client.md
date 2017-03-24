@@ -1,16 +1,16 @@
 exabyte-api-client is a Python package that provides access to Exabyte REST API via Python.
 
-## How to Install
+# How to Install
 
 You can install exabyte-api-client via pip in two ways:
 
-* Install it via PyPI:
+## Install it via PyPI:
 
 ```bash
 pip install exabyte-api-client
 ```
 
-* Install it via source code in development mode:
+## Install it via source code in development mode:
 
 ```bash
 git clone git@github.com:Exabyte-io/exabyte-api-client.git
@@ -18,9 +18,9 @@ cd exabyte-api-client
 pip install -e .
 ```
 
-## How to Use
+# How to Use
 
-* Obtain authentication parameters
+## Obtain authentication parameters
 
 The following Python code shows how to obtain authentication parameters. An instance of `ExabyteLoginEndpoint` class is created and required parameters are passed to its constructure. Then the `login` method of the instance is called to retrieve authentication parameters.
 
@@ -54,7 +54,7 @@ Save the above Python code in a file (`get_auth_params.py`) and run it:
 python get_auth_params.py -u YOUR_USERNAME -p YOUR_PASSWORD
 ```
 
-* Get the list of all materials
+## Get the list of all materials
 
 The following Python code shows how to get a list of materials. An instance of `ExabyteLoginEndpoint` class is created and required parameters are passed to its constructure to retrieve authentication parameters. Then an instance of `ExabyteMaterialsEndpoint` is created with obtained authentication parameters. Finally `get_materials` method is called to get the list materials.
 
@@ -91,7 +91,7 @@ Save it in a file (`get_materials.py`) and run it:
 python get_materials.py -u YOUR_USERNAME -p YOUR_PASSWORD
 ```
 
-* Get a list of materials with a given formula
+## Get a list of materials with a given formula
 
 The following code returns a list of material with a given formula. `get_materials` method of `ExabyteMaterialsEndpoint` class is called with `query` parameter (`{'query': {'formula': 'SiGe'}}`) to filter materials with a given formula.
 
