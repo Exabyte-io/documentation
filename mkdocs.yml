@@ -53,8 +53,10 @@ pages:
         - HPL Benchmark:        compute/hpl-benchmark.md
 
     - Sharing & Collaboration:
-        # - Organizations:        collaboration/organizations.md
-        # - Create Organizations: collaboration/create-organization.md
+        - Organizations:
+            - Overview:         collaboration/organizations/overview.md
+            - Projects:         collaboration/organizations/projects.md
+            - Teams:            collaboration/organizations/teams.md
         - Invite Friends:       collaboration/invite-friends.md
 
     - Command Line Interface:
