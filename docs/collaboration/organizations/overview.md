@@ -1,8 +1,6 @@
 <!-- by MM -->
 
-Organizations are abstractions through which multiple users can collaborate. 
-
-Owners and administrators can manage access for the members of organization to data and projects with comprehensive security and administrative features.
+Organizations are abstractions through which multiple users can collaborate. Owners and administrators can manage access for the members of organization to data and projects with comprehensive security and administrative features.
 
 # Creating an organization
 
