@@ -117,6 +117,7 @@ pages:
             - Jobs:                         rest-api/endpoints/jobs.md
             - Workflows:                    rest-api/endpoints/workflows.md
             - Pseudos:                      rest-api/endpoints/pseudos.md
+        - REST API Python Client:           rest-api/rest-api-python-client.md
 
     - Other:
         - Registration:         other/registration.md
