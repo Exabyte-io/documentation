@@ -37,7 +37,7 @@ The following shows how to add and delete team members:
 
 # How team members can collaborate on a project
 
-The following example shows how organization members can collaborate. In first part, organization owner demo creates a write-access team with demo and exadmin as organization members and adds the default project exabyte.io into it. demo then creates a simple job and save it inside the default project. In second part exadmin user navigates to the job and adjusts some parameters and submits the job.
+The following example shows how organization members can collaborate. In first part, organization owner demo creates a write-access team with demo and exadmin as organization members and adds the default project exabyte.io into it. demo then creates a simple job and save it inside the default project. In second part exadmin user navigates to the job and adjusts some parameters and finally submits the job.
 
 ## First part
 
