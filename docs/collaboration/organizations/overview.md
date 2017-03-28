@@ -4,18 +4,18 @@ Organizations are shared accounts where businesses can collaborate across many p
 
 # Creating a new organization
 
-You can create an organization by clicking on organization on the left sidebar:
+You can create an organization by navigating to organization on the left sidebar:
 
 <img data-gifffer="/images/organization-create.gif">
 
-As you can see there are different service levels for organizations, "Promo", "Enterprise" and "Enterprise Extra". "Promo" is the default organization service level with minimal set of features. For more information about service levels please visit [Service Levels](/billing/pricing-and-service-levels/).
+As you can see there are different service levels for organizations, "Promo", "Enterprise" and "Enterprise Extra". "Promo" is the default organization service level with minimal set of features. Please visit [Service Levels](/billing/pricing-and-service-levels/) for more information.
 
 !!! note "Organization Balance"
     The first organization is given $10 as a gift so that you can try things out. 
 
 # Deleting organization
 
-If you want to delete the organization, navigate to the "EDIT BIO" tab and delete the organization:
+If you want to delete an organization, navigate to the "EDIT BIO" tab and delete the organization:
 
 <img data-gifffer="/images/organization-delete.gif">
 
@@ -30,13 +30,13 @@ You can adjust your organization's biography including description, email addres
 
 # Adding a member to organization
 
-In order to start sharing data and collaborating with colleagues on different projects, you should add users to your organization. When a user is added to the organization, he will be a read-only user which is only able to see the list of projects, people and teams.
+In order to start sharing data and collaborating with colleagues on different projects, you should add users to your organization. When a user is added to the organization, he|she become a read-only user which is only able to see the list of projects, people and teams. If you want give users access to projects, please visit [teams](teams) page.
 
 <img data-gifffer="/images/organization-add-user.gif">
 
 # Removing a member from organization
 
-A user can be removed from organization from "PEOPLE" tab of the organization. When user is removed he will not be able to access any data associated with organizations.
+A user can be removed from organization from "PEOPLE" tab of the organization. When user is removed he|she will not be able to access any data associated with the organization.
 
 <img data-gifffer="/images/organization-remove-user.gif">
 
