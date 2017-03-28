@@ -1,10 +1,12 @@
 <!-- by MM -->
 
-Organizations are shared accounts where businesses can collaborate across many projects at once. Owners and administrators can manage member access to the organization's data and projects with sophisticated security and administrative features.
+Organizations are abstractions through which multiple users can collaborate. 
 
-# Creating a new organization
+Owners and administrators can manage access for the members of organization to data and projects with comprehensive security and administrative features.
 
-You can create an organization by navigating to organization on the left sidebar:
+# Creating an organization
+
+You can create an organization by clicking "Organization" link in the left sidebar:
 
 <img data-gifffer="/images/organization-create.gif">
 
@@ -20,32 +22,32 @@ If you want to delete an organization, navigate to the "EDIT BIO" tab and delete
 <img data-gifffer="/images/organization-delete.gif">
 
 !!! warning "Deleting Organization"
-    All data associated with your organization will be deleted when organization is removed.
+    All data associated with your organization will be discarded when organization is deleted.
 
-# Adjusting organization biography
+# Adjusting organization bio
 
-You can adjust your organization's biography including description, email address, URL, location and avatar in "EDIT BIO" tab:
+You can adjust your organization's bio including description, email address, URL, location and avatar in "EDIT BIO" tab:
 
 <img data-gifffer="/images/organization-edit-bio.gif">
 
 # Adding a member to organization
 
-In order to start sharing data and collaborating with colleagues on different projects, you should add users to your organization. When a user is added to the organization, he|she become a read-only user which is only able to see the list of projects, people and teams. If you want give users access to projects, please visit [teams](teams) page.
+In order to start sharing data and collaborating with colleagues, you should add users to your organization. When a user is added to the organization, he/she will by default be a read-only user which is only able to see the list of projects, people and teams.
 
 <img data-gifffer="/images/organization-add-user.gif">
 
 # Removing a member from organization
 
-A user can be removed from organization from "PEOPLE" tab of the organization. When user is removed he|she will not be able to access any data associated with the organization.
+A user can be removed from organization using "PEOPLE" tab. When user is removed he/she will not be able to access any data associated with the organization.
 
 <img data-gifffer="/images/organization-remove-user.gif">
 
 # Organization admins
 
-Each organization have an owner and could have one or multiple admins. Admins have full permission on organization. They can manage users, projects, teams and jobs. The only difference between admin and owner is that admin can not delete the organization. The following shows how to make a user admin.
+Each organization have the owner and one or multiple admins. Admins have full control over an organization. They can manage users, projects, teams and jobs. The only difference between admin and owner is that an admin can not delete the organization. The following shows how to give user admin permissions.
 
 <img data-gifffer="/images/organization-admin-user.gif">
 
 # Billing and payments
 
-There is no difference between organization and personal billing and payments. To access your organization billing and payments, switch to your organization account and select "Billing & Payments" on the left sidebar. For more information please visit [Billing and Payments](/billing/billing-and-payments).
+Billing is very similar for organization and personal accounts. To access your organization's billing and payments, switch to your organization account and select "Billing & Payments" on the left sidebar. For more information please visit [Billing and Payments](/billing/billing-and-payments).
