@@ -401,7 +401,7 @@ LWAVE = False
 MAGMOM = 8*0.6 16*5
 NELM = 100
 NCORE = 1
-KPAR = 1
+KPAR = <Number of compute nodes>
 NSW = 1
 PREC = Med
 SIGMA = 0.2
@@ -451,7 +451,7 @@ direct
 ```
 0
 Gamma
-1 1 2
+6 6 6
 ```
 </details>
 
