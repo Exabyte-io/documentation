@@ -53,8 +53,10 @@ pages:
         - HPL Benchmark:        compute/hpl-benchmark.md
 
     - Sharing & Collaboration:
-        # - Organizations:        collaboration/organizations.md
-        # - Create Organizations: collaboration/create-organization.md
+        - Organizations:
+            - Overview:         collaboration/organizations/overview.md
+            - Projects:         collaboration/organizations/projects.md
+            - Teams:            collaboration/organizations/teams.md
         - Invite Friends:       collaboration/invite-friends.md
 
     - Command Line Interface:
@@ -104,6 +106,18 @@ pages:
         - Data Security at rest:            security/data-security-at-rest.md
         - CLI users permissions:            security/cli-users-permissions.md
         #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
+
+    - RESTful API:
+        - Query structure:                  rest-api/query-structure.md
+        - Authentication:                   rest-api/authentication.md
+        - Endpoints:
+            - Materials:                    rest-api/endpoints/materials.md
+            - Materials-Bank:               rest-api/endpoints/materials-bank.md
+            - Characteristics:              rest-api/endpoints/characteristics.md
+            - Jobs:                         rest-api/endpoints/jobs.md
+            - Workflows:                    rest-api/endpoints/workflows.md
+            - Pseudos:                      rest-api/endpoints/pseudos.md
+        - REST API Python Client:           rest-api/rest-api-python-client.md
 
     - Other:
         - Registration:         other/registration.md
