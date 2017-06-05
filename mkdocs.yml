@@ -65,6 +65,7 @@ pages:
         - Accounting:           cli/accounting.md
         - Environment:          cli/modules-environment.md
         - Jobs:                 cli/jobs.md
+        - Jobs example:         cli/jobs-example.md
         - Storage System:       cli/storage-system.md
         - Extra:                cli/extra.md
 

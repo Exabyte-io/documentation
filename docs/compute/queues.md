@@ -2,7 +2,7 @@
 
 ## Overview
 
-Depending on the size and degree of urgency, simulation tasks can be directed by user to different submission queues to optimize cost/efficiency ratio. Submission queues have corresponding [compute levels](overview.md). We have multiple queues, as explained below:
+Depending on the size and degree of urgency, simulation tasks can be directed by user to different submission queues to optimize cost/efficiency ratio. Submission queues have the corresponding [compute levels](overview.md). We have multiple queues, as explained below:
 
 | Name | Meaning | Nodes per job | CPU per node | Charge policy | Max nodes<sup>*</sup> |
 |:-----|:--------|--------------:|-------------:|--------------:|----------:|
