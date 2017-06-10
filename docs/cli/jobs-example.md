@@ -190,9 +190,9 @@ do
    conv_thr = 1.0d-8
 /
 ATOMIC_SPECIES
- Sr 87.62     /export/share/pseudo/sr/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf
- Zr 91.224    /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf
- O  15.999    /export/share/pseudo/o/gga/pbe/gbrv/1.2/us/o_pbe_gbrv_1.2.upf
+ Sr 87.62     sr_pbe_gbrv_1.0.upf
+ Zr 91.224    zr_pbe_gbrv_1.0.upf
+ O  15.999    o_pbe_gbrv_1.2.upf
 ATOMIC_POSITIONS (crystal)
 Zr     0.250000000         0.250000000         0.250000000
 Zr     0.750000000         0.250000000         0.250000000
