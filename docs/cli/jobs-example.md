@@ -158,7 +158,7 @@ ACCOUNT="exabyte-io-exabyte-io"
 # ---------------------------------------------------------- #
 cp /export/share/pseudo/sr/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
 cp /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf .
-cp /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf .
+cp /export/share/pseudo/o/gga/pbe/gbrv/1.2/us/o_pbe_gbrv_1.2.upf .
 
 for celldm1 in 1.81 1.82 1.83 1.84 1.85
 do
@@ -192,7 +192,7 @@ do
 ATOMIC_SPECIES
  Sr 87.62     /export/share/pseudo/sr/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf
  Zr 91.224    /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf
- O  15.999    /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf
+ O  15.999    /export/share/pseudo/o/gga/pbe/gbrv/1.2/us/o_pbe_gbrv_1.2.upf
 ATOMIC_POSITIONS (crystal)
 Zr     0.250000000         0.250000000         0.250000000
 Zr     0.750000000         0.250000000         0.250000000
