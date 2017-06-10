@@ -15,7 +15,7 @@ We start with preparing an input file. Below is example input file with pseudopo
     tprnfor=.true.
     outdir = './'
     wfcdir = './'
-    prefix = '__prefix__'
+    prefix = '${celldm1}'
  /
  &system
     ibrav = 1
@@ -175,7 +175,7 @@ do
     tprnfor=.true.
     outdir = './'
     wfcdir = './'
-    prefix = '__prefix__'
+    prefix = '${celldm1}'
     pseudo_dir = './_pseudo'
  /
  &system
