@@ -118,7 +118,7 @@ The logic for parameter sweep calculations can be summarized as below (in pseudo
 
 ```bash
 #!/bin/sh
-for celldm1 in 1.81 1.82 1.83 1.84 1.85
+for celldm1 in 5.81 5.82 5.83
 do
     render_input_file(celldm1)
     render_job_submission_script(email, project)
@@ -161,7 +161,7 @@ cp /export/share/pseudo/sr/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf ./_pseudo
 cp /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf ./_pseudo
 cp /export/share/pseudo/o/gga/pbe/gbrv/1.2/us/o_pbe_gbrv_1.2.upf ./_pseudo
 
-for celldm1 in 1.81 1.82 1.83 1.84 1.85
+for celldm1 in 5.81 5.82 5.83
 do
 # ---------------------------------------------------------- #
 #  Quantum ESPRESSO input file                               #
