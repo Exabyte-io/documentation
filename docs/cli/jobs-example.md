@@ -156,7 +156,7 @@ ACCOUNT="exabyte-io-exabyte-io"
 # ---------------------------------------------------------- #
 #  Quantum ESPRESSO pseudopotentials                         #
 # ---------------------------------------------------------- #
-cp /export/share/pseudo/si/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
+cp /export/share/pseudo/sr/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
 cp /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf .
 cp /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf .
 
@@ -190,7 +190,7 @@ do
    conv_thr = 1.0d-8
 /
 ATOMIC_SPECIES
- Sr 87.62     /export/share/pseudo/si/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf
+ Sr 87.62     /export/share/pseudo/sr/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf
  Zr 91.224    /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf
  O  15.999    /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf
 ATOMIC_POSITIONS (crystal)
