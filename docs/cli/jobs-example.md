@@ -255,7 +255,7 @@ EOF
 
 module add espresso
 cd \$PBS_O_WORKDIR
-mpirun -np \$PBS_NP pw.x -in pw.in > pw.out
+mpirun -np \$PBS_NP pw.x -in srzro3_${celldm1}.in > srzro3_${celldm1}.out
 EOF
     qsub run_QE_${celldm1}.pbs
 done
