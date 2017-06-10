@@ -165,7 +165,7 @@ do
 # ---------------------------------------------------------- #
 #  Quantum ESPRESSO input file                               #
 # ---------------------------------------------------------- #
-    cat > srzro3_${celldm3}.in <<EOF
+    cat > srzro3_${celldm1}.in <<EOF
 &control
     calculation = 'scf',
     restart_mode = 'from_scratch',
