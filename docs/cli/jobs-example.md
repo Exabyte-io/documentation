@@ -254,8 +254,8 @@ EOF
 #PBS -m abe
 
 module add espresso
-cd $PBS_O_WORKDIR
-mpirun -np $PBS_NP pw.x -in pw.in > pw.out
+cd \$PBS_O_WORKDIR
+mpirun -np \$PBS_NP pw.x -in pw.in > pw.out
 EOF
     qsub run_QE_${celldm1}.pbs
 done
