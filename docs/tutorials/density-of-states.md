@@ -47,6 +47,9 @@ When all 5 units are complete, switching to the Results tab and the sub-tab for 
 
 <img data-gifffer="/images/DOSStep6.gif" />
 
+!!! note "Partial contributions"
+    The numbers represent the order of the current orbital as included inside the pseudopotential, and <u>not</u> the principal quantum number.
+
 # Links
 
 1. [Electronic Density of States, Wikipedia](https://en.wikipedia.org/wiki/Density_of_states)
