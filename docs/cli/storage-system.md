@@ -2,21 +2,26 @@
 
 ## Storage system
 
-When as a CLI user, the following storage systems become available:
+As a CLI user you have access to multiple data centers. Each data center has its own storage systems mounted on `/home` and `/share` directories. In order to provide you with a unified file system so that you can manage all your data from a central place we have mounted all clusters' `/home` and `/share` directories on login node and created necessary links to your home directory. When you ssh to login node, your home directory should contain the following directories:
 
-- `/home`: provides each user with storage space; this is permanent storage accessible from all cluster nodes.
+```bash
+[demo@bohr.exabyte.io ~]$ ls -lhta
+total 0
+drwxrwxr-x. 2 demo demo 29 Sep  5 02:15 cluster-001
+drwxrwxr-x. 2 demo demo 29 Sep  5 02:15 cluster-003
+drwxrwxr-x. 2 demo demo 29 Sep  5 02:15 cluster-005
+lrwxrwxrwx. 1 demo demo 13 Sep  5 02:15 dropbox -> /dropbox/demo
+ 
+ 
+[demo@bohr.exabyte.io ~]$ ls -lhta cluster-001
+total 4.0K
+drwx------. 9 demo demo 4.0K Sep  5 02:15 ..
+drwxrwxr-x. 2 demo demo   29 Sep  5 02:15 .
+lrwxrwxrwx. 1 demo demo   18 Sep  5 02:15 share -> /cluster-001-share
+lrwxrwxrwx. 1 demo demo   22 Sep  5 02:15 home -> /cluster-001-home/demo
+```
 
-- `/share`: provides user signed up for subscription levels that support organizations with a global storage space that can be accessed by multiple users within the organization; this is permanent storage accessible from all cluster nodes.
+As it can be seen, there is a separate directory for each cluster. In each cluster directory there are 2 subdirectores, `home` and `share`. If you want to run a job in a specific cluster, for example cluster-001, you need to navigate to `cluster-001/home` or `cluster-001/share` directory. Please note that files and directories on `cluster-001` are not accessible on other clusters. If you have files that you would like to access from all clusters, you can put it inside `dropbox` directory. `dropbox` directory is accessible on all cluster from the same path, `/home/USER/dropbox`. 
 
-
-### Unified file system
-
-As a CLI user you have access to multiple data centers. Each data center has its own storage systems. In order to provide you with a unified file system so that you can manage all your data from a central point we have aggregated all `/home` directories to `/export/home` and all `/share` directories to `/share` on login node. The aggregation is done by [UnionFS](https://www.filesystems.org/project-unionfs.html). 
-
-UnionFS merges the contents of several directories (called branches), while keeping their physical content separate. For example imagine there are two clusters available, cluster-001 and cluster-002. The `/home` and `/share` directories of each cluster is mounted separately on login node on `/cluster-001-home`, `/cluster-001-share`, `/cluster-002-home` and `/cluster-002-share`. Then home and share directories are merged to `/export/home` and `/share` respectively. So if you have file X on `/cluster-001-home` and file Y on `/cluster-002-home` you would see both files, X and Y when you go to your home directory.
-
-When you create a new file or directory inside home or share directory, it is placed on the first branch of UnionFS. So you would not access this file other clusters (branches). If you want to have the file or directory on a specific cluster you should create the file on the main branch explicitly. For example if you want to have file Z to be available on home directory of cluster-002, you should create the file in `/cluster-002-home/USERNAME/X`. We do this for you automatically when you submit a job to a specific cluster. The whole job working directory is moved to the destination cluster. The file transfer may take time depending on the size of directory.
-
-!!! warning "Files and directories with the same name"
-    If there are multiple files or directories with the same name on the same path, UnionFS only shows the one located on the first branch. For example if file X exists on both clusters, `/cluster-001-home/USERNAME/X` and `/cluster-002-home/USERNAME/X`
-    you would only see `/cluster-001-home/USERNAME/X`. So please do not create files and directories with the same name on the same path.
+!!! warning "Dropbox Directory"
+    `dropbox` directory is not designed to handle large files or to run calculation on.

@@ -157,6 +157,8 @@ mpirun -np $PBS_NP ./my_executable
 ### Specify Job Project
 In order to specify a project that job belongs to and should be charged upon, a `#PBS -A PROJECT_NAME` directive should be used in job script file. Each user has a default project that jobs are charged on by default.
 
+### Register Jobs in Web Application
+By default all jobs submitted from command line are registered in web application. When a CLI job is registered in web application, files, stdout and stderr of it are accessible from web application. If you do not want your job to be shown on web application, specify `#PBS -R n` inside your job script file.
 
 ## Submit Example
 
