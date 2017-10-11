@@ -55,7 +55,7 @@ footer {
  * Ignore `#links` items
  */
 .section > ol > li:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 .section #links ~ ol > li {
     margin-bottom: 0px;
