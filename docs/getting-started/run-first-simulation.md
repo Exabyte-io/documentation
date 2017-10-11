@@ -1,57 +1,60 @@
 <!-- by MH -->
 
-This page explains how to run a basic simulation based on density functional theory to obtain an electronic bandstructure. We will study silicon in the standard diamond-centered cubic structure and use Quantum ESPRESSO as our simulation engine during this tutorial.
+This page explains how to run a basic simulation based on density functional theory to obtain an electronic bandstructure. We will study silicon in the standard diamond-like face-centered structure and use Quantum ESPRESSO as simulation engine.
 
-## Open default project
+!!! Warning "Outdated visuals"
+    Some visuals below may be outdated and demonstrate a similar, however not exactly accurate user experience compared to what our product currently provides.
 
-To create a new project, click on the "Project" link located in the sidebar/menu on the left. After that, click <i class="zmdi zmdi-plus-circle"></i> button in the top right corner, as shown in the animation below. Every user has a default project and we will use during this tutorial.
+## Open Job Designer
 
-## Create a new job
+Start by click "Create Job" link in the left-hand sidebar.
 
-`Jobs` belong to a `Project`. Therefore, to create a new job, while inside a project and click the <i class="zmdi zmdi-plus-circle"></i> button in the top right corner.
+You will be taken to the "Job Desinger" page where you can:
 
-You will be taken to the "Job wizard" page where you can:
+- Choose a material (one that you created and saved before)
+- Choose and adjust a simulation Workflow
+- Setup compute parameters
 
-- Create a material (or choose one that you created and saved before) using the Materials Designer
-- Choose and edit a simulation Workflow
-- Setup the Compute Parameters.
 For the sake of this tutorial, we will keep the default parameters at each step.
 
-## Materials Designer
+## Tab #1: Materials
 
-Materials Designer lets you create and save materials for future use. We will use the default structure of Silicon in diamond-centered cubic configuration
+Materials viewer lets you choose one or more previsously imported materials for use during the calculation. We will proceed with the default structure of Silicon.
 
 <img data-gifffer="/images/FirstJobCreate.gif" />
 
-## Workflow
+## Tab #2: Workflow
 
-Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow". Go to the dropdown menu of "Workflows" and select "Bandstructure".  One can modify the input files for each part of the calculation, available under input tabs by double clicking on each file tab. One can also customize the workflow by adding and deleting individual "Units" by adding and deleting the tabs containing input files.  We will set the k-point density to 7x7x7.
+Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow".
+
+Open the dropdown menu of the top-level page header and select "Bandstructure" workflow with "espresso" as modeling engine. We divide workflow into "Subworkflows", such that each individual Subworkflow can only contain one modeling engine and one model (eg. Quantum ESPRESSO, or "espresso", and density functional theory).
+
+One can further modify the input files for each individual part of the subworkflow - or "Unit" as we call it - by clicking on the corresponding element. One can also customize the workflow by adding and deleting individual "Units" by adding and deleting the tabs containing input files.  We will set the k-point density to 7x7x7.
 
 <img data-gifffer="/images/FirstJobWorkflow.gif" />
 
-## Compute parameters
+## Tab #3: Compute parameters
 
-This tab lets you set up the number of processors and the maximum time limit for your calculation to be run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficient to add anymore cores to the simulation. We also need to set the maximum time limit for the calculation to properly schedule the allocation of compute resources to this job. We can also choose to be notified of the job status by clicking on our name in the "Notifications" section. Leave all parameters at their default values and click "Save calculation". If asked if you want to save a copy of the material since it already exists in the database, answer "No"
+This tab lets you set up the number of processors and the maximum time limit for your calculation to run. Increasing the number of processors allocated to the job may accelerate the calculation if you have a larger unit cell. We set the maximum time limit for the calculation to properly schedule the allocation of compute resources to it.
+
+One can also choose to be notified of the job status by clicking on our name in the "Notifications" section. Leave all parameters at their default values and click "Save".
 
 <img data-gifffer="/images/FirstJobCompute.gif" />
 
 !!! Note "Summary"
-    You have created your first material, simulation workflow, and allocated compute parameters for it. You saved your first job to be run in the future. Now you are ready to submit your job.
+    You have created and saved your first job to be run in the future. Now we can proceed to submit it.
 
 ## Execute the job
-After saving the job, you are redirected back to the project page. Here you can start the job and track its status.
+
+After saving the job, you are redirected back to the default "Project" page. Here you can submit the job and track its status.
 
 ### Submit for execution
 
 Run the job by clicking the 3 vertical dots to the right of the "Pre-Submission" box and choosing the right-pointing triangle icon labeled "Run".
 
-You will see the status changing from "pre-submission" to "submitted". This means that the job was submitted to our compute platform.  Depending on the load of your computer and the cloud services it may take some time to become "Active".
+You will see the status changing from "pre-submission" to "submitted". This means that the job was submitted to our compute platform.  Depending on the load it may take some time to become "Active".
 
 <img data-gifffer="/images/FirstJobSubmit.gif" />
-
-### View summary
-
-You can view the summary information for the job by clicking down-pointing arrow button next to the "actions" column while the job is active.
 
 ### View progress
 
