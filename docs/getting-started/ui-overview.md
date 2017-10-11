@@ -1,64 +1,47 @@
 <!-- DB -->
 
-This page summarizes the main components of Exabyte.io user interface, and contains a basic overview of the navigation through:header bar, sidebars left and right, user account name area, user accounts switcher, dashboard, main content area, materials editor and other pages.
+This page summarizes the main components of Exabyte.io user interface: header, sidebars left and right, user accounts switch, dashboard, main content area, materials editor and other pages.
 
-## Header Bar
+!!! Warning "Outdated visuals"
+    Some visuals below may be outdated and demonstrate a similar, however not exactly accurate user experience compared to what our product currently provides.
 
-Header bar has the following items:
+## Items and Functions Navigation (left sidebar)
 
-+ Left Hand Project Navigation Trigger
-+ Exabyte.io Logo
-+ Back arrow: used in certain circumstances, such as inside project jobs - see image below)
-+ Page Title
-+ Project Navigation toggle: This will trigger the left hand navigation tray to be always open
-+ Account Name: your current account profile; avatar and name.
-
-![Header Bar](../images/HeaderBar.png "Header Bar")
-
-## Main Content Area
-
-Main content area is shown below the header bar. Most often it contains either a Profile view (with header and subnavigation) or an Explorer list view element (listing projects and jobs, for example.)
-
-Screenshot below shows an example page, with the header bar and the main content and a profile view containing the explorer list view. In this case the main content area shows the Project View: showing the Project name and description, plus a secondary navigation showing the project files. Jobs tab is open, and we are showing the list of the Jobs for this project. We can return to the list of projects by clicking the backarrow in the header.
-
-![Project Jobs List](../images/ProjectJobs.png "Project Jobs List")
-
-## Project Navigation (left sidebar)
-
-Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> will open the Project and File Navigator
+Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> will open the Items and Functions Navigator
 
 <img data-gifffer="/images/OpenLeftHandSidebar.gif" />
 
 
-| Menu Item                                         | Description
+| Menu Item & Icon                                         | Description
 | :---------------------------                      |:-------------
-| Compute Load                                      | Compute load shows in a simple indicator of how busy the compute nodes are. E are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
+| <i class="zmdi zmdi-circle"></i> &nbsp; Load                                      | Compute load shows how busy the compute system is. There are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
 | <i class="zmdi zmdi-view-dashboard"></i> &nbsp; [Dashboard](ui-overview.md#dashboard)         | Dashboard highlights important datapoints and files of recent activity
-| <i class="zmdi zmdi-file-plus"></i> &nbsp; [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
+| <i class="zmdi zmdi-file"></i> &nbsp; [Create Job](/getting-started/run-first-simulation.md)             | This is a quick link to get you started straight away on a job. Jobs saved will be collected in your default user project, which is name the same as your username and can be found in the projects page].
 | <i class="zmdi zmdi-folder"></i> &nbsp; [Projects](ui-overview.md#projects)           | Shows your list of projects
 | <i class="zmdi zmdi-file"></i> &nbsp; [Jobs](ui-overview.md#jobs)                   | Shows your list of jobs
 | <i class="zmdi zmdi-chart"></i> &nbsp; [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
 | <i class="zmdi zmdi-widgets"></i> &nbsp; [Materials](ui-overview.md#materials)         | Shows your list of materials
 | <i class="zmdi zmdi-account"></i> &nbsp; Users                                         | Shows a list of public users of Exabyte
-| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Coming soon: teams collaboration and extended privacy
+| <i class="zmdi zmdi-cloud-box"></i> &nbsp; Dropbox                                         | File browser for cloud-based file/directories
+| <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Team collaboration and extended privacy
 | <i class="zmdi zmdi-comments"></i> &nbsp; Forum                                         | Discuss issues with other users and Exabyte.io staff
-| <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation is always here
+| <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation
 
 ## Account Navigation (right sidebar)
 
-Clicking on your Profile card (header top right) will open the Account navigation.
+Clicking on your name/username in the top right will open the Account navigation.
 
 <img data-gifffer="/images/OpenRightHandSidebar.gif" />
 
-| Menu Item                                                               | Description
+| Menu Item & Icon                                                            | Description
 |:-----------------------------------------------------------------------   |:-------------
 | Account Switcher                                                        | Enables switching between personal and organizational accounts. Opens in a small window showing your active accounts. Clicking on one triggers switch to that account.
 | Quota, Queue, Service Level                                             | This section shows a quick snapshot of the status of your quota: Storage, job queue breakdown and your service level. You can easily upgrade your service level, to obtain more compute power, simply by clicking the upgrade button. If you want to compare service levels, you will find more information in the Account menu, below.
 | Account Balance                                                         | A snapshot of your current balance, quickly credit the balance using the Apply Credit Button
 | <i class="zmdi zmdi-settings"></i> &nbsp; [Account](../billing/settings-and-profile.md)                           | A link to [your account](../billing/settings-and-profile) page. In here you will find your user profile, your preferences and service level.
-| <i class="zmdi zmdi-card"></i> &nbsp; [Billings & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
-| <i class="zmdi zmdi-code"></i> &nbsp; Terminal                                                                | Access to an in-browser CLI terminal thorugh which you can directly access your cloud account.
-| <i class="zmdi zmdi-laptop"></i> &nbsp; Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
+| <i class="zmdi zmdi-card"></i> &nbsp; [Billing & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here you will your compute charges, payment records and payment methods.
+| <i class="fa fa-terminal"></i> &nbsp; Terminal                                                                | Access to an in-browser command-line terminal thorugh which you can directly access your cloud account.
+| <i class="fa fa-desktop"></i> &nbsp; Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
 | <i class="zmdi zmdi-accounts-add"></i> &nbsp; Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
 | <i class="zmdi zmdi-power"></i> &nbsp; Logout                                                                  | Secure logout
 
@@ -124,6 +107,7 @@ Jobs page is a complete list of *all* the jobs you have run, regardless of proje
 
 Users page shows all the user profiles that are accessible to you.
 
+
 ## Organizations
 
 Coming soon are Organizations, where collaboration happens between teams. The Organizations page will show all the organization profiles that are accessible to you.
@@ -133,6 +117,12 @@ Coming soon are Organizations, where collaboration happens between teams. The Or
 Analytics page allows you to select multiple materials and compare the results of the simulations. First step is to select which materials you would like to compare by ticking the boxes on the left.
 
 ![Analytics](../images/Analytics.png "Analytics")
+
+## Dropbox
+
+Dropbox is a limited-capacity cloud-based data storage (see [data conventions](/getting-started/data-conventions/#dropbox-directory)) accessible under the same filesystem path everywhere within our application. This menu item opens a file browser where one can navigate and edit (upload, download, delete) files and directories. Convenient for auxiliary simulations data (eg. pseudopotentials).
+
+![Dropbox](../images/Dropbox.png "Dropbox")
 
 ## Materials
 
