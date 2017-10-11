@@ -10,6 +10,7 @@ extra_javascript:
 site_favicon: /img/favicon.ico
 copyright: © 2017 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
+    version: "0.9.2"
     preload_javascript:
         - /preload_hotjar.js
         - /preload.js
@@ -108,7 +109,7 @@ pages:
         - CLI users permissions:            security/cli-users-permissions.md
         #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
 
-    - RESTful API:
+    - REST-API:
         - Query structure:                  rest-api/query-structure.md
         - Authentication:                   rest-api/authentication.md
         - Endpoints:
@@ -124,14 +125,14 @@ pages:
         - Registration:         other/registration.md
         # - Student Program:    other/student-program.md
         - Community Programs:  other/community-programs.md
-        - Upcoming features:    other/upcoming-features.md
-        - Roadmap:              other/roadmap.md
+        # - Upcoming features:    other/upcoming-features.md
+        # - Roadmap:              other/roadmap.md
         - Help & Support:       other/support.md
         - FAQ:                  other/faq.md
         # Restricted content login page
         - restricted.md
 
-    - Terminology:
-        - Simulations:              terminology/simulations.md
-        - Materials Properties:     terminology/property-classification.md
-        - Crystallography:          terminology/crystallography.md
+    # - Terminology:
+    #     - Simulations:              terminology/simulations.md
+    #     - Materials Properties:     terminology/property-classification.md
+    #     - Crystallography:          terminology/crystallography.md
