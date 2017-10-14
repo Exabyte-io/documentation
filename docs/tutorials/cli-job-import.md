@@ -1,6 +1,6 @@
-<!-- by AM -->
+<!-- deprecated -->
 
-This page explains how to import the results of a [command-line jobs](cli-job.md) to web application. Whether the jobs have already finished or you are about to be submitted, we have a solution to organize and manage the output files and results.
+This page explains how to import the results of a [command-line jobs](cli-job.md) to web application. Whether the jobs have already finished or about to be submitted, we have a solution to organize and manage the output files and results.
 
 When you use this feature, you can see job output files and also the following properties automatically extracted and available for analysis in the web application.
 * Number of iterations
