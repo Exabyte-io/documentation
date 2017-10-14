@@ -11,12 +11,6 @@ We support 2 basics login types: through web-page and via secure shell terminal.
 - [connection options explained](/connection-options/)
 - <a href="http://platform.exabyte.io/login" target="_blank">login page</a>
 
-# Data conventions
-
-We support collaborative access to data and have a flexible permission scheme that supports complete privacy as well as wide publicity. More at:
-
-- [data conventions](/getting-started/data-conventions/)
-
 # Creating materials
 
 There are 3 basic ways to input material geometries:
@@ -26,7 +20,7 @@ There are 3 basic ways to input material geometries:
 - [import structure from a third-party database](/materials/upload-and-import/#import-structure) (materialsproject.org is supported at current)
 
 !!! note "Combinatorial sets"
-    [Combinatorial sets](/materials/combinatorial-sets/) make it possible to create a large number of material geometries at once.
+    [Combinatorial sets](/materials/combinatorial-sets/) make it possible to rapidly create a large number of material geometries.
 
 # Running simulations
 
@@ -79,15 +73,16 @@ Advanced users connecting via command line terminal may use our unified queuing 
 - [restart from previous run](/tutorials/restart-job)
 - [remote desktop visualization](/tutorials/remote-desktop)
 
-# Analyzing the data
+# Exabyte Data Convention
+
+We employ a proprietary JSON-based data convention that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind and have a flexible permission scheme allowing for complete privacy and wide publicity. More at:
 
 We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page (see below). Data originated on command line is accessible from within the web application and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning.
 
+- [data conventions](/getting-started/data-conventions/)
 - [analytics (comparing materials)](/materials/comparing-materials/)
 - [CLI data import](/tutorials/cli-job-import)
 
-!!! note "Data formats"
-    We developed proprietary modular JSON-based data formats that support storing materials, simulations and compute properties in an organized and easy-to-navigate manner.
 
 # Other
 
