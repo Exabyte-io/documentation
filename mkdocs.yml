@@ -71,35 +71,44 @@ pages:
         - Extra:                cli/extra.md
 
     - Tutorials:
-        - Semiconductors:
-            - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
-            - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
-        - Electronic band structure:        tutorials/band-structure.md
-        - Electronic band gap:              tutorials/band-gap.md
-        - Electronic density of states:     tutorials/density-of-states.md
-        - Electronic density mesh:          tutorials/electronic-density-mesh.md
-        - Zero point energy:                tutorials/zero-point-energy.md
-        - Formation energy:                 tutorials/formation-energy.md
-        - Structural relaxation:            tutorials/relaxation.md
-        - Automatic convergence:            tutorials/kpt-convergence.md
-        - Combinatorial-screening:          tutorials/combinatorial-screening.md
-        - Custom-input workflow:            tutorials/custom-input-workflow.md
-        - Fermi surface:                    tutorials/fermi-surface.md
-        - Restart from previous run:        tutorials/restart-job.md
-        - Remote desktop visualization:     tutorials/remote-desktop.md
-        - Job submission via terminal:      tutorials/cli-job.md
-        - CLI data import:                  tutorials/cli-job-import.md
+        # TODO: adjust with results closer to experiment and re-publish
+        # - Semiconductors:
+        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
+        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
+        - Pseudopotential DFT:
+            - Electronic band structure:        tutorials/band-structure.md
+            - Electronic band gap:              tutorials/band-gap.md
+            - Electronic density of states:     tutorials/density-of-states.md
+            - Electronic density mesh:          tutorials/electronic-density-mesh.md
+            - Zero point energy:                tutorials/zero-point-energy.md
+            - Structural relaxation:            tutorials/relaxation.md
+            - K-point convergence:              tutorials/kpt-convergence.md
+            - Fermi surface:                    tutorials/fermi-surface.md
+        - Other:
+            - Custom-input workflow:            tutorials/custom-input-workflow.md
+            - Restart from previous run:        tutorials/restart-job.md
+            - Remote desktop visualization:     tutorials/remote-desktop.md
+            - Job submission via terminal:      tutorials/cli-job.md
+        # TODO: adjust combinatorial screening explanation according to latest UX
+        # - Combinatorial-screening:          tutorials/combinatorial-screening.md
+        # TODO: re-implemente and re-enable Formation Energy
+        # - Formation energy:                 tutorials/formation-energy.md
+        # TODO: check relevance and update/delete
+        # - CLI data import:                  tutorials/cli-job-import.md
+
+    # separating to top-level b/c of the importance
+    - Pricing:
+        - Service Levels:               billing/pricing-and-service-levels.md
+        - Upgrade Service Level:        billing/upgrade-service-level.md
+        - Storage Pricing:              billing/storage-quota.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
         - Billing and Payments:         billing/billing-and-payments.md
-        - Pricing and Service Levels:   billing/pricing-and-service-levels.md
-        - Storage Pricing:              billing/storage-quota.md
         - Add payment method:           billing/add-credit-card.md
         - Check balance & quota:        billing/check-balance-quota.md
         - Increase account balance:     billing/increase-balance.md
         - Increase quota:               billing/increase-quota.md
-        - Upgrade Service Level:        billing/upgrade-service-level.md
 
     - Security:
         #- Overview:                         security/security-overview.md
