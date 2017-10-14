@@ -1,11 +1,6 @@
-<!-- DB -->
-
 This page summarizes the main components of Exabyte.io user interface: header, sidebars left and right, user accounts switch, dashboard, main content area, materials editor and other pages.
 
-!!! Warning "Outdated visuals"
-    Some visuals below may be outdated and demonstrate a similar, however not exactly accurate user experience compared to what our product currently provides.
-
-## Items and Functions Navigation (left sidebar)
+# Items Navigation (left sidebar)
 
 Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> will open the Items and Functions Navigator
 
@@ -22,12 +17,12 @@ Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i
 | <i class="zmdi zmdi-chart"></i> &nbsp; [Analytics](ui-overview.md#analytics)         | Allows you to compare multiple materials
 | <i class="zmdi zmdi-widgets"></i> &nbsp; [Materials](ui-overview.md#materials)         | Shows your list of materials
 | <i class="zmdi zmdi-account"></i> &nbsp; Users                                         | Shows a list of public users of Exabyte
-| <i class="zmdi zmdi-cloud-box"></i> &nbsp; Dropbox                                         | File browser for cloud-based file/directories
+| <i class="zmdi zmdi-cloud-box"></i> &nbsp; [Dropbox](#dropbox)                                         | File browser for cloud-based file/directories
 | <i class="zmdi zmdi-globe-alt"></i> &nbsp; Organizations                                 | Team collaboration and extended privacy
 | <i class="zmdi zmdi-comments"></i> &nbsp; Forum                                         | Discuss issues with other users and Exabyte.io staff
 | <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation
 
-## Account Navigation (right sidebar)
+# Account Navigation (right sidebar)
 
 Clicking on your name/username in the top right will open the Account navigation.
 
@@ -47,19 +42,17 @@ Clicking on your name/username in the top right will open the Account navigation
 
 <hr>
 
+# Items Navigation
+
 ## User Dashboard
 
-Dashboard is the first page you will see when you log in. Its purpose is to quickly fill you on on the status of the system and your recent work.
-
-![User Dashboard](../images/dashboard.png "Dashboard")
+Dashboard quickly fills you on on the status of the system and your recent work.
 
 ### Compute Usage
 
-Compute usage chart shows the compute costs of your job runs from the last week (7 days).
+Compute usage chart shows the compute costs for the recent calculations.
 
 ### Datapoints
-
-Underneath the compute chart we offer a selection of key datapoints for your convenience.
 
 | Datapoint             | Description
 | :-------------        |:-------------
@@ -71,52 +64,49 @@ Underneath the compute chart we offer a selection of key datapoints for your con
 
 ### Storage Quota
 
-This widget displays a summary of your current data storage quota: used and total storage space. Click on the <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> icon to quickly increase your total storage quota. Click on the <i class="zmdi zmdi-refresh-sync zmdi-hc-border"></i> icon to refresh the quota data.
+This widget displays a summary of your current data storage quota: used and total storage space. Click on the <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> icon to request an increase. Click on the <i class="zmdi zmdi-refresh-sync zmdi-hc-border"></i> icon to refresh data.
 
 ### Jobs summary
 
 Jobs summary widget summarizes the total number of jobs run during this same period, and also offers a break down of the job types. There is also a quick link to jump to the jobs list.
 
-<hr>
-
 ## Create Job
 
-Create Job shortcut link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the simulation wizard where you can quickly create and run a simulation. By default the job is saved in your [default project](/getting-started/data-conventions.md). First tab is the Material Designer tab. Material design editor has a black background, surrounding functions of Material Design - such as naming, workflow and compute - have white backgrounds. More information on [running a simulation can be found here](/getting-started/run-first-simulation.md).
-
-<img data-gifffer="/images/ShortCutCreateJob.gif" />
+"Create Job" link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the job designer page where you can create simulations. By default new jobs is saved in your [default project](/getting-started/data-conventions.md).
 
 ## Projects
 
-Projects page lists all the projects you have created. Projects contain collections of Jobs, click on a project to navigate into it. Click on the <i class="zmdi zmdi-plus-circle"></i> icon to create a new one.
-
-![Projects](../images/Projects.png "Projects")
+"Projects" page lists all the projects you have created. Projects contain "Jobs", click on the project name to navigate into it. Click on the <i class="zmdi zmdi-plus-circle"></i> icon to create a new one.
 
 ## Jobs
 
-Jobs page is a complete list of *all* the jobs you have run, regardless of project. Principle actions here are:
+"Jobs" page is a complete list of *all* the jobs you created. From here you can:
 
-- Click on a job name to quickly open it,
-- Preview job results by clicking the icon in the preview column,
-- Clicking on the three vertical dots icon <i class="zmdi zmdi-more-vert zmdi-hc-border"></i> will open a submenu from where you can Run <i class="zmdi zmdi-play zmdi-hc-border"></i>, Terminate <i class="zmdi zmdi-stop zmdi-hc-border"></i>, Clone <i class="zmdi zmdi-copy zmdi-hc-border"></i>, Delete <i class="zmdi zmdi-delete zmdi-hc-border"></i> or Open <i class="zmdi zmdi-chevron-right zmdi-hc-border"></i> the job,
-- Click on the Plus icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> to create a new job,
-- Use the checkboxes to select multiple jobs, and the toolbar icons (top right) to run actions on all the jobs selected. eg. For running multiple jobs at once.
+- click on a job item name to quickly open it,
+- click on the plus icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> to create a new job,
+- use the checkboxes to select multiple items, and the toolbar icons (top right) to run actions on all the items selected,
+- use the search bar <i class="zmdi zmdi-search zmdi-hc-border"></i> to filter the items list,
+- click on a dropdown inside a job item to open a submenu where you can:
+    -  <i class="zmdi zmdi-play zmdi-hc-border"></i> Run,
+    -  <i class="zmdi zmdi-stop zmdi-hc-border"></i> Terminate,
+    -  <i class="zmdi zmdi-copy zmdi-hc-border"></i> Clone,
+    -  <i class="zmdi zmdi-delete zmdi-hc-border"></i> Delete,
+    -  <i class="zmdi zmdi-eye zmdi-hc-border"></i> Open the jobs
 
-![Jobs](../images/Jobs.png "Jobs")
+## Materials
+
+A list of all the materials you have imported, created or uploaded into your account. Same as for "Jobs" you can create, search and navigate into materials, plus:
+
+- <i class="zmdi zmdi-cloud-download zmdi-hc-border"></i> Import materials into your account (direct import from materialsproject.org is supported at current)
+- <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> Upload materials from your computer
 
 ## Users
 
-Users page shows all the user profiles that are accessible to you.
-
-
-## Organizations
-
-Coming soon are Organizations, where collaboration happens between teams. The Organizations page will show all the organization profiles that are accessible to you.
+"Users" page shows all user profiles that are accessible to you.
 
 ## Analytics
 
-Analytics page allows you to select multiple materials and compare the results of the simulations. First step is to select which materials you would like to compare by ticking the boxes on the left.
-
-![Analytics](../images/Analytics.png "Analytics")
+"Analytics" page is meant for data analytics. From here you can access all data accessible to you through our application, including public, your personal and organizational data alltogether.
 
 ## Dropbox
 
@@ -124,20 +114,19 @@ Dropbox is a limited-capacity cloud-based data storage (see [data conventions](/
 
 ![Dropbox](../images/Dropbox.png "Dropbox")
 
-## Materials
+## Organizations
 
-A list of all the materials you have imported, created or uploaded into your account. Principle actions on this screen:
+"Organizations" is where collaboration happens between teams. The Organizations page will show all the organizations that you are a member of.
 
-- Use the cloud icon with the down arrow <i class="zmdi zmdi-cloud-download zmdi-hc-border"></i> to import materials into your account from cloud services
-- Use the cloud icon with the up arrow <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> to upload materials from your computer to your account
-- Use the large Plus icon button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> to create a new material
-- Use the search icon <i class="zmdi zmdi-search zmdi-hc-border"></i> for a simple search mechanism to filter the materials list once it become large.
+<hr>
 
-![Materials](../images/Materials.png "Materials")
+# Account Navigation
 
 ## Account Switcher
 
-Coming soon are Organizations, where collaboration happens between teams. The Profile card at the top of the right hand menu shows the account you are currently using. Normally this would be your personal profile, but if you have created, or are a member of, an organization, clicking here will open the list of organizations to which you belong. You can then click on one to begin using Exabyte.io as that organization member instead of your personal account. Interface will now show data related to the organization profile: eg. storage quota and balance will be that of the organization. Projects and jobs will be those submitted by the organization. You can switch back to your personal profile by using the account switcher again and selecting your personal account.
+The Account card at the top of the right hand menu shows the account you are currently using. Initially this is your personal profile, but if you have created, or are a member of, an organization, clicking here will open the list of organizations to which you belong.
+
+You can then click on one to start using our product as a member of an organization. Interface will now show data related to the organization profile: eg. storage quota and balance will be that of the organization, projects and jobs etc.
 
 <img data-gifffer="/images/AccountSwitcher.gif" />
 
@@ -150,20 +139,16 @@ Below the account switcher is a snapshot of your account (or that of an organiza
 Account page has three tabs:
 
 + Bio <i class="zmdi zmdi-eye zmdi-hc-border"></i> shows your public profile information and recent work
-+ Preferences <i class="zmdi zmdi-settings zmdi-hc-border"></i> holds your account preferences such as Tour, Cloning suffixes and other tools
++ Preferences <i class="zmdi zmdi-settings zmdi-hc-border"></i> holds your account preferences such as [REST API](/rest-api/authentication.md) key, job cloning suffix and other settings
 + Service Level <i class="zmdi zmdi-layers zmdi-hc-border"></i> shows details about your current balance, storage quota and Service Level. See the [Accounts & Billings](/billing/settings-and-profile.md) section for more details.
-
-![Account](../images/Account.png "Account")
 
 ## Billing
 
-Billings link takes you to the Billing page which shows your account Charges <i class="zmdi zmdi-file-text zmdi-hc-border"></i>, Payments <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> and Payment Methods <i class="zmdi zmdi-card zmdi-hc-border"></i>. [Click here to find more details](/billing/billing-and-payments.md).
-
-![Billing](../images/Billing.png "Billing")
+Billings link takes you to the Billing page which shows your account Charges <i class="zmdi zmdi-file-text zmdi-hc-border"></i> (ie. per each job), Payments <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> and Payment Methods <i class="zmdi zmdi-card zmdi-hc-border"></i>. More details [here](/billing/billing-and-payments.md).
 
 ## Terminal and Remote Desktop
 
-Alternative access to your Exabyte.io account. More information [here](../cli/login.md).
+Alternative ways to access your account. More information [here](../cli/login.md).
 
 ## Invite a friend
 
