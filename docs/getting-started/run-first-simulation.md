@@ -45,7 +45,7 @@ For the moment, let's leave all parameters at their default values and click "Sa
 !!! Note "Summary"
     You have created and saved your first job to be run in the future. Now we can proceed to submit it.
 
-## Execute the job
+## Run calculation
 
 After saving the job, you are redirected back to the default "Project" page. Here you can submit the job and track its status.
 
@@ -67,4 +67,4 @@ Job view screen lets you track the input parameters, output text, convergence pa
 
 # Done
 
-This is how you can run a band structure calculation using exabyte.io. For a more comprehensive tutorial on how to run a bandstructure calculation including editing input files click [here](/tutorials/band-structure.md).
+This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore "Tutorials" section of the navigation on the left.
