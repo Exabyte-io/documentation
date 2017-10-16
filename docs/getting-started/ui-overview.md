@@ -1,6 +1,4 @@
-This page summarizes the main components of Exabyte.io user interface: header, sidebars left and right, user accounts switch, dashboard, main content area, materials editor and other pages.
-
-# Items Navigation (left sidebar)
+# Left sidebar (items navigation)
 
 Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> will open the Items and Functions Navigator
 
@@ -22,7 +20,7 @@ Clicking on the Left Hand Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i
 | <i class="zmdi zmdi-comments"></i> &nbsp; Forum                                         | Discuss issues with other users and Exabyte.io staff
 | <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation
 
-# Account Navigation (right sidebar)
+# Right sidebar (account navigation)
 
 Clicking on your name/username in the top right will open the Account navigation.
 

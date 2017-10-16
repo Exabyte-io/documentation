@@ -1,10 +1,10 @@
-<!-- by TB -->
+<!-- TODO: come back and revise once more after the rest -->
 
 This page helps users quickly get through the documentation.
 
 # Login
 
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more at:
+We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
 
 - [secure shell and in-browser terminals](/cli/overview/#in-browser-terminal-and-ssh-terminal)
 - [remote desktop session example](/electronic-density-mesh/#preparing-for-visualization)
@@ -15,20 +15,20 @@ We support 2 basics login types: through web-page and via secure shell terminal.
 
 There are 3 basic ways to input material geometries:
 
-- [construct new crystal geometries using in-browser crystallographic design tools](/materials/creating-structures/)
-- [upload structure in POSCAR/CIF format(s)](/materials/upload-and-import/#upload-structure)
-- [import structure from a third-party database](/materials/upload-and-import/#import-structure) (materialsproject.org is supported at current)
+- [construct new crystal geometries](/materials/creating-structures/) using our browser-based crystallographic design tools
+- [upload structure](/materials/upload-and-import/#upload-structure)  in POSCAR/CIF format(s)
+- [import structure](/materials/upload-and-import/#import-structure)  from a third-party database (eg. materialsproject.org)
 
 !!! note "Combinatorial sets"
     [Combinatorial sets](/materials/combinatorial-sets/) make it possible to rapidly create a large number of material geometries.
 
 # Running simulations
 
-Next step after setting up material geometry is to simulate it and extract [characteristic properties](/materials/characteristic-properties/). In order to do so, users have to construct a simulation workflow and set up compute parameters.
+Next step after creating/choosing a material is to simulate it to extract [characteristic properties](/materials/properties/). In order to do so, one needs to construct a simulation workflow.
 
 ## Workflows
 
-[Workflows](/models/simulation-workflows/) define the algorithm used during the simulation. Each characteristic property has a workflow associated with itself. Workflows are dependent on the simulation engine and model. [Density Functional Theory](/models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
+[Workflows](/models/simulation-workflows/) define the algorithm used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on simulation engine and model. For example, [Density Functional Theory](/models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
 
 More information about specific workflows, including tutorials and input date:
 
@@ -42,17 +42,16 @@ More information about specific workflows, including tutorials and input date:
 - [automatic k-point convergence](/tutorials/kpt-convergence)
 - [custom-input workflow](/tutorials/custom-input-workflow)
 - [fermi surface](/tutorials/fermi-surface)
-- [combinatorial screening general](/tutorials/combinatorial-screening)
-- [combinatorial screening of iii-v semiconductor band gaps](/tutorials/semiconductors/III-Vs-band-gap.md)
-- [default simulation input files](/models/example-simulations/)
+- [combinatorial screening](/tutorials/combinatorial-screening)
+<!-- - [combinatorial screening of iii-v semiconductor band gaps](/tutorials/semiconductors/III-Vs-band-gap.md) -->
 
-## Compute parameters
+## Compute
 
-Compute parameters ([submission queue](/compute/queues), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulation. By default "Debug" queue with 1 node, 1 CPU and 1h walltime are used. Read on at:
+Compute parameters ([submission queue](/compute/queues), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
 
 - [setting compute parameters](/compute/setting-parameters/)
-- [compute platform architecture](/compute/overview/#platform-architecture)
 - [compute platform overview](/compute/overview/)
+- [compute platform architecture](/compute/overview/#platform-architecture)
 - [submission queues](/compute/queues/)
 - [queue-based pricing](/billing/pricing-and-service-levels/#queue-based-pricing)
 - [unified storage system](/cli/storage-system/)
@@ -61,7 +60,7 @@ Compute parameters ([submission queue](/compute/queues), number of nodes and pro
 
 ## Run simulations via command-line interface (CLI)
 
-Advanced users connecting via command line terminal may use our unified queuing system (UQS) supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath UQS. Read more at:
+Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
 
 - [job submission: tutorial](/tutorials/cli-job)
 - [job submission examples](/cli/jobs/)
@@ -81,7 +80,6 @@ We store all data about simulations and materials. Data originated from web appl
 
 - [data conventions](/getting-started/data-conventions/)
 - [analytics (comparing materials)](/materials/comparing-materials/)
-- [CLI data import](/tutorials/cli-job-import)
 
 
 # Other

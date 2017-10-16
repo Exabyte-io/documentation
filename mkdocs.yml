@@ -29,9 +29,10 @@ pages:
         - Content highlights:       getting-started/content-highlights.md
         - CLI job submission:       tutorials/cli-job.md
 
-    - Data Conventions:
+    - Data Convention:
         - Overview:                 data/overview.md
-        - Storage:                  data/non-structured.md
+        - Structured data:          data/structured.md
+        - Non-structured data:      data/non-structured.md
 
     - Materials:
         - Overview:                     materials/overview.md
@@ -40,7 +41,7 @@ pages:
         - Actions:
           - Creating structures:        materials/creating-structures.md
           - Upload & Import:            materials/upload-and-import.md
-          - Comparing materials:        materials/comparing-materials.md
+          - Search & Compare:           materials/search-compare.md
           - Combinatorial sets:         materials/combinatorial-sets.md
 
     - Workflows:
