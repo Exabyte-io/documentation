@@ -242,19 +242,6 @@ p + pre, ul + pre {
     color: rgba(137, 167, 210, 0.1);
 }
 
-/*
- * h1,h2,h3... subnavigation
- * */
-.wy-menu-vertical li ul li a:hover,
-.wy-menu-vertical li.toctree-l1 a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-a.toctree-l4 {
-    padding-left: 4.3em !important;
-    color: #a1a1a1 !important;
-}
-
 @media screen and (max-width: 768px) {
     .wy-nav-side.shift {
         width: 300px;
@@ -383,6 +370,18 @@ ul.subnav li.toctree-l1 {
 }
 .wy-menu-vertical .subnav li.current > ul li a {
     padding-left: 5.23em;
+}
+/*
+ * h1,h2,h3... subnavigation
+ * */
+.wy-menu-vertical li ul li a:hover,
+.wy-menu-vertical li.toctree-l1 a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+a.toctree-l4 {
+    padding-left: 6.3em !important;
+    color: #a1a1a1 !important;
 }
 
 
