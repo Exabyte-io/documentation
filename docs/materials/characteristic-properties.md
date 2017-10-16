@@ -1,0 +1,70 @@
+<!-- by MH -->
+
+
+| Property | Explanation |
+|:---------------|:------------|
+| Total Energy   | The ground state energy of the system (NOTE: not equal to the sum of electronic energies)|
+|Entropy|Measures the disorder of the structure|
+|Energy contributions|Hartree, Exchange-correlation (XC), one-electron, Ewald, smearing (Density Functional Theory energy contributions overview [[1](#links)])|
+|Fermi energy|The highest energy level occupied by electrons in a system.|
+|Atomic forces|Force exerted on each atom by its surroundings|
+|Stress tensor|3x3 matrix expressing stresses in x, y and z dimensions|
+|Pressure|Scalar average pressure|
+|Charge density|Spatial function that contains information about charge distribution|
+
+<hr>
+
+## Electronic Properties
+
+### Band Structure
+
+Property that describes the ranges of energy that an electron within the solid may have (called energy bands,allowed bands, or simply bands) and ranges of energy that it may not have (called band gaps or forbidden bands).  The band structure refers to a mapping of the energy individual electronic bands within a material in reciprocal space.
+
+!!! Note "DFT-LDA Excited State Energies"
+    A well-known deficiency of Density Functional Theory in the Local Density Approximation is that the energy of the excited states, is lower than is found experimentally.  This can be addressed through more advanced methods like the GW Approximation and modifications to DFT such as LDA+U and metaGGA.
+
+### Band Gap
+
+The minimum energy difference between the highest occupied (valence) band and the lowest unoccupied (conduction) band.  Can be direct - when the difference is between the energy points at the same point in reciprocal space, and indirect - when the difference between two inequivalent points.  Insulators and semiconductors have a gap in energy between their highest occupied electronic state and their lowest unoccupied electronic state.  We automatically search the k-point grid for the smallest band gap between occupied and unoccupied states.  An indirect band gap refers to the global minimum distance between the highest occupied band and the lowest unoccupied band.  A direct band gap refers to the energy gap at the same point in reciprocal space.
+
+!!! Warning "Dense k-point mesh is required for band gap calculation"
+    Band gap calculation algorithm searches reciprocal space (k-points) grid for the lowest energy difference between valence and conduction band.  For this reason one must have a high k-point density (the [band gap tutorial](../tutorials/band-gap.md) demonstrates this).  If a dense k-point mesh is not used, the reported band gap will only be for the band gap at the gamma point (0,0,0)
+
+### Density of States and Partial DOS
+
+Density of states is a summation over the all possible points in reciprocal space and measures the unit density of the number of electronic states per unit energy.  Describes the number of electronic states per interval of energy at each energy level that are available to be occupied ([4](#links)).
+
+!!! Note "Projection of states for electronic character"
+    There are also projections of total electronic density onto each of the atomic states that are often useful
+
+### Fermi surface
+
+Surface of constant energy (Fermi Energy) in reciprocal space that separates the unfilled electronic levels from the filled ones.
+
+!!! Note "Fermi surface visualization"
+    Usually expressed in one of multiple formats for visualization of the 3D surface, Ex: BXSF for XCrysden
+
+<hr>
+
+## Chemical Properties
+
+### Formation energy at 0K
+
+We have pre-calculated the total energy and zero point energy of all built-it pseudopotentials and provided a template workflow for calculation of these properties for user-defined pseudopotentials.  Computed formation energy is at 0K, 0 atm using a reference state of zero for the pure elements. This quantity is often a good approximation for formation enthalpy at ambient conditions.
+
+<hr>
+
+## Vibrational Properties
+
+### Zero Point Energy
+
+The zero point energy is a purely quantum mechanical property that is the amount of energy presence in a material due to quantum mechanical uncertainty of the supposition of electronic states at 0K.  It is generally most important for lighter elements and is critical to making accurate predictions of the energetic stability and changes in chemistry.
+
+<hr>
+
+### Links
+
+1. [Density Functional Theory energy contributions overview, PDF](http://elk.sourceforge.net/CECAM/Burke-DFT.pdf)
+2. [Zero point energy of Silicon, PDF](http://www.sciencedirect.com/science/article/pii/S0009261414002425)
+3. [Formation energy of intermetallics, PDF](http://www.sciencedirect.com/science/article/pii/S096697951200252X)
+4. [Density of States on Wikipedia](https://en.wikipedia.org/wiki/Density_of_states)).

@@ -1,6 +1,3 @@
-Advanced batch job configuration
----
-
 ## Torque Keywords
 
 The following keywords may be specified as qsub command line options, or as directives (preceded by #PBS) embedded in a batch script.

@@ -1,41 +1,29 @@
+Exabyte.io is an integrated environment for materials modeling on the cloud. This documentation explains how it works. You may search for your topic of interest by using the input field in the top left corner or simply read on.
 
-# Documentation
+The [links](#links) section below can direct reader to sources of more in-depth explanation about what we are building and why [[1]](#links), quick demonstration of our product capabilities [[2]](#links) and example case studies [[3]](#links).
 
-Welcome to our documentation repository! We aim to provide all the necessary information for you to use our product here. In case you find that something is missing of you still have questions after reading this documentation, please <a href="mailto:support@exabyte.io" target="_blank">contact us</a> .
+# Quickstart
 
-## How to Get Help
+You can skip straight to our tutorial summarizing [first steps with exabyte.io](getting-started/run-first-simulation.md). There will learn how to create and run a density functional theory calculation for the electronic bandstructure of silicon.
 
-We encourage you to ask lots of questions. There are many ways to do that.
-Our support team can be contacted by phone, email, or the web during working hours Pacific Time. Our consultants are experts in high performance and cloud computing and can answer just about all of your questions.
+# Contents
 
-Technical questions, computer operations, passwords, and account support
+The [content highlights](getting-started/content-highlights.md) page contains a quick overview of the features available and the corresponding links.
 
-- email: support@exabyte.io
-- phone: 1.510.473.7770
-- feedback: https://platform.exabyte.io/
+# How to get help
 
-## New Accounts
+We do our best to reply to your requests within 24 hours. Our support team can be contacted by phone, email, or the web during working hours Pacific Time:
 
-In order to use our facilities you need:
+- email: <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>,
+- phone: +1.510.473.7770,
+- web: chat box at the bottom of our main <a href="https://platform.exabyte.io" target="_blank">web application</a>.
 
-1. A user account with an associated username
-2. Access to an allocation of resources under the above username
+# Links
 
-All newly registered users have $10 credited to their personal allocations. If you are not a member of a project that already has an allocation, you may purchase an allocation using our web application.
+1. [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
+2. [How big is "cloud-scale", article](https://www.linkedin.com/pulse/how-big-cloud-scale-timur-bazhirov)
+3. [High-throughput computer-aided discovery of new metallic alloys, case study](https://exabyte.io/#case-study)
 
-<!-- TODO: add explanation about how to purchase above -->
-<!-- TODO: add pricing description -->
+# Notes
 
-
-## QuickStart
-
-If you are new to Exabyte.io and feeling impatient, you can get started by following this tutorial summarizing the
-[first steps with Exabyte](tutorials/quickstart.md). You will learn how to create and save your first material and run a simulation that predicts this material's electronic bandstructure.
-
-## UI overview
-
-We have summarized the information about the main elements of our user interface on [this page](tutorials/ui.md).
-
-## Search
-
-You can use the search button above to find your subject of interest or just browse the content of the navbar.
+In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.

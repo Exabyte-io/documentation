@@ -1,43 +1,148 @@
 site_name: exabyte.io documentation
 theme_dir: exabyte_theme
 extra_css:
-    - app.css
+    - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
     - extra.css
 extra_javascript:
+    # TODO: migrate away from parse
+    # - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
 site_favicon: /img/favicon.ico
-copyright: © 2016 Exabyte Inc. All rights reserved.
+copyright: © 2017 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
-    home_url: https://platform.exabyte.io
-    full_width: False
+    version: "0.9.2"
     preload_javascript:
-        - preload.js
+        - /preload_hotjar.js
+        - /preload.js
+markdown_extensions:
+    - admonition
+    - toc:
+        permalink: true
 pages:
-    # Home page - must be present
-    - Home: 'index.md'
-    # Web
-    - Tutorials:
-        - 'UI overview': 'tutorials/ui.md'
-        - 'Quickstart':  'tutorials/quickstart.md'
-    - Terminology:
-    #     # Characteristic, descriptive, materials bank etc
-    #     - 'Materials':        'terminology/materials.md'
-    #     # Model, Method, Unit, Job, Workflow
-        - 'Simulations':      'terminology/simulations.md'
-    #     # Parameters that set up compute
+
+    - Home: index.md
+
+    - Getting Started:
+        - Run first simulation:     getting-started/run-first-simulation.md
+        - User interface overview:  getting-started/ui-overview.md
+        - Data conventions:         getting-started/data-conventions.md
+        - Content highlights:       getting-started/content-highlights.md
+
+    - Materials:
+        - Creating structures:          materials/creating-structures.md
+        - Upload & Import:              materials/upload-and-import.md
+        - Characteristic properties:    materials/characteristic-properties.md
+        - Comparing materials:          materials/comparing-materials.md
+        - Combinatorial sets:           materials/combinatorial-sets.md
+
+    - Models & Methods:
+        - Overview:                     models/overview.md
+        - Density Functional Theory:    models/density-functional-theory.md
+        - Simulation workflows:         models/simulation-workflows.md
+        - Example simulations:          models/example-simulations.md
+        - Advanced Properties:          models/advanced-characteristics.md
+        - Convergence algorithms:       models/convergence-algorithms.md
+        - Structural relaxation:        models/structural-relaxation.md
+        - Combinatorial set input:      models/combinatorial-set-input.md
+
     - Compute:
-        - 'Overview':           'compute/overview.md'
-        - 'Queues':             'compute/queues.md'
-    # Command-Line
-    - Advanced:
-        - 'Command-line (CLI)': 'cli/general.md'
-        - 'CLI: Login':         'cli/login.md'
-        - 'CLI: Accounting':    'cli/accounting.md'
-        - 'CLI: Environment':   'cli/environment.md'
-        - 'CLI: Jobs':          'cli/jobs.md'
-        - 'CLI: Extra':         'cli/extra.md'
-    - Billing:
-        - 'Pricing':            'billing/pricing.md'
-    # Other
+        - Overview:             compute/overview.md
+        - Queues:               compute/queues.md
+        - Benchmarks:           compute/benchmarks-and-scalability.md
+        - Connection:           compute/connection-options.md
+        - Setting parameters:   compute/setting-parameters.md
+        - HPL Benchmark:        compute/hpl-benchmark.md
+
+    - Sharing & Collaboration:
+        - Organizations:
+            - Overview:         collaboration/organizations/overview.md
+            - Projects:         collaboration/organizations/projects.md
+            - Teams:            collaboration/organizations/teams.md
+        - Invite Friends:       collaboration/invite-friends.md
+
+    - Command Line Interface:
+        - Overview:             cli/overview.md
+        - Login:                cli/login.md
+        - Accounting:           cli/accounting.md
+        - Environment:          cli/modules-environment.md
+        - Jobs:                 cli/jobs.md
+        - Jobs example:         cli/jobs-example.md
+        - Storage System:       cli/storage-system.md
+        - Extra:                cli/extra.md
+
+    - Tutorials:
+        # TODO: adjust with results closer to experiment and re-publish
+        # - Semiconductors:
+        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
+        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
+        - Pseudopotential DFT:
+            - Upload a Pseudopotential:         tutorials/upload-pseudopotential.md
+            - Electronic band structure:        tutorials/band-structure.md
+            - Electronic band gap:              tutorials/band-gap.md
+            - Electronic density of states:     tutorials/density-of-states.md
+            - Electronic density mesh:          tutorials/electronic-density-mesh.md
+            - Zero point energy:                tutorials/zero-point-energy.md
+            - Structural relaxation:            tutorials/relaxation.md
+            - K-point convergence:              tutorials/kpt-convergence.md
+            - Fermi surface:                    tutorials/fermi-surface.md
+        - Other:
+            - Custom-input workflow:            tutorials/custom-input-workflow.md
+            - Restart from previous run:        tutorials/restart-job.md
+            - Remote desktop visualization:     tutorials/remote-desktop.md
+            - Job submission via terminal:      tutorials/cli-job.md
+        # TODO: adjust combinatorial screening explanation according to latest UX
+        # - Combinatorial-screening:          tutorials/combinatorial-screening.md
+        # TODO: re-implemente and re-enable Formation Energy
+        # - Formation energy:                 tutorials/formation-energy.md
+        # TODO: check relevance and update/delete
+        # - CLI data import:                  tutorials/cli-job-import.md
+
+    # separating to top-level b/c of the importance
+    - Pricing:
+        - Service Levels:               billing/pricing-and-service-levels.md
+        - Upgrade Service Level:        billing/upgrade-service-level.md
+        - Storage Pricing:              billing/storage-quota.md
+
+    - Accounts & Billing:
+        - Settings and Profile:         billing/settings-and-profile.md
+        - Billing and Payments:         billing/billing-and-payments.md
+        - Add payment method:           billing/add-credit-card.md
+        - Check balance & quota:        billing/check-balance-quota.md
+        - Increase account balance:     billing/increase-balance.md
+        - Increase quota:               billing/increase-quota.md
+
+    - Security:
+        #- Overview:                         security/security-overview.md
+        - Privacy:                          security/privacy-statement.md
+        - Data Security in transfer:        security/data-security-in-transfer.md
+        - Data Security at rest:            security/data-security-at-rest.md
+        - CLI users permissions:            security/cli-users-permissions.md
+        #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
+
+    - REST-API:
+        - Query structure:                  rest-api/query-structure.md
+        - Authentication:                   rest-api/authentication.md
+        - Endpoints:
+            - Materials:                    rest-api/endpoints/materials.md
+            - Materials-Bank:               rest-api/endpoints/materials-bank.md
+            - Characteristics:              rest-api/endpoints/characteristics.md
+            - Jobs:                         rest-api/endpoints/jobs.md
+            - Workflows:                    rest-api/endpoints/workflows.md
+            - Pseudos:                      rest-api/endpoints/pseudos.md
+        - REST API Python Client:           rest-api/rest-api-python-client.md
+
     - Other:
-        - 'FAQ': 'other/faq.md'
+        - Registration:         other/registration.md
+        # - Student Program:    other/student-program.md
+        - Community Programs:  other/community-programs.md
+        # - Upcoming features:    other/upcoming-features.md
+        # - Roadmap:              other/roadmap.md
+        - Help & Support:       other/support.md
+        - FAQ:                  other/faq.md
+        # Restricted content login page
+        - restricted.md
+
+    # - Terminology:
+    #     - Simulations:              terminology/simulations.md
+    #     - Materials Properties:     terminology/property-classification.md
+    #     - Crystallography:          terminology/crystallography.md

@@ -1,3 +1,85 @@
+var PRIVATE_URLS = [
+    /* indented entries used to be private */
+    // "getting-started/run-first-simulation",
+        // "getting-started/ui-overview",
+    "getting-started/data-conventions",
+        // "getting-started/content-highlights",
+
+    // "materials/creating-structures",
+    // "materials/upload-and-import",
+    // "materials/characteristic-properties",
+        // "materials/comparing-materials",
+        // "materials/combinatorial-sets",
+
+    // "models/overview",
+    // "models/advanced-characteristics",
+        // "models/convergence-algorithms",
+        // "models/structural-relaxation",
+        // "models/combinatorial-set-input",
+    // "models/density-functional-theory",
+    // "models/simulation-workflows",
+    // "models/example-simulations",
+
+    // "compute/overview",
+    // "compute/queues",
+    // "compute/benchmarks-and-scalability",
+    // "compute/hpl-benchmark",
+        // "compute/connection-options",
+        // "compute/setting-parameters",
+
+    // "collaboration/organizations",
+        // "collaboration/create-organization",
+        // "collaboration/invite-friends",
+
+    // "cli/overview",
+        // "cli/login",
+        // "cli/accounting",
+        // "cli/modules-environment",
+        // "cli/jobs",
+    "cli/storage-system",
+    "cli/extra",
+
+    // "tutorials/band-structure",
+        // "tutorials/band-gap",
+        // "tutorials/density-of-states",
+        // "tutorials/zero-point-energy",
+        // "tutorials/formation-energy",
+        // "tutorials/relaxation",
+        // "tutorials/kpt-convergence",
+        // "tutorials/combinatorial-screening",
+        // "tutorials/custom-input-workflow",
+        // "tutorials/electronic-density-mesh",
+        // "tutorials/fermi-surface",
+        // "tutorials/remote-desktop",
+        // "tutorials/cli-job",
+        // "tutorials/restart-job",
+    "tutorials/cli-job-import",
+
+        // "billing/settings-and-profile",
+        // "billing/billing-and-payments",
+    // "billing/pricing-and-service-levels",
+        // "billing/storage-quota",
+        // "billing/add-credit-card",
+        // "billing/check-balance-quota",
+        // "billing/increase-balance",
+        // "billing/increase-quota",
+        // "billing/upgrade-service-level",
+
+        // "security/security-overview",
+        // "security/privacy-statement",
+    // "security/data-security-in-transfer",
+    // "security/data-security-at-rest",
+    // "security/cli-users-permissions",
+    // "security/data-ownership-and-visibility",
+
+    // "other/registration",
+    // "other/roadmap",
+    // "other/support",
+    // "other/faq",
+
+        // "terminology/simulations"
+];
+
 (function () {
     var checkInterval = 60000; // check login state every min
     var mainAppLoginURL = "https://platform.exabyte.io/login"; // non-logged-in go here
@@ -46,13 +128,43 @@
         var loginState = _getLoginState("logged-in-to-exabyte.io");
         if (loginState) {
             // the user is logged in into the web app
-            // re-start the check again in 1 min
-            setTimeout(checkLoginState, checkInterval);
+            return true;
         } else {
-            // user is not loggedIn -> goto web app login
-            window.location = mainAppLoginURL;
+            // user is not loggedIn
+            return false;
         }
     };
-    // fire the check
-    checkLoginState();
+    /**
+     * @summary Redirect to a login page if the url is private
+     *          Parses url.
+     * @private
+     * @param {String} url
+     * @param {jQuery event} event - used to get click target
+     */
+    function _redirectIfPrivate(url, event) {
+        var _loggedIn = checkLoginState();
+        if (new RegExp(PRIVATE_URLS.join("|")).test(url)) {
+            if (!_loggedIn) {
+                event && event.preventDefault();
+                // Only redirect in production:
+                if (!window.location.hostname.includes("localhost") && !_loggedIn) {
+                    window.location.href = "/restricted";
+                } else {
+                    console.log("Redirect statement ignored on localhost. Login status: ");
+                }
+            }
+        }
+    }
+    // fire the check on document ready
+    $(document).ready(function() {
+        _redirectIfPrivate(window.location);
+        $('body').click(function (event) {
+            var target = $(event.target);
+            if ( target.is( "a" ) ) {
+                _redirectIfPrivate($(target).attr('href'), event);
+                console.log($(target).attr('href'));
+            }
+        });
+    });
 })();
+
