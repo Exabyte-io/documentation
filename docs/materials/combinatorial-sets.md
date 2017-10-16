@@ -5,7 +5,7 @@ Combinatorial sets are used to study a variety of modifications to a base struct
 This feature lets users create multiple materials at the same time using an extended syntax for crystal basis (compared with regular XYZ format): an input line that has element characters separated by slashes or commas.
 
 ```
-Si,P     0.0 0.0 0.0
+Si, P    0.0 0.0 0.0
 Si       0.5 0.5 0.0
 ```
 
