@@ -2,7 +2,7 @@
 
 This page explains how to run a simple density functional theory calculation to obtain an electronic bandstructure. We will study silicon in the standard face-centered cubic structure and use Quantum ESPRESSO as the simulation engine.
 
-## Open Job Designer
+# Open Job Designer
 
 Start by click "Create Job" link in the left-hand sidebar.
 
@@ -14,13 +14,13 @@ You will be taken to the "Job Desinger" page where you can:
 
 For the sake of this tutorial, we will keep the default parameters at each step.
 
-## Tab #1: Materials
+# Tab #1: Materials
 
 Materials viewer lets you choose one or more previsously imported materials for use during the calculation. We will proceed with the default structure of Silicon.
 
 <img src="/images/run-first-simulation-tab-1-materials.png"/>
 
-## Tab #2: Workflow
+# Tab #2: Workflow
 
 Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow".
 
@@ -32,7 +32,7 @@ One can further modify the input files for each individual part of the subworkfl
 
 <img data-gifffer="/images/run-first-simulation-tab-2-workflow.gif"/>
 
-## Tab #3: Compute parameters
+# Tab #3: Compute
 
 This tab lets you set up the number of processor cores and the maximum time limit for your calculation. We set the maximum time limit for the calculation to properly schedule the allocation of resources. The format is HH:MM:SS, so that `01:00:00` corresponds to up to 1 hour runtime.
 
@@ -45,11 +45,11 @@ For the moment, let's leave all parameters at their default values and click "Sa
 !!! Note "Summary"
     You have created and saved your first job to be run in the future. Now we can proceed to submit it.
 
-## Run calculation
+# Run calculation
 
 After saving the job, you are redirected back to the default "Project" page. Here you can submit the job and track its status.
 
-### Submit and track progress
+## Submit and track progress
 
 Run the job by clicking the three vertical dots to the right of its status label ("pre-submission") and choosing "Run".
 
@@ -59,7 +59,7 @@ You can click on the job name and monitor the progress of the job in real time.
 
 <img data-gifffer="/images/run-first-simulation-submit-view-output.gif" />
 
-### View results and access files
+## View results and access files
 
 Job view screen lets you track the input parameters, output text, convergence parameters (total energy in this tutorial), and view the results of the calculation and download output files when finished.
 
