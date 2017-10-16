@@ -13,7 +13,9 @@ Each user has a home directory on our filesystem: `/home/<username>/`. So user `
 We also have a role-based permission scheme for organizations and teams. Each organization has a directory shared between its members. Organization `exabyte` would have `/share/groups/exabyte/` as such.
 
 !!! note "Command line users"
-    The above information is relevant to users with access to command line and remote desktop, as they are able to navigate the `/home` and `/share` directories directly.
+    The above information is relevant to users with access to command line and remote desktop, as they are able to navigate the `/home` and `/share` directories directly. Readers may also find more information about our unified storage system and how it affects the content of home/share directories [here](/cli/storage-system/).
+
+
 
 ## Dropbox directory
 
