@@ -26,6 +26,7 @@ var PRIVATE_URLS = [
     // "compute/hpl-benchmark",
         // "compute/connection-options",
         // "compute/setting-parameters",
+    "compute/casimir",
 
     // "collaboration/organizations",
         // "collaboration/create-organization",

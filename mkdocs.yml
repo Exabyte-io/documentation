@@ -51,6 +51,7 @@ pages:
         - Connection:           compute/connection-options.md
         - Setting parameters:   compute/setting-parameters.md
         - HPL Benchmark:        compute/hpl-benchmark.md
+        - Casimir Cluster:      compute/casimir.md
 
     - Sharing & Collaboration:
         - Organizations:
