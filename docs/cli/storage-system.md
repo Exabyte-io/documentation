@@ -2,7 +2,7 @@
 
 ## Storage system
 
-Users have access to multiple clusters. Each cluster has its own storage systems mounted on `/home` and `/share` directories. In order to provide a unified file system so that you can manage all your data from a central place we created links inside each user's `home` directory. When you ssh to login node, your home directory should contain the following:
+Users have access to multiple clusters. Each cluster has its own storage systems mounted on `/home` and `/share` directories. In order to provide a unified file system so that you can manage all your data from a central place we created links inside each user's `home` directory. When you ssh to login node, your home directory contains the following:
 
 ```bash
 [demo@bohr.exabyte.io ~]$ ls -lhta
