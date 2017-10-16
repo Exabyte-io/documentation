@@ -365,6 +365,27 @@ ul.subnav li.toctree-l1 {
     display: none;
 }
 
+/* TODO: refactor; making current active link section to extend left to the end */
+.wy-menu-vertical li ul.subnav ul.subnav {
+    padding-left: 0;
+}
+.wy-menu-vertical li ul.subnav ul.subnav span {
+    padding: 0.4045em 2.618em;
+}
+.wy-menu-vertical .subnav a {
+    padding: 0.4045em 3.427em;
+}
+.wy-menu-vertical .subnav li.current {
+    margin-left: -1em;
+}
+.wy-menu-vertical .subnav li.current > a {
+    padding-left: 4.42em;
+}
+.wy-menu-vertical .subnav li.current > ul li a {
+    padding-left: 5.23em;
+}
+
+
 /* --------------------------------------------------------- *
  *                  GENERIC CLASSES
  * --------------------------------------------------------- */
