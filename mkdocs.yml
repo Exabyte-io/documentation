@@ -25,17 +25,23 @@ pages:
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
         - User interface overview:  getting-started/ui-overview.md
-        - Data conventions:         getting-started/data-conventions.md
         - Content highlights:       getting-started/content-highlights.md
 
-    - Materials:
-        - Creating structures:          materials/creating-structures.md
-        - Upload & Import:              materials/upload-and-import.md
-        - Characteristic properties:    materials/characteristic-properties.md
-        - Comparing materials:          materials/comparing-materials.md
-        - Combinatorial sets:           materials/combinatorial-sets.md
+    - Data Conventions:
+        - Overview:                 data/overview.md
+        - Storage:                  data/non-structured.md
 
-    - Models & Methods:
+    - Materials:
+        - Overview:                     materials/overview.md
+        - Data:                         materials/data.md
+        - Properties:                   materials/properties.md
+        - Actions:
+          - Creating structures:        materials/creating-structures.md
+          - Upload & Import:            materials/upload-and-import.md
+          - Comparing materials:        materials/comparing-materials.md
+          - Combinatorial sets:         materials/combinatorial-sets.md
+
+    - Workflows:
         - Overview:                     models/overview.md
         - Density Functional Theory:    models/density-functional-theory.md
         - Simulation workflows:         models/simulation-workflows.md
