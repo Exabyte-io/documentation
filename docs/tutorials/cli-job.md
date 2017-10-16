@@ -1,6 +1,4 @@
-<!-- TODO by MH -->
-
-You may want more control over the execution flow or run a type of calculation different from anything we have yet implemented. For that purpose we provide access through command-line terminal.
+You may want more control over the workflow execution or run a type of calculation we have yet to implement. For that purpose we provide access through command-line terminal.
 
 # Command-line terminal
 
@@ -8,39 +6,50 @@ We provide an interface to command line terminal directly through the web. You c
 
 To use the terminal interface, open right sidebar and click "Terminal":
 
-<img data-gifffer="/images/LoadTerminal.gif"/>
-
 The data directory where your simulations that have been submitted through the web are under the data/<your_username> sub-directory under your home directory.
 
 Our queuing system is built on top of PBS/Torque and is thus controlled through a batch script. You can find batch script templates under `~/job-script-templates/`.
 
 # Create job
 
-To create a job, we recommend working inside the same sub-directory where all your jobs are submitted from the website. Create a new directory under this sub-directory called `test_job`.
+## Prepare subdirectory
 
-Copy template file from within `~/job-script-templates` directory and rename it as `job.script`. Copy any necessary input files or executables into this directory as well.
+To create a job, we recommend working inside the same sub-directory where all your jobs are submitted from the website. Create a new directory under this sub-directory (called `test_job`, for example).
 
-To run you will need to edit at least the line within the file that starts with "mpirun" if you want to use a tool other than Quantum ESPRESSO. Directions on how to set the various resource manager variables can be found in [CLI job examples](/cli/jobs.md). The screen shot below shows how to add your username and adjust the number of cores per node to 4.
+Copy template file from within `~/job-script-templates` and rename it as `job.script`. Copy any necessary input files or executables into current directory as well.
 
-![Edit Job Script](/images/CreateJobScript.png "Edit Job Script")
+## Edit submission script
 
-![Final Job Script](/images/FinalJobScript.png "Final Job Script")
+You may need to edit the submission script if you want to use a tool other the default. Directions on how to set resource manager variables can be found in [CLI job examples](/cli/jobs.md). A comprehensive list of the resource manager options is available [here](/cli/extra.md).
 
-For a more detailed explaination of the features available using the job.script file, please check out the [jobs](/cli/jobs.md) page. A more complete list of the job.script and environment setting options is available [here](/cli/extra.md).
+In addition, if you would like to alter runtime environment for the calculation, can may consult [modules environment](/cli/modules-environment.md) section of our documentation.
 
-In addition if you would like to set up your environment in the terminal window to access some of our resources you can see detailed information [here](/cli/modules-environment.md)
+Lastly, you can see the options for choosing your queue to submit the job [here](/compute/queues.md).
 
-You can see the options for choosing your queue to submit the job [here](/compute/queues.md)
+In this tutorial we will proceed with the default submission script template without modification.
 
 # Submit job
 
-Once you have edited the job.script file that you copied in and set up all your simulation input files, then you can submit the command via the "qsub" script. To submit the job simply run the command "qsub job.script". The queueing system will give a message letting you know if the job was accepted.
+As a next step you can submit the scipt for execution using "qsub" resource manager directive: 
+ 
+```bash
+ qsub job.script
+```
+ 
+ Our resource management system will respond with a message letting you know that job was accepted.
 
 # Monitor job
 
-If you'd like to check on the status of the job, type "qstat" for a one-time view of the current status of your jobs, or type "watch qstat" for a continuously updated screen showing the status of your jobs. Once your job starts running all the output from the job will be placed in the directory where the qsub command was run from unless you changed the "directory" line within the job.script file.
+If you'd like to check on the status of the job, type "qstat" for a one-time view of the current status of your jobs. 
 
-![Submit Job Script](/images/SubmitJobScript.png "Submit Job Script")
+Once your job starts running all the output will be placed in the directory where the qsub command was run from (unless you changed the "directory" line within the job.script file).
+
+# Animation
+
+The animation below demonstrated the above steps in action:
+
+<!-- TODO: use local gif instead -->
+<img data-gifffer="https://exabyte.io/img/screencast-1.gif"/>
 
 # Links
 

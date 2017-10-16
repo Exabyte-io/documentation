@@ -24,8 +24,10 @@ pages:
 
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
+        - Upload/Import Materials:  materials/upload-and-import.md
         - User interface overview:  getting-started/ui-overview.md
         - Content highlights:       getting-started/content-highlights.md
+        - CLI job submission:       tutorials/cli-job.md
 
     - Data Conventions:
         - Overview:                 data/overview.md
