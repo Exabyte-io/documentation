@@ -20,7 +20,7 @@ Optimizes material's structure usually with respect to total energy (Example: [g
 
 ## Primary
 
-Used to calculate a specific characteristic property (Examples: [characteristic properties](../materials/characteristic-properties.md))
+Used to calculate a specific characteristic property (Examples: [characteristic properties](../materials/properties.md))
 
 # Typical workflow
 
