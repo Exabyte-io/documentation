@@ -1,11 +1,11 @@
-## Pseudos
+# Pseudos
 
 `pseudos` endpoint is accessible at [https://platform.exabyte.io/api/v1/pseudos](https://platform.exabyte.io/api/v1/pseudos). The following actions are supported on `pseudos` endpoint:
 
 !!! tip "REST API Test Framework"
     Please visit our [REST API Test Framework](https://docs.exabyte.io/api/#!/Pseudos/get_pseudos) to test the queries in this page and see the results. Resuls are not shwown here for simiplicity.
 
-### List
+## List
 `GET` HTTP method is used to retrieve a list of pseudos.
 
 * List all pseudos:
@@ -40,7 +40,7 @@ curl -X GET https://platform.exabyte.io/api/v1/pseudos?query%3D%7B%22type%22%3A+
 curl -X POST https://platform.exabyte.io/api/v1/pseudos?approximation=gga&functional=pbe&method=us&application=espresso -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ" -F "pseudoFile=@/path/to/your/upfFile.UPF"
 ```
 
-### Delete
+## Delete
 
 `DELETE` HTTP method is used to delete an existing pseudos with a given ID.
 
