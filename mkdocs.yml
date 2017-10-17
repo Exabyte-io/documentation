@@ -64,6 +64,7 @@ pages:
         - Overview:                 compute/overview.md
         - Connection Options:       compute/connection-options.md
         - Levels & Queues:          compute/levels-queues.md
+        - Hardware:                 compute/hardware.md
         - Actions:
             - Setting Parameters:   compute/setting-parameters.md
         - Command Line Interface:
@@ -125,7 +126,7 @@ pages:
         - Teams:            organizations/teams.md
 
     - Security:
-        #- Overview:                         security/security-overview.md
+        - Overview:                         security/overview.md
         - Privacy:                          security/privacy-statement.md
         - Data Security in transfer:        security/data-security-in-transfer.md
         - Data Security at rest:            security/data-security-at-rest.md
