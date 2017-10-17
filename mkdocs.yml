@@ -75,11 +75,6 @@ pages:
             - Storage System:       cli/storage-system.md
             - Extra:                cli/extra.md
 
-    - Organizations:
-        - Overview:         organizations/overview.md
-        - Projects:         organizations/projects.md
-        - Teams:            organizations/teams.md
-
     - Tutorials:
         # TODO: adjust with results closer to experiment and re-publish
         # - Semiconductors:
@@ -124,12 +119,17 @@ pages:
             - Increase quota:           billing/increase-quota.md
             - Upgrade Service Level:    billing/upgrade-service-level.md
 
+    - Organizations:
+        - Overview:         organizations/overview.md
+        - Projects:         organizations/projects.md
+        - Teams:            organizations/teams.md
+
     - Security:
         #- Overview:                         security/security-overview.md
         - Privacy:                          security/privacy-statement.md
         - Data Security in transfer:        security/data-security-in-transfer.md
         - Data Security at rest:            security/data-security-at-rest.md
-        - CLI users permissions:            security/cli-users-permissions.md
+        - Command-line Permissions:         security/cli-users-permissions.md
         #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
 
     - REST-API:
@@ -151,13 +151,13 @@ pages:
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
 
     - Other:
+        - FAQ:                  other/faq.md
         - Registration:         other/registration.md
+        - Help & Support:       other/support.md
+        - Community Programs:   other/community-programs.md
         # - Student Program:    other/student-program.md
-        - Community Programs:  other/community-programs.md
         # - Upcoming features:    other/upcoming-features.md
         # - Roadmap:              other/roadmap.md
-        - Help & Support:       other/support.md
-        - FAQ:                  other/faq.md
         # Restricted content login page
         - restricted.md
 
