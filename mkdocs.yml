@@ -45,14 +45,20 @@ pages:
           - Combinatorial sets:         materials/combinatorial-sets.md
 
     - Workflows:
-        - Overview:                     models/overview.md
-        - Density Functional Theory:    models/density-functional-theory.md
-        - Simulation workflows:         models/simulation-workflows.md
-        - Example simulations:          models/example-simulations.md
-        - Advanced Properties:          models/advanced-characteristics.md
-        - Convergence algorithms:       models/convergence-algorithms.md
-        - Structural relaxation:        models/structural-relaxation.md
-        - Combinatorial set input:      models/combinatorial-set-input.md
+        - Overview:                     workflows/overview.md
+        - Data:
+          - Workflows:                  workflows/data.md
+          - Subworkflows:               workflows/subworkflows.md
+          - Units:                      workflows/units.md
+        - Actions:
+          - Creating workflows:         workflows/creating-workflows.md
+          - Using workflows:            workflows/using-workflows.md
+          - Adding Convergence:         workflows/convergence-algorithms.md
+          - Adding Relaxation:          workflows/structural-relaxation.md
+        # TODO: revise or remove
+#        - Density Functional Theory:    workflows/density-functional-theory.md
+#        - Example simulations:          workflows/example-simulations.md
+#        - Advanced Properties:          workflows/advanced-characteristics.md
 
     - Compute:
         - Overview:             compute/overview.md
