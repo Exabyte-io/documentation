@@ -1,14 +1,12 @@
-<!-- by MM -->
-
-Teams let you create manage permissions for the members of an organization. You can use teams to give specific access (read or write) to selected projects.
+Teams are employed create and manage permissions for the members of an organization. You can use teams to give specific access / permissions to selected data items.
 
 # Creating a team
 
-The following animation shows how to crate a team. A team consists of a group of organization members that have read or write access to projects associated with the team. The access type (read or write) is set on team creation.
+The following animation shows how to create a team. A team consists of a group of organization members that have read or write access to projects associated with the team. The access type (read or write) is set on team creation.
 
 <img data-gifffer="/images/organization-create-team.gif">
 
-# Adding a project to a team
+# Adding project to a team
 
 Teams provide specific access (read or write) to projects associated with itself. At least one project should be added to a team. You can add a project to the team as follows:
 
@@ -17,7 +15,7 @@ Teams provide specific access (read or write) to projects associated with itself
 !!! note "Access Project"
     When a project is added to a team, all team members are granted read or write access to the given project. Team members will be able to see (or edit in case of write access) jobs inside the project.
 
-# Deleting a project from a team
+# Deleting project from a team
 
 A project can be removed from a team as follow:
 
