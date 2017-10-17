@@ -50,9 +50,6 @@ Within our product multiple entities related to model and method are used:
 - Workflow
 - Job
 
-These are explained below in more details. The diagram illustrates the relationships between the terms in a visual manner:
-
-<img src="../images/simulation-job-wokflow-unit-explained.png">
 
 ## Method, Workflow, Units
 
