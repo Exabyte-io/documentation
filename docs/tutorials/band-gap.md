@@ -5,6 +5,10 @@ This page explains how to calculate an electronic band gap [[1](#links)] based o
 !!! Note "Accuracy of the results"
     Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation [[3](#links)] and therefore a systematic under-estimate of the band gap is to be expected. Further modifications to the input files and settings to correctly predict the band gap are possible and explained elsewhere.
 
+# Introduction
+
+The electronic band gap defines the energy difference between the highest occupied electronic state and the lowest unoccupied state. When the gap is direct, the minimum change in energy between occupied and unoccupied states occurs at the same point in reciprocal space, and vice versa. The indirect band gap can be smaller than direct. We support the extraction of both.
+
 # Create job
 
 To create a new job, click on the "Create Job" link located in left-hand sidebar menu.
