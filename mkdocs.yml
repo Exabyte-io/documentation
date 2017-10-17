@@ -50,6 +50,7 @@ pages:
             - Workflows:                  workflows/data.md
             - Subworkflows:               workflows/subworkflows.md
             - Units:                      workflows/units.md
+            - Jobs:                       jobs.md
         - Actions:
             - Creating workflows:         workflows/creating-workflows.md
             - Using workflows:            workflows/using-workflows.md
@@ -131,19 +132,20 @@ pages:
         - Data Security in transfer:        security/data-security-in-transfer.md
         - Data Security at rest:            security/data-security-at-rest.md
         - Command-line Permissions:         security/cli-users-permissions.md
-        #- Data Ownership And Visibility:    security/data-ownership-and-visibility.md
 
     - REST-API:
-        - Query structure:                  rest-api/query-structure.md
+        - Overview:                         rest-api/overview.md
         - Authentication:                   rest-api/authentication.md
+        - Query structure:                  rest-api/query-structure.md
         - Endpoints:
             - Materials:                    rest-api/endpoints/materials.md
             - Materials-Bank:               rest-api/endpoints/materials-bank.md
             - Characteristics:              rest-api/endpoints/characteristics.md
             - Jobs:                         rest-api/endpoints/jobs.md
             - Workflows:                    rest-api/endpoints/workflows.md
-            - Pseudos:                      rest-api/endpoints/pseudos.md
-        - REST API Python Client:           rest-api/rest-api-python-client.md
+            # TODO: revise and re-enable after
+            # - Pseudos:                      rest-api/endpoints/pseudos.md
+        - Python Client:                    rest-api/rest-api-python-client.md
 
     - Benchmarks:
         - High Throughput Screening:     benchmarks/high-throughput-screening.md
