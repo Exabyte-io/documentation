@@ -1,11 +1,11 @@
-## Materials-bank
+# Materials-bank
 
-Materials-bank is central storage of the materials and their calculated characteristics. We keep bank items unique based on descriptive properties. `materials-bank` endpoint is accessible at [https://platform.exabyte.io/api/v1/materials-bank](https://platform.exabyte.io/api/v1/materials-bank). The following actions are supported on `materials-bank` endpoint:
+`materials-bank` endpoint is accessible at [https://platform.exabyte.io/api/v1/materials-bank](https://platform.exabyte.io/api/v1/materials-bank). The following actions are supported on `materials-bank` endpoint:
 
 !!! tip "REST API Test Framework"
     Please visit our [REST API Test Framework](https://docs.exabyte.io/api/#!/Materials_Bank/get_materials_bank) to test the queries in this page and see the results. Resuls are not shwown here for simiplicity.
 
-### List
+## List/Get
 
 `GET` HTTP method is used to retrieve a list of materials-bank items.
 
@@ -35,7 +35,7 @@ curl -X GET https://platform.exabyte.io/api/v1/materials-bank?query%3D%7B%27form
 
 The returned materials do not contain material's characteristics by default, as we store them inside a separate collection. Although characteristics can be queried separately via `characteristics` endpoint, you can use `includeCharacteristics` parameter to get material's characteristics with one call to the REST API.
 
-* Get material-bank item with characteristics:
+* Get material-bank item with characteristic properties:
 ```bash
 curl -X GET https://platform.exabyte.io/api/v1/materials-bank/KuAsBRwofzGfHPWiT?includeCharacteristics=true -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ"
 ```
