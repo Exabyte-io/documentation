@@ -8,7 +8,7 @@ For example, crystal structure data (eg. CIF/POSCAR files) uploaded into our pla
 
 # Definitions
 
-Structured data is stored according to the Exabyte Data Convention (internal-only at the moment, available to interested parties on a case-by-case basis). [Structured](structured.md) section contains the explanation of the basics of Exabyte Data Convention and the underlying classification.
+Structured data is stored according to the Exabyte Data Convention (internal-only at the moment, available to interested parties on a case-by-case basis). [Structured](structured.md) section contains the explanation of the basics of the convention employed and the underlying classification.
 
 # Storage
 

@@ -4,6 +4,12 @@ We employ Exabyte Data Convention (EDC) in order to organize and process data. A
 
 In a broad sense we consider **Material** to be the physical (chemical, biological) system(s) under investigation, and **Workflow** to be the process of probing (measuring, modeling/simulating) such system.
 
+The diagram illustrates the general relationship between the terms in a visual manner:
+
+![Simulation Diagram](/images/simulation-job-wokflow-unit-explained.png "Simulation Diagram")
+
+> Other terms shown above (eg. "Job", "Unit") are explained elsewhere in this documentation. 
+
 # Classification
 
 We consider the general practices for managing data related to materials RnD and identify the categories and relationships between them. 
@@ -45,7 +51,7 @@ We initially subdivide properties by its relation to the application / execution
 - **scalar**: can be expressed as a single value with an associated measurement units
 - **non-scalar**: can not be expressed as above
 
-    > NOTE: non-scalar properties may be further subdivided into 1-dimensional arrays, matrices and tensors, for example 
+> NOTE: non-scalar properties may be further subdivided into 1-dimensional arrays, matrices and tensors, for example 
  
 ## By relation to workflow
 
