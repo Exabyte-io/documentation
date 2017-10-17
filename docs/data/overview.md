@@ -1,4 +1,4 @@
-This section contains information about how the general policies we use for data handling.
+This section contains information about the general policies we use for data handling.
 
 # Introduction
 
