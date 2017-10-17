@@ -1,30 +1,31 @@
-<!-- DB -->
-This page explains how to increase your storage quota. If you need more storage for your simulations beyond that provided by your service level you can add extra storage quota from your account page. The short movie below illustrates the process, and below there is a step-by-step guide. 
+This page explains how to request an increase to your storage quota. 
 
 <img data-gifffer="/images/AddStorage.gif" />
 
-## Open your account page 
+# Open Account Page 
 
 Click on your user account card in the header to open the right hand navigation, then select **Account** from the menu.
 
-## Open the Service Level tab 
+# Open Service Level 
 
 1. Click on <i class="zmdi zmdi-layers zmdi-hc-border"></i> **Service Level** tab to view your account details
 2. Click on **Add Storage** in the storage quota widget to open the dialog.
 
 ![Service Levels](/images/UserServiceLevel.png "Service Levels")
 
-## Choose the amount of extra storage you want
+# Choose Amount
 
 Click on a preset storage amount, or choose other and enter the amount of storage you need. Click on Request Storage to make the request.
 
 ![Add Storage](/images/AddStorage.png "Add Storage")
 
-## Click Request Storage button and Check your email
+# Submit
 
-We will send you an email within 24 hours confirmaing the storage quota upgrade. Login again to Exabyte.io to check your new quota online.
+Click "Request Storage". 
 
-## Shortcut
+We will send you an email within 24 hours confirming the storage quota upgrade. Login again to Exabyte.io to check your new quota online.
+
+# Shortcut
 
 You can also use the shortcut link to upgrade your storage quota by opening the Account navigation right hand menu and clicking the Add Storage button which is shown next to the Service Level information.
 
