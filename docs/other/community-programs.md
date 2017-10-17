@@ -1,12 +1,8 @@
-We encourage co-creation and sharing of data and work towards building an vibrant community. Below are some of the areas we are currently examining, please feel free to write to us directly at `info@exabyte.io` or contribute by joining our [Trello board](https://trello.com/b/89eLrRW0/future-feature-bucket-list).
+# VASP On-demand
 
-## Community
+From 0ct 2017 until Apr 2018 we are conducting an experimental program for academic users of VASP. Our current agreements allow Exabyte.io users that hold up-to-date license for VASP to access the software. 
 
-We want materials scientists, chemists, physicists, computer scientists and others worldwide to join our mission of building a universal platform for software-driven materials design and discovery. Here is how you can participate:
-
-### Case studies
-
-For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](/getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide up to **100,000 CPU-hours** of computing free of charge.
+> Without any promise, we may consider advocating for the non-licensees with a well formulated intent for accessing VASP in front of the original developers.
 
 **In order to apply**:
 
@@ -14,26 +10,44 @@ For a limited time we are open to support users who are willing to use exabyte.i
 - include the following information about yourself:
     - Full name
     - Affiliation
-    - Title of the proposed project for case study
-    - Importance of the proposed project
-    - Detailed explanation of the type of simulation techniques required and expected results
+    - Contact information of the VASP license holder: email, license number (if answered yes)
+    - Would you be interested in purchasing on-demand per core-hour access to VASP?
+    - Title of the proposed project for case study (200 characters max)
+    - Importance of the proposed project (3000 characters max)
 
-### Student program
+# Community
 
-For currently enrolled students that require access to our platform for educational purposes we are willing to provide up to **1000 CPU-hours** per month free of charge on a case-by-case basis.
+We want materials scientists, chemists, physicists, computer scientists and others worldwide to join our mission of building a universal platform for software-driven materials design and discovery. Here is how you can participate:
+
+# Case studies
+
+For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](/getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide computing free of charge.
+
+**In order to apply**:
+
+- send an email to support@exabyte.io with a subject containing "Case study"
+- include the following information about yourself:
+    - Full name
+    - Affiliation
+    - Title of the proposed project for case study (200 characters max)
+    - Importance of the proposed project (3000 characters max)
+    - Detailed explanation of the type of simulation techniques required and expected results, including
+        - simulation engines used
+        - properties of interest
+        - execution plan with (3-6 months with weekly deliverables)
+
+# Student program
+
+For currently enrolled students that require access to our platform for educational purposes we can supply up to **1000 CPU-hours** per month free of charge on a case-by-case basis.
 
 **In order to apply**:
 
 - send an email to support@exabyte.io with a subject containing "Student program"
 - include the following information about yourself:
     - Full name
-    - Name of educational instituion
+    - Name of educational institution
     - Instructor and class identifier (eg. "UC Berkeley, Physics 290A")
     - Detailed explanation of the type of simulation techniques required and expected results
-
-### Trello board
-
-We set up an interactive board where you can vote of suggest upcoming features [here](https://trello.com/b/89eLrRW0/exabyte-io-feature-roadmap)). Your feedback is much appreciated and will be taken into account when deciding on what to implement next.
 
 # Reach out to us
 

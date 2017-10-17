@@ -1,4 +1,4 @@
-<!-- by MH -->
+<!-- by MH, DEPRECATED -->
 
 We are focused on quickly expanding the number and range of properties we can predict.  We encourage your feedback on potential development efforts, if you don't see something on your wish list, feel free to email info@exabyte.io to request it, or comment on our [trello board](https://trello.com/b/89eLrRW0/exabyte-io-feature-roadmap).
 
