@@ -1,0 +1,32 @@
+# Hardware Specifications
+
+Our computing resources are currently hosted by trusted vendors: [Amazon Web Services](http://www.aws.amazon.com) and [Microsoft Azure](http://www.azure.microsoft.com). We support [IBM SoftLayer](http://www.softlayer.com) and [Rackspace](http://www.rackspace.com) and can deploy capacity there upon a short notice. 
+
+The following shows the hardware specification for each vendor.
+
+|Provider  |CPU Count |CPU Type                       |Memory (GB)|Disk (GB)|Bandwidth (Gbps)|
+|:---------|:--------:|:-----------------------------:|:---------:|:-------:|:--------------:|
+|AWS       |36        |Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |
+|Rackspace |32        |Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |
+|Azure     |16        |Intel Xeon E5-2673-v3, 2.40GHz |32         |256      |10              |
+|Azure IB  |16        |Intel Xeon E5-2667-v3, 3.20GHz |112         |1,000      |40*              |
+|Softlayer |16        |Intel Xeon E5-2650-v0, 2.00GHz |32         |25       |1               |
+
+* Infiniband-enabled networking hardware.
+
+
+# Available Resources
+
+As of Sep, 2016 our major compute and storage systems have:
+
+|Provider  |Total CPU |Total Memory (GB)|Total Disk (GB)|
+|:---------|:--------:|:---------------:|:-------------:|
+|AWS       |36,000     |60,000            |Unlimited**      |
+|Azure     |10,000     |20,000            |Unlimited**      |
+|Rackspace |6,400      |12,000            |Unlimited**      |
+|Softlayer |3,200      |6,400             |Unlimited**      |
+
+
+** We provide virtually unlimited disk storage space. Elastically grown file system lets us reach to 8EB (exabytes) of disk storage per single compute cluster.
+
+*** All nodes are connected together via fast low latency interconnection networks with bandwidth ranging from 1-10 Gbps.
