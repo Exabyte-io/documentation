@@ -1,6 +1,4 @@
-<!-- by MM -->
-
-Organizations are abstractions through which multiple users can collaborate. Owners and administrators can manage access for the members of organization to data and projects with comprehensive security and administrative features.
+Organizations provie a way for multiple users to collaborate. "Owners" and "Administrators" or an Organization can manage access for the "Members" of an organization to its data with a comprehensive set of security features.
 
 # Creating an organization
 
@@ -22,30 +20,30 @@ If you want to delete an organization, navigate to the "EDIT BIO" tab and delete
 !!! warning "Deleting Organization"
     All data associated with your organization will be discarded when organization is deleted.
 
-# Adjusting organization bio
+# Adjusting bio
 
 You can adjust your organization's bio including description, email address, URL, location and avatar in "EDIT BIO" tab:
 
 <img data-gifffer="/images/organization-edit-bio.gif">
 
-# Adding a member to organization
+# Adding members
 
 In order to start sharing data and collaborating with colleagues, you should add users to your organization. When a user is added to the organization, he/she will by default be a read-only user which is only able to see the list of projects, people and teams.
 
 <img data-gifffer="/images/organization-add-user.gif">
 
-# Removing a member from organization
+# Removing members
 
 A user can be removed from organization using "PEOPLE" tab. When user is removed he/she will not be able to access any data associated with the organization.
 
 <img data-gifffer="/images/organization-remove-user.gif">
 
-# Organization admins
+# Administrators
 
-Each organization have the owner and one or multiple admins. Admins have full control over an organization. They can manage users, projects, teams and jobs. The only difference between admin and owner is that an admin can not delete the organization. The following shows how to give user admin permissions.
+Each organization have the owner and one or multiple Administrators. Administrators have full control over an organization. They can manage users, projects, teams and jobs. The only difference between them and owners is about their inability to delete the organization. The following shows how to give user administrative permissions.
 
 <img data-gifffer="/images/organization-admin-user.gif">
 
 # Billing and payments
 
-Billing is very similar for organization and personal accounts. To access your organization's billing and payments, switch to your organization account and select "Billing & Payments" on the left sidebar. For more information please visit [Billing and Payments](/billing/billing-and-payments).
+Billing is very similar for organization and personal accounts. To access your organization's billing and payments, switch to your organization account and select "Billing & Payments" on the left sidebar. For more information visit [Billing and Payments](/billing/billing-and-payments).

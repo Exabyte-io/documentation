@@ -1,5 +1,3 @@
-<!-- by MM -->
-
 # Creating a project
 
 The following demonstrates how to create a new project inside an organization. Only organization owner has access to new projects. If you want to give other organization members access to the project, please visit [adding a project to a team](teams#adding-a-project-to-a-team) page.
@@ -11,15 +9,15 @@ The following demonstrates how to create a new project inside an organization. O
 
 # Deleting a project
 
-You can delete a project as follow:
+You can delete a project as follows:
 
 <img data-gifffer="/images/organization-remove-project.gif">
 
-# Creating a job inside a project
+# Creating jobs
 
 Managing jobs inside organization projects is exactly the same as managing jobs in your personal projects. The following shows how to create and submit a job inside an organization project:
 
 <img data-gifffer="/images/organization-project-create-job.gif">
 
 !!! note "CLI Jobs"
-    If you decide to create and submit a job from [CLI](/cli/overview) inside an organization project, you should set `#PBS -A ACCOUNTING_NAME` directive inside your job script file. `ACCOUNTING_NAME` can be obtained from "OVERVIEW" tab of the project. 
+    If you decide to create and submit a job from command-line terminal inside an organization project, you should set `#PBS -A ACCOUNTING_NAME` directive inside your job script file. `ACCOUNTING_NAME` can be obtained in the "OVERVIEW" tab of the project. 
