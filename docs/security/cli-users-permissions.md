@@ -1,10 +1,17 @@
+# Introduction
+
+We allow command-line access for the limited set of expert users whom we have established lasting relationships with. Below is a brief explanation of how their data is secured. 
+
 # File system permissions
 
 Command-line users have access to two main directories, `/home` and `/share`. 
 
 ## Home directory
 
-You have read and write permissions on your home directory. No one else is able to access the content of it.
+Each user has read and write permissions on their home directory. **No one else** is able to access the content of it.
+
+!!! warning "Modifying permissions within /home"
+    We strongly advise agains modifying permissions for your home directory or any top-level system directories included within (eg. `~/.ssh/`). If you feel that you *must* do that please coordinate the actions with us first. For the purpose of setting up shared data access `share` directory should be used instead.
 
 ## Share directory
 
