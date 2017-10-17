@@ -35,55 +35,50 @@ pages:
         - Non-structured data:      data/non-structured.md
 
     - Materials:
-        - Overview:                     materials/overview.md
-        - Data:                         materials/data.md
-        - Properties:                   materials/properties.md
+        - Overview:                       materials/overview.md
+        - Data:                           materials/data.md
+        - Properties:                     materials/properties.md
         - Actions:
-          - Creating structures:        materials/creating-structures.md
-          - Upload & Import:            materials/upload-and-import.md
-          - Search & Compare:           materials/search-compare.md
-          - Combinatorial sets:         materials/combinatorial-sets.md
+            - Creating structures:        materials/creating-structures.md
+            - Upload & Import:            materials/upload-and-import.md
+            - Search & Compare:           materials/search-compare.md
+            - Combinatorial sets:         materials/combinatorial-sets.md
 
     - Workflows:
-        - Overview:                     workflows/overview.md
+        - Overview:                       workflows/overview.md
         - Data:
-          - Workflows:                  workflows/data.md
-          - Subworkflows:               workflows/subworkflows.md
-          - Units:                      workflows/units.md
+            - Workflows:                  workflows/data.md
+            - Subworkflows:               workflows/subworkflows.md
+            - Units:                      workflows/units.md
         - Actions:
-          - Creating workflows:         workflows/creating-workflows.md
-          - Using workflows:            workflows/using-workflows.md
-          - Adding Convergence:         workflows/convergence-algorithms.md
-          - Adding Relaxation:          workflows/structural-relaxation.md
+            - Creating workflows:         workflows/creating-workflows.md
+            - Using workflows:            workflows/using-workflows.md
+            - Adding Convergence:         workflows/convergence-algorithms.md
+            - Adding Relaxation:          workflows/structural-relaxation.md
         # TODO: revise or remove
 #        - Density Functional Theory:    workflows/density-functional-theory.md
 #        - Example simulations:          workflows/example-simulations.md
 #        - Advanced Properties:          workflows/advanced-characteristics.md
 
     - Compute:
-        - Overview:             compute/overview.md
-        - Queues:               compute/queues.md
-        - Benchmarks:           compute/benchmarks-and-scalability.md
-        - Connection:           compute/connection-options.md
-        - Setting parameters:   compute/setting-parameters.md
-        - HPL Benchmark:        compute/hpl-benchmark.md
+        - Overview:                 compute/overview.md
+        - Connection Options:       compute/connection-options.md
+        - Levels & Queues:          compute/levels-queues.md
+        - Actions:
+            - Setting Parameters:   compute/setting-parameters.md
+        - Command Line Interface:
+            - Login:                cli/login.md
+            - Accounting:           cli/accounting.md
+            - Environment:          cli/modules-environment.md
+            - Jobs:                 cli/jobs.md
+            - "Jobs: example":      cli/jobs-example.md
+            - Storage System:       cli/storage-system.md
+            - Extra:                cli/extra.md
 
-    - Sharing & Collaboration:
-        - Organizations:
-            - Overview:         collaboration/organizations/overview.md
-            - Projects:         collaboration/organizations/projects.md
-            - Teams:            collaboration/organizations/teams.md
-        - Invite Friends:       collaboration/invite-friends.md
-
-    - Command Line Interface:
-        - Overview:             cli/overview.md
-        - Login:                cli/login.md
-        - Accounting:           cli/accounting.md
-        - Environment:          cli/modules-environment.md
-        - Jobs:                 cli/jobs.md
-        - Jobs example:         cli/jobs-example.md
-        - Storage System:       cli/storage-system.md
-        - Extra:                cli/extra.md
+    - Organizations:
+        - Overview:         organizations/overview.md
+        - Projects:         organizations/projects.md
+        - Teams:            organizations/teams.md
 
     - Tutorials:
         # TODO: adjust with results closer to experiment and re-publish
@@ -100,6 +95,8 @@ pages:
             - Structural relaxation:            tutorials/relaxation.md
             - K-point convergence:              tutorials/kpt-convergence.md
             - Fermi surface:                    tutorials/fermi-surface.md
+        - Machine Learning:
+            - Train ML Model:                   tutorials/train-ml-model.md
         - Other:
             - Custom-input workflow:            tutorials/custom-input-workflow.md
             - Restart from previous run:        tutorials/restart-job.md
@@ -115,16 +112,17 @@ pages:
     # separating to top-level b/c of the importance
     - Pricing:
         - Service Levels:               billing/pricing-and-service-levels.md
-        - Upgrade Service Level:        billing/upgrade-service-level.md
         - Storage Pricing:              billing/storage-quota.md
 
     - Accounts & Billing:
         - Settings and Profile:         billing/settings-and-profile.md
         - Billing and Payments:         billing/billing-and-payments.md
-        - Add payment method:           billing/add-credit-card.md
-        - Check balance & quota:        billing/check-balance-quota.md
-        - Increase account balance:     billing/increase-balance.md
-        - Increase quota:               billing/increase-quota.md
+        - Actions:
+            - Add payment method:       billing/add-credit-card.md
+            - Check balance & quota:    billing/check-balance-quota.md
+            - Increase account balance: billing/increase-balance.md
+            - Increase quota:           billing/increase-quota.md
+            - Upgrade Service Level:    billing/upgrade-service-level.md
 
     - Security:
         #- Overview:                         security/security-overview.md
@@ -145,6 +143,12 @@ pages:
             - Workflows:                    rest-api/endpoints/workflows.md
             - Pseudos:                      rest-api/endpoints/pseudos.md
         - REST API Python Client:           rest-api/rest-api-python-client.md
+
+    - Benchmarks:
+        - High Throughput Screening:     benchmarks/high-throughput-screening.md
+        - Distributed Memory Runs:       benchmarks/distributed-memory.md
+        - Vendor Comparison:             benchmarks/vendor-comparison.md
+        - High-Performance Linpack:      benchmarks/hpl-benchmark.md
 
     - Other:
         - Registration:         other/registration.md
