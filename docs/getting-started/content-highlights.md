@@ -78,8 +78,8 @@ We employ a proprietary JSON-based data convention that supports storing materia
 
 We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page (see below). Data originated on command line is accessible from within the web application and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning.
 
-- [data conventions](/getting-started/data-conventions/)
-- [analytics (comparing materials)](/materials/comparing-materials/)
+- [data convention](/getting-started/data-convention/)
+- [analytics (comparing materials)](/materials/search-compare/)
 
 
 # Other
