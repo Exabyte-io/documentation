@@ -109,7 +109,7 @@ curl -X PATCH https://platform.exabyte.io/api/v1/jobs/RhCFP2WuehvG4hCLp -H "X-Au
 
 ### Job Submission
 
-`POST` HTTP method with `submit` URL paramater are used to submit a job with a given.
+`POST` HTTP method with `submit` URL paramater are used to submit a job with a given ID.
 
 ```bash
 curl -X POST https://platform.exabyte.io/api/v1/jobs/RhCFP2WuehvG4hCLp?submit=true -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ"

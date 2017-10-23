@@ -70,7 +70,7 @@ Jobs summary widget summarizes the total number of jobs run during this same per
 
 ## Create Job
 
-"Create Job" link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the job designer page where you can create simulations. By default new jobs is saved in your [default project](/getting-started/data-convention.md).
+"Create Job" link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the job designer page where you can create simulations. By default new jobs is saved in your [default project](/data/non-structured.md).
 
 ## Projects
 
@@ -108,7 +108,7 @@ A list of all the materials you have imported, created or uploaded into your acc
 
 ## Dropbox
 
-Dropbox is a limited-capacity cloud-based data storage (see [data conventions](/getting-started/data-conventions/#dropbox-directory)) accessible under the same filesystem path everywhere within our application. This menu item opens a file browser where one can navigate and edit (upload, download, delete) files and directories. Convenient for auxiliary simulations data (eg. pseudopotentials).
+Dropbox is a limited-capacity cloud-based data storage (see [data conventions](/data/non-structured.md/#dropbox-directory)) accessible under the same filesystem path everywhere within our application. This menu item opens a file browser where one can navigate and edit (upload, download, delete) files and directories. Convenient for auxiliary simulations data (eg. pseudopotentials).
 
 ![Dropbox](../images/Dropbox.png "Dropbox")
 
