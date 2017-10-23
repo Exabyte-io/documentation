@@ -4,7 +4,7 @@
 
 From 0ct 2017 until Apr 2018 we are conducting an experimental program for academic users of VASP. Exabyte.io users that hold up-to-date license for VASP can access the software free of charge. In return, we would like to make results available in a form of a case study after the program ends.
 
-> Without any promise, we may consider advocating for the non-licensees with a well formulated intent for accessing VASP in front of the original developers.
+> Without any promise, we may consider advocating for the interested people with a well formulated intent for accessing VASP who do not fit the current eligibility criteria in front of the original developers.
 
 **In order to apply**:
 
