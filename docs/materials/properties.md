@@ -1,13 +1,13 @@
 # Structure-based approach
 
-Our current work is focused on **structure-based** atomistic approach, where the information about the atomistic arrangement is known *a priori* (see [data conventions](data/overview.md)).
+Our current work is focused on **structure-based** atomistic approach, where the information about the atomistic arrangement is known *a priori* (see [data conventions](/data/overview.md)).
 
 !!! note "Non-structure-based scenario"
     Our data convention has support for materials data where no structural information is available, however this topic is beyond the content of the current documentation.
 
 ## Example Representation
 
-For examples of JSON representation of materials and structure-based descriptors see [materials data](materials/data.md) section.
+For examples of JSON representation of materials and structure-based descriptors see [materials data](data.md) section.
 
 ## Features, Fingerprints, Targets
 
@@ -47,7 +47,3 @@ Below we provide example (characteristic) properties extracted by the default wo
 | Zero Point Energy | Energy of the lowest vibrational level wrt to vacuum |
 
 > NOTE: At the moment we enable data analytics and comparison for "Band Gap" and "Pressure" only.
-
-# Links
-
-1. [Density Functional Theory energy contributions overview, PDF](http://elk.sourceforge.net/CECAM/Burke-DFT.pdf)
