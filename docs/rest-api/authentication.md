@@ -1,4 +1,4 @@
-# Loging
+# Login
 
 Login endpoint is used to authenticate against REST API. It returns `userId` and `authToken` which should be included in subsequent requests. There are 2 ways to get authentication parameters, via the `login` endpoint and from web application:
 
@@ -26,7 +26,7 @@ And the response will look like:
 
 ![Authentication parameters](/images/auth-params.gif "Authentication parameters")
 
-# Authenticated Calls
+# Authentication
 
 For any endpoints that require authentication, you must include the `userId` and `authToken` with each request,
 

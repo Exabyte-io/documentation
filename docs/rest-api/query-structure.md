@@ -28,7 +28,7 @@ In response to the request, the service returns a JSON data structure. All respo
 }
 ```
 
-# Filter the results
+# Filter Results
 
 Some of the endpoints support list action which uses `GET` HTTP method to return a list of items accessible under a given endpoint. The list action either returns a list of all items or the item for which the ID is passed. If you want list action to return a specific subset of items, you can use `query` parameter to filter the results. `query` is a dictionary following [Mongo Query](https://docs.mongodb.com/manual/tutorial/query-documents/) format. 
 
@@ -39,7 +39,7 @@ An example way of listing materials with "SiGe" chemical formula is given below:
 curl -X GET https://platform.exabyte.io/api/v1/materials?query=%7B%22formula%22%3A+%22SiGe%22%7D -H "X-Auth-Token: f2KpRW7KeN9aPmjSZ" -H "X-User-Id: fbdpsNf4oHiX79vMJ"
 ```
 
-# Results Pagination
+# Pagination
 
 The number of returned results for list action is set to 20 by default. If you want to get more results you should use `pageIndex` and `pageSize` parameters to paginate the results. `pageIndex` parameter specifies the index of the page to return while `pageSize` specifies the size of each page. `pageIndex` is an integer and `pageSize` is an integer between 5 and 100. 
 
