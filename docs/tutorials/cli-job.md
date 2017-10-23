@@ -24,7 +24,7 @@ You may need to edit the submission script if you want to use a tool other the d
 
 In addition, if you would like to alter runtime environment for the calculation, can may consult [modules environment](/cli/modules-environment.md) section of our documentation.
 
-Lastly, you can see the options for choosing your queue to submit the job [here](/compute/queues.md).
+Lastly, you can see the options for choosing your queue to submit the job [here](/compute/levels-queues.md).
 
 In this tutorial we will proceed with the default submission script template without modification.
 
@@ -53,7 +53,7 @@ The animation below demonstrated the above steps in action:
 
 # Links
 
-1. [Command Line Usage Documentation](/cli/overview.md)
+1. [Command Line Usage Documentation](/cli/login.md)
 
 
 

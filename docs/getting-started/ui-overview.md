@@ -70,7 +70,7 @@ Jobs summary widget summarizes the total number of jobs run during this same per
 
 ## Create Job
 
-"Create Job" link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the job designer page where you can create simulations. By default new jobs is saved in your [default project](/getting-started/data-conventions.md).
+"Create Job" link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes you to the job designer page where you can create simulations. By default new jobs is saved in your [default project](/getting-started/data-convention.md).
 
 ## Projects
 
@@ -147,7 +147,3 @@ Billings link takes you to the Billing page which shows your account Charges <i 
 ## Terminal and Remote Desktop
 
 Alternative ways to access your account. More information [here](../cli/login.md).
-
-## Invite a friend
-
-You both will get $10 credit when registration request is approved. Find out how in the [Refer a friend page](/collaboration/invite-friends.md)
