@@ -1,4 +1,4 @@
-Organizations provie a way for multiple users to collaborate. "Owners" and "Administrators" or an Organization can manage access for the "Members" of an organization to its data with a comprehensive set of security features.
+Organizations provie a way for multiple users to collaborate. Organization "Owners" and "Administrators" can manage "Members" access to data with a comprehensive set of security features.
 
 # Creating an organization
 

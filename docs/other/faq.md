@@ -11,9 +11,15 @@ other questions to add:
 
 ## What is exabyte.io?
 
-Exabyte.io is the fastest way to design and discover new materials.
+Exabyte.io is a comprehensive platform for materials design and discovery through modeling and simulations.
 
-We believe that focusing on core materials science is the most effective way to speed things up. We merge together in a single environment: rigorous models, vast compute power, intuitive user interface and data management tools, in order to make your work on materials design highly efficient.
+We believe that focusing on core science is the most effective way to speed things up. We merge together in a single environment: rigorous models, vast compute power, intuitive user interface and data management tools, in order to make your work on materials design highly efficient.
+
+## I don't get it - what is it really?
+
+OK, the animation below might help demonstrate our vision:
+
+<img data-gifffer="https://exabyte.io/img/iron-man-creates-material.gif">
 
 ## Where does your name come from?
 
@@ -21,11 +27,11 @@ Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drive
 
 ## Why are you doing this?
 
-The world of today is broken. Humans now face global challenges too many to count. We exist to solve the most fundamental and most important of these challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models. Read more at [blog.exabyte.io](blog.exabyte.io).
+The world of today is broken. Humans now face important global challenges. We exist to solve the most fundamental and most important of these challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models. Read more at [blog.exabyte.io](blog.exabyte.io).
 
 ## Why should I care?
 
-Because you know that the way materials design and discovery is done now is being rapidly transformed. There are multiple new initiatives started, you can feel that radical changes are soon to come, and you want to be among the first to know about them and extract benefits.
+Because you know that materials design and discovery is being rapidly transformed now. There are multiple new initiatives started, you can feel that radical changes are soon to come, and you want to be among the first to know and benefit from them.
 
 ---
 
@@ -33,7 +39,7 @@ Because you know that the way materials design and discovery is done now is bein
 
 ## Do you store my materials data?
 
-We store the data about materials in a central database and every user has a copy that he/she can contribute to and modify at will. We support both private and public scenarios. By default all data you create is public and accessible to other users. You can choose to opt out and have your data in the private domain.
+We store the data about materials in a central database and every user has a copy that he/she can contribute to and modify at will. We support both private and public scenarios. By default all data you create under personal account is public and accessible to other users. You can choose to opt out and have your data in the private domain.
 
 ## Is my materials data viewable to the whole world?
 
