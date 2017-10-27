@@ -93,3 +93,7 @@ Generally, properties for both Materials and Workflows can be assigned the follo
 |:-------------:|:------------------------:|:---------------:|:------------------------:|
 | Scalar        | Descriptive              | Identifier      | (default, non-auxiliary) |
 | Non-scalar    | Characteristic           | Non-identifier  | Auxiliary                |
+
+# Jobs
+
+We use "Job" as a "container" entity to organize the data and track resource allocation. The terminology and naming is common for distributed resource allocation management. A job in the computational sense represents the simplest entity that has accounting set up for. More information about Jobs is [here](/jobs.md). 
