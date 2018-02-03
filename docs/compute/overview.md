@@ -16,7 +16,7 @@ The diagram below demonstrates an example hybrid cloud deployment:
 
 Our policies regarding compute levels and submission queues are explained [here](levels-queues.md).
 
-# Commane Line
+# Command Line
 
 Information about [command-line](/cli/login.md) type usage is available under this section as well. There users can also find explanation about submitting batch jobs and setting up runtime environment.
 
