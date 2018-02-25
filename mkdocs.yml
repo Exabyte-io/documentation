@@ -156,6 +156,7 @@ pages:
     - Other:
         - FAQ:                  other/faq.md
         - Registration:         other/registration.md
+        - Terms of Service:     other/terms-of-service.md
         - Help & Support:       other/support.md
         - Community Programs:   other/community-programs.md
         # - Student Program:    other/student-program.md
