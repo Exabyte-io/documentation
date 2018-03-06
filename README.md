@@ -6,6 +6,8 @@ Uses [MkDocs](http://www.mkdocs.org/#getting-started) to convert Markdown files 
 
 `exabyte_theme` holds a custom styled theme - a derived theme from the default mkdocs one.
 
+> NOTE: tested and developed with mkdocs version 0.16.2.
+
 # Setup
 
 For quick installation run:
