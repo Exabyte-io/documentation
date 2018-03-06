@@ -8,7 +8,7 @@ extra_javascript:
     # - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
 site_favicon: /img/favicon.ico
-copyright: © 2017 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
     version: "0.9.2"
     preload_javascript:
@@ -63,6 +63,7 @@ pages:
 
     - Compute:
         - Overview:                 compute/overview.md
+        - Policies:                 compute/policies.md
         - Connection Options:       compute/connection-options.md
         - Levels & Queues:          compute/levels-queues.md
         - Hardware:                 compute/hardware.md
@@ -101,7 +102,7 @@ pages:
             - Job submission via terminal:      tutorials/cli-job.md
         # TODO: adjust combinatorial screening explanation according to latest UX
         # - Combinatorial-screening:          tutorials/combinatorial-screening.md
-        # TODO: re-implemente and re-enable Formation Energy
+        # TODO: re-implement and re-enable Formation Energy
         # - Formation energy:                 tutorials/formation-energy.md
         # TODO: check relevance and update/delete
         # - CLI data import:                  tutorials/cli-job-import.md

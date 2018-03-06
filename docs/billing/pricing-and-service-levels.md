@@ -8,8 +8,8 @@ Below is a quick comparison of our service levels:
 
 | Feature per Plan         |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-Extra         |
 | :-------------           |:----------- |:-------------      |:-------------      |:-------------      |:-------------             |
-| minimum payment          |  -          | $50                | $500               | $5,000             | $50,000                   |
-| price per CPU-hour       |  $0.20      | $0.20              | $0.18              | $0.17              | $0.10                     |
+| pre-payment               |  -          | $50                | $500               | $5,000             | $50,000                   |
+| price per core-hour       |  $0.20      | $0.20              | $0.18              | $0.17              | $0.10                     |
 | validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months                 |
 | reserved compute nodes   |  -          | -                  | -                  | +                  | +                         |
 | monthly data usage       |  10Gb       | 50Gb               | 100Gb              | 500Gb              | 5Tb                       |
@@ -29,7 +29,7 @@ Your service level is defined by the payment that you make.
 
 Here's how it works:
 
-1. Upon signup service level is set to `Promo`.
+1. Upon signing up the service level is initially set to `Promo`.
 2. When user provides a payment method, purchases allocation and pays the minimum amount ($50) the service level is set to `Advanced`
 3. When/if user pays in excess of $500 instead, service level is set to `Pro`
 4. Users with a valid payment method can create [**organizations**](/organizations/overview.md):
