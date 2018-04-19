@@ -1,10 +1,10 @@
 # Hardware Specifications
 
-Our computing resources are currently hosted by trusted vendors: [Amazon Web Services](http://www.aws.amazon.com) and [Microsoft Azure](http://www.azure.microsoft.com). We support [IBM SoftLayer](http://www.softlayer.com) and [Rackspace](http://www.rackspace.com) and can deploy capacity there upon a short notice. 
+Our computing resources are currently hosted by trusted vendors: [Amazon Web Services](http://www.aws.amazon.com) and [Microsoft Azure](http://www.azure.microsoft.com). We support [IBM SoftLayer](http://www.softlayer.com) and [Rackspace](http://www.rackspace.com) and can deploy capacity there on a short notice.
 
 The following shows the hardware specification for each vendor.
 
-|Provider  |CPU Count |CPU Type                       |Memory (GB)|Disk (GB)|Bandwidth (Gbps)|
+|Provider  |Core Count |CPU Type                       |Memory (GB)|Disk (GB)|Bandwidth (Gbps)|
 |:---------|:--------:|:-----------------------------:|:---------:|:-------:|:--------------:|
 |AWS       |36        |Intel Xeon E5-2666-v3, 2.90GHz |60         |10       |10              |
 |Rackspace |32        |Intel Xeon E5-2680-v2, 2.80GHz |60         |50       |5               |
@@ -17,9 +17,9 @@ The following shows the hardware specification for each vendor.
 
 # Available Resources
 
-As of Sep, 2016 our major compute and storage systems have:
+As of Apr, 2018 our major compute and storage systems are as below:
 
-|Provider  |Total CPU |Total Memory (GB)|Total Disk (GB)|
+|Provider  |Total cores |Total Memory (GB)|Total Disk (GB)|
 |:---------|:--------:|:---------------:|:-------------:|
 |AWS       |36,000     |60,000            |Unlimited**      |
 |Azure     |10,000     |20,000            |Unlimited**      |
