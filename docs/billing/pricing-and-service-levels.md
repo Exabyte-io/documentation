@@ -11,7 +11,6 @@ Below is a quick comparison of our service levels:
 | pre-payment               |  -          | $50                | $500               | $5,000             | $50,000                   |
 | price per core-hour       |  $0.20      | $0.20              | $0.18              | $0.17              | $0.10                     |
 | validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months                 |
-| reserved compute nodes   |  -          | -                  | -                  | +                  | +                         |
 | monthly data usage       |  10Gb       | 50Gb               | 100Gb              | 500Gb              | 5Tb                       |
 | private data             |  -          | -                  | +                  | +                  | +                         |
 | organizations/teams      |  -          | -                  | -                  | +                  | +                         |
@@ -19,26 +18,30 @@ Below is a quick comparison of our service levels:
 | support level            |  email      | email              | email/web          | email/web          | email/web/videoconference |
 | command-line access      |  -          | -                  | +                  | +                  | +                         |
 
-> "Base rate": the price above refers to the Base Rate for each service level. You can further control how quickly your calculations are finished by varying submission queues.
+> NOTE: the price above refers to the Ordinary Rate for each service level. One can further control the price by varying submission queues (see below). When using "Saving" queue, for example, the final price can be as low as $0.02.
 
 # How Service Levels are set
 
-Your service level is defined by the payment that you make.
-
-> Service level is defined by the maximum amount of the most recent payment(s).
+The service level is defined by the pre-payment that an account holder makes. When multiple payments are applied, we prioritize the maximum amount within its validity period.
 
 Here's how it works:
 
-1. Upon signing up the service level is initially set to `Promo`.
-2. When user provides a payment method, purchases allocation and pays the minimum amount ($50) the service level is set to `Advanced`
-3. When/if user pays in excess of $500 instead, service level is set to `Pro`
-4. Users with a valid payment method can create [**organizations**](/organizations/overview.md):
+- Upon signup the service level is initially set to `Promo`.
+- When user provides a payment method, purchases allocation and pays the minimum amount ($50) the service level is set to `Advanced`
+- When/if user pays in excess of $500 instead, service level is set to `Pro`
 
-    - the first organization per user is given $10 credit to try the functionality
-    - by paying $5,000 a user can secure 'Enterprise' service level for his/her organization
-    - entities created under the organization account will be charged according to `Enterprise` rates
-    - by paying $50,000 a user can secure `Enterprise-extra` service level for his/her organization
-    - other special rates are available upon request
+> NOTE: validity periods for the same service level add up, so in case a user pays $500 and then adds $500 within 6 months, the total allocation of $1000 can be used within 12 months  
+
+# Service levels for Enterprise
+
+Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/organizations/overview.md). 
+
+Notes:
+
+- the first organization per user is given $10 promo credit
+- by paying $5,000 a user can secure 'Enterprise' service level for his/her organization
+- entities created under the organization account will be charged according to `Enterprise` rates
+- other special rates are available upon request
 
 # Validity period
 
@@ -54,6 +57,13 @@ Detailed description of submission queues and compute levels is available [elsew
 |Queue type| Charge factor
 |:---------|:------------
 |Debug     | 2.0
-|On-demand | 1.0
+|Ordinary  | 1.0
 |Saving    | 0.2
+
+# Premium hardware
+
+Our infrastructure includes multiple compute clusters at a time, with some providing premium performance. The state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters). Premium hardware has an extra charge factor as shown below: 
+
+|Compute type | Charge factor
+|:---------|:------------
 |Premium   | 2.0
