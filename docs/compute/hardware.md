@@ -19,7 +19,7 @@ Notes:
 
 <sup>*</sup> [GPU-enabled](https://aws.amazon.com/ec2/instance-types/p3/) computing resources.
 
-<sup>**</sup> [Infiniband-enabled networking](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) hardware.
+<sup>**</sup> [Infiniband-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) networking hardware.
 
 
 # Available Resources
