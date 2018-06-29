@@ -17,9 +17,10 @@ The following shows the hardware specification for each vendor.
 
 Notes:
 
-<sup>*</sup> Infiniband-enabled networking hardware.
+<sup>*</sup> Powered by latest-generation [NVIDIA Tesla GPUs](https://aws.amazon.com/ec2/instance-types/p3/).
 
-<sup>**</sup> Powered by latest-generation NVIDIA Tesla V100 GPUs.
+<sup>**</sup> [Infiniband-enabled networking](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) hardware.
+
 
 # Available Resources
 
