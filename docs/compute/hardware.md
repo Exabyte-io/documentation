@@ -10,11 +10,13 @@ The following shows the hardware specification for each vendor.
 | AWS GPU<sup>*</sup>         | 8          | Intel Xeon E5-2686-v4, 2.30GHz  | 61          | 10        | 10               | 1              |
 | AWS 4GPUs<sup>*</sup>       | 32         | Intel Xeon E5-2686-v4, 2.30GHz  | 244         | 10        | 10               | 4              |
 | AWS 8GPUs<sup>*</sup>       | 64         | Intel Xeon E5-2686-v4, 2.30GHz  | 488         | 10        | 25               | 8              |
-| Rackspace                   | 32         | Intel Xeon E5-2680-v2, 2.80GHz  | 60          | 50        | 5                | -              |
 | Azure                       | 16         | Intel Xeon E5-2673-v3, 2.40GHz  | 32          | 256       | 10               | -              |
 | Azure IB<sup>**</sup>       | 16         | Intel Xeon E5-2667-v3, 3.20GHz  | 112         | 1,000     | 40               | -              |
-| Softlayer                   | 16         | Intel Xeon E5-2650-v0, 2.00GHz  | 32          | 25        | 1                | -              |
 
+<!-- 
+| Rackspace                   | 32         | Intel Xeon E5-2680-v2, 2.80GHz  | 60          | 50        | 5                | -              |
+| Softlayer                   | 16         | Intel Xeon E5-2650-v0, 2.00GHz  | 32          | 25        | 1                | -              |
+ -->
 Notes:
 
 <sup>*</sup> [GPU-enabled](https://aws.amazon.com/ec2/instance-types/p3/) computing resources.
@@ -30,8 +32,12 @@ As of Apr, 2018 our major compute and storage systems are as below:
 | :--------- | :--------:  | :---------------: | :-------------: |
 | AWS        | 36,000      | 60,000            | Unlimited**     |
 | Azure      | 10,000      | 20,000            | Unlimited**     |
-| Rackspace  | 6,400       | 12,000            | Unlimited**     |
+
+
+<!--
+ | Rackspace  | 6,400       | 12,000            | Unlimited**     | 
 | Softlayer  | 3,200       | 6,400             | Unlimited**     |
+-->
 
 ** We provide virtually unlimited disk storage space. Elastically grown file system lets us reach to 8EB (exabytes) of disk storage per single compute cluster.
 
