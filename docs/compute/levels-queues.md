@@ -28,8 +28,8 @@ Depending on the size and degree of urgency, simulation tasks can be directed by
 | SR                  | Saving      | saving regular            | 1                | exact seconds               | 10                     | -              |
 | SF                  | Saving      | saving fast               | &le;50           | whole hours                 | 100                    | -              |
 | GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 1              |
-| 4GOF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 4              |
-| 8GOF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 8              |
+| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 4              |
+| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 8              |
 
 Notes:
 
