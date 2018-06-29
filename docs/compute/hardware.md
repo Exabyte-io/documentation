@@ -35,7 +35,7 @@ As of Apr, 2018 our major compute and storage systems are as below:
 
 
 <!--
- | Rackspace  | 6,400       | 12,000            | Unlimited**     | 
+| Rackspace  | 6,400       | 12,000            | Unlimited**     | 
 | Softlayer  | 3,200       | 6,400             | Unlimited**     |
 -->
 
