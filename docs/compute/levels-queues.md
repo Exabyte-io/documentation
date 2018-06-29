@@ -8,6 +8,7 @@ We have multiple levels of compute that let our users optimize the cost-to-perfo
 | Ordinary | meant for most production tasks, extensive compute resources at the base rate  |1.0
 | Saving   | significantly lower rate through utilizing idle compute resources; compute resources may be terminated at any time depending on the load in the data center   |0.2
 | Premium  | premium-quality resources (eg. low-latency interconnect)   | 2.7
+| GPU      | GPU resources   | 8.8
 
 It is advised to use Debug level while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
 
