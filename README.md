@@ -147,8 +147,8 @@ is rendered into:
 ```
 
 8. Including a gif image
-```
+    ```
 <img data-gifffer="/images/AddCredit.gif" />
-```
+    ```
 
     we use a third-party plugin, embedded into the source of this repository ("giffer") in order to make gif images clickable like videos.
