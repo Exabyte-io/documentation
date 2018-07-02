@@ -133,18 +133,18 @@ is rendered into:
     ```
 
 6. Including a local link to a page or a place within a page:
-```
-[subscription level](/billing/accounts-and-billing)
-```
+    ```
+    [subscription level](/billing/accounts-and-billing)
+    ```
 
-```
-[subscription level](/billing/accounts-and-billing#pricing)
-```
+    ```
+    [subscription level](/billing/accounts-and-billing#pricing)
+    ```
 
 7. Including an image/screenshot:
-```
-![Simulation Diagram](/images/simulation-job-wokflow-unit-explained.png "Simulation Diagram")
-```
+    ```
+    ![Simulation Diagram](/images/simulation-job-wokflow-unit-explained.png "Simulation Diagram")
+    ```
 
 8. Including a gif image
     ```
