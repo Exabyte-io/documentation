@@ -1,1 +1,1 @@
-https://github.com/mkdocs/mkdocs/archive/master.zip
+mkdocs==0.16.2
