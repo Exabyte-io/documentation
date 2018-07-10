@@ -78,18 +78,31 @@ TMP_DIR="${THIS_SCRIPT_DIR}/png_${TIMESTAMP}"
 # Trim the video
 ffmpeg -i $INPUT -ss ${BEGIN} -c copy -t ${DURATION} ${TIMESTAMP}_$(basename $INPUT)
 
-
-
 # Create images from video
 mkdir $TMP_DIR
-#  -r option affects per-second frame resolution
+
+# -r  stands for FPS value
+#    for better quality choose bigger number
+#    adjust the value with the -delay in 2nd step
+#    to keep the same animation speed
 ffmpeg -i ${TIMESTAMP}_$(basename $INPUT) -vf scale=720:-1 -r 2 -vcodec ppm ${TMP_DIR}/ffout%3d.png
 
 # Convert images to gif
-# -delay option affects delay between subsequent frames (corrlates with `-r` above)
+# -delay 20 for example means the time between each frame is 0.2 seconds
+#   When choosing this value
+#       1 = 100 fps
+#       2 = 50 fps
+#       4 = 25 fps
+#       5 = 20 fps
+#       10 = 10 fps
+#       20 = 5 fps
+#       25 = 4 fps
+#       50 = 2 fps
+#       100 = 1 fps
+#       in general 100/delay = fps
 convert -delay 25 -loop 0  -layers optimize $TMP_DIR/ffout*.png +map +dither ${GIF}
 
-# Optimize gif size
+# Optimize gif size; 256 colors are needed to remove grey shadows from background of GIF
 convert -colors 256 ${GIF} ${GIF}
 convert -layers remove-zero ${GIF} ${GIF}
 
