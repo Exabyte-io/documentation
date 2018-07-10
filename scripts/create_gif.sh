@@ -78,17 +78,19 @@ TMP_DIR="${THIS_SCRIPT_DIR}/png_${TIMESTAMP}"
 # Trim the video
 ffmpeg -i $INPUT -ss ${BEGIN} -c copy -t ${DURATION} ${TIMESTAMP}_$(basename $INPUT)
 
+
+
 # Create images from video
 mkdir $TMP_DIR
 #  -r option affects per-second frame resolution
-ffmpeg -i ${TIMESTAMP}_$(basename $INPUT) -vf scale=960:-1 -r 10 ${TMP_DIR}/ffout%3d.png
+ffmpeg -i ${TIMESTAMP}_$(basename $INPUT) -vf scale=720:-1 -r 2 -vcodec ppm ${TMP_DIR}/ffout%3d.png
 
 # Convert images to gif
 # -delay option affects delay between subsequent frames (corrlates with `-r` above)
-convert -delay 4 -loop 0 -layers optimize $TMP_DIR/ffout*.png +map +dither ${GIF}
+convert -delay 25 -loop 0  -layers optimize $TMP_DIR/ffout*.png +map +dither ${GIF}
 
 # Optimize gif size
-convert -colors 64 ${GIF} ${GIF}
+convert -colors 256 ${GIF} ${GIF}
 convert -layers remove-zero ${GIF} ${GIF}
 
 # Clean up
