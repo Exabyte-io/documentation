@@ -15,11 +15,9 @@ Readers can also learn how to [create](/materials/creating-structures/) or [uplo
 
 # Open Job Designer
 
-Start by click "Create Job" link in the left-hand sidebar.
+Start by clicking "Create Job" link in the left-hand sidebar to open the "Job Designer" page where you can:
 
-You will be taken to the "Job Designer" page where you can:
-
-- Choose a material (one that you created and saved before)
+- Choose a previously created material
 - Choose and adjust a simulation Workflow
 - Setup compute parameters
    
