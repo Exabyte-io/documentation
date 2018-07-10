@@ -1,23 +1,28 @@
-<!-- by MH -->
+<!-- by TB -->
 
-This page explains how to run a simple density functional theory calculation to obtain an electronic bandstructure. We will study silicon in the standard face-centered cubic structure and use Quantum ESPRESSO as the simulation engine.
+This page explains how to run a simple density functional theory calculation to obtain an electronic band structure. Each account is pre-configured with one default material and workflow. For the sake of this tutorial, we will keep the *default* parameters at each step. We will thus study silicon in the standard face-centered cubic structure and use Quantum ESPRESSO as the simulation engine.
+
+# Prepare Material and Workflow
+
+Users may also add new materials or workflows into their collection from the application-wise "Bank" collection that we maintain. To do so, select the "Bank" option in the left-hand sidebar and then "Materials" ("Workflows"). To import both workflows and material structures from the Bank select the desired entry by ticking the checkbox at the start of the entry line and then click "Copy" in the top-right taskbar of the page.
+
+Silicon FCC is the default material added to each account on creation. Below we demonstrate how to import the "Band Structure" workflow for Quantum ESPRESSO.
+
+<!-- TODO by GM: add a gif of the above process -->
+ 
+Readers can also learn how to [create](/materials/creating-structures/) or [upload/import](/materials/upload-and-import) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](/materials/other-actions.md) elsewhere in this documentation. 
+ 
 
 # Open Job Designer
 
 Start by click "Create Job" link in the left-hand sidebar.
 
-You will be taken to the "Job Desinger" page where you can:
+You will be taken to the "Job Designer" page where you can:
 
 - Choose a material (one that you created and saved before)
 - Choose and adjust a simulation Workflow
 - Setup compute parameters
-
-For the sake of this tutorial, we will keep the default parameters at each step. To modify the default material, click on the "Materials" option in the left-hand sidebar, which will take you to your own personal repository of previously-designed or imported crystal structures. Select the desired structure by ticking its corresponding check-box located at the beginning of the repository entry, and then click on the three vertical dots located at the very end of the entry line. Finally select the "Set default" option marked with a star at the bottom of the resulting menu. The default workflow can also be modified in a similar fashion: select "Workflows" from the left-hand sidebar, and then repeat the same procedure as for selecting the default material described previously. You can check which material or workflow has been selected as default anytime by navigating to the correpsonding repository and inspecting which entry has a checkmark assigned to it under the "Default" column. 
-
-To import new material structures into your own personal collection, first navigate to the "Materials" option in the left-hand sidebar. You are now confronted with the following options in the taskbar on the top-right-hand side of the page: either import structures from a central repository of predefined material structures (obtained directly from the materialsproject.org database), directly upload structure files in the POSCAR or CIF formats, or manually create new structures (blue plus icon located at the end of the taskbar) with the aid of the incorporated Exabyte Materials Designer tool. 
-
-To import new workflows into your personal collection on the other hand, select the "Bank" option in the left-hand sidebar and then "Workflows". The user will be presented with a comprehensive list of centrally-stored and pre-defined workflows. A similar list of pre-defined materials can also be accessed through the alternative "Materials" sub-selection under "Bank", which complements the afore-mentioned collection from the materialsproject.org database. To import both workflows and material structures from the Bank to your own personal collection, simply select the desired entry by ticking the checkbox at the start of the entry line and then click on "Copy" in the top-right taskbar of the page. The procedure to import crystal structures from the materialsproject.org database is analogous, except that the "Copy" functionality is replaced with an icon labelled "Import".
-
+   
 # Tab #1: Materials
 
 Materials viewer lets you choose one or more previsously imported materials for use during the calculation. We will proceed with the default structure of Silicon.
@@ -71,4 +76,6 @@ Job view screen lets you track the input parameters, output text, convergence pa
 
 # Done
 
-This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore "Tutorials" section of the navigation on the left.
+This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](/tutorials/band-structure.md).
+
+<!-- TODO by GM: add a png image of the final band structure screenshot -->
