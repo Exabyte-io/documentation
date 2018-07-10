@@ -9,5 +9,3 @@ In order to modify the default material, click the "Materials" option in the lef
 ## Workflow
 
 The default workflow can be modified in a similar way as explained above.
-
-
