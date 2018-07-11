@@ -1,7 +1,7 @@
 #!/bin/bash
 # Derived from https://gist.github.com/tskaggs/6394639
 # Requires:
-#   imagemagick (~7.0.8_6), ffmpeg
+#   imagemagick (~7.0.8_6), ffmpeg (3.4.2)
 #   On OSX:
 #       brew install imagemagick
 #       brew install ffmpeg
