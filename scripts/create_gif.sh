@@ -1,5 +1,7 @@
 #!/bin/bash
-# Derived from https://gist.github.com/tskaggs/6394639
+# Derived from:
+#   https://gist.github.com/tskaggs/6394639, 
+#   https://askubuntu.com/questions/648603/how-to-create-an-animated-gif-from-mp4-video-via-command-line
 # Requires:
 #   imagemagick (~7.0.8_6), ffmpeg (3.4.2)
 #   On OSX:
