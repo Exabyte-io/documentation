@@ -8,7 +8,7 @@ Users may also add new materials or workflows into their collection from the app
 
 Silicon FCC is the default material added to each account on creation. Below we demonstrate how to import the "Band Structure" workflow for Quantum ESPRESSO.
 
-<!-- TODO by GM: add a gif of the above process -->
+<img data-gifffer="/images/run-first-simulation-import-workflow.gif"/>
  
 Readers can also learn how to [create](/materials/creating-structures/) or [upload/import](/materials/upload-and-import) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](/materials/other-actions.md) elsewhere in this documentation. 
  
@@ -76,4 +76,4 @@ Job view screen lets you track the input parameters, output text, convergence pa
 
 This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](/tutorials/band-structure.md).
 
-<!-- TODO by GM: add a png image of the final band structure screenshot -->
+<img src="/images/run-first-simulation-view-bandstructure.png"/>
