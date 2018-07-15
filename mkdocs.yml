@@ -43,6 +43,7 @@ pages:
             - Upload & Import:            materials/upload-and-import.md
             - Search & Compare:           materials/search-compare.md
             - Combinatorial sets:         materials/combinatorial-sets.md
+            - Other:                      materials/other-actions.md
 
     - Workflows:
         - Overview:                       workflows/overview.md
