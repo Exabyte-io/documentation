@@ -11,7 +11,7 @@ We are often asked about the security of cloud-based solutions for storing missi
 
 ## Concerns
 
-Cloud computing has completely revolutionized the way we obtain, store and interact with the data in our daily work. In particular, now we take it as a must for data to be accessible from many different devices scattered around the world simultaneously. The rapidly increasing quantity of data stored in the multiple cloud service providers is often of sensitive nature to businesses, and governmental institutions. New security issues of practical importance have appeared as a result of this sweeping digital transformation [1] [2] [3]. These are related to the confidentiality, integrity, accessibility, and resilience to online piracy and malware attacks.
+Cloud computing has completely revolutionized the way we obtain, store and interact with the data in our daily work. In particular, now we take it as a must for data to be accessible from many different devices scattered around the world simultaneously. The rapidly increasing quantity of data stored in the multiple cloud service providers is often of sensitive nature to businesses, and governmental institutions. New security issues of practical importance have appeared as a result of this sweeping digital transformation. These are related to the confidentiality, integrity, accessibility, and resilience to online piracy and malware attacks, and are summarized in a publicly-available report by the Cloud Security Alliance (CSA) [1]. A comprehensive repository of general review papers on Cloud security issues and the recent progress in this field is offered by Exabyte.io in the online database linked to in Ref. [2]. Some examples of recent progress towards finding solutions to many of these security concerns are outlined in the excerpt of the paper by Dahiya and Rani linked to in Ref. [3].
 
 ## Examples
 
@@ -23,11 +23,11 @@ We at Exabyte.io have gone at great lengths to ensure a smooth, confidential and
 
 # Links
 
-[1]: R.R. Chowdhury: "Security in Cloud Computing"; International Journal of Computer Applications (0975 - 8887), Volume 96 - No.15, June 2014
+[1]: "The Treacherous Twelve" Cloud Computing Top Threats in 2016; report by the Cloud Security Alliance (CSA)
 
-[2]: M. Ahmed and M.A. Hossain: "Cloud Computing and Security Issues in the Cloud"; International Journal of Network Security & Its Applications (IJNSA), Vol.6, No.1, January 2014
+[2]: Online repository of review papers on Cloud Security issues and solutions; [link](https://drive.google.com/open?id=1GN5k9QIN7Jy2TdowjiXhEcT6HCaCE4HR)
 
-[3]: S. Aldossary and W. Allen: "Data Security, Privacy, Availability and Integrity in Cloud Computing: Issues and Current Solutions"; (IJACSA) International Journal of Advanced Computer Science and Applications, Vol. 7, No. 4, 2016
+[3]: N. Dahiya and S. Rani: "Cloud Computing Security: A Review"; 2017 IJEDR | Volume 5, Issue 3 | ISSN: 2321-9939; [link to article](https://drive.google.com/open?id=1pXBQH-kCFAZTKKg9OzYV4RbC4ZpMhHfI)
 
 [4]: D. Linthicum: "Clouds are more secure than traditional IT systems -- and here's why"; [link to article](https://searchcloudcomputing.techtarget.com/opinion/Clouds-are-more-secure-than-traditional-IT-systems-and-heres-why)
 
