@@ -23,20 +23,20 @@ We at Exabyte.io have gone at great lengths to ensure a smooth, confidential and
 
 # Links
 
-[1]: "The Treacherous Twelve" Cloud Computing Top Threats in 2016; report by the Cloud Security Alliance (CSA)
+[1]: "The Treacherous Twelve" Cloud Computing Top Threats in 2016; report by the Cloud Security Alliance (CSA); [link to article](https://downloads.cloudsecurityalliance.org/assets/research/top-threats/Treacherous-12_Cloud-Computing_Top-Threats.pdf)
 
 [2]: Online repository of review papers on Cloud Security issues and solutions; [link](https://drive.google.com/open?id=1GN5k9QIN7Jy2TdowjiXhEcT6HCaCE4HR)
 
 [3]: N. Dahiya and S. Rani: "Cloud Computing Security: A Review"; 2017 IJEDR | Volume 5, Issue 3 | ISSN: 2321-9939; [link to article](https://drive.google.com/open?id=1pXBQH-kCFAZTKKg9OzYV4RbC4ZpMhHfI)
 
-[4]: D. Linthicum: "Clouds are more secure than traditional IT systems -- and here's why"; [link to article](https://searchcloudcomputing.techtarget.com/opinion/Clouds-are-more-secure-than-traditional-IT-systems-and-heres-why)
+[4]: D. Linthicum: "Clouds are more secure than traditional IT systems -- and here's why" (2014); [link to article](https://searchcloudcomputing.techtarget.com/opinion/Clouds-are-more-secure-than-traditional-IT-systems-and-heres-why)
 
-[5]: Cloud security: Why clouds are more secure than your own datacenter; [link to article](http://ciosurvivalguide.com/blog/cloud-security-why-clouds-are-more-secure-than-your-own-datacenter)
+[5]: "Cloud security: Why clouds are more secure than your own datacenter" (2016); [link to article](http://ciosurvivalguide.com/blog/cloud-security-why-clouds-are-more-secure-than-your-own-datacenter)
 
-[6]: A. McLean: "CIA to continue cloud push in the name of national security"; [link to article](https://www.zdnet.com/article/cia-to-continue-cloud-push-in-the-name-of-national-security/)
+[6]: A. McLean: "CIA to continue cloud push in the name of national security" (2017); [link to article](https://www.zdnet.com/article/cia-to-continue-cloud-push-in-the-name-of-national-security/)
 
 [7]: Security section, Exabyte.io homepage; [link](https://exabyte.io/#security) 
 
 [8]: "Exabyte.io: IT Infastructure and security summary" (Updated: February 2018); [link](https://exabyte.docsend.com/view/fdjpkxp)
 
-[9]: B. Darrow: "How These Fortune 500 Companies Are Moving to the Cloud"; [link to article](http://fortune.com/2016/07/19/big-companies-many-clouds/)
+[9]: B. Darrow: "How These Fortune 500 Companies Are Moving to the Cloud" (2016); [link to article](http://fortune.com/2016/07/19/big-companies-many-clouds/)
