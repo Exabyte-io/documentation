@@ -130,10 +130,10 @@ pages:
     - Security:
         - Overview:                         security/overview.md
         - Cloud Security:                   security/cloud-security.md
-        - Privacy:                          security/privacy-statement.md
-        - Data Security in transfer:        security/data-security-in-transfer.md
-        - Data Security at rest:            security/data-security-at-rest.md
+        - Security Policies:                security/security-policies.md
+        - Threats Analysis:                 security/threats-analysis.md
         - Command-line Permissions:         security/cli-users-permissions.md
+        - Privacy:                          security/privacy-statement.md
 
     - REST-API:
         - Overview:                         rest-api/overview.md
