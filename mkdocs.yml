@@ -77,6 +77,7 @@ pages:
             - "Jobs: example":      cli/jobs-example.md
             - Storage System:       cli/storage-system.md
             - Extra:                cli/extra.md
+            - Permissions:          security/cli-users-permissions.md
 
     - Tutorials:
         # TODO: adjust with results closer to experiment and re-publish
@@ -128,11 +129,10 @@ pages:
         - Teams:            organizations/teams.md
 
     - Security:
+        - Current State of Cloud Security:  security/current-state.md
         - Overview:                         security/overview.md
-        - Cloud Security:                   security/cloud-security.md
         - Security Policies:                security/security-policies.md
         - Threats Analysis:                 security/threats-analysis.md
-        - Command-line Permissions:         security/cli-users-permissions.md
         - Privacy:                          security/privacy-statement.md
 
     - REST-API:

@@ -1,4 +1,6 @@
-<!-- by GM -->
+<!-- by GM, TB -->
+
+> Last updated: **Aug 1, 2018**
 
 # Introduction
 
@@ -13,19 +15,25 @@ We are often asked about the security of cloud-based solutions for storing missi
 
 # Concerns
 
-Cloud computing revolutionized the way we store and interact with data in our daily work. We now take it as a must for data to be accessible from many different devices scattered around the globe simultaneously. The data stored by the multiple cloud service providers is often of sensitive nature to businesses and research institutions. Moreover, such data rapidly increases in quantity. New security issues of practical importance appear as a result of this digital transformation [1-8]. These issues are related to the confidentiality, integrity, accessibility, and resilience to online piracy and malware attacks.
+Cloud computing revolutionized the way we store and interact with data in our daily work. We now take it as a must to have simultaneous access to information from many different devices scattered around the globe. Cloud service providers make it possible and seamless. The data stored by the cloud providers, however, is often of sensitive nature to businesses and research institutions. Moreover, such data rapidly increases in quantity. New security issues of practical importance appear as a result of this digital transformation [[1-8](#links)]. These issues are related to the confidentiality, integrity, accessibility, and resilience to online piracy and malware attacks.
 
 # Examples
 
-There is a  growing consensus among the global IT community that cloud computing has now become inherently more reliable and secure than traditional privately-owned data-centers in the same way that money is safer when mixed up with other people's money in a bank vault than sitting alone in one’s dresser drawer [9] [10]. The largest cloud service providers such as AWS, Microsoft Azure and the Google cloud platform (our references of choice at Exabyte.io) have the means and resources to invest billions in improving and maintaining top-notch IT security protocols and general infrastructure. They do it in a way that would be cost-prohibitive even for the Global 500 companies and completely unaffordable for most small-to-medium sized enterprises and/or academic research labs.
+## More secure?
 
-For example, Microsoft has invested some US$1 billion in security and doubled its number of security executives over the course of the year 2015 alone [11]. The IT giant even announced the launch of a new managed security services group and a new cyber defense operations center. Similar policies are regularly being enacted by all other major cloud provider companies. Furthermore, a cloud provider will have secure servers hosted in a variety of locations regionally or globally, and this naturally preserves data better and more reliably than keeping it on-premises in a single location. Further advantages of Clouds compared to traditional computing can be found in their superior performance and their lower operational costs [12]. No wonder even the CIA now trusts AWS to store some of its classified information! [13]
+There is a  growing consensus among the global IT community that cloud computing has now become inherently more reliable and secure than traditional privately-owned data-centers in the same way that money is safer when mixed up with other people's money in a bank vault than sitting alone in one’s dresser drawer [[9, 10](#links)]. The largest cloud service providers such as AWS, Microsoft Azure and the Google cloud platform (our references of choice at Exabyte.io) have the means and resources to invest billions in maintaining and improving top-notch IT security protocols and infrastructure. They do it in a way that would be cost-prohibitive even for the Global 500 companies and completely unaffordable for most small-to-medium sized enterprises and/or research labs.
 
-Accenture recently found that the chemicals and energy industrial sectors have so far been reluctant to adopt Cloud computing because of the security issues associated with it [14] [15]. At the same time, however, they also point out that such companies are increasingly eager to explore the field. We believe that in the future the situation will change, and we base our conclusions on the penetration of cloud computing in the computer-aided design industry, where 4 out of the 5 largest companies now use cloud for their R&D [16]. Similar considerations apply to the pharmaceutical industrial sector [17]. In addition, some of the recent updates from Microsoft Azure partnering with BP and Chevron in storing mission-critical data point to similar conclusions [18] [19].
+## How is it possible?
+
+For example, Microsoft has invested $1 billion and doubled its number of security executives over the course of the year 2015 alone. They also announced the launch of a new managed security services group and a new cyber defense operations center [[11](#links)]. Similar policies are regularly being enacted by all other major cloud providers. Furthermore, providers have servers hosted in a variety of locations regionally and globally, which naturally preserves data better and more reliably than keeping it on-premises in a single location. Other advantages of clouds compared to traditional computing can be found in their superior performance and their lower operational costs as it was pointed out in a 2017 NASDAQ summary [[12](#links)]. No wonder even the CIA now trusts Amazon Web Services to store some of its classified information! [[13](#links)]
+
+## OK, but not for our data, is it?
+
+Chemical and Energy sectors have so far been reluctant to adopt cloud computing because of the associated security concerns, however, such companies are increasingly eager to explore the field as Accenture reported [[14, 15](#links)]. We believe that in the future the situation will change, and we base our conclusions on the modern day state of the computer-aided design industry, where 4 out of the 5 largest companies now use cloud for their Research and Development efforts [[16](#links)]. Pharmaceutical industrial sector, first reluctant to adopt cloud computing too, is now rapidly changing its stance [[17](#links)]. Lastly, some of the recent updates from Microsoft Azure partnering with British Petroleum and Chevron in storing mission-critical data point to similar conclusions [[18, 19](#links)].
 
 # Our approach
 
-We at Exabyte.io have gone at great lengths to ensure a smooth, confidential and secure experience for our customers. We use industry-standard strict security protocols, and the degree of data privacy and integrity protection we deliver has so far received universal acclaim by our users [20]. We are convinced that together we can extend the forefront of the cloud computing transformation currently unfolding [21], and apply it to accelerate the materials and chemical R&D.
+We at Exabyte.io have gone at great lengths to ensure a confidential and secure experience for our customers. We use industry-standard strict security protocols, and the degree of data privacy and integrity protection we deliver has so far received universal acclaim by our users [[20](#links)]. We are convinced that together we can extend the forefront of the cloud computing transformation currently unfolding [[21](#links)], and apply it to accelerate the materials and chemical R&D.
 
 You can find more information about our security policies at [this link](security-policies.md).
 
