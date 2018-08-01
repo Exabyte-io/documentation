@@ -33,7 +33,7 @@ Chemical and Energy sectors have so far been reluctant to adopt cloud computing 
 
 # Our approach
 
-We at Exabyte.io have gone at great lengths to ensure a confidential and secure experience for our customers. We use industry-standard strict security protocols, and the degree of data privacy and integrity protection we deliver has so far received universal acclaim by our users [[20](#links)]. We are convinced that together we can extend the forefront of the cloud computing transformation currently unfolding [[21](#links)], and apply it to accelerate the materials and chemical R&D.
+We at Exabyte.io consider a confidential and secure experience for our customers our top priority. We use industry-standard strict security protocols, and the degree of data privacy and integrity protection we deliver has so far received universal appreciation by our users [[20](#links)]. We are convinced that together we can extend the forefront of the cloud computing transformation currently unfolding [[21](#links)], and apply it to accelerate the materials and chemical R&D.
 
 You can find more information about our security policies at [this link](security-policies.md).
 
