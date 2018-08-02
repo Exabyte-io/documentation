@@ -41,7 +41,7 @@ All data we store is saved on a minimum of three different servers, including an
 
 # On-premises deployment
 
-We're extremely concerned and active about security. We are aware that many companies are not comfortable hosting sensitive data outside their firewall. For these companies we can offer "Exabyte.io On-premises", a version of Exabyte.io that can be installed on a server within the company network.
+We are aware that some companies are still not comfortable hosting data on any third-party-owned hardware. For these companies we can suggest [private deployment](../site-policy/sharing-policy.md) options.
 
 # Links
 
