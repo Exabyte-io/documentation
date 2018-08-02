@@ -55,7 +55,7 @@ We further discuss the analysis of cloud-computing related threats and our ways 
 
 7. G. Ramachandra, M. Iftikhar and F.A. Khan: "A Comprehensive Survey on Security in Cloud Computing"; Procedia Computer Science 110 (2017) 465–472; [link](https://drive.google.com/open?id=1fboYHk7KpU9ERjg_vc7IBXndv5CH02pZ)
 
-8. Online repository of review papers on Cloud Security issues and solutions; [link](https://drive.google.com/open?id=1GN5k9QIN7Jy2TdowjiXhEcT6HCaCE4HR)
+8. Online repository of review papers on Cloud Security issues and solutions; [link](https://drive.google.com/drive/folders/1_OXl4t2v6nI545T_RS1Iz9-82ygbvlH1)
 
 9. D. Linthicum: "Clouds are more secure than traditional IT systems -- and here's why" (2014); [link](https://searchcloudcomputing.techtarget.com/opinion/Clouds-are-more-secure-than-traditional-IT-systems-and-heres-why)
 
