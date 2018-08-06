@@ -10,7 +10,7 @@ extra_javascript:
 site_favicon: /img/favicon.ico
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
-    version: "0.9.2"
+    version: "0.10.0"
     preload_javascript:
         - /preload_hotjar.js
         - /preload.js
