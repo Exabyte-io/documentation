@@ -134,7 +134,12 @@ pages:
         - Overview:                         security/overview.md
         - Security Policies:                security/security-policies.md
         - Threats Analysis:                 security/threats-analysis.md
-        - Privacy:                          security/privacy-statement.md
+        - Privacy:                          security/privacy-statement.md  # duplicate through link
+
+    - Site Policy:
+        - Privacy:                          site-policy/privacy-statement.md
+        - Sharing:                          site-policy/sharing-policy.md
+        - Terms of Service:                 site-policy/terms-of-service.md
 
     - REST-API:
         - Overview:                         rest-api/overview.md
@@ -159,9 +164,9 @@ pages:
     - Other:
         - FAQ:                  other/faq.md
         - Registration:         other/registration.md
-        - Terms of Service:     other/terms-of-service.md
         - Help & Support:       other/support.md
         - Community Programs:   other/community-programs.md
+        - Terms of Service:     other/terms-of-service.md  # duplicate through link
         # - Student Program:    other/student-program.md
         # - Upcoming features:    other/upcoming-features.md
         # - Roadmap:              other/roadmap.md
