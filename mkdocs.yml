@@ -42,6 +42,7 @@ pages:
             - Upload:                     materials/upload.md
             - Import:                     materials/import.md
             - Copy from shared bank:      materials/bank.md
+            - Advanced Search:            materials/advanced-search.md
             - Select During Job Creation: materials/selection.md
             - Search & Compare:           materials/search-compare.md
             - Combinatorial sets:         materials/combinatorial-sets.md
