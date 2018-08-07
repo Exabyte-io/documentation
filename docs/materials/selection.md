@@ -1,5 +1,5 @@
 # Select materials
 
-You may select previously uploaded materials during job creation. Inside "Job Designer" use the actions dropdown <i class="zmdi zmdi-more-vert zmdi-hc-border"></i> in the header and select `Chose material`. A menu overlay where one can search for materials by name/formula will appear. Enter the name, click on material entry to select it and apply selection. Repeat for other materials as needed.
+You may select previously uploaded materials during job creation. Inside "Job Designer" use the actions dropdown <i class="zmdi zmdi-more-vert zmdi-hc-border"></i> in the header and select `Chose material`. A menu overlay where one can search for materials will appear. Search and select material entries to select them for the job.
 
-You may select multiple materials at once to be used during job creation from "Materials" page by selecting the corresponding entries in "Materials" list and then clicking <i class="zmdi zmdi-open-in-new"></i> "Create Job" icon. 
+You may select multiple materials at once. By default, one job will be created per each material. The name of the job will also contain the material formula as it is indicated in the job name (by the `{{FORMULA}}` template variable) when more than one material is present.  
