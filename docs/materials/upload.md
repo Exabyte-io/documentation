@@ -10,17 +10,21 @@ By clicking on the `Select Items` button <i class="zmdi zmdi-collection-plus zmd
 
 More information on how to enter crystallographic data according to both CIF and POSCAR file format specifications can be found in Refs. [[1](#links)] and [[2](#links)] respectively.
 
+### Expand Content
+
 The data contained in each imported crystal structure file can be further visualized by clicking on its corresponding entry, and then collapsed back again by clicking a second time (the same functionalities can be accessed through the `Expand` and `Collapse` buttons located at the top right corner of the page, upon selection of the relevant structure file).
+
+### Search
 
 In case large datasets of crystal structures need to be imported at a single time, and particular elements then need to be retrieved from the resulting list, an additional filtering and searching text bar is offered at the top of the screen. This search bar can be activated or hidden with the magnifying lense tool located on the toolbar at the top right end of the page. 
 
+### Tag
+
 This toolbar furthermore offers the possibility to delete selected crystal structures from the list, or to tag them with a list of user-defined keywords for easier fetching while performing structure searches across the Exabyte platform. This is especially resourceful when large datasets of imported structures need to be retrieved, since they already have a common search label. 
 
-## Load Material
+## Upload Files
 
 Once the crystal structure files have been manually imported into the Exabyte platform, they will then be processed by our application and added as an entry to your "Materials" list. By default the name of the material will be attempted to be read from the file you imported. Chemical formula will be used as a failover option.  
-
-## Upload Material
 
 Upon selection of the desired crystal structures out of the list imported in the previous step, these can be uploaded to the user's personal materials repository by clicking on the `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> button towards the centre of the top right toolbar. For convenience, all structures in the list can be selected simulatenously by ticking the first checkbox at the top of the list rather than each entry separately.
 
