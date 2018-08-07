@@ -41,7 +41,7 @@ pages:
             - Creating structures:        materials/creating-structures.md
             - Import:                     materials/import.md
             - Upload:                     materials/upload.md
-            - Materials Bank:             materials/bank.md
+            - Copy from the shared bank:  materials/bank.md
             - Select During Job Creation: materials/selection.md
             - Search & Compare:           materials/search-compare.md
             - Combinatorial sets:         materials/combinatorial-sets.md
