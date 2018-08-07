@@ -38,6 +38,7 @@ pages:
         - Data:                           materials/data.md
         - Properties:                     materials/properties.md
         - Actions:
+            - Advanced Search:            materials/advanced-search.md
             - Creating structures:        materials/creating-structures.md
             - Import:                     materials/import.md
             - Upload:                     materials/upload.md
