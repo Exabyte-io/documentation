@@ -8,11 +8,11 @@ In order to import materials into a personal collection, first navigate to the b
 
 # Search for material
 
-Next, search through the list of materials with the help of the search bar <i class="zmdi zmdi-search"></i>. Read on about how to do [search](search-compare.md) and [advanced search](advanced-search.md). 
+Next, search through the list of materials with the help of the search bar <i class="zmdi zmdi-search zmdi-hc-border"></i>. Read on about how to do [search](search-compare.md) and [advanced search](advanced-search.md). 
 
 # Copy to account collection
 
-To import material structures from the Bank to your own personal collection, simply select the desired entry by ticking the checkbox at the start of the entry line, and then click on "Copy" in the top-right taskbar of the page as demonstrated in the animation below. 
+To import material structures from the Bank to your own personal collection, simply select the desired entry by ticking the checkbox at the start of the entry line, and then click on `Copy` <i class="zmdi zmdi-copy zmdi-hc-border"></i> in the top-right taskbar of the page as demonstrated in the animation below. 
 
 # Animation
 
@@ -22,4 +22,4 @@ The above is demonstrated in the following animation:
 
 # Links
 
-1. [Niggli cell description](https://nvlpubs.nist.gov/nistpubs/sp958-lide/188-190.pdf)
+1. [Standard primitive representation: Niggli Cell](https://nvlpubs.nist.gov/nistpubs/sp958-lide/188-190.pdf)
