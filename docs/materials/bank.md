@@ -1,14 +1,14 @@
-# Copy Materials from the Shared Bank
+# Copy Materials from shared Bank
 
 We collect unique copies of all materials in a standard primitive representation [[1](#links)] in a central "Bank" collection. For accounts with private data, the corresponding entries are private and only visible to the members of the account. For the rest - the bank entries are visible to all platform users.
 
-# Open Materials Bank page 
+# Open Bank Page 
 
-To import new materials into your personal collection, select the "Bank" option in the left-hand sidebar and then "Materials". The user will be presented with a comprehensive list of centrally-stored and pre-defined crystal structures. This materials bank database effectively complements the Materials Project collection of structures described in the `Import` section of this documentation. 
+In order to import materials into a personal collection, first navigate to the bank page: select the "Bank" option in the left-hand sidebar and then "Materials".
 
 # Search for material
 
-This list of crystal structures can be searched through with the help of the search bar at the top of the page. 
+Next, search through the list of materials with the help of the search bar <i class="zmdi zmdi-search"></i>. Read on about how to do [search](search-compare.md) and [advanced search] (advanced-search.md). 
 
 # Copy to account collection
 
@@ -16,7 +16,7 @@ To import material structures from the Bank to your own personal collection, sim
 
 # Animation
 
-The above is demonstrated in the following animation.
+The above is demonstrated in the following animation:
 
 <img data-gifffer="/images/bank_materials.gif" />
 
