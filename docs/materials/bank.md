@@ -8,7 +8,7 @@ In order to import materials into a personal collection, first navigate to the b
 
 # Search for material
 
-Next, search through the list of materials with the help of the search bar <i class="zmdi zmdi-search"></i>. Read on about how to do [search](search-compare.md) and [advanced search] (advanced-search.md). 
+Next, search through the list of materials with the help of the search bar <i class="zmdi zmdi-search"></i>. Read on about how to do [search](search-compare.md) and [advanced search](advanced-search.md). 
 
 # Copy to account collection
 
