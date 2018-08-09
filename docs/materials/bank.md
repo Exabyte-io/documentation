@@ -4,7 +4,7 @@ We collect unique copies of all materials in a standard primitive representation
 
 # Open Bank Page 
 
-In order to import materials into a personal collection, first navigate to the bank page: select the "Bank" option in the left-hand sidebar and then "Materials".
+In order to import materials into an account-owned collection, first navigate to the bank page: select the "Bank" option in the left-hand sidebar and then "Materials".
 
 # Search for material
 
@@ -12,7 +12,7 @@ Next, search through the list of materials with the help of the search bar <i cl
 
 # Copy to account collection
 
-To import material structures from the Bank to your own personal collection, simply select the desired entry by ticking the checkbox at the start of the entry line, and then click on `Copy` <i class="zmdi zmdi-copy zmdi-hc-border"></i> in the top-right taskbar of the page as demonstrated in the animation below. 
+To import material structures from the Bank to your account-owned collection, select the desired entry by ticking the checkbox at the start of the entry line, and then click on `Copy` <i class="zmdi zmdi-copy zmdi-hc-border"></i> in the top-right taskbar of the page as demonstrated in the animation below. 
 
 # Animation
 
