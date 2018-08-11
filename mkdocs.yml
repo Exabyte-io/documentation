@@ -38,13 +38,38 @@ pages:
         - Data:                           materials/data.md
         - Properties:                     materials/properties.md
         - Actions:
-            - Creating structures:        materials/creating-structures.md
-            - Upload:                     materials/upload.md
+            - Advanced Search:            materials/advanced-search.md
             - Import:                     materials/import.md
+            - Upload:                     materials/upload.md
+            - Copy from shared bank:      materials/bank.md
             - Select During Job Creation: materials/selection.md
-            - Search & Compare:           materials/search-compare.md
-            - Combinatorial sets:         materials/combinatorial-sets.md
             - Other:                      materials/other-actions.md
+            - Search & Compare:           materials/search-compare.md
+
+    - Materials Designer:
+        - Overview:                     materials-designer/overview.md
+        - Header Menu:
+            - Input/Output:             materials-designer/header-menu/input-output.md
+            - "Input/Output > Import":  materials-designer/header-menu/input-output/import.md
+            - "Input/Output > Export":  materials-designer/header-menu/input-output/export.md
+            - "Input/Output > Save":    materials-designer/header-menu/input-output/save.md
+            - Edit:                     materials-designer/header-menu/edit.md
+            - View:                     materials-designer/header-menu/view.md
+            - Advanced:                 materials-designer/header-menu/advanced.md
+            - "Advanced > Supercell":   materials-designer/header-menu/advanced/supercell.md
+            - "Advanced > Combinatorial Set":  materials-designer/header-menu/advanced/combinatorial-set.md
+            - "Advanced > Surface / Slab":     materials-designer/header-menu/advanced/surface-slab.md
+            - Help:                     materials-designer/header-menu/help.md
+        - Sidebar:
+            - Items List:               materials-designer/sidebar-items.md
+        - Text Editor:
+            - Lattice Editor:           materials-designer/lattice.md
+            - Basis Editor:             materials-designer/basis.md
+        - 3D viewer:
+            - View features:            materials-designer/viewer-view.md
+            - Edit features:            materials-designer/viewer-edit.md
+            - Export features:          materials-designer/viewer-export.md
+
 
     - Workflows:
         - Overview:                       workflows/overview.md

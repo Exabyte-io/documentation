@@ -432,5 +432,6 @@ a.toctree-l4 {
  *                  ADMONITIONS
  * --------------------------------------------------------- */
 .admonition {
+    opacity: 0.8;
     border: solid 1px #e1e4e5;
 }
