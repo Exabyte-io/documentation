@@ -4,7 +4,7 @@ Advanced features of the Materials Designer interface can be accessed through th
 
 <img src="/images/advanced-menu.png"/>
 
-# Available Advanced Features
+# Advanced Features
 
 Such advanced features are designed to help the user build complex crystalline structures, in particular:
  
