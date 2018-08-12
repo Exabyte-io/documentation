@@ -20,28 +20,31 @@ Finally, supercells are also commonly used in computational models of crystal de
 
 # How are supercells defined?
 
-The basis vectors of unit cell U $({\vec {a}},{\vec {b}},{\vec {c}})$  can be transformed to basis vectors of supercell S {\textstyle ({\vec {a}}',{\vec {b}}',{\vec {c}}')} {\textstyle ({\vec {a}}',{\vec {b}}',{\vec {c}}')} by way of the following linear transformation:
+The basis vectors of unit cell U $({\vec {a}},{\vec {b}},{\vec {c}})$  can be transformed to basis vectors of supercell S $({\vec {a}}',{\vec {b}}',{\vec {c}}')$ by way of the following linear transformation:
 
+$$
+{\displaystyle {\begin{pmatrix}{\vec {a}}'&{\vec {b}}'&{\vec {c}}'\\\end{pmatrix}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\hat {P}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\begin{pmatrix}P_{11}&P_{12}&P_{13}\\P_{21}&P_{22}&P_{23}\\P_{31}&P_{32}&P_{33}\\\end{pmatrix}}} 
+$$
 
-{\displaystyle {\begin{pmatrix}{\vec {a}}'&{\vec {b}}'&{\vec {c}}'\\\end{pmatrix}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\hat {P}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\begin{pmatrix}P_{11}&P_{12}&P_{13}\\P_{21}&P_{22}&P_{23}\\P_{31}&P_{32}&P_{33}\\\end{pmatrix}}} {\displaystyle {\begin{pmatrix}{\vec {a}}'&{\vec {b}}'&{\vec {c}}'\\\end{pmatrix}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\hat {P}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\begin{pmatrix}P_{11}&P_{12}&P_{13}\\P_{21}&P_{22}&P_{23}\\P_{31}&P_{32}&P_{33}\\\end{pmatrix}}}
+where ${\hat {P}}$ is the corresponding linear transformation matrix. All items $P_{ij}$ should be integer numbers and $\det({\hat {P}})>1$ (with $\det({\hat {P}})=1$ the transformation preserves the volume of the original unit cell). For example, the matrix
 
-where {\textstyle {\hat {P}}} {\textstyle {\hat {P}}} is the corresponding linear transformation matrix. All items {\textstyle P_{ij}} {\textstyle P_{ij}} should be integer numbers and {\textstyle \det({\hat {P}})>1} {\textstyle \det({\hat {P}})>1} (with {\textstyle \det({\hat {P}})=1} {\textstyle \det({\hat {P}})=1} the transformation preserves the volume of the original unit cell). For example, the matrix
+$$
+{\displaystyle P_{P\rightarrow I}={\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\\\end{pmatrix}}}
+$$
 
-{\displaystyle P_{P\rightarrow I}={\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\\\end{pmatrix}}} {\displaystyle P_{P\rightarrow I}={\begin{pmatrix}0&1&1\\1&0&1\\1&1&0\\\end{pmatrix}}}
-
-transforms the primitive cell of a body-centered cubic lattice to its fully-symmetric conventional unit cell. Another particular case of the transformation is a diagonal form ( {\textstyle P_{i\neq j}=0} {\textstyle P_{i\neq j}=0}) of the matrix. This type of transformations is referred to as diagonal supercell expansion, and can be interpreted as a simple repetition of the initial cell over its crystallographic axes.
+transforms the primitive cell of a body-centered cubic lattice to its fully-symmetric conventional unit cell. Another particular case of the transformation is a diagonal form $P_{i\neq j}=0$ of the matrix. This type of transformations is referred to as diagonal supercell expansion, and can be interpreted as a simple repetition of the initial cell over its crystallographic axes.
 
 # Generating Supercells
 
-Click on the `Supercell` option in the `Advanced` menu. The "Generate supercell" overlay highlighted in the image below will allow you to set parameters of the supercell matrix.  
+Click on the `Supercell` option in the `Advanced` menu. The "Generate supercell" overlay highlighted in the image below will allow you to set parameters of the supercell transformation matrix.  
 
 <img src="/images/generate-supercell.png"/>
 
-When finished setting up the transformation matrix, click on `Submit` and both the "Crystal Basis" and 3D representation of the structure will update accordingly.
+When finished setting up the transformation matrix, click on `Submit` and both the crystal data in the central panel of the Materials Designer interface and the 3D representation of the structure on the right-hand viewer will update accordingly to reflect the newly-generated supercell.
 
 # Animation
 
-Click on the animation below to see the above in action. In this example, we generate a 2x2x2 supercell of a cubic structure by inserting the diagonal elements of the corresponding transformation matrix, whilst leaving the off-diagonal elements to zero. 
+Click on the animation below to see the above in action. In this example, we generate a 2x2x2 supercell of a cubic structure by inserting the diagonal elements of the corresponding transformation matrix, whilst leaving the off-diagonal elements to zero. In this way the corresponding diagonal supercell expansion is achieved. 
 
 <img data-gifffer="/images/CreateMaterialSupercell.gif" />
 
