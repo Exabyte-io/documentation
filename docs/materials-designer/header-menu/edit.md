@@ -27,5 +27,3 @@ The user can also `Reset` <i class="zmdi zmdi-close zmdi-hc-border"></i> all cha
 The `Edit` menu also allows the user to `Clone` <i class="zmdi zmdi-collection-image zmdi-hc-border"></i> the currently selected structure into a new distinct entry in the items list sidebar. This feature is demonstrated in the short animation below, where we clone the original silicon structure into a new entry which appears below it:
 
 <img data-gifffer="/images/edit-clone.gif" />
-
-
