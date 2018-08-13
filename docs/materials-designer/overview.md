@@ -42,17 +42,3 @@ When first opened, the page is initialized with the default material (FCC Silico
 1. [VESTA homepage](http://jp-minerals.org/vesta/en/)
 2. [VMD homepage](http://www.ks.uiuc.edu/Research/vmd/)
 3. [XCRYSDEN homepage](http://www.xcrysden.org/)
-
-
-
-
-
-
-
-
-
-
-
-
-
-

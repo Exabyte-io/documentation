@@ -33,4 +33,3 @@ Press the `OK` button to save the desired materials together with any tags added
 The steps above are summarized in the animation below. Here, we first select the second material in the sidebar items list, and we change one of its atomic coordinates. Next, we open the "Save Items" dialog and add new tags, pressing the Enter key after each tag is typed. We further choose to save this material only ("Save Current"), and choose to save it to our own private materials collection as opposed to the public collection (Public = false).
 
 <img data-gifffer="/images/SaveMaterialsDesigner.gif" />
-
