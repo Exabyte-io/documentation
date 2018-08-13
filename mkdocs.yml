@@ -7,6 +7,8 @@ extra_javascript:
     # TODO: migrate away from parse
     # - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
+    - 'javascripts/extra.js'
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 site_favicon: /img/favicon.ico
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
@@ -16,6 +18,7 @@ extra:
         - /preload.js
 markdown_extensions:
     - admonition
+    - pymdownx.arithmatex
     - toc:
         permalink: true
 pages:
