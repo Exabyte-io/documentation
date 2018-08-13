@@ -1,8 +1,0 @@
-*site/
-.DS_Store
-.idea
-.virtualenv
-tmp/
-docs/images*
-scripts/*.mp4
-scripts/*.gif
