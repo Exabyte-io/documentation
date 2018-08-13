@@ -6,7 +6,7 @@ Advanced features of the Materials Designer interface can be accessed through th
 
 # Advanced Features
 
-Such advanced features are designed to help the user build the following complex crystalline structures listed below. Each one of these advanced constructor utilities is reviewed in detail in its own separate documentation page. 
+Such advanced features are designed to help the user build the complex crystalline structures listed below. Each one of these advanced constructor utilities is reviewed in detail in its own separate documentation page. 
  
 # [Supercells](advanced/supercell.md) <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i>
 # [Combinatorial Sets](advanced/combinatorial-set.md) <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> 
