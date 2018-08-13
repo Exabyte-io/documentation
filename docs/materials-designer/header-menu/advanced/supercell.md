@@ -16,6 +16,8 @@ Another case for appreciating the usefulness of supercells in solid-state physic
 
 <img src="/images/TGa4T.png"/>
 
+Similarly to the above examples of fcc and bcc lattices, there are in fact many other instances where supercells afford for a more inherent visualization of the long-range symmetric order of crystal structures. 
+
 Finally, supercells are also commonly used in computational models of crystal defects, in order to allow for the use of periodic boundary conditions.
 
 # How are supercells defined?

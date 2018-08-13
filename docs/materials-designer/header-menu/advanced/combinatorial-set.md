@@ -6,6 +6,10 @@ In particular, this feature lets users create multiple materials at the same tim
 
 Finally, we explain how combinations of vacancy sites instead of atoms can also be built. 
 
+# Why are combinatorial sets useful?
+
+Imagine a scenario where tens or even hundreds of different binary or ternary semiconductors, or different metallic alloys, have to be studied as part of a common project to determine which particular composition (combination of element types) produces the most suitable material properties to achieve certain desired technological objectives. This is an example application where the user will find combinatorial sets to be particularly resourceful.
+
 # The "Generate Combinatorial Set" dialog
 
 Open the "Generate Combinatorial Set" dialog via the `Advanced` menu in the header bar of the Materials Designer interface. The dialog has the following appearance:
