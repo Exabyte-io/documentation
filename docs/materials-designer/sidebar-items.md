@@ -11,7 +11,7 @@ The entry has a checkmark <i class="zmdi zmdi-check zmdi-hc-border"></i> (supers
 Furthermore, all material entries with unsaved changes appear colored in yellow. Once the material has been saved according to the procedure outlined [here](header-menu/input-output/save.md), the corresponding entry will change from yellow back to white.
 
 !!!warning "Note: newly saved materials"
-For the moment, newly saved materials need to be re-imported into Materials Designer in order for the checkmark indicating their saved status to appear.
+    For the moment, newly saved materials need to be re-imported into Materials Designer in order for the checkmark indicating their saved status to appear.
 
 # Select Item
 
