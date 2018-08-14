@@ -1,18 +1,21 @@
 # Items List Sidebar
 
-The complete list of crystal structures which can be handled in the Materials Designer is shown in the left-hand sidebar of the designer's graphical interface. The location of this sidebar within the wider interface is illustrated in the image below:
+Items currently available for edit in the Materials Designer are shown in the left-hand sidebar. The location of the sidebar within the wider interface is illustrated in the image below:
 
 <img src="/images/sidebar-list-items.png"/>
 
 # Material entries
 
-A checkbox appears on the left-hand side of a material's entry in the items list if the material's crystal structure is already present in the account-owned collection. 
+The entry has a checkmark <i class="zmdi zmdi-check zmdi-hc-border"></i> (superscript added to the entry icon on the left) in case the entry is already present in the account-owned collection.
 
 Furthermore, all material entries with unsaved changes appear colored in yellow. Once the material has been saved according to the procedure outlined [here](header-menu/input-output/save.md), the corresponding entry will change from yellow back to white.
 
+!!!warning "Note: newly saved materials"
+For the moment, newly saved materials need to be re-imported into Materials Designer in order for the checkmark indicating their saved status to appear.
+
 # Select Item
 
-Each entry can be selected for further processing by simply clicking on it. Once a material has been selected, its corresponding crystal structure will automatically be displayed on the 3D interactive viewer on the right-hand side and all the associated crystallographic data will be inserted in the central panel of the interface.
+Each entry can be selected for processing by clicking on it. Once selected, its corresponding crystal structure and associated information will be used in the other components of Materials Designer (eg. [3D Viewer](../../viewer-intro.md) and [Source Editor](../../lattice.md)).
 
 # Delete Item
 
