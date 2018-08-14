@@ -59,13 +59,13 @@ pages:
             - Help:                     materials-designer/header-menu/help.md
         - Sidebar:
             - Items List:               materials-designer/sidebar-items.md
-        - Text Editor:
-            - Lattice Editor:           materials-designer/lattice.md
-            - Basis Editor:             materials-designer/basis.md
-        - 3D viewer:
-            - View features:            materials-designer/viewer-view.md
-            - Edit features:            materials-designer/viewer-edit.md
-            - Export features:          materials-designer/viewer-export.md
+#        - Text Editor:
+#            - Lattice Editor:           materials-designer/lattice.md
+#            - Basis Editor:             materials-designer/basis.md
+#        - 3D viewer:
+#            - View features:            materials-designer/viewer-view.md
+#            - Edit features:            materials-designer/viewer-edit.md
+#            - Export features:          materials-designer/viewer-export.md
 
 
     - Workflows:
