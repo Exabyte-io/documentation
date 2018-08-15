@@ -7,7 +7,6 @@ extra_javascript:
     # TODO: migrate away from parse
     # - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
-    - 'javascripts/extra.js'
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 site_favicon: /img/favicon.ico
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
@@ -65,13 +64,13 @@ pages:
             - Help:                     materials-designer/header-menu/help.md
         - Sidebar:
             - Items List:               materials-designer/sidebar-items.md
-        - Text Editor:
+        - Source Editor:
             - Lattice Editor:           materials-designer/lattice.md
             - Basis Editor:             materials-designer/basis.md
-        - 3D viewer:
-            - View features:            materials-designer/viewer-view.md
-            - Edit features:            materials-designer/viewer-edit.md
-            - Export features:          materials-designer/viewer-export.md
+        #- 3D viewer:
+        #    - View features:            materials-designer/viewer-view.md
+        #    - Edit features:            materials-designer/viewer-edit.md
+        #    - Export features:          materials-designer/viewer-export.md
 
 
     - Workflows:
