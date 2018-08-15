@@ -13,13 +13,13 @@ $$
 {\displaystyle \mathbf{R} = n_{1}\mathbf{a}_{1} + n_{2}\mathbf{a}_{2} + n_{3}\mathbf{a}_{3}}
 $$
   
-where $n_i$ are any integers, and $a_i$ are known as the primitive vectors spanning the lattice in three-dimensional space. The defining characteristic of a Bravais lattice is that, for any choice of position vector $R$, the lattice has to look exactly the same when viewed from any equivalent lattice point.
+where $n_i$ are any integers, and $a_i$ are known as the primitive lattice vectors spanning the lattice in three-dimensional space. The defining characteristic of a Bravais lattice is that, for any choice of position vector $R$, the lattice has to look exactly the same when viewed from any equivalent lattice point.
   
 Two Bravais lattices are considered equivalent if they have the same symmetry elements. In this sense, there are 14 possible distinct Bravais lattices in three-dimensional space, grouped together into 7 more general symmetry categorizations known as lattice systems. These two categories are tabulated in the image below for reference purposes, together with a representation of the typical appearance of their conventional unit cells exhibiting the full symmetry of the lattice:
   
 <img src="/images/Bravais_lattices.png"/>
 
-It can be deducted by inspecting the above figure that, besides their symmetry elements, Bravais lattices can additionally be described by the lattice parameters defining their unit cells. These parameters comprise information about both the lengths of the delimiting axes of the unit cell (the $a$, $b$ and $c$ lattice constants) and the angles between them ($\alpha$, $\beta$ and $\gamma$), as explained in the figure below: 
+It can be deduced by inspecting the above figure that, besides their symmetry elements, Bravais lattices can additionally be described by the lattice parameters defining their unit cells. These parameters comprise information about both the lengths of the delimiting axes of the unit cell (the $a$, $b$ and $c$ lattice constants) and the angles between them ($\alpha$, $\beta$ and $\gamma$), as explained in the figure below: 
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/UnitCell.png"/>
 
@@ -39,7 +39,7 @@ In order to choose the desired Bravais "Lattice type" out of the total list of 1
 
 ## A word of caution on the use of primitive unit cells
 
-It is important to notice that the lattice parameters generated upon a selection of a particular lattice type are those that describe the *primitive* unit cell of the crystal, and not its fully-symmetric conventional unit cell. In fact, only in Bravais lattices of type "P" (for primitive) are the two types of cells equivalent (the reader is referred to the image tabulating all Bravais lattices in the theoretical background section at the beginning of this documentation page for a list of "P" lattice types). 
+It is important to notice that the lattice parameters generated upon a selection of a particular lattice type are those that describe the *primitive* unit cell of the crystal containing just one lattice point, and not its fully-symmetric conventional unit cell which can contain several lattice points. In fact, only in Bravais lattices of type "P" (for primitive) are the two types of cells equivalent (the reader is referred to the image tabulating all Bravais lattices in the theoretical background section at the beginning of this documentation page for a list of "P" lattice types). 
 
 For example, for a choice of Face-centred cubic (fcc) lattice type, the outcome will be the red-colored primitive cell portrayed in the image below, and not the wider cubic symmetric conventional unit cell. This is why, when fcc is selected, all unit cell angles are automatically set to 60 degrees, and not to 90 degrees as the name of the lattice type might suggest. 
 
