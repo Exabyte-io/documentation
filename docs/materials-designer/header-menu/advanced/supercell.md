@@ -1,6 +1,8 @@
 # Supercells
 
-A general theoretical background introduction is offered in the expandable section below, to be referred to at the reader's discretion. The reader who is unfamiliar with the concept of supercell in crystallography is advised to first review this introductory material, before continuing through the rest of this documentation page on how supercell generation is actually implemented in the Materials Designer interface. 
+Supercell is a widely used crystallographic concept [[1](#links)]. A general theoretical background is offered in the expandable section below for the readers unfamiliar with the topic. The rest of this documentation page explains how supercell generation is implemented in the Materials Designer interface.
+
+# Theoretical Background
 
 <details>
   <summary>
@@ -8,31 +10,35 @@ A general theoretical background introduction is offered in the expandable secti
   </summary>
 
 
-# What are supercells?
+## What are supercells?
 
 A material has a crystal structure associated with it and the latter is described by a unit cell. There are an infinite number of unit cells U with different shapes and sizes which can describe the same crystal. The supercell S of unit cell U is defined as a cell which describes the same crystal, but has larger volume than cell U [[1](#links)].
 
-Some examples of different supercells for the same underlying 2D cubic crystal are shown in the figure below. The relatively large size of such supercells has to be compared to the smaller surface area of the most basic (primitive) unit cell of this crystal containing just one lattice point, two examples of which are shown towards the centre of the figure and at the top-left corner. Both diagonal and non-diagonal supercells are included in this picture to reflect the general scope of the supercell definition.
+### 2D examples
+
+Examples of different supercells for the same underlying 2D cubic crystal are shown in the figure below. The relatively large size of such supercells has to be compared to the smaller surface area of the most basic (primitive) unit cell of this crystal containing just one lattice point, example of which is shown towards the center of the figure. Both diagonal and non-diagonal supercells are included in this picture to reflect the general scope of the supercell definition.
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/2d_supercell_example.svg"/>
 
-# Why are supercells useful?
+## Why are supercells useful?
 
-There are many instances where the construction of supercells affords for an easier ascertainment of useful crystal properties and visual symmetric qualities, which could not otherwise be determined by looking at just the initial cell.
+There are many instances where the construction of supercells affords for an easier ascertainment of useful crystal properties and visual symmetric qualities, which could otherwise be difficult to determine by looking at just the initial cell.
 
-In particular, there are many occurrences of methods in computational materials science for determining crystal structure properties which rely on small perturbations of supercell structures away from their original equilibrium configurations. For example, during phonon calculations by the small displacement method, phonon frequencies in crystals are calculated using finite force values computed on slightly displaced atoms in a supercell of the original structure.
+### Phonon calculations
+
+There are many occurrences of methods in computational materials science for determining crystal structure properties which rely on small perturbations of the supercells away from their original equilibrium configurations. For example, during phonon calculations by the small displacement method ("frozen phonon"), the frequencies are calculated using the finite force values computed on slightly displaced atoms in a supercell of the original structure.
  
-Another case for appreciating the usefulness of supercells in solid-state physics is the way the conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect much more intuitively the overall symmetry of such crystals, especially when compared to the un-symmetric trapezoidal appearance of their basic one-atom primitive unit cells. 
-
-The figure below illustrates the starkness of such contrast for the example of an fcc lattice. In this image, the volume marked in red represents the oddly-shaped primitive unit cell, whereas the over-arching cubic supercell framework on the other hand exhibits the full face-centred cubic symmetry from which the corresponding crystal structure gets its name:
+### Conventional vs primitive cells
+ 
+The conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect more intuitively the overall symmetry of such systems. The figure below illustrates this for the example of an fcc lattice. In this image, the volume marked in red represents the primitive unit cell, whereas the over-arching cubic conventional supercell exhibits the full face-centred cubic symmetry from which the corresponding crystal structure gets its name:
 
 <img src="/images/TGa4T.png"/>
 
-Similarly to the above-mentioned examples of fcc and bcc lattices, there are in fact many other instances where supercells afford for a more inherent visualization and perception of the long-range symmetric order of crystal structures. 
+### Defects
 
 Finally, supercells are also commonly used in computational models of crystal defects, in order to allow for the use of periodic boundary conditions.
 
-# How are supercells defined?
+## How are supercells defined?
 
 The basis vectors of unit cell U $({\vec {a}},{\vec {b}},{\vec {c}})$  can be transformed to basis vectors of supercell S $({\vec {a}}',{\vec {b}}',{\vec {c}}')$ by way of the following linear transformation:
 
@@ -52,17 +58,23 @@ Another particular case of the transformation is a diagonal form $P_{i\neq j}=0$
 
 </details>
 
-# Generating Supercells
+# The Generate Dialog
 
-Click on the `Supercell` option in the `Advanced` menu. The resulting "Generate supercell" overlay highlighted in the image below will allow you to set the parameters of the supercell transformation matrix.  
+Choose the `Supercell` option in the `Advanced` menu to opend the "Supercell Generation Dialog". 
+
+# Supercell Transformation Matrix 
+
+The overlay, highlighted in the image below, will allow the reader to set the parameters of the supercell transformation matrix (with its elements positioned exactly as explained in the previous paragraph). 
 
 <img src="/images/generate-supercell.png"/>
 
-When finished setting up the transformation matrix, click on `Submit` and both the crystal data in the central panel of the Materials Designer interface and the 3D representation of the structure on the right-hand viewer will update accordingly to reflect the newly-generated supercell.
+# Generate Supercell
+
+When finished setting up the transformation matrix, click `Submit` button and both the crystal data and the 3D representation will update accordingly to reflect the newly-generated supercell.
 
 # Animation
 
-Click on the animation below to see the above in action. In this example, we generate a 2x2x2 supercell of a cubic structure containing two atoms by inserting the diagonal elements of the corresponding transformation matrix, whilst leaving the off-diagonal elements to zero. In this way the corresponding diagonal supercell expansion is achieved. 
+Click on the animation below to see the above in action. In this example, we generate a 2 x 2 x 2 supercell of a cubic structure containing two atoms by inserting the diagonal elements of the corresponding transformation matrix, whilst leaving the off-diagonal elements to zero.
 
 <img data-gifffer="/images/CreateMaterialSupercell.gif" />
 
