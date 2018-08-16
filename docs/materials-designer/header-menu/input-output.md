@@ -5,18 +5,18 @@ The left-most `Input/Output` menu on the top menu bar of the Materials Designer 
 <img src="/images/input-output-menu.png"/>
 
 
-# [Import](input-output/input-output-import.md)
+# [Import](input-output/import.md)
 
-Import action of the menu is explained [here](input-output/input-output-import.md). 
+Import action of the menu is explained [here](input-output/import.md). 
 
-# [Export](input-output-export.md)
+# [Export](input-output/export.md)
 
-Instructions on how to use the Export functionality of the menu can be found [here](input-output-export.md). 
+Instructions on how to use the Export functionality of the menu can be found [here](input-output/export.md). 
 
 
-# [Save](input-output-save.md)
+# [Save](input-output/save.md)
 
-Export action of the menu is documented [here](input-output-save.md). 
+Export action of the menu is documented [here](input-output/save.md). 
 
 
 # Exit
