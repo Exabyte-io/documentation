@@ -12,26 +12,22 @@ In order to create a new material, one first needs to navigate to the "Materials
 
 # Components of the Interface
 
-The Materials Designer is structured into four main building blocks, and has the typical initial default appearance as shown in the picture below. Its four main components are demarcated in red and numbered according to the list which follows the image. 
+The Materials Designer is structured into four main building blocks and has the typical initial default appearance as shown in the picture below, where the four main components are demarcated in red.  To access their corresponding documentation pages, please click on each component's red panel directly on the image:
 
-<img src="/images/materials-designer-initial.png"/> 
+<img src="/images/materials-designer-initial.png/" usemap="#mapname">
 
-## 1. Header Menu
+<map name="mapname">
+    <area shape="rect" coords="0,78,129,445" href="/materials-designer/sidebar-items/">
+    <area shape="rect" coords="129,78,378,445" href="/materials-designer/source-editor-intro/">
+    <area shape="rect" coords="378,78,742,445" href="/materials-designer/viewer-intro/">
+    <area shape="rect" coords="0,39,750,78" href="/materials-designer/header-menu/header-menu-intro">
+</map>
 
-At the top of the page users find a header menu bar which provides the general functionality, such as importing the data and undo/redo. We explain these features in details [here](header-menu/input-output.md). At the right-end of this menu bar, a status indicator is also present: a check-mark means that the computational engine of the interface is not currently busy, and that new tasks can therefore be launched.
-
-## 2. Items List Sidebar 
-
-On the left there is a sidebar listing all the materials structures currently available for consideration and visualization. We explain it more in details [here](sidebar-items.md).
-
-## 3. Crystallographic Data Panel
- 
-In the middle of the interface, a central panel is present comprising all the necessary crystallographic data (in an editable form) for defining the crystal structure under consideration. Instructions on how to enter or modify information pertaining to the overall Bravais lattice of the structure can be found [here](lattice.md), whereas those concerning specifically the atoms in the crystal basis can be accessed [here](basis.md). 
-
-## 4. 3D Interactive Crystal Viewer
-
-A 3D crystal structure graphical viewer is located on the right-hand side. This viewer can be rendered interactive to modify the current view of the crystal through simple mouse moves, as explained [here](viewer-intro.md).
-
+<!-- coords="x1,y1,x2,y2" -->
+<!-- x1=top left X coordinate -->
+<!-- y1=top left Y coordinate -->
+<!-- x2=bottom right X coordinate -->
+<!-- y2=bottom right Y coordinate -->
 
 # Default Material
 
