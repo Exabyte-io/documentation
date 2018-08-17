@@ -51,7 +51,7 @@ pages:
     - Materials Designer:
         - Overview:                     materials-designer/overview.md
         - Header Menu:
-            - Introduction:             materials-designer/header-menu/header-menu-intro.md
+            - Overview:                 materials-designer/header-menu/header-menu-intro.md
             - Input/Output:             materials-designer/header-menu/input-output.md
             - "Input/Output > Import":  materials-designer/header-menu/input-output/import.md
             - "Input/Output > Export":  materials-designer/header-menu/input-output/export.md
@@ -66,16 +66,14 @@ pages:
         - Sidebar:
             - Items List:               materials-designer/sidebar-items.md
         - Source Editor:
-            - Introduction:             materials-designer/source-editor-intro.md
+            - Overview:                 materials-designer/source-editor-intro.md
             - Lattice Editor:           materials-designer/lattice.md
             - Basis Editor:             materials-designer/basis.md
         - 3D viewer:
-            - Introduction:             materials-designer/viewer-intro.md
+            - Overview:                 materials-designer/viewer-intro.md
             - View features:            materials-designer/viewer-view.md
             - Edit features:            materials-designer/viewer-edit.md
             - Export features:          materials-designer/viewer-export.md
-
-
 
     - Workflows:
         - Overview:                       workflows/overview.md
@@ -93,6 +91,20 @@ pages:
 #        - Density Functional Theory:    workflows/density-functional-theory.md
 #        - Example simulations:          workflows/example-simulations.md
 #        - Advanced Properties:          workflows/advanced-characteristics.md
+
+    - Workflow Designer:
+        - Overview:                          workflow-designer/general-overview.md
+        - Header Menu:
+            - Overview:                      workflow-designer/header-menu-actions.md
+        - Sidebar:
+            - Items List:                    workflow-designer/sidebar-items.md
+        #- Source Editor:
+        #    - General Overview:             workflow-designer/source-editor-intro.md
+        #    - Overview:                     workflow-designer/overview.md
+        #    - Important Settings:           workflow-designer/important-settings.md
+        #    - Detailed View:                workflow-designer/detailed-view.md
+        #    - Compute:                      workflow-designer/compute.md
+
 
     - Compute:
         - Overview:                 compute/overview.md

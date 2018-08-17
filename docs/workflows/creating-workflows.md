@@ -1,16 +1,15 @@
-# Introduction
+# New Workflow Creation
 
-There are two ways of creating workflows: from scratch or by cloning an existing workflow.
+In order to create a new workflow for performing general materials science calculations on any desired sample, click on the "Create" icon <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> located at the top-right corner starting from the "Workflows" page listing the account-owned workflows collection (this page is directly accessible via the left-hand sidebar of the Exabyte platform). 
 
-# From scratch
+This will open the interface for creating a new workflow, which will henceforth be referred to as the "Workflow Designer".
 
-In order to create a new workflow one would need to navigate to "Workflows" page using the left-hand sidebar, and then click on "Create New" button - <i class="zmdi zmdi-plus-circle-o"></i>. 
+# Link to Workflow Designer documentation
 
-For the demonstration of how to add a Subworkflow/Unit see the animation below.
+You can find complete instructions on how to use this Workflow Designer interface in its dedicated [documentation chapter](../workflow-designer/general-overview.md). 
 
-# Cloning
+# Animation
 
-The video below demonstrates how to clone a workflow and then edit to extend and add post-processing subworkflow.
+For a demonstration of how to enter the Workflow Designer to create a new workflow from scratch starting from the account-owned workflows collection, please take a look at the following animation:
 
-<!-- TODO: use local copy instead -->
-<img data-gifffer="https://exabyte.io/img/workflows-add-postprocessing.gif" />
+<img data-gifffer="/images/create-new-workflow.gif" />
