@@ -1,6 +1,6 @@
 # New Workflow Creation
 
-In order to create a new workflow for performing general materials science calculations on any desired sample, click on the "Create" icon <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> located at the top-right corner starting from the "Workflows" page listing the account-owned workflows collection (this page is directly accessible via the left-hand sidebar of the Exabyte platform). 
+In order to create a new workflow for performing general materials science calculations on any desired sample, click on the `Create` icon <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> located at the top-right corner starting from the "Workflows" page listing the account-owned workflows collection (this page is directly accessible via the left-hand sidebar of the Exabyte platform). 
 
 This will open the interface for creating a new workflow, which will henceforth be referred to as the "Workflow Designer".
 
