@@ -1,6 +1,6 @@
 # The Workflows Bank
 
-The most common types of calculations routinely encountered have already been assembled by in the form of pre-defined workflows, and are currently available for distribution in a central repository accessible to all users. We  refer to it as the Workflows Bank (to be compared with the equivalent Bank facility for pre-defined material structures documented [here](../materials/bank.md)). 
+The most common types of calculations routinely encountered have already been assembled in the form of pre-defined workflows, and are currently available for distribution in a central repository accessible to all users. We  refer to it as the Workflows Bank (to be compared with the equivalent Bank facility for pre-defined material structures documented [here](../../materials/bank.md)). 
 
 User-created workflows are also saved into the Bank collection for convenience. For accounts with elevated service levels the corresponding entries are private and only visible to the account members, public workflows are visible to all users. 
  
