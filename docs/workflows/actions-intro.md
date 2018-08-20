@@ -1,10 +1,14 @@
 # Workflow Actions
 
-A set of simple actions applicable to workflows is offered within the main "Workflow" page <i class="zmdi zmdi-dot-circle zmdi-hc-border"></i> of the Exabyte platform containing the account-owned workflows collection. This collection of previously created and saved workflows can be accessed from anywhere in the Exabyte platform by first opening the main left-hand sidebar, and from there navigating to the "Workflows" page displaying the collection. 
+A set of actions applicable to workflows is offered within the main "Workflow" list view.
 
 # Types of Actions
 
-Once in the main workflows collection page, the following set of actions pertaining to workflows is permitted, either via the toolbar menu located at the top-right corner of the page, or through the drop-down menu accessible under the button labelled with three vertical dots at the right-end of each workflow entry in the collection (some of these actions are in fact accessible via both menus):
+The following set of actions pertaining to workflows is permitted, either via the **toolbar menu** located at the top-right corner of the page, or through the **drop-down menu** accessible under the three vertical dots at the right-end of each workflow entry in the list. Some of these actions are in fact accessible via both menus.
+
+Click on each action icon directly in the image above to access the corresponding documentation page. The precise location of both the toolbar and drop-down menus containing these action buttons within the wider workflow collection interface is further clarified in the panels emphasized in the image below:
+
+<!-- TODO: the picture looks really weird - adjust it to have smaller icons and horizontal aspect ratio -->
 
 <img src="/images/workflow-actions-buttons.png" usemap="#mapname">
                                                   
@@ -19,11 +23,9 @@ Once in the main workflows collection page, the following set of actions pertain
 </map>
                                                   
                                                   
-Please click on each action icon directly in the image above to access the corresponding documentation page. The precise location of both the toolbar and drop-down menus containing these action buttons within the wider workflow collection interface is further clarified in the panels emphasized in the image below:
-
 <img src="/images/workflow-actions-menus.png"/>
 
 
-# Importing new workflows from the Bank
+# Importing from the Bank
 
-Besides the above-mentioned menu actions, pre-defined and pre-assembled workflows for performing the most common computational tasks in atomistic materials science can be imported directly into the account-owned workflows collection from a central repository, referred to as the workflows "Bank" in the context of the Exabyte platform. We explain how to do so in the following [documentation page](workflow-bank.md). 
+Besides the above, workflows can be imported directly into the account-owned workflows collection from a central repository, referred to as the workflows "Bank". We explain how to do so in the following [documentation page](workflow-bank.md). 

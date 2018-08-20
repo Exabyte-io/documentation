@@ -84,7 +84,7 @@ pages:
             - Jobs:                       jobs.md
         - Actions:
             - Overview:                   workflows/actions-intro.md
-            - Create:                     workflows/creating-workflows.md
+            - Create:                     workflows/create.md
             - Update:                     workflows/updating-workflows.md
             - Clone:                      workflows/clone.md
             - Open:                       workflows/open-edit.md
