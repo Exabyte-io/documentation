@@ -83,14 +83,14 @@ pages:
             - Units:                      workflows/units.md
             - Jobs:                       jobs.md
         - Actions:
-            - Overview:                   workflows/actions-intro.md
-            - Create:                     workflows/create.md
-            - Update:                     workflows/updating-workflows.md
-            - Clone:                      workflows/clone.md
-            - Open:                       workflows/open-edit.md
-            - Copy from shared bank:      workflows/workflow-bank.md
-            - Searching:                  workflows/searching.md
-            - Other:                      workflows/other-actions.md
+            - Overview:                   workflows/actions/actions-intro.md
+            - Create:                     workflows/actions/create.md
+            - Update:                     workflows/actions/updating-workflows.md
+            - Clone:                      workflows/actions/clone.md
+            - Open:                       workflows/actions/open-edit.md
+            - Copy from shared bank:      workflows/actions/workflow-bank.md
+            - Search:                     workflows/actions/searching.md
+            - Other:                      workflows/actions/other-actions.md
             #- Using workflows:            workflows/using-workflows.md
             - Adding Convergence:         workflows/convergence-algorithms.md
             - Adding Relaxation:          workflows/structural-relaxation.md
