@@ -8,7 +8,7 @@
 
 By default, the 3d Editor is non-interactive and only shows the structural information with a pre-defined setting (eg. view angle, axes, number of repetitions). Interactivity is enabled by clicking on the switch button <i class="zmdi zmdi-power zmdi-hc-border"></i> at the top-left corner of the crystal editor panel. Doing so will activate the following functionality parts, each documented in its own page:
 
-<!-- TODO: add an image with different panels all open at once and highlighted with names as in the above image -->
+<img src="/images/3D-viewer-panels.png"/>
  
 # [View Panel](./3d-editor/view.md)
 
