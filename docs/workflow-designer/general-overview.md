@@ -6,7 +6,7 @@
 
 # Components of the Interface
 
-The Workflow Designer is structured into three main building blocks, and has the typical initial default appearance as shown in the picture below when a new workflow is being created from scratch via the "Create Workflow" action introduced [in this page](../workflows/creating-workflows.md). In this image, the three main components of the interface are delimited in red. To access their respective documentation pages, please click on each component's red panel directly on the image:
+The Workflow Designer is structured into three main building blocks, and has the typical initial default appearance as shown in the picture below when a new workflow is being created from scratch via the "Create Workflow" action introduced [in this page](../workflows/create.md). In this image, the three main components of the interface are delimited in red. To access their respective documentation pages, please click on each component's red panel directly on the image:
 
 <img src="/images/workflow-designer-initial.png/" usemap="#mapname">
 

@@ -83,7 +83,7 @@ pages:
             - Units:                      workflows/units.md
             - Jobs:                       jobs.md
         - Actions:
-            - Creating workflows:         workflows/creating-workflows.md
+            - Create:                     workflows/create.md
             - Using workflows:            workflows/using-workflows.md
             - Adding Convergence:         workflows/convergence-algorithms.md
             - Adding Relaxation:          workflows/structural-relaxation.md
