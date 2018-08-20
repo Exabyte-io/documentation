@@ -1,12 +1,21 @@
-# Workflow cloning
+# Clone / copy workflows
 
-The cloning (or copying) of a workflow present in the account-owned collection into a new distinct entry can be achieved as follows: first select the workflow entry by ticking its corresponding left-hand checkbox, and secondly click on the `Copy` button <i class="zmdi zmdi-copy zmdi-hc-border"></i> which can be found on the top-right toolbar of the workflow collection page.
+The cloning (or copying) of one or more workflows present in the account-owned collection into a new distinct entry can be achieved as follows: 
+
+1. select one or multiple the workflow entries by ticking the corresponding checkboxes, 
+2. click the `Copy` button <i class="zmdi zmdi-copy zmdi-hc-border"></i> in the actions toolbar at the top of the workflows list
  
-Alternatively, this cloning operation can be achieved directly through the `Copy` option under the three-dotted actions drop-down menu at the right-end of the workflow entry line that needs to be copied.
+Alternatively, this cloning operation can be achieved directly through the `Copy` option action the three-dotted actions drop-down menu at the right-end of the workflow entry line that needs to be copied.
 
-# Cloned workflow entry in collection
+# Cloned workflow entry
 
-Once the copying operation is finished, a new separate entry with exactly the same content as the original workflow will be generated and included in the collection list just above the original workflow item. The initial name of this new clone workflow always defaults to the original name with the string "(clone)" appended to it. The user is then free to modify this name accordingly by first opening the new workflow clone in the Workflow Designer interface by clicking on its name, and then following the instructions in this [page](../workflow-designer/header-menu-actions.md) for editing the workflow name to a more memorable form and subsequently saving the changes. 
+## Finding cloned entry in the list
+
+Once the copying operation is finished, a new separate entry with exactly the same content as the original will be generated and included in the list at the top (as the items in the list are sorted by the creation date by default). 
+
+## Name of the cloned item
+
+The initial name of this new clone workflow always defaults to the original name with the string "(clone)" appended to it. 
 
 # Animation
 

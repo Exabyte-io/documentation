@@ -1,6 +1,14 @@
-# Why the need to update existing workflows?
+# Update existing workflows
 
-There might come a point in time at which the operational efficiency and performance of a workflow distributed by Exabyte as part of the Workflow Bank gets enhanced by our research personnel, and that these improvements are then made public to the entire Exabyte user base by being incorporated directly into the existing entry within the Bank.
+<!-- TODO:
+
+- no explanation of what the Bank is - put a link
+- too much words again - leave less
+- split page into parts by meaning - eg:`what is Updating?`, `How to spot outdated workflows?`, `How to perform update?`
+
+--->
+
+There might come a point in time at which the operational efficiency and performance of a workflow gets enhanced by our personnel, and these improvements are then made public to the entire user base by being incorporated directly into the existing entry within the Bank.
  
  The user who had already imported a previous version of this workflow from the Bank into the account-owned workflows collection (following the procedure outlined [here](workflow-bank.md)) might then wish to "Download" such workflow performance updates directly into the existing collection entry. This possibility would certainly be more appealing than necessarily having to delete manually the current workflow entry from the collection, and then having to re-import a new copy of the workflow again from the Bank. 
 
