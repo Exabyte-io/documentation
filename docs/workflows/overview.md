@@ -2,7 +2,7 @@ This section contains information about how we organize, store and apply workflo
 
 # Data
 
-[Data](data.md) section contains example JSON representation of workflows and its detailed explanation.
+[Data](data/data.md) section contains example JSON representation of workflows and its detailed explanation.
 
 # Actions
 

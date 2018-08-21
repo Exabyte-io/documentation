@@ -2,7 +2,7 @@
 
 ## Import workflows from the Bank
 
-As we explain [in this page](workflow-bank.md), the most commonly encountered types of atomistic calculations in materials science have already been pre-packaged in the workflows "Bank", and can be imported directly by the user into the account-owned collection of workflows. 
+As we explain [in this page](bank.md), the most commonly encountered types of atomistic calculations in materials science have already been pre-packaged in the workflows "Bank", and can be imported directly by the user into the account-owned collection of workflows. 
 
 ## The need for updating 
 

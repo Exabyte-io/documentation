@@ -58,11 +58,11 @@ There are certain types of (sub)workflows that are commonly used in practice. We
 
 ## Convergence
 
-Converges a certain property with respect to the input parameters (Example: [k-point convergence of total energy](convergence-algorithms.md))
+Converges a certain property with respect to the input parameters (Example: [k-point convergence of total energy](../modifiers/convergence-algorithms.md))
 
 ## Optimization
 
-Optimizes material's structure usually with respect to total energy (Example: [geometry optimization/structural relaxation](structural-relaxation.md))
+Optimizes material's structure usually with respect to total energy (Example: [geometry optimization/structural relaxation](../modifiers/structural-relaxation.md))
 
 # Example representation
 

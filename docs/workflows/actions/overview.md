@@ -10,12 +10,12 @@ The following set of actions pertaining to workflows is permitted, either via th
                                                   
 <map name="mapname">
 <area shape="rect" coords="200,70,380,150" href="/workflows/actions/create/">
-<area shape="rect" coords="200,150,380,200" href="/workflows/actions/open-edit/">
-<area shape="rect" coords="200,200,380,250" href="/workflows/actions/clone">
-<area shape="rect" coords="380,70,600,120" href="/workflows/actions/other-actions">
-<area shape="rect" coords="380,120,600,170" href="/workflows/actions/updating-workflows">
-<area shape="rect" coords="380,170,600,220" href="/workflows/actions/other-actions">
-<area shape="rect" coords="380,220,600,270" href="/workflows/actions/searching">
+<area shape="rect" coords="200,150,380,200" href="/general/actions/open-edit/">
+<area shape="rect" coords="200,200,380,250" href="/general/actions/clone">
+<area shape="rect" coords="380,70,600,120" href="/general/actions/delete">
+<area shape="rect" coords="380,120,600,170" href="/workflows/actions/update">
+<area shape="rect" coords="380,170,600,220" href="/workflows/actions/default">
+<area shape="rect" coords="380,220,600,270" href="/general/actions/search">
 </map>
 
 The precise location of both the toolbar and drop-down menus containing these action buttons within the wider workflow collection interface is further clarified in the panels emphasized in the image below:
@@ -24,4 +24,4 @@ The precise location of both the toolbar and drop-down menus containing these ac
 
 # Importing from the Bank
 
-Besides the above, workflows can be imported directly into the account-owned workflows collection from a central repository, referred to as the workflows "Bank". We explain how to do so in the following [documentation page](workflow-bank.md). 
+Besides the above, workflows can be imported directly into the account-owned workflows collection from a central repository, referred to as the workflows "Bank". We explain how to do so in the following [documentation page](bank.md). 
