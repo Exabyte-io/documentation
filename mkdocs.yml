@@ -1,4 +1,5 @@
 site_name: exabyte.io documentation
+site_url: https://docs.exabyte.io
 theme_dir: exabyte_theme
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
