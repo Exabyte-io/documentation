@@ -13,9 +13,6 @@ The following set of actions pertaining to workflows is permitted, either via th
 - [search](/workflows/actions/searching.md)
 - [other](/workflows/actions/other-actions.md)
                                           
-The location of both the toolbar and drop-down menus containing these action buttons within the wider workflow collection interface is further clarified in the panels emphasized in the image below:                                                                                                    
-<img src="/images/workflow-actions-menus.png"/>
-
 # Importing from the Bank
 
 Besides the above, workflows can be imported directly into the account-owned workflows collection from a central repository, referred to as the workflows "Bank". We explain how to do so in the following [documentation page](bank.md). 

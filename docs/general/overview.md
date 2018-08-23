@@ -1,74 +1,80 @@
 # Types of Entities
 
-The user interface of the platform contains three main distinct classes of entities, each recognizable by its unique symbol illustrated next to each entry in the list below:
+The user interface of the platform contains three main distinct classes of **Entities**, each recognizable by its unique symbol illustrated next to each entry in the list below:
 
-1. Materials <i class="zmdi zmdi-widgets zmdi-hc-border"></i>: crystallographic information about each material's structure.
+| Entity    |  Icon      | Details        | 
+| :-------- |:----------- |:------------- |
+| Materials | <i class="zmdi zmdi-widgets"></i>    | Hold information about individual materials |
+| Workflows | <i class="zmdi zmdi-dot-circle"></i> | Contain logical set of computational operations, applicable to multiple materials |
+| Jobs      | <i class="zmdi zmdi-file"></i> | Represent computational tasks on a particular material-workflow combination to produce the corresponding properties and output files as results |
 
-2. Workflows <i class="zmdi zmdi-dot-circle zmdi-hc-border"></i>: set of computational operations applicable to different materials. 
+Each one of the above has a dedicated tab within the user interface, as depicted in the image below:
 
-3. Jobs <i class="zmdi zmdi-file zmdi-hc-border"></i>: execution of the computational task on a particular material-workflow combination to produce the corresponding results and output files.
+<img src="/images/entity-classes.png/" > 
 
-Each one of these entities has its own dedicated tab within the general user interface of the Exabyte platform, as depicted in the image below:
+# Common actions
 
-<img src="/images/entity-classes.png/" >
+Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each corresponding type of action:
 
-Despite each one of these types of entities being in a class of its own, many equivalent attributes, interface components and action operations are shared between all three of them in the context of their respective tabs. These will now be reviewed in turn in the sections below, in separate dedicated documentation pages. 
+## [Modify Name](actions/name.md)
 
-# Actions common to all entity types
+The name of each entity can be changed according to [these instructions](actions/name.md).
 
-Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in exactly the same fashion within the Exabyte platform when dealing with the three above-mentioned classes of entities. Please click on the links below to access the documentation pages associated with each common type of action:
-
-## Modifying Name
-
-The name of each entity as presented in the corresponding general items list can be changed according to [these instructions](actions/name.md).
-
-## Inserting Descriptive Metadata
+## [Edit Metadata](actions/metadata.md)
 
 Each entity can be adorned with descriptive metadata, in the form of text, tags and other formats, for ease of referencing and retrieval when performing general searches. We explain how to add such metadata [here](actions/metadata.md).
 
-## Changing Default
+## [Set Default](actions/set-default.md)
 
-In each account-owned collection, any item can be turned into the default entry of the collection as described [here](actions/default.md).
+In each account-owned collection, any entry can be assigned the "Default" status as described [here](actions/set-default.md).
 
-## Deleting Entities
+## [Delete](actions/delete.md)
 
-The user can delete any entry from any collection by following the procedure outlined [here](actions/delete.md).
+The user can delete an Entity by following the procedure outlined [here](actions/delete.md).
 
-## Clone Entities
+## [Clone / Copy](actions/clone.md)
 
-Each entry in a collection can also be cloned, or copied, as a new distinct entry in the collection following [these instructions](actions/clone.md).
+Each Entity can also be cloned or copied following [these instructions](actions/clone.md).
 
-## Open Entities
+## [Open](actions/open-edit.md)
 
-Opening an entity item in a collection list in order to edit its content can be achieved [as follows](actions/open-edit.md).
+Opening an entry corresponding to a particular Entity in a the list in order to edit its content can be achieved [as follows](actions/open-edit.md).
 
-## Performing Searches
+## [Search](actions/search.md)
 
-The user can perform general searches to retrieve particular entities stored on the respective collection through [this procedure](actions/search.md).
+The user can perform general searches to retrieve particular Entities of interest through [this procedure](actions/search.md).
 
+<hr>
 
-# Interface components common to all entity types
+# Common Interface Components
 
-Each type of entity can be displayed and visualized with its corresponding graphical user interface. There exists several interface components, and some of their respective sub-components, which are common to all entity types, and these include the following: 
+There are interface components, and some of their respective sub-components, which are common to all entity types, and these include the following: 
 
 ## 1. Designer
 
-### Source Editor (which may contain a graphical Viewer)
-
-### Items List Sidebar
-
-### Header Menu
-
-In the case of Materials for example, their own Designer interface has the following general appearance, where the instances of the above interface sub-components have been labelled correspondingly:
+The Designer component allows user to Edit or "Design" new Entities. Its sub-components may include "Header Menu", "Items List Sidebar", and "Source Editor". In the case of Materials for example, their Designer interface has the following general appearance, where the instances of the above interface sub-components have been labelled correspondingly:
 
 <img src="/images/materials-designer-initial.png/" >
 
+## 2. Explorer
 
-## 2. General Items List
-
-
-Moreover, the General Items List has the following aspect within its own page, again for the example entity case of Materials:
+The Explorer (or Entity List) component represents a list or Table and allows users to view and execute actions on multiple Entities at once. This interface component is illustrated below (named "General Items List") for the example entity case of Materials:
 
 <img src="/images/materials-list.png/" >
+
+### Actions Toolbar
+
+Actions Toolbar allows users to execute actions on multiple Entities at once. Entities can be selected using the corresponding checkboxes on each entry line.
+
+### Actions Dropdown
+
+The actions Dropdown allows one to execute the actions on a specific entry. The set of allowed actions is filtered per each entry according to its type and permissions.
+
+### Visuals
+
+The location of both the toolbar and dropdown menus containing the action buttons within the Explorer interface is further clarified in the panels emphasized in the image below:
+
+<img src="/images/workflow-actions-menus.png"/>
+
 
 

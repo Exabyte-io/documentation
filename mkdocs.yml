@@ -38,28 +38,26 @@ pages:
     - General Aspects:
         - Overview:                 general/overview.md
         - Actions:
-            - Add metadata:         general/actions/metadata.md
-            - Change name:          general/actions/name.md
-            - Set default:          general/actions/default.md
+            - Search:               general/actions/search.md
+            - Open:                 general/actions/open-edit.md
             - Clone:                general/actions/clone.md
             - Delete:               general/actions/delete.md
-            - Open:                 general/actions/open-edit.md
-            - Search:               general/actions/search.md
-
-
+            - Add metadata:         general/actions/metadata.md
+            - Change name:          general/actions/name.md
+            - Set default:          general/actions/set-default.md
 
     - Materials:
         - Overview:                       materials/overview.md
         - Data:                           materials/data.md
         - Properties:                     materials/properties.md
         - Actions:
-            - Advanced Search:            materials/actions/advanced-search.md
             - Import:                     materials/actions/import.md
             - Upload:                     materials/actions/upload.md
             - Copy from shared bank:      materials/actions/bank.md
-            - Select During Job Creation: materials/actions/selection.md
-            - Other:                      materials/actions/other-actions.md
+            - Advanced Search:            materials/actions/advanced-search.md
             - Search & Compare:           materials/actions/search-compare.md
+            - Set default:                workflows/actions/set-default.md
+            - Select During Job Creation: materials/actions/selection.md
 
     - Materials Designer:
         - Overview:                     materials-designer/overview.md
@@ -100,7 +98,7 @@ pages:
             - Create:                     workflows/actions/create.md
             - Update:                     workflows/actions/update.md
             - Copy from shared bank:      workflows/actions/bank.md
-            - Set default:                workflows/actions/default.md
+            - Set default:                workflows/actions/set-default.md
             #- Using workflows:            workflows/using-workflows.md
         - Modifiers:
             - DFT > K-point Convergence:         workflows/modifiers/convergence-algorithms.md
