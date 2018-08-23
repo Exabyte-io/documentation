@@ -1,4 +1,4 @@
-# Clone / copy workflows
+# Clone / Copy workflows
 
 The cloning (or copying) of one or more workflows present in the account-owned collection into a new distinct entry can be achieved as follows: 
 
