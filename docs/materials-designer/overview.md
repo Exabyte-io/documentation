@@ -23,15 +23,9 @@ The Materials Designer is structured into four main building blocks and has the 
     <area shape="rect" coords="0,39,750,78" href="/materials-designer/header-menu/header-menu-intro">
 </map>
 
-<!-- coords="x1,y1,x2,y2" -->
-<!-- x1=top left X coordinate -->
-<!-- y1=top left Y coordinate -->
-<!-- x2=bottom right X coordinate -->
-<!-- y2=bottom right Y coordinate -->
-
 # Default Material
 
-When first opened, the page is initialized with the default material (FCC Silicon initially). Readers can learn how to set and adjust default materials in [this page](../materials/actions/other-actions.md). 
+When first opened, the page is initialized with the default material (FCC Silicon initially). Readers can learn how to set and adjust default materials in [this page](/general/actions/set-default.md). 
 
 # Links
 
