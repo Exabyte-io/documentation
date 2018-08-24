@@ -26,13 +26,13 @@ The workflow under consideration can be saved at any time to the account-owned c
 
 In either case, once the saving operation is completed, the current workflow becomes recoverable in the account-owned collection after the Workflow Designer interface is exited. 
 
-# Adding a Modifier
+# Inserting Add-ons
 
-The header menu bar of the Workflows Designer interface finally gives the user the possibility to include a **Modifier**, in the form of a subworkflow calculation, inside the existing flowchart structure of the workflow under consideration. 
+The header menu bar of the Workflows Designer interface finally gives the user the possibility to include **Add-ons**, in the form of a subworkflow calculation, inside the existing flowchart structure of the workflow under consideration. 
 
-For example, to perform an initial variable-cell relaxation calculation on the current material sample using DFT techniques, the user can proceed via the `Relaxation` option under the three-dotted drop-down menu icon. This particular type of Modifier is comprehensively reviewed in its [dedicated documentation page](../workflows/modifiers/structural-relaxation.md).
+For example, to perform an initial variable-cell relaxation calculation on the current material sample using DFT techniques, the user can proceed via the `Relaxation` option under the three-dotted drop-down menu icon. This particular type of Add-on is comprehensively reviewed in its [dedicated documentation page](../workflows/modifiers/structural-relaxation.md).
 
-The location of this drop-down menu under the three-dotted icon within the overall Workflow Designer interface is highlighted below:
+The location of this drop-down menu within the overall Workflow Designer interface is highlighted below:
 
 <img src="/images/modifier-menu.png/" >
 

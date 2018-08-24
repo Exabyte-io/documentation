@@ -163,9 +163,9 @@ Pseudopotential input file.  List of pseudopotentials currently available on the
 
 # Convergence and Relaxation
 
-In most cases to have a reasonable level of confidence that a result can be trusted the total energy should not increase significantly when the k-point density is increassed.  This search for the appropriate density of k-points is called [k-point convergence](modifiers/convergence-algorithms.md).
+In most cases to have a reasonable level of confidence that a result can be trusted the total energy should not increase significantly when the k-point density is increassed.  This search for the appropriate density of k-points is called [k-point convergence](../../workflows/modifiers/convergence-algorithms.md).
 
-It is often desirable to obtain [relaxed structures](modifiers/structural-relaxation.md) to ensure that your system is in the lowest total energy state configuration possible before computing your property.
+It is often desirable to obtain [relaxed structures](../../workflows/modifiers/structural-relaxation.md) to ensure that your system is in the lowest total energy state configuration possible before computing your property.
 
 <hr>
 

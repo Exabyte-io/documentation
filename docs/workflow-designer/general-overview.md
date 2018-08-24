@@ -1,13 +1,6 @@
 # What is Workflow Designer?
 
  The Exabyte platform provides a convenient interface for conceiving, executing and saving workflows which implement numerous types of calculations in the computational atomistic study of materials, such as the computation of thermodynamic quantities,  phonon dispersion curves, and electronic band structures. We refer to this interface as the Workflow Designer, and we will now reviewed it in detail. 
- 
-
-<!-- THIS WILL BE OUTDATED WHEN LAMMPS WILL BE ADDED
- 
- The Exabyte platform supports several widely used ab-initio quantum computational engines, all based on the plane-waves pseudopotential formulation of Density Functional Theory (DFT) [[1](#links)] for calculating approximate solutions to Schrodinger's Equations and associated physical properties in relatively complex crystalline materials. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [[2](#links)]. 
- 
---> 
 
 # Components of the Interface
 
@@ -16,9 +9,9 @@ The Workflow Designer is structured into three main building blocks, and has the
 <img src="/images/workflow-designer-initial.png/" usemap="#mapname">
 
 <map name="mapname">
-    <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar-items/">
-    <area shape="rect" coords="190,91,754,512" href="/workflow-designer/source-editor-intro/">
-    <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu-actions">
+    <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar/">
+    <area shape="rect" coords="190,91,754,512" href="/workflow-designer/subworkflow-editor/intro/">
+    <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu">
 </map>
 
 <!-- coords="x1,y1,x2,y2" -->
@@ -27,14 +20,3 @@ The Workflow Designer is structured into three main building blocks, and has the
 <!-- x2=bottom right X coordinate -->
 <!-- y2=bottom right Y coordinate -->
 
-
-
-<!--  The reader who is interested in learning more about the detailed numerical implementations of such quantum mechanical calculations in both of these codes is referred to their respective [documentation websites](#links). -->
-
-<!-- 
-# Links
-
-1. [Wikipedia Density Functional Theory, Website](https://en.wikipedia.org/wiki/Density_functional_theory)
-2. R.M. Martin: "Electronic Structure: Basic Theory and Practical Methods"; Cambridge University Press (2008)
-
--->
