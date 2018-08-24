@@ -23,7 +23,7 @@ Performing such an initial relaxation at the beginning of any type of workflow i
 
 The user can add such a variable-cell relaxation calculation as the first subworkflow step in a newly-created workflow by clicking on the `Relaxation` option under the drop-down menu button labelled with three vertical dots located at the right-hand side of the header menu of the Workflow Designer interface. 
 
-Once the Relaxation calculation has been selected and added to the beginning of the current workflow, a tick <i class="zmdi zmdi-check zmdi-hc-border"></i> will appear next to the previously-clicked `Relaxation` option to remind the user about this inclusion. The "Variable-cell Relaxation" calculation will furthermore be inserted as a subworkflow module at the start of the flowchart portraying the overall workflow on the left-hand sidebar of the Designer interface, as elaborated in its respective [documentation page](../../workflow-designer/sidebar-items.md). 
+Once the Relaxation calculation has been selected and added to the beginning of the current workflow, a tick <i class="zmdi zmdi-check zmdi-hc-border"></i> will appear next to the previously-clicked `Relaxation` option to remind the user about this inclusion. The "Variable-cell Relaxation" calculation will furthermore be inserted as a subworkflow module at the start of the flowchart portraying the overall workflow on the left-hand sidebar of the Designer interface, as elaborated in its respective [documentation page](../../workflow-designer/sidebar.md). 
 
 # Animation
 
@@ -40,7 +40,7 @@ Relaxations are usually classified by the number of degrees of freedom allowed t
 2. Cell shape - angles between lattice vectors
 3. Cell size - length of lattice vectors and/or parameters
 
-Default settings include the relaxation of all three above aspects of the crystal structure. Experienced users can open the input files to edit the exact behavior, as explained [in this page](../../workflow-designer/source-editor-intro.md). 
+Default settings include the relaxation of all three above aspects of the crystal structure. Experienced users can open the input files to edit the exact behavior, as explained [in this page](../../workflow-designer/subworkflow-editor/intro.md). 
 
 # Constrained relaxation
     

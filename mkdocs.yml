@@ -95,6 +95,7 @@ pages:
             - Subworkflows:               workflows/data/subworkflows.md
             - Units:                      workflows/data/units.md
             - Jobs:                       workflows/data/jobs.md
+            - Maps:                       workflows/data/maps.md
         - Actions:
             - Overview:                   workflows/actions/overview.md
             - Create:                     workflows/actions/create.md
@@ -102,26 +103,30 @@ pages:
             - Copy from shared bank:      workflows/actions/bank.md
             - Set default:                workflows/actions/default.md
             #- Using workflows:            workflows/using-workflows.md
-        - Modifiers:
+        - Add-ons:
             - DFT > K-point Convergence:         workflows/modifiers/convergence-algorithms.md
             - DFT > Structural Relaxation:       workflows/modifiers/structural-relaxation.md
 
 
-#    - Models:
-#        - Density Functional Theory:
-#            - Overview:                   models/dft/overview.md
-#            - References:                 models/dft/references.md
-#        - Molecular Dynamics:
-#            - Overview:                   models/dft/overview.md
-#            - References:                 models/dft/references.md
-#    - Methods:
-#        - Pseudopotential:            methods/dft/overview.md
-#        - Local Orbital:              methods/dft/local-orbital.md
+    - Models:
+        - Auxiliary Concepts:
+            - Modifiers:                            models/dft/modifiers.md
+            - Reciprocal space > sampling:          models/dft/sampling.md # kgrid, qgrid, igrid,
+            - Reciprocal space > paths:             models/dft/paths.md # kpath, qpath, ipath
+        - Density Functional Theory:
+            - Overview:                             models/dft/overview.md
+            - Technical aspects:                    models/dft/density-functional-theory.md
 
-#    - Applications:
-#        - Pseudopotential:            methods/dft/overview.md
-#        - Local Orbital:              methods/dft/local-orbital.md
+    - Methods:
+        - Pseudopotential:
+            - Cutoffs:                        methods/pseudopotential/cutoffs.md
+            - Actions:                        methods/pseudopotential/actions.md
 
+    - Applications:
+        - Quantum ESPRESSO:            applications/quantum-espresso.md
+        - VASP:                        applications/vasp.md
+
+# TODO: remove the below when finished with Workflow Designer
 #        - Density Functional Theory:    workflows/density-functional-theory.md
 #        - Example simulations:          workflows/example-simulations.md
 #        - Advanced Properties:          workflows/advanced-characteristics.md
@@ -131,15 +136,21 @@ pages:
     - Workflow Designer:
         - Overview:                          workflow-designer/general-overview.md
         - Header Menu:
-            - Overview:                      workflow-designer/header-menu-actions.md
+            - Overview:                      workflow-designer/header-menu.md
         - Sidebar:
-            - Items List:                    workflow-designer/sidebar-items.md
-        #- Source Editor:
-        #    - General Overview:             workflow-designer/source-editor-intro.md
-        #    - Overview:                     workflow-designer/overview.md
-        #    - Important Settings:           workflow-designer/important-settings.md
-        #    - Detailed View:                workflow-designer/detailed-view.md
-        #    - Compute:                      workflow-designer/compute.md
+            - Items List:                    workflow-designer/sidebar.md
+        - Subworkflow Editor:
+            - Introduction:                     workflow-designer/subworkflow-editor/intro.md
+            - Actions Menu:                     workflow-designer/subworkflow-editor/actions-menu.md
+            - Tabs:                             workflow-designer/subworkflow-editor/tabs-general.md
+            - Tabs > Overview:                  workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Important Settings:        workflow-designer/subworkflow-editor/important-settings.md
+            - Tabs > Detailed View:             workflow-designer/subworkflow-editor/detailed-view.md
+            - Tabs > Compute:                   workflow-designer/subworkflow-editor/compute.md
+            - Units Flowchart:                  workflow-designer/subworkflow-editor/units-flowchart.md
+#        - Unit Editor:
+#            - Overview:                         workflow-designer/unit-editor.md
+#            - Input Templates:                  workflow-designer/unit-editor/input-templates.md
 
 
     - Compute:
