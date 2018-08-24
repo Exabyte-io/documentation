@@ -51,7 +51,7 @@ pages:
     - Materials Designer:
         - Overview:                     materials-designer/overview.md
         - Header Menu:
-            - Introduction:             materials-designer/header-menu/header-menu-intro.md
+            - Overview:                 materials-designer/header-menu/header-menu-intro.md
             - Input/Output:             materials-designer/header-menu/input-output.md
             - "Input/Output > Import":  materials-designer/header-menu/input-output/import.md
             - "Input/Output > Export":  materials-designer/header-menu/input-output/export.md
@@ -66,16 +66,14 @@ pages:
         - Sidebar:
             - Items List:               materials-designer/sidebar-items.md
         - Source Editor:
-            - Introduction:             materials-designer/source-editor.md
+            - Overview:                 materials-designer/source-editor.md
             - Lattice Editor:           materials-designer/source-editor/lattice.md
             - Basis Editor:             materials-designer/source-editor/basis.md
         - 3D Editor:
-            - Introduction:             materials-designer/3d-editor.md
+            - Overview:             materials-designer/3d-editor.md
             - View Actions Panel:            materials-designer/3d-editor/view.md
             - Edit Actions Panel:            materials-designer/3d-editor/edit.md
             - Export Actions Panel:          materials-designer/3d-editor/export.md
-
-
 
     - Workflows:
         - Overview:                       workflows/overview.md
@@ -85,7 +83,7 @@ pages:
             - Units:                      workflows/units.md
             - Jobs:                       jobs.md
         - Actions:
-            - Creating workflows:         workflows/creating-workflows.md
+            - Create:                     workflows/create.md
             - Using workflows:            workflows/using-workflows.md
             - Adding Convergence:         workflows/convergence-algorithms.md
             - Adding Relaxation:          workflows/structural-relaxation.md
@@ -93,6 +91,20 @@ pages:
 #        - Density Functional Theory:    workflows/density-functional-theory.md
 #        - Example simulations:          workflows/example-simulations.md
 #        - Advanced Properties:          workflows/advanced-characteristics.md
+
+    - Workflow Designer:
+        - Overview:                          workflow-designer/general-overview.md
+        - Header Menu:
+            - Overview:                      workflow-designer/header-menu-actions.md
+        - Sidebar:
+            - Items List:                    workflow-designer/sidebar-items.md
+        #- Source Editor:
+        #    - General Overview:             workflow-designer/source-editor-intro.md
+        #    - Overview:                     workflow-designer/overview.md
+        #    - Important Settings:           workflow-designer/important-settings.md
+        #    - Detailed View:                workflow-designer/detailed-view.md
+        #    - Compute:                      workflow-designer/compute.md
+
 
     - Compute:
         - Overview:                 compute/overview.md
