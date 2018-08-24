@@ -4,7 +4,7 @@ Each workflow may contain multiple **subworkflows**, which are reviewed in the c
 
 # Selecting Active Items
 
-The user can click and select any subworkflow module listed in this sidebar to analyze its parameters, which get displayed elsewhere in the Subworkflow Source Editor. Detailed description of the parameters and how to edit them is contained here [page](source-editor-intro.md).
+The user can click and select any subworkflow module listed in this sidebar to analyze its parameters, which get displayed elsewhere in the Subworkflow Source Editor. Detailed description of the parameters and how to edit them is contained here [page](subworkflow-editor/overview.md).
 
 # Visual
 

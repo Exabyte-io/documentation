@@ -15,7 +15,7 @@ Furthermore, all material entries with unsaved changes appear colored in yellow.
 
 # Select Item
 
-Each entry can be selected for processing by clicking on it. Once selected, its corresponding crystal structure and associated information will be used in the other components of Materials Designer (eg. [3D Viewer](../../viewer-intro.md) and [Source Editor](../../lattice.md)).
+Each entry can be selected for processing by clicking on it. Once selected, its corresponding crystal structure and associated information will be used in the other components of Materials Designer (eg. [3D Viewer](/materials-designer/3d-editor.md) and [Source Editor](/materials-designer/source-editor.md)).
 
 # Delete Item
 
