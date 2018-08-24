@@ -1,16 +1,13 @@
 # Items List Sidebar
 
-Each workflow may contain many separate **subworkflows**, a type of computational unit in the Exabyte platform which is extensively reviewed in its [dedicated documentation page](../workflows/data/subworkflows.md). It can also contain **maps**, a relatively different type of unit described [here](../workflows/data/maps.md).
+Each workflow may contain multiple **subworkflows**, which are reviewed in the corresponding [documentation page](/workflows/data/subworkflows.md). The complete workflow can be visualized as a list of items in the sidebar on the left-hand side of the Workflow Designer interface. Here, the current workflow under consideration is presented in the form of a **flowchart**, with the modules executing different operations listed sequentially in logical order. This flowchart of subworkflows initially defaults to a single entry named "Empty Subworkflow" when a new workflow is being created from scratch.
 
-The complete workflow can be visualized in the sidebar on the left-hand side of the Workflow Designer interface. Here, the entirety of the current workflow under consideration is presented and summarized in the form of a flowchart, with the various "Subworkflow" modules executing different operations listed sequentially in a vertical order (from the start of the workflow at the top, to its end at the bottom of the sidebar).
+# Selecting Active Items
 
-This flowchart of subworkflows initially defaults to a single entry named "Empty Subworkflow" when a new workflow is being created from scratch. Please see how subworkflow names can be changed, and how new subworkflows can be added to the overall sequence, in the Source Editor [documentation page](subworkflow-editor/intro.md).
+The user can click and select any subworkflow module listed in this sidebar to analyze its parameters, which get displayed elsewhere in the Subworkflow Source Editor. Detailed description of the parameters and how to edit them is contained here [page](source-editor-intro.md).
 
-An example of appearance of this sidebar list of subworkflow items, within the wider Workflow Designer interface, is highlighted in the image below:
+# Visual
+
+An example appearance of this sidebar list within the wider Workflow Designer interface, is highlighted in the image below:
 
 <img src="/images/subworkflow-list.png"/>
-
-
-# Selecting different subworkflows
-
-The user can freely click and thus select any subworkflow module listed in this flowchart sidebar to analyze its task parameters, which get displayed on the Workflow Source Editor on the right of the Designer interface. Detailed descriptions of the significance of the various parameters contained in this Source Editor are offered in its corresponding [page](subworkflow-editor/intro.md).
