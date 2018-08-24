@@ -22,7 +22,7 @@ The Save operation can be accomplished via either of two alternative buttons, bo
 
 The header menu bar of the Workflows Designer interface finally gives the user the possibility to include a **Add-ons**, in the form of an additional subworkflow. 
 
-For example, when considering a Density Functional Theory calculations, in order to perform an initial variable-cell relaxation on the current material, the user can choose via the `Relaxation` option under the three-dotted drop-down menu icon. This particular type of Modifier is comprehensively reviewed in its [corresponding documentation page](/workflows/modifiers/structural-relaxation.md).
+For example, when considering a Density Functional Theory calculations, in order to perform an initial variable-cell relaxation on the current material, the user can choose via the `Relaxation` option under the three-dotted drop-down menu icon. This particular type of Modifier is comprehensively reviewed in its [corresponding documentation page](/workflows/addons/structural-relaxation.md).
 
 The location of this drop-down menu is highlighted below:
 

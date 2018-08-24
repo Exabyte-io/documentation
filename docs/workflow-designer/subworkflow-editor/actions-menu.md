@@ -1,20 +1,20 @@
 # Subworkflow Actions Menu Bar
 
-## Changing Subworkflow name
+## Edit Name
 
 Similarly to the re-naming procedure of the general parent workflow itself (see [this page](../header-menu.md)), each subworkflow component unit can be re-named appropriately from its original default "Empty Subworkflow" name (when a new workflow is being created from scratch), or "New Subworkflow" (when a new subworkflow is being added to an existing workflow). 
 
 The subworkflow name is visible at the left-end of the subworkflow actions menu bar, next to the general logo for subworkflows <i class="zmdi zmdi-dot-circle-alt zmdi-hc-border"></i> used throughout the Exabyte platform. Instructions on how this name can be changed are to be found [in this page](../../general/actions/name.md). 
 
-## Inserting Add-ons
+## Insert Add-ons
 
 On the right-hand side of the subworkflow actions menu bar, a series of buttons and a number spinner are present. The first one of these, starting from the left, is a three-dotted drop-down menu button allowing for the insertion of further Add-on subworkflows to the overall workflow flowchart, in addition to those already described in the final section of [this page](../header-menu.md). 
 
-For example, through this drop-down menu the user can add a "Convergence" subworkflow add-on for performing preliminary convergence tests on DFT input parameters. Such convergence add-on is extensively reviewed in its corresponding [documentation page](../../workflows/modifiers/convergence-algorithms.md). 
+For example, through this drop-down menu the user can add a "Convergence" subworkflow add-on for performing preliminary convergence tests on DFT input parameters. Such convergence add-on is extensively reviewed in its corresponding [documentation page](../../workflows/addons/convergence-algorithms.md). 
 
 Following any such addition, the resulting sorted and complete list of subworkflows will always be shown on the left-hand sidebar of the Designer interface.
 
-## Adding Subworkflows
+## Add Subworkflows
 
 To create a new subworkflow and insert it as part of the general workflow flowchart, click on the “plus” sign <i class="zmdi zmdi-plus zmdi-hc-border"></i> on the right-end of the actions menu bar. The following dialog will open:
 
@@ -24,13 +24,11 @@ In this dialog, the user can choose whether to insert a new subworkflow or a map
 
 Secondly, the choice between whether to append or prepend this new map or subworkflow with respect to the currently selected subworkflow module can also be made. The user can identify and change the currently selected subworkflow by referring to the main left-hand sidebar of the overall Workflow Designer interface, and clicking on the corresponding item out of the contained flowchart list. Once the "Apply" button is pressed, the new subworkflow or map with default initial parameters will be added to the workflow flowchart at the desired position. 
 
-
-## Navigating Subworkflows
+## Navigate Subworkflows List
 
 Through the number spinner, the user can navigate between different selections of subworkflows, and the current selection out of the total number will be shown in the central part of the spinner. Every time this spinner is changed, the corresponding change in subworkflow selection can be seen to occur on the overall workflow flowchart displayed on the left-hand sidebar. 
 
-
-## Removing Subworkflows
+## Remove Subworkflows
 
 In order to delete any subworkflow module from the general workflow flowchart, first select it and then click on the "minus" button <i class="zmdi zmdi-minus zmdi-hc-border"></i> of the actions menu bar. As a result of this action, the subworkflow will disappear from the flowchart.
 

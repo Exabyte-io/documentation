@@ -24,27 +24,12 @@ The reader who is interested in learning more about the detailed numerical imple
 
 # The "Model" section
 
-The "Model" section refers to the general theoretical approach which is to be considered as part of the current subworkflow. For the moment, the Exabyte platform offers the following combination of model type and subtypes, already selected by default in any newly-created subworkflow. The theoretical background underlying such model concepts is reviewed further in [this page](../../models/dft/overview.md). 
- 
- 
-- We consider **Density Functional Theory** (DFT) as our conventional model.
- 
-- We assume the **Generalized Gradient Approximation** (GGA) for the Exchange-Correlation part of the total energy functional of the crystal being studied. 
-
-- The particular flavor of GGA functional implemented in the Exabyte Platform is the one due to **Perdew, Burke and Ernzerhof** (PBE).
-
-## Refiners 
-
-The "Refiners" drop-down menu immediately below the model's type and subtypes selections offers the user the possibility to display additional calculated physical properties in separate dedicated columns, once the output of the workflow computation is visualized in the "Jobs" page of the Exabyte platform. 
-
-Note that the inclusion of such refiners from within the Subworkflow Editor interface does not make them an integral part of the workflow computation per se (something that still needs to be done manually by editing the corresponding input script), but rather refers exclusively to the way the output data columns themselves are presented.
-
-## Modifiers
-
-Please refer to [this page](../../models/dft/modifiers.md) for a physical description of the available modifiers.
+This section is documented extensively in its own dedicated [documentation chapter](/models/overview.md). 
 
 # The "Method" section
 
-In the method section the user is allowed to choose the computational aspects of the current subworkflow calculation, and in particular the type of potential modeling the inter-atomic interactions in the crystal structure under investigation. Please consult [this page](../../methods/pseudopotential/actions.md) for a review of the available pseudopotentials within the theoretical context of the DFT model.
+Similarly to the "Model" section, the "Method" section also has its own [documentation chapter](/methods/overview.md). 
+
+
 
 

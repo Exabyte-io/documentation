@@ -102,20 +102,24 @@ pages:
             - Set default:                workflows/actions/set-default.md
             #- Using workflows:            workflows/using-workflows.md
         - Add-ons:
-            - DFT > K-point Convergence:         workflows/modifiers/convergence-algorithms.md
-            - DFT > Structural Relaxation:       workflows/modifiers/structural-relaxation.md
+            - K-point Convergence:         workflows/addons/convergence-algorithms.md
+            - Structural Relaxation:       workflows/addons/structural-relaxation.md
+
 
 
     - Models:
+        - Overview:                                 models/overview.md
         - Auxiliary Concepts:
-            - Modifiers:                            models/dft/modifiers.md
+            - Reciprocal space:                     models/dft/reciprocal-space.md
             - Reciprocal space > sampling:          models/dft/sampling.md # kgrid, qgrid, igrid,
             - Reciprocal space > paths:             models/dft/paths.md # kpath, qpath, ipath
         - Density Functional Theory:
-            - Overview:                             models/dft/overview.md
-            - Technical aspects:                    models/dft/density-functional-theory.md
+            - Overview:                             models/dft/density-functional-theory.md
+            - References:                           models/dft/references.md
+
 
     - Methods:
+        - Overview:                           methods/overview.md
         - Pseudopotential:
             - Cutoffs:                        methods/pseudopotential/cutoffs.md
             - Actions:                        methods/pseudopotential/actions.md

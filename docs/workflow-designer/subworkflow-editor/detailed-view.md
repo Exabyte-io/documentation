@@ -15,8 +15,5 @@ The complete list of quantities available to be computed within the Subworkflow 
 
 ## The "Monitors" section
 
-The second lower section of each unit's entry in the "Detailed View" tab, under the label "Monitors", offers the user the possibility to choose which output information to monitor during the course of the execution of the current subworkflow calculation. The following three options are available:
-
- * Standard Output
- * Ionic Convergence 
- * Electronic Convergence 
+The second lower section of each unit's entry in the "Detailed View" tab, under the label "Monitors", offers the user the possibility to choose which output information to monitor during the course of the execution of the current subworkflow calculation. The options [listed in this page](/materials/properties.md) are available.
+ 
