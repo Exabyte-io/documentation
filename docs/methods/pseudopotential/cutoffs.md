@@ -9,3 +9,7 @@ This cutoff parameter is of crucial importance for establishing the overall accu
 In the text field directly to the right of the plane-waves cutoff parameter for the wavefunction, under the label "density", the user can also set the kinetic energy cutoff (in the same application-dependent units as the previously-described plane-waves cutoff) for the electronic charge density and potential. 
 
 For norm-conserving or PAW pseudopotentials subtypes, a value of four times the afore-mentioned wavefunction cutoff parameter is recommended, whereas for Ultra-Soft pseudopotentials a higher value between eight and twelve times the wavefunction cutoff is typically more suitable.  
+
+# Links
+
+For a more in-depth explanation of the theory underlying plane-waves and charge density expansion basis sets and cutoffs, the reader is referred to the general review literature on DFT concepts listed in the [main references page](/models/dft/references.md).

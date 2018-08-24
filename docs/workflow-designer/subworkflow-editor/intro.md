@@ -1,6 +1,6 @@
 # Subworkflow Editor
 
-Whenever a subworkflow module is clicked upon, among those listed in the general workflow flowchart on the [left-hand sidebar](../sidebar.md) of the Workflow Designer interface, its corresponding computational input parameters are displayed on the Subworkflow Editor on the right-hand side of the interface.
+The Subworkflow Editor displays the input parameters of a subworflow on the right-hand side of the Workflow Designer interface, whenever a subworkflow module is clicked upon among those listed in the general workflow flowchart on the [left-hand sidebar](../sidebar.md) of the interface.  
 
 # Main components
 

@@ -1,6 +1,10 @@
 # Pseudopotential Subtypes
 
-For the moment, up to three distinct subtypes of pseudopotentials (in the context of the DFT theoretical model [[1](#links)]) are supported as part of the Subworkflow Editor, under the corresponding "Subtype" drop-down menu in the "Method" section of the "Overview" tab: the Ultra-Soft (US), Norm-Conserving (NC) and Projector-Augmented Wave (PAW) subtypes. 
+For the moment, up to three distinct **subtypes** of pseudopotentials (in the context of the DFT theoretical model [[1](#links)]) are supported as part of the Subworkflow Editor, under the corresponding "Subtype" drop-down menu in the "Method" section of the "Overview" tab: 
+
+- Ultra-Soft (US)
+- Norm-Conserving (NC) 
+- Projector-Augmented Wave (PAW) 
 
 The particular choice of pseudopotential subtype is normally best left to the discretion of the user, depending on his own personal experience with testing the different types on each particular chemical composition of a crystal. However neophyte users with little previous experience in operating first-principles DFT codes will most likely find that the Ultra-Soft pseudopotentials generally constitute a reliable choice for most intent and purposes, whilst normally requiring the least computationally expensive input parameters for defining the precision of the calculation. 
 
@@ -30,15 +34,18 @@ The resulting filtered list of available pseudopotentials will then become visib
 
 A general review on the syntax employed by regular expressions for performing general searches can be found in Ref. [[2](#links)].
 
-Otherwise, the use of regular expressions is best illustrated by way of a specific example. Consider the following partial expression for searching for a particular VASP pseudopotential:
+Otherwise, the use of regular expressions is best illustrated by way of a specific example. Consider the following regular expression for searching for a particular VASP pseudopotential:
 
 ```
-(?=[5].[4])(?!.*/h/)(?!.*/s/)(?=.*/GW/)(?!.*/AE/)
+(?=[5].[4])(?=.*/GW/)(?!.*/AE/)
 ```
 
-This expression first searches for 
+This expression first searches for pseudopotentials released under version 5.4 of VASP. It then searches for all pseudopotential files of type "GW", and therefore included in the corresponding GW folder, but at the same time excludes those of type "AE" (all-electron). 
 
+This particular regular expression operation applied to the available set of VASP pseudopotentials is demonstrated in the animation below:
 
+<img data-gifffer="/images/regular-expression.gif" />
+ 
 # Links
 
 1. [Wikipedia Pseudopotential, Website](https://en.wikipedia.org/wiki/Pseudopotential)

@@ -1,178 +1,26 @@
-<!-- by MH -->
+# Overview of the Density Functional Theory Model
+ 
+The Exabyte platform currently supports two widely used first-principles quantum computational engines, namely the [Quantum ESPRESSO](/applications/quantum-espresso.md) and [VASP](/applications/vasp.md) simulation packages. Both of these based on the plane-waves pseudopotential formulation of the Density Functional Theory (DFT) [[1](#links)] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties in relatively complex crystalline materials. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [[2,3](#links)]. 
 
-We currently support Density Functional Theory in the planewave pseudopotential approximation as implemented in Quantum ESPRESSO and VASP simulation packages. Both have similar inputs but structure their inputs in a distinctive way through different input files. Quantum Espresso also breaks its execution workflow up into separate executables and we make this difference transparent to the user.  However, especially for more advanced users it is critical to understand the input file options to customize your work.  We've provided a few references and examples below with links back to the application information pages for more details.
+Both of these codes have similar inputs, but at the same time structure them in a rather distinctive way through different input files. Quantum Espresso also breaks its execution workflow up into separate executables, and we make this difference transparent to the user in our general description of the [Workflows Designer interface](/workflow-designer/subworkflow-editor/intro.md).  However, especially for more advanced users, it is critical to understand the input file options and to be able to customize the work.  In this spirit, we have provided a few references and examples in the applications' corresponding pages, accessible [here](/applications/quantum-espresso.md) and [here](/applications/vasp.md) respectively, with links in them referring back to the applications' original websites for more details.
 
-# Input File Examples:
+Some important theoretical concepts in DFT, within the context of the way DFT is implemented in the various codes made available on the Exabyte platform, are outlined in the following sections of this page:
 
-<hr>
+# Approximation Subtype to the Exchange-Correlation functional
 
-## [VASP](https://www.vasp.at/)
+New subworkflows are by default based on the **Generalized Gradient Approximation** (GGA) for the Exchange-Correlation part of the total energy functional of the crystal being studied. This choice in general represents the most accurate approximation in Density Functional Theory for modeling all the complex exchange and correlation effects between the electrons in periodic crystals. 
 
-### INCAR
+# Flavors of Exchange-Correlation functional
 
-Control file of algorithm and methodology setting. A comprehensive list of available parameters is available [here](http://cms.mpi.univie.ac.at/wiki/index.php/Category:INCAR)
+The particular flavor of GGA implemented in the Exabyte Platform is the one due to **Perdew, Burke and Ernzerhof** (PBE) [[4](#links)], which is well-entrenched in the computational material science community and has proven through the times to constitute one of the most efficient and reliable approximations to the Exchange-Correlation functional.  
 
-<details>
-<summary>**Example INCAR file**</summary>
-```
-System = diamond Si
-ISTART = 0         Job type: 0 = new,  1 = continuation,  2 = same cutoff
-ISMEAR = 0         Electronic State Broadening: 4 = tetrahedron, 1 = Fermi, 0 = Gaussian
-SIGMA = 0.1        Size of smearing of electronic states in eV
-LWAVE = .FALSE.    Do not output the wavefunctions file WAVECAR
-LCHARG = .FALSE.   Do not output the charge density file CHGCAR
-```
-</details>
+# Links
 
-### KPOINTS
+Additional resourceful general references on DFT and associated concepts, beyond those outlined below, are contained in this [page](references.md), to be referred to at the reader's discretion.
 
-Information about the k-points used in the calculation.  Full explanation of available settings available [here](http://cms.mpi.univie.ac.at/vasp/vasp/KPOINTS_file.html)
-
-<details>
-<summary>**Example KPOINTS file**</summary>
-```
-k-points file with gamma point only
- 0
-Gamma
- 1 1 1
- 0  0  0
-```
-</details>
-
-### POSCAR
-
-The structure of the crystal cell and information about relaxation constraints.  Full explanation of available settings available at http://cms.mpi.univie.ac.at/vasp/vasp/POSCAR_file.html
-
-<details>
-<summary>**Example POSCAR file**</summary>
-```
-cubic diamond Si
-   5.5
- 0.0    0.5     0.5
- 0.5    0.0     0.5
- 0.5    0.5     0.0
-  Si
-  2
-Direct
- -0.125 -0.125 -0.125 Si
-  0.125  0.125  0.125 Si
-```
-</details>
-
-### POTCAR
-
-Pseudopotential input file.  Instructions on creating the POTCAR file can be found [here](http://cms.mpi.univie.ac.at/vasp/vasp/POTCAR_file.html).  Exabyte support [PAW Potentials from VASP](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)
-
-<hr>
-
-## [Quantum Espresso](http://www.quantum-espresso.org/)
-
-As mentioned above, Quantum ESPRESSO breaks its execution up into multiple executables in contrast to VASP.  On this page we will just focus on the pw.x executable [input](http://www.quantum-espresso.org/wp-content/uploads/Doc/INPUT_PW.html) as the input settings for other executables can be quite advanced and is explained in depth on [Quantum ESPRESSO website](http://www.quantum-espresso.org/users-manual/input-data-description/)
-
-### pw.in
-
-Summary input file that combines similar functionality to INCAR, KPOINTS, & POSCAR in vasp
-
-<details>
-<summary>**pw_scf.in file structure**</summary>
-```
-&CONTROL
-  ...
-/
-&SYSTEM
- ...
-/
-&ELECTRONS
-...
-/
-[ &IONS
-  ...
- / ]
-[ &CELL
-  ...
- / ]
-ATOMIC_SPECIES
- X  Mass_X  PseudoPot_X
- Y  Mass_Y  PseudoPot_Y
- Z  Mass_Z  PseudoPot_Z
-ATOMIC_POSITIONS { alat | bohr | crystal | angstrom | crystal_sg }
-  X 0.0  0.0  0.0  {if_pos(1) if_pos(2) if_pos(3)}
-  Y 0.5  0.0  0.0
-  Z O.0  0.2  0.2
-K_POINTS { tpiba | automatic | crystal | gamma | tpiba_b | crystal_b | tpiba_c | crystal_c }
-if (gamma)
-   nothing to read
-if (automatic)
-   nk1, nk2, nk3, k1, k2, k3
-if (not automatic)
-   nks
-   xk_x, xk_y, xk_z,  wk
-[ CELL_PARAMETERS { alat | bohr | angstrom }
-   v1(1) v1(2) v1(3)
-   v2(1) v2(2) v2(3)
-   v3(1) v3(2) v3(3) ]
-[ OCCUPATIONS
-   f_inp1(1)  f_inp1(2)  f_inp1(3) ... f_inp1(10)
-   f_inp1(11) f_inp1(12) ... f_inp1(nbnd)
- [ f_inp2(1)  f_inp2(2)  f_inp2(3) ... f_inp2(10)
-   f_inp2(11) f_inp2(12) ... f_inp2(nbnd) ] ]
-[ CONSTRAINTS
-   nconstr  { constr_tol }
-   constr_type(.)   constr(1,.)   constr(2,.) [ constr(3,.)   constr(4,.) ] { constr_target(.) } ]
-[ ATOMIC_FORCES
-   label_1 Fx(1) Fy(1) Fz(1)
-   .....
-   label_n Fx(n) Fy(n) Fz(n) ]
-```
-</details>
-
-<details>
-<summary>**pw_scf.in Example file**</summary>
-```
- &control
-    prefix='silicon',
-    pseudo_dir='directory_where_pp-files_are_kept'
-    outdir = 'temporary_directory_for_large_files',
- /
- &system
-    ibrav =  2,
-    celldm(1) = 10.2,
-    nat =  2,
-    ntyp = 1,
-    ecutwfc = 12.0
- /
- &electrons
- /
-ATOMIC_SPECIES
- Si  28.086  Si.vbc.UPF
-ATOMIC_POSITIONS
- Si 0.00 0.00 0.00
- Si 0.25 0.25 0.25
-K_POINTS
-   2
-   0.25 0.25 0.75 3.0
-   0.25 0.25 0.25 1.0
-```
-</details>
-
-### *.upf
-
-Pseudopotential input file.  List of pseudopotentials currently available on the Quantum Espresso website http://www.quantum-espresso.org/pseudopotentials/  Exabyte supports [gbrv potentials from Rutgers](https://www.physics.rutgers.edu/gbrv/)
-
-<hr>
-
-# Convergence and Relaxation
-
-In most cases to have a reasonable level of confidence that a result can be trusted the total energy should not increase significantly when the k-point density is increassed.  This search for the appropriate density of k-points is called [k-point convergence](../../workflows/modifiers/convergence-algorithms.md).
-
-It is often desirable to obtain [relaxed structures](../../workflows/modifiers/structural-relaxation.md) to ensure that your system is in the lowest total energy state configuration possible before computing your property.
-
-<hr>
-
-# Additional resources
-
-1. P. Hohenberg and W. Kohn, Phys. Rev. 136, B864 1964, [source](http://journals.aps.org/pr/abstract/10.1103/PhysRev.136.B864)
-2. W. Kohn and L. J. Sham, Phys. Rev. 140, A1133 1965, [source](http://journals.aps.org/pr/abstract/10.1103/PhysRev.140.A1133)
-3. J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865, [source](http://journals.aps.org/prl/abstract/10.1103/PhysRevLett.77.3865)
+1. [Wikipedia Density Functional Theory, Website](https://en.wikipedia.org/wiki/Density_functional_theory)
+2. R.M. Martin: "Electronic Structure: Basic Theory and Practical Methods"; Cambridge University Press (2008)
+3. [Introductory notes on Density Functional Theory, Gabriele Mogni](https://docs.wixstatic.com/ugd/02c77e_67682e5712b14fbaa8acc70d2021dd29.pdf)
+4. [J.P. Perdew, K. Burke, M. Ernzerhof: "Generalized Gradient Approximation Made Simple"; Phys. Rev. Lett. 77, 3865 (1996)](https://users.wfu.edu/natalie/s11phy752/lecturenote/PhysRevLett.77.3865.pdf)
 
 

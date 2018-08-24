@@ -30,7 +30,7 @@ Exact set of Materials properties that have to be supplied to and can be extract
 
 ## DFT
 
-Below we provide example (characteristic) properties extracted by the default workflows using Density Functional Theory.
+Below we provide example (characteristic) properties extracted by the default workflows using Density Functional Theory:
 
 | Property       | Overview |
 |:---------------|:------------|
@@ -45,5 +45,22 @@ Below we provide example (characteristic) properties extracted by the default wo
 | Band Gap       | Electronic Band Gap (direct / indirect) |
 | Density of States | Electronic Density of States (including partial contributions) |
 | Zero Point Energy | Energy of the lowest vibrational level wrt to vacuum |
+| Final Structure |  Visualization of the final computed crystal structure  |
+| Total Energy Contributions | Ewald, Exchange correlation and	Hartree contributions to the total energy |
+| Magnetic Moments | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
+| Total Force | Sum of the atomic forces |
+
+These are the output information types that can be monitored during the course of a DFT subworkflow calculation:
+
+| Output information | Overview |
+|:---------------|:------------|
+| Standard Output   | General information |
+| Ionic Convergence    | Convergence information on ionic moves in relaxation or molecular dynamics calculations |
+| Electronic Convergence  | Convergence information on self-consistent electronic calculation steps |
 
 > NOTE: At the moment we enable data analytics and comparison for "Band Gap" and "Pressure" only.
+
+An example of the layout of output properties displayed in the  "Results" section of a finished job is shown below for illustrative purposes. The user can recognize many of the above-listed properties in this image:
+
+![](/images/output_properties.png)
+

@@ -1,0 +1,26 @@
+{
+    "model": {
+        "type": "dft",
+        "subtype": "gga",
+        "method": {
+            "type": "pseudopotential",
+            "subtype": "paw",
+            "data": {
+                "pseudo": [
+                    {
+                        "apps": [
+                            "vasp"
+                        ],
+                        "element": "Ho",
+                        "version": "5.2",
+                        "type": "paw",
+                        "exchangeCorrelation": {
+                            "approximation": "gga",
+                            "functional": "pbe"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}

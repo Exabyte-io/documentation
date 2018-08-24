@@ -8,14 +8,6 @@ An example of appearance of this "Important Settings" tab, for the case of a bas
 
 <img src="/images/important-settings-tab.png"/>
 
-# Advanced examples of DFT calculations
-
-More complex subworkflows for performing advanced DFT calculations, such as electronic band structure energy or phonon frequency calculations, will contain further settings in this tab, offering the possibility of defining such parameters as the path in reciprocal space for computing the corresponding dispersion curves. An example of such advanced unit-specific settings, for specifying the reciprocal path of k-points for a band structure dispersion calculation (the so-called "kpath"), is shown in the picture below:
-
-<img src="/images/path-settings.png"/>
-
-These widely-used types of global and unit-specific settings will now be reviewed in turn in the rest of this documentation page, from the point of view of their appearance within the Subworkflow Editor interface.
-
 # Cutoff settings
 
 The initial section of the "Important Settings" tab titled "cutoffs" contains settings which are always global to all units in the current subworkflow. In particular, under the label "wavefunction", the user can enter the plane-wave cutoff parameter for expanding the electronic wavefunction of the crystal.   

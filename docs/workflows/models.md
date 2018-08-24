@@ -1,4 +1,4 @@
-<!-- by TB -->
+<!-- TODO: recycle or remove on cleanup -->
 
 # Model
 

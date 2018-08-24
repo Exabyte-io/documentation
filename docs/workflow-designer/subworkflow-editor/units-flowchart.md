@@ -25,13 +25,3 @@ Clicking on each unit box component of the flowchart allows the user to open the
 Even the more general subworkflows and overall workflows can themselves be considered to be types of units, albeit of a more complex nature than the aforementioned elementary units displayed in the units flowchart. In fact, a valid interpretation of the concept of subworkflow is to think of it as the smallest possible combination of elementary units. 
 
 Elementary units can themselves be introduced as components in a flowchart of subworkflows, such as the one displayed on the [left-hand sidebar](../sidebar.md) of the Worflows Designer interface, although with some restrictions. In particular, a logical flowchart of subworkflows may contain all types of elementary units except for those of execution type. A sequence of general workflows can also be further combined together with elementary units, besides the subworkflow components themselves, but such elementary units can be of logical type only. 
-
-
-
-
-
-
-
- 
-
-
