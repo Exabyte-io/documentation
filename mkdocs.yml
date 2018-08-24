@@ -70,7 +70,7 @@ pages:
             - Lattice Editor:           materials-designer/source-editor/lattice.md
             - Basis Editor:             materials-designer/source-editor/basis.md
         - 3D Editor:
-            - Overview:             materials-designer/3d-editor.md
+            - Overview:                      materials-designer/3d-editor.md
             - View Actions Panel:            materials-designer/3d-editor/view.md
             - Edit Actions Panel:            materials-designer/3d-editor/edit.md
             - Export Actions Panel:          materials-designer/3d-editor/export.md
@@ -83,8 +83,15 @@ pages:
             - Units:                      workflows/units.md
             - Jobs:                       jobs.md
         - Actions:
-            - Create:                     workflows/create.md
-            - Using workflows:            workflows/using-workflows.md
+            - Overview:                   workflows/actions/actions-intro.md
+            - Create:                     workflows/actions/create.md
+            - Update:                     workflows/actions/updating-workflows.md
+            - Clone:                      workflows/actions/clone.md
+            - Open:                       workflows/actions/open-edit.md
+            - Copy from shared bank:      workflows/actions/workflow-bank.md
+            - Search:                     workflows/actions/searching.md
+            - Other:                      workflows/actions/other-actions.md
+            #- Using workflows:            workflows/using-workflows.md
             - Adding Convergence:         workflows/convergence-algorithms.md
             - Adding Relaxation:          workflows/structural-relaxation.md
         # TODO: revise or remove
