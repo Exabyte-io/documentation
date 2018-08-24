@@ -58,7 +58,7 @@ Click "Submit" at the bottom of the generator dialog once all the above informat
 
 # Animation
 
-In the animation below, we generate a crystalline slab of pure silicon along the (001) plane, composed of three layers of atoms in terms of thickness, and with a 10x10 supercell constituting its base. The final view of the crystal structure is finally adjusted with the help of the interactive features of the 3D viewer, described [in this page](../../viewer-intro.md), to better inspect the overall appearance of the slab with regards to its size, thickness and vacuum ratio relative to the enclosing unit cell. 
+In the animation below, we generate a crystalline slab of pure silicon along the (001) plane, composed of three layers of atoms in terms of thickness, and with a 10x10 supercell constituting its base. The final view of the crystal structure is finally adjusted with the help of the interactive features of the 3D viewer, described [in this page](/materials-designer/3d-editor.md), to better inspect the overall appearance of the slab with regards to its size, thickness and vacuum ratio relative to the enclosing unit cell. 
 
 <img data-gifffer="/images/CreateSurfaceSlab.gif" />
 
