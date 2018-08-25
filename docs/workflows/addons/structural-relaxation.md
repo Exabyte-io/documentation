@@ -1,3 +1,5 @@
+<!-- TODO: TB to review more in details -->
+
 # What is a structural relaxation calculation?
 
 It is often desirable, before commencing any other calculation on a particular material structure of interest, to perform a "Variable-cell Relaxation" calculation as the starting initial step of a new workflow. This helps to ensure that the initial crystalline structure is fully relaxed and optimized (within some approximate tolerance criteria being monitored), and that accurate and realistic property calculations can therefore be subsequently executed on it throughout the rest of the workflow. 
