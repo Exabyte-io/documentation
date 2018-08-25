@@ -1,12 +1,16 @@
 # Subworkflow Editor
 
-The Subworkflow Editor displays the input parameters of a subworflow on the right-hand side of the Workflow Designer interface, whenever a subworkflow module is clicked upon among those listed in the general workflow flowchart on the [left-hand sidebar](../sidebar.md) of the interface.  
+The Subworkflow Editor displays the input parameters of a subworflow on the right-hand side of the Workflow Designer interface. Whenever a subworkflow module is clicked upon among those listed in the [left-hand sidebar](../sidebar.md) it becomes the currently active one and feeds data to the Editor component.  
 
 # Main components
 
-This Subworkflow Editor is itself subdivided into three distinct main components: a **menu bar** on top implementing general basic subworkflow actions, the main editor interface below it comprising four different selectable **tabs**, each pertaining to different aspects of the subworkflow's operations, and a **units flowchart** at the bottom displaying the ordered sequence of computational units included as part of the current subworkflow.  
+Subworkflow Editor is itself subdivided into three distinct main components: 
 
-The location, within the overall Workflow Designer interface, of this menu bar, of the tabs with an example of their contents, and of the units flowchart, is highlighted in the picture below for the example case of a band structure calculation workflow. Please click on each red panel directly on the image to be re-directed to the corresponding documentation page for each component:
+- **menu bar** on top implementing some general actions, 
+- the main editor interface below it comprising four different selectable **tabs**, each pertaining to different aspects of the subworkflow's operations, and
+ - **units flowchart** at the bottom displaying the ordered sequence of computational units included as part of the current subworkflow.
+
+The location of each component is highlighted in the picture below for the example case of a band structure calculation workflow. Click on a panel in the image to be redirected to the corresponding documentation page for each component:
 
 <img src="/images/sw-editor-components.png" usemap="#mapname">
                                            

@@ -1,4 +1,8 @@
-This feature is accessible as a stand-alone workflow or as an add-on / modifier to an existing subworkflow during job creation.
+<!-- TODO: TB to review more in details -->
+
+# Convergence algorithms
+
+This feature is accessible as a stand-alone workflow or as an add-on / modifier to an existing subworkflow during in [Wokflow Designer](/workflow-designer/general-overview.md).
 
 # Example algorithm
 

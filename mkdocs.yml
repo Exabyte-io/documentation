@@ -105,28 +105,28 @@ pages:
             - K-point Convergence:         workflows/addons/convergence-algorithms.md
             - Structural Relaxation:       workflows/addons/structural-relaxation.md
 
-
-
     - Models:
         - Overview:                                 models/overview.md
         - Auxiliary Concepts:
-            - Reciprocal space:                     models/dft/reciprocal-space.md
-            - Reciprocal space > sampling:          models/dft/sampling.md # kgrid, qgrid, igrid,
-            - Reciprocal space > paths:             models/dft/paths.md # kpath, qpath, ipath
+            - Reciprocal space:                     models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:          models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
+            - Reciprocal space > paths:             models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
         - Density Functional Theory:
-            - Overview:                             models/dft/density-functional-theory.md
+            - Overview:                             models/dft/overview.md
             - References:                           models/dft/references.md
 
 
     - Methods:
         - Overview:                           methods/overview.md
         - Pseudopotential:
-            - Cutoffs:                        methods/pseudopotential/cutoffs.md
+            - Overview:                       methods/pseudopotential/overview.md
+            - Parameters:                     methods/pseudopotential/parameters.md
             - Actions:                        methods/pseudopotential/actions.md
 
     - Applications:
-        - Quantum ESPRESSO:            applications/quantum-espresso.md
-        - VASP:                        applications/vasp.md
+        - Overview:                     applications/overview.md
+        - Quantum ESPRESSO:             applications/quantum-espresso.md
+        - VASP:                         applications/vasp.md
 
 # TODO: remove the below when finished with Workflow Designer
 #        - Density Functional Theory:    workflows/density-functional-theory.md
@@ -162,7 +162,7 @@ pages:
         - Levels & Queues:          compute/levels-queues.md
         - Hardware:                 compute/hardware.md
         - Actions:
-            - Setting Parameters:   compute/setting-parameters.md
+            - Set Parameters:       compute/setup.md
         - Command Line Interface:
             - Login:                cli/login.md
             - Accounting:           cli/accounting.md
