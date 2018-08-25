@@ -10,4 +10,4 @@ This section contains information about how we store materials data and the indi
 
 # Actions
 
-[Actions](creating-structures.md) section explains and provides visual examples of actions users can perform on materials.
+Actions section explains and provides visual examples of actions users can perform on materials.

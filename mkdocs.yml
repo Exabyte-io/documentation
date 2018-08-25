@@ -56,7 +56,7 @@ pages:
             - Copy from shared bank:      materials/actions/bank.md
             - Advanced Search:            materials/actions/advanced-search.md
             - Search & Compare:           materials/actions/search-compare.md
-            - Set default:                workflows/actions/set-default.md
+            - Set default:                materials/actions/set-default.md
             - Select During Job Creation: materials/actions/selection.md
 
     - Materials Designer:
@@ -150,9 +150,9 @@ pages:
             - Tabs > Detailed View:             workflow-designer/subworkflow-editor/detailed-view.md
             - Tabs > Compute:                   workflow-designer/subworkflow-editor/compute.md
             - Units Flowchart:                  workflow-designer/subworkflow-editor/units-flowchart.md
-#        - Unit Editor:
-#            - Overview:                         workflow-designer/unit-editor.md
-#            - Input Templates:                  workflow-designer/unit-editor/input-templates.md
+        - Unit Editor:
+            - Overview:                         workflow-designer/unit-editor.md
+            - Input Templates:                  workflow-designer/unit-editor/input-templates.md
 
 
     - Compute:
@@ -161,6 +161,7 @@ pages:
         - Connection Options:       compute/connection-options.md
         - Levels & Queues:          compute/levels-queues.md
         - Hardware:                 compute/hardware.md
+        - Setup:                    compute/setup.md
         - Actions:
             - Set Parameters:       compute/setup.md
         - Command Line Interface:

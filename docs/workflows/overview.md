@@ -6,4 +6,4 @@ This section contains information about how we organize, store and apply workflo
 
 # Actions
 
-[Actions](create.md) section explains and provides visual examples of actions users can perform on workflows.
+[Actions](actions/overview.md) section explains and provides visual examples of actions users can perform on workflows.

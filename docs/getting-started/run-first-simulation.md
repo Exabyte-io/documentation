@@ -10,7 +10,7 @@ Silicon FCC is the default material added to each account on creation. Below we 
 
 <img data-gifffer="/images/run-first-simulation-import-workflow.gif"/>
  
-Readers can also learn how to [create](/materials/creating-structures/) or [upload/import](/materials/upload-and-import) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](/materials/other-actions.md) elsewhere in this documentation. 
+Readers can also learn how to [create](/materials-designer/overview.md) or [upload](/materials/actions/upload.md) / [import](/materials/actions/import.md) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](/general/actions/set-default.md) elsewhere in this documentation. 
  
 
 # Open Job Designer
