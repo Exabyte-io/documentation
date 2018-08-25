@@ -14,7 +14,7 @@ The initial section of the "Important Settings" tab titled "cutoffs" contains se
 
 In the text field directly to the right, under the label "density", the user can then also set the cutoff for the electronic charge density and potential.
 
-The user is referred to this [specialized documentation page](../../methods/pseudopotential/cutoffs.md) for a more detailed review of the above-mentioned cutoff concepts. 
+The user is referred to this [specialized documentation page](../../methods/pseudopotential/parameters.md) for a more detailed review of the above-mentioned cutoff concepts. 
 
 # k-points grid settings
 
