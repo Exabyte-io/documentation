@@ -20,7 +20,7 @@ The dialog features a text field where the crystal basis of the desired combinat
 
 # Combinatorial Basis format
 
-Combinatorial Basis syntax is a superset of the basis representation format explained [here](../source-editor/basis.md)). The characters denoting the chemical elements are separated by slashes or commas to generate "permutations" or "combinations", as illustrated in the following examples.
+Combinatorial Basis syntax is a superset of the basis representation format explained [here](/materials-designer/source-editor/basis.md)). The characters denoting the chemical elements are separated by slashes or commas to generate "permutations" or "combinations", as illustrated in the following examples.
 
 > NOTE: permutations and combinations have to be used independently and NOT within the same basis context.
 

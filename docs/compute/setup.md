@@ -2,7 +2,9 @@
 
 The Compute panel allows user to set up the computational parameters for the simulation to be executed.
 
-<!-- TODO: add a visual -->
+<!-- TODO: update a visual -->
+
+![Compute Tab](../images/ComputeTab.png "Compute Tab")
 
 # Time limit 
  
@@ -22,9 +24,7 @@ This value specifies the maximum time limit for the calculation to be run for. T
 
 # Nodes / PPN
 
-The desired number of computing nodes and the number of cores on each node (PPN = processors per node) can be selected, depending on the expected computational costs and requirements of the calculation under consideration. 
-
-> The necessary payments will have to be made as explained [in this page](/billing/billing-and-payments.md), before the execution of any task can be made possible.
+The desired number of computing nodes and the number of cores on each node (PPN = processors per node) can be selected, depending on the expected computational costs and requirements of the calculation under consideration. The necessary payments will have to be made as explained [in this page](/billing/billing-and-payments.md), before the execution of any task can be made possible.
 
 # Advanced Options
 
