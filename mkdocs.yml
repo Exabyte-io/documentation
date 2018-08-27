@@ -92,6 +92,7 @@ pages:
             - Workflows:                  workflows/data/data.md
             - Subworkflows:               workflows/data/subworkflows.md
             - Units:                      workflows/data/units.md
+            - Templates:                  workflows/data/templates.md
             - Jobs:                       workflows/data/jobs.md
             - Maps:                       workflows/data/maps.md
         - Actions:

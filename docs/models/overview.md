@@ -45,7 +45,7 @@ Several modifiers can be included as part of the subworkflow under consideration
 
 # Auxiliary Concepts
 
-For obvious reasons we make extensive use of the concept of **reciprocal space**. The notion of reciprocal lattice is introduced [in this section](dft/reciprocal-space.md), whereas the **grids** of reciprocal lattice points, necessary for performing such calculations along the desired **paths** in reciprocal space, are described [here](dft/sampling.md) and [here](dft/paths.md) respectively.
+For obvious reasons we make extensive use of the concept of **reciprocal space**. The notion of reciprocal lattice is introduced [in this section](auxiliary-concepts/reciprocal-space.md), whereas the **grids** of reciprocal lattice points, necessary for performing such calculations along the desired **paths** in reciprocal space, are described [here](auxiliary-concepts/reciprocal-space/sampling.md) and [here](auxiliary-concepts/reciprocal-space/paths.md) respectively.
 
 # Example JSON Representation
 
