@@ -16,7 +16,7 @@ Further down this "Compute" tab, under the "Cluster" section, a list of supercom
 
 # Queue
 
-The options for submitting the computing job to the task scheduler of the cluster can be found under the section "Queue". In particular, the user is offered the possibility to launch the desired job with three different levels of priority: a "Debug (D)" mode which is especially suited for preliminary tests, an "fast (eg. OF)" mode for high priority on the scheduler and rapid execution of the job, and finally an "regular (eg. OR)" mode to obtain regular access to the scheduler. This is further explained [here](queues.md)
+The options for submitting the computing job to the task scheduler of the cluster can be found under the section "Queue". In particular, the user is offered the possibility to launch the desired job with three different levels of priority: a "Debug (D)" mode which is especially suited for preliminary tests, an "fast (eg. OF)" mode for high priority on the scheduler and rapid execution of the job, and finally an "regular (eg. OR)" mode to obtain regular access to the scheduler. This is further explained [here](levels-queues.md)
 
 ### Time Limit
 

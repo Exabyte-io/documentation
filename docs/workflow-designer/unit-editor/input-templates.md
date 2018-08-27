@@ -12,7 +12,7 @@ By clicking on the `Template Data` button to the right of the unit input templat
 
 The user can notice that some scripting commands are allowed as part of the template syntax, such as the "for" loop contained in the final line of the template for defining the size of the grid of k-points employed as part of the current "pw_scf" computation, according to the specific format of Quantum ESPRESSO input scripts [[1](#links)].
 
-More about the logic behind templates and rendering is explained in [this part of the documentation](/workflows/data/units/#templating). 
+More about the logic behind templates and rendering is explained in [this part of the documentation](/workflows/data/templates.md). 
 
 # Example JSON Representation
 
@@ -124,7 +124,7 @@ K_POINTS automatic
 
 # Preview of input script
 
-By clicking on the "Preview" tab next to "Template" at the bottom of the Unit Editor interface, the user can visualize a preview of the corresponding input script, in its final form to be stored in the database and sent to the computational infrastructure for execution. Such process completes the [design time render](/workflows/data/units/#design-time-render) This text will be further processed during the [runtime render](/workflows/data/units/#run-time-render) into the final text to be passed directly to the application executable. 
+By clicking on the "Preview" tab next to "Template" at the bottom of the Unit Editor interface, the user can visualize a preview of the corresponding input script, in its final form to be stored in the database and sent to the computational infrastructure for execution. Such process completes the [design time render](/workflows/data/templates.md#design-time-render) This text will be further processed during the [runtime render](/workflows/data/templates.md#run-time-render) into the final text to be passed directly to the application executable. 
 
 An example of input text, resulting from the above-mentioned JSON data structure and input template is displayed in the expandable section below:
 
