@@ -1,36 +1,34 @@
 # Unit Editor
 
-The unit editor for each elementary unit computation comprised in a parent subworkflow can be accessed by clicking on the corresponding unit box from within the units flowchart, which can be found at the bottom of the Subworkflow Editor interface and is first introduced [here](subworkflow-editor/units-flowchart.md). Once this is done, the user will be greeted with the various settings sections contained in the Unit Editor interface, as shown in the following example:
+The workflows units for each elementary computation can be edited by means of Unit Editor interface. The latter can be accessed by clicking on the corresponding unit box from within the [units flowchart](subworkflow-editor/units-flowchart.md). 
 
-![](/images/unit-editor.png)
+The Unit Editor interface contains multiple sections, as shown in the following visual and reviewed further below.
 
-Each distinct section within the overall Unit Editor interface highlighted in the image above will now be reviewed separately throughout the remainder of this documentation page:
+!["Unit Editor"](/images/unit-editor.png "Unit Editor sections")
 
-# Unit name
+# Name
 
-The first line at the top of the interface, labelled with the general logo for elementary units <i class="zmdi zmdi-circle-o zmdi-hc-border"></i>, offers a reminder of the unit's name within the general units flowchart, or "pw_scf" in the above example. This latter unit name is in reference to its implementation of a ground-state self-consistent energy calculation in DFT performed with the "pw" code, which is part of the Quantum ESPRESSO distribution (pw_scf specifically stands for Plane-Wave Self-Consistent Field). This unit name can be edited by the user following the item re-naming conventions outlined [here](/general/actions/name.md). 
+The first line at the top of the interface, labelled with the general icon for elementary units <i class="zmdi zmdi-circle-o zmdi-hc-border"></i>, offers a reminder of the unit's name within the general flowchart, or "pw_scf" in the above example. The name can be edited following the steps explained [here](/general/actions/name.md). 
 
-This first line also contains a reminder of the unit's type (execution unit in the above example), and of the unique identification label of the unit within the overall units flowchart (the so-called flowchartId). 
+This first line also contains a reminder of the unit's type (*execution* in the above example), and of the unique identification label of the unit within the overall units flowchart (the *flowchartId*). 
 
-# The "Application" section
+# Application
 
-Similarly to the "Application" settings section in the [Overview tab](subworkflow-editor/overview.md) of the parent Subworkflow Editor interface, this section reviews the computational engine (otherwise known as application) that is to be employed in the current unit calculation, and in which specific version and build. 
+Similar to the "Application" settings section in the [Overview tab](subworkflow-editor/overview.md) of the parent [Subworkflow Editor](subworkflow-editor/overview.md), this section reviews the computational engine (otherwise known as [application](/applications/overview.md)) to be employed in the current unit. 
 
-Normally these two settings cannot be changed by the user within the Unit Editor interface, due to them being set at the general parent subworkflow level. What can be changed inside this "Application" section of the Unit Editor is the specific component executable of the simulation engine that is to be employed as part of the current unit calculation, under the corresponding "Executable" drop-down menu.
+Normally, the application, its specific version and build cannot be changed by the user within the "Unit Editor" interface, as they are set at the parent subworkflow level. What can be changed inside this "Application" section of the Unit Editor is the specific **executable** of the simulation engine that is to be employed as part of the current unit calculation, under the corresponding "Executable" drop-down menu. 
 
-## Examples with Quantum Espresso
+We maintain a set of input templates (as further explained [here](unit-editor/input-templates.md)) for some of the most common use cases per each application and executable - **flavors**. Users may choose to pre-populate the input based one of the templates by selecting a flavor.
 
-For example, the Quantum Espresso DFT simulation package (contrary to VASP) breaks its operations into a relatively large number of distinct executables, as explained in its [dedicated documentation page](/applications/quantum-espresso.md). The "pw.x" executable in Quantum Espresso is the most commonly encountered one, and is used primarily for performing general total energy self-consistent calculations. This said, many other executables distributed as part of the Quantum Espresso package can be selected from the "Executable" drop-down menu, such as the "ph.x" code which is at the core of phonon linear response calculations through the Density Functional Perturbation Theory formalism, using the data previously produced by pw.x.    
+> NOTE: Examples "application", "executables" and "flavors. [Quantum Espresso](/applications/quantum-espresso.md) application breaks its operations into a set of distinct executables with "pw.x" being the most commonly encountered one and "ph.x" being another example. Many different types of computations can be performed within the context of the pw.x executable itself, such as [variable-cell relaxation calculations](/workflows/addons/structural-relaxation.md) via the "pw_vc-relax" flavor, or electronic band structure calculations with "pw_bands". The input content for each of these represent the different flavors.
 
-For each executable object, several different calculation "Flavors" can in turn be chosen by the user under the corresponding drop-down menu. For example, many different types of computations can be performed within the context of the pw.x executable itself, such as [variable-cell relaxation calculations](/workflows/addons/structural-relaxation.md) via the "pw_vc-relax" flavor setting, or electronic band structure calculations with "pw_bands".
+# Properties and Monitors
 
-# The "Properties" and "Monitors" sections
+The "Properties" and "Monitors" sections of the Unit Editor interface are presented in a way which is exactly analogous to the equivalent sections under the "Detailed View" tab of the parent Subworkflow Editor interface. The reader is therefore referred to the relevant parts of the "Detailed View" [documentation page](/workflow-designer/subworkflow-editor/detailed-view.md#the-"properties"-section), and to [this general reference page](/materials/properties.md). This part allows for the selections of physical properties to be retrieved as part of the final output of the unit's computational task, and secondly a list of quantities that can be monitored for during the course of the execution. 
 
-The "Properties" and "Monitor" settings sections of the Unit Editor interface are presented in a way which is exactly analogous to the equivalent sections under the "Detailed View" tab of the parent Subworkflow Editor interface. The reader is therefore referred to the relevant parts of the "Detailed View" [documentation page](/workflow-designer/subworkflow-editor/detailed-view.md#'The "Properties" section'), and to [this other reference page](/materials/properties.md). The tables presented towards the end of this latter page, in particular, display firstly a complete list of physical properties that can be selected in the Unit Editor interface and then retrieved as part of the final output of the unit's computational tasks,  and secondly a list of quantities that can be monitored for correct convergence during the course of the execution of the unit's calculations. 
+# Next
 
-# The "Next" section
-
-This section permits the user to view, under the corresponding "Next" drop-down menu, which other units are contained in the overall units flowchart sequence, besides the unit currently being consulted under the Unit Editor interface. Each time a unit is selected from this drop-down menu, its corresponding identification label gets displayed under the "FlowchartId" entry to the right of the same line. The default unit entry displayed in this "Next" drop-down menu is the unit that follows in the flowchart immediately after the one being currently inspected. 
+This section permits the user to select, under the corresponding "Next" drop-down menu, which other units contained in the overall units flowchart sequence is to be executed next inside the logical flow of the parent subworkflow. Each time a unit is selected from this drop-down menu, its corresponding identification label gets displayed under the "FlowchartId" entry to the right of the same line. 
 
 # Unit input templates
 

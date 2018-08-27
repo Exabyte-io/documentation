@@ -14,16 +14,16 @@ The initial section of the "Important Settings" tab titled "cutoffs" contains se
 
 In the text field directly to the right, under the label "density", the user can then also set the cutoff for the electronic charge density and potential.
 
-The user is referred to this [specialized documentation page](../../methods/pseudopotential/parameters.md) for a more detailed review of the above-mentioned cutoff concepts. 
+The user is referred to this [specialized documentation page](/methods/pseudopotential/parameters.md) for a more detailed review of the above-mentioned cutoff concepts. 
 
 # k-points grid settings
 
 The settings in the "kgrid" section are normally unit-specific. The name of the subworkflow unit to which each kgrid settings section applies is indicated on top of each section. 
 
-Under these kgrid settings lies the choice for the size and density of the grid of reciprocal electronic k-points, as described in the [corresponding page](../../models/dft/sampling.md).
+Under these kgrid settings lies the choice for the size and density of the grid of reciprocal electronic k-points, as described in the [corresponding page](/models/auxiliary-concepts/reciprocal-space/sampling.md).
 
 # Reciprocal path settings
 
-Sections containing unit-specific settings labelled either "kpath", "qpath", or "ipath", are necessary for defining the path in reciprocal space as part of a subworkflow for calculating band structure or phonon dispersion curves. The name of the unit to which each one of these settings sections applies is indicated on top of each section. Please refer to [this page](../../models/dft/paths.md) for more detailed explanations.
+Sections containing unit-specific settings labelled either "kpath", "qpath", or "ipath", are necessary for defining the path in reciprocal space as part of a subworkflow for calculating band structure or phonon dispersion curves. The name of the unit to which each one of these settings sections applies is indicated on top of each section. Please refer to [this page](/models/auxiliary-concepts/reciprocal-space/paths.md) for more detailed explanations.
 
 
