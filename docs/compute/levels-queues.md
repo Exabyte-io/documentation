@@ -20,14 +20,14 @@ It is advised to use Debug level while prototyping your calculations, Ordinary f
 
 Depending on the size and degree of urgency, simulation tasks can be directed by user to different submission queues to optimize cost/efficiency ratio.
 
-| Name                | Level       | Meaning                   | Nodes/job        | Charge policy               | Max nodes<sup>1</sup>  | Cores/Node      | GPU/Node       |
+| Name                | Level       | Meaning                   | Nodes/job        | Charge policy               | Max nodes<sup class="c-red">1</sup>  | Cores/Node      | GPU/Node       |
 | :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------: | :--------------------: | :------------:  | :------------: |
-| D                   | Debug       | debug                     | 1                | core-seconds<sup>2</sup>    | 10                     | 8               | -              |
-| OR                  | Ordinary    | Ordinary regular          | 1                | node-seconds<sup>3</sup>    | 10                     | MAX<sup>4</sup> | -              |
+| D                   | Debug       | debug                     | 1                | core-seconds<sup class="c-red">2</sup>    | 10                     | 8               | -              |
+| OR                  | Ordinary    | Ordinary regular          | 1                | node-seconds<sup class="c-red">3</sup>    | 10                     | MAX<sup class="c-red">4</sup> | -              |
 | OR4                 | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 4               | -              |
 | OR8                 | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 8               | -              |
 | OR16                | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 16              | -              |
-| OF                  | Ordinary    | Ordinary fast             | &le;50           | node-hours<sup>5</sup>      | 100                    | MAX             | -              |
+| OF                  | Ordinary    | Ordinary fast             | &le;50           | node-hours<sup class="c-red">5</sup>      | 100                    | MAX             | -              |
 | SR                  | Saving      | saving regular            | 1                | node-seconds                | 10                     | MAX             | -              |
 | SR4                 | Saving      | saving regular            | 1                | node-seconds                | 10                     | 4               | -              |
 | SR8                 | Saving      | saving regular            | 1                | node-seconds                | 10                     | 8               | -              |
@@ -39,11 +39,15 @@ Depending on the size and degree of urgency, simulation tasks can be directed by
 
 **Notes**:
 
-1. maximum number per single cluster, may be administratively adjusted depending on load
-2. jobs are charged according to the number of core-seconds consumed
-3. maximum number of cores per node depends on the cluster and is shown in platform [here](https://platform.exabyte.io/clusters)
-4. jobs are charged according to the number of node-seconds consumed
-5. charged according to the number of whole (integer) node hours consumed
+<span class="c-red">1</span>. maximum number per single cluster, may be administratively adjusted depending on load
+
+<span class="c-red">2</span>. jobs are charged according to the number of core-seconds consumed
+
+<span class="c-red">3</span>. maximum number of cores per node depends on the cluster and is shown in platform [here](https://platform.exabyte.io/clusters)
+
+<span class="c-red">4</span>. jobs are charged according to the number of node-seconds consumed
+
+<span class="c-red">5</span>. charged according to the number of whole (integer) node hours consumed
 
 
 

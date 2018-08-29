@@ -52,5 +52,5 @@ Cluster has a resource management system. Multiple compute types and compute que
 **Notes**:
     
 1. compute time is accumulated in seconds only for the cores occupied by the job, shared use model deployed for compute nodes in the queue.
-2. compute time is accumulated in seconds for all cores per compute node, non-shared use model deployed.
-3. compute time is accumulated in hours for all cores per compute node, non-shared use model deployed.
+2. compute time is accumulated in seconds for all cores per compute node, non-shared use model.
+3. compute time is accumulated in hours for all cores per compute node, non-shared use model.
