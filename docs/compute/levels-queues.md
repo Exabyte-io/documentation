@@ -20,32 +20,32 @@ It is advised to use Debug level while prototyping your calculations, Ordinary f
 
 Depending on the size and degree of urgency, simulation tasks can be directed by user to different submission queues to optimize cost/efficiency ratio.
 
-| Name                | Level       | Meaning                   | Nodes per job    | Charge policy                    | Max nodes<sup>*</sup>  | GPUs per node  |
-| :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------:      | :--------------------: | :------------: |
-| D                   | Debug       | debug                     | 1                | exact core-seconds<sup>**</sup>  | 10                     | -              |
-| OR                  | Ordinary    | Ordinary regular          | 1                | exact node-seconds<sup>***</sup> | 10                     | -              |
-| OR4                 | Ordinary    | Ordinary regular          | 1                | exact node-seconds               | 10                     | -              |
-| OR8                 | Ordinary    | Ordinary regular          | 1                | exact node-seconds               | 10                     | -              |
-| OR16                | Ordinary    | Ordinary regular          | 1                | exact node-seconds               | 10                     | -              |
-| OF                  | Ordinary    | Ordinary fast             | &le;50           | whole node-hours<sup>****</sup>  | 100                    | -              |
-| SR                  | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
-| SR4                 | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
-| SR8                 | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
-| SR16                | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
-| SF                  | Saving      | saving fast               | &le;50           | whole node-hours                 | 100                    | -              |
-| GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole node-hours                 | 100                    | 1              |
-| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole node-hours                 | 100                    | 4              |
-| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole node-hours                 | 100                    | 8              |
+| Name                | Level       | Meaning                   | Nodes/job        | Charge policy               | Max nodes<sup>1</sup>  | Cores/Node      | GPU/Node       |
+| :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------: | :--------------------: | :------------:  | :------------: |
+| D                   | Debug       | debug                     | 1                | core-seconds<sup>2</sup>    | 10                     | 8               | -              |
+| OR                  | Ordinary    | Ordinary regular          | 1                | node-seconds<sup>3</sup>    | 10                     | MAX<sup>4</sup> | -              |
+| OR4                 | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 4               | -              |
+| OR8                 | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 8               | -              |
+| OR16                | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 16              | -              |
+| OF                  | Ordinary    | Ordinary fast             | &le;50           | node-hours<sup>5</sup>      | 100                    | MAX             | -              |
+| SR                  | Saving      | saving regular            | 1                | node-seconds                | 10                     | MAX             | -              |
+| SR4                 | Saving      | saving regular            | 1                | node-seconds                | 10                     | 4               | -              |
+| SR8                 | Saving      | saving regular            | 1                | node-seconds                | 10                     | 8               | -              |
+| SR16                | Saving      | saving regular            | 1                | node-seconds                | 10                     | 16              | -              |
+| SF                  | Saving      | saving fast               | &le;50           | node-hours                  | 100                    | MAX             | -              |
+| GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                  | 100                    | MAX             | 1              |
+| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                  | 100                    | MAX             | 4              |
+| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                  | 100                    | MAX             | 8              |
 
-Notes:
+**Notes**:
 
-<sup>*</sup> maximum number of nodes per single cluster, may be administratively adjusted depending on load
+1. maximum number per single cluster, may be administratively adjusted depending on load
+2. jobs are charged according to the number of core-seconds consumed
+3. maximum number of cores per node depends on the cluster and is shown in platform [here](https://platform.exabyte.io/clusters)
+4. jobs are charged according to the number of node-seconds consumed
+5. charged according to the number of whole (integer) node hours consumed
 
-<sup>**</sup> exact seconds = jobs are charged according to consumed walltime in seconds;
 
-<sup>***</sup> exact node-seconds = jobs are charged according to the number of node-seconds consumed;
-
-<sup>***</sup> whole node-hours = jobs are charged according to the number of node-hours consumed, each partial hour is charged as whole
 
 ## Wait time
 
