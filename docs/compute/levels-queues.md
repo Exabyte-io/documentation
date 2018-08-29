@@ -20,16 +20,22 @@ It is advised to use Debug level while prototyping your calculations, Ordinary f
 
 Depending on the size and degree of urgency, simulation tasks can be directed by user to different submission queues to optimize cost/efficiency ratio.
 
-| Name                | Level       | Meaning                   | Nodes per job    | Charge policy               | Max nodes<sup>*</sup>  | GPUs per node  |
-| :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------: | :--------------------: | :------------: |
-| D                   | Debug       | debug                     | 1                | exact seconds<sup>**</sup>  | 10                     | -              |
-| OR                  | Ordinary    | Ordinary regular          | 1                | exact seconds               | 10                     | -              |
-| OF                  | Ordinary    | Ordinary fast             | &le;50           | whole hours<sup>***</sup>   | 100                    | -              |
-| SR                  | Saving      | saving regular            | 1                | exact seconds               | 10                     | -              |
-| SF                  | Saving      | saving fast               | &le;50           | whole hours                 | 100                    | -              |
-| GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 1              |
-| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 4              |
-| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole hours                 | 100                    | 8              |
+| Name                | Level       | Meaning                   | Nodes per job    | Charge policy                    | Max nodes<sup>*</sup>  | GPUs per node  |
+| :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------:      | :--------------------: | :------------: |
+| D                   | Debug       | debug                     | 1                | exact core-seconds<sup>**</sup>  | 10                     | -              |
+| OR                  | Ordinary    | Ordinary regular          | 1                | exact node-seconds<sup>***</sup> | 10                     | -              |
+| OR4                 | Ordinary    | Ordinary regular          | 1                | exact node-seconds               | 10                     | -              |
+| OR8                 | Ordinary    | Ordinary regular          | 1                | exact node-seconds               | 10                     | -              |
+| OR16                | Ordinary    | Ordinary regular          | 1                | exact node-seconds               | 10                     | -              |
+| OF                  | Ordinary    | Ordinary fast             | &le;50           | whole node-hours<sup>****</sup>  | 100                    | -              |
+| SR                  | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
+| SR4                 | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
+| SR8                 | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
+| SR16                | Saving      | saving regular            | 1                | exact node-seconds               | 10                     | -              |
+| SF                  | Saving      | saving fast               | &le;50           | whole node-hours                 | 100                    | -              |
+| GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole node-hours                 | 100                    | 1              |
+| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole node-hours                 | 100                    | 4              |
+| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | whole node-hours                 | 100                    | 8              |
 
 Notes:
 
@@ -37,7 +43,9 @@ Notes:
 
 <sup>**</sup> exact seconds = jobs are charged according to consumed walltime in seconds;
 
-<sup>***</sup> whole hours = jobs are charged according to the number of Node-hours consumed, each partial hour is charged as whole
+<sup>***</sup> exact node-seconds = jobs are charged according to the number of node-seconds consumed;
+
+<sup>***</sup> whole node-hours = jobs are charged according to the number of node-hours consumed, each partial hour is charged as whole
 
 ## Wait time
 
