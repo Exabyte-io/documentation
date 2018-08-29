@@ -42,14 +42,15 @@ Cluster has a resource management system. Multiple compute types and compute que
 
 ### 2.6 Charge Policies
 
-| Compute  |Type| Saving | Ordinary | Premium |
-|:--------   |:-----------|:-------|----------|---------|
-| Queue | | | | |
-| Debug   | | - | seconds* | seconds*
-| Regular | | seconds* | seconds* | seconds*
-| Fast    | | node-hours | node-hours | node-hours
+| Compute   | Type         | Saving        | Ordinary      | Premium       |
+| :-------- | :----------- | :-------      | ----------    | ---------     |
+| Queue     |              |               |               |               |
+| Debug     |              | -             | seconds*      | seconds*      |
+| Regular   |              | node-seconds* | node-seconds* | node-seconds* |
+| Fast      |              | node-hours*   | node-hours*   | node-hours*   |
 
 In the table above:
     
-   - *seconds*:  compute time is accumulated in seconds only for the cores occupied by the job, shared use model deployed for compute nodes in the queue
-    - *node-hours*: compute time is accumulated in hours for all cores per compute node, non-shared use model deployed
+   - *seconds*:  compute time is accumulated in seconds only for the cores occupied by the job, shared use model deployed for compute nodes in the queue.
+   - *node-seconds*:  compute time is accumulated in seconds for all cores per compute node, non-shared use model deployed.
+   - *node-hours*: compute time is accumulated in hours for all cores per compute node, non-shared use model deployed.
