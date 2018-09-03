@@ -10,7 +10,7 @@ The user interface of the platform contains three main distinct classes of **Ent
 
 Each one of the above has a dedicated tab within the user interface, as depicted in the image below:
 
-<img src="/images/entity-classes.png/" > 
+<img src="/images/entity-classes.png" > 
 
 # Common actions
 
@@ -54,13 +54,13 @@ There are interface components, and some of their respective sub-components, whi
 
 The Designer component allows user to Edit or "Design" new Entities. Its sub-components may include "Header Menu", "Items List Sidebar", and "Source Editor". In the case of Materials for example, their Designer interface has the following general appearance, where the instances of the above interface sub-components have been labelled correspondingly:
 
-<img src="/images/materials-designer-initial.png/" >
+<img src="/images/materials-designer-initial.png" >
 
 ## 2. Explorer
 
 The Explorer (or Entity List) component represents a list or Table and allows users to view and execute actions on multiple Entities at once. This interface component is illustrated below (named "General Items List") for the example entity case of Materials:
 
-<img src="/images/materials-list.png/" >
+<img src="/images/materials-list.png" >
 
 ### Actions Toolbar
 

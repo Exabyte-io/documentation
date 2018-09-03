@@ -155,7 +155,7 @@ is rendered into:
 
 9. Including a clickable image map:
 
-    <img src="/images/workflow-designer-initial.png/" usemap="#mapname">
+    <img src="/images/workflow-designer-initial.png" usemap="#mapname">
 
     <map name="mapname">
         <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar-items/">
@@ -166,7 +166,7 @@ is rendered into:
     see the source for more explanation
 
     ```markdown
-    <img src="/images/workflow-designer-initial.png/" usemap="#mapname">
+    <img src="/images/workflow-designer-initial.png" usemap="#mapname">
 
     <map name="mapname">
         <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar-items/">
