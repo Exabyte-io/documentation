@@ -26,7 +26,7 @@ For example, when considering a Density Functional Theory calculations, in order
 
 The location of this drop-down menu is highlighted below:
 
-<img src="/images/modifier-menu.png/" >
+<img src="/images/modifier-menu.png" >
 
 # Metadata
 
