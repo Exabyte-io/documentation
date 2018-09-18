@@ -53,7 +53,7 @@ Depending on the size and degree of urgency, simulation tasks can be directed by
 
 <span class="c-red">5</span>. charged according to the number of whole (integer) node hours consumed
 
-<span class="c-red">6</span>. For GPU-enabled queues the second character in the name stands for the type of GPU used according to the NVIDIA classification. Thus, for GPOF queue NVIDIA P100 instances are used as explained in [LINK](./hardware/#hardware-specifications). By default (eg. for GOF queues) "V100" is used.
+<span class="c-red">6</span>. For GPU-enabled queues the second character in the name stands for the type of GPU used according to the NVIDIA classification. Thus, for GPOF queue NVIDIA P100 instances are used as explained in [Hardware Specifications](./hardware/#hardware-specifications). By default (eg. for GOF queues) "V100" is used.
 
 ## Wait time
 
