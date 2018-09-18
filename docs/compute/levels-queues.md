@@ -12,7 +12,7 @@ We have multiple levels of compute that let our users optimize the cost-to-perfo
 
 **Notes**:
 
-1. For GOF queues the charge factor is 8.8, for GPOF queue (available on Azure) it is 5.5 as of 2018-09-18
+<span class="c-red">1</span> For GOF queues charge factor is 8.8, for GPOF queue (available on Azure as of 2018-09-18) - 5.5
 
 It is advised to use Debug level while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
 
