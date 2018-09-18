@@ -8,7 +8,11 @@ We have multiple levels of compute that let our users optimize the cost-to-perfo
 | Ordinary | meant for most production tasks, extensive compute resources at the base rate  |1.0
 | Saving   | significantly lower rate through utilizing idle compute resources; compute resources may be terminated at any time depending on the load in the data center   |0.2
 | Premium  | premium-quality resources (eg. low-latency interconnect)   | 2.7
-| GPU      | GPU resources   | 8.8
+| GPU      | GPU resources   | Queue-dependent<sup class="c-red">1</sup>
+
+**Notes**:
+
+1. For GOF queues the charge factor is 8.8, for GPOF queue (available on Azure) it is 5.5 as of 2018-09-18
 
 It is advised to use Debug level while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
 
