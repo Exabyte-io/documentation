@@ -22,9 +22,9 @@ The following shows the hardware specification for each vendor.
  -->
 Notes:
 
-1. [GPU-enabled](https://aws.amazon.com/ec2/instance-types/p3/) computing resources.
-2. [GPU-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-gpu) computing resources.
-3. [Infiniband-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) networking hardware.
+1. AWS [GPU-enabled](https://aws.amazon.com/ec2/instance-types/p3/) computing resources.
+2. Azure [GPU-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-gpu) computing resources.
+3. Azure [Infiniband-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) networking hardware.
 
 
 # Available Resources
