@@ -52,8 +52,6 @@ Depending on the size and degree of urgency, simulation tasks can be directed by
 
 <span class="c-red">5</span>. charged according to the number of whole (integer) node hours consumed
 
-<span class="c-red">6</span>. charged according to the number of whole (integer) node hours consumed
-
 
 
 ## Wait time
