@@ -20,22 +20,25 @@ It is advised to use Debug level while prototyping your calculations, Ordinary f
 
 Depending on the size and degree of urgency, simulation tasks can be directed by user to different submission queues to optimize cost/efficiency ratio.
 
-| Name                | Level       | Meaning                   | Nodes/job        | Charge policy               | Max nodes<sup class="c-red">1</sup>  | Cores/Node      | GPU/Node       |
-| :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------: | :--------------------: | :------------:  | :------------: |
-| D                   | Debug       | debug                     | 1                | core-seconds<sup class="c-red">2</sup>    | 10                     | 8               | -              |
-| OR                  | Ordinary    | Ordinary regular          | 1                | node-seconds<sup class="c-red">3</sup>    | 10                     | MAX<sup class="c-red">4</sup> | -              |
-| OR4                 | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 4               | -              |
-| OR8                 | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 8               | -              |
-| OR16                | Ordinary    | Ordinary regular          | 1                | node-seconds                | 10                     | 16              | -              |
-| OF                  | Ordinary    | Ordinary fast             | &le;50           | node-hours<sup class="c-red">5</sup>      | 100                    | MAX             | -              |
-| SR                  | Saving      | saving regular            | 1                | node-seconds                | 10                     | MAX             | -              |
-| SR4                 | Saving      | saving regular            | 1                | node-seconds                | 10                     | 4               | -              |
-| SR8                 | Saving      | saving regular            | 1                | node-seconds                | 10                     | 8               | -              |
-| SR16                | Saving      | saving regular            | 1                | node-seconds                | 10                     | 16              | -              |
-| SF                  | Saving      | saving fast               | &le;50           | node-hours                  | 100                    | MAX             | -              |
-| GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                  | 100                    | MAX             | 1              |
-| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                  | 100                    | MAX             | 4              |
-| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                  | 100                    | MAX             | 8              |
+| Name                | Level       | Meaning                   | Nodes/job        | Charge policy                          | Max nodes<sup class="c-red">1</sup> | Cores/Node                    | GPU/Node       |
+| :-----------------: | :---------: | :---------------:         | ---------------: | --------------------------:            | :--------------------:              | :------------:                | :------------: |
+| D                   | Debug       | debug                     | 1                | core-seconds<sup class="c-red">2</sup> | 10                                  | 8                             | -              |
+| OR                  | Ordinary    | Ordinary regular          | 1                | node-seconds<sup class="c-red">3</sup> | 10                                  | MAX<sup class="c-red">4</sup> | -              |
+| OR4                 | Ordinary    | Ordinary regular          | 1                | node-seconds                           | 10                                  | 4                             | -              |
+| OR8                 | Ordinary    | Ordinary regular          | 1                | node-seconds                           | 10                                  | 8                             | -              |
+| OR16                | Ordinary    | Ordinary regular          | 1                | node-seconds                           | 10                                  | 16                            | -              |
+| OF                  | Ordinary    | Ordinary fast             | &le;50           | node-hours<sup class="c-red">5</sup>   | 100                                 | MAX                           | -              |
+| SR                  | Saving      | saving regular            | 1                | node-seconds                           | 10                                  | MAX                           | -              |
+| SR4                 | Saving      | saving regular            | 1                | node-seconds                           | 10                                  | 4                             | -              |
+| SR8                 | Saving      | saving regular            | 1                | node-seconds                           | 10                                  | 8                             | -              |
+| SR16                | Saving      | saving regular            | 1                | node-seconds                           | 10                                  | 16                            | -              |
+| SF                  | Saving      | saving fast               | &le;50           | node-hours                             | 100                                 | MAX                           | -              |
+| GOF                 | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                             | 100                                 | MAX                           | 1              |
+| G4OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                             | 100                                 | MAX                           | 4              |
+| G8OF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                             | 100                                 | MAX                           | 8              |
+| GPOF                | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                             | 100                                 | MAX                           | 1              |
+| GP2OF               | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                             | 100                                 | MAX                           | 2              |
+| GP4OF               | Ordinary    | GPU-enabled ordinary fast | &le;50           | node-hours                             | 100                                 | MAX                           | 4              |
 
 **Notes**:
 

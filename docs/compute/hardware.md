@@ -4,14 +4,17 @@ Our computing resources are currently hosted by trusted vendors: [Amazon Web Ser
 
 The following shows the hardware specification for each vendor.
 
-| Provider                    | Core Count | CPU Type                        | Memory (GB) | Disk (GB) | Bandwidth (Gbps) | GPUs per node  |
-| :---------                  | :--------: | :-----------------------------: | :---------: | :-------: | :--------------: | :------------: |
-| AWS                         | 36         | Intel Xeon E5-2666-v3, 2.90GHz  | 60          | 10        | 10               | -              |
-| AWS GPU<sup>*</sup>         | 8          | Intel Xeon E5-2686-v4, 2.30GHz  | 61          | 10        | 10               | 1              |
-| AWS 4GPUs<sup>*</sup>       | 32         | Intel Xeon E5-2686-v4, 2.30GHz  | 244         | 10        | 10               | 4              |
-| AWS 8GPUs<sup>*</sup>       | 64         | Intel Xeon E5-2686-v4, 2.30GHz  | 488         | 10        | 25               | 8              |
-| Azure                       | 16         | Intel Xeon E5-2673-v3, 2.40GHz  | 32          | 256       | 10               | -              |
-| Azure IB<sup>**</sup>       | 16         | Intel Xeon E5-2667-v3, 3.20GHz  | 112         | 1,000     | 40               | -              |
+| Provider               | Core Count | CPU Type                        | Memory (GB) | Disk (GB) | Bandwidth (Gbps) | GPUs per node  |
+| :---------             | :--------: | :-----------------------------: | :---------: | :-------: | :--------------: | :------------: |
+| AWS                    | 36         | Intel Xeon E5-2666-v3, 2.90GHz  | 60          | 10        | 10               | -              |
+| AWS GPU<sup>*</sup>    | 8          | Intel Xeon E5-2686-v4, 2.30GHz  | 61          | 10        | 10               | 1              |
+| AWS 4GPUs              | 32         | Intel Xeon E5-2686-v4, 2.30GHz  | 244         | 10        | 10               | 4              |
+| AWS 8GPUs              | 64         | Intel Xeon E5-2686-v4, 2.30GHz  | 488         | 10        | 25               | 8              |
+| Azure                  | 16         | Intel Xeon E5-2673-v3, 2.40GHz  | 32          | 256       | 10               | -              |
+| Azure GPU<sup>**</sup> | 6          | Intel Xeon E5-2690-v4, 2.60GHz  | 112         | 336       | 10               | 1              |
+| Azure 2GPUs            | 12         | Intel Xeon E5-2690-v4, 2.60GHz  | 224         | 672       | 10               | 2              |
+| Azure 4GPUs            | 24         | Intel Xeon E5-2690-v4, 2.60GHz  | 448         | 1344      | 10               | 4              |
+| Azure IB<sup>***</sup> | 16         | Intel Xeon E5-2667-v3, 3.20GHz  | 112         | 1,000     | 40               | -              |
 
 <!-- 
 | Rackspace                   | 32         | Intel Xeon E5-2680-v2, 2.80GHz  | 60          | 50        | 5                | -              |
@@ -21,7 +24,9 @@ Notes:
 
 <sup>*</sup> [GPU-enabled](https://aws.amazon.com/ec2/instance-types/p3/) computing resources.
 
-<sup>**</sup> [Infiniband-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) networking hardware.
+<sup>**</sup> [GPU-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-gpu) computing resources.
+
+<sup>***</sup> [Infiniband-enabled](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc) networking hardware.
 
 
 # Available Resources
