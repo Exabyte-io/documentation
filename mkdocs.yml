@@ -25,17 +25,31 @@ pages:
 
     - Home: index.md
 
+
+
+# 1- INTRODUCTION
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
         - User interface overview:  getting-started/ui-overview.md
         - Content highlights:       getting-started/content-highlights.md
         - CLI job submission:       tutorials/cli-job.md
 
-    - Data Convention:
-        - Overview:                 data/overview.md
-        - Structured data:          data/structured.md
-        - Non-structured data:      data/non-structured.md
 
+
+# 2- IMPORTANT STUFF
+    - Pricing:
+        - Service Levels:               billing/pricing-and-service-levels.md
+        - Storage Pricing:              billing/storage-quota.md
+
+    - Security:
+       - Current State of Cloud Security:  security/current-state.md
+       - Overview:                         security/overview.md
+       - Security Policies:                security/security-policies.md
+       - Threats Analysis:                 security/threats-analysis.md
+       - Privacy:                          security/privacy-statement.md  # duplicate through link
+
+
+# 3- ENTITIES
     - General Aspects:
         - Overview:                 general/overview.md
         - Actions:
@@ -107,36 +121,6 @@ pages:
             - K-point Convergence:         workflows/addons/convergence-algorithms.md
             - Structural Relaxation:       workflows/addons/structural-relaxation.md
 
-    - Models:
-        - Overview:                                 models/overview.md
-        - Auxiliary Concepts:
-            - Reciprocal space:                     models/auxiliary-concepts/reciprocal-space.md
-            - Reciprocal space > sampling:          models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
-            - Reciprocal space > paths:             models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
-        - Density Functional Theory:
-            - Overview:                             models/dft/overview.md
-            - References:                           models/dft/references.md
-
-
-    - Methods:
-        - Overview:                           methods/overview.md
-        - Pseudopotential:
-            - Overview:                       methods/pseudopotential/overview.md
-            - Parameters:                     methods/pseudopotential/parameters.md
-            - Actions:                        methods/pseudopotential/actions.md
-
-    - Applications:
-        - Overview:                     applications/overview.md
-        - Quantum ESPRESSO:             applications/quantum-espresso.md
-        - VASP:                         applications/vasp.md
-
-# TODO: remove the below when finished with Workflow Designer
-#        - Density Functional Theory:    workflows/density-functional-theory.md
-#        - Example simulations:          workflows/example-simulations.md
-#        - Advanced Properties:          workflows/advanced-characteristics.md
-
-
-
     - Workflow Designer:
         - Overview:                          workflow-designer/general-overview.md
         - Header Menu:
@@ -157,6 +141,33 @@ pages:
             - Input Templates:                  workflow-designer/unit-editor/input-templates.md
 
 
+
+# 4- CONCEPTS
+    - Models:
+        - Overview:                                 models/overview.md
+        - Auxiliary Concepts:
+            - Reciprocal space:                     models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:          models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
+            - Reciprocal space > paths:             models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
+        - Density Functional Theory:
+            - Overview:                             models/dft/overview.md
+            - References:                           models/dft/references.md
+
+    - Methods:
+        - Overview:                           methods/overview.md
+        - Pseudopotential:
+            - Overview:                       methods/pseudopotential/overview.md
+            - Parameters:                     methods/pseudopotential/parameters.md
+            - Actions:                        methods/pseudopotential/actions.md
+
+    - Applications:
+        - Overview:                     applications/overview.md
+        - Quantum ESPRESSO:             applications/quantum-espresso.md
+        - VASP:                         applications/vasp.md
+
+
+
+# 5- COMPUTATIONAL STUFF
     - Compute:
         - Overview:                 compute/overview.md
         - Policies:                 compute/policies.md
@@ -176,6 +187,28 @@ pages:
             - Extra:                cli/extra.md
             - Permissions:          security/cli-users-permissions.md
 
+    - Data Convention:
+            - Overview:                 data/overview.md
+            - Structured data:          data/structured.md
+            - Non-structured data:      data/non-structured.md
+
+    - REST-API:
+            - Overview:                         rest-api/overview.md
+            - Authentication:                   rest-api/authentication.md
+            - Query structure:                  rest-api/query-structure.md
+            - Endpoints:
+                - Materials:                    rest-api/endpoints/materials.md
+                - Materials-Bank:               rest-api/endpoints/materials-bank.md
+                - Characteristics:              rest-api/endpoints/characteristics.md
+                - Jobs:                         rest-api/endpoints/jobs.md
+                - Workflows:                    rest-api/endpoints/workflows.md
+                # TODO: revise and re-enable after
+                # - Pseudos:                      rest-api/endpoints/pseudos.md
+            - Python Client:                    rest-api/rest-api-python-client.md
+
+
+
+# 6- TUTORIALS AND EXAMPLES
     - Tutorials:
         # TODO: adjust with results closer to experiment and re-publish
         # - Semiconductors:
@@ -205,64 +238,51 @@ pages:
         # TODO: check relevance and update/delete
         # - CLI data import:                  tutorials/cli-job-import.md
 
-    # separating to top-level b/c of the importance
-    - Pricing:
-        - Service Levels:               billing/pricing-and-service-levels.md
-        - Storage Pricing:              billing/storage-quota.md
-
-    - Accounts & Billing:
-        - Settings and Profile:         billing/settings-and-profile.md
-        - Billing and Payments:         billing/billing-and-payments.md
-        - Actions:
-            - Add payment method:       billing/add-credit-card.md
-            - Check balance & quota:    billing/check-balance-quota.md
-            - Increase account balance: billing/increase-balance.md
-            - Increase quota:           billing/increase-quota.md
-            - Upgrade Service Level:    billing/upgrade-service-level.md
-
-    - Organizations:
-        - Overview:         organizations/overview.md
-        - Projects:         organizations/projects.md
-        - Teams:            organizations/teams.md
-
-    - Security:
-        - Current State of Cloud Security:  security/current-state.md
-        - Overview:                         security/overview.md
-        - Security Policies:                security/security-policies.md
-        - Threats Analysis:                 security/threats-analysis.md
-        - Privacy:                          security/privacy-statement.md  # duplicate through link
-
-    - Site Policy:
-        - Privacy:                          site-policy/privacy-statement.md
-        - Sharing:                          site-policy/sharing-policy.md
-        - Terms of Service:                 site-policy/terms-of-service.md
-
-    - REST-API:
-        - Overview:                         rest-api/overview.md
-        - Authentication:                   rest-api/authentication.md
-        - Query structure:                  rest-api/query-structure.md
-        - Endpoints:
-            - Materials:                    rest-api/endpoints/materials.md
-            - Materials-Bank:               rest-api/endpoints/materials-bank.md
-            - Characteristics:              rest-api/endpoints/characteristics.md
-            - Jobs:                         rest-api/endpoints/jobs.md
-            - Workflows:                    rest-api/endpoints/workflows.md
-            # TODO: revise and re-enable after
-            # - Pseudos:                      rest-api/endpoints/pseudos.md
-        - Python Client:                    rest-api/rest-api-python-client.md
-
     - Benchmarks:
         - High Throughput Screening:     benchmarks/high-throughput-screening.md
         - Distributed Memory Runs:       benchmarks/distributed-memory.md
         - Vendor Comparison:             benchmarks/vendor-comparison.md
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
 
-    - Other:
+
+
+# 7- ACCOUNTS AND BILLING
+    - Accounts:
+        - Registration:                 other/registration.md
+        - Settings and Profile:         billing/settings-and-profile.md
+        - Billing and Payments:
+            - Overview:                 billing/billing-and-payments.md
+            - Add payment method:       billing/add-credit-card.md
+            - Check balance & quota:    billing/check-balance-quota.md
+            - Increase account balance: billing/increase-balance.md
+            - Increase quota:           billing/increase-quota.md
+            - Upgrade Service Level:    billing/upgrade-service-level.md
+        - Organizations:
+            - Overview:                 organizations/overview.md
+            - Projects:                 organizations/projects.md
+            - Teams:                    organizations/teams.md
+
+
+
+# 8- LEGAL STUFF
+    - Site Policy:
+        - Privacy:                          site-policy/privacy-statement.md
+        - Sharing:                          site-policy/sharing-policy.md
+        - Terms of Service:                 site-policy/terms-of-service.md
+
+
+
+# 9- FURTHER HELP
+    - Further Help:
         - FAQ:                  other/faq.md
-        - Registration:         other/registration.md
         - Help & Support:       other/support.md
         - Community Programs:   other/community-programs.md
         - Terms of Service:     other/terms-of-service.md  # duplicate through link
+
+
+
+
+
         # - Student Program:    other/student-program.md
         # - Upcoming features:    other/upcoming-features.md
         # - Roadmap:              other/roadmap.md
