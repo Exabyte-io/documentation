@@ -272,23 +272,19 @@ pages:
 
 
 
-# 9- FURTHER HELP
-    - Further Help:
+# 9- OTHER STUFF
+    - Other:
         - FAQ:                  other/faq.md
         - Help & Support:       other/support.md
         - Community Programs:   other/community-programs.md
         - Terms of Service:     other/terms-of-service.md  # duplicate through link
-
-
-
+        - Restricted Content:   restricted.md
 
 
         # - Student Program:    other/student-program.md
         # - Upcoming features:    other/upcoming-features.md
         # - Roadmap:              other/roadmap.md
         # Restricted content login page
-        - restricted.md
-
     # - Terminology:
     #     - Simulations:              terminology/simulations.md
     #     - Materials Properties:     terminology/property-classification.md
