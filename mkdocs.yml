@@ -56,6 +56,7 @@ pages:
             - Search:               general/actions/search.md
             - Open:                 general/actions/open-edit.md
             - Clone:                general/actions/clone.md
+            - Sets:                 general/actions/sets.md
             - Delete:               general/actions/delete.md
             - Add metadata:         general/actions/metadata.md
             - Change name:          general/actions/name.md

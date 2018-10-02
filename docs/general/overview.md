@@ -49,8 +49,6 @@ The user can perform general searches to retrieve particular Entities of interes
 Jobs and Materials (but not Workflows) can collectively be grouped together under folders, or "Sets", as explained [here](actions/sets.md).
 
 
-<hr>
-
 # Common Interface Components
 
 There are interface components, and some of their respective sub-components, which are common to all entity types, and these include the following: 
