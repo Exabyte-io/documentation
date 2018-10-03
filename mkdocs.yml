@@ -57,12 +57,12 @@ pages:
            - Header/Footer:         general/ui/header-footer.md
            - Support Widget:        general/ui/support.md
            - Dashboard:             general/ui/dashboard.md
-        - Entities & Common Actions:
-            - Overview:             general/actions/overview.md
+        - Entities Overview:        general/actions/overview.md
+        - Sets:                     general/actions/sets.md
+        - Entities Common Actions:
             - Search:               general/actions/search.md
             - Open:                 general/actions/open-edit.md
             - Clone:                general/actions/clone.md
-            - Sets:                 general/actions/sets.md
             - Delete:               general/actions/delete.md
             - Add metadata:         general/actions/metadata.md
             - Change name:          general/actions/name.md

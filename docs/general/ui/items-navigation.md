@@ -5,7 +5,7 @@ Clicking on the Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i>  at the 
 <img src="/images/ui-left-sidebar.png"/>
 
 
-The following table summarizes the different types of items contained in this left-hand sidebar. In particular, the items of type "Materials", "Jobs" and "Workflows" shall henceforth be commonly referred to as "Entities"  due to the numerous actions and properties that they share together. These common features are introduced in the [following general documentation page](/general/actions/overview.md).
+The following table summarizes the different types of items contained in this left-hand sidebar. In particular, the items of type "Materials", "Jobs" and "Workflows" shall henceforth be commonly referred to as "Entities"  due to the numerous actions and properties that they share together. These common features are introduced in the [following general documentation page](/general/overview.md).
 
 | Menu Item & Icon                                         | Description
 | :---------------------------                      |:-------------
