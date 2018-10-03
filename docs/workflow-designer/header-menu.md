@@ -30,7 +30,7 @@ The location of this drop-down menu is highlighted below:
 
 # Metadata
 
-The user can furthermore add descriptive `tags` to the workflow under consideration, following the general tag philosophy presented [here](../general/actions/metadata.md). In order to add tags, first the Workflows Designer page has to be scrolled down to the bottom, where the user will see a text line field labelled "Tags:".
+The user can furthermore add descriptive `tags` to the workflow under consideration, following the general tag philosophy presented [here](/general/actions/metadata.md). In order to add tags, first the Workflows Designer page has to be scrolled down to the bottom, where the user will see a text line field labelled "Tags:".
 
 !!!warning "Tags are not part of the Header"
     Although we include its explanation in this page, the "Tags" section is not part of the header. The Workflows Designer page has to be scrolled down to the bottom to view it.
