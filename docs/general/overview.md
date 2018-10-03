@@ -44,7 +44,7 @@ Opening an entry corresponding to a particular Entity in a the list in order to 
 
 The user can perform general searches to retrieve particular Entities of interest through [this procedure](actions/search.md).
 
-## [Sets](actions/sets.md)
+# Sets
 
 Jobs and Materials (but not Workflows) can collectively be grouped together under folders, or "Sets", as explained [here](actions/sets.md).
 

@@ -15,7 +15,7 @@ Once the "Submit" button is pressed, the new Set will appear among the list of e
 
 # Navigate Sets
 
-Following the creation of a new Set, the user can click on its entry among the list of items to [open it](open-edit.md) and inspect its contents at any time. New sub-sets can furthermore be created inside existing Sets by repeating the above procedure as many times as the user wishes, to produce a resulting tree-like hierarchical directory structure. To navigate up the Sets directory structure by one level each time, the user should click on the top entry (labelled with two horizontal dots) from within a Set items list, in an analogous way to the symbolism of Unix-based command-line interfaces. 
+Following the creation of a new Set, the user can click on its entry among the list of items to [open it](actions/open-edit.md) and inspect its contents at any time. New sub-sets can furthermore be created inside existing Sets by repeating the above procedure as many times as the user wishes, to produce a resulting tree-like hierarchical directory structure. To navigate up the Sets directory structure by one level each time, the user should click on the top entry (labelled with two horizontal dots) from within a Set items list, in an analogous way to the symbolism of Unix-based command-line interfaces. 
 
 In the animation below, we demonstrate an example of creation of a new empty Set which we decide to call "Test", followed by the navigation inside of it and then up again to the parent level of the original list of Materials:
 
@@ -36,5 +36,5 @@ In the animation below, we show how a Material entity item consisting in silicon
 
 # Delete Sets
 
-The [standard procedure](delete.md) for deleting items from an account-owned collection of entities can be followed with regards to Sets also. 
+The [standard procedure](actions/delete.md) for deleting items from an account-owned collection of entities can be followed with regards to Sets also. 
 
