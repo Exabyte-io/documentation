@@ -4,13 +4,21 @@ A summary of the overall appearance and functionality of the main header bar at 
 
 ![ui-header](/images/ui-header.png "UI header")
 
-## Access to sidebar menus
+## Right-hand sidebar
 
-This header bar provides general access to the two sidebar menus on both the right and left-hand sides of the interface. These can be opened respectively by clicking on the User account name at the top-right corner of the page, and on the three-striped button <i class="zmdi zmdi-menu zmdi-hc-border"></i> at the opposite extreme of the header bar. The left-hand sidebar menu can furthermore be activated through the toggle slider towards the right-end of the bar.
+This header bar provides general access to the two sidebar menus on both the right and left-hand sides of the interface. The one on the right-hand side can be opened by clicking on the User account name at the top-right corner of the page. 
 
-## Return to account homepage or previous page
+## Left-hand sidebar
 
-Further accessibility provided by the header bar include the possibility to navigate back to the homepage of the user account, by clicking on the main company logo towards the left-hand side, or to revert to the previous screen through the adjacent backwards arrow, in a similar fashion to the conventional functionality of internet browsers.
+The left-hand sidebar menu can be activated by clicking on the three-striped button <i class="zmdi zmdi-menu zmdi-hc-border"></i> at the opposite extreme of the header bar, or alternatively  through the toggle slider towards the right-end of the header bar.
+
+## Return to account homepage 
+
+Further accessibility provided by the header bar include the possibility to navigate back to the homepage of the user account, by clicking on the main company logo towards the left-hand side.
+
+## Go back to previous page
+
+The user can also revert to the previous screen through the adjacent backwards arrow, in a similar fashion to the conventional functionality of internet browsers.
 
 ## Page name
 
