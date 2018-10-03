@@ -30,7 +30,6 @@ pages:
 # 1- INTRODUCTION
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
-        - User interface overview:  getting-started/ui-overview.md
         - Content highlights:       getting-started/content-highlights.md
         - CLI job submission:       tutorials/cli-job.md
 
@@ -49,10 +48,17 @@ pages:
        - Privacy:                          security/privacy-statement.md  # duplicate through link
 
 
-# 3- ENTITIES
+# 3- GENERAL
     - General Aspects:
-        - Overview:                 general/overview.md
-        - Actions:
+        - User Interface:
+           - Overview:              general/ui/ui-overview.md
+           - Left-hand Sidebar:     general/ui/items-navigation.md
+           - Right-hand Sidebar:    general/ui/account-navigation.md
+           - Header/Footer:         general/ui/header-footer.md
+           - Support Widget:        general/ui/support.md
+           - Dashboard:             general/ui/dashboard.md
+        - Entities & Common Actions:
+            - Overview:             general/actions/overview.md
             - Search:               general/actions/search.md
             - Open:                 general/actions/open-edit.md
             - Clone:                general/actions/clone.md
@@ -188,10 +194,14 @@ pages:
             - Extra:                cli/extra.md
             - Permissions:          security/cli-users-permissions.md
 
-    - Data Convention:
+    - Data:
+        - Convention:
             - Overview:                 data/overview.md
             - Structured data:          data/structured.md
             - Non-structured data:      data/non-structured.md
+      #  - Files:
+      #      - Overview: data/files/overview.md
+      #      - Dropbox:  data/files/dropbox.md
 
     - REST-API:
             - Overview:                         rest-api/overview.md
