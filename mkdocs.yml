@@ -57,8 +57,8 @@ pages:
            - Header/Footer:         general/ui/header-footer.md
            - Support Widget:        general/ui/support.md
            - Dashboard:             general/ui/dashboard.md
-        - Entities Overview:        general/actions/overview.md
-        - Sets:                     general/actions/sets.md
+        - Entities Overview:        general/overview.md
+        - Sets:                     general/sets.md
         - Entities Common Actions:
             - Search:               general/actions/search.md
             - Open:                 general/actions/open-edit.md
