@@ -30,11 +30,11 @@ Here's how it works:
 - When user provides a payment method, purchases allocation and pays the minimum amount ($50) the service level is set to `Advanced`
 - When/if user pays in excess of $500 instead, service level is set to `Pro`
 
-> NOTE: validity periods for the same service level add up, so in case a user pays $500 and then adds $500 within 6 months, the total allocation of $1000 can be used within 12 months  
+> NOTE: validity periods for the same service level add up, so in case a user pays $500 and then adds $500 within 3 months, the total allocation of $1000 can be used within 6 months
 
 # Service levels for Enterprise
 
-Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/organizations/overview.md). 
+Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/organizations/overview.md).
 
 Notes:
 
@@ -62,7 +62,7 @@ Detailed description of submission queues and compute levels is available [elsew
 
 # Premium hardware
 
-Our infrastructure includes multiple compute clusters at a time, with some providing premium performance. The state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters). Premium hardware has an extra charge factor as shown below: 
+Our infrastructure includes multiple compute clusters at a time, with some providing premium performance. The state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters). Premium hardware has an extra charge factor as shown below:
 
 |Compute type | Charge factor
 |:---------|:------------
