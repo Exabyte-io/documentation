@@ -25,57 +25,103 @@ pages:
 
     - Home: index.md
 
-
-
-# 1- INTRODUCTION
+# INTRODUCTION
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
         - Content highlights:       getting-started/content-highlights.md
         - CLI job submission:       tutorials/cli-job.md
 
-
-
-# 2- IMPORTANT STUFF
+# IMPORTANT TO CONVERT NEW USERS
     - Pricing:
-        - Service Levels:               billing/pricing-and-service-levels.md
-        - Storage Pricing:              billing/storage-quota.md
+        - Service Levels:                   accounts/billing/pricing-service.md
+        - Storage Pricing:                  accounts/billing/storage-quota.md
 
     - Security:
-       - Current State of Cloud Security:  security/current-state.md
-       - Overview:                         security/overview.md
-       - Security Policies:                security/security-policies.md
-       - Threats Analysis:                 security/threats-analysis.md
-       - Privacy:                          security/privacy-statement.md  # duplicate through link
+        - Current State of Cloud Security:  security/current-state.md
+        - Overview:                         security/overview.md
+        - Security Policies:                security/security-policies.md
+        - Threats Analysis:                 security/threats-analysis.md
+        - Privacy:                          security/privacy-statement.md  # duplicate through link
 
-
-# 3- GENERAL
+# GENERAL
     - General Aspects:
         - User Interface:
-           - Overview:              general/ui/ui-overview.md
-           - Left-hand Sidebar:     general/ui/items-navigation.md
-           - Right-hand Sidebar:    general/ui/account-navigation.md
-           - Header/Footer:         general/ui/header-footer.md
-           - Support Widget:        general/ui/support.md
-           - Dashboard:             general/ui/dashboard.md
-        - Entities Overview:        general/overview.md
-        - Sets:                     general/sets.md
-        - Entities Common Actions:
-            - Search:               general/actions/search.md
-            - Open:                 general/actions/open-edit.md
-            - Clone:                general/actions/clone.md
-            - Delete:               general/actions/delete.md
-            - Add metadata:         general/actions/metadata.md
-            - Change name:          general/actions/name.md
-            - Set default:          general/actions/set-default.md
+            - Overview:                   general/ui/ui-overview.md
+            - Left-hand Sidebar:          general/ui/items-navigation.md
+            - Right-hand Sidebar:         general/ui/account-navigation.md
+            - Header/Footer:              general/ui/header-footer.md
+            - Support Widget:             general/ui/support.md
+            - Dashboard:                  general/ui/dashboard.md
+             # general explanation
+            - Explorer:                   general/ui/explorer.md
+            - Designer:                   general/ui/designer.md
+            - Viewer:                     general/ui/viewer.md
+        - Entities:
+            - Overview:                   general/entities/overview.md
+            - Sets:                       general/entities/sets.md
+            # This page explains the whole general concept of bank, including the creation of bank entries
+            - Bank:                       general/entities/bank.md
+        - Common Actions:
+            - Overview:                   general/actions/overview.md
+            - Search:                     general/actions/search.md
+            - Open:                       general/actions/open-edit.md
+            - Clone:                      general/actions/clone.md
+            - Delete:                     general/actions/delete.md
+            - Set default:                general/actions/set-default.md
+            - Add metadata:               general/actions/metadata.md
+            - Change name:                general/actions/name.md
+            - Bank > Copy from:           general/actions/overview.md       # Specific info about import procedure only
+            - Sets > Create:              general/actions/overview.md       # Specific info about procedure only
+            - Sets > Move To:             general/actions/overview.md       # Specific info about procedure only
 
+########################################################################################################################
+# 8- ACCOUNTS AND BILLING
+    - Accounts:
+        - User Interface:
+            - Explorer:                         accounts/ui/explorer.md
+            - Service Levels:                   accounts/ui/service-Levels.md
+            - Preferences:                      accounts/ui/preferences-overview.md
+            - Preferences > Profile:            accounts/ui/preferences/profile.md
+            - Preferences > User Settings:      accounts/ui/preferences/settings.md
+            - Preferences > API Token:          accounts/ui/preferences/api.md
+            - Preferences > SSH Keys:           accounts/ui/preferences/ssh.md
+            - Preferences > Change Password:    accounts/ui/preferences/password.md
+            - Registration:                     accounts/management/registration.md
+            # TODO: Assert to move content from the below page to above
+            # - Settings and Profile:             accounts/management/settings-and-profile.md
+        - Entities:
+            - Overview:                         accounts/entities/overview.md
+            - Collections:                      accounts/entities/collections.md
+            - Ownership:                        accounts/entities/ownership.md
+            - Permissions:                      accounts/entities/permissions.md
+            - Sharing:                          accounts/entities/sharing.md
+        - Collaboration:
+            - Overview:                         accounts/organizations/overview.md
+            - Teams:                            accounts/organizations/teams.md
+        - Billing & Payments:
+            - Check balance & quota:            accounts/management/check-balance-quota.md
+            - Overview:                         accounts/billing/overview.md
+            - Add payment method:               accounts/billing/add-credit-card.md
+            - Increase account balance:         accounts/billing/increase-balance.md
+            - Increase quota:                   accounts/billing/increase-quota.md
+            - Upgrade Service Level:            accounts/billing/upgrade-service-level.md
+########################################################################################################################
+
+
+########################################################################################################################
+# 4- ENTITIES
     - Materials:
         - Overview:                       materials/overview.md
+        - User Interface:
+            - Explorer:                   materials/explorer.md             # entity-specific actions will go here
+            - Designer:                   materials-designer/overview.md
+            - Viewer:                     materials/viewer.md
         - Data:                           materials/data.md
         - Properties:                     materials/properties.md
+        - Bank:                           materials/bank.md                 # Material-specific info concerns particularly function to check user account contents against existing bank entries, to merge or create new bank entries
         - Actions:
             - Import:                     materials/actions/import.md
             - Upload:                     materials/actions/upload.md
-            - Copy from shared bank:      materials/actions/bank.md
             - Advanced Search:            materials/actions/advanced-search.md
             - Search & Compare:           materials/actions/search-compare.md
             - Set default:                materials/actions/set-default.md
@@ -110,6 +156,9 @@ pages:
 
     - Workflows:
         - Overview:                       workflows/overview.md
+        - User Interface:
+            - Explorer:                   workflows/actions/overview.md             # entity-specific actions will go here
+            - Designer:                   workflow-designer/general-overview.md
         - Data:
             - Workflows:                  workflows/data/data.md
             - Subworkflows:               workflows/data/subworkflows.md
@@ -117,11 +166,10 @@ pages:
             - Templates:                  workflows/data/templates.md
             - Jobs:                       workflows/data/jobs.md
             - Maps:                       workflows/data/maps.md
+        - Bank:                           workflows/bank.md                 # workflows-specific info concerns particularly function to check user account contents against existing bank entries, to merge or create new bank entries
         - Actions:
-            - Overview:                   workflows/actions/overview.md
             - Create:                     workflows/actions/create.md
             - Update:                     workflows/actions/update.md
-            - Copy from shared bank:      workflows/actions/bank.md
             - Set default:                workflows/actions/set-default.md
             #- Using workflows:            workflows/using-workflows.md
         - Add-ons:
@@ -148,8 +196,40 @@ pages:
             - Input Templates:                  workflow-designer/unit-editor/input-templates.md
 
 
+#    - Jobs:
+#        - Overview:                         jobs/overview.md
+#        - User Interface:
+#            - Explorer:                     jobs/explorer.md             # entity-specific actions will go here
+#            - Designer:                     jobs/designer-overview.md
+#            - Viewer:                       jobs/designer-overview.md
+#        - Projects:                         organizations/projects.md
+#        - Actions:
+#            - Run:                          jobs/actions/run.md
+#            - Terminate:                    jobs/actions/terminate.md
+#            - Purge:                        jobs/actions/purge.md
+#
+#    -Jobs Designer:
+#        - Overview:
+#        - Header Menu:
+#            - Overview:
+#            - Select Parent:
+#            - Select Materials:
+#            - Select Workflow:
+#            - Submit:
+#        # Reference Materials Viewer and explain how to cycle through materials in Pager
+#        - Materials Tab:
+#        # Reference WF Viewer and explain
+#        #    - which options are adjustable - isDraft, important settings
+#        #    - how to view workflow important settings and unit input for multiple materials
+#        - Workflow Tab:
+#        # Refer to original compute tab
+#        - Compute Tab:
 
-# 4- CONCEPTS
+
+########################################################################################################################
+
+
+# CONCEPTS
     - Models:
         - Overview:                                 models/overview.md
         - Auxiliary Concepts:
@@ -173,8 +253,8 @@ pages:
         - VASP:                         applications/vasp.md
 
 
-
-# 5- COMPUTATIONAL STUFF
+########################################################################################################################
+# 6- COMPUTATIONAL STUFF
     - Compute:
         - Overview:                 compute/overview.md
         - Policies:                 compute/policies.md
@@ -216,10 +296,10 @@ pages:
                 # TODO: revise and re-enable after
                 # - Pseudos:                      rest-api/endpoints/pseudos.md
             - Python Client:                    rest-api/rest-api-python-client.md
+########################################################################################################################
 
 
-
-# 6- TUTORIALS AND EXAMPLES
+# TUTORIALS AND EXAMPLES
     - Tutorials:
         # TODO: adjust with results closer to experiment and re-publish
         # - Semiconductors:
@@ -255,35 +335,13 @@ pages:
         - Vendor Comparison:             benchmarks/vendor-comparison.md
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
 
-
-
-# 7- ACCOUNTS AND BILLING
-    - Accounts:
-        - Registration:                 other/registration.md
-        - Settings and Profile:         billing/settings-and-profile.md
-        - Billing and Payments:
-            - Overview:                 billing/billing-and-payments.md
-            - Add payment method:       billing/add-credit-card.md
-            - Check balance & quota:    billing/check-balance-quota.md
-            - Increase account balance: billing/increase-balance.md
-            - Increase quota:           billing/increase-quota.md
-            - Upgrade Service Level:    billing/upgrade-service-level.md
-        - Organizations:
-            - Overview:                 organizations/overview.md
-            - Projects:                 organizations/projects.md
-            - Teams:                    organizations/teams.md
-
-
-
-# 8- LEGAL STUFF
+# LEGAL
     - Site Policy:
         - Privacy:                          site-policy/privacy-statement.md
         - Sharing:                          site-policy/sharing-policy.md
         - Terms of Service:                 site-policy/terms-of-service.md
 
-
-
-# 9- OTHER STUFF
+# OTHER
     - Other:
         - FAQ:                  other/faq.md
         - Help & Support:       other/support.md
@@ -291,7 +349,7 @@ pages:
         - Terms of Service:     other/terms-of-service.md  # duplicate through link
         - Restricted Content:   restricted.md
 
-
+    # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
         # - Upcoming features:    other/upcoming-features.md
         # - Roadmap:              other/roadmap.md
