@@ -25,10 +25,19 @@ pages:
 
     - Home: index.md
 
+
+# HAVE TUTORIALS HERE (FEATURE BASED)
+
+
+
+
 # INTRODUCTION
     - Getting Started:
+        # Prepare Material and Workflow, Open Job Designer (explain each tab in turn), Run calculation, View Results
         - Run first simulation:     getting-started/run-first-simulation.md
+        # This page helps users quickly get through the documentation: Login, Creating materials, Running simulations (Workflows, Compute, CLI, JSON), with many links to dedicated pages
         - Content highlights:       getting-started/content-highlights.md
+        # Explain how to get more control over the workflow execution through command-line terminal.
         - CLI job submission:       tutorials/cli-job.md
 
 # IMPORTANT TO CONVERT NEW USERS
@@ -43,239 +52,402 @@ pages:
         - Threats Analysis:                 security/threats-analysis.md
         - Privacy:                          security/privacy-statement.md  # duplicate through link
 
-# GENERAL
-    - General Aspects:
-        - User Interface:
+
+
+# EVERYTHING THAT FOLLOWS IS WIDGET BASED AND COMPREHENSIVE AND FORMAL
+
+########################################################################################################################
+# 1- COMMON UI COMPONENTS
+# This should go at top because it's a general mix between Entities, Accounts, Billing, Support, and Compute-related stuff
+    - Interface Components:
+        - Universal:
+            # Clickable Image with links to all of the below components
             - Overview:                   general/ui/ui-overview.md
+            # Items list overview in left hand sidebar, with links to each option's page
             - Left-hand Sidebar:          general/ui/items-navigation.md
+            # Items list overview in right hand sidebar, with links to each option's page
             - Right-hand Sidebar:         general/ui/account-navigation.md
-            - Header/Footer:              general/ui/header-footer.md
-            - Support Widget:             general/ui/support.md
-            - Dashboard:                  general/ui/dashboard.md
-             # general explanation
-            - Explorer:                   general/ui/explorer.md
-            - Designer:                   general/ui/designer.md
-            - Viewer:                     general/ui/viewer.md
-        - Entities:
-            - Overview:                   general/entities/overview.md
-            - Sets:                       general/entities/sets.md
-            # This page explains the whole general concept of bank, including the creation of bank entries
-            - Bank:                       general/entities/bank.md
-        - Common Actions:
-            - Overview:                   general/actions/overview.md
-            - Search:                     general/actions/search.md
-            - Open:                       general/actions/open-edit.md
-            - Clone:                      general/actions/clone.md
-            - Delete:                     general/actions/delete.md
-            - Set default:                general/actions/set-default.md
-            - Add metadata:               general/actions/metadata.md
-            - Change name:                general/actions/name.md
-            - Bank > Copy from:           general/actions/overview.md       # Specific info about import procedure only
-            - Sets > Create:              general/actions/overview.md       # Specific info about procedure only
-            - Sets > Move To:             general/actions/overview.md       # Specific info about procedure only
+            # Mostly instructions on header buttons (sidebar buttons, toggle sidebar, go back etc....)
+            - Header:              general/ui/header-footer.md
+            # Mention links to general homepage of the Exabyte platform, the present documentation manual, and relevant legal information
+            - Footer:             general/ui/support.md
+            # Instructions on blue support widget
+            - Support:
+        # Navigator that appears when you click on Exabyte logo in header bar of general UI
+        - Navigation: x.md
+        # Everything that's contained in top dashboard option in left hand sidebar
+        - Dashboard: general/ui/dashboard.md
+########################################################################################################################
+
+
+
+
+
 
 ########################################################################################################################
 # 8- ACCOUNTS AND BILLING
     - Accounts:
         - User Interface:
+            # Overview of Account Switcher, Explorer, Bio, Preferences, Service Levels
+            - Overview:                         accounts/management/settings-and-profile.md
+            # Choose from user's accounts, at top of right-hand sidebar
+            - Switcher:
+            # Explorer interface refers to general accounts page, under left-hand sidebar.
             - Explorer:                         accounts/ui/explorer.md
-            - Service Levels:                   accounts/ui/service-Levels.md
+            # header menu buttons: Bio, Service Level and Preferences
+            # Everything inside Bio button, on the left-hand side of interface
+            - Bio:                              accounts/ui/bio.md
+            # Everything related to Service Level, under corresponding button in interface
+            - Service Level:                    accounts/ui/service-level.md
+            # User Preferences, accessible both under interface button and right-hand sidebar
             - Preferences:                      accounts/ui/preferences-overview.md
             - Preferences > Profile:            accounts/ui/preferences/profile.md
             - Preferences > User Settings:      accounts/ui/preferences/settings.md
             - Preferences > API Token:          accounts/ui/preferences/api.md
             - Preferences > SSH Keys:           accounts/ui/preferences/ssh.md
             - Preferences > Change Password:    accounts/ui/preferences/password.md
-            - Registration:                     accounts/management/registration.md
-            # TODO: Assert to move content from the below page to above
-            # - Settings and Profile:             accounts/management/settings-and-profile.md
-        - Entities:
+        - Collaboration and Sharing:
+            # Overview exclusively of account-related aspects of entities, such as ownership, permission and sharing.
+            #(NOT actions or common interface components, which should go to General)
             - Overview:                         accounts/entities/overview.md
-            - Collections:                      accounts/entities/collections.md
-            - Ownership:                        accounts/entities/ownership.md
-            - Permissions:                      accounts/entities/permissions.md
-            - Sharing:                          accounts/entities/sharing.md
-        - Collaboration:
-            - Overview:                         accounts/organizations/overview.md
+            # Here we explain how to perform collaborative actions on teams and organizations, as already included in existing files
+            # Here we explain the collaborative concepts of teams and organizations
+            - Organizations:                    accounts/organizations/overview.md
             - Teams:                            accounts/organizations/teams.md
+            # Members of organizations
+            - People:
+            # Explain the notion of Account ownership of entities
+            - Ownership:                        accounts/entities/ownership.md
+            # Explain the notion of permissions (read, edit, execute, comment) on entities
+            - Permissions:                      accounts/entities/permissions.md
+            # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options
+            - Sharing:                          accounts/entities/sharing.md
         - Billing & Payments:
-            - Check balance & quota:            accounts/management/check-balance-quota.md
-            - Overview:                         accounts/billing/overview.md
-            - Add payment method:               accounts/billing/add-credit-card.md
-            - Increase account balance:         accounts/billing/increase-balance.md
-            - Increase quota:                   accounts/billing/increase-quota.md
-            - Upgrade Service Level:            accounts/billing/upgrade-service-level.md
+            # Explain that balance and storage quota can be accessed in Dashboard, Service Levels button, or right-hand sidebar
+            - Balance & Storage quota:    accounts/management/check-balance-quota.md
+            # Everything under Billing & Payments on Right-hand sidebar (Charges, Payments and Payment Methods)
+            - Payments and payment methods:     accounts/billing/add-credit-card.md
+            # Everything related to direct actions that user can perform with regards to his account
+            # The following actions can be accessed from both right-hand sidebar and Service Level button
+            - Actions > Increase account balance:         accounts/billing/increase-balance.md
+            - Actions > Increase Storage Quota:           accounts/billing/increase-quota.md
+            - Actions > Upgrade Service Level:            accounts/billing/upgrade-service-level.md
 ########################################################################################################################
 
 
+
 ########################################################################################################################
-# 4- ENTITIES
+# ENTITIES - GENERAL
+    - Entities & Common Aspects:
+        # Introduction (links) to entity concepts such as entity Types, Bank, Sets, Actions (Overview page), and Common Interface Components.
+        - Overview:                   general/entities/overview.md
+        - User Interface:
+            # List, with links, of common entity Interface Components (Explorer, Designer and Viewer)
+            - Overview:                   general/entities/overview.md
+            # general explanation about actions toolbar, dropdown, entity Items lists....
+            - Explorer:                   general/ui/explorer.md
+            # Explain the notion of Account-owned collection TODO: MERGE COLLECTIONS WITH EXPLORER
+            - Collections:                      accounts/entities/collections.md
+            # Introduction to the general concept of entity designer, with links to entity-specific designer overview pages
+            - Designer:                   general/ui/designer.md
+            # Still needs to be done: explain edibility and adjustment differences between viewer and designer
+            - Viewer:                     general/ui/viewer.md
+        # JSON representation of structured data (with link to Compute section)
+        - Data:                           data/structured.md
+        # Introduction to concept of sets (collection or folders of entities), with references to Sets Actions below
+        - Sets:                       general/entities/sets.md
+        # This page explains the whole general concept of bank, including the creation of bank entries from account collections
+        # Reference to "Copy from Bank" action below
+        - Bank:                       general/entities/bank.md
+        - Actions:
+            # List, with links, of common entity actions listed below, including also sharing
+            - Overview:                   general/actions/overview.md
+            ###################### Go through each common entity action in turn
+            - Search:                     general/actions/search.md
+            - Open:                       general/actions/open-edit.md
+            - Clone:                      general/actions/clone.md
+            - Delete:                     general/actions/delete.md
+            - Set default:                general/actions/set-default.md
+            # MD Description, Tags, Metadata for surfaces / slabs
+            - Add metadata:               general/actions/metadata.md
+            - Change name:                general/actions/name.md
+            ######################
+            # Actions specific to Bank and Sets
+            # Specific info about import from bank procedure only
+            - Bank > Copy from:           general/actions/overview.md
+            # Specific info about procedure to create sets only
+            - Sets > Create:              general/actions/overview.md
+            # Specific info about move to sets procedure only
+            - Sets > Move To:             general/actions/overview.md
+########################################################################################################################
+
+
+
+
+
+########################################################################################################################
+# 4- ENTITIES - SPECIFIC
     - Materials:
+        # Reference list of: User Interface, Data, Properties, Bank and Actions
         - Overview:                       materials/overview.md
         - User Interface:
-            - Explorer:                   materials/explorer.md             # entity-specific actions will go here
+            # Here we should highlight especially the materials-specific actions, since Table is the same for all entities
+            - Explorer:                   materials/explorer.md
+            # Link to Materials Designer Overview page
             - Designer:                   materials-designer/overview.md
+            # Differences from Materials Designer: cannot make any adjustments. Can be used to view entries from Materials collection
             - Viewer:                     materials/viewer.md
+        # JSON representation of crystal structure
         - Data:                           materials/data.md
+        # Physical properties extracted by  using DFT
         - Properties:                     materials/properties.md
-        - Bank:                           materials/bank.md                 # Material-specific info concerns particularly function to check user account contents against existing bank entries, to merge or create new bank entries
+        # Material-specific info concerns particularly function to check user account contents against existing
+        #bank entries, to merge or create new bank entries
+        - Bank:                           materials/bank.md
+        # Materials-specific actions will go here
         - Actions:
+            # How to import materials from MaterialsProject
             - Import:                     materials/actions/import.md
+            # How to upload CIF and POSCAR files
             - Upload:                     materials/actions/upload.md
+            # `Advanced Search` tool to launch the advanced search query builder
             - Advanced Search:            materials/actions/advanced-search.md
+            # Analytics page: NOW CALLED BANK, TODO: MERGE INTO BANK PAGE or remove
             - Search & Compare:           materials/actions/search-compare.md
+            # Mention FCC Silicon as initial default material for all new accounts, and link to general set default page
             - Set default:                materials/actions/set-default.md
-            - Select During Job Creation: materials/actions/selection.md
+            #  Click on large "Create" blue plus button, with link to materials-designer overview page. TODO create page
+            - Create:                     materials/actions/create.md
 
     - Materials Designer:
+        # What is Materials Designer nd clickable image with links to Designer components below
         - Overview:                     materials-designer/overview.md
         - Header Menu:
+            # Links list to Input / Output, Edit, View, Advanced and Help menus
             - Overview:                 materials-designer/header-menu/header-menu-intro.md
+            # Links list to Import, Export, Save and Exit options
             - Input/Output:             materials-designer/header-menu/input-output.md
             - "Input/Output > Import":  materials-designer/header-menu/input-output/import.md
             - "Input/Output > Export":  materials-designer/header-menu/input-output/export.md
             - "Input/Output > Save":    materials-designer/header-menu/input-output/save.md
+            # list of Undo, Redo, Reset and Clone
             - Edit:                     materials-designer/header-menu/edit.md
+            # Enable / Disable Component Panels, and Full-Screen Mode
             - View:                     materials-designer/header-menu/view.md
+            # Links list to Supercells, Combinatorial Sets and Surfaces / Slabs
             - Advanced:                 materials-designer/header-menu/advanced.md
             - "Advanced > Supercell":   materials-designer/header-menu/advanced/supercell.md
             - "Advanced > Combinatorial Set":  materials-designer/header-menu/advanced/combinatorial-set.md
             - "Advanced > Surface / Slab":     materials-designer/header-menu/advanced/surface-slab.md
+            # access the present `Documentation` and `Tutorials`. You can also `Contact` our support team
             - Help:                     materials-designer/header-menu/help.md
         - Sidebar:
+            # Material entries, Select Item, Delete Item and Edit Name of Item
             - Items List:               materials-designer/sidebar-items.md
         - Source Editor:
+            # Links list to Crystal Lattice and Crystal Basis
             - Overview:                 materials-designer/source-editor.md
             - Lattice Editor:           materials-designer/source-editor/lattice.md
             - Basis Editor:             materials-designer/source-editor/basis.md
         - 3D Editor:
+            # Interactive regime: links list to View Panel, Edit Panel, and Export Panel
             - Overview:                      materials-designer/3d-editor.md
+            # The following pages go through all the sub-buttons included under each interactive button (e.g. toggle axes, inject/select atoms)
             - View Actions Panel:            materials-designer/3d-editor/view.md
             - Edit Actions Panel:            materials-designer/3d-editor/edit.md
+            # Screenshot, download POSCAR, Full-screen mode
             - Export Actions Panel:          materials-designer/3d-editor/export.md
 
     - Workflows:
+        # Links list to User Interface, Data and Actions for Workflows
         - Overview:                       workflows/overview.md
         - User Interface:
-            - Explorer:                   workflows/actions/overview.md             # entity-specific actions will go here
+            # Here we should highlight especially the Workflows-specific actions, since Table is the same for all entities
+            - Explorer:                   workflows/actions/overview.md
+            # Link to Workflows Designer Overview page
             - Designer:                   workflow-designer/general-overview.md
+            # Differences from Workflows Designer: can make small adjustments. Can be used to view entries from Workflows collection
+            - Viewer:                     materials/viewer.md
         - Data:
+            # JSON representation a of a workflow
             - Workflows:                  workflows/data/data.md
+            # Explanations about Model, Method, Simulation Engine, Precision, Convergence, Optimization, and link to above JSON representation.
             - Subworkflows:               workflows/data/subworkflows.md
+            # List of Unit types
             - Units:                      workflows/data/units.md
+            # Jinja templates explanation
             - Templates:                  workflows/data/templates.md
+            # JSON representation a of a job, and list of Job Statuses
             - Jobs:                       workflows/data/jobs.md
+            # Explanation of Maps: splitting and then merging again the input data into several distinct independent calculation branches
             - Maps:                       workflows/data/maps.md
-        - Bank:                           workflows/bank.md                 # workflows-specific info concerns particularly function to check user account contents against existing bank entries, to merge or create new bank entries
+        # workflows-specific info concerns particularly function to check user account contents against
+        # existing bank entries, to merge or create new bank entries
+        - Bank:                           workflows/bank.md
         - Actions:
+            #  Click on large "Create" blue plus button, with link to workflow-designer overview page
             - Create:                     workflows/actions/create.md
+            # Download updates from Bank workflows
             - Update:                     workflows/actions/update.md
+            # Mention basic total energy materials calculation as initial default workflow for all new accounts, and link to general set default page
             - Set default:                workflows/actions/set-default.md
             #- Using workflows:            workflows/using-workflows.md
         - Add-ons:
+            # Here we explain convergence based on the study of the number of sampling points (k-points) in reciprocal cell.
             - K-point Convergence:         workflows/addons/convergence-algorithms.md
+            # What is a structural relaxation calculation? Equilibrium Conditions, types, etc.....
             - Structural Relaxation:       workflows/addons/structural-relaxation.md
 
     - Workflow Designer:
+        # What is Workflow Designer, and Components of the Interface with links on clickable image
         - Overview:                          workflow-designer/general-overview.md
         - Header Menu:
+            # Header Menu Actions: Name, Description, Saving the workflow, Inserting Add-ons, Metadata
             - Overview:                      workflow-designer/header-menu.md
         - Sidebar:
+            # Items List Sidebar (flowchart of subworkflows)
             - Items List:                    workflow-designer/sidebar.md
         - Subworkflow Editor:
-            - Introduction:                     workflow-designer/subworkflow-editor/intro.md
+            # Main components of Subworkflow Editor: menu bar, tabs and units flowchart, with clickable image links
+            - Overview:                         workflow-designer/subworkflow-editor/intro.md
+            # Edit Name, Insert Add-ons, Add/remove Subworkflows, Navigate Subworkflows List
             - Actions Menu:                     workflow-designer/subworkflow-editor/actions-menu.md
+            # List of links to: The "Overview" tab, The "Important Settings" tab, The "Detailed View" tab, and The "Compute" tab
             - Tabs:                             workflow-designer/subworkflow-editor/tabs-general.md
+            # Sections in The Overview tab
             - Tabs > Overview:                  workflow-designer/subworkflow-editor/overview.md
+            # Cutoff settings, k-points grid settings, Reciprocal path settings
             - Tabs > Important Settings:        workflow-designer/subworkflow-editor/important-settings.md
+            # Sections in The Detailed View tab (Properties and Monitors)
             - Tabs > Detailed View:             workflow-designer/subworkflow-editor/detailed-view.md
+            # Link to main compute tab page in Compute section
             - Tabs > Compute:                   workflow-designer/subworkflow-editor/compute.md
+            # Unit boxes in the flowchart and Opening the Unit Editor
             - Units Flowchart:                  workflow-designer/subworkflow-editor/units-flowchart.md
         - Unit Editor:
+            # How workflows units for each elementary computation can be edited by means of Unit Editor interface
             - Overview:                         workflow-designer/unit-editor.md
+            # Example Unit Input Template and JSON data structure
             - Input Templates:                  workflow-designer/unit-editor/input-templates.md
 
 
-#    - Jobs:
-#        - Overview:                         jobs/overview.md
-#        - User Interface:
-#            - Explorer:                     jobs/explorer.md             # entity-specific actions will go here
-#            - Designer:                     jobs/designer-overview.md
-#            - Viewer:                       jobs/designer-overview.md
-#        - Projects:                         organizations/projects.md
-#        - Actions:
-#            - Run:                          jobs/actions/run.md
-#            - Terminate:                    jobs/actions/terminate.md
-#            - Purge:                        jobs/actions/purge.md
-#
-#    -Jobs Designer:
-#        - Overview:
-#        - Header Menu:
-#            - Overview:
-#            - Select Parent:
-#            - Select Materials:
-#            - Select Workflow:
-#            - Submit:
-#        # Reference Materials Viewer and explain how to cycle through materials in Pager
-#        - Materials Tab:
-#        # Reference WF Viewer and explain
-#        #    - which options are adjustable - isDraft, important settings
-#        #    - how to view workflow important settings and unit input for multiple materials
-#        - Workflow Tab:
-#        # Refer to original compute tab
-#        - Compute Tab:
+    - Jobs:
+          # Links list to User Interface, Data and Actions for Workflows
+        - Overview:                         jobs/overview.md
+        - User Interface:
+              # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
+            - Explorer:                     jobs/explorer.md
+             #Link to Jobs Designer Overview page
+            - Designer:                     jobs/designer-overview.md
+             Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
+            - Viewer:                       jobs/designer-overview.md
+         # Introduction to concept of Projects (particular set for jobs only)
+        - Projects:                         accounts/organizations/projects.md
+        - Actions:
+            - Run:                          jobs/actions/run.md
+            - Terminate:                    jobs/actions/terminate.md
+            - Purge:                        jobs/actions/purge.md
+
+    -Jobs Designer:
+         # What is Jobs Designer and clickable image with links to Designer components below
+        - Overview:
+        - Header Menu:
+             # Links to all the header menu actions listed below
+            - Overview:
+            - Select Parent:
+            - Select Materials:            materials/actions/selection.md
+            - Select Workflow:
+            - Submit:
+        # Reference Materials Viewer and explain how to cycle through materials in Pager
+        - Materials Tab:
+        # Reference WF Viewer and explain
+        #    - which options are adjustable - isDraft, important settings
+        #    - how to view workflow important settings and unit input for multiple materials
+        - Workflow Tab:
+        # Refer to original compute tab
+        - Compute Tab:
 
 
 ########################################################################################################################
 
 
 # CONCEPTS
+    # Models: theoretical concept frameworks (e.g. DFT)
     - Models:
+        # Explanation of model type, Subtype, Functional, Refiners, Modifiers and Example JSON Representation
         - Overview:                                 models/overview.md
         - Auxiliary Concepts:
+            # Explanation of Reciprocal Space and Reciprocal Lattice
             - Reciprocal space:                     models/auxiliary-concepts/reciprocal-space.md
+            # Explanation of kgrid, which denotes the k-points sampling of the Brillouin Zone.
             - Reciprocal space > sampling:          models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
+            # Paths in reciprocal space for dispersion calculations
             - Reciprocal space > paths:             models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
         - Density Functional Theory:
+            # Expalnation of Density Functional Theory Subtype, Functional, Refiners, and Modifiers
             - Overview:                             models/dft/overview.md
+            # References to general open-access introductory material on DFT
             - References:                           models/dft/references.md
 
     - Methods:
+        # Explanation of computational **Methods**, or implementations, and their Properties
         - Overview:                           methods/overview.md
         - Pseudopotential:
+            # Pseudopotential Method, types, and Default Pseudopotential Files
             - Overview:                       methods/pseudopotential/overview.md
+            # Wavefunction Cutoff and Charge Density Cutoff
             - Parameters:                     methods/pseudopotential/parameters.md
+            # Upload Custom Pseudopotential Files, Filter Pseudopotentials with Regular Expressions
             - Actions:                        methods/pseudopotential/actions.md
 
     - Applications:
+        # List of Supported Applications (softwares) for DFT and Structural Analysis Tools
         - Overview:                     applications/overview.md
+        # Introduction and links to official documentation for QE
         - Quantum ESPRESSO:             applications/quantum-espresso.md
+        # Introduction and links to official documentation for VASP
         - VASP:                         applications/vasp.md
 
 
 ########################################################################################################################
 # 6- COMPUTATIONAL STUFF
     - Compute:
+        # This section contains information about out compute system and policies: Platform Architecture, Connection,  Levels and Queues, Command Line
         - Overview:                 compute/overview.md
+        # Computing Policies and Operations: Data storage, Workload manager, Compute Types, Compute Queues, Charge Policies
         - Policies:                 compute/policies.md
+        # There are 3 ways you can connect to our compute platform, command-line interface (CLI) via ssh terminal, command-line interface via web portal and remote desktop via web portal.
         - Connection Options:       compute/connection-options.md
+        # multiple levels of compute that let our users optimize the cost-to-performance ratio: Debug, Ordinary, Saving, Premium, GPU
         - Levels & Queues:          compute/levels-queues.md
+        # Where our computing resources are hosted: Amazon Web Services, Microsoft Azure, IBM SoftLayer and Rackspace
         - Hardware:                 compute/hardware.md
-        - Setup:                    compute/setup.md
         - Actions:
+            # Compute Tab: Time limit, Cluster choice, Queue (time limits), Nodes, Notifications
             - Set Parameters:       compute/setup.md
-        - Command Line Interface:
+        - Command Line Interface:   # Terminal
+            # Explain the process of connecting to exabyte.io through command-line interface: how to generate, upload ssh keys and use them to connect.
             - Login:                cli/login.md
+            # Explain how to retrieve accounting information for users logged-in via command line (e.g Balance and Quota).
             - Accounting:           cli/accounting.md
+            # Explains the environment setup for a command-line session with exabyte.io. (e.g. Choosing Shell Type and Using Modules)
             - Environment:          cli/modules-environment.md
+            # Explains the basics of command-line interface for batch job submission.
             - Jobs:                 cli/jobs.md
+            # Explains how to run a command-line job for Quantum ESPRESSO
             - "Jobs: example":      cli/jobs-example.md
+            # Where user data is stored in the clusters
             - Storage System:       cli/storage-system.md
+            # List of keywords that may be specified as qsub command line options
             - Extra:                cli/extra.md
+            # Securing of data for command-line expert users
             - Permissions:          security/cli-users-permissions.md
-
+        # Explain how to access Remote Desktop features from right-hand sidebar
+        - Remote Desktop:
+    # Add data information in general entities section, which links here
     - Data:
         - Convention:
+            # Intro to the concepts of structured (eg JSON) and unstructured data (e.g. simulations output files)
             - Overview:                 data/overview.md
             - Structured data:          data/structured.md
             - Non-structured data:      data/non-structured.md
@@ -348,6 +520,8 @@ pages:
         - Community Programs:   other/community-programs.md
         - Terms of Service:     other/terms-of-service.md  # duplicate through link
         - Restricted Content:   restricted.md
+        - Registration:         accounts/management/registration.md
+
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
