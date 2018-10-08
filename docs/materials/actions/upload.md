@@ -20,7 +20,7 @@ In case large datasets of crystal structures need to be imported at a single tim
 
 ## Tag
 
-This toolbar furthermore offers the possibility to delete selected crystal structures from the list, or to tag them with a list of user-defined keywords for easier fetching while performing structure searches across the Exabyte platform. This is especially resourceful when large datasets of imported structures need to be retrieved, since they already have a common search label. The general guidelines for entering descriptive tags and attach them to entities are presented [here](/general/actions/metadata.md).
+This toolbar furthermore offers the possibility to delete selected crystal structures from the list, or to tag them with a list of user-defined keywords for easier fetching while performing structure searches across the Exabyte platform. This is especially resourceful when large datasets of imported structures need to be retrieved, since they already have a common search label. The general guidelines for entering descriptive tags and attach them to entities are presented [here](/entities-general/actions/metadata.md).
 
 ## Upload Files
 

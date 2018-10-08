@@ -8,7 +8,7 @@ The Unit Editor interface contains multiple sections, as shown in the following 
 
 # Name
 
-The first line at the top of the interface, labelled with the general icon for elementary units <i class="zmdi zmdi-circle-o zmdi-hc-border"></i>, offers a reminder of the unit's name within the general flowchart, or "pw_scf" in the above example. The name can be edited following the steps explained [here](/general/actions/name.md). 
+The first line at the top of the interface, labelled with the general icon for elementary units <i class="zmdi zmdi-circle-o zmdi-hc-border"></i>, offers a reminder of the unit's name within the general flowchart, or "pw_scf" in the above example. The name can be edited following the steps explained [here](/entities-general/actions/name.md). 
 
 This first line also contains a reminder of the unit's type (*execution* in the above example), and of the unique identification label of the unit within the overall units flowchart (the *flowchartId*). 
 

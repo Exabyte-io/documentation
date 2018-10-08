@@ -4,7 +4,7 @@
 
 Similarly to the re-naming procedure of the general parent workflow itself (see [this page](../header-menu.md)), each subworkflow component unit can be re-named appropriately from its original default "Empty Subworkflow" name (when a new workflow is being created from scratch), or "New Subworkflow" (when a new subworkflow is being added to an existing workflow). 
 
-The subworkflow name is visible at the left-end of the subworkflow actions menu bar, next to the general logo for subworkflows <i class="zmdi zmdi-dot-circle-alt zmdi-hc-border"></i> used throughout the Exabyte platform. Instructions on how this name can be changed are to be found [in this page](../../general/actions/name.md). 
+The subworkflow name is visible at the left-end of the subworkflow actions menu bar, next to the general logo for subworkflows <i class="zmdi zmdi-dot-circle-alt zmdi-hc-border"></i> used throughout the Exabyte platform. Instructions on how this name can be changed are to be found [in this page](../../entities-general/actions/name.md). 
 
 ## Insert Add-ons
 

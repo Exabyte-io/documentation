@@ -21,6 +21,6 @@ Currently the default k-point convergence algorithm systematically increments th
 <!-- TODO: revise or remove gif -->
 <!-- <img data-gifffer="/images/AddKpointConvergence.gif" /> -->
 
-Please see the [k-point convergence tutorial](../../tutorials/kpt-convergence.md) for more details.
+Please see the [k-point convergence tutorial](../../tutorials/dft/kpt-convergence.md) for more details.
 
 > Some properties, especially those depending on atomic forces, derivatives of the total energy, and displacements or perturbation, are highly dependent upon the quality of convergence and relaxation. For example accurate calculation of zero point energy requires a well converged k-point grid to sample the total energy space when atoms are displaced from their equilibrium positions.

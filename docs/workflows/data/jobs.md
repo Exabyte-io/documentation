@@ -10,7 +10,7 @@ Jobs are organized into **Projects** for convenience. One can think about projec
 
 # Example representation
 
-In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data/overview.md) as explained elsewhere in this documentation.
+In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data/convention/overview.md) as explained elsewhere in this documentation.
 
 Below is an example JSON representation a of a job. It contains a single Workflow and one Material:
 

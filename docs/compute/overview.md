@@ -18,7 +18,7 @@ Our policies regarding compute levels and submission queues are explained [here]
 
 # Command Line
 
-Information about [command-line](/cli/login.md) type usage is available under this section as well. There users can also find explanation about submitting batch jobs and setting up runtime environment.
+Information about [command-line](/compute/cli/login.md) type usage is available under this section as well. There users can also find explanation about submitting batch jobs and setting up runtime environment.
 
 # Actions
 
