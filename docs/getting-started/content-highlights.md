@@ -4,9 +4,9 @@ This page helps users quickly get through the documentation.
 
 # Login
 
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
+We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
 
-- [secure shell and in-browser terminals](/cli/overview/#in-browser-terminal-and-ssh-terminal)
+- [secure shell and in-browser terminals](/compute/cli/overview/#in-browser-terminal-and-ssh-terminal)
 - [remote desktop session example](/electronic-density-mesh/#preparing-for-visualization)
 - [connection options explained](/connection-options/)
 - <a href="http://platform.exabyte.io/login" target="_blank">login page</a>
@@ -53,8 +53,8 @@ Compute parameters ([submission queue](/compute/queues), number of nodes and pro
 - [compute platform overview](/compute/overview/)
 - [compute platform architecture](/compute/overview/#platform-architecture)
 - [submission queues](/compute/queues/)
-- [queue-based pricing](/billing/pricing-and-service-levels/#queue-based-pricing)
-- [unified storage system](/cli/storage-system/)
+- [queue-based pricing](/accounts/accounting/pricing-and-service-levels/#queue-based-pricing)
+- [unified storage system](/compute/cli/storage-system/)
 - [linpack benchmark & scalability study](/compute/hpl-benchmark/)
 - [simulation benchmarks](/compute/benchmarks-and-scalability/)
 
@@ -63,9 +63,9 @@ Compute parameters ([submission queue](/compute/queues), number of nodes and pro
 Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
 
 - [job submission: tutorial](/tutorials/cli-job)
-- [job submission examples](/cli/jobs/)
-- [job script templates](/cli/jobs/#pre-configured-submit-scripts)
-- [modules environment](/cli/modules-environment/)
+- [job submission examples](/compute/cli/jobs/)
+- [job script templates](/compute/cli/jobs/#pre-configured-submit-scripts)
+- [modules environment](/compute/cli/modules-environment/)
 
 ## Extra simulation capabilities
 
@@ -84,5 +84,5 @@ We store all data about simulations and materials. Data originated from web appl
 
 # Other
 
-- [service levels and pricing](/billing/pricing-and-service-levels/)
-- [storage quotas](/billing/storage-quota/)
+- [service levels and pricing](/accounts/accounting/pricing-and-service-levels/)
+- [storage quotas](/accounts/accounting/storage-quota/)

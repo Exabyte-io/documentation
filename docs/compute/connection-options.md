@@ -2,7 +2,7 @@ There are 3 ways you can connect to our compute platform, command-line interface
 
 ## CLI via ssh terminal
 
-In order to use CLI via ssh terminal you need to generate ssh keys and upload your public key to our compute platform. For more information please visit [login via command line](../cli/login/#login-via-command-line) <!-- TODO: fix this link -->. When you have ssh keys in place you can use a ssh terminal or Putty for windows to connect to the compute platform.
+In order to use CLI via ssh terminal you need to generate ssh keys and upload your public key to our compute platform. For more information please visit [login via command line](cli/login/#login-via-command-line) <!-- TODO: fix this link -->. When you have ssh keys in place you can use a ssh terminal or Putty for windows to connect to the compute platform.
 
 ```
 % ssh steve@bohr.exabyte.io

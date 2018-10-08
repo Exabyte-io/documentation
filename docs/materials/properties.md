@@ -1,6 +1,6 @@
 # Structure-based approach
 
-Our current work is focused on **structure-based** atomistic approach, where the information about the atomistic arrangement is known *a priori* (see [data conventions](/data/overview.md)).
+Our current work is focused on **structure-based** atomistic approach, where the information about the atomistic arrangement is known *a priori* (see [data conventions](/data/convention/overview.md)).
 
 !!! note "Non-structure-based scenario"
     Our data convention has support for materials data where no structural information is available, however this topic is beyond the content of the current documentation.

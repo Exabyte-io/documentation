@@ -1,5 +1,9 @@
 This section contains information about how we store materials data and the individual properties.
 
+# Explorer Interface
+
+Specific features pertaining to the Explorer Interface of the Materials collection are explained [here](ui/explorer.md).
+
 # Data
 
 [Data](data.md) section contains example JSON representation of materials and its detailed explanation.

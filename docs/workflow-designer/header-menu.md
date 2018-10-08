@@ -4,11 +4,11 @@ At the top of the Workflow Designer interface, users can find a header menu. Thi
 
 # Name
 
-The initial name of a newly-created workflow is "Empty Workflow". It is visible at the left-end of the header menu bar next to the workflows icon <i class="zmdi zmdi-dot-circle zmdi-hc-border"></i>. Instructions on how this name can be changed are provided [here](/general/actions/name.md). Immediately below this general name for the workflow under consideration, a list of the computational engines employed in the workflow displayed under the label "applications".  
+The initial name of a newly-created workflow is "Empty Workflow". It is visible at the left-end of the header menu bar next to the workflows icon <i class="zmdi zmdi-dot-circle zmdi-hc-border"></i>. Instructions on how this name can be changed are provided [here](/entities-general/actions/name.md). Immediately below this general name for the workflow under consideration, a list of the computational engines employed in the workflow displayed under the label "applications".  
 
 # Description
 
-The user can add a general description of the workflow's features and applications for reference purposes by clicking on the "information" button <i class="zmdi zmdi-info-outline zmdi-hc-border"></i> towards the right-end of the header menu. A text dialog will open, where the workflow description can be entered in the Markdown scripting language according to the guidelines presented [here](../general/actions/metadata.md). 
+The user can add a general description of the workflow's features and applications for reference purposes by clicking on the "information" button <i class="zmdi zmdi-info-outline zmdi-hc-border"></i> towards the right-end of the header menu. A text dialog will open, where the workflow description can be entered in the Markdown scripting language according to the guidelines presented [here](../entities-general/actions/metadata.md). 
 
 Please click on `OK` once all required text has been entered and needs to be saved, or `Cancel` to revert.
 
@@ -30,7 +30,7 @@ The location of this drop-down menu is highlighted below:
 
 # Metadata
 
-The user can furthermore add descriptive `tags` to the workflow under consideration, following the general tag philosophy presented [here](/general/actions/metadata.md). In order to add tags, first the Workflows Designer page has to be scrolled down to the bottom, where the user will see a text line field labelled "Tags:".
+The user can furthermore add descriptive `tags` to the workflow under consideration, following the general tag philosophy presented [here](/entities-general/actions/metadata.md). In order to add tags, first the Workflows Designer page has to be scrolled down to the bottom, where the user will see a text line field labelled "Tags:".
 
 !!!warning "Tags are not part of the Header"
     Although we include its explanation in this page, the "Tags" section is not part of the header. The Workflows Designer page has to be scrolled down to the bottom to view it.

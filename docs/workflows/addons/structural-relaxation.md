@@ -19,7 +19,7 @@ Secondly, a relaxation calculation ensures that the inter-atomic forces within t
 
 # Why relaxations are recommended
 
-Performing such an initial relaxation at the beginning of any type of workflow is in general a recommended practice, since having a fully-optimized crystal structure as the starting point will ensure more reliable results throughout the course of the execution of the rest of the workflow tasks. The user is advised that not even the pre-defined crystal structures which can be imported directly from centralized databases, such as the [Materials Bank](../../materials/actions/bank.md) or the [Material Project](../../materials/actions/import.md) repositories reachable on the Exabyte platform, are always guaranteed to be fully pre-relaxed and pre-optimized. 
+Performing such an initial relaxation at the beginning of any type of workflow is in general a recommended practice, since having a fully-optimized crystal structure as the starting point will ensure more reliable results throughout the course of the execution of the rest of the workflow tasks. The user is advised that not even the pre-defined crystal structures which can be imported directly from centralized databases, such as the [Materials Bank](../../materials/bank.md) or the [Material Project](../../materials/actions/import.md) repositories reachable on the Exabyte platform, are always guaranteed to be fully pre-relaxed and pre-optimized. 
 
 # Execution of the Variable-cell Relaxation calculation
 
@@ -51,4 +51,4 @@ For large structures where a full relaxation of cell size is not computationally
 In many cases, simulation software allows one to specify constraints in certain directions or specific atoms. In some cases one can significantly reduce the computation time for relaxations by only relaxing a certain number of atoms within the structure when appropriate. For example, when simulating a 256 atom Si silicon supercell with 1 Si atom replaced by a P atom, fixing positions of all atoms other than the 2nd nearest neighbors of P will improve the speed of the calculation significantly.
 
 !!! Note "Tutorial"
-    Please visit the [relaxation tutorial](../../tutorials/relaxation.md) for a more expansive and detailed look at adding a relaxation calculation as part of a workflow.
+    Please visit the [relaxation tutorial](../../tutorials/dft/relaxation.md) for a more expansive and detailed look at adding a relaxation calculation as part of a workflow.

@@ -25,328 +25,341 @@ pages:
 
     - Home: index.md
 
+
+
+
+
 # INTRODUCTION
     - Getting Started:
-        - Run first simulation:     getting-started/run-first-simulation.md
+        - Run first simulation:                          getting-started/run-first-simulation.md
         # Table of Contents re-iterated
-        - Content highlights:       getting-started/content-highlights.md
-        - CLI job submission:       tutorials/cli-job.md
+        - Content highlights:                            getting-started/content-highlights.md
+        - CLI job submission:                            getting-started/cli-job.md
+
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
-        - Service Levels:                   accounts/billing/pricing-service.md
-        - Storage Pricing:                  accounts/billing/storage-quota.md
+        - Service Levels:                                pricing/service-levels.md
+        - Storage Pricing:                               pricing/storage-quota.md
 
     - Security:
-        - Current State of Cloud Security:  security/current-state.md
-        - Overview:                         security/overview.md
-        - Security Policies:                security/security-policies.md
-        - Threats Analysis:                 security/threats-analysis.md
-        - Privacy:                          security/privacy-statement.md  # duplicate through link
+        - Current State of Cloud Security:               security/current-state.md
+        - Overview:                                      security/overview.md
+        - Security Policies:                             security/security-policies.md
+        - Threats Analysis:                              security/threats-analysis.md
+        - Privacy:                                       security/privacy-statement.md  # duplicate through link
+
 
 # COMMON UI COMPONENTS
     - Interface Components:
         - Universal:
-            - Overview:                   general/ui/ui-overview.md
-            - Left-hand Sidebar:          general/ui/items-navigation.md
-            - Right-hand Sidebar:         general/ui/account-navigation.md
-            - Header:              general/ui/header-footer.md
-            - Footer:             general/ui/support.md
-            - Support:
-        - Navigation: x.md
-        - Dashboard: general/ui/dashboard.md
+            - Overview:                                  ui/universal/ui-overview.md
+            - Left-hand Sidebar:                         ui/universal/left-sidebar.md
+            - Right-hand Sidebar:                        ui/universal/right-sidebar.md
+            - Header:                                    ui/universal/header-footer.md
+            - Footer:                                    ui/universal/header-footer.md
+            - Support:                                   ui/universal/support.md
+        # Everything that's under account homepage
+        - Navigation:                                    ui/navigation.md
+        - Dashboard:                                     ui/dashboard.md
+
 
 # ACCOUNTS
     - Accounts:
         # Types of accounts present, how users are related to accounts, links UI components overview
-        - Overview:   x.md
+        - Overview:                                      accounts/overview.md
         # General explanation of account balance - what it is and how it is used, + link to balance action(s)
-        - Balance:    x.md
+        - Balance:                                       accounts/balance.md
         # General explanation of service levels and how they are used, + link to balance action(s)
-        - Service Levels:  x.md
+        - Service Levels:                                accounts/service-levels.md
         # General explanation of and how it is used, + link to balance action(s)
-        - Quota:      x.md
+        - Quota:                                         accounts/quota.md
         # General explanation of and how is used, + link to balance action(s)
-        - Payment Methods: x.md
+        - Payment Methods:                               accounts/payment-methods.md
         # Explain the notion of Account-owned Entity collection
-        - Collections:                      accounts/entities/collections.md
+        - Collections:                                   accounts/collections.md
         - User Interface:
             # List of other pages in this subsection
-            - Overview:                         accounts/management/settings-and-profile.md
-            - Switcher:
-            - Explorer:                         accounts/ui/explorer.md
-            - Bio:                              accounts/ui/bio.md
-            # Includes explanation about how to change service levels
-            - Service Level:                    accounts/ui/service-level.md
-            - Preferences:                      accounts/ui/preferences-overview.md
+            - Overview:                                  accounts/ui/overview.md
+            - Switcher:                                  accounts/ui/switcher.md
+            - Explorer:                                  accounts/ui/explorer.md
+            - Bio:                                       accounts/ui/bio.md
+            # Includes explanation about how to change service levels (upgrade)
+            - Service Level:                             accounts/ui/service-level.md
+            - Preferences:                               accounts/ui/preferences-overview.md
               # Who can see profile information
-            - Preferences > Profile:            accounts/ui/preferences/profile.md
-            - Preferences > User Settings:      accounts/ui/preferences/settings.md
-            - Preferences > API Token:          accounts/ui/preferences/api.md
-            - Preferences > SSH Keys:           accounts/ui/preferences/ssh.md
-            - Preferences > Change Password:    accounts/ui/preferences/password.md
+            - Preferences > Profile:                     accounts/ui/preferences/profile.md
+            - Preferences > User Settings:               accounts/ui/preferences/settings.md
+            - Preferences > API Token:                   accounts/ui/preferences/api.md
+            - Preferences > SSH Keys:                    accounts/ui/preferences/ssh.md
+            - Preferences > Change Password:             accounts/ui/preferences/password.md
         - Accounting:
+            - Overview:                                  accounts/accounting/overview.md
             # Explain that balance and storage quota can be accessed in Dashboard, Service Levels button, or right-hand sidebar
-            - Balance & Storage quota:          accounts/management/check-balance-quota.md
+            - Balance & Storage quota:                   accounts/accounting/check-balance-quota.md
             # Everything under Billing & Payments on Right-hand sidebar (Charges, Payments and Payment Methods)
-            - Payments and payment methods:     accounts/billing/add-credit-card.md
+            - Payments and payment methods:              accounts/accounting/payment-methods.md
             # Everything related to direct actions that user can perform with regards to his account
             # The following actions can be accessed from both right-hand sidebar and Service Level button
-            - Actions > Increase balance:         accounts/billing/increase-balance.md
-            - Actions > Increase Quota:           accounts/billing/increase-quota.md
+            - Actions > Increase balance:                accounts/accounting/increase-balance.md
+            - Actions > Increase Quota:                  accounts/accounting/increase-quota.md
 
     - Collaboration:
         # What is Org, member types, Members, Admins
-        - Organizations:                    accounts/organizations/overview.md
+        - Organizations:                                collaboration/organizations.md
         - Teams:
-            - Overview:                     accounts/organizations/teams.md
-            - User Interface:               x.md
+            - Overview:                                 collaboration/teams/overview.md
+            - User Interface:                           collaboration/teams/ui.md
         # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options
-        - Sharing:                          accounts/entities/sharing.md
+        - Sharing:                                      collaboration/sharing.md
         - Actions:
-            - Organization > Add / Remove Member:   x.md
-            - Organization > Make / Revoke Admin:   x.md
-            - Organization > Create / Delete Team:     x.md
-            - Team > Edit Permissions:     x.md
-            - Team > Add / Remove Member:     x.md
-            - Team > Add / Remove Entity:     x.md
+            - Organization > Add / Remove Member:       collaboration/actions/organization/add-remove-member.md
+            - Organization > Make / Revoke Admin:       collaboration/actions/organization/make-revoke-admin.md
+            - Organization > Create / Delete Team:      collaboration/actions/organization/create-delete-team.md
+            - Team > Edit Permissions:                  collaboration/actions/team/edit-permissions.md
+            - Team > Add / Remove Member:               collaboration/actions/team/add-remove-member.md
+            - Team > Add / Remove Entity:               collaboration/actions/team/add-remove-entity.md
+
 
 # ENTITIES
     - Entities & Common Aspects:
         # Introduction (links) to entity concepts such as entity Types, Bank, Sets, Actions (Overview page), and Common Interface Components.
-        - Overview:                   general/entities/overview.md
-
+        - Overview:                                     entities-general/overview.md
         # Explain the notion of Account ownership of entities, put links to Accounts overview
-        - Ownership:                        accounts/entities/ownership.md
+        - Ownership:                                    entities-general/ownership.md
         # Explain the notion of permissions (read, edit, execute, comment) on Entities
         # put links to Accounts, Organizations, Teams overview
-        - Permissions:                      accounts/entities/permissions.md
-
+        - Permissions:                                  entities-general/permissions.md
         - User Interface:
             # List, with links, of common entity Interface Components (Explorer, Designer and Viewer)
-            - Overview:                   general/entities/overview.md
+            - Overview:                                 entities-general/ui/overview.md
             # general explanation about actions toolbar, dropdown, entity Items lists....
-            - Explorer:                   general/ui/explorer.md
+            - Explorer:                                 entities-general/ui/explorer.md
             # Introduction to the general concept of entity designer, with links to entity-specific designer overview pages
-            - Designer:                   general/ui/designer.md
+            - Designer:                                 entities-general/ui/designer.md
             # Still needs to be done: explain edibility and adjustment differences between viewer and designer
-            - Viewer:                     general/ui/viewer.md
+            - Viewer:                                   entities-general/ui/viewer.md
         # JSON representation of structured data (with link to Compute section)
-        - Data:                           data/structured.md
+        - Data:                                         entities-general/data.md
         # Introduction to concept of sets (collection or folders of entities), with references to Sets Actions below
-        - Sets:                       general/entities/sets.md
+        - Sets:                                         entities-general/sets.md
         # This page explains the whole general concept of bank, including the creation of bank entries from account collections
         # Reference to "Copy from Bank" action below
-        - Bank:                       general/entities/bank.md
+        - Bank:                                         entities-general/bank.md
         - Actions:
             # List, with links, of common entity actions listed below, including also sharing
-            - Overview:                   general/actions/overview.md
+            - Overview:                                 entities-general/actions/overview.md
             ###################### Go through each common entity action in turn
-            - Search:                     general/actions/search.md
-            - Open:                       general/actions/open-edit.md
-            - Clone:                      general/actions/clone.md
-            - Delete:                     general/actions/delete.md
-            - Set default:                general/actions/set-default.md
+            - Search:                                   entities-general/actions/search.md
+            - Open:                                     entities-general/actions/open-edit.md
+            - Clone:                                    entities-general/actions/clone.md
+            - Delete:                                   entities-general/actions/delete.md
+            - Set default:                              entities-general/actions/set-default.md
             # MD Description, Tags, Metadata for surfaces / slabs
-            - Add metadata:               general/actions/metadata.md
-            - Change name:                general/actions/name.md
+            - Add metadata:                             entities-general/actions/metadata.md
+            - Change name:                              entities-general/actions/name.md
             ######################
             # Actions specific to Bank and Sets
             # Specific info about import from bank procedure only
-            - Bank > Copy from:           general/actions/overview.md
+            - Bank > Copy from:                         entities-general/actions/copy-bank.md
             # Specific info about procedure to create sets only
-            - Sets > Create:              general/actions/overview.md
+            - Sets > Create:                            entities-general/actions/create-sets.md
             # Specific info about move to sets procedure only
-            - Sets > Move To:             general/actions/overview.md
+            - Sets > Move To:                           entities-general/actions/move-to-sets.md
+
 
 # ENTITIES - SPECIFIC
     - Materials:
-        - Overview:                       materials/overview.md
+        - Overview:                                     materials/overview.md
         - User Interface:
-            - Explorer:                   materials/explorer.md
-            - Designer:                   materials-designer/overview.md
-            - Viewer:                     materials/viewer.md
-        - Data:                           materials/data.md
-        - Properties:                     materials/properties.md
-        - Bank:                           materials/bank.md
+            - Explorer:                                 materials/ui/explorer.md
+            - Designer:                                 materials-designer/overview.md
+            - Viewer:                                   materials/ui/viewer.md
+        - Data:                                         materials/data.md
+        - Properties:                                   materials/properties.md
+        - Bank:                                         materials/bank.md
         - Actions:
-            - Import:                     materials/actions/import.md
-            - Upload:                     materials/actions/upload.md
-            - Advanced Search:            materials/actions/advanced-search.md
+            - Import:                                   materials/actions/import.md
+            - Upload:                                   materials/actions/upload.md
+            - Advanced Search:                          materials/actions/advanced-search.md
             # TODO: MERGE INTO BANK PAGE or remove
-            - Search & Compare:           materials/actions/search-compare.md
-            - Set default:                materials/actions/set-default.md
-            #  TODO create page
-            - Create:                     materials/actions/create.md
+            - Search & Compare:                         materials/actions/search-compare.md
+            - Set default:                              materials/actions/set-default.md
+            - Create:                                   materials/actions/create.md
 
     - Materials Designer:
-        - Overview:                     materials-designer/overview.md
+        - Overview:                                     materials-designer/overview.md
         - Header Menu:
-            - Overview:                 materials-designer/header-menu/header-menu-intro.md
-            - Input/Output:             materials-designer/header-menu/input-output.md
-            - "Input/Output > Import":  materials-designer/header-menu/input-output/import.md
-            - "Input/Output > Export":  materials-designer/header-menu/input-output/export.md
-            - "Input/Output > Save":    materials-designer/header-menu/input-output/save.md
-            - Edit:                     materials-designer/header-menu/edit.md
-            - View:                     materials-designer/header-menu/view.md
-            - Advanced:                 materials-designer/header-menu/advanced.md
-            - "Advanced > Supercell":   materials-designer/header-menu/advanced/supercell.md
-            - "Advanced > Combinatorial Set":  materials-designer/header-menu/advanced/combinatorial-set.md
-            - "Advanced > Surface / Slab":     materials-designer/header-menu/advanced/surface-slab.md
-            - Help:                     materials-designer/header-menu/help.md
+            - Overview:                                 materials-designer/header-menu/header-menu-intro.md
+            - Input/Output:                             materials-designer/header-menu/input-output.md
+            - "Input/Output > Import":                  materials-designer/header-menu/input-output/import.md
+            - "Input/Output > Export":                  materials-designer/header-menu/input-output/export.md
+            - "Input/Output > Save":                    materials-designer/header-menu/input-output/save.md
+            - Edit:                                     materials-designer/header-menu/edit.md
+            - View:                                     materials-designer/header-menu/view.md
+            - Advanced:                                 materials-designer/header-menu/advanced.md
+            - "Advanced > Supercell":                   materials-designer/header-menu/advanced/supercell.md
+            - "Advanced > Combinatorial Set":           materials-designer/header-menu/advanced/combinatorial-set.md
+            - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
+            - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:
-            - Items List:               materials-designer/sidebar-items.md
+            - Items List:                               materials-designer/sidebar-items.md
         - Source Editor:
-            - Overview:                 materials-designer/source-editor.md
-            - Lattice Editor:           materials-designer/source-editor/lattice.md
-            - Basis Editor:             materials-designer/source-editor/basis.md
+            - Overview:                                 materials-designer/source-editor.md
+            - Lattice Editor:                           materials-designer/source-editor/lattice.md
+            - Basis Editor:                             materials-designer/source-editor/basis.md
         - 3D Editor:
-            - Overview:                      materials-designer/3d-editor.md
-            - View Actions Panel:            materials-designer/3d-editor/view.md
-            - Edit Actions Panel:            materials-designer/3d-editor/edit.md
-            - Export Actions Panel:          materials-designer/3d-editor/export.md
+            - Overview:                                 materials-designer/3d-editor.md
+            - View Actions Panel:                       materials-designer/3d-editor/view.md
+            - Edit Actions Panel:                       materials-designer/3d-editor/edit.md
+            - Export Actions Panel:                     materials-designer/3d-editor/export.md
 
     - Workflows:
-        - Overview:                       workflows/overview.md
+        - Overview:                                     workflows/overview.md
         - User Interface:
-            - Explorer:                   workflows/actions/overview.md
-            - Designer:                   workflow-designer/general-overview.md
-            - Viewer:                     materials/viewer.md
+            - Explorer:                                 workflows/ui/explorer.md
+            - Designer:                                 workflow-designer/general-overview.md
+            - Viewer:                                   workflows/ui/viewer.md
         - Data:
-            - Workflows:                  workflows/data/data.md
-            - Subworkflows:               workflows/data/subworkflows.md
-            - Units:                      workflows/data/units.md
-            - Templates:                  workflows/data/templates.md
-            - Jobs:                       workflows/data/jobs.md
-            - Maps:                       workflows/data/maps.md
-        - Bank:                           workflows/bank.md
+            - Workflows:                                workflows/data/data.md
+            - Subworkflows:                             workflows/data/subworkflows.md
+            - Units:                                    workflows/data/units.md
+            - Templates:                                workflows/data/templates.md
+            - Jobs:                                     workflows/data/jobs.md
+            - Maps:                                     workflows/data/maps.md
+        - Bank:                                         workflows/bank.md
         - Actions:
-            - Create:                     workflows/actions/create.md
-            - Update:                     workflows/actions/update.md
-            - Set default:                workflows/actions/set-default.md
+            - Create:                                   workflows/actions/create.md
+            - Update:                                   workflows/actions/update.md
+            - Set default:                              workflows/actions/set-default.md
         - Add-ons:
-            - K-point Convergence:         workflows/addons/convergence-algorithms.md
-            - Structural Relaxation:       workflows/addons/structural-relaxation.md
+            - K-point Convergence:                      workflows/addons/convergence-algorithms.md
+            - Structural Relaxation:                    workflows/addons/structural-relaxation.md
 
     - Workflow Designer:
-        - Overview:                          workflow-designer/general-overview.md
+        - Overview:                                     workflow-designer/general-overview.md
         - Header Menu:
-            - Overview:                      workflow-designer/header-menu.md
+            - Overview:                                 workflow-designer/header-menu.md
         - Sidebar:
-            - Items List:                    workflow-designer/sidebar.md
+            - Items List:                               workflow-designer/sidebar.md
         - Subworkflow Editor:
-            - Overview:                         workflow-designer/subworkflow-editor/intro.md
-            - Actions Menu:                     workflow-designer/subworkflow-editor/actions-menu.md
-            - Tabs:                             workflow-designer/subworkflow-editor/tabs-general.md
-            - Tabs > Overview:                  workflow-designer/subworkflow-editor/overview.md
-            - Tabs > Important Settings:        workflow-designer/subworkflow-editor/important-settings.md
-            - Tabs > Detailed View:             workflow-designer/subworkflow-editor/detailed-view.md
-            - Tabs > Compute:                   workflow-designer/subworkflow-editor/compute.md
-            - Units Flowchart:                  workflow-designer/subworkflow-editor/units-flowchart.md
+            - Overview:                                 workflow-designer/subworkflow-editor/intro.md
+            - Actions Menu:                             workflow-designer/subworkflow-editor/actions-menu.md
+            - Tabs:                                     workflow-designer/subworkflow-editor/tabs-general.md
+            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Important Settings:                workflow-designer/subworkflow-editor/important-settings.md
+            - Tabs > Detailed View:                     workflow-designer/subworkflow-editor/detailed-view.md
+            - Tabs > Compute:                           workflow-designer/subworkflow-editor/compute.md
+            - Units Flowchart:                          workflow-designer/subworkflow-editor/units-flowchart.md
         - Unit Editor:
-            - Overview:                         workflow-designer/unit-editor.md
-            - Input Templates:                  workflow-designer/unit-editor/input-templates.md
+            - Overview:                                 workflow-designer/unit-editor.md
+            - Input Templates:                          workflow-designer/unit-editor/input-templates.md
 
     - Jobs:
           # Links list to User Interface, Data and Actions for Workflows
-        - Overview:                         jobs/overview.md
+        - Overview:                                     jobs/overview.md
         - User Interface:
-              # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
-            - Explorer:                     jobs/explorer.md
-             #Link to Jobs Designer Overview page
-            - Designer:                     jobs/designer-overview.md
-             Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
-            - Viewer:                       jobs/designer-overview.md
+             # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
+            - Explorer:                                 jobs/ui/explorer.md
+             # Link to Jobs Designer Overview page
+            - Designer:                                 jobs/ui/designer.md
+             # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
+            - Viewer:                                   jobs/ui/viewer.md
          # Introduction to concept of Projects (particular set for jobs only)
-        - Projects:                         accounts/organizations/projects.md
+        - Projects:                                     jobs/projects.md
         - Actions:
-            - Run:                          jobs/actions/run.md
-            - Terminate:                    jobs/actions/terminate.md
-            - Purge:                        jobs/actions/purge.md
+            - Run:                                      jobs/actions/run.md
+            - Terminate:                                jobs/actions/terminate.md
+            - Purge:                                    jobs/actions/purge.md
 
     - Jobs Designer:
          # What is Jobs Designer and clickable image with links to Designer components below
-        - Overview:
+        - Overview:                                     jobs-designer/overview.md
         - Header Menu:
              # Links to all the header menu actions listed below
-            - Overview:
-            - Select Parent:
-            - Select Materials:            materials/actions/selection.md
-            - Select Workflow:
-            - Submit:
+            - Overview:                                 jobs-designer/header-menu/overview.md
+            - Select Parent:                            jobs-designer/header-menu/select-parent.md
+            - Select Materials:                         jobs-designer/header-menu/select-materials.md
+            - Select Workflow:                          jobs-designer/header-menu/select-workflow.md
+            - Submit:                                   jobs-designer/header-menu/submit.md
         # Reference Materials Viewer and explain how to cycle through materials in Pager
-        - Materials Tab:
+        - Materials Tab:                                jobs-designer/materials-tab.md
         # Reference WF Viewer and explain
         #    - which options are adjustable - isDraft, important settings
         #    - how to view workflow important settings and unit input for multiple materials
-        - Workflow Tab:
+        - Workflow Tab:                                 jobs-designer/workflow-tab.md
         # Refer to original compute tab
-        - Compute Tab:
+        - Compute Tab:                                  jobs-designer/compute-tab.md
+
 
 # CONCEPTS
     - Models:
-        - Overview:                                 models/overview.md
+        - Overview:                                     models/overview.md
         - Auxiliary Concepts:
-            - Reciprocal space:                     models/auxiliary-concepts/reciprocal-space.md
-            - Reciprocal space > sampling:          models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
-            - Reciprocal space > paths:             models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
+            - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
+            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
         - Density Functional Theory:
-            - Overview:                             models/dft/overview.md
-            - References:                           models/dft/references.md
+            - Overview:                                 models/dft/overview.md
+            - References:                               models/dft/references.md
 
     - Methods:
-        - Overview:                           methods/overview.md
+        - Overview:                                     methods/overview.md
         - Pseudopotential:
-            - Overview:                       methods/pseudopotential/overview.md
-            - Parameters:                     methods/pseudopotential/parameters.md
-            - Actions:                        methods/pseudopotential/actions.md
+            - Overview:                                 methods/pseudopotential/overview.md
+            - Parameters:                               methods/pseudopotential/parameters.md
+            - Actions:                                  methods/pseudopotential/actions.md
 
     - Applications:
-        - Overview:                     applications/overview.md
-        - Quantum ESPRESSO:             applications/quantum-espresso.md
-        - VASP:                         applications/vasp.md
+        - Overview:                                     applications/overview.md
+        - Quantum ESPRESSO:                             applications/quantum-espresso.md
+        - VASP:                                         applications/vasp.md
+
 
 # COMPUTATIONAL ASPECTS
     - Compute:
-        - Overview:                 compute/overview.md
-        - Policies:                 compute/policies.md
-        - Connection Options:       compute/connection-options.md
-        - Levels & Queues:          compute/levels-queues.md
-        - Hardware:                 compute/hardware.md
+        - Overview:                                     compute/overview.md
+        - Policies:                                     compute/policies.md
+        - Connection Options:                           compute/connection-options.md
+        - Levels & Queues:                              compute/levels-queues.md
+        - Hardware:                                     compute/hardware.md
         - Actions:
-            - Set Parameters:       compute/setup.md
+            - Set Parameters:                           compute/setup.md
+        - Remote Desktop:                               compute/remote-desktop.md
         - Command Line Interface:
-            - Login:                cli/login.md
-            - Accounting:           cli/accounting.md
-            - Environment:          cli/modules-environment.md
-            - Jobs:                 cli/jobs.md
-            - "Jobs: example":      cli/jobs-example.md
-            - Storage System:       cli/storage-system.md
-            - Extra:                cli/extra.md
-            - Permissions:          security/cli-users-permissions.md
-        - Remote Desktop:
+            - Login:                                    compute/cli/login.md
+            - Accounting:                               compute/cli/accounting.md
+            - Environment:                              compute/cli/modules-environment.md
+            - Jobs:                                     compute/cli/jobs.md
+            - "Jobs: example":                          compute/cli/jobs-example.md
+            - Storage System:                           compute/cli/storage-system.md
+            - Extra:                                    compute/cli/extra.md
+            - Permissions:                              compute/cli/cli-users-permissions.md
+
     - Data:
         - Convention:
             # Intro to the concepts of structured (eg JSON) and unstructured data (e.g. simulations output files)
-            - Overview:                 data/overview.md
-            - Structured data:          data/structured.md
-            - Non-structured data:      data/non-structured.md
+            - Overview:                                 data/convention/overview.md
+            - Structured data:                          data/convention/structured.md
+            - Non-structured data:                      data/convention/non-structured.md
         - Files:
-            - Overview: data/files/overview.md
-            - Dropbox:  data/files/dropbox.md
+            - Overview:                                 data/files/overview.md
+            - Dropbox:                                  data/files/dropbox.md
+
     - REST-API:
-        - Overview:                         rest-api/overview.md
-        - Authentication:                   rest-api/authentication.md
-        - Query structure:                  rest-api/query-structure.md
+        - Overview:                                     rest-api/overview.md
+        - Authentication:                               rest-api/authentication.md
+        - Query structure:                              rest-api/query-structure.md
         - Endpoints:
-            - Materials:                    rest-api/endpoints/materials.md
-            - Materials-Bank:               rest-api/endpoints/materials-bank.md
-            - Characteristics:              rest-api/endpoints/characteristics.md
-            - Jobs:                         rest-api/endpoints/jobs.md
-            - Workflows:                    rest-api/endpoints/workflows.md
+            - Materials:                                rest-api/endpoints/materials.md
+            - Materials-Bank:                           rest-api/endpoints/materials-bank.md
+            - Characteristics:                          rest-api/endpoints/characteristics.md
+            - Jobs:                                     rest-api/endpoints/jobs.md
+            - Workflows:                                rest-api/endpoints/workflows.md
             # TODO: revise and re-enable after
-            # - Pseudos:                      rest-api/endpoints/pseudos.md
-        - Python Client:                    rest-api/rest-api-python-client.md
+            - Pseudos:                                  rest-api/endpoints/pseudos.md
+        - Python Client:                                rest-api/rest-api-python-client.md
+
 
 # TUTORIALS AND EXAMPLES
     - Tutorials:
@@ -355,49 +368,52 @@ pages:
         #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
         #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
         - Pseudopotential DFT:
-            - Upload a Pseudopotential:         tutorials/upload-pseudopotential.md
-            - Electronic band structure:        tutorials/band-structure.md
-            - Electronic band gap:              tutorials/band-gap.md
-            - Electronic density of states:     tutorials/density-of-states.md
-            - Electronic density mesh:          tutorials/electronic-density-mesh.md
-            - Zero point energy:                tutorials/zero-point-energy.md
-            - Structural relaxation:            tutorials/relaxation.md
-            - K-point convergence:              tutorials/kpt-convergence.md
-            - Fermi surface:                    tutorials/fermi-surface.md
+            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
+            - Electronic band structure:                tutorials/dft/band-structure.md
+            - Electronic band gap:                      tutorials/dft/band-gap.md
+            - Electronic density of states:             tutorials/dft/density-of-states.md
+            - Electronic density mesh:                  tutorials/dft/electronic-density-mesh.md
+            - Zero point energy:                        tutorials/dft/zero-point-energy.md
+            - Structural relaxation:                    tutorials/dft/relaxation.md
+            - K-point convergence:                      tutorials/dft/kpt-convergence.md
+            - Fermi surface:                            tutorials/dft/fermi-surface.md
         - Machine Learning:
-            - Train ML Model:                   tutorials/train-ml-model.md
+            - Train ML Model:                           tutorials/ml/train-ml-model.md
         - Other:
-            - Custom-input workflow:            tutorials/custom-input-workflow.md
-            - Restart from previous run:        tutorials/restart-job.md
-            - Remote desktop visualization:     tutorials/remote-desktop.md
-            - Job submission via terminal:      tutorials/cli-job.md
+            - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
+            - Restart from previous run:                tutorials/other/restart-job.md
+            - Remote desktop visualization:             tutorials/other/remote-desktop.md
+            - Job submission via terminal:              tutorials/other/cli-job.md
         # TODO: adjust combinatorial screening explanation according to latest UX
-        # - Combinatorial-screening:          tutorials/combinatorial-screening.md
+        - Combinatorial-screening:                      tutorials/combinatorial-screening.md
         # TODO: re-implement and re-enable Formation Energy
-        # - Formation energy:                 tutorials/formation-energy.md
+        - Formation energy:                             tutorials/formation-energy.md
         # TODO: check relevance and update/delete
-        # - CLI data import:                  tutorials/cli-job-import.md
+        - CLI data import:                              tutorials/cli-job-import.md
 
     - Benchmarks:
-        - High Throughput Screening:     benchmarks/high-throughput-screening.md
-        - Distributed Memory Runs:       benchmarks/distributed-memory.md
-        - Vendor Comparison:             benchmarks/vendor-comparison.md
-        - High-Performance Linpack:      benchmarks/hpl-benchmark.md
+        - High Throughput Screening:                    benchmarks/high-throughput-screening.md
+        - Distributed Memory Runs:                      benchmarks/distributed-memory.md
+        - Vendor Comparison:                            benchmarks/vendor-comparison.md
+        - High-Performance Linpack:                     benchmarks/hpl-benchmark.md
+
 
 # LEGAL
     - Site Policy:
-        - Privacy:                          site-policy/privacy-statement.md
-        - Sharing:                          site-policy/sharing-policy.md
-        - Terms of Service:                 site-policy/terms-of-service.md
+        - Privacy:                                      site-policy/privacy-statement.md
+        - Sharing:                                      site-policy/sharing-policy.md
+        - Terms of Service:                             site-policy/terms-of-service.md
+
 
 # OTHER
     - Other:
-        - FAQ:                  other/faq.md
-        - Help & Support:       other/support.md
-        - Community Programs:   other/community-programs.md
-        - Terms of Service:     other/terms-of-service.md  # duplicate through link
-        - Restricted Content:   restricted.md
-        - Registration:         accounts/management/registration.md
+        - FAQ:                                          other/faq.md
+        - Help & Support:                               other/support.md
+        - Community Programs:                           other/community-programs.md
+        - Terms of Service:                             other/terms-of-service.md  # duplicate through link
+        - Restricted Content:                           other/restricted.md
+        - Registration:                                 other/registration.md
+
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
