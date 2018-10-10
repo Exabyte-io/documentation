@@ -1,27 +1,34 @@
-Your account is split into three tabs as below.
+# Account-related User Interface components
 
-# Bio (Profile)
+Different User Interface components are available, under the wider "Account Profile" page of the platform, to edit or insert information pertaining to Accounts, such as the Account-related profile information and settings. Further utilities are provided for example to switch between the various accounts available for login to the user, or for navigating the platform-wide general list of existing Accounts.
 
-This page shows information about you, to which teams and organizations you belong and what you have recently worked on. This can be set as private/public depending on your service level. Higher service level are able to make all information private. We also let users add a description and role to your account to share with other Exabyte.io users.
+Each of these interface components will now be reviewed separately. The user should refer to the numbers labels on each highlighted portion of the image below to access the documentation pages of the corresponding interface component considered here, which are referenced in the subsequent list of header sections. This image shows the location, within the general interface of the platform, of the buttons that need to be pressed to access and edit the information associated with each component, with the exception of the two sidebars which have been moved out of the original appearance of the interface for visibility purposes:
 
-![Exabyte Registration Form](/images/UserBio.png "UserBio")
+> Note: for the case of organization accounts, some of these interface components are visible only to the Account Owners and Administrators, and not to regular members. 
 
-Click on the Edit Bio button at the right side of the secondary navigation bar to edit basic information in your profile, upload your profile image and set your password.
+![Account UI components](/images/accounts-ui-components.png "Account UI components")
 
-![Edit Profile](/images/EditBio.png "Edit your profile")
 
-# Preferences
+# 1. Accounts Explorer
 
-Here you can set preferences for your account. We also have further features planned for this section.
+The complete list of all accounts on our platform  which are currently activated can be accessed following [these instructions](explorer.md).
 
-+ **Clone Suffix**: This suffix is appended to each job that is cloned via the jobs list page. The default is "clone".
-+ **Application Intro Tour**: This setting will enable/disable the user interface tour that is shown when you log in.
-+ **SSH Keys**: Here you can add, remove and create SSH keys that will be associated with your account.
+# 2. Account Biographical Information
 
-![Exabyte Registration Form](/images/UserPreferences.png "User Preferences")
+The user can view general profile information about the current account under the corresponding Biographical ("Bio") [component of the interface](bio.md). 
 
-# Service Levels
+# 3. Service Levels
 
-Details about your current account levels are shown in this tab: Your current account balance, storage quota and service level. You can quickly add to your account balance, increase your quota and change service levels from this page. For more information see the [Pricing and Service Levels page](/accounts/billings/billing/pricing-and-service-levels.md)
+Various Service Levels, offering different price-to-quality ratios with regards to the basic and optional features of our platform, are available for selection by the Account Owner or Administrators.
 
-![Exabyte Registration Form](/images/UserServiceLevel.png "User Service Levels")
+# 4. Account Preferences
+
+General Accounts preferences and Settings, such as the account's biographical information and password, can be set or edited by the Account Owner or Administrators under the corresponding [interface component](preferences-overview.md).
+
+# 5. Account Switcher
+
+The user can switch between the various different accounts that he owns, or that may have been made available to him by other users, by logging into any of the accounts listed under the "Account Switcher" [component of the interface](switcher.md). 
+
+# 6. Charges and Payments
+
+Account Owners or Administrators can review the complete list of payments and charges incurred by their account, and change or insert new payment methods, under the corresponding ["Billing and Payments" page](charges-payments.md).

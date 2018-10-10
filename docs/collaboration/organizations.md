@@ -1,3 +1,7 @@
+Organizations refer to collaborative accounts comprising multiple Users. The User who initially created the organization will be automatically appointed as the **Owner** of that organization, which attributes to him certain administrative privileges over the other Users. Such privileges can then be shared  by the Owner at an equal level with specially designated **Administrators** of the organization. All other non-administrative Users belonging to a certain organization are then classed as simple organization **Members**. The title of Owner is not immutable following the initial organization creation, rather it may at any point be relinquished to other Users.
+
+
+
 Organizations provie a way for multiple users to collaborate. Organization "Owners" and "Administrators" can manage "Members" access to data with a comprehensive set of security features.
 
 # Creating an organization
