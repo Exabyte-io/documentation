@@ -1,30 +1,32 @@
-This page shows how you can check your current balance and storage quota. There are two ways to do so: in your Account service page, and also in the right hand sidebar. The short movie below illustrates the process, and below there is more detail guide.
+# Account Balance and Storage Quota
 
-<img data-gifffer="/images/CheckBalanceAndQuota.gif" />
+This page explains how users can check the current [Account Balance](../balance.md) and [Storage Quota](../quota.md) associated with the account under consideration. 
+
+There are two ways through which both pieces of information can be accessed and viewed simultaneously, listed below. The appearance of the interface components exhibiting the balance and quota information in each of these two cases is displayed in the respective images underneath each item:
 
 
-# Open right hand sidebar
+## In Right-hand sidebar
 
-Click on your profile card in the top right of the header to open the Account right hand sidebar.
+The information about both balance and quota is present in the [Right-hand sidebar](/ui/universal/right-sidebar.md) as shown in the visual below.
 
-![Account Navigation](/images/RightHandNavigationTablet.png "Account Navigation")
+![Account Snapshot](/images/account-snapshot.png "Account Snapshot")
 
-You will see your current storage quota shown just under the account switcher: it is labelled accordingly, and to the right are shown the used amount used and limit. The bar is grey by default, once your storage begins to be used the meter will begin to fill with colour: Blue until 50%, orange from 50% to 75% and red when your used storage amount exceeds 75% of the total.
+## In Service Level Tab
 
-You can request an increase by clicking **Add Storage**.
+The same information is present under the [Service Level Tab](../ui/service-level.md) as depicted in the image below.
 
-# Account Balance
+!!!warning "Warning: restricted access"
+    This tab is only viewable by account Owners and Administrators.
 
-Your current account balance is show jus above the Account menu item. The balance is split into two parts, your available balance, and a reserved amount which is currently already allocated to compute time.
+![Indicators](/images/indicators.png "Indicators")
 
-You can increase your available balance by clicking **Add Credit**.
+It can be seen that in both of the above panels, the information about the Balance is subdivided into the "Current" (available) and "Reserved" (already allocated to compute time) components. Similarly, the information about the Storage Quota is always displayed in the "Current Consumption / Total Limit" format.
 
-# Account Page
+## In Dashboard or "Bio" Tab
 
-Your current account balance and storage quota are also available in the Service Level tab of your Account page. To access it:
+Furthermore, the current information about the Storage Quota across all the available supercomputing nodes can also be retrieved by itself from the main account [Dashboard](/ui/dashboard.md), or alternatively from the "[Bio](../ui/bio.md)" tab of the "Account Profile" interface. In both of these cases, the typical appearance of the panel displaying such storage quota information is as shown in the below example:
 
-1. Open the right hand sidebar by clicking on your account card in the top right of the header
-2. Select the <i class="zmdi zmdi-settings zmdi-hc-border"></i> **Account** menu item
-3. When the account page is loaded, click on the <i class="zmdi zmdi-layers zmdi-hc-border"></i> **Service Level** tab.
+![Storage Quota](/images/storage-quota.png "Storage Quota")
 
-![Service Levels](/images/UserServiceLevel.png "Service Levels")
+Two buttons are present at the top-right corner of the above interface widget: the first on the left <i class="zmdi zmdi-plus zmdi-hc-border"></i> can be used to [increase the Storage Quota](increase-quota.md), and the second on the right <i class="zmdi zmdi-refresh-alt zmdi-hc-border"></i> to refresh the displayed information. 
+

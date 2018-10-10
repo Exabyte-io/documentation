@@ -1,34 +1,45 @@
-This page explains how to request an increase to your storage quota. 
+# Increase Storage Quota
 
-<img data-gifffer="/images/AddStorage.gif" />
+!!!warning "Warning: content with restricted access"
+    All the information contained under the present documentation page is only relevant for Account Owners or Administrators, since only they have sufficient rights to view the content exposed herein and make the appropriate changes. We remind the reader that a user is always the Owner and full administrator of his own personal Account.
 
-# Open Account Page 
+This page explains how to request an increase to the Account's [Storage Quota](../quota.md) on the available supercomputing clusters, in addition to the storage space already provided under the account's current [service level](/pricing/service-levels.md). This action can be performed from the following four alternative locations across the platform interface:
 
-Click on your user account card in the header to open the right hand navigation, then select **Account** from the menu.
 
-# Open Service Level 
+- [The Right-hand Sidebar](/ui/universal/right-sidebar.md)
+- [The Service Level Tab](../ui/service-level.md)
+- [Dashboard](/ui/dashboard.md)
+- [The "Bio" tab](../ui/bio.md)
 
-1. Click on <i class="zmdi zmdi-layers zmdi-hc-border"></i> **Service Level** tab to view your account details
-2. Click on **Add Storage** in the storage quota widget to open the dialog.
+In the former two cases, the increase in Storage Quota can be executed through either of the corresponding `Add Storage` buttons, located within the broader User Interface as highlighted in red in the image below:
 
-![Service Levels](/images/UserServiceLevel.png "Service Levels")
+![Increase Quota](/images/increase-quota.png "Increase Quota")
 
-# Choose Amount
 
-Click on a preset storage amount, or choose other and enter the amount of storage you need. Click on Request Storage to make the request.
+In the latter two cases on the other hand, the same action can be performed through the corresponding button <i class="zmdi zmdi-plus zmdi-hc-border"></i> at the top-right corner of the relevant quota information panel, as displayed in the example image below:
 
-![Add Storage](/images/AddStorage.png "Add Storage")
+![Increase Quota](/images/storage-quota-action.png "Increase Quota")
 
-# Submit
+# Increase Quota Dialog
 
-Click "Request Storage". 
+Once any of the above-mentioned buttons have been clicked upon, the user will be greeted with the following "Increase Storage Quota" screen asking him to select the desired amount of storage space to be added to the account quota from a predefined set of options (10, 100, 500 GigaBytes, or 1 TeraByte). Next to each entry in this list of options, the associated price that will be charged on a monthly basis to the account balance is indicated. 
 
-We will send you an email within 24 hours confirming the storage quota upgrade. Login again to Exabyte.io to check your new quota online.
+## Custom Amounts
 
-# Shortcut
+Alternatively, a custom amount of storage space can be entered under the `Other` option of the dialog (in GigaBytes), and the associated monthly price will appear directly underneath. 
 
-You can also use the shortcut link to upgrade your storage quota by opening the Account navigation right hand menu and clicking the Add Storage button which is shown next to the Service Level information.
+![Increase Quota Screen](/images/increase-quota-screen.png "Increase Quota Screen")
 
-![Add Storage Menu Item](/images/AddStorageMenuItem.png "Add Storage Menu Item")
 
-<img data-gifffer="/images/ShortcutAddStorage.gif" />
+!!!note "Note: sufficient account balance"
+    The user should ensure that sufficient funds are present in the [Account Balance](increase-balance.md) to be able to afford the desired increase in Storage Space for the account under consideration.
+
+!!!warning "Warning: risk of data loss in case of excessive storage consumption"
+    If the account's consumed data storage exceeds the purchased storage quota for 10 days consecutively, the files in excess will be deleted from the supercomputing clusters, most recent files first.
+
+
+# Finalize the "Increase Storage Quota" Operation
+
+Once the user has made the desired choice from the above-mentioned list of options under the "Increase Storage Quota" screen, the bottom `Request Storage` button should be pressed to confirm and finalize the storage increase operation. We will send an email within 24 hours confirming the storage quota upgrade. The user should login again to the corresponding account to [verify the new storage quota](check-balance-quota.md).
+
+Alternatively, to cancel the operation and revert to the previous screen, the neighbouring `Cancel` button (or the `X` button at the top-right corner of the screen) should be clicked upon. 

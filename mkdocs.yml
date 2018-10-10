@@ -69,43 +69,48 @@ pages:
         # Types of accounts present, how users are related to accounts, links UI components overview
         - Overview:                                      accounts/overview.md
         # General explanation of account balance - what it is and how it is used, + link to balance action(s)
+        # Explain that balance and storage quota can be accessed in Dashboard, Service Levels button, or right-hand sidebar
+        - Users:                                         accounts/users.md
         - Balance:                                       accounts/balance.md
         # General explanation of service levels and how they are used, + link to balance action(s)
         - Service Levels:                                accounts/service-levels.md
         # General explanation of and how it is used, + link to balance action(s)
         - Quota:                                         accounts/quota.md
         # General explanation of and how is used, + link to balance action(s)
-        - Payment Methods:                               accounts/payment-methods.md
+        # Everything is under Billing & Payments on Right-hand sidebar (Charges, Payments and Payment Methods)
+        - Payments and Charges:                          accounts/payments-charges.md
         # Explain the notion of Account-owned Entity collection
         - Collections:                                   accounts/collections.md
         - User Interface:
             # List of other pages in this subsection
             - Overview:                                  accounts/ui/overview.md
             - Switcher:                                  accounts/ui/switcher.md
+            # Accounts explorer under left-sidebar
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
             # Includes explanation about how to change service levels (upgrade)
             - Service Level:                             accounts/ui/service-level.md
+            - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
               # Who can see profile information
             - Preferences > Profile:                     accounts/ui/preferences/profile.md
+            # Explain actual actions here, with GIFS and screenshots
             - Preferences > User Settings:               accounts/ui/preferences/settings.md
             - Preferences > API Token:                   accounts/ui/preferences/api.md
             - Preferences > SSH Keys:                    accounts/ui/preferences/ssh.md
             - Preferences > Change Password:             accounts/ui/preferences/password.md
-        - Accounting:
+        - Accounting Actions:
             - Overview:                                  accounts/accounting/overview.md
-            # Explain that balance and storage quota can be accessed in Dashboard, Service Levels button, or right-hand sidebar
-            - Balance & Storage quota:                   accounts/accounting/check-balance-quota.md
-            # Everything under Billing & Payments on Right-hand sidebar (Charges, Payments and Payment Methods)
-            - Payments and payment methods:              accounts/accounting/payment-methods.md
             # Everything related to direct actions that user can perform with regards to his account
             # The following actions can be accessed from both right-hand sidebar and Service Level button
-            - Actions > Increase balance:                accounts/accounting/increase-balance.md
-            - Actions > Increase Quota:                  accounts/accounting/increase-quota.md
+            - Check balance and quota:                   accounts/accounting/check-balance-quota.md
+            - Increase balance:                          accounts/accounting/increase-balance.md
+            - Increase Quota:                            accounts/accounting/increase-quota.md
+            - Change Payment Method:                     accounts/accounting/payment-methods.md
+
 
     - Collaboration:
-        # What is Org, member types, Members, Admins
+        # What is Org (account type), member types, Members, Admins
         - Organizations:                                collaboration/organizations.md
         - Teams:
             - Overview:                                 collaboration/teams/overview.md
@@ -113,6 +118,7 @@ pages:
         # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options
         - Sharing:                                      collaboration/sharing.md
         - Actions:
+            - Organization > Create:                    collaboration/actions/organization/create.md
             - Organization > Add / Remove Member:       collaboration/actions/organization/add-remove-member.md
             - Organization > Make / Revoke Admin:       collaboration/actions/organization/make-revoke-admin.md
             - Organization > Create / Delete Team:      collaboration/actions/organization/create-delete-team.md
@@ -158,6 +164,7 @@ pages:
             # MD Description, Tags, Metadata for surfaces / slabs
             - Add metadata:                             entities-general/actions/metadata.md
             - Change name:                              entities-general/actions/name.md
+            - Create New Entity:                        entities-general/actions/create.md
             ######################
             # Actions specific to Bank and Sets
             # Specific info about import from bank procedure only
@@ -412,7 +419,8 @@ pages:
         - Community Programs:                           other/community-programs.md
         - Terms of Service:                             other/terms-of-service.md  # duplicate through link
         - Restricted Content:                           other/restricted.md
-        - Registration:                                 other/registration.md
+        - Account Registration:                         other/registration.md
+
 
 
     # TODO: TB to remove or uncomment

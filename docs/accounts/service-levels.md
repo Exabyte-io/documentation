@@ -1,21 +1,37 @@
-Payments are linked to service levels. Higher payment amounts trigger greater levels of service and the associated benefits. To elevate the service level, therefore, you can simply make a payment above the threshold we wish to activate.
+# Service Levels
 
-# Open Account Page
+Service levels define most importantly the cost of computational consumption that the user has to incur while using our product. We quantity the amount of computational consumption in compute-units, otherwise known as [core-hours](https://en.wikipedia.org/wiki/CPU_time). By definition, the Service Level is associated uniquely to the account that the user is currently logged into.
 
-Open the Account navigation by clicking on your account profile card in the header, then select the <i class="zmdi zmdi-settings zmdi-hc-border"></i> **Account** menu item.
+Other features associated with using our platform which are affected by the opted Service Level consist in the following list:
 
-# Open Service Level Tab
+| Feature  | Description  	|
+| :------------- | :------------- |
+| Minimum Payment |  Minimum one-time initial payment necessary for account to be activated. This payment will still contribute to the account's balance for performing computational tasks |
+| Validity Period |  The duration of time over which the account will remain active and accessible by the users |
+| Reserved Compute Nodes |	The number of supercomputing clusters which are made available to the users of the account | 
+| Month Data Usage | The total quota of storage space which is allocated to the account on a monthly basis |
+| Private Data  | The possibility to hold private entities inside an account. Otherwise all entities are public for all other platform users to see |
+| Organizations/Teams  | The possibility to create organization accounts, and multiple teams inside each of these organizations |
+| Maximum Team Size  | The maximum number of users that can be hosted inside teams in general |
+| Support Level	| The different forms and depths of support that users will receive by our support staff in case of technical difficulties being encountered |
+| Command Line Access  |  The possibility to access the platform interface via command line |
 
-From your account page click on the <i class="zmdi zmdi-layers zmdi-hc-border"></i> Service Level tab.
+# Pricing
 
-![Service Levels](/images/UserServiceLevel.png "Service Levels")
+For a detailed explanation of the pricing associated with the three different Service Levels offered as part of our platform, that is the "Promo", "Advanced", "Pro", "Enterprise" and "Enterprise-Extra" levels, the user is referred to the [pricing documentation page](/pricing/service-levels.md). 
 
-# Upgrade Service Level
+# View Current Service Level
 
-Below the account balance and storage quota widgets are listed the Service Levels available to you. Your current service level is greyed out and has the word Current in the button. We placed the service levels beside each other so you can quickly compare which level might suit you best. If you wish to upgrade to another service level simply click on the Upgrade button in the plan you want.
+All the relevant information concerning Service Levels, under the context of the currently selected Account, can be inspected through the corresponding [component of the User Interface](ui/service-level.md).
+ 
+# Change Service Level
+ 
+ The above link also includes an explanation for how to opt for an "Upgrade" or "Downgrade" of the Service Level of the present account, relative to the current selection. It is important to bear in mind that, when dealing with collaborative accounts, only the Owner or an Administrator of the account is given the rights to undergo such a change on behalf of the whole Organization. 
 
-# Make Payment
 
-Make payment to activate new service level.
 
-In the same way as adding credit, you can select **Auto-renew**, in order to safeguard this level of service before the validity period expires. Click **Confirm** to make the payment and activate your new service level.
+
+
+
+
+

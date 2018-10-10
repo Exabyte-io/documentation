@@ -1,21 +1,21 @@
-# Charges
+# Account-related actions
 
-Charges page lists all charges related to compute costs as well as other charges to your account. You can use Search <i class="zmdi zmdi-search zmdi-hc-border"></i> and Advanced Search <i class="zmdi zmdi-search-for zmdi-hc-border"></i> buttons in the tool bar to quickly filter charges.
+The user might at some point find it useful to perform certain actions with regards to the account that he is currently logged into, such as viewing or increasing the presently available Storage Quota. We have identified the following set of actions which are particularly recurrent in a regular usage of our platform, and which are therefore conveniently listed in this page together:
 
-![Exabyte Registration Form](/images/Charges.png "Charges")
+# Check Account Balance and Storage Quota
 
-# Payments
+Any user, including those with non-administrative privileges, can check the current balance and storage quota associated with the present account, to verify for example that their respective levels of consumption are not approaching their total limiting amounts. We explain how to do so [in this page](check-balance-quota.md).
 
-The Payments page lists all the occasions on which you have credited your balance. You may add credit to your account by clicking the large Plus icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i>. Click [here](/accounts/billings/billing/increase-balance.md) for more details.
+# Increase Balance
 
-![Exabyte Registration Form](/images/Payments.png "Payments")
+Once the account is left with low levels of remaining available balance, the actions associated with increasing the Account's balance should be performed by the Owner or an Administrator of the account following [these instructions](increase-balance.md).
 
-# Payment Methods
+# Increase Storage Quota
 
-The Payment Methods page lists all the payment methods (credit cards currently) available to credit your balance. Click [here](/accounts/billings/billing/add-credit-card.md) for details on adding a new credit card. On the current page you can:
+Similarly, the moment the account is running low on available free storage space, a storage quota top-up should be considered by the Owner or an Administrator of the account, as explained [here](increase-quota.md).
 
-+ Add a new card by click on on the <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> icon, and filling in the form details.
-+ Remove a card, by clicking on "Remove" in the correct row
-+ Set a payment method as the default one, the one that will be used when crediting your account by default.
+# Change Payment Method
 
-![Exabyte Registration Form](/images/PaymentMethods.png "PaymentMethods")
+An explanation on how to add or change information about alternative Credit Cards for performing future payments can be retrieved [in this page](payment-methods.md).
+
+

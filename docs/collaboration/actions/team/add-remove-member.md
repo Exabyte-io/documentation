@@ -1,0 +1,1 @@
+This Explorer interface moreover permits the Owner or Administrators of the Organization to create or delete entries from either of the lists of Members or Teams, following the standard conventions for both the "Create" and "Delete" general actions outlined [here](/entities-general/actions/create.md) and [here](/entities-general/actions/delete.md) respectively.
