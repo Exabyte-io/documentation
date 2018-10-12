@@ -30,6 +30,6 @@ Opening an entry corresponding to a particular Entity in a the list in order to 
 
 The user can perform general searches to retrieve particular Entities of interest through [this procedure](../actions/search.md).
 
-# [Sharing](/collaboration/sharing.md)
+# [Sharing](/collaboration/sharing/ui.md)
 
-Entities can finally be shared with other Exabyte users, or made to be publicly visible on the world wide web, by following [these instructions](/collaboration/sharing.md).
+Entities can finally be shared with other Exabyte users, or made to be publicly visible on the world wide web, by following [these instructions](/collaboration/sharing/ui.md).

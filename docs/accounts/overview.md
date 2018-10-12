@@ -15,7 +15,7 @@ To every user of our platform is associated a Personal Account, created at the m
 
 ## Organizations
 
-The concept of Organization, or collaborative account, will be the object of a separate thorough explanation in [its dedicated page](/collaboration/organizations.md).
+The concept of Organization, or collaborative account, will be the object of a separate thorough explanation in [its dedicated page](/collaboration/organizations/overview.md).
 
 # User Interface
 

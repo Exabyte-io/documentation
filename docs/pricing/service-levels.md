@@ -34,7 +34,7 @@ Here's how it works:
 
 # Service levels for Enterprise
 
-Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/collaboration/organizations.md). 
+Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/collaboration/organizations/overview.md). 
 
 Notes:
 
