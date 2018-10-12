@@ -39,7 +39,7 @@ By our definition, "sharing" is a process of granting a permission of a certain 
 
 An entity is always accessible to its *owner*, therefore the administrators (and the owner) of the organizational account have all permissions on all account entities. 
 
-Regular members of an organization can get access to an account when it is granted by an administrator. The latter can be done through [teams](../collaboration/teams/overview.md). When an entity is added to a team with a designated set of permissions (eg. "edit"), all users that belong to the team get the corresponding access to the entity.
+Regular members of an organization can get access to an account when it is granted by an administrator. The latter can be done through [teams](../collaboration/organizations/teams.md). When an entity is added to a team with a designated set of permissions (eg. "edit"), all users that belong to the team get the corresponding access to the entity.
 
 ## With another account
 

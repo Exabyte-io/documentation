@@ -24,7 +24,7 @@ In case a personal account is currently being employed, the user will see here a
 
 ## List of Users and Teams
 
-In the alternative case of an Organizational Account being used, the user will instead first see a complete list of all members belonging to that particular Organization, including information on which members are the Owner and Administrators of the Organization. In a second instance, the user will also be able to view a list of all [Teams](/collaboration/teams/overview.md) included in the present Organization, including information on how many members and projects are included in each of them.
+In the alternative case of an Organizational Account being used, the user will instead first see a complete list of all members belonging to that particular Organization, including information on which members are the Owner and Administrators of the Organization. In a second instance, the user will also be able to view a list of all [Teams](/collaboration/organizations/teams.md) included in the present Organization, including information on how many members and projects are included in each of them.
 
 Both Lists of Members and Teams are presented in the standard [Explorer-type interface](/entities-general/ui/explorer.md) commonly encountered across our platform, as demonstrated in the following image example:
 

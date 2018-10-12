@@ -111,17 +111,27 @@ pages:
 
     - Collaboration:
         # What is Org (account type), member types, Members, Admins
-        - Organizations:                                collaboration/organizations.md
-        - Teams:
-            - Overview:                                 collaboration/teams/overview.md
-            - User Interface:                           collaboration/teams/ui.md
-        # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options
-        - Sharing:                                      collaboration/sharing.md
+        - Organizations:
+            - Overview:                                  collaboration/organizations/overview.md
+            - Roles:                                     collaboration/organizations/roles.md
+            - Teams:                                     collaboration/organizations/teams.md
+        - User Interface:
+            - Overview:                                  collaboration/ui/overview.md
+            - Teams Explorer:                            collaboration/ui/teams-explorer.md
+            - Team-specific Pages:                       collaboration/ui/team-pages.md
+            - People Explorer:                           collaboration/ui/people-explorer.md
+        # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options (UI+actions)
+        - Entity Sharing:
+            - User Interface:                            collaboration/sharing/ui.md
+            - Actions:                                   collaboration/sharing/actions.md
+            - Account Access Levels:                     collaboration/sharing/access-levels.md
         - Actions:
+            - Organization > Overview:                  collaboration/actions/organization/overview.md
             - Organization > Create:                    collaboration/actions/organization/create.md
             - Organization > Add / Remove Member:       collaboration/actions/organization/add-remove-member.md
             - Organization > Make / Revoke Admin:       collaboration/actions/organization/make-revoke-admin.md
             - Organization > Create / Delete Team:      collaboration/actions/organization/create-delete-team.md
+            - Team > Overview:                          collaboration/actions/team/overview.md
             - Team > Edit Permissions:                  collaboration/actions/team/edit-permissions.md
             - Team > Add / Remove Member:               collaboration/actions/team/add-remove-member.md
             - Team > Add / Remove Entity:               collaboration/actions/team/add-remove-entity.md

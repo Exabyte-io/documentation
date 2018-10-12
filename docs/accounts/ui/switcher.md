@@ -8,7 +8,7 @@ The name and type of the account that the user is currently logged into is displ
 
 # View and Choose Accounts
 
-If the user created, or is a member of, an [organization](/collaboration/organizations.md), clicking on the `My Accounts` option will open the complete list of organizations to which the user belongs, besides his own personal account. This list is presented under a standard [Explorer-type interface](/entities-general/ui/explorer.md), with its associated actions and features. The user is then free to switch between his personal account and any of these other organizational accounts by clicking on their corresponding names among the list of account entries. 
+If the user created, or is a member of, an [organization](/collaboration/organizations/overview.md), clicking on the `My Accounts` option will open the complete list of organizations <i class="zmdi zmdi-globe-alt zmdi-hc-border"></i> to which the user belongs, besides his own personal account <i class="zmdi zmdi-face zmdi-hc-border"></i>. This list is presented under a standard [Explorer-type interface](/entities-general/ui/explorer.md), with its associated actions and features. The user is then free to switch between his personal account and any of these other organizational accounts by clicking on their corresponding names among the list of account entries. 
 
 Once the user has decided to start using our product as a member of an organization, the interface will consequently reflect the change by showing the data related specifically to the organizational profile, for example storage quota and balance affecting the wider organization as opposed to the user's personal consumption.
 

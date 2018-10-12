@@ -45,7 +45,7 @@ Within a project each job is stored in its own directory as well. Job names, as 
 
 # Sharing and collaboration
 
-We provide a comprehensive set of options for setting up shared access to data. [Share directory](#share-directory) above is one example. More explanation [here](/collaboration/organizations.md).
+We provide a comprehensive set of options for setting up shared access to data. [Share directory](#share-directory) above is one example. More explanation [here](/collaboration/organizations/overview.md).
 
 ## Default project
 
