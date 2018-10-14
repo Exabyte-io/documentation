@@ -16,7 +16,7 @@ Under this dialog, the required information about the name and description of th
 
 ## Entity-related Permissions
 
-The adequate entity-related [permission](/entities-general/permissions.md) levels should furthermore be set under the bottom drop-down menu, to grant all future members of this new team this level of permission when entities will eventually be [assigned](../team/add-remove-entity.md) to the team. One or multiple permissions between "Read", "Edit", "Execute" and "Comment" can in this way be selected and applied to the new Team being created 
+The adequate entity-related [permission](/entities-general/permissions.md) levels should furthermore be set under the bottom drop-down menu, to grant all future members of this new team this level of permission when entities will eventually be [assigned](../team/add-remove-entity.md) to the team. One or multiple permissions between "Read", "Edit", "Execute" and "Comment" can in this way be selected and applied to the new Team being created. 
 
 These options can later be modified at any point, ensuing the Team creation, by following [these instructions](../team/edit-permissions.md)).
 
