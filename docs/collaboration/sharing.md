@@ -78,7 +78,7 @@ In the example below, we demonstrate how to share a Material entity, in the form
  
 # Sharing information in left-hand sidebar
 
-The left-hand items navigation sidebar of the User Interface, described separately [in this page](/ui/universal/left-sidebar.md), offers convenient central repositories of entities being shared for reference purposes.
+The left-hand items navigation sidebar of the User Interface, described separately [in this page](/ui/specific/left-sidebar.md), offers convenient central repositories of entities being shared for reference purposes.
 
 ## Accounts page
 
