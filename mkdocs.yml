@@ -25,10 +25,6 @@ pages:
 
     - Home: index.md
 
-
-
-
-
 # INTRODUCTION
     - Getting Started:
         - Run first simulation:                          getting-started/run-first-simulation.md
@@ -52,17 +48,15 @@ pages:
 
 # COMMON UI COMPONENTS
     - Interface Components:
-        - Universal:
-            - Overview:                                  ui/universal/ui-overview.md
-            - Left-hand Sidebar:                         ui/universal/left-sidebar.md
-            - Right-hand Sidebar:                        ui/universal/right-sidebar.md
-            - Header:                                    ui/universal/header-footer.md
-            - Footer:                                    ui/universal/header-footer.md
-            - Support:                                   ui/universal/support.md
-        # Everything that's under account homepage
-        - Navigation:                                    ui/navigation.md
-        - Dashboard:                                     ui/dashboard.md
-
+        - Overview:                                      ui/overview.md
+        - Header:                                        ui/header-footer.md
+        - Left-hand Sidebar:                             ui/left-sidebar.md
+        - Right-hand Sidebar:                            ui/right-sidebar.md
+        - Footer:                                        ui/header-footer.md
+        - Support:                                       ui/support.md
+        - Specific:
+            - Navigation:                                ui/specific/navigation.md
+            - Dashboard:                                 ui/specific/dashboard.md
 
 # ACCOUNTS
     - Accounts:
