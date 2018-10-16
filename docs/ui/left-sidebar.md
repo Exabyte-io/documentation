@@ -1,11 +1,14 @@
+<!-- TODO: GM to revise the page -->
+
 # Left-hand sidebar (items navigation)
 
-Clicking on the Menu Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i>  at the top-left corner of the user interface will open the Items and Functions Navigator, in the form of a sidebar on the left-hand side of the page. A second click on this Menu Icon can then close the sidebar. The image below highlights the overall location of this sidebar within the broader interface:
+Click the Trigger Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> in the top-left corner to open and navigate sidebar as shown below:
 
 <img src="/images/ui-left-sidebar.png"/>
 
+# Items
 
-The following table summarizes the different types of items contained in this left-hand sidebar. In particular, the items of type "Materials", "Jobs" and "Workflows" shall henceforth be commonly referred to as "Entities"  due to the numerous actions and properties that they share together. These common features are introduced in the [following general documentation page](/entities-general/overview.md).
+The following table summarizes the different types of items contained in this left-hand sidebar. 
 
 | Menu Item & Icon                                         | Description
 | :---------------------------                      |:-------------
@@ -29,33 +32,26 @@ The more complex entries in this left-hand sidebar are described comprehensively
 
 The Dashboard component of the user interface is reviewed in the [following page](../dashboard.md).
 
-
 # Create Job
 
-The "Create Job" link <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> takes the user to the job designer page, where new simulations can be conceived from start to finish. By default, new jobs are saved in the user's [default project](/data/convention/non-structured.md). The creation of new complete simulation Jobs is reviewed separately in its own dedicated documentation section, which explains how to proceed through the three main Job creation steps highlighted in the image below, namely the definition of the crystal structure to be investigated (1), of the type of Workflow calculation to be applied upon it (2), and finally of the computational resources to be allocated for this calculation (3): 
-
-![Job Creation](/images/job-creation.png "Job Creation")
+Job creation, explained in more details [here](/jobs/actions/create.md), can be accessed from this link.
 
 # Projects
 
-The "Projects" page lists all the projects that have been previously created. Projects are essentially analogous to folders containing different Jobs items, and can be clicked upon directly on the their name in order to be navigated. The <i class="zmdi zmdi-plus-circle"></i> icon on the right of the Projects page can be clicked to create a new empty Project folder.
+Click on the "Projects" to navigate to the list of the [Projects](/jobs/projects.md).
 
-# Jobs, Materials and Workflows entities
+# Jobs, Materials and Workflows *Entities*
 
-The "Jobs", "Materials" and "Workflows" pages each offer a complete list of *all* the items of the respective entity type that have been created previously by the user. Due to the numerous different types of actions and other features that these three types of entities have in common, they are reviewed together starting from [this page](overview.md).
+The "Jobs", "Materials" and "Workflows" pages each list of the respective entities. Due to the numerous different aspect that these entities have in common, they are reviewed together starting from [this page](/entities-general/overview.md).
 
 # Bank
 
-This feature, common to both Materials and Workflows entities (but not available for Jobs for the moment), is documented [here](/entities-general/bank.md).
+Links to [Entity Bank](/entities-general/bank.md) pages for Materials and Workflows are presented under the "Bank" menu.
 
 
 # Dropbox
 
-Dropbox is a limited-capacity cloud-based data storage (see [data conventions](/data/convention/non-structured.md/#dropbox-directory)) accessible under the same filesystem path everywhere within our application. This menu item opens a file browser where one can navigate and edit (upload, download, delete) files and directories. This feature is particularly convenient for storing auxiliary simulations data (eg. pseudopotentials). The image below shows the general appearance of this Dropbox interface: 
-
-![Dropbox](/images/Dropbox.png "Dropbox")
-
-Further information about this Dropbox facility can be found [here](data/files/dropbox.md).
+[Dropbox]((data/files/dropbox.md)), a central limited-capacity cloud-based data storage, is available under this link.
 
 
 # Accounts and Data Sharing
