@@ -1,10 +1,6 @@
-# Account-related actions
-
-The user might at some point find it useful to perform certain actions with regards to the account that he is currently logged into, such as viewing or increasing the presently available Storage Quota. We have identified the following set of actions which are particularly recurrent in a regular usage of our platform, and which are therefore conveniently listed in this page together:
-
 # Check Account Balance and Storage Quota
 
-Any user, including those with non-administrative privileges, can check the current balance and storage quota associated with the present account, to verify for example that their respective levels of consumption are not approaching their total limiting amounts. We explain how to do so [in this page](check-balance-quota.md).
+Any user (including those with non-administrative privileges for [organizational accounts](../overview.md)) can check the [balance](../balance.md) and storage [quota](../quota.md) associated with the present account, to verify, for example, that their respective levels of consumption are not approaching their total limiting amounts. We explain how to do so [in this page](check-balance-quota.md).
 
 # Increase Balance
 
@@ -16,6 +12,6 @@ Similarly, the moment the account is running low on available free storage space
 
 # Change Payment Method
 
-An explanation on how to add or change information about alternative Credit Cards for performing future payments can be retrieved [in this page](payment-methods.md).
+An explanation on how to add or change information about the alternative methods for performing future payments can be retrieved [in this page](payment-methods.md).
 
 

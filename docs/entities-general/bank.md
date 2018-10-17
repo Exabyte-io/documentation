@@ -7,7 +7,7 @@ For accounts with private data and  elevated service levels, the corresponding e
 
 # Open Bank Page 
 
-In order to import entities of type "Material" or "Workflow" from their respective Bank repositories into the account-owned collection of that particular entity type, first click on the corresponding `Bank` option in the [left-hand sidebar menu](/ui/universal/left-sidebar.md) of the User Interface. After the first click, the choice between navigating to either of the Materials or Workflows Banks is offered to the user. The user will be presented with a comprehensive list of centrally-stored and pre-defined Workflows or Materials, depending on the selected option.
+In order to import entities of type "Material" or "Workflow" from their respective Bank repositories into the account-owned collection of that particular entity type, first click on the corresponding `Bank` option in the [left-hand sidebar menu](/ui/specific/left-sidebar.md) of the User Interface. After the first click, the choice between navigating to either of the Materials or Workflows Banks is offered to the user. The user will be presented with a comprehensive list of centrally-stored and pre-defined Workflows or Materials, depending on the selected option.
 
 # Search for material
 
