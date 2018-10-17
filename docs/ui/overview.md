@@ -1,6 +1,12 @@
-# Common User Interface Components
+<!-- TODO: GM to revise the page -->
 
-The main User Interface (UI) of the Exabyte platform, granting the user graphical access to its various core functionalities, is structured into the five distinct components encircled in the image below. Each component panel can be clicked directly upon the image itself for redirection to  its corresponding documentation page:
+# Component types
+
+We subdivide the generic user interface into universal components that are present in each and every page, and other components that appear in specific cases.
+
+# Universal Components
+
+Five distinct components are highlighted in the image below. Click on the corresponding area in image below to be redirected to its corresponding documentation page.
 
 
 <img src="/images/ui-overview.png" usemap="#mapname">
@@ -13,4 +19,6 @@ The main User Interface (UI) of the Exabyte platform, granting the user graphica
     <area shape="rect" coords="555,38,753,501" href="/general/ui/account-navigation/">
 </map>
 
+# Specific Components
 
+TBA
