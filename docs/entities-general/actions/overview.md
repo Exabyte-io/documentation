@@ -2,6 +2,10 @@
 
 Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each corresponding type of action:
 
+# [Create New Entity](create.md)
+
+In order to create new entities, [this general procedure](create-sets.md) can be followed.
+
 # [Modify Name](../actions/name.md)
 
 The name of each entity can be changed according to [these instructions](../actions/name.md).
@@ -29,6 +33,18 @@ Opening an entry corresponding to a particular Entity in a the list in order to 
 # [Search](../actions/search.md)
 
 The user can perform general searches to retrieve particular Entities of interest through [this procedure](../actions/search.md).
+
+# [Copy from Bank](copy-bank.md)
+
+Bankable Entities can be copied (or imported) from their respective Banks into the Account-owned collections following the general instructions contained [here](copy-bank.md).
+
+# [Create / Delete Sets](create-sets.md)
+
+Sets can be created or deleted in the [following manner](create-sets.md).
+
+# [Move Entities to Sets](move-to-sets.md)
+
+Entities can be moved into Sets as outlined in [this page](move-to-sets.md).
 
 # [Sharing](/collaboration/sharing/ui.md)
 

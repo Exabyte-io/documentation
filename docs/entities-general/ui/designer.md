@@ -1,5 +1,8 @@
-# Designer Interface
+# Entity Designer Interface
 
-The Designer component allows user to Edit or "Design" new Entities. Its sub-components may include "Header Menu", "Items List Sidebar", and "Source Editor". In the case of Materials for example, their Designer interface has the following general appearance, where the instances of the above interface sub-components have been labelled correspondingly:
+The Designer component of the user interface allows the user to Edit existing entities, or Design new ones from scratch. This latter action is normally performed via the ["Create"](../actions/create.md) general standard procedure for new entities.
 
-<img src="/images/materials-designer-initial.png" >
+
+# Links
+
+Documentation pages presenting the various entity-specific aspects of the Designer Interface are available for [Materials](/materials-designer/overview.md), [Workflows](/workflow-designer/general-overview.md) and [Jobs](/jobs-designer/overview.md) respectively.
