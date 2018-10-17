@@ -4,13 +4,15 @@ The possibility to switch between all Accounts available for login to the user i
 
 # Currently Logged-in Account
 
-The name and type of the account that the user is currently logged into is displayed at the top-right corner of the interface, under the button that needs to be pressed to access the entire right-hand sidebar. 
+The name and type of the account that the user is currently logged into is displayed in [header](/ui/header-footer.md). 
 
-# View and Choose Accounts
+# View My Accounts
 
-If the user created, or is a member of, an [organization](/collaboration/organizations/overview.md), clicking on the `My Accounts` option will open the complete list of organizations <i class="zmdi zmdi-globe-alt zmdi-hc-border"></i> to which the user belongs, besides his own personal account <i class="zmdi zmdi-face zmdi-hc-border"></i>. This list is presented under a standard [Explorer-type interface](/entities-general/ui/explorer.md), with its associated actions and features. The user is then free to switch between his personal account and any of these other organizational accounts by clicking on their corresponding names among the list of account entries. 
+If the user created, or is a member of, an [organization](/collaboration/organizations/overview.md), the "My Accounts" list will contain other accounts, besides his/her personal one. This list is presented using an [Explorer-type interface](/entities-general/ui/explorer.md), with its associated layout and features. 
 
-Once the user has decided to start using our product as a member of an organization, the interface will consequently reflect the change by showing the data related specifically to the organizational profile, for example storage quota and balance affecting the wider organization as opposed to the user's personal consumption.
+# Switch to Account 
+
+The user is able to switch between the personal account and any of these other organizational accounts by clicking on their corresponding names in the list of account entries. Once the user has decided to start using our product as a member of an organization, the interface will consequently reflect the change by showing the data related specifically to the organizational account, for example storage quota and balance affecting the wider organization as opposed to the user's personal consumption.
 
 # Example
 

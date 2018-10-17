@@ -1,7 +1,13 @@
-# Explorer interface of the Workflows collection page
+<!-- 
 
-The features of the main Explorer user interface which are specific to the Workflows page concern particularly the type of quantities and properties that can be displayed under the right-hand tabular section of the interface, highlighted in the image below. This image also explains how the available quantities or properties can be made visible in the interface under their corresponding columns, through the ticking of their corresponding entries in the top three-dotted [drop-down menu](/entities-general/ui/explorer.md):
+    TODO: GM to revise the page:
+    - write one-paragraph simple explanation of what WE is and what's specific about it 
+        - up-to-date indicator (+ link), 
+        - filter by applications (+ link to search)
+    - put link to Entities Explorer page
+    - use workflows-specific image
+    - put links to other workflows-specific actions if any
+ 
+ -->
 
-![Materials Explorer Interface](/images/materials-explorer-interface.png "Materials Explorer Interface")
-
-In the above image, in particular, the properties exclusive to Materials are the ones which have been ticked already under the drop-down menu.
+# Workflows Explorer

@@ -24,7 +24,7 @@ Similarly, some more account-related interface components are present under the 
 
 ## 2. Account Switcher
 
-The user can switch between the various different accounts that he owns, or that may have been made available to him by other users, by logging into any of the accounts listed under the "Account Switcher" [component of the interface](switcher.md). 
+The user can switch between the various different accounts that he/she owns, or that may have been made available to him by other users, by logging into any of the accounts listed under the "Account Switcher" [component of the interface](switcher.md). 
 
 ## 3. Charges and Payments
 
