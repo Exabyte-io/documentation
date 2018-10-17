@@ -1,6 +1,6 @@
 # Adding Metadata to Entities
 
-Metadata refers to data (or information) that in turn provides information about other data. In the context of our platform Metadata is used primarily to assist the user in searching through the  Entity collections. We supplement collection entries with additional descriptive textual information. Metadata can be added to an entity item in one or more of the following forms: 
+Metadata can be added to an entity item in one or more of the following forms: 
 
 # Description
 

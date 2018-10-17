@@ -8,7 +8,9 @@ In order to add new members, the Owner or Administrator of the Organization shou
 
 ## Open Accounts Explorer
 
-The  "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page, under the [Actions Toolbar](/entities-general/ui/explorer.md) of the People Explorer interface, should be clicked upon in order to access the complete list of users present across the entire platform. The layout of this users list is similar to that of the general [Accounts Explorer](/accounts/ui/explorer.md). 
+The  "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page, under the [Actions Toolbar](/entities-general/ui/explorer.md) of the People Explorer interface, should be clicked upon in order to access the complete list of users present across the entire platform. 
+
+The layout of this list is similar to that of the general [Accounts Explorer](/accounts/ui/explorer.md), except that only personal Accounts are listed this time since Organizations cannot be added to other Organizations. 
 
 ## Add Users to Organization
 
