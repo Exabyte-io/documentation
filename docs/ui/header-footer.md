@@ -24,7 +24,7 @@ The title of the page currently viewed is shown for convenience and reference pu
 
 ## Right-hand sidebar
 
-The right-hand sidebar can be opened by clicking on the account name at the top-right corner of the page. 
+The right-hand sidebar can be opened by clicking on the **Account name and type** at the top-right corner of the page. 
 
 # Footer
 

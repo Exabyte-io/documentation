@@ -83,14 +83,14 @@ pages:
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
             # Includes explanation about how to change service levels (upgrade)
-            - Service Level:                             accounts/ui/service-level.md
+            - Service Levels:                             accounts/ui/service-level.md
             - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
               # Who can see profile information
             - Preferences > Profile:                     accounts/ui/preferences/profile.md
             # Explain actual actions here, with GIFS and screenshots
             - Preferences > User Settings:               accounts/ui/preferences/settings.md
-            - Preferences > API Token:                   accounts/ui/preferences/api.md
+            - Preferences > API Tokens:                   accounts/ui/preferences/api.md
             - Preferences > SSH Keys:                    accounts/ui/preferences/ssh.md
             - Preferences > Change Password:             accounts/ui/preferences/password.md
         - Accounting Actions:

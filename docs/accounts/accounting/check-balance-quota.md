@@ -4,7 +4,6 @@ This page explains how users can check the current [Account Balance](../balance.
 
 There are two ways through which both pieces of information can be accessed and viewed simultaneously, listed below. The appearance of the interface components exhibiting the balance and quota information in each of these two cases is displayed in the respective images underneath each item:
 
-
 ## In Right-hand sidebar
 
 The information about both balance and quota is present in the [Right-hand sidebar](/ui/universal/right-sidebar.md) as shown in the visual below.
