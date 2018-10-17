@@ -73,10 +73,3 @@ A summary  flowchart depicting all the above-mentioned  logical steps involved i
 Following the creation of a Bank entity item, this item may be subsequently **imported** by any user with appropriate access to it, thus creating a copy of that item under the corresponding Account-owned entity collection.
 
 Specific examples on how to operate this import procedure from the Bank repositories can be found for both [Materials](/materials/bank.md) and [Workflows](/workflows/bank.md) in their respective documentation pages, whereas the general instructions applicable to both entity types can be found [here](actions/copy-bank.md).
-
-
-
-
-
-
-

@@ -1,4 +1,4 @@
-<!-- by MM -->
+<!-- TODO: GM to revise the page to add explanation about how to view quotas -->
 
 ## Storage system
 

@@ -18,7 +18,7 @@ What can be viewed under the panel on the right-hand side of the "Bio" page real
 
 ## List of Organizations
  
-In case a personal account is currently being employed, the user will see here a complete list of all organizations of which he is either Owner, Administrator or regular Member. For example, in the example case shown in the image below, the user is for the moment member of three distinct organizations, two of which (the [Bank](/entities-general/bank.md) and [Public](/entities-general/permissions.md) organizations) are always listed here by default, since they include all users of the platform.
+In case a personal account is currently being employed, the user will see here a complete list of all organizations of which he/she is either Owner, Administrator or regular Member. For example, in the example case shown in the image below, the user is for the moment member of three distinct organizations, two of which (the [Bank](/entities-general/bank.md) and [Public](/entities-general/permissions.md) organizations) are always listed here by default, since they include all users of the platform.
 
 ![List Organizations](/images/list-organizations.png "List Organizations")
 

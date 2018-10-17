@@ -1,6 +1,6 @@
 # Payments
 
-A "Payment" is executed every time the Owner or Administrator of an Account transfers funds to the Account-owned [balance](balance.md), in order to cover the required costs of launching and performing the desired computations.
+A "Payment" is executed every time a transfer is made from an Account and is added to its [balance](balance.md), in order to cover the required costs of performing the desired actions.
 
 # Charges
 
@@ -12,5 +12,4 @@ Inspection of the complete list of all previously-made payments, and of all incu
 
 # Payment Methods
 
-Payments can be executed by Account Owners or Administrators through Credit/Debit Cards, by providing the relevant card information as outlined in the following [procedural instructions](accounting/payment-methods.md).
-
+Payments can be executed through Credit/Debit Cards, by providing the relevant card information as outlined in the following [procedural instructions](accounting/payment-methods.md). For the Enterprise Accounts we naturally establish a different payment protocol.

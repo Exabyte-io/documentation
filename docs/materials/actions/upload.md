@@ -20,13 +20,16 @@ In case large datasets of crystal structures need to be imported at a single tim
 
 ## Tag
 
-This toolbar furthermore offers the possibility to delete selected crystal structures from the list, or to tag them with a list of user-defined keywords for easier fetching while performing structure searches across the Exabyte platform. This is especially resourceful when large datasets of imported structures need to be retrieved, since they already have a common search label. The general guidelines for entering descriptive tags and attach them to entities are presented [here](/entities-general/actions/metadata.md).
+Users may tag structures with a list of keywords. This is especially resourceful when large datasets of imported structures need to be retrieved or filtered later. The general guidelines for entering descriptive tags and attach them to entities are presented [here](/entities-general/actions/metadata.md).
 
 ## Upload Files
 
-Once the crystal structure files have been manually imported into the Exabyte platform, they will then be processed by our application and added as an entry to your "Materials" list. By default the name of the material will be attempted to be read from the file you imported. Chemical formula will be used as a failover option.  
+Upon selection of the desired crystal structures can be uploaded to the platform by clicking on the `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> tool. For convenience, all structures in the list can be selected simultaneously by ticking the "Select All" checkbox at the top of the list.
 
-Upon selection of the desired crystal structures out of the list imported in the previous step, these can be uploaded to the user's personal materials repository by clicking on the `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> tool towards the centre of the top right toolbar. For convenience, all structures in the list can be selected simultaneously by ticking the first checkbox at the top of the list rather than each entry separately.
+# View Materials
+
+Once the crystal structure files have been imported into the platform, they will be added as an entries to "Materials" list. By default the name of the material will be attempted to be read from the file imported. Chemical formula will be used as a backup option.  
+
 
 # Animation
 

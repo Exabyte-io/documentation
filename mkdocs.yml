@@ -25,10 +25,6 @@ pages:
 
     - Home: index.md
 
-
-
-
-
 # INTRODUCTION
     - Getting Started:
         - Run first simulation:                          getting-started/run-first-simulation.md
@@ -52,17 +48,15 @@ pages:
 
 # COMMON UI COMPONENTS
     - Interface Components:
-        - Universal:
-            - Overview:                                  ui/universal/ui-overview.md
-            - Left-hand Sidebar:                         ui/universal/left-sidebar.md
-            - Right-hand Sidebar:                        ui/universal/right-sidebar.md
-            - Header:                                    ui/universal/header-footer.md
-            - Footer:                                    ui/universal/header-footer.md
-            - Support:                                   ui/universal/support.md
-        # Everything that's under account homepage
-        - Navigation:                                    ui/navigation.md
-        - Dashboard:                                     ui/dashboard.md
-
+        - Overview:                                      ui/overview.md
+        - Header:                                        ui/header-footer.md
+        - Left-hand Sidebar:                             ui/left-sidebar.md
+        - Right-hand Sidebar:                            ui/right-sidebar.md
+        - Footer:                                        ui/header-footer.md
+        - Support:                                       ui/support.md
+        - Specific:
+            - Navigation:                                ui/specific/navigation.md
+            - Dashboard:                                 ui/specific/dashboard.md
 
 # ACCOUNTS
     - Accounts:
@@ -90,14 +84,14 @@ pages:
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
             # Includes explanation about how to change service levels (upgrade)
-            - Service Level:                             accounts/ui/service-level.md
+            - Service Levels:                             accounts/ui/service-level.md
             - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
               # Who can see profile information
             - Preferences > Profile:                     accounts/ui/preferences/profile.md
             # Explain actual actions here, with GIFS and screenshots
             - Preferences > User Settings:               accounts/ui/preferences/settings.md
-            - Preferences > API Token:                   accounts/ui/preferences/api.md
+            - Preferences > API Tokens:                   accounts/ui/preferences/api.md
             - Preferences > SSH Keys:                    accounts/ui/preferences/ssh.md
             - Preferences > Change Password:             accounts/ui/preferences/password.md
         - Accounting Actions:
