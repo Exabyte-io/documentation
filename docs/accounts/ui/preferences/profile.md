@@ -1,7 +1,5 @@
 # General Profile Information
 
-Following a click on the `Preferences` tab <i class="zmdi zmdi-edit zmdi-hc-border"></i> of the general "Account Profile" interface, the user will initially be confronted with the following series of editable text entries, pertaining to the general profile information about the account under consideration:
-
 ![General Profile Information](/images/preferences-profile.png "General Profile Information")
 
 # Profile Picture
@@ -14,7 +12,7 @@ The name of the account can be edited and customized under the corresponding ent
 
 # Description
 
-Here, the user can enter a general short textual description about how he intends the account to be used, for example "Account for performing high-pressure calculations on minerals with other expert collaborators". 
+Here, the user can enter a general short textual description about how he/she intends the account to be used, for example "Account for performing high-pressure calculations on minerals with other expert collaborators". 
 
 # Email, Location and Website
 

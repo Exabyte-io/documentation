@@ -27,7 +27,7 @@ General Accounts preferences and Settings, such as the account's biographical in
 
 # 5. Account Switcher
 
-The user can switch between the various different accounts that he owns, or that may have been made available to him by other users, by logging into any of the accounts listed under the "Account Switcher" [component of the interface](switcher.md). 
+The user can switch between the various different accounts that he/she owns, or that may have been made available to him by other users, by logging into any of the accounts listed under the "Account Switcher" [component of the interface](switcher.md). 
 
 # 6. Charges and Payments
 

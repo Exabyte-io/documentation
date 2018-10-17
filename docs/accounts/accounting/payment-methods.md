@@ -14,7 +14,7 @@ In the form shown above, the user should enter the appropriate Credit Card detai
 
 # Finalize Addition of new Payment Method
 
-To finalize the addition of the new Credit Card as a future payment option, the user should click on the bottom `Add Card` button, or alternatively he should click a second time on the "Create" button (which will at this stage appear as a "minus" sign instead of the original "plus" sign) to negate all changes made to the Credit Card information being currently inserted.
+To finalize the addition of the new Credit Card as a future payment option, the user should click on the bottom `Add Card` button, or alternatively he/she should click a second time on the "Create" button (which will at this stage appear as a "minus" sign instead of the original "plus" sign) to negate all changes made to the Credit Card information being currently inserted.
 
 Once a new Credit Card payment method has been added, it will be shown in the overall list under the "Payment Methods" tab for future reference, and it will be delegated as the default method of payment for all future transactions.
 
