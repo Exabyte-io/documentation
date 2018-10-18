@@ -2,7 +2,7 @@
 
 Teams are defined as distinct **groups of users** within an [Organization](overview.md), who share a common set of **[permissions](/entities-general/permissions.md)** with regards to the various entities **[assigned](../actions/team/add-remove-entity.md)** (or added) to that particular Team by the Owner or Administrators of the given Organization. 
 
-Teams can thus be employed by the organization Owners and Administrators as a convenient management tool to create and manage permissions vis-a-vis the members of an Organization, and in particular to attribute to them specific access permissions to selected entity items.
+Teams can thus be employed by the organization Owners and Administrators as a convenient management tool to create and manage permissions vis-a-vis the members of an Organization, and in particular to attribute to them specific access to selected entity items.
 
 # Teams Explorer Interface
 
@@ -14,7 +14,7 @@ To each Team listed under the above-mentioned Teams Explorer interface correspon
 
 # Team Entities
 
-Entities of all possible [types](/entities-general/overview.md) can be assigned, or added, to a Team and all of its members under a common set of [permissions](/entities-general/permissions.md). To do so, the Owner or Administrator of the parent Organization, who have the appropriate rights to perform such an action, should follow the instructions included [in this page](../actions/team/add-remove-entity.md).
+Entities of all possible [types](/entities-general/overview.md) can be assigned, or added, to a Team and all of its members under a common set of [permissions](/entities-general/permissions.md). To do so, the Owner or Administrators of the parent Organization, who have the appropriate rights to perform such an action, should follow the instructions included [in this page](../actions/team/add-remove-entity.md).
 
 # Team Actions
 

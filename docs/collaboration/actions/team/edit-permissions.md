@@ -1,10 +1,10 @@
 # Edit Team Permissions
 
-The [permissions](/entities-general/permissions.md) attributed to the members of a Team by the Organization Owner or Administrators, for viewing and/or manipulating the various [entities assigned](add-remove-entity.md) to that given Team, can be modified at any time following the [Team Creation](../organization/create-delete-team.md)
+The [permissions](/entities-general/permissions.md) attributed to the members of a Team by the Organization Owner or Administrators, for viewing and/or manipulating the various [entities assigned](add-remove-entity.md) to that given Team, can be modified at any time following the [Team Creation](../organization/create-delete-team.md).
  
 # Open Preferences tab 
  
-This can be done by first navigating to the "Preferences" tab <i class="zmdi zmdi-edit zmdi-hc-border"></i> towards the right-hand side of the [Team-specific Page](../../ui/team-pages.md). The precise location of this tab within the wider Team-specific page interface is highlighted in the image below:
+This can be done by first navigating to the "Preferences" tab <i class="zmdi zmdi-edit zmdi-hc-border"></i> towards the right-hand side of the [Team-specific Page](../../ui/team-pages.md). The location of this tab within the wider Team-specific page interface is highlighted in the image below:
 
 ![Team Preferences](/images/team-preferences.png "Team Preferences")
 
@@ -20,6 +20,6 @@ Towards the bottom of this page, multiple permissions can be selected simultaneo
 
 # Animation
 
-Below, we start with a "Test Team" equipped initially with only "Read" permissions with regards to all entities assigned to it and its members, and change the permission preferences to include all four possible permission levels (Read, Edit, Comment and Execute) at the same time:
+Below, we start with a "Test Team" equipped initially with only "Read" permissions with regards to all entities assigned to its members, and change the permission preferences to include all four possible permission levels (Read, Edit, Comment and Execute) simultaneously:
 
 <img data-gifffer="/images/edit-team-permissions.gif">

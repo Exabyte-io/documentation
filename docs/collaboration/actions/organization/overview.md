@@ -3,7 +3,7 @@
 !!!warning "Warning: content with restricted access"
     All the information contained under the present documentation page, and under all of its associated links, is only relevant for Owners or Administrators of Organizations, since only they have sufficient rights to view the content exposed herein and make the appropriate changes.
     
-A certain set of Administrative Actions might need to be performed by the Owner or Administrators of an [Organization](../../organizations/overview.md) as part of its governance and regular management. These Actions are listed below, with links to their respective documentation pages, in a logical sequence based on how such actions typically need to be executed in a chronological order:
+A certain set of Administrative Actions might need to be performed by the Owner or Administrators of an [Organization](../../organizations/overview.md), as part of its governance and regular management. These Actions are listed below, with links to their respective documentation pages, in a logical sequence based on how such actions typically need to be executed in a chronological order:
 
 # Create Organization
 
@@ -19,7 +19,7 @@ Adding or removing members from an Organization is performed [in this way](add-r
 
 # Designate or Revoke Administrators
 
-New Administrators can be appointed or revoked by otehr Administrators, or by the Organization's Owner, through [this procedure](make-revoke-admin.md).
+New Administrators can be appointed or revoked by other Administrators, or by the Organization's Owner, through [this procedure](make-revoke-admin.md).
 
 # Create or Delete Teams
 

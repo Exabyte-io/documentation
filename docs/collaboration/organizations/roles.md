@@ -12,7 +12,7 @@ Such privileges can be shared  by the Owner with specially designated **Administ
 
 ## Regular Members
 
-All other non-administrative users belonging to a certain organization are then classed as **Regular Members**, and they are managed by the Owner and Administrators with elevated privileges. 
+All other non-administrative users belonging to a certain organization are then classed as **Regular Members**, and as such they are managed by the Owner and Administrators with elevated privileges. 
 
 ## People
 

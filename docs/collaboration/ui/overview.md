@@ -1,11 +1,11 @@
 # Organizational Interface Components
 
-When a user logs into our platform as part of an Organizational account, he will notice two additional tabs present under the main "Account Profile" page of the Organization, labelled "Teams" <i class="zmdi zmdi-accounts zmdi-hc-border"></i> and "People" <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on either of these two tabs will redirect the user to the **Teams Explorer** and **People Explorer** interfaces of our platform respectively, through which the lists of Teams or People comprised within the parent Organization can be browsed.  
+When a user logs into our platform as part of an Organizational account, he will notice two additional tabs present under the main ["Account Profile" page](/accounts/ui/profile-page.md) of the Organization, labelled "Teams" <i class="zmdi zmdi-accounts zmdi-hc-border"></i> and "People" <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on either of these two tabs will redirect the user to the **Teams Explorer** and **People Explorer** interfaces of our platform respectively, through which the lists of Teams or People comprised within the parent Organization can be browsed.  
 
 Furthermore, to each Team listed under the Teams Explorer corresponds a dedicated **Team-specific Page**, listing all the People and Entities assigned to that particular team.
 
 
-The precise locations, within the wider interface, of the access points to the three above-mentioned Organization-related Interface Components are highlighted in the image below. Their respective documentation pages are then referenced below the image according to the same number labeling:
+The precise locations, within the wider interface, of the access points to the three above-mentioned Organization-related Interface Components are highlighted in the image below. Their respective documentation pages are then referenced below the image, according to the same number labeling:
 
 ![Teams People Tabs](/images/teams-people-tabs.png "Teams People Tabs")
 

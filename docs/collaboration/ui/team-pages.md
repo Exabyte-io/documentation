@@ -8,13 +8,13 @@ The user can try to [open](/entities-general/actions/open-edit.md) any team entr
 
 ## Team Summary
 
-A summary of the Team's name, description and [permissions level](/entities-general/permissions.md) attributed to it at the moment of [Team creation](../actions/organization/create-delete-team.md) are clearly displayed at the top of the Team-specific page, as shown in the highlighted section of the example image above. This helps to remind the user that the page being currently viewed refers to that particular Team and not to the wider Organization.
+A summary of the Team's name, description and [permissions level](/entities-general/permissions.md) attributed to it at the moment of [Team creation](../actions/organization/create-delete-team.md) are displayed at the top of the Team-specific page, as shown in the highlighted section of the example image above. This helps to remind the user that the page being currently viewed refers to that particular Team and not to the wider Organization.
 
 ## Tabs
 
 ### Entities Tabs
 
-This Team-specific page lists all the entities [assigned](../actions/team/add-remove-entity.md) to that particular Team  under the tabs corresponding to each [entity type](/entities-general/overview.md),  accessible towards the top of the page as shown in the other highlighted section of the example image above. 
+This Team-specific page lists all the entities [assigned](../actions/team/add-remove-entity.md) to that particular Team  under the tabs corresponding to each [entity type](/entities-general/overview.md),  accessible towards the top of the page. 
 
 ### People Tab
 
@@ -22,6 +22,6 @@ In addition, a complete list of all members of the Team can be viewed under the 
 
 # Team-related Actions
 
-Most Team-related Actions, such as adding or removing entities or members to the Team, can be performed (by the Organization Owner or Administrators only) within the realms of the Team-specific Page being presently discussed. Such actions are introduced [in the following page](../actions/team/overview.md). 
+Most Team-related Actions, such as adding or removing entities or members to the Team, can be performed (by the Organization Owner or Administrators only) within the realms of the Team-specific Page. Such actions are introduced [in the following page](../actions/team/overview.md). 
 
 

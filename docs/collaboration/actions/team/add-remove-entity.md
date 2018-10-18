@@ -22,7 +22,7 @@ Under this "Add Entity" page, the desired entries can be selected by ticking the
 
 ## Animation
 
-In the example animation below, we will add a Material entity consisting in crystalline silicon to a Team we Administer under the present Organization called "Test Team":
+In the example animation below, we will add a Material entity consisting in crystalline silicon to a Team we administer called "Test Team":
 
 <img data-gifffer="/images/add-entity-team.gif">
 

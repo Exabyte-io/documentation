@@ -10,7 +10,7 @@ An example of appearance of this "Teams Explorer" interface page is provided in 
 
 ## Central Table of Interface: Team Members and Projects
 
-It can be noticed from the above image that, under each entry item in the overall list of teams, information about both the total number of team members and total number of projects assigned to each team is also exhibited in the central table of the "Teams Explorer" interface. 
+It can be noticed from the above image that, under each entry item among the list of teams, information about both the total number of team members and total number of projects assigned to each team is exhibited in the central table of the "Teams Explorer" interface. 
 
 # Team-specific Pages
 
@@ -18,5 +18,5 @@ Team-specific pages for every Team contained in the Organization can be accessed
 
 # Create or Delete Teams
 
-The action of creating or deleting Teams from the corresponding parent Organization, which can be performed by the organizational Owner or Administrators under the currently-discussed Teams Explorer interface, is explained [here](../actions/organization/create-delete-team.md).
+The action of creating or deleting Teams from the corresponding parent Organization, which can be performed by the organizational Owner or Administrators, is explained [here](../actions/organization/create-delete-team.md).
 

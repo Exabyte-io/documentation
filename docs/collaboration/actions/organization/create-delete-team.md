@@ -16,13 +16,13 @@ Under this dialog, the required information about the name and description of th
 
 ## Entity-related Permissions
 
-The adequate entity-related [permission](/entities-general/permissions.md) levels should furthermore be set under the bottom drop-down menu, to grant all future members of this new team this level of permission when entities will eventually be [assigned](../team/add-remove-entity.md) to the team. One or multiple permissions between "Read", "Edit", "Execute" and "Comment" can in this way be selected and applied to the new Team being created. 
+The adequate entity-related [permission](/entities-general/permissions.md) levels should furthermore be set under the bottom drop-down menu, to grant all future members of this new team this level of permissions with regards to entities that will eventually be [assigned](../team/add-remove-entity.md) to the team. One or multiple permissions between "Read", "Edit", "Execute" and "Comment" can in this way be selected and applied to the new Team being created. 
 
 These options can later be modified at any point, ensuing the Team creation, by following [these instructions](../team/edit-permissions.md)).
 
 ## Finalize Creation of the Team
 
-Once all the above-mentioned required information has been inserted in the "Create New Team" dialog, and the bottom `Create` button has been clicked, the new team will appear as a distinct new entry under the Teams Explorer interface. The Owner or Administrators of the Organization can now proceed to [adding new members](../team/add-remove-member.md) and [assigning new entities](../team/add-remove-entity.md) to this team.
+Once all the above-mentioned required information has been inserted in the "Create New Team" dialog, and the bottom `Create` button has been clicked, the new Team will appear as a distinct new entry under the Teams Explorer interface. The Owner or Administrators of the Organization can now proceed to [adding new members](../team/add-remove-member.md) and [assigning new entities](../team/add-remove-entity.md) to this Team.
 
 !!!note "Note: Organization-wide visibility"
     All Team-related information inserted in the "Create New Team" dialog will be visible to all other organization members following Team creation.
