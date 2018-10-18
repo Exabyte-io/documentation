@@ -78,6 +78,7 @@ pages:
         - User Interface:
             # List of other pages in this subsection
             - Overview:                                  accounts/ui/overview.md
+            - Profile Page:                              accounts/ui/profile-page.md
             - Switcher:                                  accounts/ui/switcher.md
             # Accounts explorer under left-sidebar
             - Explorer:                                  accounts/ui/explorer.md
@@ -125,6 +126,7 @@ pages:
             - Organization > Add / Remove Member:       collaboration/actions/organization/add-remove-member.md
             - Organization > Make / Revoke Admin:       collaboration/actions/organization/make-revoke-admin.md
             - Organization > Create / Delete Team:      collaboration/actions/organization/create-delete-team.md
+            - Organization > Create Entities:           collaboration/actions/organization/create-entities.md
             - Team > Overview:                          collaboration/actions/team/overview.md
             - Team > Edit Permissions:                  collaboration/actions/team/edit-permissions.md
             - Team > Add / Remove Member:               collaboration/actions/team/add-remove-member.md
@@ -140,6 +142,13 @@ pages:
         # Explain the notion of permissions (read, edit, execute, comment) on Entities
         # put links to Accounts, Organizations, Teams overview
         - Permissions:                                  entities-general/permissions.md
+        # JSON representation of structured data (with link to Compute section)
+        - Data:                                         entities-general/data.md
+        # Introduction to concept of sets (collection or folders of entities), with references to Sets Actions below
+        - Sets:                                         entities-general/sets.md
+        # This page explains the whole general concept of bank, including the creation of bank entries from account collections
+        # Reference to "Copy from Bank" action below
+        - Bank:                                         entities-general/bank.md
         - User Interface:
             # List, with links, of common entity Interface Components (Explorer, Designer and Viewer)
             - Overview:                                 entities-general/ui/overview.md
@@ -149,13 +158,6 @@ pages:
             - Designer:                                 entities-general/ui/designer.md
             # Still needs to be done: explain edibility and adjustment differences between viewer and designer
             - Viewer:                                   entities-general/ui/viewer.md
-        # JSON representation of structured data (with link to Compute section)
-        - Data:                                         entities-general/data.md
-        # Introduction to concept of sets (collection or folders of entities), with references to Sets Actions below
-        - Sets:                                         entities-general/sets.md
-        # This page explains the whole general concept of bank, including the creation of bank entries from account collections
-        # Reference to "Copy from Bank" action below
-        - Bank:                                         entities-general/bank.md
         - Actions:
             # List, with links, of common entity actions listed below, including also sharing
             - Overview:                                 entities-general/actions/overview.md
@@ -168,15 +170,16 @@ pages:
             # MD Description, Tags, Metadata for surfaces / slabs
             - Add metadata:                             entities-general/actions/metadata.md
             - Change name:                              entities-general/actions/name.md
-            - Create New Entity:                        entities-general/actions/create.md
+            - Create:                                   entities-general/actions/create.md
             ######################
             # Actions specific to Bank and Sets
             # Specific info about import from bank procedure only
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             # Specific info about procedure to create sets only
-            - Sets > Create:                            entities-general/actions/create-sets.md
+            - Sets > Create / Delete:                            entities-general/actions/create-sets.md
             # Specific info about move to sets procedure only
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
+
 
 
 # ENTITIES - SPECIFIC

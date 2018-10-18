@@ -8,13 +8,18 @@ The user interface of the platform contains three main distinct classes of **Ent
 | Workflows | <i class="zmdi zmdi-dot-circle"></i> | Contain logical set of computational operations, applicable to multiple materials |
 | Jobs      | <i class="zmdi zmdi-file"></i> | Represent computational tasks on a particular material-workflow combination to produce the corresponding properties and output files as results |
 
-Each one of the above has a dedicated tab within the user interface, as depicted in the image below:
 
-<img src="/images/entity-classes.png" > 
+# Ownership and Permissions
 
-# Common Entity Actions
+To each entity contained within our platform corresponds an [Owner](ownership.md). Furthermore, entities are subject to a certain set of [permissions](permissions.md) vis-a-vis how they can be accessed, manipulated or modified by the various users. This concept of permissions is particularly relevant in the context of [Entity Sharing](/collaboration/sharing/ui.md), and within the realm of collaborative [Organizational Accounts](/collaboration/organizations/overview.md). 
 
-Please refer to [this page](/entities-general/actions/overview.md) for an introduction to actions which pertain to all different entity types.
+# Common User Interface Components
+
+There are interface components, and some of their respective sub-components, which are [common to all entity types](ui/overview.md). 
+
+# Data
+
+Account-owned entity collections are stored in databases on our platform in the form of **structured data**.  Entities can moreover have additional **metadata**, in the form of descriptive tags for example, attached to them. These concepts are elucidated in the following [dedicated page](data.md).
 
 # Sets
 
@@ -24,22 +29,9 @@ Jobs and Materials (but not Workflows) can collectively be grouped together unde
 
 Please refer to [this page](bank.md) for an introduction to the "Bank" concept.
 
-# Common User Interface Components
+# Common Entity Actions
 
-There are interface components, and some of their respective sub-components, which are common to all entity types, and these include the following: 
+Finally, [this page](/entities-general/actions/overview.md) offers an introduction to actions which pertain simultaneously to all different entity types.
 
-link to UI overview below
 
-# Explorer
 
-Everything that concerns the Explorer aspect of the entities' interface is explained in this [other page](/entities-general/ui/explorer.md).
-
-# Designer
-
-The Designer interface component is documented [here](/entities-general/ui/designer.md).
-
-# Viewer
-
-TODO
-
-TODO: intro to all widgets in image.
