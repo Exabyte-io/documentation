@@ -14,7 +14,7 @@ Any entity item of bankable type, created under an Account-owned Entity Collecti
 
 # Bank Mapping Function
 
-Before being added to the relevant Bank Entity Collection, each entity item created by users under their Account-owned Entity Collection is first **checked** by a **Bank Mapping Function** (or function) against existing Bank entries, to make sure that the equivalent entry was not already present in the Bank Collection. In case of a positive match at the moment of comparison with existing Bank entries, the newly created entity being added to the Bank is automatically **merged** into the pre-existing entry.
+Before being added to the relevant Bank Entity Collection, each entity item created by users under their Account-owned Entity Collection is first **checked** by a **Bank Mapping Function** against existing Bank entries, to make sure that the equivalent entry was not already present in the Bank Collection. In case of a positive match, the newly created entity being added to the Bank is automatically **merged** into the pre-existing entry.
 
 To each entity type corresponds a distinct Mapping Function which inspects and assesses certain defining features of the entity, and this is explained in detail in the entity-specific Bank documentation pages cited in the final section of the present page. 
 
@@ -31,7 +31,7 @@ The reader may refer to this [page](data.md) for an explanation of the structure
 
 ## Hash Strings
 
-Merging is in practice performed through the generation of **hash strings**, such as the example mentioned in [this previous page](data.md). When an Account-owned entity item is acted upon by the Bank Mapping Function during the process of its addition to the relevant Bank, the corresponding hash string is generated algorithmically by our platform. 
+Merging of Bank entity items is in practice performed through the generation of **hash strings**, such as the example mentioned in [this previous page](data.md). When an Account-owned entity item is acted upon by the Bank Mapping Function during the process of its addition to the relevant Bank, the corresponding hash string is generated algorithmically by our platform. 
 
 This hash is then compared to those of all entries contained already in the Bank Collection for the given entity type. In case of a positive match, the original Account-owned entity item is directly associated with the existing Bank item sharing the same hash string, without consequently the need to create a new duplicate Bank entry.
 

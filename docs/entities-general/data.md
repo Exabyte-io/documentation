@@ -6,7 +6,9 @@ The user is referred to the corresponding [section of the documentation](/data/c
 
 # Example JSON representation
 
-The following is an example of JSON structured representation of an entity item contained in an Account-owned collection, where only the general keywords applicable to all entity types have been preserved. The reader is referred to the entity-specific documentation pages for a more detailed explanation about the kind of structured data that might pertain specifically to [Materials](/materials/data.md), [Workflows](/workflows/data/data.md) and [Jobs](/jobs/data.md) respectively. 
+The following is an example of JSON structured representation of an entity item contained in an Account-owned collection, where only the general keywords applicable to all entity types have been preserved. 
+
+The reader is referred to the entity-specific documentation pages for a more detailed explanation about the kind of structured data that might pertain specifically to [Materials](/materials/data.md), [Workflows](/workflows/data/data.md) and [Jobs](/jobs/data.md) respectively. 
 
 
 ```json
