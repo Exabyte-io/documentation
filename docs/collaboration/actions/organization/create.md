@@ -1,6 +1,6 @@
 # Create an Organization
 
-!!!note "Note: Sufficient Service Level Required to perform this Action"
+!!!note "Note: Sufficient Service Level required to perform this Action"
     Creation of an Organization under our platform is subject to the requirement that an Account with an appropriate [Service Level](/pricing/service-levels.md) be employed. Moreover, one **separate** Account of the sufficient Service Level is necessary for creating each desired Organization.  
 
 
@@ -8,7 +8,7 @@ New Organizations can be created by first navigating to the [Account Switcher](/
 
 # The "Create New Organization" Dialog
 
-At this stage, he will be confronted with the following "Create New Organization" dialog:
+At this stage, the user will be confronted with the following "Create New Organization" dialog:
 
 ![Create New Organization](/images/create-new-organization.png "Create New Organization")
 
@@ -34,7 +34,7 @@ A promotional message might appear at this stage, as explained in the subsequent
 
 # Promotional Offer
 
-If this is the first Organization being created by the user, he will be greeted with a message informing him about some special promotional benefits which we offer as part of the newly-created Organization. In particular, these benefits consist in 10 dollars that are offered as an initial [Account Balance](/accounts/balance.md) for the Organization, in the spirit of allowing the user to perform some preliminary tests and trial runs under his new Organization.
+If this is the first Organization being created by the user, he/she will be greeted with a message informing him about some special promotional benefits which we offer as part of the newly-created Organization. In particular, these benefits consist in 10 dollars that are offered as an initial [Account Balance](/accounts/balance.md) for the Organization, in the spirit of allowing the user to perform some preliminary tests and trial runs under his/her new Organization.
  
  This promotion will expire within 30 days following the Organization creation, or once the Account Balance has been depleted by the user. Any further usage of the Organization to perform computational tasks will then require future [payments](/accounts/accounting/increase-balance.md) to be made to the Account Balance. 
 

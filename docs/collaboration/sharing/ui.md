@@ -6,7 +6,7 @@ The sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> is loca
 
 # The Sharing Settings Dialog
 
-Clicking on the sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i>, in relation to a given selected entity item, will redirect the user to the "Sharing Settings" dialog, containing the component panels highlighted in the image below presented in a standard [Explorer-type Interface](/entities-general/ui/explorer.md):
+Clicking on the sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i>, in relation to a given selected entity item, will redirect the user to the "Sharing Settings" dialog. This dialog contains the component panels highlighted in the image below, presented in a standard [Explorer-type Interface](/entities-general/ui/explorer.md):
 
 ![Sharing Settings](/images/sharing-settings.png "Sharing Settings")
 
@@ -32,17 +32,19 @@ The central panel of the "Sharing settings" page offers a table summarizing the 
  
 # Other Sharing Information under left sidebar
 
-The left-hand sidebar of the wider general User Interface of our platform, introduced previously [in this page](/ui/universal/left-sidebar.md), offers convenient central repositories of entities being shared for reference purposes.
+The left-hand sidebar of the wider general User Interface of our platform, introduced previously [in this page](/ui/universal/left-sidebar.md), offers convenient central repositories of entities being shared:
 
 ## Accounts Explorer
 
-The complete list of Accounts opened on the Exabyte platform to date, already mentioned previously in the current documentation page, is also accessible from the [Accounts Explorer Interface](/accounts/ui/explorer.md), under the option `Accounts` <i class="zmdi zmdi-globe-alt zmdi-hc-border"></i> of the left-hand sidebar.
+The list of Accounts opened on the Exabyte platform to date, already mentioned previously in the current documentation page, is also accessible from the [Accounts Explorer Interface](/accounts/ui/explorer.md), under the option `Accounts` <i class="zmdi zmdi-globe-alt zmdi-hc-border"></i> of the left-hand sidebar.
 
 ## Entities Shared by Other Accounts
 
-Under the `Shared with me` option <i class="zmdi zmdi-share zmdi-hc-border"></i> towards the end of the left-hand sidebar, the user will be able to inspect all the various entities that have been shared with him by other Accounts. These entities are grouped according to their type, which can be selected by navigating through the tabs present at the top of the page. Each entry in the various collections of shared entities can be [opened](/entities-general/actions/open-edit.md) for inspection, or even edited and executed, depending on the permissions assigned to the present account by the originator of the share.
+Under the `Shared with me` option <i class="zmdi zmdi-share zmdi-hc-border"></i> towards the end of the left-hand sidebar, the user will be able to inspect all the various entities that have been shared with him/her by other Accounts. These entities are grouped according to their type, which can be selected by navigating through the tabs present at the top of the page. 
+
+Each entry in the various collections of shared entities can be [opened](/entities-general/actions/open-edit.md) for inspection, or even edited and executed, depending on the permissions assigned to the present account by the originator of the share.
 
 ## Entities Shared Publicly
 
-Finally, a complete list of all entities that have been shared publicly, and that are therefore accessible to all users of the Exabyte platform, can be retrieved under the `Shared publicly` link <i class="zmdi zmdi-accounts-alt zmdi-hc-border"></i> in the left-hand sidebar, again subdivided into entity types which can be navigated through the top tabs of the page. 
+Finally, a complete list of all entities that have been shared publicly, and that are therefore accessible to all users of the Exabyte platform, can be retrieved under the `Shared publicly` link <i class="zmdi zmdi-accounts-alt zmdi-hc-border"></i> in the left-hand sidebar, again subdivided into entity types. 
 

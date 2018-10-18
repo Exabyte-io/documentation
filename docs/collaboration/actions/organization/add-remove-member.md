@@ -14,7 +14,7 @@ The layout of this list is similar to that of the general [Accounts Explorer](/a
 
 ## Add Users to Organization
 
-Any desired number of users can be selected from this list by ticking their corresponding left-hand checkboxes, and then added to the Organization under consideration by clicking on the `Select Items` button <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> at the top-right corner of the users list page. The selected users will now appear as Organization regular members under the People Explorer interface of the Organization.
+Any desired number of users can be selected from this list by ticking their corresponding left-hand checkboxes, and then added to the Organization under consideration by clicking on the `Select Items` button <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> at the top-right corner of the page. The selected users will now appear as Organization regular members under the People Explorer interface of the Organization.
 
 ## Animation
 

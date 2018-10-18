@@ -1,6 +1,6 @@
 # Account Access Levels
 
-Different Access Levels can be granted to target Accounts on our platform, as was already mentioned in the context of [Entity Sharing](ui.md). In particular, the available Access Levels are comprised of the following distinct categories:
+Different Access Levels can be granted to target Accounts on our platform. The available Access Levels are comprised of the following distinct categories:
 
 ## Anyone with link
 
@@ -8,7 +8,7 @@ The "Anyone With Link" Access Level <i class="zmdi zmdi-link zmdi-hc-border"></i
 
 ## External (Anyone on the web)
 
-Entities can also be shared externally on the public internet, and therefore be made retrievable through general search engines, with the  "Anyone on the web" option <i class="zmdi zmdi-globe zmdi-hc-border"></i>.
+Entities can also be shared externally on the public internet, and consequently be made retrievable through general search engines, with the  "Anyone on the web" option <i class="zmdi zmdi-globe zmdi-hc-border"></i>.
 
 ## Public (all Users)
 

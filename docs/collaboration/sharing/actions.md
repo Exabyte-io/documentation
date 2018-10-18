@@ -1,12 +1,12 @@
 # Actions Related to Entity Sharing
 
-The following actions can be performed with regards to the sharing of entities under the corresponding ["Sharing Settings" dialog](ui.md):
+The following actions can be performed with regards to the sharing of entities under the ["Sharing Settings" dialog](ui.md):
 
 # Set Permissions
 
 To each shared entity can be assigned certain **Permissions**, that will affect the way that such an entity can be interacted with and manipulated by other users. These permission settings can be found on the top-right [actions toolbar menu](/entities-general/ui/explorer.md) of the "Sharing Settings" dialog, or equivalently under each entry's right-hand [actions drop-down menu](/entities-general/ui/explorer.md).
  
-Either way, the types of permissions listed in the [following page](/entities-general/permissions.md) are included under both actions menus, and will be applied to all currently-selected Sharing Options.
+The types of permissions listed in the [following page](/entities-general/permissions.md) are included under both actions menus, and will be applied to all currently-selected Sharing Options.
 
 # Add Other Accounts
 
@@ -30,7 +30,7 @@ Conversely, any currently selected Account can be removed from the Sharing Optio
 
 # Animation
 
-In the example below, we demonstrate how to share a Material entity, in the form of a crystalline sample of silicon, with other users informed about the shareable link, and with another specific Account called "Team Exabyte.io" imported purposely from the accounts list page. To both of these sharing options, read permissions are finally granted.
+In the example below, we demonstrate how to share a Material entity, in the form of a crystalline sample of silicon, with other users informed about the shareable link, and with another specific Account called "Team Exabyte.io" imported purposely from the accounts list page. To both of these sharing options, read permissions are finally granted:
 
  <img data-gifffer="/images/entity-sharing.gif" />
 
