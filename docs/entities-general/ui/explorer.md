@@ -20,7 +20,7 @@ The image below shows the location of the sub-header within the Explorer Interfa
 
 ## Columns Selector 
 
-The columns of the aforementioned Entity Items List can be customized through the  drop-down menu in the sub-header labelled with three horizontal dots. Once the menu is opened, the user may choose which entity properties to display under each column of the list by selecting the appropriate options.
+The columns of the aforementioned Entity Items List can be customized through the  drop-down menu button in the sub-header labelled with three horizontal dots. Once the menu is opened, the user may choose which entity properties to display under each column of the list by selecting the appropriate options.
 
 Next to this menu button, the possibility to scroll the table of displayed properties horizontally is also offered, under the button labelled with a pair of triangular brackets which toggles such a horizontal scroll functionality.  
 
@@ -30,13 +30,13 @@ The image below shows the location of these two buttons within the sub-header. A
 
 ## Toggle Reactive Updates
 
-By default, the information displayed under the Entity Items List is updated automatically and in real time, that is it updated in a "reactive" fashion. This constant updating can occasionally cause the platform interface to significantly slow down and become un-responsive, such as it may be the case when a large number of Jobs is being executed simultaneously. They user may therefore wish to "pause" the reactive updates, and this can be accomplished through the "Toggle Reactive Updates" button <i class="zmdi zmdi-pause-circle-outline zmdi-hc-border"></i> present in the sub-header.
+By default, the information displayed under the Entity Items List is updated automatically and in real time, or in other words it is updated in a "reactive" fashion. This constant updating can occasionally cause the platform interface to significantly slow down and become un-responsive, such as it may be the case when a large number of Jobs is being executed simultaneously. The user may therefore wish to "pause" the reactive updates, and this can be accomplished through the "Toggle Reactive Updates" button <i class="zmdi zmdi-pause-circle-outline zmdi-hc-border"></i> present in the sub-header.
 
 Once paused, the reactive updates can be resumed by clicking on the "Toggle Reactive Updates" button a second time, which after pausing appears under the "play" label <i class="zmdi zmdi-play-circle zmdi-hc-border"></i>. Alternatively, the updating of the information contained in the Entity Items List can be triggered manually, following the pausing of reactive updates, through the neighboring "Trigger Update" button <i class="zmdi zmdi-rotate-left zmdi-hc-border"></i>.
 
 ## Pagination of Entity Items List
 
-Finally, on the left-hand side of the sub-header, further selection and viewing functionality is offered with regards to the entity list items.
+Finally, on the left-hand side of the sub-header, further selection and pagination functionality is offered with regards to the entity list items.
 
 Firstly, the number of entity items to be shown under each page of the Entity Items List, out of their total number contained in the Account-owned Entity Collection, can be selected from the corresponding drop-down menu emphasized in the example below, under the section labelled "Results per Page":
 

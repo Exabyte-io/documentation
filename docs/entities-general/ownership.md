@@ -1,10 +1,10 @@
 # Account Ownership of Entities 
 
-To every entity contained within the Exabyte platform corresponds a certain **Owning Account**, more commonly referred to as simply the **Owner** of that entity. The Owner initially defaults to the Account under which that entity was **created**, which can be of both [personal or Organizational type](/accounts/overview.md). 
+Every entity contained within the Exabyte platform has an **Owning Account**, more commonly referred to as the **Owner** of that entity. The Owner initially defaults to the Account under which that entity was **created**, which can be of both [personal or Organizational type](/accounts/overview.md). 
 
-When entities of each [type](overview.md) are treated collectively, we therefore refer to them as **Account-owned** Entity Collections, which are the object of a [separate discussion](/accounts/collections.md)).
+When entities of each [type](overview.md) are treated collectively, we refer to them as **Account-owned Entity Collections**, which are the object of a [separate discussion](/accounts/collections.md)).
 
-It is important to emphasize that the concept of Entity Ownership applies to the Accounts themselves, Organizational or personal as they may be, and not to any of its particular users/members.
+It is important to emphasize that the concept of Entity Ownership applies to the Accounts themselves, Organizational or personal as they may be, and not to any of its  users/members.
 
 
 # Transmission of Entity Ownership
@@ -19,7 +19,7 @@ When an entity is [shared](/collaboration/sharing/ui.md) with another account, o
 
 When an entity is [copied](/entities-general/actions/clone.md) by the user of a certain Account "X", a new distinct entry will be created under the corresponding Account-owned entity collection, with exactly the same contents as the original entity item. 
 
-The ownership of this new cloned item will as a result belong to the Account "X", and not to the other Account which contained the original item, despite both items holding the same entity-related contents.
+The ownership of this new cloned item will as a result belong to the Account "X", and not to the Account which contained the original item, despite both items holding the same entity-related contents.
 
 ## Transfer: not Available
 

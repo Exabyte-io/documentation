@@ -11,7 +11,7 @@ The user interface of the platform contains three main distinct classes of **Ent
 
 # Ownership and Permissions
 
-To each entity contained within our platform corresponds an [Owner](ownership.md). Furthermore, entities are subject to a certain set of [permissions](permissions.md) vis-a-vis how they can be accessed, manipulated or modified by the various users. This concept of permissions is particularly relevant in the context of [Entity Sharing](/collaboration/sharing/ui.md), and within the realm of collaborative [Organizational Accounts](/collaboration/organizations/overview.md). 
+To each entity contained within our platform corresponds an [Owner](ownership.md). Entities are moreover subject to a certain set of [permissions](permissions.md) vis-a-vis to how they can be accessed, manipulated or modified by the various users. This concept of permissions is particularly relevant in the context of [Entity Sharing](/collaboration/sharing/ui.md), and within the realm of collaborative [Organizational Accounts](/collaboration/organizations/overview.md). 
 
 # Common User Interface Components
 
@@ -19,7 +19,7 @@ There are interface components, and some of their respective sub-components, whi
 
 # Data
 
-Account-owned entity collections are stored in databases on our platform in the form of **structured data**.  Entities can moreover have additional **metadata**, in the form of descriptive tags for example, attached to them. These concepts are elucidated in the following [dedicated page](data.md).
+Account-owned entity collections are stored in databases on our platform in the form of **structured data**.  Entities can also have additional **metadata**, in the form of descriptive tags for example, attached to them. These concepts are elucidated in the following [dedicated page](data.md).
 
 # Sets
 

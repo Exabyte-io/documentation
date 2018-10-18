@@ -10,7 +10,7 @@ The following set of permission types are offered on our platform:
 
 ## Read Permission
 
-To allow other Accounts to simply visualize the contents of the entity under consideration, without granting them the opportunity to bring about changes to it or execute any of its computational tasks, the "Read" <i class="zmdi zmdi-menu zmdi-hc-border"></i> permission option should be chosen and applied.
+To allow other Accounts to simply visualize the contents of the entity under consideration, without granting them the opportunity to bring about changes or execute any of the entity's computational tasks, the "Read" <i class="zmdi zmdi-menu zmdi-hc-border"></i> permission option should be chosen and applied.
 
 ## Execute Permission
 
@@ -25,7 +25,7 @@ The "Edit" <i class="zmdi zmdi-edit zmdi-hc-border"></i> permission grants the p
 Finally, the "Comment" permission allows Accounts to write comments under the given entity, in a format and spirit similar to popular social network platforms.
 
 !!!note "Note: feature not implemented yet"
-    The last "Comment" feature and associated permission have not been implemented on our platform yet.
+    The "Comment" feature and associated permission have not been implemented on our platform yet.
 
 # Relevance to Entity Sharing and Organizations
 
