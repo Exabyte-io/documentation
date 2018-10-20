@@ -13,7 +13,7 @@ The image below highlights the **access points**, within the broader [Account Pr
 
 The "Explorer" interface offers a convenient way of visualizing graphically the contents of the various [Account-owned Entity Collections](/accounts/collections.md) under our platform, and to perform [actions](../actions/overview.md) upon such collection items. Everything that concerns this common component of the user interface is explained in this [page](/entities-general/ui/explorer.md).
 
-The Explorer interface for each entity type can be accessed through a dedicated [tab within the user interface](/ui/tabs-navigator.md), as depicted in the image above.
+The Explorer interface for each entity type can be accessed through a dedicated [tab within the user interface](/ui/specific/tabs-navigator.md), as depicted in the image above.
 
 # 2. Entity Designer
 

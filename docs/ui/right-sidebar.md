@@ -43,3 +43,11 @@ The "Billing and Payments" link <i class="zmdi zmdi-card zmdi-hc-border"></i> re
 # Terminal and Remote Desktop
 
 The Terminal and Remote Desktop functionalities provide alternative methods for accessing your account. More information about such practices can be retrieved [here](../../compute/cli/login.md).
+
+# Invite a Friend
+
+The "Invite a Friend" option  <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> lets users send an email invitation to a friend or colleague who shares similar interests and might also benefit from registering and using our platform product. Both the sender and recipient of the email invitation will get $10 in the form of Account balance credit when the new registration request is approved.
+
+# Logout
+
+The final "Logout" option <i class="zmdi zmdi-power zmdi-hc-border"></i> under the right-hand sidebar should be pressed once all operations under the current Account have been completed, and the current user wishes to let other users login to the platform with their own combination of username/email and password credentials.

@@ -4,7 +4,7 @@ The "Account Profile" page represents the core command centre of any Account pre
 
 The Account Profile page can be subdivided into several interface components, some of which are related to the general management of the account in a similar spirit to those accessible [elsewhere](overview.md), and some others which are instead related to [Entities](/entities-general/overview.md).
  
- These interface components are highlighted in the image below. The position of the "Account Summary", displaying information about the Account's name, username and date of creation, is also exhibited. The reader is referred to the list ensuing the image for references to the documentation pages explaining each component in turn:
+ These interface components are highlighted in the image below. The position of the **"Account Summary"**, displaying information about the Account's name, username and date of creation, is also exhibited. The reader is referred to the list ensuing the image for references to the documentation pages explaining each component in turn:
 
 > Note: for the case of organization accounts, some of these interface components are visible only to the Account Owners and Administrators, and not to regular members. 
 
@@ -30,4 +30,4 @@ General Accounts preferences and Settings, such as the account's biographical in
 
 # Components Related to Entities 
 
-The  "Account Profile" page furthermore allows the various Account-owned Entity Collections to be accessed from their associated ["Entity Tabs"](/ui/tabs-navigator.md), located at the top of the page. Each tab leads to the ["Explorer Interface"](/entities-general/ui/explorer.md) for the corresponding [entity type](/entities-general/overview.md). 
+The  "Account Profile" page furthermore allows the various Account-owned Entity Collections to be accessed from their associated ["Entity Tabs"](/ui/specific/tabs-navigator.md), located at the top of the page. Each tab leads to the ["Explorer Interface"](/entities-general/ui/explorer.md) for the corresponding [entity type](/entities-general/overview.md). 
