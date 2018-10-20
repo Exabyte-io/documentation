@@ -49,14 +49,15 @@ pages:
 # COMMON UI COMPONENTS
     - Interface Components:
         - Overview:                                      ui/overview.md
-        - Header:                                        ui/header-footer.md
+        - Header and Footer:                             ui/header-footer.md
         - Left-hand Sidebar:                             ui/left-sidebar.md
         - Right-hand Sidebar:                            ui/right-sidebar.md
-        - Footer:                                        ui/header-footer.md
         - Support:                                       ui/support.md
         - Specific:
-            - Navigation:                                ui/specific/navigation.md
+            - Homepage Navigation:                       ui/specific/homepage.md
             - Dashboard:                                 ui/specific/dashboard.md
+            - Tabs Navigation:                           ui/specific/tabs-navigator.md
+
 
 # ACCOUNTS
     - Accounts:
@@ -79,6 +80,7 @@ pages:
             # List of other pages in this subsection
             - Overview:                                  accounts/ui/overview.md
             - Profile Page:                              accounts/ui/profile-page.md
+            - Account Badge:                             accounts/ui/account-badge.md
             - Switcher:                                  accounts/ui/switcher.md
             # Accounts explorer under left-sidebar
             - Explorer:                                  accounts/ui/explorer.md
