@@ -21,5 +21,5 @@ To create any type of new entity, the corresponding "Designer" interface needs t
 
 # 3. Entity Viewer
 
-When an existing entity simply needs to be inspected to verify its contents, without the need to apply any changes to its current form, then it may simply be opened from the entity collection. This allows the entity to be viewed under the corresponding "Viewer" component of the user interface, documented [here](viewer.md).
+When an existing entity needs to be inspected to verify its contents, without the need to apply any changes to its current form, then it may be opened from the entity collection. This allows the entity to be viewed under the corresponding "Viewer" component of the user interface, documented [here](viewer.md).
 
