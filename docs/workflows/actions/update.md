@@ -2,7 +2,7 @@
 
 As we explain [here](../bank.md), some of the most commonly encountered types of atomistic calculations in materials science have already been pre-packaged in the workflows "Bank", and can be imported directly by the user into the account-owned collection. When it happens the link between the Bank and user-owned item is retained.
 
-Sometimes we the Bank workflows are updated by our personnel. The user who had already imported a previous version of a particular Bank workflow can "Pull" the updates to his/her account-owned entry. 
+Sometimes the Bank workflows are updated by our personnel. The user who had already imported a previous version of a particular Bank workflow can "Pull" the updates to his/her account-owned entry. 
 
 # How to spot outdated workflows?
 

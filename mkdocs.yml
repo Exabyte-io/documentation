@@ -165,6 +165,7 @@ pages:
             - Overview:                                 entities-general/actions/overview.md
             ###################### Go through each common entity action in turn
             - Search:                                   entities-general/actions/search.md
+            - Advanced Search:                          entities-general/actions/advanced-search.md
             - Open:                                     entities-general/actions/open-edit.md
             - Clone:                                    entities-general/actions/clone.md
             - Delete:                                   entities-general/actions/delete.md
@@ -178,7 +179,7 @@ pages:
             # Specific info about import from bank procedure only
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             # Specific info about procedure to create sets only
-            - Sets > Create / Delete:                            entities-general/actions/create-sets.md
+            - Sets > Create / Delete:                   entities-general/actions/create-sets.md
             # Specific info about move to sets procedure only
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
 
@@ -187,21 +188,20 @@ pages:
 # ENTITIES - SPECIFIC
     - Materials:
         - Overview:                                     materials/overview.md
+        - Data:                                         materials/data.md
+        - Properties:                                   materials/properties.md
+        - Bank:                                         materials/bank.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
             - Viewer:                                   materials/ui/viewer.md
-        - Data:                                         materials/data.md
-        - Properties:                                   materials/properties.md
-        - Bank:                                         materials/bank.md
+            - Properties:                               materials/ui/properties.md
         - Actions:
+            - Overview:                                 materials/actions/overview.md
             - Import:                                   materials/actions/import.md
             - Upload:                                   materials/actions/upload.md
-            - Advanced Search:                          materials/actions/advanced-search.md
-            # TODO: MERGE INTO BANK PAGE or remove
-            - Search & Compare:                         materials/actions/search-compare.md
             - Set default:                              materials/actions/set-default.md
-            - Create:                                   materials/actions/create.md
+            - Bank > Copy from:                         materials/actions/copy-bank.md
 
     - Materials Designer:
         - Overview:                                     materials-designer/overview.md
@@ -232,6 +232,7 @@ pages:
 
     - Workflows:
         - Overview:                                     workflows/overview.md
+        - Bank:                                         workflows/bank.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
             - Designer:                                 workflow-designer/general-overview.md
@@ -243,9 +244,8 @@ pages:
             - Templates:                                workflows/data/templates.md
             - Jobs:                                     workflows/data/jobs.md
             - Maps:                                     workflows/data/maps.md
-        - Bank:                                         workflows/bank.md
         - Actions:
-            - Create:                                   workflows/actions/create.md
+            - Overview:                                 workflows/actions/overview.md
             - Update:                                   workflows/actions/update.md
             - Set default:                              workflows/actions/set-default.md
         - Add-ons:

@@ -1,5 +1,11 @@
 # Create New Entities
 
-The creation of new entities in the corresponding Account-owned Collection can typically be performed through the "Create" button <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> located under the top-right [Actions Toolbar of the Explorer Interface](../ui/explorer.md) for that entity type.
+The creation of a new entity in the relevant Account-owned collection can be performed through the "Create" button <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i>, located in the top-right actions toolbar of the [Explorer Interface](../ui/explorer.md#action-related-components).
 
-Clicking on this "Create" button will lead the user to the corresponding  [Entity Designer Interface](../ui/designer.md) for designing and conceiving a new entity of that particular type from scratch. 
+This leads the user to the corresponding  [Entity Designer](../ui/designer.md) for conceiving a new entity from scratch. 
+
+# Animation 
+
+In the example animation below, we take workflows as our case study. We demonstrate how to enter the Workflow Designer starting from the account-owned collection:
+
+<img data-gifffer="/images/create-new-workflow.gif" />
