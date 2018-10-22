@@ -8,7 +8,7 @@ The "Account Badge" is always present at the top-right corner of any page under 
  
 # Example of Personal Account Badge
  
-An example of Account Badge for an Account of personal type is displayed in its right-hand location within the main [header bar](/ui/header-footer.md) of the user interface in the image below. In this example, the personal Account belongs to a platform user called "John Doe": 
+An example of Account Badge for an Account of personal type is displayed in its right-hand location within the main [header bar](/ui/header-footer.md) in the image below. In this example, the personal Account belongs to a platform user called "John Doe": 
  
  ![example personal badge](/images/example-personal-badge.png "example personal badge")
  
