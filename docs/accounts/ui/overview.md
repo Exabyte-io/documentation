@@ -1,6 +1,6 @@
 # Account-related User Interface Components
 
-Different components are available under the general [interface of our platform](/ui/universal/ui-overview.md) allowing user to inspect or edit information pertaining to Accounts. Each of these components is reviewed below, based on the location they can be accessed from
+Different components are available under the general [interface of our platform](/ui/universal/ui-overview.md) allowing user to inspect or edit information pertaining to Accounts. Each of these components is reviewed below, based on the location they can be accessed from:
 
 # Account Profile
 

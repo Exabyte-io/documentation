@@ -1,8 +1,10 @@
-# Explorer interface of the Materials collection page
+# Materials Explorer Interface 
 
-The features of the main Explorer user interface which are specific to the Materials page concern particularly the type of quantities and properties that can be displayed under the right-hand tabular section of the interface, highlighted in the image below. This image also explains how the available quantities or properties can be made visible in the interface under their corresponding columns, through the ticking of their corresponding entries in the top three-dotted [drop-down menu](/entities-general/ui/explorer.md):
+There are features of the main Explorer user interface which are specific to the materials collection, relative to the [general aspects](/entities-general/ui/explorer.md). These concern the type of computed materials properties that can be displayed under the right-hand tabular section of the interface, highlighted in the image below:
 
 ![Materials Explorer Interface](/images/materials-explorer-interface.png "Materials Explorer Interface")
 
-In the above image, in particular, the properties exclusive to Materials are the ones which have been ticked already under the drop-down menu.
+# Materials-specific Properties
+
+In the above image, the properties exclusive to materials have been ticked under the [Columns Selector drop-down](/entities-general/ui/explorer.md#columns-selector). These materials properties are reviewed in more detail in a [dedicated page](../properties.md).
 

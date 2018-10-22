@@ -1,17 +1,21 @@
 This section contains information about how we store materials data and the individual properties.
 
-# Explorer Interface
+# User Interface
 
-Specific features pertaining to the Explorer Interface of the Materials collection are explained [here](ui/explorer.md).
+Specific features pertaining to the **Explorer Interface** of the Materials collection are explained [here](ui/explorer.md). The **Materials Designer** is introduced [in this other page](/materials-designer/overview.md), whereas its differences with respect to the **Viewer Interface** relevant for materials are highlighted [separately](ui/viewer.md).
 
 # Data
 
-[Data](data.md) section contains example JSON representation of materials and its detailed explanation.
+The [Data](data.md) section contains an example of JSON representation of a material, with its detailed explanation.
 
 # Properties
 
-[Properties](properties.md) section explains the general classification and contains examples of characteristic properties.
+The [Properties](properties.md) section explains the general classification and contains examples of characteristic properties.
 
 # Actions
 
-Actions section explains and provides visual examples of actions users can perform on materials.
+The Actions section explains and provides visual examples of actions that users can perform on materials. These actions are introduced [in the following page](actions/overview.md).
+
+# Importing from the Bank
+
+Instructions on how to operate the Materials-specific Bank repository can be retrieved [here](bank.md). 

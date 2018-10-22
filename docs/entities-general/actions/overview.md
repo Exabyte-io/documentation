@@ -1,42 +1,46 @@
 # Common Entity Actions
 
-Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each corresponding type of action:
+Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each type of action:
 
 # [Create New Entity](create.md)
 
-In order to create new entities, [this general procedure](create-sets.md) can be followed.
+In order to create new entities, [this general procedure](create-sets.md) is to be followed.
 
-# [Modify Name](../actions/name.md)
+# [Modify Name](name.md)
 
-The name of each entity can be changed according to [these instructions](../actions/name.md).
+The name of each entity can be changed according to [these instructions](name.md).
 
-# [Edit Metadata](../actions/metadata.md)
+# [Edit Metadata](metadata.md)
 
-Each entity can be adorned with descriptive metadata, in the form of text, tags and other formats, for ease of referencing and retrieval when performing general searches. We explain how to add such metadata [here](../actions/metadata.md).
+Each entity can have descriptive metadata added to it, in the form of text, tags and other formats. This is typically done for ease of referencing and retrieval of the entity when performing general searches. We explain how to add such metadata [here](metadata.md).
 
-# [Set Default](../actions/set-default.md)
+# [Set Default](set-default.md)
 
-In each account-owned collection, any entry can be assigned the "Default" status as described [here](../actions/set-default.md).
+In each account-owned collection, an entry can be assigned the "Default" status as described [here](set-default.md).
 
-# [Delete](../actions/delete.md)
+# [Delete](delete.md)
 
-The user can delete an Entity by following the procedure outlined [here](../actions/delete.md).
+The user can delete an entity by following the procedure outlined [here](delete.md).
 
-# [Clone / Copy](../actions/clone.md)
+# [Clone / Copy](clone.md)
 
-Each Entity can also be cloned or copied following [these instructions](../actions/clone.md).
+Each entity can be cloned (or copied) following [these instructions](clone.md).
 
-# [Open](../actions/open-edit.md)
+# [Open](open-edit.md)
 
-Opening an entry corresponding to a particular Entity in a the list in order to edit its content can be achieved [as follows](../actions/open-edit.md).
+Opening an entry in an account-owned collection of entities, to inspect or adjust its contents, can be achieved [as follows](open-edit.md).
 
-# [Search](../actions/search.md)
+# [Search](search.md)
 
-The user can perform general searches to retrieve particular Entities of interest through [this procedure](../actions/search.md).
+The user can perform general searches to retrieve particular entities of interest through [this procedure](search.md).
+
+# [Advanced Search](advanced-search.md)
+
+More advanced search functionality than that mentioned above is available for some particular types of entities, as explained [in a separate page](advanced-search.md).
 
 # [Copy from Bank](copy-bank.md)
 
-Bankable Entities can be copied (or imported) from their respective Banks into the Account-owned collections following the general instructions contained [here](copy-bank.md).
+Bankable entities can be copied (or imported) from their respective Banks into the Account-owned collections, following the general instructions contained [here](copy-bank.md).
 
 # [Create / Delete Sets](create-sets.md)
 
@@ -48,4 +52,4 @@ Entities can be moved into Sets as outlined in [this page](move-to-sets.md).
 
 # [Sharing](/collaboration/sharing/ui.md)
 
-Entities can finally be shared with other Exabyte users, or made to be publicly visible on the world wide web, by following [these instructions](/collaboration/sharing/ui.md).
+Entities can finally be shared with other Exabyte users, or made publicly visible on the world wide web, by following [these instructions](/collaboration/sharing/ui.md).
