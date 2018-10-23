@@ -16,13 +16,13 @@ Firstly, the required information about the name and description of the new team
 
 ## Entity-related Permissions
 
-The adequate entity [permissions](/entities-general/permissions.md) can then be set under the bottom drop-down menu. They are granted to all future team members in relation to [assigned](../team/add-remove-entity.md) entities. One or multiple permissions between "Read", "Edit", "Execute" and "Comment" can be selected in this way. 
+The adequate entity [permissions](/entities-general/permissions.md) can then be set under the bottom drop-down menu. They are granted to future team members in relation to [assigned](../team/add-remove-entity.md) entities. One or multiple permissions between "Read", "Edit", "Execute" and "Comment" can be selected in this way. 
 
 These options can be modified at any moment following team creation  [as explained here](../team/edit-permissions.md).
 
 ## Finalize Creation
 
-Once all required information has been inserted, the bottom `Create` button should be clicked. The new Team  appears as a distinct new entry under Teams Explorer. The Owner or Administrators can now proceed to [adding new members](../team/add-remove-member.md) and [assigning new entities](../team/add-remove-entity.md).
+Once the required information has been inserted, the bottom `Create` button should be clicked. The new Team  appears as a new entry under Teams Explorer. The Owner or Administrators can now proceed to [adding new members](../team/add-remove-member.md) and [assigning new entities](../team/add-remove-entity.md).
 
 !!!note "Note: Organization-wide visibility"
     The Team-related information is visible to all organization members.

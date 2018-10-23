@@ -6,11 +6,11 @@ Information about entity-related permissions, and about Account-related Access L
 
 ## Open People Explorer
 
-In order to add new members, the Owner or Administrator should first navigate to the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i> under the Organization's  [Profile page](/accounts/ui/profile-page.md). Here, the corresponding [People Explorer](../../ui/people-explorer.md) can be found, showing all current members of the Organization. 
+In order to add new members, the Owner or Administrator should first navigate to the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i> under the Organization's  [Profile page](/accounts/ui/profile-page.md). Here, the corresponding [People Explorer](../../ui/people-explorer.md) can be found, showing the current members of the Organization. 
 
 ## Open Accounts Explorer
 
-The  "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page, under the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar), should be clicked upon in order to access the list of all users of the platform. 
+The  "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page, under the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar), should be clicked upon in order to access the list of users of the platform. 
 
 The layout of this list is similar to that of [Accounts Explorer](/accounts/ui/explorer.md), except that only personal Accounts are listed this time, since Organizations cannot be added to other Organizations. 
 
@@ -20,7 +20,7 @@ Any desired number of users can be selected by ticking their corresponding left-
 
 ## Animation
 
-All the above steps  are summarized in the demonstration below, where we add three new random users to our Organization called "Example":
+The above steps  are summarized in the demonstration below, where we add three new random users to our Organization called "Example":
 
 <img data-gifffer="/images/organization-add-user.gif">
 
