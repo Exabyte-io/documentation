@@ -8,4 +8,4 @@ Any member of an Organization can create an entity of any [type](/entities-gener
 
 # Team Assignment 
 
-Once created, the entity is then automatically assigned to ALL teams that the user belongs to, including the read-only ones.
+Once created, the entity is then automatically assigned to the teams that the user belongs to, including the read-only ones.
