@@ -10,11 +10,11 @@ The [following page](/entities-general/permissions.md) lists the available types
 
 # Add Other Accounts
 
-An additional feature offered by the actions toolbar is the possibility to add other Accounts (of both personal and Organizational types) to the list of sharing options. 
+An additional feature offered by the actions toolbar is the possibility to add other Accounts to the list of sharing options. 
 
 ## Open Accounts Explorer
 
-To achieve this, the "Add" icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> should be clicked. The user is then be presented with a list of all Accounts that exist on our platform, in a layout similar to that of [Accounts Explorer](/accounts/ui/explorer.md) as shown in the example below. Here, the total number of entities of each type created under the Accounts is also indicated:
+To achieve this, the "Add" icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> should be clicked. The user is then presented with a list of all Accounts that exist on our platform, in a layout similar to that of [Accounts Explorer](/accounts/ui/explorer.md) as shown in the example below. Here, the total number of entities of each type created under the Accounts is also indicated:
 
 ![List Accounts](/images/list-accounts.png "List Accounts")
 
