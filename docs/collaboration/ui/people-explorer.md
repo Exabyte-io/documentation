@@ -12,6 +12,8 @@ Some of their differences are worth noticing:
 
 # Organization People Explorer
 
+> "Organization People Explorer" or "Organization Members Explorer" can be used interchangeably.
+
 In the image below, we start from the People Explorer of an Organization called "Exabyte.io", listing its six members:
 
 ![Organization People Explorer](/images/organization-people-explorer.png "Organization People Explorer")
@@ -27,6 +29,8 @@ The members who have the titles of "Owner" or "Admin" attributed to them are ind
 # Team People Explorer
 
 We then click on one of the Teams listed under [Teams Explorer](teams-explorer.md), to gain access to  its corresponding [Team-specific Page](team-pages.md). The "Team People Explorer" can be found under the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. 
+
+> "Team People Explorer" or "Team Members Explorer" can be used interchangeably.
 
 In the image below for example, the members of the Team "Semiconductor band gaps write", contained in the aforementioned "Exabyte.io" Organization, are listed. Only four people are listed this time, a subset of the original six:
 

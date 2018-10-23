@@ -1,6 +1,6 @@
 # Entity Sharing
 
-An entity item of any [type](/entities-general/overview.md) can be shared with other users according to different levels of accessibility. 
+An [entity](/entities-general/overview.md) item can be shared with other users according to different levels of accessibility. 
 
 The sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> is located under either the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar), or the [actions drop-down](/entities-general/ui/explorer.md#actions-dropdown) at the right-end of each entry in the entity collection. 
 
@@ -32,7 +32,7 @@ The central panel offers a table summarizing the [permissions](/entities-general
  
 # Sharing Information Under Left Sidebar
 
-The [left-hand sidebar](/ui/universal/left-sidebar.md) offers access to a set of central repositories related to shared entities:
+The [left-hand sidebar](/ui/universal/left-sidebar.md) offers access to features related to shared entities, as explained below.
 
 ## Accounts Explorer
 

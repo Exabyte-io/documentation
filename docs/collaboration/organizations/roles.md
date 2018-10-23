@@ -22,4 +22,4 @@ Members of both regular and administrative level are collectively referred to as
 
 # Organizations vs. Personal Accounts
 
-The concept of Organization can be compared to **Personal Accounts**, an alternative account **type** associated with every user of our platform and created at the moment of registration. The user is by definition always the sole member of his own personal account, and he is consequently also the owner and administrator thereof.
+The concept of Organization can be compared to **Personal Accounts**, an alternative [Account type](/accounts/overview.md) associated with every user of our platform and created at the moment of registration. The user is by definition always the sole member of his own personal account, and he is consequently also the owner and administrator thereof.
