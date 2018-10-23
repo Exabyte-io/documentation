@@ -1,22 +1,22 @@
 # Teams Explorer 
 
-## Open Teams Explorer
+## Open Interface
 
-By clicking on the "Teams" tab <i class="zmdi zmdi-accounts zmdi-hc-border"></i> under the Organization profile page, the user will be presented with the complete list of all [Teams](../organizations/teams.md) contained within the Organization under consideration, displayed in the standard [Explorer-type interface](/entities-general/ui/explorer.md) commonly encountered across our platform.
+Click on the "Teams" tab <i class="zmdi zmdi-accounts zmdi-hc-border"></i> under the Organization's [profile page](/accounts/ui/profile-page.md). The list of all its constituent [Teams](../organizations/teams.md) appears, displayed in the standard [Explorer-type interface](/entities-general/ui/explorer.md).
  
-An example of appearance of this "Teams Explorer" interface page is provided in the image displayed below:
+The appearance of this "Teams Explorer" page is portrayed below:
 
 ![Teams Explorer](/images/teams-explorer.png "Teams Explorer")
 
-## Central Table of Interface: Team Members and Projects
+## Central Table: Members and Projects
 
-It can be noticed from the above image that, under each entry item among the list of teams, information about both the total number of team members and total number of projects assigned to each team is exhibited in the central table of the "Teams Explorer" interface. 
+Information about the total number of members and projects assigned to each team is exhibited in the central table. 
 
 # Team-specific Pages
 
-Team-specific pages for every Team contained in the Organization can be accessed by opening any entry listed under the Teams Explorer, as explained in [this page](team-pages.md).
+[Team-specific pages](team-pages.md) can be accessed by [opening](/entities-general/actions/open-edit.md) the corresponding entry.
 
 # Create or Delete Teams
 
-The action of creating or deleting Teams from the corresponding parent Organization, which can be performed by the organizational Owner or Administrators, is explained [here](../actions/organization/create-delete-team.md).
+The action of creating or deleting Teams is explained [here](../actions/organization/create-delete-team.md).
 
