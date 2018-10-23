@@ -1,41 +1,45 @@
 # People Explorer
  
-Under both the wider Organizational Account Profile page, and each [Team-specific page](team-pages.md), a "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i> is present towards the top of the page. Clicking on this tab from either of these two locations will redirect the user to, respectively, a list of all Organization members (People), and to team-specific lists of team members. 
+Both the Organizational [Profile page](/accounts/ui/profile-page.md), and each [Team-specific page](team-pages.md), have a "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on it redirects the user to, respectively, a list of all Organization members (People), and to team-specific lists. 
 
-Both lists are presented to the user under the typical [Explorer-type interface](/entities-general/ui/explorer.md) of our platform. For this reason, we refer to both of these interfaces as the "People Explorer".
+These lists are presented under the [Explorer interface](/entities-general/ui/explorer.md) of our platform. Hence their name, "People Explorer".
 
-# Organization vs Teams
+# Organization vs. Teams
 
-When drawing a distinction between the list of [members of the whole Organization](../actions/organization/add-remove-member.md), and the list of [members of any of its constituent Teams](../actions/team/add-remove-member.md) (which is necessarily a **subset** of the former list), we shall use the terms "Organization People Explorer" and "Team People Explorer" respectively. 
+A distinction must be drawn between the list of [Organization members](../actions/organization/add-remove-member.md), and those of [its constituent Teams](../actions/team/add-remove-member.md), which are necessarily **subsets** of the former. We shall use the terms "Organization People Explorer" and "Team People Explorer" respectively. 
 
-Despite both explorer interfaces having most of their features in common, a few differences are worth pointing out, as discussed in the following sections:
+Some of their differences are worth noticing:
 
 # Organization People Explorer
 
-In the example image below, we start from the People Explorer interface under the profile page of an Organization called "Exabyte.io". This "Organization People Explorer" interface lists all members of this particular Organization, of which there are six in total as shown:
+> "Organization People Explorer" or "Organization Members Explorer" can be used interchangeably.
+
+In the image below, we start from the People Explorer of an Organization called "Exabyte.io", listing its six members:
 
 ![Organization People Explorer](/images/organization-people-explorer.png "Organization People Explorer")
 
-## Central Table of Interface: Owner and Admin Roles
+## Central Table: Owner and Admin Roles
 
-It can be noticed from the above image that an indication of which members have the titles of "Owner" or "Admin" attributed to them is also present in the central table of the Organization People Explorer. In this example, the user "exadmin" is the Owner and consequently also an Administrator of the Organization, and moreover it can be deduced that he is the only user out of the whole Organization with Administrative privileges. 
+The members who have the titles of "Owner" or "Admin" attributed to them are indicated in the central table. In the above example, the user "exadmin" is the sole Owner and Administrator. 
 
-## Organization-related Actions
+## Actions
 
-The various administrative Actions concerning the Members of an Organization, such as their addition or removal from the Organization as well as the appointment or revoking of Administrators, can be executed under the Organization's corresponding People Explorer interface being currently discussed, as described [in this page](../actions/organization/overview.md).
+[Administrative Actions](../actions/organization/overview.md) concerning the Organization originate from here.
 
 # Team People Explorer
 
-If we then click on one of the Teams included in the parent Organization, listed under the [Teams Explorer](teams-explorer.md) interface of the Organization, we will access its corresponding [Team-specific Page](team-pages.md). Under this latter page, the "Team People Explorer" interface under the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i> can be retrieved. 
+We then click on one of the Teams listed under [Teams Explorer](teams-explorer.md), to gain access to  its corresponding [Team-specific Page](team-pages.md). The "Team People Explorer" can be found under the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. 
 
-For example, in the image below, the members of the Team "Semiconductor band gaps write" contained in the wider "Exabyte.io" Organization mentioned previously are listed under the Team's corresponding People Explorer interface. It can be deduced that there are only four Team members listed this time, that is a subset of the original six members of the wider parent Organization:
+> "Team People Explorer" or "Team Members Explorer" can be used interchangeably.
+
+In the image below for example, the members of the Team "Semiconductor band gaps write", contained in the aforementioned "Exabyte.io" Organization, are listed. Only four people are listed this time, a subset of the original six:
 
 ![Team People Explorer](/images/team-people-explorer.png "Team People Explorer")
 
-## Central Table of Interface: Email Addresses
+## Central Table: Email Addresses
 
-Furthermore, the  information displayed in the central table of the Team People Explorer this time consists in the email addresses of the Team members. No information about Administrator or Owner roles is necessary in the context of Teams, since Teams don't have independent Administrative members but rather inherit such titles directly from the parent Organization.
+The central table displays the email addresses of the Team members. No information about the Owner or Administrators is necessary this time, since such titles are inherited from the parent Organization.
 
-## Actions Related to Team Members
+## Actions 
 
-The Team People Explorer interface gives the Owner or Administrators of the parent Organization the possibility to add or remove members to that particular Team, as explained [in this page](../actions/team/add-remove-member.md).
+From here, members can be added or removed to/from Teams, as explained [in this page](../actions/team/add-remove-member.md).
