@@ -1,35 +1,35 @@
-# Entity permissions
+# Entity Permissions
 
-Permissions are sets of **rules** which define which types of actions are **allowed** to be performed on an entity by an account. Examples of actions that are regulated by permissions include inspection, manipulation and/or modification of the entity by the various Accounts in our platform.
+Permissions are **rules** which define which types of actions are **allowed** to be performed on an entity by an Account. Examples of actions that are regulated by permissions include inspection, manipulation and/or modification.
 
-The Account which created (and which therefore [owns](ownership.md)) an entity is always automatically granted full permissions to it, among the list of permission types outlined in the remainder of the present documentation page:
+The Account which created (and which therefore [owns](ownership.md)) an entity is granted **full** permissions to it.
 
 # Types of Permissions
 
-The following set of permission types are offered on our platform: 
+The following permission types are offered on our platform: 
 
-## Read Permission
+## Read 
 
-To allow other Accounts to simply visualize the contents of the entity under consideration, without granting them the opportunity to bring about changes or execute any of the entity's computational tasks, the "Read" <i class="zmdi zmdi-menu zmdi-hc-border"></i> permission option should be chosen and applied.
+Choose the "Read" <i class="zmdi zmdi-menu zmdi-hc-border"></i>  option if Accounts should be limited to inspecting the contents of the entity, without making any changes.
 
-## Execute Permission
+## Execute 
 
-The "Execute" <i class="zmdi zmdi-play zmdi-hc-border"></i> permission, on the other hand, gives Accounts the possibility to execute the computational tasks associated with the  entity upon which the permission is being applied.
+"Execute" <i class="zmdi zmdi-play zmdi-hc-border"></i> gives Accounts the possibility to run the computational tasks associated with the entity.
 
-## Edit Permission
+## Edit 
 
-The "Edit" <i class="zmdi zmdi-edit zmdi-hc-border"></i> permission grants the possibility to make modifications to the entity.
+The "Edit" <i class="zmdi zmdi-edit zmdi-hc-border"></i> option authorizes the modification of the entity.
 
-## Comment Permission
+## Comment 
 
-Finally, the "Comment" permission allows Accounts to write comments under the given entity, in a format and spirit similar to popular social network platforms.
+Finally, the "Comment" permission allows Accounts to write comments under the given entity, in a format and spirit similar to social network platforms.
 
 !!!note "Note: feature not implemented yet"
-    The "Comment" feature and associated permission have not been implemented on our platform yet.
+    The "Comment" feature has not been implemented on our platform yet.
 
 # Relevance to Entity Sharing and Organizations
 
-The concept of permissions is particularly important and resourceful in the context of [entity sharing](/collaboration/sharing/ui.md) between accounts, and in the case of [assignment of entities]((/collaboration/actions/team/add-remove-entity.md)) to [Teams](/collaboration/organizations/teams.md) within the spectrum of Organization-related [actions](/collaboration/actions/organization/overview.md).
+Permissions are important in the context of [entity sharing](/collaboration/sharing/ui.md) between accounts, and during the [assignment of entities]((/collaboration/actions/team/add-remove-entity.md)) to [Teams](/collaboration/organizations/teams.md)  within an [Organization](/collaboration/organizations/overview.md).
 
 !!!note  "Note: analogy with Google Drive functionality"
     Similarly to [Access Levels](/collaboration/sharing/access-levels.md), the permission types included on our platform mirror the functionality of Google Drive files and folders  closely [[1](#links)]. 
