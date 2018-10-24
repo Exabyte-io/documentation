@@ -1,17 +1,12 @@
 # Organizational Actions
-
-!!!warning "Warning: content with restricted access"
-    The information contained under the present documentation page is relevant for Owners or Administrators, since only they have sufficient rights to make the appropriate changes.
     
 A  set of actions can be performed by the [Owner or Administrators](../../organizations/roles.md) to manage their [Organization](../../organizations/overview.md). They are listed below with links to their respective documentation pages:
 
 # Create Organization
 
-The user with administrative rights can follow [these instructions](create.md) to create a new Organization.
+The user with administrative rights can follow [these instructions](create.md) to create a new Organization. 
 
-!!!note "Note: disabled delete feature"
-    Please [contact us](/ui/universal/support.md) if you would like to delete an Organization which you own.
-
+Please [contact us](/ui/universal/support.md) if you would like to delete an Organization that you own.
 
 # Add or Remove Members
 
@@ -27,3 +22,5 @@ Finally, [Teams](../../organizations/teams.md) can be created or deleted [as fol
 
 The following [Team-related actions](../team/overview.md) are also available.
 
+!!!warning "Warning: content with restricted access"
+    The information contained under the present page is relevant for [Owners or Administrators](../../organizations/roles.md), since only they have sufficient rights to make the appropriate changes.

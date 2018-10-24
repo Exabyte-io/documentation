@@ -4,7 +4,7 @@ The list of existing accounts opened in our platform to date is accessible from 
 
 # Viewing Account Information
 
-By clicking on an item in the Accounts Explorer, the user will be able to inspect the corresponding Account's information, including its [Bio](bio.md), as well as the entities created under that Account which have been accessible to the user account or made [Public](collaboration/sharing/access-levels.md).
+Clicking on an item in the Accounts Explorer, allows user to inspect the corresponding Account's information, including its [Bio](bio.md), as well as the entities created under that Account which have been accessible to the user account or made [Public](collaboration/sharing/access-levels.md).
 
 # Example
 

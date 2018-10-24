@@ -1,16 +1,18 @@
 # Entity Sharing
 
-An [entity](/entities-general/overview.md) item can be shared with other users according to different levels of accessibility. 
+An [entity](/entities-general/overview.md) can be shared between accounts. This page explains the user interface components employed during this procedure.
 
-The sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> is located under either the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar), or the [actions drop-down](/entities-general/ui/explorer.md#actions-dropdown) at the right-end of each entry in the entity collection. 
+# "Share" button
+
+The share button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> is located under either the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar), or the [actions drop-down](/entities-general/ui/explorer.md#actions-dropdown) at the right-end of each entry in the entity collection. 
 
 # The Sharing Settings Dialog
 
-Clicking on the sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> for a selected entity redirects the user to the "Sharing Settings" dialog. This dialog contains the components highlighted in the image below, presented in a standard [Explorer-type Interface](/entities-general/ui/explorer.md):
+Clicking on the sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> after selecting one or multiple entities opens the "Sharing Settings" dialog. This dialog contains the components highlighted in the image below, presented in a standard [Explorer-type Interface](/entities-general/ui/explorer.md):
 
 ![Sharing Settings](/images/sharing-settings.png "Sharing Settings")
 
-# 1. Filter bar
+# 1. Search/Filter bar
 
 The available Sharing Options can be filtered down to a narrower selection through the top [search bar](/entities-general/actions/search.md) <i class="zmdi zmdi-search zmdi-hc-border"></i>.
 

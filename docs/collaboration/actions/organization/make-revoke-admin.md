@@ -1,14 +1,14 @@
 # Appoint Administrator
 
-The Owner or any existing Administrators can elevate a Regular Member of the Organization to the role of Administrator. 
+The [Owner or any existing Administrators](../../organizations/roles.md) can elevate a regular member to the role of an Administrator. 
 
 ## Open People Explorer
 
-The Owner/Administrator should first navigate to the Organization-wide [People Explorer](../../ui/people-explorer.md), and then open the [actions drop-down](/entities-general/ui/explorer.md#actions-dropdown) at the right-end of the candidate member. 
+First, navigate to the Organization-wide [People Explorer](../../ui/people-explorer.md), and then open the [actions drop-down](/entities-general/ui/explorer.md#actions-dropdown) at the right-end of the candidate member. 
 
-## Make Member Admin
+## Make Admin
 
-Here, the option `Make admin` <i class="zmdi zmdi-chevron-up zmdi-hc-border"></i> should be selected. The chosen member is consequently  appointed as a new Administrator, as indicated by the tick appearing under the "Admin" column of the central table.
+Here, the option `Make admin` <i class="zmdi zmdi-chevron-up zmdi-hc-border"></i> should be selected. The chosen member is consequently  appointed as a new Administrator, as indicated by the tick appearing under the "Admin" column of the table.
 
 ## Animation
 
@@ -26,4 +26,3 @@ Similarly, any Administrator can have his title revoked through the `Revoke admi
 Below, we revoke the title of Administrator to the same member considered in the previous animation:
 
 <img data-gifffer="/images/organization-revoke-admin.gif">
-

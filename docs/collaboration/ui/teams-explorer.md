@@ -8,15 +8,14 @@ The appearance of this "Teams Explorer" page is portrayed below:
 
 ![Teams Explorer](/images/teams-explorer.png "Teams Explorer")
 
-## Central Table: Members and Projects
+## Columns: Members and Projects
 
 Information about the number of members and projects assigned to each team is exhibited in the central table. 
 
-# Team-specific Pages
+# Team Pages
 
-[Team-specific pages](team-pages.md) can be accessed by [opening](/entities-general/actions/open-edit.md) the corresponding entry.
+A page for each team, or [Team Page](team-page.md) can be accessed by [opening](/entities-general/actions/open-edit.md) the corresponding entry.
 
 # Create or Delete Teams
 
 The action of creating or deleting Teams is explained [here](../actions/organization/create-delete-team.md).
-
