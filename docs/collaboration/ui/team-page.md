@@ -1,4 +1,4 @@
-# Team-specific Pages
+# Team Page
 
 ## Open Page
 
@@ -8,7 +8,7 @@ The user can [open](/entities-general/actions/open-edit.md) any entry listed und
 
 ## Summary
 
-A summary of the Team's name, description and current [permissions levels](/entities-general/permissions.md) are displayed on top, as highlighted in the above image. 
+Team name, description and current [permissions levels](/entities-general/permissions.md) are displayed on top, as highlighted in the above image. 
 
 ## Tabs
 
@@ -23,5 +23,3 @@ The list of all Team members can be found under the ["People" tab](people-explor
 # Actions
 
 Most actions related to Teams originate from their specific pages. They are documented [here](../actions/team/overview.md). 
-
-

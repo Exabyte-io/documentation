@@ -113,7 +113,7 @@ pages:
         - User Interface:
             - Overview:                                  collaboration/ui/overview.md
             - Teams Explorer:                            collaboration/ui/teams-explorer.md
-            - Team-specific Pages:                       collaboration/ui/team-pages.md
+            - Team Page:                                 collaboration/ui/team-page.md
             - People Explorer:                           collaboration/ui/people-explorer.md
         # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options (UI+actions)
         - Entity Sharing:

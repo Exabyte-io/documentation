@@ -8,7 +8,7 @@ Teams can be consulted and defined through the  Teams Explorer, introduced [in t
 
 # Specific Pages
 
-Each team has a corresponding dedicated page, as explained in [this section](../ui/team-pages.md).
+Each team has a corresponding dedicated page, as explained in [this section](../ui/team-page.md).
 
 # Entities
 
@@ -16,14 +16,4 @@ Entities of different [types](/entities-general/overview.md) can be assigned, or
 
 # Actions
 
-A set of actions is made available to the [Owner and Administrators](roles.md) to manage the various Teams, in relation to their membership, entity assignment and permissions. These actions are introduced [here](../actions/team/overview.md).
-
-
-
-
-
-
-
-
-
-
+A set of actions is made available to the [Owner and Administrators](roles.md) to manage the Teams - their membership, entity assignment and permissions. These actions are introduced [here](../actions/team/overview.md).

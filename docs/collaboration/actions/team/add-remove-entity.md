@@ -1,22 +1,22 @@
 # Assign Entities to Team
 
-Entities of different [types](/entities-general/overview.md) can be assigned (or added) to members of a team under a common [set of permissions](edit-permissions.md). The procedure is explained in what follows:
+Entities of different [types](/entities-general/overview.md) can be assigned (or added) to a team. The procedure is explained in what follows.
 
 ## Open Entity Tabs
 
-Starting from the [Team-specific Page](../../ui/team-pages.md), the user should [navigate](/ui/tabs-navigator.md) to the appropriate entity tab among the possibilities highlighted below:
+Starting from the [Team Page](../../ui/team-page.md), [navigate](/ui/tabs-navigator.md) to the appropriate entity tab among the ones highlighted below:
  
 ![Team Entities](/images/team-entities.png "Team Entities")
 
 ## Open "Add Entity" page
 
-The user should then click on the "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> on the top-right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar). 
+Next, click "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> on the top-right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar). 
 
-The list of entities that can be added to the team is now presented. 
+The list of entities that can be added to the team will now be presented. 
 
 ## Add Entities
 
-The desired entries can be selected by ticking their left-hand checkboxes, and finally added to the Team by clicking on the top-right `Select Items` button <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i>. 
+The desired entries can be selected by ticking their corresponding checkboxes, and finally added to the Team by clicking `Select Items` button in the top-right <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i>.
 
 ## Animation
 
@@ -27,10 +27,9 @@ In the animation below, we add a material entity (crystalline silicon) to a "Tes
 
 # Remove Entities
 
-Any entity previously assigned to a Team can then be removed. Navigate first to the relevant entity tab under the [Team-specific Page](../../ui/team-pages.md), and then follow the general [Delete Procedure](/entities-general/actions/delete.md). 
+Any entity previously assigned to a Team can then be removed. First, navigate to the relevant entity tab under the [Team Page](../../ui/team-page.md), and then follow the general [Delete Procedure](/entities-general/actions/delete.md) to execute the removal action. 
 
 When an entity is removed, none of the Team members will then be able to access it, unless they are given such permission inside other Teams. 
-
 
 ## Animation
 
