@@ -1,26 +1,30 @@
 # Account Access Levels
 
-Different Access Levels can be granted to target Accounts on our platform. The available Access Levels are comprised of the following distinct categories:
+Different Access Levels can be granted to Accounts on our platform, as explained below.
 
-## Anyone with link
+## Private
 
-The "Anyone With Link" Access Level <i class="zmdi zmdi-link zmdi-hc-border"></i> allows any user holding a copy of the shareable link to access the entity and the data associated with it.  
-
-## External (Anyone on the web)
-
-Entities can also be shared externally on the public internet, and consequently be made retrievable through general search engines, with the  "Anyone on the web" option <i class="zmdi zmdi-globe zmdi-hc-border"></i>.
+By default, any/all newly created data is private to the account with the [service level](/accounts/service-levels.md) that supports private data, or, alternatively, publicly accessible for the accounts with service levels supporting public data only. Consult the aforementioned page to review service levels that support private data.
 
 ## Public (all Users)
 
-If the user wishes the entity to be shared with all other users of our platform, but at the same time prefers to conceal its availability from the rest of the public internet, then the "Public (all Users)" option <i class="zmdi zmdi-accounts-alt zmdi-hc-border"></i> can be suitably chosen.
+If the user wishes the entity to be shared with all other users of our platform, whilst concealing it from the public internet, then the "Public (all Users)" option <i class="zmdi zmdi-accounts-alt zmdi-hc-border"></i> can be chosen.
 
-## Individual Accounts
-
-The possibility to share an entity within the realms of an Organizational Account (of which the user is member) is also offered. Similarly, entities can also be shared between Personal Accounts.
-
+## Share with Accounts
+   
+Entities can be shared between Personal or Organizational [Accounts](/accounts/overview.md).
 
 !!!note  "Note: analogy with Google Drive functionality"
     Similarly to [Permissions](/entities-general/permissions.md), the Access Levels included on our platform mirror the functionality of Google Drive files and folders  closely [[1](#links)]. 
+
+## External - Anyone with link
+
+The "Anyone With Link" Level <i class="zmdi zmdi-link zmdi-hc-border"></i> allows anyone on the web holding a copy of the shareable link to access the entity and the data associated with it.
+
+## External - Anyone on the web
+
+Entities can also be shared externally on the public internet, and consequently be made retrievable through general search engines, with the  "Anyone on the web" option <i class="zmdi zmdi-globe zmdi-hc-border"></i>.
+
 
 # Links
 

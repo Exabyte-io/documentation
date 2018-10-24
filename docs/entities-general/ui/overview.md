@@ -1,25 +1,23 @@
 # Common User Interface Components
 
-There are some aspects of the general User Interface of our platform which are shared between entities of all different [types](../overview.md). In particular, there are three such common interface components which are worth pointing out: Entity Explorer, Designer and Viewer.
+Some components are shared between entities of different [types](../overview.md). Three of them are worth pointing out: Entity Explorer, Designer and Viewer.
 
 # Access Points
 
-The image below highlights the **access points**, within the broader [Account Profile](/accounts/ui/profile-page.md) page, to the three components described below:
+The image below highlights their **access points**, within the [Account Profile](/accounts/ui/profile-page.md) page.
 
 ![Common Entities UI](/images/common-ui-entities.png "Common Entities UI")
 
+# 1. Explorer
 
-# 1. Entity Explorer
+The "Explorer" affords for the visualization of [Account-owned Entity Collections](/accounts/collections.md). It can also be used to perform [actions](../actions/overview.md) upon the items that they contain.  This component is described in the [following page](/entities-general/ui/explorer.md).
 
-The "Explorer" interface offers a convenient way of visualizing graphically the contents of the various [Account-owned Entity Collections](/accounts/collections.md) under our platform, and to perform [actions](../actions/overview.md) upon such collection items. Everything that concerns this common component of the user interface is explained in this [page](/entities-general/ui/explorer.md).
+The Explorer for each entity type can be accessed through the corresponding [tab](/ui/tabs-navigator.md), as depicted in the image above.
 
-The Explorer interface for each entity type can be accessed through a dedicated [tab within the user interface](/ui/specific/tabs-navigator.md), as depicted in the image above.
+# 2. Designer
 
-# 2. Entity Designer
+Creation of new entities is done via the corresponding "Designer", documented [here](/entities-general/ui/designer.md).
 
-To create any type of new entity, the corresponding "Designer" interface needs to be consulted and operated. This particular interface component is documented [here](/entities-general/ui/designer.md).
+# 3. Viewer
 
-# 3. Entity Viewer
-
-When an existing entity simply needs to be inspected to verify its contents, without the need to apply any changes to its current form, then it may simply be opened from the entity collection. This allows the entity to be viewed under the corresponding "Viewer" component of the user interface, documented [here](viewer.md).
-
+The user can inspect existing entities by [opening them](../actions/open-edit.md) from the corresponding collection. Inspection is done under the "Viewer" component, documented [here](viewer.md).

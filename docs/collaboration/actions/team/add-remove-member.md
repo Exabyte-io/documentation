@@ -1,32 +1,32 @@
 # Add Members to Team
 
-The Owner or Administrators of an Organization can add or remove members from the Organization's various constituent Teams in exactly the same fashion as the adding or removing of members in relation to the wider Organization itself, which is explained [separately](../organization/add-remove-member.md). 
+The  addition or removal of members from Teams is similar to the [equivalent procedure](../organization/add-remove-member.md) for the wider Organization. 
 
 !!!note "Note: Team Members"
-    Any user that is wished to be added to a Team should first be made member of the parent Organization. 
+    Users that need to be added to a Team should first be made members of the parent Organization. 
 
-## Open Team People Explorer
+## Open People Explorer
 
-The only difference is that such a Team-targeted member addition has to originate from the [Team People Explorer](../../ui/people-explorer.md) interface under the [Team-specific page](../../ui/team-pages.md), as opposed to the equivalent People Explorer interface under the parent Organizational profile page (the so-called "Organization People Explorer"). 
+The user should start from the [People Explorer](../../ui/people-explorer.md) under the [Team-specific page](../../ui/team-page.md). 
 
-## Open Accounts Explorer and Add Users to Team
+## Add Users to Team
 
-Starting from this point, the user is referred to the corresponding [Organization-related documentation page](../organization/add-remove-member.md/#open-accounts-explorer), under the same sub-headers, for an analogous explanation on how this addition or removal of members can be performed in the alternative context of Teams. 
+At this stage, the user is referred to the [Organization-related documentation page](../organization/add-remove-member.md/#open-accounts-explorer) for an analogous explanation. 
 
 ## Animation
 
-We will, in the following animation, start from the Account profile page of an Organization called "Exabyte.io", and we will then navigate to the Team-specific page of a "Test Team". In the end, we demonstrate how to add multiple new users to this Test Team from the Team's People Explorer interface:
+We start from the profile page of an Organization called "Exabyte.io", and we then navigate to the specific page of a "Test Team". In the end, we demonstrate how to add multiple new users:
 
 <img data-gifffer="/images/team-add-user.gif">
 
-# Remove Members from Team
+# Remove Members
 
-Any Owner or Administrator can remove any other member from the Team contained in an Organization by first navigating to the [Team's People Explorer interface](../../ui/people-explorer.md), and then following the [standard "Delete" procedure](/entities-general/actions/delete.md) for removing list entries from a general Explorer-type interface. 
+Members can be removed from a Team by first navigating to the [Team's People Explorer](../../ui/people-explorer.md), and then following the [standard "Delete" procedure](/entities-general/actions/delete.md). 
 
-It is worth noticing that, when a member is removed from the Team, he will no longer have access to any of the entities that were assigned to that particular Team, unless the same entities have been added to other Teams that the user is still member of.
+When a member is removed, he/she will no longer have access to any of the team's [assigned entities](../../organizations/teams.md#entities), unless available in other Teams.
 
 ## Animation
 
-In the animation below, we remove the three members added in the previous animation from our "Test Team": 
+In the animation below, we remove the three members added previously: 
 
 <img data-gifffer="/images/team-remove-user.gif">
