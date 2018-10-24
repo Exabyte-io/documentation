@@ -20,4 +20,4 @@ The features of People Explorer are documented [here](people-explorer.md). These
 
 # 3. Team-specific Pages
 
-Team-specific pages are accessible under the Teams Explorer. Their description is to be found [here](team-pages.md).
+Team-specific pages are accessible under the Teams Explorer. Their description is to be found [here](team-page.md).

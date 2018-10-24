@@ -1,6 +1,6 @@
 # People Explorer
  
-Both the Organizational [Profile page](/accounts/ui/profile-page.md), and each [Team-specific page](team-pages.md), have a "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on it redirects the user to, respectively, a list of all Organization members (People), and to team-specific lists. 
+Both the Organizational [Profile page](/accounts/ui/profile-page.md), and each [Team-specific page](team-page.md), have a "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on it redirects the user to, respectively, a list of all Organization members (People), and to team-specific lists. 
 
 These lists are presented under the [Explorer interface](/entities-general/ui/explorer.md) of our platform. Hence their name, "People Explorer".
 
@@ -28,7 +28,7 @@ The members who have the titles of "Owner" or "Admin" attributed to them are ind
 
 # Team People Explorer
 
-We then click on one of the Teams listed under [Teams Explorer](teams-explorer.md), to gain access to  its corresponding [Team-specific Page](team-pages.md). The "Team People Explorer" can be found under the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. 
+We then click on one of the Teams listed under [Teams Explorer](teams-explorer.md), to gain access to its corresponding [Team-specific Page](team-page.md). The "Team People Explorer" can be found under the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. 
 
 > "Team People Explorer" or "Team Members Explorer" can be used interchangeably.
 
