@@ -1,13 +1,13 @@
 # Account Biographical Information
 
-The page under the `Bio` tab button <i class="zmdi zmdi-eye zmdi-hc-border"></i> of the general User Interface shows general biographical information about the account's profile, and information about the different organizations or teams that the user is member of. This information can be set as private or public (to be shared with other platform users) depending on the account's service level, as explained [here](../service-levels.md). The layout of this "Bio" page is as portrayed in the example image below, with its different component panels highlighted separately:
+The page under the `Bio` tab button <i class="zmdi zmdi-eye zmdi-hc-border"></i> of the general User Interface shows general biographical information about the account's profile, and information about the [organizations](/collaboration/organizations/overview.md) or [teams](/collaboration/organizations/teams.md) that the user is member of. This information can be set as [private or public](/collaboration/sharing/access-levels.md) depending on the account's service level, as explained [here](../service-levels.md). The layout of this "Bio" page is as portrayed in the example image below, with component panels highlighted:
 
 ![Bio Panels](/images/bio-panels.png "Bio Panels")
 
 
 # Account Profile Information
 
-General basic profile information regarding the account under current consideration, such as the account's general role description, associated email address and website, and about its geographical location, can be viewed together under the  top-left panel of the "Bio" page. The profile information contained in this section can be edited primarily under the [Account Preferences](preferences-overview.md).
+General information about the account under current consideration, such as name, associated email address and website, can be viewed under the  top-left panel of the "Bio" page. The profile information contained in this section can be edited under the [Account Preferences](preferences-overview.md).
 
 !!!note "Note: public information"
      All profile information contained in this section is publicly viewable by all other users of the platform.
@@ -18,13 +18,13 @@ What can be viewed under the panel on the right-hand side of the "Bio" page real
 
 ## List of Organizations
  
-In case a personal account is currently being employed, the user will see here a complete list of all organizations of which he/she is either Owner, Administrator or regular Member. For example, in the example case shown in the image below, the user is for the moment member of three distinct organizations, two of which (the [Bank](/entities-general/bank.md) and [Public](/entities-general/permissions.md) organizations) are always listed here by default, since they include all users of the platform.
+In case a personal account is currently employed, the user will see a list of all organizations of which he/she is a member. For example, in the example case shown in the image below, the user is a member of three organizations.
 
 ![List Organizations](/images/list-organizations.png "List Organizations")
 
 ## List of Users and Teams
 
-In the alternative case of an Organizational Account being used, the user will instead first see a complete list of all members belonging to that particular Organization, including information on which members are the Owner and Administrators of the Organization. In a second instance, the user will also be able to view a list of all [Teams](/collaboration/organizations/teams.md) included in the present Organization, including information on how many members and projects are included in each of them.
+If an [Organizational Account](/collaboration/organizations/overview.md) is employed, the user will instead see a list of all members of Organization, including information about their [roles](/collaboration/organizations/roles.md). In a second instance, the user will also be able to view a list of all [Teams](/collaboration/organizations/teams.md) of the Organization, including information on how many members and projects are present in each of them.
 
 Both Lists of Members and Teams are presented in the standard [Explorer-type interface](/entities-general/ui/explorer.md) commonly encountered across our platform, as demonstrated in the following image example:
 

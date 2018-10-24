@@ -1,14 +1,10 @@
 # Create an Organization
 
-!!!note "Note: Sufficient Service Level required to perform this Action"
-    Creation of an Organization requires an appropriate [Service Level](/pricing/service-levels.md). Moreover, each Organization should be created under a  **separate** Account.  
+New Organizations can be created by first navigating to [My Accounts](/accounts/ui/switcher.md) page using the [right-hand sidebar](/ui/universal/right-sidebar.md). 
 
+# Open "Create New Organization" Dialog
 
-New Organizations can be created by first navigating to the [Account Switcher](/accounts/ui/switcher.md) under the [right-hand sidebar](/ui/universal/right-sidebar.md). Here, the user should then click on the "Create" button  <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner. 
-
-# "Create New Organization" Dialog
-
-At this stage, the following dialog appears:
+Next, click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner. At this stage, the following dialog appears:
 
 ![Create New Organization](/images/create-new-organization.png "Create New Organization")
 
@@ -19,7 +15,7 @@ The user should enter the following set of information in the corresponding text
 - Name: the desired name of the new Organization being created (compulsory information).
 - Email: the email address to be associated (compulsory information). 
 - Description: a short descriptive text about the purpose and intended usage. 
-- Web: the URL of any associated website.
+- Web: the URL of an associated website.
 - Location: geographical location (if applicable).
 
 !!!note "Further changes to information"
@@ -27,10 +23,9 @@ The user should enter the following set of information in the corresponding text
 
 # Finalize Creation 
 
-Once the relevant information has been compiled, the user should press the `Create` button at the bottom of the dialog, or `Cancel` to revert. This information can be retrieved under the "[Bio](/accounts/ui/bio.md)" section of the [Account Profile page](/accounts/ui/profile-page.md). 
+Once the relevant information is entered, press `Create` button at the bottom of the dialog, or `Cancel` to revert. This information can be retrieved under the "[Bio](/accounts/ui/bio.md)" section of the [Account Profile page](/accounts/ui/profile-page.md). 
 
 A promotional message might appear at this stage, as explained below. After closing it, the user can see the new entry under the [Account Switcher](/accounts/ui/switcher.md). 
-
 
 # Promotional Offer
 
@@ -40,22 +35,13 @@ If this is the first time an Organization is created, a promotional message will
 
 # Ownership
 
-The user who performed the above steps is  appointed as the Owner of the Organization.
+The user who performed the above steps is appointed as the [owner](../../organizations/roles.md) of the Organization.
 
 !!!warning "Warning: change of Owner"
     Please [contact us](/ui/universal/support.md) if a member other than the creator needs to be appointed as the Owner.
 
- 
 # Animation
 
 In the demonstration below, we create a new Organization called "Example":
 
 <img data-gifffer="/images/organization-create.gif">
-
-
-
-
-
-
-
-
