@@ -1,22 +1,30 @@
-# Upload structures
+# Upload Structures
 
-At present we support uploading structural data in two file formats: CIF and POSCAR. Both contain the lattice geometry and the ionic positions of the crystal structure under investigation. The latter format represents the standard way of defining and inputting crystal structure information to the VASP DFT code, one of the simulations engines incorporated into our platform. More information on how to enter crystallographic data according to both CIF and POSCAR file format specifications can be found in Refs. [[1](#links)] and [[2](#links)] respectively.
+At present, we support uploading structural data in two file formats: CIF and POSCAR. Both contain the lattice geometry and the ionic positions of the crystal structure under investigation. The latter format represents the standard way of defining and inputting crystal structure information to the [VASP DFT code](/applications/vasp.md), one of the simulations engines incorporated into our platform. 
 
-# Open upload dialog
+More information on how to enter crystallographic data according to both CIF and POSCAR file format specifications can be found in Refs. [[1](#links)] and [[2](#links)] respectively.
 
-Open left-hand sidebar and navigate to "Materials" page. Then choose upload tool <i class="zmdi zmdi-upload zmdi-hc-border"></i> in the top right corner.
+# Open Upload Dialog
+
+Under the [Account Profile](/accounts/ui/profile-page.md) page, first [navigate](/ui/specific/tabs-navigator.md) to the "Materials" tab. Then choose upload tool <i class="zmdi zmdi-upload zmdi-hc-border"></i> in the top right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar).
 
 # Select Files
 
-By clicking on the `Select Items` tool <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> at the top right end of the page and following the file upload dialog, you can select one or multiple files from the local filesystem on your machine.  When you are done, the files are processed by the web browser and arranged in a list prepared to be uploaded to our platform. The list will also contain information about whether a certain file has already been used for uploading structural information before.
+Click the `Select Items` tool <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> in the top right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar) of this new page, to open a file upload dialog.
+ 
+ Through this dialog, the user can select one or multiple files from the local filesystem on his/her machine. The files are then processed by the web browser and arranged in a list prepared to be uploaded to our platform. This list also contains information about whether a certain file has already been used for uploading structural information before.
 
 ## Expand Content
 
-The data contained in each crystal structure file can be further visualized by clicking on its corresponding entry, and then collapsed back again by clicking a second time (the same functionalities can be accessed through the `Expand` and `Collapse` tools located at the top right corner of the page, upon selection of the relevant structure file).
+The data contained in each crystal structure file can be further visualized by clicking its corresponding entry, and then collapsed back again by clicking a second time. 
+
+The same functionality can be accessed through the `Expand` and `Collapse` tools located in the top-right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar) of the page, upon selection of the relevant structure file.
 
 ## Search
 
-In case large datasets of crystal structures need to be imported at a single time, and particular elements then need to be retrieved from the resulting list, an additional filtering and searching text bar is offered at the top of the screen. This search bar can be activated or hidden with the `Search` tool <i class="zmdi zmdi-search zmdi-hc-border"></i> located on the toolbar at the top right end of the page. 
+In case large datasets of crystal structures need to be imported at a single time, and particular elements then need to be retrieved from the resulting list, an additional [filtering and searching](/entities-general/actions/search.md) text bar is offered at the top of the screen. 
+
+This search bar can be activated or hidden with the `Search` tool <i class="zmdi zmdi-search zmdi-hc-border"></i> located in the top-right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar) of the page. 
 
 ## Tag
 
@@ -24,16 +32,18 @@ Users may tag structures with a list of keywords. This is especially resourceful
 
 ## Upload Files
 
-Upon selection of the desired crystal structures can be uploaded to the platform by clicking on the `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> tool. For convenience, all structures in the list can be selected simultaneously by ticking the "Select All" checkbox at the top of the list.
+Upon selection of the desired crystal structures, they can be uploaded to the platform by clicking `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> in the top-right [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar). 
+
+For convenience, all structures in the list can be selected simultaneously by ticking the "Select All" checkbox at the top of the list.
 
 # View Materials
 
-Once the crystal structure files have been imported into the platform, they will be added as an entries to "Materials" list. By default the name of the material will be attempted to be read from the file imported. Chemical formula will be used as a backup option.  
+Once the crystal structure files have been imported into the platform, they are added as entries to the Account-owned Materials collection. By default, the name of the material is read from the imported file, if possible. Chemical formula is otherwise used as a backup option.  
 
 
 # Animation
 
-All the aforementioned steps are demonstrated in the animation below.
+The aforementioned steps are demonstrated in the animation below.
 
 <img data-gifffer="/images/upload.gif" />
 

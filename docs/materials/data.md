@@ -1,6 +1,6 @@
-# Structured Data Representation of Materials
+# Structured Representation of Materials
 
-We present an example of our approach towards storing entity-related data in a structured fashion, explaining how it affects materials entities specifically. Such specific aspects presented herein complement the [general discussion](/entities-general/data.md).
+We present an example of our approach towards storing entity-related data in a structured fashion, explaining how it affects materials specifically. The special aspects presented herein complement the [general introduction](/entities-general/data.md).
 
 # Example Representation
 
@@ -110,9 +110,6 @@ In the expandable section below, the user can find an example JSON representatio
 | hash | Hash string calculated by the [Materials Bank Mapping Function](bank.md)  |   Structure-based hash string for the primitive standard representation of this material, calculated when checking this material against existing entries within the Materials Bank |
 | scaledHash | As above, but for the primitive axis scaled to 1.0 (i.e. to identify material under uniform pressure) | This hash string is calculated by scaling all the dimensions of the primitive unit cell representation of the material by the $a$ lattice constant |
 
-
-
-
 # Materials Properties
 
-As seen above, we use the crystal **lattice** and **basis** JSON objects as the main identifying properties. Based upon them, we calculate the final **derivedProperties** object, that may include such information as the unit cell volume, density, chemical formula, and a large number of other possibilities. For every material imported/uploaded to our platform, we pre-calculate a set of such descriptors and store them inside this "derivedProperties" section.
+As seen above, we use the crystal **lattice** and **basis** JSON objects as the main identifying properties. Based upon them, we calculate the final **derivedProperties** object, that may include such information as the unit cell volume, density, chemical formula, and a large number of other possibilities. For every material imported/uploaded to our platform, we pre-calculate a set of such descriptors, and store them inside this "derivedProperties" section.

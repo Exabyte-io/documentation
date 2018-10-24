@@ -1,22 +1,22 @@
 # Materials-specific Actions
 
-The following set of actions can be performed in the specific context of Materials from the corresponding [Explorer Interface](../ui/explorer.md), besides those of general applicability [introduced previously](/entities-general/actions/overview.md):
+The following set of actions can be performed in the specific context of Materials, starting from the corresponding [Explorer Interface](../ui/explorer.md). They complement those of general applicability [introduced elsewhere](/entities-general/actions/overview.md).
 
 # Advanced Search
 
 Materials stored in the Account-owned collection can be searched and retrieved using a more advanced search engine that the [basic version](/entities-general/actions/search.md), as explained in [this page](advanced-search.md).
 
-# Import New Materials
+# Import 
 
-Additional materials, beyond those available within the scope of our platform, can be accessed and imported from third-party online databases into the Account-owned collection by following [these instructions](import.md). 
+Additional materials can be imported from third-party online databases into the Account-owned collection by following [these instructions](import.md). 
 
-# Upload New Materials
+# Upload 
 
-Alternatively, the user may wish to upload new materials into the Account-owned collection directly from local files containing the relevant crystal structure data, as outlined [here](upload.md).
+The user may also wish to upload new materials into the Account-owned collection directly from local files containing the relevant crystal structure data, as outlined [here](upload.md).
 
 # Set Default
 
-Setting a material as the default choice among the list of collection entries might present some specific issues compared to the [general procedure](/entities-general/actions/set-default.md), and these are reviewed [in this page](set-default.md).
+Setting a material as the default choice, among the list of collection entries, might present some specific issues compared to the [general procedure](/entities-general/actions/set-default.md). They are reviewed [in this page](set-default.md).
 
 # Copy Materials from Bank
 
