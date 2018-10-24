@@ -1,6 +1,6 @@
 # Appoint Administrator
 
-The [Owner or any existing Administrators](../../organizations/roles.md) can elevate a regular member to the role of an Administrator. 
+Regular members can be elevated to the role of an Administrator. 
 
 ## Open People Explorer
 
