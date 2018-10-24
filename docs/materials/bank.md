@@ -1,20 +1,22 @@
 # Materials Bank
 
-We collect unique copies of all materials in a standard primitive representation [[1](#links)] in a central "Bank" collection. The general features of such Bank repositories are discussed in the following [general introductory page](/entities-general/bank.md). Advanced search functionality specific to the Materials Bank are further described [here](../entities-general/actions/advanced-search.md).
+We collect unique copies of all materials under their standard primitive representation [[1](#links)] in a central "Bank" collection. The general features of such repositories are discussed in the following [introductory page](/entities-general/bank.md). 
+
+Advanced search functionality specific to Materials and available also in the Bank are described [here](actions/advanced-search.md).
 
 # Mapping Function
 
-In the special case of materials, the [Bank Mapping Function](/entities-general/bank.md#bank-mapping-function) consists in first calculating the Niggli standard primitive representation of every candidate crystal structure originating from the Account-owned collections. 
+In the case of materials, the [Mapping Function](/entities-general/bank.md#bank-mapping-function) consists in first calculating the standard primitive representation of the candidate crystal structure originating from an Account-owned collection. 
 
-From this Niggli representation, the corresponding ["hash" string](/entities-general/bank.md#hash-strings) is then calculated, and compared against those of existing Bank entries. From this point onwards, two alternative scenarios can emerge:
+Starting from this representation, the corresponding ["hash" string](/entities-general/bank.md#hash-strings) is then calculated. It is then compared against those of existing Bank entries. From this point onwards, the following two alternative scenarios can emerge.
 
-## Positive Match of Hash Strings
+## Positive Match
 
-If a positive match of hash strings is encountered between the Account-owned candidate structure and an existing entry within the Materials Bank, then no new Bank entry is created. Rather, the Account-owned material is linked to the existing Bank entry with the same hash.
+If a positive match of hash strings is encountered between the candidate structure and an existing Bank entry, then no new entry is created within the Bank collection. Rather, the Account-owned material is linked to the existing entry with the same hash.
 
-## No Match of Hash Strings
+## No Match
 
-If no match is found, then a new Bank entry is created, under the same Niggli primitive representation as that of the candidate material. Future materials originating from all Accounts on the platform that share the same Niggli representation, and therefore the same hash, will then point to this new  Bank entry.
+If no match is found, then a new Bank entry is created, under the primitive representation of the candidate material. Future materials sharing the same representation, and therefore the same hash, will then point to this new Bank entry.
 
 # Links
 

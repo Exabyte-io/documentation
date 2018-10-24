@@ -7,12 +7,13 @@ Our current work is focused on **structure-based** atomistic approach, where the
 
 ## Example Representation
 
-For examples of JSON representation of materials and structure-based descriptors see [materials data](data.md) section.
+For examples of JSON representation of materials and structure-based descriptors, see [materials data](data.md) section.
 
 ## Features, Fingerprints, Targets
 
-On many occasions terms "Features", "Fingerprints", "Targets" are used for materials informatics purposes. For example, when constructing a machine learning model a dataset containing information about multiple materials is used in order to find regular patterns and inter-dependencies. Such dataset is usually split into properties that represent the known data, or *features*, and the properties to be predicted, or *targets*.
- First we clarify this terminology as follows:
+On many occasions, terms "Features", "Fingerprints", "Targets" are used for materials informatics purposes. For example, when constructing a machine learning model, a dataset containing information about multiple materials is used in order to find regular patterns and inter-dependencies. Such dataset is usually split into properties that represent the known data, or *features*, and the properties to be predicted, or *targets*.
+
+ First we clarify this terminology as follows.
 
 - **Feature**: any property of a material, eg. density or electronic band gap.
 - **Fingerprint**: property of a material used as an input for a (statistical modeling) Workflow, equivalent of **Descriptive** property by definition
@@ -26,11 +27,11 @@ On many occasions terms "Features", "Fingerprints", "Targets" are used for mater
 
 # Example properties
 
-Exact set of Materials properties that have to be supplied to and can be extracted as a result of a Workflow vary based on the type of Workflow and models/methods included therein.
+Exact set of Materials properties that have to be supplied to, and can be extracted as a result of, a Workflow vary based on the type of Workflow and models/methods included therein.
 
 ## Results
 
-Below we provide example properties extracted by the using [Density Functional Theory](/models/dft) (DFT) as simulation results:
+Below we provide example properties extracted by using [Density Functional Theory](/models/dft/overview.md) (DFT) as model.
 
 | Property          | Overview    |
 |:----------------- |:------------|
@@ -52,12 +53,10 @@ Below we provide example properties extracted by the using [Density Functional T
 
 ## Monitors
 
-These are the data points that can be monitored during the course of a DFT calculation:
+These are the data points that can be monitored during the course of a DFT calculation.
 
 | Output information | Overview |
 |:---------------   |:------------|
 | Standard Output   | Standard output of an execution unit in UNIX sense |
 | Ionic Convergence | Convergence information on ionic moves in relaxation or molecular dynamics calculations |
 | Electronic Convergence  | Convergence information on self-consistent electronic calculation steps |
-
-
