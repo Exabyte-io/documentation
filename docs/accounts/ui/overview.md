@@ -1,8 +1,8 @@
-# Account-related User Interface Components
+# Accounts-related UI
 
-Different User Interface components are available, under the wider general [interface of our platform](/ui/universal/ui-overview.md), to edit or insert information pertaining to Accounts, such as the Account-related profile information and settings. Further utilities are provided, for example, to switch between the various accounts available for login to the user, or for navigating the platform-wide general list of existing Accounts.
+Multiple User Interface components are available, under the wider general [interface of our platform](/ui/universal/ui-overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
 
-Each of these interface components will now be reviewed separately, based on which general location they can be accessed from:
+Each of these interface components is reviewed below, based on the location they can be accessed from.
 
 # Components in Account Profile Page
 
