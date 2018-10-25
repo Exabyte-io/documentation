@@ -50,7 +50,7 @@ Secondly, the checkbox on the very left allows all listed entity items to be sel
 
 ## Actions Toolbar
 
-The Actions Toolbar allows users to execute [actions](../actions/overview.md) on multiple selected Entities at once. Entities can be selected using the corresponding checkboxes to the left of each entry line. 
+The Actions Toolbar allows users to execute [actions](../actions/overview.md) on multiple selected Entities at once. Entities can be [selected](../actions/select.md) using the corresponding checkboxes to the left of each entry line. 
 
 ## Actions Dropdown
 

@@ -4,7 +4,7 @@ This page explains how to run a simple density functional theory calculation to 
 
 # Prepare Material and Workflow
 
-Users may also add new materials or workflows into their collection from the application-wise "Bank" collection that we maintain. To do so, select the "Bank" option in the left-hand sidebar and then "Materials" ("Workflows"). To import both workflows and material structures from the Bank select the desired entry by ticking the checkbox at the start of the entry line and then click "Copy" in the top-right taskbar of the page.
+Users may also add new materials or workflows into their collection from the application-wise "Bank" collection that we maintain. To do so, select the "Bank" option in the left-hand sidebar and then "Materials" ("Workflows"). To import both workflows and material structures from the Bank select the desired entry and then click "Copy" in the top-right taskbar of the page.
 
 Silicon FCC is the default material added to each account on creation. Below we demonstrate how to import the "Band Structure" workflow for Quantum ESPRESSO.
 
