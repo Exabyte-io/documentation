@@ -10,7 +10,6 @@ In order to change the default item out of a collection of entities, use the `Se
 
 # Animation
 
-If we take workflows as our case study, then a new default entry can be chosen as demonstrated in the animation below:
+If we take workflows as our case study, then a new default entry can be chosen as demonstrated in the animation below.
 
 <img data-gifffer="/images/setting-default.gif" />
-

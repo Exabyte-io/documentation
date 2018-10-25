@@ -1,6 +1,6 @@
 # Types of Entities
 
-The user interface of the platform contains three main classes of **Entities**, each recognizable by its unique symbol illustrated below:
+The user interface of the platform contains three main classes of **Entities**, each recognizable by its unique symbol illustrated below.
 
 | Entity    |  Icon      | Details        | 
 | :-------- |:----------- |:------------- |
@@ -32,6 +32,3 @@ Please refer to [this page](bank.md) for an introduction to the "Bank" concept.
 # Common Actions
 
 Finally, [this page](/entities-general/actions/overview.md) introduces actions pertinent to all entity types.
-
-
-

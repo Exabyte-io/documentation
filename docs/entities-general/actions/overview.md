@@ -1,6 +1,6 @@
 # Common Entity Actions
 
-Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each type of action:
+Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each type of action.
 
 # [Create New Entity](create.md)
 

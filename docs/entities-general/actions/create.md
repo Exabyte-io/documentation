@@ -6,6 +6,6 @@ This leads the user to the corresponding  [Entity Designer](../ui/designer.md) f
 
 # Animation 
 
-In the example animation below, we take workflows as our case study. We demonstrate how to enter the Workflow Designer starting from the account-owned collection:
+In the example animation below, we take workflows as our case study. We demonstrate how to enter the Workflow Designer starting from the account-owned collection.
 
 <img data-gifffer="/images/create-new-workflow.gif" />

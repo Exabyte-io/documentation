@@ -2,7 +2,7 @@
 
 Click on `Billing and Payments` <i class="zmdi zmdi-card zmdi-hc-border"></i> on the [right-hand sidebar](/ui/universal/right-sidebar.md) to review the list of charges incurred by the account, and the payments executed to address them. The possibility to view or add Payment Methods is also offered. 
 
-An example of a "Billing" page is exhibited below. We have highlighted in red the tabs for viewing charges, payments, and payments methods:
+An example of a "Billing" page is exhibited below. We have highlighted in red the tabs for viewing charges, payments, and payments methods.
 
 ![Billing Page](/images/billing-page.png "Billing Page")
 
@@ -22,7 +22,7 @@ A [Search](/entities-general/actions/search.md) bar <i class="zmdi zmdi-search z
 
 An [Advanced Search](/entities-general/actions/advanced-search.md) <i class="zmdi zmdi-search-for zmdi-hc-border"></i> feature is further offered in the Charges page, in order to filter charges more effectively.
 
-The following properties of Charges are available to be searched under the advanced method:
+The following properties of Charges are available to be searched under the advanced method.
 
 | Property    |   Description      |  
 | :-------- |:----------- |
@@ -30,7 +30,7 @@ The following properties of Charges are available to be searched under the advan
 | queue |  Type of [Queue](/jobs-designer/compute-tab.md) on the supercomputing cluster used for the computational task | 
 | jid | A combination of the job number assigned by the task scheduler, and the cluster number. For example "142.master-production-20160630-cluster-007.exabyte.io" refers to job no. 20160630 executed on the cluster 007  |
 | machine  |  Name of the cluster used for the computation, for example: "cluster-007"  | 
-| project |   [Slug] representation of the project containing the Job, in the format "username-project-year-month-computation". For example "gmogni-project-2018-10-bandstructures"   |  
+| project |   [Slug](/entities-general/data.md#Slug-Representation) representation of the project containing the Job, in the format "username-project-year-month-computation". For example "gmogni-project-2018-10-bandstructures"   |  
 | type |  The type of task being charged, for example "Job"  | 
 | wallDuration  | Time duration of the computation  | 
 | charge |  Charge amount incurred as part of the computational task   | 

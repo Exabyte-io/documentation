@@ -1,16 +1,16 @@
-# Account-related User Interface Components
+# Account-related Interface Components
 
-Different components are available under the general [interface of our platform](/ui/universal/ui-overview.md) allowing user to inspect or edit information pertaining to Accounts. Each of these components is reviewed below, based on the location they can be accessed from:
+Different components are available under the general [interface of our platform](/ui/universal/ui-overview.md) allowing user to inspect or edit information pertaining to Accounts. Each of these components is reviewed below, based on the location they can be accessed from.
 
 # Account Profile
 
-The interface elements accessible from the "Profile" page are reviewed [separately](profile-page.md). It has the general appearance as shown below:
+The interface elements accessible from the "Profile" page are reviewed [separately](profile-page.md). It has the general appearance as shown below.
 
 ![Account Profile General](/images/account-profile-general.png "Account Profile General")
 
 # Left Sidebar
 
-The image below shows components available under the [left sidebar](/ui/universal/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below:
+The image below shows components available under the [left sidebar](/ui/universal/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below.
 
 ![Account UI left sidebar](/images/left-sidebar-accounts.png "Account UI left sidebar")
 
@@ -18,10 +18,9 @@ The image below shows components available under the [left sidebar](/ui/universa
 
 The list of all accounts on our platform  can be accessed following [these instructions](explorer.md).
 
-
 # Right Sidebar
 
-Similarly, more components are present under the [right-hand sidebar](/ui/universal/right-sidebar.md). They are highlighted and referenced below:
+Similarly, more components are present under the [right-hand sidebar](/ui/universal/right-sidebar.md). They are highlighted and referenced below.
 
 ![Account UI right sidebar](/images/right-sidebar-accounts.png "Account UI right sidebar")
 
@@ -36,8 +35,3 @@ The user can switch between different accounts that he/she is allowed to use und
 ## 3. Charges and Payments Trigger
 
 The list of payments and charges incurred by an account, and payment methods, can be accessed under ["Billing and Payments"](charges-payments.md).
-
-
-
-
-

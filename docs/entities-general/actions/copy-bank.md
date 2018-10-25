@@ -1,10 +1,10 @@
 # Import Entities from Bank
 
-In order to import Materials or Workflows from their respective Banks into the Account-owned collection, the following general procedure should be followed:
+In order to import Materials or Workflows from their respective Banks into the Account-owned collection, the following general procedure should be followed.
 
 # Open Bank Page 
 
-The user should first click on the corresponding `Bank` option in the [left-hand Sidebar](/ui/universal/left-sidebar.md). The choice between navigating to either of the Materials or Workflows Banks is offered. The user is presented with a comprehensive list of centrally-stored Workflows or Materials, depending on the selected option.
+The user should first click the corresponding `Bank` option in the [left-hand Sidebar](/ui/universal/left-sidebar.md). The choice between navigating to either of the Materials or Workflows Banks is offered. The user is presented with a comprehensive list of centrally-stored Workflows or Materials, depending on the selected option.
 
 # Search for Entity
 

@@ -10,7 +10,6 @@ Alternatively, the user can directly delete each entry from the collection throu
 
 # Animation
 
-We demonstrate both approaches towards deleting an Entity in the animation below, where we delete two example instances of empty workflows in turn:
+We demonstrate both approaches towards deleting an Entity in the animation below, where we delete two example instances of empty workflows in turn.
 
 <img data-gifffer="/images/delete-entity.gif" />
-
