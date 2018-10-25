@@ -1,8 +1,8 @@
 # Workflows Explorer Interface 
 
-Following the [general introduction](/entities-general/ui/explorer.md) to the Explorer Interface of our platform, it is worth highlighting a few special features which are exclusive to Workflows.
+Following the [general introduction](/entities-general/ui/explorer.md) to the Explorer Interface, it is worth highlighting special features which are exclusive to Workflows.
 
-The image below shows an example of Explorer Interface used for visualizing a collection of Workflows, and for executing the various [general](/entities-general/actions/overview.md) or [workflow-specific](../actions/overview.md) actions:
+The image below shows an example of Workflows Explorer, from which [general](/entities-general/actions/overview.md) or [workflow-specific](../actions/overview.md) actions can be executed.
 
 ![Workflows Explorer Interface](/images/updating-workflows.png "Workflows Explorer Interface")
 
@@ -12,4 +12,4 @@ In the above image, we highlight the area that indicates whether a workflow is [
 
 # Filter Workflows by Applications
 
-Workflows can be [filtered](/entities-general/actions/search.md) (or searched) conventionally just like other types of entities with the possibility to be searched by the [application](/applications/overview.md) used inside them for performing the relevant computational tasks.  
+Workflows can be [filtered (or searched)](/entities-general/actions/search.md) conventionally just like other types of entities. The possibility to search them by the [application](/applications/overview.md) used within them, for performing the relevant computational tasks, also exists in this case.  
