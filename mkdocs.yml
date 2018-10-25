@@ -277,13 +277,12 @@ pages:
         - User Interface:
              # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
             - Explorer:                                 jobs/ui/explorer.md
-             # Link to Jobs Designer Overview page
-            - Designer:                                 jobs/ui/designer.md
              # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
             - Viewer:                                   jobs/ui/viewer.md
          # Introduction to concept of Projects (particular set for jobs only)
         - Projects:                                     jobs/projects.md
         - Actions:
+            - Overview:                                 jobs/actions/overview.md
             - Run:                                      jobs/actions/run.md
             - Terminate:                                jobs/actions/terminate.md
             - Purge:                                    jobs/actions/purge.md
