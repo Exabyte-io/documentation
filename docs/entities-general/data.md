@@ -1,15 +1,12 @@
-# Structured Data Representation of Entities
+# Structured Data
 
-We store each item contained in the entity collections under our database in the form of **structured data**, using the JSON format [[1](#links)]. 
-
-The user is referred to the relevant [section of the documentation](/data/convention/structured.md) for an in-depth explanation of structured data in the context of our platform.
+We store each item in the Entity Collections in the form of **structured data** in JSON format [[1](#links)]. The user is referred to the corresponding [section of the documentation](/data/convention/structured.md) for the explanation of the concept of structured data in the context of our platform.
 
 # Example JSON representation
 
-The following is an example of JSON structured representation of an entity item contained in an Account-owned collection, where only the general keywords applicable to all [entity types](overview.md) have been preserved. 
+The following is an example of the JSON representation of an entity, where only the general keywords applicable to all entity types are preserved. 
 
 The reader is referred to other documentation pages for aspects that might pertain specifically to [Materials](/materials/data.md), [Workflows](/workflows/data/data.md) and [Jobs](/jobs/data.md) respectively. 
-
 
 ```json
 {
