@@ -1,6 +1,6 @@
 # Charges, Payments, and Payment Methods
 
-Click on `Billing and Payments` <i class="zmdi zmdi-card zmdi-hc-border"></i> on the [right-hand sidebar](/ui/universal/right-sidebar.md) to review the list of charges incurred by the account, and the payments executed to address them. The possibility to view or add Payment Methods is also offered. 
+Click `Billing and Payments` <i class="zmdi zmdi-card zmdi-hc-border"></i> on the [right-hand sidebar](/ui/universal/right-sidebar.md) to review the list of charges incurred by the account, and the payments executed to address them. The possibility to view or add Payment Methods is also offered. 
 
 An example of a "Billing" page is exhibited below. We have highlighted in red the tabs for viewing charges, payments, and payments methods.
 

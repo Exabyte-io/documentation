@@ -4,7 +4,9 @@ Multiple User Interface components are available, under the wider general [inter
 
 Each of these interface components is reviewed below, based on the location they can be accessed from.
 
-The interface elements accessible from the "Profile" page are reviewed [separately](profile-page.md). It has the general appearance as shown below.
+# Account Profile
+
+The interface elements accessible from the "Profile" page are reviewed [separately](profile-page.md). Its general appearance is shown below.
 
 ![Account Profile General](/images/account-profile-general.png "Account Profile General")
 
