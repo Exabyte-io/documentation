@@ -1,25 +1,17 @@
 # Account Homepage / Entry Gateway
 
-When the user first logs into our platform using his/her username or email and password credentials, he/she is presented with the main **Homepage** of the Exabyte platform, otherwise known as the **Entry Gateway**.
-
-This homepage is presented under the user's **default Account**, which can be modified through the [Account Switcher](/accounts/ui/switcher.md) by following the [standard defaulting procedure](/entities-general/actions/set-default.md). 
-
-The initial screen of the Entry Gateway can be retrieved at all times by clicking the Exabyte Company logo in the [header](../header-footer.md). 
+When the user first logs into our platform, he/she is presented with the **Entry Gateway**. This homepage is presented under the user's **default Account**, which can be modified through the [Account Switcher](/accounts/ui/switcher.md) by following [this procedure](/entities-general/actions/set-default.md). The initial screen of the Entry Gateway can be retrieved at all times by clicking the Exabyte Company logo in the [header](../header-footer.md). 
 
 # Initial Options
 
-Immediately after log-in, the user is first confronted with three main options, as displayed in the image below. 
+Immediately after login, the user is first presented with three main options, as displayed in the image below. 
 
 ![Entry Gateway](/images/entry-gateway.png "Entry Gateway")
 
-These initial options can be navigated by the user by clicking their panels, or directly on the `Select` buttons. The overall result is a tree diagrams of sequential options, which will be reviewed throughout the rest of this documentation page. 
+These initial options can be navigated by clicking their panels, or `Select` buttons. The overall result is a tree diagrams of sequential options, which will be reviewed throughout the rest of this documentation page. 
 
-!!!note "Note: quick access to platform features"
-    Numerous features can be accessed directly by opening either the [left-hand](../left-sidebar.md) or [right-hand](../right-sidebar.md) sidebars.
-
-!!!note "Note: features not implemented yet"
-    Many options are currently under development. Only features which are already enabled are reviewed in this page. Please [contact us](/ui/support.md) if you would like any of these features to  be given urgent attention for faster development. 
-
+!!!note "Access to platform features"
+    Numerous features can be accessed directly by opening either the [left-hand](../left-sidebar.md) or [right-hand](../right-sidebar.md) sidebars. Some options may still be under development. Only features already enabled are reviewed in this page. Please [contact us](/ui/support.md) if you would like any of these features to be given urgent attention. 
 
 # Query Bar
 
@@ -54,9 +46,7 @@ The first option allows for the creation of simulation workflows for material mo
 
 ## 1. Run Simulations 
 
-Here, the user can choose to calculate [material properties](/materials/properties.md) of interest, through the selection of the corresponding workflow template. Examples of pre-defined templates may include total energy calculations, phonon or bandstructure dispersion calculations, as well as the possibility to relax and optimize the geometry of the crystal structure. 
-
-At the moment, our platform only supports the [Density Functional Theory](/models/dft/overview.md) (DFT) theoretical framework for executing electronic structure calculations, as implemented by the [Quantum ESPRESSO](/applications/quantum-espresso.md) or [VASP](/applications/vasp.md) applications.
+Here, the user can choose to calculate [material properties](/materials/properties.md) of interest, through the selection of the corresponding workflow template. Examples of pre-defined templates may include total energy calculations, phonon dispersions or electronic bandstructure calculations. 
 
 A sample of workflow templates included under this option is portrayed in the image below. Clicking any of these available templates creates a new job implementing the workflow, under the default Project of the user's Account.
 
@@ -65,11 +55,11 @@ A sample of workflow templates included under this option is portrayed in the im
 
 ## 2. Design Workflows 
 
-Here, the possibility to design new computational workflows is offered to the users. 
+Here, the possibility to design new computational workflows is offered. 
 
 ### 2A. Density Functional Theory 
 
-As mentioned previously, for the moment only the [DFT theoretical model]((/models/dft/overview.md)) is implemented under option "2A". Plans are however under way to expand the offer to new atomistic simulation approaches, such as the classical Molecular Dynamics and Multi-scale techniques. 
+Our platform supports the [Density Functional Theory](/models/dft/overview.md) (DFT) theoretical framework for executing electronic structure calculations, as implemented by the [Quantum ESPRESSO](/applications/quantum-espresso.md) or [VASP](/applications/vasp.md) applications. Plans are under way to expand the offer to new atomistic simulation approaches, such as the classical Molecular Dynamics and Multi-scale techniques. 
 
 ## 3. Connect Remotely 
 
@@ -90,7 +80,10 @@ Alternatively, the [Remote Desktop environment](/compute/remote-desktop.md) (opt
 
 The Machine Learning functionality offered by our platform can be accessed as the second main option. Such functionality affords for the building of data-driven statistical models, based on results of materials simulations. The techniques implemented in our platform are the object of a [dedicated tutorial](/tutorials/ml/train-ml-model.md).
 
-Machine Learning allows for example to predict new material properties by applying previously-trained models. In addition, new models can be trained by designing appropriate workflows, or use some of their pre-defined templates.
+Machine Learning allows to predict new material properties by applying previously-trained models. In addition, new models can be trained by designing appropriate workflows, or use some of their pre-defined templates.
+
+!!! note "Limited availability"
+    Machine learning is a feature under active development and has a proof-of-concept status. Some items below may not be available yet. 
 
 ![Machine Learning Flowchart](/images/ml-flowchart.png "Machine Learning Flowchart")
 
@@ -104,7 +97,7 @@ This option allows for the building of a predictive model using the linear regre
 
 # Data Analytics <i class="zmdi zmdi-search"></i>
 
-The final main "Data analytics" option gives the user the possibility to import new materials from centralized databases into the Account-owned collection of materials. Alternatively, they can be uploaded directly from locally-stored files. In addition, advanced data analysis tools are provided. 
+"Data analytics" option gives the user the possibility to interact with data as explained below. 
 
 ![Data Analytics Flowchart](/images/data-flowchart.png "Data Analytics Flowchart")
 
@@ -116,9 +109,9 @@ Here, the user can upload or import a new material into the Account-owned collec
 
 This option gives the user the possibility to [upload](/materials/actions/upload.md) one or multiple local files containing the relevant crystallographic information about the material under investigation. We support the CIF, POSCAR and XYZ crystal structure data formats.
 
-### 1B. Import from Cloud Database 
+### 1B. Import from a Web Database 
 
-We have made the third-party "Materials Project" repository of materials available to the users of our platform.  The materials contained there can thus be [imported](/materials/actions/import.md) into the Account-owned collection.
+We have made the third-party "Materials Project" repository of materials available to the users of our platform. The materials contained there can thus be [imported](/materials/actions/import.md) into the Account-owned collection.
 
 Support for other databases will be added in future.
 

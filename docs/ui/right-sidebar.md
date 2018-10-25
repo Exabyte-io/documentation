@@ -25,12 +25,11 @@ Switching between Accounts is described in a [separate part of the documentation
 
 # Account Snapshot
 
-The right-hand sidebar also offers a snapshot of the Account, containing some basic information: storage quota on each available supercomputing cluster, job queue summary in terms of numbers of submitted and active jobs, service level, and finally the current balance. The possibility to expand or replenish these two latter indicators is also offered next to each one of them.
+The right-hand sidebar also offers a snapshot of the Account, containing some basic information: storage [quota](/accounts/quota.md) on each available computing cluster, [job](/jobs/overview.md) queue summary, [service level](/accounts/service-levels.md), and finally the current [balance](/accounts/balance.md). The possibility to expand or replenish these two latter items is also offered next to each one of them.
 
 An example of snapshot is shown below, for the case of an account with access to three different (relatively empty) clusters, and with no jobs currently being submitted or active. 
 
 ![Account Snapshot](/images/account-snapshot.png "Account Snapshot")
-
 
 # Account Preferences
 
@@ -46,8 +45,8 @@ The Terminal and Remote Desktop functionality provide alternative methods for ac
 
 # Invite a Friend
 
-The `Invite a Friend` option  <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> lets users send an email invitation to a friend or colleague who might also benefit from using our platform. Both the sender and recipient will get $10 in the form of Account balance credit when the new registration is approved.
+The `Invite a Friend` option  <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> lets users send an email invitation to a friend or colleague who might also benefit from using our platform. Both the sender and recipient will get a gift in the form of Account balance credit when the new registration is approved.
 
 # Logout
 
-The final `Logout` option <i class="zmdi zmdi-power zmdi-hc-border"></i> should be pressed once operations under the current Account have been completed. Other users can then login to the platform with their own combination of username/email and password credentials.
+The `Logout` option <i class="zmdi zmdi-power zmdi-hc-border"></i> should be pressed once operations under the current Account have been completed. Other users can then login to the platform with their own credentials.

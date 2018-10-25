@@ -2,7 +2,7 @@
 
 Permissions are **rules** defining which types of actions are **allowed** to be performed on an [Entity](overview.md) by an [Account](/accounts/overview.md). Examples of actions that are regulated by permissions include inspection (view), manipulation (execution) and/or modification (edit).
 
-The [owner](ownership.md)) of an entity is granted **full** permissions to it.
+The [owner](ownership.md)) of an entity is granted **all** permissions to it.
 
 # Types of Permissions
 
