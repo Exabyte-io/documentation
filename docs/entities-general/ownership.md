@@ -1,14 +1,14 @@
 # Account Ownership of Entities 
 
-Every entity has an **Owning Account**, referred to as the **Owner** of that entity. The Owner initially defaults to the Account (of [personal or Organizational type](/accounts/overview.md)) under which the entity was **created**. 
+Every entity is owned by a single **[Account](/accounts/overview.md)**, referred to as the **Owner** of that entity. The Owner initially defaults to the Account under which the entity was **created**. 
 
 When entities of each [type](overview.md) are treated collectively, we refer to them as **Account-owned Entity Collections**, which are the object of a [separate discussion](/accounts/collections.md)).
 
 It is important to emphasize that the concept of Ownership applies to the Accounts themselves, and not to any of its  users/members.
 
-# Ownership Transmission
+# Ownership Lifecycle
 
-An entity item may circulate between accounts, by for example being shared or copied. This makes the traceability of its ownership important to define.
+An entity item may circulate between accounts, by, for example, being shared or copied. This makes the traceability of its ownership important to define.
 
 ## Sharing
 
