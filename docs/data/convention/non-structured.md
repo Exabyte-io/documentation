@@ -1,12 +1,27 @@
-This page provides a basic overview of the data conventions employed within our product.
+<!-- TODO: GM to explain the filesystem data with login node and access to multiple clusters, and/or put links to pages in the CLI section -->
 
 # Overview
 
-We provide each user with 2 types of non-structured data storage: *filesystem* and *object*. The former is used to store the data on the disk, and the latter is used for long-term storage and data access from within the web application. Data is copied from filesystem to object storage after each complete calculation. When data is deleted from filesystem, a copy remains in object storage during the grace period. After grace period is over the data is removed from object storage too.
+This page provides a basic overview of the data convention employed within our product. 
 
-## Home directory
+# Classification
 
-Each user has a home directory on our filesystem: `/home/<username>/`. So user `steven` would have `/home/steven/` as a home directory.
+We provide each user with 2 types of non-structured data storage: 
+
+- *filesystem* or disk storage,
+- *object* storage. 
+
+The former is employed at runtime to store data on the disk, and the latter is used for long-term storage and data access from within the web application. 
+
+# Lifecycle
+
+Data is copied from filesystem to object storage after each complete calculation. When data is deleted from filesystem, a copy remains in object storage during the grace period. After grace period is over the data is removed from object storage too.
+
+# Filesystem data
+
+# Home directory
+
+Each user has a home directory on our filesystem under: `/home/<username>/`, such that `steven` has `/home/steven/` as a home directory.
 
 ## Share directory
 
@@ -15,9 +30,7 @@ We also have a role-based permission scheme for organizations and teams. Each or
 !!! note "Command line users"
     The above information is relevant to users with access to command line and remote desktop, as they are able to navigate the `/home` and `/share` directories directly. Readers may also find more information about our unified storage system and how it affects the content of home/share directories [here](/compute/cli/storage-system/).
 
-
-
-## Dropbox directory
+# Dropbox directory
 
 In order to faciliate data upload and editing from the web we enable each user with a special directory accessible both from web and command-line. Just like with `/home` each user has such a directory located at `/dropbox/<username>` in filesystem.
 

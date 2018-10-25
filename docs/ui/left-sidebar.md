@@ -6,11 +6,12 @@ Click the Trigger Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> in the top-
 
 # Items
 
-The following table summarizes the different types of items contained in this sidebar. 
+The following table summarizes the different types of items contained in this sidebar. The more complex entries are 
+further described comprehensively in dedicated documentation pages, referenced in the paragraphs that follow the table.
 
 | Menu Item & Icon                                         | Description
 | :---------------------------                      |:-------------
-| <i class="zmdi zmdi-circle"></i> &nbsp; Load                                      | Compute load shows how busy the compute system is. There are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround will be longer.
+| <i class="zmdi zmdi-circle"></i> &nbsp; Load                                      | Compute load shows how busy the compute system is. There are three levels: low, medium and high. It is opportune to start jobs when the indicator is low in order to achieve a quicker turnaround. Conversely, if the compute load is high, wait times for job turnaround may be longer.
 | <i class="zmdi zmdi-view-dashboard"></i> &nbsp; Dashboard         | Dashboard highlights important datapoints and files of recent activity
 | <i class="zmdi zmdi-file"></i> &nbsp; Create Job             | This is a quick link to get started straight away on a job. Jobs saved are collected in the default user project, which is named the same as the username and can be found in the projects page].
 | <i class="zmdi zmdi-folder"></i> &nbsp; Projects           | Shows the user's list of projects
@@ -23,8 +24,6 @@ The following table summarizes the different types of items contained in this si
 | <i class="zmdi zmdi-comments"></i> &nbsp; Shared with me                            | Items made available by other users
 | <i class="zmdi zmdi-comments"></i> &nbsp; Shared publicly                            | Items shared to the general public
 | <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation
-
-The more complex entries are described comprehensively in dedicated documentation pages, referenced in the paragraphs below.
 
 # Dashboard
 

@@ -1,9 +1,11 @@
 # Account Badge
 
-The "Account Badge" is always present at the top-right corner of any page under the [header bar](/ui/header-footer.md). It displays general information about the Account that the user is currently logged into.
+The "Account Badge" is always present at the top-right corner of any page under the [header bar](/ui/header-footer.md) and displays the general information about the Account that the user is currently logged into.
  
- This information comprises the Account **name** and **[type](../overview.md)**, between **"Personal"** and **"Enterprise"**. The latter in this context is a synonym for Organization, and should not be confused with the "Enterprise" Service Level. The profile picture of the Account is also displayed here.
-  
+# General Information
+ 
+ The general information comprises the Account **name** and **[type](../overview.md)**, between **"Personal"** and **"Enterprise"**. "Enterprise" in this context is a synonym for Organization, and should not be confused with the "Enterprise" [service Level](../service-levels.md). The profile picture of the Account is also displayed here.
+ 
  The name and profile picture can be modified at any time by the user under the [Profile information section](preferences/profile.md) of the [Account Preferences](preferences-overview.md).
  
 # Example for Personal Account
