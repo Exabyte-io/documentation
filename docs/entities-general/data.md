@@ -55,9 +55,9 @@ The reader is referred to other documentation pages for aspects that might perta
 
 | Keyword    |  Short Description      | Details        | 
 | :-------- |:----------- |:------------- |
-| "_id" | Identifier in Platform    |  Each user and associated Account(s) contained in our platform has a corresponding unique Identifier code  |
-| "slug" | Name of User/Account | The human-readable name of the Account which owns the entity under consideration, or of the user who created the entity originally. |
-| "cls"  | User/Account distinction    | Draws the distinction between [Accounts](/accounts/overview.md) and [Users](/accounts/users.md). The Owner of an entity is always an Account, whereas the entity's creator is one of the Account's constituent users |
+| _id | Identifier in Platform    |  Each user and associated Account(s) contained in our platform has a corresponding unique Identifier code  |
+| slug | Name of User/Account | The human-readable name of the Account which owns the entity under consideration, or of the user who created the entity originally. |
+| cls  | User/Account distinction    | Draws the distinction between [Accounts](/accounts/overview.md) and [Users](/accounts/users.md). The Owner of an entity is always an Account, whereas the entity's creator is one of the Account's constituent users |
 
 
 # Metadata
