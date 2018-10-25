@@ -2,11 +2,11 @@ This section contains information about how we organize, store and apply workflo
 
 # User Interface
 
-Specific features pertaining to the Explorer Interface of the Workflows collection are explained [here](ui/explorer.md). Further descriptions on the [Viewer](ui/viewer.md) and [Designer](/workflow-designer/general-overview.md) interfaces in the context of workflows are also offered in the present section of the documentation.
+Specific features pertaining to the Explorer Interface of the Workflows collection are explained [here](ui/explorer.md). Descriptions on [Viewer](ui/viewer.md) and [Designer](/workflow-designer/general-overview.md) in the context of workflows are also offered.
 
 # Data
 
-The [Data](data/data.md) section contains an example JSON representation of workflows and its detailed explanation.
+The [Data](data/data.md) section contains an example JSON representation of workflows, and its detailed explanation.
 
 # Actions
 
@@ -14,4 +14,4 @@ The [Actions](actions/overview.md) section explains and provides visual examples
                                           
 # Importing from the Bank
 
-Besides the above, workflows can be imported directly into the account-owned workflows collection from a central repository, referred to as the workflows "Bank". We explain how to do so in the following [documentation page](bank.md).
+Workflows can be imported directly into the Account-owned collection from a central repository, referred to as the workflows "Bank". We explain how to do so in the following [documentation page](bank.md).
