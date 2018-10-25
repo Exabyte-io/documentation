@@ -1,16 +1,14 @@
 # Entity Permissions
 
-Permissions are **rules** which define which types of actions are **allowed** to be performed on an entity by an Account. Examples of actions that are regulated by permissions include inspection, manipulation and/or modification.
+Permissions are **rules** defining which types of actions are **allowed** to be performed on an [Entity](overview.md) by an [Account](/accounts/overview.md). Examples of actions that are regulated by permissions include inspection (view), manipulation (execution) and/or modification (edit).
 
-The Account which created (and which therefore [owns](ownership.md)) an entity is granted **full** permissions to it.
+The [owner](ownership.md)) of an entity is granted **all** permissions to it.
 
 # Types of Permissions
 
-The following permission types are offered on our platform: 
-
 ## Read 
 
-Choose the "Read" <i class="zmdi zmdi-menu zmdi-hc-border"></i>  option if Accounts should be limited to inspecting the contents of the entity, without making any changes.
+Choose the "Read" <i class="zmdi zmdi-menu zmdi-hc-border"></i>  option if actions should be limited to inspecting the contents of the entity, without making any changes.
 
 ## Execute 
 
@@ -24,15 +22,14 @@ The "Edit" <i class="zmdi zmdi-edit zmdi-hc-border"></i> option authorizes the m
 
 Finally, the "Comment" permission allows Accounts to write comments under the given entity, in a format and spirit similar to social network platforms.
 
-!!!note "Note: feature not implemented yet"
-    The "Comment" feature has not been implemented on our platform yet.
+> NOTE: the ability to "Comment" is still under development.
 
 # Relevance to Entity Sharing and Organizations
 
 Permissions are important in the context of [entity sharing](/collaboration/sharing/ui.md) between accounts, and during the [assignment of entities]((/collaboration/actions/team/add-remove-entity.md)) to [Teams](/collaboration/organizations/teams.md)  within an [Organization](/collaboration/organizations/overview.md).
 
 !!!note  "Note: analogy with Google Drive functionality"
-    Similarly to [Access Levels](/collaboration/sharing/access-levels.md), the permission types included on our platform mirror the functionality of Google Drive files and folders  closely [[1](#links)]. 
+    Similarly to [Access Levels](/collaboration/sharing/access-levels.md), the permission types included on our platform mirror that of the Google Drive, for example [[1](#links)]. 
 
 # Links
 

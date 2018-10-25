@@ -1,6 +1,6 @@
 # Entity Sets
 
-Materials and Jobs (but not Workflows) can each be grouped together into "Sets" to organize them better. Sets therefore play the same role as **folders** in an operating system desktop environment. 
+Some Entities (Materials and Jobs) can each be grouped together into "Sets" to organize them better. Sets therefore play a similar same role as **folders** in an operating system environment, for example.
 
 # Inspect Contents
  

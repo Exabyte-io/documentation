@@ -1,6 +1,6 @@
 # Types of Entities
 
-The user interface of the platform contains three main classes of **Entities**, each recognizable by its unique symbol illustrated below.
+The platform contains three main classes of **Entities**, each recognizable by its unique icon, as illustrated below:
 
 | Entity    |  Icon      | Details        | 
 | :-------- |:----------- |:------------- |
@@ -11,7 +11,7 @@ The user interface of the platform contains three main classes of **Entities**, 
 
 # Ownership and Permissions
 
-Each entity has an [Owner](ownership.md). They are moreover subject to a set of [permissions](permissions.md) in relation to how they can be accessed, manipulated or modified by users. Permissions are relevant in the context of [Entity Sharing](/collaboration/sharing/ui.md) and [Organizational Accounts](/collaboration/organizations/overview.md). 
+Each entity has an [Owner](ownership.md) and a set of [permissions](permissions.md) in relation to how they can be accessed, manipulated or modified by users. Permissions are relevant in the context of [Entity Sharing](/collaboration/sharing/ui.md) and [Organizational Accounts](/collaboration/organizations/overview.md). 
 
 # Common User Interface Components
 
@@ -19,15 +19,15 @@ There are interface components, and some of their respective sub-components, whi
 
 # Data
 
-Account-owned entity collections are stored in databases in the form of **structured data**.  Entities can also have **metadata**  attached to them, in the form of descriptive tags for example. These concepts are elucidated in the following [dedicated page](data.md).
+Entities are stored in a database in the form of **structured data**. Entities can also have **metadata** attached to them, in the form of descriptive tags for example. These concepts are elucidated in the following [dedicated page](data.md).
 
 # Sets
 
-Jobs and Materials (but not Workflows) can be grouped together under folders, or "Sets", as explained [here](actions/sets.md).
+Some Entities can be grouped together under folders, or "Sets", as explained [here](actions/sets.md).
 
 # Bank
 
-Please refer to [this page](bank.md) for an introduction to the "Bank" concept.
+Unique Entities are collected inside the Entity Banks by type. Please refer to [this page](bank.md) for an introduction to the "Bank" concept.
 
 # Common Actions
 
