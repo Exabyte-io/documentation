@@ -37,4 +37,3 @@ Permissions are important in the context of [entity sharing](/collaboration/shar
 # Links
 
 1. [Share files from Google Drive, Website](https://support.google.com/drive/answer/2494822)
-

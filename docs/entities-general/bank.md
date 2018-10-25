@@ -20,7 +20,7 @@ Each entity type has a different Mapping Function. It assesses certain defining 
 
 ## Visual Representation
 
-The correspondence between Account and Bank entity collections can be visualized as shown below:
+The correspondence between Account and Bank entity collections can be visualized as shown below.
 
 ![Bank Diagram](/images/Bank-diagram-Mapping.png "Bank Diagram")
 
@@ -40,13 +40,13 @@ This hash is then compared to the pre-existing ones in the Bank collection. In c
 
 ## Private 
 
-If an Account has a sufficient [service level](/pricing/service-levels.md), the situation displayed below might appear, whereby private items are accessible only to the Account members:
+If an Account has a sufficient [service level](/pricing/service-levels.md), the situation displayed below might appear, whereby private items are accessible only to the Account members.
 
 ![Bank Diagram](/images/Bank-diagram-Private.png "Bank Diagram")
 
 ## Public 
 
-Alternatively, the lack of data privacy leads to the following scenario, whereby all other Accounts gain access to the Bank entities:
+Alternatively, the lack of data privacy leads to the following scenario, whereby all other Accounts gain access to the Bank entities.
 
 ![Bank Diagram](/images/Bank-diagram-Public.png "Bank Diagram")
 

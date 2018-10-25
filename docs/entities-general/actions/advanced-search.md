@@ -19,7 +19,4 @@ Each Rule is composed of three successive entries. An entity-related property ha
 
 # Execute Query
 
-Once all the logical statements and operators have been inserted as part of the desired overall flow, the resulting advanced search can be executed by clicking the `Search` button, and the corresponding search results will then be displayed. Alternatively, the entire logical flow can be reverted to its original basic appearance with the neighbouring `Reset` button.
-
-
-
+Once all the logical statements and operators have been inserted as part of the desired overall flow, the resulting advanced search can be executed by clicking `Search`, and the corresponding search results are then displayed. Alternatively, the entire logical flow can be reverted to its original basic appearance with the neighbouring `Reset` button.

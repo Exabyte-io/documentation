@@ -6,7 +6,7 @@ The user is referred to the relevant [section of the documentation](/data/conven
 
 # Example JSON representation
 
-The following is an example of JSON structured representation of an entity item contained in an Account-owned collection, where only the general keywords applicable to all entity types have been preserved. 
+The following is an example of JSON structured representation of an entity item contained in an Account-owned collection, where only the general keywords applicable to all [entity types](overview.md) have been preserved. 
 
 The reader is referred to other documentation pages for aspects that might pertain specifically to [Materials](/materials/data.md), [Workflows](/workflows/data/data.md) and [Jobs](/jobs/data.md) respectively. 
 
@@ -42,7 +42,7 @@ The reader is referred to other documentation pages for aspects that might perta
 
 | Keyword    |  Short Description      | Details        | 
 | :-------- |:----------- |:------------- |
-| _id | Identifier in Account-owned Entity Collection    | To each entity contained in an Account-owned collection, a unique Collection Identifier code is attributed by our platform. |
+| _id | Identifier in Account-owned Entity Collection    |  Each entity contained in an Account-owned collection has a unique Collection Identifier code, attributed by our platform. |
 | name | Name of Entity | Entity's human-readable name in Account-owned Collection. |
 | owner / creator | Entity Owner and Creator | Further information about both the Account [owning](ownership.md) the entity, and about the user who created it in the first place, is also contained in the entity's structured representation as two separate nested JSON **Objects**. These are described separately in the other table below. |
 | exabyteId      | Identifier in Bank Entity Collection | In the case where the entity under consideration is of a "Bankable" entity type, its identifier within the corresponding [Bank Entity Collection](bank.md) is provided by this keyword, distinct from the above mentioned Account-owned collection identifier. |
@@ -55,14 +55,14 @@ The reader is referred to other documentation pages for aspects that might perta
 
 | Keyword    |  Short Description      | Details        | 
 | :-------- |:----------- |:------------- |
-| "_id" | Identifier in Platform    | To each user and associated Account(s) contained in our platform corresponds a unique Identifier code  |
+| "_id" | Identifier in Platform    |  Each user and associated Account(s) contained in our platform has a corresponding unique Identifier code  |
 | "slug" | Name of User/Account | The human-readable name of the Account which owns the entity under consideration, or of the user who created the entity originally. |
 | "cls"  | User/Account distinction    | Draws the distinction between [Accounts](/accounts/overview.md) and [Users](/accounts/users.md). The Owner of an entity is always an Account, whereas the entity's creator is one of the Account's constituent users |
 
 
 # Metadata
 
-Metadata refers to data (or information) that in turn provides information about other data. In the context of our platform, Metadata is used primarily to assist the user in [searching](actions/search.md) through the  Entity collections. For this purpose, we supplement collection entries with additional descriptive textual information, such as user-defined tags.
+Metadata refers to data (or information) that in turn provides information about other data. In the context of our platform, Metadata is used primarily to assist the user in [searching](actions/search.md) through the Entity collections. For this purpose, we supplement collection entries with additional descriptive textual information, such as user-defined tags.
 
 The above example of JSON representation shows how tags are stored within structured data, under the final "tags" keyword.
 
@@ -80,7 +80,14 @@ The user can add descriptive tags to the entity in order to retrieve it more eas
 
 A specific kind of metadata is used to mark slab / surface materials. Such metadata is stored in the entity on its creation and can, for example, be used for surface energy calculations. This is explained further in the [corresponding documentation section](/materials-designer/header-menu/advanced/surface-slab/#structural-metadata).
 
+# Slug Representation
+
+It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters in them. 
+
+We make use of the "Slug" representation for converting such strings into machine-readable versions. This involves for example replacing whitespaces with dashes, and other similar conventions [[3](#links)].
+
 # Links
 
 1. [Introducing JSON, Website](https://www.json.org/)
 2. [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)
+3. [Slugify library for Javascript, Website](https://www.npmjs.com/package/slugify)
