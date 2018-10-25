@@ -1,6 +1,6 @@
 # Types of Entities
 
-The platform contains three main classes of **Entities**, each recognizable by its unique icon, as illustrated below:
+Our platform contains three main classes of **Entities**, each recognizable by its unique icon, as illustrated below:
 
 | Entity    |  Icon      | Details        | 
 | :-------- |:----------- |:------------- |
