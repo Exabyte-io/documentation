@@ -77,7 +77,7 @@ A specific kind of metadata is used to mark slabs / surfaces. Such metadata is s
 
 # Slug
 
-It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters [[3](#links)].. We store machine-safe representation of the entity "name" (as explained in the table above) under "slug" keyword.
+It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters [[3](#links)]. We store machine-safe representation of the entity "name" (as explained in the table above) under "slug" keyword.
 
 # Links
 

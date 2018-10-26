@@ -4,10 +4,6 @@ Account Charges can be searched in an [advanced fashion](/entities-general/actio
 
 # Animation
 
-In the animation below, we begin by opening the Advanced Search bar under the Charges page, accessible via the corresponding button  <i class="zmdi zmdi-search-for zmdi-hc-border"></i> in the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar).
- 
-We then search for 
-
-. This advanced search only returns us two results in this case. We conclude by resetting the view of the items list to its initial appearance. 
+In the animation below, we begin by opening the Advanced Search bar under the Charges page, accessible via the corresponding button <i class="zmdi zmdi-search-for zmdi-hc-border"></i> in the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar). We then search for charges incurred during the course of year 2018, and executed on the cluster-007 (under the alias "cluster-007") and review the total sum of charges. After taking a quick look at the search results, we conclude by resetting the view of the items list to its original appearance.
 
 <img data-gifffer="/images/advanced-search-charges.gif" />
