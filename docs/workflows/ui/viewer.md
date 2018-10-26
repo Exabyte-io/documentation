@@ -4,4 +4,4 @@ In order to inspect a workflow, the user can [open it](/entities-general/actions
 
 # Viewer = Designer
 
-In the case of workflows, the user interface and editing functionality of the Viewer is **exactly analogous** to that of the [Designer](/workflow-designer/general-overview.md). The user is therefore referred to the latter documentation page.
+In the case of workflows, the user interface and editing functionality of the Viewer is **exactly** the same as that of the [Designer](/workflow-designer/general-overview.md). The user is therefore referred to the latter documentation page for more details.

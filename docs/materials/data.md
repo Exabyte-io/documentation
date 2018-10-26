@@ -1,10 +1,10 @@
 # Structured Representation of Materials
 
-We present an example of our approach towards storing entity-related data in a structured fashion, explaining how it affects materials specifically. The special aspects presented herein complement the [general introduction](/entities-general/data.md).
+We present an example of our approach towards storing structured data for materials. The aspects presented herein complement the [general introduction](/entities-general/data.md).
 
 # Example Representation
 
-In the expandable section below, the user can find an example JSON representation of FCC Silicon: 
+In the expandable section below, the user can find an example JSON representation of a face-centered cubic Silicon: 
 
 <details>
   <summary>
@@ -104,12 +104,19 @@ In the expandable section below, the user can find an example JSON representatio
 
 | Keyword    |  Short Description      | Details        | 
 | :-------- |:----------- |:------------- |
-| basis | Crystal basis with explicit identification per atom  | For every atom contained in the [basis](/materials-designer/source-editor/basis.md) (repeated unit) of the crystal structure, the atomic type and coordinates are contained under this keyword, including a mention of the coordinate system being employed between fractional (crystal) and Cartesian coordinates |
-|  lattice       |    Crystal lattice in both Bravais and vector notations   |     This keyword contains information about the lattice parameters of the unit cell of the [Bravais lattice](/materials-designer/source-editor/lattice.md) under consideration, which consist in the $a$, $b$ and $c$ lattice constants (in units of Angstroms), and $\alpha$, $\beta$ and $\gamma$ lattice angles (in degrees). The components of the corresponding lattice vectors are also included under this keyword. |
-| derivedProperties |  Extra properties derived from lattice/basis (only one example property shown) | Additional physical properties of the crystal structure under investigation are listed here, derived from the above-mentioned crystal lattice and basis information. The example JSON object shown above only includes one such derived property, namely the volume of the unit cell, but numerous more can be computed in this way as explained in the section ensuing the present table. |
-| hash | Hash string calculated by the [Materials Bank Mapping Function](bank.md)  |   Structure-based hash string for the primitive standard representation of this material, calculated when checking this material against existing entries within the Materials Bank |
-| scaledHash | As above, but for the primitive axis scaled to 1.0 (i.e. to identify material under uniform pressure) | This hash string is calculated by scaling all the dimensions of the primitive unit cell representation of the material by the $a$ lattice constant |
+| basis   | Crystal [basis](/materials-designer/source-editor/basis.md) with explicit identification per atom  | The information about the atomic type and coordinates |
+| lattice | Crystal [lattice](/materials-designer/source-editor/lattice.md) in both Bravais and vector notations  | Crystal lattice parameters - lattice constants and angles. Components of the corresponding lattice vectors are also included. |
+| derivedProperties | [descriptive properties](/data/convention/structured.md#by-relation-to-workflow) derived from lattice/basis (only one example shown above) | Additional properties of the crystal structure under investigation as explained in the section ensuing the present table. |
+| hash | Hash string calculated by the [Bank Mapping Function](bank.md)  |   Structure-based hash string for the primitive standard representation of this material, calculated when checking this material against existing entries within the Materials Bank |
+| scaledHash | As above, but for the lattice axis scaled to 1.0 (i.e. to identify same structures under different uniform pressure) | This hash string is calculated by scaling all the dimensions of the primitive unit cell representation of the material by the $a$ lattice constant |
 
-# Materials Properties
+# Derived Properties
 
-As seen above, we use the crystal **lattice** and **basis** JSON objects as the main identifying properties. Based upon them, we calculate the final **derivedProperties** object, that may include such information as the unit cell volume, density, chemical formula, and a large number of other possibilities. For every material imported/uploaded to our platform, we pre-calculate a set of such descriptors, and store them inside this "derivedProperties" section.
+As seen above, we use the crystal **lattice** and **basis** JSON objects as the main [identifying properties](/data/convention/structured.md#by-relation-to-uniqueness). Based upon them, we calculate the **derivedProperties**, that may include such information as:
+ 
+ - the unit cell volume, 
+ - density, 
+ - chemical formula, 
+ - and a large number of other possibilities. 
+ 
+ For every material imported/uploaded to our platform, we pre-calculate a set of such descriptors, and store them inside this "derivedProperties" section. This information can be further used during data analysis or the construction of statistical predictive models.

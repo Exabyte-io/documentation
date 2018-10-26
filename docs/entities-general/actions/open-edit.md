@@ -1,6 +1,6 @@
 # Open / View Entity
 
-The user might wish at some point to view or adjust an existing entity, for example changing the associated [metadata](metadata.md). The `Open` action allows for that exactly.
+The user might wish at some point to view or adjust an existing entity, for example to [edit its name](name.md) or change the associated [metadata](metadata.md). The `Open` action makes it possible.
 
 # Edit Entity
 
@@ -12,6 +12,6 @@ Two equivalent approaches can be adopted to open an entity: either the user can 
 
 # Animation
 
-By way of an example, in the animation below, we demonstrate both ways of opening a workflow from the account-owned collection. We then inspect it under the Workflow Viewer.
+In the animation below we demonstrate both ways of opening a workflow from the account-owned collection. We then inspect it under the Workflow Viewer.
 
 <img data-gifffer="/images/open-workflow.gif" />
