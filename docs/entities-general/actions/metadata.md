@@ -1,8 +1,8 @@
 # Edit Description
 
-TBA
+We demonstrate in the animation below how to add an example description to a Job inspected in [Viewer](/jobs/ui/viewer.md). After opening the relevant dialog, we enter a series of headers in the Markdown syntax [[1](#links)] and then add a link to a webpage. As demonstrated by the animation the editor is implemented using the WYSIWYG approach [[2](#links)].
 
-<!-- TODO: GM to add explanation and an example animation -->
+<img data-gifffer="/images/metadata-description.gif" />
 
 # Edit Tags
 
@@ -11,3 +11,9 @@ In order to edit Tags, modify the content in the relevant text field pressing "E
 The aforementioned process is demonstrated in the animation below.
 
 <img data-gifffer="/images/tagging-workflow.gif" />
+
+
+# Links
+
+1. [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)
+2. [WYSIWYG Wikipedia, Website](https://en.wikipedia.org/wiki/WYSIWYG) 

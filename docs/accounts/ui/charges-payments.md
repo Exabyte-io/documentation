@@ -26,7 +26,7 @@ A [Search](/entities-general/actions/search.md) bar <i class="zmdi zmdi-search z
 
 ### Advanced Search
 
-An [Advanced Search](/entities-general/actions/advanced-search.md) <i class="zmdi zmdi-search-for zmdi-hc-border"></i> feature is further offered in the Charges page, in order to filter them more effectively.
+An [Advanced Search](/entities-general/actions/advanced-search.md) <i class="zmdi zmdi-search-for zmdi-hc-border"></i> feature is further offered in the Charges page, in order to filter them more effectively. We offer an example of this action [here](../accounting/charges-advanced-search.md).
 
 The following properties of Charges are available to be searched under the advanced method.
 
