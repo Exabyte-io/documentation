@@ -1,10 +1,10 @@
 # Import Entities from Bank
 
-In order to import Materials or Workflows from their respective [Banks](../bank.md) into the Account-owned [collections](/accounts/collections.md), the following general procedure should be followed.
+In order to import Entities from their respective [Banks](../bank.md) into the Account-owned [collections](/accounts/collections.md), the following general procedure should be followed.
 
 # Open Bank Page
 
-First click on the corresponding `Bank` option in the [left-hand Sidebar](/ui/universal/left-sidebar.md) and choose either Materials or Workflows. The user is then presented with a comprehensive list of centrally-stored Bank Entities, depending on the selected option.
+First click on the corresponding `Bank` option in the [left-hand Sidebar](/ui/universal/left-sidebar.md) and choose either Materials or Workflows.
 
 # Search for Entity
 

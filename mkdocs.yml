@@ -77,21 +77,17 @@ pages:
         # Explain the notion of Account-owned Entity collection
         - Collections:                                   accounts/collections.md
         - User Interface:
-            # List of other pages in this subsection
             - Overview:                                  accounts/ui/overview.md
             - Profile Page:                              accounts/ui/profile-page.md
             - Account Badge:                             accounts/ui/account-badge.md
             - Switcher:                                  accounts/ui/switcher.md
-            # Accounts explorer under left-sidebar
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
             # Includes explanation about how to change service levels (upgrade)
             - Service Levels:                             accounts/ui/service-level.md
             - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
-              # Who can see profile information
             - Preferences > Profile:                     accounts/ui/preferences/profile.md
-            # Explain actual actions here, with GIFS and screenshots
             - Preferences > User Settings:               accounts/ui/preferences/settings.md
             - Preferences > API Tokens:                   accounts/ui/preferences/api.md
             - Preferences > SSH Keys:                    accounts/ui/preferences/ssh.md
@@ -99,15 +95,14 @@ pages:
         - Accounting Actions:
             - Overview:                                  accounts/accounting/overview.md
             # Everything related to direct actions that user can perform with regards to his account
-            # The following actions can be accessed from both right-hand sidebar and Service Level button
             - Check balance and quota:                   accounts/accounting/check-balance-quota.md
             - Increase balance:                          accounts/accounting/increase-balance.md
             - Increase Quota:                            accounts/accounting/increase-quota.md
             - Change Payment Method:                     accounts/accounting/payment-methods.md
+            - Charges > Advanced search:                 accounts/accounting/charges-advanced-search.md
 
 
     - Collaboration:
-        # What is Org (account type), member types, Members, Admins
         - Organizations:
             - Overview:                                  collaboration/organizations/overview.md
             - Roles:                                     collaboration/organizations/roles.md
@@ -117,7 +112,7 @@ pages:
             - Teams Explorer:                            collaboration/ui/teams-explorer.md
             - Team Page:                                 collaboration/ui/team-page.md
             - People Explorer:                           collaboration/ui/people-explorer.md
-        # Explain the notion of sharing of entities between accounts, and how to add new users to sharing options (UI+actions)
+        # The notion of sharing of entities between accounts, and how to add new users to sharing options (UI+actions)
         - Entity Sharing:
             - User Interface:                            collaboration/sharing/ui.md
             - Actions:                                   collaboration/sharing/actions.md
@@ -134,55 +129,44 @@ pages:
             - Team > Add / Remove Member:               collaboration/actions/team/add-remove-member.md
             - Team > Add / Remove Entity:               collaboration/actions/team/add-remove-entity.md
 
-
 # ENTITIES
     - Entities & Common Aspects:
-        # Introduction (links) to entity concepts such as entity Types, Bank, Sets, Actions (Overview page), and Common Interface Components.
+        # Introduction (links) to entity concepts, actions and common interface components.
         - Overview:                                     entities-general/overview.md
-        # Explain the notion of Account ownership of entities, put links to Accounts overview
+        # The notion of ownership + links to Accounts overview
         - Ownership:                                    entities-general/ownership.md
-        # Explain the notion of permissions (read, edit, execute, comment) on Entities
-        # put links to Accounts, Organizations, Teams overview
+        # The notion of permissions (read, edit, execute, comment) + links to Accounts, Organizations, Teams overview
         - Permissions:                                  entities-general/permissions.md
-        # JSON representation of structured data (with link to Compute section)
+        # JSON representation of structured data (with links to Compute section)
         - Data:                                         entities-general/data.md
-        # Introduction to concept of sets (collection or folders of entities), with references to Sets Actions below
+        # Introduction to concept of sets with references to Sets Actions below
         - Sets:                                         entities-general/sets.md
-        # This page explains the whole general concept of bank, including the creation of bank entries from account collections
-        # Reference to "Copy from Bank" action below
+        # The concept of bank, creation of bank entries + reference to "Copy from Bank" action
         - Bank:                                         entities-general/bank.md
+        - Default:                                      entities-general/default.md
         - User Interface:
-            # List, with links, of common entity Interface Components (Explorer, Designer and Viewer)
             - Overview:                                 entities-general/ui/overview.md
-            # general explanation about actions toolbar, dropdown, entity Items lists....
             - Explorer:                                 entities-general/ui/explorer.md
-            # Introduction to the general concept of entity designer, with links to entity-specific designer overview pages
             - Designer:                                 entities-general/ui/designer.md
-            # Still needs to be done: explain edibility and adjustment differences between viewer and designer
             - Viewer:                                   entities-general/ui/viewer.md
         - Actions:
-            # List, with links, of common entity actions listed below, including also sharing
+            # List, with links, of actions listed below + sharing
             - Overview:                                 entities-general/actions/overview.md
-            ###################### Go through each common entity action in turn
+            - Select:                                   entities-general/actions/select.md
             - Search:                                   entities-general/actions/search.md
-            - Advanced Search:                          entities-general/actions/advanced-search.md
+            - Advanced search:                          entities-general/actions/advanced-search.md
             - Open:                                     entities-general/actions/open-edit.md
             - Clone:                                    entities-general/actions/clone.md
             - Delete:                                   entities-general/actions/delete.md
             - Set default:                              entities-general/actions/set-default.md
-            # MD Description, Tags, Metadata for surfaces / slabs
+            # Metadata Description, Tags, Metadata for surfaces / slabs
             - Add metadata:                             entities-general/actions/metadata.md
             - Change name:                              entities-general/actions/name.md
             - Create:                                   entities-general/actions/create.md
-            ######################
             # Actions specific to Bank and Sets
-            # Specific info about import from bank procedure only
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
-            # Specific info about procedure to create sets only
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
-            # Specific info about move to sets procedure only
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
-
 
 
 # ENTITIES - SPECIFIC
@@ -191,6 +175,7 @@ pages:
         - Data:                                         materials/data.md
         - Properties:                                   materials/properties.md
         - Bank:                                         materials/bank.md
+        - Default:                                      materials/default.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -201,6 +186,7 @@ pages:
             - Import:                                   materials/actions/import.md
             - Upload:                                   materials/actions/upload.md
             - Set default:                              materials/actions/set-default.md
+            - Advanced search:                          materials/actions/advanced-search.md
             - Bank > Copy from:                         materials/actions/copy-bank.md
 
     - Materials Designer:
@@ -233,6 +219,7 @@ pages:
     - Workflows:
         - Overview:                                     workflows/overview.md
         - Bank:                                         workflows/bank.md
+        - Default:                                      workflows/default.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
             - Designer:                                 workflow-designer/general-overview.md
@@ -248,6 +235,7 @@ pages:
             - Overview:                                 workflows/actions/overview.md
             - Update:                                   workflows/actions/update.md
             - Set default:                              workflows/actions/set-default.md
+            - Bank > Copy from:                         workflows/actions/copy-bank.md
         - Add-ons:
             - K-point Convergence:                      workflows/addons/convergence-algorithms.md
             - Structural Relaxation:                    workflows/addons/structural-relaxation.md

@@ -6,15 +6,39 @@ For [accounts](/accounts/overview.md) with [service levels](/pricing/service-lev
   
  Bankable Entities for the moment consist of Materials and Workflows.
 
+# Mapping Function
+
+Mapping Function produces a **hash** string (explained below) and is used to assert the uniqueness of Bank Entities. Each entity type has a different Mapping Function. It assesses certain [defining features](/data/convention/structured.md#by-relation-to-uniqueness) of the entity, as explained for the case of [Materials](/materials/bank.md) and [Workflows](/workflows/bank.md) separately.
+
+
 # How Bank Entities are Generated
 
 Any entity item of bankable type is **automatically** added to the corresponding Bank collection using the procedure further described below.
 
-# Mapping Function
+## 1. Hash Calculation
 
-After creation, the new Bankable Entity is **checked** by a **Bank Mapping Function** against existing Bank entries, to make sure that it is unique. In case of a positive match, the entity is **merged** into the pre-existing one. The correspondence is established through the **hash** string (the output of the mapping function) as explained below.
+After creation, the hash for the new Entity is calculated by the **Mapping Function** and compared against those of existing Bank entries. From this point onwards, the following two alternative scenarios can emerge.
 
-Each entity type has a different Mapping Function. It assesses certain defining features of the entity, as explained for the case of [Materials](/materials/bank.md) and [Workflows](/workflows/bank.md) separately. 
+## 2a. Positive Match by Hash
+
+If a positive match of hash strings is encountered between the new and an existing Bank entries, then the newly created Bank Entry is **merged** with an existing one within the Bank collection and the Bankable Entity in its corresponding [collection](/accounts/collections.md) is linked to the existing Bank Entity.
+
+## 2b. No Match by Hash
+
+If no match is found, a new Bank Entity is created and a link between it and the corresponding Bankable Entity is established.
+
+## Flowchart/Summary
+
+A summary depicting the above steps involved in the creation of Bank entities can be found in the expandable section below: 
+
+<details>
+  <summary>
+     Expand to view
+  </summary> 
+    
+  ![Bank Diagram](/images/Bank-Flowchart.png "Bank Diagram")
+  
+  </details>
 
 ## Visual Representation
 
@@ -46,20 +70,6 @@ Alternatively, the lack of data privacy leads to the following scenario, whereby
 ![Bank Diagram](/images/Bank-diagram-Public.png "Bank Diagram")
 
 > NOTE: If different Accounts happen to generate exactly the same Bank Entity, the privacy settings are nullified if any of these Accounts makes the Entity public.
-
-
-# Flowchart/Summary
-
-A summary depicting the above steps involved in the creation of Bank entities can be found in the expandable section below: 
-
-<details>
-  <summary>
-     Expand to view
-  </summary> 
-    
-  ![Bank Diagram](/images/Bank-Flowchart.png "Bank Diagram")
-  
-  </details>
   
 
 # Importing Entities from Bank
