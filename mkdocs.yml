@@ -242,7 +242,6 @@ pages:
             - Subworkflows:                             workflows/data/subworkflows.md
             - Units:                                    workflows/data/units.md
             - Templates:                                workflows/data/templates.md
-            - Jobs:                                     workflows/data/jobs.md
             - Maps:                                     workflows/data/maps.md
         - Actions:
             - Overview:                                 workflows/actions/overview.md
@@ -274,13 +273,15 @@ pages:
     - Jobs:
           # Links list to User Interface, Data and Actions for Workflows
         - Overview:                                     jobs/overview.md
+        - Projects:                                     jobs/projects.md
+        - Data:                                         jobs/data.md
         - User Interface:
              # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
             - Explorer:                                 jobs/ui/explorer.md
+            - Designer:                                 jobs-designer/overview.md
              # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
             - Viewer:                                   jobs/ui/viewer.md
          # Introduction to concept of Projects (particular set for jobs only)
-        - Projects:                                     jobs/projects.md
         - Actions:
             - Overview:                                 jobs/actions/overview.md
             - Run:                                      jobs/actions/run.md
