@@ -25,11 +25,11 @@ Other general user interface components are instead accessible only from specifi
 
 ![ui-specific](/images/ui-specific.png "ui specific")
 
-## 1. Homepage Navigation Trigger
+## 1. Link to Homepage Navigation
 
 The Navigation page is accessible through our company logo present at all times in the top [header bar](header-footer.md). [This page](specific/homepage.md) explains how to use Navigation to make the initial general choices on the nature of the computations to be performed on our platform.
 
-## 2. Dashboard Trigger
+## 2. Link to Dashboard
 
 A system status "Dashboard" can be accessed via the [left-hand sidebar menu](left-sidebar.md). It is explained in more details in [this page](specific/dashboard.md).
 

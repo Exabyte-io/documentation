@@ -60,7 +60,7 @@ Detailed description of submission queues and compute levels is available [elsew
 |Ordinary  | 1.0
 |Saving    | 0.2
 
-# Premium hardware
+# Clusters and Premium hardware
 
 Our infrastructure includes multiple compute clusters at a time, with some providing premium performance. The state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters). Premium hardware has an extra charge factor as shown below: 
 

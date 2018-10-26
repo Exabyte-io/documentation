@@ -8,7 +8,7 @@ The appearance and functionality of the header bar is illustrated below.
 
 The left-hand sidebar can be activated by clicking the top left corner anchor <i class="zmdi zmdi-menu zmdi-hc-border"></i>, or alternatively through the toggle slider towards the right-end of the header.
 
-## Account Homepage Trigger
+## Link to Homepage
 
 Navigate back to the homepage of the account by clicking the main company logo.
 

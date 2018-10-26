@@ -1,23 +1,23 @@
 # Materials-specific Actions
 
-The following set of actions can be performed in the specific context of Materials, starting from the corresponding [Explorer Interface](../ui/explorer.md). They complement those of general applicability [introduced elsewhere](/entities-general/actions/overview.md).
+The following set of actions can be performed for Materials from the corresponding [Explorer Interface](../ui/explorer.md). They complement the actions of general applicability [introduced elsewhere](/entities-general/actions/overview.md).
 
 # Advanced Search
 
-Materials stored in the Account-owned collection can be searched and retrieved using a more advanced search engine that the [basic version](/entities-general/actions/search.md), as explained in [this page](advanced-search.md).
+Materials stored in the Account-owned collection can be searched in an advanced manner as explained in [this page](advanced-search.md).
 
 # Import 
 
-Additional materials can be imported from third-party online databases into the Account-owned collection by following [these instructions](import.md). 
+Additional materials can be imported from third-party online databases into the Account-owned collection by following [these instructions](import.md).
 
-# Upload 
+# Upload
 
-The user may also wish to upload new materials into the Account-owned collection directly from local files containing the relevant crystal structure data, as outlined [here](upload.md).
+The user may also wish to upload new materials into the Account-owned collection directly from local files containing the relevant crystal structure data. Such process is explained [here](upload.md).
 
 # Set Default
 
-Setting a material as the default choice, among the list of collection entries, might present some specific issues compared to the [general procedure](/entities-general/actions/set-default.md). They are reviewed [in this page](set-default.md).
+Setting a material as the default choice is mostly equivalent to the [general procedure](/entities-general/actions/set-default.md) and is also reviewed [in this materials-specific page](set-default.md).
 
 # Copy Materials from Bank
 
-An animation for importing Materials from the Bank is shown [here](copy-bank.md), which follows from the [general introduction](/entities-general/actions/copy-bank.md).
+Copying Materials from the Bank is mostly equivalent to the procedure explained in [general introduction](/entities-general/actions/copy-bank.md) and is also shown [here](copy-bank.md).

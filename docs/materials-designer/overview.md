@@ -25,7 +25,7 @@ The Materials Designer is structured into four main building blocks and has the 
 
 # Default Material
 
-When first opened, the page is initialized with the default material (FCC Silicon initially). Readers can learn how to set and adjust default materials in [this page](/entities-general/actions/set-default.md). 
+When first opened, the page is initialized with the default material (FCC Silicon initially). Readers can learn how to set and adjust default materials in [this page](/materials/actions/set-default.md). 
 
 # Links
 

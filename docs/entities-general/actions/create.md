@@ -1,8 +1,6 @@
 # Create New Entities
 
-The creation of a new entity in the relevant Account-owned collection can be performed through the "Create" button <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i>, located in the top-right actions toolbar of the [Explorer Interface](../ui/explorer.md#action-related-components).
-
-This leads the user to the corresponding  [Entity Designer](../ui/designer.md) for conceiving a new entity from scratch. 
+Creation of a new entity in the relevant Account-owned collection can be initiated through "Create" button <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i>, located in the actions toolbar of the [Explorer Interface](../ui/explorer.md#action-related-components). This leads the user to the corresponding  [Entity Designer](../ui/designer.md) for conceiving a new entity from scratch. 
 
 # Animation 
 

@@ -16,7 +16,7 @@ The image below shows components available under the [left sidebar](/ui/universa
 
 ![Account UI left sidebar](/images/left-sidebar-accounts.png "Account UI left sidebar")
 
-## 1. Explorer Trigger
+## 1. Link to Accounts Explorer
 
 The list of all accounts on our platform  can be accessed following [these instructions](explorer.md).
 
@@ -30,10 +30,10 @@ Similarly, more components are present under the [right-hand sidebar](/ui/univer
 
 Some information about the currently employed account is displayed in ["Account Badge"](account-badge.md). The latter also acts as the trigger button for the opening of the right-hand sidebar.
 
-## 2. Switcher Trigger
+## 2. Link to Switcher
 
 The user can switch between different accounts that he/she is allowed to use under the ["Switcher"](switcher.md). 
 
-## 3. Charges and Payments Trigger
+## 3. Link to Charges and Payments
 
 The list of payments and charges incurred by an account, and payment methods, can be accessed under ["Billing and Payments"](charges-payments.md).
