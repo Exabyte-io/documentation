@@ -1,4 +1,4 @@
-# Workflows Explorer Interface 
+# Workflows Explorer
 
 Following the [general introduction](/entities-general/ui/explorer.md) to the Explorer Interface, it is worth highlighting special features which are exclusive to Workflows.
 

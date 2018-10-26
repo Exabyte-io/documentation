@@ -1,10 +1,10 @@
 # Common Entity Actions
 
-Entities share a number of equivalent attributes and actions in the user interface. Numerous simple actions, such as changing the item's name or adding descriptive metadata text to it, are performed in the same manner. Click on the links below to access the documentation pages associated with each type of action.
+Entities share a number of equivalent attributes and actions. Click on the links below to access the documentation pages associated with each corresponding type of action.
 
 # [Create New Entity](create.md)
 
-In order to create new entities, [this general procedure](create-sets.md) is to be followed.
+In order to create new entities, [this general procedure](create-sets.md) should be followed.
 
 # [Modify Name](name.md)
 
@@ -36,15 +36,15 @@ The user can perform general searches to retrieve particular entities of interes
 
 # [Advanced Search](advanced-search.md)
 
-More advanced search functionality than that mentioned above is available for some particular types of entities, as explained [in a separate page](advanced-search.md).
+More advanced search functionality is available for some particular types of entities, as explained [in a separate page](advanced-search.md).
 
 # [Copy from Bank](copy-bank.md)
 
-Bankable entities can be copied (or imported) from their respective Banks into the Account-owned collections, following the general instructions contained [here](copy-bank.md).
+[Bankable entities](../bank.md) can be copied (or imported) from their respective [Banks](../bank.md) into the [Account-owned collections](/accounts/collections.md), following the general instructions contained [here](copy-bank.md).
 
 # [Create / Delete Sets](create-sets.md)
 
-Sets can be created or deleted in the [following manner](create-sets.md).
+Sets of Entities and how they can be created or deleted are [explained here](create-sets.md).
 
 # [Move Entities to Sets](move-to-sets.md)
 
@@ -52,4 +52,4 @@ Entities can be moved into Sets as outlined in [this page](move-to-sets.md).
 
 # [Sharing](/collaboration/sharing/ui.md)
 
-Entities can finally be shared with other Exabyte users, or made publicly visible on the world wide web, by following [these instructions](/collaboration/sharing/ui.md).
+Entities can be [shared between accounts](/collaboration/sharing/actions.md), or made [publicly](/collaboration/sharing/access-levels.md) visible on the world wide web, by following [these instructions](/collaboration/sharing/ui.md).

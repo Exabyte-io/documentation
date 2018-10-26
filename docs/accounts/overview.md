@@ -1,12 +1,16 @@
 # Accounts
 
-The concept of "Account" within the context of our platform broadly refers to the various different ways in which a user can engage in actions such as creating [Materials](/materials/overview.md) or runing [Jobs](/jobs/overview.md) or collaborating with other users by sharing entities with them. 
+The concept of "Account" within the context of our platform broadly refers to the multiple different ways in which a user can engage in **actions** on the [entities](/entities-general/overview.md), such as [creating](/entities-general/actions/create.md) [Materials](/materials/overview.md) or [running](/jobs/actions/run.md) [Jobs](/jobs/overview.md) or collaborating with other users by [sharing](/collaboration/sharing/actions.md) entities with them. 
 
 > For the explanation of how the term "User" is compared with the more general concept of "Account", please refer to the [following page](users.md).
 
+# Account Entities
+
+Accounts perform actions on the Entities stored in the corresponding collections as explained in the [corresponding page](collections.md).
+
 # Types of Accounts
 
-It is important for the present discussion to draw a distinction between two different types of accounts: **Personal** accounts for individual users, and collaborative accounts with a membership comprising multiple users, referred to as Organizational or **Enterprise**. The User can choose which account to use among all the available options through the Account Switcher, described [here](ui/switcher.md).
+It is important for the present discussion to draw a distinction between two different types of accounts: **Personal** accounts for individual users, and collaborative accounts with a membership comprising multiple users, referred to as **Organizational** or **Enterprise** (the two words are used interchangeably). The User can choose which account to use among all the available options through the Account Switcher, described [here](ui/switcher.md).
 
 ## Personal Accounts
 
@@ -15,6 +19,14 @@ To every user of our platform is associated a Personal Account, created at the m
 ## Organizations
 
 The concept of Organization, or collaborative account, is the object of a separate explanation in [its dedicated page](/collaboration/organizations/overview.md).
+
+# Service Levels
+
+The quality of service for the account, including features such as private data, pricing and quotas are defined by the account's [service level](service-levels.md).
+
+# Balance
+
+Account [Balance](balance.md) allows to perform actions that require monetary exchange.
 
 # User Interface
 
