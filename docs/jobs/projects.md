@@ -1,3 +1,7 @@
+# Projects
+
+Jobs are organized into **Projects** for convenience. One can think about projects as collections of jobs in the same manner as a file system directory is a collection of files.
+
 # Creating a project
 
 The following demonstrates how to create a new project inside an organization. Only organization owner has access to new projects. If you want to give other organization members access to the project, please visit [adding a project to a team](teams#adding-a-project-to-a-team) page.
