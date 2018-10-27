@@ -1,3 +1,5 @@
+<!-- TODO: GM to revise content -->
+
 # Bandstructure
 
 ![4 jobs results](/images/4_jobs_results.png "4 jobs results")
