@@ -1,6 +1,6 @@
 # Jobs Explorer Interface
 
-The features of Jobs Explorer which make it distinct from the [general case](/entities-general/ui/explorer.md) include the kind of properties that can be displayed under the items list.
+Jobs Explorer allows users to interact with the jobs. The features of Jobs Explorer that make it distinct from the [general case](/entities-general/ui/explorer.md) include the kind of information that can be displayed under the items list.
 
 The image below shows how Jobs Explorer appears under typical circumstances. The general [entity actions](/entities-general/actions/overview.md) as well as those [specific to Jobs](../actions/overview.md) originate from this interface.
 
@@ -10,19 +10,19 @@ The image below shows how Jobs Explorer appears under typical circumstances. The
 
 An important property present in the items list is the [Status indicator](../status.md) of each listed Job, under the "Status" column highlighted in the above image. 
 
-# Other Job-specific Properties
+# Other Specific Properties
 
-Additional properties available to be listed in Explorer, which are specific to Jobs, include those ticked in the image below. These options can be selected under the [Columns Selector](/entities-general/ui/explorer.md#columns-selector).
+Additional columns to be listed in Jobs Explorer specifically include those ticked in the image below and can be selected in the [Columns Selector](/entities-general/ui/explorer.md#columns-selector).
 
 ![Jobs Specific Properties](/images/jobs-properties.png "Jobs Specific Properties")
 
 ## Application
 
-This option displays the computational [applications](/applications/overview.md) employed within the Job, including their version numbers.
+This option displays the [applications](/applications/overview.md) employed within the [workflow](/workflows/overview.md) used inside the Job, including their version numbers.
 
 ## Cluster - Queue & Cores
 
-Here, the [name and queue](/jobs-designer/compute-tab.md) of the [cluster](/pricing/service-levels.md#clusters-and-premium-hardware) considered for Job execution are shown. The number of nodes and cores in this cluster used for running the Job is also indicated.
+Here, the [name and queue](/jobs-designer/compute-tab.md) of the [cluster](/pricing/service-levels.md#clusters-and-premium-hardware) where for Job is executed are shown. The number of computational nodes and CPU cores are also indicated.
 
 ## Run & Wait Time
 

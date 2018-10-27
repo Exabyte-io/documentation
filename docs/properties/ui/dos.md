@@ -1,3 +1,5 @@
+<!-- TODO: GM to revise content -->
+
 # Density of States
 
 ![5 jobs results](/images/5_jobs_results.png "5 jobs results")
