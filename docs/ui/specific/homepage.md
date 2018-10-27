@@ -46,7 +46,7 @@ The first option allows for the creation of simulation workflows for material mo
 
 ## 1. Run Simulations 
 
-Here, the user can choose to calculate [material properties](/materials/properties.md) of interest, through the selection of the corresponding workflow template. Examples of pre-defined templates may include total energy calculations, phonon dispersions or electronic bandstructure calculations. 
+Here, the user can choose to calculate [material properties](/properties/properties.md) of interest, through the selection of the corresponding workflow template. Examples of pre-defined templates may include total energy calculations, phonon dispersions or electronic bandstructure calculations. 
 
 A sample of workflow templates included under this option is portrayed in the image below. Clicking any of these available templates creates a new job implementing the workflow, under the default Project of the user's Account.
 

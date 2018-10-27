@@ -29,7 +29,7 @@ Generic keywords present for all materials are described below. These can also b
 
 ## Properties
 
-[Characteristic properties](/data/convention/structured.md#by-relation-to-workflow) present for materials after the corresponding calculation(s) are done are described below and in the [corresponding page](/materials/properties.md).
+[Characteristic properties](/data/convention/structured.md#by-relation-to-workflow) present for materials after the corresponding calculation(s) are done are described below and in the [corresponding page](/properties/properties.md).
 
 | Property    |   Description      |  
 | :-------- |:----------- |

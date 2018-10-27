@@ -173,7 +173,6 @@ pages:
     - Materials:
         - Overview:                                     materials/overview.md
         - Data:                                         materials/data.md
-        - Properties:                                   materials/properties.md
         - Bank:                                         materials/bank.md
         - Default:                                      materials/default.md
         - User Interface:
@@ -263,6 +262,7 @@ pages:
         - Overview:                                     jobs/overview.md
         - Projects:                                     jobs/projects.md
         - Data:                                         jobs/data.md
+        - Status:                                       jobs/status.md
         - User Interface:
              # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
             - Explorer:                                 jobs/ui/explorer.md
@@ -272,6 +272,7 @@ pages:
          # Introduction to concept of Projects (particular set for jobs only)
         - Actions:
             - Overview:                                 jobs/actions/overview.md
+            - Create:                                   jobs/actions/create.md
             - Run:                                      jobs/actions/run.md
             - Terminate:                                jobs/actions/terminate.md
             - Purge:                                    jobs/actions/purge.md
@@ -346,9 +347,23 @@ pages:
             - Overview:                                 data/convention/overview.md
             - Structured data:                          data/convention/structured.md
             - Non-structured data:                      data/convention/non-structured.md
-        - Files:
-            - Overview:                                 data/files/overview.md
-            - Dropbox:                                  data/files/dropbox.md
+
+    - Files:
+        - Overview:                                     files/overview.md
+        - Dropbox:                                      files/dropbox.md
+        - User Interface:
+            # Files tab under Jobs Viewer and in Dropbox
+            - Explorer:                                 files/ui/explorer.md
+        - Actions:
+            - Overview:                                 files/actions/overview.md
+
+    - Properties:
+        - Overview:                                     properties/overview.md
+        - User Interface:
+            - Overview:                                 properties/ui/overview.md
+            - Bandstructure:                            properties/ui/bandstructure.md
+            - Density of States:                        properties/ui/dos.md
+            - Fermi Energy:                             properties/ui/fermi-energy.md
 
     - REST-API:
         - Overview:                                     rest-api/overview.md

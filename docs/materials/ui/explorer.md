@@ -6,4 +6,4 @@ Materials Explorer is mostly similar to the general [Explorer](/entities-general
 
 # Materials Properties
 
-In the above image, the properties exclusive to materials have been ticked under the [Columns Selector](/entities-general/ui/explorer.md#columns-selector) drop-down. These properties are reviewed in more detail in a [dedicated page](../properties.md).
+In the above image, the properties exclusive to materials have been ticked under the [Columns Selector](/entities-general/ui/explorer.md#columns-selector) drop-down. These properties are reviewed in more detail in a [dedicated page](../../properties/properties.md).
