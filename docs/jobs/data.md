@@ -1,14 +1,10 @@
 # Structured Representation of Jobs
 
-**Job** is a "container" entity that is used to organize the data and track resource allocation. The terminology and naming is common for distributed resource allocation management. A job, in the computational sense, represents the simplest entity that has accounting set up for, and can have one or more [Materials](/materials/overview.md) and [Workflows](/workflows/overview.md) associated with it. 
-
-Jobs can be nested and chained as necessary.
+In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data/convention/overview.md), as explained in more details [elsewhere](/entities-general/data.md) in this documentation.
 
 # Example representation
 
-In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data/convention/overview.md), as explained [elsewhere](/entities-general/data.md) in this documentation.
-
-Below is an example JSON structured representation a of a Job. It contains a single Workflow and one Material.
+Below is an example JSON structured representation a of a Job. It contains a single [Workflow](/workflows/overview.md) and one [Material](/materials/overview.md).
 
 ```json
 {
@@ -48,23 +44,8 @@ Below is an example JSON structured representation a of a Job. It contains a sin
 
 | Keyword    |   Description      |  
 | :-------- |:----------- |
-| _material |  Link to the identifiers of [material(s)](/materials/data.md) for this job   | 
-| workflow |  Content of the [Workflow](/workflows/data/data.md) for this job | 
-| compute | Computational parameters for this job. See separate table below. |
+| _material |  Link to the identifiers of [material(s)](/materials/data.md) used in this job   | 
+| workflow |  Content of the [Workflow](/workflows/data/data.md) employed in this job | 
+| compute | Computational parameters as explained in [this page](/compute/data.md). |
 | _project  | Link to the identifier of the [project](projects.md) containing the job  |
 | status |   Indication of the current [status](status.md) of the job |  
-
-## The "compute" Keyword
-    
-| Keyword    |   Description      |  
-| :-------- |:----------- |
-| ppn |  The number of processors per node   | 
-| nodes |  The number of computing nodes dedicated to the job execution | 
-| queue | Type of queue on which job is being submitted |
-| timeLimit  | The maximum duration of time that the job can be executed for  |
-| notify | Enable the sending of notifications on the job status to the user   | 
-| cluster | Please refer to the table contained [in this section](/accounts/ui/charges-payments.md#advanced-search) for an explanation of the "jid" and  "fqdn" (Fully Qualified Domain Name) keywords in the context of clusters | 
-| arguments | Extra arguments  | 
-
-!!!note "Note: explanation of clusters-related terms"
-    The user is referred to [this page](/compute/setup.md) for instructions on how to operate the supercomputing [clusters](/pricing/service-levels.md#clusters-and-premium-hardware) offered on our platform. The concept of [Queue](/compute/levels-queues.md) on the  cluster is also explained in its respective page.
