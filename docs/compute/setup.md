@@ -33,3 +33,5 @@ Further advanced options are offered in the expandable section at the bottom of 
 # Notifications
 
 Finally, in the "Notifications" section on the right-hand side of the tab interface, the possibility to be notified as a user about the start of the calculation on the supercomputing cluster, about its termination, or about a possible accidental abortion, can be accessed. The user can click on the button corresponding to each type of event to trigger the associated notifications.
+
+> NOTE: in addition, the computational parameters are also explained in [this page](data.md)

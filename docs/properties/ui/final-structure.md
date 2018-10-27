@@ -1,3 +1,5 @@
+<!-- TODO: GM to revise content -->
+
 ## Final Structure
 
 ![2 jobs results](/images/2_jobs_results.png "2 jobs results")

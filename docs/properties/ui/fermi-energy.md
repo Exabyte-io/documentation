@@ -1,3 +1,5 @@
+<!-- TODO: GM to revise content -->
+
 # Fermi Energy
 
 ![3 jobs results](/images/3_jobs_results.png "3 jobs results")
