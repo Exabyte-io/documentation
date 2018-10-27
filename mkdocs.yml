@@ -269,6 +269,7 @@ pages:
             - Designer:                                 jobs-designer/overview.md
              # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
             - Viewer:                                   jobs/ui/viewer.md
+            - Projects:                                 jobs/ui/projects-explorer.md
          # Introduction to concept of Projects (particular set for jobs only)
         - Actions:
             - Overview:                                 jobs/actions/overview.md
@@ -276,6 +277,7 @@ pages:
             - Run:                                      jobs/actions/run.md
             - Terminate:                                jobs/actions/terminate.md
             - Purge:                                    jobs/actions/purge.md
+            - Projects > Create / Delete:               jobs/actions/create-delete-project.md
 
     - Jobs Designer:
          # What is Jobs Designer and clickable image with links to Designer components below
