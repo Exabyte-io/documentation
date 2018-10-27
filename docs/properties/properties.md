@@ -7,7 +7,7 @@ Our current work is focused on **structure-based** atomistic approach, where the
 
 ## Example Representation
 
-For examples of JSON representation of materials and structure-based descriptors, see [materials data](data.md) section.
+For examples of JSON representation of materials and structure-based descriptors, see [materials data](../materials/data.md) section.
 
 ## Features, Fingerprints, Targets
 

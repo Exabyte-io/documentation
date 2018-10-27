@@ -26,4 +26,4 @@ Accounts with the appropriate [Service Level](/pricing/service-levels.md) can ch
 
 # Properties Explorer
 
-The list of calculated [properties](../properties.md) for the material under consideration, is displayed below the footer as explained [here](properties.md).
+The list of calculated [properties](../../properties/properties.md) for the material under consideration, is displayed below the footer as explained [here](properties.md).

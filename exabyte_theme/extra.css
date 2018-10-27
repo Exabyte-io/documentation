@@ -402,6 +402,48 @@ a.toctree-l4 {
     padding-left: 2px;
 }
 
+/* background colors */
+.b-default {
+    background-color: #777 !important
+}
+
+.b-success {
+    background-color: #27AE60 !important
+}
+
+.b-danger {
+    background-color: #E74C3C !important
+}
+
+.b-warning {
+    background-color: #E67E22 !important
+}
+
+.b-black {
+    background-color: black;
+}
+
+.b-info {
+    background-color: #5bc0de;
+}
+
+.b-primary {
+    background-color: #1056be;
+}
+
+/* Border */
+.border-50 {
+    border-radius: 50px;
+}
+
+/* badges */
+.badge {
+    padding: 0;
+    font-size: 14px;
+    width: 22px;
+    height: 22px;
+}
+
 /* --------------------------------------------------------- *
  *                  BREADCRUMBS
  * --------------------------------------------------------- */
