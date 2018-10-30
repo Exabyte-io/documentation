@@ -129,6 +129,31 @@ pages:
             - Team > Add / Remove Member:               collaboration/actions/team/add-remove-member.md
             - Team > Add / Remove Entity:               collaboration/actions/team/add-remove-entity.md
 
+
+# CONCEPTS
+    - Models:
+        - Overview:                                     models/overview.md
+        - Auxiliary Concepts:
+            - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
+            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
+        - Density Functional Theory:
+            - Overview:                                 models/dft/overview.md
+            - References:                               models/dft/references.md
+
+    - Methods:
+        - Overview:                                     methods/overview.md
+        - Pseudopotential:
+            - Overview:                                 methods/pseudopotential/overview.md
+            - Parameters:                               methods/pseudopotential/parameters.md
+            - Actions:                                  methods/pseudopotential/actions.md
+
+    - Applications:
+        - Overview:                                     applications/overview.md
+        - Quantum ESPRESSO:                             applications/quantum-espresso.md
+        - VASP:                                         applications/vasp.md
+
+
 # ENTITIES
     - Entities & Common Aspects:
         # Introduction (links) to entity concepts, actions and common interface components.
@@ -179,7 +204,6 @@ pages:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
             - Viewer:                                   materials/ui/viewer.md
-            - Properties:                               materials/ui/properties.md
         - Actions:
             - Overview:                                 materials/actions/overview.md
             - Import:                                   materials/actions/import.md
@@ -269,7 +293,7 @@ pages:
             - Designer:                                 jobs-designer/overview.md
              # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
             - Viewer:                                   jobs/ui/viewer.md
-            - Projects:                                 jobs/ui/projects-explorer.md
+            - Projects Explorer:                         jobs/ui/projects-explorer.md
          # Introduction to concept of Projects (particular set for jobs only)
         - Actions:
             - Overview:                                 jobs/actions/overview.md
@@ -288,6 +312,7 @@ pages:
             - Select Parent:                            jobs-designer/header-menu/select-parent.md
             - Select Materials:                         jobs-designer/header-menu/select-materials.md
             - Select Workflow:                          jobs-designer/header-menu/select-workflow.md
+            - Save:                                     jobs-designer/header-menu/save.md
             - Submit:                                   jobs-designer/header-menu/submit.md
         # Reference Materials Viewer and explain how to cycle through materials in Pager
         - Materials Tab:                                jobs-designer/materials-tab.md
@@ -299,87 +324,195 @@ pages:
         - Compute Tab:                                  jobs-designer/compute-tab.md
 
 
-# CONCEPTS
-    - Models:
-        - Overview:                                     models/overview.md
-        - Auxiliary Concepts:
-            - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
-            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
-        - Density Functional Theory:
-            - Overview:                                 models/dft/overview.md
-            - References:                               models/dft/references.md
 
-    - Methods:
-        - Overview:                                     methods/overview.md
-        - Pseudopotential:
-            - Overview:                                 methods/pseudopotential/overview.md
-            - Parameters:                               methods/pseudopotential/parameters.md
-            - Actions:                                  methods/pseudopotential/actions.md
+    # Links to Materials Data REPO need to go here, in data file
+    - Properties:
+        # Consider putting current properties page content here
+        - Overview:                                     properties/overview.md
+        # Put single reference to entry gateway of other API documentation
+        - Data:
+        - User Interface:
+            # Properties Explorer is located under Materials Viewer
+            - Explorer:                                 materials/ui/properties.md
+            # Final Structure Materials Viewer under results Tab in Jobs Viewer
+            - Viewer:
+        # The sections below explain all Characteristic properties, with mentions about their UI appearances
+        - Scalar:
+            # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
+            - Energies:                                 properties/ui/energies.md
+            # Total force and average pressure
+            - Pressure / Total Force:                   properties/ui/pressure.md
+        - Tensorial:
+            - Atomic forces:                            properties/ui/atomic-forces.md
+            - Stress tensor:                            properties/ui/stress-tensor.md
+        - Dispersion Curves:
+            # Include description of band-gap here
+            - Band Structure:                           properties/ui/bandstructure.md
+            - Phonons:                                  properties/ui/phonons.md
+            - Density of States:                        properties/ui/dos.md
+        # The section below explains all of the Descriptive properties, in terms of their theoretical background
+        - Structural:
+            # Consider Moving Basis/lattice explanation from Materials Designer to here
+            # Can explain the following Descriptive Properties here: Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
+            - Atomic:
+            # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
+            - Lattice:
+            # Explain how basis can be attached to lattice to create crystal structure
+            - Final Structure:
 
-    - Applications:
-        - Overview:                                     applications/overview.md
-        - Quantum ESPRESSO:                             applications/quantum-espresso.md
-        - VASP:                                         applications/vasp.md
 
 
-# COMPUTATIONAL ASPECTS
-    - Compute:
-        - Overview:                                     compute/overview.md
-        - Policies:                                     compute/policies.md
-        - Connection Options:                           compute/connection-options.md
-        - Levels & Queues:                              compute/levels-queues.md
-        - Hardware:                                     compute/hardware.md
-        - Actions:
-            - Set Parameters:                           compute/setup.md
-        - Remote Desktop:                               compute/remote-desktop.md
-        - Command Line Interface:
-            - Login:                                    compute/cli/login.md
-            - Accounting:                               compute/cli/accounting.md
-            - Environment:                              compute/cli/modules-environment.md
-            - Jobs:                                     compute/cli/jobs.md
-            - "Jobs: example":                          compute/cli/jobs-example.md
-            - Storage System:                           compute/cli/storage-system.md
-            - Extra:                                    compute/cli/extra.md
-            - Permissions:                              compute/cli/cli-users-permissions.md
-
-    - Data:
-        - Convention:
-            # Intro to the concepts of structured (eg JSON) and unstructured data (e.g. simulations output files)
-            - Overview:                                 data/convention/overview.md
-            - Structured data:                          data/convention/structured.md
-            - Non-structured data:                      data/convention/non-structured.md
+########################################################################################################################
+# UNKNOWN TERRITORY
+########################################################################################################################
 
     - Files:
         - Overview:                                     files/overview.md
+        # General introduction to Dropbox (explorer and actions will go separately)
         - Dropbox:                                      files/dropbox.md
+        # Explain file permission in home and share directories
+        - Permissions:                                  compute/cli/cli-users-permissions.md
+            - Home:
+            - Share:
         - User Interface:
-            # Files tab under Jobs Viewer and in Dropbox
+            # Files tab under Jobs Viewer and in Dropbox, with list of special properties (	PROVIDER & REGION	SIZE	UPDATED)
             - Explorer:                                 files/ui/explorer.md
         - Actions:
             - Overview:                                 files/actions/overview.md
+            - Download:                                 files/actions/download.md
+            - Copy Path:                                files/actions/copy-path.md
+            # Dropbox only actions
+            - Upload:
+            - Create Folder:
+            # (Create new set action)
 
-    - Properties:
-        - Overview:                                     properties/overview.md
+
+
+# COMPUTATIONAL ASPECTS
+    - Compute Infrastructure:
+        - Overview:                                     compute/overview.md
+        # Previously know as level: DEBUG, REGULAR, FAST etc....
+        - Category:                                    compute/levels-queues.md
+        # Different Queues on each Category (e.g. OR16)
+        - Queues:
+        # Explain the hardware offered by each cloud provider
+        - Cloud Providers:
+            - Overview:
+            - AWS:                                     compute/hardware.md
+            - Azure:
+        - Storage System:                              compute/cli/storage-system.md
+            # Explain storage systems
+            - Storage System:
+            # Check storage quotas
+            - Quotas:
+        # Compute tab under Jobs Designer
         - User Interface:
-            - Overview:                                 properties/ui/overview.md
-            - Bandstructure:                            properties/ui/bandstructure.md
-            - Density of States:                        properties/ui/dos.md
-            - Fermi Energy:                             properties/ui/fermi-energy.md
+            - Compute Form:                            compute/setup.md
+                # what is login node: Intermediary access point to clusters
+        - Login Node:
+            - Overview:
+            # CLI, RemDkt, and API
+            - Connection Options:                      compute/connection-options.md
+            # Important folders under Home dir
+            - Important Folders: # - Clusters Data: - Dropbox: - Jobscript Templates:
+
+
+    - Remote Desktop:
+        # Put link to CentOS general documentation
+        - Overview:                                     compute/remote-desktop.md
+        # Mention installed software under Other in Applications menu, with links to their documentation pages
+        - Scientific Software:
+            - VMD:
+            # VASP Python thingy
+            - P4VASP:
+            - TMole:
+            - VESTA:
+            - XCRYSDEN:
+
+
+
+
+    - Command Line Interface (CLI):
+        - Overview:
+        # Explain different ways of logging in to CLI
+        - Login:                                        compute/cli/login.md
+            # exadownload command mention below,
+            # drag and drop - upload files
+            # ctrl+shift+cmd - to open Guacamole Terminal menu - links to it
+            - Web Terminal:
+            - External SSH clients:
+            - Create / Upload SSH key:
+        - Environment:                                  compute/cli/modules-environment.md
+            # Customize shell (e.g. change to ZSH)
+            - Customize:
+            # Load and see list of available modules
+            - Modules:
+        - System Status:
+            # check status of clusters with exaclusters command
+            - Clusters:
+            # List compute nodes and their state with exanodes command
+            - Nodes:
+
+
+
+    - CLI Jobs:
+        - Overview:
+        # Jobscript, with examples
+        - Batch script:
+        - Accounting:
+            # how to show detailed Account balance
+            - Balance:
+            # How to show detailed usage statistics
+            - Statement:
+        - Actions:
+            - Create:
+            # How to submit a job with qsub
+            - Submit:
+            # Check statuses of jobs with qstat
+            - Check status:
+            # Terminate jobs with qdel
+            - Terminate:
+
+
+######################
+
 
     - REST-API:
         - Overview:                                     rest-api/overview.md
+        # Authentication section explains how to authenticate and access the API.
         - Authentication:                               rest-api/authentication.md
+        # Query Structure section explains how to create and set up HTTP requests to the API.
         - Query structure:                              rest-api/query-structure.md
+        # Information on how to access the data through a python client
+        - Python Client:                                rest-api/rest-api-python-client.md
+        # The currently supported functions for each entity type.
         - Endpoints:
-            - Materials:                                rest-api/endpoints/materials.md
-            - Materials-Bank:                           rest-api/endpoints/materials-bank.md
-            - Characteristics:                          rest-api/endpoints/characteristics.md
+            - Materials > Account:                      rest-api/endpoints/materials.md
+            - Materials > Bank:                         rest-api/endpoints/materials-bank.md
+            - Materials > Properties:                   rest-api/endpoints/properties.md
             - Jobs:                                     rest-api/endpoints/jobs.md
             - Workflows:                                rest-api/endpoints/workflows.md
             # TODO: revise and re-enable after
             - Pseudos:                                  rest-api/endpoints/pseudos.md
-        - Python Client:                                rest-api/rest-api-python-client.md
+
+
+    # Reuse some of the material from EXABYTE DATA CONVENTION REPO for the structured data section
+    - Data Convention:
+        # Intro to the concepts of structured (eg JSON) and unstructured data (e.g. simulations output files)
+        - Overview:                                     data/convention/overview.md
+        - Structured data:                              data/convention/structured.md
+            - Overview:
+            - Examples:
+        - Non-structured data:                          data/convention/non-structured.md
+
+
+########################################################################################################################
+########################################################################################################################
+
+
+
+
+
 
 
 # TUTORIALS AND EXAMPLES
@@ -424,6 +557,7 @@ pages:
         - Privacy:                                      site-policy/privacy-statement.md
         - Sharing:                                      site-policy/sharing-policy.md
         - Terms of Service:                             site-policy/terms-of-service.md
+        - Compute:                                      compute/policies.md
 
 
 # OTHER

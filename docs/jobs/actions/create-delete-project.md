@@ -1,14 +1,17 @@
-# Creating a project
+# Create New Project
 
-The following demonstrates how to create a new project inside an organization. Only organization owner has access to new projects. If you want to give other organization members access to the project, please visit [adding a project to a team](teams#adding-a-project-to-a-team) page.
+New [Projects](../projects.md) can be created under the [Project Explorer](../ui/projects-explorer.md) by clicking the "Create" button  <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> accessible under the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar). The user is presented with the following "Create New Project" dialog.
 
-<img data-gifffer="/images/organization-create-project.gif">
+![Create New Project](/images/create-new-project.png "Create New Project")
 
-!!! note "Default Project"
-    When you create an organization, it is initialized with a default project. The name of the default project is as same as the organization name.
+Here, the desired name and description of the new project can be entered, followed by pressing the `Create` button. The new project will then be added as an additional entry on top of the [Project Explorer](../ui/projects-explorer.md) collection list.
 
-# Deleting a project
+# Animation
 
-You can delete a project as follows:
+Below, we show how to create a new "Example Project".
 
-<img data-gifffer="/images/organization-remove-project.gif">
+<img data-gifffer="/images/create-project.gif">
+
+# Delete Project
+
+The action of deleting a Project cannot be performed by the user. In case of necessity, please send us a [support request](/ui/support.md). 
