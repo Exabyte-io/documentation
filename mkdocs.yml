@@ -148,24 +148,33 @@ pages:
             - Parameters:                               methods/pseudopotential/parameters.md
             - Actions:                                  methods/pseudopotential/actions.md
 
-    - Software Applications:
-        - Overview:                                     applications/overview.md
+    - Software:
+        - Overview:                                     software/overview.md
+        # Define the term applications: modeling software
+        - Applications:                                 software/applications.md
         - Modeling:
-            - Overview:                                 applications/modeling/overview.md
-            - Quantum ESPRESSO:                         applications/modeling/quantum-espresso.md
-            - VASP:                                     applications/modeling/vasp.md
-            - TurboMole:                                applications/modeling/turbomole.md
+            - Quantum ESPRESSO:                         software/modeling/quantum-espresso.md
+            - VASP:                                     software/modeling/vasp.md
+            - TurboMole:                                software/modeling/turbomole.md
+            - LAMMPS:                                   software/modeling/lammps.md
+            - NWChem:                                   software/modeling/nwchem.md
+            - CP2K:                                     software/modeling/cp2k.md
+            - Gromacs:                                  software/modeling/gromacs.md
+        - Scripting:
+            - Shell:                                    software/scripting/shell.md
+            - Python:                                   software/scripting/python.md
         - Analysis & Visualization:
-            - pymatgen:                                 applications/analysis/pymatgen.md
-            - VESTA:                                    applications/analysis/vesta.md
-            - XCRYSDEN:                                 applications/analysis/xcrysden.md
-            - P4VASP:                                   applications/analysis/p4vasp.md
-            - VMD:                                      applications/analysis/vmd.md
+            - pymatgen:                                 software/analysis/pymatgen.md
+            - VESTA:                                    software/analysis/vesta.md
+            - XCRYSDEN:                                 software/analysis/xcrysden.md
+            - P4VASP:                                   software/analysis/p4vasp.md
+            - VMD:                                      software/analysis/vmd.md
         - Development Tools:
-            # How to add new user-provided software
-            - Overview:                                 applications/development/overview.md
-            - Compilers:                                applications/development/compilers.md
-            - Libraries:                                applications/development/libraries.md
+            - Overview:                                 software/development/overview.md
+            # e.g. gcc, ifort etc...
+            - Compilers:                                software/development/compilers.md
+            # e.g. openmpi, mkl, intelmpi
+            - Libraries:                                software/development/libraries.md
 
 
 # ENTITIES

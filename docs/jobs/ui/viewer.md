@@ -22,7 +22,7 @@ The results for each computational [unit](/workflow-designer/unit-editor.md) con
 
 ### Naming Convention
 
-Panels are named according to the format convention "Subworkflow Name - Unit Name". The name of the [application](/applications/modeling/overview.md) implemented in the current unit is also shown directly below the name of the corresponding panel.
+Panels are named according to the format convention "Subworkflow Name - Unit Name". The name of the [application](/software/overview.md) implemented in the current unit is also shown directly below the name of the corresponding panel.
  
 ### Collapse / Expand
  
@@ -50,6 +50,6 @@ A review of the [actions](/files/actions/overview.md) and [user interface aspect
 
 ## Example Appearance
 
-An example of appearance of this Files tab is portrayed below, for a bandstructure run performed using the [VASP](/applications/modeling/vasp.md) code. The user is referred to the [code-specific documentation](/applications/modeling/vasp.md) for an explanation of the contents of the files displayed in this example.
+An example of appearance of this Files tab is portrayed below, for a bandstructure run performed using the [VASP](/software/modeling/vasp.md) code. The user is referred to the [code-specific documentation](/software/modeling/vasp.md) for an explanation of the contents of the files displayed in this example.
 
 ![Files Tab](/images/files-tab.png "Files Tab")
