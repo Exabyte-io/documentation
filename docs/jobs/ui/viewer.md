@@ -22,7 +22,7 @@ The results for each computational [unit](/workflow-designer/unit-editor.md) con
 
 ### Naming Convention
 
-Panels are named according to the format convention "Subworkflow Name - Unit Name". The name of the [application](/applications/overview.md) implemented in the current unit is also shown directly below the name of the corresponding panel.
+Panels are named according to the format convention "Subworkflow Name - Unit Name". The name of the [application](/applications/modeling/overview.md) implemented in the current unit is also shown directly below the name of the corresponding panel.
  
 ### Collapse / Expand
  
@@ -32,7 +32,7 @@ The option to collapse or expand a panel is offered at its top-right corner.
 
 The panels contain the results for the computation of the [materials properties](/properties/overview.md) that were selected at the moment of the [creation of the subworkflow](/workflow-designer/subworkflow-editor/detailed-view.md) or subsequently adjusted during the [job design](/jobs-designer/overview.md) stage.
 
-The manner in which these properties are displayed under the corresponding panels is explained in a [separate section](/properties/ui/overview.md) of this documentation. 
+The manner in which these properties are displayed under the corresponding panels is explained in a [separate section](/properties/scalar/overview.md) of this documentation. 
 
 ## Example Appearance
 
@@ -50,6 +50,6 @@ A review of the [actions](/files/actions/overview.md) and [user interface aspect
 
 ## Example Appearance
 
-An example of appearance of this Files tab is portrayed below, for a bandstructure run performed using the [VASP](/applications/vasp.md) code. The user is referred to the [code-specific documentation](/applications/vasp.md) for an explanation of the contents of the files displayed in this example.
+An example of appearance of this Files tab is portrayed below, for a bandstructure run performed using the [VASP](/applications/modeling/vasp.md) code. The user is referred to the [code-specific documentation](/applications/modeling/vasp.md) for an explanation of the contents of the files displayed in this example.
 
 ![Files Tab](/images/files-tab.png "Files Tab")

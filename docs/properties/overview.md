@@ -12,4 +12,4 @@ We draw the following distinction when referring to materials properties, as int
 
 # User Interface
 
-Materials properties are presented in special panels within the user interface of the [Jobs Viewer](/jobs/ui/viewer.md), as described in [this section](ui/overview.md) of the documentation.
+Materials properties are presented in special panels within the user interface of the [Jobs Viewer](/jobs/ui/viewer.md), as described in [this section](scalar/overview.md) of the documentation.

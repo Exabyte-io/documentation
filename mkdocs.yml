@@ -149,23 +149,23 @@ pages:
             - Actions:                                  methods/pseudopotential/actions.md
 
     - Software Applications:
-        - Overview:
+        - Overview:                                     applications/overview.md
         - Modeling:
-            - Overview:                                 applications/overview.md
-            - Quantum ESPRESSO:                         applications/quantum-espresso.md
-            - VASP:                                     applications/vasp.md
-            - TurboMole:
+            - Overview:                                 applications/modeling/overview.md
+            - Quantum ESPRESSO:                         applications/modeling/quantum-espresso.md
+            - VASP:                                     applications/modeling/vasp.md
+            - TurboMole:                                applications/modeling/turbomole.md
         - Analysis & Visualization:
-            - pymatgen:
-            - VESTA:
-            - XCRYSDEN:
-            - P4VASP:
-            - VMD:
+            - pymatgen:                                 applications/analysis/pymatgen.md
+            - VESTA:                                    applications/analysis/vesta.md
+            - XCRYSDEN:                                 applications/analysis/xcrysden.md
+            - P4VASP:                                   applications/analysis/p4vasp.md
+            - VMD:                                      applications/analysis/vmd.md
         - Development Tools:
             # How to add new user-provided software
-            - Overview:
-            - Compilers:
-            - Libraries:
+            - Overview:                                 applications/development/overview.md
+            - Compilers:                                applications/development/compilers.md
+            - Libraries:                                applications/development/libraries.md
 
 
 # ENTITIES
@@ -260,37 +260,37 @@ pages:
         # Consider putting current properties page content here
         - Overview:                                     properties/overview.md
         # Evolution
-        - Refinement:
-        # Put single reference to entry gateway of other API documentation
-        - Data:
+        - Refinement:                                   properties/refinement.md
+        # Put single reference to entry gateway of Materials API documentation
+        - Data:                                         properties/data.md
         - User Interface:
             # Properties Explorer is located under Materials Viewer
-            - Explorer:                                 materials/ui/properties.md
+            - Explorer:                                 properties/ui/explorer.md
             # Final Structure Materials Viewer under results Tab in Jobs Viewer
-            - Viewer:
+            - Viewer:                                   properties/ui/viewer.md
         # The sections below explain all Characteristic properties, with mentions about their UI appearances
         - Scalar:
             # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
-            - Energies:                                 properties/ui/energies.md
+            - Energies:                                 properties/scalar/energies.md
             # Total force and average pressure
-            - Pressure / Total Force:                   properties/ui/pressure.md
+            - Pressure / Total Force:                   properties/scalar/pressure.md
         - Tensorial:
-            - Atomic forces:                            properties/ui/atomic-forces.md
-            - Stress tensor:                            properties/ui/stress-tensor.md
+            - Atomic forces:                            properties/tensorial/atomic-forces.md
+            - Stress tensor:                            properties/tensorial/stress-tensor.md
         - Dispersion Curves:
             # Include description of band-gap here
-            - Band Structure:                           properties/ui/bandstructure.md
-            - Phonons:                                  properties/ui/phonons.md
-            - Density of States:                        properties/ui/dos.md
+            - Band Structure:                           properties/dispersion/bandstructure.md
+            - Phonons:                                  properties/dispersion/phonons.md
+            - Density of States:                        properties/dispersion/dos.md
         # The section below explains all of the Descriptive properties, in terms of their theoretical background
         - Structural:
             # Consider Moving Basis/lattice explanation from Materials Designer to here
             # Can explain the following Descriptive Properties here: Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
-            - Atomic:
+            - Atomic:                                   properties/structural/atomic.md
             # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
-            - Lattice:
+            - Lattice:                                  properties/structural/lattice.md
             # Explain how basis can be attached to lattice to create crystal structure
-            - Final Structure:
+            - Final Structure:                          properties/structural/final-structure.md
 
 
     - Workflows:
@@ -382,174 +382,173 @@ pages:
 
 
     - Jobs via Command Line Interface:
-        - Overview:
+        - Overview:                                     jobs-cli/overview.md
         # Jobscript, with examples
-        - Batch script:
+        - Batch script:                                 jobs-cli/batch-script.md
         - Accounting:
             # how to show detailed Account balance
-            - Balance:
+            - Balance:                                  jobs-cli/accounting/balance.md
             # How to show detailed usage statistics
-            - Statement:
+            - Statement:                                jobs-cli/accounting/statement.md
         - Actions:
-            - Create:
+            - Create:                                   jobs-cli/actions/create.md
             # How to submit a job with qsub
-            - Submit:
+            - Submit:                                   jobs-cli/actions/submit.md
             # Check statuses of jobs with qstat
-            - Check status:
+            - Check status:                             jobs-cli/actions/check-status.md
             # Terminate jobs with qdel
-            - Terminate:
+            - Terminate:                                jobs-cli/actions/terminate.md
 
 
 # COMPUTATIONAL ASPECTS
     - General Infrastructure:
         # Put general flowchart here, explaining connection between login node, clusters, connection methods, dropbox etc.
-        - Overview:                                     compute/overview.md
+        - Overview:                                     infrastructure/overview.md
+        # The architecture of the storage system, Network File System
+        # Link to Data on Disk, mention of Quotas
+        - Storage System:                               infrastructure/storage.md
         - Login Node:
             # what is login node: Intermediary access point to clusters
-            - Overview:
+            - Overview:                                 infrastructure/login/overview.md
             # CLI, RemDkt, and API introduction and links to dedicated sections
-            - Connection Options:                       compute/connection-options.md
+            - Connection Options:                       infrastructure/login/connections.md
             # Description of important folders under Home dir: Clusters Data, Dropbox, Jobscript Templates.
-            - Directory Structure:
+            - Directory Structure:                      infrastructure/login/directories.md
         # The presence of multiple clusters, multiple cloud providers
         # Ability to have private clusters for enterprise
         - Clusters:
-            - Overview:
+            - Overview:                                 infrastructure/clusters/overview.md
             # Home/Share
-            - Directory Structure:
+            - Directory Structure:                      infrastructure/clusters/directories.md
             # TODO: MM to add content
             # Explain the hardware offered by each cloud provider
             # List of Queues, pricing, location of datacenters, hyperthreading
-            - AWS Clusters:                             compute/hardware.md
-            - Azure Clusters:
+            - AWS Clusters:                             infrastructure/clusters/aws.md
+            - Azure Clusters:                           infrastructure/clusters/azure.md
         # How resource on each compute cluster are allocated
         - Resource Management:
-            - Overview:
+            - Overview:                                 infrastructure/resource/overview.md
             # Previously know as level: DEBUG, REGULAR, FAST etc....
-            - Category:                                 compute/levels-queues.md
+            - Category:                                 infrastructure/resource/category.md
             # Different Queues on each Category (e.g. OR16)
-            - Queues:
-        # The architecture of the storage system, Network File System
-        # Link to Data on Disk, mention of Quotas
-        - Storage System:                               compute/cli/storage-system.md
+            - Queues:                                   infrastructure/resource/queues.md
         # Compute tab under Jobs Designer
         - User Interface:
-            - Compute Form:                             compute/setup.md
+            - Compute Form:                             infrastructure/ui/compute.md
 
 
     - Data Practices:
         # Classification - 3 types of data + links
-        - Classification:
+        - Classification:                               data/classification.md
         # Object representation of unstructured data for communication with webapp (see flowchart in notebook)
-        - Lifecycle:
+        - Lifecycle:                                    data/lifecycle.md
 
 
     - Structured Data:
         # Content description
         # Links to other pages with Jobs, Materials, Workflows explanation
-        - Overview:
+        - Overview:                                     structured/overview.md
         # Entry point to materials-data online page https://exabyte.io:4567
-        - Schemas & Examples:
+        - Schemas & Examples:                           structured/schemas.md
 
 
     - Data on Disk:
-        - Overview:
+        - Overview:                                     disk/overview.md
         # Explain file permissions in /home directory,
         # Presence of multiple home folders - on clusters and login and how they are connected
         # Shared Directories:
         # Dropbox (*):
         # Mapping of folders from Clusters to Login node,
-        - Directory Structure:                                  compute/cl i/cli-users-permissions.md
+        - Directory Structure:                          disk/directories.md
         # Quotas imposed on /home, /share,
-        - Quotas:
+        - Quotas:                                       disk/quotas.md
         # Permissions, Encryption, link to site-policy security description
-        - Security:
+        - Security:                                     disk/security.md
 
 
     - Data in Object Storage:
-        - Overview:
+        - Overview:                                     object/overview.md
         # General introduction to Files concept for storing and transferring unstructured data
-        - Files:
-
+        - Files:                                        object/files.md
         # TODO: MM to add content below
-        - Security:
-
-        - Dropbox(*):
+        - Security:                                     object/security.md
+        - Dropbox(*):                                   object/dropbox.md
         - User Interface:
             # Files tab under Jobs Viewer and in Dropbox, with list of special properties (	PROVIDER & REGION	SIZE	UPDATED)
-            - Files Explorer:                           files/ui/explorer.md
+            - Files Explorer:                           object/ui/explorer.md
         - Actions:
-            - Overview:                                 files/actions/overview.md
+            - Overview:                                 object/actions/overview.md
             # Download action for files
-            - Download:                                 files/actions/download.md
+            - Download:                                 object/actions/download.md
             # Copy Path action for files
-            - Copy Path:                                files/actions/copy-path.md
+            - Copy Path:                                object/actions/copy-path.md
             # Dropbox only actions
-            - Upload:
-            - Create Folder:
+            - Upload:                                   object/actions/upload.md
             # (Create new set action)
+            - Create Folder:                            object/actions/create-folder.md
 
 
     - Remote Connection:
         # Content of the section
-        - Overview:
+        - Overview:                                     remote-connection/overview.md
         # How to use OS-specific ssh clients: 1) generate keys, 2)upload (link to preferences page), 3) enter name of server (bohr) to connect finally
         # enter server name,
         # links to explanations on ssh keys,
         # links to documentation for OS-specific SSH clients
         # - Action > Upload SSH key:
-        - SSH Terminal (SSH):
+        - SSH Terminal (SSH):                           remote-connection/ssh.md
         # Introduction to the concept of Remote Desktop on our platform
         # Put link to CentOS general documentation
         # Link to software section
-        - Remote Desktop (RD):
+        - Remote Desktop (RD):                          remote-connection/remote-desktop.md
         # Introduction to concept of Web Terminal in the platform
         # Mention that CLI can be accessed also from SSH clients, with links to the next CLI-specific section
         # Put a link to Environment
-        - Web Terminal (WT):
+        - Web Terminal (WT):                            remote-connection/web-terminal.md
         - Actions > WT & RD:
-            - Overview:
+            - Overview:                                 remote-connection/actions/overview.md
             # Animate access to Terminal
-            - Open Web Terminal:
+            - Open Web Terminal:                        remote-connection/actions/open-terminal.md
             # Animate access to Remote Desktop
-            - Open Remote Desktop:
+            - Open Remote Desktop:                      remote-connection/actions/open-desktop.md
             # Explanation or Guacamole Sidebar
             # Screenshot or Guacamole Sidebar
-            - Open Guacamole Sidebar:
+            - Open Guacamole Sidebar:                   remote-connection/actions/guacamole.md
+            # Upload and Download files from RD/WT to WebApp
+            - Upload / Download:                        remote-connection/actions/upload-download.md
             # How to copy/paste text using Guacamole Sidebar (clipboard)
-            - Upload / Download:
-            - Copy / Paste Text:
+            - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
         - Actions > Remote Desktop:
             # List all actions
-            - Overview:
+            - Overview:                                 remote-connection/actions-rd/overview.md
             # Animate files browser in CentOS
             # Links to Login node, Dropbox
             # Mention open Linux terminal
-            - Browse Directories:
+            - Browse Directories:                       remote-connection/actions-rd/browse.md
             # Animate opening VESTA
-            - Open Applications:
+            - Open Applications:                        remote-connection/actions-rd/open-app.md
             # Mention how to upload files from Dropbox in Webapp and access them through Remote Desktop and vice-versa
             # Animate creation of a POSCAR file in VESTA and accessing it from Dropbox after in Web Platform
-            - Access data in Web Platfrom:
+            - Access data in Web Platfrom:              remote-connection/actions-rd/access-webapp.md
 
 
     - Command Line Interface:
         # Contents of the section
-        - Overview:
+        - Overview:                                     cli/overview.md
         # Same content as before (previous version of documentation)
-        - Environment:                                  compute/cli/modules-environment.md
+        - Environment:                                  cli/environment.md
         - Actions:
             # corresponding UI action
             # Customize shell (e.g. change to ZSH)
-            - Customize CLI Environment:
+            - Customize CLI Environment:                cli/actions/customize.md
             # How to compile your own stuff on the clusters
-            - Add new software:
+            - Add new software:                         cli/actions/add-software.md
             # check status of clusters with exaclusters command
-            - List Clusters:
+            - List Clusters:                            cli/actions/list-clusters.md
             # List compute nodes and their state with exanodes command
-            - List Cluster Nodes:
-            # Link to the corresponding section
-            - Jobs Actions:
+            - List Cluster Nodes:                       cli/actions/list-nodes.md
+            # Link to the corresponding section (Jobs CLI)
+            - Jobs Actions:                             cli/actions/jobs-actions.md
 
 
     - REST-API:
@@ -560,11 +559,11 @@ pages:
         - Query structure:                              rest-api/query-structure.md
         # Link to of the Python Client
         # Link to Examples Repository
-        - Examples:                                rest-api/rest-api-python-client.md
+        - Examples:                                     rest-api/examples.md
         # Explanation and a Link to Swagger Explorer page
         # - List of versions with its own link
         # - Animation Example of how to use the swagger UI for Listing materials
-        - Endpoints:
+        - Endpoints:                                    rest-api/endpoints.md
 
 
 # TUTORIALS AND EXAMPLES

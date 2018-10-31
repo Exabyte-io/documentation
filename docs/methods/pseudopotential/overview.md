@@ -14,7 +14,7 @@ The following types of pseudopotentials are supported:
 
 The subsection labelled "Pseudopotentials" inside the Method section allows the user to choose which particular pseudopotential file to implement as part of the current subworkflow computations. A default pseudopotential for the material under consideration (crystalline silicon by default, unless this original default material was changed by the user) is always included in any subworkflow that is to be applied to this material.
 
-A comprehensive set of default pseudopotentials for most elements in the periodic table is already included and made available for user selection on the Subworkflow Editor interface. See the corresponding [application pages](/applications/overview.md) for more details on this.
+A comprehensive set of default pseudopotentials for most elements in the periodic table is already included and made available for user selection on the Subworkflow Editor interface. See the corresponding [application pages](/applications/modeling/overview.md) for more details on this.
 
 # Links
 
