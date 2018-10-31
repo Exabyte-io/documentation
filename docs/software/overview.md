@@ -8,8 +8,8 @@ The platform currently offers the choice between the following software engines,
 
 | Name    |  Version(s)      | Notes      |
 | :-------- |:----------- |:------------- |
-| [Quantum ESPRESSO](quantum-espresso.md) | 5.1-6.0 | Fully integrated |
-| [VASP](vasp.md)      | 5.3.5-5.4.4 | Fully integrated (*) |
+| [Quantum ESPRESSO](modeling/quantum-espresso.md) | 5.1-6.0 | Fully integrated |
+| [VASP](modeling/vasp.md)      | 5.3.5-5.4.4 | Fully integrated (*) |
 | LAMMPS    | 11-2016 | Available through command line |
 | NWChem    | 6.6     | Available through command line |
 | CP2K      | 4.1     | Available through command line |

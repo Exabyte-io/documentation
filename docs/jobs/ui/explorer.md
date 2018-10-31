@@ -18,7 +18,7 @@ Additional columns to be listed in Jobs Explorer specifically include those tick
 
 ## Application
 
-This option displays the [applications](/applications/modeling/overview.md) employed within the [workflow](/workflows/overview.md) used inside the Job, including their version numbers.
+This option displays the [applications](/software/overview.md) employed within the [workflow](/workflows/overview.md) used inside the Job, including their version numbers.
 
 ## Cluster - Queue & Cores
 

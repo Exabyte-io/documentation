@@ -36,7 +36,7 @@ The query functionality is demonstrated in the following animation. Here, we fir
 
 # Modeling and Simulations <i class="zmdi zmdi-cloud-outline-alt"></i>
 
-The first option allows for the creation of simulation workflows for material modeling. They can be based on any of the supported theoretical [models](/models/overview.md), operated under the associated computational [methods](/methods/overview.md) and [applications](/applications/modeling/overview.md). 
+The first option allows for the creation of simulation workflows for material modeling. They can be based on any of the supported theoretical [models](/models/overview.md), operated under the associated computational [methods](/methods/overview.md) and [applications](/software/overview.md). 
 
 
 !!!note "Note: labeling of options"
@@ -59,7 +59,7 @@ Here, the possibility to design new computational workflows is offered.
 
 ### 2A. Density Functional Theory 
 
-Our platform supports the [Density Functional Theory](/models/dft/overview.md) (DFT) theoretical framework for executing electronic structure calculations, as implemented by the [Quantum ESPRESSO](/applications/modeling/quantum-espresso.md) or [VASP](/applications/modeling/vasp.md) applications. Plans are under way to expand the offer to new atomistic simulation approaches, such as the classical Molecular Dynamics and Multi-scale techniques. 
+Our platform supports the [Density Functional Theory](/models/dft/overview.md) (DFT) theoretical framework for executing electronic structure calculations, as implemented by the [Quantum ESPRESSO](/software/modeling/quantum-espresso.md) or [VASP](/software/modeling/vasp.md) applications. Plans are under way to expand the offer to new atomistic simulation approaches, such as the classical Molecular Dynamics and Multi-scale techniques. 
 
 ## 3. Connect Remotely 
 
