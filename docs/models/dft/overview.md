@@ -1,6 +1,6 @@
 # Density Functional Theory
  
-Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](/applications/overview.md)). These are based on the Density Functional Theory (DFT) [[1](#links)] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [[2](#links)].
+Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](/applications/modeling/overview.md)). These are based on the Density Functional Theory (DFT) [[1](#links)] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [[2](#links)].
 
 # Subtype
 

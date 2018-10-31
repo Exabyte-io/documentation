@@ -16,7 +16,7 @@ Optionally, the check-box "Draft" on the left can be selected. In this case the 
 
 # The "Application" section
 
-The subsequent "Application" section in the "Overview" tab allows you to choose which computational engine (otherwise known as application). More on this [here](/applications/overview.md) respectively.
+The subsequent "Application" section in the "Overview" tab allows you to choose which computational engine (otherwise known as application). More on this [here](/applications/modeling/overview.md) respectively.
 
 # The "Model" section
 
