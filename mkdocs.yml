@@ -84,12 +84,12 @@ pages:
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
             # Includes explanation about how to change service levels (upgrade)
-            - Service Levels:                             accounts/ui/service-level.md
+            - Service Levels:                            accounts/ui/service-level.md
             - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
             - Preferences > Profile:                     accounts/ui/preferences/profile.md
             - Preferences > User Settings:               accounts/ui/preferences/settings.md
-            - Preferences > API Tokens:                   accounts/ui/preferences/api.md
+            - Preferences > API Tokens:                  accounts/ui/preferences/api.md
             - Preferences > SSH Keys:                    accounts/ui/preferences/ssh.md
             - Preferences > Change Password:             accounts/ui/preferences/password.md
         - Accounting Actions:
@@ -148,10 +148,24 @@ pages:
             - Parameters:                               methods/pseudopotential/parameters.md
             - Actions:                                  methods/pseudopotential/actions.md
 
-    - Applications:
-        - Overview:                                     applications/overview.md
-        - Quantum ESPRESSO:                             applications/quantum-espresso.md
-        - VASP:                                         applications/vasp.md
+    - Software Applications:
+        - Overview:
+        - Modeling:
+            - Overview:                                 applications/overview.md
+            - Quantum ESPRESSO:                         applications/quantum-espresso.md
+            - VASP:                                     applications/vasp.md
+            - TurboMole:
+        - Analysis & Visualization:
+            - pymatgen:
+            - VESTA:
+            - XCRYSDEN:
+            - P4VASP:
+            - VMD:
+        - Development Tools:
+            # How to add new user-provided software
+            - Overview:
+            - Compilers:
+            - Libraries:
 
 
 # ENTITIES
@@ -212,6 +226,7 @@ pages:
             - Advanced search:                          materials/actions/advanced-search.md
             - Bank > Copy from:                         materials/actions/copy-bank.md
 
+
     - Materials Designer:
         - Overview:                                     materials-designer/overview.md
         - Header Menu:
@@ -239,96 +254,13 @@ pages:
             - Edit Actions Panel:                       materials-designer/3d-editor/edit.md
             - Export Actions Panel:                     materials-designer/3d-editor/export.md
 
-    - Workflows:
-        - Overview:                                     workflows/overview.md
-        - Bank:                                         workflows/bank.md
-        - Default:                                      workflows/default.md
-        - User Interface:
-            - Explorer:                                 workflows/ui/explorer.md
-            - Designer:                                 workflow-designer/general-overview.md
-            - Viewer:                                   workflows/ui/viewer.md
-        - Data:
-            - Workflows:                                workflows/data/data.md
-            - Subworkflows:                             workflows/data/subworkflows.md
-            - Units:                                    workflows/data/units.md
-            - Templates:                                workflows/data/templates.md
-            - Maps:                                     workflows/data/maps.md
-        - Actions:
-            - Overview:                                 workflows/actions/overview.md
-            - Update:                                   workflows/actions/update.md
-            - Set default:                              workflows/actions/set-default.md
-            - Bank > Copy from:                         workflows/actions/copy-bank.md
-        - Add-ons:
-            - K-point Convergence:                      workflows/addons/convergence-algorithms.md
-            - Structural Relaxation:                    workflows/addons/structural-relaxation.md
-
-    - Workflow Designer:
-        - Overview:                                     workflow-designer/general-overview.md
-        - Header Menu:
-            - Overview:                                 workflow-designer/header-menu.md
-        - Sidebar:
-            - Items List:                               workflow-designer/sidebar.md
-        - Subworkflow Editor:
-            - Overview:                                 workflow-designer/subworkflow-editor/intro.md
-            - Actions Menu:                             workflow-designer/subworkflow-editor/actions-menu.md
-            - Tabs:                                     workflow-designer/subworkflow-editor/tabs-general.md
-            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview.md
-            - Tabs > Important Settings:                workflow-designer/subworkflow-editor/important-settings.md
-            - Tabs > Detailed View:                     workflow-designer/subworkflow-editor/detailed-view.md
-            - Tabs > Compute:                           workflow-designer/subworkflow-editor/compute.md
-            - Units Flowchart:                          workflow-designer/subworkflow-editor/units-flowchart.md
-        - Unit Editor:
-            - Overview:                                 workflow-designer/unit-editor.md
-            - Input Templates:                          workflow-designer/unit-editor/input-templates.md
-
-    - Jobs:
-          # Links list to User Interface, Data and Actions for Workflows
-        - Overview:                                     jobs/overview.md
-        - Projects:                                     jobs/projects.md
-        - Data:                                         jobs/data.md
-        - Status:                                       jobs/status.md
-        - User Interface:
-             # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
-            - Explorer:                                 jobs/ui/explorer.md
-            - Designer:                                 jobs-designer/overview.md
-             # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
-            - Viewer:                                   jobs/ui/viewer.md
-            - Projects Explorer:                         jobs/ui/projects-explorer.md
-         # Introduction to concept of Projects (particular set for jobs only)
-        - Actions:
-            - Overview:                                 jobs/actions/overview.md
-            - Create:                                   jobs/actions/create.md
-            - Run:                                      jobs/actions/run.md
-            - Terminate:                                jobs/actions/terminate.md
-            - Purge:                                    jobs/actions/purge.md
-            - Projects > Create / Delete:               jobs/actions/create-delete-project.md
-
-    - Jobs Designer:
-         # What is Jobs Designer and clickable image with links to Designer components below
-        - Overview:                                     jobs-designer/overview.md
-        - Header Menu:
-             # Links to all the header menu actions listed below
-            - Overview:                                 jobs-designer/header-menu/overview.md
-            - Select Parent:                            jobs-designer/header-menu/select-parent.md
-            - Select Materials:                         jobs-designer/header-menu/select-materials.md
-            - Select Workflow:                          jobs-designer/header-menu/select-workflow.md
-            - Save:                                     jobs-designer/header-menu/save.md
-            - Submit:                                   jobs-designer/header-menu/submit.md
-        # Reference Materials Viewer and explain how to cycle through materials in Pager
-        - Materials Tab:                                jobs-designer/materials-tab.md
-        # Reference WF Viewer and explain
-        #    - which options are adjustable - isDraft, important settings
-        #    - how to view workflow important settings and unit input for multiple materials
-        - Workflow Tab:                                 jobs-designer/workflow-tab.md
-        # Refer to original compute tab
-        - Compute Tab:                                  jobs-designer/compute-tab.md
-
-
 
     # Links to Materials Data REPO need to go here, in data file
     - Properties:
         # Consider putting current properties page content here
         - Overview:                                     properties/overview.md
+        # Evolution
+        - Refinement:
         # Put single reference to entry gateway of other API documentation
         - Data:
         - User Interface:
@@ -361,101 +293,95 @@ pages:
             - Final Structure:
 
 
-
-########################################################################################################################
-# UNKNOWN TERRITORY
-########################################################################################################################
-
-    - Files:
-        - Overview:                                     files/overview.md
-        # General introduction to Dropbox (explorer and actions will go separately)
-        - Dropbox:                                      files/dropbox.md
-        # Explain file permission in home and share directories
-        - Permissions:                                  compute/cli/cli-users-permissions.md
-            - Home:
-            - Share:
+    - Workflows:
+        - Overview:                                     workflows/overview.md
+        - Bank:                                         workflows/bank.md
+        - Default:                                      workflows/default.md
         - User Interface:
-            # Files tab under Jobs Viewer and in Dropbox, with list of special properties (	PROVIDER & REGION	SIZE	UPDATED)
-            - Explorer:                                 files/ui/explorer.md
+            - Explorer:                                 workflows/ui/explorer.md
+            - Designer:                                 workflow-designer/general-overview.md
+            - Viewer:                                   workflows/ui/viewer.md
+        - Data:
+            - Workflows:                                workflows/data/data.md
+            - Subworkflows:                             workflows/data/subworkflows.md
+            - Units:                                    workflows/data/units.md
+            - Templates:                                workflows/data/templates.md
+            - Maps:                                     workflows/data/maps.md
         - Actions:
-            - Overview:                                 files/actions/overview.md
-            - Download:                                 files/actions/download.md
-            - Copy Path:                                files/actions/copy-path.md
-            # Dropbox only actions
-            - Upload:
-            - Create Folder:
-            # (Create new set action)
+            - Overview:                                 workflows/actions/overview.md
+            - Update:                                   workflows/actions/update.md
+            - Set default:                              workflows/actions/set-default.md
+            - Bank > Copy from:                         workflows/actions/copy-bank.md
+        - Add-ons:
+            - K-point Convergence:                      workflows/addons/convergence-algorithms.md
+            - Structural Relaxation:                    workflows/addons/structural-relaxation.md
 
 
+    - Workflow Designer:
+        - Overview:                                     workflow-designer/general-overview.md
+        - Header Menu:
+            - Overview:                                 workflow-designer/header-menu.md
+        - Sidebar:
+            - Items List:                               workflow-designer/sidebar.md
+        - Subworkflow Editor:
+            - Overview:                                 workflow-designer/subworkflow-editor/intro.md
+            - Actions Menu:                             workflow-designer/subworkflow-editor/actions-menu.md
+            - Tabs:                                     workflow-designer/subworkflow-editor/tabs-general.md
+            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Important Settings:                workflow-designer/subworkflow-editor/important-settings.md
+            - Tabs > Detailed View:                     workflow-designer/subworkflow-editor/detailed-view.md
+            - Tabs > Compute:                           workflow-designer/subworkflow-editor/compute.md
+            - Units Flowchart:                          workflow-designer/subworkflow-editor/units-flowchart.md
+        - Unit Editor:
+            - Overview:                                 workflow-designer/unit-editor.md
+            - Input Templates:                          workflow-designer/unit-editor/input-templates.md
 
-# COMPUTATIONAL ASPECTS
-    - Compute Infrastructure:
-        - Overview:                                     compute/overview.md
-        # Previously know as level: DEBUG, REGULAR, FAST etc....
-        - Category:                                    compute/levels-queues.md
-        # Different Queues on each Category (e.g. OR16)
-        - Queues:
-        # Explain the hardware offered by each cloud provider
-        - Cloud Providers:
-            - Overview:
-            - AWS:                                     compute/hardware.md
-            - Azure:
-        - Storage System:                              compute/cli/storage-system.md
-            # Explain storage systems
-            - Storage System:
-            # Check storage quotas
-            - Quotas:
-        # Compute tab under Jobs Designer
+
+    - Jobs:
+          # Links list to User Interface, Data and Actions for Workflows
+        - Overview:                                     jobs/overview.md
+        - Projects:                                     jobs/projects.md
+        - Data:                                         jobs/data.md
+        - Status:                                       jobs/status.md
         - User Interface:
-            - Compute Form:                            compute/setup.md
-                # what is login node: Intermediary access point to clusters
-        - Login Node:
-            - Overview:
-            # CLI, RemDkt, and API
-            - Connection Options:                      compute/connection-options.md
-            # Important folders under Home dir
-            - Important Folders: # - Clusters Data: - Dropbox: - Jobscript Templates:
+             # Here we should highlight especially the Jobs-specific actions, since Table is the same for all entities
+            - Explorer:                                 jobs/ui/explorer.md
+            - Designer:                                 jobs-designer/overview.md
+             # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
+            - Viewer:                                   jobs/ui/viewer.md
+            - Projects Explorer:                        jobs/ui/projects-explorer.md
+         # Introduction to concept of Projects (particular set for jobs only)
+        - Actions:
+            - Overview:                                 jobs/actions/overview.md
+            - Create:                                   jobs/actions/create.md
+            - Run:                                      jobs/actions/run.md
+            - Terminate:                                jobs/actions/terminate.md
+            - Purge:                                    jobs/actions/purge.md
+            - Projects > Create / Delete:               jobs/actions/create-delete-project.md
 
 
-    - Remote Desktop:
-        # Put link to CentOS general documentation
-        - Overview:                                     compute/remote-desktop.md
-        # Mention installed software under Other in Applications menu, with links to their documentation pages
-        - Scientific Software:
-            - VMD:
-            # VASP Python thingy
-            - P4VASP:
-            - TMole:
-            - VESTA:
-            - XCRYSDEN:
+    - Jobs Designer:
+         # What is Jobs Designer and clickable image with links to Designer components below
+        - Overview:                                     jobs-designer/overview.md
+        - Header Menu:
+             # Links to all the header menu actions listed below
+            - Overview:                                 jobs-designer/header-menu/overview.md
+            - Select Parent:                            jobs-designer/header-menu/select-parent.md
+            - Select Materials:                         jobs-designer/header-menu/select-materials.md
+            - Select Workflow:                          jobs-designer/header-menu/select-workflow.md
+            - Save:                                     jobs-designer/header-menu/save.md
+            - Submit:                                   jobs-designer/header-menu/submit.md
+        # Reference Materials Viewer and explain how to cycle through materials in Pager
+        - Materials Tab:                                jobs-designer/materials-tab.md
+        # Reference WF Viewer and explain
+        #    - which options are adjustable - isDraft, important settings
+        #    - how to view workflow important settings and unit input for multiple materials
+        - Workflow Tab:                                 jobs-designer/workflow-tab.md
+        # Refer to original compute tab
+        - Compute Tab:                                  jobs-designer/compute-tab.md
 
 
-
-
-    - Command Line Interface (CLI):
-        - Overview:
-        # Explain different ways of logging in to CLI
-        - Login:                                        compute/cli/login.md
-            # exadownload command mention below,
-            # drag and drop - upload files
-            # ctrl+shift+cmd - to open Guacamole Terminal menu - links to it
-            - Web Terminal:
-            - External SSH clients:
-            - Create / Upload SSH key:
-        - Environment:                                  compute/cli/modules-environment.md
-            # Customize shell (e.g. change to ZSH)
-            - Customize:
-            # Load and see list of available modules
-            - Modules:
-        - System Status:
-            # check status of clusters with exaclusters command
-            - Clusters:
-            # List compute nodes and their state with exanodes command
-            - Nodes:
-
-
-
-    - CLI Jobs:
+    - Jobs via Command Line Interface:
         - Overview:
         # Jobscript, with examples
         - Batch script:
@@ -474,45 +400,171 @@ pages:
             - Terminate:
 
 
-######################
+# COMPUTATIONAL ASPECTS
+    - General Infrastructure:
+        # Put general flowchart here, explaining connection between login node, clusters, connection methods, dropbox etc.
+        - Overview:                                     compute/overview.md
+        - Login Node:
+            # what is login node: Intermediary access point to clusters
+            - Overview:
+            # CLI, RemDkt, and API introduction and links to dedicated sections
+            - Connection Options:                       compute/connection-options.md
+            # Description of important folders under Home dir: Clusters Data, Dropbox, Jobscript Templates.
+            - Directory Structure:
+        # The presence of multiple clusters, multiple cloud providers
+        # Ability to have private clusters for enterprise
+        - Clusters:
+            - Overview:
+            # Home/Share
+            - Directory Structure:
+            # TODO: MM to add content
+            # Explain the hardware offered by each cloud provider
+            # List of Queues, pricing, location of datacenters, hyperthreading
+            - AWS Clusters:                             compute/hardware.md
+            - Azure Clusters:
+        # How resource on each compute cluster are allocated
+        - Resource Management:
+            - Overview:
+            # Previously know as level: DEBUG, REGULAR, FAST etc....
+            - Category:                                 compute/levels-queues.md
+            # Different Queues on each Category (e.g. OR16)
+            - Queues:
+        # The architecture of the storage system, Network File System
+        # Link to Data on Disk, mention of Quotas
+        - Storage System:                               compute/cli/storage-system.md
+        # Compute tab under Jobs Designer
+        - User Interface:
+            - Compute Form:                             compute/setup.md
+
+
+    - Data Practices:
+        # Classification - 3 types of data + links
+        - Classification:
+        # Object representation of unstructured data for communication with webapp (see flowchart in notebook)
+        - Lifecycle:
+
+
+    - Structured Data:
+        # Content description
+        # Links to other pages with Jobs, Materials, Workflows explanation
+        - Overview:
+        # Entry point to materials-data online page https://exabyte.io:4567
+        - Schemas & Examples:
+
+
+    - Data on Disk:
+        - Overview:
+        # Explain file permissions in /home directory,
+        # Presence of multiple home folders - on clusters and login and how they are connected
+        # Shared Directories:
+        # Dropbox (*):
+        # Mapping of folders from Clusters to Login node,
+        - Directory Structure:                                  compute/cl i/cli-users-permissions.md
+        # Quotas imposed on /home, /share,
+        - Quotas:
+        # Permissions, Encryption, link to site-policy security description
+        - Security:
+
+
+    - Data in Object Storage:
+        - Overview:
+        # General introduction to Files concept for storing and transferring unstructured data
+        - Files:
+
+        # TODO: MM to add content below
+        - Security:
+
+        - Dropbox(*):
+        - User Interface:
+            # Files tab under Jobs Viewer and in Dropbox, with list of special properties (	PROVIDER & REGION	SIZE	UPDATED)
+            - Files Explorer:                           files/ui/explorer.md
+        - Actions:
+            - Overview:                                 files/actions/overview.md
+            # Download action for files
+            - Download:                                 files/actions/download.md
+            # Copy Path action for files
+            - Copy Path:                                files/actions/copy-path.md
+            # Dropbox only actions
+            - Upload:
+            - Create Folder:
+            # (Create new set action)
+
+
+    - Remote Connection:
+        # Content of the section
+        - Overview:
+        # How to use OS-specific ssh clients: 1) generate keys, 2)upload (link to preferences page), 3) enter name of server (bohr) to connect finally
+        # enter server name,
+        # links to explanations on ssh keys,
+        # links to documentation for OS-specific SSH clients
+        # - Action > Upload SSH key:
+        - SSH Terminal (SSH):
+        # Introduction to the concept of Remote Desktop on our platform
+        # Put link to CentOS general documentation
+        # Link to software section
+        - Remote Desktop (RD):
+        # Introduction to concept of Web Terminal in the platform
+        # Mention that CLI can be accessed also from SSH clients, with links to the next CLI-specific section
+        # Put a link to Environment
+        - Web Terminal (WT):
+        - Actions > WT & RD:
+            - Overview:
+            # Animate access to Terminal
+            - Open Web Terminal:
+            # Animate access to Remote Desktop
+            - Open Remote Desktop:
+            # Explanation or Guacamole Sidebar
+            # Screenshot or Guacamole Sidebar
+            - Open Guacamole Sidebar:
+            # How to copy/paste text using Guacamole Sidebar (clipboard)
+            - Upload / Download:
+            - Copy / Paste Text:
+        - Actions > Remote Desktop:
+            # List all actions
+            - Overview:
+            # Animate files browser in CentOS
+            # Links to Login node, Dropbox
+            # Mention open Linux terminal
+            - Browse Directories:
+            # Animate opening VESTA
+            - Open Applications:
+            # Mention how to upload files from Dropbox in Webapp and access them through Remote Desktop and vice-versa
+            # Animate creation of a POSCAR file in VESTA and accessing it from Dropbox after in Web Platform
+            - Access data in Web Platfrom:
+
+
+    - Command Line Interface:
+        # Contents of the section
+        - Overview:
+        # Same content as before (previous version of documentation)
+        - Environment:                                  compute/cli/modules-environment.md
+        - Actions:
+            # corresponding UI action
+            # Customize shell (e.g. change to ZSH)
+            - Customize CLI Environment:
+            # How to compile your own stuff on the clusters
+            - Add new software:
+            # check status of clusters with exaclusters command
+            - List Clusters:
+            # List compute nodes and their state with exanodes command
+            - List Cluster Nodes:
+            # Link to the corresponding section
+            - Jobs Actions:
 
 
     - REST-API:
         - Overview:                                     rest-api/overview.md
         # Authentication section explains how to authenticate and access the API.
+        # TODO: MM to adjust the content for the two pages below
         - Authentication:                               rest-api/authentication.md
-        # Query Structure section explains how to create and set up HTTP requests to the API.
         - Query structure:                              rest-api/query-structure.md
-        # Information on how to access the data through a python client
-        - Python Client:                                rest-api/rest-api-python-client.md
-        # The currently supported functions for each entity type.
+        # Link to of the Python Client
+        # Link to Examples Repository
+        - Examples:                                rest-api/rest-api-python-client.md
+        # Explanation and a Link to Swagger Explorer page
+        # - List of versions with its own link
+        # - Animation Example of how to use the swagger UI for Listing materials
         - Endpoints:
-            - Materials > Account:                      rest-api/endpoints/materials.md
-            - Materials > Bank:                         rest-api/endpoints/materials-bank.md
-            - Materials > Properties:                   rest-api/endpoints/properties.md
-            - Jobs:                                     rest-api/endpoints/jobs.md
-            - Workflows:                                rest-api/endpoints/workflows.md
-            # TODO: revise and re-enable after
-            - Pseudos:                                  rest-api/endpoints/pseudos.md
-
-
-    # Reuse some of the material from EXABYTE DATA CONVENTION REPO for the structured data section
-    - Data Convention:
-        # Intro to the concepts of structured (eg JSON) and unstructured data (e.g. simulations output files)
-        - Overview:                                     data/convention/overview.md
-        - Structured data:                              data/convention/structured.md
-            - Overview:
-            - Examples:
-        - Non-structured data:                          data/convention/non-structured.md
-
-
-########################################################################################################################
-########################################################################################################################
-
-
-
-
-
 
 
 # TUTORIALS AND EXAMPLES
