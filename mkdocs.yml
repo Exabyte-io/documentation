@@ -135,8 +135,10 @@ pages:
         - Overview:                                     models/overview.md
         - Auxiliary Concepts:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
-            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
+            # kgrid, qgrid, igrid,
+            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
+            # kpath, qpath, ipath
+            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
         - Density Functional Theory:
             - Overview:                                 models/dft/overview.md
             - References:                               models/dft/references.md
@@ -181,6 +183,9 @@ pages:
     - Entities & Common Aspects:
         # Introduction (links) to entity concepts, actions and common interface components.
         - Overview:                                     entities-general/overview.md
+        # Example entities lifecycle for Materials, Worklfows, Jobs and Properties
+        # Use diagram from https://www.lucidchart.com/documents#docs?folder_id=168606925
+        - Lifecycle:
         # The notion of ownership + links to Accounts overview
         - Ownership:                                    entities-general/ownership.md
         # The notion of permissions (read, edit, execute, comment) + links to Accounts, Organizations, Teams overview
@@ -262,45 +267,6 @@ pages:
             - View Actions Panel:                       materials-designer/3d-editor/view.md
             - Edit Actions Panel:                       materials-designer/3d-editor/edit.md
             - Export Actions Panel:                     materials-designer/3d-editor/export.md
-
-
-    # Links to Materials Data REPO need to go here, in data file
-    - Properties:
-        # Consider putting current properties page content here
-        - Overview:                                     properties/overview.md
-        # Evolution
-        - Refinement:                                   properties/refinement.md
-        # Put single reference to entry gateway of Materials API documentation
-        - Data:                                         properties/data.md
-        - User Interface:
-            # Properties Explorer is located under Materials Viewer
-            - Explorer:                                 properties/ui/explorer.md
-            # Final Structure Materials Viewer under results Tab in Jobs Viewer
-            - Viewer:                                   properties/ui/viewer.md
-        # The sections below explain all Characteristic properties, with mentions about their UI appearances
-        - Scalar:
-            # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
-            - Energies:                                 properties/scalar/energies.md
-            # Total force and average pressure
-            - Pressure / Total Force:                   properties/scalar/pressure.md
-        - Tensorial:
-            - Atomic forces:                            properties/tensorial/atomic-forces.md
-            - Stress tensor:                            properties/tensorial/stress-tensor.md
-        - Dispersion Curves:
-            # Include description of band-gap here
-            - Band Structure:                           properties/dispersion/bandstructure.md
-            - Phonons:                                  properties/dispersion/phonons.md
-            - Density of States:                        properties/dispersion/dos.md
-        # The section below explains all of the Descriptive properties, in terms of their theoretical background
-        - Structural:
-            # Consider Moving Basis/lattice explanation from Materials Designer to here
-            # Can explain the following Descriptive Properties here: Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
-            - Atomic:                                   properties/structural/atomic.md
-            # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
-            - Lattice:                                  properties/structural/lattice.md
-            # Explain how basis can be attached to lattice to create crystal structure
-            - Final Structure:                          properties/structural/final-structure.md
-
 
     - Workflows:
         - Overview:                                     workflows/overview.md
@@ -408,6 +374,46 @@ pages:
             # Terminate jobs with qdel
             - Terminate:                                jobs-cli/actions/terminate.md
 
+    - Properties:
+        # Consider putting current properties page content here
+        - Overview:                                     properties/overview.md
+        # Explain how the extraction of raw properties is done
+        # Note that we have plans to add user-defined extractors in the future
+        - Extractors:
+        # Evolution
+        - Refinement:                                   properties/refinement.md
+        # GATEWAY to MATERIALS-DATA
+        # Note that we have plans to add user-defined schemas for properties
+        - Schemas & Examples:                           structured/schemas.md
+        - User Interface:
+            # Properties Explorer is located under Materials Viewer
+            - Explorer:                                 properties/ui/explorer.md
+            # Final Structure Materials Viewer under results Tab in Jobs Viewer
+            - Viewer:                                   properties/ui/viewer.md
+        # The sections below explain all Characteristic properties, with mentions about their UI appearances
+        - Scalar:
+            # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
+            - Energies:                                 properties/scalar/energies.md
+            # Total force and average pressure
+            - Pressure / Total Force:                   properties/scalar/pressure.md
+        - Tensorial:
+            # Add a link to other atomic properties
+            - Atomic forces:                            properties/tensorial/atomic-forces.md
+            - Stress tensor:                            properties/tensorial/stress-tensor.md
+        - Dispersion Curves:
+            # Include description of band-gap here
+            - Band Structure:                           properties/dispersion/bandstructure.md
+            - Phonons:                                  properties/dispersion/phonons.md
+            - Density of States:                        properties/dispersion/dos.md
+        # The section below explains all of the Descriptive properties, in terms of their theoretical background
+        - Structural:
+            # Consider Moving Basis/lattice explanation from Materials Designer to here
+            # Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
+            - Atomic:                                   properties/structural/atomic.md
+            # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
+            - Lattice:                                  properties/structural/lattice.md
+            # Explain how basis can be attached to lattice to create crystal structure
+            - Final Structure:                          properties/structural/final-structure.md
 
 # COMPUTATIONAL ASPECTS
     - General Infrastructure:
@@ -457,7 +463,7 @@ pages:
         # Content description
         # Links to other pages with Jobs, Materials, Workflows explanation
         - Overview:                                     structured/overview.md
-        # Entry point to materials-data online page https://exabyte.io:4567
+        # GATEWAY to MATERIALS-DATA
         - Schemas & Examples:                           structured/schemas.md
 
 
@@ -623,6 +629,7 @@ pages:
 # OTHER
     - Other:
         - FAQ:                                          other/faq.md
+        - Publications:                                 other/publications.md
         - Help & Support:                               other/support.md
         - Community Programs:                           other/community-programs.md
         - Terms of Service:                             other/terms-of-service.md  # duplicate through link
