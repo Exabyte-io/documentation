@@ -26,7 +26,7 @@ Here, the [name and queue](/jobs-designer/compute-tab.md) of the [cluster](/pric
 
 ## Run & Wait Time
 
-This corresponds to the amount of time that the Job took to finish, and for how long it had to wait in the [queue](/compute/levels-queues.md) of the cluster before being executed.
+This corresponds to the amount of time that the Job took to finish, and for how long it had to wait in the [queue](/infrastructure/resource/queues.md) of the cluster before being executed.
 
 ## Project
 

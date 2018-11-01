@@ -1,6 +1,6 @@
 # Structured Data
 
-We store each item in the Entity Collections in the form of **structured data** in JSON format [[1](#links)]. The user is referred to the corresponding [section of the documentation](/data/convention/structured.md) for the explanation of the concept of structured data in the context of our platform.
+We store each item in the Entity Collections in the form of **structured data** in JSON format [[1](#links)]. The user is referred to the corresponding [section of the documentation](/data-structured/overview.md) for the explanation of the concept of structured data in the context of our platform.
 
 # Example JSON representation
 
@@ -44,7 +44,7 @@ The reader is referred to other documentation pages for aspects that might perta
 | owner / creator | Entity Owner and Creator | Further information about both the [ownership](ownership.md) of the entity, and the user who created it is described separately below. |
 | exabyteId      | Identifier of the corresponding [Bank Entity](bank.md) Collection | Only present for "Bankable" entity types. |
 | hash |  Unique string produced by [Bank Mapping Function](bank.md) |  The entity item within the Bank collection also contains this string.   |
-| schemaVersion |  Version of the JSON schema | The version of the JSON schema according to the [Exabyte Data Convention](/data/convention/overview.md), employed at the moment of the creation of the entity.  |
+| schemaVersion |  Version of the JSON schema | The version of the JSON schema according to the [Exabyte Data Convention](/data-structured/overview.md), employed at the moment of the creation of the entity.  |
 | createdAt / updatedAt  | Date and Time Information  | Information about the date and time at which the entity was first created / updated.  |
 | tags | Descriptive Metadata  | See dedicated section below for further explanations. |
 

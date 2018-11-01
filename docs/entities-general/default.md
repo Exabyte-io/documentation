@@ -8,7 +8,7 @@ The default material, for example, is used to pre-initiate the [job](/jobs-desig
 
 # Marking
 
-The user can recognize the entity as being the default one for future operations by the check-mark assigned to it under the "Default" column of the [Explorer](../ui/explorer.md) interface.
+The user can recognize the entity as being the default one for future operations by the check-mark assigned to it under the "Default" column of the [Explorer](ui/explorer.md) interface.
 
 # Change
 

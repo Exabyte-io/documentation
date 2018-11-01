@@ -8,7 +8,7 @@ As explained in the [general introduction](/entities-general/ui/viewer.md), we r
 
 # Allowed Adjustments
 
-Some minor adjustments, not related to the crystal structure (as an [identifying descriptive property](/data/convention/structured.md#by-relation-to-uniqueness)) , might still be performed under the Materials Viewer. These can primarily be performed under the *header* and *footer* of Viewer, both highlighted in red in the image below.
+Some minor adjustments, not related to the crystal structure (as an [identifying descriptive property](/data-structured/overview.md#by-relation-to-uniqueness)) , might still be performed under the Materials Viewer. These can primarily be performed under the *header* and *footer* of Viewer, both highlighted in red in the image below.
 
 ![Materials Viewer](/images/materials-viewer.png "Materials Viewer")
 
@@ -26,4 +26,4 @@ Accounts with the appropriate [Service Level](/pricing/service-levels.md) can ch
 
 # Properties Explorer
 
-The list of calculated [properties](../../properties/properties.md) for the material under consideration, is displayed below the footer as explained [here](../../properties/ui/explorer.md).
+The list of calculated [properties](../../properties/overview.md) for the material under consideration, is displayed below the footer as explained [here](../../properties/ui/explorer.md).

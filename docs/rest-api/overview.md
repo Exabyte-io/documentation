@@ -10,7 +10,7 @@ REST-API is meant as a tool to enable programmatic access to data for data scien
 
 # Endpoints
 
-The currently supported functions are explained inside the corresponding Endpoints sections. For example, the information on dealing with materials data is available [here](endpoints/materials.md).
+The currently supported functions are explained inside the corresponding Endpoints sections. For example, the information on dealing with materials data is available [here](endpoints.md).
 
 # Queries
 

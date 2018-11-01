@@ -52,7 +52,7 @@ Our users only pay for what they use, however we require that they use the alloc
 
 # Queue-based pricing
 
-Detailed description of submission queues and compute levels is available [elsewhere](../compute/levels-queues.md). Brief summary of charge factors for each queue types wrt the base price are shown below
+Detailed description of submission queues and compute levels is available [elsewhere](/infrastructure/resource/queues.md). Brief summary of charge factors for each queue types wrt the base price are shown below
 
 |Queue type| Charge factor
 |:---------|:------------

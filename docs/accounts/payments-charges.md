@@ -8,7 +8,7 @@ An Account is not billed, or "Charged", until the completion of the correspondin
 
 # View Charges and Payments
 
-Inspection of the complete list of all previously-made payments, and of all incurred charges, associated with an Account is rendered possible through the "Billing & Payments" option under the [right-hand sidebar](/ui/universal/right-sidebar.md) interface component, accessible from anywhere across the platform. This particular aspect of the User Interface is reviewed in the following [dedicated page](ui/charges-payments.md).
+Inspection of the complete list of all previously-made payments, and of all incurred charges, associated with an Account is rendered possible through the "Billing & Payments" option under the [right-hand sidebar](//ui/right-sidebar.md) interface component, accessible from anywhere across the platform. This particular aspect of the User Interface is reviewed in the following [dedicated page](ui/charges-payments.md).
 
 # Payment Methods
 

@@ -12,7 +12,7 @@ All the available free storage space, that has not been yet occupied by the data
 
 # View Quota
 
-Both the Consumed and Available storage quotas associated with an Account can be inspected by the user through any of the following user interface components: the [Service Levels](ui/service-level.md) page, the [right-hand sidebar](/ui/universal/right-sidebar.md), the [Bio](ui/bio.md) account interface component, or on the main [Dashboard](/ui/dashboard.md). In the latter three cases, it is possible to visualize such quota information broken down across each individual computing cluster node available to the Account. 
+Both the Consumed and Available storage quotas associated with an Account can be inspected by the user through any of the following user interface components: the [Service Levels](ui/service-level.md) page, the [right-hand sidebar](//ui/right-sidebar.md), the [Bio](ui/bio.md) account interface component, or on the main [Dashboard](/ui/specific/dashboard.md). In the latter three cases, it is possible to visualize such quota information broken down across each individual computing cluster node available to the Account. 
 
 # Increase Quota
 
@@ -20,4 +20,4 @@ Accounts can increase the limit for the total storage quota according to the ins
 
 # Access Quota Information via Command Line
 
-Information about the consumed and available storage quotas can also be accessed via the Command Line Interface of the platform, as explained in a [separate section of the documentation](/compute/cli/storage-system.md).
+Information about the consumed and available storage quotas can also be accessed via the Command Line Interface of the platform, as explained in a [separate section of the documentation](/infrastructure/storage.md).

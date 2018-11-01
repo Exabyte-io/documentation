@@ -6,9 +6,9 @@
 This page explains how to request an increase to the Account's [Storage Quota](../quota.md) on the available supercomputing clusters, in addition to the storage space already provided under the account's current [service level](/pricing/service-levels.md). This action can be performed from the following four alternative locations across the platform interface:
 
 
-- [The Right-hand Sidebar](/ui/universal/right-sidebar.md)
+- [The Right-hand Sidebar](//ui/right-sidebar.md)
 - [The Service Level Tab](../ui/service-level.md)
-- [Dashboard](/ui/dashboard.md)
+- [Dashboard](/ui/specific/dashboard.md)
 - [The "Bio" tab](../ui/bio.md)
 
 In the former two cases, the increase in Storage Quota can be executed through either of the corresponding `Add Storage` buttons, located within the broader User Interface as highlighted in red in the image below:

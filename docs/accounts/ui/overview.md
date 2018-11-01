@@ -1,6 +1,6 @@
 # Accounts-related UI
 
-Multiple User Interface components are available, under the wider general [interface of our platform](/ui/universal/ui-overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
+Multiple User Interface components are available, under the wider general [interface of our platform](//ui/ui-overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
 
 Each of these interface components is reviewed below, based on the location they can be accessed from.
 
@@ -12,7 +12,7 @@ The interface elements accessible from the "Profile" page are reviewed [separate
 
 # Left Sidebar
 
-The image below shows components available under the [left sidebar](/ui/universal/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below.
+The image below shows components available under the [left sidebar](//ui/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below.
 
 ![Account UI left sidebar](/images/left-sidebar-accounts.png "Account UI left sidebar")
 
@@ -22,7 +22,7 @@ The list of all accounts on our platform  can be accessed following [these instr
 
 # Right Sidebar
 
-Similarly, more components are present under the [right-hand sidebar](/ui/universal/right-sidebar.md). They are highlighted and referenced below.
+Similarly, more components are present under the [right-hand sidebar](//ui/right-sidebar.md). They are highlighted and referenced below.
 
 ![Account UI right sidebar](/images/right-sidebar-accounts.png "Account UI right sidebar")
 

@@ -32,4 +32,4 @@
 | arguments | Extra arguments  | 
 
 !!!note "Note: explanation of clusters-related terms"
-    The user is referred to [this page](/compute/setup.md) for instructions on how to operate the supercomputing [clusters](/pricing/service-levels.md#clusters-and-premium-hardware) offered on our platform. The concept of [Queue](/compute/levels-queues.md) on the  cluster is also explained in its respective page.
+    The user is referred to [this page](/compute/setup.md) for instructions on how to operate the supercomputing [clusters](/pricing/service-levels.md#clusters-and-premium-hardware) offered on our platform. The concept of [Queue](/infrastructure/resource/queues.md) on the  cluster is also explained in its respective page.

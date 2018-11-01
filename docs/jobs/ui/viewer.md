@@ -32,7 +32,7 @@ The option to collapse or expand a panel is offered at its top-right corner.
 
 The panels contain the results for the computation of the [materials properties](/properties/overview.md) that were selected at the moment of the [creation of the subworkflow](/workflow-designer/subworkflow-editor/detailed-view.md) or subsequently adjusted during the [job design](/jobs-designer/overview.md) stage.
 
-The manner in which these properties are displayed under the corresponding panels is explained in a [separate section](/properties/scalar/overview.md) of this documentation. 
+The manner in which these properties are displayed under the corresponding panels is explained in a [separate section](/properties/overview.md) of this documentation. 
 
 ## Example Appearance
 
@@ -46,7 +46,7 @@ An example of appearance of the Results tab for the case of an electronic bandst
 
 ## Files Explorer
 
-A review of the [actions](/files/actions/overview.md) and [user interface aspects](/files/ui/explorer.md) specific to the Files Explorer is offered in a separate section of the documentation.
+A review of the [actions](/data-in-objectstorage/ui/explorer.md) and [user interface aspects](/data-in-objectstorage/ui/explorer.md) specific to the Files Explorer is offered in a separate section of the documentation.
 
 ## Example Appearance
 

@@ -12,7 +12,7 @@ The "Reserved" aspect of the total balance refers to the amount of money which h
  
 # View Balance
 
-Both the Reserved and Available Balances associated with an Account can be inspected by the User through either the [Service Levels](ui/service-level.md) or the [right-hand sidebar](/ui/universal/right-sidebar.md) components.
+Both the Reserved and Available Balances associated with an Account can be inspected by the User through either the [Service Levels](ui/service-level.md) or the [right-hand sidebar](//ui/right-sidebar.md) components.
 
 # Increase Balance
 

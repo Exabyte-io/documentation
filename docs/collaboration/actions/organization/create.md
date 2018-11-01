@@ -1,6 +1,6 @@
 # Create an Organization
 
-New Organizations can be created by first navigating to [My Accounts](/accounts/ui/switcher.md) page using the [right-hand sidebar](/ui/universal/right-sidebar.md). 
+New Organizations can be created by first navigating to [My Accounts](/accounts/ui/switcher.md) page using the [right-hand sidebar](//ui/right-sidebar.md). 
 
 # Open "Create New Organization" Dialog
 
@@ -38,7 +38,7 @@ If this is the first time an Organization is created, a promotional message will
 The user who performed the above steps is appointed as the [owner](../../organizations/roles.md) of the Organization.
 
 !!!warning "Warning: change of Owner"
-    Please [contact us](/ui/universal/support.md) if a member other than the creator needs to be appointed as the Owner.
+    Please [contact us](//ui/support.md) if a member other than the creator needs to be appointed as the Owner.
 
 # Animation
 

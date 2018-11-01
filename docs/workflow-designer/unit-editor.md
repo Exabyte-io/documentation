@@ -24,7 +24,7 @@ We maintain a set of input templates (as further explained [here](unit-editor/in
 
 # Properties and Monitors
 
-The "Properties" and "Monitors" sections of the Unit Editor interface are presented in a way which is exactly analogous to the equivalent sections under the "Detailed View" tab of the parent Subworkflow Editor interface. The reader is therefore referred to the relevant parts of the "Detailed View" [documentation page](/workflow-designer/subworkflow-editor/detailed-view.md#the-"properties"-section), and to [this general reference page](/properties/properties.md). This part allows for the selections of physical properties to be retrieved as part of the final output of the unit's computational task, and secondly a list of quantities that can be monitored for during the course of the execution. 
+The "Properties" and "Monitors" sections of the Unit Editor interface are presented in a way which is exactly analogous to the equivalent sections under the "Detailed View" tab of the parent Subworkflow Editor interface. The reader is therefore referred to the relevant parts of the "Detailed View" [documentation page](/workflow-designer/subworkflow-editor/detailed-view.md#the-"properties"-section), and to [this general reference page](/properties/overview.md). This part allows for the selections of physical properties to be retrieved as part of the final output of the unit's computational task, and secondly a list of quantities that can be monitored for during the course of the execution. 
 
 # Next
 

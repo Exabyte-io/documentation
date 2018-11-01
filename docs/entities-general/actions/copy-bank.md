@@ -4,7 +4,7 @@ In order to import Entities from their respective [Banks](../bank.md) into the A
 
 # Open Bank Page
 
-First click on the corresponding `Bank` option in the [left-hand Sidebar](/ui/universal/left-sidebar.md) and choose either Materials or Workflows.
+First click on the corresponding `Bank` option in the [left-hand Sidebar](//ui/left-sidebar.md) and choose either Materials or Workflows.
 
 # Search for Entity
 
