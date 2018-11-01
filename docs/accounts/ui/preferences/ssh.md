@@ -1,6 +1,6 @@
 # SSH Keys
 
-The concept of SSH authorization keys in the context of the Command Line Interface of our platform are thoroughly explained in a [separate section](/compute/cli/cli-users-permissions.md). For the moment, we will restrict ourselves to showing how such keys can be added to or deleted from our platform.
+The concept of SSH authorization keys in the context of the Command Line Interface of our platform are thoroughly explained in a [separate section](/data-on-disk/security.md). For the moment, we will restrict ourselves to showing how such keys can be added to or deleted from our platform.
 
 # Add New Key
 

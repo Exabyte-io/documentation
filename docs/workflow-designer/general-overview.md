@@ -4,7 +4,7 @@
 
 # Navigating to Workflow Designer
 
-Navigating to the interface can be initiated through the "Create Workflow" action introduced [in this page](/workflows/actions/create.md). 
+Navigating to the interface can be initiated through the "Create Workflow" action introduced [in this page](/entities-general/actions/create.md). 
  
 # Components of the Interface
 

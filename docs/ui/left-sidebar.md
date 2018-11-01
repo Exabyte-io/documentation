@@ -27,7 +27,7 @@ further described comprehensively in dedicated documentation pages, referenced i
 
 # Dashboard
 
-The Dashboard component of the user interface is reviewed in the [following page](../dashboard.md).
+The Dashboard component of the user interface is reviewed in the [following page](/ui/specific/dashboard.md).
 
 # Create Job
 

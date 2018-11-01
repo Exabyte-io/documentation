@@ -12,7 +12,7 @@ The following materials keywords are available.
 
 ## Generic Keywords
 
-Generic keywords present for all materials are described below. These can also be referred to as [descriptive properties](/data/convention/structured.md#by-relation-to-workflow).
+Generic keywords present for all materials are described below. These can also be referred to as [descriptive properties](/data-structured/overview.md#by-relation-to-workflow).
 
 | Keyword    |   Description      |  
 | :-------- |:----------- |
@@ -29,7 +29,7 @@ Generic keywords present for all materials are described below. These can also b
 
 ## Properties
 
-[Characteristic properties](/data/convention/structured.md#by-relation-to-workflow) present for materials after the corresponding calculation(s) are done are described below and in the [corresponding page](/properties/properties.md).
+[Characteristic properties](/data-structured/overview.md#by-relation-to-workflow) present for materials after the corresponding calculation(s) are done are described below and in the [corresponding page](/properties/overview.md).
 
 | Property    |   Description      |  
 | :-------- |:----------- |

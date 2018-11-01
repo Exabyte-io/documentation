@@ -187,7 +187,7 @@ pages:
         - Overview:                                     entities-general/overview.md
         # Example entities lifecycle for Materials, Worklfows, Jobs and Properties
         # Use diagram from https://www.lucidchart.com/documents#docs?folder_id=168606925
-        - Lifecycle:
+        - Lifecycle:                                    entities-general/lifecycle.md
         # The notion of ownership + links to Accounts overview
         - Ownership:                                    entities-general/ownership.md
         # The notion of permissions (read, edit, execute, comment) + links to Accounts, Organizations, Teams overview
@@ -381,12 +381,12 @@ pages:
         - Overview:                                     properties/overview.md
         # Explain how the extraction of raw properties is done
         # Note that we have plans to add user-defined extractors in the future
-        - Extractors:
+        - Extractors:                                   properties/extractor.md
         # Evolution
         - Refinement:                                   properties/refinement.md
         # GATEWAY to MATERIALS-DATA
         # Note that we have plans to add user-defined schemas for properties
-        - Schemas & Examples:                           structured/schemas.md
+        - Schemas & Examples:                           data-structured/schemas.md
         - User Interface:
             # Properties Explorer is located under Materials Viewer
             - Explorer:                                 properties/ui/explorer.md
@@ -565,7 +565,7 @@ pages:
             # Note that a permission needs to be requested to access master nodes in command line
             - Add new software:                         cli/actions/add-software.md
             # Explain how to use virtualenv to assemble pymatgen, pandas and ase into a virtual environment
-            - Create Python Environment:
+            - Create Python Environment:                cli/create-python-env.md
             # check status of clusters with exaclusters command
             - List Clusters:                            cli/actions/list-clusters.md
             # List compute nodes and their state with exanodes command

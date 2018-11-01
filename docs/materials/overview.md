@@ -28,6 +28,6 @@ The [Data](data.md) section contains an example of JSON representation of a mate
 
 [Materials Bank](bank.md) collection and its related operations is explained in the corresponding section. 
 
-# [Properties](../properties/properties.md)
+# [Properties](../properties/overview.md)
 
-The [Properties](../properties/properties.md) section explains the general classification and contains examples of materials properties.
+The [Properties](../properties/overview.md) section explains the general classification and contains examples of materials properties.

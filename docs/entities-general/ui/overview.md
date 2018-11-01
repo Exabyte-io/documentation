@@ -12,7 +12,7 @@ The image below highlights their **access points** (or click triggers), within t
 
 The "Explorer" affords for the visualization of the [Entity Collections](/accounts/collections.md). It can also be used to perform [actions](../actions/overview.md) upon the items that they contain. This component is described in the [following page](/entities-general/ui/explorer.md).
 
-Explorer for each entity type can be accessed through the corresponding [tab](/ui/tabs-navigator.md), as depicted in the image above.
+Explorer for each entity type can be accessed through the corresponding [tab](/ui/specific/tabs-navigator.md), as depicted in the image above.
 
 # 2. Designer
 

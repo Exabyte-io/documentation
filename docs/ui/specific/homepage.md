@@ -46,7 +46,7 @@ The first option allows for the creation of simulation workflows for material mo
 
 ## 1. Run Simulations 
 
-Here, the user can choose to calculate [material properties](/properties/properties.md) of interest, through the selection of the corresponding workflow template. Examples of pre-defined templates may include total energy calculations, phonon dispersions or electronic bandstructure calculations. 
+Here, the user can choose to calculate [material properties](/properties/overview.md) of interest, through the selection of the corresponding workflow template. Examples of pre-defined templates may include total energy calculations, phonon dispersions or electronic bandstructure calculations. 
 
 A sample of workflow templates included under this option is portrayed in the image below. Clicking any of these available templates creates a new job implementing the workflow, under the default Project of the user's Account.
 
@@ -69,11 +69,11 @@ In future, further remote connection interfaces will be offered to our customers
 
 ### 3A. Command Line Terminal 
 
-The first remote connection method consists in the [Command Line interface](/compute/cli/login.md) (option "3A"). 
+The first remote connection method consists in the [Command Line interface/remote-connection/overview.md) (option "3A"). 
 
 ### 3B. Remote Desktop 
 
-Alternatively, the [Remote Desktop environment](/compute/remote-desktop.md) (option "3B") can also be employed. 
+Alternatively, the [Remote Desktop environment](/remote-connection/remote-desktop.md) (option "3B") can also be employed. 
 
 
 # Machine Learning <i class="zmdi zmdi-graduation-cap"></i>

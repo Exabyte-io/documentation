@@ -8,7 +8,7 @@ For [accounts](/accounts/overview.md) with [service levels](/pricing/service-lev
 
 # Mapping Function
 
-Mapping Function produces a **hash** string (explained below) and is used to assert the uniqueness of Bank Entities. Each entity type has a different Mapping Function. It assesses certain [defining features](/data/convention/structured.md#by-relation-to-uniqueness) of the entity, as explained for the case of [Materials](/materials/bank.md) and [Workflows](/workflows/bank.md) separately.
+Mapping Function produces a **hash** string (explained below) and is used to assert the uniqueness of Bank Entities. Each entity type has a different Mapping Function. It assesses certain [defining features](/data-structured/overview.md#by-relation-to-uniqueness) of the entity, as explained for the case of [Materials](/materials/bank.md) and [Workflows](/workflows/bank.md) separately.
 
 
 # How Bank Entities are Generated

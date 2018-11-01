@@ -34,7 +34,7 @@ The central panel offers a table summarizing the [permissions](/entities-general
  
 # Sharing Information Under Left Sidebar
 
-The [left-hand sidebar](/ui/universal/left-sidebar.md) offers access to features related to shared entities, as explained below.
+The [left-hand sidebar](//ui/left-sidebar.md) offers access to features related to shared entities, as explained below.
 
 ## Accounts Explorer
 
@@ -42,7 +42,7 @@ The list of Accounts present across the entire platform is accessible under the 
 
 ## Entities Shared by Other Accounts
 
-The user can inspect all entities that have been shared with him/her by other Accounts, under the `Shared with me` option <i class="zmdi zmdi-share zmdi-hc-border"></i>. These entities are grouped according to their type under different [tabs](/ui/tabs-navigator.md). 
+The user can inspect all entities that have been shared with him/her by other Accounts, under the `Shared with me` option <i class="zmdi zmdi-share zmdi-hc-border"></i>. These entities are grouped according to their type under different [tabs](/ui/specific/tabs-navigator.md). 
 
 Each entry can be [opened](/entities-general/actions/open-edit.md) for inspection, or can be edited or executed, depending on the permissions assigned to the user's account by the originator of the share.
 

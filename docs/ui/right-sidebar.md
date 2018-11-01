@@ -11,8 +11,8 @@ The following menu entries are worth noticing.
 | Account Switcher                                                        | Enables switching between personal and organizational accounts. Opens in a small window showing the user's active accounts. Clicking one triggers switch to that account.
 | Quota, Queue, Service Level                                             | This section shows a quick snapshot of the status of the user's quota: Storage, job queue breakdown and the service level. The user can easily upgrade the service level, to obtain more compute power, by clicking the upgrade button. If the user wants to compare service levels, the user can find more information in the Account menu, below.
 | Account Balance                                                         | A snapshot of the user's current balance, quickly credit the balance using the Apply Credit Button
-| <i class="zmdi zmdi-settings"></i> &nbsp; [Account Preferences](../billing/settings-and-profile.md)                           | A link to [the user's account](../billing/settings-and-profile) page. In here the user can find his/her profile, preferences and service level.
-| <i class="zmdi zmdi-card"></i> &nbsp; [Billing & Payments](../billing/billing-and-payments.md)               | A link to the [billings and payments](../billing/billing-and-payments.md) section. In here the user can inspect compute charges, payment records and payment methods.
+| <i class="zmdi zmdi-settings"></i> &nbsp; [Account Preferences](/accounts/ui/preferences-overview.md)                           | A link to [the user's account](/accounts/ui/profile-page.md) page. In here the user can find his/her profile, preferences and service level.
+| <i class="zmdi zmdi-card"></i> &nbsp; [Billing & Payments](/accounts/payments-charges.md)               | A link to the [billings and payments](/accounts/payments-charges.md) section. In here the user can inspect compute charges, payment records and payment methods.
 | <i class="fa fa-terminal"></i> &nbsp; Terminal                                                                | Access to an in-browser command-line terminal through which the user can directly access his/her cloud account.
 | <i class="fa fa-desktop"></i> &nbsp; Remote Desktop                                                          | Opens a desktop session (VNC) on Exabyte.io remote server.
 | <i class="zmdi zmdi-accounts-add"></i> &nbsp; Invite a friend                                                         | Earn credits by inviting people to join Exabyte.io
@@ -41,7 +41,7 @@ The `Billing and Payments` link <i class="zmdi zmdi-card zmdi-hc-border"></i> re
 
 # Terminal and Remote Desktop
 
-The Terminal and Remote Desktop functionality provide alternative methods for accessing Accounts. More information about such practices can be retrieved [here](../../compute/cli/login.md).
+The Terminal and Remote Desktop functionality provide alternative methods for accessing Accounts. More information about such practices can be retrieved [here](..//remote-connection/overview.md).
 
 # Invite a Friend
 

@@ -22,4 +22,4 @@ The ownership of this cloned item is then attributed to the recipient Account.
 
 ## Transfer
 
-The Ownership of an entity can be changed only under the guidance of our [Support Service](/ui/universal/support.md).
+The Ownership of an entity can be changed only under the guidance of our [Support Service](//ui/support.md).

@@ -20,4 +20,4 @@ In the animation below, we demonstrate how to create a new empty Set called "Tes
 
 # Delete Sets
 
-The [standard procedure](actions/delete.md) for deleting items from an account-owned collection can be followed with regards to Sets also. 
+The [standard procedure](delete.md) for deleting items from an account-owned collection can be followed with regards to Sets also. 

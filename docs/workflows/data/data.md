@@ -1,4 +1,4 @@
-In order to organize and store the information about workflows we employ [Exabyte Data Convention](/data/convention/overview.md) as explained elsewhere in this documentation.
+In order to organize and store the information about workflows we employ [Exabyte Data Convention](/data-structured/overview.md) as explained elsewhere in this documentation.
 
 # Example Representation
 

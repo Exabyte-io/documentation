@@ -6,7 +6,7 @@ The conduct of members in an Organization is governed through the user **Roles**
 
 The user who initially created the organization is automatically appointed as its sole **Owner**, which attributes to him certain administrative privileges over the other members. 
 
-This title may be relinquished to other users. In order to do that, a special [request](/ui/universal/support.md) needs to be made to our support staff.
+This title may be relinquished to other users. In order to do that, a special [request](//ui/support.md) needs to be made to our support staff.
 
 ## Administrators
 

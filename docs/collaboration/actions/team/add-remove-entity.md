@@ -4,7 +4,7 @@ Entities of different [types](/entities-general/overview.md) can be assigned (or
 
 ## Open Entity Tabs
 
-Starting from the [Team Page](../../ui/team-page.md), [navigate](/ui/tabs-navigator.md) to the appropriate entity tab among the ones highlighted below:
+Starting from the [Team Page](../../ui/team-page.md), [navigate](/ui/specific/tabs-navigator.md) to the appropriate entity tab among the ones highlighted below:
  
 ![Team Entities](/images/team-entities.png "Team Entities")
 

@@ -23,7 +23,7 @@ Entities are stored in a database in the form of **structured data**. Entities c
 
 # Sets
 
-Some Entities can be grouped together under folders, or "Sets", as explained [here](actions/sets.md).
+Some Entities can be grouped together under folders, or "Sets", as explained [here](sets.md).
 
 # Bank
 

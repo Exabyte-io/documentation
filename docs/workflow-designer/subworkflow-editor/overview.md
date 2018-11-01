@@ -8,7 +8,7 @@ The general appearance of the typical content of the "Overview" tab is presented
 
 The first line in the "Overview" tab, labeled "Properties", contains a summary of the physical properties that will be computed during the course of the present calculation. These can be selected from a list of properties on the "Detailed View" tab, which is described [here](detailed-view.md). 
 
-For a complete list of physical properties available for calculation, the reader is referred to [this page](/properties/properties.md).
+For a complete list of physical properties available for calculation, the reader is referred to [this page](/properties/overview.md).
 
 ## Low-fidelity Runs
 
