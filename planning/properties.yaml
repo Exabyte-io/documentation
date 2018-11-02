@@ -4,6 +4,9 @@
 
         - Overview
         # Materials Properties (including tables)
+            % The following material properties are avialble to be computed under the simulation engines offered on our platform
+            % Present table of all the possbile properties
+            % Properties are extracted from the output of the simulations and presented to the user following the procedures and conventions outlined in the sections below (put links)
         # Extractors
         # Refinement
         # Schemas And Examples
@@ -15,27 +18,41 @@
 
         - Extractors
         # Extraction of Raw Properties
-        # Extractor Scripts
+            % Extraction of data consist in the execution of scripts which look for specific materials properties in the output files of simulation codes 
+            % For example, the retrieveal of the total energy in a Quantum Espresso output file is done by looking for the "!" character, and extracting the ensuing content of the same line 
         # User-defined Extractors available in future
+            % In the future, we will allow users to write their own extractor scripts to extract new properties, and share such scripts with other users 
 
         - Refinement
         # Refinement of Computed Properties
+            % Once extracted from the output files, some materials properties might need to be refined in order to be made presentable to the user 
+            % This refinement selection is done based on how physically meaningful such properties are 
         # Raw 
+            % Raw properties are all properties extracted from the output files of simulation codes, ragardless of how much physical sense they make  
         # Refined
+            % Refined properties include those properties which are physically meaningful
+            % The total energy for example is excluded from being classed as refined, since its absolute value computed by DFT makes no physical sense and depends on pseudopotential used and XC functional approximation 
+            % The band gap instead is considered a refined property since it is a relative energy difference, and therefore its computed value makes physical sense and can be compared directly with experiments 
         # Best
+            % Best is defined as the computation of a given refined materials property which has achieved the best precision, out of all the computations performed across the Exabyte platform by all users  
 
 
         - User Interface
-            - Explorer
+            - Properties Explorer
             # Properties Explorer
+                % The properties explorer interface can be found at the bottom of the materials viewer page
+                % It displays all the computed properties associated with the material being currently inspected 
             # Specific Features
+                % Specific features include the properties which can be displayed under the table columns of the interface 
 
-            - Viewer
+            - Final Structure Viewer
             # Materials Viewer for Final Structure
+                % Then final copmputed structure of a simulation can be inspected under a Materials Viewer interface inside the Results Tab of the Jobs Viewer 
             # Link to main Viewer documentation
+                % Materials Viewer is explained in detail separately (put link)
 
 ##################################################################################################################################
-
+        % For all the pages below, the following conventional structure will be employed - 1) short physical description of the material property being discussed, 2) Screenshot of how the property is presented under the Results tab of Jobs Viewer, 3) Link to wikipedia articles describing the property in detail, when applicable
         - Scalar
             - Energies
             # Total Energy, 
