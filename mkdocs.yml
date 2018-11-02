@@ -398,7 +398,7 @@ pages:
             - Energies:                                 properties/scalar/energies.md
             # Total force and average pressure
             - Pressure / Total Force:                   properties/scalar/pressure.md
-        - Tensorial:
+        - Array:
             # Add a link to other atomic properties
             - Atomic forces:                            properties/tensorial/atomic-forces.md
             - Stress tensor:                            properties/tensorial/stress-tensor.md
@@ -459,7 +459,7 @@ pages:
     - Data Practices:
         # Classification - 3 types of data + links to the corresponding sections
         - Classification:                               data/classification.md
-        # Evolution of data from entering job execution to webapp/objectstorage (see flowchart in GM notebook)
+        # Evolution of data from exiting job execution to webapp/objectstorage (see flowchart in GM notebook)
         - Lifecycle:                                    data/lifecycle.md
 
     - Structured Data:

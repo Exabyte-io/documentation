@@ -1,0 +1,56 @@
+####################################################################################################################################
+
+    - Command Line Interface
+        - Overview
+        # Introduction to the Command Line Interface
+        # Evironment
+        # Actions
+
+        - Environment
+        # Environment Customization
+        # Shell Type (including list of types)
+        # Modules
+        ## Module List
+        ## Module Avail
+        ## Module Load
+        ## Module Purge
+
+
+####################################################################################################################################
+
+        - Actions
+            - Overview
+            # Command Line Interface Actions
+            # Customize Shell Environment
+            # Add New Software
+            # Create Python Environment
+            # List Clusters
+            # List Cluster Nodes
+            # Jobs Actions
+
+            - Customize Shell Environment
+            # Customize Shell Environment
+            # Example: change to ZSH
+
+            - Add new software
+            # Add new software (mention permissions requirement to access master nodes)
+            # Example: compile a modified version of Quantum ESPRESSO
+
+
+            - Create Python Environment
+            # Create Python Environment
+            # How to use Virtualenv
+            # Available Python Environments
+
+            - List Clusters
+            # List and Check status of clusters
+            # The exaclusters command
+
+            - List Cluster Nodes
+            # List and Check status of Cluster Nodes
+            # The exanodes command
+
+            - Jobs Actions
+            # Jobs Command Line Interface Actions (link)
+            
+####################################################################################################################################

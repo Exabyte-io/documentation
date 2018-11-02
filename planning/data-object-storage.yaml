@@ -1,0 +1,61 @@
+####################################################################################################################################
+
+    - Data in Object Storage
+        - Overview
+        # Object Storage
+        # Files
+        # Security
+        # Dropbox
+        # User Interface
+        # Actions
+
+
+
+        - Files
+        # Files
+        # Input 
+        # Output
+        # Directory Structure (link to Data on Disk)
+
+        # TODO: MM to add content to the page below
+        - Security
+
+        - Dropbox(*)
+        # Dropbox
+        # Diagram (Flowchart with dropbox at the centre)
+
+
+        - User Interface
+            - Files Explorer
+            # Files Explorer
+            # Specific Properties 
+
+####################################################################################################################################
+
+        - Actions
+            - Overview
+            # Files Actions
+            # Download
+            # Copy Path
+            # Upload
+            # Create Folder
+
+
+            - Download
+            # Download Files
+            # Animation
+
+
+            - Copy Path
+            # Copy Path of Files
+            # Animation
+
+            - Upload
+            # Upload Files to Dropbox
+            # Animation
+
+            - Create Folder
+            # Create new Dropbox Folder
+            # Animation
+
+####################################################################################################################################

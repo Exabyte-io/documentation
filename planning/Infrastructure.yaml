@@ -1,0 +1,99 @@
+General infrastructure
+
+####################################################################################################################################
+
+- Overview
+    # Introduction to Infrastructure
+    # Architecture diagram (Clickable Flowchart)
+    # Storage System  
+    # Logic Node
+    # Clusters
+    # Resource Management
+    # User Interface
+
+
+
+- Storage System
+    # Storage System
+    # Architecture Diagram
+    # Data on Disk
+    ## Storage Quotas
+
+
+- User Interface/Compute Form
+    # Compute setup (with screenshot)
+    # Time limit 
+    # Cluster choice
+    # Queue
+    # Nodes / PPN
+    # Advanced Options
+    # Notifications
+
+
+####################################################################################################################################
+
+- Login Node
+    - Overview          
+    # Login Node
+    # Connection Options
+    # Directory Structure
+
+    - Connection Options        
+    # Connection Options
+    # SSH Terminal (link to section under Remote Connection)
+    # Web Terminal
+    # Remote Desktop   
+
+    - Directory Structure                      
+    # Important Directories under Home folder (flowchart)
+    # Clusters home folders (link to dir structure section under Clusters)
+    # Dropbox (link to Data Disk)
+    # Jobscript Templates (link to Data Disk)
+
+####################################################################################################################################
+
+- Clusters
+    - Overview
+    # Clusters
+    # Architecture Diagram
+    # Directory Structure (link)
+    # Cloud Providers (links)
+    ## Private Enterprise Clusters
+    ## Direct SSH to cluster
+
+    - Directory Structure
+    # Important Directories under Cluster Home folder (flowchart)
+    # Personal Account Data (link to Data Disk)
+    # Organization Shared Data (link to Data Disk)
+    # Share Data between Personal Accounts (/tmp folder)
+
+    # TODO: MM to add content
+    # Explain the hardware offered by each cloud provider
+    # List of Queues, pricing, location of datacenters, hyperthreading
+    - AWS Clusters
+    - Azure Clusters
+
+####################################################################################################################################
+
+- Resource Management
+    - Overview      
+    # Resource Management
+    # Category
+    # Queues
+
+    - Category         
+    # Resource Categories
+    # Debug
+    # Regular
+    ## Ordinary
+    ## Saving
+    # Fast
+    ## Ordinary 
+    ## Fast
+    ## GPU
+    # Premium                        
+    - Queues              
+    # Queues
+    # Available Options (Table)              
+
+####################################################################################################################################       

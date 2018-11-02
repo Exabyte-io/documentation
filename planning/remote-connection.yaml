@@ -1,0 +1,99 @@
+ ####################################################################################################################################
+
+    - Remote Connection
+        - Overview
+        # Remote Connection Methods
+        # SSH Terminal
+        # Web Terminal
+        # Remote Desktop
+        # Actions common to Web Terminal and Remote Desktop
+        # Actions specific to Remote Desktop
+
+
+        - SSH Terminal (SSH)
+        # Connect to CLI with SSH Terminal
+        ## Web Terminal alternative
+        # OS-specific SSH Clients
+        ## Putty for Windows
+        ## OpenSSH for Unix
+        # Generate SSH Keys
+        ## Putty
+        ## OpenSSH
+        # Upload SSH key
+        # Connect to Server
+        # Enter CLI (link)
+        # Transfer files with SCP
+        # Links to clients documentation
+
+
+        - Web Terminal (WT)
+        # Connect to CLI with Web Terminal
+        ## SSH Terminal alternative
+        # Enter CLI (link)
+        # Open (link to action)
+
+
+        - Remote Desktop (RD)
+        # Connect to Exabyte Platform via Remote Desktop
+        # Linux Environment (Link to CentOS documentation)
+        # Available Scientific Software (link)
+        # Open (link to action)
+        # Links
+
+####################################################################################################################################
+
+
+        - Actions > (WT) & (RD)
+            - Overview
+            # Actions common to Web Terminal and Remote Desktop
+            # Open Web Terminal
+            # Open Remote Desktop
+            # Open Guacamole Sidebar
+            # Upload / Download
+            # Copy / Paste Text
+
+            - Open Web Terminal
+            # Open Web Terminal
+            # Animation
+
+            - Open Remote Desktop
+            # Open Remote Desktop
+            # Animation
+
+            - Open Guacamole Sidebar
+            # Open Guacamole Sidebar
+            # Appearance
+            # Links (to Guacamole documentation)
+
+            - Upload / Download
+            # Upload / Download files with Dropbox
+            # Animation for Remote Desktop
+            # Animation for Web Terminal
+
+            - Copy / Paste Text
+            # Copy / Paste Text with Guacamole Sidebar
+            # Animation
+
+####################################################################################################################################
+
+        - Actions > Remote Desktop
+            - Overview
+            # Actions specific to Remote Desktop
+            # Browse Directories
+            # Open Applications
+            # Access data in Web Platfrom
+
+            - Browse Directories
+            # Directory Browsing in CentOS Linux
+            # Animation
+            # Open Linux Terminal
+
+            - Open Applications
+            # Open Applications in Remote Desktop
+            # Animation: Open VESTA
+
+            - Access data in Web Platfrom
+            # Access Data in Web Platform with Dropbox
+            # Example Animation
+
+####################################################################################################################################
