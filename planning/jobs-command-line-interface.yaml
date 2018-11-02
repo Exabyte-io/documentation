@@ -1,0 +1,48 @@
+ ####################################################################################################################################
+
+    - Jobs via Command Line Interface
+        - Overview
+        # Jobs via Command Line Interface
+        # Batch script
+        # Accounting
+        # Actions
+
+        - Batch script
+        # Batch Scripts
+        # Examples
+        ## Debug queue (D)
+        ## On-demand regular (OR)
+        ## On-demand fast (OF)
+        ## Saving regular (SR)
+        ## Saving fast (SF)
+
+####################################################################################################################################
+
+        - Accounting
+            - Balance
+            # View Account Balance via CLI
+            # Command
+
+            - Statement
+            # View Usage Statistics
+            # Command
+
+####################################################################################################################################
+
+        - Actions
+            - Create
+            # Create New Job
+
+            - Submit
+            # Submit Job
+            # qsub command
+
+            - Check status
+            # Check status of Job
+            # qstat command
+
+            - Terminate
+            # Terminate
+            # qdel command
+
+####################################################################################################################################

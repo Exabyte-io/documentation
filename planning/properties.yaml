@@ -1,0 +1,87 @@
+    - Properties
+
+##################################################################################################################################
+
+        - Overview
+        # Materials Properties (including tables)
+        # Extractors
+        # Refinement
+        # Schemas And Examples
+        # User Interface
+        # Scalar Properties
+        # Array Properties
+        # Dispersion Curves
+        # Structural Properties
+
+        - Extractors
+        # Extraction of Raw Properties
+        # Extractor Scripts
+        # User-defined Extractors available in future
+
+        - Refinement
+        # Refinement of Computed Properties
+        # Raw 
+        # Refined
+        # Best
+
+
+        - User Interface
+            - Explorer
+            # Properties Explorer
+            # Specific Features
+
+            - Viewer
+            # Materials Viewer for Final Structure
+            # Link to main Viewer documentation
+
+##################################################################################################################################
+
+        - Scalar
+            - Energies
+            # Total Energy, 
+            # Total Energy Contributions, 
+            # Fermi Energy, 
+            # Zero Point Energy
+
+            - Pressure / Total Force
+            # Total force
+            # Average pressure
+
+        - Array
+            - Atomic forces
+            # Atomic forces
+            # Link to other atomic properties
+            - Stress tensor
+
+##################################################################################################################################
+
+        - Dispersion Curves
+            - Band Structure
+            # Bandstructure 
+            # Band gap 
+            # Energy Eigenvalues 
+            - Phonons
+            # Phonon Dispersion Curves
+            # Frequency Eigenvalues
+            - Density of States
+            # Density of States
+
+        - Structural
+            - Atomic
+            # Atomic Properties
+            # Coordinates, 
+            # Elements, 
+            # Masses, 
+            # Data, 
+            # Basis
+
+            - Lattice
+            # Bravais Lattice
+            # Lattice vectors
+            # Lattice Parameters
+
+            - Final Structure
+            # Crystal Structure = lattice + basis
+            # Final Structure Viewer (link)
+
+##################################################################################################################################
