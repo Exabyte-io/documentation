@@ -1,8 +1,13 @@
-####################################################################################################################################
+READY
 
+####################################################################################################################################
+    # Relevant for filesw stored as objects to be viewed under web app.
     - Data in Object Storage
         - Overview
         # Object Storage
+            % General introduction to Object Storage concept for storing and transferring unstructured data
+            % We can store data in the form of objects, and access them on webapp as "Files" in the UI
+            % Put links to the dedicated explanation pages in the sections below
         # Files
         # Security
         # Dropbox
@@ -13,28 +18,40 @@
 
         - Files
         # Files
-        # Input 
-        # Output
+            % General introduction to Files concept as objects in Object Storage
+            % We organize our simulation data under files in order to interact with the simulation engines, both for inputting parameters and getting the output of the calculation
         # Directory Structure (link to Data on Disk)
-
+            % Files are organized under a directory Structure
+            % Put link to Data on Disk section explaining the directory structure
         # TODO: MM to add content to the page below
         - Security
 
-        - Dropbox(*)
+        - Dropbox    
         # Dropbox
+            % Dropbox is implemneted through Object Storage and connects Data on Disk with it
+            % Dropbox is a general utility storage system that is mounted on all nodes on our infrastructure and can be used to share files everywhere across the platform
         # Diagram (Flowchart with dropbox at the centre)
-
+            % This is a list of all nodes where Dropbox is mounted
+            % Put flowchar to explain above list better
 
         - User Interface
+            - Files Tab 
+            # "Symlink" to Files Tab in jobs viewer
+            - Dropbox Page
+            # Actions specific to dropbox page
             - Files Explorer
             # Files Explorer
-            # Specific Properties 
+                % It displays both the input and output files of the simulation
+                % Include screenshot of its appearance
+            # Columns 
+                % Some specific columns concerning files include PROVIDER & REGION,   SIZE,    UPDATED
 
 ####################################################################################################################################
 
         - Actions
             - Overview
             # Files Actions
+                % The following is a list of actions specific to files, accessible under Files Explorer
             # Download
             # Copy Path
             # Upload
@@ -43,19 +60,30 @@
 
             - Download
             # Download Files
+                % To download files to local hard drive, click on button from actions toolbar
             # Animation
-
+                % The animation shows how to do this for an example VASP output file
 
             - Copy Path
             # Copy Path of Files
+                % The path of the file on the cluster where it is stored can be copied to clipboard with correspoding dropdown button
+                % Is meant to be used in CLI or Remote Desktop after copying 
             # Animation
+                % Here we demonstrate how to copy the path of a file to clipboard, and then paste it in Web Terminal
 
             - Upload
             # Upload Files to Dropbox
+                % Files can be uploaded to Dropbox from local hard drive with corresponding button
+                % This action is not avialble for Jobs Viewer since user is not supposed to change the files there
             # Animation
+                % Animation shows how to upload some POSCAR file
 
             - Create Folder
             # Create new Dropbox Folder
+                % New folders can be created under Dropbox to organize files using corresponding button
+                % Put screenshot of dialog
+                % This action is not avialble for Jobs Viewer since user is not supposed to change the files there
             # Animation
+                % Animation shows how to create some random folder
 
 ####################################################################################################################################
