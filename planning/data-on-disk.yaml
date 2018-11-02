@@ -1,6 +1,6 @@
 READY
 
-    # This explanation is relevant for data stored on cluster disks, and not stored in objects for viewing under web app (yet) according to lifecycle
+    
     - Data on Disk
         - Overview
         # Data on Disk (unstructured)

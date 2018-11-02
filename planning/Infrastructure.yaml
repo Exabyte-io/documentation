@@ -1,9 +1,17 @@
+HALF-READY
+
 General infrastructure
 
 ####################################################################################################################################
 
 - Overview
     # Introduction to Infrastructure
+        % Our platform is a comprehensive distributed web application.
+        % This section explains the main important parts of its computational infrastructure (as opposed to the web Interface explained in other parts of this documentation)
+        % For expert in computational science we support platform-level access with ability to submit 
+            simulation jobs to computing clusters via alternative connection methods (put link to connection methods section)
+        % The different components are connected as follows - put complete flowchart of infrastructure
+        % Clicking on each component leads to corresponding documentation page
     # Architecture diagram (Clickable Flowchart)
     # Storage System  
     # Logic Node
@@ -15,12 +23,16 @@ General infrastructure
 
 - Storage System
     # Storage System
-    # Architecture Diagram
-    # Data on Disk
-    ## Storage Quotas
+        % We allow for the storage of simulation data on hard drives connected to the clusters
+        % We explain the storage of simulation files on disks in this section - put link to "data on disks" section
+    # Storage Diagram
+        % The storage system is explained in the flowchart included here (see notebook)
+    # Storage Quotas
+        % This storage space is subject to certain quotas, as explained here - put link 
 
 
 - User Interface/Compute Form
+    % This page is already written. Might just need a few tweaks like putting more up to date screenshot of compute tab in Jobs Designer
     # Compute setup (with screenshot)
     # Time limit 
     # Cluster choice
@@ -35,26 +47,46 @@ General infrastructure
 - Login Node
     - Overview          
     # Login Node
+        % When the user first logs in using either the remote desktop or terminals (put links below), he will be directed first to his home folder under the login Node, instead of accessing the clusters directly 
+        % The Login node is an intermediary access point to clusters, and is organized according to the directory structure explained below
     # Connection Options
     # Directory Structure
 
     - Connection Options        
     # Connection Options
+        % The login node can be accessed via any of the following connection methods
     # SSH Terminal (link to section under Remote Connection)
+        % The user can use an external SSH client under any OS to connect to our CLI. We explain how to do so in this page - put link to main SSH page
     # Web Terminal
+        % Alternatively, we offer an incorporated Terminal within our Web App which also takes the user to the CLI - put link to main Web Terminal page 
+        % It can be accessed via the right-hand sidebar - put link 
     # Remote Desktop   
+        % If the user wants to experience a fully graphical desktop environment, he can do so via the Remote Desktop App - put link to main page 
+        % It can also be accessed via the right-hand sidebar - put link 
 
     - Directory Structure                      
     # Important Directories under Home folder (flowchart)
+        % Once the user enters his home folder under the login node via any of the possible connection methods, he will be presented with the following directory structure
+        % Put flowchart of important folders within the level of the login home (no sub folders for the moment) 
     # Clusters home folders (link to dir structure section under Clusters)
+        % Each cluster has its own distinct home folder 
+        % We explain the contents of these clusters homes in a separate section - put link to next section. 
     # Dropbox (link to Data Disk)
+        % Dropbox is a convenient way of sharing and tranferring files across the infrastructure - put link to main Dropbox page under Data on Disk
     # Jobscript Templates (link to Data Disk)
+        % Login Home also contains a folder with Job script examples, for submitting jobs via CLI - put link  
+        % This folder is explained in detail here - put link to data on disk 
 
 ####################################################################################################################################
 
 - Clusters
     - Overview
     # Clusters
+        % We offer a set of high-performance computing clusters for performing material modeling simulations in a massively parallel fashion. 
+        % These clusters are part of the computing cloud infrastructures offered by various providers  
+        % Clusters also offer a certain amount of storage space for storing simulation data, subject to certain quotas as explained here - put link 
+        % The architecture of an individual cluster is explained in the diagram below 
+        % Mention Benchmarks
     # Architecture Diagram
     # Directory Structure (link)
     # Cloud Providers (links)
@@ -63,9 +95,15 @@ General infrastructure
 
     - Directory Structure
     # Important Directories under Cluster Home folder (flowchart)
+        % The following directories are present under the home folder of each cluster
+        % Put tree diagram for cluster home 
     # Personal Account Data (link to Data Disk)
+        % Each user has a personal data folder associated with his own personal account - put link to data on disks main explanation
     # Organization Shared Data (link to Data Disk)
-    # Share Data between Personal Accounts (/tmp folder)
+        % Members of an Organization can all share data together via the shared folder - put link to data on disks main explanation
+    # Termporary Data (/tmp folder)
+        % Personal Accounts can also share data between them, without beloning to an Organization, via the tmp folder
+        % Warning - the data in tmp is temporary and not guaranteed to be saved for a long time - use with caution or consider upgrading  
 
     # TODO: MM to add content
     # Explain the hardware offered by each cloud provider
@@ -78,22 +116,38 @@ General infrastructure
 - Resource Management
     - Overview      
     # Resource Management
+        % The cluster computational resources are managed according to a system of Queues, where users have to wait for their turn
+        % Queues are themselved administered by a task scheduler software
+        % When a job is submitted to any of the queues, the taks scheduler is responsible for allocating CPU resources for the job
+        % Waiting times might be incurred by the user depending of the availability of CPU resources and the priority of the job in the queue 
     # Category
     # Queues
 
     - Category         
     # Resource Categories
+        % Different speed categories are available at different prices, depending on the urgency of the job that needs submitting 
+        % Put link to the service levels pages for pricing information 
     # Debug
+        % Debug is cheap and fast to execute, but slow in terms of allocated CPU resources - only good for preliminary testing and debugging of simulations
     # Regular
+        % Most common option in terms of cost to performance ratio
+        % The options below have different Charge factors
     ## Ordinary
     ## Saving
     # Fast
+        % Fast access to computational resources for urgent jobs, but more expensive to use. The option to use GPUs is also offered here for better performance
+        % The options below have different Charge factors
     ## Ordinary 
     ## Fast
     ## GPU
-    # Premium                        
+    # Premium    
+        % Our infrastructure includes multiple compute clusters at a time, with some providing premium performance. 
+        % Premium hardware has an extra charge factor
+
     - Queues              
     # Queues
-    # Available Options (Table)              
+        % Different queues are available under each category, affording for different amounts of computational resources (number of cores)
+    # Available Options (Table)         
+        % Here we present a table of all the possible queue options, with an indication of how many CPU cores are available under each of them      
 
 ####################################################################################################################################       

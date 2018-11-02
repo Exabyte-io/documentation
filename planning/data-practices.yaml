@@ -1,17 +1,27 @@
+READY
+
 ####################################################################################################################################
 
    	- Data Practices
         - Classification                               
         # Classtification of Data Types
+            % We classify data according to the following different conventions (put links to their dedicated sections below, with a short description)
         # Structured
+            % We explain how we store entities as JSON structured representations here (put link)
         # Disk
+            % This explanation is relevant for data stored on cluster disks, and not stored in objects for viewing under web app (yet), according to the lifecycle introduced in the next section 
         # Object 
-
-####################################################################################################################################
+            % Relevant for files stored as objects to be viewed under web app.
+        # Links
+            % (Wikipedia/Web) links explaining structured and non-structured data concepts, object storage
 
         - Lifecycle      
         # Data Lifecycle
+            % Explain the general flow:
+                - User Actions in Web Application created structured data in database (Entities)
+                - These Entities are sent to the computational infrastructure [link] to create non-structured data during simulations
+                - Data is stored on disk and Object storage to make it accessible to Web Application again
         # Flowchart
-        # Object Storage                          
+            % Put lifecycle flowchart (see notebook)
 
 ####################################################################################################################################
