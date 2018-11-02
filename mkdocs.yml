@@ -179,6 +179,8 @@ pages:
             - Compilers:                                software/development/compilers.md
             # e.g. openmpi, mkl, intelmpi
             - Libraries:                                software/development/libraries.md
+            # vim, emacs, nano, less, link to CentOS 7.3 default software
+            - Text Editors:                                software/development/libraries.md
 
 
 # ENTITIES
@@ -326,6 +328,10 @@ pages:
             - Designer:                                 jobs-designer/overview.md
              # Differences from Jobs Designer:  Can be used to view results from finished Jobs from collection
             - Viewer:                                   jobs/ui/viewer.md
+            # TODO: GM to split the Viewer page
+            - Results Tab:                              jobs/ui/viewer.md
+            - Files Tab:                                jobs/ui/viewer.md
+
             - Projects Explorer:                        jobs/ui/projects-explorer.md
          # Introduction to concept of Projects (particular set for jobs only)
         - Actions:
