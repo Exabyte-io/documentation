@@ -1,52 +1,58 @@
- ####################################################################################################################################
+READY
 
     - Remote Connection
         - Overview
         # Remote Connection Methods
-            % We offer alternative methods to submit jobs to the supercomputing clusters and access the associated data other than the Web App 
-            % These methods offer either a CLI or remote desktop environment 
+            % We offer alternative methods to submit jobs to the supercomputing clusters and access the associated data other than the Web App
+            % These methods offer either a CLI or remote desktop environment
             % The avialble options are the following - put links
         # SSH Terminal
         # Web Terminal
         # Remote Desktop
+            % NOTE: explan that the two above are via Guacamole server
+            % Link here from Guacamole sidebar explanation
         # Actions common to Web Terminal and Remote Desktop
         # Actions specific to Remote Desktop
+        # Links
+            % to Guacamole Server, SSH
+
 
 
         - SSH Terminal (SSH)
+        NOTE TO GM FROM TB - this page seems to long, maybe we should split:
         # Connect to CLI with SSH Terminal
-            % To connect to the CLI, an external SSH terminal client can be used under any OS instead of the Web Terminal 
+            % To connect to the CLI, an external SSH terminal client can be used under any OS instead of the Web Terminal
             % Experienced users can go directly to "Upload SSH key" section.
         # OS-specific SSH Clients
             % We recommend the following clients for each OS
         ## Putty for Windows
             % Putty is a widespread SSH client for Windows - put link to homepage
         ## OpenSSH for Unix
-            % OpenSSH is the standard protocol in Unix-based OSs for connecting through SSH via the terminal 
+            % OpenSSH is the standard protocol in Unix-based OSs for connecting through SSH via the terminal
         # Generate SSH Keys
-            % SSH keys are necessary to connect to the CLI using your Exabyte account credentials 
+            % SSH keys are necessary to connect to the CLI using your Exabyte account credentials
             % Instructions on how to generate such keys can be found below for different clients
         ## Putty
             % Instructions for Putty can be found here - put link to online tutorial
         ## OpenSSH
             % Instructions for Unix can be found here - put link to online tutorial
         # Upload SSH key
-            % After generting the keys, they need to be uploaded to oour platform and associated with your account via Preferneces 
-            % This establishes a secure link between the external SSH client and your Exabyte account 
-            % We explain how to upload the SSH keys generated in the previous step to our platform in a separate section - put link to accounts preferences page 
+            % After generting the keys, they need to be uploaded to oour platform and associated with your account via Preferneces
+            % This establishes a secure link between the external SSH client and your Exabyte account
+            % We explain how to upload the SSH keys generated in the previous step to our platform in a separate section - put link to accounts preferences page
         # Connect to Server
-            % Once the secure SSH link is established via the keys, the remote Exabyte server (bohr) can be accessed as follows - put full address of bohr server 
+            % Once the secure SSH link is established via the keys, the remote Exabyte server (bohr) can be accessed as follows - put full address of bohr server
         # Enter CLI (link)
-            % Following successful SSH connection, the user is presented with the CLI of our platform - put link to main CLI section 
+            % Following successful SSH connection, the user is presented with the CLI of our platform - put link to main CLI section
             % Some useful instructions are already contained in the splash welcome screen - put a copy of this welcome message (screenshot)
         # Transfer files with SCP
-            % To transfer files back and forth from your local drives to your folders on the remote Exabyte server, we recommend the SCP protocol, which is also based on SSH  
+            % To transfer files back and forth from your local drives to your folders on the remote Exabyte server, we recommend the SCP protocol, which is also based on SSH
         ## Windows Instructions
             % On Windows, we recommend the WinSCP program - put lin kto onlien tutorials
         ## Unix Instructions
-            % On Unix, SCP file transfers can be performed directly via terminal with the following commands - put link to online tutorials 
+            % On Unix, SCP file transfers can be performed directly via terminal with the following commands - put link to online tutorials
         # Links to clients documentation
-            % Put links to all mentioned clients and tutorials here 
+            % Put links to all mentioned clients and tutorials here
 
 
         - Web Terminal (WT)
@@ -60,24 +66,23 @@
 
         - Remote Desktop (RD)
         # Connect to Exabyte Platform via Remote Desktop
-            % If the user prefers a graphical desktop environment to CLI, a remote desktop option is also avialble to connect to our infrastructure 
+            % If the user prefers a graphical desktop environment to CLI, a remote desktop option is also avialble to connect to our infrastructure
         # Linux Environment (Link to CentOS documentation)
-            % This Remote Desktop environment is based on CentOS linux - put link to official page and documentation 
-        # Available Scientific Software (link)
-            % The following set of scientific software is avaible in remote desktop, in their GUI versions - put table with links to main software pages 
-            % We explain how to open such software here - put link to actions. 
+            % This Remote Desktop environment is based on CentOS linux - put link to official page and documentation
+        # Available Analysis Software (link)
+            % The following set of Analysis Software is avaible in remote desktop, in their GUI versions - put table with links to main software pages
+            % We explain how to open such software here - put link to actions.
         # Open (link to action)
-            % We explain how to open remote desktop here - put link to actions page 
+            % We explain how to open remote desktop here - put link to actions page
         # Links
-            % Links to CentOS documentation and websites 
+            % Links to CentOS documentation and websites
 
 ####################################################################################################################################
-
 
         - Actions > (WT) & (RD)
             - Overview
             # Actions common to Web Terminal and Remote Desktop
-                % Here we explain all the actions which are common to both Web Terminal and Remote Desktop connection methods 
+                % Here we explain all the actions which are common to both Web Terminal and Remote Desktop connection methods
             # Open Web Terminal
             # Open Remote Desktop
             # Open Guacamole Sidebar
@@ -88,33 +93,35 @@
             # Open Web Terminal
                 % Web Terminal is accessible under right-hand sidebar menu - put link
             # Animation
-                % We show an animation on how to open the Web Terminal here 
+                % We show an animation on how to open the Web Terminal here
 
             - Open Remote Desktop
             # Open Remote Desktop
-                % Remote Desktop is also accessible via right-hand sidebar - put link 
+                % Remote Desktop is also accessible via right-hand sidebar - put link
             # Animation
-                % We show how to open the Remote Desktop in this animation 
+                % We show how to open the Remote Desktop in this animation
 
             - Open Guacamole Sidebar
             # Open Guacamole Sidebar
-                % Guacamole sidebar is useful for copying/pasting text from both RD and WT into the clipboard - put link to copy/paste action 
-                % This sidebar can be opened with the following key shortcut combination from both RD and WT 
+                % Guacamole sidebar is useful for copying/pasting text from both RD and WT into the clipboard - put link to copy/paste action
+                % This sidebar can be opened with the following key shortcut combination from both RD and WT
             # Appearance
-                % Here we put a screenshot of what this sidebar looks like 
+                % Here we put a screenshot of what this sidebar looks like
             # Links (to Guacamole documentation)
-                % Main Guacamole documentation can be accessed here 
+                % Main Guacamole documentation can be accessed here
 
             - Upload / Download
-            # Upload / Download files with Dropbox
-                % Files can be uploaded from local disks to Web Terminal/Remote Desktop by dragging and dropping them directly 
-                % This feature only works for uploading files to home directory, not subfolders - use SCP if it doesn't work. 
+            # Upload / Download files Remote Desktop or Web Terminal
+                % Files can be uploaded from local disks to Web Terminal/Remote Desktop by dragging and dropping them directly
+                % This feature only works for uploading files to home directory, not subfolders - use SCP if it doesn't work.
             # Download from Web Terminal
-                % From Web Terminal, you can download any file to local disk with exadownload command 
+                % From Web Terminal, you can download any file to local disk with exadownload command
+            # Download from Remote Desktop
+                % From Remote Desktop, you can download (small files) by putting them in [Dropbox]. NOTE: otherwise use webapp.
             # Animation for Remote Desktop
-                % We show an example of how to upload file to RD here by dragging and dropping it 
+                % We show an example of how to upload file to RD here by dragging and dropping it
             # Animation for Web Terminal
-                % We show the equivalent animation but for WT here 
+                % We show the equivalent animation but for WT here
 
             - Copy / Paste Text
             # Copy / Paste Text with Guacamole Sidebar
@@ -124,9 +131,9 @@
 
             - Access data in Web Platfrom
             # Access Data in Web Platform with Dropbox
-                % Dropbox allows you to exchange data back and forth between RD / WT, and the Web App 
+                % Dropbox allows you to exchange data back and forth between RD / WT, and the Web App
             # Example Animation
-                % We show how to transfer files to Dropbox under RD, and retrieve them later in Web App 
+                % We show how to transfer files to Dropbox under RD, and retrieve them later in Web App
 
 
 
@@ -142,16 +149,16 @@
 
             - Browse Directories
             # Directory Browsing in CentOS Linux
-                % Directories can be browsed in CentOS linux under a standard files explorer interface 
+                % Directories can be browsed in CentOS linux under a standard files explorer interface
             # Animation
-                % Here we naviagate in and out of some directories 
+                % Here we naviagate in and out of some directories
             # Open Linux Terminal
-                % You even have another terminal inside RD! 
+                % You even have another terminal inside RD!
 
             - Open Applications
             # Open Applications in Remote Desktop
-                % Useful Apps are avialble under top menu of desktop 
+                % Useful Apps are avialble under top menu of desktop
             # Animation: Open VESTA
-                % Here we show how to open for example VESTA under RD 
+                % Here we show how to open for example VESTA under RD
 
 ####################################################################################################################################
