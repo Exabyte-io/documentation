@@ -47,9 +47,10 @@ General infrastructure
 - Login Node
     - Overview
     # Login Node
-        NOTE TO GM FROM TB - users are NOT SUPPOSED to access clusters directly, you should make it clear:
         % When the user first logs in using either the remote desktop or terminals (put links below), he/she will be directed first to his/her home folder under the login Node, instead of accessing the clusters directly
         % The Login node is the access point to clusters, and is organized according to the directory structure explained below
+        % It is strongly recommended that the user first connects to the login node in order to access the cluster resources. Clusters are not supposed to be accessed directly.
+        % We can exceptionally concede the ability to ssh directly to the cluster master node(s) for advanced users, but a special permission needs to be requested
     # Connection Options
     # Directory Structure
 
@@ -120,7 +121,6 @@ General infrastructure
         % The cluster computational resources are managed according to a Resource Management system (put a link to PBS/Torque 6.0.0 and to its PDF guide available in Google Drive)
         % Queues are used to allow for the efficient distribution of resources themselved administered by a task scheduler software (Maui + Exacluster)
         % When a job is submitted to any of the queues, the cloud scheduler is responsible for provisioning computational nodes and allocating resources on them for the jobs
-        NOTE TO GM FROM TB - do not use CPU resources:
         % Waiting times might be incurred by the user depending of the availability of computing resources and the priority of the job in the queue
     # Category
     # Queues
@@ -133,10 +133,9 @@ General infrastructure
         % Meant as the common "workhorse" option. Price in [service levels] is shown for this Category
         % The options below have different Charge factors
     # Debug
-        NOTE TO GM FROM TB - how did you come up with the "cheap" below????:
         % Debug is fast to execute, but contains limited resources - only good for preliminary testing and debugging of simulations
-    ## Saving
-        TODO by GM - explan this section:
+    # Saving
+        % Significantly lower rate through utilizing idle compute resources; compute resources may be terminated at any time depending on the load in the data center 
     # Fast
         % Fast access to computational resources for urgent jobs, but more expensive to use. The option to use GPUs is also offered here for better performance
         % The options below have different Charge factors
