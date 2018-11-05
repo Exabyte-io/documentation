@@ -345,10 +345,10 @@ pages:
 
     - Jobs Designer:
          # What is Jobs Designer and clickable image with links to Designer components below
+         # Links to all the header menu actions listed below
         - Overview:                                     jobs-designer/overview.md
-        - Header Menu:
-             # Links to all the header menu actions listed below
-            - Overview:                                 jobs-designer/header-menu/overview.md
+        - Header Menu:                                  jobs-designer/header-menu/overview.md
+        - Actions > Header Menu:
             - Select Parent:                            jobs-designer/header-menu/select-parent.md
             - Select Materials:                         jobs-designer/header-menu/select-materials.md
             - Select Workflow:                          jobs-designer/header-menu/select-workflow.md
@@ -359,6 +359,7 @@ pages:
         # Reference WF Viewer and explain
         #    - which options are adjustable - isDraft, important settings
         #    - how to view workflow important settings and unit input for multiple materials
+        # Change Pseudopotential, kpoints, unit input
         - Workflow Tab:                                 jobs-designer/workflow-tab.md
         # Refer to original compute tab
         - Compute Tab:                                  jobs-designer/compute-tab.md
