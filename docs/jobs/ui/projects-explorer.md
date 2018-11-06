@@ -14,7 +14,7 @@ The total number of Jobs contained in each Project entry is indicated under the 
 
 ## Accounting Slug / CLI Path
 
-These project features are reviewed [here](../projects.md#accounting-slug).
+These project features are reviewed [here](../projects.md#slug).
 	
 ## Status
 

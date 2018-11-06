@@ -4,7 +4,7 @@ New [Projects](../projects.md) can be created under the [Project Explorer](../ui
 
 ![Create New Project](/images/create-new-project.png "Create New Project")
 
-Here, the desired name and description of the new project can be entered, followed by pressing the `Create` button. The new project will then be added as an additional entry on top of the existing collection list.
+Here, the desired name and description of the new project can be entered, followed by pressing the `Create` button. The new project will then be added as an additional entry on top of the [Project Explorer](../ui/projects-explorer.md) items list.
 
 # Animation
 

@@ -22,6 +22,6 @@ Submitted Jobs can be terminated artificially by the user at any moment before t
 
 [This page](create-delete-project.md) describes how the user can create new [Projects](../projects.md).
 
-# Move Jobs to Projects
+# Assign Job to a Project
 
-We explain how Jobs can be grouped together in [Projects](../projects.md) folders [here](../projects.md). 
+We explain how new Jobs can be assigned to [Projects](../projects.md) [here](../projects.md). 

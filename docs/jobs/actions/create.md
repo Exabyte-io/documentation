@@ -1,6 +1,8 @@
 # Create Job
 
-The procedure for creating new Jobs mirrors [the general case](/entities-general/actions/create.md). The only difference is that the action has to originate from inside a [**Project**](../projects.md), by clicking on the "Create" button <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> located under its [dedicated page](../ui/projects-page.md). Attempting to perform the Create action directly from the main [Jobs Explorer](../ui/explorer.md) results in an error. 
+Creating new Jobs follows [the general explanation](/entities-general/actions/create.md). The important difference is that **the create action has to originate from inside a [**Project**](../projects.md)**, by clicking on the "Create" button <i class="zmdi zmdi-file-plus zmdi-hc-border"></i> there. This is required to properly associate the newly created job with the project. When "Create Job" link is used in [left-hand sidebar](/ui/left-sidebar.md) the [default project](../projects.md#default-project)
+
+> Attempting to perform the Create action directly from the main [Jobs Explorer](../ui/explorer.md) will result in a warning notice.
  
 This contrasts with other [entity types](/entities-general/overview.md), for which this action has to originate under the main [Explorer Interface](/entities-general/ui/explorer.md) of the entity itself. 
 
