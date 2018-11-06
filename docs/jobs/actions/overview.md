@@ -12,7 +12,7 @@ We explain what Purge means in the context of Jobs [in this page](purge.md).
 
 # Run
 
-Jobs can be [submitted](../status.md) to the cluster for execution following [these instructions](run.md).
+Jobs can be [submitted](../status.md) to the [cluster](/infrastructure/clusters/overview.md) for execution following [these instructions](run.md).
 
 # Terminate
 
