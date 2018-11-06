@@ -4,7 +4,7 @@ In order to organize and store the information about Jobs we employ [Exabyte Dat
 
 # Example representation
 
-Below is an example JSON structured representation a of a Job. It contains a single [Workflow](/workflows/overview.md) and one [Material](/materials/overview.md).
+Below is an example JSON structured representation of a Job. It contains a single [Workflow](/workflows/overview.md) and one [Material](/materials/overview.md).
 
 ```json
 {

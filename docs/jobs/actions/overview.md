@@ -20,7 +20,7 @@ Submitted Jobs can be terminated artificially by the user at any moment before t
 
 # Create / Delete Project
 
-[This page](create-delete-project.md) described how the user can create new [Projects](../projects.md) in the Jobs collection.
+[This page](create-delete-project.md) describes how the user can create new [Projects](../projects.md).
 
 # Move Jobs to Projects
 
