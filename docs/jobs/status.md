@@ -9,7 +9,7 @@ Jobs listed under the [Explorer](ui/explorer.md) can be in one of the following 
 
 Badge: <span class="btn badge b-info border-50">P</span>
 
-"Pre-submission" status indicates that the Job has been created as an entry in [Explorer](ui/explorer.md), but it has not been submitted to the queue of the cluster yet. It can still be edited by [opening](/entities-general/actions/open-edit.md) it under [Designer](/jobs-designer/overview.md).
+"Pre-submission" status indicates that the Job has been created as an entry in [Explorer](ui/explorer.md), but it has not been submitted to the [queue](/infrastructure/resource/queues.md) of the cluster yet. It can still be edited by [opening](/entities-general/actions/open-edit.md) it under [Designer](/jobs-designer/overview.md).
 
 # Submitted 
 

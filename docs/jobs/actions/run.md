@@ -6,7 +6,7 @@ The Run action is accessible from the [actions toolbar](/entities-general/ui/exp
 
 # Change of Status
 
-Running a Job changes its [status](../status.md) from "Pre-submission" to "Submission", and then eventually to "Active" once the job gets past the waiting time on the cluster queue and enters the execution stage.
+Running a Job changes its [status](../status.md) from "Pre-submission" to "Submission", and then eventually to "Active" once the job gets past the waiting time on the [cluster queue](/infrastructure/resource/queues.md) and enters the execution stage.
 
 # Animation
 

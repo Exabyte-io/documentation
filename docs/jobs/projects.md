@@ -38,7 +38,7 @@ Question marks "???" might be present within this path instead of the actual clu
 Similarly to the [status](status.md) of individual Jobs, each Project also has a general status assigned to it, according to the following conventions.
 
 - <span class="btn badge badge-padded b-warning border-50">Active</span>: at least one job is present with an [Active](status.md#Active) status inside the Project. 
-- <span class="btn badge badge-padded b-primary border-50">Stand-by</span>: at least one job in the Project is pending execution, but has been submitted to the queue already ([Submitted](status.md#Submitted) status). 
+- <span class="btn badge badge-padded b-primary border-50">Stand-by</span>: at least one job in the Project is pending execution, but has been submitted to the [queue](/infrastructure/resource/queues.md) already ([Submitted](status.md#Submitted) status). 
 - <span class="btn badge badge-padded b-default border-50">Idle</span>: all other possibilities, whereby all jobs contained in the project have statuses other than Active and Submitted.
 
 The Project Status is indicated in [Project Explorer](ui/projects-explorer.md#status), under the corresponding column.
