@@ -6,7 +6,7 @@ The image below shows how the Viewer contains two extra highlighted tabs, in add
 
 ![Extra Jobs Viewer](/images/extra-jobs-viewer.png "Extra Jobs Viewer")
 
-# No Adjustments
+# No Adjustments Allowed
 
 Under Jobs Viewer, it is impossible to make **any** kind of adjustments to either [Materials](/jobs-designer/materials-tab.md), [Workflow](/jobs-designer/workflow-tab.md) or [Compute](/jobs-designer/compute-tab.md) settings contained in their respective tabs. This is in contrast to [Designer](/jobs-designer/overview.md).
 

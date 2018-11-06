@@ -12,7 +12,7 @@ An important property present in the items list is the [Status indicator](../sta
 
 # Other Specific Properties
 
-Additional columns to be listed in Jobs Explorer specifically include those ticked in the image below and can be selected in the [Columns Selector](/entities-general/ui/explorer.md#columns-selector).
+Additional Job-specific columns that can be listed in Explorer include those ticked in the image below. They can be selected from the [Columns Selector](/entities-general/ui/explorer.md#columns-selector).
 
 ![Jobs Specific Properties](/images/jobs-properties.png "Jobs Specific Properties")
 
@@ -22,7 +22,7 @@ This option displays the [applications](/applications/overview.md) employed with
 
 ## Cluster - Queue & Cores
 
-Here, the [name and queue](/jobs-designer/compute-tab.md) of the [cluster](/pricing/service-levels.md#clusters-and-premium-hardware) where for Job is executed are shown. The number of computational nodes and CPU cores are also indicated.
+Here, the [name and queue](/jobs-designer/compute-tab.md) of the [cluster](/pricing/service-levels.md#clusters-and-premium-hardware) where the Job is executed are shown. The number of computational nodes and CPU cores are also indicated.
 
 ## Run & Wait Time
 
