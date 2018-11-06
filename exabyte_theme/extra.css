@@ -356,21 +356,27 @@ ul.subnav li.toctree-l1 {
 .wy-menu-vertical li ul.subnav ul.subnav {
     padding-left: 0;
 }
+
 .wy-menu-vertical li ul.subnav ul.subnav span {
     padding: 0.4045em 2.618em;
 }
+
 .wy-menu-vertical .subnav a {
     padding: 0.4045em 3.427em;
 }
+
 .wy-menu-vertical .subnav li.current {
     margin-left: -1em;
 }
+
 .wy-menu-vertical .subnav li.current > a {
     padding-left: 4.42em;
 }
+
 .wy-menu-vertical .subnav li.current > ul li a {
     padding-left: 5.23em;
 }
+
 /*
  * h1,h2,h3... subnavigation
  * */
@@ -383,7 +389,6 @@ a.toctree-l4 {
     padding-left: 6.3em !important;
     color: #a1a1a1 !important;
 }
-
 
 /* --------------------------------------------------------- *
  *                  GENERIC CLASSES
@@ -440,8 +445,14 @@ a.toctree-l4 {
 .badge {
     padding: 0;
     font-size: 14px;
-    width: 22px;
+    min-width: 22px;
     height: 22px;
+}
+
+/* badges */
+.badge.badge-padded {
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /* --------------------------------------------------------- *
