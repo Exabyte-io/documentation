@@ -3,7 +3,7 @@
 Jobs listed under the [Explorer](ui/explorer.md) can be in one of the following possible statuses, appearing under its corresponding letter/color badge.
 
 !!!note "Note: explanation of clusters-related terms"
-    The user is referred to [this page](/infrastructure/ui/compute.md) for instructions on how to operate the computing [clusters](/infrastructure/clusters/overview.md) offered on our platform. The concept of [Queue](/infrastructure/resource/queues.md) on the  cluster is also explained in its respective page.
+    The user is referred to [this page](/infrastructure/compute-settings/ui.md) for instructions on how to operate the computing [clusters](/infrastructure/clusters/overview.md) offered on our platform. The concept of [Queue](/infrastructure/resource/queues.md) on the  cluster is also explained in its respective page.
 
 # Pre-submission
 
