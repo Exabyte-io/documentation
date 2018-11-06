@@ -458,8 +458,10 @@ pages:
             # Different Queues on each Category (e.g. OR16)
             - Queues:                                   infrastructure/resource/queues.md
         # Compute tab under Jobs Designer
-        - User Interface:
-            - Compute Form:                             infrastructure/ui/compute.md
+        - Compute Settings:
+            - User Interface:                             infrastructure/compute-settings/ui.md
+            - Data:                                       infrastructure/compute-settings/data.md
+
 
     - Data Practices:
         # Classification - 3 types of data + links to the corresponding sections

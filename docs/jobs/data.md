@@ -1,5 +1,3 @@
-<!-- TODO: GM to move the compute data into a dedicated page -->
-
 # Structured Representation of Jobs
 
 In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data-structured/overview.md), as explained in more details [elsewhere](/entities-general/data.md) in this documentation.
@@ -19,18 +17,6 @@ Below is an example JSON structured representation of a Job. It contains a singl
     "workflow" : {
         ...
     },
-    "compute" : {
-        "ppn" : 1,
-        "nodes" : 1,
-        "queue" : "D",
-        "timeLimit" : "01:00:00",
-        "notify" : "n",
-        "cluster" : {
-            "fqdn" : "master-production-20160630-cluster-001.exabyte.io",
-            "jid" : "31507.master-production-20160630-cluster-001.exabyte.io"
-        },
-        "arguments" : {}
-    },
     "_project" : {
         "_id" : "ypijc9N27BixEpKfT",
     },
@@ -48,6 +34,5 @@ Below is an example JSON structured representation of a Job. It contains a singl
 | :-------- |:----------- |
 | _material |  Link to the identifiers of [material(s)](/materials/data.md) used in this job   | 
 | workflow |  Content of the [Workflow](/workflows/data/data.md) employed in this job | 
-| compute | Computational parameters as explained in [this page](/data-structured/overview.md). |
 | _project  | Link to the identifier of the [project](projects.md) containing the job  |
 | status |   Indication of the current [status](status.md) of the job |  
