@@ -22,7 +22,7 @@ This option displays the [applications](/software/overview.md) employed within t
 
 ## Cluster - Queue & Cores
 
-Here, the [name and queue](/infrastructure/ui/compute.md) of the [cluster](/infrastructure/clusters/overview.md) where the Job is executed are shown. The number of computational nodes and CPU cores are also indicated.
+These are the [name of the cluster](/infrastructure/clusters/overview.md) and the compute [queue](/infrastructure/resource/queues.md) therein where the Job is executed. The number of computational nodes and CPU cores are also indicated.
 
 ## Run & Wait Time
 
