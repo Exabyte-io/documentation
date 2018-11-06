@@ -1,3 +1,5 @@
+<!-- TODO: GM to move the compute data into a dedicated page -->
+
 # Structured Representation of Jobs
 
 In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data/convention/overview.md), as explained in more details [elsewhere](/entities-general/data.md) in this documentation.
