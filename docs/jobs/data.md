@@ -1,3 +1,5 @@
+<!-- TODO: GM to move the compute data into a dedicated page -->
+
 # Structured Representation of Jobs
 
 In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data-structured/overview.md), as explained in more details [elsewhere](/entities-general/data.md) in this documentation.
@@ -17,6 +19,9 @@ Below is an example JSON structured representation of a Job. It contains a singl
     "workflow" : {
         ...
     },
+    "compute" : {
+        ...
+    },
     "_project" : {
         "_id" : "ypijc9N27BixEpKfT",
     },
@@ -34,5 +39,6 @@ Below is an example JSON structured representation of a Job. It contains a singl
 | :-------- |:----------- |
 | _material |  Link to the identifiers of [material(s)](/materials/data.md) used in this job   | 
 | workflow |  Content of the [Workflow](/workflows/data/data.md) employed in this job | 
+| compute | Computational parameters as explained in [this page](/infrastructure/compute-settings/data.md). |
 | _project  | Link to the identifier of the [project](projects.md) containing the job  |
 | status |   Indication of the current [status](status.md) of the job |  
