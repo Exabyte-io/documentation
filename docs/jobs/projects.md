@@ -24,21 +24,21 @@ We describe how to access and navigate the main "Charges and Payments" page [her
 
 ### In Command Line
 
-Alternatively, the charges incurred as part of each Project can be inspected directly on the Command Line Interface, as outlined [in this page](/connection-methods/cli.md).
+Alternatively, the charges incurred as part of each Project can be inspected directly on the Command Line Interface, as outlined [in this page](/cli/overview.md).
 
 
 # CLI Path
 
-The path of the Project inside the [cluster infrastructure](/general-infrastructure/overview.md) is formed utilizing the *slug* field explained above.
+The path of the Project inside the [cluster infrastructure](/infrastructure/overview.md) is formed utilizing the *slug* field explained above.
 
-Question marks "???" might be present within this path instead of the actual cluster number label (eg. "001" for "cluster-001"), because different [clusters](/general-infrastructure/overview.md) are employed for executing the Project's [Jobs](overview.md) with each cluster having a dedicated directory for the project. See explanation in [directory structure](/general-infrastructure/directory-structure.md) for more information on this.
+Question marks "???" might be present within this path instead of the actual cluster number label (eg. "001" for "cluster-001"), because different [clusters](/infrastructure/clusters/overview.md) are employed for executing the Project's [Jobs](overview.md) with each cluster having a dedicated directory for the project. See explanation in [directory structure](/data-on-disk/directories.md) for more information on this.
 
 # Status
 
-Similarly to the [status](../status.md) of individual Jobs, each Project also has a general status assigned to it, according to the following conventions.
+Similarly to the [status](status.md) of individual Jobs, each Project also has a general status assigned to it, according to the following conventions.
 
-- <span class="btn badge badge-padded b-warning border-50">Active</span>: at least one job is present with an [Active](../status.md#Active) status inside the Project. 
-- <span class="btn badge badge-padded b-primary border-50">Stand-by</span>: at least one job in the Project is pending execution, but has been submitted to the queue already ([Submitted](../status.md#Submitted) status). 
+- <span class="btn badge badge-padded b-warning border-50">Active</span>: at least one job is present with an [Active](status.md#Active) status inside the Project. 
+- <span class="btn badge badge-padded b-primary border-50">Stand-by</span>: at least one job in the Project is pending execution, but has been submitted to the queue already ([Submitted](status.md#Submitted) status). 
 - <span class="btn badge badge-padded b-default border-50">Idle</span>: all other possibilities, whereby all jobs contained in the project have statuses other than Active and Submitted.
 
 The Project Status is indicated in [Project Explorer](ui/projects-explorer.md#status), under the corresponding column.

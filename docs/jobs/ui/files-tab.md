@@ -4,10 +4,10 @@
 
 ## Files Explorer
 
-A review of the [actions](/files/actions/overview.md) and [user interface aspects](/link-to-be-adjusted/ui/explorer.md) specific to the Files Explorer is offered in a separate section of the documentation.
+A review of the [actions](/data-in-objectstorage/actions/overview.md) and [user interface aspects](/data-in-objectstorage/ui/explorer.md) specific to the Files Explorer is offered in a separate section of the documentation.
 
 ## Example Appearance
 
-An example of appearance of the Files tab is portrayed below, for a bandstructure run performed using the [VASP](/applications/vasp.md) code. The user is referred to the [code-specific documentation](/applications/vasp.md) for an explanation of the contents of the files displayed in this example.
+An example of appearance of the Files tab is portrayed below, for a bandstructure run performed using the [VASP](/software/modeling/vasp.md) code. The user is referred to the [code-specific documentation](/software/modeling/vasp.md) for an explanation of the contents of the files displayed in this example.
 
 ![Files Tab](/images/files-tab.png "Files Tab")

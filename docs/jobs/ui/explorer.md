@@ -22,7 +22,7 @@ This option displays the [applications](/software/overview.md) employed within t
 
 ## Cluster - Queue & Cores
 
-Here, the [name and queue](/link-to-be-adjusted/compute-tab.md) of the [cluster](/link-to-be-adjusted/service-levels.md#clusters-and-premium-hardware) where the Job is executed are shown. The number of computational nodes and CPU cores are also indicated.
+Here, the [name and queue](/infrastructure/ui/compute.md) of the [cluster](/infrastructure/clusters/overview.md) where the Job is executed are shown. The number of computational nodes and CPU cores are also indicated.
 
 ## Run & Wait Time
 
