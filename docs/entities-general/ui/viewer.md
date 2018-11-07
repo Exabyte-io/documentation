@@ -8,4 +8,4 @@ We often reuse the [Designer Interface](designer.md) as a Viewer component for t
 
 # Links
 
-Specialized documentation pages on the Viewer are available for [Materials](/materials-designer/overview.md), [Workflows](/workflow-designer/general-overview.md) and [Jobs](/jobs-designer/overview.md) respectively.
+Specialized documentation pages on the Viewer are available for [Materials](/materials-designer/overview.md), [Workflows](/workflow-designer/overview.md) and [Jobs](/jobs-designer/overview.md) respectively.

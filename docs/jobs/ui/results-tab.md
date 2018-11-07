@@ -4,7 +4,7 @@ The "Results" tab displays the results of the job's computational tasks. They ar
 
 # Panels
 
-The results for each computational [unit](/workflow-designer/unit-editor.md) contained across the [workflow](/workflow-designer/general-overview.md) operations of the Job are displayed in separate **panels**. 
+The results for each computational [unit](/workflow-designer/unit-editor.md) contained across the [workflow](/workflow-designer/overview.md) operations of the Job are displayed in separate **panels**. 
 
 ## Naming Convention
 

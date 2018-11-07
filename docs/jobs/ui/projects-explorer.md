@@ -22,4 +22,4 @@ The status of the Project can have any of the badges listed [in this section](..
 
 # Open Projects Page
 
-Project entries listed in Explorer can be [opened](/entities-general/actions/open-edit.md) for content inspection. This opens the corresponding Project page, which is documented [separately](projects-page.md).
+Project entries listed in Explorer can be [opened](/entities-general/actions/open-edit.md) for content inspection. This opens the corresponding Project page, which is documented [separately](project-page.md).
