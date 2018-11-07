@@ -37,12 +37,12 @@ An "Error" status indicates that the Job execution terminated as a result of enc
 
 # Terminated
 
-Badge: <span class="btn badge b-default border-50">E</span>
+Badge: <span class="btn badge b-default border-50">T</span>
 
 When Job execution is terminated as a result of user intervention its status is set to "Terminated".
 
 # Timeout
 
-Badge: <span class="btn badge b-black border-50">E</span>
+Badge: <span class="btn badge b-black border-50">T</span>
 
 When the Job exceeded the allocated time limit, it is assigned the "Timeout" status.
