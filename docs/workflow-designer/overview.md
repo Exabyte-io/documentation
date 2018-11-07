@@ -1,6 +1,6 @@
 # What is Workflow Designer?
 
- Our platform provides a convenient interface for conceiving, executing and saving workflows which implement different types of studies of materials. We refer to this interface as the Workflow Designer, and we reviewed it in detail in this section of documentation. 
+ Our platform provides a convenient interface for conceiving, editing and saving workflows which implement different types of studies of materials. We refer to this interface as the Workflow Designer, and we reviewed it in detail in this section of documentation. 
 
 # Navigating to Workflow Designer
 

@@ -278,7 +278,7 @@ pages:
         - Default:                                      workflows/default.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
-            - Designer:                                 workflow-designer/general-overview.md
+            - Designer:                                 workflow-designer/overview.md
             - Viewer:                                   workflows/ui/viewer.md
         - Data:
             - Workflows:                                workflows/data/data.md
@@ -297,7 +297,7 @@ pages:
 
 
     - Workflow Designer:
-        - Overview:                                     workflow-designer/general-overview.md
+        - Overview:                                     workflow-designer/overview.md
         - Header Menu:
             - Overview:                                 workflow-designer/header-menu.md
         - Sidebar:
@@ -328,7 +328,7 @@ pages:
             - Results Tab:                              jobs/ui/results-tab.md
             - Files Tab:                                jobs/ui/files-tab.md
             - Projects Explorer:                        jobs/ui/projects-explorer.md
-            - Projects Page:                            jobs/ui/projects-page.md
+            - Projects Page:                            jobs/ui/project-page.md
         - Actions:
             - Overview:                                 jobs/actions/overview.md
             - Create:                                   jobs/actions/create.md
@@ -343,9 +343,9 @@ pages:
         - Overview:                                     jobs-designer/overview.md
         - Header Menu:                                  jobs-designer/header-menu.md
         - Actions > Header Menu:
-            - Select Parent:                            jobs-designer/header-menu/select-parent.md
-            - Select Materials:                         jobs-designer/header-menu/select-materials.md
-            - Select Workflow:                          jobs-designer/header-menu/select-workflow.md
+            - Select Materials:                         jobs-designer/actions-header-menu/select-materials.md
+            - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
+            - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
         # Reference Materials Viewer and explain how to cycle through materials in Pager
         - Materials Tab:                                jobs-designer/materials-tab.md
         # Reference WF Viewer and explain

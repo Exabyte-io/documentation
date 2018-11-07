@@ -49,7 +49,7 @@ Each new Account is initialized with a default project named "Default". It is in
 
 # Project Page
 
-Each Project has its own dedicated page, listing all the contained Jobs among other properties. We review Projects Pages [here](ui/projects-page.md).
+Each Project has its own dedicated page, listing all the contained Jobs among other properties. We review Projects Pages [here](ui/project-page.md).
 
 # Projects Explorer
 

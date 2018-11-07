@@ -4,7 +4,7 @@ This section contains information about how we organize, store and apply workflo
 
 # User Interface
 
-Specific features pertaining to the Explorer Interface of the Workflows collection are explained [here](ui/explorer.md). Descriptions on [Viewer](ui/viewer.md) and [Designer](/workflow-designer/general-overview.md) in the context of workflows are also offered.
+Specific features pertaining to the Explorer Interface of the Workflows collection are explained [here](ui/explorer.md). Descriptions on [Viewer](ui/viewer.md) and [Designer](/workflow-designer/overview.md) in the context of workflows are also offered.
 
 # [Actions](actions/overview.md)
 
