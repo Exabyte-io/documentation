@@ -32,7 +32,7 @@ The following properties of Charges are available to be searched under the advan
 
 | Property    |   Description      |  
 | :-------- |:----------- |
-| jobTitle |   Name of the Job, as defined at the moment of its [creation](/jobs-designer/header-menu/overview.md)   | 
+| jobTitle |   Name of the Job, as defined at the moment of its [creation](/jobs-designer/header-menu.md)   | 
 | queue |  Type of [Queue](/infrastructure/resource/queues.md) on the computing [cluster](/pricing/service-levels.md#clusters-and-premium-hardware) used for the computational task | 
 | jid | A combination of the job number assigned by the task scheduler, and the machine name, as explained below. For example "142.master-production-20160630-cluster-007.exabyte.io" refers to job no. 142 executed on the cluster 007 with the machine name "master-production-20160630-cluster-007.exabyte.io" |
 | machine  |  A [Fully Qualified Domain Name](#links) of the [cluster](/pricing/service-levels.md#clusters-and-premium-hardware) used for the computation, for example: "master-production-20160630-cluster-007.exabyte.io"  |
