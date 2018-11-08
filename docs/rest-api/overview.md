@@ -24,6 +24,7 @@ The supported RESTful API functions for each API version are explained inside th
 
 In the example animation below, we demonstrate how to use Swagger for API version 2018-10-01 to list materials an account as access to.
 
+<!-- TODO by GM -->
 <img data-gifffer="" />
 
 # Python API Client
