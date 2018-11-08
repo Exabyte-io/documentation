@@ -575,15 +575,15 @@ pages:
 
 
     - REST-API:
-      # Link to of the Python Client
-      # Link to Examples Repository
+      # Link to Python API Client
+      # Link to Python API Examples
       # Explanation and a Link to Swagger Explorer page
       # List of versions with its own link
       # Animation Example of how to use the swagger UI for Listing materials
       - Overview:                                     rest-api/overview.md
       # Authentication section explains how to authenticate and access the API.
       - Authentication:                             rest-api/authentication.md
-      # Query structure section explains how to authenticate and access the API.
+      # Query structure section explains the structure of requests and responses.
       - Query structure:                            rest-api/query-structure.md
 
 
