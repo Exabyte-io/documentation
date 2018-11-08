@@ -28,7 +28,7 @@ In the example animation below, we demonstrate how to use Swagger for API versio
 
 # Python API Client
 
-[exabyte-api-client]((https://github.com/Exabyte-io/exabyte-api-client)) is a Python package that provides access to Exabyte REST API via Python.
+[exabyte-api-client](https://github.com/Exabyte-io/exabyte-api-client) is a Python package that provides access to Exabyte REST API via Python.
 
 # Python API Examples
 
