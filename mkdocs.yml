@@ -368,31 +368,30 @@ pages:
             - Terminate:                                jobs-cli/actions/terminate.md
 
     - Properties:
-        # Consider putting current properties page content here
         - Overview:                                     properties/overview.md
-        # Explain how the extraction of raw properties is done
-        # Note that we have plans to add user-defined extractors in the future
+        - List of Properties:                           properties/list.md
+        - Classification:                               properties/classification.md
         - Extractors:                                   properties/extractor.md
-        # Evolution
         - Refinement:                                   properties/refinement.md
         # GATEWAY to MATERIALS-DATA
         # Note that we have plans to add user-defined schemas for properties
         - Schemas & Examples:                           data-structured/schemas.md
         - User Interface:
             # Properties Explorer is located under Materials Viewer
-            - Explorer:                                 properties/ui/explorer.md
+            - Properties Explorer:                      properties/ui/explorer.md
             # Final Structure Materials Viewer under results Tab in Jobs Viewer
-            - Viewer:                                   properties/ui/viewer.md
+            - Final Structure Viewer:                   properties/ui/viewer.md
         # The sections below explain all Characteristic properties, with mentions about their UI appearances
         - Scalar:
-            # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
+            # Energies: Total Energy, Fermi Energy, Zero Point Energy
             - Energies:                                 properties/scalar/energies.md
             # Total force and average pressure
             - Pressure / Total Force:                   properties/scalar/pressure.md
+            - Lists of Energy Contributions:            properties/scalar/energy-contribution.md
         - Array:
             # Add a link to other atomic properties
-            - Atomic forces:                            properties/tensorial/atomic-forces.md
-            - Stress tensor:                            properties/tensorial/stress-tensor.md
+            - Stress Tensor:                            properties/tensorial/stress-tensor.md
+            - Atomic Forces:                            properties/tensorial/atomic-forces.md
         - Dispersion Curves:
             # Include description of band-gap here
             - Band Structure:                           properties/dispersion/bandstructure.md
