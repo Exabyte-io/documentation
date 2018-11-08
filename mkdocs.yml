@@ -145,6 +145,7 @@ pages:
 
     - Methods:
         - Overview:                                     methods/overview.md
+        - Data:                                         methods/data.md
         - Pseudopotential:
             - Overview:                                 methods/pseudopotential/overview.md
             - Parameters:                               methods/pseudopotential/parameters.md
