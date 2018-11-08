@@ -575,8 +575,8 @@ pages:
 
 
     - REST-API:
-      # Link to Python API Client
-      # Link to Python API Examples
+      # Link to Exabyte API Client repo
+      # Link to Exabyte API Examples repo
       # Explanation and a Link to Swagger Explorer page
       # List of versions with its own link
       # Animation Example of how to use the swagger UI for Listing materials
