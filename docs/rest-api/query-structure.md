@@ -1,12 +1,12 @@
 # Request Structure
 
-A request is an HTTP request that consists of the following:
+A request is an HTTP request that consists of the following parts.
 
-* **URL** which serves as the entry point for the web service.
-* **Endpoint** which is executed when a request is made at a given URL path for a specific HTTP method.
-* **Parameters** for the endpoint, each parameter is separated by an ampersand (&).
-* **API version** to use. URL path versioning is the only type of API versioning currently available.
-* **Authentication parameters** that Exabyte uses to ensure the validity and authenticity of the request.
+* **URL**: the entry point for the web service.
+* **Endpoint**: a function to execute for a specific URL and HTTP method.
+* **Parameters**: parameters pass to the endpoint separated by an ampersand (&).
+* **API version**: version of the API. Only URL path versioning is currently supported.
+* **Authentication parameters**: credentials to ensure the validity and authenticity of the request.
 
 The following is a sample request which uses `GET` method and connects to `materials` endpoint. `KuAsBRwofzGfHPWiT` specifies the material ID and `X-Auth-Token` and `X-Account-Id` are authentication parameters passed inside the request header.
 

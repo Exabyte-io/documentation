@@ -1,36 +1,29 @@
-This section contains information about the RESTful Application Programming Interface or REST-API.
+# Exabyte RESTful API
 
-# Introduction
+Exabyte [RESTful](#Links) API (or REST-API) is a software architectural style that allows to access and manipulate textual representations of Exabyte web resources by using a uniform and predefined set of stateless operations. In other words, REST-API provides programmatic access to data and functionality for data scientists and engineers, and anyone who prefers coding to the user interface.
 
-REST-API is meant as a tool to enable programmatic access to data for data scientists and engineers, and anyone who prefers coding to the user interface.
+In order to use REST-API one should form authenticated queries through a RESTful API client. Below we refers the readers to sections explaining authentication parameters, requests and responses structure, endpoints, REST-API client and examples.
 
-# Authentication
+## Authentication
 
 [Authentication](authentication.md) section explains how to authenticate and access the API.
 
-# Queries
+## Query Structure
 
-[Query Structure](query-structure.md) section explains how to create and set up HTTP requests to the API.
+[Query Structure](query-structure.md) section provides information about REST-API requests and responses.
 
+## Endpoints
 
-# Endpoints
+[Endpoints](endpoints.md) section contains information about different API versions and how to access endpoints under a particular version.
 
-The supported RESTful API functions for each API version are explained inside the corresponding [Swagger](https://github.com/swagger-api/swagger-ui/tree/v2.2.10) documentation below.
+## Exabyte API Client
 
-- [2018-10-01](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json)
+[Exabyte API client](exabyte-api-client.md) section explains how to access REST-API via Python.
 
+## Exabyte API Examples
 
-## Animation
+[Exabyte API examples](exabyte-api-examples.md) section contains Jupyter Notebooks to perform most-common tasks via REST-API.
 
-In the example animation below, we demonstrate how to use Swagger for API version 2018-10-01 to list materials an account as access to.
+# Links
 
-<!-- TODO by GM -->
-<img data-gifffer="" />
-
-# Python API Client
-
-[exabyte-api-client](https://github.com/Exabyte-io/exabyte-api-client) is a Python package that provides access to Exabyte REST API via Python.
-
-# Python API Examples
-
-[exabyte-api-examples](https://github.com/Exabyte-io/exabyte-api-examples) repository contains examples for performing most-common tasks in the Exabyte.io platform through its RESTful API in Jupyter Notebook format.
+- [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer)
