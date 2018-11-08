@@ -339,22 +339,15 @@ pages:
 
 
     - Jobs Designer:
-         # What is Jobs Designer and clickable image with links to Designer components below
         - Overview:                                     jobs-designer/overview.md
         - Header Menu:                                  jobs-designer/header-menu.md
+        - Materials Tab:                                jobs-designer/materials-tab.md
+        - Workflow Tab:                                 jobs-designer/workflow-tab.md
+        - Compute Tab:                                  jobs-designer/compute-tab.md
         - Actions > Header Menu:
             - Select Materials:                         jobs-designer/actions-header-menu/select-materials.md
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
-        # Reference Materials Viewer and explain how to cycle through materials in Pager
-        - Materials Tab:                                jobs-designer/materials-tab.md
-        # Reference WF Viewer and explain
-        #    - which options are adjustable - isDraft, important settings
-        #    - how to view workflow important settings and unit input for multiple materials
-        - Workflow Tab:                                 jobs-designer/workflow-tab.md
-        # Refer to original compute tab
-        - Compute Tab:                                  jobs-designer/compute-tab.md
-
 
     - Jobs via Command Line Interface:
         - Overview:                                     jobs-cli/overview.md
