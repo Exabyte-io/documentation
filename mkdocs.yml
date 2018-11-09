@@ -374,13 +374,10 @@ pages:
         - Classification:                               properties/classification.md
         - Extractors:                                   properties/extractor.md
         - Refinement:                                   properties/refinement.md
-        # GATEWAY to MATERIALS-DATA
         # Note that we have plans to add user-defined schemas for properties
         - Schemas & Examples:                           data-structured/schemas.md
         - User Interface:
-            # Properties Explorer is located under Materials Viewer
             - Properties Explorer:                      properties/ui/explorer.md
-            # Final Structure Materials Viewer under results Tab in Jobs Viewer
             - Final Structure Viewer:                   properties/ui/viewer.md
         # The sections below explain all Characteristic properties, with mentions about their UI appearances
         - Scalar:
