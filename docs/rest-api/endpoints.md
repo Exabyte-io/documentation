@@ -23,6 +23,8 @@ In the example animation below, we demonstrate how to use Swagger for API versio
 
 # API Versions
 
+Below you can find the currently supported API versions.
+
 - [2018-10-01](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json)
 
 
