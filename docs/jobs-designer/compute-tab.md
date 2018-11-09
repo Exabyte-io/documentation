@@ -1,6 +1,6 @@
 # Compute Tab
 
-The final "Compute" Tab present under [Jobs Designer](overview.md) allows the necessary [computational resources](/infrastructure/resource/overview.md) to be allocated for the [Job](/jobs/overview.md) being currently created, in order to ensure its smooth execution on the [clusters](/infrastructure/clusters/overview.md) following its [Submission](/jobs/actions/run.md). 
+Compute Tab present in [Jobs Designer](overview.md) allows the user to allocate the necessary [computational resources](/infrastructure/resource/overview.md) for the [Job](/jobs/overview.md), in order to ensure its successful and timely execution. 
 
 The typical appearance of Compute Tab is exhibited below.
 
@@ -8,4 +8,4 @@ The typical appearance of Compute Tab is exhibited below.
 
 # Link to Instructions 
 
-Instructions for understanding and setting such computational parameters can be found in a [separate part of the documentation](/infrastructure/compute-settings/ui.md). 
+Instructions for understanding and setting the computational parameters can be found in the [corresponding part of the documentation](/infrastructure/compute-settings/ui.md). 
