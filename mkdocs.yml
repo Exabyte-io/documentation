@@ -374,22 +374,20 @@ pages:
         - Classification:                               properties/classification.md
         - Extractors:                                   properties/extractor.md
         - Refinement:                                   properties/refinement.md
+        - Data:                                         properties/data.md
         # Note that we have plans to add user-defined schemas for properties
         - Schemas & Examples:                           data-structured/schemas.md
         - User Interface:
             - Properties Explorer:                      properties/ui/explorer.md
             - Final Structure Viewer:                   properties/ui/viewer.md
-        # The sections below explain all Characteristic properties, with mentions about their UI appearances
         - Scalar:
-            # Energies: Total Energy, Fermi Energy, Zero Point Energy
             - Energies:                                 properties/scalar/energies.md
-            # Total force and average pressure
             - Pressure / Total Force:                   properties/scalar/pressure.md
             - Lists of Energy Contributions:            properties/scalar/energy-contribution.md
         - Array:
             # Add a link to other atomic properties
-            - Stress Tensor:                            properties/tensorial/stress-tensor.md
-            - Atomic Forces:                            properties/tensorial/atomic-forces.md
+            - Stress Tensor:                            properties/array/stress-tensor.md
+            - Atomic Forces:                            properties/array/atomic-forces.md
         - Dispersion Curves:
             # Include description of band-gap here
             - Band Structure:                           properties/dispersion/bandstructure.md

@@ -16,7 +16,7 @@ The most significant scalar properties that can be computed on materials include
 
 # Array Properties
 
-Important array-like properties that can emerge from a Material computation are the [internal stress tensor](tensorial/stress-tensor.md) and the [inter-atomic forces](tensorial/atomic-forces.md). The former is computed in the form of a matrix, whereas the latter is presented as separate vectors. One vector exists for each atom present in the structure, describing the net force acting upon it due to the bonding interactions originating from all other atoms.
+Important array-like properties that can emerge from a Material computation are the [internal stress tensor](array/stress-tensor.md) and the [inter-atomic forces](array/atomic-forces.md). The former is computed in the form of a matrix, whereas the latter is presented as separate vectors. One vector exists for each atom present in the structure, describing the net force acting upon it due to the bonding interactions originating from all other atoms.
 
 # Dispersion Curves
 
