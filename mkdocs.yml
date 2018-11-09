@@ -6,8 +6,6 @@ extra_css:
     - extra.css
 
 extra_javascript:
-    # TODO: migrate away from parse
-    # - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
