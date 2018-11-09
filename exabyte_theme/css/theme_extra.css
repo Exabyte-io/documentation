@@ -1,62 +1,15 @@
 /*
- * Sphinx doesn't have support for section dividers like we do in
- * MkDocs, this styles the section titles in the nav
- *
- * https://github.com/mkdocs/mkdocs/issues/175
- */
-.wy-menu-vertical span {
-    line-height: 18px;
-    padding: 0.4045em 1.618em;
-    display: block;
-    position: relative;
-    font-size: 90%;
-    color: #838383;
-}
-
-.wy-menu-vertical .subnav a {
-    padding: 0.4045em 2.427em;
-}
-
-/*
- * Long navigations run off the bottom of the screen as the nav
- * area doesn't scroll.
- *
- * https://github.com/mkdocs/mkdocs/pull/202
- */
-.wy-nav-side {
-    height: 100%;
-    overflow-y: auto;
-}
-
-/*
- * readthedocs theme hides nav items when the window height is
- * too small to contain them.
- *
- * https://github.com/mkdocs/mkdocs/issues/#348
- */
-.wy-menu-vertical ul {
-  margin-bottom: 2em;
-}
-
-/*
- * Fix wrapping in the code highlighting
- *
- * https://github.com/mkdocs/mkdocs/issues/233
- */
-code {
-    white-space: pre;
-    padding: 2px 5px;
-}
-
-/*
  * Wrap inline code samples otherwise they shoot of the side and
  * can't be read at all.
  *
  * https://github.com/mkdocs/mkdocs/issues/313
+ * https://github.com/mkdocs/mkdocs/issues/233
+ * https://github.com/mkdocs/mkdocs/issues/834
  */
-p code {
-    word-wrap: break-word;
+.rst-content code {
     white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 2px 5px;
 }
 
 /**
@@ -64,8 +17,12 @@ p code {
  * font size and padding.
  *
  * https://github.com/mkdocs/mkdocs/issues/855
+ * https://github.com/mkdocs/mkdocs/issues/834
+ * https://github.com/mkdocs/mkdocs/issues/233
  */
-pre code {
+.rst-content pre code {
+  white-space: pre;
+  word-wrap: normal;
   display: block;
   padding: 12px;
   font-size: 12px;
@@ -93,7 +50,7 @@ a:visited code {
  *
  * https://github.com/mkdocs/mkdocs/issues/411
  */
-code.cs, code.c {
+pre .cs, pre .c {
     font-weight: inherit;
     font-style: inherit;
 }
@@ -105,7 +62,7 @@ code.cs, code.c {
  *
  * https://github.com/mkdocs/mkdocs/issues/319
  */
-.no-highlight {
+.rst-content .no-highlight {
   display: block;
   padding: 0.5em;
   color: #333;
@@ -116,37 +73,24 @@ code.cs, code.c {
  * Additions specific to the search functionality provided by MkDocs
  */
 
-#mkdocs-search-results article h3
-{
+.search-results {
     margin-top: 23px;
+}
+
+.search-results article {
     border-top: 1px solid #E1E4E5;
     padding-top: 24px;
 }
 
-#mkdocs-search-results article:first-child h3 {
+.search-results article:first-child {
     border-top: none;
 }
 
-#mkdocs-search-query{
+form .search-query {
     width: 100%;
     border-radius: 50px;
-    padding: 6px 12px;
+    padding: 6px 12px;  /* csslint allow: box-model */
     border-color: #D1D4D5;
-}
-
-.wy-menu-vertical li ul {
-    display: inherit;
-}
-
-.wy-menu-vertical li ul.subnav ul.subnav{
-    padding-left: 1em;
-}
-
-.wy-menu-vertical .subnav li.current > a {
-    padding-left: 2.42em;
-}
-.wy-menu-vertical .subnav li.current > ul li a {
-    padding-left: 3.23em;
 }
 
 /*
@@ -154,8 +98,29 @@ code.cs, code.c {
  *
  * https://github.com/mkdocs/mkdocs/issues/656
  */
- div.admonition code {
+ .rst-content .admonition code {
   color: #404040;
+  border: 1px solid #c7c9cb;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  background: #f8fbfd;
   background: rgba(255, 255, 255, 0.7);
+}
+
+/*
+ * Account for wide tables which go off the side.
+ * Override borders to avoid wierdness on narrow tables.
+ *
+ * https://github.com/mkdocs/mkdocs/issues/834
+ * https://github.com/mkdocs/mkdocs/pull/1034
+ */
+.rst-content .section .docutils {
+    width: 100%;
+    overflow: auto;
+    display: block;
+    border: none;
+}
+
+td, th {
+   border: 1px solid #e1e4e5 !important; /* csslint allow: important */
+   border-collapse: collapse;
 }
