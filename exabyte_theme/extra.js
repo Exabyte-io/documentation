@@ -56,7 +56,10 @@
         con.appendChild(play);
         el.parentNode.replaceChild(con, el);
         altText ? con.parentNode.insertBefore(alt, con.nextSibling) : null;
-        return {c: con, p: play};
+        return {
+            c: con,
+            p: play
+        };
     };
 
     function calculatePercentageDim(el, w, h, wOrig, hOrig) {
@@ -74,7 +77,10 @@
             w = h / ratio;
         }
 
-        return {w: w, h: h};
+        return {
+            w: w,
+            h: h
+        };
     };
 
     function process(el, gifs) {
@@ -174,7 +180,6 @@
     return Gifffer;
 });
 
-
 $(document).ready(function () {
     $('ul.subnav').on("click", function (event) {
         //$(".toctree-l1").hide(90); // Close other menus
@@ -184,72 +189,4 @@ $(document).ready(function () {
     $('li.current').show(50);
     $('li.current').siblings().show(0);
     Gifffer();
-});
-
-
-/*
- * Contact form validation + handling
- */
-
-var formValidation = {
-    validateForm: function (name, email, message) {
-        var validateEmail = function (email) {
-                var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-                return re.test(email);
-            },
-            result = [];
-
-        if ($.trim(name) != '') {
-            $('#contact-name').next().hide();
-            result.push(true)
-        } else {
-            $('#contact-name').next().show();
-        }
-
-        if (validateEmail(email)) {
-            $('#contact-email').next().hide();
-            result.push(true)
-        } else {
-            $('#contact-email').next().show();
-        }
-
-        if ($.trim(message) != '') {
-            $('#contact-message').next().hide();
-            result.push(true)
-        } else {
-            $('#contact-message').next().show();
-        }
-
-        return result[0] && result[1] && result[2] ? true : false;
-    }
-};
-
-function post_to_parse() {
-    Parse.initialize("ATMsrRPxE7MzFHdfogThm2iQvCasbcpkexKQ4hLh", "dHaZ0sBZGkO153TtGQrBBDdn5Mxtrg5O1vbZAkWj");
-    var TestObject = Parse.Object.extend("SignUpUsers");
-    var testObject = new TestObject();
-    var name = jQuery('#contact-name').val();
-    var email = jQuery('#contact-email').val();
-    var message = "--- DOCUMENTATION ---\n\n" + window.location + "\n\n\n" +
-        jQuery('#contact-message').val();
-    console.log("-------", name, email, message);
-    if (formValidation.validateForm(name, email, message)) {
-        testObject.save({
-            name: name,
-            email: email,
-            message: message,
-        }).then(function (object) {
-            jQuery('#contact-name').val('');
-            jQuery('#contact-email').val('');
-            jQuery('#contact-message').val('');
-        });
-        alert("We received your feedback - thank you!")
-    }
-
-    return false;
-}
-
-// first hide all validation messages
-$(document).ready(function () {
-    formValidation.validateForm('a', 'a@a.com', 'a');
 });
