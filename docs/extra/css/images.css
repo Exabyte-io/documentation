@@ -1,0 +1,31 @@
+.md-typeset img,
+.md-typeset .giffer {
+    margin-bottom: 50px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.31);
+    border-radius: 5px;
+    border: 1px solid #AAA;
+    padding: 2px;
+    max-width: 800px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.giffer {
+    border: 1px solid #AAA !important;
+}
+
+.md-logo img {
+    display: inherit;
+    margin: 0;
+    height: inherit;
+    width: 200px;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-top: -17px;
+}
