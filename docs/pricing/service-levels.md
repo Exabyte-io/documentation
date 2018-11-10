@@ -15,7 +15,7 @@ Below is a quick comparison of our service levels:
 | private data             |  -          | -                  | +                  | +                  | +                         |
 | organizations/teams      |  -          | -                  | -                  | +                  | +                         |
 | maximum team size        |  -          | -                  | -                  | 5                  | 15                        |
-| support level            |  email      | email              | email/web          | email/web          | email/web/videoconference |
+| support                  |  email      | email              | email              | email / phone          | email / phone / videoconference |
 | command-line access      |  -          | -                  | +                  | +                  | +                         |
 
 > NOTE: the price above refers to the Ordinary Rate for each service level. One can further control the price by varying submission queues (see below). When using "Saving" queue, for example, the final price can be as low as $0.02.
