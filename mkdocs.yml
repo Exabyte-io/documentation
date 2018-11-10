@@ -1,26 +1,15 @@
-site_name: exabyte.io documentation
+site_name: Documentation
 site_url: https://docs.exabyte.io
 
+repo_name: 'exabyte-io/documentation'
+repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
     - extra/css/general.css
-    - extra/css/details.css
-    - extra/css/section.css
     - extra/css/images.css
-    - extra/css/paragraphs.css
-    - extra/css/buttons.css
-    - extra/css/source-code.css
-
-    - extra/css/toc.css
-    - extra/css/toc-nav.css
-
-    - extra/css/admonitions.css
-    - extra/css/breadcrumbs.css
-    - extra/css/blockquote.css
 
 extra_javascript:
     - extra/js/giffer.js
-    - extra/js/subnav.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
@@ -30,32 +19,40 @@ extra:
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
-
+    social:
+        - type: github
+          link: https://github.com/exabyte-io
+        - type: linkedin
+          link: https://linkedin.com/exabyte-io
 markdown_extensions:
     - admonition
+    - codehilite:
+        linenums: true
     - pymdownx.arithmatex
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.extrarawhtml
+    - pymdownx.betterem
     - toc:
         permalink: true
 
-# https://github.com/mkdocs/mkdocs/tree/master/mkdocs/themes/readthedocs
+# https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
+# https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
 theme:
-    name: null
-    navigation_depth: 3
-    custom_dir: exabyte_theme/
-    static_templates:
-        - 404.html
-    include_search_page: true
-    search_index_only: false
-    highlightjs: true
-    hljs_languages:
-        - json
-        - javascript
-        - python
-        - text
-        - fortran
+    name: material
+    custom_dir: theme
+    palette:
+        primary: indigo
+        accent: indigo
+    logo: "images/logo/logo-white.png"
+    favicon: "images/logo/favicon.ico"
+    font:
+        text: Roboto
+        code: Roboto Mono
+    feature:
+        tabs: false
 
 nav:
-
     - Home: index.md
 
 # INTRODUCTION
@@ -64,7 +61,6 @@ nav:
         # Table of Contents re-iterated
         - Content highlights:                            getting-started/content-highlights.md
         - CLI job submission:                            getting-started/cli-job.md
-
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
