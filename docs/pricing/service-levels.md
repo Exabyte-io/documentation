@@ -1,8 +1,8 @@
-# Overview
+# Service Levels
 
 Service levels define the price per the amount of compute you consume while using our product. We measure the amount in compute-units, or [core-hours](https://en.wikipedia.org/wiki/CPU_time). You always pay on-demand, however depending on Service Level price per compute unit may vary.
 
-# Comparison Table
+## Comparison Table
 
 Below is a quick comparison of our service levels:
 
@@ -20,7 +20,7 @@ Below is a quick comparison of our service levels:
 
 > NOTE: the price above refers to the Ordinary Rate for each service level. One can further control the price by varying submission queues (see below). When using "Saving" queue, for example, the final price can be as low as $0.02.
 
-# How Service Levels are set
+## How Service Levels are set
 
 The service level is defined by the pre-payment that an account holder makes. When multiple payments are applied, we prioritize the maximum amount within its validity period.
 
@@ -32,7 +32,7 @@ Here's how it works:
 
 > NOTE: validity periods for the same service level add up, so in case a user pays $500 and then adds $500 within 6 months, the total allocation of $1000 can be used within 12 months  
 
-# Service levels for Enterprise
+## Service levels for Enterprise
 
 Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/collaboration/organizations/overview.md). 
 
@@ -43,14 +43,14 @@ Notes:
 - entities created under the organization account will be charged according to `Enterprise` rates
 - other special rates are available upon request
 
-# Validity period
+## Validity period
 
 Our users only pay for what they use, however we require that they use the allocation within a designated validity period.
 
 !!! tip "Unused credits"
     Unused credits roll-over into the next validity period.
 
-# Queue-based pricing
+## Queue-based pricing
 
 Detailed description of submission queues and compute levels is available [elsewhere](/infrastructure/resource/queues.md). Brief summary of charge factors for each queue types wrt the base price are shown below
 
@@ -60,7 +60,7 @@ Detailed description of submission queues and compute levels is available [elsew
 |Ordinary  | 1.0
 |Saving    | 0.2
 
-# Clusters and Premium hardware
+## Clusters and Premium hardware
 
 Our infrastructure includes multiple compute clusters at a time, with some providing premium performance. The state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters). Premium hardware has an extra charge factor as shown below: 
 
