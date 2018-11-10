@@ -1,0 +1,72 @@
+/* --------------------------------------------------------- *
+ *                  NAV COLLAPSE FIRST LEVEL
+ * --------------------------------------------------------- */
+.wy-menu ul.subnav {
+    cursor: pointer;
+}
+
+ul.subnav li.toctree-l2 {
+    display: none;
+}
+
+/* TODO: refactor; making current active link section to extend left to the end */
+.wy-menu-vertical li ul.subnav ul.subnav {
+    padding-left: 0;
+}
+
+span.caption-text {
+    cursor: default;
+}
+
+.toctree-l1 > span.caption-text,
+.toctree-l1 > a {
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toctree-l1 > span.caption-text:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.toctree-l2 > span.caption-text {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #1b345b;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding: 0.4045em 2.618em;
+}
+
+.toctree-l3.current ul li {
+    font-size: small;
+    font-weight: lighter;
+}
+
+/*.toctree-l2.current > span.caption-text {*/
+/*background: #1b345b;*/
+/*}*/
+
+/*.wy-menu-vertical .subnav li.current {*/
+/*margin-left: -1em;*/
+/*}*/
+
+/*.wy-menu-vertical .subnav li.current > span {*/
+/*padding-left: 4.42em;*/
+/*}*/
+
+/*.wy-menu-vertical .subnav li.current > ul li span {*/
+/*padding-left: 5.23em;*/
+/*}*/
+
+/*
+ * h1,h2,h3... subnavigation
+ * */
+.wy-menu-vertical li ul li a:hover,
+.wy-menu-vertical li.toctree-l1 a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+a.toctree-l4 {
+    padding-left: 6.3em !important;
+    color: #a1a1a1 !important;
+}

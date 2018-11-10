@@ -1,0 +1,21 @@
+/* --------------------------------------------------------- *
+ *                  NOTES
+ * --------------------------------------------------------- */
+.wy-alert-title, .rst-content .admonition-title, .rst-content .note .admonition-title {
+    background-color: #3161A8;
+}
+
+.wy-alert-title, .rst-content .admonition-title, .rst-content .tip .admonition-title {
+    background-color: #466d60;
+}
+
+.rst-content .tip {
+    background: #ddf4ef;
+}
+
+/* --------------------------------------------------------- *
+ *                  ADMONITIONS
+ * --------------------------------------------------------- */
+.admonition {
+    border: solid 1px #e1e4e5;
+}
