@@ -30,6 +30,7 @@ pages:
         - Run first simulation:                          getting-started/run-first-simulation.md
         # Table of Contents re-iterated
         - Content highlights:                            getting-started/content-highlights.md
+        - Important Concepts:                            getting-started/concepts-overview.md
         - CLI job submission:                            getting-started/cli-job.md
 
 
@@ -375,33 +376,31 @@ pages:
         - Extractors:                                   properties/extractor.md
         - Refinement:                                   properties/refinement.md
         - Data:                                         properties/data.md
-        # Note that we have plans to add user-defined schemas for properties
         - Schemas & Examples:                           data-structured/schemas.md
         - User Interface:
             - Properties Explorer:                      properties/ui/explorer.md
             - Final Structure Viewer:                   properties/ui/viewer.md
         - Scalar:
+            - Overview:                                 properties/scalar/overview.md
+            # Energies: Total Energy, Fermi Energy, Zero Point Energy, band-gap energy
             - Energies:                                 properties/scalar/energies.md
-            - Pressure / Total Force:                   properties/scalar/pressure.md
+            - Pressure:                                 properties/scalar/pressure.md
+            - Total Force:                              properties/scalar/total-force.md
             - Lists of Energy Contributions:            properties/scalar/energy-contribution.md
-        - Array:
-            # Add a link to other atomic properties
-            - Stress Tensor:                            properties/array/stress-tensor.md
-            - Atomic Forces:                            properties/array/atomic-forces.md
-        - Dispersion Curves:
-            # Include description of band-gap here
-            - Band Structure:                           properties/dispersion/bandstructure.md
-            - Phonons:                                  properties/dispersion/phonons.md
-            - Density of States:                        properties/dispersion/dos.md
-        # The section below explains all of the Descriptive properties, in terms of their theoretical background
-        - Structural:
+        - Non-Scalar:
+            - Overview:                                 properties/non-scalar/overview.md
+            - Stress Tensor:                            properties/non-scalar/stress-tensor.md
+            - Band Structure:                           properties/non-scalar/bandstructure.md
+            - Phonons:                                  properties/non-scalar/phonons.md
+            - Density of States:                        properties/non-scalar/dos.md
+            # The section below explains all of the Descriptive properties, in terms of their theoretical background
             # Consider Moving Basis/lattice explanation from Materials Designer to here
-            # Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
-            - Atomic:                                   properties/structural/atomic.md
+            # Atomic coordinates, Atomic forces, Basis
+            - Atomic:                                   properties/non-scalar/atomic.md
             # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
-            - Lattice:                                  properties/structural/lattice.md
+            - Lattice:                                  properties/non-scalar/lattice.md
             # Explain how basis can be attached to lattice to create crystal structure
-            - Final Structure:                          properties/structural/final-structure.md
+            - Crystal Structure:                        properties/non-scalar/final-structure.md
 
 
 # COMPUTATIONAL ASPECTS

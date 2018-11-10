@@ -1,27 +1,71 @@
-# Materials Properties Classification
+# Properties Classification
 
-We draw some important distinctions when referring to materials properties as introduced in the [following page](/data-structured/overview.md), which also illustrates graphically the Material-Job-Property relation.
+Generally, [properties](overview.md) for both [Materials](/materials/overview.md) and [Workflows](/workflows/overview.md) can be assigned the following different forms of classification. We explain the terms contained in this table throughout the remainder of the present documentation page.
 
-For the case of [Characteristic](/data-structured/overview.md) properties, we classify them based on whether they are returned and presented to the user as **scalars**, **arrays** (both of vector and matrix nature) or **dispersion curves**. We also group together all the **structural crystalline properties** of [Descriptive](/data-structured/overview.md) nature under a common category. 
+|  By data type | By relation to Workflow  | By Uniqueness   | By Physical Meaning      |
+|:-------------:|:------------------------:|:---------------:|:------------------------:|
+| Scalar        | Descriptive              | Identifier      | (default, non-auxiliary) |
+| Non-scalar    | Characteristic           | Non-identifier  | Auxiliary                |
 
-Each aforementioned material property is reviewed and described separately in a dedicated section of the documentation, based on its position in the overall classification. The reader is referred to the links presented throughout the remainder of the present documentation page. 
+# By Data Type
 
-# Example Representation
+We can subdivide properties based on how they are presented to the user into the following two categories.
 
-For examples of JSON representation of materials and structure-based descriptors, see the [Materials Data](/materials/data.md) section.
+- **Scalar**: can be expressed as a single numerical value with an associated measurement unit.
+- **Non-Scalar**: cannot be expressed as above.
 
-# Scalar Properties
+This is our preferred categorization scheme for classifying Materials properties. We review the [scalar](scalar/overview.md) and [non-scalar](non-scalar) classes separately in their respective documentation sections.
 
-The most significant scalar properties that can be computed on materials include their [Energy](scalar/energies.md) and [Pressure](scalar/pressure.md), including an estimate of the [total average internal force](scalar/pressure.md). They are reviewed in their respective documentation pages.
+> NOTE: non-scalar properties may be further subdivided into 1-dimensional arrays or matrices, for example. Some of these properties may also be traced graphically.
 
-# Array Properties
+# By Relation to Workflow
 
-Important array-like properties that can emerge from a Material computation are the [internal stress tensor](array/stress-tensor.md) and the [inter-atomic forces](array/atomic-forces.md). The former is computed in the form of a matrix, whereas the latter is presented as separate vectors. One vector exists for each atom present in the structure, describing the net force acting upon it due to the bonding interactions originating from all other atoms.
+We can also subdivide properties by their relation to the application / execution of a workflow. This approach results in the following distinction. 
 
-# Dispersion Curves
+- **Descriptive Properties**: available before executing a *workflow*.
+- **Characteristic Properties**: results or outcomes of the *workflow* application.
 
-Examples of dispersion curves which are routinely encountered in materials science computations include those describing the [electronic bandstructure](dispersion/bandstructure.md) and [phonon lattice vibrations](dispersion/phonons.md) of the material. The [Density of States](dispersion/dos.md) pertaining to both of these dispersion properties can also be calculated and displayed graphically. 
+> NOTE: workflows can be used in a recursive manner, in a way that allows them to extract the properties of another parent workflow. The characteristic properties output by the parent therefore become descriptive when considered in relation to the child workflow. 
 
-# Structural Properties
+## Example 
+    
+For atomistic simulations, a descriptive property can be for example the initial structural information, and a characteristic property can be the electronic conductivity.
 
-Descriptive Structural Properties pertaining to the individual [atoms](structural/atomic.md), to the [Bravais Lattice](structural/lattice.md), and to the overall [Crystal Structure](structural/final-structure.md) of the material under consideration are reviewed and described in their respective documentation pages. 
+Similarly, in the context of experimental measurements, a descriptive property could be the initial information about a sample (eg. percentage of mixed compounds by mass, or other relevant conditions), and a characteristic property is what is measured as the outcome of the experiment.
+
+# By Relation to Uniqueness
+
+An effective way of organizing the data consists in identifying the materials themselves, rather than their properties. We do so by considering **Identifiers**, a special subset of *Descriptive* properties that helps associating each material with its ["exabyteId" keyword](/entities-general/data.md). 
+
+## Example 
+
+For the case of atomistic simulations, the identifiers can be directly constructed from the atomistic structure of the materials.
+
+At the same time, the atomistic structure may be unavailable in experimental findings or for existing datasets, hence we allow for the possibility of custom identifiers that can be mapped to *exabyteIds*.
+
+As the example above demonstrates, unique identifiers can be dependent on the source of data.  
+
+# By Physical Meaning
+
+In the context of non-experimental data such as that obtained with computational simulations, it could happen that the value of a property does not hold a clear physical meaning (beyond the extent of the model applied) despite being numerically well-defined. We call such property **Auxiliary**. Otherwise, if this is not the case, a physical meaning is assumed.
+
+## Example 
+
+For atomistic simulations done using the [planewave pseudopotential method](/methods/pseudopotential/overview.md) we can for example extract the Fermi energy. However, there is no physical meaning to its numerical value, as it is heavily dependent on the pseudization scheme.
+ 
+Conversely the electronic band gap, or the difference between electronic energies right below the Fermi level and right above it, has physical meaning and can be directly compared with experimental measurements. 
+
+# Classification in the Context of Machine Learning
+
+On many occasions, terms "Features", "Fingerprints", "Targets" are used for materials informatics purposes. For example, when constructing a machine learning model, a dataset containing information about multiple materials is used in order to find regular patterns and inter-dependencies. Such dataset is usually split into properties that represent the known data, or *features*, and the properties to be predicted, or *targets*.
+
+First we clarify this terminology as follows.
+
+- **Feature**: any [property](overview.md) of a [material](/materials/overview.md), eg. density or electronic band gap.
+- **Fingerprint**: property of a material used as an input for a (statistical modeling) [Workflow](/workflows/overview.md), equivalent to the concept of **Descriptive** property by definition
+
+> NOTE: by default, we only store the minimal amount of information required to identify a material enough to reveal a set of its **Fingerprints**. Such minimal set of properties is called **Identity Fingerprints**, and the rest - **Derived Fingerprints**.
+
+- **Target**: property of a material used as an input for a (statistical modeling) Workflow, equivalent to the notion of **Characteristic** property by definition.
+
+Thus, a *property-descriptive-characteristic* triad is equivalent to *feature-fingerprint-target*.
