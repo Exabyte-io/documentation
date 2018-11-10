@@ -4,10 +4,9 @@ Our platform contains three main classes of **Entities**, each recognizable by i
 
 | Entity    |  Icon      | Details        | 
 | :-------- |:----------- |:------------- |
-| Materials | <i class="zmdi zmdi-widgets"></i>    | Hold information about individual materials |
-| Workflows | <i class="zmdi zmdi-dot-circle"></i> | Contain logical set of computational operations, applicable to multiple materials |
-| Jobs      | <i class="zmdi zmdi-file"></i> | Represent computational tasks on a particular material-workflow combination to produce the corresponding properties and output files as results |
-
+| [Materials](/materials/overview.md) | <i class="zmdi zmdi-widgets"></i>    | Hold information about individual materials |
+| [Workflows](/workflows/overview.md) | <i class="zmdi zmdi-dot-circle"></i> | Contain logical set of computational operations, applicable to multiple materials |
+| [Jobs](/jobs/overview.md)           | <i class="zmdi zmdi-file"></i>       | Represent computational tasks on a particular material-workflow combination to produce the corresponding properties and output files as results |
 
 # Ownership and Permissions
 
