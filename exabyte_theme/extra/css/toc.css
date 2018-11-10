@@ -71,6 +71,12 @@
     width: 200px;
 }
 
+/* Enable Scroll */
+
+.wy-nav-side {
+    overflow-y: hidden;
+}
+
 .wy-side-scroll {
     width: 320px;
     position: relative;
