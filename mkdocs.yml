@@ -3,19 +3,33 @@ site_url: https://docs.exabyte.io
 
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
-    - extra.css
+    - extra/css/general.css
+    - extra/css/details.css
+    - extra/css/section.css
+    - extra/css/images.css
+    - extra/css/paragraphs.css
+    - extra/css/buttons.css
+    - extra/css/source-code.css
+
+    - extra/css/toc.css
+    - extra/css/toc-nav.css
+
+    - extra/css/admonitions.css
+    - extra/css/breadcrumbs.css
+    - extra/css/blockquote.css
 
 extra_javascript:
-    - extra.js
+    - extra/js/giffer.js
+    - extra/js/subnav.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 
 extra:
-    version: "0.10.0"
+    version: "0.10.8"
     preload_javascript:
-        - /preload_hotjar.js
-        - /preload.js
+        - /extra/js/preload_hotjar.js
+        - /extra/js/preload.js
 
 markdown_extensions:
     - admonition
@@ -26,13 +40,19 @@ markdown_extensions:
 # https://github.com/mkdocs/mkdocs/tree/master/mkdocs/themes/readthedocs
 theme:
     name: null
+    navigation_depth: 3
     custom_dir: exabyte_theme/
     static_templates:
         - 404.html
     include_search_page: true
     search_index_only: false
     highlightjs: true
-    hljs_languages: []
+    hljs_languages:
+        - json
+        - javascript
+        - python
+        - text
+        - fortran
 
 nav:
 
@@ -369,7 +389,7 @@ nav:
         - Compute Tab:                                  jobs-designer/compute-tab.md
 
 
-    - Jobs via Command Line Interface:
+    - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
         # Jobscript, with examples
         - Batch script:                                 jobs-cli/batch-script.md
@@ -475,7 +495,7 @@ nav:
         # Evolution of data from exiting job execution to webapp/objectstorage (see flowchart in GM notebook)
         - Lifecycle:                                    data/lifecycle.md
 
-    - Structured Data:
+    - Data Structures:
         # Content description and links
         # Links to other pages with Jobs, Materials, Workflows explanation
         - Overview:                                     data-structured/overview.md
