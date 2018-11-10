@@ -22,7 +22,7 @@ For the case of the [pseudopotential DFT model](/models/dft/overview.md) the **[
 
 ## Refined Property Example
 
-The [band gap](dispersion/bandstructure.md) is instead considered a refined property, since it is a relative energy difference between the highest electron-occupied and lowest unoccupied levels in the bandstructure of the material. Therefore its computed value can be compared directly with experiments, with a reliability limited only by its numerical precision.
+The [band gap](non-scalar/bandstructure.md) is instead considered a refined property, since it is a relative energy difference between the highest electron-occupied and lowest unoccupied levels in the bandstructure of the material. Therefore its computed value can be compared directly with experiments, with a reliability limited only by its numerical precision.
 
 > **NOTE**: exception for "Total Energy". We class the [Total Energy](scalar/energies.md) of the material as refined property, despite its absolute value computed with DFT also being of no physical relevance. This is done due to its importance in formulating the Equation of State of the Material, where it is normally compared relative to its ground-state value under equilibrium conditions. 
 
