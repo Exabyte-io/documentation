@@ -4,9 +4,13 @@
  *
  * https://github.com/mkdocs/mkdocs/issues/175
  */
+.wy-menu-vertical a,
+.wy-menu-vertical span {
+    padding: 0.4045em 1.0em;
+}
+
 .wy-menu-vertical span {
     line-height: 18px;
-    padding: 0.4045em 1.618em;
     display: block;
     position: relative;
     font-size: 90%;
@@ -27,12 +31,12 @@
  * to make toc scrollbar end before navigations buttons to not be overlapping.
  */
 .wy-nav-side {
-    height: calc(100% - 45px);
+    height: 100%;
     overflow-y: auto;
     min-height: 0;
 }
 
-.rst-versions{
+.rst-versions {
     border-top: 0;
     height: 45px;
 }
@@ -50,7 +54,7 @@
  * https://github.com/mkdocs/mkdocs/issues/#348
  */
 .wy-menu-vertical ul {
-  margin-bottom: 2em;
+    margin-bottom: 2em;
 }
 
 /*
@@ -76,11 +80,11 @@ code {
  * https://github.com/mkdocs/mkdocs/issues/233
  */
 pre code {
-  white-space: pre;
-  word-wrap: normal;
-  display: block;
-  padding: 12px;
-  font-size: 12px;
+    white-space: pre;
+    word-wrap: normal;
+    display: block;
+    padding: 12px;
+    font-size: 12px;
 }
 
 /*
@@ -91,9 +95,11 @@ pre code {
 a code {
     color: #2980B9;
 }
+
 a:hover code {
     color: #3091d1;
 }
+
 a:visited code {
     color: #9B59B6;
 }
@@ -118,11 +124,10 @@ pre .cs, pre .c {
  * https://github.com/mkdocs/mkdocs/issues/319
  */
 .no-highlight {
-  display: block;
-  padding: 0.5em;
-  color: #333;
+    display: block;
+    padding: 0.5em;
+    color: #333;
 }
-
 
 /*
  * Additions specific to the search functionality provided by MkDocs
@@ -144,7 +149,7 @@ pre .cs, pre .c {
 form .search-query {
     width: 100%;
     border-radius: 50px;
-    padding: 6px 12px;  /* csslint allow: box-model */
+    padding: 6px 12px; /* csslint allow: box-model */
     border-color: #D1D4D5;
 }
 
@@ -152,13 +157,14 @@ form .search-query {
     display: inherit;
 }
 
-.wy-menu-vertical li ul.subnav ul.subnav{
+.wy-menu-vertical li ul.subnav ul.subnav {
     padding-left: 1em;
 }
 
 .wy-menu-vertical .subnav li.current > a {
     padding-left: 2.42em;
 }
+
 .wy-menu-vertical .subnav li.current > ul li a {
     padding-left: 3.23em;
 }
@@ -168,12 +174,12 @@ form .search-query {
  *
  * https://github.com/mkdocs/mkdocs/issues/656
  */
- .admonition code {
-  color: #404040;
-  border: 1px solid #c7c9cb;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  background: #f8fbfd;
-  background: rgba(255, 255, 255, 0.7);
+.admonition code {
+    color: #404040;
+    border: 1px solid #c7c9cb;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: #f8fbfd;
+    background: rgba(255, 255, 255, 0.7);
 }
 
 /*
@@ -183,15 +189,16 @@ form .search-query {
  * https://github.com/mkdocs/mkdocs/issues/834
  * https://github.com/mkdocs/mkdocs/pull/1034
  */
-.rst-content .section .docutils {
-    width: 100%;
-    overflow: auto;
-    display: block;
-    border: none;
-}
 
-td, th {
-   border: 1px solid #e1e4e5 !important; /* csslint allow: important */
-   border-collapse: collapse;
-}
+/*.rst-content .section .docutils {*/
+/*width: 100%;*/
+/*overflow: auto;*/
+/*display: block;*/
+/*border: none;*/
+/*}*/
+
+/*td, th {*/
+/*border: 1px solid #e1e4e5 !important; !* csslint allow: important *!*/
+/*border-collapse: collapse;*/
+/*}*/
 
