@@ -9,8 +9,8 @@ function hadleSubnavClick() {
         $(this).toggleClass("open");
     });
 
-    $('li.current').show(50);
-    $('li.current').siblings().show(0);
+    $('li.nav-active').show(50);
+    $('li.nav-active').siblings().show(0);
 }
 
 $(document).ready(hadleSubnavClick);
