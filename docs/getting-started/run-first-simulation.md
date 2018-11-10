@@ -1,4 +1,4 @@
-# Getting Started
+# Run First Simulation
 
 This page explains how to run a simple density functional theory calculation to obtain an electronic band structure. Each account is pre-configured with one default material and workflow. For the sake of this tutorial, we will keep the *default* parameters at each step. We will thus study silicon in the standard face-centered cubic structure and use Quantum ESPRESSO as the simulation engine.
 

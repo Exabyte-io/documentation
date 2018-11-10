@@ -4,7 +4,7 @@ Supercell is a widely used crystallographic concept [[1](#links)]. A general the
 
 # Theoretical Background
 
-<details>
+<details markdown="1">
   <summary>
     Expand to view ...
   </summary>

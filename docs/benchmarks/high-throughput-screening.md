@@ -26,9 +26,10 @@ Below is an example visualization of a structure employed in this run.
 
 ## Inputs
 
-<details>
-    <summary>**INCAR**</summary>
-```
+<details markdown="1">
+  <summary>**INCAR**</summary>
+
+```text
 ALGO = Normal
 EDIFF = 0.0001
 ENCUT = 520
@@ -49,9 +50,10 @@ SIGMA = 0.2
 ```
 </details>
 
-<details>
-    <summary>**POSCAR**</summary>
-```
+<details markdown="1">
+  <summary>**POSCAR**</summary>
+
+```text
 Li8 Al8 Cu8
 1.0
 11.687317 3.895772 -3.895772
@@ -87,9 +89,10 @@ direct
 ```
 </details>
 
-<details>
-    <summary>**KPOINTS**</summary>
-```
+<details markdown="1">
+  <summary>**KPOINTS**</summary>
+
+```text
 0
 Gamma
 1 1 2
