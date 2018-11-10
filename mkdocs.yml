@@ -1,5 +1,7 @@
 site_name: Documentation
 site_url: https://docs.exabyte.io
+site_description: Documentation for the users of Exabyte.io materials modeling platform.
+dev_addr: "localhost:8000"
 
 repo_name: 'exabyte-io/documentation'
 repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
@@ -33,6 +35,7 @@ markdown_extensions:
     - pymdownx.superfences
     - pymdownx.extrarawhtml
     - pymdownx.betterem
+    - pymdownx.striphtml
     - toc:
         permalink: true
 
