@@ -30,11 +30,9 @@ span.caption-text {
 }
 
 .toctree-l2 > span.caption-text {
-    background-color: rgba(255, 255, 255, 0.2);
-    color: #1b345b;
     text-transform: capitalize;
     font-weight: bold;
-    padding: 0.4045em 2.618em;
+    padding: 0.4045em 1.618em;
 }
 
 .toctree-l3.current ul li {
@@ -64,9 +62,4 @@ span.caption-text {
 .wy-menu-vertical li ul li a:hover,
 .wy-menu-vertical li.toctree-l1 a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-}
-
-a.toctree-l4 {
-    padding-left: 6.3em !important;
-    color: #a1a1a1 !important;
 }
