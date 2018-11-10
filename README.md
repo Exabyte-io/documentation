@@ -40,7 +40,7 @@ In order to make it easier to merge ongoing updates from mkdocs, do not change t
 
     ./exabyte_theme/*
 
-except for extra.css/extra.js files.
+except for extra css and extra js files.
 
 # Development
 

@@ -1,7 +1,7 @@
 *site/
 .DS_Store
 .idea
-.virtualenv
+.virtualenv*
 tmp/
 docs/images*
 scripts/*.mp4
