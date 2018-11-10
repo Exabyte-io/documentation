@@ -1,6 +1,6 @@
-# List of Materials Properties
+# List of Properties
 
-Below we provide example Materials properties extracted by using [Density Functional Theory](/models/dft/overview.md) (DFT) as model. 
+Below we provide a list of properties that can be [extracted](extractor.md) on our platform.  
 
 | Property          | Overview    |
 |:----------------- |:------------|
@@ -22,7 +22,7 @@ Below we provide example Materials properties extracted by using [Density Functi
 
 # List of Workflow Monitors
 
-Below we list the data points that can be monitored during the course of a DFT calculation.
+Below we list the data points that can be monitored during the course of the execution of a [Workflow](/workflows/overview.md) computation.
 
 | Output information | Overview |
 |:---------------   |:------------|
