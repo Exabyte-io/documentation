@@ -1,0 +1,7 @@
+details {
+    color: #1b345b;
+}
+
+details summary {
+    cursor: pointer;
+}
