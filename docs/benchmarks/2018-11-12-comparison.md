@@ -14,13 +14,13 @@ In order to make a comparison, for all the cases studied we run the benchmarks w
 
 ### Hardware
 
-We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). 
+We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). "NHT" refers to the Non-hyperthreaded[^7] scenario. "IB-H" refers to infiniband-interconnected H-series type virtual machines [^8]. The hardware specifications are listed below (we refer to physical cores as "Cores"):
 
 | Case        | Type          | Cores | CPU Family                       | Freq. (GHz) | Memory (GB) | RDMA[^6] |
 | :---:       | :---:         | :---: | :---:                            | :---:       | :---:       | :---:    |
-| AWS-NHT[^7] | c4.8xlarge    | 18    | Intel(R) Xeon(R) CPU E5-2666 v3  | 2.9         | 60          | No       |
+| AWS-NHT | c4.8xlarge    | 18    | Intel(R) Xeon(R) CPU E5-2666 v3  | 2.9         | 60          | No       |
 | AWS-NHT-C5  | c5.18xlarge   | 36    | Intel(R) Xeon(R) Platinum 8124M3 | 3           | 144         | No       |
-| AZ-IB-H[^8] | Standard_H16r | 16    | Intel(R) Xeon(R) CPU E5-2667 v3  | 3.2         | 112         | Yes      |
+| AZ-IB-H | Standard_H16r | 16    | Intel(R) Xeon(R) CPU E5-2667 v3  | 3.2         | 112         | Yes      |
 | OL-NHT      | -             | 36    | Intel(R) Xeon(R) Gold 6154       | 3           | 375         | Yes      |
 
 ### Definitions
@@ -37,9 +37,11 @@ The ratio of the Performance Gain for a given number of nodes to the ideal speed
 
 Inverse total runtime for the task (in seconds).
 
-!!! Note "Important Notes"
-  1. We present quick estimates that are extracted based on a limited (1-3) number of runs. A more comprehensive study is needed to account for the results of the natural modulations such as the data center load and how the computing nodes are distributed in the data center at the time of benchmarking.
-  2. Readers may get better results by tuning the input parameters for the specific hardware and test case.
+### Important Notes
+    
+1. We present quick estimates that are extracted based on a limited (1-3) number of runs. A more comprehensive study is needed to account for the results of the natural modulations such as the data center load and how the computing nodes are distributed in the data center at the time of benchmarking.
+
+2. Readers may get better results by tuning the input parameters for the specific hardware and test case.
 
 ## Results
 
@@ -516,7 +518,7 @@ We use the below, one of our customer use cases to study the extent to which a G
 
 ##### Input Data
 
-The visual below demonstrates the model studied - Polysterene box with 418,402 total atoms. Input files are available upon request.
+The visual below demonstrates the model studied - a box with 418,402 total atoms. Input files are available upon request.
 
 <img src="/images-new/benchmarks/ol-benchmarks-gromacs-model.png" />
 
@@ -532,7 +534,7 @@ We benchmark the performance of the latest Oracle Cloud hardware with HPL, two V
 
 ## Links
 
-[^1]: [High-Performance Linpack, official website](http://www.netlib.org/benchmark/hpl/))
+[^1]: [High-Performance Linpack, official website](http://www.netlib.org/benchmark/hpl/)
 [^2]: [Top 500 supercomputers in the world, official website](https://www.top500.org/)
 [^3]: [Vienna Ab-initio Simulation Package, official website](https://www.vasp.at/)
 [^4]: [GROMACS, official website](http://www.gromacs.org/)
