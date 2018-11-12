@@ -36,6 +36,7 @@ markdown_extensions:
     - pymdownx.arithmatex           # Render Latex Formulas
     - pymdownx.details              # Allow admonition-type collapsible <details>
     - pymdownx.superfences          # Allow for code blocks "fencing"
+    # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
     - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
     - pymdownx.betterem             # Better bold/italic text
     - pymdownx.striphtml            # Strip html comments before processing
