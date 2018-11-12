@@ -30,14 +30,15 @@ markdown_extensions:
     - admonition
     - codehilite:
         linenums: true
-    - pymdownx.arithmatex
-    - pymdownx.details
-    - pymdownx.superfences
-    - pymdownx.extrarawhtml
-    - pymdownx.betterem
-    - pymdownx.striphtml
     - toc:
         permalink: true
+    # https://facelessuser.github.io/pymdown-extensions/
+    - pymdownx.arithmatex           # Render Latex Formulas
+    - pymdownx.details              # Allow admonition-type collapsible <details>
+    - pymdownx.superfences          # Allow for code blocks "fencing"
+    - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    - pymdownx.betterem             # Better bold/italic text
+    - pymdownx.striphtml            # Strip html comments before processing
 
 # https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
 # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
