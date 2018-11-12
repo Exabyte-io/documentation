@@ -3,6 +3,6 @@
 .idea
 .virtualenv
 tmp/
-docs/images*
+docs/images/*
 scripts/*.mp4
 scripts/*.gif
