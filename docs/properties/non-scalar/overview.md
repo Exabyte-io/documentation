@@ -1,11 +1,15 @@
-# Array Properties
+# Non-Scalar Properties
 
-Important array-like properties that can emerge from a Material computation are the [internal stress tensor](tensorial/stress-tensor.md) and the [inter-atomic forces](tensorial/atomic-forces.md). The former is computed in the form of a matrix, whereas the latter is presented as separate vectors. One vector exists for each atom present in the structure, describing the net force acting upon it due to the bonding interactions originating from all other atoms.
+The non-scalar properties which cannot be expressed as a singular numerical value occur most notably in the form of **Arrays** of numbers, including both **Vectors** and **Matrices**, and under the form of traceable **Dispersion Curves** which can be visualized graphically. We review these categories of non-scalar properties in the forthcoming sections linked below.
 
 # Dispersion Curves
 
-Examples of dispersion curves which are routinely encountered in materials science computations include those describing the [electronic bandstructure](dispersion/bandstructure.md) and [phonon lattice vibrations](dispersion/phonons.md) of the material. The [Density of States](dispersion/dos.md) pertaining to both of these dispersion properties can also be calculated and displayed graphically. 
+Examples of dispersion curves which are routinely encountered in materials science computations include those describing the [electronic bandstructure](bandstructure.md) and [phonon lattice vibrations](phonons.md) of the material. The [Density of States](dos.md) pertaining to both of these dispersion properties can also be calculated and displayed graphically. 
 
-# Structural Properties
+# Matrix Properties
 
-Descriptive Structural Properties pertaining to the individual [atoms](structural/atomic.md), to the [Bravais Lattice](structural/lattice.md), and to the overall [Crystal Structure](structural/final-structure.md) of the material under consideration are reviewed and described in their respective documentation pages. 
+An important Matrix-like property that can emerge from a Material computation is the [internal stress tensor](stress-tensor.md).
+
+# Vector Properties
+
+Vectors describe primarily those properties of the material related to its **structure**. For this reason, we have grouped such vector properties under three separate categories, in relation to each of the [Atomic](atomic.md), [Lattice](lattice.md) and [Crystal Structure](final-structure.md) aspects of the material's description. They are reviewed and described in their respective documentation pages. 

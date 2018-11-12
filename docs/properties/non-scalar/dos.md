@@ -1,12 +1,12 @@
-<!-- TODO: GM to revise content -->
-
 # Density of States
+
+The final results for the computed Density of States [[1](#links)] are also presented graphically in the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [Phonon](phonons.md) and [Bandstructure](bandstructure.md) dispersion calculations. 
+
+The typical appearance of such a Density of States plot for electronic bandstructures is shown below. Here, the possibility to print or download the graph in different image formats is offered under the top-right button.
 
 ![5 jobs results](/images/5_jobs_results.png "5 jobs results")
 
-A second graph displaying the final results for the computed electronic density of states [[1](#links)] is also presented. The possibility to print or download the graph in different image formats is again offered under the top-right button.
-
-In this graph, the total density of states is marked by the black line. Individual contributions are labelled with different colors, as explained in the legend below the graph. The Fermi level is again set by the red dashed line.
+In this graph, the total density of states is marked by the black line. Individual contributions are labelled with different colors, as explained in the legend below the graph. The [Fermi level](../scalar/energies.md#fermi-energy) is set by the vertical red dashed line.
 
 # Links
 

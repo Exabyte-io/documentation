@@ -18,6 +18,7 @@ extra:
         - /preload.js
 markdown_extensions:
     - admonition
+    - markdown.extensions.def_list
     - pymdownx.arithmatex
     - toc:
         permalink: true
@@ -375,14 +376,12 @@ pages:
         - Classification:                               properties/classification.md
         - Extractors:                                   properties/extractor.md
         - Refinement:                                   properties/refinement.md
-        - Data:                                         properties/data.md
         - Schemas & Examples:                           data-structured/schemas.md
         - User Interface:
             - Properties Explorer:                      properties/ui/explorer.md
             - Final Structure Viewer:                   properties/ui/viewer.md
         - Scalar:
             - Overview:                                 properties/scalar/overview.md
-            # Energies: Total Energy, Fermi Energy, Zero Point Energy, band-gap energy
             - Energies:                                 properties/scalar/energies.md
             - Pressure:                                 properties/scalar/pressure.md
             - Total Force:                              properties/scalar/total-force.md
@@ -393,13 +392,8 @@ pages:
             - Band Structure:                           properties/non-scalar/bandstructure.md
             - Phonons:                                  properties/non-scalar/phonons.md
             - Density of States:                        properties/non-scalar/dos.md
-            # The section below explains all of the Descriptive properties, in terms of their theoretical background
-            # Consider Moving Basis/lattice explanation from Materials Designer to here
-            # Atomic coordinates, Atomic forces, Basis
             - Atomic:                                   properties/non-scalar/atomic.md
-            # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
             - Lattice:                                  properties/non-scalar/lattice.md
-            # Explain how basis can be attached to lattice to create crystal structure
             - Crystal Structure:                        properties/non-scalar/final-structure.md
 
 
