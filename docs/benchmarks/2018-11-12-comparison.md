@@ -1,14 +1,18 @@
-# Oracle Benchmarks
+# 2018-11 Cloud-based Materials Modeling Benchmarks
 
 ## Overview
 
-The purpose of this study is to understand the suitability of the latest Oracle Cloud hardware for high-performance computing applications. In order to do so, we run multiple benchmarks: High-Performance Linpack (HPL[^1]), the benchmark that during the last two decades was employed to rank the top supercomputing systems on the global scale[^2], three application-specific cases for Vienna Ab-initio Simulation Package (VASP[^3]) and Gromacs[^4] to estimate the extent to which a calculation can be efficiently scaled, and, Intel MPI Benchmarks[^5] to compare the interconnect networks' bandwidth and latency.
+The purpose of this study is to understand the suitability of the high-performance computing hardware available from multiple cloud providers for running materials modeling and simulations. In order to do so, we run the following benchmarks: 
+
+- a general High-Performance Linpack (HPL[^1]), the benchmark employed to rank the world's best supercomputing systems [^2],
+- network latency and bandwidth benchmarks[^5] to compare the interconnect hardware, 
+- application-specific cases for Vienna Ab-initio Simulation Package (VASP[^3]) and GROMACS[^4] to estimate the extent to which a "real-world" calculation can be efficiently scaled, 
 
 ## Methodology
 
-We run the benchmarks with equivalent setups for the number of nodes (NODES) and cores per node (PPN) for all the cases studied in order to make a comparison. Notably, the hardware configuration is different with respect to the PPN, however. We calculate the Speedup and Speedup Ratio as defined below.
+In order to make a comparison, for all the cases studied we run the benchmarks with entirely equivalent setups for the number of nodes (NODES) and cores per node (PPN). The readers should note, however, that the hardware configurations differ with respect to the PPN. We calculate the Speedup and Speedup Ratio as defined below.
 
-## Hardware
+### Hardware
 
 We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). 
 
@@ -19,37 +23,37 @@ We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azur
 | AZ-IB-H[^8] | Standard_H16r | 16    | Intel(R) Xeon(R) CPU E5-2667 v3  | 3.2         | 112         | Yes      |
 | OL-NHT      | -             | 36    | Intel(R) Xeon(R) Gold 6154       | 3           | 375         | Yes      |
 
-## Definitions
+### Definitions
 
-### Performance Gain
+#### Performance Gain
 
 The ratio of performance for a given number of nodes to the performance for a single node.
 
-## Speedup Ratio
+#### Speedup Ratio
 
 The ratio of the Performance Gain for a given number of nodes to the ideal speedup.
 
-### Speedup
+#### Speedup
 
 Inverse total runtime for the task (in seconds).
 
 !!! Note "Important Notes"
-    
-    1. We present quick estimates that are extracted based on a limited (1-3) number of runs. A more comprehensive study is needed to account for the results of the natural modulations such as the data center load and how the computing nodes are distributed in the data center at the time of benchmarking.
-    
-    2. Readers may get better results by tuning the input parameters for the specific hardware and test case.
+  1. We present quick estimates that are extracted based on a limited (1-3) number of runs. A more comprehensive study is needed to account for the results of the natural modulations such as the data center load and how the computing nodes are distributed in the data center at the time of benchmarking.
+  2. Readers may get better results by tuning the input parameters for the specific hardware and test case.
 
-## HPL
+## Results
+
+### HPL
 
 We compare 3 cloud computing vendors as mentioned above. The following HPL configuration template is rendered with the parameters given in the table to generate the configuration and run the benchmark.
 
-<details>
+<details markdown="1">
   <summary>
     HPL.dat
   </summary> 
     
 ```text
-HPLinpack benchmark input file
+Linpack input file
 Innovative Computing Laboratory, University of Tennessee
 HPL.out      output file name (if any) 
 6            device out (6=stdout,7=stderr,file)
@@ -85,7 +89,7 @@ HPL.out      output file name (if any)
 </details>
 
 
-<details>
+<details markdown="1">
   <summary>
     Parameters
   </summary> 
@@ -96,14 +100,17 @@ HPL.out      output file name (if any)
 | OL-NHT     | 2     | 283776 | 192   | 8     | 9     |
 | OL-NHT     | 4     | 401280 | 192   | 12    | 12    |
 | OL-NHT     | 8     | 567552 | 192   | 16    | 18    |
+| - | - | - | - | - | - |
 | AZ-IB-H    | 1     | 109248 | 192   | 4     | 4     |
 | AZ-IB-H    | 2     | 154560 | 192   | 4     | 8     |
 | AZ-IB-H    | 4     | 218688 | 192   | 8     | 8     |
 | AZ-IB-H    | 8     | 309120 | 192   | 8     | 16    |
+| - | - | - | - | - | - |
 | AWS-NHT    | 1     | 80640  | 192   | 3     | 6     |
 | AWS-NHT    | 2     | 114048 | 192   | 6     | 6     |
 | AWS-NHT    | 4     | 161472 | 192   | 8     | 9     |
 | AWS-NHT    | 8     | 228288 | 192   | 12    | 12    |
+| - | - | - | - | - | - |
 | AWS-NHT-C5 | 1     | 121920 | 192   | 6     | 6     |
 | AWS-NHT-C5 | 2     | 172416 | 192   | 8     | 9     |
 | AWS-NHT-C5 | 4     | 244032 | 192   | 12    | 12    |
@@ -114,19 +121,21 @@ HPL.out      output file name (if any)
 
 ## Results
 
-### Speedup
+### HPL
+
+#### Speedup
 
 A comparison of the speedup ratios for all cloud vendors described above are presented. As it can be seen, Oracle and Microsoft Azure have better speedup ratios because of the low latency interconnect network that facilitates efficient scaling.
 
 <img src="/images/ol-benchmarks-speedup-ratio.png">
 
-### Performance Per Core
+#### Performance Per Core
 
 The following figure shows a comparative plot of the performance per core in giga-FLOPS for the previously described scenarios. Oracle and Microsoft Azure outperform AWS because of faster processors and the low latency interconnect network.
 
 <img src="/images/ol-benchmarks-performance-per-core.png">
 
-## VASP
+### VASP
 
 Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of default pseudo-potentials were employed for this study.
 
@@ -138,11 +147,11 @@ Two basic parallelization schemes were attempted:
 
 The number of cores per node (PPN) and the total number of nodes (NODES) were used to distinguish between parallelization levels.
 
-### VASP - Parallelization Over Electronic Bands
+#### Parallelization Over Electronic Bands
 
-#### Input Data
+##### Input Data
 
-<details>
+<details markdown="1">
   <summary>
     INCAR
   </summary> 
@@ -165,7 +174,7 @@ LPLANE = .TRUE.
 
 </details>
 
-<details>
+<details markdown="1">
   <summary>
     POSCAR: "Ba25 Bi15 O54" with a supercell containing 188 atoms
   </summary> 
@@ -372,7 +381,7 @@ direct
 </details>
 
 
-<details>
+<details markdown="1">
   <summary>
     KPOINTS
   </summary> 
@@ -387,15 +396,15 @@ Gamma
 
 </details>
 
-#### Results
+##### Outcomes
 
 <img src="/images/ol-benchmarks-vasp-elb-speedup.png" />
 
-### VASP - Parallelization Over KPOINTS
+#### Parallelization Over KPOINTS
 
-#### Input Data
+##### Input Data
 
-<details>
+<details markdown="1">
   <summary>
     INCAR
   </summary> 
@@ -424,7 +433,7 @@ SIGMA = 0.2
 </details>
 
 
-<details>
+<details markdown="1">
   <summary>
     POSCAR: "Li8 V8 Mo8" with a unit cell containing 24 atoms
   </summary> 
@@ -467,7 +476,7 @@ direct
 </details>
 
 
-<details>
+<details markdown="1">
   <summary>
     KPOINTS
   </summary> 
@@ -482,15 +491,13 @@ Gamma
 
 </details>
 
-#### Results
+##### Outcomes
 
 <img src="/images/ol-benchmarks-vasp-kpt-speedup.png" />
 
-## Network
+### Network Benchmarks
 
 The following shows the result of Intel MPI Benchmarks running on Amazon Web Service C5 instances, Azure H-series VMs and Oracle hardware. As it can be seen Oracle interconnect network is faster and has the lowest latency.
-
-### Results
 
 #### Latency
 
@@ -501,45 +508,37 @@ The following shows the result of Intel MPI Benchmarks running on Amazon Web Ser
 <img src="/images/ol-benchmarks-bandwidth.png" />
 
 
-## Gromacs
+### GROMACS
 
-We use the below, one of our customer use cases to study the extent to which a Gromacs calculation can be efficiently scaled. As it can be seen this particular use case is very well scaled.  
+We use the below, one of our customer use cases to study the extent to which a GROMACS calculation can be efficiently scaled. As it can be seen this particular use case is very well scaled.  
 
-### Input Data
+#### Polysterene
 
-!!! note "Input Data"
-    Input files will be available upon request.
+##### Input Data
 
-### Model    
+The visual below demonstrates the model studied - Polysterene box with 418,402 total atoms. Input files are available upon request.
 
 <img src="/images/ol-benchmarks-gromacs-model.png" />
 
-### Results
+##### Results
 
 <img src="/images/ol-benchmarks-gromacs-speedup.png" />
 
 
 ## Conclusion
 
-We benchmark the performance of the latest Oracle Cloud hardware with HPL, two VASP simulation cases, one Gromacs case and Intel MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
+We benchmark the performance of the latest Oracle Cloud hardware with HPL, two VASP simulation cases, one GROMACS case and Intel MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
 
 
 ## Links
 
-[^1]: High performance Linpack ([HPL](http://www.netlib.org/benchmark/hpl/))
-
-[^2]: [TOP500 Supercomputer Sites](https://www.top500.org/)
-
-[^3]: Vienna Ab-initio Simulation Package ([VASP](https://www.vasp.at/))
-
-[^4]: [Gromacs](http://www.gromacs.org/)
-
-[^5]: [Intel MPI Benchmarks](https://software.intel.com/en-us/articles/intel-mpi-benchmarks)
-
-[^6]: Remote Direct Memory Access ([RDMA](https://en.wikipedia.org/wiki/Remote_direct_memory_access))
-
-[^7]: Non-Hyperthreaded ([NHT](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html))
-
-[^8]: Azure [InfiniBand H-series](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-hpc) VMs
+[^1]: [High-Performance Linpack, official website](http://www.netlib.org/benchmark/hpl/))
+[^2]: [Top 500 supercomputers in the world, official website](https://www.top500.org/)
+[^3]: [Vienna Ab-initio Simulation Package, official website](https://www.vasp.at/)
+[^4]: [GROMACS, official website](http://www.gromacs.org/)
+[^5]: [MPI Benchmarks, Documentation](https://software.intel.com/en-us/articles/intel-mpi-benchmarks)
+[^6]: [Remote Direct Memory Access, Wikipedia article](https://en.wikipedia.org/wiki/Remote_direct_memory_access)
+[^7]: [Intel hyper-threading technology overview, website](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html)
+[^8]: [Microsoft Azure H-series Virtual Machines, official documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-hpc)
 
 ///FOOTNOTES GO HERE///
