@@ -187,4 +187,4 @@ Please note the `markdown=1` tag, without it the content of the `<details>` tag 
 
 ## Note: header levels
 
-After adopting "Material" mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header.
+After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header.
