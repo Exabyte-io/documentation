@@ -127,13 +127,13 @@ HPL.out      output file name (if any)
 
 A comparison of the speedup ratios for all cloud vendors described above are presented. As it can be seen, Oracle and Microsoft Azure have better speedup ratios because of the low latency interconnect network that facilitates efficient scaling.
 
-<img src="/images/ol-benchmarks-speedup-ratio.png">
+<img src="/images-new/benchmarks/ol-benchmarks-speedup-ratio.png">
 
 #### Performance Per Core
 
 The following figure shows a comparative plot of the performance per core in giga-FLOPS for the previously described scenarios. Oracle and Microsoft Azure outperform AWS because of faster processors and the low latency interconnect network.
 
-<img src="/images/ol-benchmarks-performance-per-core.png">
+<img src="/images-new/benchmarks/ol-benchmarks-performance-per-core.png">
 
 ### VASP
 
@@ -398,7 +398,7 @@ Gamma
 
 ##### Outcomes
 
-<img src="/images/ol-benchmarks-vasp-elb-speedup.png" />
+<img src="/images-new/benchmarks/ol-benchmarks-vasp-elb-speedup.png" />
 
 #### Parallelization Over KPOINTS
 
@@ -493,7 +493,7 @@ Gamma
 
 ##### Outcomes
 
-<img src="/images/ol-benchmarks-vasp-kpt-speedup.png" />
+<img src="/images-new/benchmarks/ol-benchmarks-vasp-kpt-speedup.png" />
 
 ### Network Benchmarks
 
@@ -501,11 +501,11 @@ The following shows the result of Intel MPI Benchmarks running on Amazon Web Ser
 
 #### Latency
 
-<img src="/images/ol-benchmarks-latency.png" />
+<img src="/images-new/benchmarks/ol-benchmarks-latency.png" />
 
 #### Bandwidth
 
-<img src="/images/ol-benchmarks-bandwidth.png" />
+<img src="/images-new/benchmarks/ol-benchmarks-bandwidth.png" />
 
 
 ### GROMACS
@@ -518,11 +518,11 @@ We use the below, one of our customer use cases to study the extent to which a G
 
 The visual below demonstrates the model studied - Polysterene box with 418,402 total atoms. Input files are available upon request.
 
-<img src="/images/ol-benchmarks-gromacs-model.png" />
+<img src="/images-new/benchmarks/ol-benchmarks-gromacs-model.png" />
 
 ##### Results
 
-<img src="/images/ol-benchmarks-gromacs-speedup.png" />
+<img src="/images-new/benchmarks/ol-benchmarks-gromacs-speedup.png" />
 
 
 ## Conclusion
