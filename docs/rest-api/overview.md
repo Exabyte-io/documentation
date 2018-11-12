@@ -1,8 +1,10 @@
-# Exabyte RESTful API
+# RESTful API
 
-Exabyte [RESTful](#Links) API (or REST-API) is a software architectural style that allows to access and manipulate textual representations of Exabyte web resources by using a uniform and predefined set of stateless operations. In other words, REST-API provides programmatic access to data and functionality for data scientists and engineers, and anyone who prefers coding to the user interface.
+[RESTful](#links) API (or REST-API, or Representational State Transfer Application Programming Interface) is a layer allows to access and manipulate textual representation of the web resources (eg. [Entities](../entities-general/overview.md)) by using a uniform and predefined set of stateless operations. In other words, REST-API provides **programmatic** access to data and functionality for data scientists and engineers, and anyone else who prefers coding to the user interface.
 
-In order to use REST-API one should form authenticated queries through a RESTful API client. Below we refers the readers to sections explaining authentication parameters, requests and responses structure, endpoints, REST-API client and examples.
+## Operation
+
+The recommended way use the API is to form authenticated queries through a client. Below we refers the readers to sections explaining authentication parameters, requests and response structure, endpoints, API client and examples.
 
 ## Authentication
 
@@ -14,16 +16,16 @@ In order to use REST-API one should form authenticated queries through a RESTful
 
 ## Endpoints
 
-[Endpoints](endpoints.md) section contains information about different API versions and how to access endpoints under a particular version.
+[Endpoints](endpoints.md) section contains information about different API versions and how to access endpoints under a particular one.
 
-## Exabyte API Client
+## API Client
 
-[Exabyte API client](exabyte-api-client.md) section explains how to access REST-API via Python.
+[API client](exabyte-api-client.md) section explains how to access REST-API via Python.
 
-## Exabyte API Examples
+## API Examples
 
-[Exabyte API examples](exabyte-api-examples.md) section contains Jupyter Notebooks to perform most-common tasks via REST-API.
+[API examples](exabyte-api-examples.md) section contains examples of performing the most common tasks.
 
-# Links
+## Links
 
-- [RESTful](https://en.wikipedia.org/wiki/Representational_state_transfer)
+- [Representational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
