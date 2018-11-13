@@ -16,12 +16,12 @@ In order to make a comparison, for all the cases studied we run the benchmarks w
 
 We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). "NHT" refers to the Non-hyperthreaded[^7] scenario. "IB-H" refers to infiniband-interconnected H-series type virtual machines [^8]. The hardware specifications are listed below (we refer to physical cores as "Cores"):
 
-| Case        | Type          | Cores | CPU Family                       | Freq. (GHz) | Memory (GB) | RDMA[^6] |
-| :---:       | :---:         | :---: | :---:                            | :---:       | :---:       | :---:    |
-| AWS-NHT | c4.8xlarge    | 18    | Intel(R) Xeon(R) CPU E5-2666 v3  | 2.9         | 60          | No       |
-| AWS-NHT-C5  | c5.18xlarge   | 36    | Intel(R) Xeon(R) Platinum 8124M3 | 3           | 144         | No       |
-| AZ-IB-H | Standard_H16r | 16    | Intel(R) Xeon(R) CPU E5-2667 v3  | 3.2         | 112         | Yes      |
-| OL-NHT      | -             | 36    | Intel(R) Xeon(R) Gold 6154       | 3           | 375         | Yes      |
+| Case       | Type          | Cores | CPU Family                       | Freq. (GHz) | Memory (GB) | RDMA[^6] |
+| :---:      | :---:         | :---: | :---:                            | :---:       | :---:       | :---:    |
+| AWS-NHT    | c4.8xlarge    | 18    | Intel(R) Xeon(R) CPU E5-2666 v3  | 2.9         | 60          | No       |
+| AWS-NHT-C5 | c5.18xlarge   | 36    | Intel(R) Xeon(R) Platinum 8124M3 | 3           | 144         | No       |
+| AZ-IB-H    | Standard_H16r | 16    | Intel(R) Xeon(R) CPU E5-2667 v3  | 3.2         | 112         | Yes      |
+| OL-NHT     | BM.HPC2.36    | 36    | Intel(R) Xeon(R) Gold 6154       | 3           | 384         | Yes      |
 
 ### Definitions
 
@@ -102,17 +102,17 @@ HPL.out      output file name (if any)
 | OL-NHT     | 2     | 283776 | 192   | 8     | 9     |
 | OL-NHT     | 4     | 401280 | 192   | 12    | 12    |
 | OL-NHT     | 8     | 567552 | 192   | 16    | 18    |
-| - | - | - | - | - | - |
+| -          | -     | -      | -     | -     | -     |
 | AZ-IB-H    | 1     | 109248 | 192   | 4     | 4     |
 | AZ-IB-H    | 2     | 154560 | 192   | 4     | 8     |
 | AZ-IB-H    | 4     | 218688 | 192   | 8     | 8     |
 | AZ-IB-H    | 8     | 309120 | 192   | 8     | 16    |
-| - | - | - | - | - | - |
+| -          | -     | -      | -     | -     | -     |
 | AWS-NHT    | 1     | 80640  | 192   | 3     | 6     |
 | AWS-NHT    | 2     | 114048 | 192   | 6     | 6     |
 | AWS-NHT    | 4     | 161472 | 192   | 8     | 9     |
 | AWS-NHT    | 8     | 228288 | 192   | 12    | 12    |
-| - | - | - | - | - | - |
+| -          | -     | -      | -     | -     | -     |
 | AWS-NHT-C5 | 1     | 121920 | 192   | 6     | 6     |
 | AWS-NHT-C5 | 2     | 172416 | 192   | 8     | 9     |
 | AWS-NHT-C5 | 4     | 244032 | 192   | 12    | 12    |
