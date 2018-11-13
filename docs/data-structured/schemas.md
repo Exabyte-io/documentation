@@ -10,7 +10,7 @@ We refer the reader to the documentation dedicated to explaining the **Exabyte D
 
 Once the documentation has been accessed, the following interface will be presented to the user as demonstrated in the example below. Here, each available property can be selected on the left-hand menu. Its corresponding schema ie explained in the center, with examples displayed on the right-hand side of the page. 
 
-<a href="http://exabyte.io:4567/" target="_blank" rel="nofollow"><img src="/images/exabyte-data-convention.png" /></a>
+<a href="http://exabyte.io:4567/" target="_blank" rel="nofollow"><img src="/images/properties/exabyte-data-convention.png" /></a>
 
 # Links
 

@@ -372,12 +372,16 @@ pages:
     - Properties:
         - Overview:                                     properties/overview.md
         - List of Properties:                           properties/list.md
-        - Classification:                               properties/classification.md
         - Extractors:                                   properties/extractor.md
         - Refinement:                                   properties/refinement.md
         # GATEWAY to MATERIALS-DATA
         # Note that we have plans to add user-defined schemas for properties
+        - Data:                                         properties/data.md
         - Schemas & Examples:                           data-structured/schemas.md
+        - Classification:
+            - General:                                  properties/classification.md
+            - Machine Learning:                         properties/machine-learning.md
+            - Materials:                                properties/materials-classification.md
         - User Interface:
             # Properties Explorer is located under Materials Viewer
             - Properties Explorer:                      properties/ui/explorer.md
