@@ -1,3 +1,4 @@
 mkdocs==0.16.2
 Markdown==2.6.11
 pymdown-extensions==4.12
+git+git@github.com:Exabyte-io/markdown-include.git@6d4bd616d93e156f298b9e8e54a626f086352424#egg=markdown–include
