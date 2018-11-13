@@ -22,4 +22,4 @@ Information about [command-line](/cli/login.md) type usage is available under th
 
 # Actions
 
-Lastly, setting compute parameters from the web application is explained [here](setting-parameters.md).
+Lastly, setting compute parameters from the web application is explained [here](setup.md).

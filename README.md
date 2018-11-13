@@ -152,3 +152,33 @@ is rendered into:
     ```
 
     we use a third-party plugin, embedded into the source of this repository ("giffer") in order to make gif images clickable like videos.
+
+9. Including a clickable image map:
+
+    <img src="/images/workflow-designer-initial.png" usemap="#mapname">
+
+    <map name="mapname">
+        <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar-items/">
+        <area shape="rect" coords="190,91,754,512" href="/workflow-designer/source-editor-intro/">
+        <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu-actions">
+    </map>
+
+    see the source for more explanation
+
+    ```markdown
+    <img src="/images/workflow-designer-initial.png" usemap="#mapname">
+
+    <map name="mapname">
+        <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar-items/">
+        <area shape="rect" coords="190,91,754,512" href="/workflow-designer/source-editor-intro/">
+        <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu-actions">
+    </map>
+    
+    <!-- 
+        coords="x1,y1,x2,y2"
+        x1=top left X coordinate
+        y1=top left Y coordinate
+        x2=bottom right X coordinate
+        y2=bottom right Y coordinate
+    -->
+    ```
