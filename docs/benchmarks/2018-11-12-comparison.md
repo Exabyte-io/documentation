@@ -514,7 +514,7 @@ The following shows the result of Intel MPI Benchmarks running on Amazon Web Ser
 
 We use the below, one of our customer use cases to study the extent to which a GROMACS calculation can be efficiently scaled. As it can be seen this particular use case is very well scaled.  
 
-#### Polysterene
+#### Polystyrene
 
 ##### Input Data
 
