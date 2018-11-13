@@ -17,8 +17,6 @@ extra:
         - /preload_hotjar.js
         - /preload.js
 markdown_extensions:
-    # {!schema/material/properties/primary/structural/lattice.json!}
-    # {!example/material/properties/primary/structural/lattice.json!}
     - markdown_include.include:
         base_path: esse
     - admonition
