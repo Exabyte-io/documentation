@@ -28,22 +28,36 @@ On many occasions terms "Features", "Fingerprints", "Targets" are used for mater
 
 Exact set of Materials properties that have to be supplied to and can be extracted as a result of a Workflow vary based on the type of Workflow and models/methods included therein.
 
-## DFT
+## Results
 
-Below we provide example (characteristic) properties extracted by the default workflows using Density Functional Theory.
+Below we provide example properties extracted by the using [Density Functional Theory](/models/dft) (DFT) as simulation results:
 
-| Property       | Overview |
-|:---------------|:------------|
-| Total Energy   | The ground state energy (free energy) of the system |
-| Fermi Energy   | The highest energy level occupied by electrons in a system |
-| Fermi Surface  | Surface of constant energy (Fermi) in reciprocal space |
-| Atomic forces  | Force exerted on each atom by its surrounding |
-| Stress tensor  | 3x3 matrix expressing stresses in x, y and z dimensions |
-| Pressure       | Scalar average pressure |
-| Charge density | Spatial function of charge distribution |
-| Band Structure | Electronic Band Structure |
-| Band Gap       | Electronic Band Gap (direct / indirect) |
+| Property          | Overview    |
+|:----------------- |:------------|
+| Total Energy      | The ground state energy (free energy) of the system |
+| Fermi Energy      | The highest energy level occupied by electrons in a system |
+| Fermi Surface     | Surface of constant energy (Fermi) in reciprocal space |
+| Atomic forces     | Force exerted on each atom by its surrounding |
+| Stress tensor     | 3x3 matrix expressing stresses in x, y and z dimensions |
+| Pressure          | Scalar average pressure |
+| Charge density    | Spatial function of charge distribution |
+| Band Structure    | Electronic Band Structure |
+| Band Gap          | Electronic Band Gap (direct / indirect) |
 | Density of States | Electronic Density of States (including partial contributions) |
 | Zero Point Energy | Energy of the lowest vibrational level wrt to vacuum |
+| Final Structure   |  Visualization of the final computed crystal structure  |
+| Total Energy Contributions | Ewald, Exchange correlation and	Hartree contributions to the total energy |
+| Magnetic Moments  | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
+| Total Force       | Sum of the atomic forces |
 
-> NOTE: At the moment we enable data analytics and comparison for "Band Gap" and "Pressure" only.
+## Monitors
+
+These are the data points that can be monitored during the course of a DFT calculation:
+
+| Output information | Overview |
+|:---------------   |:------------|
+| Standard Output   | Standard output of an execution unit in UNIX sense |
+| Ionic Convergence | Convergence information on ionic moves in relaxation or molecular dynamics calculations |
+| Electronic Convergence  | Convergence information on self-consistent electronic calculation steps |
+
+

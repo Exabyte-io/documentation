@@ -8,6 +8,7 @@ extra_javascript:
     # TODO: migrate away from parse
     # - https://www.parsecdn.com/js/parse-1.2.16.min.js
     - extra.js
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 site_favicon: /img/favicon.ico
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 extra:
@@ -17,6 +18,10 @@ extra:
         - /preload.js
 markdown_extensions:
     - admonition
+    - pymdownx.arithmatex
+    # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
+    - footnotes:
+        PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
 pages:
@@ -25,7 +30,6 @@ pages:
 
     - Getting Started:
         - Run first simulation:     getting-started/run-first-simulation.md
-        - Upload/Import Materials:  materials/upload-and-import.md
         - User interface overview:  getting-started/ui-overview.md
         - Content highlights:       getting-started/content-highlights.md
         - CLI job submission:       tutorials/cli-job.md
@@ -35,33 +39,126 @@ pages:
         - Structured data:          data/structured.md
         - Non-structured data:      data/non-structured.md
 
+    - General Aspects:
+        - Overview:                 general/overview.md
+        - Actions:
+            - Search:               general/actions/search.md
+            - Open:                 general/actions/open-edit.md
+            - Clone:                general/actions/clone.md
+            - Delete:               general/actions/delete.md
+            - Add metadata:         general/actions/metadata.md
+            - Change name:          general/actions/name.md
+            - Set default:          general/actions/set-default.md
+
     - Materials:
         - Overview:                       materials/overview.md
         - Data:                           materials/data.md
         - Properties:                     materials/properties.md
         - Actions:
-            - Creating structures:        materials/creating-structures.md
-            - Upload & Import:            materials/upload-and-import.md
-            - Search & Compare:           materials/search-compare.md
-            - Combinatorial sets:         materials/combinatorial-sets.md
-            - Other:                      materials/other-actions.md
+            - Import:                     materials/actions/import.md
+            - Upload:                     materials/actions/upload.md
+            - Copy from shared bank:      materials/actions/bank.md
+            - Advanced Search:            materials/actions/advanced-search.md
+            - Search & Compare:           materials/actions/search-compare.md
+            - Set default:                materials/actions/set-default.md
+            - Select During Job Creation: materials/actions/selection.md
+
+    - Materials Designer:
+        - Overview:                     materials-designer/overview.md
+        - Header Menu:
+            - Overview:                 materials-designer/header-menu/header-menu-intro.md
+            - Input/Output:             materials-designer/header-menu/input-output.md
+            - "Input/Output > Import":  materials-designer/header-menu/input-output/import.md
+            - "Input/Output > Export":  materials-designer/header-menu/input-output/export.md
+            - "Input/Output > Save":    materials-designer/header-menu/input-output/save.md
+            - Edit:                     materials-designer/header-menu/edit.md
+            - View:                     materials-designer/header-menu/view.md
+            - Advanced:                 materials-designer/header-menu/advanced.md
+            - "Advanced > Supercell":   materials-designer/header-menu/advanced/supercell.md
+            - "Advanced > Combinatorial Set":  materials-designer/header-menu/advanced/combinatorial-set.md
+            - "Advanced > Surface / Slab":     materials-designer/header-menu/advanced/surface-slab.md
+            - Help:                     materials-designer/header-menu/help.md
+        - Sidebar:
+            - Items List:               materials-designer/sidebar-items.md
+        - Source Editor:
+            - Overview:                 materials-designer/source-editor.md
+            - Lattice Editor:           materials-designer/source-editor/lattice.md
+            - Basis Editor:             materials-designer/source-editor/basis.md
+        - 3D Editor:
+            - Overview:                      materials-designer/3d-editor.md
+            - View Actions Panel:            materials-designer/3d-editor/view.md
+            - Edit Actions Panel:            materials-designer/3d-editor/edit.md
+            - Export Actions Panel:          materials-designer/3d-editor/export.md
 
     - Workflows:
         - Overview:                       workflows/overview.md
         - Data:
-            - Workflows:                  workflows/data.md
-            - Subworkflows:               workflows/subworkflows.md
-            - Units:                      workflows/units.md
-            - Jobs:                       jobs.md
+            - Workflows:                  workflows/data/data.md
+            - Subworkflows:               workflows/data/subworkflows.md
+            - Units:                      workflows/data/units.md
+            - Templates:                  workflows/data/templates.md
+            - Jobs:                       workflows/data/jobs.md
+            - Maps:                       workflows/data/maps.md
         - Actions:
-            - Creating workflows:         workflows/creating-workflows.md
-            - Using workflows:            workflows/using-workflows.md
-            - Adding Convergence:         workflows/convergence-algorithms.md
-            - Adding Relaxation:          workflows/structural-relaxation.md
-        # TODO: revise or remove
+            - Overview:                   workflows/actions/overview.md
+            - Create:                     workflows/actions/create.md
+            - Update:                     workflows/actions/update.md
+            - Copy from shared bank:      workflows/actions/bank.md
+            - Set default:                workflows/actions/set-default.md
+            #- Using workflows:            workflows/using-workflows.md
+        - Add-ons:
+            - K-point Convergence:         workflows/addons/convergence-algorithms.md
+            - Structural Relaxation:       workflows/addons/structural-relaxation.md
+
+    - Models:
+        - Overview:                                 models/overview.md
+        - Auxiliary Concepts:
+            - Reciprocal space:                     models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:          models/auxiliary-concepts/reciprocal-space/sampling.md # kgrid, qgrid, igrid,
+            - Reciprocal space > paths:             models/auxiliary-concepts/reciprocal-space/paths.md # kpath, qpath, ipath
+        - Density Functional Theory:
+            - Overview:                             models/dft/overview.md
+            - References:                           models/dft/references.md
+
+
+    - Methods:
+        - Overview:                           methods/overview.md
+        - Pseudopotential:
+            - Overview:                       methods/pseudopotential/overview.md
+            - Parameters:                     methods/pseudopotential/parameters.md
+            - Actions:                        methods/pseudopotential/actions.md
+
+    - Applications:
+        - Overview:                     applications/overview.md
+        - Quantum ESPRESSO:             applications/quantum-espresso.md
+        - VASP:                         applications/vasp.md
+
+# TODO: remove the below when finished with Workflow Designer
 #        - Density Functional Theory:    workflows/density-functional-theory.md
 #        - Example simulations:          workflows/example-simulations.md
 #        - Advanced Properties:          workflows/advanced-characteristics.md
+
+
+
+    - Workflow Designer:
+        - Overview:                          workflow-designer/general-overview.md
+        - Header Menu:
+            - Overview:                      workflow-designer/header-menu.md
+        - Sidebar:
+            - Items List:                    workflow-designer/sidebar.md
+        - Subworkflow Editor:
+            - Introduction:                     workflow-designer/subworkflow-editor/intro.md
+            - Actions Menu:                     workflow-designer/subworkflow-editor/actions-menu.md
+            - Tabs:                             workflow-designer/subworkflow-editor/tabs-general.md
+            - Tabs > Overview:                  workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Important Settings:        workflow-designer/subworkflow-editor/important-settings.md
+            - Tabs > Detailed View:             workflow-designer/subworkflow-editor/detailed-view.md
+            - Tabs > Compute:                   workflow-designer/subworkflow-editor/compute.md
+            - Units Flowchart:                  workflow-designer/subworkflow-editor/units-flowchart.md
+        - Unit Editor:
+            - Overview:                         workflow-designer/unit-editor.md
+            - Input Templates:                  workflow-designer/unit-editor/input-templates.md
+
 
     - Compute:
         - Overview:                 compute/overview.md
@@ -69,8 +166,9 @@ pages:
         - Connection Options:       compute/connection-options.md
         - Levels & Queues:          compute/levels-queues.md
         - Hardware:                 compute/hardware.md
+        - Setup:                    compute/setup.md
         - Actions:
-            - Setting Parameters:   compute/setting-parameters.md
+            - Set Parameters:       compute/setup.md
         - Command Line Interface:
             - Login:                cli/login.md
             - Accounting:           cli/accounting.md
@@ -161,6 +259,7 @@ pages:
         - Distributed Memory Runs:       benchmarks/distributed-memory.md
         - Vendor Comparison:             benchmarks/vendor-comparison.md
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
+        - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
 
     - Other:
         - FAQ:                  other/faq.md

@@ -1,4 +1,4 @@
-<!-- by MH & TB -->
+<!-- TODO: recycle or remove on cleanup -->
 
 This page contains explanation about the characteristic properties of materials and the corresponding simulation input parameters.
 
