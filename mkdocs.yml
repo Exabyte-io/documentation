@@ -19,6 +19,9 @@ extra:
 markdown_extensions:
     - admonition
     - pymdownx.arithmatex
+    # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
+    - footnotes:
+          PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
 pages:
@@ -617,6 +620,7 @@ pages:
         - Distributed Memory Runs:                      benchmarks/distributed-memory.md
         - Vendor Comparison:                            benchmarks/vendor-comparison.md
         - High-Performance Linpack:                     benchmarks/hpl-benchmark.md
+        - 2018-11 HPL VASP GROMACS:                     benchmarks/2018-11-12-comparison.md
 
 
 # LEGAL
