@@ -1,0 +1,70 @@
+# Materials Properties Classification
+
+We further classify Materials Properties according to the possible conventions presented in the table below, in addition to those outlined in the [general explanation](classification.md). These classification schemes are reviewed in turn in the ensuing sections.
+
+| Materials Properties by origin | Materials Properties by domain |
+|:------------------------------:|:------------------------------:|
+| Elemental                        | Chemical                     |
+| Primary                          | Electrical                   |
+| Compound                         | Electronic                   |
+| Custom                           | Magnetic                     |
+|                                  | Mechanical                   |
+|                                  | Optical                      |
+|                                  | Thermal                      |
+|                                  | Thermodynamic                |
+|                                  | Vibrational                  |
+|                                  | Other                        |
+
+## By origin
+
+We further make the following sub-categorization for Materials Properties, following the Exabyte Data Convention.
+
+- **elemental**: entirely defined by pure elements and inherited by compounds without modification (eg. electronegativity, atomic weight). 
+- **primary**: directly available properties specific to material (can be of all types, for example characteristic or descriptive).
+    - **structural**: we separate structural properties as the most fundamental group.
+- **compound**: combined properties defined through others, eg. *(property 1 + property 2) / 2*, *Log (property 1 - property 2)*.
+- **custom**: user-defined properties (eg. from imported/uploaded data). 
+
+## By domain
+
+The following example domains of materials properties can be considered (in alphabetical order).
+
+- Chemical: 
+    - reaction barrier height
+    - diffusion barrier height
+- Electrical: 
+    - resistivity
+    - i-v curve
+    - dielectric matrix
+    - electric susceptibility
+- Electronic: 
+    - band gap(s)
+    - band structure
+    - density of states
+    - charge density map
+    - fermi surface
+    - HOMO-LUMO gap
+- Magnetic:
+    - magnetic susceptibility
+    - magnetic moment
+- Mechanical:
+    - hardness
+    - bulk modulus
+    - shear modulus
+    - poisson ratio
+- Optical:
+    - absorption spectra
+- Thermal:
+    - thermopower
+    - heat capacity
+- Thermodynamic:
+    - formation energy
+    - melting temperature
+    - superconducting transition temperature
+- Vibrational:
+    - zero point energy
+    - phonon dispersions
+    - phonon density of states
+    - electron-phonon coupling
+- Other:
+    - other properties that do not fit the above classification 

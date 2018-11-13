@@ -1,6 +1,6 @@
 # List of Properties
 
-Below we provide a list of properties that can be [extracted](extractor.md) on our platform.  
+Below we provide a list of properties that can be [extracted](extractor.md) on our platform. The reader can click on each entry to be redirected to the relevant documentation explanation.
 
 | Property          | Overview    |
 |:----------------- |:------------|

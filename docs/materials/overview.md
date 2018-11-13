@@ -1,6 +1,6 @@
 # Materials
 
-This section contains information about how we define, organize, store and interact with materials data and the corresponding properties.
+This section contains information about how we define, organize, store and interact with materials data and the corresponding properties. In a broad sense we consider Material to be a physical (chemical, biological) system(s) under investigation.
 
 # User Interface
 
