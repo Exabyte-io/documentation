@@ -2,14 +2,14 @@
 
 Properties can be classified according to different criteria. We review such classification schemes separately under each of the specific contexts outlined below.
 
-## General
+## [General](general.md)
 
 Properties common to both [Materials](../../materials/overview.md) and [Workflows](../../workflows/overview.md) can be classified according to the definitions contained [in this page](general.md).
 
-## Materials 
+## [Materials](materials.md)
 
-Materials properties are the object of a [separate treatment](materials.md).
+Materials properties are the object of a separate treatment as explained [here](materials.md).
 
-## Machine Learning
+## [Machine Learning](machine-learning.md)
 
-Some additional specific classification terminology can be introduced when discussing Machine Learning, complementing the more general criteria mentioned above. 
+Some additional specific classification terminology can be introduced when discussing Machine Learning, as explained [in this section](machine-learning.md). 

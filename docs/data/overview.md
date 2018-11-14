@@ -1,6 +1,6 @@
 # Data
 
-We introduce here the following important concepts which pertain to the **Data** in our platform.
+In the present section we introduce the following concepts related to the **Data** in our platform.
 
 ## Classification
 

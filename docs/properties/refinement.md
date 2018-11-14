@@ -1,6 +1,6 @@
 # Refinement of Computed Properties
 
-The computed **raw properties** of Materials collected by the [Extractor](extractor.md) may subsequently need to be **refined** and **classified**, for a better appreciation of their **physical significance** and understanding of their **numerical accuracy**. This can help to make a definite assessment of their validity, and a comparison with other similar properties previously stored in the database. It also makes the results of simulations presentable and understandable for the user.
+The computed [Raw properties](classification/general.md) of Materials collected by the [Extractor](extractor.md) may subsequently need to be **refined** for a better appreciation of their **physical significance** and understanding of their **numerical accuracy**. This can help to make a definite assessment of their validity, and a comparison with other similar properties previously stored in the database. It also makes the results of simulations presentable and understandable for the user.
 
 ## Visualization of Refinement Stages 
 
@@ -28,7 +28,7 @@ The [band gap](non-scalar/bandstructure.md) is instead considered a refined prop
 
 ## Best Properties
 
-The property classified as "Best" is defined as the computation of a given refined material property which has achieved the best **numerical precision**. The comparison is made with all other computations for that particular property performed across the Exabyte platform by all users combined.
+The property classified as "Best" is defined as the computation of a given refined material property which has achieved the best **numerical precision**. The comparison is made with all other computations for that particular property performed across the Exabyte platform per user and by all users combined.
 
 A description of how we estimate the precision of properties can be found [in this page](../methods/data.md).  
 

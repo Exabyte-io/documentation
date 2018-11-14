@@ -48,7 +48,7 @@ The reader is referred to other documentation pages for aspects that might perta
 | createdAt / updatedAt  | Date and Time Information  | Information about the date and time at which the entity was first created / updated.  |
 | tags | Descriptive Metadata  | See dedicated section below for further explanations. |
 
-## Owner/Creator Keyword
+## Owner/Creator
 
 | Keyword    |  Short Description      | Details        | 
 | :-------- |:----------- |:------------- |
