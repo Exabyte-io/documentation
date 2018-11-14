@@ -504,7 +504,6 @@ a.toctree-l4 {
  *                  TABBED FENCING
  * --------------------------------------------------------- */
 
-
 .superfences-tabs {
     display: flex;
     position: relative;
@@ -544,4 +543,15 @@ a.toctree-l4 {
 
 .superfences-tabs input:nth-child(n+1):checked + label + .superfences-content {
     display: block;
+}
+
+.badge.badge-property {
+    background-color: #e5e5e5;
+    color: black;
+    border: 1px solid black;
+}
+
+.badge.badge-property-inverse {
+    background-color: black;
+    color: white;
 }
