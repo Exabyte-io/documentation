@@ -20,6 +20,9 @@ markdown_extensions:
     - admonition
     - pymdownx.arithmatex
     - pymdownx.superfences
+    # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
+    - footnotes:
+        PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
 pages:
@@ -648,6 +651,12 @@ pages:
         - Account Registration:                         other/registration.md
 
 
+    - Benchmarks:
+        - High Throughput Screening:     benchmarks/high-throughput-screening.md
+        - Distributed Memory Runs:       benchmarks/distributed-memory.md
+        - Vendor Comparison:             benchmarks/vendor-comparison.md
+        - High-Performance Linpack:      benchmarks/hpl-benchmark.md
+        - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
