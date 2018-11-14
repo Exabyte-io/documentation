@@ -1,12 +1,12 @@
 # Properties Data
 
-We make use of the "Exabyte Data Convention", introduced [in this page](../../data-structured/convention.md), to structure the information related to properties using the JSON formalism.
+We make use of the data convention, introduced [in this page](../../data-structured/convention.md), to organize the information related to properties.
 
-## JSON Schemas and Representations
+## JSON Schemas and Examples
 
-We provide below an example of [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the documentation linked in Refs. [[1](#links)] and [[2](#links)] for an explanation of the keywords included here. 
+We provide below an example of a [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the documentation in Refs. [[1](#links)] and [[2](#links)] for the explanation of the primitive types and schema keywords. 
 
-Attached as a separate tab is also an example of [total energy](../scalar/energies.md) JSON representation from a calculation, which can be validated by this schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
+Also listed below, is an example of a JSON representation of the [total energy](../scalar/energies.md), which can validated by the schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
 
 ```tab="Schema"
 {
@@ -63,16 +63,13 @@ Attached as a separate tab is also an example of [total energy](../scalar/energi
 
 ## Primitive Schema Types
 
-Primitive schema types are defined as parent schemas that are used for constructing the JSON representations of materials properties. Primitive types are abstract and do not have physical meaning, but can hold the properties data. 
-
-We provide a list of available primitive schema types [in this page](primitive.md).
+In addition to the default primitive types for JSON Schemas, we construct additional types types used for constructing the representations of numeric properties specifically. Primitive types are abstract and do not have physical meaning, but can hold the data. We provide a list of available primitive schema types [in this page](primitive.md).
 
 ## List of Schemas
 
-[In this section](list.md), we offer a full list of schemas and example representations relevant for properties, which constitute a subset of those available under the general [Exabyte Data Convention](../../data-structured/convention.md).
+[In this section](list.md), we offer a full list of schemas and examples relevant for properties.
 
 ## Links
 
 1. [JSON Schema Core Documentation, Website](https://json-schema.org/latest/json-schema-core.html)
-
 2. [JSON Schema Validation Documentation, Website](https://json-schema.org/latest/json-schema-validation.html)

@@ -10,9 +10,9 @@ This section contains information about the general policies we use for the hand
 !!!note "Example structured and unstructured data"
     Unstructured data generated during calculation first resides on disk. Files containing the information can further be processed as explained in [this section](../properties/extractor.md), and further converted to a structured JSON-based format inside our platform. 
 
-## By domain
+## By relation to Entities
 
-We identify the domain of the data as follows:
+We identify the relation of the data as follows:
 
 - **materials**: information uniquely associated with a certain [material](../materials/overview.md).
 - **workflows**: information about a computational [Workflow](../workflows/overview.md) routine used to extract the data.

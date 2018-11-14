@@ -1,8 +1,8 @@
 # Materials Properties Classification
 
-We further classify Materials Properties according to the possible conventions presented in the table below, in addition to those outlined in the [general explanation](general.md). These classification schemes are reviewed in turn in the ensuing sections.
+The classification explained below complements the more general one introduced [here](../../data/classification.md). We further classify the Properties of [Materials](../../materials/overview.md) according to the conventions below.
 
-| Materials Properties by origin | Materials Properties by domain |
+| By origin                      | By domain           |
 |:------------------------------:|:------------------------------:|
 | Elemental                        | Chemical                     |
 | Primary                          | Electrical                   |
@@ -27,44 +27,44 @@ We further make the following sub-categorization for Materials Properties, follo
 
 ## By domain
 
-The following example domains of materials properties can be considered (in alphabetical order).
+The following domains of materials properties (with shortlists of examples) can be considered:
 
-- Chemical: 
+- **Chemical**: 
     - reaction barrier height
     - diffusion barrier height
-- Electrical: 
+- **Electrical**: 
     - resistivity
     - i-v curve
     - dielectric matrix
     - electric susceptibility
-- Electronic: 
+- **Electronic**: 
     - band gap(s)
     - band structure
     - density of states
     - charge density map
     - fermi surface
     - HOMO-LUMO gap
-- Magnetic:
+- **Magnetic**:
     - magnetic susceptibility
     - magnetic moment
-- Mechanical:
+- **Mechanical**:
     - hardness
     - bulk modulus
     - shear modulus
     - poisson ratio
-- Optical:
+- **Optical**:
     - absorption spectra
-- Thermal:
+- **Thermal**:
     - thermopower
     - heat capacity
-- Thermodynamic:
+- **Thermodynamic**:
     - formation energy
     - melting temperature
     - superconducting transition temperature
-- Vibrational:
+- **Vibrational**:
     - zero point energy
     - phonon dispersions
     - phonon density of states
     - electron-phonon coupling
-- Other:
+- **Other**:
     - other properties that do not fit the above classification 
