@@ -4,7 +4,7 @@ We make use of the data convention, introduced [in this page](../../data-structu
 
 ## JSON Schemas and Examples
 
-We provide below an example of a [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the documentation in Refs. [[1](#links)] and [[2](#links)] for the explanation of the primitive types and schema keywords. 
+We provide below an example of a [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the JSON external documentation [^1] [^2] for the explanation of the primitive types and schema keywords. 
 
 Also listed below, is an example of a JSON representation of the [total energy](../scalar/energies.md), which can validated by the schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
 
@@ -71,5 +71,6 @@ In addition to the default primitive types for JSON Schemas, we construct additi
 
 ## Links
 
-1. [JSON Schema Core Documentation, Website](https://json-schema.org/latest/json-schema-core.html)
-2. [JSON Schema Validation Documentation, Website](https://json-schema.org/latest/json-schema-validation.html)
+[^1]: [JSON Schema Core Documentation, Website](https://json-schema.org/latest/json-schema-core.html)
+
+[^2]: [JSON Schema Validation Documentation, Website](https://json-schema.org/latest/json-schema-validation.html)

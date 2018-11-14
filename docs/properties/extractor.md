@@ -4,7 +4,7 @@ The extraction of raw data from simulations computations consists in processing 
 
 ## Extractor Scripts
 
-Computational scientists are usually familiar with this concept, and often have a set of **scripts** for extracting such raw numerical data from simulation outputs. We refer to such scripts as **"Extractors"**. Our platform follows exactly the same approach, and forms [structured data](../data-structured/overview.md) according to the [Data Convention](../data-structured/con.md) to subsequently store Materials properties in the database.
+Computational scientists are usually familiar with this concept, and often have a set of **scripts** for extracting such raw numerical data from simulation outputs. We refer to such scripts as **"Extractors"**. Our platform follows exactly the same approach, and forms [structured data](../data-structured/overview.md) according to the [Data Convention](../data-structured/convention.md) to subsequently store Materials properties in the database.
 
 Such raw extracted data typically needs to be further **refined** for a better comprehension of its physical relevance and accuracy. We describe how this issue is confronted on our platform [in a separate documentation page](refinement.md).
 
