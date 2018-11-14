@@ -1,6 +1,8 @@
 # List of Properties
 
-Below we provide a list of properties that can be [extracted](extractor.md) on our platform.  
+## Materials Properties
+
+Below we provide a list of Materials properties that can be [extracted](extractor.md) on our platform. The reader can click on each entry to be redirected to the relevant documentation explanation.
 
 | Property          | Overview    |
 |:----------------- |:------------|
@@ -20,9 +22,9 @@ Below we provide a list of properties that can be [extracted](extractor.md) on o
 | Magnetic Moments  | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
 | Total Force       | Sum of the atomic forces |
 
-# List of Workflow Monitors
+## Workflow Monitors
 
-Below we list the data points that can be monitored during the course of the execution of a [Workflow](/workflows/overview.md) computation.
+Below we list the data points that can be monitored during the course of the execution of a [Workflow](../workflows/overview.md) computation.
 
 | Output information | Overview |
 |:---------------   |:------------|
