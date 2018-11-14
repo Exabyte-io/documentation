@@ -1,11 +1,22 @@
-# Properties Classification
+# General Classification
 
-Generally, [properties](overview.md) for both [Materials](/materials/overview.md) and [Workflows](/workflows/overview.md) can be assigned the following different forms of classification. We explain the terms contained in this table throughout the remainder of the present documentation page.
+## Summary
 
-|  By data type | By relation to Workflow  | By Uniqueness   | By Physical Meaning      |
-|:-------------:|:------------------------:|:---------------:|:------------------------:|
-| Scalar        | Descriptive              | Identifier      | (default, non-auxiliary) |
-| Non-scalar    | Characteristic           | Non-identifier  | Auxiliary                |
+Generally, [properties](../overview.md) for both [Materials](../../materials/overview.md) and [Workflows](../../workflows/overview.md) can be assigned the following different forms of classification. We explain the terms contained in the below table throughout the remainder of the present documentation page. These classification criteria complement those introduced [here](../../data/classification.md) in the more general context of data.
+
+By refinement status |  By data type | By relation to Workflow  | By Uniqueness   | By Physical Meaning      |
+|:-------------:|:-------------:|:------------------------:|:---------------:|:------------------------:|
+|  Raw  | Scalar        | Descriptive              | Identifier      | (default, non-auxiliary) |
+|  Refined | Non-scalar    | Characteristic           | Non-identifier  | Auxiliary                |
+|  Best    |               |                          |                 |                          |
+
+## By refinement status
+
+When the data is first obtained it can be raw, or unprocessed. The opposite occurs when the data is [refined](../refinement.md) to pass multiple filter channels. We subdivide the following categories, further explained at the link in the previous sentence.
+ 
+- **raw**, 
+- **refined**,
+- **best**.
 
 ## By Data Type
 
@@ -14,7 +25,7 @@ We can subdivide properties based on how they are presented to the user into the
 - **Scalar**: can be expressed as a single numerical value with an associated measurement unit.
 - **Non-Scalar**: cannot be expressed as above.
 
-This is our preferred categorization scheme for classifying Materials properties. We review the [scalar](scalar/overview.md) and [non-scalar](non-scalar) classes separately in their respective documentation sections.
+We review the [scalar](../scalar/overview.md) and [non-scalar](../non-scalar/overview.md) classes of Materials properties separately in their respective documentation sections.
 
 > NOTE: non-scalar properties may be further subdivided into 1-dimensional arrays or matrices, for example. Some of these properties may also be traced graphically.
 
@@ -35,7 +46,7 @@ Similarly, in the context of experimental measurements, a descriptive property c
 
 ## By Relation to Uniqueness
 
-An effective way of organizing the data consists in identifying the materials themselves, rather than their properties. We do so by considering **Identifiers**, a special subset of *Descriptive* properties that helps associating each material with its ["exabyteId" keyword](/entities-general/data.md). 
+An effective way of organizing the data consists in identifying the materials themselves, rather than their properties. We do so by considering **Identifiers**, a special subset of *Descriptive* properties that helps associating each material with its ["exabyteId" keyword](../../entities-general/data.md). 
 
 ### Example 
 
@@ -51,6 +62,6 @@ In the context of non-experimental data such as that obtained with computational
 
 ### Example 
 
-For atomistic simulations done using the [planewave pseudopotential method](/methods/pseudopotential/overview.md) we can for example extract the Fermi energy. However, there is no physical meaning to its numerical value, as it is heavily dependent on the pseudization scheme.
+For atomistic simulations done using the [planewave pseudopotential method](../../methods/pseudopotential/overview.md) we can for example extract the Fermi energy. However, there is no physical meaning to its numerical value, as it is heavily dependent on the pseudization scheme.
  
 Conversely the electronic band gap, or the difference between electronic energies right below the Fermi level and right above it, has physical meaning and can be directly compared with experimental measurements. 

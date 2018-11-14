@@ -1,6 +1,6 @@
 # Materials Properties Classification
 
-We further classify Materials Properties according to the possible conventions presented in the table below, in addition to those outlined in the [general explanation](classification.md). These classification schemes are reviewed in turn in the ensuing sections.
+We further classify Materials Properties according to the possible conventions presented in the table below, in addition to those outlined in the [general explanation](general.md). These classification schemes are reviewed in turn in the ensuing sections.
 
 | Materials Properties by origin | Materials Properties by domain |
 |:------------------------------:|:------------------------------:|
