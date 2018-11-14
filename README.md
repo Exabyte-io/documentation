@@ -182,3 +182,33 @@ is rendered into:
         y2=bottom right Y coordinate
     -->
     ```
+
+10. Including resolved JSON schemas and examples:
+    
+    [markdown_include](https://github.com/Exabyte-io/markdown-include) package is used to include JSON content into markdown documents.
+    
+    **Syntax:** {!PATH_TO_JSON_FILE!}
+    
+    **Example:**
+
+    ```
+        <details markdown="1">
+          <summary>
+            Schema
+          </summary> 
+        
+        ```json
+        {!schema/material/properties/primary/structural/lattice.json!}
+        ```
+        </details>
+        
+        <details markdown="1">
+          <summary>
+            Example
+          </summary> 
+        
+        ```json
+        {!example/material/properties/primary/structural/lattice.json!}
+        ```
+        </details>
+    ```

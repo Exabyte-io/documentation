@@ -1,3 +1,5 @@
 mkdocs==0.16.2
 Markdown==2.6.11
 pymdown-extensions==4.12
+git+git://github.com/Exabyte-io/json_include.git#egg=json_include
+git+git://github.com/Exabyte-io/markdown-include.git@53176f5a749bca30ed53f4177a2482e5d9676e52#egg=markdown_include

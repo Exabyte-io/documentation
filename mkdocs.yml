@@ -17,11 +17,13 @@ extra:
         - /preload_hotjar.js
         - /preload.js
 markdown_extensions:
+    - markdown_include.include:
+        base_path: esse
     - admonition
     - pymdownx.arithmatex
     # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
     - footnotes:
-          PLACE_MARKER: "///FOOTNOTES GO HERE///"
+        PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
 pages:
