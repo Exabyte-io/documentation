@@ -14,7 +14,7 @@ For example, the retrieval of the [total energy](scalar/energies.md) in a [Quant
 
 Below we show an excerpt of a Quantum ESPRESSO standard output file, that can serve as input for the extractor explained above. The line containing the total energy is displayed at the center with its preceding exclamation mark. This input text is then parsed by the **Extractor**, and the resulting [structured](data/overview.md) data is generated and further stored in database.
 
-```tab="Extractor Input"
+```json tab="Extractor Input"
 ...
      the Fermi energy is     7.5947 eV
 
@@ -25,7 +25,7 @@ Below we show an excerpt of a Quantum ESPRESSO standard output file, that can se
 ```
 
 
-```tab="Extractor Output"
+```json tab="Extractor Output"
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total energy schema",

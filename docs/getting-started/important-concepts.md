@@ -4,7 +4,9 @@ In this page we introduce some important concepts explaining the operations of o
 
 ## Overview
 
-Our platform enables the execution of computational **[Workflows](../workflows/overview.md)** applied upon **[Materials](../materials/overview.md)**, in order to extract a set of desired **[Properties](../properties/overview.md)**. We refer to **[Jobs](../jobs/overview.md)** as "containers" of Workflows and Materials information to perform simulation tasks.
+Our platform enables the execution of computational **[Workflows](../workflows/overview.md)** applied upon **[Materials](../materials/overview.md)**, in order to extract a set of desired **[Properties](../properties/overview.md)**. We refer to **[Jobs](../jobs/overview.md)** as "containers" of Workflows and Materials information to perform simulation tasks on the Compute platform, as illustrated in the diagram below.
+
+![Simulation Components](/images/simulation-components.png "Simulation Components")
 
 ## Relationship
 
@@ -16,7 +18,9 @@ The flowchart diagram below visualizes the general relationship between the abov
 
 The three above-mentioned concepts of Workflows, Materials and Jobs can be grouped together under the same general umbrella term of **[Entities](../entities-general/overview.md)**, due to the many features and user interface components that they share in common. We review the similarities under [Entities and Common Aspects](../entities-general/overview.md) and then explain the details unique to each Entity type separately. 
 
-For example, Jobs have **[Accounting](../accounts/overview.md)** set up for. Workflows consist of **[Subworkflows](../workflows/data/subworkflows.md)**, and further of the combination of individual **[Units](../workflows/data/units.md)**. Workflows and Materials are both **["Bankable" Entities](../entities-general/bank.md)**.
+For example, Jobs have **[Accounting](../accounts/overview.md)** set up for. Workflows consist of **[Subworkflows](../workflows/data/subworkflows.md)**, and further of the combination of individual **[Units](../workflows/data/units.md)**, such as portrayed in the example diagram below. Workflows and Materials are both **["Bankable" Entities](../entities-general/bank.md)**.
+
+![Workflow Components](/images/workflow-components.png "Workflow Components")
 
 ## Other Items
 
