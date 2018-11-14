@@ -1,6 +1,6 @@
 # Structured Data
 
-In this section, we provide an introduction to the practices we employ to store **structured data** in our database. Structured data is stored according to the **Exabyte Data Convention** (internal-only at the moment, available to interested parties on a case-by-case basis). 
+In this section, we provide an introduction to the practices we employ to store **structured data** in our database. Structured data is stored according to the **Exabyte Data Convention**. 
 
 ## Convention
 

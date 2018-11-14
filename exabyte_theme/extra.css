@@ -498,9 +498,12 @@ a.toctree-l4 {
     border: solid 1px #e1e4e5;
 }
 
+/* TODO by TB: move the below */
+
 /* --------------------------------------------------------- *
  *                  TABBED FENCING
  * --------------------------------------------------------- */
+
 
 .superfences-tabs {
     display: flex;
