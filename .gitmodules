@@ -1,0 +1,3 @@
+[submodule "esse"]
+	path = esse
+	url = git@github.com:Exabyte-io/exabyte-esse.git
