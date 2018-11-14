@@ -8,7 +8,7 @@ We provide below an example of a [**JSON schema**](../../data-structured/convent
 
 Also listed below, is an example of a JSON representation of the [total energy](../scalar/energies.md), which can validated by the schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
 
-```tab="Schema"
+```json tab="Schema"
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "total energy schema",
@@ -53,7 +53,7 @@ Also listed below, is an example of a JSON representation of the [total energy](
 }
 ```
 
-```tab="Example"
+```json tab="Example"
 {
     "name": "total_energy",
     "value": -123.43573079,
