@@ -390,7 +390,6 @@ pages:
             - General:                                  properties/classification/general.md
             - Machine Learning:                         properties/classification/machine-learning.md
             - Materials:                                properties/classification/materials.md
-
         - User Interface:
             - Properties Explorer:                      properties/ui/explorer.md
             - Final Structure Viewer:                   properties/ui/viewer.md
