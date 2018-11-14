@@ -10,7 +10,7 @@ Our platform enables the execution of computational **[Workflows](../workflows/o
 
 The flowchart diagram below visualizes the general relationship between the above-mentioned entity types. Here, the Properties associated to each entity are labeled with "P". Those properties which are computed as output of a Job (the so-called [Characteristic Properties](../properties/classification/general.md)), shown in black, have a certain numerical [precision](../methods/data.md) attributed to them.
 
-![Simulation Diagram](/images/simulation-job-wokflow-unit-explained.png "Simulation Diagram")
+![Simulation Diagram](/images/entities-relations.png "Simulation Diagram")
 
 ## Main Entities
 

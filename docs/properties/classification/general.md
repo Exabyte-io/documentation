@@ -12,7 +12,7 @@
 
 ## By refinement status
 
-When the data is first obtained it can be raw, or unprocessed. The opposite occurs when the data is [refined](../refinement.md) to pass multiple filter channels. We subdivide the following categories:
+When the data is first obtained it can be raw, or unprocessed. The opposite occurs when the data is [refined](../refinement.md) to pass multiple filter channels. We subdivide the following categories.
  
 - **Raw**, 
 - **Refined**,
