@@ -20,7 +20,7 @@ We further classify Materials Properties according to the possible conventions p
 We further make the following sub-categorization for Materials Properties, following the Exabyte Data Convention.
 
 - **elemental**: entirely defined by pure elements and inherited by compounds without modification (eg. electronegativity, atomic weight). 
-- **primary**: directly available properties specific to material (can be of all types, for example characteristic or descriptive).
+- **primary**: directly available properties specific to material (can be of all types, for example [characteristic or descriptive](general.md)).
     - **structural**: we separate structural properties as the most fundamental group.
 - **compound**: combined properties defined through others, eg. *(property 1 + property 2) / 2*, *Log (property 1 - property 2)*.
 - **custom**: user-defined properties (eg. from imported/uploaded data). 

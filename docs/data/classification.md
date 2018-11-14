@@ -7,7 +7,7 @@ This section contains information about the general policies we use for the hand
 - **structured**: we introduce the conventions and practices relevant the structured data in [this section of the documentation](../data-structured/overview.md). 
 - **unstructured**: non-structured data is explained in two separate locations, for data [stored on the disks](../data-on-disk/overview.md) and [stored as objects](../data-in-objectstorage/overview.md) respectively.
 
-!!!example "Example structured and unstructured data"
+!!!note "Example structured and unstructured data"
     Unstructured data generated during calculation first resides on disk. Files containing the information can further be processed as explained in [this section](../properties/extractor.md), and further converted to a structured JSON-based format inside our platform. 
 
 ## By domain

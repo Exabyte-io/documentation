@@ -13,7 +13,7 @@ We make use of the **JSON format** [[1,2](#links)] for storing **structured data
 The example included in the expandable section below shows a possible **JSON representation**, describing a material sample of silicon. Its detailed explanation can be found [here](../materials/data.md).
 
 
-<details>
+<details markdown="1">
   <summary>
      Expand to view
   </summary> 
