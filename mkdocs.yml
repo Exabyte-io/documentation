@@ -17,6 +17,8 @@ extra:
         - /preload_hotjar.js
         - /preload.js
 markdown_extensions:
+    - markdown_include.include:
+        base_path: esse
     - admonition
     - pymdownx.arithmatex
     - pymdownx.superfences
@@ -625,13 +627,6 @@ pages:
         # TODO: check relevance and update/delete
         - CLI data import:                              tutorials/cli-job-import.md
 
-    - Benchmarks:
-        - High Throughput Screening:                    benchmarks/high-throughput-screening.md
-        - Distributed Memory Runs:                      benchmarks/distributed-memory.md
-        - Vendor Comparison:                            benchmarks/vendor-comparison.md
-        - High-Performance Linpack:                     benchmarks/hpl-benchmark.md
-
-
 # LEGAL
     - Site Policy:
         - Privacy:                                      site-policy/privacy-statement.md
@@ -657,6 +652,7 @@ pages:
         - Vendor Comparison:             benchmarks/vendor-comparison.md
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
         - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
+
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
