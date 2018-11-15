@@ -1,6 +1,6 @@
 # Stress Tensor
 
-The stress tensor ${\boldsymbol {\sigma }}$ [[1](#links)] is a second-rank tensor, representable as a Matrix, which consists of nine components $\sigma _{ij}$ that completely define the state of stress at a point inside a deformed material. 
+The stress tensor ${\boldsymbol {\sigma }}$ [^1] is a [Characteristic](../classification/general.md) property. It is a second-rank tensor, representable as a Matrix, which consists of nine components $\sigma _{ij}$ that completely define the state of stress at a point inside a deformed material. 
 
 $$
 {\boldsymbol  {\sigma }}=\left[{{\begin{matrix}\sigma _{{xx}}&\sigma _{{xy}}&\sigma _{{xz}}\\\sigma _{{yx}}&\sigma _{{yy}}&\sigma _{{yz}}\\\sigma _{{zx}}&\sigma _{{zy}}&\sigma _{{zz}}\\\end{matrix}}}\right]
@@ -8,12 +8,12 @@ $$
 
 The image below offers an explanation of the directions in which each shear and normal stress component expressed above acts upon, relative to a Cartesian coordinate system.
 
-![Stress Tensor](/images/Components_of_Stress_Tensor.jpg "Stress Tensor")
+![Stress Tensor](/images/Properties/Components_of_Stress_Tensor.png "Stress Tensor")
 
 Under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), the components of the stress tensor are presented as follows, expressed in units of kilobars (kbar).
 
-![Stress Tensor](/images/stress-tensor.png "Stress Tensor")
+![Stress Tensor](/images/Properties/stress-tensor.png "Stress Tensor")
 
-# Links
+## Links
 
-1. [Wikipedia Cauchy stress tensor, Website](https://en.wikipedia.org/wiki/Cauchy_stress_tensor)
+[^1]: [Wikipedia Cauchy stress tensor, Website](https://en.wikipedia.org/wiki/Cauchy_stress_tensor)
