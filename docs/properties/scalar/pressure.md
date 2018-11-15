@@ -1,17 +1,17 @@
 # Average Pressure
 
-We define the **Average Pressure** $p_{avg}$ of a Material as a Scalar [Characteristic](/data-structured/overview.md) property obtained from the following conventional formula.
+We define the **Average Pressure** $p_{avg}$ of a Material as a Scalar [Characteristic](../../data-structured/overview.md) property obtained from the following conventional formula.
 
 $$
 p_{avg}=-\frac{1}{3} \mathrm{Tr} \hspace{1pt} {\boldsymbol{\sigma}}
 $$ 
 
-where ${\boldsymbol{\sigma}}$ is the [internal stress tensor](../non-scalar/stress-tensor.md) of the solid, and $\mathrm{Tr}$ indicates the Trace operator in linear algebra [[1](#links)]. 
+where ${\boldsymbol{\sigma}}$ is the [internal stress tensor](../non-scalar/stress-tensor.md) of the solid, and $\mathrm{Tr}$ indicates the Trace operator in linear algebra [^1]. 
 
-The average pressure can be computed as part of any [Workflow](/workflows/overview.md) involving at least one basic "self-consistent field" (scf) total energy calculation. It is then presented to the user, as part of the output of a [Job](/jobs/overview.md), with the following appearance under the interface of the [Results Tab](/jobs/ui/results-tab.md) of [Job Viewer](/jobs/ui/viewer.md). Its final value is expressed in units of kilo bars (kbar).
+The average pressure can be computed as part of any [Workflow](../../workflows/overview.md) involving at least one basic "self-consistent field" (scf) total energy calculation. It is then presented to the user, as part of the output of a [Job](../../jobs/overview.md), with the following appearance under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of kilo bars (kbar).
 
 ![Average Pressure](/images/average-pressure.png "Average Pressure")
 
-# Links
+## Links
 
-1. [Wikipedia Trace (linear algebra), Website](https://en.wikipedia.org/wiki/Trace_(linear_algebra))
+[^1]: [Wikipedia Trace (linear algebra), Website](https://en.wikipedia.org/wiki/Trace_(linear_algebra))
