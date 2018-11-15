@@ -4,19 +4,19 @@ The Total Energy of a Material, introduced [in this page](energies.md), is itsel
 
 ## Types of Contributions
 
-Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/overview.md) computations. The types of contributions included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, between [Quantum Espresso](../../software/modeling/quantum-espresso.md) (QE) and [VASP](../../software/modeling/vasp.md), as explained in what follows.
+Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/overview.md) computations. The types of contributions included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, as explained in what follows.
 
 The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
 
-## Contributions Computed by Both QE and VASP
+## Contributions Computed by All Applications
 
-The following contributions displayed in the image below are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both VASP and QE calculations. In all instances, the results are returned in units of eV. 
+The following contributions displayed in the image below are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software/modeling/vasp.md) and [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV. 
 
-![Common Contributions](/images/common-contributions.png "Common Contributions")
+![Common Contributions](/images/Properties/common-contributions.png "Common Contributions")
 
-## Contributions Computed Only by QE
+## Contributions Computed Only by Quantum ESPRESSO
 
-Two additional energy contributions can be evaluated with QE-based Workflows: the "One-electron" and "Harris-Foulkes" contributions. They are both returned as values expressed in eV, in a similar format to the other properties listed in the above image. 
+Two additional energy contributions can be evaluated with Quantum ESPRESSO-based Workflows: the "One-electron" and "Harris-Foulkes" contributions. They are both returned as values expressed in eV, in a similar format to the other properties listed in the above image. 
 
 ## Links
 

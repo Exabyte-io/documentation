@@ -10,7 +10,7 @@ where ${\boldsymbol{\sigma}}$ is the [internal stress tensor](../non-scalar/stre
 
 The average pressure can be computed as part of any [Workflow](../../workflows/overview.md) involving at least one basic "self-consistent field" (scf) total energy calculation. It is then presented to the user, as part of the output of a [Job](../../jobs/overview.md), with the following appearance under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of kilo bars (kbar).
 
-![Average Pressure](/images/average-pressure.png "Average Pressure")
+<div class="clearfix"><center><div class="chart"><i class="zmdi zmdi-square-down zmdi-hc-3x"></i></div><div class="count"><small><!-- react-text: 1660 -->Pressure<!-- /react-text --><!-- react-text: 1661 --> (<!-- /react-text --><!-- react-text: 1662 -->kbar<!-- /react-text --><!-- react-text: 1663 -->)<!-- /react-text --></small><h2>284</h2></div></div>
 
 ## Links
 

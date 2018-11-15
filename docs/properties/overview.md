@@ -39,3 +39,7 @@ Properties can be retrieved in multiple ways as explained [in this page](retriev
 Properties are presented in special panels within the user interface of the [Job Viewer](../jobs/ui/viewer.md). One of such panels contains the **final computed structure**, displayed under an instance of [Materials Viewer](../materials/ui/viewer.md). It is described separately [here](ui/viewer.md).
 
 These properties can also be reviewed under a dedicated [Explorer-type interface](../entities-general/ui/explorer.md) for each Material stored in the account-owned [collection](../accounts/collections.md). We explain how to retrieve and inspect the contents of this Properties Explorer [in this page](ui/explorer.md). 
+
+## Material Properties
+
+We review material properties of [scalar](scalar/overview.md) and [non-scalar](non-scalar/overview.md) nature separately in their respective documentation sections.
