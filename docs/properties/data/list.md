@@ -21,7 +21,7 @@ Total energy contains the total energy of the unit cell.
 Some residual thermal vibrational energy is left at zero temperature due to quantum effects, and is referred to as Zero Point Energy.
 
 ```json tab="Schema" 
-{!schema/material/properties/primary/zero_point_energy.json!}
+{!../docs/extra/periodic-table.json!}
 ```
 
 ```json tab="Example" 

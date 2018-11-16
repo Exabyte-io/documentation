@@ -1,4 +1,4 @@
-# Overview
+# Exabyte public documentation
 
 This repo holds public documentation for exabyte.io. Currently deployed version is available at [this link](http://docs.exabyte.io) (you will need to be logged in at platform.exabyte.io to try).
 
@@ -8,7 +8,7 @@ Uses [MkDocs](http://www.mkdocs.org/#getting-started) to convert Markdown files 
 
 > NOTE: tested and developed with mkdocs version 0.16.2.
 
-# Setup
+## Setup
 
 For quick installation run:
 
@@ -35,15 +35,15 @@ mkdocs serve
 
 You should have the documentation available at `http://localhost:8000`
 
-# Important
+## Important
 
 In order to make it easier to merge ongoing updates from mkdocs, do not change the content of:
 
     ./exabyte_theme/*
 
-except for extra.css/extra.js files.
+except for extra css and extra js files.
 
-# Development
+## Development
 
 Images (screenshots) are kept separately at http://files.exabyte.io:18/uploads/images/ and synchronized into `./docs/images` folder through running:
 
@@ -61,7 +61,7 @@ Do NOT push images to this repository.
 
 > **NOTE**: files named with verbs (eg. create-organization.md) are meant to contain step-by-step tutorials with visuals, files named with nouns (eg. advanced-characteristics.md) are meant to contain 'static' and more in-depth explanation of the terms with minimum visuals.
 
-# Examples elements
+## Example elements
 
 There are multiple [admonition](https://pythonhosted.org/Markdown/extensions/admonition.html) classes: tip (green), warning (orange), error (red), note (blue):
 
@@ -80,8 +80,8 @@ is rendered into:
 Expandable section can be added using:
 
 ```
-<details>
-    <summary>**INCAR**</summary>
+<details markdown="1">
+  <summary>**INCAR**</summary>
     ```
     ALGO = Normal
     EDIFF = 0.0001
@@ -92,8 +92,8 @@ Expandable section can be added using:
 
 is rendered into:
 
-<details>
-    <summary>**INCAR**</summary>
+<details markdown="1">
+  <summary>**INCAR**</summary>
     ```
     ALGO = Normal<br>
     EDIFF = 0.0001
@@ -101,8 +101,10 @@ is rendered into:
     ```
 </details>
 
+Please note the `markdown=1` tag, without it the content of the `<details>` tag will not be processed appropriately. Also, the two spaces before `<summary>` seem mandatory for the same purpose.
 
-# Basic guidelines
+
+## Basic guidelines
 
 1. Leave comment at the top about the original author (TB = Timur Bazhirov):
     ```
@@ -213,3 +215,7 @@ is rendered into:
         ```
         </details>
     ```
+
+## Note: header levels
+
+After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header.

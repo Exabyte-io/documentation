@@ -1,5 +1,5 @@
-mkdocs==0.16.2
-Markdown==2.6.11
-pymdown-extensions==4.12
+mkdocs==1.0.4
+pymdown-extensions==6.0
+mkdocs-material>=2.8.0
 git+git://github.com/Exabyte-io/json_include.git#egg=json_include
 git+git://github.com/Exabyte-io/markdown-include.git#egg=markdown_include

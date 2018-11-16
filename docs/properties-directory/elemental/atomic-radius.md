@@ -4,6 +4,8 @@ The atomic radius of a chemical element is a measure of the size of its atoms, a
 
 The atomic radii can be found tabulated for elements across the Periodic Table [^1].
 
+![Atomic Radius](https://en.wikipedia.org/wiki/File:Helium_atom_QM.svg "Atomic Radius")
+
 ## Links
 
 [^1]: [Wikipedia Atomic Radius, Website](https://en.wikipedia.org/wiki/Atomic_radius)
