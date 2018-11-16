@@ -117,3 +117,14 @@ a:visited {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+.badge.badge-property {
+    background-color: #e5e5e5;
+    color: black;
+    border: 1px solid black;
+}
+
+.badge.badge-property-inverse {
+    background-color: black;
+    color: white;
+}

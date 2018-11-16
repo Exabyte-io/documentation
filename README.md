@@ -17,6 +17,7 @@ easy_install pip  # if pip is not installed yet
 virtualenv .virtualenv
 source ./virtualenv/bin/activate
 pip install -r requirements.txt
+git submodule update --init
 ```
 
 In order to download images:
@@ -183,6 +184,36 @@ Please note the `markdown=1` tag, without it the content of the `<details>` tag 
         x2=bottom right X coordinate
         y2=bottom right Y coordinate
     -->
+    ```
+
+10. Including resolved JSON schemas and examples:
+    
+    [markdown_include](https://github.com/Exabyte-io/markdown-include) package is used to include JSON content into markdown documents.
+    
+    **Syntax:** {!PATH_TO_JSON_FILE!}
+    
+    **Example:**
+
+    ```
+        <details markdown="1">
+          <summary>
+            Schema
+          </summary> 
+        
+        ```json
+        {!schema/material/properties/primary/structural/lattice.json!}
+        ```
+        </details>
+        
+        <details markdown="1">
+          <summary>
+            Example
+          </summary> 
+        
+        ```json
+        {!example/material/properties/primary/structural/lattice.json!}
+        ```
+        </details>
     ```
 
 ## Note: header levels
