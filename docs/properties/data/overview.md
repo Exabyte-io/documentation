@@ -27,9 +27,9 @@ Also listed below, is an example of a JSON representation of the [total energy](
 
 In addition to the default primitive types for JSON Schemas, we construct additional types types used for constructing the representations of numeric properties specifically. Primitive types are abstract and do not have physical meaning, but can hold the data. We provide a list of available primitive schema types [in this page](primitive.md).
 
-## List of Property Schemas
+## List of Schemas
 
-We provide a list of schemas and examples relevant for material properties, of both [scalar](../scalar/overview.md) and [non-scalar](../non-scalar/overview.md) nature, which can be consulted [here](list.md).
+[In this section](list.md), we offer a full list of schemas and examples relevant for properties.
 
 ## Links
 

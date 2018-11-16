@@ -1,16 +1,16 @@
 # Total Energy Contributions
 
-The Total Energy of a Material, introduced [in this page](energies.md), is itself comprised of several **Energy Contributions**. They can be computed as part of any [Workflow](../../workflows/overview.md) involving at least one basic "self-consistent field" (scf) energy calculation, and are returned as a list of scalar quantities.
+The Total Energy of a Material, introduced [in this page](energies.md), is itself comprised of several **Energy Contributions**. They can be computed as part of any [Workflow](../../workflows/overview.md) involving at least one basic "self-consistent field" (scf) energy calculation using [DFT](../../models/dft/overview.md), and they are returned as a list of Scalar, [Characteristic and Auxiliary](../classification/general.md) quantities.
 
 ## Types of Contributions
 
-Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/overview.md) computations. The types of contributions included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, as explained in what follows.
+Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/overview.md) computations. The types included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, as explained in what follows.
 
 The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
 
 ## Contributions Computed by All Applications
 
-The following contributions displayed in the image below are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software/modeling/vasp.md) and [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV. 
+The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software/modeling/vasp.md) and [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV. 
 
 ![Common Contributions](/images/Properties/common-contributions.png "Common Contributions")
 

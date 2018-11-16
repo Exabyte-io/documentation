@@ -2,7 +2,7 @@
 
 The non-scalar properties which cannot be expressed as a singular numerical value occur most notably in the form of **Arrays** of numbers, including both **Vectors** and **Matrices**, and under the form of traceable **Dispersion Curves** which can be visualized graphically. 
 
-We review these categories of non-scalar properties in the forthcoming sections linked below. [This page](../data/list.md) contains the [JSON schemas](../data/overview.md) and associated examples for each property described in the present section.
+We review these categories of non-scalar properties in the forthcoming sections linked below. The [JSON schemas](../data/overview.md) and associated examples for each property described in the present section can be found [here](../data/list.md).
 
 ## Dispersion Curves
 

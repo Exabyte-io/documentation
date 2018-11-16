@@ -1,6 +1,6 @@
 # Schemas for Material Properties
 
-We present throughout this page a list of JSON schemas and example representations concerning material properties, of both scalar and non-scalar types. The reader is referred to their respective documentation pages, accessible by clicking the headers, for a review of their underlying physical significance.
+We present throughout this page a list of JSON schemas and example representations concerning material properties, of both [scalar](../scalar/overview.md) and [non-scalar](../non-scalar/overview.md) types. The reader is referred to their respective documentation pages, accessible by clicking the headers below, for a review of their underlying physical significance.
 
 ## Non-Scalar Properties
 
@@ -92,7 +92,7 @@ Density of states contains information on the number of electronic states as a f
 
 ### [Lattice Vectors](../non-scalar/lattice.md)
 
-Lattice vectors holds information about the three-dimensional periodic structure explicitly, by specifying three lattice vectors and their units.
+Lattice vectors holds information about the three-dimensional periodic structure explicitly, by specifying the three lattice vectors and their units.
 
 ```json tab="Schema"
 {!schema/material/properties/primary/structural/lattice/lattice_vectors.json!}
@@ -104,7 +104,7 @@ Lattice vectors holds information about the three-dimensional periodic structure
 
 ### [Bravais Lattice](../non-scalar/lattice.md)
 
-Lattice Bravais holds information about the 3d periodic structure specified implicitly through lengths and angles between lattice vectors, and their units.
+Lattice Bravais holds information about the three-dimensional periodic structure specified implicitly through lengths and angles between lattice vectors, and their units.
 
 ```json tab="Schema"
 {!schema/material/properties/primary/structural/lattice/lattice_bravais.json!}

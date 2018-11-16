@@ -4,13 +4,13 @@ The most significant **scalar properties** that can be computed on materials inc
 
 We also explain how such results are presented to the user under the interface of the [Results Tab](../../jobs/ui/results-tab.md) within [Jobs Viewer](../../jobs/ui/viewer.md), when results are extracted from the output of simulations. 
 
-[This page](../data/list.md) contains illustrative examples of the [JSON schemas](../data/overview.md) for each scalar property discussed in the present section.
+Illustrative examples of the [JSON schemas](../data/overview.md) for each scalar property discussed in the present section are contained [in this page](../data/list.md).
 
 ## Energy Types
 
 We review the concept of **Total Internal Energy** of a solid [in this page](energies.md), particularly with regards to its main contribution originating from the chemical binding interactions present within the crystal structure. 
 
-Here, we also touch upon the **Fermi Energy** notion relevant in the context of bandstructure calculations, together with the associated **Bang-gap energy** for the case of semiconducting or insulating solids.
+Here, we also touch upon the **Fermi Energy** notion relevant in the context of bandstructure calculations.
 
 ## Energy Contributions
 

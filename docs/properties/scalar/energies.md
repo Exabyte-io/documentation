@@ -2,7 +2,7 @@
 
 ## Theoretical Background: Internal Energy of Materials
 
-The **internal energy** is an important example of a Scalar [Characteristic](../classification/general.md) property of [Materials](../../materials/overview.md), and is routinely calculated during the course of material science simulations. 
+The **internal energy** is an important example of a **Scalar, [Characteristic and Auxiliary](../classification/general.md) property** of [Materials](../../materials/overview.md), and is routinely calculated during the course of material science simulations. 
 
 ### Cohesive (Chemical) Contribution
 
@@ -10,7 +10,7 @@ The internal energy embodies primarily the **cohesive (or binding) potential ene
 
 ### Thermal Vibrational Contribution
 
-A second contribution to the internal energy, besides the cohesive chemical component, originates from the thermally-induced **lattice vibrations (phonons)**. These are particularly significant at high temperatures, but in the context of [DFT](../../models/dft/overview.md) computations performed at zero temperature they are typically negligible in terms of their energetic contribution, although this contribution remains finite and positive in magnitude. 
+A second contribution to the internal energy, besides the cohesive chemical component, originates from the thermally-induced **lattice vibrations (phonons)**. These are particularly significant at high temperatures, but in the context of [DFT](../../models/dft/overview.md) computations performed at zero temperature they are typically negligible in terms of their energetic contribution. This contribution remains however finite and positive in magnitude. 
 
 This **"Zero-point Energy"** contribution to the internal energy of a zero-temperature solid can still be computed separately, as explained in the forthcoming sections of this page. A theoretical review of lattice vibrations in solid-state physics is available in Ref. [^2], whereas a description dedicated to the concept of Zero-point Energy can be found in Ref. [^3].
 
@@ -20,7 +20,7 @@ In the context of our platform, the following types of energies are available an
 
 ### Total Energy
 
-The "Total Energy" refers to the total electronic ground state energy of a material with a fixed lattice (with no thermal vibrations of the atoms), such as can be calculated by a basic "self-consistent field" (scf) computation. 
+The "Total Energy" refers to the total electronic ground state energy of a material with a fixed lattice (with no thermal vibrations of the atoms), such as can be calculated by a basic "self-consistent field" (scf) computation in [DFT](../../models/dft/overview.md). 
 
 It effectively corresponds to the aforementioned cohesive energy, stored exclusively inside the chemical bonds defining the crystal structure. 
 
