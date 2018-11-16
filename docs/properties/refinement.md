@@ -18,13 +18,13 @@ We categorize the various degrees of refinement of extracted Materials propertie
 
 ### Non-Refinable Properties
 
-For the case of the [pseudopotential DFT model](../models/dft/overview.md) the **[Fermi Energy](scalar/energies.md)**, for example, is excluded from being classed as Refined, and therefore remains treated as Raw. This is due to the fact that its absolute value makes no physical meaning, but rather depends heavily on the choice of the pseudopotential, on the Exchange-correlation functional approximation, and on other computational [methods](../methods/overview.md) being employed.
+For the case of the [pseudopotential DFT model](../models/dft/overview.md) the **[Fermi Energy](../properties-directory/scalar/total-energy.md)**, for example, is excluded from being classed as Refined, and therefore remains treated as Raw. This is due to the fact that its absolute value makes no physical meaning, but rather depends heavily on the choice of the pseudopotential, on the Exchange-correlation functional approximation, and on other computational [methods](../methods/overview.md) being employed.
 
 ### Refined Property Example
 
-The [band gap](non-scalar/bandstructure.md) is instead considered a refined property, since it is a relative energy difference between the highest electron-occupied and lowest unoccupied levels in the bandstructure of the material. Therefore its computed value can be compared directly with experiments, with a reliability limited only by its numerical precision.
+The [band gap](../properties-directory/non-scalar/bandstructure.md) is instead considered a refined property, since it is a relative energy difference between the highest electron-occupied and lowest unoccupied levels in the bandstructure of the material. Therefore its computed value can be compared directly with experiments, with a reliability limited only by its numerical precision.
 
-> **NOTE**: exception for "Total Energy". We class the [Total Energy](scalar/energies.md) of the material as refined property, despite its absolute value computed with DFT also being of no physical relevance. This is done due to its importance in formulating the Equation of State of the Material, where it is normally compared relative to its ground-state value under equilibrium conditions. 
+> **NOTE**: exception for "Total Energy". We class the [Total Energy](../properties-directory/scalar/total-energy.md) of the material as refined property, despite its absolute value computed with DFT also being of no physical relevance. This is done due to its importance in formulating the Equation of State of the Material, where it is normally compared relative to its ground-state value under equilibrium conditions. 
 
 ## Best Properties
 
