@@ -378,7 +378,6 @@ pages:
 
     - Properties:
         - Overview:                                     properties/overview.md
-        - List of Properties:                           properties/list.md
         - Extractors:                                   properties/extractor.md
         - Refinement:                                   properties/refinement.md
         - Retrieval:                                    properties/retrieval.md
@@ -392,23 +391,39 @@ pages:
             - Machine Learning:                         properties/classification/machine-learning.md
             - Materials:                                properties/classification/materials.md
         - User Interface:
-            - Properties Explorer:                      properties/ui/explorer.md
-            - Final Structure Viewer:                   properties/ui/viewer.md
+            - Explorer:                                 properties/ui/explorer.md
+            - Viewer:                                   properties/ui/viewer.md
+
+    - Properties Directory:
+        - Overview:                                     properties-directory/overview.md
         - Scalar:
-            - Overview:                                 properties/scalar/overview.md
-            - Energies:                                 properties/scalar/energies.md
-            - Pressure:                                 properties/scalar/pressure.md
-            - Total Force:                              properties/scalar/total-force.md
-            - Lists of Energy Contributions:            properties/scalar/energy-contribution.md
-        - Non-Scalar:
-            - Overview:                                 properties/non-scalar/overview.md
-            - Stress Tensor:                            properties/non-scalar/stress-tensor.md
-            - Band Structure:                           properties/non-scalar/bandstructure.md
-            - Phonons:                                  properties/non-scalar/phonons.md
-            - Density of States:                        properties/non-scalar/dos.md
-            - Atomic:                                   properties/non-scalar/atomic.md
-            - Lattice:                                  properties/non-scalar/lattice.md
-            - Crystal Structure:                        properties/non-scalar/final-structure.md
+            - Total Energy:                             properties-directory/scalar/total-energy.md
+            - Pressure:                                 properties-directory/scalar/pressure.md
+            - Total Force:                              properties-directory/scalar/total-force.md
+            - Lists of Energy Contributions:            properties-directory/scalar/energy-contribution.md
+            - Fermi Energy:                             properties-directory/scalar/fermi-energy.md
+            - Formation Energy:                         properties-directory/scalar/formation-energy.md
+            - Surface Energy:                           properties-directory/scalar/surface-energy.md
+            - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
+        - Non-scalar:
+            - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
+            - Band Structure:                           properties-directory/non-scalar/bandstructure.md
+            - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
+            - Electronic Density of States:             properties-directory/non-scalar/electronic-dos.md
+            - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
+            - Atomic Forces:                            properties-directory/non-scalar/atomic-forces.md
+            - Band Gaps:                                properties-directory/non-scalar/band-gaps.md
+            - Magnetic Moment:                          properties-directory/non-scalar/magnetic-moment.md
+        - Elemental:
+            - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
+            - Electronegativity:                        properties-directory/elemental/electronegativity.md
+            - Ionization Potential:                     properties-directory/elemental/ionization-potential.md
+        - Structural:
+            - Basis Atoms:                              properties-directory/structural/basis-atoms.md
+            - Lattice:                                  properties-directory/structural/lattice.md
+            - Elemental Ratio:                          properties-directory/structural/elemental-ratio.md
+            - Symmetry:                                 properties-directory/structural/symmetry.md
+            - Final Structure:                          properties-directory/structural/final-structure.md
 
 
 # COMPUTATIONAL ASPECTS

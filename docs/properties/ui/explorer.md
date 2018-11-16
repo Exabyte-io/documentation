@@ -1,6 +1,6 @@
 # Properties Explorer
 
-The list of calculated Material [properties](../list.md), associated with any entry listed under [Materials Explorer](../../materials/ui/explorer.md), is displayed below the footer of the corresponding [Viewer](../../materials/ui/viewer.md) page. It is presented to the user in a separate [Explorer-type Interface](../../entities-general/ui/explorer.md), which we refer to as the "Properties Explorer". 
+The list of calculated Material [properties](../../properties-directory/overview.md), associated with any entry listed under [Materials Explorer](../../materials/ui/explorer.md), is displayed below the footer of the corresponding [Viewer](../../materials/ui/viewer.md) page. It is presented to the user in a separate [Explorer-type Interface](../../entities-general/ui/explorer.md), which we refer to as the "Properties Explorer". 
 
 ## Example Appearance
 
