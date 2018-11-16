@@ -2,7 +2,7 @@
 
 ## Materials Properties
 
-Below we provide a list of Materials properties that can be [extracted](extractor.md) on our platform. The reader can click on each entry to be redirected to the relevant documentation explanation.
+Below we provide a list of Materials properties that can be [extracted](extractor.md) on our platform. The reader can click each entry to be redirected to the relevant documentation explanation.
 
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|

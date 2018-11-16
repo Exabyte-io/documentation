@@ -1,8 +1,8 @@
 # Bandstructure
 
-Electronic bandstructure calculations [^1] can be performed with any appropriate [Workflow](../../workflows/overview.md). The results are portrayed in the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) in the form of a dispersion curve, as portrayed in the graphic below.
+Electronic bandstructure calculations [^1] can be performed with any appropriate [Workflow](../../workflows/overview.md). The results are portrayed in the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) in the form of a dispersion curve, as illustrated in the graphic below.
 
-![4 jobs results](/images/Properties/4_jobs_results.png "4 jobs results")
+![Bandstructure](/images/Properties/bandstructure.png "Bandstructure")
 
 This dispersion plot covers the [desired path](../../workflow-designer/subworkflow-editor/important-settings.md) in the reciprocal space of the Brillouin Zone, with its corresponding Greek letter labels indicating special symmetry points. The energy vertical axis is scaled relative to the [Fermi energy](../scalar/energies.md#fermi-energy) of the material (red dashed line), marking the highest occupied energy level.
 
@@ -12,7 +12,7 @@ The possibility to print or download the dispersion graph in different image for
 
 Numerical data about the size of the energy **band-gap**, for the case of a semiconducting solid, is also displayed below the graph, in the "Band gap" section. 
 
-The Bang Gap measures the finite energy difference between the highest occupied and lowest unoccupied energy levels in, respectively, the valence and conduction bands of a semiconducting or insulating material [^2]. It is also returned as part of a bandstructure [Workflow](../../workflows/overview.md) computation.
+The Bang Gap measures the finite energy difference between the highest occupied and lowest unoccupied energy levels in, respectively, the valence and conduction bands of a semiconducting or insulating material [^2]. 
 
 ### Direct and Indirect Bang Gaps
 

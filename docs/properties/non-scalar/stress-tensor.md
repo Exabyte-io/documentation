@@ -1,6 +1,6 @@
 # Stress Tensor
 
-The stress tensor ${\boldsymbol {\sigma }}$ [^1] is a [Characteristic](../classification/general.md) property. It is a second-rank tensor, representable as a Matrix, which consists of nine components $\sigma _{ij}$ that completely define the state of stress at a point inside a deformed material. 
+The stress tensor ${\boldsymbol {\sigma }}$ [^1] is a [Characteristic and Physical](../classification/general.md) property. It is a second-rank tensor, representable as a Matrix, which consists of nine components $\sigma _{ij}$ that completely define the state of stress at a point inside a deformed material. 
 
 $$
 {\boldsymbol  {\sigma }}=\left[{{\begin{matrix}\sigma _{{xx}}&\sigma _{{xy}}&\sigma _{{xz}}\\\sigma _{{yx}}&\sigma _{{yy}}&\sigma _{{yz}}\\\sigma _{{zx}}&\sigma _{{zy}}&\sigma _{{zz}}\\\end{matrix}}}\right]
