@@ -1,35 +1,70 @@
-site_name: exabyte.io documentation
+site_name: Documentation
 site_url: https://docs.exabyte.io
-theme_dir: exabyte_theme
+site_description: Documentation for the users of Exabyte.io materials modeling platform.
+dev_addr: "localhost:8000"
+
+repo_name: 'exabyte-io/documentation'
+repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
-    - extra.css
+    - extra/css/general.css
+    - extra/css/images.css
+    - extra/css/super-fences.css
+
 extra_javascript:
-    # TODO: migrate away from parse
-    # - https://www.parsecdn.com/js/parse-1.2.16.min.js
-    - extra.js
+    - extra/js/giffer.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-site_favicon: /img/favicon.ico
+
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+
 extra:
-    version: "0.10.0"
+    version: "0.10.8"
     preload_javascript:
-        - /preload_hotjar.js
-        - /preload.js
+        - /extra/js/preload_hotjar.js
+        - /extra/js/preload.js
+    social:
+        - type: github
+          link: https://github.com/exabyte-io
+        - type: linkedin
+          link: https://linkedin.com/exabyte-io
 markdown_extensions:
     - markdown_include.include:
         base_path: esse
     - admonition
-    - markdown.extensions.def_list
-    - pymdownx.arithmatex
-    - pymdownx.superfences
+    - codehilite:
+        linenums: true
     # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
     - footnotes:
         PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
-pages:
+    - markdown.extensions.def_list
+    # https://facelessuser.github.io/pymdown-extensions/
+    - pymdownx.arithmatex           # Render Latex Formulas
+    - pymdownx.details              # Allow admonition-type collapsible <details>
+    - pymdownx.superfences          # Allow for code blocks "fencing"
+    # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
+    - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    - pymdownx.betterem             # Better bold/italic text
+    - pymdownx.striphtml            # Strip html comments before processing
 
+# https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
+# https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+theme:
+    name: material
+    custom_dir: theme
+    palette:
+        primary: indigo
+        accent: indigo
+    logo: "images/logo/logo-white.png"
+    favicon: "images/logo/favicon.ico"
+    font:
+        text: Roboto
+        code: Roboto Mono
+    feature:
+        tabs: false
+
+nav:
     - Home: index.md
 
 # INTRODUCTION
@@ -39,7 +74,6 @@ pages:
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
         - CLI job submission:                            getting-started/cli-job.md
-
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
@@ -358,7 +392,7 @@ pages:
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
 
-    - Jobs via Command Line Interface:
+    - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
         # Jobscript, with examples
         - Batch script:                                 jobs-cli/batch-script.md
@@ -472,7 +506,7 @@ pages:
         # Evolution of data from exiting job execution to webapp/objectstorage (see flowchart in GM notebook)
         - Lifecycle:                                    data/lifecycle.md
 
-    - Structured Data:
+    - Data Structures:
         # Content description and links
         # Links to other pages with Jobs, Materials, Workflows explanation
         - Overview:                                     data-structured/overview.md

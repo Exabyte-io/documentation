@@ -15,7 +15,7 @@ Vienna ab-initio simulation package requires the standard INCAR, KPOINTS, POTCAR
 !!! Note "POTCAR files"
     POTCARs used are from the PAW database of potentials ([link](http://cms.mpi.univie.ac.at/vasp/vasp/PAW_potentials.html)) at version 5.3.5 (default)
 
-<details>
+<details markdown="1">
 <summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
@@ -26,7 +26,7 @@ SIGMA  = 0.1
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**KPOINTS**</summary>
 ```
 Automatic mesh
@@ -37,7 +37,7 @@ Gamma
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**POSCAR**</summary>
 ```
 Silicon FCC
@@ -60,7 +60,7 @@ Quantum ESPRESSO ("QE" or "espresso") requires the input file and pseudopotentia
 !!! Note "UPF pseudopotentials"
     Default pseudopotentials for QE are from the GBRV database ([link](https://www.physics.rutgers.edu/gbrv/)) at version 1.5 (default)
 
-<details>
+<details markdown="1">
 <summary>**pw_scf.in**</summary>
 ```
 &CONTROL
@@ -114,7 +114,7 @@ We classify Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, A
 
 ### VASP
 
-<details>
+<details markdown="1">
 <summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
@@ -124,7 +124,7 @@ ISMEAR =    0
 SIGMA  = 0.1
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**KPOINTS**</summary>
 ```
 Automatic mesh
@@ -134,7 +134,7 @@ Gamma
   0.  0.  0.
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**POSCAR**</summary>
 ```
 Silicon FCC
@@ -152,7 +152,7 @@ direct
 
 ### Quantum Espresso
 
-<details>
+<details markdown="1">
 <summary>**pw_scf.in**</summary>
 ```
 &CONTROL
@@ -209,7 +209,7 @@ Please see the [band structure tutorial](../tutorials/dft/band-structure.md) for
 
 #### VASP
 
-<details>
+<details markdown="1">
 <summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
@@ -220,7 +220,7 @@ SIGMA  = 0.1
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**KPOINTS**</summary>
 ```
 Automatic mesh
@@ -231,7 +231,7 @@ Gamma
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**POSCAR**</summary>
 ```
 Silicon FCC
@@ -247,7 +247,7 @@ direct
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**second step INCAR**</summary>
 ```
 System = fcc Si
@@ -258,7 +258,7 @@ LORBIT=11
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**second step KPOINTS**</summary>
 ```
 kpoints path
@@ -270,7 +270,7 @@ reciprocal
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**second step POSCAR**</summary>
 ```
 Silicon FCC
@@ -288,7 +288,7 @@ direct
 
 #### Quantum Espresso
 
-<details>
+<details markdown="1">
 <summary>**pw_scf.in**</summary>
 ```
 &CONTROL
@@ -334,7 +334,7 @@ K_POINTS automatic
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**pw_bands.in**</summary>
 ```
 &CONTROL
@@ -383,7 +383,7 @@ K_POINTS crystal_b
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**bands.in**</summary>
 ```
 &BANDS
@@ -406,7 +406,7 @@ Please see the [density of states tutorial](../tutorials/dft/density-of-states.m
 VASP calculates the density of states for every simulation so see the example input files for Total energy
 
 
-<details>
+<details markdown="1">
 <summary>**INCAR**</summary>
 ```
 SYSTEM =  Silicon-FCC
@@ -418,7 +418,7 @@ LORBIT=11
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**KPOINTS**</summary>
 ```
 Automatic mesh
@@ -428,7 +428,7 @@ Gamma
   0.  0.  0.
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**POSCAR**</summary>
 ```
 Cubic Diamond Si
@@ -446,7 +446,7 @@ Direct
 
 #### Quantum Espresso
 
-<details>
+<details markdown="1">
 <summary>**pw_scf.in**</summary>
 ```
 &CONTROL
@@ -491,7 +491,7 @@ K_POINTS automatic
 1 1 1 0 0 0
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**pw_bands.in**</summary>
 ```
 &CONTROL
@@ -539,7 +539,7 @@ K_POINTS crystal_b
 0.50000000  0.00000000  0.50000000  10
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**bands.in**</summary>
 ```
 &BANDS
@@ -550,7 +550,7 @@ K_POINTS crystal_b
 /
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**pw_nscf.in**</summary>
 ```
 &CONTROL
@@ -595,7 +595,7 @@ K_POINTS automatic
 1 1 1 0 0 0
 ```
 </details>
-<details>
+<details markdown="1">
 <summary>**projwfc.in**</summary>
 ```
 &PROJWFC
@@ -623,7 +623,7 @@ Please see the [zero point enegry tutorial](../tutorials/dft/zero-point-energy.m
 
 #### VASP
 
-<details>
+<details markdown="1">
 <summary>**INCAR**</summary>
 ```
 IBRION = 5
@@ -634,7 +634,7 @@ SIGMA = 0.1
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**KPOINTS**</summary>
 ```
 Automatic mesh
@@ -645,7 +645,7 @@ Gamma
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**POSCAR**</summary>
 ```
 Silicon FCC
@@ -663,7 +663,7 @@ direct
 
 #### Quantum Espresso
 
-<details>
+<details markdown="1">
 <summary>**pw_scf.in**</summary>
 ```
 &CONTROL
@@ -709,7 +709,7 @@ K_POINTS automatic
 ```
 </details>
 
-<details>
+<details markdown="1">
 <summary>**ph.in**</summary>
 ```
 &INPUTPH

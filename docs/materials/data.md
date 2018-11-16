@@ -6,7 +6,7 @@ We present an example of our approach towards storing structured data for materi
 
 In the expandable section below, the user can find an example JSON representation of a face-centered cubic Silicon: 
 
-<details>
+<details markdown="1">
   <summary>
      Expand to view
   </summary> 
