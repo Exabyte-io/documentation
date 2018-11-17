@@ -10,6 +10,10 @@ An example of such a Density of States plot is shown below. Here, the possibilit
 
 ![Phonon DoS](/images/Properties/phonon-dos.png "Phonon DoS")
 
+## Schema and Example 
+
+The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#phonon-density-of-states).
+
 ## Links
 
 [^1]: [Wikipedia Density of States, Website](https://en.wikipedia.org/wiki/Density_of_states)

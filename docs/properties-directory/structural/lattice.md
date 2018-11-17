@@ -8,6 +8,8 @@ $$
   
 where $n_i$ are any integers, and $a_i$ are known as the **lattice vectors** spanning the lattice in three-dimensional space. The defining characteristic of a Bravais lattice is that, for any choice of position vector $R$, the lattice has to look exactly the same when viewed from any equivalent lattice point.
 
+Information about the Bravais Lattice can be entered within the [lattice editor](../../materials-designer/source-editor/lattice.md) of [Materials Designer](../../materials-designer/overview.md), when a new material is being created.
+
 ## Lattice types
   
 Two Bravais lattices are considered equivalent if they have the same **symmetry elements**. In this sense, there are 14 possible distinct Bravais lattices in three-dimensional space, grouped together into 7 more general symmetry categorizations known as lattice systems. These two categories are tabulated in the image below for reference purposes.
@@ -22,11 +24,15 @@ Bravais lattices can additionally be described by the **lattice parameters** def
 
 ## Volume and Density
 
-The corresponding volume of the above unit cell is consequently given by the scalar triple product between the three lattice vectors defining its axes. The material density can in addition be obtained by dividing the sum of the atomic masses within the unit cell by this volume.
+The corresponding volume $V$ of the above unit cell is consequently given by the scalar triple product between the three lattice vectors defining its axes, as outlined in the formula below. The material density can in addition be obtained by dividing the sum of the atomic masses within the unit cell by this volume.
 
 $$
  V = \mathbf{a}\cdot(\mathbf{b}\times \mathbf{c}) 
 $$
+
+## Schema and Example 
+
+The JSON schema and an example representation for the properties described in this page can be found for each of the [Bravais Lattice](../../properties/data/list.md#bravais-lattice), [lattice vectors](../../properties/data/list.md#lattice-vectors), [volume](../../properties/data/list.md#volume) and [density](../../properties/data/list.md#density).
 
 ## Links
 

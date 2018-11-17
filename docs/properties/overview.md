@@ -10,7 +10,7 @@ Exact set of properties that have to be supplied to, and can be extracted as a r
 
 ## List of Properties
 
-We have listed the properties available for computation on our platform [in this section](../properties-directory/overview.md).
+We have listed and described the properties available for computation on our platform [in this section](../properties-directory/overview.md).
 
 ## Classification
 

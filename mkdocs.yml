@@ -10,6 +10,7 @@ extra_css:
     - extra/css/general.css
     - extra/css/images.css
     - extra/css/super-fences.css
+    - extra/css/properties.css
 
 extra_javascript:
     - extra/js/giffer.js
@@ -419,6 +420,7 @@ nav:
             - Overview:                                 properties/data/overview.md
             - Primitive:                                properties/data/primitive.md
             - List:                                     properties/data/list.md
+            - Periodic Table:                           properties/data/periodic-table.md
         - Classification:
             - Overview:                                 properties/classification/overview.md
             - General:                                  properties/classification/general.md
@@ -432,22 +434,19 @@ nav:
         - Overview:                                     properties-directory/overview.md
         - Scalar:
             - Total Energy:                             properties-directory/scalar/total-energy.md
-            - Pressure:                                 properties-directory/scalar/pressure.md
-            - Total Force:                              properties-directory/scalar/total-force.md
-            - Lists of Energy Contributions:            properties-directory/scalar/energy-contribution.md
             - Fermi Energy:                             properties-directory/scalar/fermi-energy.md
             - Formation Energy:                         properties-directory/scalar/formation-energy.md
             - Surface Energy:                           properties-directory/scalar/surface-energy.md
             - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
+            - Pressure:                                 properties-directory/scalar/pressure.md
+            - Total Force:                              properties-directory/scalar/total-force.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md
-            - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
             - Electronic Density of States:             properties-directory/non-scalar/electronic-dos.md
-            - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
-            - Atomic Forces:                            properties-directory/non-scalar/atomic-forces.md
             - Band Gaps:                                properties-directory/non-scalar/band-gaps.md
-            - Magnetic Moment:                          properties-directory/non-scalar/magnetic-moment.md
+            - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
+            - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
         - Elemental:
             - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
@@ -455,8 +454,9 @@ nav:
         - Structural:
             - Basis Atoms:                              properties-directory/structural/basis-atoms.md
             - Lattice:                                  properties-directory/structural/lattice.md
-            - Elemental Ratio:                          properties-directory/structural/elemental-ratio.md
-            - Symmetry:                                 properties-directory/structural/symmetry.md
+            - Space Group:                              properties-directory/structural/space-group.md
+            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
+            - Atomic Forces:                            properties-directory/structural/atomic-forces.md
             - Final Structure:                          properties-directory/structural/final-structure.md
 
 

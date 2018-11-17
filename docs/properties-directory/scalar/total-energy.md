@@ -1,8 +1,6 @@
 # Total Energy
 
-The "Total Energy" refers to the total electronic ground state energy of a material with a fixed lattice (with no thermal vibrations of the atoms). It is an important example of a **[Scalar, Characteristic and Auxiliary](../../properties/classification/general.md) property** of [Materials](../../materials/overview.md), and is routinely calculated during the course of material science simulations. 
-
-The total energy is constituted by the **cohesive (or binding) potential energy** stored internally within the crystal structure of the material, as a result of the chemical bonding interactions between its constituent atoms. A review of its significance in the general context of solid-state thermodynamics is offered in Ref. [^1].
+The "Total Energy" refers to the total electronic ground state energy of a material with a fixed lattice (with no thermal vibrations of the atoms). It is an important example of a **[Scalar and Auxiliary](../../properties/classification/general.md) property** of [Materials](../../materials/overview.md), and is routinely calculated during the course of material science simulations. 
 
 ## Computation
 
@@ -10,8 +8,46 @@ The total energy can be calculated by a basic "self-consistent field" (scf) [Wor
 
 It is presented to the user, as part of the output of a [Job](../../jobs/overview.md), with the appearance displayed below, under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of electronVolt (eV).
 
-<div class="clearfix"><center><div class="chart"><i class="zmdi zmdi-battery-flash zmdi-hc-3x"></i></div><div class="count"><small><!-- react-text: 1660 -->Total energy<!-- /react-text --><!-- react-text: 1661 --><!-- /react-text --></small><h2>-8.922</h2></div></div>
+<div class="clearfix">
+    <center>
+        <div class="chart"><i class="zmdi zmdi-battery-flash zmdi-hc-3x"></i></div>
+        <div class="count">
+        	<small>Total energy</small>
+            <h2>-8.922</h2>
+        </div>
+     </center>
+</div>
+
+## Total Energy Contributions
+
+The Total Energy of a Material is itself comprised of several **Energy Contributions**. They are returned as a list of [Scalar and Auxiliary](../../properties/classification/general.md) quantities.
+
+## Types of Contributions
+
+Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/overview.md) computations. The types included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, as explained in what follows.
+
+The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
+
+## Contributions Computed by all Applications
+
+The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software/modeling/vasp.md) and [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV. 
+
+![Common Contributions](/images/Properties/common-contributions.png "Common Contributions")
+
+## Contributions Computed Only by Quantum ESPRESSO
+
+Two additional energy contributions can be evaluated with Quantum ESPRESSO-based Workflows: the "One-electron" and "Harris-Foulkes" contributions. They are both returned as values expressed in eV, in a similar format to the other properties listed in the above image. 
+
+## Schema and Example 
+
+The JSON schema and an example representation for the total energy can be found [here](../../properties/data/list.md#total-energy), whereas that for its contributions [here](../../properties/data/list.md#total-energy-contributions).
  
 ## Links 
 
-[^1]: [Cohesion (Bonding) in Solids, Website](https://www.itp.tu-berlin.de/fileadmin/a3233/upload/SS12/TheoFest2012/Kapitel/Chapter_6.pdf)
+[^1]: [Wikipedia Ewald summation, Website](https://en.wikipedia.org/wiki/Ewald_summation)
+
+[^2]: [Wikipedia Hartree–Fock method, Website](https://en.wikipedia.org/wiki/Hartree%E2%80%93Fock_method)
+
+[^3]: [Introduction to Density Functional Theory and Exchange-Correlation Energy Functionals, Website](https://www.uio.no/studier/emner/matnat/fys/FYS4411/v11/undervisningsmateriale/Lecture_notes_and_literature/jones.pdf)
+
+[^4]: [Wikipedia Harris functional, Website](https://en.wikipedia.org/wiki/Harris_functional)

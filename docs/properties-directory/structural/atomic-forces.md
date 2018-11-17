@@ -12,6 +12,10 @@ Under the [Results Tab](../../jobs/ui/results-tab.md) within [Jobs Viewer](../..
 
 ![Atomic forces](/images/Properties/atomic_forces.png "Atomic forces")
 
+## Schema and Example 
+
+The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#atomic-forces).
+
 ## Links
 
 [^1]: [Wikipedia Interatomic potential, Website](https://en.wikipedia.org/wiki/Interatomic_potential)
