@@ -4,7 +4,7 @@ Supercell is a widely used crystallographic concept [[1](#links)]. A general the
 
 # Theoretical Background
 
-<details>
+<details markdown="1">
   <summary>
     Expand to view ...
   </summary>
@@ -30,7 +30,7 @@ There are many occurrences of methods in computational materials science for det
  
 ### Conventional vs primitive cells
  
-The conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect more intuitively the overall symmetry of such systems. The figure below illustrates this for the example of an fcc lattice. In this image, the volume marked in red represents the primitive unit cell, whereas the over-arching cubic conventional supercell exhibits the full face-centred cubic symmetry from which the corresponding crystal structure gets its name:
+The conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect more intuitively the overall symmetry of such systems. The figure below illustrates this for the example of an fcc lattice. In this image, the volume marked in red represents the primitive unit cell, whereas the over-arching cubic conventional supercell exhibits the full face-centered cubic symmetry from which the corresponding crystal structure gets its name:
 
 <img src="/images/TGa4T.png"/>
 
