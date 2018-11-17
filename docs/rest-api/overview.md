@@ -1,10 +1,10 @@
 # RESTful API
 
-[RESTful](#links) API (or REST-API, or Representational State Transfer Application Programming Interface) is a layer allows to access and manipulate textual representation of the web resources (eg. [Entities](../entities-general/overview.md)) by using a uniform and predefined set of stateless operations. In other words, REST-API provides **programmatic** access to data and functionality for data scientists and engineers, and anyone else who prefers coding to the user interface.
+## Definition
 
-## Operation
+[RESTful](#links) API (or REST-API, or Representational State Transfer Application Programming Interface) is a layer allows to access and manipulate textual representation of the web resources (eg. [Entities](../entities-general/overview.md)) by using a uniform and predefined set of stateless operations. 
 
-The recommended way use the API is to form authenticated queries through a client. Below we refers the readers to sections explaining authentication parameters, requests and response structure, endpoints, API client and examples.
+In other words, REST-API provides **programmatic** access to data and functionality for data scientists and engineers, and anyone else who prefers coding to the user interface.
 
 ## Authentication
 
@@ -20,11 +20,11 @@ The recommended way use the API is to form authenticated queries through a clien
 
 ## API Client
 
-[API client](exabyte-api-client.md) section explains how to access REST-API via Python.
+[API client](api-client.md) section explains how to access REST-API via Python.
 
 ## API Examples
 
-[API examples](exabyte-api-examples.md) section contains examples of performing the most common tasks.
+[API examples](api-examples.md) section contains examples of performing the most common tasks.
 
 ## Links
 
