@@ -14,8 +14,20 @@ The surface energy can be calculated by an appropriate [Workflow](../../workflow
 
 It is presented to the user with the appearance displayed below, under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of eV/Angstroms^2.
 
-<div class="clearfix"><center><div class="chart"><i class="zmdi zmdi-battery-flash zmdi-hc-3x"></i></div><div class="count"><small><!-- react-text: 1660 -->Surface energy<!-- /react-text --><!-- react-text: 1661 --><!-- /react-text --></small><h2>0.165</h2></div></div>
- 
+<div class="clearfix">
+    <center>
+        <div class="chart"><i class="zmdi zmdi-battery-flash zmdi-hc-3x"></i></div>
+        <div class="count">
+        	<small>Surface energy</small>
+            <h2>0.165</h2>
+        </div>
+     </center>
+</div>
+
+## Schema and Example 
+
+The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#surface-energy).
+
 ## Links 
 
 [^1]: [Wikipedia Surface Energy, Website](https://en.wikipedia.org/wiki/Surface_energy)

@@ -29,7 +29,7 @@ In addition to the default primitive types for JSON Schemas, we construct additi
 
 ## List of Schemas
 
-[In this section](list.md), we offer a full list of schemas and examples relevant for properties.
+[In this section](list.md), we offer a full list of schemas and examples relevant for properties. The properties relevant for each element in the Periodic Table are also listed [separately](periodic-table.md).
 
 ## Links
 
