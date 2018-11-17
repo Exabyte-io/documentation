@@ -53,10 +53,10 @@ The example of a JSON data structure is shown in the expandable section below. T
 
 ## JSON source
 
-<details>
+<details markdown="1">
   <summary>
      "Expand to view": ...
-  </summary> 
+  </summary>
 
 ```json
 {
@@ -75,4 +75,5 @@ The example of a JSON data structure is shown in the expandable section below. T
     }
 }
 ```
+
 </details>

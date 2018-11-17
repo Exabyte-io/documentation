@@ -1,6 +1,6 @@
 # Structured Data
 
-We store each item in the Entity Collections in the form of **structured data** in JSON format [[1](#links)]. The user is referred to the corresponding [section of the documentation](/data-structured/overview.md) for the explanation of the concept of structured data in the context of our platform.
+We store each item in the Entity Collections in the form of **structured data** in JSON format. The user is referred to the corresponding [section of the documentation](../data-structured/overview.md) for the explanation of the concept of structured data in the context of our platform.
 
 # Example JSON representation
 
@@ -48,7 +48,7 @@ The reader is referred to other documentation pages for aspects that might perta
 | createdAt / updatedAt  | Date and Time Information  | Information about the date and time at which the entity was first created / updated.  |
 | tags | Descriptive Metadata  | See dedicated section below for further explanations. |
 
-## Owner/Creator Keyword
+## Owner/Creator
 
 | Keyword    |  Short Description      | Details        | 
 | :-------- |:----------- |:------------- |
@@ -65,7 +65,7 @@ Metadata can be added to an entity item in one or more of the following forms.
 
 ## Description
 
-In some cases, the user can add a general description for reference purposes, which can be entered in plain text or using Markdown language [[2](#links)] as explained [here](actions/metadata.md#edit-description)
+In some cases, the user can add a general description for reference purposes, which can be entered in plain text or using Markdown language [[1](#links)] as explained [here](actions/metadata.md#edit-description)
 
 ## Tags
 
@@ -77,10 +77,9 @@ A specific kind of metadata is used to mark slabs / surfaces. Such metadata is s
 
 # Slug
 
-It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters [[3](#links)]. We store machine-safe representation of the entity "name" (as explained in the table above) under "slug" keyword.
+It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters [[2](#links)]. We store machine-safe representation of the entity "name" (as explained in the table above) under "slug" keyword.
 
 # Links
 
-1. [JSON specifications, Website](https://www.json.org/)
-2. [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)
-3. [Slugify library for Javascript, Website](https://www.npmjs.com/package/slugify)
+1. [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)
+2. [Slugify library for Javascript, Website](https://www.npmjs.com/package/slugify)
