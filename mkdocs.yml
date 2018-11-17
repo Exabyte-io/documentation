@@ -628,8 +628,8 @@ nav:
       # Query structure section explains the structure of requests and responses.
       - Query structure:                            rest-api/query-structure.md
       - Endpoints:                                  rest-api/endpoints.md
-      - Exabyte API client:                          rest-api/exabyte-api-client.md
-      - Exabyte API examples:                        rest-api/exabyte-api-examples.md
+      - Exabyte API client:                          rest-api/api-client.md
+      - Exabyte API examples:                        rest-api/api-examples.md
 
 
 # TUTORIALS AND EXAMPLES
