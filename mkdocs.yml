@@ -1,28 +1,69 @@
-site_name: exabyte.io documentation
+site_name: Documentation
 site_url: https://docs.exabyte.io
-theme_dir: exabyte_theme
+site_description: Documentation for the users of Exabyte.io materials modeling platform.
+dev_addr: "localhost:8000"
+
+repo_name: 'exabyte-io/documentation'
+repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
-    - extra.css
+    - extra/css/general.css
+    - extra/css/images.css
+    - extra/css/super-fences.css
+
 extra_javascript:
-    # TODO: migrate away from parse
-    # - https://www.parsecdn.com/js/parse-1.2.16.min.js
-    - extra.js
+    - extra/js/giffer.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-site_favicon: /img/favicon.ico
+
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+
 extra:
-    version: "0.10.0"
+    version: "0.10.8"
     preload_javascript:
-        - /preload_hotjar.js
-        - /preload.js
+        - /extra/js/preload_hotjar.js
+        - /extra/js/preload.js
+    social:
+        - type: github
+          link: https://github.com/exabyte-io
+        - type: linkedin
+          link: https://linkedin.com/exabyte-io
 markdown_extensions:
+    - markdown_include.include:
+        base_path: esse
     - admonition
-    - pymdownx.arithmatex
+    - codehilite:
+        linenums: true
+    # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
+    - footnotes:
+        PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
-pages:
+    # https://facelessuser.github.io/pymdown-extensions/
+    - pymdownx.arithmatex           # Render Latex Formulas
+    - pymdownx.details              # Allow admonition-type collapsible <details>
+    - pymdownx.superfences          # Allow for code blocks "fencing"
+    # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
+    - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    - pymdownx.betterem             # Better bold/italic text
+    - pymdownx.striphtml            # Strip html comments before processing
 
+# https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
+# https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+theme:
+    name: material
+    custom_dir: theme
+    palette:
+        primary: indigo
+        accent: indigo
+    logo: "images/logo/logo-white.png"
+    favicon: "images/logo/favicon.ico"
+    font:
+        text: Roboto
+        code: Roboto Mono
+    feature:
+        tabs: false
+
+nav:
     - Home: index.md
 
 # INTRODUCTION
@@ -30,8 +71,8 @@ pages:
         - Run first simulation:                          getting-started/run-first-simulation.md
         # Table of Contents re-iterated
         - Content highlights:                            getting-started/content-highlights.md
+        - Important Concepts:                            getting-started/important-concepts.md
         - CLI job submission:                            getting-started/cli-job.md
-
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
@@ -145,6 +186,7 @@ pages:
 
     - Methods:
         - Overview:                                     methods/overview.md
+        - Data:                                         methods/data.md
         - Pseudopotential:
             - Overview:                                 methods/pseudopotential/overview.md
             - Parameters:                               methods/pseudopotential/parameters.md
@@ -349,7 +391,7 @@ pages:
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
 
-    - Jobs via Command Line Interface:
+    - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
         # Jobscript, with examples
         - Batch script:                                 jobs-cli/batch-script.md
@@ -368,45 +410,52 @@ pages:
             - Terminate:                                jobs-cli/actions/terminate.md
 
     - Properties:
-        # Consider putting current properties page content here
         - Overview:                                     properties/overview.md
-        # Explain how the extraction of raw properties is done
-        # Note that we have plans to add user-defined extractors in the future
+        - List of Properties:                           properties/list.md
         - Extractors:                                   properties/extractor.md
-        # Evolution
         - Refinement:                                   properties/refinement.md
+        - Retrieval:                                    properties/retrieval.md
         # GATEWAY to MATERIALS-DATA
         # Note that we have plans to add user-defined schemas for properties
-        - Schemas & Examples:                           data-structured/schemas.md
+        - Data:
+            - Overview:                                 properties/data/overview.md
+            - Primitive:                                properties/data/primitive.md
+            - List:                                     properties/data/list.md
+        - Classification:
+            - Overview:                                 properties/classification/overview.md
+            - General:                                  properties/classification/general.md
+            - Machine Learning:                         properties/classification/machine-learning.md
+            - Materials:                                properties/classification/materials.md
+
         - User Interface:
             # Properties Explorer is located under Materials Viewer
-            - Explorer:                                 properties/ui/explorer.md
+            - Properties Explorer:                      properties/ui/explorer.md
             # Final Structure Materials Viewer under results Tab in Jobs Viewer
-            - Viewer:                                   properties/ui/viewer.md
+            - Final Structure Viewer:                   properties/ui/viewer.md
         # The sections below explain all Characteristic properties, with mentions about their UI appearances
         - Scalar:
-            # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
+            - Overview:                                 properties/scalar/overview.md
+            # Energies: Total Energy, Fermi Energy, Zero Point Energy
             - Energies:                                 properties/scalar/energies.md
             # Total force and average pressure
             - Pressure / Total Force:                   properties/scalar/pressure.md
-        - Array:
+            - Lists of Energy Contributions:            properties/scalar/energy-contribution.md
+        - Non-Scalar:
+            - Overview:                                 properties/non-scalar/overview.md
             # Add a link to other atomic properties
-            - Atomic forces:                            properties/tensorial/atomic-forces.md
-            - Stress tensor:                            properties/tensorial/stress-tensor.md
-        - Dispersion Curves:
+            - Stress Tensor:                            properties/non-scalar/stress-tensor.md
             # Include description of band-gap here
-            - Band Structure:                           properties/dispersion/bandstructure.md
-            - Phonons:                                  properties/dispersion/phonons.md
-            - Density of States:                        properties/dispersion/dos.md
-        # The section below explains all of the Descriptive properties, in terms of their theoretical background
-        - Structural:
+            - Band Structure:                           properties/non-scalar/bandstructure.md
+            - Phonons:                                  properties/non-scalar/phonons.md
+            - Density of States:                        properties/non-scalar/dos.md
+            # The section below explains all of the Descriptive properties, in terms of their theoretical background
             # Consider Moving Basis/lattice explanation from Materials Designer to here
-            # Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
-            - Atomic:                                   properties/structural/atomic.md
+            # Atomic coordinates, Atomic forces, Basis
+            - Atomic:                                   properties/non-scalar/atomic.md
             # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
-            - Lattice:                                  properties/structural/lattice.md
+            - Lattice:                                  properties/non-scalar/lattice.md
             # Explain how basis can be attached to lattice to create crystal structure
-            - Final Structure:                          properties/structural/final-structure.md
+            - Crystal Structure:                        properties/non-scalar/final-structure.md
 
 
 # COMPUTATIONAL ASPECTS
@@ -448,19 +497,19 @@ pages:
             - User Interface:                             infrastructure/compute-settings/ui.md
             - Data:                                       infrastructure/compute-settings/data.md
 
-
     - Data Practices:
+        - Overview:                                     data/overview.md
         # Classification - 3 types of data + links to the corresponding sections
         - Classification:                               data/classification.md
         # Evolution of data from exiting job execution to webapp/objectstorage (see flowchart in GM notebook)
         - Lifecycle:                                    data/lifecycle.md
 
-    - Structured Data:
+    - Data Structures:
         # Content description and links
         # Links to other pages with Jobs, Materials, Workflows explanation
         - Overview:                                     data-structured/overview.md
         # GATEWAY to MATERIALS-DATA
-        - Schemas & Examples:                           data-structured/schemas.md
+        - Convention:                                   data-structured/convention.md
 
     - Data on Disk:
         # Content description and links
@@ -612,13 +661,6 @@ pages:
         # TODO: check relevance and update/delete
         - CLI data import:                              tutorials/cli-job-import.md
 
-    - Benchmarks:
-        - High Throughput Screening:                    benchmarks/high-throughput-screening.md
-        - Distributed Memory Runs:                      benchmarks/distributed-memory.md
-        - Vendor Comparison:                            benchmarks/vendor-comparison.md
-        - High-Performance Linpack:                     benchmarks/hpl-benchmark.md
-
-
 # LEGAL
     - Site Policy:
         - Privacy:                                      site-policy/privacy-statement.md
@@ -637,7 +679,12 @@ pages:
         - Restricted Content:                           other/restricted.md
         - Account Registration:                         other/registration.md
 
-
+    - Benchmarks:
+        - High Throughput Screening:     benchmarks/high-throughput-screening.md
+        - Distributed Memory Runs:       benchmarks/distributed-memory.md
+        - Vendor Comparison:             benchmarks/vendor-comparison.md
+        - High-Performance Linpack:      benchmarks/hpl-benchmark.md
+        - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md

@@ -4,7 +4,7 @@ Every crystal structure has an underlying Bravais lattice [[1](#links)]. For mor
 
 # Theoretical Background
 
-<details>
+<details markdown="1">
   <summary>
     Expand to view ...
   </summary>

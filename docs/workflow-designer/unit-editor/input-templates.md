@@ -18,7 +18,7 @@ More about the logic behind templates and rendering is explained in [this part o
 
 The example of a JSON data structure, containing the input data for the template of a "pw_scf" unit computation for FCC Silicon is shown in the expandable section below. 
 
-<details>
+<details markdown="1">
   <summary>
      Expand to view
   </summary> 
@@ -71,7 +71,7 @@ The example of a JSON data structure, containing the input data for the template
 
 An example of an input template matching the above JSON source data, and referring to the same "pw_scf" unit calculation, can be viewed in the expandable section below:
 
-<details>
+<details markdown="1">
   <summary>
      Expand to view
   </summary> 
@@ -128,7 +128,7 @@ By clicking on the "Preview" tab next to "Template" at the bottom of the Unit Ed
 
 An example of input text, resulting from the above-mentioned JSON data structure and input template is displayed in the expandable section below:
 
-<details>
+<details markdown="1">
   <summary>
      "Expand to view": ...
   </summary> 
