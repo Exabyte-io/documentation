@@ -42,7 +42,7 @@ In addition, the atomic coordinates can be converted from such crystal units to 
 
 ## Transformation between Crystal and Cartesian units
 
-<details>
+<details markdown="1">
   <summary>
     Expand to view ...
   </summary>
