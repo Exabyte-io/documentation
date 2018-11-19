@@ -421,7 +421,7 @@ nav:
         - Data:
             - Overview:                                 properties/data/overview.md
             - Primitive:                                properties/data/primitive.md
-            - List:                                     properties/data/list.md
+            - List of Schemas:                          properties/data/list.md
             - Periodic Table:                           properties/data/periodic-table.md
         - Classification:
             - Overview:                                 properties/classification/overview.md
