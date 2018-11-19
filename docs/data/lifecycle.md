@@ -1,6 +1,6 @@
 # Data Lifecycle
 
-We now explain the general evolution of data, from the moment it is sent to the computing resources for job execution, to the moment it is stored as objects and as structured data in the database in order to be read by the Web Interface. We refer to this evolution flow as the **Data Lifecycle**.
+We now explain the general evolution of data. This evolution spans the duration of events from the moment the data is sent to the computing resources for job execution, to the moment it is stored as objects/structured data in the database in order to be read by the Web Interface. We refer to this evolution flow as the **Data Lifecycle**.
 
 The Data Lifecycle is composed primarily of the following three steps.
 
