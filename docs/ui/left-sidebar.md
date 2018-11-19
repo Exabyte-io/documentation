@@ -48,7 +48,7 @@ Links to [Entity Bank](/entities-general/bank.md) pages for Materials and Workfl
 
 # Dropbox
 
-[Dropbox]((data/files/dropbox.md)), a central limited-capacity cloud-based data storage, is available under this link.
+[Dropbox](../data-in-objectstorage/dropbox.md), a central limited-capacity cloud-based data storage, is available under this link.
 
 
 # Accounts and Data Sharing
