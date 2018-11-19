@@ -413,9 +413,11 @@ nav:
 
     - Properties:
         - Overview:                                     properties/overview.md
-        - Extractors:                                   properties/extractor.md
-        - Refinement:                                   properties/refinement.md
-        - Retrieval:                                    properties/retrieval.md
+        - Lifecycle:
+            - Overview:                                 properties/lifecycle/overview.md
+            - Extractors:                               properties/lifecycle/extractor.md
+            - Refinement:                               properties/lifecycle/refinement.md
+            - Retrieval:                                properties/lifecycle/retrieval.md
         - Data:
             - Overview:                                 properties/data/overview.md
             - Primitive:                                properties/data/primitive.md
