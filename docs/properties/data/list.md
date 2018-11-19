@@ -179,7 +179,7 @@ Stress tensor contains a 3x3 matrix of the stress components of the unit cell.
 
 ### [Atomic Radius](../../properties-directory/elemental/atomic-radius.md)
 
-The atomic radius the average distance between the nucleus of an atom and the edges of its surrounding electron cloud.
+The atomic radius represents the average distance between the nucleus of an atom and the edges of its surrounding electron cloud.
 
 ```json tab="Schema"
 {!schema/material/properties/elemental/atomic_radius.json!}

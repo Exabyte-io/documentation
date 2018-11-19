@@ -12,7 +12,7 @@ The JSON schema and an example representation for this property can be found [he
 
 ## Links
 
-[^1]: [Lattices and Space-Group Theory, Document](https://www.springer.com/cda/content/document/cda_downloaddocument/9781461439561-c1.pdf?SGWID=0-0-45-1414341-p174314670)
+[^1]: [Lattices and Space-Group Theory; "Structure Determination by X-ray Crystallography", Authors: M. Ladd, R. Palmer (Springer 2013),  Document](https://www.springer.com/cda/content/document/cda_downloaddocument/9781461439561-c1.pdf?SGWID=0-0-45-1414341-p174314670)
 
 [^2]: [Wikipedia Space group, Website](https://en.wikipedia.org/wiki/Space_group)
 

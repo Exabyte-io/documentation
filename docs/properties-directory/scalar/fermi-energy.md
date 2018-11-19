@@ -1,10 +1,10 @@
 # Fermi Energy
 
-The Fermi Energy marks the highest occupied energy level in the electronic bandstructure of a solid [^1]. Similarly to the [total energy](total-energy.md), it is a **[Scalar and Auxiliary](../../properties/classification/general.md) property** of the material.
+The Fermi Energy marks the highest occupied energy level in the [electronic bandstructure](../non-scalar/bandstructure.md) of a solid [^1]. Similarly to the [total energy](total-energy.md), it is a **[Scalar and Auxiliary](../../properties/classification/general.md) property** of the material.
 
 ## Computation
 
-Its value can be estimated with any [Bandstructure Workflow](../non-scalar/bandstructure.md), and it is returned under the [Results Tab](../../jobs/ui/results-tab.md) interface with the following appearance, in eV.
+Its value can be estimated with any bandstructure [Workflow](../../workflows/overview.md), and it is returned under the [Results Tab](../../jobs/ui/results-tab.md) interface with the following appearance, in eV.
 
 <div class="clearfix">
     <center>
