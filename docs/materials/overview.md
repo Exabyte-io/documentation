@@ -30,7 +30,7 @@ The [Data](data.md) section contains an example of JSON representation of a mate
 
 ## Classification
 
-Materials are distinguished based on whether they are [crystalline](classification/crystalline.md) or [amorphous](classification/amorphous.md).
+Materials are distinguished based on whether they are [crystalline](classification/crystalline.md) or [non-crystalline](classification/non-crystalline.md).
 
 ## [Properties](../properties/overview.md)
 

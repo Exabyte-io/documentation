@@ -278,7 +278,7 @@ nav:
         - Default:                                      materials/default.md
         - Classification:
             - Crystalline:                              materials/classification/crystalline.md
-            - Amorphous:                                materials/classification/amorphous.md
+            - Non-Crystalline:                          materials/classification/non-crystalline.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
