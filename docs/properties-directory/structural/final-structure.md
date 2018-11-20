@@ -1,6 +1,6 @@
 # Final Structure
 
-The final structure represents the [crystal structure](crystal-structure.md) of a [material](../../materials/overview.md) which is generated as part of the output of a simulation [Job](../../jobs/overview.md).
+The final structure represents the [crystal structure](../../materials/data.md) of a [material](../../materials/overview.md) which is generated as part of the output of a simulation [Job](../../jobs/overview.md).
 
 ## Example
 
