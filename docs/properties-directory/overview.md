@@ -40,7 +40,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|
 | [Magnetic Moments](structural/magnetic-moment.md)    | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
-| [Basis Atoms](structural/basis-atoms.md)             | The individual atoms comprised in the crystal structure  |
+| [Basis Atoms](structural/basis.md)             | The individual atoms comprised in the crystal structure  |
 | [Atomic forces](structural/atomic-forces.md)         | Force exerted on each atom by its surrounding |
 | [Bravais Lattice](structural/lattice.md)             | The underlying Bravais Lattice of the crystal structure |
 | [Space Group](structural/space-group.md)             | Information about the symmetry elements contained in crystal structure |

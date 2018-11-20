@@ -1,12 +1,12 @@
 # Final Structure
 
-A complete **crystal structure** [^1] is obtained when a [set of atoms](basis-atoms.md), known as the **basis atoms** or **repeating unit**, are convolved with each one of the lattice points of the underlying [Bravais lattice](lattice.md). 
+A complete **crystal structure** [^1] is obtained when a [set of atoms](basis.md), known as the **basis atoms** or **repeating unit**, are convolved with each one of the lattice points of the underlying [Bravais lattice](lattice.md). 
 
 The image below outlines this procedure conceptually.
 
 ![Crystal Structure](/images/crystal_structure.jpg "Crystal Structure")
 
-## Viewer
+## Example
 
 The final [crystal structure](../../materials/overview.md), computed as part of a simulation [Job](../../jobs/overview.md), can be inspected under an instance of the [Materials Viewer interface](../../materials/ui/viewer.md) within the [Results Tab](../../jobs/ui/results-tab.md) of the corresponding [Job Viewer](../../jobs/ui/viewer.md). 
 

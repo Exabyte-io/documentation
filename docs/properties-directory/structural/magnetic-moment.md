@@ -4,7 +4,7 @@ The calculation of Magnetic Moments is especially relevant in the context of **F
 
 The Magnetic Moment is a **[Vector and Physical](../../properties/classification/general.md) property** of the [Material](../../materials/overview.md) under consideration.
 
-## Computation
+## Example
 
 The magnetic moment can be computed by inserting the corresponding [Workflow Modifier](../../workflow-designer/subworkflow-editor/overview.md).
 
@@ -12,7 +12,7 @@ It is returned to the user as a set of vectors (one for each atom present in the
 
 ![Magnetic Moment](/images/Properties/magnetic-moment.png "Magnetic Moment")
 
-## Schema and Example 
+## Schema 
 
 The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#magnetic-moments).
 
