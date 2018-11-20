@@ -1,8 +1,8 @@
 # Total Force
 
-Similarly to the [average pressure](pressure.md), the **Total Force** is also treated as a [Scalar and Physical](../../properties/classification/general.md) property, defined as the norm (or magnitude) of the net vector sum of the individual [atomic forces](../structural/basis-atoms.md), summed across all atoms present in the crystal structure under consideration.
+Similarly to the [average pressure](pressure.md), the **Total Force** is also treated as a [Scalar](../../properties/classification/general.md) property, defined as the norm (or magnitude) of the net vector sum of the individual [atomic forces](../structural/basis.md), summed across all atoms present in the crystal structure under consideration.
 
-## Computation
+## Example
 
 This material property is displayed under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) as follows, in units of eV/Angstroms. It it also routinely computed as part of any total energy self-consistent field (scf) calculation using [DFT](../../models/dft/overview.md).
 
@@ -16,6 +16,6 @@ This material property is displayed under the [Results Tab](../../jobs/ui/result
      </center>
 </div>
 
-## Schema and Example 
+## Schema 
 
 The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#total-force).

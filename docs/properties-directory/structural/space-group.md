@@ -6,7 +6,7 @@ In its simplest form, a space group may be derived from translational symmetry. 
 
 Space Groups are labelled by a distinctive notation convention, as tabulated in Ref. [^3]. For example, the space group of the cubic-diamond crystal structure, which silicon, germanium and carbon (diamond) share in common, is labelled by the symbol "Fd-3m".
 
-## Schema and Example 
+## Schema 
 
 The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#symmetry).
 

@@ -437,7 +437,8 @@ nav:
         - Scalar:
             - Total Energy:                             properties-directory/scalar/total-energy.md
             - Fermi Energy:                             properties-directory/scalar/fermi-energy.md
-            - Formation Energy:                         properties-directory/scalar/formation-energy.md
+#              TODO: re-enable when implemented
+#            - Formation Energy:                         properties-directory/scalar/formation-energy.md
             - Surface Energy:                           properties-directory/scalar/surface-energy.md
             - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
             - Pressure:                                 properties-directory/scalar/pressure.md
@@ -454,7 +455,7 @@ nav:
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
             - Ionization Potential:                     properties-directory/elemental/ionization-potential.md
         - Structural:
-            - Basis Atoms:                              properties-directory/structural/basis-atoms.md
+            - Basis:                                    properties-directory/structural/basis.md
             - Lattice:                                  properties-directory/structural/lattice.md
             - Space Group:                              properties-directory/structural/space-group.md
             - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md

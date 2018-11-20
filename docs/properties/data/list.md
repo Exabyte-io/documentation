@@ -227,7 +227,7 @@ Forces may exist between atoms in a crystal structure if they are displaced away
 {!example/material/properties/primary/structural/atomic_forces.json!}
 ```
 
-### [Atomic Coordinates](../../properties-directory/structural/basis-atoms.md)
+### [Atomic Coordinates](../../properties-directory/structural/basis.md)
 
 Contains information about the coordinates of atoms within the unit cell by id.
 
@@ -239,7 +239,7 @@ Contains information about the coordinates of atoms within the unit cell by id.
 {!example/material/properties/primary/structural/basis/atomic_coordinates.json!}
 ```
 
-### [Atomic Elements](../../properties-directory/structural/basis-atoms.md)
+### [Atomic Elements](../../properties-directory/structural/basis.md)
 
 Contains an array of the elements in the unit cell and the atom id’s association with each atom.
 
@@ -251,7 +251,7 @@ Contains an array of the elements in the unit cell and the atom id’s associati
 {!example/material/properties/primary/structural/basis/atomic_elements.json!}
 ```
 
-### [Basis](../../properties-directory/structural/basis-atoms.md)
+### [Basis](../../properties-directory/structural/basis.md)
 
 Basis defines elemental and geometrical constitution of the unit cell.
 
@@ -300,7 +300,7 @@ The Density of the material is defined by the sum of the atomic masses within th
 {!example/material/properties/primary/structural/density.json!}
 ```
 
-### [Elemental Ratio](../../properties-directory/structural/basis-atoms.md#elemental-ratio)
+### [Elemental Ratio](../../properties-directory/structural/basis.md#elemental-ratio)
 
 The elemental ratio is given by the fraction of all atoms in a crystal which are composed of a certain element.
 
