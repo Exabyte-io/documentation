@@ -276,6 +276,9 @@ nav:
         - Data:                                         materials/data.md
         - Bank:                                         materials/bank.md
         - Default:                                      materials/default.md
+        - Classification:
+            - Crystalline:                              materials/classification/crystalline.md
+            - Amorphous:                                materials/classification/amorphous.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
