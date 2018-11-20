@@ -2,7 +2,13 @@
 
 We now explain the general evolution of data. This evolution spans the duration of events from the moment the data is sent to the computing resources for job execution, to the moment it is stored as objects/structured data in the database in order to be read by the Web Interface. We refer to this evolution flow as the **Data Lifecycle**.
 
-The Data Lifecycle is composed primarily of the following three steps.
+## Flowchart
+
+In the image below, we present a flowchart summarizing the steps involved in the data lifecycle. 
+
+![Data Lifecycle](/images/data-lifecycle.png "Data Lifecycle")
+
+The Data Lifecycle is composed primarily of the following three steps. The reader is referred to the same number labelling cited in the above image.
 
 ## 1. Entity Structured Data Creation
 
@@ -25,9 +31,3 @@ They are finally stored as [structured data](../data-structured/overview.md) wit
 ### 3b. Storage of Output Files as Objects
 
 The simulation output files are themselves stored in the form of [Objects](../data-in-objectstorage/overview.md), in order to make them accessible to the Web Interface under the [Files Tab](../jobs/ui/files-tab.md) of [Job Viewer](../jobs/ui/viewer.md).
-
-## Flowchart
-
-In the image below, we present a flowchart summarizing the above-mentioned steps involved in the data lifecycle. Here, the reader is referred to the same number labelling cited in the previous headers.
-
-![Data Lifecycle](/images/data-lifecycle.png "Data Lifecycle")
