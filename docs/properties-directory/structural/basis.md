@@ -4,7 +4,7 @@
 
 ## Crystal Basis
 
-The individual atoms in a [crystal structure](../../materials/data.md) are arranged periodically in three-dimensions according to a **repeating unit**, or **basis** - a set of atoms corresponding to certain chemical **elements** and positions.  
+The individual atoms in a [crystal structure](../../materials/classification/crystalline.md) are arranged periodically in three-dimensions according to a **repeating unit**, or **basis** - a set of atoms corresponding to certain chemical **elements** and positions.  
 
 ## Example Atomic Structure
 
