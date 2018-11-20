@@ -1,8 +1,10 @@
 # Basis and Atoms
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Structural</span>
+
 ## Crystal Basis
 
-The individual atoms in a Crystal Structure are arranged periodically in three-dimensions according to a **repeating unit**, or **basis** - a set of atoms corresponding to certain chemical **elements** and positions.  
+The individual atoms in a [crystal structure](crystal-structure.md) are arranged periodically in three-dimensions according to a **repeating unit**, or **basis** - a set of atoms corresponding to certain chemical **elements** and positions.  
 
 ## Example Atomic Structure
 
@@ -13,6 +15,8 @@ A typical example of an atomic arrangement within a material is given by the cub
 ## Atomic Positions
 
 The atomic positions, defining the atom's geometric arrangement within the structure, can be defined and entered in the [basis editor](../../materials-designer/source-editor/basis.md) of [Materials Designer](../../materials-designer/overview.md), as separate three-dimensional vectors. Each vector labels the position of the corresponding atom within the unit cell of the crystal, expressed under either a fractional or Cartesian coordinate system. 
+
+Depending on these atomic coordinates, finite [inter-atomic forces](atomic-forces.md) might arise.
 
 ## Elemental Ratio 
 

@@ -1,5 +1,7 @@
 # Phonons
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Vibrational</span>
+
 The results of phonon lattice vibration calculations [^1] are presented in a similar fashion to those for the [electronic bandstructure](bandstructure.md), in the form of a frequency dispersion plot across the reciprocal space of the Brillouin Zone of the crystal. 
 
 ## Example

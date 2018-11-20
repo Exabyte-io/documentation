@@ -1,5 +1,7 @@
 # Total Force
 
+<span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Mechanical</span>
+
 Similarly to the [average pressure](pressure.md), the **Total Force** is also treated as a [Scalar](../../properties/classification/general.md) property, defined as the norm (or magnitude) of the net vector sum of the individual [atomic forces](../structural/basis.md), summed across all atoms present in the crystal structure under consideration.
 
 ## Example

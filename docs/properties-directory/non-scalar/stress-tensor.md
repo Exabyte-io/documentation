@@ -1,5 +1,7 @@
 # Stress Tensor
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Mechanical</span>
+
 The stress tensor ${\boldsymbol {\sigma }}$ [^1] is a [Physical](../../properties/classification/general.md) property. It is a second-rank **tensor**, representable as a **Matrix**, which consists of nine components $\sigma _{ij}$ that completely define the state of stress at a point inside a deformed material. 
 
 $$

@@ -456,11 +456,12 @@ nav:
             - Ionization Potential:                     properties-directory/elemental/ionization-potential.md
         - Structural:
             - Basis:                                    properties-directory/structural/basis.md
-            - Lattice:                                  properties-directory/structural/lattice.md
-            - Space Group:                              properties-directory/structural/space-group.md
-            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
             - Atomic Forces:                            properties-directory/structural/atomic-forces.md
+            - Lattice:                                  properties-directory/structural/lattice.md
+            - Crystal Structure:                        properties-directory/structural/crystal-structure.md
+            - Space Group:                              properties-directory/structural/space-group.md
             - Final Structure:                          properties-directory/structural/final-structure.md
+            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
 
 
 # COMPUTATIONAL ASPECTS

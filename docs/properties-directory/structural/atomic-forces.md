@@ -1,6 +1,8 @@
 # Atomic Forces
 
-Atomic Forces define the strength of the bonding interactions between atoms in a crystal structure away from the most stable (lowest potential energy) equilibrium configuration [^1]. 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Mechanical</span>
+
+Atomic Forces define the strength of the bonding interactions between [atoms in a crystal structure](basis.md) away from the most stable (lowest potential energy) equilibrium configuration [^1]. 
 
 They are expressed as a set of vectors, one for each atom in the material, describing the combination of all inter-atomic forces acting upon it originating from all other atoms present in the crystal structure. 
 

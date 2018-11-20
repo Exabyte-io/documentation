@@ -1,5 +1,7 @@
 # Average Pressure
 
+<span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Thermodynamic</span>
+
 We define the **Average Pressure** $p_{avg}$ of a Material as a **[Scalar and Physical](../../data-structured/overview.md) property** obtained from the following conventional formula.
 
 $$

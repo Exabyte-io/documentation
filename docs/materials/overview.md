@@ -6,9 +6,9 @@ This section contains information about how we define, organize, store and inter
 
 ### [Materials Explorer](ui/explorer.md)
 
-The implementation of the [Explorer Interface](/entities-general/ui/explorer.md) for Materials is explained [here](ui/explorer.md). 
+The implementation of the [Explorer Interface](../entities-general/ui/explorer.md) for Materials is explained [here](ui/explorer.md). 
 
-### [Materials Designer](../material-designer/overview.md)
+### [Materials Designer](../materials-designer/overview.md)
 
 **Materials Designer** is introduced [here](../materials-designer/overview.md), 
 

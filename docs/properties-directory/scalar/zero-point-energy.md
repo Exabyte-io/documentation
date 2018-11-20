@@ -1,5 +1,7 @@
 # Thermal Vibrations and Zero Point Energy
 
+<span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Vibrational</span>
+
 A further contribution to the internal energy of a material structure originates from the thermally-induced **lattice vibrations (phonons)**. These are particularly significant at high temperatures, but in the context of [DFT](../../models/dft/overview.md) computations performed at zero temperature they are typically negligible in terms of their energetic contribution. This contribution however remains finite and positive in magnitude due to quantum residual effects. This **"Zero-point Energy"** [^1] contribution to the internal energy of a zero-temperature solid can thus be computed separately. 
 
 ## Example

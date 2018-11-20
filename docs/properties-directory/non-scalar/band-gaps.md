@@ -1,5 +1,7 @@
 # Band Gap
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Electronic</span>
+
 The Bang Gap measures the finite energy difference between the highest occupied and lowest unoccupied energy levels in, respectively, the valence and conduction bands of a semiconducting or insulating material [^1]. 
 
 ## Direct and Indirect Band Gaps
