@@ -24,3 +24,4 @@
 
 1. R.O. Jones and O. Gunnarsson: "The density functional formalism, its applications and prospects"; Rev. Mod. Phys., 61:689–746, 1989. 
 2. M.C. Payne, M.P. Teter, D.C. Allan, T.A. Arias, and J.D. Joannopoulos: "Iterative minimization techniques for ab initio total energy calculations: molecular dynamics and conjugate gradients"; Rev. Mod. Phys., 64:1045–1097, 1992.
+3. [R. O. Jones, Introduction to Density Functional Theory and Exchange-Correlation Energy Functionals, "Computational Nanoscience: Do It Yourself!", John von Neumann Institute for Computing, Julich, 2006](https://www.uio.no/studier/emner/matnat/fys/FYS4411/v11/undervisningsmateriale/Lecture_notes_and_literature/jones.pdf)

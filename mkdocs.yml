@@ -276,6 +276,9 @@ nav:
         - Data:                                         materials/data.md
         - Bank:                                         materials/bank.md
         - Default:                                      materials/default.md
+        - Classification:
+            - Crystalline:                              materials/classification/crystalline.md
+            - Amorphous:                                materials/classification/amorphous.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -437,7 +440,8 @@ nav:
         - Scalar:
             - Total Energy:                             properties-directory/scalar/total-energy.md
             - Fermi Energy:                             properties-directory/scalar/fermi-energy.md
-            - Formation Energy:                         properties-directory/scalar/formation-energy.md
+#              TODO: re-enable when implemented
+#            - Formation Energy:                         properties-directory/scalar/formation-energy.md
             - Surface Energy:                           properties-directory/scalar/surface-energy.md
             - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
             - Pressure:                                 properties-directory/scalar/pressure.md
@@ -454,12 +458,12 @@ nav:
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
             - Ionization Potential:                     properties-directory/elemental/ionization-potential.md
         - Structural:
-            - Basis Atoms:                              properties-directory/structural/basis-atoms.md
+            - Basis:                                    properties-directory/structural/basis.md
+            - Atomic Forces:                            properties-directory/structural/atomic-forces.md
             - Lattice:                                  properties-directory/structural/lattice.md
             - Space Group:                              properties-directory/structural/space-group.md
-            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
-            - Atomic Forces:                            properties-directory/structural/atomic-forces.md
             - Final Structure:                          properties-directory/structural/final-structure.md
+            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
 
 
 # COMPUTATIONAL ASPECTS

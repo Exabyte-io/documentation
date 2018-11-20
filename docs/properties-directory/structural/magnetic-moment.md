@@ -1,10 +1,12 @@
 # Magnetic Moment
 
-The calculation of Magnetic Moments is especially relevant in the context of **Ferromagnetic Materials** [^1], such as iron, nickel, cobalt and most of their alloys. These represent any material that exhibits **spontaneous magnetization**, in the form of the presence of a **net magnetic moment** within the material in the absence of an external magnetic field.
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Structural</span>
+
+The calculation of Magnetic Moments is especially relevant in the context of **Ferromagnetic Materials** [^1], such as iron, nickel, cobalt and most of their alloys. These represent any [material](../../materials/overview.md) that exhibits **spontaneous magnetization**, in the form of the presence of a **net magnetic moment** within the material in the absence of an external magnetic field.
 
 The Magnetic Moment is a **[Vector and Physical](../../properties/classification/general.md) property** of the [Material](../../materials/overview.md) under consideration.
 
-## Computation
+## Example
 
 The magnetic moment can be computed by inserting the corresponding [Workflow Modifier](../../workflow-designer/subworkflow-editor/overview.md).
 
@@ -12,7 +14,7 @@ It is returned to the user as a set of vectors (one for each atom present in the
 
 ![Magnetic Moment](/images/Properties/magnetic-moment.png "Magnetic Moment")
 
-## Schema and Example 
+## Schema 
 
 The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#magnetic-moments).
 

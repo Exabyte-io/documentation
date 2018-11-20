@@ -6,6 +6,8 @@ In each case, we also explain how such results are presented to the user under t
 
 Illustrations of the [JSON schemas](../properties/data/overview.md) and associated examples for each property discussed in the present section are contained [in this page](../properties/data/list.md), and referenced at the end of each property's dedicated description.
 
+At the top of each property's page, we include colored badges referring to the [property classification](../properties/classification/overview.md), distinguishing between [scalar and non-scalar](../properties/classification#by-data-type) types and between the different types of [Materials Properties](../properties/classification/materials.md).
+
 ## Materials Properties
 
 Below we provide a list of Materials properties that can be [extracted](../properties/lifecycle/extractor.md) on our platform. The reader can click each entry to be redirected to the relevant documentation explanation.
@@ -40,7 +42,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|
 | [Magnetic Moments](structural/magnetic-moment.md)    | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
-| [Basis Atoms](structural/basis-atoms.md)             | The individual atoms comprised in the crystal structure  |
+| [Basis Atoms](structural/basis.md)             | The individual atoms comprised in the crystal structure  |
 | [Atomic forces](structural/atomic-forces.md)         | Force exerted on each atom by its surrounding |
 | [Bravais Lattice](structural/lattice.md)             | The underlying Bravais Lattice of the crystal structure |
 | [Space Group](structural/space-group.md)             | Information about the symmetry elements contained in crystal structure |
