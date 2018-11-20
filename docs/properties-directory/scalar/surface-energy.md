@@ -1,5 +1,7 @@
 # Surface Energy
 
+<span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Thermodynamic</span>
+
 The surface energy $\gamma$ [^1] can be extracted as follows.
 
 $$ 

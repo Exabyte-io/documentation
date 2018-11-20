@@ -1,5 +1,7 @@
 # Total Energy
 
+<span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Electronic</span>
+
 The "Total Energy" refers to the total electronic ground state energy of a material with a fixed lattice (with no thermal vibrations of the atoms). It is an important example of an **[Auxiliary](../../properties/classification/general.md) property** of [Materials](../../materials/overview.md), and is routinely calculated during the course of material science simulations. 
 
 ## Examples

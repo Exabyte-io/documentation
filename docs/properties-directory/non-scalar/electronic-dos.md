@@ -1,5 +1,7 @@
 # Electronic Density of States
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Electronic</span>
+
 The Density of States of the material describes the number of states per an interval of energy at each energy level available to be occupied [^1].
 
 ## Example

@@ -1,5 +1,7 @@
 # Phonon Density of States
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Vibrational</span>
+
 The Density of States for the case of lattice vibrations [^1] describes the number of available states across an interval of phonon frequency.
 
 ## Example

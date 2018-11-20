@@ -1,5 +1,7 @@
 # Electronic Bandstructure
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Electronic</span>
+
 The electronic bandstructure of a material describes the range of energies that an electron may have within a crystal (called energy bands) [^1].
 
 ## Example
