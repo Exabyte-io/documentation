@@ -8,7 +8,7 @@ This section contains information about the general policies we use for the hand
 - **unstructured**: non-structured data is explained in two separate locations, for data [stored on the disks](../data-on-disk/overview.md) and [stored as objects](../data-in-objectstorage/overview.md) respectively.
 
 !!!note "Example structured and unstructured data"
-    Unstructured data generated during calculation first resides on disk. Files containing the information can further be processed as explained in [this section](../properties/extractor.md), and further converted to a structured JSON-based format inside our platform. 
+    Unstructured data generated during calculation first resides on disk. Files containing the information can further be processed as explained in [this section](../properties/lifecycle/extractor.md), and further converted to a structured JSON-based format inside our platform. 
 
 ## By relation to Entities
 

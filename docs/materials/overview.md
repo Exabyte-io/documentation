@@ -6,9 +6,9 @@ This section contains information about how we define, organize, store and inter
 
 ### [Materials Explorer](ui/explorer.md)
 
-The implementation of the [Explorer Interface](/entities-general/ui/explorer.md) for Materials is explained [here](ui/explorer.md). 
+The implementation of the [Explorer Interface](../entities-general/ui/explorer.md) for Materials is explained [here](ui/explorer.md). 
 
-### [Materials Designer](../material-designer/overview.md)
+### [Materials Designer](../materials-designer/overview.md)
 
 **Materials Designer** is introduced [here](../materials-designer/overview.md), 
 
@@ -27,6 +27,10 @@ The [Data](data.md) section contains an example of JSON representation of a mate
 ## [Bank](bank.md)
 
 [Materials Bank](bank.md) collection and its related operations is explained in the corresponding section. 
+
+## Classification
+
+Materials are distinguished based on whether they are [crystalline](classification/crystalline.md) or [non-crystalline](classification/non-crystalline.md).
 
 ## [Properties](../properties/overview.md)
 

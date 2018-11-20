@@ -10,6 +10,7 @@ extra_css:
     - extra/css/general.css
     - extra/css/images.css
     - extra/css/super-fences.css
+    - extra/css/properties.css
 
 extra_javascript:
     - extra/js/giffer.js
@@ -38,6 +39,7 @@ markdown_extensions:
         PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
+    - markdown.extensions.def_list
     # https://facelessuser.github.io/pymdown-extensions/
     - pymdownx.arithmatex           # Render Latex Formulas
     - pymdownx.details              # Allow admonition-type collapsible <details>
@@ -274,6 +276,9 @@ nav:
         - Data:                                         materials/data.md
         - Bank:                                         materials/bank.md
         - Default:                                      materials/default.md
+        - Classification:
+            - Crystalline:                              materials/classification/crystalline.md
+            - Non-Crystalline:                          materials/classification/non-crystalline.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -411,51 +416,54 @@ nav:
 
     - Properties:
         - Overview:                                     properties/overview.md
-        - List of Properties:                           properties/list.md
-        - Extractors:                                   properties/extractor.md
-        - Refinement:                                   properties/refinement.md
-        - Retrieval:                                    properties/retrieval.md
-        # GATEWAY to MATERIALS-DATA
-        # Note that we have plans to add user-defined schemas for properties
+        - Lifecycle:
+            - Overview:                                 properties/lifecycle/overview.md
+            - Extractors:                               properties/lifecycle/extractor.md
+            - Refinement:                               properties/lifecycle/refinement.md
+            - Retrieval:                                properties/lifecycle/retrieval.md
         - Data:
             - Overview:                                 properties/data/overview.md
             - Primitive:                                properties/data/primitive.md
-            - List:                                     properties/data/list.md
+            - List of Schemas:                          properties/data/list.md
+            - Periodic Table:                           properties/data/periodic-table.md
         - Classification:
             - Overview:                                 properties/classification/overview.md
             - General:                                  properties/classification/general.md
             - Machine Learning:                         properties/classification/machine-learning.md
             - Materials:                                properties/classification/materials.md
-
         - User Interface:
-            # Properties Explorer is located under Materials Viewer
-            - Properties Explorer:                      properties/ui/explorer.md
-            # Final Structure Materials Viewer under results Tab in Jobs Viewer
-            - Final Structure Viewer:                   properties/ui/viewer.md
-        # The sections below explain all Characteristic properties, with mentions about their UI appearances
+            - Explorer:                                 properties/ui/explorer.md
+            - Viewer:                                   properties/ui/viewer.md
+
+    - Properties Directory:
+        - Overview:                                     properties-directory/overview.md
         - Scalar:
-            - Overview:                                 properties/scalar/overview.md
-            # Energies: Total Energy, Fermi Energy, Zero Point Energy
-            - Energies:                                 properties/scalar/energies.md
-            # Total force and average pressure
-            - Pressure / Total Force:                   properties/scalar/pressure.md
-            - Lists of Energy Contributions:            properties/scalar/energy-contribution.md
-        - Non-Scalar:
-            - Overview:                                 properties/non-scalar/overview.md
-            # Add a link to other atomic properties
-            - Stress Tensor:                            properties/non-scalar/stress-tensor.md
-            # Include description of band-gap here
-            - Band Structure:                           properties/non-scalar/bandstructure.md
-            - Phonons:                                  properties/non-scalar/phonons.md
-            - Density of States:                        properties/non-scalar/dos.md
-            # The section below explains all of the Descriptive properties, in terms of their theoretical background
-            # Consider Moving Basis/lattice explanation from Materials Designer to here
-            # Atomic coordinates, Atomic forces, Basis
-            - Atomic:                                   properties/non-scalar/atomic.md
-            # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
-            - Lattice:                                  properties/non-scalar/lattice.md
-            # Explain how basis can be attached to lattice to create crystal structure
-            - Crystal Structure:                        properties/non-scalar/final-structure.md
+            - Total Energy:                             properties-directory/scalar/total-energy.md
+            - Fermi Energy:                             properties-directory/scalar/fermi-energy.md
+#              TODO: re-enable when implemented
+#            - Formation Energy:                         properties-directory/scalar/formation-energy.md
+            - Surface Energy:                           properties-directory/scalar/surface-energy.md
+            - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
+            - Pressure:                                 properties-directory/scalar/pressure.md
+            - Total Force:                              properties-directory/scalar/total-force.md
+        - Non-scalar:
+            - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
+            - Band Structure:                           properties-directory/non-scalar/bandstructure.md
+            - Electronic Density of States:             properties-directory/non-scalar/electronic-dos.md
+            - Band Gaps:                                properties-directory/non-scalar/band-gaps.md
+            - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
+            - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
+        - Elemental:
+            - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
+            - Electronegativity:                        properties-directory/elemental/electronegativity.md
+            - Ionization Potential:                     properties-directory/elemental/ionization-potential.md
+        - Structural:
+            - Basis:                                    properties-directory/structural/basis.md
+            - Atomic Forces:                            properties-directory/structural/atomic-forces.md
+            - Lattice:                                  properties-directory/structural/lattice.md
+            - Space Group:                              properties-directory/structural/space-group.md
+            - Final Structure:                          properties-directory/structural/final-structure.md
+            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
 
 
 # COMPUTATIONAL ASPECTS
