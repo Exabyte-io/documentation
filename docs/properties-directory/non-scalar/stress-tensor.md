@@ -1,5 +1,7 @@
 # Stress Tensor
 
+<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Mechanical</span>
+
 The stress tensor ${\boldsymbol {\sigma }}$ [^1] is a [Physical](../../properties/classification/general.md) property. It is a second-rank **tensor**, representable as a **Matrix**, which consists of nine components $\sigma _{ij}$ that completely define the state of stress at a point inside a deformed material. 
 
 $$
@@ -10,13 +12,13 @@ The image below offers an explanation of the directions in which each shear and 
 
 ![Stress Tensor](/images/Properties/Components_of_Stress_Tensor.png "Stress Tensor")
 
-## Computation
+## Example
 
 Under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), the components of the stress tensor are presented as follows, expressed in units of kilobars (kbar).
 
 ![Stress Tensor](/images/Properties/stress-tensor.png "Stress Tensor")
 
-## Schema and Example 
+## Schema 
 
 The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#stress-tensor).
 

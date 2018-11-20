@@ -1,5 +1,7 @@
 # Average Pressure
 
+<span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Thermodynamic</span>
+
 We define the **Average Pressure** $p_{avg}$ of a Material as a **[Scalar and Physical](../../data-structured/overview.md) property** obtained from the following conventional formula.
 
 $$
@@ -8,11 +10,11 @@ $$
 
 where ${\boldsymbol{\sigma}}$ is the [internal stress tensor](../non-scalar/stress-tensor.md) of the solid, and $\mathrm{Tr}$ indicates the Trace operator in linear algebra [^1]. 
 
-## Computation
+## Example
 
 The average pressure can be computed as part of any [Workflow](../../workflows/overview.md) involving at least one basic "self-consistent field" (scf) total energy calculation in [DFT](../../models/dft/overview.md). 
 
-It is then presented to the user, as part of the output of a [Job](../../jobs/overview.md), with the following appearance under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of kilo bars (kbar).
+It is then presented to the user, as part of the output of a [Job](../../jobs/overview.md), with the following appearance under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of kilobars (kbar).
 
 <div class="clearfix">
     <center>
@@ -24,7 +26,7 @@ It is then presented to the user, as part of the output of a [Job](../../jobs/ov
      </center>
 </div>
 
-## Schema and Example 
+## Schema 
 
 The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#pressure).
 
