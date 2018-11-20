@@ -4,7 +4,7 @@ The list of calculated Material [properties](../../properties-directory/overview
 
 ## Example Appearance
 
-An example of appearance of Properties Explorer is shown in the image below.
+An example appearance of Properties Explorer is shown in the image below.
 
 ![Materials Properties Explorer](/images/Properties/materials-properties.png "Materials Properties Explorer")
 
