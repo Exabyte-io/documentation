@@ -34,6 +34,7 @@ markdown_extensions:
     - admonition
     - codehilite:
         linenums: true
+    - def_list
     # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
     - footnotes:
         PLACE_MARKER: "///FOOTNOTES GO HERE///"
@@ -537,12 +538,12 @@ nav:
         - Files:                                        data-in-objectstorage/files.md
         # TODO: MM to add content to the page below
         - Security:                                     data-in-objectstorage/security.md
-        - Dropbox(*):                                   data-in-objectstorage/dropbox.md
+        - Dropbox:                                   data-in-objectstorage/dropbox.md
         - User Interface:
             - Dropbox Page:                             data-in-objectstorage/ui/dropbox-page.md
             - Files Tab:                                jobs/ui/files-tab.md
             - Files Explorer:                           data-in-objectstorage/ui/explorer.md
-        - Actions:
+        - Actions > Files:
             # Content description and links
             - Overview:                                 data-in-objectstorage/actions/overview.md
             # Download action for files
