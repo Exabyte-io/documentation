@@ -533,15 +533,14 @@ nav:
 
 
     - Data in Object Storage:
-        # Content description and links
         - Overview:                                     data-in-objectstorage/overview.md
-        # General introduction to Files concept for storing and transferring unstructured data
         - Files:                                        data-in-objectstorage/files.md
         # TODO: MM to add content to the page below
         - Security:                                     data-in-objectstorage/security.md
         - Dropbox(*):                                   data-in-objectstorage/dropbox.md
         - User Interface:
-            # Files tab under Jobs Viewer and in Dropbox
+            - Dropbox Page:                             data-in-objectstorage/ui/dropbox-page.md
+            - Files Tab:                                jobs/ui/files-tab.md
             - Files Explorer:                           data-in-objectstorage/ui/explorer.md
         - Actions:
             # Content description and links
