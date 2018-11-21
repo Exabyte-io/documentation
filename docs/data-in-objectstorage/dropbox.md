@@ -9,6 +9,15 @@ Dropbox is implemented through the [Object Storage](files.md#object-storage-of-f
         
 ## Diagram 
 
-In the diagram below, we display a list of all nodes (shown in yellow) where the central Dropbox is mounted and therefore accessible. Under the Web Interface, its file contents can be inspected from within its [dedicated page](ui/dropbox-page.md).
+In the table below, we provide a list of the nodes where the central Dropbox is mounted and therefore accessible. Under the Web Interface, its file contents can be inspected from within its [dedicated page](ui/dropbox-page.md).
 
-![Dropbox](/images/dropbox-diagram.png "Dropbox")
+<center>
+
+| Nodes with Dropbox mounted |
+|------------|
+| [Web Interface](../ui/overview.md) |
+| [Remote Desktop](../remote-connection/remote-desktop.md) |
+| [Command Line Interface](../cli/overview.md) |
+| [Data on Disks](../data-on-disk) |
+
+<center>
