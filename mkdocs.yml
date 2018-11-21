@@ -543,7 +543,6 @@ nav:
             - Files Tab:                                jobs/ui/files-tab.md
             - Files Explorer:                           data-in-objectstorage/ui/explorer.md
         - Actions:
-            # Content description and links
             - Overview:                                 data-in-objectstorage/actions/overview.md
             # Download action for files
             - Download:                                 data-in-objectstorage/actions/download.md
