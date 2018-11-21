@@ -6,6 +6,6 @@ Upon its copying, this path can be conveniently used in the [Command Line Interf
 
 ## Animation
 
-In the following animation, we demonstrate how to copy the path of a file to the clipboard, after [purging](../../jobs/actions/purge.md) the corresponding simulation data. We then paste it in the [Web Terminal](../../remote-connection/web-terminal.md) with the help of the [Guacamole sidebar](../../remote-connection/actions/guacamole.md).
+In the following animation, we demonstrate how to copy the path of a file to the clipboard, after [purging](../../jobs/actions/purge.md) the corresponding simulation data. We then paste it in the [Web Terminal](../../remote-connection/web-terminal.md) with the help of the [Guacamole sidebar](../../remote-connection/actions/guacamole.md). Normally users would find the files present at the path, but since we just purged them, the directory is no longer present.
 
 <img data-gifffer="/images/purge-job.gif">
