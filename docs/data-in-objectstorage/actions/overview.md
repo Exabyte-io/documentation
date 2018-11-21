@@ -4,7 +4,7 @@ We introduce here the relevant specific actions for managing [Files](../files.md
  
 Performing these actions can be achieved from either the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar) or [actions drop-down](../../entities-general/ui/explorer.md#actions-dropdown) menus.
 
-!!!note "Note: entity actions not applicable"
+!!!note "Note: entity actions are not applicable"
     The [general actions](../../entities-general/actions/overview.md) for entities are not applicable in the case of Files, except for the [Delete](../../entities-general/actions/delete.md) action.
     
 ## Copy Path
@@ -17,8 +17,11 @@ Files can be downloaded to the local hard drive of the user's computer by follow
 
 ## Upload
 
-Conversely, local files can be uploaded to [Dropbox](../dropbox.md) as described [here](upload.md) to make them globally accessible throughout the entire platform. This action is not available in the context of simulation files listed under [Job Viewer](../../jobs/ui/files-tab.md).
+Conversely, local files can be uploaded as described [here](upload.md) to make them globally accessible throughout the entire platform.
 
 ## Create Folder
 
-We explain how to create new folders for grouping files together [in this page](create-folder.md). Similarly to the previous "Upload" action, the "Create Folder" action is only available for [Dropbox](../dropbox.md).
+We explain how to create new folders for grouping files together [in this page](create-folder.md).
+
+!!!note "Note: Dropbox-only actions"
+    The above-mentioned "Create Folder" and "Upload" actions are only available for [Dropbox](../dropbox.md), and not for [Job Viewer](../../jobs/ui/files-tab.md).

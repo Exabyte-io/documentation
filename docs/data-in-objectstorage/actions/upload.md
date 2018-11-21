@@ -1,8 +1,9 @@
-# Upload Files to Dropbox
+# Upload Files
 
 Files originating from the user's local hard drive can be uploaded to [Dropbox](../dropbox.md) through the corresponding button <i class="zmdi zmdi-upload zmdi-hc-border"></i>, accessible from either the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar) or the [actions drop-down](../../entities-general/ui/explorer.md#actions-dropdown) of [Files Explorer](../ui/explorer.md).
 
-This action is not available for [Jobs Viewer](../../jobs/ui/files-tab.md), since in this case the user is not supposed to change the files contained there.
+!!!note "Note: uploading of files is only supported in Dropbox"
+    The upload files action is not available for [Jobs Viewer](../../jobs/ui/files-tab.md), since in this case the user is not supposed to change the files contained there.
 
 ## Animation
 
