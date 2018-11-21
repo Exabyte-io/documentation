@@ -12,6 +12,6 @@ An example of its appearance in the former context is portrayed in the image bel
 
 ## Specific Features
 
-Specific features of Files Explorer consist in the nature of the information displayed under the central table of the interface, as well as some of the [files-specific actions](../actions/overview.md) accessible from the corresponding [drop-down menu](../../entities-general/ui/explorer.md#actions-dropdown).
+Specific features of Files Explorer consist in the nature of the information displayed under the central table of the interface, as well as some of the [files-specific actions](../actions/overview.md).
 
 Specific [table columns](../../entities-general/ui/explorer.md#columns-selector) include information on the **file size**, and on the **time and date** when the file was last **updated** (modified). 
