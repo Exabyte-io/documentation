@@ -4,7 +4,7 @@ Click the Trigger Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> in the top-
 
 <img src="/images/ui-left-sidebar.png"/>
 
-# Items
+## Items
 
 The following table summarizes the different types of items contained in this sidebar. The more complex entries are 
 further described comprehensively in dedicated documentation pages, referenced in the paragraphs that follow the table.
@@ -25,32 +25,32 @@ further described comprehensively in dedicated documentation pages, referenced i
 | <i class="zmdi zmdi-comments"></i> &nbsp; Shared publicly                            | Items shared to the general public
 | <i class="zmdi zmdi-file"></i> &nbsp; Documentation                                 | A link to this documentation
 
-# Dashboard
+## Dashboard
 
-The Dashboard component of the user interface is reviewed in the [following page](/ui/specific/dashboard.md).
+The Dashboard component of the user interface is reviewed in the [following page](../ui/specific/dashboard.md).
 
-# Create Job
+## Create Job
 
-Job creation, explained in more details [here](/jobs/actions/create.md), can be accessed from this link.
+Job creation, explained in more details [here](../jobs/actions/create.md), can be accessed from this link.
 
-# Projects
+## Projects
 
-Click "Projects" to navigate to the list of the [Projects](/jobs/projects.md).
+Click "Projects" to navigate to the list of the [Projects](../jobs/projects.md).
 
-# Jobs, Materials and Workflows *Entities*
+## Jobs, Materials and Workflows *Entities*
 
-The "Jobs", "Materials" and "Workflows" pages contain lists of the respective entities. Due to the numerous different aspect that these entities have in common, they are reviewed together starting from [this page](/entities-general/overview.md).
+The "Jobs", "Materials" and "Workflows" pages contain lists of the respective entities. Due to the numerous different aspect that these entities have in common, they are reviewed together starting from [this page](../entities-general/overview.md).
 
-# Bank
+## Bank
 
-Links to [Entity Bank](/entities-general/bank.md) pages for Materials and Workflows are presented under the "Bank" menu.
-
-
-# Dropbox
-
-[Dropbox]((data/files/dropbox.md)), a central limited-capacity cloud-based data storage, is available under this link.
+Links to [Entity Bank](../entities-general/bank.md) pages for Materials and Workflows are presented under the "Bank" menu.
 
 
-# Accounts and Data Sharing
+## Dropbox
+
+[Dropbox](../data-in-objectstorage/dropbox.md), a central limited-capacity cloud-based data storage, is available under this link.
+
+
+## Accounts and Data Sharing
 
 Information about the other user accounts present in the Exabyte platform, about data shared bilaterally between accounts, and about data made publicly-available to the entire users community, can also be accessed from within the final section of the menu.

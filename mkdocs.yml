@@ -507,9 +507,7 @@ nav:
 
     - Data Practices:
         - Overview:                                     data/overview.md
-        # Classification - 3 types of data + links to the corresponding sections
         - Classification:                               data/classification.md
-        # Evolution of data from exiting job execution to webapp/objectstorage (see flowchart in GM notebook)
         - Lifecycle:                                    data/lifecycle.md
 
     - Data Structures:
