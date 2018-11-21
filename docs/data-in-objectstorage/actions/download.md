@@ -1,6 +1,6 @@
 # Download Files
 
-Files listed under the [Explorer interface](../ui/explorer.md) can be downloaded to the user's local hard drive as a personal copy. This is achieved by clicking the `Download` button <i class="zmdi zmdi-download zmdi-hc-border"></i> from either the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar) or the [actions drop-down](../../entities-general/ui/explorer.md#actions-dropdown).
+Files listed under the [Explorer interface](../ui/explorer.md) can be downloaded to the user's local hard drive as a personal copy. This is achieved by clicking the `Download` button <i class="zmdi zmdi-download zmdi-hc-border"></i> from either the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar) or the [actions drop-down](../../entities-general/ui/explorer.md#actions-dropdown). Alternatively, files can be downloaded directly by clicking them.
 
 ## Animation
 
