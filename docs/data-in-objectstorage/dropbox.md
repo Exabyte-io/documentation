@@ -18,6 +18,6 @@ In the table below, we provide a list of the nodes where the central Dropbox is 
 | [Web Interface](../ui/overview.md) |
 | [Remote Desktop](../remote-connection/remote-desktop.md) |
 | [Command Line Interface](../cli/overview.md) |
-| [Data on Disks](../data-on-disk) |
+| [Data on Disks](../data-on-disk/overview.md) |
 
 <center>
