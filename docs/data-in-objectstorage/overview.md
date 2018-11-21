@@ -1,12 +1,15 @@
 # Object Storage
 
-In the present section of the documentation, we offer a general introduction to the concept of **Object Storage** for **storing** and **transferring** unstructured data, particularly the input and output files of simulations. 
+In the present section of the documentation, we offer a general introduction to the concept of **Object Storage** for **storing** and **transferring** unstructured data, particularly the input and output files of simulations. The procedure of storing data in the form of objects is necessary for making it accessible under the Web Interface.
 
-The procedure of storing files data in the form of objects is necessary for making such data accessible under the Web Interface.
+## Definition
 
+Object Storage [^1]
+:    A particular type of storage architecture that manages unstructured data as Objects, as opposed to other architectures such as the hierarchical file systems. Object Storage provide an established way of accessing files from web applications.
+ 
 ## Files
 
-We provide a general introduction to the concept of Files as objects for storing data [here](files.md).
+We introduce the concept of Files, as referred to inside our platform, [here](files.md).
         
 ## Security
 
@@ -25,3 +28,7 @@ Instances of this explorer interface can be found both under the [Dropbox page](
 ## Actions
 
 We introduce the actions available under the above-mentioned Files Explorer [in this section](actions/overview.md) of the documentation.
+
+## Links
+
+[^1]: [Wikipedia Object storage, Website](https://en.wikipedia.org/wiki/Object_storage)
