@@ -4,7 +4,7 @@ We introduce here the relevant specific actions for managing [Files](../files.md
  
 Performing these actions can be achieved from either the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar) or [actions drop-down](../../entities-general/ui/explorer.md#actions-dropdown) menus.
 
-!!!note "Note: entity actions are not applicable"
+!!! warning "Entity actions are not applicable"
     The [general actions](../../entities-general/actions/overview.md) for entities are not applicable in the case of Files, except for the [Delete](../../entities-general/actions/delete.md) action.
     
 ## Copy Path
@@ -22,6 +22,3 @@ Conversely, local files can be uploaded as described [here](upload.md) to make t
 ## Create Folder
 
 We explain how to create new folders for grouping files together [in this page](create-folder.md).
-
-!!!note "Note: Dropbox-only actions"
-    The above-mentioned "Create Folder" and "Upload" actions are only available for [Dropbox](../dropbox.md), and not for [Job Viewer](../../jobs/ui/files-tab.md).

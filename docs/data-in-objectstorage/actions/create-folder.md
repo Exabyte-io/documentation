@@ -2,7 +2,7 @@
 
 New folders can be created under the [Files Explorer](../ui/explorer.md), in the context of the [Dropbox page](../ui/dropbox-page.md) exclusively. This functionality is convenient for organizing files for easier navigation and retrieval. 
 
-!!!note "Note: folder creation is only supported in Dropbox"
+!!! note "Note: folder creation is only supported in Dropbox"
     At the moment, folder creation is not available with regards to the simulation files under [Job Viewer](../../jobs/ui/files-tab.md), since the user is not supposed to modify the structuring of the files listed there.
 
 The creation of new folders is performed through the corresponding "Create" button <i class="zmdi zmdi-plus zmdi-hc-border"></i>, located under the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar).
@@ -17,6 +17,6 @@ The `Submit` button at the bottom of the dialog should then be pressed to regist
 
 ## Animation
 
-The animation below shows how to create a random new Dropbox folder.
+The animation below shows how to create a new Dropbox folder named "Random Folder".
 
 <img data-gifffer="/images/create-folder.gif">
