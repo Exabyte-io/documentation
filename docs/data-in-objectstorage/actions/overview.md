@@ -21,4 +21,4 @@ Conversely, local files can be uploaded to [Dropbox](../dropbox.md) as described
 
 ## Create Folder
 
-We explain how to create new folders for grouping files together [in this page](create-folder.md). This action is only available for [Dropbox](../dropbox.md).
+We explain how to create new folders for grouping files together [in this page](create-folder.md). Similarly to the previous "Upload" action, the "Create Folder" action is only available for [Dropbox](../dropbox.md).
