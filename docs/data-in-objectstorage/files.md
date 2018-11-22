@@ -4,7 +4,7 @@ Simulations [data](../data/overview.md) is naturally organized in Files in order
 
 ## Files in the Web Interface
 
-When the Files need to be accessed from within the [Web Interface](ui/overview.md), however, it becomes necessary to store them in the Object Storage as mentioned [here](overview.md). The latter then becomes an intermediary to allow accessing the information produced during the simulation time from the web. We further discuss the policies implemented in order to facilitate the security of this approach [here](security.md). 
+When the Files need to be accessed from within the [Web Interface](../ui/overview.md), however, it becomes necessary to store them in the Object Storage as mentioned [here](overview.md). The latter then becomes an intermediary to allow accessing the information produced during the simulation time from the web. We further discuss the policies implemented in order to facilitate the security of this approach [here](security.md). 
 
 We introduce the actions related to the Files in the Web Interface in [this page](actions/overview.md). 
             
