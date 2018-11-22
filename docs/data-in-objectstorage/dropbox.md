@@ -7,7 +7,7 @@ Dropbox is a general-utility cloud-based data **storage system** that is **mount
 
 ## Implementation
 
-Dropbox is implemented through the [Object Storage](.md#object-storage-of-files), and effectively connects the unstructured [Data on Disk](../data-on-disk/overview.md) with the rest of the infrastructure, including the Web Interface.
+Dropbox is implemented through the [Object Storage](overview.md), and effectively connects the unstructured [Data on Disk](../data-on-disk/overview.md) with the rest of the infrastructure, including the Web Interface.
 
 ## User Interface
 
