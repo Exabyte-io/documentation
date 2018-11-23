@@ -4,7 +4,7 @@ We apply **storage quotas** to both the [home and shared folders](directories.md
 
 The quotas we offer are always **hard-set**, as opposed to soft quotas, in the sense that we don't allow for any temporary excesses of the pre-defined storage limits. Once the quota limit is attained on a certain computing node, the user will be prevented from saving and storing any additional data on it.
 
-Current quotas applicable to the folders available to the user can be inspected at any time via the [Command Line Interface](../cli/overview.md), using the `quota` command, or alternatively using the [Web Interface](../accounts/accounting/check-balance-quota.md).
+Current quotas applicable to the folders available to the user can be inspected at any time via the [Command Line Interface](../cli/overview.md), using the [`quota` command](../cli/actions/check-quotas.md), or alternatively using the [Web Interface](../accounts/accounting/check-balance-quota.md).
     
 ## Login Node Home
 
@@ -16,13 +16,13 @@ This small quota can be used for example to store and test some source code or s
 
 The quota under the [home folders of the available clusters](directories.md#cluster-home) depends on the chosen [service level](../accounts/service-levels.md) for the account under consideration. 
 
-For example, the ["Promo", "Advanced" and "Pro"](../pricing/service-levels.md) service levels have storage quotas of, respectively, **10, 50 and 100 Gb** applied to them for storing data on the clusters.
+For example, the "Promo", "Advanced" and "Pro" service levels have the storage quotas indicated [here](../pricing/service-levels.md) applied to them for storing data on the clusters.
 
 ## Shared Folder
 
 The quota under the [shared folder](directories.md#organization-shared-folder) available for [Organizations](../collaboration/organizations/overview.md) again depends on the precise [service level](../accounts/service-levels.md) being implemented on the corresponding Organizational account. 
 
-For the ["Enterprise" and "Enterprise-Extra"](../pricing/service-levels.md) service levels which afford for the creation of Organizations, the storage quota is set to **500 Gb and 5 Tb** respectively.
+For the "Enterprise" and "Enterprise-Extra" service levels which afford for the creation of Organizations, the storage quota is set to the values indicated [here](../pricing/service-levels.md).
 
 ## Dropbox Folder
 

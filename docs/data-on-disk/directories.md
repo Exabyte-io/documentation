@@ -18,17 +18,19 @@ The location of the login home folder under the main [remote desktop environment
 
 ## Cluster Home
 
-The home directories of each available [cluster](../infrastructure/clusters/overview.md) are mapped under the aforementioned login home, and can be accessed under the **cluster alias name**. Their absolute paths are of the form `/<cluster-alias>-home/<username>/`.
+The home directories of each available [cluster](../infrastructure/clusters/overview.md) are mapped under the aforementioned login home, and can be accessed under the **[cluster alias name](../infrastructure/clusters/directories.md#cluster-aliases)**. Their absolute paths are of the form `/<cluster-alias>-home/<username>/`.
 
 Starting from these cluster homes, the user can run any [simulation Jobs](../jobs/overview.md). We explain the procedure for doing so via the [Command Line Interface](../cli/overview.md) in [this section](../jobs-cli/overview.md) of the documentation.
 
 These directories contain the hierarchic structure outlined [in the following page](../infrastructure/clusters/directories.md), and are affected by the storage quotas described [here](quotas.md).
 
-In the following image, we highlight two examples of cluster home directories present under the login home, as viewed in a [remote desktop environment](../remote-connection/remote-desktop.md). The two clusters available in this case are referenced under the aliases "cluster-001" and "cluster-007". The contents of cluster-001 are displayed in the subsequent image. In this latter image, the exabyte.io folder refers to the shared folder of an [Organization](../collaboration/organizations/overview.md), as documented later in this page.
+In the following image, we highlight two examples of cluster home directories present under the login home, as viewed in a [remote desktop environment](../remote-connection/remote-desktop.md). The two clusters available in this case are referenced under the aliases "cluster-001" and "cluster-007". 
 
 ![Cluster Homes](/images/cluster-homes.png "Cluster Homes")
 
-![Cluster Homes](/images/cluster-home-content.png "Cluster Homes")
+The contents of cluster-001 are displayed in the subsequent image below. In this latter image, the exabyte.io folder refers to the shared folder of an [Organization](../collaboration/organizations/overview.md), as documented later in this page.
+
+![Cluster Home Contents](/images/cluster-home-content.png "Cluster Home Contents")
 
 ## Dropbox
 
