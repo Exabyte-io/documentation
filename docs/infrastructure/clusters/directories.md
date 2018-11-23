@@ -1,7 +1,4 @@
-## Cluster Aliases
-
-
-## Modeling data
+# Modeling data
 
 Data from each calculation/job initiated through the web application is stored inside user home directory within the `~/data` directory. So user `steven` would have the calculation data within `/home/steven/data/` directory.
 
