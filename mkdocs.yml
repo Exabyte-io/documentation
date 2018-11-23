@@ -516,17 +516,9 @@ nav:
         - Convention:                                   data-structured/convention.md
 
     - Data on Disk:
-        # Content description and links
         - Overview:                                     data-on-disk/overview.md
-        # Explain file permissions in /home directory,
-        # Presence of multiple home folders - on clusters and login and how they are connected
-        # Shared Directories:
-        # Dropbox (*):
-        # Mapping of folders from Clusters to Login node,
         - Directory Structure:                          data-on-disk/directories.md
-        # Quotas imposed on /home, /share,
         - Quotas:                                       data-on-disk/quotas.md
-        # Permissions, Encryption, link to site-policy security description
         - Security:                                     data-on-disk/security.md
 
 
@@ -610,6 +602,7 @@ nav:
             - List Clusters:                            cli/actions/list-clusters.md
             # List compute nodes and their state with exanodes command
             - List Cluster Nodes:                       cli/actions/list-nodes.md
+            - Check Quotas:                             cli/actions/check-quotas.md
             # Link to the corresponding section (Jobs CLI)
             - Jobs Actions:                             cli/actions/jobs-actions.md
 
