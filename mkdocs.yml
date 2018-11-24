@@ -469,17 +469,11 @@ nav:
 
 # COMPUTATIONAL ASPECTS
     - General Infrastructure:
-        # Put general flowchart here, explaining connection between login node, clusters, connection methods, dropbox etc.
         - Overview:                                     infrastructure/overview.md
-        # A diagram for the architecture of the storage system (Network File System) between clusters and login node
-        # Link to Data on Disk Overview, mention of Quotas
         - Storage System:                               infrastructure/storage.md
         - Login Node:
-            # what is login node: Intermediary access point to clusters, Links to the content of the section
             - Overview:                                 infrastructure/login/overview.md
-            # Link to "Remote Connection/Oveview"
             - Connection Options:                       infrastructure/login/connections.md
-            # Description of important folders under Home dir: Clusters Data, Dropbox, Jobscript Templates.
             - Directory Structure:                      infrastructure/login/directories.md
         - Clusters:
             # The presence of multiple clusters, multiple cloud providers
@@ -501,7 +495,6 @@ nav:
             - Category:                                 infrastructure/resource/category.md
             # Different Queues on each Category (e.g. OR16)
             - Queues:                                   infrastructure/resource/queues.md
-        # Compute tab under Jobs Designer
         - Compute Settings:
             - User Interface:                             infrastructure/compute-settings/ui.md
             - Data:                                       infrastructure/compute-settings/data.md

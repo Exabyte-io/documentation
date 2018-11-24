@@ -44,9 +44,9 @@ The input and output data of simulations can be stored as [unstructured data](..
 
 ## 9. Resource Management
 
-The computational resources offered on our platform are managed and allocated to the users under a task scheduling system of queues, as documented [here](resource/overview.md).
+The computational resources offered on our platform are managed and allocated to the users by a task scheduler, operated under a system of queues, as documented [here](resource/overview.md).
 
-## 10. Files
+## 10. Object Storage
 
 The simulation files stored on the cluster hard drives can subsequently be stored as [objects](../data-in-objectstorage/overview.md) for their retrieval under the Web Interface. 
 

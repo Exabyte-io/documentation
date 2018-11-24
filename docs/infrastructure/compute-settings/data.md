@@ -1,6 +1,6 @@
-<!-- TODO: GM to revise/add content -->
+# Compute Structured Representation
 
-# Example Representation
+Below we show an example JSON structured representation for the compute parameters introduced [here](ui.md). The keywords contained here are further explained in the ensuing table.
 
 ```json
 {
@@ -19,17 +19,14 @@
 }
 ```
 
-# The "compute" Keyword
+## List of Keywords
     
 | Keyword    |   Description      |  
 | :-------- |:----------- |
 | ppn |  The number of processors per node   | 
 | nodes |  The number of computing nodes dedicated to the job execution | 
-| queue | Type of queue on which job is being submitted |
+| queue | Type of [queue](../resource/queues.md) on which job is being submitted |
 | timeLimit  | The maximum duration of time that the job can be executed for  |
-| notify | Enable the sending of notifications on the job status to the user   | 
-| cluster | Please refer to the table contained [in this section](/accounts/ui/charges-payments.md#advanced-search) for an explanation of the "jid" and  "fqdn" (Fully Qualified Domain Name) keywords in the context of clusters | 
+| notify | Enable the sending of notifications on the job status to the user  | 
+| cluster | Please refer to the table contained [in this section](../../accounts/ui/charges-payments.md#advanced-search) for an explanation of the "jid" and  "fqdn" (Fully Qualified Domain Name) keywords in the context of [clusters](../clusters/overview.md) | 
 | arguments | Extra arguments  | 
-
-!!!note "Note: explanation of clusters-related terms"
-    The user is referred to [this page](ui.md) for instructions on how to operate the computing [clusters](/infrastructure/clusters/overview.md) offered on our platform. The concept of [Queue](/infrastructure/resource/queues.md) on the  cluster is also explained in its respective page.
