@@ -1,12 +1,12 @@
 # Introduction to Infrastructure
 
-Our platform represents a comprehensive **distributed web application**. This section explains the most important components of its **computational infrastructure**, as opposed to the Web Interface which is explained separately in [other parts of this documentation](../ui/overview.md).
+Our platform represents a comprehensive **distributed web application**. This section explains the most important components of its **computational infrastructure**.
 
-For users who are experts in computational science, we support platform-level access with ability to submit [simulation jobs](../jobs-cli/overview.md) to [computing clusters](clusters/overview.md) via [alternative advanced connection methods](../remote-connection/overview.md). 
+As introduced below, we support platform-level access, with ability to submit [simulation jobs](../jobs-cli/overview.md) to the [computing clusters](clusters/overview.md), via [advanced connection methods](../remote-connection/overview.md) as an alternative to the main Web Interface. These advanced features are intended for expert users.
 
 ## Architecture diagram 
 
-The different components forming the underlying architecture of our computational infrastructure are interconnected as demonstrated in the following flowchart diagram. The reader is referred to the number labels included here to be redirected to the component's corresponding documentation explanation in the subsequent headers of this page.
+The different components forming the underlying architecture of our computational infrastructure are interconnected as demonstrated in the following diagram. The reader is referred to the number labels included here to find the component's corresponding introduction in the remainder of this documentation page.
 
 ![Infrastructure](/images/Infrastructure.png "Infrastructure")
 
