@@ -10,4 +10,4 @@ A representative example of an overall storage system, such as implemented on ou
 
 ## Storage Quotas
 
-This storage space is subject to certain **quotas**, limiting the size of the data that may be saved in them. These quotas are documented [here](../data-on-disk/quotas.md).
+These storage spaces are subject to certain **quotas**, limiting the size of the data that may be saved in them. These quotas are documented [here](../data-on-disk/quotas.md).

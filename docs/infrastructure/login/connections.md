@@ -8,7 +8,7 @@ The user can use an **external SSH client** under any Operating System to connec
 
 ## Web Terminal
 
-Alternatively, we offer an incorporated Terminal within our Web Interface which also takes the user to the same [Command Line Interface](../../cli/overview.md) as the above-mentioned SSH option. We refer to this as the [Web Terminal](../../remote-connection/web-terminal.md).
+Alternatively, we offer an incorporated Terminal within our Web Interface which also takes the user to the same [Command Line Interface](../../cli/overview.md). We refer to this as the [Web Terminal](../../remote-connection/web-terminal.md).
 
 It can be accessed via the corresponding option under the main [right-hand sidebar](../../ui/right-sidebar.md) of the user interface.
 
