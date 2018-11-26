@@ -1,10 +1,10 @@
-# Amazon Web Services Clusters
+# Amazon Web Services
 
-This page contains information about clusters hosted on Amazon Web Service[^1] (AWS) and their hardware specifications.
+This page contains information about clusters hosted on Amazon Web Services[^1] (AWS) and their hardware specifications.
 
 ## Clusters
 
-The following table provides information about available clusters on Amazon Web Service (AWS) cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
+The following table provides information about available clusters on Amazon Web Services (AWS) cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
 
 | Name        | Master Hostname                                   | Location |
 | :---:       | :---:                                             | :---:    |
@@ -12,9 +12,9 @@ The following table provides information about available clusters on Amazon Web 
 
 ## Queues
 
-The list of currently enabled queues are given below.
+The list of currently enabled queues is given below. Price is shown in cents per core hour for the best available [service level](../../pricing/service-levels.md).
 
-| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price (Cents/Core*Hour) | Nodes/Job | Max Nodes |
+| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job | Max Nodes Total |
 | :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
 | D     | debug        | debug    | core-seconds      | 22.51                   | 1         | 10        |
 | OR    | ordinary     | regular  | core-seconds      | 10.00                   | 1         | 10        |
@@ -38,9 +38,9 @@ The list of currently enabled queues are given below.
 
 ## Hardware Specifications
 
-The following table contains hardware specifications of the above queues. 
+The following table contains hardware specifications for the above queues. 
 
-| Name  | CPU Type[^5] | Cores/Node | GPU Type[^6] | GPU/Node | Memory (GB) | Bandwidth (Gbps) |
+| Name  | CPU[^5]  | Cores per Node | GPU[^6] | GPU per Node | Memory (GB) | Bandwidth (Gbps) |
 | :---: | :---:        | :---:      | :---:        | :---:    | :---:       | :---:            |
 | D     | c-3          | 8          | -            | -        | 15          | &le;10           |
 | OR    | c-3          | 36         | -            | -        | 60          | &le;10           |
@@ -48,13 +48,13 @@ The following table contains hardware specifications of the above queues.
 | OR8   | c-3          | 8          | -            | -        | 15          | &le;10           |
 | OR16  | c-3          | 16         | -            | -        | 30          | &le;10           |
 | OF    | c-3          | 36         | -            | -        | 60          | 10               |
-| OF+   | c-3          | 72         | -            | -        | 144         | 25               |
+| OF+   | c-5          | 72         | -            | -        | 144         | 25               |
 | SR    | c-3          | 36         | -            | -        | 60          | 10               |
 | SR4   | c-3          | 4          | -            | -        | 7.5         | &le;10           |
 | SR8   | c-3          | 8          | -            | -        | 15          | &le;10           |
 | SR16  | c-3          | 16         | -            | -        | 30          | &le;10           |
 | SF    | c-3          | 36         | -            | -        | 60          | 10               |
-| SF+   | c-3          | 72         | -            | -        | 144         | 25               |
+| SF+   | c-5          | 72         | -            | -        | 144         | 25               |
 | GOF   | c-4          | 8          | g-1          | 1        | 61          | 10               |
 | G4OF  | c-4          | 32         | g-1          | 4        | 244         | 10               |
 | G8OF  | c-4          | 64         | g-1          | 8        | 488         | 25               |
@@ -68,17 +68,17 @@ The following table contains hardware specifications of the above queues.
 
 ## Links
 
-[^1]: [Amazon Web Service](https://aws.amazon.com/)
+[^1]: [Amazon Web Services, official webpage](https://aws.amazon.com/)
 
-[^2]: [Queue Cost Categories](/infrastructure/resource/category/#cost-categories)
+[^2]: [Queue Cost Categories](../resource/category.md#cost-categories)
 
-[^3]: [Queue Provision Modes](/infrastructure/resource/category/#provision-modes)
+[^3]: [Queue Provision Modes](../resource/category.md#provision-modes)
 
-[^4]: [Charge polices](/infrastructure/resource/queues/#charge-policies)
+[^4]: [Charge polices](../resource/queues.md#charge-policies)
 
-[^5]: [CPU types](overview/#cpu-types)
+[^5]: [CPU types](hardware.md#cpu-types)
 
-[^6]: [GPU types](overview/#gpu-types)
+[^6]: [GPU types](hardware.md#gpu-types)
 
 [^7]: [Hyper-threading, Wikipedia](https://en.wikipedia.org/wiki/Hyper-threading)
 
