@@ -615,18 +615,19 @@ nav:
 
 
     - REST-API:
-        - Overview:                                     rest-api/overview.md
-        # Authentication section explains how to authenticate and access the API.
-        # TODO: MM to adjust the content for the two pages below
-        - Authentication:                               rest-api/authentication.md
-        - Query structure:                              rest-api/query-structure.md
-        # Link to of the Python Client
-        # Link to Examples Repository
-        - Examples:                                     rest-api/examples.md
-        # Explanation and a Link to Swagger Explorer page
-        # - List of versions with its own link
-        # - Animation Example of how to use the swagger UI for Listing materials
-        - Endpoints:                                    rest-api/endpoints.md
+      # Link to Exabyte API Client repo
+      # Link to Exabyte API Examples repo
+      # Explanation and a Link to Swagger Explorer page
+      # List of versions with its own link
+      # Animation Example of how to use the swagger UI for Listing materials
+      - Overview:                                   rest-api/overview.md
+      # Authentication section explains how to authenticate and access the API.
+      - Authentication:                             rest-api/authentication.md
+      # Query structure section explains the structure of requests and responses.
+      - Query structure:                            rest-api/query-structure.md
+      - Endpoints:                                  rest-api/endpoints.md
+      - Exabyte API client:                          rest-api/api-client.md
+      - Exabyte API examples:                        rest-api/api-examples.md
 
 
 # TUTORIALS AND EXAMPLES
