@@ -70,7 +70,7 @@ The following table contains hardware specifications of the above queues.
 
 [^1]: [Amazon Web Service](https://aws.amazon.com/)
 
-[^2]: [Queue Resource categories](/infrastructure/resource/category/#resource-categories)
+[^2]: [Queue Cost Categories](/infrastructure/resource/category/#cost-categories)
 
 [^3]: [Queue Provision Modes](/infrastructure/resource/category/#provision-modes)
 
