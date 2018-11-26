@@ -1,6 +1,10 @@
+# Amazon Web Services Clusters
+
+This page contains information about clusters hosted on Amazon Web Service[^1] (AWS) and their hardware specifications.
+
 ## Clusters
 
-The following table provides information about available clusters on Amazon Web Service[^1] (AWS) cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
+The following table provides information about available clusters on Amazon Web Service (AWS) cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
 
 | Name        | Master Hostname                                   | Location |
 | :---:       | :---:                                             | :---:    |
@@ -10,27 +14,27 @@ The following table provides information about available clusters on Amazon Web 
 
 The list of currently enabled queues are given below.
 
-| Name  | Type[^2] | Subtype[^3] | Charge Policy[^4] | Price (Cents/Core*Hour) | Nodes/Job | Max Nodes |
-| :---: | :---:    | :---:       | :---:             | :---:                   | :---:     | :---:     |
-| D     | debug    | debug       | core-seconds      | 22.51                   | 1         | 10        |
-| OR    | ordinary | regular     | core-seconds      | 10.00                   | 1         | 10        |
-| OR4   | ordinary | regular     | core-seconds      | 11.26                   | 1         | 20        |
-| OR8   | ordinary | regular     | core-seconds      | 11.26                   | 1         | 20        |
-| OR16  | ordinary | regular     | core-seconds      | 11.26                   | 1         | 20        |
-| OF    | ordinary | fast        | core-hours        | 10.00                   | &le;50    | 100       |
-| OF+   | ordinary | fast        | core-hours        | 9.62                    | &le;50    | 10        |
-| SR    | saving   | regular     | core-seconds      | 2.00                    | 1         | 10        |
-| SR4   | saving   | regular     | core-seconds      | 2.25                    | 1         | 20        |
-| SR8   | saving   | regular     | core-seconds      | 2.25                    | 1         | 20        |
-| SR16  | saving   | regular     | core-seconds      | 2.25                    | 1         | 20        |
-| SF    | saving   | fast        | core-hours        | 2.00                    | &le;50    | 100       |
-| SF+   | saving   | fast        | core-hours        | 2.41                    | &le;50    | 10        |
-| GOF   | ordinary | fast        | core-hours        | 86.55                   | &le;50    | 10        |
-| G4OF  | ordinary | fast        | core-hours        | 86.55                   | &le;50    | 10        |
-| G8OF  | ordinary | fast        | core-hours        | 86.55                   | &le;50    | 10        |
-| GSF   | saving   | fast        | core-hours        | 33.70                   | &le;50    | 10        |
-| G4SF  | saving   | fast        | core-hours        | 41.58                   | &le;50    | 10        |
-| G8SF  | saving   | fast        | core-hours        | 43.35                   | &le;50    | 10        |
+| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price (Cents/Core*Hour) | Nodes/Job | Max Nodes |
+| :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
+| D     | debug        | debug    | core-seconds      | 22.51                   | 1         | 10        |
+| OR    | ordinary     | regular  | core-seconds      | 10.00                   | 1         | 10        |
+| OR4   | ordinary     | regular  | core-seconds      | 11.26                   | 1         | 20        |
+| OR8   | ordinary     | regular  | core-seconds      | 11.26                   | 1         | 20        |
+| OR16  | ordinary     | regular  | core-seconds      | 11.26                   | 1         | 20        |
+| OF    | ordinary     | fast     | core-hours        | 10.00                   | &le;50    | 100       |
+| OF+   | ordinary     | fast     | core-hours        | 9.62                    | &le;50    | 10        |
+| SR    | saving       | regular  | core-seconds      | 2.00                    | 1         | 10        |
+| SR4   | saving       | regular  | core-seconds      | 2.25                    | 1         | 20        |
+| SR8   | saving       | regular  | core-seconds      | 2.25                    | 1         | 20        |
+| SR16  | saving       | regular  | core-seconds      | 2.25                    | 1         | 20        |
+| SF    | saving       | fast     | core-hours        | 2.00                    | &le;50    | 100       |
+| SF+   | saving       | fast     | core-hours        | 2.41                    | &le;50    | 10        |
+| GOF   | ordinary     | fast     | core-hours        | 86.55                   | &le;50    | 10        |
+| G4OF  | ordinary     | fast     | core-hours        | 86.55                   | &le;50    | 10        |
+| G8OF  | ordinary     | fast     | core-hours        | 86.55                   | &le;50    | 10        |
+| GSF   | saving       | fast     | core-hours        | 33.70                   | &le;50    | 10        |
+| G4SF  | saving       | fast     | core-hours        | 41.58                   | &le;50    | 10        |
+| G8SF  | saving       | fast     | core-hours        | 43.35                   | &le;50    | 10        |
 
 ## Hardware Specifications
 
@@ -66,9 +70,9 @@ The following table contains hardware specifications of the above queues.
 
 [^1]: [Amazon Web Service](https://aws.amazon.com/)
 
-[^2]: [Queue types](/infrastructure/resource/queues/#types)
+[^2]: [Queue Resource categories](/infrastructure/resource/category/#resource-categories)
 
-[^3]: [Queue subtypes](/infrastructure/resource/queues/#subtypes)
+[^3]: [Queue Provision Modes](/infrastructure/resource/category/#provision-modes)
 
 [^4]: [Charge polices](/infrastructure/resource/queues/#charge-policies)
 
