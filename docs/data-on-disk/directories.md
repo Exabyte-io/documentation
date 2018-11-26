@@ -54,25 +54,11 @@ This folder is stored under the absolute path `/export/compute/job_script_templa
     
 ### Shared Folders for Organizations
 
-For members of an [Organization](../collaboration/organizations/overview.md) (collaborative [account](../accounts/overview.md)), a corresponding folder with the same name as the name of the organizational account is present under each cluster home directory, allowing for data to be **shared** between the organization members. An example for "exabyte-io" is demonstrated in the visual above. Simulation files present under this data are organized according to the Project/Job based directory naming explained below.
- 
-Each organization of which the user is member has its own corresponding shared directory. For example, organization `exabyte-io` has its folder under the path `/share/groups/exabyte-io/`.
+[Organization accounts](../collaboration/organizations/overview.md) have a **shared folder** at their disposal in order to share simulation data between all Organization members. This shared folder bears the same name as the Organization itself, for example "exabyte-io" in the visual above. More information concerning this folder can be found [in this page](../infrastructure/clusters/directories.md#shared-folders-for-organizations).
 
-The storage quotas which pertain to these shared folders are explained in the corresponding [documentation page](quotas.md).
+### Personal Account "Data" Folder
 
-### Data Folder
-
-The "data" folder present under each cluster home directory contains the private files on the cluster accessible to the user only, and generated with their [personal account](../accounts/overview.md). Simulation files present under this data are organized according to the Project/Job based directory naming explained below.
-
-The absolute path of the data folder for a cluster under the alias "cluster-001" is located at the path location `/cluster-001-home/<username>/data`.
-
-### Project/Job based directory naming
-
-Simulation files created through the [Web Interface](../ui/overview.md) are automatically organized based on the [Project](../jobs/projects.md) and constituent [Jobs](../jobs/overview.md) that they are associated with. The subfolders are named according to the [project slug](../jobs/projects.md#slug) and the job [slug](../entities-general/data.md#slug) as well as its [ID](../entities-general/data.md#top-level-keywords) as demonstrated below for user with username "steven", project named "Default", job named "New Job Nov 11, 2018-20-59 pm" with id "575z5FgGQvtRMBnXg".
-
-```bash
-steven-default/new-job-nov-11-2018-20-59-pm-575z5FgGQvtRMBnXg
-```
+Each user has a personal **data folder** associated with his own **personal account**. It is described further [here](../infrastructure/clusters/directories.md#personal-account-"data"-folder).
 
 ## Links
 

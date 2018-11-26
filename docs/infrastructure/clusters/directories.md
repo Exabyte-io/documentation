@@ -1,6 +1,6 @@
 # Important Directories under Cluster Homes
 
-The following directories are present under the home folder of each cluster (the so-called **Cluster Home**), accessible within the [Login Node](../login/directories.md) under the path `/home/<username>/<cluster-alias>`. 
+The following directories are present under the home folder of each cluster (the so-called **Cluster Home**), accessible within the [Login Node](../login/directories.md) under the symlink `/home/<username>/<cluster-alias>` (pointing to the absolute path `/<cluster-alias>-home/<username>`). 
 
 ```
 .
@@ -10,15 +10,29 @@ The following directories are present under the home folder of each cluster (the
 └── job_script_templates => /export/compute/job_script_templates
 ```
 
-The above **directory structure** is mounted on the cluster's dedicated **Master Node**. Each listed folder is introduced in what follows, complementing the [general discussion](../../data-on-disk/directories.md) on the directory structure within our platform.
+Each listed folder is introduced in what follows, complementing the [general discussion](../../data-on-disk/directories.md) on the directory structure within our platform.
 
-## Personal Account Data 
+## Shared Folders for Organizations
 
-Each user has a personal **data folder** associated with his own **personal account**. More detail about this folder can be found [here](../../data-on-disk/directories.md#data-folder).
-
-## Organization Shared Data 
+For members of an [Organization](../collaboration/organizations/overview.md) (collaborative [account](../accounts/overview.md)), a corresponding folder with the same name as the name of the organizational account ("exabyte.io" in the above example) is present under each cluster home directory, allowing for data to be **shared** between the organization members. Simulation files present under this data are organized according to the Project/Job based directory naming explained below.
  
-Members of an Organization can share data together via the corresponding **shared folder**, which bears the same name as the Organization itself ("exabyte.io" in the above example of directory structure). This type of folder is further described [in this page](../../data-on-disk/directories.md#shared-folders-for-organizations).
+Each organization of which the user is member has its own corresponding shared directory. For example, organization `exabyte-io` has its folder under the path `/share/groups/exabyte-io/`.
+
+The storage quotas which pertain to these shared folders are explained in the corresponding [documentation page](quotas.md).
+
+## Personal Account "Data" Folder
+
+The "data" folder present under each cluster home directory contains the **private files** on the cluster accessible to the user only, and generated with their [personal account](../accounts/overview.md). Simulation files present under this data are organized according to the Project/Job based directory naming explained below.
+
+The absolute path of the data folder for a cluster under the alias "cluster-001" is located at the path location `/cluster-001-home/<username>/data`.
+
+## Project/Job based directory naming
+
+Simulation files created through the [Web Interface](../ui/overview.md) are automatically organized based on the [Project](../jobs/projects.md) and constituent [Jobs](../jobs/overview.md) that they are associated with. The subfolders are named according to the [project slug](../jobs/projects.md#slug) and the job [slug](../entities-general/data.md#slug) as well as its [ID](../entities-general/data.md#top-level-keywords) as demonstrated below for user with username "steven", project named "Default", job named "New Job Nov 11, 2018-20-59 pm" with id "575z5FgGQvtRMBnXg".
+
+```bash
+steven-default/new-job-nov-11-2018-20-59-pm-575z5FgGQvtRMBnXg
+```
 
 ## Dropbox
 
@@ -32,28 +46,5 @@ The Login Home also contains a folder with [Job script](../../jobs-cli/batch-scr
  
 Personal Accounts can also share data between them, without necessarily belonging to an Organization, via the **temporary folder** located under the path `/tmp`.
 
-!!!warning "Warning: unreliability of temporary data storage"
+!!!warning "Warning: temporary data storage is not permanent"
     The data in this temporary folder is not guaranteed to be saved for a long time - use with caution or consider upgrading to an Organizational account.
-
-## Modeling Data
-
-The aforementioned personal data and Organization shared data folders contain the data from each [simulation job](../../jobs/overview.md) executed on the given cluster under consideration. This data is stored in these folders according to the conventions outlined below.
-
-### Project directories
-
-Calculations/Jobs are organized into [projects](../../jobs/projects.md) containers, each of which has a filesystem directory associated with it on each cluster where its associated Jobs have been executed. 
-
-For example, if user `steven` creates a project called `my-project`, and executed some of its jobs under "cluster-001", then the data for the jobs corresponding to this project will be stored inside `/home/steven/cluster-001/data/my-project`.
-
-!!! note "Default project"
-    Each user has a *default* project that is named according to his/her username. So user `steven` has a default project `steven-default` (shown as "Default" on the Web Interface).
-
-### Job directories
-
-Within a project, each job is stored in its own directory as well. Job names are *[slugified](../../entities-general/data.md#Slug-Representation)*, or in other words put into UNIX-safe format, before creating a filesystem directory. In addition, each job name also contains a unique identifier. 
-
-So if a job `New Job Sep 20th 2016, 13:43 PM` is created inside the default project for user `steven` and executed on "cluster-001", its files will be stored inside the folder named as the following example.
-
-```bash
-"/home/steven/cluster-001/data/steven-default/new-job-sep-20th-2016-13-43-pm-STb28Hgr82C5DRg5H"
-```
