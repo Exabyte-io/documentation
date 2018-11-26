@@ -1,6 +1,6 @@
 # Compute setup
 
-The "Compute" panel, located as a separate tab under the [Job Designer](../../jobs-designer/overview.md) interface, allows user to set up the computational parameters for the simulation to be executed. The appearance of this panel is demonstrated in the example image below.
+The "Compute" panel, located as a distinct tab under the [Job Designer](../../jobs-designer/overview.md) interface, allows user to set up the computational parameters for the simulation to be executed. The appearance of this panel is demonstrated in the example image below.
 
 ![Compute Tab](/images/compute-tab-designer.png "Compute Tab")
 

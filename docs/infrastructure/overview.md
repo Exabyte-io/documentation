@@ -2,11 +2,11 @@
 
 Our platform represents a comprehensive **distributed web application**. This section explains the most important components of its **computational infrastructure**.
 
-As introduced below, we support platform-level access, with ability to submit [simulation jobs](../jobs-cli/overview.md) to the [computing clusters](clusters/overview.md), via [advanced connection methods](../remote-connection/overview.md) as an alternative to the main Web Interface. These advanced features are intended for expert users.
+We additionally support platform-level access via [advanced connection methods](../remote-connection/overview.md), as an alternative to the main Web Interface, which also offer the ability to submit [simulation jobs](../jobs-cli/overview.md) to the [computing clusters](clusters/overview.md). These advanced features are intended for expert users.
 
 ## Architecture diagram 
 
-The different components forming the underlying architecture of our computational infrastructure are interconnected as demonstrated in the following diagram. The reader is referred to the number labels included here to find the component's corresponding introduction in the remainder of this documentation page.
+The different components forming the underlying architecture of our computational infrastructure are interconnected as demonstrated in the following diagram. The reader is referred to the number labels included here to find the component's corresponding introductory explanation in the remainder of this documentation page.
 
 ![Infrastructure](/images/Infrastructure.png "Infrastructure")
 
@@ -50,6 +50,16 @@ The computational resources offered on our platform are managed and allocated to
 
 The simulation files stored on the cluster hard drives can subsequently be stored as [objects](../data-in-objectstorage/overview.md) for their retrieval under the Web Interface. 
 
-## Compute Settings
+## 11. Master Node
 
-The various settings and parameters affecting the allocation of the computational resources offered on our infrastructure at the moment of the launching of a [Job simulation](../jobs/overview.md) can be entered from the Web Interface according to the instructions contained [in this page](compute-settings/ui.md).
+The Master Node constitutes the main entry gateway to each available computing Cluster, and is documented in its respective [section of the documentation](clusters/directories.md).
+
+## 12. Database
+
+The Database contains the various account-owned [collections](../accounts/collections.md) of [entities](../entities-general/overview.md) and their respective [properties](../properties/overview.md), stored in the form of [structured data](../data-structured/overview.md).
+
+## 13. Computational Resources
+
+The various settings and parameters affecting the allocation of the computational resources offered on our infrastructure, at the moment of the launching of a [Job simulation](../jobs/overview.md), can be entered from the Web Interface according to the instructions contained [in this page](compute-settings/ui.md). 
+
+The computational resources available as part of our services are themselves listed for each of the [Azure](clusters/azure.md) and [Amazon Web Service](clusters/aws.md) Cloud Providers.
