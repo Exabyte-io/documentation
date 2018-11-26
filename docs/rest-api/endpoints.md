@@ -2,7 +2,7 @@
 
 ## Definition
 
-An Endpoint is one end of a communication channel, the API end of it. It has a unique URL and a set of parameters associated with it. Sending a request with a specific HTTP method to an Endpoint triggers a certain function. 
+An Endpoint is one end of a communication channel, the API end of it. It has a unique URL and a set of parameters associated with it. Sending a request with a specific HTTP[^1] method to an Endpoint triggers a certain function. 
 
 !!! example
     Contacting materials endpoint with a PUT HTTP method and the corresponding data about a material will lead to the creation of the corresponding [Material](../materials/overview.md) inside the database and return the result.
@@ -25,16 +25,21 @@ Below is the list of currently supported endpoints with links to the detailed do
 
 ## Endpoint Documentation
 
-In order to explain the data formats and allow users to try the endpoints we use [Swagger](#links), a software framework to design, build, document, and try API services.
+In order to explain the data formats and allow users to try the endpoints we use Swagger UI[^2], a software framework to design, build, document, and try API services. In the example below, we demonstrate how to use the framework to list the materials an account has access to. It is assumed that the reader has already generated the authentication parameters explained in [here](authentication.md).
 
-In the example animation below, we demonstrate how to use the framework to list the materials an account as access to. It is assumed that the reader has already generated the authentication parameters explained in [here](authentication.md).
+1. Open [Swagger UI](/api) page.
 
-<!-- TODO: by MM
-    1. Explain what happens in the video - we navigate to "Materials" endpoint, set up ..." (see GM explanation for the animations in /materials/actions, for example) 
-    2. Add the explanation about what happens in the animation, including which parameters are used for query and limit
-    3. Put links to the query structure, where query and projection are explained
-    The video is also very hard to view - the resolution should be more squared, less wide, and the text should be larger 
--->
+2. Set `X-ACCOUNT-ID` and `X-AUTH-TOKEN` authentication parameters.
+
+3. Navigate to `Materials` endpoint, set up [query](./query-structure.md#query) (`{"formula": "Si"}`) and [projection](./query-structure.md#projection) (`{"limit": 5}`) parameters.
+ 
+4. Click on `RESPONSE EXAMPLE` and `RESPONSE SCHEMA` on the right panel to see an example response and its structure (schema).
+
+5. Click on `Try` to connect to the RESTful API and retrieve the materials.
+
+6. A list of materials filtered by the given query and projection parameters will be returned.
+
+The aforementioned steps are demonstrated in the animation below.
 
 <img data-gifffer="/images/swagger-list-materials.gif"/>
 
@@ -48,5 +53,8 @@ Below you can find the currently supported API versions.
 
 ## Links
 
-1. [Swagger](https://github.com/swagger-api/swagger-ui/tree/v2.2.10)
-<!-- TODO by MM: add a reference to HTTP -->
+[^1]: [Hypertext Transfer Protocol (HTTP), Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+
+[^2]: [Swagger UI, GitHub](https://github.com/swagger-api/swagger-ui/tree/v2.2.10)
+
+///FOOTNOTES GO HERE///
