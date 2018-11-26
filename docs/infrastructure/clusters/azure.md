@@ -1,4 +1,4 @@
-# Microsoft Azure Clusters
+# Microsoft Azure
 
 This page contains information about clusters hosted on Microsoft Azure[^1] and their hardware specifications.
 
@@ -12,9 +12,9 @@ The following table provides information about available clusters on Microsoft A
 
 ## Queues
 
-The list of currently enabled queues are given below.
+The list of currently enabled queues is given below. Price is shown in cents per core hour for the best available [service level](../../pricing/service-levels.md).
 
-| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price (Cents/Core*Hour) | Nodes/Job | Max Nodes |
+| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job | Max Nodes Total |
 | :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
 | D     | debug        | debug    | core-seconds      | 40.02                   | 1         | 10        |
 | OR    | ordinary     | regular  | core-seconds      | 20.00                   | 1         | 10        |
@@ -29,9 +29,9 @@ The list of currently enabled queues are given below.
 
 ## Hardware Specifications
 
-The following table contains hardware specifications of the above queues.
+The following table contains hardware specifications for the above queues. 
 
-| Name  | CPU Type[^5] | Cores/Node | GPU Type[^6] | GPU/Node | Memory (GB) | Bandwidth (Gbps) |
+| Name  | CPU[^5] | Cores per Node | GPU[^6] | GPU per Node | Memory (GB) | Bandwidth (Gbps) |
 | :---: | :---:        | :---:      | :---:        | :---:    | :---:       | :---:            |
 | D     | c-1          | 8          | -            | -        | 56          | &le;10           |
 | OR    | c-1          | 16         | -            | -        | 112         | 10               |
@@ -51,15 +51,15 @@ The following table contains hardware specifications of the above queues.
 
 [^1]: [Microsoft Azure](https://azure.microsoft.com/en-us/)
 
-[^2]: [Queue Cost Categories](/infrastructure/resource/category/#cost-categories)
+[^2]: [Queue Cost Categories](../resource/category.md#cost-categories)
 
-[^3]: [Queue Provision Modes](/infrastructure/resource/category/#provision-modes)
+[^3]: [Queue Provision Modes](../resource/category.md#provision-modes)
 
-[^4]: [Charge polices](/infrastructure/resource/queues/#charge-policies)
+[^4]: [Charge polices](../resource/queues.md#charge-policies)
 
-[^5]: [CPU types](overview/#cpu-types)
+[^5]: [CPU types](hardware.md#cpu-types)
 
-[^6]: [GPU types](overview/#gpu-types)
+[^6]: [GPU types](hardware.md#gpu-types)
 
 [^7]: [Azure high performance compute virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc)
 

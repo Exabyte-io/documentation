@@ -1,38 +1,49 @@
 # Queues
 
-## Name Convention
+<!-- TODO: GM to add the general description about:
+    - what queues are
+    - links to how to select queues in Web Interface and CLI
+    - links to the cluster-specific list of queues 
+ -->
 
-Queue name consists of 6 parts from which only one part (part 4 enclosed by braces, `{}`) is mandatory and other parts are optional (enclosed by brackets, `[]`).
+## Naming Convention
 
+Queue name consists of 4 main parts as demonstrated below. Only one part, denoted as 2 and enclosed by braces `{}`, is mandatory. Other parts, enclosed by brackets `[]`, are optional.
+
+```regexp
+[1a][1b][1c]{2}[3][4]
 ```
-[1][2][3]{4}[5][6]
-```
 
-1. Whether queue is GPU-enabled. If yes, queue name starts with `G` letter.
+### Explanation
 
-2. GPU type. `P` means [P100](overview/#gpu-types), [V100](overview/#gpu-types) is used if not specified.
+1. GPU-specific concerns:
 
-3. Number of GPUs per each node, 1 GPU if not specified.
+    a. Whether queue is GPU-enabled. If yes, letter "G" is used.
+    b. Type of GPU. `P` means [P100](../clusters/hardware.md#gpu-types). [V100](../clusters/hardware.md#gpu-types) is used by default for GPU-enabled queues otherwise.
+    c. Number of GPUs per each node, 1 GPU if not specified.
 
-4. Queue [cost category](category.md#cost-categories), D (Debug), O (Ordinary) and S (Saving).
+2. Queue [cost category](category.md#cost-categories): either "D" (Debug), "O" (Ordinary) or "S" (Saving).
 
-5. Queue [provision mode](category.md#provision-modes), R (Regular) and F (Fast).
+3. Queue [provision mode](category.md#provision-modes), R (Regular) and F (Fast).
 
-6. Number of cores per node. Depends on the cluster if it is not specified.
+4. Maximum number of cores per single node. Depends on the cluster and [cloud provider](../clusters/overview.md) if it is not specified.
 
 ### Examples
 
-1. **G4OF**: GPU-enabled, V100, 4 GPUs, Ordinary, Fast, 32 cores on AWS - not available on Azure
-
-2. **GPSF**, GPU-enabled, P100, 1 GPU, Saving, Fast, 6 cores on Azure - not available on AWS
-
-3. **OR16**: Ordinary, Regular, 16 cores
-
-4. **OF**: Ordinary, Fast, 36 cores on AWS - 16 cores on Azure
-
-4. **SF+**: Saving, Fast, 36 cores on AWS - not available on Azure, faster CPU compare to SF queue
+- **G4OF**: GPU-enabled, [V100](../clusters/hardware.md#gpu-types), 4 GPUs, Ordinary, Fast; 32 cores per node on [AWS](../clusters/aws.md) only
+- **GPSF**, GPU-enabled, [P100](../clusters/hardware.md#gpu-types), 1 GPU, Saving, Fast, 6 cores per node on [Azure](../clusters/azure.md) only
+- **OR16**: Ordinary, Regular, 16 cores per each compute node
+- **OF**: Ordinary, Fast; 36 cores per node on [AWS](../clusters/aws.md), 16 cores on [Azure](../clusters/azure.md)
+- **SF+**: Saving, Fast; 72 later generation (compared to "SF") cores on [AWS](../clusters/aws.md) only
 
 ## Charge Policies
 
-- **core-seconds**: jobs are charged according to the number of core-seconds consumed
-- **core-hours**: jobs are charged according to the number of core-hours consumed
+We deploy two charge policies, as explained below:
+
+- **core seconds**: jobs are charged according to the number of core-seconds consumed
+- **core hours**: jobs are charged according to the nearest (greater) integer number of core-hours consumed; also referred to as "whole hours" 
+
+The latter is used for queues with [Fast](category.md#provision-modes) provision category. The former is used otherwise.
+
+!!! warning "Be considerate when using queues with core-hours charge policies"
+    When tasks are submitted to the queue with "core hours" based charge policy, our accounting system would charge the [account](../../accounts/overview.md) for at least 1 hour of usage of the resource. We advise users to prototype the calculations in other queues and deploy production-ready large-scale runs using queues with "core hours" charge policies. 

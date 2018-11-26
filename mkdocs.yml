@@ -8,6 +8,7 @@ repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
     - extra/css/general.css
+    - extra/css/tables.css
     - extra/css/images.css
     - extra/css/super-fences.css
     - extra/css/properties.css
