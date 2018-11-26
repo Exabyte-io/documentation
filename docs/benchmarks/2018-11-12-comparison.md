@@ -499,7 +499,7 @@ Gamma
 
 ### Network Benchmarks
 
-The following shows the result of Intel MPI Benchmarks running on Amazon Web Service C5 instances, Azure H-series VMs and Oracle hardware. As it can be seen Oracle interconnect network is faster and has the lowest latency.
+The following shows the result of Intel MPI Benchmarks running on Amazon Web Services C5 instances, Azure H-series VMs and Oracle hardware. As it can be seen Oracle interconnect network is faster and has the lowest latency.
 
 #### Latency
 
