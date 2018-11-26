@@ -476,24 +476,14 @@ nav:
             - Connection Options:                       infrastructure/login/connections.md
             - Directory Structure:                      infrastructure/login/directories.md
         - Clusters:
-            # The presence of multiple clusters, multiple cloud providers
-            # Architecture of a cluster with a head (master) node
-            # Ability to request permission to ssh directly to the cluster master node(s) for advanced users
-            # Ability to have private clusters for enterprise
             - Overview:                                 infrastructure/clusters/overview.md
-            # Home/Share/MASTER NODE
             - Directory Structure:                      infrastructure/clusters/directories.md
             # TODO: MM to add content
-            # Explain the hardware offered by each cloud provider
-            # List of Queues, pricing, location of datacenters, hyperthreading
             - AWS Clusters:                             infrastructure/clusters/aws.md
             - Azure Clusters:                           infrastructure/clusters/azure.md
-        # How resource on each compute cluster are allocated
         - Resource Management:
             - Overview:                                 infrastructure/resource/overview.md
-            # DEBUG, REGULAR, FAST, PREMIUM etc....
             - Category:                                 infrastructure/resource/category.md
-            # Different Queues on each Category (e.g. OR16)
             - Queues:                                   infrastructure/resource/queues.md
         - Compute Settings:
             - User Interface:                             infrastructure/compute-settings/ui.md
@@ -664,6 +654,7 @@ nav:
         - Account Registration:                         other/registration.md
 
     - Benchmarks:
+        - Overview:                      benchmarks/overview.md
         - High Throughput Screening:     benchmarks/high-throughput-screening.md
         - Distributed Memory Runs:       benchmarks/distributed-memory.md
         - Vendor Comparison:             benchmarks/vendor-comparison.md
