@@ -4,7 +4,7 @@ Surfaces and Slabs are widely used crystallographic concepts. A general theoreti
 
 # Theoretical background
  
-<details>
+<details markdown="1">
   <summary>
     Expand to view ...
   </summary>
@@ -67,7 +67,7 @@ In the animation below, we generate a crystalline slab of pure silicon along the
 
 Once a slab has been generated, and saved following the instructions outlined [in this page](../input-output/save.md), the user can retrieve the information about the settings that were used to generate the slab in the form of "metadata". Open the corresponding entry in the materials collection, and look for lines towards the bottom of the page starting with:
 
-<details>
+<details markdown="1">
   <summary>
      `"metadata": ...`
   </summary> 

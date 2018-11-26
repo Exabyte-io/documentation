@@ -1,13 +1,6 @@
-<!-- TODO: consider moving the paragpraph below to source editor page -->
-# Crystal Basis
-
-A complete crystal structure is obtained when a set of atoms, known as the *basis* atoms, are convolved with each one of the lattice points of the underlying Bravais [lattice](lattice.md). The image below outlines this procedure conceptually:
-
-<img src="/images/crystal_structure.jpg"/>
-
 # Setting the Crystal Basis
 
-The atomic basis of a Material's crystal structure can be edited and set by expanding the "Crystal Basis" section in the central panel of the Materials Designer interface. The appearance of the "Crystal Basis" editor within the wider interface is shown in the figure below:
+The [atomic basis](../../properties-directory/structural/basis.md) of a Material's crystal structure can be edited and set by expanding the "Crystal Basis" section in the central panel of the Materials Designer interface. The appearance of the "Crystal Basis" editor within the wider interface is shown in the figure below:
 
 <img src="/images/crystal-basis.png"/>
 
@@ -42,7 +35,7 @@ In addition, the atomic coordinates can be converted from such crystal units to 
 
 ## Transformation between Crystal and Cartesian units
 
-<details>
+<details markdown="1">
   <summary>
     Expand to view ...
   </summary>

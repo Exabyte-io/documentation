@@ -31,7 +31,7 @@ If no match is found, a new Bank Entity is created and a link between it and the
 
 A summary depicting the above steps involved in the creation of Bank entities can be found in the expandable section below: 
 
-<details>
+<details markdown="1">
   <summary>
      Expand to view
   </summary> 

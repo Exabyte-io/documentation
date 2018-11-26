@@ -1,8 +1,10 @@
 <!-- TODO: come back and revise once more after the rest -->
 
+# Content Highlights
+
 This page helps users quickly get through the documentation.
 
-# Login
+## Login
 
 We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
 
@@ -11,7 +13,7 @@ We support 2 basics login types: through web-page and via secure shell terminal.
 - [connection options explained](/connection-options/)
 - <a href="http://platform.exabyte.io/login" target="_blank">login page</a>
 
-# Creating materials
+## Creating materials
 
 There are 3 basic ways to input material geometries:
 
@@ -22,11 +24,11 @@ There are 3 basic ways to input material geometries:
 !!! note "Combinatorial sets"
     [Combinatorial sets](/materials/combinatorial-sets/) make it possible to rapidly create a large number of material geometries.
 
-# Running simulations
+## Running simulations
 
 Next step after creating/choosing a material is to simulate it to extract [characteristic properties](/materials/properties/). In order to do so, one needs to construct a simulation workflow.
 
-## Workflows
+### Workflows
 
 [Workflows](/models/simulation-workflows/) define the algorithm used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on simulation engine and model. For example, [Density Functional Theory](/models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
 
@@ -45,7 +47,7 @@ More information about specific workflows, including tutorials and input date:
 - [combinatorial screening](/tutorials/combinatorial-screening)
 <!-- - [combinatorial screening of iii-v semiconductor band gaps](/tutorials/semiconductors/III-Vs-band-gap.md) -->
 
-## Compute
+### Compute
 
 Compute parameters ([submission queue](/compute/queues), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
 
@@ -58,7 +60,7 @@ Compute parameters ([submission queue](/compute/queues), number of nodes and pro
 - [linpack benchmark & scalability study](/compute/hpl-benchmark/)
 - [simulation benchmarks](/compute/benchmarks-and-scalability/)
 
-## Run simulations via command-line interface (CLI)
+### Run simulations via command-line interface (CLI)
 
 Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
 
@@ -67,12 +69,12 @@ Advanced users connecting via command line terminal may use our queuing system s
 - [job script templates](/compute/cli/jobs/#pre-configured-submit-scripts)
 - [modules environment](/compute/cli/modules-environment/)
 
-## Extra simulation capabilities
+### Extra simulation capabilities
 
 - [restart from previous run](/tutorials/restart-job)
 - [remote desktop visualization](/tutorials/remote-desktop)
 
-# Exabyte Data Convention
+## Exabyte Data Convention
 
 We employ a proprietary JSON-based data convention that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind and have a flexible permission scheme allowing for complete privacy and wide publicity. More at:
 
@@ -82,7 +84,7 @@ We store all data about simulations and materials. Data originated from web appl
 - [analytics (comparing materials)](/materials/search-compare/)
 
 
-# Other
+## Other
 
 - [service levels and pricing](/accounts/accounting/pricing-and-service-levels/)
 - [storage quotas](/accounts/accounting/storage-quota/)

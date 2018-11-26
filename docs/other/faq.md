@@ -27,7 +27,7 @@ Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drive
 
 ## Why are you doing this?
 
-The world of today is broken. Humans now face important global challenges. We exist to solve the most fundamental and most important of these challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models. Read more at [blog.exabyte.io](blog.exabyte.io).
+The world of today is broken. Humans now face important global challenges. We exist to solve the most fundamental and most important of these challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models. Read more at [blog.exabyte.io](https://blog.exabyte.io).
 
 ## Why should I care?
 

@@ -1,28 +1,72 @@
-site_name: exabyte.io documentation
+site_name: Documentation
 site_url: https://docs.exabyte.io
-theme_dir: exabyte_theme
+site_description: Documentation for the users of Exabyte.io materials modeling platform.
+dev_addr: "localhost:8000"
+
+repo_name: 'exabyte-io/documentation'
+repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
-    - extra.css
+    - extra/css/general.css
+    - extra/css/images.css
+    - extra/css/super-fences.css
+    - extra/css/properties.css
+
 extra_javascript:
-    # TODO: migrate away from parse
-    # - https://www.parsecdn.com/js/parse-1.2.16.min.js
-    - extra.js
+    - extra/js/giffer.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
-site_favicon: /img/favicon.ico
+
 copyright: © 2018 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+
 extra:
-    version: "0.10.0"
+    version: "0.10.8"
     preload_javascript:
-        - /preload_hotjar.js
-        - /preload.js
+        - /extra/js/preload_hotjar.js
+        - /extra/js/preload.js
+    social:
+        - type: github
+          link: https://github.com/exabyte-io
+        - type: linkedin
+          link: https://linkedin.com/exabyte-io
 markdown_extensions:
+    - markdown_include.include:
+        base_path: esse
     - admonition
-    - pymdownx.arithmatex
+    - codehilite:
+        linenums: true
+    - def_list
+    # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
+    - footnotes:
+        PLACE_MARKER: "///FOOTNOTES GO HERE///"
     - toc:
         permalink: true
-pages:
+    - markdown.extensions.def_list
+    # https://facelessuser.github.io/pymdown-extensions/
+    - pymdownx.arithmatex           # Render Latex Formulas
+    - pymdownx.details              # Allow admonition-type collapsible <details>
+    - pymdownx.superfences          # Allow for code blocks "fencing"
+    # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
+    - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    - pymdownx.betterem             # Better bold/italic text
+    - pymdownx.striphtml            # Strip html comments before processing
 
+# https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
+# https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
+theme:
+    name: material
+    custom_dir: theme
+    palette:
+        primary: indigo
+        accent: indigo
+    logo: "images/logo/logo-white.png"
+    favicon: "images/logo/favicon.ico"
+    font:
+        text: Roboto
+        code: Roboto Mono
+    feature:
+        tabs: false
+
+nav:
     - Home: index.md
 
 # INTRODUCTION
@@ -30,8 +74,8 @@ pages:
         - Run first simulation:                          getting-started/run-first-simulation.md
         # Table of Contents re-iterated
         - Content highlights:                            getting-started/content-highlights.md
+        - Important Concepts:                            getting-started/important-concepts.md
         - CLI job submission:                            getting-started/cli-job.md
-
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
@@ -145,6 +189,7 @@ pages:
 
     - Methods:
         - Overview:                                     methods/overview.md
+        - Data:                                         methods/data.md
         - Pseudopotential:
             - Overview:                                 methods/pseudopotential/overview.md
             - Parameters:                               methods/pseudopotential/parameters.md
@@ -232,6 +277,9 @@ pages:
         - Data:                                         materials/data.md
         - Bank:                                         materials/bank.md
         - Default:                                      materials/default.md
+        - Classification:
+            - Crystalline:                              materials/classification/crystalline.md
+            - Non-Crystalline:                          materials/classification/non-crystalline.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -349,7 +397,7 @@ pages:
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
 
-    - Jobs via Command Line Interface:
+    - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
         # Jobscript, with examples
         - Batch script:                                 jobs-cli/batch-script.md
@@ -368,45 +416,55 @@ pages:
             - Terminate:                                jobs-cli/actions/terminate.md
 
     - Properties:
-        # Consider putting current properties page content here
         - Overview:                                     properties/overview.md
-        # Explain how the extraction of raw properties is done
-        # Note that we have plans to add user-defined extractors in the future
-        - Extractors:                                   properties/extractor.md
-        # Evolution
-        - Refinement:                                   properties/refinement.md
-        # GATEWAY to MATERIALS-DATA
-        # Note that we have plans to add user-defined schemas for properties
-        - Schemas & Examples:                           data-structured/schemas.md
+        - Lifecycle:
+            - Overview:                                 properties/lifecycle/overview.md
+            - Extractors:                               properties/lifecycle/extractor.md
+            - Refinement:                               properties/lifecycle/refinement.md
+            - Retrieval:                                properties/lifecycle/retrieval.md
+        - Data:
+            - Overview:                                 properties/data/overview.md
+            - Primitive:                                properties/data/primitive.md
+            - List of Schemas:                          properties/data/list.md
+            - Periodic Table:                           properties/data/periodic-table.md
+        - Classification:
+            - Overview:                                 properties/classification/overview.md
+            - General:                                  properties/classification/general.md
+            - Machine Learning:                         properties/classification/machine-learning.md
+            - Materials:                                properties/classification/materials.md
         - User Interface:
-            # Properties Explorer is located under Materials Viewer
             - Explorer:                                 properties/ui/explorer.md
-            # Final Structure Materials Viewer under results Tab in Jobs Viewer
             - Viewer:                                   properties/ui/viewer.md
-        # The sections below explain all Characteristic properties, with mentions about their UI appearances
+
+    - Properties Directory:
+        - Overview:                                     properties-directory/overview.md
         - Scalar:
-            # Energies: Total Energy, Total Energy Contributions, Fermi Energy, Zero Point Energy
-            - Energies:                                 properties/scalar/energies.md
-            # Total force and average pressure
-            - Pressure / Total Force:                   properties/scalar/pressure.md
-        - Array:
-            # Add a link to other atomic properties
-            - Atomic forces:                            properties/tensorial/atomic-forces.md
-            - Stress tensor:                            properties/tensorial/stress-tensor.md
-        - Dispersion Curves:
-            # Include description of band-gap here
-            - Band Structure:                           properties/dispersion/bandstructure.md
-            - Phonons:                                  properties/dispersion/phonons.md
-            - Density of States:                        properties/dispersion/dos.md
-        # The section below explains all of the Descriptive properties, in terms of their theoretical background
+            - Total Energy:                             properties-directory/scalar/total-energy.md
+            - Fermi Energy:                             properties-directory/scalar/fermi-energy.md
+#              TODO: re-enable when implemented
+#            - Formation Energy:                         properties-directory/scalar/formation-energy.md
+            - Surface Energy:                           properties-directory/scalar/surface-energy.md
+            - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
+            - Pressure:                                 properties-directory/scalar/pressure.md
+            - Total Force:                              properties-directory/scalar/total-force.md
+        - Non-scalar:
+            - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
+            - Band Structure:                           properties-directory/non-scalar/bandstructure.md
+            - Electronic Density of States:             properties-directory/non-scalar/electronic-dos.md
+            - Band Gaps:                                properties-directory/non-scalar/band-gaps.md
+            - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
+            - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
+        - Elemental:
+            - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
+            - Electronegativity:                        properties-directory/elemental/electronegativity.md
+            - Ionization Potential:                     properties-directory/elemental/ionization-potential.md
         - Structural:
-            # Consider Moving Basis/lattice explanation from Materials Designer to here
-            # Atomic coordinates, Atomic elements, Atomic masses, Atomic data, Basis
-            - Atomic:                                   properties/structural/atomic.md
-            # Explain the following Descriptive Properties here: Lattice, Lattice vectors, Lattice bravais
-            - Lattice:                                  properties/structural/lattice.md
-            # Explain how basis can be attached to lattice to create crystal structure
-            - Final Structure:                          properties/structural/final-structure.md
+            - Basis:                                    properties-directory/structural/basis.md
+            - Atomic Forces:                            properties-directory/structural/atomic-forces.md
+            - Lattice:                                  properties-directory/structural/lattice.md
+            - Space Group:                              properties-directory/structural/space-group.md
+            - Final Structure:                          properties-directory/structural/final-structure.md
+            - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
 
 
 # COMPUTATIONAL ASPECTS
@@ -448,19 +506,14 @@ pages:
             - User Interface:                             infrastructure/compute-settings/ui.md
             - Data:                                       infrastructure/compute-settings/data.md
 
-
     - Data Practices:
-        # Classification - 3 types of data + links to the corresponding sections
+        - Overview:                                     data/overview.md
         - Classification:                               data/classification.md
-        # Evolution of data from exiting job execution to webapp/objectstorage (see flowchart in GM notebook)
         - Lifecycle:                                    data/lifecycle.md
 
-    - Structured Data:
-        # Content description and links
-        # Links to other pages with Jobs, Materials, Workflows explanation
+    - Data Structures:
         - Overview:                                     data-structured/overview.md
-        # GATEWAY to MATERIALS-DATA
-        - Schemas & Examples:                           data-structured/schemas.md
+        - Convention:                                   data-structured/convention.md
 
     - Data on Disk:
         # Content description and links
@@ -478,26 +531,20 @@ pages:
 
 
     - Data in Object Storage:
-        # Content description and links
         - Overview:                                     data-in-objectstorage/overview.md
-        # General introduction to Files concept for storing and transferring unstructured data
         - Files:                                        data-in-objectstorage/files.md
         # TODO: MM to add content to the page below
         - Security:                                     data-in-objectstorage/security.md
-        - Dropbox(*):                                   data-in-objectstorage/dropbox.md
+        - Dropbox:                                   data-in-objectstorage/dropbox.md
         - User Interface:
-            # Files tab under Jobs Viewer and in Dropbox
+            - Dropbox Page:                             data-in-objectstorage/ui/dropbox-page.md
+            - Files Tab:                                jobs/ui/files-tab.md
             - Files Explorer:                           data-in-objectstorage/ui/explorer.md
-        - Actions:
-            # Content description and links
+        - Actions > Files:
             - Overview:                                 data-in-objectstorage/actions/overview.md
-            # Download action for files
             - Download:                                 data-in-objectstorage/actions/download.md
-            # Copy Path action for files
             - Copy Path:                                data-in-objectstorage/actions/copy-path.md
-            # Upload action for files, not available under Files Tab in Jobs Viewer
             - Upload:                                   data-in-objectstorage/actions/upload.md
-            # (Create new folder action)
             - Create Folder:                            data-in-objectstorage/actions/create-folder.md
 
     - Remote Connection:
@@ -568,18 +615,19 @@ pages:
 
 
     - REST-API:
-        - Overview:                                     rest-api/overview.md
-        # Authentication section explains how to authenticate and access the API.
-        # TODO: MM to adjust the content for the two pages below
-        - Authentication:                               rest-api/authentication.md
-        - Query structure:                              rest-api/query-structure.md
-        # Link to of the Python Client
-        # Link to Examples Repository
-        - Examples:                                     rest-api/examples.md
-        # Explanation and a Link to Swagger Explorer page
-        # - List of versions with its own link
-        # - Animation Example of how to use the swagger UI for Listing materials
-        - Endpoints:                                    rest-api/endpoints.md
+      # Link to Exabyte API Client repo
+      # Link to Exabyte API Examples repo
+      # Explanation and a Link to Swagger Explorer page
+      # List of versions with its own link
+      # Animation Example of how to use the swagger UI for Listing materials
+      - Overview:                                   rest-api/overview.md
+      # Authentication section explains how to authenticate and access the API.
+      - Authentication:                             rest-api/authentication.md
+      # Query structure section explains the structure of requests and responses.
+      - Query structure:                            rest-api/query-structure.md
+      - Endpoints:                                  rest-api/endpoints.md
+      - Exabyte API client:                          rest-api/api-client.md
+      - Exabyte API examples:                        rest-api/api-examples.md
 
 
 # TUTORIALS AND EXAMPLES
@@ -612,13 +660,6 @@ pages:
         # TODO: check relevance and update/delete
         - CLI data import:                              tutorials/cli-job-import.md
 
-    - Benchmarks:
-        - High Throughput Screening:                    benchmarks/high-throughput-screening.md
-        - Distributed Memory Runs:                      benchmarks/distributed-memory.md
-        - Vendor Comparison:                            benchmarks/vendor-comparison.md
-        - High-Performance Linpack:                     benchmarks/hpl-benchmark.md
-
-
 # LEGAL
     - Site Policy:
         - Privacy:                                      site-policy/privacy-statement.md
@@ -637,7 +678,12 @@ pages:
         - Restricted Content:                           other/restricted.md
         - Account Registration:                         other/registration.md
 
-
+    - Benchmarks:
+        - High Throughput Screening:     benchmarks/high-throughput-screening.md
+        - Distributed Memory Runs:       benchmarks/distributed-memory.md
+        - Vendor Comparison:             benchmarks/vendor-comparison.md
+        - High-Performance Linpack:      benchmarks/hpl-benchmark.md
+        - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
