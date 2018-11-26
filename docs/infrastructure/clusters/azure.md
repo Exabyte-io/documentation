@@ -30,19 +30,19 @@ The following table contains hardware specifications of the above queues.
 
 | Name  | CPU Type[^5] | Cores/Node | GPU Type[^6] | GPU/Node | Memory (GB) | Bandwidth (Gbps) |
 | :---: | :---:        | :---:      | :---:        | :---:    | :---:       | :---:            |
-| D     | type-1       | 8          | -            | -        | 56          | &le;10           |
-| OR    | type-1       | 16         | -            | -        | 112         | 10               |
-| OR8   | type-1       | 8          | -            | -        | 56          | &le;10           |
-| OF    | type-1       | 16         | -            | -        | 112         | 54.54[^7]        |
-| SR    | type-1       | 16         | -            | -        | 112         | 10               |
-| SR8   | type-1       | 8          | -            | -        | 56          | &le;10           |
-| SF    | type-1       | 16         | -            | -        | 112         | 54.54            |
-| GPOF  | type-2       | 6          | type-2       | 1        | 112         | 10               |
-| GP2OF | type-2       | 12         | type-2       | 2        | 224         | 10               |
-| GP4OF | type-2       | 24         | type-2       | 4        | 448         | 10               |
-| GPSF  | type-2       | 6          | type-2       | 1        | 112         | 10               |
-| GP2SF | type-2       | 12         | type-2       | 2        | 224         | 10               |
-| GP4SF | type-2       | 24         | type-2       | 4        | 448         | 10               |
+| D     | c-1          | 8          | -            | -        | 56          | &le;10           |
+| OR    | c-1          | 16         | -            | -        | 112         | 10               |
+| OR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
+| OF    | c-1          | 16         | -            | -        | 112         | 54.54[^7]        |
+| SR    | c-1          | 16         | -            | -        | 112         | 10               |
+| SR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
+| SF    | c-1          | 16         | -            | -        | 112         | 54.54            |
+| GPOF  | c-2          | 6          | g-2          | 1        | 112         | 10               |
+| GP2OF | c-2          | 12         | g-2          | 2        | 224         | 10               |
+| GP4OF | c-2          | 24         | g-2          | 4        | 448         | 10               |
+| GPSF  | c-2          | 6          | g-2          | 1        | 112         | 10               |
+| GP2SF | c-2          | 12         | g-2          | 2        | 224         | 10               |
+| GP4SF | c-2          | 24         | g-2          | 4        | 448         | 10               |
 
 ## Links
 
