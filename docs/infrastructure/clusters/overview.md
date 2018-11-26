@@ -8,9 +8,9 @@ The clusters offered as part of the [infrastructure of our platform](../overview
 
 ## Architecture Diagram
 
-The architecture of an multiple clusters connected to the same [Login Node](../login/overview.md) is explained in the diagram below. Each cluster can be accessed via its corresponding **Master Node**, together with its associated storage space.
+The architecture of a cluster is explained in the diagram below, comprising both a set of **distributed compute nodes** and a **distributed storage system**. Each cluster offered in our infrastructure can be accessed via its corresponding **Master Node**, with the network communication between nodes occurring via the **SSH protocol** implemented over a **Network File System (NFS)**. The allocation of these computational resources is handled by the **Resource Manager**, which is the object of a [separate discussion](../resource/overview.md).
 
-![Storage System](/images/Storage-System.png "Storage System")
+![Cluster](/images/Cluster.png "Cluster")
 
 !!!warning "Mandatory transit via Login Node"
     It is strongly recommended that the user first connects to the [login node](../login/overview.md) in order to access the cluster resources, via any of the available [connection methods](../login/connections.md). Clusters are **not** supposed to be accessed directly. We can exceptionally concede the ability to connect directly to the cluster master node(s) for advanced users, but a special permission needs to be [requested](../../ui/support.md) first.
