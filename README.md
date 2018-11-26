@@ -15,7 +15,7 @@ For quick installation run:
 ```bash
 easy_install pip  # if pip is not installed yet
 virtualenv .virtualenv
-source ./virtualenv/bin/activate
+source .virtualenv/bin/activate
 pip install -r requirements.txt
 git submodule update --init
 ```
