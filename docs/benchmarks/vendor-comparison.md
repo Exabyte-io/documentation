@@ -1,8 +1,8 @@
-# Cloud vendors comparison
+# Cloud vendors performance comparison
 
 > Date: 2016/09
 
-Since each cloud provider uses a specific type of resources, performance per application may vary. For the sake of simplicity, a short VASP calculation utilizing 1 CPU with the following characteristics was used to quickly compare the performance of four cloud providers, AWS, Rackspace, SoftLayer and Microsoft Azure.
+Exabyte.io utilizes multiple cloud vendors resources to provide users with a large scale computing infrastructure. Since Each cloud provider uses a specific type of resources, applications performance vary on different cloud vendors. For the sake of simplicity, a short VASP calculation utilizing 1 CPU with the following characteristics was used to compare the performance of four cloud providers, AWS, Rackspace, SoftLayer and Microsoft Azure.
 
 ## Model and Method
 
@@ -10,9 +10,10 @@ Plane-wave Pseudopotential Density Functional Theory formalism as implemented in
 
 ## Inputs
 
-<details>
-    <summary>**INCAR**</summary>
-```
+<details markdown="1">
+  <summary>**INCAR**</summary>
+
+```fortran
 SYSTEM = Si
 !!
 NWRITE = 2
@@ -41,9 +42,10 @@ EMAX = 0
 ```
 </details>
 
-<details>
-    <summary>**POSCAR**</summary>
-```
+<details markdown="1">
+  <summary>**POSCAR**</summary>
+
+```text
 Silicon8
 1.0
 5.468728 0.000000 0.000000
@@ -63,9 +65,10 @@ direct
 ```
 </details>
 
-<details>
-    <summary>**KPOINTS**</summary>
-```
+<details markdown="1">
+  <summary>**KPOINTS**</summary>
+
+```text
 Automatic mesh
 0
 Gamma
