@@ -1,7 +1,10 @@
+# Microsoft Azure Clusters
+
+This page contains information about clusters hosted on Microsoft Azure[^1] and their hardware specifications.
+
 ## Clusters
 
-The following table provides information about available clusters on Microsoft Azure[^1] cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
-
+The following table provides information about available clusters on Microsoft Azure cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
 
 | Name        | Hostname                                          | Location |
 | :---:       | :---:                                             | :---:    |
@@ -11,18 +14,18 @@ The following table provides information about available clusters on Microsoft A
 
 The list of currently enabled queues are given below.
 
-| Name  | Type[^2] | Subtype[^3] | Charge Policy[^4] | Price (Cents/Core*Hour) | Nodes/Job | Max Nodes |
-| :---: | :---:    | :---:       | :---:             | :---:                   | :---:     | :---:     |
-| D     | debug    | debug       | core-seconds      | 40.02                   | 1         | 10        |
-| OR    | ordinary | regular     | core-seconds      | 20.00                   | 1         | 10        |
-| OR8   | ordinary | regular     | core-seconds      | 20.01                   | 1         | 10        |
-| OF    | ordinary | fast        | core-hours        | 22.00                   | &le;50    | 100       |
-| SR    | saving   | regular     | core-seconds      | 4.00                    | 1         | 10        |
-| SR8   | saving   | regular     | core-seconds      | 4.01                    | 1         | 10        |
-| SF    | saving   | fast        | core-hours        | 4.41                    | &le;50    | 100       |
-| GPOF  | ordinary | fast        | core-hours        | 12.22                   | &le;50    | 10        |
-| GP2OF | ordinary | fast        | core-hours        | 12.22                   | &le;50    | 10        |
-| GP4OF | ordinary | fast        | core-hours        | 12.22                   | &le;50    | 10        |
+| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price (Cents/Core*Hour) | Nodes/Job | Max Nodes |
+| :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
+| D     | debug        | debug    | core-seconds      | 40.02                   | 1         | 10        |
+| OR    | ordinary     | regular  | core-seconds      | 20.00                   | 1         | 10        |
+| OR8   | ordinary     | regular  | core-seconds      | 20.01                   | 1         | 10        |
+| OF    | ordinary     | fast     | core-hours        | 22.00                   | &le;50    | 100       |
+| SR    | saving       | regular  | core-seconds      | 4.00                    | 1         | 10        |
+| SR8   | saving       | regular  | core-seconds      | 4.01                    | 1         | 10        |
+| SF    | saving       | fast     | core-hours        | 4.41                    | &le;50    | 100       |
+| GPOF  | ordinary     | fast     | core-hours        | 12.22                   | &le;50    | 10        |
+| GP2OF | ordinary     | fast     | core-hours        | 12.22                   | &le;50    | 10        |
+| GP4OF | ordinary     | fast     | core-hours        | 12.22                   | &le;50    | 10        |
 
 ## Hardware Specifications
 
@@ -48,9 +51,9 @@ The following table contains hardware specifications of the above queues.
 
 [^1]: [Microsoft Azure](https://azure.microsoft.com/en-us/)
 
-[^2]: [Queue types](/infrastructure/resource/queues/#types)
+[^2]: [Queue Resource categories](/infrastructure/resource/category/#resource-categories)
 
-[^3]: [Queue subtypes](/infrastructure/resource/queues/#subtypes)
+[^3]: [Queue Provision Modes](/infrastructure/resource/category/#provision-modes)
 
 [^4]: [Charge polices](/infrastructure/resource/queues/#charge-policies)
 
