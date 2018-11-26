@@ -10,11 +10,11 @@ Exact set of properties that have to be supplied to, and can be extracted as a r
 
 ## List of Properties
 
-We have listed the properties available for computation on our platform [in this page](list.md).
+We have listed and described the properties available for computation on our platform [in this section](../properties-directory/overview.md).
 
 ## Classification
 
-We explain how properties can be classified into different categories [here](classification/general.md). We also elaborate on further classification for properties in the specific contexts of [Materials](classification/materials.md) and [Machine Learning](classification/machine-learning.md) respectively.
+We explain how properties can be classified into different categories [here](classification/overview.md).
 
 ## Data
 
@@ -22,20 +22,10 @@ For an example of a JSON structure-based representation of properties, and of th
 
 ## Lifecycle
 
-### Extractors
-
-Properties are extracted from the output of the Workflow simulations and presented to the user following the procedures and conventions outlined in [this section](extractor.md).
-
-### Refinement
-
-The raw extracted properties are subsequently refined and categorized in the database for a better understanding of their physical meaning and of their overall numerical precision. We explain how this refinement procedure is enacted [here](refinement.md). 
-
-### Retrieval
-
-Properties can be retrieved in multiple ways as explained [in this page](retrieval.md).
+We describe the lifecycle that properties go through in order to be extracted from simulation output, and then subsequently refined and retrieved, [in this section](lifecycle/overview.md).
 
 ## User Interface
 
-Properties are presented in special panels within the user interface of the [Job Viewer](../jobs/ui/viewer.md). One of such panels contains the **final computed structure**, displayed under an instance of [Materials Viewer](../materials/ui/viewer.md). It is described separately [here](ui/viewer.md).
+Properties are presented in special panels within the user interface of the [Job Viewer](../jobs/ui/viewer.md), as introduced [here](ui/viewer.md).
 
 These properties can also be reviewed under a dedicated [Explorer-type interface](../entities-general/ui/explorer.md) for each Material stored in the account-owned [collection](../accounts/collections.md). We explain how to retrieve and inspect the contents of this Properties Explorer [in this page](ui/explorer.md). 
