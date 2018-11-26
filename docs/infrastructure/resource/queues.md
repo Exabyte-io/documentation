@@ -1,30 +1,38 @@
-# Types
+# Queues
 
-We have multiple types of queues that let our users optimize the cost-to-performance ratio.
+## Name Convention
 
-| Level      | Description                                                                   |
-| :--------- | :-----------                                                                  |
-| Debug      | Limited compute resources with no-to-little wait time at a cost premium       |
-| Ordinary   | Meant for most production tasks, extensive compute resources at the base rate |
-| Saving     | Significantly lower rate through utilizing idle compute resources             |
+Queue name consists of 6 parts from which only one part (part 4 enclosed by braces, `{}`) is mandatory and other parts are optional (enclosed by brackets, `[]`).
 
+```
+[1][2][3]{4}[5][6]
+```
 
-!!! tip "Queue Selection"
-    It is advised to use Debug level while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
+1. Whether queue is GPU-enabled. If yes, queue name starts with `G` letter.
 
-!!! note "Saving Resources Termination"
-    When the data center has increased load, some or all saving resources may be terminated. We attempt restarting the calculations by resubmitting the corresponding job to resource manager queue. At current, no charge for the first whole hour is incurred upon saving resource termination.
+2. GPU type. `P` means [P100](overview/#gpu-types), [V100](overview/#gpu-types) is used if not specified.
 
+3. Number of GPUs per each node, 1 GPU if not specified.
 
-# Subtypes
+4. Queue [cost category](category.md#cost-categories), D (Debug), O (Ordinary) and S (Saving).
 
-| Name    | Usage model | Resource provision mode |
-|:--------|:------------|:------------------------|
-| Debug   | Test calculations in a nearly interactive manner|  1 extra standby compute node is maintained |
-| Regular | Day-to-day submissions at normal priority | 1 compute node is added at a time when new tasks are submitted |
-| Fast    | Urgent or high-throughput calculations at higher priority | Multiple compute nodes are added simultaneously when new jobs are submitted |
+5. Queue [provision mode](category.md#provision-modes), R (Regular) and F (Fast).
 
-# Charge Policies
+6. Number of cores per node. Depends on the cluster if it is not specified.
+
+### Examples
+
+1. **G4OF**: GPU-enabled, V100, 4 GPUs, Ordinary, Fast, 32 cores on AWS - not available on Azure
+
+2. **GPSF**, GPU-enabled, P100, 1 GPU, Saving, Fast, 6 cores on Azure - not available on AWS
+
+3. **OR16**: Ordinary, Regular, 16 cores
+
+4. **OF**: Ordinary, Fast, 36 cores on AWS - 16 cores on Azure
+
+4. **SF+**: Saving, Fast, 36 cores on AWS - not available on Azure, faster CPU compare to SF queue
+
+## Charge Policies
 
 - **core-seconds**: jobs are charged according to the number of core-seconds consumed
 - **core-hours**: jobs are charged according to the number of core-hours consumed

@@ -2,7 +2,7 @@
 
 ## Summary
 
-[Properties](../overview.md) are classificaed according to the below. We explain the terms contained in the table throughout the remainder of the present documentation page. These classification criteria complement the more general ones introduced [here](../../data/classification.md).
+[Properties](../overview.md) are classified according to the below. We explain the terms contained in the table throughout the remainder of the present documentation page. These classification criteria complement the more general ones introduced [here](../../data/classification.md).
 
 | By refinement status |  By data type | By relation to Workflow  | By Uniqueness   | By Physical Meaning      |
 |:--------:|:-------------:|:------------------------:|:---------------:|:------------------------:|
@@ -12,13 +12,13 @@
 
 ## By refinement status
 
-When the data is first obtained it can be raw, or unprocessed. The opposite occurs when the data is [refined](../refinement.md) to pass multiple filter channels. We subdivide the following categories.
+When the data is first obtained it can be raw, or unprocessed. The opposite occurs when the data is [refined](../lifecycle/refinement.md) to pass multiple filter channels. We subdivide the following categories.
  
 - **Raw**, 
 - **Refined**,
 - **Best**.
 
-These categories are further explained [here](../refinement.md).
+These categories are further explained [here](../lifecycle/refinement.md).
 
 ## By Data Type
 
@@ -27,7 +27,7 @@ We can subdivide properties based on how they are presented to the user into the
 - **Scalar**: can be expressed as a single numerical value with an associated measurement unit.
 - **Non-Scalar**: cannot be expressed as above.
 
-We review the [scalar](../scalar/overview.md) and [non-scalar](../non-scalar/overview.md) classes of Materials properties separately in their respective documentation sections.
+We review the scalar and non-scalar classes of Materials properties in [this documentation section](../../properties-directory/overview.md).
 
 > NOTE: non-scalar properties may be further subdivided into other groups like 1-dimensional arrays or matrices, for example.
 

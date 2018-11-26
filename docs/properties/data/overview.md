@@ -6,60 +6,22 @@ We make use of the data convention, introduced [in this page](../../data-structu
 
 We provide below an example of a [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the JSON external documentation [^1] [^2] for the explanation of the primitive types and schema keywords. 
 
-Also listed below, is an example of a JSON representation of the [total energy](../scalar/energies.md), which can validated by the schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
+Also listed below, is an example of a JSON representation of the [total energy](../../properties-directory/scalar/total-energy.md), which can validated by the schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
+
+<details markdown="1">
+  <summary>
+    Data Convention
+  </summary> 
 
 ```json tab="Schema"
-{
-    "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "total energy schema",
-    "allOf": [
-        {
-            "allOf": [
-                {
-                    "type": "object",
-                    "properties": {
-                        "value": {
-                            "type": "number"
-                        }
-                    },
-                    "required": [
-                        "value"
-                    ]
-                }
-            ],
-            "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "units": {
-                    "enum": [
-                        "eV"
-                    ]
-                }
-            },
-            "required": [
-                "name",
-                "units"
-            ]
-        }
-    ],
-    "properties": {
-        "name": {
-            "enum": [
-                "total_energy"
-            ]
-        }
-    }
-}
+{!schema/material/properties/primary/total_energy.json!}
 ```
 
 ```json tab="Example"
-{
-    "name": "total_energy",
-    "value": -123.43573079,
-    "units": "eV"
-}
+{!example/material/properties/primary/total_energy.json!}
 ```
+
+</details> 
 
 ## Primitive Schema Types
 
@@ -67,7 +29,7 @@ In addition to the default primitive types for JSON Schemas, we construct additi
 
 ## List of Schemas
 
-[In this section](list.md), we offer a full list of schemas and examples relevant for properties.
+[In this section](list.md), we offer a full list of schemas and examples relevant for properties. The properties relevant for each element in the Periodic Table are also listed [separately](periodic-table.md).
 
 ## Links
 
