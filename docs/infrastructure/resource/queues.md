@@ -52,7 +52,7 @@ Queue name consists of 6 parts from which 2 parts always exist (4 and 5) and oth
 
 3. **OR16**: Ordinary, Regular, 16 cores
 
-4. **OF**: Ordinary, Regular, 36 cores on AWS - 16 cores on Azure
+4. **OF**: Ordinary, Fast, 36 cores on AWS - 16 cores on Azure
 
 ## Charge Policies
 
