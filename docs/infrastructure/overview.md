@@ -30,35 +30,39 @@ Dropbox is a central sharing storage space accessible from all nodes of the plat
 
 The Login Node provides the main access gateway to the rest of the computational infrastructure, and is the object of a [separate discussion](login/overview.md).
 
-## 6. Command Line Interface
+## 6. Web Terminal
 
 Alternatively to the aforementioned Remote Desktop connection method, the platform can also be accessed via the Command Line Interface described [here](../cli/overview.md). We provide a [Web Terminal](../remote-connection/web-terminal.md) utility for logging in via Command Line directly from the Web Interface.
 
-## 7. Clusters
+## 7. SSH
+
+The [Command Line Interface](../cli/overview.md) can also be accessed via an external SSH client instead of the Web Terminal. [This page](../remote-connection/ssh.md) outlines the instructions on how to do so.
+
+## 8. Clusters
 
 The computational power of our platform is distributed across different cloud-based computing clusters, which are described [in this section](clusters/overview.md) of the documentation. 
 
-## 8. Storage System
+## 9. Storage System
 
 The input and output data of simulations can be stored as [unstructured data](../data-on-disk/overview.md) on an appropriate storage system, as explained in its corresponding [documentation page](storage.md).
 
-## 9. Resource Management
+## 10. Resource Management
 
 The computational resources offered on our platform are managed and allocated to the users by a task scheduler, operated under a system of queues, as documented [here](resource/overview.md).
 
-## 10. Object Storage
+## 11. Object Storage
 
 The simulation files stored on the cluster hard drives can subsequently be stored as [objects](../data-in-objectstorage/overview.md) for their retrieval under the Web Interface. 
 
-## 11. Master Node
+## 12. Master Node
 
 The Master Node constitutes the main entry gateway to each available computing Cluster, and is documented in its respective [section of the documentation](clusters/directories.md).
 
-## 12. Database
+## 13. Database
 
 The Database contains the various account-owned [collections](../accounts/collections.md) of [entities](../entities-general/overview.md) and their respective [properties](../properties/overview.md), stored in the form of [structured data](../data-structured/overview.md).
 
-## 13. Computational Resources
+## 14. Computational Resources
 
 The various settings and parameters affecting the allocation of the computational resources offered on our infrastructure, at the moment of the launching of a [Job simulation](../jobs/overview.md), can be entered from the Web Interface according to the instructions contained [in this page](compute-settings/ui.md). 
 
