@@ -1,11 +1,15 @@
-# Security
+All objects in object storage by default are private. This means that they are only accessible to authorized parties. Authorized parties can share objects with others by creating a pre-signed URL, using their own security credentials, to grant time-limited permission to access the objects. Readers are referred to AWS S3[^1] and Azure Blob[^2] documentations for more information.
 
-All objects in object storage by default are private. This means that only the owner has permission to access them. The owner can optionally share objects with others by creating a pre-signed URL, using their own security credentials, to grant time-limited permission to download the objects. See AWS S3 and Azure Blob pre-signed URLs in [links](#Links) section for more information.
+Web application is authorized to manage objects and create pre-signed URLs for the objects an [account](../accounts/overview.md) has access to (for example [job](../jobs/ui/files-tab.md) and [Dropbox](./dropbox.md) files). Please note that the pre-signed URLs are valid only for the specified duration (15 min by default).
 
-Our web application creates pre-signed URLs for the objects owned by user when they are accessed. We automatically provide security credentials and expiration date and time. Please note that the pre-signed URLs are valid only for the specified duration (15 min by default).
+## Other
 
+Please consult [security](/security/current-state/) section for more information about our security polices.
 
-Please consult [security](/security/current-state/) section for more information about security polices in place.
+## Links
 
-- [AWS S3 pre-signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html)
-- [Azure Blob pre-signed URLs](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
+[^1]: [Amazon Web Services, official online documentation, S3 signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html)
+
+[^2]: [Microsoft Azure, official online documentation: Pre-signed URLs for Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
+
+///FOOTNOTES GO HERE///
