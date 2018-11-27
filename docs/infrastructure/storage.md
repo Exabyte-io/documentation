@@ -4,9 +4,11 @@ We allow for the storage of simulation data on **hard drives** connected to the 
 
 ## Storage Diagram
 
-A representative example of an overall storage system, such as implemented on our infrastructure, is explained visually in the flowchart below. This example includes multiple clusters connected to the same central [Login Node](login/overview.md), each one with its own corresponding main access [Master Node](clusters/directories.md) and associated storage space. Here, we also show (through color labelling) how each Cluster Home directory present under the corresponding Master Node filesystem is **mapped (mounted)** to the Login Home.
+A representative example of an overall storage system, such as implemented on our infrastructure, is explained visually in the flowchart below. 
 
 ![Storage System](/images/Storage-System.png "Storage System")
+
+The above example includes multiple clusters connected to the same central [Login Node](login/overview.md), each one with its own corresponding main access [Master Node](clusters/directories.md) and associated storage space. Here, we also show (through color labelling) how each Cluster Home directory present under the corresponding Master Node filesystem is **mapped (mounted)** to the Login Home. So, for example, the home folder for "cluster-001" under the Master Node path `/home/<username>` is mapped to the directory path `/cluster-001-home/<username>` under the Login Node. 
 
 ## Storage Quotas
 
