@@ -4,7 +4,7 @@ A graphical **Remote Desktop (RD)** environment is also available as an option f
 
 ## Linux Environment
 
-This Remote Desktop environment is based on the CentOS Linux distribution [^1] [^2]. We further explain the directory structure present under CentOS, which is implemented under the GNOME Desktop environment [^3], [in this section of the documentation](../data-on-disk/directories.md).
+This Remote Desktop environment is based on the CentOS Linux distribution [^1] [^2]. We further explain the directory structure present in CentOS, which is implemented under the GNOME Desktop environment [^3], [in this section of the documentation](../data-on-disk/directories.md).
 
 ## Available Analysis Software
 
