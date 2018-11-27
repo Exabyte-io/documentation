@@ -1,16 +1,10 @@
 # Queues
 
-Different task scheduling **Queues** are available under each [speed category](category.md), for accessing the [computational clusters](../clusters/overview.md) and executing [simulation Jobs](../../jobs/overview.md) upon them. These queues afford for the allocation of different amounts of **computational resources** (number of cores).
+Different task scheduling **Queues** are available under each [category](category.md), for accessing the [computational clusters](../clusters/overview.md) and executing [simulation Jobs](../../jobs/overview.md) upon them. These queues afford for the allocation of different amounts of **computational resources** (number of cores).
 
-## Available Options 
+Cluster-specific list of queues are available for each of the [Amazon Web Service](../clusters/aws.md) and [Azure](../clusters/azure.md) Cloud providers.
 
-Here, we present a table of all the possible queue options, with an indication of how many CPU cores are available under each of them.
-
-<!-- TODO: GM to add the general description about:
-    - what queues are
-    - links to how to select queues in Web Interface and CLI
-    - links to the cluster-specific list of queues 
- -->
+Queues can be selected under the Web Interface at the moment of [Job Creation](../../jobs-designer/overview.md) according to the instructions found [here](../compute-settings/ui.md#queue). Similarly, the desired queue can be specified under the [Batch Script](../../jobs-cli/batch-script.md) for the case of [Job submission via the Command Line Interface](../../jobs-cli/overview.md).
 
 ## Naming Convention
 
