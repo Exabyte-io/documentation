@@ -1,25 +1,41 @@
 # Resource Categories
 
-Different **speed categories** are available at different prices, depending on the urgency of the [simulation job](../../jobs/overview.md) that needs to be submitted. 
+This page explains different classifications that are combined together to form the queues.
 
-Below we outline the available category options, in order of ascending **Charge factor** associated with each of them. The relevant pricing information can be found under the [service levels page](../../pricing/service-levels.md). 
+## Hardware Classes
 
-## Ordinary
+The hardware class specifies the type of hardware being used underneath which is either GPU-enabled or CPU-only at the moment.  
 
-The "Ordinary" category is meant as the common "workhorse" option, and is useful for most intent and purposes.
+| Class       | Description           |
+| :---------  | :-----------          |
+| CPU-only    | CPU-only resources    |
+| GPU-enabled | GPU-enabled resources |
 
-## Debug
+!!! note "Enhance hardware"
+    Queues ended with `+` letter (OF+) use an enhanced version (new generation) of the hardware compare to the original queue (OF).
 
-The "Debug" option is fast to execute, but contains limited resources. It is as such only good for preliminary testing and debugging of simulations.
+## Cost Categories
 
-## Saving
+There are multiple cost categories that let users optimize the cost-to-performance ratio.
 
-This option is available at a significantly lower charge factor, through utilizing idle compute resources. Its main downside is that job execution may be terminated at any time depending on the load in the data center, which can make the compute resources unavailable since assigned to other jobs with higher priority.
+| Category   | Description                                                                   |
+| :--------- | :-----------                                                                  |
+| Debug      | Limited compute resources with no-to-little wait time at a cost premium       |
+| Ordinary   | Meant for most production tasks, extensive compute resources at the base rate |
+| Saving     | Significantly lower rate through utilizing idle compute resources             |
 
-## Fast
+!!! tip "Queue Selection"
+    It is advised to use Debug category while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
 
-This category provides fast access to computational resources. This is particularly resourceful for urgent jobs, but at the same time more expensive to use. The option to use Graphical Processing Units (GPUs) is also offered here for better performance.
+!!! note "Saving Resources Termination"
+    When the data center has increased load, some or all saving resources may be terminated. We attempt restarting the calculations by resubmitting the corresponding job to resource manager queue. At current, no charge for the first whole hour is incurred upon saving resource termination.
 
-## Premium
+## Provision Modes
 
-Our infrastructure includes [multiple compute clusters](../clusters/overview.md) at a time, with some providing premium performance. Premium hardware has an extra charge factor incurred as part of its usage, due to its superior performance.
+The provision mode specifies the way compute nodes are provisioned.
+
+| Mode     | Description                                                                 |
+| :---:    | :---:                                                                       |
+| Debug    | 1 extra standby compute node is maintained                                  |
+| Regular  | 1 compute node is added at a time when new jobs are submitted               |
+| Fast     | Multiple compute nodes are added simultaneously when new jobs are submitted |

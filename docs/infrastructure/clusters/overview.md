@@ -1,3 +1,5 @@
+<!-- TODO: GM to add link to Benchmarks to mention that we did benchmark the performance for different hardware types for the simulation engines used -->
+
 # Clusters
 
 We offer a set of **high-performance computing clusters** for performing material modeling simulations in a **massively parallel** fashion. These clusters are part of the computing cloud infrastructures offered by various providers, which are referenced towards the end of the present page.
