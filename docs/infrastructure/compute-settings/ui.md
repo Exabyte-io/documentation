@@ -16,7 +16,7 @@ Further down, under the "Cluster" section, a list of [computing clusters](../clu
 
 The options for submitting the computing job to the [task scheduler](../resource/overview.md) of the cluster can be found under the section "Queue". 
 
-In particular, the user is offered the possibility to launch the desired job with three main different levels of priority: a "Debug (D)" mode which is especially suited for preliminary tests, an "fast (eg. OF)" mode for high priority on the scheduler and rapid execution of the job, and finally an "regular (eg. OR)" mode to obtain regular access to the scheduler. These options are each subdivided into different sub-options, as explained in detail [here](../resource/queues.md).
+The user is offered the possibility to launch the desired job with a flexible set of hardware and resource allocation modes per queue. For example, the Debug ("D") queue is especially suited for preliminary tests, "fast" queues (eg. "OF")" are best for high-throughput or multi-node distributed memory runs, and "regular queues" (eg. OR) provide regular access to the scheduler.
 
 ## Nodes / PPN
 

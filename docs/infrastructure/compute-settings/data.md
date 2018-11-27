@@ -1,6 +1,6 @@
-# Compute Structured Representation
+# Structured Representation of Compute Parameters
 
-Below we show an example JSON structured representation for the compute parameters introduced [here](ui.md). The keywords contained here are further explained in the ensuing table.
+Below we show an example JSON structured representation for the compute parameters introduced [here](ui.md). The keywords contained here are referenced in the ensuing table, where each entry can be clicked upon to retrieve its corresponding documentation explanation.
 
 ```json
 {
@@ -20,13 +20,17 @@ Below we show an example JSON structured representation for the compute paramete
 ```
 
 ## List of Keywords
+
+<center>
     
-| Keyword    |   Description      |  
-| :-------- |:----------- |
-| ppn |  The number of processors per node   | 
-| nodes |  The number of computing nodes dedicated to the job execution | 
-| queue | Type of [queue](../resource/queues.md) on which job is being submitted |
-| timeLimit  | The maximum duration of time that the job can be executed for  |
-| notify | Enable the sending of notifications on the job status to the user  | 
-| cluster | Please refer to the table contained [in this section](../../accounts/ui/charges-payments.md#advanced-search) for an explanation of the "jid" and  "fqdn" (Fully Qualified Domain Name) keywords in the context of [clusters](../clusters/overview.md) | 
-| arguments | Extra arguments  | 
+| Keyword    |  
+| :-------- |
+| [ppn](ui.md#nodes-/-ppn) |
+| [nodes](ui.md#nodes-/-ppn) |  
+| [queue](ui.md#queue)  |
+| [timeLimit](ui.md#time-limit) |  
+| [notify](ui.md#notifications) |
+| [cluster](ui.md#cluster-choice) | 
+| [arguments](ui.md#advanced-options) |
+
+</center>
