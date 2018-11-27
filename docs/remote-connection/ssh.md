@@ -1,4 +1,4 @@
-# Connect to Command Line Interface with SSH Terminal
+# Command Line Interface via SSH
 
 The user can connect to the [Command Line Interface](../cli/overview.md) (CLI) of our platform using an **external SSH terminal client** under any Operating System (OS), as an alternative to the [Web Terminal](web-terminal.md).
 
