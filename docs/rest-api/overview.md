@@ -1,21 +1,33 @@
-This section contains information about the RESTful Application Programming Interface or REST-API.
+# RESTful API
 
-# Introduction
+## Definition
 
-REST-API is meant as a tool to enable programmatic access to data for data scientists and engineers, and anyone who prefers coding to the user interface.
+RESTful[^1] API (or REST-API, or Representational State Transfer Application Programming Interface) is a layer allows to access and manipulate textual representation of the web resources (eg. [Entities](../entities-general/overview.md)) by using a uniform and predefined set of stateless operations. 
 
-# Authentication
+In other words, REST-API provides **programmatic** access to data and functionality for data scientists and engineers, and anyone else who prefers coding to the user interface.
+
+## Authentication
 
 [Authentication](authentication.md) section explains how to authenticate and access the API.
 
-# Endpoints
+## Query Structure
 
-The currently supported functions are explained inside the corresponding Endpoints sections. For example, the information on dealing with materials data is available [here](endpoints.md).
+[Query Structure](query-structure.md) section provides information about REST-API requests and responses.
 
-# Queries
+## Endpoints
 
-[Query Structure](query-structure.md) section explains how to create and set up HTTP requests to the API.
+[Endpoints](endpoints.md) section contains information about different API versions and how to access endpoints under a particular one.
 
-# Python client
+## API Client
 
-Information on how to access the data through a [python client](query-structure.md) is available as well.
+[API client](api-client.md) section explains how to access REST-API via Python.
+
+## API Examples
+
+[API examples](api-examples.md) section contains examples of performing the most common tasks.
+
+## Links
+
+[^1]: [Representational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
+
+///FOOTNOTES GO HERE///
