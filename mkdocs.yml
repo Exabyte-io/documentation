@@ -474,7 +474,6 @@ nav:
         - Storage System:                               infrastructure/storage.md
         - Login Node:
             - Overview:                                 infrastructure/login/overview.md
-            - Connection Options:                       infrastructure/login/connections.md
             - Directory Structure:                      infrastructure/login/directories.md
         - Clusters:
             - Overview:                                 infrastructure/clusters/overview.md
