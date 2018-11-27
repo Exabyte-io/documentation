@@ -20,6 +20,8 @@ Below we show an example JSON structured representation for the compute paramete
 ```
 
 ## List of Keywords
+
+<center>
     
 | Keyword    |  
 | :-------- |
@@ -30,3 +32,5 @@ Below we show an example JSON structured representation for the compute paramete
 | [notify](ui.md#notifications) |
 | [cluster](ui.md#cluster-choice) | 
 | [arguments](ui.md#advanced-options) |
+
+</center>
