@@ -62,8 +62,8 @@ The Master Node constitutes the main entry gateway to each available computing C
 
 The Database contains the various account-owned [collections](../accounts/collections.md) of [entities](../entities-general/overview.md) and their respective [properties](../properties/overview.md), stored in the form of [structured data](../data-structured/overview.md).
 
-## 14. [Computational Resources](compute-settings/ui.md)
+## 14. [Computational Resources](compute/overview.md)
 
-The various settings and parameters affecting the allocation of the computational resources offered on our infrastructure, at the moment of the launching of a [Job simulation](../jobs/overview.md), can be entered from the Web Interface according to the instructions contained [in this page](compute-settings/ui.md). 
+The various settings and parameters affecting the allocation of the computational resources offered on our infrastructure, at the moment of the launching of a [Job simulation](../jobs/overview.md), can be entered from the Web Interface according to the instructions contained [in this page](compute/overview.md). 
 
 The computational resources available as part of our services are themselves listed for each of the [Azure](clusters/azure.md) and [Amazon Web Service](clusters/aws.md) Cloud Providers.

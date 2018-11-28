@@ -8,4 +8,4 @@ The appearance of this "Compute" tab is displayed below, with its corresponding 
 
 <img src="/images/compute-tab.png"/>
 
-Please refer to [this page](/infrastructure/compute-settings/ui.md) for a comprehensive description of each separate section in this tab.
+Please refer to [this page](/infrastructure/compute/overview.md) for a comprehensive description of each separate section in this tab.
