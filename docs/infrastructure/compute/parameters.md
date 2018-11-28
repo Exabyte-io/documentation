@@ -4,7 +4,7 @@ In the present page, we review the different **compute parameters** which can be
 
 ## Time limit 
  
-"Time limit" section allows the user to specify the maximum time limit for the calculation to be run for. The format is `HH:MM:SS` in which H, M and S stand for day, hour, minute and second respectively. Thus, the example below would correspond to 12 hours exactly:
+The user can specify the maximum time limit for the calculation to be run for. The format is `HH:MM:SS` in which H, M and S stand for day, hour, minute and second respectively. Thus, the example below would correspond to 12 hours exactly:
 
 ```bash
 12:00:00
@@ -14,13 +14,13 @@ Please note that a calculation will be terminated when the runtime exceeds the m
 
 ## Cluster choice
 
-Further down, under the "Cluster" section, a list of [computing clusters](../clusters/overview.md) available for performing the desired calculation is presented in the corresponding drop-down menu, with the option to visualize the status of each cluster ("See clusters status"). 
+A list of [computing clusters](../clusters/overview.md) is available for performing the desired calculation. The user can also visualize the status of each cluster, under the "See clusters status" option in the [user interface](overview.md). 
 
 ## Queue
 
-The options for submitting the computing job to the [task scheduler](../resource/overview.md) of the cluster can be found under the section "Queue". 
+[Queues](../resource/overview.md) are used for managing the submission of [Jobs](../../jobs/overview.md) to the [computing clusters](../clusters/overview.md). 
 
-The user is offered the possibility to launch the desired job with a flexible set of hardware and resource allocation modes per queue. For example, the Debug ("D") queue is especially suited for preliminary tests, "fast" queues (eg. "OF")" are best for high-throughput or multi-node distributed memory runs, and "regular queues" (eg. OR) provide regular access to the scheduler.
+The user is offered the possibility to launch the desired job with a flexible set of [hardware](../clusters/hardware.md) and resource allocation modes per queue. For example, the Debug ("D") queue is especially suited for preliminary tests, "fast" queues (eg. "OF")" are best for high-throughput or multi-node distributed memory runs, and "regular queues" (eg. OR) provide regular access to the scheduler.
 
 ## Nodes / PPN
 
@@ -28,12 +28,12 @@ The desired number of computing nodes and the number of cores on each node (PPN 
 
 ## Advanced Options
 
-Further advanced options are offered in the expandable section at the bottom of the panel, in order to further optimize the calculation. This section is dependent on the application (see the corresponding application [pages](../../software/overview.md) for more information). 
+Further advanced options are offered in order to optimize the calculation. These depend on the simulation application (see the corresponding application [pages](../../software/overview.md) for more information). 
 
 Example improvements may include parallelization over the k-points of the crystal structure, over its band-structure or over the execution of Fast Fourier Transforms (FFT). The novice user will find that these options are normally better left unchanged from their default values. 
 
 ## Notifications
 
-Finally, in the "Notifications" section on the right-hand side of the interface, the possibility to be notified as a user about the start of the calculation on the supercomputing cluster, about its termination, or about a possible accidental abortion, can be accessed. The user can click on the button corresponding to [each type of Job status](../../jobs/status.md) to trigger the associated notifications.
-
-Alternatively, all three notification types can be activated simultaneously by clicking the user icon.  
+Finally, the user can be notified about the start of the calculation on the supercomputing cluster, about its termination, or about a possible accidental abortion.
+ 
+The user can click on the button corresponding to each one of these [Job statuses](../../jobs/status.md) within the [user interface](overview.md) to trigger the associated notifications. Alternatively, all three notification types can be activated simultaneously by clicking the user icon.  
