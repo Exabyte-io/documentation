@@ -1,6 +1,6 @@
 # Actions for Web Terminal and Remote Desktop
 
-In the present section of the documentation we explain all the actions which are common to both the [Web Terminal](../web-terminal.md) and [Remote Desktop](../remote-desktop.md) connection methods. The user is also referred to the description of those actions which are [Remote Desktop-specific](../actions-rd/overview.md).
+In the present section of the documentation we explain all the actions which are common to both the [Web Terminal](../web-terminal.md) and [Remote Desktop](../remote-desktop.md) connection methods. In the latter case, some further [specific actions](../actions-rd/overview.md) also apply.
     
 ## Open / Close Web Terminal
 
@@ -11,7 +11,7 @@ We document how to open the [Web Terminal](../web-terminal.md) interface [in thi
 Similarly, the [Remote Desktop](../remote-desktop.md) interface can be opened by following [these instruction](open-desktop.md).
 
 !!!warning "Finite response time of Web Interface"
-    In case the user needs to switch between either of the Remote Desktop and Web Terminal, it is usually necessary to wait for a few seconds before clicking on the corresponding option after closing the other one, due to the finite response time of our user interface. 
+    In case the user needs to switch between either of the Remote Desktop and Web Terminal, it is usually necessary to wait for a few seconds before clicking the corresponding option on the user interface after closing the other one. This is due to the finite response time of our user interface. 
 
 ## Open / Close Guacamole Sidebar
 
@@ -27,7 +27,7 @@ Conversely, files stored remotely can be downloaded to the user's local hard dri
 
 ## Copy / Paste Text
 
-Finally, we provide instructions [here](copy-paste.md) on how text can be copied and pasted into the remote connection interfaces with the help of the above-mentioned [Guacamole Sidebar](guacamole.md). 
+Finally, we provide [these instructions](copy-paste.md) on how text can be copied and pasted into the remote connection interfaces, with the help of the above-mentioned [Guacamole Sidebar](guacamole.md). 
 
 ## Access data in Web Platform
 

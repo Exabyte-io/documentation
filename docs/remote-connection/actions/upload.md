@@ -9,6 +9,6 @@ This feature only works for uploading files to the [Login Home](../../infrastruc
 
 ## Animation 
 
-We show an example of how to upload a file called "remote-connection.yaml" to the Web Terminal in the below animation by dragging and dropping it.
+We show an example of how to upload a file called "remote-connection.yaml" to the Web Terminal in the below animation, by dragging and dropping it.
 
 <img data-gifffer="/images/upload-wt.gif" />
