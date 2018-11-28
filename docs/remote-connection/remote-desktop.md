@@ -23,7 +23,7 @@ We explain how to open and launch such analysis software [in this page](actions-
 
 ## Open Remote Desktop
 
-We document how to open the Remote Desktop environment, starting from the [Web Interface](../ui/overview.md) of our platform, [here](actions-rd/access-webapp.md).
+We document how to open the Remote Desktop environment, starting from the [Web Interface](../ui/overview.md) of our platform, [here](actions/open-desktop.md).
 
 ## Links
 
