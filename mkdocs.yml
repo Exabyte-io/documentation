@@ -535,20 +535,11 @@ nav:
             - Upload:                                   remote-connection/actions/upload.md
             - Download:                                 remote-connection/actions/download.md
             - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
-            - Access Data:                              remote-connection/actions/access-data.md
+            - Access data in Web Platfrom:              remote-connection/actions/access-data.md
         - Actions > Remote Desktop:
-            # List all actions
             - Overview:                                 remote-connection/actions-rd/overview.md
-            # Animate files browser in CentOS
-            # Links to Login node, Dropbox
-            # Mention open Linux terminal
             - Browse Directories:                       remote-connection/actions-rd/browse.md
-            # Animate opening VESTA
             - Open Applications:                        remote-connection/actions-rd/open-app.md
-            # Mention how to upload files from Dropbox in Webapp and access them through Remote Desktop and vice-versa
-            # Animate creation of a POSCAR file in VESTA and accessing it from Dropbox after in Web Platform
-            - Access data in Web Platfrom:              remote-connection/actions-rd/access-webapp.md
-
 
     - Command Line Interface:
         # Contents of the section
