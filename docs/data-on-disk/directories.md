@@ -54,9 +54,9 @@ This folder is stored under the absolute path `/export/compute/job_script_templa
     
 ### Shared Folders for Organizations
 
-[Organization accounts](../collaboration/organizations/overview.md) have a **shared folder** at their disposal in order to share simulation data between all Organization members. This shared folder bears the same name as the Organization itself, for example "exabyte-io" in the visual above. More information concerning this folder can be found [in this page](../infrastructure/clusters/directories.md#shared-folders-for-organizations).
+Simulations data for [organizational accounts](../collaboration/organizations/overview.md) is stored in a dedicated **shared folder** accessible by its members only. This shared folder bears the same name as the Organization itself: for example, "exabyte-io" in the visual above. More information concerning this folder can be found [in this page](../infrastructure/clusters/directories.md#shared-folders-for-organizations).
 
-### Personal Account "Data" Folder
+### "Data" Folder for Individual Accounts
 
 Each user has a personal **data folder** associated with his own **personal account**. It is described further [here](../infrastructure/clusters/directories.md#personal-account-"data"-folder).
 
