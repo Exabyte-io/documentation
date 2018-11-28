@@ -30,9 +30,9 @@ A remote desktop environment is offered for connecting to the platform and acces
 
 We explain the Rest API access method [in this section](../rest-api/overview.md) of the documentation.
 
-## 4. [Dropbox](../data-in-objectstorage/dropbox.md)
+## 4. [SSH](../remote-connection/ssh.md)
 
-Dropbox is a central sharing storage space accessible from all nodes of the platform. It is reviewed in its [dedicated page](../data-in-objectstorage/dropbox.md).
+The [Command Line Interface](../cli/overview.md) can also be accessed via an external SSH client instead of the Web Terminal. [This page](../remote-connection/ssh.md) outlines the instructions on how to do so.
 
 ## 5. [Login Node](login/overview.md)
 
@@ -42,9 +42,9 @@ The Login Node provides the main access gateway to the rest of the computational
 
 Alternatively to the aforementioned Remote Desktop connection method, the platform can also be accessed via the Command Line Interface described [here](../cli/overview.md). We provide a [Web Terminal](../remote-connection/web-terminal.md) utility for logging in via Command Line directly from the Web Interface.
 
-## 7. [SSH](../remote-connection/ssh.md)
+## 7. [Dropbox](../data-in-objectstorage/dropbox.md)
 
-The [Command Line Interface](../cli/overview.md) can also be accessed via an external SSH client instead of the Web Terminal. [This page](../remote-connection/ssh.md) outlines the instructions on how to do so.
+Dropbox is a central sharing storage space accessible from all nodes of the platform. It is reviewed in its [dedicated page](../data-in-objectstorage/dropbox.md).
 
 ## 8. [Clusters](clusters/overview.md)
 
