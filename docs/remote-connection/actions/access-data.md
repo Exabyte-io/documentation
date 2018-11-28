@@ -4,6 +4,6 @@ The [Dropbox](../../data-in-objectstorage/dropbox.md) folder allows the user to 
 
 ## Animation
 
-In the animation below, we show how to transfer (copy) files to Dropbox within the Remote Desktop, and later retrieve them inside the Web Interface.
+In the animation below, we show how to transfer (copy) files to Dropbox within the Remote Desktop, and later retrieve them inside the Web Interface under the [Dropbox dedicated page](../../data-in-objectstorage/ui/dropbox-page.md).
 
-<img data-gifffer="/images/access-data.gif" />
+<img data-gifffer="/images/download-rd.gif" />

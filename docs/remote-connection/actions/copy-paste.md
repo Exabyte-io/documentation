@@ -6,7 +6,7 @@ The Copy/Pasting of text to/from the [Remote Desktop](../remote-desktop.md) or [
 
 In the following animation, we show how to copy and paste the path of a simulation output file listed under [Files Explorer](../../data-in-objectstorage/ui/explorer.md) to the Web Terminal (the same considerations apply also to the case of Remote Desktop). 
 
-We first copy its path into the clipboard by performing the corresponding [action](../../data-in-objectstorage/actions/copy-path.md) under Files Explorer. We then [open the Guacamole Sidebar](guacamole.md) under Web Terminal and paste the file path in it. This makes the file path available under Web Terminal through a right-mouse click, which allows us for example to open the file with a command-line text editor (like nano) and to inspect its contents (something which cannot be done under the Web Interface).
+We first copy its path into the clipboard by performing the corresponding [action](../../data-in-objectstorage/actions/copy-path.md) under Files Explorer. We then [open the Guacamole Sidebar](guacamole.md) under Web Terminal and paste the file path in it. This in turn makes the file path available under the Web Terminal interface through a right-mouse click, which allows us for example to open the file with a command-line text editor (like nano) and to inspect its contents (something which cannot be done under the Web Interface).
 
 <img data-gifffer="/images/paste-wt.gif" />
 
