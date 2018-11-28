@@ -1,8 +1,6 @@
-# Compute setup
+# Compute Parameters
 
-The "Compute" panel, located as a distinct tab under the [Job Designer](../../jobs-designer/overview.md) interface, allows user to set up the computational parameters for the simulation to be executed. The appearance of this panel is demonstrated in the example image below.
-
-![Compute Tab](/images/compute-tab-designer.png "Compute Tab")
+In the present page, we review the different **compute parameters** which can be set under the [user interface](overview.md).
 
 ## Time limit 
  
@@ -30,8 +28,6 @@ Example improvements may include parallelization over the k-points of the crysta
 
 ## Notifications
 
-Finally, in the "Notifications" section on the right-hand side of the interface, the possibility to be notified as a user about the start of the calculation on the supercomputing cluster, about its termination, or about a possible accidental abortion, can be accessed. The user can click on the button corresponding to each type of event to trigger the associated notifications.
+Finally, in the "Notifications" section on the right-hand side of the interface, the possibility to be notified as a user about the start of the calculation on the supercomputing cluster, about its termination, or about a possible accidental abortion, can be accessed. The user can click on the button corresponding to [each type of Job status](../../jobs/status.md) to trigger the associated notifications.
 
 Alternatively, all three notification types can be activated simultaneously by clicking the user icon.  
-
-> NOTE: in addition, the computational parameters are also explained in [this page](data.md)
