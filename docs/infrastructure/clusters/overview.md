@@ -13,7 +13,7 @@ The architecture of a cluster is explained in the diagram below, comprising both
 ![Cluster](/images/Cluster.png "Cluster")
 
 !!!warning "Mandatory transit via Login Node"
-    It is strongly recommended that the user first connects to the [login node](../login/overview.md) in order to access the cluster resources, via any of the available [connection methods](../login/connections.md). Clusters are **not** supposed to be accessed directly. We can exceptionally concede the ability to connect directly to the cluster master node(s) for advanced users, but a special permission needs to be [requested](../../ui/support.md) first.
+    It is strongly recommended that the user first connects to the [login node](../login/overview.md) in order to access the cluster resources, via any of the available [connection methods](../../remote-connection/overview.md). Clusters are **not** supposed to be accessed directly. We can exceptionally concede the ability to connect directly to the cluster master node(s) for advanced users, but a special permission needs to be [requested](../../ui/support.md) first.
 
 ## Directory Structure 
 

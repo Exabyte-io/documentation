@@ -529,17 +529,13 @@ nav:
         - Remote Desktop (RD):                          remote-connection/remote-desktop.md
         - Actions > (WT) & (RD):
             - Overview:                                 remote-connection/actions/overview.md
-            # Animate access to Terminal
             - Open Web Terminal:                        remote-connection/actions/open-terminal.md
-            # Animate access to Remote Desktop
             - Open Remote Desktop:                      remote-connection/actions/open-desktop.md
-            # Explanation of how to open Guacamole Sidebar
-            # Screenshot of Guacamole Sidebar
             - Open Guacamole Sidebar:                   remote-connection/actions/guacamole.md
-            # Upload and Download files from RD/WT to WebApp
-            - Upload / Download:                        remote-connection/actions/upload-download.md
-            # How to copy/paste text using Guacamole Sidebar (clipboard)
+            - Upload:                                   remote-connection/actions/upload.md
+            - Download:                                 remote-connection/actions/download.md
             - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
+            - Access Data:                              remote-connection/actions/access-data.md
         - Actions > Remote Desktop:
             # List all actions
             - Overview:                                 remote-connection/actions-rd/overview.md

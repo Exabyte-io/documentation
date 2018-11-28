@@ -1,0 +1,17 @@
+# Copy / Paste Text with Guacamole Sidebar
+
+The Copy/Pasting of text to/from the [Remote Desktop](../remote-desktop.md) or [Web Terminal](../web-terminal.md) to/from the clipboard can be done with the help of the [Guacamole Sidebar](guacamole.md), available under both interfaces. This functionality is best illustrated by way of examples. 
+
+## Paste Text into Remote Interface 
+
+In the following animation, we show how to copy and paste the path of a simulation output file listed under [Files Explorer](../../data-in-objectstorage/ui/explorer.md) to the Web Terminal (the same considerations apply also to the case of Remote Desktop). 
+
+We first copy its path into the clipboard by performing the corresponding [action](../../data-in-objectstorage/actions/copy-path.md) under Files Explorer. We then [open the Guacamole Sidebar](guacamole.md) under Web Terminal and paste the file path in it. This makes the file path available under Web Terminal through a right-mouse click, which allows us for example to open the file with a command-line text editor (like nano) and to inspect its contents (something which cannot be done under the Web Interface).
+
+<img data-gifffer="/images/paste-wt.gif" />
+
+## Copy Text from Remote Interface 
+
+Conversely, we can select any text displayed under the Web Terminal, which is made immediately available to the Guacamole Sidebar as soon as it is opened. This text can be copied from the sidebar to the clipboard, and as such can then be pasted anywhere, like for example in an external text editor. We demonstrate this procedure in the example animation below.
+
+<img data-gifffer="/images/copy-wt.gif" />
