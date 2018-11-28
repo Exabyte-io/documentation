@@ -4,7 +4,13 @@ In the present page, we review the different **compute parameters** which can be
 
 ## Time limit 
  
-The first option under the "Time limit" section allows the user to specify the maximum time limit for the calculation to be run for. The format is `HH:MM:SS` in which H, M and S stand for day, hour, minute and second respectively. Please note that a calculation will be terminated when the runtime exceeds the maximum time specified in this field.
+"Time limit" section allows the user to specify the maximum time limit for the calculation to be run for. The format is `HH:MM:SS` in which H, M and S stand for day, hour, minute and second respectively. Thus, the example below would correspond to 12 hours exactly:
+
+```bash
+12:00:00
+``` 
+
+Please note that a calculation will be terminated when the runtime exceeds the maximum time specified in this field.
 
 ## Cluster choice
 
