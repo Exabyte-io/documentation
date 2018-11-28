@@ -10,6 +10,14 @@ The different components forming the underlying architecture of our computationa
 
 ![Infrastructure](/images/Infrastructure.png "Infrastructure")
 
+In the above image, we apply the following conventions for labelling the interconnecting lines.
+
+- Blue lines indicate [remote connection methods](../remote-connection/overview.md) to our platform.
+- The orange lines correspond to the transfer of [structured data](../data-structured/overview.md) between the corresponding nodes.
+- Solid red lines are dedicated to data under [object representation](../data-in-objectstorage/overview.md).
+- Dotted red lines label the Network File System, for accessing files over the infrastructure network.
+- Finally, green lines mark the [Resource Manager](resource/overview.md) for controlling the computational resources of our platform. 
+
 ## 1. [Web Interface](../ui/overview.md)
 
 The Web Interface of our platform is introduced separately from the rest of the computational infrastructure, [in this page](../ui/overview.md).
