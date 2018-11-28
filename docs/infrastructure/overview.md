@@ -1,8 +1,8 @@
-# Introduction to Infrastructure
+# Infrastructure
 
 Our platform represents a comprehensive **distributed web application**. This section explains the most important components of its **computational infrastructure**.
 
-We additionally support platform-level access via [advanced connection methods](../remote-connection/overview.md), as an alternative to the main Web Interface, which also offer the ability to submit [simulation jobs](../jobs-cli/overview.md) to the [computing clusters](clusters/overview.md). These advanced features are intended for expert users.
+We additionally support platform-level access via [advanced connection methods](../remote-connection/overview.md), as an alternative to the main Web Interface. Platform-level access methods are intended for expert users and also offer the ability to submit [simulation jobs](../jobs-cli/overview.md) to the [computing clusters](clusters/overview.md), for example.
 
 ## Architecture diagram 
 
@@ -16,7 +16,7 @@ The Web Interface of our platform is introduced separately from the rest of the 
 
 ## 2. [Remote Desktop](../remote-connection/remote-desktop.md)
 
-A remote desktop environment is offered for connecting to the platform and accessing the relevant data stored in its different nodes. This is explained in detail [here](../remote-connection/remote-desktop.md).
+A remote desktop environment is offered for connecting to the platform and accessing the relevant data stored in its different nodes. This is explained in details [here](../remote-connection/remote-desktop.md).
 
 ## 3. [Rest API](../rest-api/overview.md)
 
