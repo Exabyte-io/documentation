@@ -1,6 +1,6 @@
 # Important Directories under Login Home 
 
-Once the user enters his/her home folder under the login node (the so-called **Login Home**) via any of the possible [connection methods](../../remote-connection/overview.md), he/she will be presented with the following **directory structure**, which conforms to the conventions of the GNOME Desktop environment [^1] for the CentOS Linux distribution [^2] implemented on our platform.
+Upon connecting to the login node, user is presented with the following **directory structure**.
  
 ```
 .
@@ -18,9 +18,11 @@ Once the user enters his/her home folder under the login node (the so-called **L
 └── Videos
 ```
 
-For the sake of the present discussion, the important folders that are worth noticing are the ones labelled with an arrow to their right, indicating that they represent shortcuts pointing to the full path specified to the right of the arrow. 
+For the sake of the present discussion, the important folders are the ones labelled with an arrow to their right, indicating that they represent shortcuts pointing to the full path specified to the right of the arrow.
 
 Each important folder is introduced in what follows, complementing the [general discussion](../../data-on-disk/directories.md) on the directory structure within our platform.
+
+ The remaining folders conform to the conventions of the GNOME Desktop environment [^1] for the CentOS Linux distribution [^2] used in our platform.
 
 ## Clusters Home Folders
 
