@@ -9,3 +9,7 @@ After entering the Web Terminal, the user is welcomed with the **splash welcome 
 ## Open Web Terminal
 
 We explain how to open the Web Terminal [in this page](actions/open-terminal.md).
+
+## Actions
+
+Other useful actions for Web Terminal are documented [under this section](actions/overview.md) of the documentation.

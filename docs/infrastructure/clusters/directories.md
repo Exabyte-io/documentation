@@ -1,8 +1,8 @@
 # Important Directories under Cluster Homes
 
-The following directories are present under the home folder of each cluster (the so-called **Cluster Home**), accessible within the [Login Node](../login/directories.md) under the symlink `/home/<username>/<cluster-alias>` (pointing to the absolute path `/<cluster-alias>-home/<username>`). 
+The following directories are present under the home folder of each cluster (referred to as "Cluster Home").
 
-```
+```bash
 .
 ├── data
 ├── dropbox              => /dropbox/gmogni

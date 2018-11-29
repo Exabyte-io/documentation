@@ -4,26 +4,26 @@ We offer alternative **connection methods** other than the [Web Interface](../ui
 
 The login node can be accessed via any of the following options.
 
-## SSH Terminal 
+## [SSH Terminal](ssh.md) 
 
 The user can use an **external SSH client** [^1] under any Operating System to connect to our [Command Line Interface](../cli/overview.md). We explain how to do so in [this page](ssh.md).
 
-## Web Terminal
+## [Web Terminal](web-terminal.md)
 
 Alternatively, we offer an incorporated Terminal within our Web Interface which also takes the user to the same [Command Line Interface](../cli/overview.md). We refer to this as the [Web Terminal](web-terminal.md).
 
-## Remote Desktop
+## [Remote Desktop](remote-desktop.md)
 
 If the user wants to experience a fully graphical desktop environment, he can do so via the [Remote Desktop Application](remote-desktop.md).
 
 !!!info "Guacamole Server implementation"
     Both the Web Terminal and Remote Desktop mentioned above are implemented via the **Apache Guacamole Server** [^2]. Instructions on how to open the Guacamole Sidebar within our interface can be found [here](actions/guacamole.md).
 
-## Actions common to Web Terminal and Remote Desktop
+## [Actions common to Web Terminal and Remote Desktop](actions/overview.md)
 
 We introduce the actions common to both the Web Terminal and Remote Desktop interfaces in [this section](actions/overview.md) of the documentation.
 
-## Actions specific to Remote Desktop
+## [Actions specific to Remote Desktop](actions-rd/overview.md)
 
 Some actions are only available for Remote Desktop, and they are documented [here](actions-rd/overview.md).
 
@@ -31,4 +31,4 @@ Some actions are only available for Remote Desktop, and they are documented [her
 
 [^1]: [Wikipedia Secure Shell, Website](https://en.wikipedia.org/wiki/Secure_Shell)
 
-[^2]: [Apache Guacamole, Website](https://guacamole.apache.org/)
+[^2]: [Apache Guacamole, Official Website](https://guacamole.apache.org/)
