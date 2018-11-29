@@ -1,6 +1,6 @@
 # Benchmarks 
 
-We have executed a series of benchmark test to assess the performance of the [high-performance computing nodes](../infrastructure/clusters/overview.md) offered as part of the [general infrastructure](../infrastructure/overview.md) of our platform. The outcomes of such benchmarks are introduced and referenced throughout the remainder of the present page.
+We have executed a series of benchmark tests to assess the performance of the [high-performance computing nodes](../infrastructure/clusters/overview.md) offered as part of the [general infrastructure](../infrastructure/overview.md) of our platform. The outcomes of such benchmarks are introduced and referenced throughout the remainder of the present page.
 
 ## High-Performance Linpack
 

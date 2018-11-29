@@ -14,10 +14,10 @@ Each important folder is introduced in what follows, complementing the [general 
 
 ## Naming
 
-The home directories on each cluster are mapped under the main [Login Home](../login/directories.md), and can be accessed under the **cluster alias name**. Their absolute paths are of the form `/<cluster-alias>-home/<username>/`, for example `/cluster-001-home/steven/`. Cluster home directories thus serve as "gateways" to the data in each cluster. These directories contain the hierarchical structure outlined in the remainder of the present page, and are affected by the storage quotas described [here](../../data-on-disk/quotas.md).
+The home directories on each cluster are mapped under the main [Login Home](../login/directories.md) and serve as "gateways" to the data in each cluster. They can be accessed by [cluster alias](overview.md#cluster-aliases) with their absolute paths of the form `/<cluster-alias>-home/<username>/`, for example `/cluster-001-home/steven/`.  These directories contain the hierarchical structure outlined in the remainder of the present page, and are affected by the storage quotas described [here](../../data-on-disk/quotas.md).
 
-!!! note "Simulations to be inside clusters only"
-    Any [simulation jobs](../../jobs/overview.md) must be executed within the clusters (ie. inside cluster home directories) and all bulk data must be stored therein as well. We explain the procedure for doing so via the [Command Line Interface](../../cli/overview.md) in [this section](../../jobs-cli/overview.md) of the documentation.
+!!! warning "Simulations must be executed after navigating to one of the clusters folders only"
+    Any [simulation jobs](../../jobs/overview.md) must be executed within the clusters (ie. inside cluster home directories) so that the tasks are sent to the corresponding cluster by our [resource management system](../resource/overview.md) and the associated data is stored therein as well. We explain the procedure for doing so via the [Command Line Interface](../../cli/overview.md) in [this section](../../jobs-cli/overview.md) of the documentation.
 
 ## Example
 
@@ -29,8 +29,7 @@ Example contents of the home directory for cluster-001 are displayed in the subs
 
 ![Cluster Home Contents](/images/cluster-home-content.png "Cluster Home Contents")
 
-!!!note "Dropbox and Job Scrip Templates explanation"
-    These two folders are of general applicability and are explained [in this page](../../data-on-disk/directories.md).
+Th "dropbox" and "job_script_templates" folders are present under both Cluster Home and [Login Home](../login/directories.md) and are explained in more detail [in this page](../../data-on-disk/directories.md).
     
 ## Shared Folders for Organizations
 
