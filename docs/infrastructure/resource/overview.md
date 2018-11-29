@@ -1,21 +1,19 @@
 # Resource Management
 
-The [cluster computational resources](../clusters/overview.md) offered under our [infrastructure](../overview.md) are managed according to a **Resource Management system** [^1] [^2]. Under this system, a set of **Queues** is deployed to allow for the efficient distribution of resources, which are themselves administered by a **task scheduler software** [^3].
+The [computational resources](../clusters/overview.md) offered under our [infrastructure](../overview.md) are managed according to a **Resource Management system** [^1]. Under this system, a set of [**Queues**](queues.md) is employed to allow for the efficient distribution of resources, which are themselves administered by a **task scheduler software** [^2].
 
-When a job is submitted to any of the queues, the cloud scheduler is responsible for provisioning computational nodes and allocating resources on them for the jobs. **Waiting times** might be incurred by the user depending of the availability of computing resources and the priority of the job in the queue.
+When a calculation task is submitted to any of the queues, our infrastructure management software provisions the computational nodes and allocates resources on them for the task. Waiting times might be incurred by the user depending of the availability of computing resources and the priority of the task.
 
-## Category
+## Categories
 
-We explain the different speed categories [in this page](category.md).
+We explain the different resource categories and their methods of allocation [in this page](category.md).
 
 ## Queues
 
-Different queues are available under each category, as explained [here](queues.md).
+Different queues are available corresponding to the compute categories, as explained [here](queues.md).
 
 ## Links
 
 [^1]: [Wikipedia TORQUE Resource Manager, Website](https://en.wikipedia.org/wiki/TORQUE)
 
-[^2]: [Torque Resource Manager Administrator Guide 9.0.0, Document](http://docs.adaptivecomputing.com/torque/6-0-0/torqueAdminGuide-6.0.0.pdf)
-
-[^3]: [Wikipedia Maui Cluster Scheduler, Website](https://en.wikipedia.org/wiki/Maui_Cluster_Scheduler)
+[^2]: [Wikipedia Maui Cluster Scheduler, Website](https://en.wikipedia.org/wiki/Maui_Cluster_Scheduler)

@@ -1,14 +1,10 @@
 # Queues
 
-Different task scheduling **Queues** are available under each [category](category.md), for accessing the [computational clusters](../clusters/overview.md) and executing [simulation Jobs](../../jobs/overview.md) upon them. These queues afford for the allocation of different amounts of **computational resources** (number of cores).
-
-Cluster-specific list of queues are available for each of the [Amazon Web Service](../clusters/aws.md) and [Azure](../clusters/azure.md) Cloud providers.
-
-Queues can be selected under the Web Interface at the moment of [Job Creation](../../jobs-designer/overview.md) according to the instructions found [here](../compute-settings/ui.md#queue). Similarly, the desired queue can be specified under the [Batch Script](../../jobs-cli/batch-script.md) for the case of [Job submission via the Command Line Interface](../../jobs-cli/overview.md).
+Different task scheduling **Queues** are available in order to facilitate flexible access to the [computational resources](../clusters/overview.md).
 
 ## Naming Convention
 
-Queue name consists of 4 main parts as demonstrated below. Only one part, denoted as 2 and enclosed by braces `{}`, is mandatory. Other parts, enclosed by brackets `[]`, are optional.
+Queue name consists of the 4 main parts as demonstrated below. Only one part, denoted as 2 and enclosed by braces `{}`, is mandatory. Other parts, enclosed by brackets `[]`, are optional.
 
 ```regexp
 [1a][1b][1c]{2}[3][4]
@@ -47,3 +43,11 @@ The latter is used for queues with [Fast](category.md#provision-modes) provision
 
 !!! warning "Be considerate when using queues with core-hours charge policies"
     When tasks are submitted to the queue with "core hours" based charge policy, our accounting system would charge the [account](../../accounts/overview.md) for at least 1 hour of usage of the resource. We advise users to prototype the calculations in other queues and deploy production-ready large-scale runs using queues with "core hours" charge policies. 
+
+## List of Queues
+
+Detailed [cluster](../clusters/overview.md)-specific lists of queues are available for the [Amazon Web Services](../clusters/aws.md) and [Azure](../clusters/azure.md) separately.
+
+## Select Queue
+
+Queues can be selected under the Web Interface according to the instructions found [here](../compute/overview.md). Similarly, the desired queue can be specified in the [Batch Script](../../jobs-cli/batch-script.md) for the case of [Job submission via the Command Line Interface](../../jobs-cli/overview.md).
