@@ -10,33 +10,20 @@ Experienced users who are already familiar with how SSH clients operate under th
 
 We particularly recommend the following SSH clients for each OS.
 
-### Putty for Windows
-
-**Putty** [^2] is a widespread SSH client for Windows.
-
-### OpenSSH for Unix
-
-**OpenSSH** [^3] is the standard protocol in Unix-based OSs (both Linux and Mac OS distributions) for connecting through SSH via the terminal.
+- **Putty** [^2], a widespread SSH client for Windows.
+- **OpenSSH** [^3], the standard protocol in Unix-based OSs (both Linux and Mac OS distributions) for connecting through SSH via the terminal.
 
 ## Generate SSH Keys
 
 As introduced previously, SSH keys are necessary to connect to the CLI using the credentials for the account under consideration. 
 
-Instructions on how to generate such keys can be found below for each of the above-mentioned OS-specific clients, via links to external tutorials.
-
-### Putty for Windows
-
-Instructions for the case of Putty under Windows can be found inside Ref. [^4].
-
-### OpenSSH for Unix
-
-Instructions for Unix-based OSs are contained in Ref. [^5]. 
+External tutorials are available on how to generate such keys for each of the Putty [^4] and OpenSSH [^5] clients.
 
 ## Upload SSH Key
 
-After generating the keys according to the above instructions, they need to be uploaded to our platform and associated with the user's account. This effectively establishes a **secure link** between the external SSH client and the corresponding Exabyte account.
+After generating the keys, they need to be uploaded to our platform and associated with the user's account. This effectively establishes a **secure link** between the external SSH client and the corresponding Exabyte account.
 
-We explain how to upload the SSH keys generated in the previous step to our platform in a [separate section](../accounts/ui/preferences/ssh.md) of the documentation.
+We explain how to upload the SSH keys to our platform in a [separate section](../accounts/ui/preferences/ssh.md) of the documentation.
             
 !!!warning "Privacy of SSH keys"
     SSH keys are **private** and are meant to be used to identify exclusively the user with our platform. Any other user logged in with such private keys would automatically have access to the account's data and allocation, and because of this they should not be shared with anyone else.
