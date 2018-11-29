@@ -1,6 +1,6 @@
 # Actions for Web Terminal and Remote Desktop
 
-In the present section of the documentation we explain all the actions which are common to both the [Web Terminal](../web-terminal.md) and [Remote Desktop](../remote-desktop.md) connection methods. In the latter case, some further [specific actions](../actions-rd/overview.md) also apply.
+In the present section of the documentation we explain the actions common to both the [Web Terminal](../web-terminal.md) and [Remote Desktop](../remote-desktop.md) connection methods. In the latter case, some further [specific actions](../actions-rd/overview.md) also apply.
     
 ## Open / Close Web Terminal
 
@@ -10,8 +10,8 @@ We document how to open the [Web Terminal](../web-terminal.md) interface [in thi
 
 Similarly, the [Remote Desktop](../remote-desktop.md) interface can be opened by following [these instruction](open-desktop.md).
 
-!!!warning "Finite response time of Web Interface"
-    In case the user needs to switch between either of the Remote Desktop and Web Terminal, it is usually necessary to wait for a few seconds before clicking the corresponding option on the user interface after closing the other one. This is due to the finite response time of our user interface. 
+!!!warning "Switching between RD and WT requires a 5-10 sec pause."
+    In case the user needs to switch between either of the Remote Desktop and Web Terminal, it is usually necessary to wait for a few seconds before clicking the corresponding option on the user interface after closing the other one. This is due to the finite response time of the user interface.
 
 ## Open / Close Guacamole Sidebar
 
