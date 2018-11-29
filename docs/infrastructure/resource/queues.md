@@ -50,4 +50,4 @@ Detailed [cluster](../clusters/overview.md)-specific lists of queues are availab
 
 ## Select Queue
 
-Queues can be selected under the Web Interface according to the instructions found [here](../compute-settings/ui.md#queue). Similarly, the desired queue can be specified in the [Batch Script](../../jobs-cli/batch-script.md) for the case of [Job submission via the Command Line Interface](../../jobs-cli/overview.md).
+Queues can be selected under the Web Interface according to the instructions found [here](../compute/overview.md). Similarly, the desired queue can be specified in the [Batch Script](../../jobs-cli/batch-script.md) for the case of [Job submission via the Command Line Interface](../../jobs-cli/overview.md).
