@@ -5,7 +5,7 @@ The Login node constitutes the main **access point** to the our infrastructure, 
 !!!warning "Transit via Login Node"
     We can exceptionally concede the ability to connect directly to the [cluster](../clusters/overview.md) for advanced users. A special permission needs to be [requested](../../ui/support.md).
     
-## [Connection Options](connections.md)
+## [Connection Options](../../remote-connection/overview.md)
 
 We introduce the different remote connection options separately [here](../../remote-connection/overview.md).
 
