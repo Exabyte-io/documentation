@@ -1,8 +1,8 @@
 # Important Directories under Login Home 
 
-Upon connecting to the login node, user is presented with the following **directory structure**.
+Each user has its own **Login Home** directory mounted on the [login node](overview.md) filesystem, under the path `/home/<username>/`, such that user `steven` has `/home/steven/` as a home directory. The quota limit for data storage under this directory is described [here](../../data-on-disk/quotas.md). Upon connecting to the login home, the user is presented with the following **directory structure**.
  
-```
+```bash
 .
 ├── cluster-001          => /cluster-001-home/<username>
 ├── cluster-007          => /cluster-007-home/<username>
@@ -20,26 +20,17 @@ Upon connecting to the login node, user is presented with the following **direct
 
 For the sake of the present discussion, the important folders are the ones labelled with an arrow to their right, indicating that they represent shortcuts pointing to the full path specified to the right of the arrow.
 
-Each important folder is introduced in what follows, complementing the [general discussion](../../data-on-disk/directories.md) on the directory structure within our platform.
+Each important folder is introduced in what follows, complementing the [general discussion](../../data-on-disk/directories.md) on the directory structure within our platform. The remaining folders conform to the conventions of the [Linux distribution](../../remote-connection/remote-desktop.md#linux-environment) implemented in our platform.
 
- The remaining folders conform to the conventions of the GNOME Desktop environment [^1] for the CentOS Linux distribution [^2] used in our platform.
+## Cluster Homes
 
-## Clusters Home Folders
+Login node is meant for storing auxiliary data, such as source code, scripts, notes. Simulations should be executed, and bulky data should be stored, under the **Cluster Home** directories instead, indicated by the corresponding [cluster aliases](../clusters/overview.md#cluster-aliases) under the Login Home (for example, "cluster-001" and "cluster-007" in the file tree above). The contents of such cluster homes is further narrated in a [separate part](../clusters/directories.md) of the documentation.
 
-Each [computing cluster](../clusters/overview.md) has its own distinct [home folder](../clusters/directories.md), referred to as the **Cluster Home**, which is mounted on the corresponding **Master Node** of the cluster.
+!!!note "Dropbox and Job Scrip Templates explanation"
+    These two folders are of general applicability and are explained [in this page](../../data-on-disk/directories.md).
 
-We explain the contents of these cluster homes in a [separate section](../clusters/directories.md) of the documentation.
+## Example
 
-## Dropbox
+The location of the login home folder under the main [remote desktop environment](../../remote-connection/remote-desktop.md) is encircled in red in the following illustration. 
 
-Dropbox is a convenient way of sharing and transferring files across all nodes of the infrastructure. This functionality is narrated in detail in its own [dedicated page](../../data-in-objectstorage/dropbox.md).
-
-## Jobscript Templates
-
-The Login Home also contains a folder with [Job script](../../jobs-cli/batch-script.md) template examples, necessary for [submitting jobs via the Command Line Interface](../../jobs-cli/overview.md). 
-
-## Links
-
-[^1]: [Wikipedia GNOME, Website](https://en.wikipedia.org/wiki/GNOME)
-
-[^2]: [Wikipedia CentOS, Website](https://en.wikipedia.org/wiki/CentOS)
+![Login Home](/images/login-home.png "Login Home")
