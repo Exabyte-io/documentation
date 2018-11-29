@@ -22,7 +22,7 @@ One such permitted action is the changing of the Material's name, as it appears 
 
 ## Toggle Privacy
 
-Accounts with the appropriate [Service Level](/pricing/service-levels.md) can choose between making the current material private to the members of the Account only, or publicly accessible to all users of the platform. The difference between these two privacy levels is explained in more details [here](/collaboration/sharing/access-levels.md). This choice can be made via the relevant toggle slider present in the footer as explained above. 
+Accounts with the appropriate [Service Level](/pricing/service-levels.md) can choose between making the current material private to the members of the Account only, or publicly accessible to all users of the platform. The difference between these two privacy levels is explained in more detail [here](/collaboration/sharing/access-levels.md). This choice can be made via the relevant toggle slider present in the footer as explained above. 
 
 # Properties Explorer
 

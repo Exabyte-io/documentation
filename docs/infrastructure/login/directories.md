@@ -2,7 +2,7 @@
 
 Each user has its own **Login Home** directory mounted on the [login node](overview.md) filesystem, under the path `/home/<username>/`, such that user `steven` has `/home/steven/` as a home directory. The quota limit for data storage under this directory is described [here](../../data-on-disk/quotas.md). Upon connecting to the login home, the user is presented with the following **directory structure**.
  
-```
+```bash
 .
 ├── cluster-001          => /cluster-001-home/<username>
 ├── cluster-007          => /cluster-007-home/<username>
@@ -24,7 +24,7 @@ Each important folder is introduced in what follows, complementing the [general 
 
 ## Cluster Homes
 
-Login node is meant for storing auxiliary data, such as source code, scripts, notes. Simulations should be executed, and bulky data should be stored, under the **Cluster Home** directories instead, indicated by the corresponding **cluster alias names** under the Login Home (for example, cluster-001 and cluster-007 in the above tree diagram). The contents of such cluster homes is further narrated in a [separate part](../clusters/directories.md) of the documentation.
+Login node is meant for storing auxiliary data, such as source code, scripts, notes. Simulations should be executed, and bulky data should be stored, under the **Cluster Home** directories instead, indicated by the corresponding [cluster aliases](../clusters/overview.md#cluster-aliases) under the Login Home (for example, "cluster-001" and "cluster-007" in the file tree above). The contents of such cluster homes is further narrated in a [separate part](../clusters/directories.md) of the documentation.
 
 !!!note "Dropbox and Job Scrip Templates explanation"
     These two folders are of general applicability and are explained [in this page](../../data-on-disk/directories.md).

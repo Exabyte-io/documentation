@@ -31,7 +31,7 @@ The Navigation page is accessible through our company logo present at all times 
 
 ## 2. Link to Dashboard
 
-A system status "Dashboard" can be accessed via the [left-hand sidebar menu](left-sidebar.md). It is explained in more details in [this page](specific/dashboard.md).
+A system status "Dashboard" can be accessed via the [left-hand sidebar menu](left-sidebar.md). It is explained in more detail in [this page](specific/dashboard.md).
 
 ## 3. Tabs Navigation
 

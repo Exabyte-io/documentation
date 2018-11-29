@@ -2,7 +2,7 @@
 
 # Structured Representation of Jobs
 
-In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data-structured/overview.md), as explained in more details [elsewhere](/entities-general/data.md) in this documentation.
+In order to organize and store the information about Jobs we employ [Exabyte Data Convention](/data-structured/overview.md), as explained in more detail [elsewhere](/entities-general/data.md) in this documentation.
 
 # Example representation
 

@@ -17,15 +17,11 @@ The quota under the [login home folder](directories.md#login-home) amounts to **
 
 ## Cluster Home directory
 
-The quota under the [home folders of the available clusters](directories.md#cluster-home) depends on the chosen [service level](../accounts/service-levels.md) for the account under consideration. 
-
-For example, the "Promo", "Advanced" and "Pro" service levels have the storage quotas indicated [here](../pricing/service-levels.md) applied to them for storing data on the clusters.
+The quota under the [home folders of the available clusters](directories.md#cluster-home) depends on the [service level](../accounts/service-levels.md) associated with the account under consideration. For example, the "Promo", "Advanced" and "Pro" service levels have the storage quotas indicated [here](../pricing/service-levels.md).
 
 ## Shared Folders for Organizations
 
-The quota under the [shared folder](directories.md#shared-folders-for-organizations) available for [Organizations](../collaboration/organizations/overview.md) again depends on the precise [service level](../accounts/service-levels.md) being implemented on the corresponding Organizational account. 
-
-For the "Enterprise" and "Enterprise-Extra" service levels which afford for the creation of Organizations, the storage quota is set to the values indicated [here](../pricing/service-levels.md).
+The quota under the [shared folder](directories.md#shared-folders-for-organizations) available for [Organizations](../collaboration/organizations/overview.md) again depends on the [service level](../accounts/service-levels.md) associated with the corresponding Organizational account. For the "Enterprise" and "Enterprise-Extra" service levels the storage quota is set to the values indicated [here](../pricing/service-levels.md).
 
 ## Dropbox Folder
 
