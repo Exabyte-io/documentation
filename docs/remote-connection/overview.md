@@ -17,7 +17,7 @@ Alternatively, we offer an incorporated Terminal within our Web Interface which 
 If the user wants to experience a fully graphical desktop environment, he can do so via the [Remote Desktop Application](remote-desktop.md).
 
 !!!info "Guacamole Server implementation"
-    Both the Web Terminal and Remote Desktop mentioned above are implemented via the **Apache Guacamole Server** [^2]. Instructions on how to open the Guacamole Sidebar within our interface can be found [here](actions/guacamole.md).
+    Both the Web Terminal and Remote Desktop mentioned above are implemented via the **Apache Guacamole Server** [^2]. Instructions on how to open its main Sidebar, referred to as the **Remote-connection Sidebar**, can be found [here](actions/sidebar.md).
 
 ## [Actions common to Web Terminal and Remote Desktop](actions/overview.md)
 

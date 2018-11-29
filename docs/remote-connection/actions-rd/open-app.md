@@ -4,7 +4,7 @@ Useful graphical analysis and visualization [software](../../software/overview.m
 
 This set of software is particularly useful for graphically visualizing the crystal structures of the [materials](../../materials/overview.md) involved in simulations.
 
-## Animation: Open VESTA
+## Animation: Open Example Application - "VESTA"
 
 Here, we show how to open the [VESTA](../../software/analysis/vesta.md) visualization software under Remote Desktop, by way of an example.
 

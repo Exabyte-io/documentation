@@ -13,9 +13,9 @@ Similarly, the [Remote Desktop](../remote-desktop.md) interface can be opened by
 !!!warning "Switching between RD and WT requires a 5-10 sec pause."
     In case the user needs to switch between either of the Remote Desktop and Web Terminal, it is usually necessary to wait for a few seconds before clicking the corresponding option on the user interface after closing the other one. This is due to the finite response time of the user interface.
 
-## Open / Close Guacamole Sidebar
+## Open / Close Remote-connection Sidebar
 
-The Guacamole sidebar available under both Remote Desktop and Web Terminal offers multiple convenient functionalities, which are reviewed [here](guacamole.md).
+The Remote-connection Sidebar available under both Remote Desktop and Web Terminal offers multiple convenient functionalities, which are reviewed [here](sidebar.md).
 
 ## Upload Local Files
 
@@ -27,7 +27,7 @@ Conversely, files stored remotely can be downloaded to the user's local hard dri
 
 ## Copy / Paste Text
 
-Finally, we provide [these instructions](copy-paste.md) on how text can be copied and pasted into the remote connection interfaces, with the help of the above-mentioned [Guacamole Sidebar](guacamole.md). 
+Finally, we provide [these instructions](copy-paste.md) on how text can be copied and pasted into the remote connection interfaces, with the help of the above-mentioned [Sidebar](sidebar.md). 
 
 ## Access data in Web Platform
 

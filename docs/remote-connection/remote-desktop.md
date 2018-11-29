@@ -26,6 +26,6 @@ Other useful actions for Remote Desktop are introduced [in this section](actions
 
 [^1]: [Wikipedia CentOS, Website](https://en.wikipedia.org/wiki/CentOS)
 
-[^2]: [CentOS Homepage, Website](https://www.centos.org/)
+[^2]: [CentOS Homepage, Official Website](https://www.centos.org/)
 
 [^3]: [Wikipedia GNOME, Website](https://en.wikipedia.org/wiki/GNOME)
