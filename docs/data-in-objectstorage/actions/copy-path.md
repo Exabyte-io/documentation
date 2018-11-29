@@ -6,6 +6,6 @@ Upon its copying, this path can be conveniently used in the [Command Line Interf
 
 ## Animation
 
-In the following animation, we demonstrate how to copy the path of a file to the clipboard. We then paste it in the [Web Terminal](../../remote-connection/web-terminal.md) with the help of the [Guacamole sidebar](../../remote-connection/actions/sidebar.md). 
+In the following animation, we demonstrate how to copy the path of a file to the clipboard. We then paste it in the [Web Terminal](../../remote-connection/web-terminal.md) with the help of the [Remote-connection Sidebar](../../remote-connection/actions/sidebar.md). 
 
 <img data-gifffer="/images/copy-path.gif">

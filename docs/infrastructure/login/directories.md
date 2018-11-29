@@ -22,7 +22,7 @@ For the sake of the present discussion, the important folders are the ones label
 
 Each important folder is introduced in what follows, complementing the [general discussion](../../data-on-disk/directories.md) on the directory structure within our platform.
 
- The remaining folders conform to the conventions of the GNOME Desktop environment [^1] for the CentOS Linux distribution [^2] used in our platform.
+The remaining folders conform to the conventions of the [Linux distribution](../../remote-connection/remote-desktop.md#linux-environment) used in our platform.
 
 ## Clusters Home Folders
 
@@ -37,9 +37,3 @@ Dropbox is a convenient way of sharing and transferring files across all nodes o
 ## Jobscript Templates
 
 The Login Home also contains a folder with [Job script](../../jobs-cli/batch-script.md) template examples, necessary for [submitting jobs via the Command Line Interface](../../jobs-cli/overview.md). 
-
-## Links
-
-[^1]: [Wikipedia GNOME, Website](https://en.wikipedia.org/wiki/GNOME)
-
-[^2]: [Wikipedia CentOS, Website](https://en.wikipedia.org/wiki/CentOS)
