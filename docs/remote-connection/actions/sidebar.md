@@ -16,14 +16,10 @@ This sidebar is particularly useful for **copying/pasting text** from both the [
 * Zooming in and out of the remote display
 * Disconnecting from the current connection entirely 
 
-The full sidebar documentation can be accessed under Ref. [^1].
+The full sidebar documentation can be accessed under the reference mentioned [here](../overview.md#wt-and-rd-implementation).
 
 ## Appearance
 
 Here, we display an example screenshot of what this sidebar looks like when viewed within the wider [Web Terminal](../web-terminal.md) interface.
 
 ![Sidebar](/images/guacamole-sidebar.png "Sidebar")
-
-## Links
-
-[^1]: [Apache Guacamole Documentation Manual, Official Website](https://guacamole.apache.org/doc/gug/)
