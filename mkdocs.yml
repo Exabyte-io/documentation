@@ -532,7 +532,7 @@ nav:
             - Overview:                                 remote-connection/actions/overview.md
             - Open Web Terminal:                        remote-connection/actions/open-terminal.md
             - Open Remote Desktop:                      remote-connection/actions/open-desktop.md
-            - Open Guacamole Sidebar:                   remote-connection/actions/guacamole.md
+            - Open Sidebar:                             remote-connection/actions/sidebar.md
             - Upload:                                   remote-connection/actions/upload.md
             - Download:                                 remote-connection/actions/download.md
             - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
