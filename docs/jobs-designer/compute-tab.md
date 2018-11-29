@@ -8,4 +8,4 @@ The typical appearance of Compute Tab is exhibited below.
 
 # Link to Instructions 
 
-Instructions for understanding and setting the computational parameters can be found in the [corresponding part of the documentation](/infrastructure/compute-settings/ui.md). 
+Instructions for understanding and setting the computational parameters can be found in the [corresponding part of the documentation](/infrastructure/compute/overview.md). 
