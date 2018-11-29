@@ -485,9 +485,10 @@ nav:
             - Overview:                                 infrastructure/resource/overview.md
             - Category:                                 infrastructure/resource/category.md
             - Queues:                                   infrastructure/resource/queues.md
-        - Compute Settings:
-            - User Interface:                             infrastructure/compute-settings/ui.md
-            - Data:                                       infrastructure/compute-settings/data.md
+        - Compute:
+            - Overview:                                 infrastructure/compute/overview.md
+            - Parameters:                               infrastructure/compute/parameters.md
+            - Data:                                     infrastructure/compute/data.md
 
     - Data Practices:
         - Overview:                                     data/overview.md

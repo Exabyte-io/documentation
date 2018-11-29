@@ -1,23 +1,19 @@
 # Benchmarks 
 
-We have executed a series of benchmark test to assess the performance of the [computing clusters](../infrastructure/clusters/overview.md) offered as part of the [general infrastructure](../infrastructure/overview.md) of our platform. The outcomes of such benchmarks are introduced and referenced throughout the remainder of the present page.
-
-## High Throughput Screening
-
-The results of the high-throughput benchmark are presented [here](high-throughput-screening.md).
-
-## Distributed Memory Runs
-
-We have tested the performance and efficiency of our distributed memory system, and the results are discussed [under this page](distributed-memory.md).
-
-## Vendor Comparison
-
-We have performed a Cloud vendors performance comparison, as explained [here](vendor-comparison.md).
+We have executed a series of benchmark test to assess the performance of the [high-performance computing nodes](../infrastructure/clusters/overview.md) offered as part of the [general infrastructure](../infrastructure/overview.md) of our platform. The outcomes of such benchmarks are introduced and referenced throughout the remainder of the present page.
 
 ## High-Performance Linpack
 
-The testing of calculations performed with the High-Performance Linpack library are the object of a [separate discussion](hpl-benchmark.md).
+Calculations performed with the High-Performance Linpack library are discussed [here](hpl-benchmark.md).
 
-## 2018-11 HPL VASP GROMACS
+## High-Throughput Screening
 
-We recently performed further benchmarking tests based upon the [VASP](../software/modeling/vasp.md) and [GROMACS](../software/modeling/gromacs.md) codes, and we have documented them [here](2018-11-12-comparison.md).
+Example results of a high-throughput screening benchmark are presented [here](high-throughput-screening.md).
+
+## Cloud Vendor Comparison
+
+1. Preliminary tests of the performance and efficiency of the distributed memory calculations from 2016 are discussed [under this page](distributed-memory.md).
+
+2. Additional tests performed around the same time are as explained [here](vendor-comparison.md).
+
+3. 2018 Benchmarks for [VASP](../software/modeling/vasp.md) and [GROMACS](../software/modeling/gromacs.md), are documented [here](2018-11-12-comparison.md).
