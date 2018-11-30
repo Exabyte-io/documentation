@@ -31,7 +31,7 @@ The Dashboard component of the user interface is reviewed in the [following page
 
 ## Create Job
 
-Job creation, explained in more details [here](../jobs/actions/create.md), can be accessed from this link.
+Job creation, explained in more detail [here](../jobs/actions/create.md), can be accessed from this link.
 
 ## Projects
 
