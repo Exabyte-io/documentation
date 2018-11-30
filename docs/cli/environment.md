@@ -6,9 +6,9 @@ After logging into our platform via the [Command Line Interface (CLI)](overview.
 
 ## Customization
 
-The CLI environment can be **customized** by the user in two respects: by choosing the **Shell type**, and through the **loading of predefined Modules**, which include numerous commonly-used simulation codes and associated libraries.  
+The CLI environment can be **customized** by the user in two respects: by choosing the **Shell type**, and through the **loading of the environment Modules**, which include numerous commonly-used simulation codes and associated libraries. Both are explained below.
 
-## Shell Type
+### Shell Type
 
 The **Shell type** [^3] can modify the way that the user can interact with the CLI by, for example, introducing new commands or key shortcuts. For example, Ref. [^4] explains how the "bash" shell type differs from zsh. 
 
@@ -27,17 +27,17 @@ The **default shell** is set to bash. The user can change shell from this defaul
 
 The shell customization can be further controlled via certain **startup scripts**, which are executed when the user first logs into the CLI. The user can customize some of these scripts, which are commonly referred to as "dot files," by setting environment variables and aliases in them, as explained [in this page](actions/customize.md).
 
+### Modules
+
+Pre-compiled software packages and programming libraries, referred to as **modules**, are already available for use under the CLI, such that the user does not have to recompile them. They can be **loaded** and made available to the CLI environment with the `module` command, which is reviewed [under this page](actions/modules.md).
+
+After their loading, modules can be inserted in [Job Scripts](../jobs-cli/batch-script.md) for [Job execution via the CLI](../jobs-cli/overview.md). 
+
 ## Python Environment
 
 By default, we implement **python 2.7.5** as our main system version. Different python versions can be installed via the the instructions and code contained in Ref. [^11].
 
 Additionally, we explain how to create customized **python environments** [here](actions/create-python-env.md).
-
-## Modules
-
-Pre-compiled software packages and programming libraries, referred to as **modules**, are already available for use under the CLI, such that the user does not have to recompile them. They can be **loaded** and made available to the CLI environment with the `module` command, which is reviewed [under this page](actions/modules.md).
-
-After their loading, modules can be inserted in [Job Scripts](../jobs-cli/batch-script.md) for [Job execution via the CLI](../jobs-cli/overview.md). 
 
 ## Links
 
