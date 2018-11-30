@@ -543,14 +543,13 @@ nav:
             - Open Applications:                        remote-connection/actions-rd/open-app.md
 
     - Command Line Interface:
-        # Contents of the section
         - Overview:                                     cli/overview.md
-        # Same content as before (previous version of documentation)
         - Environment:                                  cli/environment.md
         - Actions:
+            - Overview:                                 cli/actions/overview.md
             # corresponding UI action
             # Customize shell (e.g. change to ZSH)
-            - Customize Shell Environment:                cli/actions/customize.md
+            - Customize Shell Environment:              cli/actions/customize.md
             # Explain how to compile a modified version of Quantum ESPRESSO on the master node of the desired
             # Note that a permission needs to be requested to access master nodes in command line
             - Add new software:                         cli/actions/add-software.md
