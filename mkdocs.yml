@@ -546,6 +546,7 @@ nav:
         - Environment:                                  cli/environment.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
+            - Load / Unload Modules:                    cli/actions/modules.md
             # corresponding UI action
             # Customize shell (e.g. change to ZSH)
             - Customize Shell Environment:              cli/actions/customize.md
@@ -553,7 +554,7 @@ nav:
             # Note that a permission needs to be requested to access master nodes in command line
             - Add new software:                         cli/actions/add-software.md
             # Explain how to use virtualenv to assemble pymatgen, pandas and ase into a virtual environment
-            - Create Python Environment:                cli/create-python-env.md
+            - Create Python Environment:                cli/actions/create-python-env.md
             # check status of clusters with exaclusters command
             - List Clusters:                            cli/actions/list-clusters.md
             # List compute nodes and their state with exanodes command
@@ -607,7 +608,6 @@ nav:
         - Privacy:                                      site-policy/privacy-statement.md
         - Sharing:                                      site-policy/sharing-policy.md
         - Terms of Service:                             site-policy/terms-of-service.md
-        - Compute:                                      compute/policies.md
 
 # OTHER
     - Other:
