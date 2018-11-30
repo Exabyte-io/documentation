@@ -1,37 +1,34 @@
-<!-- by GM, TB -->
+# State of cloud security in 2018
 
-> Last updated: **Aug 1, 2018**
+> As of **Sep 1, 2018**
 
-# Introduction
+## Introduction
 
 We are often asked about the security of cloud-based solutions for storing mission-critical information since cloud computing is initially perceived as a threat. This document is a brief attempt to explain our position, demonstrate that at present cloud computing is more than capable of facilitating secure access to data and computation even for most critical applications, and direct the reader to the policies we deploy to assert security for the users of Exabyte platform.
 
-> **How secure is cloud computing?**
->
-> "Cloud computing is often far more secure than traditional computing, because companies like Google and Amazon can attract and retain cyber-security personnel of a higher quality than many governmental agencies."
->
-> *Vivek Kundra, former federal CIO of the United States*
-<br>
+!!! quote "Vivek Kundra, former federal CIO of the United States"
+    *"Cloud computing is often far more secure than traditional computing, because companies like Google and Amazon can attract and retain cyber-security personnel of a higher quality than many governmental agencies."*
+    
 
-# Concerns
+## Concerns
 
 Cloud computing revolutionized the way we store and interact with data in our daily work. We now take it as a must to have simultaneous access to information from many different devices scattered around the globe. Cloud service providers make it possible and seamless. The data stored by the cloud providers, however, is often of sensitive nature to businesses and research institutions. Moreover, such data rapidly increases in quantity. New security issues of practical importance appear as a result of this digital transformation [[1-8](#links)]. These issues are related to the confidentiality, integrity, accessibility, and resilience to online piracy and malware attacks.
 
-# Examples
+## Examples
 
-## More secure?
+### Is cloud really more secure?
 
 There is a  growing consensus among the global IT community that cloud computing has now become inherently more reliable and secure than traditional privately-owned data-centers in the same way that money is safer when mixed up with other people's money in a bank vault than sitting alone in one’s dresser drawer [[9, 10](#links)]. The largest cloud service providers such as AWS, Microsoft Azure and the Google cloud platform (our references of choice at Exabyte.io) have the means and resources to invest billions in maintaining and improving top-notch IT security protocols and infrastructure. They do it in a way that would be cost-prohibitive even for the Global 500 companies and completely unaffordable for most small-to-medium sized enterprises and/or research labs.
 
-## How is it possible?
+### How is it possible?
 
 For example, Microsoft has invested $1 billion and doubled its number of security executives over the course of the year 2015 alone. They also announced the launch of a new managed security services group and a new cyber defense operations center [[11](#links)]. Similar policies are regularly being enacted by all other major cloud providers. Furthermore, providers have servers hosted in a variety of locations regionally and globally, which naturally preserves data better and more reliably than keeping it on-premises in a single location. Other advantages of clouds compared to traditional computing can be found in their superior performance and their lower operational costs as it was pointed out in a 2017 NASDAQ summary [[12](#links)]. No wonder even the CIA now trusts Amazon Web Services to store some of its classified information! [[13](#links)]
 
-## OK, but not for our data, is it?
+### OK, but not for our data, is it?
 
 Chemical and Energy sectors have so far been reluctant to adopt cloud computing because of the associated security concerns, however, such companies are increasingly eager to explore the field as Accenture reported [[14, 15](#links)]. We believe that in the future the situation will change, and we base our conclusions on the modern day state of the computer-aided design industry, where 4 out of the 5 largest companies now use cloud for their Research and Development efforts [[16](#links)]. Pharmaceutical industrial sector, first reluctant to adopt cloud computing too, is now rapidly changing its stance [[17](#links)]. Lastly, some of the recent updates from Microsoft Azure partnering with British Petroleum and Chevron in storing mission-critical data point to similar conclusions [[18, 19](#links)].
 
-# Our approach
+## Our approach
 
 We at Exabyte.io consider a confidential and secure experience for our customers our top priority. We use industry-standard strict security protocols, and the degree of data privacy and integrity protection we deliver has so far received universal appreciation by our users [[20](#links)]. We are convinced that together we can extend the forefront of the cloud computing transformation currently unfolding [[21](#links)], and apply it to accelerate the materials and chemical R&D.
 
@@ -39,7 +36,7 @@ You can find more information about our security policies at [this link](securit
 
 We further discuss the analysis of cloud-computing related threats and our ways to mitigate them [here](./threats-analysis.md).
 
-# Links
+## Links
 
 1. "The Treacherous Twelve" Cloud Computing Top Threats in 2016; report by the Cloud Security Alliance (CSA); [link](https://downloads.cloudsecurityalliance.org/assets/research/top-threats/Treacherous-12_Cloud-Computing_Top-Threats.pdf)
 
@@ -61,7 +58,7 @@ We further discuss the analysis of cloud-computing related threats and our ways 
 
 10. "Cloud security: Why clouds are more secure than your own datacenter" (2016); [link](http://ciosurvivalguide.com/blog/cloud-security-why-clouds-are-more-secure-than-your-own-datacenter)
 
-11. K.J. Higgins: "Microsoft Invests $1 Billion In 'Holistic' Security Strategy" (2015); [link](https://www.darkreading.com/endpoint/microsoft-invests-$1-billion-in-holistic-security-strategy/d/d-id/1323170)
+11. K.J. Higgins: "Microsoft Invests 1 Billion In Holistic Security Strategy" (2015); [link](https://www.darkreading.com/endpoint/microsoft-invests-$1-billion-in-holistic-security-strategy/d/d-id/1323170)
 
 12. G. Pendse: "Cloud Computing: Industry Report & Investment Case", Nasdaq (2017); [link](https://business.nasdaq.com/marketinsite/2017/Cloud-Computing-Industry-Report-and-Investment-Case.html)
 

@@ -1,4 +1,4 @@
-site_name: Documentation
+site_name: Exabyte.io Documentation
 site_url: https://docs.exabyte.io
 site_description: Documentation for the users of Exabyte.io materials modeling platform.
 dev_addr: "localhost:8000"
@@ -509,9 +509,8 @@ nav:
     - Data in Object Storage:
         - Overview:                                     data-in-objectstorage/overview.md
         - Files:                                        data-in-objectstorage/files.md
-        # TODO: MM to add content to the page below
         - Security:                                     data-in-objectstorage/security.md
-        - Dropbox:                                   data-in-objectstorage/dropbox.md
+        - Dropbox:                                      data-in-objectstorage/dropbox.md
         - User Interface:
             - Dropbox Page:                             data-in-objectstorage/ui/dropbox-page.md
             - Files Tab:                                jobs/ui/files-tab.md
@@ -565,50 +564,43 @@ nav:
 
 
     - REST-API:
-      # Link to Exabyte API Client repo
-      # Link to Exabyte API Examples repo
-      # Explanation and a Link to Swagger Explorer page
-      # List of versions with its own link
-      # Animation Example of how to use the swagger UI for Listing materials
-      - Overview:                                   rest-api/overview.md
-      # Authentication section explains how to authenticate and access the API.
-      - Authentication:                             rest-api/authentication.md
-      # Query structure section explains the structure of requests and responses.
-      - Query structure:                            rest-api/query-structure.md
-      - Endpoints:                                  rest-api/endpoints.md
+      - Overview:                                    rest-api/overview.md
+      - Authentication:                              rest-api/authentication.md
+      - Query structure:                             rest-api/query-structure.md
+      - Endpoints:                                   rest-api/endpoints.md
       - Exabyte API client:                          rest-api/api-client.md
       - Exabyte API examples:                        rest-api/api-examples.md
 
-
 # TUTORIALS AND EXAMPLES
-    - Tutorials:
-        # TODO: adjust with results closer to experiment and re-publish
-        # - Semiconductors:
-        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
-        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
-        - Pseudopotential DFT:
-            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
-            - Electronic band structure:                tutorials/dft/band-structure.md
-            - Electronic band gap:                      tutorials/dft/band-gap.md
-            - Electronic density of states:             tutorials/dft/density-of-states.md
-            - Electronic density mesh:                  tutorials/dft/electronic-density-mesh.md
-            - Zero point energy:                        tutorials/dft/zero-point-energy.md
-            - Structural relaxation:                    tutorials/dft/relaxation.md
-            - K-point convergence:                      tutorials/dft/kpt-convergence.md
-            - Fermi surface:                            tutorials/dft/fermi-surface.md
-        - Machine Learning:
-            - Train ML Model:                           tutorials/ml/train-ml-model.md
-        - Other:
-            - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
-            - Restart from previous run:                tutorials/other/restart-job.md
-            - Remote desktop visualization:             tutorials/other/remote-desktop.md
-            - Job submission via terminal:              tutorials/other/cli-job.md
-        # TODO: adjust combinatorial screening explanation according to latest UX
-        - Combinatorial-screening:                      tutorials/combinatorial-screening.md
-        # TODO: re-implement and re-enable Formation Energy
-        - Formation energy:                             tutorials/formation-energy.md
-        # TODO: check relevance and update/delete
-        - CLI data import:                              tutorials/cli-job-import.md
+    # TODO: refactor and re-enable
+#    - Tutorials:
+#        # TODO: adjust with results closer to experiment and re-publish
+#        # - Semiconductors:
+#        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
+#        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
+#        - Pseudopotential DFT:
+#            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
+#            - Electronic band structure:                tutorials/dft/band-structure.md
+#            - Electronic band gap:                      tutorials/dft/band-gap.md
+#            - Electronic density of states:             tutorials/dft/density-of-states.md
+#            - Electronic density mesh:                  tutorials/dft/electronic-density-mesh.md
+#            - Zero point energy:                        tutorials/dft/zero-point-energy.md
+#            - Structural relaxation:                    tutorials/dft/relaxation.md
+#            - K-point convergence:                      tutorials/dft/kpt-convergence.md
+#            - Fermi surface:                            tutorials/dft/fermi-surface.md
+#        - Machine Learning:
+#            - Train ML Model:                           tutorials/ml/train-ml-model.md
+#        - Other:
+#            - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
+#            - Restart from previous run:                tutorials/other/restart-job.md
+#            - Remote desktop visualization:             tutorials/other/remote-desktop.md
+#            - Job submission via terminal:              tutorials/other/cli-job.md
+#        # TODO: adjust combinatorial screening explanation according to latest UX
+#        - Combinatorial-screening:                      tutorials/combinatorial-screening.md
+#        # TODO: re-implement and re-enable Formation Energy
+#        - Formation energy:                             tutorials/formation-energy.md
+#        # TODO: check relevance and update/delete
+#        - CLI data import:                              tutorials/cli-job-import.md
 
 # LEGAL
     - Site Policy:
@@ -616,7 +608,6 @@ nav:
         - Sharing:                                      site-policy/sharing-policy.md
         - Terms of Service:                             site-policy/terms-of-service.md
         - Compute:                                      compute/policies.md
-
 
 # OTHER
     - Other:
@@ -641,7 +632,3 @@ nav:
         # - Upcoming features:    other/upcoming-features.md
         # - Roadmap:              other/roadmap.md
         # Restricted content login page
-    # - Terminology:
-    #     - Simulations:              terminology/simulations.md
-    #     - Materials Properties:     terminology/property-classification.md
-    #     - Crystallography:          terminology/crystallography.md

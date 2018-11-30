@@ -29,7 +29,7 @@ Example contents of the home directory for cluster-001 are displayed in the subs
 
 ![Cluster Home Contents](/images/cluster-home-content.png "Cluster Home Contents")
 
-Th "dropbox" and "job_script_templates" folders are present under both Cluster Home and [Login Home](../login/directories.md) and are explained in more detail [in this page](../../data-on-disk/directories.md).
+The "dropbox" and "job_script_templates" folders are present under both Cluster Home and [Login Home](../login/directories.md) and are explained in more detail [in this page](../../data-on-disk/directories.md).
     
 ## Shared Folders for Organizations
 
