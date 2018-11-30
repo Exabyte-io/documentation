@@ -68,4 +68,4 @@ Please contact us and we will be glad to assist you with any further security re
 
 ## Links
 
-[1]: Kazim et. al,  “A survey on top security threats in cloud computing”,  International Journal of Advanced Computer Science and Applications, Vol. 6, No. 3, 2015 [link](http://thesai.org/Downloads/Volume6No3/Paper_16-A_survey_on_top_security_threats_in_cloud_computing.pdf)
+[^1]: Kazim et. al,  “A survey on top security threats in cloud computing”,  International Journal of Advanced Computer Science and Applications, Vol. 6, No. 3, 2015 [link](http://thesai.org/Downloads/Volume6No3/Paper_16-A_survey_on_top_security_threats_in_cloud_computing.pdf)
