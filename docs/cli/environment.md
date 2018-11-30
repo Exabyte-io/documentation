@@ -8,8 +8,6 @@ After logging into our platform via the [Command Line Interface (CLI)](overview.
 
 The CLI environment can be **customized** by the user in two respects: by choosing the **Shell type**, and through the **loading of predefined Modules**, which include numerous commonly-used simulation codes and associated libraries.  
 
-This customization can be controlled via certain **startup scripts**, which are executed when the user first logs into the CLI. The user can customize some of these scripts, which are called "dot files," by setting environment variables and aliases in them as explained [in this page](actions/customize.md).
-
 ## Shell Type
 
 The **Shell type** [^3] can modify the way that the user can interact with the CLI by, for example, introducing new commands or key shortcuts. For example, Ref. [^4] explains how the "bash" shell type differs from zsh. 
@@ -26,6 +24,8 @@ The different shell types that are available as part of our product, and can be 
     We use **oh-my-zsh**, a community-driven framework for managing the zsh configuration. For more information, please visit its official website [^10].
 
 The **default shell** is set to bash. The user can change shell from this default setting by following the instructions contained [in this page](actions/customize.md).
+
+The shell customization can be further controlled via certain **startup scripts**, which are executed when the user first logs into the CLI. The user can customize some of these scripts, which are commonly referred to as "dot files," by setting environment variables and aliases in them, as explained [in this page](actions/customize.md).
 
 ## Python Environment
 
