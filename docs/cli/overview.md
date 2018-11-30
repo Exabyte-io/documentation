@@ -8,7 +8,7 @@ After logging in, the user will be presented with the following **welcome splash
 
 ## Environment
 
-We offer the possibility to customize the **Environment** of the CLI, including both the **shell type** and the **loading of Modules** for loading built-in codes such that they don't need to be recompiled.
+We offer the possibility to customize the **Environment** of the CLI, including both the **shell type** and the **loading of Modules** (pre-defined codes that don't need recompiling).
 
 Both forms of environment customization are explained under the same page, [accessible here](environment.md). 
 
