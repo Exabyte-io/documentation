@@ -26,7 +26,7 @@ Jobs Explorer is another specific implementation of the [Explorer](/entities-gen
 
 ## [Designer](/jobs-designer/overview.md) 
 
-Jobs Designer is another specific implementation of the [Designer](/entities-general/ui/designer.md) component described in more details [here](/jobs-designer/overview.md).
+Jobs Designer is another specific implementation of the [Designer](/entities-general/ui/designer.md) component described in more detail [here](/jobs-designer/overview.md).
 
 ## [Viewer](ui/viewer.md)
  
