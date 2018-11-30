@@ -1,14 +1,20 @@
-running the `change_shell` command, for example to change your shell to zsh run 
+# Customize Shell Environment
+
+The action of customizing the [shell environment](../environment.md#shell-type) from the default "bash" setting can in general be performed by running the `change_shell` command, with the path to the shell executable present under the `/bin` system folder inserted as flag. 
+
+## Example: Change to ZSH
+
+Here, we offer a specific example of the command necessary to change the shell from the default "bash" to the "zsh" option.
 
 ```
 change_shell /bin/zsh
 ```
 
-There are several "standard" dot-files that are symbolic links to read-only files that Exabyte.io controls. Thus, you should NEVER modify or try to modify such files as .bash_profile, .bashrc, .cshrc, .kshrc, .login, .profile, or .zshrc. Instead, you should put your customizations into files that have a ".ext" suffix, such as .bashrc.ext, .cshrc.ext, .kshrc.ext, .login.ext, .profile.ext, and .zshrc.ext. Which of those you modify depends on your choice of shell, although note that we recommend bash.
+## Dot Files
 
-The table below contains examples of basic customizations directives one can put inside dot files. Note that when making changes such as these it's always a good idea to have two terminal sessions active so that you can back out changes if needed!
+There exist several "standard" dot-files within the [Login Home](../../infrastructure/login/directories.md), including one for each shell type that we support, that represent symbolic links to read-only files controlled by the platform administrator. Thus, the user should **NEVER** attempt to modify these files. Examples include the .bash_profile, .bashrc, .cshrc, .kshrc, .login, .profile, or .zshrc files. 
 
-| Bash                  | Csh                   |
-|:-------------------   |:-------------------   |
-| `export ENVAR=var`    | `setenv ENVAR var`    |
-| `alias ll='ls -lrt’`  | `alias ll “ls –lrt”`  |
+Instead, the user should put his/her customizations to the shell environment into the corresponding files that have an ".ext" suffix, such as .bashrc.ext, .cshrc.ext, .kshrc.ext, .login.ext, .profile.ext, and .zshrc.ext (depending on the choice of shell).
+
+!!!warning "Feature not implemented yet"
+    The above-mentioned customizations via dot files with ".ext" suffix are not supported on our platform yet.
