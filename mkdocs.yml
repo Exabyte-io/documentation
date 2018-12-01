@@ -547,21 +547,11 @@ nav:
         - Actions:
             - Overview:                                 cli/actions/overview.md
             - Load / Unload Modules:                    cli/actions/modules.md
-            # corresponding UI action
-            # Customize shell (e.g. change to ZSH)
             - Customize Shell Environment:              cli/actions/customize.md
-            # Explain how to compile a modified version of Quantum ESPRESSO on the master node of the desired
-            # Note that a permission needs to be requested to access master nodes in command line
             - Add new software:                         cli/actions/add-software.md
-            # Explain how to use virtualenv to assemble pymatgen, pandas and ase into a virtual environment
             - Create Python Environment:                cli/actions/create-python-env.md
-            # check status of clusters with exaclusters command
-            - List Clusters:                            cli/actions/list-clusters.md
-            # List compute nodes and their state with exanodes command
-            - List Cluster Nodes:                       cli/actions/list-nodes.md
+            - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Quotas:                             cli/actions/check-quotas.md
-            # Link to the corresponding section (Jobs CLI)
-            - Jobs Actions:                             cli/actions/jobs-actions.md
 
 
     - REST-API:
