@@ -1,11 +1,12 @@
 # Check Account Quota and Balance
 
-This page explains how to retrieve [accounting information](../../accounts/overview.md) for users logged-in via the [Command Line Interface](../../cli/overview.md). Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them.
-
+This page explains how to retrieve [accounting information](../accounts/overview.md) for users logged-in via the [Command Line Interface](../cli/overview.md), including information about any [Organizational Accounts](../collaboration/organizations/overview.md) that the user is member of.
+ 
+Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them. The full documentation manual for the accounting system software that we implement can be found under Ref. [^1]. 
 
 ## Account Balance
 
-Information about the [Account Balance](../../accounts/balance.md) (in US dollars) is accessed using the `balance` command, as demonstrated in the example below.
+Information about the [Account Balance](../accounts/balance.md) (in US dollars) is accessed using the `balance` command, as demonstrated in the example below.
 
 `# > balance`
 
@@ -15,7 +16,8 @@ Id Name     Amount Reserved Balance CreditLimit Available
 1  steven  1000.00     10.00 990.00        0.00   990.00
 ```
 
-The entries returned by the above command are summarized in the table below, complementing their [general discussion](../../accounts/balance.md).
+The entries returned by the above command are summarized in the table below, complementing their [general discussion](../accounts/balance.md). We remind the reader that in order to perform computations on our platform, a positive balance is required.
+
 
 | Entry | Description |
 |------|---------|
@@ -28,7 +30,9 @@ The entries returned by the above command are summarized in the table below, com
 
 ## Itemized Account Statement
 
-The example below shows how to view the [account statement](../../accounts/payments-charges.md) since the beginning of time, via the `statement` command.
+We track the **usage** of our platform, or [balance](../accounts/balance.md) spent on computations per each [account](../accounts/overview.md) and each [project](../jobs/projects.md). The usage statistics of each [cluster](../infrastructure/clusters/overview.md), in terms of number of CPU hours consumed and charges incurred, is referred to as the **Account Statement**.
+
+This statement can be inspected with the `statement` command under CLI, as demonstrated in the example below.
 
 `# > statement`
 
@@ -91,9 +95,18 @@ Job    Charge 92    steven   steven   cluster.exabyte.io  -0.01 2016-08-11 11:57
 
 ```
 
-!!!info "Narrowing down the time span"
-    It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2017-01-08 -e 2018-01-08` would return the account statement during the course of a year, starting from the 8th of January 2017. 
+It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2017-01-08 -e 2018-01-08` would return the account statement during the course of a year, starting from the 8th of January 2017. 
 
+The full list of flags that can be passed to `statement` is reproduced below for reference purposes.
+
+```bash
+# > statement --help
+
+Usage:
+    gstatement [[-a] *account_id*] [-p *project_name*] [-u *user_name*] [-m
+    *machine_name*] [-s *start_time*] [-e *end_time*] [--summarize] [-h,
+    --hours] [--debug] [-?, --help] [--man] [-V, --version]
+```
 
 ## Detailed List of Jobs
 
@@ -125,8 +138,12 @@ Id JobId User     Project  Machine            Queue QualityOfService Stage   Cha
 
 ## Storage Quota
 
-Information about the [Storage Quota](../../accounts/quota.md) within the available [computing clusters](../../infrastructure/clusters/overview.md) can be retrieved via the `quota` command.
+Information about the [Storage Quota](../accounts/quota.md) within the available [computing clusters](../infrastructure/clusters/overview.md) can be retrieved via the `quota` command.
 
 <!-- TODO:
 Wait for Mohammed to fix this command to show example of output
 -->
+
+## Links
+
+[^1]: [Gold User’s Guide, Document](http://docs.adaptivecomputing.com/gold/pdf/GoldUserGuide.pdf)
