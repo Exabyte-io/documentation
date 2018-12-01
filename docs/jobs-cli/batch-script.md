@@ -4,7 +4,7 @@ This page explains the basics of [Command Line Interface](../cli/overview.md) (C
 
 Simulation tasks submitted through CLI are expected to be run in **"batch" mode**. Batch jobs are controlled by the so-called **Batch Scripts** (also referred to as **Job Scripts**), which are written by the user and then submitted to the [resource management system](../infrastructure/resource/overview.md).
 
-Batch scripts consist of two parts, a set of **directives** that describe the [resource requirements](../infrastructure/compute/parameters.md) (time, number of processors, etc.), and **UNIX commands** that perform the relevant computations. These UNIX command may perform anything that can be done under a UNIX shell prompt, such as creating directories, transferring files, etc.
+Batch scripts consist of two parts, a set of **directives** that describe the [resource requirements](../infrastructure/compute/parameters.md) (time, number of processors, etc.), and **UNIX commands** that perform the relevant computations. These UNIX commands may perform anything that can be done under a UNIX shell prompt, such as creating directories, transferring files, etc.
 
 The actual execution of the parallel job, however, is handled by a special command, called a **job launcher**. In a generic Linux environment, this utility is often labelled "mpirun".
 
