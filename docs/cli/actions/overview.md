@@ -18,13 +18,9 @@ The user can compile new software on the CLI, as explained [here](add-software.m
 
 Python environments are the object of a [dedicated discussion](create-python-env.md).
 
-## List Clusters
+## List Clusters and Cluster Nodes
 
-The [computing clusters](../../infrastructure/clusters/overview.md) available for use can be listed by entering the commands [explained here](list-clusters.md).
-
-## List Cluster Nodes
-
-Similarly, the user can also list the available cluster nodes by entering [these commands](list-nodes.md).
+The [computing clusters and nodes](../../infrastructure/clusters/overview.md) available for use can be listed by entering the commands [explained here](list-clusters.md).
 
 ## Check Quota and Balance
 

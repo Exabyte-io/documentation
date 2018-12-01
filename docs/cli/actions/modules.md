@@ -4,7 +4,7 @@ We describe in the present page how pre-compiled [modules](../environment.md#mod
 
 ## List Currently Loaded Modules
 
-The first command of interest is `module list`, which returns the list of **currently loaded modules**. No modules are pre-loaded by default at the moment of login, such that this command will return an empty list unless new modules are loaded as explained in a forthcoming section of this page. 
+The first command of interest is `module list`, which returns the list of **currently loaded modules**. No modules are pre-loaded by default at the moment of login, so that this command will return an empty list unless new modules are loaded by the user, as explained in a forthcoming section of this page. 
 
 Below is an example of the output of this command, showing the list of modules loaded by user "Steve".
 
@@ -16,9 +16,9 @@ Currently Loaded Modulefiles:
 
 ## List Available Modules
 
-The command `module avail` provides a complete list of the modules made available on our platform. The common stem for the complete module installation path is displayed on top of each section listed in the output, whereas the rest of the path name is specified under each listed entry.
+The command `module avail` provides a complete list of the **modules made available on our platform**. The common stem for the module installation paths is displayed on top of each section listed in the output, whereas the rest of the path name is specified under each listed entry.
 
-We have reproduced the output of this command below, for reference purposes. The reader is referred to the [relevant section](../../software/overview.md) of the documentation for an introduction to the codes, libraries and software packages listed here.
+We have reproduced the output of this command below listing all currently available modules, for reference purposes. The reader is referred to the [relevant section](../../software/overview.md) of the documentation for an introduction to the codes, libraries and software packages listed here.
 
 ```bash
 ---------------------------------------------------------------------------- /export/compute/modulefiles/system ----------------------------------------------------------------------------
@@ -40,7 +40,7 @@ gcc/5.4.0            intel/i-174(default)
 mkl/i-174(default)    mpi/impi-044(default) mpi/ompi-110          openblas/218-g-540
 ```
 
-The user can also search for available modules with this command, through a partial insertion of the module's name, as demonstrated in the example below.
+Through the `module avail` command, the user can also **search** for available modules, by partially inserting the module's name. This functionality is demonstrated in the example below.
 
 ```bash
 [steve@bohr.exabyte.io:~]$ module avail espresso
@@ -51,7 +51,7 @@ espresso/511-g-485-ompi-110          espresso/521-i-174-impi-044(default) espres
 
 ## Load Desired Module
 
-The user can load a certain desired module from the aforementioned list of available ones via the `module load <module name>` command.
+The user can **load a certain desired module** from the aforementioned list of available ones via the `module load <module name>` command.
 
 For example, to use the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) modelling application, the corresponding module can be loaded as follows. All other library dependencies of the desired module will also be loaded automatically in this way.
 
@@ -77,7 +77,7 @@ The module espresso/521-i-174-impi-044 is loaded
 
 ## Purge All Loaded Modules
 
-Finally, the `module purge` command can be entered to completely clean the environment and deactivate all currently loaded modules. This functionality is illustrated by way of the following example.
+Finally, the `module purge` command can be entered to **completely clean** the environment and **deactivate all currently loaded modules**. This functionality is illustrated by way of the following example.
 
 ```bash
 [steve@bohr.exabyte.io:~]$ module list

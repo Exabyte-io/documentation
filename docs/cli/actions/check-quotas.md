@@ -1,30 +1,34 @@
-This page explains how to retrieve accounting information for users logged-in via command line.
+# Check Account Quota and Balance
 
-## Total remaining allocation
+This page explains how to retrieve [accounting information](../../accounts/overview.md) for users logged-in via the [Command Line Interface](../overview.md). Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them.
 
-Total remaining allocation (in US dollars) is accessed using:
+
+## Account Balance
+
+Information about the [Account Balance](../../accounts/balance.md) (in US dollars) is accessed using the `balance` command, as demonstrated in the example below.
 
 `# > balance`
 
 ```bash
 Id Name     Amount Reserved Balance CreditLimit Available
 -- -------- ------ -------- ------- ----------- ---------
-1  steven  1000.00     0.00 1000.00        0.00   1000.00
+1  steven  1000.00     10.00 990.00        0.00   990.00
 ```
 
-The information above shows:
+The entries returned by the above command are summarized in the table below, complementing their [general discussion](../../accounts/balance.md).
 
-- username (*Name*) for the
-- the allocation *Amount* in US dollars,
-- *Reserved* amount reserved for the currently running jobs,
-- *Balance* available to the user,
-- *CreditLimit* illustrating how much credit user has with exabyte.io
-- *Available* amount allocated for the current user (for team allocations)
+| Entry | Description |
+|------|---------|
+| Amount | Total combined amount of money |
+| Reserved | Money already allocated for executing Jobs |
+| Available | Remaining money not allocated yet |
+| Credit Limit | Not applicable in our case |
+| Balance | Same as Available, due to absence of credits | 
 
 
-## Itemized account statement
+## Itemized Account Statement
 
-Example below shows how to view the account statement since the beginning of time
+The example below shows how to view the [account statement](../../accounts/payments-charges.md) since the beginning of time, via the `statement` command.
 
 `# > statement`
 
@@ -87,10 +91,13 @@ Job    Charge 92    steven   steven   cluster.exabyte.io  -0.01 2016-08-11 11:57
 
 ```
 
+!!!info "Narrowing down the time span"
+    It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2017-01-08 -e 2018-01-08` would return the account statement during the course of a year, starting from the 8th of January 2017. 
 
-## Detailed list of jobs
 
-To get detailed information about all the jobs submitted on our system:
+## Detailed List of Jobs
+
+To get detailed information about all the jobs submitted on our system to date, enter the `lsjob` command.
 
 `# > lsjob`
 
@@ -116,4 +123,10 @@ Id JobId User     Project  Machine            Queue QualityOfService Stage   Cha
 
 ---
 
-Each of the above commands accept options, that can be viewed by passing `--help` option.
+## Storage Quota
+
+Information about the [Storage Quota](../../accounts/quota.md) within the available [computing clusters](../../infrastructure/clusters/overview.md) can be retrieved via the `quota` command.
+
+<!-- TODO:
+Wait for Mohammed to fix this command to show example of output
+-->
