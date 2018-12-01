@@ -400,13 +400,8 @@ nav:
 
     - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
-        # Jobscript, with examples
         - Batch script:                                 jobs-cli/batch-script.md
-        - Accounting:
-            # how to show detailed Account balance
-            - Balance:                                  jobs-cli/accounting/balance.md
-            # How to show detailed usage statistics
-            - Statement:                                jobs-cli/accounting/statement.md
+        - Check Balance / Quota:                        jobs-cli/balance-quotas.md
         - Actions:
             - Create:                                   jobs-cli/actions/create.md
             # How to submit a job with qsub
