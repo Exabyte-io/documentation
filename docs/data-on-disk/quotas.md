@@ -9,7 +9,7 @@ The quotas are set per [cluster](../infrastructure/clusters) and are always **ha
 !!! note "Service levels contain *compound* quotas"
     The explanation of the service levels [in this page](../pricing/service-levels.md) contains compound values for the disk quota for all accessible clusters. Depending on user demands we can allocate more or less quota per cluster.
 
-Current quotas applicable to the folders available to the user can be inspected at any time via the [Command Line Interface](../cli/overview.md), using the [`quota` command](../cli/actions/check-quotas.md), or alternatively using the [Web Interface](../accounts/accounting/check-balance-quota.md).
+Current quotas applicable to the folders available to the user can be inspected at any time via the [Command Line Interface](../cli/overview.md), using the [`quota` command](../jobs-cli/accounting/check-quotas.md), or alternatively using the [Web Interface](../accounts/accounting/check-balance-quota.md).
     
 ## Login Node Home
 

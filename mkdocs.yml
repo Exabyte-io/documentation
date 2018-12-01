@@ -551,7 +551,6 @@ nav:
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
-            - Check Quotas:                             cli/actions/check-quotas.md
 
 
     - REST-API:

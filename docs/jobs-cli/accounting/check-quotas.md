@@ -1,6 +1,6 @@
 # Check Account Quota and Balance
 
-This page explains how to retrieve [accounting information](../../accounts/overview.md) for users logged-in via the [Command Line Interface](../overview.md). Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them.
+This page explains how to retrieve [accounting information](../../accounts/overview.md) for users logged-in via the [Command Line Interface](../../cli/overview.md). Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them.
 
 
 ## Account Balance
