@@ -12,6 +12,7 @@ extra_css:
     - extra/css/images.css
     - extra/css/super-fences.css
     - extra/css/properties.css
+    - extra/css/pdf.css
 
 extra_javascript:
     - extra/js/giffer.js
@@ -29,6 +30,16 @@ extra:
           link: https://github.com/exabyte-io
         - type: linkedin
           link: https://linkedin.com/exabyte-io
+
+# Pass ENABLE_PDF_EXPORT=1 to enable export
+plugins:
+    - search
+    - pdf-export:
+        verbose: true
+        media_type: print
+        combined: true
+        enabled_if_env: ENABLE_PDF_EXPORT
+
 markdown_extensions:
     - markdown_include.include:
         base_path: esse

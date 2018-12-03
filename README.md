@@ -219,3 +219,19 @@ Please note the `markdown=1` tag, without it the content of the `<details>` tag 
 ## Note: header levels
 
 After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header.
+
+## Note: mkdocs-pdf-export-plugin
+
+Install the required dependencies before installing the [plugin itself](https://github.com/shauser/mkdocs-pdf-export-plugin):
+
+```bash
+brew install cairo pango gdk-pixbuf libffi
+```
+
+Install [pyenv](https://github.com/pyenv/pyenv) to control python versions and install python3 (3.7.0) through it.
+
+After that, create a virtual environment as below, and use it to serve mkdocs:
+
+```bash
+virtualenv -p python3 .virtualenv-3.7.0
+```
