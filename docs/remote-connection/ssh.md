@@ -30,7 +30,10 @@ We explain how to upload the SSH keys to our platform in a [separate section](..
 
 ## Connect to Server
 
-Once the secure SSH link is established via the SSH keys, the remote Exabyte server (referred to under the alias "bohr") can be accessed as follows (the user should replace the text inside braces below with the corresponding names/paths).
+Once the secure SSH link is established via the SSH keys, the remote Exabyte server can be accessed as follows (the user should replace the text inside braces below with the corresponding names/paths).
+
+!!!info "Name of remote server"
+    Our Exabyte server for accepting remote connections is referred to under the alias of **"bohr"**, and is accessible via the corresponding address `bohr.exabyte.io`.
 
 ### OpenSSH for Unix
 
@@ -70,19 +73,7 @@ When using WinSCP, one would need to load the private key through its interface 
     
 ### Unix Instructions
 
-On Unix, SCP file transfers can be performed directly via the terminal with the following commands (the user should replace the text inside braces below with the corresponding names/paths).
-
-1. To transfer files **to** exabyte.io:
-
-```bash
-scp -i <path to private_key> <path to local file> <username>@bohr.exabyte.io:<path inside login home>
-```
-
-2. To transfer files **from** exabyte.io:
-
-```
-scp -i <path to private_key> <username>@bohr.exabyte.io:<path inside login home> <path to local file>
-```
+The instructions for Unix-based operating systems can be found [in a separate page](../cli/actions/transfer-files-scp.md).
 
 ## Links to Clients Documentation
 
