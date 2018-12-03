@@ -2,15 +2,21 @@
 
 Users can log into the main Unix-based **Command Line Interface (CLI)** [^1] of our platform with any of the available [remote connection methods](../remote-connection/overview.md) (including the [Remote Desktop](../remote-connection/remote-desktop.md), which has its own incorporated Terminal application as explained [here](../remote-connection/actions-rd/browse.md#open-linux-terminal)). 
 
-After logging in, the user will be presented with the following **welcome splash screen** under the CLI interface, which already includes numerous useful advices and instructions on how to operate the relevant commands.
+After logging in, the user is presented with the following **welcome screen** under the CLI interface, which includes some useful advices and instructions on how to operate the relevant commands.
 
 ![CLI splash](/images/CLI-Welcome-Screen.png "CLI splash")
+
+We explain the resource management system in its [dedicated section](../infrastructure/resource/overview.md), the accounting, software modules and commands outlined in the above visual are explained in sections mentioned below.
 
 ## Environment
 
 We offer the possibility to customize the **Environment** of the CLI, including both the **shell type** and the **loading of Modules** (pre-defined codes that don't need recompiling).
 
 Both forms of environment customization are explained under the same page, [accessible here](environment.md). 
+
+## Accounting
+
+<!-- TODO by GM: add explanation -->
 
 ## Actions
 

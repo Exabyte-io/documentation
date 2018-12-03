@@ -547,7 +547,7 @@ nav:
         - Actions:
             - Overview:                                 cli/actions/overview.md
             - Load / Unload Modules:                    cli/actions/modules.md
-            - Customize Shell Environment:              cli/actions/customize.md
+            - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md

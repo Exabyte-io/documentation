@@ -1,18 +1,45 @@
 # Create Python Environment
 
-Here, we explain how to use the **"virtualenv"** module [^1] within the [Command Line Interface](../overview.md) (CLI) to assemble some commonly used python packages for materials science computations into a **virtual environment**. These packages include the **"pymatgen"**, **"pandas"** and **"atomic simulation environment (ase)"** libraries.
+Here, we explain how to use the **"virtualenv"** command [^1] within the [Command Line Interface](../overview.md) (CLI) to assemble some commonly used python packages for materials science computations into a **virtual environment**. These packages include the **"pymatgen"**, **"pandas"** and **"atomic simulation environment (ase)"** libraries.
 
-## How to Use Virtualenv
+!!! note "Default version of python is 2.7.5"
+    By default the system-wide version of python is used.
 
-Virtualenv can be used by following the instructions presented in its official website [^1]. The installation of a new python package under virtualenv, in its simplest version, consists in the following sequence of commands, where we also make use of the `pip` package manager [^2] (already installed on the CLI by default).
+## Using Virtual Environment
+
+`virtualenv` command can be used by following the instructions presented in its official website [^1]. The installation of a new python package consists of the following sequence of commands, where we also make use of the `pip` package manager [^2] (already installed by default).
 
 ```bash
 virtualenv .virtualenv
 source .virtualenv/bin/activate
-pip install <some-package-name>
 ```
 
-To finally disable the virtual environment and return to the original default command line, enter the following.
+At this point the CLI prompt will change to reflect that the virtual environment is installed and will look similar to:
+
+```bash
+(.virtualenv) [steven@bohr.exabyte.io:~/cluster-001/tmp]$
+```
+
+Next, let's install the desired package(s). Here we use "pymatgen", further explained below:
+
+```bash
+pip install pymatgen
+```
+
+Check that installation is successful (exit code of zero means everything OK):
+
+```bash
+python -c "import pymatgen" && echo $?
+0
+```
+
+Now one can execute the scripts requiring the installed package as follows, for example:
+
+```bash
+python script.py
+```
+
+In order to disable the virtual environment and return to the original default command line, enter the following.
 
 ```bash
 deactivate
