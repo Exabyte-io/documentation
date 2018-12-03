@@ -1,8 +1,8 @@
 # Check Account Quota and Balance
 
-This page explains how to retrieve [accounting information](../../accounts/overview.md) for users logged-in via the [Command Line Interface](../overview.md), including information about any [Organizational Accounts](../../collaboration/organizations/overview.md) that the user is member of.
+This page explains how to retrieve [accounting information](../../accounts/overview.md) for users logged-in via the [Command Line Interface](../overview.md), including information about any [Organizational Accounts](../../collaboration/organizations/overview.md) that the user may be member of.
  
-Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them. The full documentation manual for the accounting system software that we implement can be found under Ref. [^1]. 
+Each of the commands outlined in what follows can accept keyword parameters as option flags, as listed by passing the `--help` flag to them. 
 
 ## Account Balance
 
@@ -89,21 +89,7 @@ Usage:
 
 ## Detailed List of Jobs
 
-To get detailed information about all the jobs submitted on our system to date, enter the `lsjob` command.
-
-`# > lsjob`
-
-```bash
-Id JobId User     Project  Machine            Queue QualityOfService Stage   Charge Processors Nodes WallDuration StartTime           EndTime             Description
--- ----- -------- -------- ------------------ ----- ---------------- ------- ------ ---------- ----- ------------ ------------------- ------------------- -----------
-28 75    christie christie cluster.exabyte.io batch GS               Charge    0.00 8                109          2016-08-11 01:36:58 2016-08-11 01:38:47
-29 76    christie christie cluster.exabyte.io batch GS               Charge    0.01 16               71           2016-08-11 01:40:38 2016-08-11 01:41:49
-30 77    christie christie cluster.exabyte.io batch GS               Charge    0.00 16               6            2016-08-11 02:24:38 2016-08-11 02:24:44
-31 78    christie christie cluster.exabyte.io batch GS               Charge    0.00 16               5            2016-08-11 02:25:41 2016-08-11 02:25:46
-32 79    christie christie cluster.exabyte.io batch GS               Charge    0.00 16               6            2016-08-11 02:25:57 2016-08-11 02:26:03
-```
-
----
+Information about all jobs submitted by the user to date can be retrieved as explained [here](../../jobs-cli/put-link).
 
 ## Storage Quota
 
@@ -112,7 +98,3 @@ Information about the [Storage Quota](../../accounts/quota.md) within the availa
 <!-- TODO:
 Wait for Mohammed to fix this command to show example of output
 -->
-
-## Links
-
-[^1]: [Gold User’s Guide, Document](http://docs.adaptivecomputing.com/gold/pdf/GoldUserGuide.pdf)
