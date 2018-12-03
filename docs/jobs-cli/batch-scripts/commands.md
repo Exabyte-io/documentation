@@ -1,0 +1,1 @@
+Batch scripts consist of two parts, a set of **directives** that describe the [resource requirements](../infrastructure/compute/parameters.md) (time, number of processors, etc.), and **UNIX commands** that perform the relevant computations. These UNIX commands may perform anything that can be done under a UNIX shell prompt, such as creating directories, transferring files, etc.

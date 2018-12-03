@@ -398,10 +398,13 @@ nav:
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
 
+
     - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
-        - Batch script:                                 jobs-cli/batch-script.md
-        - Check Balance / Quota:                        jobs-cli/balance-quotas.md
+        - Batch Scripts:
+            - Overview:                                 jobs-cli/batch-scripts/overview.md
+            - Sample Scripts:                           jobs-cli/batch-scripts/sample-scripts.md
+            - Specify Projects:                         jobs-cli/batch-scripts/specify-projects.md
         - Actions:
             - Create:                                   jobs-cli/actions/create.md
             # How to submit a job with qsub
@@ -410,6 +413,7 @@ nav:
             - Check status:                             jobs-cli/actions/check-status.md
             # Terminate jobs with qdel
             - Terminate:                                jobs-cli/actions/terminate.md
+
 
     - Properties:
         - Overview:                                     properties/overview.md
@@ -431,6 +435,7 @@ nav:
         - User Interface:
             - Explorer:                                 properties/ui/explorer.md
             - Viewer:                                   properties/ui/viewer.md
+
 
     - Properties Directory:
         - Overview:                                     properties-directory/overview.md
@@ -546,6 +551,7 @@ nav:
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
+            - Check Balance / Quota:                    cli/actions/balance-quotas.md
 
 
     - REST-API:
