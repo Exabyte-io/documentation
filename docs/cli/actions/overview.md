@@ -26,6 +26,10 @@ The [computing clusters and nodes](../../infrastructure/clusters/overview.md) av
 
 We introduce the relevant commands for inspecting the [Account](../../accounts/overview.md) [Balance](../../accounts/balance.md) and [Quota](../../accounts/quota.md) via CLI [in this page](balance-quota.md). 
 
+## Transfer Files via SCP
+
+We explain how to perform file transfers via the [SCP protocol](../../remote-connection/ssh.md#transfer-files-with-scp), between user's local UNIX-based machines and our remote server, [with these instructions](transfer-files-scp.md).
+
 ## Jobs Actions
 
 The actions relevant for [Job Submission via the CLI](../../jobs-cli/overview.md) are explained in a [separate section](../../jobs-cli/actions/overview.md) of the documentation.
