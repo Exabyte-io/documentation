@@ -1,30 +1,29 @@
-## Torque Keywords
+# Directives
 
-The following keywords may be specified as qsub command line options, or as directives (preceded by #PBS) embedded in a batch script.
+As introduced [here](general-structure.md#3.-directives), the following keywords may be specified as **PBS directives** (preceded by `#PBS`) embedded in a [batch script](overview.md). These directives are particularly important for allocating the necessary [computational resources and parameters](../../infrastructure/compute/parameters.md) to the given [simulation Job](../../jobs/overview.md), for its [submission to the CLI](../overview.md).
 
-<hr>
-<table border="0">
-    <tbody>
-        <tr>
-            <th style="text-align: center; padding: 10px;" colspan="3">Required Torque Options/Directives</th>
-        </tr>
-        <tr>
-            <th style="text-align: center;">Option</th>
-            <th style="text-align: center;">Default</th>
-            <th style="text-align: center;">Description</th>
-        </tr>
-        <tr>
-            <td>-l nodes=Nodes</td>
-            <td>1 node</td>
-            <td>
-                Number of nodes assigned to the job.
-            </td>
-        </tr>
-        <tr>
-            <td>-l ppn=ProcessPerNode</td>
-            <td>1 process per node</td>
-            <td>
-                Number of processes per node **Note:** ppn must be less than or equal to the maximum available cores on the target compute node.
+!!!warning "Accounting information"
+    We recommend the user to first consult the accounting aspects of such directives documented [here](../accounting.md), before proceeding with job submission.
+
+!!!info "Further information"
+    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1].
+    
+[](../../infrastructure/compute/parameters.md#nodes-/-ppn)
+
+## Required Directives
+
+|   Directive   |  Default | Description |
+| ------------------|------------------|------------------|
+| -l nodes = <number nodes>  |  1 node   | Number of [compute nodes](../../infrastructure/compute/parameters.md#nodes-/-ppn) assigned to the job  |
+| -l ppn = <processors per node> | 1 processor per node | Number of [processors per node](../../infrastructure/compute/parameters.md#nodes-/-ppn) (ppn). **Note:** ppn must be less than or equal to the maximum available number of cores on the target compute node |
+
+
+
+
+
+
+
+                
             </td>
         </tr>
         <tr>
@@ -178,5 +177,6 @@ After your batch job completes, the above files will be renamed to the correspon
 
 ## Links
 
-1. [PBS/Torque](http://en.wikipedia.org/wiki/TORQUE)
-2. [A tutorial on running batch jobs using PBS](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)
+[^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
+
+[^2]: [A tutorial on running batch jobs using PBS](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)
