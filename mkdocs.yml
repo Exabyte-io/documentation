@@ -551,6 +551,8 @@ nav:
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
+            - Check Balance and Quota:                  cli/actions/balance-quota.md
+            - Transfer Files via SCP:                   cli/actions/transfer-files-scp.md
 
 
     - REST-API:
