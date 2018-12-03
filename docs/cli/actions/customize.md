@@ -19,6 +19,8 @@ There exist several hidden system configuration files, or "dot-files", within th
 
 ## Install different version of python
 
+It is sometimes necessary to use multiple versions or distributions of python. The routines below demonstrate how to do it. We can also recommend using the `pyenv` [^1] tool, as an alternative.
+
 ### python
 
 Below is a quick tutorial on how to install python and pip in the userspace. This is helpful when prototyping and trying packages not yet supported system-wide.  
@@ -98,3 +100,7 @@ Instead, the user should put his/her customizations to the shell environment int
 !!!warning "Feature not implemented yet"
     The above-mentioned customizations via dot files with ".ext" suffix are not supported on our platform yet.
 -->
+
+## Links
+
+[^1]: [PyEnv: Simple Python Version Management, Github Source](https://github.com/pyenv/pyenv#uninstalling-python-versions)

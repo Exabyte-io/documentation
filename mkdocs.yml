@@ -544,6 +544,7 @@ nav:
     - Command Line Interface:
         - Overview:                                     cli/overview.md
         - Environment:                                  cli/environment.md
+        - Accounting:                                   cli/accounting.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
             - Load / Unload Modules:                    cli/actions/modules.md
@@ -551,7 +552,8 @@ nav:
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
-            - Check Balance / Quota:                    cli/actions/balance-quotas.md
+            - Check Balance and Quota:                  cli/actions/balance-quota.md
+            - Transfer Files via SCP:                   cli/actions/transfer-files-scp.md
 
 
     - REST-API:
