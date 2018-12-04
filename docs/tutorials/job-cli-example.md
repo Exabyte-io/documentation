@@ -1,10 +1,14 @@
-<!-- by TB -->
+# Running Jobs via Command Line Interface
 
-This page explains how to run a command-line job for Quantum ESPRESSO. We will use a template input file and a bash script to sweep the lattice parameter space for a given structure.
+This page explains how to run a [job](../jobs/overview.md) for [Quantum ESPRESSO](../software/modeling/quantum-espresso.md) via the [Command Line Interface](../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../jobs-cli/overview.md) before proceeding further with the present Tutorial.
+ 
+Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure.
 
-# Input file
+## 1. Input File
 
-We start with preparing an input file. Below is example input file with pseudopotential paths set to use the default [gbrv](https://www.physics.rutgers.edu/gbrv/) set.
+We start with preparing an **input file** for [Quantum ESPRESSO](../software/modeling/quantum-espresso.md). Below is example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
+
+The material being considered in this particular example is a supercell of  "Strontium Zirconate" (SrZrO3), in its ground state equilibrium crystal structure with space group "Pnma" [^2]. The reader is referred to the official documentation for the "PWscf" module of Quantum ESPRESSO [^3] [^4] for a description of the keyword parameters contained here.
 
 ```fortran
 &control
@@ -79,9 +83,9 @@ K_POINTS (automatic)
 3 3 3 1 1 1
 ```
 
-Note that we are using a template variable in place of `celldm1`.
+Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the complete input script is put together, as explained in what follows.
 
-In order to use the above file we will need to copy the pseudopotential files into the current working directory:
+In order to use the above input file, we also need to copy the pseudopotential files into the current [working directory](../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
 
 ```bash
 cp /export/share/pseudo/si/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
@@ -89,20 +93,20 @@ cp /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf .
 cp /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf .
 ```
 
-# Job submission script
+## 2. Batch Script
 
-Second, we prepare a submission script:
+Secondly, we prepare the [Batch Script](../jobs-cli/batch-scripts/overview.md) necessary for [submitting jobs via CLI](../jobs-cli/overview.md).
 
 ```bash
 #!/bin/bash
 #PBS -A ${PROJECT}
 #PBS -M ${EMAIL}
-#PBS -N job_name
+#PBS -N SrZrO3
 #PBS -l nodes=1
-#PBS -l ppn=2
-#PBS -q D
+#PBS -l ppn=16
+#PBS -q SR
 #PBS -j oe
-#PBS -l walltime=01:00:00
+#PBS -l walltime=02:00:00
 #PBS -m abe
 
 module add espresso
@@ -110,11 +114,13 @@ cd $PBS_O_WORKDIR
 mpirun -np $PBS_NP pw.x -in pw.in > pw.out
 ```
 
-Just like above, we are using template variables again instead of the project name and email. Variables starting with `$PBS` are automatically set by the resource manager.
+Just like before, we are using template variables again instead of the [project](../jobs/projects.md) name and email. Variables starting with `$PBS` are automatically set by the [resource manager](../infrastructure/resource/overview.md), and are known as the ["PBS Directives"](../jobs-cli/batch-scripts/directives.md). 
 
-# Bash script
+The rest of the Batch Script contains [UNIX commands](../jobs-cli/batch-scripts/commands.md) necessary for [loading the required modules](../cli/actions/modules.md) and [running the job in parallel](../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job) via CLI.
 
-The logic for parameter sweep calculations can be summarized as below (in pseudo code):
+## 3. Bash Script
+
+The logic for parameter sweep calculations through shell scripting can be summarized as below (in pseudo code).
 
 ```bash
 #!/bin/sh
@@ -126,7 +132,9 @@ do
 done
 ```
 
-When combined together, all the above gives:
+## 4. Combined Input Script
+
+When combined together, all the above components give the following structure.
 
 ```bash
 #!/bin/sh
@@ -144,14 +152,7 @@ When combined together, all the above gives:
 # ---------------------------------------------------------- #
 
 # Email to receive info on job progress
-EMAIL="info@exabyte.io"
-
-# Account+Project to run this calculation from
-# Full name available from the project page in the web application
-# Pattern: `<accountName>-<projectName>`:
-#   - for organizations accountName = organization name, eg. "exabyte-io"
-#   - for individual users accountName = user name, eg. "steve"
-ACCOUNT="exabyte-io-exabyte-io"
+EMAIL="user@exabyte.io"
 
 # ---------------------------------------------------------- #
 #  Quantum ESPRESSO pseudopotentials                         #
@@ -170,10 +171,10 @@ do
 &control
     calculation = 'scf',
     restart_mode = 'from_scratch',
-    prefix = 'STO_exc1'
+    prefix = 'srzro'
     tstress =.true.
     tprnfor=.true.
-    outdir = './'
+    outdir = './_outdir'
     wfcdir = './'
     prefix = '${celldm1}'
     pseudo_dir = './_pseudo'
@@ -184,7 +185,7 @@ do
     nat = 40
     ntyp = 3
     ecutwfc = 40
-    ecutrho = 200
+    ecutrho = 300
     tot_charge = 0
 /
 &electrons
@@ -237,7 +238,7 @@ O      0.500000000         0.750000000         0.750000000
 O      0.750000000         0.500000000         0.750000000
 O      0.750000000         0.750000000         0.500000000
 K_POINTS (automatic)
-3 3 3 1 1 1
+3 3 3 0 0 0
 EOF
 
 # ---------------------------------------------------------- #
@@ -245,35 +246,40 @@ EOF
 # ---------------------------------------------------------- #
     cat > run_QE_${celldm1}.pbs <<-EOF
 #!/bin/bash
-#PBS -A ${PROJECT}
 #PBS -M ${EMAIL}
-#PBS -N job_name
+#PBS -N SrZrO3
 #PBS -l nodes=1
-#PBS -l ppn=2
-#PBS -q D
+#PBS -l ppn=16
+#PBS -q OR
 #PBS -j oe
-#PBS -l walltime=01:00:00
+#PBS -l walltime=02:00:00
 #PBS -m abe
 
 module add espresso
 cd \$PBS_O_WORKDIR
-mpirun -np \$PBS_NP pw.x -in srzro3_${celldm1}.in > srzro3_${celldm1}.out
+mpirun -np \$PBS_NP pw.x -in srzro3_${celldm1}.in | tee srzro3_${celldm1}.out
 EOF
     qsub run_QE_${celldm1}.pbs
 done
 
 ```
 
-We can put the content of the above file into a bash script (`run.sh`) and invoke it to submit the jobs in a set (`sh run.sh`).
+We can put the content of the above file into a bash script called `run.sh` for example, and then make the script executable with `chmod a+x run.sh` command.
+ 
+We can finally [submit the jobs](../jobs-cli/actions/submit.md) as a set to the [Resource Manager](../infrastructure/resource/overview.md) by invoking the script via the `./run.sh` command.
 
-# View submitted jobs
+## 5. View Submitted Jobs
 
-View currently submitted jobs with `qstat` command. The output is simiiar to:
+The user can view the currently submitted jobs and their statuses in CLI with the `qstat` [command](../jobs-cli/actions/check-status.md). 
 
-```
-[steve@bohr.exabyte.io:~]$ qstat
-JOBID              USERNAME    QUEUE    JOBNAME    STATE    MEMORY    USEDTIME    WALLTIME      NODES    CPU
------------------  ----------  -------  ---------  -------  --------  ----------  ----------  -------  -----
-11665.cluster-001  steve       D        my_job     C        0kb       00:00:10    00:10:00          1      1
-11666.cluster-001  steve       OR       my_job     R        1235kb    00:00:10    00:10:00          1      1
-```
+The reader is referred to [this other Tutorial](view-results.md) for an explanation on how to inspect the results of the above simulation under the [Web Interface](../ui/overview.md) of our platform.
+
+## Links
+
+[^1]: [GBRV pseudopotential library, Official Website](https://www.physics.rutgers.edu/gbrv/)
+
+[^2]: [Strontium Zirconate, Materials Project Website](https://materialsproject.org/materials/mp-4387/)
+
+[^3]: [PWscf User’s Guide, Document](https://www.quantum-espresso.org/Doc/pw_user_guide.pdf)
+
+[^4]: [PWscf Input File Description, Website](https://www.quantum-espresso.org/Doc/INPUT_PW.html)

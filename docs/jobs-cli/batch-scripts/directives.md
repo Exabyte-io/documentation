@@ -39,7 +39,7 @@ The batch system defines many **environment variables**, which are available for
     The user is advised not to redefine the value of any of these variables.
     
 !!!info "Further information and documentation"
-    Further explanation of these directives can be found under Ref. [^1].
+    Further explanation of these Environment Variables can be found under Ref. [^1].
 
 | Variable Name   | Meaning |
 | --------------- | -------------|
