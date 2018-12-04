@@ -417,6 +417,7 @@ nav:
             - Check status:                             jobs-cli/actions/check-status.md
             # Terminate jobs with qdel
             - Terminate:                                jobs-cli/actions/terminate.md
+            - View Jobs List:                           jobs-cli/actions/view-job-list.md
 
 
     - Properties:

@@ -6,7 +6,7 @@ As introduced [here](general-structure.md#3.-directives), the keywords described
     We recommend the user to first consult the accounting aspects of such directives documented [here](../accounting.md), before proceeding with job submission.
 
 !!!info "Further information and documentation"
-    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1]. A tutorial on running batch jobs using PBS can also be found under Ref. [^2], for reference purposes.
+    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1].
 
 ## Important Directives
 
@@ -17,14 +17,14 @@ As introduced [here](general-structure.md#3.-directives), the keywords described
 | -l walltime = <DD:HH:MM:SS> |  00:00:05:00  |  The maximum authorized [wallclock time](../../infrastructure/compute/parameters.md#time-limit) for the job, after which the job will be automatically terminated |
 | -N <Name of job script> | No default  |  The name of the job; up to 15 printable, non-whitespace characters |
 | -q <queue code>  |  batch  |  Name of submit [queue](../../infrastructure/resource/queues.md), for example "D" for Debug or "OR16" for Ordinary, Regular, 16 cores per each compute node  |
+| -R  <y or n>     |      y           | Register Job in the Web Interface ("y" for yes or "n" for no). This option is further explained [here](../accounting.md#register-jobs-in-web-interface) |
+| -A <Project Name> | Default Project |  [Charge job](../../accounts/payments-charges.md) to the selected [project](../../jobs/projects.md) |
 
 ## Other Useful Directives
 
 |   Directive   |  Default | Description |
 | ------------------|------------------|------------------|
 | -r  <y or n>     |      y           | Make the job re-runnable, in the sense that it can be restarted automatically. Select either "y" for yes or "n" for no. This is particularly useful when running Jobs under the [Saving queue category](../../infrastructure/resource/category.md), where the job can be interrupted anytime due to limited resources |     
-| -R  <y or n>     |      y           | Register Job in the Web Interface ("y" for yes or "n" for no). This option is further explained [here](../accounting.md#register-jobs-in-web-interface) |
-| -A <Project Name> | Default Project |  [Charge job](../../accounts/payments-charges.md) to the selected [project](../../jobs/projects.md) |
 | -e <filename>     |   &lt;job_name&gt;.e&lt;job_id&gt; | Write the standard error message(s) (stderr) encountered during job execution to the selected file name |
 | -o <filename>     |  &lt;job_name&gt;.o&lt;job_id&gt; | Write the standard output of the simulation (stdout) to the selected file name |
 | -j <oe or eo>      | Do not merge  | Merge (join) stdout and stderr. Select "oe" for merging to output file, or "eo" for merging to error file instead | 
@@ -37,6 +37,9 @@ The batch system defines many **environment variables**, which are available for
  
 !!!warning "Variables modification not recommended" 
     The user is advised not to redefine the value of any of these variables.
+    
+!!!info "Further information and documentation"
+    Further explanation of these directives can be found under Ref. [^1].
 
 | Variable Name   | Meaning |
 | --------------- | -------------|
@@ -63,5 +66,3 @@ After the batch job completes, the above files will be renamed to the correspond
 ## Links
 
 [^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
-
-[^2]: [A tutorial on running batch jobs using PBS, Website](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)

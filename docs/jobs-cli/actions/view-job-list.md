@@ -1,4 +1,4 @@
-# Detailed List of Jobs
+# Detailed List of Jobs and Charges
 
 To get detailed information about all the [jobs](../overview.md) submitted to date by the user on the [Command Line Interface](../../cli/overview.md) of our system, enter the `lsjob` command, as displayed in the example below. This information includes the relevant [compute parameters](../../infrastructure/compute/parameters.md) used as part of the job execution.
 

@@ -23,3 +23,11 @@ If the user does not want the job to be shown on the Web Interface, he/she shoul
 ```bash
 #PBS -R n
 ```
+
+## Check Account Balance and Quota
+
+The [balance](../accounts/balance.md) and [storage quota](../accounts/quota.md) for the [Account](../accounts/overview.md) under consideration can be inspected via CLI by following the instructions contained [in this page](../cli/actions/balance-quota.md).
+
+## View List of Jobs and Charges
+
+The complete list of jobs executed by the user to date via CLI can be retrieved [as follows](actions/view-job-list.md).
