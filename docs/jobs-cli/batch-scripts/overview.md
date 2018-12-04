@@ -12,13 +12,25 @@ Interactive parallel jobs are not supported by design. Users are encouraged to p
 
 Our batch system is based on the **PBS model** [^1], implemented with the **Moab scheduler** [^2] and **Torque resource manager** [^3]. The actual execution of the parallel job, however, is handled by a special command, called a **job launcher**. In a generic Linux environment, this utility is often labelled **"mpirun"**.
 
+## General Structure
+
+The general layout structure of Batch Scripts is the object of [this discussion](general-structure.md).
+
+## Resource Manager Directives
+
+[This page](directives.md) contains the list of the most important directives for specifying the allocation of [computing resources](../../infrastructure/resource/overview.md), necessary for the execution of the job under consideration.
+
+## UNIX Commands
+
+Typically, a batch script needs to include a series of UNIX commands for performing such actions as navigating to the working directory of the job being created, loading the required [modules](../../cli/actions/modules.md), and defining the parallel execution of the job under multiple computing cores. The most frequently encountered commands in the context of our batch scripts are narrated [here](commands.md).
+
+## Working Directory
+
+The main "working" directory, which is important in the context of defining Batch Scripts, storing simulation files and submitting jobs via CLI, is described [in this page](directories.md).
+
 ## Examples
 
 We provide some examples on how to enter the relevant information about jobs in batch scripts [here](sample-scripts.md).
-
-## Specify Projects
-
-A special note on how to specify the [project name](../../jobs/projects.md) in batch scripts is provided [here](../accounting.md).
 
 ## Links
 
