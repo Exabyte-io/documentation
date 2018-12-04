@@ -16,7 +16,7 @@ Both forms of environment customization are explained under the same page, [acce
 
 ## Accounting
 
-We introduce the aspects of [Account management](../accounts/overview.md) relevant in the context of CLI [here](accounting.md).
+We introduce the aspects of accounting and [Account management](../accounts/overview.md) relevant in the context of CLI [here](accounting.md).
 
 ## Actions
 
