@@ -22,7 +22,7 @@ We consider 4 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azur
 | AWS-NHT-C5    | c5.18xlarge   | 36    | Intel Xeon Platinum 8124M3 | 3           | 144         | No       |
 | AZ-IB-H       | Standard_H16r | 16    | Intel Xeon E5-2667 v3      | 3.2         | 112         | Yes      |
 | OL-NHT        | BM.HPC2.36    | 36    | Intel Xeon Gold 6154       | 3           | 384         | Yes      |
-| GCE-NHT-H[^9] | n1-highcpu-64 | 32    | Intel Xeon E5 v3 (Haswell) | 2.6         | 57.6        | No       |
+| GCE-NHT-H[^9] | n1-highcpu-64 | 32    | Intel Xeon E5 v3 (Haswell) | 2.3         | 57.6        | No       |
 
 ### Definitions
 
