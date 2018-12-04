@@ -1,182 +1,67 @@
-# Directives
+# Resource Manager Directives
 
-As introduced [here](general-structure.md#3.-directives), the following keywords may be specified as **PBS directives** (preceded by `#PBS`) embedded in a [batch script](overview.md). These directives are particularly important for allocating the necessary [computational resources and parameters](../../infrastructure/compute/parameters.md) to the given [simulation Job](../../jobs/overview.md), for its [submission to the CLI](../overview.md).
+As introduced [here](general-structure.md#3.-directives), the keywords described in the present page may be specified as **PBS Resource Manager Directives** (preceded by the `#PBS` prefix), to be embedded in a [batch script](overview.md). These directives are particularly important for allocating the necessary [computational resources and parameters](../../infrastructure/compute/parameters.md) to the given [simulation Job](../../jobs/overview.md), for its [submission to the CLI](../overview.md).
 
-!!!warning "Accounting information"
+!!!note "Accounting information"
     We recommend the user to first consult the accounting aspects of such directives documented [here](../accounting.md), before proceeding with job submission.
 
-!!!info "Further information"
-    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1].
-    
-[](../../infrastructure/compute/parameters.md#nodes-/-ppn)
+!!!info "Further information and documentation"
+    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1]. A tutorial on running batch jobs using PBS can also be found under Ref. [^2], for reference purposes.
 
-## Required Directives
+## Important Directives
 
 |   Directive   |  Default | Description |
 | ------------------|------------------|------------------|
 | -l nodes = <number nodes>  |  1 node   | Number of [compute nodes](../../infrastructure/compute/parameters.md#nodes-/-ppn) assigned to the job  |
 | -l ppn = <processors per node> | 1 processor per node | Number of [processors per node](../../infrastructure/compute/parameters.md#nodes-/-ppn) (ppn). **Note:** ppn must be less than or equal to the maximum available number of cores on the target compute node |
+| -l walltime = <DD:HH:MM:SS> |  00:00:05:00  |  The maximum authorized [wallclock time](../../infrastructure/compute/parameters.md#time-limit) for the job, after which the job will be automatically terminated |
+| -N <Name of job script> | No default  |  The name of the job; up to 15 printable, non-whitespace characters |
+| -q <queue code>  |  batch  |  Name of submit [queue](../../infrastructure/resource/queues.md), for example "D" for Debug or "OR16" for Ordinary, Regular, 16 cores per each compute node  |
 
+## Other Useful Directives
 
+|   Directive   |  Default | Description |
+| ------------------|------------------|------------------|
+| -r  <y or n>     |      y           | Make the job re-runnable, in the sense that it can be restarted automatically. Select either "y" for yes or "n" for no. This is particularly useful when running Jobs under the [Saving queue category](../../infrastructure/resource/category.md), where the job can be interrupted anytime due to limited resources |     
+| -R  <y or n>     |      y           | Register Job in the Web Interface ("y" for yes or "n" for no). This option is further explained [here](../accounting.md#register-jobs-in-web-interface) |
+| -A <Project Name> | Default Project |  [Charge job](../../accounts/payments-charges.md) to the selected [project](../../jobs/projects.md) |
+| -e <filename>     |   &lt;job_name&gt;.e&lt;job_id&gt; | Write the standard error message(s) (stderr) encountered during job execution to the selected file name |
+| -o <filename>     |  &lt;job_name&gt;.o&lt;job_id&gt; | Write the standard output of the simulation (stdout) to the selected file name |
+| -j <oe or eo>      | Do not merge  | Merge (join) stdout and stderr. Select "oe" for merging to output file, or "eo" for merging to error file instead | 
+| -m <a or b or e or n> |  a  | Email notification: a = send mail if job aborted by system; b = send mail when job begins; e = send mail when job ends; n = never send email. All the options may be combined together |
+| -M <email_address> |  None  | User email address to which the above-mentioned notifications should be sent |
 
+## Environment Variables
 
+The batch system defines many **environment variables**, which are available for use in batch scripts. The following tables list some of the more useful variables.
+ 
+!!!warning "Variables modification not recommended" 
+    The user is advised not to redefine the value of any of these variables.
 
-
-
-                
-            </td>
-        </tr>
-        <tr>
-            <td>-l partition=O</td>
-            <td>O</td>
-            <td>Compute resorces allocated to the job, could be "O" for regular On-demand resources and "S" for cost-saving Spot-based resources</td>
-        </tr>
-        <tr>
-            <td>-l walltime=DD:HH:MM:SS</td>
-            <td>00:00:05:00</td>
-            <td>Maximum wallclock time for job</td>
-        </tr>
-        <tr>
-            <td>-N job_name</td>
-            <td>Name of job script</td>
-            <td>Name of job; up to 15 printable, non-whitespace characters</td>
-        </tr>
-        <tr>
-            <th style="text-align: center; padding:10px;" colspan="3">Useful Torque Options/Directives</th>
-        </tr>
-        <tr>
-            <th style="text-align: center;">Option</th>
-            <th style="text-align: center;">Default</th>
-            <th style="text-align: center;">Description</th>
-        </tr>
-        <tr>
-            <td>-q queue_name</td>
-            <td>batch</td>
-            <td>Name of submit queue</td>
-        </tr>
-        <tr>
-            <td>-A repo</td>
-            <td>Default repo</td>
-            <td>Charge job to repo</td>
-        </tr>
-        <tr>
-            <td>-e filename</td>
-            <td>&lt;job_name&gt;.e&lt;job_id&gt;</td>
-            <td>Write stderr to filename</td>
-        </tr>
-        <tr>
-            <td>-o filename</td>
-            <td>&lt;job_name&gt;.o&lt;job_id&gt;</td>
-            <td>Write stdout to filename</td>
-        </tr>
-        <tr>
-            <td>-j [oe | eo]</td>
-            <td>Do not merge</td>
-            <td>Merge (join) stdout and stderr. If oe, merge as output file; ie eo, merge as error file</td>
-        </tr>
-        <tr>
-            <td>-m [a | b | e | n]</td>
-            <td>a</td>
-            <td>Email notification: a=send mail if job aborted by system b=send mail when job begins e=send mail when job ends n=never send email Options a, b, e may be combined</td>
-        </tr>
-        <tr>
-            <td>-M email_address</td>
-            <td>None</td>
-            <td>User email address</td>
-        </tr>
-        <!--<tr>
-            <td>-S shell</td>
-            <td>Login shell</td>
-            <td>Specify shell to interpret batch script</td>
-        </tr>
-        <tr>
-            <td>-l gres=resource[%resource]</td>
-            <td>Run whether resource is available or not</td>
-            <td>Resource can be gscratch, project, or projectb. Specify if a batch job uses /resource. When set, a job will not start during scheduled /resource file system maintenance.</td>
-        </tr>
-        <tr>
-            <td>-V</td>
-            <td>Do not export</td>
-            <td>Export current environment variables into the batch job environment. NOTE: this option is not recommended by NERSC; it can make it difficult to reproduce results (including diagnosing job failures).</td>
-        </tr>-->
-    </tbody>
-</table>
-<hr>
-
-## Torque Environment Variables
-
-The batch system defines many environment variables, which are available for use in batch scripts. The following tables list some of the more useful variables. Users must not redefine the value of any of these variables!
-
-<hr>
-<table border="0">
-    <tbody>
-        <tr style="padding:10px;">
-            <td><strong>Variable Name</strong></td>
-            <td><strong>Meaning</strong></td>
-        </tr>
-        <tr>
-            <td>PBS_O_LOGNAME</td>
-            <td>Login name of user who executed qsub.</td>
-        </tr>
-        <tr>
-            <td>PBS_O_HOME</td>
-            <td>Home directory of submitting user.</td>
-        </tr>
-        <tr>
-            <td>PBS_O_WORKDIR</td>
-            <td>Directory in which qsub command was executed. Note that batch jobs begin execution in $PBS_O_HOME; many batch scripts execute "cd $PBS_O_WORKDIR" as first executable statement.</td>
-        </tr>
-        <tr>
-            <td>PBS_O_HOST</td>
-            <td>Hostname of system on which qsub was executed. This is typically a Carver login node.</td>
-        </tr>
-        <tr>
-            <td>PBS_JOBID</td>
-            <td>Unique identifier for this job; important for tracking job status.</td>
-        </tr>
-        <tr>
-            <td>PBS_ENVIRONMENT</td>
-            <td>Set to "PBS_BATCH" for scripts submitted as batch jobs; "PBS_INTERACTIVE" for interactive batch jobs ("qsub -I ...").</td>
-        </tr>
-        <tr>
-            <td>PBS_O_QUEUE</td>
-            <td>Name of submit queue.</td>
-        </tr>
-        <tr>
-            <td>PBS_QUEUE</td>
-            <td>Name of execution queue.</td>
-        </tr>
-        <tr>
-            <td>PBS_O_JOBNAME</td>
-            <td>Name of this job.</td>
-        </tr>
-        <tr>
-            <td>PBS_NODEFILE</td>
-            <td>Name of file conta
-            ining list of nodes assigned to this job.</td>
-        </tr>
-        <tr>
-            <td>PBS_NUM_NODES</td>
-            <td>Number of nodes assigned to this job.</td>
-        </tr>
-        <tr>
-            <td>PBS_NUM_PPN</td>
-            <td>Value of "ppn" (processes per node) for this job.</td>
-        </tr>
-    </tbody>
-</table>
-<hr>
+| Variable Name   | Meaning |
+| --------------- | -------------|
+| PBS_O_LOGNAME   | Login name of user who [submitted](../actions/submit.md) the job |
+| PBS_O_HOME      | Home directory of submitting user    |
+| PBS_O_WORKDIR   | Working directory in which the job files were defined and then [submitted](../actions/submit.md) |
+| PBS_JOBID       | Unique identifier for this job; important for tracking [job status](../actions/check-status.md) |
+| PBS_O_QUEUE     | Name of submit [queue](../../infrastructure/resource/queues.md) |
+| PBS_QUEUE       | Name of execution [queue](../../infrastructure/resource/queues.md)  |
+| PBS_O_JOBNAME   | Name of the present job |
+| PBS_NODEFILE    | Name of file containing list of [nodes](../../infrastructure/compute/parameters.md#nodes-/-ppn) assigned to this job |
+| PBS_NUM_NODES   | Number of [nodes](../../infrastructure/compute/parameters.md#nodes-/-ppn) assigned to this job  |
+| PBS_NUM_PPN     | Value of ["ppn" (processes per node)](../../infrastructure/compute/parameters.md#nodes-/-ppn) for this job |
+| PBS_NP          | Total number of processors, that is the multiplication of the above-mentioned PBS_NUM_NODES with PBS_NUM_PPN |
 
 ## Standard Output and Error
 
-While your job is running, standard output (stdout) and standard error (stderr) are written to temporary "spool" files (for example: 123456-cluster.OU and 123456-cluster.ER) in the submit directory. If you merge stderr/stdout via the "#PBS -j eo" or "#PBS -j oe" option, then only one such spool file will appear.
+While your job is running, the **standard output (stdout)** and **standard error (stderr)** of the simulation are written to temporary **"spool" files** (for example: 123456-cluster.OU and 123456-cluster.ER) in the submit directory. If the user decides to merge stderr/stdout via the aforementioned `#PBS -j eo` or `#PBS -j oe` directives, then only one such spool file will appear.
 
-These files will be updated in real-time while the job is running, allowing you to use them for job monitoring. It is important that you do not modify, remove or rename these spool files while the job is still running!
+These files will be updated in real-time while the job is running, allowing the user to make use of them for job monitoring. It is important that these spool files are not modified, removed or renamed while the job is still running.
 
-After your batch job completes, the above files will be renamed to the corresponding stdout/stderr files (for example: my_job.o123456 and my_job .e123456).
+After the batch job completes, the above files will be renamed to the corresponding stdout/stderr files (for example: my_job.o123456 and my_job .e123456).
 
 ## Links
 
 [^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
 
-[^2]: [A tutorial on running batch jobs using PBS](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)
+[^2]: [A tutorial on running batch jobs using PBS, Website](http://www.nersc.gov/users/computational-systems/carver/running-jobs/batch-jobs/)

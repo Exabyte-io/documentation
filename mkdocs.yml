@@ -401,10 +401,14 @@ nav:
 
     - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
+        - Accounting:                                   jobs-cli/accounting.md
         - Batch Scripts:
             - Overview:                                 jobs-cli/batch-scripts/overview.md
+            - General Structure:                        jobs-cli/batch-scripts/general-structure.md
+            - Directives:                               jobs-cli/batch-scripts/directives.md
+            - Commands:                                 jobs-cli/batch-scripts/commands.md
+            - Working Directory:                        jobs-cli/batch-scripts/directories.md
             - Sample Scripts:                           jobs-cli/batch-scripts/sample-scripts.md
-            - Specify Projects:                         jobs-cli/batch-scripts/specify-projects.md
         - Actions:
             - Create:                                   jobs-cli/actions/create.md
             # How to submit a job with qsub

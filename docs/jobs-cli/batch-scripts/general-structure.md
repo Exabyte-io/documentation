@@ -4,6 +4,8 @@ The [Batch Scripts](overview.md) used for [job submission via CLI](../overview.m
 
 ![Batch Script General Structure](/images/jobscript_structure.png "Batch Script General Structure")
 
+A common convention is to append the suffix ".pbs" or ".job" or ".sh" to the filename of batch scripts.
+
 ## 1. Shebang
 
 The **shebang** [^1] is a short character sequence at the beginning of the Batch Script. It uses the "#!" syntax to indicate an interpreter for execution of the script under UNIX / Linux operating systems. Typically, the shebang of our Batch Scripts consists in either of the following options for selecting the corresponding [environment](../../cli/environment.md#shell-type) of the shell interpreter.

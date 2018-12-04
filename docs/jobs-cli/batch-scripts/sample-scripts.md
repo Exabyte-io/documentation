@@ -1,34 +1,16 @@
 # Sample Batch Scripts
 
-Sample batch scripts for the available [queue types](../infrastructure/resource/category.md) are given below. A common convention is to append the suffix ".pbs" or ".job" or ".sh" to batch scripts.
+Examples of batch scripts for the [queue types](../infrastructure/resource/category.md) available on our platform are given throughout the present page. The reader is referred to the documentation pages explaining the [Resource Manager Directives](directives.md) and [UNIX Commands](commands.md) respectively for an explanation of the batch script contents presented herein.
 
-!!! tip "Template job scripts"
-    Inside the [Login Home directory](../infrastructure/login/directories.md) there is a link to "job-script-template" directory that contains template job scripts for different applications. The user can copy template scripts into the job directory, and modify it accordingly.
-
+!!!tip "Template job scripts"
+    Inside the [Login Home directory](../infrastructure/login/directories.md) there is a link to the **"job-script-template"** directory that contains template job scripts examples for different [applications](../../software/applications.md) offered on our platform. The user can copy any template script contained there into the corresponding job directory, and modify it accordingly based on the job's requirements.
 
 ## Debug queue (D)
 
-This example explains the keywords, and requests 1 node with 2 processors (cores) for 10 minutes.
+This example requests 1 node with 2 processors (cores) for 10 minutes.
 
 ```bash
 #!/bin/bash
-
-# ---------------------------------------------------------- #
-#                                                            #
-#  Example job submission script for Exabyte.io platform     #
-#                                                            #
-#  Shows resource manager directives for:                    #
-#                                                            #
-#    1. the name of the job                (-N)              #
-#    2. the number of nodes to be used     (-l nodes=)       #
-#    3. the number of processors per node  (-l ppn=)         #
-#    4. queue                              (-q D) or OR, OF  #
-#    5. merging standard output and error  (-j oe)           #
-#    6. email about job abort, begin, end  (-m abe)          #
-#    7. email address to use               (-M)              #
-#    8. the walltime in dd:hh:mm:ss format (-l walltime=)    #
-#                                                            #
-# ---------------------------------------------------------- #
 
 #PBS -N job_name
 #PBS -l nodes=1
