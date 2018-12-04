@@ -539,6 +539,7 @@ nav:
             - Open Sidebar:                             remote-connection/actions/sidebar.md
             - Upload:                                   remote-connection/actions/upload.md
             - Download:                                 remote-connection/actions/download.md
+            - Transfer Files via SCP:                   remote-connection/actions/transfer-files-scp.md
             - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
             - Access data in Web Platfrom:              remote-connection/actions/access-data.md
         - Actions > Remote Desktop:
@@ -558,8 +559,6 @@ nav:
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
-            - Transfer Files via SCP:                   cli/actions/transfer-files-scp.md
-
 
     - REST-API:
       - Overview:                                    rest-api/overview.md

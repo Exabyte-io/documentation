@@ -73,7 +73,7 @@ When using WinSCP, one would need to load the private key through its interface 
     
 ### Unix Instructions
 
-The instructions for Unix-based operating systems can be found [in a separate page](../cli/actions/transfer-files-scp.md).
+The instructions for Unix-based operating systems can be found [in a separate page](actions/transfer-files-scp.md).
 
 ## Links to Clients Documentation
 

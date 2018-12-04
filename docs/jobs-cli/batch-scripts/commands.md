@@ -23,6 +23,9 @@ Most jobs are executed **in parallel**, meaning that they are distributed over m
 
 Two such parallel libraries are offered on our platform, the proprietary MPI library by Intel [^2], and the open-source "OpenMPI" library [^3]. The Intel MPI library can be loaded by entering `module load mpi` since it is already the default MPI choice.
 
+!!!note "Automatic loading of Parallel Libraries"
+    Many [modeling applications](../../software/applications.md) implemented on our platform automatically load the Intel MPI library as one of their **dependencies** when they are themselves loaded. The parallel library does not therefore need to be loaded separately from the main application.
+
 ## 3. Load Other Modules 
 
 Other available [modules](../../cli/actions/modules.md) required as part of the job computation, besides the aforementioned parallel library, can be [loaded](../../cli/actions/modules.md#load-desired-module) within the Batch Script via the same `module load <module name>` command. A convenient approach for loading multiple modules inside the same job, instead of repeating the load command every time, would consist in the following sequence.
@@ -34,7 +37,7 @@ module load $MODULES
 
 ## 4. Launch Parallel Job
 
-The final launching of the parallel job, following the definition of all required module dependencies, is performed via the `mpirun` command implemented by the chosen Parallel MPI Library. This command consists of the following general structure.
+The final launching of the parallel job, following the definition of all required module dependencies, is performed via the `mpirun` command implemented by the chosen Parallel MPI Library mentioned previously. This command consists of the following general structure.
 
 ```bash
 mpirun -np <no_proc> name_executable`
