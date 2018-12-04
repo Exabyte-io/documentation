@@ -4,4 +4,4 @@ To each job defined via the [Command Line Interface](../../cli/overview.md) (CLI
 
 ## Required Location
 
-A Job can be [submitted](../actions/submit.md) to a [cluster](../infrastructure/clusters/overview.md) for its execution only if its corresponding working directory is located somewhere within the [cluster's home directory](../infrastructure/clusters/directories.md), or under any of its sub-directories. 
+A Job can be [submitted](../actions/submit.md) to a [cluster](../../infrastructure/clusters/overview.md) for its execution only if its corresponding working directory is located somewhere within the [cluster's home directory](../../infrastructure/clusters/directories.md), or under any of its sub-directories. 

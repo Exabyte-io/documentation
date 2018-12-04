@@ -1,9 +1,9 @@
 # Sample Batch Scripts
 
-Examples of batch scripts for the [queue types](../infrastructure/resource/category.md) available on our platform are given throughout the present page. The reader is referred to the documentation pages explaining the [Resource Manager Directives](directives.md) and [UNIX Commands](commands.md) respectively for an explanation of the batch script contents presented herein.
+Examples of batch scripts for the [queue types](../../infrastructure/resource/category.md) available on our platform are given throughout the present page. The reader is referred to the documentation pages explaining the [Resource Manager Directives](directives.md) and [UNIX Commands](commands.md) respectively for an explanation of the batch script contents presented herein.
 
 !!!tip "Template job scripts"
-    Inside the [Login Home directory](../infrastructure/login/directories.md) there is a link to the **"job-script-template"** directory that contains template job scripts examples for different [applications](../../software/applications.md) offered on our platform. The user can copy any template script contained there into the corresponding job directory, and modify it accordingly based on the job's requirements.
+    Inside the [Login Home directory](../../infrastructure/login/directories.md) there is a link to the **"job-script-template"** directory that contains template job scripts examples for different [applications](../../software/applications.md) offered on our platform. The user can copy any template script contained there into the corresponding job directory, and modify it accordingly based on the job's requirements.
 
 ## Debug queue (D)
 
