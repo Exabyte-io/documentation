@@ -33,7 +33,7 @@ As introduced [here](general-structure.md#3.-directives), the keywords described
 
 ## Environment Variables
 
-The batch system defines many **environment variables**, which are available for use in batch scripts. The following tables list some of the more useful variables.
+The batch system defines many **environment variables**, which are available for use within batch scripts via the `$` reference prefix. The following tables list some of the more useful variables.
  
 !!!warning "Variables modification not recommended" 
     The user is advised not to redefine the value of any of these variables.

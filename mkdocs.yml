@@ -568,6 +568,15 @@ nav:
       - Exabyte API client:                          rest-api/api-client.md
       - Exabyte API examples:                        rest-api/api-examples.md
 
+
+
+    - Tutorials:
+        - Jobs via Command Line:
+            - Overview:                              tutorials/jobs-cli/overview.md
+            - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
+            - View Results:                          tutorials/jobs-cli/view-results.md
+
+
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable
 #    - Tutorials:

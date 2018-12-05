@@ -14,6 +14,10 @@ Each user has a [default project](../jobs/projects.md#default-project) that jobs
 
 For the case of [Organizational Accounts](../collaboration/organizations/overview.md), if no project is specified within the batch script, then the [personal account](../collaboration/organizations/roles.md#organizations-vs.-personal-accounts) of the user will be charged upon under its default project.
 
+## Registration of Jobs in Web Interface
+
+We explain how jobs submitted via CLI can be transmitted and registered to the [Web Interface](../ui/overview.md) of our platform in a [dedicated Tutorial](../tutorials/jobs-cli/view-results.md).
+
 ## Check Account Balance and Quota
 
 The [balance](../accounts/balance.md) and [storage quota](../accounts/quota.md) for the [Account](../accounts/overview.md) under consideration can be inspected via CLI by following the instructions contained [in this page](../cli/actions/balance-quota.md).
