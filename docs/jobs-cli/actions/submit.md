@@ -6,16 +6,16 @@ Job submission is performed with the `qsub` command, as demonstrated in the foll
 
 ```
 [steve@bohr.exabyte.io:~]$ qsub my_job.pbs
-11665.cluster-001
+814.master-production-20160630-cluster-007.exabyte.io
 ```
 
-The complete manual page for this `qsub` listing all the possible option flags command can be reviewed in page 373 of Ref. [^1].
+The complete manual page for this `qsub` command, listing its possible option flags, can be reviewed in page 373 of Ref. [^1].
 
 ## Jobs ID
 
-Just after it is entered, the `qsub` command displays the **"Job ID"**, which includes the alias of the cluster where the job has been submitted (11665.cluster-001 in the above example).
+Just after it is entered, the `qsub` command returns the **"Job ID"**, which includes the alias of the cluster where the job has been submitted (for example, `cluster-007` within the `814.master-production-20160630-cluster-007.exabyte.io` job ID in the above example).
  
-It is important to remember this "job id" for job tracking and any problem resolution, as well as in the eventuality of [job termination](terminate.md) by the user.
+It is important to remember this "job id" for job tracking and for any problem resolution, as well as in the eventuality of [job termination](terminate.md) by the user.
 
 ## Links
 

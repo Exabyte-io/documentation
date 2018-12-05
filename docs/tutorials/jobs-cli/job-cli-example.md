@@ -6,7 +6,7 @@ Here, we will use a template input file and a bash script to sweep the lattice p
 
 ## 1. Input File
 
-We start with preparing an **input file** for [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md). Below is example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
+We start with preparing an **input file** for [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md). Below is an example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
 
 The material being considered in this particular example is a supercell of  "Strontium Zirconate" (SrZrO3), in its ground state equilibrium crystal structure with space group "Pnma" [^2]. The reader is referred to the official documentation for the "PWscf" module of Quantum ESPRESSO [^3] [^4] for a description of the keyword parameters contained here.
 
@@ -86,7 +86,7 @@ K_POINTS (automatic)
 
 Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the complete input script is put together, as explained in what follows.
 
-In order to use the above input file, we also need to copy the pseudopotential files into the current [working directory](../../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
+We also need to copy the pseudopotential files into the current [working directory](../../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
 
 ```bash
 cp /export/share/pseudo/si/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
@@ -265,7 +265,7 @@ done
 
 ```
 
-The reader should note that in the `mpirun` [command for launching the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job), towards the bottom of the above input script example, we make use of the `tee` UNIX command to redirect the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting the output also to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md).
+The reader should note that within the `mpirun` [command for launching the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job), present towards the bottom of the above input script example, we make use of the `tee` UNIX command. This redirects the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md), as demonstrated in [another Tutorial](view-results.md).
 
 We can put the content of the above file into a bash script called `run.sh` for example, and then make the script executable with `chmod a+x run.sh` command.
  
@@ -284,7 +284,7 @@ We summarize the above-mentioned steps in the following animation.
 
 Here, we begin by entering the [Command Line Interface](../../cli/overview.md) via the [Web Terminal](../../remote-connection/web-terminal.md) connection method. We then navigate to the directory containing the `run.sh` input script under the [Home Folder](../../infrastructure/clusters/directories.md) of `cluster-007`, where we submit it for execution. 
 
-We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-status.md) on the selected cluster number "007" by entering the `watch qstat` command, for an automatically-refreshing version of `qstat`. Since only one lattice parameter was tested in this example animation for simplicity, only one job has been launched and is returned by `qstat` in this case (scanning over all three lattice parameters as in the original input script shown above would have correspondingly launched three distinct jobs).
+We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-status.md) on the selected cluster number "007" by entering the `watch qstat` command, for an automatically-refreshing version of `qstat`. Since only one lattice parameter was tested in this example animation for simplicity, only one job has been launched and is returned by `qstat` in this case (scanning over all three lattice parameters, as in the original input script shown above, would have correspondingly launched three distinct jobs).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MBpd-yKUCM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

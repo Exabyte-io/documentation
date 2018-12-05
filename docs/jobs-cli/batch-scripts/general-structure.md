@@ -4,7 +4,8 @@ The [Batch Scripts](overview.md) used for [job submission via CLI](../overview.m
 
 ![Batch Script General Structure](/images/jobscript_structure.png "Batch Script General Structure")
 
-A common convention is to append the suffix ".pbs" or ".job" or ".sh" to the filename of batch scripts.
+!!!tip "Recommended extensions for Batch Scripts"
+    A common convention is to append the suffix ".pbs" or ".job" or ".sh" to the filename of batch scripts.
 
 ## 1. Shebang
 
@@ -21,7 +22,7 @@ Comments may consist in any text string containing any type of character, except
 
 ## 3. Directives
 
-As introduced [here](overview.md#implementation), we make use of the **Portable Batch System (PBS)** protocol for organizing job scheduling on our platform. A comprehensive set of **PBS directives** is available for setting the relevant job parameters, such as allocating the necessary [computational resources](../../infrastructure/compute/parameters.md). 
+As introduced [here](overview.md#implementation), we make use of the **Portable Batch System (PBS)** protocol for organizing job scheduling on our platform. A comprehensive set of **PBS  Resource Management Directives** is available for setting the relevant job parameters, such as allocating the necessary [computational resources](../../infrastructure/compute/parameters.md). 
 
 These directives are the object of a [dedicated review](directives.md).
 

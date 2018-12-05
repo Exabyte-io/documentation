@@ -4,9 +4,9 @@ Here, we explain how to assemble the necessary input scripts for [job submission
 
 ## General Procedure
 
-A new [simulation Job](../../jobs/overview.md) can be created by assembling all necessary **simulation input files**, and the associated **[Batch Script](../batch-scripts/overview.md)**, together in the same [Working folder](../batch-scripts/directories.md).
+A new [simulation Job](../../jobs/overview.md) can be created by assembling all necessary **simulation input files**, as well as the **[Batch Script](../batch-scripts/overview.md)** associated with the job, and bringing all such files together under the same [Working folder](../batch-scripts/directories.md).
  
-This folder has to be located under the [cluster home directory](../../infrastructure/clusters/directories.md) for the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
+This Working folder has to be located under the [cluster home directory](../../infrastructure/clusters/directories.md) of the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
 
 !!! note "Choose walltime carefully"
     The [Walltime](../../infrastructure/compute/parameters.md#time-limit) of the simulation is defined in the [Batch Script](../batch-scripts/overview.md) through its corresponding [directive](../batch-scripts/directives.md), and should be chosen carefully for a number of reasons.
