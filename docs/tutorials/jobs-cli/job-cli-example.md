@@ -1,12 +1,12 @@
 # Running Jobs via Command Line Interface
 
-This page explains how to run a [job](../jobs/overview.md) for [Quantum ESPRESSO](../software/modeling/quantum-espresso.md) via the [Command Line Interface](../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../jobs-cli/overview.md) before proceeding further with the present Tutorial.
+This page explains how to run a [job](../../jobs/overview.md) for [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../../jobs-cli/overview.md) before proceeding further with the present Tutorial.
  
 Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure.
 
 ## 1. Input File
 
-We start with preparing an **input file** for [Quantum ESPRESSO](../software/modeling/quantum-espresso.md). Below is example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
+We start with preparing an **input file** for [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md). Below is example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
 
 The material being considered in this particular example is a supercell of  "Strontium Zirconate" (SrZrO3), in its ground state equilibrium crystal structure with space group "Pnma" [^2]. The reader is referred to the official documentation for the "PWscf" module of Quantum ESPRESSO [^3] [^4] for a description of the keyword parameters contained here.
 
@@ -14,12 +14,13 @@ The material being considered in this particular example is a supercell of  "Str
 &control
     calculation = 'scf',
     restart_mode = 'from_scratch',
-    prefix = 'STO_exc1'
+    prefix = 'srzro'
     tstress =.true.
     tprnfor=.true.
-    outdir = './'
+    outdir = './_outdir'
     wfcdir = './'
     prefix = '${celldm1}'
+    pseudo_dir = './_pseudo'
  /
  &system
     ibrav = 1
@@ -83,9 +84,9 @@ K_POINTS (automatic)
 3 3 3 1 1 1
 ```
 
-Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the complete input script is put together, as explained in what follows.
+Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the complete input script is put together, as explained in what follows.
 
-In order to use the above input file, we also need to copy the pseudopotential files into the current [working directory](../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
+In order to use the above input file, we also need to copy the pseudopotential files into the current [working directory](../../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
 
 ```bash
 cp /export/share/pseudo/si/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
@@ -95,7 +96,7 @@ cp /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf .
 
 ## 2. Batch Script
 
-Secondly, we prepare the [Batch Script](../jobs-cli/batch-scripts/overview.md) necessary for [submitting jobs via CLI](../jobs-cli/overview.md).
+Secondly, we prepare the [Batch Script](../../jobs-cli/batch-scripts/overview.md) necessary for [submitting jobs via CLI](../../jobs-cli/overview.md).
 
 ```bash
 #!/bin/bash
@@ -114,9 +115,9 @@ cd $PBS_O_WORKDIR
 mpirun -np $PBS_NP pw.x -in pw.in > pw.out
 ```
 
-Just like before, we are using template variables again instead of the [project](../jobs/projects.md) name and email. Variables starting with `$PBS` are automatically set by the [resource manager](../infrastructure/resource/overview.md), and are known as the ["PBS Directives"](../jobs-cli/batch-scripts/directives.md). 
+Just like before, we are using template variables again instead of the [project](../../jobs/projects.md) name and email. Variables starting with `$PBS` are automatically set by the [resource manager](../../infrastructure/resource/overview.md), and are known as the ["PBS Directives"](../../jobs-cli/batch-scripts/directives.md). 
 
-The rest of the Batch Script contains [UNIX commands](../jobs-cli/batch-scripts/commands.md) necessary for [loading the required modules](../cli/actions/modules.md) and [running the job in parallel](../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job) via CLI.
+The rest of the Batch Script contains [UNIX commands](../../jobs-cli/batch-scripts/commands.md) necessary for [loading the required modules](../../cli/actions/modules.md) and [running the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job) via CLI.
 
 ## 3. Bash Script
 
@@ -266,13 +267,23 @@ done
 
 We can put the content of the above file into a bash script called `run.sh` for example, and then make the script executable with `chmod a+x run.sh` command.
  
-We can finally [submit the jobs](../jobs-cli/actions/submit.md) as a set to the [Resource Manager](../infrastructure/resource/overview.md) by invoking the script via the `./run.sh` command.
+We can finally [submit the jobs](../../jobs-cli/actions/submit.md) as a set to the [Resource Manager](../../infrastructure/resource/overview.md) by invoking the script via the `./run.sh` command.
 
 ## 5. View Submitted Jobs
 
-The user can view the currently submitted jobs and their statuses in CLI with the `qstat` [command](../jobs-cli/actions/check-status.md). 
+The user can view the currently submitted jobs and their statuses in CLI with the `qstat` [command](../../jobs-cli/actions/check-status.md). 
 
-The reader is referred to [this other Tutorial](view-results.md) for an explanation on how to inspect the results of the above simulation under the [Web Interface](../ui/overview.md) of our platform.
+The reader is referred to [this other Tutorial](view-results.md) for an explanation on how to inspect the results of the above simulation under the [Web Interface](../../ui/overview.md) of our platform.
+
+## Animation
+
+We summarize the above-mentioned steps in the following animation. 
+
+Here, we begin by entering the [Command Line Interface](../../cli/overview.md) via the [Web Terminal](../../remote-connection/web-terminal.md) connection method. We then navigate to the directory containing the `run.sh` input script under the [Home Folder](../../infrastructure/clusters/directories.md) of `cluster-007`, where we submit it for execution. 
+
+We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-status.md) on the selected cluster number "007" by entering the `watch qstat` command, for an automatically-refreshing version of `qstat`. Since only one lattice parameter was tested in this example animation for simplicity, only one job has been launched and is returned by `qstat` in this case (scanning over all three lattice parameters as in the original input script shown above would have correspondingly launched three distinct jobs).
+
+<img data-gifffer="/images/job-cli-tutorial_1.gif" />
 
 ## Links
 
