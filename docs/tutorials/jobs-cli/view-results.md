@@ -19,6 +19,5 @@ Here, we begin by exiting the [Web Terminal](../../remote-connection/web-termina
 When the job is finally terminated, its corresponding simulation files are reviewed under the [Files Tab](../../jobs/ui/files-tab.md) of the [Job Viewer Interface](../../jobs/ui/viewer.md). Each file listed here can be [downloaded](../../data-in-objectstorage/actions/download.md) to the user's local disk by clicking upon the relevant entries in turn.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MBpd-yKUCM4&start=10&end=110" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MBpd-yKUCM4?start=50" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-

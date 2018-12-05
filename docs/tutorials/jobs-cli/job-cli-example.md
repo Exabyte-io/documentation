@@ -265,9 +265,11 @@ done
 
 ```
 
+The reader should note that in the `mpirun` [command for launching the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job), towards the bottom of the above input script example, we make use of the `tee` UNIX command to redirect the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting the output also to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md).
+
 We can put the content of the above file into a bash script called `run.sh` for example, and then make the script executable with `chmod a+x run.sh` command.
  
-We can finally [submit the jobs](../../jobs-cli/actions/submit.md) as a set to the [Resource Manager](../../infrastructure/resource/overview.md) by invoking the script via the `./run.sh` command.
+The job can finally be [submitted](../../jobs-cli/actions/submit.md) as a set to the [Resource Manager](../../infrastructure/resource/overview.md) by invoking the script via the `./run.sh` command (the `qsub` command is not necessary in this case since it is already included as part of `run.sh`, towards the end of the script).
 
 ## 5. View Submitted Jobs
 

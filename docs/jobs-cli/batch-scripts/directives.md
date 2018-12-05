@@ -6,7 +6,7 @@ As introduced [here](general-structure.md#3.-directives), the keywords described
     We recommend the user to first consult the accounting aspects of such directives documented [here](../accounting.md), before proceeding with job submission.
 
 !!!info "Further information and documentation"
-    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1].
+    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under page 374 of Ref. [^1].
 
 ## Important Directives
 
@@ -39,7 +39,7 @@ The batch system defines many **environment variables**, which are available for
     The user is advised not to redefine the value of any of these variables.
     
 !!!info "Further information and documentation"
-    Further explanation of these Environment Variables can be found under Ref. [^1].
+    Further explanation of these Environment Variables can be found in page 112 under Ref. [^1].
 
 | Variable Name   | Meaning |
 | --------------- | -------------|
@@ -62,6 +62,12 @@ While your job is running, the **standard output (stdout)** and **standard error
 These files will be updated in real-time while the job is running, allowing the user to make use of them for job monitoring. It is important that these spool files are not modified, removed or renamed while the job is still running.
 
 After the batch job completes, the above files will be renamed to the corresponding stdout/stderr files (for example: my_job.o123456 and my_job .e123456).
+
+## Erroneous Job Termination and Notifications
+
+In order to get notified via email about an accidental job termination, resulting for example from computational errors or in case the job was being executed in the [Saving Queue](../../infrastructure/resource/category.md), the above-mentioned `#PBS -m abe` and `#PBS -M < email_address >` directives must be set inside the [Batch Script file](overview.md). 
+
+In addition, for the latter case of Jobs being run in the Saving Queue, our scheduling system automatically restarts any unintentionally terminated jobs, and re-submits them into the [regular queue](../../infrastructure/resource/category.md) for their continuation. If the user does not want the job to be restarted in this way, he/she must set the `#PBS -r n` directive inside the [Batch Script](overview.md). In this case, a temporary folder containing the job's intermediate results will be created in the user's home directory.
 
 ## Links
 
