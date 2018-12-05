@@ -1,8 +1,8 @@
 # Detailed List of Jobs and Charges
 
-To get detailed information about all the [jobs](../overview.md) [submitted](../overview.md) to date by the user on the [Command Line Interface](../../cli/overview.md) of our system, enter the `lsjob` command, as displayed in the example below.
+To get detailed information about all the [jobs](../overview.md) [submitted](../overview.md) **to date** by the user on the [Command Line Interface](../../cli/overview.md) (CLI) of our system, enter the `lsjob` command, as displayed in the example below.
  
-This information includes the relevant [compute parameters](../../infrastructure/compute/parameters.md) used as part of the job execution, as well as the [Account Charges](../../accounts/payments-charges.md) incurred by each listed Job.
+This information includes the relevant [compute parameters](../../infrastructure/compute/parameters.md) used as part of the job execution, as well as the [Project](../../jobs/projects.md) container and [Account Charges](../../accounts/payments-charges.md) incurred by each listed Job (referenced by its **"Job ID"**). 
 
 `# > lsjob`
 
@@ -15,3 +15,9 @@ Id JobId User     Project  Machine            Queue QualityOfService Stage   Cha
 31 78    christie christie cluster.exabyte.io batch GS               Charge    0.00 16               5            2016-08-11 02:25:41 2016-08-11 02:25:46
 32 79    christie christie cluster.exabyte.io batch GS               Charge    0.00 16               6            2016-08-11 02:25:57 2016-08-11 02:26:03
 ```
+
+The full documentation manual for the accounting system software that we implement under the CLI, called **"Gold"**, can be found under Ref. [^1]. 
+
+## Links
+
+[^1]: [Gold User’s Guide, Document](http://docs.adaptivecomputing.com/gold/pdf/GoldUserGuide.pdf)

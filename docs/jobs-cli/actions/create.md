@@ -4,10 +4,12 @@ Here, we explain how to assemble the necessary input scripts for [job submission
 
 ## General Procedure
 
-A new [simulation Job](../../jobs/overview.md) can be created by assembling all necessary **simulation input files** and the associated **[Batch Script](../batch-scripts/overview.md)** together in the same [Working folder](../batch-scripts/directories.md), which has to be located under the [cluster home directory](../../infrastructure/clusters/directories.md) for the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
+A new [simulation Job](../../jobs/overview.md) can be created by assembling all necessary **simulation input files**, and the associated **[Batch Script](../batch-scripts/overview.md)**, together in the same [Working folder](../batch-scripts/directories.md).
+ 
+This folder has to be located under the [cluster home directory](../../infrastructure/clusters/directories.md) for the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
 
 !!! note "Choose walltime carefully"
-    [Walltime](../batch-scripts/directives.md) is defined in the [Batch Script](../batch-scripts/overview.md) and should be chosen carefully:
+    The [Walltime](../../infrastructure/compute/parameters.md#time-limit) of the simulation is defined in the [Batch Script](../batch-scripts/overview.md) through its corresponding [directive](../batch-scripts/directives.md), and should be chosen carefully for a number of reasons.
     
     1. Jobs that require long walltime will [reserve the corresponding balance](../../accounts/balance.md#reserved-balance), and thus prevent other jobs from starting.
     2. When not enough walltime is allocated, the job may not finish on time, resulting in an erroneous output. 
