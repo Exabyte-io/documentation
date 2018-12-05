@@ -9,9 +9,13 @@ Job submission is performed with the `qsub` command, as demonstrated in the foll
 11665.cluster-001
 ```
 
-The `qsub` command displays the **job_id**, which includes the alias of the cluster where the job has been submitted (11665.cluster-001 in the above example). It is important to remember this job_id for job tracking and problem resolution, as well as in the eventuality of [job termination](terminate.md).
-
 The complete manual page for this `qsub` listing all the possible option flags command can be reviewed in Ref. [^1].
+
+## Jobs ID
+
+Just after it is entered, the `qsub` command displays the **"job id"**, which includes the alias of the cluster where the job has been submitted (11665.cluster-001 in the above example).
+ 
+It is important to remember this "job id" for job tracking and any problem resolution, as well as in the eventuality of [job termination](terminate.md) by the user.
 
 ## Links
 

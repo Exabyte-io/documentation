@@ -14,10 +14,10 @@ We explain the commands necessary for **submitting jobs** to the CLI [here](subm
 
 The status of jobs can be inspected at any time via CLI by following [these instructions](check-status.md).
 
-## View List of Jobs
-
-A detailed list of Jobs and associated [Accounting Charges](../../accounts/payments-charges.md) produced to date by the user can be generated under CLI as explained [here](view-job-list.md), for user's reference and convenience.
-
 ## Terminate Job
 
 A Job can be terminated artificially by the user at any time preceding its completion [as follows](terminate.md)
+
+## View List of Jobs and Charges
+
+A detailed list of Jobs and associated [Accounting Charges](../../accounts/payments-charges.md) produced to date by the user can be generated under CLI as explained [here](view-job-list.md), for user's reference and convenience.

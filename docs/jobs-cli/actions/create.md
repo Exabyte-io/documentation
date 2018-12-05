@@ -6,17 +6,16 @@ Here, we explain how to assemble the necessary input scripts for [job submission
 
 A new [simulation Job](../../jobs/overview.md) can be created by assembling all necessary **simulation input files** and the associated **[Batch Script](../batch-scripts/overview.md)** together in the same [Working folder](../batch-scripts/directories.md), which has to be located under the [cluster home directory](../../infrastructure/clusters/directories.md) for the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
 
-### Importance of Walltime
+!!! note "Choose walltime carefully"
+    [Walltime](../batch-scripts/directives.md) is defined in the [Batch Script](../batch-scripts/overview.md) and should be chosen carefully:
+    
+    1. Jobs that require long walltime will [reserve the corresponding balance](../../accounts/balance.md#reserved-balance), and thus prevent other jobs from starting.
+    2. When not enough walltime is allocated, the job may not finish on time, resulting in an erroneous output. 
+    3. The user is advised to [submit a support ticket](../../ui/support.md) if a walltime adjustment is needed during the course of a long job execution. Our support staff will do their best to accommodate the necessary desired changes, depending on the current computing load and business hours.
 
-The user is recommended to be deliberate when setting the **Walltime**, defining the maximum authorized duration of the simulation, through its corresponding [resource management directive](../batch-scripts/directives.md) defined under the [Batch Script](../batch-scripts/overview.md). The reasons why doing this is important include the following.
+## Job Templates
 
-- Jobs that require long walltime will [reserve the corresponding balance](../../accounts/balance.md#reserved-balance), and thus prevent other jobs from starting.
-- When not enough walltime is allocated, the job may not finish on time, resulting in an erroneous output. 
-- The user is advised to [submit a support ticket](../../ui/support.md) if a walltime adjustment is needed during the course of a long job execution. Our support staff will do their best to accommodate the necessary desired changes, depending on the current computing load and business hours.
-
-## Pre-configured Submit Scripts
-
-The user can find our pre-configured job script template examples and input files within the **"job-script-template"** folder present inside the [Login Home directory](../../infrastructure/login/directories.md). 
+Users can find our examples of job batch scripts and input files within the **"job-script-template"** folder present inside the [Login Home directory](../../infrastructure/login/directories.md). 
 
 Below are example commands needed to copy and run one of these template examples with the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) modeling application, contained in the `espresso` sub-directory inside `job_script_templates`.
 
