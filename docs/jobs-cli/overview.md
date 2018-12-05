@@ -12,7 +12,7 @@ We describe the accounting aspects of Job submission via CLI, such as specifying
 
 ## Actions
 
-The actions pertaining to Jobs submission and execution under the CLI are reviewed [in this section](actions/overview.md) of the documentation. Other general actions concerning the CLI, such as the loading of modules, the compilation of new applications or the creation of new python environments, are described [separately](../cli/overview.md).
+The actions pertaining to Jobs submission and execution under the CLI are reviewed [in this section](actions/overview.md) of the documentation. Other general actions concerning the CLI, such as the loading of modules, the compilation of new applications or the creation of new python environments, are described [separately](../cli/actions/overview.md).
 
 ## Tutorials
 

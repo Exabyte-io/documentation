@@ -6,7 +6,7 @@ As introduced [here](general-structure.md#3.-directives), the keywords described
     We recommend the user to first consult the accounting aspects of such directives documented [here](../accounting.md), before proceeding with job submission.
 
 !!!info "Further information and documentation"
-    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under page 374 of Ref. [^1].
+    Further documentation on the software we employ, known as **TORQUE**, for implementing the PBS job scheduling and resource management protocol, can be found under Ref. [^1].
 
 ## Important Directives
 
@@ -33,7 +33,7 @@ As introduced [here](general-structure.md#3.-directives), the keywords described
 
 ## Environment Variables
 
-The batch system defines many **environment variables**, which are available for use within batch scripts via the `$` reference prefix. The following tables list some of the more useful variables.
+The batch system defines many **environment variables**, which are available for use within batch scripts via the `$` reference prefix. The following table list some of the more useful variables.
  
 !!!warning "Variables modification not recommended" 
     The user is advised not to redefine the value of any of these variables.
@@ -57,7 +57,7 @@ The batch system defines many **environment variables**, which are available for
 
 ## Standard Output and Error
 
-While your job is running, the **standard output (stdout)** and **standard error (stderr)** of the simulation are written to temporary **"spool" files** (for example: 123456-cluster.OU and 123456-cluster.ER) in the submit directory. If the user decides to merge stderr/stdout via the aforementioned `#PBS -j eo` or `#PBS -j oe` directives, then only one such spool file will appear.
+While the job is running, the **standard output (stdout)** and **standard error (stderr)** of the simulation are written to temporary **"spool" files** (for example: 123456-cluster.OU and 123456-cluster.ER) inside the [Working directory](directories.md). If the user decides to merge stderr/stdout via the aforementioned `#PBS -j eo` or `#PBS -j oe` directives, then only one such spool file will appear.
 
 These files will be updated in real-time while the job is running, allowing the user to make use of them for job monitoring. It is important that these spool files are not modified, removed or renamed while the job is still running.
 

@@ -13,7 +13,7 @@ mpirun -np $PBS_NP ./my_executable
 
 ## 1. Change to Working Directory
 
-Batch jobs by convention begin execution in the user's [Home Directory](../../infrastructure/login/directories.md) (referenced under the `$PBS_O_HOME` [environment variable](directives.md#environment-variables)). For this reason, many batch scripts execute `cd $PBS_O_WORKDIR` as the first executable statement, in order to switch to the corresponding "Working Directory" in which the job was first defined and [submitted](../actions/submit.md). 
+Batch jobs by convention begin execution in the user's [Home Directory](../../infrastructure/login/directories.md) (referenced under the `$PBS_O_HOME` [environment variable](directives.md#environment-variables)). For this reason, many batch scripts execute `cd $PBS_O_WORKDIR` as the first executable statement, in order to switch to the corresponding [Working Directory](directories.md) in which the job was first defined and [submitted](../actions/submit.md). 
 
 The required location of this working directory under the directory structure of our platform is explained [here](directories.md).
 
@@ -45,11 +45,11 @@ mpirun -np <no_proc> name_executable`
 
 Here, the `<no_proc>` parameter represents the number of processors selected for computation via the relevant [Directives](directives.md), which can be referenced directly with the `$PBS_NP` [environment variable](directives.md#environment-variables) within the command. 
 
-The `name_executable` component of the `mpirun` command on the other hand refers to the name of the executable being run as part of the job. This can either be a **global variable** loaded in one of the modules or present in the user's global search path, or can also be a **local variable** available within the Working Directory only. In the latter case, the executable has to be launched with the `./` standard executor command in UNIX operating systems. 
+The `name_executable` component of the `mpirun` command on the other hand refers to the name of the executable being run as part of the job. This can either be a **global variable** loaded in one of the modules or present in the user's global search path, or can also be a **local variable** available within the present working directory only. In the latter case, the executable has to be launched with the `./` standard executor command in UNIX operating systems. 
 
 ### Adding Executables to Global Search Path
 
-To make an executable globally available across the entire CLI environment, the user should edit his/her `.bashrc` file under the [Login Home](../../infrastructure/login/directories.md) directory using his/her preferred command-line text editor. To add the desired executable on the `PATH` environmental variable defining the global search path, the following commands should be inserted in `.bashrc`.
+To make an executable globally available across the entire CLI environment, the user should edit his/her `.bashrc` file under the [Login Home](../../infrastructure/login/directories.md) directory using his/her preferred command-line text editor. To add the desired executable on the `PATH` environmental variable defining the global search path, the following commands should be inserted inside `.bashrc`.
 
 ```bash
 export PATH=<path/to/directory/containing/executable>:$PATH
@@ -68,7 +68,7 @@ source ~/.bashrc
 ```
 
 !!!tip "Making user-created scripts executable"
-    Whenever the user writes his/her own custom script under the CLI, the command `chmod a+x /path/to/script` should be entered to make it executable by assigning it the appropriate permissions. 
+    Whenever the user writes his/her own custom script under the CLI, the command `chmod a+x /path/to/script` should be entered to make it executable, by assigning it the appropriate permissions. 
 
 ## Links
 
