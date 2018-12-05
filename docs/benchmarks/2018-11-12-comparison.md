@@ -535,7 +535,7 @@ The visual below demonstrates the model studied - a box with 418,402 total atoms
 
 ## Conclusion
 
-We benchmark the performance of the latest cloud hardware with HPL, two VASP simulation cases, one GROMACS case and Intel MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
+We benchmark the performance of the latest cloud hardware with HPL, two VASP simulation cases, one GROMACS case and MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
 
 
 ## Links
