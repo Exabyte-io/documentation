@@ -14,12 +14,12 @@ body {
     background-color: white;
 }
 
-iframe {
-    width: 100%;
-    height: 60vh;
-    border: none;
-    margin-bottom: 10px;
-}
+/*iframe {*/
+    /*width: 100%;*/
+    /*height: 60vh;*/
+    /*border: none;*/
+    /*margin-bottom: 10px;*/
+/*}*/
 
 h1, .md-typeset h1 {
     font-weight: bold;

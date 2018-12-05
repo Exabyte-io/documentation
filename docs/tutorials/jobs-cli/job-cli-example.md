@@ -119,7 +119,7 @@ Just like before, we are using template variables again instead of the [project]
 
 The rest of the Batch Script contains [UNIX commands](../../jobs-cli/batch-scripts/commands.md) necessary for [loading the required modules](../../cli/actions/modules.md) and [running the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job) via CLI.
 
-## 3. Bash Script
+## 3. Shell Script
 
 The logic for parameter sweep calculations through shell scripting can be summarized as below (in pseudo code).
 
@@ -275,6 +275,7 @@ The user can view the currently submitted jobs and their statuses in CLI with th
 
 The reader is referred to [this other Tutorial](view-results.md) for an explanation on how to inspect the results of the above simulation under the [Web Interface](../../ui/overview.md) of our platform.
 
+
 ## Animation
 
 We summarize the above-mentioned steps in the following animation. 
@@ -283,7 +284,9 @@ Here, we begin by entering the [Command Line Interface](../../cli/overview.md) v
 
 We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-status.md) on the selected cluster number "007" by entering the `watch qstat` command, for an automatically-refreshing version of `qstat`. Since only one lattice parameter was tested in this example animation for simplicity, only one job has been launched and is returned by `qstat` in this case (scanning over all three lattice parameters as in the original input script shown above would have correspondingly launched three distinct jobs).
 
-<img data-gifffer="/images/job-cli-tutorial_1.gif" />
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MBpd-yKUCM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Links
 
