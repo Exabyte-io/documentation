@@ -4,7 +4,7 @@ Regular members can be elevated to the role of an Administrator.
 
 ## Open People Explorer
 
-First, navigate to the Organization-wide [People Explorer](../../ui/people-explorer.md), and then open the [actions drop-down](/entities-general/ui/explorer.md#actions-dropdown) at the right-end of the candidate member. 
+First, navigate to the Organization-wide [People Explorer](../../ui/people-explorer.md), and then open the [actions drop-down](../../../entities-general/ui/explorer.md#actions-dropdown) at the right-end of the candidate member. 
 
 ## Make Admin
 
@@ -17,7 +17,7 @@ In the example below, we appoint a new Administrator to our Organization called 
 <img data-gifffer="/images/organization-add-admin.gif">
 
 
-# Revoke Administrator
+## Revoke Administrator
 
 Similarly, any Administrator can have his title revoked through the `Revoke admin` <i class="zmdi zmdi-chevron-down zmdi-hc-border"></i> option under the aforementioned actions drop-down menu.
 

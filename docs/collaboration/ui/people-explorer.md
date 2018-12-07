@@ -1,16 +1,16 @@
 # People Explorer
  
-Both the Organizational [Profile page](/accounts/ui/profile-page.md), and each [Team-specific page](team-page.md), have a "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on it redirects the user to, respectively, a list of all Organization members (People), and to team-specific lists. 
+Both the Organizational [Profile page](../../accounts/ui/profile-page.md), and each [Team-specific page](team-page.md), have a "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. Clicking on it redirects the user to, respectively, a list of all Organization members (People), and to team-specific lists. 
 
-These lists are presented under the [Explorer interface](/entities-general/ui/explorer.md) of our platform. Hence their name, "People Explorer".
+These lists are presented under the [Explorer interface](../../entities-general/ui/explorer.md) of our platform. Hence their name, "People Explorer".
 
-# Organization vs. Teams
+## Organization vs. Teams
 
 A distinction must be drawn between the list of [Organization members](../actions/organization/add-remove-member.md), and those of [its constituent Teams](../actions/team/add-remove-member.md), which are necessarily **subsets** of the former. We shall use the terms "Organization People Explorer" and "Team People Explorer" respectively. 
 
 Some of their differences are worth noticing:
 
-# Organization People Explorer
+## Organization People Explorer
 
 > "Organization People Explorer" or "Organization Members Explorer" can be used interchangeably.
 
@@ -18,15 +18,15 @@ In the image below, we start from the People Explorer of an Organization called 
 
 ![Organization People Explorer](/images/organization-people-explorer.png "Organization People Explorer")
 
-## Central Table: Owner and Admin Roles
+### Central Table: Owner and Admin Roles
 
 The members who have the titles of "Owner" or "Admin" attributed to them are indicated in the central table. In the above example, the user "exadmin" is the sole Owner and Administrator. 
 
-## Actions
+### Actions
 
 [Administrative Actions](../actions/organization/overview.md) concerning the Organization originate from here.
 
-# Team People Explorer
+## Team People Explorer
 
 We then click on one of the Teams listed under [Teams Explorer](teams-explorer.md), to gain access to its corresponding [Team-specific Page](team-page.md). The "Team People Explorer" can be found under the "People" tab <i class="zmdi zmdi-account zmdi-hc-border"></i>. 
 
@@ -36,10 +36,10 @@ In the image below for example, the members of the Team "Semiconductor band gaps
 
 ![Team People Explorer](/images/team-people-explorer.png "Team People Explorer")
 
-## Central Table: Email Addresses
+### Central Table: Email Addresses
 
 The central table displays the email addresses of the Team members. No information about the Owner or Administrators is necessary this time, since such titles are inherited from the parent Organization.
 
-## Actions 
+### Actions 
 
 From here, members can be added or removed to/from Teams, as explained [in this page](../actions/team/add-remove-member.md).
