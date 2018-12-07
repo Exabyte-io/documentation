@@ -2,7 +2,7 @@
 
 ## Open Interface
 
-Click on the "Teams" tab <i class="zmdi zmdi-accounts zmdi-hc-border"></i> under the Organization's [profile page](/accounts/ui/profile-page.md). The list of its constituent [Teams](../organizations/teams.md) appears, displayed in the standard [Explorer-type interface](/entities-general/ui/explorer.md).
+Click on the "Teams" tab <i class="zmdi zmdi-accounts zmdi-hc-border"></i> under the Organization's [profile page](../../accounts/ui/profile-page.md). The list of its constituent [Teams](../organizations/teams.md) appears, displayed in the standard [Explorer-type interface](../../entities-general/ui/explorer.md).
  
 The appearance of this "Teams Explorer" page is portrayed below:
 
@@ -12,10 +12,10 @@ The appearance of this "Teams Explorer" page is portrayed below:
 
 Information about the number of members and projects assigned to each team is exhibited in the central table. 
 
-# Team Pages
+## Team Pages
 
-A page for each team, or [Team Page](team-page.md) can be accessed by [opening](/entities-general/actions/open-edit.md) the corresponding entry.
+A page for each team, or [Team Page](team-page.md) can be accessed by [opening](../../entities-general/actions/open-edit.md) the corresponding entry.
 
-# Create or Delete Teams
+## Create or Delete Teams
 
 The action of creating or deleting Teams is explained [here](../actions/organization/create-delete-team.md).
