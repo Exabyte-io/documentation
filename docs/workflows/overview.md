@@ -10,9 +10,9 @@ Specific features pertaining to the Explorer Interface of the Workflows collecti
 
 The [Actions](actions/overview.md) section explains and provides visual examples of actions that users can perform on workflows.
 
-# [Data](data/data.md)
+# [Data](data.md)
 
-The [Data](data/data.md) section contains information about the data convention used to store workflows data with an example JSON representation of workflows, and its detailed explanation.
+The [Data](data.md) section contains information about the data convention used to store workflows data with an example JSON representation of workflows, and its detailed explanation.
 
 # [Bank](bank.md)
 

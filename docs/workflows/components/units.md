@@ -2,13 +2,41 @@
 
 Workflows are composed of **units**, or elementary calculations that can be executed in succession based on algorithmic conditions.
 
+## Example Structured Represenation
+
+The JSON [structured representation](../../data-structured/overview.md) of units in contained in the expandable section below.
+
+<details markdown="1">
+  <summary>
+     Expand to view
+  </summary> 
+
+```json tab="Schema" 
+{!schema/workflow/unit.json!}
+```
+
+</details>
+
+An example of the above representation can be found below.
+
+<details markdown="1">
+  <summary>
+     Expand to view
+  </summary> 
+
+```json tab="Schema" 
+{!example/workflow/unit.json!}
+```
+
+</details>
+
 ## Unit types
 
 The following types of units are available to be combined together.
 
 ### Execution
 
-Used for computationally-heavy tasks, e.g. for a singular application of a physics-based simulation engine. For a description of the input templating, the reader is referred to [this page](templates.md).
+Used for computationally-heavy tasks, e.g. for a singular application of a physics-based simulation engine. For a description of the input templating, the reader is referred to [this page](../templates/examples.md).
 
 ### Processing
 
