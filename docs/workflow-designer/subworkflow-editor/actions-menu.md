@@ -20,7 +20,7 @@ To create a new subworkflow and insert it as part of the general workflow flowch
 
 <img src="/images/sw-addition.png"/>
 
-In this dialog, the user can choose whether to insert a new subworkflow or a map through the first drop-down menu (please refer to [this](../../workflows/data/subworkflows.md) and [this other](../../workflows/data/maps.md) documentation pages respectively for an explanation of the fundamental differences between these two types of computing units). 
+In this dialog, the user can choose whether to insert a new subworkflow or a map through the first drop-down menu (please refer to [this](../../workflows/components/subworkflows.md) and [this other](../../workflows/components/maps.md) documentation pages respectively for an explanation of the fundamental differences between these two types of computing units). 
 
 Secondly, the choice between whether to append or prepend this new map or subworkflow with respect to the currently selected subworkflow module can also be made. The user can identify and change the currently selected subworkflow by referring to the main left-hand sidebar of the overall Workflow Designer interface, and clicking on the corresponding item out of the contained flowchart list. Once the "Apply" button is pressed, the new subworkflow or map with default initial parameters will be added to the workflow flowchart at the desired position. 
 

@@ -6,7 +6,7 @@ We store each item in the Entity Collections in the form of **structured data** 
 
 The following is an example of the JSON representation of an entity, where only the general keywords applicable to all entity types are preserved. 
 
-The reader is referred to other documentation pages for aspects that might pertain specifically to [Materials](/materials/data.md), [Workflows](/workflows/data/data.md) and [Jobs](/jobs/data.md) respectively. 
+The reader is referred to other documentation pages for aspects that might pertain specifically to [Materials](/materials/data.md), [Workflows](/workflows/data.md) and [Jobs](/jobs/data.md) respectively. 
 
 ```json
 {

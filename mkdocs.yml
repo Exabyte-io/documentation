@@ -325,16 +325,19 @@ nav:
         - Overview:                                     workflows/overview.md
         - Bank:                                         workflows/bank.md
         - Default:                                      workflows/default.md
+        - Data:                                         workflows/data.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
             - Designer:                                 workflow-designer/overview.md
             - Viewer:                                   workflows/ui/viewer.md
-        - Data:
-            - Workflows:                                workflows/data/data.md
-            - Subworkflows:                             workflows/data/subworkflows.md
-            - Units:                                    workflows/data/units.md
-            - Templates:                                workflows/data/templates.md
-            - Maps:                                     workflows/data/maps.md
+        - Components:
+            - Subworkflows:                             workflows/components/subworkflows.md
+            - Units:                                    workflows/components/units.md
+            - Maps:                                     workflows/components/maps.md
+        - Templates:
+            - Overview:                                 workflows/templates/overview.md
+            - Concept:                                  workflows/templates/templates.md
+            - UI Implementation:                        workflows/templates/ui.md
         - Actions:
             - Overview:                                 workflows/actions/overview.md
             - Update:                                   workflows/actions/update.md
@@ -573,6 +576,8 @@ nav:
             - Overview:                              tutorials/jobs-cli/overview.md
             - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
             - View Results:                          tutorials/jobs-cli/view-results.md
+        - Templating:                                tutorials/templating.md
+
 
 
 # TUTORIALS AND EXAMPLES

@@ -1,6 +1,6 @@
 # Templating
 
-We allow for using **Jinja templates** [^1] inside the input to individual [units](units.md). This way we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively.
+We allow for using **Jinja templates** [^1] inside the input to individual [units](../components/units.md). This way we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively.
 
 ## Design-time Render
 
@@ -8,6 +8,8 @@ Input templates are first rendered during the [job design](../../jobs-designer/o
 
 For example, the input file template shown below for a basic [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) computation contains data that will be different for different materials, such as the number of atoms (under the "nat" flag).
 
+
+## Template
 ```jinja
 &CONTROL
     calculation = 'scf'
@@ -54,6 +56,8 @@ K_POINTS automatic
 
 For Silicon FCC as a default material, the resulting rendered text of the unit input, using the above template, will be the following.
 
+
+## Rendered
 ```fortran
 &CONTROL
     calculation = 'scf'
@@ -101,6 +105,8 @@ K_POINTS automatic
 10 10 10 0 0 0 
 ```
 
+## Include Context (template data in Workflow Designer)
+
 ## Run-time Render
 
 In the rendered text of the unit above there are still namelist flags that are not resolved, such as `{{JOB_WORK_DIR}}`. These are system-level [Environment Variables](../../jobs-cli/batch-scripts/directives.md#environment-variables) that will be resolved during the runtime. Thus, the job work directory will be automatically assigned based on the account and job/workflow information at the time of job execution.
@@ -108,28 +114,6 @@ In the rendered text of the unit above there are still namelist flags that are n
 ## Editing Input
 
 There are two ways to edit the input of an individual unit: either by editing the template inside the workflow (in this case **all** jobs created with this workflow will inherit the changes), or by editing the template or preview during job creation (in this case only one job, or multiple jobs created from the modified one, will have their input changed).
-
-## Passing Standard Output
-
-It is often convenient to pass the output of one unit to another. This can currently be accomplished for standard output at the subworkflow level through referencing units by name.
-
-For example, let's assume that a workflow contains a subworkflow with a single shell script unit named "grep-nbands", which has the following input (it is assumed that it returns a number as part of its standard output).
-
-```bash
-grep "NBANDS" ./OUTCAR | awk '{print $3}'
-```
-
-Then the units inside any of the ensuing subworkflows can reference the result of the above unit at **runtime**, by using a special template variable inside their input template as follows.
-
-```jinja
-NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %} 
-```
-
-Note the usage of "raw" filter in order to make sure that the *Design-time* rendering will still preserve the content as `NBANDS = {{grep-nbands.stdout}}`.
-
-## Example Representation
-
-See the example contained [here](data.md) for more details on the JSON representation of Workflows.
 
 ## Links
 
