@@ -1,42 +1,38 @@
 # SSH Keys
 
-The concept of SSH authorization keys in the context of the Command Line Interface of our platform are thoroughly explained in a [separate section](/data-on-disk/security.md). For the moment, we will restrict ourselves to showing how such keys can be added to or deleted from our platform.
+The concept of SSH authorization keys in the context of the Command Line Interface of our platform are thoroughly explained in a [separate section](../../../data-on-disk/security.md). For the moment, we will restrict ourselves to showing how such keys can be added to or deleted from our platform.
 
-# Add New Key
+## Add New Key
 
-## Initiate procedure
+### Initiate procedure
 
 Click "Create" button <i class="zmdi zmdi-plus zmdi-hc-border"></i> located at the top-right corner of this panel, at which stage the user will be greeted with a dialog asking to enter the following key-related information in the corresponding entries: Title of the Key, and the content of the key. 
 
-## Enter or Upload content
+### Enter or Upload content
 
 Paste the content of the key into the corresponding textarea. Alternatively, the location of the key file on the user's local hard drive can be directly pointed to, by navigating to it through the file browser opened by the "Choose File" button and selecting the public key file.
 
-## Save key
+### Save key
 
 The "Save key" button at the bottom of the dialog should finally be pressed to save the newly-added key, or `Cancel` to annihilate the  changes and revert to the previous screen. 
 
-## Assert operational status
+### Assert operational status
 
 Once the new SSH key has been added, the user will be able to see the key as a new insertion to the complete list of previously-added key entries associated with the present account, appearing under the  Account Preferences page. This list contains on the left information about the title, content, and date and time of creation of the various listed keys. When the key is ready to be used for login on the Command Line Interface, the indicator to the left of its entry in the list will change the color from gray <i class="zmdi zmdi-circle"></i> to green <i class="zmdi zmdi-circle c-lime"></i>.
 
-## Animation
+### Animation
 
 In the example animation below, we demonstrate how to add a new SSH key that will be included in the overall list of keys. We will do so by selecting the corresponding file from our local hard drive. 
 
 <img data-gifffer="/images/add-key.gif" />
 
 
-# Delete Keys
+## Delete Keys
 
 The list of SSH keys under the  Account Preferences page additionally gives the user the possibility to delete each key entry through the corresponding `Delete` action button located to the right.  
 
-## Animation 
+### Animation 
 
 After having been added, the same new key entry created in the previous step is now deleted from the list:
 
 <img data-gifffer="/images/delete-key.gif" />
-
-
-
-
