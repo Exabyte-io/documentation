@@ -14,7 +14,7 @@ In order to make a comparison, for all the cases studied we run the benchmarks w
 
 ### Hardware
 
-We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). "NHT" refers to the Non-hyperthreaded[^7] scenario. "IB-H" refers to infiniband-interconnected H-series type virtual machines [^8]. The hardware specifications are listed below (we refer to physical cores as "Cores"):
+We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). "NHT" refers to the Non-hyperthreaded[^7] scenario. "IB-H" refers to infiniband-interconnected H-series type virtual machines [^8]. The hardware specifications are listed below (we refer to physical cores as "Cores").
 
 | Case       | Type          | Cores | CPU Family                       | Freq. (GHz) | Memory (GB) | RDMA[^6] |
 | :---:      | :---:         | :---: | :---:                            | :---:       | :---:       | :---:    |
@@ -141,7 +141,7 @@ The following figure shows a comparative plot of the performance per core in gig
 
 Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of default pseudo-potentials were employed for this study.
 
-Two basic parallelization schemes were attempted:
+Two basic parallelization schemes were attempted.
 
 - Parallelization over the electronic bands for large-unit-cell materials (further referred to as ELB)
 

@@ -1,6 +1,6 @@
 # Items List Sidebar
 
-Items currently available for edit in the Materials Designer are shown in the left-hand sidebar. The location of the sidebar within the wider interface is illustrated in the image below:
+Items currently available for edit in the Materials Designer are shown in the left-hand sidebar. The location of the sidebar within the wider interface is illustrated in the image below.
 
 <img src="/images/sidebar-list-items.png"/>
 

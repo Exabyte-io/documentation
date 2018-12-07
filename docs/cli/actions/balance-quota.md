@@ -81,7 +81,7 @@ The full list of flags that can be passed to `statement` is reproduced below for
 ```bash
 # > statement --help
 
-Usage:
+Usage.
     gstatement [[-a] *account_id*] [-p *project_name*] [-u *user_name*] [-m
     *machine_name*] [-s *start_time*] [-e *end_time*] [--summarize] [-h,
     --hours] [--debug] [-?, --help] [--man] [-V, --version]
@@ -95,6 +95,6 @@ Information about all jobs submitted by the user to date can be retrieved as exp
 
 Information about the [Storage Quota](../../accounts/quota.md) within the available [computing clusters](../../infrastructure/clusters/overview.md) can be retrieved via the `quota` command.
 
-<!-- TODO:
+<!-- TODO.
 Wait for Mohammed to fix this command to show example of output
 -->

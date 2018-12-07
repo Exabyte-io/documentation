@@ -45,14 +45,14 @@ Below is a quick tutorial on how to install python and pip in the userspace. Thi
 
     Notice the prefix option, it is mandatory for this to work. The value of prefix option is to specify where to put the related output of make command, by default it is in the /usr/local/ but we use our home directory instead.
 
-3. Next, update the environment variables to use our new python. Edit ~/.bashrc_profile and add the following lines:
+3. Next, update the environment variables to use our new python. Edit ~/.bashrc_profile and add the following lines.
 
     ```bash
     export PATH=$HOME/python/Python-2.7.11/:$PATH
     export PYTHONPATH=$HOME/python/Python-2.7.11
     ```
 
-4. Refresh the current session by running the command:
+4. Refresh the current session by running the command.
 
     ```bash
     source ~/.bashrc_profile
@@ -60,7 +60,7 @@ Below is a quick tutorial on how to install python and pip in the userspace. Thi
 
     One might need to logout and login again for the environment to update properly. 
     
-5. At this point, one should be able to see the new python. To check, run this command:
+5. At this point, one should be able to see the new python. To check, run this command.
 
     ```bash
     python --version
@@ -76,13 +76,13 @@ Pip is a python package manager, as explained in the references [here](create-py
     wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py -O - | python - --user
     ```
 
-2. After finishing the installation, update PATH variable. Open ~/.bashrc_profile and add the following line:
+2. After finishing the installation, update PATH variable. Open ~/.bashrc_profile and add the following line.
 
     ```bash
     export PATH=$HOME/.local/bin:$PATH
     ```
 
-3. Reload the session by the command source ~/.bashrc_profile or logout and login again. Then, check if pip command is available:
+3. Reload the session by the command source ~/.bashrc_profile or logout and login again. Then, check if pip command is available.
 
     ```bash
     which pip

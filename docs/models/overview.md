@@ -39,7 +39,7 @@ Modifiers can be further added to identify a certain important modifications to 
 
 ## Setting Refiners in User Interface
 
-Several modifiers can be included as part of the subworkflow under consideration, through the corresponding drop-down menu in the "Model" section of the ["Overview" tab](/workflow-designer/subworkflow-editor/overview.md) contained in the Subworflow Editor interface. These in particular allow for the inclusion of the following two atomic physical phenomena:
+Several modifiers can be included as part of the subworkflow under consideration, through the corresponding drop-down menu in the "Model" section of the ["Overview" tab](/workflow-designer/subworkflow-editor/overview.md) contained in the Subworflow Editor interface. These in particular allow for the inclusion of the following two atomic physical phenomena.
 
 
 

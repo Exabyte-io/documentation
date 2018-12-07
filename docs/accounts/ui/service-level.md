@@ -8,7 +8,7 @@ General information about both the available (under "Current") and Reserved [Acc
 
 > Note: under the present version of our platform, this latter storage quota information refers exclusively to the status of the supercomputing node currently set as the default one, and NOT to the combined storage quota from all available nodes.
 
-Moreover, the possibility to increase both of these Balance and Storage Quota indicators with extra credit is offered under the corresponding option buttons below each of the two indicators. The overall appearance of the interface for inspecting these two indicators and adding credit to them is demonstrated in the example below:
+Moreover, the possibility to increase both of these Balance and Storage Quota indicators with extra credit is offered under the corresponding option buttons below each of the two indicators. The overall appearance of the interface for inspecting these two indicators and adding credit to them is demonstrated in the example below.
 
 ![Indicators](/images/indicators.png "Indicators")
 

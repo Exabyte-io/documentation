@@ -3,7 +3,7 @@
 !!!warning "Warning: content with restricted access"
     All the information contained under the present documentation page is only relevant for Account Owners or Administrators, since only they have sufficient rights to view the content exposed herein and make the appropriate changes. We remind the reader that a user is always the Owner and full administrator of his own personal Account.
 
-This page explains how to request an increase to the Account's [Storage Quota](../quota.md) on the available supercomputing clusters, in addition to the storage space already provided under the account's current [service level](../../pricing/service-levels.md). This action can be performed from the following four alternative locations across the platform interface:
+This page explains how to request an increase to the Account's [Storage Quota](../quota.md) on the available supercomputing clusters, in addition to the storage space already provided under the account's current [service level](../../pricing/service-levels.md). This action can be performed from the following four alternative locations across the platform interface.
 
 
 - [The Right-hand Sidebar](../../ui/right-sidebar.md)
@@ -11,12 +11,12 @@ This page explains how to request an increase to the Account's [Storage Quota](.
 - [Dashboard](../../ui/specific/dashboard.md)
 - [The "Bio" tab](../ui/bio.md)
 
-In the former two cases, the increase in Storage Quota can be executed through either of the corresponding `Add Storage` buttons, located within the broader User Interface as highlighted in red in the image below:
+In the former two cases, the increase in Storage Quota can be executed through either of the corresponding `Add Storage` buttons, located within the broader User Interface as highlighted in red in the image below.
 
 ![Increase Quota](/images/increase-quota.png "Increase Quota")
 
 
-In the latter two cases on the other hand, the same action can be performed through the corresponding button <i class="zmdi zmdi-plus zmdi-hc-border"></i> at the top-right corner of the relevant quota information panel, as displayed in the example image below:
+In the latter two cases on the other hand, the same action can be performed through the corresponding button <i class="zmdi zmdi-plus zmdi-hc-border"></i> at the top-right corner of the relevant quota information panel, as displayed in the example image below.
 
 ![Increase Quota](/images/storage-quota-action.png "Increase Quota")
 

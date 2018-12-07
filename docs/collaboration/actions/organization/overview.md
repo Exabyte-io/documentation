@@ -1,6 +1,6 @@
 # Organizational Actions
     
-A  set of actions can be performed by the [Owner or Administrators](../../organizations/roles.md) to manage their [Organization](../../organizations/overview.md). They are listed below with links to their respective documentation pages:
+A  set of actions can be performed by the [Owner or Administrators](../../organizations/roles.md) to manage their [Organization](../../organizations/overview.md). They are listed below with links to their respective documentation pages.
 
 ## [Create Organization](create.md)
 

@@ -1,6 +1,6 @@
 # Unit input templates
 
-Unit input templates allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](/software/modeling/quantum-espresso.md) simulation package, is depicted on the left-hand side in the image below:
+Unit input templates allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](/software/modeling/quantum-espresso.md) simulation package, is depicted on the left-hand side in the image below.
 
 !["Example Input Template"](/images/input-template.png "Example Input Template")
 
@@ -69,7 +69,7 @@ The example of a JSON data structure, containing the input data for the template
 
 # Example Unit Input Template
 
-An example of an input template matching the above JSON source data, and referring to the same "pw_scf" unit calculation, can be viewed in the expandable section below:
+An example of an input template matching the above JSON source data, and referring to the same "pw_scf" unit calculation, can be viewed in the expandable section below.
 
 <details markdown="1">
   <summary>
@@ -126,7 +126,7 @@ K_POINTS automatic
 
 By clicking on the "Preview" tab next to "Template" at the bottom of the Unit Editor interface, the user can visualize a preview of the corresponding input file, in its final form to be stored in the database and sent to the computational infrastructure for execution. Such process completes the [design time render](/workflows/data/templates.md#design-time-render) This text will be further processed during the [runtime render](/workflows/data/templates.md#run-time-render) into the final text to be passed directly to the application executable. 
 
-An example of input text, resulting from the above-mentioned JSON data structure and input template is displayed in the expandable section below:
+An example of input text, resulting from the above-mentioned JSON data structure and input template is displayed in the expandable section below.
 
 <details markdown="1">
   <summary>
@@ -183,7 +183,7 @@ K_POINTS automatic
 
 # Selecting different materials
 
-In case multiple materials are present, they can each be selected from the list of radio buttons on the right-hand side of the "Preview" tab page in order to review their corresponding input files in turn. The appearance of such radio buttons, when silicon is the only material being considered in the subworkflow calculation, is highlighted as an example in the image below:
+In case multiple materials are present, they can each be selected from the list of radio buttons on the right-hand side of the "Preview" tab page in order to review their corresponding input files in turn. The appearance of such radio buttons, when silicon is the only material being considered in the subworkflow calculation, is highlighted as an example in the image below.
 
 !["Input Preview"](/images/input-preview.png "Input Preview")
 

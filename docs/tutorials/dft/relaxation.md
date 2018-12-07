@@ -12,13 +12,13 @@ Relaxation prior to property calculations is critical and we will demonstrate it
 
 To create a new project, click on the "Project" link located in the sidebar/menu on the left. After that, click <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> button in the top right corner, as shown in the animation below. Every user has a default project and we will use during this tutorial.
 
-Chose the Si structure provided by default for every user. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
+Chose the Si structure provided by default for every user. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below.
 
 <img data-gifffer="/images/RelaxStep1.gif" />
 
 # Create workflow
 
-Next, choose VASP [[2](#links)] as the simulation engine to be used and choose the "Total Energy" workflow:
+Next, choose VASP [[2](#links)] as the simulation engine to be used and choose the "Total Energy" workflow.
 
 Then, to add relaxation as a pre-processor to total energy calculation, expand the <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> Advanced section to show un-highlighted buttons for Relaxation and k-point convergence. Click on the Relaxation and you will see the relaxation unit added to the workflow.
 

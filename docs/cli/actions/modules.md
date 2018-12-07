@@ -10,7 +10,7 @@ Below is an example of the output of this command, showing the list of modules l
 
 ```bash
 [steve@bohr.exabyte.io:~]$ module list
-Currently Loaded Modulefiles:
+Currently Loaded Modulefiles.
   1) intel/i-174(default)    2) mpi/impi-044(default)    3) mkl/i-174(default)    4) espresso/521-i-174-impi-044(default)
 ```
 
@@ -92,7 +92,7 @@ Finally, the `module purge` command can be entered to **completely clean** the e
 
 ```bash
 [steve@bohr.exabyte.io:~]$ module list
-Currently Loaded Modulefiles:
+Currently Loaded Modulefiles.
   1) intel/i-174(default)    2) mpi/impi-044(default)    3) mkl/i-174(default)    4) espresso/521-i-174-impi-044(default)
 [steve@bohr.exabyte.io:~]$ module purge
 [steve@bohr.exabyte.io:~]$ module list

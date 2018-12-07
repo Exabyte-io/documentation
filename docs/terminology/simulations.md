@@ -8,7 +8,7 @@ Characteristic properties of materials can be obtained either in experiment, or 
 
 - **Simulation** is an application of a computational model or technique aimed at extracting a specific property of materials.
 
-There are three main entities that we deal with:
+There are three main entities that we deal with.
 
 - **Material**: a combination of chemical elements in a particular geometric arrangement, that can be *uniquely* defined by descriptive properties (eg. crystal lattice and basis) and has *characteristic* properties (eg. band gap, formation energy)
 
@@ -42,7 +42,7 @@ Characteristics are obtained as a result of simulations.
 
 # Model
 
-Within our product multiple entities related to model and method are used:
+Within our product multiple entities related to model and method are used.
 
 - Model
 - Method
@@ -53,7 +53,7 @@ Within our product multiple entities related to model and method are used:
 
 ## Method, Workflow, Units
 
-In order to better understand the difference between Model, Method and Simulation, let's use a travel analogy:
+In order to better understand the difference between Model, Method and Simulation, let's use a travel analogy.
 
 1. When you set out to travel from San Francisco to New York, you know your destination, by analogy a specific address in New York would be a **characteristic** that you'd like to obtain
 

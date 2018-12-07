@@ -12,7 +12,7 @@ Queue name consists of the 4 main parts as demonstrated below. Only one part, de
 
 ### Explanation
 
-1. GPU-specific concerns:
+1. GPU-specific concerns.
 
     a. Whether queue is GPU-enabled. If yes, letter "G" is used.
     b. Type of GPU. `P` means [P100](../clusters/hardware.md#gpu-types). [V100](../clusters/hardware.md#gpu-types) is used by default for GPU-enabled queues otherwise.
@@ -34,7 +34,7 @@ Queue name consists of the 4 main parts as demonstrated below. Only one part, de
 
 ## Charge Policies
 
-We deploy two charge policies, as explained below:
+We deploy two charge policies, as explained below.
 
 - **core seconds**: jobs are charged according to the number of core-seconds consumed
 - **core hours**: jobs are charged according to the nearest (greater) integer number of core-hours consumed; also referred to as "whole hours" 

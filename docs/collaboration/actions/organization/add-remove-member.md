@@ -18,7 +18,7 @@ Any desired number of users can be selected by ticking their corresponding check
 
 ## Animation
 
-The above steps  are summarized in the demonstration below, where we add three new users to our organization called "Example":
+The above steps  are summarized in the demonstration below, where we add three new users to our organization called "Example".
 
 <img data-gifffer="/images/organization-add-user.gif">
 

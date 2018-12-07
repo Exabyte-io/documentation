@@ -9,7 +9,7 @@ An Endpoint is one end of a communication channel, the API end of it. It has a u
 
 ## List of Endpoints
 
-Below is the list of currently supported endpoints with links to the detailed documentation for each:
+Below is the list of currently supported endpoints with links to the detailed documentation for each.
 
 - [Material](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Material/get_materials)
 - [Workflow](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Workflow/get_workflows)

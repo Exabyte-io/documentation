@@ -8,13 +8,13 @@ These lists are presented under the [Explorer interface](../../entities-general/
 
 A distinction must be drawn between the list of [Organization members](../actions/organization/add-remove-member.md), and those of [its constituent Teams](../actions/team/add-remove-member.md), which are necessarily **subsets** of the former. We shall use the terms "Organization People Explorer" and "Team People Explorer" respectively. 
 
-Some of their differences are worth noticing:
+Some of their differences are worth noticing.
 
 ## Organization People Explorer
 
 > "Organization People Explorer" or "Organization Members Explorer" can be used interchangeably.
 
-In the image below, we start from the People Explorer of an Organization called "Exabyte.io", listing its six members:
+In the image below, we start from the People Explorer of an Organization called "Exabyte.io", listing its six members.
 
 ![Organization People Explorer](/images/organization-people-explorer.png "Organization People Explorer")
 
@@ -32,7 +32,7 @@ We then click on one of the Teams listed under [Teams Explorer](teams-explorer.m
 
 > "Team People Explorer" or "Team Members Explorer" can be used interchangeably.
 
-In the image below for example, the members of the Team "Semiconductor band gaps write", contained in the aforementioned "Exabyte.io" Organization, are listed. Only four people are listed this time, a subset of the original six:
+In the image below for example, the members of the Team "Semiconductor band gaps write", contained in the aforementioned "Exabyte.io" Organization, are listed. Only four people are listed this time, a subset of the original six.
 
 ![Team People Explorer](/images/team-people-explorer.png "Team People Explorer")
 

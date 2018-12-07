@@ -12,7 +12,7 @@ In order to create a new material, one first needs to navigate to the "Materials
 
 # Components of the Interface
 
-The Materials Designer is structured into four main building blocks and has the typical initial default appearance as shown in the picture below, where the four main components are demarcated in red.  To access their corresponding documentation pages, please click on each component's red panel directly on the image:
+The Materials Designer is structured into four main building blocks and has the typical initial default appearance as shown in the picture below, where the four main components are demarcated in red.  To access their corresponding documentation pages, please click on each component's red panel directly on the image.
 
 <img src="/images/materials-designer-initial.png" usemap="#mapname">
 

@@ -21,7 +21,7 @@ A simulation engine is an implementation of a simulation algorithm in software.
 
 Precision characterizes the degree of numerical approximation. 
 
-> For example, in the planewave pseudopotential method the input parameters that affect precision are:
+> For example, in the planewave pseudopotential method the input parameters that affect precision are.
 >
 >   1. k-point sampling
 >   2. Number of points in irreducible Brillouin zone (N<sub>k</sub><sup>IBZ</sup>)
@@ -37,7 +37,7 @@ Precision characterizes the degree of numerical approximation.
 
 Accuracy measures the degree of proximity between the result of a simulation to the results of an experimental measurement (or "would-be" one).
 
-> For Density Functional Theory Model the input parameters that affect accuracy include:
+> For Density Functional Theory Model the input parameters that affect accuracy include.
 >
 >   1. Electronic exchange and correlation functional used in the pseudopotentials (pseudo_xc_type)
 >   2. Type of the model applied (eg. LDA, GGA, LDA + U, GGA + U, HSE, LDA + GW, GGA + GW)

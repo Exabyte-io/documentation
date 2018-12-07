@@ -108,7 +108,7 @@ No method of transmission, or method of electronic storage, is 100% secure. Ther
 
 We provide the same standard of privacy protection to all our users around the world, regardless of their country of origin or location, and we are proud of the levels of notice, choice, accountability, security, data integrity, access, and recourse we provide. We have appointed a Privacy Counsel and we work hard to comply with the applicable data privacy laws wherever we do business. Additionally, we require that if our vendors or affiliates have access to User Personal Information, they must comply with our privacy policies and with applicable data privacy laws, including signing data transfer agreements such as Standard Contractual Clause agreements.
 
-In particular:
+In particular.
 
 *   Exabyte.io provides clear methods of unambiguous, informed consent at the time of data collection, when we do collect your personal data.
 *   We collect only the minimum amount of personal data necessary, unless you choose to provide more. We encourage you to only give us the amount of data you are comfortable sharing.

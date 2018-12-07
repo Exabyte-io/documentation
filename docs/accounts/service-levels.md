@@ -1,6 +1,6 @@
 # Service Levels
 
-Service levels define the types, qualities and quantities of services provided to the accounts within our platform. The features associated with using our platform which are affected by the opted Service Level consist of the following list:
+Service levels define the types, qualities and quantities of services provided to the accounts within our platform. The features associated with using our platform which are affected by the opted Service Level consist of the following list.
 
 ## Features
 

@@ -4,13 +4,13 @@ If you are using [PuTTY](http://www.chiark.greenend.org.uk/~sgtatham/putty/downl
 
 #### Step One: check for existing keys
 
-Open command-line prompt, and run:
+Open command-line prompt, and run.
 
 ```
 cd %userprofile%/.ssh
 ```
 
-If you see "No such file or directory", then there aren't any existing keys: go to [Step Three](#step-three-generate-a-new-key). Otherwise, check to see if you have a key already:
+If you see "No such file or directory", then there aren't any existing keys: go to [Step Three](#step-three-generate-a-new-key). Otherwise, check to see if you have a key already.
 
 ```
 dir id_*
@@ -20,7 +20,7 @@ If there are existing keys, you may want to use those: go to [Upload key](#uploa
 
 #### Step Two - back up old keys
 
-If you have existing SSH keys, but you don't want to use them when connecting to exabyte.io, you should back them up. In a command prompt on your local computer, run:
+If you have existing SSH keys, but you don't want to use them when connecting to exabyte.io, you should back them up. In a command prompt on your local computer, run.
 
 ```
 mkdir key_backup
@@ -29,10 +29,10 @@ copy id_rsa* key_backup
 
 #### Step Three - generate a new key
 
-If you don't have an existing SSH key that you wish to use, generate one as follows:
+If you don't have an existing SSH key that you wish to use, generate one as follows.
 
 - log in to your local computer as an administrator
-- In a command prompt, run:
+- In a command prompt, run.
 
     ```
     ssh-keygen -t rsa -C "your_email@example.com"
@@ -48,13 +48,13 @@ If you don't have an existing SSH key that you wish to use, generate one as foll
 
 #### Step One: check for existing keys
 
-Open command-line prompt, and run:
+Open command-line prompt, and run.
 
 ```
 cd ~/.ssh
 ```
 
-If you see "No such file or directory", then there aren't any existing keys: go to [Step Three](#step-three-generate-a-new-key_1). Otherwise, check to see if you have a key already:
+If you see "No such file or directory", then there aren't any existing keys: go to [Step Three](#step-three-generate-a-new-key_1). Otherwise, check to see if you have a key already.
 
 ```
 ls id_*
@@ -64,7 +64,7 @@ If there are existing keys, you may want to use those: go to [Upload key](#uploa
 
 #### Step Two - back up old keys
 
-If you have existing SSH keys, but you don't want to use them when connecting to exabyte.io, you should back them up. In a command prompt on your local computer, run:
+If you have existing SSH keys, but you don't want to use them when connecting to exabyte.io, you should back them up. In a command prompt on your local computer, run.
 
 ```
 mkdir key_backup
@@ -73,10 +73,10 @@ cp id_rsa* key_backup
 
 #### Step Three - generate a new key
 
-If you don't have an existing SSH key that you wish to use, generate one as follows:
+If you don't have an existing SSH key that you wish to use, generate one as follows.
 
 - log in to your local computer as an administrator
-- In a command prompt, run:
+- In a command prompt, run.
 
     ```
     ssh-keygen -t rsa -C "your_email@example.com"

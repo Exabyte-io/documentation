@@ -1,6 +1,6 @@
 # Details
 
-We published a comprehensive comparative benchmarking study for multiple cloud providers:
+We published a comprehensive comparative benchmarking study for multiple cloud providers.
 
 <embed src="https://exabyte.io/assets/hpl-benchmark-2017-02-19.pdf" width="100%" height="1000" type='application/pdf'>
 

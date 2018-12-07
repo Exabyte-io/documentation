@@ -8,7 +8,7 @@ Each one of these actions is reviewed separately below. Click on the visuals inc
  
 # Rotate / Translate / Zoom
 
-Toggling "Rotate / Zoom" option will allow the user to:
+Toggling "Rotate / Zoom" option will allow the user to.
 
 - `Rotate` the crystal view by moving the mouse around whilst holding the **left button**.
 - `Translate` the crystal view by moving the mouse around whilst holding the **right button**.

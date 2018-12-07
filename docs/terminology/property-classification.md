@@ -8,7 +8,7 @@ One potential way to break down characteristic properties is by their character 
 
 # Classification
 
-We subdivide all properties into:
+We subdivide all properties into.
 
 ## Core-Properties
 

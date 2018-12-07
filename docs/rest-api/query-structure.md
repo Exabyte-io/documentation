@@ -37,7 +37,7 @@ Some of the endpoints support list action which uses `GET` HTTP method to return
 
 `query` parameter is a JSON object following Mongo Query[^2] format. It is passed inside URL and must be encoded.  URLs can only be sent over the Internet using the ASCII character-set. URL encoding replaces unsafe ASCII characters with a "%" followed by two hexadecimal digits. URLs cannot contain spaces. URL encoding normally replaces a space with a plus (+) sign or with %20. Please see HTML URL Encoding Reference[^3] for more information. The following example lists the materials with formula equal to SiGe (`query={"formula": "SiGe"}`).
 
-An example way of listing materials with "SiGe" chemical formula is given below:
+An example way of listing materials with "SiGe" chemical formula is given below.
 ```bash
 curl -X GET https://platform.exabyte.io/api/2018-10-01/materials?query=%7B%22formula%22%3A+%22SiGe%22%7D \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
@@ -58,7 +58,7 @@ curl -X GET https://platform.exabyte.io/api/2018-10-01/materials?query=%7B%22for
 
 `projection` parameter is passed inside the URL and must be encoded similar to `query` parameter.
 
-For example if there are 200 materials which you want to get via 2 calls to the API, the following projections can be used:
+For example if there are 200 materials which you want to get via 2 calls to the API, the following projections can be used.
 
 - {"limit": 100}
 - {"skip": 100, "limit": 100}
