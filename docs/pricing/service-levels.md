@@ -4,7 +4,7 @@ Service levels define the price per the amount of compute you consume while usin
 
 ## Comparison Table
 
-Below is a quick comparison of our service levels:
+Below is a quick comparison of our service levels.
 
 | Feature per Plan         |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-Extra         |
 | :-------------           |:----------- |:-------------      |:-------------      |:-------------      |:-------------             |
@@ -24,7 +24,7 @@ Below is a quick comparison of our service levels:
 
 The service level is defined by the pre-payment that an account holder makes. When multiple payments are applied, we prioritize the maximum amount within its validity period.
 
-Here's how it works:
+Here's how it works.
 
 - Upon signup the service level is initially set to `Promo`.
 - When user provides a payment method, purchases allocation and pays the minimum amount ($50) the service level is set to `Advanced`
@@ -36,7 +36,7 @@ Here's how it works:
 
 Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/collaboration/organizations/overview.md). 
 
-Notes:
+Notes.
 
 - the first organization per user is given $10 promo credit
 - by paying $5,000 a user can secure 'Enterprise' service level for his/her organization

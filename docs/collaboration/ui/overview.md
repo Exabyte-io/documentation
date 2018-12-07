@@ -4,7 +4,7 @@ When a user logs into our platform with an Organizational account, he/she will n
 
 An additional **Team-specific Page** exists for each Team, listing all of its assigned People and Entities.
 
-The access points to these three interface components are highlighted in the image below. Their respective documentation pages are referenced according to the same numbers:
+The access points to these three interface components are highlighted in the image below. Their respective documentation pages are referenced according to the same numbers.
 
 ![Teams People Tabs](/images/teams-people-tabs.png "Teams People Tabs")
 

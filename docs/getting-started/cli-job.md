@@ -6,7 +6,7 @@ You may want more control over the workflow execution or run a type of calculati
 
 We provide an interface to command line terminal directly through the web. You can view details on setting up your terminal connection and ssh keys [here](/remote-connection/overview.md).
 
-To use the terminal interface, open right sidebar and click "Terminal":
+To use the terminal interface, open right sidebar and click "Terminal".
 
 The data directory where your simulations that have been submitted through the web are under the data/<your_username> sub-directory under your home directory.
 
@@ -48,7 +48,7 @@ Once your job starts running all the output will be placed in the directory wher
 
 ## Animation
 
-The animation below demonstrated the above steps in action:
+The animation below demonstrated the above steps in action.
 
 <!-- TODO: use local gif instead -->
 <img data-gifffer="https://exabyte.io/img/screencast-1.gif"/>

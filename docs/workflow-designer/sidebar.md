@@ -8,6 +8,6 @@ The user can click and select any subworkflow module listed in this sidebar to a
 
 # Visual
 
-An example appearance of this sidebar list within the wider Workflow Designer interface, is highlighted in the image below:
+An example appearance of this sidebar list within the wider Workflow Designer interface, is highlighted in the image below.
 
 <img src="/images/subworkflow-list.png"/>

@@ -4,13 +4,13 @@ New Organizations can be created by first navigating to [My Accounts](../../../a
 
 ## Open "Create New Organization" Dialog
 
-Next, click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner. At this stage, the following dialog appears:
+Next, click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner. At this stage, the following dialog appears.
 
 ![Create New Organization](/images/create-new-organization.png "Create New Organization")
 
 ## Enter Information
 
-The user should enter the following set of information in the corresponding text fields:
+The user should enter the following set of information in the corresponding text fields.
 
 - Name: the desired name of the new Organization being created (compulsory information).
 - Email: the email address to be associated (compulsory information). 
@@ -42,6 +42,6 @@ The user who performed the above steps is appointed as the [owner](../../organiz
 
 ## Animation
 
-In the demonstration below, we create a new Organization called "Example":
+In the demonstration below, we create a new Organization called "Example".
 
 <img data-gifffer="/images/organization-create.gif">

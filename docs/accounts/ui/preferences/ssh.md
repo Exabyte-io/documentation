@@ -33,6 +33,6 @@ The list of SSH keys under the  Account Preferences page additionally gives the 
 
 ### Animation 
 
-After having been added, the same new key entry created in the previous step is now deleted from the list:
+After having been added, the same new key entry created in the previous step is now deleted from the list.
 
 <img data-gifffer="/images/delete-key.gif" />

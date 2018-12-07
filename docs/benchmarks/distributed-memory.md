@@ -13,7 +13,7 @@ The purpose of this study was to estimate the extent to which a calculation for 
 
 Vienna Ab-initio Simulation Package (VASP) at version 5.3.5 with a corresponding set of atomic pseudo-potentials, and Quantum ESPRESSO (QE) at version 5.2.1 with a set of pseudo-potentials as explained below were employed for this study.
 
-Two basic parallelization schemes were attempted:
+Two basic parallelization schemes were attempted.
 
 * parallelization over the electronic bands for large-unit-cell materials (further referred to as ELB)
 * parallelization over the sampling points in reciprocal space, or k-points (further referred to as  KPT)

@@ -4,7 +4,7 @@ Sections in the "Important Settings" tab of the Subworkflow Designer interface c
 
 In this type of settings section, the user is first presented with a graphic outline of the Brillouin zone of the crystal structure under consideration, drawn with respect to the indicated reciprocal coordinate system. In this image, the special symmetry k or q points in reciprocal space are labelled with the conventional Greek letters, and the path connecting them which is to be computed is traced in red. 
 
-An example for specifying the reciprocal path of k-points for a band structure dispersion calculation (the so-called "kpath"), is portrayed in the picture below:
+An example for specifying the reciprocal path of k-points for a band structure dispersion calculation (the so-called "kpath"), is portrayed in the picture below.
 
 <img src="/images/path-settings.png"/>
 

@@ -15,7 +15,7 @@ Si is the default material, so if you choose "Create a Job" from the sidebar on 
 
 Density of states is calculated in conjunction with band structure calculation so under workflow chose the "Bandstructure + DOS" for either Quantum Espresso.
 
-Click on the animation below to view:
+Click on the animation below to view.
 
 <img data-gifffer="/images/DOSStep2.gif" />
 

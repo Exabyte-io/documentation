@@ -4,7 +4,7 @@ By ticking the box "Run inside a separate job" in the "Compute" tab of the Subwo
 
 Please refer to [this page](/infrastructure/overview.md) for a detailed technical explanation about the cloud architecture and general supercomputing infrastructure implemented as part of the Exabyte platform. 
 
-The appearance of this "Compute" tab is displayed below, with its corresponding different sections highlighted:
+The appearance of this "Compute" tab is displayed below, with its corresponding different sections highlighted.
 
 <img src="/images/compute-tab.png"/>
 

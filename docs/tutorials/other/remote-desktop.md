@@ -4,7 +4,7 @@ This tutorial describes the steps to connect to a remote desktop session through
 
 # Pre-installed visualization software
 
-We have pre-installed the following list of application for graphical visualization on the remote desktop:
+We have pre-installed the following list of application for graphical visualization on the remote desktop.
 
 1. [XCrysden](#links)
 2. [VESTA](#links)

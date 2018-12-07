@@ -10,7 +10,7 @@ Subworkflow Editor is itself subdivided into three distinct main components:
 - the main editor interface below it comprising four different selectable **tabs**, each pertaining to different aspects of the subworkflow's operations, and
  - **units flowchart** at the bottom displaying the ordered sequence of computational units included as part of the current subworkflow.
 
-The location of each component is highlighted in the picture below for the example case of a band structure calculation workflow. Click on a panel in the image to be redirected to the corresponding documentation page for each component:
+The location of each component is highlighted in the picture below for the example case of a band structure calculation workflow. Click on a panel in the image to be redirected to the corresponding documentation page for each component.
 
 <img src="/images/sw-editor-components.png" usemap="#mapname">
                                            

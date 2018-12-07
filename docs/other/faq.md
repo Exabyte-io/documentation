@@ -1,6 +1,6 @@
 <!-- TODO by TB -->
 <!--
-other questions to add:
+other questions to add.
 - how long does it take for my calculation to start?
 - who else is using it?
 - where can I leave a feature request?
@@ -17,7 +17,7 @@ We believe that focusing on core science is the most effective way to speed thin
 
 ## I don't get it - what is it really?
 
-OK, the animation below might help demonstrate our vision:
+OK, the animation below might help demonstrate our vision.
 
 <img data-gifffer="https://exabyte.io/img/iron-man-creates-material.gif">
 

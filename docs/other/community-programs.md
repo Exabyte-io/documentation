@@ -6,10 +6,10 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
 
 > Without any promise, we may consider advocating for the interested people with a well formulated intent for accessing VASP who do not fit the current eligibility criteria in front of the original developers.
 
-**In order to apply**:
+**In order to apply**.
 
 - send an email to support@exabyte.io with a subject containing "VASP-On-demand"
-- include the following information about yourself:
+- include the following information about yourself.
     - Full name
     - Institutional Affiliation
     - Contact information of the VASP license holder: email, license number
@@ -24,10 +24,10 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
 
 For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](/getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide computing free of charge.
 
-**In order to apply**:
+**In order to apply**.
 
 - send an email to support@exabyte.io with a subject containing "Case study"
-- include the following information about yourself:
+- include the following information about yourself.
     - Full name
     - Affiliation
     - Title of the proposed project for case study (200 characters max)
@@ -41,10 +41,10 @@ For a limited time we are open to support users who are willing to use exabyte.i
 
 For currently enrolled students that require access to our platform for educational purposes we provide access free of charge on a case-by-case basis.
 
-**In order to apply**:
+**In order to apply**.
 
 - send an email to support@exabyte.io with a subject containing "Student program"
-- include the following information about yourself:
+- include the following information about yourself.
     - Full name
     - Name of educational institution
     - Instructor and class identifier (eg. "UC Berkeley, Physics 290A")

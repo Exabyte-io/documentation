@@ -2,7 +2,7 @@
 
 [Sets](../sets.md) can be created in the account-owned [collections](/accounts/collections.md) of Materials or Jobs by clicking `Create Set` button <i class="zmdi zmdi-folder-outline zmdi-hc-border"></i> in the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar).  
 
-The user is presented with the following highlighted dialog, under which the name of the new set can be entered in the text field:
+The user is presented with the following highlighted dialog, under which the name of the new set can be entered in the text field.
 
 <img src="/images/create-set-name.png" > 
 

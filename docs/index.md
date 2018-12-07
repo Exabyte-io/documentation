@@ -18,7 +18,7 @@ Navigation bar on the left also serves as the table of contents. You may click o
 
 ## Support
 
-We reply to support requests within 24 hours. Our team can be contacted during working hours Pacific Time through:
+We reply to support requests within 24 hours. Our team can be contacted during working hours Pacific Time through.
 
 - email: <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>,
 - phone: +1.510.473.7770,

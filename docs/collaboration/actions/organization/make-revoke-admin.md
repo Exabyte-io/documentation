@@ -12,7 +12,7 @@ Here, the option `Make admin` <i class="zmdi zmdi-chevron-up zmdi-hc-border"></i
 
 ## Animation
 
-In the example below, we appoint a new Administrator to our Organization called "Example":
+In the example below, we appoint a new Administrator to our Organization called "Example".
 
 <img data-gifffer="/images/organization-add-admin.gif">
 
@@ -23,6 +23,6 @@ Similarly, any Administrator can have his title revoked through the `Revoke admi
 
 ## Animation
 
-Below, we revoke the title of Administrator to the same member considered in the previous animation:
+Below, we revoke the title of Administrator to the same member considered in the previous animation.
 
 <img data-gifffer="/images/organization-revoke-admin.gif">

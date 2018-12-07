@@ -1,6 +1,6 @@
 # Actions Related to Entity Sharing
 
-The following actions can be performed under the ["Sharing Settings" dialog](ui.md):
+The following actions can be performed under the ["Sharing Settings" dialog](ui.md).
 
 ## Set Permissions
 
@@ -30,7 +30,7 @@ Conversely, any selected Account can be removed from the Sharing Options (and th
 
 ## Animation
 
-In the example below, we demonstrate how to share a Material (Silicon). We share it with other users informed about the shareable link, and with another added Account called "Team Exabyte.io". To both sharing options, read permissions are finally granted:
+In the example below, we demonstrate how to share a Material (Silicon). We share it with other users informed about the shareable link, and with another added Account called "Team Exabyte.io". To both sharing options, read permissions are finally granted.
 
  <img data-gifffer="/images/entity-sharing.gif" />
 

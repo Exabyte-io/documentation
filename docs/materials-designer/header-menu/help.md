@@ -1,6 +1,6 @@
 # Help Menu
 
-In case of having any questions on manipulating and operating the Materials Designer, that are not covered in the present documentation, use the `Help` menu highlighted in the figure below:
+In case of having any questions on manipulating and operating the Materials Designer, that are not covered in the present documentation, use the `Help` menu highlighted in the figure below.
  
 <img src="/images/help-menu.png"/>
 

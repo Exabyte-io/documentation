@@ -54,7 +54,7 @@ Within the analytics page, you will see a list of all materials, search for and 
 
 # Increasing accuracy with HSE
 
-Hybrid Screened Exchange is a more computationally expensive model to be used within DFT that more accurately predicts the energy of excited state electrons.  The screen shots below show how to edit a similar workflow as described above to set us the HSE calculation.  The INCAR file below for the band gap prediction stage of the calculation is contains the last 4 lines necessary to set up the HSE settings for this calculation:
+Hybrid Screened Exchange is a more computationally expensive model to be used within DFT that more accurately predicts the energy of excited state electrons.  The screen shots below show how to edit a similar workflow as described above to set us the HSE calculation.  The INCAR file below for the band gap prediction stage of the calculation is contains the last 4 lines necessary to set up the HSE settings for this calculation.
 
 ```
 LWAVE  = .FALSE.

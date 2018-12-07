@@ -1,6 +1,6 @@
 # Clone / copy entities
 
-The cloning (or copying) of one or more entity items, present in an account-owned collection, into a new distinct entry can be achieved as follows:
+The cloning (or copying) of one or more entity items, present in an account-owned collection, into a new distinct entry can be achieved as follows.
 
 1. [select](select.md) one or multiple entities,
 2. click `Copy` button <i class="zmdi zmdi-copy zmdi-hc-border"></i> in the [actions toolbar](/entities-general/ui/explorer.md#actions-toolbar) at the top of the collection list.
@@ -13,6 +13,6 @@ Once the cloning is finished, a new separate entry with exactly the same content
 
 # Animation
 
-We demonstrate how cloning works in an example animation below: we clone a newly-created workflow (labelled "Empty Workflow") into a new distinct entry shown directly above it in the collection:
+We demonstrate how cloning works in an example animation below: we clone a newly-created workflow (labelled "Empty Workflow") into a new distinct entry shown directly above it in the collection.
 
 <img data-gifffer="/images/clone-workflow.gif" />

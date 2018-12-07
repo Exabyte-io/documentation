@@ -29,14 +29,14 @@ Once the Relaxation calculation has been selected and added to the beginning of 
 
 # Animation
 
-The above steps for adding the relaxation subworkflow at the beginning of an existing band structure calculation workflow are demonstrated in the animation below:
+The above steps for adding the relaxation subworkflow at the beginning of an existing band structure calculation workflow are demonstrated in the animation below.
 
 <img data-gifffer="/images/add-relaxation.gif" />
 
 
 # Relaxation types
 
-Relaxations are usually classified by the number of degrees of freedom allowed to relax during the calculation, which may include:
+Relaxations are usually classified by the number of degrees of freedom allowed to relax during the calculation, which may include.
 
 1. Atoms - position of the atoms
 2. Cell shape - angles between lattice vectors

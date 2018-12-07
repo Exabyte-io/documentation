@@ -2,13 +2,13 @@
 
 [SCP file transfers](../../remote-connection/ssh.md#transfer-files-with-scp) can be performed directly via any terminal instance opened in a local user machine running a Unix-based operating system, through the following commands (the user should replace the text inside braces below with the corresponding names/paths).
 
-1. To transfer local files **to** exabyte.io remote server (called "bohr"):
+1. To transfer local files **to** exabyte.io remote server (called "bohr").
 
 ```bash
 scp -i <path to private_key> <path to local file> <username>@bohr.exabyte.io:<path inside login home>
 ```
 
-2. To transfer remote files **from** exabyte.io server to local machine:
+2. To transfer remote files **from** exabyte.io server to local machine.
 
 ```
 scp -i <path to private_key> <username>@bohr.exabyte.io:<path inside login home> <path to local file>

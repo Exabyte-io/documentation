@@ -1,6 +1,6 @@
 # 3d Editor: Edit Panel
 
-The second `Edit` button <i class="zmdi zmdi-border-color zmdi-hc-border"></i> in the interactive mode of the 3D graphical crystal viewer includes the following set of actions, which give user manoeuvrability in editing graphically, and in real time, the positions of the atoms in the material:
+The second `Edit` button <i class="zmdi zmdi-border-color zmdi-hc-border"></i> in the interactive mode of the 3D graphical crystal viewer includes the following set of actions, which give user manoeuvrability in editing graphically, and in real time, the positions of the atoms in the material.
 
 <!-- TODO: this image is too large, make buttons same size as in View Panel -->
 

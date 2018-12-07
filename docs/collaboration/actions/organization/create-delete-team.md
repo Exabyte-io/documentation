@@ -6,7 +6,7 @@ Creating a new Team within an Organization is performed in a similar way to the 
 
 ## "Create New Team" Dialog
 
-Click "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page to be presented with the following dialog:
+Click "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page to be presented with the following dialog.
 
 ![Create New Team](/images/create-new-team.png "Create New Team")
 
@@ -24,7 +24,7 @@ Once the required information is inserted, click `Create` button. The new Team a
 
 ## Animation
 
-In the example animation below, we demonstrate how to create a new Team under the "Example" Organization called "Test Team", to which we grant "Read" permissions only:
+In the example animation below, we demonstrate how to create a new Team under the "Example" Organization called "Test Team", to which we grant "Read" permissions only.
 
 <img data-gifffer="/images/organization-add-team.gif">
 
@@ -35,6 +35,6 @@ Teams listed under the Teams Explorer can be deleted following the [standard "De
 
 ## Animation
 
-We now show how to delete the "Test Team" created in the previous animation:
+We now show how to delete the "Test Team" created in the previous animation.
 
 <img data-gifffer="/images/organization-remove-team.gif">
