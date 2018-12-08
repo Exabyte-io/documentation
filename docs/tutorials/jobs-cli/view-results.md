@@ -4,7 +4,9 @@ By default, all [jobs submitted](../../jobs-cli/overview.md) from the [Command L
 
 When jobs are registered in this way, their associated simulation files contained in the job's main [Working Directory](../../jobs-cli/batch-scripts/directories.md) become accessible under the [Files Explorer Interface](../../jobs/ui/files-tab.md) within the corresponding [Job Viewer page](../../jobs/ui/viewer.md). 
 
-If the user does not want the job to be shown on the Web Interface, he/she should specify the following [directive](../../jobs-cli/batch-scripts/directives.md) inside the corresponding [job script file](../../jobs-cli/batch-scripts/overview.md).
+## Resource Manager Directive
+
+Whether the job registers in the Web interface is controlled by a directive inside the script. In case this functionality intervenes with other user actions for any reason, the user can disable the feature by specifying the following [directive](../../jobs-cli/batch-scripts/directives.md) inside the corresponding [job script file](../../jobs-cli/batch-scripts/overview.md).
 
 ```bash
 #PBS -R n
