@@ -8,7 +8,7 @@ We explain how to compose **Batch Scripts** (also known as **Job Scripts**), nec
 
 ## Accounting
 
-We describe the accounting aspects of Job submission via CLI, such as specifying [Projects](../jobs/projects.md) and inspecting the [Account charges and balance](../accounts/overview.md), [here](accounting.md).
+We describe the accounting aspects of Job submission via CLI, such as specifying [Projects](../jobs/projects.md) and inspecting the [Account](../accounts/overview.md) charges and balance, [here](accounting.md).
 
 ## Actions
 

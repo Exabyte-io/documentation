@@ -19,8 +19,8 @@ Id Name     Amount Reserved Balance CreditLimit Available
 The entries returned by the above command are summarized in the table below, complementing their [general discussion](../../accounts/balance.md). We remind the reader that in order to perform computations on our platform, a positive balance is required.
 
 
-| Entry | Description |
-|------|---------|
+| Entry  | Description |
+|--------|-------------|
 | Amount | Total combined amount of money |
 | Reserved | Money already allocated for executing Jobs |
 | Available | Remaining money not allocated yet |
@@ -34,7 +34,7 @@ We track the **usage** of our platform, or [balance](../../accounts/balance.md) 
 
 This statement can be inspected with the `statement` command under CLI, as demonstrated in the example below.
 
-`# > statement`
+`# > statement -s 2018-01-01 -e 2019-01-21`
 
 ```bash
 ################################################################################
@@ -42,7 +42,7 @@ This statement can be inspected with the `statement` command under CLI, as demon
 # Statement for user steven
 # Includes account 2 (steven)
 # Generated on Wed Feb 11 16:00:34 2016.
-# Reporting account activity from -infinity to now.
+# Reporting account activity from 2018-01-01 to 2019-01-21.
 #
 ################################################################################
 
@@ -57,35 +57,24 @@ Ending Balance:                  999.09
 
 Object  Action  JobId Amount  Time
 ------- ------- ----- ------- -------------------
-Account Deposit       1000.00 2016-08-06 09:29:14
+Account Deposit       1000.00 2019-08-06 09:29:14
 
 ############################### Debit Detail ###################################
 
-Object Action JobId Project  User     Machine            Amount Time
------- ------ ----- -------- -------- ------------------ ------ -------------------
-Job    Charge 15    steven   steven   cluster.exabyte.io  -0.00 2016-08-08 04:09:51
-Job    Charge 16    steven   steven   cluster.exabyte.io  -0.00 2016-08-08 04:10:35
-Job    Charge 17    steven   steven   cluster.exabyte.io  -0.00 2016-08-08 04:28:08
-Job    Charge 18    steven   steven   cluster.exabyte.io  -0.00 2016-08-08 04:28:21
-Job    Charge 28    steven   steven   cluster.exabyte.io  -0.01 2016-08-08 06:48:42
-Job    Charge 30    steven   steven   cluster.exabyte.io  -0.03 2016-08-08 09:53:29
+Object Action JobId Project  User     Machine                                           Amount Time
+------ ------ ----- -------- -------- ------------------------------------------------- ------ -------------------
+Job    Charge 15    steven   steven   master-production-20160630-cluster-007.exabyte.io  -0.00 2019-08-08 04:09:51
+Job    Charge 16    steven   steven   master-production-20160630-cluster-007.exabyte.io  -0.00 2019-08-08 04:10:35
+Job    Charge 17    steven   steven   master-production-20160630-cluster-007.exabyte.io  -0.00 2019-08-08 04:28:08
+Job    Charge 18    steven   steven   master-production-20160630-cluster-007.exabyte.io  -0.00 2019-08-08 04:28:21
+Job    Charge 28    steven   steven   master-production-20160630-cluster-007.exabyte.io  -0.01 2019-08-08 06:48:42
+Job    Charge 30    steven   steven   master-production-20160630-cluster-007.exabyte.io  -0.03 2019-08-08 09:53:29
 
 ############################### End of Report ##################################
 
 ```
 
-It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2017-01-08 -e 2018-01-08` would return the account statement during the course of a year, starting from the 8th of January 2017. 
-
-The full list of flags that can be passed to `statement` is reproduced below for reference purposes.
-
-```bash
-# > statement --help
-
-Usage:
-    gstatement [[-a] *account_id*] [-p *project_name*] [-u *user_name*] [-m
-    *machine_name*] [-s *start_time*] [-e *end_time*] [--summarize] [-h,
-    --hours] [--debug] [-?, --help] [--man] [-V, --version]
-```
+It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2019-01-01 -e 2019-01-08` would return the account statement starting from the 1st to the 8th of January 2019.
 
 ## Detailed List of Jobs
 

@@ -29,9 +29,9 @@ The shell customization can be further controlled via certain **startup scripts*
 
 ### Modules
 
-Pre-compiled software packages and programming libraries, referred to as **modules**, are already available for use under the CLI, such that the user does not have to recompile them. They can be **loaded** and made available to the CLI environment with the `module` command, which is reviewed [under this page](actions/modules.md).
+Software packages and programming libraries, are available through the **environment modules** further explained in a [dedicated page](modules.md).
 
-After their loading, modules can be inserted in [Job Scripts](../jobs-cli/batch-scripts/overview.md) for [Job execution via the CLI](../jobs-cli/overview.md). 
+After loading the corresponding modules, the software can be used in [Job Scripts](../jobs-cli/batch-scripts/overview.md) for [Job execution via the CLI](../jobs-cli/overview.md). 
 
 ## Python Environment
 

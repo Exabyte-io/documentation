@@ -20,10 +20,6 @@ The general layout structure of Batch Scripts is the object of [this discussion]
 
 [This page](directives.md) contains the list of the most important directives for specifying the allocation of [computing resources](../../infrastructure/resource/overview.md), necessary for the execution of the job under consideration.
 
-## UNIX Commands
-
-Typically, a batch script needs to include a series of UNIX commands for performing such actions as navigating to the working directory of the job being created, loading the required [modules](../../cli/actions/modules.md), and defining the parallel execution of the job under multiple computing cores. The most frequently encountered commands in the context of our batch scripts are narrated [here](commands.md).
-
 ## Working Directory
 
 The main "working" directory, which is important in the context of defining Batch Scripts, storing simulation files and submitting jobs via CLI, is described [in this page](directories.md).
@@ -34,8 +30,7 @@ We provide some examples on how to enter the relevant information about jobs in 
 
 ## Links
 
-[^1]: [Wikipedia Portable Batch System, Website](https://en.wikipedia.org/wiki/Portable_Batch_System)
+[^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
 
 [^2]: [Moab Cloud HPC Suite, Official Website](http://www.adaptivecomputing.com/moab-hpc-basic-edition/)
 
-[^3]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)

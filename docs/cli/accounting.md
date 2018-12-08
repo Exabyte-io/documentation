@@ -14,6 +14,19 @@ We introduce the relevant actions and commands for inspecting the account balanc
 
 The full documentation manual for the accounting system software that we implement under the CLI, called **"Gold"**, can be found under Ref. [^1]. 
 
+### Command-line parameters
+
+The account manager system is comprehensive and accepts multiple parameters. The full list of flags for each of the commands can be obtained by passing `--help` and is reproduced below for reference purposes using `statement`.
+
+```bash
+# > statement --help
+
+Usage:
+    gstatement [[-a] *account_id*] [-p *project_name*] [-u *user_name*] [-m
+    *machine_name*] [-s *start_time*] [-e *end_time*] [--summarize] [-h,
+    --hours] [--debug] [-?, --help] [--man] [-V, --version]
+```
+
 ## Links
 
 [^1]: [Gold User’s Guide, Document](http://docs.adaptivecomputing.com/gold/pdf/GoldUserGuide.pdf)
