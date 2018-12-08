@@ -80,6 +80,9 @@ TMP_DIR="${THIS_SCRIPT_DIR}/png_${TIMESTAMP}"
 # Trim the video
 ffmpeg -i $INPUT -ss ${BEGIN} -t ${DURATION} ${TIMESTAMP}_$(basename $INPUT)
 
+# Crop out dark black sides
+# ffmpeg -i $INPUT -filter:v "crop=1724:1080:98:0" ${TIMESTAMP}_$(basename $INPUT)
+
 mkdir $TMP_DIR
 
 # Create images from video
