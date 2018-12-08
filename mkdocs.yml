@@ -547,10 +547,11 @@ nav:
     - Command Line Interface:
         - Overview:                                     cli/overview.md
         - Environment:                                  cli/environment.md
+        - Environment Modules:                          cli/modules.md
         - Accounting:                                   cli/accounting.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
-            - Load / Unload Modules:                    cli/actions/modules.md
+            - Load / Unload Modules:                    cli/actions/modules-actions.md
             - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
