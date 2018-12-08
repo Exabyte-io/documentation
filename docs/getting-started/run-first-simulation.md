@@ -10,7 +10,7 @@ Silicon FCC is the default material added to each account on creation. Below we 
 
 <img data-gifffer="/images/run-first-simulation-import-workflow.gif"/>
  
-Readers can also learn how to [create](/materials-designer/overview.md) or [upload](/materials/actions/upload.md) / [import](/materials/actions/import.md) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](/entities-general/actions/set-default.md) elsewhere in this documentation. 
+Readers can also learn how to [create](../materials-designer/overview.md) or [upload](../materials/actions/upload.md) / [import](../materials/actions/import.md) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](../entities-general/actions/set-default.md) elsewhere in this documentation. 
  
 
 ## Open Job Designer
@@ -74,6 +74,6 @@ Job view screen lets you track the input parameters, output text, convergence pa
 
 ## Done
 
-This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](/tutorials/dft/band-structure.md).
+This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](../tutorials/dft/band-structure.md).
 
 <img src="/images/run-first-simulation-view-bandstructure.png"/>
