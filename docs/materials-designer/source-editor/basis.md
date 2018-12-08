@@ -5,9 +5,9 @@ The [atomic basis](../../properties-directory/structural/basis.md) of a Material
 <img src="/images/crystal-basis.png"/>
 
 
-# Coordinate Units
+## Coordinate Units
 
-## XYZ file format
+### XYZ file format
 
 Crystal Basis source can be edited directly as text. You may edit the elements' chemical symbols and coordinates directly inside the corresponding area, and the changes will be reflected in real-time (after clicking outside of the text area). 
 
@@ -27,13 +27,13 @@ H       -0.180226841     -1.699398882      1.572099030
 H       -0.180226841     -1.796059882     -0.917077970
 ```
 
-## Coordinate units: Crystal and Cartesian
+### Coordinate units: Crystal and Cartesian
 
 The default representation of the atomic coordinates is in crystal units (also commonly called fractional)[[1](#links)]. In this coordinate system, the axes of the unit cell are used as the basis vectors to describe the positions of the atoms.
 
 In addition, the atomic coordinates can be converted from such crystal units to a standard orthogonal Cartesian reference system (expressed in units of Angstroms) by clicking on "Cartesian Units".
 
-## Transformation between Crystal and Cartesian units
+### Transformation between Crystal and Cartesian units
 
 <details markdown="1">
   <summary>
@@ -54,13 +54,13 @@ $$
 
 </details>
 
-# Animation
+## Animation
 
 Click on the animation below to see the above in action. Here, we change the x-axis coordinate of the second off-origin atom in the two-atom basis of Silicon, and then convert these new modified coordinates to Cartesian units.
 
 <img data-gifffer="/images/ChangeMaterialBasis.gif" />
 
-# Links
+## Links
 
 1. [Wikipedia Fractional Coordinates, Website](https://en.wikipedia.org/wiki/Fractional_coordinates)
 2. [Wikipedia XYZ file format, Website](https://en.wikipedia.org/wiki/XYZ_file_format)
