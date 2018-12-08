@@ -4,9 +4,9 @@ Here, we explain how to assemble the necessary input scripts for [job submission
 
 ## General Procedure
 
-A new [simulation Job](../../jobs/overview.md) can be created by assembling all necessary **simulation input files**, as well as the **[Batch Script](../batch-scripts/overview.md)** associated with the job, and bringing all such files together under the same [Working folder](../batch-scripts/directories.md).
+A new [simulation Job](../../jobs/overview.md) can be created by assembling the necessary **simulation input files**, as well as the **[Batch Script](../batch-scripts/overview.md)** associated with the job, under the same [working folder](../batch-scripts/directories.md).
  
-This Working folder has to be located under the [cluster home directory](../../infrastructure/clusters/directories.md) of the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
+By our convention, this working folder must be located under the [cluster home directory](../../infrastructure/clusters/directories.md) of the [computing cluster](../../infrastructure/clusters/overview.md) being considered for job execution.
 
 !!! note "Choose walltime carefully"
     The [Walltime](../../infrastructure/compute/parameters.md#time-limit) of the simulation is defined in the [Batch Script](../batch-scripts/overview.md) through its corresponding [directive](../batch-scripts/directives.md), and should be chosen carefully for a number of reasons.
@@ -15,9 +15,9 @@ This Working folder has to be located under the [cluster home directory](../../i
     2. When not enough walltime is allocated, the job may not finish on time, resulting in an erroneous output. 
     3. The user is advised to [submit a support ticket](../../ui/support.md) if a walltime adjustment is needed during the course of a long job execution. Our support staff will do their best to accommodate the necessary desired changes, depending on the current computing load and business hours.
 
-## Job Templates
+Users can find our examples of job batch scripts and input files as explained [here](). 
 
-Users can find our examples of job batch scripts and input files within the **"job-script-template"** folder present inside the [Login Home directory](../../infrastructure/login/directories.md). 
+### Example
 
 Below are example commands needed to copy and run one of these template examples with the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) modeling application, contained in the `espresso` sub-directory inside `job_script_templates`.
 

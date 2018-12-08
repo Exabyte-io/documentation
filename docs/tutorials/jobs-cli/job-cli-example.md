@@ -117,7 +117,7 @@ mpirun -np $PBS_NP pw.x -in pw.in > pw.out
 
 Just like before, we are using template variables again instead of the [project](../../jobs/projects.md) name and email. Variables starting with `$PBS` are automatically set by the [resource manager](../../infrastructure/resource/overview.md), and are known as the ["PBS Directives"](../../jobs-cli/batch-scripts/directives.md). 
 
-The rest of the Batch Script contains [UNIX commands](../../jobs-cli/batch-scripts/commands.md) necessary for [loading the required modules](../../cli/actions/modules.md) and [running the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job) via CLI.
+The rest of the Batch Script contains UNIX commands necessary for [loading the required modules](../../cli/actions/modules-actions.md) and running the executables in parallel.
 
 ## 3. Shell Script
 
@@ -265,7 +265,7 @@ done
 
 ```
 
-The reader should note that within the `mpirun` [command for launching the job in parallel](../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job), present towards the bottom of the above input script example, we make use of the `tee` UNIX command. This redirects the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md), as demonstrated in [another Tutorial](view-results.md).
+The reader should note that within the `mpirun` command for launching the job in parallel(../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job), present towards the bottom of the above input script example, we make use of the `tee` UNIX command. This redirects the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md), as demonstrated in [another Tutorial](view-results.md).
 
 We can put the content of the above file into a bash script called `run.sh` for example, and then make the script executable with `chmod a+x run.sh` command.
  

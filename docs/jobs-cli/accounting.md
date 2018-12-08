@@ -14,9 +14,12 @@ Each user has a [default project](../jobs/projects.md#default-project) that jobs
 
 For the case of [Organizational Accounts](../collaboration/organizations/overview.md), if no project is specified within the batch script, then the [personal account](../collaboration/organizations/roles.md#organizations-vs.-personal-accounts) of the user will be charged upon under its default project.
 
+!!! warning "Remember to specify job project for organizational accounts"
+    Please remember to always specify the job project explicitly for organizational accounts. Otherwise the personal account will be charged, and/or (if there is not enough balance) the jobs might be removed from scheduling. 
+
 ## Registration of Jobs in Web Interface
 
-We explain how jobs submitted via CLI can be transmitted and registered to the [Web Interface](../ui/overview.md) of our platform in a [dedicated Tutorial](../tutorials/jobs-cli/view-results.md).
+We explain how jobs submitted via CLI can be transmitted and registered in the [Web Interface](../ui/overview.md) of our platform in a [dedicated Tutorial](../tutorials/jobs-cli/view-results.md).
 
 ## Check Account Balance and Quota
 
