@@ -37,7 +37,13 @@ The remaining folders conform to the conventions of the [Linux distribution](../
 
 Login node is meant for storing auxiliary data, such as source code, scripts, notes. Simulations should be executed, and bulky data should be stored, under the **Cluster Home** directories instead, indicated by the corresponding [cluster aliases](../clusters/overview.md#cluster-aliases) under the Login Home (for example, "cluster-001" and "cluster-007" in the file tree above). The contents of such cluster homes is further narrated in a [separate part](../clusters/directories.md) of the documentation.
 
-The Login Home also contains a folder with [Job script](../../jobs-cli/batch-scripts/overview.md) template examples, necessary for [submitting jobs via the Command Line Interface](../../jobs-cli/overview.md). 
+## Job Script Templates
+
+The Login Home also contains a folder with [Job script](../../jobs-cli/batch-scripts/overview.md) template examples, necessary for [submitting jobs via the Command Line Interface](../../jobs-cli/overview.md). Explained in more details [here](../../data-on-disk/directories.md#job-script-templates).
+
+## Dropbox
+
+Explained in more details [here](../../data-on-disk/directories.md#dropbox). 
 
 ## Example
 

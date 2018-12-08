@@ -14,6 +14,6 @@ Different queues are available corresponding to the compute categories, as expla
 
 ## Links
 
-[^1]: [Wikipedia TORQUE Resource Manager, Website](https://en.wikipedia.org/wiki/TORQUE)
+[^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
 
 [^2]: [Wikipedia Maui Cluster Scheduler, Website](https://en.wikipedia.org/wiki/Maui_Cluster_Scheduler)

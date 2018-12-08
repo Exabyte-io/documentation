@@ -5,7 +5,7 @@ The [Batch Scripts](overview.md) used for [job submission via CLI](../overview.m
 ![Batch Script General Structure](/images/jobscript_structure.png "Batch Script General Structure")
 
 !!!tip "Recommended extensions for Batch Scripts"
-    A common convention is to append the suffix ".pbs" or ".job" or ".sh" to the filename of batch scripts.
+    A common convention is to append the suffix ".pbs" or ".rms" or ".sh" to the filename of batch scripts.
 
 ## 1. Shebang
 
@@ -14,11 +14,11 @@ The **shebang** [^1] is a short character sequence at the beginning of the Batch
 - `#!/bin/sh` – Execute the file using the **Bourne shell**, or a compatible shell, with path `/bin/sh`.
 - `#!/bin/bash` – Execute the file using the **Bash shell**.
 
-## 2. Comments (if needed)
+## 2. Commentaries
 
-Comments (annotations) can conveniently be written anywhere within the batch script at the user's discretion, by inserting the "hash" character `#` at the start of the corresponding line.
+Commentaries (annotations) can be written anywhere within the batch script at the user's discretion, by inserting the "hash" character `#` and a single space ' ' at the start of the corresponding line.
  
-Comments may consist in any text string containing any type of character, except for placing an exclamation mark `!` or `PBS` character sequences immediately after the hash, since these character combinations are reserved respectively for the above-mentioned shebang, and for the scheduler directives explained below.
+Commentaries may consist in any text string containing any type of character, except for placing an exclamation mark `!` or [resource-manager](../../infrastructure/resource/overview.md)-specific text sequences immediately after the hash. The former character combination is reserved respectively for the above-mentioned shebang.
 
 ## 3. Directives
 
@@ -28,7 +28,7 @@ These directives are the object of a [dedicated review](directives.md).
 
 ## 4. Commands
 
-**Unix commands** can be inserted towards the bottom of the batch script, following the conventions of Shell scripting. The most frequently needed commands for parallel batch job execution are described [in this page](commands.md).
+Unix commands can be inserted towards the bottom of the batch script.
 
 ## Links
 

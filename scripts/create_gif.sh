@@ -80,6 +80,9 @@ TMP_DIR="${THIS_SCRIPT_DIR}/png_${TIMESTAMP}"
 # Trim the video
 ffmpeg -i $INPUT -ss ${BEGIN} -t ${DURATION} ${TIMESTAMP}_$(basename $INPUT)
 
+# Crop out dark black sides
+# ffmpeg -i $INPUT -filter:v "crop=1724:1080:98:0" ${TIMESTAMP}_$(basename $INPUT)
+
 mkdir $TMP_DIR
 
 # Create images from video
@@ -91,7 +94,7 @@ ffmpeg -i ${TIMESTAMP}_$(basename $INPUT) -vf scale=720:-1 -r 5 -vcodec ppm ${TM
 #   `-delay 20` below means the time between each frame is 0.2 seconds
 #   When choosing this value 100/delay = fps: 1 = 100 fps, 50 = 2 fps, 100 = 1 fps.
 #   When the FPS used by ffmpeg is lower than the equivalent FPS below the resulting video is speed up and vice versa.
-convert -delay 20 -loop 0 -layers optimize -layers RemoveDups $TMP_DIR/ffout*.png +map +dither ${GIF}
+convert -delay 20 -loop 0 -layers optimize $TMP_DIR/ffout*.png +map +dither ${GIF}
 
 # Optimize gif size; 256 colors are needed to remove grey shadows from background of GIF
 convert -colors 256 ${GIF} ${GIF}

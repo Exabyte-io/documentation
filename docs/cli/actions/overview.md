@@ -4,7 +4,7 @@ The following actions are available for the [Command Line Interface](../overview
 
 ## Load / Unload Modules
 
-We describe how pre-compiled [modules](../environment.md#modules) can be loaded, listed or purged under the CLI [in this page](modules.md).
+We describe how pre-compiled [modules](../environment.md#modules) can be loaded, listed or purged under the CLI [in this page](modules-actions.md).
 
 ## Customize Shell Environment
 
