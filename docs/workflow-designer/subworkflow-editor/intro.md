@@ -2,7 +2,7 @@
 
 The Subworkflow Editor displays the input parameters of a subworflow on the right-hand side of the Workflow Designer interface. Whenever a subworkflow module is clicked upon among those listed in the [left-hand sidebar](../sidebar.md) it becomes the currently active one and feeds data to the Editor component.  
 
-# Main components
+## Main components
 
 Subworkflow Editor is itself subdivided into three distinct main components: 
 
