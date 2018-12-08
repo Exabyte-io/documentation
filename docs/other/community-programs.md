@@ -22,7 +22,7 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
 
 # Case studies
 
-For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](/getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide computing free of charge.
+For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](../getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide computing free of charge.
 
 **In order to apply**.
 
