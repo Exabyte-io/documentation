@@ -265,7 +265,7 @@ done
 
 ```
 
-The reader should note that within the `mpirun` command for launching the job in parallel(../../jobs-cli/batch-scripts/commands.md#4.-launch-parallel-job), present towards the bottom of the above input script example, we make use of the `tee` UNIX command. This redirects the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md), as demonstrated in [another Tutorial](view-results.md).
+The reader should note that within the `mpirun` command we make use of the `tee` command. This redirects the output of the simulation to both the standard output (abbreviated as "stdout") and to the output file simultaneously. Redirecting to "stdout" in this way allows the status of the job to be regularly updated and refreshed under the corresponding [Job Viewer](../../jobs/ui/viewer.md) in the [Web Interface](../../ui/overview.md), as demonstrated in [another Tutorial](view-results.md).
 
 We can put the content of the above file into a bash script called `run.sh` for example, and then make the script executable with `chmod a+x run.sh` command.
  
@@ -280,7 +280,7 @@ The reader is referred to [this other Tutorial](view-results.md) for an explanat
 
 ## Animation
 
-We summarize the above-mentioned steps in the following animation. 
+We summarize the above-mentioned steps in the following video. 
 
 Here, we begin by entering the [Command Line Interface](../../cli/overview.md) via the [Web Terminal](../../remote-connection/web-terminal.md) connection method. We then navigate to the directory containing the `run.sh` input script under the [Home Folder](../../infrastructure/clusters/directories.md) of `cluster-007`, where we submit it for execution. 
 
