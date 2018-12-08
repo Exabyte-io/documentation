@@ -12,15 +12,15 @@ The notions of "qpath" and "ipath" instead pertain specifically to phonon disper
 
 Further information on the appearance and overall symmetry of such Brillouin Zones in reciprocal space is explained in Refs. [[2-3](#links)].  
 
-# Order of reciprocal symmetry points
+## Order of reciprocal symmetry points
 
 Below the image of the Brillouin Zone, the user can set the order of the special symmetry points of the Brillouin Zone defining the path in reciprocal space for computing the desired band structure energy or phonon frequency dispersion curves. By clicking on each Greek letter label listed here, the selection for the corresponding symmetry point can be changed as needed to alter their overall order in the path list. Alternatively, on the right-hand side of each entry in the list, two arrows can be found for swapping the order of the corresponding points accordingly. The "X" button can moreover be pressed to delete the point entry altogether. To insert new symmetry point entries and add them to the overall path, the "plus" sign icon at the bottom of the list can be clicked upon. 
 
-# Path branches
+## Path branches
 
 Finally, the number of steps at which band structure energies or phonon frequencies have to be calculated, along each branch of the reciprocal path, can also be entered next to the Greek letter label of the symmetry point defining one of the branch ends (the other end-point is set by the subsequent entry in the list). 
 
-# Links
+## Links
 
 1. [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
 2. [Wikipedia Brillouin zone, Website](https://en.wikipedia.org/wiki/Brillouin_zone)

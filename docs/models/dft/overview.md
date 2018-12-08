@@ -1,22 +1,22 @@
 # Density Functional Theory
  
-Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](/software/overview.md)). These are based on the Density Functional Theory (DFT) [[1](#links)] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [[2](#links)].
+Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software/overview.md)). These are based on the Density Functional Theory (DFT) [[1](#links)] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [[2](#links)].
 
-# Subtype
+## Subtype
 
 New subworkflows are by default based on the **Generalized Gradient Approximation** (GGA). **Local Density Approximation** is another commonly used subtype. 
 
-# Functional
+## Functional
 
 The particular default exchange-correlation functional is **Perdew, Burke and Ernzerhof** (PBE) [[3](#links)], which is widely used.
 
-> NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](/methods/pseudopotential/overview.md)
+> NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods/pseudopotential/overview.md)
 
-# Refiners
+## Refiners
 
 Hybrid Screened Exchange (HSE) [[4]](#links) or [[5]](#links) GW approximation (G0W0, for example) can be used as example refiners for a Density Functional Theory model.  
 
-# Modifiers
+## Modifiers
 
 DFT calculations might of might not treat the spin-orbit coupling interaction or magnetic interactions, which are both considered modifiers.
 
@@ -24,7 +24,7 @@ DFT calculations might of might not treat the spin-orbit coupling interaction or
 
 - Magnetism (magn), resulting from the spontaneous polarization (parallel lining up) of the spins of conduction electrons in ferromagnetic metals, such as iron, nickel and cobalt, giving rise to a magnetic moment in these materials even in the absence of an externally applied magnetic field [[6](#Links)].
 
-# Links
+## Links
 
 Additional resourceful general references on DFT and associated concepts, beyond those outlined below, are contained in this [page](references.md), to be referred to at the reader's discretion.
 
