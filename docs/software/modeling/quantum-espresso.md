@@ -6,13 +6,13 @@ The core plane wave DFT functions of QE are provided by the PWscf (Plane-Wave Se
 
 Complete documentation about the software package can be found in its corresponding website [[1](#links)]. The input file description for pw.x can be found in Ref. [[2]](#links). The package-specific documentation [[3]](#links) contains links to input descriptions for other executables as well.
 
-# Default settings
+## Default settings
 
-## Default Pseudopotentials
+### Default Pseudopotentials
 
 The list of pseudopotentials currently available on the Quantum Espresso website can be found in Ref [[4]](#links) below. Our platform provides the GBRV [[5]](#links) set at version 1.5 by default.
 
-# Links
+## Links
 
 1. [Official Quantum ESPRESSO website](https://www.quantum-espresso.org/)
 2. [Input file description of the pw.x code](https://www.quantum-espresso.org/Doc/INPUT_PW.html)

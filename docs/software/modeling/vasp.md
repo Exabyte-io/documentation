@@ -6,13 +6,13 @@ The underlying theoretical model is Density Functional Theory (DFT), but the cod
 
 Complete information and documentation about the VASP code can be found in its corresponding website [[1](#links)]. 
 
-# Default settings
+## Default settings
 
-## Default Pseudopotentials
+### Default Pseudopotentials
 
 The list of pseudopotentials currently available on the VASP can be found in Ref [[1]](#links) below. Our platform provides the files for 5.2 and 5.4 version by default.
 
-# Links
+## Links
 
 1. [Official VASP website](https://www.vasp.at/)
 2. [Official VASP Documentation Manual, pdf copy](http://cms.mpi.univie.ac.at/vasp/vasp.pdf)
