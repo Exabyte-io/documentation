@@ -16,7 +16,7 @@ Next all the necessary categorization information about the new pseudopotential 
  
 Once the desired file has been uploaded to the Subworkflow Editor via the `Choose File` option at the bottom of this dialog, the `Save` button can then be pressed to save this file to the account-owned collection of pseudopotentials. The content of the file will be stored on a network shared location ("Dropbox") to be made available to the calculations during the runtime.
 
-# Filter Pseudopotentials
+## Filter Pseudopotentials
 
 In the expanded "Pseudopotentials" subsection, the user will see a first editable "filtering" text bar where text or comma-separated regular expressions (such as the examples shown on the bar itself) may be typed to search and filter pseudopotentials out of the default or user-uploaded sets.
 
@@ -38,7 +38,7 @@ This particular regular expression operation applied to the available set of VAS
 
 <img data-gifffer="/images/regular-expression.gif" />
  
-# Links
+## Links
 
 1. [Wikipedia: Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
 
