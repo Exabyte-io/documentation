@@ -8,7 +8,7 @@ This results in a crystal structure with **long-range order**, which gives its c
 
 The image below outlines the crystal structure definition conceptually.
 
-![Crystal Structure](/images/crystal_structure.jpg "Crystal Structure")
+![Crystal Structure](../../images/crystal_structure.jpg "Crystal Structure")
 
 ## Links
 
