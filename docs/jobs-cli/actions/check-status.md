@@ -10,13 +10,15 @@ JOBID                                                  USERNAME    QUEUE    JOBN
 815.master-production-20160630-cluster-007.exabyte.io  steve       OR       my_job     R        1235kb    00:00:10    00:10:00          1      1
 ```
 
-The complete manual page for this command listing all its possible option flags can be found under page 364 in Ref. [^1].
+The complete manual page for this command listing all its possible option flags can be found in the reference containing the information about the Resource Management System [in the corresponding page of the present documentation](../../infrastructure/resource/overview.md#links) (page 364).
 
-## Job ID
+## Job ID in CLI
 
 The `qstat` command displays the information about jobs organized by their IDs, as listed under the **"JOBID"** column of the output. This "Job ID" includes the alias of the cluster where the job has been submitted (for example, `cluster-007` within the `814.master-production-20160630-cluster-007.exabyte.io` job ID in the above examples).
 
 It is important to make a note of this ID for job tracking and problem resolution, as well as for the case when [job termination](terminate.md) by the user becomes necessary.
+
+Job ID in command line may also be referred to as "jid".
  
 ## Possible Job Statuses
 
@@ -26,6 +28,4 @@ The possible job statuses indicated under the "STATE" column of the `qstat` comm
 - "R": Job is currently **Running**.
 - "C": Job execution is **Complete**. This can include the possibility of jobs interrupted prematurely because of errors.
 
-## Links
-
-[^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
+Consult the reference containing the information about the Resource Management System [in the corresponding page of the present documentation](../../infrastructure/resource/overview.md#links) for more information.
