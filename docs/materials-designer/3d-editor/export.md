@@ -1,6 +1,6 @@
 # 3d Editor: the "Export" panel
 
-The `Export` button <i class="zmdi zmdi-swap-vertical zmdi-hc-border"></i> located at the bottom of the interactive crystal viewer interface makes it possible to perform the following types of actions.
+The `Export` button <i class="zmdi zmdi-swap-vertical zmdi-hc-border"></i> located at the bottom of the interactive crystal viewer interface makes it possible to perform the following types of actions:
 
 <!-- TODO: this image is too large, make buttons same size as in View Panel -->
 

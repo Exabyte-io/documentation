@@ -30,7 +30,7 @@ There are many occurrences of methods in computational materials science for det
  
 #### Conventional vs primitive cells
  
-The conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect more intuitively the overall symmetry of such systems. The figure below illustrates this for the example of an fcc lattice. In this image, the volume marked in red represents the primitive unit cell, whereas the over-arching cubic conventional supercell exhibits the full face-centered cubic symmetry from which the corresponding crystal structure gets its name.
+The conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect more intuitively the overall symmetry of such systems. The figure below illustrates this for the example of an fcc lattice. In this image, the volume marked in red represents the primitive unit cell, whereas the over-arching cubic conventional supercell exhibits the full face-centered cubic symmetry from which the corresponding crystal structure gets its name:
 
 <img src="/images/TGa4T.png"/>
 
@@ -40,7 +40,7 @@ Finally, supercells are also commonly used in computational models of crystal de
 
 ### How are supercells defined?
 
-The basis vectors of unit cell U $({\vec {a}},{\vec {b}},{\vec {c}})$  can be transformed to basis vectors of supercell S $({\vec {a}}',{\vec {b}}',{\vec {c}}')$ by way of the following linear transformation.
+The basis vectors of unit cell U $({\vec {a}},{\vec {b}},{\vec {c}})$  can be transformed to basis vectors of supercell S $({\vec {a}}',{\vec {b}}',{\vec {c}}')$ by way of the following linear transformation:
 
 $$
 {\displaystyle {\begin{pmatrix}{\vec {a}}'&{\vec {b}}'&{\vec {c}}'\\\end{pmatrix}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\hat {P}}={\begin{pmatrix}{\vec {a}}&{\vec {b}}&{\vec {c}}\\\end{pmatrix}}{\begin{pmatrix}P_{11}&P_{12}&P_{13}\\P_{21}&P_{22}&P_{23}\\P_{31}&P_{32}&P_{33}\\\end{pmatrix}}} 

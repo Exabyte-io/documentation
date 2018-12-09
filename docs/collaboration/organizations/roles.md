@@ -1,6 +1,6 @@
 # User Roles
 
-The conduct of members in an Organization is governed through the user **Roles** listed below.
+The conduct of members in an Organization is governed through the user **Roles** listed below:
 
 ## Owner
 

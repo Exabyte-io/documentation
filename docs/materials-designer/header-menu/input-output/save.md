@@ -4,7 +4,7 @@ Save function of Materials Designer allows user to save any modifications to the
 
 ## Select "Save" Option
 
-In order to save structures following any changes made, click on the third `Save` <i class="zmdi zmdi-floppy zmdi-hc-border"></i> option in the `Input/Output` menu. This will open the following "Save Items" dialog.
+In order to save structures following any changes made, click on the third `Save` <i class="zmdi zmdi-floppy zmdi-hc-border"></i> option in the `Input/Output` menu. This will open the following "Save Items" dialog:
 
 <img src="/images/save-items.png"/>
 

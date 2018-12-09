@@ -16,7 +16,7 @@ Following any such addition, the resulting sorted and complete list of subworkfl
 
 ## Add Subworkflows
 
-To create a new subworkflow and insert it as part of the general workflow flowchart, click on the “plus” sign <i class="zmdi zmdi-plus zmdi-hc-border"></i> on the right-end of the actions menu bar. The following dialog will open.
+To create a new subworkflow and insert it as part of the general workflow flowchart, click on the “plus” sign <i class="zmdi zmdi-plus zmdi-hc-border"></i> on the right-end of the actions menu bar. The following dialog will open:
 
 <img src="/images/sw-addition.png"/>
 

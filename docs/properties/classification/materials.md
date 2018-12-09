@@ -27,7 +27,7 @@ We further make the following sub-categorization for Materials Properties, follo
 
 ## By domain
 
-The following domains of materials properties (with shortlists of examples) can be considered.
+The following domains of materials properties (with shortlists of examples) can be considered:
 
 - **Chemical**: 
     - reaction barrier height
@@ -44,27 +44,27 @@ The following domains of materials properties (with shortlists of examples) can 
     - charge density map
     - fermi surface
     - HOMO-LUMO gap
-- **Magnetic**.
+- **Magnetic**:
     - magnetic susceptibility
     - magnetic moment
-- **Mechanical**.
+- **Mechanical**:
     - hardness
     - bulk modulus
     - shear modulus
     - poisson ratio
-- **Optical**.
+- **Optical**:
     - absorption spectra
-- **Thermal**.
+- **Thermal**:
     - thermopower
     - heat capacity
-- **Thermodynamic**.
+- **Thermodynamic**:
     - formation energy
     - melting temperature
     - superconducting transition temperature
-- **Vibrational**.
+- **Vibrational**:
     - zero point energy
     - phonon dispersions
     - phonon density of states
     - electron-phonon coupling
-- **Other**.
+- **Other**:
     - other properties that do not fit the above classification 

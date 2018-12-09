@@ -8,7 +8,7 @@ The motivation behind using k-point convergence is explained in detail [here](/m
 
 # Create job
 
-We will use k-point convergence for a Total Energy calculation in this tutorial. To create a new job, click "Create Job" located in the sidebar/menu on the left. Use the default FCC Si structure. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below.
+We will use k-point convergence for a Total Energy calculation in this tutorial. To create a new job, click "Create Job" located in the sidebar/menu on the left. Use the default FCC Si structure. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
 
 <img data-gifffer="/images/ConvergeStep1.gif" />
 

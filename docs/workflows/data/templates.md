@@ -6,7 +6,7 @@ We allow for using Jinja templates [[1]](#links) inside the input to individual 
 
 Input templates are first rendered during the job design. Thus, when multiple materials are selected within a single job design session.
 
-For example, the input file below contains data that will be different for different materials, such as the number of atoms ("nato" flag).
+For example, the input file below contains data that will be different for different materials, such as the number of atoms ("nato" flag):
 
 ```jinja
 &CONTROL
@@ -52,7 +52,7 @@ K_POINTS automatic
 {% for d in kgrid.dimensions %}{{d}} {% endfor %}{% for s in kgrid.shifts %}{{s}} {% endfor %}
 ```
 
-for Silicon FCC as a default material the resulting rendered text of the unit input will be.
+for Silicon FCC as a default material the resulting rendered text of the unit input will be:
 
 ```fortran
 &CONTROL
@@ -113,7 +113,7 @@ There are two ways to edit the input of an individual unit: either by editing te
 
 It is often convenient to pass the output of one unit to another. This can currently be accomplished for standard output at the subworkflow level through referencing units by name.
 
-For example, if a workflow contains a subworkflow with a single shell script unit named "grep-nbands" with the following input.
+For example, if a workflow contains a subworkflow with a single shell script unit named "grep-nbands" with the following input:
 
 ```bash
 grep "NBANDS" ./OUTCAR | awk '{print $3}'
@@ -121,7 +121,7 @@ grep "NBANDS" ./OUTCAR | awk '{print $3}'
 
 and it is assumed to return a number inside its standard output.
 
-Then the units inside any of the following subworkflows can reference the result of this unit at **runtime** by using a special template variable inside its input template like so.
+Then the units inside any of the following subworkflows can reference the result of this unit at **runtime** by using a special template variable inside its input template like so:
 
 ```jinja
 NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %} 

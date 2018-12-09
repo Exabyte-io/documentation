@@ -20,7 +20,7 @@ Each unit box is clearly labelled with the name of the elementary computation th
 
 ## Adding units
 
-Finally, new elementary units can be added to this overall flowchart by clicking on the final empty unit box labelled with a "plus" sign <i class="zmdi zmdi-plus zmdi-hc-border"></i>. The following dialog will open, offering the user the possibility to choose the type of elementary unit that needs to be added in the first drop-down menu, and in the lower drop-down menu whether to append it or prepend it to the currently selected unit in the flowchart.
+Finally, new elementary units can be added to this overall flowchart by clicking on the final empty unit box labelled with a "plus" sign <i class="zmdi zmdi-plus zmdi-hc-border"></i>. The following dialog will open, offering the user the possibility to choose the type of elementary unit that needs to be added in the first drop-down menu, and in the lower drop-down menu whether to append it or prepend it to the currently selected unit in the flowchart:
 
 <img src="/images/new-units.png"/>
 

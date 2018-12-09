@@ -6,7 +6,11 @@ This page helps users quickly get through the documentation.
 
 ## Login
 
+<<<<<<< HEAD
 We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in.
+=======
+We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
+>>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 - [secure shell and in-browser terminals](../remote-connection/overview.md)
 - [remote desktop session example](../remote-connection/remote-desktop.md)
@@ -15,7 +19,7 @@ We support 2 basics login types: through web-page and via secure shell terminal.
 
 ## Creating materials
 
-There are 3 basic ways to input material geometries.
+There are 3 basic ways to input material geometries:
 
 - [construct new crystal geometries](../materials/creating-structures/) using our browser-based crystallographic design tools
 - [upload structure](../materials/upload-and-import/#upload-structure)  in POSCAR/CIF format(s)
@@ -32,7 +36,7 @@ Next step after creating/choosing a material is to simulate it to extract [chara
 
 [Workflows](../models/simulation-workflows/) define the algorithm used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on simulation engine and model. For example, [Density Functional Theory](../models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
 
-More information about specific workflows, including tutorials and input date.
+More information about specific workflows, including tutorials and input date:
 
 - [electronic band structure](../tutorials/band-structure)
 - [electronic band gap](../tutorials/band-gap)
@@ -49,7 +53,11 @@ More information about specific workflows, including tutorials and input date.
 
 ### Compute
 
+<<<<<<< HEAD
 Compute parameters ([submission queue](../infrastructure/resource/queues.md), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at.
+=======
+Compute parameters ([submission queue](/compute/queues), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
+>>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 - [setting compute parameters](../infrastructure/compute/parameters.md)
 - [compute platform overview](../infrastructure/compute/overview.md)
@@ -62,7 +70,7 @@ Compute parameters ([submission queue](../infrastructure/resource/queues.md), nu
 
 ### Run simulations via command-line interface (CLI)
 
-Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at.
+Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
 
 - [job submission: tutorial](../tutorials/cli-job)
 - [job submission examples](../jobs-cli/overview.md)
@@ -76,7 +84,7 @@ Advanced users connecting via command line terminal may use our queuing system s
 
 ## Exabyte Data Convention
 
-We employ a proprietary JSON-based data convention that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind and have a flexible permission scheme allowing for complete privacy and wide publicity. More at.
+We employ a proprietary JSON-based data convention that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind and have a flexible permission scheme allowing for complete privacy and wide publicity. More at:
 
 We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page (see below). Data originated on command line is accessible from within the web application and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning.
 

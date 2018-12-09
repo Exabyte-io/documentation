@@ -8,7 +8,7 @@ We also explain how to add python packages to the environment [in this page](cre
 
 The user might wish to compile a version of the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) simulation package different from the ones offered [through environment modules](modules-actions.md#list-available-modules). This new versions might also include modifications to the source code by the user. 
 
-We refer to the official documentation [^1] for the instructions on how to compile Quantum ESPRESSO via CLI. Sample routines that allow for the compilation are demonstrated below.
+We refer to the official documentation [^1] for the instructions on how to compile Quantum ESPRESSO via CLI. Sample routines that allow for the compilation are demonstrated below:
 
 ```bash
 # Create temporary directory

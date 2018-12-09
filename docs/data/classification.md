@@ -12,7 +12,7 @@ This section contains information about the general policies we use for the hand
 
 ## By relation to Entities
 
-We identify the relation of the data as follows.
+We identify the relation of the data as follows:
 
 - **materials**: information uniquely associated with a certain [material](../materials/overview.md).
 - **workflows**: information about a computational [Workflow](../workflows/overview.md) routine used to extract the data.
@@ -24,7 +24,7 @@ The data pertaining to each of Materials and Workflows can be related together t
 
 ## By source
 
-We further classify data into the following three main subtypes, distinguished by their source.
+We further classify data into the following three main subtypes, distinguished by their source:
 
 - **experimental**: obtained with experimental equipment.
 - **model**: obtained using modeling (computational or analytical).

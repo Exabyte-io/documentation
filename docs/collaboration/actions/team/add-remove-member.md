@@ -15,7 +15,7 @@ At this stage, the user is referred to the [Organization-related documentation p
 
 ## Animation
 
-We start from the profile page of an Organization called "Exabyte.io", and we then navigate to the specific page of a "Test Team". In the end, we demonstrate how to add multiple new users.
+We start from the profile page of an Organization called "Exabyte.io", and we then navigate to the specific page of a "Test Team". In the end, we demonstrate how to add multiple new users:
 
 <img data-gifffer="/images/team-add-user.gif">
 

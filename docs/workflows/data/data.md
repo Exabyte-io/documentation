@@ -2,7 +2,7 @@ In order to organize and store the information about workflows we employ [Exabyt
 
 # Example Representation
 
-Below is an example JSON representation a of a workflow. It contains five *subworkflows*, each of which contains a number of *units* in turn. The workflow demonstrates implements a many-body (GW) calculation of an electronic band gap with VASP.
+Below is an example JSON representation a of a workflow. It contains five *subworkflows*, each of which contains a number of *units* in turn. The workflow demonstrates implements a many-body (GW) calculation of an electronic band gap with VASP:
 
 ```json
 {

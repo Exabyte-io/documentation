@@ -4,7 +4,7 @@
 
 Click on the "Teams" tab <i class="zmdi zmdi-accounts zmdi-hc-border"></i> under the Organization's [profile page](../../accounts/ui/profile-page.md). The list of its constituent [Teams](../organizations/teams.md) appears, displayed in the standard [Explorer-type interface](../../entities-general/ui/explorer.md).
  
-The appearance of this "Teams Explorer" page is portrayed below.
+The appearance of this "Teams Explorer" page is portrayed below:
 
 ![Teams Explorer](/images/teams-explorer.png "Teams Explorer")
 

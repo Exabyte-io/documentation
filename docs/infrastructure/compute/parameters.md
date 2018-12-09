@@ -4,7 +4,7 @@ In the present page, we review the different **compute parameters** which can be
 
 ## Time limit 
  
-The user can specify the maximum time limit for the calculation to be run for. The format is `HH:MM:SS` in which H, M and S stand for day, hour, minute and second respectively. Thus, the example below would correspond to 12 hours exactly.
+The user can specify the maximum time limit for the calculation to be run for. The format is `HH:MM:SS` in which H, M and S stand for day, hour, minute and second respectively. Thus, the example below would correspond to 12 hours exactly:
 
 ```bash
 12:00:00

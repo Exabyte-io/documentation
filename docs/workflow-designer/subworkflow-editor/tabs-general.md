@@ -1,6 +1,6 @@
 # Editor Tabs  
 
-Each subworkflow is characterized by the input parameters contained in four distinct tabs within the Subworkflow Editor interface: the "Overview", "Important settings", "Detailed view" and "Compute" tabs. Each tab will now be reviewed in detail in the links presented below.
+Each subworkflow is characterized by the input parameters contained in four distinct tabs within the Subworkflow Editor interface: the "Overview", "Important settings", "Detailed view" and "Compute" tabs. Each tab will now be reviewed in detail in the links presented below:
 
 ## [The "Overview" tab](overview.md)
 

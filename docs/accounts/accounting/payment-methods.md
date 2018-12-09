@@ -3,7 +3,7 @@
 !!!warning "Warning: content with restricted access"
     All the information contained under the present documentation page is only relevant for Account Owners or Administrators, since only they have sufficient rights to view the content exposed herein and make the appropriate changes. We remind the reader that a user is always the Owner and full administrator of his own personal Account.
 
-In order to add a new payment method, the user should first click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the "Payment Methods" tab under the ["Billing" page](../ui/charges-payments.md), and should then fill in the form appearing underneath it which has the following aspect.
+In order to add a new payment method, the user should first click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the "Payment Methods" tab under the ["Billing" page](../ui/charges-payments.md), and should then fill in the form appearing underneath it which has the following aspect:
 
 ![Add new Payment Method](/images/add-new-payment.png "Add new Payment Method")
 
@@ -20,7 +20,7 @@ Once a new Credit Card payment method has been added, it will be shown in the ov
 
 ## Animation
 
-In the example animation below, we demonstrate how to add a new Credit Card payment method by filling the resulting forms with some arbitrary information. The card finally appears as a new entry in the list of Cards at the top of the page.
+In the example animation below, we demonstrate how to add a new Credit Card payment method by filling the resulting forms with some arbitrary information. The card finally appears as a new entry in the list of Cards at the top of the page:
 
 <img data-gifffer="/images/add-credit-card.gif" />
 
@@ -30,6 +30,6 @@ If multiple payment methods are stored under the same account, the default choic
 
 Any Credit Card payment method can furthermore be removed from the account's list by clicking on `Remove` in the correct entry row.
 
-The location of both the "Set Default" and "Remove" features in the list of payment methods is highlighted in the below image.
+The location of both the "Set Default" and "Remove" features in the list of payment methods is highlighted in the below image:
 
 ![Remove Default Payment](/images/remove-default-payment.png "Remove Default Payment")

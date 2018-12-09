@@ -2,14 +2,14 @@
 
 This page contains a brief description of security policies we employ at Exabyte.io.
 
-We protect the data at all steps during the simulation and analysis process with a set of layered methods.
+We protect the data at all steps during the simulation and analysis process with a set of layered methods:
 
 - we always encrypt data during transfers
 - we always encrypt data while it is at rest - stored on disk
 - when data resides in cloud object storage we enforce strict access rules
 - we limit the accessibility of the servers involved in the computation
 
-We offer a set of extra options, such as.
+We offer a set of extra options, such as:
 
 - isolated single-tenant clusters
 - limiting access only to trusted IP ranges, corporate VPN
@@ -29,7 +29,7 @@ Object storage is a computer data storage architecture that manages data as obje
 
 ## Other
 
-Other notable security features are.
+Other notable security features are:
 
 - Kerberos-based [^4] encryption/authentication for the network file system
 - 2048 bit AES database encryption

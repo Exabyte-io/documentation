@@ -1,6 +1,6 @@
 # View
 
-The `View` menu allows user to modify the appearance of the Materials Designer interface. The location of this menu component within the interface is illustrated below.
+The `View` menu allows user to modify the appearance of the Materials Designer interface. The location of this menu component within the interface is illustrated below:
 
 <img src="/images/view-menu.png"/>
 

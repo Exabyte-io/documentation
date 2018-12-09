@@ -8,7 +8,7 @@ In order to deliver the best service possible, we currently review all registrat
     We guarantee that the information you submit is private to our organization only, and do **not** share any of your information with any third parties.
 
 | Field         | Description                                       ||
-| ------------- |:-------------                                     | -----.
+| ------------- |:-------------                                     | -----:
 | Email         | A valid email                                     | required
 | Username      | Alphanumeric and lowercase from 5 to 10 symbols   | required
 | Affiliation   | Organisational affiliation                        | required
@@ -26,7 +26,7 @@ We vet all applications based on the information you provide, and what is availa
 
 # Other conditions to be accepted upon registration
 
-Before creating a registration request we require users to accept certain other conditions of use of Exabyte.io.
+Before creating a registration request we require users to accept certain other conditions of use of Exabyte.io:
 
 + **Non-disclosure agreement**: Exabyte.io is a unique platform, we require our new users to accept conditions to keep the features and functionality of the platform in the strictest confidence in order to be able to continue to create new and exciting features.
 

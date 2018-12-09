@@ -15,7 +15,7 @@ Readers can also learn how to [create](../materials-designer/overview.md) or [up
 
 ## Open Job Designer
 
-Start by clicking "Create Job" link in the left-hand sidebar to open the "Job Designer" page where you can.
+Start by clicking "Create Job" link in the left-hand sidebar to open the "Job Designer" page where you can:
 
 - Choose a previously created material
 - Choose and adjust a simulation Workflow

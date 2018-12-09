@@ -13,14 +13,14 @@ A model may have multiple numerical **Methods** or implementations. Since method
 
 # Simulation Engine
 
-A simulation engine is an implementation of a simulation algorithm in software. Currently supported engines are.
+A simulation engine is an implementation of a simulation algorithm in software. Currently supported engines are:
 
 1. Quantum ESPRESSO
 2. VASP
 
 # Precision
 
-Precision characterizes the degree of numerical approximation. For the planewave pseudopotential method the input parameters that affect precision are.
+Precision characterizes the degree of numerical approximation. For the planewave pseudopotential method the input parameters that affect precision are:
 
 1. k-point sampling
 2. Number of points in irreducible Brillouin zone (N<sub>k</sub><sup>IBZ</sup>)
@@ -36,7 +36,7 @@ Precision characterizes the degree of numerical approximation. For the planewave
 
 Accuracy measures  the degree of proximity between the result of a simulation to the results of an experimental measurement. When one model is more accurate than another one, the end results of a simulation based on the first model is closer to an experimental value.
 
-For Density Functional Theory Model the input parameters that affect accuracy include.
+For Density Functional Theory Model the input parameters that affect accuracy include:
 
 1. Electronic exchange and correlation functional used in the pseudopotentials (pseudo_xc_type)
 

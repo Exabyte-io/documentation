@@ -35,7 +35,7 @@ For command-line users we provide system system-default python installation (ver
 
 #### [Virtual Environment]()
 
-Here is an example quick setup for a python virtual environment with pymatgen [[2]](#links), a widely used package for materials analysis.
+Here is an example quick setup for a python virtual environment with pymatgen [[2]](#links), a widely used package for materials analysis:
 
 ```bash
 mkdir pymatgen project
