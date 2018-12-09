@@ -18,7 +18,7 @@ Hybrid Screened Exchange (HSE) [[4]](#links) or [[5]](#links) GW approximation (
 
 ## [Modifiers]()
 
-DFT calculations might of might not treat the spin-orbit coupling interaction or magnetic interactions, which are both considered modifiers.
+DFT calculations might of might not treat the spin-orbit coupling interaction or magnetic interactions, which are both considered modifiers:
 
 - Spin-Orbit Coupling (soc), a relativistic quantum physical interaction of a particle's spin with its motion inside a potential [[5](#Links)]. 
 

@@ -16,7 +16,7 @@ We have two basic account types: **personal** and **organizational** (or "enterp
 
 ### Permissions
 
-Each Entity has an associated set of permissions that are granted to accounts either directly, or through teams. The following types of permissions are present.
+Each Entity has an associated set of permissions that are granted to accounts either directly, or through teams. The following types of permissions are present:
 
 - read
 <!-- - comment -->
@@ -53,7 +53,7 @@ Accounts can view the data shared with them under "Shared with me" section of th
 
 ## Special system-wide permissions
 
-There are special system-wide access types on entities.
+There are special system-wide access types on entities:
 
 - **public**, where all logged-in users have "read" access to the entity
 - **anyone with link**, where the webpage that corresponds to the entity will be visible to non-logged in users with the exact URL of the page
@@ -77,7 +77,7 @@ When an "aggregator" entity is shared, so are the entities contained in it. For 
 
 ## Private deployments
 
-We believe that the permission scheme explained above provides an optimal balance between the flexibility and ability to share the data, and security and confidentiality. For the enterprise accounts further concerned about data security we can suggest a private deployment with one of the following scenarios.
+We believe that the permission scheme explained above provides an optimal balance between the flexibility and ability to share the data, and security and confidentiality. For the enterprise accounts further concerned about data security we can suggest a private deployment with one of the following scenarios:
 
 - on public cloud within an isolated infrastructure within the Exabyte account ("private cluster")
 - on public cloud within an isolated infrastructure under the customer account ("bring-your-own-cloud")

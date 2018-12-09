@@ -14,26 +14,26 @@ virtualenv .virtualenv
 source .virtualenv/bin/activate
 ```
 
-At this point the CLI prompt will change to reflect that the virtual environment is installed and will look similar to.
+At this point the CLI prompt will change to reflect that the virtual environment is installed and will look similar to:
 
 ```bash
 (.virtualenv) [steven@bohr.exabyte.io:~/cluster-001/tmp]$
 ```
 
-Next, let's install the desired package(s). Here we use "pymatgen", further explained below.
+Next, let's install the desired package(s). Here we use "pymatgen", further explained below:
 
 ```bash
 pip install pymatgen
 ```
 
-Check that installation is successful (exit code of zero means everything OK).
+Check that installation is successful (exit code of zero means everything OK):
 
 ```bash
 python -c "import pymatgen" && echo $?
 0
 ```
 
-Now one can execute the scripts requiring the installed package as follows, for example.
+Now one can execute the scripts requiring the installed package as follows, for example:
 
 ```bash
 python script.py

@@ -18,7 +18,7 @@ To create a new project, click on the "Project" link located in the sidebar/menu
 
 # Select material
 
-The FCC Si structure is provided by default for every user.  The exact list of materials in your personal database will differ, so you may need to search for the Cu structure you just imported and select it as shown below.
+The FCC Si structure is provided by default for every user.  The exact list of materials in your personal database will differ, so you may need to search for the Cu structure you just imported and select it as shown below:
 
 <img data-gifffer="/images/CreateCuJob.gif" />
 
@@ -69,7 +69,7 @@ After clicking on "Terminal" an overlay will appear filling up your browser wind
 
 # Prepare fermi surface file
 
-As below, navigate into the directory containing all your simulation results.  Once in the correct simulation directory run the commands in the window below to generate the post-processing bxsf file.
+As below, navigate into the directory containing all your simulation results.  Once in the correct simulation directory run the commands in the window below to generate the post-processing bxsf file:
 
 ![Generate BXSF File](../../images/GenerateBXSFFile.png "Generate BXSF File")
 

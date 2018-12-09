@@ -8,7 +8,7 @@ By expanding the subsection labelled "Pseudopotentials" (with the help of the "p
 
 ## Set Information Fields
 
-Next all the necessary categorization information about the new pseudopotential being uploaded shall be specified from the list of drop-down menus in the resulting dialog. An example of this dialog's appearance is shown below.
+Next all the necessary categorization information about the new pseudopotential being uploaded shall be specified from the list of drop-down menus in the resulting dialog. An example of this dialog's appearance is shown below:
 
  <img src="/images/pp-upload.png"/>
  
@@ -26,7 +26,7 @@ The resulting filtered list of available pseudopotentials will then become visib
 
 A general review on the syntax employed by regular expressions for performing general searches can be found in Ref. [[1](#links)].
 
-Otherwise, the use of regular expressions is best illustrated by way of a specific example. Consider the following regular expression for searching for a particular VASP pseudopotential.
+Otherwise, the use of regular expressions is best illustrated by way of a specific example. Consider the following regular expression for searching for a particular VASP pseudopotential:
 
 ```regexp
 (?=[5].[4])(?=.*/GW/)(?!.*/AE/)
@@ -34,7 +34,7 @@ Otherwise, the use of regular expressions is best illustrated by way of a specif
 
 This expression first searches for pseudopotentials released under version 5.4 of VASP. It then searches for all pseudopotential files of type "GW", and therefore included in the corresponding GW folder, but at the same time excludes those of type "AE" (all-electron). 
 
-This particular regular expression operation applied to the available set of VASP pseudopotentials is demonstrated in the animation below.
+This particular regular expression operation applied to the available set of VASP pseudopotentials is demonstrated in the animation below:
 
 <img data-gifffer="/images/regular-expression.gif" />
  

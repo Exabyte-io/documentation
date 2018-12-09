@@ -6,7 +6,11 @@ An example of application of this kind of distributed computing approach is for 
 
 # Map units in Workflow flowcharts
 
+<<<<<<< HEAD
 In practice, when a new map is added to a workflow [flowchart](../workflow-designer/sidebar.md), via the actions introduced [in this page](../workflow-designer/subworkflow-editor/actions-menu.md#Adding Subworkflows), an entire new workflow will be created and contained within the original parent workflow. The typical appearance of this "workflow inside another workflow" map unit is shown in the example below.
+=======
+In practice, when a new map is added to a workflow [flowchart](/workflow-designer/sidebar.md), via the actions introduced [in this page](/workflow-designer/subworkflow-editor/actions-menu.md#Adding Subworkflows), an entire new workflow will be created and contained within the original parent workflow. The typical appearance of this "workflow inside another workflow" map unit is shown in the example below:
+>>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 ![Example Map Workflow](../images/maps-workflow.png "Example Map Workflow")
 

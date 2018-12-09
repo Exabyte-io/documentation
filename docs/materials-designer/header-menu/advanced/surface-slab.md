@@ -28,7 +28,7 @@ Surface represents an isolated terminal edge of an infinite crystal, whereas a S
 
 ## Accessing the Surface / Slab generator
 
-By clicking on the `Surface / slab` option in the `Advanced` menu, the surface/slab generator can be accessed. The user should expect to encounter the following dialog.
+By clicking on the `Surface / slab` option in the `Advanced` menu, the surface/slab generator can be accessed. The user should expect to encounter the following dialog:
 
 <img src="/images/surface-slab-generator.png"/>
 
@@ -65,7 +65,7 @@ In the animation below, we generate a crystalline slab of pure silicon along the
 
 ## Structural Metadata
 
-Once a slab has been generated, and saved following the instructions outlined [in this page](../input-output/save.md), the user can retrieve the information about the settings that were used to generate the slab in the form of "metadata". Open the corresponding entry in the materials collection, and look for lines towards the bottom of the page starting with.
+Once a slab has been generated, and saved following the instructions outlined [in this page](../input-output/save.md), the user can retrieve the information about the settings that were used to generate the slab in the form of "metadata". Open the corresponding entry in the materials collection, and look for lines towards the bottom of the page starting with:
 
 <details markdown="1">
   <summary>

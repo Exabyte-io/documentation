@@ -6,7 +6,7 @@ This page contains explanation about the characteristic properties of materials 
 
 ## Electronic energies and wave functions
 
-Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](../tutorials/dft/band-structure.md) to learn more. Example input files are given below.
+Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](../tutorials/dft/band-structure.md) to learn more. Example input files are given below:
 
 #### VASP
 
@@ -110,7 +110,7 @@ K_POINTS automatic
 
 # Principal Properties
 
-We classify Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, Average pressure, and Charge density as the [Principal Properties](../materials/characteristic-properties#principal-properties). All these are all usually calculated concurrently as shown in the example below.
+We classify Total Energy, Entropy, Fermi energy, Atomic forces, Stress tensor, Average pressure, and Charge density as the [Principal Properties](../materials/characteristic-properties#principal-properties). All these are all usually calculated concurrently as shown in the example below:
 
 ### VASP
 

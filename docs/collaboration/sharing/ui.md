@@ -8,7 +8,7 @@ The share button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> is locate
 
 ## The Sharing Settings Dialog
 
-Clicking on the sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> after selecting one or multiple entities opens the "Sharing Settings" dialog. This dialog contains the components highlighted in the image below, presented in a standard [Explorer-type Interface](../../entities-general/ui/explorer.md).
+Clicking on the sharing button <i class="zmdi zmdi-accounts-add zmdi-hc-border"></i> after selecting one or multiple entities opens the "Sharing Settings" dialog. This dialog contains the components highlighted in the image below, presented in a standard [Explorer-type Interface](../../entities-general/ui/explorer.md):
 
 ![Sharing Settings](/images/sharing-settings.png "Sharing Settings")
 

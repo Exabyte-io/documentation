@@ -38,11 +38,11 @@ As each unit in the workflow is executing, you can monitor its progress live by 
 
 Once the calculation is complete, under the Results tab at the bottom of the page there will be a listing of the files and directories on the system that is clickable to download and transit directories.  The screen shots below show the location of the charge density file
 
-For Quantum ESPRESSO.
+For Quantum ESPRESSO:
 
 <img data-gifffer="/images/Charge5.gif" />
 
-For VASP.
+For VASP:
 
 ![VASP CHGCAR](../../images/CHGCARFile.png "VASP CHGCAR")
 
@@ -98,6 +98,6 @@ Within Vesta, go to file->Open and navigate to the directory where the electron 
 
 ![Open CHGCAR File](../../images/VESTAOpenCHGCAR.png "Open CHGCAR File")
 
-Your results should look similar to the image below.
+Your results should look similar to the image below:
 
 ![Visualize CHGCAR](../../images/VESTACHGCAR.png "Visualize CHGCAR")

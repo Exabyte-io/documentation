@@ -11,10 +11,10 @@ When default limits are not enough, we provide an option to increase storage quo
 
 ## Pricing
 
-At current extra quota is charged per gigabyte of data as shown below.
+At current extra quota is charged per gigabyte of data as shown below:
 
 | Extra quota size | Monthly charge
-|:-----------------|------.
+|:-----------------|------:
 | 1Gb              | $0.20
 | 100Gb            | $20.00
 | 500Gb            | $100.00

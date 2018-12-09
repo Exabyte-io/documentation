@@ -232,7 +232,7 @@ Creation of polymer structures is a rich and diverse area that requires a multit
 3. Number of bands
 
 
-# Upcoming simulation engines.
+# Upcoming simulation engines:
 
 1. BerkelyGW
 1. NWChem
@@ -254,7 +254,7 @@ for the Calculation of the Quasiparticle and Optical
 Properties of Materials and Nanostructures, PDF](http://arxiv.org/pdf/1111.4429v3.pdf)
 8. [Wikipedia Surface Energy, Website](https://en.wikipedia.org/wiki/Surface_energy)
 9. [A DFT study of bond dissociation energies of several alkyl nitrate and nitrite compounds, PDF](http://www.sciencedirect.com/science/article/pii/S0166128007008159)
-10. [A growing string method for determining transition states.
+10. [A growing string method for determining transition states:
 Comparison to the nudged elastic band and string methods, PDF](http://www.cchem.berkeley.edu/akcgrp/arups%20papers/96.pdf)
 11. [Theoretical Calculations in
 Reaction Mechanism Studies, PDF](http://www.sumitomo-chem.co.jp/english/rd/report/theses/docs/2013E_5.pdf)

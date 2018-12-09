@@ -113,7 +113,7 @@ In the expandable section below, the user can find an example JSON representatio
 
 ## Derived Properties
 
-As seen above, we use the crystal **lattice** and **basis** JSON objects as the main [identifying properties](../data-structured/overview.md#by-relation-to-uniqueness). Based upon them, we calculate the **derivedProperties**, that may include such information as.
+As seen above, we use the crystal **lattice** and **basis** JSON objects as the main [identifying properties](../data-structured/overview.md#by-relation-to-uniqueness). Based upon them, we calculate the **derivedProperties**, that may include such information as:
  
  - the unit cell volume, 
  - density, 

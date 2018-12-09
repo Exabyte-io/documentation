@@ -12,7 +12,7 @@ This feature lets users create multiple materials at once using an extended synt
 
 ## The Generation Dialog
 
-Open the "Generate Combinatorial Set" dialog via the `Advanced` menu. The dialog has the following appearance.
+Open the "Generate Combinatorial Set" dialog via the `Advanced` menu. The dialog has the following appearance:
 
 <img src="/images/Generate-Combinatorial-Set.png"/>
  
@@ -26,14 +26,14 @@ Combinatorial Basis syntax is a superset of the basis representation format expl
 
 ### Permutations
 
-Permutations change all elements in basis simultaneously and are enabled when chemical elements are separated by slashes (`/`) with no trailing spaces, such as in the example lines below.
+Permutations change all elements in basis simultaneously and are enabled when chemical elements are separated by slashes (`/`) with no trailing spaces, such as in the example lines below:
 
 **Input**
 ```txt
 Si/Ge/As 0.0 0.0 0.0
 Si/Ge    0.5 0.5 0.0
 ```
-Hence, according to the above combinatorial set, the following 3 distinct structures will be generated.
+Hence, according to the above combinatorial set, the following 3 distinct structures will be generated:
 
 **Case 1 - basis generated**
 ```txt
@@ -53,7 +53,7 @@ Ge 0.5 0.5 0.0
 
 ### Combinations
 
-Combinations change the elements one at a time and are enabled when commas are used as separators (`,`) with no trailing spaces. This is demonstrated in the example below.
+Combinations change the elements one at a time and are enabled when commas are used as separators (`,`) with no trailing spaces. This is demonstrated in the example below:
 
 **Input**
 ```
@@ -61,7 +61,7 @@ Si,Ge,As 0.0 0.0 0.0
 Si,Ge    0.5 0.5 0.0
 ```
 
-This time, there will be a total of 6 structures created.
+This time, there will be a total of 6 structures created:
 
 **Case 1 - basis generated**
 ```txt

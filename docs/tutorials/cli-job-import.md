@@ -12,7 +12,7 @@ When you use this feature, you can see job output files and also the following p
 * Stress tensor
 * Total energy contributions
 
-We use the content of job submission script file to collect job information and create an entry for it inside the web application. Currently, only simple job scripts containing single mpirun command are supported. Hence, make sure that its content is properly formatted and straightforward.  Here is a sample job script file for a Vasp simulation that you can use as a template.
+We use the content of job submission script file to collect job information and create an entry for it inside the web application. Currently, only simple job scripts containing single mpirun command are supported. Hence, make sure that its content is properly formatted and straightforward.  Here is a sample job script file for a Vasp simulation that you can use as a template:
 ```bash
 #!/bin/bash
 

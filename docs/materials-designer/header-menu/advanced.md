@@ -1,6 +1,6 @@
 # Advanced Menu 
 
-Advanced features of the Materials Designer interface can be accessed through the `Advanced` menu in the top header bar, which fits within the general context of the interface as follows.
+Advanced features of the Materials Designer interface can be accessed through the `Advanced` menu in the top header bar, which fits within the general context of the interface as follows:
 
 <img src="/images/advanced-menu.png"/>
 

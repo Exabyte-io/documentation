@@ -10,6 +10,6 @@ The transfer operation is completed once the "Submit" button is pressed. At this
 
 ## Animation
 
-In the animation below, we show how a material (Silicon) can be moved into the Set labelled "Test". In this case, this is the only Set present in our Materials collection, and therefore appears immediately as a suggestion in the dialog's drop-down menu. We then navigate inside the Set to confirm the presence of this newly transferred element.
+In the animation below, we show how a material (Silicon) can be moved into the Set labelled "Test". In this case, this is the only Set present in our Materials collection, and therefore appears immediately as a suggestion in the dialog's drop-down menu. We then navigate inside the Set to confirm the presence of this newly transferred element:
 
 <img data-gifffer="/images/Set-transfer-example.gif" />

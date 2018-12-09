@@ -1,6 +1,6 @@
 # The Detailed View tab
 
-Each entry in this tab is related to a distinct unit contained in the subworkflow units sequence, in the same general order. Each entry is itself further separated into two different sections, a "Properties" section and a "Monitors" section, as displayed in the example image below.
+Each entry in this tab is related to a distinct unit contained in the subworkflow units sequence, in the same general order. Each entry is itself further separated into two different sections, a "Properties" section and a "Monitors" section, as displayed in the example image below:
 
 <img src="/images/detailed-view-tab.png"/>
 
