@@ -1,6 +1,6 @@
 # Export
 
-The `Input/Output` menu offers the possibility to export the numerical crystallographic information associated with the selected structure to your local hard drive. This data export can be stored in either the JavaScript Object Notation (JSON) format [[1,2](#links)] or the POSCAR format [[3](#links)].
+The `Input/Output` menu offers the possibility to export the numerical crystallographic information associated with the selected structure to your local hard drive. This data export can be stored in either the JavaScript Object Notation (JSON) format [^1] [^2] or the POSCAR format [^3].
  
 ## Select "Export" Option 
  
@@ -28,6 +28,6 @@ An example of export procedure is portrayed in the animation below. Here, we sel
 
 ## Links
 
-1. [JSON format specifications](https://www.json.org/)
-2. [How we at Exabyte store atomistic information](../../../materials/data.md)
-3. [The POSCAR file format](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)
+[^1]: [JSON format specifications](https://www.json.org/)
+[^2]: [How we at Exabyte store atomistic information](../../../materials/data.md)
+[^3]: [The POSCAR file format](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)

@@ -11,7 +11,7 @@ The [atomic basis](../../properties-directory/structural/basis.md) of a Material
 
 Crystal Basis source can be edited directly as text. You may edit the elements' chemical symbols and coordinates directly inside the corresponding area, and the changes will be reflected in real-time (after clicking outside of the text area). 
 
-The data has to be entered according to the "XYZ" format for defining crystallographic structural information [[2](#links)]. The initial line specifying the total number of atoms is omitted. Some example lines for defining the pyridine molecule following this format are given below:
+The data has to be entered according to the "XYZ" format for defining crystallographic structural information [^1]. The initial line specifying the total number of atoms is omitted. Some example lines for defining the pyridine molecule following this format are given below:
 
 ```
 C       -0.180226841      0.360945118     -1.120304970
@@ -29,7 +29,7 @@ H       -0.180226841     -1.796059882     -0.917077970
 
 ### Coordinate units: Crystal and Cartesian
 
-The default representation of the atomic coordinates is in crystal units (also commonly called fractional)[[1](#links)]. In this coordinate system, the axes of the unit cell are used as the basis vectors to describe the positions of the atoms.
+The default representation of the atomic coordinates is in crystal units (also commonly called fractional) [^2]. In this coordinate system, the axes of the unit cell are used as the basis vectors to describe the positions of the atoms.
 
 In addition, the atomic coordinates can be converted from such crystal units to a standard orthogonal Cartesian reference system (expressed in units of Angstroms) by clicking on "Cartesian Units".
 
@@ -62,6 +62,5 @@ Click on the animation below to see the above in action. Here, we change the x-a
 
 ## Links
 
-1. [Wikipedia Fractional Coordinates, Website](https://en.wikipedia.org/wiki/Fractional_coordinates)
-2. [Wikipedia XYZ file format, Website](https://en.wikipedia.org/wiki/XYZ_file_format)
-
+[^1]: [Wikipedia XYZ file format, Website](https://en.wikipedia.org/wiki/XYZ_file_format)
+[^2]: [Wikipedia Fractional Coordinates, Website](https://en.wikipedia.org/wiki/Fractional_coordinates)

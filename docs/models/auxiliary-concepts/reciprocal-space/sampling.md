@@ -18,8 +18,8 @@ Together with a sufficiently high plane-wave cutoff for the electronic wavefunct
 
 ## Other types of reciprocal space grids
 
- Similar considerations as the above-mentioned elements apply to other types of unit-specific settings, such as the **qgrid** settings for defining reciprocal grids of q-points for performing phonon calculations, and the associated **igrid** settings for the grids obtained through performing the transformation to and from the reciprocal and real space and subsequent interpolation (hence the "i"). The reader is referred to Ref. [[1](#links)] for an example theoretical explanation of each of these concepts. 
+ Similar considerations as the above-mentioned elements apply to other types of unit-specific settings, such as the **qgrid** settings for defining reciprocal grids of q-points for performing phonon calculations, and the associated **igrid** settings for the grids obtained through performing the transformation to and from the reciprocal and real space and subsequent interpolation (hence the "i"). The reader is referred to Ref. [^1] for an example theoretical explanation of each of these concepts. 
  
 ## Links
 
-1. [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
+[^1]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)

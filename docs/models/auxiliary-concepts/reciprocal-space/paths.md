@@ -8,9 +8,9 @@ An example for specifying the reciprocal path of k-points for a band structure d
 
 <img src="/images/path-settings.png"/>
 
-The notions of "qpath" and "ipath" instead pertain specifically to phonon dispersion calculations, as explained in Ref. [[1](#links)]. 
+The notions of "qpath" and "ipath" instead pertain specifically to phonon dispersion calculations, as explained in Ref. [^1]. 
 
-Further information on the appearance and overall symmetry of such Brillouin Zones in reciprocal space is explained in Refs. [[2-3](#links)].  
+Further information on the appearance and overall symmetry of such Brillouin Zones in reciprocal space is explained in Refs. [^2] [^3].  
 
 ## Order of reciprocal symmetry points
 
@@ -22,7 +22,6 @@ Finally, the number of steps at which band structure energies or phonon frequenc
 
 ## Links
 
-1. [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
-2. [Wikipedia Brillouin zone, Website](https://en.wikipedia.org/wiki/Brillouin_zone)
-3. [Setyawan, Wahyu; Curtarolo, Stefano (2010). "High-throughput electronic band structure calculations: Challenges and tools". Computational Materials Science. 49 (2): 299–312](https://arxiv.org/pdf/1004.2974.pdf)
-
+[^1]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
+[^2]: [Wikipedia Brillouin zone, Website](https://en.wikipedia.org/wiki/Brillouin_zone)
+[^3]: [Setyawan, Wahyu; Curtarolo, Stefano (2010). "High-throughput electronic band structure calculations: Challenges and tools". Computational Materials Science. 49 (2): 299–312](https://arxiv.org/pdf/1004.2974.pdf)

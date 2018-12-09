@@ -1,6 +1,6 @@
 # Materials Bank
 
-We collect unique copies of all materials in the "Materials Bank" collection. The general features of a Bank are discussed in the following [introductory page](../entities-general/bank.md). We assert the uniqueness by structural parameters and the use of standard primitive representation [[1](#links)].
+We collect unique copies of all materials in the "Materials Bank" collection. The general features of a Bank are discussed in the following [introductory page](../entities-general/bank.md). We assert the uniqueness by structural parameters and the use of standard primitive representation [^1].
 
 ## Mapping Function
 
@@ -16,4 +16,4 @@ The procedure of copying (or importing) Bank Materials into Account-owned Materi
 
 ## Links
 
-1. [Standard primitive representation: Niggli Cell](https://nvlpubs.nist.gov/nistpubs/sp958-lide/188-190.pdf)
+[^1]: [Standard primitive representation: Niggli Cell](https://nvlpubs.nist.gov/nistpubs/sp958-lide/188-190.pdf)
