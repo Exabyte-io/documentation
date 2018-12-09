@@ -1,4 +1,4 @@
-## Security Overview
+# Security Overview
 
 We know your data is extremely important to you and your business, and we make it our priority to protect it.
 

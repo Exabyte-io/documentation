@@ -1,6 +1,6 @@
 # Accounts-related UI
 
-Multiple User Interface components are available, under the wider general [interface of our platform](../../ui/ui-overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
+Multiple User Interface components are available, under the wider general [interface of our platform](../../ui/overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
 
 Each of these interface components is reviewed below, based on the location they can be accessed from.
 

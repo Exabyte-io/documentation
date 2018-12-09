@@ -2,21 +2,21 @@
 
 Our platform provides a convenient interface for conceiving, editing and executing simulation [Jobs](../jobs/overview.md) We refer to this interface as the Jobs Designer, and we reviewed it in detail in this section of documentation.
 
-## Navigating to Jobs Designer
+## [Navigating to Jobs Designer]()
 
-### From project page
+### [From project page](../jobs/ui/project-page.md)
 
 The Jobs Designer interface can be opened by [creating a new Job](../jobs/actions/create.md), starting from the [Project Page](../jobs/ui/project-page.md) for the project under which the user wishes to save the new Job. 
 
-### From left-hand sidebar
+### [From left-hand sidebar](../ui/left-sidebar.md)
 
 Alternatively, it can be opened directly from the [left-hand sidebar menu](../ui/left-sidebar.md). In this case the new job will be associated with the [default project](../jobs/projects.md#default-project). One may review [this page](../entities-general/actions/set-default.md) for instructions on how this default choice can be changed in the [Project Explorer](../jobs/ui/projects-explorer.md).
 
-### Open jobs in "pre-submission" status
+### [Open jobs in "pre-submission" status](../jobs/ui/explorer.md)
 
 Any entry listed in [Jobs Explorer](../jobs/ui/explorer.md) which has a "Pre-submission" [status](../jobs/status.md) can be [opened](../entities-general/actions/open-edit.md) in Designer. This is because jobs not submitted for computation yet can be fully modified by the user (thus no limitations on edits such as those imposed by the [Viewer](../jobs/ui/viewer.md#no-adjustments-allowed)).
 
-## Components of the Interface
+## [Components of the Interface]()
 
 The creation of new simulation Jobs via Designer proceeds through three main steps, namely the definition of the [Materials](../materials/overview.md) to be investigated (1), the type of simulation [Workflow](../workflows/overview.md) to be applied upon them (2), and finally of the [computational resources](../infrastructure/resource/overview.md) to be allocated for these calculations (3). 
 
@@ -33,18 +33,18 @@ Click on each component panel within the image to access the corresponding docum
     <area shape="rect" coords="508,116,753,155" href="/jobs-designer/compute-tab">
 </map>
 
-## Header Menu
+## [Header Menu](header-menu.md)
 
 The components of the header menu are reviewed in [this part of the documentation](header-menu.md).
 
-## Materials Tab
+## [Materials Tab](materials-tab.md)
 
 The explanation for the Materials Tab is offered [in this page](materials-tab.md). 
 
-## Workflow Tab
+## [Workflow Tab](workflow-tab.md)
 
 The Workflow tab is the object of a separate discussion, which can be found [here](workflow-tab.md).
 
-## Compute Tab
+## [Compute Tab](compute-tab.md)
 
 The Compute tab is documented [in this section](compute-tab.md).
