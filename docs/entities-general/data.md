@@ -65,7 +65,7 @@ Metadata can be added to an entity item in one or more of the following forms.
 
 ### Description
 
-In some cases, the user can add a general description for reference purposes, which can be entered in plain text or using Markdown language [[1](#links)] as explained [here](actions/metadata.md#edit-description)
+In some cases, the user can add a general description for reference purposes, which can be entered in plain text or using Markdown language [^1] as explained [here](actions/metadata.md#edit-description)
 
 ### Tags
 
@@ -77,9 +77,9 @@ A specific kind of metadata is used to mark slabs / surfaces. Such metadata is s
 
 ## Slug
 
-It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters [[2](#links)]. We store machine-safe representation of the entity "name" (as explained in the table above) under "slug" keyword.
+It is often necessary to convert keyword strings within structured data to a more machine-friendly format. Examples include strings containing whitespaces or special characters [^2]. We store machine-safe representation of the entity "name" (as explained in the table above) under "slug" keyword.
 
 ## Links
 
-1. [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)
-2. [Slugify library for Javascript, Website](https://www.npmjs.com/package/slugify)
+[^1]: [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)
+[^2]: [Slugify library for Javascript, Website](https://www.npmjs.com/package/slugify)

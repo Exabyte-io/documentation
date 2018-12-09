@@ -1,6 +1,6 @@
 # Supercells
 
-Supercell is a widely used crystallographic concept [[1](#links)]. A general theoretical background is offered in the expandable section below for the readers unfamiliar with the topic. The rest of this documentation page explains how supercell generation is implemented in the Materials Designer interface.
+Supercell is a widely used crystallographic concept [^1]. A general theoretical background is offered in the expandable section below for the readers unfamiliar with the topic. The rest of this documentation page explains how supercell generation is implemented in the Materials Designer interface.
 
 ## Theoretical Background
 
@@ -12,7 +12,7 @@ Supercell is a widely used crystallographic concept [[1](#links)]. A general the
 
 ### What are supercells?
 
-A material has a crystal structure associated with it and the latter is described by a unit cell. There are an infinite number of unit cells U with different shapes and sizes which can describe the same crystal. The supercell S of unit cell U is defined as a cell which describes the same crystal, but has larger volume than cell U [[1](#links)].
+A material has a crystal structure associated with it and the latter is described by a unit cell. There are an infinite number of unit cells U with different shapes and sizes which can describe the same crystal. The supercell S of unit cell U is defined as a cell which describes the same crystal, but has larger volume than cell U [^1].
 
 #### 2D examples
 
@@ -80,4 +80,4 @@ Click on the animation below to see the above in action. In this example, we gen
 
 ## Links
 
-1. [Wikipedia Supercells, Website](https://en.wikipedia.org/wiki/Supercell_(crystal))
+[^1]: [Wikipedia Supercells, Website](https://en.wikipedia.org/wiki/Supercell_(crystal))

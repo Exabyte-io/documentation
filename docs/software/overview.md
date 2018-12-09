@@ -31,11 +31,11 @@ We support the following structural analysis tools through a remote desktop conn
 
 ### [Python-based]()
 
-For command-line users we provide system system-default python installation (version 2.7.5) and suggest for users to employ virtual environment [[1]](#links) for controlling the versions for python packages as explained below.
+For command-line users we provide system system-default python installation (version 2.7.5) and suggest for users to employ virtual environment [^1] for controlling the versions for python packages as explained below.
 
 #### [Virtual Environment]()
 
-Here is an example quick setup for a python virtual environment with pymatgen [[2]](#links), a widely used package for materials analysis:
+Here is an example quick setup for a python virtual environment with pymatgen [^2], a widely used package for materials analysis:
 
 ```bash
 mkdir pymatgen project
@@ -46,5 +46,5 @@ pip install -r pymatgen==2018.8.10
 
 ## Links
 
-1. [Python Virtual Environment](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv)
-2. [Pymatgen, Official Webpage](http://pymatgen.org/)
+[^1]: [Python Virtual Environment](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv)
+[^2]: [Pymatgen, Official Webpage](http://pymatgen.org/)

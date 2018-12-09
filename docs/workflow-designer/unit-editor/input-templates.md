@@ -8,13 +8,13 @@ Unit input templates allow input text files to be rendered based on unique data 
 
 !["Example Input Template"](../../images/input-template.png "Example Input Template")
 
-The reader is referred to the Quantum ESPRESSO-specific [documentation page](../../software/modeling/quantum-espresso.md), and to its official online documentation page pertaining specifically to the pw.x executable code [[1](#links)], for a detailed description of the meaning of the input flags displayed in the above example.
+The reader is referred to the Quantum ESPRESSO-specific [documentation page](../../software/modeling/quantum-espresso.md), and to its official online documentation page pertaining specifically to the pw.x executable code [^1], for a detailed description of the meaning of the input flags displayed in the above example.
 
 ## Template Data
 
-By clicking on the `Template Data` button to the right of the unit input template the user can inspect the corresponding JSON representation of the data used to render the template and produce the final text. The templates themselves are built starting from this JSON data using the Jinja2 template engine [[2](#links)]. 
+By clicking on the `Template Data` button to the right of the unit input template the user can inspect the corresponding JSON representation of the data used to render the template and produce the final text. The templates themselves are built starting from this JSON data using the Jinja2 template engine [^2]. 
 
-The user can notice that some commands are allowed as part of the template syntax, such as the "for" loop contained in the final line of the template for defining the size of the grid of k-points employed as part of the current "pw_scf" computation, according to the specific format of Quantum ESPRESSO input files [[1](#links)].
+The user can notice that some commands are allowed as part of the template syntax, such as the "for" loop contained in the final line of the template for defining the size of the grid of k-points employed as part of the current "pw_scf" computation, according to the specific format of Quantum ESPRESSO input files [^1].
 
 More about the logic behind templates and rendering is explained in [this part of the documentation](../../workflows/data/templates.md). 
 
@@ -193,8 +193,8 @@ In case multiple materials are present, they can each be selected from the list 
 
 ## Links
 
-1. [Input file of the PWSCF](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
-2. [Jinja2 templating engine](http://jinja.pocoo.org/)
+[^1]: [Input file of the PWSCF](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
+[^2]: [Jinja2 templating engine](http://jinja.pocoo.org/)
 
 
 

@@ -1,6 +1,6 @@
 # Pseudopotential Method
 
-Pseudopotential method [[1](#links)]) is widely used in the context of the DFT model. For the theoretical background please consult the link and references therein. 
+Pseudopotential method [^1] is widely used in the context of the DFT model. For the theoretical background please consult the link and references therein. 
 
 ## [Pseudopotential types]()
 
@@ -18,4 +18,4 @@ A comprehensive set of default pseudopotentials for most elements in the periodi
 
 ## Links
 
-1. [Wikipedia: Pseudopotential](https://en.wikipedia.org/wiki/Pseudopotential)
+[^1]: [Wikipedia: Pseudopotential](https://en.wikipedia.org/wiki/Pseudopotential)

@@ -24,7 +24,7 @@ The resulting filtered list of available pseudopotentials will then become visib
 
 ## Regular Expressions
 
-A general review on the syntax employed by regular expressions for performing general searches can be found in Ref. [[1](#links)].
+A general review on the syntax employed by regular expressions for performing general searches can be found in Ref. [^1].
 
 Otherwise, the use of regular expressions is best illustrated by way of a specific example. Consider the following regular expression for searching for a particular VASP pseudopotential:
 
@@ -40,5 +40,4 @@ This particular regular expression operation applied to the available set of VAS
  
 ## Links
 
-1. [Wikipedia: Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
-
+[^1]: [Wikipedia: Regular expression](https://en.wikipedia.org/wiki/Regular_expression)

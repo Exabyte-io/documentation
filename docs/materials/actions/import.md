@@ -1,6 +1,6 @@
 # Import Structure
 
-We support direct import of materials structural data from other online sources. At present the import from the Materials Project database [[1](#links)] is implemented. Below we explain how to do so step by step.
+We support direct import of materials structural data from other online sources. At present the import from the Materials Project database [^1] is implemented. Below we explain how to do so step by step.
 
 ## Open Import Dialog
 
@@ -25,4 +25,4 @@ The aforementioned steps are demonstrated in the animation below.
 
 ## Links
 
-1. [Materials Project](https://materialsproject.org/)
+[^1]: [Materials Project](https://materialsproject.org/)

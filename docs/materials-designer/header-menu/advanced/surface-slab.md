@@ -11,7 +11,7 @@ Surfaces and Slabs are widely used crystallographic concepts. A general theoreti
 
 ### Miller indices
 
-Crystal surfaces are defined in terms of their Miller indices [[1](#links)]. Miller indices are a set of three integer numbers, conventionally expressed in the form $(hkl)$, which constitutes a convenient shorthand notation to refer to an entire family of lattice planes in a crystal. In particular, a generic set of Miller indices $(hkl)$ denotes the family of planes orthogonal to $h\mathbf {b_{1}} +k\mathbf {b_{2}} +\ell \mathbf {b_{3}}$, where $\mathbf {b_{i}}$ are the basis of the *reciprocal* lattice vectors. However, it is important to caution that the so-defined plane is not always orthogonal to the linear combination of *direct* lattice vectors $h\mathbf {a_{1}} +k\mathbf {a_{2}} +\ell \mathbf {a_{3}}$, since the reciprocal lattice vectors need not be mutually orthogonal. It is therefore convenient to divide the Miller indices by their minimum common denominator. 
+Crystal surfaces are defined in terms of their Miller indices [^1]. Miller indices are a set of three integer numbers, conventionally expressed in the form $(hkl)$, which constitutes a convenient shorthand notation to refer to an entire family of lattice planes in a crystal. In particular, a generic set of Miller indices $(hkl)$ denotes the family of planes orthogonal to $h\mathbf {b_{1}} +k\mathbf {b_{2}} +\ell \mathbf {b_{3}}$, where $\mathbf {b_{i}}$ are the basis of the *reciprocal* lattice vectors. However, it is important to caution that the so-defined plane is not always orthogonal to the linear combination of *direct* lattice vectors $h\mathbf {a_{1}} +k\mathbf {a_{2}} +\ell \mathbf {a_{3}}$, since the reciprocal lattice vectors need not be mutually orthogonal. It is therefore convenient to divide the Miller indices by their minimum common denominator. 
 
 ### Examples
 
@@ -97,4 +97,4 @@ By expanding this section, the user will be able to retrieve all the relevant me
 
 ## Links
 
-1. [Wikipedia Miller Indices, Website](https://en.wikipedia.org/wiki/Miller_index)
+[^1]: [Wikipedia Miller Indices, Website](https://en.wikipedia.org/wiki/Miller_index)
