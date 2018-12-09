@@ -8,17 +8,17 @@ After logging in, the user is presented with the following **welcome screen** un
 
 We explain the resource management system in its [dedicated section](../infrastructure/resource/overview.md), the accounting, software modules and commands outlined in the above visual are explained in sections mentioned below.
 
-## Environment
+## [Environment](environment.md)
 
 We offer the possibility to customize the **Environment** of the CLI, including both the **shell type** and the **loading of Modules** (pre-defined codes that don't need recompiling).
 
 Both forms of environment customization are explained under the same page, [accessible here](environment.md). 
 
-## Accounting
+## [Accounting](accounting.md)
 
 We introduce the aspects of [Account management](../accounts/overview.md) relevant in the context of CLI [here](accounting.md).
 
-## Actions
+## [Actions](actions/overview.md)
 
 The set of actions that is available in the context of the CLI is introduced [in this section](actions/overview.md) of the documentation.
 

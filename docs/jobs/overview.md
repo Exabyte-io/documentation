@@ -6,19 +6,19 @@ Job is a "container" entity that is used to organize the data and track resource
 
 We implement Jobs as another [entity type](../entities-general/overview.md). As such, they have the same user interface components (with some distinct features) as other entities, as explained [here](../entities-general/ui/overview.md).
 
-## Data
+## [Data](data.md)
 
 The data convention applied for Jobs including, for example, their database representation is explained [in this page](data.md).
 
-## Status
+## [Status](status.md)
 
 Jobs have different statuses attributed to them depending on the level of progress of the simulation. We explain the list of possible statuses [here](status.md).
 
-## Projects
+## [Projects](projects.md)
 
 Jobs can collectively be grouped together into [Sets](../entities-general/sets.md), which in this context are referred to as **[Projects](projects.md)**.
 
-## User Interface
+## [User Interface]()
 
 ### [Explorer](ui/explorer.md)
 
@@ -32,6 +32,6 @@ Jobs Designer is another specific implementation of the [Designer](../entities-g
  
 [This page](ui/viewer.md) explains how the [Viewer](../entities-general/ui/viewer.md) differs from Designer component in the context of Jobs.
 
-## Actions
+## [Actions](actions/overview.md)
 
 Some actions pertain specifically to Jobs, and are introduced [in this page](actions/overview.md).
