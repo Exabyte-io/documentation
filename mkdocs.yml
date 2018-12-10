@@ -336,7 +336,9 @@ nav:
             - Maps:                                     workflows/components/maps.md
         - Templates:
             - Overview:                                 workflows/templates/overview.md
-            - Concept:                                  workflows/templates/templates.md
+            - Concept:                                  workflows/templates/concept.md
+            - Exabyte Conventions:                      workflows/templates/exabyte-conventions.md
+            - Example:                                  workflows/templates/examples.md
             - UI Implementation:                        workflows/templates/ui.md
         - Actions:
             - Overview:                                 workflows/actions/overview.md
@@ -576,7 +578,9 @@ nav:
             - Overview:                              tutorials/jobs-cli/overview.md
             - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
             - View Results:                          tutorials/jobs-cli/view-results.md
-        - Templating:                                tutorials/templating.md
+        - Templating:
+            - Overview:                              tutorials/templating/overview.md
+            - Custom parameters:                     tutorials/templating/different-ecut.md
 
 
 
