@@ -29,7 +29,7 @@ Uploaded pseudopotentials will be automatically assoticated with the correspondi
 
 The animation below demonstrates the user experience for choosing an alternative pseudopotential, filtering the list of available pseudopotentials, uploading a custom file and navigating to it in "Dropbox" page.
 
-<img data-gifffer="/images/pseudo-upload-view-in-dropbox.gif"/>
+<img data-gifffer="/images/tutorials/pseudo-upload-view-in-dropbox.gif"/>
 
 # Links
 

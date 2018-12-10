@@ -14,14 +14,15 @@ In order to make a comparison, for all the cases studied we run the benchmarks w
 
 ### Hardware
 
-We consider 3 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ) and Oracle (OL). "NHT" refers to the Non-hyperthreaded[^7] scenario. "IB-H" refers to infiniband-interconnected H-series type virtual machines [^8]. The hardware specifications are listed below (we refer to physical cores as "Cores"):
+We consider 4 cloud computing vendors, Amazon Web Services (AWS), Microsoft Azure (AZ), Oracle (OL), and Google Compute Engine (GCE). "NHT" refers to the Non-hyperthreaded[^6] scenario. "IB-H" refers to infiniband-interconnected H-series type virtual machines [^7]. The hardware specifications are listed below (we refer to physical cores as "Cores"):
 
-| Case       | Type          | Cores | CPU Family                       | Freq. (GHz) | Memory (GB) | RDMA[^6] |
-| :---:      | :---:         | :---: | :---:                            | :---:       | :---:       | :---:    |
-| AWS-NHT    | c4.8xlarge    | 18    | Intel(R) Xeon(R) CPU E5-2666 v3  | 2.9         | 60          | No       |
-| AWS-NHT-C5 | c5.18xlarge   | 36    | Intel(R) Xeon(R) Platinum 8124M3 | 3           | 144         | No       |
-| AZ-IB-H    | Standard_H16r | 16    | Intel(R) Xeon(R) CPU E5-2667 v3  | 3.2         | 112         | Yes      |
-| OL-NHT     | BM.HPC2.36    | 36    | Intel(R) Xeon(R) Gold 6154       | 3           | 384         | Yes      |
+| Case          | Type          | Cores | CPU Family                 | Freq. (GHz) | Memory (GB) | RDMA[^8] |
+| :---:         | :---:         | :---: | :---:                      | :---:       | :---:       | :---:    |
+| AWS-NHT       | c4.8xlarge    | 18    | Intel Xeon E5-2666 v3      | 2.9         | 60          | No       |
+| AWS-NHT-C5    | c5.18xlarge   | 36    | Intel Xeon Platinum 8124M3 | 3           | 144         | No       |
+| AZ-IB-H       | Standard_H16r | 16    | Intel Xeon E5-2667 v3      | 3.2         | 112         | Yes      |
+| OL-NHT        | BM.HPC2.36    | 36    | Intel Xeon Gold 6154       | 3           | 384         | Yes      |
+| GCE-NHT-H[^9] | n1-highcpu-64 | 32    | Intel Xeon E5 v3 (Haswell) | 2.3         | 57.6        | No       |
 
 ### Definitions
 
@@ -47,7 +48,7 @@ Inverse total runtime for the task (in seconds).
 
 ### HPL
 
-We compare 3 cloud computing vendors as mentioned above. The following HPL configuration template is rendered with the parameters given in the table to generate the configuration and run the benchmark.
+We compare 4 cloud computing vendors as mentioned above. The following HPL configuration template is rendered with the parameters given in the table to generate the configuration and run the benchmark.
 
 <details markdown="1">
   <summary>
@@ -117,6 +118,11 @@ HPL.out      output file name (if any)
 | AWS-NHT-C5 | 2     | 172416 | 192   | 8     | 9     |
 | AWS-NHT-C5 | 4     | 244032 | 192   | 12    | 12    |
 | AWS-NHT-C5 | 8     | 345024 | 192   | 16    | 18    |
+| -          | -     | -      | -     | -     | -     |
+| GCE-NHT-H  | 1     | 77952  | 192   | 4     | 8     |
+| GCE-NHT-H  | 2     | 110208 | 192   | 8     | 8     |
+| GCE-NHT-H  | 4     | 155904 | 192   | 8     | 16    |
+| GCE-NHT-H  | 8     | 220608 | 192   | 16    | 16    |
 
 </details>
 
@@ -129,13 +135,13 @@ HPL.out      output file name (if any)
 
 A comparison of the speedup ratios for all cloud vendors described above are presented. As it can be seen, Oracle and Microsoft Azure have better speedup ratios because of the low latency interconnect network that facilitates efficient scaling.
 
-<img src="/images-new/benchmarks/ol-benchmarks-speedup-ratio.png">
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-speedup-ratio.png">
 
 #### Performance Per Core
 
-The following figure shows a comparative plot of the performance per core in giga-FLOPS for the previously described scenarios. Oracle and Microsoft Azure outperform AWS because of faster processors and the low latency interconnect network.
+The following figure shows a comparative plot of the performance per core in giga-FLOPS (GFLOPS) for the previously described scenarios. Oracle and Microsoft Azure outperform AWS because of faster processors and the low latency interconnect network.
 
-<img src="/images-new/benchmarks/ol-benchmarks-performance-per-core.png">
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-performance-per-core.png">
 
 ### VASP
 
@@ -400,7 +406,7 @@ Gamma
 
 ##### Outcomes
 
-<img src="/images-new/benchmarks/ol-benchmarks-vasp-elb-speedup.png" />
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-vasp-elb-speedup.png" />
 
 #### Parallelization Over KPOINTS
 
@@ -495,7 +501,7 @@ Gamma
 
 ##### Outcomes
 
-<img src="/images-new/benchmarks/ol-benchmarks-vasp-kpt-speedup.png" />
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-vasp-kpt-speedup.png" />
 
 ### Network Benchmarks
 
@@ -503,11 +509,11 @@ The following shows the result of Intel MPI Benchmarks running on Amazon Web Ser
 
 #### Latency
 
-<img src="/images-new/benchmarks/ol-benchmarks-latency.png" />
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-latency.png" />
 
 #### Bandwidth
 
-<img src="/images-new/benchmarks/ol-benchmarks-bandwidth.png" />
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-bandwidth.png" />
 
 
 ### GROMACS
@@ -520,16 +526,16 @@ We use the below, one of our customer use cases to study the extent to which a G
 
 The visual below demonstrates the model studied - a box with 418,402 total atoms. Input files are available upon request.
 
-<img src="/images-new/benchmarks/ol-benchmarks-gromacs-model.png" />
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-gromacs-model.png" />
 
 ##### Results
 
-<img src="/images-new/benchmarks/ol-benchmarks-gromacs-speedup.png" />
+<img src="/images/benchmarks-new/benchmarks/ol-benchmarks-gromacs-speedup.png" />
 
 
 ## Conclusion
 
-We benchmark the performance of the latest Oracle Cloud hardware with HPL, two VASP simulation cases, one GROMACS case and Intel MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
+We benchmark the performance of the latest cloud hardware with HPL, two VASP simulation cases, one GROMACS case and MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
 
 
 ## Links
@@ -539,8 +545,9 @@ We benchmark the performance of the latest Oracle Cloud hardware with HPL, two V
 [^3]: [Vienna Ab-initio Simulation Package, official website](https://www.vasp.at/)
 [^4]: [GROMACS, official website](http://www.gromacs.org/)
 [^5]: [MPI Benchmarks, Documentation](https://software.intel.com/en-us/articles/intel-mpi-benchmarks)
-[^6]: [Remote Direct Memory Access, Wikipedia article](https://en.wikipedia.org/wiki/Remote_direct_memory_access)
-[^7]: [Intel hyper-threading technology overview, website](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html)
-[^8]: [Microsoft Azure H-series Virtual Machines, official documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-hpc)
+[^6]: [Intel hyper-threading technology overview, website](https://www.intel.com/content/www/us/en/architecture-and-technology/hyper-threading/hyper-threading-technology.html)
+[^7]: [Microsoft Azure H-series Virtual Machines, official documentation](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/sizes-hpc)
+[^8]: [Remote Direct Memory Access, Wikipedia article](https://en.wikipedia.org/wiki/Remote_direct_memory_access)
+[^9]: [Google Compute Engine CPU Platforms, official website](https://cloud.google.com/compute/docs/cpu-platforms)
 
 ///FOOTNOTES GO HERE///

@@ -1,39 +1,39 @@
 # Accounts-related UI
 
-Multiple User Interface components are available, under the wider general [interface of our platform](//ui/ui-overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
+Multiple User Interface components are available, under the wider general [interface of our platform](../../ui/overview.md), to edit or insert information pertaining to Accounts. Further means are provided, for example, to switch between the accounts the user is a member of, or for navigating the platform-wide list of existing Accounts.
 
 Each of these interface components is reviewed below, based on the location they can be accessed from.
 
-# Account Profile
+## [Account Profile](profile-page.md)
 
 The interface elements accessible from the "Profile" page are reviewed [separately](profile-page.md). Its general appearance is shown below.
 
-![Account Profile General](/images/account-profile-general.png "Account Profile General")
+![Account Profile General](../../images/accounts/account-profile-general.png "Account Profile General")
 
-# Left Sidebar
+## [Left Sidebar](../../ui/left-sidebar.md)
 
-The image below shows components available under the [left sidebar](//ui/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below.
+The image below shows components available under the [left sidebar](../../ui/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below.
 
-![Account UI left sidebar](/images/left-sidebar-accounts.png "Account UI left sidebar")
+![Account UI left sidebar](../../images/accounts/left-sidebar-accounts.png "Account UI left sidebar")
 
-## 1. Link to Accounts Explorer
+### 1. [Link to Accounts Explorer](explorer.md)
 
 The list of all accounts on our platform  can be accessed following [these instructions](explorer.md).
 
-# Right Sidebar
+## [Right Sidebar](../../ui/right-sidebar.md)
 
-Similarly, more components are present under the [right-hand sidebar](//ui/right-sidebar.md). They are highlighted and referenced below.
+Similarly, more components are present under the [right-hand sidebar](../../ui/right-sidebar.md). They are highlighted and referenced below.
 
-![Account UI right sidebar](/images/right-sidebar-accounts.png "Account UI right sidebar")
+![Account UI right sidebar](../../images/accounts/right-sidebar-accounts.png "Account UI right sidebar")
 
-## 1. Badge
+### 1. [Badge](account-badge.md)
 
 Some information about the currently employed account is displayed in ["Account Badge"](account-badge.md). The latter also acts as the trigger button for the opening of the right-hand sidebar.
 
-## 2. Link to Switcher
+### 2. [Link to Switcher](switcher.md)
 
 The user can switch between different accounts that he/she is allowed to use under the ["Switcher"](switcher.md). 
 
-## 3. Link to Charges and Payments
+### 3. [Link to Charges and Payments](charges-payments.md)
 
 The list of payments and charges incurred by an account, and payment methods, can be accessed under ["Billing and Payments"](charges-payments.md).

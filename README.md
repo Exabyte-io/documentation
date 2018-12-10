@@ -4,9 +4,9 @@ This repo holds public documentation for exabyte.io. Currently deployed version 
 
 Uses [MkDocs](http://www.mkdocs.org/#getting-started) to convert Markdown files (*.md) in `docs/` directory into static html.
 
-`exabyte_theme` holds a custom styled theme - a derived theme from the default mkdocs one.
+[Mkdocs-material(https://squidfunk.github.io/mkdocs-material/) theme is used, with additional css added in extra files.
 
-> NOTE: tested and developed with mkdocs version 0.16.2.
+> NOTE: tested and developed with mkdocs version ~1.0. See "requirements.txt" for more info.
 
 ## Setup
 

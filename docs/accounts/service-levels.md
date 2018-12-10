@@ -2,7 +2,7 @@
 
 Service levels define the types, qualities and quantities of services provided to the accounts within our platform. The features associated with using our platform which are affected by the opted Service Level consist of the following list:
 
-# Features
+## Features
 
 | Feature  | Description  	|
 | :------------- | :------------- |
@@ -19,11 +19,11 @@ Service levels define the types, qualities and quantities of services provided t
 
 <sup class="c-red">1</sup> Ordinary = general case without the usage of any saving, premium or specialized type hardware. 
 
-# Types
+## Types
 
-For the [personal accounts](overview.md#personal-accounts) we offer "Promo", "Advanced", and "Pro" service levels. For the [organizational accounts](overview.md#personal-accounts) we offer "Promo", "Enterprise" and "Enterprise-Extra" levels. The "Promo" service level is designed as a temporary promotional way for the users to understand the operations of our platform. For the detailed comparison of the pricing and features associated with the different Service Levels offered as part of our platform, the user is referred to the [pricing documentation page](/pricing/service-levels.md). 
+For the [personal accounts](overview.md#personal-accounts) we offer "Promo", "Advanced", and "Pro" service levels. For the [organizational accounts](overview.md#personal-accounts) we offer "Promo", "Enterprise" and "Enterprise-Extra" levels. The "Promo" service level is designed as a temporary promotional way for the users to understand the operations of our platform. For the detailed comparison of the pricing and features associated with the different Service Levels offered as part of our platform, the user is referred to the [pricing documentation page](../pricing/service-levels.md). 
 
-# View/Change Service Level
+## View/Change Service Level
 
 All the relevant information concerning Service Levels, under the context of the currently selected Account, can be inspected through the corresponding [component of the User Interface](ui/service-level.md). It is important to bear in mind that, when dealing with collaborative accounts, only the Owner or an Administrator of the account is given the rights to undergo such operations on behalf of the whole Organization. 
 

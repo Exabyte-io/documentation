@@ -49,18 +49,18 @@ The following table contains hardware specifications for the above queues.
 
 ## Links
 
-[^1]: [Microsoft Azure](https://azure.microsoft.com/en-us/)
+[^1]: [Microsoft Azure, Website](https://azure.microsoft.com/en-us/)
 
-[^2]: [Queue Cost Categories](../resource/category.md#cost-categories)
+[^2]: [Queue Cost Categories, Website](../resource/category.md#cost-categories)
 
-[^3]: [Queue Provision Modes](../resource/category.md#provision-modes)
+[^3]: [Queue Provision Modes, Website](../resource/category.md#provision-modes)
 
-[^4]: [Charge polices](../resource/queues.md#charge-policies)
+[^4]: [Charge polices, Website](../resource/queues.md#charge-policies)
 
-[^5]: [CPU types](hardware.md#cpu-types)
+[^5]: [CPU types, Website](hardware.md#cpu-types)
 
-[^6]: [GPU types](hardware.md#gpu-types)
+[^6]: [GPU types, Website](hardware.md#gpu-types)
 
-[^7]: [Azure high performance compute virtual machines](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc)
+[^7]: [Azure high performance compute virtual machines, Website](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/sizes-hpc)
 
 ///FOOTNOTES GO HERE///

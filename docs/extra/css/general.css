@@ -14,6 +14,7 @@ body {
     background-color: white;
 }
 
+/* TODO: used for restricted content sourced from platform.exabyte.io, uncomment when re-enabling or remove */
 /*iframe {*/
     /*width: 100%;*/
     /*height: 60vh;*/
