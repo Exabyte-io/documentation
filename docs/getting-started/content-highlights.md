@@ -6,11 +6,7 @@ This page helps users quickly get through the documentation.
 
 ## Login
 
-<<<<<<< HEAD
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in.
-=======
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
->>>>>>> parent of 665ed1d... Replace all colons with dots before newline
+We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
 
 - [secure shell and in-browser terminals](../remote-connection/overview.md)
 - [remote desktop session example](../remote-connection/remote-desktop.md)
@@ -53,11 +49,7 @@ More information about specific workflows, including tutorials and input date:
 
 ### Compute
 
-<<<<<<< HEAD
-Compute parameters ([submission queue](../infrastructure/resource/queues.md), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at.
-=======
-Compute parameters ([submission queue](/compute/queues), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
->>>>>>> parent of 665ed1d... Replace all colons with dots before newline
+Compute parameters ([submission queue](../infrastructure/resource/queues.md), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
 
 - [setting compute parameters](../infrastructure/compute/parameters.md)
 - [compute platform overview](../infrastructure/compute/overview.md)

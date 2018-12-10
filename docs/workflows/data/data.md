@@ -1,4 +1,4 @@
-In order to organize and store the information about workflows we employ [Exabyte Data Convention](../data-structured/overview.md) as explained elsewhere in this documentation.
+In order to organize and store the information about workflows we employ [Exabyte Data Convention](../../data-structured/overview.md) as explained elsewhere in this documentation.
 
 # Example Representation
 
@@ -458,8 +458,10 @@ For physics-based modeling engines the execution unit is the main one. It contai
 
 ## Templating
 
-We allow for using Jinja templates [1](#links) inside the input to individual units. This way we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time without having to adjust it extensively. More inside [units](units.md) section.
+We allow for using Jinja templates [^1] inside the input to individual units. This way we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time without having to adjust it extensively. More inside [units](units.md) section.
 
 ## Properties
 
 "properties" section serves as an aggregator of all the properties that are extracted at each level (workflow/subworkflow). "results" key serves the same purpose for unit.  
+
+[^1]: [Jinja2 templating engine, Website](http://jinja.pocoo.org/)

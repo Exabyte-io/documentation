@@ -74,22 +74,7 @@ Job    Charge 30    steven   steven   master-production-20160630-cluster-007.exa
 
 ```
 
-<<<<<<< HEAD
 It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2019-01-01 -e 2019-01-08` would return the account statement starting from the 1st to the 8th of January 2019.
-=======
-It is often convenient to pass the `-s` (start) and `-e` (end) flags to the `statement` command, to narrow down the window of time over which the statement is printed. These flags should contain information about the delimiting dates, in the format "YYYY-MM-DD". So, for example, the command `statement -s 2017-01-08 -e 2018-01-08` would return the account statement during the course of a year, starting from the 8th of January 2017. 
-
-The full list of flags that can be passed to `statement` is reproduced below for reference purposes.
-
-```bash
-# > statement --help
-
-Usage:
-    gstatement [[-a] *account_id*] [-p *project_name*] [-u *user_name*] [-m
-    *machine_name*] [-s *start_time*] [-e *end_time*] [--summarize] [-h,
-    --hours] [--debug] [-?, --help] [--man] [-V, --version]
-```
->>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 ## Detailed List of Jobs
 

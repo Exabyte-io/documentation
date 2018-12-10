@@ -1,10 +1,6 @@
 # Unit input templates
 
-<<<<<<< HEAD
 Unit input templates allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) simulation package, is depicted on the left-hand side in the image below.
-=======
-Unit input templates allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](/software/modeling/quantum-espresso.md) simulation package, is depicted on the left-hand side in the image below:
->>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 !["Example Input Template"](../../images/input-template.png "Example Input Template")
 

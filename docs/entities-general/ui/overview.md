@@ -4,11 +4,7 @@ Some User Interface components are shared between entities of different [types](
 
 ## [Access Points](../../accounts/ui/profile-page.md)
 
-<<<<<<< HEAD
 The image below highlights their **access points** (or click triggers), within the [Account Profile](../../accounts/ui/profile-page.md) page.
-=======
-The image below highlights their **access points** (or click triggers), within the [Account Profile](/accounts/ui/profile-page.md) page:
->>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 ![Common Entities UI](/images/common-ui-entities.png "Common Entities UI")
 
