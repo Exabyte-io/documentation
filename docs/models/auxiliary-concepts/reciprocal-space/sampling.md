@@ -22,4 +22,4 @@ Together with a sufficiently high plane-wave cutoff for the electronic wavefunct
  
 ## Links
 
-[^1]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
+[^1]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO, Document](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)

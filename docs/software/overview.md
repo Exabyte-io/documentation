@@ -46,5 +46,5 @@ pip install -r pymatgen==2018.8.10
 
 ## Links
 
-[^1]: [Python Virtual Environment](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv)
+[^1]: [Python Virtual Environment, Website](https://docs.python-guide.org/dev/virtualenvs/#lower-level-virtualenv)
 [^2]: [Pymatgen, Official Webpage](http://pymatgen.org/)

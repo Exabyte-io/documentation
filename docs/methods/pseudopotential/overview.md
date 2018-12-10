@@ -18,4 +18,4 @@ A comprehensive set of default pseudopotentials for most elements in the periodi
 
 ## Links
 
-[^1]: [Wikipedia: Pseudopotential](https://en.wikipedia.org/wiki/Pseudopotential)
+[^1]: [Wikipedia Pseudopotential, Website](https://en.wikipedia.org/wiki/Pseudopotential)

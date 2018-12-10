@@ -68,18 +68,18 @@ The following table contains hardware specifications for the above queues.
 
 ## Links
 
-[^1]: [Amazon Web Services, official webpage](https://aws.amazon.com/)
+[^1]: [Amazon Web Services, Official Website](https://aws.amazon.com/)
 
-[^2]: [Queue Cost Categories](../resource/category.md#cost-categories)
+[^2]: [Queue Cost Categories, Link](../resource/category.md#cost-categories)
 
-[^3]: [Queue Provision Modes](../resource/category.md#provision-modes)
+[^3]: [Queue Provision Modes, Link](../resource/category.md#provision-modes)
 
-[^4]: [Charge polices](../resource/queues.md#charge-policies)
+[^4]: [Charge polices, Link](../resource/queues.md#charge-policies)
 
-[^5]: [CPU types](hardware.md#cpu-types)
+[^5]: [CPU types, Link](hardware.md#cpu-types)
 
-[^6]: [GPU types](hardware.md#gpu-types)
+[^6]: [GPU types, Link](hardware.md#gpu-types)
 
-[^7]: [Hyper-threading, Wikipedia](https://en.wikipedia.org/wiki/Hyper-threading)
+[^7]: [Wikipedia Hyper-threading, Website](https://en.wikipedia.org/wiki/Hyper-threading)
 
 ///FOOTNOTES GO HERE///

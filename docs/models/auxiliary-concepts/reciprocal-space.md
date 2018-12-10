@@ -19,5 +19,5 @@ The properties below are frequently used in the computational studies of crystal
 
 ## Links
 
-[^1]: [Wikipedia, Reciprocal space](https://en.wikipedia.org/wiki/Reciprocal_lattice#Reciprocal_space)
-[^2]: [Wikipedia, Reciprocal lattice](https://en.wikipedia.org/wiki/Reciprocal_lattice)
+[^1]: [Wikipedia, Reciprocal space, Website](https://en.wikipedia.org/wiki/Reciprocal_lattice#Reciprocal_space)
+[^2]: [Wikipedia, Reciprocal lattice, Website](https://en.wikipedia.org/wiki/Reciprocal_lattice)

@@ -40,5 +40,5 @@ The aforementioned steps are demonstrated in the animation below.
 
 ## Links
 
-[^1]: [Syntax of the CIF file format](https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax)
-[^2]: [Syntax of the POSCAR file format](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)
+[^1]: [Syntax of the CIF file format, Website](https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax)
+[^2]: [Syntax of the POSCAR file format, Website](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)

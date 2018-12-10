@@ -22,6 +22,6 @@ Finally, the number of steps at which band structure energies or phonon frequenc
 
 ## Links
 
-[^1]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
+[^1]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO, Document](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
 [^2]: [Wikipedia Brillouin zone, Website](https://en.wikipedia.org/wiki/Brillouin_zone)
-[^3]: [Setyawan, Wahyu; Curtarolo, Stefano (2010). "High-throughput electronic band structure calculations: Challenges and tools". Computational Materials Science. 49 (2): 299–312](https://arxiv.org/pdf/1004.2974.pdf)
+[^3]: [Setyawan, Wahyu; Curtarolo, Stefano (2010). "High-throughput electronic band structure calculations: Challenges and tools". Computational Materials Science. 49 (2): 299–312, Document](https://arxiv.org/pdf/1004.2974.pdf)

@@ -57,7 +57,7 @@ New Payment Methods (ie. Credit Cards) can be added as it is explained [in this 
 
 ## Links
 
-[^1]: [Fully Qualified Domain Names, explanation, Indiana University Webpage](https://kb.iu.edu/d/aiuv)
+[^1]: [Fully Qualified Domain Names, explanation, Indiana University Website](https://kb.iu.edu/d/aiuv)
 
 !!!warning "Restricted access"
     The information contained under the present documentation page is relevant to Account [Owners or Administrators](../../collaboration/organizations/roles.md), since only they have sufficient rights to view and modify the content (a user is always the Owner and Administrator of his personal account).

@@ -16,4 +16,4 @@ The procedure of copying (or importing) Bank Materials into Account-owned Materi
 
 ## Links
 
-[^1]: [Standard primitive representation: Niggli Cell](https://nvlpubs.nist.gov/nistpubs/sp958-lide/188-190.pdf)
+[^1]: [Standard primitive representation: Niggli Cell, Website](https://nvlpubs.nist.gov/nistpubs/sp958-lide/188-190.pdf)

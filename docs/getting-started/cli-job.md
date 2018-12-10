@@ -10,7 +10,7 @@ To use the terminal interface, open right sidebar and click "Terminal":
 
 The data directory where your simulations that have been submitted through the web are under the data/<your_username> sub-directory under your home directory.
 
-Our queuing system is controlled through a batch script. You can find batch script templates under the [job templates directory](../../data-on-disk/directories.md#job-script-templates).
+Our queuing system is controlled through a batch script. You can find batch script templates under the [job templates directory](../jobs-cli/batch-scripts/directories.md#job-templates).
 
 ## Create job
 
