@@ -24,7 +24,7 @@ Once the new SSH key has been added, the user will be able to see the key as a n
 
 In the example animation below, we demonstrate how to add a new SSH key that will be included in the overall list of keys. We will do so by selecting the corresponding file from our local hard drive. 
 
-<img data-gifffer="/images/add-key.gif" />
+<img data-gifffer="/images/accounts/add-key.gif" />
 
 
 ## Delete Keys
@@ -35,4 +35,4 @@ The list of SSH keys under the  Account Preferences page additionally gives the 
 
 After having been added, the same new key entry created in the previous step is now deleted from the list:
 
-<img data-gifffer="/images/delete-key.gif" />
+<img data-gifffer="/images/accounts/delete-key.gif" />

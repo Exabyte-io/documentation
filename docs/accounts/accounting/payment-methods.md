@@ -5,7 +5,7 @@
 
 In order to add a new payment method, the user should first click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the "Payment Methods" tab under the ["Billing" page](../ui/charges-payments.md), and should then fill in the form appearing underneath it which has the following aspect:
 
-![Add new Payment Method](/images/add-new-payment.png "Add new Payment Method")
+![Add new Payment Method](/images/accounts/add-new-payment.png "Add new Payment Method")
 
 In the form shown above, the user should enter the appropriate Credit Card details on the panel to the left, and also insert the relevant information about the  Billing Address associated with the same Credit Card on the right-hand panel.
  
@@ -22,7 +22,7 @@ Once a new Credit Card payment method has been added, it will be shown in the ov
 
 In the example animation below, we demonstrate how to add a new Credit Card payment method by filling the resulting forms with some arbitrary information. The card finally appears as a new entry in the list of Cards at the top of the page:
 
-<img data-gifffer="/images/add-credit-card.gif" />
+<img data-gifffer="/images/accounts/add-credit-card.gif" />
 
 ## Set Default or Remove Payment Method
 
@@ -32,4 +32,4 @@ Any Credit Card payment method can furthermore be removed from the account's lis
 
 The location of both the "Set Default" and "Remove" features in the list of payment methods is highlighted in the below image:
 
-![Remove Default Payment](/images/remove-default-payment.png "Remove Default Payment")
+![Remove Default Payment](/images/accounts/remove-default-payment.png "Remove Default Payment")

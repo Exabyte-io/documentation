@@ -10,7 +10,7 @@ General information about both the available (under "Current") and Reserved [Acc
 
 Moreover, the possibility to increase both of these Balance and Storage Quota indicators with extra credit is offered under the corresponding option buttons below each of the two indicators. The overall appearance of the interface for inspecting these two indicators and adding credit to them is demonstrated in the example below:
 
-![Indicators](/images/indicators.png "Indicators")
+![Indicators](/images/accounts/indicators.png "Indicators")
 
 ## View Service Levels
 
@@ -26,7 +26,7 @@ For more information about the services offered under each different level and t
 
 An example of the way that service levels, together with the various features and cost per CPU hour that they offer, are presented at the bottom of the "Service Levels" interface page is demonstrated in the example image below. It can be deduced that the Service Level on the right labelled as "Pro" is the current choice for the present account, whereas the one on the left named "Advanced" is available as an "Upgrade".
 
-![Service Levels Examples](/images/service-levels-examples.png "Service Levels Examples")
+![Service Levels Examples](/images/accounts/service-levels-examples.png "Service Levels Examples")
 
 
 ## Change Service Level

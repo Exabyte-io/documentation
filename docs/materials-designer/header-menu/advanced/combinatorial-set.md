@@ -14,7 +14,7 @@ This feature lets users create multiple materials at once using an extended synt
 
 Open the "Generate Combinatorial Set" dialog via the `Advanced` menu. The dialog has the following appearance:
 
-<img src="/images/Generate-Combinatorial-Set.png"/>
+<img src="/images/materials-designer/Generate-Combinatorial-Set.png"/>
  
 The dialog features a text field where the crystal basis of the desired combinatorial set can be edited, according to the format illustrated in the forthcoming examples. During the generation, the crystal lattice parameters will be taken for the currently selected structure. 
 
@@ -143,4 +143,4 @@ Once the text of the desired combinatorial set is entered, click on "Generate Co
 
 An example of combinatorial set generation is in the animation below. Six different combinations are generated starting from a pure silicon sample, based on alternations between the elements Si, Ge and C following the second combination example above. At the end, each resulting crystal structure is reviewed to highlight the difference in atomic composition (crystal basis) and similarity in their underlying structural framework (crystal lattice). 
 
-<img data-gifffer="/images/CreateCombinatorialSet.gif" />
+<img data-gifffer="/images/materials-designer/CreateCombinatorialSet.gif" />

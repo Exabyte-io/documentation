@@ -12,7 +12,7 @@ The magnetic moment can be computed by inserting the corresponding [Workflow Mod
 
 It is returned to the user as a set of vectors (one for each atom present in the material), as portrayed below, under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of bohr magnetons.
 
-![Magnetic Moment](/images/Properties/magnetic-moment.png "Magnetic Moment")
+![Magnetic Moment](/images/properties-directory/Properties/magnetic-moment.png "Magnetic Moment")
 
 ## Schema 
 

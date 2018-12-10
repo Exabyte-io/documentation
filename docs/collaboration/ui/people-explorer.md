@@ -16,7 +16,7 @@ Some of their differences are worth noticing:
 
 In the image below, we start from the People Explorer of an Organization called "Exabyte.io", listing its six members:
 
-![Organization People Explorer](/images/organization-people-explorer.png "Organization People Explorer")
+![Organization People Explorer](/images/collaboration/organization-people-explorer.png "Organization People Explorer")
 
 ### Central Table: Owner and Admin Roles
 
@@ -34,7 +34,7 @@ We then click on one of the Teams listed under [Teams Explorer](teams-explorer.m
 
 In the image below for example, the members of the Team "Semiconductor band gaps write", contained in the aforementioned "Exabyte.io" Organization, are listed. Only four people are listed this time, a subset of the original six:
 
-![Team People Explorer](/images/team-people-explorer.png "Team People Explorer")
+![Team People Explorer](/images/collaboration/team-people-explorer.png "Team People Explorer")
 
 ### Central Table: Email Addresses
 

@@ -24,4 +24,4 @@ The manner in which these properties are displayed under the corresponding panel
 
 An example of appearance of the Results tab for the case of an electronic bandstructure calculation is exhibited in the image below. The first two panels have been collapsed, whereas the one displaying the dispersion curve has been kept opened. 
 
-![Results Tab](../../images/results-tab.png "Results Tab")
+![Results Tab](../../images/jobs/results-tab.png "Results Tab")

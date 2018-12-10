@@ -15,4 +15,4 @@ Once the cloning is finished, a new separate entry with exactly the same content
 
 We demonstrate how cloning works in an example animation below: we clone a newly-created workflow (labelled "Empty Workflow") into a new distinct entry shown directly above it in the collection:
 
-<img data-gifffer="/images/clone-workflow.gif" />
+<img data-gifffer="/images/entities-general/clone-workflow.gif" />

@@ -12,7 +12,7 @@ Subworkflow Editor is itself subdivided into three distinct main components:
 
 The location of each component is highlighted in the picture below for the example case of a band structure calculation workflow. Click on a panel in the image to be redirected to the corresponding documentation page for each component:
 
-<img src="/images/sw-editor-components.png" usemap="#mapname">
+<img src="/images/workflow-designer/sw-editor-components.png" usemap="#mapname">
                                            
 <map name="mapname">
 <area shape="rect" coords="190,88,756,141" href="/workflow-designer/subworkflow-editor/actions-menu/">

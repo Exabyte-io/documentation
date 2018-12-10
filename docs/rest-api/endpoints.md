@@ -41,7 +41,7 @@ In order to explain the data formats and allow users to try the endpoints we use
 
 The aforementioned steps are demonstrated in the animation below.
 
-<img data-gifffer="/images/swagger-list-materials.gif"/>
+<img data-gifffer="/images/rest-api/swagger-list-materials.gif"/>
 
 
 ## API Versions

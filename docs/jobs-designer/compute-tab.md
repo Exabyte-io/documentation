@@ -4,7 +4,7 @@ Compute Tab present in [Jobs Designer](overview.md) allows the user to allocate 
 
 The typical appearance of Compute Tab is exhibited below.
 
-![Compute Tab](../images/compute-tab-designer.png "Compute Tab")
+![Compute Tab](../images/jobs-designer/compute-tab-designer.png "Compute Tab")
 
 ## Link to Instructions 
 

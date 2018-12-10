@@ -8,13 +8,13 @@ Each of these interface components is reviewed below, based on the location they
 
 The interface elements accessible from the "Profile" page are reviewed [separately](profile-page.md). Its general appearance is shown below.
 
-![Account Profile General](/images/account-profile-general.png "Account Profile General")
+![Account Profile General](/images/accounts/account-profile-general.png "Account Profile General")
 
 ## [Left Sidebar](../../ui/left-sidebar.md)
 
 The image below shows components available under the [left sidebar](../../ui/left-sidebar.md). The user should refer to the number labels to access the corresponding sections below.
 
-![Account UI left sidebar](/images/left-sidebar-accounts.png "Account UI left sidebar")
+![Account UI left sidebar](/images/accounts/left-sidebar-accounts.png "Account UI left sidebar")
 
 ### 1. [Link to Accounts Explorer](explorer.md)
 
@@ -24,7 +24,7 @@ The list of all accounts on our platform  can be accessed following [these instr
 
 Similarly, more components are present under the [right-hand sidebar](../../ui/right-sidebar.md). They are highlighted and referenced below.
 
-![Account UI right sidebar](/images/right-sidebar-accounts.png "Account UI right sidebar")
+![Account UI right sidebar](/images/accounts/right-sidebar-accounts.png "Account UI right sidebar")
 
 ### 1. [Badge](account-badge.md)
 

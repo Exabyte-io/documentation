@@ -12,7 +12,7 @@ Once the new token has been generated and the warning dialog has been closed by 
 
 In the example animation below, we demonstrate how to generate a new API authorization token that will be added to the existing entries in the overall list of tokens. The token information displayed on the warning dialog is also copied and pasted to a text editor file for future reference:
 
-<img data-gifffer="/images/generate-token.gif" />
+<img data-gifffer="/images/accounts/generate-token.gif" />
 
 ## Delete Tokens
 
@@ -22,4 +22,4 @@ The list of tokens under the  Account Preferences page additionally gives the us
 
 The same new token which was generated in the previous step will now get deleted from the list:
 
-<img data-gifffer="/images/delete-token.gif" />
+<img data-gifffer="/images/accounts/delete-token.gif" />

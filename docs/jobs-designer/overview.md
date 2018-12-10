@@ -24,7 +24,7 @@ These three steps are each formulated under the corresponding [tab](../ui/specif
 
 Click on each component panel within the image to access the corresponding documentation section, or alternatively refer to the links listed towards the end of the present page.
 
-<img src="/images/jobs-designer.png" usemap="#mapname">
+<img src="/images/jobs-designer/jobs-designer.png" usemap="#mapname">
 
 <map name="mapname">
     <area shape="rect" coords="0,41,753,116" href="/jobs-designer/header-menu/">

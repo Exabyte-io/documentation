@@ -2,7 +2,7 @@
 
 We demonstrate in the animation below how to add an example description to a Job inspected in [Viewer](../../jobs/ui/viewer.md). After opening the relevant dialog, we enter a series of headers in the Markdown syntax [^1] and then add a link to a webpage. As demonstrated in the animation the editor is implemented using the "what you see is what you get" approach [^2].
 
-<img data-gifffer="/images/metadata-description.gif" />
+<img data-gifffer="/images/entities-general/metadata-description.gif" />
 
 ## Edit Tags
 
@@ -10,7 +10,7 @@ In order to edit Tags, modify the content in the relevant text field pressing "E
 
 The aforementioned process is demonstrated in the animation below.
 
-<img data-gifffer="/images/tagging-workflow.gif" />
+<img data-gifffer="/images/entities-general/tagging-workflow.gif" />
 
 ## Links
 

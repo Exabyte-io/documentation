@@ -6,7 +6,7 @@ Every crystal structure has an underlying Bravais lattice [^1]. For more theoret
 
 The parameters of a Material's Bravais lattice  can be edited and set by expanding the top "Crystal Lattice" section in the central panel of the Materials Designer interface. The appearance of this "Crystal Lattice" editor inside the interface is shown in the figure below:
 
-<img src="/images/crystal-lattice.png"/>
+<img src="/images/materials-designer/crystal-lattice.png"/>
 
 ## Setting Lattice Type
 
@@ -36,7 +36,7 @@ When you are done selecting a new lattice type and its corresponding parameters,
 
 Click on the animation below to see the above in action. Here we change lattice type of silicon from Face-centered Cubic to Tetragonal, and then modify the size of one of the lattice axes (the a axis), applying the changes each time.
 
-<img data-gifffer="/images/ChangeMaterialLattice.gif" />
+<img data-gifffer="/images/materials-designer/ChangeMaterialLattice.gif" />
 
 ## Links
 

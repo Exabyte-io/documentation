@@ -13,17 +13,17 @@ We have pre-installed the following list of application for graphical visualizat
 
 One must open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar is a "Remote Desktop" option.
 
-![Remote Desktop](../../images/ChooseRemoteDesktop.png "Remote Desktop")
+![Remote Desktop](../../images/tutorials/ChooseRemoteDesktop.png "Remote Desktop")
 
 Select this and an overlay will appear in your web browser with a graphical user interface connected to remote Linux desktop.
 
-![Start Remote Desktop](../../images/StartRemoteDesktop.png "Start Remote Desktop")
+![Start Remote Desktop](../../images/tutorials/StartRemoteDesktop.png "Start Remote Desktop")
 
 # Finding visualization software
 
 Find and open XCrysden or Vesta under the "Applications" > Other" dropdown menu item.
 
-![Other->XCrysden](../../images/RemoteDesktopApps.png "Other->XCrysden")
+![Other->XCrysden](../../images/tutorials/RemoteDesktopApps.png "Other->XCrysden")
 
 You may read more about the visualization options for each of the above applications at the links below.
 

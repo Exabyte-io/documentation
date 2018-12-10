@@ -4,7 +4,7 @@ The steps for performing [advanced searche](../../entities-general/actions/advan
 
 We use the advanced search query builder to construct a query that filters the large dataset of materials (over 4000 entries) according to the formula ("Al"), unit cell volume (less than "80" in cubic Angstroms) and tags containing a certain keyword ("high pressure").
 
-<img data-gifffer="/images/advanced_search.gif" />
+<img data-gifffer="/images/materials/advanced_search.gif" />
 
 ## Searchable Properties 
 

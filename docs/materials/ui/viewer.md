@@ -10,7 +10,7 @@ As explained in the [general introduction](../../entities-general/ui/viewer.md),
 
 Some minor adjustments, not related to the crystal structure (as an [identifying descriptive property](../../data-structured/overview.md#by-relation-to-uniqueness)) , might still be performed under the Materials Viewer. These can primarily be performed under the *header* and *footer* of Viewer, both highlighted in red in the image below.
 
-![Materials Viewer](../../images/materials-viewer.png "Materials Viewer")
+![Materials Viewer](../../images/materials/materials-viewer.png "Materials Viewer")
 
 ### Modify Material Name 
 

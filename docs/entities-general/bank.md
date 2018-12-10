@@ -36,7 +36,7 @@ A summary depicting the above steps involved in the creation of Bank entities ca
      Expand to view
   </summary> 
     
-  ![Bank Diagram](/images/Bank-Flowchart.png "Bank Diagram")
+  ![Bank Diagram](/images/entities-general/Bank-Flowchart.png "Bank Diagram")
   
   </details>
 
@@ -44,7 +44,7 @@ A summary depicting the above steps involved in the creation of Bank entities ca
 
 The correspondence between the Entity and Bank entity collections is visualized below:
 
-![Bank Diagram](/images/Bank-diagram-Mapping.png "Bank Diagram")
+![Bank Diagram](/images/entities-general/Bank-diagram-Mapping.png "Bank Diagram")
 
 Distinct Account-owned entities <i class="zmdi zmdi-close-circle-o"></i> may end up corresponding to the same **unique** Bank entry <i class="zmdi zmdi-plus-circle-o"></i>. As mentioned earlier, this happens when the underlying Bankable Entities produce the same output for the Mapping Function.
 
@@ -61,13 +61,13 @@ The output of the mapping function is a **hash string**. This hash is stored ins
 
 If an Account has a sufficient [service level](../pricing/service-levels.md) allowing for private data, the situation displayed below will appear, whereby private items are accessible only to the Account members.
 
-![Bank Diagram](/images/Bank-diagram-Private.png "Bank Diagram")
+![Bank Diagram](/images/entities-general/Bank-diagram-Private.png "Bank Diagram")
 
 ### Public 
 
 Alternatively, the lack of data privacy leads to the following scenario, whereby all other Accounts gain access to the Bank entities.
 
-![Bank Diagram](/images/Bank-diagram-Public.png "Bank Diagram")
+![Bank Diagram](/images/entities-general/Bank-diagram-Public.png "Bank Diagram")
 
 > NOTE: If different Accounts happen to generate exactly the same Bank Entity, the privacy settings are nullified if any of these Accounts makes the Entity public.
   

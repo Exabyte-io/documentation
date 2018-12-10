@@ -2,7 +2,7 @@
 
 Navigating to the Workflow Tab in [Jobs Designer](overview.md) displays the [Workflow](../workflows/overview.md) for the [Job](../jobs/overview.md) being created. The interface is equivalent to that of the [Workflows Designer](../workflow-designer/overview.md), except for a limited set of non-adjustable parameters outlined in what follows.
 
-![Workflow Tab](../images/workflow-tab.png "Workflow Tab")
+![Workflow Tab](../images/jobs-designer/workflow-tab.png "Workflow Tab")
 
 ## Non-Adjustable Settings
 
@@ -10,7 +10,7 @@ Some Workflow parameters can be edited under Jobs Designer, except for those per
  
 These non-adjustable settings are present both under the ["Overview Tab"](../workflow-designer/subworkflow-editor/overview.md) of Workflow Designer, and inside the editor of the [subworkflow units](../workflow-designer/unit-editor.md). Hovering the mouse over such settings makes it clear that the editing action is forbidden in these cases, as illustrated below.
  
- ![Forbidden Workflow Actions](../images/forbidden-workflow-actions.png "Forbidden Workflow Actions")
+ ![Forbidden Workflow Actions](../images/jobs-designer/forbidden-workflow-actions.png "Forbidden Workflow Actions")
 
 ## Workflow Settings for Multiple Materials
 
@@ -30,4 +30,4 @@ If alternatively multiple [Materials](../materials/overview.md) have been added,
 
 In the animation below, we show how to cycle through the input script previews for a series of materials added to the Job Designer. Each entry can be selected in turn by clicking its corresponding radio button from the list on the right.
 
-<img data-gifffer="/images/unit-inputs-designer.gif">
+<img data-gifffer="/images/jobs-designer/unit-inputs-designer.gif">

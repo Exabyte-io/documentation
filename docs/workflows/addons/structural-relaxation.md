@@ -31,7 +31,7 @@ Once the Relaxation calculation has been selected and added to the beginning of 
 
 The above steps for adding the relaxation subworkflow at the beginning of an existing band structure calculation workflow are demonstrated in the animation below:
 
-<img data-gifffer="/images/add-relaxation.gif" />
+<img data-gifffer="/images/workflows/add-relaxation.gif" />
 
 
 ## Relaxation types

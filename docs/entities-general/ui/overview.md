@@ -6,7 +6,7 @@ Some User Interface components are shared between entities of different [types](
 
 The image below highlights their **access points** (or click triggers), within the [Account Profile](../../accounts/ui/profile-page.md) page.
 
-![Common Entities UI](/images/common-ui-entities.png "Common Entities UI")
+![Common Entities UI](/images/entities-general/common-ui-entities.png "Common Entities UI")
 
 ## [1. Explorer](../../entities-general/ui/explorer.md)
 

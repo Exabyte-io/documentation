@@ -2,7 +2,7 @@
 
 Unit input templates allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) simulation package, is depicted on the left-hand side in the image below.
 
-!["Example Input Template"](../../images/input-template.png "Example Input Template")
+!["Example Input Template"](../../images/workflow-designer/input-template.png "Example Input Template")
 
 The reader is referred to the Quantum ESPRESSO-specific [documentation page](../../software/modeling/quantum-espresso.md), and to its official online documentation page pertaining specifically to the pw.x executable code [^1], for a detailed description of the meaning of the input flags displayed in the above example.
 
@@ -185,7 +185,7 @@ K_POINTS automatic
 
 In case multiple materials are present, they can each be selected from the list of radio buttons on the right-hand side of the "Preview" tab page in order to review their corresponding input files in turn. The appearance of such radio buttons, when silicon is the only material being considered in the subworkflow calculation, is highlighted as an example in the image below:
 
-!["Input Preview"](../../images/input-preview.png "Input Preview")
+!["Input Preview"](../../images/workflow-designer/input-preview.png "Input Preview")
 
 ## Links
 

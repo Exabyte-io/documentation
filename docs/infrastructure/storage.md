@@ -6,7 +6,7 @@ We store the raw simulation data on on block storage drives (ie. hard drives) co
 
 A representative example of an overall storage system, such as implemented on our infrastructure, is explained visually in the flowchart below. 
 
-![Storage System](/images/Storage-System.png "Storage System")
+![Storage System](/images/infrastructure/Storage-System.png "Storage System")
 
 The above example includes multiple clusters connected to the same central [Login Node](login/overview.md), each one with its own corresponding main access [Master Node](clusters/directories.md) and associated storage space. Here, we also show (through color labelling) how each [Cluster Home](../data-on-disk/directories.md#cluster-home) directory present under the corresponding Master Node filesystem is **mapped (mounted)** to the [Login Home](../data-on-disk/directories.md#login-home). 
 

@@ -6,4 +6,4 @@ Creation of a new entity in the relevant Account-owned collection can be initiat
 
 In the example animation below, we take workflows as our case study. We demonstrate how to enter the Workflow Designer starting from the account-owned collection.
 
-<img data-gifffer="/images/create-new-workflow.gif" />
+<img data-gifffer="/images/entities-general/create-new-workflow.gif" />

@@ -4,4 +4,4 @@ Changing the name of an entity is achieved by first [opening](open-edit.md) it. 
 
 In the animation below, we show an example of how to change the name of a workflow within the [Workflow Viewer](../../workflows/ui/viewer.md).
 
-<img data-gifffer="/images/change-name.gif" />
+<img data-gifffer="/images/entities-general/change-name.gif" />

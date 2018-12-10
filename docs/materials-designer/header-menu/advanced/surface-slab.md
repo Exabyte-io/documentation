@@ -17,7 +17,7 @@ Crystal surfaces are defined in terms of their Miller indices [^1]. Miller indic
 
 Some examples of planes with different Miller index labels in cubic crystals are depicted below for reference and illustration purposes. Since the reciprocal lattice vectors are indeed mutually orthogonal in this particular cubic case, the $(hkl)$ planes can effectively be taken to be always perpendicular to the $(hkl)$ direction in the crystal relative to the conventional Cartesian coordinate system.
 
-<img src="/images/Miller_Indices_Felix_Kling.png"/>
+<img src="/images/materials-designer/Miller_Indices_Felix_Kling.png"/>
 
 ### Surface vs Slab
 
@@ -30,7 +30,7 @@ Surface represents an isolated terminal edge of an infinite crystal, whereas a S
 
 By clicking on the `Surface / slab` option in the `Advanced` menu, the surface/slab generator can be accessed. The user should expect to encounter the following dialog:
 
-<img src="/images/surface-slab-generator.png"/>
+<img src="/images/materials-designer/surface-slab-generator.png"/>
 
 ## Constructing surfaces and slabs 
 
@@ -60,7 +60,7 @@ Click "Submit" at the bottom of the generator dialog once all the above informat
 
 In the animation below, we generate a crystalline slab of pure silicon along the (001) plane, composed of three layers of atoms in terms of thickness, and with a 10x10 supercell constituting its base. The final view of the crystal structure is finally adjusted with the help of the interactive features of the 3D viewer, described [in this page](../../../materials-designer/3d-editor.md), to better inspect the overall appearance of the slab with regards to its size, thickness and vacuum ratio relative to the enclosing unit cell. 
 
-<img data-gifffer="/images/CreateSurfaceSlab.gif" />
+<img data-gifffer="/images/materials-designer/CreateSurfaceSlab.gif" />
 
 
 ## Structural Metadata

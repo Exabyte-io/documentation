@@ -4,7 +4,7 @@ The workflows units for each elementary computation can be edited by means of Un
 
 The Unit Editor interface contains multiple sections, as shown in the following visual and reviewed further below.
 
-!["Unit Editor"](../images/unit-editor.png "Unit Editor sections")
+!["Unit Editor"](../images/workflow-designer/unit-editor.png "Unit Editor sections")
 
 ## Name
 

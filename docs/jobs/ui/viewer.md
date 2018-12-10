@@ -4,7 +4,7 @@ In order to inspect the content of a Job, the user can [open it](../../entities-
 
 The image below shows how the Viewer contains two extra highlighted tabs, in addition to the three main tabs of [Designer](../../jobs-designer/overview.md). They are labelled [**"Results"**](results-tab.md) and [**"Files"**](files-tab.md), and are reviewed separately in their respective pages. The name of the Job and that of the containing [Project](../projects.md) is also indicated at the top-left corner of the page.
 
-![Extra Jobs Viewer](../../images/extra-jobs-viewer.png "Extra Jobs Viewer")
+![Extra Jobs Viewer](../../images/jobs/extra-jobs-viewer.png "Extra Jobs Viewer")
 
 ## No Adjustments Allowed
 

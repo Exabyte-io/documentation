@@ -8,7 +8,7 @@ Any workflow in the account-owned collection can be recognized to be up-to-date 
 
 > NOTE: the green check-mark label indicating a positive up-to-date condition is always displayed for user-created workflows, since Bank updates are not available for them.
 
-<img src="/images/updating-workflows.png"/>
+<img src="/images/workflows/updating-workflows.png"/>
 
 ## How to Perform an Update?
 

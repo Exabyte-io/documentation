@@ -6,13 +6,13 @@
  
 First, navigate to the "Preferences" tab <i class="zmdi zmdi-edit zmdi-hc-border"></i> towards the right-hand side of the [Team-specific Page](../../ui/team-page.md):
 
-![Team Preferences](/images/team-preferences.png "Team Preferences")
+![Team Preferences](/images/collaboration/team-preferences.png "Team Preferences")
 
 ## The "Update Team Profile" Page
 
 The user is greeted with the following page, containing the team information:
 
-![Team Permissions](/images/team-permissions.png "Team Permissions")
+![Team Permissions](/images/collaboration/team-permissions.png "Team Permissions")
 
 ### Update Team Permissions 
 
@@ -22,4 +22,4 @@ Multiple permissions can be selected simultaneously towards the bottom of the ab
 
 Below, we start with a "Test Team" equipped initially with Read-only permissions. We then change the preferences to include the four possible permission levels (Read, Edit, Comment and Execute):
 
-<img data-gifffer="/images/edit-team-permissions.gif">
+<img data-gifffer="/images/collaboration/edit-team-permissions.gif">

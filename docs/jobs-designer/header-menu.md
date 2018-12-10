@@ -2,7 +2,7 @@
 
 The main header menu at the top of the [Jobs Designer](overview.md) interface is comprised of the following items enumerated below. Please refer to further explanations under the same number labels.
 
-![Header Menu](../images/header-jobs-designer.png "Header Menu")
+![Header Menu](../images/jobs-designer/header-jobs-designer.png "Header Menu")
 
 ## 1. Job Name
 

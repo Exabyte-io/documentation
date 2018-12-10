@@ -2,13 +2,13 @@
 
 Opening the Materials Tab within the [Jobs Designer](overview.md) presents the user with the following interface, which can be used to inspect and review the materials [added](actions-header-menu/select-materials.md) to the [Job](../jobs/overview.md) being created.
 
-![Materials Tab](../images/materials-tab.png "Materials Tab")
+![Materials Tab](../images/jobs-designer/materials-tab.png "Materials Tab")
 
 ## Differences from Materials Viewer
 
 The interface under Materials Tab largely mirrors the general [Materials Viewer](../materials/ui/viewer.md), except for the differences noted in the remainder of the present documentation page. These differences are concentrated within the toolbar highlighted in the above image. Please refer to the number labeling the toolbar shown below, for understanding the correspondence with the headers of the descriptions than follows. 
 
-![Materials Tab Toolbar](../images/materials-tab-toolbar.png "Materials Tab Toolbar")
+![Materials Tab Toolbar](../images/jobs-designer/materials-tab-toolbar.png "Materials Tab Toolbar")
 
 Another important difference of Materials Tab from [Materials Viewer](../materials/ui/viewer.md) is that **no adjustments** are allowed to the [material](../materials/overview.md) being currently inspected.
 
@@ -20,7 +20,7 @@ The **Materials Pager** allows for the switching between the different crystal s
 
 In the animation shown here, we demonstrate how to cycle through materials by using the pager.
 
-<img data-gifffer="/images/materials-pager.gif">
+<img data-gifffer="/images/jobs-designer/materials-pager.gif">
 
 ## 2. Add / Delete Materials
 

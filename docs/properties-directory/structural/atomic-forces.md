@@ -12,7 +12,7 @@ Atomic forces can be computed as part of any [Workflow](../../workflows/overview
 
 Under the [Results Tab](../../jobs/ui/results-tab.md) within [Jobs Viewer](../../jobs/ui/viewer.md), the atomic forces are returned to the user as displayed in the example image below (exhibiting an ideal equilibrium situation with zero force components), expressed in units of eV/Angstroms.
 
-![Atomic forces](/images/Properties/atomic_forces.png "Atomic forces")
+![Atomic forces](/images/properties-directory/Properties/atomic_forces.png "Atomic forces")
 
 ## Schema 
 

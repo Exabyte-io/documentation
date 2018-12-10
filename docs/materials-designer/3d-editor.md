@@ -2,13 +2,13 @@
 
 3D Editor is located on the right-hand side of the Materials Designer interface. It is updated to reflect on any changes to the current material under consideration, and user activity in editing it. The location of this editor within the wider interface is highlighted below:
 
-<img src="/images/3D-viewer.png"/>
+<img src="/images/materials-designer/3D-viewer.png"/>
 
 ## Interactive regime
 
 By default, the 3d Editor is non-interactive and only shows the structural information with a pre-defined setting (eg. view angle, axes, number of repetitions). Interactivity is enabled by clicking on the switch button <i class="zmdi zmdi-power zmdi-hc-border"></i> at the top-left corner of the crystal editor panel. Doing so will activate the following functionality parts, each documented in its own page:
 
-<img src="/images/3D-viewer-panels.png"/>
+<img src="/images/materials-designer/3D-viewer-panels.png"/>
  
 ## [View Panel](./3d-editor/view.md)
 
