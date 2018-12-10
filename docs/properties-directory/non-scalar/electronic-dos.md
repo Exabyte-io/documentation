@@ -10,7 +10,7 @@ Example results for the computed electronic Density of States are also presented
 
 The typical appearance of such a Density of States plot for electronic bandstructures is shown below.
 
-![Electronic DoS](/images/Properties/electronic-dos.png "Electronic DoS")
+![Electronic DoS](../../images/properties-directory//electronic-dos.png "Electronic DoS")
 
 ### Notation
 

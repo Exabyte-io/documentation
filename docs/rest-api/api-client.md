@@ -6,7 +6,7 @@ exabyte-api-client[^1] is a Python package that provides access to the REST-API 
 
 ## Other
 
-Please [contact us](//ui/support.md) if you are interested in any other programming languages. We are able to produce one shortly.
+Please [contact us](..//ui/support.md) if you are interested in any other programming languages. We are able to produce one shortly.
 
 ## Links
 

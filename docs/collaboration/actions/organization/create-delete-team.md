@@ -8,7 +8,7 @@ Creating a new Team within an Organization is performed in a similar way to the 
 
 Click "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page to be presented with the following dialog:
 
-![Create New Team](/images/create-new-team.png "Create New Team")
+![Create New Team](../../../images/collaboration/create-new-team.png "Create New Team")
 
 ## Enter Team-related Information
 
@@ -16,7 +16,7 @@ Enter the information about the name and description of the new team in the corr
 
 ## Entity-related Permissions
 
-The entity [permissions](/entities-general/permissions.md) can then be set under the bottom drop-down menu. They are granted to future team members in relation to the team entities. One or multiple permissions can be selected this way. These options can be modified at any moment following team creation [as explained here](../team/edit-permissions.md).
+The entity [permissions](../../../entities-general/permissions.md) can then be set under the bottom drop-down menu. They are granted to future team members in relation to the team entities. One or multiple permissions can be selected this way. These options can be modified at any moment following team creation [as explained here](../team/edit-permissions.md).
 
 ## Finalize Creation
 
@@ -26,15 +26,15 @@ Once the required information is inserted, click `Create` button. The new Team a
 
 In the example animation below, we demonstrate how to create a new Team under the "Example" Organization called "Test Team", to which we grant "Read" permissions only:
 
-<img data-gifffer="/images/organization-add-team.gif">
+<img data-gifffer="/images/collaboration/organization-add-team.gif">
 
 
-# Delete Team 
+## Delete Team 
 
-Teams listed under the Teams Explorer can be deleted following the [standard "Delete" procedure](/entities-general/actions/delete.md).
+Teams listed under the Teams Explorer can be deleted following the [standard "Delete" procedure](../../../entities-general/actions/delete.md).
 
 ## Animation
 
 We now show how to delete the "Test Team" created in the previous animation:
 
-<img data-gifffer="/images/organization-remove-team.gif">
+<img data-gifffer="/images/collaboration/organization-remove-team.gif">

@@ -15,13 +15,13 @@ To create a new job, click on the "Create Job" link located in left-hand sidebar
 
 You will be taken to the "Job wizard" page where you can create a material or choose one that you created and saved before using Materials Designer tab.
 
-<img data-gifffer="/images/FirstJobCreate.gif" />
+<img data-gifffer="/images/tutorials/tutorials/FirstJobCreate.gif" />
 
 # Choose band gap workflow
 
 Choose VASP simulation engine. You will see the Total Energy workflow as the default.  Total Energy workflow has one execution unit and provides the band gap value estimate.  Below we demonstrate how to click on the execution unit and modify the k-point density to 11 x 11 x 11 to ensure a dense enough k-mesh for a precise prediction.
 
-<img data-gifffer="/images/BandGapWorkflow.gif" />
+<img data-gifffer="/images/tutorials/tutorials/BandGapWorkflow.gif" />
 
 # Compute parameters
 
@@ -31,13 +31,13 @@ Next we set up compute parameters for the number of processors and the maximum t
 
 Click "Submit Job" as shown below. You will be asked if you want to keep a duplicate copy of the material since it has already been saved before. Answer "No" to proceed forward.
 
-<img data-gifffer="/images/BandGapCompute.gif" />
+<img data-gifffer="/images/tutorials/tutorials/BandGapCompute.gif" />
 
 # Monitor status + results
 
 Once the job is submitted it you will be taken to the Job Status page and can monitor the progress of the self-consistent calculation.  When the calculation is completed the color of the Status tab will turn Green and the Results tab will become clickable.  You can scroll through the Results tab to see the results including the indirect band gap found for Si (~0.6 eV).
 
-<img data-gifffer="/images/BandGapResults.gif" />
+<img data-gifffer="/images/tutorials/tutorials/BandGapResults.gif" />
 
 # Summary
 

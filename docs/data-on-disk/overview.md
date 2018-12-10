@@ -4,15 +4,15 @@
 
 We introduce below the key concepts associated with the disk storage of such unstructured data.
 
-## Directory Structure
+## [Directory Structure](directories.md)
 
 We review our approach towards distributing the storage of simulation data in an organized hierarchic manner, referred to as the **directory structure**, in [this section](directories.md) of the documentation.
 
-## Storage Quota
+## [Storage Quota](quotas.md)
 
 In order to avoid running out of space, **storage quotas** are attributed to every storage space present across our infrastructure, limiting the amount (size) of the data that may be contained in them at any moment. They are explained in detail [here](quotas.md), for each case. 
 
-## Security
+## [Security](security.md)
 
 Security policies affecting the storage of simulation files on the hard drives of our infrastructure are the object of a dedicated discussion [in this section](security.md).
 

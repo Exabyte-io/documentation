@@ -6,14 +6,14 @@
     
 The [Owner and Administrators](../../organizations/roles.md) of the parent [Organization](../../organizations/overview.md) can perform additional administrative actions with  regards to its constituent [Teams](../../organizations/teams.md). They are listed below with links to their respective documentation pages:
 
-# Add or Remove Members
+## [Add or Remove Members](add-remove-member.md)
 
 The reader can find instructions on how to add or remove members to/from a Team [here](add-remove-member.md).
 
-# Add or Remove Entities
+## [Add or Remove Entities](add-remove-entity.md)
 
 Entities can be added or removed from a Team following [this procedure](add-remove-entity.md).
 
-# Edit Permissions
+## [Edit Permissions](edit-permissions.md)
 
 Editing the permissions attributed to Team entities is explained [here](edit-permissions.md).     

@@ -2,7 +2,7 @@
 
 The appearance and functionality of the header bar is illustrated below.
 
-![ui-header](/images/ui-header.png "UI header")
+![ui-header](../images/ui/ui-header.png "UI header")
 
 ## Left-hand Sidebar Trigger
 
@@ -22,8 +22,8 @@ The title of the page currently viewed is shown for reference purposes.
 
 ## Right-hand Sidebar Trigger
 
-The right-hand sidebar can be opened by clicking the [Account Badge](/accounts/ui/account-badge.md) at the top-right corner of the page. 
+The right-hand sidebar can be opened by clicking the [Account Badge](../accounts/ui/account-badge.md) at the top-right corner of the page. 
 
-# Footer
+## Footer
 
 Additional links can be accessed from within the footer: the homepage of Exabyte.io, the present documentation, and relevant information about our privacy conditions and Terms of Service.

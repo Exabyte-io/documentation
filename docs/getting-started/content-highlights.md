@@ -6,73 +6,73 @@ This page helps users quickly get through the documentation.
 
 ## Login
 
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](/compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
+We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
 
-- [secure shell and in-browser terminals](/compute/cli/overview/#in-browser-terminal-and-ssh-terminal)
-- [remote desktop session example](/electronic-density-mesh/#preparing-for-visualization)
-- [connection options explained](/connection-options/)
+- [secure shell and in-browser terminals](../remote-connection/overview.md)
+- [remote desktop session example](../remote-connection/remote-desktop.md)
+- [connection options explained](../remote-connection/overview.md)
 - <a href="http://platform.exabyte.io/login" target="_blank">login page</a>
 
 ## Creating materials
 
 There are 3 basic ways to input material geometries:
 
-- [construct new crystal geometries](/materials/creating-structures/) using our browser-based crystallographic design tools
-- [upload structure](/materials/upload-and-import/#upload-structure)  in POSCAR/CIF format(s)
-- [import structure](/materials/upload-and-import/#import-structure)  from a third-party database (eg. materialsproject.org)
+- [construct new crystal geometries](../materials/creating-structures/) using our browser-based crystallographic design tools
+- [upload structure](../materials/upload-and-import/#upload-structure)  in POSCAR/CIF format(s)
+- [import structure](../materials/upload-and-import/#import-structure)  from a third-party database (eg. materialsproject.org)
 
 !!! note "Combinatorial sets"
-    [Combinatorial sets](/materials/combinatorial-sets/) make it possible to rapidly create a large number of material geometries.
+    [Combinatorial sets](../materials/combinatorial-sets/) make it possible to rapidly create a large number of material geometries.
 
 ## Running simulations
 
-Next step after creating/choosing a material is to simulate it to extract [characteristic properties](/materials/properties/). In order to do so, one needs to construct a simulation workflow.
+Next step after creating/choosing a material is to simulate it to extract [characteristic properties](../materials/properties/). In order to do so, one needs to construct a simulation workflow.
 
 ### Workflows
 
-[Workflows](/models/simulation-workflows/) define the algorithm used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on simulation engine and model. For example, [Density Functional Theory](/models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
+[Workflows](../models/simulation-workflows/) define the algorithm used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on simulation engine and model. For example, [Density Functional Theory](../models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
 
 More information about specific workflows, including tutorials and input date:
 
-- [electronic band structure](/tutorials/band-structure)
-- [electronic band gap](/tutorials/band-gap)
-- [electronic density of states](/tutorials/density-of-states)
-- [electronic density mesh](/tutorials/electronic-density-mesh)
-- [zero point energy](/tutorials/zero-point-energy)
-- [formation energy](/tutorials/formation-energy)
-- [structural relaxation](/tutorials/relaxation)
-- [automatic k-point convergence](/tutorials/kpt-convergence)
-- [custom-input workflow](/tutorials/custom-input-workflow)
-- [fermi surface](/tutorials/fermi-surface)
-- [combinatorial screening](/tutorials/combinatorial-screening)
-<!-- - [combinatorial screening of iii-v semiconductor band gaps](/tutorials/semiconductors/III-Vs-band-gap.md) -->
+- [electronic band structure](../tutorials/band-structure)
+- [electronic band gap](../tutorials/band-gap)
+- [electronic density of states](../tutorials/density-of-states)
+- [electronic density mesh](../tutorials/electronic-density-mesh)
+- [zero point energy](../tutorials/zero-point-energy)
+- [formation energy](../tutorials/formation-energy)
+- [structural relaxation](../tutorials/relaxation)
+- [automatic k-point convergence](../tutorials/kpt-convergence)
+- [custom-input workflow](../tutorials/custom-input-workflow)
+- [fermi surface](../tutorials/fermi-surface)
+- [combinatorial screening](../tutorials/combinatorial-screening)
+<!-- - [combinatorial screening of iii-v semiconductor band gaps](../tutorials/semiconductors/III-Vs-band-gap.md) -->
 
 ### Compute
 
-Compute parameters ([submission queue](/compute/queues), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
+Compute parameters ([submission queue](../infrastructure/resource/queues.md), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
 
-- [setting compute parameters](/compute/setting-parameters/)
-- [compute platform overview](/compute/overview/)
-- [compute platform architecture](/compute/overview/#platform-architecture)
-- [submission queues](/compute/queues/)
-- [queue-based pricing](/accounts/accounting/pricing-and-service-levels/#queue-based-pricing)
-- [unified storage system](/compute/cli/storage-system/)
-- [linpack benchmark & scalability study](/compute/hpl-benchmark/)
-- [simulation benchmarks](/compute/benchmarks-and-scalability/)
+- [setting compute parameters](../infrastructure/compute/parameters.md)
+- [compute platform overview](../infrastructure/compute/overview.md)
+- [compute platform architecture](../infrastructure/overview.md)
+- [submission queues](../infrastructure/resource/queues.md)
+- [queue-based pricing](../infrastructure/resource/category.md)
+- [unified storage system](../infrastructure/storage.md)
+- [linpack benchmark & scalability study](../benchmarks/hpl-benchmark.md)
+- [simulation benchmarks](../benchmarks/high-throughput-screening.md)
 
 ### Run simulations via command-line interface (CLI)
 
 Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
 
-- [job submission: tutorial](/tutorials/cli-job)
-- [job submission examples](/compute/cli/jobs/)
-- [job script templates](/compute/cli/jobs/#pre-configured-submit-scripts)
-- [modules environment](/compute/cli/modules-environment/)
+- [job submission: tutorial](../tutorials/cli-job)
+- [job submission examples](../jobs-cli/overview.md)
+- [job script templates](../jobs-cli/batch-scripts/overview.md)
+- [modules environment](../cli/modules.md)
 
 ### Extra simulation capabilities
 
-- [restart from previous run](/tutorials/restart-job)
-- [remote desktop visualization](/tutorials/remote-desktop)
+- [restart from previous run](../tutorials/restart-job)
+- [remote desktop visualization](../tutorials/remote-desktop)
 
 ## Exabyte Data Convention
 
@@ -80,11 +80,11 @@ We employ a proprietary JSON-based data convention that supports storing materia
 
 We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page (see below). Data originated on command line is accessible from within the web application and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning.
 
-- [data convention](/getting-started/data-convention/)
-- [analytics (comparing materials)](/materials/search-compare/)
+- [data convention](../data-structured/overview.md)
+- analytics (comparing materials)
 
 
 ## Other
 
-- [service levels and pricing](/accounts/accounting/pricing-and-service-levels/)
-- [storage quotas](/accounts/accounting/storage-quota/)
+- [service levels and pricing](../pricing/service-levels.md)
+- [storage quotas](../accounts/quota.md)
