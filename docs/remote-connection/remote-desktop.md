@@ -12,7 +12,7 @@ The set of **Analysis and Visualization Software** presented [here](../software/
 
 We explain how to open and launch such analysis software [in this page](actions-rd/open-app.md). An example of the appearance of the Remote Desktop interface is shown in the image below, where the [VESTA](../software/analysis/vesta.md) option under the corresponding access menu is highlighted.
 
-!["VESTA RD"](/images/vesta-rd.png "VESTA RD")
+!["VESTA RD"](../images/remote-connection/vesta-rd.png "VESTA RD")
 
 ## Open Remote Desktop
 

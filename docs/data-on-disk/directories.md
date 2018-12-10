@@ -28,4 +28,4 @@ A shortcut to a folder containing some quick examples (templates) for command-li
 
 [^1]: [Wikipedia Linux Filesystem Hierarchy Standard, Website](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
-[^2]: [Wikipedia Linux File system permissions](https://en.wikipedia.org/wiki/File_system_permissions)
+[^2]: [Wikipedia Linux File system permissions, Website](https://en.wikipedia.org/wiki/File_system_permissions)

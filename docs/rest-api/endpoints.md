@@ -11,23 +11,23 @@ An Endpoint is one end of a communication channel, the API end of it. It has a u
 
 Below is the list of currently supported endpoints with links to the detailed documentation for each:
 
-- [Material](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Material/get_materials)
-- [Workflow](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Workflow/get_workflows)
-- [Job](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Job/get_jobs)
-- [Project](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Project/get_projects)
-- [Bank Material](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/BankMaterial/get_bank_materials)
-- [Bank Workflow](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/BankWorkflow/get_bank_workflows)
-- [Property](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Property/get_refined_properties) (RefinedProperty)
-- [RawProperty](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/RawProperty/get_raw_properties)
-- [Charge](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Charge/get_charges)
-- [Login](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/API/post_login)
-- [Logout](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/API/get_logout)
+- [Material](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Material/get_materials)
+- [Workflow](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Workflow/get_workflows)
+- [Job](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Job/get_jobs)
+- [Project](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Project/get_projects)
+- [Bank Material](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/BankMaterial/get_bank_materials)
+- [Bank Workflow](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/BankWorkflow/get_bank_workflows)
+- [Property](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Property/get_refined_properties) (RefinedProperty)
+- [RawProperty](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/RawProperty/get_raw_properties)
+- [Charge](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Charge/get_charges)
+- [Login](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/API/post_login)
+- [Logout](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/API/get_logout)
 
 ## Endpoint Documentation
 
 In order to explain the data formats and allow users to try the endpoints we use Swagger UI[^2], a software framework to design, build, document, and try API services. In the example below, we demonstrate how to use the framework to list the materials an account has access to. It is assumed that the reader has already generated the authentication parameters explained in [here](authentication.md).
 
-1. Open [Swagger UI](/api) page.
+1. Open [Swagger UI](../api) page.
 
 2. Set `X-ACCOUNT-ID` and `X-AUTH-TOKEN` authentication parameters.
 
@@ -41,19 +41,19 @@ In order to explain the data formats and allow users to try the endpoints we use
 
 The aforementioned steps are demonstrated in the animation below.
 
-<img data-gifffer="/images/swagger-list-materials.gif"/>
+<img data-gifffer="/images/rest-api/swagger-list-materials.gif"/>
 
 
 ## API Versions
 
 Below you can find the currently supported API versions.
 
-- [2018-10-01](/api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json)
+- [2018-10-01](../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json)
 
 
 ## Links
 
-[^1]: [Hypertext Transfer Protocol (HTTP), Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+[^1]: [Wikipedia Hypertext Transfer Protocol (HTTP), Website](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
 [^2]: [Swagger UI, GitHub](https://github.com/swagger-api/swagger-ui/tree/v2.2.10)
 

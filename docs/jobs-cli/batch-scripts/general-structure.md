@@ -2,7 +2,7 @@
 
 The [Batch Scripts](overview.md) used for [job submission via CLI](../overview.md) have a general structure subdivided into several main sections, corresponding to each highlighted panel in the image below. The reader is referred to their number labels for finding their ensuing explanations.
 
-![Batch Script General Structure](/images/jobscript_structure.png "Batch Script General Structure")
+![Batch Script General Structure](../../images/jobs-cli/jobscript_structure.png "Batch Script General Structure")
 
 !!!tip "Recommended extensions for Batch Scripts"
     A common convention is to append the suffix ".pbs" or ".rms" or ".sh" to the filename of batch scripts.

@@ -49,4 +49,4 @@ Explained in more details [here](../../data-on-disk/directories.md#dropbox).
 
 The location of the login home folder under the main [remote desktop environment](../../remote-connection/remote-desktop.md) is highlighted in red in the following illustration. 
 
-![Login Home](/images/login-home.png "Login Home")
+![Login Home](../../images/infrastructure/login-home.png "Login Home")

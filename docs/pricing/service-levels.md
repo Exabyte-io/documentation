@@ -34,7 +34,7 @@ Here's how it works:
 
 ## Service levels for Enterprise
 
-Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](/collaboration/organizations/overview.md). 
+Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](../collaboration/organizations/overview.md). 
 
 Notes:
 
@@ -52,7 +52,7 @@ Our users only pay for what they use, however we require that they use the alloc
 
 ## Queue-based pricing
 
-Detailed description of submission queues and compute levels is available [elsewhere](/infrastructure/resource/queues.md). Brief summary of charge factors for each queue types wrt the base price are shown below
+Detailed description of submission queues and compute levels is available [elsewhere](../infrastructure/resource/queues.md). Brief summary of charge factors for each queue types wrt the base price are shown below
 
 |Queue type| Charge factor
 |:---------|:------------

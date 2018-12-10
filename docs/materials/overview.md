@@ -2,7 +2,7 @@
 
 This section contains information about how we define, organize, store and interact with materials data and the corresponding properties. In a broad sense we consider Material to be a physical (chemical, biological) system(s) under investigation.
 
-## User Interface
+## [User Interface]()
 
 ### [Materials Explorer](ui/explorer.md)
 
@@ -28,7 +28,7 @@ The [Data](data.md) section contains an example of JSON representation of a mate
 
 [Materials Bank](bank.md) collection and its related operations is explained in the corresponding section. 
 
-## Classification
+## [Classification]()
 
 Materials are distinguished based on whether they are [crystalline](classification/crystalline.md) or [non-crystalline](classification/non-crystalline.md).
 
