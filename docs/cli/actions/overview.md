@@ -4,7 +4,7 @@ The following actions are available for the [Command Line Interface](../overview
 
 ## Load / Unload Modules
 
-We describe how pre-compiled [modules](../environment.md#modules) can be loaded, listed or purged under the CLI [in this page](modules.md).
+We describe how pre-compiled [modules](../environment.md#modules) can be loaded, listed or purged under the CLI [in this page](modules-actions.md).
 
 ## Customize Shell Environment
 
@@ -25,10 +25,6 @@ The [computing clusters and nodes](../../infrastructure/clusters/overview.md) av
 ## Accounting
 
 We introduce the relevant commands for inspecting the [Account](../../accounts/overview.md) [Balance](../../accounts/balance.md) and [Quota](../../accounts/quota.md) via CLI [in this page](balance-quota.md). 
-
-## Transfer Files via SCP
-
-We explain how to perform file transfers via the [SCP protocol](../../remote-connection/ssh.md#transfer-files-with-scp), between user's local UNIX-based machines and our remote server, [with these instructions](transfer-files-scp.md).
 
 ## Jobs Actions
 

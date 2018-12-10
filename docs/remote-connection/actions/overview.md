@@ -25,6 +25,10 @@ We explain how to upload locally stored files to the Remote Desktop or Web Termi
 
 Conversely, files stored remotely can be downloaded to the user's local hard drive by following [these instructions](download.md).
 
+## Transfer Files via SCP
+
+We explain how to perform file transfers via the [SCP protocol](../../remote-connection/ssh.md#transfer-files-with-scp), between user's local UNIX-based machines and our remote server, [with these instructions](../../remote-connection/actions/transfer-files-scp.md).
+
 ## Copy / Paste Text
 
 Finally, we provide [these instructions](copy-paste.md) on how text can be copied and pasted into the remote connection interfaces, with the help of the above-mentioned [Sidebar](sidebar.md). 
