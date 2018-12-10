@@ -10,7 +10,7 @@ Interactive parallel jobs are not supported on our platform by design. Users are
 
 ## Implementation
 
-Our batch system is based on the **PBS model** [^1], implemented with the **Moab scheduler** [^2] and **Torque resource manager** [^3]. The actual execution of the parallel job, however, is handled by a special command, called a **job launcher**, which is implemented by a **parallel (MPI) library**. In a generic Linux environment, this utility is often labelled **"mpirun"**.
+Our batch system is based on the **PBS model** [^1], implemented with the **Maui scheduler** [^2] and **Torque resource manager** [^3]. The actual execution of the parallel job, however, is handled by a special command, called a **job launcher**, which is implemented by a **parallel (MPI) library**. In a generic Linux environment, this utility is often labelled **"mpirun"**.
 
 ## General Structure
 
@@ -32,5 +32,5 @@ We provide some examples on how to enter the relevant information about jobs in 
 
 [^1]: [Torque Resource Manager Administrator Guide, Document](http://docs.adaptivecomputing.com/torque/6-1-2/adminGuide/torqueAdminGuide-6.1.2.pdf)
 
-[^2]: [Moab Cloud HPC Suite, Official Website](http://www.adaptivecomputing.com/moab-hpc-basic-edition/)
+[^2]: [Maui Scheduler, Official Website](https://en.wikipedia.org/wiki/Maui_Cluster_Scheduler)
 
