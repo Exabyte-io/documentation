@@ -35,4 +35,4 @@ We rely on multiple cloud providers for delivering the computational resources t
 
 ## Links
 
-[^1]: [Fully Qualified Domain Names, explanation, Indiana University webpage](https://kb.iu.edu/d/aiuv)
+[^1]: [Fully Qualified Domain Names, explanation, Indiana University Website](https://kb.iu.edu/d/aiuv)

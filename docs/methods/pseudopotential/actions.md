@@ -40,4 +40,4 @@ This particular regular expression operation applied to the available set of VAS
  
 ## Links
 
-[^1]: [Wikipedia: Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
+[^1]: [Wikipedia Regular expression, Website](https://en.wikipedia.org/wiki/Regular_expression)

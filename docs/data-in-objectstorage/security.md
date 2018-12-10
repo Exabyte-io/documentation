@@ -12,8 +12,8 @@ Please consult [security](../security/security-policies.md) section for more inf
 
 ## Links
 
-[^1]: [Amazon Web Services, official online documentation, S3 signed URLs](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html)
+[^1]: [Amazon Web Services, official online documentation, S3 signed URLs, Website](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-signed-urls.html)
 
-[^2]: [Microsoft Azure, official online documentation: Pre-signed URLs for Blob storage](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
+[^2]: [Microsoft Azure, official online documentation: Pre-signed URLs for Blob storage, Website](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1)
 
 ///FOOTNOTES GO HERE///

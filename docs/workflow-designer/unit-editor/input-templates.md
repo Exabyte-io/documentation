@@ -193,8 +193,8 @@ In case multiple materials are present, they can each be selected from the list 
 
 ## Links
 
-[^1]: [Input file of the PWSCF](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
-[^2]: [Jinja2 templating engine](http://jinja.pocoo.org/)
+[^1]: [Input file of the PWSCF, Website](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
+[^2]: [Jinja2 templating engine, Website](http://jinja.pocoo.org/)
 
 
 

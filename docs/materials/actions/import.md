@@ -25,4 +25,4 @@ The aforementioned steps are demonstrated in the animation below.
 
 ## Links
 
-[^1]: [Materials Project](https://materialsproject.org/)
+[^1]: [Materials Project, Official Website](https://materialsproject.org/)

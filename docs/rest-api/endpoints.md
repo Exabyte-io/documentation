@@ -53,7 +53,7 @@ Below you can find the currently supported API versions.
 
 ## Links
 
-[^1]: [Hypertext Transfer Protocol (HTTP), Wikipedia](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
+[^1]: [Wikipedia Hypertext Transfer Protocol (HTTP), Website](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol)
 
 [^2]: [Swagger UI, GitHub](https://github.com/swagger-api/swagger-ui/tree/v2.2.10)
 

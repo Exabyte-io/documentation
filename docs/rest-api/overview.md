@@ -28,6 +28,6 @@ In other words, REST-API provides **programmatic** access to data and functional
 
 ## Links
 
-[^1]: [Representational State Transfer](https://en.wikipedia.org/wiki/Representational_state_transfer)
+[^1]: [Wikipedia Representational State Transfer, Website](https://en.wikipedia.org/wiki/Representational_state_transfer)
 
 ///FOOTNOTES GO HERE///

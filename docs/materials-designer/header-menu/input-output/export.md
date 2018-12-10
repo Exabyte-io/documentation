@@ -28,6 +28,6 @@ An example of export procedure is portrayed in the animation below. Here, we sel
 
 ## Links
 
-[^1]: [JSON format specifications](https://www.json.org/)
-[^2]: [How we at Exabyte store atomistic information](../../../materials/data.md)
-[^3]: [The POSCAR file format](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)
+[^1]: [JSON format specifications, Website](https://www.json.org/)
+[^2]: [How we at Exabyte store atomistic information, Link](../../../materials/data.md)
+[^3]: [The POSCAR file format, Website](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)

@@ -28,10 +28,10 @@ DFT calculations might of might not treat the spin-orbit coupling interaction or
 
 Additional resourceful general references on DFT and associated concepts, beyond those outlined below, are contained in this [page](references.md), to be referred to at the reader's discretion.
 
-[^1]: [Wikipedia, Density Functional Theory](https://en.wikipedia.org/wiki/Density_functional_theory)
+[^1]: [Wikipedia Density Functional Theory, Website](https://en.wikipedia.org/wiki/Density_functional_theory)
 [^2]: R.M. Martin: "Electronic Structure: Basic Theory and Practical Methods"; Cambridge University Press (2008)
 [^3]: [J.P. Perdew, K. Burke, M. Ernzerhof: "Generalized Gradient Approximation Made Simple"; Phys. Rev. Lett. 77, 3865 (1996)](https://users.wfu.edu/natalie/s11phy752/lecturenote/PhysRevLett.77.3865.pdf)
-[^4]: [Wikipedia, Hybrid Screened Exchange](https://en.wikipedia.org/wiki/Hybrid_functional#HSE)
-[^5]: [Wikipedia, GW Approximation](https://en.wikipedia.org/wiki/GW_approximation)
-[^6]: [Wikipedia, Spin–orbit interaction](https://en.wikipedia.org/wiki/Spin%E2%80%93orbit_interaction)
-[^7]: [Wikipedia, Ferromagnetism](https://en.wikipedia.org/wiki/Ferromagnetism)
+[^4]: [Wikipedia Hybrid Screened Exchange, Website](https://en.wikipedia.org/wiki/Hybrid_functional#HSE)
+[^5]: [Wikipedia GW Approximation, Website](https://en.wikipedia.org/wiki/GW_approximation)
+[^6]: [Wikipedia Spin–orbit interaction, Website](https://en.wikipedia.org/wiki/Spin%E2%80%93orbit_interaction)
+[^7]: [Wikipedia Ferromagnetism, Website](https://en.wikipedia.org/wiki/Ferromagnetism)
