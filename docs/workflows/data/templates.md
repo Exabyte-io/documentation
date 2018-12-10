@@ -129,10 +129,10 @@ NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %}
 
 Note the usage of "raw" filter in order to make sure that *Design-time* rendering will still preserve the content as `NBANDS = {{grep-nbands.stdout}}`.
 
-# Example representation
+## Example representation
 
 See workflow example [here](data.md) for more details on the JSON representation.
 
-# Links
+## Links
 
 [^1]: [Jinja templating engine](http://jinja.pocoo.org/)

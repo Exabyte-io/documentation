@@ -444,7 +444,7 @@ Below is an example JSON representation a of a workflow. It contains five *subwo
 
 > Note: JSON does not support inclusion of inline commentaries, we only left them above for clarity.
 
-# Notes
+## Notes
 
 There are a few notable points to emphasize from the example above.
 
