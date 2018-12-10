@@ -6,7 +6,7 @@ An additional **Team-specific Page** exists for each Team, listing all of its as
 
 The access points to these three interface components are highlighted in the image below. Their respective documentation pages are referenced according to the same numbers:
 
-![Teams People Tabs](/images/collaboration/teams-people-tabs.png "Teams People Tabs")
+![Teams People Tabs](../../images/collaboration/teams-people-tabs.png "Teams People Tabs")
 
 
 ## 1. [Teams Explorer](teams-explorer.md)

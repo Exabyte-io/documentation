@@ -5,7 +5,7 @@
 
 The action of performing a payment in order to add credit to the [Account Balance](../balance.md), using any of the available [Payment Methods](payment-methods.md), can be performed from either the [Service Levels tab](../ui/service-level.md), or from the [right-hand sidebar](../../ui/right-sidebar.md) of the wider User Interface. Under either of these two alternative locations, the account balance can be topped-up with extra credit through their corresponding `Add Credit` (or `Apply Credit`) buttons underneath the current balance indicator, the precise positions of which are encircled in red in the image below:
 
-![Increase Balance](/images/accounts/increase-balance.png "Increase Balance")
+![Increase Balance](../../images/accounts/increase-balance.png "Increase Balance")
 
 
 ## Increase Balance Dialog
@@ -16,7 +16,7 @@ Once either of the above-mentioned `Add Credit` or `Apply Credit` buttons have b
 
 Alternatively, a custom amount of funds can be entered under the `Other` option of the dialog (the minimum payment amount is 50 dollars). The possibility to change [payment method](payment-methods.md) is also offered to the user towards the bottom of the screen:
 
-![Increase Balance Screen](/images/accounts/increase-balance-screen.png "Increase Balance Screen")
+![Increase Balance Screen](../../images/accounts/increase-balance-screen.png "Increase Balance Screen")
 
 ## Finalize the "Add Credit" Operation
 

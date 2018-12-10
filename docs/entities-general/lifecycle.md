@@ -4,7 +4,7 @@ We explain in this page the **Lifecycle** that [entities](overview.md) go throug
 
 The entity lifecycle is portrayed in the diagram below, where the four main logical steps involved are labelled. Each of these steps is reviewed separately in the ensuing explanations. Further information about the general data lifecycle within our platform can be retrieved [here](../data/lifecycle.md).
 
-![Entities Lifecycle](/images/entities-general/entities-lifecycle.png "Entities Lifecycle")
+![Entities Lifecycle](../images/entities-general/entities-lifecycle.png "Entities Lifecycle")
 
 ## 1. Job Design
 

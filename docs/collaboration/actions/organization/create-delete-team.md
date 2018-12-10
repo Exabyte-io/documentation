@@ -8,7 +8,7 @@ Creating a new Team within an Organization is performed in a similar way to the 
 
 Click "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner of the page to be presented with the following dialog:
 
-![Create New Team](/images/collaboration/create-new-team.png "Create New Team")
+![Create New Team](../../../images/collaboration/create-new-team.png "Create New Team")
 
 ## Enter Team-related Information
 

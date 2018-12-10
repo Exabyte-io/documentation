@@ -6,13 +6,13 @@
  
 First, navigate to the "Preferences" tab <i class="zmdi zmdi-edit zmdi-hc-border"></i> towards the right-hand side of the [Team-specific Page](../../ui/team-page.md):
 
-![Team Preferences](/images/collaboration/team-preferences.png "Team Preferences")
+![Team Preferences](../../../images/collaboration/team-preferences.png "Team Preferences")
 
 ## The "Update Team Profile" Page
 
 The user is greeted with the following page, containing the team information:
 
-![Team Permissions](/images/collaboration/team-permissions.png "Team Permissions")
+![Team Permissions](../../../images/collaboration/team-permissions.png "Team Permissions")
 
 ### Update Team Permissions 
 

@@ -1,6 +1,6 @@
 # General Profile Information
 
-![General Profile Information](/images/accounts/preferences-profile.png "General Profile Information")
+![General Profile Information](../../../images/accounts/preferences-profile.png "General Profile Information")
 
 ## Profile Picture
 

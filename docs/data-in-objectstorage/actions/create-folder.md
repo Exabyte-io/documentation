@@ -11,7 +11,7 @@ The creation of new folders is performed through the corresponding "Create" butt
 
 Clicking this button opens the "Set Directory Name" dialog highlighted below, where the user can enter a unique name for the folder being created in the central text field (the terms "Folder" and "Directory" are used interchangeably in this context). 
 
-![Set Directory Name](/images/data-in-objectstorage/set-directory-name.png "Set Directory Name")
+![Set Directory Name](../../images/data-in-objectstorage/set-directory-name.png "Set Directory Name")
 
 The `Submit` button at the bottom of the dialog should then be pressed to register the new folder under Dropbox. The user will now be able to [Upload](upload.md) new files from his/her local hard drive into this folder.  
 

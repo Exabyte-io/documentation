@@ -10,13 +10,13 @@ $$
 
 The image below offers an explanation of the directions in which each shear and normal stress component expressed above acts upon, relative to a Cartesian coordinate system.
 
-![Stress Tensor](/images/properties-directory/Properties/Components_of_Stress_Tensor.png "Stress Tensor")
+![Stress Tensor](../../images/properties-directory//Components_of_Stress_Tensor.png "Stress Tensor")
 
 ## Example
 
 Under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), the components of the stress tensor are presented as follows, expressed in units of kilobars (kbar).
 
-![Stress Tensor](/images/properties-directory/Properties/stress-tensor.png "Stress Tensor")
+![Stress Tensor](../../images/properties-directory//stress-tensor.png "Stress Tensor")
 
 ## Schema 
 

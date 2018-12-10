@@ -18,6 +18,6 @@ The user is able to switch between the personal account and organizational accou
 
 In the image below, two accounts are listed in the Account Switcher: a personal account labelled "John Doe", and a wider organizational account called "Exabyte.io". The account under which the user is currently logged in is the personal one.
 
-![Accounts List](/images/accounts/accounts-list.png "Accounts List")
+![Accounts List](../../images/accounts/accounts-list.png "Accounts List")
 
 

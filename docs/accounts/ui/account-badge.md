@@ -12,10 +12,10 @@ The "Account Badge" is always present at the top-right corner of any page under 
  
 An example of Badge for an Account of personal type is displayed in its right-hand location within the [header bar](../../ui/header-footer.md) in the image below. In this example, the personal Account belongs to a user called "John Doe".
  
- ![example personal badge](/images/accounts/example-personal-badge.png "example personal badge")
+ ![example personal badge](../../images/accounts/example-personal-badge.png "example personal badge")
  
 ## Example for Organization Account
 
 In this other example, the Badge for an Organization (Enterprise) Account under the name of "Exabyte.io" is highlighted in the same context.
 
- ![example organization badge](/images/accounts/example-organization-badge.png "example organization badge")
+ ![example organization badge](../../images/accounts/example-organization-badge.png "example organization badge")

@@ -8,4 +8,4 @@ Here, the files that are contained in Dropbox are presented under an [Explorer](
 
 The Dropbox page has the typical appearance as illustrated below.
 
-![Dropbox Page](/images/data-in-objectstorage/dropbox-page.png "Dropbox Page")
+![Dropbox Page](../../images/data-in-objectstorage/dropbox-page.png "Dropbox Page")

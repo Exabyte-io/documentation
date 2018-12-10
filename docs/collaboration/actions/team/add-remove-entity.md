@@ -6,7 +6,7 @@ Entities of different [types](../../../entities-general/overview.md) can be assi
 
 Starting from the [Team Page](../../ui/team-page.md), [navigate](../../../ui/specific/tabs-navigator.md) to the appropriate entity tab among the ones highlighted below:
  
-![Team Entities](/images/collaboration/team-entities.png "Team Entities")
+![Team Entities](../../../images/collaboration/team-entities.png "Team Entities")
 
 ## Open "Add Entity" page
 

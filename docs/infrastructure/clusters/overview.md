@@ -15,7 +15,7 @@ In order to make the identification of cluster aliases more user-friendly we use
 
 The architecture of a cluster is explained in the diagram below, comprising a **Master Node**, a set of **Compute Nodes** a **Storage System**. The allocation of these computational resources is handled by the **Resource Manager**, which is the object of a [separate discussion](../resource/overview.md).
 
-![Cluster](/images/infrastructure/Cluster.png "Cluster")
+![Cluster](../../images/infrastructure/Cluster.png "Cluster")
 
 ## [Storage](../storage.md)
 

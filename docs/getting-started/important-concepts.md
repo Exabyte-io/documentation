@@ -8,11 +8,11 @@ Our platform enables the execution of computational **[Workflows](../workflows/o
 
 The flowchart diagram below visualizes the general relationship between the above-mentioned entity types. Here, the Properties associated to each entity are labeled with <span class="btn badge badge-property border-50">P</span>. Those properties which are computed as output of a Job (also referred to as [Characteristic Properties](../properties/classification/general.md)), are shown in black - <span class="btn badge badge-property-inverse border-50">P</span>, and consequently have a certain numerical [precision](../methods/data.md) inherited from the Workflow and Job.
 
-![Entities Relations](/images/getting-started/entities-relations.png "Entities Relations")
+![Entities Relations](../images/getting-started/entities-relations.png "Entities Relations")
 
 Jobs also refer to the simulation tasks on the Compute platform, as illustrated in the visual below.
 
-![Simulation Components](/images/getting-started/simulation-components.png "Simulation Components")
+![Simulation Components](../images/getting-started/simulation-components.png "Simulation Components")
 
 ## Main Entities
 
@@ -20,7 +20,7 @@ The three above-mentioned concepts of Workflows, Materials and Jobs can be group
 
 For example, Jobs have **[Accounting](../accounts/overview.md)** set up for. Workflows and Materials are both **["Bankable" Entities](../entities-general/bank.md)**. Workflows further consist of **[Subworkflows](../workflows/data/subworkflows.md)**, and further of the combination of individual **[Units](../workflows/data/units.md)**, such as portrayed in the example diagram below.
 
-![Workflow Components](/images/getting-started/workflow-components.png "Workflow Components")
+![Workflow Components](../images/getting-started/workflow-components.png "Workflow Components")
 
 ## Other Items
 

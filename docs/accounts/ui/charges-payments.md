@@ -4,7 +4,7 @@ Click `Billing and Payments` <i class="zmdi zmdi-card zmdi-hc-border"></i> in th
 
 An example of a "Billing" page is exhibited below. We have highlighted in red the tabs for viewing charges, payments, and payments methods.
 
-![Billing Page](/images/accounts/billing-page.png "Billing Page")
+![Billing Page](../../images/accounts/billing-page.png "Billing Page")
 
 ## Charges
 

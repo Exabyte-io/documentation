@@ -6,7 +6,7 @@ This page can be subdivided into several components, related to either [manageme
  
 These components are highlighted in the image below. The position of the **"Account Summary"**, displaying information about its name, username and date of creation, is also exhibited. In the case of [Organizational Accounts](../../accounts/overview.md#types-of-accounts), some of these interface components are visible only to the [Owners and Administrators](../../collaboration/organizations/roles.md). 
 
-![Account UI components](/images/accounts/account-profile.png "Account UI components")
+![Account UI components](../../images/accounts/account-profile.png "Account UI components")
 
 ## Account Management Components
 
