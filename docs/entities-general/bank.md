@@ -59,11 +59,7 @@ The output of the mapping function is a **hash string**. This hash is stored ins
 
 ### Private 
 
-<<<<<<< HEAD
 If an Account has a sufficient [service level](../pricing/service-levels.md) allowing for private data, the situation displayed below will appear, whereby private items are accessible only to the Account members.
-=======
-If an Account has a sufficient [service level](/pricing/service-levels.md) allowing for private data, the situation displayed below will appear, whereby private items are accessible only to the Account members:
->>>>>>> parent of 665ed1d... Replace all colons with dots before newline
 
 ![Bank Diagram](/images/Bank-diagram-Private.png "Bank Diagram")
 
