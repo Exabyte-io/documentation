@@ -1,0 +1,109 @@
+READY
+
+####################################################################################################################################
+
+    - Command Line Interface
+        - Overview
+        # Introduction to the Command Line Interface
+            % User can log into CLI with any of the available Termianl methods (SSH and Web - put links).
+            % He will be presented with the following CLI interface - put screenshot
+        # Environment
+            % We offer the possibility to customize the Environment
+            % Can customize both the shell type and the loading of Modules
+            % We explain both forms of environment customization in the same page - put link
+        # Actions
+            % The following set of actions are avilable in the context of CLI
+            % Put link to Overview page
+
+        - Environment
+            % Much of this content can be inspired by the previous version of the documentation
+        # Command-line Environment
+            % Explain what environment is and put a bottom link to Unix environment
+        # Customization
+            % CLI environment can be customized by the user in two respects - Shell type and Modules
+        # Shell Type (including list of types)
+            % The Shell type allows to change the way the user can interact with CLI
+            % For example, different shell types can introduce new commands or key shortcuts
+            % This is the list we offer - bash, zsh, ksh, csh
+            % Offer a specific example of how zsh is different from bash
+            $ Link to actions on shell customization
+        # Python environment
+            % By default we have python 2.7.5, which is a system verion
+            % Link to create python environment
+            % Install python versions via https://github.com/pyenv/pyenv
+        # Modules
+            % Pre compiled software packages (modules) are already available on CLI so that user does not have to recompile them
+            % They can be loaded and used with the module command
+            % After loading, they can be inserted in Job Script (put link)
+        ## Module List
+            % This command list currently loaded modules
+        ## Module Avail
+            % List of available modules
+            % Put full list of modules on documentation 
+        ## Module Load
+            % Load certain desired module from the list of available ones
+        ## Module Purge
+            % Purge all loaded modules
+        # Links 
+            % Links to Wikipedia article on all the different shell types
+            % Put links to documentation pages for most important shell types
+
+
+####################################################################################################################################
+
+        - Actions
+            - Overview
+            # Command Line Interface Actions
+                % The following actions are available for CLI (put links to dedicated pages in sections below)
+            # Customize Shell Environment
+            # Add New Software
+            # Create Python Environment
+            # List Clusters
+            # List Cluster Nodes
+            # Jobs Actions
+
+            - Customize Shell Environment
+            # Customize Shell Environment
+                % The action of customizing the shell environment can in general be performed in this way
+                % .bashrc
+                % NOTE: not to remove the default content of ".ssh". ADD is OK, but not remove.
+            # Example: change to ZSH
+                % We offer a specific example on the procedure to follow to change the shell from the default bash to zsh
+
+            - Add new software
+            # Add new software (mention permissions requirement to access master nodes)
+                % The user can compile new software on the CLI, after for example introducing some changes or patches to its features compared to default version
+                % Special permission is required to access master nodes via CLI in order to compile new software
+            # Example: compile a modified version of Quantum ESPRESSO
+                % Here, we provide an example on the procedure for compiling a version of QE different from the one offered by default.
+                % Mention that one can do the same with modified source code.
+
+            - Create Python Environment
+            # Create Python Environment
+                % Here, we explain how to use virtualenv to assemble pymatgen, pandas and ase into a virtual environment
+            # How to use Virtualenv
+                % Virtualenv can be used by following these instructions
+                % Put link to virtualenv website
+            # Example Python Packages
+                % Commonly used python packages for materials science - pymatgen, pandas and ase
+                % Include a one-paragraph description for each one of them, with links to their websites
+            # Links
+                % Virtualenv official website (https://virtualenv.pypa.io)
+                % pymatgen website
+                % pandas website
+                % ase website
+
+            - List Clusters
+            # List and Check status of clusters
+                % The available clusters can be listed, and their status inspected, with the exaclusters command 
+            
+
+            - List Cluster Nodes
+            # List and Check status of Cluster Nodes
+                % The avialble cluster nodes can be listed, and their status inspected, with the exanodes command
+
+            - Jobs Actions
+            # Jobs Command Line Interface Actions (link)
+                % The CLI actions relevant for Jobs are explained separately - put link to Jobs CLI overview page.
+            
+####################################################################################################################################

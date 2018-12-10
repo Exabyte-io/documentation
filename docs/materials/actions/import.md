@@ -1,29 +1,28 @@
-# Import structure
+# Import Structure
 
-Currently we support direct import of structural data about materials from the Materials Project online database [[1](#links)]. The below explains how to do it step by step.
+We support direct import of materials structural data from other online sources. At present the import from the Materials Project database [^1] is implemented. Below we explain how to do so step by step.
 
+## Open Import Dialog
 
-# Open import dialog
+Under the [Account Profile](../../accounts/ui/profile-page.md) page, first [navigate](../../ui/specific/tabs-navigator.md) to the "Materials" tab. Then choose import tool <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> in the top right [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar).
 
-Open left-hand sidebar and navigate to "Materials" page. Then choose import tool <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> in the top right corner.
+## Select Entries
 
-# Select Entries
+Import dialog allows to select one or multiple entries. The user is initially presented with a full screen overlay window with a [search box](../../entities-general/actions/search.md) at the top. He/she can then enter the element, formula or material name to search for the desired material(s). Inspection of each listed structure is done by clicking and expanding it.
 
-Import dialog will let you select one or multiple entries from cloud database.
+!!! warning "Items are cached upon first search"
+    We maintain a local cache of the items from remote database to avoid excessive requests to third-party resources. Because of that, when first opened, the number of materials in cache might be smaller than the total number of materials available from third party. This fact should not confuse the users, as all the full dataset exposed by the third party is supported. 
 
-You will be presented with a full screen overlay window with a search box.  Enter the element, formula or material name to search for. To see more details about the structure and source of each entry in the list of structures, just click on it and expand it.
+## Trigger Import
 
-# Trigger Import
+After selecting materials, click the "import" icon <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> in the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar). This saves the material into the Account-owned collection. This newly imported structure can be viewed under the corresponding [Explorer Interface](../../entities-general/ui/explorer.md). 
 
-After selecting materials, click on the "import" icon <i class="zmdi zmdi-cloud-upload zmdi-hc-border"></i> in the toolbar (top right). This will download the material and save it in your materials collection. To view the newly imported structure, go back to `Materials` collection page.
+## Animation
 
-# Animation
+The aforementioned steps are demonstrated in the animation below.
 
-All the aforementioned steps are demonstrated in the animation below.
-
-<img data-gifffer="/images/ImportMaterialsProjectMaterial.gif" />
-
+<img data-gifffer="/images/materials/ImportMaterialsProjectMaterial.gif" />
 
 ## Links
 
-1. [Materials Project](https://materialsproject.org/)
+[^1]: [Materials Project, Official Website](https://materialsproject.org/)

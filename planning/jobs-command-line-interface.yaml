@@ -1,0 +1,71 @@
+READY
+
+     - Jobs via Command Line Interface
+        - Overview
+        # Jobs via Command Line Interface
+            % This section explain how simulatin Jobs can be created and executed via CLI - put link to main CLI section and Jobs section
+            % put links to the below
+        # Batch script
+        # NOTE: Accessing data in Web Interface
+            % Jobs created through command-line Interface will still show up in the web Interface for user convenience under the corresponding project as indicated in the [batch script]
+            % When experiencing problems, this feature can be disabled by a flag in the batch script (To be clarified which exact flag)
+        # Accounting
+        # Actions
+
+        - Batch script
+        # Batch Scripts
+            % Reuse prior content
+        # Examples
+            % Reuse prior content
+        ## Debug queue (D)
+        ## On-demand regular (OR)
+        ## On-demand fast (OF)
+        ## Saving regular (SR)
+        ## Saving fast (SF)
+
+        - Accounting
+            - Balance
+            # Overview
+                % In order to perform computations a greater than zero balance is required (link to Accounts/Balance)
+                % We make balance for each account accessible through CLI. Members of organizational accounts can access the corresponding balance.
+            # View Account Balance
+                % The account balance (put link to accounts) can be inspected with the following command (put an example)
+
+            - Statement command
+            # Overview
+                We track usage, or balance spent on computations per each account AND each project.
+            # View Usage Statistics
+                % The usage statistics of each cluster, in terms of number of CPU hours consumed and charges incurred, can be inspected with the following command under CLI
+            # Examples
+                % Provide examples on how to access balance for the following distinct scenarios: for the last month, for a specific account, and for specific project.
+                $ Explain how to view all options to "statement" command
+                % Put link to Gold documentation manual (in Google Drive)
+
+####################################################################################################################################
+
+        - Actions
+            - Create
+            # Create New Job
+                % A new Job can be created by assembling all simulation input files and batch script together in the same folder under the cluster home directory
+                % Novice users can use "job_script_templates" directory
+                % NOTE: be deliberate when setting walltime, b/c
+                    - jobs that require long walltime will [reserve] balance so other jobs won't be able to start
+                    - when not enough walltime is allocated jobs may not finish
+                    - submit support ticket (in advance) if a walltime adjustment is needed (we'll try our best to accommodate depending on the load and business hours)
+
+            - Submit
+            # Submit Job
+                % A job can then be submitted to the relevant queue for its execution with the qsub command
+                % Explain that the directory has to be under "cluster-00?" folder and the ? will determine which cluster it will be executed on.
+
+            - Check status
+            # Check status of Job
+                % The status of the job can be checkd at any moment with the qstat command
+                % Possible statuses might include Running, Pending, Error, Aborted etc....
+                % Explain how to understand which cluster the job is executed on
+
+            - Terminate
+            # Terminate
+                % A Job might be terminated intentionally by the user before its completion with the qdel command
+
+####################################################################################################################################
