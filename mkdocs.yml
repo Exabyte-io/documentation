@@ -28,7 +28,7 @@ extra:
         - type: github
           link: https://github.com/exabyte-io
         - type: linkedin
-          link: https://linkedin.com/exabyte-io
+          link: https://www.linkedin.com/company/exabyte-io
 markdown_extensions:
     - markdown_include.include:
         base_path: esse
