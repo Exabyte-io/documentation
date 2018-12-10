@@ -4,7 +4,7 @@ Maps refer to a convenient approach for performing a distributed calculation. Th
 
 An example of application of this kind of distributed computing approach is for splitting a phonon dispersion calculation to many independent calculations for the individual vibration modes.
 
-# Map units in Workflow flowcharts
+## Map units in Workflow flowcharts
 
 In practice, when a new map is added to a workflow [flowchart](../../workflow-designer/sidebar.md), via the actions introduced [in this page](../../workflow-designer/subworkflow-editor/actions-menu.md#Adding Subworkflows), an entire new workflow will be created and contained within the original parent workflow. The typical appearance of this "workflow inside another workflow" map unit is shown in the example below.
 
