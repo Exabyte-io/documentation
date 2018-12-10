@@ -2,7 +2,7 @@
 
 The Subworkflow Editor displays the input parameters of a subworflow on the right-hand side of the Workflow Designer interface. Whenever a subworkflow module is clicked upon among those listed in the [left-hand sidebar](../sidebar.md) it becomes the currently active one and feeds data to the Editor component.  
 
-# Main components
+## Main components
 
 Subworkflow Editor is itself subdivided into three distinct main components: 
 
@@ -12,7 +12,7 @@ Subworkflow Editor is itself subdivided into three distinct main components:
 
 The location of each component is highlighted in the picture below for the example case of a band structure calculation workflow. Click on a panel in the image to be redirected to the corresponding documentation page for each component:
 
-<img src="/images/sw-editor-components.png" usemap="#mapname">
+<img src="/images/workflow-designer/sw-editor-components.png" usemap="#mapname">
                                            
 <map name="mapname">
 <area shape="rect" coords="190,88,756,141" href="/workflow-designer/subworkflow-editor/actions-menu/">

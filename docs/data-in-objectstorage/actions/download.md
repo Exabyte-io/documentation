@@ -6,4 +6,4 @@ Files listed under the [Explorer interface](../ui/explorer.md) can be downloaded
 
 The animation shows how to download an example output file (named "OUTCAR") from within the entries listed under the Files tab of the corresponding [Job Viewer](../../jobs/ui/files-tab.md) interface.
 
-<img data-gifffer="/images/download-file.gif">
+<img data-gifffer="/images/data-in-objectstorage/download-file.gif">

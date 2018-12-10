@@ -58,4 +58,4 @@ Software modules can be listed, loaded and reset in the CLI environment as revie
 
 ## Links
 
-[^1]: [Environment Modules, Wikipedia](https://en.wikipedia.org/wiki/Environment_Modules_(software))
+[^1]: [Wikipedia Environment Modules, Website](https://en.wikipedia.org/wiki/Environment_Modules_(software))

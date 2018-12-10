@@ -6,7 +6,7 @@ Exabyte.io is an cloud-native accessible and collaborative environment for mater
 
 You may search for your topic of interest by using the input field at the top.
 
-The [links](#links) section below can direct reader to sources of more in-depth explanation about what we are building and why [[1]](#links) and example case studies [[2]](#links).
+The "Links" section below can direct reader to sources of more in-depth explanation about what we are building and why [^1] and example case studies [^2].
 
 ## Quickstart
 
@@ -29,5 +29,5 @@ We reply to support requests within 24 hours. Our team can be contacted during w
 
 ## Links
 
-1. [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
-2. [Exabyte.io: case studies](https://exabyte.io/#case-study)
+[^1]: [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
+[^2]: [Exabyte.io: case studies](https://exabyte.io/#case-study)

@@ -10,13 +10,13 @@ By expanding the subsection labelled "Pseudopotentials" (with the help of the "p
 
 Next all the necessary categorization information about the new pseudopotential being uploaded shall be specified from the list of drop-down menus in the resulting dialog. An example of this dialog's appearance is shown below:
 
- <img src="/images/pp-upload.png"/>
+ <img src="/images/methods/methods/pp-upload.png"/>
  
 ## Save File
  
 Once the desired file has been uploaded to the Subworkflow Editor via the `Choose File` option at the bottom of this dialog, the `Save` button can then be pressed to save this file to the account-owned collection of pseudopotentials. The content of the file will be stored on a network shared location ("Dropbox") to be made available to the calculations during the runtime.
 
-# Filter Pseudopotentials
+## Filter Pseudopotentials
 
 In the expanded "Pseudopotentials" subsection, the user will see a first editable "filtering" text bar where text or comma-separated regular expressions (such as the examples shown on the bar itself) may be typed to search and filter pseudopotentials out of the default or user-uploaded sets.
 
@@ -24,7 +24,7 @@ The resulting filtered list of available pseudopotentials will then become visib
 
 ## Regular Expressions
 
-A general review on the syntax employed by regular expressions for performing general searches can be found in Ref. [[1](#links)].
+A general review on the syntax employed by regular expressions for performing general searches can be found in Ref. [^1].
 
 Otherwise, the use of regular expressions is best illustrated by way of a specific example. Consider the following regular expression for searching for a particular VASP pseudopotential:
 
@@ -36,9 +36,8 @@ This expression first searches for pseudopotentials released under version 5.4 o
 
 This particular regular expression operation applied to the available set of VASP pseudopotentials is demonstrated in the animation below:
 
-<img data-gifffer="/images/regular-expression.gif" />
+<img data-gifffer="/images/methods/regular-expression.gif" />
  
-# Links
+## Links
 
-1. [Wikipedia: Regular expression](https://en.wikipedia.org/wiki/Regular_expression)
-
+[^1]: [Wikipedia Regular expression, Website](https://en.wikipedia.org/wiki/Regular_expression)

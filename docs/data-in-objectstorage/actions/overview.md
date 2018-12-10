@@ -7,18 +7,18 @@ Performing these actions can be achieved from either the [actions toolbar](../..
 !!! warning "Entity actions are not applicable"
     The [general actions](../../entities-general/actions/overview.md) for entities are not applicable in the case of Files, except for the [Delete](../../entities-general/actions/delete.md) action.
     
-## Copy Path
+## [Copy Path](copy-path.md)
 
 [In this page](copy-path.md), we explain how to copy the path of a file within the [directory structure](../../data-on-disk/directories.md) of the disk where it is stored.
 
-## Download
+## [Download](download.md)
 
 Files can be downloaded to the local hard drive of the user's computer by following [these instructions](download.md).
 
-## Upload
+## [Upload](upload.md)
 
 Conversely, local files can be uploaded as described [here](upload.md) to make them globally accessible throughout the entire platform.
 
-## Create Folder
+## [Create Folder](create-folder.md)
 
 We explain how to create new folders for grouping files together [in this page](create-folder.md).

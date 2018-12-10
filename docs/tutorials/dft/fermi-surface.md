@@ -10,7 +10,7 @@ Clicking on "Create Job" from the sidebar on the home page Si will automatically
 
 To import Cu go to the sidebar, and select "Materials".  Then click the cloud button on the upper right of the Materials Designer page for import.  In the search box, put Cu and after a few seconds, the entries for Cu from the database and Material Project will appear.  Choose the version of Cu with space group "Fm-3m" and click on it.  Then click on the right side of the entry to bring up the option to "import" the material
 
-<img data-gifffer="/images/ImportCu.gif" />
+<img data-gifffer="/images/tutorials/ImportCu.gif" />
 
 # Create project
 
@@ -20,7 +20,7 @@ To create a new project, click on the "Project" link located in the sidebar/menu
 
 The FCC Si structure is provided by default for every user.  The exact list of materials in your personal database will differ, so you may need to search for the Cu structure you just imported and select it as shown below:
 
-<img data-gifffer="/images/CreateCuJob.gif" />
+<img data-gifffer="/images/tutorials/CreateCuJob.gif" />
 
 # Choose workflow
 
@@ -30,7 +30,7 @@ Next, click on the "Workflow" tab choose Quantum ESPRESSO as the simulation engi
 
 For fermi surface it is critical to have a high k-point density to properly visualize charges.  We set the kpoint density to 11x11x11 in the first workflow unit.
 
-<img data-gifffer="/images/ChargeCu2.gif" />
+<img data-gifffer="/images/tutorials/ChargeCu2.gif" />
 
 # Compute parameters
 
@@ -45,7 +45,7 @@ Finally while the calculation is running you will see a tab for each of the Quan
 
 When all calculation units are complete, the yellow buttons will have turned green and the "Results" tab will become clickable.  You can click on the "Results" tab to see the final total energy, Fermi energy, and more information about each execution unit.
 
-<img data-gifffer="/images/ConvergeStep6.gif" />
+<img data-gifffer="/images/tutorials/ConvergeStep6.gif" />
 
 # Browse output files
 
@@ -57,49 +57,49 @@ Once the simulation is complete, you will need to connect to a terminal to creat
 
 To use the terminal interface, click on the right sidebar which is obtained by clicking on your username in the upper-right corner of the home page.
 
-![Right Sidebar](../../images/RightSidebar.png "Right Sidebar")
+![Right Sidebar](../../images/tutorials/RightSidebar.png "Right Sidebar")
 
 One of the options in this side bar is "Terminal".
 
-![Right Sidebar->Terminal](../../images/StartTerminal.png "Right Sidebar->Terminal")
+![Right Sidebar->Terminal](../../images/tutorials/StartTerminal.png "Right Sidebar->Terminal")
 
 After clicking on "Terminal" an overlay will appear filling up your browser window with a text based terminal emulator called Guacamole.
 
-![Terminal Overlay](../../images/LogInToTerminal.png "Terminal Overlay")
+![Terminal Overlay](../../images/tutorials/LogInToTerminal.png "Terminal Overlay")
 
 # Prepare fermi surface file
 
 As below, navigate into the directory containing all your simulation results.  Once in the correct simulation directory run the commands in the window below to generate the post-processing bxsf file:
 
-![Generate BXSF File](../../images/GenerateBXSFFile.png "Generate BXSF File")
+![Generate BXSF File](../../images/tutorials/GenerateBXSFFile.png "Generate BXSF File")
 
 # Exit terminal
 
 Now type "exit" in the terminal to log out of the terminal.
 
-![Log Out](../../images/LogoutOfTerminal.png "Log Out")
+![Log Out](../../images/tutorials/LogoutOfTerminal.png "Log Out")
 
 # Start remote desktop
 
 The next step is to open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar you used earlier in the tutorial is a "Remote Desktop" option.
 
-![Remote Desktop](../../images/ChooseRemoteDesktop.png "Remote Desktop")
+![Remote Desktop](../../images/tutorials/ChooseRemoteDesktop.png "Remote Desktop")
 
 Select this and a different overlay will appear in your web browser of a graphical user session.
 
-![Start Remote Desktop](../../images/StartRemoteDesktop.png "Start Remote Desktop")
+![Start Remote Desktop](../../images/tutorials/StartRemoteDesktop.png "Start Remote Desktop")
 
 # Open XCrysden
 
 Find and open XCrysden under the "Other" dropdown menu item.
 
-![Other->XCrysden](../../images/RemoteDesktopApps.png "Other->XCrysden")
+![Other->XCrysden](../../images/tutorials/RemoteDesktopApps.png "Other->XCrysden")
 
 Within XCrysden, go to file->Open and navigate to the directory where you created the *.bxsf file to open a visualization of the Fermi Surface.
 
-![Visualize Fermi Surface 1](../../images/FermiSurface1.png "Visualize Fermi Surface 1")
-![Visualize Fermi Surface 2](../../images/FermiSurface2.png "Visualize Fermi Surface 2")
-![Visualize Fermi Surface 3](../../images/FermiSurface3.png "Visualize Fermi Surface 3")
+![Visualize Fermi Surface 1](../../images/tutorials/FermiSurface1.png "Visualize Fermi Surface 1")
+![Visualize Fermi Surface 2](../../images/tutorials/FermiSurface2.png "Visualize Fermi Surface 2")
+![Visualize Fermi Surface 3](../../images/tutorials/FermiSurface3.png "Visualize Fermi Surface 3")
 
 # Links
 

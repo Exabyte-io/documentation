@@ -4,7 +4,7 @@ The `Export` button <i class="zmdi zmdi-swap-vertical zmdi-hc-border"></i> locat
 
 <!-- TODO: this image is too large, make buttons same size as in View Panel -->
 
-<img src="/images/export-features-viewer.png"/>
+<img src="/images/materials-designer/export-features-viewer.png"/>
 
 - Take a `Screenshot` of the current view, and save it directly to the local hard drive as an image file. 
 - `Download` the corresponding  crystallographic numerical information in the form of a POSCAR file, also saved directly to the local hard drive. 

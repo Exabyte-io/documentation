@@ -16,7 +16,7 @@ Alternatively, we offer an incorporated Terminal within our Web Interface which 
 
 If the user wants to experience a fully graphical desktop environment, he can do so via the [Remote Desktop Application](remote-desktop.md).
 
-## WT and RD Implementation
+## [WT and RD Implementation]()
 
 Both the Web Terminal and Remote Desktop are implemented via the **Apache Guacamole Server** [^2]. The full sidebar documentation can be accessed in the corresponding documentation manual [^3].
  Instructions on how to open its main Sidebar, referred to as the **Remote-connection Sidebar**, can be found [here](actions/sidebar.md).

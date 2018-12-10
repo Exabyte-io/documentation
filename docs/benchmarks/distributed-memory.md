@@ -7,7 +7,7 @@
 The purpose of this study was to estimate the extent to which a calculation for a single material can be efficiently scaled.
 
 !!! note "Hardware configuration"
-    Amazon Web Services with the hardware configuration explained [here](/compute/overview) were used for benchmarking. Lowest latency Ethernet network interconnect option was chosen.
+    Amazon Web Services with the hardware configuration explained [here](../infrastructure/clusters/aws.md) were used for benchmarking. Lowest latency Ethernet network interconnect option was chosen.
 
 ## Model and Method
 
@@ -263,7 +263,7 @@ Gamma
 
 "Ba25 Bi15 O54" with a supercell containing 188 atoms
 
-![Distributed Memory Calculations VASP ELB](../images/DistributedMemoryCalculationsVASPELB.png "Distributed Memory Calculations VASP ELB")
+![Distributed Memory Calculations VASP ELB](../images/benchmarks/DistributedMemoryCalculationsVASPELB.png "Distributed Memory Calculations VASP ELB")
 
 ### VASP-KPT
 
@@ -347,7 +347,7 @@ Gamma
 
 "Li8 V8 Mo8" with a unit cell containing 24 atoms
 
-![Distributed Memory Calculations VASP KPT](../images/DistributedMemoryCalculationsVASPKPT.png "Distributed Memory Calculations VASP KPT")
+![Distributed Memory Calculations VASP KPT](../images/benchmarks/DistributedMemoryCalculationsVASPKPT.png "Distributed Memory Calculations VASP KPT")
 
 ### QE-ELB
 
@@ -520,7 +520,7 @@ AU       48.320999       38.047001        0.000000
 
 Aluminum surface containing 112 atoms
 
-![Distributed Memory Calculations QE ELB](../images/DistributedMemoryCalculationsQEELB.png "Distributed Memory Calculations QE ELB")
+![Distributed Memory Calculations QE ELB](../images/benchmarks/DistributedMemoryCalculationsQEELB.png "Distributed Memory Calculations QE ELB")
 
 ### QE-KPT
 
@@ -590,7 +590,7 @@ K_POINTS automatic
 
 FeSe monolayer with 4 atoms
 
-![Distributed Memory Calculations QE KPT](../images/DistributedMemoryCalculationsQEKPT.png "Distributed Memory Calculations QE KOT")
+![Distributed Memory Calculations QE KPT](../images/benchmarks/DistributedMemoryCalculationsQEKPT.png "Distributed Memory Calculations QE KOT")
 
 
 ## Conclusions
