@@ -1,0 +1,46 @@
+.md-typeset img,
+.md-typeset .giffer {
+    margin-bottom: 50px;
+    vertical-align: middle;
+    width: 100%;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.31);
+    border-radius: 5px;
+    border: 1px solid #AAA;
+    padding: 2px;
+    max-width: 800px !important;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.giffer {
+    border: 1px solid #AAA !important;
+}
+
+.md-logo img {
+    display: inherit;
+    margin: 0;
+    height: inherit;
+    width: 200px;
+    background-color: transparent;
+    padding: 0px;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    margin-top: -17px;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}

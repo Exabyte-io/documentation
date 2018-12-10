@@ -1,62 +1,64 @@
-# Compute Environment
+# Command-line Environment
 
-When you log in to exabyte.io via command-line, you are in your global $HOME directory. You initially land in the same place all the time. This means that if you have files or binary executables that are located in your home directory, they will be available on all cluster nodes through a network-shared filesystem.
+The present page explains the environment setup for a [command-line session](overview.md) within our platform. The **Environment** is an important concept in the Unix operating system [^1]. It is defined in terms of **environment variables** [^2], some of which are set by the system, others by the user, yet others by the shell or by any program that loads another program.
 
-## Customizing Environment
+After logging into our platform via the [Command Line Interface (CLI)](overview.md), the user will by default enter the [Login Home](../infrastructure/login/directories.md) directory, from which other nodes of the [infrastructure](../infrastructure/overview.md) can be accessed.
 
-The way you interact with compute resources can be controlled via certain startup scripts that run when you log in and at other times.  You can customize some of these scripts, which are called "dot files," by setting environment variables and aliases in them.
+## Customization
 
-<!-- TODO: figure out how to deal with dotfiles There are several "standard" dot-files that are symbolic links to read-only files that Exabyte.io controls. Thus, you should NEVER modify or try to modify such files as .bash_profile, .bashrc, .cshrc, .kshrc, .login, .profile, .tcshrc, or .zprofile. Instead, you should put your customizations into files that have a ".ext" suffix, such as .bashrc.ext, .cshrc.ext, .kshrc.ext, .login.ext, .profile.ext, .tcshrc.ext, .zprofile.ext, and .zshrc.ext. Which of those you modify depends on your choice of shell, although note that we recommend bash. -->
+The CLI environment can be **customized** by the user in two respects: by choosing the **Shell type**, and through the **loading of the environment Modules**, which include numerous commonly-used simulation codes and associated libraries. Both are explained below.
 
-The table below contains examples of basic customizations directives one can put inside dot files. Note that when making changes such as these it's always a good idea to have two terminal sessions active so that you can back out changes if needed!
+### Shell Type
 
-| Bash                | Csh                 |
-| ------------------- | ------------------- |
-| `export ENVAR=var` &nbsp;&nbsp; | `setenv ENVAR var`    |
-| `alias ll='ls -lrt’`  | `alias ll “ls –lrt”`  |
+The **Shell type** [^3] can modify the way that the user can interact with the CLI by, for example, introducing new commands or key shortcuts. For example, Ref. [^4] explains how the "bash" shell type differs from zsh. 
 
+The different shell types that are available as part of our product, and can be chosen from by the user, are listed below.
 
-## Modules
+- **sh** [^5]
+- **bash** [^6]
+- **csh** [^7]
+- **ksh** [^8]
+- **zsh** [^9]
 
-Easy access to software is controlled by the *modules* utility. With modules, you can easily manipulate your computing environment to use applications and programming libraries. In many cases, you can ignore modules because NERSC has already loaded a rich set of modules for you when you first log in. If you want to change that environment you "load," "unload," and "swap" modules. A small set of module commands can do most of what you'll want to do.
+!!!info "ZSH"
+    We use **oh-my-zsh**, a community-driven framework for managing the zsh configuration. For more information, please visit its official website [^10].
 
-### module list
+The **default shell** is set to bash. The user can change shell from this default setting by following the instructions contained [in this page](actions/customize.md).
 
-The first command of interest is "module list", which will show you your currently loaded modules. When you first log in, you have NO modules loaded for you. Here is an example:
+The shell customization can be further controlled via certain **startup scripts**, which are executed when the user first logs into the CLI. The user can customize some of these scripts, which are commonly referred to as "dot files," by setting environment variables and aliases in them, as explained [in this page](actions/customize.md).
 
-`# > module list`
+### Modules
 
-```
-Currently Loaded Modulefiles:
- 1) modules/3.2.6.6 3) gni-headers/2.1-1.0400.4156.6.1.gem 5) xt-shmem/5.4.4
- 2) xtpe-network-gemini 4) xpmem/0.1-2.0400.30792.5.6.gem  6) xt-mpich2/5.4.4
-```
+Software packages and programming libraries, are available through the **environment modules** further explained in a [dedicated page](modules.md).
 
-### module avail
+After loading the corresponding modules, the software can be used in [Job Scripts](../jobs-cli/batch-scripts/overview.md) for [Job execution via the CLI](../jobs-cli/overview.md). 
 
-Let's say you want to use a compiler. The "module avail" command will list all the available modules. It could be a very long list. But you can use the module's name stem to do a useful search. For example
+## Python Environment
 
-`# > module avail applications`
+By default, we implement **python 2.7.5** as our main system version. Different python versions can be installed via the the instructions and code contained in Ref. [^11].
 
-```
---------------------- /export/compute/modulefiles ---------------------
-applications/espresso/521-i-174-impi-044
-applications/vasp/535-i-174-impi-044
+Additionally, we explain how to create customized **python environments** [here](actions/create-python-env.md).
 
-```
+## Links
 
-### module swap
+[^1]: [Wikipedia UNIX, Website](https://en.wikipedia.org/wiki/Unix)
 
-To swap already loaded modules with the new ones
+[^2]: [Wikipedia Environment variable, Website](https://en.wikipedia.org/wiki/Environment_variable)
 
-`# > module swap PrgEnv-gnu/4.0.46 PrgEnv-intel/3.1.61`
+[^3]: [Wikipedia Unix shell, Website](https://en.wikipedia.org/wiki/Unix_shell)
 
-That's all you have to do. You don't have to change your makefiles, or anything else in your build script unless they contain GNU or Intel-specific options or features. Note that modules doesn't give you any feedback about whether the swap command did what you wanted it to do, so always double-check your environment using the `module list` command.
+[^4]: [Zsh vs Bash, Website](https://stackabuse.com/zsh-vs-bash/)
 
-### module load
+[^5]: [Wikipedia Bourne shell, Website](https://en.wikipedia.org/wiki/Bourne_shell)
 
-If you want to use [Quantum ESPRESSO](http://quantum-espresso.org) application, just load that module.
+[^6]: [Wikipedia Bash (Unix shell), Website](https://en.wikipedia.org/wiki/Bash_(Unix_shell))
 
-`# > module load applications/espresso/521-i-174-impi-044`
+[^7]: [Wikipedia C shell, Website](https://en.wikipedia.org/wiki/C_shell)
 
-Now you can invoke Quantum ESPRESSO with the `pw.x` command (that's the name of the binary executable).
+[^8]: [Wikipedia Korn Shell, Website](https://en.wikipedia.org/wiki/KornShell)
+
+[^9]: [Wikipedia Z Shell, Website](https://en.wikipedia.org/wiki/Z_shell)
+
+[^10]: [Oh My ZSH!, Official Website](https://ohmyz.sh/)
+
+[^11]: [Simple Python Version Management: pyenv, Official GitHub Repository](https://github.com/pyenv/pyenv)
