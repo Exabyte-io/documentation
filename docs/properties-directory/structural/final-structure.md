@@ -16,4 +16,4 @@ Below we show an example of a material structure as it appears under the Final S
 
 The viewer is shown in the general context of the other relevant computed material [properties](../overview.md), displayed together in their own panel.
 
-![Final Structure Viewer](/images/properties-directory/Properties/final-structure-viewer.png "Final Structure Viewer")
+![Final Structure Viewer](../../images/properties-directory/final-structure-viewer.png "Final Structure Viewer")

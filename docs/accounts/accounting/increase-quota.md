@@ -13,12 +13,12 @@ This page explains how to request an increase to the Account's [Storage Quota](.
 
 In the former two cases, the increase in Storage Quota can be executed through either of the corresponding `Add Storage` buttons, located within the broader User Interface as highlighted in red in the image below:
 
-![Increase Quota](/images/accounts/increase-quota.png "Increase Quota")
+![Increase Quota](../../images/accounts/increase-quota.png "Increase Quota")
 
 
 In the latter two cases on the other hand, the same action can be performed through the corresponding button <i class="zmdi zmdi-plus zmdi-hc-border"></i> at the top-right corner of the relevant quota information panel, as displayed in the example image below:
 
-![Increase Quota](/images/accounts/storage-quota-action.png "Increase Quota")
+![Increase Quota](../../images/accounts/storage-quota-action.png "Increase Quota")
 
 ## Increase Quota Dialog
 
@@ -28,7 +28,7 @@ Once any of the above-mentioned buttons have been clicked upon, the user will be
 
 Alternatively, a custom amount of storage space can be entered under the `Other` option of the dialog (in GigaBytes), and the associated monthly price will appear directly underneath. 
 
-![Increase Quota Screen](/images/accounts/increase-quota-screen.png "Increase Quota Screen")
+![Increase Quota Screen](../../images/accounts/increase-quota-screen.png "Increase Quota Screen")
 
 
 !!!note "Note: sufficient account balance"

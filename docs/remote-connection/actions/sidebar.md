@@ -22,4 +22,4 @@ The full sidebar documentation can be accessed under the reference mentioned [he
 
 Here, we display an example screenshot of what this sidebar looks like when viewed within the wider [Web Terminal](../web-terminal.md) interface.
 
-![Sidebar](/images/remote-connection/guacamole-sidebar.png "Sidebar")
+![Sidebar](../../images/remote-connection/guacamole-sidebar.png "Sidebar")

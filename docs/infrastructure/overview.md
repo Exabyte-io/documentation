@@ -8,7 +8,7 @@ We additionally support platform-level access via [advanced connection methods](
 
 The different components forming the underlying architecture of our computational infrastructure are interconnected as demonstrated in the following diagram. The reader is referred to the number labels included here to find the component's corresponding introductory explanation in the remainder of this documentation page.
 
-![Infrastructure](/images/infrastructure/Infrastructure.png "Infrastructure")
+![Infrastructure](../images/infrastructure/Infrastructure.png "Infrastructure")
 
 In the above image, we apply the following conventions for labelling the interconnecting lines.
 

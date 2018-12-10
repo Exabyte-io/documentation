@@ -4,4 +4,4 @@ In order to change the password, the user should first enter the old password th
 
 All the above information has to be entered in the corresponding text fields appearing under the "Update password" section of the Account Preferences, which are laid out as shown in the below image:
 
-![Update Account Password](/images/accounts/modify-password.png "Update Account Password")
+![Update Account Password](../../../images/accounts/modify-password.png "Update Account Password")

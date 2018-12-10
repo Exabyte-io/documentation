@@ -10,7 +10,7 @@ The individual atoms in a [crystal structure](../../materials/classification/cry
 
 A typical example of an atomic arrangement within a material is given by the cubic-diamond crystal structure displayed below. This represents the underlying structural framework of crystalline materials such as Carbon (in the diamond phase), Silicon and Germanium. Atoms are shown here as dark balls, connected by white tubes representing the covalent bonds between them.
 
-![Crystal Atoms](/images/properties-directory/Properties/crystal_atoms.png "Crystal Atoms")
+![Crystal Atoms](../../images/properties-directory//crystal_atoms.png "Crystal Atoms")
 
 ## Atomic Positions
 

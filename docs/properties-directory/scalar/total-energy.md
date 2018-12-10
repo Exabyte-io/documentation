@@ -36,7 +36,7 @@ The reader is referred to the links presented at the bottom of the page for a th
 
 The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software/modeling/vasp.md) and [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV.
 
-![Common Contributions](/images/properties-directory/Properties/common-contributions.png "Common Contributions")
+![Common Contributions](../../images/properties-directory/common-contributions.png "Common Contributions")
 
 ### Quantum ESPRESSO
 

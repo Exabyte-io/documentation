@@ -19,7 +19,7 @@ for path in list_files:
     print relative_path
     with open(path, "r+") as f:
         content = f.read()
-        content = content.replace('/images', relative_path)
+        content = content.replace('(/images', "({}".format(relative_path))
         f.seek(0)
         f.write(content)
 

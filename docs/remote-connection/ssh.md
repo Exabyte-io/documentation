@@ -59,7 +59,7 @@ Following successful SSH connection, the user is presented with the [CLI of our 
 
 Some useful instructions are already contained in the CLI **splash welcome screen** greeting the user at the moment of login. A copy of this welcome screen is reproduced below.
 
-![CLI Welcome Screen](/images/remote-connection/CLI-Welcome-Screen.png  "CLI Welcome Screen")
+![CLI Welcome Screen](../images/remote-connection/CLI-Welcome-Screen.png  "CLI Welcome Screen")
 
 ## Transfer Files with SCP
 

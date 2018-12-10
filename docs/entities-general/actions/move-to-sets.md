@@ -4,7 +4,7 @@ Items in the account-owned collection of entities (including other Sets) can be 
 
 The user is presented with the following dialog. Here, the destination Set can be searched by its name in the text field. As new characters are entered, suggestions are offered in real time in the drop-down menu appearing directly below.
 
-![Move To Set](/images/entities-general/move-to-set.png "Move To Set")
+![Move To Set](../../images/entities-general/move-to-set.png "Move To Set")
 
 The transfer operation is completed once the "Submit" button is pressed. At this point the entity item is no longer present at its original location, but rather inside the  destination Set. 
 

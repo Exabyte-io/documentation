@@ -6,7 +6,7 @@ Click on the "Teams" tab <i class="zmdi zmdi-accounts zmdi-hc-border"></i> under
  
 The appearance of this "Teams Explorer" page is portrayed below:
 
-![Teams Explorer](/images/collaboration/teams-explorer.png "Teams Explorer")
+![Teams Explorer](../../images/collaboration/teams-explorer.png "Teams Explorer")
 
 ## Columns: Members and Projects
 

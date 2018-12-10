@@ -6,7 +6,7 @@ New Organizations can be created by first navigating to [My Accounts](../../../a
 
 Next, click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner. At this stage, the following dialog appears:
 
-![Create New Organization](/images/collaboration/create-new-organization.png "Create New Organization")
+![Create New Organization](../../../images/collaboration/create-new-organization.png "Create New Organization")
 
 ## Enter Information
 

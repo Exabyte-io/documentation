@@ -6,7 +6,7 @@ We now explain the general evolution of data. This evolution spans the duration 
 
 In the image below, we present a flowchart summarizing the steps involved in the data lifecycle. 
 
-![Data Lifecycle](/images/data/data-lifecycle.png "Data Lifecycle")
+![Data Lifecycle](../images/data/data-lifecycle.png "Data Lifecycle")
 
 The Data Lifecycle is composed primarily of the following three steps. The reader is referred to the same number labelling cited in the above image.
 
