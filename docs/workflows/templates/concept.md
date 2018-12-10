@@ -1,26 +1,37 @@
 # Templating Important Concepts
 
-#Template is a general concept in computing....
+**Templating** is a general concept in computer science [^1] for automating and generalizing the mass-production of scripts based on a common fundamental framework, referred to as the core **"Template"** for those scripts. Different sets of **input parameters (or variables)** can then be passed to this template in order to generate distinct scripts, each representing a custom variant of the original template.
+ 
+Templating is commonly encountered in web publishing, where it lets web designers and developers work with web templates to automatically generate custom web pages. In this case, web templates support static content, providing the basic structure and appearance of the web page, on top of which more complex dynamic elements can then be added.
 
-**Jinja** [^1] [^2] is a text-based **template engine**. It was first developed for web dev, but we use it for writing materials input scripts
+The basic process for a web templating system is illustrated in the picture below. Here, the content parameters of the web-page (originating from a database), and a web template, are combined together through the **Template Engine** to mass-produce web documents.
 
-A particularly useful application of templating, in the context of our platform, consists in using the same template for generating the main input scripts of the simulation engine under consideration, and applying it to many different materials in turn, potentially in conjunction with different input computational parameters for each material. 
+![Templating](../../images/workflows/templating.png "Templating")
 
-## Syntax
+In the context of our platform, we make use of **Jinja** [^2] [^3], a text-based template engine originally intended for web development, but which we use for automating the generation of input scripts for materials science computations. In this respect, templates are particularly resourceful when they are applied to many different [material entities](../../materials/overview.md) in turn under the same [Job](../../jobs/overview.md), potentially in conjunction with different input computational parameters for each material. 
 
-The following simple template example illustrates the basic syntax behind the functioning of the Jinja templating engine, which is based on the use of pairs of curly braces.
+## Basic Syntax
+
+In the Jinja templating language, there exist a few kinds of delimiters. The default delimiters are configured following the general conventions of the **Jinja syntax** [^4], as explained in the list below.
+
+- `{% ... %}`: for **Statements**
+- `{{ ... }}`: for **Expressions** to print to the template output
+- `{# ... #}`: for **Comments** not included in the template output
+- `#  ... ##`: for **Line Statements**
+
+The following simple example illustrates the basic syntax behind the functioning of Jinja templating expressions for inserting variables, based on the use of pairs of curly braces mentioned above.
 
 ```
 {{name}} has the chemical formula {{formula}}.
 ```
 
-If name=`Silica` and formula=`SiO2`, then the templating engine will generate, or **render**, the following output starting from the above template input.
+If name=`Silica` and formula=`SiO2`, then the templating engine will generate, or **Render**, the following **final output** after acting upon the above template **input**.
 
 ```
 Silica has the chemical formula SiO2.
 ```
 
-The list of input variable definitions and associated data is called the **Context** of the template, which is typically stored as a **Python Dictionary** of keyword-value pairs. 
+The database of input variable definitions and associated values is called the **Context** of the template, which is typically stored in the form of a **Dictionary** of keyword-value pairs. 
 
 ## Loops and Conditional Statements
 
@@ -81,6 +92,10 @@ Note the usage of "raw" filter in order to make sure that the *Design-time* rend
 
 ## Links
 
-[^1]: [Jinja Templating Engine, Official Website](http://jinja.pocoo.org/)
+[^1]: [Wikipedia Web template system, Website](https://en.wikipedia.org/wiki/Web_template_system)
 
-[^2]: [Wikipedia Jinja (template engine), Website](https://en.wikipedia.org/wiki/Jinja_(template_engine))
+[^2]: [Jinja Templating Engine, Official Website](http://jinja.pocoo.org/)
+
+[^3]: [Wikipedia Jinja (template engine), Website](https://en.wikipedia.org/wiki/Jinja_(template_engine))
+
+[^4]: [Jinja Template Designer Documentation, Website](http://jinja.pocoo.org/docs/2.10/templates/)
