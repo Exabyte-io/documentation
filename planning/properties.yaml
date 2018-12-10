@@ -1,0 +1,117 @@
+READY
+
+    - Properties
+
+##################################################################################################################################
+
+        - Overview
+        # Properties (including tables)
+            % Refer to the diagram explaining Material-Job-Property relation
+            % Properties are extracted from the output of the simulations and presented to the user following the procedures and conventions outlined in the sections below (put links)
+            % Properties are already implemented on our platform (and how to contribute new ones, soon-to-come feature) are explained in this section.
+            % Mostly Materials properties here, however can be Workflow too - eg. convergence.
+            % Present table of all the possbile properties
+        # Extractors
+        # Refinement
+        # Schemas And Examples
+        # User Interface
+        # Scalar Properties
+        # Array Properties
+        # Dispersion Curves
+        # Structural Properties
+
+        - Extractors
+        # Extraction of Raw Properties
+            % Extraction of data consist in parsing the output data of simulation codes by post-processing software. Computational scientists are familiar with this concept and often have a set of scripts or "extractors". Our software does exactly that and forms structured data according to the Data Convention (Schemas) to subsequently store properties in the database.
+            % For example, the retrieveal of the total energy in a Quantum Espresso output file can be done by looking for the "!" character, and extracting the ensuing content of the same line. Alternatively, a corresponding XML file can be parsed.
+        # User-defined Extractors
+            % We plan to allow users to write their own extractor scripts to extract new properties, and share such scripts with other users
+
+        - Refinement
+        # Refinement of Computed Properties
+            % Once extracted from the output files, some properties might need to be refined in order to be made presentable to the user
+            % This refinement selection is done based on how physically meaningful such properties are
+        # Raw
+            % Raw properties are all properties extracted from the output files of simulation codes, ragardless of how much physical sense they make
+        # Refined
+            % Refined properties include those properties which are physically meaningful
+            NOTE TO GM from TB - The Total Energy is Stored as Refined Actially:
+            % For the [pseudopotential DFT] the Fermi Energy for example is excluded from being classed as Refined, since its absolute value makes no physical meaning and depends on method used and XC functional approximation
+            % The band gap instead is considered a refined property since it is a relative energy difference, and therefore its computed value can be compared directly with experiments
+        # Best
+            % Best is defined as the computation of a given refined materials property which has achieved the best precision, out of all the computations performed across the Exabyte platform by all users
+            % Put link to precision explain
+
+##################################################################################################################################
+
+        - User Interface
+            - Properties Explorer
+            NOTE TO GM from TB - We should stop speaking about where the explorer can be found inside explorer pages themselves. Below the Viewer is where we should refer to Properties Explorer instead:
+            # Properties Explorer
+                % The properties explorer interface can be found at the bottom of the materials viewer page
+                % It displays all the computed properties associated with the material being currently inspected
+            # Specific Features
+                % Specific features include the properties which can be displayed under the table columns of the interface
+
+            - Final Structure Viewer
+            # Materials Viewer for Final Structure
+                % The final computed structure of the corresponding simulation unit can be inspected under a Materials Viewer interface inside the Results Tab of the Jobs Viewer. This is handy for the runs that include structural relaxation.
+            # Link to main Viewer documentation
+                % Materials Viewer is explained in detail separately (put link)
+
+##################################################################################################################################
+        % For all the pages below, the following conventional structure will be employed - 1) short physical description of the material property being discussed, 2) Screenshot of how the property is presented under the Results tab of Jobs Viewer, 3) Links to wikipedia articles describing the property in detail, when applicable
+        - Scalar
+            - Energies
+            # Total Energy,
+            # Fermi Energy,
+            # Zero Point Energy
+
+            - Pressure
+            # Average pressure
+
+            - Lists of scalars
+            NOTE TO GM from TB - this is not a scalar, but a list of scalars:
+            # Total Energy Contributions
+
+        - Array/Vector
+            NOTE TO GM from TB - Total Force is not a scalar:
+            - Total force
+            - Stress tensor
+
+##################################################################################################################################
+
+        - Dispersion Curves
+            - Band Structure
+            # Bandstructure
+            # Band gap
+            # Energy Eigenvalues
+            - Phonons
+            # Phonon Dispersion Curves
+            # Frequency Eigenvalues
+            - Density of States
+            # Density of States
+
+        - Structural
+            - Atomic (Scalar)
+            # Atomic Properties
+            # Coordinates,
+            # Elements,
+            # Masses,
+            # Data,
+            # Basis
+
+            - Atomic (Vector)
+            # Atomic forces
+            # Link to other atomic properties
+
+            - Lattice
+            # Bravais Lattice
+            # Lattice vectors
+            # Lattice Parameters
+
+            - Final Structure
+            # Crystal Structure = lattice + basis
+            # Final Structure Viewer (link)
+
+##################################################################################################################################

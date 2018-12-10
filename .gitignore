@@ -1,4 +1,11 @@
 *site/
 .DS_Store
 .idea
+.virtualenv*
 tmp/
+docs/images/
+docs/images_backup/
+scripts/*mp4
+scripts/mp4/
+scripts/*gif
+scripts/gif/
