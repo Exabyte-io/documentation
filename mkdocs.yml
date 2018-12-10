@@ -398,23 +398,24 @@ nav:
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
 
+
     - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
-        # Jobscript, with examples
-        - Batch script:                                 jobs-cli/batch-script.md
-        - Accounting:
-            # how to show detailed Account balance
-            - Balance:                                  jobs-cli/accounting/balance.md
-            # How to show detailed usage statistics
-            - Statement:                                jobs-cli/accounting/statement.md
+        - Accounting:                                   jobs-cli/accounting.md
+        - Batch Scripts:
+            - Overview:                                 jobs-cli/batch-scripts/overview.md
+            - General Structure:                        jobs-cli/batch-scripts/general-structure.md
+            - Directives:                               jobs-cli/batch-scripts/directives.md
+            - Working Directory:                        jobs-cli/batch-scripts/directories.md
+            - Sample Scripts:                           jobs-cli/batch-scripts/sample-scripts.md
         - Actions:
+            - Overview:                                 jobs-cli/actions/overview.md
             - Create:                                   jobs-cli/actions/create.md
-            # How to submit a job with qsub
             - Submit:                                   jobs-cli/actions/submit.md
-            # Check statuses of jobs with qstat
             - Check status:                             jobs-cli/actions/check-status.md
-            # Terminate jobs with qdel
             - Terminate:                                jobs-cli/actions/terminate.md
+            - View Jobs List:                           jobs-cli/actions/view-job-list.md
+
 
     - Properties:
         - Overview:                                     properties/overview.md
@@ -436,6 +437,7 @@ nav:
         - User Interface:
             - Explorer:                                 properties/ui/explorer.md
             - Viewer:                                   properties/ui/viewer.md
+
 
     - Properties Directory:
         - Overview:                                     properties-directory/overview.md
@@ -534,6 +536,7 @@ nav:
             - Open Sidebar:                             remote-connection/actions/sidebar.md
             - Upload:                                   remote-connection/actions/upload.md
             - Download:                                 remote-connection/actions/download.md
+            - Transfer Files via SCP:                   remote-connection/actions/transfer-files-scp.md
             - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
             - Access data in Web Platfrom:              remote-connection/actions/access-data.md
         - Actions > Remote Desktop:
@@ -544,17 +547,16 @@ nav:
     - Command Line Interface:
         - Overview:                                     cli/overview.md
         - Environment:                                  cli/environment.md
+        - Environment Modules:                          cli/modules.md
         - Accounting:                                   cli/accounting.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
-            - Load / Unload Modules:                    cli/actions/modules.md
+            - Load / Unload Modules:                    cli/actions/modules-actions.md
             - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
-            - Transfer Files via SCP:                   cli/actions/transfer-files-scp.md
-
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
@@ -563,6 +565,15 @@ nav:
       - Endpoints:                                   rest-api/endpoints.md
       - Exabyte API client:                          rest-api/api-client.md
       - Exabyte API examples:                        rest-api/api-examples.md
+
+
+
+    - Tutorials:
+        - Jobs via Command Line:
+            - Overview:                              tutorials/jobs-cli/overview.md
+            - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
+            - View Results:                          tutorials/jobs-cli/view-results.md
+
 
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable
