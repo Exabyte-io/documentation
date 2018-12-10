@@ -1,19 +1,19 @@
-<!-- by TB -->
+# Run First Simulation
 
 This page explains how to run a simple density functional theory calculation to obtain an electronic band structure. Each account is pre-configured with one default material and workflow. For the sake of this tutorial, we will keep the *default* parameters at each step. We will thus study silicon in the standard face-centered cubic structure and use Quantum ESPRESSO as the simulation engine.
 
-# Prepare Material and Workflow
+## Prepare Material and Workflow
 
-Users may also add new materials or workflows into their collection from the application-wise "Bank" collection that we maintain. To do so, select the "Bank" option in the left-hand sidebar and then "Materials" ("Workflows"). To import both workflows and material structures from the Bank select the desired entry by ticking the checkbox at the start of the entry line and then click "Copy" in the top-right taskbar of the page.
+Users may also add new materials or workflows into their collection from the application-wise "Bank" collection that we maintain. To do so, select the "Bank" option in the left-hand sidebar and then "Materials" ("Workflows"). To import both workflows and material structures from the Bank select the desired entry and then click "Copy" in the top-right taskbar of the page.
 
 Silicon FCC is the default material added to each account on creation. Below we demonstrate how to import the "Band Structure" workflow for Quantum ESPRESSO.
 
-<img data-gifffer="/images/run-first-simulation-import-workflow.gif"/>
+<img data-gifffer="/images/getting-started/run-first-simulation-import-workflow.gif"/>
  
-Readers can also learn how to [create](/materials-designer/overview.md) or [upload](/materials/actions/upload.md) / [import](/materials/actions/import.md) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](/general/actions/set-default.md) elsewhere in this documentation. 
+Readers can also learn how to [create](../materials-designer/overview.md) or [upload](../materials/actions/upload.md) / [import](../materials/actions/import.md) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](../entities-general/actions/set-default.md) elsewhere in this documentation. 
  
 
-# Open Job Designer
+## Open Job Designer
 
 Start by clicking "Create Job" link in the left-hand sidebar to open the "Job Designer" page where you can:
 
@@ -21,13 +21,13 @@ Start by clicking "Create Job" link in the left-hand sidebar to open the "Job De
 - Choose and adjust a simulation Workflow
 - Setup compute parameters
    
-# Tab #1: Materials
+## Tab #1: Materials
 
 Materials viewer lets you choose one or more previsously imported materials for use during the calculation. We will proceed with the default structure of Silicon.
 
-<img src="/images/run-first-simulation-tab-1-materials.png"/>
+<img src="/images/getting-started/run-first-simulation-tab-1-materials.png"/>
 
-# Tab #2: Workflow
+## Tab #2: Workflow
 
 Simulations usually have multiple steps that need to be executed in a certain order. This step sequence is called a "Workflow".
 
@@ -37,9 +37,9 @@ Subworkflow "Overview" contains the basis information about it including the ind
 
 One can further modify the input files for each individual part of the subworkflow by clicking on the corresponding element and adjusting its input content as the animation below demonstrates.
 
-<img data-gifffer="/images/run-first-simulation-tab-2-workflow.gif"/>
+<img data-gifffer="/images/getting-started/run-first-simulation-tab-2-workflow.gif"/>
 
-# Tab #3: Compute
+## Tab #3: Compute
 
 This tab lets you set up the number of processor cores and the maximum time limit for your calculation. We set the maximum time limit for the calculation to properly schedule the allocation of resources. The format is HH:MM:SS, so that `01:00:00` corresponds to up to 1 hour runtime.
 
@@ -47,16 +47,16 @@ One choose to be notified of the job status by clicking on our name in the "Noti
 
 For the moment, let's leave all parameters at their default values and click "Save".
 
-<img src="/images/run-first-simulation-tab-3-compute.png"/>
+<img src="/images/getting-started/run-first-simulation-tab-3-compute.png"/>
 
 !!! Note "Summary"
     You have created and saved your first job to be run in the future. Now we can proceed to submit it.
 
-# Run calculation
+## Run calculation
 
 After saving the job, you are redirected back to the default "Project" page. Here you can submit the job and track its status.
 
-## Submit and track progress
+### Submit and track progress
 
 Run the job by clicking the three vertical dots to the right of its status label ("pre-submission") and choosing "Run".
 
@@ -64,16 +64,16 @@ You will see the status changing from "pre-submission" to "submitted". This mean
 
 You can click on the job name and monitor the progress of the job in real time.
 
-<img data-gifffer="/images/run-first-simulation-submit-view-output.gif" />
+<img data-gifffer="/images/getting-started/run-first-simulation-submit-view-output.gif" />
 
-## View results and access files
+### View results and access files
 
 Job view screen lets you track the input parameters, output text, convergence parameters (total energy in this tutorial), and view the results of the calculation and download output files when finished.
 
-<img data-gifffer="/images/run-first-simulation-view-results.gif" />
+<img data-gifffer="/images/getting-started/run-first-simulation-view-results.gif" />
 
-# Done
+## Done
 
-This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](/tutorials/band-structure.md).
+This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](../tutorials/dft/band-structure.md).
 
-<img src="/images/run-first-simulation-view-bandstructure.png"/>
+<img src="/images/getting-started/run-first-simulation-view-bandstructure.png"/>

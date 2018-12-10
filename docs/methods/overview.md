@@ -1,11 +1,11 @@
 # Method
 
-A theoretical [model](/models/overview.md) may have multiple computational **Methods**, or implementations. Since a method is a numerical property, it always has a certain precision. A method is implemented inside a **simulation engine** (or [application](/applications/overview.md)), and each application can itself implement one or more methods.
+A theoretical [model](../models/overview.md) may have multiple computational **Methods**, or implementations. Since a method is a numerical property, it always has a certain precision. A method is implemented inside a **simulation engine** (or [application](../software/overview.md)), and each application can itself implement one or more methods.
 
 !!! note "Example Model & Method"
     If we use Newtonian mechanics as Model, then the Method would be the algorithmic implementation of calculating the multiple between m and a in the `F = ma` equation.
     
-# Method Properties
+## [Method Properties]()
 
 Methods in particular consist in the following two elements in the context of the computational aspects of a subworkflow calculation: 
 

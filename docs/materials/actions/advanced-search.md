@@ -1,28 +1,41 @@
-<!-- by GM -->
-
 # Advanced Materials Search
 
-In order to perform a comprehensive search and filter the entries in the materials collection available for an account, the Advanced Search feature can be used.
+The steps for performing [advanced searche](../../entities-general/actions/advanced-search.md) for Materials are illustrated in the animation below. 
 
-# Activate Advanced Search
+We use the advanced search query builder to construct a query that filters the large dataset of materials (over 4000 entries) according to the formula ("Al"), unit cell volume (less than "80" in cubic Angstroms) and tags containing a certain keyword ("high pressure").
 
-Click on the `Advanced Search` tool <i class="zmdi zmdi-search-for zmdi-hc-border"></i> offered in the top-right toolbar of the Materials page in order to activate the functionality and view the search query builder.
+<img data-gifffer="/images/materials/advanced_search.gif" />
 
-# Query Builder
+## Searchable Properties 
 
-Advanced search functionality is implemented through a flexible "Query Builder": an interface that allows users to construct arbitrary queries using logical rules and the supported fields. The search statements are structured in the form of "Groups", each containing a series of "Rules". Both Groups and Rules can be added to the overall logical flow with the help of the `+ Rule` and `+ Group` buttons, or deleted using the `-` button. The Rules inside each Group, and the Groups themselves, can be logically combined together through the "AND/OR" logical operators.
+The following materials keywords are available.
 
-# Rules
+### Generic Keywords
 
-Each Rule is composed of three successive entries. Firstly, a material structure property (such as its tags, formula, unit cell volume, band gap etc...) has to be selected from the initial drop-down menu. Secondly, a logical operator has to be chosen from the available list in the central drop-down menu. Finally, a  search string or numerical value corresponding to the sought material property can be entered in the third and final text field. 
+Generic keywords present for all materials are described below. These can also be referred to as [descriptive properties](../../data-structured/overview.md#by-relation-to-workflow).
 
-# Execute Query
+| Keyword    |   Description      |  
+| :-------- |:----------- |
+| name | Name of the Material | 
+| formula | Chemical formula, for example "CaTiO3" | 
+| latticeType | The [Bravais lattice type](../../materials-designer/source-editor/lattice.md) of the crystal structure under consideration |
+| model  | The [theoretical model](../../models/overview.md) employed to calculate the materials properties  | 
+| method | The [computational method](../../methods/overview.md) implementing the above model |  
+| spaceGroupSymbol | The space group symbol describing the symmetry elements present in the crystal structure, e.g. "Fd-3m" | 
+| volume  | The volume of the unit cell of the structure, in units of angstrom^3 | 
+| density | The density of the crystal structure, in units of g/cm^3 | 
+| owner | The Account name which [owns](../../entities-general/ownership.md) the material under consideration  |
+| tags | Descriptive [metadata](../../entities-general/data.md#Metadata) tags added to the material entry by the user  |
 
-Once all the logical statements and operators have been inserted as part of the desired overall flow, the resulting advanced materials search can be executed by clicking the `Search` button, and the corresponding search results will then be displayed. Alternatively, the entire logical flow can be reverted to its original basic appearance with the neighbouring `Reset` button.
+### Properties
 
-# Animation
+[Characteristic properties](../../data-structured/overview.md#by-relation-to-workflow) present for materials after the corresponding calculation(s) are done are described below and in the [corresponding page](../../properties/overview.md).
 
-All the aforementioned steps for performing advanced structure searches are further illustrated in the animation below. We will use the advanced search query builder to construct a query to filter the large dataset of materials (over 4000 entries) by the formula ("Al"), unit cell volume (less than "80" in cubic Angstroms) and tags containing a certain value ("high pressure").
-
-<img data-gifffer="/images/advanced_search.gif" />
-
+| Property    |   Description      |  
+| :-------- |:----------- |
+| pressure | External pressure in kbar | 
+| total_energy | Total internal energy of the system in eV | 
+| band_gaps:direct | The direct band gap in eV   | 
+| band_gaps:indirect | The indirect band gap in eV  |
+| band_structure | The availability of electronic bandstructure data (boolean) |
+| density_of_states | The availability of electronic density of states data (boolean) |

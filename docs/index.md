@@ -1,16 +1,22 @@
-Exabyte.io is an integrated environment for materials modeling on the cloud. This documentation explains how it works. You may search for your topic of interest by using the input field in the top left corner or simply read on.
+# Exabyte.io Documentation
 
-The [links](#links) section below can direct reader to sources of more in-depth explanation about what we are building and why [[1]](#links) and example case studies [[2]](#links).
+Exabyte.io is an cloud-native accessible and collaborative environment for materials modeling from nanoscale. With the help of the platform, users can **design new materials** online and **predict the properties** of these materials using simulations. The present documentation explains how the platform works in details. 
 
-# Quickstart
+## Search
 
-You can skip straight to our tutorial summarizing [first steps](getting-started/run-first-simulation.md). There you will learn how to create and run a density functional theory calculation for the electronic bandstructure of silicon.
+You may search for your topic of interest by using the input field at the top.
 
-# Contents
+The "Links" section below can direct reader to sources of more in-depth explanation about what we are building and why [^1] and example case studies [^2].
+
+## Quickstart
+
+You can skip straight to our tutorial summarizing [first steps](getting-started/run-first-simulation.md). There you will learn how to create and run a density functional theory calculation for the electronic band structure of silicon.
+
+## Contents
 
 Navigation bar on the left also serves as the table of contents. You may click on any top-level item to expand the corresponding section. The [content highlights](getting-started/content-highlights.md) page has a quick overview of the features available and links into them.
 
-# Support
+## Support
 
 We reply to support requests within 24 hours. Our team can be contacted during working hours Pacific Time through:
 
@@ -18,11 +24,10 @@ We reply to support requests within 24 hours. Our team can be contacted during w
 - phone: +1.510.473.7770,
 - web widget: click "Support" button at the bottom of our main <a href="https://platform.exabyte.io" target="_blank">web application</a>.
 
-# Links
+!!! tip "Let us hear your feedback"
+    In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.
 
-1. [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
-2. [Exabyte.io: case studies](https://exabyte.io/#case-study)
+## Links
 
-# Notes
-
-In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.
+[^1]: [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
+[^2]: [Exabyte.io: case studies](https://exabyte.io/#case-study)

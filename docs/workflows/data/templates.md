@@ -1,6 +1,6 @@
 # Templating
 
-We allow for using Jinja templates [[1]](#links) inside the input to individual units. This way we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time without having to adjust it extensively.
+We allow for using Jinja templates [^1] inside the input to individual units. This way we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time without having to adjust it extensively.
 
 ## Design-time render
 
@@ -129,10 +129,10 @@ NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %}
 
 Note the usage of "raw" filter in order to make sure that *Design-time* rendering will still preserve the content as `NBANDS = {{grep-nbands.stdout}}`.
 
-# Example representation
+## Example representation
 
 See workflow example [here](data.md) for more details on the JSON representation.
 
-# Links
+## Links
 
-1. [Jinja templating engine](http://jinja.pocoo.org/)
+[^1]: [Jinja templating engine, Official Website](http://jinja.pocoo.org/)
