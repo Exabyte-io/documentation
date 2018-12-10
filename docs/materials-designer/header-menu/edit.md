@@ -2,7 +2,7 @@
 
 The `Edit` menu in the top menu bar of the Materials Designer interface makes it possible to navigate through the various changes made to the material structure under consideration during the current session. The position of this menu within the overall interface is highlighted below:
 
-<img src="/images/edit-menu.png"/>
+<img src="/images/materials-designer/edit-menu.png"/>
 
 
 ## Undo
@@ -26,4 +26,4 @@ The user can also `Reset` <i class="zmdi zmdi-close zmdi-hc-border"></i> all cha
 
 The `Edit` menu also allows the user to `Clone` <i class="zmdi zmdi-collection-image zmdi-hc-border"></i> the currently selected structure into a new distinct entry in the items list sidebar. This feature is demonstrated in the short animation below, where we clone the original silicon structure into a new entry which appears below it:
 
-<img data-gifffer="/images/edit-clone.gif" />
+<img data-gifffer="/images/materials-designer/edit-clone.gif" />

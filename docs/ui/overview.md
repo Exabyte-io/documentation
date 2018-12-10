@@ -9,7 +9,7 @@ We subdivide the generic user interface into universal components that are prese
 
 Five components are highlighted in the image below. Clicking each area of this image redirects the user to the corresponding documentation page.
 
-<img src="/images/ui-overview.png" usemap="#mapname">
+<img src="/images/ui/ui-overview.png" usemap="#mapname">
 
 <map name="mapname">
     <area shape="rect" coords="0,0,752,41" href="/general/ui/header-footer/">
@@ -23,7 +23,7 @@ Five components are highlighted in the image below. Clicking each area of this i
 
 Other general user interface components are instead accessible only from specific locations. The panels highlighted below are worth a separate discussion.
 
-![ui-specific](../images/ui-specific.png "ui specific")
+![ui-specific](../images/ui/ui-specific.png "ui specific")
 
 ### 1. [Link to Homepage Navigation](specific/homepage.md)
 

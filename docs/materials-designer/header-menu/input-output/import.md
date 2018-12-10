@@ -18,4 +18,4 @@ The items selected in the previous step will be added to the list in the left-ha
 
 The steps above are summarized in the animation below. We find a material containing "Aluminium" using the top search bar of the "Import materials" dialog and then import it. In the end we also remove the pre-existing default "Silicon FCC" material to leave only the new arrival in the items list sidebar.
 
-<img data-gifffer="/images/ImportMaterialsDesigner.gif" />
+<img data-gifffer="/images/materials-designer/ImportMaterialsDesigner.gif" />

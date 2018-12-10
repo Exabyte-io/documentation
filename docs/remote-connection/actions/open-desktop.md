@@ -8,4 +8,4 @@ The Remote Desktop can subsequently be closed by clicking the ✕ button at its 
 
 We demonstrate how to open and then close the Remote Desktop in the below animation.
 
-<img data-gifffer="/images/open-close-remote-desktop.gif" />
+<img data-gifffer="/images/remote-connection/open-close-remote-desktop.gif" />

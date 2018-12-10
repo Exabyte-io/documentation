@@ -10,4 +10,4 @@ A review of the [actions](../../data-in-objectstorage/actions/overview.md) and [
 
 An example of appearance of the Files tab is portrayed below, for a bandstructure run performed using the [VASP](../../software/modeling/vasp.md) code. The user is referred to the [code-specific documentation](../../software/modeling/vasp.md) for an explanation of the contents of the files displayed in this example.
 
-![Files Tab](../../images/files-tab.png "Files Tab")
+![Files Tab](../../images/jobs/files-tab.png "Files Tab")

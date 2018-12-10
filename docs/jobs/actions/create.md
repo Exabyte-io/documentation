@@ -16,4 +16,4 @@ Clicking "Create" as prescribed above takes the user to the [Job designer page](
 
 Below, we first navigate to the [Projects Explorer](../ui/projects-explorer.md) starting from [Jobs Explorer](../ui/explorer.md). We then open the first listed project, and from there we create a new Job by opening [Jobs Designer](../../jobs-designer/overview.md) with the "Create" button.
 
-<img data-gifffer="/images/create-job.gif">
+<img data-gifffer="/images/jobs/create-job.gif">

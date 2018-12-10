@@ -8,7 +8,7 @@ Files Explorer can be encountered under two circumstances: under the [Files Tab]
 
 An example of its appearance in the former context is portrayed in the image below, where it displays both the input and output files of the corresponding [Job simulation](../../jobs/overview.md).
 
-![Files Explorer](/images/files-explorer.png "Files Explorer")
+![Files Explorer](/images/data-in-objectstorage/files-explorer.png "Files Explorer")
 
 ## Specific Features
 

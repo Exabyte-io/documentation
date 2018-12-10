@@ -8,4 +8,4 @@ This set of software is particularly useful for graphically visualizing the crys
 
 Here, we show how to open the [VESTA](../../software/analysis/vesta.md) visualization software under Remote Desktop, by way of an example.
 
-<img data-gifffer="/images/vesta-rd.gif" />
+<img data-gifffer="/images/remote-connection/vesta-rd.gif" />

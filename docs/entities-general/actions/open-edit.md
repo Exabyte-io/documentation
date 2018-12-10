@@ -14,4 +14,4 @@ Two equivalent approaches can be adopted to open an entity: either the user can 
 
 In the animation below we demonstrate both ways of opening a workflow from the account-owned collection. We then inspect it under the Workflow Viewer.
 
-<img data-gifffer="/images/open-workflow.gif" />
+<img data-gifffer="/images/entities-general/open-workflow.gif" />

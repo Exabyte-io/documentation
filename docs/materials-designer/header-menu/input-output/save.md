@@ -6,7 +6,7 @@ Save function of Materials Designer allows user to save any modifications to the
 
 In order to save structures following any changes made, click on the third `Save` <i class="zmdi zmdi-floppy zmdi-hc-border"></i> option in the `Input/Output` menu. This will open the following "Save Items" dialog:
 
-<img src="/images/save-items.png"/>
+<img src="/images/materials-designer/save-items.png"/>
 
 ## The Save Dialog
 
@@ -32,4 +32,4 @@ Press the `OK` button to save the desired materials together with any tags added
 
 The steps above are summarized in the animation below. Here, we first select the second material in the sidebar items list, and we change one of its atomic coordinates. Next, we open the "Save Items" dialog and add new tags, pressing the Enter key after each tag is typed. We further choose to save this material only ("Save Current"), and choose to save it to our own private materials collection as opposed to the public collection (Public = false).
 
-<img data-gifffer="/images/SaveMaterialsDesigner.gif" />
+<img data-gifffer="/images/materials-designer/SaveMaterialsDesigner.gif" />

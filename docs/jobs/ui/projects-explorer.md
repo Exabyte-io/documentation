@@ -4,7 +4,7 @@ The list of all [Projects](../projects.md) created under the Account is displaye
 
 An example of appearance of Projects Explorer is shown below. The highlighted columns in the items list are the Project-specific ones. They are reviewed in turn in what follows.
 
-![Projects Explorer](../../images/projects-explorer.png "Projects Explorer")
+![Projects Explorer](../../images/jobs/projects-explorer.png "Projects Explorer")
 
 ## Project-specific Columns
 

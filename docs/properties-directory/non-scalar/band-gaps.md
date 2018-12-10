@@ -14,7 +14,7 @@ Both types of band gaps are returned under the [Results Tab](../../jobs/ui/resul
 
 In case the material is of indirect-gap nature, the pair of k-vectors linking the corresponding minimal energy difference is indicated. Otherwise, for direct-gap semiconductors, the two types of gap are presented as being equivalent and being both located across the Gamma point.
 
-![Band Gap Energy](/images/Properties/bang-gap-energy.png "Band Gap Energy")
+![Band Gap Energy](/images/properties-directory/Properties/bang-gap-energy.png "Band Gap Energy")
 
 ## Schema
 

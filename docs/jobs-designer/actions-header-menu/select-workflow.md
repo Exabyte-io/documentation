@@ -8,7 +8,7 @@ After opening the drop-down menu <i class="zmdi zmdi-more-vert zmdi-hc-border"><
 
 The user is now presented with the following "Select Workflow" dialog, where the available Workflows can be browsed under the [Workflows Explorer](../../workflows/ui/explorer.md) interface supporting the corresponding [filter/search](../../entities-general/actions/search.md) functionality.
 
-![Select Workflow](../../images/select-workflow-dialog.png "Select Workflow")
+![Select Workflow](../../images/jobs-designer/select-workflow-dialog.png "Select Workflow")
 
 **Only one** Workflow at a time can be [selected](../../entities-general/actions/select.md) from this list and added to the new Job.
 
@@ -22,4 +22,4 @@ This returns the view to the main Jobs Designer, where the computational units a
 
 The following animation demonstrates how to select a phonon calculation Workflow present in the account-owned collection, and add it to the Job being currently created.
 
-<img data-gifffer="/images/add-workflow-designer.gif">
+<img data-gifffer="/images/jobs-designer/add-workflow-designer.gif">

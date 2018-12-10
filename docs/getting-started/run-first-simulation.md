@@ -8,7 +8,7 @@ Users may also add new materials or workflows into their collection from the app
 
 Silicon FCC is the default material added to each account on creation. Below we demonstrate how to import the "Band Structure" workflow for Quantum ESPRESSO.
 
-<img data-gifffer="/images/run-first-simulation-import-workflow.gif"/>
+<img data-gifffer="/images/getting-started/run-first-simulation-import-workflow.gif"/>
  
 Readers can also learn how to [create](../materials-designer/overview.md) or [upload](../materials/actions/upload.md) / [import](../materials/actions/import.md) materials with the aid of the incorporated Exabyte Materials Designer tool, as well as further setting them as [default](../entities-general/actions/set-default.md) elsewhere in this documentation. 
  
@@ -25,7 +25,7 @@ Start by clicking "Create Job" link in the left-hand sidebar to open the "Job De
 
 Materials viewer lets you choose one or more previsously imported materials for use during the calculation. We will proceed with the default structure of Silicon.
 
-<img src="/images/run-first-simulation-tab-1-materials.png"/>
+<img src="/images/getting-started/run-first-simulation-tab-1-materials.png"/>
 
 ## Tab #2: Workflow
 
@@ -37,7 +37,7 @@ Subworkflow "Overview" contains the basis information about it including the ind
 
 One can further modify the input files for each individual part of the subworkflow by clicking on the corresponding element and adjusting its input content as the animation below demonstrates.
 
-<img data-gifffer="/images/run-first-simulation-tab-2-workflow.gif"/>
+<img data-gifffer="/images/getting-started/run-first-simulation-tab-2-workflow.gif"/>
 
 ## Tab #3: Compute
 
@@ -47,7 +47,7 @@ One choose to be notified of the job status by clicking on our name in the "Noti
 
 For the moment, let's leave all parameters at their default values and click "Save".
 
-<img src="/images/run-first-simulation-tab-3-compute.png"/>
+<img src="/images/getting-started/run-first-simulation-tab-3-compute.png"/>
 
 !!! Note "Summary"
     You have created and saved your first job to be run in the future. Now we can proceed to submit it.
@@ -64,16 +64,16 @@ You will see the status changing from "pre-submission" to "submitted". This mean
 
 You can click on the job name and monitor the progress of the job in real time.
 
-<img data-gifffer="/images/run-first-simulation-submit-view-output.gif" />
+<img data-gifffer="/images/getting-started/run-first-simulation-submit-view-output.gif" />
 
 ### View results and access files
 
 Job view screen lets you track the input parameters, output text, convergence parameters (total energy in this tutorial), and view the results of the calculation and download output files when finished.
 
-<img data-gifffer="/images/run-first-simulation-view-results.gif" />
+<img data-gifffer="/images/getting-started/run-first-simulation-view-results.gif" />
 
 ## Done
 
 This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](../tutorials/dft/band-structure.md).
 
-<img src="/images/run-first-simulation-view-bandstructure.png"/>
+<img src="/images/getting-started/run-first-simulation-view-bandstructure.png"/>

@@ -8,7 +8,7 @@ Starting from [Remote Desktop](../remote-desktop.md), the user can download file
 
 We demonstrate how to download a file called "remote-connection.yaml", present under the [Login Home](../../infrastructure/login/directories.md) directory, starting from the Remote Desktop interface. After copying the file to the Dropbox folder, we then retrieve it under the Web Interface.
 
-<img data-gifffer="/images/download-rd.gif" />
+<img data-gifffer="/images/remote-connection/download-rd.gif" />
 
 ## Instructions for Web Terminal
 
@@ -24,4 +24,4 @@ Typing this command under the [Command Line Interface](../../cli/overview.md) do
 
 Here, we show the equivalent animation as before, but for the case of Web Terminal. We download the same "remote-connection.yaml" file by entering the corresponding `exadownload` command.
 
-<img data-gifffer="/images/download-wt.gif" />
+<img data-gifffer="/images/remote-connection/download-wt.gif" />

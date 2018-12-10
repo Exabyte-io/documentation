@@ -6,7 +6,7 @@ New Organizations can be created by first navigating to [My Accounts](../../../a
 
 Next, click on the "Create" button <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> at the top-right corner. At this stage, the following dialog appears:
 
-![Create New Organization](/images/create-new-organization.png "Create New Organization")
+![Create New Organization](/images/collaboration/create-new-organization.png "Create New Organization")
 
 ## Enter Information
 
@@ -44,4 +44,4 @@ The user who performed the above steps is appointed as the [owner](../../organiz
 
 In the demonstration below, we create a new Organization called "Example":
 
-<img data-gifffer="/images/organization-create.gif">
+<img data-gifffer="/images/collaboration/organization-create.gif">

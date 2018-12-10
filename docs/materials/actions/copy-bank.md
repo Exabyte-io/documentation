@@ -4,4 +4,4 @@ The general procedure for importing entities from Banks is reviewed  [in this pa
 
 For the specific case of Materials, it is demonstrated through the following animation.
 
-<img data-gifffer="/images/bank_materials.gif" />
+<img data-gifffer="/images/materials/bank_materials.gif" />

@@ -17,7 +17,7 @@ At this stage, the user is referred to the [Organization-related documentation p
 
 We start from the profile page of an Organization called "Exabyte.io", and we then navigate to the specific page of a "Test Team". In the end, we demonstrate how to add multiple new users:
 
-<img data-gifffer="/images/team-add-user.gif">
+<img data-gifffer="/images/collaboration/team-add-user.gif">
 
 ## Remove Members
 
@@ -29,4 +29,4 @@ When a member is removed, he/she will no longer have access to any of the team's
 
 In the animation below, we remove the three members added previously: 
 
-<img data-gifffer="/images/team-remove-user.gif">
+<img data-gifffer="/images/collaboration/team-remove-user.gif">

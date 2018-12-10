@@ -2,7 +2,7 @@
 
 Materials Explorer is mostly similar to the general [Explorer](../../entities-general/ui/explorer.md) with some exceptions. These concern the type of predicted materials properties that can be displayed under the tabular section of the interface, and are highlighted in the image below.
 
-![Materials Explorer Interface](../../images/materials-explorer-interface.png "Materials Explorer Interface")
+![Materials Explorer Interface](../../images/materials/materials-explorer-interface.png "Materials Explorer Interface")
 
 ## Materials Properties
 

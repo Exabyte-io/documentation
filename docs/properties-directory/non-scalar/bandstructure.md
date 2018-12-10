@@ -8,7 +8,7 @@ The electronic bandstructure of a material describes the range of energies that 
 
 Electronic bandstructure calculations can be performed with an appropriate [Workflow](../../workflows/overview.md). The results are portrayed in the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) in the form of a **dispersion curve**, as illustrated in the graphic below. The visual contains the bandstructure calculated on the path "Г-X-W-K-Г-L-U-W-L-U-X" with indirect band gap realized between k-points at [0.0,0.0,0.0] and [0.4,0.0,0.4] with the value of 0.601. Similarly, the direct gap of 2.422 is found at the gamma point.
 
-![Bandstructure](/images/Properties/bandstructure.png "Bandstructure")
+![Bandstructure](/images/properties-directory/Properties/bandstructure.png "Bandstructure")
 
 ### Path in the reciprocal space
 

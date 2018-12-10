@@ -4,7 +4,7 @@ At the bottom of the "Overview" tab page within the Subworkflow Editor interface
 
 An example of elementary units flowchart at the bottom of an "Overview" tab, concerning a band structure calculation implemented with the Quantum Espresso DFT application, is depicted in the image below:  
 
-<img src="/images/units-flowchart.png"/>
+<img src="/images/workflow-designer/units-flowchart.png"/>
 
 ## Unit boxes in the flowchart
 
@@ -22,7 +22,7 @@ Each unit box is clearly labelled with the name of the elementary computation th
 
 Finally, new elementary units can be added to this overall flowchart by clicking on the final empty unit box labelled with a "plus" sign <i class="zmdi zmdi-plus zmdi-hc-border"></i>. The following dialog will open, offering the user the possibility to choose the type of elementary unit that needs to be added in the first drop-down menu, and in the lower drop-down menu whether to append it or prepend it to the currently selected unit in the flowchart:
 
-<img src="/images/new-units.png"/>
+<img src="/images/workflow-designer/new-units.png"/>
 
 ## Opening the Unit Editor
 

@@ -16,7 +16,7 @@ Users can add other Accounts to the list of sharing options using the action in 
 
 In order to share an entity with ac account, the "Add" icon <i class="zmdi zmdi-plus-circle zmdi-hc-border"></i> should be clicked. The user is then presented with a list of all Accounts that exist on our platform, in a layout similar to that of [Accounts Explorer](../../accounts/ui/explorer.md) as shown in the example below.
 
-![List Accounts](/images/list-accounts.png "List Accounts")
+![List Accounts](/images/collaboration/list-accounts.png "List Accounts")
 
 Accounts can be [searched](../../entities-general/actions/search.md) through the corresponding bar at the top <i class="zmdi zmdi-search zmdi-hc-border"></i>. 
  
@@ -32,7 +32,7 @@ Conversely, any selected Account can be removed from the Sharing Options (and th
 
 In the example below, we demonstrate how to share a Material (Silicon). We share it with other users informed about the shareable link, and with another added Account called "Team Exabyte.io". To both sharing options, read permissions are finally granted:
 
- <img data-gifffer="/images/entity-sharing.gif" />
+ <img data-gifffer="/images/collaboration/entity-sharing.gif" />
 
 
 ## Apply Sharing Options to Entity

@@ -18,7 +18,7 @@ Following any such addition, the resulting sorted and complete list of subworkfl
 
 To create a new subworkflow and insert it as part of the general workflow flowchart, click on the “plus” sign <i class="zmdi zmdi-plus zmdi-hc-border"></i> on the right-end of the actions menu bar. The following dialog will open:
 
-<img src="/images/sw-addition.png"/>
+<img src="/images/workflow-designer/sw-addition.png"/>
 
 In this dialog, the user can choose whether to insert a new subworkflow or a map through the first drop-down menu (please refer to [this](../../workflows/data/subworkflows.md) and [this other](../../workflows/data/maps.md) documentation pages respectively for an explanation of the fundamental differences between these two types of computing units). 
 
@@ -36,4 +36,4 @@ In order to delete any subworkflow module from the general workflow flowchart, f
 
 In the animation below, we offer a general summary of the main subworkflow actions described above. We will begin by inserting a new subworkflow to an existing band structure workflow flowchart, by appending it to the initial "Band Structure" pre-defined subworkflow. We then navigate to this new inclusion through the numbered spinner, and once it has been selected, we remove it from the overall flowchart, thus restoring the entire workflow to its original appearance.
 
-<img data-gifffer="/images/sw-simple-actions.gif" />
+<img data-gifffer="/images/workflow-designer/sw-simple-actions.gif" />

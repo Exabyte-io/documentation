@@ -8,7 +8,7 @@ The appearance of this panel is demonstrated in the example image below, where e
 
 > NOTE: in addition, the computational parameters are also explained in [this page](data.md)
 
-![Compute Tab](/images/compute-tab-designer.png "Compute Tab")
+![Compute Tab](/images/infrastructure/compute-tab-designer.png "Compute Tab")
 
 ## 1. [Time Limit](parameters.md#time-limit)
 

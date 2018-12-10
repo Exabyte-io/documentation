@@ -2,7 +2,7 @@
 
 The [atomic basis](../../properties-directory/structural/basis.md) of a Material's crystal structure can be edited and set by expanding the "Crystal Basis" section in the central panel of the Materials Designer interface. The appearance of the "Crystal Basis" editor within the wider interface is shown in the figure below:
 
-<img src="/images/crystal-basis.png"/>
+<img src="/images/materials-designer/crystal-basis.png"/>
 
 
 ## Coordinate Units
@@ -58,7 +58,7 @@ $$
 
 Click on the animation below to see the above in action. Here, we change the x-axis coordinate of the second off-origin atom in the two-atom basis of Silicon, and then convert these new modified coordinates to Cartesian units.
 
-<img data-gifffer="/images/ChangeMaterialBasis.gif" />
+<img data-gifffer="/images/materials-designer/ChangeMaterialBasis.gif" />
 
 ## Links
 

@@ -4,7 +4,7 @@
 
 The user can [open](../../entities-general/actions/open-edit.md) any entry listed under ["Teams Explorer"](teams-explorer.md) to which he/she has access.  This leads to the corresponding Team-specific page, presented under the same [Explorer-type interface](../../entities-general/ui/explorer.md), as shown in the example below:
 
-![Team Page](/images/team-page.png "Team Page")
+![Team Page](/images/collaboration/team-page.png "Team Page")
 
 ## Summary
 

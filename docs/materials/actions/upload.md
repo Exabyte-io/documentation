@@ -36,7 +36,7 @@ Once the files have been imported, they are added as entries to the Materials [c
 
 The aforementioned steps are demonstrated in the animation below.
 
-<img data-gifffer="/images/upload.gif" />
+<img data-gifffer="/images/materials/upload.gif" />
 
 ## Links
 

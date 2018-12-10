@@ -8,4 +8,4 @@ In order to change the default item, use `Set default` option <i class="zmdi zmd
 
 If we take workflows as our case study, then a new default entry can be chosen as demonstrated in the animation below.
 
-<img data-gifffer="/images/setting-default.gif" />
+<img data-gifffer="/images/entities-general/setting-default.gif" />

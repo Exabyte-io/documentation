@@ -6,7 +6,7 @@ When a new subworkflow is being created from scratch, the "Important Settings" t
 
 An example of appearance of this "Important Settings" tab, for the case of a basic ground-state total energy subworkflow calculation performed with Quantum Espresso (comprising a single Unit of type "pw-scf"), is illustrated in the image below. In this image, the two most common types of input settings encountered in general DFT calculations, namely the wavefunction and the density "cutoffs", and the size of the grid of reciprocal k-points (the so-called "kgrid"), are both shown to be contained as part of this total energy subworkflow:
 
-<img src="/images/important-settings-tab.png"/>
+<img src="/images/workflow-designer/important-settings-tab.png"/>
 
 ## Cutoff settings
 

@@ -6,7 +6,7 @@ When the user first logs into our platform, he/she is presented with the **Entry
 
 Immediately after login, the user is first presented with three main options, as displayed in the image below. 
 
-![Entry Gateway](../../images/entry-gateway.png "Entry Gateway")
+![Entry Gateway](../../images/ui/entry-gateway.png "Entry Gateway")
 
 These initial options can be navigated by clicking their panels, or `Select` buttons. The overall result is a tree diagrams of sequential options, which will be reviewed throughout the rest of this documentation page. 
 
@@ -31,7 +31,7 @@ Suggestions are also displayed in real time under the query bar, as new search k
 
 The query functionality is demonstrated in the following animation. Here, we first navigate to the "Run Simulations" option under "Modeling and Simulations", and then we revert back to the original screen by deleting the corresponding tags.
 
-<img data-gifffer="/images/gateway-query.gif" />
+<img data-gifffer="/images/ui/gateway-query.gif" />
 
 
 ## Modeling and Simulations <i class="zmdi zmdi-cloud-outline-alt"></i>
@@ -42,7 +42,7 @@ The first option allows for the creation of simulation workflows for material mo
 !!!note "Note: labeling of options"
     In each flowchart presented in this page, a number or number-letter code is present inside each sub-component. It should be referred to in the headers of their dedicated explanation paragraphs.
 
-![Modeling Flowchart](../../images/modeling-flowchart.png "Modeling Flowchart")
+![Modeling Flowchart](../../images/ui/modeling-flowchart.png "Modeling Flowchart")
 
 ### 1. Run Simulations 
 
@@ -50,7 +50,7 @@ Here, the user can choose to calculate [material properties](../../properties/ov
 
 A sample of workflow templates included under this option is portrayed in the image below. Clicking any of these available templates creates a new job implementing the workflow, under the default Project of the user's Account.
 
-![Workflow Templates](../../images/workflow-templates.png "Workflow Templates")
+![Workflow Templates](../../images/ui/workflow-templates.png "Workflow Templates")
 
 
 ### 2. Design Workflows 
@@ -85,7 +85,7 @@ Machine Learning allows to predict new material properties by applying previousl
 !!! note "Limited availability"
     Machine learning is a feature under active development and has a proof-of-concept status. Some items below may not be available yet. 
 
-![Machine Learning Flowchart](../../images/ml-flowchart.png "Machine Learning Flowchart")
+![Machine Learning Flowchart](../../images/ui/ml-flowchart.png "Machine Learning Flowchart")
 
 ### 2. Train New Model 
 
@@ -99,7 +99,7 @@ This option allows for the building of a predictive model using the linear regre
 
 "Data analytics" option gives the user the possibility to interact with data as explained below. 
 
-![Data Analytics Flowchart](../../images/data-flowchart.png "Data Analytics Flowchart")
+![Data Analytics Flowchart](../../images/ui/data-flowchart.png "Data Analytics Flowchart")
 
 ### 1. Upload/import 
 

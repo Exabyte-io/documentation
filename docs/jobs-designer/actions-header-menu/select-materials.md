@@ -6,7 +6,7 @@ The user may select one or multiple [materials](../../materials/overview.md) pre
 
 As a result, the "Select Materials" dialog exhibited in the image below is opened.
 
-![Select Materials](../../images/select-materials-dialog.png "Select Materials")
+![Select Materials](../../images/jobs-designer/select-materials-dialog.png "Select Materials")
 
 Here, the user can [select](../../entities-general/actions/select.md) one or multiple entries from the resulting list of materials, which is displayed in an [Explorer-type Interface](../../entities-general/ui/explorer.md). 
 
@@ -26,4 +26,4 @@ When multiple materials are selected the [Job Name Field](../header-menu.md#1-jo
 
 In the example animation below, we demonstrate how to select and import a series of III-V Semiconductors to the Job being currently designed. We then cycle through them under the [Materials Viewer](../materials-tab.md) with the help of the pager, in order to review their respective crystal structures.
 
-<img data-gifffer="/images/add-materials-designer.gif">
+<img data-gifffer="/images/jobs-designer/add-materials-designer.gif">

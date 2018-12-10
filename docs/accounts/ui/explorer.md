@@ -10,4 +10,4 @@ Clicking on an item in the Accounts Explorer, allows user to inspect the corresp
 
 The image below shows an example of a list of accounts being viewed under the Accounts Explorer interface.
 
-![Accounts Explorer](/images/account-explorer.png "Account Explorer")
+![Accounts Explorer](/images/accounts/account-explorer.png "Account Explorer")

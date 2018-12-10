@@ -21,7 +21,7 @@ After selecting materials, click the "import" icon <i class="zmdi zmdi-cloud-upl
 
 The aforementioned steps are demonstrated in the animation below.
 
-<img data-gifffer="/images/ImportMaterialsProjectMaterial.gif" />
+<img data-gifffer="/images/materials/ImportMaterialsProjectMaterial.gif" />
 
 ## Links
 

@@ -4,7 +4,7 @@ Users can log into the main Unix-based **Command Line Interface (CLI)** [^1] of 
 
 After logging in, the user is presented with the following **welcome screen** under the CLI interface, which includes some useful advices and instructions on how to operate the relevant commands.
 
-![CLI splash](/images/CLI-Welcome-Screen.png "CLI splash")
+![CLI splash](/images/cli/cli/CLI-Welcome-Screen.png "CLI splash")
 
 We explain the resource management system in its [dedicated section](../infrastructure/resource/overview.md), the accounting, software modules and commands outlined in the above visual are explained in sections mentioned below.
 

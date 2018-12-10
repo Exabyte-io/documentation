@@ -4,7 +4,7 @@ Jobs Explorer allows users to interact with the jobs. The features of Jobs Explo
 
 The image below shows how Jobs Explorer appears under typical circumstances. The general [entity actions](../../entities-general/actions/overview.md) as well as those [specific to Jobs](../actions/overview.md) originate from this interface.
 
-![Jobs Explorer Interface](/images/jobs-explorer.png "Jobs Explorer Interface")
+![Jobs Explorer Interface](/images/jobs/jobs-explorer.png "Jobs Explorer Interface")
 
 ## Status Indicators
 
@@ -14,7 +14,7 @@ An important property present in the items list is the [Status indicator](../sta
 
 Additional Job-specific columns that can be listed in Explorer include those ticked in the image below. They can be selected from the [Columns Selector](../../entities-general/ui/explorer.md#columns-selector).
 
-![Jobs Specific Properties](/images/jobs-properties.png "Jobs Specific Properties")
+![Jobs Specific Properties](/images/jobs/jobs-properties.png "Jobs Specific Properties")
 
 ### Application
 

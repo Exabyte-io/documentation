@@ -12,4 +12,4 @@ Running a Job changes its [status](../status.md) from "Pre-submission" to "Submi
 
 In the example below, we demonstrate how the status of a Job changes as described above when it is Run. A delay of some (5-10) seconds is incurred from the moment the Job is submitted to the moment it becomes active. Waiting times depend on the [queue category](../../infrastructure/resource/category.md) being considered.
 
-<img data-gifffer="/images/run-job.gif">
+<img data-gifffer="/images/jobs/run-job.gif">

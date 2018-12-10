@@ -21,7 +21,7 @@ Plane-wave Pseudopotential Density Functional Theory formalism as implemented in
 
 Below is an example visualization of a structure employed in this run.
 
-![High-Throughput Scalability Structure](../images/HighThroughputScalabilityStructure.png "High-Throughput Scalability Structure")
+![High-Throughput Scalability Structure](../images/benchmarks/HighThroughputScalabilityStructure.png "High-Throughput Scalability Structure")
  -->
 
 ## Inputs
@@ -104,7 +104,7 @@ Gamma
 
 High-performance computing resources were assembled on-demand using the infrastructure available at one of the public cloud vendors. For the first run, a total of 296 tasks (one-per-material) were submitted to exabyte.io cloud-scale resource-management system. Within 7 minutes after submission 296 compute nodes with 10,656 cores total were provisioned, configured and had compute tasks running on them.
 
-![High-Throughput Scalability](../images/HighThroughputScalability.png "High-Throughput Scalability")
+![High-Throughput Scalability](../images/benchmarks/HighThroughputScalability.png "High-Throughput Scalability")
 
 All tasks were finished within 38 hours from the start, with the shortest ones taking about 2 hours. The size of compute system was dynamically scaled with the number of active calculations. The total cost of the calculation was within a few thousand dollars (for comparison - the cost of buying 10,000 CPU can be estimated at several million dollars).
 

@@ -6,7 +6,7 @@ Entities of different [types](../../../entities-general/overview.md) can be assi
 
 Starting from the [Team Page](../../ui/team-page.md), [navigate](../../../ui/specific/tabs-navigator.md) to the appropriate entity tab among the ones highlighted below:
  
-![Team Entities](/images/team-entities.png "Team Entities")
+![Team Entities](/images/collaboration/team-entities.png "Team Entities")
 
 ## Open "Add Entity" page
 
@@ -22,7 +22,7 @@ The desired entries can be selected by ticking their corresponding checkboxes, a
 
 In the animation below, we add a material entity (crystalline silicon) to a "Test Team":
 
-<img data-gifffer="/images/add-entity-team.gif">
+<img data-gifffer="/images/collaboration/add-entity-team.gif">
 
 
 ## Remove Entities
@@ -35,5 +35,5 @@ When an entity is removed, none of the Team members will then be able to access 
 
 We now proceed to removing the silicon material added in the previous animation:
 
-<img data-gifffer="/images/remove-entity-team.gif">
+<img data-gifffer="/images/collaboration/remove-entity-team.gif">
 

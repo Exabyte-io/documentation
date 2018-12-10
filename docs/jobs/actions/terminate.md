@@ -8,4 +8,4 @@ This preliminary interruption can be performed at any time on an Active Job thro
 
 In the example below, we terminate an active Job, and the status changes correspondingly.
 
-<img data-gifffer="/images/terminate-job.gif">
+<img data-gifffer="/images/jobs/terminate-job.gif">

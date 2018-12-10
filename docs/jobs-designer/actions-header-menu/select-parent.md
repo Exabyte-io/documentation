@@ -8,7 +8,7 @@ In order to do so, the user should select the `Select Parent` option under the d
 
 The "Select Job" dialog is now displayed with the following appearance, which is based on [Jobs Explorer](../../jobs/ui/explorer.md) and thus supporting the corresponding [filter/search](../../entities-general/actions/search.md) functionality.
 
-![Select Job](../../images/select-job-dialog.png "Select Job")
+![Select Job](../../images/jobs-designer/select-job-dialog.png "Select Job")
 
 !!! warning "Criteria for Parent Job selection"
     Only Jobs that satisfy both of the following criteria are available for selection as "parents".
@@ -26,4 +26,4 @@ This returns the view to the main [Jobs Designer](../overview.md) interface, whe
 
 Here, we demonstrate how to prepend a parent total energy calculation, performed on the semiconductor GaAs, to a new band structure calculation being designed for the same material.
 
-<img data-gifffer="/images/add-parent-designer.gif">
+<img data-gifffer="/images/jobs-designer/add-parent-designer.gif">

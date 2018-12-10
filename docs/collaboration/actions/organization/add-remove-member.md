@@ -20,7 +20,7 @@ Any desired number of users can be selected by ticking their corresponding check
 
 The above steps  are summarized in the demonstration below, where we add three new users to our organization called "Example":
 
-<img data-gifffer="/images/organization-add-user.gif">
+<img data-gifffer="/images/collaboration/organization-add-user.gif">
 
 ## Remove Members 
 
@@ -32,4 +32,4 @@ Once a user is removed, he/she is no longer able to access data associated with 
 
 In the animation below, we remove the three members added previously above: 
 
-<img data-gifffer="/images/organization-remove-user.gif">
+<img data-gifffer="/images/collaboration/organization-remove-user.gif">

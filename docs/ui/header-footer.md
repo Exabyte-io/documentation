@@ -2,7 +2,7 @@
 
 The appearance and functionality of the header bar is illustrated below.
 
-![ui-header](../images/ui-header.png "UI header")
+![ui-header](../images/ui/ui-header.png "UI header")
 
 ## Left-hand Sidebar Trigger
 

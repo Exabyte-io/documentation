@@ -6,13 +6,13 @@ The Explorer Interface allows users to interact with entity [collections](../../
 
 The "Entity Items List" displays the contents of the corresponding [Account-owned entity collection](../../accounts/collections.md), in a table form. It allows users to execute [actions](../../entities-general/actions/overview.md) on multiple entities at once. This component is shown below for the case of Materials.
 
-<img src="/images/materials-list.png" >
+<img src="/images/entities-general/materials-list.png" >
 
 ## Sub-header
 
 The image below shows the location of the sub-header, also present at the bottom of the interface.
 
-<img src="/images/sub-header.png"/>
+<img src="/images/entities-general/sub-header.png"/>
 
 ### Columns Selector 
 
@@ -22,7 +22,7 @@ The table of displayed properties can be scrolled horizontally, by toggling the 
 
 The image below shows the location of both buttons within the sub-header. Viewable materials properties are also shown under the drop-down menu, as an example.
 
-<img src="/images/properties-dropdown.png"/>
+<img src="/images/entities-general/properties-dropdown.png"/>
 
 ### Toggle Reactive Updates
 
@@ -38,7 +38,7 @@ Pagination of the entity items list can be customized as follows.
 
 Firstly, the number of entity items to be shown under each page, out of their total number, can be selected. This is done from the drop-down menu emphasized in the image below, under the section labelled "Results per Page".
 
-<img src="/images/number-items.png"/>
+<img src="/images/entities-general/number-items.png"/>
 
 The above menu can also be used to navigate between the pages themselves, under the section labelled "Pages". If numerous pages are present, then only the ten closest to the one being currently viewed are shown.
 
@@ -60,19 +60,19 @@ The set of allowed actions is filtered per each entry according to its [type](..
 
 The location of both the actions toolbar and dropdown menus, within the Explorer interface, is clarified in the panels emphasized in the image below.
 
-<img src="/images/workflow-actions-menus.png"/>
+<img src="/images/entities-general/workflow-actions-menus.png"/>
 
 ## Search Bar
 
 Search Bar <i class="zmdi zmdi-search zmdi-hc-border"></i> is present in the main header, as highlighted in the image below. Users can search through the items listed in the entity collection following [this procedure](../actions/search.md).
 
-<img src="/images/search-bar-explorer.png"/>
+<img src="/images/entities-general/search-bar-explorer.png"/>
 
 ### Advanced Search
 
 Some entities offer the possibility to perform "Advanced" searches, such as in the case of [Materials](../../entities-general/actions/advanced-search.md). The appearance of the search bar can as a result expand below the header, as shown in the highlighted portion below.
 
-<img src="/images/search-advanced-explorer.png"/>
+<img src="/images/entities-general/search-advanced-explorer.png"/>
 
 ## Links
 

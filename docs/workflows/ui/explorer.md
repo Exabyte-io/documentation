@@ -4,7 +4,7 @@ Following the [general introduction](../../entities-general/ui/explorer.md) to t
 
 The image below shows an example of Workflows Explorer, from which [general](../../entities-general/actions/overview.md) or [workflow-specific](../actions/overview.md) actions can be executed.
 
-![Workflows Explorer Interface](../../images/updating-workflows.png "Workflows Explorer Interface")
+![Workflows Explorer Interface](../../images/workflows/updating-workflows.png "Workflows Explorer Interface")
 
 ## Up-to-date Indicators
 

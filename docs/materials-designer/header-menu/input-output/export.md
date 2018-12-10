@@ -6,7 +6,7 @@ The `Input/Output` menu offers the possibility to export the numerical crystallo
  
 Click on the `Export` <i class="zmdi-download zmdi-hc-border"></i> option, and an "Export Items" dialog will appear as highlighted in the figure below:
  
-<img src="/images/export-items.png"/>
+<img src="/images/materials-designer/export-items.png"/>
 
  
 ## Open The Export Dialog
@@ -23,7 +23,7 @@ Next, press the `OK` button, or press `Cancel` to revert to the previous screen.
 
 An example of export procedure is portrayed in the animation below. Here, we select a material (MgO2) from the list on the left-hand sidebar, and we export it to the local "Downloads" folder on our hard drive in POSCAR format. 
 
-<img data-gifffer="/images/ExportMaterialsDesigner.gif" />
+<img data-gifffer="/images/materials-designer/ExportMaterialsDesigner.gif" />
 
 
 ## Links

@@ -9,7 +9,7 @@ This page explains how to calculate electronic density of states [[1](#links)] u
 
 Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
 
-<img data-gifffer="/images/BandStep1.gif" />
+<img data-gifffer="/images/tutorials/tutorials/BandStep1.gif" />
 
 # Choose workflow
 
@@ -17,7 +17,7 @@ Density of states is calculated in conjunction with band structure calculation s
 
 Click on the animation below to view:
 
-<img data-gifffer="/images/DOSStep2.gif" />
+<img data-gifffer="/images/tutorials/tutorials/DOSStep2.gif" />
 
 ## Adjust kpoints
 
@@ -27,25 +27,25 @@ In QuantumEspresso, the band structure + DOS workflow has 5 units.  The first un
 
 We set the kpoint density to 11x11x11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure. <!-- TODO: set kpoint grid for the 4rth, non-self-consistent calculation, explain why it is beneficial -->
 
-<img data-gifffer="/images/DOSStep3.gif" />
+<img data-gifffer="/images/tutorials/tutorials/DOSStep3.gif" />
 
 # Submit job
 
 Before submitting the calculation, click on the "Go to Compute" button and examine the compute parameters.  This is a small structure so 1 core and 5 minutes are sufficient.  Click "No" when it asks if you want to save a duplicate material.
 
-<img data-gifffer="/images/DOSStep4.gif" />
+<img data-gifffer="/images/tutorials/tutorials/DOSStep4.gif" />
 
 # Monitor status
 
 As each unit in the workflow is executing, you can monitor its progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.
 
-<img data-gifffer="/images/DOSStep5.gif" />
+<img data-gifffer="/images/tutorials/tutorials/DOSStep5.gif" />
 
 # Examine results
 
 When all 5 units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the density of states as well as the partial density of states due to each atom in the structure as well as their s and p electron-like character.  By moving your cursor along each data series it will highlight which element electronic character that data series corresponds to.
 
-<img data-gifffer="/images/DOSStep6.gif" />
+<img data-gifffer="/images/tutorials/tutorials/DOSStep6.gif" />
 
 !!! note "Partial contributions"
     The numbers represent the order of the current orbital as included inside the pseudopotential, and <u>not</u> the principal quantum number.

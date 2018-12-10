@@ -8,4 +8,4 @@ The Web Terminal can subsequently be closed by clicking the ✕ button at its to
 
 Below, we show an animation on how to open and then close the Web Terminal.
 
-<img data-gifffer="/images/open-close-web-terminal.gif" />
+<img data-gifffer="/images/remote-connection/open-close-web-terminal.gif" />
