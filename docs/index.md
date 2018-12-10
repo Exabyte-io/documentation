@@ -6,7 +6,7 @@ Exabyte.io is an cloud-native accessible and collaborative environment for mater
 
 You may search for your topic of interest by using the input field at the top.
 
-The "Links" section below can direct reader to sources of more in-depth explanation about what we are building and why [^1] and example case studies [^2].
+The "Links" section below can direct readers to sources of more in-depth explanation about what we are building and why [^1] and example case studies [^2].
 
 ## Quickstart
 
