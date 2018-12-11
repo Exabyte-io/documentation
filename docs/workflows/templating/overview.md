@@ -1,6 +1,6 @@
 # Templating for Input Scripts
 
-We implement **templating** for the **generalized and automatic** generation of **input scripts** necessary for executing relevant simulations through the required simulation engine. This ensures, for example, that the same template can conveniently be applied to many different [materials](../../materials/overview.md) under the same [simulation job](../../jobs/overview.md).
+We implement **templating** for generalizing and automating the generation of **input scripts**, which are necessary for executing relevant simulations through the required [simulation engine](../../software/applications.md). This ensures, for example, that the same template can conveniently be applied to many different [materials](../../materials/overview.md) under the same [simulation job](../../jobs/overview.md).
 
 ## [Important Templating Concepts](concept.md)
 
@@ -20,7 +20,7 @@ We provide an example of input script templating for a materials science computa
 
 ## [User Interface Components](ui.md)
 
-The [User Interface components](ui.md) which are pertinent to setting templating options, for generalizing and automating the generation of input scripts during the [Design stage of a new Workflow](../../workflow-designer/overview.md), are reviewed [in this page](../../workflow-designer/unit-editor/input-templates.md).
+The [User Interface components](ui.md) which are pertinent to setting templating options, for the generation of input scripts during the [Design stage of a new Workflow](../../workflow-designer/overview.md), are reviewed [in this page](../../workflow-designer/unit-editor/input-templates.md).
 
 ## [Tutorials](../../tutorials/templating/overview.md)
 

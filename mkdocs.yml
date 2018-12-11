@@ -325,10 +325,6 @@ nav:
         - Overview:                                     workflows/overview.md
         - Bank:                                         workflows/bank.md
         - Default:                                      workflows/default.md
-        - User Interface:
-            - Explorer:                                 workflows/ui/explorer.md
-            - Designer:                                 workflow-designer/overview.md
-            - Viewer:                                   workflows/ui/viewer.md
         - Components:
             - Overview:                                 workflows/components/overview.md
             - Subworkflows:                             workflows/components/subworkflows.md
@@ -339,13 +335,17 @@ nav:
             - Workflows:                                workflows/data/workflows.md
             - Subworkflows:                             workflows/data/subworkflows.md
             - Units:                                    workflows/data/units.md
-        - Templates:
-            - Overview:                                 workflows/templates/overview.md
-            - Concept:                                  workflows/templates/concept.md
-            - Engine:                                   workflows/templates/engine.md
-            - Exabyte Conventions:                      workflows/templates/exabyte-conventions.md
-            - Example:                                  workflows/templates/examples.md
-            - UI Implementation:                        workflows/templates/ui.md
+        - Templating:
+            - Overview:                                 workflows/templating/overview.md
+            - Concept:                                  workflows/templating/concept.md
+            - Engine:                                   workflows/templating/engine.md
+            - Exabyte Conventions:                      workflows/templating/exabyte-conventions.md
+            - Example:                                  workflows/templating/examples.md
+            - UI Implementation:                        workflows/templating/ui.md
+        - User Interface:
+            - Explorer:                                 workflows/ui/explorer.md
+            - Designer:                                 workflow-designer/overview.md
+            - Viewer:                                   workflows/ui/viewer.md
         - Actions:
             - Overview:                                 workflows/actions/overview.md
             - Update:                                   workflows/actions/update.md

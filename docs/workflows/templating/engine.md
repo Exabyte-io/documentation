@@ -6,9 +6,9 @@ We allow for using Jinja templates specifically inside the input to individual [
 
 We introduce in this page the basics of the syntax employed in the Jinja template engine. An introductory Jinja tutorial can be found under Ref. [^3], complementing the contents of the present documentation page. The reader is also referred to the official documentation [^4].
 
-## Basic Jinja Syntax
+## Basic Syntax
 
-In the Jinja templating language, there exist a few kinds of delimiters. The default delimiters are configured following the general conventions of the **Jinja syntax** [^2], as explained in the list below.
+In the Jinja templating language, there exist a few kinds of delimiters. The default delimiters are configured following the general conventions of the **Jinja syntax** [^4], as explained in the list below.
 
 - `{% ... %}`: for **Statements**
 - `{{ ... }}`: for **Expressions** to print to the template output
@@ -33,7 +33,7 @@ The database of input variable definitions and associated values is called the *
 
 ### Variables Assignment
 
-Inside code blocks, the user can also **assign** values to variables using the **"set" statement**, such as in the following example, where `element_name` is the variable name and `"Al"` is its assigned value.
+Inside code blocks, the user can also **assign** values to variables using the **"set" statement**, such as in the following example, where `element_name` is the variable name and `"Al"` represents its assigned value.
 
 ```jinja2
 {% set element_name = "Al" %}
@@ -44,9 +44,11 @@ Inside code blocks, the user can also **assign** values to variables using the *
 Jinja additionally employs a **dotted notation** for importing variables from across different levels across nested context dictionaries. For example, in the case of the nested context shown below, the KPPRA variable would be imported from its parent keyword "kgrid" as shown in the ensuing line.
 
 ```jinja2
-"kgrid": {
-        "KPPRA": 6912,
-         }
+{
+    "kgrid": {
+        "KPPRA": 32000,
+    }
+}
 ```
 
 ```jinja2
@@ -63,9 +65,9 @@ A basic conditional "if/else" type of statement in Jinja would consist in the fo
 
 ```jinja2
 {% if truth_value %}
- This is true
+This is true
 {% else %}
- This is false
+This is false
 {% endif %}
 ```
 
@@ -77,7 +79,7 @@ We now create a template containing a "for-loop", as in the following example.
 
 ```jinja2
 {% for element in elements %}
-    {{ element }}
+{{ element }}
 {% endfor %}
 ```
 

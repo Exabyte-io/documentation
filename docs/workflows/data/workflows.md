@@ -2,7 +2,7 @@
 
 In order to organize and store the information about [workflows](../overview.md), we employ the **Exabyte Data Convention**, as explained [elsewhere](../../data-structured/overview.md) in this documentation.
 
-In the expandable section below, the user can find an example JSON representation of a [workflow](../overview.md). It contains a series of [subworkflows](../components/subworkflows.md), each of which contains a number of [units](../components/units.md) in turn. 
+In the expandable section below, the user can find the JSON representation of a [workflow](../overview.md) with a corresponding example. It contains a series of [subworkflows](../components/subworkflows.md), each of which contains a number of [units](../components/units.md) in turn. 
 
 <details markdown="1">
   <summary>
@@ -13,16 +13,7 @@ In the expandable section below, the user can find an example JSON representatio
 {!schema/workflow.json!}
 ```
 
-</details>
-
-An example of the above representation can be found below.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
-
-```json tab="Schema" 
+```json tab="Example" 
 {!example/workflow.json!}
 ```
 
@@ -40,7 +31,7 @@ For the case of physics-based [modeling engines](../../software/applications.md)
 
 ## Templating
 
-We allow for using [templates](../templates/overview.md) inside the input to individual units. In this way, we can decouple material-specific information from the workflow-specific one. More explanation can be found inside the [units documentation page](../components/units.md).
+We allow for using [templates](../templating/overview.md) inside the input to individual units. In this way, we can decouple material-specific information from the workflow-specific one. More explanation can be found inside the [units documentation page](../components/units.md).
 
 ## Properties
 

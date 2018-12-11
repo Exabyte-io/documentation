@@ -52,4 +52,4 @@ Note the usage of the aforementioned "Raw" filter, in order to make sure that no
 
 ## Links
 
-[^1]: [Swig template engine, Github Repository](http://node-swig.github.io/swig-templates/)
+[^1]: [Swig template engine, Official Documentation](http://node-swig.github.io/swig-templates/)

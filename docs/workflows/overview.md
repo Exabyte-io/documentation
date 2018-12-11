@@ -10,9 +10,9 @@ We introduce the computational sub-components of workflows, with particular atte
 
 The [Data](data/overview.md) section contains information about the structured data convention used to store workflows and their sub-components, with example JSON representations for each.
 
-## [Templating](templates/overview.md)
+## [Templating](templating/overview.md)
 
-**Templating** is an important concept which we apply to automate and generalize the mass-generation of simulation input scripts. It is described in detail in a [dedicated section](templates/overview.md) of the documentation.
+**Templating** is an important concept which we apply to automate and generalize the mass-generation of simulation input scripts. It is described in detail in a [dedicated section](templating/overview.md) of the documentation.
 
 ## [Bank](bank.md)
 
