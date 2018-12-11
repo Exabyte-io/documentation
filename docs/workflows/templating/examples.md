@@ -110,7 +110,7 @@ K_POINTS automatic
 
 </details>
 
-### Rendered 
+### Rendered Output
 
 #### Design-time
 
