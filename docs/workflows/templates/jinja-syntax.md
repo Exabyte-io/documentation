@@ -1,6 +1,10 @@
-# Jinja Template Engine
+# Template Engine
 
-We introduce in this page the basics of the syntax employed in the **Jinja** [template engine](concept.md). An introductory Jinja tutorial can be found under Ref. [^1], complementing the contents of the present documentation page. The reader is also referred to the official documentation [^2].
+In the context of our platform, we make use of **Jinja** [^1] [^2], a text-based **template engine** originally intended for web development, but which we use for automating the generation of input scripts for materials science computations. In this respect, templates are particularly resourceful when they are applied to many different [material entities](../../materials/overview.md) in turn under the same [Job](../../jobs/overview.md), potentially in conjunction with different input computational parameters for each material. 
+
+We allow for using Jinja templates specifically inside the input to individual [units](../components/units.md) comprised in a [subworkflow](../components/subworkflows.md) computation. In this way, we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively.
+
+We introduce in this page the basics of the syntax employed in the Jinja template engine. An introductory Jinja tutorial can be found under Ref. [^3], complementing the contents of the present documentation page. The reader is also referred to the official documentation [^4].
 
 ## Basic Jinja Syntax
 
@@ -91,12 +95,17 @@ If `elements = ['Bi', 'O', 'Cu']`, then the following output is rendered.
 
 Variables in Jinja can be modified by **filters**. Filters are separated from the variable by a **pipe symbol (|)**, and may have optional arguments passed to them in parentheses. Multiple filters can also be **chained**, meaning that the output of one filter is applied to the next.
 
-Jinja supports a set of **built-in filters**, which are reviewed in its documentation web-page [^3]. 
+Jinja supports a set of **built-in filters**, which are reviewed in its documentation web-page [^5]. 
 
 ## Links
 
-[^1]: [Jinja2 Templating Engine Tutorial, Website](https://medium.com/@jasonrigden/jinja2-templating-engine-tutorial-4bd31fb4aea3)
+[^1]: [Jinja Templating Engine, Official Website](http://jinja.pocoo.org/)
 
-[^2]: [Jinja Template Designer Documentation, Official Website](http://jinja.pocoo.org/docs/2.10/templates/)
+[^2]: [Wikipedia Jinja (template engine), Website](https://en.wikipedia.org/wiki/Jinja_(template_engine))
 
-[^3]: [Jinja Built-in Filters, Official Documentation](http://jinja.pocoo.org/docs/2.10/templates/#builtin-filters)
+[^3]: [Jinja2 Templating Engine Tutorial, Website](https://medium.com/@jasonrigden/jinja2-templating-engine-tutorial-4bd31fb4aea3)
+
+[^4]: [Jinja Template Designer Documentation, Official Website](http://jinja.pocoo.org/docs/2.10/templates/)
+
+[^5]: [Jinja Built-in Filters, Official Documentation](http://jinja.pocoo.org/docs/2.10/templates/#builtin-filters)
+

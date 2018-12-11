@@ -337,7 +337,7 @@ nav:
         - Templates:
             - Overview:                                 workflows/templates/overview.md
             - Concept:                                  workflows/templates/concept.md
-            - Jinja Syntax:                             workflows/templates/jinja-syntax.md
+            - Template Engine:                             workflows/templates/jinja-syntax.md
             - Exabyte Conventions:                      workflows/templates/exabyte-conventions.md
             - Example:                                  workflows/templates/examples.md
             - UI Implementation:                        workflows/templates/ui.md

@@ -49,3 +49,7 @@ NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %}
 ```
 
 Note the usage of the aforementioned "Raw" filter, in order to make sure that no Design-time rendering is performed in this case.
+
+## Links
+
+[^1]: [Swig template engine, Github Repository](http://node-swig.github.io/swig-templates/)
