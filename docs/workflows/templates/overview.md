@@ -4,7 +4,11 @@ We implement **templating** for the **generalized and automatic** generation of 
 
 ## Important Concepts for Templating
 
-We review and explain the general concept of templating in computer science in [this page](concept.md). Here, we also introduce the basic templating syntax that we adopt.
+We review and explain the general concept of templating in computer science in [this page](concept.md). 
+
+## Jinja Template Engine
+
+[Here](jinja-syntax.md), we also introduce the basic syntax of the templating language that we adopt.
 
 ## Exabyte Conventions
 
