@@ -325,19 +325,24 @@ nav:
         - Overview:                                     workflows/overview.md
         - Bank:                                         workflows/bank.md
         - Default:                                      workflows/default.md
-        - Data:                                         workflows/data.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
             - Designer:                                 workflow-designer/overview.md
             - Viewer:                                   workflows/ui/viewer.md
         - Components:
+            - Overview:                                 workflows/components/overview.md
             - Subworkflows:                             workflows/components/subworkflows.md
             - Units:                                    workflows/components/units.md
             - Maps:                                     workflows/components/maps.md
+        - Data:
+            - Overview:                                 workflows/data/overview.md
+            - Workflows:                                workflows/data/workflows.md
+            - Subworkflows:                             workflows/data/subworkflows.md
+            - Units:                                    workflows/data/units.md
         - Templates:
             - Overview:                                 workflows/templates/overview.md
             - Concept:                                  workflows/templates/concept.md
-            - Template Engine:                             workflows/templates/jinja-syntax.md
+            - Engine:                                   workflows/templates/engine.md
             - Exabyte Conventions:                      workflows/templates/exabyte-conventions.md
             - Example:                                  workflows/templates/examples.md
             - UI Implementation:                        workflows/templates/ui.md

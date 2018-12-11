@@ -1,6 +1,6 @@
 # Template Engine
 
-In the context of our platform, we make use of **Jinja** [^1] [^2], a text-based **template engine** originally intended for web development, but which we use for automating the generation of input scripts for materials science computations. In this respect, templates are particularly resourceful when they are applied to many different [material entities](../../materials/overview.md) in turn under the same [Job](../../jobs/overview.md), potentially in conjunction with different input computational parameters for each material. 
+In the context of our platform, we make use of **Jinja** [^1] [^2], a text-based [template engine](concept.md) originally intended for web development, but which we use for automating the generation of input scripts for materials science computations. In this respect, templates are particularly resourceful when they are applied to many different [material entities](../../materials/overview.md) in turn under the same [Job](../../jobs/overview.md), potentially in conjunction with different input computational parameters for each material. 
 
 We allow for using Jinja templates specifically inside the input to individual [units](../components/units.md) comprised in a [subworkflow](../components/subworkflows.md) computation. In this way, we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively.
 

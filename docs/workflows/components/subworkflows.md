@@ -2,34 +2,6 @@
 
 In the computational domain, we define a **Subworkflow** as a set of distinct **units** (elementary calculations) combined together in a flowchart (algorithm), in order to extract one or more specific [properties](../../properties/overview.md). A subworkflow must be specific to a particular [simulation engine](../../software/applications.md), [model](../../models/overview.md) and [method](../../methods/overview.md).
 
-## Example Structured Representation
-
-The JSON [structured representation](../../data-structured/overview.md) of subworkflows is contained in the expandable section below.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
-
-```json tab="Schema" 
-{!schema/workflow/subworkflow.json!}
-```
-
-</details>
-
-An example of the above representation can be found below.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
-
-```json tab="Schema" 
-{!example/workflow/subworkflow.json!}
-```
-
-</details>
-
 ## Model
 
 A **Model** is an entity that contains **scientifically valuable information** about the approximations used for a **simulation**. Models are the object of a [separate discussion](../../models/overview.md).

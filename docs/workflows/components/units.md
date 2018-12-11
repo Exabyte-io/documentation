@@ -2,34 +2,6 @@
 
 [Subworkflows](subworkflows.md) are composed of one or multiple **units**, or elementary calculations that can be executed in succession based on algorithmic conditions.
 
-## Example Structured Representation
-
-The JSON [structured representation](../../data-structured/overview.md) of units is contained in the expandable section below. For a description of unit input templating, the reader is referred to [this section](../templates/overview.md) of the documentation.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
-
-```json tab="Schema" 
-{!schema/workflow/unit.json!}
-```
-
-</details>
-
-An example of the above representation can be found below.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
-
-```json tab="Schema" 
-{!example/workflow/unit.json!}
-```
-
-</details>
-
 ## Unit types
 
 The following types of units are available to be combined together.

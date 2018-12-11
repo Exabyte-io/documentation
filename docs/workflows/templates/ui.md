@@ -1,6 +1,6 @@
 # Templating Implementation on User Interface
 
-The implementation of the [Jinja-powered](jinja-syntax.md) [Templating and Rendering](concept.md) of simulation input scripts can be found and customized by the user under the relevant section of the [Workflow Designer Interface](../../workflow-designer/unit-editor/input-templates.md) of our platform.
+The implementation of the [Jinja-powered](engine.md) [Templating and Rendering](concept.md) of simulation input scripts can be found and customized by the user under the relevant section of the [Workflow Designer Interface](../../workflow-designer/unit-editor/input-templates.md) of our platform.
 
 ## Editing Unit Input
 

@@ -4,7 +4,7 @@ Following the [general introduction](concept.md) to the templating concepts and 
 
 ## "Swig" Javascript Implementation of Jinja  
 
-In our implementation of templating, we make use of the **"Swig" template engine** [^1], which adds support for Javascript/ES6 to the [Jinja templating language](jinja-syntax.md).
+In our implementation of templating, we make use of the **"Swig" template engine** [^1], which adds support for Javascript/ES6 to the [Jinja templating language](engine.md).
 
 <!-- TODO by MM 
 Add further explanantions to how Swig works and which methods it supports.
@@ -12,7 +12,7 @@ Add further explanantions to how Swig works and which methods it supports.
 
 ## Contexts in our Platform
 
-As introduced [in this section](jinja-syntax.md#inserting-and-defining-variables), we define the **Context** of a template as a database of input variable definitions and associated values. There are two different contexts on our platform, the first related to the **[Web Interface](../../ui/overview.md)** and the second associated with the **Execution Stage** of the [simulation Job](../../jobs/overview.md) on the corresponding [computing clusters](../../infrastructure/clusters/overview.md). We shall henceforth refer to these two contexts as the **"Web Context"** and **"Execution Context"** respectively.
+As introduced [in this section](engine.md#inserting-and-defining-variables), we define the **Context** of a template as a database of input variable definitions and associated values. There are two different contexts on our platform, the first related to the **[Web Interface](../../ui/overview.md)** and the second associated with the **Execution Stage** of the [simulation Job](../../jobs/overview.md) on the corresponding [computing clusters](../../infrastructure/clusters/overview.md). We shall henceforth refer to these two contexts as the **"Web Context"** and **"Execution Context"** respectively.
 
 ### Availability of Variables in Contexts
 
