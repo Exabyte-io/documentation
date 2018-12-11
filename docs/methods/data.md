@@ -8,9 +8,7 @@ Below, the user can find an example JSON structured representation of a [Method]
 {!schema/workflow/subworkflow/model/method.json!}
 ```
 
-An example of the above representation can be found below.
-
-```json tab="Schema" 
+```json tab="Example" 
 {!example/workflow/subworkflow/model/method.json!}
 ```
 
