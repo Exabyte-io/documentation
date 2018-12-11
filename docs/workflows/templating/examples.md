@@ -110,7 +110,9 @@ K_POINTS automatic
 
 </details>
 
-## Rendered (Design-time)
+### Rendered 
+
+#### Design-time
 
 For Silicon FCC as a default material, the resulting text of the unit input, as rendered at Design-time from the above template and associated context, will be as shown in the following expandable section.
 
@@ -167,5 +169,7 @@ K_POINTS automatic
 ```
 
 </details>
+
+#### Execution Time
 
 In the rendered text of the unit above, there are still namelist flags that are not resolved, such as `{{JOB_WORK_DIR}}`. These are only rendered during the ensuing Execution-time, as explained [here](exabyte-conventions.md#"raw"-syntax-for-execution-variables-in-web-context).

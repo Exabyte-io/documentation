@@ -24,7 +24,7 @@ If only one [Material](../materials/overview.md) is present in Jobs Designer, th
 
 ### Multiple Materials
 
-If alternatively multiple [Materials](../materials/overview.md) have been added, then the use of templating logic is recommended for changing the input script parameters simultaneously for all entries. This action should be performed from the [Workflow Designer](../workflow-designer/overview.md) itself, instead of Jobs Designer. We explain the use of templating logic for rendering simulation input files [in this page](../workflows/templates/overview.md).
+If alternatively multiple [Materials](../materials/overview.md) have been added, then the use of templating logic is recommended for changing the input script parameters simultaneously for all entries. This action should be performed from the [Workflow Designer](../workflow-designer/overview.md) itself, instead of Jobs Designer. We explain the use of templating logic for rendering simulation input files [in this page](../workflows/templating/overview.md).
 
 ### See Preview for Each Material
 

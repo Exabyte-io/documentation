@@ -1,4 +1,4 @@
-# Structured Representation of Workflows and their Components
+# Structured Representations
 
 We introduce in this section the JSON structured representations for [Workflows](../overview.md), and for each of their sub-components. We base such representations on the **Exabyte Data Convention**, which is the object of a [separate discussion](../../data-structured/overview.md).
 
