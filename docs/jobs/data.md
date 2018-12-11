@@ -36,7 +36,7 @@ Below is an example JSON structured representation of a Job. It contains a singl
 | Keyword    |   Description      |  
 | :-------- |:----------- |
 | _material |  Link to the identifiers of [material(s)](../materials/data.md) used in this job   | 
-| workflow |  Content of the [Workflow](../workflows/data.md) employed in this job | 
+| workflow |  Content of the [Workflow](../workflows/data/workflows.md) employed in this job | 
 | compute | Computational parameters as explained in [this page](../infrastructure/compute/data.md). |
 | _project  | Link to the identifier of the [project](projects.md) containing the job  |
 | status |   Indication of the current [status](status.md) of the job |  
