@@ -40,8 +40,8 @@ For the case of physics-based [modeling engines](../software/applications.md), t
 
 ## Templating
 
-We allow for using [Jinja templates](templates/examples.md) inside the input to individual units. In this way, we can decouple material-specific information from the workflow-specific one. The latter information lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively. More explanation can be found inside the [units documentation page](components/units.md).
+We allow for using [templates](templates/overview.md) inside the input to individual units. In this way, we can decouple material-specific information from the workflow-specific one. More explanation can be found inside the [units documentation page](components/units.md).
 
 ## Properties
 
-The "Properties" section serves as an aggregator of all the [properties](../properties/overview.md) that are extracted at the workflow or subworkflow level. The "results" key serves the same purpose, but for the case of units.  
+The "Properties" section serves as an aggregator of all the [properties](../properties/overview.md) that are extracted at the workflow or subworkflow levels. The "results" key serves the same purpose, but for the case of units.  
