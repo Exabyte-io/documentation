@@ -1,10 +1,10 @@
 # Subworkflow
 
-In the computational domain, we define a **Subworkflow** as a set of distinct **units** (elementary calculations) combined together in flowchart (algorithm), in order to extract one or more specific [property](../../properties/overview.md). A subworkflow must be specific to a particular [simulation engine](../../software/applications.md), [model](../../models/overview.md) and [method](../../methods/overview.md).
+In the computational domain, we define a **Subworkflow** as a set of distinct **units** (elementary calculations) combined together in a flowchart (algorithm), in order to extract one or more specific [properties](../../properties/overview.md). A subworkflow must be specific to a particular [simulation engine](../../software/applications.md), [model](../../models/overview.md) and [method](../../methods/overview.md).
 
 ## Example Structured Representation
 
-The JSON [structured representation](../../data-structured/overview.md) of subworkflows in contained in the expandable section below.
+The JSON [structured representation](../../data-structured/overview.md) of subworkflows is contained in the expandable section below.
 
 <details markdown="1">
   <summary>

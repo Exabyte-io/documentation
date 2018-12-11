@@ -1,10 +1,10 @@
-# Sub/Workflow Units
+# Subworkflow Units
 
-Workflows are composed of **units**, or elementary calculations that can be executed in succession based on algorithmic conditions.
+[Subworkflows](subworkflows.md) are composed of one or multiple **units**, or elementary calculations that can be executed in succession based on algorithmic conditions.
 
-## Example Structured Represenation
+## Example Structured Representation
 
-The JSON [structured representation](../../data-structured/overview.md) of units in contained in the expandable section below.
+The JSON [structured representation](../../data-structured/overview.md) of units is contained in the expandable section below. For a description of unit input templating, the reader is referred to [this section](../templates/overview.md) of the documentation.
 
 <details markdown="1">
   <summary>
@@ -36,7 +36,7 @@ The following types of units are available to be combined together.
 
 ### Execution
 
-Used for computationally-heavy tasks, e.g. for a singular application of a physics-based simulation engine. For a description of the input templating, the reader is referred to [this page](../templates/examples.md).
+Used for computationally-heavy tasks, e.g. for a singular application of a physics-based simulation engine. 
 
 ### Processing
 
