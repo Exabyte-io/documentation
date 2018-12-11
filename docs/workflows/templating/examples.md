@@ -1,6 +1,6 @@
 # Templating Examples
 
-The present page contains examples of [templates](concept.md), implemented under the [Jinja templating language](engine.md), for automating the generation of input scripts for the [simulation engines](../../software/overview.md) currently supported on our platform.
+The present page contains examples of [templates](overview.md), implemented under the [Jinja templating language](engine.md), for automating the generation of input scripts for the [simulation engines](../../software/overview.md) currently supported on our platform.
 
 ## Quantum ESPRESSO Example
 
@@ -110,7 +110,7 @@ K_POINTS automatic
 
 </details>
 
-### Rendered 
+### Rendered Output
 
 #### Design-time
 
