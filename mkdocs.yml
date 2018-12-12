@@ -586,7 +586,7 @@ nav:
             - View Results:                          tutorials/jobs-cli/view-results.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
-            - Custom parameters:                     tutorials/templating/different-ecut.md
+            - Customizations:                        tutorials/templating/customizations.md
 
 
 
