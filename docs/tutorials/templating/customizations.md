@@ -137,13 +137,13 @@ We then read the POSCAR input file used by [VASP](../../software/modeling/vasp.m
 
 The lines containing the atomic coordinates and element chemical symbols within the POSCAR file are then read. This is done by splitting the file contents ensuing the "direct" line, which are then passed to the "coordinates" variable.
 
-### 5-16. Set Magnetic Moments
+### 5-17. Set Magnetic Moments
 
 The list of atomic coordinates defined previously is then looped over through the use of a [for loop](../../workflows/templating/engine.md#for-loops). 
 
 The element symbol indicated at the end of each coordinate line is isolated in turn (line 8) and assigned to the variable "element", which is checked against the aforementioned list of ferromagnetic elements (line 10) through a [conditional statement](../../workflows/templating/engine.md#conditionals). If a positive match is detected, this element is assigned a magnetic moment value of +/- 5 in an alternating order (line 11). Otherwise, in case the element is found to be non-ferromagnetic, it is given a magnetic moment of zero (line 15).
 
-### 17. Return Final Output
+### 18. Return Final Output
 
 The final result of the "MAGMOM" variable is returned once the template is rendered, as a list of magnetic moment values.
                                            
