@@ -102,7 +102,7 @@ Then the rendered output of the template would in this case consist in `ENCUT =6
 
 ### Animation
 
-In the animation below, we demonstrate how to switch between viewing the POSCAR structure file, to viewing the same template as above for setting the "ENCUT" parameter and finally its rendered output. The final result is `ENCUT =600` in this case since the material under investigation consists in the Aluminum-containing Al2N2 structure, shown in the above POSCAR file example.
+In the animation below, we demonstrate how to switch between viewing the POSCAR structure file, to viewing the same template as above for setting the "ENCUT" parameter, and finally its rendered output. The final result is `ENCUT =600` in this case since the material under investigation consists in the Aluminum-containing Al2N2 structure, shown in the above POSCAR file example.
 
 <img data-gifffer="/images/tutorials/encut_template.gif">
 
@@ -161,7 +161,7 @@ The final result of the "MAGMOM" variable is returned once the template is rende
                                            
 ### Example Output
 
-Let us consider the following hypothetical example of a material structure, inserted under the POSCAR format.
+Let us consider the following hypothetical example of a material structure (Cobalt Oxide), inserted under the POSCAR format.
 
 ```
 Cobalt Oxide
@@ -195,7 +195,7 @@ MAGMOM = 5 -5 5 -5 5 -5 5 -5 0 0 0 0 0
 
 ### Animation
 
-In the following animation, we demonstrate how to switch between viewing the POSCAR structure file, to viewing the same template as above for the INCAR input script and finally its rendered output containing the MAGMOM parameter.
+In the following animation, we demonstrate how to switch between viewing the POSCAR structure file for Cobalt Oxide, to viewing the template for adding the MAGMOM parameter to the INCAR input script, and finally its rendered output.
 
 <img data-gifffer="/images/tutorials/magmom_template.gif">
 
