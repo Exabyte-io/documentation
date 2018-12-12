@@ -102,7 +102,7 @@ Then the rendered output of the template would in this case consist in `ENCUT =6
 
 ### Animation
 
-In the animation below, we demonstrate how to switch between viewing the POSCAR structure file within the [Workflow Designer Interface](../../workflow-designer/overview.md), to viewing the same template as above for setting the "ENCUT" parameter, and finally its rendered output. The final result is `ENCUT =600` in this case since the material under investigation consists in the Aluminum-containing Al2N2 structure, shown in the above POSCAR file example.
+In the animation below, we demonstrate how to switch between viewing the POSCAR structure file within the [Workflow Designer Interface](../../workflow-designer/unit-editor/input-templates.md), to viewing the same template as above for setting the "ENCUT" parameter, and finally its rendered output. The final result is `ENCUT =600` in this case since the material under investigation consists in the Aluminum-containing Al2N2 structure, shown in the above POSCAR file example.
 
 <img data-gifffer="/images/tutorials/encut_template.gif">
 
@@ -195,7 +195,7 @@ MAGMOM = 5 -5 5 -5 5 -5 5 -5 0 0 0 0 0
 
 ### Animation
 
-In the following animation, we demonstrate how to switch between viewing the POSCAR structure file for Cobalt Oxide within [Workflow Designer](../../workflow-designer/overview.md), to viewing the template for adding the MAGMOM parameter to the INCAR input script, and finally its rendered output.
+In the following animation, we demonstrate how to switch between viewing the POSCAR structure file for Cobalt Oxide within [Workflow Designer](../../workflow-designer/unit-editor/input-templates.md), to viewing the template for adding the MAGMOM parameter to the INCAR input script, and finally its rendered output.
 
 <img data-gifffer="/images/tutorials/magmom_template.gif">
 
