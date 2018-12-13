@@ -12,6 +12,10 @@ This method is widely used as an effective algorithmic recipe for the computatio
 
 We introduce [here](actions.md) the action for uploading a custom Pseudopotential file to our platform via the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md). 
 
+## [Precision](precision.md)
+
+We discuss the parameters that limit the [numerical precision](../precision.md) of the plane-waves pseudopotential method [here](precision.md).
+
 ## Links
 
 [^1]: [Plane Waves as a Basis, Durham University Website](http://cmt.dur.ac.uk/sjc/thesis_dbj/node16.html)

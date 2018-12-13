@@ -36,14 +36,6 @@ An artificial thermal broadening of the Fermi surface of metallic materials is t
 
 The various implementations of this "electron smearing" technique, as well as other methods for treating electronic occupancies which might be more suitable for semiconductors and insulators, are reviewed starting from page 175 of Ref. [2] linked in [this page](../../software/modeling/vasp.md).
 
-## Precision
-
-At present, we limit the estimation of the [numerical precision](../precision.md) of plane-wave pseudopotential computations to the following list of parameters, as contained within the [data structure](../data.md) for methods.
-
-- Dimensions and shifts of the grid of k-points for [sampling the Brillouin Zone](../../models/auxiliary-concepts/reciprocal-space/sampling.md)
-- Plane-wave cutoff energy
-- Charge density cutoff energy
-
 ## Links
 
 For a more in-depth explanation of the theory cited above, the reader is referred to the general review literature on the plane-wave pseudopotential formulation of Density Functional Theory listed in the corresponding [references page](../../models/dft/references.md).

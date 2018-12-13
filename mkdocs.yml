@@ -186,8 +186,11 @@ nav:
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
         - Density Functional Theory:
+            - Overview:                                 models/dft/overview.md
             - Parameters:                               models/dft/parameters.md
+            - Accuracy:                                 models/dft/accuracy.md
             - References:                               models/dft/references.md
+
 
     - Methods:
         - Overview:                                     methods/overview.md
@@ -196,6 +199,7 @@ nav:
         - Plane-waves and Pseudopotentials:
             - Overview:                                 methods/pseudopotential/overview.md
             - Parameters:                               methods/pseudopotential/parameters.md
+            - Precision:                                methods/pseudopotential/precision.md
             - Actions:                                  methods/pseudopotential/actions.md
 
     - Software:
