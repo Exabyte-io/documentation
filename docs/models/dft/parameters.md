@@ -23,22 +23,24 @@ We support the following list of exchange-correlation functional flavours.
 
 ## Refiners
 
-Hybrid Screened Exchange (HSE) [^4] or GW approximation [^5] (G0W0, for example) can be used as example refiners for a Density Functional Theory model.  
+The following can be used as example refiners for the DFT model.
+
+- Hybrid Screened Exchange (HSE) [^4] 
+- GW approximation [^5] (G0W0, for example)   
 
 ## Modifiers
 
 DFT calculations might of might not treat the spin-orbit coupling interaction or magnetic interactions, which are both considered modifiers:
 
 - Spin-Orbit Coupling (soc), a relativistic quantum physical interaction of a particle's spin with its motion inside a potential [^6]. 
-
 - Magnetism (magn), resulting from the spontaneous polarization (parallel lining up) of the spins of conduction electrons in ferromagnetic metals, such as iron, nickel and cobalt, giving rise to a magnetic moment in these materials even in the absence of an externally applied magnetic field [^7].
 
 ## Accuracy 
 
 For the case of the DFT Model, the input parameters that affect the [accuracy](../accuracy.md) include the ones listed below.
 
-1. Electronic exchange and correlation functional used in the pseudopotentials 
-2. Type of the model applied (eg. LDA, GGA, LDA + U, GGA + U, HSE, LDA + GW, GGA + GW)
+- Electronic exchange and correlation functional used in the pseudopotentials 
+- Type of the model applied (eg. LDA, GGA, LDA + U, GGA + U, HSE, LDA + GW, GGA + GW)
 
 ## Links
 
