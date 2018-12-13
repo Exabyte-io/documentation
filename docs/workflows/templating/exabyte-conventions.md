@@ -4,11 +4,8 @@ Following the [general introduction](concept.md) to the templating concepts and 
 
 ## "Swig" Javascript Implementation of Jinja  
 
-In our implementation of templating, we make use of the **"Swig" template engine** [^1], which adds support for Javascript/ES6 to the [Jinja templating language](engine.md).
+In our implementation of templating, we make use of the **"Swig" template engine** [^1], which adds support for [Jinja templating language](engine.md) to Javascript environment. All Javascript-related prototypes such as Array [^2] and Object [^3] are supported, as long as the function does not require a callback (function) as one of its arguments (e.g. `Array.prototype.find()` would not work). 
 
-<!-- TODO by MM 
-Add further explanantions to how Swig works and which methods it supports.
--->
 
 ## Contexts in our Platform
 
@@ -53,3 +50,5 @@ Note the usage of the aforementioned "Raw" filter, in order to make sure that no
 ## Links
 
 [^1]: [Swig template engine, Official Documentation](http://node-swig.github.io/swig-templates/)
+[^2]: [Javascript Array Prototypes, MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[^3]: [Javascript Object Prototypes, MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
