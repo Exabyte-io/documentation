@@ -1,21 +1,19 @@
-# Pseudopotential Method
+# Plane-Waves Pseudopotential Method
 
-Pseudopotential method [^1] is widely used in the context of the DFT model. For the theoretical background please consult the link and references therein. 
+The **"Plane-waves Pseudopotential Method"** is based upon the implementation of **plane-waves as a basis set** for expanding the electronic ground-state wavefunction of the material [^1], as well as the adoption of **pseudopotentials** for encapsulating the core electrons of atoms and formulating inter-atomic interactions exclusively on the effects of the outermost valence electrons.
+ 
+This method is widely used as an effective algorithmic recipe for the computational formulation and implementation of the [DFT theoretical model](../../models/dft/parameters.md).  
 
-## [Pseudopotential types]()
+## [Parameters](parameters.md)
 
-The following types of pseudopotentials are supported: 
+[This page](parameters.md) contains a list of the fundamental computational parameters involved in the Plane-waves Pseudopotential Method.
 
-- Ultra-Soft (US)
-- Norm-Conserving (NC) 
-- Projector-Augmented Wave (PAW) 
+## [Actions](actions.md)
 
-## [Default Pseudopotential Files]()
-
-The subsection labelled "Pseudopotentials" inside the Method section allows the user to choose which particular pseudopotential file to implement as part of the current subworkflow computations. A default pseudopotential for the material under consideration (crystalline silicon by default, unless this original default material was changed by the user) is always included in any subworkflow that is to be applied to this material.
-
-A comprehensive set of default pseudopotentials for most elements in the periodic table is already included and made available for user selection on the Subworkflow Editor interface. See the corresponding [application pages](../../software/overview.md) for more details on this.
+We introduce [here](actions.md) the action for uploading a custom Pseudopotential file to our platform via the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/intro.md). 
 
 ## Links
 
-[^1]: [Wikipedia Pseudopotential, Website](https://en.wikipedia.org/wiki/Pseudopotential)
+[^1]: [Plane Waves as a Basis, Durham University Website](http://cmt.dur.ac.uk/sjc/thesis_dbj/node16.html)
+
+[^2]: [Wikipedia Pseudopotential, Website](https://en.wikipedia.org/wiki/Pseudopotential)
