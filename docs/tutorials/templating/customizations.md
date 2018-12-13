@@ -6,7 +6,7 @@ Templates and their respective Contexts can be entered under [Workflow Designer]
 
 ## Example: Setting Input Parameters for VASP
 
-The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Aluminum within their structures than for those than don't. In particular, ENCUT = 600 eV if Aluminium is present, or ENCUT = 450 eV otherwise. This variable is typically found in [VASP](../../software/modeling/vasp.md) input scripts, for defining the plane-wave cutoff energy characterizing the precision of the [DFT computation](../../models/dft/overview.md) to be executed on the material structure under investigation.                   
+The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Aluminum within their structures than for those than don't. In particular, ENCUT = 600 eV if Aluminium is present, or ENCUT = 450 eV otherwise. This variable is typically found in [VASP](../../software/modeling/vasp.md) input scripts, for defining the plane-wave cutoff energy characterizing the precision of the [DFT computation](../../models/dft/parameters.md) to be executed on the material structure under investigation.                   
 
 ```jinja2
 {% spaceless %}

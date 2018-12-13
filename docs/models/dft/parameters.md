@@ -1,22 +1,22 @@
 # Density Functional Theory
  
-Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [^2].
+Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [^2], as well as the references listed [in this page](references.md).
 
-## [Subtype]()
+## Subtype
 
-New subworkflows are by default based on the **Generalized Gradient Approximation** (GGA). **Local Density Approximation** is another commonly used subtype. 
+New subworkflows are by default based on the **Generalized Gradient Approximation** (GGA). **Local Density Approximation** is another commonly used model subtype. 
 
-## [Functional]()
+## Functional
 
-The particular default exchange-correlation functional is **Perdew, Burke and Ernzerhof** (PBE) [^3], which is widely used.
+The particular flavour of exchange-correlation functional implemented by default is the one due to **Perdew, Burke and Ernzerhof (PBE)** [^3], which is widely used.
 
 > NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods/pseudopotential/overview.md)
 
-## [Refiners]()
+## Refiners
 
-Hybrid Screened Exchange (HSE) [^4] or [^5] GW approximation (G0W0, for example) can be used as example refiners for a Density Functional Theory model.  
+Hybrid Screened Exchange (HSE) [^4] or GW approximation [^5] (G0W0, for example) can be used as example refiners for a Density Functional Theory model.  
 
-## [Modifiers]()
+## Modifiers
 
 DFT calculations might of might not treat the spin-orbit coupling interaction or magnetic interactions, which are both considered modifiers:
 
