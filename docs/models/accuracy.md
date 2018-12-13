@@ -2,11 +2,6 @@
 
 The **Accuracy** measures the degree of proximity between the result of a simulation to the results of a realistic experimental measurement.
 
-For the case of the [Density Functional Theory Model](dft/parameters.md), the input parameters that affect accuracy include the ones listed below.
-
-   1. Electronic exchange and correlation functional used in the pseudopotentials 
-   2. Type of the model applied (eg. LDA, GGA, LDA + U, GGA + U, HSE, LDA + GW, GGA + GW)
-
 !!! note "Example Accuracy for a Model"
     If we use Newtonian mechanics as the model, then the Accuracy would be limited by the relativistic effects - for example, for a spaceship traveling close to the speed of light it is important to introduce corrections beyond the Newtonian laws, because the accuracy of it does not match experimentally-found relativistic flight trajectories.
 

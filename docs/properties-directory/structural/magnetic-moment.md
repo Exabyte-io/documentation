@@ -8,7 +8,7 @@ The Magnetic Moment is a **[Vector and Physical](../../properties/classification
 
 ## Example
 
-The magnetic moment can be computed by inserting the corresponding [Workflow Modifier](../../workflow-designer/subworkflow-editor/overview.md).
+The magnetic moment can be computed by inserting the corresponding [Workflow Modifier](../../workflow-designer/subworkflow-editor/overview-tab.md).
 
 It is returned to the user as a set of vectors (one for each atom present in the material), as portrayed below, under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of bohr magnetons.
 

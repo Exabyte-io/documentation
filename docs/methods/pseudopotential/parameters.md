@@ -2,8 +2,6 @@
 
 We review in this page the most important computational parameters for defining [plane-wave pseudopotential calculations](overview.md), based upon the theoretical framework of the [DFT model](../../models/dft/parameters.md).
 
-The parameters presented herein all have an impact upon the numerical [precision](../precision.md) of the corresponding DFT-based computation.
-
 ## Wavefunction Cutoff
 
 In the global settings section titled "cutoffs" of the "Important Settings" tab under the [Subworkflow Editor](../../workflow-designer/subworkflow-editor/important-settings.md) interface, the user can enter the kinetic energy cutoff of the plane-waves used to represent the electronic wavefunctions. This cutoff value can be entered in the field under the label "wavefunction". It is expressed in the corresponding default energy units for the current [application](../../software/applications.md) of choice. For example, Rydbergs for [Quantum Espresso](../../software/modeling/quantum-espresso.md), and electronVolts (eV) for the [VASP](../../software/modeling/vasp.md) code.
@@ -26,7 +24,7 @@ The **type** of **pseudopotential** affects the way the inter-atomic interaction
 
 Please consult [this page](../../models/dft/parameters.md) for a review of the available pseudopotential **subtypes**, implementing different approximations for the **exchange-correlation functional**.
 
-The "Method" section inside the [Overview Tab](../../workflow-designer/subworkflow-editor/overview.md) of the [Subworkflow Editor interface](../../workflow-designer/subworkflow-editor/intro.md) allows the user to choose which particular pseudopotential file to implement as part of the current subworkflow computations. A comprehensive set of pseudopotentials for most elements in the periodic table is already included on our platform and made available for user selection.
+The "Method" section inside the [Overview Tab](../../workflow-designer/subworkflow-editor/overview-tab.md) of the [Subworkflow Editor interface](../../workflow-designer/subworkflow-editor/overview.md) allows the user to choose which particular pseudopotential file to implement as part of the current subworkflow computations. A comprehensive set of pseudopotentials for most elements in the periodic table is already included on our platform and made available for user selection.
 
 ## k-point Sampling
 
@@ -37,6 +35,14 @@ The k-points in the [reciprocal space](../../models/auxiliary-concepts/reciproca
 An artificial thermal broadening of the Fermi surface of metallic materials is typically necessary in order to obtain smoother electron occupation distributions than the original step function,  thus making the convergence of properties that need to be integrated across the Fermi surface more effective. 
 
 The various implementations of this "electron smearing" technique, as well as other methods for treating electronic occupancies which might be more suitable for semiconductors and insulators, are reviewed starting from page 175 of Ref. [2] linked in [this page](../../software/modeling/vasp.md).
+
+## Precision
+
+At present, we limit the estimation of the [numerical precision](../precision.md) of plane-wave pseudopotential computations to the following list of parameters, as contained within the [data structure](../data.md) for methods.
+
+- Dimensions and shifts of the grid of k-points for [sampling the Brillouin Zone](../../models/auxiliary-concepts/reciprocal-space/sampling.md)
+- Plane-wave cutoff energy
+- Charge density cutoff energy
 
 ## Links
 

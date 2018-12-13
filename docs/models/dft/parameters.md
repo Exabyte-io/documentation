@@ -1,14 +1,23 @@
 # Density Functional Theory
  
-Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties. The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [^2], as well as the references listed [in this page](references.md).
+Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties.
+ 
+The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the introductory literature on the subject [^2], as well as the references listed [in this page](references.md).
+
+We present in what follows the [parameters](../parameters.md) which apply specifically to the DFT **model type**.
 
 ## Subtype
 
-New subworkflows are by default based on the **Generalized Gradient Approximation** (GGA). **Local Density Approximation** is another commonly used model subtype. 
+We support the following **Subtypes**.
+
+- **Generalized Gradient Approximation (GGA)**, on which new subworkflows are based by default
+- **Local Density Approximation (LDA)**, another commonly used model subtype
 
 ## Functional
 
-The particular flavour of exchange-correlation functional implemented by default is the one due to **Perdew, Burke and Ernzerhof (PBE)** [^3], which is widely used.
+We support the following list of exchange-correlation functional flavours.
+
+- **Perdew, Burke and Ernzerhof (PBE)** [^3], the flavor implemented by default which is widely used.
 
 > NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods/pseudopotential/overview.md)
 
@@ -23,6 +32,13 @@ DFT calculations might of might not treat the spin-orbit coupling interaction or
 - Spin-Orbit Coupling (soc), a relativistic quantum physical interaction of a particle's spin with its motion inside a potential [^6]. 
 
 - Magnetism (magn), resulting from the spontaneous polarization (parallel lining up) of the spins of conduction electrons in ferromagnetic metals, such as iron, nickel and cobalt, giving rise to a magnetic moment in these materials even in the absence of an externally applied magnetic field [^7].
+
+## Accuracy 
+
+For the case of the DFT Model, the input parameters that affect the [accuracy](../accuracy.md) include the ones listed below.
+
+1. Electronic exchange and correlation functional used in the pseudopotentials 
+2. Type of the model applied (eg. LDA, GGA, LDA + U, GGA + U, HSE, LDA + GW, GGA + GW)
 
 ## Links
 
