@@ -178,20 +178,22 @@ nav:
 # CONCEPTS
     - Models:
         - Overview:                                     models/overview.md
+        - Accuracy:                                     models/accuracy.md
+        - Data:                                         models/data.md
+        - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            # kgrid, qgrid, igrid,
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
-            # kpath, qpath, ipath
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
         - Density Functional Theory:
-            - Overview:                                 models/dft/overview.md
+            - Parameters:                               models/dft/parameters.md
             - References:                               models/dft/references.md
 
     - Methods:
         - Overview:                                     methods/overview.md
         - Data:                                         methods/data.md
-        - Pseudopotential:
+        - Precision:                                    methods/precision.md
+        - Plane-waves and Pseudopotentials:
             - Overview:                                 methods/pseudopotential/overview.md
             - Parameters:                               methods/pseudopotential/parameters.md
             - Actions:                                  methods/pseudopotential/actions.md
