@@ -19,9 +19,9 @@ We offer an example of JSON structured representation for a model [here](data.md
 
 [This page](accuracy.md) explains the relevance of the concept of accuracy in the context of models, and stresses its difference from the notion of numerical precision which is instead relevant for methods only.
 
-## [Density Functional Theory](dft/parameters.md)
+## [Density Functional Theory](dft/overview.md)
 
-We implement **Density Functional Theory** as our primary model. The specific parameters which apply to this model are reviewed [in this page](dft/parameters.md), whereas a review of its theoretical background is offered in the references listed [here](dft/references.md).
+We implement **Density Functional Theory** as our primary model. The specific parameters which apply to this model are reviewed [in this page](dft/overview.md), whereas a review of its theoretical background is offered in the references listed [here](dft/references.md).
 
 ## [Auxiliary Concepts](auxiliary-concepts/reciprocal-space.md)
 
