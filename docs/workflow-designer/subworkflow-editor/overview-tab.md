@@ -16,7 +16,7 @@ Optionally, the check-box "Draft" on the left can be selected. In this case the 
 
 ## The "Application" Section
 
-The subsequent "Application" section in the "Overview" tab allows you to choose which computational engine (otherwise known as application). More on this [here](../../software/overview.md) respectively.
+The subsequent "Application" section in the "Overview" tab allows the user to choose the computational engine (otherwise known as [application](../../software/applications.md)) to apply under the present Workflow.
 
 ## The "Model" Section
 
@@ -28,7 +28,7 @@ We review the available Subtypes and Functional flavors applicable to the **Dens
 
 ### Refiners
 
-The "Refiners" drop-down menu present under the  interface offers the user the possibility to display additional calculated physical properties in separate dedicated columns, once the output of the workflow computation is visualized in [Jobs Explorer](../../jobs/ui/explorer.md). 
+The "Refiners" drop-down menu present under the interface offers the user the possibility to display additional calculated physical properties in separate dedicated columns, once the output of the workflow computation is visualized in [Jobs Explorer](../../jobs/ui/explorer.md). 
 
 Note that the inclusion of such refiners from within the Subworkflow Editor interface does not automatically adjust the input file content for the simulation engines involved (something that still needs to be done manually by editing the corresponding input script), but rather refers exclusively to the way the resulting properties are classified.
 
