@@ -26,7 +26,7 @@ The second button <i class="zmdi zmdi-more-vert zmdi-hc-border"></i> towards the
 
 ### [Select  Workflow](actions-header-menu/select-workflow.md)
 
-A **single** [Workflow](../workflows/overview.md) can also be selected and added to the Job, for performing computations on **all** materials selected in the above step. If the user wishes to execute multiple computational tasks sequentially, he/she should consider the possibility of creating a sequence of [Subworkflows](../workflow-designer/subworkflow-editor/overview.md) within the same Workflow instead.
+A **single** [Workflow](../workflows/overview.md) can also be selected and added to the Job, for performing computations on **all** materials selected in the above step. If the user wishes to execute multiple computational tasks sequentially, he/she should consider the possibility of creating a sequence of [Subworkflows](../workflow-designer/subworkflow-editor/overview-tab.md) within the same Workflow instead.
 
 Instructions on how to select Workflows from the account-owned collection and add them to the Job being designed can be found [here](actions-header-menu/select-workflow.md).
 

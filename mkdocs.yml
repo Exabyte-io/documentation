@@ -365,10 +365,10 @@ nav:
         - Sidebar:
             - Items List:                               workflow-designer/sidebar.md
         - Subworkflow Editor:
-            - Overview:                                 workflow-designer/subworkflow-editor/intro.md
+            - Overview:                                 workflow-designer/subworkflow-editor/overview.md
             - Actions Menu:                             workflow-designer/subworkflow-editor/actions-menu.md
             - Tabs:                                     workflow-designer/subworkflow-editor/tabs-general.md
-            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview-tab.md
             - Tabs > Important Settings:                workflow-designer/subworkflow-editor/important-settings.md
             - Tabs > Detailed View:                     workflow-designer/subworkflow-editor/detailed-view.md
             - Tabs > Compute:                           workflow-designer/subworkflow-editor/compute.md

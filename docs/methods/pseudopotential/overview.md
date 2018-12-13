@@ -10,7 +10,7 @@ This method is widely used as an effective algorithmic recipe for the computatio
 
 ## [Actions](actions.md)
 
-We introduce [here](actions.md) the action for uploading a custom Pseudopotential file to our platform via the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/intro.md). 
+We introduce [here](actions.md) the action for uploading a custom Pseudopotential file to our platform via the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md). 
 
 ## Links
 

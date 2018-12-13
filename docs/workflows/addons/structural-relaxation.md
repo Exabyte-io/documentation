@@ -42,7 +42,7 @@ Relaxations are usually classified by the number of degrees of freedom allowed t
 2. Cell shape - angles between lattice vectors
 3. Cell size - length of lattice vectors and/or parameters
 
-Default settings include the relaxation of all three above aspects of the crystal structure. Experienced users can open the input files to edit the exact behavior, as explained [in this page](../../workflow-designer/subworkflow-editor/intro.md). 
+Default settings include the relaxation of all three above aspects of the crystal structure. Experienced users can open the input files to edit the exact behavior, as explained [in this page](../../workflow-designer/subworkflow-editor/overview.md). 
 
 ## Constrained relaxation
     
