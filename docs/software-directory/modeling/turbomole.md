@@ -1,3 +1,12 @@
-# Turbomole
+# TURBOMOLE
 
-TURBOMOLE is an ab initio computational chemistry program that implements various quantum chemistry methods. It was initially developed by the group of Prof. Reinhart Ahlrichs at the University of Karlsruhe. In 2007, TURBOMOLE GmbH, founded by R. Ahlrichs, F. Furche, C. Hättig, W. Klopper, M. Sierka, and F. Weigend, took over the responsibility for the coordination of the scientific development of TURBOMOLE program, for which the company holds all copy and intellectual property rights. In 2018 David P. Tew joint the TURBOMOLE GmbH. Since 1987, this program is one of the useful tools as it involves in many fields of research including heterogeneous and homogeneous catalysis, organic and inorganic chemistry, spectroscopy as well as biochemistry. This can be illustrated by citation records of Ahlrich′s 1989 publication which is more than 5300 times as of 24 September 2016.[1] In the year 2014,[2] the second Turbomole article has been published. The number of citations from both papers indicates that the Turbomole's user base is expanding.
+TURBOMOLE is an ab initio computational chemistry program that implements various quantum chemistry methods.  Since 1987, this program has proved to be of great usefulness in many fields of research, including heterogeneous and homogeneous catalysis, organic and inorganic chemistry, spectroscopy, as well as biochemistry. 
+
+Full instructions on how TURBOMOLE can be operated and adapted to different research contexts can be consulted in its official website [^1].
+
+!!!info "Basic Demo version supported only"
+    The reader should note that at the moment we only support the freely-available "Demo" version of TURBOMOLE only, accessible via our [Remote Desktop Environment](../../remote-connection/remote-desktop.md).
+
+## Links
+
+[^1]: [TURBOMOLE, Official Website](http://www.turbomole.com/)
