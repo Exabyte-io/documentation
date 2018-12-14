@@ -1,0 +1,3 @@
+# NWChem
+
+NWChem is an ab initio computational chemistry software package which also includes quantum chemical and molecular dynamics functionality.[1][2][3] It was designed to run on high-performance parallel supercomputers as well as conventional workstation clusters. It aims to be scalable both in its ability to treat large problems efficiently, and in its usage of available parallel computing resources. NWChem has been developed by the Molecular Sciences Software group of the Theory, Modeling & Simulation program of the Environmental Molecular Sciences Laboratory (EMSL) at the Pacific Northwest National Laboratory (PNNL). The early implementation was funded by the EMSL Construction Project.

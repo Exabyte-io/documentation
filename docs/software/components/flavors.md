@@ -2,19 +2,7 @@
 
 The [executables](executables.md) for running [modeling applications](../applications.md) may in turn be composed of numerous distinct **Flavors**, implementing different forms and types of materials computations such as total ground-state energy calculations, structural relaxations or electronic bandstructure calculations.
 
-## Structured Representation of Flavors
-
-We provide an example of [structured representation](../../data-structured/overview.md) for an executable-specific flavor in what follows.
-
-```json tab="Schema" 
-{!schema/software/flavor.json!}
-```
-
-```json tab="Example" 
-{!example/software/flavor.json!}
-```
-
-## Example from Quantum ESPRESSO
+## Example 
 
 The "pw.x" executable for the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) modeling application, for example, allows for the execution of the following different types of calculation flavors [^1], to be specified in the executable's corresponding input script.
 
