@@ -9,7 +9,7 @@ In computational science, theoretical models are typically coupled with their co
 
 ## [Parameters](parameters.md)
 
-We review the parameters which affect the formulation of models [in this page](parameters.md).
+We review the parameters affecting the formulation of models [in this page](parameters.md).
 
 ## [Structured Representation](data.md)
 
@@ -25,4 +25,4 @@ We implement **Density Functional Theory** as our primary model. The specific pa
 
 ## [Auxiliary Concepts](auxiliary-concepts/reciprocal-space.md)
 
-For obvious reasons we make extensive use of the concept of **reciprocal space**. The notion of reciprocal lattice is introduced [in this section](auxiliary-concepts/reciprocal-space.md), whereas the **grids** of reciprocal lattice points, necessary for performing such calculations along the desired **paths** in reciprocal space, are described [here](auxiliary-concepts/reciprocal-space/sampling.md) and [here](auxiliary-concepts/reciprocal-space/paths.md) respectively.
+This sub-section contains auxiliary concepts related to Models. Naturally, we make extensive use of the concept of **reciprocal space**. The notion of reciprocal lattice is introduced [in this section](auxiliary-concepts/reciprocal-space.md).

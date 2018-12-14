@@ -1,10 +1,10 @@
-# Structured Representations
+# Structured Representations of Workflow Components
 
-We introduce in this section the JSON structured representations for [Workflows](../overview.md), and for each of their sub-components. We base such representations on the **Exabyte Data Convention**, which is the object of a [separate discussion](../../data-structured/overview.md).
+We introduce in this section the JSON representations for [Workflows](../overview.md), and for each of their sub-components. We base such representations on the data convention, which is the object of a [separate discussion](../../data-structured/overview.md).
 
 ## [Workflows](workflows.md)
 
-The structured representation of [workflows](../overview.md) is described [here](workflows.md), by way of an example.
+The structured representation of [workflows](../overview.md) is described [here](workflows.md), by way of example.
 
 ## [Subworkflow](subworkflows.md)
 
@@ -12,4 +12,4 @@ We introduce the representation of [subworkflow](../components/subworkflows.md) 
 
 ## [Units](units.md)
 
-Finally, the structured representation of compute [units](../components/units.md) is the object of a [separate discussion](units.md)
+The structured representation of compute [units](../components/units.md) is the object of a [separate discussion](units.md)

@@ -12,7 +12,7 @@ The [Data](data/overview.md) section contains information about the structured d
 
 ## [Templating](templating/overview.md)
 
-**Templating** is an important concept which we apply to automate and generalize the mass-generation of simulation input scripts. It is described in detail in a [dedicated section](templating/overview.md) of the documentation.
+**Templating** is an important concept which we apply to automate and generalize the mass-generation of simulation input files. It is described in detail in a [dedicated section](templating/overview.md) of the documentation.
 
 ## [Bank](bank.md)
 

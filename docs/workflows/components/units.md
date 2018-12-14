@@ -4,11 +4,11 @@
 
 ## Unit types
 
-The following types of units are available to be combined together.
+The following types of units are available.
 
 ### Execution
 
-Used for computationally-heavy tasks, e.g. for a singular application of a physics-based simulation engine. 
+Used for computationally-heavy tasks, e.g. for a singular run of a physics-based simulation engine. For physics-based [modeling engines](../../software/applications.md), the execution unit is the main one. It contains the information about the input parameters and runtime environment for the specific simulation engine.
 
 ### Processing
 
@@ -28,4 +28,4 @@ Used to make a decision on what should be the next unit in the workflow to be ex
 
 ### Map/Reduce
 
-Step that is replicated for a list of input parameters. For example: run a total energy calculation subworkflow using a list of materials such as "Li, Na, K, Rb, Cs, Fr" as inputs.
+Step that is replicated for a list of independent input parameters. For example: run a total energy calculation subworkflow using a list of materials such as "Li, Na, K, Rb, Cs, Fr" as inputs.
