@@ -238,13 +238,8 @@ nav:
             - P4VASP:                                   software-directory/analysis/p4vasp.md
             - VMD:                                      software-directory/analysis/vmd.md
         - Development Tools:
-            # Content overview with links
-            # Mention "CLI/Environment" page for the Environment
-            # e.g. gcc, ifort etc...
             - Compilers:                                software-directory/development/compilers.md
-            # e.g. openmpi, mkl, intelmpi
             - Libraries:                                software-directory/development/libraries.md
-            # vim, emacs, nano, less, link to CentOS 7.3 default software
             - Text Editors:                             software-directory/development/text-editors.md
 
 
