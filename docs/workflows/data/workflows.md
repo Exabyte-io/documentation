@@ -27,7 +27,7 @@ We use top-level workflow as a "container", and separate the details of each ind
 
 ## Execution Units 
 
-For the case of physics-based [modeling engines](../../software/modeling/applications.md), the execution unit is the main one. It contains the information about the input parameters and runtime environment for the specific simulation engine.
+For the case of physics-based [modeling engines](../../software/applications.md), the execution unit is the main one. It contains the information about the input parameters and runtime environment for the specific simulation engine.
 
 ## Templating
 

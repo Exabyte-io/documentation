@@ -202,37 +202,50 @@ nav:
             - Precision:                                methods/pseudopotential/precision.md
             - Actions:                                  methods/pseudopotential/actions.md
 
+
     - Software:
         - Overview:                                     software/overview.md
-        # Define the term applications: modeling software
         - Applications:                                 software/applications.md
+        - Components:
+            - Executables:                              software/components/executables.md
+            - Flavors:                                  software/components/flavors.md
+        - Classification:
+            - Overview:                                 software/classification/overview.md
+            - Analysis:                                 software/classification/analysis.md
+            - Development:                              software/classification/development.md
+            - Machine Learning:                         software/classification/machine-learning.md
+            - Modeling:                                 software/classification/modeling.md
+            - Scripting:                                software/classification/scripting.md
+
+
+    - Software Directory:
+        - Overview:                                     software-directory/overview.md
         - Modeling:
-            - Quantum ESPRESSO:                         software/modeling/quantum-espresso.md
-            - VASP:                                     software/modeling/vasp.md
-            - TurboMole:                                software/modeling/turbomole.md
-            - LAMMPS:                                   software/modeling/lammps.md
-            - NWChem:                                   software/modeling/nwchem.md
-            - CP2K:                                     software/modeling/cp2k.md
-            - Gromacs:                                  software/modeling/gromacs.md
+            - Quantum ESPRESSO:                         software-directory/modeling/quantum-espresso.md
+            - VASP:                                     software-directory/modeling/vasp.md
+            - TurboMole:                                software-directory/modeling/turbomole.md
+            - LAMMPS:                                   software-directory/modeling/lammps.md
+            - NWChem:                                   software-directory/modeling/nwchem.md
+            - CP2K:                                     software-directory/modeling/cp2k.md
+            - Gromacs:                                  software-directory/modeling/gromacs.md
         - Scripting:
-            - Shell:                                    software/scripting/shell.md
-            - Python:                                   software/scripting/python.md
+            - Shell:                                    software-directory/scripting/shell.md
+            - Python:                                   software-directory/scripting/python.md
         - Analysis & Visualization:
-            - pymatgen:                                 software/analysis/pymatgen.md
-            - VESTA:                                    software/analysis/vesta.md
-            - XCRYSDEN:                                 software/analysis/xcrysden.md
-            - P4VASP:                                   software/analysis/p4vasp.md
-            - VMD:                                      software/analysis/vmd.md
+            - pymatgen:                                 software-directory/analysis/pymatgen.md
+            - VESTA:                                    software-directory/analysis/vesta.md
+            - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
+            - P4VASP:                                   software-directory/analysis/p4vasp.md
+            - VMD:                                      software-directory/analysis/vmd.md
         - Development Tools:
             # Content overview with links
             # Mention "CLI/Environment" page for the Environment
-            - Overview:                                 software/development/overview.md
             # e.g. gcc, ifort etc...
-            - Compilers:                                software/development/compilers.md
+            - Compilers:                                software-directory/development/compilers.md
             # e.g. openmpi, mkl, intelmpi
-            - Libraries:                                software/development/libraries.md
+            - Libraries:                                software-directory/development/libraries.md
             # vim, emacs, nano, less, link to CentOS 7.3 default software
-            - Text Editors:                                software/development/libraries.md
+            - Text Editors:                             software-directory/development/text-editors.md
 
 
 # ENTITIES

@@ -26,7 +26,7 @@ The Total Energy of a Material is comprised of several **Energy Contributions**.
 
 ## Types of Contributions
 
-Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/parameters.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/modeling/applications.md) employed, as explained in what follows.
+Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/parameters.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, as explained in what follows.
 
 The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
 

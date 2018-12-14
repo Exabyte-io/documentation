@@ -1,6 +1,6 @@
 # Executables
 
-[Applications](applications.md) are typically run via the launching of their respective **executable binary files** [^1] (more simply referred to as **executables**), of which there may be just one or multiple.
+[Applications](../applications.md) are typically run via the launching of their respective **executable binary files** [^1] (more simply referred to as **executables**), of which there may be just one or multiple.
 
 ## Structured Representation of Executables
 
