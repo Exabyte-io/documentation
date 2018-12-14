@@ -24,7 +24,7 @@ For example, Jobs have **[Accounting](../accounts/overview.md)** set up for. Wor
 
 ## Other Items
 
-Such simulations can be performed with any of the available **[modeling Applications](../software/applications.md)**, implementing the supported **[theoretical Models](../models/overview.md)** and corresponding **[computational Methods](../methods/overview.md)**.
+Such simulations can be performed with any of the available **[modeling Applications](../software/modeling/applications.md)**, implementing the supported **[theoretical Models](../models/overview.md)** and corresponding **[computational Methods](../methods/overview.md)**.
 
 ## Data and Infrastructure
 

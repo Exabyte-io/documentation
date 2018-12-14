@@ -28,7 +28,7 @@ The desired number of computing nodes and the number of cores on each node (PPN 
 
 ## Advanced Options
 
-Further advanced options are offered in order to optimize the calculation. These depend on the simulation application (see the corresponding application [pages](../../software/overview.md) for more information). 
+Further advanced options are offered in order to optimize the calculation. These depend on the simulation application (see the corresponding application [pages](../../software-directory/overview.md) for more information). 
 
 Example improvements may include parallelization over the k-points of the crystal structure, over its band-structure or over the execution of Fast Fourier Transforms (FFT). The novice user will find that these options are normally better left unchanged from their default values. 
 

@@ -1,12 +1,12 @@
 # Running Jobs via Command Line Interface
 
-This page explains how to run a [job](../../jobs/overview.md) for [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../../jobs-cli/overview.md) before proceeding further with the present Tutorial.
+This page explains how to run a [job](../../jobs/overview.md) for [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../../jobs-cli/overview.md) before proceeding further with the present Tutorial.
  
 Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure.
 
 ## 1. Input File
 
-We start with preparing an **input file** for [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md). Below is an example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
+We start with preparing an **input file** for [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md). Below is an example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
 
 The material being considered in this particular example is a supercell of  "Strontium Zirconate" (SrZrO3), in its ground state equilibrium crystal structure with space group "Pnma" [^2]. The reader is referred to the official documentation for the "PWscf" module of Quantum ESPRESSO [^3] [^4] for a description of the keyword parameters contained here.
 

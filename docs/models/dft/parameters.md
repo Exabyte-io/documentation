@@ -1,6 +1,6 @@
 # Density Functional Theory Parameters
  
-Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties.
+Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software-directory/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties.
  
 The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the [introductory literature on the subject](references.md).
 

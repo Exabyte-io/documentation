@@ -3,11 +3,11 @@
 Examples of batch scripts for a few of the [queue types](../../infrastructure/resource/queues.md) available on our platform are given throughout the present page. The reader is referred to the documentation pages explaining the [Resource Manager Directives](directives.md) and [environment modules](../../cli/modules.md) for the explanation of the batch script contents presented herein.
 
 !!!tip "Template job scripts"
-    [Job templates](../../data-on-disk/directories.md#job-script-templates) directory that contains template job scripts for different [applications](../../software/applications.md).
+    [Job templates](../../data-on-disk/directories.md#job-script-templates) directory that contains template job scripts for different [applications](../../software/modeling/applications.md).
 
 ## Debug queue (D)
 
-This example requests 1 node with 2 processors (cores) for 10 minutes, in the Debug Queue for a sample [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) run.
+This example requests 1 node with 2 processors (cores) for 10 minutes, in the Debug Queue for a sample [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) run.
 
 ```bash
 #!/bin/bash
@@ -28,7 +28,7 @@ mpirun -np $PBS_NP pw.x -in pw.input
 
 ## On-demand regular (OR)
 
-This example requests 1 node and 16 cores for 10 minutes, on the OR [queue](../../infrastructure/resource/queues.md) for a sample [VASP](../../software/modeling/quantum-espresso.md) calculation.
+This example requests 1 node and 16 cores for 10 minutes, on the OR [queue](../../infrastructure/resource/queues.md) for a sample [VASP](../../software-directory/modeling/quantum-espresso.md) calculation.
 
 ```bash
 #!/bin/bash

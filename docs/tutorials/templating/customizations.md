@@ -6,7 +6,7 @@ Templates and their respective Contexts can be entered under [Workflow Designer]
 
 ## Example: Setting Input Parameters for VASP
 
-The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Aluminum within their structures than for those than don't. In particular, ENCUT = 600 eV if Aluminium is present, or ENCUT = 450 eV otherwise. This variable is typically found in [VASP](../../software/modeling/vasp.md) input scripts, for defining the plane-wave cutoff energy characterizing the precision of the [DFT computation](../../models/dft/parameters.md) to be executed on the material structure under investigation.                   
+The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Aluminum within their structures than for those than don't. In particular, ENCUT = 600 eV if Aluminium is present, or ENCUT = 450 eV otherwise. This variable is typically found in [VASP](../../software-directory/modeling/vasp.md) input scripts, for defining the plane-wave cutoff energy characterizing the precision of the [DFT computation](../../models/dft/parameters.md) to be executed on the material structure under investigation.                   
 
 ```jinja2
 {% spaceless %}
@@ -36,7 +36,7 @@ We begin the logic of our template by defining the element that needs a high pla
 
 ### 3. Read POSCAR File Contents
 
-We then read the POSCAR input file for [VASP](../../software/modeling/vasp.md), containing the numerical data defining the crystal structure, and assign the text contents of this file to the variable "poscar_string". Examples of POSCAR files are included at the end of this section.
+We then read the POSCAR input file for [VASP](../../software-directory/modeling/vasp.md), containing the numerical data defining the crystal structure, and assign the text contents of this file to the variable "poscar_string". Examples of POSCAR files are included at the end of this section.
 
 ### 4 - 6. Extract Elements Contained in Material
 
@@ -108,7 +108,7 @@ In the animation below, we demonstrate how to switch between viewing the POSCAR 
 
 ## Example: Setting Magnetic Moments of Ferromagnetic Elements
 
-The template code below automatically sets the value of magnetic moments for ferromagnetic elements present in a material structure to 5, and alternates the sign. Non-magnetic elements are instead set to zero. The rendered output of this template is suitable for a [VASP](../../software/modeling/vasp.md) simulation.
+The template code below automatically sets the value of magnetic moments for ferromagnetic elements present in a material structure to 5, and alternates the sign. Non-magnetic elements are instead set to zero. The rendered output of this template is suitable for a [VASP](../../software-directory/modeling/vasp.md) simulation.
                                           
 ```jinja2
 MAGMOM ={% spaceless %}
@@ -135,7 +135,7 @@ Each line number in the above block of statements is further explained in the en
 
 ### 1. Define MAGMOM Variable
 
-We begin by defining the "MAGMOM" variable [^2], which will be included in the input script for a [VASP](../../software/modeling/vasp.md) computation, within the "INCAR" input parameters file associated with this code.
+We begin by defining the "MAGMOM" variable [^2], which will be included in the input script for a [VASP](../../software-directory/modeling/vasp.md) computation, within the "INCAR" input parameters file associated with this code.
 
 ### 2. Define Ferromagnetic Elements
 
@@ -143,7 +143,7 @@ In the second line, we [set](../../workflows/templating/engine.md#variables-assi
 
 ### 3. Read POSCAR File Contents
 
-We then read the POSCAR input file used by [VASP](../../software/modeling/vasp.md), containing the numerical data defining the crystal structure under investigation. We assign the text contents of this structure file to the variable "poscar_string". 
+We then read the POSCAR input file used by [VASP](../../software-directory/modeling/vasp.md), containing the numerical data defining the crystal structure under investigation. We assign the text contents of this structure file to the variable "poscar_string". 
 
 ### 4. Read Atomic Coordinates
 
@@ -187,7 +187,7 @@ direct
 0.611256 0.388744 0.611256 O
 ```
 
-The rendered output of the above template for this particular case would be the following line, since Cobalt is ferromagnetic and Oxygen is not. This output line can be added to the "INCAR" input file for defining the [VASP](../../software/modeling/vasp.md) computational parameters.
+The rendered output of the above template for this particular case would be the following line, since Cobalt is ferromagnetic and Oxygen is not. This output line can be added to the "INCAR" input file for defining the [VASP](../../software-directory/modeling/vasp.md) computational parameters.
 
 ```
 MAGMOM = 5 -5 5 -5 5 -5 5 -5 0 0 0 0 0
