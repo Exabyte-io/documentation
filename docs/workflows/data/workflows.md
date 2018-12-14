@@ -1,4 +1,4 @@
-# Structured Representation of Workflows
+# Workflows: Structured Representation
 
 In order to organize and store the information about [workflows](../overview.md), we employ the **Exabyte Data Convention**, as explained [elsewhere](../../data-structured/overview.md) in this documentation.
 
@@ -24,10 +24,6 @@ There are a few notable points to emphasize from the example above.
 ## Nested data
 
 We use top-level workflow as a "container", and separate the details of each individual section of calculation inside a subworkflow.
-
-## Execution Units 
-
-For the case of physics-based [modeling engines](../../software/applications.md), the execution unit is the main one. It contains the information about the input parameters and runtime environment for the specific simulation engine.
 
 ## Templating
 

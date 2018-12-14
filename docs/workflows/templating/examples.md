@@ -1,17 +1,14 @@
-# Templating Examples
+# Template Examples
 
-The present page contains examples of [templates](overview.md), implemented under the [Jinja templating language](engine.md), for automating the generation of input scripts for the [simulation engines](../../software/overview.md) currently supported on our platform.
+The present page contains example(s) of [unit](../components/units.md) input [templates](overview.md), implemented using the [templating engine](engine.md), in order to generate the input files for the [simulation engines](../../software/overview.md) supported on our platform.
 
 ## Quantum ESPRESSO Example
 
-For example, the input file template shown in the expandable section below, for a basic [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) "self-consistent field" total-energy computation, contains data that will be different for different materials, such as the number of atoms (under the "nat" flag). 
+For example, the input file template shown in the expandable section below, for a sample [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculation. 
 
 ### Template
 
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
+The text below contains references to data that will be different for different materials, such as the number of atoms (`nat` flag).
 
 ```jinja2
 &CONTROL
@@ -57,14 +54,7 @@ K_POINTS automatic
 {% for d in kgrid.dimensions %}{{d}} {% endfor %}{% for s in kgrid.shifts %}{{s}} {% endfor %}
 ```
 
-</details>
-
 ### Context
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
 
 ```jinja2
 {
@@ -108,18 +98,11 @@ K_POINTS automatic
 }
 ```
 
-</details>
-
 ### Rendered Output
 
-#### Design-time
+#### Design-time Render
 
-For Silicon FCC as a default material, the resulting text of the unit input, as rendered at Design-time from the above template and associated context, will be as shown in the following expandable section.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
+For Silicon FCC as a default material, the resulting text of the unit input, will be as shown as below:
 
 ```fortran
 &CONTROL
@@ -168,8 +151,6 @@ K_POINTS automatic
 10 10 10 0 0 0 
 ```
 
-</details>
+#### Runtime Render
 
-#### Execution Time
-
-In the rendered text of the unit above, there are still namelist flags that are not resolved, such as `{{JOB_WORK_DIR}}`. These are only rendered during the ensuing Execution-time, as explained [here](exabyte-conventions.md#"raw"-syntax-for-execution-variables-in-web-context).
+In the rendered text of the unit above, there are still namelist flags that are not resolved, such as `{{JOB_WORK_DIR}}`, for example. These will be rendered during the Run time, as explained [here](exabyte-conventions.md#"raw"-syntax-for-execution-variables-in-web-context).

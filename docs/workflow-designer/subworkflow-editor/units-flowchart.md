@@ -26,4 +26,4 @@ Finally, new elementary units can be added to this overall flowchart by clicking
 
 ## Opening the Unit Editor
 
-Clicking on each unit box component of the flowchart allows the user to open the corresponding Unit Editor interface, and to inspect directly all the various input parameters and input script templates of the underlying unit elementary computation. The user is referred to [this part](../unit-editor.md) of the documentation for a detailed description of this Unit Editor interface.
+Clicking on each unit box component of the flowchart allows the user to open the corresponding Unit Editor interface, and to inspect directly all the various input parameters and input file templates of the underlying unit elementary computation. The user is referred to [this part](../unit-editor.md) of the documentation for a detailed description of this Unit Editor interface.

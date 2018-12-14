@@ -84,7 +84,7 @@ K_POINTS (automatic)
 3 3 3 1 1 1
 ```
 
-Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the complete input script is put together, as explained in what follows.
+Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the combined `run.sh` script is put together, as explained in what follows.
 
 We also need to copy the pseudopotential files into the current [working directory](../../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
 
@@ -282,9 +282,9 @@ The reader is referred to [this other Tutorial](view-results.md) for an explanat
 
 We summarize the above-mentioned steps in the following video. 
 
-Here, we begin by entering the [Command Line Interface](../../cli/overview.md) via the [Web Terminal](../../remote-connection/web-terminal.md) connection method. We then navigate to the directory containing the `run.sh` input script under the [Home Folder](../../infrastructure/clusters/directories.md) of `cluster-007`, where we submit it for execution. 
+Here, we begin by entering the [Command Line Interface](../../cli/overview.md) via the [Web Terminal](../../remote-connection/web-terminal.md) connection method. We then navigate to the directory containing the `run.sh` script under the [Home Folder](../../infrastructure/clusters/directories.md) of `cluster-007`, where we submit it for execution. 
 
-We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-status.md) on the selected cluster number "007" by entering the `watch qstat` command, for an automatically-refreshing version of `qstat`. Since only one lattice parameter was tested in this example animation for simplicity, only one job has been launched and is returned by `qstat` in this case (scanning over all three lattice parameters, as in the original input script shown above, would have correspondingly launched three distinct jobs).
+We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-status.md) on the selected cluster number "007" by entering the `watch qstat` command, for an automatically-refreshing version of `qstat`. Since only one lattice parameter was tested in this example animation for simplicity, only one job has been launched and is returned by `qstat` in this case (scanning over all three lattice parameters, as in the original script shown above, would have correspondingly launched three distinct jobs).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MBpd-yKUCM4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
