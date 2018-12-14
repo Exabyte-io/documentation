@@ -1,6 +1,6 @@
 # Density Functional Theory Parameters
  
-Our platform currently supports multiple widely used first-principles quantum computational engines (see [applications](../../software-directory/overview.md)). These are based on the Density Functional Theory (DFT) [^1] theoretical model, for calculating approximate solutions to Schrodinger's Equations and associated physical properties.
+Our platform currently supports multiple first-principles simulation engines (see [applications](../../software/applications.md)). These are based on the Density Functional Theory (DFT) [^1] model.
  
 The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the [introductory literature on the subject](references.md).
 
@@ -8,16 +8,16 @@ We present in what follows the [parameters](../parameters.md) which apply specif
 
 ## Subtype
 
-We support the following **Subtypes** [^1].
+We support the following **Subtypes**:
 
-- **Generalized Gradient Approximation (GGA)**, on which new subworkflows are based by default
-- **Local Density Approximation (LDA)**, another commonly used model subtype
+- Generalized Gradient Approximation [^1] (GGA) [^1] (default)
+- Local Density Approximation (LDA) [^1]
 
 ## Functional
 
-We support the following list of exchange-correlation functional flavours.
+We support the following list of exchange-correlation functionals.
 
-- **Perdew, Burke and Ernzerhof (PBE)** [^3], the flavor implemented by default which is widely used.
+- Perdew, Burke and Ernzerhof (PBE) [^3] (default).
 
 > NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods/pseudopotential/overview.md)
 

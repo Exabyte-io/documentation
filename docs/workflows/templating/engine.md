@@ -1,35 +1,14 @@
 # Template Engine
 
-In the context of our platform, we make use of **Jinja** [^1] [^2], a text-based [template engine](concept.md) originally intended for web development, but which we use for automating the generation of input scripts for materials science computations. In this respect, templates are particularly resourceful when they are applied to many different [material entities](../../materials/overview.md) in turn under the same [Job](../../jobs/overview.md), potentially in conjunction with different input computational parameters for each material. 
-
-We allow for using Jinja templates specifically inside the input to individual [units](../components/units.md) comprised in a [subworkflow](../components/subworkflows.md) computation. In this way, we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively.
-
-We introduce in this page the basics of the syntax employed in the Jinja template engine. An introductory Jinja tutorial can be found under Ref. [^3], complementing the contents of the present documentation page. The reader is also referred to the official documentation [^4].
+We make use of **Jinja** [^1] [^2], a text-based [template](concept.md) engine. We introduce in this page the basics of the syntax employed therein. An introductory Jinja tutorial can be found under Ref. [^3], complementing the contents of the present documentation page. The reader is also referred to the official documentation [^4].
 
 ## Basic Syntax
 
-In the Jinja templating language, there exist a few kinds of delimiters. The default delimiters are configured following the general conventions of the **Jinja syntax** [^4], as explained in the list below.
+The general conventions of the **Jinja syntax** [^4]:
 
 - `{% ... %}`: for **Statements**
 - `{{ ... }}`: for **Expressions** to print to the template output
-- `{# ... #}`: for **Comments** not included in the template output
-- `#  ... ##`: for **Line Statements**
-
-### Inserting and Defining Variables
-
-The following simple example illustrates the basic syntax behind the functioning of Jinja templating expressions for inserting variables, based on the use of pairs of curly braces mentioned above.
-
-```jinja2
-{{name}} has the chemical formula {{formula}}.
-```
-
-If name=`Silica` and formula=`SiO2`, then the templating engine will generate, or **Render**, the following **final output** after acting upon the above **template input**.
-
-```jinja2
-Silica has the chemical formula SiO2.
-```
-
-The database of input variable definitions and associated values is called the **Context** of the template, which is typically stored in the form of a **Dictionary** of keyword-value pairs. 
+- `{# ... #}`: for **Commentaries** not included in the template output
 
 ### Variables Assignment
 
@@ -38,6 +17,22 @@ Inside code blocks, the user can also **assign** values to variables using the *
 ```jinja2
 {% set element_name = "Al" %}
 ```
+
+### Inserting Variables
+
+The following simple example illustrates the basic syntax behind the functioning of Jinja templating expressions for inserting variables, based on the use of pairs of curly braces mentioned above.
+
+```jinja2
+{{name}} has the chemical formula {{formula}}.
+```
+
+If `name="Silica"` and `formula="SiO2"`, then the templating engine will generate, or render, the following final output after acting upon the above template input.
+
+```jinja2
+Silica has the chemical formula SiO2.
+```
+
+The input variable definitions and associated values are provided in the **Context** of the template. 
 
 ### Nested Context Dictionaries
 
@@ -71,11 +66,11 @@ This is false
 {% endif %}
 ```
 
-If `truth_value=True`, then the output once the above template is rendered will be `This is true`, since the first truth condition of the above statements block is met.
+If boolean `truth_value` resolves to `true`, then the output of the above template will be `This is true` and vice versa.
 
-### For-Loops
+### Loops
 
-We now create a template containing a "for-loop", as in the following example.
+We now create a template containing a "for" loop, as in the following example.
 
 ```jinja2
 {% for element in elements %}
