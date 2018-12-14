@@ -1,10 +1,10 @@
 # Templating Examples
 
-The present page contains examples of [templates](overview.md), implemented under the [Jinja templating language](engine.md), for automating the generation of input scripts for the [simulation engines](../../software/overview.md) currently supported on our platform.
+The present page contains examples of [templates](overview.md), implemented under the [Jinja templating language](engine.md), for automating the generation of input scripts for the [simulation engines](../../software-directory/overview.md) currently supported on our platform.
 
 ## Quantum ESPRESSO Example
 
-For example, the input file template shown in the expandable section below, for a basic [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) "self-consistent field" total-energy computation, contains data that will be different for different materials, such as the number of atoms (under the "nat" flag). 
+For example, the input file template shown in the expandable section below, for a basic [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) "self-consistent field" total-energy computation, contains data that will be different for different materials, such as the number of atoms (under the "nat" flag). 
 
 ### Template
 
