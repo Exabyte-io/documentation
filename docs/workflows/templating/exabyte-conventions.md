@@ -2,13 +2,9 @@
 
 Following the [general introduction](concept.md) to the templating concepts and language, we now review the specific aspects concerning its implementation in the context of our platform.
 
-## "Swig" Javascript Implementation of Jinja  
+## "Swig" Implementation of Jinja syntax
 
-In our implementation of templating, we make use of the **"Swig" template engine** [^1], which adds support for Javascript/ES6 to the [Jinja templating language](engine.md).
-
-<!-- TODO by MM 
-Add further explanantions to how Swig works and which methods it supports.
--->
+As explained in this [dedicated page](swig.md).
 
 ## Contexts in our Platform
 
@@ -49,7 +45,3 @@ NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %}
 ```
 
 Note the usage of the aforementioned "Raw" filter, in order to make sure that no Design-time rendering is performed in this case.
-
-## Links
-
-[^1]: [Swig template engine, Official Documentation](http://node-swig.github.io/swig-templates/)

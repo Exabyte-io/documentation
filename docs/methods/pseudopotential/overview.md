@@ -1,6 +1,6 @@
 # Plane-Waves Pseudopotential Method
 
-The **"Plane-waves Pseudopotential Method"** is based upon the implementation of **plane-waves as a basis set** for expanding the electronic ground-state wavefunction of the material [^1], as well as the adoption of **pseudopotentials** for encapsulating the core electrons of atoms and formulating inter-atomic interactions exclusively on the effects of the outermost valence electrons.
+The Plane-waves Pseudopotential Method is based upon the implementation of plane-waves as a basis set for representing the electronic wavefunctions of a material [^1], as well as the adoption of pseudopotentials [^2].
  
 This method is widely used as an effective algorithmic recipe for the computational formulation and implementation of the [DFT theoretical model](../../models/dft/parameters.md).  
 

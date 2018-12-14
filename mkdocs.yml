@@ -354,7 +354,7 @@ nav:
             - Concept:                                  workflows/templating/concept.md
             - Engine:                                   workflows/templating/engine.md
             - Exabyte Conventions:                      workflows/templating/exabyte-conventions.md
-            - Example:                                  workflows/templating/examples.md
+            - Examples:                                 workflows/templating/examples.md
             - UI Implementation:                        workflows/templating/ui.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
@@ -600,8 +600,8 @@ nav:
             - View Results:                          tutorials/jobs-cli/view-results.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
-            - Customizations:                        tutorials/templating/customizations.md
-
+            - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
+            - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
 
 
 # TUTORIALS AND EXAMPLES
