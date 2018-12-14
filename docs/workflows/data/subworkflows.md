@@ -1,11 +1,6 @@
-# Structured Representation of Subworkflows
+# Subworkflows: Structured Representation
 
-The JSON [structured representation](../../data-structured/overview.md) of [subworkflows](../components/subworkflows.md), together with an example, is contained in the expandable section below.
-
-<details markdown="1">
-  <summary>
-     Expand to view
-  </summary> 
+The JSON [structured representation](../../data-structured/overview.md) of [subworkflows](../components/subworkflows.md), together with an example, is contained below.
 
 ```json tab="Schema" 
 {!schema/workflow/subworkflow.json!}
@@ -14,5 +9,3 @@ The JSON [structured representation](../../data-structured/overview.md) of [subw
 ```json tab="Example" 
 {!example/workflow/subworkflow.json!}
 ```
-
-</details>

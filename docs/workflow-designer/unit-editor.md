@@ -32,6 +32,6 @@ This section permits the user to select, under the corresponding "Next" drop-dow
 
 ## Unit input templates
 
-The final section at the bottom of the Unit Editor interface is explained in detail in its own [dedicated documentation page](unit-editor/input-templates.md), due to the rather complex nature of the input script templates contained there.
+The final section at the bottom of the Unit Editor interface is explained in detail in its own [dedicated documentation page](unit-editor/input-templates.md), due to the rather complex nature of the input file templates contained there.
 
 

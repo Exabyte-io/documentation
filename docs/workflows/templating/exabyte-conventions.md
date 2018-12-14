@@ -2,13 +2,9 @@
 
 Following the [general introduction](concept.md) to the templating concepts and language, we now review the specific aspects concerning its implementation in the context of our platform.
 
-## "Swig" Javascript Implementation of Jinja  
+## "Swig" Implementation of Jinja syntax
 
-In our implementation of templating, we make use of the **"Swig" template engine** [^1], which adds support for Javascript/ES6 to the [Jinja templating language](engine.md).
-
-<!-- TODO by MM 
-Add further explanantions to how Swig works and which methods it supports.
--->
+We make use of the **"Swig" template engine** [^1], which adds support for [Jinja syntax](engine.md) within a Javascript/ES6 environment. All Javascript-related prototypes such as *Array* [^2] and *Object* [^3] are supported, as long as the function does not require a callback (function) as one of its arguments (e.g. `Array.prototype.find()` would not work). 
 
 ## Contexts in our Platform
 
@@ -24,7 +20,7 @@ The Web Context on the other hand has access to all other available variables, s
 
 The "Raw" filter syntax is required when referring to the Execution variables under the "Web Context". This is necessary for preventing the Web Interface from rendering these variables during the **Design-time rendering**, given that such variables are only available during the ensuing **Execution-time rendering** (Design rendering first occurs during the [job design](../../jobs-designer/overview.md) stage, where multiple materials can be selected within a single job design session).
 
-Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) input script template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
+Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
 
 ```jinja2
 pseudo_dir = {% raw %}'{{ JOB_WORK_DIR }}/pseudo'{% endraw %}
@@ -53,3 +49,5 @@ Note the usage of the aforementioned "Raw" filter, in order to make sure that no
 ## Links
 
 [^1]: [Swig template engine, Official Documentation](http://node-swig.github.io/swig-templates/)
+[^2]: [Javascript Array Prototypes, MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+[^3]: [Javascript Object Prototypes, MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)

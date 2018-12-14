@@ -2,7 +2,7 @@
 
 # Convergence algorithms
 
-This feature is accessible as a stand-alone workflow or as an add-on / modifier to an existing subworkflow during in [Wokflow Designer](../../workflow-designer/overview.md).
+This feature is accessible as a stand-alone workflow or as an add-on / modifier to an existing subworkflow in [Wokflow Designer](../../workflow-designer/overview.md).
 
 ## Example algorithm
 

@@ -7,7 +7,7 @@ A theoretical [model](../models/overview.md) may have multiple **Methods**, or c
 
 ## [Structured Representation](data.md)
 
-We offer an example of JSON structured representation for a method [here](data.md).
+We explain structured representation of a method [here](data.md).
 
 ## [Precision](precision.md)
 
