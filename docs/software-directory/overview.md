@@ -1,4 +1,8 @@
+# List of Available Software
 
+We list in the present page the [software](../software/overview.md) which is made available to users on our platform, and which can be accessed via the appropriate [connection method](../remote-connection/overview.md). 
+
+The reader is referred to the short introductory pages dedicated to each of the software listed here, which can be accessed by clicking the links contained throughout the rest of this section. Each one of these dedicated pages also contains references to the relevant documentation websites and/or documents, explaining the operations and functioning of the corresponding software in detail.
 
 ## Modeling Applications
 
@@ -16,6 +20,9 @@ The platform currently offers the choice between the following modeling software
 
 > * VASP is available for current licensees and on-demand for users with academic affiliations
 
+!!!info "Loading Modeling Applications via Command Line Interface"
+    We package modeling software available via Command Line Interface as pre-compiled [modules](../cli/modules.md). Instructions on how such modules can be loaded and made available for use can be found [here](../cli/actions/modules-actions.md).
+
 ## Structural Analysis and Visualization Tools
 
 ### Graphical
@@ -27,7 +34,10 @@ We support the following structural analysis and visualization tools through a [
 | [VMD](analysis/vmd.md) | 1.9.3 | Available through remote desktop |
 | [XCRYSDEN](analysis/xcrysden.md) |  1.5.60 | Available through remote desktop |
 | [VESTA](analysis/vesta.md)  | 3.3.8 | Available through remote desktop |
-| [P4VASP](analysis/p4vasp.md) |  0.3.30 |  |
+| [P4VASP](analysis/p4vasp.md) |  0.3.30 | Available through remote desktop |
+
+!!!info "Opening graphical software in remote desktop"
+    An example on how to open a graphical structural visualization tool in our remote desktop environment is provided [under this page](../remote-connection/actions-rd/open-app.md).
 
 ### Python-based
 

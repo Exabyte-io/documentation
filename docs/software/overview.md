@@ -13,3 +13,7 @@ We introduce the concepts of an [application](applications.md), and of its const
 ## Classification
 
 We classify software into a set of distinct categories, as narrated [in this section](classification/overview.md) of the documentation.
+
+## Data
+
+We provide a list of [JSON-based structured representations](../data-structured/overview.md) for applications, and for each of their components/categories, [in this page](data.md).

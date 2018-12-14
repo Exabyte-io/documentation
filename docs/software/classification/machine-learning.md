@@ -4,18 +4,6 @@ Machine learning (ML) is the study of algorithms and statistical models that com
 
 In its most basic form, a machine learning algorithm could consist in the fitting or interpolation of a set of data points, with the objective of extrapolating the resulting model (fitting function) to predict new realistic data points that were not originally calculated.
 
-## Exabyte Machine Learning Engine
-
-We have reproduced below the [structured representation](../../data-structured/overview.md) for our own Exabyte Machine Learning Engine. 
-
-```json tab="Schema" 
-{!schema/software/ml/exabyteml.json!}
-```
-
-```json tab="Example" 
-{!example/software/ml/exabyteml.json!}
-```
-
 ## Links 
 
 [^1]: [Wikipedia Machine learning, Website](https://en.wikipedia.org/wiki/Machine_learning)

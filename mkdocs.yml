@@ -206,6 +206,7 @@ nav:
     - Software:
         - Overview:                                     software/overview.md
         - Applications:                                 software/applications.md
+        - Data:                                         software/data.md
         - Components:
             - Executables:                              software/components/executables.md
             - Flavors:                                  software/components/flavors.md
@@ -232,7 +233,6 @@ nav:
             - Shell:                                    software-directory/scripting/shell.md
             - Python:                                   software-directory/scripting/python.md
         - Analysis & Visualization:
-            - pymatgen:                                 software-directory/analysis/pymatgen.md
             - VESTA:                                    software-directory/analysis/vesta.md
             - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
             - P4VASP:                                   software-directory/analysis/p4vasp.md
