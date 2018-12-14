@@ -8,7 +8,7 @@ Our Remote Desktop environment is based on the CentOS Linux distribution [^1] [^
 
 ## Available Analysis Software
 
-The set of **Analysis and Visualization Software** presented [here](../software-directory/analysis/overview.md) is available under the Remote Desktop, in their Graphical User Interface versions. 
+The set of **Analysis and Visualization Software** presented [here](../software-directory/overview.md) is available under the Remote Desktop, in their Graphical User Interface versions. 
 
 We explain how to open and launch such analysis software [in this page](actions-rd/open-app.md). An example of the appearance of the Remote Desktop interface is shown in the image below, where the [VESTA](../software-directory/analysis/vesta.md) option under the corresponding access menu is highlighted.
 

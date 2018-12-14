@@ -2,14 +2,14 @@
 
 ## Modeling Applications
 
-The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/modeling/applications.md)**. Some of these applications (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through [command line terminal connection](../cli/overview.md) only. Click on the name of the application below to navigate to the corresponding part of the documentation.
+The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/applications.md)**. Some of these applications (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through [command line terminal connection](../cli/overview.md) only. Click on the name of the application below to navigate to the corresponding part of the documentation.
 
 | Name    |  Version(s)      | Notes      |
 | :-------- |:----------- |:------------- |
 | [Quantum ESPRESSO](modeling/quantum-espresso.md) | 5.1-6.0 | Fully integrated |
 | [VASP](modeling/vasp.md)      | 5.3.5-5.4.4 | Fully integrated (*) |
 | [LAMMPS](modeling/lammps.md)    | 11-2016 | Available through command line |
-| [NWChem](mdeling/nwchem.md)    | 6.6     | Available through command line |
+| [NWChem](modeling/nwchem.md)    | 6.6     | Available through command line |
 | [CP2K](modeling/cp2k.md)      | 4.1     | Available through command line |
 | [GROMACS](modeling/gromacs.md) |        | Available through command line |
 | [Turbomole](modeling/turbomole.md) | 7.0     | Available through remote desktop |
@@ -24,10 +24,10 @@ We support the following structural analysis and visualization tools through a [
 
 | Name      |  Version(s) | Notes         |
 | :-------- |:----------- |:------------- |
-| [VMD](vmd.md) | 1.9.3 | Available through remote desktop |
-| [XCRYSDEN](xcrysden.md) |  1.5.60 | Available through remote desktop |
-| [VESTA](vesta.md)  | 3.3.8 | Available through remote desktop |
-| [P4VASP](p4vasp.md) |  0.3.30 |  |
+| [VMD](analysis/vmd.md) | 1.9.3 | Available through remote desktop |
+| [XCRYSDEN](analysis/xcrysden.md) |  1.5.60 | Available through remote desktop |
+| [VESTA](analysis/vesta.md)  | 3.3.8 | Available through remote desktop |
+| [P4VASP](analysis/p4vasp.md) |  0.3.30 |  |
 
 ### Python-based
 
@@ -39,4 +39,4 @@ Our platform includes support for two widely-used scripting languages, [shell sc
 
 ## Development
 
-Users of our [Command Line Interface](../cli/overview.md) have at their disposal a comprehensive set of development [compilers](development/compilers.md) and [libraries](development/libraries.md).
+Users of our [Command Line Interface](../cli/overview.md) have at their disposal a comprehensive set of development [compilers](development/compilers.md) and [libraries](development/libraries.md), as well as of [text editors](development/text-editors.md) for inspecting or editing the relevant scripts and simulation files.
