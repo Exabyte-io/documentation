@@ -6,6 +6,9 @@ The underlying theoretical model is Density Functional Theory (DFT), but the cod
 
 Complete information and documentation about the VASP code can be found in its corresponding website [^1]. 
 
+!!!warning "License Requirements"
+    VASP is a proprietary software, and as such it requires a license in order to be operated. All users who would like to use this code are advised to send us a [support request](../../ui/support.md) so that we can check their existing licenses. For academic users, a free usage of VASP can potentially be negotiated. 
+
 ## Default settings
 
 ### Default Pseudopotentials

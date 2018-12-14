@@ -15,7 +15,7 @@ The "pw.x" executable for the [Quantum ESPRESSO](../../software-directory/modeli
 - 'vc-md': "variable-cell" ab-initio molecular dynamics simulation
 
 !!!warning "Implementation on our platform"
-    Only a subset of the above flavors have been implemented on our platform to date, as can be inspected from the list of available flavors under the [Unit Editor Interface](../../workflow-designer/unit-editor.md#application).
+    Only a subset of the above flavors have been implemented on our platform to date, as can be inspected from the list of available flavors under the [Unit Editor Interface](../../workflow-designer/unit-editor.md#application). The user who wishes for additional functionality to be added to our platform in future should express so via a [support request](../../ui/support.md).
            
 ## Links
 

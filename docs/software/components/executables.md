@@ -7,7 +7,7 @@
 The [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) modeling application for example is comprised of the following main input executables [^2], included as part of its distribution package, such as `pw.x`, `ph.x`, `bands.x` etc.
 
 !!!warning "Executables available on our platform"
-    Only a subset of the above executables have been implemented on our platform so far, as can be deduced from the list of available executables under the [Unit Editor Interface](../../workflow-designer/unit-editor.md#application). Submit a [support request] in case you'd 
+    Only a subset of the above executables have been implemented on our platform so far, as can be deduced from the list of available executables under the [Unit Editor Interface](../../workflow-designer/unit-editor.md#application). The user should submit a [support request](../../ui/support.md) in case he/she would like unsupported executables to be added and implemented on our platform in the future.
 
 Other applications such as [VASP](../../software-directory/modeling/vasp.md) on the other hand contain just a single main executable, through which all of its supported computation features can be performed.
 

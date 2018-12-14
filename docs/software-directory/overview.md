@@ -11,14 +11,12 @@ The platform currently offers the choice between the following modeling software
 | Name    |  Version(s)      | Notes      |
 | :-------- |:----------- |:------------- |
 | [Quantum ESPRESSO](modeling/quantum-espresso.md) | 5.1-6.0 | Fully integrated |
-| [VASP](modeling/vasp.md)      | 5.3.5-5.4.4 | Fully integrated (*) |
+| [VASP](modeling/vasp.md)      | 5.3.5-5.4.4 | Fully integrated |
 | [LAMMPS](modeling/lammps.md)    | 11-2016 | Available through command line |
 | [NWChem](modeling/nwchem.md)    | 6.6     | Available through command line |
 | [CP2K](modeling/cp2k.md)      | 4.1     | Available through command line |
 | [GROMACS](modeling/gromacs.md) |        | Available through command line |
 | [Turbomole](modeling/turbomole.md) | 7.0     | Available through remote desktop |
-
-> * VASP is available for current licensees and on-demand for users with academic affiliations
 
 !!!info "Loading Modeling Applications via Command Line Interface"
     We package modeling software available via Command Line Interface as pre-compiled [modules](../cli/modules.md). Instructions on how such modules can be loaded and made available for use can be found [here](../cli/actions/modules-actions.md).
