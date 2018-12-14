@@ -31,7 +31,7 @@ Refiners can be further added to identify a more extensive simulation approach.
 
 The "Refiners" drop-down menu present under the "Overview" tab of the [Subworkflow Editor](../workflow-designer/subworkflow-editor/overview.md) interface offers the user the possibility to display additional calculated physical properties in separate dedicated columns, once the output of the workflow computation is visualized in the "Jobs" page of the Exabyte platform. 
 
-Note that the inclusion of such refiners from within the Subworkflow Editor interface does not automatically adjust the input file content for the simulation engines involved (something that still needs to be done manually by editing the corresponding input script), but rather refers exclusively to the way the resulting properties are classified.
+Note that the inclusion of such refiners from within the Subworkflow Editor interface does not automatically adjust the input file content for the simulation engines involved (something that still needs to be done manually by editing the corresponding input file), but rather refers exclusively to the way the resulting properties are classified.
 
 ### [Modifiers]()
 
