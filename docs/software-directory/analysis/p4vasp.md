@@ -8,4 +8,4 @@ More information about this visualization tool can be found under Ref. [^1].
 
 ## Links
 
-[p4vasp, Official Website](http://p4vasp.at/)
+[^1]: [p4vasp, Official Website](http://p4vasp.at/)
