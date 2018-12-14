@@ -4,7 +4,7 @@ Following the [general introduction](concept.md) to the templating concepts and 
 
 ## "Swig" Implementation of Jinja syntax
 
-We make use of the **"Swig" template engine** [^1], which adds support for [Jinja syntax](engine.md) within a Javascript/ES6 environment. All Javascript-related prototypes such as *Array* [^2] and *Object* [^3] are supported, as long as the function does not require a callback (function) as one of its arguments (e.g. `Array.prototype.find()` would not work). 
+As explained in this [dedicated page](swig.md).
 
 ## Contexts in our Platform
 
@@ -45,9 +45,3 @@ NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %}
 ```
 
 Note the usage of the aforementioned "Raw" filter, in order to make sure that no Design-time rendering is performed in this case.
-
-## Links
-
-[^1]: [Swig template engine, Official Documentation](http://node-swig.github.io/swig-templates/)
-[^2]: [Javascript Array Prototypes, MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-[^3]: [Javascript Object Prototypes, MDN Documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
