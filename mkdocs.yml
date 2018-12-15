@@ -185,22 +185,31 @@ nav:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
+
+    - Models Directory:
+        - Overview:                                     models-directory/overview.md
         - Density Functional Theory:
-            - Overview:                                 models/dft/overview.md
-            - Parameters:                               models/dft/parameters.md
-            - Accuracy:                                 models/dft/accuracy.md
-            - References:                               models/dft/references.md
+            - Overview:                                 models-directory/dft/overview.md
+            - Data:                                     models-directory/dft/data.md
+            - Parameters:                               models-directory/dft/parameters.md
+            - Accuracy:                                 models-directory/dft/accuracy.md
+            - References:                               models-directory/dft/references.md
 
 
     - Methods:
         - Overview:                                     methods/overview.md
         - Data:                                         methods/data.md
+        - Parameters:                                   methods/parameters.md
         - Precision:                                    methods/precision.md
+
+    - Methods Directory:
+        - Overview:                                     methods-directory/overview.md
         - Plane-waves and Pseudopotentials:
-            - Overview:                                 methods/pseudopotential/overview.md
-            - Parameters:                               methods/pseudopotential/parameters.md
-            - Precision:                                methods/pseudopotential/precision.md
-            - Actions:                                  methods/pseudopotential/actions.md
+            - Overview:                                 methods-directory/pseudopotential/overview.md
+            - Data:                                     methods-directory/pseudopotential/data.md
+            - Parameters:                               methods-directory/pseudopotential/parameters.md
+            - Precision:                                methods-directory/pseudopotential/precision.md
+            - Actions:                                  methods-directory/pseudopotential/actions.md
 
     - Software:
         - Overview:                                     software/overview.md
@@ -345,6 +354,7 @@ nav:
             - Overview:                                 workflows/templating/overview.md
             - Concept:                                  workflows/templating/concept.md
             - Engine:                                   workflows/templating/engine.md
+            - Swig:                                     workflows/templating/swig.md
             - Exabyte Conventions:                      workflows/templating/exabyte-conventions.md
             - Examples:                                 workflows/templating/examples.md
             - UI Implementation:                        workflows/templating/ui.md

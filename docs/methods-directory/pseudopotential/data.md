@@ -5,7 +5,3 @@ Below, the user can find an example [JSON structured representation](../../data-
 ```json tab="Schema" 
 {!schema/science/methods/pseudopotential.json!}
 ```
-
-```json tab="Example" 
-{!example/science/methods/pseudopotential.json!}
-```

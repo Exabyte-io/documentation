@@ -9,6 +9,6 @@ The **Accuracy** measures the degree of proximity between the result of a simula
 
 Although Accuracy and Precision are often used interchangeably, they have different meanings. 
 
-[Precision](../methods/precision.md) is a numerical characteristic of the [Method](../methods/overview.md), intended as a particular computational implementation of the Model, and is therefore directly dependent on the choice of input [compute parameters](../methods/pseudopotential/parameters.md).  
+[Precision](../methods/precision.md) is a numerical characteristic of the [Method](../methods/overview.md), intended as a particular computational implementation of the Model, and is therefore directly dependent on the choice of input [compute parameters](../methods-directory/pseudopotential/parameters.md).  
 
 Accuracy is a direct property of the theoretical [Model](parameters.md) itself, and can be thought about as a limit for when all computational parameters are set to their optimum values, thus yielding full-precision calculations. 
