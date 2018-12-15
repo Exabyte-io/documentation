@@ -2,7 +2,7 @@
 
 Our platform provides a convenient interface for conceiving, editing and executing simulation [Jobs](../jobs/overview.md) We refer to this interface as the Jobs Designer, and we reviewed it in detail in this section of documentation.
 
-## [Navigating to Jobs Designer]()
+## Navigating to Jobs Designer
 
 ### [From project page](../jobs/ui/project-page.md)
 
@@ -16,7 +16,7 @@ Alternatively, it can be opened directly from the [left-hand sidebar menu](../ui
 
 Any entry listed in [Jobs Explorer](../jobs/ui/explorer.md) which has a "Pre-submission" [status](../jobs/status.md) can be [opened](../entities-general/actions/open-edit.md) in Designer. This is because jobs not submitted for computation yet can be fully modified by the user (thus no limitations on edits such as those imposed by the [Viewer](../jobs/ui/viewer.md#no-adjustments-allowed)).
 
-## [Components of the Interface]()
+## Components of the Interface
 
 The creation of new simulation Jobs via Designer proceeds through three main steps, namely the definition of the [Materials](../materials/overview.md) to be investigated (1), the type of simulation [Workflow](../workflows/overview.md) to be applied upon them (2), and finally of the [computational resources](../infrastructure/resource/overview.md) to be allocated for these calculations (3). 
 

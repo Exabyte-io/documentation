@@ -2,7 +2,7 @@
 
 The "Application" entity concept relates to the computational engine (otherwise known as software application) to employ for the execution of a simulation. 
 
-## [Supported Applications]()
+## Supported Applications
 
 The platform currently offers the choice between the following software engines, some of which (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through command line terminal connection. Click on the name of the application below to navigate to the corresponding part of the documentation.
 
@@ -17,9 +17,9 @@ The platform currently offers the choice between the following software engines,
 
 > * VASP is available for current licensees and on-demand for users with academic affiliations
 
-## [Structural Analysis Tools]()
+## Structural Analysis Tools
 
-### [Visual]()
+### Visual
 
 We support the following structural analysis tools through a remote desktop connection.
 
@@ -29,11 +29,11 @@ We support the following structural analysis tools through a remote desktop conn
 | VMD       | 1.9.3       | Available through remote desktop |
 | XCrysDen  | 1.5.60      | Available through remote desktop |
 
-### [Python-based]()
+### Python-based
 
 For command-line users we provide system system-default python installation (version 2.7.5) and suggest for users to employ virtual environment [^1] for controlling the versions for python packages as explained below.
 
-#### [Virtual Environment]()
+#### Virtual Environment
 
 Here is an example quick setup for a python virtual environment with pymatgen [^2], a widely used package for materials analysis:
 
