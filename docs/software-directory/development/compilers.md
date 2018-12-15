@@ -1,6 +1,6 @@
 # Compilers
 
-We support both the **GNU Compiler Collection (GCC)** [^1], an open-source suite of different compilers dedicated to various programming languages, as well as the **Intel proprietary compilers** supporting both the C++ and Fortran languages [^2]. 
+We support both the GNU Compiler Collection (GCC) [^1], as well as the Intel proprietary compilers for the C++ and Fortran languages [^2].
 
 These compilers are accessible under the [Command Line Interface environment](../../cli/environment.md) of our platform, via the loading of the corresponding [modules](../../cli/modules.md).
 

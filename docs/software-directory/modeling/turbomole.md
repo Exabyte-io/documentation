@@ -4,8 +4,8 @@ TURBOMOLE is an ab initio computational chemistry program that implements variou
 
 Full instructions on how TURBOMOLE can be operated and adapted to different research contexts can be consulted in its official website [^1].
 
-!!!info "Basic Demo version supported only"
-    The reader should note that at the moment we only support the freely-available "Demo" version of TURBOMOLE only, accessible via our [Remote Desktop Environment](../../remote-connection/remote-desktop.md).
+> NOTE: "Demo version"
+    "Demo" version of TURBOMOLE is accessible via [Remote Desktop Environment](../../remote-connection/remote-desktop.md).
 
 ## Links
 
