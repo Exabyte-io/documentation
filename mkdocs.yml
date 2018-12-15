@@ -338,8 +338,8 @@ nav:
         - Templating:
             - Overview:                                 workflows/templating/overview.md
             - Concept:                                  workflows/templating/concept.md
-            - Engine:                                   workflows/templating/engine.md
-            - Exabyte Conventions:                      workflows/templating/exabyte-conventions.md
+            - Engines:                                  workflows/templating/engines.md
+            - Exabyte Convention:                       workflows/templating/exabyte-convention.md
             - Examples:                                 workflows/templating/examples.md
             - UI Implementation:                        workflows/templating/ui.md
         - User Interface:
