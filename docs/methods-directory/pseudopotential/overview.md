@@ -2,7 +2,7 @@
 
 The Plane-waves Pseudopotential Method is based upon the implementation of plane-waves as a basis set for representing the electronic wavefunctions of a material [^1], as well as the adoption of pseudopotentials [^2].
  
-This method is widely used as an effective algorithmic recipe for the computational formulation and implementation of the [DFT theoretical model](../../models/dft/parameters.md).  
+This method is widely used as an effective algorithmic recipe for the computational formulation and implementation of the [DFT theoretical model](../../models-directory/dft/parameters.md).  
 
 ## [Parameters](parameters.md)
 
@@ -14,7 +14,11 @@ We introduce [here](actions.md) the action for uploading a custom Pseudopotentia
 
 ## [Precision](precision.md)
 
-We discuss the parameters that limit the [numerical precision](../precision.md) of the plane-waves pseudopotential method [here](precision.md).
+We discuss the parameters that limit the [numerical precision](../../methods/precision.md) of the plane-waves pseudopotential method [here](precision.md).
+
+## [Structured Representation](data.md)
+
+[This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the method.
 
 ## Links
 

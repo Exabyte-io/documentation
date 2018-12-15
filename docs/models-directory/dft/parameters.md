@@ -4,7 +4,7 @@ Our platform currently supports multiple first-principles simulation engines (se
  
 The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the [introductory literature on the subject](references.md).
 
-We present in what follows the [parameters](../parameters.md) which apply specifically to the DFT **model type**.
+We present in what follows the [parameters](../../models/parameters.md) which apply specifically to the DFT **model type**.
 
 ## Subtype
 
@@ -20,7 +20,7 @@ We support the following list of exchange-correlation functionals.
 - Perdew, Burke and Ernzerhof (PBE) [^3] (default).
 - Perdew-Zunger (PZ81) [^4]
 
-> NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods/pseudopotential/overview.md)
+> NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods-directory/pseudopotential/overview.md)
 
 ## Refiners
 

@@ -6,7 +6,7 @@ In this page we review setting input flags based on the data about material(s) a
 
 ## Source
 
-The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Nitrogen within their structures than for those than don't. In particular, ENCUT = 600 eV if Nitrogen is present, or ENCUT = 450 eV otherwise. This variable is found in [VASP](../../software-directory/modeling/vasp.md) input file, and defines the cutoff energy characterizing the precision of the [DFT computation](../../models/dft/parameters.md).
+The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Nitrogen within their structures than for those than don't. In particular, ENCUT = 600 eV if Nitrogen is present, or ENCUT = 450 eV otherwise. This variable is found in [VASP](../../software-directory/modeling/vasp.md) input file, and defines the cutoff energy characterizing the precision of the [DFT computation](../../models-directory/dft/parameters.md).
 
 ```jinja2
 {% spaceless %}
