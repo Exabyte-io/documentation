@@ -1,6 +1,6 @@
 # Structural Analysis and Visualization Tools
 
-The [crystal structures](../../properties-directory/structural/final-structure.md) of materials can in general be **visualized** with the help of specialized computer software, for assisting the user to graphically inspect and understand their morphology. These software are typically interacted with through the help of a graphical user interface under a desktop environment, such as the [Remote Desktop](../../remote-connection/remote-desktop.md) functionality provided on our platform.
+Materials can be **visualized** with the help of specialized computer software assisting the user to graphically inspect and understand them. These software are typically interacted with through the help of a graphical user interface under a desktop environment, such as the [Remote Desktop](../../remote-connection/remote-desktop.md) functionality provided on our platform.
 
 The picture below shows the typical graphical output and rendering of such crystal structure visualization software. This example image represents the case of a material comprising two different types of elements, each represented by a spherical ball of different size and color and interconnected by sticks representing the chemical bonds between them (the so-called **Ball-and-stick model** [^1]).
 
