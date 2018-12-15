@@ -39,3 +39,5 @@ Several modifiers can also be included as part of the subworkflow under consider
 ## The "Method" Section
 
 Methods are also the object of a [dedicated section](../../methods/overview.md) of the documentation. In particular, we explain how to upload a custom Pseudopotential file through the "Method" section of the "Overview" tab interface [in this page](../../methods/pseudopotential/actions.md).
+
+The "Method" section inside the [Overview Tab](../../workflow-designer/subworkflow-editor/overview-tab.md) of the [Subworkflow Editor interface](../../workflow-designer/subworkflow-editor/overview.md) allows the user to choose which particular pseudopotential file to implement as part of the current subworkflow computations. A comprehensive set of pseudopotentials for most elements in the periodic table is already included on our platform and made available for user selection.
