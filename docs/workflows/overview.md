@@ -22,7 +22,7 @@ The [Data](data/overview.md) section contains information about the structured d
 
 The default workflow present at the moment of creation of a new account on our platform is introduced [here](default.md).
 
-## [User Interface]()
+## User Interface
 
 Specific features pertaining to the Explorer Interface of the Workflows collection are explained [here](ui/explorer.md). Descriptions on [Viewer](ui/viewer.md) and [Designer](../workflow-designer/overview.md) in the context of workflows are also offered.
 
