@@ -8,11 +8,11 @@ Illustrations of the [JSON schemas](../properties/data/overview.md) and associat
 
 At the top of each property's page, we include colored badges referring to the [property classification](../properties/classification/overview.md), distinguishing between [scalar and non-scalar](../properties/classification#by-data-type) types and between the different types of [Materials Properties](../properties/classification/materials.md).
 
-## [Materials Properties]()
+## Materials Properties
 
 Below we provide a list of Materials properties that can be [extracted](../properties/lifecycle/extractor.md) on our platform. The reader can click each entry to be redirected to the relevant documentation explanation.
 
-### [Scalar]()
+### Scalar
 
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|
@@ -25,7 +25,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | [Total Energy Contributions](scalar/total-energy.md#total-energy-contributions) | Ewald, Exchange correlation and	Hartree contributions to the total energy |
 | [Total Force](scalar/total-force.md)                 | Sum of the atomic forces |
 
-### [Non-Scalar]()
+### Non-Scalar
 
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|
@@ -37,7 +37,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | [Phonon Dispersions](non-scalar/phonon-dispersions.md) | The dispersion plot of lattice vibrations (phonons) frequencies |
 | [Phonon Density of States](non-scalar/phonon-dos.md) | The Density of States of Phonons |
 
-### [Structural]()
+### Structural
 
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|
@@ -48,7 +48,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | [Space Group](structural/space-group.md)             | Information about the symmetry elements contained in crystal structure |
 | [Final Structure](structural/final-structure.md)     | The final crystal structure obtained from basis atoms and lattice, and its visualization |
 
-### [Elemental]()
+### Elemental
 
 | Property                                             | Overview                                         |
 |:---------------------------------------------------  |:------------------------------------------------|
@@ -56,7 +56,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | [Electronegativity](elemental/electronegativity.md) | The capacity of the atom to attract shared electrons |
 | [Ionization Potential](elemental/ionization-potential.md) | The energy required to strip an atom of its outermost electron |
 
-## [Workflow Monitors]()
+## Workflow Monitors
 
 Below we list the data points that can be monitored during the course of the execution of a [Workflow](../workflows/overview.md) computation.
 

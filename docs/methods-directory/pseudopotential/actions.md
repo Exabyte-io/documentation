@@ -1,16 +1,16 @@
 # Upload Custom Pseudopotential Files
 
-Pseudopotential files can be uploaded directly to the Subworkflow Editor, in order to expand the default set. This can be achieved following the procedure outlined below.
+Pseudopotential files can be uploaded directly to the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md), in order to expand the default set. This can be achieved following the procedure outlined below.
 
 ## Expand Pseudopotential panel
 
-By expanding the subsection labelled "Pseudopotentials" (with the help of the "plus' button <i class="zmdi zmdi-plus zmdi-hc-border"></i> to its left), and then clicking on the `Upload` button  <i class="zmdi zmdi-upload zmdi-hc-border"></i> on the right-hand side, the user can initiate the upload of a custom pseudopotential file. 
+The user can initiate the upload of a custom pseudopotential file by first expanding the subsection labelled "Pseudopotentials" within the ["Overview" tab](../../workflow-designer/subworkflow-editor/overview-tab.md) of the interface (with the help of the "plus' button <i class="zmdi zmdi-plus zmdi-hc-border"></i> to its left). The `Upload` button  <i class="zmdi zmdi-upload zmdi-hc-border"></i> on the right-hand side then needs to be clicked. 
 
 ## Set Information Fields
 
 Next all the necessary categorization information about the new pseudopotential being uploaded shall be specified from the list of drop-down menus in the resulting dialog. An example of this dialog's appearance is shown below:
 
- <img src="/images/methods/methods/pp-upload.png"/>
+ <img src="/images/methods/pp-upload.png"/>
  
 ## Save File
  
