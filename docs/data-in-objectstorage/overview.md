@@ -2,7 +2,7 @@
 
 In the present section of the documentation, we offer a general introduction to the concept of **Object Storage** for **storing** and **transferring** unstructured data, particularly the input and output files of simulations. The procedure of storing data in the form of objects is necessary for making it accessible under the Web Interface.
 
-## [Definition]()
+## Definition
 
 Object Storage [^1]
 :    A particular type of storage architecture that manages unstructured data as Objects, as opposed to other architectures such as the hierarchical file systems. Object Storage provide an established way of accessing files from web applications.

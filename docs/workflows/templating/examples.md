@@ -153,4 +153,4 @@ K_POINTS automatic
 
 #### Runtime Render
 
-In the rendered text of the unit above, there are still namelist flags that are not resolved, such as `{{JOB_WORK_DIR}}`, for example. These will be rendered during the Run time, as explained [here](exabyte-conventions.md#"raw"-syntax-for-execution-variables-in-web-context).
+In the rendered text of the unit above, there are still flags that are not resolved, such as `{{JOB_WORK_DIR}}`, for example. These will be rendered during the Run time, as explained [here](exabyte-conventions.md#"raw"-syntax-for-execution-variables-in-web-context).

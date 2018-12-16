@@ -1,6 +1,6 @@
 # RESTful API
 
-## [Definition]()
+## Definition
 
 RESTful[^1] API (or REST-API, or Representational State Transfer Application Programming Interface) is a layer allows to access and manipulate textual representation of the web resources (eg. [Entities](../entities-general/overview.md)) by using a uniform and predefined set of stateless operations. 
 

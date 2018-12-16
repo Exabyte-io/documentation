@@ -178,23 +178,38 @@ nav:
 # CONCEPTS
     - Models:
         - Overview:                                     models/overview.md
+        - Accuracy:                                     models/accuracy.md
+        - Data:                                         models/data.md
+        - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            # kgrid, qgrid, igrid,
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
-            # kpath, qpath, ipath
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
+
+    - Models Directory:
+        - Overview:                                     models-directory/overview.md
         - Density Functional Theory:
-            - Overview:                                 models/dft/overview.md
-            - References:                               models/dft/references.md
+            - Overview:                                 models-directory/dft/overview.md
+            - Data:                                     models-directory/dft/data.md
+            - Parameters:                               models-directory/dft/parameters.md
+            - Accuracy:                                 models-directory/dft/accuracy.md
+            - References:                               models-directory/dft/references.md
+
 
     - Methods:
         - Overview:                                     methods/overview.md
         - Data:                                         methods/data.md
-        - Pseudopotential:
-            - Overview:                                 methods/pseudopotential/overview.md
-            - Parameters:                               methods/pseudopotential/parameters.md
-            - Actions:                                  methods/pseudopotential/actions.md
+        - Parameters:                                   methods/parameters.md
+        - Precision:                                    methods/precision.md
+
+    - Methods Directory:
+        - Overview:                                     methods-directory/overview.md
+        - Plane-waves and Pseudopotentials:
+            - Overview:                                 methods-directory/pseudopotential/overview.md
+            - Data:                                     methods-directory/pseudopotential/data.md
+            - Parameters:                               methods-directory/pseudopotential/parameters.md
+            - Precision:                                methods-directory/pseudopotential/precision.md
+            - Actions:                                  methods-directory/pseudopotential/actions.md
 
     - Software:
         - Overview:                                     software/overview.md
@@ -339,6 +354,7 @@ nav:
             - Overview:                                 workflows/templating/overview.md
             - Concept:                                  workflows/templating/concept.md
             - Engines:                                  workflows/templating/engines.md
+            - Swig:                                     workflows/templating/swig.md
             - Exabyte Convention:                       workflows/templating/exabyte-convention.md
             - Examples:                                 workflows/templating/examples.md
             - UI Implementation:                        workflows/templating/ui.md
@@ -363,10 +379,10 @@ nav:
         - Sidebar:
             - Items List:                               workflow-designer/sidebar.md
         - Subworkflow Editor:
-            - Overview:                                 workflow-designer/subworkflow-editor/intro.md
+            - Overview:                                 workflow-designer/subworkflow-editor/overview.md
             - Actions Menu:                             workflow-designer/subworkflow-editor/actions-menu.md
             - Tabs:                                     workflow-designer/subworkflow-editor/tabs-general.md
-            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview-tab.md
             - Tabs > Important Settings:                workflow-designer/subworkflow-editor/important-settings.md
             - Tabs > Detailed View:                     workflow-designer/subworkflow-editor/detailed-view.md
             - Tabs > Compute:                           workflow-designer/subworkflow-editor/compute.md
@@ -586,8 +602,8 @@ nav:
             - View Results:                          tutorials/jobs-cli/view-results.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
-            - Custom parameters:                     tutorials/templating/different-ecut.md
-
+            - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
+            - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
 
 
 # TUTORIALS AND EXAMPLES

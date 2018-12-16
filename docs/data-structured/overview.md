@@ -5,7 +5,7 @@ In this section, we provide an introduction to the practices we employ to organi
 !!! info "What is Structured Data?"
     *Structured* data is data that has been organized into a formatted repository, typically a *database*, so that its elements can be made addressable for more effective processing and analysis. A data structure is a kind of repository that organizes information for that purpose.
 
-## [Database]()
+## Database
 
 We store the structured data in the MongoDB database [^1]. The database is highly available, ie. has multiple equivalent sources at any time, and is backed up daily. Readers are referred to the [Collections](../accounts/collections.md) and [Infrastructure](../infrastructure/overview.md) sections to find out more about how individual items are stored and organized for access.  
 

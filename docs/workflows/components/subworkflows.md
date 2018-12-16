@@ -14,9 +14,9 @@ A model may have multiple numerical **Methods**, or computational implementation
 
 A **Simulation Engine** is an implementation of a simulation algorithm in software. The engines available on our platform are reviewed [in this section](../../software/applications.md) of the documentation.
 
-## Subworkflow Modifiers
+## Subworkflow Add-ons
 
-There are certain types of (sub)workflows that are commonly used in practice. We have support for their quick addition (or "modification"), as explained for the following two cases.
+There are certain types of (sub)workflows that are commonly used in practice. We have support for their quick **addition**, as explained for the following two cases.
 
 ### Convergence
 
