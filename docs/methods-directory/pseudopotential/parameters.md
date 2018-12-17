@@ -1,6 +1,6 @@
 # Parameters for the Planewave Pseudopotential Method 
 
-We review in this page the most important computational parameters for defining [plane-wave pseudopotential calculations](overview.md), based upon the theoretical framework of the [DFT model](../../models-directory/dft/parameters.md).
+We review in this page the most important computational parameters for defining [plane-wave pseudopotential calculations](overview.md), based upon the theoretical framework of the [DFT model](../../models-directory/dft/overview.md).
 
 These parameters can be set under the [Subworkflow Editor](../../workflow-designer/subworkflow-editor/overview.md) interface of our platform.
 
@@ -20,7 +20,7 @@ The **type** of **pseudopotential** affects the way the inter-atomic interaction
 - Norm-Conserving (NC) 
 - Projector-Augmented Wave (PAW) 
 
-Please consult [this page](../../models-directory/dft/parameters.md) for a review of the available pseudopotential **subtypes**, implementing different approximations for the **exchange-correlation functional**.
+Please consult [this page](../../models-directory/dft/overview.md) for a review of the available pseudopotential **subtypes**, implementing different approximations for the **exchange-correlation functional**.
 
 ## k-point Sampling
 
