@@ -2,7 +2,7 @@
 
 An example of appearance of the "Important Settings" tab within the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) of [Workflow Designer](../../workflow-designer/overview.md), for the case of a basic ground-state total energy subworkflow calculation performed with [Quantum Espresso](../../software-directory/modeling/quantum-espresso.md) (comprising a single Unit of type "pw-scf"), is illustrated in the image below. 
 
-[!Important Settings](../../images/workflow-designer/important-settings-tab.png "Important Settings")
+![Important Settings](../../images/workflow-designer/important-settings-tab.png "Important Settings")
 
 In this image, the two most common types of [input parameters](parameters.md) encountered in general [DFT calculations](../../models-directory/dft/overview.md) implemented via the [plane-waves pseudopotential method](overview.md) are both shown to be contained as part of this total energy subworkflow. They consist in, respectively, the wavefunction and the density "cutoffs", and the size of the grid of reciprocal k-points (the so-called "kgrid").
 
