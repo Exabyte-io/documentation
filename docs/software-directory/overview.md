@@ -15,7 +15,7 @@ The platform currently offers the choice between the following modeling software
 | [LAMMPS](modeling/lammps.md)    | 11-2016 | Available through command line |
 | [NWChem](modeling/nwchem.md)    | 6.6     | Available through command line |
 | [CP2K](modeling/cp2k.md)      | 4.1     | Available through command line |
-| [GROMACS](modeling/gromacs.md) |        | Available through command line |
+| [GROMACS](modeling/gromacs.md) |   5.1.4  | Available through command line |
 | [Turbomole](modeling/turbomole.md) | 7.0     | Available through remote desktop |
 
 !!!info "Loading Modeling Applications via Command Line Interface"
@@ -39,7 +39,7 @@ We support the following structural analysis and visualization tools through a [
 
 ### Python-based
 
-For command-line users we provide system system-default python installation and suggest for users to employ virtual environment for controlling the versions for python packages, as explained [in this page](../cli/actions/create-python-env.md).
+For command-line users we provide a system-default python installation, and recommend users to employ virtual environments for controlling the versions of python packages, as explained [in this page](../cli/actions/create-python-env.md).
 
 ## Scripting
 

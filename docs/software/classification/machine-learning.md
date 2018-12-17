@@ -1,8 +1,8 @@
 # Machine Learning
 
-Machine learning (ML) is the study of algorithms and statistical models that computers can use to progressively improve with time their performance in solving particular problems [^1]. Algorithms used in Machine Learning typically consist in assembling a mathematical model based upon a set of sample data, known as **"training data"**, and later use this model in order to make predictions or decisions on other related problems on which they have no prior knowledge.
+Machine learning is the study of algorithms and statistical models that computers can use to progressively improve with time their performance in solving particular problems [^1]. 
 
-In its most basic form, a machine learning algorithm could consist in the fitting or interpolation of a set of data points, with the objective of extrapolating the resulting model (fitting function) to predict new realistic data points that were not originally calculated.
+We support Machine Learning within our platform as a way to do materials simulations.
 
 ## Links 
 
