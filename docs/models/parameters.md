@@ -4,7 +4,7 @@ Our platform offers the following categories of model parameters, which can be e
  
 ## Type
   
-Density Functional Theory (DFT) is as a widely used **Type** of model. Its theoretical background is reviewed further in the references contained in [this page](dft/references.md), whereas its specific parameters are narrated [here](dft/parameters.md). 
+[Density Functional Theory (DFT)](../models-directory/dft/overview.md) is, for example, a widely used **Type** of model.
 
 ## Subtype
 

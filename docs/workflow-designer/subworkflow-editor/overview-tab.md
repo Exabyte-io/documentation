@@ -24,7 +24,7 @@ The concept of "Model" is documented extensively in its own dedicated [documenta
 
 ### Type, Subtype and Functional
 
-We review the available Subtypes and Functional flavors applicable to the **Density Functional Theory model type** [in this page](../../models/dft/parameters.md).
+We review the available Subtypes and Functional flavors applicable to the **Density Functional Theory model type** [in this page](../../models-directory/dft/parameters.md).
 
 ### Refiners
 
@@ -38,4 +38,6 @@ Several modifiers can also be included as part of the subworkflow under consider
 
 ## The "Method" Section
 
-Methods are also the object of a [dedicated section](../../methods/overview.md) of the documentation. In particular, we explain how to upload a custom Pseudopotential file through the "Method" section of the "Overview" tab interface [in this page](../../methods/pseudopotential/actions.md).
+Methods are also the object of a [dedicated section](../../methods/overview.md) of the documentation. 
+
+The "Method" section of the "Overview" tab interface allows the user to choose which particular pseudopotential file to implement as part of the current subworkflow computations. A comprehensive set of pseudopotentials for most elements in the periodic table is already included on our platform and made available for user selection. In addition, we explain how to upload a custom Pseudopotential file through the "Method" section [in this page](../../methods-directory/pseudopotential/actions.md).

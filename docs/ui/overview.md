@@ -5,7 +5,7 @@ We subdivide the generic user interface into universal components that are prese
 !!!note "Coloring of the highlighted sections in images"
     In images presented throughout this documentation manual, we encircle the relevant interface components in **red**, and the access points (or click triggers) to the components in **orange**.
 
-## [Universal Components]()
+## Universal Components
 
 Five components are highlighted in the image below. Clicking each area of this image redirects the user to the corresponding documentation page.
 
@@ -19,7 +19,7 @@ Five components are highlighted in the image below. Clicking each area of this i
     <area shape="rect" coords="555,38,753,501" href="/general/ui/account-navigation/">
 </map>
 
-## [Specific Components]()
+## Specific Components
 
 Other general user interface components are instead accessible only from specific locations. The panels highlighted below are worth a separate discussion.
 

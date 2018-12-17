@@ -10,7 +10,7 @@ The size of the grid of k-points is typically defined in terms of its dimensions
 
 ## Convergence
 
-Together with a sufficiently high plane-wave cutoff for the electronic wavefunction explained in [this page](../../../methods/pseudopotential/parameters.md), a sufficiently large size for this sampling grid is of paramount importance in establishing the overall accuracy of the corresponding calculation. For instructions on how to add a preliminary convergence calculation add-on to the current workflow, see [this page](../../../workflow-designer/subworkflow-editor/actions-menu.md). 
+Together with a sufficiently high plane-wave cutoff for the electronic wavefunction explained in [this page](../../../methods-directory/pseudopotential/parameters.md), a sufficiently large size for this sampling grid is of paramount importance in establishing the overall accuracy of the corresponding calculation. For instructions on how to add a preliminary convergence calculation add-on to the current workflow, see [this page](../../../workflow-designer/subworkflow-editor/actions-menu.md). 
 
 ## KPPRA
  
