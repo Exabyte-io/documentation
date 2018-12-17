@@ -209,6 +209,7 @@ nav:
             - Data:                                     methods-directory/pseudopotential/data.md
             - Parameters:                               methods-directory/pseudopotential/parameters.md
             - Precision:                                methods-directory/pseudopotential/precision.md
+            - Important Settings:                       methods-directory/pseudopotential/important-settings.md
             - Actions:                                  methods-directory/pseudopotential/actions.md
 
 
