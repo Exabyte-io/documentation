@@ -9,10 +9,14 @@ A theoretical [model](../models/overview.md) may have multiple **Methods**, or c
 
 We explain structured representation of a method [here](data.md).
 
+## [Parameters](parameters.md)
+
+We introduce the concept of computational parameters [in this page](parameters.md).
+
 ## [Precision](precision.md)
 
 [This page](precision.md) explains the relevance of the concept of numerical precision in the context of methods.
 
-## [Plane-wave Pseudopotential Method](pseudopotential/overview.md)
+## [List of Available Methods](../methods-directory/overview.md)
 
-We consider the **Plane-wave Pseudopotential** approach towards implementing the [Density Functional Theory](../models/dft/parameters.md) model as our primary method. This method is introduced in the [following section](pseudopotential/overview.md) of the documentation.
+We present the list of methods available within our platform in a [separate section](../methods-directory/overview.md) of the documentation.

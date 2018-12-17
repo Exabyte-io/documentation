@@ -1,6 +1,6 @@
 # Dropbox
 
-Dropbox is a general-utility cloud-based data **storage system** that is **mounted on all nodes** of our computational [infrastructure](../infrastructure/overview.md), and is accessible everywhere under the same filesystem path. It can therefore be used to conveniently **share** [files](files.md) everywhere across the platform, as it is often necessary when dealing with the auxiliary files required for the simulations (for example, [pseudopotentials](../methods/pseudopotential/overview.md)).
+Dropbox is a general-utility cloud-based data **storage system** that is **mounted on all nodes** of our computational [infrastructure](../infrastructure/overview.md), and is accessible everywhere under the same filesystem path. It can therefore be used to conveniently **share** [files](files.md) everywhere across the platform, as it is often necessary when dealing with the auxiliary files required for the simulations (for example, [pseudopotentials](../methods-directory/pseudopotential/overview.md)).
 
 !!!warning "Warning: limited capacity"
     Dropbox is meant for non-bulky data and has a storage capacity administratively limited to **1 Gb** per [user](../accounts/users.md).
