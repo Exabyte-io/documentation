@@ -20,6 +20,10 @@ We discuss the parameters that limit the [numerical precision](../../methods/pre
 
 [This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the method.
 
+## [Important Settings](important-settings.md)
+
+We explain [under this page](important-settings.md) how important settings concerning the method can be set under the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) of [Workflow Designer](../../workflow-designer/overview.md).
+
 ## Links
 
 [^1]: [Plane Waves as a Basis, Durham University Website](http://cmt.dur.ac.uk/sjc/thesis_dbj/node16.html)
