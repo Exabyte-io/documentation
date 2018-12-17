@@ -19,7 +19,7 @@ Here we use a uniform k-point mesh (same in each of the three spatial directions
 Currently the default k-point convergence algorithm systematically increments the starting k-point density by 1 in along each reciprocal lattice vector until the total energy of the system does not increase by more than 0.001% (10^-5).
   
 <!-- TODO: revise or remove gif -->
-<!-- <img data-gifffer="/images/workflows/AddKpointConvergence.gif" /> -->
+<img data-gifffer="/images/workflows/AddKpointConvergence.gif" />
 
 Please see the [k-point convergence tutorial](../../tutorials/dft/kpt-convergence.md) for more details.
 
