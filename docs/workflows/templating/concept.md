@@ -19,7 +19,7 @@ We allow for using templates specifically inside the input of [units](../compone
 
 ### Template Rendering
 
-The templates (input files) are rendered in two places, on [web interface](../../ui/overview.md) when workflows (or jobs) are designed and in [computing clusters](../../infrastructure/clusters/overview.md) when the job is executed, henceforth referred to as **design-time rendering** and **runtime rendering** respectively. The is necessary as some templates require data which is only available at runtime (e.g. `outdir` in Quantum Espresso PWScf input file) 
+The templates (input files) are rendered in two places, on [web interface](../../ui/overview.md) when workflows (or jobs) are designed and in [computing clusters](../../infrastructure/clusters/overview.md) when the job is executed, henceforth referred to as **Design-time Rendering** and **Runtime Rendering** respectively. The is necessary as some templates require data which is only available at runtime (e.g. `outdir` in Quantum Espresso PWScf input file) 
 
 ## Links
 
