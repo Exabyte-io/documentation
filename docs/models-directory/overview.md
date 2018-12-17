@@ -4,4 +4,4 @@ We introduce in this section the [models](../models/overview.md) which are curre
 
 ## [Density Functional Theory](dft/overview.md)
 
-We implement **Density Functional Theory** as our primary model. The specific parameters which apply to this model are reviewed [in this page](../models-directory/dft/overview.md), whereas a review of its theoretical background is offered in the references listed [here](../models-directory/dft/references.md).
+We implement **Density Functional Theory** as our primary model, as introduced [in this page](../models-directory/dft/overview.md). A review of its theoretical background is offered in the references listed [here](../models-directory/dft/references.md).
