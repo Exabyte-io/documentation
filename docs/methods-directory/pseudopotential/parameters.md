@@ -30,7 +30,7 @@ The k-points in the [reciprocal space](../../models/auxiliary-concepts/reciproca
 
 An artificial thermal broadening of the Fermi surface of metallic materials is typically necessary in order to obtain smoother electron occupation distributions than the original step function,  thus making the convergence of properties that need to be integrated across the Fermi surface more effective. 
 
-The different implementations of this "electron smearing" technique, as well as other methods for treating electronic occupancies which might be more suitable for semiconductors and insulators, are reviewed starting from page 175 of Ref. [2] linked in [this page](../../software/modeling/vasp.md).
+The different implementations of this "electron smearing" technique, as well as other methods for treating electronic occupancies which might be more suitable for semiconductors and insulators, are reviewed starting from page 175 of Ref. [2] linked in [this page](../../software-directory/modeling/vasp.md).
 
 ## Links
 
