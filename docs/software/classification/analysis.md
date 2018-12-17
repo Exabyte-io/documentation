@@ -10,9 +10,11 @@ The picture below shows the typical graphical output and rendering of such cryst
 
 These structural visualization software tools also typically provide further **structural analysis functionality** that can be applied to better understand the physical and chemical properties of the material being inspected. Such functionality might for example include the possibility to computationally simulate the X-ray or Neutron scattering diffraction patterns, as would be encountered during experimental investigations performed on the material.
 
-A typical user session using the [VESTA](../../software-directory/analysis/vesta.md) tool in a desktop environment, both for crystal visualization and structural analysis purposes via multiple panels opened simultaneously, might appear as shown in the example below.
+## Implementation on our Platform
 
-![VESTA Example Session](../../images/software/mac-main02.png "VESTA Example Session")
+We enable support for several structural analysis and visualization tools, which are accessible primarily via our [Remote Desktop Environment](../../remote-connection/remote-desktop.md). These are introduced [in this section](../../software-directory/overview.md) of the documentation.
+
+We explain how to open the [VESTA](../../software-directory/analysis/vesta.md) tool, for crystal visualization and structural analysis purposes, in [this page](../../remote-connection/actions-rd/open-app.md).
 
 ## Links
 
