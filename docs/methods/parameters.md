@@ -6,4 +6,4 @@ We refer to **parameters** as any computational setting that can influence the e
 
 For example, for the case of [parameters involved in DFT computations](../methods-directory/pseudopotential/parameters.md), the precision is mainly affected by the choice of parameters such as the plane-wave cutoff energy and size of the grid of reciprocal k-points.   
 
-For the case of the classical Molecular Dynamics method on the other hand, important computational parameters to bear in mind for reproducing the desired effects with the appropriate precision consist for example in the size of the simulation box, corresponding to a sufficient total number of atoms, and the choice for the parametric form of the inter-atomic potential.
+For the case of the classical Molecular Dynamics method on the other hand, important computational parameters to bear in mind for reproducing the desired effects with the appropriate precision consist for example in the size of the simulation box, corresponding to a sufficient total number of atoms. The correct choice for the parametric form of the inter-atomic potential is also very important.
