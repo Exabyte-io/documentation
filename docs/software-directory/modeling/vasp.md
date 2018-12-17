@@ -9,6 +9,10 @@ Complete information and documentation about the VASP code can be found in its c
 !!!warning "License Requirements"
     VASP is a proprietary software, and as such it requires a license in order to be operated. All users who would like to use this code are advised to send us a [support request](../../ui/support.md) so that we can check their existing licenses. For academic users, a free usage of VASP can potentially be negotiated. 
 
+## Supported Versions
+
+We provide support and implementations for both the 5.3.5 and 5.4.4 versions of VASP.
+
 ## Default settings
 
 ### Default Pseudopotentials
