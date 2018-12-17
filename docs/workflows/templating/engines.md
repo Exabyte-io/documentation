@@ -106,23 +106,6 @@ Template variables can be modified by **filters**. Filters are separated from th
 Supported Jinja2 **built-in filters** are reviewed in its documentation web-page [^4]. 
 The reader is also referred to Swig official documentation for a list of supported filters [^5]. 
 
-## Javascript Native Prototypes Support in "Swig"
-
-All Javascript-related prototypes such as *Array* [^6] and *Object* [^7] are supported by Swig, as long as the function does not require a callback (function) as one of its arguments. For example `Array.prototype.find()` is not supported by Swig as it needs a callback, however it can be implemented by pure templating features as below.
-
-```jinja2
-{% set elements = [{"id": 0, "value": "Si"}, {"id": 1, "value": "Ge"}] %}
-{% set element = "" %}
-{% set element_found = false %}
-{% for element_ in elements %}
-  {% if not element_found and element_["id"] == 1 %}
-    {% set element = element_ %}
-    {% set element_found = true %}
-  {% endif %}
-{% endfor %}
-element = {{ element["value"] }}
-```  
-
 ## Links
 
 [^1]: [Jinja Templating Engine, Official Website](http://jinja.pocoo.org/)

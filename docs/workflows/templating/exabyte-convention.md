@@ -4,17 +4,19 @@ Following the [general introduction](concept.md) to the templating concepts and 
 
 ## Contexts in our Platform
 
-As explained [in this section](concept.md#template-rendering), templates are rendered on web interface and computing clusters separately. For that reason there are two different contexts passed to the templates on our platform that we shall henceforth refer as the **"Web Context"** and **"Runtime Context"** respectively.
+As explained [in this section](concept.md#template-rendering), templates are rendered on web interface and computing clusters separately. For that reason there are two different contexts passed to the templates on our platform as described below.
+ 
+### Design-time Context
 
-### Availability of Variables in Contexts
+The context available to templates on web interface, containing materials, workflow's important settings, etc. An example context is provided in the [templating examples](examples.md).
 
-Different variables are available in each of the two contexts mentioned above. In particular, the Runtime Context only has access to the `JOB_WORK_DIR` variable defining the main [Working Directory](../../jobs-cli/batch-scripts/directories.md) for the [Job](../../jobs/overview.md) under consideration. This is a system-level [Environment Variable](../../jobs-cli/batch-scripts/directives.md#environment-variables) that will be resolved only during the final runtime. 
+### Runtime-time Context
 
-The Web Context on the other hand has access to all other available variables, such as those presented in the [templating examples](examples.md).
+The context passed to the templates at runtime. This context provides system-level parameters such as `JOB_WORK_DIR` variable which defines the main [Working Directory](../../jobs-cli/batch-scripts/directories.md) for the [Job](../../jobs/overview.md) under consideration. This is a system-level [Environment Variable](../../jobs-cli/batch-scripts/directives.md#environment-variables) that will be resolved only during the the runtime.
 
 ### "Raw" Syntax
 
-The "Raw" filter syntax is used to prevent the Web Interface from rendering variables during the **design-time rendering**, given that such variables are only available during the ensuing **runtime rendering**. Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
+The "Raw" filter syntax is used to prevent the Web Interface from rendering variables during the **Design-time Rendering**, given that such variables are only available during the ensuing **Runtime Rendering**. Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
 
 ```jinja2
 pseudo_dir = {% raw %}'{{ JOB_WORK_DIR }}/pseudo'{% endraw %}
