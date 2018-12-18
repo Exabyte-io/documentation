@@ -27,7 +27,7 @@ We discuss the directory structure which can be found inside the home folder of 
 
 ## [Performance Benchmarks](../../benchmarks/overview.md)
 
-The clusters offered as part of the [infrastructure of our platform](../overview.md) have been subject to an extensive set of **tests and benchmarks**, in order to measure their reliability and performance for different [hardware types](hardware.md) and for the [simulation engines](../../software/applications.md) used. They are reviewed and assessed in a [separate section](../../benchmarks/overview.md) of the present documentation.
+The clusters offered as part of the [infrastructure of our platform](../overview.md) have been subject to an extensive set of **tests and benchmarks**, in order to measure their reliability and performance for different [hardware types](hardware.md) and for the [simulation engines](../../software/parameters.md) used. They are reviewed and assessed in a [separate section](../../benchmarks/overview.md) of the present documentation.
 
 ### Cloud Providers
 

@@ -6,4 +6,4 @@ The settings that can be set within this tab concern primarily the important [co
 
 ## Specific Implementation
 
-Consult [Methods Directory](../methods-directory/overview.md) for specifics about the important settings of each supported method.
+Consult [Methods Directory](../../methods-directory/overview.md) for specifics about the important settings of each supported method.

@@ -6,9 +6,9 @@ We review in the present section of the documentation the most important general
 
 The reader is referred to [this alternative section](../software-directory/overview.md) of the documentation for a complete list and review of the specific software packages available for use on our platform.
 
-## [Applications](applications.md)
+## [Applications](parameters.md)
 
-We introduce the concepts of an [application](applications.md), and of its constituent [executables](components/executables.md) and different possible computation [flavors](components/flavors.md), in their respective pages.
+We introduce the concepts of an [application](parameters.md), and of its constituent [executables](parameters.md#executables) and different possible computation [flavors](parameters.md#flavors), in their respective pages.
 
 ## [Classification](classification/overview.md)
 

@@ -19,7 +19,7 @@ This representation contains information about the application's name, summary d
 
 ## Application Components
 
-We provide an example of [structured representation](../data-structured/overview.md) for an application-specific [executable](components/executables.md) and [flavor](components/flavors.md) in what follows.
+We provide an example of [structured representation](../data-structured/overview.md) for an application-specific [executable](parameters.md#executables) and [flavor](parameters.md#flavors) in what follows.
 
 ### Executable
 

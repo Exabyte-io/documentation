@@ -4,13 +4,13 @@ Quantum ESPRESSO (QE, also referred to as "espresso" in our platform) is a softw
 
 ## Executables
 
-The core plane wave DFT functions of QE are provided by the PWscf (Plane-Wave Self-Consistent Field) component, further referred to under the name of its [executable](../../software/components/executables.md) `pw.x`. Further components are included in the distribution package, such as the `ph.x` executable for performing phonon calculations via the density functional perturbation theory and linear response theoretical formalisms [^8].
+The core plane wave DFT functions of QE are provided by the PWscf (Plane-Wave Self-Consistent Field) component, further referred to under the name of its [executable](../../software/parameters.md#executables) `pw.x`. Further components are included in the distribution package, such as the `ph.x` executable for performing phonon calculations via the density functional perturbation theory and linear response theoretical formalisms [^8].
 
-Complete documentation about the software package can be found in its corresponding website [^1]. The input file description for `pw.x` can be found in Ref. [^2]. The package-specific documentation [^3] contains links to input descriptions for other [executables](../../software/components/executables.md) as well.
+Complete documentation about the software package can be found in its corresponding website [^1]. The input file description for `pw.x` can be found in Ref. [^2]. The package-specific documentation [^3] contains links to input descriptions for other [executables](../../software/parameters.md#executables) as well.
 
 ## Flavors
 
-The `pw.x` executable for the Quantum ESPRESSO modeling application, for example, allows for the execution of the following different types of calculation [flavors](../../software/components/flavors.md) [^4], to be specified in the corresponding input file.
+The `pw.x` executable for the Quantum ESPRESSO modeling application, for example, allows for the execution of the following different types of calculation [flavors](../../software/parameters.md#flavors) [^4], to be specified in the corresponding input file.
 
 - 'scf': "self-consistent field" [total ground-state energy](../../properties-directory/scalar/total-energy.md) calculation    
 - 'nscf': for further processing of the results of non-scf calculations (for instance, in DOS calculations)
