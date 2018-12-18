@@ -185,6 +185,7 @@ nav:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
+            - Reciprocal space > convergence:           models/auxiliary-concepts/reciprocal-space/convergence.md
 
     - Models Directory:
         - Overview:                                     models-directory/overview.md
@@ -369,6 +370,7 @@ nav:
             - Set default:                              workflows/actions/set-default.md
             - Bank > Copy from:                         workflows/actions/copy-bank.md
         - Add-ons:
+            - Overview:                                 workflows/addons/overview.md
             - K-point Convergence:                      workflows/addons/convergence-algorithms.md
             - Structural Relaxation:                    workflows/addons/structural-relaxation.md
 
