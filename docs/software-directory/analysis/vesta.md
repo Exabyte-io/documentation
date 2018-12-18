@@ -1,6 +1,6 @@
 # VESTA
 
-VESTA is a 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies. It is free for use for academic, scientific, educational, and noncommercial users. Some of the distinct features of VESTA are listed under Ref. [^1]. Complete documentation manuals and information about VESTA can be accessed via its official website [^2].
+VESTA is a 3D visualization program for structural models, volumetric data such as electron/nuclear densities, and crystal morphologies. Some of the distinct features of VESTA are listed under Ref. [^1]. Complete documentation manuals and information about VESTA can be accessed via its official website [^2].
 
 ## Links
 

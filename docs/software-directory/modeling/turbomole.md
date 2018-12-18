@@ -1,6 +1,6 @@
 # TURBOMOLE
 
-TURBOMOLE is an ab initio computational chemistry program that implements various quantum chemistry methods.  Since 1987, this program has proved to be of great usefulness in many fields of research, including heterogeneous and homogeneous catalysis, organic and inorganic chemistry, spectroscopy, as well as biochemistry. 
+TURBOMOLE is an ab-initio computational chemistry program that implements various quantum chemistry methods.  Since 1987, this program has proved to be of great usefulness in many fields of research, including heterogeneous and homogeneous catalysis, organic and inorganic chemistry, spectroscopy, as well as biochemistry. 
 
 Full instructions on how TURBOMOLE can be operated and adapted to different research contexts can be consulted in its official website [^1].
 
