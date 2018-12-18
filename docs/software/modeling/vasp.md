@@ -4,13 +4,10 @@ The Vienna Ab initio Simulation Package, better known as VASP, is a package for 
 
 The underlying theoretical model is Density Functional Theory (DFT), but the code also allows for the use of post-DFT corrections, such as hybrid functionals mixing DFT and Hartree–Fock exchange, many-body perturbation theory (the GW method), and dynamical electronic correlations within the Random Phase Approximation (RPA).
 
-Complete information and documentation about the VASP code can be found in its corresponding website [^1]. 
+Complete information and documentation about the VASP code can be found in its corresponding website [^1], [^2], [^3]
 
-## Default settings
-
-### Default Pseudopotentials
-
-The list of pseudopotentials currently available on the VASP can be found in Ref. [^1] below. Our platform provides the files for 5.2 and 5.4 version by default.
+!!! note "Default Pseudopotentials"
+    As mentioned in the [dedicated section](../../methods-directory/pseudopotential/default.md), the list of default pseudopotentials follows the versions of the VASP software itself (versions 5.2 and 5.4).
 
 ## Links
 
