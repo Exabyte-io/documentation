@@ -1,6 +1,6 @@
 # Quantum ESPRESSO
 
-Quantum ESPRESSO (QE, also referred to as "espresso" in our platform) is a software suite for ab-initio quantum methods performing general electronic-structure calculations and materials modeling. It is distributed for free under the GNU General Public License. Quantum ESPRESSO is based on [Density Functional Theory](../../models-directory/dft/overview.md), [plane wave basis sets and pseudopotentials](../../methods-directory/pseudopotential/overview.md) (both norm-conserving and ultrasoft). 
+Quantum ESPRESSO (QE, also referred to as **"espresso"** in our platform) is a software suite for ab-initio quantum methods performing general electronic-structure calculations and materials modeling. It is distributed for free under the GNU General Public License. Quantum ESPRESSO is based on [Density Functional Theory](../../models-directory/dft/overview.md), [plane wave basis sets and pseudopotentials](../../methods-directory/pseudopotential/overview.md) (both norm-conserving and ultrasoft). 
 
 ## Executables
 
