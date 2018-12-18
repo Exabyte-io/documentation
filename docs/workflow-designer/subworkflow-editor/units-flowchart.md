@@ -2,7 +2,7 @@
 
 At the bottom of the "Overview" tab page within the Subworkflow Editor interface, under the section titled "Units", the user can inspect the **units flowchart** offering a graphical representation of the subworkflow under consideration. Each unit included in this flowchart represents a distinct elementary unit computation, which can be mainly of purely logical (eg. "if" condition) or simulation (eg. ab-initio calculation) nature. The former category is further is narrated further [in its dedicated page](../../workflows/components/units.md).
 
-An example of elementary units flowchart at the bottom of an "Overview" tab, concerning a band structure calculation implemented with the [Quantum Espresso application](../../software-directory/modeling/quantum-espresso.md), is depicted in the image below:  
+An example of elementary units flowchart at the bottom of an "Overview" tab, concerning a band structure calculation implemented with the [Quantum ESPRESSO application](../../software-directory/modeling/quantum-espresso.md), is depicted in the image below:  
 
 ![Units Flowchart](../../images/workflow-designer/units-flowchart.png "Units Flowchart")
 
