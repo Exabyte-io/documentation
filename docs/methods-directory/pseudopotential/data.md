@@ -1,4 +1,4 @@
-# Structured Data for Plane-wave Pseudopotential Method
+# Structured Data for Plane-Wave Pseudopotential Method
 
 Below, the user can find an example [JSON structured representation](../../data-structured/overview.md) for the [Plane-wave Pseudopotential Method](overview.md). 
 

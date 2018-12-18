@@ -20,7 +20,7 @@ Normally, the application, its specific version and build cannot be changed by t
 
 We maintain a set of input templates (as further explained [here](unit-editor/input-templates.md)) for some of the most common use cases per each application and executable - **flavors**. Users may choose to pre-populate the input based one of the templates by selecting a flavor.
 
-> NOTE: Examples "application", "executables" and "flavors. [Quantum Espresso](../software/modeling/quantum-espresso.md) application breaks its operations into a set of distinct executables with "pw.x" being the most commonly encountered one and "ph.x" being another example. Many different types of computations can be performed within the context of the pw.x executable itself, such as [variable-cell relaxation calculations](../workflows/addons/structural-relaxation.md) via the "pw_vc-relax" flavor, or electronic band structure calculations with "pw_bands". The input content for each of these represent the different flavors.
+> NOTE: Examples "application", "executables" and "flavors. [Quantum ESPRESSO](../software/modeling/quantum-espresso.md) application breaks its operations into a set of distinct executables with "pw.x" being the most commonly encountered one and "ph.x" being another example. Many different types of computations can be performed within the context of the pw.x executable itself, such as [variable-cell relaxation calculations](../workflows/addons/structural-relaxation.md) via the "pw_vc-relax" flavor, or electronic band structure calculations with "pw_bands". The input content for each of these represent the different flavors.
 
 ## Properties and Monitors
 
