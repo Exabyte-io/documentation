@@ -4,7 +4,7 @@ The Vienna Ab initio Simulation Package, better known as VASP, is a package for 
 
 The underlying theoretical model is Density Functional Theory (DFT), but the code also allows for the use of post-DFT corrections, such as hybrid functionals mixing DFT and Hartree–Fock exchange, many-body perturbation theory (the GW method), and dynamical electronic correlations within the Random Phase Approximation (RPA).
 
-Complete information and documentation about the VASP code can be found in its corresponding website [^1]. 
+Complete information about the VASP code can be found in its corresponding website [^1] and documentation manuals [^2] [^3]. 
 
 !!!warning "License Requirements"
     VASP is a proprietary software, and as such it requires a license in order to be operated. All users who would like to use this code are advised to send us a [support request](../../ui/support.md) so that we can check their existing licenses. For academic users, a free usage of VASP can potentially be negotiated. 
