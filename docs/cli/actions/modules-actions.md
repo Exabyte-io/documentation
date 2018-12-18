@@ -20,6 +20,7 @@ The user can **load a certain desired module** from the aforementioned list of a
 
 For example, to use the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) modelling application, the corresponding module can be loaded as follows. All other library dependencies of the desired module will also be loaded automatically in this way.
 
+
 ```bash
 [steve@bohr.exabyte.io:~]$ module load espresso/521-i-174-impi-044
 The module intel/i-174 is loaded
