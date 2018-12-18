@@ -1,6 +1,6 @@
 # Extraction of Properties
 
-The extraction of raw data from simulations computations consists in processing the [output files](../../data-on-disk/overview.md) of [modeling engines](../../software/applications.md) with the help of post-processing software. This is typically done in order to identify the desired properties, and store them in a database for future reference. 
+The extraction of raw data from simulations computations consists in processing the [output files](../../data-on-disk/overview.md) of [modeling engines](../../software/parameters.md) with the help of post-processing software. This is typically done in order to identify the desired properties, and store them in a database for future reference. 
 
 ## Extractor Scripts
 

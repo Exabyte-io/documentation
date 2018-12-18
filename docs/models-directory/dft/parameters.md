@@ -1,6 +1,6 @@
 # Density Functional Theory Parameters
  
-Our platform currently supports multiple first-principles simulation engines (see [applications](../../software/applications.md)). These are based on the Density Functional Theory (DFT) [^1] model.
+Our platform currently supports multiple first-principles simulation engines (see [applications](../../software/parameters.md)). These are based on the Density Functional Theory (DFT) [^1] model.
  
 The reader who wishes to revise the fundamental theoretical framework underlying DFT is referred to the [introductory literature on the subject](references.md).
 

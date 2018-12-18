@@ -1,6 +1,6 @@
 # Templating for Input Scripts
 
-We implement **templating** for generalizing and automating the generation of **input files**, which are necessary for executing relevant simulations through the required [simulation engine](../../software/applications.md). This ensures, for example, that the same template can conveniently be applied to many different [materials](../../materials/overview.md) under the same [simulation job](../../jobs/overview.md).
+We implement **templating** for generalizing and automating the generation of **input files**, which are necessary for executing relevant simulations through the required [simulation engine](../../software/parameters.md). This ensures, for example, that the same template can conveniently be applied to many different [materials](../../materials/overview.md) under the same [simulation job](../../jobs/overview.md).
 
 ## [Concepts](concept.md)
 

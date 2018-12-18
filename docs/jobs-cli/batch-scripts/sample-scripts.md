@@ -3,7 +3,7 @@
 Examples of batch scripts for a few of the [queue types](../../infrastructure/resource/queues.md) available on our platform are given throughout the present page. The reader is referred to the documentation pages explaining the [Resource Manager Directives](directives.md) and [environment modules](../../cli/modules.md) for the explanation of the batch script contents presented herein.
 
 !!!tip "Template job scripts"
-    [Job templates](../../data-on-disk/directories.md#job-script-templates) directory that contains template job scripts for different [applications](../../software/applications.md).
+    [Job templates](../../data-on-disk/directories.md#job-script-templates) directory that contains template job scripts for different [applications](../../software/parameters.md).
 
 ## Debug queue (D)
 

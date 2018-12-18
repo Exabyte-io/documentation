@@ -6,7 +6,7 @@ The reader is referred to the short introductory pages dedicated to each of the 
 
 ## Modeling Applications
 
-The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/applications.md)**. Some of these applications (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through [command line terminal connection](../cli/overview.md) only. Click on the name of the application below to navigate to the corresponding part of the documentation.
+The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/parameters.md)**. Some of these applications (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through [command line terminal connection](../cli/overview.md) only. Click on the name of the application below to navigate to the corresponding part of the documentation.
 
 | Name    |  Version(s)      | Notes      |
 | :-------- |:----------- |:------------- |
