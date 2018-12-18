@@ -10,7 +10,7 @@ Navigating to the interface can be initiated through the "Create Workflow" actio
 
 The Workflow Designer is structured into three main building blocks, and has the typical initial default appearance as shown in the picture below when a new workflow is being created from scratch. In the image below, the three main components are outlined in red. To access their respective documentation pages, **click** on the image below:
 
-<img src="/images/workflow-designer/workflow-designer/workflow-designer-initial.png" usemap="#mapname">
+<img src="/images/workflow-designer/workflow-designer-initial.png" usemap="#mapname">
 
 <map name="mapname">
     <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar/">
