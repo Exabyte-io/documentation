@@ -20,7 +20,7 @@ The Web Context on the other hand has access to all other available variables, s
 
 The "Raw" filter syntax is required when referring to the Execution variables under the "Web Context". This is necessary for preventing the Web Interface from rendering these variables during the **Design-time rendering**, given that such variables are only available during the ensuing **Execution-time rendering** (Design rendering first occurs during the [job design](../../jobs-designer/overview.md) stage, where multiple materials can be selected within a single job design session).
 
-Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) input script template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
+Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) input script template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
 
 ```jinja2
 pseudo_dir = {% raw %}'{{ JOB_WORK_DIR }}/pseudo'{% endraw %}

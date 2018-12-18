@@ -6,7 +6,7 @@ Navigating to the Workflow Tab in [Jobs Designer](overview.md) displays the [Wor
 
 ## Non-Adjustable Settings
 
-Some Workflow parameters can be edited under Jobs Designer, except for those pertaining to the ["Application"](../software/parameters.md), ["Model"](../models/overview.md) and ["Method"](../methods/overview.md) being employed as part of the computation. 
+Some Workflow parameters can be edited under Jobs Designer, except for those pertaining to the ["Application"](../software/components.md), ["Model"](../models/overview.md) and ["Method"](../methods/overview.md) being employed as part of the computation. 
  
 These non-adjustable settings are present both under the ["Overview Tab"](../workflow-designer/subworkflow-editor/overview-tab.md) of Workflow Designer, and inside the editor of the [subworkflow units](../workflow-designer/unit-editor.md). Hovering the mouse over such settings makes it clear that the editing action is forbidden in these cases, as illustrated below.
  

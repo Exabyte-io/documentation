@@ -2,7 +2,7 @@
 
 Our platform provides the GBRV [^1] pseudopotential set at version 1.5 by default for the applications supporting the unified pseudopotential format (UPF).
 
-For [VASP](../../software-directory/modeling/vasp.md) we provide the sets of `paw` pseudopotential for each supported version.
+For [VASP](../../software-directory/modeling/vasp/overview.md) we provide the sets of `paw` pseudopotential for each supported version.
 
 The list of pseudopotentials currently available on the Quantum ESPRESSO website can be found in Ref [^2] below.
 

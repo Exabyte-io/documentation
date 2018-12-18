@@ -59,7 +59,7 @@ Here, the possibility to design new computational workflows is offered.
 
 #### 2A. Density Functional Theory 
 
-For example, our platform supports the [Density Functional Theory](../../models-directory/dft/overview.md) (DFT) theoretical framework for executing electronic structure calculations, as implemented by the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) or [VASP](../../software-directory/modeling/vasp.md) applications. Plans are under way to expand the offer to new atomistic simulation approaches, such as the classical Molecular Dynamics and Multi-scale techniques. 
+For example, our platform supports the [Density Functional Theory](../../models-directory/dft/overview.md) (DFT) theoretical framework for executing electronic structure calculations, as implemented by the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) or [VASP](../../software-directory/modeling/vasp/overview.md) applications. Plans are under way to expand the offer to new atomistic simulation approaches, such as the classical Molecular Dynamics and Multi-scale techniques. 
 
 ### 3. Connect Remotely 
 

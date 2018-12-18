@@ -6,7 +6,7 @@ In this page we review setting input atom-specific flags based on the data about
 
 ## Source
 
-The template code below sets the value of magnetic moments for ferromagnetic elements present in a material structure to number `5`, and alternates the sign. Non-magnetic elements are instead set to zero. The rendered output of this template is suitable for a [VASP](../../software-directory/modeling/vasp.md) simulation.
+The template code below sets the value of magnetic moments for ferromagnetic elements present in a material structure to number `5`, and alternates the sign. Non-magnetic elements are instead set to zero. The rendered output of this template is suitable for a [VASP](../../software-directory/modeling/vasp/overview.md) simulation.
                                           
 ```jinja2
 MAGMOM = {% spaceless %}
@@ -34,7 +34,7 @@ Each line number in the above block of statements is further explained in the en
 
 ### 1. Define MAGMOM Variable
 
-We begin by defining the "MAGMOM" variable [^1], which will be included in the input file for a [VASP](../../software-directory/modeling/vasp.md) computation, within the "INCAR" input parameters file associated with this code. `{% spaceless %}` flag is explained [here](../../workflows/templating/swig.md#spaceless)
+We begin by defining the "MAGMOM" variable [^1], which will be included in the input file for a [VASP](../../software-directory/modeling/vasp/overview.md) computation, within the "INCAR" input parameters file associated with this code. `{% spaceless %}` flag is explained [here](../../workflows/templating/swig.md#spaceless)
 
 ### 2. Define Ferromagnetic Elements
 
@@ -42,7 +42,7 @@ In the second line, we [set](../../workflows/templating/engine.md#variables-assi
 
 ### 3. Read POSCAR Content
 
-We then read the content ot POSCAR used by [VASP](../../software-directory/modeling/vasp.md), containing the numerical data defining the crystal structure under investigation. We assign the text contents of this structure file to the variable "poscar_string". 
+We then read the content ot POSCAR used by [VASP](../../software-directory/modeling/vasp/overview.md), containing the numerical data defining the crystal structure under investigation. We assign the text contents of this structure file to the variable "poscar_string". 
 
 ### 4. Read Atomic Coordinates
 

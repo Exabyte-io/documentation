@@ -6,12 +6,12 @@ The reader is referred to the short introductory pages dedicated to each of the 
 
 ## Modeling Applications
 
-The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/parameters.md)**. Some of these applications (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through [command line terminal connection](../cli/overview.md) only. Click on the name of the application below to navigate to the corresponding part of the documentation.
+The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/components.md)**. Some of these applications (Quantum ESPRESSO and VASP, for instance) have extensive integrated support in the user interface, and others are currently available through [command line terminal connection](../cli/overview.md) only. Click on the name of the application below to navigate to the corresponding part of the documentation.
 
 | Name    |  Version(s)      | Notes      |
 | :-------- |:----------- |:------------- |
-| [Quantum ESPRESSO](modeling/quantum-espresso.md) | 5.1-6.0 | Fully integrated |
-| [VASP](modeling/vasp.md)      | 5.3.5-5.4.4 | Fully integrated |
+| [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.0 | Fully integrated |
+| [VASP](modeling/vasp/overview.md)      | 5.3.5-5.4.4 | Fully integrated |
 | [LAMMPS](modeling/lammps.md)    | 11-2016 | Available through command line |
 | [NWChem](modeling/nwchem.md)    | 6.6     | Available through command line |
 | [CP2K](modeling/cp2k.md)      | 4.1     | Available through command line |

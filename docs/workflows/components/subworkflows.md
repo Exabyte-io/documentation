@@ -1,6 +1,6 @@
 # Subworkflow
 
-We define a **Subworkflow** as a set of distinct **units** (elementary calculations) combined together in a flowchart (algorithm), in order to extract one or more [properties](../../properties/overview.md). A subworkflow must be specific to a particular simulation engine [application](../../software/parameters.md), [model](../../models/overview.md) and [method](../../methods/overview.md).
+We define a **Subworkflow** as a set of distinct **units** (elementary calculations) combined together in a flowchart (algorithm), in order to extract one or more [properties](../../properties/overview.md). A subworkflow must be specific to a particular simulation engine [application](../../software/components.md), [model](../../models/overview.md) and [method](../../methods/overview.md).
 
 ## Model
 
@@ -12,7 +12,7 @@ A model may have multiple numerical **Methods**, or computational implementation
 
 ## Simulation Engine
 
-A **Simulation Engine** is an implementation of a simulation algorithm in software. The engines available on our platform are reviewed [in this section](../../software/parameters.md) of the documentation.
+A **Simulation Engine** is an implementation of a simulation algorithm in software. The engines available on our platform are reviewed [in this section](../../software/components.md) of the documentation.
 
 ## Subworkflow Add-ons
 

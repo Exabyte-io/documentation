@@ -26,7 +26,7 @@ The Total Energy of a Material is comprised of several **Energy Contributions**.
 
 ## Types of Contributions
 
-Specific types of energy contributions are commonly encountered in [DFT](../../models-directory/dft/overview.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/parameters.md) employed, as explained in what follows.
+Specific types of energy contributions are commonly encountered in [DFT](../../models-directory/dft/overview.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/components.md) employed, as explained in what follows.
 
 The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
 
@@ -34,7 +34,7 @@ The reader is referred to the links presented at the bottom of the page for a th
 
 ### Generic
 
-The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software-directory/modeling/vasp.md) and [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV.
+The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software-directory/modeling/vasp/overview.md) and [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) calculations. In all instances, the results are returned in units of eV.
 
 ![Common Contributions](../../images/properties-directory/common-contributions.png "Common Contributions")
 

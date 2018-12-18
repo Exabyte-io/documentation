@@ -2,7 +2,7 @@
 
 Material Modeling engines are used in computational materials science to implement the [computational methods](../../methods/overview.md) available for calculating [material properties](../../properties/overview.md) of interest [^1] [^2]. 
 
-These engines may be based on such [theoretical models](../../models/overview.md) as Hartree-Fock Theory, Density Functional Theory (DFT), classical Molecular Dynamics, Quantum Monte Carlo or semi-empirical Quantum Chemistry methods. They can be of either open-source or proprietary nature, and are typically comprised of numerous [executables](../parameters.md#executables), for implementing the different computation [flavors](../parameters.md#flavors) that they were designed to support.
+These engines may be based on such [theoretical models](../../models/overview.md) as Hartree-Fock Theory, Density Functional Theory (DFT), classical Molecular Dynamics, Quantum Monte Carlo or semi-empirical Quantum Chemistry methods. They can be of either open-source or proprietary nature, and are typically comprised of numerous [executables](../components.md#executables), for implementing the different computation [flavors](../components.md#flavors) that they were designed to support.
 
 ## Implementation on our Platform
 

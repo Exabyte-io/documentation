@@ -217,7 +217,7 @@ nav:
 
     - Software:
         - Overview:                                     software/overview.md
-        - Parameters:                                   software/parameters.md
+        - Components:                                   software/components.md
         - Data:                                         software/data.md
         - Classification:
             - Overview:                                 software/classification/overview.md
@@ -231,8 +231,22 @@ nav:
     - Software Directory:
         - Overview:                                     software-directory/overview.md
         - Modeling:
-            - Quantum ESPRESSO:                         software-directory/modeling/quantum-espresso.md
-            - VASP:                                     software-directory/modeling/vasp.md
+            - Quantum ESPRESSO (QE):
+                # Basic information, Supported Versions, and Links
+                - QE > Overview:                        software-directory/modeling/quantum-espresso/overview.md
+                # List of Executables, Flavors
+                - QE > Components:                      software-directory/modeling/quantum-espresso/components.md
+                # JSON data with the following headers
+                # Quantum ESPRESSO: Structured Data
+                # Application
+                # Compute Parameters
+                - QE > Data:                            software-directory/modeling/quantum-espresso/data.md
+                - QE > Compute Parameters:              software-directory/modeling/quantum-espresso/compute-parameters.md
+            - VASP:
+                - VASP > Overview:                      software-directory/modeling/vasp/overview.md
+                - VASP > Components:                    software-directory/modeling/vasp/components.md
+                - VASP > Data:                          software-directory/modeling/vasp/data.md
+                - VASP > Compute Parameters:            software-directory/modeling/vasp/compute-parameters.md
             - TurboMole:                                software-directory/modeling/turbomole.md
             - LAMMPS:                                   software-directory/modeling/lammps.md
             - NWChem:                                   software-directory/modeling/nwchem.md
