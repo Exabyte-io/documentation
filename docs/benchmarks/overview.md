@@ -16,4 +16,4 @@ Example results of a high-throughput screening benchmark are presented [here](hi
 
 2. Additional tests performed around the same time are as explained [here](vendor-comparison.md).
 
-3. 2018 Benchmarks for [VASP](../software-directory/modeling/vasp.md) and [GROMACS](../software-directory/modeling/gromacs.md), are documented [here](2018-11-12-comparison.md).
+3. 2018 Benchmarks for [VASP](../software-directory/modeling/vasp/overview.md) and [GROMACS](../software-directory/modeling/gromacs.md), are documented [here](2018-11-12-comparison.md).

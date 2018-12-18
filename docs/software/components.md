@@ -10,9 +10,9 @@ Applications are typically run via the launching of their respective executable 
 
 ### Example
 
-The [Quantum ESPRESSO](../software-directory/modeling/quantum-espresso.md) modeling application for example is comprised of several main input executables, included as part of its distribution package, such as `pw.x`, `ph.x`, `bands.x` etc.
+The [Quantum ESPRESSO](../software-directory/modeling/quantum-espresso/overview.md) modeling application for example is comprised of several main input executables, included as part of its distribution package, such as `pw.x`, `ph.x`, `bands.x` etc.
 
-Other applications such as [VASP](../software-directory/modeling/vasp.md) on the other hand contain just a single main executable, through which all of its supported computation features can be performed.
+Other applications such as [VASP](../software-directory/modeling/vasp/overview.md) on the other hand contain just a single main executable, through which all of its supported computation features can be performed.
 
 ## Flavors
 

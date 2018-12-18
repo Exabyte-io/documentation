@@ -16,7 +16,7 @@ Optionally, the check-box "Draft" on the left can be selected. In this case the 
 
 ## The "Application" Section
 
-The subsequent "Application" section in the "Overview" tab allows the user to choose the computational engine (otherwise known as [application](../../software/parameters.md)) to apply under the present Workflow.
+The subsequent "Application" section in the "Overview" tab allows the user to choose the computational engine (otherwise known as [application](../../software/components.md)) to apply under the present Workflow.
 
 ## The "Model" Section
 

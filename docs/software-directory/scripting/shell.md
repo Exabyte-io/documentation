@@ -6,7 +6,7 @@ Shell scripts can be edited directly via the [Command Line Interface](../../cli/
 
 ## Example
 
-An example for running a [Quantum ESPRESSO](../modeling/quantum-espresso.md) job through a shell script executed via [Command Line Interface](../../jobs-cli/overview.md) can be found inside [this tutorial page](../../tutorials/jobs-cli/job-cli-example.md#4.-combined-input-script).
+An example for running a [Quantum ESPRESSO](../modeling/quantum-espresso/overview.md) job through a shell script executed via [Command Line Interface](../../jobs-cli/overview.md) can be found inside [this tutorial page](../../tutorials/jobs-cli/job-cli-example.md#4.-combined-input-script).
 
 ## Links
 

@@ -1,6 +1,6 @@
 # Files
 
-Simulations [data](../data/overview.md) is naturally organized in Files in order to interact and exchange information with the [simulation engines](../software/parameters.md). These could be **input** parameters defining the nature of the simulation, and the **output** of the calculation upon its completion. 
+Simulations [data](../data/overview.md) is naturally organized in Files in order to interact and exchange information with the [simulation engines](../software/components.md). These could be **input** parameters defining the nature of the simulation, and the **output** of the calculation upon its completion. 
 
 ## Files in the Web Interface
 
