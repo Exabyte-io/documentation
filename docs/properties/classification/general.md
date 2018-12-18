@@ -69,4 +69,4 @@ In the context of data obtained by simulations, it could happen that the value o
 
 ### Example 
 
-For atomistic simulations done using the [planewave pseudopotential method](../../methods-directory/pseudopotential/overview.md) we can extract the Fermi energy. However, there is no physical meaning to its numerical value, as it is heavily dependent on the pseudization scheme. Conversely the electronic band gap, or the difference between electronic energies below the Fermi level and above it, has physical meaning and can be directly compared with experimental measurements. 
+For atomistic simulations done using the [plane-wave pseudopotential method](../../methods-directory/pseudopotential/overview.md) we can extract the Fermi energy. However, there is no physical meaning to its numerical value, as it is heavily dependent on the pseudization scheme. Conversely the electronic band gap, or the difference between electronic energies below the Fermi level and above it, has physical meaning and can be directly compared with experimental measurements. 

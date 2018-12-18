@@ -1,6 +1,6 @@
 <!-- by MH -->
 
-This page explains how to run a k-point convergence study using planewave pseudopotential density functional theory [[1](#links)]. K-point convergence can be run either as a stand-alone workflow or prepended to characteristic property calculation.
+This page explains how to run a k-point convergence study using plane-wave pseudopotential density functional theory [[1](#links)]. K-point convergence can be run either as a stand-alone workflow or prepended to characteristic property calculation.
 
 # Background
 

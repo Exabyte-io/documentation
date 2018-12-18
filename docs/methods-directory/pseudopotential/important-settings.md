@@ -4,7 +4,7 @@ An example of appearance of the "Important Settings" tab within the [Subworkflow
 
 ![Important Settings](../../images/workflow-designer/important-settings-tab.png "Important Settings")
 
-In this image, the two most common types of [input parameters](parameters.md) encountered in general [DFT calculations](../../models-directory/dft/overview.md) implemented via the [plane-waves pseudopotential method](overview.md) are both shown to be contained as part of this total energy subworkflow. They consist in, respectively, the wavefunction and the density "cutoffs", and the size of the grid of reciprocal k-points (the so-called "kgrid").
+In this image, the two most common types of [input parameters](parameters.md) encountered in general [DFT calculations](../../models-directory/dft/overview.md) implemented via the [Plane-wave Pseudopotential Method](overview.md) are both shown to be contained as part of this total energy subworkflow. They consist in, respectively, the wavefunction and the density "cutoffs", and the size of the grid of reciprocal k-points (the so-called "kgrid").
 
 ## Cutoff 
 
