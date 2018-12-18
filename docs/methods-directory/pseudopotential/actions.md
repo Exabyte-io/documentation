@@ -36,7 +36,7 @@ This expression first searches for pseudopotentials released under version 5.4 o
 
 This particular regular expression operation applied to the available set of VASP pseudopotentials is demonstrated in the animation below:
 
-<img data-gifffer="/images/methods/regular-expression.gif" />
+![Regular Expressions](../../images/methods/regular-expression.gif "Regular Expressions")
  
 ## Links
 

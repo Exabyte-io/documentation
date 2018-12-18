@@ -1,4 +1,4 @@
-# Parameters for the Planewave Pseudopotential Method 
+# Parameters for the Plane-wave Pseudopotential Method 
 
 We review in this page the most important computational parameters for defining [plane-wave pseudopotential calculations](overview.md), based upon the theoretical framework of the [DFT model](../../models-directory/dft/overview.md).
 

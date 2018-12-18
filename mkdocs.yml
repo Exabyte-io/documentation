@@ -371,7 +371,7 @@ nav:
             - Bank > Copy from:                         workflows/actions/copy-bank.md
         - Add-ons:
             - Overview:                                 workflows/addons/overview.md
-            - K-point Convergence:                      workflows/addons/convergence-algorithms.md
+            - Convergence:                              workflows/addons/convergence-algorithms.md
             - Structural Relaxation:                    workflows/addons/structural-relaxation.md
 
 
