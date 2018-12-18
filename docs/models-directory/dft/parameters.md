@@ -10,15 +10,15 @@ We present in what follows the [parameters](../../models/parameters.md) which ap
 
 We support the following **Subtypes**:
 
-- Generalized Gradient Approximation (GGA) [^1] (default)
-- Local Density Approximation (LDA) [^1]
+- Generalized Gradient Approximation (`gga`) [^1] (default)
+- Local Density Approximation (`lda`) [^1]
 
 ## Functional
 
 We support the following list of exchange-correlation functionals.
 
-- Perdew, Burke and Ernzerhof (PBE) [^3] (default).
-- Perdew-Zunger (PZ81) [^4]
+- Perdew, Burke and Ernzerhof (`pbe`) [^3] (default).
+- Perdew-Zunger (`pz`) [^4]
 
 > NOTE: for planewave pseudopotential DFT the functional part matches that used in the corresponding [pseudopotential](../../methods-directory/pseudopotential/overview.md)
 
@@ -26,8 +26,8 @@ We support the following list of exchange-correlation functionals.
 
 The following can be used as example refiners for the DFT model.
 
-- Hybrid Screened Exchange (HSE) [^5] 
-- GW approximation [^6] (G0W0, for example)   
+- Hybrid Screened Exchange (`hse`) [^5] 
+- GW approximation [^6] (`g0w0`, for example)   
 
 ## Modifiers
 

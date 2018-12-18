@@ -11,7 +11,7 @@ The variable-cell relaxation calculation bears its name from the fact that the m
 
 ### Equilibrium condition on the internal stress tensor
 
-By an optimized (or relaxed) crystal structure, it is generally meant firstly that the internal stress tensor components of the material should match the externally applied pressure as closely as possible, which for a material under equilibrium conditions corresponds to the ambient atmospheric pressure (the default choice for a new workflow creation). This ambient pressure is in fact typically approximated as exactly zero in DFT ab-initio calculations, since it is normally considered to be negligible compared to the usual pressures of at least order kbar encountered in such calculations, necessary to perceptibly distort any solid-state crystal structure. 
+By an optimized (or relaxed) crystal structure, it is generally meant firstly that the internal stress tensor components of the material should match the externally applied pressure as closely as possible, which for a material under equilibrium conditions corresponds to the ambient atmospheric pressure (the default choice for a new workflow creation). This ambient pressure is in fact typically approximated as exactly zero, since it is normally considered to be negligible compared to the usual pressures of at least order kbar encountered in such calculations, necessary to perceptibly distort any solid-state crystal structure. 
 
 ### Equilibrium condition on the inter-atomic forces
 

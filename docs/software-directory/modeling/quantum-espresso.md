@@ -25,13 +25,7 @@ The `pw.x` executable for the Quantum ESPRESSO modeling application, for example
     
 ## Supported Versions
 
-We provide implementations and support for each of the 5.2.1, 5.4.0 and 6.0.0 versions of Quantum ESPRESSO.
-
-## Default settings
-
-### Default Pseudopotentials
-
-The list of pseudopotentials currently available on the Quantum Espresso website can be found in Ref [^5] below. Our platform provides the GBRV [^6] set at version 1.5 by default.
+We support 5.2.1, 5.4.0, 6.0.0, and 6.3.0 versions of Quantum ESPRESSO.
 
 ## Links
 
@@ -39,7 +33,5 @@ The list of pseudopotentials currently available on the Quantum Espresso website
 [^2]: [Input file description of the pw.x code](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
 [^3]: [Quantum ESPRESSO package-specific documentation](https://www.quantum-espresso.org/resources/users-manual/specific-documentation)
 [^4]: [PWscf User’s Guide, Official Documentation](https://www.quantum-espresso.org/Doc/pw_user_guide.pdf)
-[^5]: [Pseudopotentials list for Quantum ESPRESSO](http://www.quantum-espresso.org/pseudopotentials/)
-[^6]: [GBRV pseudopotentials, Rutgers](https://www.physics.rutgers.edu/gbrv/)
 [^7]: [Official Quantum ESPRESSO GitHub repository](https://github.com/QEF/q-e/tags)
 [^8]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)

@@ -8,9 +8,7 @@ The subworkflow name is visible at the left-end of the subworkflow actions menu 
 
 ## Insert Add-ons
 
-On the right-hand side of the subworkflow actions menu bar, a series of buttons and a number spinner are present. The first one of these, starting from the left, is a three-dotted drop-down menu button allowing for the insertion of further Add-on subworkflows to the overall workflow flowchart, in addition to those already described in the final section of [this page](../header-menu.md). 
-
-For example, through this drop-down menu the user can add a "Convergence" subworkflow add-on for performing preliminary convergence tests on [input parameters](../../methods/parameters.md). Such convergence add-on is extensively reviewed in its corresponding [documentation page](../../workflows/addons/convergence-algorithms.md). 
+On the right-hand side of the subworkflow actions menu bar, a series of buttons and a number spinner are present. The first one of these, starting from the left, is a three-dotted drop-down menu button allowing for the insertion of further [Add-on subworkflows](../../workflows/addons/overview.md) to the overall workflow flowchart, in addition to those already described in the final section of [this page](../header-menu.md#inserting-add-ons). 
 
 Following any such addition, the resulting sorted and complete list of subworkflows will always be shown on the left-hand sidebar of the Designer interface.
 

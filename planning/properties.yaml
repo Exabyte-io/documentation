@@ -23,7 +23,7 @@ READY
         - Extractors
         # Extraction of Raw Properties
             % Extraction of data consist in parsing the output data of simulation codes by post-processing software. Computational scientists are familiar with this concept and often have a set of scripts or "extractors". Our software does exactly that and forms structured data according to the Data Convention (Schemas) to subsequently store properties in the database.
-            % For example, the retrieveal of the total energy in a Quantum Espresso output file can be done by looking for the "!" character, and extracting the ensuing content of the same line. Alternatively, a corresponding XML file can be parsed.
+            % For example, the retrieveal of the total energy in a Quantum ESPRESSO output file can be done by looking for the "!" character, and extracting the ensuing content of the same line. Alternatively, a corresponding XML file can be parsed.
         # User-defined Extractors
             % We plan to allow users to write their own extractor scripts to extract new properties, and share such scripts with other users
 
