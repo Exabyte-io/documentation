@@ -5,3 +5,7 @@ Below, the user can find an example [JSON structured representation](../../data-
 ```json tab="Schema" 
 {!schema/science/models/dft.json!}
 ```
+
+```json tab="Example" 
+{!example/science/models/dft.json!}
+```

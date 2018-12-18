@@ -185,6 +185,7 @@ nav:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
+            - Reciprocal space > convergence:           models/auxiliary-concepts/reciprocal-space/convergence.md
 
     - Models Directory:
         - Overview:                                     models-directory/overview.md
@@ -206,6 +207,7 @@ nav:
         - Overview:                                     methods-directory/overview.md
         - Plane-waves and Pseudopotentials:
             - Overview:                                 methods-directory/pseudopotential/overview.md
+            - Default:                                  methods-directory/pseudopotential/default.md
             - Data:                                     methods-directory/pseudopotential/data.md
             - Parameters:                               methods-directory/pseudopotential/parameters.md
             - Precision:                                methods-directory/pseudopotential/precision.md
@@ -377,7 +379,8 @@ nav:
             - Set default:                              workflows/actions/set-default.md
             - Bank > Copy from:                         workflows/actions/copy-bank.md
         - Add-ons:
-            - K-point Convergence:                      workflows/addons/convergence-algorithms.md
+            - Overview:                                 workflows/addons/overview.md
+            - Convergence:                              workflows/addons/convergence-algorithms.md
             - Structural Relaxation:                    workflows/addons/structural-relaxation.md
 
 
