@@ -15,6 +15,18 @@ We provide support and implementations for both the 5.3.5 and 5.4.4 versions of 
 
 !!! note "Default Pseudopotentials"
     As mentioned in the [dedicated section](../../../methods-directory/pseudopotential/default.md), the list of default pseudopotentials follows the versions of the VASP software itself (versions 5.2 and 5.4).
+    
+## [Components](components.md)
+
+We introduce the different [components](../../../software/components.md) which are part of the VASP software distribution [in this page](components.md).
+
+## [Compute Parameters](compute-parameters.md)
+
+We explain the specific aspects of [compute parameters](../../../infrastructure/compute/parameters.md) [here](compute-parameters.md).
+
+## [Data](data.md)
+
+The [structured representation](../../../data-structured/overview.md) for VASP is explained [in this page](data.md).
 
 ## Links
 
