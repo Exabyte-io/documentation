@@ -14,6 +14,6 @@ Specific features of this Explorer consist in the nature of the information disp
 
 The different aspects of this property-specific information can be selected from the appropriate [columns selector](../../entities-general/ui/explorer.md#columns-selector) as shown in the image below, where only the property-specific options have been left ticked. 
 
-Such specific options include information on the [simulation engine](../../software/applications.md), [model](../../models/overview.md), [method](../../methods/overview.md) and [precision](../../methods/data.md) pertaining to the corresponding computed property. The numerical value of the property is also displayed here, when it is applicable in the case of [scalar quantities](../classification/general.md). 
+Such specific options include information on the [simulation engine](../../software/components.md), [model](../../models/overview.md), [method](../../methods/overview.md) and [precision](../../methods/data.md) pertaining to the corresponding computed property. The numerical value of the property is also displayed here, when it is applicable in the case of [scalar quantities](../classification/general.md). 
 
 ![Property Specific Columns](../../images/properties/property-specific-columns.png "Property Specific Columns")

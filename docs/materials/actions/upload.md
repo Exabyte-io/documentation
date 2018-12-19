@@ -2,7 +2,7 @@
 
 We support uploading structural data in the file formats containing the lattice geometry and the ionic positions of the crystal structure under investigation. 
 
-At present CIF and POSCAR formats are supported [^1] and [^2]. The latter format represents a standard way of defining and inputting crystal structure information to [VASP code](../../software/modeling/vasp.md), one of the simulations engines incorporated into our platform.
+At present CIF and POSCAR formats are supported [^1] and [^2]. The latter format represents a standard way of defining and inputting crystal structure information to [VASP code](../../software-directory/modeling/vasp/overview.md), one of the simulations engines incorporated into our platform.
 
 ## Open Upload Dialog
 

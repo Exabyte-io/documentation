@@ -1,6 +1,6 @@
 # Exabyte Templating Convention
 
-Following the [general introduction](concept.md) to the templating concepts and [engines](engines.md), we now review the specific aspects concerning its implementation in the context of our platform.
+Following the [general introduction](concept.md) to the templating concepts and [engines](jinja.md), we now review the specific aspects concerning its implementation in the context of our platform.
 
 ## Contexts in our Platform
 
@@ -14,7 +14,7 @@ The context available to templates on web interface, containing materials, workf
 
 The context passed to the templates at runtime. This context provides system-level parameters such as `JOB_WORK_DIR` variable which defines the main [Working Directory](../../jobs-cli/batch-scripts/directories.md) for the [Job](../../jobs/overview.md) under consideration. This is a system-level [Environment Variable](../../jobs-cli/batch-scripts/directives.md#environment-variables) that will be resolved only during the the runtime.
 
-### "Raw" Syntax
+### Raw Syntax
 
 The "Raw" filter syntax is used to prevent the Web Interface from rendering variables during the **Design-time Rendering**, given that such variables are only available during the ensuing **Runtime Rendering**. Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
 

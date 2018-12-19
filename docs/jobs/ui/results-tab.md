@@ -8,7 +8,7 @@ The results for each computational [unit](../../workflow-designer/unit-editor.md
 
 ### Naming Convention
 
-Panels are named according to the format convention "Subworkflow Name - Unit Name". The name of the [application](../../software/overview.md) implemented in the current unit is also shown directly below.
+Panels are named according to the format convention "Subworkflow Name - Unit Name". The name of the [application](../../software-directory/overview.md) implemented in the current unit is also shown directly below.
  
 ### Collapse / Expand
  

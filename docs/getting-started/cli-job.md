@@ -1,6 +1,6 @@
 # Command-line Jobs
 
-You may want more control over the workflow execution or run a type of calculation we have yet to implement. For that purpose we provide access through command-line terminal.
+You may want more control over the workflow execution or run a type of calculation we have yet to implement. For that purpose we provide access through command line terminal.
 
 ## Command-line terminal
 

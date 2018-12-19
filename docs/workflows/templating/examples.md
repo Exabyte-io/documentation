@@ -1,10 +1,10 @@
 # Template Examples
 
-The present page contains example(s) of [unit](../components/units.md) input [templates](overview.md), implemented using the [templating engine](engines.md), in order to generate the input files for the [simulation engines](../../software/overview.md) supported on our platform.
+The present page contains example(s) of [unit](../components/units.md) input [templates](overview.md), implemented using the [templating engine](jinja.md), in order to generate the input files for the [simulation engines](../../software/overview.md) supported on our platform.
 
 ## Quantum ESPRESSO Example
 
-For example, the input file template shown in the expandable section below, for a sample [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculation. 
+For example, the input file template shown in the expandable section below, for a sample [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) calculation. 
 
 ### Template
 
@@ -153,4 +153,4 @@ K_POINTS automatic
 
 #### Runtime Render
 
-In the rendered text of the unit above, there are still flags that are not resolved, such as `{{JOB_WORK_DIR}}`, for example. These will be rendered during the Run time, as explained [here](exabyte-conventions.md#"raw"-syntax-for-execution-variables-in-web-context).
+In the rendered text of the unit above, there are still flags that are not resolved, such as `{{JOB_WORK_DIR}}`, for example. These will be rendered during the Run time, as explained [here](exabyte-convention.md#raw-syntax).

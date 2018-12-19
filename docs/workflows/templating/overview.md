@@ -1,14 +1,14 @@
 # Templating for Input Scripts
 
-We implement **templating** for generalizing and automating the generation of **input files**, which are necessary for executing relevant simulations through the required [simulation engine](../../software/applications.md). This ensures, for example, that the same template can conveniently be applied to many different [materials](../../materials/overview.md) under the same [simulation job](../../jobs/overview.md).
+We implement **templating** for generalizing and automating the generation of **input files**, which are necessary for executing relevant simulations through the required [simulation engine](../../software/components.md). This ensures, for example, that the same template can conveniently be applied to many different [materials](../../materials/overview.md) under the same [simulation job](../../jobs/overview.md).
 
 ## [Concepts](concept.md)
 
 We review and explain the general concept of templating in computer science in [this page](concept.md). 
 
-## [Engines](engines.md)
+## [Jinja](jinja.md)
 
-[Under this page](engines.md) we introduce the employed template engines along with the basic syntax we adopt.
+[Under this page](jinja.md) we introduce the basic syntax of the template engine we adopt.
 
 ## [Convention](exabyte-convention.md)
 
