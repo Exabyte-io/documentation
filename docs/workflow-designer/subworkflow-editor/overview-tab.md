@@ -2,7 +2,7 @@
 
 The general appearance of the typical content of the "Overview" tab is presented in the image below, where four main sections are emphasized and will be described in turn throughout the rest of this documentation page:
 
-<img src="/images/workflow-designer/overview-tab.png"/>
+![The Overview Tab](../../images/workflow-designer/overview-tab.png "The Overview Tab")
 
 ## The "Properties" Section
 

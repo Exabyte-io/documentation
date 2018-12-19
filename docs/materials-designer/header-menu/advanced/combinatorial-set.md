@@ -14,7 +14,7 @@ This feature lets users create multiple materials at once using an extended synt
 
 Open the "Generate Combinatorial Set" dialog via the `Advanced` menu. The dialog has the following appearance:
 
-<img src="/images/materials-designer/Generate-Combinatorial-Set.png"/>
+![The Generation Dialog](../../../images/materials-designer/Generate-Combinatorial-Set.png "The Generation Dialog")
  
 The dialog features a text field where the crystal basis of the desired combinatorial set can be edited, according to the format illustrated in the forthcoming examples. During the generation, the crystal lattice parameters will be taken for the currently selected structure. 
 

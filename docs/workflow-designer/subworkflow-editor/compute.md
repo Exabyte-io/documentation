@@ -6,6 +6,6 @@ Please refer to [this page](../../infrastructure/overview.md) for a detailed tec
 
 The appearance of this "Compute" tab is displayed below, with its corresponding different sections highlighted:
 
-<img src="/images/workflow-designer/compute-tab.png"/>
+![The Compute tab](../../images/workflow-designer/compute-tab.png "The Compute tab")
 
 Please refer to [this page](../../infrastructure/compute/overview.md) for a comprehensive description of each separate section in this tab.

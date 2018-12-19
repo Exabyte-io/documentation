@@ -2,7 +2,7 @@
 
 The `Edit` menu in the top menu bar of the Materials Designer interface makes it possible to navigate through the various changes made to the material structure under consideration during the current session. The position of this menu within the overall interface is highlighted below:
 
-<img src="/images/materials-designer/edit-menu.png"/>
+![Edit Menu](../../images/materials-designer/edit-menu.png "Edit Menu")
 
 
 ## Undo
