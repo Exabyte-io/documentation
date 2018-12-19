@@ -254,7 +254,7 @@ nav:
                 - Overview:                             software-directory/scripting/python/overview.md
                 - Data:                                 software-directory/scripting/python/data.md
         - Machine Learning (ML):
-            - Exabyte ML Engine:
+            - Exabyte ML:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
                 - Data:                                 software-directory/machine-learning/exabyte/data.md
         - Analysis & Visualization:
