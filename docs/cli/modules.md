@@ -1,9 +1,9 @@
 # Environment Modules
 
-Software libraries and applications are available for use under the command-line interface (CLI) through the [Environment Modules] implemented through its main executable - `module`.
+Software libraries and applications are available for use under the command line interface (CLI) through the [Environment Modules] implemented through its main executable - `module`.
 
 !!! note "Module help"
-    As with many other command-line tools `module help` explains the usage of the module command.
+    As with many other command line tools `module help` explains the usage of the module command.
 
 ## List Available Modules
 

@@ -1,6 +1,6 @@
 # Text Editors
 
-Under the [Command Line Interface Environment](../../cli/overview.md) of our platform, we have included two widely-used advanced command-line text editors: **vim** [^1] and **emacs** [^2]. These can conveniently be employed for editing [programming scripts](../../software/classification/scripting.md), or for inspecting [simulation data files](../../data-on-disk/overview.md).
+Under the [Command Line Interface Environment](../../cli/overview.md) of our platform, we have included two widely-used advanced command line text editors: **vim** [^1] and **emacs** [^2]. These can conveniently be employed for editing [programming scripts](../../software/classification/scripting.md), or for inspecting [simulation data files](../../data-on-disk/overview.md).
 
 Other basic text editors found by default in UNIX-based operating systems are also available [^3].
 

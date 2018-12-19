@@ -15,7 +15,7 @@ Tools can be accessed through one or more of the following methods:
 
 The platform currently offers the choice between the following software engines for modeling, otherwise known as **[applications](../software/components.md)**.
 
-| Name    |  Version(s)      | Access scenarios (see previous section)      |
+| Name    |  Version(s)      | Access Scenarios (see previous section)      |
 | :-------- | ----------- | -------------|
 | [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.0 | 1, 3|
 | [VASP](modeling/vasp/overview.md)      | 5.3.5-5.4.4 | 1, 3 |
@@ -25,12 +25,7 @@ The platform currently offers the choice between the following software engines 
 | [GROMACS](modeling/gromacs.md) |   5.1.4  | 3 |
 | [Turbomole](modeling/turbomole.md) | 7.0     | 2, 3 |
 
-!!!info "Loading Modeling Applications via Command Line Interface"
-    We package modeling software available via [Command Line Interface](../cli/overview.md) as pre-compiled [modules](../cli/modules.md). Instructions on how such modules can be loaded and made available for use can be found [here](../cli/actions/modules-actions.md).
-
-## Machine Learning Applications
-
-<!-- TODO by GM: add link to exabyte-ml in the directory and version 0.1.0 -->
+## Machine Learning
 
 We have a proof-of-concept support for machine learning through [Exabyte-ML](machine-learning/exabyte/overview.md). This application is accessible via the [subworkflow editor interface](../workflow-designer/subworkflow-editor/overview.md) only.
 
@@ -38,7 +33,7 @@ We have a proof-of-concept support for machine learning through [Exabyte-ML](mac
 
 We support the following structural analysis and visualization tools through a [remote desktop connection](../remote-connection/remote-desktop.md). The reader may click each entry listed below to be redirected to the software's corresponding documentation introduction.
 
-| Name      |  Version(s) | Access scenarios (see previous section) |
+| Name      |  Version(s) | Access Scenarios (see previous section) |
 | :-------- | ----------- | ------------- |
 | [VMD](analysis/vmd.md) | 1.9.3 | 2, 3 |
 | [XCRYSDEN](analysis/xcrysden.md) |  1.5.60 | 2, 3 |
@@ -52,7 +47,7 @@ We support the following structural analysis and visualization tools through a [
 
 Our platform includes support for two widely-used scripting languages, [shell scripting](scripting/shell/overview.md) and [python](scripting/python/overview.md), which are introduced in their respective documentation pages. 
 
-For command-line users we provide a system-default python installation, and recommend users to employ virtual environments for controlling the versions of python packages in [Command Line Interface](../cli/overview.md), as explained [in this page](../cli/actions/create-python-env.md).
+For command line users we provide a system-default python installation, and recommend users to employ virtual environments for controlling the versions of python packages in [Command Line Interface](../cli/overview.md), as explained [in this page](../cli/actions/create-python-env.md).
 
 ## Development Tools
 
