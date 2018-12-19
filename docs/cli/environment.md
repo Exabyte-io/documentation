@@ -1,6 +1,6 @@
 # Command-line Environment
 
-The present page explains the environment setup for a [command-line session](overview.md) within our platform. The **Environment** is an important concept in the Unix operating system [^1]. It is defined in terms of **environment variables** [^2], some of which are set by the system, others by the user, yet others by the shell or by any program that loads another program.
+The present page explains the environment setup for a [command line session](overview.md) within our platform. The **Environment** is an important concept in the Unix operating system [^1]. It is defined in terms of **environment variables** [^2], some of which are set by the system, others by the user, yet others by the shell or by any program that loads another program.
 
 After logging into our platform via the [Command Line Interface (CLI)](overview.md), the user will by default enter the [Login Home](../infrastructure/login/directories.md) directory, from which other nodes of the [infrastructure](../infrastructure/overview.md) can be accessed.
 

@@ -1,4 +1,4 @@
-# Select and Add Materials to Jobs
+# Select Materials to Jobs
 
 The user may select one or multiple [materials](../../materials/overview.md) present in the account-owned [collection](../../accounts/collections.md) during [Job creation](../overview.md). Within the [header menu](../header-menu.md) of Jobs Designer, the relevant button <i class="zmdi zmdi-more-vert zmdi-hc-border"></i> on the right-hand side should be clicked, and the `Select materials` option chosen from the resulting drop-down menu.
 
@@ -14,9 +14,9 @@ Here, the user can [select](../../entities-general/actions/select.md) one or mul
 
  [search](../../entities-general/actions/search.md) and [advanced search](../../materials/actions/advanced-search.md) can be performed in exactly the same manner as explained in [Materials Explorer](../../materials/ui/explorer.md).
 
-## Add Materials
+## Select Materials
 
-Once the desired material(s) have been selected, they can be added to the Job through the "Select Items" button <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> located under the [top-right actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar). 
+Once the desired material(s) have been selected, they can be selected for the Job through the "Select Items" button <i class="zmdi zmdi-collection-plus zmdi-hc-border"></i> located under the [top-right actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar). 
 
 This returns the view to the main Jobs Designer page, where the structures of the imported materials can be inspected within the [Materials Tab](../materials-tab.md). It is worth noticing that the original default material which was present when the Jobs Designer was first opened is replaced with the newly selected material(s). 
 

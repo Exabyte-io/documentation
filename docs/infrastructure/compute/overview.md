@@ -2,7 +2,7 @@
 
 The "Compute" panel, located as a distinct tab under the [Job Designer](../../jobs-designer/overview.md) interface, allows the user to set up the [computational parameters](parameters.md) for the simulation to be executed. 
 
-## [Components of the Interface]()
+## Components of the Interface
 
 The appearance of this panel is demonstrated in the example image below, where each component has been highlighted in red. The user is referred to the ensuing numbered headers for redirection to each component's corresponding explanation.
 

@@ -8,9 +8,7 @@ The subworkflow name is visible at the left-end of the subworkflow actions menu 
 
 ## Insert Add-ons
 
-On the right-hand side of the subworkflow actions menu bar, a series of buttons and a number spinner are present. The first one of these, starting from the left, is a three-dotted drop-down menu button allowing for the insertion of further Add-on subworkflows to the overall workflow flowchart, in addition to those already described in the final section of [this page](../header-menu.md). 
-
-For example, through this drop-down menu the user can add a "Convergence" subworkflow add-on for performing preliminary convergence tests on DFT input parameters. Such convergence add-on is extensively reviewed in its corresponding [documentation page](../../workflows/addons/convergence-algorithms.md). 
+On the right-hand side of the subworkflow actions menu bar, a series of buttons and a number spinner are present. The first one of these, starting from the left, is a three-dotted drop-down menu button allowing for the insertion of further [Add-on subworkflows](../../workflows/addons/overview.md) to the overall workflow flowchart, in addition to those already described in the final section of [this page](../header-menu.md#inserting-add-ons). 
 
 Following any such addition, the resulting sorted and complete list of subworkflows will always be shown on the left-hand sidebar of the Designer interface.
 
@@ -20,7 +18,7 @@ To create a new subworkflow and insert it as part of the general workflow flowch
 
 <img src="/images/workflow-designer/sw-addition.png"/>
 
-In this dialog, the user can choose whether to insert a new subworkflow or a map through the first drop-down menu (please refer to [this](../../workflows/data/subworkflows.md) and [this other](../../workflows/data/maps.md) documentation pages respectively for an explanation of the fundamental differences between these two types of computing units). 
+In this dialog, the user can choose whether to insert a new subworkflow or a map through the first drop-down menu (please refer to [this](../../workflows/components/subworkflows.md) and [this other](../../workflows/components/maps.md) documentation pages respectively for an explanation of the fundamental differences between these two types of computing units). 
 
 Secondly, the choice between whether to append or prepend this new map or subworkflow with respect to the currently selected subworkflow module can also be made. The user can identify and change the currently selected subworkflow by referring to the main left-hand sidebar of the overall Workflow Designer interface, and clicking on the corresponding item out of the contained flowchart list. Once the "Apply" button is pressed, the new subworkflow or map with default initial parameters will be added to the workflow flowchart at the desired position. 
 

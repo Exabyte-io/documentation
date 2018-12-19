@@ -1,6 +1,6 @@
 # Create New Job
 
-Here, we explain how to assemble the necessary input scripts for [job submission via the CLI](../overview.md) using some pre-defined examples. The reader is referred to the [dedicated Tutorial](../../tutorials/) on this topic for a more comprehensive description and examples on how such input scripts can be customized by the user.
+Here, we explain how to assemble the necessary input files for [job submission via the CLI](../overview.md) using some pre-defined examples. The reader is referred to the [dedicated Tutorial](../../tutorials/) on this topic for a more comprehensive description and examples on how such input files can be customized by the user.
 
 ## General Procedure
 
@@ -15,11 +15,11 @@ By our convention, this working folder must be located under the [cluster home d
     2. When not enough walltime is allocated, the job may not finish on time, resulting in an erroneous output. 
     3. The user is advised to [submit a support ticket](../../ui/support.md) if a walltime adjustment is needed during the course of a long job execution. Our support staff will do their best to accommodate the necessary desired changes, depending on the current computing load and business hours.
 
-Users can find our examples of job batch scripts and input files as explained [here](). 
+Users can find our examples of job batch scripts and input files as explained [here](../batch-scripts/sample-scripts.md). 
 
 ### Example
 
-Below are example commands needed to copy and run one of these template examples with the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) modeling application, contained in the `espresso` sub-directory inside `job_script_templates`.
+Below are example commands needed to copy and run one of these template examples with the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) modeling application, contained in the `espresso` sub-directory inside `job_script_templates`.
 
 ```bash
 # make temporary directory

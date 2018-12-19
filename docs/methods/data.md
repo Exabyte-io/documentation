@@ -1,3 +1,13 @@
-# Precision Estimates
+# Structured Representation of Methods
 
-The precision is normally estimated based on the input parameters used in the simulation, such as the plane-waves expansion cutoff and size of the grid of k-points in [DFT computations](../models/dft/overview.md). This quality typically results in a given final precision in the desired property being sought, as can be measured by the relevant [convergence studies](../workflows/addons/convergence-algorithms.md).
+In order to organize and store the information about [Methods](overview.md) on our platform, we employ the **Exabyte Data Convention**, as explained [elsewhere](../data-structured/overview.md) in the documentation.
+
+Below, the user can find an example JSON structured representation of a [Method](overview.md). 
+
+```json tab="Schema" 
+{!schema/workflow/subworkflow/model/method.json!}
+```
+
+```json tab="Example" 
+{!example/workflow/subworkflow/model/method.json!}
+```

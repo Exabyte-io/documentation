@@ -1,29 +1,85 @@
-# Sub/Workflow units
+# Units: Structured Representation 
 
-Workflows are made of units, or elementary calculations that can be executed in succession based on algorithmic conditions.
+The JSON [structured representations](../../data-structured/overview.md) for the different [types of units](../components/units.md) supported on our platform are contained in the expandable sections presented throughout the present page, accompanied each time by a corresponding example. 
 
-## Unit types
+For a description of unit input templating, the reader is referred to [this section](../templating/overview.md) of the documentation.
 
-### Execution
+## General Case
 
-Used for computationally-heavy tasks, eg. for a singular application of a physics-based simulation engine. For the input templating see [this page](templates.md).
+```json tab="Schema" 
+{!schema/workflow/unit.json!}
+```
 
-### Processing
+```json tab="Example" 
+{!example/workflow/unit.json!}
+```
 
-Used for data processing tasks that are not computationally intensive in nature, eg. data cleaning.
+## Execution
 
-### I/O
+```json tab="Schema" 
+{!schema/workflow/unit/execution.json!}
+```
 
-Perform input/output operations, such as reading from a remote database, RESTful API.
+```json tab="Example" 
+{!example/workflow/unit/execution.json!}
+```
 
-### Assignment
+## Processing
 
-Declare, set, increment, and perform math operations on variables.  For example: iterate over a counter variable and a k-point density variable for a k-point convergence workflow.
+```json tab="Schema" 
+{!schema/workflow/unit/processing.json!}
+```
 
-### Conditional
+```json tab="Example" 
+{!example/workflow/unit/processing.json!}
+```
 
-Used to make a decision on what the next unit in the workflow to be executed is.  The conditional is a mathematical formula that operates on one or more assignment variables to choose the next unit.
+## I/O
 
-### Map/Reduce
+```json tab="Schema" 
+{!schema/workflow/unit/io.json!}
+```
 
-Step that is replicated for a list of input parameters.  For example: run a total energy calculation subworkflow using a list "Li, Na, K, Rb, Cs, Fr" materials as inputs.
+```json tab="Example" 
+{!example/workflow/unit/io.json!}
+```
+
+## Assignment
+
+```json tab="Schema" 
+{!schema/workflow/unit/assignment.json!}
+```
+
+```json tab="Example" 
+{!example/workflow/unit/assignment.json!}
+```
+
+## Conditional
+
+```json tab="Schema" 
+{!schema/workflow/unit/condition.json!}
+```
+
+```json tab="Example" 
+{!example/workflow/unit/condition.json!}
+```
+
+## Map
+
+```json tab="Schema" 
+{!schema/workflow/unit/map.json!}
+```
+
+```json tab="Example" 
+{!example/workflow/unit/map.json!}
+```
+
+## Reduce
+
+```json tab="Schema" 
+{!schema/workflow/unit/reduce.json!}
+```
+
+```json tab="Example" 
+{!example/workflow/unit/reduce.json!}
+```

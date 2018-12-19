@@ -1,18 +1,18 @@
 # Unit input templates
 
-Unit input templates allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) simulation package, is depicted on the left-hand side in the image below.
+[Unit input templates](../../workflows/templating/overview.md) allow input text files to be rendered based on unique data per each material, and to be subsequently fed to the simulation engine being employed as part of the present unit calculation. The original input file templates, as well as their final preview appearances, can be inspected in the visual below. The typical appearance of an input template within the Unit Editor interface, for the specific example of a "pw_scf" self-consistent field total ground-state energy unit calculation using the pw.x executable of the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation package, is depicted on the left-hand side in the image below.
 
 !["Example Input Template"](../../images/workflow-designer/input-template.png "Example Input Template")
 
-The reader is referred to the Quantum ESPRESSO-specific [documentation page](../../software/modeling/quantum-espresso.md), and to its official online documentation page pertaining specifically to the pw.x executable code [^1], for a detailed description of the meaning of the input flags displayed in the above example.
+The reader is referred to the Quantum ESPRESSO-specific [documentation page](../../software-directory/modeling/quantum-espresso/overview.md), and to its official online documentation page pertaining specifically to the pw.x executable code [^1], for a detailed description of the meaning of the input flags displayed in the above example.
 
 ## Template Data
 
-By clicking on the `Template Data` button to the right of the unit input template the user can inspect the corresponding JSON representation of the data used to render the template and produce the final text. The templates themselves are built starting from this JSON data using the Jinja2 template engine [^2]. 
+By clicking on the `Template Data` button to the right of the unit input template the user can inspect the corresponding JSON representation of the data used to render the template and produce the final text. The templates themselves are built starting from this JSON data using the [Jinja template engine](../../workflows/templating/engine.md). 
 
 The user can notice that some commands are allowed as part of the template syntax, such as the "for" loop contained in the final line of the template for defining the size of the grid of k-points employed as part of the current "pw_scf" computation, according to the specific format of Quantum ESPRESSO input files [^1].
 
-More about the logic behind templates and rendering is explained in [this part of the documentation](../../workflows/data/templates.md). 
+More about the logic behind templates and rendering is explained in [this part of the documentation](../../workflows/templating/overview.md). 
 
 ## Example JSON Representation
 
@@ -124,7 +124,7 @@ K_POINTS automatic
 
 ## Preview of the input file
 
-By clicking on the "Preview" tab next to "Template" at the bottom of the Unit Editor interface, the user can visualize a preview of the corresponding input file, in its final form to be stored in the database and sent to the computational infrastructure for execution. Such process completes the [design time render](../../workflows/data/templates.md#design-time-render) This text will be further processed during the [runtime render](../../workflows/data/templates.md#run-time-render) into the final text to be passed directly to the application executable. 
+By clicking on the "Preview" tab next to "Template" at the bottom of the Unit Editor interface, the user can visualize a preview of the corresponding input file, in its final form to be stored in the database and sent to the computational infrastructure for execution. Such process completes the [design time render](../../workflows/templating/examples.md#design-time-render) This text will be further processed during the [runtime render](../../workflows/templating/examples.md#run-time-render) into the final text to be passed directly to the application executable. 
 
 An example of input text, resulting from the above-mentioned JSON data structure and input template is displayed in the expandable section below:
 
@@ -190,8 +190,3 @@ In case multiple materials are present, they can each be selected from the list 
 ## Links
 
 [^1]: [Input file of the PWSCF, Website](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
-[^2]: [Jinja2 templating engine, Website](http://jinja.pocoo.org/)
-
-
-
-

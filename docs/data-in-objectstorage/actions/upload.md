@@ -7,6 +7,6 @@ Files originating from the user's local hard drive can be uploaded to [Dropbox](
 
 ## Animation
 
-Here, we demonstrate how to upload a "POSCAR" input file, containing the crystal structure data for performing a simulation using the [VASP](../../software/modeling/vasp.md) engine.
+Here, we demonstrate how to upload a "POSCAR" input file, containing the crystal structure data for performing a simulation using the [VASP](../../software-directory/modeling/vasp/overview.md) engine.
 
 <img data-gifffer="/images/data-in-objectstorage/upload-file.gif">

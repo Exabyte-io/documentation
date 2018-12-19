@@ -6,7 +6,7 @@ The "Total Energy" refers to the total electronic ground state energy of a mater
 
 ## Examples
 
-The total energy can be calculated by a corresponding workflow. For [DFT](../../models/dft/overview.md) calculations, for example, any [Workflow](../../workflows/overview.md) containing a unit with a "self-consistent field" (scf) type can extract total energy. 
+The total energy can be calculated by a corresponding workflow. For [DFT](../../models-directory/dft/overview.md) calculations, for example, any [Workflow](../../workflows/overview.md) containing a unit with a "self-consistent field" (scf) type can extract total energy. 
 
 It is presented to the user, as part of the output of a [Job](../../jobs/overview.md), with the appearance displayed below, under the interface of the [Results Tab](../../jobs/ui/results-tab.md) of the [Job Viewer](../../jobs/ui/viewer.md). Its final value is expressed in units of electronVolt (eV).
 
@@ -26,7 +26,7 @@ The Total Energy of a Material is comprised of several **Energy Contributions**.
 
 ## Types of Contributions
 
-Specific types of energy contributions are commonly encountered in [DFT](../../models/dft/overview.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/applications.md) employed, as explained in what follows.
+Specific types of energy contributions are commonly encountered in [DFT](../../models-directory/dft/overview.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/components.md) employed, as explained in what follows.
 
 The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
 
@@ -34,7 +34,7 @@ The reader is referred to the links presented at the bottom of the page for a th
 
 ### Generic
 
-The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software/modeling/vasp.md) and [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) calculations. In all instances, the results are returned in units of eV.
+The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software-directory/modeling/vasp/overview.md) and [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) calculations. In all instances, the results are returned in units of eV.
 
 ![Common Contributions](../../images/properties-directory/common-contributions.png "Common Contributions")
 
