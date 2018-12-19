@@ -10,4 +10,4 @@ The user can click and select any subworkflow module listed in this sidebar to a
 
 An example appearance of this sidebar list within the wider Workflow Designer interface, is highlighted in the image below:
 
-<img src="/images/workflow-designer/subworkflow-list.png"/>
+![Items List Sidebar](../images/workflow-designer/subworkflow-list.png "Items List Sidebar")

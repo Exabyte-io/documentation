@@ -25,7 +25,7 @@ Start by clicking "Create Job" link in the left-hand sidebar to open the "Job De
 
 Materials viewer lets you choose one or more previsously imported materials for use during the calculation. We will proceed with the default structure of Silicon.
 
-<img src="/images/getting-started/run-first-simulation-tab-1-materials.png"/>
+![Materials viewer](../images/getting-started/run-first-simulation-tab-1-materials.png "Materials viewer")
 
 ## Tab #2: Workflow
 
@@ -47,7 +47,7 @@ One choose to be notified of the job status by clicking on our name in the "Noti
 
 For the moment, let's leave all parameters at their default values and click "Save".
 
-<img src="/images/getting-started/run-first-simulation-tab-3-compute.png"/>
+![Compute Tab](../images/getting-started/run-first-simulation-tab-3-compute.png "Compute Tab")
 
 !!! Note "Summary"
     You have created and saved your first job to be run in the future. Now we can proceed to submit it.
@@ -76,4 +76,4 @@ Job view screen lets you track the input parameters, output text, convergence pa
 
 This is how you can run a simple electronic band structure calculation using exabyte.io. For a comprehensive tutorials readers may explore ["Tutorials" section](../tutorials/dft/band-structure.md).
 
-<img src="/images/getting-started/run-first-simulation-view-bandstructure.png"/>
+![simple electronic band structure calculation](../images/getting-started/run-first-simulation-view-bandstructure.png "simple electronic band structure calculation")
