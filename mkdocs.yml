@@ -231,16 +231,16 @@ nav:
     - Software Directory:
         - Overview:                                     software-directory/overview.md
         - Modeling:
-            - Quantum ESPRESSO (QE):
-                - QE > Overview:                        software-directory/modeling/quantum-espresso/overview.md
-                - QE > Components:                      software-directory/modeling/quantum-espresso/components.md
-                - QE > Data:                            software-directory/modeling/quantum-espresso/data.md
-                - QE > Compute Parameters:              software-directory/modeling/quantum-espresso/compute-parameters.md
+            - Quantum ESPRESSO:
+                - Overview:                             software-directory/modeling/quantum-espresso/overview.md
+                - Components:                           software-directory/modeling/quantum-espresso/components.md
+                - Data:                                 software-directory/modeling/quantum-espresso/data.md
+                - Compute Parameters:                   software-directory/modeling/quantum-espresso/compute-parameters.md
             - VASP:
-                - VASP > Overview:                      software-directory/modeling/vasp/overview.md
-                - VASP > Components:                    software-directory/modeling/vasp/components.md
-                - VASP > Data:                          software-directory/modeling/vasp/data.md
-                - VASP > Compute Parameters:            software-directory/modeling/vasp/compute-parameters.md
+                - Overview:                             software-directory/modeling/vasp/overview.md
+                - Components:                           software-directory/modeling/vasp/components.md
+                - Data:                                 software-directory/modeling/vasp/data.md
+                - Compute Parameters:                   software-directory/modeling/vasp/compute-parameters.md
             - TurboMole:                                software-directory/modeling/turbomole.md
             - LAMMPS:                                   software-directory/modeling/lammps.md
             - NWChem:                                   software-directory/modeling/nwchem.md
