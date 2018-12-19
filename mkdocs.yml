@@ -247,8 +247,16 @@ nav:
             - CP2K:                                     software-directory/modeling/cp2k.md
             - Gromacs:                                  software-directory/modeling/gromacs.md
         - Scripting:
-            - Shell:                                    software-directory/scripting/shell.md
-            - Python:                                   software-directory/scripting/python.md
+            - Shell:
+                - Overview:                             software-directory/scripting/shell/overview.md
+                - Data:                                 software-directory/scripting/shell/data.md
+            - Python:
+                - Overview:                             software-directory/scripting/python/overview.md
+                - Data:                                 software-directory/scripting/python/data.md
+        - Machine Learning (ML):
+            - Exabyte ML Engine:
+                - Overview:                             software-directory/machine-learning/exabyte/overview.md
+                - Data:                                 software-directory/machine-learning/exabyte/data.md
         - Analysis & Visualization:
             - VESTA:                                    software-directory/analysis/vesta.md
             - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
