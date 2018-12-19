@@ -73,7 +73,6 @@ nav:
 # INTRODUCTION
     - Getting Started:
         - Run first simulation:                          getting-started/run-first-simulation.md
-        # Table of Contents re-iterated
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
         - CLI job submission:                            getting-started/cli-job.md
@@ -106,20 +105,12 @@ nav:
 
 # ACCOUNTS
     - Accounts:
-        # Types of accounts present, how users are related to accounts, links UI components overview
         - Overview:                                      accounts/overview.md
-        # General explanation of account balance - what it is and how it is used, + link to balance action(s)
-        # Explain that balance and storage quota can be accessed in Dashboard, Service Levels button, or right-hand sidebar
         - Users:                                         accounts/users.md
         - Balance:                                       accounts/balance.md
-        # General explanation of service levels and how they are used, + link to balance action(s)
         - Service Levels:                                accounts/service-levels.md
-        # General explanation of and how it is used, + link to balance action(s)
         - Quota:                                         accounts/quota.md
-        # General explanation of and how is used, + link to balance action(s)
-        # Everything is under Billing & Payments on Right-hand sidebar (Charges, Payments and Payment Methods)
         - Payments and Charges:                          accounts/payments-charges.md
-        # Explain the notion of Account-owned Entity collection
         - Collections:                                   accounts/collections.md
         - User Interface:
             - Overview:                                  accounts/ui/overview.md
@@ -128,7 +119,6 @@ nav:
             - Switcher:                                  accounts/ui/switcher.md
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
-            # Includes explanation about how to change service levels (upgrade)
             - Service Levels:                            accounts/ui/service-level.md
             - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
@@ -139,7 +129,6 @@ nav:
             - Preferences > Change Password:             accounts/ui/preferences/password.md
         - Accounting Actions:
             - Overview:                                  accounts/accounting/overview.md
-            # Everything related to direct actions that user can perform with regards to his account
             - Check balance and quota:                   accounts/accounting/check-balance-quota.md
             - Increase balance:                          accounts/accounting/increase-balance.md
             - Increase Quota:                            accounts/accounting/increase-quota.md
@@ -157,7 +146,6 @@ nav:
             - Teams Explorer:                            collaboration/ui/teams-explorer.md
             - Team Page:                                 collaboration/ui/team-page.md
             - People Explorer:                           collaboration/ui/people-explorer.md
-        # The notion of sharing of entities between accounts, and how to add new users to sharing options (UI+actions)
         - Entity Sharing:
             - User Interface:                            collaboration/sharing/ui.md
             - Actions:                                   collaboration/sharing/actions.md
@@ -270,20 +258,12 @@ nav:
 
 # ENTITIES
     - Entities & Common Aspects:
-        # Introduction (links) to entity concepts, actions and common interface components.
         - Overview:                                     entities-general/overview.md
-        # Example entities lifecycle for Materials, Worklfows, Jobs and Properties
-        # Use diagram from https://www.lucidchart.com/documents#docs?folder_id=168606925
         - Lifecycle:                                    entities-general/lifecycle.md
-        # The notion of ownership + links to Accounts overview
         - Ownership:                                    entities-general/ownership.md
-        # The notion of permissions (read, edit, execute, comment) + links to Accounts, Organizations, Teams overview
         - Permissions:                                  entities-general/permissions.md
-        # JSON representation of structured data (with links to Compute section)
         - Data:                                         entities-general/data.md
-        # Introduction to concept of sets with references to Sets Actions below
         - Sets:                                         entities-general/sets.md
-        # The concept of bank, creation of bank entries + reference to "Copy from Bank" action
         - Bank:                                         entities-general/bank.md
         - Default:                                      entities-general/default.md
         - User Interface:
@@ -292,7 +272,6 @@ nav:
             - Designer:                                 entities-general/ui/designer.md
             - Viewer:                                   entities-general/ui/viewer.md
         - Actions:
-            # List, with links, of actions listed below + sharing
             - Overview:                                 entities-general/actions/overview.md
             - Select:                                   entities-general/actions/select.md
             - Search:                                   entities-general/actions/search.md
@@ -301,11 +280,9 @@ nav:
             - Clone:                                    entities-general/actions/clone.md
             - Delete:                                   entities-general/actions/delete.md
             - Set default:                              entities-general/actions/set-default.md
-            # Metadata Description, Tags, Metadata for surfaces / slabs
             - Add metadata:                             entities-general/actions/metadata.md
             - Change name:                              entities-general/actions/name.md
             - Create:                                   entities-general/actions/create.md
-            # Actions specific to Bank and Sets
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
@@ -377,9 +354,9 @@ nav:
         - Templating:
             - Overview:                                 workflows/templating/overview.md
             - Concept:                                  workflows/templating/concept.md
-            - Engine:                                   workflows/templating/engine.md
+            - Jinja:                                    workflows/templating/jinja.md
             - Swig:                                     workflows/templating/swig.md
-            - Exabyte Conventions:                      workflows/templating/exabyte-conventions.md
+            - Exabyte Convention:                       workflows/templating/exabyte-convention.md
             - Examples:                                 workflows/templating/examples.md
             - UI Implementation:                        workflows/templating/ui.md
         - User Interface:
