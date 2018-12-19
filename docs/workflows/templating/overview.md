@@ -6,13 +6,13 @@ We implement **templating** for generalizing and automating the generation of **
 
 We review and explain the general concept of templating in computer science in [this page](concept.md). 
 
-## [Engine](engine.md)
+## [Jinja](jinja.md)
 
-[Under this page](engine.md) we also introduce the basic syntax of the templating engine that we adopt.
+[Under this page](jinja.md) we introduce the basic syntax of the template engine we adopt.
 
-## [Conventions](exabyte-conventions.md)
+## [Convention](exabyte-convention.md)
 
-The specific aspects of how templating is implemented on our platform are the object of [this discussion](exabyte-conventions.md).
+The specific aspects of how templating is implemented on our platform are the object of [this discussion](exabyte-convention.md).
 
 ## [Example](examples.md)
 

@@ -6,7 +6,7 @@ The `Input/Output` menu offers the possibility to export the numerical crystallo
  
 Click on the `Export` <i class="zmdi-download zmdi-hc-border"></i> option, and an "Export Items" dialog will appear as highlighted in the figure below:
  
-<img src="/images/materials-designer/export-items.png"/>
+![Select "Export" Option](../../../images/materials-designer/export-items.png "Select Export Option")
 
  
 ## Open The Export Dialog

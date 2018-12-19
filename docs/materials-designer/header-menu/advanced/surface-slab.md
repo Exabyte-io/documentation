@@ -17,7 +17,7 @@ Crystal surfaces are defined in terms of their Miller indices [^1]. Miller indic
 
 Some examples of planes with different Miller index labels in cubic crystals are depicted below for reference and illustration purposes. Since the reciprocal lattice vectors are indeed mutually orthogonal in this particular cubic case, the $(hkl)$ planes can effectively be taken to be always perpendicular to the $(hkl)$ direction in the crystal relative to the conventional Cartesian coordinate system.
 
-<img src="/images/materials-designer/Miller_Indices_Felix_Kling.png"/>
+![Miller indices](../../../images/materials-designer/Miller_Indices_Felix_Kling.png "Miller indices")
 
 ### Surface vs Slab
 
@@ -30,7 +30,7 @@ Surface represents an isolated terminal edge of an infinite crystal, whereas a S
 
 By clicking on the `Surface / slab` option in the `Advanced` menu, the surface/slab generator can be accessed. The user should expect to encounter the following dialog:
 
-<img src="/images/materials-designer/surface-slab-generator.png"/>
+![Accessing the Surface / Slab generator](../../../images/materials-designer/surface-slab-generator.png "Accessing the Surface / Slab generator")
 
 ## Constructing surfaces and slabs 
 

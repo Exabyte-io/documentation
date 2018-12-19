@@ -135,13 +135,13 @@ HPL.out      output file name (if any)
 
 A comparison of the speedup ratios for all cloud vendors described above are presented. As it can be seen, Oracle and Microsoft Azure have better speedup ratios because of the low latency interconnect network that facilitates efficient scaling.
 
-<img src="../images/benchmarks/ol-benchmarks-speedup-ratio.png">
+![Speedup](../images/benchmarks/ol-benchmarks-speedup-ratio.png "Speedup")
 
 #### Performance Per Core
 
 The following figure shows a comparative plot of the performance per core in giga-FLOPS (GFLOPS) for the previously described scenarios. Oracle and Microsoft Azure outperform AWS because of faster processors and the low latency interconnect network.
 
-<img src="../images/benchmarks/ol-benchmarks-performance-per-core.png">
+![Performance Per Core](../images/benchmarks/ol-benchmarks-performance-per-core.png "Performance Per Core")
 
 
 ### VASP
@@ -407,7 +407,7 @@ Gamma
 
 ##### Outcomes
 
-<img src="../images/benchmarks/ol-benchmarks-vasp-elb-speedup.png" />
+![Outcomes](../images/benchmarks/ol-benchmarks-vasp-elb-speedup.png "Outcomes")
 
 
 #### Parallelization Over KPOINTS
@@ -503,7 +503,7 @@ Gamma
 
 ##### Outcomes
 
-<img src="../images/benchmarks/ol-benchmarks-vasp-kpt-speedup.png" />
+![Outcomes](../images/benchmarks/ol-benchmarks-vasp-kpt-speedup.png "Outcomes")
 
 
 ### Network Benchmarks
@@ -512,11 +512,11 @@ The following shows the result of Intel MPI Benchmarks running on Amazon Web Ser
 
 #### Latency
 
-<img src="../images/benchmarks/ol-benchmarks-latency.png" />
+![Latency](../images/benchmarks/ol-benchmarks-latency.png "Latency")
 
 #### Bandwidth
 
-<img src="../images/benchmarks/ol-benchmarks-bandwidth.png" />
+![Bandwidth](../images/benchmarks/ol-benchmarks-bandwidth.png "Bandwidth")
 
 
 ### GROMACS
@@ -529,11 +529,11 @@ We use the below, one of our customer use cases to study the extent to which a G
 
 The visual below demonstrates the model studied - a box with 418,402 total atoms. Input files are available upon request.
 
-<img src="../images/benchmarks/ol-benchmarks-gromacs-model.png" />
+![Input Data](../images/benchmarks/ol-benchmarks-gromacs-model.png "Input Data")
 
 ##### Results
 
-<img src="../images/benchmarks/ol-benchmarks-gromacs-speedup.png" />
+![Results](../images/benchmarks/ol-benchmarks-gromacs-speedup.png "Results")
 
 
 ## Conclusion

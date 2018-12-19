@@ -4,7 +4,7 @@ This page explains how to run an structural relaxation using density functional 
 
 # Background
 
-The motivation behind using relaxation is explained in detail [here](/models/structural-relaxation). This page focuses on the practical steps and usage.
+The motivation behind using relaxation is explained in detail [here](../../workflows/addons/structural-relaxation.md). This page focuses on the practical steps and usage.
 
 # Create job
 
