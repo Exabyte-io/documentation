@@ -4,7 +4,7 @@ We review in the present section of the documentation the most important general
 
 ## [List of Available Software](../software-directory/overview.md)
 
-The reader is referred to [this alternative section](../software-directory/overview.md) of the documentation for a complete list and review of the specific software packages available for use on our platform.
+The reader is referred to [another section](../software-directory/overview.md) of the documentation for a complete list and review of the specific software packages available for use on our platform.
 
 ## [Components](components.md)
 
