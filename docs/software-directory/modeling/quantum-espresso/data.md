@@ -12,7 +12,7 @@ We present in this page the [structured representations](../../../data-structure
 {!example/software/modeling/espresso.json!}
 ```
 
-## Specific Compute Parameters
+## Compute Parameters
 
 ```json tab="Schema" 
 {!schema/software/modeling/espresso/arguments.json!}
