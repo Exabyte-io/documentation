@@ -32,7 +32,7 @@ There are many occurrences of methods in computational materials science for det
  
 The conventional cells of body-centered (bcc) or face-centered (fcc) cubic crystals, containing two atoms and four atoms respectively, reflect more intuitively the overall symmetry of such systems. The figure below illustrates this for the example of an fcc lattice. In this image, the volume marked in red represents the primitive unit cell, whereas the over-arching cubic conventional supercell exhibits the full face-centered cubic symmetry from which the corresponding crystal structure gets its name:
 
-<img src="/images/materials-designer/TGa4T.png"/>
+![Conventional vs primitive cells](../../../images/materials-designer/TGa4T.png "Conventional vs primitive cells")
 
 #### Defects
 
@@ -66,7 +66,7 @@ Choose the `Supercell` option in the `Advanced` menu to opend the "Supercell Gen
 
 The overlay, highlighted in the image below, will allow the reader to set the parameters of the supercell transformation matrix (with its elements positioned exactly as explained in the previous paragraph). 
 
-<img src="/images/materials-designer/generate-supercell.png"/>
+![Supercell Transformation Matrix](../../../images/materials-designer/generate-supercell.png "Supercell Transformation Matrix")
 
 ## Generate Supercell
 

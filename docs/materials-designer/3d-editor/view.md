@@ -2,7 +2,7 @@
 
 The first `View` button <i class="zmdi zmdi-eye zmdi-hc-border"></i> under the interactive functionality of the 3D Editor offers the user the possibility to perform the following set of actions to modify the current view: 
 
-<img src="/images/materials-designer/view-features-viewer.png"/>
+![3d Editor: View Panel](../../images/materials-designer/view-features-viewer.png "3d Editor: View Panel")
  
 Each one of these actions is reviewed separately below. Click on the visuals included at the end of each section below to view the animations for the corresponding action.    
  
