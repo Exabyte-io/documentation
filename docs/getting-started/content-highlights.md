@@ -6,7 +6,7 @@ This page helps users quickly get through the documentation.
 
 ## Login
 
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command-line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
+We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
 
 - [secure shell and in-browser terminals](../remote-connection/overview.md)
 - [remote desktop session example](../remote-connection/remote-desktop.md)
@@ -60,7 +60,7 @@ Compute parameters ([submission queue](../infrastructure/resource/queues.md), nu
 - [linpack benchmark & scalability study](../benchmarks/hpl-benchmark.md)
 - [simulation benchmarks](../benchmarks/high-throughput-screening.md)
 
-### Run simulations via command-line interface (CLI)
+### Run simulations via command line interface (CLI)
 
 Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
 

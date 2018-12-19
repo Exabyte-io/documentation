@@ -10,7 +10,7 @@ Once "Submit" button is pressed, the new Set appears among the entries in the ac
 
 ## Navigation
 
-In order to navigate up the Sets directory structure by one level, the user should click on the top entry (labelled with two horizontal dots) from within the Set's items list. This symbolism is analogous to Unix-based command-line interface. 
+In order to navigate up the Sets directory structure by one level, the user should click on the top entry (labelled with two horizontal dots) from within the Set's items list. This symbolism is analogous to Unix-based command line interface. 
 
 ## Animation
 
