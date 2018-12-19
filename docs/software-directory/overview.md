@@ -32,7 +32,7 @@ The platform currently offers the choice between the following software engines 
 
 <!-- TODO by GM: add link to exabyte-ml in the directory and version 0.1.0 -->
 
-We have a proof-of-concept support for machine learning through [Exabyte-ML]().
+We have a proof-of-concept support for machine learning through [Exabyte-ML](machine-learning/exabyte/overview.md).
 
 
 ## Analysis Tools
@@ -51,7 +51,7 @@ We support the following structural analysis and visualization tools through a [
 
 ## Scripting Applications
 
-Our platform includes support for two widely-used scripting languages, [shell scripting](scripting/shell.md) and [python](scripting/python.md), which are introduced in their respective documentation pages. 
+Our platform includes support for two widely-used scripting languages, [shell scripting](scripting/shell/overview.md) and [python](scripting/python/overview.md), which are introduced in their respective documentation pages. 
 
 For command-line users we provide a system-default python installation, and recommend users to employ virtual environments for controlling the versions of python packages in [Command Line Interface](../cli/overview.md), as explained [in this page](../cli/actions/create-python-env.md).
 
