@@ -9,28 +9,35 @@ Only those components implemented on our platform to date are mentioned here, as
 
 ## Executables
 
-The core plane wave DFT functions of QE are provided by the PWscf (Plane-Wave Self-Consistent Field) component, further referred to under the name of its [executable](../../../software/components.md#executables) `pw.x`. Further components are included in the distribution package, such as the `ph.x` executable for performing phonon calculations via the density functional perturbation theory and linear response theoretical formalisms [^8].
+The core plane wave DFT functions of QE are provided by the PWscf (Plane-Wave Self-Consistent Field) component, further referred to under the name of its [executable](../../../software/components.md#executables) `pw.x`. Further components are included in the distribution package, such as the `ph.x` executable for performing phonon calculations via the density functional perturbation theory and linear response theoretical formalisms [^4].
 
-Complete documentation about the software package can be found in its corresponding website [^1](overview.md#links). The input file description for `pw.x` can be found in Ref. [^2]. The package-specific documentation [^3] contains links to input descriptions for other [executables](../../../software/components.md#executables) as well.
+Complete documentation about the software package can be found in its corresponding website. The input file description for `pw.x` can be found in Ref. [^1]. The package-specific documentation [^2] contains links to input descriptions for other [executables](../../../software/components.md#executables) as well.
 
 The following executables have been implemented on our platform so far.
 
-- `pw.x`:
-- `projwfc.x`:
-- `q2r.x`:
-- `dynmat.x`:
-- `matdyn.x`:
-- `pp.x`:
-- `ph.x`:
-- `dos.x`:
-- `bands.x`:
+- `pw.x`: general-purpose executable (see its different computation flavors in the next section below).
+- `ph.x`: calculates phonon frequencies and displacement patterns, dielectric tensors, effective charges (uses data produced by `pw.x`).
+- `projwfc.x`: projects wavefunctions onto orthogonalized atomic wavefunctions.
+- `q2r.x`: reads dynamical matrices produced by the phonon code `ph.x` for a grid of q-points, and calculates the corresponding set of interatomic force constants.
+- `dynmat.x`: reads a dynamical matrix produced by the phonon code `ph.x`, diagonalises it, and writes the results to files, both for inspection and for plotting.
+- `matdyn.x`: calculates phonons at generic q-points using the interatomic force constants computed by `q2r.x`. 
+- `pp.x`: data analysis and plotting.
+- `dos.x`:  calculates the Density of States (DOS).
+- `bands.x`: re-orders the bands in the band-structure of the material, and computes band-related properties.
 
 ## Flavors
 
-The `pw.x` executable for the Quantum ESPRESSO modeling application, for example, allows for the execution of the following different types of calculation [flavors](../../../software/components.md#flavors) [^4], to be specified in the corresponding input file.
+The `pw.x` executable for the Quantum ESPRESSO modeling application, for example, allows for the execution of the following different types of calculation [flavors](../../../software/components.md#flavors) [^3].
 
-- `scf`: "self-consistent field" [total ground-state energy](../../../properties-directory/scalar/total-energy.md) calculation    
-- `nscf`: for further processing of the results of non-scf calculations (for instance, in DOS calculations)
-- `bands`: [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) calculation
-- `relax`: optimization of the atomic positions to relax the inter-atomic forces 
-- `vc-relax`: "variable-cell" [structural relaxation and optimization](../../../workflows/addons/structural-relaxation.md)
+- `scf`: "self-consistent field" [total ground-state energy](../../../properties-directory/scalar/total-energy.md) calculation.    
+- `nscf`: for further processing of the results of non-scf calculations (for instance, in DOS calculations).
+- `bands`: [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) calculation.
+- `relax`: optimization of the atomic positions to relax the inter-atomic forces. 
+- `vc-relax`: "variable-cell" [structural relaxation and optimization](../../../workflows/addons/structural-relaxation.md).
+
+## Links
+
+[^1]: [Input file description of the pw.x code](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
+[^2]: [Quantum ESPRESSO package-specific documentation](https://www.quantum-espresso.org/resources/users-manual/specific-documentation)
+[^3]: [PWscf User’s Guide, Official Documentation](https://www.quantum-espresso.org/Doc/pw_user_guide.pdf)
+[^4]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)

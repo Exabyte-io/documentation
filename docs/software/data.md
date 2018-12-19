@@ -57,7 +57,7 @@ We have reproduced below the [structured representation](../data-structured/over
 
 ### Modeling
 
-We present in what follows the [structured representations](../data-structured/overview.md) for those [modeling engines](classification/modeling.md) which are [supported on our platform](../software-directory/overview.md).
+We present the [structured representations](../data-structured/overview.md) for those [modeling engines](classification/modeling.md) which are supported on our platform in their respective [documentation sections](../software-directory/overview.md).
 
 ### Scripting
 

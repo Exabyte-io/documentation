@@ -4,7 +4,7 @@ We list in the present page the [software](../software/overview.md) available on
 
 ## Modeling Applications
 
-The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/parameters.md)**. Some applications have extensive integrated support in the user interface, and others are currently available through [command line terminal](../cli/overview.md) only.
+The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/components.md)**. Some applications have extensive integrated support in the user interface, and others are currently available through [command line terminal](../cli/overview.md) only.
 
 | Name    |  Version(s)      | Notes      |
 | :-------- |:----------- |:------------- |
