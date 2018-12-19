@@ -12,14 +12,19 @@ The basic process for a web templating system is illustrated in the picture belo
 
 ## Use within the platform
 
+We make use of [Jinja](jinja.md) templating syntax. During the [**design time**](concept.md#template-rendering) render we use **Swig** [^2], a JavaScript template engine supporting Jinja syntax. During the [**runtime**](concept.md#template-rendering) templates are rendered by python implementation of Jinja. 
+
+### Native Language Constructs
+
+The templating syntax for the above two scenarios is almost equivalent. There are, however, some differences. Most importantly, Swig provides access to native JavaScript constructs, while Jinja2 enables access to native Python syntax (`list.append()` in Python, but `array.push()` in Javascript). Users should remember that pythonic constructs are only available during the Runtime render, and JavaScript - only during Design time. However, if accessing the native language features is avoided and solely relied on pure templating features, templates can be made fully equivalent.
+
+### Usage Scenarios
+
 In this respect, templates are applied to many different [materials](../../materials/overview.md) during the creation of [Jobs](../../jobs/overview.md), in conjunction with different input parameters (or template variables/context), specific for each material. 
 
 We allow for using templates specifically inside the input of [units](../components/units.md) comprised in a [subworkflow](../components/subworkflows.md). In this way, we can decouple material-specific information from workflow-specific. The latter lets us apply a workflow for multiple materials at the same time, without having to adjust it extensively.
 
-
-### Template Rendering
-
-The templates (input files) are rendered in two places, on [web interface](../../ui/overview.md) when workflows (or jobs) are designed and in [computing clusters](../../infrastructure/clusters/overview.md) when the job is executed, henceforth referred to as **Design-time Rendering** and **Runtime Rendering** respectively. The is necessary as some templates require data which is only available at runtime (e.g. `outdir` in Quantum Espresso PWScf input file) 
+The templates (input files) are rendered in two places, on [web interface](../../ui/overview.md) when workflows (or jobs) are designed and on [computing clusters](../../infrastructure/clusters/overview.md) when the job is executed, henceforth referred to as **Design-time Rendering** and **Runtime Rendering** respectively. The is necessary as some templates require data which is only available at runtime (e.g. `outdir` in Quantum Espresso PWScf input file) 
 
 ## Links
 

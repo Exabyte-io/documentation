@@ -8,7 +8,7 @@ The "Login" endpoint is used to obtain the authentication credentials that can b
 
 ### Example
 
-Here's how the authentication can be performed from a command-line terminal:
+Here's how the authentication can be performed from a command line terminal:
 
 ```bash
 curl -X POST https://platform.exabyte.io/api/2018-10-01/login \
@@ -38,7 +38,7 @@ curl -X GET https://platform.exabyte.io/api/2018-10-01/materials \
 
 ### Example
 
-Here's how the logout can be performed from a command-line terminal:
+Here's how the logout can be performed from a command line terminal:
 
 ```bash
 curl -X GET https://platform.exabyte.io/api/2018-10-01/logout \

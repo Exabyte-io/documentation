@@ -6,7 +6,7 @@ In this type of settings section, the user is first presented with a graphic out
 
 An example for specifying the reciprocal path of k-points for a band structure dispersion calculation (the so-called "kpath"), is portrayed in the picture below:
 
-<img src="/images/models/path-settings.png"/>
+![Paths in reciprocal space for dispersion calculations](../../../images/models/path-settings.png "Paths in reciprocal space for dispersion calculations")
 
 The notions of "qpath" and "ipath" instead pertain specifically to phonon dispersion calculations, as explained in Ref. [^1]. 
 

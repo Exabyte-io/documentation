@@ -12,7 +12,7 @@ The final structure can be inspected under an instance of the [Materials Viewer 
 
 We refer to this interface as the "Final Structure Viewer" in this particular context.
 
-Below we show an example of a material structure as it appears under the Final Structure Viewer (demarcated in red), following a relaxation run performed on it using [VASP](../../software/modeling/vasp.md). 
+Below we show an example of a material structure as it appears under the Final Structure Viewer (demarcated in red), following a relaxation run performed on it using [VASP](../../software-directory/modeling/vasp/overview.md). 
 
 The viewer is shown in the general context of the other relevant computed material [properties](../overview.md), displayed together in their own panel.
 

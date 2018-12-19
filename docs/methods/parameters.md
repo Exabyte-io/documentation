@@ -1,9 +1,26 @@
-# Parameters
+# Method Parameters
 
-We refer to **parameters** as any computational setting that can influence the execution of a simulation, via the implementation of any given [method](overview.md). An appropriate choice of parameters is important since they can typically have an impact upon the [precision](precision.md) of the computation, and for this reason the conduction of [convergence tests](../workflows/addons/convergence-algorithms.md) is often recommended.
+Our platform supports the following method parameters, which can be edited by the user within the "Overview" tab of the [Subworkflow Editor Interface](../workflow-designer/subworkflow-editor/overview-tab.md).
+ 
+## Type
+  
+Type of the method (eg. [Plane-wave pseudopotential](../methods-directory/pseudopotential/overview.md), for example).
 
-## Examples
+## Subtype
 
-For example, for the case of [parameters involved in DFT computations](../methods-directory/pseudopotential/parameters.md), the precision is mainly affected by the choice of parameters such as the plane-wave cutoff energy and size of the grid of reciprocal k-points.   
+We refer to **Subtypes** as a generic sub-classification of the main method type.
+ 
+## [Precision](precision.md)
 
-For the case of the classical Molecular Dynamics method on the other hand, important computational parameters to bear in mind for reproducing the desired effects with the appropriate precision consist for example in the size of the simulation box, corresponding to a sufficient total number of atoms, and the choice for the parametric form of the inter-atomic potential.
+[Precision](precision.md) is a complex general parameter that contains multiple other datapoints and has specific implementation for each supported method type.
+
+## Method Data
+
+**Method Data** is a complex general parameter that contains multiple other data items that specific for each supported method type. 
+
+!!! note "Example Method Data"
+    For example, in case of the [Plane-wave pseudopotential method](../methods-directory/pseudopotential/overview.md), Method Data contains the pseudopotentials themselves.
+
+## Specific Implementation
+
+Consult [Methods Directory](../methods-directory/overview.md) for specifics about the parameters of each supported method.

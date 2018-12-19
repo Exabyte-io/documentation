@@ -4,13 +4,13 @@
 
 The user is presented with the following highlighted dialog, under which the name of the new set can be entered in the text field:
 
-<img src="/images/entities-general/create-set-name.png" > 
+![Create New Sets](../../images/entities-general/create-set-name.png "Create New Sets")
 
 Once "Submit" button is pressed, the new Set appears among the entries in the account-owned collection. 
 
 ## Navigation
 
-In order to navigate up the Sets directory structure by one level, the user should click on the top entry (labelled with two horizontal dots) from within the Set's items list. This symbolism is analogous to Unix-based command-line interface. 
+In order to navigate up the Sets directory structure by one level, the user should click on the top entry (labelled with two horizontal dots) from within the Set's items list. This symbolism is analogous to Unix-based command line interface. 
 
 ## Animation
 

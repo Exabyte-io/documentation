@@ -10,7 +10,7 @@ The user can initiate the upload of a custom pseudopotential file by first expan
 
 Next all the necessary categorization information about the new pseudopotential being uploaded shall be specified from the list of drop-down menus in the resulting dialog. An example of this dialog's appearance is shown below:
 
- <img src="/images/methods/pp-upload.png"/>
+![Upload Pseudopotential](../../images/methods/pp-upload.png "Upload Pseudopotential")
  
 ## Save File
  
@@ -36,7 +36,7 @@ This expression first searches for pseudopotentials released under version 5.4 o
 
 This particular regular expression operation applied to the available set of VASP pseudopotentials is demonstrated in the animation below:
 
-<img data-gifffer="/images/methods/regular-expression.gif" />
+![Regular Expressions](../../images/methods/regular-expression.gif "Regular Expressions")
  
 ## Links
 

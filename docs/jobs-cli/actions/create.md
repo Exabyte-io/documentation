@@ -19,7 +19,7 @@ Users can find our examples of job batch scripts and input files as explained [h
 
 ### Example
 
-Below are example commands needed to copy and run one of these template examples with the [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) modeling application, contained in the `espresso` sub-directory inside `job_script_templates`.
+Below are example commands needed to copy and run one of these template examples with the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) modeling application, contained in the `espresso` sub-directory inside `job_script_templates`.
 
 ```bash
 # make temporary directory

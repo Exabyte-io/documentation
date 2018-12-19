@@ -2,7 +2,7 @@
 
 The `View` menu allows user to modify the appearance of the Materials Designer interface. The location of this menu component within the interface is illustrated below:
 
-<img src="/images/materials-designer/view-menu.png"/>
+![View](../../images/materials-designer/view-menu.png "View")
 
 
 ## Enable / Disable Component Panels
