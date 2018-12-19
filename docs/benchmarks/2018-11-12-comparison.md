@@ -2,11 +2,11 @@
 
 ## Overview
 
-The purpose of this study is to understand the suitability of the high-performance computing hardware available from multiple cloud providers for running materials modeling and simulations. In order to do so, we run the following benchmarks: 
+The purpose of this study is to understand the suitability of the high-performance computing hardware available from multiple cloud providers for running materials modeling and simulations. In order to do so, we run the following benchmarks:
 
 - a general High-Performance Linpack (HPL[^1]), the benchmark employed to rank the world's best supercomputing systems [^2],
-- network latency and bandwidth benchmarks[^5] to compare the interconnect hardware, 
-- application-specific cases for Vienna Ab-initio Simulation Package (VASP[^3]) and GROMACS[^4] to estimate the extent to which a "real-world" calculation can be efficiently scaled, 
+- network latency and bandwidth benchmarks[^5] to compare the interconnect hardware,
+- application-specific cases for Vienna Ab-initio Simulation Package (VASP[^3]) and GROMACS[^4] to estimate the extent to which a "real-world" calculation can be efficiently scaled,
 
 ## Methodology
 
@@ -39,7 +39,7 @@ The ratio of the Performance Gain for a given number of nodes to the ideal speed
 Inverse total runtime for the task (in seconds).
 
 ### Important Notes
-    
+
 1. We present quick estimates that are extracted based on a limited (1-3) number of runs. A more comprehensive study is needed to account for the results of the natural modulations such as the data center load and how the computing nodes are distributed in the data center at the time of benchmarking.
 
 2. Readers may get better results by tuning the input parameters for the specific hardware and test case.
@@ -53,12 +53,12 @@ We compare 4 cloud computing vendors as mentioned above. The following HPL confi
 <details markdown="1">
   <summary>
     HPL.dat
-  </summary> 
-    
+  </summary>
+
 ```text
 Linpack input file
 Innovative Computing Laboratory, University of Tennessee
-HPL.out      output file name (if any) 
+HPL.out      output file name (if any)
 6            device out (6=stdout,7=stderr,file)
 1            # of problems sizes (N)
 {{ N }}      Ns
@@ -95,7 +95,7 @@ HPL.out      output file name (if any)
 <details markdown="1">
   <summary>
     Parameters
-  </summary> 
+  </summary>
 
 | Provider   | Nodes | N      | NB    | P     | Q     |
 | :---:      | :---: | :---:  | :---: | :---: | :---: |
@@ -135,13 +135,14 @@ HPL.out      output file name (if any)
 
 A comparison of the speedup ratios for all cloud vendors described above are presented. As it can be seen, Oracle and Microsoft Azure have better speedup ratios because of the low latency interconnect network that facilitates efficient scaling.
 
-<img src="/images-new/benchmarks/ol-benchmarks-speedup-ratio.png">
+<img src="../images/benchmarks/ol-benchmarks-speedup-ratio.png">
 
 #### Performance Per Core
 
 The following figure shows a comparative plot of the performance per core in giga-FLOPS (GFLOPS) for the previously described scenarios. Oracle and Microsoft Azure outperform AWS because of faster processors and the low latency interconnect network.
 
-<img src="/images-new/benchmarks/ol-benchmarks-performance-per-core.png">
+<img src="../images/benchmarks/ol-benchmarks-performance-per-core.png">
+
 
 ### VASP
 
@@ -162,7 +163,7 @@ The number of cores per node (PPN) and the total number of nodes (NODES) were us
 <details markdown="1">
   <summary>
     INCAR
-  </summary> 
+  </summary>
 
 ```fortran
 ALGO = Normal
@@ -185,7 +186,7 @@ LPLANE = .TRUE.
 <details markdown="1">
   <summary>
     POSCAR: "Ba25 Bi15 O54" with a supercell containing 188 atoms
-  </summary> 
+  </summary>
 
 ```text
 50 Bi30 O108
@@ -392,21 +393,22 @@ direct
 <details markdown="1">
   <summary>
     KPOINTS
-  </summary> 
+  </summary>
 
 ```text
 Automatic mesh
 0
 Gamma
-  1 1 1 
-  0 0 0 
+  1 1 1
+  0 0 0
 ```
 
 </details>
 
 ##### Outcomes
 
-<img src="/images-new/benchmarks/ol-benchmarks-vasp-elb-speedup.png" />
+<img src="../images/benchmarks/ol-benchmarks-vasp-elb-speedup.png" />
+
 
 #### Parallelization Over KPOINTS
 
@@ -415,7 +417,7 @@ Gamma
 <details markdown="1">
   <summary>
     INCAR
-  </summary> 
+  </summary>
 
 ```fortran
 ALGO = Normal
@@ -444,7 +446,7 @@ SIGMA = 0.2
 <details markdown="1">
   <summary>
     POSCAR: "Li8 V8 Mo8" with a unit cell containing 24 atoms
-  </summary> 
+  </summary>
 
 ```text
 Li8 V8 Mo8
@@ -487,21 +489,22 @@ direct
 <details markdown="1">
   <summary>
     KPOINTS
-  </summary> 
+  </summary>
 
 ```text
 Automatic mesh
 0
 Gamma
-  6 6 6 
-  0 0 0 
+  6 6 6
+  0 0 0
 ```
 
 </details>
 
 ##### Outcomes
 
-<img src="/images-new/benchmarks/ol-benchmarks-vasp-kpt-speedup.png" />
+<img src="../images/benchmarks/ol-benchmarks-vasp-kpt-speedup.png" />
+
 
 ### Network Benchmarks
 
@@ -509,16 +512,16 @@ The following shows the result of Intel MPI Benchmarks running on Amazon Web Ser
 
 #### Latency
 
-<img src="/images-new/benchmarks/ol-benchmarks-latency.png" />
+<img src="../images/benchmarks/ol-benchmarks-latency.png" />
 
 #### Bandwidth
 
-<img src="/images-new/benchmarks/ol-benchmarks-bandwidth.png" />
+<img src="../images/benchmarks/ol-benchmarks-bandwidth.png" />
 
 
 ### GROMACS
 
-We use the below, one of our customer use cases to study the extent to which a GROMACS calculation can be efficiently scaled. As it can be seen this particular use case is very well scaled.  
+We use the below, one of our customer use cases to study the extent to which a GROMACS calculation can be efficiently scaled. As it can be seen this particular use case is very well scaled.
 
 #### Polystyrene
 
@@ -526,16 +529,16 @@ We use the below, one of our customer use cases to study the extent to which a G
 
 The visual below demonstrates the model studied - a box with 418,402 total atoms. Input files are available upon request.
 
-<img src="/images-new/benchmarks/ol-benchmarks-gromacs-model.png" />
+<img src="../images/benchmarks/ol-benchmarks-gromacs-model.png" />
 
 ##### Results
 
-<img src="/images-new/benchmarks/ol-benchmarks-gromacs-speedup.png" />
+<img src="../images/benchmarks/ol-benchmarks-gromacs-speedup.png" />
 
 
 ## Conclusion
 
-We benchmark the performance of the latest cloud hardware with HPL, two VASP simulation cases, one GROMACS case and MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network. 
+We benchmark the performance of the latest cloud hardware with HPL, two VASP simulation cases, one GROMACS case and MPI Benchmarks. Our findings demonstrate that Oracle Cloud outperforms other cloud vendors due to the latest generation of the hardware and fast interconnect network.
 
 
 ## Links

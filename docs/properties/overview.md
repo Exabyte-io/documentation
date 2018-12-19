@@ -2,7 +2,7 @@
 
 The present section of the documentation explains our approach to organizing, storing and interacting with the **properties** of the different [entities](../entities-general/overview.md) present across our platform.
 
-## [Definition]()
+## Definition
  
 **"Property"** is any measurable quantity which provides information about the entity under consideration. Properties can hold information about [Materials](../materials/overview.md) and [Workflows](../workflows/overview.md) as demonstrated [here](../getting-started/important-concepts.md)
 

@@ -6,11 +6,11 @@
 
 Navigating to the interface can be initiated through the "Create Workflow" action introduced [in this page](../entities-general/actions/create.md). 
  
-## [Components of the Interface]()
+## Components of the Interface
 
 The Workflow Designer is structured into three main building blocks, and has the typical initial default appearance as shown in the picture below when a new workflow is being created from scratch. In the image below, the three main components are outlined in red. To access their respective documentation pages, **click** on the image below:
 
-<img src="/images/workflow-designer/workflow-designer/workflow-designer-initial.png" usemap="#mapname">
+<img src="/images/workflow-designer/workflow-designer-initial.png" usemap="#mapname">
 
 <map name="mapname">
     <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar/">
@@ -18,7 +18,7 @@ The Workflow Designer is structured into three main building blocks, and has the
     <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu">
 </map>
 
-## [Convergence and Relaxation Add-ons]()
+## Convergence and Relaxation Add-ons
 
 When creating a new workflow, two important preliminary controls are typically required at the beginning of the workflow, and can be implemented in the context of the Workflow Designer interface in the form of **add-on** subworkflow modules.
 

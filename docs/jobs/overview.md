@@ -18,7 +18,7 @@ Jobs have different statuses attributed to them depending on the level of progre
 
 Jobs can collectively be grouped together into [Sets](../entities-general/sets.md), which in this context are referred to as **[Projects](projects.md)**.
 
-## [User Interface]()
+## User Interface
 
 ### [Explorer](ui/explorer.md)
 

@@ -14,7 +14,7 @@ As we explain in their [dedicated documentation page](../entities-general/bank.m
 
 ## Auxiliary Collections
 
-Due to its wide scope of applicability, the concept of Collections is not restricted to entities only, but rather may be applied to numerous other types of item databases present across the entirety of the Exabyte platform, such as the collection of [Pseudopotentials](../methods/pseudopotential/overview.md) available for computation.
+Due to its wide scope of applicability, the concept of Collections is not restricted to entities only, but rather may be applied to numerous other types of item databases present across the entirety of the Exabyte platform, such as the collection of [Pseudopotentials](../methods-directory/pseudopotential/overview.md) available for computation.
 
 ## Links
 

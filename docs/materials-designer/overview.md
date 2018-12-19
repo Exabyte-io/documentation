@@ -6,11 +6,11 @@ Experienced computational material scientists will recognize many of the feature
 
 > "Note for command line users": VESTA is also supported in the remote desktop mode.
 
-## [Navigating to Materials Designer]()
+## Navigating to Materials Designer
 
 In order to create a new material, one first needs to navigate to the "Materials" page using the left-hand sidebar, and then click on the "Create" button <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> located at the top right corner of the page. 
 
-## [Components of the Interface]()
+## Components of the Interface
 
 The Materials Designer is structured into four main building blocks and has the typical initial default appearance as shown in the picture below, where the four main components are demarcated in red.  To access their corresponding documentation pages, please click on each component's red panel directly on the image:
 

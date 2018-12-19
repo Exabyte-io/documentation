@@ -18,13 +18,13 @@ Jobs also refer to the simulation tasks on the Compute platform, as illustrated 
 
 The three above-mentioned concepts of Workflows, Materials and Jobs can be grouped together under the same general umbrella term of **[Entities](../entities-general/overview.md)**, due to the many features and user interface components that they share in common. We review the similarities under [Entities and Common Aspects](../entities-general/overview.md) and then explain the details unique to each Entity type separately. 
 
-For example, Jobs have **[Accounting](../accounts/overview.md)** set up for. Workflows and Materials are both **["Bankable" Entities](../entities-general/bank.md)**. Workflows further consist of **[Subworkflows](../workflows/data/subworkflows.md)**, and further of the combination of individual **[Units](../workflows/data/units.md)**, such as portrayed in the example diagram below.
+For example, Jobs have **[Accounting](../accounts/overview.md)** set up for. Workflows and Materials are both **["Bankable" Entities](../entities-general/bank.md)**. Workflows further consist of **[Subworkflows](../workflows/components/subworkflows.md)**, and further of the combination of individual **[Units](../workflows/components/units.md)**, such as portrayed in the example diagram below.
 
 ![Workflow Components](../images/getting-started/workflow-components.png "Workflow Components")
 
 ## Other Items
 
-Such simulations can be performed with any of the available **[modeling Applications](../software/applications.md)**, implementing the supported **[theoretical Models](../models/overview.md)** and corresponding **[computational Methods](../methods/overview.md)**.
+Such simulations can be performed with any of the available **[modeling Applications](../software/components.md)**, implementing the supported **[theoretical Models](../models/overview.md)** and corresponding **[computational Methods](../methods/overview.md)**.
 
 ## Data and Infrastructure
 
