@@ -17,11 +17,7 @@ This representation contains information about the application's name, summary d
 {!example/software/application.json!}
 ```
 
-## Application Components
-
-We provide an example of [structured representation](../data-structured/overview.md) for an application-specific [executable](components.md#executables) and [flavor](components.md#flavors) in what follows.
-
-### Executable
+## [Executable](components.md#executables)
 
 ```json tab="Schema" 
 {!schema/software/executable.json!}
@@ -31,7 +27,7 @@ We provide an example of [structured representation](../data-structured/overview
 {!example/software/executable.json!}
 ```
 
-###  Flavors
+## [Flavor](components.md#flavors)
 
 ```json tab="Schema" 
 {!schema/software/flavor.json!}

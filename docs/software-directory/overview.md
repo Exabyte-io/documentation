@@ -13,10 +13,10 @@ Tools can be accessed through one or more of the following methods:
 
 ## Modeling Applications
 
-The platform currently offers the choice between the following modeling software engines, otherwise known as **[applications](../software/components.md)**. Some applications have extensive integrated support in the user interface, and others are currently available through [command line terminal](../cli/overview.md) only.
+The platform currently offers the choice between the following software engines for modeling, otherwise known as **[applications](../software/components.md)**.
 
-| Name    |  Version(s)      | Access scenarios (see above)      |
-| :-------- |:----------- |:------------- |
+| Name    |  Version(s)      | Access scenarios (see previous section)      |
+| :-------- | ----------- | -------------|
 | [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.0 | 1, 3|
 | [VASP](modeling/vasp/overview.md)      | 5.3.5-5.4.4 | 1, 3 |
 | [LAMMPS](modeling/lammps.md)    | 11-2016 | 3 |
@@ -28,12 +28,19 @@ The platform currently offers the choice between the following modeling software
 !!!info "Loading Modeling Applications via Command Line Interface"
     We package modeling software available via [Command Line Interface](../cli/overview.md) as pre-compiled [modules](../cli/modules.md). Instructions on how such modules can be loaded and made available for use can be found [here](../cli/actions/modules-actions.md).
 
+## Machine Learning Applications
+
+<!-- TODO by GM: add link to exabyte-ml in the directory and version 0.1.0 -->
+
+We have a proof-of-concept support for machine learning through [Exabyte-ML]().
+
+
 ## Analysis Tools
 
 We support the following structural analysis and visualization tools through a [remote desktop connection](../remote-connection/remote-desktop.md). The reader may click each entry listed below to be redirected to the software's corresponding documentation introduction.
 
-| Name      |  Version(s) | Access scenarios (see above) |
-| :-------- |:----------- |:------------- |
+| Name      |  Version(s) | Access scenarios (see previous section) |
+| :-------- | ----------- | ------------- |
 | [VMD](analysis/vmd.md) | 1.9.3 | 2, 3 |
 | [XCRYSDEN](analysis/xcrysden.md) |  1.5.60 | 2, 3 |
 | [VESTA](analysis/vesta.md)  | 3.3.8 | 2, 3 |
@@ -48,6 +55,6 @@ Our platform includes support for two widely-used scripting languages, [shell sc
 
 For command-line users we provide a system-default python installation, and recommend users to employ virtual environments for controlling the versions of python packages in [Command Line Interface](../cli/overview.md), as explained [in this page](../cli/actions/create-python-env.md).
 
-## Development
+## Development Tools
 
 Users of our [Command Line Interface](../cli/overview.md) have at their disposal a comprehensive set of development [compilers](development/compilers.md) and [libraries](development/libraries.md), as well as of [text editors](development/text-editors.md) for inspecting or editing the relevant scripts and simulation files.
