@@ -6,7 +6,7 @@ Every crystal structure has an underlying Bravais lattice [^1]. For more theoret
 
 The parameters of a Material's Bravais lattice  can be edited and set by expanding the top "Crystal Lattice" section in the central panel of the Materials Designer interface. The appearance of this "Crystal Lattice" editor inside the interface is shown in the figure below:
 
-<img src="/images/materials-designer/crystal-lattice.png"/>
+![Opening the Crystal Lattice editor](../../images/materials-designer/crystal-lattice.png "Opening the Crystal Lattice editor")
 
 ## Setting Lattice Type
 

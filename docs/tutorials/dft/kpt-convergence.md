@@ -4,7 +4,7 @@ This page explains how to run a k-point convergence study using plane-wave pseud
 
 # Background
 
-The motivation behind using k-point convergence is explained in detail [here](/models/convergence-algorithms). This page focuses on practical usage of k-point convergence.
+The motivation behind using k-point convergence is explained in detail [here](../../models/convergence-algorithms). This page focuses on practical usage of k-point convergence.
 
 # Create job
 

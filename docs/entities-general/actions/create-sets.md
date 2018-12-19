@@ -4,7 +4,7 @@
 
 The user is presented with the following highlighted dialog, under which the name of the new set can be entered in the text field:
 
-<img src="/images/entities-general/create-set-name.png" > 
+![Create New Sets](../../images/entities-general/create-set-name.png "Create New Sets")
 
 Once "Submit" button is pressed, the new Set appears among the entries in the account-owned collection. 
 

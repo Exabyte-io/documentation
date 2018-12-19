@@ -4,7 +4,7 @@ The second `Edit` button <i class="zmdi zmdi-border-color zmdi-hc-border"></i> i
 
 <!-- TODO: this image is too large, make buttons same size as in View Panel -->
 
-<img src="/images/materials-designer/edit-features-viewer.png"/>
+![3d Editor: Edit Panel](../../images/materials-designer/edit-features-viewer.png "3d Editor: Edit Panel") 
 
  
 Each one of these actions is reviewed separately below. Click on the visuals included at the end of each section below to view the animations for the corresponding action.     
