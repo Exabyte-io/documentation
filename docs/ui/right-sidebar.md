@@ -2,7 +2,7 @@
 
 Clicking [Account Badge](../accounts/ui/account-badge.md) in the top right corner opens the Account Navigator, in the form of a sidebar menu towards the right-hand side of the page. The general appearance of this sidebar is portrayed in the following image.
 
-<img src="/images/ui/ui-right-sidebar.png"/>
+![Right-hand sidebar](../images/ui/ui-right-sidebar.png "Right-hand sidebar")
 
 The following menu entries are worth noticing.
 

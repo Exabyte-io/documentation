@@ -24,7 +24,7 @@ The header menu bar of the Workflows Designer interface finally gives the user t
 
 The location of this drop-down menu is highlighted below:
 
-<img src="/images/workflow-designer/addons-menu.png" >
+![Inserting Add-ons](../images/workflow-designer/addons-menu.png "Inserting Add-ons")
 
 ## Metadata
 

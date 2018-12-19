@@ -2,7 +2,7 @@
 
 The Dashboard page provides the user with an instant snapshot of the system status, and of his/her own recent work. Four main component panels can be recognized, as shown below.
 
-<img src="/images/ui/ui/user-dashboard.png" > 
+![User Dashboard](../../images/ui/user-dashboard.png "User Dashboard")
 
 
 ## 1. Jobs summary
