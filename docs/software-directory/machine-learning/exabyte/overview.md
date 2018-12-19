@@ -1,1 +1,5 @@
-<!-- TODO by GM: add link to exabyte-ml in the directory and version 0.1.0 -->
+# Exabyte Machine Learning
+
+We have a proof-of-concept support for machine learning through Exabyte Machine Learning (EML).
+
+This documentation page is still under construction.

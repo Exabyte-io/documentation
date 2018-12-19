@@ -32,8 +32,7 @@ The platform currently offers the choice between the following software engines 
 
 <!-- TODO by GM: add link to exabyte-ml in the directory and version 0.1.0 -->
 
-We have a proof-of-concept support for machine learning through [Exabyte-ML](machine-learning/exabyte/overview.md).
-
+We have a proof-of-concept support for machine learning through [Exabyte-ML](machine-learning/exabyte/overview.md). This application is accessible via the [subworkflow editor interface](../workflow-designer/subworkflow-editor/overview.md) only.
 
 ## Analysis Tools
 
