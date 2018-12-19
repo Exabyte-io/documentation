@@ -2,12 +2,10 @@
 
 We provide below examples of JSON-based structured representation for an application, and for each of its possible [components](overview.md#applications) (executables and flavors) and [classification categories](classification/overview.md). This structured representation is based upon the [Exabyte Data Convention](../data-structured/overview.md) implemented throughout our platform. 
 
-!!!note "Unavailability of structured data for some Applications"
-    Not all applications have been integrated on our platform to the point of having their own structured representation. For example the software codes, among those listed [here](../software-directory/overview.md), which are only available via [Command Line Interface](../cli/overview.md) rely entirely on [unstructured data files stored on disk](../data-on-disk/overview.md).
+!!! note "Work in progress"
+    Some applications are yet to be fully integrated into our platform to have a structured representation. These are only available via [Command Line Interface](../cli/overview.md).
 
-## Application
-
-This representation contains information about the application's name, summary description, and version number/build.
+## [Application](components.md)
 
 ```json tab="Schema" 
 {!schema/software/application.json!}

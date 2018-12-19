@@ -16,7 +16,7 @@ Id     JobId User  Project               Machine                                
 38922  3112  steve steve                 master-20151023-0955-cluster-001.exabyte.io       OF    DEFAULT          Charge   6.79598 72               3398         2019-02-02 07:22:18 2019-02-02 07:25:41 charge for whole hour 
 ```
 
-The full list of command-line parameters can be extracted as explained [here](../../cli/accounting.md#command-line-parameters).
+The full list of command line parameters can be extracted as explained [here](../../cli/accounting.md#command line-parameters).
 
 ## More Information
 

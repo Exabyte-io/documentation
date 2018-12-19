@@ -2,7 +2,7 @@
 
 The user can connect to the [Command Line Interface](../cli/overview.md) (CLI) of our platform using an **external SSH terminal client** under any Operating System (OS), as an alternative to the [Web Terminal](web-terminal.md).
 
-We use **SSH keys** [^1] as a way to identify users and trusted computers during command-line sessions. Keys provide improved security, however they need to be set properly before use. The steps included in the present page will guide the user through generating SSH keys and adding them to the account being employed. 
+We use **SSH keys** [^1] as a way to identify users and trusted computers during command line sessions. Keys provide improved security, however they need to be set properly before use. The steps included in the present page will guide the user through generating SSH keys and adding them to the account being employed. 
 
 Experienced users who are already familiar with how SSH clients operate under their preferred Operating System can navigate directly to the [Upload SSH key](#upload-ssh-key) section of the present page.
 
