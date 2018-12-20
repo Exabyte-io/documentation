@@ -87,7 +87,9 @@ Repeating the same typical structure across all sections of the documentation is
 
 ## Basic Guidelines
 
-### Admonition Styles
+### Formatting Styles
+
+#### Admonition Styles
 
 There are multiple [admonition](https://squidfunk.github.io/mkdocs-material/extensions/admonition/) classes available in MKDocs: tip (green), warning (orange), error (red), note (blue), and many others. To insert them in documentation pages, enter them with the following style:
 
@@ -102,7 +104,7 @@ is rendered into:
     All unused credits automatically roll over into the next validity period.
 
 
-### Expandable Sections
+#### Expandable Sections
 
 Expandable section can be added using:
 
@@ -130,15 +132,7 @@ is rendered into:
 
 Please note the `markdown=1` tag, without it the content of the `<details>` tag will not be processed appropriately. Also, the two spaces before `<summary>` seem mandatory for the same purpose.
 
-### Authorship
-
-Leave comment at the top about the original author (TB = Timur Bazhirov):
-
-```text
-<!-- by TB -->
-```
-
-### Headers
+#### Headers
 
 Write the main header (title) of the page as the first line, using top-level markdown notation (`#`). After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header, and all the rest should be entered as sub-headers.
  
@@ -151,7 +145,7 @@ All other sub-headers contained throughout the remainder of the page should then
 #### Fourth-degree Sub-header
 ```
 
-### New Lines, Empty Spaces
+#### New Lines, Empty Spaces
 
 Leave a newline after the heading elements:
 
@@ -164,7 +158,7 @@ You can create a new job by clicking on the appropriate icon.
 
 Leave ONLY one empty line at the bottom of the page, and between paragraphs. Minimize the presence of unnecessary empty spaces within the main text of the page.
 
-### ZMDI Icons
+#### ZMDI Icons
 
 Use [zmdi](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icons instead of saying "click" the button with 3 stripes:
 
@@ -176,16 +170,18 @@ will be rendered as: "click the <i class="zmdi zmdi-check zmdi-hc-border"></i> i
 
 We use the same ZMDI icon set for the main application. To find the correct ZMDI tag for an icon present on the Exabyte user interface, right click on it within your web browser and click on "Inspect Element". The ZMDI tag should be mentioned within the resulting HTML code describing the user interface.
 
-### External Links
+### Links
 
-Including an external link is best done via a dedicated "Links" section at the bottom of the page, through the `[^1]`, `[^2]`, `[^3]` etc... linking notation. For example (note the different style of citation for Websites, PDF documents, Wikipedia articles etc....):
+#### External Links
+
+Including an external link is best done via a dedicated "Links" footnote section at the bottom of the page, through the `[^1]`, `[^2]`, `[^3]` etc... linking notation (this feature is implemented via an [extension package](https://squidfunk.github.io/mkdocs-material/extensions/footnotes)). For example (note the different style of citation for Websites, PDF documents, Wikipedia articles etc....):
 
 ```text
 Apple is the main competitor to Microsoft [^1].
     
 Mac OS [^2] is the main Operating System developed by Apple.
 
-Mac OS is a cool Operating System for running VASP, which is a type of ab-initio simulation code [^3].
+Mac OS can run VASP, a type of ab-initio simulation code [^3].
 
 Full instructions on how to use VASP can be found in Ref. [^4].
     
@@ -193,25 +189,27 @@ Full instructions on how to use VASP can be found in Ref. [^4].
     
 [^1]: [Microsoft, Official Website](www.microsoft.com)
 [^2]: [Mac OS, Official Website](www.apple.com/mac-os.html)
-[^3]: [Wikipedia Ab-initio Simulations, Website](www.wikipedia.org/ab-initio-simulations.html)
+[^3]: [Wikipedia Ab-initio, Website](www.wikipedia.org/ab-initio-simulations.html)
 [^4]: [VASP manual, Document](www.vasp.com/user-manual.pdf)
 ```
 
-### Links to Other Documentation Pages
+#### Links to Other Documentation Pages
 
 Including a local link to another page in the documentation, or a specific sub-header section within that page, is done with the following notations respectively. 
 
 ```text
-We explain our different service levels [in this page](../../pricing/service-levels.md)
+We explain service levels [in this page](../../pricing/service-levels.md)
 ```
 
 ```text
-The particular information concerning the pricing associated with each available service level can be found [here](../../pricing/service-levels.md#pricing)
+The particular information can be found [here](../../pricing/service-levels.md#pricing)
 ```
 
 Use **ONLY RELATIVE** paths starting from the current page, not the absolute ones.
 
-### Including Images
+### Insert Images and Animations
+
+#### Including Images
 
 Including an image/screenshot is done as follows, in MKDocs notation (don't use HTML tags).
 
@@ -221,7 +219,7 @@ Including an image/screenshot is done as follows, in MKDocs notation (don't use 
 
 Put images in separate folders within the main "images" directory, one for each top level section of the documentation. Also in this case it is essential to use **RELATIVE** and not absolute paths to the image, starting from the current page. 
 
-### Including GIFs
+#### Including GIFs
 
 GIFs should be stored in the same image folders as normal images (see above). Including a GIF image is done as follows. 
 
@@ -233,7 +231,7 @@ In this case, absolute paths to the GIF need to be used, since we insert GIFs di
 
 We use a third-party plugin, embedded into the source of this repository ("giffer") in order to make gif images clickable like videos.
 
-### Embedding Youtube Videos
+#### Embedding Youtube Videos
 
 Youtube videos can be embedded within documentation page through the following block of commands, linking to the video's identifier present in its URL:
 
@@ -243,7 +241,7 @@ Youtube videos can be embedded within documentation page through the following b
 </div>
 ```
 
-### Including Clickable Images
+#### Including Clickable Images
 
 Including a clickable image map is done as follows. Note that absolute paths to the image are required in this case, since we have to use HTML commands which don't work with relative paths.
 
@@ -266,23 +264,26 @@ Including a clickable image map is done as follows. Note that absolute paths to 
 -->
 ```
 
-### Including JSON Schemas and Examples
+### Insert Code Blocks
+
+#### Including JSON Schemas and Examples
 
 Including resolved JSON schemas and associated examples should be done within dedicated `data.md` pages for each concept being explained.
     
-The [markdown_include](https://github.com/Exabyte-io/markdown-include) package is used to include JSON content into markdown documents, by putting direct links to pages inside the ESSE repository instead of copying their contents in the main documentation.
+The [markdown_include](https://github.com/Exabyte-io/markdown-include) package is used to include JSON content into markdown documents, by putting direct links to pages inside the [ESSE repository](https://github.com/Exabyte-io/exabyte-esse) instead of copying their contents in the main documentation.
 
 ```text
-        ```json tab="Schema" 
-            {!schema/file_path/file_name.json!}
-        ```
-        
-        ```json tab="Example" 
-            {!example/file_path/file_name.json!}
-        ```
+
+    ```json tab="Schema" 
+    {!schema/file_path/file_name.json!}
+    ```
+    ```json tab="Example" 
+    {!example/file_path/file_name.json!}
+    ```
+
 ```
 
-### Inserting Code Snippets 
+#### Inserting Code Snippets 
 
 Use the following conventions: "object" to quote object or concept, or `button` (between ` ticks as opposed to " quotes) to cite user interface icons or command-line statements in-line. 
 
@@ -294,7 +295,7 @@ Extended code blocks should be enclosed between pairs of triple ticks with name 
     print "Hello World"
     ```
     
-### Inserting Latex Math Equations
+#### Inserting Latex Math Equations
 
 Math equations written in Latex can be inserted within documentation pages (after installing requirements - see instructions at the top of this page) both in-line and as separate blocks, using the dollar notation as shown in the following example:
 
@@ -306,7 +307,9 @@ p_{avg}=-\frac{1}{3} \mathrm{Tr} \hspace{1pt} {\boldsymbol{\sigma}}
 $$ 
 ```
 
-### Formality of Writing Style
+### Writing Style
+
+#### Formality of Writing Style
 
 Some useful writing style rules are listed below:
 
@@ -326,7 +329,7 @@ Some useful writing style rules are listed below:
 
 - For basic concepts, put links to Wikipedia instead of re-explaining them from scratch.
 
-### Words to Avoid
+#### Words to Avoid
 
 Please also consult the following list of words which are **STRONGLY DISCOURAGED** to use in documentation, to avoid a condescending, frivolous or pedantic tone:
 

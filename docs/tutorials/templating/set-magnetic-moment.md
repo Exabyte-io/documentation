@@ -38,7 +38,7 @@ We begin by defining the "MAGMOM" variable [^1], which will be included in the i
 
 ### 2. Define Ferromagnetic Elements
 
-In the second line, we [set](../../workflows/templating/engine.md#variables-assignment) the ferromagnetic elements, that need to have magnetic moments attributed to them, to be constituted of the following list: Vanadium (V), Chromium (Cr), Manganese (Mn), Iron (Fe), Cobalt (Co), and Nickel (Ni).
+In the second line, we [set](../../workflows/templating/jinja.md#variables-assignment) the ferromagnetic elements, that need to have magnetic moments attributed to them, to be constituted of the following list: Vanadium (V), Chromium (Cr), Manganese (Mn), Iron (Fe), Cobalt (Co), and Nickel (Ni).
 
 ### 3. Read POSCAR Content
 
@@ -50,9 +50,9 @@ The lines containing the atomic coordinates and element chemical symbols within 
 
 ### 5-17. Set Magnetic Moments
 
-The list of atomic coordinates defined previously is then looped over through the use of a [for loop](../../workflows/templating/engine.md#for-loops). 
+The list of atomic coordinates defined previously is then looped over through the use of a [for loop](../../workflows/templating/jinja.md#for-loops). 
 
-The element symbol indicated at the end of each coordinate line is isolated in turn (line 8) and assigned to the variable "element", which is checked against the aforementioned list of ferromagnetic elements (line 10) through a [conditional statement](../../workflows/templating/engine.md#conditionals). If a positive match is detected, this element is assigned a magnetic moment value of +/- 5 in an alternating order (line 11). Otherwise, in case the element is found to be non-ferromagnetic, it is given a magnetic moment of zero (line 15).
+The element symbol indicated at the end of each coordinate line is isolated in turn (line 8) and assigned to the variable "element", which is checked against the aforementioned list of ferromagnetic elements (line 10) through a [conditional statement](../../workflows/templating/jinja.md#conditionals). If a positive match is detected, this element is assigned a magnetic moment value of +/- 5 in an alternating order (line 11). Otherwise, in case the element is found to be non-ferromagnetic, it is given a magnetic moment of zero (line 15).
 
 ### 18. Return Final Output
 
