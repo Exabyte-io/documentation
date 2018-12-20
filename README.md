@@ -10,42 +10,52 @@ Uses [MkDocs](http://www.mkdocs.org/#getting-started) to convert Markdown files 
 
 ## Setup
 
-For quick installation run:
+For quick installation:
 
-```bash
-easy_install pip  # if pip is not installed yet
-virtualenv .virtualenv
-source .virtualenv/bin/activate
-pip install -r requirements.txt
-git submodule update --init
-```
+1. Install dependencies: python 2.7, `pip`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
 
-In order to download images:
+2. Clone this repository: 
 
-```
-sh ./scripts/download_images.sh
-```
+    ```bash
+    git clone git@github.com:Exabyte-io/exabyte-public-documentation.git
+    ```
 
-After that inside the repo directory run, after sourcing virtual environment:
+3. Setup virtual environment
 
-```bash
-mkdocs build --clean  # to build new static pages from scratch
-mkdocs serve
-```
+    ```bash
+    cd exabyte-public-documentation
+    virtualenv .virtualenv
+    source .virtualenv/bin/activate
+    pip install -r requirements.txt
+    ```
 
-You should have the documentation available at `http://localhost:8000`
+4. Init git submodules:
 
-## Important
+    ```bash
+    git submodule update --init
+    ```
 
-In order to make it easier to merge ongoing updates from mkdocs, do not change the content of:
+5. Download images:
 
-    ./exabyte_theme/*
+    ```bash
+    sh ./scripts/download_images.sh
+    ```
 
-except for extra css and extra js files.
+6. Start mkdocs server (after sourcing virtual environment):
+
+    ```bash
+    mkdocs serve
+    ```
+
+You should have the documentation up and running at `http://localhost:8000`
 
 ## Development
 
-Images (screenshots) are kept separately at http://files.exabyte.io:18/uploads/images/ and synchronized into `./docs/images` folder through running:
+### Including Images
+
+Do NOT push images to this repository with git. 
+
+(Some) Images (screenshots) are kept separately at http://files.exabyte.io:18/uploads/images/ and synchronized into `./docs/images` folder through running:
 
 ```bash
 sh ./scripts/download_images.sh
@@ -57,37 +67,74 @@ or
 sh ./scripts/upload_images.sh
 ```
 
-Do NOT push images to this repository.
+Some images are included with git-lfs. This is an acceptable way to contribute images, as long as the size is kept small (below 1Mb each) in order to avoid exceeding Github LFS quota.
+
+### Adjusting styles and sources
+
+The default [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme is extended, with additional css and javascript inside [docs/extra](docs/extra/) folder. Any new files shall go into the same folder and shall be added to the corresponding section of [mkdocs.yml](mkdocs.yml).
+
 
 ## Notes on Object-Oriented Design 
 
-We strongly encourage the implementation of Object Oriented Programming (OOP) principles when structuring the documentation, which consist in the following:
+We embrace Object Oriented Design (OOD) principles when structuring the documentation. The rationale for adhering to the above OOP principles is mainly to avoid unnecessary repetitions of the same explanations in multiple different places, and thus to make the documentation easily expandable or modifiable in the future when new features will be added/changed.
 
-- **Encapsulation**: each topic should be encapsulated in its own section, meaning that it should be **isolated** from the rest of the documentation, and that ALL aspects pertaining to that specific topic should be confined and explained within the same **unique** section of the documentation.
-- **Abstraction**: general concepts should only be explained once at the top level of a given section, and specific sub-components of such concepts in lower levels and so on.
-- **Inheritance**: specific pages should inherit most of their contents from the general pages explained at the top level of a section.
+### OOD Principles
 
-Example:
+- **Encapsulation**: each topic should be encapsulated in its own section, meaning that it should be **isolated** from the rest of the documentation content, with the latter linking to a single original source. See the folder structure and the explanation of [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, for example.
 
-"All humans have two hands and two legs, which is a general and abstract property. However only a small fraction of these humans have blond hair, which is thus a special property. When you explain blond hair in its own specialized and encapsulated documentation page, you should not need to repeat that blond people have two legs and two hands, since such abstract concepts will be automatically inherited from the top level page explaining the basic general physiology common to ALL humans, including blonds"
+- **Abstraction**: general concepts shared by multiple specific implementations shall be explained separately from the implementations themselves. See [method](docs/methods/overview.md) and [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, explanation, for example.
 
-The rationale for adhering to the above OOP principles is mainly to avoid unnecessary repetitions of the same explanations in multiple different places, and thus to make the documentation easily expandable or modifiable in the future when new features will be added/changed.
+- **Inheritance**: specific pages should inherit most of their contents from the general pages explained at the top level of a section. See example mentioned in the previous point.
 
-## Typical (Modular) Structure of Documentation Sections
+> Example:
+> 
+> "All humans have two hands and two legs, which is a general and abstract property. However only a small fraction of these humans have blond hair, which is a special property. When you explain blond hair in its own specialized and encapsulated documentation page, you should not need to repeat that blond people have two legs and two hands, since such abstract concepts will be inherited from the top level page explaining the basic general physiology common to ALL humans, including blonds"
+
+### Typical Structure of Documentation Sections
 
 Some pages/sections appear recurrently in most documentation sections. Below is a list of the most common ones, with a brief explanation:
 
-- **overview**: page with introduction to the contents of the present section (containing one *clickable/linked sub-header* for each main topic discussed in section). Should be present both at top level of each section, AND within each of its main sub-sections.
-- **ui**: page or section describing the user interface implementation of concepts (which have to be EXPLAINED SEPARATELY).
-- **data**: page containing JSON structured representations for the entities treated in the present section.
-- **actions**: section describing all the actions (such as open, edit, delete, import entity) pertaining to the concepts under discussion (which have to be EXPLAINED SEPARATELY).
+- **overview**: page with introduction to the contents of the present section (containing one *clickable/linked sub-header* for each main topic discussed in section). Should be present both at top level of each section, and within each of its main sub-sections.
 
-Repeating the same typical structure across all sections of the documentation is called **Modular Approach**.
+- **ui**: section describing the user interface implementation of concepts (to should be explained separately).
 
+- **data**: section containing JSON structured representations for the entities treated in the present section.
+
+- **actions**: section describing the actions (such as open, edit, delete etc) related to the concepts under discussion.
+
+### Directory Pattern
+
+When there are multiple implementations of a particular concept, we apply a "Directory Pattern", where the concept is explained separately, and then the multiple implementations of the concept are organized into a directory. See [method](docs/methods/overview.md) and [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, explanation, for example.
 
 ## Basic Guidelines
 
 ### Formatting Styles
+
+#### Headers
+
+Write the main header (title) of the page as the first line, using top-level markdown notation (`#`). After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header, and all the rest should be entered as sub-headers.
+ 
+All other sub-headers contained throughout the remainder of the page should then be entered as second, third or even fourth degree headers, like in the following example:
+
+```text
+# Main Header (only one allowed, to be put in first line of page)
+## Second-degree Sub-header
+### Third-degree Sub-Header
+#### Fourth-degree Sub-header
+```
+
+#### New Lines, Empty Spaces
+
+Leave a newline after the heading elements:
+
+```text
+## Create a new job
+
+You can create a new job by clicking on the appropriate icon.
+
+```
+
+Leave ONLY one empty line at the bottom of the page, and between paragraphs. Minimize the presence of unnecessary empty spaces within the main text of the page.
 
 #### Admonition Styles
 
@@ -132,31 +179,6 @@ is rendered into:
 
 Please note the `markdown=1` tag, without it the content of the `<details>` tag will not be processed appropriately. Also, the two spaces before `<summary>` seem mandatory for the same purpose.
 
-#### Headers
-
-Write the main header (title) of the page as the first line, using top-level markdown notation (`#`). After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header, and all the rest should be entered as sub-headers.
- 
-All other sub-headers contained throughout the remainder of the page should then be entered as second, third or even fourth degree headers, like in the following example:
-
-```text
-# Main Header (only one allowed, to be put in first line of page)
-## Second-degree Sub-header
-### Third-degree Sub-Header
-#### Fourth-degree Sub-header
-```
-
-#### New Lines, Empty Spaces
-
-Leave a newline after the heading elements:
-
-```text
-## Create a new job
-
-You can create a new job by clicking on the appropriate icon.
-
-```
-
-Leave ONLY one empty line at the bottom of the page, and between paragraphs. Minimize the presence of unnecessary empty spaces within the main text of the page.
 
 #### ZMDI Icons
 
@@ -170,11 +192,14 @@ will be rendered as: "click the <i class="zmdi zmdi-check zmdi-hc-border"></i> i
 
 We use the same ZMDI icon set for the main application. To find the correct ZMDI tag for an icon present on the Exabyte user interface, right click on it within your web browser and click on "Inspect Element". The ZMDI tag should be mentioned within the resulting HTML code describing the user interface.
 
+
+
+
 ### Links
 
 #### External Links
 
-Including an external link is best done via a dedicated "Links" footnote section at the bottom of the page, through the `[^1]`, `[^2]`, `[^3]` etc... linking notation (this feature is implemented via an [extension package](https://squidfunk.github.io/mkdocs-material/extensions/footnotes)). For example (note the different style of citation for Websites, PDF documents, Wikipedia articles etc....):
+Including an external link is best done via a dedicated "Links" footnote section at the bottom of the page, through the `[^1]`, `[^2]`, `[^3]` etc... linking notation (this feature is implemented via the Footnotes [pymdwown extension package](https://squidfunk.github.io/mkdocs-material/extensions/footnotes)). For example (note the different style of citation for Websites, PDF documents, Wikipedia articles etc....):
 
 ```text
 Apple is the main competitor to Microsoft [^1].
@@ -191,7 +216,11 @@ Full instructions on how to use VASP can be found in Ref. [^4].
 [^2]: [Mac OS, Official Website](www.apple.com/mac-os.html)
 [^3]: [Wikipedia Ab-initio, Website](www.wikipedia.org/ab-initio-simulations.html)
 [^4]: [VASP manual, Document](www.vasp.com/user-manual.pdf)
+
+///FOOTNOTES GO HERE///
 ```
+
+By default, footnotes are included at the bottom of the page. `///FOOTNOTES GO HERE///` statement is necessary to include them elsewhere.
 
 #### Links to Other Documentation Pages
 
@@ -207,7 +236,10 @@ The particular information can be found [here](../../pricing/service-levels.md#p
 
 Use **ONLY RELATIVE** paths starting from the current page, not the absolute ones.
 
-### Insert Images and Animations
+
+
+
+### Images and Animations
 
 #### Including Images
 
@@ -241,7 +273,7 @@ Youtube videos can be embedded within documentation page through the following b
 </div>
 ```
 
-#### Including Clickable Images
+#### Clickable Image Maps
 
 Including a clickable image map is done as follows. Note that absolute paths to the image are required in this case, since we have to use HTML commands which don't work with relative paths.
 
@@ -264,9 +296,11 @@ Including a clickable image map is done as follows. Note that absolute paths to 
 -->
 ```
 
-### Insert Code Blocks
 
-#### Including JSON Schemas and Examples
+
+### Code Blocks
+
+#### JSON Schemas and Examples
 
 Including resolved JSON schemas and associated examples should be done within dedicated `data.md` pages for each concept being explained.
     
@@ -283,7 +317,7 @@ The [markdown_include](https://github.com/Exabyte-io/markdown-include) package i
 
 ```
 
-#### Inserting Code Snippets 
+#### Code Snippets 
 
 Use the following conventions: "object" to quote object or concept, or `button` (between ` ticks as opposed to " quotes) to cite user interface icons or command-line statements in-line. 
 
@@ -295,7 +329,7 @@ Extended code blocks should be enclosed between pairs of triple ticks with name 
     print "Hello World"
     ```
     
-#### Inserting Latex Math Equations
+#### Latex Math Equations
 
 Math equations written in Latex can be inserted within documentation pages (after installing requirements - see instructions at the top of this page) both in-line and as separate blocks, using the dollar notation as shown in the following example:
 
@@ -307,31 +341,33 @@ p_{avg}=-\frac{1}{3} \mathrm{Tr} \hspace{1pt} {\boldsymbol{\sigma}}
 $$ 
 ```
 
+
+
 ### Writing Style
 
-#### Formality of Writing Style
+#### Formality
 
 Some useful writing style rules are listed below:
 
-- Language has to be CLEAR, SIMPLE, DRY, PLAIN, and CONCISE. Avoid use of superfluous, adorning or exaggerating adjectives, such as saying things like "the complete list of all the many different items". Just say "the list of items".
+- Language has to be simple, dry, and concise. Avoid use of superfluous, adorning or exaggerating adjectives, such as saying things like "the *complete* list of *all the many different* items". Just say "the list of items".
 
-- Please use third person when referring to reader/user. So, instead of saying things like "you should click on this button", say it as "the user should click on this button" or use the passive voice: "this button should be clicked upon".
+- Use third person when referring to reader/user. So, instead of saying "*you* can access", say it as "*the user* can access" or use the passive voice: "this functionality can be accessed".
 
-- Also, allow for both genders when thinking about the reader, for example: "he/she is advised to do open the account page" or "his/her account balance should be consulted".
+- Allow for both genders when thinking about the reader, for example: "he/she is advised to do open the account page" or "his/her account balance should be consulted".
 
-- NEVER start a sentence with short interjections like "To", "By", "From" etc.... Consider using more complex forms such as "In order to".
+- Never start a sentence with short interjections like "To". Consider using more complex forms such as "In order to". Consider a similar approach with "By", "From" etc. 
 
 - Give preference to present tense rather than future tense.
 
-- It's better to say "click the button" as opposed to "click on the button".
+- It's better to say "click the button" than "click on the button".
 
 - Introduce acronyms at first mention in every page, like: "Density Functional Theory (DFT) is used as a simulation tool....". Don't put acronyms in headers.
 
-- For basic concepts, put links to Wikipedia instead of re-explaining them from scratch.
+- For concepts that do not originate at Exabyte, put links to original source (or Wikipedia) instead of re-explaining them inside documentation.
 
 #### Words to Avoid
 
-Please also consult the following list of words which are **STRONGLY DISCOURAGED** to use in documentation, to avoid a condescending, frivolous or pedantic tone:
+The following list of words should be avoided:
 
 - Simply
 - Clearly
@@ -345,3 +381,4 @@ Please also consult the following list of words which are **STRONGLY DISCOURAGED
 - Distinct
 - Various 
 - Automatically
+- Finally
