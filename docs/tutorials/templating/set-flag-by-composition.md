@@ -32,7 +32,7 @@ The initial `{% spaceless %}` flag is explained [here](../../workflows/templatin
 
 ### 2. Set Element Requiring Higher Cutoff Parameter (Nitrogen)
 
-We begin the logic of our template by defining the element that needs a high plane-wave cutoff to be "N" for Nitrogen, using the [set statement](../../workflows/templating/engine.md#variables-assignment). 
+We begin the logic of our template by defining the element that needs a high plane-wave cutoff to be "N" for Nitrogen, using the [set statement](../../workflows/templating/jinja.md#variables-assignment). 
 
 ### 3. Read Structural Data
 
@@ -46,7 +46,7 @@ We first break the lines at the mention of the `direct` string, and take all the
 
 ### 7 - 11. Check for Presence of Nitrogen in Material 
 
-An "if/else" [conditional block of statements](../../workflows/templating/engine.md#conditionals) is then included in the remainder of the above template. This checks for the presence of "Al" within the list of elements extracted from the POSCAR file of the material under investigation. If a positive match is encountered, then the variable "ENCUT" for the material simulation is correspondingly set to the higher value of 600 eV, otherwise in the contrary case it is set to a lower 450 eV. 
+An "if/else" [conditional block of statements](../../workflows/templating/jinja.md#conditionals) is then included in the remainder of the above template. This checks for the presence of "Al" within the list of elements extracted from the POSCAR file of the material under investigation. If a positive match is encountered, then the variable "ENCUT" for the material simulation is correspondingly set to the higher value of 600 eV, otherwise in the contrary case it is set to a lower 450 eV. 
 
 ### 12. Print Encut Variable Result
 

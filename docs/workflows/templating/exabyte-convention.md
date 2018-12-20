@@ -16,7 +16,7 @@ The context passed to the templates at runtime. This context provides system-lev
 
 ### Raw Syntax
 
-The "Raw" filter syntax is used to prevent the Web Interface from rendering variables during the **Design-time Rendering**, given that such variables are only available during the ensuing **Runtime Rendering**. Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software/modeling/quantum-espresso.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
+The "Raw" filter syntax is used to prevent the Web Interface from rendering variables during the **Design-time Rendering**, given that such variables are only available during the ensuing **Runtime Rendering**. Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
 
 ```jinja2
 pseudo_dir = {% raw %}'{{ JOB_WORK_DIR }}/pseudo'{% endraw %}
