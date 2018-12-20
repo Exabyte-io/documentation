@@ -2,6 +2,9 @@
 
 The pricing on our platform is dependent on the [Service Level](../accounts/service-levels.md). We aim to have a flexible scheme where customers always pay on-demand for the value they extract. We give preferential pricing to scenarios with larger upfront commitment, as  helps us optimize and lower our maintenance costs.
 
+!!! note "Contact us for detailed pricing"
+    For detailed pricing or a quotation please contact us at <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>
+
 ## Comparison Table
 
 Below is a quick comparison of our pricing for different [Service Level](../accounts/service-levels.md).
@@ -36,7 +39,9 @@ The price above refers to the **Ordinary** [cost category](../infrastructure/res
 
 ## Queue- and Cluster-dependent pricing
 
-As the type of hardware and scheduling policies vary for different submission queues, the pricing is also different. Detailed description of submission queues is available [elsewhere](../infrastructure/resource/queues.md). Clusters and associated hardware and pricing are explained in [this section](../infrastructure/clusters/overview.md)
+As the type of hardware and scheduling policies vary for different submission queues, the pricing is also different. For, example, GPU-enabled nodes are available within a certain subset of queues and are generally priced higher.
+
+Detailed description of submission queues is available [here](../infrastructure/resource/queues.md). Clusters and associated hardware and pricing are explained in [this section](../infrastructure/clusters/overview.md)
 
 !!! tip "Least expensive pricing options"
     The options explained above can be combined in order to achieve the least expensive pricing. For example, when "Enterprise-Extra" service level is used in combination with submission queues that belong to the "Saving" cost category, the resulting price per core hour can be as low as $0.02. When we take into account the performance per core [benchmarks](../benchmarks/2018-11-12-comparison.md#performance-per-core) this presents a unique performance per price option.

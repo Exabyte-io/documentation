@@ -11,7 +11,7 @@ Service levels define the types, qualities and quantities of services provided t
 | Validity Period |  The duration of time over which the account will remain active and accessible by the users |
 | Reserved Compute Nodes |	The number of supercomputing clusters which are made available to the users of the account | 
 | Month Data Usage | The total quota of storage space which is allocated to the account on a monthly basis |
-| Private Data  | The possibility to hold private entities inside an account. Otherwise all entities are public for all other platform users to see |
+| Private Data  | The possibility to hold private entities inside an account. Otherwise entities are accessible for other platform users to view. More explanation [here](../collaboration/sharing/access-levels.md). |
 | Organizations/Teams  | The possibility to create organization accounts, and multiple teams inside each of these organizations |
 | Maximum Team Size  | The maximum number of users that can be hosted inside teams in general |
 | Support Level	| The different forms and depths of support that users will receive by our support staff in case of technical difficulties being encountered |
@@ -39,7 +39,7 @@ Here's how it works:
 
 > NOTE: validity periods for the same service level add up. In case a user pays the minimum amount and then adds another equivalent payment within the validity period, the total allocation can then be used within the combined period equal to twice the validity period time
 
-## Service levels for Enterprise
+## Service Levels for Enterprise
 
 Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](../collaboration/organizations/overview.md). 
 
