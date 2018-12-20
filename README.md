@@ -123,18 +123,41 @@ All other sub-headers contained throughout the remainder of the page should then
 #### Fourth-degree Sub-header
 ```
 
-#### New Lines, Empty Spaces
+#### New Lines
 
 Leave a newline after the heading elements:
 
 ```text
-## Create a new job
+## Job
 
-You can create a new job by clicking on the appropriate icon.
-
+You can create a new job by clicking the appropriate icon.
 ```
 
+#### Empty Spaces
+
 Leave ONLY one empty line at the bottom of the page, and between paragraphs. Minimize the presence of unnecessary empty spaces within the main text of the page.
+
+Leave more than one empty line (2-3) when "coming back" to higher-level header from nested level, as below:
+
+```text
+## Job
+
+...
+
+### Job Parameters
+
+...
+
+#### Job Sub-parameters
+
+...
+
+
+## Workflow
+
+...
+```
+
 
 #### Admonition Styles
 
