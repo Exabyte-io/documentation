@@ -12,29 +12,29 @@ The following table provides information about available clusters on Amazon Web 
 
 ## Queues
 
-The list of currently enabled queues is given below. Price is shown in cents per core hour for the best available [service level](../../pricing/service-levels.md).
+The list of currently enabled queues is given below. Price per core hour is shown in relation to the [relative unit price](../../pricing/service-levels.md#comparison-table) and is subject to change at any time. Total number of nodes can be increased upon [request](../../ui/support.md).
 
 | Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job | Max Nodes Total |
 | :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
-| D     | debug        | debug    | core-seconds      | 22.51                   | 1         | 10        |
-| OR    | ordinary     | regular  | core-seconds      | 10.00                   | 1         | 10        |
-| OR4   | ordinary     | regular  | core-seconds      | 11.26                   | 1         | 20        |
-| OR8   | ordinary     | regular  | core-seconds      | 11.26                   | 1         | 20        |
-| OR16  | ordinary     | regular  | core-seconds      | 11.26                   | 1         | 20        |
-| OF    | ordinary     | fast     | core-hours        | 10.00                   | &le;50    | 100       |
-| OF+   | ordinary     | fast     | core-hours        | 9.62                    | &le;50    | 10        |
-| SR    | saving       | regular  | core-seconds      | 2.00                    | 1         | 10        |
-| SR4   | saving       | regular  | core-seconds      | 2.25                    | 1         | 20        |
-| SR8   | saving       | regular  | core-seconds      | 2.25                    | 1         | 20        |
-| SR16  | saving       | regular  | core-seconds      | 2.25                    | 1         | 20        |
-| SF    | saving       | fast     | core-hours        | 2.00                    | &le;50    | 100       |
-| SF+   | saving       | fast     | core-hours        | 2.41                    | &le;50    | 10        |
-| GOF   | ordinary     | fast     | core-hours        | 86.55                   | &le;50    | 10        |
-| G4OF  | ordinary     | fast     | core-hours        | 86.55                   | &le;50    | 10        |
-| G8OF  | ordinary     | fast     | core-hours        | 86.55                   | &le;50    | 10        |
-| GSF   | saving       | fast     | core-hours        | 33.70                   | &le;50    | 10        |
-| G4SF  | saving       | fast     | core-hours        | 41.58                   | &le;50    | 10        |
-| G8SF  | saving       | fast     | core-hours        | 43.35                   | &le;50    | 10        |
+| D     | debug        | debug    | core-seconds      | 2.251                   | 1         | 10        |
+| OR    | ordinary     | regular  | core-seconds      | 1.000                   | 1         | 10        |
+| OR4   | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
+| OR8   | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
+| OR16  | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
+| OF    | ordinary     | fast     | core-hours        | 1.000                   | &le;50    | 100       |
+| OF+   | ordinary     | fast     | core-hours        | 0.962                   | &le;10    | 10        |
+| SR    | saving       | regular  | core-seconds      | 0.200                   | 1         | 10        |
+| SR4   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
+| SR8   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
+| SR16  | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
+| SF    | saving       | fast     | core-hours        | 0.200                   | &le;50    | 100       |
+| SF+   | saving       | fast     | core-hours        | 0.241                   | &le;10    | 10        |
+| GOF   | ordinary     | fast     | core-hours        | 8.655                   | &le;10    | 10        |
+| G4OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;10    | 10        |
+| G8OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;10    | 10        |
+| GSF   | saving       | fast     | core-hours        | 3.370                   | &le;10    | 10        |
+| G4SF  | saving       | fast     | core-hours        | 4.158                   | &le;10    | 10        |
+| G8SF  | saving       | fast     | core-hours        | 4.335                   | &le;10    | 10        |
 
 ## Hardware Specifications
 

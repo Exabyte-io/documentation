@@ -12,20 +12,23 @@ The following table provides information about available clusters on Microsoft A
 
 ## Queues
 
-The list of currently enabled queues is given below. Price is shown in cents per core hour for the best available [service level](../../pricing/service-levels.md).
+The list of currently enabled queues is given below. Price per core hour is shown in relation to the [relative unit price](../../pricing/service-levels.md#comparison-table) and is subject to change at any time. Total number of nodes can be increased upon [request](../../ui/support.md). 
 
 | Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job | Max Nodes Total |
 | :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
-| D     | debug        | debug    | core-seconds      | 40.02                   | 1         | 10        |
-| OR    | ordinary     | regular  | core-seconds      | 20.00                   | 1         | 10        |
-| OR8   | ordinary     | regular  | core-seconds      | 20.01                   | 1         | 10        |
-| OF    | ordinary     | fast     | core-hours        | 22.00                   | &le;50    | 100       |
-| SR    | saving       | regular  | core-seconds      | 4.00                    | 1         | 10        |
-| SR8   | saving       | regular  | core-seconds      | 4.01                    | 1         | 10        |
-| SF    | saving       | fast     | core-hours        | 4.41                    | &le;50    | 100       |
-| GPOF  | ordinary     | fast     | core-hours        | 12.22                   | &le;50    | 10        |
-| GP2OF | ordinary     | fast     | core-hours        | 12.22                   | &le;50    | 10        |
-| GP4OF | ordinary     | fast     | core-hours        | 12.22                   | &le;50    | 10        |
+| D     | debug        | debug    | core-seconds      | 4.002                   | 1         | 10        |
+| OR    | ordinary     | regular  | core-seconds      | 2.000                   | 1         | 10        |
+| OR8   | ordinary     | regular  | core-seconds      | 2.001                   | 1         | 10        |
+| OF    | ordinary     | fast     | core-hours        | 2.200                   | &le;50    | 100       |
+| SR    | saving       | regular  | core-seconds      | 0.400                   | 1         | 10        |
+| SR8   | saving       | regular  | core-seconds      | 0.401                   | 1         | 10        |
+| SF    | saving       | fast     | core-hours        | 0.441                   | &le;50    | 100       |
+| GPOF  | ordinary     | fast     | core-hours        | 6.110                   | &le;10    | 10        |
+| GP2OF | ordinary     | fast     | core-hours        | 6.110                   | &le;10    | 10        |
+| GP4OF | ordinary     | fast     | core-hours        | 6.110                   | &le;10    | 10        |
+| GPSF  | saving       | fast     | core-hours        | 1.222                   | &le;10    | 10        |
+| GP2SF | saving       | fast     | core-hours        | 1.222                   | &le;10    | 10        |
+| GP4SF | saving       | fast     | core-hours        | 1.222                   | &le;10    | 10        |
 
 ## Hardware Specifications
 
