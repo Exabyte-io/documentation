@@ -2,6 +2,10 @@
 
 We offer a set of **high-performance computing clusters** to facilitate materials modeling with high throughput and high fidelity. Our infrastructure contains multiple clusters at any point in time, deployed at multiple cloud providers as referenced at the end of the present page. The modular character of our system allows for the on-premises and hybrid cloud deployments, as well as a managed cloud scenario.
 
+## Current State
+
+The current state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters).
+
 ## Cluster Aliases
 
 In order to make the identification of cluster aliases more user-friendly we use human-readable names or "Aliases" instead of their fully-qualified domain names [^1] for the cluster Master Nodes.
