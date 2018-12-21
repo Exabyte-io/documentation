@@ -1,4 +1,4 @@
-<!-- by MH -->
+<!-- by MH should be done with rest-api -->
 
 The "Analytics" page is a powerful tool to aggregate, sort, organize, and compare materials and visualize their properties quickly. It is especially useful for combinatorial studies on a large number of materials.
 
