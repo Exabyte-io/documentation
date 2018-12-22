@@ -6,7 +6,7 @@ The available [clusters and cluster nodes](../../infrastructure/clusters/overvie
 
 An example of output of the `exaclusters` command is shown below.
 
-```
+```bash
 ALIAS        HOSTNAME
 -----------  ------------------------------------------------
 cluster-001  master-production-20160630cluster-001.exabyte.io
@@ -17,7 +17,7 @@ cluster-007  master-production-20160630cluster-007.exabyte.io
 
 An example of the output of the other `exanodes` command is included below.
 
-```
+```bash
 master-production-20160630-cluster-001.exabyte.io
      state = free
      power_state = Running
