@@ -1,38 +1,43 @@
-<!-- TODO: come back and revise once more after the rest -->
-
 # Content Highlights
 
 This page helps users quickly get through the documentation.
 
 ## Login
 
-We support 2 basics login types: through web-page and via secure shell terminal. You must have a valid username and password in order to login via web. Secure shell sessions use [key-based authentication](../compute/cli/login/#upload-ssh-key). Users logged-in through the web can also access command line terminal and remote desktop clients right inside the web browser without additional authentication. Read more in:
+We support two basics login connection methods: through our [Web Interface](../ui/overview.md), and via [secure shell terminal (SSH)](../remote-connection/ssh.md) to access our [Command Line Interface (CLI)](../cli/overview.md). You must have a valid username and password in order to login via either option. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have also a [Remote Desktop Environment](../remote-connection/remote-desktop.md) at their disposal. 
 
-- [secure shell and in-browser terminals](../remote-connection/overview.md)
-- [remote desktop session example](../remote-connection/remote-desktop.md)
+The user can find out more about such connection methods under the following links.
+
+- [secure shell (ssh)](../remote-connection/ssh.md) 
+- [web terminal](../remote-connection/web-terminal.md)
+- [remote desktop](../remote-connection/remote-desktop.md)
 - [connection options explained](../remote-connection/overview.md)
 - <a href="http://platform.exabyte.io/login" target="_blank">login page</a>
 
-## Creating materials
+## Creating Materials
 
-There are 3 basic ways to input material geometries:
+There are three basic ways to input material geometries.
 
-- [construct new crystal geometries](../materials/creating-structures/) using our browser-based crystallographic design tools
-- [upload structure](../materials/upload-and-import/#upload-structure)  in POSCAR/CIF format(s)
-- [import structure](../materials/upload-and-import/#import-structure)  from a third-party database (eg. materialsproject.org)
+- [construct new crystal geometries](../materials-designer/overview.md), using our web-based crystallographic design tools
+- [upload structure](../materials/actions/upload.md) in POSCAR/CIF format(s)
+- [import structure](../materials/actions/import.md) from a third-party database (e.g. materialsproject.org)
 
 !!! note "Combinatorial sets"
-    [Combinatorial sets](../materials/combinatorial-sets/) make it possible to rapidly create a large number of material geometries.
+    [Combinatorial sets](../materials-designer/header-menu/advanced/combinatorial-set.md) make it possible to rapidly create a large number of material geometries.
 
-## Running simulations
+## Running Simulations
 
-Next step after creating/choosing a material is to simulate it to extract [characteristic properties](../materials/properties/). In order to do so, one needs to construct a simulation workflow.
+Next step, after creating/choosing a material as described above, is to simulate it to extract its desired [characteristic properties](../properties/overview.md). In order to do so, one needs to [construct](../workflow-designer/overview.md) a simulation [workflow](../workflows/overview.md). 
+
+Our [computational infrastructure](../infrastructure/overview.md) supports multiple [clusters/cloud providers](../infrastructure/clusters/overview.md), including [Amazon's AWS](../infrastructure/clusters/aws.md) or [Microsoft's Azure](../infrastructure/clusters/azure.md) services.
 
 ### Workflows
 
-[Workflows](../models/simulation-workflows/) define the algorithm used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on simulation engine and model. For example, [Density Functional Theory](../models/density-functional-theory/) as implemented in Quantum ESPRESSO and VASP is supported at current.
+[Workflows](../workflows/overview.md) define the computational algorithms used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on the [simulation engine](../software/overview.md), on the choice for a [model](../models/overview.md), and on its computational implementation, or [method](../methods/overview.md). 
 
-More information about specific workflows, including tutorials and input date:
+For example, [Density Functional Theory](../models-directory/dft/overview.md), as implemented in its [plane-wave pseudopotential formulation](../methods-directory/pseudopotential/overview.md) under the [Quantum ESPRESSO](../software-directory/modeling/quantum-espresso/overview.md) and [VASP](../software-directory/modeling/vasp/overview.md) codes, is supported at current.
+
+More information about specific workflows can be found in the tutorial links below.
 
 - [electronic band structure](../tutorials/band-structure)
 - [electronic band gap](../tutorials/band-gap)
@@ -49,7 +54,7 @@ More information about specific workflows, including tutorials and input date:
 
 ### Compute
 
-Compute parameters ([submission queue](../infrastructure/resource/queues.md), number of nodes and processors per node, time limit, cloud provider/cluster) can be set before running simulations. Read on at:
+The most important [compute parameters](../infrastructure/compute/parameters.md) (such as submission queue, number of nodes and processors per node, time limit, cloud provider/cluster etc...) should be set before running simulations. The user can find out more about them under the following links.
 
 - [setting compute parameters](../infrastructure/compute/parameters.md)
 - [compute platform overview](../infrastructure/compute/overview.md)
@@ -60,31 +65,33 @@ Compute parameters ([submission queue](../infrastructure/resource/queues.md), nu
 - [linpack benchmark & scalability study](../benchmarks/hpl-benchmark.md)
 - [simulation benchmarks](../benchmarks/high-throughput-screening.md)
 
-### Run simulations via command line interface (CLI)
+### Run Simulations via Command Line Interface (CLI)
 
-Advanced users connecting via command line terminal may use our queuing system supporting multiple clusters/cloud providers or, alternatively, directly use portable batch system (PBS/torque) underneath. Read more at:
+Advanced users connecting to our CLI may [submit jobs directly through it](../jobs-cli/overview.md), through the use of [Batch Scripts](../jobs-cli/batch-scripts/overview.md). The user can read more in the following pages.
 
-- [job submission: tutorial](../tutorials/cli-job)
-- [job submission examples](../jobs-cli/overview.md)
-- [job script templates](../jobs-cli/batch-scripts/overview.md)
+- [job submission via cli: main explanation](../jobs-cli/overview.md)
+- [job submission via cli: tutorial](../tutorials/cli-job)
+- [batch script templates](../jobs-cli/batch-scripts/overview.md)
 - [modules environment](../cli/modules.md)
 
-### Extra simulation capabilities
+### Extra Simulation Capabilities
 
 - [restart from previous run](../tutorials/restart-job)
 - [remote desktop visualization](../tutorials/remote-desktop)
 
 ## Exabyte Data Convention
 
-We employ a proprietary JSON-based data convention that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind and have a flexible permission scheme allowing for complete privacy and wide publicity. More at:
+We employ a proprietary [JSON-based data convention](../data-structured/overview.md) that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind, and has a flexible permission scheme allowing for complete privacy or wide publicity.
 
-We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page (see below). Data originated on command line is accessible from within the web application and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning.
+We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page. Data originated on command line is [accessible from within the web application](../data-in-objectstorage/overview.md), and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning applications.
+
+Find out more under the following pages.
 
 - [data convention](../data-structured/overview.md)
 - analytics (comparing materials)
 
-
-## Other
+## Other Account-related Features
 
 - [service levels and pricing](../pricing/service-levels.md)
 - [storage quotas](../accounts/quota.md)
+- [account balance](../accounts/balance.md)
