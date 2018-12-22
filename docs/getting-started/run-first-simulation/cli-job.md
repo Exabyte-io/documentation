@@ -1,4 +1,4 @@
-# Command-line Jobs
+# Jobs via Command-line Interface
 
 The user may want more control over the [workflow execution](../../workflows/overview.md), or run a type of calculation we have yet to implement. For that purpose, we provide access to our platform through [Command Line Interface (CLI)](../../cli/overview.md), were [simulation Jobs](../../jobs/overview.md) can be executed.
 
