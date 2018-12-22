@@ -50,6 +50,6 @@ Once the job starts running, all the output will be placed in the [working direc
 
 ## Animation
 
-The animation below demonstrated the above steps in action:
+The animation below demonstrates the above steps in action.
 
 <img data-gifffer="/images/jobs-cli/job-cli.gif"/>
