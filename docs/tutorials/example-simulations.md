@@ -6,7 +6,7 @@ This page contains explanation about the characteristic properties of materials 
 
 ## Electronic energies and wave functions
 
-Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](../tutorials/dft/band-structure.md) to learn more. Example input files are given below:
+Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](dft/band-structure.md) to learn more. Example input files are given below:
 
 #### VASP
 
@@ -205,7 +205,7 @@ K_POINTS automatic
 ## Electronic Properties
 
 ### [Band Structure](../materials/characteristic-properties#band-structure)
-Please see the [band structure tutorial](../tutorials/dft/band-structure.md) for more details.
+Please see the [band structure tutorial](dft/band-structure.md) for more details.
 
 #### VASP
 
@@ -396,10 +396,10 @@ K_POINTS crystal_b
 </details>
 
 ### [Band Gap](../materials/characteristic-properties#band-gap)
-Please see the [band gap tutorial](../tutorials/dft/band-gap.md) for more details and the input files for Band Structure above.
+Please see the [band gap tutorial](dft/band-gap.md) for more details and the input files for Band Structure above.
 
 ### [Density of States and Partial DOS](../materials/characteristic-properties#sensity-of-states-and-partial-dos)
-Please see the [density of states tutorial](../tutorials/dft/density-of-states.md) for more details.
+Please see the [density of states tutorial](dft/density-of-states.md) for more details.
 
 #### VASP
 
@@ -607,19 +607,19 @@ K_POINTS automatic
 </details>
 
 ### [Fermi surface](../materials/characteristic-properties#fermi-surface)
-Please see the [Fermi surface tutorial](../tutorials/dft/fermi-surface.md) for more details.
+Please see the [Fermi surface tutorial](dft/fermi-surface.md) for more details.
 
 <hr>
 
 ### [Formation energy](../materials/characteristic-properties#formation-energy-at-0K)
-Please see the [formation energy tutorial](../tutorials/formation-energy.md) for more details.  A formation energy calculation is simply a total energy calculation following a k-point convergence study and a relaxation calculation
+Please see the [formation energy tutorial](formation-energy.md) for more details.  A formation energy calculation is simply a total energy calculation following a k-point convergence study and a relaxation calculation
 
 <hr>
 
 ## [Vibrational Properties](../materials/characteristic-properties#vibrational-properties)
 
 ### [Zero Point Energy](../materials/characteristic-properties#zero-point-energy)
-Please see the [zero point enegry tutorial](../tutorials/dft/zero-point-energy.md) for more details.
+Please see the [zero point enegry tutorial](dft/zero-point-energy.md) for more details.
 
 #### VASP
 
