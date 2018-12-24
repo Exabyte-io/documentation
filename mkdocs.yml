@@ -29,7 +29,7 @@ extra:
         - type: github
           link: https://github.com/exabyte-io
         - type: linkedin
-          link: https://linkedin.com/exabyte-io
+          link: https://www.linkedin.com/company/exabyte-io
 
 # Pass ENABLE_PDF_EXPORT=1 to enable export
 plugins:
@@ -84,7 +84,6 @@ nav:
 # INTRODUCTION
     - Getting Started:
         - Run first simulation:                          getting-started/run-first-simulation.md
-        # Table of Contents re-iterated
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
         - CLI job submission:                            getting-started/cli-job.md
@@ -117,20 +116,12 @@ nav:
 
 # ACCOUNTS
     - Accounts:
-        # Types of accounts present, how users are related to accounts, links UI components overview
         - Overview:                                      accounts/overview.md
-        # General explanation of account balance - what it is and how it is used, + link to balance action(s)
-        # Explain that balance and storage quota can be accessed in Dashboard, Service Levels button, or right-hand sidebar
         - Users:                                         accounts/users.md
         - Balance:                                       accounts/balance.md
-        # General explanation of service levels and how they are used, + link to balance action(s)
         - Service Levels:                                accounts/service-levels.md
-        # General explanation of and how it is used, + link to balance action(s)
         - Quota:                                         accounts/quota.md
-        # General explanation of and how is used, + link to balance action(s)
-        # Everything is under Billing & Payments on Right-hand sidebar (Charges, Payments and Payment Methods)
         - Payments and Charges:                          accounts/payments-charges.md
-        # Explain the notion of Account-owned Entity collection
         - Collections:                                   accounts/collections.md
         - User Interface:
             - Overview:                                  accounts/ui/overview.md
@@ -139,7 +130,6 @@ nav:
             - Switcher:                                  accounts/ui/switcher.md
             - Explorer:                                  accounts/ui/explorer.md
             - Bio:                                       accounts/ui/bio.md
-            # Includes explanation about how to change service levels (upgrade)
             - Service Levels:                            accounts/ui/service-level.md
             - Payments and Charges:                      accounts/ui/charges-payments.md
             - Preferences:                               accounts/ui/preferences-overview.md
@@ -150,7 +140,6 @@ nav:
             - Preferences > Change Password:             accounts/ui/preferences/password.md
         - Accounting Actions:
             - Overview:                                  accounts/accounting/overview.md
-            # Everything related to direct actions that user can perform with regards to his account
             - Check balance and quota:                   accounts/accounting/check-balance-quota.md
             - Increase balance:                          accounts/accounting/increase-balance.md
             - Increase Quota:                            accounts/accounting/increase-quota.md
@@ -168,7 +157,6 @@ nav:
             - Teams Explorer:                            collaboration/ui/teams-explorer.md
             - Team Page:                                 collaboration/ui/team-page.md
             - People Explorer:                           collaboration/ui/people-explorer.md
-        # The notion of sharing of entities between accounts, and how to add new users to sharing options (UI+actions)
         - Entity Sharing:
             - User Interface:                            collaboration/sharing/ui.md
             - Actions:                                   collaboration/sharing/actions.md
@@ -189,73 +177,104 @@ nav:
 # CONCEPTS
     - Models:
         - Overview:                                     models/overview.md
+        - Accuracy:                                     models/accuracy.md
+        - Data:                                         models/data.md
+        - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
             - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            # kgrid, qgrid, igrid,
             - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
-            # kpath, qpath, ipath
             - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
+            - Reciprocal space > convergence:           models/auxiliary-concepts/reciprocal-space/convergence.md
+
+    - Models Directory:
+        - Overview:                                     models-directory/overview.md
         - Density Functional Theory:
-            - Overview:                                 models/dft/overview.md
-            - References:                               models/dft/references.md
+            - Overview:                                 models-directory/dft/overview.md
+            - Data:                                     models-directory/dft/data.md
+            - Parameters:                               models-directory/dft/parameters.md
+            - Accuracy:                                 models-directory/dft/accuracy.md
+            - References:                               models-directory/dft/references.md
+
 
     - Methods:
         - Overview:                                     methods/overview.md
         - Data:                                         methods/data.md
-        - Pseudopotential:
-            - Overview:                                 methods/pseudopotential/overview.md
-            - Parameters:                               methods/pseudopotential/parameters.md
-            - Actions:                                  methods/pseudopotential/actions.md
+        - Parameters:                                   methods/parameters.md
+        - Precision:                                    methods/precision.md
+
+    - Methods Directory:
+        - Overview:                                     methods-directory/overview.md
+        - Plane-waves and Pseudopotentials:
+            - Overview:                                 methods-directory/pseudopotential/overview.md
+            - Default:                                  methods-directory/pseudopotential/default.md
+            - Data:                                     methods-directory/pseudopotential/data.md
+            - Parameters:                               methods-directory/pseudopotential/parameters.md
+            - Precision:                                methods-directory/pseudopotential/precision.md
+            - Important Settings:                       methods-directory/pseudopotential/important-settings.md
+            - Actions:                                  methods-directory/pseudopotential/actions.md
+
 
     - Software:
         - Overview:                                     software/overview.md
-        # Define the term applications: modeling software
-        - Applications:                                 software/applications.md
+        - Components:                                   software/components.md
+        - Data:                                         software/data.md
+        - Classification:
+            - Overview:                                 software/classification/overview.md
+            - Analysis:                                 software/classification/analysis.md
+            - Development:                              software/classification/development.md
+            - Machine Learning:                         software/classification/machine-learning.md
+            - Modeling:                                 software/classification/modeling.md
+            - Scripting:                                software/classification/scripting.md
+
+
+    - Software Directory:
+        - Overview:                                     software-directory/overview.md
         - Modeling:
-            - Quantum ESPRESSO:                         software/modeling/quantum-espresso.md
-            - VASP:                                     software/modeling/vasp.md
-            - TurboMole:                                software/modeling/turbomole.md
-            - LAMMPS:                                   software/modeling/lammps.md
-            - NWChem:                                   software/modeling/nwchem.md
-            - CP2K:                                     software/modeling/cp2k.md
-            - Gromacs:                                  software/modeling/gromacs.md
+            - Quantum ESPRESSO:
+                - Overview:                             software-directory/modeling/quantum-espresso/overview.md
+                - Components:                           software-directory/modeling/quantum-espresso/components.md
+                - Data:                                 software-directory/modeling/quantum-espresso/data.md
+                - Compute Parameters:                   software-directory/modeling/quantum-espresso/compute-parameters.md
+            - VASP:
+                - Overview:                             software-directory/modeling/vasp/overview.md
+                - Components:                           software-directory/modeling/vasp/components.md
+                - Data:                                 software-directory/modeling/vasp/data.md
+                - Compute Parameters:                   software-directory/modeling/vasp/compute-parameters.md
+            - TurboMole:                                software-directory/modeling/turbomole.md
+            - LAMMPS:                                   software-directory/modeling/lammps.md
+            - NWChem:                                   software-directory/modeling/nwchem.md
+            - CP2K:                                     software-directory/modeling/cp2k.md
+            - Gromacs:                                  software-directory/modeling/gromacs.md
         - Scripting:
-            - Shell:                                    software/scripting/shell.md
-            - Python:                                   software/scripting/python.md
+            - Shell:
+                - Overview:                             software-directory/scripting/shell/overview.md
+                - Data:                                 software-directory/scripting/shell/data.md
+            - Python:
+                - Overview:                             software-directory/scripting/python/overview.md
+                - Data:                                 software-directory/scripting/python/data.md
+        - Machine Learning (ML):
+            - Exabyte ML:
+                - Overview:                             software-directory/machine-learning/exabyte/overview.md
+                - Data:                                 software-directory/machine-learning/exabyte/data.md
         - Analysis & Visualization:
-            - pymatgen:                                 software/analysis/pymatgen.md
-            - VESTA:                                    software/analysis/vesta.md
-            - XCRYSDEN:                                 software/analysis/xcrysden.md
-            - P4VASP:                                   software/analysis/p4vasp.md
-            - VMD:                                      software/analysis/vmd.md
+            - VESTA:                                    software-directory/analysis/vesta.md
+            - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
+            - P4VASP:                                   software-directory/analysis/p4vasp.md
+            - VMD:                                      software-directory/analysis/vmd.md
         - Development Tools:
-            # Content overview with links
-            # Mention "CLI/Environment" page for the Environment
-            - Overview:                                 software/development/overview.md
-            # e.g. gcc, ifort etc...
-            - Compilers:                                software/development/compilers.md
-            # e.g. openmpi, mkl, intelmpi
-            - Libraries:                                software/development/libraries.md
-            # vim, emacs, nano, less, link to CentOS 7.3 default software
-            - Text Editors:                                software/development/libraries.md
+            - Compilers:                                software-directory/development/compilers.md
+            - Libraries:                                software-directory/development/libraries.md
+            - Text Editors:                             software-directory/development/text-editors.md
 
 
 # ENTITIES
     - Entities & Common Aspects:
-        # Introduction (links) to entity concepts, actions and common interface components.
         - Overview:                                     entities-general/overview.md
-        # Example entities lifecycle for Materials, Worklfows, Jobs and Properties
-        # Use diagram from https://www.lucidchart.com/documents#docs?folder_id=168606925
         - Lifecycle:                                    entities-general/lifecycle.md
-        # The notion of ownership + links to Accounts overview
         - Ownership:                                    entities-general/ownership.md
-        # The notion of permissions (read, edit, execute, comment) + links to Accounts, Organizations, Teams overview
         - Permissions:                                  entities-general/permissions.md
-        # JSON representation of structured data (with links to Compute section)
         - Data:                                         entities-general/data.md
-        # Introduction to concept of sets with references to Sets Actions below
         - Sets:                                         entities-general/sets.md
-        # The concept of bank, creation of bank entries + reference to "Copy from Bank" action
         - Bank:                                         entities-general/bank.md
         - Default:                                      entities-general/default.md
         - User Interface:
@@ -264,7 +283,6 @@ nav:
             - Designer:                                 entities-general/ui/designer.md
             - Viewer:                                   entities-general/ui/viewer.md
         - Actions:
-            # List, with links, of actions listed below + sharing
             - Overview:                                 entities-general/actions/overview.md
             - Select:                                   entities-general/actions/select.md
             - Search:                                   entities-general/actions/search.md
@@ -273,11 +291,9 @@ nav:
             - Clone:                                    entities-general/actions/clone.md
             - Delete:                                   entities-general/actions/delete.md
             - Set default:                              entities-general/actions/set-default.md
-            # Metadata Description, Tags, Metadata for surfaces / slabs
             - Add metadata:                             entities-general/actions/metadata.md
             - Change name:                              entities-general/actions/name.md
             - Create:                                   entities-general/actions/create.md
-            # Actions specific to Bank and Sets
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
@@ -336,23 +352,36 @@ nav:
         - Overview:                                     workflows/overview.md
         - Bank:                                         workflows/bank.md
         - Default:                                      workflows/default.md
+        - Components:
+            - Overview:                                 workflows/components/overview.md
+            - Subworkflows:                             workflows/components/subworkflows.md
+            - Units:                                    workflows/components/units.md
+            - Maps:                                     workflows/components/maps.md
+        - Data:
+            - Overview:                                 workflows/data/overview.md
+            - Workflows:                                workflows/data/workflows.md
+            - Subworkflows:                             workflows/data/subworkflows.md
+            - Units:                                    workflows/data/units.md
+        - Templating:
+            - Overview:                                 workflows/templating/overview.md
+            - Concept:                                  workflows/templating/concept.md
+            - Jinja:                                    workflows/templating/jinja.md
+            - Swig:                                     workflows/templating/swig.md
+            - Exabyte Convention:                       workflows/templating/exabyte-convention.md
+            - Examples:                                 workflows/templating/examples.md
+            - UI Implementation:                        workflows/templating/ui.md
         - User Interface:
             - Explorer:                                 workflows/ui/explorer.md
             - Designer:                                 workflow-designer/overview.md
             - Viewer:                                   workflows/ui/viewer.md
-        - Data:
-            - Workflows:                                workflows/data/data.md
-            - Subworkflows:                             workflows/data/subworkflows.md
-            - Units:                                    workflows/data/units.md
-            - Templates:                                workflows/data/templates.md
-            - Maps:                                     workflows/data/maps.md
         - Actions:
             - Overview:                                 workflows/actions/overview.md
             - Update:                                   workflows/actions/update.md
             - Set default:                              workflows/actions/set-default.md
             - Bank > Copy from:                         workflows/actions/copy-bank.md
         - Add-ons:
-            - K-point Convergence:                      workflows/addons/convergence-algorithms.md
+            - Overview:                                 workflows/addons/overview.md
+            - Convergence:                              workflows/addons/convergence-algorithms.md
             - Structural Relaxation:                    workflows/addons/structural-relaxation.md
 
 
@@ -363,10 +392,10 @@ nav:
         - Sidebar:
             - Items List:                               workflow-designer/sidebar.md
         - Subworkflow Editor:
-            - Overview:                                 workflow-designer/subworkflow-editor/intro.md
+            - Overview:                                 workflow-designer/subworkflow-editor/overview.md
             - Actions Menu:                             workflow-designer/subworkflow-editor/actions-menu.md
             - Tabs:                                     workflow-designer/subworkflow-editor/tabs-general.md
-            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview.md
+            - Tabs > Overview:                          workflow-designer/subworkflow-editor/overview-tab.md
             - Tabs > Important Settings:                workflow-designer/subworkflow-editor/important-settings.md
             - Tabs > Detailed View:                     workflow-designer/subworkflow-editor/detailed-view.md
             - Tabs > Compute:                           workflow-designer/subworkflow-editor/compute.md
@@ -409,23 +438,24 @@ nav:
             - Select Workflow:                          jobs-designer/actions-header-menu/select-workflow.md
             - Select Parent:                            jobs-designer/actions-header-menu/select-parent.md
 
+
     - Jobs via Command Line:
         - Overview:                                     jobs-cli/overview.md
-        # Jobscript, with examples
-        - Batch script:                                 jobs-cli/batch-script.md
-        - Accounting:
-            # how to show detailed Account balance
-            - Balance:                                  jobs-cli/accounting/balance.md
-            # How to show detailed usage statistics
-            - Statement:                                jobs-cli/accounting/statement.md
+        - Accounting:                                   jobs-cli/accounting.md
+        - Batch Scripts:
+            - Overview:                                 jobs-cli/batch-scripts/overview.md
+            - General Structure:                        jobs-cli/batch-scripts/general-structure.md
+            - Directives:                               jobs-cli/batch-scripts/directives.md
+            - Working Directory:                        jobs-cli/batch-scripts/directories.md
+            - Sample Scripts:                           jobs-cli/batch-scripts/sample-scripts.md
         - Actions:
+            - Overview:                                 jobs-cli/actions/overview.md
             - Create:                                   jobs-cli/actions/create.md
-            # How to submit a job with qsub
             - Submit:                                   jobs-cli/actions/submit.md
-            # Check statuses of jobs with qstat
             - Check status:                             jobs-cli/actions/check-status.md
-            # Terminate jobs with qdel
             - Terminate:                                jobs-cli/actions/terminate.md
+            - View Jobs List:                           jobs-cli/actions/view-job-list.md
+
 
     - Properties:
         - Overview:                                     properties/overview.md
@@ -447,6 +477,7 @@ nav:
         - User Interface:
             - Explorer:                                 properties/ui/explorer.md
             - Viewer:                                   properties/ui/viewer.md
+
 
     - Properties Directory:
         - Overview:                                     properties-directory/overview.md
@@ -545,6 +576,7 @@ nav:
             - Open Sidebar:                             remote-connection/actions/sidebar.md
             - Upload:                                   remote-connection/actions/upload.md
             - Download:                                 remote-connection/actions/download.md
+            - Transfer Files via SCP:                   remote-connection/actions/transfer-files-scp.md
             - Copy / Paste Text:                        remote-connection/actions/copy-paste.md
             - Access data in Web Platfrom:              remote-connection/actions/access-data.md
         - Actions > Remote Desktop:
@@ -555,14 +587,16 @@ nav:
     - Command Line Interface:
         - Overview:                                     cli/overview.md
         - Environment:                                  cli/environment.md
+        - Environment Modules:                          cli/modules.md
+        - Accounting:                                   cli/accounting.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
-            - Load / Unload Modules:                    cli/actions/modules.md
+            - Load / Unload Modules:                    cli/actions/modules-actions.md
             - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
-
+            - Check Balance and Quota:                  cli/actions/balance-quota.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
@@ -571,6 +605,19 @@ nav:
       - Endpoints:                                   rest-api/endpoints.md
       - Exabyte API client:                          rest-api/api-client.md
       - Exabyte API examples:                        rest-api/api-examples.md
+
+
+
+    - Tutorials:
+        - Jobs via Command Line:
+            - Overview:                              tutorials/jobs-cli/overview.md
+            - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
+            - View Results:                          tutorials/jobs-cli/view-results.md
+        - Templating:
+            - Overview:                              tutorials/templating/overview.md
+            - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
+            - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
+
 
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable

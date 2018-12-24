@@ -10,7 +10,7 @@ The final results for the computed phonon Density of States are also presented g
 
 An example of such a Density of States plot is shown below.
 
-![Phonon DoS](/images/Properties/phonon-dos.png "Phonon DoS")
+![Phonon DoS](../../images/properties-directory//phonon-dos.png "Phonon DoS")
 
 ### Export as Image
 

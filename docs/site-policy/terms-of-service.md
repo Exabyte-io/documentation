@@ -4,7 +4,7 @@
 
 ## 0. Definitions
 
-The “Agreement” refers, collectively, to all the terms, conditions, notices contained or referenced in this document (the “Terms of Service” or the "Terms") and all other operating rules, policies (including the [Privacy Statement](/site-policy/privacy-statement.md)) and procedures that we may publish from time to time on the Website.
+The “Agreement” refers, collectively, to all the terms, conditions, notices contained or referenced in this document (the “Terms of Service” or the "Terms") and all other operating rules, policies (including the [Privacy Statement](../site-policy/privacy-statement.md)) and procedures that we may publish from time to time on the Website.
 
 The “Service” refers to the applications, software, products, and services provided by Exabyte.
 

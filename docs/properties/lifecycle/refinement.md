@@ -6,7 +6,7 @@ The computed [Raw properties](../classification/general.md) of Materials collect
 
 We categorize the various degrees of refinement of extracted Materials properties as **Raw**, **Refined** and **Best**, in an order of ascending evolution and reliability. These concepts are portrayed in the summary diagram below, in a sequential logical order, where the refinement process has been highlighted in orange. 
 
-![Refinement](/images/properties/refinement.png "Refinement")
+![Refinement](../../images/properties/refinement.png "Refinement")
 
 ## Raw Properties
 
@@ -18,7 +18,7 @@ We categorize the various degrees of refinement of extracted Materials propertie
 
 ### Non-Refinable Properties
 
-For the case of the [pseudopotential DFT model](../../models/dft/overview.md) the **[Fermi Energy](../../properties-directory/scalar/total-energy.md)**, for example, is excluded from being classed as Refined, and therefore remains treated as Raw. This is due to the fact that its absolute value makes no physical meaning, but rather depends heavily on the choice of the pseudopotential, on the Exchange-correlation functional approximation, and on other computational [methods](../../methods/overview.md) being employed.
+For the case of the [pseudopotential DFT model](../../models-directory/dft/overview.md) the **[Fermi Energy](../../properties-directory/scalar/total-energy.md)**, for example, is excluded from being classed as Refined, and therefore remains treated as Raw. This is due to the fact that its absolute value makes no physical meaning, but rather depends heavily on the choice of the pseudopotential, on the Exchange-correlation functional approximation, and on other computational [methods](../../methods/overview.md) being employed.
 
 ### Refined Property Example
 

@@ -6,7 +6,7 @@ We have a set of default pseudopotentials available for each application. Such a
 
 # Navigate into Job Designer
 
-We will assume that reader knows how to navigate into the job designer and open the workflow tab (more information on that available in [quickstart](/getting-started/run-first-simulation.md) and [ui overview](/ui/overview.md).
+We will assume that reader knows how to navigate into the job designer and open the workflow tab (more information on that available in [quickstart](../../getting-started/run-first-simulation.md) and [ui overview](../../ui/overview.md).
 
 # Choose alternative pseudopotential
 
@@ -29,7 +29,7 @@ Uploaded pseudopotentials will be automatically assoticated with the correspondi
 
 The animation below demonstrates the user experience for choosing an alternative pseudopotential, filtering the list of available pseudopotentials, uploading a custom file and navigating to it in "Dropbox" page.
 
-<img data-gifffer="/images/pseudo-upload-view-in-dropbox.gif"/>
+<img data-gifffer="/images/tutorials/pseudo-upload-view-in-dropbox.gif"/>
 
 # Links
 

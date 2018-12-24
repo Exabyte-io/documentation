@@ -4,11 +4,11 @@ Our platform represents a comprehensive **distributed web application**. This se
 
 We additionally support platform-level access via [advanced connection methods](../remote-connection/overview.md), as an alternative to the main Web Interface. Platform-level access methods are intended for expert users and also offer the ability to submit [simulation jobs](../jobs-cli/overview.md) to the [computing clusters](clusters/overview.md), for example.
 
-## Architecture diagram 
+## Architecture diagram
 
 The different components forming the underlying architecture of our computational infrastructure are interconnected as demonstrated in the following diagram. The reader is referred to the number labels included here to find the component's corresponding introductory explanation in the remainder of this documentation page.
 
-![Infrastructure](/images/Infrastructure.png "Infrastructure")
+![Infrastructure](../images/infrastructure/Infrastructure.png "Infrastructure")
 
 In the above image, we apply the following conventions for labelling the interconnecting lines.
 

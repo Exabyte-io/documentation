@@ -6,4 +6,4 @@ Among its other functions, the [Dropbox](../../data-in-objectstorage/dropbox.md)
 
 In the animation below, we show how to transfer (copy) files to Dropbox within the Remote Desktop, and later retrieve them inside the Web Interface under the [Dropbox dedicated page](../../data-in-objectstorage/ui/dropbox-page.md).
 
-<img data-gifffer="/images/download-rd.gif" />
+<img data-gifffer="/images/remote-connection/download-rd.gif" />

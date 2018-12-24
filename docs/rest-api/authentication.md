@@ -1,6 +1,6 @@
 # Authentication
 
-There are 2 ways to generate the authentication parameters: either through the Login endpoint of by using the account preferences as explained [elsewhere](/accounts/ui/preferences/api/). We recommend using the second option.
+There are 2 ways to generate the authentication parameters: either through the Login endpoint of by using the account preferences as explained [elsewhere](../accounts/ui/preferences/api/). We recommend using the second option.
 
 ## Login
 
@@ -8,7 +8,7 @@ The "Login" endpoint is used to obtain the authentication credentials that can b
 
 ### Example
 
-Here's how the authentication can be performed from a command-line terminal:
+Here's how the authentication can be performed from a command line terminal:
 
 ```bash
 curl -X POST https://platform.exabyte.io/api/2018-10-01/login \
@@ -38,7 +38,7 @@ curl -X GET https://platform.exabyte.io/api/2018-10-01/materials \
 
 ### Example
 
-Here's how the logout can be performed from a command-line terminal:
+Here's how the logout can be performed from a command line terminal:
 
 ```bash
 curl -X GET https://platform.exabyte.io/api/2018-10-01/logout \

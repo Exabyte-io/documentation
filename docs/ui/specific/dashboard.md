@@ -2,24 +2,24 @@
 
 The Dashboard page provides the user with an instant snapshot of the system status, and of his/her own recent work. Four main component panels can be recognized, as shown below.
 
-<img src="/images/user-dashboard.png" > 
+![User Dashboard](../../images/ui/user-dashboard.png "User Dashboard")
 
 
-# 1. Jobs summary
+## 1. Jobs summary
 
-The "Jobs Summary" panel summarizes the total number of [jobs](/jobs/overview.md) run during a certain period of time, as indicated at the top of the panel. It also offers a break down of the job's current status between "Active", "Submitted", "Pre-submission", "Success" and "Errors". There is finally a quick link to jump to the jobs list at the bottom of the panel, labelled "View All Jobs".
+The "Jobs Summary" panel summarizes the total number of [jobs](../../jobs/overview.md) run during a certain period of time, as indicated at the top of the panel. It also offers a break down of the job's current status between "Active", "Submitted", "Pre-submission", "Success" and "Errors". There is finally a quick link to jump to the jobs list at the bottom of the panel, labelled "View All Jobs".
 
 
-# 2. Compute Usage
+## 2. Compute Usage
 
 The "Compute Usage" chart shows the combined financial cost for recent calculations, over the given duration of time.
 
-# 3. Storage Quota
+## 3. Storage Quota
 
-This widget displays a summary of the user's current [storage quota](/accounts/quota.md), in the form of the ratio between used and total available storage space. The user can click the <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> icon at the top-right corner of the panel to request an increase in storage space. In addition, the neighbouring <i class="zmdi zmdi-refresh-sync zmdi-hc-border"></i> icon can be used to refresh the data.
+This widget displays a summary of the user's current [storage quota](../../accounts/quota.md), in the form of the ratio between used and total available storage space. The user can click the <i class="zmdi zmdi-plus-circle-o zmdi-hc-border"></i> icon at the top-right corner of the panel to request an increase in storage space. In addition, the neighbouring <i class="zmdi zmdi-refresh-sync zmdi-hc-border"></i> icon can be used to refresh the data.
 
 
-# 4. Datapoints
+## 4. Datapoints
 
 | Datapoint             | Description
 | :-------------        |:-------------

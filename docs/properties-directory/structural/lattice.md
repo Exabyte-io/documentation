@@ -16,7 +16,7 @@ Information about the Bravais Lattice can be entered within the [lattice editor]
   
 Two Bravais lattices are considered equivalent if they have the same **symmetry elements**. In this sense, there are 14 possible distinct Bravais lattices in three-dimensional space, grouped together into 7 more general symmetry categorizations known as lattice systems. These two categories are tabulated in the image below for reference purposes.
   
-<img src="/images/Bravais_lattices.png"/>
+![Lattice Types](../../images/properties-directory/Bravais_lattices.png "Lattice Types")
 
 ## Lattice parameters
 

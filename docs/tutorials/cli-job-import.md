@@ -39,7 +39,7 @@ mpirun -np 1 vasp > vasp.log
 
 First, navigate to command-line terminal by clicking on the right sidebar and choosing "Terminal".
 
-<img data-gifffer="/images/LoadTerminal.gif"/>
+<img data-gifffer="/images/tutorials/tutorials/tutorials/LoadTerminal.gif"/>
 
 # Import new job results
 
@@ -47,7 +47,7 @@ In order to a submit a new job through command-line terminal and view the output
 
 Once the job starts executing, you should be able to see the job entry in the web application and monitor its execution.
 
-<img data-gifffer="/images/CLIJobView.gif"/>
+<img data-gifffer="/images/tutorials/tutorials/CLIJobView.gif"/>
 
 !!! Note "Defining project name"
     If the job belongs to a specific project, then you should also specify the project name with `#PBS -A project_name` directive.
@@ -62,7 +62,7 @@ exajob_parse -j=/path/to/job/script
 
 You should see a success message after command finishes. Otherwise, there is something wrong with your job or you may have entered a wrong path.
 
-<img data-gifffer="/images/ExaJobParseCommand.gif"/>
+<img data-gifffer="/images/tutorials/tutorials/ExaJobParseCommand.gif"/>
 
 !!! Note "Enter full path"
     Please be advised that you should enter the **full** path to the job script.

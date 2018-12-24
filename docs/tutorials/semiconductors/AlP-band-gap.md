@@ -9,7 +9,7 @@ This tutorial explain how to calculate an electronic band gap [[1](#links)] base
 
 To import AlP go to the Materials webpage using the sidebar on the homepage.  Once on the homepage you can click on the cloud icon in the upper right with an embedded down arrow.  In the resulting overlay search enter AlP for Aluminum Phosphide.  After a few seconds the search results will appear.  The F-43m space group option is the lowest energy AlP.  Click on the right side on this line and choose "import".  This will load the material into your database.
 
-<img data-gifffer="/images/AlPImport.gif"/>
+<img data-gifffer="/images/tutorials/AlPImport.gif"/>
 
 # Create job
 
@@ -25,19 +25,19 @@ Choose VASP simulation engine. You will see the Total Energy workflow as the def
 
 Next we set up compute parameters for the number of processors and the maximum time limit (wall-time). Increasing the number of processors allocated to the job may accelerate the calculation, especially if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficient to add more cores to the simulation.  We will use only 2 cores for this simulation.
 
-<img data-gifffer="/images/AlPCreate.gif"/>
+<img data-gifffer="/images/tutorials/AlPCreate.gif"/>
 
 # Submit job
 
 Click "Save" as shown below. You will be asked if you want to keep a duplicate copy of the material since it has already been saved before. Answer "No" to proceed forward.  To submit the job to the queue click on the check box to the left of your job, then click the "play" button in the upper right corner of the page.  The status of the job will change from "Pre-submission" to "Submitted" to "Active".
 
-<img data-gifffer="/images/AlPSubmit.gif"/>
+<img data-gifffer="/images/tutorials/AlPSubmit.gif"/>
 
 # Monitor status + results
 
 Once the job is submitted it you will be taken to the Job Status page and can monitor the progress of the self-consistent calculation.  When the calculation is completed the color of the Status tab will turn Green and the Results tab will become click-able.  You can scroll through the Results tab to see the results including the indirect band gap found for AlP (1.75 eV).
 
-<img data-gifffer="/images/AlPResults.gif"/>
+<img data-gifffer="/images/tutorials/AlPResults.gif"/>
 
 # Summary
 

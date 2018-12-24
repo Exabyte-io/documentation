@@ -23,11 +23,11 @@ The home directories on each cluster are mapped under the main [Login Home](../l
 
 In the image below, we highlight two examples of cluster home directories present under the login home, as viewed in a [remote desktop environment](../../remote-connection/remote-desktop.md). The two clusters available in this case are referenced under the aliases "cluster-001" and "cluster-007". 
 
-![Cluster Homes](/images/cluster-homes.png "Cluster Homes")
+![Cluster Homes](../../images/infrastructure/cluster-homes.png "Cluster Homes")
 
 Example contents of the home directory for cluster-001 are displayed in the subsequent image below. We explain the naming convention and the contents of each of the directories in more detail in what follows. 
 
-![Cluster Home Contents](/images/cluster-home-content.png "Cluster Home Contents")
+![Cluster Home Contents](../../images/infrastructure/cluster-home-content.png "Cluster Home Contents")
 
 The "dropbox" and "job_script_templates" folders are present under both Cluster Home and [Login Home](../login/directories.md) and are explained in more detail [in this page](../../data-on-disk/directories.md).
     

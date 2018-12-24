@@ -2,7 +2,7 @@
 
 Click the Trigger Icon <i class="zmdi zmdi-menu zmdi-hc-border"></i> in the top-left corner to open and navigate sidebar as shown below.
 
-<img src="/images/ui-left-sidebar.png"/>
+![Left-hand Sidebar](../images/ui/ui-left-sidebar.png "Left-hand Sidebar")
 
 ## Items
 

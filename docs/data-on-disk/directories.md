@@ -22,12 +22,10 @@ As explained [in this dedicated section](../data-in-objectstorage/dropbox.md), D
 
 ## Job Script Templates
 
-A shortcut to a folder containing some quick examples (templates) for command-line jobs is also present under both the login and cluster home directories. It contains specific examples of [batch scripts](../jobs-cli/batch-script.md) for running [Jobs via the Command Line Interface](../jobs-cli/overview.md).
- 
-This folder is stored under the absolute path `/export/compute/job_script_templates`.
+A shortcut to a folder containing some quick examples (templates) for command line jobs is also present under both the login and cluster home directories. It contains specific examples of [batch scripts](../jobs-cli/batch-scripts/overview.md) for running [Jobs via the Command Line Interface](../jobs-cli/overview.md). This folder is stored under the absolute path `/export/compute/job_script_templates`.
 
 ## Links
 
 [^1]: [Wikipedia Linux Filesystem Hierarchy Standard, Website](https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard)
 
-[^2]: [Wikipedia Linux File system permissions](https://en.wikipedia.org/wiki/File_system_permissions)
+[^2]: [Wikipedia Linux File system permissions, Website](https://en.wikipedia.org/wiki/File_system_permissions)

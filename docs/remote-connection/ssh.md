@@ -2,7 +2,7 @@
 
 The user can connect to the [Command Line Interface](../cli/overview.md) (CLI) of our platform using an **external SSH terminal client** under any Operating System (OS), as an alternative to the [Web Terminal](web-terminal.md).
 
-We use **SSH keys** [^1] as a way to identify users and trusted computers during command-line sessions. Keys provide improved security, however they need to be set properly before use. The steps included in the present page will guide the user through generating SSH keys and adding them to the account being employed. 
+We use **SSH keys** [^1] as a way to identify users and trusted computers during command line sessions. Keys provide improved security, however they need to be set properly before use. The steps included in the present page will guide the user through generating SSH keys and adding them to the account being employed. 
 
 Experienced users who are already familiar with how SSH clients operate under their preferred Operating System can navigate directly to the [Upload SSH key](#upload-ssh-key) section of the present page.
 
@@ -30,7 +30,10 @@ We explain how to upload the SSH keys to our platform in a [separate section](..
 
 ## Connect to Server
 
-Once the secure SSH link is established via the SSH keys, the remote Exabyte server (referred to under the alias "bohr") can be accessed as follows (the user should replace the text inside braces below with the corresponding names/paths).
+Once the secure SSH link is established via the SSH keys, the remote Exabyte server can be accessed as follows (the user should replace the text inside braces below with the corresponding names/paths).
+
+!!!info "Name of remote server"
+    Our Exabyte server for accepting remote connections is referred to under the alias of **"bohr"**, and is accessible via the corresponding address `bohr.exabyte.io`.
 
 ### OpenSSH for Unix
 
@@ -56,7 +59,7 @@ Following successful SSH connection, the user is presented with the [CLI of our 
 
 Some useful instructions are already contained in the CLI **splash welcome screen** greeting the user at the moment of login. A copy of this welcome screen is reproduced below.
 
-![CLI Welcome Screen](/images/CLI-Welcome-Screen.png  "CLI Welcome Screen")
+![CLI Welcome Screen](../images/remote-connection/CLI-Welcome-Screen.png  "CLI Welcome Screen")
 
 ## Transfer Files with SCP
 
@@ -70,19 +73,7 @@ When using WinSCP, one would need to load the private key through its interface 
     
 ### Unix Instructions
 
-On Unix, SCP file transfers can be performed directly via the terminal with the following commands (the user should replace the text inside braces below with the corresponding names/paths).
-
-1. To transfer files **to** exabyte.io:
-
-```bash
-scp -i <path to private_key> <path to local file> <username>@bohr.exabyte.io:<path inside login home>
-```
-
-2. To transfer files **from** exabyte.io:
-
-```
-scp -i <path to private_key> <username>@bohr.exabyte.io:<path inside login home> <path to local file>
-```
+The instructions for Unix-based operating systems can be found [in a separate page](actions/transfer-files-scp.md).
 
 ## Links to Clients Documentation
 

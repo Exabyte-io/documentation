@@ -1,27 +1,21 @@
-# The Overview tab
+# Subworkflow Editor
 
-The general appearance of the typical content of the "Overview" tab is presented in the image below, where four main sections are emphasized and will be described in turn throughout the rest of this documentation page:
+The Subworkflow Editor displays the input parameters of a subworflow on the right-hand side of the Workflow Designer interface. Whenever a subworkflow module is clicked upon among those listed in the [left-hand sidebar](../sidebar.md) it becomes the currently active one and feeds data to the Editor component.  
 
-<img src="/images/overview-tab.png"/>
+## Main components
 
-# The "Properties" section
+Subworkflow Editor is itself subdivided into three distinct main components: 
 
-The first line in the "Overview" tab, labeled "Properties", contains a summary of the physical properties that will be computed during the course of the present calculation. These can be selected from a list of properties on the "Detailed View" tab, which is described [here](detailed-view.md). 
+- **menu bar** on top implementing some general actions, 
+- the main editor interface below it comprising four different selectable **tabs**, each pertaining to different aspects of the subworkflow's operations, and
+ - **units flowchart** at the bottom displaying the ordered sequence of computational units included as part of the current subworkflow.
 
-For a complete list of physical properties available for calculation, the reader is referred to [this page](/properties/overview.md).
+The location of each component is highlighted in the picture below for the example case of a band structure calculation workflow. Click on a panel in the image to be redirected to the corresponding documentation page for each component:
 
-## Low-fidelity Runs
-
-Optionally, the check-box "Draft" on the left can be selected. In this case the resulting properties will not be available in the "Analytics" part of the output of the calculation. This option is convenient to choose when new prototypical workflows need to be tested in a preliminary fashion through low-fidelity runs.
-
-# The "Application" section
-
-The subsequent "Application" section in the "Overview" tab allows you to choose which computational engine (otherwise known as application). More on this [here](/software/overview.md) respectively.
-
-# The "Model" section
-
-This section is documented extensively in its own dedicated [documentation chapter](/models/overview.md). 
-
-# The "Method" section
-
-Similarly to the "Model" section, the "Method" section also has its own [documentation chapter](/methods/overview.md). 
+<img src="/images/workflow-designer/sw-editor-components.png" usemap="#mapname">
+                                           
+<map name="mapname">
+<area shape="rect" coords="190,88,756,141" href="/workflow-designer/subworkflow-editor/actions-menu/">
+<area shape="rect" coords="190,141,756,545" href="/workflow-designer/subworkflow-editor/tabs-general/">
+<area shape="rect" coords="190,545,756,642" href="/workflow-designer/subworkflow-editor/units-flowchart/">
+</map>

@@ -1,6 +1,6 @@
 # Extraction of Properties
 
-The extraction of raw data from simulations computations consists in processing the [output files](../../data-on-disk/overview.md) of [modeling engines](../../software/applications.md) with the help of post-processing software. This is typically done in order to identify the desired properties, and store them in a database for future reference. 
+The extraction of raw data from simulations computations consists in processing the [output files](../../data-on-disk/overview.md) of [modeling engines](../../software/components.md) with the help of post-processing software. This is typically done in order to identify the desired properties, and store them in a database for future reference. 
 
 ## Extractor Scripts
 
@@ -10,7 +10,7 @@ Such raw extracted data typically needs to be further **refined** for a better c
 
 ## Example
 
-For example, the retrieval of the [total energy](../../properties-directory/scalar/total-energy.md) in a [Quantum Espresso](../../software/modeling/quantum-espresso.md) output file can be done by looking for the "!" character, and extracting the ensuing content of the same line. Alternatively, a corresponding XML file can be parsed.
+For example, the retrieval of the [total energy](../../properties-directory/scalar/total-energy.md) in a [Quantum Espresso](../../software-directory/modeling/quantum-espresso/overview.md) output file can be done by looking for the "!" character, and extracting the ensuing content of the same line. Alternatively, a corresponding XML file can be parsed.
 
 Below we show an excerpt of a Quantum ESPRESSO standard output file, that can serve as input for the extractor explained above. The line containing the total energy is displayed at the center with its preceding exclamation mark. This input text is then parsed by the **Extractor**, and the resulting [structured](../data/overview.md) data is generated and further stored in database.
 
