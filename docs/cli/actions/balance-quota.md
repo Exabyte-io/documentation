@@ -85,6 +85,7 @@ Information about all jobs submitted by the user to date can be retrieved as exp
 Information about the [Storage Quota](../../accounts/quota.md) within the available [computing clusters](../../infrastructure/clusters/overview.md) can be retrieved via the `quotas` command. An example of output of this command is shown below.
 
 ```bash
+>>> quotas
 USED    BSOFT    BHARD      BWARN  BGRACE    IUSED      ISOFT    IHARD    IWARN  IGRACE
 -------  -------  -------  -------  --------  -------  -------  -------  -------  --------
 6.9G     10G      10G           00  [------]  18.7k          0        0       00  [------]
