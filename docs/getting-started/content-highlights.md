@@ -4,7 +4,7 @@ This page helps users quickly get through the documentation.
 
 ## Login
 
-We support two basics login connection methods: through our [Web Interface](../ui/overview.md), and via [secure shell terminal (SSH)](../remote-connection/ssh.md) to access our [Command Line Interface (CLI)](../cli/overview.md). You must have a valid username and password in order to login via either option. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have also a [Remote Desktop Environment](../remote-connection/remote-desktop.md) at their disposal. 
+We support two basics login connection methods: through our [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). You must have a valid username and password in order to login via either option. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have also a [Remote Desktop Environment](../remote-connection/remote-desktop.md) at their disposal. 
 
 The user can find out more about such connection methods under the following links.
 
@@ -54,7 +54,7 @@ More information about specific workflows can be found in the tutorial links bel
 
 ### Compute
 
-The most important [compute parameters](../infrastructure/compute/parameters.md) (such as submission queue, number of nodes and processors per node, time limit, cloud provider/cluster etc...) should be set before running simulations. The user can find out more about them under the following links.
+Important [compute parameters](../infrastructure/compute/parameters.md) (such as submission queue, number of nodes and processors per node, time limit, cloud provider/cluster etc...) should be set before running simulations. The user can find out more about them under the following links.
 
 - [setting compute parameters](../infrastructure/compute/parameters.md)
 - [compute platform overview](../infrastructure/compute/overview.md)
@@ -74,14 +74,18 @@ Advanced users connecting to our CLI may [submit jobs directly through it](../jo
 - [batch script templates](../jobs-cli/batch-scripts/overview.md)
 - [modules environment](../cli/modules.md)
 
+<!-- TODO by GM: uncomment when tutorials are implemented
+
 ### Extra Simulation Capabilities
 
 - [restart from previous run](../tutorials/restart-job)
 - [remote desktop visualization](../tutorials/remote-desktop)
 
+-->
+
 ## Exabyte Data Convention
 
-We employ a proprietary [JSON-based data convention](../data-structured/overview.md) that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind, and has a flexible permission scheme allowing for complete privacy or wide publicity.
+We employ a [JSON-based data convention](../data-structured/overview.md) that supports storing materials, simulations and compute properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind, and has a flexible permission scheme allowing for complete privacy or wide publicity.
 
 We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the "Analytics" page. Data originated on command line is [accessible from within the web application](../data-in-objectstorage/overview.md), and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning applications.
 

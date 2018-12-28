@@ -20,7 +20,17 @@ Our [queuing system](../../infrastructure/resource/queues.md) is controlled thro
 
 To create a job under the CLI, we recommend working inside the aforementioned `~/data/<username>` sub-directory. The user should create a new [working directory](../../jobs-cli/batch-scripts/directories.md#working-directory) under this sub-directory (called `test_job`, for example).
 
-A convenient way to get acquainted with our CLI is to start by copying the template [batch script file](../../jobs-cli/batch-scripts/overview.md) from within the `~/job-script-templates` [folder](../../jobs-cli/batch-scripts/directories.md#job-templates), and rename it as `job.script`. Copy any necessary simulation input files or executables into this current working directory as well.
+```
+mkdir test_job
+```
+
+A convenient way to get acquainted with our CLI is to start by copying the template [batch script file](../../jobs-cli/batch-scripts/overview.md) from within the `~/job-script-templates` [folder](../../jobs-cli/batch-scripts/directories.md#job-templates), and rename it as `job.script`. These actions can be performed with the following command, for the example case of the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) template.
+
+```
+cp ~/job_script_templates/espresso/job.pbs ~/data/<username>/test_job/job.script
+```
+ 
+Copy any necessary simulation input files or executables into this current working directory as well.
 
 ### Edit submission script
 
@@ -29,6 +39,9 @@ The user may need to edit the batch script if he/she wants to use a [simulation 
 In addition, if the user would like to alter runtime environment for the calculation, can may consult [modules environment](../../cli/environment.md) section of our documentation.
 
 Lastly, the options for choosing the queue to submit the job can be found [here](../../infrastructure/resource/queues.md).
+
+!!!tip "Accounting Project Parameter"
+    In order to specify a [project](../jobs/projects.md) that the job should belong to and should be [charged upon](../accounts/payments-charges.md), the instructions contained [in this page](../../jobs-cli/accounting.md) should be followed. 
 
 In the present tutorial we will proceed with the default submission script template, without modification.
 
@@ -44,7 +57,11 @@ Our resource management system will respond with a message letting know that the
 
 ## Monitor job
 
-In order to check on the status of the job, type `qstat` command for a one-time view of the current [status](../../jobs-cli/actions/check-status.md) of your jobs. 
+In order to check on the [current status](../../jobs-cli/actions/check-status.md) of the job, type the following command. 
+
+```
+qstat
+```
 
 Once the job starts running, all the output will be placed in the [working directory](../../jobs-cli/batch-scripts/directories.md#working-directory) where the `qsub` command was originally executed from (unless the "directory" line was changed within the batch script file).
 

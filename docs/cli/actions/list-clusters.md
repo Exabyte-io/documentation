@@ -7,6 +7,7 @@ The available [clusters and cluster nodes](../../infrastructure/clusters/overvie
 An example of output of the `exaclusters` command is shown below.
 
 ```bash
+>>> exaclusters
 ALIAS        HOSTNAME
 -----------  ------------------------------------------------
 cluster-001  master-production-20160630cluster-001.exabyte.io
@@ -18,6 +19,7 @@ cluster-007  master-production-20160630cluster-007.exabyte.io
 An example of the output of the other `exanodes` command is included below.
 
 ```bash
+>>> exanodes
 master-production-20160630-cluster-001.exabyte.io
      state = free
      power_state = Running
@@ -27,15 +29,6 @@ master-production-20160630-cluster-001.exabyte.io
      status = rectime=1545445103,macaddr=02:28:a8:18:ec:a9,cpuclock=Fixed,varattr=,jobs=,state=free,netload=2779926834388,gres=,loadave=0.00,ncpus=8,physmem=15233668kb,availmem=8042900kb,totmem=15
 233668kb,idletime=362839,nusers=1,nsessions=1,sessions=32664,uname=Linux master-production-20160630-cluster-001.exabyte.io 3.10.0-862.14.4.el7.x86_64 #1 SMP Wed Sep 26 15:12:11 UTC 2018 x86_64,ops
 ys=linux
-     mom_service_port = 15002
-     mom_manager_port = 15003
-
-i-02aa11d3585065624.exabyte.io
-     state = down
-     power_state = Running
-     np = 36
-     properties = OR,zone-a
-     ntype = cluster
      mom_service_port = 15002
      mom_manager_port = 15003
 
