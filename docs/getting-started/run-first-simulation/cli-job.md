@@ -59,7 +59,7 @@ Our resource management system will respond with a message letting know that the
 
 In order to check on the [current status](../../jobs-cli/actions/check-status.md) of the job, type the following command. 
 
-```
+```bash
 qstat
 ```
 
