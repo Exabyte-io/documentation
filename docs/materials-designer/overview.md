@@ -1,10 +1,6 @@
 # What is Materials Designer?
 
- The Exabyte platform provides a graphical crystal structure viewer and builder which we refer to as the Materials Designer, and that will now be reviewed in detail. This designer essentially makes it possible to conceive and then save new crystal structures from scratch.  
-
-Experienced computational material scientists will recognize many of the features included in this designer interface from the most commonly used crystal visualization software packages, such as VESTA [^1], VMD [^2] or XCRYSDEN [^3]. However, a comprehensive approach will be adopted in the forthcoming documentation pages to make sure that neophyte users are not excluded from embracing our platform. 
-
-> "Note for command line users": VESTA is also supported in the remote desktop mode.
+The Exabyte platform provides a graphical crystal structure viewer and builder which we refer to as the Materials Designer, and that will now be reviewed in detail. This designer essentially makes it possible to conceive and then save new crystal structures from scratch.  
 
 ## Navigating to Materials Designer
 
@@ -26,9 +22,3 @@ The Materials Designer is structured into four main building blocks and has the 
 ## [Default Material](../materials/actions/set-default.md)
 
 When first opened, the page is initialized with the default material (FCC Silicon initially). Readers can learn how to set and adjust default materials in [this page](../materials/actions/set-default.md). 
-
-## Links
-
-[^1]: [VESTA homepage, Website](http://jp-minerals.org/vesta/en/)
-[^2]: [VMD homepage, Website](http://www.ks.uiuc.edu/Research/vmd/)
-[^3]: [XCRYSDEN homepage, Website](http://www.xcrysden.org/)
