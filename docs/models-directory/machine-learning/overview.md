@@ -1,6 +1,6 @@
 # Machine Learning Model
 
-We introduce here the theoretical framework of **Machine Learning (ML)**. Machine Learning, a part of Artificial Intelligence, is a statistical learning method which can be used to create models based on the available data discovery and analytics. We use ML to enable prediction of materials [properties](../../properties/overview.md), classification of materials and recommendation to make use of past data in a more efficient way.
+We introduce here the theoretical framework of **Machine Learning (ML)** [^1]. Machine Learning, a part of Artificial Intelligence, is a statistical learning method which can be used to create models based on the available data discovery and analytics. We use ML to enable prediction of materials [properties](../../properties/overview.md), classification of materials and recommendation to make use of past data in a more efficient way.
 
 ## [Parameters](parameters.md)
 
@@ -13,3 +13,7 @@ We discuss the classification of properties in the context of ML in a [separate 
 ## [Structured Representation](data.md)
 
 [This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the ML model.
+
+## Links
+
+[^1]: [Wikipedia Machine learning, Website](https://en.wikipedia.org/wiki/Machine_learning)
