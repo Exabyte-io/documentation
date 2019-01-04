@@ -1,6 +1,6 @@
 # Machine Learning
 
-Machine learning relates to algorithms and statistical models that computers can use to progressively improve with time their performance in solving certain problems [^1]. 
+[Machine learning](../../models-directory/machine-learning/overview.md) relates to algorithms and statistical models that computers can use to progressively improve with time their performance in solving certain problems [^1]. 
 
 ## Implementation
 
