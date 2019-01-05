@@ -8,10 +8,6 @@ This method is widely used as an effective algorithmic formulation and implement
 
 [This page](parameters.md) contains a list of the fundamental computational parameters involved in the Linear Regression Method.
 
-## [Actions](actions.md)
-
-We introduce [here](actions.md) the action for uploading a training data set to our platform via the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md). 
-
 ## [Structured Representation](data.md)
 
 [This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the method.

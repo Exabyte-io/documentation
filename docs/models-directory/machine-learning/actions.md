@@ -1,6 +1,6 @@
 # Define Training Data Set
 
-By default, the training data set for [Machine Learning](../../models-directory/machine-learning/overview.md) applications is generated based on the [selected materials](../../jobs-designer/actions-header-menu/select-materials.md) in [job designer](../../jobs-designer/overview.md).
+By default, the training data set for [Machine Learning](overview.md) applications is generated based on the [selected materials](../../jobs-designer/actions-header-menu/select-materials.md) in [job designer](../../jobs-designer/overview.md).
 
 ## Upload Data Set
 
