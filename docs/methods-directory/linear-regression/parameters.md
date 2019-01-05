@@ -12,7 +12,7 @@ The following subtypes of linear regressions are supported on our platform.
 
 ## Data Set
 
-The **training data** [^3] necessary for building the final model that can predict new material properties usually comes from multiple datasets. We explain how to upload such data set to the [Web Interface](../../ui/overview.md) of our platform [in this page](actions.md).
+The **training data** [^3] necessary for building the final model that can predict new material properties usually comes from multiple datasets. We explain how to upload such data set to the [Web Interface](../../ui/overview.md) of our platform [in this page](../../models-directory/machine-learning/actions.md).
 
 ## Links
 
