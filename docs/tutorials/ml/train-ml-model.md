@@ -35,6 +35,8 @@ The "ML Train Model" Workflow can be imported from the Bank into the account-own
 
 The user should then repeat the same procedure for [creating and executing](../../jobs-designer/overview.md) a new [Job](../../jobs/overview.md) as the preceding step, selecting the "ML Train Model" Workflow this time in conjunction with the Si/Ge-containing materials for which the band gap was calculated previously. This allows the [Exabyte Machine Learning Engine](../../software-directory/machine-learning/exabyte/overview.md) to build the ML Train Model based upon the results of such band gap computations, which can then be used to [predict](predict-ml-properties.md) the band gaps of other similar materials.
 
+The [target properties](../../properties/classification/machine-learning.md) (the band gap in this case) can be selected by opening the [unit editor](../../workflow-designer/unit-editor.md) for the "input" [unit](../../workflows/components/units.md) of the "ML Train Model" Workflow, and scrolling down to the "Targets" section within the editor interface.
+
 ## Animation
 
 We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below. 
