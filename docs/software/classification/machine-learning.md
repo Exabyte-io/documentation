@@ -15,4 +15,4 @@ A Machine Learning [workflow](../../workflows/overview.md) typically consists of
 5. Building the ML train model
 6. Predicting new properties from the trained model
 
-The user is referred to the tutorial section on machine learning for more detailed information on the above steps.
+The user is referred to the [tutorial section](../../tutorials/ml/overview.md) on machine learning for more detailed information on the above steps.
