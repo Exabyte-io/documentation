@@ -1,4 +1,4 @@
-# Machine Learning: train Linear Regression
+# Machine Learning: Train Linear Regression
 
 This tutorial demonstrates how to build a [machine learning (ML)](../../models-directory/machine-learning/overview.md) **training model** for a set of [materials](../../materials/overview.md) called **"train materials"**. This model can then be used to predict the [properties](../../properties/overview.md) of another set called **"target materials"**, based on the procedure outlined in a [separate tutorial](predict-ml-properties.md). 
 
@@ -8,13 +8,13 @@ We consider the [Electronic Band Gap](../../properties-directory/non-scalar/band
 
 We follow the below steps, by making use of our [Web Interface](../../ui/overview.md).
 
-1. Import materials from materials project
+1. Import materials from materials Bank
 2. Calculate band gap for the "train materials"
 3. Build ML Train model based on the "train materials"
 
-## 1. Import Materials from Materials Project
+## 1. Import Materials from Materials Bank
 
-We explain how to import materials from the Materials Project online repository of materials structures [in this page](../../materials/actions/import.md). For the sake of the present tutorial example, we will consider all structures listed in this repository that contain the elements silicon (Si) and germanium (Ge). These can be imported into the account-owned [collection](../../accounts/collections.md) of materials by entering the "Si*Ge*" regular expression in the main [search bar](../../entities-general/actions/search.md) of the Import Dialog.
+We explain how to import materials from the [Materials Bank](../../materials/bank.md) [in this page](../../materials/actions/copy-bank.md). For the sake of the present tutorial example, we will consider all structures listed in this repository that contain the elements silicon (Si) and germanium (Ge). These can be imported into the account-owned [collection](../../accounts/collections.md) of materials by entering the "Si*Ge*" regular expression in the main [search bar](../../entities-general/actions/search.md) of the Materials Bank page.
 
 ## 2. Calculate Band Gap
 
@@ -39,6 +39,8 @@ The [target properties](../../properties/classification/machine-learning.md) (th
 
 ## Animation
 
-We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below. 
+We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below. In this example, we have trained our ML model for predicting the band-gap based upon the calculation results for the following stochiometric compositions of Si/Ge-based materials: Si8Ge8, Si4Ge4, Si6Ge6, SiGe, Si2Ge2.
 
-<img data-gifffer="/images/tutorials/ml-train-model.gif">
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://youtu.be/ilziM9zL-Ug" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
