@@ -1,6 +1,6 @@
 # Crystal Lattice
 
-Every crystal structure has an underlying Bravais lattice [^1]. For more theoretical background, please refer to [this page](../../properties-directory/structural/lattice.md). 
+Every crystal structure has an underlying Bravais lattice. For more theoretical background, please refer to [this page](../../properties-directory/structural/lattice.md). 
 
 ## Opening the Crystal Lattice editor
 
@@ -10,7 +10,7 @@ The parameters of a Material's Bravais lattice  can be edited and set by expandi
 
 ## Setting Lattice Type
 
-In order to choose the desired "Lattice type" out of the total list of 14 possibilities, click on the corresponding drop-down menu and make your selection. When an alternative lattice type is chosen, the corresponding angles and lattice constants will automatically adjust. The information about the primitive lattice vectors for each Bravais lattice type, and their relations to the conventional (Cartesian) lattice vectors, can be accessed, for example in Ref. [^2].  
+In order to choose the desired "Lattice type" out of the total list of 14 possibilities, click on the corresponding drop-down menu and make your selection. When an alternative lattice type is chosen, the corresponding angles and lattice constants will automatically adjust. The information about the primitive lattice vectors for each Bravais lattice type, and their relations to the conventional (Cartesian) lattice vectors, can be accessed, for example in Ref. [^1].  
 
 !!!warning "Primitive unit cell is used instead of conventional"
     Lattice parameters are those that describe the *primitive* unit cell of the crystal containing just one lattice point. For example, for a choice of the Face-centered cubic (fcc) lattice type all unit cell angles are automatically set to 60 degrees, and not to 90 as it would be for a conventional FCC unit cell, and the lattice constant of the primitive cell is smaller by a factor of $\sqrt 2$ compared to the conventional. For example, for the case of the default material - silicon which has an underlying fcc Bravais lattice, the $a$, $b$ and $c$ lattice parameters are 3.8 $A$ by and not 5.43 $A$ as conventionally noted in the literature.
@@ -40,5 +40,4 @@ Click on the animation below to see the above in action. Here we change lattice 
 
 ## Links
 
-[^1]: [Wikipedia Bravais Lattice, Website](https://en.wikipedia.org/wiki/Bravais_lattice)
-[^2]: [The AFLOW library of crystallographic prototypes, Website](http://www.aflowlib.org/CrystalDatabase/)
+[^1]: [The AFLOW library of crystallographic prototypes, Website](http://www.aflowlib.org/CrystalDatabase/)
