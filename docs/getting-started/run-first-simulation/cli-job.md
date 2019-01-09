@@ -41,7 +41,7 @@ In addition, if the user would like to alter runtime environment for the calcula
 Lastly, the options for choosing the queue to submit the job can be found [here](../../infrastructure/resource/queues.md).
 
 !!!tip "Accounting Project Parameter"
-    In order to specify a [project](../jobs/projects.md) that the job should belong to and should be [charged upon](../accounts/payments-charges.md), the instructions contained [in this page](../../jobs-cli/accounting.md) should be followed. 
+    In order to specify a [project](../../jobs/projects.md) that the job should belong to and should be [charged upon](../../accounts/payments-charges.md), the instructions contained [in this page](../../jobs-cli/accounting.md) should be followed. 
 
 In the present tutorial we will proceed with the default submission script template, without modification.
 

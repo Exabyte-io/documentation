@@ -73,7 +73,7 @@ Find out more under the following pages:
 
 - [data convention](../data-structured/overview.md)
 - [materials data](../materials/data.md)
-- [workflows data](../workflows/data.md)
+- [workflows data](../workflows/data/overview.md)
 - [properties data](../properties/data/list.md)
 
 ## Account-related Items
