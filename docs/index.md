@@ -10,7 +10,7 @@ The "Links" section below can direct readers to sources of more in-depth explana
 
 ## Quickstart
 
-You can skip straight to our tutorial summarizing [first steps](getting-started/run-first-simulation.md). There you will learn how to create and run a density functional theory calculation for the electronic band structure of silicon.
+You can skip straight to our tutorial summarizing [first steps](getting-started/run-first-simulation/web-interface.md). There you will learn how to create and run a density functional theory calculation for the electronic band structure of silicon.
 
 ## Contents
 

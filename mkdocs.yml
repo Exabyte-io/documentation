@@ -72,10 +72,14 @@ nav:
 
 # INTRODUCTION
     - Getting Started:
-        - Run first simulation:                          getting-started/run-first-simulation.md
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
-        - CLI job submission:                            getting-started/cli-job.md
+        - Terminology:                                   getting-started/terminology.md
+        - Run first simulation:
+            - Web Interface:                             getting-started/run-first-simulation/web-interface.md
+            - Command Line:                              getting-started/run-first-simulation/cli-job.md
+
+
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
