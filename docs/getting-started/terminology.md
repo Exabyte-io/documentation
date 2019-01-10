@@ -1,4 +1,4 @@
-# Overview of our Product
+# Terminology
 
 We summarize here the basic concepts that are used throughout Exabyte.io when referring to simulations.
 
@@ -49,10 +49,7 @@ In order to better understand the difference between Model, Method and Simulatio
 
 Thus, the process of traveling from San Francisco to New York by analogy would be the **simulation** using a model, and a corresponding method contained within it, employed to extract a specific characteristic property.
 
-!!!note "Simulation Engines"
-    Just like there are multiple airplane manufacturers, there are many **simulation engines** (or [software applications](../software/overview.md)) that implement specific model(s) and method(s).
-
-Models, Methods, Workflows, Subworkflows and Units are **nested properties**: the information about units is stored within subworkflows, subworkflows in turn is stored within workflows, workflows within methods, and finally methods is contained inside a model.
+> A note on "Simulation Engines". Just like there are multiple airplane manufacturers, there are many **simulation engines** (or [software applications](../software/overview.md)) that implement specific model(s) and method(s).
 
 ## Jobs
 
