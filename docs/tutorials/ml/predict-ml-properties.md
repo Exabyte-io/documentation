@@ -25,7 +25,7 @@ After [creating and executing a new Job](../../jobs-designer/overview.md), with 
 
 ## Animation
 
-In the following animation, we demonstrate how the above steps can be followed to predict the band-gap of a new set of Si/Ge-based materials, using the model trained in a [previous tutorial](train-ml-model.md). For the sake of this example, we predict the bang-gap for the Si16Ge16 stochiometric composition. The results of the ML prediction for both the direct and indirect band gaps (2.231 and 0.378 eV respectively) are in very good agreement with the results of their direct computation using [DFT](../../models-directory/dft/overview.md).
+In the following animation, we demonstrate how the above steps can be followed to predict the band-gap of a new set of Si/Ge-based materials, using the model trained in a [previous tutorial](train-ml-model.md). For the sake of this example, we predict the bang-gap for the Si4Ge12 stochiometric composition. The results of the ML prediction for both the direct and indirect band gaps (2.231 and 0.378 eV respectively) are in very good agreement with the results of their direct computation using [DFT](../../models-directory/dft/overview.md).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/T3bsT3uD3VI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
