@@ -4,19 +4,25 @@ This tutorial demonstrates how to build a [machine learning (ML)](../../models-d
 
 We consider the [Electronic Band Gap](../../properties-directory/non-scalar/band-gaps.md) in the present example, however the general approach can work for many different properties.
 
+For the sake of the present tutorial example, we will consider the following stochiometric combinations of the elements silicon (Si) and germanium (Ge) to train our ML model for predicting the band-gap. These structures all contain a total of 16 atoms, in the form of a 2x2x2 [supercell](../../materials-designer/header-menu/advanced/supercell.md) of the cubic-diamond primitive unit cell, and can be generated through the help of [combinatorial sets](../../materials-designer/header-menu/advanced/combinatorial-set.md) via [Materials Designer](../../materials-designer/overview.md).
+
+- Ge16
+- Si2 Ge14
+- Si6 Ge10
+- Si8 Ge8
+- Si10 Ge6
+- Si12 Ge4
+- Si14 Ge2
+- Si16
+
 ## Steps
 
 We follow the below steps, by making use of our [Web Interface](../../ui/overview.md).
 
-1. Import materials from materials Bank
-2. Calculate band gap for the "train materials"
-3. Build ML Train model based on the "train materials"
+1. Calculate band gap for the "train materials"
+2. Build ML Train model based on the "train materials"
 
-## 1. Import Materials from Materials Bank
-
-We explain how to import materials from the [Materials Bank](../../materials/bank.md) [in this page](../../materials/actions/copy-bank.md). For the sake of the present tutorial example, we will consider all structures listed in this repository that contain the elements silicon (Si) and germanium (Ge). These can be imported into the account-owned [collection](../../accounts/collections.md) of materials by entering the "Si*Ge*" regular expression in the main [search bar](../../entities-general/actions/search.md) of the Materials Bank page.
-
-## 2. Calculate Band Gap
+## 1. Calculate Band Gap
 
 ### Import Band-gap Workflow from Bank
 
@@ -25,11 +31,11 @@ The user can import a pre-assembled [workflow](../../workflows/overview.md) for 
 ### Create and Run Job
 
 Once the appropriate workflow has been copied from the Bank, we can proceed with the creation of a new [Job](../../jobs/overview.md)
-using the [Job Designer interface](../../jobs-designer/overview.md). We first need to [select](../../jobs-designer/actions-header-menu/select-materials.md) all the aforementioned materials containing Si and Ge which have been imported into the account-owned collection in the preceding step, and thus add them to the job being created. 
+using the [Job Designer interface](../../jobs-designer/overview.md). We first need to [select](../../jobs-designer/actions-header-menu/select-materials.md) all the aforementioned materials containing Si and Ge from the account-owned materials [collection](../../accounts/collections.md), and thus add them to the job being created. 
 
-Under the [Workflow Tab](../../jobs-designer/workflow-tab.md) of Job Designer, we then need to [select](../../jobs-designer/actions-header-menu/select-workflow.md) the band-gap workflow imported previously. At this point, the Job can be [executed](../../jobs/actions/run.md) for the computation of the band-gap for our set of materials. 
+Under the [Workflow Tab](../../jobs-designer/workflow-tab.md) of Job Designer, we then need to [select](../../jobs-designer/actions-header-menu/select-workflow.md) the band-gap workflow imported previously. At this point, the Job can be [executed](../../jobs/actions/run.md) for the computation of the band-gap for our set of Si/Ge-based materials. 
 
-## 3. Build ML Train Model
+## 2. Build ML Train Model
 
 The "ML Train Model" Workflow can be imported from the Bank into the account-owned collection by repeating the procedure outlined [here](../../workflows/actions/copy-bank.md).
 
@@ -39,8 +45,8 @@ The [target properties](../../properties/classification/machine-learning.md) (th
 
 ## Animation
 
-We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below. In this example, we have trained our ML model for predicting the band-gap based upon the calculation results for the following stochiometric compositions of Si/Ge-based materials: Si8Ge8, Si4Ge4, Si6Ge6, SiGe, Si2Ge2.
+We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below.   
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/vUhtS-pa0HA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Wt7xIo2yEos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
