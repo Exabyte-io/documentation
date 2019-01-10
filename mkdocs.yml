@@ -72,12 +72,12 @@ nav:
 
 # INTRODUCTION
     - Getting Started:
-        - Product Overview:                              getting-started/overview.md
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
+        - Terminology:                                   getting-started/terminology.md
         - Run first simulation:
             - Web Interface:                             getting-started/run-first-simulation/web-interface.md
-            - Command Line Interface:                    getting-started/run-first-simulation/cli-job.md
+            - Command Line:                              getting-started/run-first-simulation/cli-job.md
 
 
 
