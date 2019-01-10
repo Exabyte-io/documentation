@@ -75,6 +75,6 @@ The [Job Viewer screen](../../jobs/ui/viewer.md) tracks the input parameters, ou
 
 ## Done
 
-We have demonstrated in the present page how a simple electronic band structure calculation can be run using exabyte.io. For a more comprehensive tutorial, readers may refer to the dedicated ["Tutorials" section](../../tutorials/dft/band-structure.md) of our documentation.
+We have demonstrated in the present page how a simple electronic band structure calculation can be run using exabyte.io. For a more comprehensive tutorial, readers may refer to the dedicated ["Tutorials" section](../../tutorials/overview.md) of our documentation.
 
 ![simple electronic band structure calculation](../../images/getting-started/run-first-simulation-view-bandstructure.png "simple electronic band structure calculation")

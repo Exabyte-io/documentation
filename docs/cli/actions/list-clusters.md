@@ -1,10 +1,10 @@
-# List and Check Status of Clusters and Cluster Nodes
+# List and Status of Clusters
 
 The available [clusters and cluster nodes](../../infrastructure/clusters/overview.md) can be listed under the [Command Line Interface](../overview.md), and their statuses inspected, with the `exaclusters` and `exanodes` commands respectively. 
 
-## "Exaclusters" Command Output
+## List Clusters 
 
-An example of output of the `exaclusters` command is shown below.
+An example of output of the `exaclusters` command allowing to list available clusters is shown below.
 
 ```bash
 >>> exaclusters
@@ -14,9 +14,9 @@ cluster-001  master-production-20160630cluster-001.exabyte.io
 cluster-007  master-production-20160630cluster-007.exabyte.io
 ```
 
-## "Exanodes" Command Output
+## List Cluster Nodes
 
-An example of the output of the other `exanodes` command is included below.
+An example of the output of the other `exanodes` command allowing to list available cluster nodes is included below.
 
 ```bash
 >>> exanodes
