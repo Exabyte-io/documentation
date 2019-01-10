@@ -6,14 +6,12 @@ We consider the [Electronic Band Gap](../../properties-directory/non-scalar/band
 
 For the sake of the present tutorial example, we will consider the following stochiometric combinations of the elements silicon (Si) and germanium (Ge) to train our ML model for predicting the band-gap. These structures all contain a total of 16 atoms, in the form of a 2x2x2 [supercell](../../materials-designer/header-menu/advanced/supercell.md) of the cubic-diamond primitive unit cell, and can be generated through the help of [combinatorial sets](../../materials-designer/header-menu/advanced/combinatorial-set.md) via [Materials Designer](../../materials-designer/overview.md).
 
-- Ge16
 - Si2 Ge14
 - Si6 Ge10
 - Si8 Ge8
 - Si10 Ge6
 - Si12 Ge4
 - Si14 Ge2
-- Si16
 
 ## Steps
 
@@ -48,5 +46,5 @@ The [target properties](../../properties/classification/machine-learning.md) (th
 We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below.   
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Wt7xIo2yEos" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/r_8MeoukH9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
