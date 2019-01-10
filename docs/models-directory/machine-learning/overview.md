@@ -10,6 +10,10 @@ The list of parameters affecting ML is presented [in this page](parameters.md).
 
 We discuss the classification of properties in the context of ML in a [separate section](../../properties/classification/machine-learning.md) of the documentation.
 
+## [Units](units.md)
+
+We introduce some Machine Learning-specific [unit types](../../workflows/components/units.md) under [this explanation](units.md).
+
 ## [Structured Representation](data.md)
 
 [This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the ML model.

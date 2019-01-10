@@ -4,5 +4,13 @@
 
 The formation energy represents the energetic cost of creating a **defect** into an otherwise perfect solid structure. For example, for the case of a vacancy defect, it is calculated as the energy needed to remove the corresponding atom from the bulk. 
 
-!!!note "Note: feature not implemented yet"
+Below is the formula used to calculate formation energy:	
+ 
+$$
+ E_fmt = E_tot (compound) - \sum{all elements} \sum{all atoms for element} (E_zpe + E_tot)
+$$	
+ 
+ `E_fmt` and `E_tot`, `E_zpe` are the formation energy, total energy and zero point energy for the compound and lowest energy elemental structures, correspondingly.
+ 
+ !!!note "Note: feature under development"
     The calculation of Formation energies is not yet available as a Workflow computation on our platform.
