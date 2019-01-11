@@ -1,52 +1,38 @@
-<!-- TODO by MH -->
+# Calculate Electronic Band Structure
 
-This page explains how to calculate electronic band structure [[1](#links)] based on density functional theory. We will be studying Silicon in the standard diamond-like face-centered cubic structure and will use VASP [[2](#links)] as our simulation engine.
+This tutorial page explains how to calculate the [electronic band structure](../../properties-directory/non-scalar/bandstructure.md) based on [Density Functional Theory](../../models-directory/dft/overview.md). We will be studying Silicon in the standard cubic-diamond crystal structure, and will use [VASP](../../software-directory/modeling/vasp/overview.md) as our simulation engine.
 
 !!! Note "Accuracy of the results"
-    Please note that this calculation is performed using standard Density Functional Theory [[3](#links)] and therefore underprediction of the energy of unoccupied electronic states is expected. Further modifications to the input files and settings to correctly predict the band gap are possible and will be explored later.
+    Please note that this calculation is performed using standard [Density Functional Theory](../../models-directory/dft/overview.md), and therefore an underestimation of the energy of unoccupied electronic states is expected. Further modifications to the input files and settings to correctly predict the band gap are possible, and will be explored later.
 
-# Create job
+## Create Job
 
-Silicon in face-centered cubic structure is the default material that is shown on new job initialization. Therefore, if you select "Create a Job" from left-hand sidebar, it will automatically be loaded.
+Silicon in its cubic-diamond crystal structure is the [default material](../../materials/default.md) that is shown on [new job creation](../../jobs-designer/overview.md), unless this default was [changed](../../entities-general/actions/set-default.md) by the user following [account](../../accounts/overview.md) creation. If silicon is still the default choice, it will as such be automatically loaded at the moment of the [opening](../../jobs/actions/create.md) of [Job Designer](../../jobs-designer/overview.md).
 
-<img data-gifffer="/images/tutorials/tutorials/BandStep1.gif"/>
+## Choose Workflow
 
-# Choose workflow
-
-Under workflow chose VASP as simulation engine and then "Bandstructure" for the workflow.
-
-<img data-gifffer="/images/tutorials/tutorials/BandStep2.gif"/>
+[Workflows](../../workflows/overview.md) for calculating the [band structure](../../properties-directory/non-scalar/bandstructure.md) of [materials](../../materials/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
 ## Adjust kpoints
 
-It is critical to have a high k-point density in order to resolve enough details for the band structure plot.
+It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to resolve enough details for the band structure plot.
 
-The band structure workflow has 2 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation.
+The band structure workflow is composed of two [units](../../workflows/components/units.md). The first unit specifies the settings for the self-consistent calculation of the energy eigenvalues and wave functions.  The second unit calculation is a non self-consistent calculation using the wave functions and charge density of the previous calculation.
 
-We set the kpoint density to 11 x 11 x 11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure.  In addition we also apply the recommended k-point path to effectively sample the electronic states based on the symmetry of the crystal.
+We set the size of the grid of k-points to 11 x 11 x 11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure.  In addition, we also apply the recommended [k-point path](../../models/auxiliary-concepts/reciprocal-space/paths.md) to effectively sample the electronic states throughout the Brillouin Zone of the crystal, based on the crystal symmetry.
 
-<img data-gifffer="/images/tutorials/tutorials/BandStep3.gif"/>
+## Submit Job
 
-# Submit job
+Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md), the user should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and examine the [compute parameters](../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so one CPU and 5 minutes of calculation runtime should be sufficient.
 
-Before submitting the job, click on the "Compute" tab and examine compute parameters.  This is a small structure so 1 CPU and 5 minutes are sufficient.  Click "No" when asked if you want to save a duplicate material.
+## Examine Final Results
 
-<img data-gifffer="/images/tutorials/tutorials/BandStep4.gif"/>
+When both [unit](../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the [band structure](../../properties-directory/non-scalar/bandstructure.md) of silicon, plotted as a dispersion curve as a function of the special [k-point paths](../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen.
 
-# Monitor status
+## Animation
 
-As each unit is being executed, you can monitor progress in real-time by viewing both standard output and the graph of the total energy convergence on the "Status" tab.
+We demonstrate the above-mentioned steps involved in the creation and execution of a band structure computation on silicon using the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation.
 
-<img data-gifffer="/images/tutorials/tutorials/BandStep5.gif"/>
-
-# Examine Results
-
-When both units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the band structure of silicon as a function of the special k-point paths chosen.
-
-<img data-gifffer="/images/tutorials/tutorials/BandStep6.gif"/>
-
-# Links
-
-1. [Electronic Bandstructure, Wikipedia](https://en.wikipedia.org/wiki/Electronic_band_structure)
-2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
-3. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/6OomF0YgttM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
