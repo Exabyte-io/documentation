@@ -1,6 +1,6 @@
 # Calculate Electronic Band Structure
 
-This tutorial page explains how to calculate the [electronic band structure](../../properties-directory/non-scalar/bandstructure.md) based on [Density Functional Theory](../../models-directory/dft/overview.md). We will be studying Silicon in the standard cubic-diamond crystal structure, and will use [VASP](../../software-directory/modeling/vasp/overview.md) as our simulation engine.
+This tutorial page explains how to calculate the [electronic band structure](../../properties-directory/non-scalar/bandstructure.md) based on [Density Functional Theory](../../models-directory/dft/overview.md). We will be studying crystalline Silicon in the standard cubic-diamond crystal structure, and we will use [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine.
 
 !!! Note "Accuracy of the results"
     Please note that this calculation is performed using standard [Density Functional Theory](../../models-directory/dft/overview.md), and therefore an underestimation of the energy of unoccupied electronic states is expected. Further modifications to the input files and settings to correctly predict the band gap are possible, and will be explored later.
@@ -23,7 +23,7 @@ We set the size of the grid of k-points to 11 x 11 x 11 in the first workflow un
 
 ## Submit Job
 
-Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md), the user should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and examine the [compute parameters](../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so one CPU and 5 minutes of calculation runtime should be sufficient.
+Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md), the user should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and examine the [compute parameters](../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
 ## Examine Final Results
 
@@ -31,8 +31,8 @@ When both [unit](../../workflows/components/units.md) computations are complete 
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a band structure computation on silicon using the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation.
+We demonstrate the above-mentioned steps involved in the creation and execution of a band structure computation on silicon using the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/6OomF0YgttM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3ekwtYJyj4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
