@@ -190,6 +190,7 @@ nav:
         - Machine Learning:
             - Overview:                                 models-directory/machine-learning/overview.md
             - Parameters:                               models-directory/machine-learning/parameters.md
+            - Units:                                    models-directory/machine-learning/units.md
             - Data:                                     models-directory/machine-learning/data.md
             - Actions:                                  models-directory/machine-learning/actions.md
 
