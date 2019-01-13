@@ -4,6 +4,8 @@ This tutorial demonstrates how to build a [machine learning (ML)](../../models-d
 
 We consider the [Electronic Band Gap](../../properties-directory/non-scalar/band-gaps.md) in the present example, however the general approach can work for many different properties.
 
+## Training Set
+
 For the sake of the present tutorial example, we will consider the following stochiometric combinations of the elements silicon (Si) and germanium (Ge) to train our ML model for predicting the band-gap. These structures all contain a total of 16 atoms, in the form of a 2x2x2 [supercell](../../materials-designer/header-menu/advanced/supercell.md) of the cubic-diamond primitive unit cell, and can be generated through the help of [combinatorial sets](../../materials-designer/header-menu/advanced/combinatorial-set.md) via [Materials Designer](../../materials-designer/overview.md).
 
 - Si2 Ge14
@@ -13,16 +15,21 @@ For the sake of the present tutorial example, we will consider the following sto
 - Si12 Ge4
 - Si14 Ge2
 
+## Targets
+
+In [this other tutorial](predict-ml-properties.md), we explain how the model trained with the above materials can be used to predict the band-gap of another similar composition, consisting in Si4Ge12.
+
 ## Steps
 
 We follow the below steps, by making use of our [Web Interface](../../ui/overview.md).
 
-1. Calculate band gap for the "train materials"
+1. Obtain Training Data
 2. Build ML Train model based on the "train materials"
+3. Inspect Trained Model
 
 ## 1. Calculate Band Gap
 
-### Import Band-gap Workflow from Bank
+### Copy Workflow from Bank
 
 The user can import a pre-assembled [workflow](../../workflows/overview.md) for calculating the band-gap of materials directly from the [Workflow Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). We explain the procedure for doing so [in this page](../../workflows/actions/copy-bank.md).
 
@@ -41,10 +48,18 @@ The user should then repeat the same procedure for [creating and executing](../.
 
 The [target properties](../../properties/classification/machine-learning.md) (the band gap in this case) can be selected by opening the [unit editor](../../workflow-designer/unit-editor.md) for the "input" [unit](../../workflows/components/units.md) of the "ML Train Model" Workflow, and scrolling down to the "Targets" section within the editor interface.
 
+## 3. Inspect Trained Model
+
+Once the ML Train Model has been built, a new [Workflow](../../workflows/overview.md) called **"ml_predict"** is generated and can be retrieved under the [results tab](../../jobs/ui/results-tab.md) of [job viewer](../../jobs/ui/viewer.md) for the ML train job.
+
+This "ml_predict" workflow is automatically saved to the account-owned [collection](../../accounts/collections.md) of workflows, visible through [Workflow Explorer](../../workflows/ui/explorer.md). It can subsequently be used at the moment of [creation of a new Job](../../jobs-designer/overview.md), to **predict** the properties (such as the band-gap) of new materials based upon statistical considerations formed from the trained model, without consequently the need for further physics-based simulations. We explain the procedure to perform such predictions [in a separate tutorial page](predict-ml-properties.md).
+
+Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../../workflows/components/units.md) under the corresponding [unit editor interface](../../workflow-designer/unit-editor.md), where the model coefficients and importance are stored giving an indication of the model **precision**.
+
 ## Animation
 
-We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below.   
+We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in building and then inspecting the ML Train Model in the animation below.   
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/6OomF0YgttM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/NcEH0fEPIdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
