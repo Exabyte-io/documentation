@@ -11,12 +11,6 @@ We follow the below steps, by making use of our [Web Interface](../../ui/overvie
 1. Extract ML train model as workflow
 2. Predict property using the model
 
-## 1. Extract ML Train Model as Workflow
-
-Once the ML Train Model has been [built](train-ml-model.md#3.-build-ml-train-model) following the execution of the relevant [job](../../jobs/overview.md), a new [Workflow](../../workflows/overview.md) called **"ml_predict"** is generated and can be retrieved under the [results tab](../../jobs/ui/results-tab.md) of [job viewer](../../jobs/ui/viewer.md).
-
-This "ml_predict" workflow is automatically [saved](../../workflow-designer/header-menu.md#saving-the-workflow) to the account-owned [collection](../../accounts/collections.md) of workflows. It can subsequently be used at the moment of [creation of a new Job](../../jobs-designer/overview.md), to **predict** the properties (such as the band-gap) of new materials based upon statistical considerations formed from the trained model, without consequently the need for further physics-based simulations.
-
 ## 2. Predict Property Using the Model
 
 The properties which will be predicted are the **target properties** which have been ticked and selected under the [unit editor interface](../../workflow-designer/unit-editor.md) of the "input" [unit](../../workflows/components/units.md) of the "ml_predict" workflow, under the "Targets" section of the interface.
