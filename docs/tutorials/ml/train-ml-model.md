@@ -50,11 +50,15 @@ The [target properties](../../properties/classification/machine-learning.md) (th
 
 ## 3. Inspect Trained Model
 
-We finally navigate to the Workflow and view "Score" part where the model coefficients and importance are stored
+Once the ML Train Model has been built, a new [Workflow](../../workflows/overview.md) called **"ml_predict"** is generated and can be retrieved under the [results tab](../../jobs/ui/results-tab.md) of [job viewer](../../jobs/ui/viewer.md) for the ML train job.
+
+This "ml_predict" workflow is automatically saved to the account-owned [collection](../../accounts/collections.md) of workflows. It can subsequently be used at the moment of [creation of a new Job](../../jobs-designer/overview.md), to **predict** the properties (such as the band-gap) of new materials based upon statistical considerations formed from the trained model, without consequently the need for further physics-based simulations. We explain the procedure to perform such predictions [in a separate tutorial page](predict-ml-properties.md).
+
+Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../../workflows/components/units.md) under the [unit editor interface](../../workflow-designer/unit-editor.md), where the model coefficients and importance are stored.
 
 ## Animation
 
-We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in the above final step for building the ML Train Model in the animation below.   
+We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in building and then inspecting the ML Train Model in the animation below.   
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/6OomF0YgttM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
