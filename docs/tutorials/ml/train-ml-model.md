@@ -1,8 +1,8 @@
 # Machine Learning: Train Linear Regression
 
-This tutorial demonstrates how to build a [machine learning (ML)](../../models-directory/machine-learning/overview.md) **training model** for a set of [materials](../../materials/overview.md) called **"train materials"**. This model can then be used to predict the [properties](../../properties/overview.md) of another set called **"target materials"**, based on the procedure outlined in a [separate tutorial](predict-ml-properties.md). 
+This tutorial demonstrates how to build a [machine learning (ML)](../../models-directory/machine-learning/overview.md) **training model** based upon a set of [materials](../../materials/overview.md) called **"train materials"**. This model can then be used to predict the [properties](../../properties/overview.md) of another set called **"target materials"**, based on the procedure outlined in a [separate tutorial](predict-ml-properties.md). 
 
-We consider the [Electronic Band Gap](../../properties-directory/non-scalar/band-gaps.md) in the present example, however the general approach can work for many different properties.
+We consider the [Electronic Band Gap](../../properties-directory/non-scalar/band-gaps.md) in the present example, however the general approach can work for many different **target properties**.
 
 ## Training Set
 
@@ -17,7 +17,7 @@ For the sake of the present tutorial example, we will consider the following sto
 
 ## Targets
 
-In [this other tutorial](predict-ml-properties.md), we explain how the model trained with the above materials can be used to predict the band-gap of another similar composition, consisting in Si4Ge12.
+In [this other tutorial](predict-ml-properties.md), we explain how the model trained with the above materials can be used to predict the band-gap of another similar target composition, consisting in Si4Ge12.
 
 ## Steps
 
