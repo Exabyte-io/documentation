@@ -4,7 +4,7 @@ This page helps users quickly grasp the content of documentation. Use the table 
 
 ## Login
 
-We support two basics login connection methods: through [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). One must have a valid username and password in order to login via either. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have a [Remote Desktop Environment](../remote-connection/remote-desktop.md) option available to them. 
+We support two main login connection methods: through [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). One must have a valid username and password in order to login via either. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have a [Remote Desktop Environment](../remote-connection/remote-desktop.md) option available to them. 
 
 The user can find out more about such connection methods under the [connection options page](../remote-connection/overview.md). The
 - <a href="http://platform.exabyte.io/login" target="_blank">login page</a> is where the platform can be accessed.
