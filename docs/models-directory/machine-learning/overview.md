@@ -1,6 +1,6 @@
 # Machine Learning Model
 
-We introduce here the theoretical framework of **Machine Learning (ML)** [^1]. Machine Learning, a part of Artificial Intelligence, is a statistical learning method which can be used to create models based on the available data discovery and analytics. We use ML to enable prediction of materials [properties](../../properties/overview.md), classification of materials and recommendation to make use of past data in a more efficient way.
+We introduce here the theoretical framework for **Machine Learning (ML)** [^1], a statistical learning method which can be used to create models based on the available data. ML models enable prediction of materials [properties](../../properties/overview.md), for example.
 
 ## [Parameters](parameters.md)
 
@@ -14,10 +14,6 @@ We discuss the classification of properties in the context of ML in a [separate 
 
 We introduce some Machine Learning-specific [unit types](../../workflows/components/units.md) under [this explanation](units.md).
 
-## [Workflow](workflow.md)
-
-We review [in this page](workflow.md) the structure of a complete Machine Learning [workflow](../../workflows/overview.md). 
-
 ## [Structured Representation](data.md)
 
 [This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the ML model.
@@ -25,6 +21,10 @@ We review [in this page](workflow.md) the structure of a complete Machine Learni
 ## [Actions](actions.md)
 
 We introduce [here](actions.md) the action for uploading a training data set to our platform via the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md). 
+
+## [Example Workflow](example-workflow.md)
+
+We review [in this page](example-workflow.md) the structure of an example Machine Learning [workflow](../../workflows/overview.md).
 
 ## Links
 
