@@ -1,6 +1,6 @@
 # List of Available Methods
 
-We present here a list of computational [methods](../methods/overview.md) implemented on our platform to date.
+We present here a list of computational [methods](../methods/overview.md) available on our platform to date.
 
 ## [Plane-wave Pseudopotential](pseudopotential/overview.md)
 
@@ -8,4 +8,4 @@ We consider the **Plane-wave Pseudopotential** approach towards implementing the
 
 ## [Linear Regression](linear-regression/overview.md)
 
-We also provide an implementation of the **Linear Regression** method for [Machine Learning](../models-directory/machine-learning/overview.md) applications, which is discussed [in this section](linear-regression/overview.md).
+**Linear Regression** method for [Machine Learning](../models-directory/machine-learning/overview.md) is discussed [in this section](linear-regression/overview.md).
