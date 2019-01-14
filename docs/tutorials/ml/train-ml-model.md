@@ -27,7 +27,7 @@ We follow the below steps, by making use of our [Web Interface](../../ui/overvie
 2. Build ML Train model based on the "train materials"
 3. Inspect Trained Model
 
-## 1. Calculate Band Gap
+## 1. Obtain Training Data
 
 ### Copy Workflow from Bank
 
@@ -40,7 +40,7 @@ using the [Job Designer interface](../../jobs-designer/overview.md). We first ne
 
 Under the [Workflow Tab](../../jobs-designer/workflow-tab.md) of Job Designer, we then need to [select](../../jobs-designer/actions-header-menu/select-workflow.md) the band-gap workflow imported previously. At this point, the Job can be [executed](../../jobs/actions/run.md) for the computation of the band-gap for our set of Si/Ge-based materials. 
 
-## 2. Build ML Train Model
+## 2. Build/Train a Model
 
 The "ML Train Model" Workflow can be imported from the Bank into the account-owned collection by repeating the procedure outlined [here](../../workflows/actions/copy-bank.md).
 
@@ -50,9 +50,13 @@ The [target properties](../../properties/classification/machine-learning.md) (th
 
 ## 3. Inspect Trained Model
 
+### ML Predict Workflow
+
 Once the ML Train Model has been built, a new [Workflow](../../workflows/overview.md) called **"ml_predict"** is generated and can be retrieved under the [results tab](../../jobs/ui/results-tab.md) of [job viewer](../../jobs/ui/viewer.md) for the ML train job.
 
 This "ml_predict" workflow is automatically saved to the account-owned [collection](../../accounts/collections.md) of workflows, visible through [Workflow Explorer](../../workflows/ui/explorer.md). It can subsequently be used at the moment of [creation of a new Job](../../jobs-designer/overview.md), to **predict** the properties (such as the band-gap) of new materials based upon statistical considerations formed from the trained model, without consequently the need for further physics-based simulations. We explain the procedure to perform such predictions [in a separate tutorial page](predict-ml-properties.md).
+
+### Score Unit
 
 Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../../workflows/components/units.md) under the corresponding [unit editor interface](../../workflow-designer/unit-editor.md), where the model coefficients and importance are stored, together with an indication of the model **precision** [^1].
 

@@ -12,7 +12,7 @@ The following subtypes of linear regressions are supported on our platform.
 
 ## Data Set
 
-The **training data** [^3] necessary for building the final model that can predict new material properties usually comes from multiple datasets. We explain how to upload such data set to the [Web Interface](../../ui/overview.md) of our platform [in this page](../../models-directory/machine-learning/actions.md).
+The **training data** necessary for building the final model that can predict new material properties usually comes from multiple datasets. We discuss this further [in this action page](../../models-directory/machine-learning/actions.md). 
 
 ## Links
 
@@ -20,4 +20,6 @@ The **training data** [^3] necessary for building the final model that can predi
 
 [^2]: [Wikipedia Linear least squares, Website](https://en.wikipedia.org/wiki/Linear_least_squares)
 
+<!--
 [^3]: [Wikipedia Training, validation, and test sets, Website](https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets#training_set)
+-->

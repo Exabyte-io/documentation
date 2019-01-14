@@ -193,7 +193,8 @@ nav:
             - Units:                                    models-directory/machine-learning/units.md
             - Data:                                     models-directory/machine-learning/data.md
             - Actions:                                  models-directory/machine-learning/actions.md
-
+            - Units:                                    models-directory/machine-learning/units.md
+            - Example Workflow:                         models-directory/machine-learning/example-workflow.md
 
     - Methods:
         - Overview:                                     methods/overview.md
