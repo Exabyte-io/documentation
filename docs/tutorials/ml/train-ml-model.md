@@ -54,12 +54,16 @@ Once the ML Train Model has been built, a new [Workflow](../../workflows/overvie
 
 This "ml_predict" workflow is automatically saved to the account-owned [collection](../../accounts/collections.md) of workflows, visible through [Workflow Explorer](../../workflows/ui/explorer.md). It can subsequently be used at the moment of [creation of a new Job](../../jobs-designer/overview.md), to **predict** the properties (such as the band-gap) of new materials based upon statistical considerations formed from the trained model, without consequently the need for further physics-based simulations. We explain the procedure to perform such predictions [in a separate tutorial page](predict-ml-properties.md).
 
-Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../../workflows/components/units.md) under the corresponding [unit editor interface](../../workflow-designer/unit-editor.md), where the model coefficients and importance are stored giving an indication of the model **precision**.
+Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../../workflows/components/units.md) under the corresponding [unit editor interface](../../workflow-designer/unit-editor.md), where the model coefficients and importance are stored, together with an indication of the model **precision** [^1].
 
 ## Animation
 
 We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in building and then inspecting the ML Train Model in the animation below.   
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/NcEH0fEPIdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/_Io-D0azkaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Links
+
+[^1]: [Wikipedia Coefficient of determination, Website](https://en.wikipedia.org/wiki/Coefficient_of_determination)
