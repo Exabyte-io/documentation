@@ -61,7 +61,7 @@ Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../
 We demonstrate the [Web Interface](../../ui/overview.md)-based procedure involved in building and then inspecting the ML Train Model in the animation below.   
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/NcEH0fEPIdk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/_Io-D0azkaw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
