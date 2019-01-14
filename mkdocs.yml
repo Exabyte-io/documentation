@@ -192,7 +192,7 @@ nav:
             - Parameters:                               models-directory/machine-learning/parameters.md
             - Data:                                     models-directory/machine-learning/data.md
             - Actions:                                  models-directory/machine-learning/actions.md
-
+            - Example Workflow:                         models-directory/machine-learning/example-workflow.md
 
     - Methods:
         - Overview:                                     methods/overview.md
