@@ -52,7 +52,9 @@ Notes:
 
 ## Validity period
 
-Our users only pay for what they use, however we provide access to the product within a designated period of time - validity period. Any **Unused credits** at the end of the current validity period will be available (roll-over) into the next validity period, following another payment.
+Our users only pay for what they use, however we provide access to the product within a designated period of time - validity period. Any **Unused credits** at the end of the current validity period will be available (roll-over) into the next validity period, following another payment. 
+
+Any credits unused at end of a subscription period will roll over to any contiguous subsequent subscription, but for not more than one additional year. Credits are assumed to be consumed in the order purchased. Rollover credits do not contribute to the prepayment threshold for the renewal period.
 
 ## Links
 
