@@ -1,57 +1,43 @@
-<!-- by MH -->
+# Calculate Electronic Density of States
 
-This page explains how to calculate electronic density of states [[1](#links)] using density functional theory. We study silicon in the standard diamond-centered cubic structure and use Quantum ESPRESSO [[2](#links)] as our simulation engine during this tutorial.
+This tutorial page explains how to calculate the [electronic density of states](../../properties-directory/non-scalar/electronic-dos.md) using [Density Functional Theory](../../models-directory/dft/overview.md). We study crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during the present tutorial.
 
-!!! Note "Accuracy of the results"
-    Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation [[3](#links)] which is known to under-estimate the energy of unoccupied electronic states.
+!!!warning "Accuracy of the results"
+    Please note that this calculation is performed using [Density Functional Theory](../../models-directory/dft/overview.md) and the [Generalized Gradient Approximation](../../models-directory/dft/parameters.md#subtype), which is known to under-estimate the energy of unoccupied electronic states.
 
-# Create job
+## Create job
 
-Si is the default material, so if you choose "Create a Job" from the sidebar on the home page Si will automatically be loaded.
+Silicon in its cubic-diamond crystal structure is the [default material](../../materials/default.md) that is shown on [new job creation](../../jobs-designer/overview.md), unless this default was [changed](../../entities-general/actions/set-default.md) by the user following [account](../../accounts/overview.md) creation. If silicon is still the default choice, it will as such be automatically loaded at the moment of the [opening](../../jobs/actions/create.md) of [Job Designer](../../jobs-designer/overview.md).
 
-<img data-gifffer="/images/tutorials/tutorials/BandStep1.gif" />
+## Choose Workflow
 
-# Choose workflow
+The Density of States in typically calculated in conjunction with the [electronic band structure](../../properties-directory/non-scalar/bandstructure.md) of the material under investigation, whose computation is the object of a [separate tutorial](band-structure.md). 
 
-Density of states is calculated in conjunction with band structure calculation so under workflow chose the "Bandstructure + DOS" for either Quantum Espresso.
-
-Click on the animation below to view:
-
-<img data-gifffer="/images/tutorials/tutorials/DOSStep2.gif" />
+[Workflows](../../workflows/overview.md) for calculating the band structure together with the Density of States through [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
 ## Adjust kpoints
 
-It is critical to have a high sampling in reciprocal cell (high k-point density) to give enough detail to calculate an accurate density of states.
+It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy.
 
-In QuantumEspresso, the band structure + DOS workflow has 5 units.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation. Subsequent calculations calculate the density of states and also the projection of those states for partial density of states analysis
+In [Quantum Espresso](../../software-directory/modeling/quantum-espresso/overview.md), the band structure + Density of States [workflow](../../workflows/overview.md) has five [units](../../workflows/components/units.md) in total.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation. Subsequent units calculate the density of states, and also the projection of those states for partial density of states analysis.
 
-We set the kpoint density to 11x11x11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure. <!-- TODO: set kpoint grid for the 4rth, non-self-consistent calculation, explain why it is beneficial -->
+We set the size of the grid of k-points to 11 x 11 x 11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure. 
 
-<img data-gifffer="/images/tutorials/tutorials/DOSStep3.gif" />
+## Submit job
 
-# Submit job
+Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md), the user should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and examine the [compute parameters](../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
-Before submitting the calculation, click on the "Go to Compute" button and examine the compute parameters.  This is a small structure so 1 core and 5 minutes are sufficient.  Click "No" when it asks if you want to save a duplicate material.
+## Examine results
 
-<img data-gifffer="/images/tutorials/tutorials/DOSStep4.gif" />
+When all five [unit](../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the density of states for the silicon sample under investigation, together with the partial density of states due to each atom in the structure as well as their s and p electron-like character. Moving the mouse cursor along each data series will highlight the atom's electronic character that the data series corresponds to.
 
-# Monitor status
+!!!note "Partial contributions"
+    The numbers represent the order of the current orbital as included inside the pseudopotential, and **not** the principal quantum number.
+    
+## Animation
 
-As each unit in the workflow is executing, you can monitor its progress live by viewing both the output of the executable as well as a graphical representation of the total energy convergence on the Status tab under each execution's sub-tab.
+We demonstrate the above-mentioned steps involved in the creation and execution of a Density of States computation on silicon using the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation.
 
-<img data-gifffer="/images/tutorials/tutorials/DOSStep5.gif" />
-
-# Examine results
-
-When all 5 units are complete, switching to the Results tab and the sub-tab for the final execution unit will show the density of states as well as the partial density of states due to each atom in the structure as well as their s and p electron-like character.  By moving your cursor along each data series it will highlight which element electronic character that data series corresponds to.
-
-<img data-gifffer="/images/tutorials/tutorials/DOSStep6.gif" />
-
-!!! note "Partial contributions"
-    The numbers represent the order of the current orbital as included inside the pseudopotential, and <u>not</u> the principal quantum number.
-
-# Links
-
-1. [Electronic Density of States, Wikipedia](https://en.wikipedia.org/wiki/Density_of_states)
-2. [Quantum ESPRESSO, Website](http://www.quantum-espresso.org/)
-3. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/VxYttWYBYQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

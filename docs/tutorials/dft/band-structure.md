@@ -11,7 +11,7 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../m
 
 ## Choose Workflow
 
-[Workflows](../../workflows/overview.md) for calculating the [band structure](../../properties-directory/non-scalar/bandstructure.md) of [materials](../../materials/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
+[Workflows](../../workflows/overview.md) for calculating the [band structure](../../properties-directory/non-scalar/bandstructure.md) of [materials](../../materials/overview.md) with [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
 ## Adjust kpoints
 
