@@ -19,7 +19,3 @@ The **training data** necessary for building the final model that can predict ne
 [^1]: [Wikipedia Linear regression, Website](https://en.wikipedia.org/wiki/Linear_regression)
 
 [^2]: [Wikipedia Linear least squares, Website](https://en.wikipedia.org/wiki/Linear_least_squares)
-
-<!--
-[^3]: [Wikipedia Training, validation, and test sets, Website](https://en.wikipedia.org/wiki/Training,_validation,_and_test_sets#training_set)
--->
