@@ -50,13 +50,13 @@ The [target properties](../../properties/classification/machine-learning.md) (th
 
 ## 3. Inspect Trained Model
 
-### ML Predict Workflow
+### Model Stored as Workflow
 
 Once the ML Train Model has been built, a new [Workflow](../../workflows/overview.md) called **"ml_predict"** is generated and can be retrieved under the [results tab](../../jobs/ui/results-tab.md) of [job viewer](../../jobs/ui/viewer.md) for the ML train job.
 
 This "ml_predict" workflow is automatically saved to the account-owned [collection](../../accounts/collections.md) of workflows, visible through [Workflow Explorer](../../workflows/ui/explorer.md). It can subsequently be used at the moment of [creation of a new Job](../../jobs-designer/overview.md), to **predict** the properties (such as the band-gap) of new materials based upon statistical considerations formed from the trained model, without consequently the need for further physics-based simulations. We explain the procedure to perform such predictions [in a separate tutorial page](predict-ml-properties.md).
 
-### Score Unit
+### Model Coefficients
 
 Opening the "ml_predict" Workflow allows the user to view the "Score" [unit](../../workflows/components/units.md) under the corresponding [unit editor interface](../../workflow-designer/unit-editor.md), where the model coefficients and importance are stored, together with an indication of the model **precision** [^1].
 
