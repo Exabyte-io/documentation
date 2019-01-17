@@ -43,17 +43,17 @@ When both [unit](../../workflows/components/units.md) computations are complete 
 
 ### Silicon as Indirect Gap Semiconductor
 
-The user will notice that we identify both the direct band gap and the indirect band gap.  This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh. It can be deduced that the indirect band gap is significantly smaller than the smallest direct band gap, which is the reason why silicon is classed as an **indirect gap semiconductor**. 
+The user will notice that we identify both the direct band gap and the indirect band gap. This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh. It can be deduced that the indirect band gap is significantly smaller than the smallest direct band gap, which is the reason why silicon is classed as an **indirect gap semiconductor**. 
 
 ### Comparison with Experimental Value
 
-The calculated value of ~0.6 eV is significantly below the experimental band gap of Silicon of ~1.1 eV, however this is expected given the [model](../../models-directory/dft/overview.md) and [method](../../methods-directory/pseudopotential/overview.md) employed.
+The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however this is expected given the [model](../../models-directory/dft/overview.md) and [method](../../methods-directory/pseudopotential/overview.md) employed in the present calculation.
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a Band Gap computation on silicon using the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation.
+We demonstrate the above-mentioned steps involved in the creation and execution of a Band Gap computation workflow on silicon using the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/VxYttWYBYQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/gn4Hi_im4So" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
