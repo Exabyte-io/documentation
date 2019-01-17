@@ -1,50 +1,59 @@
-<!-- TODO by MH -->
+# Calculate Electronic Band Gap
 
-This page explains how to calculate an electronic band gap [[1](#links)] based on density functional theory. We study silicon in the standard diamond-centered cubic structure and use VASP [[2](#links)] as our simulation engine during this tutorial.
+This tutorial page explains how to calculate an [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) based on [Density Functional Theory](../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [VASP](../../software-directory/modeling/vasp/overview.md) as our main simulation engine during this tutorial.
 
-!!! Note "Accuracy of the results"
-    Please note that this calculation is performed using Density Functional Theory and generalized gradient approximation [[3](#links)] and therefore a systematic under-estimate of the band gap is to be expected. Further modifications to the input files and settings to correctly predict the band gap are possible and explained elsewhere.
+!!!warning "Accuracy of the results"
+    Please note that this calculation is performed using [Density Functional Theory](../../models-directory/dft/overview.md) together with the [Generalized Gradient Approximation](../../models-directory/dft/parameters.md#subtype), and therefore a systematic under-estimation of the band gap is to be expected. Further modifications to the input files and settings to correctly predict the band gap are possible, but lie beyond the scope of the present short introduction.
 
-# Introduction
+## Definitions
 
-The electronic band gap defines the energy difference between the highest occupied electronic state and the lowest unoccupied state. When the gap is direct, the minimum change in energy between occupied and unoccupied states occurs at the same point in reciprocal space, and vice versa. The indirect band gap can be smaller than direct. We support the extraction of both.
+### Band Gap
 
-# Create job
+The [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) defines the **energy difference** between the **highest occupied electronic state** and the **lowest unoccupied state** within the [electronic band-structure](../../properties-directory/non-scalar/bandstructure.md) of the material under investigation. 
 
-To create a new job, click on the "Create Job" link located in left-hand sidebar menu.
+### Direct vs Indirect Gaps
 
-You will be taken to the "Job wizard" page where you can create a material or choose one that you created and saved before using Materials Designer tab.
+When the gap is [direct](../../properties-directory/non-scalar/band-gaps.md#direct-and-indirect-band-gaps), the minimum change in energy between occupied and unoccupied states occurs at the same [k-point in reciprocal space](../../models/auxiliary-concepts/reciprocal-space.md), whereas for the case of [indirect band-gaps](../../properties-directory/non-scalar/band-gaps.md#direct-and-indirect-band-gaps) this change is instead located at different k-points. 
 
-<img data-gifffer="/images/tutorials/tutorials/FirstJobCreate.gif" />
+The indirect band gap can be smaller than the direct one in some cases. We support the extraction of both.
 
-# Choose band gap workflow
+## Create job
 
-Choose VASP simulation engine. You will see the Total Energy workflow as the default.  Total Energy workflow has one execution unit and provides the band gap value estimate.  Below we demonstrate how to click on the execution unit and modify the k-point density to 11 x 11 x 11 to ensure a dense enough k-mesh for a precise prediction.
+Silicon in its cubic-diamond crystal structure is the [default material](../../materials/default.md) that is shown on [new job creation](../../jobs-designer/overview.md), unless this default was [changed](../../entities-general/actions/set-default.md) by the user following [account](../../accounts/overview.md) creation. If silicon is still the default choice, it will as such be automatically loaded at the moment of the [opening](../../jobs/actions/create.md) of [Job Designer](../../jobs-designer/overview.md).
 
-<img data-gifffer="/images/tutorials/tutorials/BandGapWorkflow.gif" />
+## Choose Workflow
 
-# Compute parameters
+[Workflows](../../workflows/overview.md) for calculating the band gap through [VASP](../../software-directory/modeling/vasp/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
-Next we set up compute parameters for the number of processors and the maximum time limit (walltime). Increasing the number of processors allocated to the job may accelerate the calculation, especially if you have a larger unit cell.  For smaller cells there is likely a certain number of cores at which it becomes inefficient to add more cores to the simulation. Since Si is a small supercell there is no need to increase the number of cores or the walltime.
+## Adjust kpoints
 
-# Submit job
+It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the band gap with sufficient accuracy.
 
-Click "Submit Job" as shown below. You will be asked if you want to keep a duplicate copy of the material since it has already been saved before. Answer "No" to proceed forward.
+For the case of [VASP](../../software-directory/modeling/vasp/overview.md), the band gap workflow is composed of two [units](../../workflows/components/units.md). The first unit specifies the settings for the self-consistent calculation of the energy eigenvalues and wave functions.  The second unit calculation is a non self-consistent calculation using the wave functions and charge density of the previous calculation.
 
-<img data-gifffer="/images/tutorials/tutorials/BandGapCompute.gif" />
+We set the size of the grid of k-points to 11 x 11 x 11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band gap. 
 
-# Monitor status + results
+## Submit Job
 
-Once the job is submitted it you will be taken to the Job Status page and can monitor the progress of the self-consistent calculation.  When the calculation is completed the color of the Status tab will turn Green and the Results tab will become clickable.  You can scroll through the Results tab to see the results including the indirect band gap found for Si (~0.6 eV).
+Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md), the user should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and inspect the [compute parameters](../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
-<img data-gifffer="/images/tutorials/tutorials/BandGapResults.gif" />
+## Examine results
 
-# Summary
+When both [unit](../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the results of the simulation, including the indirect band gap found for Si (~0.6 eV).
 
-You will notice that we identify both the direct band gap and the indirect band gap.  This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh.  As you can see the indirect band gap is significantly smaller than the smallest direct band gap.  The calculated value of ~0.6 eV is significantly below the experimental band gap of Silicon of ~1.1 eV but this is expected with the model and method employed.
+### Silicon as Indirect Gap Semiconductor
 
-# Links
+The user will notice that we identify both the direct band gap and the indirect band gap.  This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh. It can be deduced that the indirect band gap is significantly smaller than the smallest direct band gap, which is the reason why silicon is classed as an **indirect gap semiconductor**. 
 
-1. [Electronic Band gap, Wikipedia](https://en.wikipedia.org/wiki/Band_gap)
-2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
-3. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
+### Comparison with Experimental Value
+
+The calculated value of ~0.6 eV is significantly below the experimental band gap of Silicon of ~1.1 eV, however this is expected given the [model](../../models-directory/dft/overview.md) and [method](../../methods-directory/pseudopotential/overview.md) employed.
+
+## Animation
+
+We demonstrate the above-mentioned steps involved in the creation and execution of a Band Gap computation on silicon using the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/VxYttWYBYQE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
