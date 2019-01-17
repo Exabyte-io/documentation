@@ -624,6 +624,12 @@ nav:
             - Overview:                              tutorials/ml/overview.md
             - Train ML Model:                        tutorials/ml/train-ml-model.md
             - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+        - Electronic Properties:
+            - Overview:                              tutorials/dft/overview.md
+            - Electronic band structure:             tutorials/dft/band-structure.md
+            - Electronic band gap:                   tutorials/dft/band-gap.md
+            - Electronic density of states:          tutorials/dft/density-of-states.md
+            - Electronic density mesh:               tutorials/dft/electronic-density-mesh.md
 
 
 # TUTORIALS AND EXAMPLES
@@ -633,12 +639,8 @@ nav:
 #        # - Semiconductors:
 #        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
 #        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
-#        - Pseudopotential DFT:
+
 #            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
-#            - Electronic band structure:                tutorials/dft/band-structure.md
-#            - Electronic band gap:                      tutorials/dft/band-gap.md
-#            - Electronic density of states:             tutorials/dft/density-of-states.md
-#            - Electronic density mesh:                  tutorials/dft/electronic-density-mesh.md
 #            - Zero point energy:                        tutorials/dft/zero-point-energy.md
 #            - Structural relaxation:                    tutorials/dft/relaxation.md
 #            - K-point convergence:                      tutorials/dft/kpt-convergence.md
