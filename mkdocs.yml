@@ -625,11 +625,11 @@ nav:
             - Train ML Model:                        tutorials/ml/train-ml-model.md
             - Predict New Properties:                tutorials/ml/predict-ml-properties.md
         - Electronic Properties:
-            - Overview:                              tutorials/dft/overview.md
-            - Electronic band structure:             tutorials/dft/band-structure.md
-            - Electronic band gap:                   tutorials/dft/band-gap.md
-            - Electronic density of states:          tutorials/dft/density-of-states.md
-            - Electronic density mesh:               tutorials/dft/electronic-density-mesh.md
+            - Overview:                              tutorials/electronic/overview.md
+            - Electronic band structure:             tutorials/electronic/band-structure.md
+            - Electronic band gap:                   tutorials/electronic/band-gap.md
+            - Electronic density of states:          tutorials/electronic/density-of-states.md
+            - Electronic density mesh:               tutorials/electronic/electronic-density-mesh.md
 
 
 # TUTORIALS AND EXAMPLES
