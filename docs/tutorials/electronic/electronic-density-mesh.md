@@ -26,15 +26,15 @@ Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md)
 
 Once the computation is complete at the end of Job execution, switching to the [Files tab](../../jobs/ui/files-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show a listing of the files and directories on the system associated with the electronic density job under consideration.
  
-These files entries can be clicked upon in order to [download](../../data-in-objectstorage/actions/download.md) them to the local disk. The file that needs to be downloaded in this case is the aforementioned "density.xsf" output file containing the results for the electronic charge density computation. 
+The file that is of interest to us in this case is the aforementioned "density.xsf" output file, containing the results for the electronic charge density computation. 
 
 ## Preparing for Visualization
 
 Following Job execution, we are now ready to visualize graphically the electron density mesh. The next step is to open a [Remote Desktop Connection](../../remote-connection/remote-desktop.md) so that graphical interface programs for [visualization](../../software-directory/overview.md#analysis-tools) purposes can be run. Instructions on how to open the [Remote Desktop Interface](../../remote-connection/remote-desktop.md) starting from our [Web Interface](../../ui/overview.md) can be found [here](../../remote-connection/actions/open-desktop.md).
 
-Next steps depend on the [analysis and visualization software](../../software-directory/overview.md#analysis-tools) preferred by the user. We provide below two examples, for the cases of [XCrysden](../../software-directory/analysis/xcrysden.md) and [VESTA](../../software-directory/analysis/vesta.md) respectively. Instructions on how to open Applications in the Remote Desktop Environment can be retrieved [in this page](../../remote-connection/actions-rd/open-app.md).
+The next steps depend on the [analysis and visualization software](../../software-directory/overview.md#analysis-tools) preferred by the user. We provide below two examples supported on our platform, for the cases of [XCrysden](../../software-directory/analysis/xcrysden.md) and [VESTA](../../software-directory/analysis/vesta.md) respectively. Instructions on how to open Applications in the Remote Desktop Environment can be retrieved [in this page](../../remote-connection/actions-rd/open-app.md).
 
-> If the [default project](../../jobs/projects.md) was used for the electron charge density calculation, then the location of the "density.xsf" output file referenced in what follows will be: `/home/<username>/data/<username>/<job name>/`. Otherwise the full path to the file is shown underneath the filename among the list of entries in the [Files tab](../../jobs/ui/files-tab.md) of [Job Viewer](../../jobs/ui/viewer.md).
+> If the [default project](../../jobs/projects.md) was used for the electron charge density calculation, then the location of the "density.xsf" output file referenced in what follows will be: `/home/<username>/data/<username>/<job name>/`. Otherwise, the full path to the file is shown underneath the filename among the list of entries in the [Files tab](../../jobs/ui/files-tab.md) of [Job Viewer](../../jobs/ui/viewer.md).
 
 ## Visualize Charge Density with XCrysden
 
@@ -48,11 +48,11 @@ At this stage, the user can adjust the value of charge density to be shown, and 
 
 The user can alternatively open the [VESTA](../../software-directory/analysis/vesta.md) analysis and visualization software package, for achieving the same objective and purpose as with [XCrysden](../../software-directory/analysis/xcrysden.md) described above.
 
-Within VESTA, first go to file->Open and then browse to the directory where the electron density file (density.xsf) is located. This file should be opened in order to visualize the electron density.
+Within VESTA, first go to file->Open and then browse to the directory where the electron density file (density.xsf) is located. This file should be opened in order to visualize the electron density of the material under investigation.
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of an electronic charge density mesh computation workflow on silicon using the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. In this particular example, we consider the usage of [VESTA](../../software-directory/analysis/vesta.md) for visualizing the contents of the output electron charge density file.
+We demonstrate the above-mentioned steps involved in the creation and execution of an electronic charge density mesh computation workflow on silicon, using the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation. In this particular example, we consider the usage of [VESTA](../../software-directory/analysis/vesta.md) for visualizing the output contents of the electron charge density file.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Zk8CcxNjQXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
