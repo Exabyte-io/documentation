@@ -7,6 +7,10 @@ The Bang Gap measures the finite energy difference between the highest occupied 
 ## Direct and Indirect Band Gaps
 
 Two types of band gap are possible: **direct** and **indirect** [^2]. The latter is always computed on our platform, and is equivalent to the former for the direct gap semiconductors.
+
+When the gap is direct, the minimum change in energy between occupied and unoccupied states occurs at the same [k-point in reciprocal space](../../models/auxiliary-concepts/reciprocal-space.md), whereas for the case of indirect band-gaps this change is instead located at different k-points. 
+
+The indirect band gap can be smaller than the direct one in some cases.
  
 ## Example
 
