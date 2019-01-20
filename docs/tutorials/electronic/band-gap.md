@@ -11,11 +11,8 @@ This tutorial page explains how to calculate an [electronic band gap](../../prop
 
 The [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) defines the **energy difference** between the **highest occupied electronic state** and the **lowest unoccupied state** within the [electronic band-structure](../../properties-directory/non-scalar/bandstructure.md) of the material under investigation. 
 
-### Direct vs Indirect Gaps
-
-When the gap is [direct](../../properties-directory/non-scalar/band-gaps.md#direct-and-indirect-band-gaps), the minimum change in energy between occupied and unoccupied states occurs at the same [k-point in reciprocal space](../../models/auxiliary-concepts/reciprocal-space.md), whereas for the case of [indirect band-gaps](../../properties-directory/non-scalar/band-gaps.md#direct-and-indirect-band-gaps) this change is instead located at different k-points. 
-
-The indirect band gap can be smaller than the direct one in some cases. We support the extraction of both.
+!!!info "Direct vs Indirect Gaps"
+    We support the extraction of both the **direct** and **indirect** band gaps. The difference between the two types is explained [in this page](../../properties-directory/non-scalar/band-gaps.md#direct-and-indirect-band-gaps).
 
 ## Create job
 
@@ -41,13 +38,12 @@ Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md)
 
 When both [unit](../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the results of the simulation, including the indirect band gap found for Si (~0.6 eV).
 
-### Silicon as Indirect Gap Semiconductor
-
-The user will notice that we identify both the direct band gap and the indirect band gap. This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh. It can be deduced that the indirect band gap is significantly smaller than the smallest direct band gap, which is the reason why silicon is classed as an **indirect gap semiconductor**. 
+!!!note "Silicon as Indirect Gap Semiconductor"
+    The user will notice that we identify both the direct band gap and the indirect band gap. This calculation is done during the first, self-consistent step of the calculation on the dense k-point mesh. It can be deduced that the indirect band gap is significantly smaller than the smallest direct band gap, which is the reason why silicon is classed as an **indirect gap semiconductor**. 
 
 ### Comparison with Experimental Value
 
-The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however this is expected given the [model](../../models-directory/dft/overview.md) and [method](../../methods-directory/pseudopotential/overview.md) employed in the present calculation.
+The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however as mentioned earlier in the introduction this underestimation is expected.
 
 ## Animation
 
