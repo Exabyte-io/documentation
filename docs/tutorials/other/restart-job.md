@@ -1,6 +1,6 @@
 <!-- by MH -->
 
-This page explains how to restart a calculation from the results of a previous calculation.  We will use the "Recalculate Bands" workflow as an example to restart from a previous "Electronic Density Mesh" simulation. The tutorial for "Electronic Density Mesh" is [here](../electronic/electronic-density-mesh.md)
+This page explains how to restart a calculation from the results of a previous calculation.  We will use the "Recalculate Bands" workflow as an example to restart from a previous "Electronic Density Mesh" simulation. The tutorial for "Electronic Density Mesh" is [here](../dft/electronic/electronic-density-mesh.md)
 
 # Choose restart
 
