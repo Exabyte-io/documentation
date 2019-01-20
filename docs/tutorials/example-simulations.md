@@ -6,7 +6,7 @@ This page contains explanation about the characteristic properties of materials 
 
 ## Electronic energies and wave functions
 
-Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](electronic/band-structure.md) to learn more. Example input files are given below:
+Both electronic energies and wave functions are calculated concurrently. One can consult [getting started](dft/electronic/band-structure.md) to learn more. Example input files are given below:
 
 #### VASP
 
@@ -205,7 +205,7 @@ K_POINTS automatic
 ## Electronic Properties
 
 ### [Band Structure](../materials/characteristic-properties#band-structure)
-Please see the [band structure tutorial](electronic/band-structure.md) for more details.
+Please see the [band structure tutorial](dft/electronic/band-structure.md) for more details.
 
 #### VASP
 
@@ -396,10 +396,10 @@ K_POINTS crystal_b
 </details>
 
 ### [Band Gap](../materials/characteristic-properties#band-gap)
-Please see the [band gap tutorial](electronic/band-gap.md) for more details and the input files for Band Structure above.
+Please see the [band gap tutorial](dft/electronic/band-gap.md) for more details and the input files for Band Structure above.
 
 ### [Density of States and Partial DOS](../materials/characteristic-properties#sensity-of-states-and-partial-dos)
-Please see the [density of states tutorial](electronic/density-of-states.md) for more details.
+Please see the [density of states tutorial](dft/electronic/density-of-states.md) for more details.
 
 #### VASP
 
