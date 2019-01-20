@@ -15,13 +15,13 @@ The Density of States in typically calculated in conjunction with the [electroni
 
 [Workflows](../../workflows/overview.md) for calculating the band structure together with the Density of States through [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
-## Adjust kpoints
+## Set Sampling in Reciprocal Space
 
-It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy.
+It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy. The method for treating [partial electronic occupancies](../../methods-directory/pseudopotential/precision.md#electronic-occupations-and-smearing) is also important in establishing the quality of the computation: the **tetrahedron method**, for example, is more precise for Density of States calculations.
 
 In [Quantum Espresso](../../software-directory/modeling/quantum-espresso/overview.md), the band structure + Density of States [workflow](../../workflows/overview.md) has five [units](../../workflows/components/units.md) in total.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation. Subsequent units calculate the density of states, and also the projection of those states for partial density of states analysis.
 
-We set the size of the grid of k-points to 11 x 11 x 11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure. 
+We set the size of the grid of k-points to 18 x 18 x 18 in the first workflow unit. This provides a dense enough k-point sampling in order to resolve the fine features present within the output of the Density of States computation. The validity of this choice of k-grid size for yielding accurate results of order meV in the final energy can be verified by performing the relevant [convergence study](../../models/auxiliary-concepts/reciprocal-space/convergence.md).
 
 ## Submit job
 
