@@ -13,13 +13,15 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../m
 
 [Workflows](../../workflows/overview.md) for calculating the [band structure](../../properties-directory/non-scalar/bandstructure.md) of [materials](../../materials/overview.md) with [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
-## Adjust kpoints
+## Set Sampling in Reciprocal Space
 
 It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to resolve enough details for the band structure plot.
 
 The band structure workflow is composed of two [units](../../workflows/components/units.md). The first unit specifies the settings for the self-consistent calculation of the energy eigenvalues and wave functions.  The second unit calculation is a non self-consistent calculation using the wave functions and charge density of the previous calculation.
 
-We set the size of the grid of k-points to 11 x 11 x 11 in the first workflow unit to provide sufficient density for the second non-consistent calculation step of the band structure.  In addition, we also apply the recommended [k-point path](../../models/auxiliary-concepts/reciprocal-space/paths.md) to effectively sample the electronic states throughout the Brillouin Zone of the crystal, based on the crystal symmetry.
+We set the size of the grid of k-points to 18 x 18 x 18 in the first workflow unit. This provides a dense enough k-point sampling in order to resolve the fine features present within the output of the band structure computation. The validity of this choice of k-grid size for yielding accurate results of order meV in the final energy can be verified by performing the relevant [convergence study](../../models/auxiliary-concepts/reciprocal-space/convergence.md).
+
+In addition, we also apply the recommended [k-point path](../../models/auxiliary-concepts/reciprocal-space/paths.md) to effectively sample the electronic states throughout the Brillouin Zone of the crystal, based on the crystal symmetry.
 
 ## Submit Job
 
