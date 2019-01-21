@@ -1,9 +1,6 @@
-# Electronic Band Gap Calculation
+# Calculate Electronic Band Gap
 
 This tutorial page explains how to calculate an [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [VASP](../../../software-directory/modeling/vasp/overview.md) as our main simulation engine during this tutorial.
-
-!!!warning "Accuracy of the results"
-    Please note that this calculation is performed using [Density Functional Theory](../../../models-directory/dft/overview.md) together with the [Generalized Gradient Approximation](../../../models-directory/dft/parameters.md#subtype), and therefore a systematic under-estimation of the band gap is to be expected. Further modifications to the input files and settings to correctly predict the band gap are possible, but lie beyond the scope of the present short introduction.
 
 ## Definitions
 
@@ -32,7 +29,7 @@ We set the size of the grid of k-points to 18 x 18 x 18 in the first workflow un
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so 4 CPUs and 1 minute of calculation runtime should be sufficient.
+Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
 ## Examine results
 
@@ -43,7 +40,7 @@ When both [unit](../../../workflows/components/units.md) computations are comple
 
 ### Comparison with Experimental Value
 
-The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however as mentioned earlier in the introduction this underestimation is expected.
+The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however as discussed [elsewhere](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) this underestimation is expected given our adoption of the [Generalized Gradient Approximation](../../../models-directory/dft/parameters.md#subtype).
 
 ## Animation
 
