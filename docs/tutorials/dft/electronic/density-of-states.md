@@ -1,4 +1,4 @@
-# Electronic Density of States Calculation
+# Calculate Electronic Density of States
 
 This tutorial page explains how to calculate the [electronic density of states](../../../properties-directory/non-scalar/electronic-dos.md) using [Density Functional Theory](../../../models-directory/dft/overview.md). We study crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during the present tutorial.
 
@@ -17,7 +17,7 @@ The Density of States in typically calculated in conjunction with the [electroni
 
 ## Set Sampling in Reciprocal Space
 
-It is critical to have a high [k-point density](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy. The method for treating [partial electronic occupancies](../../../methods-directory/pseudopotential/precision.md#electronic-occupations-and-smearing) is also important in establishing the quality of the computation: the **tetrahedron method**, for example, is more precise for Density of States calculations.
+It is critical to have a high [k-point density](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy. The method for treating [partial electronic occupancies](../../../models/auxiliary-concepts/reciprocal-space/electronic-occupations.md) is also important in establishing the quality of the computation: the **tetrahedron method**, for example, is more precise for Density of States calculations.
 
 In [Quantum Espresso](../../../software-directory/modeling/quantum-espresso/overview.md), the band structure + Density of States [workflow](../../../workflows/overview.md) has five [units](../../../workflows/components/units.md) in total.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation. Subsequent units calculate the density of states, and also the projection of those states for partial density of states analysis.
 
@@ -25,7 +25,7 @@ We set the size of the grid of k-points to 18 x 18 x 18 in the first workflow un
 
 ## Submit job
 
-Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and examine the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so 4 CPUs and 1 minute of calculation runtime should be sufficient.
+Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and examine the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
 ## Examine results
 
