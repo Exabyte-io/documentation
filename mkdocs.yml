@@ -174,10 +174,11 @@ nav:
         - Data:                                         models/data.md
         - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
-            - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
-            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
-            - Reciprocal space > convergence:           models/auxiliary-concepts/reciprocal-space/convergence.md
+            - Reciprocal space:                          models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:               models/auxiliary-concepts/reciprocal-space/sampling.md
+            - Reciprocal space > paths:                  models/auxiliary-concepts/reciprocal-space/paths.md
+            - Reciprocal space > convergence:            models/auxiliary-concepts/reciprocal-space/convergence.md
+            - Reciprocal space > electronic occupations: models/auxiliary-concepts/reciprocal-space/electronic-occupations.md
 
     - Models Directory:
         - Overview:                                     models-directory/overview.md
