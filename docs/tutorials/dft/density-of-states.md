@@ -17,7 +17,7 @@ The Density of States in typically calculated in conjunction with the [electroni
 
 ## Set Sampling in Reciprocal Space
 
-It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy. The method for treating [partial electronic occupancies](../../methods-directory/pseudopotential/precision.md#electronic-occupations-and-smearing) is also important in establishing the quality of the computation: the **tetrahedron method**, for example, is more precise for Density of States calculations.
+It is critical to have a high [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md) in order to calculate the density of states with sufficient accuracy. The method for treating [partial electronic occupancies](../../models/auxiliary-concepts/reciprocal-space/electronic-occupations.md) is also important in establishing the quality of the computation: the **tetrahedron method**, for example, is more precise for Density of States calculations.
 
 In [Quantum Espresso](../../software-directory/modeling/quantum-espresso/overview.md), the band structure + Density of States [workflow](../../workflows/overview.md) has five [units](../../workflows/components/units.md) in total.  The first unit specifies the settings for the self-consistent calculation of the eigenvalues and wave functions.  The second unit calculation is a non self-consitent calculation using the wave functions and charge density of the previous calculation. Subsequent units calculate the density of states, and also the projection of those states for partial density of states analysis.
 
