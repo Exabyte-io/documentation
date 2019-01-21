@@ -187,6 +187,7 @@ nav:
             - Data:                                     models-directory/dft/data.md
             - Parameters:                               models-directory/dft/parameters.md
             - Accuracy:                                 models-directory/dft/accuracy.md
+            - Special Notes:                            models-directory/dft/notes.md
             - References:                               models-directory/dft/references.md
         - Machine Learning:
             - Overview:                                 models-directory/machine-learning/overview.md

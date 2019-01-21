@@ -17,3 +17,7 @@ A comprehensive list of references reviewing the theoretical background underlyi
 ## [Structured Representation](data.md)
 
 [This page](data.md) contains an example [structured representation](../../data-structured/overview.md) for the DFT model.
+
+## [Special Notes](notes.md)
+
+We have collected [in this page](notes.md) some special notes on special precautions that need to be taken when considering the different [parameters](parameters.md) of DFT.
