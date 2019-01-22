@@ -626,12 +626,15 @@ nav:
             - Overview:                              tutorials/ml/overview.md
             - Train ML Model:                        tutorials/ml/train-ml-model.md
             - Predict New Properties:                tutorials/ml/predict-ml-properties.md
-        - Electronic Properties:
-            - Overview:                              tutorials/dft/electronic/overview.md
-            - Electronic band structure:             tutorials/dft/electronic/band-structure.md
-            - Electronic band gap:                   tutorials/dft/electronic/band-gap.md
-            - Electronic density of states:          tutorials/dft/electronic/density-of-states.md
-            - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
+        - Density Functional Theory:
+            - Electronic Properties:
+                - Overview:                              tutorials/dft/electronic/overview.md
+                - Electronic band structure:             tutorials/dft/electronic/band-structure.md
+                - Electronic band gap:                   tutorials/dft/electronic/band-gap.md
+                - Electronic density of states:          tutorials/dft/electronic/density-of-states.md
+                - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
+                - HSE Calculations:                      tutorials/dft/electronic/hse.md
+
 
 
 # TUTORIALS AND EXAMPLES

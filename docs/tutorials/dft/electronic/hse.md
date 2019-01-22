@@ -1,0 +1,57 @@
+# HSE Calculations
+
+We discuss in the present tutorial those aspects of [electronic structure property calculations](overview.md) which are specific to the implementation of the **HSE (Heyd-Scuseria-Ernzerhof)** [exchange-correlation functional](../../../models-directory/dft/parameters.md#functional), a special class of **Hybrid Functionals**.
+
+Hybrid functionals [^1] are a class of approximations to the exchange–correlation energy functional in [density functional theory](../../../models-directory/dft/overview.md) (DFT) that incorporate a portion of exact exchange energy from Hartree–Fock theory [^2], with the rest of the exchange-correlation energy from other sources (ab-initio or empirical). This approach typically results in improved [precision](../../../methods/precision.md) in the estimation of the values of numerous [material properties](../../../properties/overview.md), such as the examples discussed in Ref. [^3]. 
+
+Here, we will demonstrate how to compute the [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) of crystalline silicon using the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine. The instructions presented herein complement the general discussion introduced in a [separate tutorial](band-gap.md). The reader is referred to this latter page for an outline of the general procedure for band-gap computations using DFT, whereas only HSE-specific aspects will be reviewed in the remainder of the present page.
+
+## Workflow for HSE Calculation with VASP
+
+Advanced instructions on how to perform an HSE band structure calculation using [VASP](../../../software-directory/modeling/vasp/overview.md) can be retrieved under Refs. [^4],[^5],[^6]. 
+
+For the sake of this brief introduction, it suffices to know that a VASP [Workflow](../../../workflows/overview.md) to compute the band-gap of semiconducting materials using HSE is composed of the following [subworkflow](../../../workflows/components/subworkflows.md) steps.
+
+1. Standard self-consistent field (scf) calculation of the energy eigenvalues and wave functions, which includes the HSE [Refiner](../../../models-directory/dft/parameters.md#refiners) as set under the [Subworkflow Editor Interface](../../../workflow-designer/subworkflow-editor/overview-tab.md#refiners).
+
+2. Self-consistent Hartree-Fock/HSE calculation, again with the HSE [Refiner](../../../models-directory/dft/parameters.md#refiners) activated.
+
+3. Extraction of the [k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) in the Symmetry-irreducible wedge of the Brillouin Zone (IBZ) in [reciprocal space](../../../models/auxiliary-concepts/reciprocal-space.md).
+
+4. The final HSE Band Structure computation, using the wave functions and charge density calculated in the previous steps.
+
+## Choose HSE Workflow for Band Gap Calculation
+
+[Workflows](../../../workflows/overview.md) for calculating the [band gap](../../../properties-directory/non-scalar/band-gaps.md) through HSE, as implemented under [VASP](../../../software-directory/modeling/vasp/overview.md), can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). 
+
+This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/overview.md). The same procedure as in the [general band-gap computation tutorial](band-gap.md) can otherwise be followed.
+
+## Examine results
+
+When the computation is complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the simulation, including the indirect band gap found for silicon of around 1.17 eV.
+
+### Comparison with Experimental Value
+
+The calculated value of 1.17 eV for the indirect band gap of silicon is in much better agreement with the experimental value for this material than the alternative case of the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings in estimating band gaps are discussed in the [other tutorial page](band-gap.md). This provides an example of how HSE can result in improved precision in the estimation of important material properties than the more traditional approaches in [DFT](../../../models-directory/dft/overview.md).
+
+## Animation
+
+We demonstrate the steps involved in the creation and execution of a HSE Band Gap computation workflow on silicon, using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine, in the following animation.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/gn4Hi_im4So" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+## Links
+
+[^1]: [Wikipedia Hybrid functional, Website](https://en.wikipedia.org/wiki/Hybrid_functional)
+
+[^2]: [The Hartree-Fock method, Document](https://web.stanford.edu/~kimth/www-mit/thk_hartreefock.pdf)
+
+[^3]: [DFT Simulation Datasheet for Quantum Espresso, Document](https://drive.google.com/file/d/185fPU--Zggp7yLt8lIMjzOaSKb4rH7a4/view?usp=sharing)
+
+[^4]: [HSE Functional for Band Structures in VASP, External Tutorial](https://chempeng.github.io/2017/06/24/HSE-Functional-for-Band-Structures-in-VASP/)
+
+[^5]: [Hartree-Fock (HF) type and hybrid functional calculations, Official VASP Manual](https://cms.mpi.univie.ac.at/vasp/vasp/Hartree_Fock_HF_type_hybrid_functional_calculations.html)
+
+[^6]: [Si HSE bandstructure, VASP Wiki Tutorial](https://cms.mpi.univie.ac.at/wiki/index.php/Si_HSE_bandstructure)
