@@ -33,11 +33,11 @@ This workflow can later be [selected](../../../jobs-designer/actions-header-menu
 
 ## Examine results
 
-When the computation is complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the simulation, including the indirect band gap found for silicon of around 1.17 eV.
+When the computation is complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the simulation, including the indirect band gap found for silicon of around 1.14 eV.
 
 ### Comparison with Experimental Value
 
-The calculated value of 1.17 eV for the indirect band gap of silicon is in much better agreement with the experimental value for this material than the alternative case of the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in the [other tutorial page](band-gap.md). 
+The calculated value of 1.14 eV for the indirect band gap of silicon is in much better agreement with the experimental value for this material than the alternative case of the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in the [other tutorial page](band-gap.md). 
 
 This provides an example of how HSE can result in improved precision in the estimation of important material properties than more traditional approaches within [DFT](../../../models-directory/dft/overview.md).
 
