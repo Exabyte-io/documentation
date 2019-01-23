@@ -40,7 +40,7 @@ When both [unit](../../../workflows/components/units.md) computations are comple
 
 ### Comparison with Experimental Value
 
-The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however as discussed [elsewhere](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) this underestimation is expected given our adoption of the [Generalized Gradient Approximation](../../../models-directory/dft/parameters.md#subtype). The use of more accurate techniques, such as Hybrid Screened Exchange (HSE), for example, allows to significantly improve the comparison. See the corresponding tutorial for more details.
+The calculated value of ~0.6 eV for the indirect band gap is significantly below the tabulated experimental value for the band gap of Silicon of ~1.1 eV, however as discussed [elsewhere](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) this underestimation is expected given our adoption of the [Generalized Gradient Approximation](../../../models-directory/dft/parameters.md#subtype). The use of more accurate techniques, such as Hybrid Screened Exchange (HSE), for example, allows to significantly improve the comparison. See the [corresponding tutorial](hse.md) for more details.
 
 ## Animation
 
