@@ -30,32 +30,39 @@ The user can also browse the actual input and output files that are part of the 
 
 ## Generate File with Fermi Surface Information
 
-Once the simulation is complete, the user should [open](../../../remote-connection/actions/open-terminal.md) a [Web Terminal session](../../../remote-connection/web-terminal.md) in order to create a file that is essential for visualizing the Fermi surface. The calculation of Fermi surface can in general be performed using the `fs.x` code, part of the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) distribution. The resulting file in `.bxsf` format can be read and plotted using the [XCrySDen](../../../software-directory/analysis/xcrysden.md) analysis and visualization software.  
+Once the simulation is complete, the user should [open](../../../remote-connection/actions/open-terminal.md) a [Web Terminal session](../../../remote-connection/web-terminal.md) in order to create a file that is essential for visualizing the Fermi surface. The calculation of Fermi surface can in general be performed using the `fs.x` code, part of the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) distribution. The resulting file in `.bxsf` format can then be read and plotted using the [XCrySDen](../../../software-directory/analysis/xcrysden.md) analysis and visualization software.  
 
-As below, navigate into the directory containing all your simulation results.  Once in the correct simulation directory run the commands in the window below to generate the post-processing bxsf file:
+In order to generate the post-processing bxsf file, the user should first navigate from within the [Command Line Interface](../../../cli/overview.md) into the [working directory](../../../jobs-cli/batch-scripts/directories.md) containing the simulation input and output files. Once in this directory, a new input file with the following contents should be written using any [command-line text editor](../../../software-directory/development/text-editors.md) (for example `nano`). This new file should be given the name `fs.in` at the moment of saving:
 
-![Generate BXSF File](../../../images/tutorials/GenerateBXSFFile.png "Generate BXSF File")
+```bash
+&fermi
+  outdir='./outdir'
+  prefix='__prefix__'
+/
+```
 
-Finally the user should close the Web Terminal session to return to the original [Web Interface](../../../ui/overview.md) of our platform.
+Afterwards, the following command should be entered, linking to the absolute path of the `fs.x` executable:
 
-# Start remote desktop
+```bash
+/export/compute/software/applications/espresso/63-i-174-impi-044/bin/fs.x < fs.in
+```   
 
-The next step is to open a Remote Desktop Connection to the terminal so that you can run graphical interface programs for visualization.  Underneath the "Terminal" option in the right sidebar you used earlier in the tutorial is a "Remote Desktop" option.
+After the end of the execution of the above command, the user will notice a new file that has been created in the current working directory called `fs.bxsf`. We shall use this file for the ensuing visualization of the Fermi surface with XCrySDen.
 
-![Remote Desktop](../../../images/tutorials/ChooseRemoteDesktop.png "Remote Desktop")
+Finally, the user should close the Web Terminal session to return to the original [Web Interface](../../../ui/overview.md) of our platform.
 
-Select this and a different overlay will appear in your web browser of a graphical user session.
+## Visualize Fermi Surface
 
-![Start Remote Desktop](../../../images/tutorials/StartRemoteDesktop.png "Start Remote Desktop")
+The next step is to [open](../../../remote-connection/actions/open-desktop.md) a [Remote Desktop Connection](../../../remote-connection/remote-desktop.md), so that graphical interface programs for [visualization purposes](../../../software-directory/overview.md#analysis-tools) can be run.  
 
-# Open XCrysden
+The user should now find and [open](../../../remote-connection/actions-rd/open-app.md) the [XCrySDen](../../../software-directory/analysis/xcrysden.md) application.
 
-Find and open XCrysden under the "Other" dropdown menu item.
+Within XCrysden, the user should go to file->Open and navigate to the directory where the aforementioned `fs.bxsf` file was created. This opens a graphical visualization of the Fermi surface, as portrayed in the example screenshot below.
 
-![Other->XCrysden](../../../images/tutorials/RemoteDesktopApps.png "Other->XCrysden")
+## Animation
 
-Within XCrysden, go to file->Open and navigate to the directory where you created the *.bxsf file to open a visualization of the Fermi Surface.
+We demonstrate the above-mentioned steps involved in the creation, execution and visualization of a Fermi Surface calculation on crystalline copper, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation.
 
-![Visualize Fermi Surface 1](../../../images/tutorials/FermiSurface1.png "Visualize Fermi Surface 1")
-![Visualize Fermi Surface 2](../../../images/tutorials/FermiSurface2.png "Visualize Fermi Surface 2")
-![Visualize Fermi Surface 3](../../../images/tutorials/FermiSurface3.png "Visualize Fermi Surface 3")
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3ekwtYJyj4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

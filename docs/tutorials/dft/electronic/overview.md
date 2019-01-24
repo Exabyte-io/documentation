@@ -21,3 +21,7 @@ Finally, we conclude our review of the electronic properties of materials by cov
 ## [HSE Calculations](hse.md)
 
 [In this other tutorial](hse.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation.
+
+## [Fermi Surface](fermi-surface.md)
+
+We review the steps involved in the calculation and visualization of the [Fermi Surface](../../../properties-directory/scalar/fermi-energy.md) of metallic crystalline samples such as copper [under this page](fermi-surface.md).
