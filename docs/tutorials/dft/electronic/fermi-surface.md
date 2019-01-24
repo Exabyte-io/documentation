@@ -57,12 +57,14 @@ The next step is to [open](../../../remote-connection/actions/open-desktop.md) a
 
 The user should now find and [open](../../../remote-connection/actions-rd/open-app.md) the [XCrySDen](../../../software-directory/analysis/xcrysden.md) application.
 
-Within XCrysden, the user should go to file->Open and navigate to the directory where the aforementioned `fs.bxsf` file was created. This opens a graphical visualization of the Fermi surface, as portrayed in the example screenshot below.
+Within XCrysden, the user should go to `File` -> `Open Structure` -> `Open BXSF`, and then navigate to the directory where the aforementioned `fs.bxsf` file was created. This opens a graphical visualization of the Fermi surface, as portrayed in the example screenshot below.
+
+![Fermi Surface Copper](../../../images/tutorials/fermi-surface-copper.png "Fermi Surface Copper")
 
 ## Animation
 
 We demonstrate the above-mentioned steps involved in the creation, execution and visualization of a Fermi Surface calculation on crystalline copper, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3ekwtYJyj4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/sPj88MU91ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
