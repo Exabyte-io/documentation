@@ -634,6 +634,7 @@ nav:
                 - Electronic density of states:          tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
                 - HSE Calculations:                      tutorials/dft/electronic/hse.md
+                - Fermi Surface:                         tutorials/dft/electronic/fermi-surface.md
 
 
 
