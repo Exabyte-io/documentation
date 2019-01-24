@@ -607,7 +607,7 @@ K_POINTS automatic
 </details>
 
 ### [Fermi surface](../materials/characteristic-properties#fermi-surface)
-Please see the [Fermi surface tutorial](dft/fermi-surface.md) for more details.
+Please see the [Fermi surface tutorial](dft/electronic/fermi-surface.md) for more details.
 
 <hr>
 
