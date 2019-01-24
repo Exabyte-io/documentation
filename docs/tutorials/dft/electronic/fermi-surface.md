@@ -44,7 +44,7 @@ In order to generate the post-processing bxsf file, the user should first naviga
 Afterwards, the following command should be entered, linking to the absolute path of the `fs.x` executable:
 
 ```bash
-/export/compute/software/applications/espresso/63-i-174-impi-044/bin/fs.x < fs.in
+/export/compute/software/applications/espresso/540-i-174-impi-044/bin/fs.x < fs.in
 ```   
 
 After the end of the execution of the above command, the user will notice a new file that has been created in the current working directory called `fs.bxsf`. We shall use this file for the ensuing visualization of the Fermi surface with XCrySDen.
