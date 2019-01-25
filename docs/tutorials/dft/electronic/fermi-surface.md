@@ -41,13 +41,14 @@ In order to generate the post-processing bxsf file, the user should first naviga
 /
 ```
 
-Afterwards, the following command should be entered, linking to the absolute path of the `fs.x` executable:
+Afterwards, the following commands should be entered, first for [loading](../../../cli/actions/modules-actions.md#load-desired-module) the appropriate Quantum ESPRESSO [module](../../../cli/modules.md) under the Command Line Interface [environment](../../../cli/environment.md), and then for running the `fs.x` executable on the previously-created `fs.in` file:
 
 ```bash
-/export/compute/software/applications/espresso/540-i-174-impi-044/bin/fs.x < fs.in
+module load espresso/540-i-174-impi-044
+fs.x < fs.in
 ```   
 
-After the end of the execution of the above command, the user will notice a new file that has been created in the current working directory called `fs.bxsf`. We shall use this file for the ensuing visualization of the Fermi surface with XCrySDen.
+After the end of the execution of the above commands, the user will notice a new file that has been created in the current working directory called `__prefix__fs.bxsf`. We shall use this file for the ensuing visualization of the Fermi surface with XCrySDen.
 
 Finally, the user should close the Web Terminal session to return to the original [Web Interface](../../../ui/overview.md) of our platform.
 
@@ -57,7 +58,7 @@ The next step is to [open](../../../remote-connection/actions/open-desktop.md) a
 
 The user should now find and [open](../../../remote-connection/actions-rd/open-app.md) the [XCrySDen](../../../software-directory/analysis/xcrysden.md) application.
 
-Within XCrysden, the user should go to `File` -> `Open Structure` -> `Open BXSF`, and then navigate to the directory where the aforementioned `fs.bxsf` file was created. This opens a graphical visualization of the Fermi surface, as portrayed in the example screenshot below.
+Within XCrysden, the user should go to `File` -> `Open Structure` -> `Open BXSF`, and then navigate to the directory where the aforementioned `__prefix__fs.bxsf` file was created. This opens a graphical visualization of the Fermi surface, as portrayed in the example screenshot below.
 
 ![Fermi Surface Copper](../../../images/tutorials/fermi-surface-copper.png "Fermi Surface Copper")
 
@@ -66,5 +67,5 @@ Within XCrysden, the user should go to `File` -> `Open Structure` -> `Open BXSF`
 We demonstrate the above-mentioned steps involved in the creation, execution and visualization of a Fermi Surface calculation on crystalline copper, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/sPj88MU91ps" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/YIRFg6cuLyg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
