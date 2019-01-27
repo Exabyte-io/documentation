@@ -635,6 +635,9 @@ nav:
                 - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
                 - HSE Calculations:                      tutorials/dft/electronic/hse.md
                 - Fermi Surface:                         tutorials/dft/electronic/fermi-surface.md
+            - Vibrational Properties:
+                - Overview:                              tutorials/dft/vibrational/overview.md
+                - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
 
 
 
