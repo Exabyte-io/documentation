@@ -33,8 +33,8 @@ The following can be used as example refiners for the DFT model.
 
 DFT calculations might of might not treat the spin-orbit coupling interaction or magnetic interactions, which are both considered modifiers:
 
-- Spin-Orbit Coupling (soc), a relativistic quantum physical interaction of a particle's spin with its motion inside a potential [^8]. 
-- Magnetism (magn), resulting from the spontaneous polarization (parallel lining up) of the spins of conduction electrons in ferromagnetic metals, such as iron, nickel and cobalt, giving rise to a magnetic moment in these materials even in the absence of an externally applied magnetic field [^9].
+- Spin-Orbit Coupling (soc), a relativistic quantum physical interaction of a particle's spin with its motion inside a potential [^6]. 
+- Magnetism (magn), resulting from the spontaneous polarization (parallel lining up) of the spins of conduction electrons in ferromagnetic metals, such as iron, nickel and cobalt, giving rise to a magnetic moment in these materials even in the absence of an externally applied magnetic field [^7].
 
 ## Links
 
@@ -45,7 +45,5 @@ Additional resourceful general references on DFT and associated concepts, beyond
 [^3]: [J.P. Perdew and A. Zunger: "Self-interaction correction to density-functional approximations for many-electron systems"; Phys. Rev. B 23, 5048 (1981)](https://journals.aps.org/prb/pdf/10.1103/PhysRevB.23.5048)
 [^4]: [Wikipedia Hybrid Screened Exchange, Website](https://en.wikipedia.org/wiki/Hybrid_functional#HSE)
 [^5]: [Wikipedia GW Approximation, Website](https://en.wikipedia.org/wiki/GW_approximation)
-[^6]: [Wikipedia Hybrid functional, Website](https://en.wikipedia.org/wiki/Hybrid_functional)
-[^7]: [The Hartree-Fock method, Document](https://web.stanford.edu/~kimth/www-mit/thk_hartreefock.pdf)
-[^8]: [Wikipedia Spin–orbit interaction, Website](https://en.wikipedia.org/wiki/Spin%E2%80%93orbit_interaction)
-[^9]: [Wikipedia Ferromagnetism, Website](https://en.wikipedia.org/wiki/Ferromagnetism)
+[^6]: [Wikipedia Spin–orbit interaction, Website](https://en.wikipedia.org/wiki/Spin%E2%80%93orbit_interaction)
+[^7]: [Wikipedia Ferromagnetism, Website](https://en.wikipedia.org/wiki/Ferromagnetism)

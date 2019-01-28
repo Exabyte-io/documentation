@@ -12,7 +12,7 @@ Further modifications to the input files and settings to correctly predict the b
 
 ## Hybrid Functionals
 
-Hybrid functionals [^6] are a class of approximations to the exchange–correlation energy functional in DFT that incorporate a portion of exact exchange energy from Hartree–Fock theory [^7], with the rest of the exchange-correlation energy from other sources (ab-initio or empirical). 
+Hybrid functionals [^1] are a class of approximations to the exchange–correlation energy functional in DFT that incorporate a portion of exact exchange energy from Hartree–Fock theory [^2], with the rest of the exchange-correlation energy from other sources (ab-initio or empirical). 
 
 This approach typically results in improved [precision](../../methods/precision.md) in the estimation of the values of numerous [material properties](../../properties/overview.md).
 
@@ -20,3 +20,8 @@ A demonstration of the effectiveness of the HSE Hybrid Functional in predicting 
 
 <!-- TODO: add corresponding theoretical background information about the GW method as well in respective task
 -->
+
+## Links
+
+[^1]: [Wikipedia Hybrid functional, Website](https://en.wikipedia.org/wiki/Hybrid_functional)
+[^2]: [The Hartree-Fock method, Document](https://web.stanford.edu/~kimth/www-mit/thk_hartreefock.pdf)
