@@ -26,19 +26,19 @@ The user should be able to notice some differences in the formatting of the KPOI
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [Job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
+Before [submitting](../../jobs/actions/run.md) the [Job](../../jobs/overview.md), the user should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and inspect the [compute parameters](../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
 ## Examine Results
 
-Once the Job execution is finished, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the calculation, including the final computed value of the total energy as well as additional information about each execution unit.
+Once the Job execution is finished, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the results of the calculation, including the final computed value of the total energy as well as additional information about each execution unit.
 
 ## Converged k-point Density
 
-Finally, the user can also browse the actual output and input files that are part of the calculation at the bottom of the [Results tab](../../../jobs/ui/results-tab.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
+Finally, the user can also browse the actual output and input files that are part of the calculation at the bottom of the [Results tab](../../jobs/ui/results-tab.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study on a silicon-based [Total Energy](../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine.
+We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study on a silicon-based [Total Energy](../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/VIY1mq1clLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
