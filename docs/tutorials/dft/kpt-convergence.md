@@ -1,61 +1,45 @@
-<!-- by MH -->
+# Study Convergence of k-grid Size
 
-This page explains how to run a k-point convergence study using plane-wave pseudopotential density functional theory [[1](#links)]. K-point convergence can be run either as a stand-alone workflow or prepended to characteristic property calculation.
+The present tutorial page explains how to run a [convergence study](../../models/auxiliary-concepts/reciprocal-space/convergence.md) of the size of the [grid of k-points](../../models/auxiliary-concepts/reciprocal-space/sampling.md), necessary for sampling the symmetry-irreducible wedge of the Brillouin Zone of the crystal structure under investigation, using [density functional theory](../../models-directory/dft/overview.md). 
 
-# Background
+K-point convergence can be run either as a stand-alone [workflow](../../workflows/overview.md), or prepended as an [Add-on](../../workflows/addons/overview.md) to another [property calculation](../../properties/overview.md).
 
-The motivation behind using k-point convergence is explained in detail [here](../../models/convergence-algorithms). This page focuses on practical usage of k-point convergence.
+For the sake of the present tutorial, we will study the issue of k-point convergence for the case of crystalline silicon under its equilibrium cubic-diamond crystal structure, by making use of [VASP](../../software-directory/modeling/vasp/overview.md) as the main simulation engine. We will investigate k-point convergence in the context of a [Total Energy](../../properties-directory/scalar/total-energy.md) calculation.
 
-# Create job
+## Create Job
 
-We will use k-point convergence for a Total Energy calculation in this tutorial. To create a new job, click "Create Job" located in the sidebar/menu on the left. Use the default FCC Si structure. The exact list of materials in your personal database will differ, so you may need to search for the Si structure and select it as shown below:
+Silicon in its cubic-diamond crystal structure is the [default material](../../materials/default.md) that is shown on [new job creation](../../jobs-designer/overview.md), unless this default was [changed](../../entities-general/actions/set-default.md) by the user following [account](../../accounts/overview.md) creation. If silicon is still the default choice, it will as such be automatically loaded at the moment of the [opening](../../jobs/actions/create.md) of [Job Designer](../../jobs-designer/overview.md).
 
-<img data-gifffer="/images/tutorials/tutorials/ConvergeStep1.gif" />
+## Choose workflow
 
-# Choose workflow
+[Workflows](../../workflows/overview.md) for calculating the Total Energy through [VASP](../../software-directory/modeling/vasp/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
-Next, click on the "Workflow" tab choose VASP as the simulation engine and select "Total Energy" workflow.
+Thereafter, in order to add k-point convergence as an [Add-on](../../workflows/addons/overview.md) to the total energy calculation workflow, the user should [click the appropriate button](../../workflow-designer/subworkflow-editor/actions-menu.md#insert-add-ons) within the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) of [Workflow Designer](../../workflow-designer/overview.md). The corresponding "Convergence" option should thus be chosen. The parameters contained in the resulting "Convergence" dialog should be set according to the instructions outlined [in this page](../../models/auxiliary-concepts/reciprocal-space/convergence.md).
 
-Then, to add k-point convergence as a pre-processor to total energy calculation, expand the <i class="zmdi zmdi-plus zmdi-hc-border"></i> "Advanced Options" section to show trigger buttons for Relaxation and k-point convergence.  Click on the k-point convergence.
+At the end of the insertion of the k-point convergence Add-on to the Total Energy Workflow, the user can scroll down to view the extra [units](../../workflows/components/units.md) which have been added for convergence purposes, which are primarily of [Logical type](../../workflows/components/units.md#unit-types). The objective of such units is to set up the parameters necessary to progressively increase [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md), and consequently check the corresponding evolution of the total energy difference throughout the study to ensure a sufficiently accurate final convergence.
 
-If you scroll down to view the workflow units and then toggle the k-point convergence button on and off in the "Advanced" section you will see the  various units that are added for convergence to set up the parameters to increase k-point density and track the corresponding total energy difference throughout the study.
+## Examine Unit Input Files
 
-<img data-gifffer="/images/tutorials/tutorials/ConvergeStep2.gif" />
+The user can now try to open the main VASP [Execution Unit](../../workflows/components/units.md#execution) by clicking upon it. The contents of the input files used for the convergence study within the VASP calculation can in this way be inspected, towards the bottom of the [unit editor interface](../../workflow-designer/unit-editor.md#unit-input-templates). 
 
-# Examine unit input files
+The user should be able to notice some differences in the formatting of the KPOINTS file, compared to the more conventional cases. This file should not be edited, since the text is modified to contain [templating expressions](../../workflows/templating/overview.md) (eg. `{{PARAMETER}}`) that are necessary for the workflow to function correctly.
 
-If you click on the kpt-convergence unit, you can see the content of the input files used for the convergence study VASP calculation.  You'll notice the KPOINTS file is different than a typical VASP KPOINTS file.  Do not edit this file as the text is modified to contain placeholders (eg. `{{PARAMETER}}`) that are necessary to enable the workflow to function correctly.
+## Submit Job
 
-<img data-gifffer="/images/tutorials/ConvergeStep3.gif" />
+Before [submitting](../../../jobs/actions/run.md) the [Job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
 
-# Submit job
+## Examine Results
 
-Before submitting the job, click on the "Go to Compute" button and examine the compute parameters. The example below shows how to increase the total run time to 15 minutes, the number of cores to 2 cores, and how to turn on email notifications of when the job starts and ends.
+Once the Job execution is finished, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the calculation, including the final computed value of the total energy as well as additional information about each execution unit.
 
-<img data-gifffer="/images/tutorials/ConvergeStep4.gif" />
+## Converged k-point Density
 
-Since you are using the default Si structure as input, the database check may warn you that you are starting a job with a structure that already exists and ask whether you would like to save another copy of the material.  Click "No" to avoid duplicates.
+Finally, the user can also browse the actual output and input files that are part of the calculation at the bottom of the [Results tab](../../../jobs/ui/results-tab.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
 
-# Monitor status
+## Animation
 
-While the calculation is running you will see a tab for each of the VASP execution units in the workflow.  You will notice the kpt-convergence tab will update in real time as the simulations progress.  The graph will show the energy difference between successive self-consistent steps in the calculation for all self-consistent energy minimization steps as k-point density is increased. Standard output of VASP also updates in real time with the output of each VASP simulation concatenated together.
+We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study on a silicon-based [Total Energy](../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine.
 
-<img data-gifffer="/images/tutorials/ConvergeStep5.gif" />
-
-!!! Note "Future developments"
-    In the future we will split each iteration of the k-point convergence study into different data series to make the progress of each step more clear.  In addition we will also separate the text output of each individual simulation into it's own tracking box.
-
-# Check results
-
-When calculation is complete, "Results" tab will have turned green and will become clickable. You can click on the "Results" tab to see the final total energy, Fermi energy, and more information about each execution unit.
-
-<img data-gifffer="/images/tutorials/ConvergeStep6.gif" />
-
-# Converged k-point density
-
-Finally you can also browse the actual output and input files that are part of the calculation at the bottom of the results page.  If you are interested in determining the k-point density at which convergence was reached, simply open the KPOINTS file and you will see the converged density of 21 x 21 x 21.
-
-# Links
-
-1. [Density Functional Theory, Wikipedia](https://en.wikipedia.org/wiki/Density_functional_theory)
-2. [Vienna ab-inito simulation package, Website](https://www.vasp.at/)
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/VIY1mq1clLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
