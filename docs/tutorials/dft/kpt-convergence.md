@@ -2,7 +2,7 @@
 
 The present tutorial page explains how to run a [convergence study](../../models/auxiliary-concepts/reciprocal-space/convergence.md) of the size of the [grid of k-points](../../models/auxiliary-concepts/reciprocal-space/sampling.md), necessary for sampling the symmetry-irreducible wedge of the Brillouin Zone of the crystal structure under investigation, using [density functional theory](../../models-directory/dft/overview.md). 
 
-K-point convergence can be run either as a stand-alone [workflow](../../workflows/overview.md), or prepended as an [Add-on](../../workflows/addons/overview.md) to another [property calculation](../../properties/overview.md).
+K-point convergence can be run either as a stand-alone [workflow](../../workflows/overview.md), or prepended as a [Workflow Add-on](../../workflows/addons/overview.md) to another [property calculation](../../properties/overview.md).
 
 For the sake of the present tutorial, we will study the issue of k-point convergence for the case of crystalline silicon under its equilibrium cubic-diamond crystal structure, by making use of [VASP](../../software-directory/modeling/vasp/overview.md) as the main simulation engine. We will investigate k-point convergence in the context of a [Total Energy](../../properties-directory/scalar/total-energy.md) calculation.
 
@@ -36,9 +36,9 @@ Once the Job execution is finished, switching to the [Results tab](../../jobs/ui
 
 Finally, the user can also browse the actual output and input files that are part of the calculation under the [Files tab](../../jobs/ui/files-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
 
-The complete convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View"](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
+The complete convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View" tab](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
 
-A typical example of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold (measured in terms of the relative energy change between two subsequent values of the k-grid size shown on the x-axis) has been reached for a k-grid size of 13 X 13 X 13. 
+A typical example of the appearance of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold, measured in terms of the relative energy change between two subsequent steps in the increase of the k-grid size shown on the x-axis, has been reached for a k-grid size of 13 X 13 X 13. 
 
 ![Convergence Plot](../../images/tutorials/chart.png "Convergence Plot")
 
@@ -47,5 +47,5 @@ A typical example of such an "Ionic Energy" energy convergence chart as a functi
 We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study on a silicon-based [Total Energy](../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/_XS-n3563ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Qdn4Rr4ZFVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
