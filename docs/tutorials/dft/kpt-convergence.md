@@ -38,10 +38,14 @@ Finally, the user can also browse the actual output and input files that are par
 
 The complete convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View"](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
 
+A typical example of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold (measured in terms of the relative energy change between two subsequent values of the k-grid size shown on the x-axis) has been reached for a k-grid size of 13 X 13 X 13. 
+
+![Convergence Plot](../../images/tutorials/chart.png "Convergence Plot")
+
 ## Animation
 
 We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study on a silicon-based [Total Energy](../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [VASP](../../software-directory/modeling/vasp/overview.md) simulation engine.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/VIY1mq1clLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/_XS-n3563ro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
