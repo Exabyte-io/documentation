@@ -638,8 +638,8 @@ nav:
             - Vibrational Properties:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
-
-
+            - Add-ons:
+                - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
 
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable
