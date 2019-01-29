@@ -53,4 +53,4 @@ We demonstrate the steps involved in the creation and execution of a HSE Band Ga
 
 [^1]: [Hartree-Fock (HF) type and hybrid functional calculations, Official VASP Manual](https://cms.mpi.univie.ac.at/vasp/vasp/Hartree_Fock_HF_type_hybrid_functional_calculations.html)
 [^2]: [Si HSE bandstructure, VASP Wiki Tutorial](https://cms.mpi.univie.ac.at/wiki/index.php/Si_HSE_bandstructure)
-[^3]: [Accessible computational materials design with high fidelity and high throughput, Article](https://arxiv.org/pdf/1807.05623.pdf)
+[^3]: [Accessible computational materials design with high fidelity and high throughput, P. Das, M. Mohammadi, and T.Bazhirov, Arxiv preprint, 2017](https://arxiv.org/pdf/1807.05623.pdf)
