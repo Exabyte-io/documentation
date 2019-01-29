@@ -18,7 +18,7 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../.
 
 It is critical that a [well-relaxed structure](../../../workflows/addons/structural-relaxation.md) with [converged k-point density](../../../models/auxiliary-concepts/reciprocal-space/convergence.md) is used for zero point energy calculations.
 
-We set the size of the grid of k-points to 18 x 18 x 18 in the first and only workflow [unit](../../../workflows/components/units.md). The validity of this choice of k-grid size for yielding accurate results of order meV in the final energy can be verified by performing the relevant [convergence study](../../../models/auxiliary-concepts/reciprocal-space/convergence.md).
+The default value of sampling, set according to KPPRA of 2000, is sufficient as can be verified by performing the relevant [convergence study](../../../models/auxiliary-concepts/reciprocal-space/convergence.md). When dealing with larger cells, setting k-grid dimensions through KPPRA should generally provide a reliable guess.
 
 We explain how to perform both [structural relaxations](../relaxation.md) and [k-points convergence studies](../kpt-convergence.md) in their respective tutorials.
 
