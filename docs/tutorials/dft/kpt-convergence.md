@@ -14,7 +14,7 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../m
 
 [Workflows](../../workflows/overview.md) for calculating the Total Energy through [VASP](../../software-directory/modeling/vasp/overview.md) can readily be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md). This workflow can later be [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../jobs-designer/workflow-tab.md).
 
-Thereafter, in order to add k-point convergence as an [Add-on](../../workflows/addons/overview.md) to the total energy calculation workflow, the user should [click the appropriate button](../../workflow-designer/subworkflow-editor/actions-menu.md#insert-add-ons) within the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) of [Workflow Designer](../../workflow-designer/overview.md). The corresponding "Convergence" option should thus be chosen. The parameters contained in the resulting "Convergence" dialog should be set according to the instructions outlined [in this page](../../models/auxiliary-concepts/reciprocal-space/convergence.md).
+Thereafter, in order to add k-point convergence as an [Add-on](../../workflows/addons/overview.md) to the total energy calculation workflow, the user should [click the appropriate button](../../workflow-designer/subworkflow-editor/actions-menu.md#insert-add-ons) within the [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) of [Workflow Designer](../../workflow-designer/overview.md). The corresponding "Convergence" option should thus be chosen. The parameters contained in the resulting "Convergence" dialog should be set according to the instructions outlined [in this page](../../models/auxiliary-concepts/reciprocal-space/convergence.md). For the moment, we shall just accept the default contents of such dialog, and proceed with no further modifications by clicking the bottom `Apply` button.
 
 At the end of the insertion of the k-point convergence Add-on to the Total Energy Workflow, the user can scroll down to view the extra [units](../../workflows/components/units.md) which have been added for convergence purposes, which are primarily of [Logical type](../../workflows/components/units.md#unit-types). The objective of such units is to set up the parameters necessary to progressively increase [k-point density](../../models/auxiliary-concepts/reciprocal-space/sampling.md), and consequently check the corresponding evolution of the total energy difference throughout the study to ensure a sufficiently accurate final convergence.
 
@@ -30,11 +30,13 @@ Before [submitting](../../jobs/actions/run.md) the [Job](../../jobs/overview.md)
 
 ## Examine Results
 
-Once the Job execution is finished, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the results of the calculation, including the final computed value of the total energy as well as additional information about each execution unit.
+Once the Job execution is finished, switching to the [Results tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) will show the results of the computation, including the final converged value of the total energy as well as additional information about each execution unit.
 
 ## Converged k-point Density
 
-Finally, the user can also browse the actual output and input files that are part of the calculation at the bottom of the [Results tab](../../jobs/ui/results-tab.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
+Finally, the user can also browse the actual output and input files that are part of the calculation under the [Files tab](../../jobs/ui/files-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
+
+The complete convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View"](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
 
 ## Animation
 
