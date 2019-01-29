@@ -25,4 +25,4 @@ A demonstration of the effectiveness of the HSE Hybrid Functional in predicting 
 
 [^1]: [Wikipedia Hybrid functional, Website](https://en.wikipedia.org/wiki/Hybrid_functional)
 [^2]: [The Hartree-Fock method, Document](https://web.stanford.edu/~kimth/www-mit/thk_hartreefock.pdf)
-[^3]: [DFT Simulation Datasheet for Quantum Espresso, Document](https://drive.google.com/file/d/185fPU--Zggp7yLt8lIMjzOaSKb4rH7a4/view?usp=sharing)
+[^3]: [Sayan Kanungo, DFT Simulation Datasheet for Quantum Espresso, Indian Institute of Engineering Science and Technology, Shibpur, Jun 2017, Online Document](https://drive.google.com/file/d/185fPU--Zggp7yLt8lIMjzOaSKb4rH7a4/view?usp=sharing)
