@@ -38,7 +38,7 @@ Finally, the user can also browse the actual output and input files that are par
 
 The convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View" tab](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
 
-A typical example of the appearance of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold, measured in terms of the relative energy change between two subsequent steps in the increase of the k-grid size shown on the x-axis, has been reached for a k-grid size of 13 X 13 X 13. 
+A typical example of the appearance of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold has been reached for a k-grid size of 13 X 13 X 13. It is measured in terms of the relative energy change between two subsequent steps in the increase of the k-grid size shown on the x-axis.
 
 ![Convergence Plot](../../images/tutorials/kpoint-convergence-chart.png "Convergence Plot")
 
