@@ -4,11 +4,11 @@ The present tutorial page explains how to run a [convergence study](../../models
 
 K-point convergence can be run either as a stand-alone [workflow](../../workflows/overview.md), or prepended as a [Workflow Add-on](../../workflows/addons/overview.md) to another [property calculation](../../properties/overview.md).
 
-For the sake of the present tutorial, we will study the issue of k-point convergence for the case of crystalline silicon under its equilibrium cubic-diamond crystal structure, by making use of [VASP](../../software-directory/modeling/vasp/overview.md) as the main simulation engine. We will investigate k-point convergence in the context of a [Total Energy](../../properties-directory/scalar/total-energy.md) calculation.
+In the present tutorial, we will study the issue of k-point convergence for the case of crystalline silicon under its equilibrium cubic-diamond crystal structure, by making use of [VASP](../../software-directory/modeling/vasp/overview.md) as the main simulation engine. We will investigate k-point convergence in the context of a [Total Energy](../../properties-directory/scalar/total-energy.md) calculation.
 
 ## Create Job
 
-Silicon in its cubic-diamond crystal structure is the [default material](../../materials/default.md) that is shown on [new job creation](../../jobs-designer/overview.md), unless this default was [changed](../../entities-general/actions/set-default.md) by the user following [account](../../accounts/overview.md) creation. If silicon is still the default choice, it will as such be automatically loaded at the moment of the [opening](../../jobs/actions/create.md) of [Job Designer](../../jobs-designer/overview.md).
+Silicon in its cubic-diamond crystal structure is the [default material](../../materials/default.md) that is shown on [new job creation](../../jobs-designer/overview.md), unless this default was [changed](../../entities-general/actions/set-default.md) by the user following [account](../../accounts/overview.md) creation. If silicon is still the default choice, it will be automatically loaded at the moment of the [opening](../../jobs/actions/create.md) of [Job Designer](../../jobs-designer/overview.md).
 
 ## Choose workflow
 
@@ -20,7 +20,7 @@ At the end of the insertion of the k-point convergence Add-on to the Total Energ
 
 ## Examine Unit Input Files
 
-The user can now try to open the main VASP [Execution Unit](../../workflows/components/units.md#execution) by clicking upon it. The contents of the input files used for the convergence study within the VASP calculation can in this way be inspected, towards the bottom of the [unit editor interface](../../workflow-designer/unit-editor.md#unit-input-templates). 
+The user can now try to open the main VASP [Execution Unit](../../workflows/components/units.md#execution) by clicking it. The contents of the input files used for the convergence study within the VASP calculation can in this way be inspected, towards the bottom of the [unit editor interface](../../workflow-designer/unit-editor.md#unit-input-templates). 
 
 The user should be able to notice some differences in the formatting of the KPOINTS file, compared to the more conventional cases. This file should not be edited, since the text is modified to contain [templating expressions](../../workflows/templating/overview.md) (eg. `{{PARAMETER}}`) that are necessary for the workflow to function correctly.
 
@@ -36,11 +36,11 @@ Once the Job execution is finished, switching to the [Results tab](../../jobs/ui
 
 Finally, the user can also browse the actual output and input files that are part of the calculation under the [Files tab](../../jobs/ui/files-tab.md) of [Job Viewer](../../jobs/ui/viewer.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../data-in-objectstorage/actions/download.md).
 
-The complete convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View" tab](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
+The convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View" tab](../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
 
 A typical example of the appearance of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold, measured in terms of the relative energy change between two subsequent steps in the increase of the k-grid size shown on the x-axis, has been reached for a k-grid size of 13 X 13 X 13. 
 
-![Convergence Plot](../../images/tutorials/chart.png "Convergence Plot")
+![Convergence Plot](../../images/tutorials/kpoint-convergence-chart.png "Convergence Plot")
 
 ## Animation
 
