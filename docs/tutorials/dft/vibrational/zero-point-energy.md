@@ -8,7 +8,11 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../.
 
 ## Choose Workflow
 
-[Workflows](../../../workflows/overview.md) for calculating the Zero Point Energy through [VASP](../../../software-directory/modeling/vasp/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/workflow-tab.md).
+[Workflows](../../../workflows/overview.md) for calculating the Zero Point Energy through [VASP](../../../software-directory/modeling/vasp/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/workflow-tab.md). 
+
+## Examine Input File	
+
+ The unique [unit](../../../workflows/components/units.md) for this tutorial is the "vasp_zpe" unit. Clicking it will show the corresponding input files. The `IBRION = 5` flag within the INCAR file enables VASP to run the displacements for the zero point energy calculation.
 
 ## Set Sampling in Reciprocal Space
 

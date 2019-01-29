@@ -619,7 +619,7 @@ Please see the [formation energy tutorial](formation-energy.md) for more details
 ## [Vibrational Properties](../materials/characteristic-properties#vibrational-properties)
 
 ### [Zero Point Energy](../materials/characteristic-properties#zero-point-energy)
-Please see the [zero point enegry tutorial](dft/vibrational/zero-point-energy.md) for more details.
+Please see the [zero point energy tutorial](dft/vibrational/zero-point-energy.md) for more details.
 
 #### VASP
 
