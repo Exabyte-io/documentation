@@ -23,4 +23,4 @@ In the following animation, we show how to insert a k-point convergence add-on t
   
 <img data-gifffer="/images/models/AddKpointConvergence.gif" />
 
-Please see the [k-point convergence tutorial](../../../tutorials/dft/kpt-convergence.md) for more details.
+Please see the [k-point convergence tutorial](../../../tutorials/dft/addons/kpt-convergence.md) for more details.
