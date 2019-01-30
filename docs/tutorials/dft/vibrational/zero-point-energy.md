@@ -20,7 +20,7 @@ It is critical that a [well-relaxed structure](../../../workflows/addons/structu
 
 The default value of sampling, set according to KPPRA of 2000, is sufficient as can be verified by performing the relevant [convergence study](../../../models/auxiliary-concepts/reciprocal-space/convergence.md). When dealing with larger cells, setting k-grid dimensions through KPPRA should generally provide a reliable guess.
 
-We explain how to perform both [structural relaxations](../relaxation.md) and [k-points convergence studies](../addons/kpt-convergence.md) in their respective tutorials.
+We explain how to perform both [structural relaxations](../addons/structural-relaxation.md) and [k-points convergence studies](../addons/kpt-convergence.md) in their respective tutorials.
 
 ## Submit Job
 
