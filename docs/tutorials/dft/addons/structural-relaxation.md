@@ -27,7 +27,10 @@ The user can now try to open the main "vc-relax" [Execution Unit](../../../workf
 
 The type of relaxation calculation performed is always by default a variable-cell relaxation allowing for all [degrees of freedom](../../../properties-directory/structural/final-structure.md) to be adjusted simultaneously, including therefore the relaxation of the [atomic positions](../../../properties-directory/structural/basis.md) as well as of the [unit cell shape and size](../../../properties-directory/structural/lattice.md).
 
-Please note that the POSCAR file employed in the ensuing Total Energy subworkflow computation is just a placeholder, and during the course of its execution will be overwritten by a CONTCAR file obtained from the results of the preliminary relaxation.
+Please note that the second total energy subworkflow reads the structural information output by the preliminary relaxation, instead of the parameters in its own input.
+ 
+!!!note "Specific example for VASP"
+    The POSCAR file employed in the ensuing Total Energy subworkflow computation is just a placeholder, and during the course of its execution will be overwritten by a CONTCAR file obtained from the results of the preliminary relaxation.
 
 ## Submit Job
 
