@@ -51,4 +51,4 @@ For large structures where a full relaxation of cell size is not computationally
 In many cases, simulation software allows one to specify constraints in certain directions or specific atoms. In some cases one can significantly reduce the computation time for relaxations by only relaxing a certain number of atoms within the structure when appropriate. For example, when simulating a 256 atom Si silicon supercell with 1 Si atom replaced by a P atom, fixing positions of all atoms other than the 2nd nearest neighbors of P will improve the speed of the calculation significantly.
 
 !!! Note "Tutorial"
-    Please visit the [relaxation tutorial](../../tutorials/dft/relaxation.md) for a more expansive and detailed look at adding a relaxation calculation as part of a workflow.
+    Please visit the [relaxation tutorial](../../tutorials/dft/addons/structural-relaxation.md) for a more expansive and detailed look at adding a relaxation calculation as part of a workflow.
