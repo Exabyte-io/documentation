@@ -44,7 +44,7 @@ Once the Job execution is finished, switching to the [Results tab](../../../jobs
 
 Finally, the user can also browse the actual output and input files that are part of the calculation under the [Files tab](../../../jobs/ui/files-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md). In order to determine the structure geometry for which relaxation was achieved in the end, the POSCAR file should be [downloaded and inspected](../../../data-in-objectstorage/actions/download.md). 
 
-The structural data contained in this file can readily be visualized graphically by following the instructions outlined in a [separate tutorial].
+The structural data contained in this file can readily be visualized graphically under the [Materials Viewer](../../../materials/ui/viewer.md) instance contained within the [Results tab](../../../jobs/ui/results-tab.md).
 
 ## Animation
 
