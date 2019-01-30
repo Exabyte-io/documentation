@@ -1,6 +1,6 @@
-# Study Convergence of k-grid Size
+# Study Convergence of the Reciprocal Space Grid
 
-The present tutorial page explains how to run a [convergence study](../../../models/auxiliary-concepts/reciprocal-space/convergence.md) of the size of the [grid of k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md), necessary for sampling the symmetry-irreducible wedge of the Brillouin Zone of the crystal structure under investigation, using [density functional theory](../../../models-directory/dft/overview.md). 
+The present tutorial page explains how to run a [convergence study](../../../models/auxiliary-concepts/reciprocal-space/convergence.md) of the size of the [grid of k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md), necessary for sampling the Brillouin Zone of the crystal structure under investigation, using [density functional theory](../../../models-directory/dft/overview.md). 
 
 K-point convergence can be run either as a stand-alone [workflow](../../../workflows/overview.md), or prepended as a [Workflow Add-on](../../../workflows/addons/overview.md) to another [property calculation](../../../properties/overview.md).
 
@@ -18,15 +18,15 @@ Thereafter, in order to add k-point convergence as an [Add-on](../../../workflow
 
 At the end of the insertion of the k-point convergence Add-on to the Total Energy Workflow, the user can scroll down to view the extra [units](../../../workflows/components/units.md) which have been added for convergence purposes, which are primarily of [Logical type](../../../workflows/components/units.md#unit-types). The objective of such units is to set up the parameters necessary to progressively increase [k-point density](../../../models/auxiliary-concepts/reciprocal-space/sampling.md), and consequently check the corresponding evolution of the total energy difference throughout the study to ensure a sufficiently accurate final convergence.
 
-## Examine Unit Input Files
+## Examine Input Files
 
-The user can now try to open the main VASP [Execution Unit](../../../workflows/components/units.md#execution) by clicking it. The contents of the input files used for the convergence study within the VASP calculation can in this way be inspected, towards the bottom of the [unit editor interface](../../../workflow-designer/unit-editor.md#unit-input-templates). 
+Readers can open the main [Execution Unit](../../../workflows/components/units.md#execution) "vasp" by clicking it. The contents of the input files used for the convergence study within the VASP calculation can in this way be inspected, towards the bottom of the [unit editor interface](../../../workflow-designer/unit-editor.md#unit-input-templates). 
 
-The user should be able to notice some differences in the formatting of the KPOINTS file, compared to the more conventional cases. This file should not be edited, since the text is modified to contain [templating expressions](../../../workflows/templating/overview.md) (eg. `{{PARAMETER}}`) that are necessary for the workflow to function correctly.
+Users should be able to notice some differences in the formatting of the KPOINTS file, compared to the more conventional cases. This file should not normally be edited, or should be edited with caution, since the text is modified to contain [templating expressions](../../../workflows/templating/overview.md) (eg. `{{PARAMETER}}`) that are necessary for the workflow to function correctly.
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [Job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so four CPUs and one minute of calculation runtime should be sufficient.
+Before [submitting](../../../jobs/actions/run.md) the [Job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein. Silicon is a small structure, so four cores and a few minutes of calculation runtime should be sufficient.
 
 ## Examine Results
 
@@ -34,17 +34,19 @@ Once the Job execution is finished, switching to the [Results tab](../../../jobs
 
 ## Converged k-point Density
 
-Finally, the user can also browse the actual output and input files that are part of the calculation under the [Files tab](../../../jobs/ui/files-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md). In order to determine the k-point density at which convergence was reached in the end, the KPOINTS file should be [downloaded and inspected](../../../data-in-objectstorage/actions/download.md).
+Finally, the user can also browse the output and input files under the [Files tab](../../../jobs/ui/files-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md). In order to determine the k-point density at which convergence was reached, the KPOINTS file should be [downloaded and inspected](../../../data-in-objectstorage/actions/download.md).
 
-The convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be ticked under the ["Detailed View" tab](../../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
+### Convergence plot
 
-A typical example of the appearance of such an "Ionic Energy" energy convergence chart as a function of [k-grid size](../../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is portrayed in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold has been reached for a k-grid size of 13 X 13 X 13. It is measured in terms of the relative energy change between two subsequent steps in the increase of the k-grid size shown on the x-axis.
+The convergence plot can be retrieved upon Job completion under the "Charts" tab accessible by opening the main "vasp" Execution Unit. The relevant convergence plot is the one labelled "Ionic Energy". In order for this plot to appear among the calculation results, the "convergence_ionic" option should be selected under the ["Detailed View" tab](../../../workflow-designer/subworkflow-editor/detailed-view.md) of the Total Energy [Subworkflow Editor Interface](../../../workflow-designer/subworkflow-editor/overview.md) at the moment of initial Job designing.
+
+An example appearance of the "Ionic Energy" energy convergence chart as a function of [k-grid size](../../../models/auxiliary-concepts/reciprocal-space/sampling.md#kgrid) is given in the image below. In this case, after a sharp initial shift in energy, the desired convergence precision threshold has been reached for a k-grid size of 13 X 13 X 13. The threshold corresponds to the relative energy change between two subsequent steps in the k-grid size progression shown on the x-axis.
 
 ![Convergence Plot](../../../images/tutorials/kpoint-convergence-chart.png "Convergence Plot")
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study on a silicon-based [Total Energy](../../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine.
+We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study using silicon and [Total Energy](../../../properties-directory/scalar/total-energy.md) workflow in the video below.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Qdn4Rr4ZFVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
