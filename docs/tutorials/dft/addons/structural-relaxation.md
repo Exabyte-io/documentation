@@ -16,13 +16,13 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../.
 
 Thereafter, in order to add structural relaxation as an [Add-on](../../../workflows/addons/overview.md) to the total energy calculation workflow, the user should [click the appropriate button](../../../workflow-designer/header-menu.md#inserting-add-ons) within the [Header Menu](../../../workflow-designer/header-menu.md) of [Workflow Designer](../../../workflow-designer/overview.md). The corresponding "Relaxation" option under this button should thus be chosen. 
 
-At the end of the insertion of the relaxation Add-on to the Total Energy Workflow, the user will notice that an additional "Variable-cell Relaxation" [Subworkflow](../../../workflows/components/subworkflows.md) has been prepended to the overall [computation order flowchart](../../../workflow-designer/sidebar.md) exhibited on the left-hand side of [Workflow Designer Interface](../../../workflow-designer/overview.md).
+At the end of the insertion of the relaxation Add-on to the Total Energy Workflow, the user will notice that an additional "Variable-cell Relaxation" [Subworkflow](../../../workflows/components/subworkflows.md) has been prepended to the overall [computation order flowchart](../../../workflow-designer/sidebar.md) exhibited on the left-hand side of the [Workflow Designer Interface](../../../workflow-designer/overview.md).
 
 ## Examine Unit Input Files
 
 The user can now try to open the main "vc-relax" [Execution Unit](../../../workflows/components/units.md) within the "Variable-cell Relaxation" [Subworkflow](../../../workflows/components/subworkflows.md) by clicking it. The contents of the input files used for the structural relaxation study within the VASP calculation can in this way be inspected, towards the bottom of the [unit editor interface](../../../workflow-designer/unit-editor.md#unit-input-templates). 
 
-The type of relaxation calculation performed is always by default a variable-cell relaxation allowing for all crystalline degrees of freedom to adjust simultaneously, including therefore a relaxation of the atomic positions as well as of the unit cell shape and size.
+The type of relaxation calculation performed is always by default a variable-cell relaxation allowing for all [crystalline degrees of freedom](../../../properties-directory/structural/final-structure.md) to be adjusted simultaneously, including therefore the relaxation of the [atomic positions](../../../properties-directory/structural/basis.md) as well as of the [unit cell shape and size](../../../properties-directory/structural/lattice.md).
 
 Please note that the POSCAR file employed in the ensuing Total Energy subworkflow computation is just a placeholder, and during the course of its execution will be overwritten by a CONTCAR file obtained from the results of the preliminary relaxation.
 
