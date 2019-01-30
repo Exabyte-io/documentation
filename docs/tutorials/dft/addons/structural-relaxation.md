@@ -1,6 +1,6 @@
 # Perform Structural Relaxation 
 
-This tutorial page explains how to run a [structural relaxation](../../../workflows/addons/structural-relaxation.md) using [density functional theory](../../../models-directory/dft/overview.md). Relaxations consist in simultaneously relaxing the inter-atomic forces within a structure, whilst optimizing the overall lattice geometry by minimizing its corresponding potential energy. 
+This tutorial page explains how to run a [structural relaxation](../../../workflows/addons/structural-relaxation.md) using [density functional theory](../../../models-directory/dft/overview.md). Relaxations consist in simultaneously relaxing the inter-atomic forces within a structure, whilst optimizing the overall lattice geometry by minimizing its corresponding potential energy together with the components of its internal [stress tensor](../../../properties-directory/non-scalar/stress-tensor.md). 
 
 They can be run either as a stand-alone [workflow](../../../workflows/overview.md), or prepended as a [Workflow Add-on](../../../workflows/addons/overview.md) to another [property calculation](../../../properties/overview.md).
 
@@ -47,6 +47,8 @@ The structural data contained in this file can readily be visualized graphically
 
 We demonstrate the above-mentioned steps involved in the creation and execution of a [structural relaxation](../../../workflows/addons/structural-relaxation.md) study on a silicon-based [Total Energy](../../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine.
 
+As expected, the components of both the atomic forces and [stress tensor](../../../properties-directory/non-scalar/stress-tensor.md) shown at the end of the structural relaxation computation, under the interface of [Results tab](../../../jobs/ui/results-tab.md), have low values in proximity to zero, signalling successful relaxation and geometry optimization.
+
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Qdn4Rr4ZFVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/GEMwxNfUoAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
