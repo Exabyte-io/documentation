@@ -48,10 +48,10 @@ The structural data contained in this file can readily be visualized graphically
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a [structural relaxation](../../../workflows/addons/structural-relaxation.md) study on a silicon-based [Total Energy](../../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine.
+We demonstrate the above-mentioned steps involved in the creation and execution of a [structural relaxation](../../../workflows/addons/structural-relaxation.md) study on a [Total Energy](../../../properties-directory/scalar/total-energy.md) workflow computation under the following animation, where we make use of the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine. The starting point is a crystal structure of silicon which has been slightly distorted from its equilibrium cubic-diamond lattice parameters and atomic positions.
 
 As expected, the components of both the atomic forces and [stress tensor](../../../properties-directory/non-scalar/stress-tensor.md) shown at the end of the structural relaxation computation, under the interface of [Results tab](../../../jobs/ui/results-tab.md), have low values in proximity to zero, signalling successful relaxation and geometry optimization.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/wJBjYNtMqic" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/2Em6E32Lyes" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
