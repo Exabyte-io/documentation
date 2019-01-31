@@ -1,8 +1,8 @@
-<!-- by MH -->
+# Restart From Previous Run
 
-This page explains how to restart a calculation from the results of a previous calculation.  We will use the "Recalculate Bands" workflow as an example to restart from a previous "Electronic Density Mesh" simulation. The tutorial for "Electronic Density Mesh" is [here](../dft/electronic/electronic-density-mesh.md)
+This page explains how to restart a [Job](../../jobs/overview.md) from the results of a previous calculation.  We will use the "Recalculate Bands" [workflow](../../workflows/overview.md) as an example to restart from a previous "Electronic Density Mesh" simulation, which is reviewed in a [separate tutorial](../dft/electronic/electronic-density-mesh.md).
 
-# Choose restart
+## Choose Restart
 
 On the "Create Job" page, choose VASP as your simulation engine. Next expand the "Advanced" select and click on the dropdown for "Restart from".  Find the job that you previously ran an "Electronic Density Mesh" workflow on and select that job.  Next go to the dropdown workflow menu and select "Recalculate Bands"
 
