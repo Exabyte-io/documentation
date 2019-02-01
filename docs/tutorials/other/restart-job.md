@@ -1,22 +1,23 @@
 # Restart From Previous Run
 
-This page explains how to restart a [Job](../../jobs/overview.md) from the results of a previous calculation.  We will use the "Recalculate Bands" [workflow](../../workflows/overview.md) as an example to restart from a previous "Electronic Density Mesh" simulation, which is reviewed in a [separate tutorial](../dft/electronic/electronic-density-mesh.md).
+This page explains how to **restart** a [Job](../../jobs/overview.md) from the **results of a previous calculation**.  We will restart from a previous "Electronic Density Mesh" simulation, which is reviewed in a [separate tutorial](../dft/electronic/electronic-density-mesh.md).
 
-## Choose Restart
+## Select Parent Job
 
-On the "Create Job" page, choose VASP as your simulation engine. Next expand the "Advanced" select and click on the dropdown for "Restart from".  Find the job that you previously ran an "Electronic Density Mesh" workflow on and select that job.  Next go to the dropdown workflow menu and select "Recalculate Bands"
+In [Job Designer](../../jobs-designer/overview.md), Job restarting is accomplished via the [Select Parent Option](../../jobs-designer/actions-header-menu/select-parent.md) under the main [header menu](../../jobs-designer/header-menu.md) of the interface. 
 
-<img data-gifffer="/images/tutorials/RestartSelect.gif" />
+The user should first create a new [Job](../../jobs/overview.md) with "Electronic Density Mesh" as the main [workflow](../../workflows/overview.md) by following the same instructions as in the [original tutorial](../dft/electronic/electronic-density-mesh.md#create-job). 
 
-# Compute parameters
+The next steps consist in finding the previously-run Electronic Density Mesh job via the aforementioned ["Select Parent" option](../../jobs-designer/actions-header-menu#select-parent-job), and in selecting that job in order to prepend its results as a precursor to the new restart job being created.  
 
-Next we got to "Compute" tab, but no changes are necessary here so click the "Submit Job" button to run the job.
+## Submit Job
 
-<img data-gifffer="/images/tutorials/RestartSubmit.gif" />
+The same instructions for submitting and executing the restart Job as in the main electronic density mesh [tutorial](../dft/electronic/electronic-density-mesh.md#submit-job) can be followed.
 
-# Monitor status + results
+## Animation
 
-This type of job is a non self-consistent simulation that will not take as many steps to execute so the monitor window only shows two steps before completing.  If you click on the "Results" tab you will see that the band structure has been calculated using the previous charge density from an old Electronic Density Mesh simulation.
+We demonstrate the above-mentioned steps involved in restarting an electronic charge density mesh computation workflow performed on silicon, using the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation. 
 
-<img data-gifffer="/images/tutorials/RestartResults.gif" />
-
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/KQ34eiRU0f0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>

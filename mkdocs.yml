@@ -641,7 +641,8 @@ nav:
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
-
+        - General Functionality:
+                - Restart from Previous Job:             tutorials/other/restart-job.md
 
 
 # TUTORIALS AND EXAMPLES
