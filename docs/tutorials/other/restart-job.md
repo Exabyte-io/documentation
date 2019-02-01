@@ -1,22 +1,24 @@
 # Restart From Previous Run
 
-This page explains how to **restart** a [Job](../../jobs/overview.md) from the **results of a previous calculation**.  We will restart from a previous "Electronic Density Mesh" simulation, which is reviewed in a [separate tutorial](../dft/electronic/electronic-density-mesh.md).
+This page explains how to **restart** a [Job](../../jobs/overview.md) from the **results of a previous calculation**.  We will make use of the "restart" functionality  to feed the wavefunction data obtained in a self-consistent field (SCF) computation Job to the subsequent non-self consistent (NSCF) step in an electronic band structure calculation, which is reviewed in a [separate tutorial](../dft/electronic/band-structure.md).
+
+Restarting and linking the two Jobs in this way allows the band structure to be computed without having to recalculate the charge density and wavefunctions through an SCF calculation a second time. The results of such  SCF Job can thus be re-utilized as starting point for multiple other calculations that require such preliminary results.
 
 ## Select Parent Job
 
-In [Job Designer](../../jobs-designer/overview.md), Job restarting is accomplished via the [Select Parent Option](../../jobs-designer/actions-header-menu/select-parent.md) under the main [header menu](../../jobs-designer/header-menu.md) of the interface. 
+Within [Job Designer](../../jobs-designer/overview.md), Job restarting is accomplished via the ["Select Parent" Option](../../jobs-designer/actions-header-menu/select-parent.md) under the main [header menu](../../jobs-designer/header-menu.md) of the interface. 
 
-The user should first create a new [Job](../../jobs/overview.md) with "Electronic Density Mesh" as the main [workflow](../../workflows/overview.md) by following the same instructions as in the [original tutorial](../dft/electronic/electronic-density-mesh.md#create-job). 
+The user should first create a new [Job](../../jobs/overview.md), with the NSCF component [unit](../../workflows/components/units.md) of a band structure calculation present on its own in the main [workflow](../../workflows/overview.md). The same instructions as in the [original tutorial](../dft/electronic/band-structure.md#create-job) should be followed to [select and insert](../../jobs-designer/actions-header-menu/select-workflow.md) such a Workflow into the new [Job being designed](../../jobs-designer/overview.md). 
 
-The next steps consist in finding the previously-run Electronic Density Mesh job via the aforementioned ["Select Parent" option](../../jobs-designer/actions-header-menu#select-parent-job), and in selecting that job in order to prepend its results as a precursor to the new restart job being created.  
+The next steps consist in finding the previously-run SCF job via the aforementioned ["Select Parent" option](../../jobs-designer/actions-header-menu#select-parent-job), and in selecting that job in order to prepend its results as a restart precursor to the new NSCF job being created.  
 
 ## Submit Job
 
-The same instructions for submitting and executing the restart Job as in the main electronic density mesh [tutorial](../dft/electronic/electronic-density-mesh.md#submit-job) can be followed.
+The same instructions for submitting and executing the restart Job as in the main band structure [tutorial](../dft/electronic/band-structure.md#submit-job) can be followed.
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in restarting an electronic charge density mesh computation workflow performed on silicon, using the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation. 
+In the following animation, we demonstrate the above-mentioned steps involved in restarting an NSCF electronic band structure computation, performed on silicon, based upon the preliminary results of a previously-run SCF calculation. We shall make use of the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the present example, however the same procedure and outcome should be of general applicability. 
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/088lBmRzZ98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
