@@ -1,8 +1,8 @@
 # Restart From Previous Run
 
-This page explains how to **restart** a [Job](../../jobs/overview.md) from the **results of a previous calculation**.  We will make use of the "restart" functionality  to feed the wavefunction data obtained in a self-consistent field (SCF) computation Job to the subsequent non-self consistent (NSCF) step in an electronic band structure calculation, which is reviewed in a [separate tutorial](../dft/electronic/band-structure.md).
+This page explains how to **restart** a [Job](../../jobs/overview.md) from the **results of a previous calculation**.  We will make use of the "restart" functionality to feed the wavefunction data obtained in a self-consistent field (SCF) [Total Energy](../../properties-directory/scalar/total-energy.md) computation to the subsequent non-self consistent (NSCF) step in an electronic band structure calculation, which is reviewed in a [separate tutorial](../dft/electronic/band-structure.md).
 
-Restarting and linking the two Jobs in this way allows the band structure to be computed without having to recalculate the charge density and wavefunctions through an SCF calculation a second time. The results of such  SCF Job can thus be re-utilized as starting point for multiple other calculations that require such preliminary results.
+Restarting and linking the two Jobs in this way allows the band structure to be computed without having to recalculate the charge density and wavefunctions through an SCF calculation a second time, with the consequent gain in computational time. The results of such  SCF Job can thus be re-utilized as starting point for multiple other calculations that require such preliminary results.
 
 ## Select Parent Job
 
@@ -21,5 +21,5 @@ The same instructions for submitting and executing the restart Job as in the mai
 In the following animation, we demonstrate the above-mentioned steps involved in restarting an NSCF electronic band structure computation, performed on silicon, based upon the preliminary results of a previously-run SCF calculation. We shall make use of the [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the present example, however the same procedure and outcome should be of general applicability. 
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/088lBmRzZ98" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/xRgRlpJkB-c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
