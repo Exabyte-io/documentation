@@ -643,7 +643,8 @@ nav:
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
         - General Functionality:
                 - Restart from Previous Job:             tutorials/other/restart-job.md
-                - VESTA via Remote Desktop:              tutorials/other/remote-desktop.md
+        - Materials:
+                - VESTA via Remote Desktop:              tutorials/materials/remote-desktop.md
 
 
 # TUTORIALS AND EXAMPLES
