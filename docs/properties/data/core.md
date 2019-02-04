@@ -1,6 +1,10 @@
-# Schema Types
+# Core Schema Types
+
+The core schema types are classified into **primitive** and **abstract** outlined below.
 
 ## Primitive
+
+The primitive schemas are derived from the default JSON primitives and do not have physical meaning.
 
 ### 1D Data Series 
 
@@ -41,6 +45,8 @@ Used for plotting. It has a label to describe the type of data on the axis and u
 ```
 
 ## Abstract
+
+The abstract schemas outline the data structure of abstract concepts (e.g. a point) and are derived from the primitive schemas. 
 
 ### 2D Data
 
