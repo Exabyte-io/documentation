@@ -14,11 +14,11 @@ Also listed below, is an example of a JSON representation of the [total energy](
   </summary> 
 
 ```json tab="Schema"
-{!schema/material/properties/primary/total_energy.json!}
+{!schema/properties_directory/scalar/total_energy.json!}
 ```
 
 ```json tab="Example"
-{!example/material/properties/primary/total_energy.json!}
+{!example/properties_directory/scalar/total_energy.json!}
 ```
 
 </details> 
