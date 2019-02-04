@@ -25,7 +25,7 @@ Also listed below, is an example of a JSON representation of the [total energy](
 
 ## [Core Schema Types](core.md)
 
-In addition to the default primitive types for JSON Schemas, we construct additional types used for constructing the representations of properties. The core schemas are classified into primitive and abstract. The primitive schemas are derived from the default JSON primitives and do not have physical meaning. The abstract schemas outline the data structure of an abstract concept (e.g. a point) and are derived from the primitive schemas. We provide a list of available schema types [in this page](core.md).
+In addition to the default primitive types for JSON Schemas, we construct additional types used for constructing the representations of properties. The core schemas are classified into primitive and abstract. The primitive schemas are derived from the default JSON primitives and do not have physical meaning. The abstract schemas outline the data structure of abstract concepts (e.g. a point) and are derived from the primitive schemas. We provide a list of available schema types [in this page](core.md).
 
 ## [List of Schemas](list.md)
 
