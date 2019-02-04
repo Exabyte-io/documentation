@@ -5,19 +5,19 @@ We present in this page the [structured representations](../../../data-structure
 ## Application
 
 ```json tab="Schema" 
-{!schema/software/modeling/espresso.json!}
+{!schema/software_directory/modeling/espresso.json!}
 ```
 
 ```json tab="Example" 
-{!example/software/modeling/espresso.json!}
+{!example/software_directory/modeling/espresso.json!}
 ```
 
 ## Compute Parameters
 
 ```json tab="Schema" 
-{!schema/software/modeling/espresso/arguments.json!}
+{!schema/software_directory/modeling/espresso/arguments.json!}
 ```
 
 ```json tab="Example" 
-{!example/software/modeling/espresso/arguments.json!}
+{!example/software_directory/modeling/espresso/arguments.json!}
 ```
