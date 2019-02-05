@@ -45,7 +45,7 @@ Doing this will open a "New Data" dialog, with which new crystal structures such
  
 The user should first enter the aforementioned lattice parameters of the Iron body-centred cubic unit cell under the "Unit Cell" tab of the dialog. Here, the relevant cubic space group (Im-3m, number 229) can also be selected.
  
-Secondly, the atomic positions and chemical identity of both the Na and Cl atoms should be inserted within the "Structure Parameters" tab, by clicking on "New" button every time a new atom is added to those already listed under the central table in this tab.
+Secondly, the atomic positions and chemical identity of the atoms present within the crystal structure should be inserted within the "Structure Parameters" tab, by clicking on "New" button every time a new atom is added on top of those already listed under the central table in this tab. In our case, only a single Fe atom at the origin needs to be added, since the second atom at the centre of the unit cell is already related to it by the space group symmetry selected in the preceding step.
 
 At the end of entering the appropriate crystallographic data for bcc Iron, the "New Data" dialog should be closed and the corresponding changes recorded by clicking the `OK` button at the bottom of the dialog. The view will hence be returned to the main VESTA interface, with which the crystal structure of bcc Iron can be visualized and manipulated graphically at will by the user.
 
@@ -74,5 +74,5 @@ We begin with the creation and visualization of a new bcc Iron crystal structure
 We conclude this animation by saving the crystal structure data under the POSCAR format to the [Dropbox Folder](../../data-in-objectstorage/dropbox.md), and by later retrieving it under the Web Interface in order to upload it and inserting it into the account-owned [collection](../../accounts/collections.md) of materials. This new material entry is finally inspected under the [Materials Viewer Interface](../../materials/ui/viewer.md).
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Kp_E6ct-W3w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/JMOsF98zJ9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
