@@ -53,5 +53,5 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 As expected, the components of both the atomic forces and [stress tensor](../../../properties-directory/non-scalar/stress-tensor.md) shown at the end of the structural relaxation computation, under the interface of [Results tab](../../../jobs/ui/results-tab.md), have low values in proximity to zero, signalling successful relaxation and geometry optimization.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Pvo-qaIEM5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/RQkEYNhxruw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
