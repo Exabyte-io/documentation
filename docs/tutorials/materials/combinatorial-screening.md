@@ -1,6 +1,6 @@
-# Combinatorial Screening
+# Generate Combinatorial Sets
 
-This tutorial demonstrates how to create a **combinatorial set** of of III-V compound semiconductor materials, with permutations and combinations of n and p-type dopants. This **combinatorial screening** could for example be used to investigate the impact of inserting dopants onto the [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) of these semiconductors. 
+This tutorial demonstrates how to create a **combinatorial set** of III-V compound semiconductor materials with permutations and combinations of n and p-type dopants. This **combinatorial screening** could for example be used to investigate the impact of inserting dopants onto the [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) of such semiconductors. 
 
 We shall make use of [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine for this tutorial.
 
@@ -119,6 +119,8 @@ An example of this functionality is provided [in this page](../../materials-desi
 
 ## Animation
 
+We demonstrate how the above-mentioned combinatorial sets can be generated within [Materials Designer](../../materials-designer/overview.md) in the following animation, where we first import the original Gallium Phosphide crystal structure.
 
-
-
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/em55roTB7fc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
