@@ -16,7 +16,7 @@ It is critical to have a high [q-point density](../../../models/auxiliary-concep
 
 The Phonon calculation workflow based on Quantum ESPRESSO is composed of multiple [units](../../../workflows/components/units.md). The first unit specifies the settings for the self-consistent calculation of the energy eigenvalues and wave functions. The subsequent units are narrated in detail in the theoretical explanation contained in Ref. [^1] of [this page](../../../models/auxiliary-concepts/reciprocal-space/sampling.md).
 
-We set the size of the [grid of q-points (q-grid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md#other-types-of-reciprocal-space-grids) to 6 x 6 x 6 under the [Important Settings](../../../workflow-designer/subworkflow-editor/important-settings.md) of [Workflow Designer](../../../workflow-designer/overview.md). This provides a dense enough q-point sampling in order to resolve the fine features present within the output of the phonon dispersion computation. 
+We set the size of the [grid of q-points (q-grid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md#other-types-of-reciprocal-space-grids) to 3 x 3 x 3 under the [Important Settings](../../../workflow-designer/subworkflow-editor/important-settings.md) of [Workflow Designer](../../../workflow-designer/overview.md). This provides a dense enough q-point sampling in order to resolve the fine features present within the output of the phonon dispersion computation. In order to make the phonon calculation more computationally manageable, we also reduce the size of the grid of electronic k-points from its original default value to 6 x 6 x 6 grid size.
 
 In addition, the associated [i-grid](../../../models/auxiliary-concepts/reciprocal-space/sampling.md#other-types-of-reciprocal-space-grids) necessary for performing the transformation to and from the reciprocal and real space, and subsequent interpolation, should be set to 18 x 18 x 18.
 
@@ -24,18 +24,20 @@ Finally, we also apply the recommended [q-point path](../../../models/auxiliary-
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and examine the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Silicon is a small structure, so 4 CPUs and 1 minute of calculation runtime should be sufficient.
+Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and examine the [compute parameters](../../../infrastructure/compute/parameters.md) included therein. 
+
+Phonon calculations are quite computationally expensive and therefore, despite Silicon being a small structure, the user should account for at least 45 minutes of calculation runtime executed on 16 compute cores for example.
 
 ## Examine Final Results
 
 When all [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [phonon lattice vibrations](../../../properties-directory/non-scalar/phonon-dispersions.md) of silicon, plotted as a dispersion curve as a function of the special [q-point path](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen in the preceding steps.
 
-The plot for the [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) can also be retrieved in the [Results tab](../../../jobs/ui/results-tab.md), directly below the dispersion curve. 
+The plot for the [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) can also be retrieved in the [Results tab](../../../jobs/ui/results-tab.md), directly above the dispersion curve. 
 
 ## Animation
 
 We demonstrate the above-mentioned steps involved in the creation and execution of a phonon lattice vibration computation on silicon, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3ekwtYJyj4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/em55roTB7fc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
