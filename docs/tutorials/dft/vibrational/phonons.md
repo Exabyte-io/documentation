@@ -1,6 +1,6 @@
 # Phonon Dispersions and Density of States Calculation
 
-This tutorial page explains how to calculate the [Phonon Dispersion Curves](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Density of States](../../../properties-directory/non-scalar/phonon-dos.md) of materials based on [Density Functional Theory](../../../models-directory/dft/overview.md). We will be studying crystalline Silicon in the standard cubic-diamond crystal structure, and we will use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine.
+This tutorial page explains how to calculate the [Phonon Dispersion Curves](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) of materials based on [Density Functional Theory](../../../models-directory/dft/overview.md). We will be studying crystalline Silicon in the standard cubic-diamond crystal structure, and we will use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine.
 
 ## Create Job
 
@@ -28,7 +28,7 @@ Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overvi
 
 ## Examine Final Results
 
-When all [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [phonon lattice vibrations](../../../properties-directory/non-scalar/phonon-dispersions.md) of silicon, plotted as a dispersion curve as a function of the special [q-point paths](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen.
+When all [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [phonon lattice vibrations](../../../properties-directory/non-scalar/phonon-dispersions.md) of silicon, plotted as a dispersion curve as a function of the special [q-point path](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen in the preceding steps.
 
 The plot for the [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) can also be retrieved in the [Results tab](../../../jobs/ui/results-tab.md), directly below the dispersion curve. 
 
