@@ -8,4 +8,4 @@ We explain [in this tutorial](remote-desktop.md) how a new crystal structure of 
 
 ## [Generate Combinatorial Sets](combinatorial-screening.md)
 
-In [this other tutorial](combinatorial-screening.md), we outline the implementation of [combinatorial sets](../../materials-designer/header-menu/advanced/combinatorial-set.md) for generating combinations and permutations of n and p-type dopant atoms in Gallium Phosphide.
+In [this other tutorial](combinatorial-screening.md), we outline the implementation of [combinatorial sets](../../materials-designer/header-menu/advanced/combinatorial-set.md) for generating combinations and permutations of n and p-type dopant atoms in the Gallium Phosphide (GaP) semiconducting material structure.
