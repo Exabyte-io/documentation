@@ -618,6 +618,7 @@ nav:
             - Overview:                              tutorials/jobs-cli/overview.md
             - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
             - View Results:                          tutorials/jobs-cli/view-results.md
+            - Import to Web Interface:               tutorials/jobs-cli/cli-job-import.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
             - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
