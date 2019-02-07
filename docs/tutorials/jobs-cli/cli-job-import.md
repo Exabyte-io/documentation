@@ -32,7 +32,7 @@ Below, the reader can find a [sample job script file](../../jobs-cli/batch-scrip
 
 cd $PBS_O_WORKDIR
 module load vasp/535-g-485-ompi-110
-mpirun -np 1 vasp > vasp.log
+mpirun -np 4 vasp > vasp.log
 ```
 
 !!!note "Simple job scripts"
@@ -46,7 +46,7 @@ First, [navigate](../../remote-connection/actions/open-terminal.md) to the [Web 
 
 In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the output files along with simulation results under the [Web Interface](../../ui/overview.md), the `#PBS -web` [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md). This directive instructs our software to automatically parse the output of the calculation, and send back the results to the web application. After doing this, the job can then be [submitted](../../jobs-cli/actions/submit.md) as usual.
 
-Once the job starts executing, you should be able to see the job entry in the web interface under [Job Explorer](../../jobs/ui/explorer.md), and thus monitor the [status](../../jobs/status.md) of its execution.
+Once the job starts executing, you should be able to see the job entry in the web interface under [Jobs Explorer](../../jobs/ui/explorer.md), and thus monitor the [status](../../jobs/status.md) of its execution.
 
 !!!note "Defining project name"
     If the job belongs to a specific [project](../../jobs/projects.md), then the project name should also be specified with the `#PBS -A project_name` [directive](../../jobs-cli/batch-scripts/directives.md) within the [job submission script](../../jobs-cli/batch-scripts/overview.md).
@@ -64,4 +64,14 @@ The user should then see a success message appearing after the command finishes 
 !!!note "Enter full path"
     Please be advised that the **full** path to the job script should be entered in the above command.
 
-After running the command, the user should then navigate to the [Job Explorer Interface](../../jobs/ui/explorer.md). He/she should consequently be able to notice a new entry added there related to the job.
+After running the command, the user should then navigate to the [Jobs Explorer Interface](../../jobs/ui/explorer.md). He/she should consequently be able to notice a new entry added there related to the job.
+
+## Animation 
+
+In the below video, we first navigate to a directory under the [command-line interface](../../cli/overview.md) where we have copied the contents of the [VASP template Job](../../jobs-cli/batch-scripts/directories.md#job-templates). Here, we edit the [job submission script](../../jobs-cli/batch-scripts/overview.md) to insert the aforementioned `#PBS -web` [directive](../../jobs-cli/batch-scripts/directives.md).
+ 
+ This allows us to monitor the job [status](../../jobs/status.md) under [Jobs Explorer](../../jobs/ui/explorer.md) in [Web Interface](../../ui/overview.md), which we inspect towards the end of the animation.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/JMOsF98zJ9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
