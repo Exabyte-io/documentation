@@ -122,5 +122,5 @@ An example of this functionality is provided [in this page](../../materials-desi
 We demonstrate how the above-mentioned combinatorial sets can be generated within [Materials Designer](../../materials-designer/overview.md) in the following animation, where we first import the original Gallium Phosphide crystal structure.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/FBEOWWT1594" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MMalsDix0Qc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
