@@ -20,7 +20,7 @@ Below, the reader can find a [sample job script file](../../jobs-cli/batch-scrip
 ```bash
 #!/bin/bash
 
-#PBS -web
+#PBS -R y
 #PBS -N job_name
 #PBS -l nodes=1
 #PBS -l ppn=1
@@ -44,7 +44,7 @@ First, [navigate](../../remote-connection/actions/open-terminal.md) to the [Web 
 
 ## Import New Job Results
 
-In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the output files along with simulation results under the [Web Interface](../../ui/overview.md), the `#PBS -web` [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md). This directive instructs our software to automatically parse the output of the calculation, and send back the results to the web application. After doing this, the job can then be [submitted](../../jobs-cli/actions/submit.md) as usual.
+In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the output files along with simulation results under the [Web Interface](../../ui/overview.md), the `#PBS -R y` [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md) (it is enabled by default). This directive instructs our software to automatically parse the output of the calculation, and send back the results to the web application. After doing this, the job can then be [submitted](../../jobs-cli/actions/submit.md) as usual.
 
 Once the job starts executing, you should be able to see the job entry in the web interface under [Jobs Explorer](../../jobs/ui/explorer.md), and thus monitor the [status](../../jobs/status.md) of its execution.
 
@@ -53,7 +53,7 @@ Once the job starts executing, you should be able to see the job entry in the we
 
 ## Import Finished Job Results
 
-If a job was previously submitted without adding the `#PBS -web` directive, its results can still be imported into web interface. Under the [command-line interface](../../cli/overview.md), the following command should be run.
+If a job was previously submitted and was not set to be registered under the web interface, its results can still be imported into web interface. Under the [command-line interface](../../cli/overview.md), the following command should be run.
 
 ```bash
 exajob_parse -j=/path/to/job/script
@@ -68,10 +68,10 @@ After running the command, the user should then navigate to the [Jobs Explorer I
 
 ## Animation 
 
-In the below video, we first navigate to a directory under the [command-line interface](../../cli/overview.md) where we have copied the contents of the [VASP template Job](../../jobs-cli/batch-scripts/directories.md#job-templates). Here, we edit the [job submission script](../../jobs-cli/batch-scripts/overview.md) to insert the aforementioned `#PBS -web` [directive](../../jobs-cli/batch-scripts/directives.md).
+In the below video, we first navigate to a directory under the [command-line interface](../../cli/overview.md) where we have copied the contents of the [VASP template Job](../../jobs-cli/batch-scripts/directories.md#job-templates). Here, we edit the [job submission script](../../jobs-cli/batch-scripts/overview.md) to insert the aforementioned `#PBS -R y` [directive](../../jobs-cli/batch-scripts/directives.md) for completeness, even though as explained earlier this directive is already enabled by default.
  
- This allows us to monitor the job [status](../../jobs/status.md) under [Jobs Explorer](../../jobs/ui/explorer.md) in [Web Interface](../../ui/overview.md), which we inspect towards the end of the animation.
+This allows us to monitor the job [status](../../jobs/status.md) under [Jobs Explorer](../../jobs/ui/explorer.md) in [Web Interface](../../ui/overview.md), which we inspect towards the end of the animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/JMOsF98zJ9k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/p7ex0V0husY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
