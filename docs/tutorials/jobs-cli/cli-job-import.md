@@ -44,9 +44,11 @@ First, [navigate](../../remote-connection/actions/open-terminal.md) to the [Web 
 
 ## Import New Job Results
 
-In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the output files along with simulation results under the [Web Interface](../../ui/overview.md), the `#PBS -R y` [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md) (it is enabled by default). This directive instructs our software to automatically parse the output of the calculation, and send back the results to the web application. After doing this, the job can then be [submitted](../../jobs-cli/actions/submit.md) as usual.
+In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the output files along with simulation results under the [Web Interface](../../ui/overview.md), the `#PBS -R y` [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md) (it is enabled by default). This directive instructs our software to automatically parse the output of the calculation, and send back the results to the web interface. After adding this directive, the job can then be [submitted](../../jobs-cli/actions/submit.md) as usual.
 
 Once the job starts executing, you should be able to see the job entry in the web interface under [Jobs Explorer](../../jobs/ui/explorer.md), and thus monitor the [status](../../jobs/status.md) of its execution.
+
+This feature can conversely be disabled by inserting the `#PBS -R n` directive in the [job submission script](../../jobs-cli/batch-scripts/overview.md).
 
 !!!note "Defining project name"
     If the job belongs to a specific [project](../../jobs/projects.md), then the project name should also be specified with the `#PBS -A project_name` [directive](../../jobs-cli/batch-scripts/directives.md) within the [job submission script](../../jobs-cli/batch-scripts/overview.md).
