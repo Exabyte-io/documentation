@@ -5,9 +5,9 @@ In order to organize and store the information about [Methods](overview.md) on o
 Below, the user can find an example JSON structured representation of a [Method](overview.md). 
 
 ```json tab="Schema" 
-{!schema/workflow/subworkflow/model/method.json!}
+{!schema/method.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/subworkflow/model/method.json!}
+{!example/method.json!}
 ```

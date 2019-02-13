@@ -471,7 +471,7 @@ nav:
             - Retrieval:                                properties/lifecycle/retrieval.md
         - Data:
             - Overview:                                 properties/data/overview.md
-            - Primitive:                                properties/data/primitive.md
+            - Core:                                     properties/data/core.md
             - List of Schemas:                          properties/data/list.md
             - Periodic Table:                           properties/data/periodic-table.md
         - Classification:

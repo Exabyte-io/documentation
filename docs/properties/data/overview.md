@@ -14,18 +14,18 @@ Also listed below, is an example of a JSON representation of the [total energy](
   </summary> 
 
 ```json tab="Schema"
-{!schema/material/properties/primary/total_energy.json!}
+{!schema/properties_directory/scalar/total_energy.json!}
 ```
 
 ```json tab="Example"
-{!example/material/properties/primary/total_energy.json!}
+{!example/properties_directory/scalar/total_energy.json!}
 ```
 
 </details> 
 
-## [Primitive Schema Types](primitive.md)
+## [Core Schema Types](core.md)
 
-In addition to the default primitive types for JSON Schemas, we construct additional types types used for constructing the representations of numeric properties specifically. Primitive types are abstract and do not have physical meaning, but can hold the data. We provide a list of available primitive schema types [in this page](primitive.md).
+In addition to the default primitive types for JSON Schemas, we construct additional types used for constructing the representations of properties. A list of available schema types are provided [in this page](core.md).
 
 ## [List of Schemas](list.md)
 
