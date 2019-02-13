@@ -638,6 +638,7 @@ nav:
             - Vibrational Properties:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
+                - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
