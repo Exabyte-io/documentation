@@ -1,4 +1,5 @@
 <!-- TODO: TB to review more in details -->
+<!-- TODO: TB/MM consider explaining the logic for final_structure extraction in Rupy/Webapp and its storage in material set(s) -->
 
 # What is a structural relaxation calculation?
 
