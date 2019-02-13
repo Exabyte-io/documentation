@@ -1,8 +1,8 @@
 # Create Materials With VESTA under Remote Desktop
 
-The present tutorial describes the steps necessary for connecting to our platform via a [Remote Desktop](../../remote-connection/remote-desktop.md) session, in order to create and manipulate a newly-created [material structure](../../materials/overview.md) through the pre-installed [VESTA](../../software-directory/analysis/vesta.md) graphical analysis and visualization software. 
+The present tutorial describes the steps necessary for connecting to our platform via a [Remote Desktop](../../remote-connection/remote-desktop.md), in order to create and manipulate a [material structure](../../materials/overview.md) through [VESTA](../../software-directory/analysis/vesta.md) graphical analysis and visualization software.
 
-We shall then demonstrate how this new crystal structure can later be retrieved within the account-owned [collection](../../accounts/collections.md) of materials, accessible via the [Materials Explorer](../../materials/ui/explorer.md) of our [Web Interface](../../ui/overview.md). This transfer of the structure information is achieved through the help of the [Dropbox functionality](../../data-in-objectstorage/dropbox.md) of our platform.
+We demonstrate how this new crystal structure can be retrieved within the account-owned [collection](../../accounts/collections.md) of materials, accessible via the [Materials Explorer](../../materials/ui/explorer.md) of our [Web Interface](../../ui/overview.md). This transfer of the structure information is achieved through the help of the [Dropbox functionality](../../data-in-objectstorage/dropbox.md) of our platform.
  
 Additional analysis software similar to VESTA can be retrieved under Remote Desktop, as introduced under the list presented [herein](../../software-directory/overview.md#analysis-tools). 
 
@@ -21,7 +21,7 @@ The user should now [follow this procedure](../../remote-connection/actions-rd/o
 
 ## Use VESTA to Create a New Crystal Structure 
 
-In the context of this tutorial, we shall make use of VESTA to create a new crystal structure consisting in **bcc Iron**, taken in its two-atom conventional unit cell representation. We remind the reader about the basic features of such a crystal structure.
+We use VESTA to create a new crystal structure consisting in **bcc Iron**, taken in its two-atom conventional unit cell representation. We remind the reader about the basic features of such a crystal structure.
 
 - Space Group: Im-3m
 

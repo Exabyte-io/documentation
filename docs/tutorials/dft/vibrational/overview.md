@@ -6,6 +6,6 @@ In the present section, we introduce the most common operations supported on our
 
 We review the procedure for computing the [Zero Point Energy](../../../properties-directory/scalar/zero-point-energy.md) of crystalline samples [in this tutorial](zero-point-energy.md).
 
-## [Phonons Dispersion Curve and Density of States](phonons.md)
+## [Phonon Dispersion Curve and Density of States](phonon-dispersion-dos.md)
 
-We review the procedure for computing the [vibrational phonon dispersion curve](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) of material samples [in this tutorial](phonons.md).
+We review the procedure for computing the [vibrational phonon dispersion curve](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) of material samples [in this tutorial](phonon-dispersion-dos.md).
