@@ -405,3 +405,20 @@ The following list of words should be avoided:
 - Various 
 - Automatically
 - Finally
+
+
+## Note: mkdocs-pdf-export-plugin
+
+Install the required dependencies before installing the [plugin itself](https://github.com/shauser/mkdocs-pdf-export-plugin) as shown below. The plugin allows to export the documentation into pdf document(s).
+
+```bash
+brew install cairo pango gdk-pixbuf libffi
+```
+
+Install [pyenv](https://github.com/pyenv/pyenv) to control python versions and install python3 (3.7.0) through it.
+
+After that, create a virtual environment as below, and use it to serve mkdocs:
+
+```bash
+virtualenv -p python3 .virtualenv-3.7.0
+```
