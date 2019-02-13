@@ -639,17 +639,16 @@ nav:
             - Vibrational Properties:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
-                - Phonons:                               tutorials/dft/vibrational/phonons.md
+                - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
         - General Functionality:
-                - Restart from Previous Job:             tutorials/other/restart-job.md
+            - Restart from Previous Job:             tutorials/other/restart-job.md
         - Materials:
-                - Overview:                              tutorials/materials/overview.md
-                - VESTA via Remote Desktop:              tutorials/materials/remote-desktop.md
-                - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
-
+            - Overview:                              tutorials/materials/overview.md
+            - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
+            - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
 
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable
