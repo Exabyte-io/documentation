@@ -644,7 +644,7 @@ nav:
         - General Functionality:
                 - Restart from Previous Job:             tutorials/other/restart-job.md
         - Materials:
-                - VESTA via Remote Desktop:              tutorials/materials/remote-desktop.md
+                - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
 
 
 # TUTORIALS AND EXAMPLES
