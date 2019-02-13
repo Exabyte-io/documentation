@@ -1,12 +1,12 @@
 # Generate Combinatorial Sets
 
-This tutorial demonstrates how to create a **combinatorial set** of III-V compound semiconductor materials with permutations and combinations of n and p-type dopants. This **combinatorial screening** could for example be used to investigate the impact of inserting dopants onto the [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) of such semiconductors. 
+This tutorial demonstrates how to create a **combinatorial set** of materials. We use III-V semiconductor compounds as example with permutations and combinations of n and p-type dopants. Combinatorial set of materials can be used to execute **combinatorial screening** to investigate, for example, the impact of inserting dopants on the [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) of such semiconductors. 
 
-## Import Material into Account-owned Collection
+## Import Material into Collection
 
-We begin by importing one of the III-V compound semiconductors, Gallium Phosphide (GaP), into the user's [collection](../../accounts/collections.md) of materials, starting from which we will then build further combinatorial sets. This crystal structure can be imported directly from the Materials Project repository, by following the instructions outlined in [this page](../../materials/actions/import.md). The user should bear in mind that the F-43m space group option is the lowest energy, and therefore most stable, polymorph of GaP. 
+We begin by importing one of the III-V compound semiconductors, Gallium Phosphide (GaP), into the user's [collection](../../accounts/collections.md) of materials, starting from which we will then build further combinatorial sets. This crystal structure can be **imported** directly from a remote repository, by following the instructions outlined in [this page](../../materials/actions/import.md).We select the F-43m space group lowest energy structure, the most stable, polymorph of GaP. 
 
-## Import Material into Materials Designer
+## Use Material in Materials Designer
 
 The reader should now [open](../../entities-general/actions/create.md) a new instance of the [Materials Designer Interface](../../materials-designer/overview.md) for creating and designing new material structures. The first step here involves importing the above-mentioned Gallium Phosphide crystal structure into the designer itself, via the [Import option](../../materials-designer/header-menu/input-output/import.md) under the [Input/Output Menu](../../materials-designer/header-menu/input-output.md) of the interface.
 
