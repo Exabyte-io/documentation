@@ -643,10 +643,11 @@ nav:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
         - General Functionality:
-                - Restart from Previous Job:             tutorials/other/restart-job.md
+            - Restart from Previous Job:             tutorials/other/restart-job.md
         - Materials:
-                - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
-
+            - Overview:                              tutorials/materials/overview.md
+            - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
+            - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
 
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable
