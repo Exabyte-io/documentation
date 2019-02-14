@@ -22,6 +22,7 @@ from googleapiclient.discovery import build
 
 # Top-level directory for multiple languages
 LANGUAGE_DIR_PREFIX = 'lang'
+DEFAULT_LANGUAGE = 'en'
 DEFAULT_LANGUAGE_CODE = 'ja'
 # Number of new files to translate / API requests.
 # Total number of .md files in repo is ~500 as of 2019-02.
@@ -78,7 +79,9 @@ def write_array_as_file(array, filename, separator="\n"):
         f1.write(separator.join(array).encode('utf-8'))
 
 def translate_filename(filename, force_overwrite = False):
-    filename_translation = os.path.join(LANGUAGE_DIR_PREFIX, language_code, filename)
+    filename_translation = os.path.join(LANGUAGE_DIR_PREFIX, language_code,
+        filename.replace(os.path.join(LANGUAGE_DIR_PREFIX, DEFAULT_LANGUAGE), ""))
+    print(filename_translation)
     if os.path.isfile(filename_translation) and not force_overwrite:
         print("Existing translation found for {0}".format(filename))
         return 0
@@ -119,7 +122,7 @@ if __name__ == '__main__':
     break_out_of_loop = False
     threshold = args.threshold if args.threshold else DEFAULT_THRESHOLD
 
-    for path, subdirs, files in os.walk("./docs/"):
+    for path, subdirs, files in os.walk("./lang/en/docs/"):
         if break_out_of_loop: continue
         for name in files:
             if break_out_of_loop: continue
