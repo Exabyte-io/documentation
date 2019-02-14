@@ -17,6 +17,7 @@ import errno
 import os
 import io
 import re
+import time
 from googleapiclient.discovery import build
 
 # Top-level directory for multiple languages
@@ -127,5 +128,8 @@ if __name__ == '__main__':
                 filename = os.path.join(path, name)
                 increment = translate_filename(filename)
                 translated_files_counter += increment
+                # To avoid "Rate Limit Exceeded"
+                # https://cloud.google.com/translate/quotas
+                if increment > 0: time.sleep(2)
                 if translated_files_counter >= threshold:
                     break_out_of_loop = True
