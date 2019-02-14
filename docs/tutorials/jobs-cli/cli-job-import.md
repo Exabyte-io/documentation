@@ -9,7 +9,7 @@ When this feature is employed, the user can directly see the job output files au
 We use the content of the [job submission script file](../../jobs-cli/batch-scripts/overview.md) in order to collect job information and create an entry for it inside the web interface. Currently, only simple job scripts containing a single [execution command](../../jobs-cli/batch-scripts/general-structure.md#4.-commands) are supported. Hence, the user should make sure that the script's content is properly formatted and straightforward. 
 
 !!!info "Work in Progress"
-    In the future, we will attempt to extract the properties in a more sophisticated way.
+    In the future, we will attempt to extract the properties in a more sophisticated way, including making them available under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md).
 
 [In this page](../../jobs-cli/batch-scripts/sample-scripts.md), the reader can find **sample job script files** for running  [Job simulations via Command Line Interface](../../jobs-cli/overview.md) that can be used as template. The general structure of such scripts is instead explained [here](../../jobs-cli/batch-scripts/general-structure.md).
 
@@ -32,9 +32,6 @@ This directive instructs our software to automatically parse the output of the c
 Once the job starts executing, the user should be able to see the job entry in the web interface under [Jobs Explorer](../../jobs/ui/explorer.md), and thus monitor the corresponding [status](../../jobs/status.md) of its execution.
 
 This feature can conversely be disabled by inserting the `#PBS -R n` directive in the [job submission script](../../jobs-cli/batch-scripts/overview.md).
-
-!!!note "Defining project name"
-    If the job belongs to a specific [project](../../jobs/projects.md), then the project name should also be specified with the `#PBS -A project_name` [directive](../../jobs-cli/batch-scripts/directives.md) within the [job submission script](../../jobs-cli/batch-scripts/overview.md).
 
 ## Animation 
 
