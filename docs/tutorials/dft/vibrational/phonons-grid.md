@@ -54,6 +54,8 @@ The final "Reduce" subworkflow collects together the results of the previous cal
 
 These combined results are then used to complete the phonon dispersion and density of states calculation, through the help of the Quantum ESPRESSO "q2r" and "matdyn" [executables](../../../software-directory/modeling/quantum-espresso/components.md#executables). 
 
+## Animation
+
 
 ## Links
 
