@@ -2,7 +2,7 @@
 
 This tutorial page explains how to calculate the [Phonon Dispersion Curves](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) of materials based on [Density Functional Theory](../../../models-directory/dft/overview.md). We will be studying crystalline Silicon in the standard cubic-diamond crystal structure, and we will use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine.
 
-What sets the present tutorial apart from the [other tutorial](phonons.md) on phonon calculations is the employment of the "Grid Method" for computing the vibrational properties of materials, which is reviewed in the subsequent paragraph. This method is based on a [map type workflow](../../../workflows/components/maps.md), where multiple branches are executed in parallel as separate independent [Jobs](../../../jobs/overview.md), with the consequent gain in computational efficiency and overall speed of the phonon calculation. More information on this method, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [^1].
+What sets the present tutorial apart from the [other tutorial](phonon-dispersion-dos.md) on phonon calculations is the employment of the "Grid Method" for computing the vibrational properties of materials, which is reviewed in the subsequent paragraph. This method is based on a [map type workflow](../../../workflows/components/maps.md), where multiple branches are executed in parallel as separate independent [Jobs](../../../jobs/overview.md), with the consequent gain in computational efficiency and overall speed of the phonon calculation. More information on this method, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [^1].
 
 ## The Grid Method for Phonon Calculations
 
@@ -54,8 +54,22 @@ The final "Reduce" subworkflow collects together the results of the previous cal
 
 These combined results are then used to complete the phonon dispersion and density of states calculation, through the help of the Quantum ESPRESSO "q2r" and "matdyn" [executables](../../../software-directory/modeling/quantum-espresso/components.md#executables). 
 
+## Creating and Executing Job
+
+"Phonon Map" [workflows](../../../workflows/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) into the account-owned [collection](../../../accounts/collections.md) from the [Workflows Bank](../../../workflows/bank.md).
+ 
+Apart from this, the same procedural instructions as in the [other phonons calculation tutorial](phonon-dispersion-dos.md) should be followed for [creating and launching](../../../jobs-designer/overview.md) the corresponding grid-based phonon [Job](../../../jobs/overview.md) through our [Web Interface](../../../ui/overview.md), and for inspecting the associated results.
+
 ## Animation
 
+In the video animation below, we outline the procedure for creating and executing a phonon calculation job via the Grid Method. We conclude by inspecting the corresponding results for the [Phonon Dispersion Curves](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Density of States](../../../properties-directory/non-scalar/phonon-dos.md), considering crystalline silicon as our demonstrative sample operated in conjunction with the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine.  
+
+!!!tip "Computational cost of phonon calculation"
+    Phonon calculations are in general quite computationally demanding. We therefore recommend the employment of at least 8 computing cores. For larger calculations, [OF queues](../../../infrastructure/resource/queues.md) will have faster turnaround than the OR queues considered in the video.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3P-ETsxj81I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Links
 
