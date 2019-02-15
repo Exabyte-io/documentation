@@ -8,6 +8,8 @@ What sets the present tutorial apart from the [other tutorial](phonon-dispersion
 
 The Grid Method allows for an efficient **parallelization** of the tasks for calculating the individual vibrational modes. This method optimizes the corresponding [workflow](../../../workflows/overview.md) in order to obtain the frequencies for each individual **symmetry-irreducible representation** [^2] of the phonon lattice perturbations in parallel.   
 
+### Steps Involved in Grid Method
+
 We thus implement a grid-parallel workflow for the calculation of the phonon dynamical matrices, initially explained in the first reference cited [in this page](../../../models/auxiliary-concepts/reciprocal-space/sampling.md). During the actual phonon calculation part of the workflow, the following steps happen:
 
 - First, the irreducible representations for the vibrational modes (irreps) are generated, based on the [sampling grid in the reciprocal space](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) (**q-point grid**). 
@@ -17,6 +19,8 @@ We thus implement a grid-parallel workflow for the calculation of the phonon dyn
 - Finally, after the calculations for all irreps-q points pairs are finished, the  dynamical  matrices  are  collected and aggregated together, and phonon  dispersions  and  density  of  states  are  calculated (**"reduce" stage**).
 
 Thus, we employ a **"map-reduce"** general type of logic and scenario within the overall workflow, where the individual calculation tasks are performed independently and in parallel with one another. This allows for an improved efficiency and speedup of phonon calculations compared to the [more traditional serial approach](phonon-dispersion-dos.md), such that the limiting factor within the overall calculation is the longest run per individual irreducible representation-q point pair.
+
+### Schematic Visualization of Grid Method
 
 A schematic summary of the above workflow procedure is offered in the figure below. This flowchart depicts all different approaches to the calculation of the phonon dispersions and lattice vibrations. The approach used in the present tutorial is the rightmost one. Here, ”SCF” stands for the self consistent field preliminary calculation,  ”ph.x” denotes the  phonon  calculations  by  means  of  Density  Functional  Perturbation  Theory, and  "irrep"  is  an  irreducible  representation  of  a vibrational phonon mode. 
 
@@ -68,7 +72,7 @@ In the video animation below, we outline the procedure for creating and executin
     Phonon calculations are in general quite computationally demanding. We therefore recommend the employment of at least 8 computing cores. For larger calculations, [OF queues](../../../infrastructure/resource/queues.md) will have faster turnaround than the OR queues considered in the video.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3P-ETsxj81I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/IWtUgsGwHzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
