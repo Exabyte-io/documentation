@@ -2,6 +2,8 @@
 
 This tutorial page explains how to calculate the [surface energy](../../../properties-directory/scalar/surface-energy.md) of [materials](../../../materials/overview.md) based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
 
+More information on the conduction of surface energy calculations, together with their results on a sample set of materials, can be found in Ref. [^1].
+
 ## Verifications
 
 In order to enable the surface energy calculations, the following checks have to be performed:
@@ -28,5 +30,8 @@ The logic underlying a surface energy workflow is in general quite complex. The 
 how we communicate with a database through it during the workflow execution, plus how we store the metadata about a surface inside the corresponding field of a material
 -->
 
+## Links
+
+[^1]: [Tran R., Xu Z., Radhakrishnan B., Winston D., Sun W., Persson K.A., Ong S.P.: "Surface energies of elemental crystals"; Nature Sci. Data., 3 (2016)](https://www.nature.com/articles/sdata201680)
 
 
