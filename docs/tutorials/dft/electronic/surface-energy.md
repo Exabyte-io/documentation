@@ -18,6 +18,15 @@ Additional checks are to be considered a posteriori:
 
 ## Workflow Structure
 
-We shall now describe the computational implementation of Surface Energy calculations on our platform, illustrating the various steps constituting the overall [Workflow](../../../workflows/overview.md) based on [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md).
+We shall now describe the computational implementation of Surface Energy calculations on our platform, illustrating the various steps constituting the overall [Workflow](../../../workflows/overview.md).
+
+The logic underlying a surface energy workflow is in general quite complex. The flowchart below illustrates the [units of different types](../../../workflows/components/units.md) that constitute the overall structure of the workflow.
+
+![Surface Energy Workflow](../../../images/tutorials/surface-energy-workflow.png  "Surface Energy Workflow")
+
+<!--
+how we communicate with a database through it during the workflow execution, plus how we store the metadata about a surface inside the corresponding field of a material
+-->
+
 
 
