@@ -20,7 +20,7 @@ Workflows performing GW calculations follow a three-step procedure:
 
 The first [subworkflow step](../../../workflows/components/subworkflows.md) in the overall GW Workflow is a standard self-consistent field (scf) total ground state energy calculation, providing the ensuing steps of the workflow with the wavefunctions of the material structure under investigation (GW calculations always require a one-electron basis set). 
 
-For the sake of the present example, we can set the [grid of special k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 6 x 6 x 6, under [Important Settings](../../../workflow-designer/subworkflow-editor/important-settings.md).
+For the sake of the present example, we can set the [grid of special k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 10 x 10 x 10, under [Important Settings](../../../workflow-designer/subworkflow-editor/important-settings.md).
 
 ### 2. Many Bands SCF Calculation
 
@@ -44,9 +44,18 @@ Apart from this, the same procedural instructions as in the [other band gap calc
 
 In the video animation below, we outline the procedure for creating and executing an electronic band gap calculation job via the GW Approximation, considering crystalline silicon as our example material and employing [VASP](../../../software-directory/modeling/vasp/overview.md) as the main simulation engine. We conclude by inspecting the corresponding results displayed under the [Results Tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md).
 
+!!!tip "Computational cost of GW calculations"
+    GW calculations are in general quite computationally demanding. We therefore recommend the employment of at least 8 computing cores. For larger calculations, [OF queues](../../../infrastructure/resource/queues.md) will have faster turnaround than the OR queues considered in the video.
+
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/IWtUgsGwHzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Comparison with Experimental Value
+
+The calculated value of 1.14 eV for the indirect band gap of silicon is in much better agreement with the experimental value for this material (1.17 eV [^7]) than the alternative case of standard band gap calculations performed with the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in [another tutorial page](band-gap.md). 
+
+This provides an example of how the GW Approximation can result in improved precision in the estimation of important material properties than more traditional approaches within [DFT](../../../models-directory/dft/overview.md).
 
 ## Links
 
@@ -54,10 +63,12 @@ In the video animation below, we outline the procedure for creating and executin
 
 [^2]: [Wikipedia GW Approximation, Website](https://en.wikipedia.org/wiki/GW_approximation)
 
-[^3]: [C. Friedrich and A. Schindlmayr: "Many-Body Perturbation Theory: The GW Approximation"; John von Neumann Institute for Computing Document](https://core.ac.uk/download/pdf/34930704.pdf)
+[^3]: [C. Friedrich and A. Schindlmayr: "Many-Body Perturbation Theory: The GW Approximation"; John von Neumann Institute for Computing, Document](https://core.ac.uk/download/pdf/34930704.pdf)
 
 [^4]: [F. Aryasetiawan and O. Gunnarsson: "The GW method"; arXiv:cond-mat/9712013v1, 1 Dec 1997](https://arxiv.org/abs/cond-mat/9712013v1)
 
 [^5]: [GW calculations, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/GW_calculations)
 
 [^6]: [Bandgap of Si in GW, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/Bandgap_of_Si_in_GW)
+
+[^7]: [Accessible computational materials design with high fidelity and high throughput, P. Das, M. Mohammadi, and T.Bazhirov, Arxiv preprint, 2017](https://arxiv.org/pdf/1807.05623.pdf)
