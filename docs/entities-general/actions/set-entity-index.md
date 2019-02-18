@@ -10,5 +10,4 @@ If the new index is already assigned to another entity in the set, the indices w
 
 In the animation below, we show how to swap the indices of entities inside an **ordered** set.
 
-[source]: https://ezgif.com/video-to-gif/ezgif-3-6c238bb06dcb.mov
 <img data-gifffer="/images/entities-general/set-entity-index.gif" />
