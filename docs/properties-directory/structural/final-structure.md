@@ -1,6 +1,6 @@
 # Final Structure
 
-The final structure represents the [crystal structure](../../materials/classification/crystalline.md) of a [material](../../materials/overview.md) which is generated as part of the output of a simulation [Job](../../jobs/overview.md).
+The final structure represents the [crystal structure](../../materials/classification/crystalline.md) of a [material](../../materials/overview.md) which is generated during the execution of a [modeling unit](../../workflows/components/units.md/#execution). The final structure(s) is extracted and stored inside user's materials collection if it is different from the initial structure, the structure from which the execution unit starts. The final structure is stored inside a new [set](../../entities-general/sets.md) with `$MATERIAL_NAME - final - $JOB_NAME` as name and `$JOB_ID` as the tag at the same level as the initial structure. The final structure(s) is ordered if the initial one(s) is ordered.
 
 ## Relevance for Structural Relaxations
 
