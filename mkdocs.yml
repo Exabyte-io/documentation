@@ -301,6 +301,8 @@ nav:
             - Create:                                   entities-general/actions/create.md
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
+            - Sets > Chane Type:                        entities-general/actions/change-set-type.md
+            - Sets > Set Index:                         entities-general/actions/set-entity-index.md
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
 
 
