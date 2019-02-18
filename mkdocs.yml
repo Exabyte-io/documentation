@@ -341,6 +341,7 @@ nav:
             - Advanced:                                 materials-designer/header-menu/advanced.md
             - "Advanced > Supercell":                   materials-designer/header-menu/advanced/supercell.md
             - "Advanced > Combinatorial Set":           materials-designer/header-menu/advanced/combinatorial-set.md
+            - "Advanced > Interpolated Set":            materials-designer/header-menu/advanced/interpolated-set.md
             - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
             - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:

@@ -10,5 +10,4 @@ The entities inside the set are ordered descendingly by their creation time when
 
 In the animation below, we show how to change the type of a set labelled "Test" to **ordered**. We then navigate inside the set to confirm the order of entities:
 
-[source]: https://ezgif.com/video-to-gif/ezgif-3-33b701f77ace.mov
 <img data-gifffer="/images/entities-general/change-set-type.gif" />
