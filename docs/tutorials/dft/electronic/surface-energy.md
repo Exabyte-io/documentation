@@ -79,16 +79,18 @@ Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overvi
 
 ## Examine results
 
-When all aforementioned [units](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the simulation, including the surface energy found for Si (0.123 eV/A^2).
+When all aforementioned [units](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the results of the simulation, including the surface energy found for Si (0.131 eV/A^2). This final result is in good agreement with experimental findings for the same surface orientation of silicon [^2].
 
 ## Animation
 
 We demonstrate the above-mentioned steps involved in the creation and execution of a Surface Energy computation workflow on silicon using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/xLfNMKLY8Rk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/EuujF-mcfnI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
 
 [^1]: [Tran R., Xu Z., Radhakrishnan B., Winston D., Sun W., Persson K.A., Ong S.P.: "Surface energies of elemental crystals"; Nature Sci. Data., 3 (2016)](https://www.nature.com/articles/sdata201680)
+
+[^2]: [C. Messmer and J. C. Bilello: "The surface energy of Si, GaAs, and GaP"; Journal of Applied Physics 52, 4623 (1981)](https://aip.scitation.org/doi/10.1063/1.329342)
