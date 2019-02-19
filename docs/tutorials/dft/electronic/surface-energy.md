@@ -75,7 +75,7 @@ For the present example, we consider a simple surface for Si 110 and 50% vacuum 
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein. Our slab of Silicon is a relatively small structure, so four CPUs and a dozen minutes of calculation runtime should be sufficient.
+Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein. Our slab of Silicon is a relatively small structure, so four CPUs and a few minutes of calculation runtime should be sufficient.
 
 ## Examine results
 
