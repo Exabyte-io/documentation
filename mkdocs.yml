@@ -642,6 +642,8 @@ nav:
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
                 - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
                 - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
+            - Thermodynamic Properties:
+                - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
