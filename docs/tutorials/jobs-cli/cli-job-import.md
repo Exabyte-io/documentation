@@ -22,7 +22,11 @@ First, [navigate](../../remote-connection/actions/open-terminal.md) to the [Web 
 
 ## Import New Job Results
 
-In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the corresponding output files under the [Web Interface](../../ui/overview.md), the `#PBS -R y` [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md).
+In order to a submit a new job through [command-line interface](../../cli/overview.md), and then view the corresponding output files under the [Web Interface](../../ui/overview.md), the following [directive](../../jobs-cli/batch-scripts/directives.md) should be added to the [job submission script](../../jobs-cli/batch-scripts/overview.md).
+
+```bash
+#PBS -R y
+```
 
 !!!note "Default Behaviour"
     The `#PBS -R y` [directive](../../jobs-cli/batch-scripts/directives.md) is always enabled by default, but it can still be added manually as a failsafe. 
@@ -31,7 +35,11 @@ This directive instructs our software to automatically parse the output of the c
 
 Once the job starts executing, the user should be able to see the job entry in the web interface under [Jobs Explorer](../../jobs/ui/explorer.md), and thus monitor the corresponding [status](../../jobs/status.md) of its execution.
 
-This feature can conversely be disabled by inserting the `#PBS -R n` directive in the [job submission script](../../jobs-cli/batch-scripts/overview.md).
+This feature can conversely be disabled by inserting the following other directive option in the [job submission script](../../jobs-cli/batch-scripts/overview.md).
+
+```bash
+#PBS -R n
+```
 
 ## Animation 
 
