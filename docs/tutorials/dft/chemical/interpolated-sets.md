@@ -4,10 +4,6 @@ This tutorial page explains how to create an **interpolated set**, necessary for
 
 We consider the example of a one-dimensional and three-atom molecule of Hydrogen (H3) throughout the present tutorial.
 
-## The Need for Interpolated Sets
-
-The NEB method is centred around the initial and final configurations (structures) for the chemical reaction under investigation. Multiple molecular structures, referred to as **images**, of the system being considered need to be generated in between these initial and final configurations, by varying a **one-dimensional reaction "coordinate"** from its initial to final value. This set of images taken together constitutes the interpolated set for the chemical reaction.
-
 ## Create an Ordered SET
 
 The first step in the generation of an Interpolated Set is to [create](../../../entities-general/actions/create-sets.md) a [Set](../../../entities-general/sets.md) within the account-owned [collection](../../../accounts/collections.md) of materials, which we shall name and refer to as "NEB SET". Following its creation, the type of this set should then be [changed](../../../entities-general/actions/change-set-type.md) to **ordered**.
