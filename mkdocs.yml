@@ -301,6 +301,8 @@ nav:
             - Create:                                   entities-general/actions/create.md
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
+            - Sets > Chane Type:                        entities-general/actions/change-set-type.md
+            - Sets > Set Index:                         entities-general/actions/set-entity-index.md
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
 
 
@@ -339,6 +341,7 @@ nav:
             - Advanced:                                 materials-designer/header-menu/advanced.md
             - "Advanced > Supercell":                   materials-designer/header-menu/advanced/supercell.md
             - "Advanced > Combinatorial Set":           materials-designer/header-menu/advanced/combinatorial-set.md
+            - "Advanced > Interpolated Set":            materials-designer/header-menu/advanced/interpolated-set.md
             - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
             - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:
@@ -471,7 +474,7 @@ nav:
             - Retrieval:                                properties/lifecycle/retrieval.md
         - Data:
             - Overview:                                 properties/data/overview.md
-            - Primitive:                                properties/data/primitive.md
+            - Core:                                     properties/data/core.md
             - List of Schemas:                          properties/data/list.md
             - Periodic Table:                           properties/data/periodic-table.md
         - Classification:

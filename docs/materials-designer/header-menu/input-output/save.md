@@ -24,6 +24,11 @@ In this dialog the user can also choose, through the top slider, whether to save
 
 In the lower slider, the user can adjust the access level for the materials to be saved (see the explanation of system-wide permission levels [here](../../../site-policy/sharing-policy/#special-system-wide-permissions)). 
 
+
+### Select Set
+
+By clicking on this input field user can select the materials set in which the created/modified materials should be saved.
+
 ## Execute Save
 
 Press the `OK` button to save the desired materials together with any tags added to them, or the `Cancel` button to revert back to the previous screen.
