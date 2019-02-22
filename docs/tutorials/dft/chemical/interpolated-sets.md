@@ -54,13 +54,24 @@ The first step consists in importing these two configurations into the interface
 
 ### Generate Interpolated Set
 
-The Interpolated Set itself can be generated via the [corresponding option](../../../materials-designer/header-menu/advanced/interpolated-set.md) within the [Advanced Menu](../../../materials-designer/header-menu/advanced.md) of the [header bar](../../../materials-designer/header-menu/header-menu-intro.md). In the resulting "Generate Interpolated Set" dialog, the user is able to select the total number of intermediate images that need to be generated, which we select to be 10 for the sake of the present demonstrative explanation.
+The Interpolated Set itself can be generated via the [corresponding option](../../../materials-designer/header-menu/advanced/interpolated-set.md) within the [Advanced Menu](../../../materials-designer/header-menu/advanced.md) of the [header bar](../../../materials-designer/header-menu/header-menu-intro.md).
+ 
+In the resulting "Generate Interpolated Set" dialog, the user is able to select the total number of intermediate images that need to be generated, which we select to be 10 for the sake of the present demonstrative explanation.
 
 ### Inspect Intermediate Images
 
-The user should now be able to inspect the structures for all the resulting intermediate images, which are listed together with the previously-imported initial and final molecular configurations within the [left-hand items list sidebar](../../../materials-designer/sidebar-items.md) of the Materials Designer Interface. These images can be visualized and cycled through with the help of the incorporated [3D structure editor](../../../materials-designer/3d-editor.md).
+The user should now be able to inspect the structures for all the resulting intermediate images, which are listed together with the previously-imported initial and final molecular configurations within the [left-hand items list sidebar](../../../materials-designer/sidebar-items.md) of the Materials Designer Interface. 
 
-## Save all Images in SET
+These images can be visualized and cycled through with the help of the incorporated [3D structure editor](../../../materials-designer/3d-editor.md).
 
+## Save all Images in NEB SET
+
+Finally, **all** generated images should be [saved](../../../materials-designer/header-menu/input-output/save.md) into the previously-created "NEB SET", by [selecting](../../../materials-designer/header-menu/input-output/save.md#select-set) this set under the appropriate option of the "Save Items" dialog.
 
 ## Animation
+
+We summarize the aforementioned steps involved in generating an Interpolated Set for our linear H3 molecule in the animation below. We conclude the video by inspecting the full list of images, including the initial and final molecular configurations, under the [Explorer Interface](../../../entities-general/ui/explorer.md) of the newly-created "NEB SET".
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/YEk3febngeM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
