@@ -9,3 +9,7 @@ We explain how the user can go through the procedure for [submitting jobs via th
 ## [Retrieving Results under Web Interface](view-results.md) 
 
 Once the execution of a job submitted via CLI is completed, the corresponding output files containing the results of the simulation can be retrieved and inspected under the [Web Interface](../../ui/overview.md) of our platform. We explain how this can be achieved [in this second Tutorial](view-results.md).
+
+## [Import Command Line Jobs to Web Interface](cli-job-import.md)
+
+[This tutorial](cli-job-import.md) explains how to import the results of a [job](../../jobs-cli/overview.md) run via [command-line interface](../../cli/overview.md) to the main [Web Interface](../../ui/overview.md) of our platform.

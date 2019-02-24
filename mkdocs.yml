@@ -621,6 +621,7 @@ nav:
             - Overview:                              tutorials/jobs-cli/overview.md
             - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
             - View Results:                          tutorials/jobs-cli/view-results.md
+            - Import to Web Interface:               tutorials/jobs-cli/cli-job-import.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
             - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
@@ -634,6 +635,7 @@ nav:
                 - Overview:                              tutorials/dft/electronic/overview.md
                 - Electronic band structure:             tutorials/dft/electronic/band-structure.md
                 - Electronic band gap:                   tutorials/dft/electronic/band-gap.md
+                - Electronic band gap with GW:           tutorials/dft/electronic/gw-band-gap.md
                 - Electronic density of states:          tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
                 - HSE Calculations:                      tutorials/dft/electronic/hse.md
@@ -642,6 +644,9 @@ nav:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
                 - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
+                - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
+            - Thermodynamic Properties:
+                - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
