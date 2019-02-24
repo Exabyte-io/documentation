@@ -648,8 +648,7 @@ nav:
             - Thermodynamic Properties:
                 - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
             - Chemical Properties:
-                - Interpolated Sets:                     tutorials/dft/chemical/interpolated-sets.md
-                - Nudged Elastic Bands:                  tutorials/dft/chemical/neb.md
+                - Reaction Energy Profile:               tutorials/dft/chemical/neb.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
@@ -659,6 +658,8 @@ nav:
             - Overview:                              tutorials/materials/overview.md
             - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
             - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
+            - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
+
 
 # TUTORIALS AND EXAMPLES
     # TODO: refactor and re-enable
