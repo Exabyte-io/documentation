@@ -10,6 +10,10 @@ We review the procedure for computing the [electronic band structure](../../../p
 
 The calculation of the [band gap](../../../properties-directory/non-scalar/band-gaps.md) is the object of a [separate discussion](band-gap.md).
 
+## [Band Gap via GW Approximation](gw-band-gap.md)
+
+[This distinct tutorial](gw-band-gap.md) illustrates how the results for a [band gap](../../../properties-directory/non-scalar/band-gaps.md) computation can be further improved and made to be more accurate through the use of the GW Approximation.
+
 ## [Density of States](density-of-states.md)
 
 We also offer instructions on how to evaluate the [electronic Density of States](../../../properties-directory/non-scalar/electronic-dos.md) under [this other tutorial page](density-of-states.md).
