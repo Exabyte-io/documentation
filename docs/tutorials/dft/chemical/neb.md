@@ -71,7 +71,7 @@ We start with [opening](../../../jobs/actions/create.md) an instance of the [Job
     
 ## Import Interpolated Set
 
-The **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB SET", containing the initial, final and intermediate images of the H3 molecule under investigation, should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
+The **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB SET", containing the initial, final and 10 intermediate images of the H3 molecule under investigation, should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
 
 ## Submit Job
 
@@ -89,7 +89,7 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of the interpolated set generated in a [separate tutorial](../../materials/interpolated-sets.md).
+Here, we have made use of the interpolated set containing 10 intermediate images generated in a [separate tutorial](../../materials/interpolated-sets.md).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3ekwtYJyj4w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
