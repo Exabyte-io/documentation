@@ -36,7 +36,27 @@ The graph below shows an NEB calculation (blue) and a climbing image cNEB calcul
 
 ## Workflow Structure
 
+We outline here some important aspects of the [Workflow](../../../workflows/overview.md) used for executing NEB calculations via [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md), which is composed of a single main [unit](../../../workflows/components/units.md).
 
+### Main Executable
+
+NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable](../../../software-directory/modeling/quantum-espresso/components.md#executables). The input parameters for this executable are described in Ref. [^3], and can be customized by the user via the [unit input template editor](../../../workflow-designer/unit-editor.md#unit-input-templates). 
+
+### Broyden Algorithm
+
+Within the neb.x input script, we note in particular the need for the **Broyden algorithm** [^4] instead of the default one. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
+
+### Number of Images
+
+The number of image points used to discretize the reaction path, as defined by the [interpolated set](../../../materials-designer/header-menu/advanced/interpolated-set.md) of images to be considered for the NEB calculation, is defined by the `num_of_images` input parameter, and must be larger than 3.
+
+### Convergence Threshold
+
+The NEB simulation stops when the error (the norm of the force orthogonal to the path in eV/A) is less than the `path_thr` input parameter.
+
+### Structure of Images
+
+Atomic positions for all the images are specified within the `BEGIN_POSITIONS / END_POSITIONS` delimiters, where each instance of `ATOMIC_POSITIONS` card is prefixed either by `FIRST_IMAGE`, `INTERMEDIATE_IMAGE`, or `LAST_IMAGE` keywords, depending on its position within the overall order of the interpolated set under consideration.
 
 ## Create Job and Choose Workflow
 
@@ -53,3 +73,7 @@ We start with [opening](../../../jobs/actions/create.md) an instance of the [Job
 [^1]: [PWneb User’s Guide, Official Documentation](https://www.quantum-espresso.org/Doc/neb_user_guide.pdf)
 
 [^2]: [H. Jonsson, G. Mills and K.W. Jacobsen: "Nudged elastic band method for finding minimum energy paths of transitions", Document](http://theory.cm.utexas.edu/henkelman/pubs/jonsson98_385.pdf)
+
+[^3]: [Input File Description for neb.x, Official Quantum ESPRESSO documentation](http://web.mit.edu/espresso_v6.1/i386_linux26/qe-6.1/Doc/INPUT_NEB.html)
+
+[^4]: [Wikipedia Broyden's method, Website](https://en.wikipedia.org/wiki/Broyden%27s_method)
