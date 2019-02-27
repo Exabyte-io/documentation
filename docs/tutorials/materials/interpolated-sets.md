@@ -83,13 +83,13 @@ Finally, **all** generated images should be [saved](../../materials-designer/hea
 We summarize the aforementioned steps involved in generating an Interpolated Set for our linear H3 molecule in the animation below. We conclude the video by inspecting the full list of images, including the initial and final molecular configurations, under the [Explorer Interface](../../entities-general/ui/explorer.md) of the newly-created "NEB SET".
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/JGQqev3JhTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/pG03QsUhHNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### Constrained Interpolated Set Creation
 
-In this second animation, we demonstrate how to add the atomic constraints discussed previously, confining the movement of atoms to only the x-direction since our H3 molecules are entirely one-dimensional. This is done by adding the "1 0 0" line next to the atoms in the initial image, except for the atom located at the origin, for which a "0 0 0" constraint suffices since this this atom remains fixed at all times.
+In this second animation, we demonstrate how to add the atomic constraints discussed previously into a new "Constrained" Interpolated Set for NEB applications, confining the movement of atoms to only the x-direction since our H3 molecules are entirely one-dimensional. This is done by adding the "1 0 0" line next to the atoms in the initial image, except for the atom located at the origin, for which a "0 0 0" constraint suffices since this this atom remains fixed at all times.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/JGQqev3JhTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/bjFU-ndeTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
