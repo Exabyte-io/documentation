@@ -48,13 +48,23 @@ direct
 
 The user should now [open](../../entities-general/actions/create.md) an instance of the [Materials Designer Interface](../../materials-designer/overview.md), through which we aim to create our Interpolated Set in between the above-mentioned initial and final configurations of the H3 molecule. 
 
-The first step consists in importing these two configurations into the interface by following [these instructions](../../materials-designer/header-menu/input-output/import.md).
+The first step consists in importing these two configurations into the interface by following [these instructions](../../materials-designer/header-menu/input-output/import.md). It is essential then to [clone](../../materials-designer/header-menu/edit.md#clone) both initial and final images before generating the interpolated set, as well as to [delete](../../materials-designer/sidebar-items.md#delete-item) the original structures from the [left-hand items list sidebar](../../materials-designer/sidebar-items.md) of the Materials Designer Interface, for a correct final attribution of the indices within the resulting ordered set.
 
 ### Generate Interpolated Set
 
+Before creating a new interpolated set, the user should make sure that the active structure selected on the [left-hand items list sidebar](../../materials-designer/sidebar-items.md) is the initial one, and not final. This ensures that the intermediate images will be correctly injected between the initial and final ones at the moment of creation of the new interpolated set.
+
 The Interpolated Set itself can be generated via the [corresponding option](../../materials-designer/header-menu/advanced/interpolated-set.md) within the [Advanced Menu](../../materials-designer/header-menu/advanced.md) of the [header bar](../../materials-designer/header-menu/header-menu-intro.md).
  
-In the resulting "Generate Interpolated Set" dialog, the user is able to select the total number of intermediate images that need to be generated, which we select to be 10 for the sake of the present demonstrative explanation.
+In the resulting "Generate Interpolated Set" dialog, the user is able to select the total number of intermediate images that need to be generated, which we select to be 3 for the sake of the present demonstrative explanation.
+
+### Adding Atomic Constraints
+
+**Atomic Constraints**, specifying the constraints on the movement of atoms, can be also be defined as explained [in this page](../../properties-directory/structural/basis.md#atomic-constraints). 
+
+These constraints need only be added to the initial image before the creation of the interpolated set, under the [basis panel](../../materials-designer/source-editor/basis.md) of the [source editor](../../materials-designer/source-editor.md) in [Materials Designer](../../materials-designer/overview.md). Later, once the interpolated set is generated, the same constraints will be applied automatically to all other intermediate images.
+
+Adding atomic constraints in this way can help to make the ensuing NEB calculation more computationally efficient.
 
 ### Inspect Intermediate Images
 
@@ -62,17 +72,24 @@ The user should now be able to inspect the structures for all the resulting inte
 
 These images can be visualized and cycled through with the help of the incorporated [3D structure editor](../../materials-designer/3d-editor.md).
 
-!!!tip "Atomic constraints"
-    Atomic Constraints, specifying the constraints on the movement of atoms, can be also be set as explained [in this page](../../properties-directory/structural/basis.md#atomic-constraints).
-
 ## Save all Images in NEB SET
 
 Finally, **all** generated images should be [saved](../../materials-designer/header-menu/input-output/save.md) into the previously-created "NEB SET", by [selecting](../../materials-designer/header-menu/input-output/save.md#select-set) this set under the appropriate option of the "Save Items" dialog.
 
-## Animation
+## Animations
+
+### General Interpolated Set Creation
 
 We summarize the aforementioned steps involved in generating an Interpolated Set for our linear H3 molecule in the animation below. We conclude the video by inspecting the full list of images, including the initial and final molecular configurations, under the [Explorer Interface](../../entities-general/ui/explorer.md) of the newly-created "NEB SET".
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/JGQqev3JhTk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/pG03QsUhHNo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+### Constrained Interpolated Set Creation
+
+In this second animation, we demonstrate how to add the atomic constraints discussed previously into a new "Constrained" Interpolated Set for NEB applications, confining the movement of atoms to only the x-direction since our H3 molecules are entirely one-dimensional. This is done by adding the "1 0 0" line next to the atoms in the initial image, except for the atom located at the origin, for which a "0 0 0" constraint suffices since this this atom remains fixed at all times.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/bjFU-ndeTYg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
