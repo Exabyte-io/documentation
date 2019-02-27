@@ -1,10 +1,10 @@
-# Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method
+# Calculate Reaction Energy Profile Using the Nudged Elastic Band (NEB) method
 
 This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) of intermediate image structures introduced in a [separate tutorial](../../materials/interpolated-sets.md).
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [VASP](../../../software-directory/modeling/vasp/overview.md) as the main simulation engine. 
 
-Only the aspects of NEB calculations which are specific to VASP will be reviewed here. For a more general introduction to how such calculations are performed and defined on our platform, the reader is referred to [this alternative tutorial page](neb-qe.md).
+Only the aspects of NEB calculations which are specific to VASP will be reviewed here. For a more general introduction to how such calculations are performed and defined on our platform, the reader is referred to [this alternative tutorial page](reaction-profile-qe.md).
 
 ## Workflow Structure
 
@@ -48,7 +48,7 @@ We also remind the reader that the size of the [grid of reciprocal k-points (kgr
 
 ## Create and Submit Job
 
-The same set of instructions as in the [alternative NEB tutorial](neb-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting and adding it](../../../jobs-designer/actions-header-menu/select-workflow.md) into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
+The same set of instructions as in the [alternative NEB tutorial](reaction-profile-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting and adding it](../../../jobs-designer/actions-header-menu/select-workflow.md) into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
 
 ## Import Interpolated Set
 
@@ -58,7 +58,7 @@ The **Interpolated Set** generated in [this other tutorial](../../materials/inte
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation. 
 
-It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation barrier in this case is of 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](neb-qe.md).
+It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation barrier in this case is of 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](reaction-profile-qe.md).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CpFqp85v4cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
