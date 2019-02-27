@@ -1,6 +1,6 @@
 # Create Interpolated Sets
 
-This tutorial page explains how to create an [interpolated set](../../materials-designer/header-menu/advanced/interpolated-set.md), necessary for the calculation of the energy profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, which is reviewed in a [separate tutorial](../dft/chemical/neb.md). 
+This tutorial page explains how to create an [interpolated set](../../materials-designer/header-menu/advanced/interpolated-set.md), necessary for the calculation of the energy profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, which is reviewed in a [separate tutorial](../dft/chemical/neb-qe.md). 
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial.
 
