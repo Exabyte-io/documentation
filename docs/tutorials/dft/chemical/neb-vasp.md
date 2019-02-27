@@ -1,6 +1,6 @@
 # Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method
 
-This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
+This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) of intermediate image structures.
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [VASP](../../../software-directory/modeling/vasp/overview.md) as the main simulation engine. 
 
@@ -8,11 +8,11 @@ Only the aspects of NEB calculations which are specific to VASP will be reviewed
 
 ## Workflow Structure
 
-VASP and Quantum ESPRESSO work differently with regards to NEB computations for generating an energy profile along a chemical reaction path, using equidistant image structures along the path constituting the interpolated set. General instructions on how NEB is implemented under VASP can be found in Ref. [^1].
+VASP and Quantum ESPRESSO work differently with regards to NEB computations for generating an energy profile along a chemical reaction path, using equidistant image structures along the path. General instructions on how NEB is implemented under VASP can be found in Ref. [^1].
 
-In general, within VASP the input geometries of the images are interpolated automatically between the geometries of the initial and the final states. Hence there is no need to generate an interpolated set of images manually.
+In general, within VASP the input structures of the images are interpolated automatically between the geometries of the initial and the final states. Hence, there is no need to generate an interpolated set of images manually.
 
-Most importantly, VASP expects there to be a group of pre-existing [set folders](../../../entities-general/sets.md) within the account-owned [collection](../../../accounts/collections.md) of materials named "00" (initial) to "0N" (final), each containing the POSCAR structure file for each of the N images constituting the interpolated set under consideration. These sets are generated automatically on our platform, as explained in what follows.
+Most importantly, VASP expects there to be a group of pre-existing [set folders](../../../entities-general/sets.md), within the account-owned [collection](../../../accounts/collections.md) of materials, named "00" (initial) to "0N" (final), each containing the POSCAR structure file for each of the N images constituting the interpolated set under consideration. These sets are generated automatically on our platform, as explained in what follows.
  
 We describe now the overall structure of the [Workflow](../../../workflows/overview.md) used for executing NEB calculations on our platform via [VASP](../../../software-directory/modeling/vasp/overview.md), which is composed of three main [subworkflow](../../../workflows/components/subworkflows.md) operations.
 
@@ -38,11 +38,13 @@ The third and final subworkflow executes the NEB computation itself through VASP
 
 Additional information on further possible input parameters available for VASP NEB calculations can be retrieved in Ref. [^3].
 
-Under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md), the number of intermediate NEB images should be set to the same value as the one selected previously in the first subworkflow. We also remind the reader that the size of the [grid of reciprocal k-points (kgrid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) should be set to 1 x 1 x 1 for the case of chemical molecules such as those considered in the present tutorial.                                              
+Under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md), the number of intermediate NEB images should be set to the same value as the one selected previously in the first subworkflow step. 
+
+We also remind the reader that the size of the [grid of reciprocal k-points (kgrid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) should be set to 1 x 1 x 1 for the case of chemical molecules, such as those considered in the present tutorial.                                              
 
 ## Create and Submit Job
 
-The same set of instructions as in the [alternative NEB tutorial](neb-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting](../../../jobs-designer/actions-header-menu/select-workflow.md) it into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
+The same set of instructions as in the [alternative NEB tutorial](neb-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting and adding it](../../../jobs-designer/actions-header-menu/select-workflow.md) into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
 
 Since the intermediate images are generated automatically by VASP, only the initial and final structures need to be [imported](../../../jobs-designer/actions-header-menu/select-materials.md) manually into [Job Designer](../../../jobs-designer/overview.md) in this case.
 
