@@ -85,7 +85,9 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 ![Reaction Energy Profile](../../../images/tutorials/reaction-profile.png "Reaction Energy Profile")
 
-## Animation
+## Animations
+
+### NEB with Interpolated Set
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
@@ -94,6 +96,8 @@ Here, we have made use of the interpolated set containing 10 intermediate images
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CpFqp85v4cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+### NEB with Automatically Generated Images
 
 In this second animation below, we repeat the same reaction profile calculation for H3 molecules as above, but this time taking advantage of the Quantum ESPRESSO feature for the automatic generation of intermediate images mentioned previously. This effectively makes it redundant to import manually an interpolated set, such as was done in the previous video. 
 
