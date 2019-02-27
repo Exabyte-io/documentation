@@ -1,4 +1,4 @@
-# Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method
+# Calculate Reaction Energy Profile Using the Nudged Elastic Band (NEB) method
 
 This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
 
