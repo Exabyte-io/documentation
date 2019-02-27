@@ -44,6 +44,8 @@ Under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-edit
 
 The same set of instructions as in the [alternative NEB tutorial](neb-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting](../../../jobs-designer/actions-header-menu/select-workflow.md) it into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
 
+Since the intermediate images are generated automatically by VASP, only the initial and final structures need to be [imported](../../../jobs-designer/actions-header-menu/select-materials.md) manually into [Job Designer](../../../jobs-designer/overview.md) in this case.
+
 !!!warning "Restrictions on number of computing cores"
     The number of cores on which VASP is run for NEB purposes has to be an integer multiple of the total number of images.
 
@@ -51,7 +53,7 @@ The same set of instructions as in the [alternative NEB tutorial](neb-qe.md#crea
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of 10 intermediate images. It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation barrier in this case is of 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](neb-qe.md).
+Here, we have made use of 4 intermediate images. It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation barrier in this case is of 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](neb-qe.md).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CpFqp85v4cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
