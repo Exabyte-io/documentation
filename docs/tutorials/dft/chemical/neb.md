@@ -71,7 +71,7 @@ We start with [opening](../../../jobs/actions/create.md) an instance of the [Job
     
 ## Import Interpolated Set
 
-The **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB SET", containing the initial, final and a total of 10 intermediate images of the H3 molecule under investigation, should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
+The **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB CONSTRAINED SET", containing the initial, final and a total of 3 intermediate images of the H3 molecule under investigation (including atomic constraints along the single dimension of the molecule), should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
 
 ## Submit Job
 
@@ -87,14 +87,14 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 ## Animations
 
-### NEB with Interpolated Set
+### NEB with Manually-Generated Interpolated Set
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of the interpolated set containing 10 intermediate images generated in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV.
+Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CpFqp85v4cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/iNU_AxlcWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ### NEB with Automatically Generated Images
