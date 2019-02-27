@@ -648,8 +648,8 @@ nav:
             - Thermodynamic Properties:
                 - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
             - Chemical Properties:
-                - Reaction Energy Profile (QE):          tutorials/dft/chemical/neb-qe.md
-                - Reaction Energy Profile (VASP):        tutorials/dft/chemical/neb-vasp.md
+                - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
+                - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
