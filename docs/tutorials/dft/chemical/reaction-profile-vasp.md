@@ -15,7 +15,7 @@ Most importantly, VASP expects there to be a group of pre-existing [set folders]
 We describe now the overall structure of the [Workflow](../../../workflows/overview.md) used for executing NEB calculations on our platform via [VASP](../../../software-directory/modeling/vasp/overview.md), which is composed of three main [subworkflow](../../../workflows/components/subworkflows.md) operations.
 
 !!!warning "Restrictions on number of computing cores"
-    The number of cores on which VASP is run for NEB purposes has to be an integer multiple of the total number of images. Hence, if the user is working with 2 images, the number of cores selected should be 2, 4, 6, or all other even numbers.
+    The number of cores on which VASP is run for NEB purposes has to be an integer multiple of the total number of *intermediate* images. Hence, if the user is working with 2 images, the number of cores selected should be 2, 4, 6, or all other even numbers.
 
 ### 1. Calculate Initial/Final Total Energies
 
@@ -24,6 +24,8 @@ One important point about the VASP NEB workflow is that VASP does not run the ca
 Consequently, the first subworkflow step consists in executing a pair of self-consistent field (SCF) ground-state energy computations, in order to extract the [total energy](../../../properties-directory/scalar/total-energy.md) for both the initial and final images.
 
 This first subworkflow has a separate compute configuration, independent from the rest of the workflow, that can be adjusted by the user under its ["Compute" Tab](../../../workflow-designer/subworkflow-editor/compute.md). The reason is that if there are 10 images, at least 10 cores are needed, as mentioned before, but such a large number of cores is not necessarily required for the initial/final total energy SCF calculations performed in the present step.
+
+We also remind the reader that the size of the [grid of reciprocal k-points (kgrid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) should be set to 1 x 1 x 1 for the case of chemical molecules, such as those considered in the present tutorial. This option can be set under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md).
 
 ### 2. Prepare Directories 
 
@@ -41,10 +43,8 @@ The third and final subworkflow executes the NEB computation itself through VASP
 
 Additional information on further possible input parameters available for VASP NEB calculations can be retrieved in Ref. [^4].
 
-We also remind the reader that the size of the [grid of reciprocal k-points (kgrid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) should be set to 1 x 1 x 1 for the case of chemical molecules, such as those considered in the present tutorial. This option can be set under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md).
-
 !!!note "Redundant "number of intermediate images" option"
-    The number of intermediate images under "Important Settings" for VASP is not used at present. It will be enabled when support will be added for generating images automatically on our platform.                                          
+    The number of intermediate images under "Important Settings" is not used at present for VASP. It will be enabled when support will be added for generating images automatically on our platform.                                          
 
 ## Create and Submit Job
 
@@ -56,7 +56,7 @@ The constrained **Interpolated Set** generated in [this other tutorial](../../ma
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules, using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine, in the following animation. 
+We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules, using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine, in the following animation. Because we are working with 3 intermediate images, we run the NEB [Job](../../../jobs/overview.md) on a total of 6 cores, which is a multiple of 3 as required.
 
 It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation barrier in this case is of 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](reaction-profile-qe.md).
 
