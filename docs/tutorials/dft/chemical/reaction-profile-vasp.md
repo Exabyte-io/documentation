@@ -4,7 +4,7 @@ This tutorial page explains how to calculate the energy reaction profile and act
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [VASP](../../../software-directory/modeling/vasp/overview.md) as the main simulation engine. 
 
-Only the aspects of NEB calculations which are specific to VASP will be reviewed here. For a more general introduction to how such calculations are performed and defined on our platform, the reader is referred to [this alternative tutorial page](reaction-profile-qe.md).
+Only the aspects of NEB calculations which are specific to VASP will be reviewed here. For a more general introduction to how such calculations are performed and defined on our platform, the reader is referred to [this alternative tutorial page](reaction-profile-qe.md). The same collinear proton transfer chemical reaction of the H3 molecule as in this latter tutorial will be investigated here.
 
 ## Workflow Structure
 
@@ -35,11 +35,13 @@ The outputs of the previous subworkflow on the SCF calculations applied to the i
 
 ### 3. Nudged Elastic Band (NEB) Calculation
 
-The third and final subworkflow executes the NEB computation itself through VASP. We note the following two important input parameters within the VASP "INCAR" input script:
+The third and final subworkflow executes the NEB computation itself through VASP. We note the following important input parameters within the VASP "INCAR" input script:
 
 - "IMAGES" defines the number of interpolated image geometries between the initial and final states within the interpolated set under investigation. This tag is documented in detail in Ref. [^3]. 
 
 - "SPRING" defines the spring constant, in eV/Ang^2, between the images. A negative value turns on nudging.
+
+- "MAGMOM" ensures that the protons have opposite spins. This parameter has to be explicitly set in order to obtain the correct activation barrier, since the VASP NEB routine does not by itself relax the spins.
 
 Additional information on further possible input parameters available for VASP NEB calculations can be retrieved in Ref. [^4].
 
@@ -58,7 +60,7 @@ The constrained **Interpolated Set** generated in [this other tutorial](../../ma
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules, using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine, in the following animation. Because we are working with 3 intermediate images, we run the NEB [Job](../../../jobs/overview.md) on a total of 6 cores, which is a multiple of 3 as required.
 
-It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation barrier in this case is of 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](reaction-profile-qe.md).
+It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation energy barrier in this case is of about 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](reaction-profile-qe.md).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CpFqp85v4cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
