@@ -22,9 +22,9 @@ We also offer instructions on how to evaluate the [electronic Density of States]
 
 Finally, we conclude our review of the electronic properties of materials by covering [a tutorial page](electronic-density-mesh.md) dedicated to the computation of the Electronic Charge Density Mesh.
 
-## [HSE Calculations](hse.md)
+## [HSE Calculations](hse-vasp.md)
 
-[In this other tutorial](hse.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation.
+[In this other tutorial](hse-vasp.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation.
 
 ## [Fermi Surface](fermi-surface.md)
 

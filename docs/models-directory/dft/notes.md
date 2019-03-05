@@ -16,7 +16,7 @@ Hybrid functionals [^1] are a class of approximations to the exchange–correlat
 
 This approach typically results in improved [precision](../../methods/precision.md) in the estimation of the values of numerous [material properties](../../properties/overview.md) of interest, as demonstrated in the scientific literature [^3].
 
-A demonstration of the effectiveness of the HSE Hybrid Functional in predicting the [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) of semiconducting materials is offered in the [relevant tutorial page](../../tutorials/dft/electronic/hse.md).
+A demonstration of the effectiveness of the HSE Hybrid Functional in predicting the [electronic band gap](../../properties-directory/non-scalar/band-gaps.md) of semiconducting materials is offered in the [relevant tutorial page](../../tutorials/dft/electronic/hse-vasp.md).
 
 <!-- TODO: add corresponding theoretical background information about the GW method as well in respective task
 -->
