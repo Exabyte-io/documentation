@@ -15,7 +15,7 @@ Most importantly, VASP expects there to be a group of pre-existing [set folders]
 We describe now the overall structure of the [Workflow](../../../workflows/overview.md) used for executing NEB calculations on our platform via [VASP](../../../software-directory/modeling/vasp/overview.md), which is composed of three main [subworkflow](../../../workflows/components/subworkflows.md) operations.
 
 !!!warning "Restrictions on number of computing cores"
-    The number of cores on which VASP is run for NEB purposes has to be an integer multiple of the total number of *intermediate* images. Hence, if the user is working with 2 images, the number of cores selected should be 2, 4, 6, or all other even numbers.
+    The number of cores on which VASP is run for NEB purposes has to be an integer multiple of the total number of *intermediate* images. Hence, if the user is working with 2 intermediate images, the number of cores selected should be 2, 4, 6, or all other even numbers.
 
 ### 1. Calculate Initial/Final Total Energies
 
@@ -63,7 +63,7 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation energy barrier in this case is of about 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](reaction-profile-qe.md).
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CpFqp85v4cQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/0RVJ33JpeGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
