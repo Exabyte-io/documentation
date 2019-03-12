@@ -251,6 +251,18 @@ Contains an array of the elements in the unit cell and the atom id’s associati
 {!example/properties_directory/structural/basis/atomic_elements.json!}
 ```
 
+### [Atomic Constraints](../../properties-directory/structural/basis.md)
+
+Contains information about the spatial constraints on the movement of atoms.
+
+```json tab="Schema"
+{!schema/properties_directory/structural/basis/atomic_constraints.json!}
+```
+
+```json tab="Example"
+{!example/properties_directory/structural/basis/atomic_constraints.json!}
+```
+
 ### [Basis](../../properties-directory/structural/basis.md)
 
 Basis defines elemental and geometrical constitution of the unit cell.
