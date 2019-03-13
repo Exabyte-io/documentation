@@ -24,7 +24,7 @@ The procedure to manually extract the k-points from the output of the previous s
 
 ### 3. HSE Calculation
 
-The final subworkflow step in the HSE band structure computation workflow is composed of two units. The main HSE calculation is performed in the first one of these units. Apart from the specific elements described in what follows, the remainder of the main HSE input script conforms to the general standard conventions of scf ground-state total energy calculations performed with Quantum ESPRESSO via its ["pw_scf" flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors), as implemented on our platform.
+The final subworkflow step in the HSE band structure computation workflow is composed of two units. The main HSE calculation is performed in the first one of these units. Apart from the specific elements described in what follows, the remainder of the main HSE input script conforms to the general standard conventions of an scf ground-state total energy calculation performed with Quantum ESPRESSO via its ["pw_scf" flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors), as implemented on our platform. The HSE-specific aspects and parameters of the scf calculation described below can be triggered by including the HSE [Refiner](../../../models-directory/dft/parameters.md#refiners), as set under the [Subworkflow Editor Interface](../../../workflow-designer/subworkflow-editor/overview-tab.md#refiners).
 
 #### Selecting the HSE Exchange-correlation Functional
 
