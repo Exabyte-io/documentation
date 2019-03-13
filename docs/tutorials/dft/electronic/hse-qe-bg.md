@@ -1,0 +1,1 @@
+The increased [precision](../../../methods/precision.md) of Hybdrid Functionals in predicting [material properties](../../../properties/overview.md) of interest such as band gaps will hence be demonstrated. 
