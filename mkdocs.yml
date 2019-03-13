@@ -635,6 +635,8 @@ nav:
                 - Overview:                              tutorials/dft/electronic/overview.md
                 - Electronic band structure:             tutorials/dft/electronic/band-structure.md
                 - Electronic band gap:                   tutorials/dft/electronic/band-gap.md
+                - Electronic band structure with HSE:    tutorials/dft/electronic/hse-qe-bs.md
+                - Electronic band gap with HSE:          tutorials/dft/electronic/hse-qe-bg.md
                 - Electronic band gap with GW:           tutorials/dft/electronic/gw-band-gap.md
                 - Electronic density of states:          tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
