@@ -48,62 +48,25 @@ It should be noticed that the reciprocal coordinates of these k-points along the
 
 The final band structure calculation based upon the results of the preceding steps is performed through the customary ["bands.x" executable](../../../software-directory/modeling/quantum-espresso/components.md#executables), a component of the Quantum ESPRESSO package distribution.
 
+## Copy HSE Workflow from Bank
 
+[Workflows](../../../workflows/overview.md) for calculating the [band structure](../../../properties-directory/non-scalar/bandstructure.md) of [materials](../../../materials/overview.md) with [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) via the HSE approach being presently described can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). 
+
+This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/overview.md). The same procedure as in the [general band-structure computation tutorial](band-structure.md) based on Quantum ESPRESSO can otherwise be followed.
+
+!!!warning "Computational Cost"
+    The computational cost of HSE calculations is significantly higher than for more basic methods in [DFT](../../../models-directory/dft/overview.md) such as the [Generalized Gradient Approximation](../../../models-directory/dft/parameters.md#subtype). We thus recommend to allow for more [CPU cores and/or walltime](../../../infrastructure/compute/parameters.md) as appropriate for the material system under investigation.
+
+## Animation
+
+We demonstrate the steps involved in the creation and execution of a HSE Band Structure computation workflow on silicon, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation. We conclude by inspecting the final band structure dispersion plot under the ["Results" Tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md).
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/IXshoTGLJcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Links
 
 [^1]: [Wikipedia Hartree-Fock method, Website](https://en.wikipedia.org/wiki/Hartree%E2%80%93Fock_method)
 
 [^2]: [Wikipedia Fock matrix, Website](https://en.wikipedia.org/wiki/Fock_matrix)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
