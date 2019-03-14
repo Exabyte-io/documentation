@@ -1,4 +1,4 @@
-# Calculate Reaction Energy Profile Using the Nudged Elastic Band (NEB) method
+# Calculate Reaction Energy Profile Using Nudged Elastic Band (NEB) method
 
 This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
 
@@ -6,7 +6,9 @@ We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H
 
 This example considers a simple activated reaction, consisting in the **collinear proton transfer reaction**:
 
+```text
 H2 + H  <==>  H + H2
+```
 
 In this triatomic reaction, the middle H atom breaks the bond with first atom and forms a molecule with third atom. We will thus calculate the energy activation barrier of this reaction.
 
@@ -93,7 +95,7 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 ## Animations
 
-### NEB with Manually-Generated Interpolated Set
+### NEB with Manually-Generated Images
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
