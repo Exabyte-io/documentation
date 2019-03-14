@@ -1,4 +1,4 @@
-# Calculate Reaction Energy Profile Using the Nudged Elastic Band (NEB) method
+# Calculate Reaction Energy Profile Using Nudged Elastic Band (NEB) method
 
 This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) of intermediate image structures introduced in a [separate tutorial](../../materials/interpolated-sets.md).
 
@@ -6,9 +6,12 @@ We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H
 
 Only the aspects of NEB calculations which are specific to VASP will be reviewed here. For a more general introduction to how such calculations are performed and defined on our platform, the reader is referred to [this alternative tutorial page](reaction-profile-qe.md). The same collinear proton transfer chemical reaction of the H3 molecule as in this latter tutorial will be investigated here.
 
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
+
 ## Workflow Structure
 
-VASP and Quantum ESPRESSO work differently with regards to NEB computations for generating an energy profile along a chemical reaction path, using equidistant image structures along the path. General instructions on how NEB is implemented under VASP can be found in Ref. [^1]. An example demonstration of VASP NEB capabilities, for calculating the energy barrier in the case of the self-diffusion of a Pt-adatom on Pt (001), is offered in Ref. [^2].
+General instructions on how NEB is implemented under VASP can be found in Ref. [^1]. An example demonstration of VASP NEB capabilities, for calculating the energy barrier in the case of the self-diffusion of a Pt-adatom on Pt (001), is offered in Ref. [^2].
 
 Most importantly, VASP expects there to be a group of pre-existing [set folders](../../../entities-general/sets.md), within the account-owned [collection](../../../accounts/collections.md) of materials, named "00" (initial) to "0N" (final), each containing the POSCAR structure file for each of the N images constituting the interpolated set under consideration. All output files (OUTCAR, CONTCAR, OSZICAR etc...) of the NEB-steps run are written to these same directories. These sets are generated automatically on our platform, as explained in what follows.
  
@@ -42,6 +45,21 @@ The third and final subworkflow executes the NEB computation itself through VASP
 - "SPRING" defines the spring constant, in eV/Ang^2, between the images. A negative value turns on nudging.
 
 - "MAGMOM" ensures that the protons have opposite spins. This parameter has to be explicitly set in order to obtain the correct activation barrier, since the VASP NEB routine does not by itself relax the spins.
+
+An example of INCAR input script for an NEB calculation with VASP is shown below:
+
+```text
+ISTART = 0
+EDIFFG = -0.001
+IBRION = 1
+NELM = 100
+NSW = 100
+SPRING = -5
+ISPIN = 2
+ENCUT = 500
+MAGMOM = 1 -1 1
+IMAGES = 1
+```
 
 Additional information on further possible input parameters available for VASP NEB calculations can be retrieved in Ref. [^4].
 
