@@ -4,13 +4,9 @@ This tutorial page explains how to create an [interpolated set](../../materials-
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial.
 
-## Create an Ordered SET
-
-The first step in the generation of an Interpolated Set is to [create](../../entities-general/actions/create-sets.md) a [Set](../../entities-general/sets.md) within the account-owned [collection](../../accounts/collections.md) of materials, which we shall name and refer to as "NEB SET". Following its creation, the type of this set should then be [changed](../../entities-general/actions/change-set-type.md) to **ordered**.
-
 ## Upload Initial and Final Images to Materials Collection
 
-The datafiles containing the structural information about the initial and final states of the H3 molecule under consideration should then be [uploaded](../../materials/actions/upload.md) to the account-owned collection of materials. 
+The datafiles containing the structural information about the initial and final states of the H3 molecule under consideration should first be [uploaded](../../materials/actions/upload.md) to the account-owned collection of materials. 
 
 For the sake of the present tutorial, we will consider the following two POSCAR files, containing the structural parameters for the initial and final molecular configurations respectively:
 
@@ -74,7 +70,11 @@ These images can be visualized and cycled through with the help of the incorpora
 
 ## Save all Images in NEB SET
 
-Finally, **all** generated images should be [saved](../../materials-designer/header-menu/input-output/save.md) into the previously-created "NEB SET", by [selecting](../../materials-designer/header-menu/input-output/save.md#select-set) this set under the appropriate option of the "Save Items" dialog.
+Finally, **all** generated images should now be [saved](../../materials-designer/header-menu/input-output/save.md) into an ordered set called "NEB SET", which can be created as explained in what follows. The creation and selection of sets in which to save images is made possible by the appropriate option of the "Save Items" dialog.
+
+### Create an Ordered SET
+
+[These instructions](../../entities-general/actions/create-sets.md) demonstrate how to create a [Set](../../entities-general/sets.md) within the account-owned [collection](../../accounts/collections.md) of materials, which we shall name and refer to as "NEB SET". Following its creation, the type of this set should then be [changed](../../entities-general/actions/change-set-type.md) to **ordered**.
 
 ## Animations
 
