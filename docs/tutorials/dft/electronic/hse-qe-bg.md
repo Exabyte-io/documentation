@@ -20,13 +20,13 @@ The [Workflow](../../../workflows/overview.md) for executing the HSE band gap an
 
 ### Size of the q-grid
 
-It is nevertheless crucial, in order to obtain an accurate numerical estimate of the band gap size, to have a sufficiently large three-dimensional mesh for the q (k1-k2) sampling of the Fock operator, as defined through the "nqx1, nqx2, nqx3" input keywords within the Quantum ESPRESSO input script. This "q-grid" size has to be a divisor of the k-grid size, and for the sake of the present tutorial we recommend setting the k-grid to 8x8x8 and the q-grid size to 4x4x4 for example, as can be set under the ["Important Settings" tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Subworkflow Editor interface](../../../workflow-designer/subworkflow-editor/overview.md). 
+It is nevertheless crucial, in order to obtain an accurate numerical estimate of the band gap size, to have a sufficiently large three-dimensional mesh for the q (k1-k2) sampling of the Fock operator, as defined through the "nqx1, nqx2, nqx3" input keywords within the Quantum ESPRESSO input script. This "q-grid" size has to be a divisor of the k-grid size, and for the sake of the present tutorial we recommend setting the k-grid dimensions to 8x8x8 and the q-grid to 4x4x4 for example, as can be set under the ["Important Settings" tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Subworkflow Editor interface](../../../workflow-designer/subworkflow-editor/overview.md). 
 
 #### Restrictions on kgrid size
 
-The user is advised that the default settings in the HSE band gap computation workflow are such that **the q-grid is set to be half the size of the kgrid** entered by the user. Hence an **even kgrid size** is always required, for example 8x8x8 yielding a q-grid of size 4x4x4.
+The user is advised that the default settings in the HSE band gap computation workflow are such that **the q-grid is set to be half the size of the kgrid** entered by the user. Hence an **even kgrid size** is always required, for example 8x8x8 yielding a q-grid of dimensions 4x4x4.
  
- Should the user enter an odd number for the kgrid size by mistake, this size will automatically be increased by one in the workflow to make it even: for example, a 5x5x5 kgrid size entered by the user is increased to 6x6x6 by the workflow operations, thus resulting in a 3x3x3 q-grid. 
+ Should the user enter an odd number for the kgrid dimensions by mistake, this size will automatically be increased by one in the workflow to make it even: for example, a 5x5x5 kgrid size entered by the user is increased to 6x6x6 by the workflow operations, thus resulting in a 3x3x3 q-grid. 
  
  In order to change this default behaviour, the user is invited to manually edit the Quantum ESPRESSO input script for the main HSE calculation directly through the corresponding [unit editor interface](../../../workflow-designer/unit-editor.md), within its [input script template](../../../workflow-designer/unit-editor/input-templates.md).
 
@@ -34,7 +34,7 @@ The user is advised that the default settings in the HSE band gap computation wo
 
 The user is welcome to explore how the precision of the final band gap result depends on the choice of such grid size parameters, within the limits of the computational resources at his disposal. 
 
-The aforementioned recommended choice of grid sizes however already constitutes a significant computational cost, requiring an estimated execution time of about 20-30 minutes on 16 CPU cores, but presents the advantage of yielding an appreciably accurate final result for the size of the silicon band gap, as explained later in the present tutorial.
+The aforementioned recommended choice of grid dimensions however already constitutes a significant computational cost, requiring an estimated execution time of about 20-30 minutes on 16 CPU cores, but presents the advantage of yielding an appreciably accurate final result for the size of the silicon band gap, as explained later in the present tutorial.
 
 ## Copy HSE Workflow from Bank
 
