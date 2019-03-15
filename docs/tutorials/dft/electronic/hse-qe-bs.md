@@ -4,7 +4,7 @@ This tutorial page explains how to calculate the [electronic band structure](../
 
 We discuss in the present tutorial those aspects of the band structure calculation which are specific to the implementation of the **HSE (Heyd-Scuseria-Ernzerhof)** [exchange-correlation functional](../../../models-directory/dft/parameters.md#functional), a special class of [Hybrid Functionals](../../../models-directory/dft/parameters.md#hybrid-functionals).
  
-The instructions presented herein complement the general discussion introduced in a [separate tutorial](band-structure.md). The reader is referred to this latter page for an outline of the general procedure for band structure computations using DFT, whereas only HSE-specific aspects will be reviewed throughout the remainder of the present page.
+The instructions presented herein complement the general discussion introduced in a [separate tutorial](band-structure.md). The reader is referred to this latter page for an outline of the general procedure for band structure computations using DFT as performed on our platform, whereas only HSE-specific aspects will be reviewed throughout the remainder of the present page.
 
 ## Workflow for HSE Calculation with Quantum ESPRESSO
 
@@ -16,7 +16,7 @@ The first subworkflow step involves a standard self-consistent field (scf) calcu
 
 ### 2. Manual Extraction of k-points
 
-The traditional approach for computing the band structure in Quantum ESPRESSO, outlined in [this separate tutorial](band-structure.md), would have proceeded via a non self-consistent calculation using the wave functions and charge density of the previous scf calculation. However, within the HSE approach towards achieving the same objective, in order to get the Fock operator [^1] [^2] at a certain k-point one requires the wavefunctions on a grid that is commensurate with it, and this can only be done self-consistently.
+The traditional approach for computing the band structure in Quantum ESPRESSO, outlined in [this separate tutorial](band-structure.md), would have proceeded via a non self-consistent calculation using the wave functions and charge density of the previous scf calculation. However, within the HSE approach towards achieving the same objective, in order to get the Fock operator [^1] [^2] at a certain k-point, one requires the wavefunctions on a grid that is commensurate with it, and this can only be done self-consistently.
 
 A way around this problem is to manually extract the k-points generated automatically in the preceding step, together with their respective weights, and insert them individually as an explicit list inside the input script for the final HSE calculation described next. 
 
@@ -32,7 +32,7 @@ The HSE method is activated via the addition of the `input_dft = 'hse'` input pa
  
 #### Defining the q-sampling of the Fock Operator
  
-A second set of important input parameters consists in the "nqx1, nqx2, nqx3" keywords. These parameters define the three-dimensional mesh for the q (k1-k2) sampling of the Fock operator. For basic bandstructure calculations such as those being considered in the present tutorial, these three mesh parameters can all be left to a size of one. However for an accurate estimate of the size of the band gap, such as narrated in a [separate tutorial](hse-qe-bg.md), a higher value for this q-mesh size should be considered and tested, which drastically improves the precision of the band structure computation at the price of a significantly higher computational cost. 
+A second set of important input parameters in the context of HSE consists in the "nqx1, nqx2, nqx3" keywords. These parameters define the three-dimensional mesh for the q (k1-k2) sampling of the Fock operator. For basic bandstructure calculations such as those being considered in the present tutorial, these three mesh parameters can all be left to a size of one. However for an accurate estimate of the size of the band gap, such as narrated in a [separate tutorial](hse-qe-bg.md), a higher value for this q-mesh size should be considered and tested, which drastically improves the precision of the band structure computation at the price of a significantly higher computational cost. 
 
 #### Inserting the List of k-points
 
@@ -42,7 +42,7 @@ Another aspect of the main HSE calculation unit worth noticing is how the grid o
 
 In addition to this list of k-points for sampling the Brillouin Zone of the crystal over a regular grid, a second list of k-points needs to be provided and inserted manually at the bottom of the Quantum ESPRESSO input script, consisting in the [path of k-points](../../../models/auxiliary-concepts/reciprocal-space/paths.md) to be followed across the Brillouin Zone for plotting the final band structure dispersion curves. This k-path can be customized by the user under the ["Important Settings" tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Subworkflow Editor interface](../../../workflow-designer/subworkflow-editor/overview.md). 
 
-It should be noticed that the reciprocal coordinates of these k-points along the path under consideration are inserted with **zero weight**, as opposed to the k-grid points which are instead entered with their normal weights. This is done to ensure that the k-path points do not interfere with the HSE electronic structure computation itself, since they are only needed for defining and plotting the final band structure.
+It should be noticed that the reciprocal coordinates of these k-points along the path under consideration are inserted with **zero weight**, as opposed to the k-grid points which are instead entered with their normal weights. This is done to ensure that the k-path points do not interfere with the HSE electronic structure computation itself, since they are only needed for defining and plotting the final band structure dispersion curve.
 
 #### Calculating the Final Band Structure
 
