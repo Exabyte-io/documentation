@@ -46,6 +46,8 @@ The third and final subworkflow executes the NEB computation itself through VASP
 
 - "MAGMOM" ensures that the protons have opposite spins. This parameter has to be explicitly set in order to obtain the correct activation barrier, since the VASP NEB routine does not by itself relax the spins.
 
+- "EDIFFG" is important to get the properly relaxed intermediate states, since the default parameters might not be enough. More specifically, this parameter defines the break condition for the ionic relaxation loop. If EDIFFG is negative, such as in our case, the relaxation will stop if all forces are smaller than the absolute value set for this parameter. 
+
 An example of INCAR input script for an NEB calculation with VASP is shown below:
 
 ```text
