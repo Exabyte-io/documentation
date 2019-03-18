@@ -9,7 +9,7 @@ This set of initial and final structures together with images [ordered](../../..
 ## Example Usage
 
 
-**Interpolated Sets** are used for the calculation of the energy profile and activation barrier for the chemical reactions via the [Nudged Elastic Bands (NEB) method](../../../tutorials/dft/chemical/neb.md).
+**Interpolated Sets** are used for the calculation of the energy profile and activation barrier for the chemical reactions via the [Nudged Elastic Bands (NEB) method](../../../tutorials/dft/chemical/reaction-profile-qe.md).
 
 ## Animation
 
