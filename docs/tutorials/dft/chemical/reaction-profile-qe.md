@@ -1,8 +1,8 @@
 # Calculate Reaction Energy Profile Using Nudged Elastic Band (NEB) method
 
-This tutorial page explains how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
+This tutorial page explains how to calculate the [energy reaction profile](../../../properties-directory/non-scalar/reaction-energy-profile.md) and [activation barrier](../../../properties-directory/scalar/activation-barrier.md) for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
 
-We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as the main simulation engine, via the implementation of its `PWneb` [flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors) [^1]. 
+We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as the main simulation engine, via the implementation of its `PWneb` [flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors). 
 
 This example considers a simple activated reaction, consisting in the **collinear proton transfer reaction**:
 
@@ -14,7 +14,7 @@ In this triatomic reaction, the middle H atom breaks the bond with first atom an
 
 ## Theoretical Background
 
-A detailed theoretical review of the NEB method can be found in Ref. [^2]. A brief introductory explanation is offered in what follows.
+A detailed theoretical review of the NEB method can be found in Ref. [^2] cited [in this page](../../../properties-directory/non-scalar/reaction-energy-profile.md). A brief introductory explanation is offered in what follows.
 
 ### The Challenge: Predicting the Minimum Energy Path in Chemical Reactions
  
@@ -48,11 +48,11 @@ We outline here some important aspects of the [Workflow](../../../workflows/over
 
 ### Main Executable
 
-NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable](../../../software-directory/modeling/quantum-espresso/components.md#executables). The input parameters for this executable are described in Ref. [^3], and can be customized by the user via the [unit input template editor](../../../workflow-designer/unit-editor.md#unit-input-templates) within the [Workflow Designer Interface](../../../workflow-designer/overview.md). 
+NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable](../../../software-directory/modeling/quantum-espresso/components.md#executables). The input parameters for this executable are described in Ref. [^4] of [this page](../../../software-directory/modeling/quantum-espresso/components.md), and can be customized by the user via the [unit input template editor](../../../workflow-designer/unit-editor.md#unit-input-templates) within the [Workflow Designer Interface](../../../workflow-designer/overview.md). 
 
 ### Broyden Algorithm
 
-Within the neb.x input script, we note in particular the need for the **Broyden algorithm** [^4] instead of the default one. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
+Within the neb.x input script, we note in particular the need for the **Broyden algorithm** instead of the default one. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
 
 ### Number of Images
 
@@ -99,7 +99,7 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^5]).
+Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^1]).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/iNU_AxlcWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -117,12 +117,4 @@ This feature can be enabled by selecting an appropriate number of intermediate i
 
 ## Links
 
-[^1]: [PWneb User’s Guide, Official Documentation](https://www.quantum-espresso.org/Doc/neb_user_guide.pdf)
-
-[^2]: [H. Jonsson, G. Mills and K.W. Jacobsen: "Nudged elastic band method for finding minimum energy paths of transitions", Document](http://theory.cm.utexas.edu/henkelman/pubs/jonsson98_385.pdf)
-
-[^3]: [Input File Description for neb.x, Official Quantum ESPRESSO documentation](http://web.mit.edu/espresso_v6.1/i386_linux26/qe-6.1/Doc/INPUT_NEB.html)
-
-[^4]: [Wikipedia Broyden's method, Website](https://en.wikipedia.org/wiki/Broyden%27s_method)
-
-[^5]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)
+[^1]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)

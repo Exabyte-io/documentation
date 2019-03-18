@@ -139,6 +139,30 @@ Density of states contains information on the number of electronic states as a f
 {!example/properties_directory/non-scalar/density_of_states.json!}
 ```
 
+### [Reaction Energy Profile](../../properties-directory/non-scalar/reaction-energy-profile.md)
+
+The energy profile of a chemical reaction is a representation of its energetic pathway, followed by the reactants as they are transformed into products.
+
+```json tab="Schema"
+{!schema/properties_directory/non-scalar/reaction_energy_profile.json!}
+```
+
+```json tab="Example"
+{!example/properties_directory/non-scalar/reaction_energy_profile.json!}
+```
+
+### [Activation Energy Barrier](../../properties-directory/scalar/activation-barrier.md)
+
+The Activation Energy Barrier marks the highest energy state encountered during the course of the progress of a chemical reaction.
+
+```json tab="Schema"
+{!schema/properties_directory/scalar/reaction_energy_barrier.json!}
+```
+
+```json tab="Example"
+{!example/properties_directory/scalar/reaction_energy_barrier.json!}
+```
+
 ### [Phonon Dispersions](../../properties-directory/non-scalar/phonon-dispersions.md)
 
 Lattice vibrations can be plotted in the form of phonon frequency dispersion plots across the reciprocal k-space of the crystal structure.

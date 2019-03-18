@@ -498,6 +498,7 @@ nav:
             - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
             - Pressure:                                 properties-directory/scalar/pressure.md
             - Total Force:                              properties-directory/scalar/total-force.md
+            - Activation Barrier:                       properties-directory/scalar/activation-barrier.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md
@@ -505,6 +506,7 @@ nav:
             - Band Gaps:                                properties-directory/non-scalar/band-gaps.md
             - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
             - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
+            - Reaction Energy Profile:                  properties-directory/non-scalar/reaction-energy-profile.md
         - Elemental:
             - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
