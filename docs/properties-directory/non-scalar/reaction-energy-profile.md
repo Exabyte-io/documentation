@@ -2,7 +2,7 @@
 
 <span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Chemical</span>
 
-Any chemical reaction or process can be characterized by its **Reaction Energy Profile** [^1]. This profile is a theoretical representation of the reaction's energetic pathway, followed by the reactants as they are transformed into products. It is typically plotted along the main **reaction coordinate**, a parametric curve that follows the pathway of a reaction, and that indicates its overall progress.
+Any chemical reaction or process can be characterized by its **Reaction Energy Profile** [^1]. This profile is a theoretical representation of the reaction's energetic pathway, followed by the reactants as they are transformed into products during the course of the reaction. It is typically plotted along the main **reaction coordinate**, a parametric curve that follows the pathway of a reaction, and that indicates its overall progress.
  
 The purpose of energy profiles is to provide a qualitative representation of how potential energy varies with molecular motion for a given chemical reaction.
 

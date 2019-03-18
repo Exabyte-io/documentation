@@ -2,11 +2,11 @@
 
 <span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Chemical</span>
 
-The Activation Energy Barrier marks the highest energy state encountered during the course of the progress of a chemical reaction [^1], as visualized through its [Reaction Energy Profile](../non-scalar/reaction-energy-profile.md). It is a **[Scalar and Auxiliary](../../properties/classification/general.md) property** of the chemical reaction under consideration.
+The Activation Energy Barrier marks the highest energy state encountered during the course of the progress of a chemical reaction [^1], as visualized through its [Reaction Energy Profile](../non-scalar/reaction-energy-profile.md). It is a **[Scalar and Auxiliary](../../properties/classification/general.md) property** of the chemical reaction under consideration. It therefore effectively measures the **energetic requirement** that the reactants need to overcome in order to undergo a complete transformation into the products of the chemical reaction.
 
 ## Example
 
-Its value can be estimated with any [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) [Workflow](../../workflows/overview.md), and it is returned under the [Results Tab](../../jobs/ui/results-tab.md) interface with the following appearance (in eV).
+Its value can be estimated with any [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) (NEB) [Workflow](../../workflows/overview.md), and it is returned under the [Results Tab](../../jobs/ui/results-tab.md) interface with the following appearance (in eV).
 
 <div class="clearfix">
     <center>
@@ -20,7 +20,9 @@ Its value can be estimated with any [Nudged Elastic Band](../../tutorials/dft/ch
 
 ## Transition States
 
-The highest potential energy state across a reaction energy profile is often referred to as the **transition state** [^2] for the chemical reaction under investigation.  
+The highest potential energy molecular configuration across a reaction energy profile is often referred to as the **transition state** [^2] for the chemical reaction under investigation.
+ 
+[In this section](../../workflows/addons/structural-relaxation.md#initial/final-structures-set), we explain how the transition state of a chemical reaction investigated with the NEB method can be inspected, both in its original and fully relaxed final molecular configurations, via our user interface at the end of the NEB job execution.
 
 ## Schema 
 
