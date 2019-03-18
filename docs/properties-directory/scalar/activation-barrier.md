@@ -6,7 +6,7 @@ The Activation Energy Barrier marks the highest energy state encountered during 
 
 ## Example
 
-Its value can be estimated with any [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) (NEB) [Workflow](../../workflows/overview.md), and it is returned under the [Results Tab](../../jobs/ui/results-tab.md) interface with the following appearance (in eV).
+Its value can be estimated with any [Nudged Elastic Band](../../tutorials/dft/chemical/reaction-profile-qe.md) (NEB) [Workflow](../../workflows/overview.md), and it is returned under the [Results Tab](../../jobs/ui/results-tab.md) interface with the following appearance (in eV).
 
 <div class="clearfix">
     <center>

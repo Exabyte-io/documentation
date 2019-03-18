@@ -56,7 +56,7 @@ In many cases, simulation software allows one to specify constraints in certain 
     
 ## Initial/Final Structures Set for NEB Calculations
 
-In some circumstances where a structural relaxation calculation is required, such as in [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) (NEB) computations for evaluating the [reaction energy profile](../../properties-directory/non-scalar/reaction-energy-profile.md) of chemical reactions, a copy of the original and fully relaxed image structures comprised in the relevant [Interpolated Set](../../materials-designer/header-menu/advanced/interpolated-set.md) is stored in a special [ordered set](../../entities-general/sets.md). 
+In some circumstances where a structural relaxation calculation is required, such as in [Nudged Elastic Band](../../tutorials/dft/chemical/reaction-profile-qe.md) (NEB) computations for evaluating the [reaction energy profile](../../properties-directory/non-scalar/reaction-energy-profile.md) of chemical reactions, a copy of the original and fully relaxed image structures comprised in the relevant [Interpolated Set](../../materials-designer/header-menu/advanced/interpolated-set.md) is stored in a special [ordered set](../../entities-general/sets.md). 
 
 This set can be retrieved within the account-owned materials [collection](../../accounts/collections.md), accessible via the [Explorer Interface](../../materials/ui/explorer.md) of our platform. It is typically labelled "initial/final structures", and is created automatically at the end of the NEB Job execution. 
 
