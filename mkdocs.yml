@@ -652,7 +652,6 @@ nav:
             - Thermodynamic Prop.:
                 - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
             - Chemical Prop.:
-            - Chemical Properties:
                 - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
                 - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
             - Add-ons:
