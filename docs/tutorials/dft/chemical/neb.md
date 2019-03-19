@@ -1,6 +1,6 @@
 # Calculate Reaction Energy Profile Using Nudged Elastic Band (NEB) method
 
-This tutorial page explains how to calculate the [energy reaction profile](../../../properties-directory/non-scalar/reaction-energy-profile.md) and [activation barrier](../../../properties-directory/scalar/activation-barrier.md) for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
+This tutorial page explains how to calculate the [energy reaction profile](../../../properties-directory/non-scalar/reaction-energy-profile.md) and [activation barrier](../../../properties-directory/scalar/reaction-energy-barrier.md) for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as the main simulation engine, via the implementation of its `PWneb` [flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors). 
 
@@ -52,7 +52,7 @@ NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable]
 
 ### Broyden Algorithm
 
-Within the neb.x input script, we note in particular the need for the [Broyden algorithm](../../../workflows/addons/structural-relaxation.md#numerical-implementations) instead of the default one, for numerically solving iterative minimization and optimization problems such as the [structural relaxations](../../../workflows/addons/structural-relaxation.md) performed on the interpolated set images during the course of the NEB computation. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
+Within the neb.x input script, we note in particular the need for the [Broyden algorithm](../../../methods/auxiliary-concepts/optimization-algorithms.md) instead of the default one, for numerically solving iterative minimization and optimization problems such as the [structural relaxations](../../../workflows/addons/structural-relaxation.md) performed on the interpolated set images during the course of the NEB computation. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
 
 ### Number of Images
 
