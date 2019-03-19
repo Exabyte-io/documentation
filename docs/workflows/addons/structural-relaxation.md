@@ -68,6 +68,6 @@ For jobs containing a single material, we create final and initial copies of mat
 
 ### Example for NEB Calculations
 
-In the special case of [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) (NEB) computations for evaluating the [Reaction Energy Profile](../../properties-directory/non-scalar/reaction-energy-profile.md) of chemical reactions for example, these structure copies include the end-point images of the [Interpolated Set](../../materials-designer/header-menu/advanced/interpolated-set.md) of molecular configurations under consideration, as well as its [intermediate transition state](../../properties-directory/scalar/reaction-energy-barrier.md#transition-states).
+In the special case of [Nudged Elastic Band](../../models/auxiliary-concepts/nudged-elastic-band.md) (NEB) computations for evaluating the [Reaction Energy Profile](../../properties-directory/non-scalar/reaction-energy-profile.md) of chemical reactions for example, these structure copies include the end-point images of the [Interpolated Set](../../materials-designer/header-menu/advanced/interpolated-set.md) of molecular configurations under consideration, as well as its [intermediate transition state](../../properties-directory/scalar/reaction-energy-barrier.md#transition-states).
  
  It is also worth noting that the "initial/final structures" sub-sets created in the context of NEB calculations are always of [ordered type](../../entities-general/sets.md), in order to preserve the correct order of the interpolated set images.
