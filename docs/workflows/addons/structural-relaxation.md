@@ -22,6 +22,10 @@ Secondly, a relaxation calculation ensures that the inter-atomic forces within t
 
 Performing such an initial relaxation at the beginning of any type of workflow is in general a recommended practice, since having a fully-optimized crystal structure as the starting point will ensure more reliable results throughout the course of the execution of the rest of the workflow tasks. The user is advised that not even the pre-defined crystal structures which can be imported directly from centralized databases, such as the [Materials Bank](../../materials/bank.md) or the [Material Project](../../materials/actions/import.md) repositories reachable on the Exabyte platform, are always guaranteed to be fully pre-relaxed and pre-optimized. 
 
+## Numerical Implementation
+
+Structural relaxation computations are typically implemented through suitable numerical minimization and optimization algorithms, such as those introduced [in this page](../../methods/auxiliary-concepts/optimization-algorithms.md).
+
 ## Execution of the Variable-cell Relaxation calculation
 
 The user can add such a variable-cell relaxation calculation as the first subworkflow step in a newly-created workflow by clicking on the `Relaxation` option under the drop-down menu button labelled with three vertical dots located at the right-hand side of the header menu of the Workflow Designer interface. 
@@ -56,10 +60,12 @@ In many cases, simulation software allows one to specify constraints in certain 
     
 ## Initial/Final Structures Set 
 
-In some circumstances where a structural relaxation calculation is required, such as in [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) (NEB) computations for evaluating the [reaction energy profile](../../properties-directory/non-scalar/reaction-energy-profile.md) of chemical reactions, a copy of the original and fully relaxed structures is stored in a special [ordered set](../../entities-general/sets.md). 
+In some circumstances, where a structural relaxation calculation is required, a copy of the original and fully relaxed structures is stored in a special [set](../../entities-general/sets.md). This set can be retrieved within the account-owned materials [collection](../../accounts/collections.md), accessible via the [Explorer Interface](../../materials/ui/explorer.md) of our platform. It is typically labelled **"initial/final structures"**, and is created automatically at the end of the relevant Job execution. 
 
-This set can be retrieved within the account-owned materials [collection](../../accounts/collections.md), accessible via the [Explorer Interface](../../materials/ui/explorer.md) of our platform. It is typically labelled **"initial/final structures"**, and is created automatically at the end of the relevant Job execution. 
-
-For the case of **multi-material jobs**, when the job contains a set of multiple materials associated with it such as in NEB computations, this "initial/final structures" set is composed of two sub-sets, one containing a copy of the original (initial) non-relaxed structures, and the second comprising a copy of the fully relaxed final structures. Both sub-sets have the id of the corresponding [Job](../../jobs/overview.md) assigned to them as a [tag](../../entities-general/data.md#metadata). Each structure included in such sets can then be [opened](../../entities-general/actions/open-edit.md) and inspected under [Materials Viewer](../../materials/ui/viewer.md). In the special case of NEB computations for example, these copies include the end-point images of the reaction profile, as well as its [intermediate transition state](../../properties-directory/scalar/activation-barrier.md#transition-states). 
+For the case of **multi-material jobs**, when the job contains a set of multiple materials associated with it, this "initial/final structures" set is composed of two sub-sets, one containing a copy of the original (initial) non-relaxed structures, and the second comprising a copy of the fully relaxed final structures. Both sub-sets have the id of the corresponding [Job](../../jobs/overview.md) assigned to them as a [tag](../../entities-general/data.md#metadata). Each structure included in such sets can then be [opened](../../entities-general/actions/open-edit.md) and inspected under [Materials Viewer](../../materials/ui/viewer.md). 
 
 For jobs containing a single material, we create final and initial copies of materials at the top level of the "initial/final structures" set, and not in a sub-set.
+
+### Example for NEB Calculations
+
+In the special case of [Nudged Elastic Band](../../tutorials/dft/chemical/neb.md) (NEB) computations for evaluating the [Reaction Energy Profile](../../properties-directory/non-scalar/reaction-energy-profile.md) of chemical reactions for example, these structure copies include the end-point images of the [Interpolated Set](../../materials-designer/header-menu/advanced/interpolated-set.md) of molecular configurations under consideration, as well as its [intermediate transition state](../../properties-directory/scalar/reaction-energy-barrier.md#transition-states). It is worth noting that the "initial/final structures" sub-sets created in the context of NEB calculations are always of [ordered type](../../entities-general/sets.md).
