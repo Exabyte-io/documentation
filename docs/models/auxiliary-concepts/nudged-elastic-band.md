@@ -1,6 +1,4 @@
-## Theoretical Background
-
-A detailed theoretical review of the NEB method can be found in Ref. [^1]. A brief introductory explanation is offered in what follows.
+#  Reaction Energy Profile Using Nudged Elastic Band (NEB) Method    a                                                                                                                                                                                                                            A detailed theoretical review of the NEB method can be found in Ref. [^1]. A brief introductory explanation is offered in what follows.
 
 ### The Challenge: Predicting the Minimum Energy Path in Chemical Reactions
  
@@ -34,4 +32,3 @@ The graph below shows a traditional NEB calculation (blue) and a climbing image 
 [^1]: [H. Jonsson, G. Mills and K.W. Jacobsen: "Nudged elastic band method for finding minimum energy paths of transitions", Document](http://theory.cm.utexas.edu/henkelman/pubs/jonsson98_385.pdf)
 
 [^2]: [Henkelman, Uberuaga, and Jónsson: "A climbing image nudged elastic band method for finding saddle points and minimum energy paths"; J. Chem. Phys., Vol. 113, No. 22, 8 December 2000](http://henkelmanlab.org/pubs/henkelman00_9901.pdf)
-
