@@ -63,3 +63,17 @@ This set can be retrieved within the account-owned materials [collection](../../
 For the case of **multi-material jobs**, when the job contains a set of multiple materials associated with it such as in NEB computations, this "initial/final structures" set is composed of two sub-sets, one containing a copy of the original (initial) non-relaxed structures, and the second comprising a copy of the fully relaxed final structures. Both sub-sets have the id of the corresponding [Job](../../jobs/overview.md) assigned to them as a [tag](../../entities-general/data.md#metadata). Each structure included in such sets can then be [opened](../../entities-general/actions/open-edit.md) and inspected under [Materials Viewer](../../materials/ui/viewer.md). In the special case of NEB computations for example, these copies include the end-point images of the reaction profile, as well as its [intermediate transition state](../../properties-directory/scalar/activation-barrier.md#transition-states). 
 
 For jobs containing a single material, we create final and initial copies of materials at the top level of the "initial/final structures" set, and not in a sub-set.
+
+## Numerical Implementations
+
+Structural Relaxation calculations rely on special numerical algorithms for solving iterative minimization and optimization problems. These algorithms are often of **quasi-Newton** [^1] nature, a class of methods used to either find zeroes (roots), or local maxima and minima, of functions. 
+
+Commonly-encountered quasi-Newton algorithmic methods in problems of relaxation and optimization of material structures are for example the **Broyden Method** [^2], or the more advanced **Broyden–Fletcher–Goldfarb–Shanno (BFGS) algorithm** [^3].
+
+## Links
+
+[^1]: [Wikipedia Quasi-Newton method, Website](https://en.wikipedia.org/wiki/Quasi-Newton_method)
+
+[^2]: [Wikipedia Broyden's method, Website](https://en.wikipedia.org/wiki/Broyden%27s_method)
+
+[^3]: [Wikipedia Broyden–Fletcher–Goldfarb–Shanno algorithm, Website](https://en.wikipedia.org/wiki/Broyden%E2%80%93Fletcher%E2%80%93Goldfarb%E2%80%93Shanno_algorithm)

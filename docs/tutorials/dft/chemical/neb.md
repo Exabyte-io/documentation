@@ -52,7 +52,7 @@ NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable]
 
 ### Broyden Algorithm
 
-Within the neb.x input script, we note in particular the need for the **Broyden algorithm** [^2] instead of the default one, for numerically solving iterative minimization and optimization problems such as the [structural relaxations](../../../workflows/addons/structural-relaxation.md) performed on the interpolated set images during the course of the NEB computation. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
+Within the neb.x input script, we note in particular the need for the [Broyden algorithm](../../../workflows/addons/structural-relaxation.md#numerical-implementations) instead of the default one, for numerically solving iterative minimization and optimization problems such as the [structural relaxations](../../../workflows/addons/structural-relaxation.md) performed on the interpolated set images during the course of the NEB computation. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
 
 ### Number of Images
 
@@ -99,7 +99,7 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^3]).
+Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^2]).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/iNU_AxlcWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -119,6 +119,4 @@ This feature can be enabled by selecting an appropriate number of intermediate i
 
 [^1]: [Henkelman, Uberuaga, and Jónsson: "A climbing image nudged elastic band method for finding saddle points and minimum energy paths"; J. Chem. Phys., Vol. 113, No. 22, 8 December 2000](http://henkelmanlab.org/pubs/henkelman00_9901.pdf)
 
-[^2]: [Wikipedia Broyden's method, Website](https://en.wikipedia.org/wiki/Broyden%27s_method)
-
-[^3]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)
+[^2]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)
