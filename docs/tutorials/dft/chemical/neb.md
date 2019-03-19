@@ -52,7 +52,7 @@ NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable]
 
 ### Broyden Algorithm
 
-Within the neb.x input script, we note in particular the need for the **Broyden algorithm** [^2] instead of the default one, for numerically solving iterative minimization and optimization problems such as structural relaxations. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
+Within the neb.x input script, we note in particular the need for the **Broyden algorithm** [^2] instead of the default one, for numerically solving iterative minimization and optimization problems such as the [structural relaxations](../../../workflows/addons/structural-relaxation.md) performed on the interpolated set images during the course of the NEB computation. This helps to remove the problem of ”oscillations” in the calculated activation energies. If these oscillations persist, and the user cannot afford more images, he/she should focus on smaller problems by decomposing the original one into pieces.
 
 ### Number of Images
 
