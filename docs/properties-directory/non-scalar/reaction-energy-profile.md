@@ -32,6 +32,4 @@ The JSON schema and an example representation for this property can be found [he
 
 [^1]: [Wikipedia Energy profile (chemistry), Website](https://en.wikipedia.org/wiki/Energy_profile_(chemistry))
 
-[^2]: [H. Jonsson, G. Mills and K.W. Jacobsen: "Nudged elastic band method for finding minimum energy paths of transitions", Document](http://theory.cm.utexas.edu/henkelman/pubs/jonsson98_385.pdf)
-
 [^3]: [Wikipedia Transition state, Website](https://en.wikipedia.org/wiki/Transition_state)
