@@ -203,6 +203,8 @@ nav:
         - Data:                                         methods/data.md
         - Parameters:                                   methods/parameters.md
         - Precision:                                    methods/precision.md
+        - Auxiliary Concepts:
+            - Optimization Algorithms:                  methods/auxiliary-concepts/optimization-algorithms.md
 
     - Methods Directory:
         - Overview:                                     methods-directory/overview.md
@@ -498,7 +500,7 @@ nav:
             - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
             - Pressure:                                 properties-directory/scalar/pressure.md
             - Total Force:                              properties-directory/scalar/total-force.md
-            - Activation Barrier:                       properties-directory/scalar/activation-barrier.md
+            - Reaction Energy Barrier:                  properties-directory/scalar/reaction-energy-barrier.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md

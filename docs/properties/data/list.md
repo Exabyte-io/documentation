@@ -151,9 +151,9 @@ The energy profile of a chemical reaction is a representation of its energetic p
 {!example/properties_directory/non-scalar/reaction_energy_profile.json!}
 ```
 
-### [Activation Energy Barrier](../../properties-directory/scalar/activation-barrier.md)
+### [Reaction Energy Barrier](../../properties-directory/scalar/reaction-energy-barrier.md)
 
-The Activation Energy Barrier marks the highest energy state encountered during the course of the progress of a chemical reaction.
+The Reaction Energy Barrier marks the highest energy state encountered during the course of the progress of a chemical reaction.
 
 ```json tab="Schema"
 {!schema/properties_directory/scalar/reaction_energy_barrier.json!}
