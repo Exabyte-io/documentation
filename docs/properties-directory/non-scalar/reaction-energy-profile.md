@@ -8,7 +8,7 @@ The purpose of energy profiles is to provide a qualitative representation of how
 
 ## Example
 
-Reaction Energy Profile calculations can be performed with an appropriate [Workflow](../../workflows/overview.md), based on the [**Nudged Elastic Bands** method](../../models/auxiliary-concepts/nudged-elastic-band.md)  such as [implemented](../../tutorials/dft/chemical/neb.md) by the [Quantum ESPRESSO modeling application](../../software-directory/modeling/quantum-espresso/overview.md). 
+Reaction Energy Profile calculations can be performed with an appropriate [Workflow](../../workflows/overview.md), based on the [**Nudged Elastic Bands** method](../../models/auxiliary-concepts/nudged-elastic-band.md)  such as [implemented](../../tutorials/dft/chemical/reaction-profile-qe.md) by the [Quantum ESPRESSO modeling application](../../software-directory/modeling/quantum-espresso/overview.md). 
 
 The final results are portrayed in the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) in the form of a **profile curve**, as illustrated in the graphic below. The visual contains the reaction energy profile for a chemical reaction with [activation energy barrier](../scalar/reaction-energy-barrier.md) of approximately 0.2 eV.
 
