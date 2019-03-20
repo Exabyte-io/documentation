@@ -1,6 +1,6 @@
 # Calculate Reaction Energy Profile Using Nudged Elastic Band (NEB) method
 
-This tutorial page explains how to calculate the [energy reaction profile](../../../properties-directory/non-scalar/reaction-energy-profile.md) and [activation barrier](../../../properties-directory/scalar/reaction-energy-barrier.md) for the multi-dimensional energy space of chemical reactions via the **Nudged Elastic Bands (NEB) method**, by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
+This tutorial page explains how to calculate the [energy reaction profile](../../../properties-directory/non-scalar/reaction-energy-profile.md) and [activation barrier](../../../properties-directory/scalar/reaction-energy-barrier.md) for the multi-dimensional energy space of chemical reactions via the [**Nudged Elastic Bands (NEB) method**](../../../models/auxiliary-concepts/nudged-elastic-band.md), by making use of the [interpolated sets](../../../materials-designer/header-menu/advanced/interpolated-set.md) introduced in a [separate tutorial](../../materials/interpolated-sets.md). 
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as the main simulation engine, via the implementation of its `PWneb` [flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors). 
 
@@ -11,36 +11,6 @@ H2 + H  <==>  H + H2
 ```
 
 In this triatomic reaction, the middle H atom breaks the bond with first atom and forms a molecule with third atom. We will thus calculate the energy activation barrier of this reaction.
-
-## Theoretical Background
-
-A detailed theoretical review of the NEB method can be found in Ref. [^2] cited [in this page](../../../properties-directory/non-scalar/reaction-energy-profile.md). A brief introductory explanation is offered in what follows.
-
-### The Challenge: Predicting the Minimum Energy Path in Chemical Reactions
- 
-In the context of the present introduction, it suffices to know that NEB aims at tackling a common and important problem in theoretical chemistry and in condensed matter physics, consisting in the the identification of the **lowest energy path** for a transition/rearrangement of a group of atoms from one stable configuration to another. Such transitions may be encountered for example during the course of chemical reactions, changes in conformation of molecules, or diffusion processes in solids. 
-
-Such a transition path is often referred to as the **"minimum energy path" (MEP)**. The potential energy maximum along the MEP is the **saddle point energy** which gives the **activation energy barrier**, a quantity of crucial importance for estimating the transition rate of the reaction.
-
-An example of a two-dimensional energy surface landscape for a generic transition between two structures, corresponding to two local energy minima, is shown in the image below. The position of the intermediate saddle in the energy is also highlighted.
-
-![Energy Surface](../../../images/tutorials/NEB-example.png "Energy Surface")
-
-### The Nudged Elastic Bands Method
-
-Many different methods, including NEB, have been proposed for finding minimum energy reaction paths and saddle points between known reactants and products. The NEB method works by optimizing a number of **intermediate images** along the reaction path. Each image finds the lowest energy possible, while maintaining equal spacing to neighboring images. This constrained optimization is done by adding spring forces along the band between images, and by projecting out the component of the force due to the potential perpendicular to the band.
-
-### Climbing Image
-
-The computational efficiency of the NEB method can be further improved through the adoption of the **Climbing Image** approach [^1], which allows for a more accurate finding of saddle points using the NEB with fewer images than the original method. 
-
-In the climbing image modification, the highest energy image is driven up to the saddle point. This image does not feel the spring forces along the band. Instead, the true force at this image along the tangent is inverted. In this way, the image tries to maximize its energy along the band, and minimize it in all other directions. When this image converges, it will be at the exact saddle point.
-
-### Example 
-
-The graph below shows a traditional NEB calculation (blue) and a climbing image cNEB calculation (red). The cNEB energies have been shifted by 0.05 eV so that the two curves are distinct. Notice how the climbing image calculation has shifted the position of the images (by compressing the images on the left of the plot), so that one image sits right at the saddle point.
-
-![NEB](../../../images/tutorials/NEB.png "NEB")
 
 ## Workflow Structure
 
@@ -99,7 +69,7 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^2]).
+Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^1]).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/iNU_AxlcWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -117,6 +87,4 @@ This feature can be enabled by selecting an appropriate number of intermediate i
 
 ## Links
 
-[^1]: [Henkelman, Uberuaga, and Jónsson: "A climbing image nudged elastic band method for finding saddle points and minimum energy paths"; J. Chem. Phys., Vol. 113, No. 22, 8 December 2000](http://henkelmanlab.org/pubs/henkelman00_9901.pdf)
-
-[^2]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)
+[^1]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)
