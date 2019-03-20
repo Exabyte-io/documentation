@@ -8,7 +8,7 @@ The purpose of energy profiles is to provide a qualitative representation of how
 
 ## Example
 
-Reaction Energy Profile calculations can be performed with an appropriate [Workflow](../../workflows/overview.md), based on the **Nudged Elastic Bands** method [^2] such as [implemented](../../tutorials/dft/chemical/reaction-profile-qe.md) by the [Quantum ESPRESSO modeling application](../../software-directory/modeling/quantum-espresso/overview.md). 
+Reaction Energy Profile calculations can be performed with an appropriate [Workflow](../../workflows/overview.md), based on the [**Nudged Elastic Bands** method](../../models/auxiliary-concepts/nudged-elastic-band.md)  such as [implemented](../../tutorials/dft/chemical/neb.md) by the [Quantum ESPRESSO modeling application](../../software-directory/modeling/quantum-espresso/overview.md). 
 
 The final results are portrayed in the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md) in the form of a **profile curve**, as illustrated in the graphic below. The visual contains the reaction energy profile for a chemical reaction with [activation energy barrier](../scalar/reaction-energy-barrier.md) of approximately 0.2 eV.
 
@@ -20,7 +20,7 @@ The possibility to export the graph is offered as mentioned [here](../../propert
 
 ## Transition State
 
-The highest potential energy molecular configuration across a reaction energy profile is often referred to as the **transition state** [^3] for the chemical reaction under investigation.
+The highest potential energy molecular configuration across a reaction energy profile is often referred to as the **transition state** [^2] for the chemical reaction under investigation.
  
 [In this section](../../workflows/addons/structural-relaxation.md#initial/final-structures-set), we explain how the transition state of a chemical reaction investigated with the NEB method can be inspected, both in its original and fully relaxed final molecular configurations, via our user interface at the end of the NEB job execution.
 
@@ -32,6 +32,4 @@ The JSON schema and an example representation for this property can be found [he
 
 [^1]: [Wikipedia Energy profile (chemistry), Website](https://en.wikipedia.org/wiki/Energy_profile_(chemistry))
 
-[^2]: [H. Jonsson, G. Mills and K.W. Jacobsen: "Nudged elastic band method for finding minimum energy paths of transitions", Document](http://theory.cm.utexas.edu/henkelman/pubs/jonsson98_385.pdf)
-
-[^3]: [Wikipedia Transition state, Website](https://en.wikipedia.org/wiki/Transition_state)
+[^2]: [Wikipedia Transition state, Website](https://en.wikipedia.org/wiki/Transition_state)

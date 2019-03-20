@@ -644,12 +644,12 @@ nav:
                 - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
                 - HSE Calculations:                      tutorials/dft/electronic/hse.md
                 - Fermi Surface:                         tutorials/dft/electronic/fermi-surface.md
-            - Vibrational Properties:
+            - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
                 - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
                 - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
-            - Thermodynamic Properties:
+            - Thermodynamic Prop.:
                 - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
             - Chemical Properties:
                 - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
