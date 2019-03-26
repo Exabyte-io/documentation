@@ -1,0 +1,13 @@
+Phonons,
+Lattice Vibrations,
+Lattice Dynamics,
+Semiconductor,
+Silicon,
+Density of States,
+Dispersion Curve,
+Grid,
+Parallel,
+Distributed,
+Irreducible Representations,
+Computing,
+Efficiency
