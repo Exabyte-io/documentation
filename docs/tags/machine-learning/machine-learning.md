@@ -1,5 +1,3 @@
-# Applicable to both Train and Predict ML tutorials
-
 Machine Learning,
 Band gap,
 Semiconductor,
