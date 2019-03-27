@@ -1,0 +1,7 @@
+semiconductor,
+electronic,
+electronic density of states,
+brillouin zone,
+band gap,
+band structure,
+charge density,
