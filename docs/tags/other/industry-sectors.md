@@ -1,18 +1,3 @@
-Exabyte.io, 
-Materials, 
-Science, 
-Simulations, 
-Physics, 
-Materials Modeling, 
-Materials Discovery, 
-Cloud Computing,
-Materials Properties,
-Industry,
-high-performance computing,
-
-
-
-
 Biotechnology,
 Chemical products, polymers and plastics,
 Pharmaceuticals,
@@ -28,8 +13,3 @@ Petroleum,
 Automation and Robotics,
 Nanotechnology,
 Artificial Intelligence and Machine Learning,
-
-
-
-
-
