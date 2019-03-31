@@ -1,3 +1,0 @@
-Interpolated Set,
-Hydrogen,
-Constraints

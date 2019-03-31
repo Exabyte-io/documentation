@@ -1,0 +1,251 @@
+[
+    {
+        "@general": [
+            "Exabyte.io",
+            "Materials",
+            "Science",
+            "Simulations",
+            "Physics",
+            "Materials Modeling",
+            "Materials Discovery",
+            "Cloud Computing",
+            "Materials Properties",
+            "Industry",
+            "high-performance computing"
+        ]
+    },
+    {
+        "@dft": [
+            "@general",
+            "Density Functional Theory",
+            "DFT",
+            "VASP",
+            "Quantum ESPRESSO",
+            "Electronic Structure",
+            "Crystal Structure"
+        ]
+    },
+    {
+        "@k-points-convergence": [
+            "@general",
+            "@dft",
+            "k-points",
+            "Convergence"
+        ]
+    },
+    {
+        "@structural-relaxation": [
+            "@general",
+            "@dft",
+            "Structural",
+            "Relaxation",
+            "Mechanical",
+            "Optimization",
+            "Stress",
+            "Tensor",
+            "vc-relax",
+            "Geometry",
+            "Lattice",
+            "Variable",
+            "Cell"
+        ]
+    },
+    {
+        "@neb": [
+            "@general",
+            "@dft",
+            "Molecule",
+            "Chemistry",
+            "Reaction Energy Profile",
+            "Energy Barrier",
+            "Chemical Reaction",
+            "Computational Chemistry",
+            "Nudged Elastic Band",
+            "Activation Barrier",
+            "Reactants",
+            "Products",
+            "Reaction kinetics",
+            "Molecular Configurations",
+            "Climbing Image"
+        ]
+    },
+    {
+        "@electronic": [
+            "@general",
+            "@dft",
+            "semiconductor",
+            "electronic",
+            "electronic density of states",
+            "brillouin zone",
+            "band gap",
+            "band structure",
+            "charge density"
+        ]
+    },
+    {
+        "@bandstructure": [
+            "@general",
+            "@dft",
+            "@electronic",
+            "Electronic Dispersion Curve"
+        ]
+    },
+    {
+        "@fermi-surface": [
+            "@general",
+            "@dft",
+            "@electronic",
+            "copper",
+            "Fermi Surface",
+            "Reciprocal Space",
+            "metallic",
+            "metal"
+        ]
+    },
+    {
+        "@surface-energy": [
+            "@general",
+            "@dft",
+            "Surface Energy",
+            "Thermodynamics",
+            "Crystal Surface",
+            "Bulk"
+        ]
+    },
+    {
+        "@vibrational": [
+            "@general",
+            "@dft",
+            "Phonons",
+            "Lattice Vibrations",
+            "Lattice Dynamics"
+        ]
+    },
+    {
+        "@phonons": [
+            "@general",
+            "@dft",
+            "@vibrational",
+            "Density of States",
+            "Dispersion Curve"
+        ]
+    },
+    {
+        "@phonons-grid": [
+            "@general",
+            "@dft",
+            "@vibrational",
+            "Grid",
+            "Parallel",
+            "Distributed",
+            "Irreducible Representations",
+            "Computing",
+            "Efficiency"
+        ]
+    },
+    {
+        "@zero-point-energy": [
+            "@general",
+            "@dft",
+            "@vibrational",
+            "Zero Point Energy",
+            "Thermal Energy",
+            "Vibrational Energy"
+        ]
+    },
+    {
+        "@restart": [
+            "@general",
+            "@dft",
+            "Restart Job"
+        ]
+    },
+    {
+        "@jobs-via-cli": [
+            "@general",
+            "@dft",
+            "Command Line Interface",
+            "Job Submission",
+            "Batch Script",
+            "Scheduler",
+            "Submission Queue",
+            "Computing Tasks"
+        ]
+    },
+    {
+        "@machine-learning": [
+            "@general",
+            "@dft",
+            "Machine Learning",
+            "Linear Regression",
+            "Data Science",
+            "Interpolation",
+            "Artificial Intelligence",
+            "Data Analytics",
+            "Deep Learning",
+            "Predictions",
+            "Statistics",
+            "Statistical Analysis",
+            "Training Model",
+            "Data Set"
+        ]
+    },
+    {
+        "@combinatorial-sets": [
+            "@general",
+            "@dft",
+            "Gallium Phosphide",
+            "Materials Designer",
+            "Combinatorial Sets",
+            "Combinations",
+            "Permutations",
+            "Vacancies",
+            "Impurities",
+            "Dopants",
+            "Lattice Defects"
+        ]
+    },
+    {
+        "@interpolated-set": [
+            "@general",
+            "@dft",
+            "Interpolated Set",
+            "Hydrogen",
+            "Constraints"
+        ]
+    },
+    {
+        "@VESTA": [
+            "@general",
+            "@dft",
+            "Iron",
+            "bcc",
+            "VESTA",
+            "crystal visualization",
+            "software",
+            "desktop environment"
+        ]
+    },
+    {
+        "@industry-sectors": [
+            "@general",
+            "@dft",
+            "Biotechnology",
+            "Chemical products",
+            "polymers and plastics",
+            "Pharmaceuticals",
+            "Aerospace",
+            "Automotive",
+            "Electronics and Semiconductors",
+            "Materials and Metallurgy",
+            "Medical Devices",
+            "Batteries and Energy Storage",
+            "Electrical Engineering",
+            "Mechanical Engineering",
+            "Petroleum",
+            "Automation and Robotics",
+            "Nanotechnology",
+            "Artificial Intelligence and Machine Learning"
+        ]
+    }
+]
