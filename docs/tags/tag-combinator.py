@@ -29,4 +29,4 @@ tags_list=tags_list+ tags_list_1
 tags_list=[tags_list[i] for i in range(len(tags_list)) if '@' not in tags_list[i]]
 
 os.system('youtube-upload --title="'+title+'"  --description="A.S.Mutter plays Beethoven"   --category="Science & Technology"  --tags="'+ ",".join(
-    tags_list)+'"  --embeddable=True --privacy unlisted ../../scripts/mp4/'+video_file+'.mp4')
+    tags_list)+'"  --embeddable=True --privacy unlisted ../../scripts/mp4/'+video_file)
