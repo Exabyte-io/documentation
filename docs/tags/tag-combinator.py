@@ -25,7 +25,7 @@ for i in range(len(tags_list)):
     if tags_list[i][0]=="@":
         tags_list_1.extend(retrieve_key(tags_list[i]))
 
-tags_list=tags_list+ tags_list_1
+tags_list=tags_list_1+tags_list
 tags_list=[tags_list[i] for i in range(len(tags_list)) if '@' not in tags_list[i]]
 
 os.system('youtube-upload --title="'+title+'"  --description="A.S.Mutter plays Beethoven"   --category="Science & Technology"  --tags="'+ ",".join(
