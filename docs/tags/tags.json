@@ -19,16 +19,37 @@
             "@general",
             "Density Functional Theory",
             "DFT",
-            "VASP",
-            "Quantum ESPRESSO",
             "Electronic Structure",
-            "Crystal Structure"
+            "Crystal Structure",
+            "ab initio",
+            "Quantum Mechanics",
+            "Pseudopotential"
+        ]
+    },
+    {
+        "@qe": [
+            "@general",
+            "@dft",
+            "QE",
+            "espresso",
+            "q-e",
+            "Quantum ESPRESSO"
+        ]
+    },
+    {
+        "@vasp": [
+            "@general",
+            "@dft",
+            "VASP",
+            "Vienna Ab initio Simulation Package"
         ]
     },
     {
         "@k-points-convergence": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "k-points",
             "Convergence"
         ]
@@ -37,6 +58,8 @@
         "@structural-relaxation": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "Structural",
             "Relaxation",
             "Mechanical",
@@ -54,6 +77,8 @@
         "@neb": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "Molecule",
             "Chemistry",
             "Reaction Energy Profile",
@@ -73,6 +98,8 @@
         "@electronic": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "semiconductor",
             "electronic",
             "electronic density of states",
@@ -86,6 +113,8 @@
         "@bandstructure": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "@electronic",
             "Electronic Dispersion Curve"
         ]
@@ -94,6 +123,8 @@
         "@fermi-surface": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "@electronic",
             "copper",
             "Fermi Surface",
@@ -106,6 +137,8 @@
         "@surface-energy": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "Surface Energy",
             "Thermodynamics",
             "Crystal Surface",
@@ -116,6 +149,8 @@
         "@vibrational": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "Phonons",
             "Lattice Vibrations",
             "Lattice Dynamics"
@@ -125,6 +160,8 @@
         "@phonons": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "@vibrational",
             "Density of States",
             "Dispersion Curve"
@@ -134,6 +171,8 @@
         "@phonons-grid": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "@vibrational",
             "Grid",
             "Parallel",
@@ -147,6 +186,8 @@
         "@zero-point-energy": [
             "@general",
             "@dft",
+            "@vasp",
+            "@qe",
             "@vibrational",
             "Zero Point Energy",
             "Thermal Energy",
@@ -156,14 +197,12 @@
     {
         "@restart": [
             "@general",
-            "@dft",
             "Restart Job"
         ]
     },
     {
         "@jobs-via-cli": [
             "@general",
-            "@dft",
             "Command Line Interface",
             "Job Submission",
             "Batch Script",
@@ -175,7 +214,6 @@
     {
         "@machine-learning": [
             "@general",
-            "@dft",
             "Machine Learning",
             "Linear Regression",
             "Data Science",
@@ -193,7 +231,6 @@
     {
         "@combinatorial-sets": [
             "@general",
-            "@dft",
             "Gallium Phosphide",
             "Materials Designer",
             "Combinatorial Sets",
@@ -208,7 +245,6 @@
     {
         "@interpolated-set": [
             "@general",
-            "@dft",
             "Interpolated Set",
             "Hydrogen",
             "Constraints"
@@ -217,7 +253,6 @@
     {
         "@VESTA": [
             "@general",
-            "@dft",
             "Iron",
             "bcc",
             "VESTA",
@@ -229,7 +264,6 @@
     {
         "@industry-sectors": [
             "@general",
-            "@dft",
             "Biotechnology",
             "Chemical products",
             "polymers and plastics",
