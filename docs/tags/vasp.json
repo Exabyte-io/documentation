@@ -4,7 +4,7 @@
             "@general",
             "@dft",
             "VASP",
-            "Vienna Ab initio Simulation Package"
+            "Vienna"
         ]
     }
 ]

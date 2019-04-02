@@ -9,14 +9,13 @@ tags = raw_input('Enter JSON ID for tags list: ')
 
 
 def retrieve_key(key):
+    key = key[1:]
     with open(key + '.json') as json_file:
         python_obj = (json.load(json_file))
-    for i in range(len(python_obj)):
-        if '@' + key in python_obj[i]:
-            return python_obj[i]['@' + key]
+    return python_obj[0]['@' + key]
 
 
-tags_list = retrieve_key(tags)
+tags_list = retrieve_key('@' + tags)
 
 tags_list_1 = []
 for i in range(len(tags_list)):
@@ -25,6 +24,7 @@ for i in range(len(tags_list)):
 
 tags_list = tags_list_1 + tags_list
 tags_list = [tags_list[i] for i in range(len(tags_list)) if '@' not in tags_list[i]]
+print tags_list
 
 os.system(
     'youtube-upload --title="' + title + '"  --description="A.S.Mutter plays Beethoven"   --category="Science & Technology"  --tags="' + ",".join(
