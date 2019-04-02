@@ -655,7 +655,7 @@ nav:
                 - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
             - Thermodynamic Prop.:
                 - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
-            - Chemical Properties:
+            - Chemical Prop.:
                 - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
                 - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
             - Add-ons:
