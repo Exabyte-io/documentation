@@ -7,17 +7,16 @@ video_file = raw_input('Enter video file name in mp4 folder: ')
 title = raw_input('Enter video title: ')
 tags = raw_input('Enter JSON ID for tags list: ')
 
-with open('tags.json') as json_file:
-    python_obj = (json.load(json_file))
-
 
 def retrieve_key(key):
+    with open(key + '.json') as json_file:
+        python_obj = (json.load(json_file))
     for i in range(len(python_obj)):
-        if key in python_obj[i]:
-            return python_obj[i][key]
+        if '@' + key in python_obj[i]:
+            return python_obj[i]['@' + key]
 
 
-tags_list = retrieve_key('@' + tags)
+tags_list = retrieve_key(tags)
 
 tags_list_1 = []
 for i in range(len(tags_list)):

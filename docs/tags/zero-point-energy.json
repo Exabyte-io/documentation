@@ -1,0 +1,14 @@
+[
+    {
+        "@zero-point-energy": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "@vibrational",
+            "Zero Point Energy",
+            "Thermal Energy",
+            "Vibrational Energy"
+        ]
+    }
+]

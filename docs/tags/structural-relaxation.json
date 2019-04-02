@@ -1,0 +1,21 @@
+[
+    {
+        "@structural-relaxation": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "Structural",
+            "Relaxation",
+            "Mechanical",
+            "Optimization",
+            "Stress",
+            "Tensor",
+            "vc-relax",
+            "Geometry",
+            "Lattice",
+            "Variable",
+            "Cell"
+        ]
+    }
+]

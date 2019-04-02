@@ -1,0 +1,17 @@
+[
+    {
+        "@phonons-grid": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "@vibrational",
+            "Grid",
+            "Parallel",
+            "Distributed",
+            "Irreducible Representations",
+            "Computing",
+            "Efficiency"
+        ]
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "@surface-energy": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "Surface Energy",
+            "Thermodynamics",
+            "Crystal Surface",
+            "Bulk"
+        ]
+    }
+]

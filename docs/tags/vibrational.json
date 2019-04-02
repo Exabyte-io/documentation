@@ -1,0 +1,13 @@
+[
+    {
+        "@vibrational": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "Phonons",
+            "Lattice Vibrations",
+            "Lattice Dynamics"
+        ]
+    }
+]

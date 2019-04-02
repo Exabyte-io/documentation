@@ -1,0 +1,16 @@
+[
+    {
+        "@fermi-surface": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "@electronic",
+            "copper",
+            "Fermi Surface",
+            "Reciprocal Space",
+            "metallic",
+            "metal"
+        ]
+    }
+]

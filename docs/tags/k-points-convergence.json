@@ -1,0 +1,12 @@
+[
+    {
+        "@k-points-convergence": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "k-points",
+            "Convergence"
+        ]
+    }
+]

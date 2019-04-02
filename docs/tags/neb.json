@@ -1,0 +1,23 @@
+[
+    {
+        "@neb": [
+            "@general",
+            "@dft",
+            "@vasp",
+            "@qe",
+            "Molecule",
+            "Chemistry",
+            "Reaction Energy Profile",
+            "Energy Barrier",
+            "Chemical Reaction",
+            "Computational Chemistry",
+            "Nudged Elastic Band",
+            "Activation Barrier",
+            "Reactants",
+            "Products",
+            "Reaction kinetics",
+            "Molecular Configurations",
+            "Climbing Image"
+        ]
+    }
+]
