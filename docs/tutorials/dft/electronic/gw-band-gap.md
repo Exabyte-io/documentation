@@ -24,7 +24,7 @@ For the sake of the present example, we can set the [grid of special k-points](.
 
 ### 2. Many Bands SCF Calculation
 
-A significant number of empty bands is required for GW calculations, such that it is typically better to perform the calculations in two steps, as two separate subworkflows: first the above-mentioned standard ground-state SCF calculation with few unoccupied orbitals only, and secondly a calculation over a large number of unoccupied orbitals (bands), by setting the `NBANDS` VASP tag to a large value. 
+A significant number of empty bands is required for GW calculations, such that it is typically better to perform the calculations in two steps, as two separate subworkflows: first the above-mentioned standard ground-state SCF calculation with only a few unoccupied orbitals, and secondly a calculation over a large number of unoccupied orbitals (bands), by setting the `NBANDS` VASP tag to a large value. 
 
 ### 3. GW Step
 
@@ -33,6 +33,8 @@ The actual GW calculation is done in this final subworkflow step. Here different
 The "Single Shot" quasi-particle energies method, often referred to as **G0W0**, is the simplest GW calculation, and computationally the most efficient one. A single-shot calculation calculates the quasi-particle energies from a single GW iteration by neglecting all off-diagonal matrix elements of the self-energy, and employing a Taylor expansion of the self-energy around the DFT energies.
 
 After a successful G0W0 run, VASP will write the quasi-particle energies into the main "OUTCAR" output file for every k-point in the Brillouin zone of the crystal structure under investigation.
+
+In the present example we calculate quasi-particle energies on the grid of k-points. This might not be the most accurate approach, as points on the grid might not fall exactly onto the band extrema for conduction and valence band, however, it is robust and can provide a very reasonable approximation. An intelligent interpolation technique might be used to further extract band dispersions along symmetry paths.
 
 ## Creating and Executing Job
 
