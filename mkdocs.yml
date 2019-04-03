@@ -638,16 +638,16 @@ nav:
             - Predict New Properties:                tutorials/ml/predict-ml-properties.md
         - Density Functional Theory:
             - Electronic Properties:
-                - Overview:                              tutorials/dft/electronic/overview.md
-                - Electronic band structure:             tutorials/dft/electronic/band-structure.md
-                - Electronic band gap:                   tutorials/dft/electronic/band-gap.md
-                - Electronic band structure with HSE:    tutorials/dft/electronic/hse-qe-bs.md
-                - Electronic band gap with HSE:          tutorials/dft/electronic/hse-qe-bg.md
-                - Electronic band gap with GW:           tutorials/dft/electronic/gw-band-gap.md
-                - Electronic density of states:          tutorials/dft/electronic/density-of-states.md
-                - Electronic density mesh:               tutorials/dft/electronic/electronic-density-mesh.md
-                - HSE Calculations:                      tutorials/dft/electronic/hse-vasp.md
-                - Fermi Surface:                         tutorials/dft/electronic/fermi-surface.md
+                - Overview:                                tutorials/dft/electronic/overview.md
+                - Electronic band structure:               tutorials/dft/electronic/band-structure.md
+                - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
+                - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
+                - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
+                - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
+                - Electronic band structure with HSE (QE): tutorials/dft/electronic/hse-qe-bs.md
+                - Electronic band gap with HSE (QE):       tutorials/dft/electronic/hse-qe-bg.md
+                - Electronic band gap with HSE (VASP):     tutorials/dft/electronic/hse-vasp-bg.md
+                - Electronic band gap with GW (VASP):      tutorials/dft/electronic/gw-vasp-bg.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md

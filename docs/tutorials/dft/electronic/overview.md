@@ -10,9 +10,9 @@ We review the procedure for computing the [electronic band structure](../../../p
 
 The calculation of the [band gap](../../../properties-directory/non-scalar/band-gaps.md) is the object of a [separate discussion](band-gap.md).
 
-## [Band Gap via GW Approximation](gw-band-gap.md)
+## [Band Gap via GW Approximation](gw-vasp-bg.md)
 
-[This distinct tutorial](gw-band-gap.md) illustrates how the results for a [band gap](../../../properties-directory/non-scalar/band-gaps.md) computation can be further improved and made to be more accurate through the use of the GW Approximation.
+[This distinct tutorial](gw-vasp-bg.md) illustrates how the results for a [band gap](../../../properties-directory/non-scalar/band-gaps.md) computation can be further improved and made to be more accurate through the use of the GW Approximation.
 
 ## [Density of States](density-of-states.md)
 
@@ -22,9 +22,9 @@ We also offer instructions on how to evaluate the [electronic Density of States]
 
 Finally, we conclude our review of the electronic properties of materials by covering [a tutorial page](electronic-density-mesh.md) dedicated to the computation of the Electronic Charge Density Mesh.
 
-## [HSE Calculations](hse-vasp.md)
+## [HSE Calculations](hse-vasp-bg.md)
 
-[In this other tutorial](hse-vasp.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation.
+[In this other tutorial](hse-vasp-bg.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation.
 
 ## [Fermi Surface](fermi-surface.md)
 
