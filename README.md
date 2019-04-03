@@ -405,3 +405,23 @@ The following list of words should be avoided:
 - Various 
 - Automatically
 - Finally
+
+
+## Translating to Other Languages
+
+Use `translate.py` script to generate translated docs using Google API:
+
+```bash
+python translate.py -t 100
+```
+
+See script source for options.
+
+### Notes
+
+Regular Expressions for renaming image links in WebStorm:
+
+```regexp
+/ images / (\w+) /    <- contains a space as the final character
+/images/$1/
+``` 

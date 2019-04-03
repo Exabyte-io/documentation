@@ -29,7 +29,7 @@ DEFAULT_LANGUAGE_CODE = 'ja'
 DEFAULT_THRESHOLD = 10
 # Google API key to communicate with Cloud Translate API
 # DO NOT COMMIT
-GOOGLE_API_KEY = 'AIzaSyDPJoU9dIfMWTdXc-IFwcBuy4uboVwU5K0'
+GOOGLE_API_KEY = ''
 
 URL_REGEX = r'(\[[^\[\]]+\]\([^)]+\))'
 
