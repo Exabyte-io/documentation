@@ -5,7 +5,6 @@ WIEN2k allows to perform electronic structure calculations of solids using densi
 ## Job Script File
 
 In order to run WIEN2k one should use a job script file similar to the one given below and adjust machines file as necessary.
-The list of machines provided to the job can be obtained from `$PBS_NODEFILE` environment variable containing line delimited list of nodes allocated to the job.
 
 ```bash
 #!/bin/bash
@@ -70,6 +69,28 @@ cd $PBS_O_WORKDIR
 runsp_lapw -p -ec 0.00001 
 ```
 
+## Generating Machines File
+
+Reader should note the below code in the above script. The code is used to generate the machines file to run WIEN2k in parallel mode. Readers are referred to the official user's guide available at [^2] for more information about machines file format. In our queueing system the list of machines provided to the job can be obtained from `$PBS_NODEFILE` environment variable containing line delimited list of nodes allocated to the job.
+
+```bash
+machines=`cat $PBS_NODEFILE | sort -u`
+echo -n "lapw0: " > $PBS_O_WORKDIR/.machines
+for machine in $machines; do
+    cpucnt=`grep "^$machine$" $PBS_NODEFILE | wc -l`
+    echo -n "$machine:$cpucnt " >> $PBS_O_WORKDIR/.machines
+done
+echo >> $PBS_O_WORKDIR/.machines
+for machine in $machines; do
+    cpucnt=`grep "^$machine$" $PBS_NODEFILE | wc -l`
+    echo "1:$machine:$cpucnt" >> $PBS_O_WORKDIR/.machines
+done
+echo granularity:1 >> $PBS_O_WORKDIR/.machines
+echo extrafine:1 >> $PBS_O_WORKDIR/.machines
+```
+
 ## Links
 
 [^1]: [WIEN2k, Official Website](http://susi.theochem.tuwien.ac.at/)
+
+[^2]: [WIEN2k Official User's Guide](http://susi.theochem.tuwien.ac.at/reg_user/textbooks/usersguide.pdf)
