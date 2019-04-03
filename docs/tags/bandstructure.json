@@ -1,12 +1,8 @@
 [
-    {
-        "@bandstructure": [
             "@general",
             "@dft",
             "@vasp",
             "@qe",
             "@electronic",
             "Electronic Dispersion Curve"
-        ]
-    }
 ]

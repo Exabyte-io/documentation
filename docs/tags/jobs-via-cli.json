@@ -1,6 +1,4 @@
 [
-    {
-        "@jobs-via-cli": [
             "@general",
             "Command Line Interface",
             "Job Submission",
@@ -8,6 +6,4 @@
             "Scheduler",
             "Submission Queue",
             "Computing Tasks"
-        ]
-    }
 ]

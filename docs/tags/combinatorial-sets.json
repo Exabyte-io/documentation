@@ -1,6 +1,4 @@
 [
-    {
-        "@combinatorial-sets": [
             "@general",
             "Gallium Phosphide",
             "Materials Designer",
@@ -11,6 +9,4 @@
             "Impurities",
             "Dopants",
             "Lattice Defects"
-        ]
-    }
 ]

@@ -1,6 +1,4 @@
 [
-    {
-        "@industry-sectors": [
             "@general",
             "Biotechnology",
             "Chemical products",
@@ -18,6 +16,4 @@
             "Automation and Robotics",
             "Nanotechnology",
             "Artificial Intelligence and Machine Learning"
-        ]
-    }
 ]

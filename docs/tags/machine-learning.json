@@ -1,6 +1,4 @@
 [
-    {
-        "@machine-learning": [
             "@general",
             "Machine Learning",
             "Linear Regression",
@@ -14,6 +12,4 @@
             "Statistical Analysis",
             "Training Model",
             "Data Set"
-        ]
-    }
 ]

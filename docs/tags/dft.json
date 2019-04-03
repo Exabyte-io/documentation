@@ -1,6 +1,4 @@
 [
-    {
-        "@dft": [
            "@general",
            "Density Functional Theory",
            "DFT",
@@ -9,6 +7,4 @@
            "ab initio",
            "Quantum Mechanics",
            "Pseudopotential"
-        ]
-    }
 ]

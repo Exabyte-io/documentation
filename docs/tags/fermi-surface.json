@@ -1,6 +1,4 @@
 [
-    {
-        "@fermi-surface": [
             "@general",
             "@dft",
             "@vasp",
@@ -11,6 +9,4 @@
             "Reciprocal Space",
             "metallic",
             "metal"
-        ]
-    }
 ]

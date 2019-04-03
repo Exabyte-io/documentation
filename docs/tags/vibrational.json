@@ -1,6 +1,4 @@
 [
-    {
-        "@vibrational": [
             "@general",
             "@dft",
             "@vasp",
@@ -8,6 +6,4 @@
             "Phonons",
             "Lattice Vibrations",
             "Lattice Dynamics"
-        ]
-    }
 ]

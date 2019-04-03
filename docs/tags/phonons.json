@@ -1,6 +1,4 @@
 [
-    {
-        "@phonons": [
             "@general",
             "@dft",
             "@vasp",
@@ -8,6 +6,4 @@
             "@vibrational",
             "Density of States",
             "Dispersion Curve"
-        ]
-    }
 ]

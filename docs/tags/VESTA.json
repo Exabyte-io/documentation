@@ -1,6 +1,4 @@
 [
-    {
-        "@VESTA": [
             "@general",
             "Iron",
             "bcc",
@@ -8,6 +6,4 @@
             "crystal visualization",
             "software",
             "desktop environment"
-        ]
-    }
 ]

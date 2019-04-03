@@ -1,12 +1,8 @@
 [
-    {
-        "@qe": [
             "@general",
             "@dft",
             "QE",
             "espresso",
             "q-e",
             "Quantum ESPRESSO"
-        ]
-    }
 ]

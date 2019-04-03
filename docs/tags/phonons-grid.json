@@ -1,6 +1,4 @@
 [
-    {
-        "@phonons-grid": [
             "@general",
             "@dft",
             "@vasp",
@@ -12,6 +10,4 @@
             "Irreducible Representations",
             "Computing",
             "Efficiency"
-        ]
-    }
 ]

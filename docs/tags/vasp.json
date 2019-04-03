@@ -1,10 +1,6 @@
 [
-    {
-        "@vasp": [
             "@general",
             "@dft",
             "VASP",
             "Vienna"
-        ]
-    }
 ]

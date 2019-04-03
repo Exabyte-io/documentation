@@ -1,8 +1,4 @@
 [
-    {
-        "@restart": [
             "@general",
             "Restart Job"
-        ]
-    }
 ]

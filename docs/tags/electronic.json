@@ -1,6 +1,4 @@
 [
-    {
-        "@electronic": [
             "@general",
             "@dft",
             "@vasp",
@@ -12,6 +10,4 @@
             "band gap",
             "band structure",
             "charge density"
-        ]
-    }
 ]

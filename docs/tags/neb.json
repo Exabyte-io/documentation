@@ -1,6 +1,4 @@
 [
-    {
-        "@neb": [
             "@general",
             "@dft",
             "@vasp",
@@ -18,6 +16,4 @@
             "Reaction kinetics",
             "Molecular Configurations",
             "Climbing Image"
-        ]
-    }
 ]

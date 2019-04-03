@@ -1,6 +1,4 @@
 [
-    {
-        "@zero-point-energy": [
             "@general",
             "@dft",
             "@vasp",
@@ -9,6 +7,4 @@
             "Zero Point Energy",
             "Thermal Energy",
             "Vibrational Energy"
-        ]
-    }
 ]
