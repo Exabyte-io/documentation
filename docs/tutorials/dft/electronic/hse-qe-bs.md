@@ -42,7 +42,8 @@ Another aspect of the main HSE calculation unit worth noticing is how the grid o
 
 In addition to this list of k-points for sampling the Brillouin Zone of the crystal over a regular grid, a second list of k-points needs to be provided and inserted manually at the bottom of the Quantum ESPRESSO input script, consisting in the [path of k-points](../../../models/auxiliary-concepts/reciprocal-space/paths.md) to be followed across the Brillouin Zone for plotting the final band structure dispersion curves. This k-path can be customized by the user under the ["Important Settings" tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Subworkflow Editor interface](../../../workflow-designer/subworkflow-editor/overview.md). 
 
-It should be noticed that the reciprocal coordinates of these k-points along the path under consideration are inserted with **zero weight**, as opposed to the k-grid points which are instead entered with their normal weights. This is done to ensure that the k-path points do not interfere with the HSE electronic structure computation itself, since they are only needed for defining and plotting the final band structure dispersion curve.
+!!!note "Weight of the k-path points"
+    It should be noticed that the reciprocal coordinates of these k-points along the path under consideration are inserted with **zero weight**, as opposed to the k-grid points which are instead entered with their normal weights. This is done to ensure that the k-path points do not interfere with the HSE electronic structure computation itself, since they are only needed for defining and plotting the final band structure dispersion curve.
 
 #### Calculating the Final Band Structure
 
