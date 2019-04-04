@@ -1,10 +1,9 @@
-[
-           "@general",
-           "Density Functional Theory",
-           "DFT",
-           "Electronic Structure",
-           "Crystal Structure",
-           "ab initio",
-           "Quantum Mechanics",
-           "Pseudopotential"
-]
+{
+    "tag1": "Density Functional Theory",
+    "tag2": "DFT",
+    "tag3": "Electronic Structure",
+    "tag4": "Crystal Structure",
+    "tag5": "ab initio",
+    "tag6": "Quantum Mechanics",
+    "tag7": "Pseudopotential"
+}

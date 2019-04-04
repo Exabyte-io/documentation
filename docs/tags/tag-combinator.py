@@ -3,38 +3,19 @@
 import json
 import os
 
-#video_file = raw_input('Enter video file name in mp4 folder: ')
-#title = raw_input('Enter video title: ')
-#tags = raw_input('Enter JSON ID for tags list: ')
+import json_include
 
-with open('tutorials-metadata/kpt-convergence.json') as json_file:
-        python_obj = (json.load(json_file))
+video_file = raw_input('Enter video file name in mp4 folder: ')
+title = raw_input('Enter video title: ')
+tags = raw_input('Enter JSON ID in tutorials-metadata folder for tags list: ')
 
+python_obj = (json.loads(json_include.build_json("./", "tutorials-metadata/" + tags + ".json")))
+list_tags = python_obj[1]
+list_tags = [list_tags[i].values() for i in range(len(list_tags))]
+list_tags = [y for x in list_tags for y in x]
 
-print python_obj
+print list_tags
 
-
-
-
-
-#def retrieve_key(key):
-#    key = key[1:]
-#    with open(key + '.json') as json_file:
-#        python_obj = (json.load(json_file))
-#    return python_obj[0]['@' + key]
-
-
-#tags_list = retrieve_key('@' + tags)
-
-#tags_list_1 = []
-#for i in range(len(tags_list)):
-#    if tags_list[i][0] == "@":
-#        tags_list_1.extend(retrieve_key(tags_list[i]))
-
-#tags_list = tags_list_1 + tags_list
-#tags_list = [tags_list[i] for i in range(len(tags_list)) if '@' not in tags_list[i]]
-#print tags_list
-
-#os.system(
-#    'youtube-upload --title="' + title + '"  --description="A.S.Mutter plays Beethoven"   --category="Science & Technology"  --tags="' + ",".join(
-#        tags_list) + '"  --embeddable=True --privacy unlisted ../../scripts/mp4/' + video_file)
+os.system(
+    'youtube-upload --title="' + title + '"  --description="A.S.Mutter plays Beethoven"   --category="Science & Technology"  --tags="' + ",".join(
+        list_tags) + '"  --embeddable=True --privacy unlisted ../../scripts/mp4/' + video_file)
