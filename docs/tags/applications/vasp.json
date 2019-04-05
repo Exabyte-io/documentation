@@ -1,6 +1,4 @@
-[
-            "@general",
-            "@dft",
-            "VASP",
-            "Vienna"
-]
+{
+    "tag1": "VASP",
+    "tag2": "Vienna"
+}

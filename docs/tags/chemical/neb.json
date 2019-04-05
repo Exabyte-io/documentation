@@ -1,19 +1,15 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "Molecule",
-            "Chemistry",
-            "Reaction Energy Profile",
-            "Energy Barrier",
-            "Chemical Reaction",
-            "Computational Chemistry",
-            "Nudged Elastic Band",
-            "Activation Barrier",
-            "Reactants",
-            "Products",
-            "Reaction kinetics",
-            "Molecular Configurations",
-            "Climbing Image"
-]
+{
+    "tag1": "Molecule",
+    "tag2": "Chemistry",
+    "tag3": "Reaction Energy Profile",
+    "tag4": "Energy Barrier",
+    "tag5": "Chemical Reaction",
+    "tag6": "Computational Chemistry",
+    "tag7": "Nudged Elastic Band",
+    "tag8": "Activation Barrier",
+    "tag9": "Reactants",
+    "tag10": "Products",
+    "tag11": "Reaction kinetics",
+    "tag12": "Molecular Configurations",
+    "tag13": "Climbing Image"
+}

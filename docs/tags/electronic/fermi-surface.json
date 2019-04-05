@@ -1,12 +1,7 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "@electronic",
-            "copper",
-            "Fermi Surface",
-            "Reciprocal Space",
-            "metallic",
-            "metal"
-]
+{
+    "tag1": "copper",
+    "tag2": "Fermi Surface",
+    "tag3": "Reciprocal Space",
+    "tag4": "metallic",
+    "tag5": "metal"
+}

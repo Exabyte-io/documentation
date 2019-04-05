@@ -1,4 +1,3 @@
-[
-            "@general",
-            "Restart Job"
-]
+{
+    "tag1": "Restart Job"
+}

@@ -1,8 +1,3 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "@electronic",
-            "Electronic Dispersion Curve"
-]
+{
+    "tag1": "Electronic Dispersion Curve"
+}

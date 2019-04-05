@@ -1,17 +1,13 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "Structural",
-            "Relaxation",
-            "Mechanical",
-            "Optimization",
-            "Stress",
-            "Tensor",
-            "vc-relax",
-            "Geometry",
-            "Lattice",
-            "Variable",
-            "Cell"
-]
+{
+    "tag1": "Structural",
+    "tag2": "Relaxation",
+    "tag3": "Mechanical",
+    "tag4": "Optimization",
+    "tag5": "Stress",
+    "tag6": "Tensor",
+    "tag7": "vc-relax",
+    "tag8": "Geometry",
+    "tag9": "Lattice",
+    "tag10": "Variable",
+    "tag11": "Cell"
+}

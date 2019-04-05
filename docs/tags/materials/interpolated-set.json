@@ -1,6 +1,5 @@
-[
-            "@general",
-            "Interpolated Set",
-            "Hydrogen",
-            "Constraints"
-]
+{
+    "tag1": "Interpolated Set",
+    "tag2": "Hydrogen",
+    "tag3": "Constraints"
+}

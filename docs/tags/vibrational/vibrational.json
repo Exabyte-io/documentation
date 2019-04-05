@@ -1,9 +1,5 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "Phonons",
-            "Lattice Vibrations",
-            "Lattice Dynamics"
-]
+{
+    "tag1": "Phonons",
+    "tag2": "Lattice Vibrations",
+    "tag3": "Lattice Dynamics"
+}

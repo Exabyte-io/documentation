@@ -1,10 +1,5 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "@vibrational",
-            "Zero Point Energy",
-            "Thermal Energy",
-            "Vibrational Energy"
-]
+{
+    "tag1": "Zero Point Energy",
+    "tag2": "Thermal Energy",
+    "tag3": "Vibrational Energy"
+}

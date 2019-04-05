@@ -1,9 +1,4 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "@vibrational",
-            "Density of States",
-            "Dispersion Curve"
-]
+{
+    "tag1": "Density of States",
+    "tag2": "Dispersion Curve"
+}

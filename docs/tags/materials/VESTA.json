@@ -1,9 +1,9 @@
-[
-            "@general",
-            "Iron",
-            "bcc",
-            "VESTA",
-            "crystal visualization",
-            "software",
-            "desktop environment"
-]
+{
+    "tag1": "@general",
+    "tag2": "Iron",
+    "tag3": "bcc",
+    "tag4": "VESTA",
+    "tag5": "crystal visualization",
+    "tag6": "software",
+    "tag7": "desktop environment"
+}

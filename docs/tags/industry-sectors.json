@@ -1,19 +1,18 @@
-[
-            "@general",
-            "Biotechnology",
-            "Chemical products",
-            "polymers and plastics",
-            "Pharmaceuticals",
-            "Aerospace",
-            "Automotive",
-            "Electronics and Semiconductors",
-            "Materials and Metallurgy",
-            "Medical Devices",
-            "Batteries and Energy Storage",
-            "Electrical Engineering",
-            "Mechanical Engineering",
-            "Petroleum",
-            "Automation and Robotics",
-            "Nanotechnology",
-            "Artificial Intelligence and Machine Learning"
-]
+{
+    "tag1": "Biotechnology",
+    "tag2": "Chemical products",
+    "tag3": "polymers and plastics",
+    "tag4": "Pharmaceuticals",
+    "tag5": "Aerospace",
+    "tag6": "Automotive",
+    "tag7": "Electronics and Semiconductors",
+    "tag8": "Materials and Metallurgy",
+    "tag9": "Medical Devices",
+    "tag10": "Batteries and Energy Storage",
+    "tag11": "Electrical Engineering",
+    "tag12": "Mechanical Engineering",
+    "tag13": "Petroleum",
+    "tag14": "Automation and Robotics",
+    "tag15": "Nanotechnology",
+    "tag16": "Artificial Intelligence and Machine Learning"
+}

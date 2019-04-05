@@ -1,10 +1,6 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "Surface Energy",
-            "Thermodynamics",
-            "Crystal Surface",
-            "Bulk"
-]
+{
+    "tag1": "Surface Energy",
+    "tag2": "Thermodynamics",
+    "tag3": "Crystal Surface",
+    "tag4": "Bulk"
+}

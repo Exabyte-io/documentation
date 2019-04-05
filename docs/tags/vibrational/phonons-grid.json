@@ -1,13 +1,8 @@
-[
-            "@general",
-            "@dft",
-            "@vasp",
-            "@qe",
-            "@vibrational",
-            "Grid",
-            "Parallel",
-            "Distributed",
-            "Irreducible Representations",
-            "Computing",
-            "Efficiency"
-]
+{
+    "tag1": "Grid",
+    "tag2": "Parallel",
+    "tag3": "Distributed",
+    "tag4": "Irreducible Representations",
+    "tag5": "Computing",
+    "tag6": "Efficiency"
+}
