@@ -1,0 +1,13 @@
+[
+    "tags",
+    [
+        {
+            "...": "include(general.json)"
+        },
+        {
+            "...": "include(ml/machine-learning.json)"
+        }
+    ],
+    "description",
+    "This is a description of the video"
+]

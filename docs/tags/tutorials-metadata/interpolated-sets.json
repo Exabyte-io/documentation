@@ -1,0 +1,13 @@
+[
+    "tags",
+    [
+        {
+            "...": "include(general.json)"
+        },
+        {
+            "...": "include(materials/interpolated-set.json)"
+        }
+    ],
+    "description",
+    "This is a description of the video"
+]

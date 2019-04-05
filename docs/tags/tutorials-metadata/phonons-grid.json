@@ -1,0 +1,28 @@
+[
+    "tags",
+    [
+        {
+            "...": "include(general.json)"
+        },
+        {
+            "...": "include(models/dft.json)"
+        },
+        {
+            "...": "include(applications/qe.json)"
+        },
+        {
+            "...": "include(applications/vasp.json)"
+        },
+        {
+            "...": "include(vibrational/vibrational.json)"
+        },
+        {
+            "...": "include(vibrational/phonons.json)"
+        },
+        {
+            "...": "include(vibrational/phonons-grid.json)"
+        }
+    ],
+    "description",
+    "This is a description of the video"
+]

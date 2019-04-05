@@ -1,0 +1,13 @@
+[
+    "tags",
+    [
+        {
+            "...": "include(general.json)"
+        },
+        {
+            "...": "include(materials/combinatorial-sets.json)"
+        }
+    ],
+    "description",
+    "This is a description of the video"
+]

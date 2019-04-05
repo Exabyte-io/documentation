@@ -1,0 +1,13 @@
+[
+    "tags",
+    [
+        {
+            "...": "include(general.json)"
+        },
+        {
+            "...": "include(other/restart.json)"
+        }
+    ],
+    "description",
+    "This is a description of the video"
+]

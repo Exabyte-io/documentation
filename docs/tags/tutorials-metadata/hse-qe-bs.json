@@ -1,0 +1,25 @@
+[
+    "tags",
+    [
+        {
+            "...": "include(general.json)"
+        },
+        {
+            "...": "include(models/dft.json)"
+        },
+        {
+            "...": "include(applications/qe.json)"
+        },
+        {
+            "...": "include(applications/vasp.json)"
+        },
+        {
+            "...": "include(electronic/electronic.json)"
+        },
+        {
+            "...": "include(electronic/bandstructure.json)"
+        }
+    ],
+    "description",
+    "This is a description of the video"
+]

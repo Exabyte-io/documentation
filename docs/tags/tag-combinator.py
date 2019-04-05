@@ -7,7 +7,7 @@ import json_include
 
 video_file = raw_input('Enter video file name in mp4 folder: ')
 title = raw_input('Enter video title: ')
-tags = raw_input('Enter JSON ID in tutorials-metadata folder for tags list: ')
+tags = raw_input('Enter tutorial name in tutorials-metadata folder for tags list: ')
 
 python_obj = (json.loads(json_include.build_json("./", "tutorials-metadata/" + tags + ".json")))
 list_tags = python_obj[1]
