@@ -6,11 +6,6 @@ import os
 import json_include
 
 
-# first function: take original json and expand all tags in new json file #SCI-420
-# second function: upload local video file to youtube if id is not present min original JSON, and update original JSON with id at the end
-# third function: update metadata if id is present in original JSON
-
-
 def flatten(initial_list):
     new_list = []
     for el in initial_list:
