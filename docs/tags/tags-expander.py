@@ -15,11 +15,17 @@ def flatten(initial_list):
     return new_list
 
 
-list_files = os.listdir("tutorials-metadata")
+list_files = []
+parse_folder = os.listdir("../tutorials/")
+
+
+for file in parse_folder:
+    if file.endswith(".md"):
+        if file[:].replace(".md", ".json") in parse_folder:
+          list_files.append(file)
 
 for i in range(len(list_files)):
-    python_obj = json.loads(json_include.build_json("./", "tutorials-metadata/" + list_files[i]))
-    print python_obj
+    python_obj = json.loads(json_include.build_json("../tutorials", list_files[i].replace(".md", ".json")))
 
     tags = python_obj["tags"]
     flattened_tags = flatten(tags)
@@ -27,5 +33,5 @@ for i in range(len(list_files)):
     final_dict = {"tags": flattened_tags, "description": python_obj["description"],
                   "title": python_obj["title"]}
 
-    with open('full-metadata/' + list_files[i], 'w') as outfile:
+    with open("../tutorials/"+list_files[i].replace(".md", "-expanded-metadata.json"), 'w') as outfile:
         json.dump(final_dict, outfile, indent=4)

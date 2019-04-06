@@ -1,17 +1,17 @@
 {
     "tags": [
-        "Molecule",
-        "Chemistry",
-        "Reaction Energy Profile",
-        "Energy Barrier",
-        "Chemical Reaction",
-        "Computational Chemistry",
-        "Nudged Elastic Band",
-        "Activation Barrier",
-        "Reactants",
-        "Products",
-        "Reaction kinetics",
-        "Molecular Configurations",
-        "Climbing Image"
+        "molecule",
+        "chemistry",
+        "reaction energy profile",
+        "energy barrier",
+        "chemical reaction",
+        "computational chemistry",
+        "nudged elastic band",
+        "activation barrier",
+        "reactants",
+        "products",
+        "reaction kinetics",
+        "molecular configurations",
+        "climbing image"
     ]
 }

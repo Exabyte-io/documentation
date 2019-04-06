@@ -1,15 +1,15 @@
 {
     "tags": [
-        "Structural",
-        "Relaxation",
-        "Mechanical",
-        "Optimization",
-        "Stress",
-        "Tensor",
+        "structural",
+        "relaxation",
+        "mechanical",
+        "optimization",
+        "stress",
+        "tensor",
         "vc-relax",
-        "Geometry",
-        "Lattice",
-        "Variable",
-        "Cell"
+        "geometry",
+        "lattice",
+        "variable",
+        "cell"
     ]
 }
