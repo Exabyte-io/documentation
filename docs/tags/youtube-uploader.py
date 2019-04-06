@@ -29,7 +29,8 @@ for i in range(len(list_files)):
     tags = python_obj["tags"]
     flattened_tags = flatten(tags)
 
-    final_dict = {"tags": flattened_tags, "description": python_obj["description"]}
+    final_dict = {"tags": flattened_tags, "description": python_obj["description"],
+                  "title": python_obj["title"]}
 
     with open('full-metadata/' + list_files[i], 'w') as outfile:
         json.dump(final_dict, outfile, indent=4)

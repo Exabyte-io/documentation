@@ -1,6 +1,6 @@
 {
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Fermi Surface", 
+    "description": "In this tutorial, we show how to calculate and visualize the Fermi Surface of metallic samples using our Web Interface, for the simple case of crystalline copper.", 
     "tags": [
         "Exabyte.io", 
         "Materials", 
@@ -32,6 +32,11 @@
         "brillouin zone", 
         "band gap", 
         "band structure", 
-        "charge density"
+        "charge density", 
+        "copper", 
+        "Fermi Surface", 
+        "Reciprocal Space", 
+        "metallic", 
+        "metal"
     ]
 }

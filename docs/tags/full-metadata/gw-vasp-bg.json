@@ -1,6 +1,6 @@
 {
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Band Gap via GW Approximation", 
+    "description": "We illustrate in this animation how the results for a band gap computation on crystalline silicon can be further improved and made to be more accurate through the use of the GW Approximation.", 
     "tags": [
         "Exabyte.io", 
         "Materials", 

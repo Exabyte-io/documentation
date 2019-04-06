@@ -1,6 +1,6 @@
 {
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap and Density of States with HSE", 
+    "description": "This video animation demonstrates how to calculate the electronic band gap and Density of States of crystalline silicon through the HSE hybrid functional approach.", 
     "tags": [
         "Exabyte.io", 
         "Materials", 

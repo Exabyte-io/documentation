@@ -1,6 +1,6 @@
 {
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Zero Point Energy", 
+    "description": "In this tutorial, we show how to calculate the Zero Point Energy using our Web Interface, for the simple case of crystalline silicon.", 
     "tags": [
         "Exabyte.io", 
         "Materials", 
@@ -26,12 +26,11 @@
         "Quantum ESPRESSO", 
         "VASP", 
         "Vienna", 
-        "semiconductor", 
-        "electronic", 
-        "electronic density of states", 
-        "brillouin zone", 
-        "band gap", 
-        "band structure", 
-        "charge density"
+        "Phonons", 
+        "Lattice Vibrations", 
+        "Lattice Dynamics", 
+        "Zero Point Energy", 
+        "Thermal Energy", 
+        "Vibrational Energy"
     ]
 }

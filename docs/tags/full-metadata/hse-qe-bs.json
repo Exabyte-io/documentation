@@ -1,6 +1,6 @@
 {
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Electronic Bandstructure with HSE", 
+    "description": "This video animation demonstrates how to calculate the electronic band structure of crystalline silicon through the HSE hybrid functional approach.", 
     "tags": [
         "Exabyte.io", 
         "Materials", 
@@ -32,6 +32,7 @@
         "brillouin zone", 
         "band gap", 
         "band structure", 
-        "charge density"
+        "charge density", 
+        "Electronic Dispersion Curve"
     ]
 }

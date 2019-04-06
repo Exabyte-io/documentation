@@ -1,6 +1,6 @@
 {
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Phonon Dispersion Curve and Density of States", 
+    "description": "In this tutorial, we show how to calculate the Phonon Density of States and dispersion plot using our Web Interface, for the simple case of crystalline silicon.", 
     "tags": [
         "Exabyte.io", 
         "Materials", 
@@ -26,12 +26,10 @@
         "Quantum ESPRESSO", 
         "VASP", 
         "Vienna", 
-        "semiconductor", 
-        "electronic", 
-        "electronic density of states", 
-        "brillouin zone", 
-        "band gap", 
-        "band structure", 
-        "charge density"
+        "Phonons", 
+        "Lattice Vibrations", 
+        "Lattice Dynamics", 
+        "Density of States", 
+        "Dispersion Curve"
     ]
 }
