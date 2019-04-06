@@ -1,12 +1,11 @@
 {
-    "description": "KPoints Convergence Metadata",
     "tags": [
-    "Density Functional Theory",
-    "DFT",
-    "Electronic Structure",
-    "Crystal Structure",
-    "ab initio",
-    "Quantum Mechanics",
-    "Pseudopotential"
+        "Density Functional Theory",
+        "DFT",
+        "Electronic Structure",
+        "Crystal Structure",
+        "ab initio",
+        "Quantum Mechanics",
+        "Pseudopotential"
     ]
 }

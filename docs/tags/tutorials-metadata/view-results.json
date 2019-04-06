@@ -1,13 +1,11 @@
-[
-    "tags",
-    [
+{
+    "tags": [
         {
-            "...": "include(general.json)"
+            "...": "general.json"
         },
         {
-            "...": "include(jobs-cli/jobs-via-cli.json)"
+            "...": "jobs-cli/jobs-via-cli.json"
         }
     ],
-    "description",
-    "This is a description of the video"
-]
+    "description": "This is a description of the video"
+}

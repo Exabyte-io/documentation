@@ -1,25 +1,23 @@
-[
-    "tags",
-    [
+{
+    "tags": [
         {
-            "...": "include(general.json)"
+            "...": "general.json"
         },
         {
-            "...": "include(models/dft.json)"
+            "...": "models/dft.json"
         },
         {
-            "...": "include(applications/qe.json)"
+            "...": "applications/qe.json"
         },
         {
-            "...": "include(applications/vasp.json)"
+            "...": "applications/vasp.json"
         },
         {
-            "...": "include(electronic/electronic.json)"
+            "...": "electronic/electronic.json"
         },
         {
-            "...": "include(electronic/fermi-surface.json)"
+            "...": "electronic/fermi-surface.json"
         }
     ],
-    "description",
-    "This is a description of the video"
-]
+    "description": "This is a description of the video"
+}

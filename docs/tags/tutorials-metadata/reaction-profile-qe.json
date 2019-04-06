@@ -1,19 +1,17 @@
-[
-    "tags",
-    [
+{
+    "tags": [
         {
-            "...": "include(general.json)"
+            "...": "general.json"
         },
         {
-            "...": "include(models/dft.json)"
+            "...": "models/dft.json"
         },
         {
-            "...": "include(applications/qe.json)"
+            "...": "applications/qe.json"
         },
         {
-            "...": "include(chemical/neb.json)"
+            "...": "chemical/neb.json"
         }
     ],
-    "description",
-    "This is a description of the video"
-]
+    "description": "This is a description of the video"
+}

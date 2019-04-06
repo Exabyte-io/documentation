@@ -1,16 +1,14 @@
-[
-    "tags",
-    [
+{
+    "tags": [
         {
-            "...": "include(general.json)"
+            "...": "general.json"
         },
         {
-            "...": "include(models/dft.json)"
+            "...": "models/dft.json"
         },
         {
-            "...": "include(addons/k-points-convergence.json)"
+            "...": "addons/k-points-convergence.json"
         }
     ],
-    "description",
-    "This is a description of the video"
-]
+    "description": "This is a description of the video"
+}

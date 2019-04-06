@@ -1,7 +1,6 @@
 {
-    "description": "KPoints Convergence Metadata",
     "tags": [
-    "VASP",
-    "Vienna"
+        "VASP",
+        "Vienna"
     ]
 }

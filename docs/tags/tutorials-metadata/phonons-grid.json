@@ -1,28 +1,26 @@
-[
-    "tags",
-    [
+{
+    "tags": [
         {
-            "...": "include(general.json)"
+            "...": "general.json"
         },
         {
-            "...": "include(models/dft.json)"
+            "...": "models/dft.json"
         },
         {
-            "...": "include(applications/qe.json)"
+            "...": "applications/qe.json"
         },
         {
-            "...": "include(applications/vasp.json)"
+            "...": "applications/vasp.json"
         },
         {
-            "...": "include(vibrational/vibrational.json)"
+            "...": "vibrational/vibrational.json"
         },
         {
-            "...": "include(vibrational/phonons.json)"
+            "...": "vibrational/phonons.json"
         },
         {
-            "...": "include(vibrational/phonons-grid.json)"
+            "...": "vibrational/phonons-grid.json"
         }
     ],
-    "description",
-    "This is a description of the video"
-]
+    "description": "This is a description of the video"
+}
