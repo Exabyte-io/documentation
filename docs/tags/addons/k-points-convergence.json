@@ -1,4 +1,6 @@
 {
-    "tag1": "k-points",
-    "tag2": "Convergence"
+    "tags": [
+        "k-points",
+        "Convergence"
+    ]
 }

@@ -1,5 +1,7 @@
 {
-    "tag1": "Zero Point Energy",
-    "tag2": "Thermal Energy",
-    "tag3": "Vibrational Energy"
+    "tags": [
+        "Zero Point Energy",
+        "Thermal Energy",
+        "Vibrational Energy"
+    ]
 }

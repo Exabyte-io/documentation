@@ -1,4 +1,6 @@
 {
-    "tag1": "Density of States",
-    "tag2": "Dispersion Curve"
+    "tags": [
+        "Density of States",
+        "Dispersion Curve"
+    ]
 }

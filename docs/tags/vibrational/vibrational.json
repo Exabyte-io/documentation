@@ -1,5 +1,7 @@
 {
-    "tag1": "Phonons",
-    "tag2": "Lattice Vibrations",
-    "tag3": "Lattice Dynamics"
+    "tags": [
+        "Phonons",
+        "Lattice Vibrations",
+        "Lattice Dynamics"
+    ]
 }

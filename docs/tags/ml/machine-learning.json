@@ -1,14 +1,16 @@
 {
-    "tag1": "Machine Learning",
-    "tag2": "Linear Regression",
-    "tag3": "Data Science",
-    "tag4": "Interpolation",
-    "tag5": "Artificial Intelligence",
-    "tag6": "Data Analytics",
-    "tag7": "Deep Learning",
-    "tag8": "Predictions",
-    "tag9": "Statistics",
-    "tag10": "Statistical Analysis",
-    "tag11": "Training Model",
-    "tag12": "Data Set"
+    "tags": [
+        "Machine Learning",
+        "Linear Regression",
+        "Data Science",
+        "Interpolation",
+        "Artificial Intelligence",
+        "Data Analytics",
+        "Deep Learning",
+        "Predictions",
+        "Statistics",
+        "Statistical Analysis",
+        "Training Model",
+        "Data Set"
+    ]
 }

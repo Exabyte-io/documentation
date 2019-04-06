@@ -1,8 +1,10 @@
 {
-    "tag1": "Command Line Interface",
-    "tag2": "Job Submission",
-    "tag3": "Batch Script",
-    "tag4": "Scheduler",
-    "tag5": "Submission Queue",
-    "tag6": "Computing Tasks"
+    "tags": [
+        "Command Line Interface",
+        "Job Submission",
+        "Batch Script",
+        "Scheduler",
+        "Submission Queue",
+        "Computing Tasks"
+    ]
 }

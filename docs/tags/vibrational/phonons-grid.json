@@ -1,8 +1,10 @@
 {
-    "tag1": "Grid",
-    "tag2": "Parallel",
-    "tag3": "Distributed",
-    "tag4": "Irreducible Representations",
-    "tag5": "Computing",
-    "tag6": "Efficiency"
+    "tags": [
+        "Grid",
+        "Parallel",
+        "Distributed",
+        "Irreducible Representations",
+        "Computing",
+        "Efficiency"
+    ]
 }

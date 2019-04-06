@@ -1,11 +1,13 @@
 {
-    "tag1": "Gallium Phosphide",
-    "tag2": "Materials Designer",
-    "tag3": "Combinatorial Sets",
-    "tag4": "Combinations",
-    "tag5": "Permutations",
-    "tag6": "Vacancies",
-    "tag7": "Impurities",
-    "tag8": "Dopants",
-    "tag9": "Lattice Defects"
+    "tags": [
+        "Gallium Phosphide",
+        "Materials Designer",
+        "Combinatorial Sets",
+        "Combinations",
+        "Permutations",
+        "Vacancies",
+        "Impurities",
+        "Dopants",
+        "Lattice Defects"
+    ]
 }
