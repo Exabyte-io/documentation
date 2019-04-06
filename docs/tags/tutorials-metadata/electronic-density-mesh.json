@@ -16,5 +16,6 @@
             "...": "electronic/electronic.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "In this tutorial, we show how to calculate and visualize the electronic charge density mesh using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Calculate Electronic Charge Density Mesh"
 }

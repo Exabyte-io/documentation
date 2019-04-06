@@ -19,5 +19,6 @@
             "...": "vibrational/zero-point-energy.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "In this tutorial, we show how to calculate the Zero Point Energy using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Calculate Zero Point Energy"
 }

@@ -19,5 +19,6 @@
             "...": "electronic/fermi-surface.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "In this tutorial, we show how to calculate and visualize the Fermi Surface of metallic samples using our Web Interface, for the simple case of crystalline copper.",
+    "title": "Exabyte.io Tutorial: Calculate Fermi Surface"
 }

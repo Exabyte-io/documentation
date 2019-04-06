@@ -7,5 +7,6 @@
             "...": "jobs-cli/jobs-via-cli.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "The present tutorial page explains how to import the results of a job run via command-line interface to the main Web Interface of our platform.",
+    "title": "Exabyte.io Tutorial: Import Command Line Jobs to Web Interface"
 }

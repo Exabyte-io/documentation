@@ -10,5 +10,6 @@
             "...": "thermodynamic/surface-energy.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "The present tutorial page explains how to calculate the surface energy for the simple case of crystalline copper, using Quantum ESPRESSO.",
+    "title": "Exabyte.io Tutorial: Calculate Surface Energy"
 }

@@ -7,5 +7,6 @@
             "...": "other/restart.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "In this tutorial, we show how to restart a previously-run electronic band structure calculation using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Restart From Previous Run"
 }

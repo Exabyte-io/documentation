@@ -16,5 +16,6 @@
             "...": "electronic/electronic.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "We illustrate in this animation how the results for a band gap computation on crystalline silicon can be further improved and made to be more accurate through the use of the GW Approximation.",
+    "title": "Exabyte.io Tutorial: Band Gap via GW Approximation"
 }

@@ -7,5 +7,6 @@
             "...": "materials/interpolated-set.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "This video animation demonstrates how to create an interpolated set, necessary for the calculation of the energy profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method.",
+    "title": "Exabyte.io Tutorial: Create Interpolated Sets"
 }

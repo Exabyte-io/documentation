@@ -16,5 +16,6 @@
             "...": "electronic/electronic.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "This video animation demonstrates how to calculate the electronic band gap and Density of States of crystalline silicon through the HSE hybrid functional approach.",
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap and Density of States with HSE"
 }

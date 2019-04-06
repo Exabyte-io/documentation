@@ -19,5 +19,6 @@
             "...": "electronic/bandstructure.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "This video animation demonstrates how to calculate the electronic band structure of crystalline silicon through the HSE hybrid functional approach.",
+    "title": "Exabyte.io Tutorial: Calculate Electronic Bandstructure with HSE"
 }

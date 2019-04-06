@@ -7,5 +7,6 @@
             "...": "materials/VESTA.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "In this tutorial, we explain how the user can create and design a new crystal structure of Sodium Chloride using the VESTA software pre-installed on our Remote Desktop Interface. This crystal structure can later be exported and inspected within our Web Interface.",
+    "title": "Exabyte.io Tutorial: Create Materials With VESTA  under Remote Desktop"
 }

@@ -22,5 +22,6 @@
             "...": "vibrational/phonons-grid.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "This tutorial animation explains how to calculate the Phonon Dispersion Curves and Phonon Density of States of materials, based on the Grid Method for the distributed computing of the lattice vibrational modes. We consider crystalline silicon as a simple example.",
+    "title": "Exabyte.io Tutorial: Calculate Phonons with Grid Method"
 }

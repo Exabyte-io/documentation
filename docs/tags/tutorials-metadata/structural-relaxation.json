@@ -10,5 +10,6 @@
             "...": "addons/structural-relaxation.json"
         }
     ],
-    "description": "This is a description of the video"
+    "description": "In this tutorial, we show how to perform a structural relaxation using our Web Interface, for the simple case of a total energy calculation performed on crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Perform a Structural Relaxation"
 }
