@@ -1,6 +1,9 @@
 {
-    "tag1": "QE",
-    "tag2": "espresso",
-    "tag3": "q-e",
-    "tag4": "Quantum ESPRESSO"
+    "description": "KPoints Convergence Metadata",
+    "tags": [
+    "QE",
+    "espresso",
+    "q-e",
+    "Quantum ESPRESSO"
+    ]
 }

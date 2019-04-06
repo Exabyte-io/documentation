@@ -1,9 +1,12 @@
 {
-    "tag1": "semiconductor",
-    "tag2": "electronic",
-    "tag3": "electronic density of states",
-    "tag4": "brillouin zone",
-    "tag5": "band gap",
-    "tag6": "band structure",
-    "tag7": "charge density"
+    "description": "KPoints Convergence Metadata",
+    "tags": [
+    "semiconductor",
+    "electronic",
+    "electronic density of states",
+    "brillouin zone",
+    "band gap",
+    "band structure",
+    "charge density"
+    ]
 }

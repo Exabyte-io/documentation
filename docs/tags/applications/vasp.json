@@ -1,4 +1,7 @@
 {
-    "tag1": "VASP",
-    "tag2": "Vienna"
+    "description": "KPoints Convergence Metadata",
+    "tags": [
+    "VASP",
+    "Vienna"
+    ]
 }

@@ -1,22 +1,22 @@
+{
+    "tags":
 [
-    "tags",
-    [
-        {
-            "...": "include(general.json)"
-        },
-        {
-            "...": "include(models/dft.json)"
-        },
-        {
-            "...": "include(applications/qe.json)"
-        },
-        {
-            "...": "include(applications/vasp.json)"
-        },
-        {
-            "...": "include(electronic/electronic.json)"
-        },
-    ],
-    "description",
-    "This is a description of the video"
-]
+    {
+        "...": "general.json#/tags"
+    },
+    {
+        "...": "models/dft.json#/tags"
+    },
+    {
+        "...": "applications/qe.json#/tags"
+    },
+    {
+        "...": "applications/vasp.json#/tags"
+    },
+    {
+        "...": "electronic/electronic.json#/tags"
+    }
+],
+"description":
+"This is a description of the video"
+}

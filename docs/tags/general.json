@@ -1,13 +1,16 @@
 {
-    "tag1": "Exabyte.io",
-    "tag2": "Materials",
-    "tag3": "Science",
-    "tag4": "Simulations",
-    "tag5": "Physics",
-    "tag6": "Materials Modeling",
-    "tag7": "Materials Discovery",
-    "tag8": "Cloud Computing",
-    "tag9": "Materials Properties",
-    "tag10": "Industry",
-    "tag11": "high-performance computing"
+    "description": "KPoints Convergence Metadata",
+    "tags": [
+    "Exabyte.io",
+    "Materials",
+    "Science",
+    "Simulations",
+    "Physics",
+    "Materials Modeling",
+    "Materials Discovery",
+    "Cloud Computing",
+    "Materials Properties",
+    "Industry",
+    "high-performance computing"
+    ]
 }

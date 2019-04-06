@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import collections
 import json
 import os
 
@@ -9,10 +10,21 @@ video_file = raw_input('Enter video file name in mp4 folder: ')
 title = raw_input('Enter video title: ')
 tags = raw_input('Enter tutorial name in tutorials-metadata folder for tags list: ')
 
-python_obj = (json.loads(json_include.build_json("./", "tutorials-metadata/" + tags + ".json")))
-list_tags = python_obj[1]
-list_tags = [list_tags[i].values() for i in range(len(list_tags))]
-list_tags = [y for x in list_tags for y in x]
+python_obj = ((json.loads(json_include.build_json("./", "tutorials-metadata/" + tags + ".json")))["tags"])
+
+list_tags = [d['...'] for d in python_obj]
+
+
+def flatten(l):
+    for el in l:
+        if isinstance(el, collections.Iterable) and not isinstance(el, basestring):
+            for sub in flatten(el):
+                yield sub
+        else:
+            yield el
+
+
+list_tags = list(flatten(list_tags))
 
 print list_tags
 
