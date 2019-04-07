@@ -2,6 +2,9 @@
 
 This tutorial page explains how to calculate an [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [VASP](../../../software-directory/modeling/vasp/overview.md) as our main simulation engine during this tutorial.
 
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
+
 ## Definitions
 
 ### Band Gap
