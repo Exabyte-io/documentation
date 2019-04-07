@@ -2,6 +2,9 @@
 
 This tutorial page explains how to calculate the [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [VASP](../../../software-directory/modeling/vasp/overview.md) as our main simulation engine during this tutorial.
 
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
+
 What sets the present tutorial apart from the [other tutorial](band-gap.md) on band gap calculations is the employment of the **"GW Approximation"**, which is reviewed in the subsequent paragraph. This method is significantly slower than the conventional approach for computing electronic band gaps, however similarly to the [HSE method](hse-vasp-bg.md) it yields more accurate electronic band structure results which are closer to experimental values, thus rectifying the tendency of the [GGA to underestimate the size of the band gap](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation). More information on this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [^1].
 
 ## The GW Approximation
