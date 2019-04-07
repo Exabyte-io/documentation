@@ -10,3 +10,4 @@ scripts/mp4/
 scripts/*gif
 scripts/gif/
 py-googletrans
+credentials.json
