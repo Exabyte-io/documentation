@@ -1,0 +1,21 @@
+{
+    "tags": [
+        {
+            "...": "general.json"
+        },
+        {
+            "...": "models/dft.json"
+        },
+        {
+            "...": "applications/qe.json"
+        },
+        {
+            "...": "applications/vasp.json"
+        },
+        {
+            "...": "electronic/electronic.json"
+        }
+    ],
+    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap"
+}
