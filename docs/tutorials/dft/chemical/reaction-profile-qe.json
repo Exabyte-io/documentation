@@ -14,5 +14,6 @@
         }
     ],
     "description": "In this tutorial animation, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, as implemented under Quantum ESPRESSO. In this case, we make use of a manually-generated interpolated set of intermediate images.",
+    "description2": "In this tutorial animation, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, by making use of the automatic generation of intermediate images supported by Quantum ESPRESSO.",
     "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method"
 }
