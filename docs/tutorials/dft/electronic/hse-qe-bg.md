@@ -1,4 +1,4 @@
-# HSE Band Gap and Density of States Calculations with Quantum ESPRESSO
+# Band Gap and Density of States with Quantum ESPRESSO (HSE)
 
 This tutorial page explains how to calculate the [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) and [Density of States](../../../properties-directory/non-scalar/electronic-dos.md) (DoS) of semiconducting [materials](../../../materials/overview.md) based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
 
