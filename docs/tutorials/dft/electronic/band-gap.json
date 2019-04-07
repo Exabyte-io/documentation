@@ -1,19 +1,19 @@
 {
     "tags": [
         {
-            "...": "general.json"
+            "...": "general.json#/tags"
         },
         {
-            "...": "models/dft.json"
+            "...": "models/dft.json#/tags"
         },
         {
-            "...": "applications/qe.json"
+            "...": "applications/qe.json#/tags"
         },
         {
-            "...": "applications/vasp.json"
+            "...": "applications/vasp.json#/tags"
         },
         {
-            "...": "electronic/electronic.json"
+            "...": "electronic/electronic.json#/tags"
         }
     ],
     "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.",
