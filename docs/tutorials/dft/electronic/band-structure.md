@@ -2,6 +2,9 @@
 
 This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) based on [Density Functional Theory](../../../models-directory/dft/overview.md). We will be studying crystalline Silicon in the standard cubic-diamond crystal structure, and we will use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine.
 
+!!!note "Quantum ESPRESSO version considered in this tutorial"
+    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+
 !!! Note "Accuracy of the results"
     Please note that this calculation is performed using standard [Density Functional Theory](../../../models-directory/dft/overview.md), and therefore an underestimation of the energy of unoccupied electronic states is expected. Further modifications to the input files and settings to correctly predict the band gap are possible, and will be explored later.
 

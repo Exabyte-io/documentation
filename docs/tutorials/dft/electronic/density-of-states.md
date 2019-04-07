@@ -2,6 +2,9 @@
 
 This tutorial page explains how to calculate the [electronic density of states](../../../properties-directory/non-scalar/electronic-dos.md) using [Density Functional Theory](../../../models-directory/dft/overview.md). We study crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during the present tutorial.
 
+!!!note "Quantum ESPRESSO version considered in this tutorial"
+    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+
 !!!warning "Accuracy of the results"
     Please note that this calculation is performed using [Density Functional Theory](../../../models-directory/dft/overview.md) and the [Generalized Gradient Approximation](../../../models-directory/dft/parameters.md#subtype), which is known to under-estimate the energy of unoccupied electronic states.
 
