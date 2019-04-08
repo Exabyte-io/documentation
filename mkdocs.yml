@@ -253,6 +253,7 @@ nav:
             - NWChem:                                   software-directory/modeling/nwchem.md
             - CP2K:                                     software-directory/modeling/cp2k.md
             - Gromacs:                                  software-directory/modeling/gromacs.md
+            - WIEN2k:                                  software-directory/modeling/wien2k.md
         - Scripting:
             - Shell:
                 - Overview:                             software-directory/scripting/shell/overview.md

@@ -14,9 +14,10 @@ By default, the 3d Editor is non-interactive and only shows the structural infor
 
 View panel allows users to interact with the view: rotate, translate, reset etc., and is further explained [here](./3d-editor/view.md). 
 
-## [Edit Panel](./3d-editor/edit.md)
+## [3D Editor](./3d-editor/edit.md)
+<!-- TODO by GM -->
 
-The structural information about the material currently viewed can be modified by means of the Edit: add, remove atoms, etc., and is further explained [here](./3d-editor/edit.md).   
+The structural information about the material currently viewed can be modified in 3D editor explained [here](./3d-editor/edit.md).   
 
 ## [Export Panel](./3d-editor/export.md)
 
