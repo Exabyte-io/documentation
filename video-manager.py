@@ -4,6 +4,7 @@ import os
 import json
 import googleapiclient.discovery
 
+from jinja2 import Template
 from oauth2client.file import Storage
 from googleapiclient.http import MediaFileUpload
 from oauth2client.tools import argparser, run_flow
@@ -12,6 +13,12 @@ from utils import flatten, update_metadata, parseIncludeStatements
 
 SCOPE = "https://www.googleapis.com/auth/youtube"
 CLIENT_SECRETS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "secrets.json"))
+DESCRIPTION_TEMPLATE = os.path.abspath(os.path.join(os.path.dirname(__file__), "video-description.jinja"))
+DESCRIPTION_LINKS = [
+    "Materials Modeling 2.0: https://exabyte.io/",
+    "Exabyte.io Platform: https://platform.exabyte.io/",
+    "Exabyte.io Documentation: https://docs.exabyte.io/",
+]
 
 
 def get_credentials():
@@ -66,7 +73,7 @@ def get_video_body_param(youtube_, metadata_):
             "categoryId": get_category_id(youtube_, metadata_.get("category", "Science & Technology")),
         },
         "status": {
-            "privacyStatus": metadata_.get("privacy", "private")
+            "privacyStatus": metadata_["privacyStatus"]
         }
     }))
 
@@ -106,6 +113,7 @@ def update_video(youtube_, metadata_):
 if __name__ == '__main__':
     argparser.add_argument('-f', '--file', required=True, help='video file path')
     argparser.add_argument('-m', '--metadata', required=True, help='video metadata file path')
+    argparser.add_argument('-p', '--privacyStatus', default="unlisted", help='video privacy status')
     args = argparser.parse_args()
 
     if not os.path.exists(args.file): exit("video file does not exist!")
@@ -115,6 +123,10 @@ if __name__ == '__main__':
     youtube = get_youtube_api_client()
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = flatten(metadata["tags"])
+    metadata["privacyStatus"] = metadata.get("privacyStatus", args.privacyStatus)
+    metadata["descriptionLinks"] = metadata.get("descriptionLinks", []) + DESCRIPTION_LINKS
+    with open(DESCRIPTION_TEMPLATE) as f:
+        metadata["description"] = Template(f.read()).render(**metadata)
 
     # upload the video if it has not been uploaded yet, update metadata otherwise.
     if not metadata.get("youTubeId"):
