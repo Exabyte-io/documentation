@@ -1,16 +1,16 @@
 {
     "tags": [
+        "ab initio",
+        "ab-initio",
         "density functional theory",
         "dft",
         "electronic structure",
-        "ab initio",
-        "ab-initio",
-        "first-principles",
-        "first-principles calculations",
         "first principles calculations",
-        "quantum mechanics",
-        "quantum chemistry",
+        "first-principles calculations",
+        "first-principles",
+        "hohenberg kohn theorem",
         "kohn sham equations",
-        "hohenberg kohn theorem"
+        "quantum chemistry",
+        "quantum mechanics"
     ]
 }
