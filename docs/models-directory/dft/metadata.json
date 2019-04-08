@@ -3,9 +3,14 @@
         "density functional theory",
         "dft",
         "electronic structure",
-        "crystal structure",
         "ab initio",
+        "ab-initio",
+        "first-principles",
+        "first-principles calculations",
+        "first principles calculations",
         "quantum mechanics",
-        "pseudopotential"
+        "quantum chemistry",
+        "kohn sham equations",
+        "hohenberg kohn theorem"
     ]
 }
