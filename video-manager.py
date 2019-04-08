@@ -111,11 +111,12 @@ if __name__ == '__main__':
     if not os.path.exists(args.file): exit("video file does not exist!")
     if not os.path.exists(args.metadata): exit("metadata file does not exist!")
 
+    # extract metadata
     youtube = get_youtube_api_client()
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = flatten(metadata["tags"])
 
-    # Upload the video if it has not uploaded yet, update metadata otherwise.
+    # upload the video if it has not been uploaded yet, update metadata otherwise.
     if not metadata.get("youTubeId"):
         youTubeId = insert_video(youtube, args.file, metadata)["id"]
         update_metadata(args.metadata, {"youTubeId": youTubeId})
