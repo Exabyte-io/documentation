@@ -114,6 +114,8 @@ if __name__ == '__main__':
     youtube = get_youtube_api_client()
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = flatten(metadata["tags"])
+
+    # Upload the video if it has not uploaded yet, update metadata otherwise.
     if not metadata.get("youTubeId"):
         youTubeId = insert_video(youtube, args.file, metadata)["id"]
         update_metadata(args.metadata, {"youTubeId": youTubeId})
