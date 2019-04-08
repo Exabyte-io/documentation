@@ -413,7 +413,7 @@ Follow the below instructions to upload/update a tutorial video:
 
 1. Create a metadata file similar to the one in [here](docs/tutorials/dft/electronic/band-gap.json).
 
-2. Delete `youTubeId`. This field is automatically added by the [video manager](video-manager.py) script once the video is uploaded.
+2. Make sure to remove `youTubeId`. This field is automatically added by the [video manager](video-manager.py) script once the video is uploaded.
 
 3. In metadata file, `descriptionLinks` is a list of links which are added to video description. See [description template](video-description.jinja) for more details.
 
