@@ -18,11 +18,14 @@ def parseIncludeStatements(file_path):
     return json.loads(json_include.build_json(dirName, baseName))
 
 
-def get_metadata(metadata_path):
-    return parseIncludeStatements(metadata_path)
-
-
 def update_metadata(metadata_path, data):
+    """
+    Updates metadata with given data and stores it back.
+
+    Args:
+        metadata_path (str): path to the metadata file.
+        data (dict): the data to update metadata with.
+    """
     with open(metadata_path, 'r+') as f:
         metadata = json.loads(f.read())
         metadata.update(data)
@@ -32,6 +35,12 @@ def update_metadata(metadata_path, data):
 
 
 def flatten(data):
+    """
+    Flattens the given data structure.
+
+    Returns:
+         list[str]
+    """
     list_ = []
     if isinstance(data, list):
         [list_.extend(flatten(item)) for item in data]
