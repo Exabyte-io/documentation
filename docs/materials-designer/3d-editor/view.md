@@ -23,10 +23,26 @@ Clicking on "Auto Rotate" option will activate an automatic perpetual rotation o
 <img data-gifffer="/images/materials-designer/ViewerViewAuto.gif" />
 
 ## Toggle Axes
+<!-- TODO by GM -->
 
 Toggling the "Axes" option enables Cartesian coordinate axes, and the base XY plane (a plane perpendicular to Z axis at Z=0), for ease of orientation in 3D.
 
 <img data-gifffer="/images/materials-designer/ViewerViewAxes.gif" />
+
+## Toggle Bonds
+<!-- TODO by GM -->
+
+Clicking on this option will draw the bonds between adjacent atoms. The stick is drawn if the atoms distance is equal or less than the bond length outlined in [here](http://www.chem.tamu.edu/rgroup/connell/linkfiles/bonds.pdf). For atoms with no bonding data the sum of covalent radii times the chemical connectivity factor (1.05) is iused as the bond length.
+
+## Toggle Perspective Camera
+<!-- TODO by GM -->
+
+[Perspective Projection](https://en.wikipedia.org/wiki/Perspective_(graphical)) is used to see the material by default. One can switch the camera to have [Orthographic Projection](https://en.wikipedia.org/wiki/Orthographic_projection) by toggling this option.
+
+## Toggle Conventional Cell
+<!-- TODO by GM -->
+
+This option toggles Primitive representation of the unit cell to Conventional cell. Users can adjust the default representation mode in [here](../../accounts/ui/preferences/settings.md). 
 
 ## Reset View
 

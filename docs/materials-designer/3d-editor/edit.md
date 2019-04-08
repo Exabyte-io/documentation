@@ -1,4 +1,27 @@
-# 3d Editor: Edit Panel
+# 3d Editor
+
+<!-- TODO by GM -->
+
+Remove the old content and explain:
+
+- Different parts of the editor: menu, scene, ..
+- How to clone/move/add/remove/rotate atom
+- How to group atoms
+- How to adjust cell parameters
+- How to exit 3D editor
+
+Notes:
+
+- In order to exit the designer with a new material, the scene should contain a cell object and one atom at least. The order is not important, but if there are multiple cell objects inside the scene, the first cell is used as the new material unit cell.
+
+- An error is shown if there the scene objects can not be converted into a material. you can try that by removing the cells and try existing the editor.
+
+- Use can exit the editor either by pressing escape key or select Exit from file menu.
+
+- User can change the name of the material and atoms by clicking on the corresponding 3D object and set the name. The atom name consists of the name of the element separated from the element index by a dash, "Si-1". Si is used if the element can not be extracted from the name.
+
+
+--- OLD CONTENT
 
 The second `Edit` button <i class="zmdi zmdi-border-color zmdi-hc-border"></i> in the interactive mode of the 3D graphical crystal viewer includes the following set of actions, which give user manoeuvrability in editing graphically, and in real time, the positions of the atoms in the material:
 
