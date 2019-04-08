@@ -4,16 +4,13 @@
             "...": "../../../metadata/general.json#/tags"
         },
         {
-            "...": "../../../metadata/models/dft.json#/tags"
+            "...": "../../../models-directory/dft/metadata.json#/tags"
         },
         {
-            "...": "../../../metadata/applications/qe.json#/tags"
+            "...": "../../../software-directory/modeling/quantum-espresso/metadata.json#/tags"
         },
         {
-            "...": "../../../metadata/applications/vasp.json#/tags"
-        },
-        {
-            "...": "../../../metadata/electronic/electronic.json#/tags"
+            "...": "../../../software-directory/modeling/quantum-espresso/metadata.json#/tags"
         }
     ],
     "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.",
