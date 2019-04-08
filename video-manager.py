@@ -115,7 +115,7 @@ if __name__ == '__main__':
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = flatten(metadata["tags"])
     if not metadata.get("youTubeId"):
-        youTubeId = json.dumps(insert_video(youtube, args.file, metadata), indent=4)["id"]
+        youTubeId = insert_video(youtube, args.file, metadata)["id"]
         update_metadata(args.metadata, {"youTubeId": youTubeId})
     else:
         update_video(youtube, metadata)
