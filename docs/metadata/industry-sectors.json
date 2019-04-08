@@ -1,20 +1,23 @@
 {
     "tags": [
-        "biotechnology",
-        "chemical products",
-        "polymers and plastics",
-        "pharmaceuticals",
         "aerospace",
-        "automotive",
-        "electronics and semiconductors",
-        "materials and metallurgy",
-        "medical devices",
-        "batteries and energy storage",
-        "electrical engineering",
-        "mechanical engineering",
-        "petroleum",
+        "artificial intelligence and machine learning",
         "automation and robotics",
+        "automotive",
+        "batteries and energy storage",
+        "biotechnology",
+        "chemical engineering",
+        "chemical products",
+        "electrical engineering",
+        "electronics",
+        "materials and metallurgy",
+        "mechanical engineering",
+        "medical devices",
         "nanotechnology",
-        "artificial intelligence and machine learning"
+        "petroleum",
+        "pharmaceuticals",
+        "plastics",
+        "polymers",
+        "semiconductors"
     ]
 }
