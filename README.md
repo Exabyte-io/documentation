@@ -424,7 +424,7 @@ source .virtualenv/bin/activate
 python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA
 ```
 
-5. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it;
+5. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
 
 ```bash
 python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA -p public
