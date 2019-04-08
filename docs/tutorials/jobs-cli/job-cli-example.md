@@ -1,11 +1,8 @@
 # Running Jobs via Command Line Interface
 
-This page explains how to run a [job](../../jobs/overview.md) for [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../../jobs-cli/overview.md) before proceeding further with the present Tutorial.
-
-!!!note "Quantum ESPRESSO version considered in this tutorial"
-    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+This page explains how to run a [job](../../jobs/overview.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../../jobs-cli/overview.md) before proceeding further with the present Tutorial.
  
-Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure.
+Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure. We will use [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) as an example simulations engine, however all command-line related directives apply universally.
 
 ## 1. Input File
 
