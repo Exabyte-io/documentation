@@ -1,39 +1,78 @@
-#!/usr/bin/env python
+#!/usr/bin/python
 
-import json
 import os
+import json
+import googleapiclient.discovery
 
-import json_include
+from oauth2client.file import Storage
+from googleapiclient.http import MediaFileUpload
+from oauth2client.tools import argparser, run_flow
+from oauth2client.client import flow_from_clientsecrets
+from utils import get_metadata, flatten, update_metadata
+
+SCOPE = "https://www.googleapis.com/auth/youtube"
+CLIENT_SECRETS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "secrets.json"))
 
 
-def flatten(initial_list):
-    new_list = []
-    for el in initial_list:
-        tags = el["tags"]
-        for el1 in tags:
-            new_list.append(el1)
-    return new_list
+def get_credentials():
+    flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE, scope=SCOPE)
+    storage = Storage("credentials.json")
+    credentials = storage.get()
+    if credentials is None or credentials.invalid:
+        credentials = run_flow(flow, storage)
+    return credentials
 
 
-list_files = [
-    os.path.join(root, file)
-    for root, dirs, files in os.walk("../tutorials/")
-    for file in files
-    if file.endswith(".md")
-    if file.replace(".md", ".json") in files
-]
+def get_youtube_api_client():
+    """
+    Returns YouTube API client.
+    """
+    return googleapiclient.discovery.build("youtube", "v3", credentials=get_credentials())
 
-for i in range(len(list_files)):
-    python_obj = json.loads(json_include.build_json("./", list_files[i].replace(".md", ".json")))
 
-    tags = python_obj["tags"]
-    flattened_tags = flatten(tags)
+def get_category_id(youtube_, category):
+    categories = youtube_.videoCategories().list(part="snippet", regionCode="US").execute()["items"]
+    return next((c["id"] for c in categories if c["snippet"]["title"] == category))
 
-    final_dict = {"tags": flattened_tags, "description": python_obj["description"],
-                  "title": python_obj["title"]}
-    for n in range(100):
-        if "description" + str(n) in python_obj:
-            final_dict.update({"description" + str(n): python_obj["description" + str(n)]})
 
-    with open("../tutorials/" + list_files[i].replace(".md", "-expanded-metadata.json"), 'w') as outfile:
-        json.dump(final_dict, outfile, indent=4)
+def get_video_body_param(youtube_, metadata_):
+    return json.loads(json.dumps({
+        "snippet": {
+            "title": metadata_["title"],
+            "tags": metadata_.get("tags", []),
+            "description": metadata_["description"],
+            "categoryId": get_category_id(youtube_, metadata_.get("category", "Science & Technology")),
+        },
+        "status": {
+            "privacyStatus": metadata_.get("privacy", "private")
+        }
+    }))
+
+
+def insert_video(youtube_, file_, metadata_):
+    body = get_video_body_param(youtube_, metadata_)
+    return youtube_.videos().insert(body=body, part=",".join(body.keys()), media_body=MediaFileUpload(file_)).execute()
+
+
+def update_video(youtube_, metadata_):
+    body = get_video_body_param(youtube_, metadata_)
+    body["id"] = metadata["youTubeId"]
+    return youtube_.videos().update(body=body, part=",".join(body.keys())).execute()
+
+
+if __name__ == '__main__':
+    argparser.add_argument('-f', '--file', required=True, help='video file path')
+    argparser.add_argument('-m', '--metadata', required=True, help='video metadata file path')
+    args = argparser.parse_args()
+
+    if not os.path.exists(args.file): exit("video file does not exist!")
+    if not os.path.exists(args.metadata): exit("metadata file does not exist!")
+
+    youtube = get_youtube_api_client()
+    metadata = get_metadata(args.metadata)
+    metadata["tags"] = flatten(metadata["tags"])
+    if not metadata.get("youTubeId"):
+        youTubeId = json.dumps(insert_video(youtube, args.file, metadata), indent=4)["id"]
+        update_metadata(args.metadata, {"youTubeId": youTubeId})
+    else:
+        update_video(youtube, metadata)
