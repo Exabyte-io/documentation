@@ -10,4 +10,6 @@ scripts/mp4/
 scripts/*gif
 scripts/gif/
 py-googletrans
+secrets.json
 credentials.json
+*.py[cod]
