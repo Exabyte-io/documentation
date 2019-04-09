@@ -199,7 +199,7 @@ if __name__ == '__main__':
     argparser.add_argument('-m', '--metadata', required=True, help='video metadata file path')
     group.add_argument('--update', action="store_true", help='whether to update the video')
     group.add_argument('--upload', action="store_true", help='whether to upload the video')
-    group.add_argument('--voiceOver', action="store_true", help='whether to add audio to the video')
+    group.add_argument('--voiceover', action="store_true", help='whether to add audio to the video')
     argparser.add_argument('-p', '--privacyStatus', default="unlisted", help='video privacy status')
     args = argparser.parse_args()
 
@@ -226,5 +226,5 @@ if __name__ == '__main__':
         insert_caption(youtube, youTubeId, metadata["title"], caption_content)
         update_metadata(args.metadata, {"youTubeId": youTubeId})
 
-    if args.voiceOver:
+    if args.voiceover:
         pass
