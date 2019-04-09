@@ -4,6 +4,9 @@ This tutorial page explains how to calculate the [energy reaction profile](../..
 
 We consider the example of a one-dimensional, three-atom molecule of Hydrogen (H3) throughout the present tutorial, and shall be making use of [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as the main simulation engine, via the implementation of its `PWneb` [flavor](../../../software-directory/modeling/quantum-espresso/components.md#flavors). 
 
+!!!note "Quantum ESPRESSO version considered in this tutorial"
+    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+
 This example considers a simple activated reaction, consisting in the **collinear proton transfer reaction**:
 
 ```text

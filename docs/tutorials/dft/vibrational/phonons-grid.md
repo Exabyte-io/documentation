@@ -2,6 +2,9 @@
 
 This tutorial page explains how to calculate the [Phonon Dispersion Curves](../../../properties-directory/non-scalar/phonon-dispersions.md) and [Phonon Density of States](../../../properties-directory/non-scalar/phonon-dos.md) of materials based on [Density Functional Theory](../../../models-directory/dft/overview.md). We will be studying crystalline Silicon in the standard cubic-diamond crystal structure, and we will use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine.
 
+!!!note "Quantum ESPRESSO version considered in this tutorial"
+    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+
 What sets the present tutorial apart from the [other tutorial](phonon-dispersion-dos.md) on phonon calculations is the employment of the "Grid Method" for computing the vibrational properties of materials, which is reviewed in the subsequent paragraph. This method is based on a [map type workflow](../../../workflows/components/maps.md), where multiple branches are executed in parallel as separate independent [Jobs](../../../jobs/overview.md), with the consequent gain in computational efficiency and overall speed of the phonon calculation. More information on this method, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [^1].
 
 ## The Grid Method for Phonon Calculations
