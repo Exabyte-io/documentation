@@ -1,0 +1,9 @@
+{{ title }}
+
+{{ description }}
+
+Links:
+
+{% for link in descriptionLinks -%}
+    {{ "  " ~ loop.index ~ ". " ~ link }}
+{% endfor %}
