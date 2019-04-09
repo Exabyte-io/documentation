@@ -6,6 +6,9 @@ K-point convergence can be run either as a stand-alone [workflow](../../../workf
 
 In the present tutorial, we will study the issue of k-point convergence for the case of crystalline silicon under its equilibrium cubic-diamond crystal structure, by making use of [VASP](../../../software-directory/modeling/vasp/overview.md) as the main simulation engine. We will investigate k-point convergence in the context of a [Total Energy](../../../properties-directory/scalar/total-energy.md) calculation.
 
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
+
 ## Create Job
 
 Silicon in its cubic-diamond crystal structure is the [default material](../../../materials/default.md) that is shown on [new job creation](../../../jobs-designer/overview.md), unless this default was [changed](../../../entities-general/actions/set-default.md) by the user following [account](../../../accounts/overview.md) creation. If silicon is still the default choice, it will be automatically loaded at the moment of the [opening](../../../jobs/actions/create.md) of [Job Designer](../../../jobs-designer/overview.md).
