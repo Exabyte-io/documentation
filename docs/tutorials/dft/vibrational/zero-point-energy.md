@@ -2,6 +2,9 @@
 
 This page explains how to run a [zero point energy](../../../properties-directory/scalar/zero-point-energy.md) calculation based on [density functional theory](../../../models-directory/dft/overview.md). For the sake of this presentation, we will calculate the zero point energy for crystalline silicon in its equilibrium cubic-diamond crystal structure, making use of [VASP](../../../software-directory/modeling/vasp/overview.md) as our simulation engine.
 
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
+
 ## Create Job
 
 Silicon in its cubic-diamond crystal structure is the [default material](../../../materials/default.md) that is shown on [new job creation](../../../jobs-designer/overview.md), unless this default was [changed](../../../entities-general/actions/set-default.md) by the user following [account](../../../accounts/overview.md) creation. If silicon is still the default choice, it will as such be automatically loaded at the moment of the [opening](../../../jobs/actions/create.md) of [Job Designer](../../../jobs-designer/overview.md).

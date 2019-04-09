@@ -2,17 +2,14 @@
 
 This tutorial page explains how to calculate the [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [VASP](../../../software-directory/modeling/vasp/overview.md) as our main simulation engine during this tutorial.
 
-What sets the present tutorial apart from the [other tutorial](band-gap.md) on band gap calculations is the employment of the **"GW Approximation"**, which is reviewed in the subsequent paragraph. This method is more compute-intensive, however similarly to the [HSE method](hse.md) it yields more accurate results closer to experimental values, thus rectifying the tendency of the [GGA to underestimate the size of the band gap](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation). More information on this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [^1].
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
 
-## The GW Approximation
-
-A comprehensive theoretical review of the GW Approximation can be found in Refs. [^2],[^3] and [^4]. 
-
-For the sake of this short introduction, it suffices to know that the GWapproximation is obtained using a systematic algebraic approach on the basis of Green function techniques, the most suitable approach for studying excited-state properties of extended systems. It constitutes an approximate expansion of the self-energy up to linear order in the screened Coulomb potential, which describes the interaction between the crystalline atoms. The implementation of theapproximation relies on a perturbative treatment starting from [Density Functional Theory](../../../models-directory/dft/overview.md). 
+What sets the present tutorial apart from the [other tutorial](band-gap.md) on band gap calculations is the employment of the **"GW Approximation"**, which is reviewed in [this part of the documentation](../../../models-directory/dft/notes.md#the-gw-approximation). This method is significantly slower than the conventional approach for computing electronic band gaps, however similarly to the [HSE method](hse-vasp-bg.md) it yields more accurate electronic band structure results which are closer to experimental values, thus rectifying the tendency of the [GGA to underestimate the size of the band gap](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation). More information on this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [^1].
 
 ## Workflow Structure
 
-We shall now describe the computational implementation of the GW Approximation for computing electronic band gaps on our platform, illustrating the various steps constituting the overall [Workflow](../../../workflows/overview.md). For the present explanation, we consider the example case of the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine. Further information on how the GW method is supported by VASP can be retrieved in Refs. [^5] and [^6].
+We shall now describe the computational implementation of the GW Approximation for computing electronic band gaps on our platform, illustrating the various steps constituting the overall [Workflow](../../../workflows/overview.md). For the present explanation, we consider the example case of the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine. Further information on how the GW method is supported by VASP can be retrieved in Refs. [^2] and [^3].
 
 Workflows performing GW calculations follow a three-step procedure:
 
@@ -55,7 +52,7 @@ In the video animation below, we outline the procedure for creating and executin
 
 ## Comparison with Experimental Value
 
-The calculated value of 1.094 eV for the indirect band gap of silicon is in better agreement with the experimental value for this material (1.17 eV [^7]) than the alternative case of standard band gap calculations performed with the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in [another tutorial page](band-gap.md). 
+The calculated value of 1.094 eV for the indirect band gap of silicon is in better agreement with the experimental value for this material (1.17 eV [^4]) than the alternative case of standard band gap calculations performed with the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in [another tutorial page](band-gap.md). 
 
 This provides an example of how the GW Approximation can result in improved precision in the estimation of important material properties than more traditional approaches within [DFT](../../../models-directory/dft/overview.md).
 
@@ -63,14 +60,8 @@ This provides an example of how the GW Approximation can result in improved prec
 
 [^1]: [P. Das, M. Mohammadi, T. Bazhirov: "Accessible computational materials design with high fidelity and high throughput"; arXiv:1807.05623, 15 Jul 2018](https://arxiv.org/abs/1807.05623)
 
-[^2]: [Wikipedia GW Approximation, Website](https://en.wikipedia.org/wiki/GW_approximation)
+[^2]: [GW calculations, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/GW_calculations)
 
-[^3]: [C. Friedrich and A. Schindlmayr: "Many-Body Perturbation Theory: The GW Approximation"; John von Neumann Institute for Computing, Document](https://core.ac.uk/download/pdf/34930704.pdf)
+[^3]: [Bandgap of Si in GW, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/Bandgap_of_Si_in_GW)
 
-[^4]: [F. Aryasetiawan and O. Gunnarsson: "The GW method"; arXiv:cond-mat/9712013v1, 1 Dec 1997](https://arxiv.org/abs/cond-mat/9712013v1)
-
-[^5]: [GW calculations, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/GW_calculations)
-
-[^6]: [Bandgap of Si in GW, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/Bandgap_of_Si_in_GW)
-
-[^7]: [Accessible computational materials design with high fidelity and high throughput, P. Das, M. Mohammadi, and T.Bazhirov, Arxiv preprint, 2017](https://arxiv.org/pdf/1807.05623.pdf)
+[^4]: [Accessible computational materials design with high fidelity and high throughput, P. Das, M. Mohammadi, and T.Bazhirov, Arxiv preprint, 2017](https://arxiv.org/pdf/1807.05623.pdf)
