@@ -32,12 +32,12 @@ Toggling the "Axes" option enables Cartesian coordinate axes, and the base XY pl
 ## Toggle Bonds
 <!-- TODO by GM -->
 
-Clicking on this option will draw the bonds between adjacent atoms. The stick is drawn if the atoms distance is equal or less than the bond length outlined in [here](http://www.chem.tamu.edu/rgroup/connell/linkfiles/bonds.pdf). For atoms with no bonding data the sum of covalent radii times the chemical connectivity factor (1.05) is iused as the bond length.
+Clicking on this option will draw the bonds between adjacent atoms. The stick is drawn if the atoms distance is equal or less than the bond length outlined in Ref. [^1]. For atoms with no bonding data the sum of covalent radii times the chemical connectivity factor (1.05) is used as the bond length.
 
 ## Toggle Perspective Camera
 <!-- TODO by GM -->
 
-[Perspective Projection](https://en.wikipedia.org/wiki/Perspective_(graphical)) is used to see the material by default. One can switch the camera to have [Orthographic Projection](https://en.wikipedia.org/wiki/Orthographic_projection) by toggling this option.
+**Perspective Projection** [^2] is used to see the material by default. One can switch the camera to have **Orthographic Projection** [^3] by toggling this option.
 
 ## Toggle Conventional Cell
 <!-- TODO by GM -->
@@ -61,3 +61,11 @@ Editing this numerical text field will modify the radius of the atom spheres acc
 The user can edit this second numerical field to repeat the original unit cell a certain number of times in each spatial direction, as defined by a positive integer number. 
 
 <img data-gifffer="/images/materials-designer/ViewerViewRepetitions.gif" />
+
+## Links
+
+[^1]: [Selected Bond Energies and Bond Lengths, Document](http://www.chem.tamu.edu/rgroup/connell/linkfiles/bonds.pdf)
+
+[^2]: [Wikipedia Perspective (graphical), Website](https://en.wikipedia.org/wiki/Perspective_(graphical))
+
+[^3]: [Wikipedia Orthographic projection, Website](https://en.wikipedia.org/wiki/Orthographic_projection)
