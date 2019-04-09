@@ -10,6 +10,7 @@ scripts/mp4/
 scripts/*gif
 scripts/gif/
 py-googletrans
-secrets.json
-credentials.json
+oauth-key.json
+oauth-credentials.json
+service-account-key.json
 *.py[cod]

@@ -5,4 +5,5 @@ exabyte_json_include==2.0.0
 google-api-python-client==1.7.8
 oauth2client==4.1.3
 jinja2==2.8
+google-cloud-texttospeech==0.4.0
 git+git://github.com/Exabyte-io/markdown-include.git#egg=markdown_include
