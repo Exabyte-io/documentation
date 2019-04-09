@@ -18,5 +18,12 @@
         }
     ],
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
+    "youTubeCaptions": [
+        {
+            "text": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface.",
+            "endTime": "0:00:10.160",
+            "startTime": "0:00:00.599"
+        }
+    ],
     "youTubeId": "gn4Hi_im4So"
 }
