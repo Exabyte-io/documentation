@@ -1,10 +1,13 @@
-# HSE Calculations
+# Band Gap with VASP (HSE)
 
 We discuss in the present tutorial those aspects of the calculation of [electronic structure properties](overview.md) which are specific to the implementation of the **HSE (Heyd-Scuseria-Ernzerhof)** [exchange-correlation functional](../../../models-directory/dft/parameters.md#functional), a special class of [Hybrid Functionals](../../../models-directory/dft/parameters.md#hybrid-functionals).
 
 ## Band Gap Calculations
 
 Here, we will explain how to compute the [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) of crystalline silicon using the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine. The increased [precision](../../../methods/precision.md) of Hybdrid Functionals in predicting [material properties](../../../properties/overview.md) of interest such as band gaps will hence be demonstrated. 
+
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
  
 The instructions presented herein complement the general discussion introduced in a [separate tutorial](band-gap.md). The reader is referred to this latter page for an outline of the general procedure for band-gap computations using DFT, whereas only HSE-specific aspects will be reviewed throughout the remainder of the present page.
 

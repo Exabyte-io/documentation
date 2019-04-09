@@ -2,6 +2,9 @@
 
 This page explains how to calculate the [Fermi surface](../../../properties-directory/scalar/fermi-energy.md) for metallic copper (Cu) lying in its equilibrium face-centred cubic (fcc) [Bravais Lattice](../../../properties-directory/structural/lattice.md), through the use of [Density Functional Theory](../../../models-directory/dft/overview.md). We will use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our simulation engine for this tutorial.
 
+!!!note "Quantum ESPRESSO version considered in this tutorial"
+    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+
 ## Create Job and Select Material
 
 The user should start by creating a new [Job](../../../jobs/overview.md), through [opening](../../../jobs/actions/create.md) the [Job Designer Interface](../../../jobs-designer/overview.md). The fcc crystal structure of copper should then be [selected and added](../../../jobs-designer/actions-header-menu/select-materials.md) to the new Job being designed, assuming that this structure is already present among the entries listed in the account-owned [collection](../../../accounts/collections.md) of materials.
