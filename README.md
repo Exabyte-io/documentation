@@ -421,13 +421,13 @@ Follow the below instructions to upload/update a tutorial video:
 
 ```bash
 source .virtualenv/bin/activate
-python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA
+python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA --upload/--update
 ```
 
 5. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
 
 ```bash
-python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA -p public
+python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA --upload/--update -p public
 ```
 
 6. Commit the new changes to metadata file such as `youTubeId`.
