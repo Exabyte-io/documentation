@@ -12,6 +12,9 @@ In the present tutorial, we study the crystalline silicon distorted from its equ
 
 !!!info "Generality of tutorial instructions"
     Despite making explicit references to [VASP](../../../software-directory/modeling/vasp/overview.md), the instructions presented herein are of general applicability to all [modeling engines](../../../software-directory/overview.md#modeling-applications) supported on our platform.
+    
+!!!note "VASP version considered in this tutorial"
+    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
 
 ## Create Job
 
