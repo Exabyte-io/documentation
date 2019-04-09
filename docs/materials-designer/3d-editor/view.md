@@ -23,26 +23,28 @@ Clicking on "Auto Rotate" option will activate an automatic perpetual rotation o
 <img data-gifffer="/images/materials-designer/ViewerViewAuto.gif" />
 
 ## Toggle Axes
-<!-- TODO by GM -->
 
 Toggling the "Axes" option enables Cartesian coordinate axes, and the base XY plane (a plane perpendicular to Z axis at Z=0), for ease of orientation in 3D.
 
 <img data-gifffer="/images/materials-designer/ViewerViewAxes.gif" />
 
-## Toggle Bonds
-<!-- TODO by GM -->
-
-Clicking on this option will draw the bonds between adjacent atoms. The stick is drawn if the atoms distance is equal or less than the bond length outlined in Ref. [^1]. For atoms with no bonding data the sum of covalent radii times the chemical connectivity factor (1.05) is used as the bond length.
-
-## Toggle Perspective Camera
-<!-- TODO by GM -->
+## Toggle Orthographic Camera
 
 **Perspective Projection** [^2] is used to see the material by default. One can switch the camera to have **Orthographic Projection** [^3] by toggling this option.
 
-## Toggle Conventional Cell
-<!-- TODO by GM -->
+<img data-gifffer="/images/materials-designer/orthographic.gif" />
 
-This option toggles Primitive representation of the unit cell to Conventional cell. Users can adjust the default representation mode in [here](../../accounts/ui/preferences/settings.md). 
+## Toggle Bonds
+
+Clicking on this option will draw the bonds between adjacent atoms. The stick is drawn if the atoms distance is equal or less than the bond length outlined in Ref. [^1]. For atoms with no bonding data, the sum of covalent radii times the chemical connectivity factor (1.05) is used as the bond length.
+
+<img data-gifffer="/images/materials-designer/bonds.gif" />
+
+## Toggle Conventional Cell
+
+This option toggles the Conventional representation of the unit cell from the Primitive cell. Users can adjust the default representation mode in [here](../../accounts/ui/preferences/settings.md). 
+
+<img data-gifffer="/images/materials-designer/conventional.gif" />
 
 ## Reset View
 
