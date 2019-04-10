@@ -12,4 +12,4 @@ The user is free to manually edit any of the entries associated with each of the
 
 In the below animation, we show how to manually edit one of the lattice vectors, after which we apply the changes.
 
-<img data-gifffer="/images/materials-designer/ViewerViewAuto.gif" />
+<img data-gifffer="/images/materials-designer/change-cell.gif" />

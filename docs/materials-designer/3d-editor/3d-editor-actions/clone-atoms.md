@@ -4,6 +4,4 @@ Cloning of atoms is performed by right-clicking on the atom's entry within the [
 
 ## Animation
 
-The cloning of atoms within a crystal structure is demonstrated in the following animation.
-
-<img data-gifffer="/images/materials-designer/ViewerViewAuto.gif" />
+The cloning of atoms within a crystal structure is demonstrated in the same animation as the one included at the bottom of [this page](add-remove-atoms.md).
