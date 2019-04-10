@@ -16,6 +16,6 @@ The procedure for modifying the lattice vectors defining the edges of the unit c
 
 Atoms can be cloned [as follows](clone-atoms.md).
 
-## [Rotate or Translate Atoms](move-rotate-atoms.md)
+## [Rotations, Translations and Scaling](move-rotate-atoms.md)
 
-[This procedure](move-rotate-atoms.md) should be followed in order to rotate or translate atoms in different directions and/or configurations.
+[This procedure](move-rotate-atoms.md) should be followed in order to rotate, translate or scale crystal structure components in different directions and/or configurations.
