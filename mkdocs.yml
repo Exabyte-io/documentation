@@ -356,9 +356,16 @@ nav:
             - Basis Editor:                             materials-designer/source-editor/basis.md
         - 3D Editor:
             - Overview:                                 materials-designer/3d-editor.md
-            - View Actions Panel:                       materials-designer/3d-editor/view.md
-            - Edit Actions Panel:                       materials-designer/3d-editor/edit.md
-            - Export Actions Panel:                     materials-designer/3d-editor/export.md
+            - View Options:                             materials-designer/3d-editor/view.md
+            - Edit Options:                             materials-designer/3d-editor/edit.md
+            - "Edit Actions > Overview":                materials-designer/3d-editor-actions/overview.md
+            - "Edit Actions > Add/Remove Atoms":        materials-designer/3d-editor-actions/add-remove-atoms.md
+            - "Edit Actions > Adjust Cell Parameters":  materials-designer/3d-editor-actions/adjust-cell-parameters.md
+            - "Edit Actions > Clone Atoms":             materials-designer/3d-editor-actions/clone-atoms.md
+            - "Edit Actions > Group Atoms":             materials-designer/3d-editor-actions/group-atoms.md
+            - "Edit Actions > Move/Rotate Atoms":       materials-designer/3d-editor-actions/move-rotate-atoms.md
+            - Export Options:                     materials-designer/3d-editor/export.md
+
 
     - Workflows:
         - Overview:                                     workflows/overview.md
