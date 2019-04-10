@@ -1,13 +1,21 @@
-## Inject / Delete Atoms
+# Add / Delete Atoms
 
-Instead of having to manually edit the total number of atoms in the crystal structure [basis editor](../source-editor/basis.md), it is possible to place or delete individual atoms at desired locations within the crystal structure directly in the graphical viewer. Alternatively, the functionality can be toggled by `I` key.
+It is possible to place or delete individual atoms at desired locations within the crystal structure directly in the [3D graphical viewer](../edit.md). 
 
-### Delete
+## Delete
 
-Hover over an atom to see it highlighted. Righ-click on it to delete. The text of the crystal basis will adjust accordingly.
+Deletion of atoms is performed by right-clicking on the atom's entry within the ["Scene" sidebar list](../edit.md#3.-scene) displayed towards the right-hand side of the [3D editor interface](../edit.md). After the right click, the user should select the `Delete` option within the resulting menu.
 
-### Inject
+## Add
 
-Right click inside the unit cell will inject an atom at the cursor position. We assign the default offset from the view such that the atom is created inside the unit cell. This assumes the default view position and can, however, be affected by zoom, so this features should be used with caution.
- 
-<img data-gifffer="/images/materials-designer/ViewerEditInject.gif" />
+In order to add a new atom, the user should again right-click on any existing atom entry within the ["Scene" sidebar list](../edit.md#3.-scene), and then select the `Copy` option this time. This should be followed by a second right-click, where the `Paste` option is selected instead to add the new atom. 
+
+### Set Chemical Identity of New Atom
+
+The chemical identity of this newly added atom can be altered under the "Object" Tab within the lower panel of the "Scene" sidebar, by editing the atom's corresponding "Name" entry. The atom's name consists of the name of the element separated from the atom's overall index in the crystal structure by a dash, e.g. "Si-1". "Si" is used by default if the element can not be extracted from the name itself.
+
+## Animation
+
+Addition and deletion of atoms within a crystal structure is demonstrated in the following animation.
+
+<img data-gifffer="/images/materials-designer/ViewerViewAuto.gif" />
