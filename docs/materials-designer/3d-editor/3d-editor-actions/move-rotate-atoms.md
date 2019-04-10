@@ -1,4 +1,6 @@
-# Toggle Rotate / Translate
+# Rotate or Translate Atoms
+
+## Toggle Rotate / Translate
 
 Enabling the "Rotate / Translate" features, accessible via the corresponding buttons within the ["Footer" Menu](../edit.md#2.-footer-menu) of the main 3D editor interface, displays a set of coordinate axes alongside the structure being currently inspected. Depending on whether the `Translate` or `Rotate` option is selected, the resulting reference system will consist in Cartesian or Spherical coordinates respectively. In this way, the entirety of the crystal structure under investigation can be shifted in different ways, as described in what follows.
 
