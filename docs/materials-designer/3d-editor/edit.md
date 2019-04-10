@@ -50,24 +50,3 @@ The user can exit the editor either by pressing the escape key, or by selecting 
 [^1]: [The three.js Javacript 3D Library](https://threejs.org/)
 
 [^2]: [Wikipedia Three.js, Website](https://en.wikipedia.org/wiki/Three.js)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- TODO by GM -->
-
-
-- How to clone/move/add/remove/rotate atom
-- How to group atoms
-
-
