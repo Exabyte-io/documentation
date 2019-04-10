@@ -8,7 +8,7 @@ Deletion of atoms is performed by right-clicking on the atom's entry within the 
 
 ## Add
 
-In order to add a new atom, the user should again right-click on any existing atom entry within the ["Scene" sidebar list](../edit.md#3.-scene), and then select the `Copy` option this time. This should be followed by a second right-click, where the `Paste` option is selected instead to add the new atom. 
+In order to add a new atom, the user should follow the same instructions as in the [Cloning of atoms](clone-atoms.md).
 
 ### Set Chemical Identity of New Atom
 
@@ -18,4 +18,4 @@ The chemical identity of this newly added atom can be altered under the "Object"
 
 Addition and deletion of atoms within a crystal structure is demonstrated in the following animation.
 
-<img data-gifffer="/images/materials-designer/ViewerViewAuto.gif" />
+<img data-gifffer="/images/materials-designer/add-delete.gif" />
