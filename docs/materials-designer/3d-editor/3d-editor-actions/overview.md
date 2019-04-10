@@ -16,10 +16,6 @@ The procedure for modifying the lattice vectors defining the edges of the unit c
 
 Atoms can be cloned [as follows](clone-atoms.md).
 
-## [Group Atoms](group-atoms.md)
-
-Atoms can also be grouped together as explained [in this page](group-atoms.md).
-
 ## [Rotate or Translate Atoms](move-rotate-atoms.md)
 
 [This procedure](move-rotate-atoms.md) should be followed in order to rotate or translate atoms in different directions and/or configurations.
