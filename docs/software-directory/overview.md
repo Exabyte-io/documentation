@@ -24,6 +24,7 @@ The platform currently offers the choice between the following software engines 
 | [CP2K](modeling/cp2k.md)      | 4.1     | 3 |
 | [GROMACS](modeling/gromacs.md) |   5.1.4  | 3 |
 | [Turbomole](modeling/turbomole.md) | 7.0     | 2, 3 |
+| [WIEN2k](modeling/wien2k.md) | 17.1     | 3 |
 
 ## Machine Learning
 
