@@ -405,3 +405,29 @@ The following list of words should be avoided:
 - Various 
 - Automatically
 - Finally
+
+
+### Uploading/Updating Tutorial Videos
+
+Follow the below instructions to upload/update a tutorial video:
+
+1. Create a metadata file similar to the one in [here](docs/tutorials/dft/electronic/band-gap.json).
+
+2. Make sure to remove `youTubeId`. This field is automatically added by the [video manager](video-manager.py) script once the video is uploaded.
+
+3. In metadata file, `descriptionLinks` is a list of links which are added to video description. See [description template](video-description.jinja) for more details.
+
+4. Run the below command to upload/update the video once metadata is ready:
+
+```bash
+source .virtualenv/bin/activate
+python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA
+```
+
+5. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
+
+```bash
+python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA -p public
+```
+
+6. Commit the new changes to metadata file such as `youTubeId`.
