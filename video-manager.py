@@ -1,16 +1,17 @@
 #!/usr/bin/python
 
 import os
+import re
 import json
 import googleapiclient.discovery
 
 from jinja2 import Template
 from google.cloud import texttospeech
 from oauth2client.file import Storage
-from oauth2client.tools import argparser, run_flow
+from oauth2client.tools import run_flow, argparser
 from oauth2client.client import flow_from_clientsecrets
-from utils import flatten, update_metadata, parseIncludeStatements
 from googleapiclient.http import MediaFileUpload, MediaInMemoryUpload
+from utils import flatten, update_metadata, parseIncludeStatements, caption_time_to_milliseconds
 
 SCOPE = "https://www.googleapis.com/auth/youtubepartner"
 CLIENT_SECRETS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "oauth-key.json"))
@@ -24,7 +25,9 @@ DESCRIPTION_LINKS = [
 
 LANGUAGE_CODE = 'en-US'
 AUDIO_ENCODING = texttospeech.enums.AudioEncoding.MP3
-SSML_GENDER = texttospeech.enums.SsmlVoiceGender.NEUTRAL
+SSML_GENDER = texttospeech.enums.SsmlVoiceGender.FEMALE
+
+FFMPEG_COMMAND_TMPL = "ffmpeg -y -v 0 -i {} -i {} -map 0:v -map 1:a -vcodec copy {}"
 
 
 def get_oauth_credentials():
@@ -135,7 +138,9 @@ def create_svb_caption_content(metadata_):
     Returns:
         str
     """
-    return ["".join((c["startTime"], ",", c["endTime"], "\n", c["text"])) for c in metadata_["youTubeCaptions"]]
+    regex = re.compile(r'<.*?>')
+    caption_to_text = lambda c: "".join((c["startTime"], ",", c["endTime"], "\n", regex.sub('', c["text"])))
+    return [caption_to_text(caption) for caption in metadata_["youTubeCaptions"]]
 
 
 def insert_caption(youtube_, youTubeId_, name, content):
@@ -173,19 +178,25 @@ def create_SSML_text(metadata_):
     Returns:
         str
     """
-    pass
+    text = ""
+    previousEnd = 0
+    for caption in metadata_["youTubeCaptions"]:
+        silence = caption_time_to_milliseconds(caption["startTime"]) - previousEnd
+        text = "".join((text, "<break time='{}ms'/>".format(silence), caption["text"]))
+        previousEnd = caption_time_to_milliseconds(caption["endTime"])
+    return "".join(("<speak>", text, "</speak>"))
 
 
-def convert_text_to_speech(text, speech_path):
+def convert_text_to_speech(ssml_text, speech_path):
     """
     Converts a given text to speech.
 
     Args:
-        text (str): SSML text
+        ssml_text (str): SSML text
         speech_path (str): path to store the audio file.
     """
     client = get_text_to_speech_api_client()
-    synthesis_input = texttospeech.types.SynthesisInput(text=text)
+    synthesis_input = texttospeech.types.SynthesisInput(ssml=ssml_text)
     voice = texttospeech.types.VoiceSelectionParams(language_code=LANGUAGE_CODE, ssml_gender=SSML_GENDER)
     audio_config = texttospeech.types.AudioConfig(audio_encoding=AUDIO_ENCODING)
     response = client.synthesize_speech(synthesis_input, voice, audio_config)
@@ -194,13 +205,24 @@ def convert_text_to_speech(text, speech_path):
 
 
 if __name__ == '__main__':
-    group = argparser.add_mutually_exclusive_group()
-    argparser.add_argument('-f', '--file', required=True, help='video file path')
-    argparser.add_argument('-m', '--metadata', required=True, help='video metadata file path')
-    group.add_argument('--update', action="store_true", help='whether to update the video')
-    group.add_argument('--upload', action="store_true", help='whether to upload the video')
-    group.add_argument('--voiceover', action="store_true", help='whether to add audio to the video')
-    argparser.add_argument('-p', '--privacyStatus', default="unlisted", help='video privacy status')
+    subparsers = argparser.add_subparsers(dest='command')
+
+    upload = subparsers.add_parser('upload')
+    upload.add_argument('--file', required=True, help='video file path')
+    upload.add_argument('--metadata', required=True, help='video metadata file path')
+    upload.add_argument('--privacyStatus', default="unlisted", help='video privacy status')
+
+    update = subparsers.add_parser('update')
+    update.add_argument('--metadata', required=True, help='video metadata file path')
+    update.add_argument('--privacyStatus', default="unlisted", help='video privacy status')
+
+    voiceover = subparsers.add_parser('voiceover')
+    voiceover.add_argument('--file', required=True, help='video file path')
+    voiceover.add_argument('--metadata', required=True, help='video metadata file path')
+    voiceover.add_argument('--audio', help='path to store audio file')
+    voiceover.add_argument('--output', help='path to store voiceover video file')
+    voiceover.add_argument('--privacyStatus', default="unlisted", help='video privacy status')
+
     args = argparser.parse_args()
 
     if not os.path.exists(args.file): exit("video file does not exist!")
@@ -216,15 +238,17 @@ if __name__ == '__main__':
 
     youtube = get_youtube_api_client()
 
-    if args.update:
+    if args.command == "update":
         if not metadata.get("youTubeId"): exit("metadata does not contain youTubeId!")
         update_video(youtube, metadata)
 
-    if args.upload:
+    if args.command == "upload":
         youTubeId = insert_video(youtube, args.file, metadata)["id"]
         caption_content = create_svb_caption_content(metadata)
         insert_caption(youtube, youTubeId, metadata["title"], caption_content)
         update_metadata(args.metadata, {"youTubeId": youTubeId})
 
-    if args.voiceover:
-        pass
+    if args.command == "voiceover":
+        ssml_text = create_SSML_text(metadata)
+        convert_text_to_speech(ssml_text, args.audio)
+        os.system(FFMPEG_COMMAND_TMPL.format(args.file, args.audio, args.output))

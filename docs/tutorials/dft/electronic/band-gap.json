@@ -20,9 +20,24 @@
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
     "youTubeCaptions": [
         {
-            "text": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface.",
-            "endTime": "0:00:10.160",
-            "startTime": "0:00:00.599"
+            "text": "Crate a simulation job by navigating to the job designer page",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:04.000"
+        },
+        {
+            "text": "Open workflow explorer and select Band Gap workflow",
+            "startTime": "0:00:06.000",
+            "endTime": "0:00:09.000"
+        },
+        {
+            "text": "Navigate to compute tab and set the compute configuration",
+            "startTime": "0:00:16.000",
+            "endTime": "0:00:19.000"
+        },
+        {
+            "text": "Then set a name for the job and save it",
+            "startTime": "0:00:23.000",
+            "endTime": "0:00:25.000"
         }
     ],
     "youTubeId": "gn4Hi_im4So"
