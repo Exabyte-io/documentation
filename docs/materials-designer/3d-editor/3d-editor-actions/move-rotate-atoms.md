@@ -2,7 +2,7 @@
 
 ## Toggle Option
 
-Enabling the "Rotate / Translate / Scale" features, accessible via the corresponding buttons within the ["Footer" Menu](../edit.md#2.-footer-menu) of the main 3D editor interface, displays a set of coordinate axes alongside the structure being currently inspected. Depending on whether the `Translate`/`Scale` or `Rotate` option is selected, the resulting reference system will consist in Cartesian or Spherical coordinates respectively. In this way, the object component of the crystal structure, which has been selected under the ["Scene" sidebar list](../edit.md#3.-scene), can be shifted or modified in different ways, as described in what follows.
+Enabling the "Rotate / Translate / Scale" features, accessible via the corresponding buttons within the ["Footer" Menu](../edit.md#2.-footer-menu) of the main 3D editor interface, displays a set of coordinate axes alongside the structure being currently inspected. Depending on whether the `Translate`/`Scale` or `Rotate` option is selected, the resulting reference system will consist in Cartesian or Spherical coordinates respectively. In this way the component of the crystal structure, which has been selected under the ["Scene" sidebar list](../edit.md#3.-scene), can be shifted or modified in different ways, as described in what follows.
 
 ## Translation
 
@@ -36,6 +36,6 @@ The user can select to employ local coordinates by ticking the `local` checkbox 
 
 ## Animation
 
-We demonstrate the execution of example translations and rotations of a crystal structure in the following animation.
+We demonstrate the execution of example translations, rotations and scaling of a crystal structure in the following animation.
 
 <img data-gifffer="/images/materials-designer/move-atoms.gif" />
