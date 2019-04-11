@@ -27,6 +27,7 @@ LANGUAGE_CODE = 'en-US'
 AUDIO_ENCODING = texttospeech.enums.AudioEncoding.MP3
 SSML_GENDER = texttospeech.enums.SsmlVoiceGender.FEMALE
 
+# instructs ffmpeg to get video from first input (-map 0:v) and audio from second one (-map 1:a) and combine them.
 FFMPEG_COMMAND_TMPL = "ffmpeg -y -v 0 -i {} -i {} -map 0:v -map 1:a -vcodec copy {}"
 
 
