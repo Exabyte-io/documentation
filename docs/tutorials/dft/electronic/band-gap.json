@@ -20,7 +20,7 @@
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
     "youTubeCaptions": [
         {
-            "text": "Crate a simulation job by navigating to the job designer page",
+            "text": "Create a simulation job by navigating to the job designer page",
             "startTime": "00:00:00.000",
             "endTime": "00:00:04.000"
         },
@@ -30,12 +30,12 @@
             "endTime": "0:00:09.000"
         },
         {
-            "text": "Navigate to compute tab and set the compute configuration",
+            "text": "Navigate to compute tab and set compute configuration",
             "startTime": "0:00:16.000",
             "endTime": "0:00:19.000"
         },
         {
-            "text": "Then set a name for the job and save it",
+            "text": "Then set the name for the job and save it",
             "startTime": "0:00:23.000",
             "endTime": "0:00:25.000"
         }
