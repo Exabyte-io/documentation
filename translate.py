@@ -16,17 +16,22 @@ import argparse
 import errno
 import os
 import io
+import re
+import time
 from googleapiclient.discovery import build
 
 # Top-level directory for multiple languages
 LANGUAGE_DIR_PREFIX = 'lang'
+DEFAULT_LANGUAGE = 'en'
 DEFAULT_LANGUAGE_CODE = 'ja'
 # Number of new files to translate / API requests.
-# Total number of files in repo is ~1600 as of 2019-02.
+# Total number of .md files in repo is ~500 as of 2019-02.
 DEFAULT_THRESHOLD = 10
 # Google API key to communicate with Cloud Translate API
 # DO NOT COMMIT
 GOOGLE_API_KEY = ''
+
+URL_REGEX = r'(\[[^\[\]]+\]\([^)]+\))'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-t', '--threshold', nargs='?', type=int, dest='threshold')
@@ -64,30 +69,42 @@ def translate_array(array, language_code):
     translations = service.translations().list(
         source='en',
         target=language_code,
-        # format="text",
+        format="text",
         q=array
       ).execute()['translations']
     return list(map(lambda x: x['translatedText'], translations))
 
-def write_array_as_file(array, filename):
+def write_array_as_file(array, filename, separator="\n"):
     with open(filename, "w+") as f1:
-        f1.write("\n".join(array).encode('utf-8'))
+        f1.write(separator.join(array).encode('utf-8'))
 
 def translate_filename(filename, force_overwrite = False):
-    filename_translation = os.path.join(LANGUAGE_DIR_PREFIX, language_code, filename)
+    filename_translation = os.path.join(LANGUAGE_DIR_PREFIX, language_code,
+        filename.replace(os.path.join(LANGUAGE_DIR_PREFIX, DEFAULT_LANGUAGE), ""))
+    print(filename_translation)
     if os.path.isfile(filename_translation) and not force_overwrite:
         print("Existing translation found for {0}".format(filename))
         return 0
     print("Translating {0}".format(filename))
     mkdir_p(os.path.dirname(filename_translation))
     # artificial one-element array
-    file_as_array = [get_file_as_text(filename)]
+    file_text = get_file_as_text(filename)
+    file_chunks = re.split(URL_REGEX, file_text, flags=re.MULTILINE)
+    file_as_array = file_chunks
+    # print(file_chunks)
     try:
         all_translations = translate_array(file_as_array, language_code)
+        # print("".join(all_translations).encode('utf-8'))
     except Exception as e:
         print("Exception during translation:", e)
         return 0
-    write_array_as_file(all_translations, filename_translation)
+
+    # replace all odd elements - "separators" by their original values
+    for idx, val in enumerate(all_translations):
+        if idx % 2 != 0:
+            all_translations[idx] = file_chunks[idx]
+
+    write_array_as_file(all_translations, filename_translation, "")
     return 1
 
 
@@ -102,14 +119,20 @@ if __name__ == '__main__':
 
     # Otherwise attempt to translate up to `threshold` files
     translated_files_counter = 0
+    break_out_of_loop = False
     threshold = args.threshold if args.threshold else DEFAULT_THRESHOLD
 
-    for path, subdirs, files in os.walk("./docs/"):
-        if translated_files_counter > threshold: continue
+    for path, subdirs, files in os.walk("./lang/en/docs/"):
+        if break_out_of_loop: continue
         for name in files:
+            if break_out_of_loop: continue
             # exclude `images` directories, only treat the *.md files
-            if file.endswith(".md"):
+            if name.endswith(".md"):
                 filename = os.path.join(path, name)
                 increment = translate_filename(filename)
                 translated_files_counter += increment
-                if translated_files_counter > threshold: continue
+                # To avoid "Rate Limit Exceeded"
+                # https://cloud.google.com/translate/quotas
+                if increment > 0: time.sleep(2)
+                if translated_files_counter >= threshold:
+                    break_out_of_loop = True
