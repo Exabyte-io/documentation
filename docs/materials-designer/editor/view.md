@@ -1,4 +1,4 @@
-# 3d Editor: View Panel
+# 3d Editor: the "Viewer"
 
 The first `View` button <i class="zmdi zmdi-eye zmdi-hc-border"></i> under the interactive functionality of the 3D Editor offers the user the possibility to perform the following set of actions to modify the current view: 
 
