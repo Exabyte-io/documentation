@@ -8,7 +8,9 @@ Deletion of atoms is performed by right-clicking on the atom's entry within the 
 
 ## Add
 
-In order to add a new atom, the user should follow the same instructions as in the [Cloning of atoms](clone-atoms.md).
+In order to add a new atom, the user should follow the same instructions as in the **cloning** of atoms. Cloning of atoms is performed by right-clicking on the atom's entry within the ["Scene" sidebar list](../edit.md#3.-scene) displayed towards the right-hand side of the [3D editor interface](../edit.md). After the right click, the user should then select the `Clone` option within the resulting menu.
+
+Following the creation of a new atom, its entry within the Scene sidebar typically needs to be dragged and dropped into the "Atoms" group collection of the material under consideration.
 
 ### Set Chemical Identity of New Atom
 

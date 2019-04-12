@@ -4,7 +4,7 @@ The user can [open](../../entities-general/actions/open-edit.md) entities listed
 
 ## Viewer vs. Designer
 
-As explained in the [general introduction](../../entities-general/ui/viewer.md), we reuse the [Designer](../../materials-designer/overview.md) component as Viewer throughout the platform, with some adjustments and limitations on editing. For example, the ["Edit" functionality of the 3D crystal viewer](../../materials-designer/3d-editor/edit.md) is missing from Viewer, due to the inapplicability of its structure-changing actions under the "viewing" circumstances. 
+As explained in the [general introduction](../../entities-general/ui/viewer.md), we reuse the [Designer](../../materials-designer/overview.md) component as Viewer throughout the platform, with some adjustments and limitations on editing. For example, the ["Edit" functionality of the 3D crystal viewer](../../materials-designer/editor/edit.md) is missing from Viewer, due to the inapplicability of its structure-changing actions under the "viewing" circumstances. 
 
 ## Allowed Adjustments
 
