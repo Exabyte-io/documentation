@@ -7,8 +7,8 @@ Here, the user is given the opportunity to enter a suffix which will be appended
 
 ## Material Cell Type
 
-Here, user can specify primitive or Conventional unit cell representation to be used by default while visualizing materials in [3D Editor](../../../materials-designer/editor/view.md).
+Here, user can specify primitive or conventional unit cell representation to be used by default while visualizing materials in [3D Editor](../../../materials-designer/3d-editor/view.md).
 
 ## Save Changes
 
-Once the user has chosen and entered the new desired Clone Suffix and Material Cell Type, the `Save` button should be pressed to register the change to the account.
+Once the user has chosen and entered the new desired values, the `Save` button should be pressed to register the change to the account.
