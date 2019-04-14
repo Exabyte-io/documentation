@@ -10,17 +10,17 @@ By default, the 3d Editor is non-interactive and only shows the structural infor
 
 ![Interactive regime](../images/materials-designer/3D-viewer-panels.png "Interactive regime")
  
-## [View Panel](./3d-editor/view.md)
+## [Viewer](3d-editor/view.md)
 
-View panel allows users to interact with the view: rotate, translate, reset etc., and is further explained [here](./3d-editor/view.md). 
+The "Viewer" panel allows users to interact with the view: rotate, translate, reset etc., and is further explained [here](3d-editor/view.md). 
 
-## [Edit Panel](./3d-editor/edit.md)
+## [Editor](3d-editor/edit.md)
 
-The structural information about the material currently viewed can be modified by means of the Edit: add, remove atoms, etc., and is further explained [here](./3d-editor/edit.md).   
+The structural information about the material currently viewed can be modified in the main editor, as explained [here](3d-editor/edit.md).   
 
-## [Export Panel](./3d-editor/export.md)
+## [Export](3d-editor/export.md)
 
-The information about the currently active material can be exported by means of the [Export Panel](./3d-editor/export.md).   
+The information about the currently active material can be exported by means of the [Export Panel](3d-editor/export.md).   
 
 ## Activating Panels
 
