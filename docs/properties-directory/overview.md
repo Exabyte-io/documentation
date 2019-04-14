@@ -20,6 +20,7 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | [Fermi Energy](scalar/fermi-energy.md)  | The highest energy level occupied by electrons in a system |
 | [Surface Energy](scalar/surface-energy.md)           | The energy of a crystal surface |
 | [Formation Energy](scalar/formation-energy.md)           | The energy required to create defects |
+| [Reaction Energy Barrier](scalar/reaction-energy-barrier.md)    | The activation energy required by the reactants to undergo a chemical reaction |
 | [Pressure](scalar/pressure.md)                       | Scalar average pressure |
 | [Zero Point Energy](scalar/zero-point-energy.md) | Energy of the lowest vibrational level wrt to vacuum |
 | [Total Energy Contributions](scalar/total-energy.md#total-energy-contributions) | Ewald, Exchange correlation and	Hartree contributions to the total energy |
@@ -36,6 +37,8 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 | [Electronic Density of States](non-scalar/electronic-dos.md)               | Electronic Density of States (including partial contributions) |
 | [Phonon Dispersions](non-scalar/phonon-dispersions.md) | The dispersion plot of lattice vibrations (phonons) frequencies |
 | [Phonon Density of States](non-scalar/phonon-dos.md) | The Density of States of Phonons |
+| [Reaction Energy Profile](non-scalar/reaction-energy-profile.md)    | The energetic pathway followed by a chemical reaction during the course of its progress |
+
 
 ### Structural
 

@@ -18,10 +18,6 @@ The Workflow Designer is structured into three main building blocks, and has the
     <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu">
 </map>
 
-## Convergence and Relaxation Add-ons
+## Add-ons
 
-When creating a new workflow, two important preliminary controls are typically required at the beginning of the workflow, and can be implemented in the context of the Workflow Designer interface in the form of **add-on** subworkflow modules.
-
-Firstly, to have a reasonable level of confidence that a result can be trusted, the total energy should not change significantly when the k-point density is increased.  This search for the appropriate density of k-points is called [k-point convergence](../workflows/addons/convergence-algorithms.md).
-
-It is furthermore often desirable to start the workflow with an appropriately [relaxed structures](../workflows/addons/structural-relaxation.md) to ensure that the crystalline system under consideration is in the lowest possible total energy state configuration since the early stages of the workflow, before computing any subsequent property on it.
+When creating a new workflow, important preliminary controls are typically required at the beginning of the workflow, and can be implemented in the context of the Workflow Designer interface in the form of [**add-on** subworkflow modules](../workflows/addons/overview.md).

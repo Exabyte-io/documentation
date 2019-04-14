@@ -72,10 +72,14 @@ nav:
 
 # INTRODUCTION
     - Getting Started:
-        - Run first simulation:                          getting-started/run-first-simulation.md
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
-        - CLI job submission:                            getting-started/cli-job.md
+        - Terminology:                                   getting-started/terminology.md
+        - Run first simulation:
+            - Web Interface:                             getting-started/run-first-simulation/web-interface.md
+            - Command Line:                              getting-started/run-first-simulation/cli-job.md
+
+
 
 # IMPORTANT TO CONVERT NEW USERS
     - Pricing:
@@ -170,10 +174,12 @@ nav:
         - Data:                                         models/data.md
         - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
-            - Reciprocal space:                         models/auxiliary-concepts/reciprocal-space.md
-            - Reciprocal space > sampling:              models/auxiliary-concepts/reciprocal-space/sampling.md
-            - Reciprocal space > paths:                 models/auxiliary-concepts/reciprocal-space/paths.md
-            - Reciprocal space > convergence:           models/auxiliary-concepts/reciprocal-space/convergence.md
+            - Nudged Elastic Band:                       models/auxiliary-concepts/nudged-elastic-band.md
+            - Reciprocal space:                          models/auxiliary-concepts/reciprocal-space.md
+            - Reciprocal space > sampling:               models/auxiliary-concepts/reciprocal-space/sampling.md
+            - Reciprocal space > paths:                  models/auxiliary-concepts/reciprocal-space/paths.md
+            - Reciprocal space > convergence:            models/auxiliary-concepts/reciprocal-space/convergence.md
+            - Reciprocal space > electronic occupations: models/auxiliary-concepts/reciprocal-space/electronic-occupations.md
 
     - Models Directory:
         - Overview:                                     models-directory/overview.md
@@ -182,14 +188,24 @@ nav:
             - Data:                                     models-directory/dft/data.md
             - Parameters:                               models-directory/dft/parameters.md
             - Accuracy:                                 models-directory/dft/accuracy.md
+            - Special Notes:                            models-directory/dft/notes.md
             - References:                               models-directory/dft/references.md
-
+        - Machine Learning:
+            - Overview:                                 models-directory/machine-learning/overview.md
+            - Parameters:                               models-directory/machine-learning/parameters.md
+            - Units:                                    models-directory/machine-learning/units.md
+            - Data:                                     models-directory/machine-learning/data.md
+            - Actions:                                  models-directory/machine-learning/actions.md
+            - Units:                                    models-directory/machine-learning/units.md
+            - Example Workflow:                         models-directory/machine-learning/example-workflow.md
 
     - Methods:
         - Overview:                                     methods/overview.md
         - Data:                                         methods/data.md
         - Parameters:                                   methods/parameters.md
         - Precision:                                    methods/precision.md
+        - Auxiliary Concepts:
+            - Optimization Algorithms:                  methods/auxiliary-concepts/optimization-algorithms.md
 
     - Methods Directory:
         - Overview:                                     methods-directory/overview.md
@@ -201,7 +217,10 @@ nav:
             - Precision:                                methods-directory/pseudopotential/precision.md
             - Important Settings:                       methods-directory/pseudopotential/important-settings.md
             - Actions:                                  methods-directory/pseudopotential/actions.md
-
+        - Linear Regression:
+            - Overview:                                 methods-directory/linear-regression/overview.md
+            - Parameters:                               methods-directory/linear-regression/parameters.md
+            - Data:                                     methods-directory/linear-regression/data.md
 
     - Software:
         - Overview:                                     software/overview.md
@@ -286,6 +305,8 @@ nav:
             - Create:                                   entities-general/actions/create.md
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
+            - Sets > Chane Type:                        entities-general/actions/change-set-type.md
+            - Sets > Set Index:                         entities-general/actions/set-entity-index.md
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
 
 
@@ -324,6 +345,7 @@ nav:
             - Advanced:                                 materials-designer/header-menu/advanced.md
             - "Advanced > Supercell":                   materials-designer/header-menu/advanced/supercell.md
             - "Advanced > Combinatorial Set":           materials-designer/header-menu/advanced/combinatorial-set.md
+            - "Advanced > Interpolated Set":            materials-designer/header-menu/advanced/interpolated-set.md
             - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
             - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:
@@ -332,11 +354,16 @@ nav:
             - Overview:                                 materials-designer/source-editor.md
             - Lattice Editor:                           materials-designer/source-editor/lattice.md
             - Basis Editor:                             materials-designer/source-editor/basis.md
-        - 3D Editor:
+        - 3D Viewer/Editor:
             - Overview:                                 materials-designer/3d-editor.md
-            - View Actions Panel:                       materials-designer/3d-editor/view.md
-            - Edit Actions Panel:                       materials-designer/3d-editor/edit.md
-            - Export Actions Panel:                     materials-designer/3d-editor/export.md
+            - View Options:                             materials-designer/3d-editor/view.md
+            - Edit Options:                             materials-designer/3d-editor/edit.md
+            - "Edit Actions > Overview":                materials-designer/3d-editor/editor-actions/overview.md
+            - "Edit Actions > Add/Remove Atoms":        materials-designer/3d-editor/editor-actions/add-remove-atoms.md
+            - "Edit Actions > Adjust Cell Parameters":  materials-designer/3d-editor/editor-actions/adjust-cell-parameters.md
+            - "Edit Actions > Move/Rotate Atoms":       materials-designer/3d-editor/editor-actions/move-rotate-atoms.md
+            - Export Options:                           materials-designer/3d-editor/export.md
+
 
     - Workflows:
         - Overview:                                     workflows/overview.md
@@ -480,6 +507,7 @@ nav:
             - Zero Point Energy:                        properties-directory/scalar/zero-point-energy.md
             - Pressure:                                 properties-directory/scalar/pressure.md
             - Total Force:                              properties-directory/scalar/total-force.md
+            - Reaction Energy Barrier:                  properties-directory/scalar/reaction-energy-barrier.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md
@@ -487,6 +515,7 @@ nav:
             - Band Gaps:                                properties-directory/non-scalar/band-gaps.md
             - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
             - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
+            - Reaction Energy Profile:                  properties-directory/non-scalar/reaction-energy-profile.md
         - Elemental:
             - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
@@ -599,14 +628,52 @@ nav:
 
 
     - Tutorials:
+        - Overview:                                  tutorials/overview.md
         - Jobs via Command Line:
             - Overview:                              tutorials/jobs-cli/overview.md
             - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
             - View Results:                          tutorials/jobs-cli/view-results.md
+            - Import to Web Interface:               tutorials/jobs-cli/cli-job-import.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
             - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
             - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
+        - Machine Learning (ML):
+            - Overview:                              tutorials/ml/overview.md
+            - Train ML Model:                        tutorials/ml/train-ml-model.md
+            - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+        - Density Functional Theory:
+            - Electronic Properties:
+                - Overview:                                tutorials/dft/electronic/overview.md
+                - Electronic band structure:               tutorials/dft/electronic/band-structure.md
+                - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
+                - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
+                - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
+                - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
+                - Electronic band structure with HSE (QE): tutorials/dft/electronic/hse-qe-bs.md
+                - Electronic band gap with HSE (QE):       tutorials/dft/electronic/hse-qe-bg.md
+                - Electronic band gap with HSE (VASP):     tutorials/dft/electronic/hse-vasp-bg.md
+                - Electronic band gap with GW (VASP):      tutorials/dft/electronic/gw-vasp-bg.md
+            - Vibrational Prop.:
+                - Overview:                              tutorials/dft/vibrational/overview.md
+                - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
+                - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
+                - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
+            - Thermodynamic Prop.:
+                - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
+            - Chemical Prop.:
+                - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
+                - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
+            - Add-ons:
+                - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
+                - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
+        - General Functionality:
+            - Restart from Previous Job:             tutorials/other/restart-job.md
+        - Materials:
+            - Overview:                              tutorials/materials/overview.md
+            - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
+            - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
+            - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
 
 
 # TUTORIALS AND EXAMPLES
@@ -616,12 +683,8 @@ nav:
 #        # - Semiconductors:
 #        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
 #        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
-#        - Pseudopotential DFT:
+
 #            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
-#            - Electronic band structure:                tutorials/dft/band-structure.md
-#            - Electronic band gap:                      tutorials/dft/band-gap.md
-#            - Electronic density of states:             tutorials/dft/density-of-states.md
-#            - Electronic density mesh:                  tutorials/dft/electronic-density-mesh.md
 #            - Zero point energy:                        tutorials/dft/zero-point-energy.md
 #            - Structural relaxation:                    tutorials/dft/relaxation.md
 #            - K-point convergence:                      tutorials/dft/kpt-convergence.md

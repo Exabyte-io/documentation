@@ -22,6 +22,10 @@ Depending on these atomic coordinates, finite [inter-atomic forces](atomic-force
 
 The ratio of an element in a compound or alloy describes the fraction of all atoms present in the crystal structure which are constituted by that particular element.
 
+## Atomic Constraints
+
+The Atomic Constraints or Selective Dynamics, specifying the constraints on the movement of atoms, can be set in the [basis editor](../../materials-designer/source-editor/basis.md) of [Materials Designer](../../materials-designer/overview.md), as three-dimensional boolean vector appending to the atom position. For example, "Si 0.25 0.25 0.25 1 0 1" freezes the movement of "Si" along the "Y" direction.
+
 ## Schema 
 
 The JSON schema and an example representation for the properties described in this page can be found for each of the [basis](../../properties/data/list.md#basis), [atomic elements](../../properties/data/list.md#atomic-elements), [atomic positions](../../properties/data/list.md#atomic-coordinates) and [elemental ratio](../../properties/data/list.md#elemental-ratio).
