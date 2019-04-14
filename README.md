@@ -41,7 +41,13 @@ For quick installation:
     sh ./scripts/download_images.sh
     ```
 
-6. Start mkdocs server (after sourcing virtual environment):
+6. Set the documentation directory:
+
+    ```bash
+    export DOCS_dir="lang/ja/docs"
+    ```
+
+7. Start mkdocs server (after sourcing virtual environment):
 
     ```bash
     mkdocs serve

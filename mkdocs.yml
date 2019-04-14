@@ -1,3 +1,6 @@
+# get docs dir from the environment. Defaults to lang/en/docs.
+docs_dir: !!python/object/apply:os.getenv ["DOCS_DIR", "lang/en/docs"]
+
 site_name: Exabyte.io Documentation
 site_url: https://docs.exabyte.io
 site_description: Documentation for the users of Exabyte.io materials modeling platform.
