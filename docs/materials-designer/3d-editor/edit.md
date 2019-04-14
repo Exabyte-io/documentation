@@ -49,4 +49,4 @@ The user can exit the editor either by pressing the escape key, or by selecting 
 
 [^1]: [The Three.js Javacript 3D Library](https://threejs.org)
 
-[^2]: [The Three.js Editor](https://threejs.org)
+[^2]: [The Three.js Editor](https://threejs.org/editor)
