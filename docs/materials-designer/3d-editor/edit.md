@@ -47,6 +47,6 @@ The user can exit the editor either by pressing the escape key, or by selecting 
 
 ## Links
 
-[^1]: [The three.js Javacript 3D Library](https://threejs.org/editor)
+[^1]: [The Three.js Javacript 3D Library](https://threejs.org)
 
-[^2]: [Wikipedia Three.js, Website](https://en.wikipedia.org/wiki/Three.js)
+[^2]: [The Three.js Editor](https://threejs.org)
