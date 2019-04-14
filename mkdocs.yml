@@ -354,7 +354,7 @@ nav:
             - Overview:                                 materials-designer/source-editor.md
             - Lattice Editor:                           materials-designer/source-editor/lattice.md
             - Basis Editor:                             materials-designer/source-editor/basis.md
-        - 3D Editor:
+        - 3D Viewer/Editor:
             - Overview:                                 materials-designer/3d-editor.md
             - View Options:                             materials-designer/3d-editor/view.md
             - Edit Options:                             materials-designer/3d-editor/edit.md
