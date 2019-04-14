@@ -12,9 +12,9 @@ Another important concept within the realm of reciprocal space is that of the Br
 
 ## Some important properties
 
-The properties below are frequently used in the computational studies of crystalline materials:
+The properties below are frequently considered in the computational studies of crystalline materials:
 
-- [reciprocal space sampling](reciprocal-space/sampling.md)
+- reciprocal space [sampling](reciprocal-space/sampling.md) and [convergence studies](reciprocal-space/convergence.md)
 - [reciprocal paths](reciprocal-space/paths.md)
 
 ## Links

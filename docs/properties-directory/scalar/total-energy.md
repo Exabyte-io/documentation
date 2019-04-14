@@ -24,21 +24,19 @@ It is presented to the user, as part of the output of a [Job](../../jobs/overvie
 
 The Total Energy of a Material is comprised of several **Energy Contributions**. They are returned as a list of [Scalar and Auxiliary](../../properties/classification/general.md) quantities.
 
-## Types of Contributions
+### Example Contributions in DFT
 
 Specific types of energy contributions are commonly encountered in [DFT](../../models-directory/dft/overview.md) computations [^1], [^2]. The types included in the final results depend specifically on the modeling [application](../../software/components.md) employed, as explained in what follows.
 
 The reader is referred to the links presented at the bottom of the page for a theoretical review of the energy contributions presented herein.
 
-## By Application
-
-### Generic
+#### Generic Applications
 
 The following contributions, displayed in the image below, are computed and returned to the user under the [Results Tab](../../jobs/ui/results-tab.md) of [Job Viewer](../../jobs/ui/viewer.md), for the cases of both [VASP](../../software-directory/modeling/vasp/overview.md) and [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) calculations. In all instances, the results are returned in units of eV.
 
 ![Common Contributions](../../images/properties-directory/common-contributions.png "Common Contributions")
 
-### Quantum ESPRESSO
+#### Quantum ESPRESSO
 
 Two additional energy contributions can be evaluated with Quantum ESPRESSO-based Workflows: the "One-electron" and "Harris-Foulkes" contributions [^3]. They are both returned as values expressed in eV, in a similar format to the other properties listed in the above image. 
 

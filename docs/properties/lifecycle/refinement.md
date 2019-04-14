@@ -16,7 +16,7 @@ We categorize the various degrees of refinement of extracted Materials propertie
 
 "Refined" properties include those properties which are **physically meaningful**. By meaningful we mean that their values are directly comparable with **Experiments**, and are not influenced by an arbitrary choice of computational input parameters and other unphysical artifices. 
 
-### Non-Refinable Properties
+### Non-Refinable Property Example
 
 For the case of the [pseudopotential DFT model](../../models-directory/dft/overview.md) the **[Fermi Energy](../../properties-directory/scalar/total-energy.md)**, for example, is excluded from being classed as Refined, and therefore remains treated as Raw. This is due to the fact that its absolute value makes no physical meaning, but rather depends heavily on the choice of the pseudopotential, on the Exchange-correlation functional approximation, and on other computational [methods](../../methods/overview.md) being employed.
 

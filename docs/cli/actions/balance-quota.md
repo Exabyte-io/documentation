@@ -82,8 +82,16 @@ Information about all jobs submitted by the user to date can be retrieved as exp
 
 ## Storage Quota
 
-Information about the [Storage Quota](../../accounts/quota.md) within the available [computing clusters](../../infrastructure/clusters/overview.md) can be retrieved via the `quota` command.
+Information about the [Storage Quota](../../accounts/quota.md) within the available [computing clusters](../../infrastructure/clusters/overview.md) can be retrieved via the `quotas` command. An example of output of this command is shown below.
 
-<!-- TODO:
-Wait for Mohammed to fix this command to show example of output
--->
+```bash
+>>> quotas
+USED    BSOFT    BHARD      BWARN  BGRACE    IUSED      ISOFT    IHARD    IWARN  IGRACE
+-------  -------  -------  -------  --------  -------  -------  -------  -------  --------
+6.9G     10G      10G           00  [------]  18.7k          0        0       00  [------]
+```
+
+This output contains information about the used storage space under the first column. We don't allow for "soft" quotas (under "BSOFT" column) for temporarily exceeding the maximum allowed limit, hence "soft" and "hard" quotas match to the same total limit value, and no "Grace" period is available. The remaining columns starting with "I" concern the compute nodes as opposed to the clusters.
+
+!!!warning "Authorization Required to Access Clusters via CLI"
+    In order to use the `quotas` command, the user needs to first access the clusters via SSH. Please [submit a support request](../../ui/support.md) for gaining the necessary permissions to do this.
