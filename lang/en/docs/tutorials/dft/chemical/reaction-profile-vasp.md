@@ -74,7 +74,7 @@ The constrained **Interpolated Set** generated in [this other tutorial](../../ma
 
 ## Create and Submit Job
 
-The same set of instructions as in the [alternative NEB tutorial](reaction-profile-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting and adding it](../../../jobs-designer/actions-header-menu/select-workflow.md) into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
+The same set of instructions as in the [alternative NEB tutorial](reaction-profile-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB [workflow](../../../workflows/overview.md) from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting and adding it](../../../jobs-designer/actions-header-menu/select-workflow.md) into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
 
 ## Animation
 
