@@ -13,7 +13,7 @@ This example considers a simple activated reaction, consisting in the **collinea
 H2 + H  <==>  H + H2
 ```
 
-In this triatomic reaction, the middle H atom breaks the bond with first atom and forms a molecule with third atom. We will thus calculate the energy activation barrier of this reaction.
+In this triatomic reaction, the middle H atom breaks the bond with first atom and forms a molecule with third atom. We will thus calculate the energy activation barrier of this reaction. This same example is also offered as part of the Quantum ESPRESSO online documentation [^1]. 
 
 ## Workflow Structure
 
@@ -21,7 +21,7 @@ We outline here some important aspects of the [Workflow](../../../workflows/over
 
 ### Main Executable
 
-NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable](../../../software-directory/modeling/quantum-espresso/components.md#executables). The input parameters for this executable are described in Ref. [^4] of [this page](../../../software-directory/modeling/quantum-espresso/components.md), and can be customized by the user via the [unit input template editor](../../../workflow-designer/unit-editor.md#unit-input-templates) within the [Workflow Designer Interface](../../../workflow-designer/overview.md). 
+NEB calculations are performed through the ["neb.x" Quantum ESPRESSO Executable](../../../software-directory/modeling/quantum-espresso/components.md#executables). The input parameters for this executable are described in Ref. 4 of [this page](../../../software-directory/modeling/quantum-espresso/components.md), and can be customized by the user via the [unit input template editor](../../../workflow-designer/unit-editor.md#unit-input-templates) within the [Workflow Designer Interface](../../../workflow-designer/overview.md). 
 
 ### Broyden Algorithm
 
@@ -41,18 +41,20 @@ The NEB simulation stops when the error (the norm of the force orthogonal to the
 
 Atomic positions for all the images are specified within the `BEGIN_POSITIONS / END_POSITIONS` delimiters, where each instance of `ATOMIC_POSITIONS` card is prefixed either by `FIRST_IMAGE`, `INTERMEDIATE_IMAGE`, or `LAST_IMAGE` keywords, depending on its position within the overall order of the interpolated set under consideration.
 
-## Create Job and Choose Workflow
+## Create Job 
 
 We start with [opening](../../../jobs/actions/create.md) an instance of the [Job Designer Interface](../../../jobs-designer/overview.md) for creating and designing new computational [Jobs](../../../jobs/overview.md) on our platform.
+    
+## Import Interpolated Set
+
+The **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB CONSTRAINED SET", containing the initial, final and a total of 3 intermediate images of the H3 molecule under investigation (including atomic constraints along the single dimension of the molecule), should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
+
+## Choose Workflow
 
 [Workflows](../../../workflows/overview.md) for calculating the reaction energy profile of chemical molecules via NEB with [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/workflow-tab.md).
 
 !!!warning "Size of grid of k-points"
     The user should take care to set the size of the [grid of reciprocal k-points (kgrid)](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 1 x 1 x 1 under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md), since we are presently dealing with single molecules as opposed to periodic crystalline structures.
-    
-## Import Interpolated Set
-
-The **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB CONSTRAINED SET", containing the initial, final and a total of 3 intermediate images of the H3 molecule under investigation (including atomic constraints along the single dimension of the molecule), should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
 
 ## Submit Job
 
@@ -66,13 +68,17 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 ![Reaction Energy Profile](../../../images/tutorials/reaction-profile.png "Reaction Energy Profile")
 
+## Retrieve Final Optimized Images
+
+The final optimized image structures can be retrieved at the end of Job execution according to the instructions contained [in this page](../../../workflows/addons/structural-relaxation.md#initial/final-structures-set).
+
 ## Animations
 
 ### NEB with Manually-Generated Images
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an NEB-based reaction energy profile computation on H3 molecules using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. 
 
-Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^1]).
+Here, we have made use of the constrained interpolated set containing 3 intermediate images generated manually in a [separate tutorial](../../materials/interpolated-sets.md). It can be deduced from the final result for the energy reaction profile that the size of the activation barrier in this case is of 0.2 eV. This result is in good agreement with those published in the literature for the same collinear proton transfer chemical reaction (see for example page 26 in Ref. [^2]).
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/iNU_AxlcWs8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -90,4 +96,6 @@ This feature can be enabled by selecting an appropriate number of intermediate i
 
 ## Links
 
-[^1]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)
+[^1]: [Quantum ESPRESSO NEB Example, Official GitHub Repository](https://github.com/maxhutch/quantum-espresso/tree/master/NEB/examples/example01)
+
+[^2]: [Guido Fratesi: "Low Temperature methane-to-methanol conversion on transition metal surfaces", Ph.D Thesis](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.378.7331&rep=rep1&type=pdf)

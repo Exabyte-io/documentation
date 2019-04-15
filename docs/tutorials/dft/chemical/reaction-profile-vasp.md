@@ -66,15 +66,15 @@ IMAGES = 1
 Additional information on further possible input parameters available for VASP NEB calculations can be retrieved in Ref. [^4].
 
 !!!note "Redundant "number of intermediate images" option"
-    The number of intermediate images under "Important Settings" is not used at present for VASP. It will be enabled when support will be added for generating images automatically on our platform.                                          
+    The number of intermediate images under "Important Settings" is not used at present for VASP. It will be enabled when support will be added for generating images automatically on our platform.  
+    
+## Import Interpolated Set
+
+The constrained **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB CONSTRAINED SET", containing the initial, final and a total of 3 intermediate images of the H3 molecule under investigation, should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB VASP job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.                                        
 
 ## Create and Submit Job
 
 The same set of instructions as in the [alternative NEB tutorial](reaction-profile-qe.md#create-job-and-choose-workflow) should now be followed for [importing](../../../workflows/actions/copy-bank.md) the relevant VASP NEB workflow from the [bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md), and for later [selecting and adding it](../../../jobs-designer/actions-header-menu/select-workflow.md) into the new [Job](../../../jobs/overview.md) being [designed](../../../jobs-designer/overview.md).
-
-## Import Interpolated Set
-
-The constrained **Interpolated Set** generated in [this other tutorial](../../materials/interpolated-sets.md) under the name "NEB CONSTRAINED SET", containing the initial, final and a total of 3 intermediate images of the H3 molecule under investigation, should then be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) into the ["Materials Viewer" Tab](../../../jobs-designer/materials-tab.md) of the NEB VASP job being [designed](../../../jobs-designer/overview.md). This is done by [selecting](../../../entities-general/actions/select.md) all images contained in the set at the moment of import.
 
 ## Animation
 
