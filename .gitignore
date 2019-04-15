@@ -13,3 +13,4 @@ py-googletrans
 secrets.json
 credentials.json
 *.py[cod]
+lang/en/docs/images/
