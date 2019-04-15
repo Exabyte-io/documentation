@@ -41,7 +41,13 @@ For quick installation:
     sh ./scripts/download_images.sh
     ```
 
-6. Start mkdocs server (after sourcing virtual environment):
+6. Set the documentation directory:
+
+    ```bash
+    export DOCS_dir="lang/ja/docs"
+    ```
+
+7. Start mkdocs server (after sourcing virtual environment):
 
     ```bash
     mkdocs serve
@@ -417,17 +423,43 @@ Follow the below instructions to upload/update a tutorial video:
 
 3. In metadata file, `descriptionLinks` is a list of links which are added to video description. See [description template](video-description.jinja) for more details.
 
-4. Run the below command to upload/update the video once metadata is ready:
+4. Run the below command to add voice to the video:
 
 ```bash
-source .virtualenv/bin/activate
-python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA
+python video-manager.py voiceover --file PATH_TO_ORIGINAL_VIDEO --metadata PATH_TO_METADATA --audio PATH_TO_SAVE_AUDIO --output PATH_TO_SAVE_NEW_VIDEO
 ```
 
-5. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
+5. Retry step 4 with adjusted `youTubeCaptions` data until the optimal outcome is achieved.
+
+6. Run the below command to upload/update the video once metadata is ready:
 
 ```bash
-python video-manager.py -f PATH_TO_VIDEO -m PATH_TO_METADATA -p public
+python video-manager.py upload --file PATH_TO_VIDEO --metadata PATH_TO_METADATA
 ```
 
-6. Commit the new changes to metadata file such as `youTubeId`.
+7. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
+
+```bash
+python video-manager.py update --file PATH_TO_VIDEO --metadata PATH_TO_METADATA --privacyStatus public
+```
+
+8. Commit the new changes to metadata file such as `youTubeId` and push.
+
+### Translating to Other Languages
+
+Use `translate.py` script to generate translated docs using Google API:
+
+```bash
+python translate.py -t 100
+```
+
+See script source for options.
+
+#### Notes
+
+Regular Expressions for renaming image links in WebStorm:
+
+```regexp
+/ images / (\w+) /    <- contains a space as the final character
+/images/$1/
+``` 

@@ -25,7 +25,7 @@ THIS_SCRIPT_DIR=$(get_script_dir)
 FILE_SERVER="http://files.exabyte.io"
 FILE_DIR="uploads"
 
-LOCAL_DIRNAME="${THIS_SCRIPT_DIR}/../docs/"
+LOCAL_DIRNAME="${THIS_SCRIPT_DIR}/../lang/en/docs/"
 REMOTE_DIRNAME="images"
 
 cat > tmp.files.key <<EOF
