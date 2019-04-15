@@ -49,3 +49,18 @@ def flatten(data):
     else:
         list_.append(data)
     return list_
+
+
+def caption_time_to_milliseconds(caption_time):
+    """
+    Converts caption time with HH:MM:SS.MS format to milliseconds.
+
+    Args:
+        caption_time (str): string to convert
+
+    Returns:
+         int
+    """
+    ms = caption_time.split('.')[1]
+    h, m, s = caption_time.split('.')[0].split(':')
+    return (int(h) * 3600 + int(m) * 60 + int(s)) * 1000 + int(ms)

@@ -1,3 +1,6 @@
+# get docs dir from the environment. Defaults to lang/en/docs.
+docs_dir: !!python/object/apply:os.getenv ["DOCS_DIR", "lang/en/docs"]
+
 site_name: Exabyte.io Documentation
 site_url: https://docs.exabyte.io
 site_description: Documentation for the users of Exabyte.io materials modeling platform.
@@ -354,7 +357,7 @@ nav:
             - Overview:                                 materials-designer/source-editor.md
             - Lattice Editor:                           materials-designer/source-editor/lattice.md
             - Basis Editor:                             materials-designer/source-editor/basis.md
-        - 3D Editor:
+        - 3D Viewer/Editor:
             - Overview:                                 materials-designer/3d-editor.md
             - View Options:                             materials-designer/3d-editor/view.md
             - Edit Options:                             materials-designer/3d-editor/edit.md

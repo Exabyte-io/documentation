@@ -4,9 +4,14 @@ We review below the **elemental information** stored on our database and associa
 
 We assembled the data using the open-source Ref. [^1] below.
 
-```json
-{!../docs/extra/periodic-table.json!}
-```
+<details markdown="1">
+  <summary>
+     Expand to view
+  </summary> 
+    
+    {!../lang/en/docs/extra/periodic-table.json!}
+
+</details>
 
 ## Links
 
