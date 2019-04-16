@@ -8,10 +8,13 @@
             "...": "../../../metadata/general.json#/tags"
         },
         {
-            "...": "../../../models-directory/dft/metadata.json#/tags"
+            "...": "../../../models-directory/dft.json#/tags"
         },
         {
-            "...": "../../../software-directory/modeling/quantum-espresso/quantum-espresso.json#/tags"
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
         }
     ],
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
@@ -35,6 +38,21 @@
             "text": "Then set the name for the job and save it",
             "startTime": "0:00:23.000",
             "endTime": "0:00:25.000"
+        },
+        {
+            "text": "Then select the job and submit it to the compute queue",
+            "startTime": "0:00:36.000",
+            "endTime": "0:00:42.000"
+        },
+        {
+            "text": "Following the end of job execution, open the job to inspect the final results",
+            "startTime": "0:00:46.000",
+            "endTime": "0:00:54.000"
+        },
+        {
+            "text": "The final result for the band gap is shown towards the bottom of the results page",
+            "startTime": "0:00:54.000",
+            "endTime": "0:01:04.000"
         }
     ],
     "youTubeId": "gn4Hi_im4So"
