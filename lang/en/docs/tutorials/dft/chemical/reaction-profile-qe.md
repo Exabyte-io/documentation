@@ -90,9 +90,6 @@ In this second animation below, we repeat the same reaction profile calculation 
 
 This feature can be enabled by selecting an appropriate number of intermediate images to be generated under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md), as demonstrated in the animation where we select to generate a total of 5 intermediate images. In this case, only the initial and final images need to be imported manually into Job Designer.
 
-<div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/DlwPZmcpQ48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ## Links
 
