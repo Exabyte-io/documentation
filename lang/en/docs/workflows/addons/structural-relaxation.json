@@ -1,6 +1,6 @@
 {
     "tags": [
-        "cell"
+        "cell",
         "geometry",
         "lattice",
         "mechanical",
@@ -10,6 +10,6 @@
         "structural",
         "tensor",
         "variable",
-        "vc-relax",
+        "vc-relax"
     ]
 }
