@@ -1,11 +1,16 @@
 {
     "tags": [
-        "complete",
-        "continue",
-        "interruption",
-        "relaunch",
+        "complete calculation",
+        "continue calculation",
+        "interrupted calculation",
+        "relaunch calculation",
+        "restart calculation",
+        "resume calculation",
+        "complete job",
+        "continue job",
+        "interrupted job",
+        "relaunch job",
         "restart job",
-        "restarting",
-        "resume"
+        "resume job"
     ]
 }
