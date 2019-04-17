@@ -20,39 +20,49 @@
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
     "youTubeCaptions": [
         {
-            "text": "Create a simulation job by navigating to the job designer page",
+            "text": "Electronic Band Gap tutorial. Create a simulation job, by navigating to the job designer page.",
             "startTime": "00:00:00.000",
-            "endTime": "00:00:04.000"
+            "endTime": "00:00:06.000"
         },
         {
-            "text": "Open workflow explorer and select Band Gap workflow",
-            "startTime": "0:00:06.000",
-            "endTime": "0:00:09.000"
+            "text": "Open workflow tab, and select Band Gap workflow.",
+            "startTime": "0:00:08.000",
+            "endTime": "0:00:15.000"
         },
         {
-            "text": "Navigate to compute tab and set compute configuration",
-            "startTime": "0:00:16.000",
-            "endTime": "0:00:19.000"
+            "text": "Navigate to compute tab, and set compute configuration.",
+            "startTime": "0:00:19.000",
+            "endTime": "0:00:23.000"
         },
         {
-            "text": "Then set the name for the job and save it",
-            "startTime": "0:00:23.000",
-            "endTime": "0:00:25.000"
+            "text": "Then set the name for the job, and save it. In this case, we call the job Silicon Band Gap Calculation.",
+            "startTime": "0:00:26.000",
+            "endTime": "0:00:32.000"
         },
         {
-            "text": "Then select the job and submit it to the compute queue",
+            "text": "Then save the job. Afterwards, the job can be selected, and submitted to the compute queue, in order to be executed.",
             "startTime": "0:00:36.000",
-            "endTime": "0:00:42.000"
+            "endTime": "0:00:44.000"
         },
         {
-            "text": "Following the end of job execution, open the job to inspect the final results",
+            "text": "The status of the job will accordingly change from submitted to active.",
             "startTime": "0:00:46.000",
+            "endTime": "0:00:50.000"
+        },
+        {
+            "text": "Following the end of job execution, open the job to inspect the final results.",
+            "startTime": "0:00:52.000",
             "endTime": "0:00:54.000"
         },
         {
-            "text": "The final result for the band gap is shown towards the bottom of the results page",
-            "startTime": "0:00:54.000",
+            "text": "After reviewing the preliminary information displayed on top, the final result for the band gap can be found towards the bottom of the results page.",
+            "startTime": "0:00:56.000",
             "endTime": "0:01:04.000"
+        },
+        {
+            "text": "Thank you for your attention, goodbye!",
+            "startTime": "0:01:06.000",
+            "endTime": "0:01:10.000"
         }
     ],
     "youTubeId": "gn4Hi_im4So"
