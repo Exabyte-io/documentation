@@ -3,10 +3,6 @@
 .idea
 .virtualenv*
 tmp/
-scripts/*mp4
-scripts/mp4/
-scripts/*gif
-scripts/gif/
 py-googletrans
 oauth-key.json
 oauth-credentials.json
