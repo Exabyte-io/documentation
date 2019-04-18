@@ -1,6 +1,6 @@
 mkdocs==1.0.4
 pymdown-extensions==6.0
-mkdocs-material>=2.8.0
+mkdocs-material==4.1.1
 exabyte_json_include==2.0.0
 google-api-python-client==1.7.8
 oauth2client==4.1.3
