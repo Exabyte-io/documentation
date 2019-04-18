@@ -1,7 +1,6 @@
-# Exabyte Public Documentation
+# Exabyte.io Documentation
 
-This repository holds public documentation for exabyte.io. 
-Currently deployed version is available at [this link](http://docs.exabyte.io).
+Exabyte.io is an cloud-native accessible and collaborative environment for materials modeling from nanoscale. With the help of the platform, users can design new materials online and predict the properties of these materials using simulations. The present documentation explains how the platform works in details. Currently deployed version is available at [this link](http://docs.exabyte.io).
 
 ## Setup
 
