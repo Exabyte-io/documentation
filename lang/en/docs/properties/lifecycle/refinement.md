@@ -6,7 +6,7 @@ The computed [Raw properties](../classification/general.md) of Materials collect
 
 We categorize the various degrees of refinement of extracted Materials properties as **Raw**, **Refined** and **Best**, in an order of ascending evolution and reliability. These concepts are portrayed in the summary diagram below, in a sequential logical order, where the refinement process has been highlighted in orange. 
 
-![Refinement](../../images/Properties/refinement.png "Refinement")
+![Refinement](../../images/properties/refinement.png "Refinement")
 
 ## Raw Properties
 
