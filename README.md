@@ -338,7 +338,8 @@ The following list of words should be avoided:
 - Automatically
 - Finally
 
-### Uploading/Updating Tutorial Videos
+### Exabyte Developers Only
+#### Uploading/Updating Tutorial Videos
 
 Follow the below instructions to upload/update a tutorial video:
 
@@ -370,7 +371,7 @@ python video-manager.py update --file PATH_TO_VIDEO --metadata PATH_TO_METADATA 
 
 8. Commit the new changes to metadata file such as `youTubeId` and push.
 
-### Translating to Other Languages
+#### Translating to Other Languages
 
 Use `translate.py` script to generate translated docs using Google API:
 
@@ -378,11 +379,7 @@ Use `translate.py` script to generate translated docs using Google API:
 python translate.py -t 100
 ```
 
-See script source for options.
-
-#### Notes
-
-Regular Expressions for renaming image links in WebStorm:
+See script source for options. Use the below regex to fix image links in WebStorm once translation is done:
 
 ```regexp
 / images / (\w+) /    <- contains a space as the final character
