@@ -9,7 +9,7 @@ We assembled the data using the open-source Ref. [^1] below.
      Expand to view
   </summary> 
     
-    {!../lang/en/docs/extra/periodic-table.json!}
+    {!../periodic-table.json!}
 
 </details>
 
