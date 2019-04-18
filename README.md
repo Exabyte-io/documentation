@@ -198,7 +198,7 @@ Use **ONLY RELATIVE** paths starting from the current page, not the absolute one
 Images (.png, .gif) are stored inside [images](images) directory and are automatically hosted on Git LFS. 
 This is an acceptable way to contribute images, as long as the size is kept small (below 1Mb each) in order to avoid exceeding Github LFS quota.
 
-> Note: Do NOT put videos inside this directory!
+> Note: Do NOT put videos inside this directory! Upload the video into your preferred online storage system such as Google Drive, DropBox, or YouTube, and share its link with us to review and put it up online.
 
 #### Including Images
 
