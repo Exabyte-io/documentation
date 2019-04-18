@@ -1,12 +1,7 @@
-# Exabyte public documentation
+# Exabyte Public Documentation
 
-This repo holds public documentation for exabyte.io. Currently deployed version is available at [this link](http://docs.exabyte.io) (you will need to be logged in at platform.exabyte.io to try).
-
-Uses [MkDocs](http://www.mkdocs.org/#getting-started) to convert Markdown files (*.md) in `docs/` directory into static html.
-
-[Mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme is used, with additional css added in extra files.
-
-> NOTE: tested and developed with mkdocs version 1.0.4. See "requirements.txt" for more info.
+This repository holds public documentation for exabyte.io. 
+Currently deployed version is available at [this link](http://docs.exabyte.io).
 
 ## Setup
 
@@ -35,19 +30,13 @@ For quick installation:
     git submodule update --init
     ```
 
-5. Download images:
-
-    ```bash
-    sh ./scripts/download_images.sh
-    ```
-
-6. Set the documentation directory:
+5. Set the documentation directory if plan to use other languages than english:
 
     ```bash
     export DOCS_dir="lang/ja/docs"
     ```
 
-7. Start mkdocs server (after sourcing virtual environment):
+6. Start mkdocs server (after sourcing virtual environment):
 
     ```bash
     mkdocs serve
@@ -57,62 +46,7 @@ You should have the documentation up and running at `http://localhost:8000`
 
 ## Development
 
-### Including Images
-
-Do NOT push images to this repository with git. 
-
-(Some) Images (screenshots) are kept separately at http://files.exabyte.io:18/uploads/images/ and synchronized into `./docs/images` folder through running:
-
-```bash
-sh ./scripts/download_images.sh
-```
-
-or
-
-```bash
-sh ./scripts/upload_images.sh
-```
-
-Some images are included with git-lfs. This is an acceptable way to contribute images, as long as the size is kept small (below 1Mb each) in order to avoid exceeding Github LFS quota.
-
-### Adjusting styles and sources
-
-The default [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme is extended, with additional css and javascript inside [docs/extra](docs/extra/) folder. Any new files shall go into the same folder and shall be added to the corresponding section of [mkdocs.yml](mkdocs.yml).
-
-
-## Notes on Object-Oriented Design 
-
-We embrace Object Oriented Design (OOD) principles when structuring the documentation. The rationale for adhering to the above OOP principles is mainly to avoid unnecessary repetitions of the same explanations in multiple different places, and thus to make the documentation easily expandable or modifiable in the future when new features will be added/changed.
-
-### OOD Principles
-
-- **Encapsulation**: each topic should be encapsulated in its own section, meaning that it should be **isolated** from the rest of the documentation content, with the latter linking to a single original source. See the folder structure and the explanation of [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, for example.
-
-- **Abstraction**: general concepts shared by multiple specific implementations shall be explained separately from the implementations themselves. See [method](docs/methods/overview.md) and [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, explanation, for example.
-
-- **Inheritance**: specific pages should inherit most of their contents from the general pages explained at the top level of a section. See example mentioned in the previous point.
-
-> Example:
-> 
-> "All humans have two hands and two legs, which is a general and abstract property. However only a small fraction of these humans have blond hair, which is a special property. When you explain blond hair in its own specialized and encapsulated documentation page, you should not need to repeat that blond people have two legs and two hands, since such abstract concepts will be inherited from the top level page explaining the basic general physiology common to ALL humans, including blonds"
-
-### Typical Structure of Documentation Sections
-
-Some pages/sections appear recurrently in most documentation sections. Below is a list of the most common ones, with a brief explanation:
-
-- **overview**: page with introduction to the contents of the present section (containing one *clickable/linked sub-header* for each main topic discussed in section). Should be present both at top level of each section, and within each of its main sub-sections.
-
-- **ui**: section describing the user interface implementation of concepts (to should be explained separately).
-
-- **data**: section containing JSON structured representations for the entities treated in the present section.
-
-- **actions**: section describing the actions (such as open, edit, delete etc) related to the concepts under discussion.
-
-### Directory Pattern
-
-When there are multiple implementations of a particular concept, we apply a "Directory Pattern", where the concept is explained separately, and then the multiple implementations of the concept are organized into a directory. See [method](docs/methods/overview.md) and [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, explanation, for example.
-
-## Basic Guidelines
+[MkDocs](http://www.mkdocs.org/#getting-started) is used to convert Markdown files (*.md) into static html and [is configured](mkdocs.yml) to use [Mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme.
 
 ### Formatting Styles
 
@@ -164,7 +98,6 @@ Leave more than one empty line (2-3) when "coming back" to higher-level header f
 ...
 ```
 
-
 #### Admonition Styles
 
 There are multiple [admonition](https://squidfunk.github.io/mkdocs-material/extensions/admonition/) classes available in MKDocs: tip (green), warning (orange), error (red), note (blue), and many others. To insert them in documentation pages, enter them with the following style:
@@ -178,7 +111,6 @@ is rendered into:
 
 !!!tip "Unused credits"
     All unused credits automatically roll over into the next validity period.
-
 
 #### Expandable Sections
 
@@ -208,7 +140,6 @@ is rendered into:
 
 Please note the `markdown=1` tag, without it the content of the `<details>` tag will not be processed appropriately. Also, the two spaces before `<summary>` seem mandatory for the same purpose.
 
-
 #### ZMDI Icons
 
 Use [zmdi](http://zavoloklom.github.io/material-design-iconic-font/cheatsheet.html) icons instead of saying "click" the button with 3 stripes:
@@ -220,9 +151,6 @@ click the <i class="zmdi zmdi-check zmdi-hc-border"></i> icon
 will be rendered as: "click the <i class="zmdi zmdi-check zmdi-hc-border"></i> icon".
 
 We use the same ZMDI icon set for the main application. To find the correct ZMDI tag for an icon present on the Exabyte user interface, right click on it within your web browser and click on "Inspect Element". The ZMDI tag should be mentioned within the resulting HTML code describing the user interface.
-
-
-
 
 ### Links
 
@@ -265,10 +193,12 @@ The particular information can be found [here](../../pricing/service-levels.md#p
 
 Use **ONLY RELATIVE** paths starting from the current page, not the absolute ones.
 
-
-
-
 ### Images and Animations
+
+Images (.png, .gif) are stored inside [images](images) directory and are automatically hosted on Git LFS. 
+This is an acceptable way to contribute images, as long as the size is kept small (below 1Mb each) in order to avoid exceeding Github LFS quota.
+
+> Note: Do NOT put videos inside this directory!
 
 #### Including Images
 
@@ -325,8 +255,6 @@ Including a clickable image map is done as follows. Note that absolute paths to 
 -->
 ```
 
-
-
 ### Code Blocks
 
 #### JSON Schemas and Examples
@@ -370,8 +298,6 @@ p_{avg}=-\frac{1}{3} \mathrm{Tr} \hspace{1pt} {\boldsymbol{\sigma}}
 $$ 
 ```
 
-
-
 ### Writing Style
 
 #### Formality
@@ -412,12 +338,11 @@ The following list of words should be avoided:
 - Automatically
 - Finally
 
-
 ### Uploading/Updating Tutorial Videos
 
 Follow the below instructions to upload/update a tutorial video:
 
-1. Create a metadata file similar to the one in [here](docs/tutorials/dft/electronic/band-gap.json).
+1. Create a metadata file similar to the one in [here](lang/en/docs/tutorials/dft/electronic/band-gap.json).
 
 2. Make sure to remove `youTubeId`. This field is automatically added by the [video manager](video-manager.py) script once the video is uploaded.
 
@@ -463,3 +388,39 @@ Regular Expressions for renaming image links in WebStorm:
 / images / (\w+) /    <- contains a space as the final character
 /images/$1/
 ``` 
+
+### Extra Styles and Sources
+
+The default [mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme is extended, with additional css and javascript inside [extra](extra) folder. Any new files shall go into the same folder and shall be added to the corresponding section of [mkdocs.yml](mkdocs.yml).
+
+## Notes on Object-Oriented Design 
+
+We embrace Object Oriented Design (OOD) principles when structuring the documentation. The rationale for adhering to the above OOP principles is mainly to avoid unnecessary repetitions of the same explanations in multiple different places, and thus to make the documentation easily expandable or modifiable in the future when new features will be added/changed.
+
+### OOD Principles
+
+- **Encapsulation**: each topic should be encapsulated in its own section, meaning that it should be **isolated** from the rest of the documentation content, with the latter linking to a single original source. See the folder structure and the explanation of [pseudopotential](docs/methods-directory/pseudopotential/overview.md) method, for example.
+
+- **Abstraction**: general concepts shared by multiple specific implementations shall be explained separately from the implementations themselves. See [method](lang/en/docs/methods/overview.md) and [pseudopotential](lang/en/docs/methods-directory/pseudopotential/overview.md) method, explanation, for example.
+
+- **Inheritance**: specific pages should inherit most of their contents from the general pages explained at the top level of a section. See example mentioned in the previous point.
+
+> Example:
+> 
+> "All humans have two hands and two legs, which is a general and abstract property. However only a small fraction of these humans have blond hair, which is a special property. When you explain blond hair in its own specialized and encapsulated documentation page, you should not need to repeat that blond people have two legs and two hands, since such abstract concepts will be inherited from the top level page explaining the basic general physiology common to ALL humans, including blonds"
+
+### Typical Structure of Documentation Sections
+
+Some pages/sections appear recurrently in most documentation sections. Below is a list of the most common ones, with a brief explanation:
+
+- **overview**: page with introduction to the contents of the present section (containing one *clickable/linked sub-header* for each main topic discussed in section). Should be present both at top level of each section, and within each of its main sub-sections.
+
+- **ui**: section describing the user interface implementation of concepts (to should be explained separately).
+
+- **data**: section containing JSON structured representations for the entities treated in the present section.
+
+- **actions**: section describing the actions (such as open, edit, delete etc) related to the concepts under discussion.
+
+### Directory Pattern
+
+When there are multiple implementations of a particular concept, we apply a "Directory Pattern", where the concept is explained separately, and then the multiple implementations of the concept are organized into a directory. See [method](lang/en/docs/methods/overview.md) and [pseudopotential](lang/en/docs/methods-directory/pseudopotential/overview.md) method, explanation, for example.
