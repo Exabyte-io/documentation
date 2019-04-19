@@ -231,7 +231,7 @@ if __name__ == '__main__':
 
     # extract metadata
     metadata = parseIncludeStatements(args.metadata)
-    metadata["tags"] = flatten(metadata["tags"])
+    metadata["tags"] = list(set(flatten(metadata["tags"])))
     metadata["privacyStatus"] = metadata.get("privacyStatus", args.privacyStatus)
     metadata["descriptionLinks"] = metadata.get("descriptionLinks", []) + DESCRIPTION_LINKS
     with open(DESCRIPTION_TEMPLATE) as f:
