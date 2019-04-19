@@ -4,12 +4,6 @@ Supercell is a widely used crystallographic concept [^1]. A general theoretical 
 
 ## Theoretical Background
 
-<details markdown="1">
-  <summary>
-    Expand to view ...
-  </summary>
-
-
 ### What are supercells?
 
 A material has a crystal structure associated with it and the latter is described by a unit cell. There are an infinite number of unit cells U with different shapes and sizes which can describe the same crystal. The supercell S of unit cell U is defined as a cell which describes the same crystal, but has larger volume than cell U [^1].
@@ -55,8 +49,6 @@ $$
 transforms the primitive cell of a body-centered cubic lattice to its fully-symmetric conventional unit cell.
  
 Another particular case of the transformation is a diagonal form $P_{i\neq j}=0$ of the matrix. This type of transformation is referred to as diagonal supercell expansion, and can be interpreted as a simple repetition of the initial cell over its crystallographic axes.
-
-</details>
 
 ## The Generate Dialog
 
