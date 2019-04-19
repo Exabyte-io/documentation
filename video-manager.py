@@ -232,6 +232,8 @@ if __name__ == '__main__':
     # extract metadata
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = list(set(flatten(metadata["tags"])))
+    tags_length = len(" ".join(metadata["tags"]))
+    if tags_length > 500: exit("Too Many Tags ({})! The limit is 500 Characters!".format(tags_length))
     metadata["privacyStatus"] = metadata.get("privacyStatus", args.privacyStatus)
     metadata["descriptionLinks"] = metadata.get("descriptionLinks", []) + DESCRIPTION_LINKS
     with open(DESCRIPTION_TEMPLATE) as f:
