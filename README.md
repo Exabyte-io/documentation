@@ -1,6 +1,6 @@
 # Exabyte.io Documentation
 
-[Exabyte.io](https://exabyte.io/) is a computational platform for the development of new materials and chemicals. The present documentation explains how the [platform](https://platform.exabyte.io/) works in details. Currently deployed version of the decomentation is available at [this link](http://docs.exabyte.io).
+[Exabyte.io](https://exabyte.io/) is a computational platform for the development of new materials and chemicals. The present documentation explains how the [platform](https://platform.exabyte.io/) works in details. Currently deployed version of the documentation is available at [this link](http://docs.exabyte.io).
 
 ## Setup
 
