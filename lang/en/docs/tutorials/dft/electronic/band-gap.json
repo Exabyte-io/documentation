@@ -11,10 +11,7 @@
             "...": "../../../models-directory/dft/metadata.json#/tags"
         },
         {
-            "...": "../../../software-directory/modeling/quantum-espresso/metadata.json#/tags"
-        },
-        {
-            "...": "../../../software-directory/modeling/quantum-espresso/metadata.json#/tags"
+            "...": "../../../software-directory/modeling/quantum-espresso/quantum-espresso.json#/tags"
         }
     ],
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
