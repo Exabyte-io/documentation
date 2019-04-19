@@ -141,7 +141,7 @@ def create_svb_caption_content(metadata_):
     """
     regex = re.compile(r'<.*?>')
     caption_to_text = lambda c: "".join((c["startTime"], ",", c["endTime"], "\n", regex.sub('', c["text"])))
-    return [caption_to_text(caption) for caption in metadata_["youTubeCaptions"]]
+    return "\n\n".join([caption_to_text(caption) for caption in metadata_["youTubeCaptions"]])
 
 
 def insert_caption(youtube_, youTubeId_, name, content):
@@ -163,7 +163,7 @@ def insert_caption(youtube_, youTubeId_, name, content):
                 "videoId": youTubeId_
             }
         },
-        media_body=MediaInMemoryUpload("\n".join(content))
+        media_body=MediaInMemoryUpload(content)
     )
     return request.execute()
 
@@ -231,7 +231,9 @@ if __name__ == '__main__':
 
     # extract metadata
     metadata = parseIncludeStatements(args.metadata)
-    metadata["tags"] = flatten(metadata["tags"])
+    metadata["tags"] = list(set(flatten(metadata["tags"])))
+    tags_length = len(" ".join(metadata["tags"]))
+    if tags_length > 500: exit("Too Many Tags ({})! The limit is 500 Characters!".format(tags_length))
     metadata["privacyStatus"] = metadata.get("privacyStatus", args.privacyStatus)
     metadata["descriptionLinks"] = metadata.get("descriptionLinks", []) + DESCRIPTION_LINKS
     with open(DESCRIPTION_TEMPLATE) as f:
