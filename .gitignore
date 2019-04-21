@@ -6,3 +6,4 @@ tmp/
 py-googletrans
 *.py[cod]
 scripts/*
+oauth-credentials.json
