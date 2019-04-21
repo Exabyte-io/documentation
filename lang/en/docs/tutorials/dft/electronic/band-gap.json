@@ -3,6 +3,7 @@
         "Calculate Electronic Band Gap: https://docs.exabyte.io/tutorials/dft/electronic/band-gap/"
     ], 
     "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
@@ -17,7 +18,6 @@
             "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
         }
     ], 
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
     "youTubeCaptions": [
         {
             "text": "Electronic Band Gap tutorial.", 
@@ -70,5 +70,5 @@
             "startTime": "0:01:00.500"
         }
     ], 
-    "youTubeId": ""
+    "youTubeId": "3_eIa9gtG5s"
 }
