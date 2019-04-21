@@ -26,7 +26,7 @@ THIS_SCRIPT_DIR=$(get_script_dir)
 # Print usage
 #
 usage () {
-    echo "optimize_png.sh [-o{2-7}] -i=image.png"
+    echo "optimize-png.sh [-o{2-7}] -i=image.png"
     exit 1
 }
 
