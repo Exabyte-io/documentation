@@ -4,10 +4,5 @@
 .virtualenv*
 tmp/
 py-googletrans
-oauth-key.json
-oauth-credentials.json
-service-account-key.json
 *.py[cod]
-scripts/mp4/*.mp4
-scripts/mp4/*.mov
-scripts/gif/*.gif
+scripts/*
