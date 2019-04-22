@@ -6,7 +6,7 @@ The list of calculated Material [properties](../../properties-directory/overview
 
 An example appearance of Properties Explorer is shown in the image below.
 
-![Materials Properties Explorer](../../images/Properties/materials-properties.png "Materials Properties Explorer")
+![Materials Properties Explorer](../../images/properties/materials-properties.png "Materials Properties Explorer")
 
 ## Specific Features
 
@@ -16,4 +16,4 @@ The different aspects of this property-specific information can be selected from
 
 Such specific options include information on the [simulation engine](../../software/components.md), [model](../../models/overview.md), [method](../../methods/overview.md) and [precision](../../methods/data.md) pertaining to the corresponding computed property. The numerical value of the property is also displayed here, when it is applicable in the case of [scalar quantities](../classification/general.md). 
 
-![Property Specific Columns](../../images/Properties/property-specific-columns.png "Property Specific Columns")
+![Property Specific Columns](../../images/properties/property-specific-columns.png "Property Specific Columns")

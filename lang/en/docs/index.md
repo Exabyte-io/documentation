@@ -1,6 +1,6 @@
 # Exabyte.io Documentation
 
-Exabyte.io is an cloud-native accessible and collaborative environment for materials modeling from nanoscale. With the help of the platform, users can **design new materials** online and **predict the properties** of these materials using simulations. The present documentation explains how the platform works in details. 
+Exabyte.io is a cloud-native accessible and collaborative environment for materials modeling from nanoscale. With the help of the platform, users can **design new materials** online and **predict the properties** of these materials using simulations. The present documentation explains how the platform works in details. 
 
 ## Search
 

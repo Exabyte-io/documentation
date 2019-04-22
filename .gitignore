@@ -3,10 +3,9 @@
 .idea
 .virtualenv*
 tmp/
-lang/*/docs/images/
-lang/*/docs/images_backup/
 py-googletrans
 oauth-key.json
 oauth-credentials.json
 service-account-key.json
 *.py[cod]
+
