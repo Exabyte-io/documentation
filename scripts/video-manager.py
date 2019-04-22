@@ -19,7 +19,7 @@ DESCRIPTION_TEMPLATE = os.path.abspath(os.path.join(os.path.dirname(__file__), "
 SERVICE_ACCOUNT_KEY_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "service-account-key.json"))
 DESCRIPTION_LINKS = [
     "Materials Modeling 2.0: https://exabyte.io/",
-    "Exabyte.io Platform: https://platform.exabyte.io/",
+    "Exabyte.io Platform: https://platform.exabyte.io/register",
     "Exabyte.io Documentation: https://docs.exabyte.io/",
 ]
 
