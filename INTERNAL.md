@@ -18,19 +18,21 @@ python video-manager.py voiceover --file PATH_TO_ORIGINAL_VIDEO --metadata PATH_
 
 5. Retry step 4 with adjusted `youTubeCaptions` data until the optimal outcome is achieved.
 
-6. Run the below command to upload/update the video once metadata is ready:
+6. Before uploading, make sure that the timings of the `youTubeCaptions` sentences in the metadata file match exactly the duration of their pronunciations in the voiceover. This ensures that the subtitles will be synced correctly to the voice in the final online video version.
+
+7. Run the below command to upload/update the video once metadata is ready:
 
 ```bash
 python video-manager.py upload --file PATH_TO_VIDEO --metadata PATH_TO_METADATA
 ```
 
-7. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
+8. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
 
 ```bash
 python video-manager.py update --file PATH_TO_VIDEO --metadata PATH_TO_METADATA --privacyStatus public
 ```
 
-8. Commit the new changes to metadata file such as `youTubeId` and push.
+9. Commit the new changes to metadata file such as `youTubeId` and push.
 
 ## Translating to Other Languages
 
