@@ -1,97 +1,98 @@
 {
     "descriptionLinks": [
         "Calculate Electronic Charge Density Mesh: https://docs.exabyte.io/tutorials/dft/electronic/electronic-density-mesh/"
-    ],
-    "description": "In this tutorial, we show how to calculate and visualize the electronic charge density mesh using our Web Interface, for the simple case of crystalline silicon.",
+    ], 
+    "description": "In this tutorial, we show how to calculate and visualize the electronic charge density mesh using our Web Interface, for the simple case of crystalline silicon.", 
+    "title": "Exabyte.io Tutorial: Calculate Electronic Charge Density Mesh", 
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
-        },
+        }, 
         {
             "...": "../../../models-directory/dft.json#/tags"
-        },
+        }, 
         {
             "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
-        },
-        "electronic density",
+        }, 
+        "electronic density", 
         "charge density"
-    ],
-    "title": "Exabyte.io Tutorial: Calculate Electronic Charge Density Mesh",
+    ], 
     "youTubeCaptions": [
         {
-            "text": "Electronic Charge Density Mesh tutorial.",
-            "startTime": "00:00:00.000",
-            "endTime": "00:00:01.000"
-        },
+            "text": "Electronic Charge Density Mesh tutorial.", 
+            "endTime": "00:00:03.000", 
+            "startTime": "00:00:00.000"
+        }, 
         {
-            "text": "Create a simulation, by navigating to the job designer page.",
-            "startTime": "00:00:02.000",
-            "endTime": "00:00:05.000"
-        },
+            "text": "Create a simulation, by navigating to the job designer page.", 
+            "endTime": "00:00:07.000", 
+            "startTime": "00:00:04.000"
+        }, 
         {
-            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Electronic Density Mesh' workflow by selecting it in the list.",
-            "startTime": "0:00:05.000",
-            "endTime": "0:00:15.000"
-        },
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Electronic Density Mesh' workflow by selecting it in the list.", 
+            "endTime": "0:00:14.000", 
+            "startTime": "0:00:08.000"
+        }, 
         {
-            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.",
-            "startTime": "0:00:16.000",
-            "endTime": "0:00:25.000"
-        },
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.", 
+            "endTime": "0:00:23.000", 
+            "startTime": "0:00:15.000"
+        }, 
         {
-            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Electron Density Mesh Calculation. <break time='5.0' />",
-            "startTime": "0:00:26.000",
-            "endTime": "0:00:34.000"
-        },
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Electron Density Mesh Calculation. <break time='5.0' />", 
+            "endTime": "0:00:30.000", 
+            "startTime": "0:00:24.000"
+        }, 
         {
-            "text": "Next, <break time='0.5' /> save the job. <break time='8.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
-            "startTime": "0:00:36.000",
-            "endTime": "0:00:44.000"
-        },
+            "text": "Next, <break time='0.5' /> save the job. <break time='8.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />", 
+            "endTime": "0:00:48.000", 
+            "startTime": "0:00:35.000"
+        }, 
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running.",
-            "startTime": "0:00:46.000",
-            "endTime": "0:00:50.000"
-        },
+            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running.", 
+            "endTime": "0:01:00.000", 
+            "startTime": "0:00:52.000"
+        }, 
         {
-            "text": "When the job is finished, open it, to inspect the final charge density output file, in the Files tab. <break time='4.0' />",
-            "startTime": "0:00:52.000",
-            "endTime": "0:00:54.000"
-        },
+            "text": "When the job is finished, open it, to inspect the final charge density output file, in the Files tab. <break time='4.0' />", 
+            "endTime": "0:01:08.000", 
+            "startTime": "0:01:02.000"
+        }, 
         {
-            "text": "Now open a Remote Desktop session, via the right-hand sidebar.",
-            "startTime": "0:00:56.000",
-            "endTime": "0:01:00.000"
-        },
+            "text": "Now open a Remote Desktop session, via the right-hand sidebar.", 
+            "endTime": "0:01:15.000", 
+            "startTime": "0:01:12.000"
+        }, 
         {
-            "text": "Open the 'Applications' menu, located at the top of the Remote Desktop interface. Here, navigate to the 'VESTA' analysis and visualization software option, and open it.",
-            "startTime": "0:01:03.500",
-            "endTime": "0:01:10.500"
-        },
+            "text": "Open the 'Applications' menu, located at the top of the Remote Desktop interface. Here, navigate to the 'VESTA' analysis and visualization software option, and open it.", 
+            "endTime": "0:01:29.500", 
+            "startTime": "0:01:19.500"
+        }, 
         {
-            "text": "Click on 'File' and then 'Open'. Then, navigate to the simulation working directory on the relevant cluster, where the simulation files are located. Once in the correct folder, double click to open the 'density.xsf' output file, containing the electronic charge density data.",
-            "startTime": "0:01:12.500",
-            "endTime": "0:01:22.500"
-        },
+            "text": "Click on 'File' and then 'Open'. Then, navigate to the simulation working directory on the relevant cluster, where the simulation files are located. Once in the correct folder, double click to open the 'density.xsf' output file, containing the electronic charge density data.", 
+            "endTime": "0:01:48.500", 
+            "startTime": "0:01:31.500"
+        }, 
         {
-            "text": "Then, open the Properties dialog in VESTA, after the charge density data has been loaded. Under the 'Isosurfaces' tab, the user is free to modify the size of the constant density isosurfaces, in order to make them more apparent in the main VESTA visualization.",
-            "startTime": "0:01:23.500",
-            "endTime": "0:01:35.500"
-        },
+            "text": "Then, open the Properties dialog in VESTA, after the charge density data has been loaded. Under the 'Isosurfaces' tab, the user is free to modify the size of the constant density isosurfaces, in order to make them more apparent in the main VESTA visualization.", 
+            "endTime": "0:02:04.500", 
+            "startTime": "0:01:49.500"
+        }, 
         {
-            "text": "After clicking 'OK', to close the dialog, the electronic charge density of silicon can be freely inspected under the main VESTA interface, by for example zooming into the graphic visualization through the middle mouse wheel.",
-            "startTime": "0:01:37.500",
-            "endTime": "0:01:47.500"
-        },
+            "text": "After clicking 'OK', to close the dialog, the electronic charge density of silicon can be freely inspected under the main VESTA interface, by for example zooming into the graphic visualization through the middle mouse wheel.", 
+            "endTime": "0:02:19.500", 
+            "startTime": "0:02:06.500"
+        }, 
         {
-            "text": "Alternatively, one can also rotate the image as appropriate, by holding the left mouse button, and making the corresponding moves. The charge density graphic can in general be rotated in all the possible 3D orientations and directions, for a better visualization of its main features and properties.",
-            "startTime": "0:01:55.500",
-            "endTime": "0:02:07.500"
-        },
+            "text": "Alternatively, one can also rotate the image as appropriate, by holding the left mouse button, and making the corresponding moves. The charge density graphic can in general be rotated in all the possible 3D orientations and directions, for a better visualization of its main features and properties.", 
+            "endTime": "0:02:45.500", 
+            "startTime": "0:02:27.500"
+        }, 
         {
-            "text": "This completes the present tutorial.",
-            "startTime": "0:02:12.500",
-            "endTime": "0:02:15.500"
+            "text": "This completes the present tutorial.", 
+            "endTime": "0:02:51.000", 
+            "startTime": "0:02:48.500"
         }
-    ]
- }
+    ], 
+    "youTubeId": "e7nMtuGWP14"
+}
