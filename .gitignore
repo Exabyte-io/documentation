@@ -4,6 +4,8 @@
 .virtualenv*
 tmp/
 py-googletrans
-*.py[cod]
-scripts/*
+oauth-key.json
 oauth-credentials.json
+service-account-key.json
+*.py[cod]
+
