@@ -2,8 +2,8 @@
 
 This tutorial page explains how to calculate an [electronic band gap](../../../properties-directory/non-scalar/band-gaps.md) based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [VASP](../../../software-directory/modeling/vasp/overview.md) as our main simulation engine during this tutorial.
 
-!!!note "VASP version considered in this tutorial"
-    The present tutorial is written for VASP at versions 5.3.5 or 5.4.4.
+!!!note simulation engines considered in this tutorial"
+    The present tutorial is originally designed for [VASP](../../../software-directory/modeling/vasp/overview.md) (ver. 5.3.5 or 5.4.4), however, the steps demonstrated below are identical for other similar software, such as [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) (ver. 5.4 to 6.3), for example.
 
 ## Definitions
 
@@ -20,7 +20,7 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../.
 
 ## Choose Workflow
 
-[Workflows](../../../workflows/overview.md) for calculating the band gap through [VASP](../../../software-directory/modeling/vasp/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/workflow-tab.md).
+[Workflows](../../../workflows/overview.md) for calculating the band gap can be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/workflow-tab.md).
 
 ## Set Sampling in Reciprocal Space
 
@@ -47,7 +47,7 @@ The calculated value of ~0.6 eV for the indirect band gap is significantly below
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a Band Gap computation workflow on silicon using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine in the following animation.
+We demonstrate the above-mentioned steps involved in the creation and execution of a Band Gap computation workflow on silicon using the  simulation engine in the following animation.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/G5L52T6fjeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
