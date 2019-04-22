@@ -72,7 +72,7 @@ An example of such a reaction energy profile is shown in the image below, in whi
 
 The final optimized image structures can be retrieved at the end of Job execution according to the instructions contained [in this page](../../../workflows/addons/structural-relaxation.md#initial/final-structures-set).
 
-## Animations
+## Animation
 
 ### NEB with Manually-Generated Images
 
@@ -86,13 +86,10 @@ Here, we have made use of the constrained interpolated set containing 3 intermed
 
 ### NEB with Automatically Generated Images
 
-In this second animation below, we repeat the same reaction profile calculation for H3 molecules as above, but this time taking advantage of the Quantum ESPRESSO feature for the automatic generation of intermediate images mentioned previously. This effectively makes it redundant to import manually an interpolated set, such as was done in the previous video. 
+We can repeat the same reaction profile calculation for H3 molecules as above, but this time taking advantage of the Quantum ESPRESSO feature for the automatic generation of intermediate images mentioned previously. This effectively makes it redundant to import manually an interpolated set, such as was done in the previous video. 
 
 This feature can be enabled by selecting an appropriate number of intermediate images to be generated under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md), as demonstrated in the animation where we select to generate a total of 5 intermediate images. In this case, only the initial and final images need to be imported manually into Job Designer.
 
-<div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/DlwPZmcpQ48" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 
 ## Links
 
