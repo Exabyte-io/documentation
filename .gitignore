@@ -5,10 +5,6 @@
 tmp/
 lang/*/docs/images/
 lang/*/docs/images_backup/
-scripts/*mp4
-scripts/mp4/
-scripts/*gif
-scripts/gif/
 py-googletrans
 oauth-key.json
 oauth-credentials.json
