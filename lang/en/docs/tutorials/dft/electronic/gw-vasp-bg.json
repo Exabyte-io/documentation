@@ -3,7 +3,6 @@
         "Calculate Electronic Band Gap via GW Approximation: https://docs.exabyte.io/tutorials/dft/electronic/gw-vasp-bg/"
     ],
     "description": "We illustrate in this animation how the results for a band gap computation on crystalline silicon can be further improved and made to be more accurate through the use of the GW Approximation.",
-    "title": "Exabyte.io Tutorial: Band Gap via GW Approximation",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
@@ -18,6 +17,7 @@
             "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
         }
     ],
+    "title": "Exabyte.io Tutorial: Band Gap via GW Approximation",
     "youTubeCaptions": [
         {
             "text": "Band Gap via GW Approximation tutorial.",
@@ -30,65 +30,70 @@
             "startTime": "00:00:03.500"
         },
         {
-            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'D1-GW0-BG' workflow by selecting it in the list.",
-            "endTime": "0:00:15.000",
+            "text": "Then, <break time='0.5' /> open the workflow tab, and select from the list the 'D1-GW0-BG' workflow, whose naming convention is explained in the tutorial text linked under the video description.",
+            "endTime": "0:00:19.000",
             "startTime": "0:00:07.500"
         },
         {
-            "text": "We now explore the subworkflow structure making up the overall workflow. <break time='5.0' />",
-            "endTime": "0:00:20.000",
-            "startTime": "0:00:15.500"
+            "text": "We now explore the subworkflow structure making up the overall workflow.",
+            "endTime": "0:00:23.000",
+            "startTime": "0:00:19.500"
         },
         {
-            "text": "Try opening the 'SCF many bands' subworkflow, used to perform a calculation over a large number of unoccupied bands.",
-            "endTime": "0:00:32.000",
-            "startTime": "0:00:25.000"
+            "text": "Try, for example, opening the 'SCF many bands' subworkflow, used to perform a calculation over a large number of unoccupied bands.",
+            "endTime": "0:00:33.000",
+            "startTime": "0:00:24.000"
         },
         {
-            "text": "Then, open the only unit component, called 'vasp_nscf', and inspect the VASP input files displayed at the bottom of the unit editor interface. <break time='10.0' />",
-            "endTime": "0:00:43.000",
-            "startTime": "0:00:33.000"
+            "text": "Then, open the only unit component, and inspect the <sub alias='WASP'>VASP</sub> input files displayed at the bottom. <break time='1.0' /> The <sub alias='N BANDS'>NBANDS</sub> tag sets the number of bands to a large value. <break time='7.0' />",
+            "endTime": "0:00:44.000",
+            "startTime": "0:00:33.500"
         },
         {
-            "text": "Let us also inspect the contents of the main GW step of the computation, by opening the 'G0W0 step' subworkflow. Again, let us review the VASP input files displayed at the bottom of the unit editor.",
-            "endTime": "0:01:06.000",
-            "startTime": "0:00:52.000"
+            "text": "Let us also inspect the contents of the main GW step of the computation, by opening the G0W0 step subworkflow. <break time='1.0' /> Again, let us review the <sub alias='WASP'>VASP</sub> input files.",
+            "endTime": "0:01:02.000",
+            "startTime": "0:00:50.000"
         },
         {
-            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with eight cores on the OR8 queue, due to the significant computational cost of the GW method.",
-            "endTime": "0:01:29.000",
-            "startTime": "0:01:17.000"
+            "text": "The ALGO tag allows us to choose the 'G0W0' version of the GW approximation, which is the simplest and computationally the most efficient one.",
+            "endTime": "0:01:12.000",
+            "startTime": "0:01:03.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with eight cores on the OR8 queue, because the GW method is quite computationally expensive.",
+            "endTime": "0:01:28.000",
+            "startTime": "0:01:16.000"
         },
         {
             "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Band Gap GW Calculation.",
-            "endTime": "0:01:36.000",
-            "startTime": "0:01:30.000"
+            "endTime": "0:01:35.000",
+            "startTime": "0:01:29.000"
         },
         {
             "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution.",
-            "endTime": "0:01:51.000",
-            "startTime": "0:01:41.000"
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:39.500"
         },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active. Please wait, until the job has finished running. <break time='5.0' />",
-            "endTime": "0:02:00.000",
-            "startTime": "0:01:52.000"
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running. <break time='5.0' />",
+            "endTime": "0:01:57.000",
+            "startTime": "0:01:49.000"
         },
         {
             "text": "When the job is finished, open it, to inspect the final results.",
-            "endTime": "0:02:08.000",
-            "startTime": "0:02:05.000"
+            "endTime": "0:02:05.000",
+            "startTime": "0:02:01.000"
         },
         {
             "text": "The band gap value can be found, at the bottom of the results page. Here, we can see the indirect gap, of about 1.094 eV, in excellent agreement with the experimental value for silicon.",
-            "endTime": "0:02:29.000",
-            "startTime": "0:02:15.500"
+            "endTime": "0:02:25.000",
+            "startTime": "0:02:12.000"
         },
         {
             "text": "This completes the present tutorial.",
-            "endTime": "0:02:33.000",
-            "startTime": "0:02:30.500"
+            "endTime": "0:02:28.000",
+            "startTime": "0:02:26.000"
         }
     ],
-    "youTubeId": "0oT4wyp-2VQ"
+    "youTubeId": "vVStjyRR2o4"
 }
