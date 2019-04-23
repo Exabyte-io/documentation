@@ -1,74 +1,74 @@
 {
     "descriptionLinks": [
         "Calculate Electronic Band Gap: https://docs.exabyte.io/tutorials/dft/electronic/band-gap/"
-    ], 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.", 
+    ],
+    "description": "In this tutorial, we show how to calculate and visualize the electronic band gap using our Web Interface, for the simple case of crystalline silicon.",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
-        }, 
+        },
         {
             "...": "../../../models-directory/dft.json#/tags"
-        }, 
+        },
         {
             "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
-        }, 
+        },
         {
             "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
         }
-    ], 
-    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap", 
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap",
     "youTubeCaptions": [
         {
-            "text": "Electronic Band Gap tutorial.", 
-            "endTime": "00:00:02.000", 
+            "text": "Electronic Band Gap tutorial.",
+            "endTime": "00:00:02.000",
             "startTime": "00:00:00.000"
-        }, 
+        },
         {
-            "text": "Create a simulation, by navigating to the job designer page.", 
-            "endTime": "00:00:06.000", 
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
             "startTime": "00:00:03.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Band Gap' workflow by selecting it in the list.", 
-            "endTime": "0:00:13.000", 
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Band Gap' workflow by selecting it in the list.",
+            "endTime": "0:00:13.000",
             "startTime": "0:00:07.000"
-        }, 
+        },
         {
-            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.", 
-            "endTime": "0:00:22.000", 
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.",
+            "endTime": "0:00:22.000",
             "startTime": "0:00:15.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Band Gap Calculation.", 
-            "endTime": "0:00:29.000", 
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Band Gap Calculation.",
+            "endTime": "0:00:29.000",
             "startTime": "0:00:23.000"
-        }, 
+        },
         {
-            "text": "Next, <break time='0.5' /> save the job. <break time='1.0' /> It can then be selected and submitted to the compute queue, for execution.", 
-            "endTime": "0:00:37.000", 
+            "text": "Next, <break time='0.5' /> save the job. <break time='1.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:00:37.000",
             "startTime": "0:00:31.000"
-        }, 
+        },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.", 
-            "endTime": "0:00:44.000", 
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:00:44.000",
             "startTime": "0:00:39.000"
-        }, 
+        },
         {
-            "text": "When the job is finished, open it, to inspect the final results.", 
-            "endTime": "0:00:49.000", 
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:00:49.000",
             "startTime": "0:00:45.000"
-        }, 
+        },
         {
-            "text": "The band gap value can be found, at the bottom of the results page. Here, we can see the indirect gap, of about 0.6 eV, as expected from, the 'Generalized Gradient Approximation', in 'Density Functional Theory'.", 
-            "endTime": "0:01:04.000", 
+            "text": "The band gap value can be found, at the bottom of the results page. Here, we can see the indirect gap, of about 0.6 eV, as expected from, the 'Generalized Gradient Approximation', in 'Density Functional Theory'.",
+            "endTime": "0:01:04.000",
             "startTime": "0:00:50.000"
-        }, 
+        },
         {
-            "text": "This completes the present tutorial.", 
-            "endTime": "0:01:07.500", 
+            "text": "This completes the present tutorial.",
+            "endTime": "0:01:07.500",
             "startTime": "0:01:05.500"
         }
-    ], 
+    ],
     "youTubeId": "G5L52T6fjeQ"
 }
