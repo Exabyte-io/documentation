@@ -49,50 +49,50 @@
             "startTime": "0:00:35.000"
         },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running.",
-            "endTime": "0:01:00.000",
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running.",
+            "endTime": "0:01:01.000",
             "startTime": "0:00:52.000"
         },
         {
             "text": "When the job is finished, open it, to inspect the final charge density output file, in the Files tab. <break time='4.0' />",
-            "endTime": "0:01:08.000",
+            "endTime": "0:01:09.000",
             "startTime": "0:01:02.000"
         },
         {
             "text": "Now open a Remote Desktop session, via the right-hand sidebar.",
-            "endTime": "0:01:16.000",
-            "startTime": "0:01:12.000"
+            "endTime": "0:01:15.000",
+            "startTime": "0:01:11.000"
         },
         {
             "text": "Open the 'Applications' menu, located at the top of the Remote Desktop interface. Here, navigate to the 'VESTA' analysis and visualization software option, and open it.",
-            "endTime": "0:01:30.500",
-            "startTime": "0:01:19.500"
+            "endTime": "0:01:29.500",
+            "startTime": "0:01:18.500"
         },
         {
             "text": "Click on 'File' and then 'Open'. Then, navigate to the simulation working directory on the relevant cluster, where the simulation files are located. Once in the correct folder, double click to open the 'density.xsf' output file, containing the electronic charge density data.",
-            "endTime": "0:01:47.500",
-            "startTime": "0:01:31.000"
+            "endTime": "0:01:46.500",
+            "startTime": "0:01:30.000"
         },
         {
             "text": "Then, open the Properties dialog in VESTA, after the charge density data has been loaded. Under the 'Isosurfaces' tab, the user is free to modify the size of the constant density isosurfaces, in order to make them more apparent in the main VESTA visualization.",
-            "endTime": "0:02:04.000",
-            "startTime": "0:01:48.000"
+            "endTime": "0:02:03.000",
+            "startTime": "0:01:47.000"
         },
         {
-            "text": "After clicking 'OK', to close the dialog, the electronic charge density of silicon can be freely inspected under the main VESTA interface, by for example zooming into the graphic visualization through the middle mouse wheel.",
-            "endTime": "0:02:17.000",
-            "startTime": "0:02:04.500"
+            "text": "After clicking 'OK', to close the dialog, the electronic charge density of silicon can be freely inspected under the main VESTA interface, by for example zooming into the graphic visualization.",
+            "endTime": "0:02:20.000",
+            "startTime": "0:02:09.500"
         },
         {
-            "text": "Alternatively, one can also rotate the image as appropriate, by holding the left mouse button, and making the corresponding moves. The charge density graphic can be rotated in all 3D orientations, for a better visualization of its main features and properties.",
-            "endTime": "0:02:39.500",
-            "startTime": "0:02:23.500"
+            "text": "Alternatively, one can also rotate the image as appropriate, by holding the left mouse button.",
+            "endTime": "0:02:33.500",
+            "startTime": "0:02:27.500"
         },
         {
             "text": "This completes the present tutorial.",
-            "endTime": "0:02:51.000",
-            "startTime": "0:02:48.500"
+            "endTime": "0:02:44.000",
+            "startTime": "0:02:42.500"
         }
     ],
-    "youTubeId": "LySt_xaln7A"
+    "youTubeId": "gZDZcuuC9Mg"
 }
