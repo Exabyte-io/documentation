@@ -3,6 +3,7 @@
         "Calculate Electronic Band Structure: https://docs.exabyte.io/tutorials/dft/electronic/band-structure/"
     ],
     "description": "In this tutorial, we show how to calculate and visualize the electronic band structure using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Calculate Band Structure",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
@@ -17,7 +18,6 @@
             "...": "../../../properties-directory/non-scalar/bandstructure.json#/tags"
         }
     ],
-    "title": "Exabyte.io Tutorial: Calculate Band Structure",
     "youTubeCaptions": [
         {
             "text": "Electronic Band Structure tutorial.",
@@ -50,7 +50,7 @@
             "startTime": "0:00:36.000"
         },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running. <break time='5.0' />",
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running. <break time='5.0' />",
             "endTime": "0:00:57.000",
             "startTime": "0:00:49.000"
         },
@@ -70,5 +70,5 @@
             "startTime": "0:01:17.500"
         }
     ],
-    "youTubeId": "WG7y8KpnjPw"
+    "youTubeId": "7-eebtT4ZqA"
 }
