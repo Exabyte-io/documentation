@@ -1,74 +1,74 @@
 {
     "descriptionLinks": [
         "Calculate Electronic Band Structure: https://docs.exabyte.io/tutorials/dft/electronic/band-structure/"
-    ], 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic band structure using our Web Interface, for the simple case of crystalline silicon.", 
+    ],
+    "description": "In this tutorial, we show how to calculate and visualize the electronic band structure using our Web Interface, for the simple case of crystalline silicon.",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
-        }, 
+        },
         {
             "...": "../../../models-directory/dft.json#/tags"
-        }, 
+        },
         {
             "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
-        }, 
+        },
         {
             "...": "../../../properties-directory/non-scalar/bandstructure.json#/tags"
         }
-    ], 
-    "title": "Exabyte.io Tutorial: Calculate Band Structure", 
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Band Structure",
     "youTubeCaptions": [
         {
-            "text": "Electronic Band Structure tutorial.", 
-            "endTime": "00:00:02.000", 
+            "text": "Electronic Band Structure tutorial.",
+            "endTime": "00:00:02.000",
             "startTime": "00:00:00.000"
-        }, 
+        },
         {
-            "text": "Create a simulation, by navigating to the job designer page.", 
-            "endTime": "00:00:08.000", 
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:08.000",
             "startTime": "00:00:04.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Band Structure' workflow by selecting it in the list. This workflow can be imported from the bank, if it is not already listed.", 
-            "endTime": "0:00:20.000", 
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Band Structure' workflow by selecting it in the list. This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:20.000",
             "startTime": "0:00:10.000"
-        }, 
+        },
         {
-            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.", 
-            "endTime": "0:00:29.000", 
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.",
+            "endTime": "0:00:29.000",
             "startTime": "0:00:21.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Band Structure.", 
-            "endTime": "0:00:35.000", 
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Band Structure.",
+            "endTime": "0:00:35.000",
             "startTime": "0:00:30.000"
-        }, 
+        },
         {
-            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />", 
-            "endTime": "0:00:45.000", 
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
+            "endTime": "0:00:45.000",
             "startTime": "0:00:36.000"
-        }, 
+        },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running. <break time='5.0' />", 
-            "endTime": "0:00:57.000", 
+            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running. <break time='5.0' />",
+            "endTime": "0:00:57.000",
             "startTime": "0:00:49.000"
-        }, 
+        },
         {
-            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />", 
-            "endTime": "0:01:06.000", 
+            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />",
+            "endTime": "0:01:06.000",
             "startTime": "0:01:02.000"
-        }, 
+        },
         {
-            "text": "The band structure dispersion plot can be found, at the bottom of the results page. This final result is in agreement with the published literature.", 
-            "endTime": "0:01:16.000", 
+            "text": "The band structure dispersion plot can be found, at the bottom of the results page. This final result is in agreement with the published literature.",
+            "endTime": "0:01:16.000",
             "startTime": "0:01:09.000"
-        }, 
+        },
         {
-            "text": "This completes the present tutorial.", 
-            "endTime": "0:01:20.500", 
+            "text": "This completes the present tutorial.",
+            "endTime": "0:01:20.500",
             "startTime": "0:01:17.500"
         }
-    ], 
+    ],
     "youTubeId": "WG7y8KpnjPw"
 }

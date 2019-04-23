@@ -1,74 +1,74 @@
 {
     "descriptionLinks": [
         "Calculate Electronic Density of States: https://docs.exabyte.io/tutorials/dft/electronic/density-of-states/"
-    ], 
-    "description": "In this tutorial, we show how to calculate and visualize the electronic density of states using our Web Interface, for the simple case of crystalline silicon.", 
+    ],
+    "description": "In this tutorial, we show how to calculate and visualize the electronic density of states using our Web Interface, for the simple case of crystalline silicon.",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
-        }, 
+        },
         {
             "...": "../../../models-directory/dft.json#/tags"
-        }, 
+        },
         {
             "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
-        }, 
+        },
         {
             "...": "../../../properties-directory/non-scalar/electronic-dos.json#/tags"
         }
-    ], 
-    "title": "Exabyte.io Tutorial: Calculate Electronic Density of States", 
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Electronic Density of States",
     "youTubeCaptions": [
         {
-            "text": "Electronic Density of States tutorial.", 
-            "endTime": "00:00:03.000", 
+            "text": "Electronic Density of States tutorial.",
+            "endTime": "00:00:03.000",
             "startTime": "00:00:00.000"
-        }, 
+        },
         {
-            "text": "Create a simulation, by navigating to the job designer page.", 
-            "endTime": "00:00:07.000", 
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:07.000",
             "startTime": "00:00:04.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Band Structure + Density of States' workflow by selecting it in the list.", 
-            "endTime": "0:00:15.000", 
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Band Structure + Density of States' workflow by selecting it in the list.",
+            "endTime": "0:00:15.000",
             "startTime": "0:00:08.000"
-        }, 
+        },
         {
-            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.", 
-            "endTime": "0:00:25.000", 
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.",
+            "endTime": "0:00:25.000",
             "startTime": "0:00:16.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Density of States Computation.", 
-            "endTime": "0:00:31.000", 
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Density of States Computation.",
+            "endTime": "0:00:31.000",
             "startTime": "0:00:26.000"
-        }, 
+        },
         {
-            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />", 
-            "endTime": "0:00:42.000", 
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
+            "endTime": "0:00:42.000",
             "startTime": "0:00:34.000"
-        }, 
+        },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running.", 
-            "endTime": "0:00:54.000", 
+            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running.",
+            "endTime": "0:00:54.000",
             "startTime": "0:00:45.000"
-        }, 
+        },
         {
-            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />", 
-            "endTime": "0:00:59.000", 
+            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />",
+            "endTime": "0:00:59.000",
             "startTime": "0:00:56.000"
-        }, 
+        },
         {
-            "text": "The electronic density of states plot can be found at the bottom of the results page. This final result is in agreement with the published literature. <break time='3.0' />", 
-            "endTime": "0:01:12.000", 
+            "text": "The electronic density of states plot can be found at the bottom of the results page. This final result is in agreement with the published literature. <break time='3.0' />",
+            "endTime": "0:01:12.000",
             "startTime": "0:01:02.000"
-        }, 
+        },
         {
-            "text": "This completes the present tutorial.", 
-            "endTime": "0:01:17.500", 
+            "text": "This completes the present tutorial.",
+            "endTime": "0:01:17.500",
             "startTime": "0:01:14.500"
         }
-    ], 
+    ],
     "youTubeId": "G04PQlvbho8"
 }
