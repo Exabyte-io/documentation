@@ -56,7 +56,7 @@
             "startTime": "0:00:46.000"
         },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.  Please wait, until the job has finished running.",
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running.",
             "endTime": "0:01:06.000",
             "startTime": "0:00:58.000"
         },
@@ -97,24 +97,24 @@
         },
         {
             "text": "Click on 'File' <break time='3.0' />, then 'Open Structure' <break time='3.0' />, and finally the 'Open BXSF' option. <break time='3.0' /> Then, navigate to the simulation working directory on the relevant cluster, where the simulation files are located. <break time='10.0' /> Once in the correct folder, double click to open the relevant 'bxsf' output file, containing the fermi surface data for our copper simulation.",
-            "endTime": "0:03:28.000",
-            "startTime": "0:02:49.000"
+            "endTime": "0:03:27.000",
+            "startTime": "0:02:48.000"
         },
         {
             "text": "Accept the default value for the Fermi energy. <break time='5.0' /> Then, select the appropriate bands for drawing the Fermi Surface.",
-            "endTime": "0:03:43.500",
-            "startTime": "0:03:31.500"
+            "endTime": "0:03:42.500",
+            "startTime": "0:03:30.500"
         },
         {
             "text": "The graphic visualization for the Fermi Surface of copper will thus appear, within the main interface of Xcrysden. <break time='6.0' /> This visualization can be freely inspected by the user, via, for instance, the available graphic appearance options included on the left-hand sidebar of the Xcrysden interface.",
-            "endTime": "0:04:12.500",
-            "startTime": "0:03:48.500"
+            "endTime": "0:04:11.500",
+            "startTime": "0:03:47.500"
         },
         {
             "text": "This completes the present tutorial.",
-            "endTime": "0:04:26.000",
-            "startTime": "0:04:23.500"
+            "endTime": "0:04:24.000",
+            "startTime": "0:04:21.500"
         }
     ],
-    "youTubeId": "8JLLj8djIEc"
+    "youTubeId": "isMCrrRF0F4"
 }
