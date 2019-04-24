@@ -29,6 +29,9 @@ For the sake of this brief introduction, it suffices to know that a VASP [Workfl
 
 [Workflows](../../../workflows/overview.md) for calculating the [band gap](../../../properties-directory/non-scalar/band-gaps.md) through HSE, as implemented under [VASP](../../../software-directory/modeling/vasp/overview.md), can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). The user should [search](../../../entities-general/actions/search.md) for the string "D7-HSR-BS-BG-DOS" under the Workflows Bank dialog when looking for the relevant HSE-based band-gap workflow.
 
+!!!info "Workflow naming convention"
+    The "D7-HSR-BS-BG-DOS" name for the HSE workflow contains the following information: "D" refers to the difficulty level (see table II in Ref. 1 cited [in this page](gw-vasp-bg.md)), "HSR" represents the method, and "BS", "BG" and "DOS" are abbreviations for band structure, band gap, and density of states respectively. 
+
 This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/overview.md). The same procedure as in the [general band-gap computation tutorial](band-gap.md) can otherwise be followed.
 
 !!!warning "Computational Cost"
@@ -49,7 +52,7 @@ This provides an example of how HSE can result in improved precision in the esti
 We demonstrate the steps involved in the creation and execution of a HSE Band Gap computation workflow on silicon, using the [VASP](../../../software-directory/modeling/vasp/overview.md) simulation engine, in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/IXshoTGLJcE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/MV-E1Q2LD_I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
