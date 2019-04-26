@@ -1,0 +1,91 @@
+{
+    "descriptionLinks": [
+        "Calculate Band Gap with HSE and VASP: https://docs.exabyte.io/tutorials/dft/electronic/hse-vasp-bg/"
+    ],
+    "description": "In this tutorial, we show how to calculate the electronic band gap through the HSE Hybrid Functional using our Web Interface and the VASP simulation engine, for the simple case of crystalline silicon.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/vasp.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
+        },
+        "HSE",
+        "Hybrid"
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Band Gap with HSE and VASP",
+    "youTubeCaptions": [
+        {
+            "text": "Band Gap with HSE tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and select from the list the 'D7-HSE-BS-BG-DOS' workflow, whose naming convention is explained in the tutorial text.",
+            "endTime": "0:00:17.000",
+            "startTime": "0:00:07.500"
+        },
+        {
+            "text": "Now, try opening the middle subworkflow, used to perform a self-consistent Hartree-Fock/HSE calculation.",
+            "endTime": "0:00:24.000",
+            "startTime": "0:00:18.000"
+        },
+        {
+            "text": "Then, open the only unit component, and inspect the <sub alias='WASP'>VASP</sub> input files displayed at the bottom.",
+            "endTime": "0:00:29.000",
+            "startTime": "0:00:24.500"
+        },
+        {
+            "text": "Pay particular attention to the <sub alias='MAG MOM'>MAGMOM</sub> input tag, setting all magnetic moments to zero, and the <sub alias='L HF CALC'>LHFCALC</sub> and <sub alias='HF SCREEN'>HFSCREEN</sub> tags, necessary for enabling the HSE method.",
+            "endTime": "0:00:43.000",
+            "startTime": "0:00:31.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon HSE Band Gap Calculation.",
+            "endTime": "0:01:04.000",
+            "startTime": "0:00:57.500"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we set the walltime to six hours, and we use one node with sixteen cores on the OR16 queue, since the HSE method is quite computationally expensive.",
+            "endTime": "0:01:25.000",
+            "startTime": "0:01:10.000"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:01:37.500",
+            "startTime": "0:01:28.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:01:43.000",
+            "startTime": "0:01:38.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:43.500"
+        },
+        {
+            "text": "The band gap value can be found, at the bottom of the results page. Here, we can see the indirect gap, of about 1.143 eV, in excellent agreement with the experimental value for silicon.",
+            "endTime": "0:02:13.000",
+            "startTime": "0:02:00.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:17.000",
+            "startTime": "0:02:15.500"
+        }
+    ],
+    "youTubeId": "MV-E1Q2LD_I"
+}

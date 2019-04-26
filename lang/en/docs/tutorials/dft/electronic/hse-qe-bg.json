@@ -1,0 +1,101 @@
+{
+    "descriptionLinks": [
+        "Calculate Electronic Band Gap and Density of States with HSE and QE: https://docs.exabyte.io/tutorials/dft/electronic/hse-qe-bg/"
+    ],
+    "description": "This video animation demonstrates how to calculate the electronic band gap and Density of States of crystalline silicon through the HSE hybrid functional approach, as implemented by the Quantum ESPRESSO modeling engine.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
+        },
+        "HSE",
+        "Hybrid"
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap and Density of States with HSE and QE",
+    "youTubeCaptions": [
+        {
+            "text": "Band Gap with HSE tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and select from the list the 'Band Gap + DoS - HSE' workflow.",
+            "endTime": "0:00:14.000",
+            "startTime": "0:00:07.500"
+        },
+        {
+            "text": "First, we reduce slightly the size of the grid of k-points, under 'Important Settings'.",
+            "endTime": "0:00:22.000",
+            "startTime": "0:00:16.000"
+        },
+        {
+            "text": "Then, open the first unit component of the main 'HSE Band Gap' Subworkflow, and inspect the Quantum ESPRESSO input file displayed at the bottom.",
+            "endTime": "0:00:32.000",
+            "startTime": "0:00:23.000"
+        },
+        {
+            "text": "Pay particular attention to the 'input dft' tag, necessary for enabling the HSE method, as well as the three 'nqx' keywords, defining the mesh of q-points for sampling the Fock operator.",
+            "endTime": "0:00:45.000",
+            "startTime": "0:00:32.500"
+        },
+        {
+            "text": "The default settings are such that the q-grid is set to be half the size of the k-grid entered by the user.",
+            "endTime": "0:00:51.000",
+            "startTime": "0:00:45.500"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with sixteen cores on the OR16 queue, since the HSE method is quite computationally expensive.",
+            "endTime": "0:01:04.000",
+            "startTime": "0:00:51.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - HSE Band Gap Calculation on Silicon.",
+            "endTime": "0:01:11.000",
+            "startTime": "0:01:04.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:01:24.500",
+            "startTime": "0:01:14.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:01:29.000",
+            "startTime": "0:01:25.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:01:33.000",
+            "startTime": "0:01:29.500"
+        },
+        {
+            "text": "The band gap value can be found, towards the bottom of the results page. Here, we can see the indirect gap, of about 1.193 eV, in excellent agreement with the experimental value for silicon.",
+            "endTime": "0:01:56.000",
+            "startTime": "0:01:42.000"
+        },
+        {
+            "text": "The plot for the Density of States of silicon can also be retrieved, further down the page. These results are in good agreement with the published literature.",
+            "endTime": "0:02:07.000",
+            "startTime": "0:01:58.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:11.000",
+            "startTime": "0:02:09.000"
+        }
+    ],
+    "youTubeId": "ailaAlkaIRE"
+}

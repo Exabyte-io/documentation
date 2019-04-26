@@ -50,7 +50,7 @@
             "startTime": "0:00:31.000"
         },
         {
-            "text": "The status of the calculation will, accordingly, change from submitted, to active.",
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
             "endTime": "0:00:44.000",
             "startTime": "0:00:39.000"
         },
