@@ -15,7 +15,8 @@
         },
         {
             "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
-        }
+        },
+        "GW Approximation"
     ],
     "title": "Exabyte.io Tutorial: Band Gap via GW Approximation",
     "youTubeCaptions": [
