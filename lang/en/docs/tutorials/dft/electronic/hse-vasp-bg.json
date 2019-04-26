@@ -17,7 +17,7 @@
             "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
         },
         "HSE",
-        "Hybrid Functional"
+        "Hybrid"
     ],
     "title": "Exabyte.io Tutorial: Calculate Band Gap with HSE and VASP",
     "youTubeCaptions": [

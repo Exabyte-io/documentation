@@ -17,7 +17,7 @@
             "...": "../../../properties-directory/non-scalar/bandstructure.json#/tags"
         },
         "HSE",
-        "Hybrid Functional"
+        "Hybrid"
     ],
     "title": "Exabyte.io Tutorial: Calculate Electronic Bandstructure with HSE and QE",
     "youTubeCaptions": [
