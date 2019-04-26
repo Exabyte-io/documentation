@@ -1,0 +1,104 @@
+{
+    "descriptionLinks": [
+        "Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method and Quantum ESPRESSO: https://docs.exabyte.io/tutorials/dft/chemical/reaction-profile-qe/"
+    ],
+    "description": "In this tutorial animation, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, by making use of the automatic generation of intermediate images supported by Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../models/auxiliary-concepts/nudged-elastic-band.json#/tags"
+        }
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method",
+    "youTubeCaptions": [
+        {
+            "text": "Calculate Reaction Energy Profile tutorial.",
+            "endTime": "00:00:03.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:07.000",
+            "startTime": "00:00:03.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the materials tab, and choose the entire Interpolated Set by selecting all five images of the hydrogen molecule in the example list.",
+            "endTime": "0:00:16.000",
+            "startTime": "0:00:07.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Nudged Elastic Band' workflow by selecting it in the list. <break time='0.5' /> This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:27.000",
+            "startTime": "0:00:17.000"
+        },
+        {
+            "text": "We now navigate to the 'Important Settings' tab, where we set the size of the grid of k-points to one for all image structures within the interpolated set, since we are dealing with chemical molecules in this case.",
+            "endTime": "0:00:43.000",
+            "startTime": "0:00:32.000"
+        },
+        {
+            "text": "In addition, we set the number of intermediate N.E.B. images to five, for their automatic generation by Quantum ESPRESSO.",
+            "endTime": "0:00:51.000",
+            "startTime": "0:00:44.000"
+        },
+        {
+            "text": "Finally, we look at the main N.E.B. subworkflow, and inspect its only unit.",
+            "endTime": "0:00:58.000",
+            "startTime": "0:00:53.000"
+        },
+        {
+            "text": "Within the Quantum ESPRESSO input script at the bottom, pay particular attention to the list of initial, intermediate, and final image structures, contained in the interpolated set under consideration.",
+            "endTime": "0:01:12.000",
+            "startTime": "0:01:01.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.",
+            "endTime": "0:01:22.000",
+            "startTime": "0:01:14.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. <break time='2.0' /> Here, we call it - N.E.B. Auto Images QE Calculation.",
+            "endTime": "0:01:32.000",
+            "startTime": "0:01:22.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
+            "endTime": "0:01:47.000",
+            "startTime": "0:01:35.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:01:56.000",
+            "startTime": "0:01:50.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:02:00.000",
+            "startTime": "0:01:56.500"
+        },
+        {
+            "text": "The final result for the plot of the reaction energy profile, as a function of the overall reaction coordinate, can be found under the results page. <break time='1.0' /> The correct activation energy barrier for the collinear proton transfer reaction in hydrogen, of around 0.2 eV, has thus been computed.",
+            "endTime": "0:02:18.000",
+            "startTime": "0:02:00.500"
+        },
+        {
+            "text": "We conclude this tutorial by navigating to the account-owned Materials collection. Here, a new folder called initial/final structures is created automatically at the end of the N.E.B. run. Inside it, the image structures of the interpolated set, before and after relaxation, can be retrieved and inspected.",
+            "endTime": "0:02:37.000",
+            "startTime": "0:02:18.500"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:41.000",
+            "startTime": "0:02:38.500"
+        }
+    ],
+    "youTubeId": "21NoBL90wjI"
+}
