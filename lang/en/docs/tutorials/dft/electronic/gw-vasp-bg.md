@@ -36,6 +36,9 @@ In the present example we calculate quasi-particle energies on the grid of k-poi
 ## Creating and Executing Job
 
 GW-based band gap calculation [workflows](../../../workflows/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) into the account-owned [collection](../../../accounts/collections.md) from the [Workflows Bank](../../../workflows/bank.md), for example under the name "D1-GW0-BG".
+
+!!!info "Workflow naming convention"
+    The "D1-GW0-BG" name for the GW workflow contains the following information: "D" refers to the difficulty level (see table II in Ref. [^1]), "GW0" represents the method, and "BG" is an abbreviation for the band gap. 
  
 Apart from this, the same procedural instructions as in the [other band gap calculation tutorial](band-gap.md) should be followed for [creating and launching](../../../jobs-designer/overview.md) the corresponding GW-based electronic band gap [Job](../../../jobs/overview.md) through our [Web Interface](../../../ui/overview.md), and for inspecting the associated results.
 
@@ -47,21 +50,19 @@ In the video animation below, we outline the procedure for creating and executin
     GW calculations are in general quite computationally demanding. We therefore recommend the employment of at least 8 computing cores. For larger calculations, [OF queues](../../../infrastructure/resource/queues.md) will have faster turnaround than the OR queues considered in the video.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/vVxbBYlAoJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/t1IDfMcTIxw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Comparison with Experimental Value
 
-The calculated value of 1.094 eV for the indirect band gap of silicon is in better agreement with the experimental value for this material (1.17 eV [^4]) than the alternative case of standard band gap calculations performed with the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in [another tutorial page](band-gap.md). 
+The calculated value of 1.094 eV for the indirect band gap of silicon is in better agreement with the experimental value for this material (1.17 eV [^1]) than the alternative case of standard band gap calculations performed with the [Generalized Gradient Approximation](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation) (GGA), whose shortcomings are assessed in [another tutorial page](band-gap.md). 
 
 This provides an example of how the GW Approximation can result in improved precision in the estimation of important material properties than more traditional approaches within [DFT](../../../models-directory/dft/overview.md).
 
 ## Links
 
-[^1]: [P. Das, M. Mohammadi, T. Bazhirov: "Accessible computational materials design with high fidelity and high throughput"; arXiv:1807.05623, 15 Jul 2018](https://arxiv.org/abs/1807.05623)
+[^1]: [P. Das, M. Mohammadi, T. Bazhirov: "Accessible computational materials design with high fidelity and high throughput"; arXiv:1807.05623, 15 Jul 2018](https://arxiv.org/pdf/1807.05623.pdf)
 
 [^2]: [GW calculations, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/GW_calculations)
 
 [^3]: [Bandgap of Si in GW, Official VASP Documentation](https://cms.mpi.univie.ac.at/wiki/index.php/Bandgap_of_Si_in_GW)
-
-[^4]: [Accessible computational materials design with high fidelity and high throughput, P. Das, M. Mohammadi, and T.Bazhirov, Arxiv preprint, 2017](https://arxiv.org/pdf/1807.05623.pdf)

@@ -1,0 +1,101 @@
+{
+    "descriptionLinks": [
+        "Calculate Electronic Bandstructure with HSE and QE: https://docs.exabyte.io/tutorials/dft/electronic/hse-qe-bs/"
+    ],
+    "description": "This video animation demonstrates how to calculate the electronic band structure of crystalline silicon through the HSE hybrid functional approach, as implemented by the Quantum ESPRESSO modeling engine.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/bandstructure.json#/tags"
+        },
+        "HSE",
+        "Hybrid"
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Electronic Bandstructure with HSE and QE",
+    "youTubeCaptions": [
+        {
+            "text": "Band Structure with HSE tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and select from the list the 'Band Structure - HSE' workflow.",
+            "endTime": "0:00:14.000",
+            "startTime": "0:00:07.500"
+        },
+        {
+            "text": "Then, open the unit component of the first 'Preliminary SCF' Subworkflow, and inspect the Quantum ESPRESSO input file displayed at the bottom.",
+            "endTime": "0:00:25.000",
+            "startTime": "0:00:16.500"
+        },
+        {
+            "text": "This step is necessary for defining the grid of k-points, which will later be extracted manually in the subsequent step.",
+            "endTime": "0:00:34.000",
+            "startTime": "0:00:26.000"
+        },
+        {
+            "text": "Now, try opening the second subworkflow. It is used to manually extract the k-points, together with their respective weights, and insert them as an explicit list inside the input script for the final HSE calculation, with the help of regular expressions. ",
+            "endTime": "0:00:55.000",
+            "startTime": "0:00:39.000"
+        },
+        {
+            "text": "Finally, open also the main HSE calculation subworkflow, and inspect its first unit.",
+            "endTime": "0:01:06.000",
+            "startTime": "0:01:00.000"
+        },
+        {
+            "text": "Notice how the grid of special k-points is not generated automatically, but is defined manually by importing the list of k-points extracted in the preceding subworkflow.",
+            "endTime": "0:01:21.000",
+            "startTime": "0:01:11.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with sixteen cores on the OR16 queue, since the HSE method is quite computationally expensive.",
+            "endTime": "0:01:37.000",
+            "startTime": "0:01:24.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - HSE Bandstructure QE Job.",
+            "endTime": "0:01:43.000",
+            "startTime": "0:01:37.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='4.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:02:00.000",
+            "startTime": "0:01:50.000"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running. <break time='5.0' />",
+            "endTime": "0:02:13.000",
+            "startTime": "0:02:04.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:02:23.000",
+            "startTime": "0:02:19.000"
+        },
+        {
+            "text": "The band structure dispersion plot can be found at the bottom of the results page. This final result is in agreement with the published literature.",
+            "endTime": "0:02:38.000",
+            "startTime": "0:02:29.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:42.000",
+            "startTime": "0:02:40.000"
+        }
+    ],
+    "youTubeId": "Q-qPX6EY9Ok"
+}
