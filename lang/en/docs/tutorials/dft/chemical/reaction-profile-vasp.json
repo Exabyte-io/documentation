@@ -1,0 +1,124 @@
+{
+    "descriptionLinks": [
+        "Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method with VASP: https://docs.exabyte.io/tutorials/dft/chemical/reaction-profile-vasp/"
+    ],
+    "description": "In this tutorial animation, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, by making use of the VASP simulation engine coupled with a manually-generated interpolated set.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/vasp.json#/tags"
+        },
+        {
+            "...": "../../../models/auxiliary-concepts/nudged-elastic-band.json#/tags"
+        }
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method",
+    "youTubeCaptions": [
+        {
+            "text": "Calculate Reaction Energy Profile tutorial.",
+            "endTime": "00:00:03.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:07.000",
+            "startTime": "00:00:03.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the materials tab, and choose the entire Interpolated Set by selecting all five images of the hydrogen molecule in the example list.",
+            "endTime": "0:00:16.000",
+            "startTime": "0:00:07.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Nudged Elastic Band' workflow by selecting it in the list. <break time='0.5' /> This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:27.000",
+            "startTime": "0:00:16.500"
+        },
+        {
+            "text": "Now, let us examine the first subworkflow, for calculating the total energy of the initial and final images in the interpolated set. Open the first <sub alias='WASP'>VASP</sub> unit for the initial structure calculation, by clicking it.",
+            "endTime": "0:00:42.000",
+            "startTime": "0:00:29.500"
+        },
+        {
+            "text": "Inspect the <sub alias='WASP'>VASP</sub> input files displayed at the bottom. They are used to perform a basic total energy ground state SCF calculation.",
+            "endTime": "0:00:50.000",
+            "startTime": "0:00:42.500"
+        },
+        {
+            "text": "The same input parameters can be retrieved in the second <sub alias='WASP'>VASP</sub> unit, for the final structure calculation.",
+            "endTime": "0:00:55.000",
+            "startTime": "0:00:50.500"
+        },
+        {
+            "text": "We now navigate to the 'Important Settings' tab, where we set the size of the grid of k-points to one for both the initial and final image structures, since we are dealing with chemical molecules in this case.",
+            "endTime": "0:01:08.000",
+            "startTime": "0:00:57.500"
+        },
+        {
+            "text": "Next, we inspect the contents of the second subworkflow. <break time='1.0' /> It is used to run a shell script, which prepares the directories necessary to run a <sub alias='WASP'>VASP</sub> N.E.B. calculation. <break time='1.0' /> The outputs of the previous subworkflow, on the SCF calculations applied to the initial and final images, are here copied into the initial <sub alias='zero zero'>(00)</sub> and final (0N) directories, respectively. <break time='1.0' /> The remaining intermediate images are put in <sub alias='zero one'>(01)</sub> to <sub alias='zero n minus one'>'0(N-1)'</sub> directories.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:18.500"
+        },
+        {
+            "text": "Finally, we look at the main final N.E.B. subworkflow, and inspect its only unit.",
+            "endTime": "0:02:09.000",
+            "startTime": "0:02:03.000"
+        },
+        {
+            "text": "Within the <sub alias='WASP'>VASP</sub> input script at the bottom, pay particular attention to the 'IMAGES' input parameter, defining the number of interpolated image geometries between the initial and final states. <break time='1.0' /> Also, the 'SPRING' keyword defines the spring constant between the images. <break time='1.0' /> A negative value turns on nudging.",
+            "endTime": "0:02:31.500",
+            "startTime": "0:02:12.500"
+        },
+        {
+            "text": "Once again, under the 'Important Settings' tab, we set the size of the grid of k-points to one, for all intermediate images as well.",
+            "endTime": "0:02:43.000",
+            "startTime": "0:02:35.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with six cores on the OR8 queue, since for <sub alias='WASP'>VASP</sub> N.E.B. calculations the number of cores has to be a multiple of the number of intermediate images, which in our case is three.",
+            "endTime": "0:03:04.000",
+            "startTime": "0:02:47.000"
+        },
+        {
+            "text": "For the first initial/final total energy subworkflow, six cores are not necessary, and hence we set a separate compute configuration with four cores only.",
+            "endTime": "0:03:18.000",
+            "startTime": "0:03:09.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. <break time='2.0' /> Here, we call it - <sub alias='WASP'>VASP</sub> N.E.B. Reaction Profile Calculation.",
+            "endTime": "0:03:33.000",
+            "startTime": "0:03:24.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
+            "endTime": "0:03:53.000",
+            "startTime": "0:03:42.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:04:02.000",
+            "startTime": "0:03:56.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:04:05.000",
+            "startTime": "0:04:02.500"
+        },
+        {
+            "text": "The final result for the plot of the reaction energy profile, as a function of the overall reaction coordinate, can be found towards the bottom of the results page. <break time='1.0' /> The correct activation energy barrier for the collinear proton transfer reaction in hydrogen, of around 0.2 eV, has therefore been computed, as expected.",
+            "endTime": "0:04:31.000",
+            "startTime": "0:04:11.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:04:34.000",
+            "startTime": "0:04:32.000"
+        }
+    ],
+    "youTubeId": "3fSmAPeqc_c"
+}
