@@ -17,7 +17,7 @@
             "...": "../../../properties-directory/non-scalar/band-gaps.json#/tags"
         },
         "HSE",
-        "Hybrid Functional"
+        "Hybrid"
     ],
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Gap and Density of States with HSE and QE",
     "youTubeCaptions": [
