@@ -1,0 +1,94 @@
+{
+    "descriptionLinks": [
+        "Calculate Surface Energy: https://docs.exabyte.io/tutorials/dft/thermodynamic/surface-energy/"
+    ],
+    "description": "The present tutorial page explains how to calculate the surface energy for the simple case of crystalline copper, using Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/scalar/surface-energy.json#/tags"
+        }
+    ],
+    "title": "Exabyte.io Tutorial: Calculate Surface Energy",
+    "youTubeCaptions": [
+        {
+            "text": "Calculate Surface Energy tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the materials tab, and choose a surface of Gold oriented along the [1,1,1] axis, as a case study.",
+            "endTime": "0:00:14.000",
+            "startTime": "0:00:06.500"
+        },
+        {
+            "text": "We now take a closer look at the gold slab, with the help of the Materials interactive viewer interface. <break time='6.0' /> We can, for instance, zoom into the image, or rotate it, for better visualization.",
+            "endTime": "0:00:33.000",
+            "startTime": "0:00:16.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Surface Energy' workflow by selecting it in the list. <break time='0.5' /> This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:54.000",
+            "startTime": "0:00:43.000"
+        },
+        {
+            "text": "We take a look at the list of units for performing the surface energy computation, displayed at the bottom. <break time='0.5' /> The logic behind such units is described in detail in the main tutorial text, linked in the video description.",
+            "endTime": "0:01:07.500",
+            "startTime": "0:00:55.000"
+        },
+        {
+            "text": "We now navigate to the 'Important Settings' tab, and set the size of the grid of k-points to <sub alias='eight by eight by one'>8x8x1</sub>, since the normal vector to the surface is along the z axis.",
+            "endTime": "0:01:18.000",
+            "startTime": "0:01:08.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. <break time='3.0' /> Here, we use one node with eight cores on the OR8 queue.",
+            "endTime": "0:01:31.000",
+            "startTime": "0:01:19.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. <break time='2.0' /> Here, we call it - Gold Surface Energy Calculation.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:40.000"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:02:07.000",
+            "startTime": "0:01:55.000"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:02:12.000",
+            "startTime": "0:02:07.500"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:02:16.000",
+            "startTime": "0:02:12.500"
+        },
+        {
+            "text": "The final result for the surface energy of our gold surface can be found under the results page. <break time='1.0' /> The surface energy in this case is of around 0.049 <sub alias='electronvolts per Angstrom squared'>eV/A^2</sub>.",
+            "endTime": "0:02:31.000",
+            "startTime": "0:02:18.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:35.000",
+            "startTime": "0:02:32.000"
+        }
+    ],
+    "youTubeId": "eDNjgMws9Us"
+}
