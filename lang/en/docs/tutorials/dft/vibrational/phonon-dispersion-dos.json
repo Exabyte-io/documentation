@@ -1,0 +1,104 @@
+{
+    "descriptionLinks": [
+        "Calculate Phonon Dispersion Curve and Density of States: https://docs.exabyte.io/tutorials/dft/electronic/phonon-dispersion-dos/"
+    ],
+    "description": "In this tutorial, we show how to calculate the Phonon Density of States and dispersion plot using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Calculate Phonon Dispersion Curve and Density of States",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/phonon-dispersions.json#/tags"
+        }
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Phonon Dispersion Curve and Density of States tutorial.",
+            "endTime": "00:00:03.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:07.000",
+            "startTime": "00:00:03.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Phonon Density of States + Dispersion' workflow by selecting it in the list. This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:20.000",
+            "startTime": "0:00:07.500"
+        },
+        {
+            "text": "Now, let us review the component units making up the Phonon calculation workflow.",
+            "endTime": "0:00:26.000",
+            "startTime": "0:00:21.500"
+        },
+        {
+            "text": "First open the second unit to inspect its contents. Pay particular attention to the size of the grid of special q-points, over which the phonon frequencies are computed, defined by the 'nq' keywords.",
+            "endTime": "0:00:40.000",
+            "startTime": "0:00:27.000"
+        },
+        {
+            "text": "Next, try opening the 'q2r' unit. <break time='0.5' /> It is used to calculate the  Interatomic  Force  Constants in  real  space  from  the previously-computed dynamical matrices.",
+            "endTime": "0:00:52.000",
+            "startTime": "0:00:41.000"
+        },
+        {
+            "text": "Next, let us inspect also the 'mat dyn grid' unit. It produces the phonon frequencies and Density of States at a generic wave vector, using the force constants calculated previously.",
+            "endTime": "0:01:04.000",
+            "startTime": "0:00:52.500"
+        },
+        {
+            "text": "Finally, we take a look at the 'mat dyn path' unit. It produces the phonon frequencies, in the form of a dispersion plot over a specified path in reciprocal space, interpolating upon the results of the previous units.",
+            "endTime": "0:01:18.000",
+            "startTime": "0:01:04.500"
+        },
+        {
+            "text": "Now, we navigate to the 'Important Settings' tab, where we review the options to customize the size of the grid of q-points for phonon frequency calculation, as well as the interpolation grid, or 'i-grid', for building the dispersion plot over a specified reciprocal path, or 'i-path'. <break time='3.0' /> The special symmetry points across the Brillouin Zone defining this path, and the number of step points between them, can be defined and entered, one by one.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:20.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with sixteen cores on the OR16 queue, since phonon calculations are quite computationally expensive.",
+            "endTime": "0:02:09.000",
+            "startTime": "0:01:55.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Phonon Calculation.",
+            "endTime": "0:02:19.000",
+            "startTime": "0:02:13.000"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:02:35.000",
+            "startTime": "0:01:23.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running. <break time='5.0' />",
+            "endTime": "0:02:45.000",
+            "startTime": "0:02:36.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />",
+            "endTime": "0:02:53.000",
+            "startTime": "0:02:49.000"
+        },
+        {
+            "text": "The phonon Density of States, and the phonon dispersion plot over the specified path in reciprocal space, can be found towards the bottom of the results page. <break time='2.0' /> These final results are in agreement with the published literature, for the case of crystalline silicon.",
+            "endTime": "0:03:13.000",
+            "startTime": "0:02:57.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:03:18.000",
+            "startTime": "0:03:16.000"
+        }
+    ],
+    "youTubeId": "Sz6t8ELQqJU"
+}
