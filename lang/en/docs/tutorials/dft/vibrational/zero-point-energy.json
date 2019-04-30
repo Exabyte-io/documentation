@@ -1,0 +1,84 @@
+{
+    "descriptionLinks": [
+        "Calculate Zero Point Energy: https://docs.exabyte.io/tutorials/dft/vibrational/zero-point-energy/"
+    ],
+    "description": "In this tutorial, we show how to calculate the Zero Point Energy using our Web Interface, for the simple case of crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Calculate Zero Point Energy",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/vasp.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/scalar/zero-point-energy.json#/tags"
+        }
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Zero Point Energy tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Zero Point Energy' workflow by selecting it in the list. This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:16.000",
+            "startTime": "0:00:06.500"
+        },
+        {
+            "text": "Now, let us review the component units making up the Zero Point Energy workflow.",
+            "endTime": "0:00:22.000",
+            "startTime": "0:00:16.500"
+        },
+        {
+            "text": "Open the unique unit, to inspect its contents. <break time='0.5' /> Within the <sub alias='WASP'>VASP</sub> input scripts displayed at the bottom, pay particular attention to the '<sub alias='I brian'>IBRION</sub> = 5' flag, which enables <sub alias='WASP'>VASP</sub> to run the displacements for the zero point energy calculation.",
+            "endTime": "0:00:37.000",
+            "startTime": "0:00:22.500"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. <break time='0.5' /> Here, we use one node with four cores.",
+            "endTime": "0:00:54.000",
+            "startTime": "0:00:46.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Silicon Zero Point Energy Calculation.",
+            "endTime": "0:01:02.000",
+            "startTime": "0:00:55.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:01:16.000",
+            "startTime": "0:01:04.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. <break time='0.5' /> Please wait, until the job has finished running. <break time='3.0' />",
+            "endTime": "0:01:25.000",
+            "startTime": "0:01:16.500"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />",
+            "endTime": "0:01:32.000",
+            "startTime": "0:01:28.000"
+        },
+        {
+            "text": "The final result for the Zero Point Energy of silicon can be found under the results page. <break time='1.0' /> Its value in this case is of 0.093 eV.",
+            "endTime": "0:01:46.000",
+            "startTime": "0:01:35.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:01:51.000",
+            "startTime": "0:01:48.500"
+        }
+    ],
+    "youTubeId": "Dd__p4tGDmY"
+}
