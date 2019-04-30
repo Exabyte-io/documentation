@@ -3,6 +3,7 @@
         "Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method and Quantum ESPRESSO: https://docs.exabyte.io/tutorials/dft/chemical/reaction-profile-qe/"
     ],
     "description": "In this tutorial animation, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, as implemented under Quantum ESPRESSO. In this case, we make use of a manually-generated interpolated set of intermediate images.",
+    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
@@ -17,7 +18,6 @@
             "...": "../../../models/auxiliary-concepts/nudged-elastic-band.json#/tags"
         }
     ],
-    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method",
     "youTubeCaptions": [
         {
             "text": "Calculate Reaction Energy Profile tutorial.",
@@ -40,7 +40,7 @@
             "startTime": "0:00:17.000"
         },
         {
-            "text": "We now navigate to the 'Important Settings' tab, where we set the size of the grid of k-points to one for all image structures within the interpolated set, since we are dealing with chemical molecules in this case.",
+            "text": "We now navigate to the 'Important Settings' tab, where we set the size of the grid of k-points to one for all image structures within the interpolated set, since we are dealing with molecules in this case.",
             "endTime": "0:00:43.000",
             "startTime": "0:00:32.000"
         },
@@ -95,5 +95,5 @@
             "startTime": "0:02:41.000"
         }
     ],
-    "youTubeId": "9sUyluAmq2Y"
+    "youTubeId": "1-B2Cf7nfzI"
 }
