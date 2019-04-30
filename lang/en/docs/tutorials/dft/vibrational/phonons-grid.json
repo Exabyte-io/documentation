@@ -1,0 +1,142 @@
+{
+    "descriptionLinks": [
+        "Calculate Phonons with Grid Method: https://docs.exabyte.io/tutorials/dft/vibrational/phonons-grid/"
+    ],
+    "description": "This tutorial animation explains how to calculate the Phonon Dispersion Curves and Phonon Density of States of materials, based on the Grid Method for the distributed computing of the lattice vibrational modes. We consider crystalline silicon as a simple example.",
+    "title": "Exabyte.io Tutorial: Calculate Phonons with Grid Method",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/phonon-dispersions.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/phonons-grid.json#/tags"
+        }
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Phonons with Grid Method tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Phonon Map' workflow by selecting it in the list. This workflow can be imported from the bank, if it is not already listed.",
+            "endTime": "0:00:16.000",
+            "startTime": "0:00:06.500"
+        },
+        {
+            "text": "Now, let us review the component units making up the Phonon calculation workflow.",
+            "endTime": "0:00:22.000",
+            "startTime": "0:00:16.500"
+        },
+        {
+            "text": "First, navigate to the 'Important Settings' tab of the first subworkflow, for performing a preliminary scf total energy calculation, and reduce the size of the grid of k-points to <sub alias='six by six by six'>6x6x6</sub>, if it is not already so.",
+            "endTime": "0:00:37.000",
+            "startTime": "0:00:23.500"
+        },
+        {
+            "text": "Then, open the second subworkflow. It generates the grid of q-points over which the phonon modes will be calculated, for each irreducible representation.",
+            "endTime": "0:00:47.000",
+            "startTime": "0:00:38.000"
+        },
+        {
+            "text": "The size of this q-grid should be a divisor of the previous k-grid, which is why we set it to <sub alias='two by two by two'>2x2x2</sub>.",
+            "endTime": "0:00:54.000",
+            "startTime": "0:00:47.500"
+        },
+        {
+            "text": "Then, open the only unit of this subworkflow to inspect its contents. <break time='0.5' /> Within the Quantum ESPRESSO input script, pay particular attention to the 'nq' keywords defining the q-points grid.",
+            "endTime": "0:01:05.000",
+            "startTime": "0:00:54.500"
+        },
+        {
+            "text": "Next, open the third subworkflow in the sequence. It comprises a python script, whose role is to parse and extract q-points and irreducible representations from the previously-generated Quantum ESPRESSO XML data. <break time='0.5' /> Each distinct combination of q-point and irreducible representation is added as a separate entry, to what follows.",
+            "endTime": "0:01:26.000",
+            "startTime": "0:01:05.500"
+        },
+        {
+            "text": "Next, let us inspect also the ensuing 'map' subworkflow. <break time='0.5' /> It consists in a mapping function for performing the distributed parallel phonon calculations, across each pair of q-points and irreducible representations extracted previously.",
+            "endTime": "0:01:47.000",
+            "startTime": "0:01:33.500"
+        },
+        {
+            "text": "Care should be taken to set the q-grid under the 'Important Settings' of the map subworkflow again to <sub alias='two by two by two'>2x2x2</sub>, as in the previous steps.",
+            "endTime": "0:02:06.000",
+            "startTime": "0:01:57.500"
+        },
+        {
+            "text": "The list of pairs of q-points and irreducible representations can be inspected under the 'Data' tab of the Map editor interface.",
+            "endTime": "0:02:18.000",
+            "startTime": "0:02:11.000"
+        },
+        {
+            "text": "Finally, we take a look at the last 'reduce' subworkflow. <break time='0.5' /> It collects together the results of the previous calculations over each independent pair of q-points and irreducible representations.",
+            "endTime": "0:02:33.000",
+            "startTime": "0:02:22.000"
+        },
+        {
+            "text": "These combined results are then used to complete the phonon dispersion and density of states calculation.",
+            "endTime": "0:02:39.000",
+            "startTime": "0:02:33.500"
+        },
+        {
+            "text": "Here, the size of the q-grid under 'Important Settings' should once again be set to the <sub alias='two by two by two'>2x2x2</sub> value being considered in the present example.",
+            "endTime": "0:02:52.000",
+            "startTime": "0:02:43.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with eight cores on the OR8 queue.",
+            "endTime": "0:03:05.000",
+            "startTime": "0:02:57.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. <break time='1.0' /> Here, we call it - Silicon Phonon Grid Calculation.",
+            "endTime": "0:03:16.000",
+            "startTime": "0:03:08.000"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:03:40.000",
+            "startTime": "0:03:29.500"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. <break time='2.0' /> Please wait, until the job has finished running.",
+            "endTime": "0:03:57.000",
+            "startTime": "0:03:47.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />",
+            "endTime": "0:04:08.000",
+            "startTime": "0:04:04.000"
+        },
+        {
+            "text": "The phonon Density of States, and the phonon dispersion plot over the specified path in reciprocal space, can be found towards the bottom of the results page. <break time='2.0' /> These final results are in agreement with the published literature, for the case of crystalline silicon.",
+            "endTime": "0:04:28.000",
+            "startTime": "0:04:11.000"
+        },
+        {
+            "text": "We conclude by opening the 'Files' tab, and inspecting the list of 'map' directories created during the course of the simulation.",
+            "endTime": "0:04:47.000",
+            "startTime": "0:04:40.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:04:52.000",
+            "startTime": "0:04:49.000"
+        }
+    ],
+    "youTubeId": "xZdjLr7zlhw"
+}

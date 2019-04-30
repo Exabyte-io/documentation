@@ -75,7 +75,7 @@ In the video animation below, we outline the procedure for creating and executin
     Phonon calculations are in general quite computationally demanding. We therefore recommend the employment of at least 8 computing cores. For larger calculations, [OF queues](../../../infrastructure/resource/queues.md) will have faster turnaround than the OR queues considered in the video.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/IWtUgsGwHzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/xZdjLr7zlhw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
