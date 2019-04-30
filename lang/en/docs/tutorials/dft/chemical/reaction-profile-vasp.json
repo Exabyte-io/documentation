@@ -60,13 +60,18 @@
             "startTime": "0:00:57.500"
         },
         {
-            "text": "Next, we inspect the contents of the second subworkflow. <break time='1.0' /> It is used to run a shell script, which prepares the directories necessary to run a <sub alias='WASP'>VASP</sub> N.E.B. calculation. <break time='1.0' /> The outputs of the previous subworkflow, on the SCF calculations applied to the initial and final images, are here copied into the initial <sub alias='zero zero'>(00)</sub> and final (0N) directories, respectively. <break time='1.0' /> The remaining intermediate images are put in <sub alias='zero one'>(01)</sub> to <sub alias='zero n minus one'>'0(N-1)'</sub> directories.",
-            "endTime": "0:01:48.000",
+            "text": "Next, we inspect the contents of the second subworkflow. <break time='1.0' /> It is used to run a shell script, which prepares the directories necessary to run a <sub alias='WASP'>VASP</sub> N.E.B. calculation.",
+            "endTime": "0:01:29.000",
             "startTime": "0:01:18.500"
         },
         {
-            "text": "Finally, we look at the main final N.E.B. subworkflow, and inspect its only unit.",
-            "endTime": "0:02:09.000",
+            "text": "The outputs of the previous subworkflow, on the SCF calculations applied to the initial and final images, are here copied into the initial <sub alias='zero zero'>(00)</sub> and final (0N) directories, respectively. <break time='1.0' /> The remaining intermediate images are put in <sub alias='zero one'>(01)</sub> to <sub alias='zero n minus one'>'0(N-1)'</sub> directories.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:30.000"
+        },
+        {
+            "text": "Finally, we look at the main N.E.B. subworkflow, and inspect its only unit.",
+            "endTime": "0:02:09.300",
             "startTime": "0:02:03.000"
         },
         {
@@ -120,5 +125,5 @@
             "startTime": "0:04:32.000"
         }
     ],
-    "youTubeId": "3fSmAPeqc_c"
+    "youTubeId": "-ZKK8xTrmSY"
 }

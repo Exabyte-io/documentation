@@ -60,9 +60,14 @@
             "startTime": "0:01:04.500"
         },
         {
-            "text": "Now, we navigate to the 'Important Settings' tab, where we review the options to customize the size of the grid of q-points for phonon frequency calculation, as well as the interpolation grid, or 'i-grid', for building the dispersion plot over a specified reciprocal path, or 'i-path'. <break time='3.0' /> The special symmetry points across the Brillouin Zone defining this path, and the number of step points between them, can be defined and entered, one by one.",
-            "endTime": "0:01:48.000",
+            "text": "Now, we navigate to the 'Important Settings' tab, where we review the options to customize the size of the grid of q-points for phonon frequency calculation, as well as the interpolation grid, or 'i-grid', for building the dispersion plot over a specified reciprocal path, or 'i-path'.",
+            "endTime": "0:01:38.000",
             "startTime": "0:01:20.000"
+        },
+        {
+            "text": "The special symmetry points across the Brillouin Zone defining this path, and the number of step points between them, can be defined and entered, one by one.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:41.000"
         },
         {
             "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with sixteen cores on the OR16 queue, since phonon calculations are quite computationally expensive.",
@@ -77,7 +82,7 @@
         {
             "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution.",
             "endTime": "0:02:35.000",
-            "startTime": "0:01:23.500"
+            "startTime": "0:02:23.500"
         },
         {
             "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. Please wait, until the job has finished running. <break time='5.0' />",
@@ -100,5 +105,5 @@
             "startTime": "0:03:16.000"
         }
     ],
-    "youTubeId": "Sz6t8ELQqJU"
+    "youTubeId": "41uropwrb0k"
 }
