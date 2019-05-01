@@ -20,6 +20,14 @@ Combinatorial sets are discussed in [this section](./advanced/combinatorial-set.
 
 The generation of surfaces and slabs is outlined in [this page](./advanced/surface-slab.md).
 
+## [Interpolated Sets](advanced/interpolated-set.md)
+
+We review the creation of interpolated sets [here](advanced/interpolated-set.md)
+
+## [Boundary Conditions](advanced/boundary-conditions.md)
+
+[This other page](advanced/boundary-conditions.md) presents the different types of boundary conditions available on our platform.
+
 <!-- TODO: re-enable when implemented
 # Polymers <i class="zmdi zmdi-polymer zmdi-hc-border"></i> 
 # Nanotubes <i class="zmdi zmdi-camera-alt zmdi-hc-border"></i>
