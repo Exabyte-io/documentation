@@ -178,6 +178,7 @@ nav:
         - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
             - Nudged Elastic Band:                       models/auxiliary-concepts/nudged-elastic-band.md
+            - Effective Screening Medium:                models/auxiliary-concepts/esm.md
             - Reciprocal space:                          models/auxiliary-concepts/reciprocal-space.md
             - Reciprocal space > sampling:               models/auxiliary-concepts/reciprocal-space/sampling.md
             - Reciprocal space > paths:                  models/auxiliary-concepts/reciprocal-space/paths.md
@@ -350,6 +351,7 @@ nav:
             - "Advanced > Combinatorial Set":           materials-designer/header-menu/advanced/combinatorial-set.md
             - "Advanced > Interpolated Set":            materials-designer/header-menu/advanced/interpolated-set.md
             - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
+            - "Advanced > Boundary Conditions":         materials-designer/header-menu/advanced/boundary-conditions.md
             - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:
             - Items List:                               materials-designer/sidebar-items.md
@@ -360,6 +362,7 @@ nav:
         - 3D Viewer/Editor:
             - Overview:                                 materials-designer/3d-editor.md
             - View Options:                             materials-designer/3d-editor/view.md
+            - Parameters Options:                       materials-designer/3d-editor/parameters.md
             - Edit Options:                             materials-designer/3d-editor/edit.md
             - "Edit Actions > Overview":                materials-designer/3d-editor/editor-actions/overview.md
             - "Edit Actions > Add/Remove Atoms":        materials-designer/3d-editor/editor-actions/add-remove-atoms.md
