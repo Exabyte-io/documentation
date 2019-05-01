@@ -8,4 +8,5 @@ oauth-key.json
 oauth-credentials.json
 service-account-key.json
 *.py[cod]
+images
 
