@@ -1,8 +1,8 @@
 # Effective Screening Medium (ESM) Calculation
 
-In the present tutorial, we demonstrate how to create a [Job](../../../jobs/overview.md) in order to extract **potential/charge profiles**, via the [Effective Screening Medium (ESM)](../../../models/auxiliary-concepts/esm.md) approach for simulating **surfaces** and **interfaces** based on [Density Functional Theory](../../../models-directory/dft/overview.md).
+In this tutorial, we demonstrate how to create a [Job](../../../jobs/overview.md) in order to extract the **potential/charge profiles** via the [Effective Screening Medium (ESM)](../../../models/auxiliary-concepts/esm.md) approach for simulating **surfaces** and **interfaces**, based on [Density Functional Theory](../../../models-directory/dft/overview.md).
 
-We consider a water (H2O) molecule in the present example, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
+We consider a water (H2O) molecule in the present example, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine.
 
 !!!note "Quantum ESPRESSO version considered in this tutorial"
     The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
@@ -30,7 +30,7 @@ This option determines the boundary conditions used for either side of the slab.
 
 #### esm_w
 
-This keyword determines the [position offset](../../../materials-designer/header-menu/advanced/boundary-conditions.md#offset) of the start of the effective screening region, measured relative to the edge of the simulation cell (of total vertical thickness $L_z$). The ESM region begins at (with the slab centered around z=0):
+This keyword determines the [position offset](../../../materials-designer/header-menu/advanced/boundary-conditions.md#offset) of the start of the effective screening region, measured relative to the edge of the simulation cell (of total vertical thickness $L_z$). The ESM region begins at (assuming the slab to be centered around z=0):
 
 $$
  z = +/- [L_z/2 + esm_w]
@@ -54,9 +54,9 @@ The structure of a water molecule (H2O) can readily be [imported](../../../mater
 
 This water structure should then be [imported](../../../materials-designer/header-menu/input-output/import.md) into the [Materials Designer](../../../materials-designer/overview.md) interface, in order to edit its [boundary conditions](../../../materials-designer/header-menu/advanced/boundary-conditions.md) via the corresponding option in the ["Advanced" menu](../../../materials-designer/header-menu/advanced.md). 
 
-In the present example, we shall opt for the "Vacuum-Slab-Vacuum" (bc1) boundary condition option. The vacuum boundaries should be shifted by half of the lattice $c$ constant via the "Offset" option of the ["Set Boundary Conditions" dialog](../../../materials-designer/header-menu/advanced/boundary-conditions.md).
+In the present example, we shall opt for the "Vacuum-Slab-Vacuum" (bc1) boundary condition option. The vacuum boundaries should be shifted by half of the lattice $c$ constant, by leaving the "Offset" option of the ["Set Boundary Conditions" dialog](../../../materials-designer/header-menu/advanced/boundary-conditions.md) to its default zero value.
 
-After finishing setting up the boundary conditions for our water molecule structure, the user should [Save](../../../materials-designer/header-menu/input-output/save.md) the changes to the structure within the account-owned materials collection, and then exit Materials Designer.
+After finishing setting up the boundary conditions for our water molecule structure, the user should [Save](../../../materials-designer/header-menu/input-output/save.md) the changes to the structure into the account-owned materials collection, and then exit Materials Designer.
 
 ## Create Job
 
@@ -64,7 +64,7 @@ The user should then open an instance of the [Job Designer interface](../../../j
 
 ## Import Water Molecule in Job Designer
 
-The previously-created water structure should now be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) via the ["Materials" tab](../../../jobs-designer/materials-tab.md) of [Job Designer](../../../jobs-designer/overview.md), to be made the main simulation sample structure.
+The previously-created water structure should now be [selected and imported](../../../jobs-designer/actions-header-menu/select-materials.md) via the ["Materials" tab](../../../jobs-designer/materials-tab.md) of [Job Designer](../../../jobs-designer/overview.md), in order to be made the main simulation system under consideration.
 
 ## Copy ESM Workflow from Bank
 
@@ -74,7 +74,7 @@ This workflow can later be [selected](../../../jobs-designer/actions-header-menu
 
 ## Change Important Settings
 
-Opening ["Important Settings"](../../../workflow-designer/subworkflow-editor/important-settings.md) within the [Workflow Tab](../../../jobs-designer/workflow-tab.md) allows the user to customize the following Boundary Conditions-related settings:
+Opening ["Important Settings"](../../../workflow-designer/subworkflow-editor/important-settings.md) within the [Workflow Tab](../../../jobs-designer/workflow-tab.md) of Job Designer allows the user to customize the following Boundary Conditions-related settings:
 
 - Type of boundary conditions
 - Offset
@@ -101,10 +101,10 @@ Similarly, the Charge Density profile is also displayed under the [Results tab](
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of an ESM computation on a water molecule using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine in the following animation. Here, we shall make use of the "Relax" variant of the Quantum ESPRESSO ESM workflow.
+We demonstrate the above-mentioned steps involved in the creation and execution of an ESM computation on a water molecule, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation. Here, we shall make use of the "Relax" variant of the Quantum ESPRESSO ESM workflow.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/7VskTArfynU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/ZGjX7fTGji8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
