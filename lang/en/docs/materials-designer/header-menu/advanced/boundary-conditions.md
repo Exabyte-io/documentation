@@ -1,6 +1,6 @@
 # Boundary Conditions
 
-Boundary conditions specify how the system under investigation (referred to as "Slab" for the case of interfaces) can interact or is related to its surroundings.
+Boundary conditions specify how the system under investigation (referred to as "Slab" for the case of interfaces) can interact or is related to its surroundings. Such customization of boundary conditions can be especially resourceful in the case of [Effective Screening Medium](../../../models/auxiliary-concepts/esm.md) calculations.
 
 ## Set Boundary Conditions Dialog
 
@@ -10,12 +10,12 @@ Open the "Set Boundary Conditions" dialog via the ["Advanced" menu](../advanced.
 
 ## Boundary Conditions Types
 
-The dialog features a drop down menu on the left, where the **type** of boundary condition can be chosen. We offer the possibility to choose between the following distinct types:
+The dialog features a drop down menu on the left, where the **type** of boundary condition can be chosen and applied perpendicularly to the central slab under consideration. We offer the possibility to choose between the following distinct types:
 
 - Periodic Boundary Conditions (pbc): the system is completely surrounded by identical replicas of itself in all three dimensions [^1].
-- Vacuum-Slab-Vacuum (bc1): the system is sandwiched between two layers of vacuum.
-- Metal-Slab-Metal (bc2): the system is enveloped between two metallic layers.
-- Vacuum-Slab-Metal (bc3): a combination of the above two options.
+- Vacuum-Slab-Vacuum (bc1): immerse the slab between two semi-infinite vacuum regions.
+- Metal-Slab-Metal (bc2): immerse the slab between two semi-infinite metallic electrodes, with optional fixed electric field applied between them.
+- Vacuum-Slab-Metal (bc3): immerse the slab between one semi-infinite vacuum region (left-hand side) and one semi-infinite metallic electrode (right-hand side).
 
 ## Offset
 

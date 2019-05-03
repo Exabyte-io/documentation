@@ -8,9 +8,15 @@ The  surface/interface slab system (the "working" region) is typically sandwiche
 
 The ESM model affords for the modeling of polarized surfaces without dipole correction.
 
+## Applications of ESM
+
+This ESM method can be used to calculate the total energy, charge density, force, and potential of a polarized or charged slab (which can also consist in molecules and clusters).
+
+ESM screens the electronic charge of a polarized/charged medium along one perpendicular direction by introducing a classical charge model and a local relative permittivity into the first-principles calculation framework. 
+
 ## Implementation
 
-We explain how ESM calculations are implemented and performed on our platform in a dedicated [tutorial page].
+We explain how ESM calculations are implemented and performed on our platform in a dedicated [tutorial page](../../tutorials/dft/electronic/esm.md).
 
 ## Links
 
