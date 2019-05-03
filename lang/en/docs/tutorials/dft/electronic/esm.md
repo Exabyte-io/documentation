@@ -38,11 +38,20 @@ $$
 
 #### esm_efield
 
-This other option gives the magnitude of the electric field to be applied between semi-infinite ESM electrodes.
+This other option gives the magnitude of the electric field to be applied between semi-infinite ESM electrodes (metals). It is applicable only in the case of the metal-slab-metal (bc2) [boundary condition](../../../materials-designer/header-menu/advanced/boundary-conditions.md).
+
+#### lfcpopt
+
+If the `lfcpopt` option is set to ".TRUE.", it performs a constant bias potential (constant-mu) calculation [^2] for a static system with ESM method. This option is subject to the following two conditions:
+
+- calculation must be of type 'relax'.
+- [Boundary conditions](../../../materials-designer/header-menu/advanced/boundary-conditions.md) can be of type "bc2" or "bc3" only.
+
+Using the constant-mu method, one can control the Fermi energy, that is the applied bias, during a simulation. 
 
 #### fcp_mu
 
-Finally, the `fcp_mu` tag in the Quantum ESPRESSO input script sets the target Fermi energy for the simulation.
+Finally, the `fcp_mu` tag in the Quantum ESPRESSO input script sets the target Fermi energy for the simulation. 
 
 ### SCF vs Relax ESM Calculations
 
@@ -76,7 +85,7 @@ This workflow can later be [selected](../../../jobs-designer/actions-header-menu
 
 Opening ["Important Settings"](../../../workflow-designer/subworkflow-editor/important-settings.md) within the [Workflow Tab](../../../jobs-designer/workflow-tab.md) of Job Designer allows the user to customize the following Boundary Conditions-related settings:
 
-- Type of boundary conditions
+- Type of [boundary conditions](../../../materials-designer/header-menu/advanced/boundary-conditions.md)
 - Offset
 - Electric Field
 - Target Fermi Energy 
@@ -87,7 +96,7 @@ In addition, the user should set the size of the grid of [k-points](../../../mod
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and examine the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Water is a small structure, so 4 CPUs and 1 minute of calculation runtime should be sufficient.
+Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), the user should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and examine the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.  Water is a small structure, so 4 CPUs and a few minutes of calculation runtime should be sufficient.
 
 ## Examine Final Results
 
@@ -112,3 +121,5 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 ## Links
 
 [^1]: [Quantum ESPRESSO ESM Examples, Official GitHub repository](https://github.com/QEF/q-e/tree/master/PW/examples/ESM_example)
+
+[^2]: [N. Bonnet, T. Morishita, O. Sugino, and M. Otani: "First-Principles Molecular Dynamics at a Constant Electrode Potential", Phys. Rev. Lett. 109, 266101 (2012)](https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.266101)
