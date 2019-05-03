@@ -99,6 +99,8 @@ When the ESM computation is complete at the end of Job execution, switching to t
 
 Similarly, the Charge Density profile is also displayed under the [Results tab](../../../jobs/ui/results-tab.md), showing the evolution of the charge density (in electron charge units/Angstrom) as a function of the same vertical "z" coordinate mentioned previously.
 
+The two dimensional (xy-plane) average charge density and electrostatic potentials are printed out into the file with the '.esm1' extension, accessible via the ["Files" tab](../../../jobs/ui/files-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md).
+
 ## Animation
 
 We demonstrate the above-mentioned steps involved in the creation and execution of an ESM computation on a water molecule, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine, in the following animation. Here, we shall make use of the "Relax" variant of the Quantum ESPRESSO ESM workflow.
