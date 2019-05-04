@@ -51,7 +51,7 @@ Using the constant-mu method, one can control the Fermi energy, that is the appl
 
 #### fcp_mu
 
-Finally, the `fcp_mu` tag in the Quantum ESPRESSO input script sets the target Fermi energy for the simulation. 
+Finally, the `fcp_mu` tag in the Quantum ESPRESSO input script sets the target Fermi energy for the simulation, if the aforementioned `lfcpopt` input parameter has been set to ".TRUE.". 
 
 ### SCF vs Relax ESM Calculations
 
