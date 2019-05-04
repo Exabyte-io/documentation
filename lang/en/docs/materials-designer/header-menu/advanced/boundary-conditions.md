@@ -32,6 +32,8 @@ Hence, the following example shown in the picture below corresponds to the "bc3"
 
 Towards the right of the "Set Boundary Conditions" dialog, the user can set the numerical value for the **offset**, in Angstroms, defining the distance separating the edge of the slab system under consideration from its surroundings (defined via the above-mentioned boundary conditions options).
 
+When boundary conditions other than periodic are chosen from the list of available options under the "Set Boundary Conditions" dialog, the reference system relative to which the slab is portrayed in the [3D editor interface](../../3d-editor.md) changes from $-L_z/2$ to $+L_z/2$, instead of 0 to $L_z$ as in the periodic case, where $L_z$ is the total vertical thickness of the slab. 
+
 ## Apply Changes
 
 Once the desired options have been entered within the "Set Boundary Conditions" dialog, click on the `Submit` button at the bottom of the dialog to implement the corresponding changes to the material under investigation.
