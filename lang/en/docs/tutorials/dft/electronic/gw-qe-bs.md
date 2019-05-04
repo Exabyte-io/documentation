@@ -71,7 +71,7 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../.
 
 ## Set Sampling in Reciprocal Space
 
-We set the size of the [grid of k-points and q-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 2 x 2 x 2 for both workflow units, via the ["Important Settings" section](../../../workflow-designer/subworkflow-editor/important-settings.md) under the [Workflow Tab](../../../jobs-designer/workflow-tab.md) of [Job Designer](../../../jobs-designer/overview.md). 
+We set the size of the [grids of k-points and q-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 2 x 2 x 2 for both workflow units, via the ["Important Settings" section](../../../workflow-designer/subworkflow-editor/important-settings.md) under the [Workflow Tab](../../../jobs-designer/workflow-tab.md) of [Job Designer](../../../jobs-designer/overview.md). 
 
 In addition, we also modify the [k-point path](../../../models/auxiliary-concepts/reciprocal-space/paths.md), accessible towards the bottom of "Important Settings", to sample only the region of the Brillouin Zone of the crystal between the central Gamma point and the "X" special symmetry point.
 
@@ -88,9 +88,12 @@ In order to run the SternheimerGW code in parallel (more than 1 core), the user 
 
 When both [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [band structure](../../../properties-directory/non-scalar/bandstructure.md) of silicon, plotted as a dispersion curve as a function of the special [k-point paths](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen (the Gamma-X direction in our case).
 
+!!!note "Band gap result"
+    In this case, the band gap is calculated on the chosen Gamma-X reciprocal path, and not on the overall grid.
+
 ## Animation
 
-We demonstrate the above-mentioned steps involved in the creation and execution of a GW band structure computation on silicon, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code, in the following animation.
+We demonstrate the above-mentioned steps involved in the creation and execution of a GW band structure computation on crystalline silicon, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the full-frequency integration along the imaginary axis, in the following animation.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/7VskTArfynU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
