@@ -30,7 +30,7 @@ Hence, the following example shown in the picture below corresponds to the "bc3"
 
 ## Offset
 
-Towards the right of the "Set Boundary Conditions" dialog, the user can set the numerical value for the **offset**, in Angstroms, defining the distance separating the system from its surroundings, which are defined via the above-mentioned boundary conditions options.
+Towards the right of the "Set Boundary Conditions" dialog, the user can set the numerical value for the **offset**, in Angstroms, defining the distance separating the edge of the slab system under consideration from its surroundings (defined via the above-mentioned boundary conditions options).
 
 ## Apply Changes
 
