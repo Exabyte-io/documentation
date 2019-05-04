@@ -1,4 +1,4 @@
-# Calculate Electronic Band Structure with GW Approximation
+# Calculate Electronic Band Structure with GW Approximation and Full-frequency Integration
 
 This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
 
@@ -9,7 +9,7 @@ What sets the present tutorial apart from the [other tutorial](band-structure.md
 
 More information on this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [1] of [this page](gw-vasp-bg.md), where the use of the GW approximation is demonstrated for the alternative case of the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine.
 
-The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X direction. In this example, we use **full-frequency integration** along the imaginary axis, and a 2 x 2 x 2 grid for both k points and q points. 
+The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X direction. In this example, we use **full-frequency integration** along the imaginary axis, and a 2 x 2 x 2 grid for both k points and q points. For an alternative approach towards GW band structure computations using the Plasmon pole approach instead of full-frequency sampling, the user should also consider reviewing [this separate tutorial](gw-qe-bs-plasmon.md).
 
 ## The SternheimerGW Code
 
