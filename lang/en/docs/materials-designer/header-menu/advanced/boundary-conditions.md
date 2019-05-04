@@ -17,6 +17,17 @@ The dialog features a drop down menu on the left, where the **type** of boundary
 - Metal-Slab-Metal (bc2): immerse the slab between two semi-infinite metallic electrodes, with optional fixed electric field applied between them.
 - Vacuum-Slab-Metal (bc3): immerse the slab between one semi-infinite vacuum region (left-hand side) and one semi-infinite metallic electrode (right-hand side).
 
+## Coloring 
+
+We apply the following conventions concerning the coloring of the boundary conditions, as they appear when visualized in the Materials Designer interface:
+
+- yellow = vacuum 
+- blue = metal
+
+Hence, the following example shown in the picture below corresponds to the "bc3" option mentioned previously, wherein the central slab is sandwiched between a layer of vacuum on top and another metallic medium underneath it.
+
+![Boundary Conditions Colors](../../../images/materials-designer/bc-coloring.png "Boundary Conditions Colors")
+
 ## Offset
 
 Towards the right of the "Set Boundary Conditions" dialog, the user can set the numerical value for the **offset**, in Angstroms, defining the distance separating the system from its surroundings, which are defined via the above-mentioned boundary conditions options.
@@ -24,6 +35,16 @@ Towards the right of the "Set Boundary Conditions" dialog, the user can set the 
 ## Apply Changes
 
 Once the desired options have been entered within the "Set Boundary Conditions" dialog, click on the `Submit` button at the bottom of the dialog to implement the corresponding changes to the material under investigation.
+
+## Animations
+
+In the following animation, we demonstrate how to switch between the four different available boundary condition options. The change in boundary conditions is reflected in the change of their respective coloring.
+
+<img data-gifffer="/images/materials-designer/boundary-conditions.gif" />
+
+In this second animation below, we show the effect of changing the offset parameter described previously. 
+
+<img data-gifffer="/images/materials-designer/offset.gif" />
 
 ## Links
 
