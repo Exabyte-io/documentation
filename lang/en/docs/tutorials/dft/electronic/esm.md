@@ -77,7 +77,7 @@ The previously-created water structure should now be [selected and imported](../
 
 ## Copy ESM Workflow from Bank
 
-[Workflows](../../../workflows/overview.md) for performing [Effective Screening Medium (ESM)](../../../models/auxiliary-concepts/esm.md) computations with [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). 
+[Workflows](../../../workflows/overview.md) for performing [Effective Screening Medium (ESM)](../../../models/auxiliary-concepts/esm.md) computations with [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) can readily be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md). The user should search for the "ESM" keyword whilst performing a [search](../../../entities-general/actions/search.md) within the Bank.
 
 This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [Job being created](../../../jobs-designer/overview.md). 
 
@@ -92,7 +92,7 @@ Opening ["Important Settings"](../../../workflow-designer/subworkflow-editor/imp
 
 In the present example, we shall keep the previously-defined 'bc1' boundary conditions, and leave the remaining three options to their default zero values.
 
-In addition, the user should set the size of the grid of [k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 2x2x2 in this case, also under "Important Settings".
+In addition, the user should set the size of the grid of [k-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 1x1x1 in this case, also under "Important Settings", since we are dealing with a water molecule as opposed to a periodic crystal.
 
 ## Submit Job
 
