@@ -44,3 +44,4 @@ The `pw.x` executable for the Quantum ESPRESSO modeling application, for example
 [^4]: [Input File Description for neb.x, Official Quantum ESPRESSO documentation](http://web.mit.edu/espresso_v6.1/i386_linux26/qe-6.1/Doc/INPUT_NEB.html)
 [^5]: [PWscf User’s Guide, Official Documentation](https://www.quantum-espresso.org/Doc/pw_user_guide.pdf)
 [^6]: [Calculation of Phonon Dispersions on the Grid Using Quantum ESPRESSO](http://users.ictp.it/~pub_off/lectures/lns024/10-giannozzi/10-giannozzi.pdf)
+[^7]: [PWscf boundary conditions settings, Official Quantum ESPRESSO documentation](https://www.quantum-espresso.org/Doc/INPUT_PW.html#idm558)
