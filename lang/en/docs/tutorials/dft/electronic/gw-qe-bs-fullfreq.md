@@ -9,7 +9,7 @@ What sets the present tutorial apart from the [other tutorial](band-structure.md
 
 More information on this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [1] of [this page](gw-vasp-bg.md), where the use of the GW approximation is demonstrated for the alternative case of the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine.
 
-The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X direction. In this example, we use **full-frequency integration** along the imaginary axis, and a 2 x 2 x 2 grid for both k points and q points. For an alternative approach towards GW band structure computations using the Plasmon pole approach instead of full-frequency sampling, the user should also consider reviewing [this separate tutorial](gw-qe-bs-plasmon.md).
+The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X-W-K directions. In this example, we use **full-frequency integration** along the imaginary axis, and a 4 x 4 x 4 grid for both k points and q points. For an alternative approach towards GW band structure computations using the Plasmon pole approach instead of full-frequency sampling, the user should also consider reviewing [this separate tutorial](gw-qe-bs-plasmon.md).
 
 ## The SternheimerGW Code
 
@@ -71,9 +71,9 @@ Silicon in its cubic-diamond crystal structure is the [default material](../../.
 
 ## Set Sampling in Reciprocal Space
 
-We set the size of the [grids of k-points and q-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 2 x 2 x 2 for both workflow units, via the ["Important Settings" section](../../../workflow-designer/subworkflow-editor/important-settings.md) under the [Workflow Tab](../../../jobs-designer/workflow-tab.md) of [Job Designer](../../../jobs-designer/overview.md). 
+We set the size of the [grids of k-points and q-points](../../../models/auxiliary-concepts/reciprocal-space/sampling.md) to 4 x 4 x 4 for the second GW workflow unit (8 x 8 x 8 kgrid in the first SCF unit), via the ["Important Settings" section](../../../workflow-designer/subworkflow-editor/important-settings.md) under the [Workflow Tab](../../../jobs-designer/workflow-tab.md) of [Job Designer](../../../jobs-designer/overview.md). We also take care to reduce the plane-wave cutoff from their default values to 20 Ry, and the charge density cutoff to 80 Ry, which for the case of silicon modeled with a norm conserving pseudopotential provide sufficient precision.
 
-In addition, we also modify the [k-point path](../../../models/auxiliary-concepts/reciprocal-space/paths.md), accessible towards the bottom of "Important Settings", to sample only the region of the Brillouin Zone of the crystal between the central Gamma point and the "X" special symmetry point.
+In addition, we also modify the [k-point path](../../../models/auxiliary-concepts/reciprocal-space/paths.md), accessible towards the bottom of "Important Settings", to sample only the region of the Brillouin Zone of the crystal between the central Gamma point and the X, W and K special symmetry points.
 
 ## Submit Job
 
@@ -86,17 +86,17 @@ In order to run the SternheimerGW code in parallel (more than 1 core), the user 
 
 ## Examine Final Results
 
-When both [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [band structure](../../../properties-directory/non-scalar/bandstructure.md) of silicon, plotted as a dispersion curve as a function of the special [k-point paths](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen (the Gamma-X direction in our case).
+When both [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [band structure](../../../properties-directory/non-scalar/bandstructure.md) of silicon, plotted as a dispersion curve as a function of the special [k-point paths](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen (the Gamma-X-W-K directions in our case).
 
 !!!note "Band gap result"
-    In this case, the band gap is calculated on the chosen Gamma-X reciprocal path, and not on the overall grid.
+    In this case, the band gap is calculated on the chosen Gamma-X-W-K reciprocal path, and not on the overall grid.
 
 ## Animation
 
 We demonstrate the above-mentioned steps involved in the creation and execution of a GW band structure computation on crystalline silicon, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the full-frequency integration along the imaginary axis, in the following animation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/7VskTArfynU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/3yaCaJ0UPXU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
