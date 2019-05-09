@@ -39,10 +39,10 @@ The user should, at this point, follow the instructions included in the [alterna
 
 ## Animation
 
-We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation.
+We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation. Here, we set the size along the z dimension of the k-grids and q-grid to 1, since we are considering a 2D material. Other than this, the same input parameters as in the [alternative GW tutorial](gw-qe-bs-fullfreq.md#set-sampling-in-reciprocal-space) apply in this case.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/7VskTArfynU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/7XKx2wvpBSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
