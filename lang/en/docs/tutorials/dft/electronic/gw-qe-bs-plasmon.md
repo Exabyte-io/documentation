@@ -1,6 +1,6 @@
 # Calculate Electronic Band Structure with GW Approximation and Plasmon-pole Approach
 
-This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider a **Boron Nitride (BN) film** as our sample material, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
+This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider a **Boron Nitride (BN) film** (in its hexagonal form) as our sample material, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
 
 !!!note "Quantum ESPRESSO version considered in this tutorial"
     The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
@@ -39,7 +39,7 @@ The user should, at this point, follow the instructions included in the [alterna
 
 ## Animation
 
-We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film, using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation. Here, we set the size along the z dimension of the k-grids and q-grid to 1, since we are considering a 2D material. Other than this, the same input parameters as in the [alternative GW tutorial](gw-qe-bs-fullfreq.md#set-sampling-in-reciprocal-space) apply in this case.
+We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film (in its hexagonal form), using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation. Here, we set the size along the z dimension of the k-grids and q-grid to 1, since we are considering a 2D material. Other than this, the same input parameters as in the [alternative GW tutorial](gw-qe-bs-fullfreq.md#set-sampling-in-reciprocal-space) apply in this case.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/7XKx2wvpBSw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

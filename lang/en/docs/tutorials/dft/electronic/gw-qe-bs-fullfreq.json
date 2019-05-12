@@ -1,0 +1,110 @@
+{
+    "descriptionLinks": [
+        "Calculate Electronic Band Structure with GW and Full-frequency Integration: https://docs.exabyte.io/tutorials/dft/electronic/gw-qe-bs-fullfreq/"
+    ],
+    "description": "This tutorial page explains how to calculate the electronic band structure of a semiconducting material based on the GW Approximation and full-frequency integration along the imaginary axis. We consider crystalline silicon as a simple example, and use Quantum ESPRESSO as our main simulation engine, operated in conjunction with the SternheimerGW code.",
+    "title": "Exabyte.io Tutorial: Calculate Electronic Band Structure with GW and Full-frequency Integration",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../properties-directory/non-scalar/bandstructure.json#/tags"
+        },
+        "GW Approximation"
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Band Structure with GW and Full-frequency Integration Tutorial.",
+            "endTime": "00:00:04.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:08.000",
+            "startTime": "00:00:04.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Full Frequency GW Band Structure' workflow by selecting it in the list.",
+            "endTime": "0:00:16.000",
+            "startTime": "0:00:08.500"
+        },
+        {
+            "text": "We first need to remember to change the size of the plane-wave and charge density cutoffs under 'Important Settings', and reduce them to a more manageable size.",
+            "endTime": "0:00:25.000",
+            "startTime": "0:00:16.500"
+        },
+        {
+            "text": "Similarly, we also modify the size of the grids of k-points and of q-points, for the case of both units in the workflow.",
+            "endTime": "0:00:38.000",
+            "startTime": "0:00:30.000"
+        },
+        {
+            "text": "Finally, we make sure that the path of q-points in reciprocal space over which the bandstructure is calculated is reduced to the Gamma-X-W-K path only.",
+            "endTime": "0:01:00.000",
+            "startTime": "0:00:50.000"
+        },
+        {
+            "text": "It is worth highlighting that such GW computations performed with Quantum ESPRESSO need to be implemented with norm-conserving pseudopotentials.",
+            "endTime": "0:01:21.000",
+            "startTime": "0:01:12.000"
+        },
+        {
+            "text": "We now inspect the structure of the GW workflow, by opening its main GW compute unit.",
+            "endTime": "0:01:27.000",
+            "startTime": "0:01:21.500"
+        },
+        {
+            "text": "The user will find at the bottom the input script for the Sternheimer GW code. This code is needed by Quantum ESPRESSO to implement the GW approximation, by obtaining quasiparticle energies using the wave functions of the previous SCF calculation.",
+            "endTime": "0:01:43.000",
+            "startTime": "0:01:27.500"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. <break time='3.0' /> Here, we use one node with 16 cores on the OR16 queue. Care also needs to be taken in this case to set the 'k-point pools' parallelization setting under the 'Advanced Options' to 16 as well, in order to run the Sternheimer GW code in parallel.",
+            "endTime": "0:02:07.000",
+            "startTime": "0:01:43.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - QE Fullfreq. GW Band Structure Calculation.",
+            "endTime": "0:02:15.000",
+            "startTime": "0:02:07.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='4.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='2.0' />",
+            "endTime": "0:02:36.000",
+            "startTime": "0:02:25.000"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. <break time='4.0' /> Please wait, until the job has finished running.",
+            "endTime": "0:02:51.000",
+            "startTime": "0:02:39.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:03:01.000",
+            "startTime": "0:02:56.000"
+        },
+        {
+            "text": "The electronic band structure dispersion plot of crystalline silicon, obtained via the GW approximation, can be found towards the bottom of the results page. This final result is in agreement with the published literature, together with the resulting estimate for the size of the band gap of silicon.",
+            "endTime": "0:03:25.000",
+            "startTime": "0:03:07.000"
+        },
+        {
+            "text": "We also take a quick look at the overall list of electronic energy eigenvalues and k-point eigenvectors across the band structure of silicon.",
+            "endTime": "0:03:34.000",
+            "startTime": "0:03:25.500"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:03:39.000",
+            "startTime": "0:03:36.000"
+        }
+    ],
+    "youTubeId": "tjXYSCkHjDE"
+}
