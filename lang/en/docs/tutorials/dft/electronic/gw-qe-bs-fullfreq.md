@@ -20,7 +20,7 @@ The SternheimerGW software uses time-dependent density-functional perturbation t
 Further information and examples on how the GW method is supported by the SternheimerGW code can be retrieved in Ref. [^3].
 
 !!!warning "Norm-conserving pseudopotentials required"
-    Steinheimer GW needs to be operated in conjunction with norm-conserving pseudopotentials.
+    Steinheimer GW needs to be operated in conjunction with norm-conserving pseudopotentials. We make use of the "pseudo-dojo" repository of norm-conserving pseudopotentials [^4].
 
 ## Workflow Structure
 
@@ -88,6 +88,8 @@ In order to run the SternheimerGW code in parallel (more than 1 core), the user 
 
 When both [unit](../../../workflows/components/units.md) computations are complete at the end of Job execution, switching to the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md) will show the [band structure](../../../properties-directory/non-scalar/bandstructure.md) of silicon, plotted as a dispersion curve as a function of the special [k-point paths](../../../models/auxiliary-concepts/reciprocal-space/paths.md) chosen (the Gamma-X-W-K directions in our case).
 
+We also note that the final result for the indirect band gap of silicon of 1.05 eV is in good agreement with the reported experimental value.
+
 !!!note "Band gap result"
     In this case, the band gap is calculated on the chosen Gamma-X-W-K reciprocal path, and not on the overall grid.
 
@@ -106,3 +108,5 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 [^2]: [M. Schlipf, H. Lambert, N. Zibouche, F. Giustino: "SternheimerGW: a program for calculating GW quasiparticle band structures and spectral functions without unoccupied states"; arXiv:1812.03717](https://arxiv.org/pdf/1812.03717.pdf)
 
 [^3]: [SternheimerGW, Official GitHub Repository](https://github.com/QEF/SternheimerGW)
+
+[^4]: [The "pseudo-dojo" Pseudopotential Library, Official Website](http://www.pseudo-dojo.org/)
