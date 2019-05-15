@@ -87,7 +87,7 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 It can be deduced from the final results for the energy reaction profile, available under the [Results tab](../../../jobs/ui/results-tab.md) of [Job Viewer](../../../jobs/ui/viewer.md), that the size of the activation energy barrier in this case is of about 0.2 eV, in agreement with the outcome of the [other NEB Tutorial](reaction-profile-qe.md).
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/0RVJ33JpeGs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/-ZKK8xTrmSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links

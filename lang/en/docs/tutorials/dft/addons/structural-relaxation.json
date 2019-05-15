@@ -1,0 +1,94 @@
+{
+    "descriptionLinks": [
+        "Perform a Structural Relaxation: https://docs.exabyte.io/tutorials/dft/electronic/structural-relaxation/"
+    ],
+    "description": "In this tutorial, we show how to perform a structural relaxation using our Web Interface, for the simple case of a total energy calculation performed on crystalline silicon.",
+    "title": "Exabyte.io Tutorial: Perform a Structural Relaxation",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../workflows/addons/structural-relaxation.json#/tags"
+        }
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Structural Relaxation tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:06.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> inside the materials tab, choose a slightly distorted version of silicon as the main simulation material, by selecting it in the list.",
+            "endTime": "0:00:14.500",
+            "startTime": "0:00:06.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and insert the relaxation add-on. A new 'variable-cell relaxation' subworkflow will hence be added.",
+            "endTime": "0:00:24.000",
+            "startTime": "0:00:16.000"
+        },
+        {
+            "text": "Now, open the only unit component of this subworkflow.",
+            "endTime": "0:00:28.000",
+            "startTime": "0:00:25.000"
+        },
+        {
+            "text": "Inspect the Quantum ESPRESSO input file displayed at the bottom. <break time='1.0' /> Notice the 'vc-relax' input keyword, specifying the variable-cell relaxation nature of the calculation.",
+            "endTime": "0:00:40.000",
+            "startTime": "0:00:28.500"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use one node with four cores.",
+            "endTime": "0:00:54.000",
+            "startTime": "0:00:46.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. <break time='2.0' /> Here, we call it - Silicon Structural Relaxation.",
+            "endTime": "0:01:04.000",
+            "startTime": "0:00:57.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='5.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:01:20.000",
+            "startTime": "0:01:09.000"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active.",
+            "endTime": "0:01:28.000",
+            "startTime": "0:01:22.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:01:32.000",
+            "startTime": "0:01:28.500"
+        },
+        {
+            "text": "Under the results page, note the graphic visualization of the final relaxed crystal structure. <break time='5.0' /> Its crystallographic numerical parameters can be exported to the local disk, in the <sub alias='POSH CAR'>POSCAR</sub> format, and inspected via a text editor.",
+            "endTime": "0:01:53.000",
+            "startTime": "0:01:34.000"
+        },
+        {
+            "text": "Notice also how the inter-atomic forces and the stress tensor of the final structure are both nearly zero, as expected for a relaxed configuration.",
+            "endTime": "0:02:12.000",
+            "startTime": "0:02:03.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:18.000",
+            "startTime": "0:02:15.000"
+        }
+    ],
+    "youTubeId": "sestFXUJU3g"
+}
