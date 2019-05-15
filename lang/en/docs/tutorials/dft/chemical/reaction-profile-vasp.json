@@ -2,7 +2,7 @@
     "descriptionLinks": [
         "Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method with VASP: https://docs.exabyte.io/tutorials/dft/chemical/reaction-profile-vasp/"
     ],
-    "description": "In this tutorial animation, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, by making use of the VASP simulation engine coupled with a manually-generated interpolated set.",
+    "description": "In this tutorial, we explain how to calculate the energy reaction profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method, by making use of the VASP simulation engine coupled with a manually-generated interpolated set.",
     "tags": [
         {
             "...": "../../../metadata/general.json#/tags"
@@ -17,7 +17,7 @@
             "...": "../../../models/auxiliary-concepts/nudged-elastic-band.json#/tags"
         }
     ],
-    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using the Nudged Elastic Band (NEB) method",
+    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using NEB method and VASP",
     "youTubeCaptions": [
         {
             "text": "Calculate Reaction Energy Profile tutorial.",
