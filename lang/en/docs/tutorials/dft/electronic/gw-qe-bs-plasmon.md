@@ -42,7 +42,7 @@ The user should, at this point, follow the instructions included in the [alterna
 We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film (in its hexagonal form), using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation. 
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/kx60KAoNn9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/nNtnbQNA4mc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 Here, we set the size along the z dimension of the k-grids and q-grid to 1, since we are considering a 2D material. In summary, we use a plane-wave cutoff of 80 Ry, k-grids size of 8 x 8 x 1 and q-grid size of 4 x 4 x 1.
