@@ -1,13 +1,13 @@
 # Calculate Electronic Band Structure with GW Approximation and Plasmon-pole Approach
 
-This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider a **Boron Nitride (BN) film monolayer** (in its hexagonal form) as our sample material, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
+This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider a **Boron Nitride (BN) film monolayer** (in its hexagonal form) [^1] as our sample material, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
 
 !!!note "Quantum ESPRESSO version considered in this tutorial"
     The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
 
-Here, we shall make use of the **"GW Approximation"**, which is reviewed in [this part of the documentation](../../../models-directory/dft/notes.md#the-gw-approximation). What sets the present tutorial apart from the [other tutorial](gw-qe-bs-fullfreq.md) on band structure calculations via the GW Approximation, as implemented under Quantum ESPRESSO, is the employment of the **Plasmon pole** approach [^1], as opposed to the Full-frequency method described in the latter separate tutorial. Whereas in the Full-frequency method a full-frequency axis sampling is performed, for the case of plasmon pole **we only sample at zero frequency**.
+Here, we shall make use of the **"GW Approximation"**, which is reviewed in [this part of the documentation](../../../models-directory/dft/notes.md#the-gw-approximation). What sets the present tutorial apart from the [other tutorial](gw-qe-bs-fullfreq.md) on band structure calculations via the GW Approximation, as implemented under Quantum ESPRESSO, is the employment of the **Plasmon pole** approach [^2], as opposed to the Full-frequency method described in the latter separate tutorial. Whereas in the Full-frequency method a full-frequency axis sampling is performed, for the case of plasmon pole **we only sample at zero frequency**.
 
-The aim of the present tutorial is to calculate the quasi-particle corrections for a BN film at the Gamma point. In this example, we use a **Godby-Needs plasmon-pole model** along the imaginary axis, and a 8 x 8 x 1 grid for k and q points. The plasmon-pole method is enabled within Quantum ESPRESSO via the **SternheimerGW** additional code, which is introduced in the [other tutorial page on GW calculations](gw-qe-bs-fullfreq.md). The user is invited to consult this latter separate tutorial first for complete instructions on how to operate and execute Quantum ESPRESSO-based GW Workflows on our platform, since only plasmon pole-specific aspects of GW computations shall be reviewed and explained here.
+The aim of the present tutorial is to calculate the quasi-particle corrections for a BN film at the Gamma point. In this example, we use a **Godby-Needs plasmon-pole model** along the imaginary axis. The plasmon-pole method is enabled within Quantum ESPRESSO via the **SternheimerGW** additional code, which is introduced in the [other tutorial page on GW calculations](gw-qe-bs-fullfreq.md). The user is invited to consult this latter separate tutorial first for complete instructions on how to operate and execute Quantum ESPRESSO-based GW Workflows on our platform, since only plasmon pole-specific aspects of GW computations shall be reviewed and explained here.
 
 ## Workflow Structure
 
@@ -39,12 +39,20 @@ The user should, at this point, follow the instructions included in the [alterna
 
 ## Animation
 
-We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film (in its hexagonal form), using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation. Here, we set the size along the z dimension of the k-grids and q-grid to 1, since we are considering a 2D material. Other than this, the same input parameters as in the [alternative GW tutorial](gw-qe-bs-fullfreq.md#set-sampling-in-reciprocal-space) apply in this case.
+We demonstrate the steps involved in the creation and execution of a GW band structure computation on a BN film (in its hexagonal form), using the [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) simulation engine together with the SternheimerGW code for enacting the Plasmon pole sampling at zero frequency, in the following animation. 
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/kx60KAoNn9o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
+Here, we set the size along the z dimension of the k-grids and q-grid to 1, since we are considering a 2D material. In summary, we use a plane-wave cutoff of 80 Ry, k-grids size of 8 x 8 x 1 and q-grid size of 4 x 4 x 1.
+
+The final result for the indirect band gap of the BN monolayer of 6.460 eV, between the Gamma and M Brillouin Zone special points, is in good agreement with other first-principles calculations [^3].
+
 ## Links
 
-[^1]: [J. Lischner, S. Sharifzadeh, J. Deslippe, J.B. Neaton, and S.G. Louie: "Effects of self-consistency and plasmon-pole models on GW calculations for closed-shell molecules"; Phys. Rev. B 90, 115130 (2014)](https://arxiv.org/pdf/1409.2901.pdf)
+[^1]: [Wikipedia Boron nitride nanosheet, Website](https://en.wikipedia.org/wiki/Boron_nitride_nanosheet)
+
+[^2]: [J. Lischner, S. Sharifzadeh, J. Deslippe, J.B. Neaton, and S.G. Louie: "Effects of self-consistency and plasmon-pole models on GW calculations for closed-shell molecules"; Phys. Rev. B 90, 115130 (2014)](https://arxiv.org/pdf/1409.2901.pdf)
+
+[^3]: [D. Wickramaratne, L. Weston, and C.G. Van de Walle: "Monolayer to Bulk Properties of Hexagonal Boron Nitride"; J. Phys. Chem. C, 2018, 122 (44), pp 25524–25529](https://pubs.acs.org/doi/abs/10.1021/acs.jpcc.8b09087?journalCode=jpccck&)
