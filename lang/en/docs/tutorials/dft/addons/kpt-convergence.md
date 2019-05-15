@@ -52,5 +52,5 @@ An example appearance of the "Ionic Energy" energy convergence chart as a functi
 We demonstrate the above-mentioned steps involved in the creation and execution of a k-points convergence study using silicon and [Total Energy](../../../properties-directory/scalar/total-energy.md) workflow in the video below.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Qdn4Rr4ZFVQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/CN4eFZ0hVwk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
