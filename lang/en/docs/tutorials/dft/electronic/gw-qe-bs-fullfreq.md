@@ -3,26 +3,29 @@
 This tutorial page explains how to calculate the [electronic band structure](../../../properties-directory/non-scalar/bandstructure.md) of a semiconducting material based on [Density Functional Theory](../../../models-directory/dft/overview.md). We consider crystalline silicon in its standard equilibrium cubic-diamond crystal structure, and use [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) as our main simulation engine during this tutorial.
 
 !!!note "Quantum ESPRESSO version considered in this tutorial"
-    The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
+    The present tutorial is written for Quantum ESPRESSO at version(s) 6.3.
 
-What sets the present tutorial apart from the [other tutorial](band-structure.md) on band structure calculations is the employment of the **"GW Approximation"**, which is reviewed in [this part of the documentation](../../../models-directory/dft/notes.md#the-gw-approximation). This method is significantly slower than the conventional approach for computing electronic band structures, however similarly to the [HSE method](hse-qe-bs.md) it yields more accurate electronic band structure results which are closer to experimental values, thus rectifying the tendency of the [GGA to underestimate the size of the band gap](../../../models-directory/dft/notes.md#accuracy-limits-of-the-generalized-gradient-approximation). 
+## GW Approximation
 
-More information on this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. [1] of [this page](gw-vasp-bg.md), where the use of the GW approximation is demonstrated for the alternative case of the [VASP](../../../software-directory/modeling/vasp/overview.md) modeling engine.
+What sets the present tutorial apart from the [GGA DFT band-structure tutorial](band-structure.md) is the employment of the [GW Approximation](../../../models-directory/dft/notes.md#the-gw-approximation). This method is significantly more computationally intensive than the conventional approach for computing electronic band structures. It yields more accurate electronic results closer to experimental value. More information about this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. 1 in [this page](gw-vasp-bg.md).
 
-The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X-W-K directions. In this example, we use **full-frequency integration** along the imaginary axis, and a 4 x 4 x 4 grid for both k points and q points. For an alternative approach towards GW band structure computations using the Plasmon pole approach instead of full-frequency sampling, the user should also consider reviewing [this separate tutorial](gw-qe-bs-plasmon.md).
+The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X-W-K directions. In this example, we use **full-frequency integration** along the imaginary axis. For an alternative approach to GW band calculation using the Plasmon pole approximation the user can review [another tutorial](gw-qe-bs-plasmon.md).
 
 ## The SternheimerGW Code
 
 The GW Approximation is enabled on our platform via **SternheimerGW** [^1] [^2], an add-on software package for Quantum ESPRESSO.
 
-The SternheimerGW software uses time-dependent density-functional perturbation theory to evaluate GW quasiparticle band structures and spectral functions for solids. Both the Green's function G and the screened Coulomb interaction W are obtained by solving linear Sternheimer equations, thus overcoming the need for a summation over unoccupied states. The code targets the calculation of accurate spectral properties by convoluting G and W using a full frequency integration. The linear response approach allows users to evaluate the spectral function at arbitrary electron wavevectors, which is particularly useful for indirect band gap semiconductors and for simulations of angle-resolved photoelectron spectra. 
+SternheimerGW uses time-dependent density-functional perturbation theory to evaluate GW quasiparticle band structures and spectral functions for solids. Both the Green's function G and the screened Coulomb interaction W are obtained by solving linear Sternheimer equations, thus overcoming the need for a summation over unoccupied states. The code targets the calculation of accurate spectral properties by convoluting G and W using a full frequency integration. The linear response approach allows users to evaluate the spectral function at arbitrary electron wavevectors, which is particularly useful for indirect band gap semiconductors and for simulations of angle-resolved photoelectron spectra. 
 
 Further information and examples on how the GW method is supported by the SternheimerGW code can be retrieved in Ref. [^3].
 
 !!!warning "Norm-conserving pseudopotentials required"
-    Steinheimer GW needs to be operated in conjunction with norm-conserving pseudopotentials. We make use of the "pseudo-dojo" repository of norm-conserving pseudopotentials [^4].
+    Steinheimer GW needs to be operated in conjunction with norm-conserving pseudopotentials (default options provided by our platform are explained [here](../../../methods-directory/pseudopotential/default.md)).
 
 ## Workflow Structure
+
+<details markdown="1">
+  <summary>Expand to view</summary> 
 
 We shall now describe the computational implementation of the GW Approximation for computing the electronic band structure on our platform, illustrating the various steps constituting the overall [Workflow](../../../workflows/overview.md). 
 
@@ -33,23 +36,25 @@ Workflows performing GW calculations, based upon the [Quantum ESPRESSO](../../..
 
 Let us consider the individual parts of the input file for the latter second step.
 
+### GW Unit
+
 #### Configuration of the scf run
 
 The variables `prefix` and `outdir` should be set to the same values as in the SCF calculation, so that SternheimerGW can read the results of that preliminary calculation.
 
-#### The grid used for the linear response
+#### Grid used for the linear response
 
 With the variables `kpt_grid` and `qpt_grid`, we control the integration over the Brillouin zone. The `kpt_grid` is used to calculate the density response required to evaluate the dielectric function. The `qpt_grid` is instead used to convolute the Green's function and the Screened Coulomb interaction.
 
-#### The number of bands for which the GW correction is calculated
+#### Number of bands for which the GW correction is calculated
 
 With the variable `num_band`, we control the for how many bands the GW correction is calculated. In order to determine an accurate Fermi energy, this value must be larger than the number of occupied states.
 
-#### Configuration of W in the convolution
+#### W in the convolution
 
 We convolute the Green's function and the Screened Coulomb interaction in the frequency domain. The variables `max_freq_coul` and `num_freq_coul` determine the maximum value and the number of points used in this integration.
 
-#### Configuration for the exchange and correlation self energy
+#### Exchange and correlation self energy
 
 The variables `ecut_corr` and `ecut_exch` define the Fast Fourier Transform grid that is used to evaluate correlation and exchange contribution to the self energy.
 
@@ -60,6 +65,8 @@ The first line in the `FREQUENCIES` section of the SternheimerGW input script gi
 #### K-points
 
 The first line of the final `K_points` section gives the number of k-points, followed by lines specifying the k-point coordinates in $2 \pi / a$ units. The code evaluates the exchange and correlation self energy at these k points.
+
+</details>
 
 ## Create Job
 
@@ -106,7 +113,4 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 [^1]: [SternheimerGW, Official Website](http://www.sternheimergw.org/)
 
 [^2]: [M. Schlipf, H. Lambert, N. Zibouche, F. Giustino: "SternheimerGW: a program for calculating GW quasiparticle band structures and spectral functions without unoccupied states"; arXiv:1812.03717](https://arxiv.org/pdf/1812.03717.pdf)
-
 [^3]: [SternheimerGW, Official GitHub Repository](https://github.com/QEF/SternheimerGW)
-
-[^4]: [The "pseudo-dojo" Pseudopotential Library, Official Website](http://www.pseudo-dojo.org/)
