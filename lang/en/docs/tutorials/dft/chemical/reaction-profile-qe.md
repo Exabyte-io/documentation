@@ -17,6 +17,11 @@ In this triatomic reaction, the middle H atom breaks the bond with first atom an
 
 ## Workflow Structure
 
+<details markdown="1">
+  <summary>
+    Expand to view ...
+  </summary>
+
 We outline here some important aspects of the [Workflow](../../../workflows/overview.md) used for executing NEB calculations on our platform via [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md), which is composed of a single main [unit](../../../workflows/components/units.md).
 
 ### Main Executable
@@ -40,6 +45,8 @@ The NEB simulation stops when the error (the norm of the force orthogonal to the
 ### Structure of Images
 
 Atomic positions for all the images are specified within the `BEGIN_POSITIONS / END_POSITIONS` delimiters, where each instance of `ATOMIC_POSITIONS` card is prefixed either by `FIRST_IMAGE`, `INTERMEDIATE_IMAGE`, or `LAST_IMAGE` keywords, depending on its position within the overall order of the interpolated set under consideration.
+
+</details>
 
 ## Create Job 
 
@@ -91,7 +98,7 @@ We can repeat the same reaction profile calculation for H3 molecules as above, b
 This feature can be enabled by selecting an appropriate number of intermediate images to be generated under the ["Important Settings" Tab](../../../workflow-designer/subworkflow-editor/important-settings.md) of the [Workflow Designer Interface](../../../workflow-designer/overview.md), as demonstrated in the following animation, where we select to generate a total of 5 intermediate images. In this case, only the initial and final images need to be imported manually into Job Designer.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/FOpnOB4L814" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/m7HoFpXZ57k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
