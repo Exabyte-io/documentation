@@ -17,7 +17,7 @@
             "...": "../../../models/auxiliary-concepts/nudged-elastic-band.json#/tags"
         }
     ],
-    "title": "Exabyte.io Tutorial: Calculate Reaction Profile Using NEB method and VASP",
+    "title": "Exabyte.io Tutorial: NEB Reaction Profile using VASP",
     "youTubeCaptions": [
         {
             "text": "Calculate Reaction Energy Profile tutorial.",
