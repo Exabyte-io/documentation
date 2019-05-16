@@ -20,7 +20,7 @@ SternheimerGW uses time-dependent density-functional perturbation theory to eval
 Further information and examples on how the GW method is supported by the SternheimerGW code can be retrieved in Ref. [^3].
 
 !!!warning "Norm-conserving pseudopotentials required"
-    Steinheimer GW needs to be operated in conjunction with norm-conserving pseudopotentials. We make use of the "pseudo-dojo" repository of norm-conserving pseudopotentials and its scalar relativistic stringent subset [^4].
+    Steinheimer GW needs to be operated in conjunction with norm-conserving pseudopotentials (default options provided by our platform are explained [here](../../../methods-directory/pseudopotential/default.md)).
 
 ## Workflow Structure
 
@@ -113,7 +113,4 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 [^1]: [SternheimerGW, Official Website](http://www.sternheimergw.org/)
 
 [^2]: [M. Schlipf, H. Lambert, N. Zibouche, F. Giustino: "SternheimerGW: a program for calculating GW quasiparticle band structures and spectral functions without unoccupied states"; arXiv:1812.03717](https://arxiv.org/pdf/1812.03717.pdf)
-
 [^3]: [SternheimerGW, Official GitHub Repository](https://github.com/QEF/SternheimerGW)
-
-[^4]: [The "pseudo-dojo" Pseudopotential Library, Official Website](http://www.pseudo-dojo.org/)
