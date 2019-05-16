@@ -1,0 +1,159 @@
+{
+    "descriptionLinks": [
+        "Effective Screening Medium (ESM) Calculation: https://docs.exabyte.io/tutorials/dft/electronic/esm/"
+    ],
+    "description": "In this tutorial animation, we demonstrate the steps involved in the creation and execution of an ESM computation on a water molecule, using the Quantum ESPRESSO simulation engine.",
+    "title": "Exabyte.io Tutorial: Effective Screening Medium (ESM) Calculation",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        {
+            "...": "../../../models/auxiliary-concepts/esm.json#/tags"
+        }
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Effective Screening Medium Tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "The structure of a water molecule can readily be imported from the Materials Bank into the account-owned collection of materials, if it is not already present there.",
+            "endTime": "00:00:11.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Now, open Materials Designer.",
+            "endTime": "00:00:13.500",
+            "startTime": "00:00:11.500"
+        },
+        {
+            "text": "The water structure should then be imported into the Materials Designer interface, via the relevant option under the 'Input/Output' menu.",
+            "endTime": "00:00:21.000",
+            "startTime": "00:00:14.000"
+        },
+        {
+            "text": "Delete any other listed material, and adjust the position of the water molecule for better visualization with the help of the 3D editor interface.",
+            "endTime": "00:00:33.000",
+            "startTime": "00:00:24.000"
+        },
+        {
+            "text": "We now edit the boundary conditions of the system, via the corresponding option in the 'Advanced' menu.",
+            "endTime": "00:00:44.000",
+            "startTime": "00:00:38.000"
+        },
+        {
+            "text": "In the present example, we choose the 'Vacuum-Slab-Vacuum' (bc1) boundary condition option.",
+            "endTime": "00:00:51.000",
+            "startTime": "00:00:45.000"
+        },
+        {
+            "text": "Let us now inspect the water molecule with its newly added boundary conditions, with the help of the 3D editor.",
+            "endTime": "00:00:59.000",
+            "startTime": "00:00:52.000"
+        },
+        {
+            "text": "Let us also try to increase the number of repetitions, for better visualization.  <break time='1.0' /> The boundary conditions appear as yellow panels in the graphic rendering of the interface system, since they correspond to layers of vacuum.",
+            "endTime": "00:01:14.000",
+            "startTime": "00:01:00.000"
+        },
+        {
+            "text": "Next, we save our water/vacuum interface system to our materials collection, through the corresponding option under the 'Input/Output' menu.",
+            "endTime": "00:01:34.000",
+            "startTime": "00:01:26.000"
+        },
+        {
+            "text": "Finally, we exit Materials Designer, and return to the main Web Interface of our platform.",
+            "endTime": "00:01:40.000",
+            "startTime": "00:01:34.500"
+        },
+        {
+            "text": "Let us now create a new simulation, by navigating to the job designer page.",
+            "endTime": "00:01:45.000",
+            "startTime": "00:01:40.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> inside the materials tab, choose the previously-generated water/vacuum system as the main simulation material, by selecting it in the list. <break time='3.0' />",
+            "endTime": "0:01:55.000",
+            "startTime": "0:01:45.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Effective Screening Medium' workflow by selecting it in the list. Here, we consider the 'Relax' variant of the Quantum ESPRESSO ESM workflow.",
+            "endTime": "0:02:09.000",
+            "startTime": "0:01:57.500"
+        },
+        {
+            "text": "We now inspect the structure of the ESM workflow, by opening its only compute unit.",
+            "endTime": "0:02:17.000",
+            "startTime": "0:02:12.000"
+        },
+        {
+            "text": "Within the Quantum ESPRESSO input script shown at the bottom, pay particular attention to the ESM-specific input parameters, defining for example the type of boundary conditions being considered in the present example.",
+            "endTime": "0:02:30.000",
+            "startTime": "0:02:17.500"
+        },
+        {
+            "text": "Also, the 'esm' option enables ESM, by embedding the simulation cell within an effective semi-infinite medium in the perpendicular direction.",
+            "endTime": "0:02:39.000",
+            "startTime": "0:02:30.500"
+        },
+        {
+            "text": "We now need to remember to change the size of the grid of k-points under 'Important Settings', and set it to 1x1x1, since we are dealing with an isolated molecule in this case, as opposed to a periodic crystal.",
+            "endTime": "0:02:56.000",
+            "startTime": "0:02:43.000"
+        },
+        {
+            "text": "The options for defining the boundary conditions settings can also be retrieved at the bottom of the 'Important Settings' tab.",
+            "endTime": "0:03:05.000",
+            "startTime": "0:02:57.000"
+        },
+        {
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. <break time='3.0' /> Here, we use one node with four cores.",
+            "endTime": "0:03:20.000",
+            "startTime": "0:03:09.000"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Quantum ESPRESSO ESM Calculation on H2O.",
+            "endTime": "0:03:31.000",
+            "startTime": "0:03:24.000"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='4.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='2.0' />",
+            "endTime": "0:03:52.000",
+            "startTime": "0:03:42.000"
+        },
+        {
+            "text": "The status of the calculation will change from pre-submitted to submitted, and then to active. <break time='3.0' /> Please wait, until the job has finished running.",
+            "endTime": "0:04:09.000",
+            "startTime": "0:03:57.000"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results.",
+            "endTime": "0:04:18.000",
+            "startTime": "0:04:13.000"
+        },
+        {
+            "text": "The Potential Energy profile plot of our water-vacuum system can be found, towards the bottom of the results page. It is plotted as a function of the distance along the vertical perpendicular direction, away from the central water slab.",
+            "endTime": "0:04:32.000",
+            "startTime": "0:04:18.500"
+        },
+        {
+            "text": "Similarly, the Charge Density profile plot is also displayed under the Results page, showing the evolution of the charge density as a function of the same vertical coordinate.",
+            "endTime": "0:04:42.000",
+            "startTime": "0:04:32.500"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:04:45.000",
+            "startTime": "0:04:43.000"
+        }
+    ],
+    "youTubeId": "1KOGtvEGjI8"
+}
