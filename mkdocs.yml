@@ -651,6 +651,7 @@ nav:
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
+                - Effective Screening Medium:              tutorials/dft/electronic/esm-qe.md
                 - Electronic band structure:               tutorials/dft/electronic/band-structure.md
                 - Electronic band structure, HSE (QE):     tutorials/dft/electronic/hse-qe-bs.md
                 - Electronic band structure, HSE (VASP):   tutorials/dft/electronic/hse-vasp-bg.md
