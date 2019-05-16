@@ -9,7 +9,7 @@ This tutorial page explains how to calculate the [electronic band structure](../
 
 What sets the present tutorial apart from the [GGA DFT band-structure tutorial](band-structure.md) is the employment of the [GW Approximation](../../../models-directory/dft/notes.md#the-gw-approximation). This method is significantly more computationally intensive than the conventional approach for computing electronic band structures. It yields more accurate electronic results closer to experimental value. More information about this approximation, together with a demonstration of its application and results on a sample set of materials, can be found in Ref. 1 in [this page](gw-vasp-bg.md).
 
-The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X-W-K directions. In this example, we use **full-frequency integration** along the imaginary axis, and a 4 x 4 x 4 grid for both k points and q points. For an alternative approach towards GW band structure computations using the Plasmon pole approach instead of full-frequency sampling, the user should also consider reviewing [this separate tutorial](gw-qe-bs-plasmon.md).
+The aim of the present tutorial is to calculate the electronic band structure of silicon along the Gamma-X-W-K directions. In this example, we use **full-frequency integration** along the imaginary axis. For an alternative approach to GW band calculation using the Plasmon pole approximation the user can review [another tutorial](gw-qe-bs-plasmon.md).
 
 ## The SternheimerGW Code
 
