@@ -28,7 +28,7 @@ There are multiple cost categories that let users optimize the cost-to-performan
     It is advised to use Debug category while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
 
 !!! note "Saving Resources Termination"
-    When the data center has increased load, some or all saving resources may be terminated. We attempt restarting the calculations by resubmitting the corresponding job to resource manager queue. At current, no charge for the first whole hour is incurred upon saving resource termination.
+    When the data center has increased load, some or all saving resources may be terminated. We attempt restarting the calculations by resubmitting the corresponding job to resource manager queue. At current, no charge for the first/last whole hour is incurred upon saving resource termination, and the original time limit is re-applied to the restarted job (thus the overall time limit can be longer than originally set).
 
 ## Provision Modes
 
