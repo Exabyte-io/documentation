@@ -7,7 +7,10 @@ We consider a water (H2O) molecule in the present example, and use [Quantum ESPR
 !!!note "Quantum ESPRESSO version considered in this tutorial"
     The present tutorial is written for Quantum ESPRESSO at versions 5.2.1, 5.4.0, 6.0.0 or 6.3.
     
-## Workflow for ESM Calculation with Quantum ESPRESSO
+## Workflow (Quantum ESPRESSO)
+
+<details markdown="1">
+  <summary>Expand to view ...</summary>
 
 The [Workflow](../../../workflows/overview.md) implementing ESM calculations on our platform through [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md) is composed of a single main computational [unit](../../../workflows/components/units.md). 
 
@@ -56,6 +59,8 @@ Finally, the `fcp_mu` tag in the Quantum ESPRESSO input script sets the target F
 ### SCF vs Relax ESM Calculations
 
 Two different flavors of ESM workflow calculations are offered on our platform, the first one performing a basic ground state energy self-consistent field (SCF) calculation, whereas the second affording also for the [relaxation](../../../workflows/addons/structural-relaxation.md) of the inter-atomic forces, within the structure under consideration, during the course of the ESM computation. The latter option is enabled via the  `calculation = 'relax'` Quantum ESPRESSO input tag.
+
+</details>
 
 ## Prepare Water Molecule
 
