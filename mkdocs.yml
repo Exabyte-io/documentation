@@ -178,6 +178,7 @@ nav:
         - Parameters:                                   models/parameters.md
         - Auxiliary Concepts:
             - Nudged Elastic Band:                       models/auxiliary-concepts/nudged-elastic-band.md
+            - Effective Screening Medium:                models/auxiliary-concepts/esm.md
             - Reciprocal space:                          models/auxiliary-concepts/reciprocal-space.md
             - Reciprocal space > sampling:               models/auxiliary-concepts/reciprocal-space/sampling.md
             - Reciprocal space > paths:                  models/auxiliary-concepts/reciprocal-space/paths.md
@@ -350,6 +351,7 @@ nav:
             - "Advanced > Combinatorial Set":           materials-designer/header-menu/advanced/combinatorial-set.md
             - "Advanced > Interpolated Set":            materials-designer/header-menu/advanced/interpolated-set.md
             - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
+            - "Advanced > Boundary Conditions":         materials-designer/header-menu/advanced/boundary-conditions.md
             - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:
             - Items List:                               materials-designer/sidebar-items.md
@@ -360,6 +362,7 @@ nav:
         - 3D Viewer/Editor:
             - Overview:                                 materials-designer/3d-editor.md
             - View Options:                             materials-designer/3d-editor/view.md
+            - Parameters Options:                       materials-designer/3d-editor/parameters.md
             - Edit Options:                             materials-designer/3d-editor/edit.md
             - "Edit Actions > Overview":                materials-designer/3d-editor/editor-actions/overview.md
             - "Edit Actions > Add/Remove Atoms":        materials-designer/3d-editor/editor-actions/add-remove-atoms.md
@@ -629,7 +632,7 @@ nav:
       - Exabyte API examples:                        rest-api/api-examples.md
 
 
-
+# TUTORIALS
     - Tutorials:
         - Overview:                                  tutorials/overview.md
         - Jobs via Command Line:
@@ -648,6 +651,7 @@ nav:
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
+                - Effective Screening Medium:              tutorials/dft/electronic/esm-qe.md
                 - Electronic band structure:               tutorials/dft/electronic/band-structure.md
                 - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
                 - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
@@ -679,32 +683,11 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
 
 
-# TUTORIALS AND EXAMPLES
-    # TODO: refactor and re-enable
+    # TODO: refactor/re-implement and re-enable
 #    - Tutorials:
-#        # TODO: adjust with results closer to experiment and re-publish
-#        # - Semiconductors:
-#        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
-#        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
-
-#            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
-#            - Zero point energy:                        tutorials/dft/zero-point-energy.md
-#            - Structural relaxation:                    tutorials/dft/relaxation.md
-#            - K-point convergence:                      tutorials/dft/kpt-convergence.md
-#            - Fermi surface:                            tutorials/dft/fermi-surface.md
-#        - Machine Learning:
-#            - Train ML Model:                           tutorials/ml/train-ml-model.md
-#        - Other:
-#            - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
-#            - Restart from previous run:                tutorials/other/restart-job.md
-#            - Remote desktop visualization:             tutorials/other/remote-desktop.md
-#            - Job submission via terminal:              tutorials/other/cli-job.md
-#        # TODO: adjust combinatorial screening explanation according to latest UX
-#        - Combinatorial-screening:                      tutorials/combinatorial-screening.md
-#        # TODO: re-implement and re-enable Formation Energy
+#        - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
+#        - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
 #        - Formation energy:                             tutorials/formation-energy.md
-#        # TODO: check relevance and update/delete
-#        - CLI data import:                              tutorials/cli-job-import.md
 
 # LEGAL
     - Site Policy:
@@ -732,6 +715,4 @@ nav:
 
     # TODO: TB to remove or uncomment
         # - Student Program:    other/student-program.md
-        # - Upcoming features:    other/upcoming-features.md
-        # - Roadmap:              other/roadmap.md
         # Restricted content login page

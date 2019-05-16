@@ -52,18 +52,6 @@ There might come a point, during the course of an interactive viewing session, i
 
 <img data-gifffer="/images/materials-designer/ViewerViewReset.gif" />
 
-## Radius
-
-Editing this numerical text field will modify the radius of the atom spheres accordingly.
-
-<img data-gifffer="/images/materials-designer/ViewerViewRadius.gif" />
-  
-## Repetitions
-
-The user can edit this second numerical field to repeat the original unit cell a certain number of times in each spatial direction, as defined by a positive integer number. 
-
-<img data-gifffer="/images/materials-designer/ViewerViewRepetitions.gif" />
-
 ## Links
 
 [^1]: [Selected Bond Energies and Bond Lengths, Document](http://www.chem.tamu.edu/rgroup/connell/linkfiles/bonds.pdf)
