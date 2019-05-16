@@ -26,7 +26,7 @@ We review the creation of interpolated sets [here](advanced/interpolated-set.md)
 
 ## [Boundary Conditions](advanced/boundary-conditions.md)
 
-[This other page](advanced/boundary-conditions.md) presents the different types of boundary conditions available on our platform.
+[This other page](advanced/boundary-conditions.md) presents the different types of boundary conditions available in our platform.
 
 <!-- TODO: re-enable when implemented
 # Polymers <i class="zmdi zmdi-polymer zmdi-hc-border"></i> 

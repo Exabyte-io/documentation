@@ -22,7 +22,7 @@ We review the list of available boundary condition options offered on our platfo
 
 ## Implementation
 
-We explain how ESM calculations are implemented and performed on our platform in a dedicated [tutorial page](../../tutorials/dft/electronic/esm.md).
+We explain how ESM calculations are implemented and performed on our platform in a dedicated [tutorial page](../../tutorials/dft/electronic/esm-qe.md).
 
 ## Links
 
