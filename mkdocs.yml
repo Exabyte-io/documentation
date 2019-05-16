@@ -653,14 +653,16 @@ nav:
                 - Overview:                                tutorials/dft/electronic/overview.md
                 - Effective Screening Medium:              tutorials/dft/electronic/esm-qe.md
                 - Electronic band structure:               tutorials/dft/electronic/band-structure.md
+                - Electronic band structure, HSE (QE):     tutorials/dft/electronic/hse-qe-bs.md
+                - Electronic band structure, HSE (VASP):   tutorials/dft/electronic/hse-vasp-bg.md
+                - Electronic band structure, GW, Full Freq., (QE): tutorials/dft/electronic/gw-qe-bs-fullfreq.md
+                - Electronic band structure, GW, Plasmon P., (QE): tutorials/dft/electronic/gw-qe-bs-plasmon.md
                 - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
+                - Electronic band gap, HSE (QE):           tutorials/dft/electronic/hse-qe-bg.md
+                - Electronic band gap, GW (VASP):          tutorials/dft/electronic/gw-vasp-bg.md
                 - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
-                - Electronic band structure with HSE (QE): tutorials/dft/electronic/hse-qe-bs.md
-                - Electronic band gap with HSE (QE):       tutorials/dft/electronic/hse-qe-bg.md
-                - Electronic band gap with HSE (VASP):     tutorials/dft/electronic/hse-vasp-bg.md
-                - Electronic band gap with GW (VASP):      tutorials/dft/electronic/gw-vasp-bg.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
@@ -683,11 +685,10 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
 
 
-    # TODO: refactor/re-implement and re-enable
+# TODO: refactor/re-implement and re-enable
 #    - Tutorials:
 #        - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
 #        - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
-#        - Formation energy:                             tutorials/formation-energy.md
 
 # LEGAL
     - Site Policy:
@@ -712,7 +713,3 @@ nav:
         - Vendor Comparison:             benchmarks/vendor-comparison.md
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
         - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
-
-    # TODO: TB to remove or uncomment
-        # - Student Program:    other/student-program.md
-        # Restricted content login page
