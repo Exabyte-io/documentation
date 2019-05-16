@@ -632,7 +632,7 @@ nav:
       - Exabyte API examples:                        rest-api/api-examples.md
 
 
-
+# TUTORIALS
     - Tutorials:
         - Overview:                                  tutorials/overview.md
         - Jobs via Command Line:
@@ -652,14 +652,16 @@ nav:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
                 - Electronic band structure:               tutorials/dft/electronic/band-structure.md
+                - Electronic band structure, HSE (QE):     tutorials/dft/electronic/hse-qe-bs.md
+                - Electronic band structure, HSE (VASP):   tutorials/dft/electronic/hse-vasp-bg.md
+                - Electronic band structure, GW, Full Freq., (QE): tutorials/dft/electronic/gw-qe-bs-fullfreq.md
+                - Electronic band structure, GW, Plasmon P., (QE): tutorials/dft/electronic/gw-qe-bs-plasmon.md
                 - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
+                - Electronic band gap, HSE (QE):           tutorials/dft/electronic/hse-qe-bg.md
+                - Electronic band gap, GW (VASP):          tutorials/dft/electronic/gw-vasp-bg.md
                 - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
-                - Electronic band structure with HSE (QE): tutorials/dft/electronic/hse-qe-bs.md
-                - Electronic band gap with HSE (QE):       tutorials/dft/electronic/hse-qe-bg.md
-                - Electronic band gap with HSE (VASP):     tutorials/dft/electronic/hse-vasp-bg.md
-                - Electronic band gap with GW (VASP):      tutorials/dft/electronic/gw-vasp-bg.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
@@ -682,32 +684,10 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
 
 
-# TUTORIALS AND EXAMPLES
-    # TODO: refactor and re-enable
+# TODO: refactor/re-implement and re-enable
 #    - Tutorials:
-#        # TODO: adjust with results closer to experiment and re-publish
-#        # - Semiconductors:
-#        #     - AlP Band Gap: tutorials/semiconductors/AlP-band-gap.md
-#        #     - III-V combinatorial screening: tutorials/semiconductors/III-Vs-band-gap.md
-
-#            - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
-#            - Zero point energy:                        tutorials/dft/zero-point-energy.md
-#            - Structural relaxation:                    tutorials/dft/relaxation.md
-#            - K-point convergence:                      tutorials/dft/kpt-convergence.md
-#            - Fermi surface:                            tutorials/dft/fermi-surface.md
-#        - Machine Learning:
-#            - Train ML Model:                           tutorials/ml/train-ml-model.md
-#        - Other:
-#            - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
-#            - Restart from previous run:                tutorials/other/restart-job.md
-#            - Remote desktop visualization:             tutorials/other/remote-desktop.md
-#            - Job submission via terminal:              tutorials/other/cli-job.md
-#        # TODO: adjust combinatorial screening explanation according to latest UX
-#        - Combinatorial-screening:                      tutorials/combinatorial-screening.md
-#        # TODO: re-implement and re-enable Formation Energy
-#        - Formation energy:                             tutorials/formation-energy.md
-#        # TODO: check relevance and update/delete
-#        - CLI data import:                              tutorials/cli-job-import.md
+#        - Upload a Pseudopotential:                 tutorials/dft/upload-pseudopotential.md
+#        - Custom-input workflow:                    tutorials/other/custom-input-workflow.md
 
 # LEGAL
     - Site Policy:
@@ -732,9 +712,3 @@ nav:
         - Vendor Comparison:             benchmarks/vendor-comparison.md
         - High-Performance Linpack:      benchmarks/hpl-benchmark.md
         - 2018-11 HPL VASP GROMACS:      benchmarks/2018-11-12-comparison.md
-
-    # TODO: TB to remove or uncomment
-        # - Student Program:    other/student-program.md
-        # - Upcoming features:    other/upcoming-features.md
-        # - Roadmap:              other/roadmap.md
-        # Restricted content login page
