@@ -673,6 +673,7 @@ nav:
             - Chemical Prop.:
                 - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
                 - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
+                - Molecule on a Surface:                 tutorials/dft/chemical/molecule-surface.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
