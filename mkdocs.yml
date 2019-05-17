@@ -673,7 +673,6 @@ nav:
             - Chemical Prop.:
                 - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
                 - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
-                - Molecule on a Surface:                 tutorials/dft/chemical/molecule-surface.md
             - Add-ons:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
@@ -684,6 +683,8 @@ nav:
             - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
             - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
+            - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
+
 
 
 # TODO: refactor/re-implement and re-enable
