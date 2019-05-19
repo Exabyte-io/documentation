@@ -51,6 +51,9 @@ In order to create a gold surface, the user should first [import](../../material
 
 The instructions contained [in this page](../../materials-designer/header-menu/advanced/surface-slab.md) should then be followed in order to create a surface of Gold, with normal vector oriented along the [211] axis, using our surface creator in Materials Designer, starting from the original gold crystalline sample. 
 
+!!!warning "Order of structures is important"
+    The gold surface has to be created first in order for it to appear first in the list of materials shown on the [left-had items list sidebar](../../materials-designer/sidebar-items.md) of the Materials Designer interface, so that its cell is used when later combining the two materials together.
+
 ## Import the Benzene Molecule into Materials Designer
 
 The Benzene molecule should now be [imported](../../materials-designer/header-menu/input-output/import.md) into the current Materials Designer session, from the account-owned [collection](../../accounts/collections.md) of materials. 
