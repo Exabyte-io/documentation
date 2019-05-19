@@ -1,0 +1,132 @@
+{
+    "descriptionLinks": [
+        "Create Molecule on a Surface: https://docs.exabyte.io/tutorials/materials/molecule-surface/"
+    ],
+    "description": "In this tutorial, the user will learn about how the Material Designer Interface of our platform can be used to create a geometry for modeling a surface chemical reaction, whereby a molecule interacts with a surface, and undergoes for example a chemical adsorption process. We consider the example of a benzene molecule adsorbed on a gold (Au) (211) surface throughout the present tutorial.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        "molecule",
+        "surface",
+        "benzene",
+        "gold",
+        "chemical",
+        "adsorption",
+        "chemistry"
+    ],
+    "title": "Exabyte.io Tutorial: Create Molecule on a Surface",
+    "youTubeCaptions": [
+        {
+            "text": "Create Molecule on a Surface tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Open Materials Designer, by navigating to the materials collection page.",
+            "endTime": "00:00:07.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the 'Input/Output' menu, and import a sample structure of crystalline gold via the relevant option. This structure can readily be imported from the Materials Bank, if it is not already present in the materials collection.",
+            "endTime": "0:00:23.000",
+            "startTime": "0:00:09.500"
+        },
+        {
+            "text": "Let us also delete the original default silicon material.",
+            "endTime": "0:00:27.000",
+            "startTime": "0:00:23.500"
+        },
+        {
+            "text": "Then, open the 'Surface/Slab' menu option, in order to create a gold surface.",
+            "endTime": "0:00:32.000",
+            "startTime": "0:00:27.500"
+        },
+        {
+            "text": "First set the normal direction to the surface to (2 1 1). Then, set the supercell dimensions so as to have a 3x3x3 supercell, as an approximation for a gold surface.",
+            "endTime": "0:00:44.000",
+            "startTime": "0:00:32.500"
+        },
+        {
+            "text": "Let us take a moment to review the crystal structure of our gold surface, with the help of the interactive 3D viewer of Materials Designer.",
+            "endTime": "0:00:52.000",
+            "startTime": "0:00:44.500"
+        },
+        {
+            "text": "We now import the second structure of interest for this tutorial, which consists in the molecule of benzene.",
+            "endTime": "0:00:58.000",
+            "startTime": "0:00:52.500"
+        },
+        {
+            "text": "Again, let us inspect the molecular structure of benzene via the interactive 3D viewer.",
+            "endTime": "0:01:08.000",
+            "startTime": "0:01:02.000"
+        },
+        {
+            "text": "Bonds can also be added and drawn between the atoms within the molecule, via the relevant option of the 3D viewer.",
+            "endTime": "0:01:25.000",
+            "startTime": "0:01:18.000"
+        },
+        {
+            "text": "Now, open the 'View' menu, and then navigate to the 'Multi-Material 3D Editor' option listed there. We will use this new editor interface to combine the gold surface with the benzene molecule together, so as to generate a unified structure.",
+            "endTime": "0:01:40.000",
+            "startTime": "0:01:25.500"
+        },
+        {
+            "text": "First, let us adjust the vertical distance along the z dimension separating the benzene molecule from the surface. By inspecting the relative z coordinates of the gold and benzene atoms respectively, we conclude that their current separation is of about 2.6 Angstroms.",
+            "endTime": "0:01:55.500",
+            "startTime": "0:01:40.500"
+        },
+        {
+            "text": "We thus increase the vertical elevation of the benzene structure over the surface by 1 Angstrom, to achieve a total separation of 3.6 Angstroms.",
+            "endTime": "0:02:05.000",
+            "startTime": "0:01:56.000"
+        },
+        {
+            "text": "Next, we re-orient our view of the system vertically down, and we take care to align the center of the benzene ring with the center of the surface.",
+            "endTime": "0:02:13.000",
+            "startTime": "0:02:05.500"
+        },
+        {
+            "text": "Once this is done, we exit the Multi-Material 3D editor via the top-left menu, in order to return to the original Materials Designer interface.",
+            "endTime": "0:02:36.000",
+            "startTime": "0:02:26.000"
+        },
+        {
+            "text": "As a result of our manipulation, a new material has therefore been added to the list on the left-hand sidebar, corresponding to the combined molecule-surface system.",
+            "endTime": "0:02:46.000",
+            "startTime": "0:02:36.500"
+        },
+        {
+            "text": "Let us inspect the structure of this combined system via the interactive 3D viewer. The centrality of the benzene molecule over the gold surface can be asserted by enabling the 'orthographic camera' functionality of the 3D viewer.",
+            "endTime": "0:03:00.000",
+            "startTime": "0:02:46.500"
+        },
+        {
+            "text": "We now rename the new material structure to a more memorable form, such as 'Molecule+Surface'.",
+            "endTime": "0:03:06.000",
+            "startTime": "0:03:00.500"
+        },
+        {
+            "text": "Then, we save all structures under consideration simultaneously to our collection of materials, via the relevant option under the 'Input/Output' menu.",
+            "endTime": "0:03:15.000",
+            "startTime": "0:03:06.500"
+        },
+        {
+            "text": "Finally, we exit the Materials Designer interface, again via the 'Input/Output' menu.",
+            "endTime": "0:03:21.000",
+            "startTime": "0:03:15.500"
+        },
+        {
+            "text": "As a result, we are able to retrieve, within our materials collection, the individual structures for the benzene molecule and for the gold surface respectively, as well as for their combined structure.",
+            "endTime": "0:03:36.000",
+            "startTime": "0:03:25.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:03:39.000",
+            "startTime": "0:03:36.500"
+        }
+    ],
+    "youTubeId": "qCLJzxBlyXY"
+}
