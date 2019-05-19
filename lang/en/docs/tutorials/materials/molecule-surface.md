@@ -80,6 +80,9 @@ After the correct desired positioning of the benzene molecule on top of the gold
 
 The user will notice that a new material entry, called "New Material" by default, has now been created automatically and is listed within the [left-had items list sidebar](../../materials-designer/sidebar-items.md) of the Materials Designer interface. It contains the combined benzene-gold surface crystallographic structure, as a new single material entity.
 
+!!!tip "Toggling of Orthographic Camera"
+    The user is recommended to toggle the use of the [Orthographic camera](../../materials-designer/3d-editor/view.md#toggle-orthographic-camera) functionality, accessible via the [3D Editor interface](../../materials-designer/3d-editor.md) of Materials Designer, in order to verify the correct alignment and centrality of the benzene molecule over the surface.
+
 This new entry should first be [renamed](../../materials-designer/sidebar-items.md#edit-name-of-item) to a more memorable form, and should finally be [saved](../../materials-designer/header-menu/input-output/save.md) via the ["Input/Output" Menu](../../materials-designer/header-menu/input-output.md) located at the top-left corner into the account-owned materials [collection](../../accounts/collections.md), as a new material structure entry which is distinct from both the original isolated benzene molecule and gold structure.
 
 ## Run Further Analysis
@@ -92,7 +95,7 @@ The [Nudged Elastic Band (NEB)](../../models/auxiliary-concepts/nudged-elastic-b
 
 We demonstrate the above-mentioned steps which lead to the creation of a combined benzene molecule/gold surface crystallographic system, made possible via the functionalities of the [Materials Designer Interface](../../materials-designer/overview.md) of our platform, in the following animation. 
 
-In this example, we consider a 10x10x3 slab supercell of the primitive unit cell of gold as a surface approximation, and we place the benzene molecule over the gold surface such that the molecule-surface distance is approximately 3.6 Angstroms.
+In this example, we consider a 3x3x3 slab supercell of the primitive unit cell of gold as a surface approximation (larger supercell dimensions should be envisaged for a more realistic surface representation). We also place the benzene molecule over the gold surface such that the molecule-surface distance is approximately 3.6 Angstroms, as measured by the difference in the z coordinates of the positions of the benzene atoms and gold surface atoms.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/m7HoFpXZ57k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
