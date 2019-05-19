@@ -683,6 +683,8 @@ nav:
             - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
             - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
+            - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
+
 
 
 # TODO: refactor/re-implement and re-enable
