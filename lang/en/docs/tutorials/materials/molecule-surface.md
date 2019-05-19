@@ -33,6 +33,7 @@ Direct
 
 </details>
 
+Alternatively, the above benzene molecular structure can also be retrieved from the **Pubchem** public repository [^2], and then converted to the POSCAR format for uploading on our platform through any online converter, such as the **OpenBabel** Open Source Chemistry Toolbox [^3], which allows to convert between nearly all the chemical data formats. 
 
 ## Create Benzene Molecule Entry in Materials Collection
 
@@ -88,6 +89,8 @@ The [Nudged Elastic Band (NEB)](../../models/auxiliary-concepts/nudged-elastic-b
 
 We demonstrate the above-mentioned steps which lead to the creation of a combined benzene molecule/gold surface crystallographic system, made possible via the functionalities of the [Materials Designer Interface](../../materials-designer/overview.md) of our platform, in the following animation. 
 
+In this example, we consider a 10x10x3 slab supercell of the primitive unit cell of gold as a surface approximation, and we place the benzene molecule over the gold surface such that the molecule-surface distance is approximately 3.6 Angstroms.
+
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/m7HoFpXZ57k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -95,3 +98,7 @@ We demonstrate the above-mentioned steps which lead to the creation of a combine
 ## Links
 
 [^1]: [Wikipedia Adsorption, Website](https://en.wikipedia.org/wiki/Adsorption)
+
+[^2]: [Pubchem Benzene Datasheet, Official Website](https://pubchem.ncbi.nlm.nih.gov/compound/241)
+
+[^3]: [OpenBabel Web Interface, ChemInfo Website](http://www.cheminfo.org/Chemistry/Cheminformatics/FormatConverter/index.html)
