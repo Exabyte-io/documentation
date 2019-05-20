@@ -7,13 +7,14 @@
         {
             "...": "../../metadata/general.json#/tags"
         },
-        "molecule",
-        "surface",
+        {
+            "...": "../../metadata/chemical.json#/tags"
+        },
+        {
+            "...": "../../properties-directory/scalar/surface-energy.json#/tags"
+        },
         "benzene",
-        "gold",
-        "chemical",
-        "adsorption",
-        "chemistry"
+        "gold"
     ],
     "title": "Exabyte.io Tutorial: Create Molecule on a Surface",
     "youTubeCaptions": [
