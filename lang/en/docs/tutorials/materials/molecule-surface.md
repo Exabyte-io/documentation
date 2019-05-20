@@ -4,6 +4,8 @@ In this tutorial, the user will learn about how the [Material Designer Interface
 
 We consider the example of a **benzene molecule** adsorbed on a **gold (Au) (211) surface** throughout the present tutorial. The chemical structure of the benzene molecule is given in the expandable section below for reference purposes, in the POSCAR input data format.
 
+## Structures
+
 <details markdown="1">
   <summary>
     Benzene molecule, POSCAR ...
@@ -84,6 +86,12 @@ The user will notice that a new material entry, called "New Material" by default
     The user is recommended to toggle the use of the [Orthographic camera](../../materials-designer/3d-editor/view.md#toggle-orthographic-camera) functionality, accessible via the [3D Editor interface](../../materials-designer/3d-editor.md) of Materials Designer, in order to verify the correct alignment and centrality of the benzene molecule over the surface.
 
 This new entry should first be [renamed](../../materials-designer/sidebar-items.md#edit-name-of-item) to a more memorable form, and should finally be [saved](../../materials-designer/header-menu/input-output/save.md) via the ["Input/Output" Menu](../../materials-designer/header-menu/input-output.md) located at the top-left corner into the account-owned materials [collection](../../accounts/collections.md), as a new material structure entry which is distinct from both the original isolated benzene molecule and gold structure.
+
+## Resulting Material
+
+An animation of the final combined benzene molecule-gold surface structure can be viewed below.
+
+<img data-gifffer="/images/tutorials/molecule-surface-sample.gif" />
 
 ## Run Further Analysis
 
