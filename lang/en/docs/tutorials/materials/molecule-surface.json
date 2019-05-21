@@ -14,7 +14,8 @@
             "...": "../../properties-directory/scalar/surface-energy.json#/tags"
         },
         "benzene",
-        "gold"
+        "gold",
+        "adsorption"
     ],
     "title": "Exabyte.io Tutorial: Create Molecule on a Surface",
     "youTubeCaptions": [
