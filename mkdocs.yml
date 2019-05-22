@@ -684,6 +684,7 @@ nav:
             - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
             - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
+            - Interface:                             tutorials/materials/slabs-interface.md
 
 
 
