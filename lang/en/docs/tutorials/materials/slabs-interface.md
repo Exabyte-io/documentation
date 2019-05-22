@@ -1,6 +1,6 @@
 # Create an Interface
 
-In this tutorial, the user will learn about how the [Material Designer Interface](../../materials-designer/overview.md) of our platform can be used to create **two slabs**, and how to put them next to each other to create an **interface**.
+In this tutorial, the user will learn about how the [Material Designer Interface](../../materials-designer/overview.md) of our platform can be used to create **two slabs**, and how to put them next to each other to create an **interface** [^1].
 
 We consider the example of a **semiconductor-metal interface**, which is commonly encountered in a broad variety of semiconducting devices, by considering the case of a slab of gold placed next to a slab of silicon.
 
@@ -59,3 +59,7 @@ We finally place the gold over the silicon slab such that the interface distance
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/aCjapKJ0y9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Links
+
+[^1]: [Wikipedia Grain boundary, Website](https://en.wikipedia.org/wiki/Grain_boundary)
