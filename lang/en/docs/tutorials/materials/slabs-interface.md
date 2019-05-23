@@ -19,6 +19,9 @@ Once imported into Materials Designer, the gold and silicon crystals will appear
 
 The instructions contained [in this page](../../materials-designer/header-menu/advanced/surface-slab.md) should then be followed in order to create a slab for each material, both with normal vector oriented along the [211] axis so as to be parallel to each other, using our surface/slab creator in Materials Designer, starting from the original crystalline samples. 
 
+!!!warning "Straining needed"
+    It is important to slightly strain the gold slab away from its equilibrium lattice configuration, in order to ensure a better matching between the two crystal structures across the interface.
+
 ## Open Multi-Materials 3D Editor
 
 After both the silicon and the gold slabs have been created as two separate structural items in the current session of Materials Designer, the user should now open an instance of the [Multi-Materials 3D Editor](../../materials-designer/3d-editor/edit.md) via the ["View" Menu](../../materials-designer/header-menu/view.md#multi-material-3d-editor), located within the [header bar](../../materials-designer/header-menu/header-menu-intro.md) of the Materials Deigner Interface.
