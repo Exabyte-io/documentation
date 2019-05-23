@@ -49,7 +49,7 @@ This new entry should first be [renamed](../../materials-designer/sidebar-items.
 
 An animation of the final combined gold-silicon interface structure can be viewed below.
 
-<img data-gifffer="/images/tutorials/molecule-surface-sample.gif" />
+<img data-gifffer="/images/tutorials/interface.gif" />
 
 ## Animation
 
@@ -60,7 +60,7 @@ In this example, we consider a 3x3 supercell of the primitive unit cell of gold 
 We finally place the gold over the silicon slab such that the interface distance separating the two slabs along the vertical dimension is of approximately 2 Angstroms, as measured by the difference in the z coordinates of the positions of the gold and silicon interface atoms. Care needs to be taken to ensure that such separating distance applies also across the vertical periodic boundary condition of the system.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/aCjapKJ0y9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/odvrgTmWmCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
