@@ -1,0 +1,114 @@
+{
+    "descriptionLinks": [
+        "Create an Interface: https://docs.exabyte.io/tutorials/materials/slabs-interface/"
+    ],
+    "description": "In this tutorial, the user will learn about how the Material Designer Interface of our platform can be used to create two slabs, and how to put them next to each other to create an interface. We consider the example of a semiconductor-metal interface, which is commonly encountered in a broad variety of semiconducting devices, by considering the case of a slab of gold placed next to a slab of silicon.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../metadata/chemical.json#/tags"
+        },
+        {
+            "...": "../../properties-directory/scalar/surface-energy.json#/tags"
+        },
+        "silicon",
+        "gold",
+        "interface"
+    ],
+    "title": "Exabyte.io Tutorial: Create an Interface",
+    "youTubeCaptions": [
+        {
+            "text": "Create an Interface tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Open Materials Designer, by navigating to the materials collection page.",
+            "endTime": "00:00:07.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> open the 'Input/Output' menu, and import a sample structure of crystalline gold, which will be added next to the existing sample of silicon. This structure can readily be imported from the Materials Bank, if it is not already present in the materials collection.",
+            "endTime": "0:00:23.000",
+            "startTime": "0:00:09.500"
+        },
+        {
+            "text": "Then, open the 'Surface/Slab' menu option, in order to create a silicon slab.",
+            "endTime": "0:00:32.000",
+            "startTime": "0:00:27.500"
+        },
+        {
+            "text": "First set the Miller indices to (2 1 1). Then, set the supercell dimensions to 2x2, the number of layers to 6 and the vacuum ratio to 0.44 to create the corresponding slab.",
+            "endTime": "0:00:44.000",
+            "startTime": "0:00:32.500"
+        },
+        {
+            "text": "We now repeat the same procedure for the case of gold, to create its corresponding slab. We use the same slab parameters, with the exception of the x-y supercell dimensions, which this time we set to 3x3.",
+            "endTime": "0:00:58.000",
+            "startTime": "0:00:52.500"
+        },
+        {
+            "text": "Next, we need to slightly strain the gold slab away from its equilibrium lattice configuration, in order to ensure a better matching between the two crystal structures across the interface.",
+            "endTime": "0:01:16.000",
+            "startTime": "0:01:00.500"
+        },
+        {
+            "text": "Now, open the 'View' menu, and then navigate to the 'Multi-Material 3D Editor' option listed there. We will use this new editor interface to combine the gold and silicon slabs together, so as to generate a unified interface structure.",
+            "endTime": "0:01:40.000",
+            "startTime": "0:01:25.500"
+        },
+        {
+            "text": "First, let us adjust the vertical distance along the z dimension separating the top gold slab from the bottom silicon one. By inspecting the relative z coordinates of the gold and silicon atoms respectively, we achieve a total separation of about 2 Angstroms across the interface.",
+            "endTime": "0:01:55.500",
+            "startTime": "0:01:40.500"
+        },
+        {
+            "text": "Next, we re-orient our view of the system first laterally and then vertically down, and we take care to verify that the two slabs are properly aligned with each other.",
+            "endTime": "0:02:13.000",
+            "startTime": "0:02:05.500"
+        },
+        {
+            "text": "Once this is done, we exit the Multi-Material 3D editor via the top-left menu, in order to return to the original Materials Designer interface.",
+            "endTime": "0:02:36.000",
+            "startTime": "0:02:26.000"
+        },
+        {
+            "text": "As a result of our manipulation, a new material has therefore been added to the list on the left-hand sidebar, corresponding to the combined two-slabs interface system.",
+            "endTime": "0:02:46.000",
+            "startTime": "0:02:36.500"
+        },
+        {
+            "text": "Let us inspect the structure of this combined system via the interactive 3D viewer. Bonds can also be added and drawn between the atoms within the crystal structures, via the relevant option of the 3D viewer.",
+            "endTime": "0:03:00.000",
+            "startTime": "0:02:46.500"
+        },
+        {
+            "text": "We now rename the new material structure to a more memorable form, such as 'Interface <sub alias='silicon-gold'>Si-Au</sub>'.",
+            "endTime": "0:03:06.000",
+            "startTime": "0:03:00.500"
+        },
+        {
+            "text": "Then, we save all structures under consideration simultaneously to our collection of materials, via the relevant option under the 'Input/Output' menu.",
+            "endTime": "0:03:15.000",
+            "startTime": "0:03:06.500"
+        },
+        {
+            "text": "Finally, we exit the Materials Designer interface, again via the 'Input/Output' menu.",
+            "endTime": "0:03:21.000",
+            "startTime": "0:03:15.500"
+        },
+        {
+            "text": "As a result, we are able to retrieve, within our materials collection, the individual structures for the silicon and gold slabs respectively, as well as for their combined interface structure.",
+            "endTime": "0:03:36.000",
+            "startTime": "0:03:25.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:03:39.000",
+            "startTime": "0:03:36.500"
+        }
+    ],
+    "youTubeId": "aCjapKJ0y9c"
+}
