@@ -91,5 +91,5 @@ We summarize the aforementioned steps involved in generating an Interpolated Set
 In this second animation, we demonstrate how to add the atomic constraints discussed previously into a new "Constrained" Interpolated Set for NEB applications, confining the movement of atoms to only the x-direction since our H3 molecules are entirely one-dimensional. This is done by adding the "1 0 0" line next to the atoms in the initial image, except for the atom located at the origin, for which a "0 0 0" constraint suffices since this this atom remains fixed at all times.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/-2We6J5UeMs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/e-q4rZMWZQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
