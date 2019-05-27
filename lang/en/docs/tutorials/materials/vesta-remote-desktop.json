@@ -1,0 +1,108 @@
+{
+    "descriptionLinks": [
+        "Create Materials With VESTA  under Remote Desktop: https://docs.exabyte.io/tutorials/dft/electronic/vesta-remote-desktop/"
+    ],
+    "description": "In this tutorial, we explain how the user can create and design a new crystal structure of Iron using the VESTA software pre-installed on our Remote Desktop Interface. This crystal structure can later be exported and inspected within our Web Interface.",
+    "title": "Exabyte.io Tutorial: Create Materials With VESTA  under Remote Desktop",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        "iron",
+        "VESTA",
+        "crystal structure"
+    ],
+    "youTubeCaptions": [
+        {
+            "text": "Create Materials With VESTA tutorial.",
+            "endTime": "00:00:02.500",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "First open a Remote Desktop session, via the main right-hand sidebar of our Web Interface.",
+            "endTime": "00:00:08.000",
+            "startTime": "00:00:03.000"
+        },
+        {
+            "text": "Open the 'Applications' menu, located at the top of the Remote Desktop interface. <break time='0.5' /> Here, navigate to the 'VESTA' analysis and visualization software option, and open it.",
+            "endTime": "0:00:20.000",
+            "startTime": "0:00:09.000"
+        },
+        {
+            "text": "Click on 'File' and then 'New Structure'. <break time='1.0' /> In the resulting 'New Data' dialog, first rename the new material entry being created to 'bcc iron'.",
+            "endTime": "0:00:30.000",
+            "startTime": "0:00:20.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> navigate to the 'Unit Cell' tab, and choose the appropriate space group option. <break time='0.5' /> Since iron has a bcc crystal structure, we need to select the space group number 229.",
+            "endTime": "0:00:45.000",
+            "startTime": "0:00:33.500"
+        },
+        {
+            "text": "We also give our iron unit cell its corresponding lattice parameter, of around 2.87 Angstroms.",
+            "endTime": "0:00:52.000",
+            "startTime": "0:00:45.500"
+        },
+        {
+            "text": "We then navigate to the 'Structure parameters' tab. <break time='0.5' /> Here, we insert the list of atoms within the unit cell, by first assigning them their correct iron chemical identity out of the periodic table options. <break time='0.5' /> We only need to define the atom at the origin, since all other atoms are then automatically identified by space group symmetry.",
+            "endTime": "0:01:13.000",
+            "startTime": "0:00:54.000"
+        },
+        {
+            "text": "After defining the iron crystal structure parameters, its 3D graphic visualization can be inspected under the main VESTA interface. <break time='0.5' /> Let us spend a moment to review the general appearance of the bcc unit cell of iron, by rotating its visual representation.",
+            "endTime": "0:01:29.000",
+            "startTime": "0:01:14.000"
+        },
+        {
+            "text": "Now, open again the 'File' menu, and select the 'Export Data' option there. <break time='3.0' /> This allows us to export the crystallographic data of our bcc iron sample to a file, in the <sub alias='POSH CAR'>POSCAR</sub> format, which we choose to save under the Dropbox folder linked under the user's main home directory, for its easier sharing across the Exabyte platform.",
+            "endTime": "0:01:57.000",
+            "startTime": "0:01:34.000"
+        },
+        {
+            "text": "We also confirm that we want the atomic position data to be saved in fractional coordinates.",
+            "endTime": "0:02:04.000",
+            "startTime": "0:01:59.500"
+        },
+        {
+            "text": "Now close the Remote Desktop interface, to return to the main Web interface of our platform.",
+            "endTime": "0:02:11.500",
+            "startTime": "0:02:07.000"
+        },
+        {
+            "text": "Navigate to the left-hand sidebar, and open the 'Dropbox' option listed there, in order to retrieve the contents of the Dropbox folder.",
+            "endTime": "0:02:20.000",
+            "startTime": "0:02:12.000"
+        },
+        {
+            "text": "Click on the previously-created bcc iron <sub alias='POSH CAR'>POSCAR</sub> file, in order to download it to the local disk.",
+            "endTime": "0:02:27.000",
+            "startTime": "0:02:20.500"
+        },
+        {
+            "text": "We conclude this tutorial by navigating to the main materials collection page for our account.",
+            "endTime": "0:02:33.000",
+            "startTime": "0:02:27.500"
+        },
+        {
+            "text": "From here, we upload the previously-downloaded bcc iron <sub alias='POSH CAR'>POSCAR</sub> file back onto our account-owned materials collection, via the relevant uploading option.  <break time='2.0' /> Please wait until the uploading is finished.",
+            "endTime": "0:02:49.000",
+            "startTime": "0:02:34.000"
+        },
+        {
+            "text": "The entry for the bcc iron material sample can now consequently be retrieved under our collection of materials.",
+            "endTime": "0:03:02.000",
+            "startTime": "0:02:54.000"
+        },
+        {
+            "text": "Let us open this entry, in order to inspect its corresponding crystal structure parameters under the Materials Viewer interface of our platform. Here, we can also retrieve a similar 3D graphic representation of the bcc unit cell or iron as the one inspected previously under VESTA.",
+            "endTime": "0:03:20.000",
+            "startTime": "0:03:03.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:03:26.000",
+            "startTime": "0:03:23.000"
+        }
+    ],
+    "youTubeId": "UCgJLdS4L-M"
+}
