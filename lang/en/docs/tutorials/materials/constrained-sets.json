@@ -13,6 +13,9 @@
         },
         {
             "...": "../../materials-designer/header-menu/advanced/interpolated-set.json#/tags"
+        },
+        {
+            "...": "../../models/auxiliary-concepts/nudged-elastic-band.json#/tags"
         }
     ],
     "youTubeCaptions": [
@@ -22,105 +25,115 @@
             "startTime": "00:00:00.000"
         },
         {
-            "text": "Let us start by uploading on our platform the initial and final images of the three-atom hydrogen molecular structure, in the <sub alias='POSH CAR'>POSCAR</sub> format, via the relevant option under the Materials collection page. <break time='4.0' /> Please wait for the uploading of the structures to the materials collection to finish.",
-            "endTime": "0:00:23.000",
+            "text": "Open the Materials Designer interface, via the corresponding 'Create' button.",
+            "endTime": "0:00:07.000",
             "startTime": "0:00:03.500"
         },
         {
-            "text": "Once the uploading is completed, open the Materials Designer interface via the corresponding 'Create' button.",
-            "endTime": "0:00:44.000",
-            "startTime": "0:00:37.500"
-        },
-        {
-            "text": "From within the Materials Designer interface, <break time='0.5' /> open the 'Input/Output' menu, and import the previously-uploaded initial and final H3 molecules via the relevant option.",
-            "endTime": "0:00:55.000",
-            "startTime": "0:00:45.500"
+            "text": "From within the Materials Designer interface, <break time='0.5' /> open the 'Input/Output' menu, <break time='0.2' /> and import the initial and final H3 molecules via the relevant option.",
+            "endTime": "0:00:18.000",
+            "startTime": "0:00:08.500"
         },
         {
             "text": "Let us also delete the original default silicon material.",
-            "endTime": "0:00:59.000",
-            "startTime": "0:00:56.000"
+            "endTime": "0:00:23.000",
+            "startTime": "0:00:18.500"
         },
         {
             "text": "Now we need to clone and rename both the initial and final structures, via the relevant option under the 'Edit' menu, for a correct final attribution of the indices within the resulting ordered set. <break time='4' /> Please repeat the same procedure for both structures.",
-            "endTime": "0:01:20.000",
-            "startTime": "0:01:02.000"
+            "endTime": "0:00:43.000",
+            "startTime": "0:00:25.000"
         },
         {
             "text": "We also need to delete the original structures from the left-hand items list sidebar.",
-            "endTime": "0:01:27.000",
-            "startTime": "0:01:21.000"
+            "endTime": "0:00:48.000",
+            "startTime": "0:00:43.500"
         },
         {
             "text": "Let us take a moment to inspect both the initial and final H3 molecular structures, with the help of the interactive 3D viewer.",
-            "endTime": "0:01:35.000",
-            "startTime": "0:01:27.500"
+            "endTime": "0:00:56.000",
+            "startTime": "0:00:48.500"
         },
         {
             "text": "We now add the relaxation constraints for ensuing N.E.B. computations, by inserting a zero for those atomic coordinates that need to be held fixed, and a one for those that are allowed to move.",
-            "endTime": "0:01:51.000",
-            "startTime": "0:01:40.000"
+            "endTime": "0:01:12.000",
+            "startTime": "0:01:00.000"
         },
         {
             "text": "We thus allow the x coordinates to relax, since our H3 molecules are entirely one-dimensional along x, except for the atom at the origin, which is instead kept completely fixed.",
-            "endTime": "0:02:03.000",
-            "startTime": "0:01:52.000"
+            "endTime": "0:01:23.000",
+            "startTime": "0:01:12.500"
         },
         {
             "text": "Then, open the 'Advanced' menu option, in order to generate an interpolated set.",
-            "endTime": "0:02:10.000",
-            "startTime": "0:02:04.000"
+            "endTime": "0:01:29.000",
+            "startTime": "0:01:23.500"
         },
         {
             "text": "We select to generate three intermediate images between the initial and final structures within the interpolated set.",
-            "endTime": "0:02:18.000",
-            "startTime": "0:02:11.000"
+            "endTime": "0:01:35.500",
+            "startTime": "0:01:29.500"
         },
         {
             "text": "This will add the intermediate images to the left-hand sidebar list of structures, on top of the original initial and final images.",
-            "endTime": "0:02:26.000",
-            "startTime": "0:02:19.000"
+            "endTime": "0:01:44.000",
+            "startTime": "0:01:36.000"
         },
         {
             "text": "Let us now cycle through all images comprised within the resulting interpolated set, in order to observe the corresponding shift in the Hydrogen atomic positions within the H3 molecule.",
-            "endTime": "0:02:37.000",
-            "startTime": "0:02:26.500"
+            "endTime": "0:01:56.000",
+            "startTime": "0:01:45.500"
         },
         {
             "text": "We now save the entire interpolated set to our Materials collection, via the corresponding option under the 'Input/Output' menu, after inserting a couple of descriptive tags.",
-            "endTime": "0:02:50.000",
-            "startTime": "0:02:39.000"
+            "endTime": "0:02:11.000",
+            "startTime": "0:02:00.000"
         },
         {
             "text": "We choose to save the interpolated set within a new folder set in our Materials collection, which we create purposely via the relevant option.",
-            "endTime": "0:03:02.000",
-            "startTime": "0:02:54.000"
+            "endTime": "0:02:22.000",
+            "startTime": "0:02:14.000"
         },
         {
             "text": "We call our new set 'CONSTRAINED SET', <break time='8' /> and then change its type to 'ordered', such that every image within the interpolated set will have a unique ordering index attributed to it.",
-            "endTime": "0:03:22.000",
-            "startTime": "0:03:05.000"
+            "endTime": "0:02:43.000",
+            "startTime": "0:02:25.000"
         },
         {
             "text": "We finally select the newly-created ordered set for saving the contents of our interpolated set, and wait until the saving operation is completed.",
-            "endTime": "0:03:33.000",
-            "startTime": "0:03:25.000"
+            "endTime": "0:02:53.000",
+            "startTime": "0:02:45.000"
         },
         {
             "text": "Now open the 'Input/Output' menu to exit the Materials Designer interface, and return to the original Materials collection page, where the new 'CONSTRAINED SET' can be retrieved for inspection of its contents.",
-            "endTime": "0:03:50.000",
-            "startTime": "0:03:38.000"
+            "endTime": "0:03:09.500",
+            "startTime": "0:02:58.000"
         },
         {
-            "text": "Inside the 'CONSTRAINED SET', the user will be able to see the complete list of image structures of the H3 molecule comprised within our interpolated set, of which there are five in total, three of which are intermediate plus the original initial and final images. <break time='0.5' /> Each one has its own ordering index assigned to it.",
-            "endTime": "0:04:10.500",
-            "startTime": "0:03:53.000"
+            "text": "Inside the 'CONSTRAINED SET', the user will be able to see the complete list of image structures of the H3 molecule comprised within our interpolated set, of which there are five in total. <break time='0.5' /> Each one has its own ordering index assigned to it.",
+            "endTime": "0:03:23.500",
+            "startTime": "0:03:10.000"
+        },
+        {
+            "text": "Let us conclude this tutorial by visualizing the contents of the 'CONSTRAINED SET', via the relevant option in the Materials Explorer interface.",
+            "endTime": "00:03:32.000",
+            "startTime": "00:03:24.000"
+        },
+        {
+            "text": "This allows us to inspect the entire interpolated set, including initial, final and intermediate images, within a single instance of the Materials Viewer interface.",
+            "endTime": "00:03:43.000",
+            "startTime": "00:03:34.000"
+        },
+        {
+            "text": "Let us cycle through all images again.",
+            "endTime": "0:03:48.500",
+            "startTime": "0:03:46.000"
         },
         {
             "text": "This completes the present tutorial.",
-            "endTime": "0:04:13.000",
-            "startTime": "0:04:11.000"
+            "endTime": "0:03:56.000",
+            "startTime": "0:03:53.000"
         }
     ],
-    "youTubeId": "e-q4rZMWZQo"
+    "youTubeId": "AFhxfgaVO3o"
 }
