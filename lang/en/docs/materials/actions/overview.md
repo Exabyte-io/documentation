@@ -21,3 +21,7 @@ Setting a material as the default choice is mostly equivalent to the [general pr
 ## [Copy Materials from Bank](copy-bank.md)
 
 Copying Materials from the Bank is mostly equivalent to the procedure explained in [general introduction](../../entities-general/actions/copy-bank.md) and is also shown [here](copy-bank.md).
+
+## [Visualize Sets](visualize.md)
+
+[Sets](../../entities-general/sets.md) of materials can be visualized by performing the relevant [action](visualize.md).
