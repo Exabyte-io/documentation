@@ -4,6 +4,8 @@ In this tutorial, the user will learn about how the [Material Designer Interface
 
 We consider the example of a **benzene molecule** adsorbed on a **gold (Au) (211) surface** throughout the present tutorial. The chemical structure of the benzene molecule is given in the expandable section below for reference purposes, in the POSCAR input data format.
 
+## Structures
+
 <details markdown="1">
   <summary>
     Benzene molecule, POSCAR ...
@@ -85,6 +87,12 @@ The user will notice that a new material entry, called "New Material" by default
 
 This new entry should first be [renamed](../../materials-designer/sidebar-items.md#edit-name-of-item) to a more memorable form, and should finally be [saved](../../materials-designer/header-menu/input-output/save.md) via the ["Input/Output" Menu](../../materials-designer/header-menu/input-output.md) located at the top-left corner into the account-owned materials [collection](../../accounts/collections.md), as a new material structure entry which is distinct from both the original isolated benzene molecule and gold structure.
 
+## Resulting Material
+
+An animation of the final combined benzene molecule-gold surface structure can be viewed below.
+
+<img data-gifffer="/images/tutorials/molecule-surface-sample.gif" />
+
 ## Run Further Analysis
 
 The user is now free to use the newly generated benzene-gold surface system, in order to perform its further analysis, such as studying the adsorption energy.
@@ -98,7 +106,7 @@ We demonstrate the above-mentioned steps which lead to the creation of a combine
 In this example, we consider a 3x3x3 slab supercell of the primitive unit cell of gold as a surface approximation (larger supercell dimensions should be envisaged for a more realistic surface representation). We also place the benzene molecule over the gold surface such that the molecule-surface distance is approximately 3.6 Angstroms, as measured by the difference in the z coordinates of the positions of the benzene atoms and gold surface atoms.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/qCLJzxBlyXY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/aCjapKJ0y9c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links

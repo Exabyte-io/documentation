@@ -7,13 +7,15 @@
         {
             "...": "../../metadata/general.json#/tags"
         },
-        "molecule",
-        "surface",
+        {
+            "...": "../../metadata/chemical.json#/tags"
+        },
+        {
+            "...": "../../properties-directory/scalar/surface-energy.json#/tags"
+        },
         "benzene",
         "gold",
-        "chemical",
-        "adsorption",
-        "chemistry"
+        "adsorption"
     ],
     "title": "Exabyte.io Tutorial: Create Molecule on a Surface",
     "youTubeCaptions": [
@@ -43,7 +45,7 @@
             "startTime": "0:00:27.500"
         },
         {
-            "text": "First set the normal direction to the surface to (2 1 1). Then, set the supercell dimensions so as to have a 3x3x3 supercell, as an approximation for a gold surface.",
+            "text": "First set the Miller indices to (2 1 1). Then, set the supercell dimensions to 3x3 and the number of layers to 3 to create a slab.",
             "endTime": "0:00:44.000",
             "startTime": "0:00:32.500"
         },
@@ -128,5 +130,5 @@
             "startTime": "0:03:36.500"
         }
     ],
-    "youTubeId": "qCLJzxBlyXY"
+    "youTubeId": "aCjapKJ0y9c"
 }
