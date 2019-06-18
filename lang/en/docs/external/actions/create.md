@@ -75,8 +75,6 @@ and, below is the equivalent nested structure that should be **avoided**:
 
 When ready, click "Submit" button to initiate the upload.
 
-## Animation
+## Demonstration
 
-Below, we first navigate to the [Projects Explorer](../../jobs/projects.md) starting from [External Uploads Explorer](../ui/explorer.md). We then open the first listed project, and from there we create a new Job by opening [Jobs Designer](../../jobs-designer/overview.md) with the "Create" button.
-
-<img data-gifffer="/images/jobs/create-job.gif">
+For a more detailed demonstration on how external uploads can be created consult the [corresponding tutorial](../../tutorials/other/external-upload.md) 
