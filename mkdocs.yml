@@ -480,6 +480,16 @@ nav:
             - View Jobs List:                           jobs-cli/actions/view-job-list.md
 
 
+    - External Uploads:
+        - Overview:                                     external/overview.md
+        - Status:                                       external/status.md
+        - User Interface:
+            - Explorer:                                 external/ui/explorer.md
+        - Actions:
+            - Overview:                                 external/actions/overview.md
+            - Create:                                   external/actions/create.md
+
+
     - Properties:
         - Overview:                                     properties/overview.md
         - Lifecycle:
@@ -678,6 +688,7 @@ nav:
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
         - General Functionality:
             - Restart from Previous Job:             tutorials/other/restart-job.md
+            - Upload External Job Data:              tutorials/other/external-upload.md
         - Materials:
             - Overview:                              tutorials/materials/overview.md
             - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md

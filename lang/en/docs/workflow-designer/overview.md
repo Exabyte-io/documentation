@@ -14,7 +14,7 @@ The Workflow Designer is structured into three main building blocks, and has the
 
 <map name="mapname">
     <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar/">
-    <area shape="rect" coords="190,91,754,512" href="/workflow-designer/subworkflow-editor/intro/">
+    <area shape="rect" coords="190,91,754,512" href="/workflow-designer/subworkflow-editor/overview/">
     <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu">
 </map>
 
