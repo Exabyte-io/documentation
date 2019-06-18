@@ -47,6 +47,10 @@ The Project Status is indicated in [Project Explorer](ui/projects-explorer.md#st
 
 Each new Account is initialized with a default project named "Default". It is initially set to be [shared publicly](../collaboration/sharing/access-levels.md) with all platform users. Higher levels of privacy for this and all [subsequently created Projects](actions/create-delete-project.md) can be set when an appropriate [service level](../pricing/service-levels.md) is attributed to the account.
 
+## "External" Project
+
+Jobs created through [External Uploads](../external/overview.md) are placed into the corresponding project.
+
 ## Project Page
 
 Each Project has its own dedicated page, listing all the contained Jobs among other properties. We review Projects Pages [here](ui/project-page.md).
