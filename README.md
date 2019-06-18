@@ -4,7 +4,7 @@
 
 ## Setup
 
-For quick installation:
+For a quick installation:
 
 1. Install dependencies: python 2.7, `pip`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
 
