@@ -71,6 +71,9 @@ and, below is the equivalent nested structure that should be **avoided**:
 | |____vasprun.xml
 ```
 
+!!!note "Creating an archive on a UNIX-based system"
+    If we assume that `job_dir` is the folder containing the job files, the archive can be created using the following example command: `cd job_dir; zip -r9 ../archive.zip . ; cd -`
+
 ## Click "Submit"
 
 When ready, click "Submit" button to initiate the upload.

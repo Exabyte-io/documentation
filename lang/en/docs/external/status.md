@@ -18,4 +18,4 @@ When the (upload) task is "Finished", (without errors) the status is updated acc
 
 Badge: <span class="btn badge b-danger border-50">E</span>
 
-An "Error" status indicates that the task execution terminated as a result of encountering a computational error.
+An "Error" status indicates that the task execution terminated as a result of encountering an error.
