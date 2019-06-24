@@ -94,7 +94,7 @@ nav:
         - Overview:                                      security/overview.md
         - Security Policies:                             security/security-policies.md
         - Threats Analysis:                              security/threats-analysis.md
-        - Privacy:                                       security/privacy-statement.md  # duplicate through link
+        - Privacy:                                       site-policy/privacy-statement.md
 
 
 # COMMON UI COMPONENTS
