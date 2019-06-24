@@ -8,7 +8,7 @@ Holding onto your private information is a serious responsibility, and we want y
 
 We collect your information only with your consent; we only collect the minimum amount of personal information that is necessary to fulfill the purpose of your interaction with us; we don't sell it to third parties; and we only use it as this Privacy Statement describes.
 
-## What information we collects and why
+## What information we collect and why
 
 ### Information from website browsers
 
