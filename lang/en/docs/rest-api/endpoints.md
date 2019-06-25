@@ -48,7 +48,7 @@ The aforementioned steps are demonstrated in the animation below.
 
 Below you can find the currently supported API versions.
 
-- [2018-10-01](../../api/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json)
+- [2018-10-01](https://platform.exabyte.io/api/2018-10-01/swagger.json)
 
 
 ## Links
