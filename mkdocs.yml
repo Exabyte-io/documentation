@@ -96,6 +96,61 @@ nav:
         - Threats Analysis:                              security/threats-analysis.md
         - Privacy:                                       site-policy/privacy-statement.md
 
+# TUTORIALS
+    - Tutorials:
+        - Overview:                                  tutorials/overview.md
+        - Jobs via Command Line:
+            - Overview:                              tutorials/jobs-cli/overview.md
+            - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
+            - View Results:                          tutorials/jobs-cli/view-results.md
+            - Import to Web Interface:               tutorials/jobs-cli/cli-job-import.md
+        - Templating:
+            - Overview:                              tutorials/templating/overview.md
+            - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
+            - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
+        - Machine Learning (ML):
+            - Overview:                              tutorials/ml/overview.md
+            - Train ML Model:                        tutorials/ml/train-ml-model.md
+            - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+        - Density Functional Theory:
+            - Electronic Properties:
+                - Overview:                                tutorials/dft/electronic/overview.md
+                - Effective Screening Medium:              tutorials/dft/electronic/esm-qe.md
+                - Electronic band structure:               tutorials/dft/electronic/band-structure.md
+                - Electronic band structure, HSE (QE):     tutorials/dft/electronic/hse-qe-bs.md
+                - Electronic band structure, HSE (VASP):   tutorials/dft/electronic/hse-vasp-bg.md
+                - Electronic band structure, GW, Full Freq., (QE): tutorials/dft/electronic/gw-qe-bs-fullfreq.md
+                - Electronic band structure, GW, Plasmon P., (QE): tutorials/dft/electronic/gw-qe-bs-plasmon.md
+                - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
+                - Electronic band gap, HSE (QE):           tutorials/dft/electronic/hse-qe-bg.md
+                - Electronic band gap, GW (VASP):          tutorials/dft/electronic/gw-vasp-bg.md
+                - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
+                - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
+                - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
+            - Vibrational Prop.:
+                - Overview:                              tutorials/dft/vibrational/overview.md
+                - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
+                - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
+                - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
+            - Thermodynamic Prop.:
+                - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
+            - Chemical Prop.:
+                - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
+                - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
+            - Add-ons:
+                - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
+                - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
+        - General Functionality:
+            - Restart from Previous Job:             tutorials/other/restart-job.md
+            - Upload External Job Data:              tutorials/other/external-upload.md
+        - Materials:
+            - Overview:                              tutorials/materials/overview.md
+            - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
+            - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
+            - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
+            - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
+            - Interface:                             tutorials/materials/slabs-interface.md
+
 
 # COMMON UI COMPONENTS
     - Interface Components:
@@ -640,63 +695,6 @@ nav:
       - Endpoints:                                   rest-api/endpoints.md
       - Exabyte API client:                          rest-api/api-client.md
       - Exabyte API examples:                        rest-api/api-examples.md
-
-
-# TUTORIALS
-    - Tutorials:
-        - Overview:                                  tutorials/overview.md
-        - Jobs via Command Line:
-            - Overview:                              tutorials/jobs-cli/overview.md
-            - Job Submission:                        tutorials/jobs-cli/job-cli-example.md
-            - View Results:                          tutorials/jobs-cli/view-results.md
-            - Import to Web Interface:               tutorials/jobs-cli/cli-job-import.md
-        - Templating:
-            - Overview:                              tutorials/templating/overview.md
-            - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
-            - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
-        - Machine Learning (ML):
-            - Overview:                              tutorials/ml/overview.md
-            - Train ML Model:                        tutorials/ml/train-ml-model.md
-            - Predict New Properties:                tutorials/ml/predict-ml-properties.md
-        - Density Functional Theory:
-            - Electronic Properties:
-                - Overview:                                tutorials/dft/electronic/overview.md
-                - Effective Screening Medium:              tutorials/dft/electronic/esm-qe.md
-                - Electronic band structure:               tutorials/dft/electronic/band-structure.md
-                - Electronic band structure, HSE (QE):     tutorials/dft/electronic/hse-qe-bs.md
-                - Electronic band structure, HSE (VASP):   tutorials/dft/electronic/hse-vasp-bg.md
-                - Electronic band structure, GW, Full Freq., (QE): tutorials/dft/electronic/gw-qe-bs-fullfreq.md
-                - Electronic band structure, GW, Plasmon P., (QE): tutorials/dft/electronic/gw-qe-bs-plasmon.md
-                - Electronic band gap:                     tutorials/dft/electronic/band-gap.md
-                - Electronic band gap, HSE (QE):           tutorials/dft/electronic/hse-qe-bg.md
-                - Electronic band gap, GW (VASP):          tutorials/dft/electronic/gw-vasp-bg.md
-                - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
-                - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
-                - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
-            - Vibrational Prop.:
-                - Overview:                              tutorials/dft/vibrational/overview.md
-                - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
-                - Phonons:                               tutorials/dft/vibrational/phonon-dispersion-dos.md
-                - Phonons on Grid:                       tutorials/dft/vibrational/phonons-grid.md
-            - Thermodynamic Prop.:
-                - Surface Energy:                        tutorials/dft/thermodynamic/surface-energy.md
-            - Chemical Prop.:
-                - Reaction Energy Profile (QE):          tutorials/dft/chemical/reaction-profile-qe.md
-                - Reaction Energy Profile (VASP):        tutorials/dft/chemical/reaction-profile-vasp.md
-            - Add-ons:
-                - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
-                - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
-        - General Functionality:
-            - Restart from Previous Job:             tutorials/other/restart-job.md
-            - Upload External Job Data:              tutorials/other/external-upload.md
-        - Materials:
-            - Overview:                              tutorials/materials/overview.md
-            - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
-            - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
-            - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
-            - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
-            - Interface:                             tutorials/materials/slabs-interface.md
-
 
 
 # TODO: refactor/re-implement and re-enable
