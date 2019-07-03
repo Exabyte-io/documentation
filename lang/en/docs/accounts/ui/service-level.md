@@ -24,14 +24,14 @@ For more information about the services offered under each different level and t
 
 ### Example Appearance
 
-An example of the way that service levels, together with the various features and cost per CPU hour that they offer, are presented at the bottom of the "Service Levels" interface page is demonstrated in the example image below. It can be deduced that the Service Level on the right labelled as "Pro" is the current choice for the present account, whereas the one on the left named "Advanced" is available as an "Upgrade".
+An example of the way that service levels, together with the various features are presented at the bottom of the "Service Levels" interface page is demonstrated in the example image below. It can be deduced that the Service Level on the left labelled as "Free" is the current choice for the present account, whereas the one on the right named "Pro" is available to "Select".
 
 ![Service Levels Examples](../../images/accounts/service-levels-examples.png "Service Levels Examples")
 
 
 ## Change Service Level
 
-Upgrading the current choice for Service Level can be performed using the `Upgrade` button present under the desired Service Level plan (if available). Downgrading is not available as an option, since a pre-payment has to be executed for the entire duration of the validity period of the chosen Service Level. For this reason, if the most advanced Service Level out of all the available options has already been chosen as the Current plan, all other plans will automatically appear as greyed-out, which indicates that they are disabled for selection.
+Upgrading/Downgrading the current choice for Service Level can be performed using the `Select` button present under the desired Service Level plan (if available).
 
 <!-- TODO: re-enable or remove
  
