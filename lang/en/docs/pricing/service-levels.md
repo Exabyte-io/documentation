@@ -5,7 +5,7 @@ The pricing on our platform is dependent on the [Service Level](../accounts/serv
 ## Comparison Table
 
 Below is a quick comparison of our pricing for different [Service Levels](../accounts/service-levels.md).
-Reader is referred to [Service Levels](../accounts/service-levels.md) for more information about service levels.
+Readers are referred to [Service Levels](../accounts/service-levels.md) page for detailed information about available features.
 
 !!! note "Contact us for detailed pricing"
     For detailed pricing or a quotation please contact us at <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>
