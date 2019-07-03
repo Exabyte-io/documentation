@@ -1,35 +1,47 @@
 # Pricing
 
-The pricing on our platform is dependent on the [Service Level](../accounts/service-levels.md). We aim to have a flexible scheme where customers always pay on-demand for the value they extract. We give preferential pricing to scenarios with larger upfront commitment, as  helps us optimize and lower our maintenance costs.
+The pricing on our platform is dependent on the [Service Level](../accounts/service-levels.md). We aim to have a flexible scheme where customers always pay on-demand for the value they extract.
+
+## Comparison Table
+
+Below is a quick comparison of different [Service Level](../accounts/service-levels.md) features.
+
+| Features                                  | Free         | Pro            | Team           | Enterprise     |
+| :-------------                            | :----------- | :------------- | :------------- | :------------- |
+| Disk Space                                | 10GB         | 10GB           | 10GB           | 10GB           |
+| Dropbox Space                             | 1GB          | 1GB            | 1GB            | 1GB            |
+| Private Data                              | -            | +              | +              | +              |
+| Account Members                           | 1            | 1              | 2              | 5              |
+| Support Severity                          | Normal       | High           | High           | Urgent         |
+| Entity Limits: Projects                   | 1            | 2              | 5              | 10             |
+| Entity Limits: Materials                  | Unlimited    | Unlimited      | Unlimited      | Unlimited      |
+| Entity Limits: Workflows                  | Unlimited    | Unlimited      | Unlimited      | Unlimited      |
+| Entity Limits: Jobs                       | Unlimited    | Unlimited      | Unlimited      | Unlimited      |
+| Private Clusters                          | -            | -              | -              | Contact Us     |
+| Managed Cloud                             | -            | -              | -              | Contact Us     |
+| Web Terminal Access                       | -            | +              | +              | +              |
+| Remote Desktop Access                     | -            | +              | +              | +              |
+| SSH Access                                | -            | +              | +              | +              |
+
+Below a comparison of our pricing for different [Service Level](../accounts/service-levels.md) is given.
 
 !!! note "Contact us for detailed pricing"
     For detailed pricing or a quotation please contact us at <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>
 
-## Comparison Table
+| Fees                                      | Free         | Pro            | Team           | Enterprise     |
+| :-------------                            | :----------- | :------------- | :------------- | :------------- |
+| Monthly Subscription Fee                  | -            | $10            | $30            | -              |
+| Yearly Subscription Fee                   | -            | $100           | $300           | $1,000         |
+| Additional Account Members - Member/Month | -            | -              | $20            | $20            |
+| Additional Account Members - Member/Year  | -            | -              | $200           | $200           |
+| Additional Disk Space - GB/Month          | -            | $0.2           | $0.2           | $0.2           |
+| Additional Dropbox Space - GB/Month       | -            | $0.2           | $0.2           | $0.2           |
+| Ordinary Compute Price - Core-Hour        | -            | $0.12          | $0.12          | $0.12          |
 
-Below is a quick comparison of our pricing for different [Service Level](../accounts/service-levels.md).
-
-<!-- | price per core-hour       |  $0.20      | $0.20              | $0.18              | $0.17              | $0.10                     | -->
-
-| Feature per Plan         |  Promo      | Advanced           | Pro                | Enterprise         |  Enterprise-Extra         |
-| :-------------           |:----------- |:-------------      |:-------------      |:-------------      |:-------------             |
-| pre-payment              |  -          | $50                | $500               | $5,000             | $50,000                   |
-| relative unit price [^1] |  2.0        | 2.0                | 1.8                | 1.7                | 1.0                       |
-| validity period          |  -          | 1 month            | 3 months           | 6 months           | 12 months                 |
-| monthly data usage       |  10Gb       | 50Gb               | 100Gb              | 500Gb              | 5Tb                       |
-| private data             |  -          | -                  | +                  | +                  | +                         |
-| organizations/teams      |  -          | -                  | -                  | +                  | +                         |
-| maximum team size        |  -          | -                  | -                  | 5                  | 15                        |
-| support                  |  email      | email              | email              | email / phone      | email / phone / videoconference |
-| command line access      |  -          | -                  | +                  | +                  | +                         |
-
-[^1]: *relative unit price* refers to the relative price per compute unit (core-hour) for the Ordinary [compute category](../infrastructure/resource/category.md). Absolute price depends on multiple additional factors, and is specified in the individual agreements. [Contact our support team](../ui/support.md) for more information.
-
-///FOOTNOTES GO HERE///
 
 ## Category-based pricing
 
-The price above refers to the **Ordinary** [cost category](../infrastructure/resource/category.md#cost-categories) for each service level. One can further control the price by varying the category type. When using submission queues with "Saving" cost category, for example, the relative unit price can be as low as 1/5th of the Ordinary.
+The compute price above refers to the **Ordinary** [cost category](../infrastructure/resource/category.md#cost-categories) for each service level. One can further control the price by varying the category type. When using submission queues with "Saving" cost category, for example, the relative unit price can be as low as 1/5th of the Ordinary.
 
 |Cost Category| Charge factor
 |:---------   |:------------
@@ -44,4 +56,4 @@ As the type of hardware and scheduling policies vary for different submission qu
 Detailed description of submission queues is available [here](../infrastructure/resource/queues.md). Clusters and associated hardware and pricing are explained in [this section](../infrastructure/clusters/overview.md)
 
 !!! tip "Least expensive pricing options"
-    The options explained above can be combined in order to achieve the least expensive pricing. For example, when "Enterprise-Extra" service level is used in combination with submission queues that belong to the "Saving" cost category, the resulting price per core hour can be as low as $0.02. When we take into account the performance per core [benchmarks](../benchmarks/2018-11-12-comparison.md#performance-per-core) this presents a unique performance per price option.
+    The options explained above can be combined in order to achieve the least expensive pricing. For example, when "Enterprise" service level is used in combination with submission queues that belong to the "Saving" cost category, the resulting price per core hour can be as low as $0.024. When we take into account the performance per core [benchmarks](../benchmarks/2018-11-12-comparison.md#performance-per-core) this presents a unique performance per price option.
