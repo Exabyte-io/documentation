@@ -4,26 +4,8 @@ The pricing on our platform is dependent on the [Service Level](../accounts/serv
 
 ## Comparison Table
 
-Below is a quick comparison of different [Service Level](../accounts/service-levels.md) features.
-
-| Features                                  | Free         | Pro            | Team           | Enterprise     |
-| :-------------                            | :----------- | :------------- | :------------- | :------------- |
-| Disk Space                                | 10GB         | 10GB           | 10GB           | 10GB           |
-| Dropbox Space                             | 1GB          | 1GB            | 1GB            | 1GB            |
-| Private Data                              | -            | +              | +              | +              |
-| Account Members                           | 1            | 1              | 2              | 5              |
-| Support Severity                          | Normal       | High           | High           | Urgent         |
-| Entity Limits: Projects                   | 1            | 2              | 5              | 10             |
-| Entity Limits: Materials                  | Unlimited    | Unlimited      | Unlimited      | Unlimited      |
-| Entity Limits: Workflows                  | Unlimited    | Unlimited      | Unlimited      | Unlimited      |
-| Entity Limits: Jobs                       | Unlimited    | Unlimited      | Unlimited      | Unlimited      |
-| Private Clusters                          | -            | -              | -              | Contact Us     |
-| Managed Cloud                             | -            | -              | -              | Contact Us     |
-| Web Terminal Access                       | -            | +              | +              | +              |
-| Remote Desktop Access                     | -            | +              | +              | +              |
-| SSH Access                                | -            | +              | +              | +              |
-
-Below a comparison of our pricing for different [Service Level](../accounts/service-levels.md) is given.
+Below is a quick comparison of our pricing for different [Service Levels](../accounts/service-levels.md).
+Reader is referred to [Service Levels](../accounts/service-levels.md) for more information about service levels.
 
 !!! note "Contact us for detailed pricing"
     For detailed pricing or a quotation please contact us at <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>
@@ -37,7 +19,6 @@ Below a comparison of our pricing for different [Service Level](../accounts/serv
 | Additional Disk Space - GB/Month          | -            | $0.2           | $0.2           | $0.2           |
 | Additional Dropbox Space - GB/Month       | -            | $0.2           | $0.2           | $0.2           |
 | Ordinary Compute Price - Core-Hour        | -            | $0.12          | $0.12          | $0.12          |
-
 
 ## Category-based pricing
 
