@@ -11,9 +11,6 @@ The features associated with using our platform which are affected by the opted 
 | Account Members[^3]              | 1                     | 1              | 2              | 5              |
 | Support Severity[^4]             | Normal                | High           | High           | Urgent         |
 | Entity Limits: Projects[^5]      | 1                     | 2              | 5              | 10             |
-| Entity Limits: Materials         | Unlimited             | Unlimited      | Unlimited      | Unlimited      |
-| Entity Limits: Workflows         | Unlimited             | Unlimited      | Unlimited      | Unlimited      |
-| Entity Limits: Jobs              | Unlimited             | Unlimited      | Unlimited      | Unlimited      |
 | Private Clusters[^6]             | -                     | -              | -              | Contact Us     |
 | Managed Cloud[^7]                | -                     | -              | -              | Contact Us     |
 | Web Terminal Access[^8]          | -                     | +              | +              | +              |
@@ -31,7 +28,7 @@ The features associated with using our platform which are affected by the opted 
 [^4]: The different forms and depths of support that users will receive by our support staff in case of technical difficulties being encountered.
 Support requests with Normal, High, and Urgent support severity are handled withing 48, 24, and 12 business hours respectively.
 
-[^5]: The maximum number of entities such as projects, materials, and workflows that can be hosted inside an account.
+[^5]: The maximum number of entities such as projects, materials, and workflows that can be hosted inside an account. The limit can be lifted on a case-by-case basis when a sufficient explanation is provided.
 
 [^6]: The possibility to have isolated account-only accessible clusters.
 

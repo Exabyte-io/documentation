@@ -1,6 +1,6 @@
 # Pricing
 
-The pricing on our platform is dependent on the [Service Level](../accounts/service-levels.md). We aim to have a flexible scheme where customers always pay on-demand for the value they extract.
+The pricing is dependent on the [Service Level](../accounts/service-levels.md). We aim to have a flexible scheme where customers always pay on-demand for the value they extract.
 
 ## Comparison Table
 
