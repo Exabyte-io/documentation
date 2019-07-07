@@ -1,4 +1,6 @@
-> Last updated: Aug 1, 2018
+> Last updated: July 7, 2019
+
+<!--
 
 # VASP On-demand
 
@@ -18,39 +20,25 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
     - Execution plan, including approximate amount of computing required (2000 characters max)
     - Whether you are interested in purchasing on-demand per core-hour access to VASP in the future
 
-<!-- 
-
-# Case studies
-
-For a limited time we are open to support users who are willing to use exabyte.io as a main tool for studying a particular problem and subsequently publish the results, and potentially, include them under [tutorials](../getting-started/run-first-simulation.md) section of this documentation. For qualified candidates we will provide computing free of charge.
-
-**In order to apply**:
-
-- send an email to support@exabyte.io with a subject containing "Case study"
-- include the following information about yourself:
-    - Full name
-    - Affiliation
-    - Title of the proposed project for case study (200 characters max)
-    - Importance of the proposed project (3000 characters max)
-    - Detailed explanation of the type of simulation techniques required and expected results, including
-        - simulation engines used
-        - properties of interest
-        - execution plan (3-6 months with weekly deliverables)
-
-# Student program
-
-For currently enrolled students that require access to our platform for educational purposes we provide access free of charge on a case-by-case basis.
-
-**In order to apply**:
-
-- send an email to support@exabyte.io with a subject containing "Student program"
-- include the following information about yourself:
-    - Full name
-    - Name of educational institution
-    - Instructor and class identifier (eg. "UC Berkeley, Physics 290A")
-    - Detailed explanation of the type of simulation techniques required and execution plan
-
 -->
+
+# Limited Free Access for Academic Users
+
+For users with current academic affiliation we can provide access free of charge on a case-by-case basis.
+
+**In order to apply**:
+
+1. For new users - submit a registration request using an email address associated with your academic institution include the information requested in **3**.
+2. For existing users - if you use a personal email address during the registration, send an email to "support@exabyte.io" from your academic email address with a subject containing "Free Access for Academic Users" 
+3. include the following information about yourself:
+    - Full name
+    - Name of the academic institution
+    - A brief explanation of the anticipated work
+    
+we will review and enable access as appropriate.
+
+Note, that free access is limited to certain compute resources only and is subject to other limitations (ie. maximum job limit, core count etc.).
+ 
 
 # Reach out to us
 
