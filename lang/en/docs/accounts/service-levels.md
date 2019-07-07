@@ -1,61 +1,75 @@
 # Service Levels
 
-Service levels define the types, qualities and quantities of services provided to the accounts within our platform. The features associated with using our platform which are affected by the opted Service Level consist of the following list.
+> Updated service levels scheme as of July 2019. For the information about the legacy service levels scheme please contact our support team.
 
-## Features
+Service levels define the types, qualities and quantities of services provided to the accounts within our platform. The features available on our platform are affected by the opted Service Level. For the detailed comparison of the pricing associated with different Service Levels offered as part of our platform, the user is referred to the [pricing documentation page](../pricing/service-levels.md). 
 
-| Feature  | Description  	|
-| :------------- | :------------- |
-| Ordinary Rate<sup class="c-red">1</sup> | The cost of computational consumption while using our product. We quantity the amount of computational consumption in compute-units, otherwise known as [core-hours](https://en.wikipedia.org/wiki/CPU_time). |
-| Minimum Payment |  Minimum one-time initial payment necessary for account to be activated. This payment will still contribute to the account's balance for performing computational tasks |
-| Validity Period |  The duration of time over which the account will remain active and accessible by the users |
-| Reserved Compute Nodes |	The number of supercomputing clusters which are made available to the users of the account | 
-| Month Data Usage | The total quota of storage space which is allocated to the account on a monthly basis |
-| Private Data  | The possibility to hold private entities inside an account. Otherwise entities are accessible for other platform users to view. More explanation [here](../collaboration/sharing/access-levels.md). |
-| Organizations/Teams  | The possibility to create organization accounts, and multiple teams inside each of these organizations |
-| Maximum Team Size  | The maximum number of users that can be hosted inside teams in general |
-| Support Level	| The different forms and depths of support that users will receive by our support staff in case of technical difficulties being encountered |
-| Command Line Access  |  The possibility to access the platform interface via command line |
+## Comparison
 
-<sup class="c-red">1</sup> Ordinary = general case without the usage of any saving, premium or specialized type hardware. 
+ Below is a comparison of the features available:
+
+| Features                         | Free                  | Pro            | Team           | Enterprise     |
+| :-------------                   | :-----------          | :------------- | :------------- | :------------- |
+| Disk Space[^1]                   | 10GB                  | 10GB           | 10GB           | 10GB           |
+| Dropbox Space                    | 1GB                   | 1GB            | 1GB            | 1GB            |
+| Private Data[^2]                 | -                     | +              | +              | +              |
+| Account Members[^3]              | 1                     | 1              | 2              | 5              |
+| Support Severity[^4]             | Normal                | High           | High           | Urgent         |
+| Entity Limits: Projects[^5]      | 1                     | 2              | 5              | 10             |
+| Private Clusters[^6]             | -                     | -              | -              | Contact Us     |
+| Managed Cloud[^7]                | -                     | -              | -              | Contact Us     |
+| Command-line Access[^8]          | -                     | +              | +              | +              |
+
+
+[^1]: The total quota of storage space allocated to the account on a monthly basis.
+
+[^2]: The possibility to have private entities inside an account. Otherwise entities are accessible for other platform users to view. More explanation [here](../collaboration/sharing/access-levels.md).
+
+[^3]: The maximum number of users hosted inside an account.
+
+[^4]: The different forms and depths of support that users will receive by our support staff in case of technical difficulties. Normal, High, and Urgent severity requests are responded to within 48, 24, and 12 business hours respectively.
+
+[^5]: The maximum number of [Entities](../entities-general/overview.md) that can be hosted inside an account. The limit can be lifted on a case-by-case basis when a sufficient explanation is provided.
+
+[^6]: The possibility to have isolated clusters accesible to a single account only.
+
+[^7]: The possibility to deploy the platform on the customer-owned cloud infrastructure.
+
+[^8]: The possibility to access the platform through web terminal, remote desktop, or secure shell (SSH) clients.
+
+///FOOTNOTES GO HERE///
+
 
 ## Types
 
-For the [personal accounts](overview.md#personal-accounts) we offer "Promo", "Advanced", and "Pro" service levels. For the [organizational accounts](overview.md#personal-accounts) we offer "Promo", "Enterprise" and "Enterprise-Extra" levels. The "Promo" service level is designed as a temporary promotional way for the users to understand the operations of our platform. For the detailed comparison of the pricing and features associated with the different Service Levels offered as part of our platform, the user is referred to the [pricing documentation page](../pricing/service-levels.md). 
+For the [personal accounts](overview.md#personal-accounts) we offer:
+ 
+ - Free,
+ - Pro
+ 
+ service levels. 
+ 
+ For the [organizational accounts](overview.md#personal-accounts) we offer:
+  
+ - Free, 
+ - Team,
+ - Enterprise 
+
+service levels.
+ 
+### Free Service Level
+ 
+ The "Free" service level is designed as a temporary way for the users to try and understand the operations of our platform. It provides access to a subset of the platform resources on a limited basis free of charge.
 
 ## View/Change Service Level
 
 All the relevant information concerning Service Levels, under the context of the currently selected Account, can be inspected through the corresponding [component of the User Interface](ui/service-level.md). It is important to bear in mind that, when dealing with collaborative accounts, only the Owner or an Administrator of the account is given the rights to undergo such operations on behalf of the whole Organization. 
 
-## How Service Levels are set
+## Validity Period
 
-The service level is defined by the pre-payment that an account holder makes. When multiple payments are applied, we prioritize the maximum amount within its validity period.
+Service levels are associated with a validity period within which the product is accessible to an account.
+Any unused balance at the end of the current validity period will be available (roll-over) during the next validity period, following a service level renewal. Alternatively, the account's service level is downgraded to "Free" tier within 30 business days and the balance is nullified.
 
-Here's how it works:
+!!!note "Legacy Service Levels"
 
-- Upon signup the service level is initially set to `Promo`.
-- When user provides a payment method, purchases allocation and pays the minimum amount the service level is set to `Advanced`
-- When/if user next pays in excess of the minimum amount for `Pro` instead, service level is set to `Pro`
-
-> NOTE: validity periods for the same service level add up. In case a user pays the minimum amount and then adds another equivalent payment within the validity period, the total allocation can then be used within the combined period equal to twice the validity period time
-
-## Service Levels for Enterprise
-
-Enterprise service level plans are designed for groups of users that represent an enterprise team and collaborate with each other on a regular basis. However, any user with a valid payment method can create [**organizations**](../collaboration/organizations/overview.md). 
-
-Notes:
-
-- the first organization per user is given $10 promo credit
-- by paying $5,000 a user can secure 'Enterprise' service level for his/her organization
-- entities created under the organization account will be charged according to `Enterprise` rates
-- other special rates are available upon request
-
-## Validity period
-
-Our users only pay for what they use, however we provide access to the product within a designated period of time - validity period. Any **Unused credits** at the end of the current validity period will be available (roll-over) into the next validity period, following another payment. 
-
-Any credits unused at end of a subscription period will roll over to any contiguous subsequent subscription, but for not more than one additional year. Credits are assumed to be consumed in the order purchased. Rollover credits do not contribute to the prepayment threshold for the renewal period.
-
-## Links
-
-[^1]: [CPU time, Wikipedia](https://en.wikipedia.org/wiki/CPU_time)
+Legacy service levels (used before July 2019) are migrated into new scheme with features and pricing preserved. When the service level expires, the features and pricing will be converted to the new scheme.
