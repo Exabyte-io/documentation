@@ -12,4 +12,18 @@ Inspection of the complete list of all previously-made payments, and of all incu
 
 ## Payment Methods
 
-Payments can be executed through Credit/Debit Cards, by providing the relevant card information as outlined in the following [procedural instructions](accounting/payment-methods.md). For the Enterprise Accounts we naturally establish a different payment protocol.
+### Card-based Payments
+
+Payments can be executed through Credit/Debit Cards, by providing the relevant card information as outlined in the following [procedural instructions](accounting/payment-methods.md). 
+
+### Wire-based Payments
+
+For the Enterprise Accounts we naturally establish a different payment protocol:
+ 
+ 1. After receiving a payment from the customer, we make it available as a "Credit" payment method under the customer account.
+ 
+ 2. We charge the subscription fee to the payment method 
+ 
+ 3. Account administrators will then be able to use this payment method to pay for compute allocation or any other resource costs
+ 
+ For repeated payments the process is repeated correspondingly.
