@@ -1,3 +1,5 @@
+# Community Programs
+
 > Last updated: July 7, 2019
 
 <!--
@@ -22,7 +24,7 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
 
 -->
 
-# Limited Free Access for Academic Users
+## Limited Free Access for Academic Users
 
 For users with current academic affiliation we can provide access free of charge on a case-by-case basis.
 
@@ -40,6 +42,6 @@ we will review and enable access as appropriate.
 Note, that free access is limited to certain compute resources only and is subject to other limitations (ie. maximum job limit, core count etc.).
  
 
-# Reach out to us
+## Reach out to us
 
 We are friendly people like you, why not reach out to us with your suggestions and ideas? You may contact us at info@exabyte.io. If you are interested in joining our team, write to hi@exabyte.io with your resume and cover letter.
