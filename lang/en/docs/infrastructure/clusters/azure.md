@@ -22,7 +22,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 | OF    | ordinary     | fast     | core-hours        | 2.200                   | &le;50    | 100       |
 | SR    | saving       | regular  | core-seconds      | 0.400                   | 1         | 10        |
 | SR8   | saving       | regular  | core-seconds      | 0.401                   | 1         | 10        |
-| SF    | saving       | fast     | core-hours        | 0.441                   | &le;50*    | 100       |
+| SF    | saving       | fast     | core-hours        | 0.441                   | &le;50<sup>*</sup>    | 100       |
 | GPOF  | ordinary     | fast     | core-hours        | 6.110                   | &le;10    | 10        |
 | GP2OF | ordinary     | fast     | core-hours        | 6.110                   | &le;10    | 10        |
 | GP4OF | ordinary     | fast     | core-hours        | 6.110                   | &le;10    | 10        |
@@ -30,7 +30,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 | GP2SF | saving       | fast     | core-hours        | 1.222                   | &le;10    | 10        |
 | GP4SF | saving       | fast     | core-hours        | 1.222                   | &le;10    | 10        |
 
-* - presently the infrastructure limitations are not allowing for the multi-node communication in SF queue, so only single-node jobs should be attempted (as of July 2019)
+<sup>*</sup> presently the infrastructure limitations are not allowing for the multi-node communication in SF queue, so only single-node jobs should be attempted (as of July 2019)
 
 ## Hardware Specifications
 
