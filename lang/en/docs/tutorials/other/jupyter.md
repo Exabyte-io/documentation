@@ -33,7 +33,7 @@ You should wait for the Jupyter Notebook environment to start and then click on 
 
 ## Stop Jupyter Environment
 
-Jupyter Notebook environment can be stopped by either clicking on **Quite** button in Jupyter Notebook main page or [terminating](../../jobs/actions/terminate.md) the job. In either case, please make sure to save any changes you have made before stopping the notebook as unsaved changes will be lost otherwise.
+Jupyter Notebook environment can be stopped by either clicking on **Quit** button in Jupyter Notebook main page or [terminating](../../jobs/actions/terminate.md) the job. In either case, please make sure to save any changes you have made before stopping the notebook as unsaved changes will be lost otherwise.
 
 ## Animation
 
