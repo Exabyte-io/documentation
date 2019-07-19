@@ -4,11 +4,11 @@ This tutorial page explains how to create a Jupyter Notebook environment through
 
 ## Create job
 
-To create a new job, click on the **Create Job** link located on the [left-hand Sidebar](../../ui/left-sidebar.md) which takes you to the [Job Designer](../../../jobs-designer/overview.md) page where you can configure Jupyter Notebook environment.
+To create a new job, click on the **Create Job** link located on the [left-hand Sidebar](../../ui/left-sidebar.md) which takes you to the [Job Designer](../../jobs-designer/overview.md) page where you can configure Jupyter Notebook environment.
 
 ## Choose Workflow
 
-Jupyter Notebook installation and configuration is handled through the Jupyter Notebook [workflow](../../../workflows/overview.md) that should be [imported](../../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../../workflows/bank.md) into the account-owned [collection](../../../accounts/collections.md) before the job is created and then get [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [job being created](../../../jobs-designer/workflow-tab.md).
+Jupyter Notebook installation and configuration is handled through the Jupyter Notebook [workflow](../../workflows/overview.md) that should be [imported](../../workflows/actions/copy-bank.md) from the [Workflows Bank](../../workflows/bank.md) into the account-owned [collection](../../accounts/collections.md) before the job is created and then get [selected](../../jobs-designer/actions-header-menu/select-workflow.md) and added to the [job being created](../../jobs-designer/workflow-tab.md).
 
 ## Adjust Jupyter Notebook Environment
 
@@ -20,7 +20,7 @@ Jupyter Notebook is started on the account [Dropbox](../../data-in-objectstorage
 
 ## Submit Job
 
-Before [submitting](../../../jobs/actions/run.md) the [job](../../../jobs/overview.md), you should click on the ["Compute" tab](../../../jobs-designer/compute-tab.md) of [Job Designer](../../../jobs-designer/overview.md) and inspect the [compute parameters](../../../infrastructure/compute/parameters.md) included therein.
+Before [submitting](../../jobs/actions/run.md) the [job](../../jobs/overview.md), you should click on the ["Compute" tab](../../jobs-designer/compute-tab.md) of [Job Designer](../../jobs-designer/overview.md) and inspect the [compute parameters](../../infrastructure/compute/parameters.md) included therein.
 
 ## Access Jupyter Notebook
 
