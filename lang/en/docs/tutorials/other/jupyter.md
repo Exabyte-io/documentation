@@ -1,4 +1,4 @@
-# Run Jupyter Notebook
+# Jupyter Notebook
 
 This tutorial page explains how to create a Jupyter Notebook environment through [Jupyter Lab](../../software-directory/scripting/jupyter-lab/overview.md) application.
 
@@ -33,11 +33,11 @@ You should wait for the Jupyter Notebook environment to start and then click on 
 
 ## Stop Jupyter Environment
 
-Jupyter Notebook environment can be stopped either by clicking on **Quite** button in Jupyter Notebook main page or [terminating](../../jobs/actions/terminate.md) the job. In either case, please make sure to save any changes you have made before stopping the notebook as unsaved changes will be lost otherwise.
+Jupyter Notebook environment can be stopped by either clicking on **Quite** button in Jupyter Notebook main page or [terminating](../../jobs/actions/terminate.md) the job. In either case, please make sure to save any changes you have made before stopping the notebook as unsaved changes will be lost otherwise.
 
 ## Animation
 
-We demonstrate the above-mentioned steps involved in running Jupyter Notebook environment in the following animation.
+We demonstrate the above-mentioned steps involved in creating Jupyter Notebook environment in the following animation.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/G5L52T6fjeQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
