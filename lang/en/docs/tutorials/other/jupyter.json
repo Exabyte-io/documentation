@@ -5,50 +5,50 @@
     "description": "In this tutorial, we show how to create a Jupyter Notebook environment using our Web Interface.",
     "tags": [
         {
-            "...": "../../../metadata/general.json#/tags"
+            "...": "../../metadata/general.json#/tags"
         }
     ],
     "title": "Exabyte.io Tutorial: Jupyter Notebook Environment",
     "youTubeCaptions": [
         {
-            "text": "Jupyter Notebook Environment tutorial.",
+            "text": "Jupyter Notebook tutorial.",
             "endTime": "00:00:02.000",
             "startTime": "00:00:00.000"
         },
         {
-            "text": "Create a simulation, by navigating to the job designer page.",
+            "text": "Create a job, by navigating to the job designer page.",
             "endTime": "00:00:06.000",
             "startTime": "00:00:03.000"
         },
         {
             "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Jupyter Notebook' workflow by selecting it in the list.",
-            "endTime": "0:00:18.000",
+            "endTime": "0:00:13.000",
             "startTime": "0:00:07.000"
         },
         {
-            "text": "The Jupyter notebook environment can be customized by navigating to the notebook unit and adjusting configure.sh script. Here, we use the default configuration.",
-            "endTime": "0:00:25.000",
-            "startTime": "0:00:18.000"
+            "text": "The Jupyter notebook environment can be customized by adjusting configure.sh input file.",
+            "endTime": "0:00:24.000",
+            "startTime": "0:00:19.000"
         },
         {
-            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration. Here, we use the default configuration.",
-            "endTime": "0:00:32.000",
-            "startTime": "0:00:27.000"
+            "text": "After that, <break time='0.5' /> navigate to compute tab, and set compute configuration.",
+            "endTime": "0:00:31.000",
+            "startTime": "0:00:26.000"
         },
         {
             "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Jupyter Notebook Environment.",
-            "endTime": "0:00:43.000",
+            "endTime": "0:00:38.000",
             "startTime": "0:00:32.000"
         },
         {
-            "text": "Next, <break time='0.5' /> save the job. <break time='1.0' /> It can then be selected and submitted to the compute queue, for execution.",
-            "endTime": "0:00:50.000",
-            "startTime": "0:00:43.000"
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:00:49.000",
+            "startTime": "0:00:42.000"
         },
         {
             "text": "Open the job when it becomes active.",
-            "endTime": "0:00:59.000",
-            "startTime": "0:00:53.000"
+            "endTime": "0:00:57.000",
+            "startTime": "0:00:54.000"
         },
         {
             "text": "Open notebook unit to access Jupyter notebook and jupyter lab",
@@ -57,32 +57,32 @@
         },
         {
             "text": "When Jupyter notebook starts, click on the Notebook tab",
-            "endTime": "0:01:15.000",
-            "startTime": "0:01:10.000"
+            "endTime": "0:01:14.000",
+            "startTime": "0:01:11.000"
         },
         {
             "text": "This will take you to the main Jupyter Notebook page in which you can adjust existing IPython notebooks or create new ones.",
-            "endTime": "0:02:00.000",
+            "endTime": "0:01:22.000",
             "startTime": "0:01:15.000"
         },
         {
             "text": "Clicking on the Lab tab takes you the Jupyter Lab page which provide an intuitive interface to work with notebooks.",
-            "endTime": "0:02:21.000",
+            "endTime": "0:02:11.000",
             "startTime": "0:02:05.000"
         },
         {
             "text": "You can access the classic notebook through the Help menu",
-            "endTime": "0:02:25.000",
-            "startTime": "0:02:21.000"
+            "endTime": "0:02:23.000",
+            "startTime": "0:02:20.000"
         },
         {
             "text": "You can stop the notebook when you no longer need the environment by clicking on Quit button",
-            "endTime": "0:02:30.000",
+            "endTime": "0:02:29.000",
             "startTime": "0:02:25.000"
         },
         {
             "text": "When the notebook is stopped, the job status is changed to finished",
-            "endTime": "0:02:37.000",
+            "endTime": "0:02:35.000",
             "startTime": "0:02:32.000"
         },
         {
