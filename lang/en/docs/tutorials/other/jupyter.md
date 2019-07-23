@@ -10,7 +10,7 @@ The Jupyter notebook environment in the present tutorial is used to run an IPyth
 
 Jupyter Notebook is started on the account [Dropbox](../../data-in-objectstorage/dropbox.md) directory. This directory provides users with access to previously uploaded/created IPython notebooks. Here, **settings.py** file contains the variables required to configure the RESTFul API endpoints and **get_materials_by_formula.ipynb** from the [Exabyte API Examples Github Repository](../../rest-api/api-examples.md) are uploaded to Dropbox to be later used inside the Jupyter notebook environment. 
 
-## Create a job
+## Create Jupyter Job
 
 A simulation job is required to launch a Jupyter notebook. To create a new job, click on the **Create Job** link located on the [left-hand Sidebar](../../ui/left-sidebar.md) which takes you to the [Job Designer](../../jobs-designer/overview.md) page where you can configure Jupyter Notebook environment.
 
@@ -40,6 +40,10 @@ The Jupyter notebook can be accessed when the job is active by navigating to the
 ## Stop Jupyter Environment
 
 When don editing, the Jupyter Notebook environment can be stopped by either clicking the **Quit** button in Jupyter Notebook or [terminating](../../jobs/actions/terminate.md) the job. In either case, **make sure to save any changes you have made before stopping the notebook as unsaved changes will be lost otherwise**.
+
+## Access Modified Files
+
+As explained in the [dedicated section](../../software-directory/scripting/jupyter-lab/overview.md) the modified IPython files, as well as the checkpoints at each save, and the other files associated with the job can be accessed from the Dropbox folder, the job and through command-line.
 
 ## Animation
 
