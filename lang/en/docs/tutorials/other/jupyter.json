@@ -1,183 +1,186 @@
 {
     "descriptionLinks": [
         "Jupyter Notebook Environment: https://docs.exabyte.io/tutorials/other/jupyter"
-    ], 
-    "description": "In this tutorial, we show how to create a Jupyter Notebook environment using our Web Interface.", 
+    ],
+    "description": "In this tutorial, we show how to create a Jupyter Notebook environment using our Web Interface.",
     "tags": [
         {
             "...": "../../metadata/general.json#/tags"
-        }, 
+        },
+        {
+            "...": "../../data/metadata.json/metadata.json#/tags"
+        },
         {
             "...": "../../software-directory/scripting/jupyter-lab/metadata.json#/tags"
         }
-    ], 
-    "title": "Exabyte.io Tutorial: Jupyter Notebook Environment", 
+    ],
+    "title": "Exabyte.io Tutorial: Jupyter Notebook Environment",
     "youTubeCaptions": [
         {
-            "text": "Jupyter Notebook tutorial.", 
-            "endTime": "00:00:02.000", 
+            "text": "Jupyter Notebook tutorial.",
+            "endTime": "00:00:02.000",
             "startTime": "00:00:00.000"
-        }, 
+        },
         {
-            "text": "Open account preferences from the right sidebar menu", 
-            "endTime": "00:00:06.000", 
+            "text": "Open account preferences from the right sidebar menu",
+            "endTime": "00:00:06.000",
             "startTime": "00:00:03.000"
-        }, 
+        },
         {
-            "text": "Scroll down to RESTFul API tokens section and click on generate new token button", 
-            "endTime": "00:00:13.000", 
+            "text": "Scroll down to RESTFul API tokens section and click on generate new token button",
+            "endTime": "00:00:13.000",
             "startTime": "00:00:08.000"
-        }, 
+        },
         {
-            "text": "This will generate an authentication token that we will later use to connect to RESTFul API", 
-            "endTime": "00:00:24.000", 
+            "text": "This will generate an authentication token that we will later use to connect to RESTFul API",
+            "endTime": "00:00:24.000",
             "startTime": "00:00:19.000"
-        }, 
+        },
         {
-            "text": "Save account ID and authentication token in a secure place and close the modal", 
-            "endTime": "00:00:30.000", 
+            "text": "Save account ID and authentication token in a secure place and close the modal",
+            "endTime": "00:00:30.000",
             "startTime": "00:00:25.000"
-        }, 
+        },
         {
-            "text": "Now open Dropbox from the left sidebar menu to upload files", 
-            "endTime": "00:00:36.000", 
+            "text": "Now open Dropbox from the left sidebar menu to upload files",
+            "endTime": "00:00:36.000",
             "startTime": "00:00:33.000"
-        }, 
+        },
         {
-            "text": "First upload <sub alias='settings'>settings.py</sub> file which contains RESTFul API variables from Exabyte API examples repository", 
-            "endTime": "00:00:44.000", 
+            "text": "First upload <sub alias='settings'>settings.py</sub> file which contains RESTFul API variables from Exabyte API examples repository",
+            "endTime": "00:00:44.000",
             "startTime": "00:00:37.000"
-        }, 
+        },
         {
-            "text": "Then upload <sub alias='get materials by formula'>get_materials_by_formula.ipynb</sub> <say-as interpret-as='characters'>I</say-as>Python notebook that we will later run inside Jupyter environment", 
-            "endTime": "00:00:53.000", 
+            "text": "Then upload <sub alias='get materials by formula'>get_materials_by_formula.ipynb</sub> <say-as interpret-as='characters'>I</say-as>Python notebook that we will later run inside Jupyter environment",
+            "endTime": "00:00:53.000",
             "startTime": "00:00:46.000"
-        }, 
+        },
         {
-            "text": "The content of notebook can be visualized by clicking on the preview action", 
-            "endTime": "00:01:02.000", 
+            "text": "The content of notebook can be visualized by clicking on the preview action",
+            "endTime": "00:01:02.000",
             "startTime": "00:00:58.000"
-        }, 
+        },
         {
-            "text": "Close the notebook and navigate to the job designer page to create a Jupyter job", 
-            "endTime": "00:01:09.000", 
+            "text": "Close the notebook and navigate to the job designer page to create a Jupyter job",
+            "endTime": "00:01:09.000",
             "startTime": "00:01:05.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Jupyter Notebook' workflow by selecting it in the list.", 
-            "endTime": "0:01:17.000", 
+            "text": "Then, <break time='0.5' /> open the workflow tab, and choose the 'Jupyter Notebook' workflow by selecting it in the list.",
+            "endTime": "0:01:17.000",
             "startTime": "0:01:11.000"
-        }, 
+        },
         {
-            "text": "The Jupyter notebook environment can be customized by adjusting configure.sh input file.", 
-            "endTime": "0:01:23.000", 
+            "text": "The Jupyter notebook environment can be customized by adjusting configure.sh input file.",
+            "endTime": "0:01:23.000",
             "startTime": "0:01:18.000"
-        }, 
+        },
         {
-            "text": "Now close the unit and navigate to compute tab, and set compute configuration.", 
-            "endTime": "0:01:29.000", 
+            "text": "Now close the unit and navigate to compute tab, and set compute configuration.",
+            "endTime": "0:01:29.000",
             "startTime": "0:01:24.000"
-        }, 
+        },
         {
-            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Jupyter Notebook Environment.", 
-            "endTime": "0:01:38.000", 
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - Jupyter Notebook Environment.",
+            "endTime": "0:01:38.000",
             "startTime": "0:01:32.000"
-        }, 
+        },
         {
-            "text": "Next, <break time='0.5' /> save the job. <break time='2.0' /> It can then be selected and submitted to the compute queue, for execution.", 
-            "endTime": "0:01:48.000", 
+            "text": "Next, <break time='0.5' /> save the job. <break time='2.0' /> It can then be selected and submitted to the compute queue, for execution.",
+            "endTime": "0:01:48.000",
             "startTime": "0:01:41.000"
-        }, 
+        },
         {
-            "text": "Wait for the job to become active and then open it", 
-            "endTime": "0:01:58.000", 
+            "text": "Wait for the job to become active and then open it",
+            "endTime": "0:01:58.000",
             "startTime": "0:01:56.000"
-        }, 
+        },
         {
-            "text": "Then open notebook unit to access Jupyter notebook and Jupyter lab", 
-            "endTime": "0:02:04.000", 
+            "text": "Then open notebook unit to access Jupyter notebook and Jupyter lab",
+            "endTime": "0:02:04.000",
             "startTime": "0:02:00.000"
-        }, 
+        },
         {
-            "text": "As it can be seen inside the output, the environment is being created. <break time='0.5' /> Wait for Jupyter notebook to start, and then click on the Notebook tab", 
-            "endTime": "0:02:16.000", 
+            "text": "As it can be seen inside the output, the environment is being created. <break time='0.5' /> Wait for Jupyter notebook to start, and then click on the Notebook tab",
+            "endTime": "0:02:16.000",
             "startTime": "0:02:08.000"
-        }, 
+        },
         {
-            "text": "This will take you to Jupyter Notebook page", 
-            "endTime": "0:02:20.000", 
+            "text": "This will take you to Jupyter Notebook page",
+            "endTime": "0:02:20.000",
             "startTime": "0:02:18.000"
-        }, 
+        },
         {
-            "text": "Open <sub alias='settings'>settings.py</sub> file and replace account ID and authentication token with parameters obtained at the beginning of this tutorial", 
-            "endTime": "0:02:28.000", 
+            "text": "Open <sub alias='settings'>settings.py</sub> file and replace account ID and authentication token with parameters obtained at the beginning of this tutorial",
+            "endTime": "0:02:28.000",
             "startTime": "0:02:21.000"
-        }, 
+        },
         {
-            "text": "Then save the settings, close the file and open <sub alias='get materials by formula'>get_materials_by_formula.ipynb</sub> <say-as interpret-as='characters'>I</say-as>Python notebook", 
-            "endTime": "0:02:39.000", 
+            "text": "Then save the settings, close the file and open <sub alias='get materials by formula'>get_materials_by_formula.ipynb</sub> <say-as interpret-as='characters'>I</say-as>Python notebook",
+            "endTime": "0:02:39.000",
             "startTime": "0:02:33.000"
-        }, 
+        },
         {
-            "text": "To run the notebook, open cell menu and click on run all", 
-            "endTime": "0:02:48.000", 
+            "text": "To run the notebook, open cell menu and click on run all",
+            "endTime": "0:02:48.000",
             "startTime": "0:02:45.000"
-        }, 
+        },
         {
-            "text": "This will execute the notebook in which we connect to RESTFul API and retrieve a list of materials", 
-            "endTime": "0:02:55.000", 
+            "text": "This will execute the notebook in which we connect to RESTFul API and retrieve a list of materials",
+            "endTime": "0:02:55.000",
             "startTime": "0:02:50.000"
-        }, 
+        },
         {
-            "text": "Now let's save an checkpoint the notebook and navigate to Jupyter unit to try Jupyter lab", 
-            "endTime": "0:03:02.000", 
+            "text": "Now let's save an checkpoint the notebook and navigate to Jupyter unit to try Jupyter lab",
+            "endTime": "0:03:02.000",
             "startTime": "0:02:57.000"
-        }, 
+        },
         {
-            "text": "Clicking on the Lab tab takes you to the Jupyter Lab page which provide an intuitive interface to work with notebooks.", 
-            "endTime": "0:03:12.000", 
+            "text": "Clicking on the Lab tab takes you to the Jupyter Lab page which provide an intuitive interface to work with notebooks.",
+            "endTime": "0:03:12.000",
             "startTime": "0:03:07.000"
-        }, 
+        },
         {
-            "text": "Let's go back to Jupyter notebook page by clicking on launch classic notebook from the Help menu", 
-            "endTime": "0:03:22.000", 
+            "text": "Let's go back to Jupyter notebook page by clicking on launch classic notebook from the Help menu",
+            "endTime": "0:03:22.000",
             "startTime": "0:03:16.000"
-        }, 
+        },
         {
-            "text": "Here we can stop the notebook when it is no longer needed by clicking on Quit button", 
-            "endTime": "0:03:27.000", 
+            "text": "Here we can stop the notebook when it is no longer needed by clicking on Quit button",
+            "endTime": "0:03:27.000",
             "startTime": "0:03:23.000"
-        }, 
+        },
         {
-            "text": "When the notebook is stopped, the job status is changed to finished", 
-            "endTime": "0:03:38.000", 
+            "text": "When the notebook is stopped, the job status is changed to finished",
+            "endTime": "0:03:38.000",
             "startTime": "0:03:35.000"
-        }, 
+        },
         {
-            "text": "Close the notebook unit and navigates to files tab", 
-            "endTime": "0:03:42.000", 
+            "text": "Close the notebook unit and navigates to files tab",
+            "endTime": "0:03:42.000",
             "startTime": "0:03:39.000"
-        }, 
+        },
         {
-            "text": "Copies of modified <say-as interpret-as='characters'>I</say-as>Python notebooks are saved inside checkpoints folder at the time notebooks are saved", 
-            "endTime": "0:03:47.000", 
+            "text": "Copies of modified <say-as interpret-as='characters'>I</say-as>Python notebooks are saved inside checkpoints folder at the time notebooks are saved",
+            "endTime": "0:03:47.000",
             "startTime": "0:03:42.000"
-        }, 
+        },
         {
-            "text": "The content of the notebook can be examined by clicking on the preview action", 
-            "endTime": "0:03:52.000", 
+            "text": "The content of the notebook can be examined by clicking on the preview action",
+            "endTime": "0:03:52.000",
             "startTime": "0:03:48.000"
-        }, 
+        },
         {
-            "text": "Let's close the notebook and navigate to Dropbox explorer in where the final version of the notebook can be accessed", 
-            "endTime": "0:04:05.000", 
+            "text": "Let's close the notebook and navigate to Dropbox explorer in where the final version of the notebook can be accessed",
+            "endTime": "0:04:05.000",
             "startTime": "0:03:57.000"
-        }, 
+        },
         {
-            "text": "This completes the present tutorial.", 
-            "endTime": "0:04:11.500", 
+            "text": "This completes the present tutorial.",
+            "endTime": "0:04:11.500",
             "startTime": "0:04:08.500"
         }
-    ], 
+    ],
     "youTubeId": "29B1GOnZPNU"
 }
