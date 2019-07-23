@@ -3,7 +3,7 @@
 
 JupyterLab [^1] is the next-generation user interface for Project Jupyter [^2] offering all the familiar building blocks of the classic Jupyter Notebook [^3] in a flexible and powerful user interface. JupyterLab will eventually replace the classic Jupyter Notebook.
 
-We include support for **Jupyter Lab** within our platform, using interpreter version 2.7.5 for Python programming language.
+We include support for **Jupyter Lab** within our platform, using the operating system default interpreter version 2.7.5 for Python.
 
 ## Data
 
