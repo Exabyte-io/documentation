@@ -1,4 +1,6 @@
-# Jupyter Lab: Structured Representation
+# Jupyter Lab: Data
+
+## Structured Representation
 
 We present in what follows the [structured representation](../../../data-structured/overview.md) for the [Jupyter Lab Application](overview.md).
 
