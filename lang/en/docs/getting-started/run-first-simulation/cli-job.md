@@ -2,7 +2,7 @@
 
 The user may want more control over the [workflow execution](../../workflows/overview.md), or run a type of calculation we have yet to implement. For that purpose, we provide access to our platform through [Command Line Interface (CLI)](../../cli/overview.md), were [simulation Jobs](../../jobs/overview.md) can be executed.
 
-Complete instructions on how to operate job submission via CLI can be found [in this section](../../jobs-cli/overview.md). We also provide a [tutorial](../../tutorials/jobs-cli/job-cli-example.md) dedicated to this topic, including on how to [retrieve and inspect](../../tutorials/jobs-cli/view-results.md) the final results of the simulation.
+Complete instructions on how to operate job submission via CLI can be found [in this section](../../jobs-cli/overview.md). We also provide a [tutorial](../../tutorials/jobs-cli/job-cli-example.md) dedicated to this topic, including on how to [retrieve and inspect](../../tutorials/jobs-cli/job-cli-example.md) the final results of the simulation.
 
 ## Command-line Interface
 
