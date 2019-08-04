@@ -78,6 +78,7 @@ nav:
         - Content highlights:                            getting-started/content-highlights.md
         - Important Concepts:                            getting-started/important-concepts.md
         - Terminology:                                   getting-started/terminology.md
+        - Useful Links:                                  getting-started/useful-links.md
         - Run first simulation:
             - Web Interface:                             getting-started/run-first-simulation/web-interface.md
             - Command Line:                              getting-started/run-first-simulation/cli-job.md
@@ -319,6 +320,9 @@ nav:
             - Python:
                 - Overview:                             software-directory/scripting/python/overview.md
                 - Data:                                 software-directory/scripting/python/data.md
+            - Jupyter Lab:
+                - Overview:                             software-directory/scripting/jupyter-lab/overview.md
+                - Data:                                 software-directory/scripting/jupyter-lab/data.md
         - Machine Learning (ML):
             - Exabyte ML:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
