@@ -141,6 +141,7 @@ nav:
                 - k-point convergence:                   tutorials/dft/addons/kpt-convergence.md
                 - Structural Relaxation:                 tutorials/dft/addons/structural-relaxation.md
         - General Functionality:
+            - Jupyter Notebook:                      tutorials/other/jupyter.md
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
         - Materials:
@@ -367,7 +368,7 @@ nav:
             - Create:                                   entities-general/actions/create.md
             - Bank > Copy from:                         entities-general/actions/copy-bank.md
             - Sets > Create / Delete:                   entities-general/actions/create-sets.md
-            - Sets > Chane Type:                        entities-general/actions/change-set-type.md
+            - Sets > Change Type:                       entities-general/actions/change-set-type.md
             - Sets > Set Index:                         entities-general/actions/set-entity-index.md
             - Sets > Move To:                           entities-general/actions/move-to-sets.md
 
