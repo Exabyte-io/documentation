@@ -10,14 +10,12 @@ The platform will attempt to extract the [Entities](../../entities-general/overv
 
 ## Prepare an archive
 
-First, arrange all the files inside one folder with no subfolders. Then create a non-nested (containing no subfolders) .zip archive with the data. On a UNIX-based operating system this could be done in command line or righ-hand context menu. The command-line routine could be, for example:
+First, arrange all the files inside a folder. Then create a .zip archive with the data. On a UNIX-based operating system this could be done in command line or righ-hand context menu. The command-line routine could be, for example:
 
 ```bash
-zip archive.zip *
+cd JOB_DIRECTORY
+zip -r9 ../archive.zip .
 ``` 
-
-!!!warning "No subfolders in archive"
-    For the platform to properly process the data the archive should not contain subfolders.
 
 ## Upload archive
 
