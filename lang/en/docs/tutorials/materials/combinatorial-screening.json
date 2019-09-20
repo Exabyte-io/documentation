@@ -1,0 +1,82 @@
+{
+    "descriptionLinks": [
+        "Generate Combinatorial Sets: https://docs.exabyte.io/tutorials/materials/combinatorial-screening/"
+    ],
+    "description": "In this tutorial animation, we illustrate the use of combinatorial sets for generating combinations and permutations of n and p-type dopant atoms in the Gallium Phosphide (GaP) semiconducting material structure.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../materials-designer/header-menu/advanced/combinatorial-set.json#/tags"
+        },
+        "Gallium Phosphide",
+        "dopant",
+        "impurities",
+        "semiconductor"
+    ],
+    "title": "Exabyte.io Tutorial: Generate Combinatorial Sets",
+    "youTubeCaptions": [
+        {
+            "text": "Generate Combinatorial Sets tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "From within the Materials Designer interface, <break time='0.5' /> open the 'Input/Output' menu, and import a sample structure of Gallium Phosphide via the relevant option.",
+            "endTime": "0:00:12.000",
+            "startTime": "0:00:02.500"
+        },
+        {
+            "text": "Let us also delete the original default silicon material.",
+            "endTime": "0:00:15.000",
+            "startTime": "0:00:12.500"
+        },
+        {
+            "text": "Then, open the 'Advanced' menu option, in order to generate a combinatorial set.",
+            "endTime": "0:00:21.000",
+            "startTime": "0:00:15.500"
+        },
+        {
+            "text": "First try replacing the first line containing the Gallium atom, with permutations containing p-type dopants such as zinc and magnesium, separated by a slash.",
+            "endTime": "0:00:30.000",
+            "startTime": "0:00:21.500"
+        },
+        {
+            "text": "This will add the permutations to the left-hand sidebar list of structures, on top of the original Gallium Phosphide.",
+            "endTime": "0:00:37.000",
+            "startTime": "0:00:30.500"
+        },
+        {
+            "text": "Let us inspect the positions of the basis atoms in each of the two permutations, and then delete them to start from scratch.",
+            "endTime": "0:00:44.000",
+            "startTime": "0:00:37.500"
+        },
+        {
+            "text": "In order to explore the alternative case of Combinations, we shall replace both the Phosphorus and Gallium atoms with all possible n and p-type dopant atoms, namely zinc and magnesium (substituting Gallium), and tellurium, selenium, sulphur and tin (substituting phosphorus), <break time='0.5' /> separated by commas this time.",
+            "endTime": "0:01:06.000",
+            "startTime": "0:00:47.000"
+        },
+        {
+            "text": "The resulting combinatorial list of atomic positions, contained in the generated structures, can again be retrieved under the left-hand sidebar of Materials Designer. Let us inspect all such combinatorial structures, <break time='5.0' /> and finally delete them all again.",
+            "endTime": "0:01:28.000",
+            "startTime": "0:01:08.000"
+        },
+        {
+            "text": "Finally, when the 'VAC' keyword is used instead of an element name, a vacancy will be created at the corresponding crystal site. Vacancies can be added as part of the generated combinatorial set, and can be combined with either slashes to generate corresponding permutations, or commas for combinations.",
+            "endTime": "0:01:57.500",
+            "startTime": "0:01:40.000"
+        },
+        {
+            "text": "In this case, we have generated one of the combinations with a vacancy in the place of the Gallium atom, as can be deduced from the empty line in the list of basis atom coordinates, and from the empty site at the origin of the material structure itself.",
+            "endTime": "0:02:11.000",
+            "startTime": "0:01:58.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:02:14.500",
+            "startTime": "0:02:12.000"
+        }
+    ],
+    "youTubeId": "DJw4hwrBRnk"
+}
