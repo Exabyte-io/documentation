@@ -1,0 +1,78 @@
+{
+    "descriptionLinks": [
+        "Train Machine Learning Model: https://docs.exabyte.io/tutorials/ml/train-ml-model/"
+    ],
+    "description": "In this tutorial we show how to train a Machine Learning Model for predicting the band-gap of Materials containing Si and Ge, by making use of the Exabyte Machine Learning Engine.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../software/classification/machine-learning.json#/tags"
+        }
+    ],
+    "title": "Exabyte.io Tutorial: Train Machine Learning Model",
+    "youTubeCaptions": [
+        {
+            "text": "Train Machine Learning Model tutorial.",
+            "endTime": "00:00:02.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "Create a simulation, by navigating to the job designer page.",
+            "endTime": "00:00:07.000",
+            "startTime": "00:00:02.500"
+        },
+        {
+            "text": "Then, <break time='0.5' />  select and import the set of materials comprised of silicon and Germanium, <break time='0.5' /> constituting our training set.",
+            "endTime": "00:00:14.000",
+            "startTime": "00:00:07.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> navigate to the Workflow tab, and select the 'ML Train Model' workflow, which we use to train a Machine Learning Model for predicting the electronic band-gap of Materials composed of silicon and germanium, by making use of the Exabyte Machine Learning Engine.",
+            "endTime": "0:00:35.000",
+            "startTime": "0:00:19.500"
+        },
+        {
+            "text": "Let us now inspect the 'input' compute unit.",
+            "endTime": "0:00:40.000",
+            "startTime": "0:00:37.500"
+        },
+        {
+            "text": "The properties which will be predicted by the trained model are the target properties which have been ticked under this unit, in this case the band gaps.",
+            "endTime": "0:00:48.000",
+            "startTime": "0:00:40.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. <break time='0.5' /> Here, we call it - <sub alias='S i  G e '>SiGe</sub> Band Gap ML Train.",
+            "endTime": "0:00:57.000",
+            "startTime": "0:00:50.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
+            "endTime": "0:01:09.000",
+            "startTime": "0:01:00.500"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the resulting trained model workflow. <break time='4.0' />",
+            "endTime": "0:01:18.000",
+            "startTime": "0:01:12.000"
+        },
+        {
+            "text": "Let us open the 'score' unit of this trained workflow. <break time='0.5' /> Here, the model coefficients and importance are stored, together with an indication of the model precision.",
+            "endTime": "0:01:30.000",
+            "startTime": "0:01:21.000"
+        },
+        {
+            "text": "Now we navigate back to our workflow collection, via the left-hand sidebar of the web interface. <break time='0.5' /> The generated workflow containing the trained model can thus be retrieved among the collection entries.",
+            "endTime": "0:01:48.000",
+            "startTime": "0:01:36.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:01:51.000",
+            "startTime": "0:01:48.500"
+        }
+    ],
+    "youTubeId": "oEsL9TRZ_FQ"
+}

@@ -1,0 +1,68 @@
+{
+    "descriptionLinks": [
+        "Predict New Properties with Machine Learning: https://docs.exabyte.io/tutorials/ml/predict-ml-properties/"
+    ],
+    "description": "In this tutorial we show how to use a trained Machine Learning Model for predicting the band-gap of a Material containing Si and Ge, by making use of the Exabyte Machine Learning Engine.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../software/classification/machine-learning.json#/tags"
+        }
+    ],
+    "title": "Exabyte.io Tutorial: Predict New Properties with Machine Learning",
+    "youTubeCaptions": [
+        {
+            "text": "Predict New Properties with Machine Learning tutorial.",
+            "endTime": "00:00:03.000",
+            "startTime": "00:00:00.000"
+        },
+        {
+            "text": "From within the Jobs Designer interface, select and import a material comprised of 4 atoms of silicon and 12 atoms of Germanium.",
+            "endTime": "00:00:11.000",
+            "startTime": "00:00:03.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> navigate to the Workflow tab, and select the previously trained Machine Learning Model workflow, for predicting the electronic band-gap of Materials composed of silicon and germanium.",
+            "endTime": "0:00:23.000",
+            "startTime": "0:00:11.500"
+        },
+        {
+            "text": "Let us now inspect the 'input' compute unit.",
+            "endTime": "0:00:26.000",
+            "startTime": "0:00:23.500"
+        },
+        {
+            "text": "The properties which will be predicted by a trained model are the target properties which have been ticked under this unit, in this case the band gaps.",
+            "endTime": "0:00:34.000",
+            "startTime": "0:00:26.500"
+        },
+        {
+            "text": "Then, <break time='0.5' /> set the name for the job. Here, we call it - <sub alias='S i 4 G e 12'>Si4Ge12</sub> Band Gap ML Predict.",
+            "endTime": "0:00:42.000",
+            "startTime": "0:00:34.500"
+        },
+        {
+            "text": "Next, <break time='0.5' /> save the job. <break time='3.0' /> It can then be selected and submitted to the compute queue, for execution. <break time='4.0' />",
+            "endTime": "0:00:57.000",
+            "startTime": "0:00:47.500"
+        },
+        {
+            "text": "When the job is finished, open it, to inspect the final results. <break time='4.0' />",
+            "endTime": "0:01:04.000",
+            "startTime": "0:01:00.000"
+        },
+        {
+            "text": "The predicted values of the band gaps, both direct and indirect, for our composition of silicon and germanium, can be found under the results page, and are in good agreement with experimental values.",
+            "endTime": "0:01:19.000",
+            "startTime": "0:01:07.000"
+        },
+        {
+            "text": "This completes the present tutorial.",
+            "endTime": "0:01:22.500",
+            "startTime": "0:01:20.000"
+        }
+    ],
+    "youTubeId": "JYz51Wq3yEo"
+}
