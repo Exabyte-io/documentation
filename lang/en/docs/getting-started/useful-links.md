@@ -28,14 +28,16 @@ Some useful information when getting started with the Exabyte.io platform.
     </li>
     <li>Example programmatic usage via Jupyter/command-line (CLI):
         <ul>
-            <li><a href="/tutorials/other/jupyter/" target="_blank">Run a Jupyter Notebook connected to REST-API</a></li>
             <li><a href="/tutorials/jobs-cli/job-cli-example/" target="_blank">Run a command-line job</a></li>
             <li><a href="/tutorials/other/external-upload/" target="_blank">Upload and parse external CLI data</a></li>
+            <li><a href="/tutorials/other/jupyter/" target="_blank">Run a Jupyter Notebook connected to REST-API</a></li>
         </ul>
     </li>
     <li>Other:
         <ol>
-            <li><a href="https://www.youtube.com/channel/UCL4UmkYffcskh_BLW9JVNcw/videos" target="_blank">Our YouTube channel with&nbsp;Tutorial video&nbsp;voiceovers</a></li>
+            <li><a href="https://youtu.be/FyBKlLQ2k9M" target="_blank">Webinar Recording: Migrating to Exabyte.io (ie. upload existing input files, scripts)</a></li>
+            <li><a href="https://youtu.be/fwmHKBoPaww" target="_blank">Webinar Recording: Getting Started with Exabyte.io, the Basics</a></li>
+            <li><a href="https://www.youtube.com/channel/UCL4UmkYffcskh_BLW9JVNcw/videos" target="_blank">Our YouTube channel with Tutorial video voiceovers</a></li>
             <li><a href="https://support.exabyte.io" target="_blank">Community Forum for discussion and Q&amp;A</a></li>
         </ol>
     </li>
