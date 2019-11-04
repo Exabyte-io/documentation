@@ -26,7 +26,7 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
 
 ## Limited Free Access for Academic Users
 
-For users with current academic affiliation we can provide access free of charge on a case-by-case basis.
+For users with current academic affiliation we can provide computational resources free of charge on a case-by-case basis.
 
 ### Applying for Limited Free Access
 
@@ -65,13 +65,16 @@ Any/all published work derived from the Limited Free Access program must include
 **Acknowledgement text**
 
 ```text
-The authors performed this work partially or in full using the Exabyte.io platform, a web-based computational ecosystem for the development of new materials and chemicals [REFERENCE TO THE BELOW CITATION]. 
+The authors performed this work partially or in full using the Exabyte.io 
+platform, a web-based computational ecosystem for the development of new 
+materials and chemicals [REFERENCE TO THE BELOW CITATION]. 
 ``` 
 
 **Citation**
 
 ```text
-Timur Bazhirov, "Data-centric online ecosystem for digital materials science", arxiv.org preprint, 2019, https://arxiv.org/abs/1902.10838 
+Timur Bazhirov, "Data-centric online ecosystem for digital materials science", 
+arxiv.org preprint, 2019, https://arxiv.org/abs/1902.10838 
 ``` 
 
 In Bibtex format:
@@ -84,6 +87,10 @@ In Bibtex format:
     year={2019},
 }
 ```
+
+#### Publicity
+
+We plan to select some of the work performed under the Limited Free Access program to be highlighted in the online publication sources together with the cloud provider(s) enabling the computational infrastructure.
 
  
 ## Reach out to us
