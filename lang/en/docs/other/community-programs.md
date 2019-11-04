@@ -60,7 +60,7 @@ Free access is limited to certain compute resources only and is subject to other
 
 #### Acknowledgements
 
-Any/all published work derived from the Limited Free Access program must include the following Acknowledgement text and citations below.
+Any/all published work derived from the Limited Free Access program must include the following Acknowledgement text and citation below.
 
 **Acknowledgement text**
 
