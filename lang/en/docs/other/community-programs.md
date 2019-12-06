@@ -32,13 +32,9 @@ For users with current academic affiliation we can provide computational resourc
 
 As below:
 
-1. For new users - submit a registration request using an email address associated with your academic institution include the information requested in **3**.
-2. For existing users - if you use a personal email address during the registration, send an email to "support@exabyte.io" from the email address associated with your academic institution (ie. hosted on a ".edu" domain) with a subject containing "Free Access for Academic Users" 
-3. include the following information about yourself:
-    - Full name
-    - Full name of the academic institution
-    - Title at the academic institution
-    - A brief explanation of the anticipated work including the following: (1) scientific nature, (2) simulation codes to be used, (3) approximate timelines, (4) target publication sources
+1. Fill in <a href="https://docs.google.com/forms/d/12S-Phn7Wr3dy_8yjVh4908VGDtkD0zrl7x0n2TSXXk4" target="_blank">this online form</a>
+2. For new users - submit a registration request using an email address associated with your academic institution include the information requested in **3**.
+3. For existing users - if you use a personal email address during the registration, send an email to "support@exabyte.io" from the email address associated with your academic institution (ie. hosted on a ".edu" domain) with a subject containing "Free Access for Academic Users" 
     
 we will review and enable access as appropriate. We will prioritize applications providing detailed information about the applicants (ie. Google Scholar, ResearchGate profile(s), links to prior publications) and the nature of the anticipated work.
  
