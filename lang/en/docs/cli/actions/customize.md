@@ -43,9 +43,9 @@ It is sometimes necessary to use multiple versions or distributions of python. T
 3. Now pyenv can be used to manage python versions all within the user home folder `~/.pyenv`. Below we install python 3.8.0, and then create and source a virtual environment with it, that can be further managed with `pip`, for example:
 
     ```bash
-    pyenv install 3.8.0
-    pyenv virtualenv 3.8.0 .venv-3.8.0
-    source ~/.pyenv/versions/.venv-3.8.0/bin/activate
+    pyenv install 3.5.0
+    pyenv virtualenv 3.5.0 .venv-3.5.0
+    source ~/.pyenv/versions/.venv-3.5.0/bin/activate
     pip install matplotlib
     ...
     # Deactivate the Virtual Environment when done
