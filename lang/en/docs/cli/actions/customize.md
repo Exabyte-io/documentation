@@ -17,9 +17,40 @@ There exist several hidden system configuration files, or "dot-files", within th
 !!!warning "NEVER remove the system content of the ".ssh" folder"
     We urge the user not to remove the default content of the files in the ".ssh" folder, since doing so can break the operations of the platform for the user. 
 
-## Install different version of python
+## Install a different version of python
 
 It is sometimes necessary to use multiple versions or distributions of python. The routines below demonstrate how to do it. We can also recommend using the `pyenv` [^1] tool, as an alternative.
+
+### via PyEnv
+
+1. Install `pyenv` versioning tool into the user home directory using `pyenv-installer` [^2]:
+
+    ```bash
+    curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+    ```
+
+2. As the installation rountine directs, add the following likes to ~/.bashrc file:
+
+    ```bash
+    # Load pyenv automatically by adding
+    # the following to ~/.bashrc:
+    
+    export PATH="/home/<REPLACE_WITH_YOUR_USERNAME>/.pyenv/bin:$PATH"
+    eval "$(pyenv init -)"
+    eval "$(pyenv virtualenv-init -)"
+    ```
+
+3. Now pyenv can be used to manage python versions all within the user home folder `~/.pyenv`. Below we install python 3.8.0, and then create and source a virtual environment with it, that can be further managed with `pip`, for example:
+
+    ```bash
+    pyenv install 3.8.0
+    pyenv virtualenv 3.8.0 .venv-3.8.0
+    source ~/.pyenv/versions/.venv-3.8.0/bin/activate
+    pip install matplotlib
+    ...
+    # Deactivate the Virtual Environment when done
+    deactivate
+    ```
 
 ### python
 
@@ -104,3 +135,4 @@ Instead, the user should put his/her customizations to the shell environment int
 ## Links
 
 [^1]: [PyEnv: Simple Python Version Management, Github Source](https://github.com/pyenv/pyenv#uninstalling-python-versions)
+[^2]: [PyEnv Installer](https://github.com/pyenv/pyenv-installer#install)
