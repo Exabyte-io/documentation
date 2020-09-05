@@ -22,13 +22,13 @@ The list of currently enabled queues is given below. Price per core hour is show
 | OR8   | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
 | OR16  | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
 | OF    | ordinary     | fast     | core-hours        | 1.000                   | &le;5    | 100       |
-| OF+   | ordinary     | fast     | core-hours        | 0.962                   | &le;5    | 10        |
+| OFplus| ordinary     | fast     | core-hours        | 0.962                   | &le;5    | 10        |
 | SR    | saving       | regular  | core-seconds      | 0.200                   | 1         | 10        |
 | SR4   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
 | SR8   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
 | SR16  | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
 | SF    | saving       | fast     | core-hours        | 0.200                   | &le;5    | 100       |
-| SF+   | saving       | fast     | core-hours        | 0.241                   | &le;5    | 10        |
+| SFplus| saving       | fast     | core-hours        | 0.241                   | &le;5    | 10        |
 | GOF   | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
 | G4OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
 | G8OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
@@ -50,13 +50,13 @@ The following table contains hardware specifications for the above queues.
 | OR8   | c-3          | 8          | -            | -        | 15          | &le;10           |
 | OR16  | c-3          | 16         | -            | -        | 30          | &le;10           |
 | OF    | c-3          | 36         | -            | -        | 60          | 10               |
-| OF+   | c-5          | 72         | -            | -        | 144         | 25               |
+| OFplus| c-5          | 72         | -            | -        | 144         | 25               |
 | SR    | c-3          | 36         | -            | -        | 60          | 10               |
 | SR4   | c-3          | 4          | -            | -        | 7.5         | &le;10           |
 | SR8   | c-3          | 8          | -            | -        | 15          | &le;10           |
 | SR16  | c-3          | 16         | -            | -        | 30          | &le;10           |
 | SF    | c-3          | 36         | -            | -        | 60          | 10               |
-| SF+   | c-5          | 72         | -            | -        | 144         | 25               |
+| SFplus| c-5          | 72         | -            | -        | 144         | 25               |
 | GOF   | c-4          | 8          | g-1          | 1        | 61          | 10               |
 | G4OF  | c-4          | 32         | g-1          | 4        | 244         | 10               |
 | G8OF  | c-4          | 64         | g-1          | 8        | 488         | 25               |
