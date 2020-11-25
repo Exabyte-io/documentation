@@ -26,6 +26,9 @@ From Oct 2017 we are conducting an experimental program for academic users of VA
 
 ## Limited Free Access for Academic Users
 
+!!!note "The Free Access Program completed in May of 2020."
+    The last Free Access Program completed as of 2020/05. Users are still welcome to submit their information for any future similar programs.
+
 For users with current academic affiliation we can provide computational resources free of charge on a case-by-case basis.
 
 ### Applying for Limited Free Access
