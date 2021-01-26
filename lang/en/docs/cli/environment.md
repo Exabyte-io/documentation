@@ -1,12 +1,12 @@
 # Command-line Environment
 
-The present page explains the environment setup for a [command line session](overview.md) within our platform. The **Environment** is an important concept in the Unix operating system [^1]. It is defined in terms of **environment variables** [^2], some of which are set by the system, others by the user, yet others by the shell or by any program that loads another program.
+This page explains the environment setup for a [command line session](overview.md) within our platform. The **Environment** is an important concept in the Unix operating system [^1]. It is defined in terms of **environment variables** [^2], some of which are set by the system, others by the user, yet others by the shell or by any program that loads another program.
 
 After logging into our platform via the [Command Line Interface (CLI)](overview.md), the user will by default enter the [Login Home](../infrastructure/login/directories.md) directory, from which other nodes of the [infrastructure](../infrastructure/overview.md) can be accessed.
 
 ## Customization
 
-The CLI environment can be **customized** by the user in two respects: by choosing the **Shell type**, and through the **loading of the environment Modules**, which include numerous commonly-used simulation codes and associated libraries. Both are explained below.
+The CLI environment can be **customized** by the user in two respects: by choosing the **Shell type**, and through the **loading of the environment Modules**, which include numerous commonly-used simulation packages and associated libraries. Both are explained below.
 
 ### Shell Type
 
@@ -33,11 +33,15 @@ Software packages and programming libraries, are available through the **environ
 
 After loading the corresponding modules, the software can be used in [Job Scripts](../jobs-cli/batch-scripts/overview.md) for [Job execution via the CLI](../jobs-cli/overview.md). 
 
-## Python Environment
+## Default Python Environment
 
-By default, we implement **python 2.7.5** as our main system version. Different python versions can be installed via the the instructions and code contained in Ref. [^11].
+By default, we implement **Python 2.7.5** as our global system version. 
 
-Additionally, we explain how to create customized **python environments** [here](actions/create-python-env.md).
+If you'd like to use a more recent Python version, [we have **environment modules** available](modules.md) which you can activate to replace the global Python interpreter for an individual session.
+
+If a specific Python version is needed for which we don't yet provide an environment module, a wide variety of Python versions can be installed in your session via Pyenv. [^11].
+
+Finally, once you've chosen the Python version you wish to use, we [explain how to create customized **Python virtual environments**](actions/create-python-env.md) to manage the Python software packages you install.
 
 ## Links
 
@@ -61,4 +65,4 @@ Additionally, we explain how to create customized **python environments** [here]
 
 [^10]: [Oh My ZSH!, Official Website](https://ohmyz.sh/)
 
-[^11]: [Simple Python Version Management: pyenv, Official GitHub Repository](https://github.com/pyenv/pyenv)
+[^11]: [Simple Python Version Management: pyenv, Official GitHub Repository](https://github.com/pyenv/pyenv#simple-python-version-management-pyenv)
