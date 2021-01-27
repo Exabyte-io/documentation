@@ -3,7 +3,7 @@
 Here, we explain how to use the **"virtualenv"** command [^1] within the [Command Line Interface](../overview.md) (CLI) to assemble some commonly used python packages for materials science computations into a **virtual environment**. These packages include the **"pymatgen"**, **"pandas"** and **"atomic simulation environment (ase)"** libraries.
 
 !!! note "Default version of Python is 2.7.5"
-    By default, the system-wide Python 2.7.5 is available.  Other versions of Python are available for use; see [the Command Line Environment documentation's section on Python](../environment.md#default-python-environment) for more details.  
+    When a new command line session is created, the active Python version is the system-wide version 2.7.5.  Other versions of Python are available for use on an opt-in basis; see [the Command Line Environment documentation's section on Python](../environment.md#default-python-environment) for more details.  
 
 ## Using Virtual Environment
 
