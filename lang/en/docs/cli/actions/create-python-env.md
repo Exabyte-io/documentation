@@ -47,7 +47,7 @@ In order to disable the virtual environment and return to the original default c
 deactivate
 ```
 
-To reactivate an existing virtual environment, you just have to source the activate script again:
+To reactivate an existing virtual environment, source the virtual environment's `activate` script again:
 
 ```bash
 source .virtualenv/bin/activate

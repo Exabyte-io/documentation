@@ -37,11 +37,11 @@ After loading the corresponding modules, the software can be used in [Job Script
 
 By default, we implement **Python 2.7.5** as our global system version. 
 
-If you'd like to use a more recent Python version, [we have **environment modules** available](modules.md) which you can activate to replace the global Python interpreter for an individual session.
+To use a more recent Python version, [we have **environment modules** available](modules.md) which can be activated to replace the global Python interpreter for an individual session.
 
-If a specific Python version is needed for which we don't yet provide an environment module, a wide variety of Python versions can be installed in your session via Pyenv. [^11].
+If a specific Python version is needed for which we don't yet provide an environment module, a wide variety of Python versions can be installed via Pyenv. [^11].
 
-Finally, once you've chosen the Python version you wish to use, we [explain how to create customized **Python virtual environments**](actions/create-python-env.md) to manage the Python software packages you install.
+Finally, once a Python version has been chosen, we [explain how to create customized **Python virtual environments**](actions/create-python-env.md) to manage installing Python software packages.
 
 ## Links
 
