@@ -55,9 +55,9 @@ source .virtualenv/bin/activate
 
 ## Other Versions of Python
 
-As noted above, you can override the default version of Python with any of the ways described in  [the Command Line Environment documentation's section on Python](../environment.md#default-python-environment).
+As noted above, the default version of Python can be overridden with any of the ways described in  [the Command Line Environment documentation's section on Python](../environment.md#default-python-environment).
 
-Once you have your chosen version of Python active, you can create virtual environments as expected and install packages and execute code against that version.  For example, using the Environment Module approach:
+Once the chosen version of Python is active, virtual environments can be created as expected and packages installed and code executed against that version.  For example, using the Environment Module approach:
 
 ```bash
 module load python/3.8.6
@@ -71,7 +71,7 @@ python --version
 # Python 3.8.6
 ```
 
-Note that once a Python virtual environment is created, its Python version is permanent and it's not possible to switch to a different version.  In that case, you'll need to create a new virtual environment with a different path.
+Note that once a Python virtual environment is created, its Python version is permanent and it's not possible to switch to a different version.  In that case, a new virtual environment with a different path will need to be created.
 
 ## Example Python Packages
 
