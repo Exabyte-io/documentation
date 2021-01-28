@@ -2,7 +2,7 @@
 
 ## Python
 
-exabyte-api-client[^1] is a Python package that provides access to the REST-API via Python. Readers are referred to the source code repository linked below for more information.
+We have deployed a python-based [**API client**](https://github.com/Exabyte-io/exabyte-api-client)[^1] providing access to the RESTful-API endpoints. Readers are referred to the source code repository linked below for more information.
 
 ## Other
 

@@ -30,7 +30,7 @@ Queue name consists of the 4 main parts as demonstrated below. Only one part, de
 - **GPSF**, GPU-enabled, [P100](../clusters/hardware.md#gpu-types), 1 GPU, Saving, Fast, 6 cores per node on [Azure](../clusters/azure.md) only
 - **OR16**: Ordinary, Regular, 16 cores per each compute node
 - **OF**: Ordinary, Fast; 36 cores per node on [AWS](../clusters/aws.md), 16 cores on [Azure](../clusters/azure.md)
-- **SF+**: Saving, Fast; 72 later generation (compared to "SF") cores on [AWS](../clusters/aws.md) only
+- **SFplus**: Saving, Fast; 72 later generation (compared to "SF") cores on [AWS](../clusters/aws.md) only
 
 ## Charge Policies
 
