@@ -17,7 +17,7 @@ The platform currently offers the choice between the following software engines 
 
 | Name    |  Version(s)      | Access Scenarios (see previous section)      |
 | :-------- | ----------- | -------------|
-| [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.0 | 1, 3|
+| [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.3 | 1, 3|
 | [VASP](modeling/vasp/overview.md)      | 5.3.5-5.4.4 | 1, 3 |
 | [LAMMPS](modeling/lammps.md)    | 11-2016 | 3 |
 | [NWChem](modeling/nwchem.md)    | 6.6     | 3 |
