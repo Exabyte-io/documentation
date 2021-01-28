@@ -79,6 +79,7 @@ nav:
         - Important Concepts:                            getting-started/important-concepts.md
         - Terminology:                                   getting-started/terminology.md
         - Useful Links:                                  getting-started/useful-links.md
+        - Frequestly Asked Questions:                    other/faq.md
         - Run first simulation:
             - Web Interface:                             getting-started/run-first-simulation/web-interface.md
             - Command Line:                              getting-started/run-first-simulation/cli-job.md
