@@ -11,25 +11,25 @@ For a quick installation:
 2. Clone this repository: 
 
     ```bash
-    git clone git@github.com:Exabyte-io/exabyte-public-documentation.git
+    git clone git@github.com:Exabyte-io/documentation.git
     ```
 
 3. Setup virtual environment
 
     ```bash
-    cd exabyte-public-documentation
-    virtualenv .virtualenv
-    source .virtualenv/bin/activate
-    pip install -r requirements.txt
+    cd documentation
+    virtualenv venv
+    source venv/bin/activate
+    pip install --no-deps -r requirements.txt
     ```
 
 4. Init git submodules:
 
     ```bash
-    git submodule update --init
+    git submodule update --recursive --init
     ```
 
-5. Set the documentation directory if plan to use other languages than english:
+5. (Optional) Set the documentation directory, if plan to use other languages than English:
 
     ```bash
     export DOCS_dir="lang/ja/docs"
