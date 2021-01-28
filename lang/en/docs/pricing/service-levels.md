@@ -37,7 +37,7 @@ Readers are referred to [Service Levels](../accounts/service-levels.md) page for
 | Additional Dropbox Space - GB/Month       | -            | $0.2           | $0.2           | $0.2           |
 | Ordinary Compute Price - Core-Hour        | -            | $0.12          | $0.12          | $0.12          |
 
-[^1] Only for organizational accounts that opt for [wire-based electronic payments](../accounts/payments-charges.md#wire-based-payments).
+[^1]: Only for organizational accounts that opt for [wire-based electronic payments](../accounts/payments-charges.md#wire-based-payments).
 
 !!! note "Contact us for detailed pricing"
     For detailed pricing or a quotation please contact us at <a href="mailto:sales@exabyte.io" target="_blank">sales@exabyte.io</a>.
