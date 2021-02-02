@@ -30,6 +30,9 @@ The platform currently offers the choice between the following software engines 
 
 We have a proof-of-concept support for [machine learning](../models-directory/machine-learning/overview.md) through [Exabyte-ML](machine-learning/exabyte/overview.md). This application is accessible via the [subworkflow editor interface](../workflow-designer/subworkflow-editor/overview.md) only.
 
+Users can also directly access Python-based tools such as [TensorFlow](/software-directory/machine-learning/tensorflow)
+and [TensorMol](/software-directory/machine-learning/tensormol).
+
 ## Analysis Tools
 
 We support the following structural analysis and visualization tools through a [remote desktop connection](../remote-connection/remote-desktop.md). The reader may click each entry listed below to be redirected to the software's corresponding documentation introduction.
