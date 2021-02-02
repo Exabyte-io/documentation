@@ -10,6 +10,7 @@ Although we do not yet have a module file available to run TensorFlow, it can ea
 Keep in mind that TensorFlow's development is rapidly evolving, and thus its dependencies can suddenly change in new versions.
 We recommend checking the [official TensorFlow documentation](https://www.tensorflow.org/install/pip) to verify that the
 version of Python and version of TensorFlow selected are compatible with one-another. Further notes:
+
   * [TensorFlow versions 1.X](https://pypi.org/project/tensorflow/1.15.5/) 
  are only compatible with Python releases earlier than Python 3.7.
   * Python 3.8 is only supported by [TensorFlow versions 2.2](https://www.tensorflow.org/install/pip) and later.
@@ -25,8 +26,19 @@ the desired version of Python.
 Once the desired version of Python has been installed, and its virtual environment has been activated, TensorFlow can
 be installed via pip:
 
-`python -m pip install tensorflow --no-cache-dir`
+```bash
+python -m pip install tensorflow --no-cache-dir
+```
 
 Or, if a specific version of TensorFlow is desired (for example, version `2.4.1`):
 
-`python -m pip install tensorflow==2.4.1`
+```bash
+python -m pip install "tensorflow==2.4.1" --no-cache-dir
+```
+
+On other occasions, versions which satisfy the condition of "Latest, but no later than version X" are desireable, such
+as in the case of [TensorMol](/software-directory/machine-learning/tensormol), which is incompatible with TensorFlow v2. This can be accomplished easily:
+
+```bash
+python -m pip install "tensorflow<2.0" --no-cache-dir
+```
