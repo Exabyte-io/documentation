@@ -253,14 +253,11 @@ nav:
             - References:                               models-directory/dft/references.md
         - Machine Learning:
             - Overview:                                 models-directory/machine-learning/overview.md
-              # Landing Page with Links
-            - Model Types:                              models-directory/machine-learning/parameters.md
-              # Discuss Regression / Classification / Clustering
-            - Training and Prediction:                  models-directory/machine-learning/actions.md
-              # Short description of what "Training" and "Prediction" means
-            - Accuracy:                                 models-directory/machine-learning/units.md
-              # Basic error metrics (RMSE, MAE, Confusion Matrix)
-              # Overfitting
+            - Parameters:                               models-directory/machine-learning/parameters.md
+            - Units:                                    models-directory/machine-learning/units.md
+            - Data:                                     models-directory/machine-learning/data.md
+            - Actions:                                  models-directory/machine-learning/actions.md
+            - Units:                                    models-directory/machine-learning/units.md
             - Example Workflow:                         models-directory/machine-learning/example-workflow.md
 
     - Methods:
