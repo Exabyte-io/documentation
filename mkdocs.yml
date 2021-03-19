@@ -332,6 +332,9 @@ nav:
             - Exabyte ML:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
                 - Data:                                 software-directory/machine-learning/exabyte/data.md
+            - Python ML:
+                - Overview:                             software-directory/machine-learning/exabyte/overview.md
+                - Data:                                 software-directory/machine-learning/exabyte/data.md
         - Analysis & Visualization:
             - VESTA:                                    software-directory/analysis/vesta.md
             - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
