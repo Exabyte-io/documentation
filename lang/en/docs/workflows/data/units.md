@@ -36,12 +36,43 @@ For a description of unit input templating, the reader is referred to [this sect
 
 ## I/O
 
+### DataFrame
 ```json tab="Schema" 
 {!schema/workflow/unit/io.json!}
 ```
 
 ```json tab="Example" 
 {!example/workflow/unit/io.json!}
+```
+
+### API (Input Section Only)
+
+```json tab="Schema"
+{!schema/workflow/unit/io/api.json!}
+```
+
+```json tab="Example"
+{!example/workflow/unit/io/api.json!}
+```
+
+### Database (Input Section Only)
+
+```json tab="Schema"
+{!schema/workflow/unit/io/db.json!}
+```
+
+```json tab="Example"
+{!example/workflow/unit/io/db.json!}
+```
+
+### Object Storage (Input Section Only)
+
+```json tab="Schema"
+{!schema/workflow/unit/io/object_storage.json!}
+```
+
+```json tab="Example"
+{!example/workflow/unit/io/object_storage.json!}
 ```
 
 ## Assignment
