@@ -211,6 +211,18 @@ Stress tensor contains a 3x3 matrix of the stress components of the unit cell.
 {!example/properties_directory/non-scalar/stress_tensor.json!}
 ```
 
+### [Workflow](../../properties-directory/non-scalar/workflow.md)
+
+Some jobs can result in the generation of new workflows, which will be placed in the user's account.
+
+```json tab="Schema"
+{!schema/workflow.json!}
+```
+
+```json tab="Example"
+{!example/workflow.json!}
+```
+
 ## Elemental Properties
 
 ### [Atomic Radius](../../properties-directory/elemental/atomic-radius.md)
