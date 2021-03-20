@@ -636,7 +636,7 @@ nav:
             - Overview:                                 properties/data/overview.md
             - Core:                                     properties/data/core.md
               # Add example schema for workflow property
-              # Add example schema for all current versions of the IO property
+              # Add example schema for file property
             - List of Schemas:                          properties/data/list.md
             - Periodic Table:                           properties/data/periodic-table.md
         - Classification:
