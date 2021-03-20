@@ -603,7 +603,7 @@ nav:
         - Data:
             - Overview:                                 properties/data/overview.md
             - Core:                                     properties/data/core.md
-              # Add example schema for new file_content property
+              # Add example schema for new file_content property, and for workflow property
             - List of Schemas:                          properties/data/list.md
             - Periodic Table:                           properties/data/periodic-table.md
         - Classification:
@@ -637,7 +637,9 @@ nav:
             - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
             - Reaction Energy Profile:                  properties-directory/non-scalar/reaction-energy-profile.md
             # Description of what the new File_Content property is, and what it does
-            - File Content :                            properties-directory/non-scalar/file_content.md
+            - File Content:                             properties-directory/non-scalar/file_content.md
+            # Description of what the Workflow property is and how it is generated in Express
+            - Workflow:                                 properties-directory/non-scalar/workflow.md
         - Elemental:
             - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
