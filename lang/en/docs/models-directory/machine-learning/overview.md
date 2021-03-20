@@ -22,6 +22,9 @@ We introduce some Machine Learning-specific [unit types](../../workflows/compone
 
 We review [in this page](example-workflow.md) the structure of an example Machine Learning [workflow](../../workflows/overview.md).
 
+## [Accuracy](accuracy.md)
+
+We discuss in [this page](accuracy.md) several important considerations to make when deciding how accurate a machine-learned model is.
 ## Links
 
 [^1]: [Wikipedia Machine learning, Website](https://en.wikipedia.org/wiki/Machine_learning)
