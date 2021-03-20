@@ -363,8 +363,16 @@ nav:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
                 - Data:                                 software-directory/machine-learning/exabyte/data.md
             - Python ML:
-                - Overview:                             software-directory/machine-learning/exabyte/overview.md
-                - Data:                                 software-directory/machine-learning/exabyte/data.md
+                - Overview:                             software-directory/python-ml/exabyte/overview.md
+                  # Similar to what we already do for QE and VASP, Components will have:
+                  # 1. Executables, stating this is Python
+                  # 2. Flavors of ML all get listed here
+                  # - We will also discuss the general unit structure here (e.g. if train else predict)
+                  # Differentiate between "Set Up the Job" and "Machine Learning" subworkflows here as well
+
+                - Components:                           software-directory/python-ml/exabyte/components.md
+                  # State that this is Python under the hood, and link to the Python data page here
+                - Data:                                 software-directory/python-ml/exabyte/data.md
         - Analysis & Visualization:
             - VESTA:                                    software-directory/analysis/vesta.md
             - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
