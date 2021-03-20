@@ -381,10 +381,24 @@ nav:
             - Python ML:
                 - Overview:                             software-directory/python-ml/exabyte/overview.md
                   # Similar to what we already do for QE and VASP, Components will have:
-                  # 1. Executables, stating this is Python
-                  # 2. Flavors of ML all get listed here
-                  # - We will also discuss the general unit structure here (e.g. if train else predict)
-                  # Differentiate between "Set Up the Job" and "Machine Learning" subworkflows here as well
+                  # 1. Executable
+                  #     - This is Python
+                  # 2. Workflow Structure
+                  #     - Contains two subworkflows
+                  #     A. Set Up the Job
+                  #         - This subworkflow facilitates setting up the job
+                  #         - Automatically changed during training
+                  #         - Data is specified here by the user
+                  #     B. Machine Learning
+                  #         - Where ML units exist
+                  #         - Specified by the flavors below
+                  # 4. Flavors
+                  #     - Currently-implemented flavors are listed here, exactly as they appear in the web-app
+                  # 5. Custom ML Units
+                  #     - The utility of settings.py
+                  #     - Context preservation via settings.py (the importance of the `with context:` statement
+                  #     - Divergent behavior based on whether the workflow is in "Train" or "Predict" mode
+                  #     - Refer to the custom flavor as a template
                 - Components:                           software-directory/python-ml/exabyte/components.md
                   # State that this is Python under the hood, and link to the Python data page here
                 - Data:                                 software-directory/python-ml/exabyte/data.md
