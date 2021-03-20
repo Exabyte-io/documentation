@@ -252,13 +252,29 @@ nav:
             - Special Notes:                            models-directory/dft/notes.md
             - References:                               models-directory/dft/references.md
         - Machine Learning:
+              # No Changes to Overview
             - Overview:                                 models-directory/machine-learning/overview.md
+              # Add definition of "Classification" and "Clustering" to Parameters
             - Parameters:                               models-directory/machine-learning/parameters.md
+              # Have the following categories as headers on Units:
+              # - Pre-Processing (Merge "Processing" and "Data Transformation"
+              # - Feature Engineering
+              # - Feature Selection (Already exists)
+              # - Hyperparameter Tuning
+              # - Model Training
+              # - Model Prediction
+              # - Post-Processing
             - Units:                                    models-directory/machine-learning/units.md
+              # Not sure what we want to do with Data. I suggest we move it to the ExabyteML Implementation in
+              # the Software Directory.
+              # We could then replace it a link to Software_Directory/Scripting/Python/Data, since it's now Python
             - Data:                                     models-directory/machine-learning/data.md
-            - Actions:                                  models-directory/machine-learning/actions.md
-            - Units:                                    models-directory/machine-learning/units.md
+              # Replace tutorial link in "More" with tutorial from new implementation in Example Workflow
+              # Replace numbered list with a flowchart and a short description
             - Example Workflow:                         models-directory/machine-learning/example-workflow.md
+              # Describe how accurate ML models are, the concept of overfitting, and accuracy metrics in
+              # new Accuracy page
+            - Accuracy:                                 models-directory/machine-learning/accuracy.md
 
     - Methods:
         - Overview:                                     methods/overview.md
