@@ -79,14 +79,14 @@ PythonML workflows contain two subworkflows. The first, called "Set Up the Job" 
 and setting environment variables necessary for the job to run. The second, called "Machine Learning," contains the
 actual machine learning units.
 
-### Set Up the Job
+### Subworkflow: Set Up the Job
 
 This subworkflow facilitates setting up the PythonML job. Currently, the only thing users need to edit in this
 subworfklow are the names of the data files to be copied in for training or prediction purposes. Reconfiguring this
 subworfklow to set up for a predict job is handled automatically
 when [ the predict workflow is generated](../../../properties-directory/non-scalar/workflow.md).
 
-### Machine Learning
+### Subworkflow: Machine Learning
 
 This subworkflow is where a user's requested machine learning units reside. This subworkflow is generally the one that
 users are expected to modify, to add or remove different machine learning workflow units.
