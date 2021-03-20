@@ -2,24 +2,1692 @@
 
 A Machine Learning [workflow](../../workflows/overview.md) may consist of the following multiple steps, performed in a sequential order through the [units](../../workflows/components/units.md) specific to Machine Learning which are described [in this page](units.md).
 
-## Training a Model
+Below, we show an example schema for both the training and prediction version of a workflow.
 
-As below:
+```json tab="Train"
+{
+    "_id": "x4XRN6sm6xXMsydTz",
+    "name": "Python ML Train (clone)",
+    "subworkflows": [
+      {
+        "_id": "0eb7a2669ab5d1bb9fd5ee9f",
+        "name": "Set Up the Job",
+        "application": {
+          "version": "3.8.6",
+          "isDefault": true,
+          "summary": "Python Script",
+          "name": "python",
+          "shortName": "py",
+          "build": "Default"
+        },
+        "properties": [],
+        "model": {
+          "type": "unknown",
+          "subtype": "unknown",
+          "method": {
+            "type": "unknown",
+            "subtype": "unknown",
+            "data": {}
+          }
+        },
+        "units": [
+          {
+            "name": "Set Workflow Mode",
+            "type": "assignment",
+            "operand": "IS_WORKFLOW_RUNNING_TO_PREDICT",
+            "value": "False",
+            "input": [],
+            "flowchartId": "head-set-predict-status",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": true,
+            "next": "head-branch-on-predict-status"
+          },
+          {
+            "name": "Train or Predict?",
+            "preProcessors": [],
+            "postProcessors": [],
+            "results": [],
+            "type": "condition",
+            "input": [
+              {
+                "scope": "global",
+                "name": "IS_WORKFLOW_RUNNING_TO_PREDICT"
+              }
+            ],
+            "then": "head-predict-branch-entry-point",
+            "else": "head-train-branch-entry-point",
+            "statement": "IS_WORKFLOW_RUNNING_TO_PREDICT",
+            "maxOccurrences": 100,
+            "flowchartId": "head-branch-on-predict-status",
+            "status": "idle",
+            "statusTrack": [],
+            "monitors": [],
+            "head": false,
+            "next": "head-train-branch-entry-point"
+          },
+          {
+            "name": "Declare Training Data",
+            "type": "assignment",
+            "operand": "TRAINING_DATA",
+            "value": "\"data_to_train_with.csv\"",
+            "input": [],
+            "flowchartId": "head-train-branch-entry-point",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "head-fetch-training-data"
+          },
+          {
+            "name": "Fetch Training Data",
+            "type": "io",
+            "subtype": "input",
+            "source": "object_storage",
+            "input": [
+              {
+                "basename": "{{TRAINING_DATA}}",
+                "objectData": {
+                  "CONTAINER": "",
+                  "NAME": "{{DROPBOX_PATH}}/{{TRAINING_DATA}}",
+                  "PROVIDER": "",
+                  "REGION": ""
+                }
+              }
+            ],
+            "flowchartId": "head-fetch-training-data",
+            "enableRender": true,
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "head-training-setup-done"
+          },
+          {
+            "name": "Training Setup Done",
+            "type": "assignment",
+            "operand": "IS_TRAINING_SETUP_DONE",
+            "value": "True",
+            "input": [],
+            "flowchartId": "head-training-setup-done",
+            "next": "end-of-ml-train-head",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false
+          },
+          {
+            "name": "Declare Predict Data",
+            "type": "assignment",
+            "operand": "PREDICT_DATA",
+            "value": "\"data_to_predict_with.csv\"",
+            "input": [],
+            "flowchartId": "head-predict-branch-entry-point",
+            "next": "head-fetch-predict-data",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false
+          },
+          {
+            "name": "Fetch Data to do prediction on",
+            "type": "io",
+            "subtype": "input",
+            "source": "object_storage",
+            "input": [
+              {
+                "basename": "{{PREDICT_DATA}}",
+                "objectData": {
+                  "CONTAINER": "",
+                  "NAME": "{{DROPBOX_PATH}}/{{PREDICT_DATA}}",
+                  "PROVIDER": "",
+                  "REGION": ""
+                }
+              }
+            ],
+            "flowchartId": "head-fetch-predict-data",
+            "enableRender": true,
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "head-fetch-trained-model"
+          },
+          {
+            "name": "Fetch Trained Model as file",
+            "type": "io",
+            "subtype": "input",
+            "source": "object_storage",
+            "input": [
+              {
+                "basename": "",
+                "objectData": {
+                  "CONTAINER": "",
+                  "NAME": "",
+                  "PROVIDER": "",
+                  "REGION": ""
+                }
+              }
+            ],
+            "flowchartId": "head-fetch-trained-model",
+            "enableRender": true,
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "end-of-ml-train-head"
+          },
+          {
+            "name": "End Setup",
+            "type": "assignment",
+            "operand": "IS_SETUP_COMPLETE",
+            "value": "True",
+            "input": [],
+            "flowchartId": "end-of-ml-train-head",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false
+          }
+        ]
+      },
+      {
+        "_id": "bcfb28f6aa93b6c71586b094",
+        "name": "Machine Learning",
+        "application": {
+          "version": "3.8.6",
+          "isDefault": true,
+          "summary": "Python Script",
+          "name": "python",
+          "shortName": "py",
+          "build": "Default"
+        },
+        "properties": [
+          "workflow:pyml_predict",
+          "file_content"
+        ],
+        "model": {
+          "type": "unknown",
+          "subtype": "unknown",
+          "method": {
+            "type": "unknown",
+            "subtype": "unknown",
+            "data": {}
+          }
+        },
+        "units": [
+          {
+            "type": "execution",
+            "name": "Setup Variables and Packages",
+            "head": true,
+            "results": [],
+            "monitors": [],
+            "flowchartId": "dc64ac3855b9f5560f6887c4",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "ndvy6i6dMkhz7jGdK",
+              "input": [
+                {
+                  "name": "settings.py",
+                  "templateId": "JE86yM26DdBF93Fbp"
+                },
+                {
+                  "name": "requirements.txt",
+                  "templateId": "Jai63dPXZKf8emM5c"
+                }
+              ],
+              "name": "pyml:setup_variables_packages",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.235Z",
+              "updatedAt": "2021-03-16T01:49:27.457Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "JE86yM26DdBF93Fbp",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   General settings for PythonML jobs on the Exabyte.io Platform   #\n#                                                                   #\n#   This file generally shouldn't be modified directly by users.    #\n#   The \"datafile\" and \"is_workflow_running_to_predict\" variables   #\n#   are defined in the head subworkflow, and are templated into     #\n#   this file. This helps facilitate the workflow's behavior        #\n#   differing whether it is in a \"train\" or \"predict\" mode.         #\n#                                                                   #\n#   Also in this file is the \"Context\" object, which helps maintain #\n#   certain Python objects between workflow units, and between      #\n#   predict runs.                                                   #\n#                                                                   #\n#   Whenever a python object needs to be stored for subsequent runs #\n#   (such as in the case of a trained model), context.save() can be #\n#   called to save it. The object can then be loaded again by using #\n#   context.load().                                                 #\n# ----------------------------------------------------------------- #\n\n\nimport pickle, os\n\n# The variables \"is_workflow_running_to_predict\" and \"is_workflow_running_to_train\" are used to control whether\n# the workflow is in a \"training\" mode or a \"prediction\" mode. The \"IS_WORKFLOW_RUNNING_TO_PREDICT\" variable is set by\n# an assignment unit in the \"Set Up the Job\" subworkflow that executes at the start of the job. It is automatically\n# changed when the predict workflow is generated, so users should not need to modify this variable.\nis_workflow_running_to_predict = {% raw %}{{IS_WORKFLOW_RUNNING_TO_PREDICT}}{% endraw %}\nis_workflow_running_to_train = not is_workflow_running_to_predict\n\n# Set the datafile variable. The \"datafile\" is the data that will be read in, and will be used by subsequent\n# workflow units for either training or prediction, depending on the workflow mode.\nif is_workflow_running_to_predict:\n    datafile = \"{% raw %}{{PREDICT_DATA}}{% endraw %}\"\nelse:\n    datafile = \"{% raw %}{{TRAINING_DATA}}{% endraw %}\"\n\n# Target_column_name is used during training to identify the variable the model is traing to predict.\n# For example, consider a CSV containing three columns, \"Y\", \"X1\", and \"X2\". If the goal is to train a model\n# that will predict the value of \"Y,\" then target_column_name would be set to \"Y\"\ntarget_column_name = \"target\"\n\n# The \"Context\" class allows for data to be saved and loaded between units, and between train and predict runs.\n# Variables which have been saved using the \"Save\" method are written to disk, and the predict workflow is automatically\n# configured to obtain these files when it starts.\n#\n# IMPORTANT NOTE: Do *not* adjust the value of \"context_dir_pathname\" in the Context object. If the value is changed, then\n# files will not be correctly copied into the generated predict workflow. This will cause the predict workflow to be\n# generated in a broken state, and it will not be able to make any predictions.\nclass Context(object):\n    \"\"\"\n    Saves and loads objects from the disk, useful for preserving data between workflow units\n\n    Attributes:\n        context_paths (dict): Dictionary of the format {variable_name: path}, that governs where\n                              pickle saves files.\n\n    Methods:\n        save: Used to save objects to the context directory\n        load: Used to load objects from the context directory\n    \"\"\"\n\n    def __init__(self, context_file_basename=\"workflow_context_file_mapping\"):\n        \"\"\"\n        Constructor for Context objects\n\n        Args:\n            context_file_basename (str): Name of the file to store context paths in\n        \"\"\"\n\n        # Warning: DO NOT modify the context_dir_pathname variable below\n        # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n        context_dir_pathname = \"{% raw %}{{ CONTEXT_DIR_RELATIVE_PATH }}{% endraw %}\"\n        # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self._context_dir_pathname = context_dir_pathname\n        self._context_file = os.path.join(context_dir_pathname, context_file_basename)\n\n        # Make context dir if it does not exist\n        if not os.path.exists(context_dir_pathname):\n            os.makedirs(context_dir_pathname)\n\n        # Read in the context sources dictionary, if it exists\n        if os.path.exists(self._context_file):\n            with open(self._context_file, \"rb\") as file_handle:\n                self.context_paths: dict = pickle.load(file_handle)\n        else:\n            # Items is a dictionary of {varname: path}\n            self.context_paths = {}\n\n    def __enter__(self):\n        return self\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        self._update_context()\n\n    def _update_context(self):\n        with open(self._context_file, \"wb\") as file_handle:\n            pickle.dump(self.context_paths, file_handle)\n\n    def load(self, name: str):\n        \"\"\"\n        Returns a contextd object\n\n        Args:\n            name (str): The name in self.context_paths of the object\n        \"\"\"\n        path = self.context_paths[name]\n        with open(path, \"rb\") as file_handle:\n            obj = pickle.load(file_handle)\n        return obj\n\n    def save(self, obj: object, name: str):\n        \"\"\"\n        Saves an object to disk using pickle\n\n        Args:\n            name (str): Friendly name for the object, used for lookup in load() method\n            obj (object): Object to store on disk\n        \"\"\"\n        path = os.path.join(self._context_dir_pathname, f\"{name}.pkl\")\n        self.context_paths[name] = path\n        with open(path, \"wb\") as file_handle:\n            pickle.dump(obj, file_handle)\n        self._update_context()\n\n# Generate a context object, so that the \"with settings.context\" can be used by other units in this workflow.\ncontext = Context()",
+                "name": "settings.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.191Z",
+                "updatedAt": "2021-03-16T01:49:22.737Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   General settings for PythonML jobs on the Exabyte.io Platform   #\n#                                                                   #\n#   This file generally shouldn't be modified directly by users.    #\n#   The \"datafile\" and \"is_workflow_running_to_predict\" variables   #\n#   are defined in the head subworkflow, and are templated into     #\n#   this file. This helps facilitate the workflow's behavior        #\n#   differing whether it is in a \"train\" or \"predict\" mode.         #\n#                                                                   #\n#   Also in this file is the \"Context\" object, which helps maintain #\n#   certain Python objects between workflow units, and between      #\n#   predict runs.                                                   #\n#                                                                   #\n#   Whenever a python object needs to be stored for subsequent runs #\n#   (such as in the case of a trained model), context.save() can be #\n#   called to save it. The object can then be loaded again by using #\n#   context.load().                                                 #\n# ----------------------------------------------------------------- #\n\n\nimport pickle, os\n\n# The variables \"is_workflow_running_to_predict\" and \"is_workflow_running_to_train\" are used to control whether\n# the workflow is in a \"training\" mode or a \"prediction\" mode. The \"IS_WORKFLOW_RUNNING_TO_PREDICT\" variable is set by\n# an assignment unit in the \"Set Up the Job\" subworkflow that executes at the start of the job. It is automatically\n# changed when the predict workflow is generated, so users should not need to modify this variable.\nis_workflow_running_to_predict = {{IS_WORKFLOW_RUNNING_TO_PREDICT}}\nis_workflow_running_to_train = not is_workflow_running_to_predict\n\n# Set the datafile variable. The \"datafile\" is the data that will be read in, and will be used by subsequent\n# workflow units for either training or prediction, depending on the workflow mode.\nif is_workflow_running_to_predict:\n    datafile = \"{{PREDICT_DATA}}\"\nelse:\n    datafile = \"{{TRAINING_DATA}}\"\n\n# Target_column_name is used during training to identify the variable the model is traing to predict.\n# For example, consider a CSV containing three columns, \"Y\", \"X1\", and \"X2\". If the goal is to train a model\n# that will predict the value of \"Y,\" then target_column_name would be set to \"Y\"\ntarget_column_name = \"target\"\n\n# The \"Context\" class allows for data to be saved and loaded between units, and between train and predict runs.\n# Variables which have been saved using the \"Save\" method are written to disk, and the predict workflow is automatically\n# configured to obtain these files when it starts.\n#\n# IMPORTANT NOTE: Do *not* adjust the value of \"context_dir_pathname\" in the Context object. If the value is changed, then\n# files will not be correctly copied into the generated predict workflow. This will cause the predict workflow to be\n# generated in a broken state, and it will not be able to make any predictions.\nclass Context(object):\n    \"\"\"\n    Saves and loads objects from the disk, useful for preserving data between workflow units\n\n    Attributes:\n        context_paths (dict): Dictionary of the format {variable_name: path}, that governs where\n                              pickle saves files.\n\n    Methods:\n        save: Used to save objects to the context directory\n        load: Used to load objects from the context directory\n    \"\"\"\n\n    def __init__(self, context_file_basename=\"workflow_context_file_mapping\"):\n        \"\"\"\n        Constructor for Context objects\n\n        Args:\n            context_file_basename (str): Name of the file to store context paths in\n        \"\"\"\n\n        # Warning: DO NOT modify the context_dir_pathname variable below\n        # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n        context_dir_pathname = \"{{ CONTEXT_DIR_RELATIVE_PATH }}\"\n        # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self._context_dir_pathname = context_dir_pathname\n        self._context_file = os.path.join(context_dir_pathname, context_file_basename)\n\n        # Make context dir if it does not exist\n        if not os.path.exists(context_dir_pathname):\n            os.makedirs(context_dir_pathname)\n\n        # Read in the context sources dictionary, if it exists\n        if os.path.exists(self._context_file):\n            with open(self._context_file, \"rb\") as file_handle:\n                self.context_paths: dict = pickle.load(file_handle)\n        else:\n            # Items is a dictionary of {varname: path}\n            self.context_paths = {}\n\n    def __enter__(self):\n        return self\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        self._update_context()\n\n    def _update_context(self):\n        with open(self._context_file, \"wb\") as file_handle:\n            pickle.dump(self.context_paths, file_handle)\n\n    def load(self, name: str):\n        \"\"\"\n        Returns a contextd object\n\n        Args:\n            name (str): The name in self.context_paths of the object\n        \"\"\"\n        path = self.context_paths[name]\n        with open(path, \"rb\") as file_handle:\n            obj = pickle.load(file_handle)\n        return obj\n\n    def save(self, obj: object, name: str):\n        \"\"\"\n        Saves an object to disk using pickle\n\n        Args:\n            name (str): Friendly name for the object, used for lookup in load() method\n            obj (object): Object to store on disk\n        \"\"\"\n        path = os.path.join(self._context_dir_pathname, f\"{name}.pkl\")\n        self.context_paths[name] = path\n        with open(path, \"wb\") as file_handle:\n            pickle.dump(obj, file_handle)\n        self._update_context()\n\n# Generate a context object, so that the \"with settings.context\" can be used by other units in this workflow.\ncontext = Context()"
+              },
+              {
+                "_id": "Jai63dPXZKf8emM5c",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#  PythonML Package Requirements for use on the Exabyte.io Platform #\n#                                                                   #\n#  Will be used as follows:                                         #\n#                                                                   #\n#    1. A runtime directory for this calculation is created         #\n#    2. This list is used to populate a Python virtual environment  #\n#    3. The virtual environment is activated                        #\n#    4. The Python process running the script included within this  #\n#       job is started                                              #\n#                                                                   #\n#  For more information visit:                                      #\n#   - https://pip.pypa.io/en/stable/reference/pip_install           #\n#   - https://virtualenv.pypa.io/en/stable/                         #\n#                                                                   #\n#  The package set below is a stable working set of pymatgen and    # \n#  all of its dependencies.  Please adjust the list to include      #\n#  your preferred packages.                                         #\n#                                                                   # \n# ----------------------------------------------------------------- #\n\n# Python 2 packages\nbackports.functools-lru-cache==1.6.1;python_version<\"3\"\ncertifi==2020.12.5;python_version<\"3\"\nchardet==4.0.0;python_version<\"3\"\ncycler==0.10.0;python_version<\"3\"\ndecorator==4.4.2;python_version<\"3\"\nenum34==1.1.10;python_version<\"3\"\nidna==2.10;python_version<\"3\"\nkiwisolver==1.1.0;python_version<\"3\"\nmatplotlib==2.2.5;python_version<\"3\"\nmonty==2.0.7;python_version<\"3\"\nmpmath==1.2.1;python_version<\"3\"\nnetworkx==2.2;python_version<\"3\"\nnumpy==1.16.6;python_version<\"3\"\npalettable==3.3.0;python_version<\"3\"\npandas==0.24.2;python_version<\"3\"\nPyDispatcher==2.0.5;python_version<\"3\"\npymatgen==2018.12.12;python_version<\"3\"\npyparsing==2.4.7;python_version<\"3\"\npython-dateutil==2.8.1;python_version<\"3\"\npytz==2021.1;python_version<\"3\"\nrequests==2.25.1;python_version<\"3\"\nruamel.ordereddict==0.4.15;python_version<\"3\"\nruamel.yaml==0.16.12;python_version<\"3\"\nruamel.yaml.clib==0.2.2;python_version<\"3\"\nscipy==1.2.3;python_version<\"3\"\nscikit-learn==0.20.4;python_version<\"3\"\nsix==1.15.0;python_version<\"3\"\nspglib==1.16.1;python_version<\"3\"\nsubprocess32==3.5.4;python_version<\"3\"\nsympy==1.5.1;python_version<\"3\"\ntabulate==0.8.7;python_version<\"3\"\nurllib3==1.26.3;python_version<\"3\"\n\n# Python 3 packages\ncertifi==2020.12.5;python_version>=\"3\"\nchardet==4.0.0;python_version>=\"3\"\ncycler==0.10.0;python_version>=\"3\"\ndecorator==4.4.2;python_version>=\"3\"\nfuture==0.18.2;python_version>=\"3\"\nidna==2.10;python_version>=\"3\"\nkiwisolver==1.3.1;python_version>=\"3\"\nmatplotlib==3.3.4;python_version>=\"3\"\nmonty==4.0.2;python_version>=\"3\"\nmpmath==1.2.1;python_version>=\"3\"\nnetworkx==2.5;python_version>=\"3\"\nnumpy==1.19.5;python_version>=\"3\"\npalettable==3.3.0;python_version>=\"3\"\npandas==1.1.5;python_version>=\"3\"\nPillow==8.1.0;python_version>=\"3\"\nplotly==4.14.3;python_version>=\"3\"\npymatgen==2021.2.8.1;python_version>=\"3\"\npyparsing==2.4.7;python_version>=\"3\"\npython-dateutil==2.8.1;python_version>=\"3\"\npytz==2021.1;python_version>=\"3\"\nrequests==2.25.1;python_version>=\"3\"\nretrying==1.3.3;python_version>=\"3\"\nruamel.yaml==0.16.12;python_version>=\"3\"\nruamel.yaml.clib==0.2.2;python_version>=\"3\"\nscikit-learn==0.24.1;python_version>=\"3\"\nscipy==1.5.4;python_version>=\"3\"\nsix==1.15.0;python_version>=\"3\"\nspglib==1.16.1;python_version>=\"3\"\nsympy==1.7.1;python_version>=\"3\"\ntabulate==0.8.7;python_version>=\"3\"\nuncertainties==3.1.5;python_version>=\"3\"\nurllib3==1.26.3;python_version>=\"3\"",
+                "name": "requirements.txt",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.199Z",
+                "updatedAt": "2021-03-16T01:49:22.748Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#  PythonML Package Requirements for use on the Exabyte.io Platform #\n#                                                                   #\n#  Will be used as follows:                                         #\n#                                                                   #\n#    1. A runtime directory for this calculation is created         #\n#    2. This list is used to populate a Python virtual environment  #\n#    3. The virtual environment is activated                        #\n#    4. The Python process running the script included within this  #\n#       job is started                                              #\n#                                                                   #\n#  For more information visit:                                      #\n#   - https://pip.pypa.io/en/stable/reference/pip_install           #\n#   - https://virtualenv.pypa.io/en/stable/                         #\n#                                                                   #\n#  The package set below is a stable working set of pymatgen and    # \n#  all of its dependencies.  Please adjust the list to include      #\n#  your preferred packages.                                         #\n#                                                                   # \n# ----------------------------------------------------------------- #\n\n# Python 2 packages\nbackports.functools-lru-cache==1.6.1;python_version<\"3\"\ncertifi==2020.12.5;python_version<\"3\"\nchardet==4.0.0;python_version<\"3\"\ncycler==0.10.0;python_version<\"3\"\ndecorator==4.4.2;python_version<\"3\"\nenum34==1.1.10;python_version<\"3\"\nidna==2.10;python_version<\"3\"\nkiwisolver==1.1.0;python_version<\"3\"\nmatplotlib==2.2.5;python_version<\"3\"\nmonty==2.0.7;python_version<\"3\"\nmpmath==1.2.1;python_version<\"3\"\nnetworkx==2.2;python_version<\"3\"\nnumpy==1.16.6;python_version<\"3\"\npalettable==3.3.0;python_version<\"3\"\npandas==0.24.2;python_version<\"3\"\nPyDispatcher==2.0.5;python_version<\"3\"\npymatgen==2018.12.12;python_version<\"3\"\npyparsing==2.4.7;python_version<\"3\"\npython-dateutil==2.8.1;python_version<\"3\"\npytz==2021.1;python_version<\"3\"\nrequests==2.25.1;python_version<\"3\"\nruamel.ordereddict==0.4.15;python_version<\"3\"\nruamel.yaml==0.16.12;python_version<\"3\"\nruamel.yaml.clib==0.2.2;python_version<\"3\"\nscipy==1.2.3;python_version<\"3\"\nscikit-learn==0.20.4;python_version<\"3\"\nsix==1.15.0;python_version<\"3\"\nspglib==1.16.1;python_version<\"3\"\nsubprocess32==3.5.4;python_version<\"3\"\nsympy==1.5.1;python_version<\"3\"\ntabulate==0.8.7;python_version<\"3\"\nurllib3==1.26.3;python_version<\"3\"\n\n# Python 3 packages\ncertifi==2020.12.5;python_version>=\"3\"\nchardet==4.0.0;python_version>=\"3\"\ncycler==0.10.0;python_version>=\"3\"\ndecorator==4.4.2;python_version>=\"3\"\nfuture==0.18.2;python_version>=\"3\"\nidna==2.10;python_version>=\"3\"\nkiwisolver==1.3.1;python_version>=\"3\"\nmatplotlib==3.3.4;python_version>=\"3\"\nmonty==4.0.2;python_version>=\"3\"\nmpmath==1.2.1;python_version>=\"3\"\nnetworkx==2.5;python_version>=\"3\"\nnumpy==1.19.5;python_version>=\"3\"\npalettable==3.3.0;python_version>=\"3\"\npandas==1.1.5;python_version>=\"3\"\nPillow==8.1.0;python_version>=\"3\"\nplotly==4.14.3;python_version>=\"3\"\npymatgen==2021.2.8.1;python_version>=\"3\"\npyparsing==2.4.7;python_version>=\"3\"\npython-dateutil==2.8.1;python_version>=\"3\"\npytz==2021.1;python_version>=\"3\"\nrequests==2.25.1;python_version>=\"3\"\nretrying==1.3.3;python_version>=\"3\"\nruamel.yaml==0.16.12;python_version>=\"3\"\nruamel.yaml.clib==0.2.2;python_version>=\"3\"\nscikit-learn==0.24.1;python_version>=\"3\"\nscipy==1.5.4;python_version>=\"3\"\nsix==1.15.0;python_version>=\"3\"\nspglib==1.16.1;python_version>=\"3\"\nsympy==1.7.1;python_version>=\"3\"\ntabulate==0.8.7;python_version>=\"3\"\nuncertainties==3.1.5;python_version>=\"3\"\nurllib3==1.26.3;python_version>=\"3\""
+              }
+            ],
+            "next": "a7c12384f1dc327b949b2a6a"
+          },
+          {
+            "type": "execution",
+            "name": "Data Input",
+            "head": false,
+            "results": [],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "a7c12384f1dc327b949b2a6a",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "5T3zBLP4EKBBiWfWz",
+              "input": [
+                {
+                  "name": "data_input_read_csv_pandas.py",
+                  "templateId": "6KpdnF2B24opfdawQ"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:data_input:read_csv:pandas",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.207Z",
+              "updatedAt": "2021-03-16T01:49:27.428Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "6KpdnF2B24opfdawQ",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow Unit to read in data for the ML workflow.              #\n#                                                                   #\n#   Also showcased here is the concept of branching based on        #\n#   whether the workflow is in \"train\" or \"predict\" mode.           #\n#                                                                   #\n#   If the workflow is in \"training\" mode, it will read in the data #\n#   before converting it to a Numpy array and save it for use       #\n#   later. During training, we already have values for the output,  #\n#   and this gets saved to \"target.\"                                #\n#                                                                   #\n#   Finally, whether the workflow is in training or predict mode,   #\n#   it will always read in a set of descriptors from a datafile     #\n#   defined in settings.py                                          #\n# ----------------------------------------------------------------- #\n\n\nimport pandas\n\nimport settings\n\nwith settings.context as context:\n    data = pandas.read_csv(settings.datafile)\n\n    if settings.is_workflow_running_to_train:\n        # If we're training, we have an extra targets column to extract\n        target = data.pop(settings.target_column_name).to_numpy()\n        target = target.reshape(-1, 1)  # Reshape array to be used by sklearn\n        context.save(target, \"target\")\n\n    # Save descriptors\n    descriptors = data.to_numpy()\n    context.save(descriptors, \"descriptors\")",
+                "name": "data_input_read_csv_pandas.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.175Z",
+                "updatedAt": "2021-03-16T01:49:22.722Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow Unit to read in data for the ML workflow.              #\n#                                                                   #\n#   Also showcased here is the concept of branching based on        #\n#   whether the workflow is in \"train\" or \"predict\" mode.           #\n#                                                                   #\n#   If the workflow is in \"training\" mode, it will read in the data #\n#   before converting it to a Numpy array and save it for use       #\n#   later. During training, we already have values for the output,  #\n#   and this gets saved to \"target.\"                                #\n#                                                                   #\n#   Finally, whether the workflow is in training or predict mode,   #\n#   it will always read in a set of descriptors from a datafile     #\n#   defined in settings.py                                          #\n# ----------------------------------------------------------------- #\n\n\nimport pandas\n\nimport settings\n\nwith settings.context as context:\n    data = pandas.read_csv(settings.datafile)\n\n    if settings.is_workflow_running_to_train:\n        # If we're training, we have an extra targets column to extract\n        target = data.pop(settings.target_column_name).to_numpy()\n        target = target.reshape(-1, 1)  # Reshape array to be used by sklearn\n        context.save(target, \"target\")\n\n    # Save descriptors\n    descriptors = data.to_numpy()\n    context.save(descriptors, \"descriptors\")"
+              }
+            ],
+            "next": "a83999d7e269b292a87807da"
+          },
+          {
+            "type": "execution",
+            "name": "Data Standardize",
+            "head": false,
+            "results": [],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "a83999d7e269b292a87807da",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "qrpkkDzLhMb5mJjky",
+              "input": [
+                {
+                  "name": "pre_processing_standardization_sklearn.py",
+                  "templateId": "RxqZKgLwdLT346PQi"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:pre_processing:standardization:sklearn",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.218Z",
+              "updatedAt": "2021-03-16T01:49:27.442Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "RxqZKgLwdLT346PQi",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Sklearn Standard Scaler workflow unit                           #\n#                                                                   #\n#   This workflow unit scales the data such that it a mean of 0 and #\n#   a variance of 1. It then saves the data for use further down    #\n#   the road in the workflow, for use in un-transforming the data.  #\n#                                                                   #\n#   It is important that new predictions are made by scaling the    #\n#   new inputs using the mean and variance of the original training #\n#   set. As a result, the scaler gets saved in the Training phase.  #\n#                                                                   #\n#   During a predict workflow, the scaler is loaded, and the        #\n#   new examples are scaled using the stored scaler.                #\n# ----------------------------------------------------------------- #\n\n\nimport sklearn.preprocessing\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Initialize the scalers\n        target_scaler = sklearn.preprocessing.StandardScaler()\n        descriptor_scaler = sklearn.preprocessing.StandardScaler()\n\n        # Scale the data\n        target_scaler.fit_transform(target)\n        descriptor_scaler.fit_transform(descriptors)\n\n        # Save the target and predict scaler (for future predictions)\n        context.save(target_scaler, \"target_scaler\")\n        context.save(descriptor_scaler, \"descriptor_scaler\")\n\n        # Store the data\n        context.save(target, \"target\")\n        context.save(descriptors, \"descriptors\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Get the scaler\n        descriptor_scaler = context.load(\"descriptor_scaler\")\n\n        # Scale the data\n        descriptors = descriptor_scaler.transform(descriptors)\n\n        # Store the data\n        context.save(descriptors, \"descriptors\")",
+                "name": "pre_processing_standardization_sklearn.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.183Z",
+                "updatedAt": "2021-03-16T01:49:22.727Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Sklearn Standard Scaler workflow unit                           #\n#                                                                   #\n#   This workflow unit scales the data such that it a mean of 0 and #\n#   a variance of 1. It then saves the data for use further down    #\n#   the road in the workflow, for use in un-transforming the data.  #\n#                                                                   #\n#   It is important that new predictions are made by scaling the    #\n#   new inputs using the mean and variance of the original training #\n#   set. As a result, the scaler gets saved in the Training phase.  #\n#                                                                   #\n#   During a predict workflow, the scaler is loaded, and the        #\n#   new examples are scaled using the stored scaler.                #\n# ----------------------------------------------------------------- #\n\n\nimport sklearn.preprocessing\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Initialize the scalers\n        target_scaler = sklearn.preprocessing.StandardScaler()\n        descriptor_scaler = sklearn.preprocessing.StandardScaler()\n\n        # Scale the data\n        target_scaler.fit_transform(target)\n        descriptor_scaler.fit_transform(descriptors)\n\n        # Save the target and predict scaler (for future predictions)\n        context.save(target_scaler, \"target_scaler\")\n        context.save(descriptor_scaler, \"descriptor_scaler\")\n\n        # Store the data\n        context.save(target, \"target\")\n        context.save(descriptors, \"descriptors\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Get the scaler\n        descriptor_scaler = context.load(\"descriptor_scaler\")\n\n        # Scale the data\n        descriptors = descriptor_scaler.transform(descriptors)\n\n        # Store the data\n        context.save(descriptors, \"descriptors\")"
+              }
+            ],
+            "next": "1f9cdacd7705559b9d4362e5"
+          },
+          {
+            "type": "execution",
+            "name": "Model Train and Predict",
+            "head": false,
+            "results": [
+              {
+                "name": "workflow:pyml_predict"
+              }
+            ],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "1f9cdacd7705559b9d4362e5",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "dH97s6vZveHgEzDoA",
+              "input": [
+                {
+                  "name": "model_multilayer_perceptron_sklearn.py",
+                  "templateId": "QZvcdwvHfr9LpBEgh"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:model:multilayer_perceptron:sklearn",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.213Z",
+              "updatedAt": "2021-03-16T01:49:27.435Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "QZvcdwvHfr9LpBEgh",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow unit to train a simple feedforward neural network      #\n#   model on a regression problem using Scikit-Learn.               #\n#                                                                   #\n#   In this template, we use the default values for                 #\n#   hidden_layer_sizes, activation, solver, and learning rate.      #\n#                                                                   #\n#   When then workflow is in Training mode, the network is trained  #\n#   and the model is saved, along with the RMSE and some            #\n#   predictions made using the training data (e.g. for use in a     #\n#   parity plot or calculation of other error metrics).             #\n#                                                                   #\n#   When the workflow is run in Predict mode, the network is        #\n#   loaded, predictions are made, they are un-transformed using     #\n#   the trained scaler from the training run, and they are          #\n#   written to a filed named \"predictions.csv\"                      #\n# ----------------------------------------------------------------- #\n\nimport sklearn.neural_network\nimport sklearn.metrics\nimport numpy as np\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Transform targets from shape (100,1) to shape (100,); required by sklearn's MLP Regressor\n        target = target.ravel()\n\n        # Initialize the NN model\n        model = sklearn.neural_network.MLPRegressor(hidden_layer_sizes=(100,),\n                                                    activation=\"relu\",\n                                                    solver=\"adam\",\n                                                    learning_rate=\"adaptive\",\n                                                    max_iter=500)\n\n        # Train the NN model and save\n        model.fit(descriptors, target)\n        context.save(model, \"sklearn_mlp\")\n\n        # Print RMSE to stdout and save\n        predictions = model.predict(descriptors)\n        context.save(predictions, \"predictions\")\n        target_scaler = context.load(\"target_scaler\")\n\n        mse = sklearn.metrics.mean_squared_error(y_true=target_scaler.inverse_transform(target),\n                                                 y_pred=target_scaler.inverse_transform(predictions))\n        rmse = np.sqrt(mse)\n        print(f\"RMSE = {rmse}\")\n        context.save(rmse, \"RMSE\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Restore model\n        model = context.load(\"sklearn_mlp\")\n\n        # Make some predictions and unscale\n        predictions = model.predict(descriptors)\n        target_scaler = context.load(\"target_scaler\")\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Save the predictions to file\n        np.savetxt(\"predictions.csv\", predictions, header=\"prediction\", comments=\"\")",
+                "name": "model_multilayer_perceptron_sklearn.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.187Z",
+                "updatedAt": "2021-03-16T01:49:22.732Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow unit to train a simple feedforward neural network      #\n#   model on a regression problem using Scikit-Learn.               #\n#                                                                   #\n#   In this template, we use the default values for                 #\n#   hidden_layer_sizes, activation, solver, and learning rate.      #\n#                                                                   #\n#   When then workflow is in Training mode, the network is trained  #\n#   and the model is saved, along with the RMSE and some            #\n#   predictions made using the training data (e.g. for use in a     #\n#   parity plot or calculation of other error metrics).             #\n#                                                                   #\n#   When the workflow is run in Predict mode, the network is        #\n#   loaded, predictions are made, they are un-transformed using     #\n#   the trained scaler from the training run, and they are          #\n#   written to a filed named \"predictions.csv\"                      #\n# ----------------------------------------------------------------- #\n\nimport sklearn.neural_network\nimport sklearn.metrics\nimport numpy as np\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Transform targets from shape (100,1) to shape (100,); required by sklearn's MLP Regressor\n        target = target.ravel()\n\n        # Initialize the NN model\n        model = sklearn.neural_network.MLPRegressor(hidden_layer_sizes=(100,),\n                                                    activation=\"relu\",\n                                                    solver=\"adam\",\n                                                    learning_rate=\"adaptive\",\n                                                    max_iter=500)\n\n        # Train the NN model and save\n        model.fit(descriptors, target)\n        context.save(model, \"sklearn_mlp\")\n\n        # Print RMSE to stdout and save\n        predictions = model.predict(descriptors)\n        context.save(predictions, \"predictions\")\n        target_scaler = context.load(\"target_scaler\")\n\n        mse = sklearn.metrics.mean_squared_error(y_true=target_scaler.inverse_transform(target),\n                                                 y_pred=target_scaler.inverse_transform(predictions))\n        rmse = np.sqrt(mse)\n        print(f\"RMSE = {rmse}\")\n        context.save(rmse, \"RMSE\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Restore model\n        model = context.load(\"sklearn_mlp\")\n\n        # Make some predictions and unscale\n        predictions = model.predict(descriptors)\n        target_scaler = context.load(\"target_scaler\")\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Save the predictions to file\n        np.savetxt(\"predictions.csv\", predictions, header=\"prediction\", comments=\"\")"
+              }
+            ],
+            "next": "5d4272ae94804490f01c8716"
+          },
+          {
+            "type": "execution",
+            "name": "Parity Plot",
+            "head": false,
+            "results": [
+              {
+                "name": "file_content",
+                "basename": "my_parity_plot.png",
+                "filetype": "image"
+              }
+            ],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "5d4272ae94804490f01c8716",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "SYX5BTYCRXEZgj3JZ",
+              "input": [
+                {
+                  "name": "post_processing_parity_plot_matplotlib.py",
+                  "templateId": "sYWChYJzRkFy2JDt3"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:post_processing_parity_plot_matplotlib",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.228Z",
+              "updatedAt": "2021-03-16T01:49:27.448Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "sYWChYJzRkFy2JDt3",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Parity plot generation unit                                     #\n#                                                                   #\n#   This unit generates a parity plot based on the known values     #\n#   in the training data, and the predicted values generated        #\n#   using the training data.                                        #\n#                                                                   #\n#   Because this metric compares predictions versus a ground truth, #\n#   it doesn't make sense to generate the plot when a predict       #\n#   workflow is being run (because in that case, we generally don't #\n#   know the ground truth for the values being predicted). Hence,   #\n#   this unit does nothing if the workflow is in \"predict\" mode.    #\n# ----------------------------------------------------------------- #\n\n\nimport matplotlib.pyplot as plt\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Load data\n        targets = context.load(\"target\")\n        predictions = context.load(\"predictions\")\n\n        # Un-transform the data\n        target_scaler = context.load(\"target_scaler\")\n        targets = target_scaler.inverse_transform(targets)\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Plot the data\n        plt.scatter(targets, predictions, c=\"black\", label=\"Results\")\n        plt.xlabel(\"Actual Value\")\n        plt.ylabel(\"Predicted Value\")\n\n        # Scale the plot\n        limits = (min(min(targets), min(predictions)),\n                  max(max(targets), max(predictions)))\n        plt.xlim = (limits[0], limits[1])\n        plt.ylim = (limits[0], limits[1])\n\n        # Draw a parity line, as a guide to the eye\n        plt.plot((limits[0], limits[1]), (limits[0], limits[1]), c=\"grey\", linestyle=\"dotted\", label=\"Parity\")\n        plt.legend()\n\n        # Save the figure\n        plt.savefig(\"my_parity_plot.png\", dpi=300)\n\n    # Predict\n    else:\n        # It might not make as much sense to draw a parity plot when predicting...\n        pass",
+                "name": "post_processing_parity_plot_matplotlib.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.196Z",
+                "updatedAt": "2021-03-16T01:49:22.742Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Parity plot generation unit                                     #\n#                                                                   #\n#   This unit generates a parity plot based on the known values     #\n#   in the training data, and the predicted values generated        #\n#   using the training data.                                        #\n#                                                                   #\n#   Because this metric compares predictions versus a ground truth, #\n#   it doesn't make sense to generate the plot when a predict       #\n#   workflow is being run (because in that case, we generally don't #\n#   know the ground truth for the values being predicted). Hence,   #\n#   this unit does nothing if the workflow is in \"predict\" mode.    #\n# ----------------------------------------------------------------- #\n\n\nimport matplotlib.pyplot as plt\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Load data\n        targets = context.load(\"target\")\n        predictions = context.load(\"predictions\")\n\n        # Un-transform the data\n        target_scaler = context.load(\"target_scaler\")\n        targets = target_scaler.inverse_transform(targets)\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Plot the data\n        plt.scatter(targets, predictions, c=\"black\", label=\"Results\")\n        plt.xlabel(\"Actual Value\")\n        plt.ylabel(\"Predicted Value\")\n\n        # Scale the plot\n        limits = (min(min(targets), min(predictions)),\n                  max(max(targets), max(predictions)))\n        plt.xlim = (limits[0], limits[1])\n        plt.ylim = (limits[0], limits[1])\n\n        # Draw a parity line, as a guide to the eye\n        plt.plot((limits[0], limits[1]), (limits[0], limits[1]), c=\"grey\", linestyle=\"dotted\", label=\"Parity\")\n        plt.legend()\n\n        # Save the figure\n        plt.savefig(\"my_parity_plot.png\", dpi=300)\n\n    # Predict\n    else:\n        # It might not make as much sense to draw a parity plot when predicting...\n        pass"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "units": [
+      {
+        "type": "subworkflow",
+        "_id": "0eb7a2669ab5d1bb9fd5ee9f",
+        "name": "Set Up the Job",
+        "status": "idle",
+        "statusTrack": [],
+        "flowchartId": "012e041a2c2277f280315fb8",
+        "results": [],
+        "monitors": [],
+        "preProcessors": [],
+        "postProcessors": [],
+        "head": true,
+        "next": "53c773cc2fe13c1f0128eb3a"
+      },
+      {
+        "type": "subworkflow",
+        "_id": "bcfb28f6aa93b6c71586b094",
+        "name": "Machine Learning",
+        "status": "idle",
+        "statusTrack": [],
+        "flowchartId": "53c773cc2fe13c1f0128eb3a",
+        "results": [],
+        "monitors": [],
+        "preProcessors": [],
+        "postProcessors": [],
+        "head": false
+      }
+    ],
+    "properties": [],
+    "workflows": [],
+    "schemaVersion": "0.2.0",
+    "tags": [],
+    "hash": "c0c97c1dffb00371a5aec012306d9b4b",
+    "owner": {
+      "_id": "5b143a4ecd313f405b314224",
+      "slug": "exabyte-io",
+      "cls": "Account"
+    },
+    "creator": {
+      "_id": "ZitdMgDFZJZgxotTm",
+      "slug": "jrd101",
+      "cls": "User"
+    },
+    "createdAt": "2021-03-16T02:09:46.210Z",
+    "updatedAt": "2021-03-16T02:09:47.093Z",
+    "exabyteId": "tpthENFEhHHoDKhzW",
+    "inSet": [
+      {
+        "_id": "5b143a7dacd8211c4898ab23",
+        "slug": "owner",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab24",
+        "slug": "admin",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab26",
+        "slug": "read",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab27",
+        "slug": "comment",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab28",
+        "slug": "execute",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab29",
+        "slug": "edit",
+        "cls": "Team"
+      },
+      {
+        "_id": "dkdwucJWDCNhLMR4Z",
+        "slug": "2020-qc",
+        "cls": "Team"
+      }
+    ],
+    "isDefault": false,
+    "history": [
+      {
+        "id": "EHr7mG8Mai6ERMrgC",
+        "revision": 0
+      },
+      {
+        "id": "qANkj73hPajGBajjs",
+        "revision": 1
+      },
+      {
+        "id": "rdcnvig3pf39sCYT5",
+        "revision": 2
+      },
+      {
+        "id": "gSKGD6rJdKK4o9SeT",
+        "revision": 3
+      },
+      {
+        "id": "tJ32q2tp9ek7KCt7c",
+        "revision": 4
+      },
+      {
+        "id": "tAogcquvPtevxgZRn",
+        "revision": 5
+      },
+      {
+        "id": "2QP2t8fqywF7eh7pk",
+        "revision": 6
+      },
+      {
+        "id": "S4rHadYQ5CJAMEqEu",
+        "revision": 7
+      }
+    ]
+  }
+```
 
-0. Selecting target properties for prediction
-1. Generating and gathering the training data set
-2. Cleaning the data to prepare it for training
-3. Transforming the data through scaling, etc.
-4. Selecting the best features to base the model upon
-5. Training the Machine Learning model
-
-## Making Predictions
-
-As below
-
-0. Train model as explained in the previous section
-1. Predicting new properties from the trained model
-
-## More
-
-The user is referred to the [tutorial section](../../tutorials/ml/overview.md) on machine learning for more detailed information on the above steps.
+```json tab="Predict"
+{
+    "_id": "e8YdaEw7wQNJFtPXn",
+    "name": "workflow:pyml_predict Mar 20, 2021, 02:57 AM",
+    "creator": {
+      "_id": "ZitdMgDFZJZgxotTm",
+      "slug": "jrd101",
+      "cls": "User"
+    },
+    "owner": {
+      "_id": "5b143a4ecd313f405b314224",
+      "slug": "exabyte-io",
+      "cls": "Account"
+    },
+    "schemaVersion": "0.2.0",
+    "units": [
+      {
+        "type": "subworkflow",
+        "_id": "0eb7a2669ab5d1bb9fd5ee9f",
+        "name": "Set Up the Job",
+        "status": "idle",
+        "statusTrack": [],
+        "flowchartId": "012e041a2c2277f280315fb8",
+        "results": [],
+        "monitors": [],
+        "preProcessors": [],
+        "postProcessors": [],
+        "head": true,
+        "next": "53c773cc2fe13c1f0128eb3a"
+      },
+      {
+        "type": "subworkflow",
+        "_id": "bcfb28f6aa93b6c71586b094",
+        "name": "Machine Learning",
+        "status": "idle",
+        "statusTrack": [],
+        "flowchartId": "53c773cc2fe13c1f0128eb3a",
+        "results": [],
+        "monitors": [],
+        "preProcessors": [],
+        "postProcessors": [],
+        "head": false
+      }
+    ],
+    "subworkflows": [
+      {
+        "_id": "0eb7a2669ab5d1bb9fd5ee9f",
+        "name": "Set Up the Job",
+        "application": {
+          "version": "3.8.6",
+          "isDefault": true,
+          "summary": "Python Script",
+          "name": "python",
+          "shortName": "py",
+          "build": "Default"
+        },
+        "properties": [],
+        "model": {
+          "type": "unknown",
+          "subtype": "unknown",
+          "method": {
+            "type": "unknown",
+            "subtype": "unknown",
+            "data": {}
+          }
+        },
+        "units": [
+          {
+            "name": "Set Workflow Mode",
+            "type": "assignment",
+            "operand": "IS_WORKFLOW_RUNNING_TO_PREDICT",
+            "value": "True",
+            "input": [],
+            "flowchartId": "head-set-predict-status",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": true,
+            "next": "head-branch-on-predict-status"
+          },
+          {
+            "name": "Train or Predict?",
+            "preProcessors": [],
+            "postProcessors": [],
+            "results": [],
+            "type": "condition",
+            "input": [
+              {
+                "scope": "global",
+                "name": "IS_WORKFLOW_RUNNING_TO_PREDICT"
+              }
+            ],
+            "then": "head-predict-branch-entry-point",
+            "else": "head-train-branch-entry-point",
+            "statement": "IS_WORKFLOW_RUNNING_TO_PREDICT",
+            "maxOccurrences": 100,
+            "flowchartId": "head-branch-on-predict-status",
+            "status": "idle",
+            "statusTrack": [],
+            "monitors": [],
+            "head": false,
+            "next": "head-train-branch-entry-point"
+          },
+          {
+            "name": "Declare Training Data",
+            "type": "assignment",
+            "operand": "TRAINING_DATA",
+            "value": "\"data_to_train_with.csv\"",
+            "input": [],
+            "flowchartId": "head-train-branch-entry-point",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "head-fetch-training-data"
+          },
+          {
+            "name": "Fetch Training Data",
+            "type": "io",
+            "subtype": "input",
+            "source": "object_storage",
+            "input": [
+              {
+                "basename": "{{TRAINING_DATA}}",
+                "objectData": {
+                  "CONTAINER": "",
+                  "NAME": "{{DROPBOX_PATH}}/{{TRAINING_DATA}}",
+                  "PROVIDER": "",
+                  "REGION": ""
+                }
+              }
+            ],
+            "flowchartId": "head-fetch-training-data",
+            "enableRender": true,
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "head-training-setup-done"
+          },
+          {
+            "name": "Training Setup Done",
+            "type": "assignment",
+            "operand": "IS_TRAINING_SETUP_DONE",
+            "value": "True",
+            "input": [],
+            "flowchartId": "head-training-setup-done",
+            "next": "end-of-ml-train-head",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false
+          },
+          {
+            "name": "Declare Predict Data",
+            "type": "assignment",
+            "operand": "PREDICT_DATA",
+            "value": "\"data_to_predict_with.csv\"",
+            "input": [],
+            "flowchartId": "head-predict-branch-entry-point",
+            "next": "head-fetch-predict-data",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false
+          },
+          {
+            "name": "Fetch Data to do prediction on",
+            "type": "io",
+            "subtype": "input",
+            "source": "object_storage",
+            "input": [
+              {
+                "basename": "{{PREDICT_DATA}}",
+                "objectData": {
+                  "CONTAINER": "",
+                  "NAME": "{{DROPBOX_PATH}}/{{PREDICT_DATA}}",
+                  "PROVIDER": "",
+                  "REGION": ""
+                }
+              }
+            ],
+            "flowchartId": "head-fetch-predict-data",
+            "enableRender": true,
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "head-fetch-trained-model"
+          },
+          {
+            "name": "Fetch Trained Model as file",
+            "type": "io",
+            "subtype": "input",
+            "source": "object_storage",
+            "input": [
+              {
+                "basename": "target.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/target.pkl"
+                }
+              },
+              {
+                "basename": "workflow_context_file_mapping",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/workflow_context_file_mapping"
+                }
+              },
+              {
+                "basename": "descriptors.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/descriptors.pkl"
+                }
+              },
+              {
+                "basename": "target_scaler.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/target_scaler.pkl"
+                }
+              },
+              {
+                "basename": "descriptor_scaler.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/descriptor_scaler.pkl"
+                }
+              },
+              {
+                "basename": "sklearn_mlp.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/sklearn_mlp.pkl"
+                }
+              },
+              {
+                "basename": "predictions.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/predictions.pkl"
+                }
+              },
+              {
+                "basename": "RMSE.pkl",
+                "pathname": ".job_context",
+                "overwrite": false,
+                "objectData": {
+                  "CONTAINER": "production-20160630-cluster-001",
+                  "PROVIDER": "aws",
+                  "REGION": "us-east-1",
+                  "NAME": "/cluster-001-share/groups/exabyte-io/exabyte-io-2021-ml-work/checking-ml-file-property-ec8ToqKwpWDGiyNCS/.job_context/RMSE.pkl"
+                }
+              }
+            ],
+            "flowchartId": "head-fetch-trained-model",
+            "enableRender": true,
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false,
+            "next": "end-of-ml-train-head"
+          },
+          {
+            "name": "End Setup",
+            "type": "assignment",
+            "operand": "IS_SETUP_COMPLETE",
+            "value": "True",
+            "input": [],
+            "flowchartId": "end-of-ml-train-head",
+            "status": "idle",
+            "statusTrack": [],
+            "results": [],
+            "monitors": [],
+            "preProcessors": [],
+            "postProcessors": [],
+            "head": false
+          }
+        ]
+      },
+      {
+        "_id": "bcfb28f6aa93b6c71586b094",
+        "name": "Machine Learning",
+        "application": {
+          "version": "3.8.6",
+          "isDefault": true,
+          "summary": "Python Script",
+          "name": "python",
+          "shortName": "py",
+          "build": "Default"
+        },
+        "properties": [
+          "workflow:pyml_predict",
+          "file_content"
+        ],
+        "model": {
+          "type": "unknown",
+          "subtype": "unknown",
+          "method": {
+            "type": "unknown",
+            "subtype": "unknown",
+            "data": {}
+          }
+        },
+        "units": [
+          {
+            "type": "execution",
+            "name": "Setup Variables and Packages",
+            "head": true,
+            "results": [],
+            "monitors": [],
+            "flowchartId": "dc64ac3855b9f5560f6887c4",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "ndvy6i6dMkhz7jGdK",
+              "input": [
+                {
+                  "name": "settings.py",
+                  "templateId": "JE86yM26DdBF93Fbp"
+                },
+                {
+                  "name": "requirements.txt",
+                  "templateId": "Jai63dPXZKf8emM5c"
+                }
+              ],
+              "name": "pyml:setup_variables_packages",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.235Z",
+              "updatedAt": "2021-03-16T01:49:27.457Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "JE86yM26DdBF93Fbp",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   General settings for PythonML jobs on the Exabyte.io Platform   #\n#                                                                   #\n#   This file generally shouldn't be modified directly by users.    #\n#   The \"datafile\" and \"is_workflow_running_to_predict\" variables   #\n#   are defined in the head subworkflow, and are templated into     #\n#   this file. This helps facilitate the workflow's behavior        #\n#   differing whether it is in a \"train\" or \"predict\" mode.         #\n#                                                                   #\n#   Also in this file is the \"Context\" object, which helps maintain #\n#   certain Python objects between workflow units, and between      #\n#   predict runs.                                                   #\n#                                                                   #\n#   Whenever a python object needs to be stored for subsequent runs #\n#   (such as in the case of a trained model), context.save() can be #\n#   called to save it. The object can then be loaded again by using #\n#   context.load().                                                 #\n# ----------------------------------------------------------------- #\n\n\nimport pickle, os\n\n# The variables \"is_workflow_running_to_predict\" and \"is_workflow_running_to_train\" are used to control whether\n# the workflow is in a \"training\" mode or a \"prediction\" mode. The \"IS_WORKFLOW_RUNNING_TO_PREDICT\" variable is set by\n# an assignment unit in the \"Set Up the Job\" subworkflow that executes at the start of the job. It is automatically\n# changed when the predict workflow is generated, so users should not need to modify this variable.\nis_workflow_running_to_predict = {% raw %}{{IS_WORKFLOW_RUNNING_TO_PREDICT}}{% endraw %}\nis_workflow_running_to_train = not is_workflow_running_to_predict\n\n# Set the datafile variable. The \"datafile\" is the data that will be read in, and will be used by subsequent\n# workflow units for either training or prediction, depending on the workflow mode.\nif is_workflow_running_to_predict:\n    datafile = \"{% raw %}{{PREDICT_DATA}}{% endraw %}\"\nelse:\n    datafile = \"{% raw %}{{TRAINING_DATA}}{% endraw %}\"\n\n# Target_column_name is used during training to identify the variable the model is traing to predict.\n# For example, consider a CSV containing three columns, \"Y\", \"X1\", and \"X2\". If the goal is to train a model\n# that will predict the value of \"Y,\" then target_column_name would be set to \"Y\"\ntarget_column_name = \"target\"\n\n# The \"Context\" class allows for data to be saved and loaded between units, and between train and predict runs.\n# Variables which have been saved using the \"Save\" method are written to disk, and the predict workflow is automatically\n# configured to obtain these files when it starts.\n#\n# IMPORTANT NOTE: Do *not* adjust the value of \"context_dir_pathname\" in the Context object. If the value is changed, then\n# files will not be correctly copied into the generated predict workflow. This will cause the predict workflow to be\n# generated in a broken state, and it will not be able to make any predictions.\nclass Context(object):\n    \"\"\"\n    Saves and loads objects from the disk, useful for preserving data between workflow units\n\n    Attributes:\n        context_paths (dict): Dictionary of the format {variable_name: path}, that governs where\n                              pickle saves files.\n\n    Methods:\n        save: Used to save objects to the context directory\n        load: Used to load objects from the context directory\n    \"\"\"\n\n    def __init__(self, context_file_basename=\"workflow_context_file_mapping\"):\n        \"\"\"\n        Constructor for Context objects\n\n        Args:\n            context_file_basename (str): Name of the file to store context paths in\n        \"\"\"\n\n        # Warning: DO NOT modify the context_dir_pathname variable below\n        # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n        context_dir_pathname = \"{% raw %}{{ CONTEXT_DIR_RELATIVE_PATH }}{% endraw %}\"\n        # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self._context_dir_pathname = context_dir_pathname\n        self._context_file = os.path.join(context_dir_pathname, context_file_basename)\n\n        # Make context dir if it does not exist\n        if not os.path.exists(context_dir_pathname):\n            os.makedirs(context_dir_pathname)\n\n        # Read in the context sources dictionary, if it exists\n        if os.path.exists(self._context_file):\n            with open(self._context_file, \"rb\") as file_handle:\n                self.context_paths: dict = pickle.load(file_handle)\n        else:\n            # Items is a dictionary of {varname: path}\n            self.context_paths = {}\n\n    def __enter__(self):\n        return self\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        self._update_context()\n\n    def _update_context(self):\n        with open(self._context_file, \"wb\") as file_handle:\n            pickle.dump(self.context_paths, file_handle)\n\n    def load(self, name: str):\n        \"\"\"\n        Returns a contextd object\n\n        Args:\n            name (str): The name in self.context_paths of the object\n        \"\"\"\n        path = self.context_paths[name]\n        with open(path, \"rb\") as file_handle:\n            obj = pickle.load(file_handle)\n        return obj\n\n    def save(self, obj: object, name: str):\n        \"\"\"\n        Saves an object to disk using pickle\n\n        Args:\n            name (str): Friendly name for the object, used for lookup in load() method\n            obj (object): Object to store on disk\n        \"\"\"\n        path = os.path.join(self._context_dir_pathname, f\"{name}.pkl\")\n        self.context_paths[name] = path\n        with open(path, \"wb\") as file_handle:\n            pickle.dump(obj, file_handle)\n        self._update_context()\n\n# Generate a context object, so that the \"with settings.context\" can be used by other units in this workflow.\ncontext = Context()",
+                "name": "settings.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.191Z",
+                "updatedAt": "2021-03-16T01:49:22.737Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   General settings for PythonML jobs on the Exabyte.io Platform   #\n#                                                                   #\n#   This file generally shouldn't be modified directly by users.    #\n#   The \"datafile\" and \"is_workflow_running_to_predict\" variables   #\n#   are defined in the head subworkflow, and are templated into     #\n#   this file. This helps facilitate the workflow's behavior        #\n#   differing whether it is in a \"train\" or \"predict\" mode.         #\n#                                                                   #\n#   Also in this file is the \"Context\" object, which helps maintain #\n#   certain Python objects between workflow units, and between      #\n#   predict runs.                                                   #\n#                                                                   #\n#   Whenever a python object needs to be stored for subsequent runs #\n#   (such as in the case of a trained model), context.save() can be #\n#   called to save it. The object can then be loaded again by using #\n#   context.load().                                                 #\n# ----------------------------------------------------------------- #\n\n\nimport pickle, os\n\n# The variables \"is_workflow_running_to_predict\" and \"is_workflow_running_to_train\" are used to control whether\n# the workflow is in a \"training\" mode or a \"prediction\" mode. The \"IS_WORKFLOW_RUNNING_TO_PREDICT\" variable is set by\n# an assignment unit in the \"Set Up the Job\" subworkflow that executes at the start of the job. It is automatically\n# changed when the predict workflow is generated, so users should not need to modify this variable.\nis_workflow_running_to_predict = {{IS_WORKFLOW_RUNNING_TO_PREDICT}}\nis_workflow_running_to_train = not is_workflow_running_to_predict\n\n# Set the datafile variable. The \"datafile\" is the data that will be read in, and will be used by subsequent\n# workflow units for either training or prediction, depending on the workflow mode.\nif is_workflow_running_to_predict:\n    datafile = \"{{PREDICT_DATA}}\"\nelse:\n    datafile = \"{{TRAINING_DATA}}\"\n\n# Target_column_name is used during training to identify the variable the model is traing to predict.\n# For example, consider a CSV containing three columns, \"Y\", \"X1\", and \"X2\". If the goal is to train a model\n# that will predict the value of \"Y,\" then target_column_name would be set to \"Y\"\ntarget_column_name = \"target\"\n\n# The \"Context\" class allows for data to be saved and loaded between units, and between train and predict runs.\n# Variables which have been saved using the \"Save\" method are written to disk, and the predict workflow is automatically\n# configured to obtain these files when it starts.\n#\n# IMPORTANT NOTE: Do *not* adjust the value of \"context_dir_pathname\" in the Context object. If the value is changed, then\n# files will not be correctly copied into the generated predict workflow. This will cause the predict workflow to be\n# generated in a broken state, and it will not be able to make any predictions.\nclass Context(object):\n    \"\"\"\n    Saves and loads objects from the disk, useful for preserving data between workflow units\n\n    Attributes:\n        context_paths (dict): Dictionary of the format {variable_name: path}, that governs where\n                              pickle saves files.\n\n    Methods:\n        save: Used to save objects to the context directory\n        load: Used to load objects from the context directory\n    \"\"\"\n\n    def __init__(self, context_file_basename=\"workflow_context_file_mapping\"):\n        \"\"\"\n        Constructor for Context objects\n\n        Args:\n            context_file_basename (str): Name of the file to store context paths in\n        \"\"\"\n\n        # Warning: DO NOT modify the context_dir_pathname variable below\n        # vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv\n        context_dir_pathname = \"{{ CONTEXT_DIR_RELATIVE_PATH }}\"\n        # ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n        self._context_dir_pathname = context_dir_pathname\n        self._context_file = os.path.join(context_dir_pathname, context_file_basename)\n\n        # Make context dir if it does not exist\n        if not os.path.exists(context_dir_pathname):\n            os.makedirs(context_dir_pathname)\n\n        # Read in the context sources dictionary, if it exists\n        if os.path.exists(self._context_file):\n            with open(self._context_file, \"rb\") as file_handle:\n                self.context_paths: dict = pickle.load(file_handle)\n        else:\n            # Items is a dictionary of {varname: path}\n            self.context_paths = {}\n\n    def __enter__(self):\n        return self\n\n    def __exit__(self, exc_type, exc_value, traceback):\n        self._update_context()\n\n    def _update_context(self):\n        with open(self._context_file, \"wb\") as file_handle:\n            pickle.dump(self.context_paths, file_handle)\n\n    def load(self, name: str):\n        \"\"\"\n        Returns a contextd object\n\n        Args:\n            name (str): The name in self.context_paths of the object\n        \"\"\"\n        path = self.context_paths[name]\n        with open(path, \"rb\") as file_handle:\n            obj = pickle.load(file_handle)\n        return obj\n\n    def save(self, obj: object, name: str):\n        \"\"\"\n        Saves an object to disk using pickle\n\n        Args:\n            name (str): Friendly name for the object, used for lookup in load() method\n            obj (object): Object to store on disk\n        \"\"\"\n        path = os.path.join(self._context_dir_pathname, f\"{name}.pkl\")\n        self.context_paths[name] = path\n        with open(path, \"wb\") as file_handle:\n            pickle.dump(obj, file_handle)\n        self._update_context()\n\n# Generate a context object, so that the \"with settings.context\" can be used by other units in this workflow.\ncontext = Context()"
+              },
+              {
+                "_id": "Jai63dPXZKf8emM5c",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#  PythonML Package Requirements for use on the Exabyte.io Platform #\n#                                                                   #\n#  Will be used as follows:                                         #\n#                                                                   #\n#    1. A runtime directory for this calculation is created         #\n#    2. This list is used to populate a Python virtual environment  #\n#    3. The virtual environment is activated                        #\n#    4. The Python process running the script included within this  #\n#       job is started                                              #\n#                                                                   #\n#  For more information visit:                                      #\n#   - https://pip.pypa.io/en/stable/reference/pip_install           #\n#   - https://virtualenv.pypa.io/en/stable/                         #\n#                                                                   #\n#  The package set below is a stable working set of pymatgen and    # \n#  all of its dependencies.  Please adjust the list to include      #\n#  your preferred packages.                                         #\n#                                                                   # \n# ----------------------------------------------------------------- #\n\n# Python 2 packages\nbackports.functools-lru-cache==1.6.1;python_version<\"3\"\ncertifi==2020.12.5;python_version<\"3\"\nchardet==4.0.0;python_version<\"3\"\ncycler==0.10.0;python_version<\"3\"\ndecorator==4.4.2;python_version<\"3\"\nenum34==1.1.10;python_version<\"3\"\nidna==2.10;python_version<\"3\"\nkiwisolver==1.1.0;python_version<\"3\"\nmatplotlib==2.2.5;python_version<\"3\"\nmonty==2.0.7;python_version<\"3\"\nmpmath==1.2.1;python_version<\"3\"\nnetworkx==2.2;python_version<\"3\"\nnumpy==1.16.6;python_version<\"3\"\npalettable==3.3.0;python_version<\"3\"\npandas==0.24.2;python_version<\"3\"\nPyDispatcher==2.0.5;python_version<\"3\"\npymatgen==2018.12.12;python_version<\"3\"\npyparsing==2.4.7;python_version<\"3\"\npython-dateutil==2.8.1;python_version<\"3\"\npytz==2021.1;python_version<\"3\"\nrequests==2.25.1;python_version<\"3\"\nruamel.ordereddict==0.4.15;python_version<\"3\"\nruamel.yaml==0.16.12;python_version<\"3\"\nruamel.yaml.clib==0.2.2;python_version<\"3\"\nscipy==1.2.3;python_version<\"3\"\nscikit-learn==0.20.4;python_version<\"3\"\nsix==1.15.0;python_version<\"3\"\nspglib==1.16.1;python_version<\"3\"\nsubprocess32==3.5.4;python_version<\"3\"\nsympy==1.5.1;python_version<\"3\"\ntabulate==0.8.7;python_version<\"3\"\nurllib3==1.26.3;python_version<\"3\"\n\n# Python 3 packages\ncertifi==2020.12.5;python_version>=\"3\"\nchardet==4.0.0;python_version>=\"3\"\ncycler==0.10.0;python_version>=\"3\"\ndecorator==4.4.2;python_version>=\"3\"\nfuture==0.18.2;python_version>=\"3\"\nidna==2.10;python_version>=\"3\"\nkiwisolver==1.3.1;python_version>=\"3\"\nmatplotlib==3.3.4;python_version>=\"3\"\nmonty==4.0.2;python_version>=\"3\"\nmpmath==1.2.1;python_version>=\"3\"\nnetworkx==2.5;python_version>=\"3\"\nnumpy==1.19.5;python_version>=\"3\"\npalettable==3.3.0;python_version>=\"3\"\npandas==1.1.5;python_version>=\"3\"\nPillow==8.1.0;python_version>=\"3\"\nplotly==4.14.3;python_version>=\"3\"\npymatgen==2021.2.8.1;python_version>=\"3\"\npyparsing==2.4.7;python_version>=\"3\"\npython-dateutil==2.8.1;python_version>=\"3\"\npytz==2021.1;python_version>=\"3\"\nrequests==2.25.1;python_version>=\"3\"\nretrying==1.3.3;python_version>=\"3\"\nruamel.yaml==0.16.12;python_version>=\"3\"\nruamel.yaml.clib==0.2.2;python_version>=\"3\"\nscikit-learn==0.24.1;python_version>=\"3\"\nscipy==1.5.4;python_version>=\"3\"\nsix==1.15.0;python_version>=\"3\"\nspglib==1.16.1;python_version>=\"3\"\nsympy==1.7.1;python_version>=\"3\"\ntabulate==0.8.7;python_version>=\"3\"\nuncertainties==3.1.5;python_version>=\"3\"\nurllib3==1.26.3;python_version>=\"3\"",
+                "name": "requirements.txt",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.199Z",
+                "updatedAt": "2021-03-16T01:49:22.748Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#  PythonML Package Requirements for use on the Exabyte.io Platform #\n#                                                                   #\n#  Will be used as follows:                                         #\n#                                                                   #\n#    1. A runtime directory for this calculation is created         #\n#    2. This list is used to populate a Python virtual environment  #\n#    3. The virtual environment is activated                        #\n#    4. The Python process running the script included within this  #\n#       job is started                                              #\n#                                                                   #\n#  For more information visit:                                      #\n#   - https://pip.pypa.io/en/stable/reference/pip_install           #\n#   - https://virtualenv.pypa.io/en/stable/                         #\n#                                                                   #\n#  The package set below is a stable working set of pymatgen and    # \n#  all of its dependencies.  Please adjust the list to include      #\n#  your preferred packages.                                         #\n#                                                                   # \n# ----------------------------------------------------------------- #\n\n# Python 2 packages\nbackports.functools-lru-cache==1.6.1;python_version<\"3\"\ncertifi==2020.12.5;python_version<\"3\"\nchardet==4.0.0;python_version<\"3\"\ncycler==0.10.0;python_version<\"3\"\ndecorator==4.4.2;python_version<\"3\"\nenum34==1.1.10;python_version<\"3\"\nidna==2.10;python_version<\"3\"\nkiwisolver==1.1.0;python_version<\"3\"\nmatplotlib==2.2.5;python_version<\"3\"\nmonty==2.0.7;python_version<\"3\"\nmpmath==1.2.1;python_version<\"3\"\nnetworkx==2.2;python_version<\"3\"\nnumpy==1.16.6;python_version<\"3\"\npalettable==3.3.0;python_version<\"3\"\npandas==0.24.2;python_version<\"3\"\nPyDispatcher==2.0.5;python_version<\"3\"\npymatgen==2018.12.12;python_version<\"3\"\npyparsing==2.4.7;python_version<\"3\"\npython-dateutil==2.8.1;python_version<\"3\"\npytz==2021.1;python_version<\"3\"\nrequests==2.25.1;python_version<\"3\"\nruamel.ordereddict==0.4.15;python_version<\"3\"\nruamel.yaml==0.16.12;python_version<\"3\"\nruamel.yaml.clib==0.2.2;python_version<\"3\"\nscipy==1.2.3;python_version<\"3\"\nscikit-learn==0.20.4;python_version<\"3\"\nsix==1.15.0;python_version<\"3\"\nspglib==1.16.1;python_version<\"3\"\nsubprocess32==3.5.4;python_version<\"3\"\nsympy==1.5.1;python_version<\"3\"\ntabulate==0.8.7;python_version<\"3\"\nurllib3==1.26.3;python_version<\"3\"\n\n# Python 3 packages\ncertifi==2020.12.5;python_version>=\"3\"\nchardet==4.0.0;python_version>=\"3\"\ncycler==0.10.0;python_version>=\"3\"\ndecorator==4.4.2;python_version>=\"3\"\nfuture==0.18.2;python_version>=\"3\"\nidna==2.10;python_version>=\"3\"\nkiwisolver==1.3.1;python_version>=\"3\"\nmatplotlib==3.3.4;python_version>=\"3\"\nmonty==4.0.2;python_version>=\"3\"\nmpmath==1.2.1;python_version>=\"3\"\nnetworkx==2.5;python_version>=\"3\"\nnumpy==1.19.5;python_version>=\"3\"\npalettable==3.3.0;python_version>=\"3\"\npandas==1.1.5;python_version>=\"3\"\nPillow==8.1.0;python_version>=\"3\"\nplotly==4.14.3;python_version>=\"3\"\npymatgen==2021.2.8.1;python_version>=\"3\"\npyparsing==2.4.7;python_version>=\"3\"\npython-dateutil==2.8.1;python_version>=\"3\"\npytz==2021.1;python_version>=\"3\"\nrequests==2.25.1;python_version>=\"3\"\nretrying==1.3.3;python_version>=\"3\"\nruamel.yaml==0.16.12;python_version>=\"3\"\nruamel.yaml.clib==0.2.2;python_version>=\"3\"\nscikit-learn==0.24.1;python_version>=\"3\"\nscipy==1.5.4;python_version>=\"3\"\nsix==1.15.0;python_version>=\"3\"\nspglib==1.16.1;python_version>=\"3\"\nsympy==1.7.1;python_version>=\"3\"\ntabulate==0.8.7;python_version>=\"3\"\nuncertainties==3.1.5;python_version>=\"3\"\nurllib3==1.26.3;python_version>=\"3\""
+              }
+            ],
+            "next": "a7c12384f1dc327b949b2a6a",
+            "context": {}
+          },
+          {
+            "type": "execution",
+            "name": "Data Input",
+            "head": false,
+            "results": [],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "a7c12384f1dc327b949b2a6a",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "5T3zBLP4EKBBiWfWz",
+              "input": [
+                {
+                  "name": "data_input_read_csv_pandas.py",
+                  "templateId": "6KpdnF2B24opfdawQ"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:data_input:read_csv:pandas",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.207Z",
+              "updatedAt": "2021-03-16T01:49:27.428Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "6KpdnF2B24opfdawQ",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow Unit to read in data for the ML workflow.              #\n#                                                                   #\n#   Also showcased here is the concept of branching based on        #\n#   whether the workflow is in \"train\" or \"predict\" mode.           #\n#                                                                   #\n#   If the workflow is in \"training\" mode, it will read in the data #\n#   before converting it to a Numpy array and save it for use       #\n#   later. During training, we already have values for the output,  #\n#   and this gets saved to \"target.\"                                #\n#                                                                   #\n#   Finally, whether the workflow is in training or predict mode,   #\n#   it will always read in a set of descriptors from a datafile     #\n#   defined in settings.py                                          #\n# ----------------------------------------------------------------- #\n\n\nimport pandas\n\nimport settings\n\nwith settings.context as context:\n    data = pandas.read_csv(settings.datafile)\n\n    if settings.is_workflow_running_to_train:\n        # If we're training, we have an extra targets column to extract\n        target = data.pop(settings.target_column_name).to_numpy()\n        target = target.reshape(-1, 1)  # Reshape array to be used by sklearn\n        context.save(target, \"target\")\n\n    # Save descriptors\n    descriptors = data.to_numpy()\n    context.save(descriptors, \"descriptors\")",
+                "name": "data_input_read_csv_pandas.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.175Z",
+                "updatedAt": "2021-03-16T01:49:22.722Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow Unit to read in data for the ML workflow.              #\n#                                                                   #\n#   Also showcased here is the concept of branching based on        #\n#   whether the workflow is in \"train\" or \"predict\" mode.           #\n#                                                                   #\n#   If the workflow is in \"training\" mode, it will read in the data #\n#   before converting it to a Numpy array and save it for use       #\n#   later. During training, we already have values for the output,  #\n#   and this gets saved to \"target.\"                                #\n#                                                                   #\n#   Finally, whether the workflow is in training or predict mode,   #\n#   it will always read in a set of descriptors from a datafile     #\n#   defined in settings.py                                          #\n# ----------------------------------------------------------------- #\n\n\nimport pandas\n\nimport settings\n\nwith settings.context as context:\n    data = pandas.read_csv(settings.datafile)\n\n    if settings.is_workflow_running_to_train:\n        # If we're training, we have an extra targets column to extract\n        target = data.pop(settings.target_column_name).to_numpy()\n        target = target.reshape(-1, 1)  # Reshape array to be used by sklearn\n        context.save(target, \"target\")\n\n    # Save descriptors\n    descriptors = data.to_numpy()\n    context.save(descriptors, \"descriptors\")"
+              }
+            ],
+            "next": "a83999d7e269b292a87807da",
+            "context": {}
+          },
+          {
+            "type": "execution",
+            "name": "Data Standardize",
+            "head": false,
+            "results": [],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "a83999d7e269b292a87807da",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "qrpkkDzLhMb5mJjky",
+              "input": [
+                {
+                  "name": "pre_processing_standardization_sklearn.py",
+                  "templateId": "RxqZKgLwdLT346PQi"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:pre_processing:standardization:sklearn",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.218Z",
+              "updatedAt": "2021-03-16T01:49:27.442Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "RxqZKgLwdLT346PQi",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Sklearn Standard Scaler workflow unit                           #\n#                                                                   #\n#   This workflow unit scales the data such that it a mean of 0 and #\n#   a variance of 1. It then saves the data for use further down    #\n#   the road in the workflow, for use in un-transforming the data.  #\n#                                                                   #\n#   It is important that new predictions are made by scaling the    #\n#   new inputs using the mean and variance of the original training #\n#   set. As a result, the scaler gets saved in the Training phase.  #\n#                                                                   #\n#   During a predict workflow, the scaler is loaded, and the        #\n#   new examples are scaled using the stored scaler.                #\n# ----------------------------------------------------------------- #\n\n\nimport sklearn.preprocessing\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Initialize the scalers\n        target_scaler = sklearn.preprocessing.StandardScaler()\n        descriptor_scaler = sklearn.preprocessing.StandardScaler()\n\n        # Scale the data\n        target_scaler.fit_transform(target)\n        descriptor_scaler.fit_transform(descriptors)\n\n        # Save the target and predict scaler (for future predictions)\n        context.save(target_scaler, \"target_scaler\")\n        context.save(descriptor_scaler, \"descriptor_scaler\")\n\n        # Store the data\n        context.save(target, \"target\")\n        context.save(descriptors, \"descriptors\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Get the scaler\n        descriptor_scaler = context.load(\"descriptor_scaler\")\n\n        # Scale the data\n        descriptors = descriptor_scaler.transform(descriptors)\n\n        # Store the data\n        context.save(descriptors, \"descriptors\")",
+                "name": "pre_processing_standardization_sklearn.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.183Z",
+                "updatedAt": "2021-03-16T01:49:22.727Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Sklearn Standard Scaler workflow unit                           #\n#                                                                   #\n#   This workflow unit scales the data such that it a mean of 0 and #\n#   a variance of 1. It then saves the data for use further down    #\n#   the road in the workflow, for use in un-transforming the data.  #\n#                                                                   #\n#   It is important that new predictions are made by scaling the    #\n#   new inputs using the mean and variance of the original training #\n#   set. As a result, the scaler gets saved in the Training phase.  #\n#                                                                   #\n#   During a predict workflow, the scaler is loaded, and the        #\n#   new examples are scaled using the stored scaler.                #\n# ----------------------------------------------------------------- #\n\n\nimport sklearn.preprocessing\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Initialize the scalers\n        target_scaler = sklearn.preprocessing.StandardScaler()\n        descriptor_scaler = sklearn.preprocessing.StandardScaler()\n\n        # Scale the data\n        target_scaler.fit_transform(target)\n        descriptor_scaler.fit_transform(descriptors)\n\n        # Save the target and predict scaler (for future predictions)\n        context.save(target_scaler, \"target_scaler\")\n        context.save(descriptor_scaler, \"descriptor_scaler\")\n\n        # Store the data\n        context.save(target, \"target\")\n        context.save(descriptors, \"descriptors\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Get the scaler\n        descriptor_scaler = context.load(\"descriptor_scaler\")\n\n        # Scale the data\n        descriptors = descriptor_scaler.transform(descriptors)\n\n        # Store the data\n        context.save(descriptors, \"descriptors\")"
+              }
+            ],
+            "next": "1f9cdacd7705559b9d4362e5",
+            "context": {}
+          },
+          {
+            "type": "execution",
+            "name": "Model Train and Predict",
+            "head": false,
+            "results": [],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "1f9cdacd7705559b9d4362e5",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "dH97s6vZveHgEzDoA",
+              "input": [
+                {
+                  "name": "model_multilayer_perceptron_sklearn.py",
+                  "templateId": "QZvcdwvHfr9LpBEgh"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:model:multilayer_perceptron:sklearn",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.213Z",
+              "updatedAt": "2021-03-16T01:49:27.435Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "QZvcdwvHfr9LpBEgh",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow unit to train a simple feedforward neural network      #\n#   model on a regression problem using Scikit-Learn.               #\n#                                                                   #\n#   In this template, we use the default values for                 #\n#   hidden_layer_sizes, activation, solver, and learning rate.      #\n#                                                                   #\n#   When then workflow is in Training mode, the network is trained  #\n#   and the model is saved, along with the RMSE and some            #\n#   predictions made using the training data (e.g. for use in a     #\n#   parity plot or calculation of other error metrics).             #\n#                                                                   #\n#   When the workflow is run in Predict mode, the network is        #\n#   loaded, predictions are made, they are un-transformed using     #\n#   the trained scaler from the training run, and they are          #\n#   written to a filed named \"predictions.csv\"                      #\n# ----------------------------------------------------------------- #\n\nimport sklearn.neural_network\nimport sklearn.metrics\nimport numpy as np\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Transform targets from shape (100,1) to shape (100,); required by sklearn's MLP Regressor\n        target = target.ravel()\n\n        # Initialize the NN model\n        model = sklearn.neural_network.MLPRegressor(hidden_layer_sizes=(100,),\n                                                    activation=\"relu\",\n                                                    solver=\"adam\",\n                                                    learning_rate=\"adaptive\",\n                                                    max_iter=500)\n\n        # Train the NN model and save\n        model.fit(descriptors, target)\n        context.save(model, \"sklearn_mlp\")\n\n        # Print RMSE to stdout and save\n        predictions = model.predict(descriptors)\n        context.save(predictions, \"predictions\")\n        target_scaler = context.load(\"target_scaler\")\n\n        mse = sklearn.metrics.mean_squared_error(y_true=target_scaler.inverse_transform(target),\n                                                 y_pred=target_scaler.inverse_transform(predictions))\n        rmse = np.sqrt(mse)\n        print(f\"RMSE = {rmse}\")\n        context.save(rmse, \"RMSE\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Restore model\n        model = context.load(\"sklearn_mlp\")\n\n        # Make some predictions and unscale\n        predictions = model.predict(descriptors)\n        target_scaler = context.load(\"target_scaler\")\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Save the predictions to file\n        np.savetxt(\"predictions.csv\", predictions, header=\"prediction\", comments=\"\")",
+                "name": "model_multilayer_perceptron_sklearn.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.187Z",
+                "updatedAt": "2021-03-16T01:49:22.732Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Workflow unit to train a simple feedforward neural network      #\n#   model on a regression problem using Scikit-Learn.               #\n#                                                                   #\n#   In this template, we use the default values for                 #\n#   hidden_layer_sizes, activation, solver, and learning rate.      #\n#                                                                   #\n#   When then workflow is in Training mode, the network is trained  #\n#   and the model is saved, along with the RMSE and some            #\n#   predictions made using the training data (e.g. for use in a     #\n#   parity plot or calculation of other error metrics).             #\n#                                                                   #\n#   When the workflow is run in Predict mode, the network is        #\n#   loaded, predictions are made, they are un-transformed using     #\n#   the trained scaler from the training run, and they are          #\n#   written to a filed named \"predictions.csv\"                      #\n# ----------------------------------------------------------------- #\n\nimport sklearn.neural_network\nimport sklearn.metrics\nimport numpy as np\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n        target = context.load(\"target\")\n\n        # Transform targets from shape (100,1) to shape (100,); required by sklearn's MLP Regressor\n        target = target.ravel()\n\n        # Initialize the NN model\n        model = sklearn.neural_network.MLPRegressor(hidden_layer_sizes=(100,),\n                                                    activation=\"relu\",\n                                                    solver=\"adam\",\n                                                    learning_rate=\"adaptive\",\n                                                    max_iter=500)\n\n        # Train the NN model and save\n        model.fit(descriptors, target)\n        context.save(model, \"sklearn_mlp\")\n\n        # Print RMSE to stdout and save\n        predictions = model.predict(descriptors)\n        context.save(predictions, \"predictions\")\n        target_scaler = context.load(\"target_scaler\")\n\n        mse = sklearn.metrics.mean_squared_error(y_true=target_scaler.inverse_transform(target),\n                                                 y_pred=target_scaler.inverse_transform(predictions))\n        rmse = np.sqrt(mse)\n        print(f\"RMSE = {rmse}\")\n        context.save(rmse, \"RMSE\")\n\n    # Predict\n    else:\n        # Restore data\n        descriptors = context.load(\"descriptors\")\n\n        # Restore model\n        model = context.load(\"sklearn_mlp\")\n\n        # Make some predictions and unscale\n        predictions = model.predict(descriptors)\n        target_scaler = context.load(\"target_scaler\")\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Save the predictions to file\n        np.savetxt(\"predictions.csv\", predictions, header=\"prediction\", comments=\"\")"
+              }
+            ],
+            "next": "5d4272ae94804490f01c8716",
+            "context": {}
+          },
+          {
+            "type": "execution",
+            "name": "Parity Plot",
+            "head": false,
+            "results": [
+              {
+                "name": "file_content",
+                "basename": "my_parity_plot.png",
+                "filetype": "image"
+              }
+            ],
+            "monitors": [
+              {
+                "name": "standard_output"
+              }
+            ],
+            "flowchartId": "5d4272ae94804490f01c8716",
+            "preProcessors": [],
+            "postProcessors": [],
+            "application": {
+              "version": "3.8.6",
+              "isDefault": true,
+              "summary": "Python Script",
+              "name": "python",
+              "shortName": "py",
+              "build": "Default"
+            },
+            "executable": {
+              "_id": "ZE3qY72NfH3yDLMHz",
+              "results": [],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "python",
+              "applicationId": [
+                "Da3mbT8s5FvP5WrKH",
+                "P7SGLSPvLBrMRxpGz",
+                "j5SWDLkoXSgqjqz6i",
+                "tEJT75kjFWoMj8yyg",
+                "bXqhSQSrgr9xFsBRv",
+                "P95F2xiPa6vha8rqF"
+              ],
+              "createdAt": "2018-03-14T19:02:27.028Z",
+              "updatedAt": "2021-03-16T01:49:27.400Z",
+              "schemaVersion": "0.2.0",
+              "isDefault": false,
+              "tags": [],
+              "inSet": []
+            },
+            "flavor": {
+              "_id": "SYX5BTYCRXEZgj3JZ",
+              "input": [
+                {
+                  "name": "post_processing_parity_plot_matplotlib.py",
+                  "templateId": "sYWChYJzRkFy2JDt3"
+                }
+              ],
+              "monitors": [
+                "standard_output"
+              ],
+              "name": "pyml:post_processing_parity_plot_matplotlib",
+              "isDefault": false,
+              "schemaVersion": "0.2.0",
+              "inSet": [],
+              "tags": [],
+              "executableId": "ZE3qY72NfH3yDLMHz",
+              "createdAt": "2021-03-16T00:31:40.228Z",
+              "updatedAt": "2021-03-16T01:49:27.448Z"
+            },
+            "status": "idle",
+            "statusTrack": [],
+            "input": [
+              {
+                "_id": "sYWChYJzRkFy2JDt3",
+                "content": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Parity plot generation unit                                     #\n#                                                                   #\n#   This unit generates a parity plot based on the known values     #\n#   in the training data, and the predicted values generated        #\n#   using the training data.                                        #\n#                                                                   #\n#   Because this metric compares predictions versus a ground truth, #\n#   it doesn't make sense to generate the plot when a predict       #\n#   workflow is being run (because in that case, we generally don't #\n#   know the ground truth for the values being predicted). Hence,   #\n#   this unit does nothing if the workflow is in \"predict\" mode.    #\n# ----------------------------------------------------------------- #\n\n\nimport matplotlib.pyplot as plt\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Load data\n        targets = context.load(\"target\")\n        predictions = context.load(\"predictions\")\n\n        # Un-transform the data\n        target_scaler = context.load(\"target_scaler\")\n        targets = target_scaler.inverse_transform(targets)\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Plot the data\n        plt.scatter(targets, predictions, c=\"black\", label=\"Results\")\n        plt.xlabel(\"Actual Value\")\n        plt.ylabel(\"Predicted Value\")\n\n        # Scale the plot\n        limits = (min(min(targets), min(predictions)),\n                  max(max(targets), max(predictions)))\n        plt.xlim = (limits[0], limits[1])\n        plt.ylim = (limits[0], limits[1])\n\n        # Draw a parity line, as a guide to the eye\n        plt.plot((limits[0], limits[1]), (limits[0], limits[1]), c=\"grey\", linestyle=\"dotted\", label=\"Parity\")\n        plt.legend()\n\n        # Save the figure\n        plt.savefig(\"my_parity_plot.png\", dpi=300)\n\n    # Predict\n    else:\n        # It might not make as much sense to draw a parity plot when predicting...\n        pass",
+                "name": "post_processing_parity_plot_matplotlib.py",
+                "contextProviders": [],
+                "applicationName": "python",
+                "executableName": "python",
+                "isDefault": false,
+                "schemaVersion": "0.2.0",
+                "inSet": [],
+                "tags": [],
+                "createdAt": "2021-03-16T00:31:36.196Z",
+                "updatedAt": "2021-03-16T01:49:22.742Z",
+                "rendered": "# ----------------------------------------------------------------- #\n#                                                                   #\n#   Parity plot generation unit                                     #\n#                                                                   #\n#   This unit generates a parity plot based on the known values     #\n#   in the training data, and the predicted values generated        #\n#   using the training data.                                        #\n#                                                                   #\n#   Because this metric compares predictions versus a ground truth, #\n#   it doesn't make sense to generate the plot when a predict       #\n#   workflow is being run (because in that case, we generally don't #\n#   know the ground truth for the values being predicted). Hence,   #\n#   this unit does nothing if the workflow is in \"predict\" mode.    #\n# ----------------------------------------------------------------- #\n\n\nimport matplotlib.pyplot as plt\n\nimport settings\n\nwith settings.context as context:\n    # Train\n    if settings.is_workflow_running_to_train:\n        # Load data\n        targets = context.load(\"target\")\n        predictions = context.load(\"predictions\")\n\n        # Un-transform the data\n        target_scaler = context.load(\"target_scaler\")\n        targets = target_scaler.inverse_transform(targets)\n        predictions = target_scaler.inverse_transform(predictions)\n\n        # Plot the data\n        plt.scatter(targets, predictions, c=\"black\", label=\"Results\")\n        plt.xlabel(\"Actual Value\")\n        plt.ylabel(\"Predicted Value\")\n\n        # Scale the plot\n        limits = (min(min(targets), min(predictions)),\n                  max(max(targets), max(predictions)))\n        plt.xlim = (limits[0], limits[1])\n        plt.ylim = (limits[0], limits[1])\n\n        # Draw a parity line, as a guide to the eye\n        plt.plot((limits[0], limits[1]), (limits[0], limits[1]), c=\"grey\", linestyle=\"dotted\", label=\"Parity\")\n        plt.legend()\n\n        # Save the figure\n        plt.savefig(\"my_parity_plot.png\", dpi=300)\n\n    # Predict\n    else:\n        # It might not make as much sense to draw a parity plot when predicting...\n        pass"
+              }
+            ],
+            "context": {}
+          }
+        ]
+      }
+    ],
+    "tags": [
+      "ml_predict"
+    ],
+    "workflows": [],
+    "properties": [],
+    "inSet": [
+      {
+        "_id": "5b143a7dacd8211c4898ab23",
+        "slug": "owner",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab24",
+        "slug": "admin",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab26",
+        "slug": "read",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab27",
+        "slug": "comment",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab28",
+        "slug": "execute",
+        "cls": "Team"
+      },
+      {
+        "_id": "5b143a7dacd8211c4898ab29",
+        "slug": "edit",
+        "cls": "Team"
+      },
+      {
+        "_id": "dkdwucJWDCNhLMR4Z",
+        "slug": "2020-qc",
+        "cls": "Team"
+      }
+    ],
+    "isDefault": false,
+    "exabyteId": "78e4ewNeMHkQjoCy5",
+    "hash": "03e8d4371d7ca3b96262a98a722ad800",
+    "createdAt": "2021-03-20T02:57:28.188Z",
+    "updatedAt": "2021-03-20T02:57:28.983Z",
+    "history": [
+      {
+        "id": "oFrugCjNFZZcjhMq3",
+        "revision": 0
+      },
+      {
+        "id": "Jxb46FKFkYBR8a4sZ",
+        "revision": 1
+      },
+      {
+        "id": "S52KFPeJGcMtwPJMh",
+        "revision": 2
+      },
+      {
+        "id": "a5KhB4zA9BoqrRv3P",
+        "revision": 3
+      },
+      {
+        "id": "CKkr8TigQn53N3WfF",
+        "revision": 4
+      },
+      {
+        "id": "TtkvmgFbcy3BsA928",
+        "revision": 5
+      },
+      {
+        "id": "6WMW5SfPa2ipBdkXo",
+        "revision": 6
+      },
+      {
+        "id": "BNq8hyLjegSCpZs5W",
+        "revision": 7
+      }
+    ]
+  }
+```
