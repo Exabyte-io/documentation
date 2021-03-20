@@ -1,6 +1,6 @@
 # File Content
 
-<span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Electronic</span>
+<span class="btn badge b-success border-50">Non-Scalar</span>
 
 The File Content property allows users to mark specific files for display at the end of a job.
 
