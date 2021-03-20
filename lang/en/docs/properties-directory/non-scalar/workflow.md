@@ -1,5 +1,7 @@
 # Workflow
 
+<span class="btn badge b-success border-50">Non-Scalar</span>
+
 Some jobs, such as in [machine learning](../../models-directory/machine-learning/overview.md), can result in a new
 workflow being generated and placed in the user's account. 
 
