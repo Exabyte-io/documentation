@@ -474,12 +474,14 @@ nav:
         - Components:
             - Overview:                                 workflows/components/overview.md
             - Subworkflows:                             workflows/components/subworkflows.md
+              # Add description of download_from_objet_storage unit
             - Units:                                    workflows/components/units.md
             - Maps:                                     workflows/components/maps.md
         - Data:
             - Overview:                                 workflows/data/overview.md
             - Workflows:                                workflows/data/workflows.md
             - Subworkflows:                             workflows/data/subworkflows.md
+              # Add sample schema for download_from_object_storage unit here
             - Units:                                    workflows/data/units.md
         - Templating:
             - Overview:                                 workflows/templating/overview.md
