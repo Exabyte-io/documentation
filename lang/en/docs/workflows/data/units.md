@@ -45,7 +45,7 @@ For a description of unit input templating, the reader is referred to [this sect
 {!example/workflow/unit/io.json!}
 ```
 
-### API (Input Section Only)
+### API
 
 ```json tab="Schema"
 {!schema/workflow/unit/io/api.json!}
@@ -55,7 +55,7 @@ For a description of unit input templating, the reader is referred to [this sect
 {!example/workflow/unit/io/api.json!}
 ```
 
-### Database (Input Section Only)
+### Database
 
 ```json tab="Schema"
 {!schema/workflow/unit/io/db.json!}
@@ -65,7 +65,7 @@ For a description of unit input templating, the reader is referred to [this sect
 {!example/workflow/unit/io/db.json!}
 ```
 
-### Object Storage (Input Section Only)
+### Object Storage
 
 ```json tab="Schema"
 {!schema/workflow/unit/io/object_storage.json!}
