@@ -282,9 +282,7 @@ nav:
               # - Model Prediction
               # - Post-Processing
             - Units:                                    models-directory/machine-learning/units.md
-              # Not sure what we want to do with Data. I suggest that we have two headings:
-              # 1. Exabyte ML
-              # 2. Python ML (Might we hold off on this until AZ finishes the ESSE updates for model classes?)
+              # No changes to data
             - Data:                                     models-directory/machine-learning/data.md
               # Replace tutorial link in "More" with tutorial from new implementation in Example Workflow
               # Replace numbered list with a flowchart and a short description
