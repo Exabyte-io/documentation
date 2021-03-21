@@ -117,8 +117,8 @@ nav:
                 - Predict New Properties:                tutorials/ml/predict-ml-properties.md
             - Python ML:
                 - Train ML Model:                        tutorials/python-ml/train-ml-model.md
-                  # Tutorial demonstrates how to share a trained model with another user
-                - Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
+                  #Todo: Tutorial demonstrates how to share a trained model with another user
+                #- Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
                 - Predict New Properties:                tutorials/python-ml/predict-ml-properties.md
         - Density Functional Theory:
             - Electronic Properties:
