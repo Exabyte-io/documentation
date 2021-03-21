@@ -116,11 +116,6 @@ nav:
                 - Train ML Model:                        tutorials/ml/train-ml-model.md
                 - Predict New Properties:                tutorials/ml/predict-ml-properties.md
             - Python ML:
-                  # Tutorial Content:
-                  # 1. Getting an ML Workflow Template
-                  # 2. Configuring the Workflow
-                  # 3. Running the Training Job
-                  # 4. Checking the Results
                 - Train ML Model:                        tutorials/python-ml/train-ml-model.md
                   # Tutorial demonstrates how to share a trained model with another user
                 - Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
