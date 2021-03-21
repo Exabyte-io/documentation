@@ -115,7 +115,8 @@ Begin by selecting the `ML Train and Predict` workflow unit, as below:
 ![ML Train and Predict](../../images/tutorials/workflows_tab_with_ml_train_subworkflow_and_train_unit_circled.png "Workflow tab with ml train unit circled")
 
 We can then scroll down to line 36, and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to add an
-extra hidden layer of 100 neurons each to the model. We can then find line 40, and adjust the `max_iter` argument from `500`
+extra hidden layer of 100 neurons each to the model. We can then find line 40, and adjust the `max_iter` argument
+from `500`
 to `5000`, to give the network enough time to train. These changes are circled below.
 
 ![Neural Network Settings](../../images/tutorials/ml_train_neural_network_with_2_hidden_layers.png "Neural Network Settings")
@@ -144,3 +145,10 @@ adsorption energies we trained the model on.
 
 ![Results Tab](../../images/tutorials/ml_train_results_tab.png "Results Tab")
 
+## Animation
+
+This tutorial is demonstrated in the following animation:
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/watch?v=Eiw6bYn_w74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
