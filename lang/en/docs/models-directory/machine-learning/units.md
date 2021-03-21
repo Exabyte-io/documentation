@@ -32,7 +32,7 @@ data, through for instance the normalization of the data.
 ## Feature Extraction
 
 Feature extraction is the process of generating new features from an existing set of features. For
-example, [Auto-Encoders](https://en.wikipedia.org/wiki/Autoencoder) are commonly-used in dimensionality-reduction,
+example, Auto-Encoders [^2] are commonly-used in dimensionality-reduction,
 taking an input vector and encoding into a vector with fewer dimensions.
 
 ## Feature Selection
@@ -43,7 +43,7 @@ of [feature properties](../../properties/classification/machine-learning.md) for
 ## Hyperparameter Tuning
 
 Oftentimes, models will have hyperparameters which must be tuned prior to their use. For example, to
-develop [LASSO Regression](https://en.wikipedia.org/wiki/Lasso_(statistics)), an extra penalty term is added to the loss
+develop LASSO Regression [^3], an extra penalty term is added to the loss
 function. This penalty term is equal to a coefficient (Lambda) multiplied by the sum of the absolue values of the model
 coefficients. This extra penalty term helps prevent overfitting, and results in LASSO reducing some coefficients to 0 at
 higher values of lambda. By choosing lambda, one can control how many coefficients are extinguished. Becuse lambda is
@@ -52,7 +52,7 @@ chosen before the model is trained, it is known as a hyperparameter to the model
 ## Model Training
 
 Training a model refers to optimizing a model's parameters such that some loss function is minimized. For example, when
-a [convolutional neural network](https://en.wikipedia.org/wiki/Convolutional_neural_network) is trained for image
+a Convolutional Neural Network [^4] is trained for image
 classification, the weights and biases of the network are adjusted to improve the model's performance against the
 training set.
 
@@ -67,9 +67,9 @@ potential.
 
 Post-processing refers to the actions taken after a model is trained, oftentimes aimed at simplifying a model for
 performance reasons. For example, this can
-include [pruning](https://en.wikipedia.org/wiki/Pruning_(artificial_neural_network)) a neural network to reduce the
+include pruning [^5] a neural network to reduce the
 number of mathematical optimizations that need to be performed,
-or [knowledge distillation](https://en.wikipedia.org/wiki/Knowledge_distillation), where a simpler model is trained
+or knowledge distillation [^6], where a simpler model is trained
 using the outputs of a more complex model.
 
 In addition, on the platform we use "post-processing" to refer to any action which is taken after a model is trained,
@@ -78,3 +78,13 @@ such as the visual display of data (such as training metrics or a parity plot).
 ## Links
 
 [^1]: [Pandas DataFrame, Official Documentation Website](https://pandas.pydata.org/pandas-docs/stable/dsintro.html#dataframe)
+
+[^2]: [Auto-Encoders, Wikipedia](https://en.wikipedia.org/wiki/Autoencoder)
+
+[^3]: [LASSO Regression, Wikipedia](https://en.wikipedia.org/wiki/Lasso_(statistics))
+
+[^4]: [Convolutional Neural Network, Wikipedia](https://en.wikipedia.org/wiki/Convolutional_neural_network)
+
+[^5]: [Pruning, Wikipedia](https://en.wikipedia.org/wiki/Pruning_(artificial_neural_network))
+
+[^6]: [Knowledge Distillation, Wikipedia](https://en.wikipedia.org/wiki/Knowledge_distillation)
