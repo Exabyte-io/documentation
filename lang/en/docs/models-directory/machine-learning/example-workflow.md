@@ -1,8 +1,10 @@
 # Example Machine Learning Workflow
 
-A Machine Learning [workflow](../../workflows/overview.md) may consist of the following multiple steps, performed in a sequential order through the [units](../../workflows/components/units.md) specific to Machine Learning which are described [in this page](units.md).
+A Machine Learning [workflow](../../workflows/overview.md) may consist of the following multiple steps, performed in a
+sequential order through the [units](../../workflows/components/units.md) specific to Machine Learning which are
+described [in this page](units.md).
 
-Below, we show an example schema for both the training and prediction version of a workflow.
+Below, we show an example implementation for both the training and prediction version of a workflow.
 
 ```json tab="Train"
 {
