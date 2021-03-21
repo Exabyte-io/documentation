@@ -8,10 +8,9 @@ a model is only as good as the data it was trained on.
 
 Consider a hypothetical machine learning model which is able to achieve perfect accuracy on any dataset it's given,
 without overfitting. Now consider what would happen if such a model were trained on two different datasets of vastly
-different quality - for example, electronic energies calculated using
-the [Local-Density Approximation](https://en.wikipedia.org/wiki/Local-density_approximation) versus electronic energies
-calculated with a [Coupled-Cluster](https://en.wikipedia.org/wiki/Coupled_cluster) technique. Despite performing
-perfectly, the model would only ever be as accurate as the underlying data used to train it.
+different quality - for example, electronic energies calculated using the Local Density Approximation [^1] versus
+electronic energies calculated with a Coupled Cluster [^2] technique. Despite performing perfectly, the model would only
+ever be as accurate as the underlying data used to train it.
 
 ## Common Accuracy Metrics
 
@@ -27,6 +26,13 @@ methods by-which a model's performance can be evaluated. We present a few more-c
 
 ### Classification
 
-- The **Confusion Matrix** can be used to derive a [plethora](https://en.wikipedia.org/wiki/Confusion_matrix) of error
-  metrics, including the **true positive rate**, the **false positive rate**, **precision**, **recall**, and many
-  others.
+- The **Confusion Matrix** can be used to derive a plethora of error metrics [^3], including the **true positive rate**,
+  the **false positive rate**, **precision**, **recall**, and many others.
+
+## Links
+
+[^1]: [Local-Density Approximation, Wikipedia](https://en.wikipedia.org/wiki/Local-density_approximation)
+
+[^2]: [Coupled-Cluster, Wikipedia](https://en.wikipedia.org/wiki/Coupled_cluster)
+
+[^3]: [Confusion Matrix, Wikipedia](https://en.wikipedia.org/wiki/Confusion_matrix)
