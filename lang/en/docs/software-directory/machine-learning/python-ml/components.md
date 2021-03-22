@@ -21,16 +21,13 @@ the implemented ML calculations can be performed.
 The following flavors are available within the current ML implementation:
 
 - `pyml:setup_variables_packages`: contains functions and configuration essential for all Python-ML worfklows
-- `pyml:data_input:read_csv:pandas`: for reading in CSV data
-  using [Pandas](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
-- `pyml:pre_processing:standardization:sklearn`: [scales the data](https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization))
-  such that it has a mean of 0 and a standar deviation of 1, as implemented
-  in [Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+- `pyml:data_input:read_csv:pandas`: for reading in CSV data using Pandas [^1]
+- `pyml:pre_processing:standardization:sklearn`: scales the data [^2]
+  such that it has a mean of 0 and a standar deviation of 1, as implemented in Scikit-Learn [^3]
 - `pyml:model:multilayer_perceptron:sklearn`:
-  a [multilayer-perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron) implemented
-  in [Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html)
-- `pyml:post_processing_parity_plot_matplotlib`: generates a [parity plot](https://en.wikipedia.org/wiki/Parity_plot)
-  using [Matpotlib](https://matplotlib.org/)
+  a Multilayer Perceptron [^4] implemented in Scikit-Learn [^5]
+- `pyml:post_processing_parity_plot_matplotlib`: generates a parity plot [^6]
+  using Matplotlib [^7]
 - `pyml:custom`: contains the basic skeleton needed for ML workflow units
 
 ## Custom Machine Learning Units
@@ -90,3 +87,19 @@ when [ the predict workflow is generated](../../../properties-directory/non-scal
 
 This subworkflow is where a user's requested machine learning units reside. This subworkflow is generally the one that
 users are expected to modify, to add or remove different machine learning workflow units.
+
+## Links
+
+[^1]: [read_csv function, Pandas](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
+
+[^2]: [Feature Scaling, Wikipedia](https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization))
+
+[^3]: [Standard Scaler, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+
+[^4]: [Multilayer Perceptron, Wikipedia](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+
+[^5]: [MLPRegressor class Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html)
+
+[^6]: [Parity Plot, Wikipedia](https://en.wikipedia.org/wiki/Parity_plot)
+
+[^7]: [Matpotlib Documentation](https://matplotlib.org/)
