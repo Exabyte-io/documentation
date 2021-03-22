@@ -76,10 +76,10 @@ data, the [Workflow Designer](../../workflow-designer/overview.md) could be used
 ![Training Data IO Unit](../../images/tutorials/training_data_io_unit.png "Training Data IO Unit")
 
 !!!warning "A Word of Caution"
-> The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
-> Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
-> during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
-> creation of the Predict workflow.
+    The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
+    Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
+    during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
+    creation of the Predict workflow.
 
 We will then close the Declare Training Data IO unit by clicking on the "X" in the dialogue's upper right corner. This
 will bring us back to the [Workflows Tab](../../jobs-designer/workflow-tab.md "Workflows Tab").
