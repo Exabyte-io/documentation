@@ -6,7 +6,7 @@ The File Content property allows users to mark specific files for display at the
 
 ## Example
 
-In the below example, a user has generated a [parity plot](https://en.wikipedia.org/wiki/Parity_plot) and has named it
+In the below example, a user has generated a parity plot [^1] and has named it
 `my_parity_plot.png`. The File Content property was then configured to display an image named `my_parity_plot.png`.
 Below, this can be observed in the results tab of the job.
 
@@ -15,3 +15,7 @@ Below, this can be observed in the results tab of the job.
 ## Schema
 
 The JSON schema and an example implementation can be found [here](../../properties/data/list.md#file-content)
+
+## Links
+
+[^1]: [Parity Plot, Wikipedia](https://en.wikipedia.org/wiki/Parity_plot)
