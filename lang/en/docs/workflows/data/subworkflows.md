@@ -3,9 +3,9 @@
 The JSON [structured representation](../../data-structured/overview.md) of [subworkflows](../components/subworkflows.md), together with an example, is contained below.
 
 ```json tab="Schema" 
-{!schema/workflow/subworkflow.json!}
+{!esse/schema/workflow/subworkflow.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/subworkflow.json!}
+{!esse/example/workflow/subworkflow.json!}
 ```

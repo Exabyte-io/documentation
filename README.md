@@ -265,10 +265,10 @@ The [markdown_include](https://github.com/Exabyte-io/markdown-include) package i
 ```text
 
     ```json tab="Schema" 
-    {!schema/file_path/file_name.json!}
+    {!esse/schema/file_path/file_name.json!}
     ```
     ```json tab="Example" 
-    {!example/file_path/file_name.json!}
+    {!esse/example/file_path/file_name.json!}
     ```
 
 ```

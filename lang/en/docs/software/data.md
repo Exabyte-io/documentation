@@ -8,29 +8,29 @@ We provide below examples of JSON-based structured representation for an applica
 ## [Application](components.md)
 
 ```json tab="Schema" 
-{!schema/software/application.json!}
+{!esse/schema/software/application.json!}
 ```
 
 ```json tab="Example" 
-{!example/software/application.json!}
+{!esse/example/software/application.json!}
 ```
 
 ## [Executable](components.md#executables)
 
 ```json tab="Schema" 
-{!schema/software/executable.json!}
+{!esse/schema/software/executable.json!}
 ```
 
 ```json tab="Example" 
-{!example/software/executable.json!}
+{!esse/example/software/executable.json!}
 ```
 
 ## [Flavor](components.md#flavors)
 
 ```json tab="Schema" 
-{!schema/software/flavor.json!}
+{!esse/schema/software/flavor.json!}
 ```
 
 ```json tab="Example" 
-{!example/software/flavor.json!}
+{!esse/example/software/flavor.json!}
 ```
