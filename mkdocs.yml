@@ -34,7 +34,7 @@ extra:
           link: https://www.linkedin.com/company/exabyte-io
 markdown_extensions:
     - markdown_include.include:
-        base_path: esse
+        base_path: data
     - admonition
     - codehilite:
         linenums: true
