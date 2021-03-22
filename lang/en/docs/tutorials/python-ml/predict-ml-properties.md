@@ -5,8 +5,8 @@ a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
 trianed for regression
 using [SciKit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
 
-!!! warning "Caution"
-In order to perform this tutorial, the [ML Training](train-ml-model.md) tutorial must be completed.
+!!! warning "Pre-Requisites"
+    In order to perform this tutorial, the [ML Training](train-ml-model.md) tutorial must be completed.
 
 ## 1. Acquire Data
 
@@ -72,10 +72,10 @@ earlier, we do not need to modify this unit. In a scenario where we wanted to us
 data, the [Workflow Designer](../../workflow-designer/overview.md) could be used to modify the value.
 
 !!!warning "A Word of Caution"
-> The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
-> Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
-> during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
-> creation of the Predict workflow.
+    The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
+    Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
+    during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
+    creation of the Predict workflow.
 
 We will then close the Declare Predict Data IO unit by clicking on the "X" in the dialogue's upper right corner. This
 will bring us back to the [Workflows Tab](../../jobs-designer/workflow-tab.md "Workflows Tab").
