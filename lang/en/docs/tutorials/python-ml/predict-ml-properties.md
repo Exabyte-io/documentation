@@ -51,6 +51,9 @@ designer), and choose "Select Workflow."
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
 search for "workflow:pyml_predict" and click on it to bring it into our account.
 
+A diagram and detailed description of this workflow can be found
+[here](../../software-directory/machine-learning/python-ml/components.md)
+
 ## 4. Configure the ML Workflow
 
 We now have our ML workflow selected. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see
