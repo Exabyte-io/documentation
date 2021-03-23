@@ -2,19 +2,21 @@
 
 Here, we explain how to use the **"virtualenv"** command [^1] within the [Command Line Interface](../overview.md) (CLI) to assemble some commonly used python packages for materials science computations into a **virtual environment**. These packages include the **"pymatgen"**, **"pandas"** and **"atomic simulation environment (ase)"** libraries.
 
-!!! note "Default version of python is 2.7.5"
-    By default the system-wide version of python is used.
+!!! note "Default version of Python is 2.7.5"
+    When a new command line session is created, the active Python version is the system-wide version 2.7.5.  Other versions of Python are available for use on an opt-in basis; see [the Command Line Environment documentation's section on Python](../environment.md#default-python-environment) for more details.  
 
 ## Using Virtual Environment
 
-`virtualenv` command can be used by following the instructions presented in its official website [^1]. The installation of a new python package consists of the following sequence of commands, where we also make use of the `pip` package manager [^2] (already installed by default).
+The `virtualenv` command can be used by following the instructions presented in its official website [^1]. The installation of a new Python package consists of the following sequence of commands, where we also make use of the `pip` package manager [^2] (already installed by default).
+
+First, we'll create a new virtual environment, as a directory named `.virtualenv` in the current directory, and then activate it:
 
 ```bash
 virtualenv .virtualenv
 source .virtualenv/bin/activate
 ```
 
-At this point the CLI prompt will change to reflect that the virtual environment is installed and will look similar to:
+At this point the CLI prompt will change to reflect that the virtual environment is active and will look similar to:
 
 ```bash
 (.virtualenv) [steven@bohr.exabyte.io:~/cluster-001/tmp]$
@@ -44,6 +46,32 @@ In order to disable the virtual environment and return to the original default c
 ```bash
 deactivate
 ```
+
+To reactivate an existing virtual environment, source the virtual environment's `activate` script again:
+
+```bash
+source .virtualenv/bin/activate
+```
+
+## Other Versions of Python
+
+As noted above, the default version of Python can be overridden with any of the ways described in  [the Command Line Environment documentation's section on Python](../environment.md#default-python-environment).
+
+Once the chosen version of Python is active, virtual environments can be created as expected and packages installed and code executed against that version.  For example, using the Environment Module approach:
+
+```bash
+module load python/3.8.6
+python --version
+# Python 3.8.6
+
+virtualenv .virtualenv_py3
+source .virtualenv_py3/bin/activate
+
+python --version
+# Python 3.8.6
+```
+
+Note that once a Python virtual environment is created, its Python version is permanent and it's not possible to switch to a different version.  In that case, a new virtual environment with a different path will need to be created.
 
 ## Example Python Packages
 

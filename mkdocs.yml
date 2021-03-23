@@ -20,7 +20,7 @@ extra_javascript:
     - extra/js/giffer.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
-copyright: © 2020 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+copyright: © 2021 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 
 extra:
     version: "0.17"
