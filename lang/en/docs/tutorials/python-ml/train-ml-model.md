@@ -39,6 +39,9 @@ Next, we select the`Bank Worfklows` button in the [left sidebar](../../ui/left-s
 the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train" workflow owned by the "
 Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
 
+A diagram and detailed description of this workflow can be found
+[here](../../software-directory/machine-learning/python-ml/components.md).
+
 ## 4. Create the ML Job
 
 Next, we can create a new job by selecting the `Create Job` button in the [left sidebar](../../ui/left-sidebar.md). This
