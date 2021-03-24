@@ -152,6 +152,9 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
             - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
             - Interface:                             tutorials/materials/slabs-interface.md
+        - Python Packages:
+            - TensorFlow (CPU):                      tutorials/python-packages/tensorflow-cpu.md
+            - TensorMol (CPU):                       tutorials/python-packages/tensormol-cpu.md
 
 
 # COMMON UI COMPONENTS
