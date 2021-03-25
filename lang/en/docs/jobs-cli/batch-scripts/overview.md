@@ -34,3 +34,4 @@ We provide some examples on how to enter the relevant information about jobs in 
 
 [^2]: [Maui Scheduler, Official Website](https://en.wikipedia.org/wiki/Maui_Cluster_Scheduler)
 
+[^3]: [TORQUE, Wikipedia](https://en.wikipedia.org/wiki/TORQUE)
