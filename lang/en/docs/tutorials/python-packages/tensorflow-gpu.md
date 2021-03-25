@@ -5,52 +5,12 @@ TensorFlow [^1] is a powerful oepn-source machine-learning platform geared towar
 In this tutorial, we will create an [Anaconda](../../cli/modules.md) environment for TensorFlow, and will run a test job
 on a [GPU](../../infrastructure/resource/category.md) queue within [AWS](../../infrastructure/clusters/aws.md).
 
-## 1. Create the TensorFlow environment
+## 1. Create the Test Job
 
-Starting from a new [SSH](../../remote-connection/ssh.md), we will go into the Azure cluster:
+First, we'll create a folder for our job from `~/cluster-001` and enter into it:
 
 ```bash
 cd ~/cluster-001
-```
-
-As of March 2021, the current version of anaconda installed on our cluster is `python/anaconda3-5.2.0`. This can always
-be found by running `module avail`. We can now [load](../../cli/actions/modules-actions.md) the Anaconda module:
-
-```bash
-module load python/anaconda3-5.2.0
-```
-
-Next, we will create the TensorFlow environment. This can in principle be made anywhere on the cluster (such as in an
-organization account, for sharing environments). Do note that this should be made on the cluster it is intended to be
-used (e.g. if one seeks to use the environment on cluster-001, it should exist on cluster-001).
-
-For the purposes of this tutorial, we will create the environment in a folder named "tfgpu" as below:
-
-```bash
-conda create -y -p ./tfgpu
-```
-
-## 2. Install TensorFlow GPU
-
-We can then source the directory:
-
-```bash
-source activate tfgpu
-```
-
-And finally, we can install the GPU version of TensorFlow:
-
-```bash
-conda install tensorflow-gpu
-```
-
-## 2. Create the Test Job
-
-We can now create a test job to ensure we've installed TensorFlow correctly.
-
-First, we'll create a folder for our job. From `~/cluster-001` and enter into it:
-
-```bash
 mkdir tensorflow_gpu_test
 cd tensorflow_gpu_test
 ```
@@ -149,7 +109,7 @@ with the same name that was specified in `environment.yaml`.
 The job will then source the environment, and will run the python script. The python script's stodut and stderr will be
 written to `python_log.txt`.
 
-## 3. Submit the Test Job
+## 2. Submit the Test Job
 
 We are now ready to submit our test job. From inside the `cluster-001/tensorflow_gpu_test` where we placed our files:
 
@@ -160,7 +120,7 @@ qsub job.pbs
 The job will enter the GPU queue, and after a few minutes should start. The job's
 status [can be monitored](../../jobs-cli/actions/check-status.md) with the `qstat` command.
 
-## 4. Analyze the Results
+## 3. Analyze the Results
 
 After the job completes, we will see several files in the job directory.
 
@@ -201,6 +161,6 @@ that would have been used by TensorFlow to perform its calculations.
 
 ## Links
 
-[^1] [TensorFlow Documentation](https://www.tensorflow.org/)
+[^1]: [TensorFlow Documentation](https://www.tensorflow.org/)
 
-[^2] [Managing Environments, Anaconda Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
+[^2]: [Managing Environments, Anaconda Documentation](https://docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
