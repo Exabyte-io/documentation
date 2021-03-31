@@ -16,7 +16,7 @@ Used for data processing tasks that are not computationally intensive in nature,
 
 ### I/O
 
-Perform input/output operations, such as reading from a remote database.
+Perform input/output operations, such as reading from a remote database or downloading from object storage.
 
 ### Assignment
 
