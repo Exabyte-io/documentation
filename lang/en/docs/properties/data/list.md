@@ -9,11 +9,11 @@ We present throughout this page a list of JSON schemas and example representatio
 Total energy contains the total energy of the unit cell.
 
 ```json tab="Schema" 
-{!schema/properties_directory/scalar/total_energy.json!}
+{!esse/schema/properties_directory/scalar/total_energy.json!}
 ```
 
 ```json tab="Example" 
-{!example/properties_directory/scalar/total_energy.json!}
+{!esse/example/properties_directory/scalar/total_energy.json!}
 ```
 
 ### [Zero Point Energy](../../properties-directory/scalar/zero-point-energy.md)
@@ -21,11 +21,11 @@ Total energy contains the total energy of the unit cell.
 Some residual thermal vibrational energy is left at zero temperature due to quantum effects, and is referred to as Zero Point Energy.
 
 ```json tab="Schema" 
-{!schema/properties_directory/scalar/zero_point_energy.json!}
+{!esse/schema/properties_directory/scalar/zero_point_energy.json!}
 ```
 
 ```json tab="Example" 
-{!example/properties_directory/scalar/zero_point_energy.json!}
+{!esse/example/properties_directory/scalar/zero_point_energy.json!}
 ```
 
 ### [Fermi Energy](../../properties-directory/scalar/fermi-energy.md)
@@ -33,11 +33,11 @@ Some residual thermal vibrational energy is left at zero temperature due to quan
 The Fermi energy marks the highest occupied energy level in a solid.
 
 ```json tab="Schema"  
-{!schema/properties_directory/scalar/fermi_energy.json!}
+{!esse/schema/properties_directory/scalar/fermi_energy.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/scalar/fermi_energy.json!}
+{!esse/example/properties_directory/scalar/fermi_energy.json!}
 ```
 
 ### [Total Energy Contributions](../../properties-directory/scalar/total-energy.md#total-energy-contributions)
@@ -45,11 +45,11 @@ The Fermi energy marks the highest occupied energy level in a solid.
 Total energy contributions contains information about the components in the total energy of the unit cell. The contributions available will depend on the type of method and software used.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/total_energy_contributions.json!}
+{!esse/schema/properties_directory/non-scalar/total_energy_contributions.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/total_energy_contributions.json!}
+{!esse/example/properties_directory/non-scalar/total_energy_contributions.json!}
 ```
 
 ### [Formation Energy](../../properties-directory/scalar/formation-energy.md)
@@ -57,11 +57,11 @@ Total energy contributions contains information about the components in the tota
 The Formation energy represents the energy required to create a defect in an otherwise perfect solid structure.
 
 ```json tab="Schema"  
-{!schema/properties_directory/scalar/formation_energy.json!}
+{!esse/schema/properties_directory/scalar/formation_energy.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/scalar/formation_energy.json!}
+{!esse/example/properties_directory/scalar/formation_energy.json!}
 ```
 
 ### [Surface Energy](../../properties-directory/scalar/surface-energy.md)
@@ -69,11 +69,11 @@ The Formation energy represents the energy required to create a defect in an oth
 The energy of a surface can also be computed.
 
 ```json tab="Schema"  
-{!schema/properties_directory/scalar/surface_energy.json!}
+{!esse/schema/properties_directory/scalar/surface_energy.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/scalar/surface_energy.json!}
+{!esse/example/properties_directory/scalar/surface_energy.json!}
 ```
 
 ### [Pressure](../../properties-directory/scalar/pressure.md)
@@ -81,11 +81,11 @@ The energy of a surface can also be computed.
 Pressure contains the average internal pressure of the unit cell.
 
 ```json tab="Schema"
-{!schema/properties_directory/scalar/pressure.json!}
+{!esse/schema/properties_directory/scalar/pressure.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/scalar/pressure.json!}
+{!esse/example/properties_directory/scalar/pressure.json!}
 ```
 
 ### [Total Force](../../properties-directory/scalar/total-force.md)
@@ -93,11 +93,11 @@ Pressure contains the average internal pressure of the unit cell.
 This is the total average force present within the crystal structure.
 
 ```json tab="Schema"
-{!schema/properties_directory/scalar/total_force.json!}
+{!esse/schema/properties_directory/scalar/total_force.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/scalar/total_force.json!}
+{!esse/example/properties_directory/scalar/total_force.json!}
 ```
 
 ## Non-Scalar Properties
@@ -108,11 +108,11 @@ Band structure shows the energy of electronic states (bands) as a function of k-
 
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/band_structure.json!}
+{!esse/schema/properties_directory/non-scalar/band_structure.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/band_structure.json!}
+{!esse/example/properties_directory/non-scalar/band_structure.json!}
 ```
 
 ### [Band Gaps](../../properties-directory/non-scalar/band-gaps.md)
@@ -120,11 +120,11 @@ Band structure shows the energy of electronic states (bands) as a function of k-
 Band gap is the difference in energy from the highest occupied electronic state (Fermi energy at 0K) to the lowest unoccupied state.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/band_gaps.json!}
+{!esse/schema/properties_directory/non-scalar/band_gaps.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/band_gaps.json!}
+{!esse/example/properties_directory/non-scalar/band_gaps.json!}
 ```
 
 ### [Electronic Density of States](../../properties-directory/non-scalar/electronic-dos.md)
@@ -132,11 +132,11 @@ Band gap is the difference in energy from the highest occupied electronic state 
 Density of states contains information on the number of electronic states as a function of energy. It may include the atom resolved partial density of states and electron states in some cases. In addition it may also contain information about each atom’s spin state as well.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/density_of_states.json!}
+{!esse/schema/properties_directory/non-scalar/density_of_states.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/density_of_states.json!}
+{!esse/example/properties_directory/non-scalar/density_of_states.json!}
 ```
 
 ### [File Content](../../properties-directory/non-scalar/file-content.md)    
@@ -144,11 +144,11 @@ Density of states contains information on the number of electronic states as a f
 Tags a file for display on the results tab of the web-app.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/file_content.json!}
+{!esse/schema/properties_directory/non-scalar/file_content.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/file_content.json!}
+{!esse/example/properties_directory/non-scalar/file_content.json!}
 ```
 
 ### [Reaction Energy Profile](../../properties-directory/non-scalar/reaction-energy-profile.md)
@@ -156,11 +156,11 @@ Tags a file for display on the results tab of the web-app.
 The energy profile of a chemical reaction is a representation of its energetic pathway, followed by the reactants as they are transformed into products.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/reaction_energy_profile.json!}
+{!esse/schema/properties_directory/non-scalar/reaction_energy_profile.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/reaction_energy_profile.json!}
+{!esse/example/properties_directory/non-scalar/reaction_energy_profile.json!}
 ```
 
 ### [Reaction Energy Barrier](../../properties-directory/scalar/reaction-energy-barrier.md)
@@ -168,11 +168,11 @@ The energy profile of a chemical reaction is a representation of its energetic p
 The Reaction Energy Barrier marks the highest energy state encountered during the course of the progress of a chemical reaction.
 
 ```json tab="Schema"
-{!schema/properties_directory/scalar/reaction_energy_barrier.json!}
+{!esse/schema/properties_directory/scalar/reaction_energy_barrier.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/scalar/reaction_energy_barrier.json!}
+{!esse/example/properties_directory/scalar/reaction_energy_barrier.json!}
 ```
 
 ### [Phonon Dispersions](../../properties-directory/non-scalar/phonon-dispersions.md)
@@ -180,11 +180,11 @@ The Reaction Energy Barrier marks the highest energy state encountered during th
 Lattice vibrations can be plotted in the form of phonon frequency dispersion plots across the reciprocal k-space of the crystal structure.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/phonon_dispersions.json!}
+{!esse/schema/properties_directory/non-scalar/phonon_dispersions.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/phonon_dispersions.json!}
+{!esse/example/properties_directory/non-scalar/phonon_dispersions.json!}
 ```
 
 ### [Phonon Density of States](../../properties-directory/non-scalar/phonon-dos.md)
@@ -192,11 +192,11 @@ Lattice vibrations can be plotted in the form of phonon frequency dispersion plo
 The Density of States for phonons can also be computed.
 
 ```json tab="Schema"
-{!schema/properties_directory/non-scalar/phonon_dos.json!}
+{!esse/schema/properties_directory/non-scalar/phonon_dos.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/phonon_dos.json!}
+{!esse/example/properties_directory/non-scalar/phonon_dos.json!}
 ```
 
 ### [Stress Tensor](../../properties-directory/non-scalar/stress-tensor.md)
@@ -204,11 +204,11 @@ The Density of States for phonons can also be computed.
 Stress tensor contains a 3x3 matrix of the stress components of the unit cell.
 
 ```json tab="Schema" 
-{!schema/properties_directory/non-scalar/stress_tensor.json!}
+{!esse/schema/properties_directory/non-scalar/stress_tensor.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/non-scalar/stress_tensor.json!}
+{!esse/example/properties_directory/non-scalar/stress_tensor.json!}
 ```
 
 ### [Workflow](../../properties-directory/non-scalar/workflow.md)
@@ -216,11 +216,11 @@ Stress tensor contains a 3x3 matrix of the stress components of the unit cell.
 Some jobs can result in the generation of new workflows, which will be placed in the user's account.
 
 ```json tab="Schema"
-{!schema/workflow.json!}
+{!esse/schema/workflow.json!}
 ```
 
 ```json tab="Example"
-{!example/workflow.json!}
+{!esse/example/workflow.json!}
 ```
 
 ## Elemental Properties
@@ -230,11 +230,11 @@ Some jobs can result in the generation of new workflows, which will be placed in
 The atomic radius represents the average distance between the nucleus of an atom and the edges of its surrounding electron cloud.
 
 ```json tab="Schema"
-{!schema/properties_directory/elemental/atomic_radius.json!}
+{!esse/schema/properties_directory/elemental/atomic_radius.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/elemental/atomic_radius.json!}
+{!esse/example/properties_directory/elemental/atomic_radius.json!}
 ```
 
 ### [Electronegativity](../../properties-directory/elemental/electronegativity.md)
@@ -242,11 +242,11 @@ The atomic radius represents the average distance between the nucleus of an atom
 The electronegativity describes the capacity of an atom to attract the electrons involved in chemical bonding.
 
 ```json tab="Schema"
-{!schema/properties_directory/elemental/electronegativity.json!}
+{!esse/schema/properties_directory/elemental/electronegativity.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/elemental/electronegativity.json!}
+{!esse/example/properties_directory/elemental/electronegativity.json!}
 ```
 
 ### [Ionization Potential](../../properties-directory/elemental/ionization-potential.md)
@@ -254,11 +254,11 @@ The electronegativity describes the capacity of an atom to attract the electrons
 The ionization energy (or potential) measures the energy required to strip an atom from its most loosely bound valence electron.
 
 ```json tab="Schema"
-{!schema/properties_directory/elemental/ionization_potential.json!}
+{!esse/schema/properties_directory/elemental/ionization_potential.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/elemental/ionization_potential.json!}
+{!esse/example/properties_directory/elemental/ionization_potential.json!}
 ```
 
 ## Structural Properties
@@ -268,11 +268,11 @@ The ionization energy (or potential) measures the energy required to strip an at
 Forces may exist between atoms in a crystal structure if they are displaced away from their equilibrium configuration.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/atomic_forces.json!}
+{!esse/schema/properties_directory/structural/atomic_forces.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/atomic_forces.json!}
+{!esse/example/properties_directory/structural/atomic_forces.json!}
 ```
 
 ### [Atomic Coordinates](../../properties-directory/structural/basis.md)
@@ -280,11 +280,11 @@ Forces may exist between atoms in a crystal structure if they are displaced away
 Contains information about the coordinates of atoms within the unit cell by id.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/basis/atomic_coordinates.json!}
+{!esse/schema/properties_directory/structural/basis/atomic_coordinates.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/basis/atomic_coordinates.json!}
+{!esse/example/properties_directory/structural/basis/atomic_coordinates.json!}
 ```
 
 ### [Atomic Elements](../../properties-directory/structural/basis.md)
@@ -292,11 +292,11 @@ Contains information about the coordinates of atoms within the unit cell by id.
 Contains an array of the elements in the unit cell and the atom id’s association with each atom.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/basis/atomic_elements.json!}
+{!esse/schema/properties_directory/structural/basis/atomic_elements.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/basis/atomic_elements.json!}
+{!esse/example/properties_directory/structural/basis/atomic_elements.json!}
 ```
 
 ### [Atomic Constraints](../../properties-directory/structural/basis.md)
@@ -304,11 +304,11 @@ Contains an array of the elements in the unit cell and the atom id’s associati
 Contains information about the spatial constraints on the movement of atoms.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/basis/atomic_constraints.json!}
+{!esse/schema/properties_directory/structural/basis/atomic_constraints.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/basis/atomic_constraints.json!}
+{!esse/example/properties_directory/structural/basis/atomic_constraints.json!}
 ```
 
 ### [Basis](../../properties-directory/structural/basis.md)
@@ -317,11 +317,11 @@ Basis defines elemental and geometrical constitution of the unit cell.
 
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/basis.json!}
+{!esse/schema/properties_directory/structural/basis.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/basis.json!}
+{!esse/example/properties_directory/structural/basis.json!}
 ```
 
 ### [Bravais Lattice](../../properties-directory/structural/lattice.md)
@@ -329,11 +329,11 @@ Basis defines elemental and geometrical constitution of the unit cell.
 Lattice Bravais holds information about the three-dimensional periodic structure specified implicitly through lengths and angles between lattice vectors, and their units.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/lattice/lattice_bravais.json!}
+{!esse/schema/properties_directory/structural/lattice/lattice_bravais.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/lattice/lattice_bravais.json!}
+{!esse/example/properties_directory/structural/lattice/lattice_bravais.json!}
 ```
 
 ### [Lattice Vectors](../../properties-directory/structural/lattice.md)
@@ -341,11 +341,11 @@ Lattice Bravais holds information about the three-dimensional periodic structure
 Lattice vectors holds information about the three-dimensional periodic structure explicitly, by specifying the three lattice vectors and their units.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/lattice/lattice_vectors.json!}
+{!esse/schema/properties_directory/structural/lattice/lattice_vectors.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/lattice/lattice_vectors.json!}
+{!esse/example/properties_directory/structural/lattice/lattice_vectors.json!}
 ```
 
 ### [Density](../../properties-directory/structural/lattice.md#volume-and-density)
@@ -353,11 +353,11 @@ Lattice vectors holds information about the three-dimensional periodic structure
 The Density of the material is defined by the sum of the atomic masses within the unit cell, divided by its volume.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/density.json!}
+{!esse/schema/properties_directory/structural/density.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/density.json!}
+{!esse/example/properties_directory/structural/density.json!}
 ```
 
 ### [Elemental Ratio](../../properties-directory/structural/basis.md#elemental-ratio)
@@ -365,11 +365,11 @@ The Density of the material is defined by the sum of the atomic masses within th
 The elemental ratio is given by the fraction of all atoms in a crystal which are composed of a certain element.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/elemental_ratio.json!}
+{!esse/schema/properties_directory/structural/elemental_ratio.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/elemental_ratio.json!}
+{!esse/example/properties_directory/structural/elemental_ratio.json!}
 ```
 
 ### [Magnetic Moments](../../properties-directory/structural/magnetic-moment.md)
@@ -377,11 +377,11 @@ The elemental ratio is given by the fraction of all atoms in a crystal which are
 The magnetic moment of ferromagnetic materials can also be computed.
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/magnetic_moments.json!}
+{!esse/schema/properties_directory/structural/magnetic_moments.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/magnetic_moments.json!}
+{!esse/example/properties_directory/structural/magnetic_moments.json!}
 ```
 
 ### [P Norm](../../properties-directory/structural/lattice.md)
@@ -389,11 +389,11 @@ The magnetic moment of ferromagnetic materials can also be computed.
 The P norm measures how homogeneous a material is in terms of its chemical composition. 
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/p-norm.json!}
+{!esse/schema/properties_directory/structural/p-norm.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/p-norm.json!}
+{!esse/example/properties_directory/structural/p-norm.json!}
 ```
 
 ### [Symmetry](../../properties-directory/structural/space-group.md)
@@ -401,11 +401,11 @@ The P norm measures how homogeneous a material is in terms of its chemical compo
 The Space Group of the crystal structure, indicating the symmetry elements that it contains, is also available. 
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/symmetry.json!}
+{!esse/schema/properties_directory/structural/symmetry.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/symmetry.json!}
+{!esse/example/properties_directory/structural/symmetry.json!}
 ```
 
 ### [Volume](../../properties-directory/structural/lattice.md)
@@ -413,9 +413,9 @@ The Space Group of the crystal structure, indicating the symmetry elements that 
 The volume of the unit cell is given by the scalar triple product of the lattice vectors. 
 
 ```json tab="Schema"
-{!schema/properties_directory/structural/volume.json!}
+{!esse/schema/properties_directory/structural/volume.json!}
 ```
 
 ```json tab="Example"
-{!example/properties_directory/structural/volume.json!}
+{!esse/example/properties_directory/structural/volume.json!}
 ```
