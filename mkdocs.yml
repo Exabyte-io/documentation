@@ -110,9 +110,26 @@ nav:
             - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
             - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
         - Machine Learning (ML):
+              # Differentiate between Legacy and PythonML tutorials in Overview
             - Overview:                              tutorials/ml/overview.md
-            - Train ML Model:                        tutorials/ml/train-ml-model.md
-            - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+            - ExabyteML (legacy):
+                - Train ML Model:                        tutorials/ml/train-ml-model.md
+                - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+            - Python ML:
+                  # Tutorial Content:
+                  # 1. Getting an ML Workflow Template
+                  # 2. Configuring the Workflow
+                  # 3. Running the Training Job
+                  # 4. Checking the Results
+                - Train ML Model:                        tutorials/python-ml/train-ml-model.md
+                  # Tutorial demonstrates how to share a trained model with another user
+                - Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
+                  # Tutorial Content
+                  # 1. Finding a Predict Workflow
+                  # 2. Configuring the Workflow
+                  # 3. Running the Predict Job
+                  # 4. Obtaining Results
+                - Predict New Properties:                tutorials/python-ml/predict-ml-properties.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
@@ -256,9 +273,8 @@ nav:
             - Parameters:                               models-directory/machine-learning/parameters.md
             - Units:                                    models-directory/machine-learning/units.md
             - Data:                                     models-directory/machine-learning/data.md
-            - Actions:                                  models-directory/machine-learning/actions.md
-            - Units:                                    models-directory/machine-learning/units.md
             - Example Workflow:                         models-directory/machine-learning/example-workflow.md
+            - Accuracy:                                 models-directory/machine-learning/accuracy.md
 
     - Methods:
         - Overview:                                     methods/overview.md
@@ -329,6 +345,10 @@ nav:
             - Exabyte ML:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
                 - Data:                                 software-directory/machine-learning/exabyte/data.md
+            - Python ML:
+                - Overview:                             software-directory/machine-learning/python-ml/overview.md
+                - Components:                           software-directory/machine-learning/python-ml/components.md
+                - Data:                                 software-directory/machine-learning/python-ml/data.md
         - Analysis & Visualization:
             - VESTA:                                    software-directory/analysis/vesta.md
             - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
@@ -592,6 +612,8 @@ nav:
             - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
             - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
             - Reaction Energy Profile:                  properties-directory/non-scalar/reaction-energy-profile.md
+            - File Content:                             properties-directory/non-scalar/file-content.md
+            - Workflow:                                 properties-directory/non-scalar/workflow.md
         - Elemental:
             - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
             - Electronegativity:                        properties-directory/elemental/electronegativity.md
