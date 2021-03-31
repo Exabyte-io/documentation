@@ -139,6 +139,18 @@ Density of states contains information on the number of electronic states as a f
 {!example/properties_directory/non-scalar/density_of_states.json!}
 ```
 
+### [File Content](../../properties-directory/non-scalar/file-content.md)    
+
+Tags a file for display on the results tab of the web-app.
+
+```json tab="Schema"
+{!schema/properties_directory/non-scalar/file_content.json!}
+```
+
+```json tab="Example"
+{!example/properties_directory/non-scalar/file_content.json!}
+```
+
 ### [Reaction Energy Profile](../../properties-directory/non-scalar/reaction-energy-profile.md)
 
 The energy profile of a chemical reaction is a representation of its energetic pathway, followed by the reactants as they are transformed into products.
@@ -197,6 +209,18 @@ Stress tensor contains a 3x3 matrix of the stress components of the unit cell.
 
 ```json tab="Example"
 {!example/properties_directory/non-scalar/stress_tensor.json!}
+```
+
+### [Workflow](../../properties-directory/non-scalar/workflow.md)
+
+Some jobs can result in the generation of new workflows, which will be placed in the user's account.
+
+```json tab="Schema"
+{!schema/workflow.json!}
+```
+
+```json tab="Example"
+{!example/workflow.json!}
 ```
 
 ## Elemental Properties
