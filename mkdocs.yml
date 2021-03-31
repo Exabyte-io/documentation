@@ -152,8 +152,8 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
             - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
             - Interface:                             tutorials/materials/slabs-interface.md
-        - Python Packages:
-            - TensorFlow (GPU):                      tutorials/python-packages/tensorflow-gpu.md
+        - General Functionality:
+            - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
 
 
 # COMMON UI COMPONENTS
