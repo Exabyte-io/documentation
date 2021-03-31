@@ -36,6 +36,7 @@ lammps/1116-i-174-impi-044           vmd/1.9.3
 lammps/1218-i-174-impi-044           vnl-atk/2016.2
 nwchem/66-i-174-impi-044             wien2k/171-i-174-impi-044(default)
 nwchem/702-g-485-ompi-110            xcrysden/1.5.60
+nwchem/702-i-174-impi-044
 
 ---------------------------------- /export/compute/modulefiles/compilers ----------------------------------
 gcc/5.4.0            intel/i-174(default)
@@ -44,7 +45,8 @@ gcc/5.4.0            intel/i-174(default)
 mkl/i-174(default)    mpi/impi-044(default) mpi/ompi-110          openblas/218-g-540
 
 ---------------------------------- /export/compute/modulefiles/languages ----------------------------------
-python/2.7.5          python/3.8.6(default)
+python/2.7.5           python/3.7.9           python/3.9.1
+python/3.6.12          python/3.8.6(default)  python/anaconda3-5.2.0
 ```
 
 Through the `module avail` command, the user can also **search** for available modules, by partially inserting the module's name. This functionality is demonstrated in the example below.
