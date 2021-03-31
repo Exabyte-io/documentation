@@ -12,11 +12,11 @@ In the expandable section below, the user can find an example JSON representatio
   </summary> 
 
 ```json tab="Schema" 
-{!schema/material.json!}
+{!esse/schema/material.json!}
 ```
 
 ```json tab="Example" 
-{!example/material.json!}
+{!esse/example/material.json!}
 ```
 
 </details>
