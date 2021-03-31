@@ -98,7 +98,7 @@ we find the following units:
 | 2     | ` Data Input`                 | `pyml:data_input:read_csv:pandas`            |
 | 3     | `Data Standardize`            | `pyml:pre_processing:standardization:sklearn`|
 | 4     | `Model Train and Predict`     | `pyml:model:multilayer_perceptron:sklearn`   |
-| 5     | `Parity Plot`                 | `pyml:post_processing_parity_plot_matplotlib`|
+| 5     | `Parity Plot`                 | `pyml:post_processing:parity_plot_matplotlib`|
 
 
 ## Links
