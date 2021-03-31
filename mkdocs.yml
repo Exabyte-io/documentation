@@ -112,7 +112,7 @@ nav:
         - Machine Learning (ML):
               # Differentiate between Legacy and PythonML tutorials in Overview
             - Overview:                              tutorials/ml/overview.md
-            - Legacy (ExabyteML):
+            - ExabyteML (legacy):
                 - Train ML Model:                        tutorials/ml/train-ml-model.md
                 - Predict New Properties:                tutorials/ml/predict-ml-properties.md
             - Python ML:
