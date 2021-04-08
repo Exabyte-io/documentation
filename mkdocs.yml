@@ -34,7 +34,7 @@ extra:
           link: https://www.linkedin.com/company/exabyte-io
 markdown_extensions:
     - markdown_include.include:
-        base_path: esse
+        base_path: data
     - admonition
     - codehilite:
         linenums: true
@@ -116,19 +116,9 @@ nav:
                 - Train ML Model:                        tutorials/ml/train-ml-model.md
                 - Predict New Properties:                tutorials/ml/predict-ml-properties.md
             - Python ML:
-                  # Tutorial Content:
-                  # 1. Getting an ML Workflow Template
-                  # 2. Configuring the Workflow
-                  # 3. Running the Training Job
-                  # 4. Checking the Results
                 - Train ML Model:                        tutorials/python-ml/train-ml-model.md
-                  # Tutorial demonstrates how to share a trained model with another user
-                - Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
-                  # Tutorial Content
-                  # 1. Finding a Predict Workflow
-                  # 2. Configuring the Workflow
-                  # 3. Running the Predict Job
-                  # 4. Obtaining Results
+                  #Todo: Tutorial demonstrates how to share a trained model with another user
+                #- Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
                 - Predict New Properties:                tutorials/python-ml/predict-ml-properties.md
         - Density Functional Theory:
             - Electronic Properties:

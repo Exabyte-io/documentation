@@ -8,8 +8,8 @@ available executables and flavors under the
 [Unit Editor Interface](../../../workflow-designer/unit-editor.md#application).
 
 !!!warning "Implementation on our platform"
-The user who wishes for additional functionality to be added to our platform in future should express so via
-a [support request](../../../ui/support.md).
+    The user who wishes for additional functionality to be added to our platform in future should express so via
+    a [support request](../../../ui/support.md).
 
 ## Executable
 
@@ -74,7 +74,10 @@ with settings.context as context:
 
 PythonML workflows contain two subworkflows. The first, called "Set Up the Job" performs actions such as copying data
 and setting environment variables necessary for the job to run. The second, called "Machine Learning," contains the
-actual machine learning units.
+actual machine learning units. A diagram can be found below, based on the bank workflow located
+[here](https://platform.exabyte.io/analytics/workflows/tpthENFEhHHoDKhzW).
+
+![Workflow Diagram](../../../images/software-directory/machine-learning/python-ml/ML_Train_Diagram.png)
 
 ### Subworkflow: Set Up the Job
 
@@ -86,7 +89,17 @@ when [ the predict workflow is generated](../../../properties-directory/non-scal
 ### Subworkflow: Machine Learning
 
 This subworkflow is where a user's requested machine learning units reside. This subworkflow is generally the one that
-users are expected to modify, to add or remove different machine learning workflow units.
+users are expected to modify, to add or remove different machine learning workflow units. In the above diagram,
+we find the following units:
+
+| Order | Unit Name                     | Flavor                                       |
+|-------|-------------------------------|----------------------------------------------|
+| 1     |`Setup Packages and Variables` | `pyml:setup_variables_packages`              |
+| 2     | ` Data Input`                 | `pyml:data_input:read_csv:pandas`            |
+| 3     | `Data Standardize`            | `pyml:pre_processing:standardization:sklearn`|
+| 4     | `Model Train and Predict`     | `pyml:model:multilayer_perceptron:sklearn`   |
+| 5     | `Parity Plot`                 | `pyml:post_processing:parity_plot_matplotlib`|
+
 
 ## Links
 
