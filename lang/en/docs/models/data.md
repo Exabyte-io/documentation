@@ -5,9 +5,9 @@ The example of a JSON data structure for a model, based upon the **[Exabyte Data
 The corresponding method components are also included in this example, and are explained further [in this section](../methods/overview.md) of the documentation. 
 
 ```json tab="Schema" 
-{!schema/model.json!}
+{!esse/schema/model.json!}
 ```
 
 ```json tab="Example" 
-{!example/model.json!}
+{!esse/example/model.json!}
 ```
