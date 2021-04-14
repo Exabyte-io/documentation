@@ -52,12 +52,24 @@ designer), and choose "Select Workflow."
 ![Job Designer with Circles](../../images/tutorials/job_designer_with_python_ml_name_and_three_dots_circled.png "Job designer page")
 
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
-search for "Python ML Train" and click on it to bring it into our account.
+search for "Python ML Train" and select it.
 
-## 5. ML Workflow Familiarization
+## 5. Select the Dataset
 
-We now have our ML workflow selected. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see
-our training workflow.
+The job designer changes now that our ML Training workflow is selected. The "Materials" tab has now been replaced with
+a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
+a preview of the dataset once it is selected.
+
+To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
+the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
+files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_train_with.csv."
+
+A preview of the data then appears on the dataset tab, indicating that the data has successfully been loaded.
+
+## 6. Configure the Workflow
+
+We now chosen our ML workflow and training set. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we
+can see our training workflow.
 
 We can see two [subworkflows](../../workflows/components/subworkflows.md) available: `Set Up the Job`
 and `Machine Learning`.
@@ -82,9 +94,9 @@ workflow editor. Then, set `target_column_name` to "PBE_BE_eV" to define the tar
 
 ![SettingsPy](../../images/tutorials/settings_py_with_target_colname_circled.png "Settings with Colname Selected")
 
-Then, go back to the "Overview" portion of the workflow editor.
-We can now demonstrate how a workflow unit's parameters can be changed. For this tutorial, we
-will set our neural network to have 2 hidden layers of 100 layers each, and we will train for 5000 iterations.
+Then, go back to the "Overview" portion of the workflow editor. We can now demonstrate how a workflow unit's parameters
+can be changed. For this tutorial, we will set our neural network to have 2 hidden layers of 100 layers each, and we
+will train for 5000 iterations.
 
 Begin by selecting the `Model Train and Predict` workflow unit, as below:
 
@@ -97,7 +109,7 @@ our model contain two hidden layers of 100 neurons each.
 
 Then, close the dialogue. The workflow has now been configured, and we are ready to train.
 
-## 6. Submit the Job
+## 7. Submit the Job
 
 Click the check-mark in the upper right of the job designer, in the [Header Menu](../../jobs-designer/header-menu.md) to
 save the job. We now return to the [job explorer](../../jobs/ui/explorer.md) page with the job in a pre-submission
@@ -107,7 +119,7 @@ status.
 
 We can now [run the job](../../jobs/actions/run.md) and wait for it to complete.
 
-## 7. Analyze the Training Results
+## 8. Analyze the Training Results
 
 After a few minutes, the job will complete. We can then visit the job's [results tab](../../jobs/ui/results-tab.md),
 where we will see that two properties have been calculated. The first, `Machine Learning - Model Train and Predict` is
