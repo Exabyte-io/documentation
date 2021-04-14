@@ -8,8 +8,8 @@ available executables and flavors under the
 [Unit Editor Interface](../../../workflow-designer/unit-editor.md#application).
 
 !!!warning "Implementation on our platform"
-The user who wishes for additional functionality to be added to our platform in future should express so via
-a [support request](../../../ui/support.md).
+    The user who wishes for additional functionality to be added to our platform in future should express so via
+    a [support request](../../../ui/support.md).
 
 ## Executable
 
@@ -77,8 +77,8 @@ Data input flavors generally perform I/O or other initial operations on the data
 
 pyml:data_input:**read_csv**:pandas
 
-- This workfow unit reads in data for the ML workflow. If the workfo is in training mode, it will ead in the data before
-  converting it to a numpy array, and save it for use later.
+- This workflow unit reads in data for the ML workflow. If the workflow is in training mode, it will ead in the data
+  before converting it to a numpy array, and save it for use later.
 - This unit will create variables for the "target" and "descriptors" used by the training set.
 
 pyml:data_input:**train_test_split**:sklearn
