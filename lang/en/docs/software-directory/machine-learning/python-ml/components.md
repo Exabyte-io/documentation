@@ -73,11 +73,27 @@ pyml:**setup_variables_packages**
 
 ### Data Input Flavors
 
+Data input flavors generally perform I/O or other initial operations on the dataset.
+
 pyml:data_input:**read_csv**:pandas
+
+- This workfow unit reads in data for the ML workflow. If the workfo is in training mode, it will ead in the data before
+  converting it to a numpy array, and save it for use later.
+- This unit will create variables for the "target" and "descriptors" used by the training set.
+
+pyml:data_input:**train_test_split**:sklearn
+
+- Splits the dataset into a training and testing set. The variable `percent_held_as_test` in the important settings
+  controls how much of the input dataset is held back as a testing set. By default, this unit will place 20% of the
+  dataset into the testing set, and 80% into the training set.
+- This unit will do nothing in the case of predictions.
 
 ---
 
 ### Pre-Processing Flavors
+
+In our machine learning platform, "Pre-Processing" is a catch-all term for anything that happens before a model is
+trained but after the data has been loaded.
 
 pyml:pre_processing:**min_max_scaler**:sklearn
 
@@ -205,7 +221,11 @@ pyml:post_processing:**roc_curve**:sklearn
   tasks.
 - This unit only runs during a training job. It does nothing if the workflow is being run in predict mode.
 
-## Custom Machine Learning Units
+---
+
+### Custom Machine Learning Units
+
+Custom machine learning units are created by selecting the pyml:**custom** flavor.
 
 Custom machine learning units take advantage of our implementation's ability to mark Python objects as needed for
 subsequent predict runs. This can be accomplished by calling the `save` and `load` methods of `settings.context`.
