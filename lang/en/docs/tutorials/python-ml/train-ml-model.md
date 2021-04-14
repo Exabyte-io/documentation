@@ -31,13 +31,11 @@ below:
 Then, when the browser's upload window appears, we navigate to where we downloaded the file in section 1, and select it
 for upload. If the upload was successful, the file will then be visible in the dropbox.
 
-Take note of the name of the file. For the purposes of this tutorial, it should be named `data_to_train_with.csv`
-
-## 3. Copy the "Python ML Train" Workflow from the Workflow Bank
+## 3. Copy the "Python ML Train Regression" Workflow from the Workflow Bank
 
 Next, we select the`Bank Worfklows` button in the [left sidebar](../../ui/left-sidebar.md), which brings us to
-the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train" workflow owned by the "
-Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
+the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train Regression" workflow owned
+by the "Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
 
 A diagram and detailed description of this workflow can be found
 [here](../../software-directory/machine-learning/python-ml/components.md).
@@ -56,7 +54,7 @@ designer), and choose "Select Workflow."
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
 search for "Python ML Train" and click on it to bring it into our account.
 
-## 5. Configure the ML Workflow
+## 5. ML Workflow Familiarization
 
 We now have our ML workflow selected. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see
 our training workflow.
@@ -64,37 +62,13 @@ our training workflow.
 We can see two [subworkflows](../../workflows/components/subworkflows.md) available: `Set Up the Job`
 and `Machine Learning`.
 
-### Specify the Training Data
-
-We will first configure the `Set Up the Job` workflow to accept our training data.
-
-Begin by selecting the "Declare Training Data" workflow unit, circled below:
-
-![ML Workflow Tab](../../images/tutorials/workflows_tab_with_ml_workflow_and_declare_training_data_circled.png "Workflow Tab")
-
-We can now see the "Declare Training Data" IO unit. Because we named our file in dropbox `data_to_train_with.csv`
-earlier, we do not need to modify this unit. In a scenario where we wanted to use a different file name for our training
-data, the [Workflow Designer](../../workflow-designer/overview.md) could be used to modify the value.
-
-![Training Data IO Unit](../../images/tutorials/training_data_io_unit.png "Training Data IO Unit")
+The `Set Up the Job` contains instructions to copy in the training data.
 
 !!!warning "A Word of Caution"
-    The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
-    Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
-    during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
-    creation of the Predict workflow.
+    The `Set Up the Job` subworkflow is automatically re-configured during the training process. Modifying it can disrupt
+    creation of the Predict workflow, leading to inaccurate results, or a failure to generate a predict workflow.
 
-We will then close the Declare Training Data IO unit by clicking on the "X" in the dialogue's upper right corner. This
-will bring us back to the [Workflows Tab](../../jobs-designer/workflow-tab.md "Workflows Tab").
-
-### Configure Settings.py
-
-We can now configure our settings file. Begin by selecting the `Machine Learning` subworkflow. This will make visible
-all of the machine learning units that are inside the workflow:
-
-![ML Train](../../images/tutorials/workflows_tab_with_ml_train_subworkflow_circled.png "ML Train Subworkflow")
-
-This workflow has the following steps:
+Select the `Machine Learning` subworkflow by clicking on it. The following workflow units should now be visible:
 
 0. `Setup Packages and Variables` - Configures the job and downloads all required packages with `pip`
 1. `Data Input` - Reads the training data from disk
@@ -103,24 +77,21 @@ This workflow has the following steps:
 4. `Parity Plot` - Draws a plot of model predictions versus training data, and saves it to the disk. This plot is shown
    on the Results tab.
 
-We will configure the `settings.py` file by selecting the `Setup Packages and Variables` unit (see above figure). This
-will open a dialogue containing the content of `settings.py`. Scroll down to line 41 of the file, and note the presence
-of a variable named `target_column_name`, with the value of `"target"`. This value should instead be the target column
-of our training data, so change it to `"PBE_BE_eV"` as below:
+We will begin by configuring our Machine Learning subworkflow. To begin, select the "Important Settings" portion of the
+workflow editor. Then, set `target_column_name` to "PBE_BE_eV" to define the target column of the training set.
 
 ![SettingsPy](../../images/tutorials/settings_py_with_target_colname_circled.png "Settings with Colname Selected")
 
-Then, close the dialogue. We can now demonstrate how a workflow unit's parameters can be changed. For this tutorial, we
+Then, go back to the "Overview" portion of the workflow editor.
+We can now demonstrate how a workflow unit's parameters can be changed. For this tutorial, we
 will set our neural network to have 2 hidden layers of 100 layers each, and we will train for 5000 iterations.
 
-Begin by selecting the `ML Train and Predict` workflow unit, as below:
+Begin by selecting the `Model Train and Predict` workflow unit, as below:
 
 ![ML Train and Predict](../../images/tutorials/workflows_tab_with_ml_train_subworkflow_and_train_unit_circled.png "Workflow tab with ml train unit circled")
 
-We can then scroll down to line 36, and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to add an
-extra hidden layer of 100 neurons each to the model. We can then find line 40, and adjust the `max_iter` argument
-from `500`
-to `5000`, to give the network enough time to train. These changes are circled below.
+We can then scroll down to line 37, and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to make
+our model contain two hidden layers of 100 neurons each.
 
 ![Neural Network Settings](../../images/tutorials/ml_train_neural_network_with_2_hidden_layers.png "Neural Network Settings")
 
