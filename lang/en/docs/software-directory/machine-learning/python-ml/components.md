@@ -135,14 +135,14 @@ performance (such as a parity plot or ROC curve).
 When a workflow is run in the predict mode, the model is loaded and used to make predictions. These predictions are then
 written to a file named "predictions.csv"
 
-#### Classification
+#### **Classification**
 
 pyml:model:**random_forest_classification**:sklearn
 
 - Workflow unit to train a random forest classification model with Scikit-Learn. Model parameters are derived from
   Scikit-Learn's defaults.
 
-#### Regression
+#### **Regression**
 
 pyml:model:**adaboosted_trees_regression**:sklearn
 
@@ -185,7 +185,7 @@ pyml:model:**random_forest_regression**:sklearn
 - This workflow unit trains a random forest regression model with Scikit-Learn. Model parameters are derived from
   Scikit-Learn's defaults.
 
-#### Unsupervised Learning
+#### **Unsupervised Learning**
 
 pyml:model:**k_means_clustering**:sklearn
 
