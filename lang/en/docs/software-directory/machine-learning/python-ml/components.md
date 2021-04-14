@@ -51,7 +51,7 @@ A variety of flavors are available for use in machine learning. Generally, flavo
 workflow is being run to train or whether the workflow is being run to predict.
 ---
 
-### Setup Flavors
+### Setup
 
 Setup flavors facilitate the initialization and setup of ML jobs.
 
@@ -71,7 +71,7 @@ pyml:**setup_variables_packages**
 
 ---
 
-### Data Input Flavors
+### Data Input
 
 Data input flavors generally perform I/O or other initial operations on the dataset.
 
@@ -90,7 +90,7 @@ pyml:data_input:**train_test_split**:sklearn
 
 ---
 
-### Pre-Processing Flavors
+### Pre-Processing
 
 In our machine learning platform, "Pre-Processing" is a catch-all term for anything that happens before a model is
 trained but after the data has been loaded.
@@ -126,7 +126,7 @@ pyml:pre_processing:**standardization**:sklearn
 
 ---
 
-### Model Flavors
+### Modeling
 
 When a workflow is run in the training mode, the model is trained and then it is saved, along with a metric to describe
 the model's performance (such as RMSE). The model also makes predictions to facilitate generation of a plot of
@@ -194,7 +194,7 @@ pyml:model:**k_means_clustering**:sklearn
 
 ---
 
-### Post-Processing Flavors
+### Post-Processing
 
 In our machine learning platform, "Post-Processing" is a catch-all term for anything that happens after a model is
 trained. Currently, we offer three different ways to plot training data in this section, one type of plot each for
