@@ -8,8 +8,8 @@ available executables and flavors under the
 [Unit Editor Interface](../../../workflow-designer/unit-editor.md#application).
 
 !!!warning "Implementation on our platform"
-    The user who wishes for additional functionality to be added to our platform in future should express so via
-    a [support request](../../../ui/support.md).
+The user who wishes for additional functionality to be added to our platform in future should express so via
+a [support request](../../../ui/support.md).
 
 ## Executable
 
@@ -52,6 +52,8 @@ workflow is being run to train or whether the workflow is being run to predict.
 ---
 
 ### Setup Flavors
+
+Setup flavors facilitate the initialization and setup of ML jobs.
 
 pyml:**setup_variables_packages**
 
@@ -110,13 +112,80 @@ pyml:pre_processing:**standardization**:sklearn
 
 ### Model Flavors
 
-pyml:model:**multilayer_perceptron**:skearn
+When a workflow is run in the training mode, the model is trained and then it is saved, along with a metric to describe
+the model's performance (such as RMSE). The model also makes predictions to facilitate generation of a plot of
+performance (such as a parity plot or ROC curve).
+
+When a workflow is run in the predict mode, the model is loaded and used to make predictions. These predictions are then
+written to a file named "predictions.csv"
+
+#### Classification
+
+pyml:model:**random_forest_classification**:sklearn
+
+- Workflow unit to train a random forest classification model with Scikit-Learn. Model parameters are derived from
+  Scikit-Learn's defaults.
+
+#### Regression
+
+pyml:model:**adaboosted_trees_regression**:sklearn
+
+- Workflow unit for adaptive-boosted trees regression with Scikit-Learn. Parameters for the estimator and ensemble are
+  derived from Scikit-Learn's defaults.
+
+pyml:model:**bagged_trees_regression**:sklearn
+
+- Workflow unit for a bagged trees regression model with Scikit-Learn. Parameters for the estimator and ensemble are
+  derived from Scikit-Learn's defaults.
+
+pyml:model:**gradboosted_trees_regression**:sklearn
+
+- Workflow to train the gradient-boosted trees ensemble method with Scikit-Learn. Model parameters are derivedf rom
+  Scikit-Learn's defaults.
+- Note: In the gradient-boosted trees ensemble used, the weak learners used as estimators cannot be tuned with the same
+  level of fidelity allowed in the Adaptive-Boosted Trees ensemble.
+
+pyml:model:**kernel_ridge_regression**:sklearn
+
+- Workflow unit for a kernelized ridge regression model with Scikit-Learn. Model parameters are derived from
+  Scikit-Learn's defaults.
+
+pyml:model:**lasso_regression**:sklearn
+
+- Workflow unit for a LASSO-based regression model with Scikit-Learn. Model parameters are derived from Scikit-Learn's
+  defaults. The alpha parameter has been lowered from a value of 1.0 to 0.1.
+
+pyml:model:**multilayer_perceptron**:sklearn
+
+- Workflow unit to train a simple feedforward neural network model on a regression problem using Scikit-Learn. Model
+  parameters are derived from Scikit-Learn's defaults.
+
+pyml:model:**ridge_regression**:sklearn
+
+- Workflow unit for a ridge regression model with Scikit-Learn. Alpha is taken from Scikit-Learn's default parameters.
+
+pyml:model:**random_forest_regression**:sklearn
+
+- This workflow unit trains a random forest regression model with Scikit-Learn. Model parameters are derived from
+  Scikit-Learn's defaults.
+
+#### Unsupervised Learning
+
+pyml:model:**k_means_clustering**:sklearn
+
+- Workflow unit to train a k-means clustering model with Scikit-Learn. Model parameters are derived from Scikit-Learn's
+  defaults.
 
 ---
 
 ### Post-Processing Flavors
 
+In our machine learning platform, "Post-Processing" is a catch-all term for anything that happens after a model is
+trained. Currently, we offer three different ways to plot training data in this section, one type of plot each for
+regression, classification, or unsupervised-learning problems.
+
 pyml:post_processing:**pca_2d_clusters**:matplotlib
+
 - This unit takes an N-dimensional feature space, and uses Principle Component Analysis (PCA) to project it onto a 2D
   space to facilitate plotting on a 2D scatter plot.
 - The 2D space we project onto is the first two principle components identified in PCA, which are the two vectors with
@@ -125,16 +194,16 @@ pyml:post_processing:**pca_2d_clusters**:matplotlib
 - This unit only runs during a training job. It does nothing if the workflow is being run in predict mode.
 
 pyml:post_processing:**parity_plot**:matplotlib
+
 - This unit generates a parity plot based on the known values in the training data, and the predicted values generated
   using the training (or test) data.
 - This unit only runs during a training job. It does nothing if the workflow is being run in predict mode.
 
-
 pyml:post_processing:**roc_curve**:sklearn
+
 - Computes and displays the Receiver Operating Characteristic (ROC) curve. This is restricted to binary classification
   tasks.
 - This unit only runs during a training job. It does nothing if the workflow is being run in predict mode.
-
 
 ## Custom Machine Learning Units
 
