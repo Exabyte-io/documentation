@@ -62,27 +62,28 @@ To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
 files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_predict_with.csv."
 
+![Dataset Tab with Predictions](../../images/tutorials/DatasetTabVisiblePredictions.png "Dataset Tab with Predictions")
+
 A preview of the data then appears on the dataset tab, indicating that the data has successfully been loaded.
 
-## 4. Configure the ML Workflow
+## 4. Inspect the ML Workflow
 
-We now have our ML workflow selected. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see
-our predict workflow.
+We now have our ML workflow selected and our dataset has been supplied.
+Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see our predict workflow.
 
 We can see two [subworkflows](../../workflows/components/subworkflows.md) available: `Set Up the Job`
 and `Machine Learning`.
 
-The `Set Up the Job` contains instructions to copy in the trained model as well as the data we have selected.
+The `Set Up the Job` subworkflow contains instructions to copy in the trained model as well as the data we have selected.
 
 !!!warning "A Word of Caution"
     The `Set Up the Job` subworkflow has been automatically configured during the training process, and is not
     intended for modification by the user. Changing it can render the predict workflow inoperable, and can lead to
     inaccurate prediction results. Do not modify the `Set Up the Job` subworkflow.
 
-Select the `Machine Learning` subworkflow by clicking on it. Then, select the "Important Settings" portion of the
-workflow editor. Then, set `target_column_name` to "PBE_BE_eV" to define the target column of the training set.
+The `Machine Learning` subworkflow contains the individual steps of the trained model we created previously.
 
-We have configured the job, and it is ready to submit.
+There is no further configuration required: the workflow is already trained, and the prediction job is ready to submit.
 
 ## 6. Submit the Job
 
