@@ -70,16 +70,16 @@ A preview of the data then appears on the dataset tab, indicating that the data 
 
 ## 6. Configure the Workflow
 
-We now chosen our ML workflow and training set. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we
+We have now chosen our ML workflow and training set. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we
 can see our training workflow.
 
 We can see two [subworkflows](../../workflows/components/subworkflows.md) available: `Set Up the Job`
 and `Machine Learning`.
 
-The `Set Up the Job` contains instructions to copy in the training data.
+The `Set Up the Job` subworkflow contains instructions to copy in the training data.
 
 !!!warning "A Word of Caution"
-    The `Set Up the Job` subworkflow is automatically re-configured during the training process. Modifying it can disrupt
+    The `Set Up the Job` subworkflow is automatically configured during the training process. Modifying it can disrupt
     creation of the Predict workflow, leading to inaccurate results, or a failure to generate a predict workflow.
 
 Select the `Machine Learning` subworkflow by clicking on it. The following workflow units should now be visible:
@@ -91,7 +91,7 @@ Select the `Machine Learning` subworkflow by clicking on it. The following workf
 4. `Parity Plot` - Draws a plot of model predictions versus training data, and saves it to the disk. This plot is shown
    on the Results tab.
 
-We will begin by configuring our Machine Learning subworkflow. To begin, select the "Important Settings" portion of the
+We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
 workflow editor. Then, set `target_column_name` to "PBE_BE_eV" to define the target column of the training set.
 
 ![Target Colname Set](../../images/tutorials/ImportantSettingsWithColname.png "Important Settings with column name set")
