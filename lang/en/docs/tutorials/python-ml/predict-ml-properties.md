@@ -2,11 +2,11 @@
 
 This tutorial demonstrates how to perform predictions using
 a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-trianed for regression
+trained for regression
 using [SciKit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
 
 !!! warning "Pre-Requisites"
-In order to perform this tutorial, the [ML Training](train-ml-model.md) tutorial must be completed.
+    In order to perform this tutorial, the [ML Training](train-ml-model.md) tutorial must be completed.
 
 ## 1. Acquire Data
 
@@ -26,7 +26,7 @@ will use in this tutorial for predictions. A sample of the first 5 lines in the 
 
 ## 2. Upload the Data
 
-In order to upload predict data, we first click the `Dropbox` button in the [left sidebar](../../ui/left-sidebar.md).
+In order to upload data for predictions, we first click the `Dropbox` button in the [left sidebar](../../ui/left-sidebar.md).
 This will bring us to the [Dropbox Page](../../jobs/ui/files-tab.md). We can then click the "Upload" button, circled
 below:
 
