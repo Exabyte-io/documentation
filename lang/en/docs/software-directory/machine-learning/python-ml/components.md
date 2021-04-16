@@ -23,7 +23,7 @@ and setting environment variables necessary for the job to run. The second, call
 actual machine learning units. A diagram can be found below, based on the bank workflow located
 [here](https://platform.exabyte.io/analytics/workflows/rg3HcXd9Rg7hTa5Q3).
 
-![Workflow Diagram](../../../images/software-directory/machine-learning/python-ml/ML_Train_Diagram.png)
+![Machine Learning Subworkflow Diagram with Automated Calculation Setup and Pipeline](../../../images/software-directory/machine-learning/python-ml/ml-train-diagram.png "Machine Learning Subworkflow Diagram with Automated Calculation Setup and Pipeline")
 
 ### Subworkflow: Set Up the Job
 
