@@ -16,42 +16,25 @@ available executables and flavors under the
 PythonML is based on the `python` [executable](../../../software/components.md#executables), and through this executable
 the implemented ML calculations can be performed.
 
-## Workflow Structure
+## Training and Prediction
 
-PythonML workflows contain two subworkflows. The first, called "Set Up the Job" performs actions such as copying data
-and setting environment variables necessary for the job to run. The second, called "Machine Learning," contains the
-actual machine learning units. A diagram can be found below, based on the bank workflow located
-[here](https://platform.exabyte.io/analytics/workflows/rg3HcXd9Rg7hTa5Q3).
+PythonML workflows can be run in either a "Train" or a "Predict" mode, performing different operations based on what the
+workflow is being used to do. For example, in "Training" mode, a model may be trained and then saved to a disk. In the
+"Predict" mode, the already-trained model would be loaded from the disk, and a prediction would be made using it.
 
-![Machine Learning Subworkflow Diagram with Automated Calculation Setup and Pipeline](../../../images/software-directory/machine-learning/python-ml/ml-train-diagram.png "Machine Learning Subworkflow Diagram with Automated Calculation Setup and Pipeline")
+The "Training" or "Predict" status is handled automatically by the platform. In general, new ML models begin in the
+"Train" mode. Then, when they are trained, a new workflow is added to the user's account set to the "Predict" mode.
 
-### Subworkflow: Set Up the Job
+## Structure
 
-This subworkflow facilitates setting up the PythonML job. Users should not need to edit this workflow. The configuration
-of this workflow is handled automatically on the
-when [the predict workflow is generated](../../../properties-directory/non-scalar/workflow.md).
-
-### Subworkflow: Machine Learning
-
-This subworkflow is where a user's requested machine learning units reside. This subworkflow is generally the one that
-users are expected to modify, to add or remove different machine learning workflow units. In the above diagram, we find
-the following units:
-
-| Unit Name                     | Flavor                                       | Description |
-|-------------------------------|----------------------------------------------|-------------|
-| `Setup Packages and Variables`| `pyml:setup_variables_packages`              |Contains functions and configuration essential for all python-ML Workflows|
-| ` Data Input`                 | `pyml:data_input:read_csv:pandas`            |for reading in CSV data using Pandas [^1]|
-| `Data Standardize`            | `pyml:pre_processing:standardization:sklearn`|scales the data [^2] such that it has a mean of 0 and a standard deviation of 1, as implemented in Scikit-Learn [^3]|
-| `Model Train and Predict`     | `pyml:model:multilayer_perceptron:sklearn`   |a Multilayer Perceptron [^4] implemented in Scikit-Learn [^5]|
-| `Parity Plot`                 | `pyml:post_processing:parity_plot:matplotlib`|generates a parity plot [^6] using Matplotlib [^7]|
-
-## Flavors
-
-A variety of flavors are available for use in machine learning. Generally, flavors behave different based on whether a
-workflow is being run to train or whether the workflow is being run to predict.
+PythonML [workflows]('workflow-structure') contain several units executed in a sequence. These units are organized into flavors, based on what
+they accomplish when included in a workflow. Generally, flavors behave different based on whether a workflow is being
+run to train or whether the workflow is being run to predict. In general, the flavors are highly modular, and act as "
+Lego blocks" that can be added or removed from a workflow. We include a variety of flavors by default, to help
+facilitate the construction of machine learning workflows.
 ---
 
-### Setup
+### Setup Flavors
 
 Setup flavors facilitate the initialization and setup of ML jobs.
 
@@ -71,7 +54,7 @@ pyml:**setup_variables_packages**
 
 ---
 
-### Data Input
+### Data Input Flavors
 
 Data input flavors generally perform I/O or other initial operations on the dataset.
 
@@ -90,7 +73,7 @@ pyml:data_input:**train_test_split**:sklearn
 
 ---
 
-### Pre-Processing
+### Pre-Processing Flavors
 
 In our machine learning platform, "Pre-Processing" is a catch-all term for anything that happens before a model is
 trained but after the data has been loaded.
@@ -126,7 +109,7 @@ pyml:pre_processing:**standardization**:sklearn
 
 ---
 
-### Modeling
+### Modeling Flavors
 
 When a workflow is run in the training mode, the model is trained and then it is saved, along with a metric to describe
 the model's performance (such as RMSE). The model also makes predictions to facilitate generation of a plot of
@@ -194,7 +177,7 @@ pyml:model:**k_means_clustering**:sklearn
 
 ---
 
-### Post-Processing
+### Post-Processing Flavors
 
 In our machine learning platform, "Post-Processing" is a catch-all term for anything that happens after a model is
 trained. Currently, we offer three different ways to plot training data in this section, one type of plot each for
@@ -249,13 +232,17 @@ import settings
 with settings.context as context:
     # Train
     if settings.is_workflow_running_to_train:
-        descriptors = context.load("descriptors")
-        target = context.load("target")
+        train_descriptors = context.load("train_descriptors")
+        train_target = context.load("train_target")
+        test_descriptors = context.load("test_descriptors")
+        test_target = context.load("test_target")
 
         # Do some transformations to the data here
 
-        context.save(descriptors, "descriptor")
-        context.save(target, "target")
+        context.save(train_descriptors, "train_descriptors")
+        context.save(train_target, "train_target")
+        context.save(test_descriptors, "test_descriptors")
+        context.save(train_descriptors, "train_descriptors")
 
 
     # Predict
@@ -264,19 +251,3 @@ with settings.context as context:
 
         # Do some predictions or transformation to the data here
 ```
-
-## Links
-
-[^1]: [read_csv function, Pandas](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
-
-[^2]: [Feature Scaling, Wikipedia](https://en.wikipedia.org/wiki/Feature_scaling#Standardization_(Z-score_Normalization))
-
-[^3]: [Standard Scaler, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
-
-[^4]: [Multilayer Perceptron, Wikipedia](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-
-[^5]: [MLPRegressor class Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html)
-
-[^6]: [Parity Plot, Wikipedia](https://en.wikipedia.org/wiki/Parity_plot)
-
-[^7]: [Matpotlib Documentation](https://matplotlib.org/)
