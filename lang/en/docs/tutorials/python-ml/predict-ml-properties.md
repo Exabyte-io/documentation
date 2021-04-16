@@ -30,7 +30,7 @@ In order to upload data for predictions, we first click the `Dropbox` button in 
 This will bring us to the [Dropbox Page](../../jobs/ui/files-tab.md). We can then click the "Upload" button, circled
 below:
 
-![Dropbox Page with Upload](../../images/tutorials/pythonML/dropbox_page_with_upload_circled.png "Dropbox page with upload circled")
+![Dropbox Page with Upload](../../images/tutorials/pythonML/dropbox-page-with-upload-circled.png "Dropbox page with upload circled")
 
 Then, when the browser's upload window appears, we navigate to where we downloaded the file in section 1, and select it
 for upload. If the upload was successful, the file will then be visible in the dropbox.
@@ -44,7 +44,7 @@ First, we will give the job a friendly name, such as "Python ML Tutorial Predict
 the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in the upper-right of the job
 designer), and choose "Select Workflow."
 
-![Job Designer with Circles](../../images/tutorials/pythonML/job_designer_python_ml_predict_name.png "Job designer page")
+![Job Designer with Circles](../../images/tutorials/pythonML/job-designer-python-ml-predict-name.png "Job designer page")
 
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
 search for "workflow:pyml_predict" and click on it to bring it into the job.
@@ -62,7 +62,7 @@ To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
 files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_predict_with.csv."
 
-![Dataset Tab with Predictions](../../images/tutorials/pythonML/DatasetTabVisiblePredictions.png "Dataset Tab with Predictions")
+![Dataset Tab with Predictions](../../images/tutorials/pythonML/dataset-tab-visible-predictions.png "Dataset Tab with Predictions")
 
 A preview of the data then appears on the dataset tab, indicating that the data has successfully been loaded.
 
