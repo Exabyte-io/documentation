@@ -32,6 +32,22 @@ they accomplish when included in a workflow. Generally, flavors behave different
 run to train or whether the workflow is being run to predict. In general, the flavors are highly modular, and act as "
 Lego blocks" that can be added or removed from a workflow. We include a variety of flavors by default, to help
 facilitate the construction of machine learning workflows.
+
+Flavors are sorted into several categories:
+- `setup`, which helps facilitate the initialization and setup of ML jobs
+- `data_input`, which deals with data I/O and simple initial operations on the dataset
+- `pre_processing`, which processes the data before the model is trained
+- `model`, flavors which contain code to train and predict with different types of machine learning models
+- `post_processing`, a catch-all for anything that happens after the model has been trained (such as plot generation)
+
+Flavors are named with the following convention:
+
+pyml:category:name-of-the-unit:source-of-the-unit.
+
+All units begin with "pyml," to differentiate them from the existing Python flavors. The category is one of the categories
+enumerated above. The name-of-the-unit refers to the type of unit being used (e.g. `lasso` or `train_test_split`). The
+source-of-the-unit refers to the main package being used for the unit, such as `sklearn` or `numpy`.
+
 ---
 
 ### Setup Flavors
