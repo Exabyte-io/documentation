@@ -38,7 +38,7 @@ the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Pyth
 by the "Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
 
 A diagram and detailed description of this workflow can be found
-[here](../../software-directory/pythonML/machine-learning/python-ml/components.md).
+[here](../../software-directory/machine-learning/python-ml/components.md).
 
 ## 4. Create the ML Job
 
