@@ -101,13 +101,13 @@ can be changed.
 
 Begin by selecting the `Model Train and Predict` workflow unit, as below:
 
-![ML Train and Predict](../../images/tutorials/pythonML/workflows-tab-with-ml-train-subworkflow-and-train-unit-circled.png "Workflow tab with ml train unit circled")
+![Workflows tab with ml train subworkflow and train unit circled](../../images/tutorials/pythonML/workflows-tab-with-ml-train-subworkflow-and-train-unit-circled.png "Workflows tab with ml train subworkflow and train unit circled")
 
 We can then scroll down and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to make
 our model contain two hidden layers of 100 neurons each. We also change `max_iter` to 5000 to train for up to 5000
 iterations.
 
-![Neural Network Settings](../../images/tutorials/pythonML/ml-train-neural-network-with-2-hidden-layers.png "Neural Network Settings")
+![ML Train Neural Network with 2 Hidden Layers](../../images/tutorials/pythonML/ml-train-neural-network-with-2-hidden-layers.png "ML Train Neural Network with 2 Hidden Layers")
 
 Then, close the dialogue. The workflow has now been configured, and we are ready to train.
 
@@ -117,7 +117,7 @@ Click the check-mark in the upper right of the job designer, in the [Header Menu
 save the job. We now return to the [job explorer](../../jobs/ui/explorer.md) page with the job in a pre-submission
 status
 
-![PreSubmission](../../images/tutorials/pythonML/jobs-tab-with-ml-train-job-set-up.png "Files Explorer Tab")
+![Jobs Tab with ML Training Calculation Set Up](../../images/tutorials/pythonML/jobs-tab-with-ml-train-job-set-up.png "Jobs Tab with ML Training Calculation Set Up")
 
 We can now [run the job](../../jobs/actions/run.md) and wait for it to complete.
 
@@ -131,7 +131,7 @@ trained model for additional predictions on new data.
 The second result visible is `Machine Learning - Parity Plot`, which contains the predicted versus actual values for the
 adsorption energies we trained the model on.
 
-![Results Tab](../../images/tutorials/pythonML/ml-train-results-tab.png "Results Tab")
+![Results Tab Showcasing Parity Plot](../../images/tutorials/pythonML/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
 
 ## Animation
 
