@@ -80,7 +80,7 @@ pyml:data_input:**read_csv**:pandas
   before converting it to a numpy array, and save it for use later.
 - This unit will create variables for the "target" and "descriptors" used by the training set.
 
-pyml:data_input:**train_test_split**:sklearn
+pyml:data_input:**train_test_split**:sklearn [^1]
 
 - Splits the dataset into a training and testing set. The variable `percent_held_as_test` in the important settings
   controls how much of the input dataset is held back as a testing set. By default, this unit will place 20% of the
@@ -94,7 +94,7 @@ pyml:data_input:**train_test_split**:sklearn
 In our machine learning platform, "Pre-Processing" is a catch-all term for anything that happens before a model is
 trained but after the data has been loaded.
 
-pyml:pre_processing:**min_max_scaler**:sklearn
+pyml:pre_processing:**min_max_scaler**:sklearn [^2]
 
 - This workflow unit scales the data such that it is on interval `[0,1]`. It then saves the data for use further down
   the road in the workflow, such as un-transforming the data.
@@ -102,7 +102,7 @@ pyml:pre_processing:**min_max_scaler**:sklearn
   set. As a result, the scaler gets saved in the training phase.
 - During a predict workflow, the scaler is loaded, and the new examples are scaled using the stored scaler.
 
-pyml:pre_processing:**remove_missing**:pandas
+pyml:pre_processing:**remove_missing**:pandas [^3]
 
 - This workflow unit allows missing rows and/or columns to be dropped from the dataset by configuring the `to_drop`
   parameter.
@@ -111,11 +111,11 @@ pyml:pre_processing:**remove_missing**:pandas
     - `columns`: Columns with missing values will be removed
     - `both`: Rows and columns with missing values will be removed
 
-pyml:pre_processing:**remove_duplicates**:pandas
+pyml:pre_processing:**remove_duplicates**:pandas [^4]
 
 - This workflow unit will drop all duplicate rows, if it is running in the "train" mode.
 
-pyml:pre_processing:**standardization**:sklearn
+pyml:pre_processing:**standardization**:sklearn [^5]
 
 - This workflow unit scales the data such that it has a mean of 0 and a standard deviation of 1. It then saves the data
   for use further down the road in the workflow, for use in un-transforming the data.
@@ -136,57 +136,57 @@ written to a file named "predictions.csv"
 
 #### **Classification**
 
-pyml:model:**random_forest_classification**:sklearn
+pyml:model:**random_forest_classification**:sklearn [^6]
 
 - Workflow unit to train a random forest classification model with Scikit-Learn. Model parameters are derived from
   Scikit-Learn's defaults.
 
 #### **Regression**
 
-pyml:model:**adaboosted_trees_regression**:sklearn
+pyml:model:**adaboosted_trees_regression**:sklearn [^7]
 
 - Workflow unit for adaptive-boosted trees regression with Scikit-Learn. Parameters for the estimator and ensemble are
   derived from Scikit-Learn's defaults.
 
-pyml:model:**bagged_trees_regression**:sklearn
+pyml:model:**bagged_trees_regression**:sklearn [^8]
 
 - Workflow unit for a bagged trees regression model with Scikit-Learn. Parameters for the estimator and ensemble are
   derived from Scikit-Learn's defaults.
 
-pyml:model:**gradboosted_trees_regression**:sklearn
+pyml:model:**gradboosted_trees_regression**:sklearn [^9]
 
 - Workflow to train the gradient-boosted trees ensemble method with Scikit-Learn. Model parameters are derivedf rom
   Scikit-Learn's defaults.
 - Note: In the gradient-boosted trees ensemble used, the weak learners used as estimators cannot be tuned with the same
   level of fidelity allowed in the Adaptive-Boosted Trees ensemble.
 
-pyml:model:**kernel_ridge_regression**:sklearn
+pyml:model:**kernel_ridge_regression**:sklearn [^10]
 
 - Workflow unit for a kernelized ridge regression model with Scikit-Learn. Model parameters are derived from
   Scikit-Learn's defaults.
 
-pyml:model:**lasso_regression**:sklearn
+pyml:model:**lasso_regression**:sklearn [^11]
 
 - Workflow unit for a LASSO-based regression model with Scikit-Learn. Model parameters are derived from Scikit-Learn's
   defaults. The alpha parameter has been lowered from a value of 1.0 to 0.1.
 
-pyml:model:**multilayer_perceptron**:sklearn
+pyml:model:**multilayer_perceptron**:sklearn [^12]
 
 - Workflow unit to train a simple feedforward neural network model on a regression problem using Scikit-Learn. Model
   parameters are derived from Scikit-Learn's defaults.
 
-pyml:model:**ridge_regression**:sklearn
+pyml:model:**ridge_regression**:sklearn [^13]
 
 - Workflow unit for a ridge regression model with Scikit-Learn. Alpha is taken from Scikit-Learn's default parameters.
 
-pyml:model:**random_forest_regression**:sklearn
+pyml:model:**random_forest_regression**:sklearn [^14]
 
 - This workflow unit trains a random forest regression model with Scikit-Learn. Model parameters are derived from
   Scikit-Learn's defaults.
 
 #### **Unsupervised Learning**
 
-pyml:model:**k_means_clustering**:sklearn
+pyml:model:**k_means_clustering**:sklearn [^15]
 
 - Workflow unit to train a k-means clustering model with Scikit-Learn. Model parameters are derived from Scikit-Learn's
   defaults.
@@ -199,7 +199,7 @@ In our machine learning platform, "Post-Processing" is a catch-all term for anyt
 trained. Currently, we offer three different ways to plot training data in this section, one type of plot each for
 regression, classification, or unsupervised-learning problems.
 
-pyml:post_processing:**pca_2d_clusters**:matplotlib
+pyml:post_processing:**pca_2d_clusters**:matplotlib [^16]
 
 - This unit takes an N-dimensional feature space, and uses Principle Component Analysis (PCA) to project it onto a 2D
   space to facilitate plotting on a 2D scatter plot.
@@ -208,13 +208,13 @@ pyml:post_processing:**pca_2d_clusters**:matplotlib
 - We then pot the labels assigned to the train and test set, and color by class.
 - This unit only runs during a training job. It does nothing if the workflow is being run in predict mode.
 
-pyml:post_processing:**parity_plot**:matplotlib
+pyml:post_processing:**parity_plot**:matplotlib [^17]
 
 - This unit generates a parity plot based on the known values in the training data, and the predicted values generated
   using the training (or test) data.
 - This unit only runs during a training job. It does nothing if the workflow is being run in predict mode.
 
-pyml:post_processing:**roc_curve**:sklearn
+pyml:post_processing:**roc_curve**:sklearn [^18]
 
 - Computes and displays the Receiver Operating Characteristic (ROC) curve. This is restricted to binary classification
   tasks.
@@ -267,3 +267,41 @@ with settings.context as context:
 
         # Do some predictions or transformation to the data here
 ```
+
+## Links
+
+[^1]: [Train-Test Split, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html)
+
+[^2]: [MinMax Scaler, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.MinMaxScaler.html)
+
+[^3]: [DropNA, Pandas](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.dropna.html)
+
+[^4]: [Drop Duplicates, Pandas](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.drop_duplicates.html)
+
+[^5]: [StandardScaler, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.StandardScaler.html)
+
+[^6]: [Random Forest Classifier, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+
+[^7]: [AdaBoost Regressor, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.AdaBoostRegressor.html#sklearn.ensemble.AdaBoostRegressor)
+
+[^8]: [Bagging Regressor, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.BaggingRegressor.html)
+
+[^9]: [Gradient Boosting Regressor, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.GradientBoostingRegressor.html)
+
+[^10]: [Kernel Ridge Regressor, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.kernel_ridge.KernelRidge.html)
+
+[^11]: [LASSO, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lasso.html)
+
+[^12]: [MLP Regressor, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html)
+
+[^13]: [Ridge Regression, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html)
+
+[^14]: [Random Forest Regressor, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestRegressor.html)
+
+[^15]: [K-Means Clustering, Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+
+[^16]: [Dimensionality Reduction with PCA, Wikipedia](https://en.wikipedia.org/wiki/Dimensionality_reduction#Principal_component_analysis_(PCA))
+
+[^17]: [Parity Plot, Wikipedia](https://en.wikipedia.org/wiki/Parity_plot)
+
+[^18]: [Receiver Operating Characteristic, Wikipedia](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
