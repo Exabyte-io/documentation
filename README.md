@@ -209,7 +209,7 @@ search engine to understand what the image is, and keeps the words neatly separa
 
 2. Avoid "keyword-stuffing," which search engines penalize. For example, in an image of copper nanoparticles, a
 good image title might be "icosahedral-copper-nanoparticle-blue-background." A "keyword-stuffed" version of this
-might be "copper-nanoparticle-np-icosahedron-chemistry-nanomaterials-chemical-engineering-catalysis.png." A good rule of
+might be "copper-cu-nanoparticle-np-icosahedron-chemistry-nanomaterials-chemical-engineering-catalysis.png." A good rule of
 thumb for whether an image title is keyword-stuffed or not is to ask: "Is this a natural way of describing the
 image that would actually be used in a spoken conversation?"
 
@@ -227,13 +227,13 @@ For example:
 ![Simulation Diagram](../../images/simulation-job-wokflow-unit-explained.png "Simulation Diagram")
 ```
 
-Alt-text is a [short description](https://en.wikipedia.org/wiki/Wikipedia:Manual_of_Style/Accessibility/Alternative_text_for_images)
+Alt-text is a [short description](https://en.wikipedia.org/wiki/Alt_attribute)
 of the image being used. This is generally intended to provide an accessible description of the image for those who are
 using screen readers. A few guidelines for the alt-text:
 
 - Try to keep the image descriptions under 100 characters, since some screen readers will limit the number of characters
   it uses when describing an image to someone.
-- Don't with redundant phrase such as "This is an image of...", "This picture shows...", etc." Just describe what's in
+- Don't begin with redundant phrases such as "This is an image of...", "This picture shows...", etc. Just describe what's in
 the image. For example, instead of "This picture shows a plate of spam and eggs," instead write "Plate of spam and eggs"
   
 Note that alt-text generally used as part of search indexing in addition to the image title, so try to think about keywords for the image and the page,
