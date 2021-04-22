@@ -1,4 +1,4 @@
-# Machine Learning: Predict Using a Neural Network
+# Machine Learning: Predict Using a Neural Network Regression Model
 
 This tutorial demonstrates how to perform predictions using
 a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)

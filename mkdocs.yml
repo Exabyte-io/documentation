@@ -116,10 +116,11 @@ nav:
                 - Train ML Model:                        tutorials/ml/train-ml-model.md
                 - Predict New Properties:                tutorials/ml/predict-ml-properties.md
             - Python ML:
-                - Train ML Model:                        tutorials/python-ml/train-ml-model.md
+                - Train a ML Regression Model:           tutorials/python-ml/train-regression-model.md
                   #Todo: Tutorial demonstrates how to share a trained model with another user
                 #- Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
-                - Predict New Properties:                tutorials/python-ml/predict-ml-properties.md
+                - Predict with Regression:                tutorials/python-ml/predict-with-regression.md
+                - Unsupervised Learning with Clustering:  tutorials/python-ml/train-with-clustering.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
