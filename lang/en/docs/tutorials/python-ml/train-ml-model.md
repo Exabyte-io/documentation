@@ -1,8 +1,6 @@
 # Machine Learning: Train a Neural Network for Regression
 
-This tutorial demonstrates how to train a a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-for regression
-using [SciKit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
+This tutorial demonstrates how to train a multilayer perceptron [^1] for regression using Scikit-Learn. [^2]
 
 ## 1. Acquire Training Data
 
@@ -140,3 +138,9 @@ This tutorial is demonstrated in the following animation:
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/ExVa55FPAWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Links
+
+[^1]: [Wikipedia, Multilayer Perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
+
+[^2]: [Scikit-Learn, MLP Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html)
