@@ -1,4 +1,4 @@
-# Machine Learning: Train a Neural Network
+# Machine Learning: Train a Neural Network for Regression
 
 This tutorial demonstrates how to train a a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
 for regression
