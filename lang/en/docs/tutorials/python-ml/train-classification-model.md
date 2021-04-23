@@ -9,8 +9,6 @@ The data we use in this example comes from the QSAR group's biodegredation datab
 The dataset consists of 41 unique descriptors of each molecule, and the goal of the problem is to predict whether the
 molecule is biodegredable or not.
 
-The dataset can be found on Kaggle [^4].
-
 For convenience (and to ensure the ROC curves are predicted on the correct side of the diagonal), we have gently
 pre-processed the dataset to encode its class labels as 0 and 1 (previously, they were 1 and 2). This is temporary - 
 the May update to the platform will automaticlaly encode class labels as 0 and 1, and will automatically un-transform
@@ -90,7 +88,7 @@ Select the `Machine Learning` subworkflow by clicking on it. The following workf
 2. `Train Test Split` - Splits the data into a training set and a testing set 
 3. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
 4. `Model Train and Predict` - Handles model training, and prediction
-5. `ROC Curve Plot` - Draws a plot of the Receiver Operator Characteristic (ROC) curve [^5]
+5. `ROC Curve Plot` - Draws a plot of the Receiver Operator Characteristic (ROC) curve [^4]
 
 We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
 workflow editor. Then, set `target_column_name` to "Class" to define the target column of the training set. Then,
@@ -130,6 +128,4 @@ the model.
 
 [^3]: [Kaggle, Biodegredation Database](https://www.kaggle.com/muhammetvarl/qsarbiodegradation)
 
-[^4]: [Kaggle, QSAR Biodegredation Database](https://www.kaggle.com/muhammetvarl/qsarbiodegradation)
-
-[^5]: [Wikipedia, Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
+[^4]: [Wikipedia, Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
