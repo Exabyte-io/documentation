@@ -11,6 +11,7 @@ molecules or crystals with similar properties.
 The data used in this example was acquired from Kaggle: [Here](https://www.kaggle.com/anlgrbz/super-conductors)
 
 It consists of a group of 21,263 superconductors, along with the following properties:
+
 - Atomic Mass (AMU)
 - First Ionization Energy (kJ/mol)
 - Atomic Radius (pm)
@@ -26,8 +27,8 @@ temperature [^4], but for our purposes, we will train a clustering model to sepa
 groups.
 
 Due to the filesize limits imposed by our upload system (20 MB), we will truncate at 15,000 examples,
-for a 16 MB training set. For convenience, we have processed this file; download
-<a href="/extra/files/clustering_data.csv.csv" download="clustering_data.csv.csv">it here</a>. 
+for a 16 MB training set. For convenience, we have processed this file to meet our upload constraint; download it
+<a href="/extra/files/clustering_data.csv" download="clustering_data.csv">it here</a>. 
 
 ## 2. Upload the Training Data
 
