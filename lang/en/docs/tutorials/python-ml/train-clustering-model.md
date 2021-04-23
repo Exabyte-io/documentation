@@ -8,7 +8,7 @@ Unsupervised learning [^3] is a technique that takes in unlabeled training data,
 dataset. Oftentimes, it is used as an exploratory tool to find collections of similar items. For example, to find
 molecules or crystals with similar properties.
 
-The data used in this example was acquired from Kaggle: [Here](https://www.kaggle.com/anlgrbz/super-conductors)
+The data used in this example was acquired from Kaggle [^4].
 
 It consists of a group of 21,263 superconductors, along with the following properties:
 
@@ -23,7 +23,7 @@ It consists of a group of 21,263 superconductors, along with the following prope
 
 For each property, various properties including mean, the weighted mean, and standard deviation are calculated. The
 dataset was originally posted to Kaggle to pose the regression problem of predicting a superconductor's critical
-temperature [^4], but for our purposes, we will train a clustering model to separate the superconductors into several
+temperature [^5], but for our purposes, we will train a clustering model to separate the superconductors into several
 groups.
 
 Due to the filesize limits imposed by our upload system (20 MB), we will truncate at 15,000 examples,
@@ -100,7 +100,7 @@ Select the `Machine Learning` subworkflow by clicking on it. The following workf
 2. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
 3. `Model Train and Predict` - Handles model training, and prediction
 4. `2D PCA Clusters Plot` - Draws a plot of the clusters in the training and testing set, projected onto the first two
-principle components [^5] of the dataset.
+principle components [^6] of the dataset.
 
 We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
 workflow editor. Then, set `problem_category` to "clustering" to state that we are solving a clustering problem.
@@ -147,6 +147,8 @@ represent the testing set.
 
 [^3]: [Wikipedia, Unsupervised Learning](https://en.wikipedia.org/wiki/Unsupervised_learning)
 
-[^4]: [Wikipedia, Superconductivity](https://en.wikipedia.org/wiki/Superconductivity#By_critical_temperature)
+[^4]: [Kaggle, Superconductors Dataset](https://www.kaggle.com/anlgrbz/super-conductors)
 
-[^5]: [Wikipedia, Principle Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+[^5]: [Wikipedia, Superconductivity](https://en.wikipedia.org/wiki/Superconductivity#By_critical_temperature)
+
+[^6]: [Wikipedia, Principle Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
