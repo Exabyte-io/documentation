@@ -16,7 +16,8 @@ molecule is biodegredable or not.
 
 The dataset can be found on Kaggle, [here](https://www.kaggle.com/muhammetvarl/qsarbiodegradation).
 
-Before uploading to the platform, remove the "Class" column from the dataset. We will call this dataset "data_to_classify_with.csv"
+Before uploading to the platform, remove the "Class" column from the dataset.
+We will call this dataset "data_to_classify_with.csv"
 
 ## 2. Upload the Data
 

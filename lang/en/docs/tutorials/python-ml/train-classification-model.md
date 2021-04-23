@@ -11,6 +11,16 @@ molecule is biodegredable or not.
 
 The dataset can be found on Kaggle, [here](https://www.kaggle.com/muhammetvarl/qsarbiodegradation).
 
+For convenience (and to ensure the ROC curves are predicted on the correct side of the diagonal), we have gently
+pre-processed the dataset to encode its class labels as 0 and 1 (previously, they were 1 and 2). This is temporary - 
+the May update to the platform will automaticlaly encode class labels as 0 and 1, and will automatically un-transform
+them to their original labels (e.g. 1 and 2, in this case).
+
+Please download the dataset here:
+<a href="/extra/files/classification_data.csv" download="data_to_train_with.csv">it here</a>. 
+
+For the purposes of this tutorial, we will name this dataset "data_to_train_with.csv" from this point onward.
+
 ## 2. Upload the Training Data
 
 In order to upload training data, we first click the `Dropbox` button in the [left sidebar](../../ui/left-sidebar.md).
