@@ -51,7 +51,7 @@ The job designer changes now that our ML Training workflow is selected. The "Mat
 a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
 a preview of the dataset once it is selected.
 
-![Dataset Tab](../../images/tutorials/pythonML/dataset-tab-visible.png "Dataset Tab")
+![Dataset Tab](../../images/tutorials/classification_tutorial/dataset-tab-with-data.png "Dataset Tab")
 
 To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
@@ -110,7 +110,7 @@ trained model for additional predictions on new data.
 The second result visible is `Machine Learning - ROC Curve Plot`, which contains the ROC curve we calculated to assess
 the model.
 
-![Results Tab Showcasing Parity Plot](../../images/tutorials/pythonML/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
+![Results Tab Showcasing Parity Plot](../../images/tutorials/classification_tutorial/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
 
 ## Links
 
