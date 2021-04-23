@@ -340,6 +340,7 @@ nav:
             - Python ML:
                 - Overview:                             software-directory/machine-learning/python-ml/overview.md
                 - Components:                           software-directory/machine-learning/python-ml/components.md
+                - Workflow Structure:                   software-directory/machine-learning/python-ml/workflow-structure.md
                 - Data:                                 software-directory/machine-learning/python-ml/data.md
         - Analysis & Visualization:
             - VESTA:                                    software-directory/analysis/vesta.md
