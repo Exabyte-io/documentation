@@ -4,7 +4,7 @@ This tutorial demonstrates how to train a multilayer perceptron [^1] for regress
 
 ## 1. Acquire Training Data
 
-The data we use in this tutorial is taken from a [recent model](http://doi.org/10.1126/sciadv.aax5101) of small molecule
+The data we use in this tutorial is taken from a recent model [^3] of small molecule
 adsorption to transition metal nanoparticles. Specifically, we use DFT-calculated values for the adsorption energy of
 ·CH<sub>3</sub>, CO, and ·OH radicals to Ag, Au, and Cu nanoparticles ranging in size from 55 to 172 atoms.
 
@@ -84,9 +84,10 @@ Select the `Machine Learning` subworkflow by clicking on it. The following workf
 
 0. `Setup Packages and Variables` - Configures the job and downloads all required packages with `pip`
 1. `Data Input` - Reads the training data from disk
-2. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
-3. `Model Train and Predict` - Handles model training, and prediction
-4. `Parity Plot` - Draws a plot of model predictions versus training data, and saves it to the disk. This plot is shown
+2. `Train Test Split` - Splits the data into a training set and a testing set 
+3. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
+4. `Model Train and Predict` - Handles model training, and prediction
+5. `Parity Plot` - Draws a plot of model predictions versus training data, and saves it to the disk. This plot is shown
    on the Results tab.
 
 We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
@@ -144,3 +145,5 @@ This tutorial is demonstrated in the following animation:
 [^1]: [Wikipedia, Multilayer Perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
 
 [^2]: [Scikit-Learn, MLP Regressor](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html)
+
+[^3]: [Science Advances, Unfolding Adsorption on Metal Nanoparticles: Connecting Stability with Catalysis](http://doi.org/10.1126/sciadv.aax5101)
