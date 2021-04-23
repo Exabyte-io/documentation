@@ -69,7 +69,7 @@ The job designer changes now that our ML Training workflow is selected. The "Mat
 a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
 a preview of the dataset once it is selected.
 
-ToDo: Need an image here
+![Dataset Tab with Data Preview](../../images/tutorials/clustering_tutorial/dataset-tab-with-data.png "Dataset Tab with Data")
 
 To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
