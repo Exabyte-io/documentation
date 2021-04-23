@@ -2,7 +2,7 @@
 
 This tutorial demonstrates how to perform predictions using
 a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-trianed for regression
+trained for regression
 using [SciKit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
 
 !!! warning "Pre-Requisites"
@@ -26,16 +26,14 @@ will use in this tutorial for predictions. A sample of the first 5 lines in the 
 
 ## 2. Upload the Data
 
-In order to upload predict data, we first click the `Dropbox` button in the [left sidebar](../../ui/left-sidebar.md).
+In order to upload data for predictions, we first click the `Dropbox` button in the [left sidebar](../../ui/left-sidebar.md).
 This will bring us to the [Dropbox Page](../../jobs/ui/files-tab.md). We can then click the "Upload" button, circled
 below:
 
-![Dropbox Page with Upload](../../images/tutorials/dropbox_page_with_upload_circled.png "Dropbox page with upload circled")
+![Dropbox Page with Upload Button Circled](../../images/tutorials/pythonML/dropbox-page-with-upload-circled.png "Dropbox Page with Upload Button Circled")
 
 Then, when the browser's upload window appears, we navigate to where we downloaded the file in section 1, and select it
 for upload. If the upload was successful, the file will then be visible in the dropbox.
-
-Take note of the name of the file. For the purposes of this tutorial, it should be named `data_to_predict_with.csv`
 
 ## 3. Create the ML Job
 
@@ -46,42 +44,46 @@ First, we will give the job a friendly name, such as "Python ML Tutorial Predict
 the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in the upper-right of the job
 designer), and choose "Select Workflow."
 
-![Job Designer with Circles](../../images/tutorials/job_designer_python_ml_predict_name.png "Job designer page")
+![Job Designer with Python Machine Learning Tutorial Name Set](../../images/tutorials/pythonML/job-designer-python-ml-predict-name.png "Job Designer with Python Machine Learning Tutorial Name Set")
 
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
-search for "workflow:pyml_predict" and click on it to bring it into our account.
+search for "workflow:pyml_predict" and click on it to bring it into the job.
 
 A diagram and detailed description of this workflow can be found
 [here](../../software-directory/machine-learning/python-ml/components.md)
 
-## 4. Configure the ML Workflow
+## 4. Select the Dataset
 
-We now have our ML workflow selected. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see
-our predict workflow.
+The job designer changes now that our ML Predict workflow is selected. The "Materials" tab has now been replaced with
+a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
+a preview of the dataset once it is selected.
+
+To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
+the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
+files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_predict_with.csv."
+
+![Dataset Tab with Multilayer Perceptron Predictions Visible](../../images/tutorials/pythonML/dataset-tab-visible-predictions.png "Dataset Tab with Multilayer Perceptron Predictions Visible")
+
+A preview of the data then appears on the dataset tab, indicating that the data has successfully been loaded.
+
+## 4. Inspect the ML Workflow
+
+We now have our ML workflow selected and our dataset has been supplied.
+Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see our predict workflow.
 
 We can see two [subworkflows](../../workflows/components/subworkflows.md) available: `Set Up the Job`
 and `Machine Learning`.
 
-### Specify the Prediction Data
-
-We will first configure the `Set Up the Job` workflow to accept our predict data.
-
-Begin by selecting the "Declare Predict Data" workflow unit, circled below:
-
-![Prediction Data IO Unit](../../images/tutorials/workflows_tab_declare_predict_circled.png "Predict Data IO Unit")
-
-We can now see the "Declare Predict Data" IO unit. Because we named our file in dropbox `data_to_predict_with.csv`
-earlier, we do not need to modify this unit. In a scenario where we wanted to use a different file name for our predict
-data, the [Workflow Designer](../../workflow-designer/overview.md) could be used to modify the value.
+The `Set Up the Job` subworkflow contains instructions to copy in the trained model as well as the data we have selected.
 
 !!!warning "A Word of Caution"
-    The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
-    Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
-    during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
-    creation of the Predict workflow.
+    The `Set Up the Job` subworkflow has been automatically configured during the training process, and is not
+    intended for modification by the user. Changing it can render the predict workflow inoperable, and can lead to
+    inaccurate prediction results. Do not modify the `Set Up the Job` subworkflow.
 
-We will then close the Declare Predict Data IO unit by clicking on the "X" in the dialogue's upper right corner. This
-will bring us back to the [Workflows Tab](../../jobs-designer/workflow-tab.md "Workflows Tab").
+The `Machine Learning` subworkflow contains the individual steps of the trained model we created previously.
+
+There is no further configuration required: the workflow is already trained, and the prediction job is ready to submit.
 
 ## 6. Submit the Job
 
@@ -93,15 +95,15 @@ We can now [run the job](../../jobs/actions/run.md) and wait for it to complete.
 
 ## 7. Analyze the Prediction Results
 
-After a few minutes, the job will complete. In the [files tab](../../jobs/ui/files-tab.md), we can find a new file
-called "predictions.csv", which contains the predictions generated by this model. Under the hood, this model is created
-inside of the Train/Predict workflow unit.
+After a few minutes, the job will complete. We can then visit the job's [results tab](../../jobs/ui/results-tab.md),
+where we will see a CSV preview of a file called `predictions.csv`. These are the row-by-row predictions generated by
+the model. Under the hood, this file is generated inside the `Model Train and Predict` unit.
 
 ## Animation
 
 This tutorial is demonstrated in the following animation:
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/fRjFUSy50RY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/I1JNj8ZspH4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 

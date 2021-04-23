@@ -199,15 +199,49 @@ This is an acceptable way to contribute images, as long as the size is kept smal
 
 > Note: Do NOT put videos inside this directory! Upload the video into your preferred online storage system such as Google Drive, DropBox, or YouTube, and share its link with us to review and put it up online.
 
+Put images in separate folders within the main "images" directory, one for each top level section of the documentation. 
+Also in this case it is essential to use **RELATIVE** and not absolute paths to the image, starting from the current page. 
+
+A few conventions to use when naming images:
+
+1. Try to use hyphen-case for naming the images. for example, `this-is-a-good-image-name.png`; this makes it easy for a
+search engine to understand what the image is, and keeps the words neatly separated.
+
+2. Avoid "keyword-stuffing," which search engines penalize. For example, in an image of copper nanoparticles, a
+good image title might be "icosahedral-copper-nanoparticle-blue-background." A "keyword-stuffed" version of this
+might be "copper-cu-nanoparticle-np-icosahedron-chemistry-nanomaterials-chemical-engineering-catalysis.png." A good rule of
+thumb for whether an image title is keyword-stuffed or not is to ask: "Is this a natural way of describing the
+image that would actually be used in a spoken conversation?"
+
 #### Including Images
 
 Including an image/screenshot is done as follows, in MKDocs notation (don't use HTML tags).
 
-```text
+```markdown
+![Alt-Text](../path/to/the/image.png "Optional Title")
+```
+
+For example:
+
+```markdown
 ![Simulation Diagram](../../images/simulation-job-wokflow-unit-explained.png "Simulation Diagram")
 ```
 
-Put images in separate folders within the main "images" directory, one for each top level section of the documentation. Also in this case it is essential to use **RELATIVE** and not absolute paths to the image, starting from the current page. 
+Alt-text is a [short description](https://en.wikipedia.org/wiki/Alt_attribute)
+of the image being used. This is generally intended to provide an accessible description of the image for those who are
+using screen readers. A few guidelines for the alt-text:
+
+- Try to keep the image descriptions under 100 characters, since some screen readers will limit the number of characters
+  it uses when describing an image to someone.
+- Don't begin with redundant phrases such as "This is an image of...", "This picture shows...", etc. Just describe what's in
+the image. For example, instead of "This picture shows a plate of spam and eggs," instead write "Plate of spam and eggs"
+  
+Note that alt-text generally used as part of search indexing in addition to the image title, so try to think about keywords for the image and the page,
+and weave them (organically) into the alt-text.
+
+The Optional Title (quotes after the path to the image) is the mouseover text that is generated. Generally, it should be
+simple and human-readable.
+
 
 #### Including GIFs
 

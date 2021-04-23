@@ -26,18 +26,16 @@ In order to upload training data, we first click the `Dropbox` button in the [le
 This will bring us to the [Dropbox Page](../../jobs/ui/files-tab.md). We can then click the "Upload" button, circled
 below:
 
-![Dropbox Page with Upload](../../images/tutorials/dropbox_page_with_upload_circled.png "Dropbox page with upload circled")
+![Dropbox Page with Upload](../../images/tutorials/pythonML/dropbox-page-with-upload-circled.png "Dropbox page with upload circled")
 
 Then, when the browser's upload window appears, we navigate to where we downloaded the file in section 1, and select it
 for upload. If the upload was successful, the file will then be visible in the dropbox.
 
-Take note of the name of the file. For the purposes of this tutorial, it should be named `data_to_train_with.csv`
-
-## 3. Copy the "Python ML Train" Workflow from the Workflow Bank
+## 3. Copy the "Python ML Train Regression" Workflow from the Workflow Bank
 
 Next, we select the`Bank Worfklows` button in the [left sidebar](../../ui/left-sidebar.md), which brings us to
-the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train" workflow owned by the "
-Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
+the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train Regression" workflow owned
+by the "Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
 
 A diagram and detailed description of this workflow can be found
 [here](../../software-directory/machine-learning/python-ml/components.md).
@@ -51,50 +49,40 @@ First, we will give the job a friendly name, such as "Python ML Tutorial" (see b
 the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in the upper-right of the job
 designer), and choose "Select Workflow."
 
-![Job Designer with Circles](../../images/tutorials/job_designer_with_python_ml_name_and_three_dots_circled.png "Job designer page")
+![Job Designer with Circles](../../images/tutorials/pythonML/job-designer-with-python-ml-name-and-three-dots-circled.png "Job designer page")
 
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
-search for "Python ML Train" and click on it to bring it into our account.
+search for "Python ML Train Regression" and select it.
 
-## 5. Configure the ML Workflow
+## 5. Select the Dataset
 
-We now have our ML workflow selected. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we can see
-our training workflow.
+The job designer changes now that our ML Training workflow is selected. The "Materials" tab has now been replaced with
+a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
+a preview of the dataset once it is selected.
+
+![Dataset Tab](../../images/tutorials/pythonML/dataset-tab-visible.png "Dataset Tab")
+
+To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
+the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
+files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_train_with.csv."
+
+A preview of the data then appears on the dataset tab, indicating that the data has successfully been loaded.
+
+## 6. Configure the Workflow
+
+We have now chosen our ML workflow and training set. Select the [Workflows Tab](../../jobs-designer/workflow-tab.md), and we
+can see our training workflow.
 
 We can see two [subworkflows](../../workflows/components/subworkflows.md) available: `Set Up the Job`
 and `Machine Learning`.
 
-### Specify the Training Data
-
-We will first configure the `Set Up the Job` workflow to accept our training data.
-
-Begin by selecting the "Declare Training Data" workflow unit, circled below:
-
-![ML Workflow Tab](../../images/tutorials/workflows_tab_with_ml_workflow_and_declare_training_data_circled.png "Workflow Tab")
-
-We can now see the "Declare Training Data" IO unit. Because we named our file in dropbox `data_to_train_with.csv`
-earlier, we do not need to modify this unit. In a scenario where we wanted to use a different file name for our training
-data, the [Workflow Designer](../../workflow-designer/overview.md) could be used to modify the value.
-
-![Training Data IO Unit](../../images/tutorials/training_data_io_unit.png "Training Data IO Unit")
+The `Set Up the Job` subworkflow contains instructions to copy in the training data.
 
 !!!warning "A Word of Caution"
-    The _only_ modifications that should be made in the `Set Up the Job` subworkflow are the filenames in the "Declare
-    Training Data" and "Declare Predict Data" IO units. The `Set Up the Job` subworkflow is automatically re-configured
-    during the training process. Modifying other values, or adding/removing workflow units to this subworkflow, can disrupt
-    creation of the Predict workflow.
+    The `Set Up the Job` subworkflow is automatically configured during the training process. Modifying it can disrupt
+    creation of the Predict workflow, leading to inaccurate results, or a failure to generate a predict workflow.
 
-We will then close the Declare Training Data IO unit by clicking on the "X" in the dialogue's upper right corner. This
-will bring us back to the [Workflows Tab](../../jobs-designer/workflow-tab.md "Workflows Tab").
-
-### Configure Settings.py
-
-We can now configure our settings file. Begin by selecting the `Machine Learning` subworkflow. This will make visible
-all of the machine learning units that are inside the workflow:
-
-![ML Train](../../images/tutorials/workflows_tab_with_ml_train_subworkflow_circled.png "ML Train Subworkflow")
-
-This workflow has the following steps:
+Select the `Machine Learning` subworkflow by clicking on it. The following workflow units should now be visible:
 
 0. `Setup Packages and Variables` - Configures the job and downloads all required packages with `pip`
 1. `Data Input` - Reads the training data from disk
@@ -103,40 +91,37 @@ This workflow has the following steps:
 4. `Parity Plot` - Draws a plot of model predictions versus training data, and saves it to the disk. This plot is shown
    on the Results tab.
 
-We will configure the `settings.py` file by selecting the `Setup Packages and Variables` unit (see above figure). This
-will open a dialogue containing the content of `settings.py`. Scroll down to line 41 of the file, and note the presence
-of a variable named `target_column_name`, with the value of `"target"`. This value should instead be the target column
-of our training data, so change it to `"PBE_BE_eV"` as below:
+We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
+workflow editor. Then, set `target_column_name` to "PBE_BE_eV" to define the target column of the training set.
 
-![SettingsPy](../../images/tutorials/settings_py_with_target_colname_circled.png "Settings with Colname Selected")
+![Important settings with target column name set](../../images/tutorials/pythonML/important-settings-with-target-column-name-set.png "Important settings with target column name set" )
 
-Then, close the dialogue. We can now demonstrate how a workflow unit's parameters can be changed. For this tutorial, we
-will set our neural network to have 2 hidden layers of 100 layers each, and we will train for 5000 iterations.
+Then, go back to the "Overview" portion of the workflow editor. We can now demonstrate how a workflow unit's parameters
+can be changed.
 
-Begin by selecting the `ML Train and Predict` workflow unit, as below:
+Begin by selecting the `Model Train and Predict` workflow unit, as below:
 
-![ML Train and Predict](../../images/tutorials/workflows_tab_with_ml_train_subworkflow_and_train_unit_circled.png "Workflow tab with ml train unit circled")
+![Workflows tab with ml train subworkflow and train unit circled](../../images/tutorials/pythonML/workflows-tab-with-ml-train-subworkflow-and-train-unit-circled.png "Workflows tab with ml train subworkflow and train unit circled")
 
-We can then scroll down to line 36, and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to add an
-extra hidden layer of 100 neurons each to the model. We can then find line 40, and adjust the `max_iter` argument
-from `500`
-to `5000`, to give the network enough time to train. These changes are circled below.
+We can then scroll down and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to make
+our model contain two hidden layers of 100 neurons each. We also change `max_iter` to 5000 to train for up to 5000
+iterations.
 
-![Neural Network Settings](../../images/tutorials/ml_train_neural_network_with_2_hidden_layers.png "Neural Network Settings")
+![ML Train Neural Network with 2 Hidden Layers](../../images/tutorials/pythonML/ml-train-neural-network-with-2-hidden-layers.png "ML Train Neural Network with 2 Hidden Layers")
 
 Then, close the dialogue. The workflow has now been configured, and we are ready to train.
 
-## 6. Submit the Job
+## 7. Submit the Job
 
 Click the check-mark in the upper right of the job designer, in the [Header Menu](../../jobs-designer/header-menu.md) to
 save the job. We now return to the [job explorer](../../jobs/ui/explorer.md) page with the job in a pre-submission
-status.
+status
 
-![PreSubmission](../../images/tutorials/jobs_tab_with_ml_train_job_set_up.png "Files Explorer Tab")
+![Jobs Tab with ML Training Calculation Set Up](../../images/tutorials/pythonML/jobs-tab-with-ml-train-job-set-up.png "Jobs Tab with ML Training Calculation Set Up")
 
 We can now [run the job](../../jobs/actions/run.md) and wait for it to complete.
 
-## 7. Analyze the Training Results
+## 8. Analyze the Training Results
 
 After a few minutes, the job will complete. We can then visit the job's [results tab](../../jobs/ui/results-tab.md),
 where we will see that two properties have been calculated. The first, `Machine Learning - Model Train and Predict` is
@@ -146,12 +131,12 @@ trained model for additional predictions on new data.
 The second result visible is `Machine Learning - Parity Plot`, which contains the predicted versus actual values for the
 adsorption energies we trained the model on.
 
-![Results Tab](../../images/tutorials/ml_train_results_tab.png "Results Tab")
+![Results Tab Showcasing Parity Plot](../../images/tutorials/pythonML/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
 
 ## Animation
 
 This tutorial is demonstrated in the following animation:
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Eiw6bYn_w74" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/ExVa55FPAWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
