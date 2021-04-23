@@ -6,7 +6,7 @@ trained for regression
 using [SciKit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
 
 !!! warning "Pre-Requisites"
-    In order to perform this tutorial, the [ML Training](train-ml-model.md) tutorial must be completed.
+    In order to perform this tutorial, the [ML Training](train-regression-model.md) tutorial must be completed.
 
 ## 1. Acquire Data
 
