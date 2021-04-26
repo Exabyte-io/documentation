@@ -88,6 +88,15 @@ status.
 
 We can now [run the job](../../jobs/actions/run.md) and wait for it to complete.
 
+
+## Animation
+
+This tutorial is demonstrated in the following animation:
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/XlOmf1RvazE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## 7. Analyze the Prediction Results
 
 After a few minutes, the job will complete. We can then visit the job's [results tab](../../jobs/ui/results-tab.md),
