@@ -120,6 +120,15 @@ the model.
 
 ![Results Tab Showcasing Parity Plot](../../images/tutorials/classification_tutorial/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
 
+
+## Animation
+
+This tutorial is demonstrated in the following animation:
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/UJ8ISCYEbSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
 ## Links
 
 [^1]: [Wikipedia, Random Forest](https://en.wikipedia.org/wiki/Random_forest)
