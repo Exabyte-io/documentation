@@ -55,7 +55,7 @@ a preview of the dataset once it is selected.
 
 To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
-files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_classify_with.csv."
+files presently on the dropbox. Choose the dataset we uploaded earlier, "data_to_classify_with.csv."
 
 ![Dataset Tab with Random Forest Predictions](../../images/tutorials/classification_tutorial/dataset-tab-with-predict-data.png "Dataset Tab with Random Forest Predictions")
 
