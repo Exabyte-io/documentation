@@ -121,8 +121,8 @@ nav:
                 #- Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
                 - Predictions with Regression:                tutorials/python-ml/predict-with-regression.md
                 - Unsupervised Learning with Clustering:  tutorials/python-ml/train-clustering-model.md
-                #- Training a Classifier:                  tutorials/python-ml/train-classification-model.md
-                #- Predicting with a Classifier:              tutorials/python-ml/predict-with-classification.md
+                - Training a Classifier:                  tutorials/python-ml/train-classification-model.md
+                - Predicting with a Classifier:              tutorials/python-ml/predict-with-classification.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
