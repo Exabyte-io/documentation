@@ -47,6 +47,13 @@ You should have the documentation up and running at `http://localhost:8000`
 
 [MkDocs](http://www.mkdocs.org/#getting-started) is used to convert Markdown files (*.md) into static html and [is configured](mkdocs.yml) to use [Mkdocs-material](https://squidfunk.github.io/mkdocs-material/) theme.
 
+### Tutorial Video Formats
+
+Generally, text-based tutorials should have a video tutorial published alongside them. A few notes about the video
+tutorials:
+- Resolution should be kept such that users can read the text that's on the screen without needing to zoom in. A good
+  resolution to record in is 720p (1152 x 720 on a macbook, or 1280 x 720 elsewhere).
+
 ### Formatting Styles
 
 #### Headers
