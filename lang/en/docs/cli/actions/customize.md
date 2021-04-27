@@ -19,7 +19,7 @@ There exist several hidden system configuration files, or "dot-files", within th
 
 ## Install a different version of python
 
-It is sometimes necessary to use multiple versions or distributions of python. The routines below demonstrate how to do it. We can also recommend using the `pyenv` [^1] tool, as an alternative.
+It is sometimes necessary to use multiple versions or distributions of Python. The routines below demonstrate how to do it. We can also recommend using the `pyenv` [^1] tool, as an alternative.
 
 ### via PyEnv
 
@@ -56,7 +56,7 @@ It is sometimes necessary to use multiple versions or distributions of python. T
 
 Below is a quick tutorial on how to install python and pip in the userspace. This is helpful when prototyping and trying packages not yet supported system-wide.  
 
-1. Install python to local directory
+1. Install Python to local directory
 
     ```bash
     mkdir ~/python
@@ -76,7 +76,7 @@ Below is a quick tutorial on how to install python and pip in the userspace. Thi
 
     Notice the prefix option, it is mandatory for this to work. The value of prefix option is to specify where to put the related output of make command, by default it is in the /usr/local/ but we use our home directory instead.
 
-3. Next, update the environment variables to use our new python. Edit ~/.bashrc_profile and add the following lines:
+3. Next, update the environment variables to use our new Python. Edit ~/.bashrc_profile and add the following lines:
 
     ```bash
     export PATH=$HOME/python/Python-2.7.11/:$PATH
@@ -101,7 +101,7 @@ Below is a quick tutorial on how to install python and pip in the userspace. Thi
 
 Pip is a python package manager, as explained in the references [here](create-python-env.md#links). Below are directives that allow for its installation to be used with the newly installed python above.
 
-1. After installing python locally, install pip.
+1. After installing Python locally, install pip.
 
     ```bash
     wget --no-check-certificate https://bootstrap.pypa.io/get-pip.py -O - | python - --user

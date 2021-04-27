@@ -20,7 +20,7 @@ extra_javascript:
     - extra/js/giffer.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
-copyright: © 2020 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+copyright: © 2021 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
 
 extra:
     version: "0.17"
@@ -34,7 +34,7 @@ extra:
           link: https://www.linkedin.com/company/exabyte-io
 markdown_extensions:
     - markdown_include.include:
-        base_path: esse
+        base_path: data
     - admonition
     - codehilite:
         linenums: true
@@ -110,9 +110,19 @@ nav:
             - Flags by Elemental Composition:        tutorials/templating/set-flag-by-composition.md
             - Magnetic Moment on Atoms by Specie:    tutorials/templating/set-magnetic-moment.md
         - Machine Learning (ML):
+              # Differentiate between Legacy and PythonML tutorials in Overview
             - Overview:                              tutorials/ml/overview.md
-            - Train ML Model:                        tutorials/ml/train-ml-model.md
-            - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+            - ExabyteML (legacy):
+                - Train ML Model:                        tutorials/ml/train-ml-model.md
+                - Predict New Properties:                tutorials/ml/predict-ml-properties.md
+            - Python ML:
+                - Training a Regression Model:           tutorials/python-ml/train-regression-model.md
+                  #Todo: Tutorial demonstrates how to share a trained model with another user
+                #- Sharing Trained Models:                tutorials/python-ml/share-ml-model.md
+                - Predictions with Regression:                tutorials/python-ml/predict-with-regression.md
+                - Unsupervised Learning with Clustering:  tutorials/python-ml/train-clustering-model.md
+                - Training a Classifier:                  tutorials/python-ml/train-classification-model.md
+                - Predicting with a Classifier:              tutorials/python-ml/predict-with-classification.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
@@ -152,6 +162,8 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
             - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
             - Interface:                             tutorials/materials/slabs-interface.md
+        - General Functionality:
+            - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
 
 
 # COMMON UI COMPONENTS
@@ -256,9 +268,8 @@ nav:
             - Parameters:                               models-directory/machine-learning/parameters.md
             - Units:                                    models-directory/machine-learning/units.md
             - Data:                                     models-directory/machine-learning/data.md
-            - Actions:                                  models-directory/machine-learning/actions.md
-            - Units:                                    models-directory/machine-learning/units.md
             - Example Workflow:                         models-directory/machine-learning/example-workflow.md
+            - Accuracy:                                 models-directory/machine-learning/accuracy.md
 
     - Methods:
         - Overview:                                     methods/overview.md
@@ -329,6 +340,11 @@ nav:
             - Exabyte ML:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
                 - Data:                                 software-directory/machine-learning/exabyte/data.md
+            - Python ML:
+                - Overview:                             software-directory/machine-learning/python-ml/overview.md
+                - Components:                           software-directory/machine-learning/python-ml/components.md
+                - Workflow Structure:                   software-directory/machine-learning/python-ml/workflow-structure.md
+                - Data:                                 software-directory/machine-learning/python-ml/data.md
         - Analysis & Visualization:
             - VESTA:                                    software-directory/analysis/vesta.md
             - XCRYSDEN:                                 software-directory/analysis/xcrysden.md
@@ -592,6 +608,8 @@ nav:
             - Phonon Dispersions:                       properties-directory/non-scalar/phonon-dispersions.md
             - Phonon Density of States:                 properties-directory/non-scalar/phonon-dos.md
             - Reaction Energy Profile:                  properties-directory/non-scalar/reaction-energy-profile.md
+            - File Content:                             properties-directory/non-scalar/file-content.md
+            - Workflow:                                 properties-directory/non-scalar/workflow.md
         - Elemental:
             - Atomic Radius:                            properties-directory/elemental/atomic-radius.md
             - Electronegativity:                        properties-directory/elemental/electronegativity.md

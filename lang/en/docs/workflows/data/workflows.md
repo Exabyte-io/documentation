@@ -10,11 +10,11 @@ In the expandable section below, the user can find the JSON representation of a 
   </summary> 
 
 ```json tab="Schema" 
-{!schema/workflow.json!}
+{!esse/schema/workflow.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow.json!}
+{!esse/example/workflow.json!}
 ```
 
 </details>
