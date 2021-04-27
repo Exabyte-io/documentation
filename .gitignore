@@ -2,6 +2,7 @@
 .DS_Store
 .idea
 .virtualenv*
+/venv*
 tmp/
 py-googletrans
 oauth-key.json

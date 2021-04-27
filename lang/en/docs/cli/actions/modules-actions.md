@@ -1,6 +1,6 @@
 # The Module Command 
 
-We describe in the present page how [modules](../environment.md#modules) can be handled under the [Command Line Interface](../overview.md) (CLI) of our platform, via the `module` command and its corresponding keyword parameters.
+We describe in this page how [modules](../environment.md#modules) can be handled under the [Command Line Interface](../overview.md) (CLI) of our platform, via the `module` command and its corresponding keyword parameters.
 
 ## List Currently Loaded Modules
 

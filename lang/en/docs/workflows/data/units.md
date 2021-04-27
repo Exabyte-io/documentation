@@ -7,79 +7,110 @@ For a description of unit input templating, the reader is referred to [this sect
 ## General Case
 
 ```json tab="Schema" 
-{!schema/workflow/unit.json!}
+{!esse/schema/workflow/unit.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit.json!}
+{!esse/example/workflow/unit.json!}
 ```
 
 ## Execution
 
 ```json tab="Schema" 
-{!schema/workflow/unit/execution.json!}
+{!esse/schema/workflow/unit/execution.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/execution.json!}
+{!esse/example/workflow/unit/execution.json!}
 ```
 
 ## Processing
 
 ```json tab="Schema" 
-{!schema/workflow/unit/processing.json!}
+{!esse/schema/workflow/unit/processing.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/processing.json!}
+{!esse/example/workflow/unit/processing.json!}
 ```
 
 ## I/O
 
+### DataFrame
 ```json tab="Schema" 
-{!schema/workflow/unit/io.json!}
+{!esse/schema/workflow/unit/io.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/io.json!}
+{!esse/example/workflow/unit/io.json!}
+```
+
+### API
+
+```json tab="Schema"
+{!esse/schema/workflow/unit/io/api.json!}
+```
+
+```json tab="Example"
+{!esse/example/workflow/unit/io/api.json!}
+```
+
+### Database
+
+```json tab="Schema"
+{!esse/schema/workflow/unit/io/db.json!}
+```
+
+```json tab="Example"
+{!esse/example/workflow/unit/io/db.json!}
+```
+
+### Object Storage
+
+```json tab="Schema"
+{!esse/schema/workflow/unit/io/object_storage.json!}
+```
+
+```json tab="Example"
+{!esse/example/workflow/unit/io/object_storage.json!}
 ```
 
 ## Assignment
 
 ```json tab="Schema" 
-{!schema/workflow/unit/assignment.json!}
+{!esse/schema/workflow/unit/assignment.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/assignment.json!}
+{!esse/example/workflow/unit/assignment.json!}
 ```
 
 ## Conditional
 
 ```json tab="Schema" 
-{!schema/workflow/unit/condition.json!}
+{!esse/schema/workflow/unit/condition.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/condition.json!}
+{!esse/example/workflow/unit/condition.json!}
 ```
 
 ## Map
 
 ```json tab="Schema" 
-{!schema/workflow/unit/map.json!}
+{!esse/schema/workflow/unit/map.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/map.json!}
+{!esse/example/workflow/unit/map.json!}
 ```
 
 ## Reduce
 
 ```json tab="Schema" 
-{!schema/workflow/unit/reduce.json!}
+{!esse/schema/workflow/unit/reduce.json!}
 ```
 
 ```json tab="Example" 
-{!example/workflow/unit/reduce.json!}
+{!esse/example/workflow/unit/reduce.json!}
 ```

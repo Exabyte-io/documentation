@@ -5,9 +5,9 @@ In order to organize and store the information about [Methods](overview.md) on o
 Below, the user can find an example JSON structured representation of a [Method](overview.md). 
 
 ```json tab="Schema" 
-{!schema/method.json!}
+{!esse/schema/method.json!}
 ```
 
 ```json tab="Example" 
-{!example/method.json!}
+{!esse/example/method.json!}
 ```
