@@ -1,34 +1,23 @@
-# Train a K-Means Clustering Model with Scikit-Learn
+# Machine Learning: Train a Random Forest for Classification
 
-This tutorial demonstrates how to train a K-Means Clustering [^1] model using Scikit-Learn. [^2]
+This tutorial demonstrates how to train a Random Forest [^1] classifier using Scikit-Learn. [^2]
 
 ## 1. Acquire Training Data
 
-Unsupervised learning [^3] is a technique that takes in unlabeled training data, and generates its own labels for a
-dataset. Oftentimes, it is used as an exploratory tool to find collections of similar items. For example, to find
-molecules or crystals with similar properties.
+The data we use in this example comes from the QSAR group's biodegredation database, as hosted on Kaggle. [^3]
 
-The data used in this example was acquired from Kaggle [^4].
+The dataset consists of 41 unique descriptors of each molecule, and the goal of the problem is to predict whether the
+molecule is biodegredable or not.
 
-It consists of a group of 21,263 superconductors, along with the following properties:
+For convenience (and to ensure the ROC curves are predicted on the correct side of the diagonal), we have gently
+pre-processed the dataset to encode its class labels as 0 and 1 (previously, they were 1 and 2). This is temporary - 
+the May update to the platform will automaticlaly encode class labels as 0 and 1, and will automatically un-transform
+them to their original labels (e.g. 1 and 2, in this case).
 
-- Atomic Mass (AMU)
-- First Ionization Energy (kJ/mol)
-- Atomic Radius (pm)
-- Density (kg/m^3)
-- Electron Affinity (kJ/mol)
-- Fusion Heat (kJ/mol)
-- Thermal Conductivity (kJ/mol)
-- Valence (number of bonds)
+Please download the dataset
+<a href="/extra/files/classification_data.csv" download="data_to_train_with.csv">here</a>. 
 
-For each property, various properties including mean, the weighted mean, and standard deviation are calculated. The
-dataset was originally posted to Kaggle to pose the regression problem of predicting a superconductor's critical
-temperature [^5], but for our purposes, we will train a clustering model to separate the superconductors into several
-groups.
-
-Due to the filesize limits imposed by our upload system (20 MB), we will truncate at 15,000 examples,
-for a 16 MB training set. For convenience, we have processed this file to meet our upload constraint; download it
-<a href="/extra/files/clustering_data.csv" download="clustering_data.csv">it here</a>. 
+For the purposes of this tutorial, we will name this dataset "data_to_train_with.csv" from this point onward.
 
 ## 2. Upload the Training Data
 
@@ -41,10 +30,10 @@ below:
 Then, when the browser's upload window appears, we navigate to where we downloaded the file in section 1, and select it
 for upload. If the upload was successful, the file will then be visible in the dropbox.
 
-## 3. Copy the "Python ML Train Clustering" Workflow from the Workflow Bank
+## 3. Copy the "Python ML Train Classification" Workflow from the Workflow Bank
 
 Next, we select the`Bank Worfklows` button in the [left sidebar](../../ui/left-sidebar.md), which brings us to
-the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train Clustering" workflow owned
+the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train Classification" workflow owned
 by the "Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
 
 A diagram and detailed description of this workflow can be found
@@ -62,7 +51,7 @@ designer), and choose "Select Workflow."
 ![Job Designer with Circles](../../images/tutorials/pythonML/job-designer-with-python-ml-name-and-three-dots-circled.png "Job designer page")
 
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
-search for "Python ML Train Clustering" and select it.
+search for "Python ML Train Classification" and select it.
 
 ## 5. Select the Dataset
 
@@ -70,11 +59,11 @@ The job designer changes now that our ML Training workflow is selected. The "Mat
 a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
 a preview of the dataset once it is selected.
 
-![Dataset Tab with Data Preview](../../images/tutorials/clustering_tutorial/dataset-tab-with-data.png "Dataset Tab with Data")
+![Dataset Tab](../../images/tutorials/classification_tutorial/dataset-tab-with-data.png "Dataset Tab")
 
 To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
-files presently on the dropbox. Choose the training set we uploaded earlier, "clustering_data.csv."
+files presently on the dropbox. Choose the training set we uploaded earlier, "data_to_train_with.csv."
 
 A preview of the data then appears on the dataset tab, indicating that the data has successfully been loaded.
 
@@ -96,22 +85,16 @@ Select the `Machine Learning` subworkflow by clicking on it. The following workf
 
 0. `Setup Packages and Variables` - Configures the job and downloads all required packages with `pip`
 1. `Data Input` - Reads the training data from disk
-2. `Train Test Split` - Splits the data into a training set and a testing set
-2. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
-3. `Model Train and Predict` - Handles model training, and prediction
-4. `2D PCA Clusters Plot` - Draws a plot of the clusters in the training and testing set, projected onto the first two
-principle components [^6] of the dataset.
+2. `Train Test Split` - Splits the data into a training set and a testing set 
+3. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
+4. `Model Train and Predict` - Handles model training, and prediction
+5. `ROC Curve Plot` - Draws a plot of the Receiver Operator Characteristic (ROC) curve [^4]
 
 We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
-workflow editor. Then, set `problem_category` to "clustering" to state that we are solving a clustering problem.
+workflow editor. Then, set `target_column_name` to "Class" to define the target column of the training set. Then,
+set the `problem_category` to be classification.
 
-![Important settings with clustering set](../../images/tutorials/clustering_tutorial/important-settings-problem-category.png "Important settings with clustering set" )
-
-By default, the workflow will split the dataset into 4 clusters.  This can be configured within the
-`Model Train and Predict` unit. We will click the `Model Train and Predict` unit to bring up the workflow unit editor.
-Then, scroll down to line 27, and change `n_clusters` from 4 to 2. Then, close the unit editor.
-
-![K Means set to two clusters](../../images/tutorials/clustering_tutorial/kmeans-set-to-two-clusters.png "K Means Set to Two Clusters")
+![Important settings with target column name set](../../images/tutorials/classification_tutorial/important-settings-chosen.png "Important settings with target column name set" )
 
 The workflow has now been configured, and we are ready to train.
 
@@ -130,14 +113,12 @@ We can now [run the job](../../jobs/actions/run.md) and wait for it to complete.
 After a few minutes, the job will complete. We can then visit the job's [results tab](../../jobs/ui/results-tab.md),
 where we will see that two properties have been calculated. The first, `Machine Learning - Model Train and Predict` is
 the predict workflow that was generated by the machine learning job. The predict workflow can be used to leverage the
-trained model for additional predictions on new data. In the case of clustering, this means assigning new values to the
-clusters identified by the model.
+trained model for additional predictions on new data.
 
-The second result visible is `Machine Learning - 2D PCA Clusters Plot`, which draws the clusters projected along their
-first two principle components. Each color represents a different group. Circles represent the training set, and squares
-represent the testing set.
+The second result visible is `Machine Learning - ROC Curve Plot`, which contains the ROC curve we calculated to assess
+the model.
 
-![Results Tab Showcasing Clusters Plot](../../images/tutorials/clustering_tutorial/2d-pca-clusters-plot.png "Results Tab Showcasing Clusters Plot")
+![Results Tab Showcasing Parity Plot](../../images/tutorials/classification_tutorial/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
 
 
 ## Animation
@@ -145,19 +126,15 @@ represent the testing set.
 This tutorial is demonstrated in the following animation:
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/rChZ6SKOSOA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/UJ8ISCYEbSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Links
 
-[^1]: [Wikipedia, K-Means Clustering](https://en.wikipedia.org/wiki/K-means_clustering)
+[^1]: [Wikipedia, Random Forest](https://en.wikipedia.org/wiki/Random_forest)
 
-[^2]: [Scikit-Learn, K-Means](https://scikit-learn.org/stable/modules/generated/sklearn.cluster.KMeans.html)
+[^2]: [Scikit-Learn, Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
 
-[^3]: [Wikipedia, Unsupervised Learning](https://en.wikipedia.org/wiki/Unsupervised_learning)
+[^3]: [Kaggle, Biodegredation Database](https://www.kaggle.com/muhammetvarl/qsarbiodegradation)
 
-[^4]: [Kaggle, Superconductors Dataset](https://www.kaggle.com/anlgrbz/super-conductors)
-
-[^5]: [Wikipedia, Superconductivity](https://en.wikipedia.org/wiki/Superconductivity#By_critical_temperature)
-
-[^6]: [Wikipedia, Principle Component Analysis](https://en.wikipedia.org/wiki/Principal_component_analysis)
+[^4]: [Wikipedia, Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
