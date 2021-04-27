@@ -1,24 +1,23 @@
-# Machine Learning: Train a Neural Network
+# Machine Learning: Train a Random Forest for Classification
 
-This tutorial demonstrates how to train a a [multilayer perceptron](https://en.wikipedia.org/wiki/Multilayer_perceptron)
-for regression
-using [SciKit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.neural_network.MLPRegressor.html).
+This tutorial demonstrates how to train a Random Forest [^1] classifier using Scikit-Learn. [^2]
 
 ## 1. Acquire Training Data
 
-The data we use in this tutorial is taken from a [recent model](http://doi.org/10.1126/sciadv.aax5101) of small molecule
-adsorption to transition metal nanoparticles. Specifically, we use DFT-calculated values for the adsorption energy of
-·CH<sub>3</sub>, CO, and ·OH radicals to Ag, Au, and Cu nanoparticles ranging in size from 55 to 172 atoms.
+The data we use in this example comes from the QSAR group's biodegredation database, as hosted on Kaggle. [^3]
 
-<a href="/extra/files/data_to_train_with.csv" download="data_to_train_with.csv">This File</a> contains the data we will
-use in this tutorial. A sample of the first 5 lines in the file can be found below:
+The dataset consists of 41 unique descriptors of each molecule, and the goal of the problem is to predict whether the
+molecule is biodegredable or not.
 
-|PBE_BE_eV|CE_Local_eV|ChemPot_eV|MADS_eV
-|-----|----|---|----
-|-1.39|-2.38|-4.96|-2.10
-|-1.11|-3.35|-4.96|-2.10
-|-0.95|-4.81|-4.96|-2.10
-|-0.74|-4.60|-4.96|-2.10
+For convenience (and to ensure the ROC curves are predicted on the correct side of the diagonal), we have gently
+pre-processed the dataset to encode its class labels as 0 and 1 (previously, they were 1 and 2). This is temporary - 
+the May update to the platform will automaticlaly encode class labels as 0 and 1, and will automatically un-transform
+them to their original labels (e.g. 1 and 2, in this case).
+
+Please download the dataset
+<a href="/extra/files/classification_data.csv" download="data_to_train_with.csv">here</a>. 
+
+For the purposes of this tutorial, we will name this dataset "data_to_train_with.csv" from this point onward.
 
 ## 2. Upload the Training Data
 
@@ -31,10 +30,10 @@ below:
 Then, when the browser's upload window appears, we navigate to where we downloaded the file in section 1, and select it
 for upload. If the upload was successful, the file will then be visible in the dropbox.
 
-## 3. Copy the "Python ML Train Regression" Workflow from the Workflow Bank
+## 3. Copy the "Python ML Train Classification" Workflow from the Workflow Bank
 
 Next, we select the`Bank Worfklows` button in the [left sidebar](../../ui/left-sidebar.md), which brings us to
-the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train Regression" workflow owned
+the [Bank Workflows Page](../../workflows/bank.md). We then search for the "Python ML Train Classification" workflow owned
 by the "Curators" account, and [copy it to our account](../../workflows/actions/copy-bank.md).
 
 A diagram and detailed description of this workflow can be found
@@ -52,7 +51,7 @@ designer), and choose "Select Workflow."
 ![Job Designer with Circles](../../images/tutorials/pythonML/job-designer-with-python-ml-name-and-three-dots-circled.png "Job designer page")
 
 This will bring up the [Select Workflow](../../jobs-designer/actions-header-menu/select-workflow.md) dialogue. We then
-search for "Python ML Train Regression" and select it.
+search for "Python ML Train Classification" and select it.
 
 ## 5. Select the Dataset
 
@@ -60,7 +59,7 @@ The job designer changes now that our ML Training workflow is selected. The "Mat
 a "Dataset" tab. Just as the "Materials" tab shows a preview of the materials the job will use, the "Dataset" tab shows
 a preview of the dataset once it is selected.
 
-![Dataset Tab](../../images/tutorials/pythonML/dataset-tab-visible.png "Dataset Tab")
+![Dataset Tab](../../images/tutorials/classification_tutorial/dataset-tab-with-data.png "Dataset Tab")
 
 To select a dataset, click the [Actions Button](../../jobs-designer/header-menu.md#Actions) (the three vertical dots in
 the upper-right of the job designer) and choose "Select Dataset." This will bring up a files explorer containing all
@@ -86,30 +85,18 @@ Select the `Machine Learning` subworkflow by clicking on it. The following workf
 
 0. `Setup Packages and Variables` - Configures the job and downloads all required packages with `pip`
 1. `Data Input` - Reads the training data from disk
-2. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
-3. `Model Train and Predict` - Handles model training, and prediction
-4. `Parity Plot` - Draws a plot of model predictions versus training data, and saves it to the disk. This plot is shown
-   on the Results tab.
+2. `Train Test Split` - Splits the data into a training set and a testing set 
+3. `Data Standardize` - Scales the data such that it has mean 0 and standard deviation 1
+4. `Model Train and Predict` - Handles model training, and prediction
+5. `ROC Curve Plot` - Draws a plot of the Receiver Operator Characteristic (ROC) curve [^4]
 
 We will begin by configuring our `Machine Learning` subworkflow. To begin, select the "Important Settings" portion of the
-workflow editor. Then, set `target_column_name` to "PBE_BE_eV" to define the target column of the training set.
+workflow editor. Then, set `target_column_name` to "Class" to define the target column of the training set. Then,
+set the `problem_category` to be classification.
 
-![Important settings with target column name set](../../images/tutorials/pythonML/important-settings-with-target-column-name-set.png "Important settings with target column name set" )
+![Important settings with target column name set](../../images/tutorials/classification_tutorial/important-settings-chosen.png "Important settings with target column name set" )
 
-Then, go back to the "Overview" portion of the workflow editor. We can now demonstrate how a workflow unit's parameters
-can be changed.
-
-Begin by selecting the `Model Train and Predict` workflow unit, as below:
-
-![Workflows tab with ml train subworkflow and train unit circled](../../images/tutorials/pythonML/workflows-tab-with-ml-train-subworkflow-and-train-unit-circled.png "Workflows tab with ml train subworkflow and train unit circled")
-
-We can then scroll down and change the `hidden_layer_sizes` argument from `(100,)` to `(100,100)` to make
-our model contain two hidden layers of 100 neurons each. We also change `max_iter` to 5000 to train for up to 5000
-iterations.
-
-![ML Train Neural Network with 2 Hidden Layers](../../images/tutorials/pythonML/ml-train-neural-network-with-2-hidden-layers.png "ML Train Neural Network with 2 Hidden Layers")
-
-Then, close the dialogue. The workflow has now been configured, and we are ready to train.
+The workflow has now been configured, and we are ready to train.
 
 ## 7. Submit the Job
 
@@ -128,15 +115,26 @@ where we will see that two properties have been calculated. The first, `Machine 
 the predict workflow that was generated by the machine learning job. The predict workflow can be used to leverage the
 trained model for additional predictions on new data.
 
-The second result visible is `Machine Learning - Parity Plot`, which contains the predicted versus actual values for the
-adsorption energies we trained the model on.
+The second result visible is `Machine Learning - ROC Curve Plot`, which contains the ROC curve we calculated to assess
+the model.
 
-![Results Tab Showcasing Parity Plot](../../images/tutorials/pythonML/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
+![Results Tab Showcasing Parity Plot](../../images/tutorials/classification_tutorial/ml-train-results-tab.png "Results Tab Showcasing Parity Plot")
+
 
 ## Animation
 
 This tutorial is demonstrated in the following animation:
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/ExVa55FPAWg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/UJ8ISCYEbSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## Links
+
+[^1]: [Wikipedia, Random Forest](https://en.wikipedia.org/wiki/Random_forest)
+
+[^2]: [Scikit-Learn, Random Forest Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.RandomForestClassifier.html)
+
+[^3]: [Kaggle, Biodegredation Database](https://www.kaggle.com/muhammetvarl/qsarbiodegradation)
+
+[^4]: [Wikipedia, Receiver Operating Characteristic](https://en.wikipedia.org/wiki/Receiver_operating_characteristic)
