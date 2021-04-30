@@ -44,7 +44,7 @@ pymdown-extensions==6.0
 pytz==2020.5
 PyYAML==5.4.1
 requests==2.25.1
-rsa==4.5
+rsa==4.7
 singledispatch==3.4.0.3
 six==1.15.0
 tornado==5.1.1
