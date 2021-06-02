@@ -155,6 +155,7 @@ nav:
             - Jupyter Notebook:                      tutorials/other/jupyter.md
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
+            - TensorFlow (GPU): tutorials/general-functionality/tensorflow-gpu.md
         - Materials:
             - Overview:                              tutorials/materials/overview.md
             - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
@@ -162,8 +163,6 @@ nav:
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
             - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
             - Interface:                             tutorials/materials/slabs-interface.md
-        - General Functionality:
-            - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
 
 
 # COMMON UI COMPONENTS
