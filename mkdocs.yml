@@ -707,6 +707,7 @@ nav:
             - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
+            - Create Anaconda Environment:              cli/actions/create-anaconda-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
 
