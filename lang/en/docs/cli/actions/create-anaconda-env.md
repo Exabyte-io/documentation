@@ -4,8 +4,7 @@ Here, we explain how one can set up a custom python environment using Anaconda w
 
 ## Loading Anaconda
 
-Once logged into the command line interface, one must first load the anaconda module using the `module load` command
-in the following way:
+Once logged into the command line interface, one must first load the anaconda module using the `module load` command in the following way:
 
 `module load python/anaconda3-5.2.0`
 
