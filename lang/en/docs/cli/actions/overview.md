@@ -18,6 +18,10 @@ The user can compile new software on the CLI, as explained [here](add-software.m
 
 Python environments are the object of a [dedicated discussion](create-python-env.md).
 
+## [Create Anaconda Environment](create-anaconda-env.md)
+
+The user can create and customize Anaconda environments for their projects, as explained [here](create-anaconda-env.md).
+
 ## [List Clusters and Cluster Nodes](list-clusters.md)
 
 The [computing clusters and nodes](../../infrastructure/clusters/overview.md) available for use can be listed by entering the commands [explained here](list-clusters.md).
