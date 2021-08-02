@@ -14,21 +14,23 @@ The following table provides information about available clusters on Microsoft A
 
 The list of currently enabled queues is given below. Price per core hour is shown in relation to the [relative unit price](../../pricing/service-levels.md#comparison-table) and is subject to change at any time. Total number of nodes can be increased upon [request](../../ui/support.md). 
 
-| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job<sup>+</sup> | Max Nodes Total |
-| :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
-| D     | debug        | debug    | core-seconds      | 4.002                   | 1         | 10        |
-| OR    | ordinary     | regular  | core-seconds      | 2.000                   | 1         | 10        |
-| OR8   | ordinary     | regular  | core-seconds      | 2.001                   | 1         | 10        |
-| OF    | ordinary     | fast     | core-hours        | 2.200                   | &le;5    | 100       |
-| SR    | saving       | regular  | core-seconds      | 0.400                   | 1         | 10        |
-| SR8   | saving       | regular  | core-seconds      | 0.401                   | 1         | 10        |
-| SF    | saving       | fast     | core-hours        | 0.441                   | &le;1<sup>*</sup>    | 100       |
-| GPOF  | ordinary     | fast     | core-hours        | 6.110                   | &le;5    | 10        |
-| GP2OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5    | 10        |
-| GP4OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5    | 10        |
-| GPSF  | saving       | fast     | core-hours        | 1.222                   | &le;5    | 10        |
-| GP2SF | saving       | fast     | core-hours        | 1.222                   | &le;5    | 10        |
-| GP4SF | saving       | fast     | core-hours        | 1.222                   | &le;5    | 10        |
+| Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price                   | Max Nodes per Job<sup>+</sup> | Max Nodes Total   |
+| :---: | :---:        | :---:    | :---:             | :---:                   | :---:                         | :---:             |
+| D     | debug        | debug    | core-seconds      | 4.002                   | 1                             | 10                |
+| OR    | ordinary     | regular  | core-seconds      | 2.000                   | 1                             | 10                |
+| OR8   | ordinary     | regular  | core-seconds      | 2.001                   | 1                             | 10                |
+| OF    | ordinary     | fast     | core-hours        | 2.200                   | &le;5                         | 100               |
+| OFPlus| ordinary     | fast     | core-hours        | 1.275                   | 5                             | 10                |
+| SR    | saving       | regular  | core-seconds      | 0.400                   | 1                             | 10                |
+| SR8   | saving       | regular  | core-seconds      | 0.401                   | 1                             | 10                |
+| SF    | saving       | fast     | core-hours        | 0.441                   | &le;1<sup>*</sup>             | 100               |
+| SF+   | saving       | fast     | core-hours        | 0.379                   | 5                             | 10                |
+| GPOF  | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
+| GP2OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
+| GP4OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
+| GPSF  | saving       | fast     | core-hours        | 1.222                   | &le;5                         | 10                |
+| GP2SF | saving       | fast     | core-hours        | 1.222                   | &le;5                         | 10                |
+| GP4SF | saving       | fast     | core-hours        | 1.222                   | &le;5                         | 10                |
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
