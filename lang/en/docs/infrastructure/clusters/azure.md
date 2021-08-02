@@ -47,9 +47,11 @@ The following table contains hardware specifications for the above queues.
 | OR    | c-1          | 16         | -            | -        | 112         | 10               |
 | OR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
 | OF    | c-1          | 16         | -            | -        | 112         | 54.54[^7]        |
+| OFplus| c-6          | 44         | -            | -        | 352         | 54.4             |
 | SR    | c-1          | 16         | -            | -        | 112         | 10               |
 | SR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
 | SF    | c-1          | 16         | -            | -        | 112         | 54.54            |
+| SFPlus| c-6          | 44         | -            | -        | 352         | 54.54            |
 | GPOF  | c-2          | 6          | g-2          | 1        | 112         | 10               |
 | GP2OF | c-2          | 12         | g-2          | 2        | 224         | 10               |
 | GP4OF | c-2          | 24         | g-2          | 4        | 448         | 10               |
