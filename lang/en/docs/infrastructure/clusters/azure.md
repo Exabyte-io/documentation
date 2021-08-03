@@ -24,7 +24,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 | SR    | saving       | regular  | core-seconds      | 0.400                   | 1                             | 10                |
 | SR8   | saving       | regular  | core-seconds      | 0.401                   | 1                             | 10                |
 | SF    | saving       | fast     | core-hours        | 0.441                   | &le;1<sup>*</sup>             | 100               |
-| SF+   | saving       | fast     | core-hours        | 0.379                   | 5                             | 10                |
+| SFplus   | saving       | fast     | core-hours        | 0.379                   | 5                             | 10                |
 | GPOF  | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
 | GP2OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
 | GP4OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
@@ -47,9 +47,11 @@ The following table contains hardware specifications for the above queues.
 | OR    | c-1          | 16         | -            | -        | 112         | 10               |
 | OR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
 | OF    | c-1          | 16         | -            | -        | 112         | 54.54[^7]        |
+| OFplus| c-6          | 44         | -            | -        | 352         | 54.4             |
 | SR    | c-1          | 16         | -            | -        | 112         | 10               |
 | SR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
 | SF    | c-1          | 16         | -            | -        | 112         | 54.54            |
+| SFPlus| c-6          | 44         | -            | -        | 352         | 54.54            |
 | GPOF  | c-2          | 6          | g-2          | 1        | 112         | 10               |
 | GP2OF | c-2          | 12         | g-2          | 2        | 224         | 10               |
 | GP4OF | c-2          | 24         | g-2          | 4        | 448         | 10               |
