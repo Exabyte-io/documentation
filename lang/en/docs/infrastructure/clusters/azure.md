@@ -20,7 +20,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 | OR    | ordinary     | regular  | core-seconds      | 2.000                   | 1                             | 10                |
 | OR8   | ordinary     | regular  | core-seconds      | 2.001                   | 1                             | 10                |
 | OF    | ordinary     | fast     | core-hours        | 2.200                   | &le;5                         | 100               |
-| OFPlus| ordinary     | fast     | core-hours        | 1.275                   | 5                             | 10                |
+| OFplus| ordinary     | fast     | core-hours        | 1.275                   | 5                             | 10                |
 | SR    | saving       | regular  | core-seconds      | 0.400                   | 1                             | 10                |
 | SR8   | saving       | regular  | core-seconds      | 0.401                   | 1                             | 10                |
 | SF    | saving       | fast     | core-hours        | 0.441                   | &le;1<sup>*</sup>             | 100               |
