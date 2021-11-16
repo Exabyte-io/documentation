@@ -70,7 +70,7 @@ pythonScriptFile="my_python_script.py"
 # =======
 # RUN JOB
 # =======
-module load cuda/11-5
+module load cuda/11.5
 module load python/ml-extras-3.9.1
 
 # Run TensorFlow
@@ -116,6 +116,6 @@ command only exists on nodes that contain GPU nodes.
 The CUDA and Python ML Extras modules can then be loaded as follows:
 
 ```bash
-module load cuda/11-5
+module load cuda/11.5
 module load python/ml-extras-3.9.1
 ```
