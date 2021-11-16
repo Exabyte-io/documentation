@@ -22,11 +22,11 @@ Key concerns to note are that:
 We currently offer Tensorflow-GPU version 2.7.0 bundled with Python 3.9.1 as part of the `python/ml-extras-3.9.1`
 modulefile. The module also contains many other useful cheminformatics packages including RDKit and ASE.
 
+# Running Tensorflow
+
 Tensorflow can either be run interactively, or by a job submission script.
 
-
 ## Job Submission Script
-
 In order to run TensorFlow through a job submission script, first connect to Cluster-001 or Cluster-007, and
 make a folder for the job.
 
@@ -83,7 +83,7 @@ Finally, the job can be submitted with qsub:
 qsub my_job_script.sh
 ```
 
-## Interactive TensorFlow Use
+## Interactive Use
 
 Oftentimes, it is useful to run TensorFlow interactively, for example to debug a script.
 To run a TensorFlow job interactively, first create a job that will spin up a GPU instance. For example, the following
