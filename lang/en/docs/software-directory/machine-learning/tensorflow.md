@@ -7,7 +7,7 @@ through our web app (e.g. for hyperparameter tuning).
 
 **A note on Python / Tensorflow compatibility:**
 Keep in mind that TensorFlow's development is rapidly evolving, and thus its dependencies can suddenly change in new versions.
-If not using one of our `python/ml-extras` packages, we recommend checking the
+We recommend checking the
 [official TensorFlow documentation](https://www.tensorflow.org/install/pip) to verify that the version of Python and
 version of TensorFlow selected are compatible with one-another.
 
@@ -17,12 +17,7 @@ Key concerns to note are that:
  are only compatible with Python releases earlier than Python 3.7.
   * Python 3.8 is only supported by [TensorFlow versions 2.2](https://www.tensorflow.org/install/pip) and later.
 
-# Loading TensorFlow
-
-We currently offer Tensorflow-GPU version 2.7.0 bundled with Python 3.9.1 as part of the `python/ml-extras-3.9.1`
-modulefile. The module also contains many other useful cheminformatics packages including RDKit and ASE.
-
-# Running Tensorflow
+# Running TensorFlow
 
 Tensorflow can either be run interactively, or by a job submission script.
 
@@ -71,7 +66,12 @@ pythonScriptFile="my_python_script.py"
 # RUN JOB
 # =======
 module load cuda/11.5
-module load python/ml-extras-3.9.1
+module load python/3.9.1
+
+# Install Tensorflow
+virtualenv .env
+source .env/bin/activate
+pip3 install tensorflow-gpu
 
 # Run TensorFlow
 python3 $pythonScriptFile &> python_log.txt
@@ -113,9 +113,13 @@ From there, once the sleeper job has begun running, the node name can be found b
 The node's version of CUDA and its GPU drivers can be verified by running `nvidia-smi` while connected. Note that this 
 command only exists on nodes that contain GPU nodes.
 
-The CUDA and Python ML Extras modules can then be loaded as follows:
+The CUDA module can be loaded, and TensorFlow's GPU version can be installed as follows:
 
 ```bash
 module load cuda/11.5
-module load python/ml-extras-3.9.1
+module load python/3.9.1
+
+virtualenv .env
+source .env/bin/activate
+pip3 install tensorflow-gpu
 ```
