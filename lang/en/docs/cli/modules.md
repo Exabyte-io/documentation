@@ -10,7 +10,7 @@ With Environment Modules, a variety of software libraries and applications are a
 Our module naming convention provides an at-a-glance summary of the software provided by the module, its version,
 and (optionally) the build information. The general format for this naming system is:
 
-`[name of the module]/[version of the module]-[build information]`
+`[Application Name]/[Application Version]-[Optional Build Information]`
 
 For example, Python 3.9.1 is listed as `python/3.9.1`, Python with version 5.2.0 of the Anaconda package manager is
 listed as `python/anaconda-5.2.0`.
@@ -18,7 +18,7 @@ listed as `python/anaconda-5.2.0`.
 Many of our modules contain build information in the name. This is useful when debugging job errors, as it indicates
 which compiler and libraries were used to build a version. In general, the syntax for optional build information is:
 
-```[Compiler abbreviation]-[Compiler Version]-[Library Abbreviation]-[Library Version]```
+```[Compiler Abbreviation]-[Compiler Version]-[Library Abbreviation]-[Library Version]```
 
 A list of compiler and library  abbreviations can be found in the following table:
 
