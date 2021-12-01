@@ -51,14 +51,13 @@ we can easily see that this refers to VASP 5.4.4, built with version 14.0.3.174 
 library version 5.0.2.044. Additionally, we can see that this is a gamma-point only version of VASP containing the
 Henkelman group's transition state tools.
 
-
 ### Legacy Naming Convention
+
 Several of the older packages on our system adopt a legacy naming convention. It is similar to the above notation,
 except that in order to shorten the name, periods in the version numbers were removed. To protect compatibility with
 existing user-made scripts, we have preserved this naming convention. For example, the
-`espresso/5.2.1-g-4.8.5-ompi-1.10.0` package has a duplicate listing as `espresso/521-g-485-ompi-110`.
-
-In the future, these packages will be hidden from the output `module avail` command. We **strongly** discourage the use
+`espresso/5.2.1-g-4.8.5-ompi-1.10.0` package has a duplicate listing as `espresso/521-g-485-ompi-110`. We plan for 
+these packages to be hidden from the output of the `module avail` command in the future. We discourage the use
 of modules with this legacy naming convention in any newly-created job submission scripts. Instead, please use the full,
 current naming convention for modules.
 
@@ -147,3 +146,4 @@ See the [module actions documentation](actions/modules-actions.md) for more info
 ## Links
 
 [^1]: [Wikipedia Environment Modules, Website](https://en.wikipedia.org/wiki/Environment_Modules_(software))
+[^2]: [Transition state tools for VASP, Henkelman Group at the University of Texas, Website](https://theory.cm.utexas.edu/vtsttools/)
