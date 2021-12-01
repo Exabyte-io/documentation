@@ -7,19 +7,24 @@ With Environment Modules, a variety of software libraries and applications are a
 
 ## Notation
 
-Modules on our cluster are named to provide an at-a-glance summary of the software, its version, and (optionally), the
-build information. The general format for this naming system is
-`[name of the module]/[version of the module]-[build information]`. For example, Python 3.9.1 is listed as
-`python/3.9.1`, Python with version 5.2.0 of the Anaconda package manager is listed as `python/anaconda-5.2.0`.
+Our module naming convention provides an at-a-glance summary of the software provided by the module, its version,
+and (optionally) the build information. The general format for this naming system is:
+
+`[name of the module]/[version of the module]-[build information]`
+
+For example, Python 3.9.1 is listed as `python/3.9.1`, Python with version 5.2.0 of the Anaconda package manager is
+listed as `python/anaconda-5.2.0`.
 
 Many of our modules contain build information in the name. This is useful when debugging job errors, as it indicates
-which compiler and libraries were used to build a version. In general, the syntax for optional build information is
-`[Compiler abbreviation]-[Compiler Version]-[Library Abbreviation]-[Library Version]`. A list of compiler and library
-abbreviations can be found in the following table:
+which compiler and libraries were used to build a version. In general, the syntax for optional build information is:
+
+```[Compiler abbreviation]-[Compiler Version]-[Library Abbreviation]-[Library Version]```
+
+A list of compiler and library  abbreviations can be found in the following table:
 
 | Name                    | Abbreviation | Description                                                                                   |
 | ----                    | ------------ | -----------                                                                                   |
-| GNU Compiler Collection | g            | Open-Source C / C++ / Fortran Compilers from the GNU Project                                  |
+| GNU Compiler Collection | g            | Open-Source C / C++ / Fortran compilers from the GNU Project                                  |
 | Intel Compilers         | i            | Closed-Source C / C++ / Fortran compilers from Intel                                          |
 | OpenMPI                 | ompi         | Open-Source implementation of the Message Passing Interface standard from the OpenMPI Project |
 | Intel MPI               | impi         | Closed-Source implementation of the Message Passing Interface standard from Intel             |
@@ -27,9 +32,9 @@ abbreviations can be found in the following table:
 For example, Quantum Espresso version 5.2.1 built with GCC 4.8.5 and OpenMPI 1.10.0 would be labeled as
 `espresso/5.2.1-g-4.8.5-ompi-1.10.0`. 
 
-Finally, several of our packages contain some additional metadata about their build configuration at the end of the
+Finally, several package names carry additional metadata about their build configuration at the end of the
 name string. These abbreviations are specific to the application being built, and a table can be found below which lists
-what these abbreviations mean.
+what they mean:
 
 | Program | Abbreviation | Meaning                                                             |
 | ------- | ------------ | -------                                                             |
@@ -41,19 +46,21 @@ what these abbreviations mean.
 | VASP    | gamma        | VASP built to only use gamma-points                                 |
 | VASP    | gpu          | VASP built for use with GPUs                                        |
 
-Putting it all together, if we take the `vasp/5.4.4-i-14.0.3.174-impi-5.0.2.044-vtst-gamma` as an example, we can easily
-see that this refers to VASP 5.4.4, built with version 14.0.3.174 of the Intel compilers and the Intel MPI library
-version 5.0.2.044. Additionally, we can see that this is a gamma-point only version of VASP containing the Henkelman
-group's transition state tools.
+Putting it all together, if we take the `vasp/5.4.4-i-14.0.3.174-impi-5.0.2.044-vtst-gamma` module as an example,
+we can easily see that this refers to VASP 5.4.4, built with version 14.0.3.174 of the Intel compiler and the Intel MPI
+library version 5.0.2.044. Additionally, we can see that this is a gamma-point only version of VASP containing the
+Henkelman group's transition state tools.
 
 
 ### Legacy Naming Convention
 Several of the older packages on our system adopt a legacy naming convention. It is similar to the above notation,
 except that in order to shorten the name, periods in the version numbers were removed. To protect compatibility with
 existing user-made scripts, we have preserved this naming convention. For example, the
-`espresso/5.2.1-g-4.8.5-ompi-1.10.0` package has a duplicate listing as `espresso/521-g-485-ompi-110`. In the future,
-these packages will be hidden from the output `module avail` command. In addition, we **strongly** discourage the use
-of modules with this legacy naming convention in any newly-created job submission scripts.
+`espresso/5.2.1-g-4.8.5-ompi-1.10.0` package has a duplicate listing as `espresso/521-g-485-ompi-110`.
+
+In the future, these packages will be hidden from the output `module avail` command. We **strongly** discourage the use
+of modules with this legacy naming convention in any newly-created job submission scripts. Instead, please use the full,
+current naming convention for modules.
 
 ## List Available Modules
 
