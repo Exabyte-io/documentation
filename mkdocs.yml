@@ -336,6 +336,7 @@ nav:
                 - Overview:                             software-directory/scripting/jupyter-lab/overview.md
                 - Data:                                 software-directory/scripting/jupyter-lab/data.md
         - Machine Learning (ML):
+            - TensorFlow:                               software-directory/machine-learning/tensorflow.md
             - Exabyte ML:
                 - Overview:                             software-directory/machine-learning/exabyte/overview.md
                 - Data:                                 software-directory/machine-learning/exabyte/data.md
