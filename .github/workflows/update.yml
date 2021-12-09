@@ -19,8 +19,12 @@ jobs:
 
       - name: Build pages and publish to S3
         uses: dmitry-spodarets/mkdocs-s3-publish-action@main
+
+      - name: S3 Sync
+        uses: ItsKarma/aws-cli@v1.70.0
+        with:
+          args: s3 sync site/ s3://docs.mt3ra.com/
         env:
-          S3_LOCATION: ${{ secrets.S3_LOCATION }}
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.S3_LOCATION }}
