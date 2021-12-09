@@ -21,7 +21,7 @@ jobs:
         uses: dmitry-spodarets/mkdocs-s3-publish-action@main
 
       - name: S3 Sync
-        uses: ItsKarma/aws-cli@v1.70.0
+        uses: unfor19/install-aws-cli-action@master
         with:
           args: s3 sync site/ s3://docs.mt3ra.com/
         env:
