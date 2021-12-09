@@ -10,6 +10,9 @@ jobs:
     steps:
       - name: Checkout main
         uses: actions/checkout@v2
+        with:
+          lfs: 'true'
+          submodules: 'recursive'
 
       - uses: actions/setup-python@v2
         with:
