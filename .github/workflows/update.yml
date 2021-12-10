@@ -8,7 +8,7 @@ jobs:
     name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout
         uses: actions/checkout@v2
         with:
           submodules: true
@@ -17,7 +17,7 @@ jobs:
         with:
           python-version: 'pypy-2.7'
 
-      - name: Build pages and publish to S3
+      - name: Build pages
         uses: dmitry-spodarets/mkdocs-s3-publish-action@main
 
       - name: S3 Sync
