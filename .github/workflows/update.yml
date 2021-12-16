@@ -21,7 +21,7 @@ jobs:
           python-version: 'pypy-2.7'
 
       - name: Build pages
-        uses: dmitry-spodarets/mkdocs-s3-publish-action@main
+        uses: Exabyte-io/mkdocs-s3-publish-action@main
 
       - name: S3 Sync
         uses: unfor19/install-aws-cli-action@master
