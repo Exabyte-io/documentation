@@ -2,7 +2,7 @@
 
 The `Edit` menu in the top menu bar of the Materials Designer interface makes it possible to navigate through the various changes made to the material structure under consideration during the current session. The position of this menu within the overall interface is highlighted below:
 
-![Edit Menu](../../images/materials-designer/edit-menu.png "Edit Menu")
+![Edit Menu](../../images/materials-designer/edit-menu.png)
 
 
 ## Undo
@@ -35,8 +35,3 @@ The `Edit` menu also allows the user to update the material ot use a `Convention
 ## Toggle "isNonPeriodic"
 The 'Edit' menu also allows the user to update the material to be categorized as `non-periodic`. By clicking the `Toggle "isNonPeriodic"` button the materials lattice and basis will be updated so that it's coordinates are centered inside a cubic lattice with dimensionality based on the size of the structure. Upon saving the basis of the stucture will be set to Cartesian Units. the difference between a `periodic` and `non-periodic` structure is denoted by a change in the icon representing the structure. `Periodic` structures are denoted by <i class="zmdi zmdi-widget zmdi-hc-border"></i> icon while `non-periodic` structures are denoted by <i class="zmdi zmdi-device-hub zmdi-hc-border"></i> icons.
 
-## To Do
-1. Update image
-2. Create video for `Use Conventional Cell`
-3. Create vido for `Toggle "isNonPeriodic"`
-4. Image showing icon difference
