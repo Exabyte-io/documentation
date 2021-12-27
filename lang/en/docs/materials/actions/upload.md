@@ -24,6 +24,9 @@ When large sets of files need to be imported at a single time, particular entrie
 
 Users may tag structures with a list of keywords. This is especially resourceful when large datasets of imported files need to be retrieved or filtered later. The general guidelines for entering tags and attaching them to entities are presented [here](../../entities-general/actions/metadata.md).
 
+#### Tagging Non-Periodic Structures
+Users may wish to create a non-periodic structure when they upload a new structure by adding `"non-periodic"` as a tag.
+
 ### Upload Files
 
 Next, the [selected](../../entities-general/actions/select.md) files can be uploaded to the platform by clicking `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> in the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar). 
