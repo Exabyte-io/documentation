@@ -1,6 +1,6 @@
-# Exabyte.io Documentation
+# Mat3ra Documentation
 
-Exabyte.io is a cloud-native accessible and collaborative environment for materials modeling from nanoscale. With the help of the platform, users can **design new materials** online and **predict the properties** of these materials using simulations. The present documentation explains how the platform works in details. 
+Mat3ra is a cloud-native accessible and collaborative environment for materials modeling from nanoscale. With the help of the platform, users can **design new materials** online and **predict the properties** of these materials using simulations. The present documentation explains how the platform works in details. 
 
 ## Search
 
@@ -30,4 +30,4 @@ We reply to support requests within 24 hours. Our team can be contacted during w
 ## Links
 
 [^1]: [What is materials discovery cloud, article](https://www.linkedin.com/pulse/how-we-design-world-tomorrow-what-materials-discovery-timur-bazhirov)
-[^2]: [Exabyte.io: case studies](https://exabyte.io/#case-study)
+[^2]: [Mat3ra: case studies](https://mat3ra.com/case-studies)
