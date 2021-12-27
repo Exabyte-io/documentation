@@ -1,4 +1,4 @@
-name: Update
+name: Update S3 sources
 on:
   pull_request:
     types: closed
@@ -21,7 +21,7 @@ jobs:
           python-version: 'pypy-2.7'
 
       - name: Build pages
-        uses: Exabyte-io/mkdocs-s3-publish-action@main
+        uses: Exabyte-io/action-mkdocs-s3-publish@main
 
       - name: S3 Sync
         uses: Exabyte-io/action-install-aws-cli@master
