@@ -24,7 +24,7 @@ jobs:
         uses: Exabyte-io/mkdocs-s3-publish-action@main
 
       - name: S3 Sync
-        uses: unfor19/install-aws-cli-action@master
+        uses: Exabyte-io/action-install-aws-cli@master
       - run: aws s3 sync site/ s3://docs.mt3ra.com/
         shell: bash
         env:
