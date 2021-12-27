@@ -34,9 +34,9 @@ extra:
           link: https://github.com/exabyte-io
         - type: linkedin
           link: https://www.linkedin.com/company/exabyte-io
-    analytics:
-        provider: google
-        property: UA-69270713-5
+#    analytics:
+#        provider: google
+#        property: UA-69270713-5
 markdown_extensions:
     - markdown_include.include:
         base_path: data
