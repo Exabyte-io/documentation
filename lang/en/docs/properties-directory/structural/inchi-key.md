@@ -1,4 +1,4 @@
-# InChI
+# InChIKey
 
 <span class="btn badge b-success border-50">Non-Scalar</span> <span class="btn badge b-info border-50">Structural</span>
 

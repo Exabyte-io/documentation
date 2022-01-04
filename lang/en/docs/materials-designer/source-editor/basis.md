@@ -62,7 +62,7 @@ Click on the animation below to see the above in action. Here, we change the x-a
 
 
 ## Non-Periodic Basis Transformations
-When [Edit - Toggle "isNonPeriodic"](../header-menu/edit.md) is used, the basis of the structure will automatically be converted to Cartesian Coordinates and translated to the center of the lattice. This is done by translating each basis coordinate so that the center of coordinates for the structure and the center point of the lattice align.
+When [Edit - Toggle "isNonPeriodic"](../header-menu/edit.md) is used, the basis of the structure will automatically be converted to Cartesian Coordinates and translated to the center of the [lattice](lattice.md). This is done by translating each basis coordinate so that the center of coordinates for the structure and the center point of the lattice align.
 
 ## Toggle "isNonPeriodic" Animation
 
