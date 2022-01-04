@@ -24,7 +24,7 @@ When large sets of files need to be imported at a single time, particular entrie
 
 Users may tag structures with a list of keywords. This is especially resourceful when large datasets of imported files need to be retrieved or filtered later. The general guidelines for entering tags and attaching them to entities are presented [here](../../entities-general/actions/metadata.md).
 
-#### Tagging Non-Periodic Structures
+#### Tagging a Structure as Non-Periodic
 Users may wish to create a non-periodic structure when they upload a new structure by adding `"non-periodic"` as a tag.
 
 ### Upload Files

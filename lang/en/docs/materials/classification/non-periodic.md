@@ -5,6 +5,7 @@ The complete **structure** of a **non-periodic chemcial system** is obtained fro
 This results in a structure with a specific geometry which gives it a defined [point-group](../../properties-directory/structural/point-group.md)[^2] symmetry assignment.
 
 Examples of **non-periodic structures** include **molecules**[^1].
+
 ## Visualization
 
 The image below outlines the difference between a `non-periodic` and `periodic` structure

@@ -24,14 +24,13 @@ The user can also `Reset` <i class="zmdi zmdi-close zmdi-hc-border"></i> all cha
 
 ## Clone
 
-The `Edit` menu also allows the user to `Clone` <i class="zmdi zmdi-collection-image zmdi-hc-border"></i> the currently selected structure into a new distinct entry in the items list sidebar. This feature is demonstrated in the short animation below, where we clone the original silicon structure into a new entry which appears below it:
+Additionally, the user can also `Clone` <i class="zmdi zmdi-collection-image zmdi-hc-border"></i> the currently selected structure into a new distinct entry in the items list sidebar. This feature is demonstrated in the short animation below, where we clone the original silicon structure into a new entry which appears below it:
 
 <img data-gifffer="/images/materials-designer/edit-clone.gif" />
 
 ## Use Conventional Cell
 
-The `Edit` menu also allows the user to update the material ot use a `Conventional Cell`.
+By selecting the [Use Conventional Cell](../3d-editor/view.md) option from the `Edit` menu allows the user can update the material to a conventional cell representation.
 
 ## Toggle "isNonPeriodic"
-The 'Edit' menu also allows the user to update the material to be categorized as `non-periodic`. By clicking the `Toggle "isNonPeriodic"` button the materials lattice and basis will be updated so that it's coordinates are centered inside a cubic lattice with dimensionality based on the size of the structure. Upon saving the basis of the stucture will be set to Cartesian Units. the difference between a `periodic` and `non-periodic` structure is denoted by a change in the icon representing the structure. `Periodic` structures are denoted by <i class="zmdi zmdi-widget zmdi-hc-border"></i> icon while `non-periodic` structures are denoted by <i class="zmdi zmdi-device-hub zmdi-hc-border"></i> icons.
-
+The user can also update the material to be categorized as [non-periodic](../../materials/classification/non-periodic.md) by selecting the `Toggle "inNonPeriodic"` option. Upon updating, the materials [lattice](../source-editor/lattice.md) and [basis](../source-editor/basis.md) will be updated so that the coordinates are centered inside a cubic lattice with dimensionality based on the size of the structure. Upon saving, the basis of the stucture will be set to Cartesian Units.
