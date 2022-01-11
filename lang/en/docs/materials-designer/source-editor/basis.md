@@ -68,6 +68,7 @@ When [Edit - Toggle "isNonPeriodic"](../header-menu/edit.md) is used, the basis 
 
 Click on the animation below to see the **Toggle "isNonPeriodic" button in action.
 
+<img data-gifffer="/images/materials-designer/toggle-is-non-periodic-button.gif" />
 
 ## Links
 
