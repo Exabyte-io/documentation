@@ -30,7 +30,7 @@ The [Data](data.md) section contains an example of JSON representation of a mate
 
 ## Classification
 
-Materials are distinguished based on whether they are [crystalline](classification/crystalline.md), [non-crystalline](classification/non-crystalline.md), or [non-periodic](classification/non-periodic.md). An overview of classifications can be found [here](classification/overview.md)
+Materials are distinguished based on whether they are [crystalline](classification/crystalline.md) and [non-periodic](classification/non-periodic.md). An overview of classifications can be found [here](classification/overview.md)
 
 ## [Properties](../properties/overview.md)
 
