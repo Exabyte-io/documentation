@@ -398,7 +398,7 @@ nav:
         - Default:                                      materials/default.md
         - Classification:
             - Crystalline:                              materials/classification/crystalline.md
-            - Non-Crystalline:                          materials/classification/non-crystalline.md
+            - Non-Periodic                              materials/classification/non-periodic.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -621,6 +621,8 @@ nav:
             - Space Group:                              properties-directory/structural/space-group.md
             - Final Structure:                          properties-directory/structural/final-structure.md
             - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
+            - Inchi:                                    properties-directory/structural/inchi.md
+            - Inchi Key:                                properties-directory/structural/inchi-key.md
 
 
 # COMPUTATIONAL ASPECTS
