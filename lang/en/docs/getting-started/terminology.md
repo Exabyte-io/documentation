@@ -10,7 +10,7 @@ Useful properties of materials can be obtained either via experiments, from a pu
 
 There are three main concepts that we deal with:
 
-- **Materials**: a combination of chemical elements in a particular geometric arrangement, that can be *uniquely* defined by a set of [descriptive properties](../properties/classification/overview.md) (eg. crystal lattice and basis), and has certain [characteristic properties](../properties/classification/overview.md) that can be computed upon it (eg. band gap, formation energy etc.)
+- **Materials**: a combination of chemical elements in a particular geometric arrangement, that can be *uniquely* defined by a set of [descriptive properties](../properties/classification/overview.md) (eg. crystal lattice and basis), and has certain [characteristic properties](../properties/classification/overview.md) that can be computed upon it (eg. band gap, formation energy etc.). This includes both `periodic` (repeating units) and `non-periodic` (single unit) structures.
 
 - **Models**: a [theory](../models/overview.md) that provides scientific insight on how to calculate the characteristic properties of a material; it can be applied via multiple possible **Methods**, or [numerical implementations](../methods/overview.md) of the Model. In practice, methods are enacted on our platform via the creation of **[Workflow Computations](../workflows/overview.md)** to be applied on the material.
 
