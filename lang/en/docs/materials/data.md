@@ -32,6 +32,7 @@ In the expandable section below, the user can find an example JSON representatio
 | derivedProperties | [descriptive properties](../data-structured/overview.md#by-relation-to-workflow) derived from lattice/basis (only one example shown above) | Additional properties of the crystal structure under investigation as explained in the section ensuing the present table. |
 | hash | Hash string calculated by the [Bank Mapping Function](bank.md)  |   Structure-based hash string for the primitive standard representation of this material, calculated when checking this material against existing entries within the Materials Bank |
 | scaledHash | As above, but for the lattice axis scaled to 1.0 (i.e. to identify same structures under different uniform pressure) | This hash string is calculated by scaling all the dimensions of the primitive unit cell representation of the material by the $a$ lattice constant |
+| isNonPeriodic | Boolean value used to describing whether a structure exists in a single unit or repeating units. | The isNonPeriodic Boolean value is assumed to be false by default, indicating that a material is **periodic**. The value of isNonPeriodic, determines which derivedProperties are calculated for a structure. For example: unit cell volume is calculated for periodic, but not non-periodic structures. Conversely, International Chemical Identifier (InChI)[^1] are calculated for non-periodic, but not periodic structures.
 
 ## Derived Properties
 
@@ -43,3 +44,6 @@ As seen above, we use the crystal **lattice** and **basis** JSON objects as the 
  - and a large number of other possibilities. 
  
  For every material imported/uploaded to our platform, we pre-calculate a set of such descriptors, and store them inside this "derivedProperties" section. This information can be further used during data analysis or the construction of statistical predictive models.
+
+## Links
+[^1] [Wikipedia: International Chemical Identifer (InChI) Website](https://en.wikipedia.org/wiki/International_Chemical_Identifier)

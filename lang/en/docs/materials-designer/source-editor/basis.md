@@ -60,6 +60,16 @@ Click on the animation below to see the above in action. Here, we change the x-a
 
 <img data-gifffer="/images/materials-designer/ChangeMaterialBasis.gif" />
 
+
+## Non-Periodic Basis Transformations
+When [Edit - Toggle "isNonPeriodic"](../header-menu/edit.md) is used, the basis of the structure will automatically be converted to Cartesian Coordinates and translated to the center of the [lattice](lattice.md). This is done by translating each basis coordinate so that the center of coordinates for the structure and the center point of the lattice align.
+
+## Toggle "isNonPeriodic" Animation
+
+Click on the animation below to see the **Toggle "isNonPeriodic" button in action.
+
+<img data-gifffer="/images/materials-designer/toggle-is-non-periodic-button.gif" />
+
 ## Links
 
 [^1]: [Wikipedia XYZ file format, Website](https://en.wikipedia.org/wiki/XYZ_file_format)
