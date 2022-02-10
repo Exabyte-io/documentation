@@ -2,7 +2,7 @@
 
 We support uploading structural data in the file formats containing the lattice geometry and the ionic positions of the crystal structure under investigation. 
 
-At present CIF and POSCAR formats are supported [^1] and [^2]. The latter format represents a standard way of defining and inputting crystal structure information to [VASP code](../../software-directory/modeling/vasp/overview.md), one of the simulations engines incorporated into our platform.
+At present CIF, POSCAR and XYZ formats are supported [^1], [^2], [^3]. POSCAR format represents a standard way of defining and inputting crystal structure information to [VASP code](../../software-directory/modeling/vasp/overview.md), one of the simulations engines incorporated into our platform. XYZ files are a common format for defining and inputting non-periodic molecular structures into simulation engines, such as NWChem[^4].
 
 ## Open Upload Dialog
 
@@ -27,6 +27,32 @@ Users may tag structures with a list of keywords. This is especially resourceful
 #### Tagging a Structure as Non-Periodic
 Users may wish to create a non-periodic structure when they upload a new structure by adding `"non-periodic"` as a tag.
 
+### Set Filename Using File Content
+A common feature of POSCAR and XYZ files is that the name of a structure may be written into the file itself. In POSCAR files the first line of the file often contains a string identifying the material. In XYZ files the second line of the file often contains a string identifying the material.
+To update the name of a file based on the contents (first line of a POSCAR file, or second line of an XYZ file) the user can select the <i class="zmdi zmdi-comment-edit zmdi-hc-border"></i> button.
+
+For example:
+
+<b>Original Name:</b> material_0001.poscar
+
+<b>File Content:</b>
+
+```
+H2O
+1.0
+  10.583540000	   0.000000000	   0.000000000
+   0.000000000	  10.583540000	   0.000000000
+   0.000000000	   0.000000000	  12.700250000
+O H
+1 2
+direct
+   0.000000000    0.500000000    0.000000000  O
+   0.043139000    0.431029000    0.043078000  H
+   0.036635000    0.576406000    0.035949000  H
+```
+
+<b>New Name:</b> H2O.poscar
+
 ### Upload Files
 
 Next, the [selected](../../entities-general/actions/select.md) files can be uploaded to the platform by clicking `Upload` <i class="zmdi zmdi-upload zmdi-hc-border"></i> in the [actions toolbar](../../entities-general/ui/explorer.md#actions-toolbar). 
@@ -45,3 +71,5 @@ The aforementioned steps are demonstrated in the animation below.
 
 [^1]: [Syntax of the CIF file format, Website](https://www.iucr.org/resources/cif/spec/version1.1/cifsyntax)
 [^2]: [Syntax of the POSCAR file format, Website](http://cms.mpi.univie.ac.at/vasp/guide/node59.html)
+[^3]: [Wikipedia XYZ file format, Website](https://en.wikipedia.org/wiki/XYZ_file_format)
+[^4]: [NWChem Manual, Website](https://nwchemgit.github.io/Home.html)
