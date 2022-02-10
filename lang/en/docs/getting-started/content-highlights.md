@@ -19,6 +19,8 @@ We highlight three ways to input material geometries:
 
 > [Combinatorial sets](../materials-designer/header-menu/advanced/combinatorial-set.md), for example, make it possible to rapidly create a large number of material geometries.
 
+> [Toggle "isNonPeriodic"](../materials-designer/header-menu/edit.md), for example, makes it possible to a create a non-periodic structure, i.e. a molecule.
+
 ## Running Simulations
 
 We allow users to simulate materials to extract desired [properties](../properties/overview.md). In order to do so, one needs to [construct](../workflow-designer/overview.md) a simulation [workflow](../workflows/overview.md). For many properties we have a set of workflows available in the [workflows bank](../workflows/bank.md) that are available for [copy](../workflows/actions/copy-bank.md) by users.

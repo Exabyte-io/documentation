@@ -2,7 +2,7 @@
 
 The `Edit` menu in the top menu bar of the Materials Designer interface makes it possible to navigate through the various changes made to the material structure under consideration during the current session. The position of this menu within the overall interface is highlighted below:
 
-![Edit Menu](../../images/materials-designer/edit-menu.png "Edit Menu")
+![Edit Menu](../../images/materials-designer/edit-menu.png)
 
 
 ## Undo
@@ -24,6 +24,13 @@ The user can also `Reset` <i class="zmdi zmdi-close zmdi-hc-border"></i> all cha
 
 ## Clone
 
-The `Edit` menu also allows the user to `Clone` <i class="zmdi zmdi-collection-image zmdi-hc-border"></i> the currently selected structure into a new distinct entry in the items list sidebar. This feature is demonstrated in the short animation below, where we clone the original silicon structure into a new entry which appears below it:
+Additionally, the user can also `Clone` <i class="zmdi zmdi-collection-image zmdi-hc-border"></i> the currently selected structure into a new distinct entry in the items list sidebar. This feature is demonstrated in the short animation below, where we clone the original silicon structure into a new entry which appears below it:
 
 <img data-gifffer="/images/materials-designer/edit-clone.gif" />
+
+## Use Conventional Cell
+
+By selecting the [Use Conventional Cell](../3d-editor/view.md) option from the `Edit` menu allows the user can update the material to a conventional cell representation.
+
+## Toggle "isNonPeriodic"
+The user can also update the material to be categorized as [non-periodic](../../materials/classification/non-periodic.md) by selecting the `Toggle "inNonPeriodic"` option. Upon updating, the materials [lattice](../source-editor/lattice.md) and [basis](../source-editor/basis.md) will be updated so that the coordinates are centered inside a cubic lattice with dimensionality based on the size of the structure. Upon saving, the basis of the stucture will be set to Cartesian Units.

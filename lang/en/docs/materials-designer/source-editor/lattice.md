@@ -38,6 +38,9 @@ Click on the animation below to see the above in action. Here we change lattice 
 
 <img data-gifffer="/images/materials-designer/ChangeMaterialLattice.gif" />
 
+## Non-Periodic Lattice Update
+When [Edit - Toggle "isNonPeriodic"](../header-menu/edit.md) is used, the lattice will be updated so that it is of **type=CUB**. Additionally, the size of the lattice will be scaled to fit the non-periodic structure. We calculate the maximum pairwise radius of the structure in Angstroms and multiply it by a factor of 2.0 to set the new basis size.
+
 ## Links
 
 [^1]: [The AFLOW library of crystallographic prototypes, Website](http://www.aflowlib.org/CrystalDatabase/)
