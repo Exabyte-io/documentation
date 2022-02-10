@@ -38,5 +38,7 @@ jobs:
           folder: site
           bucket: docs.mat3ra.com
           bucket-region: ${{ secrets.S3_LOCATION }}
+          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /*
           no-cache: true
           private: true
