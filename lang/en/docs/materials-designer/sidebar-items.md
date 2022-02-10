@@ -24,3 +24,8 @@ The option to delete <i class="zmdi zmdi-delete zmdi-hc-border"></i> a material 
 ## Edit Name of Item
 
 The name of each entry can be edited accordingly by clicking on the corresponding text field. The material's chemical formula is also shown underneath its name for reference purposes. 
+
+## Material Icon
+
+The <i class="zmdi zmdi-widgets zmdi-hc-border"></i> icon next to the name of the material denotes a `periodic` structure.
+The <i class="zmdi zmdi-device-hub zmdi-hc-border"></i> icon next to the name of the material denotes a `non-periodic` structure.

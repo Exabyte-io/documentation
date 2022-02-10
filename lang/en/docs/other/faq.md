@@ -13,9 +13,9 @@ other questions to add:
 
 ## General
 
-### What is exabyte.io?
+### What is Mat3ra?
 
-Exabyte.io is a comprehensive platform for materials design and discovery through modeling and simulations.
+Mat3ra is a comprehensive platform for materials design and discovery through modeling and simulations.
 
 We believe that focusing on core science is the most effective way to speed things up. We merge together in a single environment: rigorous models, vast compute power, intuitive user interface and data management tools, in order to make your work on materials design highly efficient.
 

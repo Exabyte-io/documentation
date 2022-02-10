@@ -1,24 +1,40 @@
-name: Update
+name: Update S3 sources
 on:
+  push:
+    branches:
+      - 'master'
   pull_request:
-    types: closed
+    types:
+      - closed
+    branches:
+      - 'master'
   workflow_dispatch:
 jobs:
   build:
     name: Deploy docs
     runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
     steps:
-      - name: Checkout main
+      - name: Checkout
         uses: actions/checkout@v2
-
-      - uses: actions/setup-python@v2
         with:
-          python-version: 'pypy-2.7'
+          submodules: true
 
-      - name: Build pages and publish to S3
-        uses: dmitry-spodarets/mkdocs-s3-publish-action@main
-        env:
-          S3_LOCATION: ${{ secrets.S3_LOCATION }}
-          S3_ACCESS_KEY: ${{ secrets.S3_ACCESS_KEY }}
-          S3_SECRET_KEY: ${{ secrets.S3_SECRET_KEY }}
-          S3_BUCKET: ${{ secrets.S3_BUCKET }}
+      - name: Checkout LFS objects
+        run: git lfs pull
+
+      - name: Build pages
+        uses: Exabyte-io/action-mkdocs-s3-publish@main
+
+      - name: S3 Deploy
+        uses: Exabyte-io/action-s3-deploy@v3
+        with:
+          folder: site
+          bucket: docs.mat3ra.com
+          bucket-region: ${{ secrets.S3_LOCATION }}
+          dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /*
+          no-cache: true
+          private: true
