@@ -1,9 +1,9 @@
 # get docs dir from the environment. Defaults to lang/en/docs.
 docs_dir: !!python/object/apply:os.getenv ["DOCS_DIR", "lang/en/docs"]
 
-site_name: Exabyte.io Documentation
-site_url: https://docs.exabyte.io
-site_description: Documentation for the users of Exabyte.io materials modeling platform.
+site_name: Mat3ra Documentation
+site_url: https://docs.mat3ra.com
+site_description: Documentation for the users of Mat3ra materials modeling platform.
 dev_addr: "localhost:8000"
 
 repo_name: 'exabyte-io/documentation'
@@ -19,8 +19,10 @@ extra_css:
 extra_javascript:
     - extra/js/giffer.js
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+    - extra/js/ga.js
+    - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
 
-copyright: © 2021 <a target="_blank" href="http://exabyte.io">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="http://platform.exabyte.io">Back to platform</a>
+copyright: © 2021 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
     version: "0.17"
@@ -31,7 +33,11 @@ extra:
         - type: github
           link: https://github.com/exabyte-io
         - type: linkedin
-          link: https://www.linkedin.com/company/exabyte-io
+          link: https://www.linkedin.com/company/mat3ra/
+# Doesn't work with our version. It works from version 7.1.8
+#    analytics:
+#        provider: google
+#        property: UA-69270713-5
 markdown_extensions:
     - markdown_include.include:
         base_path: data
