@@ -372,6 +372,26 @@ The elemental ratio is given by the fraction of all atoms in a crystal which are
 {!esse/example/properties_directory/structural/elemental_ratio.json!}
 ```
 
+### [InChI](../../properties-directory/structural/inchi.md)
+
+The International Chemical Identifier[^1] used to identify molecules. 
+```json tab="Schema"
+{!esse/schema/properties_directory/structural/inchi.json!}
+```
+```json tab="Example"
+{!esse/example/properties_directory/structural/inchi.json!}
+```
+
+### [InChIKey](../../properties-directory/structural/inchi-key.md)
+
+The fixed-length non-human readable string derived from an **InChI**.
+```json tab="Schema"
+{!esse/schema/properties_directory/structural/inchi_key.json!}
+```
+```json tab="Example"
+{!esse/example/properties_directory/structural/inchi_key.json!}
+```
+
 ### [Magnetic Moments](../../properties-directory/structural/magnetic-moment.md)
 
 The magnetic moment of ferromagnetic materials can also be computed.
@@ -419,3 +439,6 @@ The volume of the unit cell is given by the scalar triple product of the lattice
 ```json tab="Example"
 {!esse/example/properties_directory/structural/volume.json!}
 ```
+
+## Links
+[^1]: [Wikipedia - International Chemical Identifier (Website)](https://en.wikipedia.org/wiki/International_Chemical_Identifier)
