@@ -20,12 +20,12 @@ Navigation bar on the left also serves as the table of contents. You may click o
 
 We reply to support requests within 24 hours. Our team can be contacted during working hours Pacific Time through:
 
-- email: <a href="mailto:support@exabyte.io" target="_blank">support@exabyte.io</a>,
+- email: <a href="mailto:support@mat3ra.com" target="_blank">support@mat3ra.com</a>,
 - phone: +1.510.473.7770,
-- web widget: click "Support" button at the bottom of our main <a href="https://platform.exabyte.io" target="_blank">web application</a>.
+- web widget: click "Support" button at the bottom of our main <a href="https://platform.mat3ra.com" target="_blank">web application</a>.
 
 !!! tip "Let us hear your feedback"
-    In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@exabyte.io" target="_blank">contact us</a>.
+    In case you find that something is missing or if you still have questions after reading this documentation, please <a class="text-muted" href="mailto:support@mat3ra.com" target="_blank">contact us</a>.
 
 ## Links
 
