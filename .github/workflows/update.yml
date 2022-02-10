@@ -25,10 +25,6 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs pull
 
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 'pypy-2.7'
-
       - name: Build pages
         uses: Exabyte-io/action-mkdocs-s3-publish@main
 
