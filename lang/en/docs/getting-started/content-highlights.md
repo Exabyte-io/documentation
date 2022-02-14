@@ -14,7 +14,7 @@ The user can find out more about such connection methods under the [connection o
 We highlight three ways to input material geometries:
 
 - [construct new crystal geometries](../materials-designer/overview.md), using our web-based crystallographic design tools
-- [upload structure](../materials/actions/upload.md) in widely used (eg. POSCAR/CIF) format(s)
+- [upload structure](../materials/actions/upload.md) in widely used (eg. POSCAR/CIF/XYZ) format(s)
 - [import structure](../materials/actions/import.md) from a third-party database (e.g. materialsproject.org)
 
 > [Combinatorial sets](../materials-designer/header-menu/advanced/combinatorial-set.md), for example, make it possible to rapidly create a large number of material geometries.

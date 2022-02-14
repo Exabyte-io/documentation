@@ -12,7 +12,7 @@ Space Groups are labelled by a distinctive notation convention, as tabulated in 
 
 ## Schema 
 
-The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#symmetry).
+The JSON schema and an example representation for this property can be found [here](../../properties/data/list.md#space-group-symmetry).
 
 ## Links
 

@@ -416,16 +416,28 @@ The P norm measures how homogeneous a material is in terms of its chemical compo
 {!esse/example/properties_directory/structural/p-norm.json!}
 ```
 
-### [Symmetry](../../properties-directory/structural/space-group.md)
+### [Point Group Symmetry](../../properties-directory/structural/point-group.md)
 
-The Space Group of the crystal structure, indicating the symmetry elements that it contains, is also available. 
+The Point Group of the structure, indicating the symmetry elements that it contains, is also available. 
 
 ```json tab="Schema"
-{!esse/schema/properties_directory/structural/symmetry.json!}
+{!esse/schema/properties_directory/structural/symmetry_symbol_point_group.json!}
 ```
 
 ```json tab="Example"
-{!esse/example/properties_directory/structural/symmetry.json!}
+{!esse/example/properties_directory/structural/symmetry_symbol_point_group.json!}
+```
+
+### [Space Group Symmetry](../../properties-directory/structural/space-group.md)
+
+The Space Group of the structure, indicating the symmetry elements that it contains, is also available. 
+
+```json tab="Schema"
+{!esse/schema/properties_directory/structural/symmetry_symbol_space_group.json !}
+```
+
+```json tab="Example"
+{!esse/example/properties_directory/structural/symmetry_symbol_space_group.json!}
 ```
 
 ### [Volume](../../properties-directory/structural/lattice.md)
@@ -438,6 +450,18 @@ The volume of the unit cell is given by the scalar triple product of the lattice
 
 ```json tab="Example"
 {!esse/example/properties_directory/structural/volume.json!}
+```
+
+### [Molecular Weight](../../properties-directory/structural/molecular-weight.md)
+
+The mass of a [Non-Periodic](../../materials/classification/non-periodic.md) structure in units of g/mol. The molecular weight is a summation of the molecular weights of every atom constituting the structure.
+
+```json tab="Schema"
+{!esse/schema/properties_directory/structural/molecular-weight.json!}
+```
+
+```json tab="Example"
+{!esse/example/properties_directory/structural/molecular-weight.json!}
 ```
 
 ## Links
