@@ -2,6 +2,11 @@
 
 We support both the GNU Compiler Collection (GCC) [^1], as well as the Intel proprietary compilers for the C++ and Fortran languages [^2].
 
+| Name      |  Version(s) | 
+| :-------- | ----------- |
+| GCC | 11.2.0, 5.4.0 |
+| Intel |  14.0.3.174, i-174 |
+
 These compilers are accessible under the [Command Line Interface environment](../../cli/environment.md) of our platform, via the loading of the corresponding [modules](../../cli/modules.md).
 
 ## Links
