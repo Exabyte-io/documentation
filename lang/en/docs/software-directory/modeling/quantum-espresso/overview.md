@@ -4,7 +4,7 @@ Quantum ESPRESSO (QE, also referred to as "espresso" in our platform) [^1] [^2] 
 
 ## Supported Versions
 
-We support 5.2.1, 5.4.0, 6.0.0, and 6.3.0 versions of Quantum ESPRESSO.
+We support 5.2.1, 5.4.0, 6.0.0, 6.3.0, 6.4.1, 6.5.0, 6.6.0, 6.7.0, and 6.8.0 versions of Quantum ESPRESSO.
 
 ## [Components](components.md)
 
