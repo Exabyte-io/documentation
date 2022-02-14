@@ -2,6 +2,14 @@
 
 We provide the following development libraries, accessible within the [Command Line Interface environment](../../cli/environment.md) of our platform through the loading of the corresponding [modules](../../cli/modules.md).
 
+| Name      |  Version(s) | 
+| :-------- | ----------- |
+| CUDA | 11.5, 9.2 |
+| Intel MPI |  i-11.1.3.174, i-174 |
+| Open MPI |  044, 5.0.2.044 |
+| MKL |  1.10, 4.1.1 |
+| OpenBLAS |  0.2.18, 0.3.18 |
+
 ## Parallel Libraries
 
 For managing massively parallel jobs via the Message Passing Interface (MPI), the options are Open MPI [^1] and the Intel MPI [^2].
