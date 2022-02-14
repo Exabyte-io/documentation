@@ -17,14 +17,16 @@ The platform currently offers the choice between the following software engines 
 
 | Name    |  Version(s)      | Access Scenarios (see previous section)      |
 | :-------- | ----------- | -------------|
-| [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.3 | 1, 3|
+| [Quantum ESPRESSO](modeling/quantum-espresso/overview.md) | 5.1-6.8 | 1, 3|
 | [VASP](modeling/vasp/overview.md)      | 5.3.5-5.4.4 | 1, 3 |
-| [LAMMPS](modeling/lammps.md)    | 11-2016 | 3 |
-| [NWChem](modeling/nwchem.md)    | 6.6     | 3 |
+| [LAMMPS](modeling/lammps.md)    | 11-2016, 12-2018, 1-2022  | 3 |
+| [NWChem](modeling/nwchem.md)    | 6.6, 7.0.2  | 3 |
 | [CP2K](modeling/cp2k.md)      | 4.1     | 3 |
-| [GROMACS](modeling/gromacs.md) |   5.1.4  | 3 |
+| [GROMACS](modeling/gromacs.md) |   5.1.4,2021.5, 2018.3, 2018.2 | 3 |
 | [Turbomole](modeling/turbomole.md) | 7.0     | 2, 3 |
-| [WIEN2k](modeling/wien2k.md) | 17.1     | 3 |
+| [WIEN2k](modeling/wien2k.md) | 17.1     | 3 | 
+| SISSO | 1.0     | 3 | 
+| ATK-VNL | 2016.2     | 3 |
 
 ## Machine Learning
 
