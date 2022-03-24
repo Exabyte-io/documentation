@@ -31,7 +31,7 @@ idna==2.10
 Jinja2==2.10.1
 livereload==2.6.3
 Markdown==3.1.1
-markdown-include @ git+git://github.com/Exabyte-io/markdown-include.git@de31927acdeeff7972e09f4a6327030bd10535f2
+markdown-include @ git+https://github.com/Exabyte-io/markdown-include.git@de31927acdeeff7972e09f4a6327030bd10535f2
 MarkupSafe==1.1.1
 mkdocs==1.0.4
 mkdocs-material==4.1.1
