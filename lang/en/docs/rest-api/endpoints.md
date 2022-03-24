@@ -11,17 +11,17 @@ An Endpoint is one end of a communication channel, the API end of it. It has a u
 
 Below is the list of currently supported endpoints with links to the detailed documentation for each:
 
-- [Material](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Material/get_materials)
-- [Workflow](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Workflow/get_workflows)
-- [Job](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Job/get_jobs)
-- [Project](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Project/get_projects)
-- [Bank Material](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/BankMaterial/get_bank_materials)
-- [Bank Workflow](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/BankWorkflow/get_bank_workflows)
-- [Property](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Property/get_refined_properties) (RefinedProperty)
-- [RawProperty](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/RawProperty/get_raw_properties)
-- [Charge](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/Charge/get_charges)
-- [Login](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/API/post_login)
-- [Logout](https://api-explorer.mat3ra.com/?url=https://platform.exabyte.io/api/2018-10-01/swagger.json/#!/API/get_logout)
+- [Material](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/Material/get_materials)
+- [Workflow](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/Workflow/get_workflows)
+- [Job](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/Job/get_jobs)
+- [Project](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/Project/get_projects)
+- [Bank Material](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/BankMaterial/get_bank_materials)
+- [Bank Workflow](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/BankWorkflow/get_bank_workflows)
+- [Property](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/Property/get_refined_properties) (RefinedProperty)
+- [RawProperty](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/RawProperty/get_raw_properties)
+- [Charge](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/Charge/get_charges)
+- [Login](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/API/post_login)
+- [Logout](https://api-explorer.mat3ra.com/?url=https://platform.mat3ra.com/api/2018-10-01/swagger.json/#!/API/get_logout)
 
 ## Endpoint Documentation
 
@@ -48,7 +48,7 @@ The aforementioned steps are demonstrated in the animation below.
 
 Below you can find the currently supported API versions.
 
-- [2018-10-01](https://platform.exabyte.io/api/2018-10-01/swagger.json)
+- [2018-10-01](https://platform.mat3ra.com/api/2018-10-01/swagger.json)
 
 
 ## Links
