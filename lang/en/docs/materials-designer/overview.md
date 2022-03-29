@@ -14,8 +14,8 @@ The Materials Designer is structured into four main building blocks and has the 
 
 <map name="mapname">
     <area shape="rect" coords="0,78,129,445" href="/materials-designer/sidebar-items/">
-    <area shape="rect" coords="129,78,378,445" href="/materials-designer/source-editor-intro/">
-    <area shape="rect" coords="378,78,742,445" href="/materials-designer/viewer-intro/">
+    <area shape="rect" coords="129,78,378,445" href="/materials-designer/source-editor/">
+    <area shape="rect" coords="378,78,742,445" href="/materials-designer/3d-editor/">
     <area shape="rect" coords="0,39,750,78" href="/materials-designer/header-menu/header-menu-intro">
 </map>
 
