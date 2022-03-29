@@ -282,7 +282,7 @@ Including a clickable image map is done as follows. Note that absolute paths to 
 
 <map name="mapname">
     <area shape="rect" coords="0,91,190,512" href="/workflow-designer/sidebar-items/">
-    <area shape="rect" coords="190,91,754,512" href="/workflow-designer/source-editor-intro/">
+    <area shape="rect" coords="190,91,754,512" href="/workflow-designer/source-editor/">
     <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu-actions">
 </map>
 
