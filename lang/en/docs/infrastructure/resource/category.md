@@ -20,9 +20,9 @@ There are multiple cost categories that let users optimize the cost-to-performan
 
 | Category   | Description                                                                   |
 | :--------- | :-----------                                                                  |
-| Debug      | Limited compute resources with no-to-little wait time at a cost premium       |
-| Ordinary   | Meant for most production tasks, extensive compute resources at the base rate |
-| Saving     | Significantly lower rate through utilizing idle compute resources             |
+| Debug      | Provides imited compute resources with no-to-little wait time at a cost premium       |
+| Ordinary   | Meant for most production tasks, provides extensive compute resources at the base rate |
+| Saving     | Significantly lower charge/cost per hour through utilizing idle compute resources             |
 
 !!! tip "Queue Selection"
     It is advised to use Debug category while prototyping your calculations, Ordinary for mission-critical tasks, and Saving - for restartable runs that can tolerate interruptions (eg. check-pointed relaxation runs).
