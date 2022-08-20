@@ -21,6 +21,7 @@ extra_javascript:
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
     - extra/js/ga.js
     - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
+    - extra/js/URLSearchParams.js
 
 copyright: © 2022 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
