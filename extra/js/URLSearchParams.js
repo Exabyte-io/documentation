@@ -1,16 +1,26 @@
+/** Create dictionary-like object of URL search params.
+ * @returns {URLSearchParams}
+ */
 function getURLParams() {
     return new Proxy(new URLSearchParams(window.location.search), {
         get: (searchParams, prop) => searchParams.get(prop),
     });
 }
 
-// from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent
+/** Check whether URL component is encoded already.
+ * @see [MDN]{@link https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent}
+ * @param {String} x
+ * @returns {boolean}
+ */
 function containsEncodedComponents(x) {
   // ie ?,=,&,/ etc
   return (decodeURI(x) !== decodeURIComponent(x));
 }
 
-function injectSearchfromURL(searchToken = "searchText") {
+/** Execute mkdocs search from URL query
+ * @param searchToken - query key (default: `'searchText'`)
+ */
+function injectSearchFromURL(searchToken = "searchText") {
     const query = getURLParams();
     if (!query[searchToken]) return;
 
@@ -38,7 +48,7 @@ function injectSearchfromURL(searchToken = "searchText") {
 
 document.onreadystatechange = () => {
     if (document.readyState === 'complete') {
-        injectSearchfromURL();
+        injectSearchFromURL();
     }
 }
 
