@@ -42,7 +42,7 @@ function injectSearchFromURL(searchToken = "searchText") {
     setTimeout(() => {
             inputEl.dispatchEvent(keyEvent)
         },
-        500
+        1000
     );
 }
 
