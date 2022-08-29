@@ -17,6 +17,7 @@ The following table shows different types of CPUs available in our platform.
 | c-4   | Intel Xeon E5-2686-v4[^7]     | 2.30                           |
 | c-5   | Intel Xeon Platinum[^6a]      | 3.00                           |
 | c-6   | Intel Xeon Platinum 8168[^8]  | 2.70                           |
+| c-7   | Intel Xeon E5-2673-v3[^11]    | 2.40                           |
 
 ## GPU Types
 
@@ -60,5 +61,7 @@ As of Apr, 2018 our major compute and storage systems (per cluster) are as expla
 [^9]: [NVIDIA Tesla V100, online product documentation](https://www.nvidia.com/en-us/data-center/tesla-v100/)
 
 [^10]: [NVIDIA Tesla P100, online product documentation](https://www.nvidia.com/en-us/data-center/tesla-p100/)
+
+[^11]: [F-Series VM Sizes, Azure](https://azure.microsoft.com/en-us/blog/f-series-vm-size/)
 
 ///FOOTNOTES GO HERE///

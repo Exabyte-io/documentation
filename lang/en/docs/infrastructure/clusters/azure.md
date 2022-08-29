@@ -41,7 +41,7 @@ The following table contains hardware specifications for the above queues.
 
 | Name  | CPU[^5] | Cores per Node | GPU[^6] | GPU per Node | Memory (GB) | Bandwidth (Gb/sec) |
 | :---: | :---:        | :---:      | :---:        | :---:    | :---:       | :---:            |
-| D     | c-1          | 8          | -            | -        | 56          | &le;10           |
+| D     | c-7          | 16         | -            | -        | 32          | &le;10           |
 | OR    | c-6          | 44         | -            | -        | 352         | 100             |
 | OF    | c-6          | 44         | -            | -        | 352         | 100             |
 | OFplus| c-6          | 44         | -            | -        | 352         | 100             |
