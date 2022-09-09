@@ -9,7 +9,7 @@ The first command of interest is `module list`, which returns the list of **curr
 Below is an example of the output of this command, showing the list of modules loaded by user "Steve".
 
 ```text
-[steve@bohr.exabyte.io:~]$ module list
+[steve@login.mat3ra.com:~]$ module list
 Currently Loaded Modulefiles:
   1) intel/i-174(default)    2) mpi/impi-044(default)    3) mkl/i-174(default)    4) espresso/521-i-174-impi-044(default)
 ```
@@ -22,7 +22,7 @@ For example, to use the [Quantum ESPRESSO](../../software-directory/modeling/qua
 
 
 ```bash
-[steve@bohr.exabyte.io:~]$ module load espresso/521-i-174-impi-044
+[steve@login.mat3ra.com:~]$ module load espresso/521-i-174-impi-044
 The module intel/i-174 is loaded
 The module mpi/impi-044 is loaded
 The module intel/i-174 is loaded
@@ -35,7 +35,7 @@ The module espresso/521-i-174-impi-044 is loaded
 If there is a "default" keyword next to a module name, it can be loaded without specifying the full module name, as demonstrated below.
 
 ```bash
-[steve@bohr.exabyte.io:~]$ module load espresso
+[steve@login.mat3ra.com:~]$ module load espresso
 The module intel/i-174 is loaded
 The module mpi/impi-044 is loaded
 The module intel/i-174 is loaded
@@ -48,10 +48,10 @@ The module espresso/521-i-174-impi-044 is loaded
 Finally, the `module purge` command can be entered to **completely clean** the environment and **deactivate all currently loaded modules**. This functionality is illustrated by way of the following example.
 
 ```bash
-[steve@bohr.exabyte.io:~]$ module list
+[steve@login.mat3ra.com:~]$ module list
 Currently Loaded Modulefiles:
   1) intel/i-174(default)    2) mpi/impi-044(default)    3) mkl/i-174(default)    4) espresso/521-i-174-impi-044(default)
-[steve@bohr.exabyte.io:~]$ module purge
-[steve@bohr.exabyte.io:~]$ module list
+[steve@login.mat3ra.com:~]$ module purge
+[steve@login.mat3ra.com:~]$ module list
 No Modulefiles Currently Loaded.
 ```

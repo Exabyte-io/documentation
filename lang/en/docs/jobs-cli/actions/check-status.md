@@ -3,7 +3,7 @@
 The user can **inspect the status** of current [Jobs submitted via CLI](../overview.md) at any moment through the `qstat` command, which returns an output of the following kind.
 
 ```
-[steve@bohr.exabyte.io:~]$ qstat
+[steve@login.mat3ra.com:~]$ qstat
 JOBID                                                  USERNAME    QUEUE    JOBNAME    STATE    MEMORY    USEDTIME    WALLTIME      NODES    CPU
 -----------------------------------------------------  ----------  -------  ---------  -------  --------  ----------  ----------  -------  -----
 814.master-production-20160630-cluster-007.exabyte.io  steve       D        my_job     C        0kb       00:00:10    00:10:00          1      1
