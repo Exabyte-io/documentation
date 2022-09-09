@@ -33,7 +33,7 @@ We explain how to upload the SSH keys to our platform in a [separate section](..
 Once the secure SSH link is established via the SSH keys, the remote Exabyte server can be accessed as follows (the user should replace the text inside braces below with the corresponding names/paths).
 
 !!!info "Name of remote server"
-    Our Exabyte server for accepting remote connections is referred to under the alias of **"bohr"**, and is accessible via the corresponding address `bohr.exabyte.io`.
+    Our Exabyte server for accepting remote connections is referred to under the alias of **"bohr"**, and is accessible via the corresponding address `login.mat3ra.com`.
 
 ### OpenSSH for Unix
 
@@ -46,12 +46,12 @@ Once the secure SSH link is established via the SSH keys, the remote Exabyte ser
 2. At the command prompt, the user should then enter the following command.
 
     ```
-    ssh -i {path/to/your/private_key} {exabyte.io_username}@bohr.exabyte.io
+    ssh -i {path/to/your/private_key} {exabyte.io_username}@login.mat3ra.com
     ```
 
 ### Putty for Windows
   
-Instructions on how to operate Putty to connect to our remote server can be found in Ref. [^6]. The name of the server to be used in this case is the same as before, namely `bohr.exabyte.io`.
+Instructions on how to operate Putty to connect to our remote server can be found in Ref. [^6]. The name of the server to be used in this case is the same as before, namely `login.mat3ra.com`.
   
 ### Enter the CLI
 

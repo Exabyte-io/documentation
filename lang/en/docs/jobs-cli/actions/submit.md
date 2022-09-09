@@ -8,7 +8,7 @@ After a [Batch Script](../batch-scripts/overview.md) is prepared, computation jo
 Job submission is performed with the `qsub` command, as demonstrated in the following example, where the Batch Script in this case is called `my_job.pbs`.
 
 ```
-[steve@bohr.exabyte.io:~]$ qsub my_job.pbs
+[steve@login.mat3ra.com:~]$ qsub my_job.pbs
 814.master-production-20160630-cluster-007.exabyte.io
 ```
 
