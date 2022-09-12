@@ -32,7 +32,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
-<sup>*</sup> presently the infrastructure limitations are not allowing for the multi-node communication in SF queue, so only single-node jobs should be attempted (as of July 2019)
+<sup>*</sup> presently the infrastructure limitations are not allowing for the multi-node communication in SF queue, so only single-node jobs should be attempted (as of Oct 2022)
 
 
 ## Hardware Specifications
