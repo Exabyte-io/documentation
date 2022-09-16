@@ -50,7 +50,7 @@ The compute price above refers to the **Ordinary** [cost category](../infrastruc
 |:---------   |:------------
 |Debug        | 2.0
 |Ordinary     | 1.0
-|Saving       | 0.2
+|Saving       | 0.1 - 0.5
 
 ## Queue- and Cluster-dependent pricing
 
