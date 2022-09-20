@@ -35,8 +35,6 @@ The list of currently enabled queues is given below. Price per core hour is show
 | GSF   | saving       | fast     | core-hours        | 2.391                   | &le;5    | 10        |
 | G4SF  | saving       | fast     | core-hours        | 2.391                   | &le;5    | 10        |
 | G8SF  | saving       | fast     | core-hours        | 3.234                   | &le;5    | 10        |
-| G8OFA100| ordinary   | fast     | core-hours        | 4.267                   | &le;5    | 10        |
-| G8SFA100| saving     | fast     | core-hours        | 2.17                   | &le;5    | 10        |
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
@@ -65,8 +63,6 @@ The following table contains hardware specifications for the above queues.
 | GSF   | c-4          | 8          | g-1          | 1        | 61          | 10               |
 | G4SF  | c-4          | 32         | g-1          | 4        | 244         | 10               |
 | G8SF  | c-4          | 64         | g-1          | 8        | 488         | 25               |
-| G8OFA100  | c-8          | 96         | g-3          | 8        | 1152         | 400               |
-| G8SFA100  | c-8          | 96         | g-3          | 8        | 1152         | 400               |
 
 
 !!! note "Hyper-threading"
