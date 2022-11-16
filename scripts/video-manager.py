@@ -5,6 +5,7 @@ import re
 import json
 import googleapiclient.discovery
 
+from pathlib import Path
 from jinja2 import Template
 from google.cloud import texttospeech
 from oauth2client.file import Storage
@@ -14,9 +15,10 @@ from googleapiclient.http import MediaFileUpload, MediaInMemoryUpload
 from utils import flatten, update_metadata, parseIncludeStatements, caption_time_to_milliseconds
 
 SCOPE = "https://www.googleapis.com/auth/youtubepartner"
-CLIENT_SECRETS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "oauth-key.json"))
-DESCRIPTION_TEMPLATE = os.path.abspath(os.path.join(os.path.dirname(__file__), "video-description.jinja"))
-SERVICE_ACCOUNT_KEY_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "service-account-key.json"))
+SCRIPT_DIR = Path(__file__).resolve().parent
+CLIENT_SECRETS_FILE = SCRIPT_DIR / "oauth-key.json"
+DESCRIPTION_TEMPLATE = SCRIPT_DIR / "video-description.jinja"
+SERVICE_ACCOUNT_KEY_FILE = SCRIPT_DIR / "service-account-key.json"
 DESCRIPTION_LINKS = [
     "Materials Modeling 2.0: https://exabyte.io/",
     "Exabyte.io Platform: https://platform.exabyte.io/register",
@@ -35,6 +37,8 @@ def get_oauth_credentials():
     """
     Returns the credentials to establish connection to YouTube API.
     """
+    if not CLIENT_SECRETS_FILE.exists():
+        return None
     flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE, scope=SCOPE)
     storage = Storage("oauth-credentials.json")
     credentials = storage.get()
@@ -47,7 +51,7 @@ def get_text_to_speech_api_client():
     """
     Returns TextToSpeech API client.
     """
-    return texttospeech.TextToSpeechClient.from_service_account_file(SERVICE_ACCOUNT_KEY_FILE)
+    return texttospeech.TextToSpeechClient.from_service_account_file(SERVICE_ACCOUNT_KEY_FILE.name)
 
 
 def get_youtube_api_client():
