@@ -292,11 +292,11 @@ Contains information about the coordinates of atoms within the unit cell by id.
 Contains an array of the elements in the unit cell and the atom id’s association with each atom.
 
 ```json tab="Schema"
-{!esse/schema/properties_directory/structural/basis/atomic_elements.json!}
+{!esse/schema/properties_directory/structural/basis/atomic_element.json!}
 ```
 
 ```json tab="Example"
-{!esse/example/properties_directory/structural/basis/atomic_elements.json!}
+{!esse/example/properties_directory/structural/basis/atomic_element.json!}
 ```
 
 ### [Atomic Constraints](../../properties-directory/structural/basis.md)
@@ -416,28 +416,16 @@ The P norm measures how homogeneous a material is in terms of its chemical compo
 {!esse/example/properties_directory/structural/p-norm.json!}
 ```
 
-### [Point Group Symmetry](../../properties-directory/structural/point-group.md)
+### [Symmetry](../../properties-directory/structural/symmetry.md)
 
-The Point Group of the structure, indicating the symmetry elements that it contains, is also available. 
+The symmetry of the structure, indicating the point group and space group.
 
 ```json tab="Schema"
-{!esse/schema/properties_directory/structural/symmetry_symbol_point_group.json!}
+{!esse/schema/properties_directory/structural/symmetry.json!}
 ```
 
 ```json tab="Example"
-{!esse/example/properties_directory/structural/symmetry_symbol_point_group.json!}
-```
-
-### [Space Group Symmetry](../../properties-directory/structural/space-group.md)
-
-The Space Group of the structure, indicating the symmetry elements that it contains, is also available. 
-
-```json tab="Schema"
-{!esse/schema/properties_directory/structural/symmetry_symbol_space_group.json !}
-```
-
-```json tab="Example"
-{!esse/example/properties_directory/structural/symmetry_symbol_space_group.json!}
+{!esse/example/properties_directory/structural/symmetry.json!}
 ```
 
 ### [Volume](../../properties-directory/structural/lattice.md)
@@ -452,17 +440,6 @@ The volume of the unit cell is given by the scalar triple product of the lattice
 {!esse/example/properties_directory/structural/volume.json!}
 ```
 
-### [Molecular Weight](../../properties-directory/structural/molecular-weight.md)
-
-The mass of a [Non-Periodic](../../materials/classification/non-periodic.md) structure in units of g/mol. The molecular weight is a summation of the molecular weights of every atom constituting the structure.
-
-```json tab="Schema"
-{!esse/schema/properties_directory/structural/molecular-weight.json!}
-```
-
-```json tab="Example"
-{!esse/example/properties_directory/structural/molecular-weight.json!}
-```
 
 ## Links
 [^1]: [Wikipedia - International Chemical Identifier (Website)](https://en.wikipedia.org/wiki/International_Chemical_Identifier)
