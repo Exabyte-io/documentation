@@ -58,7 +58,9 @@ def get_youtube_api_client():
     """
     Returns YouTube API client.
     """
-    return googleapiclient.discovery.build("youtube", "v3", credentials=get_oauth_credentials())
+    credentials = get_oauth_credentials()
+    if credentials is not None:
+        return googleapiclient.discovery.build("youtube", "v3", credentials=credentials)
 
 
 def get_category_id(youtube_, category):
