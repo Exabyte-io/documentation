@@ -20,9 +20,9 @@ CLIENT_SECRETS_FILE = SCRIPT_DIR / "oauth-key.json"
 DESCRIPTION_TEMPLATE = SCRIPT_DIR / "video-description.jinja"
 SERVICE_ACCOUNT_KEY_FILE = SCRIPT_DIR / "service-account-key.json"
 DESCRIPTION_LINKS = [
-    "Materials Modeling 2.0: https://exabyte.io/",
-    "Exabyte.io Platform: https://platform.exabyte.io/register",
-    "Exabyte.io Documentation: https://docs.exabyte.io/",
+    "Materials Modeling 2.0: https://mat3ra.com/",
+    "Mat3ra Platform: https://platform.mat3ra.com/register",
+    "Mat3ra Documentation: https://docs.mat3ra.com/",
 ]
 
 LANGUAGE_CODE = 'en-US'
