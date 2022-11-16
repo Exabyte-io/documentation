@@ -144,6 +144,7 @@ nav:
                 - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
+                - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
@@ -606,6 +607,7 @@ nav:
             - Pressure:                                 properties-directory/scalar/pressure.md
             - Total Force:                              properties-directory/scalar/total-force.md
             - Reaction Energy Barrier:                  properties-directory/scalar/reaction-energy-barrier.md
+            - Valence Band Offset:                      properties-directory/scalar/valence-band-offset.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md

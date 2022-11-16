@@ -8,20 +8,28 @@ The content of this tutorial was also part of our 2021 webinar *2D Materials and
 
 !!!note "Simulation engines considered in this tutorial"
     The workflow presented in this tutorial is currently only available for
-[Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md).
+    [Quantum ESPRESSO](../../../software-directory/modeling/quantum-espresso/overview.md).
 
 ## Definitions
 
 ### Valence Band Offset
 
 The [valence band offset](../../../properties-directory/scalar/valence-band-offset.md) is defined by the relative position
-of the valence band on both sides of the interface. This tutorial employs the potential lineup method in order to
-determine the valence band offset, which requires the calculation of the macroscopically averaged electrostatic potential
-$ \overline{\overline{V}} $. The valence band offset can then be determined via:
+of the valence band on both sides of the interface. This property is relevant to study the charge transport across
+interfaces such as semiconductor heterojunctions. Other properties related to the band profile at the interface are
+the *conduction band offset* and *Schottky barrier* (metal-semiconductor interface).
+
+### Potential Lineup Method
+This tutorial employs the potential lineup method in order to determine the valence band offset, which requires the
+calculation of the macroscopically averaged electrostatic potential and valence band maximum of the two materials.
+The valence band offset for an A/B interface can then be determined via:
 $$ \Delta E_{\mathrm{VBO}} = \Delta E_{v} + \Delta V$$
-, whereby $\Delta E_{v}$ is usually referred to as the *band structure* term and defined as the difference
-of the two valence band maxima referenced to the macroscopically averaged electrostatic potential in each bulk material.
-The second term, $\Delta V$, is determined from the lineup of the macroscopically averaged electrostatic potential.
+The first term, $\Delta E_{v}$, is usually referred to as the *band structure term* and defined as the difference
+of the two valence band maxima $\varepsilon_{v}$ referenced to the macroscopically averaged electrostatic potential $\overline{V}$
+in each material:
+$$ \Delta E_{v} = (\varepsilon_{v}^{A} - \overline{V}^{A}) - (\varepsilon_{v}^{B} - \overline{V}^{B}) $$
+The second term, $\Delta V$, is determined from the lineup of the macroscopically averaged electrostatic potential in
+the interface heterostructure.
 
 
 ## Choose Materials
@@ -30,7 +38,8 @@ When creating the job, the user needs to select **three materials** correspondin
 and the isolated monolayers of both MoS<sub>2</sub> and WS<sub>2</sub>. Each of the structures is expected to be relaxed.
 
 !!!note "Order of Materials"
-    The VBO workflow assumes the interface structure to correspond to the first material. 
+    The VBO workflow assumes the interface structure to correspond to the first material, i.e. please be sure to load the interface
+    structure first.
 
 ## Choose Workflow
 
@@ -43,16 +52,17 @@ This workflow can later be [selected](../../../jobs-designer/actions-header-menu
 The workflow contains two subworkflows per material calculating the valence band maximum (via band structure),
 macroscopically averaged electrostatic potential, and its minima.
 As the system in this tutorial is a heterostructure built of monolayers, determining the value of the macroscopically
-averaged electrostatic potential in the region of the monolayer corresponds to finding the minima of $ \overline{\overline{V}} $.
-For multilayered heterostructures the problem becomes equivalent of finding plateaus of $ \overline{\overline{V}} $.
+averaged electrostatic potential in the region of the monolayer corresponds to finding the minima of $\overline{V}$.
+For multilayered heterostructures the problem becomes equivalent of finding plateaus of $\overline{V}$.
 
 The final subworkflow collects all the intermediate results and determines the value of the valence band offset.
 
-## Workflow Settings
+### Workflow Settings
 
 For the purpose of this tutorial, we set the size of the grid of k-points to 6 x 6 x 1 for each of the three PW-SCF units
-and adjust the k-path to reflect the reduced dimensionality. In addition, one should also adjust the size of the window
-for macroscopic averaging. For the present system we set the size to the distance between the sulfur atoms (ca. 5.7 bohr).
+and adjust the k-path to reflect the reduced dimensionality (Γ-M-K-Γ). In addition, one should also adjust the size of the window
+for macroscopic averaging. For the present system we set this size to the distance between the sulfur atoms in both
+monolayers (ca. 5.7 bohr).
 
 ## Submit Job
 
