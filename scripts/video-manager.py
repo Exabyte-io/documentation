@@ -80,7 +80,7 @@ def get_category_id(youtube_, category):
 
 def get_video_body_param(youtube_, metadata_):
     """
-    Returns the body of the the request to YouTube API.
+    Returns the body of the request to YouTube API.
     Args:
         youtube_: YouTube API client instance.
         metadata_ (dict): video metadata.
@@ -150,13 +150,13 @@ def create_svb_caption_content(metadata_):
     return "\n\n".join([caption_to_text(caption) for caption in metadata_["youTubeCaptions"]])
 
 
-def insert_caption(youtube_, youTubeId_, name, content):
+def insert_caption(youtube_, youtube_id_, name, content):
     """
     Creates a caption from metadata and inserts it to YouTube.
 
     Args:
         youtube_: YouTube API client instance.
-        youTubeId_: the ID of video.
+        youtube_id_: the ID of video.
         name (str): caption name.
         content (str): caption content.
     """
@@ -166,7 +166,7 @@ def insert_caption(youtube_, youTubeId_, name, content):
             "snippet": {
                 "language": LANGUAGE_CODE,
                 "name": name,
-                "videoId": youTubeId_
+                "videoId": youtube_id_
             }
         },
         media_body=MediaInMemoryUpload(content)
@@ -186,11 +186,11 @@ def create_SSML_text(metadata_):
         str
     """
     text = ""
-    previousEnd = 0
+    previous_end = 0
     for caption in metadata_["youTubeCaptions"]:
-        silence = caption_time_to_milliseconds(caption["startTime"]) - previousEnd
-        text = "".join((text, "<break time='{}ms'/>".format(silence), caption["text"]))
-        previousEnd = caption_time_to_milliseconds(caption["endTime"])
+        silence = caption_time_to_milliseconds(caption["startTime"]) - previous_end
+        text = "".join((text, f"<break time='{silence}ms'/>", caption["text"]))
+        previous_end = caption_time_to_milliseconds(caption["endTime"])
     return "".join(("<speak>", text, "</speak>"))
 
 
@@ -232,14 +232,17 @@ if __name__ == '__main__':
 
     args = argparser.parse_args()
 
-    if not os.path.exists(args.file): exit("video file does not exist!")
-    if not os.path.exists(args.metadata): exit("metadata file does not exist!")
+    if not os.path.exists(args.file):
+        exit("video file does not exist!")
+    if not os.path.exists(args.metadata):
+        exit("metadata file does not exist!")
 
     # extract metadata
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = list(set(flatten(metadata["tags"])))
     tags_length = len(" ".join(metadata["tags"]))
-    if tags_length > 500: exit("Too Many Tags ({})! The limit is 500 Characters!".format(tags_length))
+    if tags_length > 500:
+        exit("Too Many Tags ({})! The limit is 500 Characters!".format(tags_length))
     metadata["privacyStatus"] = metadata.get("privacyStatus", args.privacyStatus)
     metadata["descriptionLinks"] = metadata.get("descriptionLinks", []) + DESCRIPTION_LINKS
     with open(DESCRIPTION_TEMPLATE) as f:
@@ -248,14 +251,15 @@ if __name__ == '__main__':
     youtube = get_youtube_api_client()
 
     if args.command == "update":
-        if not metadata.get("youTubeId"): exit("metadata does not contain youTubeId!")
+        if not metadata.get("youTubeId"):
+            exit("metadata does not contain youTubeId!")
         update_video(youtube, metadata)
 
     if args.command == "upload":
-        youTubeId = insert_video(youtube, args.file, metadata)["id"]
+        youtube_id = insert_video(youtube, args.file, metadata)["id"]
         caption_content = create_svb_caption_content(metadata)
-        insert_caption(youtube, youTubeId, metadata["title"], caption_content)
-        update_metadata(args.metadata, {"youTubeId": youTubeId})
+        insert_caption(youtube, youtube_id, metadata["title"], caption_content)
+        update_metadata(args.metadata, {"youTubeId": youtube_id})
 
     if args.command == "voiceover":
         ssml_text = create_SSML_text(metadata)
