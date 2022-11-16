@@ -147,7 +147,8 @@ def create_svb_caption_content(metadata_):
     """
     regex = re.compile(r'<.*?>')
     caption_to_text = lambda c: "".join((c["startTime"], ",", c["endTime"], "\n", regex.sub('', c["text"])))
-    return "\n\n".join([caption_to_text(caption) for caption in metadata_["youTubeCaptions"]])
+    captions = "\n\n".join([caption_to_text(caption) for caption in metadata_["youTubeCaptions"]])
+    return captions.encode("utf-8")
 
 
 def insert_caption(youtube_, youtube_id_, name, content):
