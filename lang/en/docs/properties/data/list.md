@@ -100,6 +100,18 @@ This is the total average force present within the crystal structure.
 {!esse/example/properties_directory/scalar/total_force.json!}
 ```
 
+### [Valence Band Offset](../../properties-directory/scalar/valence-band-offset.md)
+
+The valence band offset represents the energy difference of valence bands across a heterostructure interface.
+
+```json tab="Schema"
+{!esse/schema/properties_directory/scalar/valence_band_offset.json!}
+```
+
+```json tab="Example"
+{!esse/example/properties_directory/scalar/valence_band_offset.json!}
+```
+
 ## Non-Scalar Properties
 
 ### [Bandstructure](../../properties-directory/non-scalar/bandstructure.md)

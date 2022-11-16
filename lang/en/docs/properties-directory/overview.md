@@ -14,17 +14,18 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 
 ### Scalar
 
-| Property                                             | Overview                                         |
-|:---------------------------------------------------  |:------------------------------------------------|
-| [Total Energy](scalar/total-energy.md)  | The ground state energy (free energy) of the system |
-| [Fermi Energy](scalar/fermi-energy.md)  | The highest energy level occupied by electrons in a system |
-| [Surface Energy](scalar/surface-energy.md)           | The energy of a crystal surface |
-| [Formation Energy](scalar/formation-energy.md)           | The energy required to create defects |
-| [Reaction Energy Barrier](scalar/reaction-energy-barrier.md)    | The activation energy required by the reactants to undergo a chemical reaction |
-| [Pressure](scalar/pressure.md)                       | Scalar average pressure |
-| [Zero Point Energy](scalar/zero-point-energy.md) | Energy of the lowest vibrational level wrt to vacuum |
-| [Total Energy Contributions](scalar/total-energy.md#total-energy-contributions) | Ewald, Exchange correlation and	Hartree contributions to the total energy |
-| [Total Force](scalar/total-force.md)                 | Sum of the atomic forces |
+| Property                                                                        | Overview                                                                       |
+|:--------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
+| [Total Energy](scalar/total-energy.md)                                          | The ground state energy (free energy) of the system                            |
+| [Fermi Energy](scalar/fermi-energy.md)                                          | The highest energy level occupied by electrons in a system                     |
+| [Surface Energy](scalar/surface-energy.md)                                      | The energy of a crystal surface                                                |
+| [Formation Energy](scalar/formation-energy.md)                                  | The energy required to create defects                                          |
+| [Reaction Energy Barrier](scalar/reaction-energy-barrier.md)                    | The activation energy required by the reactants to undergo a chemical reaction |
+| [Pressure](scalar/pressure.md)                                                  | Scalar average pressure                                                        |
+| [Zero Point Energy](scalar/zero-point-energy.md)                                | Energy of the lowest vibrational level wrt to vacuum                           |
+| [Total Energy Contributions](scalar/total-energy.md#total-energy-contributions) | Ewald, Exchange correlation and	Hartree contributions to the total energy      |
+| [Total Force](scalar/total-force.md)                                            | Sum of the atomic forces                                                       |
+| [Valence Band Offset](scalar/valence-band-offset.md)                            | Relative position of the valence band across an interface                      |
 
 ### Non-Scalar
 
