@@ -42,16 +42,16 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 
 ### Structural
 
-| Property                                             | Overview                                         |
-|:---------------------------------------------------  |:------------------------------------------------|
-| [Magnetic Moments](structural/magnetic-moment.md)    | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
-| [Basis Atoms](structural/basis.md)             | The individual atoms comprised in the crystal structure  |
-| [Atomic forces](structural/atomic-forces.md)         | Force exerted on each atom by its surrounding |
-| [Bravais Lattice](structural/lattice.md)             | The underlying Bravais Lattice of the crystal structure |
-| [Space Group](structural/space-group.md)             | Information about the symmetry elements contained in crystal structure |
-| [Final Structure](structural/final-structure.md)     | The final crystal structure obtained from basis atoms and lattice, and its visualization |
-| [InChI](structural/inchi.md)                         | The International Chemical Identifier for a non-periodic structure. |
-| [InchiKey](structural/inchi-key.md)                  | The fixed length, non-human readable identifier string derived from an InChI for a non-periodic structure. |
+| Property                                          | Overview                                         |
+|:--------------------------------------------------|:------------------------------------------------|
+| [Magnetic Moments](structural/magnetic-moment.md) | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
+| [Basis Atoms](structural/basis.md)                | The individual atoms comprised in the crystal structure  |
+| [Atomic forces](structural/atomic-forces.md)      | Force exerted on each atom by its surrounding |
+| [Bravais Lattice](structural/lattice.md)          | The underlying Bravais Lattice of the crystal structure |
+| [Symmetry](structural/symmetry.md)                | Information about the symmetry elements contained in crystal structure |
+| [Final Structure](structural/final-structure.md)  | The final crystal structure obtained from basis atoms and lattice, and its visualization |
+| [InChI](structural/inchi.md)                      | The International Chemical Identifier for a non-periodic structure. |
+| [InchiKey](structural/inchi-key.md)               | The fixed length, non-human readable identifier string derived from an InChI for a non-periodic structure. |
 
 ### Elemental
 
