@@ -2,9 +2,13 @@
 
 <span class="btn badge b-success border-50">Scalar</span> <span class="btn badge b-info border-50">Electronic</span>
 
-The valence band offset (VBO) is the energy difference of the valence bands across a heterostructure interface.
+The valence band offset (VBO) is the energy difference of the valence band edges $\varepsilon_{v}$ across a heterostructure interface.
 Note, that the VBO is not simply given by the difference of valence band maxima of the two materials, but also depends
-on the electronic distribution at the interface. The VBO plays an important role for the transport properties of charge
+on the electronic distribution at the interface.
+![Band offsets at an A/B heterostructure interface](../../images/properties-directory/band-offset.png){: style="width:420px"}
+Regarding conduction band edges $\varepsilon_{c}$ there exists an equivalent property, termed conduction band offset (CBO).
+
+The VBO plays an important role for the transport properties of charge
 carriers in heterojunction devices (e.g. hole injection efficiency). Using first principles calculations, the VBO can be
 determined through the potential lineup method [^1][^2][^3] or via the local density of states (LDOS) [^3]. For more details
 regarding the potential lineup method, see also the [valence band offset tutorial](../../tutorials/dft/electronic/valence-band-offset.md)
