@@ -23,19 +23,28 @@ the *conduction band offset* and *Schottky barrier* (metal-semiconductor interfa
 This tutorial employs the potential lineup method in order to determine the valence band offset, which requires the
 calculation of the macroscopically averaged electrostatic potential and valence band maximum of the two materials.
 The valence band offset for an A/B interface can then be determined via:
-$$ \Delta E_{\mathrm{VBO}} = \Delta E_{v} + \Delta V$$
+$$ \Delta E_{\mathrm{VBO}} = \Delta E_{v} + \Delta \overline{V}$$
 The first term, $\Delta E_{v}$, is usually referred to as the *band structure term* and defined as the difference
 of the two valence band maxima $\varepsilon_{v}$ referenced to the macroscopically averaged electrostatic potential $\overline{V}$
 in each material:
 $$ \Delta E_{v} = (\varepsilon_{v}^{A} - \overline{V}^{A}) - (\varepsilon_{v}^{B} - \overline{V}^{B}) $$
-The second term, $\Delta V$, is determined from the lineup of the macroscopically averaged electrostatic potential in
+![Referencing the valence band edge](../../../images/tutorials/valence-band-maximum-with-reference.png){: style="width:600px"}
+The second term, $\Delta \overline{V}$, is determined from the lineup of the macroscopically averaged electrostatic potential in
 the interface heterostructure.
+![Lineup of the macroscopically averaged electrostatic potential](../../../images//tutorials/macroscopically-averaged-potential-lineup.png){: style="width:600px"}
 
 
 ## Choose Materials
 
 When creating the job, the user needs to select **three materials** corresponding to the MoS<sub>2</sub>/WS<sub>2</sub> interface
 and the isolated monolayers of both MoS<sub>2</sub> and WS<sub>2</sub>. Each of the structures is expected to be relaxed.
+The initial interface structure was taken from [materialsproject](https://materialsproject.org/materials/mp-1023954) and
+optimized via a variable-cell relaxation of the x- and y-components. The monolayer structures were extracted from the interface
+and optimized in the same way. The final structures are available on the Mat3ra platform:
+
+  - [MoS2/WS2 heterostructure](https://platform.mat3ra.com/exabyte-io/materials/cxgeoQwPJQJbgA2aD)
+  - [WS<sub>2</sub> monolayer](https://platform.mat3ra.com/exabyte-io/materials/5JcsfbBPKFWjxGXkX)
+  - [MoS<sub>2</sub> monolayer](https://platform.mat3ra.com/exabyte-io/materials/Cyr7Y6sefZsmZo6bH)
 
 !!!note "Order of Materials"
     The VBO workflow assumes the interface structure to correspond to the first material, i.e. please be sure to load the interface
@@ -48,6 +57,8 @@ The [workflow](../../../workflows/overview.md) for calculating the valence band 
 [collection](../../../accounts/collections.md).
 This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the
 [Job being created](../../../jobs-designer/workflow-tab.md).
+
+[![Valence Band Offset Workflow](../../../images/tutorials/valence-band-offset-workflow.png)](../../../images/tutorials/valence-band-offset-workflow.png)
 
 The workflow contains two subworkflows per material calculating the valence band maximum (via band structure),
 macroscopically averaged electrostatic potential, and its minima.
