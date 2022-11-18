@@ -57,6 +57,8 @@ The [workflow](../../../workflows/overview.md) for calculating the valence band 
 [collection](../../../accounts/collections.md).
 This workflow can later be [selected](../../../jobs-designer/actions-header-menu/select-workflow.md) and added to the
 [Job being created](../../../jobs-designer/workflow-tab.md).
+A [representation of this workflow](https://github.com/Exabyte-io/wode.js/blob/2022.11.16-0/assets/workflows/espresso/valence_band_offset.yml)
+is also available as part of the Mat3ra workflow definitions repository ([wode.js](https://github.com/Exabyte-io/wode.js)).
 
 [![Valence Band Offset Workflow](../../../images/tutorials/valence-band-offset-workflow.png)](../../../images/tutorials/valence-band-offset-workflow.png)
 
@@ -65,7 +67,6 @@ macroscopically averaged electrostatic potential, and its minima.
 As the system in this tutorial is a heterostructure built of monolayers, determining the value of the macroscopically
 averaged electrostatic potential in the region of the monolayer corresponds to finding the minima of $\overline{V}$.
 For multilayered heterostructures the problem becomes equivalent of finding plateaus of $\overline{V}$.
-
 The final subworkflow collects all the intermediate results and determines the value of the valence band offset.
 
 ### Workflow Settings
