@@ -60,6 +60,7 @@ markdown_extensions:
     - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
     - pymdownx.betterem             # Better bold/italic text
     - pymdownx.striphtml            # Strip html comments before processing
+    - attr_list
 
 # https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
 # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
@@ -145,6 +146,7 @@ nav:
                 - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
+                - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
@@ -405,7 +407,7 @@ nav:
         - Default:                                      materials/default.md
         - Classification:
             - Crystalline:                              materials/classification/crystalline.md
-            - Non-Periodic                              materials/classification/non-periodic.md
+            - Non-Periodic:                             materials/classification/non-periodic.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -607,6 +609,7 @@ nav:
             - Pressure:                                 properties-directory/scalar/pressure.md
             - Total Force:                              properties-directory/scalar/total-force.md
             - Reaction Energy Barrier:                  properties-directory/scalar/reaction-energy-barrier.md
+            - Valence Band Offset:                      properties-directory/scalar/valence-band-offset.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md
@@ -625,7 +628,7 @@ nav:
             - Basis:                                    properties-directory/structural/basis.md
             - Atomic Forces:                            properties-directory/structural/atomic-forces.md
             - Lattice:                                  properties-directory/structural/lattice.md
-            - Space Group:                              properties-directory/structural/space-group.md
+            - Symmetry:                                 properties-directory/structural/symmetry.md
             - Final Structure:                          properties-directory/structural/final-structure.md
             - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
             - Inchi:                                    properties-directory/structural/inchi.md
