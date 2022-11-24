@@ -16,25 +16,25 @@ The list of currently enabled queues is given below. Price per core hour is show
 
 | Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job<sup>+</sup> | Max Nodes Total |
 | :---: | :---:        | :---:    | :---:             | :---:                   | :---:     | :---:     |
-| D     | debug        | debug    | core-seconds      | 2.251                   | 1         | 10        |
-| OR    | ordinary     | regular  | core-seconds      | 1.000                   | 1         | 10        |
-| OR4   | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
-| OR8   | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
-| OR16  | ordinary     | regular  | core-seconds      | 1.126                   | 1         | 20        |
-| OF    | ordinary     | fast     | core-hours        | 1.000                   | &le;5    | 100       |
-| OFplus| ordinary     | fast     | core-hours        | 0.962                   | &le;5    | 10        |
-| SR    | saving       | regular  | core-seconds      | 0.200                   | 1         | 10        |
-| SR4   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
-| SR8   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
-| SR16  | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
-| SF    | saving       | fast     | core-hours        | 0.200                   | &le;5    | 100       |
-| SFplus| saving       | fast     | core-hours        | 0.241                   | &le;5    | 10        |
-| GOF   | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
-| G4OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
-| G8OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
-| GSF   | saving       | fast     | core-hours        | 3.370                   | &le;5    | 10        |
-| G4SF  | saving       | fast     | core-hours        | 4.158                   | &le;5    | 10        |
-| G8SF  | saving       | fast     | core-hours        | 4.335                   | &le;5    | 10        |
+| D     | debug        | debug    | core-seconds      | 1.658                   | 1         | 10        |
+| OR    | ordinary     | regular  | core-seconds      | 0.737                   | 1         | 10        |
+| OR4   | ordinary     | regular  | core-seconds      | 0.829                   | 1         | 20        |
+| OR8   | ordinary     | regular  | core-seconds      | 0.829                   | 1         | 20        |
+| OR16  | ordinary     | regular  | core-seconds      | 0.829                   | 1         | 20        |
+| OF    | ordinary     | fast     | core-hours        | 0.737                   | &le;5    | 100       |
+| OFplus| ordinary     | fast     | core-hours        | 0.708                   | &le;5    | 10        |
+| SR    | saving       | regular  | core-seconds      | 0.330                   | 1         | 10        |
+| SR4   | saving       | regular  | core-seconds      | 0.365                   | 1         | 20        |
+| SR8   | saving       | regular  | core-seconds      | 0.547                   | 1         | 20        |
+| SR16  | saving       | regular  | core-seconds      | 0.540                   | 1         | 20        |
+| SF    | saving       | fast     | core-hours        | 0.330                   | &le;5    | 100       |
+| SFplus| saving       | fast     | core-hours        | 0.348                   | &le;5    | 10        |
+| GOF   | ordinary     | fast     | core-hours        | 4.782                   | &le;5    | 10        |
+| G4OF  | ordinary     | fast     | core-hours        | 4.782                   | &le;5    | 10        |
+| G8OF  | ordinary     | fast     | core-hours        | 4.782                   | &le;5    | 10        |
+| GSF   | saving       | fast     | core-hours        | 2.391                   | &le;5    | 10        |
+| G4SF  | saving       | fast     | core-hours        | 2.391                   | &le;5    | 10        |
+| G8SF  | saving       | fast     | core-hours        | 3.234                   | &le;5    | 10        |
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
