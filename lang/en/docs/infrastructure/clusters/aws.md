@@ -28,7 +28,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 | SR8   | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
 | SR16  | saving       | regular  | core-seconds      | 0.225                   | 1         | 20        |
 | SF    | saving       | fast     | core-hours        | 0.200                   | &le;5    | 100       |
-| SFplus| saving       | fast     | core-hours        | 0.241                   | &le;5    | 10        |
+| SFplus| saving       | fast     | core-hours        | 0.379                   | &le;5    | 10        |
 | GOF   | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
 | G4OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
 | G8OF  | ordinary     | fast     | core-hours        | 8.655                   | &le;5    | 10        |
