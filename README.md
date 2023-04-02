@@ -8,10 +8,10 @@ For a quick installation:
 
 1. Install dependencies: python 2.7, `pip`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
 
-2. Clone this repository: 
+2. Clone this repository:
 
     ```bash
-    git clone git@github.com:Exabyte-io/documentation.git
+    git clone https://github.com/Exabyte-io/documentation.git
     ```
 
 3. Setup virtual environment
@@ -59,7 +59,7 @@ tutorials:
 #### Headers
 
 Write the main header (title) of the page as the first line, using top-level markdown notation (`#`). After adopting ["Material"](https://squidfunk.github.io/mkdocs-material/) mkdocs theme, the Table of contents (on the right, containing the current page structure) is not operational when more than one top-level header is present (h1). Therefore, we shall limit each and every page to only use **one** top-level header, and all the rest should be entered as sub-headers.
- 
+
 All other sub-headers contained throughout the remainder of the page should then be entered as second, third or even fourth degree headers, like in the following example:
 
 ```text
@@ -166,15 +166,15 @@ Including an external link is best done via a dedicated "Links" footnote section
 
 ```text
 Apple is the main competitor to Microsoft [^1].
-    
+
 Mac OS [^2] is the main Operating System developed by Apple.
 
 Mac OS can run VASP, a type of ab-initio simulation code [^3].
 
 Full instructions on how to use VASP can be found in Ref. [^4].
-    
+
 ## Links
-    
+
 [^1]: [Microsoft, Official Website](www.microsoft.com)
 [^2]: [Mac OS, Official Website](www.apple.com/mac-os.html)
 [^3]: [Wikipedia Ab-initio, Website](www.wikipedia.org/ab-initio-simulations.html)
@@ -187,7 +187,7 @@ By default, footnotes are included at the bottom of the page. `///FOOTNOTES GO H
 
 #### Links to Other Documentation Pages
 
-Including a local link to another page in the documentation, or a specific sub-header section within that page, is done with the following notations respectively. 
+Including a local link to another page in the documentation, or a specific sub-header section within that page, is done with the following notations respectively.
 
 ```text
 We explain service levels [in this page](../../pricing/service-levels.md)
@@ -201,13 +201,13 @@ Use **ONLY RELATIVE** paths starting from the current page, not the absolute one
 
 ### Images and Animations
 
-Images (.png, .gif) are stored inside [images](images) directory and are automatically hosted on Git LFS. 
+Images (.png, .gif) are stored inside [images](images) directory and are automatically hosted on Git LFS.
 This is an acceptable way to contribute images, as long as the size is kept small (below 1Mb each) in order to avoid exceeding Github LFS quota.
 
 > Note: Do NOT put videos inside this directory! Upload the video into your preferred online storage system such as Google Drive, DropBox, or YouTube, and share its link with us to review and put it up online.
 
-Put images in separate folders within the main "images" directory, one for each top level section of the documentation. 
-Also in this case it is essential to use **RELATIVE** and not absolute paths to the image, starting from the current page. 
+Put images in separate folders within the main "images" directory, one for each top level section of the documentation.
+Also in this case it is essential to use **RELATIVE** and not absolute paths to the image, starting from the current page.
 
 A few conventions to use when naming images:
 
@@ -242,7 +242,7 @@ using screen readers. A few guidelines for the alt-text:
   it uses when describing an image to someone.
 - Don't begin with redundant phrases such as "This is an image of...", "This picture shows...", etc. Just describe what's in
 the image. For example, instead of "This picture shows a plate of spam and eggs," instead write "Plate of spam and eggs"
-  
+
 Note that alt-text generally used as part of search indexing in addition to the image title, so try to think about keywords for the image and the page,
 and weave them (organically) into the alt-text.
 
@@ -252,7 +252,7 @@ simple and human-readable.
 
 #### Including GIFs
 
-GIFs should be stored in the same image folders as normal images (see above). Including a GIF image is done as follows. 
+GIFs should be stored in the same image folders as normal images (see above). Including a GIF image is done as follows.
 
 ```text
 <img data-gifffer="/images/AddCredit.gif" />
@@ -286,7 +286,7 @@ Including a clickable image map is done as follows. Note that absolute paths to 
     <area shape="rect" coords="0,28,754,91" href="/workflow-designer/header-menu-actions">
 </map>
 
-<!-- 
+<!--
     coords="x1,y1,x2,y2"
     x1=top left X coordinate
     y1=top left Y coordinate
@@ -300,23 +300,23 @@ Including a clickable image map is done as follows. Note that absolute paths to 
 #### JSON Schemas and Examples
 
 Including resolved JSON schemas and associated examples should be done within dedicated `data.md` pages for each concept being explained.
-    
+
 The [markdown_include](https://github.com/Exabyte-io/markdown-include) package is used to include JSON content into markdown documents, by putting direct links to pages inside the [ESSE repository](https://github.com/Exabyte-io/exabyte-esse) instead of copying their contents in the main documentation.
 
 ```text
 
-    ```json tab="Schema" 
+    ```json tab="Schema"
     {!esse/schema/file_path/file_name.json!}
     ```
-    ```json tab="Example" 
+    ```json tab="Example"
     {!esse/example/file_path/file_name.json!}
     ```
 
 ```
 
-#### Code Snippets 
+#### Code Snippets
 
-Use the following conventions: "object" to quote object or concept, or `button` (between ` ticks as opposed to " quotes) to cite user interface icons or command-line statements in-line. 
+Use the following conventions: "object" to quote object or concept, or `button` (between ` ticks as opposed to " quotes) to cite user interface icons or command-line statements in-line.
 
 Extended code blocks should be enclosed between pairs of triple ticks with name of interpreter for the language being shown, like so:
 
@@ -325,7 +325,7 @@ Extended code blocks should be enclosed between pairs of triple ticks with name 
     VARIABLE = "Example"
     print "Hello World"
     ```
-    
+
 #### Latex Math Equations
 
 Math equations written in Latex can be inserted within documentation pages (after installing requirements - see instructions at the top of this page) both in-line and as separate blocks, using the dollar notation as shown in the following example:
@@ -335,7 +335,7 @@ We define the Average Pressure $p_{avg}$ of a Material according to the followin
 
 $$
 p_{avg}=-\frac{1}{3} \mathrm{Tr} \hspace{1pt} {\boldsymbol{\sigma}}
-$$ 
+$$
 ```
 
 ## Contribution
