@@ -1,5 +1,5 @@
 {
-    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-22.04",
+    "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu-20.04",
     // https://github.com/microsoft/vscode-dev-containers/tree/main/containers
     "features": {
         "node": {
