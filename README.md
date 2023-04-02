@@ -1,12 +1,12 @@
-# Exabyte.io Documentation
+# Mat3ra Documentation
 
-[Exabyte.io](https://exabyte.io/) is a computational platform for the development of new materials and chemicals. The present documentation explains how the [platform](https://platform.exabyte.io/) works in details. Currently deployed version of the documentation is available at [this link](http://docs.exabyte.io).
+[Mat3ra](https://www.mat3ra.com) is a computational platform for the development of new materials and chemicals. The present documentation explains how the [platform](https://platform.mat3ra.com/) works in details. Currently deployed version of the documentation is available at [this link](http://docs.mat3ra.com).
 
 ## Setup
 
 For a quick installation:
 
-1. Install dependencies: python 2.7, `pip`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
+1. Install dependencies: python 3 (tested on Python `3.7`, `3.8`, `3.9`), `pip`, `curl`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
 
 2. Clone this repository:
 
@@ -156,7 +156,7 @@ click the <i class="zmdi zmdi-check zmdi-hc-border"></i> icon
 
 will be rendered as: "click the <i class="zmdi zmdi-check zmdi-hc-border"></i> icon".
 
-We use the same ZMDI icon set for the main application. To find the correct ZMDI tag for an icon present on the Exabyte user interface, right click on it within your web browser and click on "Inspect Element". The ZMDI tag should be mentioned within the resulting HTML code describing the user interface.
+We use the same ZMDI icon set for the main application. To find the correct ZMDI tag for an icon present on the Mat3ra user interface, right click on it within your web browser and click on "Inspect Element". The ZMDI tag should be mentioned within the resulting HTML code describing the user interface.
 
 ### Links
 
