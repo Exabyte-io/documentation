@@ -1,6 +1,6 @@
 # Storage Quota
 
-Simulations can produce large amounts of data while running. In order to make sure this does not affect other simulations, especially when there are multiple tenants using same hardware, we allocate certain amount of disk storage to each account - **"Quota"**. Such a limit depends on the [service level](pricing-and-service-levels/#service-levels-comparison).
+Simulations can produce large amounts of data while running. In order to make sure this does not affect other simulations, especially when there are multiple tenants using same hardware, we allocate certain amount of disk storage to each account - **"Quota"**. Such a limit depends on the [service level](service-levels/#service-levels-comparison).
 
 ## Quota increase
 
