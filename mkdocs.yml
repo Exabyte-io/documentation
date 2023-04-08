@@ -7,7 +7,8 @@ site_description: Documentation for the users of Mat3ra materials modeling platf
 dev_addr: "localhost:8000"
 
 repo_name: 'exabyte-io/documentation'
-repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
+repo_url: 'https://github.com/exabyte-io/documentation'
+edit_uri: 'edit/master/lang/en/docs/'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
     - extra/css/general.css
