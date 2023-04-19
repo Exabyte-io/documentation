@@ -7,7 +7,8 @@ site_description: Documentation for the users of Mat3ra materials modeling platf
 dev_addr: "localhost:8000"
 
 repo_name: 'exabyte-io/documentation'
-repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
+repo_url: 'https://github.com/exabyte-io/documentation'
+edit_uri: 'edit/master/lang/en/docs/'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
     - extra/css/general.css
@@ -23,10 +24,10 @@ extra_javascript:
     - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
     - extra/js/url_parameters.js
 
-copyright: © 2022 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
+copyright: © 2023 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2022.5.19"
+    version: "2023.4.13"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
