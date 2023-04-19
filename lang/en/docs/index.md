@@ -1,6 +1,10 @@
 # Mat3ra Documentation
 
-[**Mat3ra**](https://platform.mat3ra.com) is a cloud-native accessible and collaborative platform for materials modeling from the atomic scale. Our platform makes it easier for scientists, engineers, and researchers to **design new materials** and **predict their properties** using *first-principles* calculation. Such an approach does not require any knowledge of experimental observations, instead solely takes into account the atomistic description of material (e.g., constituent atoms, crystal structure, lattice constant, etc.) to compute desired properties thanks to [Density Functional Theory](https://en.wikipedia.org/wiki/Density_functional_theory){:target='_blank'} and its numerical implementations. Our platform also helps users collaborate, share and gather obtained knowledge with others on the platform. This documentation explains how the platform works in detail.
+[**Mat3ra**](https://platform.mat3ra.com) is a cloud-native accessible and collaborative platform for materials modeling from the atomic scale. Our platform makes it easier for scientists, engineers, and researchers to **design new materials** and **predict their properties** using *first-principles* approaches and *AI/ML* techniques. 
+
+First-principles approach does not require any knowledge of experimental observations, instead solely takes into account the atomistic description of material (e.g., constituent atoms, crystal structure, lattice constant, etc.) to compute desired properties thanks to [Density Functional Theory](https://en.wikipedia.org/wiki/Density_functional_theory){:target='_blank'} and its numerical implementations. When enough data is present, the AI/ML techniques can be applied to discover trends and accelerate predictions. Our platform also helps users collaborate, share and gather obtained knowledge with others. 
+
+The present documentation explains how the platform works in detail.
 
 
 ## Quick start
