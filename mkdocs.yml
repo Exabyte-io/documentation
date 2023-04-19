@@ -27,7 +27,7 @@ extra_javascript:
 copyright: © 2023 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2022.5.19"
+    version: "2023.4.13"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
