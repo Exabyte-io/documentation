@@ -19,7 +19,7 @@ extra_css:
 
 extra_javascript:
     - extra/js/giffer.js
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML'
     - extra/js/ga.js
     - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
     - extra/js/url_parameters.js
