@@ -4,7 +4,8 @@ We offer a set of **high-performance computing clusters** to facilitate material
 
 ## Current State
 
-The current state of the system is summarized for logged-in users [here](https://platform.exabyte.io/clusters).
+The [clusters](https://platform.mat3ra.com/clusters) page summarizes the state of each cluster and the status of its [queues](../resource/queues.md) (requires logged-in user).
+![ClustersTable](../../images/infrastructure/clusters-table-page.png "Clusters table page")
 
 ## Cluster Aliases
 

@@ -8,6 +8,8 @@ Below we show an example JSON structured representation for the compute paramete
     "nodes" : 1,
     "queue" : "D",
     "timeLimit" : "01:00:00",
+    "timeLimitType": "per single attempt",
+    "isRestartable": true,
     "notify" : "n",
     "cluster" : {
         "fqdn" : "master-production-20160630-cluster-001.exabyte.io",
@@ -21,12 +23,14 @@ Below we show an example JSON structured representation for the compute paramete
 
 ## List of Keywords
     
-| Keyword    |  
-| :-------- |
-| [ppn](parameters.md#nodes-/-ppn) |
-| [nodes](parameters.md#nodes-/-ppn) |  
-| [queue](parameters.md#queue)  |
-| [timeLimit](parameters.md#time-limit) |  
-| [notify](parameters.md#notifications) |
-| [cluster](parameters.md#cluster-choice) | 
-| [arguments](parameters.md#advanced-options) |
+| Keyword                                        |  
+|:-----------------------------------------------|
+| [ppn](parameters.md#nodes-/-ppn)               |
+| [nodes](parameters.md#nodes-/-ppn)             |  
+| [queue](parameters.md#queue)                   |
+| [timeLimit](parameters.md#time-limit)          |  
+| [timeLimitType](parameters.md#time-limit-type) |  
+| [isRestartable](parameters.md#is-restartable)  |  
+| [notify](parameters.md#notifications)          |
+| [cluster](parameters.md#cluster-choice)        | 
+| [arguments](parameters.md#advanced-options)    |
