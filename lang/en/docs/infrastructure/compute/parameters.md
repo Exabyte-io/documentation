@@ -12,6 +12,14 @@ The user can specify the maximum time limit for the calculation to be run for. T
 
 Please note that a calculation will be terminated when the runtime exceeds the maximum time specified in this field.
 
+### Time limit type
+
+Relevant for [Saving Compute Category](../resource/category.md#cost-categories). When set to "compound", the total execution time will never exceed the time limit, even if the job is restarted. By default, the time limit is "per single attempt".
+
+### Is restartable
+
+If the job should be restarted upon termination, e.g. due to saving node termination. See "-r" [directive](../../jobs-cli/batch-scripts/directives.md#other-useful-directives)
+
 ## Cluster choice
 
 A list of [computing clusters](../clusters/overview.md) is available for performing the desired calculation. The user can also visualize the status of each cluster, under the "See clusters status" option in the [user interface](overview.md). 
