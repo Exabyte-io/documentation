@@ -12,4 +12,4 @@ Technical questions, computer operations, passwords, and account support
 
 # Web widget
 
-You may also submit a support ticket using our support-widget: click "Support" button at the bottom left of any web application screen and fill in the form.
+You may also submit a support ticket using our support-widget: click "Contact Support" in the bottom of left sidebar menu of any web application screen and fill in the form.
