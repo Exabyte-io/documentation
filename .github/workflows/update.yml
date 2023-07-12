@@ -27,7 +27,7 @@ jobs:
         run: git lfs pull
 
       - name: Build pages
-        uses: Exabyte-io/action-mkdocs-s3-publish@main
+        uses: Exabyte-io/action-mkdocs-build@main
 
       - name: S3 Deploy
         uses: Exabyte-io/action-s3-deploy@v3
