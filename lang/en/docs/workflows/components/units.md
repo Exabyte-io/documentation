@@ -22,6 +22,14 @@ Perform input/output operations, such as reading from a remote database or downl
 
 Declare, set, increment, and perform math operations on variables. For example: iterate over a counter variable and a k-point density variable for a k-point convergence workflow.
 
+The following functions/types/libraries are available:
+
+- built-in functions/types listed at [https://docs.python.org/3.8/library/functions.html](https://docs.python.org/3.8/library/functions.html) excluding the functions starting with `_` and unsafe functions (`compile`, `eval`, `exec`, `getattr`, `isinstance`, `open`, `repr`, `setattr`);
+- `json` - standard JSON library;
+- `math` - standard math library;
+- `np` - NumPy library;
+- `random` - standard library of random variable generators.
+
 ### Conditional
 
 Used to make a decision on what should be the next unit in the workflow to be executed. The conditional is a mathematical formula that operates on one or more assignment variables to choose the next unit.
