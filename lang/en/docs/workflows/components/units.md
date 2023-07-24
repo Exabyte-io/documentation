@@ -30,6 +30,59 @@ The following functions/types/libraries are available:
 - `np` - NumPy library;
 - `random` - standard library of random variable generators.
 
+#### Examples
+
+```json
+{
+    "head": true,
+    "flowchartId": "assignment",
+    "name": "assignment",
+    "type": "assignment",
+    "input": [
+        {
+            "scope": "global",
+            "name": "x"
+        }
+    ],
+    "operand": "x",
+    "value": "2 * np.abs(x - 10)"
+}
+```
+
+```json
+{
+    "head": true,
+    "flowchartId": "assignment",
+    "name": "assignment",
+    "type": "assignment",
+    "input": [
+        {
+            "scope": "global",
+            "name": "x"
+        }
+    ],
+    "operand": "x",
+    "value": "x + float(2) - int(2.5) + round(pow(math.pi, abs(-2))) / len(range(2))"
+}
+```
+
+```json
+{
+    "head": true,
+    "flowchartId": "assignment",
+    "name": "assignment",
+    "type": "assignment",
+    "input": [
+        {
+            "scope": "global",
+            "name": "x"
+        }
+    ],
+    "operand": "x",
+    "value": "x - json.loads(str(5)) + np.int64(random.random())"
+}
+```
+
 ### Conditional
 
 Used to make a decision on what should be the next unit in the workflow to be executed. The conditional is a mathematical formula that operates on one or more assignment variables to choose the next unit.
