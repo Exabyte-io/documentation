@@ -32,6 +32,8 @@ The following functions/types/libraries are available:
 
 #### Examples
 
+Here's the JSON representation of an assignment unit using functional evaluation. Note the "value" key and the use of the `abs` function from numpy via `np.abs`:
+
 ```json
 {
     "head": true,
@@ -49,36 +51,18 @@ The following functions/types/libraries are available:
 }
 ```
 
+Similarly, we can use other functions, such as `math`, `round`, `int`, `json`, as shown below
+
 ```json
 {
-    "head": true,
-    "flowchartId": "assignment",
-    "name": "assignment",
-    "type": "assignment",
-    "input": [
-        {
-            "scope": "global",
-            "name": "x"
-        }
-    ],
-    "operand": "x",
+    ...
     "value": "x + float(2) - int(2.5) + round(pow(math.pi, abs(-2))) / len(range(2))"
 }
 ```
 
 ```json
 {
-    "head": true,
-    "flowchartId": "assignment",
-    "name": "assignment",
-    "type": "assignment",
-    "input": [
-        {
-            "scope": "global",
-            "name": "x"
-        }
-    ],
-    "operand": "x",
+    ...
     "value": "x - json.loads(str(5)) + np.int64(random.random())"
 }
 ```
@@ -89,4 +73,4 @@ Used to make a decision on what should be the next unit in the workflow to be ex
 
 ### Map/Reduce
 
-Step that is replicated for a list of independent input parameters. For example: run a total energy calculation subworkflow using a list of materials such as "Li, Na, K, Rb, Cs, Fr" as inputs.
+A step that is replicated for a list of independent input parameters. For example: run a total energy calculation subworkflow using a list of materials such as "Li, Na, K, Rb, Cs, Fr" as inputs.
