@@ -14,7 +14,7 @@ It is important for the present discussion to draw a distinction between two dif
 
 ### Individual Accounts
 
-To every user of our platform is associated an Individual Account, created at the moment of registration. The User is by definition always the sole member of their individual account, and consequently also the owner and administrator thereof.
+Every user of our platform is associated with an Individual Account created at the moment of registration. The User is, by definition, always the sole member of their individual account and also the owner and administrator thereof. We sometimes also refer to these accounts as "Personal" accounts too.
 
 ### [Organizations](../collaboration/organizations/overview.md)
 
