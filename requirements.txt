@@ -1,6 +1,6 @@
 ### Generated with:
 # pip install \
-# mkdocs==1.0.4 \
+# mkdocs==1.2.3 \
 # pymdown-extensions==6.0 \
 # mkdocs-material==4.1.1 \
 # exabyte_json_include==2.0.0 \
