@@ -7,6 +7,16 @@ We offer a set of **high-performance computing clusters** to facilitate material
 The [clusters](https://platform.mat3ra.com/clusters) page summarizes the state of each cluster and the status of its [queues](../resource/queues.md) (requires logged-in user).
 ![ClustersTable](../../images/infrastructure/clusters-table-page.png "Clusters table page")
 
+### The following table summarizes cluster capacity states
+
+| Capacity    | Description                       |
+| :---:       | :---:                                             |
+| FULL        | all zones are available and jobs will run immediately |
+| DEGRADED    | some zones are unavailable which may lead to longer time in queue |
+| UNAVAILABLE | all zones are unavailable and jobs will not run |
+| --          | for saving (S) queues, this also indicates that spot instance pricing is currently too high |
+
+
 ## Cluster Aliases
 
 In order to make the identification of cluster aliases more user-friendly we use human-readable names or "Aliases" instead of their fully-qualified domain names [^1] for the cluster Master Nodes.
@@ -26,7 +36,7 @@ The architecture of a cluster is explained in the diagram below, comprising a **
 
 Clusters also offer a certain amount of **storage space** for [storing](../storage.md) simulation files as [unstructured data](../../data-on-disk/overview.md), subject to certain **quotas** as explained [here](../../data-on-disk/quotas.md).
 
-### [Directory Structure](directories.md) 
+### [Directory Structure](directories.md)
 
 We discuss the directory structure which can be found inside the home folder of each cluster [in this section](directories.md) of the documentation.
 
