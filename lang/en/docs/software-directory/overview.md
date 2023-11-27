@@ -1,13 +1,13 @@
 # List of Available Software
 
-We list in the present page the [software](../software/overview.md) available on our platform, accessible via the appropriate [connection method](../remote-connection/overview.md). The reader is referred to the introductory pages dedicated to each of the packages listed here, by clicking the links contained below. Dedicated pages contain references to the relevant documentation explaining the operations of the corresponding software in detail.
+We list on the present page the [software](../software/overview.md) available on our platform, accessible via the appropriate [connection method](../remote-connection/overview.md). The reader is referred to the introductory pages dedicated to each of the packages listed here by clicking the links contained below. Dedicated pages contain references to the relevant documentation explaining the operations of the corresponding software in detail.
 
 ## Access Scenarios
 
 Tools can be accessed through one or more of the following methods:
  
  1. The main user interface (in the [subworkflow editor](../workflow-designer/subworkflow-editor/overview.md)), 
- 2. Remote Desktop (we provide and example for [VESTA](analysis/vesta.md)) in [this page](../remote-connection/actions-rd/open-app.md),
+ 2. Remote Desktop (we provide an example for [VESTA](analysis/vesta.md)) in [this page](../remote-connection/actions-rd/open-app.md),
  3. [Environment Modules](../cli/modules.md) in [command line interface](../cli/overview.md).
 
 
@@ -43,14 +43,14 @@ We support the following structural analysis and visualization tools through a [
 | [VESTA](analysis/vesta.md)  | 3.3.8 | 2, 3 |
 | [P4VASP](analysis/p4vasp.md) |  0.3.30 | 2, 3 |
 
-!!!info "Opening graphical software in remote desktop"
-    An example on how to open a graphical structural visualization tool in our remote desktop environment is provided [under this page](../remote-connection/actions-rd/open-app.md).
+!!!info "Opening graphical software in remote desktop."
+    An example of how to open a graphical structural visualization tool in our remote desktop environment is provided [under this page](../remote-connection/actions-rd/open-app.md).
 
 ## Scripting Applications
 
 Our platform includes support for two widely-used scripting languages, [shell scripting](scripting/shell/overview.md) and [python](scripting/python/overview.md), which are introduced in their respective documentation pages. 
 
-For command line users we provide a system-default python installation, and recommend users to employ virtual environments for controlling the versions of python packages in [Command Line Interface](../cli/overview.md), as explained [in this page](../cli/actions/create-python-env.md).
+For command line users, we provide a system-default Python installation and recommend users employ virtual environments for controlling the versions of Python packages in [Command Line Interface](../cli/overview.md), as explained [in this page](../cli/actions/create-python-env.md).
 
 ## Development Tools
 

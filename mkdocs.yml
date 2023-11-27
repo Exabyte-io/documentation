@@ -7,7 +7,8 @@ site_description: Documentation for the users of Mat3ra materials modeling platf
 dev_addr: "localhost:8000"
 
 repo_name: 'exabyte-io/documentation'
-repo_url: 'https://github.com/exabyte-io/exabyte-public-documentation'
+repo_url: 'https://github.com/exabyte-io/documentation'
+edit_uri: 'edit/master/lang/en/docs/'
 extra_css:
     - https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css
     - extra/css/general.css
@@ -18,14 +19,15 @@ extra_css:
 
 extra_javascript:
     - extra/js/giffer.js
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML'
     - extra/js/ga.js
     - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
+    - extra/js/url_parameters.js
 
-copyright: © 2021 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
+copyright: © 2023 <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "0.17"
+    version: "2023.4.13"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
@@ -59,6 +61,7 @@ markdown_extensions:
     - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
     - pymdownx.betterem             # Better bold/italic text
     - pymdownx.striphtml            # Strip html comments before processing
+    - attr_list
 
 # https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
 # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
@@ -144,6 +147,7 @@ nav:
                 - Electronic density of states:            tutorials/dft/electronic/density-of-states.md
                 - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
+                - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
@@ -404,7 +408,7 @@ nav:
         - Default:                                      materials/default.md
         - Classification:
             - Crystalline:                              materials/classification/crystalline.md
-            - Non-Periodic                              materials/classification/non-periodic.md
+            - Non-Periodic:                             materials/classification/non-periodic.md
         - User Interface:
             - Explorer:                                 materials/ui/explorer.md
             - Designer:                                 materials-designer/overview.md
@@ -606,6 +610,7 @@ nav:
             - Pressure:                                 properties-directory/scalar/pressure.md
             - Total Force:                              properties-directory/scalar/total-force.md
             - Reaction Energy Barrier:                  properties-directory/scalar/reaction-energy-barrier.md
+            - Valence Band Offset:                      properties-directory/scalar/valence-band-offset.md
         - Non-scalar:
             - Stress Tensor:                            properties-directory/non-scalar/stress-tensor.md
             - Band Structure:                           properties-directory/non-scalar/bandstructure.md
@@ -624,7 +629,7 @@ nav:
             - Basis:                                    properties-directory/structural/basis.md
             - Atomic Forces:                            properties-directory/structural/atomic-forces.md
             - Lattice:                                  properties-directory/structural/lattice.md
-            - Space Group:                              properties-directory/structural/space-group.md
+            - Symmetry:                                 properties-directory/structural/symmetry.md
             - Final Structure:                          properties-directory/structural/final-structure.md
             - Magnetic Moment:                          properties-directory/structural/magnetic-moment.md
             - Inchi:                                    properties-directory/structural/inchi.md

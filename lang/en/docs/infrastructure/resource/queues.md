@@ -34,15 +34,14 @@ Queue name consists of the 4 main parts as demonstrated below. Only one part, de
 
 ## Charge Policies
 
-We deploy two charge policies, as explained below:
+The [provision mode](category.md#provision-modes) determines charge policy:
 
-- **core seconds**: jobs are charged according to the number of core-seconds consumed
-- **core hours**: jobs are charged according to the nearest (greater) integer number of core-hours consumed; also referred to as "whole hours" 
+**R (Regular)** *core seconds*: jobs are only charged for core-seconds consumed
 
-The latter is used for queues with [Fast](category.md#provision-modes) provision category. The former is used otherwise.
+**F (Fast)** *flat fee*: jobs are charged for core-seconds consumed **plus** a flat fee (*5 core-minutes*) due to increased on-demand provisioning cost
 
-!!! warning "Be considerate when using queues with core-hours charge policies"
-    When tasks are submitted to the queue with "core hours" based charge policy, our accounting system would charge the [account](../../accounts/overview.md) for at least 1 hour of usage of the resource. We advise users to prototype the calculations in other queues and deploy production-ready large-scale runs using queues with "core hours" charge policies. 
+!!! warning "Failed jobs in the F (Fast) provision category will still incur a flat fee"
+    We advise users to prototype calculations in other queues and only deploy production-ready large-scale runs in queues with "flat fee" charge policies.
 
 ## List of Queues
 

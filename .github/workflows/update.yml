@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     name: Deploy docs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
@@ -27,7 +27,7 @@ jobs:
         run: git lfs pull
 
       - name: Build pages
-        uses: Exabyte-io/action-mkdocs-s3-publish@main
+        uses: Exabyte-io/action-mkdocs-build@main
 
       - name: S3 Deploy
         uses: Exabyte-io/action-s3-deploy@v3

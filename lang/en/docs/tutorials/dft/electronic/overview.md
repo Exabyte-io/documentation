@@ -30,5 +30,9 @@ A similar Band Gap calculation with Quantum ESPRESSO is [available here](hse-qe-
 
 ## GW Calculations
 
-This [tutorial](gw-vasp-bg.md) illustrate how the results for the Band Gap can be more accurate through the use of the [GW Approximation](../../../models-directory/dft/notes.md#the-gw-approximation).
+This [tutorial](gw-vasp-bg.md) illustrates how the results for the Band Gap can be more accurate through the use of the [GW Approximation](../../../models-directory/dft/notes.md#the-gw-approximation).
  
+## Valence Band Offset
+
+We show how to calculate the [valence band offset](../../../properties-directory/scalar/valence-band-offset.md) for a
+heterostructure using the potential lineup method in [this tutorial](valence-band-offset.md).
