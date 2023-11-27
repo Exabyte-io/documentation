@@ -4,7 +4,7 @@ This page contains information about clusters hosted on Microsoft Azure[^1] and 
 
 ## Clusters
 
-The following table provides information about available clusters on Microsoft Azure cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
+The following table provides information about available clusters on Microsoft Azure cloud computing platform. The latest cluster status can be found on <a href="https://platform.mat3ra.com/clusters" target="_blank">Clusters</a> page in web application.
 
 | Name        | Hostname                                          | Location |
 | :---:       | :---:                                             | :---:    |
@@ -17,14 +17,12 @@ The list of currently enabled queues is given below. Price per core hour is show
 | Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price                   | Max Nodes per Job<sup>+</sup> | Max Nodes Total   |
 | :---: | :---:        | :---:    | :---:             | :---:                   | :---:                         | :---:             |
 | D     | debug        | debug    | core-seconds      | 4.002                   | 1                             | 10                |
-| OR    | ordinary     | regular  | core-seconds      | 2.000                   | 1                             | 10                |
-| OR8   | ordinary     | regular  | core-seconds      | 2.001                   | 1                             | 10                |
-| OF    | ordinary     | fast     | core-hours        | 2.200                   | &le;5                         | 100               |
+| OR    | ordinary     | regular  | core-seconds      | 1.275                   | 1                             | 10                |
+| OF    | ordinary     | fast     | core-hours        | 1.275                   | &le;5                         | 100               |
 | OFplus| ordinary     | fast     | core-hours        | 1.275                   | 5                             | 10                |
-| SR    | saving       | regular  | core-seconds      | 0.400                   | 1                             | 10                |
-| SR8   | saving       | regular  | core-seconds      | 0.401                   | 1                             | 10                |
-| SF    | saving       | fast     | core-hours        | 0.441                   | &le;1<sup>*</sup>             | 100               |
-| SFplus   | saving       | fast     | core-hours        | 0.379                   | 5                             | 10                |
+| SR    | saving       | regular  | core-seconds      | 0.379                   | 1                             | 10                |
+| SF    | saving       | fast     | core-hours        | 0.379                   | 1<sup>*</sup>                 | 100               |
+| SFplus   | saving       | fast     | core-hours     | 0.379                   | 5                             | 10                |
 | GPOF  | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
 | GP2OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
 | GP4OF | ordinary     | fast     | core-hours        | 6.110                   | &le;5                         | 10                |
@@ -34,24 +32,22 @@ The list of currently enabled queues is given below. Price per core hour is show
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
-<sup>*</sup> presently the infrastructure limitations are not allowing for the multi-node communication in SF queue, so only single-node jobs should be attempted (as of July 2019)
+<sup>*</sup> presently the infrastructure limitations are not allowing for the multi-node communication in SF queue, so only single-node jobs should be attempted (as of Oct 2022)
 
 
 ## Hardware Specifications
 
 The following table contains hardware specifications for the above queues. 
 
-| Name  | CPU[^5] | Cores per Node | GPU[^6] | GPU per Node | Memory (GB) | Bandwidth (Gbps) |
+| Name  | CPU[^5] | Cores per Node | GPU[^6] | GPU per Node | Memory (GB) | Bandwidth (Gb/sec) |
 | :---: | :---:        | :---:      | :---:        | :---:    | :---:       | :---:            |
-| D     | c-1          | 8          | -            | -        | 56          | &le;10           |
-| OR    | c-1          | 16         | -            | -        | 112         | 10               |
-| OR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
-| OF    | c-1          | 16         | -            | -        | 112         | 54.54[^7]        |
-| OFplus| c-6          | 44         | -            | -        | 352         | 54.4             |
-| SR    | c-1          | 16         | -            | -        | 112         | 10               |
-| SR8   | c-1          | 8          | -            | -        | 56          | &le;10           |
-| SF    | c-1          | 16         | -            | -        | 112         | 54.54            |
-| SFPlus| c-6          | 44         | -            | -        | 352         | 54.54            |
+| D     | c-7          | 16         | -            | -        | 32          | &le;10           |
+| OR    | c-6          | 44         | -            | -        | 352         | 100             |
+| OF    | c-6          | 44         | -            | -        | 352         | 100             |
+| OFplus| c-6          | 44         | -            | -        | 352         | 100             |
+| SR    | c-6          | 44         | -            | -        | 352         | 100            |
+| SF    | c-6          | 44         | -            | -        | 352         | 100            |
+| SFPlus| c-6          | 44         | -            | -        | 352         | 100            |
 | GPOF  | c-2          | 6          | g-2          | 1        | 112         | 10               |
 | GP2OF | c-2          | 12         | g-2          | 2        | 224         | 10               |
 | GP4OF | c-2          | 24         | g-2          | 4        | 448         | 10               |

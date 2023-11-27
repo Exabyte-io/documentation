@@ -19,7 +19,7 @@ source .virtualenv/bin/activate
 At this point the CLI prompt will change to reflect that the virtual environment is active and will look similar to:
 
 ```bash
-(.virtualenv) [steven@bohr.exabyte.io:~/cluster-001/tmp]$
+(.virtualenv) [steven@login.mat3ra.com:~/cluster-001/tmp]$
 ```
 
 Next, let's install the desired package(s). Here we use "pymatgen", further explained below:

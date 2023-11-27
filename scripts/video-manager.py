@@ -5,6 +5,7 @@ import re
 import json
 import googleapiclient.discovery
 
+from pathlib import Path
 from jinja2 import Template
 from google.cloud import texttospeech
 from oauth2client.file import Storage
@@ -14,13 +15,14 @@ from googleapiclient.http import MediaFileUpload, MediaInMemoryUpload
 from utils import flatten, update_metadata, parseIncludeStatements, caption_time_to_milliseconds
 
 SCOPE = "https://www.googleapis.com/auth/youtubepartner"
-CLIENT_SECRETS_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "oauth-key.json"))
-DESCRIPTION_TEMPLATE = os.path.abspath(os.path.join(os.path.dirname(__file__), "video-description.jinja"))
-SERVICE_ACCOUNT_KEY_FILE = os.path.abspath(os.path.join(os.path.dirname(__file__), "service-account-key.json"))
+SCRIPT_DIR = Path(__file__).resolve().parent
+CLIENT_SECRETS_FILE = SCRIPT_DIR / "oauth-key.json"
+DESCRIPTION_TEMPLATE = SCRIPT_DIR / "video-description.jinja"
+SERVICE_ACCOUNT_KEY_FILE = SCRIPT_DIR / "service-account-key.json"
 DESCRIPTION_LINKS = [
-    "Materials Modeling 2.0: https://exabyte.io/",
-    "Exabyte.io Platform: https://platform.exabyte.io/register",
-    "Exabyte.io Documentation: https://docs.exabyte.io/",
+    "Materials Modeling 2.0: https://mat3ra.com/",
+    "Mat3ra Platform: https://platform.mat3ra.com/register",
+    "Mat3ra Documentation: https://docs.mat3ra.com/",
 ]
 
 LANGUAGE_CODE = 'en-US'
@@ -35,6 +37,8 @@ def get_oauth_credentials():
     """
     Returns the credentials to establish connection to YouTube API.
     """
+    if not CLIENT_SECRETS_FILE.exists():
+        return None
     flow = flow_from_clientsecrets(CLIENT_SECRETS_FILE, scope=SCOPE)
     storage = Storage("oauth-credentials.json")
     credentials = storage.get()
@@ -47,14 +51,16 @@ def get_text_to_speech_api_client():
     """
     Returns TextToSpeech API client.
     """
-    return texttospeech.TextToSpeechClient.from_service_account_file(SERVICE_ACCOUNT_KEY_FILE)
+    return texttospeech.TextToSpeechClient.from_service_account_file(SERVICE_ACCOUNT_KEY_FILE.name)
 
 
 def get_youtube_api_client():
     """
     Returns YouTube API client.
     """
-    return googleapiclient.discovery.build("youtube", "v3", credentials=get_oauth_credentials())
+    credentials = get_oauth_credentials()
+    if credentials is not None:
+        return googleapiclient.discovery.build("youtube", "v3", credentials=credentials)
 
 
 def get_category_id(youtube_, category):
@@ -74,7 +80,7 @@ def get_category_id(youtube_, category):
 
 def get_video_body_param(youtube_, metadata_):
     """
-    Returns the body of the the request to YouTube API.
+    Returns the body of the request to YouTube API.
     Args:
         youtube_: YouTube API client instance.
         metadata_ (dict): video metadata.
@@ -141,16 +147,17 @@ def create_svb_caption_content(metadata_):
     """
     regex = re.compile(r'<.*?>')
     caption_to_text = lambda c: "".join((c["startTime"], ",", c["endTime"], "\n", regex.sub('', c["text"])))
-    return "\n\n".join([caption_to_text(caption) for caption in metadata_["youTubeCaptions"]])
+    captions = "\n\n".join([caption_to_text(caption) for caption in metadata_["youTubeCaptions"]])
+    return captions.encode("utf-8")
 
 
-def insert_caption(youtube_, youTubeId_, name, content):
+def insert_caption(youtube_, youtube_id_, name, content):
     """
     Creates a caption from metadata and inserts it to YouTube.
 
     Args:
         youtube_: YouTube API client instance.
-        youTubeId_: the ID of video.
+        youtube_id_: the ID of video.
         name (str): caption name.
         content (str): caption content.
     """
@@ -160,7 +167,7 @@ def insert_caption(youtube_, youTubeId_, name, content):
             "snippet": {
                 "language": LANGUAGE_CODE,
                 "name": name,
-                "videoId": youTubeId_
+                "videoId": youtube_id_
             }
         },
         media_body=MediaInMemoryUpload(content)
@@ -180,11 +187,11 @@ def create_SSML_text(metadata_):
         str
     """
     text = ""
-    previousEnd = 0
+    previous_end = 0
     for caption in metadata_["youTubeCaptions"]:
-        silence = caption_time_to_milliseconds(caption["startTime"]) - previousEnd
-        text = "".join((text, "<break time='{}ms'/>".format(silence), caption["text"]))
-        previousEnd = caption_time_to_milliseconds(caption["endTime"])
+        silence = caption_time_to_milliseconds(caption["startTime"]) - previous_end
+        text = "".join((text, f"<break time='{silence}ms'/>", caption["text"]))
+        previous_end = caption_time_to_milliseconds(caption["endTime"])
     return "".join(("<speak>", text, "</speak>"))
 
 
@@ -226,14 +233,17 @@ if __name__ == '__main__':
 
     args = argparser.parse_args()
 
-    if not os.path.exists(args.file): exit("video file does not exist!")
-    if not os.path.exists(args.metadata): exit("metadata file does not exist!")
+    if not os.path.exists(args.file):
+        exit("video file does not exist!")
+    if not os.path.exists(args.metadata):
+        exit("metadata file does not exist!")
 
     # extract metadata
     metadata = parseIncludeStatements(args.metadata)
     metadata["tags"] = list(set(flatten(metadata["tags"])))
     tags_length = len(" ".join(metadata["tags"]))
-    if tags_length > 500: exit("Too Many Tags ({})! The limit is 500 Characters!".format(tags_length))
+    if tags_length > 500:
+        exit("Too Many Tags ({})! The limit is 500 Characters!".format(tags_length))
     metadata["privacyStatus"] = metadata.get("privacyStatus", args.privacyStatus)
     metadata["descriptionLinks"] = metadata.get("descriptionLinks", []) + DESCRIPTION_LINKS
     with open(DESCRIPTION_TEMPLATE) as f:
@@ -242,14 +252,15 @@ if __name__ == '__main__':
     youtube = get_youtube_api_client()
 
     if args.command == "update":
-        if not metadata.get("youTubeId"): exit("metadata does not contain youTubeId!")
+        if not metadata.get("youTubeId"):
+            exit("metadata does not contain youTubeId!")
         update_video(youtube, metadata)
 
     if args.command == "upload":
-        youTubeId = insert_video(youtube, args.file, metadata)["id"]
+        youtube_id = insert_video(youtube, args.file, metadata)["id"]
         caption_content = create_svb_caption_content(metadata)
-        insert_caption(youtube, youTubeId, metadata["title"], caption_content)
-        update_metadata(args.metadata, {"youTubeId": youTubeId})
+        insert_caption(youtube, youtube_id, metadata["title"], caption_content)
+        update_metadata(args.metadata, {"youTubeId": youtube_id})
 
     if args.command == "voiceover":
         ssml_text = create_SSML_text(metadata)

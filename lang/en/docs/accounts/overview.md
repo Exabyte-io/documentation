@@ -10,11 +10,11 @@ Accounts perform actions on the Entities stored in the corresponding collections
 
 ## [Types of Accounts](ui/switcher.md)
 
-It is important for the present discussion to draw a distinction between two different types of accounts: **Personal** accounts for individual users, and collaborative accounts with a membership comprising multiple users, referred to as **Organizational** or **Enterprise** (the two words are used interchangeably). The User can choose which account to use among all the available options through the Account Switcher, described [here](ui/switcher.md).
+It is important for the present discussion to draw a distinction between two different types of accounts: **Individual** accounts for users, and collaborative accounts with a membership comprising multiple users, referred to as **Organizational** or **Enterprise** (the two words are used interchangeably). The User can choose which account to use among all the available options through the Account Switcher, described [here](ui/switcher.md).
 
-### Personal Accounts
+### Individual Accounts
 
-To every user of our platform is associated a Personal Account, created at the moment of registration. The User is by definition always the sole member of their personal account, and consequently also the owner and administrator thereof.
+Every user of our platform is associated with an Individual Account created at the moment of registration. The User is, by definition, always the sole member of their individual account and also the owner and administrator thereof. We sometimes also refer to these accounts as "Personal" accounts too.
 
 ### [Organizations](../collaboration/organizations/overview.md)
 
