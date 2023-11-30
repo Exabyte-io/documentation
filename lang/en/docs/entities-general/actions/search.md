@@ -4,6 +4,10 @@ Click `Search` bar  <i class="zmdi zmdi-search zmdi-hc-border"></i> in the [acti
 
 Users can enter any text string in order to search for a desired entry in the corresponding [collection](../../accounts/collections.md). The search is performed as the user types, with no further action needed. To revert to the original list, the search string can be removed.
 
+The search feature not only accepts plain text input but also allows for the use of regular expressions (regex) for more advanced searching capabilities. By leveraging regex, users can perform pattern-based searches, which can be incredibly powerful for matching strings within the collection. An example is shown below searching for jobs containing "python" or "fixed".
+
+![Regex search](../../images/entities-general/regex-search.png "Regex Search")
+
 ## Search Criteria
 
 Searches can be based both upon the entity's name, or upon tags and other [descriptive metadata](../data.md#metadata) associated with it. In the specific case of Materials, the material's chemical formula can also be searched, for instance.
