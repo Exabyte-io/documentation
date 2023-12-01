@@ -252,7 +252,7 @@ simple and human-readable.
 
 #### Including GIFs
 
-GIFs should be stored in the same image folders as normal images (see above). Including a GIF image is done as follows.
+GIFs should be stored in the same image folders as normal images (see above) with a suggested frame rate of 15 (fps). Including a GIF image is done as follows.
 
 ```text
 <img data-gifffer="/images/AddCredit.gif" />

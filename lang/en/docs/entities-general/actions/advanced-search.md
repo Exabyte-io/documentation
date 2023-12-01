@@ -4,7 +4,7 @@
 
 ## Activate Advanced Search
 
-Click on the `Advanced Search` tool <i class="zmdi zmdi-search-for zmdi-hc-border"></i> offered in the top-right actions toolbar of the [Explorer Interface](../../entities-general/ui/explorer.md#action-related-components) in order to activate the functionality and view the search query builder.
+Click on the advanced search tool with the icon <i class="zmdi zmdi-tune zmdi-hc-border"></i> labeled `Advanced` offered in the top toolbar of the [Explorer Interface](../../entities-general/ui/explorer.md#action-related-components) to view the search query builder.
 
 ## Query Builder
 
@@ -12,15 +12,19 @@ Advanced search functionality is implemented through a flexible "Query Builder":
 
 ## Rules
 
-Each Rule is composed of three successive entries. First, an entity-related property should be selected from the initial drop-down menu. Secondly, a logical operator should be chosen from the available list in the central drop-down menu. Finally, a search string or numerical value corresponding to the sought property can be entered in the third and final text field. 
+Each Rule is composed of three successive entries. First, an entity-related property should be selected from the initial drop-down menu. Secondly, a logical operator should be chosen from the available list in the central drop-down menu. Finally, a search string or numerical value corresponding to the sought property can be entered in the third and final text field.
 
 ## Execute Query
 
-Once all the logical statements and operators have been inserted as part of the desired overall flow, the resulting advanced search can be executed by clicking `Search`. The corresponding search results are then displayed. 
+Once all the logical statements and operators have been inserted as part of the desired overall flow, the resulting advanced search can be executed by clicking `Apply`. The corresponding search results are then displayed.
+
+## Save Query
+
+If you want to be reuse a query you've built, you can save it by clicking the `Save Search` button in the query builder and providing a name when prompted. You can select from these saved searches by selecting the `saved searches` dropdown in the search toolbar.
 
 ## Reset
 
-The entire logical flow can be reset using `Reset` button.
+The entire logical flow can be reset using `Clear` button in the query builder.
 
 ## Examples
 
