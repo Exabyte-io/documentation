@@ -148,6 +148,7 @@ nav:
                 - Electronic density mesh:                 tutorials/dft/electronic/electronic-density-mesh.md
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
                 - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
+                - DFT+U and Hubbard parameter calculation: tutorials/dft/electronic/hubbard.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
