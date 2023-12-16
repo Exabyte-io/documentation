@@ -1,0 +1,20 @@
+{
+    "descriptionLinks": [
+        "DFT+U and Hubbard parameter Calculation in Quantum Espresso: https://docs.mat3ra.com/tutorials/dft/electronic/hubbard/"
+    ],
+    "description": "In this tutorial, we demonstrate calculation of Hubbard U parameters from the first principles, using Quantum Espresso hp.x implementation of linear response theorem. First we create a workflow unit to run DFT+U calculation, then we add another unit to run hp.x calculation. We have chosen FeO as our material for this example. We first run pw scf calculation using default values U values (1 eV) for Fe 3d and O 2p orbitals. After the job is finished, the obtained Hubbard parameters are shown in the Results tab of our web interface.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "correlation",
+        "Hubbard"
+    ],
+    "title": "Mat3ra Tutorial: DFT+U and Hubbard parameter Calculation in Quantum Espresso"
+}
