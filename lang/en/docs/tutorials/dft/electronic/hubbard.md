@@ -1,13 +1,8 @@
 # DFT+U and Hubbard parameter calculation in Quantum Espresso
 
-The electronic structure of materials consisting of transition metals (which
-have partially filled $d$ or $f$ electrons) is not accurately described by
-standard DFT due to strong electron-electron interaction. The effect of
-electronic correlation must be taken into account for these materials, which is
-leads to DFT+U formalism.
-
-Below we describe how we can perform DFT+U calculation using Quantum Espresso
-simulation engine in our web platform.
+In this tutorial we demonstrate how to perform DFT+U calculation, followed by
+calculation of Hubbard parameter using Quantum Espresso simulation engine on our
+web platform.
 
 !!!warning
     Here we will follow the latest DFT+U syntax and method introduced in Quantum
@@ -41,7 +36,7 @@ important settings.
 In the below animation, we go through an example calculation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Uh9OWJHKlQY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## References
