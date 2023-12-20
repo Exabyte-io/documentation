@@ -1,5 +1,5 @@
 [build]
-  command = "bash ./scripts/setup-ubuntu.sh && mkdocs build"
+  command = "bash ./scripts/netlify-build.sh"
   publish = "site/"
 
 [build.environment]
