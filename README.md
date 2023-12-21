@@ -106,7 +106,7 @@ Leave more than one empty line (2-3) when "coming back" to higher-level header f
 
 #### Admonition Styles
 
-There are multiple [admonition](https://squidfunk.github.io/mkdocs-material/extensions/admonition/) classes available in MKDocs: tip (green), warning (orange), error (red), note (blue), and many others. To insert them in documentation pages, enter them with the following style:
+There are multiple [admonition](https://squidfunk.github.io/mkdocs-material/reference/admonitions/) classes available in MKDocs: tip (green), warning (orange), error (red), note (blue), and many others. To insert them in documentation pages, enter them with the following style:
 
 ```text
 !!!tip "Unused credits"

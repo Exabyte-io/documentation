@@ -24,15 +24,21 @@ We review the steps involved in the calculation and visualization of the [Fermi 
 
 ## [HSE Calculations](hse-vasp-bg.md)
 
-[In other tutorial](hse-vasp-bg.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation with [VASP](../../../software-directory/modeling/vasp/overview.md). 
+[In other tutorial](hse-vasp-bg.md), we demonstrate how the use of the hybrid HSE functional can yield more accurate results for the example case of a band-gap computation with [VASP](../../../software-directory/modeling/vasp/overview.md).
 
 A similar Band Gap calculation with Quantum ESPRESSO is [available here](hse-qe-bg.md). And for the Band Structure - in [this tutorial](hse-qe-bs.md).
 
 ## GW Calculations
 
 This [tutorial](gw-vasp-bg.md) illustrates how the results for the Band Gap can be more accurate through the use of the [GW Approximation](../../../models-directory/dft/notes.md#the-gw-approximation).
- 
+
 ## Valence Band Offset
 
 We show how to calculate the [valence band offset](../../../properties-directory/scalar/valence-band-offset.md) for a
 heterostructure using the potential lineup method in [this tutorial](valence-band-offset.md).
+
+## DFT+U calculation and Hubbard Parameters
+
+In [this tutorial](hubbard.md) we show how to perform DFT+U calculation in
+Quantum Espresso. We also show calculation of Hubbard parameters from the
+*first principles*.
