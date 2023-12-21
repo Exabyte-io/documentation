@@ -51,7 +51,7 @@ def get_text_to_speech_api_client():
     """
     Returns TextToSpeech API client.
     """
-    return texttospeech.TextToSpeechClient.from_service_account_file(SERVICE_ACCOUNT_KEY_FILE.name)
+    return texttospeech.TextToSpeechClient.from_service_account_file(SERVICE_ACCOUNT_KEY_FILE)
 
 
 def get_youtube_api_client():
