@@ -1,22 +1,25 @@
 # DFT+U and Hubbard parameter calculation in Quantum Espresso
 
-In this tutorial we demonstrate how to perform DFT+U calculation, followed by
-calculation of Hubbard parameter using Quantum Espresso on our web platform.
+In this tutorial, we demonstrate how to perform DFT+U calculation, followed by
+calculation of Hubbard parameters using Quantum Espresso on our web platform.
 
+## Create DFT+U workflow
 
-### Create DFT+U workflow
+First, we need to create PWscf workflow with DFT+U enabled. 
 
-First, we need to create PWscf workflow with DFT+U enabled. A PWscf calculation
-(using `pw.x`) is prerequisite for Hubbard parameter (using `hp.x`) calculation.
+### Add pw.x unit
 
-- Navigate to workflows page from the sidebar, and create new workflow. Expand
+A PWscf calculation
+(using `pw.x`) is a prerequisite for the Hubbard parameter (using `hp.x`) calculation.
+
+- Navigate to the workflows page from the sidebar and create a new workflow. Expand
 details section and select Quantum Espresso version `7.2` from the drop-down.
 
 ![Navigation sidebar](/images/tutorials/hubbard/hubbard-01-navigation-sidebar.webp "Navigation sidebar")
 
 ![Select application version and build](/images/tutorials/hubbard/hubbard-02-select-ver-build.webp "Select application version and build")
 
-- Click **Edit** button on the default **pw_scf** workflow unit. Expand details
+- Click **Edit** button on the default **pw_scf** workflow unit. Expand the details
 pane in the unit modal, and select **pw_scf_dft_u** flavor/ template. Close the
 unit modal.
 
@@ -26,7 +29,7 @@ unit modal.
     Here we follow the latest DFT+U syntax and method introduced in Quantum
     Espresso version `7.1`. The new template (syntax) **pw_scf_dft_u** is only
     available to Quantum Espresso version `7.1` or above. If the user would like
-    to use old syntax, please select Quantum Espresso version `7.0` or below,
+    to use old syntax, please select Quantum Espresso version `7.0` or below
     and use **pw_scf_dft_u_legacy**.
 
 
@@ -35,7 +38,7 @@ unit modal.
 Hubbard parameters can be obtained from the *first principles*. We will use
 Quantum Espresso `hp.x` implementation of Linear Response theorem[^1].
 
-We can add `hp.x` workflow to previous PWscf (DFT+U) workflow by adding a new
+We can add the `hp.x` workflow to the previous PWscf (DFT+U) workflow by adding a new
 execution unit. Click the edit unit button on the second unit, and select `hp.x`
 executable. The `q`-grid for `hp.x` can be modified in the important settings
 tab.
@@ -43,12 +46,14 @@ tab.
 ![Add new unit](/images/tutorials/hubbard/hubbard-04-add-new-unit.webp "Add new unit")
 
 
-### Create and submit job
+## Create and submit job
 
-- Navigate to jobs page via sidebar menu, and create new job.
-- Select material, here we have selected FeO. You can import new material from
+After the above:
+
+- Navigate to the jobs page via the sidebar menu and create a new job.
+- Select material. Here, we have selected FeO. You can import new material from
 banks or upload structure files.
-- Select workflow, here we select the Hubbard workflow that we just created.
+- Select workflow, here, we select the Hubbard workflow that we just created.
 
 ![Select material and workflow](/images/tutorials/hubbard/hubbard-05-select-mat-workflow.webp "Select material and workflow")
 
@@ -61,23 +66,25 @@ Hubbard card.
 
 ![Edit Hubbard card](/images/tutorials/hubbard/hubbard-07-card-values.webp "Edit Hubbard card")
 
-- Go to **Compute** tab, and select number of processors and other compute
+- Go to **Compute** tab, and select the number of processors and other compute
 parameters.
 
 ![Set compute parameters](/images/tutorials/hubbard/hubbard-08-compute-parameters.webp "Set compute parameters")
 
 !!!warning
     As of 20/Dec/2023, there is a bug in our platform that prevents running MPI
-    jobs in single processor when Intel (default) build of Quantum Espresso is
-    used. Please select at least 2 processors/ cores if you are using Intel
-    build as a workaround. Alternatively, you may use GNU build of Quantum
+    jobs in a single processor when the Intel (default) build of Quantum Espresso is
+    used. Please select at least two processors/ cores when using Intel
+    build as a workaround. Alternatively, you may use the GNU build of Quantum
     Espresso.
 
-- Now we are ready to submit the job for running the calculation.
+- Now, we are ready to submit the job for running the calculation.
 
 ![Results](/images/tutorials/hubbard/hubbard-09-result.webp "Results")
 
 Once the job is finished, the Hubbard U values are shown in the **Results** tab.
+
+## Step-by-step screenshare video
 
 In the below animation, we go through an example calculation.
 
