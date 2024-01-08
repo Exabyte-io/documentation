@@ -17,6 +17,8 @@ Open the 'Import from Standata' dialog by going to `Input/Output` > `Import from
 - Select 'Graphene' and 'Ni' from the materials list.
 - Click 'Submit' to import these materials into the Materials Designer session.
 
+<img src="/images/tutorials/interface_with_python/open_standata.png" />
+
 Default Material Silicon should be removed from the session.
 
 ## Use Python Transformation Dialog
