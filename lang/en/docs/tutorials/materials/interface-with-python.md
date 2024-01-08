@@ -42,6 +42,50 @@ In the Python code area:
     - Superlattice matrices which should be precalculated for a good lattice match. For Graphene on Ni(111) matrix [[1,0], [0,1]] for both materials already provides a good match since lattices are of the same type (hexagonal) and have similar vectors.
     - Flag **`scale_layer_to_fit`** scales 2D layer superlattice and basis to fit the superlattice of substrate. This is useful when the layer is not a perfect match to the substrate. In this example, we will leave it at default value of `False`. 
 
+```python
+# Indices identify the substrate and layer from the list of input materials under `materials_in` in globals().
+SUBSTRATE_INDEX = 0
+LAYER_INDEX = 1
+
+SETTINGS = {
+    "substrate_surface": {
+        # Set Miller indices as a tuple for the resulting substrate surface.
+        "miller_indices": (1, 1, 1),
+        # The vacuum space (in Ångströms) added to the surface in the direction perpendicular to the surface.
+        "vacuum": 5,
+        # The number of atomic layers in the resulting substrate.
+        "number_of_layers": 3,
+        # The transformation matrix for the surface. Format is: [[v1x, v1y], [v2x, v2y]].
+        # fmt: off
+        "superlattice_matrix": [
+            [1, 0],
+            [0, 1]
+        ],
+        # fmt: on
+    },
+    "layer_surface": {
+        # Set Miller indices as a tuple for the resulting layer surface: (0,0,1) for 2D material
+        "miller_indices": (0, 0, 1),
+        # The vacuum space (in Ångströms) added to the surface in the direction perpendicular to the surface.
+        "vacuum": 5,
+        # The number of atomic layers in the resulting substrate: 1 for 2D material
+        "number_of_layers": 1,
+        # The transformation matrix for the surface. Format is: [[v1x, v1y], [v2x, v2y]].
+        # fmt: off
+        "superlattice_matrix": [
+            [1, 0],
+            [0, 1]
+        ],
+        # fmt: on
+    },
+    "interface": {
+        "distance": 3.0,
+    },
+    # If True the layer cell and basis vectors will be scaled to fit the substrate cell.
+    # Mind the strain that is introduced by this operation.
+    "scale_layer_to_fit": False,
+}
+```
 - Click `Run All` to process the transformation.
 - The strain matrix will appear in the output, providing insight into the lattice deformation.
 - `Output Materials` will update with the newly created structure.
