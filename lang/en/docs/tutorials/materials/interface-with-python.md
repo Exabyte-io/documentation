@@ -39,7 +39,7 @@ In the Python code area:
     - Miller indices for the substrate and layer, the default value is (1,1,1) for substrate and (0,0,1) for 2D layer.
     - Vacuum space and number of layers, we can leave it at default values.
     - The distance between the substrate and the layer in Angstroms.
-    - Superlattice matrices which should be precalculated for a good lattice match. For Graphene on Ni(111) [[1,1], [1,1]] already provides a good match.
+    - Superlattice matrices which should be precalculated for a good lattice match. For Graphene on Ni(111) matrix [[1,0], [0,1]] for both materials already provides a good match since lattices are of the same type (hexagonal) and have similar vectors.
     - Flag **`scale_layer_to_fit`** scales 2D layer superlattice and basis to fit the superlattice of substrate. This is useful when the layer is not a perfect match to the substrate. In this example, we will leave it at default value of `False`. 
 
 - Click `Run All` to process the transformation.
