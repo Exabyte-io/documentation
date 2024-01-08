@@ -25,9 +25,12 @@ In this example, we will import Graphene and Ni from Standata.
 ## Use Python Transformation Dialog
 
 Navigate to `Advanced` > `Python Transformation` from the main interface.
+<img src="/images/tutorials/interface_with_python/open_python_transformation.png" alt="Open Python Transformation Dialog"/>
 
 - Choose the transformation titled “Place a 2D materials Layer on a Surface”.
-- Ensure 'Ni' is set as the substrate and 'Graphene' as the layer within the transformation settings.
+<img src="/images/tutorials/interface_with_python/select_transformation.png" alt="Select Transformation"/>
+- Select Ni and Graphene from the materials list. The order of selection can be easily accounted for later, but the default expected order is substrate first and then the layer.
+<img src="/images/tutorials/interface_with_python/select_materials.png" alt="Select Materials"/>
 
 In the Python code area:
 
