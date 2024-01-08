@@ -89,6 +89,8 @@ SETTINGS = {
 - Click `Run All` to process the transformation.
 - The strain matrix will appear in the output, providing insight into the lattice deformation.
 - `Output Materials` will update with the newly created structure.
+<img src="/images/tutorials/interface_with_python/after_run.png" alt="Results of code execution: strain matrix and output materials"/>
+
 - Review the resulting strain matrix, if satisfied, submit the form to add the interface to your materials collection.
 
 ## **Key Considerations**
