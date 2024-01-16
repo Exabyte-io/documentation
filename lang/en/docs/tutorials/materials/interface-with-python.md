@@ -103,3 +103,5 @@ SETTINGS = {
 - Review the resulting strain matrix, if satisfied, submit the form to add the interface to your materials collection.
 - Verify the final structure using the Orthographic camera in the 3D Viewer to ensure proper alignment and centrality of the layer over the substrate.
 
+Resulting Material with repeated 3 times in A and B directions unit cell:
+<img src="/images/tutorials/interface_with_python/resulting_material.png" alt="Graphene on Ni interface"/>
