@@ -33,8 +33,8 @@ Navigate to `Advanced` > `Python Transformation` from the main interface.
 <img src="/images/tutorials/interface_with_python/select_materials.png" alt="Select Materials"/>
 
 !!!warning "Key Considerations"
-  The user is responsible for calculating the appropriate superlattice matrices to ensure realistic interfaces.
-  Excessive straining during the scaling of the layer can result in unrealistic deformations, so use **`scale_layer_to_fit`** cautiously.
+    The user is responsible for calculating the appropriate superlattice matrices to ensure realistic interfaces.
+    Excessive straining during the scaling of the layer can result in unrealistic deformations, so use **`scale_layer_to_fit`** cautiously.
 
 
 In the Python code area:
