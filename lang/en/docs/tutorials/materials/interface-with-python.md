@@ -36,7 +36,6 @@ Navigate to `Advanced` > `Python Transformation` from the main interface.
     The user is responsible for calculating the appropriate superlattice matrices to ensure realistic interfaces.
     Excessive straining during the scaling of the layer can result in unrealistic deformations, so use **`scale_layer_to_fit`** cautiously.
 
-
 In the Python code area:
 
 - Set the substrate index and layer index corresponding to the Selected Materials. In this example, the substrate (Ni) should be at index 0 and the layer (Graphene) at index 1.
@@ -46,6 +45,9 @@ In the Python code area:
     - The distance between the substrate and the layer in Angstroms.
     - Superlattice matrices which should be precalculated for a good lattice match. For Graphene on Ni(111) matrix [[1,0], [0,1]] for both materials already provides a good match since lattices are of the same type (hexagonal) and have similar vectors.
     - Flag **`scale_layer_to_fit`** scales 2D layer superlattice and basis to fit the superlattice of substrate. This is useful when the layer is not a perfect match to the substrate. In this example, we will leave it at default value of `False`. 
+
+<details>
+<summary>Click to view the Python code</summary>
 
 ```python
 # Indices identify the substrate and layer from the list of input materials under `materials_in` in globals().
@@ -91,6 +93,8 @@ SETTINGS = {
     "scale_layer_to_fit": False,
 }
 ```
+</details>
+
 - Click `Run All` to process the transformation.
 - The strain matrix will appear in the output, providing insight into the lattice deformation.
 - `Output Materials` will update with the newly created structure.
