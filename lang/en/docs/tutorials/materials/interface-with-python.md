@@ -1,12 +1,12 @@
 # Create an Interface with Python Transformation
 
-In this tutorial, you will learn how to create an interface between two materials using the Python Transformation feature. Specifically, we will explore the creation of an interface between Graphene and Ni(111).
+In this tutorial, we create an interface between two materials using the Python Transformation feature. Specifically, we will explore the creation of an interface between Graphene and Ni(111).
 
-## Open Materials Designer
+## Step 0: Open Materials Designer
 
 We start with [opening](../../entities-general/actions/create.md) an instance of the [Materials Designer Interface](../../materials-designer/overview.md) for creating and designing new [Materials structures](../../materials/overview.md) on our platform.
 
-## Import Materials from Standata
+## Step 1: Import Materials
 
 In order to use Graphene and Ni, the user should first [import](../../materials-designer/header-menu/input-output/import.md) sample crystalline structures of the two respective materials into the current Materials Designer session, from the account-owned [collection](../../accounts/collections.md) of materials.
 
@@ -22,7 +22,7 @@ In this example, we will import Graphene and Ni from Standata.
 - Graphene and Ni should now be available in the materials list.
 <img src="/images/tutorials/interface_with_python/graphene_and_ni_imported.png" alt="Gr and Ni available in materials list"/>
 
-## Use Python Transformation Dialog
+## Step 2: Use Python Transformation Dialog
 
 Navigate to `Advanced` > `Python Transformation` from the main interface.
 <img src="/images/tutorials/interface_with_python/open_python_transformation.png" alt="Open Python Transformation Dialog"/>
@@ -31,6 +31,11 @@ Navigate to `Advanced` > `Python Transformation` from the main interface.
 <img src="/images/tutorials/interface_with_python/select_transformation.png" alt="Select Transformation"/>
 - Select Ni and Graphene from the materials list. The order of selection can be easily accounted for later, but the default expected order is substrate first and then the layer.
 <img src="/images/tutorials/interface_with_python/select_materials.png" alt="Select Materials"/>
+
+!!!warning "Key Considerations"
+  The user is responsible for calculating the appropriate superlattice matrices to ensure realistic interfaces.
+  Excessive straining during the scaling of the layer can result in unrealistic deformations, so use **`scale_layer_to_fit`** cautiously.
+
 
 In the Python code area:
 
@@ -92,9 +97,5 @@ SETTINGS = {
 <img src="/images/tutorials/interface_with_python/after_run.png" alt="Results of code execution: strain matrix and output materials"/>
 
 - Review the resulting strain matrix, if satisfied, submit the form to add the interface to your materials collection.
-
-## **Key Considerations**
-
-- The user is responsible for calculating the appropriate superlattice matrices to ensure realistic interfaces.
-- Excessive straining during the scaling of the layer can result in unrealistic deformations, so use **`scale_layer_to_fit`** cautiously.
 - Verify the final structure using the Orthographic camera in the 3D Viewer to ensure proper alignment and centrality of the layer over the substrate.
+
