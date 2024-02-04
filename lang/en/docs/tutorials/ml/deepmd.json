@@ -1,0 +1,180 @@
+{
+    "descriptionLinks": [
+        "Large scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS: https://docs.mat3ra.com/tutorials/ml/deepmd/"
+    ],
+    "description": "In this tutorial, we will explain following steps: (1) Ab-initio molecular dynamics calculation using Quantum ESPRESSO Car-Parrinello (cp.x) program, (2) prepare Quantum ESPRESSO output files for DeePMD calculation using dpdata, (3) run DeePMD training, and freeze results, (4) transform Quantum ESPRESSO structure into LAMMPS format, (5) finally, run classical molecular dynamics calculation using LAMMPS based on the potential and force-fields predicted by DeePMD.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "deepmd",
+        "molecular-dynamics",
+        "lammps",
+        "cp"
+    ],
+    "title": "Mat3ra Tutorial: Large scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS",
+    "youTubeCaptions": [
+        {
+            "text": "In this tutorial, we will demonstrate how to perform large-scale molecular dynamics simulation using density functional theory, deep M D, and lammps in our platform.",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:09.000"
+        },
+        {
+            "text": "First, <break time='0.5' /> we will perform ab-initio molecular dynamics calculation using quantum espresso Car-Parrinello program, Then we need to prepare quantum espresso output files for deep M D, followed by deep M D training and freeze the output in a file. We also need to transform the quantum espresso structure into lammps format. Finally, we will run classical molecular dynamics calculation using lammps based on the potential and force fields predicted by deep M D model.",
+            "startTime": "00:00:9.250",
+            "endTime": "00:00:39.00"
+        },
+        {
+            "text": "We will create our own structure for this demonstration. Navigate to the materials tab, and click create. We clone the default structure and modify it. We will use water molecule with simple cubic lattice. Set atomic positions and lattice parameters. User can create more complex structure the same way. Save the structure for next steps.",
+            "startTime": "00:00:40.00",
+            "endTime": "00:01:00.00"
+        },
+        {
+            "text": "Next, navigate to workflows page and click create new workflow.",
+            "startTime": "00:01:02.00",
+            "endTime": "00:01:07.00"
+        },
+        {
+            "text": "Click edit unit and select executable to C P dot X.",
+            "startTime": "00:01:12.00",
+            "endTime": "00:01:16.00"
+        },
+        {
+            "text": "We will rename the unit to cp so that the base name of various output files remains the same.",
+            "startTime": "00:01:17.00",
+            "endTime": "00:01:21.00"
+        },
+        {
+            "text": "User can directly modify various parameters in the template or add new parameters as needed.",
+            "startTime": "00:01:22.00",
+            "endTime": "00:01:30.00"
+        },
+        {
+            "text": "We will be using quantum espresso version 7.3 and GNU build.",
+            "startTime": "00:01:34.00",
+            "endTime": "00:01:38.00"
+        },
+        {
+            "text": "Then, navigate to important settings tab. Since we are using default ultra soft pseudo potential, set charge density cutoff eight times that of energy cutoff. For our example calculation to converge, we also need to set smaller time step.",
+            "startTime": "00:01:42.00",
+            "endTime": "00:01:55.00"
+        },
+        {
+            "text": "Let's call our workflow molecular dynamics <break time='1.0' /> and sub-workflow C P.",
+            "startTime": "00:01:56.00",
+            "endTime": "00:02:05.00"
+        },
+        {
+            "text": "Add new sub-workflow",
+            "startTime": "00:02:06.00",
+            "endTime": "00:02:10.00"
+        },
+        {
+            "text": "Let's call it deep M D.",
+            "startTime": "00:02:14.00",
+            "endTime": "00:02:16.00"
+        },
+        {
+            "text": "Select deep M D application.",
+            "startTime": "00:02:18.00",
+            "endTime": "00:02:19.00"
+        },
+        {
+            "text": "Add new unit.",
+            "startTime": "00:02:20.00",
+            "endTime": "00:02:22.00"
+        },
+        {
+            "text": "In the first unit, we will use dp data to load the C P output files, split the available frames into training and validation sets. Here, user can change the ratio of set sizes.",
+            "startTime": "00:02:22.00",
+            "endTime": "00:02:28.00"
+        },
+        {
+            "text": "Add next unit.",
+            "startTime": "00:02:33.00",
+            "endTime": "00:02:35.00"
+        },
+        {
+            "text": "This unit will run deep M D training. Specify the descriptor and various model parameters here.",
+            "startTime": "00:02:36.00",
+            "endTime": "00:02:40.00"
+        },
+        {
+            "text": "Add another unit to transform quantum espresso structure into lammps format.",
+            "startTime": "00:02:45.00",
+            "endTime": "00:02:50.00"
+        },
+        {
+            "text": "Here, one can build super cells or extend the structure if required.",
+            "startTime": "00:02:54.00",
+            "endTime": "00:02:55.00"
+        },
+        {
+            "text": "Add final unit to run classical molecular dynamics calculation using lammps program.",
+            "startTime": "00:03:00.00",
+            "endTime": "00:03:05.00"
+        },
+        {
+            "text": "Adjust lammps parameters here as required.",
+            "startTime": "00:03:08.00",
+            "endTime": "00:03:10.00"
+        },
+        {
+            "text": "Save workflow and exit.",
+            "startTime": "00:03:12.00",
+            "endTime": "00:03:15.00"
+        },
+        {
+            "text": "Navigate to job designer page.",
+            "startTime": "00:03:18.00",
+            "endTime": "00:03:20.00"
+        },
+        {
+            "text": "Click create new job.",
+            "startTime": "00:03:20.00",
+            "endTime": "00:03:24.00"
+        },
+        {
+            "text": "Select material.",
+            "startTime": "00:03:25.00",
+            "endTime": "00:03:28.00"
+        },
+        {
+            "text": "Select workflow.",
+            "startTime": "00:03:29.00",
+            "endTime": "00:03:34.00"
+        },
+        {
+            "text": "Adjust compute parameters as desired.",
+            "startTime": "00:03:40.00",
+            "endTime": "00:03:42.00"
+        },
+        {
+            "text": "Save and exit job.",
+            "startTime": "00:03:42.00",
+            "endTime": "00:03:42.00"
+        },
+        {
+            "text": "Submit job to run calculation.",
+            "startTime": "00:03:44.00",
+            "endTime": "00:03:46.00"
+        },
+        {
+            "text": "Once the job is completed, navigate to files tab.",
+            "startTime": "00:03:46.00",
+            "endTime": "00:03:48.00"
+        },
+        {
+            "text": "Various output files are placed here. These output files can be used for further analysis. For example, lammps output is saved in system dot dump. <break time='1.0' /> Thank you for watching this tutorial.",
+            "startTime": "00:03:48.00",
+            "endTime": "00:03:50.00"
+        }
+    ],
+    "youTubeId": "vw3z4XwYVUw"
+}
