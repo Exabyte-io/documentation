@@ -1,6 +1,8 @@
-# Molecular dynamic using DeePMD
+# DeePMD Molecular dynamics simulation
 
-In this tutorial, we will walk you through the following steps:
+In this tutorial, we demonstrate how to perform large-scale molecular dynamic
+simulation using Density Functional Theory, DeePMD, and LAMMPS in Mat3ra web
+platform. The workflow consists of the following steps:
 
 1. Perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
 Car-Parrinello (`cp.x`) code
@@ -58,5 +60,5 @@ our platform to further analyze output files.
 In the below animation, we walk you through the whole workflow process.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/33PykNO8QlQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/vw3z4XwYVUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
