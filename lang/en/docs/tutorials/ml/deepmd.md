@@ -1,11 +1,11 @@
 # DeePMD Molecular dynamics simulation
 
-In this tutorial, we demonstrate how to perform large-scale molecular dynamic
+In this tutorial, we demonstrate how to perform large-scale molecular dynamics
 simulation using Density Functional Theory, DeePMD, and LAMMPS in Mat3ra web
 platform. The workflow consists of the following steps:
 
 1. Perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
-Car-Parrinello (`cp.x`) code
+Car-Parrinello (`cp.x`) program
 2. Prepare Quantum ESPRESSO output files for DeePMD using `dpdata`, split data
 set into training and validation sets
 3. Train DeePMD model, and freeze training results
@@ -13,6 +13,7 @@ set into training and validation sets
 5. Perform classical molecular dynamics simulation using LAMMPS based on
 potential and force fields predicted by DeePMD.
 
+![DeePMD workflow](/images/tutorials/deepmd/deepmd-workflow.webp "DeePMD workflow")
 
 ## (1) CP calculation
 
@@ -25,19 +26,20 @@ on the template via edit unit.
 
 For this demonstration, we create a new structure from the scratch using
 material designer. We use water molecule with simple cubic structure.
+Alternatively, user can import CIF or POSCAR structure files.
 
 
 ## (2) Prepare data sets for DeePMD
 
-We will Python script and `dpdata` to load the Quantum ESPRESSO output obtained
-in the previous step. We will split the available number of molecular dynamics
-steps into training and validation sets (80% and 20%, respectively).
+We will use Python script and `dpdata` to load the Quantum ESPRESSO output files
+obtained in the previous step. We will split the available number of molecular
+dynamics steps into training and validation sets (80% and 20%, respectively).
 
 
 ## (3) Run DeePMD model
 
 We need to specify the descriptor and related model parameters here. After the
-training, the output is saved into `graph.pb`.
+training step is completed, the output is saved into `graph.pb` file.
 
 
 ## (4) Prepare LAMMPS structure
@@ -50,15 +52,18 @@ or hardcode the structure and save it to `system.lmp` file.
 
 ## (5) LAMMPS calculation
 
-Finally, we perform classical molecular dynamics calculation using LAMMPS. The
-output is written to `system.dump`. Various output files are placed in the
-**Files** tab of the jobs page. Users may launch a Jupyter Notebook session in
-our platform to further analyze output files.
+Finally, we perform classical molecular dynamics calculation using LAMMPS.
+LAMMPS parameters can be adjusted in `in.lammps` input template. We use deepmd
+pair style. The LAMMPS output is written to `system.dump`. Various output files
+are placed in the **Files** tab of the jobs page once calculation is completed.
+Users may launch a Jupyter Notebook session in our platform to further analyze
+output files.
+
 
 ## Step-by-step screenshare video
 
 In the below animation, we walk you through the whole workflow process.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/vw3z4XwYVUw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/daTwJyMPIvE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>

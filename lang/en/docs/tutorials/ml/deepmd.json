@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Large scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS: https://docs.mat3ra.com/tutorials/ml/deepmd/"
+        "Large-scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS: https://docs.mat3ra.com/tutorials/ml/deepmd/"
     ],
     "description": "In this tutorial, we will explain following steps: (1) Ab-initio molecular dynamics calculation using Quantum ESPRESSO Car-Parrinello (cp.x) program, (2) prepare Quantum ESPRESSO output files for DeePMD calculation using dpdata, (3) run DeePMD training, and freeze results, (4) transform Quantum ESPRESSO structure into LAMMPS format, (5) finally, run classical molecular dynamics calculation using LAMMPS based on the potential and force-fields predicted by DeePMD.",
     "tags": [
@@ -18,7 +18,7 @@
         "lammps",
         "cp"
     ],
-    "title": "Mat3ra Tutorial: Large scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS",
+    "title": "Mat3ra Tutorial: Large-scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS",
     "youTubeCaptions": [
         {
             "text": "In this tutorial, we will demonstrate how to perform large-scale molecular dynamics simulation using density functional theory, deep M D, and lammps in our platform.",
@@ -61,7 +61,7 @@
             "endTime": "00:01:38.00"
         },
         {
-            "text": "Then, navigate to important settings tab. Since we are using default ultra soft pseudo potential, set charge density cutoff eight times that of energy cutoff. For our example calculation to converge, we also need to set smaller time step.",
+            "text": "Then, navigate to important settings tab. Since we are using default ultra soft pseudo potential, set charge density cut off eight times that of energy cut off. For our example calculation to converge, we also need to set smaller time step.",
             "startTime": "00:01:42.00",
             "endTime": "00:01:55.00"
         },
@@ -176,5 +176,5 @@
             "endTime": "00:03:50.00"
         }
     ],
-    "youTubeId": "vw3z4XwYVUw"
+    "youTubeId": "daTwJyMPIvE"
 }
