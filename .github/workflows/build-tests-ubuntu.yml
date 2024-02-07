@@ -14,9 +14,9 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-20.04, ubuntu-22.04]
-        python-version: ["3.7", "3.8", "3.9"]
+        python-version: ["3.8", "3.9"]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: setup python 3
         uses: actions/setup-python@v4
         with:
