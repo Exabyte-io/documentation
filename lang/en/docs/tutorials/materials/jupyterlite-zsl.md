@@ -37,3 +37,13 @@ Navigate to `Advanced` > `JupyterLite Session` from the main interface.
 - Set Input Parameters for substrate and layer materials, resulting interface and the algorithm. (In this case, Ni regarded as the substrate and Graphene as the layer. Since unit lattices of Graphene and Ni(111) plane are close, we should reduce the maximum search area for superlattice matching to 100 to speed up the search)
 - Click `Run` > `Run All` to run cells and wait for the results to appear. ()
 
+## Step 4: Analyze the Results
+- Output of cell under "2. Install Packages" should display a list of successfully installed packages
+- Output of cell under "3.2. Print out the interfaces and terminations" should display the number of possible terminations (in this case 1) and the number of interfaces for each termination (in this case 1211)
+- Output of cell under "4.2. Print out interfaces with lowest strain for each termination" should display the strain and number of atoms for the interface with the lowest strain for each termination.
+- Output of cell under "5. Plot the results" should display a plot of the strain vs number of atoms for each interface. Each point on the plot represents an interface with data for termination, interface index, strain and number of atoms.
+
+## Step 5: Select the Interfaces to Return
+- Select the termination for the interface by setting variable `termination_index` to respective value (0 by default), and then the number of interfaces with lowest strain to return (by default set to 1).
+- Verify that Output Materials dropdown contains the selected interface(s).
+- Click "Submit" to pass materials to the Materials Designer session and take it from there.
