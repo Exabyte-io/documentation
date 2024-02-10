@@ -173,7 +173,7 @@ nav:
             - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
             - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
             - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
-            - Interface:                             tutorials/materials/slabs-interface.md
+            - Interface with 3D editor:              tutorials/materials/slabs-interface.md
             - Interface with Python:                 tutorials/materials/interface-with-python.md
             - Interface with minimal strain:         tutorials/materials/jupyterlite-zsl.md
 
