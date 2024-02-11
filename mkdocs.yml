@@ -132,7 +132,7 @@ nav:
                 - Unsupervised Learning with Clustering:  tutorials/python-ml/train-clustering-model.md
                 - Training a Classifier:                  tutorials/python-ml/train-classification-model.md
                 - Predicting with a Classifier:           tutorials/python-ml/predict-with-classification.md
-            - DeePMD (molecular dynamics):                tutorials/ml/deepmd.md
+            - DeePMD (molecular dynamics):                tutorials/ml/deepmd-mlff-with-cp-and-lammps.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md

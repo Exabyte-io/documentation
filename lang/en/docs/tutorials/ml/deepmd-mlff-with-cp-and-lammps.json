@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Large-scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS: https://docs.mat3ra.com/tutorials/ml/deepmd/"
+        "Large-scale molecular dynamics simulation using DFT, DeePMD, and LAMMPS: https://docs.mat3ra.com/tutorials/ml/deepmd-mlff-with-cp-and-lammps/"
     ],
     "description": "In this tutorial, we will explain following steps: (1) Ab-initio molecular dynamics calculation using Quantum ESPRESSO Car-Parrinello (cp.x) program, (2) prepare Quantum ESPRESSO output files for DeePMD calculation using dpdata, (3) run DeePMD training, and freeze results, (4) transform Quantum ESPRESSO structure into LAMMPS format, (5) finally, run classical molecular dynamics calculation using LAMMPS based on the potential and force-fields predicted by DeePMD.",
     "tags": [
