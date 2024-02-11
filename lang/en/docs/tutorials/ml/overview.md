@@ -15,4 +15,4 @@ The ML model trained in the above-mentioned initial tutorial can then be employe
 
 We explain how large scale molecular dynamics simulation can be performed in our
 platform using DFT, DeePMD and LAMMPS - [Molecular dynamics using DeePMD](
-deepmd.md).
+deepmd-mlff-with-cp-and-lammps.md).
