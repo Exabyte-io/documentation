@@ -25,17 +25,22 @@ In this example, we will import Graphene and Ni from Standata.
 ## Step 2: Use JupyterLite Session Dialog
 
 Navigate to `Advanced` > `JupyterLite Session` from the main interface.
-  <img src="/images/tutorials/interface_with_python/open_jupyterlite.png" alt="Open JupyterLite Dialog"/>
+  <img src="/images/tutorials/interface_with_zsl/1_select_jupyterlite_session.png" alt="Open JupyterLite Dialog"/>
 
 - In the Introduction notebook find the link to the example under `Examples` > `1. Builders / Transformations` > `1.1. Interface creation with Zur and McGill Superlattice algorithm`
 - The link will open the example notebook in a new tab.
+<img src="/images/tutorials/interface_with_zsl/2_introduction_notebook.png" alt="Open Example Notebook"/>
 
 ## Step 3: Run the Example
 
 - Select Input Materials from the dropdown list to make them available in the notebook. (Ni and Graphene in this case)
+<img src="/images/tutorials/interface_with_zsl/3_select_materials.png" alt="Select Input Materials"/>
 - Run the cell marked as `Run first` to load the input materials into the notebook. (Loading is done asynchronously from outside JupyterLite kernel, so it may take a few seconds for the kernel to register)
+<img src="/images/tutorials/interface_with_zsl/4_load_materials.png" alt="Run First Cell"/>
 - Set Input Parameters for substrate and layer materials, resulting interface and the algorithm. (In this case, Ni regarded as the substrate and Graphene as the layer. Since unit lattices of Graphene and Ni(111) plane are close, we should reduce the maximum search area for superlattice matching to 100 to speed up the search)
-- Click `Run` > `Run All` to run cells and wait for the results to appear. ()
+<img src="/images/tutorials/interface_with_zsl/5_set_input_parameters.png" alt="Set Input Parameters"/>
+- Click `Run` > `Run All` to run cells and wait for the results to appear. (Depending on the `MAX_AREA` parameter, the search may take from seconds to a few minutes to complete.)
+<img src="/images/tutorials/interface_with_zsl/6_run_all_cells.png" alt="Run All Cells"/>
 
 ## Step 4: Analyze the Results
 - Output of cell under "2. Install Packages" should display a list of successfully installed packages
