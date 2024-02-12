@@ -10,8 +10,9 @@ We start with [opening](../../entities-general/actions/create.md) an instance of
 
 In order to use Graphene and Ni, the user should first [import](../../materials-designer/header-menu/input-output/import.md) sample crystalline structures of the two respective materials into the current Materials Designer session, from the account-owned [collection](../../accounts/collections.md) of materials.
 
-Or to use materials from a Standart Materials Data via [Import from Standata](../../materials-designer/header-menu/input-output/standata-import.md).
+Another option is to use materials from a Standart Materials Dataset via [Import from Standata](../../materials-designer/header-menu/input-output/standata-import.md).
 
+Graphene and Ni will be available in the materials list after the import.
 <img src="/images/materials-designer/import/graphene_and_ni_imported.png" alt="Gr and Ni available in materials list"/>
 
 ## Step 2: Use JupyterLite Session Dialog
