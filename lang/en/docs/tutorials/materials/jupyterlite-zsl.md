@@ -10,17 +10,9 @@ We start with [opening](../../entities-general/actions/create.md) an instance of
 
 In order to use Graphene and Ni, the user should first [import](../../materials-designer/header-menu/input-output/import.md) sample crystalline structures of the two respective materials into the current Materials Designer session, from the account-owned [collection](../../accounts/collections.md) of materials.
 
-In this example, we will import Graphene and Ni from Standata.
+Or to use materials from a Standart Materials Data via [Import from Standata](../../materials-designer/header-menu/input-output/standata-import.md).
 
-- Open the 'Import from Standata' dialog by going to `Input/Output` > `Import from Standata`.
-  <img src="/images/tutorials/interface_with_python/open_standata.png" alt="Open Import from Standata Dialog"/>
-- Select 'Graphene' and 'Ni' from the materials list.
-  <img src="/images/tutorials/interface_with_python/import_from_standata.png" alt="Import Gr and Ni from Standata"/>
-- Click 'Submit' to import these materials into the Materials Designer session.
-- Default Material Silicon should be removed from the session.
-  <img src="/images/tutorials/interface_with_python/remove_silicon.png" alt="Remove Silicon"/>
-- Graphene and Ni should now be available in the materials list.
-  <img src="/images/tutorials/interface_with_python/graphene_and_ni_imported.png" alt="Gr and Ni available in materials list"/>
+<img src="/images/materials-designer/import/graphene_and_ni_imported.png" alt="Gr and Ni available in materials list"/>
 
 ## Step 2: Use JupyterLite Session Dialog
 
@@ -47,7 +39,7 @@ Navigate to `Advanced` > `JupyterLite Session` from the main interface.
 <img src="/images/tutorials/interface_with_zsl/7_installed_packages.png" alt="Install Packages"/>
 - Output of cell under "3.2. Print out the interfaces and terminations" should display the number of possible terminations (in this case 1) and the number of interfaces for each termination (in this case 1211)
 <img src="/images/tutorials/interface_with_zsl/9_found_interfaces.png" alt="Print Interfaces and Terminations"/>
-- Output of cell under "4.2. Print out interfaces with lowest strain for each termination" should display the strain and number of atoms for the interface with the lowest strain for each termination.
+- Output of cell under "4.2. Print out interfaces with the lowest strain for each termination" should display the strain and number of atoms for the interface with the lowest strain for each termination.
 - Output of cell under "5. Plot the results" should display a plot of the strain vs number of atoms for each interface. Each point on the plot represents an interface with data for termination, interface index, strain and number of atoms.
 <img src="/images/tutorials/interface_with_zsl/10_plot_found_interfaces.png" alt="Plot Results"/>
 
