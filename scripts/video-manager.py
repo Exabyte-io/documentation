@@ -26,8 +26,13 @@ DESCRIPTION_LINKS = [
 ]
 
 LANGUAGE_CODE = 'en-US'
-AUDIO_ENCODING = texttospeech.enums.AudioEncoding.MP3
-SSML_GENDER = texttospeech.enums.SsmlVoiceGender.FEMALE
+AUDIO_ENCODING = texttospeech.AudioEncoding.MP3
+SSML_GENDER = texttospeech.SsmlVoiceGender.MALE  # MALE, FEMALE, NEUTRAL
+VOICE_NAME = LANGUAGE_CODE + '-' + 'Wavenet-D'
+# https://cloud.google.com/text-to-speech/docs/voices
+# en-US-Wavenet-D (male)
+# en-US-Studio-Q (male)
+# en-US-Studio-O (female)
 
 # instructs ffmpeg to get video from first input (-map 0:v) and audio from second one (-map 1:a) and combine them.
 FFMPEG_COMMAND_TMPL = "ffmpeg -y -v 0 -i {} -i {} -map 0:v -map 1:a -vcodec copy {}"
@@ -204,10 +209,10 @@ def convert_text_to_speech(ssml_text, speech_path):
         speech_path (str): path to store the audio file.
     """
     client = get_text_to_speech_api_client()
-    synthesis_input = texttospeech.types.SynthesisInput(ssml=ssml_text)
-    voice = texttospeech.types.VoiceSelectionParams(language_code=LANGUAGE_CODE, ssml_gender=SSML_GENDER)
-    audio_config = texttospeech.types.AudioConfig(audio_encoding=AUDIO_ENCODING)
-    response = client.synthesize_speech(synthesis_input, voice, audio_config)
+    synthesis_input = texttospeech.SynthesisInput(ssml=ssml_text)
+    voice = texttospeech.VoiceSelectionParams(language_code=LANGUAGE_CODE, name=VOICE_NAME, ssml_gender=SSML_GENDER)
+    audio_config = texttospeech.AudioConfig(audio_encoding=AUDIO_ENCODING)
+    response = client.synthesize_speech(input=synthesis_input, voice=voice, audio_config=audio_config)
     with open(speech_path, 'wb') as out:
         out.write(response.audio_content)
 
