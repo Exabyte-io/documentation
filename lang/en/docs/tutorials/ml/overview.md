@@ -11,8 +11,8 @@ We explain how a **ML model** can be **trained**, based on a set of results of b
 The ML model trained in the above-mentioned initial tutorial can then be employed to statistically **predict** the band-gap of other similar materials, without the need for further computations. We explain how this can be achieved [in this other tutorial](predict-ml-properties.md).
 
 
-## Molecular dynamics calculation using DeePMD
+## Obtain force field with DeePMD to use in LAMMPS
 
 We explain how large scale molecular dynamics simulation can be performed in our
 platform using DFT, DeePMD and LAMMPS - [Molecular dynamics using DeePMD](
-deepmd-mlff-with-cp-and-lammps.md).
+deepmd-mlff-with-espresso-cp-and-lammps.md).
