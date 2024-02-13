@@ -1,4 +1,4 @@
-# DeePMD Molecular dynamics simulation
+# Obtain force field with DeePMD to use in LAMMPS
 
 In this tutorial, we demonstrate how to perform large-scale molecular dynamics
 simulation using Density Functional Theory, DeePMD, and LAMMPS in Mat3ra web
