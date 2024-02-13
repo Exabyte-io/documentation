@@ -4,17 +4,17 @@ In this tutorial, we demonstrate how to perform large-scale molecular dynamics
 simulation using Density Functional Theory, DeePMD, and LAMMPS in Mat3ra web
 platform. The workflow consists of the following steps:
 
-1. Perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
+a. Perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
 Car-Parrinello (`cp.x`) program
-2. Prepare Quantum ESPRESSO output files for DeePMD using `dpdata`, split data
+b. Prepare Quantum ESPRESSO output files for DeePMD using `dpdata`, split data
 set into training and validation sets
-3. Train DeePMD model, and freeze training results
-4. Transform Quantum ESPRESSO structure into LAMMPS format
-5. Perform classical molecular dynamics simulation using LAMMPS based on
+c. Train DeePMD model, and freeze training results
+d. Transform Quantum ESPRESSO structure into LAMMPS format
+e. Perform classical molecular dynamics simulation using LAMMPS based on
 potential and force fields predicted by DeePMD.
 
 
-## Create Structure
+## 1. Create Structure
 
 For this demonstration, we create a new structure from scratch using material
 designer. Navigate to **Materials** page from the left sidebar, and click create
@@ -30,9 +30,9 @@ menu, and save the structure. Alternatively, user can import CIF or POSCAR
 structure files.
 
 
-## Create Workflow
+## 2. Create Workflow
 
-### (1) CP calculation
+### 2a. CP calculation
 
 We perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
 Car-Parrinello (`cp.x`) program. Navigate to workflows page, and click create
@@ -60,7 +60,7 @@ new subworkflow and select deepmd application.
 ![DeePMD add subworkflow](/images/tutorials/deepmd/deepmd-add-subworkflow.webp "DeePMD add subworkflow")
 
 
-### (2) Prepare data sets for DeePMD
+### 2b. Prepare data sets for DeePMD
 
 We will use Python script and `dpdata` to load the Quantum ESPRESSO output files
 obtained in the previous CP calculation step. Add first unit to deepmd
@@ -77,7 +77,7 @@ validation sets (80% and 20%, respectively). One can modify the python script/
 template directly in the unit modal, and adjust the ratio between sets.
 
 
-### (3) Run DeePMD model
+### 2c. Run DeePMD model
 
 We need to specify the descriptor and related model parameters here. Append
 another execution unit to deepmd subworkflow. This time select **dp**
@@ -85,7 +85,7 @@ executable. Set the descriptor and various model parameters. After the training
 step is executed, the output is saved into `graph.pb` file.
 
 
-### (4) Prepare LAMMPS structure
+### 2d. Prepare LAMMPS structure
 
 Here we will again use Python script to prepare input structure for LAMMPS
 calculation. Again add new executable unit, select **python** executable and
@@ -95,7 +95,7 @@ structure, build supercell, or hardcode the structure and save it to
 `system.lmp` file.
 
 
-### (5) LAMMPS calculation
+### 2e. LAMMPS calculation
 
 Finally, we perform classical molecular dynamics calculation using LAMMPS.
 LAMMPS parameters can be adjusted in `in.lammps` input template. Add the final
@@ -106,7 +106,7 @@ LAMMPS parameters in the template. The LAMMPS output is written to
 ![DeePMD workflow](/images/tutorials/deepmd/deepmd-workflow.webp "DeePMD workflow")
 
 
-## Create and submit job
+## 3. Create and submit job
 
 Navigate to Jobs page from the left sidebar. Click create new job. Select
 material (in our case, H<sub>2</sub>O structure we created), select
@@ -119,7 +119,7 @@ Jupyter Notebook session in our platform to further analyze output files.
 ![DeePMD create job](/images/tutorials/deepmd/deepmd-create-job.webp "DeePMD create job")
 
 
-## Step-by-step screenshare video
+## 4. Step-by-step screenshare video
 
 In the below animation, we walk you through the whole workflow process.
 
