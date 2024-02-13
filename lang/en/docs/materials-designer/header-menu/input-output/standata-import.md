@@ -4,10 +4,6 @@ Materials Designer can source structural data from the Standata materials datase
 
 ## Select "Import from Standata" Option
 
-Select `Input/Output` > `Import from Standata` from the main interface.
-
-## Open the "Import from Standata" Dialog
-
 Open the 'Import from Standata' dialog by going to `Input/Output` > `Import from Standata`.
 
 <img src="/images/materials-designer/import/open_standata.png" alt="Open Import from Standata Dialog"/>
