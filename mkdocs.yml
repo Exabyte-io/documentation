@@ -168,12 +168,14 @@ nav:
             - Upload External Job Data:              tutorials/other/external-upload.md
             - TensorFlow (GPU): tutorials/general-functionality/tensorflow-gpu.md
         - Materials:
-            - Overview:                              tutorials/materials/overview.md
-            - VESTA via Remote Desktop:              tutorials/materials/vesta-remote-desktop.md
-            - Combinatorial Sets:                    tutorials/materials/combinatorial-screening.md
-            - Interpolated Sets:                     tutorials/materials/interpolated-sets.md
-            - Molecule on a Surface:                 tutorials/materials/molecule-surface.md
-            - Interface:                             tutorials/materials/slabs-interface.md
+            - Overview:                                                         tutorials/materials/overview.md
+            - VESTA via Remote Desktop:                                         tutorials/materials/vesta-remote-desktop.md
+            - Combinatorial Sets:                                               tutorials/materials/combinatorial-screening.md
+            - Interpolated Sets:                                                tutorials/materials/interpolated-sets.md
+            - Molecule on a Surface:                                            tutorials/materials/molecule-surface.md
+            - Interface, quick setup (3D Editor):                               tutorials/materials/slabs-interface.md
+            - Interface, no strain minimization (Python Transformation):        tutorials/materials/interface-with-python.md
+            - Interface, minimal strain (JupyterLite Session):                  tutorials/materials/jupyterlite-zsl.md
 
 
 # COMMON UI COMPONENTS
@@ -429,6 +431,7 @@ nav:
             - Overview:                                 materials-designer/header-menu/header-menu-intro.md
             - Input/Output:                             materials-designer/header-menu/input-output.md
             - "Input/Output > Import":                  materials-designer/header-menu/input-output/import.md
+            - "Input/Output > Import from Standata":    materials-designer/header-menu/input-output/standata-import.md
             - "Input/Output > Export":                  materials-designer/header-menu/input-output/export.md
             - "Input/Output > Save":                    materials-designer/header-menu/input-output/save.md
             - Edit:                                     materials-designer/header-menu/edit.md
