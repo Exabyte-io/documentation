@@ -1,6 +1,6 @@
 # Import from Standata
 
-Materials Designer can source structural data from the [Standata](https://github.com/Exabyte-io/standata) materials dataset. This tutorial explains how to import Graphene and Ni from Standata into the Materials Designer session.
+Materials Designer can source structural data from [Standata](#links). This page explains how to import Graphene and Ni into the Materials Designer session.
 
 ## 1. Select "Import from Standata" Option
 
@@ -21,6 +21,6 @@ Materials (Graphene and Ni in this case) should now be available in the material
 
 <img src="/images/materials-designer/import/graphene_and_ni_imported.webp" alt="Gr and Ni available in materials list"/>
 
-## 4. Links
+## Links
 
-Standata project is available on <a href="https://github.com/Exabyte-io/standata" target="_blank">GitHub</a>. 
+1. Standata repository on <a href="https://github.com/Exabyte-io/standata" target="_blank">GitHub</a>. 
