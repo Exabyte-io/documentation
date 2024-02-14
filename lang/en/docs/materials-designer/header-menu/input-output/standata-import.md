@@ -20,3 +20,7 @@ Click 'Submit' to import these materials into the Materials Designer session.
 Materials (Graphene and Ni in this case) should now be available in the materials list.
 
 <img src="/images/materials-designer/import/graphene_and_ni_imported.png" alt="Gr and Ni available in materials list"/>
+
+## 4. Links
+
+Standata project is available on <a href="https://github.com/Exabyte-io/standata" target="_blank">GitHub</a>. 
