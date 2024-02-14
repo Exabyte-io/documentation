@@ -13,7 +13,7 @@ In order to use Graphene and Ni, the user should first [import](../../materials-
 Another option is to use materials from a Standard Materials Dataset via [Import from Standata](../../materials-designer/header-menu/input-output/standata-import.md).
 
 After importing, Graphene and Ni should be available in the materials list.
-<img src="/images/materials-designer/import/graphene_and_ni_imported.png" alt="Gr and Ni available in materials list"/>
+<img src="/images/materials-designer/import/graphene_and_ni_imported.webp" alt="Gr and Ni available in materials list"/>
 
 ## Step 2: Use Python Transformation Dialog
 
