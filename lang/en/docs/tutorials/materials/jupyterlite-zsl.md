@@ -71,3 +71,7 @@ Navigate to `Advanced` > `JupyterLite Session` from the main interface.
 - We can add repetition alongside x and y directions and add bonds to see the result more clearly.
 
 <img src="/images/tutorials/interface_with_zsl/12_add_repetition_and_bonds.webp" alt="Add repetitions and bonds"/>
+
+## Links
+- Zur and McGill Superlattice algorithm paper: https://doi.org/10.1063/1.333084
+- Zur and McGill Superlattice algorithm implementation by PyMatGen documentation: https://pymatgen.org/pymatgen.analysis.interfaces.html
