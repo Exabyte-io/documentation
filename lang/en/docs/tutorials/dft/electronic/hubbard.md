@@ -45,6 +45,12 @@ tab.
 
 ![Add new unit](/images/tutorials/hubbard/hubbard-04-add-new-unit.webp "Add new unit")
 
+!!!tip
+    We have a bank workflow **Hubbard U - HP** incorporating above two steps.
+    Navigate to Bank Workflows page via left sidebar and search for
+    *Hubbard U - HP* workflow, and copy/clone it to your account. Then you may
+    further modify (as necessary) and use it.
+
 
 ## Create and submit job
 
