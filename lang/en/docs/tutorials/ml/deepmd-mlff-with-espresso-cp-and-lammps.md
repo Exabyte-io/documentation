@@ -4,14 +4,16 @@ In this tutorial, we demonstrate how to perform large-scale molecular dynamics
 simulation using Density Functional Theory, DeePMD, and LAMMPS in Mat3ra web
 platform. The workflow consists of the following steps:
 
-a. Perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
-Car-Parrinello (`cp.x`) program
-b. Prepare Quantum ESPRESSO output files for DeePMD using `dpdata`, split data
-set into training and validation sets
-c. Train DeePMD model, and freeze training results
-d. Transform Quantum ESPRESSO structure into LAMMPS format
-e. Perform classical molecular dynamics simulation using LAMMPS based on
-potential and force fields predicted by DeePMD.
+<ol type="a">
+  <li>Perform *ab-initio* molecular dynamics calculation using Quantum
+  ESPRESSO Car-Parrinello (<code>cp.x</code>) program</li>
+  <li>Prepare Quantum ESPRESSO output files for DeePMD using
+  <code>dpdata</code>, split data set into training and validation sets</li>
+  <li>Train DeePMD model, and freeze training results</li>
+  <li>Transform Quantum ESPRESSO structure into LAMMPS format</li>
+  <li>Perform classical molecular dynamics simulation using LAMMPS based on
+  potential and force fields predicted by DeePMD.</li>
+</ol>
 
 
 ## 1. Create Structure
