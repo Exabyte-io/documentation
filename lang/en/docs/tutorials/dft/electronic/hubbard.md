@@ -5,7 +5,7 @@ calculation of Hubbard parameters using Quantum Espresso on our web platform.
 
 ## Create DFT+U workflow
 
-First, we need to create PWscf workflow with DFT+U enabled. 
+First, we need to create PWscf workflow with DFT+U enabled.
 
 ### Add pw.x unit
 
@@ -45,6 +45,12 @@ tab.
 
 ![Add new unit](/images/tutorials/hubbard/hubbard-04-add-new-unit.webp "Add new unit")
 
+!!!tip
+    We have a bank workflow **Hubbard U - HP** incorporating above two steps.
+    Navigate to Bank Workflows page via left sidebar and search for
+    *Hubbard U - HP* workflow, and copy/clone it to your account. Then you may
+    further modify (as necessary) and use it.
+
 
 ## Create and submit job
 
@@ -73,10 +79,14 @@ parameters.
 
 !!!warning
     As of 20/Dec/2023, there is a bug in our platform that prevents running MPI
-    jobs in a single processor when the Intel (default) build of Quantum Espresso is
-    used. Please select at least two processors/ cores when using Intel
-    build as a workaround. Alternatively, you may use the GNU build of Quantum
-    Espresso.
+    jobs in a single processor when the Intel (default) build of Quantum
+    ESPRESSO is used. Please select at least two processors/ cores when using
+    Intel build as a workaround. Alternatively, you may use the GNU build of
+    Quantum ESPRESSO.
+
+    **Update (18-Feb-2024):** The above MPI bug is resolved in platform version
+    `2024.2.15`. Now user may run MPI jobs on a single processor when using
+    Intel build of Quantum ESPRESSO.
 
 - Now, we are ready to submit the job for running the calculation.
 
