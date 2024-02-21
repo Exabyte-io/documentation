@@ -56,9 +56,29 @@
             "endTime": "00:00:55.900"
         },
         {
-            "text": "Now let's head to our web platform. First, we will create workflow with all the required steps.",
+            "text": "Now let's head to our web platform. First, we will create workflow with all the required steps. Let's rename our workflow to epsilon calculation and subworkflow unit to simple dot x. We can set the quantum espresso version and build under the details pane.",
             "startTime": "00:00:56.500",
-            "endTime": "00:00:59.900"
+            "endTime": "00:01:11.000"
+        },
+        {
+            "text": "Currently simple dot x code only supports norm-conserving pseudopotentials. Let's set a norm-conserving pseudopotential by applying appropriate method filters. Next click edit unit.",
+            "startTime": "00:01:11.500",
+            "endTime": "00:01:22.000"
+        },
+        {
+            "text": "Here in order to replicate the example from SIMPLE paper we mentioned in the beginning, we will provide the crystal structure with i bravais and cell d m instead of cell parameters card.",
+            "startTime": "00:01:22.500",
+            "endTime": "00:01:33.000"
+        },
+        {
+            "text": "Then, we will overwrite the atomic positions. Close unit modal.",
+            "startTime": "00:01:33.500",
+            "endTime": "00:01:38.000"
+        },
+        {
+            "text": "Next, navigate to important settings tab, and set various parameters as used in the original example.",
+            "startTime": "00:01:39.000",
+            "endTime": "00:01:45.000"
         }
     ],
     "youTubeId": ""

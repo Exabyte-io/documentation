@@ -24,30 +24,28 @@ workflows page in our web platform, and click create new workflow. Quantum
 ESPRESSO version and build can be changed by expanding the details pane, and
 selecting the options from respective drop-down menu.
 
+Currently, SIMPLE code only supports norm-conserving pseudopotential. Please
+choose norm-conserving pseudopotential after applying appropriate method
+filters.
+
 We will provide, lattice parameters via `ibrav` and `celldm` instead of
 `CELL_PARAMETERS` card. Click edit on the **pw_scf** unit, and directly modify
 desired parameters on the template. We can set energy and charge density cutoffs
 as well as k-gird parameters on the **Important Settings** tab.
 
 
-### b. NSCF calculation (Gamma point only)
-
-Next step is to perform a non-self consistent field calculation for $\Gamma$
-point only. We also need to set no symmetry and no inversion for our `nscf`
-runs so that Quantum ESPRESSO does not reduce the number of k-points based on
-symmetry. In our platform, it can be done via an assignment unit. Click and add
-unit, and select assignment unit from the drop-down. Later assign a variable:
-`NO_SYMMETRY_NO_INVERSION` and set the value to `true`.
-
-Add an execution unit, click edit unit, select `pw_nscf` flavor. Edit the
-`ibrav` and other parameters as we did in the PW SCF step. Finally, set the
-k-grid only for gamma point calculation.
-
-
-### c. head.x
+### b. head.x
 
 Add next unit (execution unit) and select **head.x** executable, adjust
 parameters on the `head` template as necessary.
+
+
+### c. NSCF calculation (Gamma point only)
+
+Next step is to perform a non-self consistent field calculation for $\Gamma$
+point only. Add an execution unit, click edit unit, select `pw_nscf` flavor.
+Edit the `ibrav` and other parameters as we did in the PW SCF step. Finally, set
+the k-grid only for gamma point calculation.
 
 
 ### d. pw4gww.x
@@ -64,6 +62,11 @@ Add unit with **gww.x** executable, and adjust parameters as described above.
 ### f. NSCF calculation with k-grid
 
 Next we need to perform non-self consistent field calculation for finite k-grid.
+We also need to set no symmetry and no inversion for our `nscf` runs so that
+Quantum ESPRESSO does not reduce the number of k-points based on symmetry. In
+our platform, it can be done via an assignment unit. Click and add unit, and
+select assignment unit from the drop-down. Later assign a variable:
+`NO_SYMMETRY_NO_INVERSION` and set the value to `true`.
 
 
 ### g. SIMPLE calculation
