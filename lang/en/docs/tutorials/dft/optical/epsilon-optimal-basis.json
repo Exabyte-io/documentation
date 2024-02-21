@@ -1,0 +1,65 @@
+{
+    "descriptionLinks": [
+        "Optical property calculation using Quantum ESPRESSO SIMPLE.X: https://docs.mat3ra.com/tutorials/dft/optical/epsilon-optimal-basis/"
+    ],
+    "description": "We go through the details of optical property calculation using optimal basis. We will use Quantum ESPRESSO SIMPLE.X program to calculate dielectric constant.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "epsilon",
+        "simple",
+        "optical-property",
+        "optimal-basis"
+    ],
+    "title": "Mat3ra Tutorial: Optical property calculation using Quantum ESPRESSO SIMPLE.X",
+    "youTubeCaptions": [
+        {
+            "text": "In this tutorial, we will go through the details of optical property calculation with optimal basis. We will use Quantum ESPRESSO SIMPLE dot X program to calculate dielectric constant.",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:11.300"
+        },
+        {
+            "text": "If you want to learn more about the physics behind the optimal basis, please refer to the original paper by Prandini and coworkers.",
+            "startTime": "00:00:12.000",
+            "endTime": "00:00:20.300"
+        },
+        {
+            "text": "Preprint of the paper is also available on arxiv. We will follow the steps as described in the paper.",
+            "startTime": "00:00:21.000",
+            "endTime": "00:00:27.100"
+        },
+        {
+            "text": "The example is also available in the Quantum Espresso repository under G W W examples.",
+            "startTime": "00:00:27.500",
+            "endTime": "00:00:34.500"
+        },
+        {
+            "text": "We will demonstrate the example five which uses simple B S E method. However, one can also perform the example four which uses simple I P method instead.",
+            "startTime": "00:00:35.000",
+            "endTime": "00:00:44.400"
+        },
+        {
+            "text": "The details of the steps can be found in run example script.",
+            "startTime": "00:00:45.000",
+            "endTime": "00:00:48.300"
+        },
+        {
+            "text": "Input and output reference files of each step in this tutorial can also be found in our github repository.",
+            "startTime": "00:00:49.000",
+            "endTime": "00:00:55.900"
+        },
+        {
+            "text": "Now let's head to our web platform. First, we will create workflow with all the required steps.",
+            "startTime": "00:00:56.500",
+            "endTime": "00:00:59.900"
+        }
+    ],
+    "youTubeId": ""
+}
