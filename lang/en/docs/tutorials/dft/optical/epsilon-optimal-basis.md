@@ -72,6 +72,10 @@ our platform, it can be done via an assignment unit. Click and add unit, and
 select assignment unit from the drop-down. Later assign a variable:
 `NO_SYMMETRY_NO_INVERSION` and set the value to `true`.
 
+![Select unit type](/images/tutorials/simple.x/simple-unit-type.webp "Select unit type")
+
+![Set no symmetry](/images/tutorials/simple.x/simple-set-no-sym.webp "Set no symmetry")
+
 Add an execution unit for `nscf` calculation. Here we update the number of bands
 (`nbnd`) to 40. The k-grid is set to 2×2×2 via the **Important Settings** tab.
 Remember to give the unit a unique name, as we already have a unit with name
@@ -85,6 +89,8 @@ we will choose the `calc_mode=0` for BSE method. One can set `calc_mode=1` for
 Independent Particle (IP) method. Specify number of valence band to 16, and
 conduction band to 24.
 
+![Simple.x input template](/images/tutorials/simple.x/simple-template.webp "Simple.x input template")
+
 
 ### h. SIMPLE BSE calculation
 
@@ -97,6 +103,7 @@ The the above step calculates the $\alpha$ and $\beta$ coefficients of Haydock
 series, which can be transformed into dielectric constant using
 **abcoeff_to_eps.x** post processing utility.
 
+![Simple.x full workflow steps](/images/tutorials/simple.x/simple-full-workflow.webp "Simple.x full workflow steps")
 
 ## Run Job
 
@@ -113,5 +120,5 @@ plotting program for visualization.
 In the below tutorial, we go through the whole process.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/xxxx" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/v7c52D4p1gs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
