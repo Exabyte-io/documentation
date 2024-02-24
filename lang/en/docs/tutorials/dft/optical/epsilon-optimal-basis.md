@@ -28,6 +28,8 @@ Currently, SIMPLE code only supports norm-conserving pseudopotential. Please
 choose norm-conserving pseudopotential after applying appropriate method
 filters.
 
+![Select norm-conserving pseudopotential](/images/tutorials/simple.x/simple-select-ncpp.webp "Select norm-conserving pseudopotential")
+
 We will provide, lattice parameters via `ibrav` and `celldm` instead of
 `CELL_PARAMETERS` card. Click edit on the **pw_scf** unit, and directly modify
 desired parameters on the template. We can set energy and charge density cutoffs
@@ -44,8 +46,9 @@ parameters on the `head` template as necessary.
 
 Next step is to perform a non-self consistent field calculation for $\Gamma$
 point only. Add an execution unit, click edit unit, select `pw_nscf` flavor.
-Edit the `ibrav` and other parameters as we did in the PW SCF step. Finally, set
-the k-grid only for gamma point calculation.
+Edit the `ibrav` and other parameters as we did in the PW SCF step. Note that we
+have set `nbnd` as well. Finally, set the k-grid only for gamma point
+calculation.
 
 
 ### d. pw4gww.x
@@ -56,7 +59,8 @@ executable as above for this.
 
 ### e. GWW calculation
 
-Add unit with **gww.x** executable, and adjust parameters as described above.
+Add unit with **gww.x** executable, and adjust various input parameters in the
+template via edit unit.
 
 
 ### f. NSCF calculation with k-grid
@@ -68,12 +72,18 @@ our platform, it can be done via an assignment unit. Click and add unit, and
 select assignment unit from the drop-down. Later assign a variable:
 `NO_SYMMETRY_NO_INVERSION` and set the value to `true`.
 
+Add an execution unit for `nscf` calculation. Here we update the number of bands
+(`nbnd`) to 40. The k-grid is set to 2×2×2 via the **Important Settings** tab.
+Remember to give the unit a unique name, as we already have a unit with name
+`pw_nscf`, otherwise some of the generated file names may create conflicts.
+
 
 ### g. SIMPLE calculation
 
 Now, we are ready the calculate the optimal basis set using **simple.x**. Here,
 we will choose the `calc_mode=0` for BSE method. One can set `calc_mode=1` for
-Independent Particle (IP) method.
+Independent Particle (IP) method. Specify number of valence band to 16, and
+conduction band to 24.
 
 
 ### h. SIMPLE BSE calculation
