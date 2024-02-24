@@ -150,6 +150,8 @@ nav:
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
                 - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
                 - Hubbard U (QE):                          tutorials/dft/electronic/hubbard.md
+            - Optical Properties:
+                - Dielectric constant (QE, simple.x):    tutorials/dft/optical/epsilon-optimal-basis.md
             - Vibrational Prop.:
                 - Overview:                              tutorials/dft/vibrational/overview.md
                 - Zero Point Energy:                     tutorials/dft/vibrational/zero-point-energy.md
