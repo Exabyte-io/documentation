@@ -28,7 +28,7 @@ DESCRIPTION_LINKS = [
 LANGUAGE_CODE = 'en-US'
 AUDIO_ENCODING = texttospeech.AudioEncoding.MP3
 SSML_GENDER = texttospeech.SsmlVoiceGender.MALE  # MALE, FEMALE, NEUTRAL
-VOICE_NAME = LANGUAGE_CODE + '-' + 'Wavenet-D'
+VOICE_NAME = LANGUAGE_CODE + '-' + 'Studio-Q'
 # https://cloud.google.com/text-to-speech/docs/voices
 # en-US-Wavenet-D (male)
 # en-US-Studio-Q (male)
