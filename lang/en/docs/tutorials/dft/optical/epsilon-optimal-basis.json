@@ -13,6 +13,7 @@
         {
             "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
         },
+        "dielectric-constant",
         "epsilon",
         "simple",
         "optical-property",
@@ -186,5 +187,5 @@
             "endTime": "00:04:29.000"
         }
     ],
-    "youTubeId": ""
+    "youTubeId": "v7c52D4p1gs"
 }
