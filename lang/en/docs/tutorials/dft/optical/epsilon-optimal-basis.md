@@ -15,9 +15,13 @@ https://github.com/Exabyte-io/cli-job-examples/tree/main/espresso/simple.x)
 repository.
 
 
-## Workflow
+## 1. Create workflow
 
-### a. PW SCF calculation
+Dielectric constant calculation workflow using SIMPLE method involves following
+steps.
+
+
+### 1.1 PW SCF calculation
 
 First step is to perform self consistent field calculation. Navigate to
 workflows page in our web platform, and click create new workflow. Quantum
@@ -36,13 +40,13 @@ desired parameters on the template. We can set energy and charge density cutoffs
 as well as k-gird parameters on the **Important Settings** tab.
 
 
-### b. head.x
+### 1.2 HEAD calculation
 
 Add next unit (execution unit) and select **head.x** executable, adjust
 parameters on the `head` template as necessary.
 
 
-### c. NSCF calculation (Gamma point only)
+### 1.3 NSCF calculation (Gamma-only)
 
 Next step is to perform a non-self consistent field calculation for $\Gamma$
 point only. Add an execution unit, click edit unit, select `pw_nscf` flavor.
@@ -51,19 +55,20 @@ have set `nbnd` as well. Finally, set the k-grid only for gamma point
 calculation.
 
 
-### d. pw4gww.x
+### 1.4 pw4gww.x
 
-We need to prepare input files for GWW calculation. Add a unit with **pw4gww.x**
-executable as above for this.
+We need to prepare input files for GWW calculation. Similarly, add a unit with
+**pw4gww.x** executable. Take note of various input parameters, and modify on
+the template as necessary.
 
 
-### e. GWW calculation
+### 1.5 GWW calculation
 
 Add unit with **gww.x** executable, and adjust various input parameters in the
 template via edit unit.
 
 
-### f. NSCF calculation with k-grid
+### 1.6 NSCF calculation with k-grid
 
 Next we need to perform non-self consistent field calculation for finite k-grid.
 We also need to set no symmetry and no inversion for our `nscf` runs so that
@@ -82,7 +87,7 @@ Remember to give the unit a unique name, as we already have a unit with name
 `pw_nscf`, otherwise some of the generated file names may create conflicts.
 
 
-### g. SIMPLE calculation
+### 1.7 SIMPLE calculation
 
 Now, we are ready the calculate the optimal basis set using **simple.x**. Here,
 we will choose the `calc_mode=0` for BSE method. One can set `calc_mode=1` for
@@ -92,12 +97,13 @@ conduction band to 24.
 ![Simple.x input template](/images/tutorials/simple.x/simple-template.webp "Simple.x input template")
 
 
-### h. SIMPLE BSE calculation
+### 1.8 SIMPLE BSE calculation
 
 Add next unit for the dielectric function calculation using **simple_bse.x**
 program. Alternatively, user can select **simple_ip.x** method instead.
 
-### i. Post processing
+
+### 1.9 Post processing
 
 The the above step calculates the $\alpha$ and $\beta$ coefficients of Haydock
 series, which can be transformed into dielectric constant using
@@ -105,7 +111,8 @@ series, which can be transformed into dielectric constant using
 
 ![Simple.x full workflow steps](/images/tutorials/simple.x/simple-full-workflow.webp "Simple.x full workflow steps")
 
-## Run Job
+
+## 2. Run Job
 
 Once workflow is ready, navigate to jobs page and create new job. Select the
 workflow, adjust compute parameters as desired. Submit the job for execution.
@@ -115,7 +122,7 @@ platform to quickly plot epsilon or download the output files and use any
 plotting program for visualization.
 
 
-## Step by step screenshare video
+## 3. Step by step screenshare video
 
 In the below tutorial, we go through the whole process.
 
