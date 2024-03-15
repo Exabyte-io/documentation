@@ -5,7 +5,7 @@
 Follow the below instructions to upload/update a tutorial video:
 
 1. Create a metadata file similar to the one in [here](lang/en/docs/tutorials/dft/electronic/band-gap.json).
-   
+
    > Note: For each step, the time elapsed between `startTime` and `endTime` should approximately be the duration of the spoken sentence.
    > I.e. this is almost impossible to get right on the first try and will need further refinement.
 
@@ -51,4 +51,23 @@ See script source for options. Use the below regex to fix image links in WebStor
 ```regexp
 / images / (\w+) /    <- contains a space as the final character
 /images/$1/
-``` 
+```
+
+## Converting images to webp format
+
+We recommend converting screenshot images to webp format for reduced size with
+better compression.
+
+You can install webp tool in macOS using homebrew:
+
+```console
+brew install webp
+```
+
+We may batch convert PNG images to webp:
+
+```console
+for file in $( ls *.png); do cwebp "${file}" -o "${file%*.png}.webp"; done
+```
+
+For more details about webp, please refer to https://developers.google.com/speed/webp

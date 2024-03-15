@@ -69,6 +69,16 @@ All other sub-headers contained throughout the remainder of the page should then
 #### Fourth-degree Sub-header
 ```
 
+For long doc pages, we may enumerate sections and sub-sections (helpful to
+determine scroll/reading position).
+
+```text
+# 1. Section One
+## 1.1 Subsection One
+## 1.2 Subsection Two
+# 2. Section Two
+```
+
 #### New Lines
 
 Leave a newline after the heading elements:
