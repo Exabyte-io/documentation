@@ -1,35 +1,35 @@
 # JupyterLite Transformation Dialog
 
-The JupyterLite Transformation dialog allows you to change materials within the JupyterLite environment, which is a lightweight implementation of JupyterLab that runs entirely in the browser. This dialog is accessible via the ["Advanced" menu](../advanced.md) within the Materials Designer interface.
+The JupyterLite Transformation Dialog enables the modification of materials within the JupyterLite environment, which is a lightweight implementation of JupyterLab that runs entirely in the browser. This dialog is accessible via the ["Advanced" menu](../advanced.md) within the Materials Designer interface.
 
 <img src="/images/materials-designer/open-jupyterlite-dialog.png" alt="Open JupyterLite Transformation Dialog"/>
 
 ## JupyterLite Transformation
 
-The JupyterLite Transformation dialog is shown in the image below. It allows you to pass materials to the Python environment and apply transformation within Jupyter notebooks in the JupyterLite environment.
+As depicted below, the JupyterLite Transformation Dialog facilitates the transfer of materials to the Python environment, allowing for transformations within Jupyter notebooks in the JupyterLite environment.
 
 <img src="/images/materials-designer/jupyterlite-transformation.png" alt="JupyterLite Transformation Dialog"/>
 
 ## Select Input Materials
 
-The dialog features a drop-down menu at the top, where you can select the materials you want to pass to the JupyterLite environment. The selected materials will be available in the JupyterLite environment for further processing.
+At the top of the dialog, a drop-down menu allows for the selection of materials to be transferred to the JupyterLite environment. These materials will then be available for further processing within JupyterLite.
 
 <img src="/images/materials-designer/jupyterlite-transformation-input-materials.png" alt="Select Input Materials"/>
 
 ## Apply Transformation
 
-Open the notebook with desired transformation from the list of available option in the Introduction.ipynb notebook. Follow the instructions in the notebook to apply the transformation to the selected materials. Most of the time user will need to specify settings for the transformation and click "Run All Cells".
+To apply a transformation, open the notebook containing the desired transformation from the list provided in the Introduction.ipynb notebook. Follow the instructions within to apply the transformation to the selected materials. Typically, this process involves specifying settings for the transformation and clicking "Run All Cells."
 
 <img src="/images/materials-designer/jupyterlite-transformation-apply-transformation.png" alt="Apply Transformation"/>
 
 ## Submit Results
 
-In most cases the result of the transformation is a set of materials that can be passed back to the Materials Designer. They will appear in the Materials Out dropdown at the bottom of the dialog. Select the materials you want to pass back to the Materials Designer and click the "Submit" button to complete the transformation.
+In most cases the result of the transformation is a set of materials that can be passed back to the Materials Designer. They will appear in the "Materials Out" dropdown at the bottom of the dialog. Select the materials you want to pass back to the Materials Designer and click the "Submit" button to complete the transformation.
 
 <img src="/images/materials-designer/jupyterlite-transformation-submit-results.png" alt="Submit Results"/>
 
 ## Animation
 
-The animation below demonstrates usage of the JupyterLite Transformation dialog for creation of a matching interface between two surfaces using Zur and McGill's algorithm.
+The following animation illustrates how to use the JupyterLite Transformation Dialog to create a matching interface between two surfaces using Zur and McGill's algorithm.
 
 <img src="/images/materials-designer/jupyterlite-session-dialog.gif" alt="JupyterLite Transformation Dialog Animation"/>
