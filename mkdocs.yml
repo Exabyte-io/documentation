@@ -434,6 +434,7 @@ nav:
             - "Advanced > Interpolated Set":            materials-designer/header-menu/advanced/interpolated-set.md
             - "Advanced > Surface / Slab":              materials-designer/header-menu/advanced/surface-slab.md
             - "Advanced > Boundary Conditions":         materials-designer/header-menu/advanced/boundary-conditions.md
+            - "Advanced > JupyterLite Transformation":  materials-designer/header-menu/advanced/jupyterlite-dialog.md
             - Help:                                     materials-designer/header-menu/help.md
         - Sidebar:
             - Items List:                               materials-designer/sidebar-items.md
