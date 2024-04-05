@@ -1,6 +1,6 @@
 # Terms of Service
 
-> Effective date: **Aug 1, 2018**
+> Effective date: **Aug 1, 2018**. Updated: **Sep 26, 2022**.
 
 ## 0. Definitions
 
@@ -10,7 +10,7 @@ The “Service” refers to the applications, software, products, and services p
 
 The “Website” refers to Exabyte’s website located at exabyte.io, and all content, services, and products provided by Exabyte at or through the Website. It also refers to Exabyte-owned subdomains, such as "platform.exabyte.io" and "docs.exabyte.io". 
 
-“The User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 13 years of age. Special terms may apply for business or government Accounts (See Section B(5): Additional Terms).
+“The User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 13 years of age. Special terms may apply for business or government Accounts.
 
 “Exabyte,” “We,” and “Us” refer to Exabyte, Inc., as well as our affiliates, directors, subsidiaries, contractors, licensors, officers, agents, and employees.
 

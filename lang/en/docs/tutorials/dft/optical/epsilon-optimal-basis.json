@@ -1,0 +1,191 @@
+{
+    "descriptionLinks": [
+        "Optical property calculation using Quantum ESPRESSO SIMPLE.X: https://docs.mat3ra.com/tutorials/dft/optical/epsilon-optimal-basis/"
+    ],
+    "description": "We go through the details of optical property calculation using optimal basis. We will use Quantum ESPRESSO SIMPLE.X program to calculate dielectric constant.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "dielectric-constant",
+        "epsilon",
+        "simple",
+        "optical-property",
+        "optimal-basis"
+    ],
+    "title": "Mat3ra Tutorial: Optical property calculation using Quantum ESPRESSO SIMPLE.X",
+    "youTubeCaptions": [
+        {
+            "text": "In this tutorial, we will go through the details of optical property calculation with optimal basis. We will use Quantum ESPRESSO SIMPLE dot X program to calculate dielectric constant.",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:11.300"
+        },
+        {
+            "text": "If you want to learn more about the physics behind the optimal basis, please refer to the original paper by Prandini and coworkers.",
+            "startTime": "00:00:12.000",
+            "endTime": "00:00:20.300"
+        },
+        {
+            "text": "Preprint of the paper is also available on arxiv. We will follow the steps as described in the paper.",
+            "startTime": "00:00:21.000",
+            "endTime": "00:00:27.100"
+        },
+        {
+            "text": "The example is also available in the Quantum Espresso repository under G W W examples.",
+            "startTime": "00:00:27.500",
+            "endTime": "00:00:34.500"
+        },
+        {
+            "text": "We will demonstrate the example five which uses simple B S E method. However, one can also perform the example four which uses simple I P method instead.",
+            "startTime": "00:00:35.000",
+            "endTime": "00:00:44.400"
+        },
+        {
+            "text": "The details of the steps can be found in run example script.",
+            "startTime": "00:00:45.000",
+            "endTime": "00:00:48.300"
+        },
+        {
+            "text": "Input and output reference files of each step in this tutorial can also be found in our github repository.",
+            "startTime": "00:00:49.000",
+            "endTime": "00:00:55.900"
+        },
+        {
+            "text": "Now let's head to our web platform. First, we will create workflow with all the required steps. Let's rename our workflow to epsilon calculation and subworkflow unit to simple dot x. We can set the quantum espresso version and build under the details pane.",
+            "startTime": "00:00:56.500",
+            "endTime": "00:01:11.000"
+        },
+        {
+            "text": "Currently simple dot x code only supports norm-conserving pseudopotentials. Let's set a norm-conserving pseudopotential by applying appropriate method filters. Next click edit unit.",
+            "startTime": "00:01:11.500",
+            "endTime": "00:01:22.000"
+        },
+        {
+            "text": "Here in order to replicate the example from SIMPLE paper we mentioned in the beginning, we will provide the crystal structure with i bravais and cell dimensions instead of cell parameters card.",
+            "startTime": "00:01:22.500",
+            "endTime": "00:01:33.000"
+        },
+        {
+            "text": "We need to delete occupations and degauss values. These parameters are used in case of metallic systems.",
+            "startTime": "00:01:33.500",
+            "endTime": "00:01:40.000"
+        },
+        {
+            "text": "Then, we will overwrite the atomic positions.",
+            "startTime": "00:01:40.500",
+            "endTime": "00:01:43.000"
+        },
+        {
+            "text": "Next, navigate to important settings tab, and we will set various parameters as used in the original example.",
+            "startTime": "00:01:43.500",
+            "endTime": "00:01:51.000"
+        },
+        {
+            "text": "We add another execution unit for our next step which is head calculation.",
+            "startTime": "00:01:52.500",
+            "endTime": "00:01:57.000"
+        },
+        {
+            "text": "Set executable to head dot x, and adjust various input parameters on the head template as necessary.",
+            "startTime": "00:01:58.000",
+            "endTime": "00:02:04.000"
+        },
+        {
+            "text": "Our next step is to perform non self consistent field calculation for gamma point only.",
+            "startTime": "00:02:04.500",
+            "endTime": "00:02:10.000"
+        },
+        {
+            "text": "We set the cell dimension as we did in the S C F step. We set number of bands to 32.",
+            "startTime": "00:02:10.500",
+            "endTime": "00:02:16.000"
+        },
+        {
+            "text": "Overwrite atomic positions, delete cell parameters card, and set k points to gamma only.",
+            "startTime": "00:02:16.500",
+            "endTime": "00:02:22.000"
+        },
+        {
+            "text": "Next we prepare GWW inputs via PW for GWW unit.",
+            "startTime": "00:02:22.500",
+            "endTime": "00:02:28.000"
+        },
+        {
+            "text": "Then we perform GWW calculation.",
+            "startTime": "00:02:28.500",
+            "endTime": "00:02:32.000"
+        },
+        {
+            "text": "Next task is to perform non self consistent field calculation for finite k grid. We need to set no symmetry and no inversion so that quantum espresso does not use symmetry to reduce number of k points.",
+            "startTime": "00:02:34.000",
+            "endTime": "00:02:46.000"
+        },
+        {
+            "text": "We can do that in our platform via an assignment unit.",
+            "startTime": "00:02:46.500",
+            "endTime": "00:02:49.000"
+        },
+        {
+            "text": "Set a variable no symmetry no inversion, and set it's value to true.",
+            "startTime": "00:02:49.500",
+            "endTime": "00:02:54.000"
+        },
+        {
+            "text": "Now we are ready to add unit for non self consistent field calculation.",
+            "startTime": "00:02:54.500",
+            "endTime": "00:02:59.000"
+        },
+        {
+            "text": "Edit various parameters as we did in previous steps. We update number of bands to 40.",
+            "startTime": "00:03:00.000",
+            "endTime": "00:03:06.000"
+        },
+        {
+            "text": "K grid for this step can be adjusted via important settings. We rename our unit to pw nscf k. All units must have unique names, otherwise some of the generated file names might create conflicts.",
+            "startTime": "00:03:07.000",
+            "endTime": "00:03:10.000"
+        },
+        {
+            "text": "Now, we are ready the calculate the optimal basis set using simple dot x. <break time='2.0' /> Here, we will choose the calc mode 0 for BSE method. One can set calc mode 1 for Independent Particle method. Specify number of valence band to 16, and conduction band to 24.",
+            "startTime": "00:03:10.500",
+            "endTime": "00:03:29.000"
+        },
+        {
+            "text": "Next step is to carry our simple BSE calculation.<break time='2.0' /> However, note that one can perform simple IP calculation instead.",
+            "startTime": "00:03:29.500",
+            "endTime": "00:03:39.000"
+        },
+        {
+            "text": "The the above step calculates alpha and beta coefficients of Haydock series, which can be transformed into dielectric constant using A B coeff to EPS dot x post processing utility in our final step.",
+            "startTime": "00:03:39.500",
+            "endTime": "00:03:51.000"
+        },
+        {
+            "text": "Save workflow and exit. <break time='0.5' /> Navigate to jobs page. <break time='0.5' /> Create new job. ",
+            "startTime": "00:03:51.500",
+            "endTime": "00:03:57.000"
+        },
+        {
+            "text": "Select workflow. Adjust compute parameters as necessary. Save and exit job. Submit job for execution.",
+            "startTime": "00:03:57.500",
+            "endTime": "00:04:12.000"
+        },
+        {
+            "text": "Once the job is finished, navigate to files tab. We will find all the output files here. For example we can view the epsilon one x here.",
+            "startTime": "00:04:12.500",
+            "endTime": "00:04:21.000"
+        },
+        {
+            "text": "Thank you for watching this tutorial. Now explore yourself more on our platform: <break time='0.5' /> platform dot mat era dot com.",
+            "startTime": "00:04:21.500",
+            "endTime": "00:04:29.000"
+        }
+    ],
+    "youTubeId": "v7c52D4p1gs"
+}

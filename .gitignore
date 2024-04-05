@@ -2,6 +2,7 @@
 .DS_Store
 .idea
 .virtualenv*
+.venv*
 /venv*
 tmp/
 py-googletrans
@@ -10,3 +11,6 @@ oauth-credentials.json
 service-account-key.json
 *.py[cod]
 
+# ignore media files in scripts folder
+scripts/*.mp3
+scripts/*.mp4

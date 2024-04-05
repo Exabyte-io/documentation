@@ -8,9 +8,13 @@ The initial name of a newly-created workflow is "Empty Workflow". It is visible 
 
 ## Description
 
-The user can add a general description of the workflow's features and applications for reference purposes by clicking on the "information" button <i class="zmdi zmdi-info-outline zmdi-hc-border"></i> towards the right-end of the header menu. A text dialog will open, where the workflow description can be entered in the Markdown scripting language according to the guidelines presented [here](../entities-general/actions/metadata.md). 
+The user can add a general description of the workflow's features and applications for reference purposes by toggling the workflow description switch next to the workflow action menu on the right side of the header menu.
 
-Please click on `OK` once all required text has been entered and needs to be saved, or `Cancel` to revert.
+![Workflow Header](../images/workflow-designer/workflow-header-description.png "Toggle description")
+
+The header will expand to show a document editor[^1], where the workflow description can be entered in a direct way ("what you see is what you get", WYSIWYG) or in the Markdown scripting language[^2] according to the guidelines presented [here](../entities-general/actions/metadata.md).
+
+The description is updated as you type and will become permanent once the workflow is saved.
 
 ## Saving the workflow
 
@@ -32,3 +36,6 @@ The user can furthermore add descriptive `tags` to the workflow under considerat
 
 !!!warning "Tags are not part of the Header"
     Although we included its explanation in this page, the "Tags" section is not part of the header.
+
+[^1]: [Toast UI Editor, Website](https://ui.toast.com/tui-editor)
+[^2]: [Markdown syntax summary, Website](https://daringfireball.net/projects/markdown/syntax)

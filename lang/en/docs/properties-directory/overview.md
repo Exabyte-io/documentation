@@ -14,17 +14,18 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 
 ### Scalar
 
-| Property                                             | Overview                                         |
-|:---------------------------------------------------  |:------------------------------------------------|
-| [Total Energy](scalar/total-energy.md)  | The ground state energy (free energy) of the system |
-| [Fermi Energy](scalar/fermi-energy.md)  | The highest energy level occupied by electrons in a system |
-| [Surface Energy](scalar/surface-energy.md)           | The energy of a crystal surface |
-| [Formation Energy](scalar/formation-energy.md)           | The energy required to create defects |
-| [Reaction Energy Barrier](scalar/reaction-energy-barrier.md)    | The activation energy required by the reactants to undergo a chemical reaction |
-| [Pressure](scalar/pressure.md)                       | Scalar average pressure |
-| [Zero Point Energy](scalar/zero-point-energy.md) | Energy of the lowest vibrational level wrt to vacuum |
-| [Total Energy Contributions](scalar/total-energy.md#total-energy-contributions) | Ewald, Exchange correlation and	Hartree contributions to the total energy |
-| [Total Force](scalar/total-force.md)                 | Sum of the atomic forces |
+| Property                                                                        | Overview                                                                       |
+|:--------------------------------------------------------------------------------|:-------------------------------------------------------------------------------|
+| [Total Energy](scalar/total-energy.md)                                          | The ground state energy (free energy) of the system                            |
+| [Fermi Energy](scalar/fermi-energy.md)                                          | The highest energy level occupied by electrons in a system                     |
+| [Surface Energy](scalar/surface-energy.md)                                      | The energy of a crystal surface                                                |
+| [Formation Energy](scalar/formation-energy.md)                                  | The energy required to create defects                                          |
+| [Reaction Energy Barrier](scalar/reaction-energy-barrier.md)                    | The activation energy required by the reactants to undergo a chemical reaction |
+| [Pressure](scalar/pressure.md)                                                  | Scalar average pressure                                                        |
+| [Zero Point Energy](scalar/zero-point-energy.md)                                | Energy of the lowest vibrational level wrt to vacuum                           |
+| [Total Energy Contributions](scalar/total-energy.md#total-energy-contributions) | Ewald, Exchange correlation and	Hartree contributions to the total energy      |
+| [Total Force](scalar/total-force.md)                                            | Sum of the atomic forces                                                       |
+| [Valence Band Offset](scalar/valence-band-offset.md)                            | Relative position of the valence band across an interface                      |
 
 ### Non-Scalar
 
@@ -42,16 +43,16 @@ Below we provide a list of Materials properties that can be [extracted](../prope
 
 ### Structural
 
-| Property                                             | Overview                                         |
-|:---------------------------------------------------  |:------------------------------------------------|
-| [Magnetic Moments](structural/magnetic-moment.md)    | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
-| [Basis Atoms](structural/basis.md)             | The individual atoms comprised in the crystal structure  |
-| [Atomic forces](structural/atomic-forces.md)         | Force exerted on each atom by its surrounding |
-| [Bravais Lattice](structural/lattice.md)             | The underlying Bravais Lattice of the crystal structure |
-| [Space Group](structural/space-group.md)             | Information about the symmetry elements contained in crystal structure |
-| [Final Structure](structural/final-structure.md)     | The final crystal structure obtained from basis atoms and lattice, and its visualization |
-| [InChI](structural/inchi.md)                         | The International Chemical Identifier for a non-periodic structure. |
-| [InchiKey](structural/inchi-key.md)                  | The fixed length, non-human readable identifier string derived from an InChI for a non-periodic structure. |
+| Property                                          | Overview                                         |
+|:--------------------------------------------------|:------------------------------------------------|
+| [Magnetic Moments](structural/magnetic-moment.md) | The magnetic moment of ferromagnetic materials when the "Magnetism" modifier is activated |
+| [Basis Atoms](structural/basis.md)                | The individual atoms comprised in the crystal structure  |
+| [Atomic forces](structural/atomic-forces.md)      | Force exerted on each atom by its surrounding |
+| [Bravais Lattice](structural/lattice.md)          | The underlying Bravais Lattice of the crystal structure |
+| [Symmetry](structural/symmetry.md)                | Information about the symmetry elements contained in crystal structure |
+| [Final Structure](structural/final-structure.md)  | The final crystal structure obtained from basis atoms and lattice, and its visualization |
+| [InChI](structural/inchi.md)                      | The International Chemical Identifier for a non-periodic structure. |
+| [InchiKey](structural/inchi-key.md)               | The fixed length, non-human readable identifier string derived from an InChI for a non-periodic structure. |
 
 ### Elemental
 

@@ -63,7 +63,7 @@
       <div class="md-footer-copyright">
         {% if config.copyright %}
           <div class="md-footer-copyright__highlight">
-            {{ config.copyright }}
+            &copy; {{ build_date_utc.strftime('%Y') }} {{ config.copyright }}
           </div>
         {% endif %}
         Exabyte.io v{{ config.extra.version }}. Built in San Francisco, CA, USA.
