@@ -67,4 +67,4 @@ In most cases the result of the transformation is a set of materials that can be
 
 The following animation illustrates how to use the JupyterLite Transformation Dialog to create a matching interface between two surfaces using Zur and McGill's algorithm.
 
-<img data-gifffer="../../images/materials-designer/jupyterlite_dialog/jupyterlite-session-dialog.gif" alt="JupyterLite Transformation Dialog Animation"/>
+<img data-gifffer="/images/materials-designer/jupyterlite_dialog/jupyterlite-session-dialog.gif" alt="JupyterLite Transformation Dialog Animation"/>
