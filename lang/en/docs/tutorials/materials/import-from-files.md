@@ -32,4 +32,7 @@ Run the notebook by clicking the "Run All Cells" button in the toolbar or execut
 
 Materials should appear in the "Materials Out" dropdown at the bottom of the dialog. Select the material you want to work with and click "Submit" to load it into the Materials Designer.
 
+In case ASE is unable to read the file, an error message will be printed stating the unreadable files and a table of available formats. The information about ASE IO can be found [here](https://wiki.fysik.dtu.dk/ase/ase/io/io.html).
+In this case, you can try to fix the issue and re-run the notebook. The error with some files does not prevent other files from being read.
+
 <img src="/images/tutorials/import_from_files/submit_results.png" alt="Review Results"/>
