@@ -1,6 +1,6 @@
 # JupyterLite Transformation Dialog
 
-The JupyterLite Transformation dialog allows you to interact with the JupyterLite environment, which is a lightweight implementation of JupyterLab that runs entirely in the browser. This dialog is accessible via the ["Advanced" menu](../advanced.md) > JupyterLite Transformation within the Materials Designer interface.
+The JupyterLite Transformation dialog allows you to change materials within the JupyterLite environment, which is a lightweight implementation of JupyterLab that runs entirely in the browser. This dialog is accessible via the ["Advanced" menu](../advanced.md) within the Materials Designer interface.
 
 <img src="/images/materials-designer/open-jupyterlite-dialog.png" alt="Open JupyterLite Transformation Dialog"/>
 
@@ -28,3 +28,7 @@ In most cases the result of the transformation is a set of materials that can be
 
 <img src="/images/materials-designer/jupyterlite-transformation-submit-results.png" alt="Submit Results"/>
 
+## Animation
+
+The animation below demonstrates usage of the JupyterLite Transformation dialog for creation of a coherent interface between two surfaces using Zur and McGill's algorithm.
+<img src="/images/materials-designer/jupyterlite-session-dialog.gif" alt="JupyterLite Transformation Dialog Animation"/>
