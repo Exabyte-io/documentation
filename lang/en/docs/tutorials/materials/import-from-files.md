@@ -8,28 +8,28 @@ Start by opening an instance of the [Materials Designer Interface](../../materia
 
 ## Step 1: Open JupyterLite Environment
 
-Open the JupyterLite environment by navigating to "Advanced" > "JupyterLite Transformation" menu item in the Materials Designer interface.
+Open the [JupyterLite Environment](../../materials-designer/header-menu/advanced/jupyterlite-dialog.md) by navigating to "Advanced" > "JupyterLite Transformation" menu item in the Materials Designer interface.
 
 ## Step 2: Open the Notebook
 
 Open the "Materials import from files in ASE-supported formats" in the Introduction.ipynb notebook.
 
-<img src="/images/tutorials/import-from-files/open_notebook.png" alt="Open Notebook"/>
+<img src="/images/tutorials/import_from_files/open_notebook.png" alt="Open Notebook"/>
 
 ## Step 3: Upload files
 
 Double-click the `uploads` folder in the File Browser tab on the left to open it. Drag and drop the files you want to import into the field.
 
-<img src="/images/tutorials/import-from-files/upload_files.png" alt="Upload Files"/>
+<img src="/images/tutorials/import_from_files/upload_files.png" alt="Upload Files"/>
 
 ## Step 4: Run the Notebook
 
 Run the notebook by clicking the "Run All Cells" button in the toolbar or execute each cell by pressing "Shift + Enter" if you want to review results or change the code in the process.
 
-<img src="/images/tutorials/import-from-files/run_notebook.png" alt="Run Notebook"/>
+<img src="/images/tutorials/import_from_files/run_notebook.png" alt="Run Notebook"/>
 
 ## Step 5: Review the Results and Submit
 
 Materials should appear in the "Materials Out" dropdown at the bottom of the dialog. Select the material you want to work with and click "Submit" to load it into the Materials Designer.
 
-<img src="/images/tutorials/import-from-files/submit_results.png" alt="Review Results"/>
+<img src="/images/tutorials/import_from_files/submit_results.png" alt="Review Results"/>
