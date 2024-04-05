@@ -8,17 +8,19 @@ on:
       - closed
     branches:
       - 'master'
+  schedule:
+    - cron: '0 0 1 1 *'
   workflow_dispatch:
 jobs:
   build:
     name: Deploy docs
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.SUBMODULE_CLONE_TOKEN }}
           submodules: true
@@ -26,8 +28,13 @@ jobs:
       - name: Checkout LFS objects
         run: git lfs pull
 
+      - name: Set python 3 version
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.8"
+
       - name: Build pages
-        uses: Exabyte-io/action-mkdocs-s3-publish@main
+        uses: Exabyte-io/action-mkdocs-build@main
 
       - name: S3 Deploy
         uses: Exabyte-io/action-s3-deploy@v3

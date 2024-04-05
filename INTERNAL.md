@@ -6,15 +6,19 @@ Follow the below instructions to upload/update a tutorial video:
 
 1. Create a metadata file similar to the one in [here](lang/en/docs/tutorials/dft/electronic/band-gap.json).
 
-2. Make sure to remove `youTubeId`. This field is automatically added by the [video manager](video-manager.py) script once the video is uploaded.
+   > Note: For each step, the time elapsed between `startTime` and `endTime` should approximately be the duration of the spoken sentence.
+   > I.e. this is almost impossible to get right on the first try and will need further refinement.
 
-3. In metadata file, `descriptionLinks` is a list of links which are added to video description. See [description template](video-description.jinja) for more details.
+3. Make sure to remove `youTubeId`. This field is automatically added by the [video manager](video-manager.py) script once the video is uploaded.
 
-4. Run the below command to add voice to the video:
+4. In metadata file, `descriptionLinks` is a list of links which are added to video description. See [description template](video-description.jinja) for more details.
 
-```bash
-python video-manager.py voiceover --file PATH_TO_ORIGINAL_VIDEO --metadata PATH_TO_METADATA --audio PATH_TO_SAVE_AUDIO --output PATH_TO_SAVE_NEW_VIDEO
-```
+5. Run the below command to add voice to the video:
+
+   ```bash
+   python video-manager.py voiceover --file PATH_TO_ORIGINAL_VIDEO --metadata PATH_TO_METADATA --audio PATH_TO_SAVE_AUDIO --output PATH_TO_SAVE_NEW_VIDEO
+   ```
+   whereby `PATH_TO_SAVE_AUDIO` and `PATH_TO_SAVE_NEW_VIDEO` should have the file extension `.mp3` and `.mp4`, respectively.
 
 5. Retry step 4 with adjusted `youTubeCaptions` data until the optimal outcome is achieved.
 
@@ -22,15 +26,15 @@ python video-manager.py voiceover --file PATH_TO_ORIGINAL_VIDEO --metadata PATH_
 
 7. Run the below command to upload/update the video once metadata is ready:
 
-```bash
-python video-manager.py upload --file PATH_TO_VIDEO --metadata PATH_TO_METADATA
-```
+    ```bash
+    python video-manager.py upload --file PATH_TO_VIDEO --metadata PATH_TO_METADATA
+    ```
 
 8. The video privacy status is set to `unlisted` by default. Pass privacy status as below to override it:
 
-```bash
-python video-manager.py update --file PATH_TO_VIDEO --metadata PATH_TO_METADATA --privacyStatus public
-```
+    ```bash
+    python video-manager.py update --file PATH_TO_VIDEO --metadata PATH_TO_METADATA --privacyStatus public
+    ```
 
 9. Commit the new changes to metadata file such as `youTubeId` and push.
 
@@ -47,4 +51,23 @@ See script source for options. Use the below regex to fix image links in WebStor
 ```regexp
 / images / (\w+) /    <- contains a space as the final character
 /images/$1/
-``` 
+```
+
+## Converting images to webp format
+
+We recommend converting screenshot images to webp format for reduced size with
+better compression.
+
+You can install webp tool in macOS using homebrew:
+
+```console
+brew install webp
+```
+
+We may batch convert PNG images to webp:
+
+```console
+for file in $( ls *.png); do cwebp "${file}" -o "${file%*.png}.webp"; done
+```
+
+For more details about webp, please refer to https://developers.google.com/speed/webp

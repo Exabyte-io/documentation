@@ -1,0 +1,35 @@
+name: Build documentation
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  tests:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: ["ubuntu-22.04"]
+        python-version: ["3.8", "3.9", "3.10", "3.11"]
+
+    steps:
+      - name: Checkout repository and submodules
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.SUBMODULE_CLONE_TOKEN }}
+          submodules: true
+
+      - name: Checkout LFS objects
+        run: git lfs pull
+
+      - name: Setup python 3
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Build documentation
+        uses: Exabyte-io/action-mkdocs-build@main

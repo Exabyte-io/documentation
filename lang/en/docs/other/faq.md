@@ -27,15 +27,15 @@ OK, the animation below might help demonstrate our vision:
 
 ### Where does your name come from?
 
-Exabyte is 2<sup>60</sup> bytes. Or 1 billion gigabytes. Or 1 million hard drives. Or 1 thousand datacenter storage units. It is a pretty big number and it illustrates the complexity and scale of the problem we solve. Rumor has it that our founding team together with the leading minds in the field had figured out that after surpassing 1 exabyte of accumulated materials data computers will be able to run simulations without needing humans...
+Mat3ra is the era of digital materials engineering and R&D. Hence the digit in the name.
 
 ### Why are you doing this?
 
-The world of today is broken. Humans now face important global challenges. We exist to solve the most fundamental and most important of these challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models. Read more at [blog.exabyte.io](https://blog.exabyte.io).
+The world of today is broken. Humans now face important global challenges: decarbonizing energy industry, beyond-Moore electronics, pollution and overpopulation, and many more. We exist to solve these and many other challenges by driving new generations of advanced materials. In our vision the world of tomorrow is created not through long and expensive tests by trial-and-error, but through fast, accurate and intelligent models. Read more at [mat3ra.com/blog](https://www.mat3ra.com/news-and-blog-category/blog).
 
 ### Why should I care?
 
-Because you know that materials design and discovery is being rapidly transformed now. There are multiple new initiatives started, you can feel that radical changes are soon to come, and you want to be among the first to know and benefit from them.
+Because you know that materials design and discovery is being rapidly transformed now. There are multiple new initiatives started, you can feel that radical changes are soon to come, and you want to be among the first to benefit from them.
 
 ---
 
@@ -79,14 +79,14 @@ For pricing, please see [the service levels pricing section](../pricing/service-
 
 ### How much computational resources do you have? How much of them user can use for one job?
 
-With the cloud, there is really no limit for high-throughput calculations. We have scaled to <a href="https://blog.exabyte.io/how-big-is-cloud-scale-9a3d891ced0" target="_blank">35,000 cores at most in test regime</a>, and regularly use ~10,000 cores in production. 
+With the cloud, there is really no limit for high-throughput calculations. We have scaled to <a href="https://www.mat3ra.com/news-and-blog-posts/how-big-is-cloud-scale" target="_blank">35,000 cores at most in test regime</a>, and regularly use ~10,000 cores in production. 
 
 For a single communication-intensive job (ie. large cell, hybrid functionals, GW) the low-latency interconnect options on some cloud providers allow to scale to ~16-32 nodes (see Fig. 2 <a href="https://arxiv.org/pdf/1812.05257.pdf" target="_blank">from this recent manuscript</a>). Alternatively, there are large memory nodes that we found very helpful for GW, for example. We presently administratively limit each cluster to 200 nodes (each with 16-36 cores) and allow users to use 10 nodes per single job.
 
 
 ### Is it possible to just upload my own input file for QE and then use the interface to submit and make other post-processing with it?
 
-We are covering this exact topic, and other similar ones in the webinar series. Here's the recording: <a href="https://youtu.be/FyBKlLQ2k9M">https://youtu.be/FyBKlLQ2k9M</a>. See links to video time in Description, part 4 "Jobs" in particular. It explains how to migrate existing work to Exabyte.
+We are covering this exact topic, and other similar ones in the webinar series. Here's the recording: <a href="https://youtu.be/FyBKlLQ2k9M">https://youtu.be/FyBKlLQ2k9M</a>. See links to video time in Description, part 4 "Jobs" in particular. It explains how to migrate existing work to Mat3ra.
 
 ### Which software codes can we use? Only those installed on your machines? 
 

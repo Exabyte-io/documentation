@@ -7,7 +7,7 @@ In order for the user to **terminate** the `qdel` command should be used. This c
 For example, the following command will kill the job with the `814.master-production-20160630-cluster-007.exabyte.io` ID.
 
 ```
-[steve@bohr.exabyte.io:~]$ qdel 814.master-production-20160630-cluster-007.exabyte.io
+[steve@login.mat3ra.com:~]$ qdel 814.master-production-20160630-cluster-007.exabyte.io
 ```
 
 This explanation concerns the jobs [submitted for execution via CLI](../overview.md), and listed in either "Queued" or "Running" [statuses](check-status.md),

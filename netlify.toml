@@ -1,0 +1,7 @@
+[build]
+  command = "bash ./scripts/netlify-build.sh"
+  publish = "site/"
+
+[build.environment]
+  PYTHON_VERSION = "3.8"
+  NODE_VERSION = "18"

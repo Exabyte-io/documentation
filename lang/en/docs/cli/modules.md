@@ -119,7 +119,7 @@ python/2.7.5           python/3.6.12          python/3.7.9           python/3.8.
 Through the `module avail` command, the user can also **search** for available modules, by partially inserting the module's name. This functionality is demonstrated in the example below.
 
 ```bash
-[steve@bohr.exabyte.io:~]$ module avail espresso
+[steve@login.mat3ra.com:~]$ module avail espresso
 ------------------------------------------------------------------------- /export/compute/modulefiles/applications --------------------------------------------------------------------------
 espresso/521-g-485-ompi-110                espresso/540-i-174-impi-044(default)       espresso/6.3-i-14.0.3.174-impi-5.0.2.044   espresso/660-g-1120-ompi-411
 espresso/5.2.1-g-4.8.5-ompi-1.10.0         espresso/600-g-485-ompi-110                espresso/63-i-174-impi-044                 espresso/6.7.0-g-11.2.0-ompi-4.1.1
