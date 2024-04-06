@@ -1,18 +1,22 @@
 # JupyterLite Transformation Dialog
 
-The JupyterLite Transformation Dialog enables the modification of materials within the JupyterLite environment, which is a lightweight implementation of JupyterLab that runs entirely in the browser. This dialog is accessible via the ["Advanced" menu](../advanced.md) within the Materials Designer interface.
+The JupyterLite Transformation Dialog enables the modification of materials using Python, Jupyter notebooks with widely used packages (e.g. numpy, pymatgen, ASE, etc.) within the [JupyterLite environment](https://github.com/jupyterlite), a lightweight implementation of JupyterLab that runs entirely in the web browser.
+
+## Open Dialog
+
+This dialog is accessible via the ["Advanced" menu](../advanced.md) option.
 
 ![Materials Designer header with Advanced menu opened](../../../images/materials-designer/jupyterlite_dialog/open-jupyterlite-dialog.webp "Open JupyterLite Transformation Dialog")
 
-## JupyterLite Transformation
+## JupyterLite Environment
 
-As depicted below, the JupyterLite Transformation Dialog facilitates the transfer of materials to the Python environment, allowing for transformations within Jupyter notebooks in the JupyterLite environment.
+The Dialog facilitates access to JupyterLite Environment where materials from the main application are available.
 
 ![JupyterLite Transformation dialog with Introduction.ipynb opened](../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation.webp "JupyterLite Transformation Dialog")
 
 ## Select Input Materials
 
-At the top of the dialog, a drop-down menu allows for the selection of materials to be transferred to the JupyterLite environment. These materials will then be available for further processing within JupyterLite.
+At the top of the dialog, a drop-down menu allows for the selection of materials to be transferred to the JupyterLite environment. These materials will then be available for further processing within.
 
 ![JupyterLite Transformation dialog with materials_in dropdown opened](../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation-input-materials.webp "Select Input Materials")
 
