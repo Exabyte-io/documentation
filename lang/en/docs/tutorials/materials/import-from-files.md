@@ -1,4 +1,4 @@
-# Import Materials from Files in various formats
+# Import Materials from files in various formats
 
 This tutorial explains how to import materials from files in various formats into the Materials Designer interface. With the help of notebook that uses ASE python package to extract structural information from files in multiple formats (CIF, POSCAR, etc., as supported by ASE). Some formats, like espresso-in and espresso-out can be inferred from the file content.
 
