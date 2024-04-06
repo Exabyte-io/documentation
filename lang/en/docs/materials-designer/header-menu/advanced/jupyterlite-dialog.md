@@ -61,7 +61,7 @@ The first parameter specifies the data that is being sent, which is "materials" 
 
 In most cases the result of the transformation is a set of materials that can be passed back to the Materials Designer. They will appear in the "Materials Out" dropdown at the bottom of the dialog. Select the materials you want to pass back to the Materials Designer and click the "Submit" button to complete the transformation.
 
-![JupyterLite Transformation dialog with materials_out dropdown opened](../../../../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation-submit-results.webp "Submit Results")
+![JupyterLite Transformation dialog with materials_out dropdown opened](../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation-submit-results.webp "Submit Results")
 
 ## Animation
 
