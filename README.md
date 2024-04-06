@@ -242,6 +242,8 @@ Then convert .png images to .webp using the following command in the target fold
 for file in $( ls *.png); do cwebp "${file}" -o "${file%*.png}.webp"; done
 ```
 
+For more details about webp, please refer to https://developers.google.com/speed/webp
+
 #### Including Images
 
 Including an image/screenshot is done as follows, in MKDocs notation (don't use HTML tags).
