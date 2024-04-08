@@ -52,22 +52,3 @@ See script source for options. Use the below regex to fix image links in WebStor
 / images / (\w+) /    <- contains a space as the final character
 /images/$1/
 ```
-
-## Converting images to webp format
-
-We recommend converting screenshot images to webp format for reduced size with
-better compression.
-
-You can install webp tool in macOS using homebrew:
-
-```console
-brew install webp
-```
-
-We may batch convert PNG images to webp:
-
-```console
-for file in $( ls *.png); do cwebp "${file}" -o "${file%*.png}.webp"; done
-```
-
-For more details about webp, please refer to https://developers.google.com/speed/webp

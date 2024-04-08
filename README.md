@@ -211,7 +211,7 @@ Use **ONLY RELATIVE** paths starting from the current page, not the absolute one
 
 ### Images and Animations
 
-Images (.png, .gif) are stored inside [images](images) directory and are automatically hosted on Git LFS.
+Images (.png, .webp, .gif) are stored inside [images](images) directory and are automatically hosted on Git LFS.
 This is an acceptable way to contribute images, as long as the size is kept small (below 1Mb each) in order to avoid exceeding Github LFS quota.
 
 > Note: Do NOT put videos inside this directory! Upload the video into your preferred online storage system such as Google Drive, DropBox, or YouTube, and share its link with us to review and put it up online.
@@ -229,6 +229,20 @@ good image title might be "icosahedral-copper-nanoparticle-blue-background." A "
 might be "copper-cu-nanoparticle-np-icosahedron-chemistry-nanomaterials-chemical-engineering-catalysis.png." A good rule of
 thumb for whether an image title is keyword-stuffed or not is to ask: "Is this a natural way of describing the
 image that would actually be used in a spoken conversation?"
+
+Preferred Image Format
+The .webp format is the preferred one, due to its size-effectiveness on the web. 
+To convert images to .webp format, make sure you have the `webp` package installed on your system. On MacOS, it can be done using Homebrew:
+```bash
+brew install webp
+```
+
+Then convert .png images to .webp using the following command in the target folder:
+```bash
+for file in $( ls *.png); do cwebp "${file}" -o "${file%*.png}.webp"; done
+```
+
+For more details about webp, please refer to https://developers.google.com/speed/webp
 
 #### Including Images
 
