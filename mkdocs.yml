@@ -150,6 +150,7 @@ nav:
                 - Fermi Surface:                           tutorials/dft/electronic/fermi-surface.md
                 - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
                 - Hubbard U (QE):                          tutorials/dft/electronic/hubbard.md
+                - Spin-magnetic (QE):                      tutorials/dft/electronic/spin-magnetic-qe.md
             - Optical Properties:
                 - Dielectric constant (QE, simple.x):    tutorials/dft/optical/epsilon-optimal-basis.md
             - Vibrational Prop.:
