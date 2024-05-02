@@ -13,6 +13,9 @@
         {
             "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
         },
+        "antiferromagnetic",
+        "bandstructure",
+        "ferromagnetic",
         "magnetic",
         "spin",
         "spin-magnetic",
