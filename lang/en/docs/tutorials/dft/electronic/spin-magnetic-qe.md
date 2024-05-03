@@ -41,7 +41,10 @@ in conjunction with spin-polarization, please select the respective template.
 ### 2.2. Bands calculation
 
 In the next step, we add a unit for bands calculation and select
-**pw_bands_magn** template.
+**pw_bands_magn** template. This performs `nscf` calculation along the specified
+k-path. We can set the desired k-path via the **Important Settings** tab.
+
+![Specify k-path for bands calculation](/images/tutorials/spin-magnetic/spin-k-path.webp "Specify k-path for bands calculation")
 
 ### 2.3. Bands.x postprocessing
 
