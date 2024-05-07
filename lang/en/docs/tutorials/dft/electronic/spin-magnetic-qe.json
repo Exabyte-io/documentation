@@ -114,17 +114,17 @@
             "endTime": "00:03:56.000"
         },
         {
-            "text": "If you need to adjust the compute parameters, please do so in the compute tab. Finally, save and exit job designer.",
+            "text": "If you need to adjust the compute parameters, you may do so in the compute tab. Save and exit the job designer.",
             "startTime": "00:03:58.000",
             "endTime": "00:04:18.000"
         },
         {
-            "text": "Now we are ready to submit our job. Let's click the play button, and wait for the job to complete.",
+            "text": "Now we are ready to submit our job. Click the play button, and wait for the job to complete.",
             "startTime": "00:04:19.000",
             "endTime": "00:04:24.000"
         },
         {
-            "text": "Once finished, let's navigate to the results tab. We will see separate plots for both up and down spin components of bandstructure. <break time='1.0' /> We can zoom out to see the bands near the Fermi energy more clearly.",
+            "text": "Once finished, let's navigate to the results tab. We will see separate plots for both up and down spin components of bandstructure. <break time='1.0' /> We can zoom in to see the bands near the Fermi energy more clearly.",
             "startTime": "00:04:25.000",
             "endTime": "00:04:38.000"
         },
@@ -139,5 +139,5 @@
             "endTime": "00:05:00.000"
         }
     ],
-    "youTubeId": "Sh_K277mJZ8"
+    "youTubeId": "-FVgw46gh3w"
 }
