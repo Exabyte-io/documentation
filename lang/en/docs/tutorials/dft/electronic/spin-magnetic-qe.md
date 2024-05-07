@@ -6,7 +6,7 @@ calculation using Quantum Espresso on our web platform.
 ## 1. Specify material structure
 
 First of all, to perform material simulation, we need to specify the
-material structure. We can create material on our platform using
+material structure. We can create a new material on our platform using
 **Materials Designer**. Alternatively, we can upload structure files (e.g., CIF,
 or VASP POTCAR format), or import materials from the **Materials bank** in
 Mat3ra platform.
@@ -20,8 +20,8 @@ this case, the unit cell has two Fe atoms, we added `Fe1` and `Fe2` labels.
 ## 2. Create workflow
 
 Below we will show how to create a workflow for spin magnetic bandstructure
-calculation. Alternatively, you may find the required workflow in the workflow
-bank in our platform, and you can import it to your library/account. Our example
+calculation. Alternatively, you may find the desired workflow in the workflow
+bank on our platform, and you can import it to your library/account. Our example
 calculation involves three steps:
 
 1. Perform self-consistent field (SCF) calculation
@@ -32,7 +32,7 @@ calculation involves three steps:
 
 ### 2.1. SCF workflow unit
 
-There are several templates for spin magnetic calculation. We choose
+There are several templates for spin magnetic calculation. Here we choose
 **pw_scf_magn**. If you like to perform **DFT+U**, **DFT+U+V**, or **DFT+U+J**
 in conjunction with spin-polarization, please select the respective template.
 
@@ -96,5 +96,5 @@ used for further analysis.
 In the below video, we go through an example calculation.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/Sh_K277mJZ8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/-FVgw46gh3w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
