@@ -4,6 +4,7 @@
 .virtualenv*
 .venv*
 /venv*
+/**/__pycache__
 tmp/
 py-googletrans
 oauth-key.json
