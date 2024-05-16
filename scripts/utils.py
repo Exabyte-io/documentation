@@ -26,12 +26,13 @@ def update_metadata(metadata_path, data):
         metadata_path (str): path to the metadata file.
         data (dict): the data to update metadata with.
     """
-    with open(metadata_path, 'r+') as f:
+    with open(metadata_path, "r+") as f:
         metadata = json.loads(f.read())
         metadata.update(data)
         f.seek(0)
         f.truncate()
         f.write(json.dumps(metadata, indent=4))
+        f.write("\n")  # EOL
 
 
 def flatten(data):
@@ -61,6 +62,6 @@ def caption_time_to_milliseconds(caption_time):
     Returns:
          int
     """
-    ms = caption_time.split('.')[1]
-    h, m, s = caption_time.split('.')[0].split(':')
+    ms = caption_time.split(".")[1]
+    h, m, s = caption_time.split(".")[0].split(":")
     return (int(h) * 3600 + int(m) * 60 + int(s)) * 1000 + int(ms)
