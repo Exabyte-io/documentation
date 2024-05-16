@@ -1,0 +1,143 @@
+{
+    "descriptionLinks": [
+        "Spin-magnetic calculation using Quantum ESPRESSO: https://docs.mat3ra.com/tutorials/dft/electronic/spin-magnetic-qe/"
+    ],
+    "description": "In this tutorial, we walk you through the steps of performing spin-magnetic bandstructure calculation using Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "antiferromagnetic",
+        "bandstructure",
+        "ferromagnetic",
+        "magnetic",
+        "spin",
+        "spin-magnetic",
+        "spin-polarized"
+    ],
+    "title": "Mat3ra Tutorial: Spin-magnetic calculation using Quantum ESPRESSO",
+    "youTubeCaptions": [
+        {
+            "text": "Welcome to our Matera tutorials series. In this short video, we will walk you through the steps of performing a spin-magnetic bandstructure calculation using Quantum ESPRESSO.",
+            "startTime": "00:00:01.000",
+            "endTime": "00:00:11.000"
+        },
+        {
+            "text": "Performing a materials simulation involves following steps in our web platform. First, <break time='0.5' /> we need to specify the material system by creating or uploading a material structure. <break time='0.5' /> Second, <break time='0.5' /> we have to specify the workflow steps. These two steps can be carried out in any order. You may either create the structure first and then workflow or the other way around. <break time='0.5' /> Note that you may skip the above steps if you already have the required structure or workflow in you library. You may also find the structure and workflow you are looking for in our extensive materials and workflows banks, respectively.",
+            "startTime": "00:00:12.000",
+            "endTime": "00:00:48.000"
+        },
+        {
+            "text": "Finally, we need to crate and submit job, where we can specify the materials system, the workflow steps, and compute parameters as suitable for a specific calculation.",
+            "startTime": "00:00:48.500",
+            "endTime": "00:00:59.000"
+        },
+        {
+            "text": "For today's demonstration, We will generate the material structure using materials designer in our web platform. Navigate to materials tab. <break time='1.5' /> Click create. <break time='3.0' /> We will clone the existing structure and then modify. Let's create iron oxide with cubic structure. <break time='3.0' /> Set the lattice constant. <break time='3.5' /> Set the atomic positions. <break time='2.0' /> There are two iron and two oxygen atoms in each unit cell. Notice that we have added label 1 and 2 to two iron atoms so that we can specify different spin states to them in antiferromagnetic spin calculation. <break time='1.0' />Finally, <break time='0.5' /> save the structure.",
+            "startTime": "00:01:00.000",
+            "endTime": "00:01:48.000"
+        },
+        {
+            "text": "Now we are ready to create the workflow. Navigate to workflows tab and click create new workflow.",
+            "startTime": "00:01:49.000",
+            "endTime": "00:01:55.000"
+        },
+        {
+            "text": "Let's rename our workflow to spin magnetic.",
+            "startTime": "00:01:56.000",
+            "endTime": "00:01:58.000"
+        },
+        {
+            "text": "We are going to use the latest version of quantum espresso with G N U build.",
+            "startTime": "00:01:59.000",
+            "endTime": "00:02:03.000"
+        },
+        {
+            "text": "Click edit workflow unit. <break time='1.0' /> Expand the details pane.",
+            "startTime": "00:02:04.000",
+            "endTime": "00:02:08.000"
+        },
+        {
+            "text": "There are several magnetic templates available. For simplicity, we will use the p w s c f magnetic template. But, you could select the templates for D F T plus U or D F T plus U plus V or J templates if you needed. Close the unit modal.",
+            "startTime": "00:02:09.000",
+            "endTime": "00:02:23.000"
+        },
+        {
+            "text": "Next, we need to perform the bands calculation, so we add a new unit for that.",
+            "startTime": "00:02:24.000",
+            "endTime": "00:02:30.000"
+        },
+        {
+            "text": "Here, we select the p w bands magnetic template.",
+            "startTime": "00:02:34.000",
+            "endTime": "00:02:35.000"
+        },
+        {
+            "text": "Finally, we need to do the postprocessing of bands obtained in the above steps. Add another unit. <break time='4.0' /> This time select bands dot x executable.",
+            "startTime": "00:02:38.000",
+            "endTime": "00:02:52.000"
+        },
+        {
+            "text": "We would like to process one type of spin at a time, that is, either up spin or down spin. Let's set the spin component equal to 1 for up spin. Rename the fill bands file name and the unit names accordingly.",
+            "startTime": "00:02:53.000",
+            "endTime": "00:03:05.000"
+        },
+        {
+            "text": "The same way, we add another unit to process the down spin component. <break time='4.0' />Set the spin component equal to 2 for that.",
+            "startTime": "00:03:08.000",
+            "endTime": "00:03:17.000"
+        },
+        {
+            "text": "Save and exit the workflow.",
+            "startTime": "00:03:23.000",
+            "endTime": "00:03:26.000"
+        },
+        {
+            "text": "Navigate to jobs tab, <break time='0.5' />click create new job. <break time='3.0' />Import materials and select iron oxide. <break time='3.0' />Import workflow and select spin magnetic that we just created.",
+            "startTime": "00:03:27.000",
+            "endTime": "00:03:44.000"
+        },
+        {
+            "text": "Navigate to important settings tab. We want to perform antiferromagnetic spin calculation. For that we would like to set the starting magnetization for F E one site to minus one and F E two site to plus one.",
+            "startTime": "00:03:45.000",
+            "endTime": "00:03:56.000"
+        },
+        {
+            "text": "We have to do the same for both S C F and bands units. However, note that the starting magnetization may not be read for bands calculation. Please refer to the quantum espresso documentation for more details.",
+            "startTime": "00:03:57.000",
+            "endTime": "00:03:56.000"
+        },
+        {
+            "text": "If you need to adjust the compute parameters, you may do so in the compute tab. Save and exit the job designer.",
+            "startTime": "00:03:58.000",
+            "endTime": "00:04:18.000"
+        },
+        {
+            "text": "Now we are ready to submit our job. Click the play button, and wait for the job to complete.",
+            "startTime": "00:04:19.000",
+            "endTime": "00:04:24.000"
+        },
+        {
+            "text": "Once finished, let's navigate to the results tab. We will see separate plots for both up and down spin components of bandstructure. <break time='1.0' /> We can zoom in to see the bands near the Fermi energy more clearly.",
+            "startTime": "00:04:25.000",
+            "endTime": "00:04:38.000"
+        },
+        {
+            "text": "Of course, if you need to do further analysis, you can find all output files under the results tab. You can use a Jupyter notebook session in our platform or download the files in your local computer for further analysis.",
+            "startTime": "00:04:40.000",
+            "endTime": "00:04:52.000"
+        },
+        {
+            "text": "Now, visit platform dot matera dot com to explore more yourself. Thank you for watching this tutorial.",
+            "startTime": "00:04:53.000",
+            "endTime": "00:05:00.000"
+        }
+    ],
+    "youTubeId": "-FVgw46gh3w"
+}
