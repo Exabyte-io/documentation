@@ -1,0 +1,69 @@
+{
+    "descriptionLinks": [
+        "How to incorporate spin-orbit coupling in Quantum ESPRESSO: https://docs.mat3ra.com/tutorials/dft/electronic/soc-qe/"
+    ],
+    "description": "In this tutorial, we walk you through the steps of incorporate spin-orbit coupling effect in bandstructure calculation using Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "bandstructure",
+        "slab",
+        "soc",
+        "spin",
+        "spin-orbit-coupling",
+        "supercell",
+        "surface-state",
+        "topological-insulator"
+    ],
+    "title": "Mat3ra Tutorial: How to incorporate spin-orbit coupling in Quantum ESPRESSO",
+    "youTubeCaptions": [
+        {
+            "text": "Hi, <break time='0.5' /> in this short tutorial, we will demonstrate how to incorporate spin-orbit coupling effect in density functional theory calculations using Quantum ESPRESSO. <break time='0.5' /> We will also go through how to build supercell and slabs structures.",
+            "startTime": "00:00:00.500",
+            "endTime": "00:00:15.100"
+        },
+        {
+            "text": "Performing a density functional theory simulation involves following steps in our web platform. First, <break time='0.5'/> we need to specify the material system by creating or uploading a material structure. <break time='0.5'/> Second, <break time='0.5'/> we have to specify the workflow steps. These two steps can be carried out in any order. You may either create the structure first and then workflow or the other way around. <break time='0.5'/> Note that you may skip the above steps if you already have the required structure or workflow in you library.",
+            "startTime": "00:00:16.000",
+            "endTime": "00:00:46.000"
+        },
+        {
+            "text": "You may also find the structure and workflow you are looking for in our extensive materials and workflows banks, respectively.",
+            "startTime": "00:00:46.500",
+            "endTime": "00:00:53.000"
+        },
+        {
+            "text": "Finally, we need to crate and submit job, where we can specify the materials system, the workflow steps, and compute parameters as suitable for a specific calculation.",
+            "startTime": "00:00:54.000",
+            "endTime": "00:01:04.000"
+        },
+        {
+            "text": "For current demonstration, we will generate the material structure using materials designer in our web platform. Navigate to materials tab. <break time='1.5'/> Click create. <break time='3.0'/> Let's clone the existing structure and modify it.",
+            "startTime": "00:01:05.000",
+            "endTime": "00:01:22.000"
+        },
+        {
+            "text": "We will create bismuth selenide slab. Bismuth selenide is a prototypical topological insulating material, which features a bulk bandgap and conducting surface state.",
+            "startTime": "00:01:22.500",
+            "endTime": "00:01:33.000"
+        },
+        {
+            "text": "Bismuth selenide has hexagonal crystal structure. Set the lattice parameters and atomic positions accordingly. Here we will create a slab which has a surface in order to show the topological surface states. Keep in mind that density functional theory calculation can only be performed on periodic systems. We can create create surface by adding finite vacuum to the unit cell.",
+            "startTime": "00:01:34.000",
+            "endTime": "00:01:41.000"
+        },
+        {
+            "text": "One way to do that is by keeping the cartesian coordinates of atoms same and increase the lattice vector C. Here we added a vacuum of about five angstrom in the A B plane.",
+            "startTime": "00:01:41.500",
+            "endTime": "00:02:07.000"
+        }
+    ],
+    "youTubeId": ""
+}
