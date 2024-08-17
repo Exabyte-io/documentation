@@ -40,7 +40,7 @@ Add an execution unit, and select **pw_scf_soc** template, there are few other
 SOC templates that you may explore, for example, SOC in conjunction with the
 Hubbard U calculation.
 
-![SOC templates](/images/tutorials/soc/soc-flavors.webp "SOC templates")
+![SOC templates](/images/tutorials/soc/spin-orbit-coupling-flavors.webp "SOC templates")
 
 ### 2.2. PW Bands calculation
 Add the next execution unit for PW *bands* calculation. Here we select
@@ -48,9 +48,10 @@ Add the next execution unit for PW *bands* calculation. Here we select
 can be specified in the **Important Settings** tab.
 
 ### 2.3. Bands.x postprocessing
-Finally, we add another unit for postprocessing of our bands data (optional).
+Finally, we add another unit for postprocessing of our bands data. This is an
+optional step for the post-processing of the bandstructure data.
 
-![Bandstructure with SOC workflow](/images/tutorials/soc/soc-workflow.webp "Bandstructure with SOC workflow")
+![Bandstructure with SOC workflow](/images/tutorials/soc/spin-orbit-coupling-workflow.webp "Bandstructure with SOC workflow")
 
 
 ## 3. Job designer
@@ -88,6 +89,12 @@ comparing the. For bulk-only calculation, there should be a bandgap. All output
 files are available under the **Files** tab. One may use Jupyter notebook
 session in our platform, or download the files to the local computer for further
 analysis.
+
+![Spin-orbit coupling results](/images/tutorials/soc/spin-orbit-coupling-results.webp "Spin-orbit coupling results")
+
+Note that above bandstructure plot in the result tab is obtained using coarse
+convergence criterion. We need more stringent convergence parameters to see the
+topological Dirac states clearly.
 
 
 ## Step-by-step screenshare video
