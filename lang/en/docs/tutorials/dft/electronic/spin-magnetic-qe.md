@@ -50,14 +50,15 @@ k-path. We can set the desired k-path via the **Important Settings** tab.
 
 ![bands.x settings](/images/tutorials/spin-magnetic/spin-bands-x.webp "bands.x settings")
 
-In the final step, we add `bands.x` calculation. We are interested in
-processing one type of spin (i.e., up or down) state. We can do that by
-specifying `spin_component = 1` for **up** spin, or `spin_component = 2` for
-**down** spin. So we add two units, one to process only **up** and another to
-process **down** spin only. We update the `filbands` filenames so that the
-outputs are written to different files for up/down spins. It is recommended to
-give each unit a distinct name, otherwise, some of the generated files might be
-overwritten.
+In the final step, we add `bands.x` calculation. This step is optional, and
+used for further postprocessing of already calculated bandstructure data in the
+above steps. We are interested in processing one type of spin (i.e., up or down)
+state. We can do that by specifying `spin_component = 1` for **up** spin, or
+`spin_component = 2` for **down** spin. So we add two units, one to process only
+**up** and another to process **down** spin only. We update the `filbands`
+filenames so that the outputs are written to different files for up/down spins.
+It is recommended to give each unit a distinct name, otherwise, some of the
+generated files might be overwritten.
 
 ## 3. Job designer
 
@@ -89,6 +90,13 @@ Finally, we are ready for job submission.
 Once the job is completed, the bandstructure plots are shown in the **Results**
 tab. All input and output files can be found in the **Files** tab and can be
 used for further analysis.
+
+**Updated in platform version 2024.8.22:** Both spin components (if present) are
+now shown in the same plot with different colors. Following plot shows the spin
+resolved bandstructure of nickel, where blue and orange colors represent up and
+down spin components, respectively.
+
+![Spin resolved bandstructure of Ni](/images/tutorials/spin-magnetic/ni-spin-resolved-bandstructure.webp "Spin resolved bandstructure of Ni")
 
 
 ## Step-by-step screenshare video
