@@ -1,0 +1,59 @@
+{
+    "descriptionLinks": [
+        "How to incorporate spin-orbit coupling in Quantum ESPRESSO: https://docs.mat3ra.com/tutorials/dft/electronic/soc-qe/"
+    ],
+    "description": "In this tutorial, we walk you through the steps of incorporate spin-orbit coupling effect in bandstructure calculation using Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "bandstructure",
+        "slab",
+        "soc",
+        "spin",
+        "spin-orbit-coupling",
+        "supercell",
+        "surface-state",
+        "topological-insulator"
+    ],
+    "title": "Mat3ra Tutorial: How to incorporate spin-orbit coupling in Quantum ESPRESSO",
+    "youTubeCaptions": [
+        {
+            "text": "We would like to increase the density of k grid for self consistent field calculation.",
+            "startTime": "00:00:06.000",
+            "endTime": "00:00:11.000"
+        },
+        {
+            "text": "Navigate to the compute tab.",
+            "startTime": "00:00:14.000",
+            "endTime": "00:00:15.500"
+        },
+        {
+            "text": "Here we can adjust time limit <break time='1.0'/>, cluster <break time='2.0'/>, queue <break time='3.0'/>, number of nodes <break time='1.0'/>, and number of processor cores. <break time='2.0'/> Save and exit job designer.<break time='2.0'/> Finally, click the run button to submit job.",
+            "startTime": "00:00:17.000",
+            "endTime": "00:00:38.000"
+        },
+        {
+            "text": "Once the job is finished, navigate to the results tab. Here we will find summary of various result including the bandstructure plot. If we zoom in, we can see the bands near the Fermi energy more clearly. Note the bandstucture we are currently looking at, was obtained with coarse convergence criterion. You need to increase the k grid density and stringent energy threshold to see the topological Dirac states clearly. You can compare the bandstructure for slab and bulk calculation, and identify the surface states.",
+            "startTime": "00:00:39.000",
+            "endTime": "00:01:07.000"
+        },
+        {
+            "text": "All output files can be found under the files tab for further analysis.",
+            "startTime": "00:01:08.000",
+            "endTime": "00:01:13.000"
+        },
+        {
+            "text": "Thank you for watching this tutorial. Now, explore more yourself at platform dot matera dot com.",
+            "startTime": "00:01:14.000",
+            "endTime": "00:01:19.000"
+        }
+    ],
+    "youTubeId": "Zr1jcalLYPU"
+}

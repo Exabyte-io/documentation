@@ -27,7 +27,7 @@ extra_javascript:
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2024.3.14"
+    version: "2024.8.22"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
@@ -151,6 +151,7 @@ nav:
                 - Valence Band Offset:                     tutorials/dft/electronic/valence-band-offset.md
                 - Hubbard U (QE):                          tutorials/dft/electronic/hubbard.md
                 - Spin-magnetic (QE):                      tutorials/dft/electronic/spin-magnetic-qe.md
+                - Spin-orbit coupling (QE):                tutorials/dft/electronic/spin-orbit-coupling-qe.md
             - Optical Properties:
                 - Dielectric constant (QE, simple.x):    tutorials/dft/optical/epsilon-optimal-basis.md
             - Vibrational Prop.:

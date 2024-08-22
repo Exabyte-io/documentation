@@ -1,0 +1,159 @@
+{
+    "descriptionLinks": [
+        "How to incorporate spin-orbit coupling in Quantum ESPRESSO: https://docs.mat3ra.com/tutorials/dft/electronic/soc-qe/"
+    ],
+    "description": "In this tutorial, we walk you through the steps of incorporate spin-orbit coupling effect in bandstructure calculation using Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "bandstructure",
+        "slab",
+        "soc",
+        "spin",
+        "spin-orbit-coupling",
+        "supercell",
+        "surface-state",
+        "topological-insulator"
+    ],
+    "title": "Mat3ra Tutorial: How to incorporate spin-orbit coupling in Quantum ESPRESSO",
+    "youTubeCaptions": [
+        {
+            "text": "Hi, <break time='0.5'/> in this short tutorial, we will demonstrate how to incorporate spin-orbit coupling effect in density functional theory calculations using Quantum ESPRESSO. <break time='0.5'/> We will also go through how to build supercell and slabs structures.",
+            "startTime": "00:00:00.500",
+            "endTime": "00:00:15.100"
+        },
+        {
+            "text": "Performing a density functional theory simulation involves following steps in our web platform. First, <break time='0.5'/> we need to specify the material system by creating or uploading a material structure. <break time='0.5'/> Second, <break time='0.5'/> we have to specify the workflow steps. These two steps can be carried out in any order. You may either create the structure first and then workflow or the other way around. <break time='0.5'/> Note that you may skip the above steps if you already have the required structure or workflow in you library.",
+            "startTime": "00:00:16.000",
+            "endTime": "00:00:46.000"
+        },
+        {
+            "text": "You may also find the structure and workflow you are looking for in our extensive materials and workflows banks, respectively.",
+            "startTime": "00:00:46.500",
+            "endTime": "00:00:53.000"
+        },
+        {
+            "text": "Finally, we need to crate and submit job, where we can specify the materials system, the workflow steps, and compute parameters as suitable for a specific calculation.",
+            "startTime": "00:00:54.000",
+            "endTime": "00:01:04.000"
+        },
+        {
+            "text": "For current demonstration, we will generate the material structure using materials designer in our web platform. Navigate to materials tab. <break time='1.5'/> Click create. <break time='3.0'/> Let's clone the existing structure and modify it.",
+            "startTime": "00:01:05.000",
+            "endTime": "00:01:22.000"
+        },
+        {
+            "text": "We will create bismuth selenide slab. Bismuth selenide is a prototypical topological insulating material, which features a bulk bandgap and conducting surface state.",
+            "startTime": "00:01:22.500",
+            "endTime": "00:01:33.000"
+        },
+        {
+            "text": "Bismuth selenide has hexagonal crystal structure. Set the lattice parameters and atomic positions accordingly. Here we will create a slab which has a surface in order to show the topological surface states. Keep in mind that density functional theory calculation can only be performed on periodic systems. We can create surface by adding finite vacuum to the unit cell.",
+            "startTime": "00:01:34.000",
+            "endTime": "00:01:56.000"
+        },
+        {
+            "text": "We add an extra selenium atom to the structure, which actually belongs to the next unit cell in the periodic system, and equivalent to the selenium atom at coordinate zero zero zero, so that we are not left with dangling Bismuth bonds.",
+            "startTime": "00:01:57.000",
+            "endTime": "00:02:12.000"
+        },
+        {
+            "text": "To add vacuum layer, we select preserving the interatomic distances and increase the lattice vector C. Here we added a vacuum of about ten angstrom in the A B plane.",
+            "startTime": "00:02:12.500",
+            "endTime": "00:02:23.000"
+        },
+        {
+            "text": "If we enable the repetitions it will be more clear that every layer is accompanied by a vacuum layer.",
+            "startTime": "00:02:24.000",
+            "endTime": "00:02:30.000"
+        },
+        {
+            "text": "Now let's save the structure.",
+            "startTime": "00:02:36.000",
+            "endTime": "00:02:38.000"
+        },
+        {
+            "text": "Note that instead of monolayer slab in this case, we could build slab with bi-layer or any other super cell. <break time='2.0'/>You may like to explore various advanced options to build structures in our platform.",
+            "startTime": "00:02:42.000",
+            "endTime": "00:02:54.000"
+        },
+        {
+            "text": "Next navigate to the workflows page to specify the workflow steps for spin orbit coupling calculation.",
+            "startTime": "00:02:55.000",
+            "endTime": "00:03:06.000"
+        },
+        {
+            "text": "We are going to use latest version of quantum espresso built with intel libraries.",
+            "startTime": "00:03:12.000",
+            "endTime": "00:03:20.000"
+        },
+        {
+            "text": "For spin orbit coupling calculation, we will need fully relativistic pseudopotential.",
+            "startTime": "00:03:21.000",
+            "endTime": "00:03:25.000"
+        },
+        {
+            "text": "Click edit unit, and select P W SCF S O C template.",
+            "startTime": "00:03:26.000",
+            "endTime": "00:03:30.000"
+        },
+        {
+            "text": "Add next unit for the bands calculation.",
+            "startTime": "00:03:35.000",
+            "endTime": "00:03:38.000"
+        },
+        {
+            "text": "Select P W bands S O C template.",
+            "startTime": "00:03:42.000",
+            "endTime": "00:03:44.000"
+        },
+        {
+            "text": "Finally add the bands dot x postprocessing unit.",
+            "startTime": "00:03:46.000",
+            "endTime": "00:03:48.000"
+        },
+        {
+            "text": "Save and exit workflow.",
+            "startTime": "00:03:57.000",
+            "endTime": "00:03:58.000"
+        },
+        {
+            "text": "Finally, navigate to the job designer. Create a new job, you may create it under a specific project or inside the default project. <break time='8.0'/> Select bismuth selenide slab as material. <break time='6.0'/>Select bismuth selenide spin orbit coupling workflow.",
+            "startTime": "00:04:01.000",
+            "endTime": "00:04:23.000"
+        },
+        {
+            "text": "Now click view unit. <break time='3.0'/> We will see template with various Jinja variable place holders. <break time='2.0'/> We can also preview the actual rendered input file.",
+            "startTime": "00:04:28.000",
+            "endTime": "00:04:41.000"
+        },
+        {
+            "text": "The variables in jinja placeholders can be modified in the important settings tab. If necessary, one can override an input parameter, or add new parameters by directly editing the template. For example, we can add better convergence threshold for self consistent field calculation.",
+            "startTime": "00:04:42.000",
+            "endTime": "00:05:00.000"
+        },
+        {
+            "text": "Similarly, you may want to edit other input templates. Let's navigate to important setting tab, and update various parameters as suitable.",
+            "startTime": "00:05:02.000",
+            "endTime": "00:05:10.000"
+        },
+        {
+            "text": "Specific to spin orbit coupling calculation, we can set the starting magnetization for each atomic species. In this case both are non-magnetic atoms. We could also start a calculation from a previously converged calculation that was done without spin orbit coupling enabled. Explore other available advanced options.",
+            "startTime": "00:05:17.000",
+            "endTime": "00:05:35.000"
+        },
+        {
+            "text": "Scroll down to bands calculation, here we can edit the k path for bands calculation, and number of points between specified k points.",
+            "startTime": "00:05:34.000",
+            "endTime": "00:05:44.000"
+        }
+    ],
+    "youTubeId": "Zr1jcalLYPU"
+}
