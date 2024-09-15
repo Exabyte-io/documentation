@@ -36,9 +36,10 @@ extra:
           link: https://github.com/exabyte-io
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/company/mat3ra/
-   analytics:
-       provider: google
-       property: UA-69270713-5
+    analytics:
+        provider: google
+        property: UA-69270713-5
+
 markdown_extensions:
     # - markdown_include.include:
     #     base_path: data
