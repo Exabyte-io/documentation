@@ -19,7 +19,7 @@ Bi<sub>2</sub>Se<sub>3</sub>), original lattice constants, and atomic positions.
 Then select **Preserve Interatomic Distance** and increase to lattice vector
 **c** to add vacuum to the ab-plane.
 
-![Bi2Se3 slab structure](/images/tutorials/soc/bi2se3-slab.webp "Bi2Se3 slab structure")
+![Bi2Se3 slab structure](../../../images/tutorials/soc/bi2se3-slab.webp "Bi2Se3 slab structure")
 
 
 ## 2. Create workflow
@@ -33,14 +33,14 @@ bandstructure with the spin-orbit coupling effect:
 Note that for SOC calculation, we need to select fully relativistic
 pseudopotential.
 
-![Relativistic pseudopotential](/images/tutorials/soc/relativistic-pseudo.webp "Relativistic pseudopotential")
+![Relativistic pseudopotential](../../../images/tutorials/soc/relativistic-pseudo.webp "Relativistic pseudopotential")
 
 ### 2.1. Self-consistent field calculation
 Add an execution unit, and select **pw_scf_soc** template, there are few other
 SOC templates that you may explore, for example, SOC in conjunction with the
 Hubbard U calculation.
 
-![SOC templates](/images/tutorials/soc/spin-orbit-coupling-flavors.webp "SOC templates")
+![SOC templates](../../../images/tutorials/soc/spin-orbit-coupling-flavors.webp "SOC templates")
 
 ### 2.2. PW Bands calculation
 Add the next execution unit for PW *bands* calculation. Here we select
@@ -51,14 +51,14 @@ can be specified in the **Important Settings** tab.
 Finally, we add another unit for postprocessing of our bands data. This is an
 optional step for the post-processing of the bandstructure data.
 
-![Bandstructure with SOC workflow](/images/tutorials/soc/spin-orbit-coupling-workflow.webp "Bandstructure with SOC workflow")
+![Bandstructure with SOC workflow](../../../images/tutorials/soc/spin-orbit-coupling-workflow.webp "Bandstructure with SOC workflow")
 
 
 ## 3. Job designer
 Navigate to the jobs designer page from the left sidebar and click
 **Create New** job. Select material and workflow.
 
-![Select material and workflow](/images/tutorials/soc/select-material-and-workflow.webp "Select material and workflow")
+![Select material and workflow](../../../images/tutorials/soc/select-material-and-workflow.webp "Select material and workflow")
 
 We can further edit the workflow units, and set various parameters under the
 **Important Settings** tab. Here we can set the k-grid density, starting
@@ -67,13 +67,13 @@ possible to start a SOC calculation from a previously converged SCF charge
 density that was performed without SOC, which takes shorter time than starting
 calculation without any starting charge density.
 
-![Important settings](/images/tutorials/soc/important-settings.webp "Important settings")
+![Important settings](../../../images/tutorials/soc/important-settings.webp "Important settings")
 
 Navigate to the **Compute** and set various computer parameters, such as, time
 limit for a given calculation, queue, number of nodes, and number of processor
 cores per node.
 
-![Compute parameters](/images/tutorials/soc/compute-parameters.webp "Compute parameters")
+![Compute parameters](../../../images/tutorials/soc/compute-parameters.webp "Compute parameters")
 
 Save and exit job designer, now hover over the job, and click the run button to
 submit job.
@@ -90,7 +90,7 @@ files are available under the **Files** tab. One may use Jupyter notebook
 session in our platform, or download the files to the local computer for further
 analysis.
 
-![Spin-orbit coupling results](/images/tutorials/soc/spin-orbit-coupling-results.webp "Spin-orbit coupling results")
+![Spin-orbit coupling results](../../../images/tutorials/soc/spin-orbit-coupling-results.webp "Spin-orbit coupling results")
 
 Note that above bandstructure plot in the result tab is obtained using coarse
 convergence criterion. We need more stringent convergence parameters to see the

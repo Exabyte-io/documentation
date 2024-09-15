@@ -11,7 +11,7 @@ material structure. We can create a new material on our platform using
 or VASP POTCAR format), or import materials from the **Materials bank** in
 Mat3ra platform.
 
-![materials designer with atomic labels](/images/tutorials/spin-magnetic/spin-materials-designer.webp "materials designer with atomic labels")
+![materials designer with atomic labels](../../../images/tutorials/spin-magnetic/spin-materials-designer.webp "materials designer with atomic labels")
 
 Notice, that if we want to assign different spin states (i.e., up or down) to
 the same atomic species, we must add numeric labels to the atomic symbols. In
@@ -28,7 +28,7 @@ calculation involves three steps:
 2. Perform bands (NSCF) calculation along specific k-path
 3. Post-processing of bands calculation
 
-![Various workflow units for spin magnetic bandstructure calculation](/images/tutorials/spin-magnetic/spin-full-workflow.webp "Various workflow units for spin magnetic bandstructure calculation")
+![Various workflow units for spin magnetic bandstructure calculation](../../../images/tutorials/spin-magnetic/spin-full-workflow.webp "Various workflow units for spin magnetic bandstructure calculation")
 
 ### 2.1. SCF workflow unit
 
@@ -36,7 +36,7 @@ There are several templates for spin magnetic calculation. Here we choose
 **pw_scf_magn**. If you like to perform **DFT+U**, **DFT+U+V**, or **DFT+U+J**
 in conjunction with spin-polarization, please select the respective template.
 
-![Various spin magnetic flavors available](/images/tutorials/spin-magnetic/spin-flavors.webp "Various spin magnetic flavors available")
+![Various spin magnetic flavors available](../../../images/tutorials/spin-magnetic/spin-flavors.webp "Various spin magnetic flavors available")
 
 ### 2.2. Bands calculation
 
@@ -44,11 +44,11 @@ In the next step, we add a unit for bands calculation and select
 **pw_bands_magn** template. This performs `nscf` calculation along the specified
 k-path. We can set the desired k-path via the **Important Settings** tab.
 
-![Specify k-path for bands calculation](/images/tutorials/spin-magnetic/spin-k-path.webp "Specify k-path for bands calculation")
+![Specify k-path for bands calculation](../../../images/tutorials/spin-magnetic/spin-k-path.webp "Specify k-path for bands calculation")
 
 ### 2.3. Bands.x postprocessing
 
-![bands.x settings](/images/tutorials/spin-magnetic/spin-bands-x.webp "bands.x settings")
+![bands.x settings](../../../images/tutorials/spin-magnetic/spin-bands-x.webp "bands.x settings")
 
 In the final step, we add `bands.x` calculation. This step is optional, and
 used for further postprocessing of already calculated bandstructure data in the
@@ -75,7 +75,7 @@ above step. However, note that `starting_magnetization` may not be used in case
 https://www.quantum-espresso.org/Doc/INPUT_PW.html) for more clarity. It is safe
 to set the `starting_magnetization` the same as `scf` step.
 
-![set starting magnetization](/images/tutorials/spin-magnetic/spin-context-provider.webp "set starting magnetization")
+![set starting magnetization](../../../images/tutorials/spin-magnetic/spin-context-provider.webp "set starting magnetization")
 
 Instead of specifying the `starting_magnetization`, we could alternatively
 specify the `total_magnetization` if wanted.
@@ -85,7 +85,7 @@ Finally, we are ready for job submission.
 
 ## 4. Results
 
-![Bandstructure plots](/images/tutorials/spin-magnetic/spin-bandstructure-plots.webp "Bandstructure plots")
+![Bandstructure plots](../../../images/tutorials/spin-magnetic/spin-bandstructure-plots.webp "Bandstructure plots")
 
 Once the job is completed, the bandstructure plots are shown in the **Results**
 tab. All input and output files can be found in the **Files** tab and can be
@@ -96,7 +96,7 @@ now shown in the same plot with different colors. Following plot shows the spin
 resolved bandstructure of nickel, where blue and orange colors represent up and
 down spin components, respectively.
 
-![Spin resolved bandstructure of Ni](/images/tutorials/spin-magnetic/ni-spin-resolved-bandstructure.webp "Spin resolved bandstructure of Ni")
+![Spin resolved bandstructure of Ni](../../../images/tutorials/spin-magnetic/ni-spin-resolved-bandstructure.webp "Spin resolved bandstructure of Ni")
 
 
 ## Step-by-step screenshare video
