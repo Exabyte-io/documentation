@@ -124,3 +124,9 @@ a:visited {
     background-color: black;
     color: white;
 }
+
+.md-footer-copyright {
+    font-size: 0.8em;
+    color: grey;
+    padding-top: 0.5em;
+}
