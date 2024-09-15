@@ -5,7 +5,7 @@ Following the [general introduction](concept.md) to the templating concepts and 
 ## Contexts in our Platform
 
 As explained [in this section](concept.md#template-rendering), templates are rendered on web interface and computing clusters separately. For that reason there are two different contexts passed to the templates on our platform as described below.
- 
+
 ### Design-time Context
 
 The context available to templates on web interface, containing materials, workflow's important settings, etc. An example context is provided in the [templating examples](examples.md).
@@ -18,7 +18,7 @@ The context passed to the templates at runtime. This context provides system-lev
 
 The "Raw" filter syntax is used to prevent the Web Interface from rendering variables during the **Design-time Rendering**, given that such variables are only available during the ensuing **Runtime Rendering**. Hence, for example, the above-mentioned `JOB_WORK_DIR` variable would need to be entered as follows in a [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) input file template, containing the line which defines the pseudopotential directory inside the [Working Directory](../../jobs-cli/batch-scripts/directories.md).
 
-```jinja2
+```jinja
 pseudo_dir = {% raw %}'{{ JOB_WORK_DIR }}/pseudo'{% endraw %}
 ```
 
@@ -36,8 +36,8 @@ grep "NBANDS" ./OUTCAR | awk '{print $3}'
 
 Then the units inside any of the ensuing subworkflows can reference the result of the above unit at execution stage, by using a special `stdout` variable inside their input templates as follows.
 
-```jinja2
-NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %} 
+```jinja
+NBANDS = {% raw %} {{grep-nbands.stdout}} {% endraw %}
 ```
 
 Note the usage of the aforementioned "Raw" filter, in order to make sure that no Design-time rendering is performed in this case.
