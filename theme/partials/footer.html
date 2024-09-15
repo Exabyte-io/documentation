@@ -4,24 +4,34 @@
 <footer class="md-footer">
 
   <!-- Link to previous and/or next page -->
-  {% if page.previous_page or page.next_page %}
-    <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="{{ lang.t('footer.title') }}">
+  {% if "navigation.footer" in features %}
+    {% if page.previous_page or page.next_page %}
+      {% if page.meta and page.meta.hide %}
+        {% set hidden = "hidden" if "footer" in page.meta.hide %}
+      {% endif %}
+      <nav
+        class="md-footer__inner md-grid"
+        aria-label="{{ lang.t('footer') }}"
+        {{ hidden }}
+      >
 
         <!-- Link to previous page -->
         {% if page.previous_page %}
-        <a href="{{ page.previous_page.url | url }}"
-           title="{{ page.previous_page.title | striptags }}"
-           class="md-footer-nav__link md-footer-nav__link--prev"
-           rel="prev">
-           <div class="md-footer-nav__button md-icon">
-            {% include ".icons/material/arrow-left.svg" %}
+          {% set direction = lang.t("footer.previous") %}
+          <a
+            href="{{ page.previous_page.url | url }}"
+            class="md-footer__link md-footer__link--prev"
+            aria-label="{{ direction }}: {{ page.previous_page.title | e }}"
+          >
+            <div class="md-footer__button md-icon">
+              {% set icon = config.theme.icon.previous or "material/arrow-left" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
             </div>
-            <div class="md-footer-nav__title">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                {{ direction }}
+              </span>
               <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  {{ lang.t("footer.previous") }}
-                </span>
                 {{ page.previous_page.title }}
               </div>
             </div>
@@ -30,25 +40,28 @@
 
         <!-- Link to next page -->
         {% if page.next_page %}
-        <a href="{{ page.next_page.url | url }}"
-           title="{{ page.next_page.title | striptags }}"
-           class="md-footer-nav__link md-footer-nav__link--next"
-           rel="next">
-            <div class="md-footer-nav__title">
+          {% set direction = lang.t("footer.next") %}
+          <a
+            href="{{ page.next_page.url | url }}"
+            class="md-footer__link md-footer__link--next"
+            aria-label="{{ direction }}: {{ page.next_page.title | e }}"
+          >
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                {{ direction }}
+              </span>
               <div class="md-ellipsis">
-                <span class="md-footer-nav__direction">
-                  {{ lang.t("footer.next") }}
-                </span>
                 {{ page.next_page.title }}
               </div>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              {% include ".icons/material/arrow-right.svg" %}
+            <div class="md-footer__button md-icon">
+              {% set icon = config.theme.icon.next or "material/arrow-right" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
             </div>
           </a>
         {% endif %}
       </nav>
-    </div>
+    {% endif %}
   {% endif %}
 
   <!-- Further information -->
@@ -58,16 +71,16 @@
       <!-- Copyright and theme information -->
       <div class="md-footer-copyright">
         {% if config.copyright %}
-          <div class="md-footer-copyright__highlight">
-            &copy; {{ build_date_utc.strftime('%Y') }} {{ config.copyright }}
-          </div>
+        <div class="md-footer-copyright__highlight">
+          &copy; {{ build_date_utc.strftime('%Y') }} {{ config.copyright }}
+        </div>
         {% endif %}
         Exabyte.io v{{ config.extra.version }}. Built in San Francisco, CA, USA.
       </div>
 
       <!-- Social links -->
       {% block social %}
-        {% include "partials/social.html" %}
+      {% include "partials/social.html" %}
       {% endblock %}
     </div>
   </div>
