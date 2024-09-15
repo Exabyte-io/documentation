@@ -27,7 +27,8 @@
     border-radius: 0;
     border: none;
     box-shadow: none;
-    margin-top: -17px;
+    margin-top: -15px;
+    transform: translateY(5px);
 }
 
 .video-wrapper {
@@ -49,7 +50,7 @@
     margin: 0;
     padding: 0;
 }
-.md-header-nav__button.md-logo img {
+.md-header__button.md-logo img {
     width: 200px;
     height: auto;
 }
