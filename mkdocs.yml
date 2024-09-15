@@ -36,6 +36,8 @@ extra:
           link: https://github.com/exabyte-io
         - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/company/mat3ra/
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/c/Mat3ra/videos
     analytics:
         provider: google
         property: UA-69270713-5
