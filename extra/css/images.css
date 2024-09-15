@@ -44,3 +44,12 @@
     width: 100%;
     height: 100%;
 }
+
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+.md-header-nav__button.md-logo img {
+    width: 200px;
+    height: auto;
+}

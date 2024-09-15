@@ -32,9 +32,9 @@ extra:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
     social:
-        - type: github
+        - icon: fontawesome/brands/github
           link: https://github.com/exabyte-io
-        - type: linkedin
+        - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/company/mat3ra/
 # Doesn't work with our version. It works from version 7.1.8
 #    analytics:
@@ -73,11 +73,13 @@ theme:
         accent: indigo
     logo: "images/logo/logo-white.png"
     favicon: "images/logo/favicon.ico"
+    icon:
+        repo: fontawesome/brands/github
     font:
         text: Roboto
         code: Roboto Mono
     feature:
-        tabs: false
+        # - tabs
 
 nav:
     - Home: index.md

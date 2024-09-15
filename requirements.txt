@@ -21,14 +21,14 @@ Markdown==3.3.7
 markdown-include @ git+https://github.com/Exabyte-io/markdown-include.git@de31927acdeeff7972e09f4a6327030bd10535f2
 MarkupSafe==1.1.1
 mkdocs==1.3.1
-mkdocs-material==4.6.3
+mkdocs-material==5.5.14
 oauth2client==4.1.3
 proto-plus==1.23.0
 protobuf==4.25.2
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 Pygments==2.11.0
-pymdown-extensions==6.3
+pymdown-extensions==7.1
 pyparsing==2.4.7
 pytz==2020.5
 PyYAML==5.3.1
