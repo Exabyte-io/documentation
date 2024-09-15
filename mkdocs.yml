@@ -41,8 +41,8 @@ extra:
 #        provider: google
 #        property: UA-69270713-5
 markdown_extensions:
-    - markdown_include.include:
-        base_path: data
+    # - markdown_include.include:
+    #     base_path: data
     - admonition
     - codehilite:
         linenums: true
@@ -58,10 +58,12 @@ markdown_extensions:
     - pymdownx.details              # Allow admonition-type collapsible <details>
     - pymdownx.superfences          # Allow for code blocks "fencing"
     # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
-    - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    # - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
     - pymdownx.betterem             # Better bold/italic text
     - pymdownx.striphtml            # Strip html comments before processing
     - attr_list
+    - pymdownx.highlight:
+        pygments_lang_class: true
 
 # https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
 # https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
@@ -78,8 +80,8 @@ theme:
     font:
         text: Roboto
         code: Roboto Mono
-    feature:
-        # - tabs
+    features:
+        - navigation.footer
 
 nav:
     - Home: index.md
