@@ -1,11 +1,16 @@
 {% extends "base.html" %}
 
+{% block extrahead %}
+  <link
+    rel="stylesheet"
+    href="{{ '/extra/css/announcement.css' | url }}"
+  />
+{% endblock %}
+
 {% block announce %}
-<p style="color:lightslategray; text-align: center;">🎉 Mat3ra platform
-  version <a target="_blank" href="https://platform.mat3ra.com"
-  style="color: lightskyblue;">2024.8.22</a> is now released. Please find out
-  what's new in our latest <a target="_blank"
-  href="https://www.mat3ra.com/news-and-blog-posts/release-2024-8-22"
-  style="color: lightskyblue;">blog post</a> 🎉
+<p class="announcement">🎉 Mat3ra platform version <a target="_blank"
+  href="https://platform.mat3ra.com">2024.8.22</a> is now released. Please find
+  out what's new in our latest <a target="_blank"
+  href="https://www.mat3ra.com/news-and-blog-posts/release-2024-8-22">blog post</a>! 🎉
 </p>
 {% endblock %}

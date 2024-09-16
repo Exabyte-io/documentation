@@ -1,0 +1,13 @@
+.announcement {
+    color: lightslategray;
+    text-align: center;
+}
+
+.announcement a {
+    color: lightskyblue;
+}
+
+.announcement a:hover {
+    color: hotpink;
+    text-decoration: underline;
+}
