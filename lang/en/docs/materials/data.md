@@ -48,4 +48,4 @@ As seen above, we use the crystal **lattice** and **basis** JSON objects as the 
  For every material imported/uploaded to our platform, we pre-calculate a set of such descriptors, and store them inside this "derivedProperties" section. This information can be further used during data analysis or the construction of statistical predictive models.
 
 ## Links
-[^1] [Wikipedia: International Chemical Identifer (InChI) Website](https://en.wikipedia.org/wiki/International_Chemical_Identifier)
+[^1]: [Wikipedia: International Chemical Identifer (InChI) Website](https://en.wikipedia.org/wiki/International_Chemical_Identifier)
