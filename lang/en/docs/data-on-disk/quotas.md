@@ -1,5 +1,5 @@
 # Storage Quota
-    
+
 We apply **storage quotas** to both the [directories](directories.md) on clusters. This limits the amount of storage space that can be consumed by [accounts](../accounts/overview.md), in order to avoid any problems. The concept of quota in the general context of account management is reviewed [here](../accounts/quota.md). This is an administrative limitation and can be easily extended as explained [here](../accounts/accounting/increase-quota.md)
 
 ## Conventions
@@ -10,10 +10,10 @@ The quotas are set per [cluster](../infrastructure/clusters) and are always **ha
     The explanation of the service levels [in this page](../pricing/service-levels.md) contains compound values for the disk quota for all accessible clusters. Depending on user demands we can allocate more or less quota per cluster.
 
 Current quotas applicable to the folders available to the user can be inspected at any time via the [Command Line Interface](../cli/overview.md), using the [`quota` command](../cli/actions/balance-quota.md), or alternatively using the [Web Interface](../accounts/accounting/check-balance-quota.md).
-    
+
 ## Login Node Home
 
-The quota under the [login home folder](directories.md#login-home) amounts to **10 Gb**. This limited quota can be used to store and test source code or scripts. 
+The quota under the [login home folder](directories.md#login-home) amounts to **10 Gb**. This limited quota can be used to store and test source code or scripts.
 
 ## Cluster Home directory
 
@@ -29,4 +29,4 @@ In order to facilitate the accessibility of the [Dropbox directory](../data-in-o
 
 ## Links
 
-[^1] [Disk Quota, Wikipedia](https://en.wikipedia.org/wiki/Disk_quota)
+[^1]: [Disk Quota, Wikipedia](https://en.wikipedia.org/wiki/Disk_quota)
