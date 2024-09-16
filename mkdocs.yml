@@ -86,6 +86,7 @@ theme:
         code: Roboto Mono
     features:
         - navigation.footer
+        - content.code.copy
 
 nav:
     - Home: index.md
