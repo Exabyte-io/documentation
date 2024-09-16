@@ -95,6 +95,12 @@ theme:
         - navigation.footer
         - navigation.top
 
+plugins:
+    # https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/options/
+    - git-revision-date-localized:
+        type: date
+        enable_creation_date: false
+
 nav:
     - Home: index.md
 
