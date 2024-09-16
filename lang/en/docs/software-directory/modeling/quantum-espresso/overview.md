@@ -10,8 +10,8 @@ free under the GNU General Public License. Quantum ESPRESSO is based on
 
 ## Supported Versions
 
-We support 5.2.1, 5.4.0, 6.0.0, 6.3.0, 6.4.1, 6.5.0, 6.6.0, 6.7.0, 6.8.0, 7.0,
-7.2, and 7.3 versions of Quantum ESPRESSO.
+We support `5.2.1`, `5.4.0`, `6.0.0`, `6.3.0`, `6.4.1`, `6.5.0`, `6.6.0`,
+`6.7.0`, `6.8.0`, `7.0`, `7.2`, and `7.3` versions of Quantum ESPRESSO.
 
 ## [Components](components.md)
 
@@ -33,4 +33,4 @@ Quantum ESPRESSO, and for its specific compute parameters, is explained
 
 [^1]: [Official Quantum ESPRESSO website](https://www.quantum-espresso.org/)
 
-[^2]: [Official Quantum ESPRESSO GitHub repository](https://github.com/QEF/q-e/tags)
+[^2]: [Official Quantum ESPRESSO GitLab repository](https://gitlab.com/QEF/q-e/-/releases)
