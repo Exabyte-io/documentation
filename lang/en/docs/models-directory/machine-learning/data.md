@@ -1,11 +1,15 @@
 # Structured Data for Machine Learning Model
 
-Below, the user can find an example [JSON structured representation](../../data-structured/overview.md) for the [Machine Learning Model](overview.md). 
+Below, the user can find an example [JSON structured representation](../../data-structured/overview.md) for the [Machine Learning Model](overview.md).
 
-```json tab="Schema" 
-{!esse/schema/models_directory/st/det/ml.json!}
-```
+=== "Schema"
 
-```json tab="Example" 
-{!esse/example/models_directory/st/det/ml.json!}
-```
+    ``` json
+    --8<-- "data/esse/schema/models_directory/st/det/ml.json"
+    ```
+
+=== "Example"
+
+    ``` json
+    --8<-- "data/esse/example/models_directory/st/det/ml.json"
+    ```

@@ -1,11 +1,15 @@
 # Structured Data for Linear Regression Method
 
-Below, the user can find an example [JSON structured representation](../../data-structured/overview.md) for the [Linear Regression Method](overview.md). 
+Below, the user can find an example [JSON structured representation](../../data-structured/overview.md) for the [Linear Regression Method](overview.md).
 
-```json tab="Schema" 
-{!esse/schema/methods_directory/regression.json!}
-```
+=== "Schema"
 
-```json tab="Example" 
-{!esse/example/methods_directory/regression.json!}
-```
+    ``` json
+    --8<-- "data/esse/schema/methods_directory/regression.json"
+    ```
+
+=== "Example"
+
+    ``` json
+    --8<-- "data/esse/example/methods_directory/regression.json"
+    ```

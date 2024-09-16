@@ -4,20 +4,24 @@ We present in this page the [structured representations](../../../data-structure
 
 ## Application
 
-```json tab="Schema" 
-{!esse/schema/software_directory/modeling/espresso.json!}
-```
+=== "Schema"
+    ``` json
+    --8<-- "data/esse/schema/software_directory/modeling/espresso.json"
+    ```
 
-```json tab="Example" 
-{!esse/example/software_directory/modeling/espresso.json!}
-```
+=== "Example"
+    ``` json
+    --8<-- "data/esse/example/software_directory/modeling/espresso.json"
+    ```
 
 ## Compute Parameters
 
-```json tab="Schema" 
-{!esse/schema/software_directory/modeling/espresso/arguments.json!}
-```
+=== "Schema"
+    ``` json
+    --8<-- "data/esse/schema/software_directory/modeling/espresso/arguments.json"
+    ```
 
-```json tab="Example" 
-{!esse/example/software_directory/modeling/espresso/arguments.json!}
-```
+=== "Example"
+    ``` json
+    --8<-- "data/esse/example/software_directory/modeling/espresso/arguments.json"
+    ```
