@@ -81,11 +81,13 @@ theme:
     logo: "images/logo/logo-white.png"
     favicon: "images/logo/favicon.ico"
     icon:
+        edit: material/pencil
         repo: fontawesome/brands/github
     font:
         text: Roboto
         code: Roboto Mono
     features:
+        - content.action.edit
         - content.code.copy
         - navigation.footer
         - navigation.top
