@@ -49,6 +49,7 @@ markdown_extensions:
     - codehilite:
         linenums: true
     - def_list
+    - md_in_html
     # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
     - footnotes:
         PLACE_MARKER: "///FOOTNOTES GO HERE///"
@@ -59,8 +60,8 @@ markdown_extensions:
     - pymdownx.arithmatex           # Render Latex Formulas
     - pymdownx.details              # Allow admonition-type collapsible <details>
     - pymdownx.superfences          # Allow for code blocks "fencing"
-    # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
-    # - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    - pymdownx.tabbed:
+        alternate_style: true
     - pymdownx.betterem             # Better bold/italic text
     - pymdownx.striphtml            # Strip html comments before processing
     - pymdownx.snippets
@@ -178,7 +179,7 @@ nav:
             - Jupyter Notebook:                      tutorials/other/jupyter.md
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
-            - TensorFlow (GPU): tutorials/general-functionality/tensorflow-gpu.md
+            - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
         - Materials:
             - Overview:                                                         tutorials/materials/overview.md
             - VESTA via Remote Desktop:                                         tutorials/materials/vesta-remote-desktop.md
