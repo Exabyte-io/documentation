@@ -4,9 +4,9 @@ We store each item in the Entity Collections in the form of **structured data** 
 
 ## Example JSON representation
 
-The following is an example of the JSON representation of an entity, where only the general keywords applicable to all entity types are preserved. 
+The following is an example of the JSON representation of an entity, where only the general keywords applicable to all entity types are preserved.
 
-The reader is referred to other documentation pages for aspects that might pertain specifically to [Materials](../materials/data.md), [Workflows](../workflows/data/workflows.md) and [Jobs](../jobs/data.md) respectively. 
+The reader is referred to other documentation pages for aspects that might pertain specifically to [Materials](../materials/data.md), [Workflows](../workflows/data/workflows.md) and [Jobs](../jobs/data.md) respectively.
 
 ```json
 {
@@ -37,7 +37,7 @@ The reader is referred to other documentation pages for aspects that might perta
 
 ### Top-level Keywords
 
-| Keyword    |  Short Description      | Details        | 
+| Keyword    |  Short Description      | Details        |
 | :-------- |:----------- |:------------- |
 | _id | Identifier in the corresponding [Collection](../accounts/collections.md) | Each entity contained in an Account-owned collection has a unique Collection Identifier code, attributed by our platform. |
 | name | Name of Entity | Human-readable name |
@@ -50,7 +50,7 @@ The reader is referred to other documentation pages for aspects that might perta
 
 ### Owner/Creator
 
-| Keyword    |  Short Description      | Details        | 
+| Keyword    |  Short Description      | Details        |
 | :-------- |:----------- |:------------- |
 | _id | Identifier in the corresponding [Collection](../accounts/collections.md) | Each user and associated Account(s) have a corresponding unique Identifier |
 | slug | Name of User/Account | The human-readable name of the Account that owns the entity under consideration, or of the user who created the entity. |
@@ -61,7 +61,7 @@ The reader is referred to other documentation pages for aspects that might perta
 
 Metadata refers to information that in turn provides information about other data. In the context of our platform, Metadata is used primarily to facilitate [search](actions/search.md) through the [Entity collections](../accounts/collections.md). We supplement entries with additional descriptive textual information, such as tags, for example. The above example of JSON representation shows how tags are stored within the structured data, under the "tags" keyword.
 
-Metadata can be added to an entity item in one or more of the following forms. 
+Metadata can be added to an entity item in one or more of the following forms.
 
 ### Description
 
@@ -73,7 +73,7 @@ The user can add descriptive tags to the entity in order to retrieve it more eas
 
 ### Metadata for surfaces / slabs
 
-A specific kind of metadata is used to mark slabs / surfaces. Such metadata is stored in the entity on its creation and can, for example, be used for surface energy calculations. This is explained further in the [corresponding documentation section](../materials-designer/header-menu/advanced/surface-slab/#structural-metadata).
+A specific kind of metadata is used to mark slabs / surfaces. Such metadata is stored in the entity on its creation and can, for example, be used for surface energy calculations. This is explained further in the [corresponding documentation section](../materials-designer/header-menu/advanced/surface-slab.md/#structural-metadata).
 
 ## Slug
 
