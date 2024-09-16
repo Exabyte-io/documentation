@@ -34,10 +34,12 @@ extra:
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/exabyte-io
-        - icon: fontawesome/brands/linkedin
-          link: https://www.linkedin.com/company/mat3ra/
         - icon: fontawesome/brands/youtube
           link: https://www.youtube.com/c/Mat3ra/videos
+        - icon: fontawesome/brands/linkedin
+          link: https://www.linkedin.com/company/mat3ra/
+        - icon: fontawesome/brands/x-twitter
+          link: https://x.com/mat3ra_com
     analytics:
         provider: google
         property: UA-69270713-5
