@@ -1,10 +1,10 @@
 # Authentication
 
-There are 2 ways to generate the authentication parameters: either through the Login endpoint of by using the account preferences as explained [elsewhere](../accounts/ui/preferences/api/). We recommend using the second option.
+There are 2 ways to generate the authentication parameters: either through the Login endpoint of by using the account preferences as explained [elsewhere](../accounts/ui/preferences/api.md). We recommend using the second option.
 
 ## Login
 
-The "Login" endpoint is used to obtain the authentication credentials that can be further used to communicate with the API. It returns `accountId` and `authToken` that are required for any subsequent requests. 
+The "Login" endpoint is used to obtain the authentication credentials that can be further used to communicate with the API. It returns `accountId` and `authToken` that are required for any subsequent requests.
 
 ### Example
 
@@ -29,7 +29,7 @@ For any endpoints that require authentication, you must further include the auth
 ```bash
 curl -X GET https://platform.exabyte.io/api/2018-10-01/materials \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
-    -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU" 
+    -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 ```
 
 ## Logout
