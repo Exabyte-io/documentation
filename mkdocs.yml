@@ -19,10 +19,11 @@ extra_css:
 
 extra_javascript:
     - extra/js/giffer.js
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML'
     - extra/js/ga.js
-    - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
     - extra/js/url_parameters.js
+    - extra/js/mathjax.js
+    - 'https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js'
+    - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
 
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
@@ -58,7 +59,8 @@ markdown_extensions:
         permalink: true
     - markdown.extensions.def_list
     # https://facelessuser.github.io/pymdown-extensions/
-    - pymdownx.arithmatex           # Render Latex Formulas
+    - pymdownx.arithmatex:          # Render Latex Formulas
+        generic: true
     - pymdownx.details              # Allow admonition-type collapsible <details>
     - pymdownx.superfences          # Allow for code blocks "fencing"
     - pymdownx.tabbed:
