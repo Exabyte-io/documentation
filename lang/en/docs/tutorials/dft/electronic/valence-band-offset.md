@@ -23,11 +23,19 @@ the *conduction band offset* and *Schottky barrier* (metal-semiconductor interfa
 This tutorial employs the potential lineup method in order to determine the valence band offset, which requires the
 calculation of the macroscopically averaged electrostatic potential and valence band maximum of the two materials.
 The valence band offset for an A/B interface can then be determined via:
-$$ \Delta E_{\mathrm{VBO}} = \Delta E_{v} + \Delta \overline{V}$$
+
+$$
+\Delta E_{\mathrm{VBO}} = \Delta E_{v} + \Delta \overline{V}
+$$
+
 The first term, $\Delta E_{v}$, is usually referred to as the *band structure term* and defined as the difference
 of the two valence band maxima $\varepsilon_{v}$ referenced to the macroscopically averaged electrostatic potential $\overline{V}$
 in each material:
-$$ \Delta E_{v} = (\varepsilon_{v}^{A} - \overline{V}^{A}) - (\varepsilon_{v}^{B} - \overline{V}^{B}) $$
+
+$$
+\Delta E_{v} = (\varepsilon_{v}^{A} - \overline{V}^{A}) - (\varepsilon_{v}^{B} - \overline{V}^{B})
+$$
+
 ![Referencing the valence band edge](../../../images/tutorials/valence-band-maximum-with-reference.png){: style="width:600px"}
 The second term, $\Delta \overline{V}$, is determined from the lineup of the macroscopically averaged electrostatic potential in
 the interface heterostructure.
@@ -103,7 +111,7 @@ We demonstrate the above-mentioned steps involved in the creation and execution 
 </div>
 
 ## Links
-    
+
 [^1]: A. Baldereschi, S. Baroni, R. Resta, *Phys. Rev. Lett.* **61**, 734 (1988); DOI: [10.1103/PhysRevLett.61.734](https://www.doi.org/10.1103/PhysRevLett.61.734)
 [^2]: L. Colombo, R. Resta, S. Baroni, *Phys. Rev. B* **44**, 5572 (1991); DOI: [10.1103/physrevb.44.5572](https://www.doi.org/10.1103/physrevb.44.5572)
 [^3]: M. Peressi, N. Binggeli, A. Baldereschi, *J. Phys. D: Appl. Phys.* **31**, 1273-1299 (1998); DOI: [10.1088/0022-3727/31/11/002](https://www.doi.org/10.1088/0022-3727/31/11/002)
