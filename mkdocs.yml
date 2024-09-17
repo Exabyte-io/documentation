@@ -45,8 +45,6 @@ extra:
         property: UA-69270713-5
 
 markdown_extensions:
-    # - markdown_include.include:
-    #     base_path: data
     - admonition
     - codehilite:
         linenums: true
@@ -114,7 +112,6 @@ nav:
         - Run first simulation:
             - Web Interface:                             getting-started/run-first-simulation/web-interface.md
             - Command Line:                              getting-started/run-first-simulation/cli-job.md
-
 
 
 # IMPORTANT TO CONVERT NEW USERS
