@@ -4,24 +4,26 @@ We make use of the data convention, introduced [in this page](../../data-structu
 
 ## [JSON Schemas and Examples](../../data-structured/convention.md)
 
-We provide below an example of a [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the JSON external documentation [^1] [^2] for the explanation of the primitive types and schema keywords. 
+We provide below an example of a [**JSON schema**](../../data-structured/convention.md) for a material property. The reader is referred to the JSON external documentation [^1] [^2] for the explanation of the primitive types and schema keywords.
 
 Also listed below, is an example of a JSON representation of the [total energy](../../properties-directory/scalar/total-energy.md), which can validated by the schema. It consists in a scalar numerical **value**, which is expressed in **units** of electronVolts (eV).
 
 <details markdown="1">
   <summary>
     Data Convention
-  </summary> 
+  </summary>
 
-```json tab="Schema"
-{!esse/schema/properties_directory/scalar/total_energy.json!}
-```
+=== "Schema"
+    ``` json
+    --8<-- "data/esse/schema/properties_directory/scalar/total_energy.json"
+    ```
 
-```json tab="Example"
-{!esse/example/properties_directory/scalar/total_energy.json!}
-```
+=== "Example"
+    ``` json
+    --8<-- "data/esse/example/properties_directory/scalar/total_energy.json"
+    ```
 
-</details> 
+</details>
 
 ## [Core Schema Types](core.md)
 

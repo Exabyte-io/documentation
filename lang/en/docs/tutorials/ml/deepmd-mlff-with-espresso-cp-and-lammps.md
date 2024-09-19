@@ -22,9 +22,9 @@ For this demonstration, we create a new structure from scratch using material
 designer. Navigate to **Materials** page from the left sidebar, and click create
 new material. We may clone the default structure.
 
-![DeePMD clone structure](/images/tutorials/deepmd/deepmd-clone-structure.webp "DeePMD clone structure")
+![DeePMD clone structure](../../images/tutorials/deepmd/deepmd-clone-structure.webp "DeePMD clone structure")
 
-![DeePMD edit material](/images/tutorials/deepmd/deepmd-edit-material.webp "DeePMD edit material")
+![DeePMD edit material](../../images/tutorials/deepmd/deepmd-edit-material.webp "DeePMD edit material")
 
 We use water molecule with simple cubic structure. Set lattice parameters,
 atomic positions, and click **apply edits**. Finally, go to **Input/Output**
@@ -40,15 +40,15 @@ We perform *ab-initio* molecular dynamics calculation using Quantum ESPRESSO
 Car-Parrinello (`cp.x`) program. Navigate to workflows page, and click create
 new workflow.
 
-![DeePMD create workflow](/images/tutorials/deepmd/deepmd-create-workflow.webp "DeePMD create workflow")
+![DeePMD create workflow](../../images/tutorials/deepmd/deepmd-create-workflow.webp "DeePMD create workflow")
 
 Click **edit** unit. On the unit modal, expand the details pane, and select
 executable to **cp.x** We set `prefix` and unit name to `cp` so that various
 output files have the same base name (e.g., cp.out, cp.for, etc.).
 
-![DeePMD edit unit](/images/tutorials/deepmd/deepmd-edit-unit.webp "DeePMD edit unit")
+![DeePMD edit unit](../../images/tutorials/deepmd/deepmd-edit-unit.webp "DeePMD edit unit")
 
-![DeePMD edit unit modal](/images/tutorials/deepmd/deepmd-edit-unit-modal.webp "DeePMD edit unit modal")
+![DeePMD edit unit modal](../../images/tutorials/deepmd/deepmd-edit-unit-modal.webp "DeePMD edit unit modal")
 
 Some of the CP parameters such as the number of steps, time step, etc. can be
 set in the **Important Settings** tab. Users can modify or add additional
@@ -59,7 +59,7 @@ return to workflows page. Set Quantum ESPRESSO version (e.g., 7.3) and build
 For the next steps, we need to use another executable (deepmd), so we will add
 new subworkflow and select deepmd application.
 
-![DeePMD add subworkflow](/images/tutorials/deepmd/deepmd-add-subworkflow.webp "DeePMD add subworkflow")
+![DeePMD add subworkflow](../../images/tutorials/deepmd/deepmd-add-subworkflow.webp "DeePMD add subworkflow")
 
 
 ### 2b. Prepare data sets for DeePMD
@@ -68,11 +68,11 @@ We will use Python script and `dpdata` to load the Quantum ESPRESSO output files
 obtained in the previous CP calculation step. Add first unit to deepmd
 subworkflow.
 
-![DeePMD set application and add units](/images/tutorials/deepmd/deepmd-application-and-units.webp "DeePMD set application and add units")
+![DeePMD set application and add units](../../images/tutorials/deepmd/deepmd-application-and-units.webp "DeePMD set application and add units")
 
 Select executable to **python** and flavor to **espresso_cp_to_deepmd**.
 
-![DeePMD edit python script](/images/tutorials/deepmd/deepmd-edit-python-script.webp "DeePMD edit python script")
+![DeePMD edit python script](../../images/tutorials/deepmd/deepmd-edit-python-script.webp "DeePMD edit python script")
 
 We will split the available number of molecular dynamics steps into training and
 validation sets (80% and 20%, respectively). One can modify the python script/
@@ -105,7 +105,7 @@ unit, and select **lmp** executable. We use deepmd pair style. We can adjust
 LAMMPS parameters in the template. The LAMMPS output is written to
 `system.dump`.
 
-![DeePMD workflow](/images/tutorials/deepmd/deepmd-workflow.webp "DeePMD workflow")
+![DeePMD workflow](../../images/tutorials/deepmd/deepmd-workflow.webp "DeePMD workflow")
 
 
 ## 3. Create and submit job
@@ -118,7 +118,7 @@ processors. Submit job for execution. Once the job is completed, various output
 files are placed under the **Files** tab of the jobs page. Users may launch a
 Jupyter Notebook session in our platform to further analyze output files.
 
-![DeePMD create job](/images/tutorials/deepmd/deepmd-create-job.webp "DeePMD create job")
+![DeePMD create job](../../images/tutorials/deepmd/deepmd-create-job.webp "DeePMD create job")
 
 
 ## 4. Step-by-step screenshare video

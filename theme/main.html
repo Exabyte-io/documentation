@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+<link rel="stylesheet" href="{{ '/extra/css/announcement.css' | url }}"/>
+{% endblock %}
+
+{% block announce %}
+<p class="announcement">🎉 Mat3ra platform version <a target="_blank"
+  href="https://platform.mat3ra.com">{{ config.extra.version }}</a> is here.
+  Take a look at our <a
+  href="https://www.mat3ra.com/news-and-blog-posts/release-{{ config.extra.version | replace('.', '-') }}">
+  release post</a> to discover what's new! 🎉
+</p>
+{% endblock %}

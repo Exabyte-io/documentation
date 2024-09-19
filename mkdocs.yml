@@ -16,13 +16,16 @@ extra_css:
     - extra/css/images.css
     - extra/css/super-fences.css
     - extra/css/properties.css
+    - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css
 
 extra_javascript:
     - extra/js/giffer.js
-    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML'
     - extra/js/ga.js
-    - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
     - extra/js/url_parameters.js
+    - extra/js/katex.js
+    - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js
+    - https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js
+    - 'https://www.googletagmanager.com/gtag/js?id=UA-69270713-5'
 
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
@@ -32,39 +35,45 @@ extra:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
     social:
-        - type: github
+        - icon: fontawesome/brands/github
           link: https://github.com/exabyte-io
-        - type: linkedin
+        - icon: fontawesome/brands/youtube
+          link: https://www.youtube.com/c/Mat3ra/videos
+        - icon: fontawesome/brands/linkedin
           link: https://www.linkedin.com/company/mat3ra/
-# Doesn't work with our version. It works from version 7.1.8
-#    analytics:
-#        provider: google
-#        property: UA-69270713-5
+        - icon: fontawesome/brands/x-twitter
+          link: https://x.com/mat3ra_com
+    analytics:
+        provider: google
+        property: UA-69270713-5
+
 markdown_extensions:
-    - markdown_include.include:
-        base_path: data
     - admonition
     - codehilite:
         linenums: true
     - def_list
-    # https://squidfunk.github.io/mkdocs-material/extensions/footnotes
+    - attr_list
+    # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=footnotes#footnotes
     - footnotes:
         PLACE_MARKER: "///FOOTNOTES GO HERE///"
+    - markdown.extensions.def_list
+    - md_in_html
     - toc:
         permalink: true
-    - markdown.extensions.def_list
     # https://facelessuser.github.io/pymdown-extensions/
-    - pymdownx.arithmatex           # Render Latex Formulas
-    - pymdownx.details              # Allow admonition-type collapsible <details>
-    - pymdownx.superfences          # Allow for code blocks "fencing"
-    # https://python-markdown.github.io/extensions/extra/#markdown-inside-html-blocks
-    - pymdownx.extrarawhtml         # Enables parsing of markdown inside html tags
+    - pymdownx.arithmatex:          # Render Latex Formulas
+        generic: true
     - pymdownx.betterem             # Better bold/italic text
+    - pymdownx.details              # Allow admonition-type collapsible <details>
+    # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=code+hi#highlighting-inline-code-blocks
+    - pymdownx.highlight:
+        pygments_lang_class: true
+    - pymdownx.snippets
     - pymdownx.striphtml            # Strip html comments before processing
-    - attr_list
+    - pymdownx.superfences          # Allow for code blocks "fencing"
+    - pymdownx.tabbed:
+        alternate_style: true
 
-# https://github.com/facelessuser/pymdown-extensions/blob/master/mkdocs.yml
-# https://squidfunk.github.io/mkdocs-material/extensions/codehilite/
 theme:
     name: material
     custom_dir: theme
@@ -73,11 +82,28 @@ theme:
         accent: indigo
     logo: "images/logo/logo-white.png"
     favicon: "images/logo/favicon.ico"
+    icon:
+        edit: material/pencil
+        repo: fontawesome/brands/github
     font:
         text: Roboto
         code: Roboto Mono
-    feature:
-        tabs: false
+    features:
+        - announce.dismiss
+        - content.action.edit
+        - content.code.copy
+        - content.tooltips
+        - navigation.footer
+        - navigation.top
+        - search.highlight
+        - search.suggest
+
+plugins:
+    # https://timvink.github.io/mkdocs-git-revision-date-localized-plugin/options/
+    - git-revision-date-localized:
+        type: date
+        enable_creation_date: false
+    - search
 
 nav:
     - Home: index.md
@@ -88,11 +114,10 @@ nav:
         - Important Concepts:                            getting-started/important-concepts.md
         - Terminology:                                   getting-started/terminology.md
         - Useful Links:                                  getting-started/useful-links.md
-        - Frequestly Asked Questions:                    other/faq.md
+        - Frequently Asked Questions:                    other/faq.md
         - Run first simulation:
             - Web Interface:                             getting-started/run-first-simulation/web-interface.md
             - Command Line:                              getting-started/run-first-simulation/cli-job.md
-
 
 
 # IMPORTANT TO CONVERT NEW USERS
@@ -171,7 +196,7 @@ nav:
             - Jupyter Notebook:                      tutorials/other/jupyter.md
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
-            - TensorFlow (GPU): tutorials/general-functionality/tensorflow-gpu.md
+            - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
         - Materials:
             - Overview:                                                         tutorials/materials/overview.md
             - VESTA via Remote Desktop:                                         tutorials/materials/vesta-remote-desktop.md

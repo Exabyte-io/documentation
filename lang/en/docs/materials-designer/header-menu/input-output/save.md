@@ -14,15 +14,15 @@ The Save Dialog allows users to set additional information about the materials.
 
 ### Tags
 
-Here the user can add text tags to the crystal structure that needs to be saved. This might be helpful for for later retrieval of the structure when performing general searches. Once each tag is typed in the corresponding text field, the Enter key should be pressed to record it. The corresponding badge will appear under the text field. 
+Here the user can add text tags to the crystal structure that needs to be saved. This might be helpful for for later retrieval of the structure when performing general searches. Once each tag is typed in the corresponding text field, the Enter key should be pressed to record it. The corresponding badge will appear under the text field.
 
 ### Save all
 
-In this dialog the user can also choose, through the top slider, whether to save just the currently-selected structure in the items list sidebar (slider to the left) or save all items simultaneously (slider to the right). 
+In this dialog the user can also choose, through the top slider, whether to save just the currently-selected structure in the items list sidebar (slider to the left) or save all items simultaneously (slider to the right).
 
 ### Public
 
-In the lower slider, the user can adjust the access level for the materials to be saved (see the explanation of system-wide permission levels [here](../../../site-policy/sharing-policy/#special-system-wide-permissions)). 
+In the lower slider, the user can adjust the access level for the materials to be saved (see the explanation of system-wide permission levels [here](../../../site-policy/sharing-policy.md/#special-system-wide-permissions)).
 
 
 ### Select Set

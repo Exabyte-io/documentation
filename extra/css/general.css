@@ -8,8 +8,7 @@
 }
 
 body {
-    font-family: "Roboto", "Roboto Slab", "ff-tisa-web-pro", "Georgia", Arial, sans-serif;
-    line-height: 1.42857143;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans", Helvetica, Arial, sans-serif;
     font-weight: 400;
     background-color: white;
 }
@@ -50,7 +49,7 @@ footer {
     margin-top: 50px;
 }
 
-a:visited {
+.md-main a:visited {
     color: #999;
 }
 
@@ -123,4 +122,10 @@ a:visited {
 .badge.badge-property-inverse {
     background-color: black;
     color: white;
+}
+
+.md-footer-copyright {
+    font-size: 0.8em;
+    color: grey;
+    padding-top: 0.6em;
 }

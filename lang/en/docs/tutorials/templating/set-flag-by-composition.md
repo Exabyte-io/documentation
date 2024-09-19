@@ -2,13 +2,13 @@
 
 ## Introduction
 
-In this page we review setting input flags based on the data about material(s) and elemental constitution in particular. We present the template source that can be further re-used (copied and inserted) during the [workflow design](../../workflow-designer/overview.md) stage. 
+In this page we review setting input flags based on the data about material(s) and elemental constitution in particular. We present the template source that can be further re-used (copied and inserted) during the [workflow design](../../workflow-designer/overview.md) stage.
 
 ## Source
 
 The code below automatically sets the value of the "ENCUT" variable to higher values for materials that contain Nitrogen within their structures than for those than don't. In particular, ENCUT = 600 eV if Nitrogen is present, or ENCUT = 450 eV otherwise. This variable is found in [VASP](../../software-directory/modeling/vasp/overview.md) input file, and defines the cutoff energy characterizing the precision of the [DFT computation](../../models-directory/dft/parameters.md).
 
-```jinja2
+```jinja
 {% spaceless %}
 {% set high_cutoff_element = "N" %}
 {% set poscar_string = input.POSCAR|e("js") %}
@@ -32,7 +32,7 @@ The initial `{% spaceless %}` flag is explained [here](../../workflows/templatin
 
 ### 2. Set Element Requiring Higher Cutoff Parameter (Nitrogen)
 
-We begin the logic of our template by defining the element that needs a high plane-wave cutoff to be "N" for Nitrogen, using the [set statement](../../workflows/templating/jinja.md#variables-assignment). 
+We begin the logic of our template by defining the element that needs a high plane-wave cutoff to be "N" for Nitrogen, using the [set statement](../../workflows/templating/jinja.md#variables-assignment).
 
 ### 3. Read Structural Data
 
@@ -40,13 +40,13 @@ We then read the POSCAR input file for [VASP](../../software-directory/modeling/
 
 ### 4 - 6. Extract Elements Contained in Material
 
-We then identify the lines within the POSCAR file containing the element chemical symbols, by using the "split" function for breaking up the file text contents at every occurrence of the argument passed to this function. 
+We then identify the lines within the POSCAR file containing the element chemical symbols, by using the "split" function for breaking up the file text contents at every occurrence of the argument passed to this function.
 
 We first break the lines at the mention of the `direct` string, and take all the preceding content. We then split this content at every new line (denoted by the newline unicode character "\u000A"). As can be seen from the POSCAR examples shown below, the line under index 5 in the POSCAR format (starting to count from zero at the top of the file) is the line containing the chemical symbols. The list of elements contained in the material is consequently assigned to the variable "element_lines".
 
-### 7 - 11. Check for Presence of Nitrogen in Material 
+### 7 - 11. Check for Presence of Nitrogen in Material
 
-An "if/else" [conditional block of statements](../../workflows/templating/jinja.md#conditionals) is then included in the remainder of the above template. This checks for the presence of "Al" within the list of elements extracted from the POSCAR file of the material under investigation. If a positive match is encountered, then the variable "ENCUT" for the material simulation is correspondingly set to the higher value of 600 eV, otherwise in the contrary case it is set to a lower 450 eV. 
+An "if/else" [conditional block of statements](../../workflows/templating/jinja.md#conditionals) is then included in the remainder of the above template. This checks for the presence of "Al" within the list of elements extracted from the POSCAR file of the material under investigation. If a positive match is encountered, then the variable "ENCUT" for the material simulation is correspondingly set to the higher value of 600 eV, otherwise in the contrary case it is set to a lower 450 eV.
 
 ### 12. Print Encut Variable Result
 
