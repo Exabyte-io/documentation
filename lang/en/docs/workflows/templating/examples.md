@@ -4,13 +4,13 @@ The present page contains example(s) of [unit](../components/units.md) input [te
 
 ## Quantum ESPRESSO Example
 
-For example, the input file template shown in the expandable section below, for a sample [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) calculation. 
+For example, the input file template shown in the expandable section below, for a sample [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) calculation.
 
 ### Template
 
 The text below contains references to data that will be different for different materials, such as the number of atoms (`nat` flag).
 
-```jinja2
+```jinja
 &CONTROL
     calculation = 'scf'
     title = ''
@@ -56,7 +56,7 @@ K_POINTS automatic
 
 ### Context
 
-```jinja2
+```jinja
 {
     "kgridExtraData": {
         "materialHash": "a665723ef7429caef6ca89385fe25bae"
@@ -148,7 +148,7 @@ CELL_PARAMETERS angstrom
 1.116306745 3.157392278 1.933500000
 0.000000000 0.000000000 3.867000000
 K_POINTS automatic
-10 10 10 0 0 0 
+10 10 10 0 0 0
 ```
 
 #### Runtime Render

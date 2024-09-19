@@ -32,7 +32,7 @@ Currently, SIMPLE code only supports norm-conserving pseudopotential. Please
 choose norm-conserving pseudopotential after applying appropriate method
 filters.
 
-![Select norm-conserving pseudopotential](/images/tutorials/simple.x/simple-select-ncpp.webp "Select norm-conserving pseudopotential")
+![Select norm-conserving pseudopotential](../../../images/tutorials/simple.x/simple-select-ncpp.webp "Select norm-conserving pseudopotential")
 
 We will provide, lattice parameters via `ibrav` and `celldm` instead of
 `CELL_PARAMETERS` card. Click edit on the **pw_scf** unit, and directly modify
@@ -77,9 +77,9 @@ our platform, it can be done via an assignment unit. Click and add unit, and
 select assignment unit from the drop-down. Later assign a variable:
 `NO_SYMMETRY_NO_INVERSION` and set the value to `true`.
 
-![Select unit type](/images/tutorials/simple.x/simple-unit-type.webp "Select unit type")
+![Select unit type](../../../images/tutorials/simple.x/simple-unit-type.webp "Select unit type")
 
-![Set no symmetry](/images/tutorials/simple.x/simple-set-no-sym.webp "Set no symmetry")
+![Set no symmetry](../../../images/tutorials/simple.x/simple-set-no-sym.webp "Set no symmetry")
 
 Add an execution unit for `nscf` calculation. Here we update the number of bands
 (`nbnd`) to 40. The k-grid is set to 2×2×2 via the **Important Settings** tab.
@@ -94,7 +94,7 @@ we will choose the `calc_mode=0` for BSE method. One can set `calc_mode=1` for
 Independent Particle (IP) method. Specify number of valence band to 16, and
 conduction band to 24.
 
-![Simple.x input template](/images/tutorials/simple.x/simple-template.webp "Simple.x input template")
+![Simple.x input template](../../../images/tutorials/simple.x/simple-template.webp "Simple.x input template")
 
 
 ### 1.8 SIMPLE BSE calculation
@@ -109,7 +109,7 @@ The the above step calculates the $\alpha$ and $\beta$ coefficients of Haydock
 series, which can be transformed into dielectric constant using
 **abcoeff_to_eps.x** post processing utility.
 
-![Simple.x full workflow steps](/images/tutorials/simple.x/simple-full-workflow.webp "Simple.x full workflow steps")
+![Simple.x full workflow steps](../../../images/tutorials/simple.x/simple-full-workflow.webp "Simple.x full workflow steps")
 
 
 ## 2. Run Job

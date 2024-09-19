@@ -231,7 +231,7 @@ thumb for whether an image title is keyword-stuffed or not is to ask: "Is this a
 image that would actually be used in a spoken conversation?"
 
 Preferred Image Format
-The .webp format is the preferred one, due to its size-effectiveness on the web. 
+The .webp format is the preferred one, due to its size-effectiveness on the web.
 To convert images to .webp format, make sure you have the `webp` package installed on your system. On MacOS, it can be done using Homebrew:
 ```bash
 brew install webp
@@ -328,14 +328,17 @@ Including resolved JSON schemas and associated examples should be done within de
 The [markdown_include](https://github.com/Exabyte-io/markdown-include) package is used to include JSON content into markdown documents, by putting direct links to pages inside the [ESSE repository](https://github.com/Exabyte-io/exabyte-esse) instead of copying their contents in the main documentation.
 
 ```text
+    === "Schema"
 
-    ```json tab="Schema"
-    {!esse/schema/file_path/file_name.json!}
-    ```
-    ```json tab="Example"
-    {!esse/example/file_path/file_name.json!}
-    ```
+        ``` json
+        --8<-- "data/esse/schema/material.json"
+        ```
 
+    === "Example"
+
+        ``` json
+        --8<-- "data/esse/example/material.json"
+        ```
 ```
 
 #### Code Snippets

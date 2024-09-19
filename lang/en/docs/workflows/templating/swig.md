@@ -1,14 +1,14 @@
 # Swig
 
-As mentioned in [the concept explanation](concept.md) we make use of **Swig** to render the templates on the [Web Interface](../../ui/overview.md). We introduce in this page the content specific to Swig. The reader is also referred to Swig official documentation for further reading [^1]. 
+As mentioned in [the concept explanation](concept.md) we make use of **Swig** to render the templates on the [Web Interface](../../ui/overview.md). We introduce in this page the content specific to Swig. The reader is also referred to Swig official documentation for further reading [^1].
 
 ## Javascript Native Prototypes
 
 All Javascript-related prototypes such as *Array* and *Object* [^2] are supported by Swig, as long as the function does not require a callback (function) as one of its arguments. For example `Array.prototype.find()` is not supported by Swig as it needs a callback, however it can be implemented by pure templating features as below.
 
-```jinja2
+```jinja
 {% set elements = [
-  {"id": 0, "value": "Si"}, 
+  {"id": 0, "value": "Si"},
   {"id": 1, "value": "Ge"}
 ] %}
 {% set element = "" %}

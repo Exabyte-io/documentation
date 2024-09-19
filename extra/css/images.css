@@ -20,14 +20,13 @@
 .md-logo img {
     display: inherit;
     margin: 0;
-    height: inherit;
-    width: 200px;
+    padding: 0;
     background-color: transparent;
-    padding: 0px;
     border-radius: 0;
     border: none;
     box-shadow: none;
-    margin-top: -17px;
+    margin-top: -15px;
+    transform: translateY(8px);
 }
 
 .video-wrapper {
@@ -43,4 +42,13 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.md-header__button.md-logo {
+    margin: 0;
+    padding: 0;
+}
+.md-header__button.md-logo img {
+    width: 160px;
+    height: auto;
 }

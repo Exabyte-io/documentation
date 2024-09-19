@@ -2,13 +2,13 @@
 
 ## Introduction
 
-In this page we review setting input atom-specific flags based on the data about material. We present the template source that can be further re-used (copied and inserted) during the [workflow design](../../workflow-designer/overview.md) stage. 
+In this page we review setting input atom-specific flags based on the data about material. We present the template source that can be further re-used (copied and inserted) during the [workflow design](../../workflow-designer/overview.md) stage.
 
 ## Source
 
 The template code below sets the value of magnetic moments for ferromagnetic elements present in a material structure to number `5`, and alternates the sign. Non-magnetic elements are instead set to zero. The rendered output of this template is suitable for a [VASP](../../software-directory/modeling/vasp/overview.md) simulation.
-                                          
-```jinja2
+
+```jinja
 MAGMOM = {% spaceless %}
 {% set magnetic_elements = ['V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni'] %}
 {% set poscar_string = input.POSCAR|e("js") %}
@@ -27,7 +27,7 @@ MAGMOM = {% spaceless %}
   {% endif loop.index0 %}
 {% endfor line in coordinates.split("\u000A") %}
 {% endspaceless %}
-```                        
+```
 
 Each line number in the above block of statements is further explained in the ensuing sections.
 
@@ -42,7 +42,7 @@ In the second line, we [set](../../workflows/templating/jinja.md#variables-assig
 
 ### 3. Read POSCAR Content
 
-We then read the content ot POSCAR used by [VASP](../../software-directory/modeling/vasp/overview.md), containing the numerical data defining the crystal structure under investigation. We assign the text contents of this structure file to the variable "poscar_string". 
+We then read the content ot POSCAR used by [VASP](../../software-directory/modeling/vasp/overview.md), containing the numerical data defining the crystal structure under investigation. We assign the text contents of this structure file to the variable "poscar_string".
 
 ### 4. Read Atomic Coordinates
 
@@ -50,14 +50,14 @@ The lines containing the atomic coordinates and element chemical symbols within 
 
 ### 5-17. Set Magnetic Moments
 
-The list of atomic coordinates defined previously is then looped over through the use of a [for loop](../../workflows/templating/jinja.md#for-loops). 
+The list of atomic coordinates defined previously is then looped over through the use of a [for loop](../../workflows/templating/jinja.md#for-loops).
 
 The element symbol indicated at the end of each coordinate line is isolated in turn (line 8) and assigned to the variable "element", which is checked against the aforementioned list of ferromagnetic elements (line 10) through a [conditional statement](../../workflows/templating/jinja.md#conditionals). If a positive match is detected, this element is assigned a magnetic moment value of +/- 5 in an alternating order (line 11). Otherwise, in case the element is found to be non-ferromagnetic, it is given a magnetic moment of zero (line 15).
 
 ### 18. Return Final Output
 
 The final result of the "MAGMOM" variable is returned once the template is rendered, as a list of magnetic moment values.
-                                           
+
 ### Example Output
 
 Let us consider the following hypothetical example of a material structure (Cobalt Oxide), inserted under the POSCAR format.
