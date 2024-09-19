@@ -49,7 +49,7 @@ footer {
     margin-top: 50px;
 }
 
-a:visited {
+.md-main a:visited {
     color: #999;
 }
 
