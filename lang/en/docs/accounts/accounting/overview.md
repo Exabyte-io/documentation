@@ -13,5 +13,3 @@ Similarly, the moment the account is running low on available free storage space
 ## [Change Payment Method](payment-methods.md)
 
 An explanation on how to add or change information about the alternative methods for performing future payments can be retrieved [in this page](payment-methods.md).
-
-
