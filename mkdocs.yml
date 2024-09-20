@@ -30,7 +30,7 @@ extra_javascript:
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2024.8.22"
+    version: "2024.9.19"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
@@ -49,10 +49,10 @@ extra:
 
 markdown_extensions:
     - admonition
+    - attr_list
     - codehilite:
         linenums: true
     - def_list
-    - attr_list
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=footnotes#footnotes
     - footnotes:
         PLACE_MARKER: "///FOOTNOTES GO HERE///"
@@ -104,6 +104,7 @@ plugins:
         type: date
         enable_creation_date: false
     - search
+    - tags
 
 nav:
     - Home: index.md
