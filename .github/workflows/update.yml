@@ -22,7 +22,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.SUBMODULE_CLONE_TOKEN }}
           submodules: true
 
       - name: Checkout LFS objects
