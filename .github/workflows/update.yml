@@ -22,10 +22,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
+          lfs: true
           submodules: true
-
-      - name: Checkout LFS objects
-        run: git lfs pull
 
       - name: Set python 3 version
         uses: actions/setup-python@v5
