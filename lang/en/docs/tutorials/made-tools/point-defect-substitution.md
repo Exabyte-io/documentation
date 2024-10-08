@@ -29,15 +29,7 @@ Navigate to `Advanced` > `JupyterLite Session` from the main interface.
 
 ## Step 4: Run the Notebook
 
-<div style="width:100%; height:600px;">
-  <iframe
-    src="{{ config.extra.jupyterlite.origin_url }}/tree?path={{ config.extra.jupyterlite.notebooks_path_root }}/create_point_defect.ipynb"
-    width="100%"
-    height="100%"
-    style="border:none;"
-    sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals allow-top-navigation-by-user-activation allow-downloads"
-  ></iframe>
-</div>
+{% include 'includes/jupyterlite_embed.html' %}
 
 ## Step 5: Analyze the Results
 
