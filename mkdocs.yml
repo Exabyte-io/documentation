@@ -109,6 +109,7 @@ plugins:
     - search
     - tags
     - macros
+    - include
 
 nav:
     - Home: index.md
@@ -767,6 +768,9 @@ nav:
             - Create Anaconda Environment:              cli/actions/create-anaconda-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
+
+    - JupyterLite Session:
+          - Overview:                                  jupyterlite/overview.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
