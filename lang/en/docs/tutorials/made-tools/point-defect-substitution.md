@@ -1,6 +1,6 @@
 # Create materials with substitution defects from the paper 
 
-This tutorial helps creating materials from Formation, stabilities, and electronic properties of nitrogen defects in graphene (https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446) paper.
+This tutorial guides to create materials from "Formation, stabilities, and electronic properties of nitrogen defects in graphene" https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446 paper.
 
 ## 0. Open Materials Designer
 
@@ -20,22 +20,23 @@ Navigate to `Advanced` > `JupyterLite Session` from the main interface.
   
 - The link will open the example notebook in a new tab.
 
-## 3. Adjust notebook settings
+## 3. Procedure overview
 
 - We need to create a 4x4 supercell of Graphene to introduce substitution defects. 
 - We will focus on adding nitrogen atoms to the Graphene structure.
 - Set the coordinate and element of the nitrogen atom to be added to the Graphene structure.
 
+## 4. Adjust notebook settings
 
-## 4. Run the Notebook
+## 5. Run the Notebook
 
 Run the notebook to create a material with substitution defects in Graphene.
 
-## 5. Analyze the Results
+## 6. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
-## 6. Save the Material
+## 7. Save the Material
 
 The user can save the material with substitution defects in the current Materials Designer session.
 
