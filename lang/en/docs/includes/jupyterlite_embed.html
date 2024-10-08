@@ -1,6 +1,7 @@
+{% set notebook_name = notebook_name | default('default_notebook.ipynb') %}
 <div class="jupyterlite-embed-container" style="position: relative; width:100%; height:600px;">
   <iframe
-    src="{{ config.extra.jupyterlite.origin_url }}/tree?path={{ config.extra.jupyterlite.notebooks_path_root }}/create_point_defect.ipynb"
+    src="{{ config.extra.jupyterlite.origin_url }}/tree?path={{ config.extra.jupyterlite.notebooks_path_root }}/{{ notebook_name }}"
     width="100%"
     height="100%"
     style="border:none;"
