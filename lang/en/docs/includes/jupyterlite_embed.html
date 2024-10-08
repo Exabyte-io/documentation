@@ -37,16 +37,16 @@ document.querySelector('.fullscreen-button').addEventListener('click', function(
     } else if (document.msExitFullscreen) {
       document.msExitFullscreen();
     }
-    this.textContent = '⛶ Full Screen';
+    this.textContent = 'Full Screen';
   }
 });
 
 document.addEventListener('fullscreenchange', function() {
   var button = document.querySelector('.fullscreen-button');
   if (document.fullscreenElement) {
-    button.textContent = '⛶ Exit Full Screen';
+    button.textContent = 'Exit Full Screen';
   } else {
-    button.textContent = '⛶ Full Screen';
+    button.textContent = 'Full Screen';
   }
 });
 </script>
