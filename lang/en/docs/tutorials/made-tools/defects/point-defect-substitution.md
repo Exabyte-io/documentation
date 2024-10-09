@@ -1,6 +1,6 @@
 # Create materials with substitution defects from the paper 
 
-This tutorial guides to create materials from "Formation, stabilities, and electronic properties of nitrogen defects in graphene" https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446 paper.
+This tutorial guides to create materials from "Formation, stabilities, and electronic properties of nitrogen defects in graphene" [paper](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446), 2011, by Yoshitaka Fujimoto and Susumu Saito.
 
 ## Pre-requisites
 
