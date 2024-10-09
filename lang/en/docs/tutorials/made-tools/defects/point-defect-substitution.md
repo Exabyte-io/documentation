@@ -4,7 +4,7 @@ This tutorial demonstrates the process of creating materials with substitution d
 <h3>Formation, stabilities, and electronic properties of nitrogen defects in graphene </h3>
 Yoshitaka Fujimoto and Susumu Saito
 
-(Physical Review B, 2011). 
+Physical Review B, 2011. 
 
 The paper is available [here](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446).
 
@@ -20,13 +20,14 @@ This tutorial assumes that the user knows how to:
 ## Procedure overview
 
 - Import Graphene material into Materials Designer and load in JupyterLite Session.
-- Set the `method`, `approximate coordinate` and `element` of the defect atom to be added to the Graphene supercell.
+- Set the `approximate coordinate` and `element` of the defect atom and the `supercell matrix` for the Graphene supercell.
 - Run the notebook to create a material with substitution defects in Graphene.
 - Review the results.
 
 ## 1. Adjust notebook settings
 
-For the expected material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
+For the desired material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
+The notebook will use that `APPROXIMATE_COORDINATE` parameter to create corresponding configuration and ignore other methods. 
 
 To replicate the material from FIG. 1. a) of the paper: 
 
@@ -35,8 +36,9 @@ To replicate the material from FIG. 1. a) of the paper:
 we will use the following settings:
 
 ```python
-METHOD = "approximate_coordinate" 
 DEFECT_TYPE = "substitution"
+SITE_ID = None # `from_site_id` method will be ignored
+COORDINATE = None # default method will be ignored
 APPROXIMATE_COORDINATE = [0.51, 0.5, 0.5]    
 CHEMICAL_ELEMENT = "N"
 SUPERCELL_MATRIX = [[5, 0, 0], [0, 5, 0], [0, 0, 1]]
