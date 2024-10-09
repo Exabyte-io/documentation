@@ -1,6 +1,11 @@
 # Create materials with substitution defects from the paper 
 
-This tutorial demonstrates the process of creating materials with substitution defects, based on the research presented in "Formation, stabilities, and electronic properties of nitrogen defects in graphene" by Yoshitaka Fujimoto and Susumu Saito (Physical Review B, 2011). 
+This tutorial demonstrates the process of creating materials with substitution defects, based on the research presented in:
+<h3>Formation, stabilities, and electronic properties of nitrogen defects in graphene </h3>
+Yoshitaka Fujimoto and Susumu Saito
+
+(Physical Review B, 2011). 
+
 The paper is available [here](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446).
 
 ## Pre-requisites
@@ -32,7 +37,7 @@ we will use the following settings:
 ```python
 METHOD = "approximate_coordinate" 
 DEFECT_TYPE = "substitution"
-APPROXIMATE_COORDINATE = [0.5, 0.5, 0.5]    
+APPROXIMATE_COORDINATE = [0.51, 0.5, 0.5]    
 CHEMICAL_ELEMENT = "N"
 SUPERCELL_MATRIX = [[5, 0, 0], [0, 5, 0], [0, 0, 1]]
 
