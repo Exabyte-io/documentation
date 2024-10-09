@@ -23,19 +23,17 @@ This tutorial assumes that the user knows how to:
 
 For the expected material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
 
-To replicate the material from FIG. 1. a) we will use the following settings:
+To replicate the material from FIG. 1. a) of the paper: 
 
-<img src="/images/tutorials/made-tools/defects/point_defect_substitution/point_defect_substitution_0.png">
+<img src="/images/tutorials/made-tools/defects/point_defect_substitution/point_defect_substitution_0.png" title="FIG. 1. a)">
+
+we will use the following settings:
 
 ```python
 METHOD = "approximate_coordinate" 
-
 DEFECT_TYPE = "substitution"
-
 APPROXIMATE_COORDINATE = [0.5, 0.5, 0.5]    
-
 CHEMICAL_ELEMENT = "N"
-
 SUPERCELL_MATRIX = [[5, 0, 0], [0, 5, 0], [0, 0, 1]]
 
 ```
