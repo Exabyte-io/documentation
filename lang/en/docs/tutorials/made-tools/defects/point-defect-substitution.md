@@ -2,13 +2,14 @@
 
 This tutorial guides to create materials from "Formation, stabilities, and electronic properties of nitrogen defects in graphene" https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446 paper.
 
-## 0. Pre-requisites
+## Pre-requisites
 
 This tutorial assumes that the user knows how to:
-- Open [Materials Designer](../../../materials-designer/overview.md)
-- Launch [JupyterLite Session](../../../jupyterlite/overview.md) (inside Materials Designer) or Jupyter Notebook (on the local machine)
-- Import materials into Materials Designer (from Standata, Materials Bank or as upload)
-- Pass data between JupyterLite Session or Jupyter Notebook and outside runtime
+
+- Open [Materials Designer](../../../materials-designer/overview.md).
+- Launch [JupyterLite Session](../../../jupyterlite/overview.md) (inside Materials Designer) or Jupyter Notebook (on the local machine).
+- Import materials into Materials Designer (from Standata, Materials Bank or as upload).
+- Pass data between JupyterLite Session or Jupyter Notebook and outside runtime.
 
 ## 1. Procedure overview
 
@@ -18,7 +19,7 @@ This tutorial assumes that the user knows how to:
 - Run the notebook to create a material with substitution defects in Graphene.
 - Review the results.
 
-## 4. Adjust notebook settings
+## 2. Adjust notebook settings
 
 For the expected material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
 
@@ -38,15 +39,15 @@ CHEMICAL_ELEMENT = "N"
 SUPERCELL_MATRIX = [[5, 0, 0], [0, 5, 0], [0, 0, 1]]
 
 ```
-## 5. Run the Notebook
+## 3. Run the Notebook
 
 Run the notebook to create a material with substitution defects in Graphene.
 
-## 6. Analyze the Results
+## 4. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
-## 7. Save the Material
+## 5. Save the Material
 
 The user can save the material with substitution defects in the current Materials Designer session.
 
