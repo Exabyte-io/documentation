@@ -24,7 +24,7 @@ For the expected material we will use approximate coordinates to place the subst
 
 To replicate the material from FIG. 1. a) we will use the following settings:
 
-![img.png](point_defect_substitution_0.png)
+<img src="/images/tutorials/made-tools/defects/point_defect_substitution/point_defect_substitution_0.png">
 
 ```python
 METHOD = "approximate_coordinate" 
