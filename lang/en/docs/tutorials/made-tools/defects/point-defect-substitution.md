@@ -2,41 +2,52 @@
 
 This tutorial guides to create materials from "Formation, stabilities, and electronic properties of nitrogen defects in graphene" https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446 paper.
 
-## 0. Open Materials Designer
+## Pre-requisites
 
-## 1. Import Materials
+This tutorial assumes that the user knows how to:
 
-In order to create a material with substitution defects in Graphene, the user should first import structure of Graphene into the current Materials Designer session, from the [Standata](../../materials-designer/header-menu/input-output/standata-import.md).
+- Open [Materials Designer](../../../materials-designer/overview.md).
+- Launch [JupyterLite Session](../../../jupyterlite/overview.md) (inside Materials Designer) or Jupyter Notebook (on the local machine).
+- Import materials into Materials Designer (from Standata, Materials Bank or as upload).
+- Pass data between JupyterLite Session or Jupyter Notebook and outside runtime.
 
-## 2. Use JupyterLite Session Dialog
+## 1. Procedure overview
 
-Navigate to `Advanced` > `JupyterLite Session` from the main interface.
+- Import Graphene material into Materials Designer and load in JupyterLite Session.
+- Create a 5x5 supercell of Graphene to introduce substitution defects. 
+- Set the method, approximate coordinate and element of the defect atom to be added to the Graphene supercell.
+- Run the notebook to create a material with substitution defects in Graphene.
+- Review the results.
 
-  <img src="/images/tutorials/interface_with_zsl/1_select_jupyterlite_session.webp" alt="Open JupyterLite Dialog"/>
+## 2. Adjust notebook settings
 
-- In the Introduction notebook find the link to the example under `Examples` > `1. Builders / Point Defects` > `1.1. Susbstitution defects in Graphene`
+For the expected material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
 
-  <img src="/images/tutorials/interface_with_zsl/2_introduction_notebook.webp" alt="Open Example Notebook"/>
-  
-- The link will open the example notebook in a new tab.
+To replicate the material from FIG. 1. a) we will use the following settings:
 
-## 3. Procedure overview
+<img src="/images/tutorials/made-tools/defects/point_defect_substitution/point_defect_substitution_0.png">
 
-- We need to create a 4x4 supercell of Graphene to introduce substitution defects. 
-- We will focus on adding nitrogen atoms to the Graphene structure.
-- Set the coordinate and element of the nitrogen atom to be added to the Graphene structure.
+```python
+METHOD = "approximate_coordinate" 
 
-## 4. Adjust notebook settings
+DEFECT_TYPE = "substitution"
 
-## 5. Run the Notebook
+APPROXIMATE_COORDINATE = [0.5, 0.5, 0.5]    
+
+CHEMICAL_ELEMENT = "N"
+
+SUPERCELL_MATRIX = [[5, 0, 0], [0, 5, 0], [0, 0, 1]]
+
+```
+## 3. Run the Notebook
 
 Run the notebook to create a material with substitution defects in Graphene.
 
-## 6. Analyze the Results
+## 4. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
-## 7. Save the Material
+## 5. Save the Material
 
 The user can save the material with substitution defects in the current Materials Designer session.
 
