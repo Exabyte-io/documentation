@@ -14,11 +14,12 @@ This tutorial assumes that the user knows how to:
 
 - Open [Materials Designer](../../../materials-designer/overview.md).
 - Launch [JupyterLite Session](../../../jupyterlite/overview.md) (inside Materials Designer) or Jupyter Notebook (on the local machine).
-- Import materials into Materials Designer (from Standata, Materials Bank or as upload).
+- Import materials into Materials Designer (from [Standata](lang/en/docs/materials-designer/header-menu/input-output/standata-import.md), Materials Bank or as upload).
 - Pass data between JupyterLite Session or Jupyter Notebook and outside runtime.
 
 ## Procedure overview
 
+- Open 
 - Import Graphene material into Materials Designer and load in JupyterLite Session.
 - Configure defect settings (for single -- use existing notebook, for multiple -- edit the notebook).
 - Run the notebook to create the material with defects.
@@ -83,15 +84,11 @@ defect_builder_parameters = PointDefectBuilderParameters(center_defect=False)
 Under the "2.2. Create the defects" cell, add the following code to create add multiple defects consecutively:
 
 ```python
-from mat3ra.made.tools.build.defect import create_defect
+from mat3ra.made.tools.build.defect import create_defects
 
-defect_1 = create_defect(defect_configuration_1, defect_builder_parameters)
-defect_configuration_2.crystal = defect_1  # Update crystal for the next defect
-defect_2 = create_defect(defect_configuration_2, defect_builder_parameters)
-defect_configuration_3.crystal = defect_2  # Update crystal for the next defect
-defect_3 = create_defect(defect_configuration_3, defect_builder_parameters)
-defect_configuration_4.crystal = defect_3  # Update crystal for the next defect
-defect_4 = create_defect(defect_configuration_4, defect_builder_parameters)
+material_with_defects = create_defects([defect_configuration_1, defect_configuration_2, defect_configuration_3, defect_configuration_4],
+                                       supercell,
+                                       defect_builder_parameters)
 ```
 
 ## Execution and Analysis
