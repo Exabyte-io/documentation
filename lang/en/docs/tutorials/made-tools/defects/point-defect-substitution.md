@@ -1,4 +1,4 @@
-# Create materials with substitution defects from the paper 
+# Create Nitrogen Defects in Graphene
 
 This tutorial demonstrates the process of creating materials with substitution defects, based on the research presented in:
 <h3>Formation, stabilities, and electronic properties of nitrogen defects in graphene </h3>
@@ -8,52 +8,43 @@ Physical Review B, 2011.
 
 The paper is available [here](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446).
 
-## Pre-requisites
-
-This tutorial assumes that the user knows how to:
-
-- Open [Materials Designer](../../../materials-designer/overview.md).
-- Launch [JupyterLite Session](../../../jupyterlite/overview.md) (inside Materials Designer) or Jupyter Notebook (on the local machine).
-- Import materials into Materials Designer (from [Standata](lang/en/docs/materials-designer/header-menu/input-output/standata-import.md), Materials Bank or as upload).
-- Pass data between JupyterLite Session or Jupyter Notebook and outside runtime.
 
 ## Procedure overview
 
-- Open 
-- Import Graphene material into Materials Designer and load in JupyterLite Session.
-- Configure defect settings (for single -- use existing notebook, for multiple -- edit the notebook).
+- Open Materials Designer and import Graphene material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
+- Create supercell of Graphene.
+- Get coordinates of the atoms to replace via 3D editor.
+- Launch [JupyterLite Session](../../../jupyterlite/overview.md) and open the `create_point_defect.ipynb` notebook.
+- Configure defect settings 
 - Run the notebook to create the material with defects.
-- Analyze and save the results.
+- Analyze the results and save the material.
 
-## Option A: Single substitution defect
+## Step 1: Import Graphene Material
 
-To replicate the material from FIG. 1. a) of the paper: 
+In this tutorial we will focus on replicating the material from FIG. 1. b) of the paper: 
 
 <img src="/images/tutorials/made-tools/defects/point_defect_substitution/point_defect_substitution_0.webp" title="FIG. 1. a)">
 
 Use the existing `create_point_defect.ipynb` notebook and modify the parameters.
 
-For the desired material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
-The notebook will use that `APPROXIMATE_COORDINATE` parameter to create corresponding configuration and ignore other methods. 
+## Step 2: Adjust the Notebook Settings
 
-Add the following code to the "1.1. Set up defect parameters" cell:
+Adjust supercell matrix in the "1.1. Set up defect parameters" cell, since the supercell is already created outside the notebook:
 
 ```python
 DEFECT_TYPE = "substitution"
 SITE_ID = None # `from_site_id` method will be ignored
 COORDINATE = None # default method will be ignored
-APPROXIMATE_COORDINATE = [0.51, 0.5, 0.5]    
+APPROXIMATE_COORDINATE = None   
 CHEMICAL_ELEMENT = "N"
-SUPERCELL_MATRIX = [[5, 0, 0], [0, 5, 0], [0, 0, 1]]
+SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 ```
 
-## Option B: Multiple substitution and vacancy defects
+For the desired material we will use approximate coordinates to place the substituting atom since it's easier to do that based on the picture from the paper.
+The notebook will use that `APPROXIMATE_COORDINATE` parameter to create corresponding configuration and ignore other methods. 
 
-To reproduce the material from FIG. 1. b) of the paper we will need to add 3 substitution and 1 vacancy defects to the same material.
-
-Create a copy of the notebook to preserve the original and edit the copy.
-
-Under the "2.1. Set defect configuration and builder parameters" cell, add the following code:
+Under the "2.1. Set defect configuration and builder parameters" cell, create configurations for multiple defects:
+Use the same `crystal` material as its lattice is used to place the defects.
 
 ```python
 from mat3ra.made.tools.build.defect import PointDefectConfiguration
@@ -77,6 +68,7 @@ defect_configuration_3 = PointDefectConfiguration.from_approximate_position(crys
 defect_configuration_4 = PointDefectConfiguration.from_approximate_position(crystal=supercell,
                                                                                 defect_type="vacancy",
                                                                                 approximate_coordinate=[0.5, 0.5, 0.5])
+defect_configurations = [defect_configuration_1, defect_configuration_2, defect_configuration_3, defect_configuration_4]
 
 defect_builder_parameters = PointDefectBuilderParameters(center_defect=False)
 ```
@@ -86,18 +78,17 @@ Under the "2.2. Create the defects" cell, add the following code to create add m
 ```python
 from mat3ra.made.tools.build.defect import create_defects
 
-material_with_defects = create_defects([defect_configuration_1, defect_configuration_2, defect_configuration_3, defect_configuration_4],
+material_with_defects = create_defects(defect_configurations,
                                        supercell,
                                        defect_builder_parameters)
 ```
 
-## Execution and Analysis
 
-### 1. Run the Notebook
+## 3. Run the Notebook
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-## 2. Analyze the Results
+## 4. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
