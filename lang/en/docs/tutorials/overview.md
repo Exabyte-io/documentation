@@ -1,14 +1,13 @@
 # Tutorials
 
-This section of documentation contains tutorials. We present a short video on
-various ways of accessing Mat3ra platform:
+Below we present a short video on various ways of accessing Mat3ra platform.
+The sub-pages under this section contain detailed tutorials. You can find
+specific tutorial from the index below or locate the corresponding entry in the
+sidebar navigation.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/vERldqp77bU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-You can find detailed tutorials from the index below or locate the corresponding
-entry in the sidebar navigation.
 
 ## Index of Tutorials
 
@@ -36,7 +35,7 @@ entry in the sidebar navigation.
         * [Electronic band structure, HSE (QE)](dft/electronic/hse-qe-bs.md)
         * [Electronic band structure, HSE (VASP)](dft/electronic/hse-vasp-bg.md)
         * [Electronic band structure, GW, Full Freq., (QE)](dft/electronic/gw-qe-bs-fullfreq.md)
-        * [Electronic band structure, GW, Plasmon P., (QE)](dft/electronic/gw-qe-bs-plasmon.md)
+        * [Electronic band structure, GW, Plasmon Pole, (QE)](dft/electronic/gw-qe-bs-plasmon.md)
         * [Electronic band gap](dft/electronic/band-gap.md)
         * [Electronic band gap, HSE (QE)](dft/electronic/hse-qe-bg.md)
         * [Electronic band gap, GW (VASP)](dft/electronic/gw-vasp-bg.md)
