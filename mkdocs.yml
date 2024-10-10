@@ -46,6 +46,9 @@ extra:
     analytics:
         provider: google
         property: UA-69270713-5
+    jupyterlite:
+        origin_url: https://jupyterlite.mat3ra.com/lab
+        notebooks_path_root: api-examples/other/materials_designer
 
 markdown_extensions:
     - admonition
@@ -105,6 +108,8 @@ plugins:
         enable_creation_date: false
     - search
     - tags
+    - macros
+    - include
 
 nav:
     - Home: index.md
@@ -198,6 +203,9 @@ nav:
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
             - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
+        - Made-Tools:
+            - Defects:
+                - Substitution Defect:                 tutorials/made-tools/defects/point-defect-substitution.md
         - Materials:
             - Overview:                                                         tutorials/materials/overview.md
             - VESTA via Remote Desktop:                                         tutorials/materials/vesta-remote-desktop.md
@@ -761,6 +769,9 @@ nav:
             - Create Anaconda Environment:              cli/actions/create-anaconda-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
+
+    - JupyterLite Session:
+          - Overview:                                  jupyterlite/overview.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
