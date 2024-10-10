@@ -4,7 +4,7 @@ This page contains information about clusters hosted on Amazon Web Services[^1] 
 
 ## Clusters
 
-The following table provides information about available clusters on Amazon Web Services (AWS) cloud computing platform. The latest cluster status can be found on <a href="https://platform.exabyte.io/clusters" target="_blank">Clusters</a> page in web application.
+The following table provides information about available clusters on Amazon Web Services (AWS) cloud computing platform. The latest cluster status can be found on <a href="https://platform.mat3ra.com/clusters" target="_blank">Clusters</a> page in web application.
 
 | Name        | Master Hostname                                   | Location |
 | :---:       | :---:                                             | :---:    |
@@ -40,7 +40,7 @@ The list of currently enabled queues is given below. Price per core hour is show
 
 ## Hardware Specifications
 
-The following table contains hardware specifications for the above queues. 
+The following table contains hardware specifications for the above queues.
 
 | Name  | CPU[^5]  | Cores per Node | GPU[^6] | GPU per Node | Memory (GB) | Bandwidth (Gbps) |
 | :---: | :---:        | :---:      | :---:        | :---:    | :---:       | :---:            |
