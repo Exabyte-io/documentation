@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Create Molecule on a Surface: https://docs.exabyte.io/tutorials/materials/molecule-surface/"
+        "Create Molecule on a Surface: https://docs.mat3ra.com/tutorials/materials/molecule-surface/"
     ],
     "description": "In this tutorial, the user will learn about how the Material Designer Interface of our platform can be used to create a geometry for modeling a surface chemical reaction, whereby a molecule interacts with a surface, and undergoes for example a chemical adsorption process. We consider the example of a benzene molecule adsorbed on a gold (Au) (211) surface throughout the present tutorial.",
     "tags": [

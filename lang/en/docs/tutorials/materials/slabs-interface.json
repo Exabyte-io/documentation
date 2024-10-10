@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Create an Interface: https://docs.exabyte.io/tutorials/materials/slabs-interface/"
+        "Create an Interface: https://docs.mat3ra.com/tutorials/materials/slabs-interface/"
     ],
     "description": "In this tutorial, the user will learn about how the Material Designer Interface of our platform can be used to create two slabs, and how to put them next to each other to create an interface. We consider the example of a semiconductor-metal interface, which is commonly encountered in a broad variety of semiconducting devices, by considering the case of a slab of gold placed next to a slab of silicon.",
     "tags": [

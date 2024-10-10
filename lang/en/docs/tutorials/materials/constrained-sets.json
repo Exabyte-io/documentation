@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Create Constrained Interpolated Sets: https://docs.exabyte.io/tutorials/materials/interpolated-sets/"
+        "Create Constrained Interpolated Sets: https://docs.mat3ra.com/tutorials/materials/interpolated-sets/"
     ],
     "description": "This video animation demonstrates how to create an interpolated set, necessary for the calculation of the energy profile and activation barrier for the multi-dimensional energy space of chemical reactions via the Nudged Elastic Bands (NEB) method. Since the molecules considered in this example are entirely one-dimensional, we include atomic constraints limiting the movement of atoms to only this single dimension.",
     "tags": [

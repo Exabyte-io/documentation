@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Effective Screening Medium (ESM) Calculation: https://docs.exabyte.io/tutorials/dft/electronic/esm/"
+        "Effective Screening Medium (ESM) Calculation: https://docs.mat3ra.com/tutorials/dft/electronic/esm/"
     ],
     "description": "In this tutorial animation, we demonstrate the steps involved in the creation and execution of an ESM computation on a water molecule, using the Quantum ESPRESSO simulation engine.",
     "title": "Exabyte.io Tutorial: Effective Screening Medium (ESM) Calculation",
