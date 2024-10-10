@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Bandstructure with HSE and QE: https://docs.exabyte.io/tutorials/dft/electronic/hse-qe-bs/"
+        "Calculate Electronic Bandstructure with HSE and QE: https://docs.mat3ra.com/tutorials/dft/electronic/hse-qe-bs/"
     ],
     "description": "This video animation demonstrates how to calculate the electronic band structure of crystalline silicon through the HSE hybrid functional approach, as implemented by the Quantum ESPRESSO modeling engine.",
     "tags": [

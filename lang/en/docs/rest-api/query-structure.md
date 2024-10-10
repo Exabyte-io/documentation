@@ -11,7 +11,7 @@ A request is an HTTP request that consists of the following parts.
 The following is a sample request which uses `GET` method and connects to `materials` endpoint. `KuAsBRwofzGfHPWiT` specifies the material ID and `X-Auth-Token` and `X-Account-Id` are authentication parameters passed inside the request header.
 
 ```bash
-curl -X GET https://platform.exabyte.io/api/2018-10-01/materials/KuAsBRwofzGfHPWiT \
+curl -X GET https://platform.mat3ra.com/api/2018-10-01/materials/KuAsBRwofzGfHPWiT \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
     -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 ```
@@ -39,7 +39,7 @@ Some of the endpoints support list action which uses `GET` HTTP method to return
 
 An example way of listing materials with "SiGe" chemical formula is given below:
 ```bash
-curl -X GET https://platform.exabyte.io/api/2018-10-01/materials?query=%7B%22formula%22%3A+%22SiGe%22%7D \
+curl -X GET https://platform.mat3ra.com/api/2018-10-01/materials?query=%7B%22formula%22%3A+%22SiGe%22%7D \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
     -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 ```
@@ -64,11 +64,11 @@ For example if there are 200 materials which you want to get via 2 calls to the 
 - {"skip": 100, "limit": 100}
 
 ```bash
-curl -X GET https://platform.exabyte.io/api/2018-10-01/materials?projection=%7B%22limit%22%3A+50%7D  \
+curl -X GET https://platform.mat3ra.com/api/2018-10-01/materials?projection=%7B%22limit%22%3A+50%7D  \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
     -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 
-curl -X GET https://platform.exabyte.io/api/2018-10-01/materials?projection=%7B%22skip%22%3A+50%2C+%22limit%22%3A+50%7D  \
+curl -X GET https://platform.mat3ra.com/api/2018-10-01/materials?projection=%7B%22skip%22%3A+50%2C+%22limit%22%3A+50%7D  \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
     -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 ```

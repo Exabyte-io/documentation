@@ -1,0 +1,107 @@
+{
+    "descriptionLinks": [
+        "Various ways of accessing Mat3ra platform: https://docs.mat3ra.com/tutorials/overview/"
+    ],
+    "description": "In this short video, we will go through various ways of accessing Mat3ra platform. There are three main modes of accessing Mat3ra platform: (1) Web/browser interface, (2) Command line interface (CLI), and (3) API access.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        "API",
+        "CLI"
+    ],
+    "title": "Mat3ra Tutorial: Various ways of accessing Mat3ra platform",
+    "youTubeCaptions": [
+        {
+            "text": "Hi, <break time='0.25'/> welcome to matera tutorial series once again. In this short video, we will give a glimpse of various ways of accessing our platform.",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:09.000"
+        },
+        {
+            "text": "There are three main ways to access our simulation platform, namely, <break time='0.25'/> the web interface using a browser, <break time='0.5'/> command line interface via S S H, <break time='0.25'/> and A P I access. These different modes of access are designed keeping in mind various use cases. For example, <break time='0.25'/> a novice user will probably find the web browser interface most user friendly to run his or her D F T simulations, <break time='0.25'/> while an enterprise user might find our A P I access is suitable to integrate our services with their existing client application. However, these different modes of access are complimentary to each other, and oftentimes, a user might want to use more than one mode or all three modes to interact with our platform depending on the task at hand.",
+            "startTime": "00:00:10.500",
+            "endTime": "00:00:53.000"
+        },
+        {
+            "text": "First, <break time='0.25'/> let's have a look at our web interface. Use any modern browser and visit platform dot matera dot com. Web interface is designed for both novice and experienced users. You should be able to run simulations without getting into various technicalities. Currently our significant development effort is focussed on the web platform. New features are being added more frequently. If you do not have an account already, please sign up for a new account. Please use your credentials to login.",
+            "startTime": "00:00:54.000",
+            "endTime": "00:01:25.000"
+        },
+        {
+            "text": "Once you have logged in, you will see a dashboard with sections for your recent jobs, recent properties you have calculated, workflows, materials, projects and so on. Depending on what task you want to carry out, you can visit one of those pages. For example, if I want to create an entry for a new material, we can visit the materials page.",
+            "startTime": "00:01:26.000",
+            "endTime": "00:01:46.000"
+        },
+        {
+            "text": "Here, <break time='0.25'/>we can import material structure or create new structure using material designer by specifying lattice type, lattice constants, atomic positions et cetera.",
+            "startTime": "00:01:47.000",
+            "endTime": "00:01:56.000"
+        },
+        {
+            "text": "We can navigate to another page from the left sidebar. Or, use the top tab bar for navigation.",
+            "startTime": "00:01:56.000",
+            "endTime": "00:02:02.000"
+        },
+        {
+            "text": "You can have a look at the materials and workflows banks, contributed by the users of this platform.",
+            "startTime": "00:02:03.000",
+            "endTime": "00:02:10.000"
+        },
+        {
+            "text": "Discussing every feature of our web platform is not possible in this short video. Instead, I would suggest you to visit our YouTube channel, and have a look at our recent tutorials. You can visit our YouTube channel using the short U R L, M three  dot L U slash Y T.",
+            "startTime": "00:02:11.000",
+            "endTime": "00:02:26.000"
+        },
+        {
+            "text": "Next, <break time='0.25'/> let's have a look at our command line interface via S S H. <break time='0.1'/> Before we are able to authenticate seamlessly for S S H connection, we need to setup our S S H keys. Please have a look into our documentation page at docs dot mat-era dot com, and search for S S H or visit this page directly by typing short U R L, M three dot L U slash D <break time='0.1'/> slash S S H.",
+            "startTime": "00:02:27.000",
+            "endTime": "00:02:50.000"
+        },
+        {
+            "text": "Here you will find platform specific step by step instructions. Once you have setup S S H keys, we can launch a terminal application, and connect to mat-era login node by issuing this command <break time='0.25'/> S S H <break time='0.1'/> your username at login dot mat-era dot com.",
+            "startTime": "00:02:51.000",
+            "endTime": "00:03:07.000"
+        },
+        {
+            "text": "Once you have connected, you will see some commonly used commands. Such as, exa-cluster that shows available clusters in your node, similarly exa-nodes command shows available nodes. Our queue system is managed by P B S, so any P B S command will work, for example, you can check the summary of your recently submitted jobs by Q stat command, or Q sub to submit a new job.",
+            "startTime": "00:02:51.000",
+            "endTime": "00:03:29.000"
+        },
+        {
+            "text": "Various software versions are managed by environment modules. You can check available software modules by module avail command. We can see that default version of G C C is 4 point 8 point 5. If we want a newer version, we can use module load command.",
+            "startTime": "00:03:30.000",
+            "endTime": "00:03:45.000"
+        },
+        {
+            "text": "If you want to familiarize yourself with commonly used H P C commands, please have a look at our documentation pages.",
+            "startTime": "00:03:46.000",
+            "endTime": "00:03:53.000"
+        },
+        {
+            "text": "You can visit our github repository C L I job examples where you will find various application specific examples.",
+            "startTime": "00:03:54.000",
+            "endTime": "00:04:01.000"
+        },
+        {
+            "text": "Besides, using S S H terminal application, <break time='0.25'/> our web platform also have a web terminal access and remote desktop feature, which does not require any S S H or remote desktop client installed.",
+            "startTime": "00:03:55.000",
+            "endTime": "00:04:12.000"
+        },
+        {
+            "text": "Finally, let's have a glance at our A P I access. With A P I, you can interact with our platform programmatically.",
+            "startTime": "00:04:13.000",
+            "endTime": "00:04:20.000"
+        },
+        {
+            "text": "The best place to find information about A P I would be our documentation pages.",
+            "startTime": "00:04:21.000",
+            "endTime": "00:04:25.000"
+        },
+        {
+            "text": "Our A P I explorer available at A P I dash explorer dot mat-era dot com, is helpful to test sample query and responses without writing any code.",
+            "startTime": "00:04:26.000",
+            "endTime": "00:04:42.000"
+        }
+    ],
+    "youTubeId": "vERldqp77bU"
+}

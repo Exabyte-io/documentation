@@ -24,7 +24,7 @@ In order to run WIEN2k one should use a job script file similar to the one given
 #    7. email about job abort, begin, end  (-m abe)                #
 #    8. email address to use               (-M)                    #
 #                                                                  #
-#  For more information visit https://docs.exabyte.io/cli/jobs     #
+#  For more information visit https://docs.mat3ra.com/cli/jobs     #
 # ---------------------------------------------------------------- #
 
 #PBS -N WIEN2K
@@ -66,7 +66,7 @@ cd $PBS_O_WORKDIR
 #
 # run the calculation
 #
-runsp_lapw -p -ec 0.00001 
+runsp_lapw -p -ec 0.00001
 ```
 
 ## Generating Machines File

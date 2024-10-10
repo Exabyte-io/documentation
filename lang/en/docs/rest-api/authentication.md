@@ -11,7 +11,7 @@ The "Login" endpoint is used to obtain the authentication credentials that can b
 Here's how the authentication can be performed from a command line terminal:
 
 ```bash
-curl -X POST https://platform.exabyte.io/api/2018-10-01/login \
+curl -X POST https://platform.mat3ra.com/api/2018-10-01/login \
     -d "username=USERNAME&password=PASSWORD"
 ```
 
@@ -27,7 +27,7 @@ And the response will look like this:
 For any endpoints that require authentication, you must further include the authentication parameters inside a request header:
 
 ```bash
-curl -X GET https://platform.exabyte.io/api/2018-10-01/materials \
+curl -X GET https://platform.mat3ra.com/api/2018-10-01/materials \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
     -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 ```
@@ -41,7 +41,7 @@ curl -X GET https://platform.exabyte.io/api/2018-10-01/materials \
 Here's how the logout can be performed from a command line terminal:
 
 ```bash
-curl -X GET https://platform.exabyte.io/api/2018-10-01/logout \
+curl -X GET https://platform.mat3ra.com/api/2018-10-01/logout \
     -H "X-Account-Id: fbdpsNf4oHiX79vMJ" \
     -H "X-Auth-Token: tZ7-8vWHW3EvRHyadvl7TC3JnLrO_DlkSlK_LkicYgU"
 ```

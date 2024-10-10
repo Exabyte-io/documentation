@@ -42,3 +42,14 @@ heterostructure using the potential lineup method in [this tutorial](valence-ban
 In [this tutorial](hubbard.md) we show how to perform DFT+U calculation in
 Quantum Espresso. We also show calculation of Hubbard parameters from the
 *first principles*.
+
+## Spin-magnetic bandstructure calculation
+
+[This tutorial](spin-magnetic-qe.md) describes spin-magnetic bandstructure
+calculation of nickel using Quantum Espresso.
+
+## Spin-orbit coupling calculation using QE
+
+In [this tutorial](spin-orbit-coupling-qe.md), we present bandstructure
+calculation of topological insulating Bi<sub>2</sub>Se<sub>3</sub> with
+incorporating spin-orbit coupling effect using Quantum ESPRESSO.

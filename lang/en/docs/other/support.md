@@ -8,7 +8,7 @@ Technical questions, computer operations, passwords, and account support
 
 - email: support@exabyte.io
 - phone: 1.510.473.7770
-- web: https://platform.exabyte.io/
+- web: https://platform.mat3ra.com/
 
 # Web widget
 

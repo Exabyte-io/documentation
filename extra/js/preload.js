@@ -82,7 +82,7 @@ var PRIVATE_URLS = [
 
 (function () {
     var checkInterval = 60000; // check login state every min
-    var mainAppLoginURL = "https://platform.exabyte.io/login"; // non-logged-in go here
+    var mainAppLoginURL = "https://platform.mat3ra.com/login"; // non-logged-in go here
     /*
      * @summary Login state sharing with the main web application through cookies
      *          Expects webapp to have exabyte:login-state package installed.

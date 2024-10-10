@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Fermi Surface: https://docs.exabyte.io/tutorials/dft/electronic/fermi-surface/"
+        "Calculate Fermi Surface: https://docs.mat3ra.com/tutorials/dft/electronic/fermi-surface/"
     ],
     "description": "In this tutorial, we show how to calculate and visualize the Fermi Surface of metallic samples using our Web Interface, for the simple case of crystalline copper.",
     "title": "Exabyte.io Tutorial: Calculate Fermi Surface",

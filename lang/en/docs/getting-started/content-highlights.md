@@ -4,10 +4,10 @@ This page helps users quickly grasp the content of documentation. Use the table 
 
 ## Login
 
-We support two main login connection methods: through [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). One must have a valid username and password in order to login via either. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have a [Remote Desktop Environment](../remote-connection/remote-desktop.md) option available to them. 
+We support two main login connection methods: through [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). One must have a valid username and password in order to login via either. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have a [Remote Desktop Environment](../remote-connection/remote-desktop.md) option available to them.
 
 The user can find out more about such connection methods under the [connection options page](../remote-connection/overview.md). The
-- <a href="http://platform.exabyte.io/login" target="_blank">login page</a> is where the platform can be accessed.
+- <a href="http://platform.mat3ra.com/login" target="_blank">login page</a> is where the platform can be accessed.
 
 ## Creating Materials
 
@@ -27,7 +27,7 @@ We allow users to simulate materials to extract desired [properties](../properti
 
 ### Workflows
 
-[Workflows](../workflows/overview.md) define the logic used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on the [simulation engine](../software/overview.md), on the choice for a [model](../models/overview.md), and on its computational implementation, or [method](../methods/overview.md). 
+[Workflows](../workflows/overview.md) define the logic used during simulation. Each workflow has one or more characteristic properties associated with it. Workflows are dependent on the [simulation engine](../software/overview.md), on the choice for a [model](../models/overview.md), and on its computational implementation, or [method](../methods/overview.md).
 
 For example, [Density Functional Theory](../models-directory/dft/overview.md), as implemented in its [plane-wave pseudopotential formulation](../methods-directory/pseudopotential/overview.md) under the [Quantum ESPRESSO](../software-directory/modeling/quantum-espresso/overview.md) and [VASP](../software-directory/modeling/vasp/overview.md) codes, is supported at current.
 

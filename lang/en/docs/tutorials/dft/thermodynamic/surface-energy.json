@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Surface Energy: https://docs.exabyte.io/tutorials/dft/thermodynamic/surface-energy/"
+        "Calculate Surface Energy: https://docs.mat3ra.com/tutorials/dft/thermodynamic/surface-energy/"
     ],
     "description": "The present tutorial page explains how to calculate the surface energy for the simple case of crystalline copper, using Quantum ESPRESSO.",
     "tags": [

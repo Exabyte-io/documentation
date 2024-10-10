@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Band Structure with GW and Plasmon Pole Method: https://docs.exabyte.io/tutorials/dft/electronic/gw-qe-bs-plasmon/"
+        "Calculate Electronic Band Structure with GW and Plasmon Pole Method: https://docs.mat3ra.com/tutorials/dft/electronic/gw-qe-bs-plasmon/"
     ],
     "description": "This tutorial page explains how to calculate the electronic band structure of semiconducting materials based on the GW Approximation operated in conjunction with the plasmon pole approach. We consider a film of Boron Nitride (BN) as an example, and use Quantum ESPRESSO as our main simulation engine, operated in conjunction with the SternheimerGW code.",
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Structure with GW and Plasmon Pole Method",

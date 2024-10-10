@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Investigate k-points Convergence: https://docs.exabyte.io/tutorials/dft/electronic/kpt-convergence/"
+        "Investigate k-points Convergence: https://docs.mat3ra.com/tutorials/dft/electronic/kpt-convergence/"
     ],
     "description": "In this tutorial, we show how to study the convergence of the size of the grid of k-points using our Web Interface, for the simple case of a total energy calculation performed on crystalline silicon.",
     "title": "Exabyte.io Tutorial: Investigate k-points Convergence",

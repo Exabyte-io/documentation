@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Predict New Properties with Machine Learning: https://docs.exabyte.io/tutorials/ml/predict-ml-properties/"
+        "Predict New Properties with Machine Learning: https://docs.mat3ra.com/tutorials/ml/predict-ml-properties/"
     ],
     "description": "In this tutorial we show how to use a trained Machine Learning Model for predicting the band-gap of a Material containing Si and Ge, by making use of the Exabyte Machine Learning Engine.",
     "tags": [

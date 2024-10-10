@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Density of States: https://docs.exabyte.io/tutorials/dft/electronic/density-of-states/"
+        "Calculate Electronic Density of States: https://docs.mat3ra.com/tutorials/dft/electronic/density-of-states/"
     ],
     "description": "In this tutorial, we show how to calculate and visualize the electronic density of states using our Web Interface, for the simple case of crystalline silicon.",
     "title": "Exabyte.io Tutorial: Calculate Electronic Density of States",

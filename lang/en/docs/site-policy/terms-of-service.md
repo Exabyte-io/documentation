@@ -1,6 +1,6 @@
 # Terms of Service
 
-> Effective date: **Aug 1, 2018**. Updated: **Sep 26, 2022**.
+> Effective date: **Aug 1, 2018**. Updated: **Oct 10, 2024**.
 
 ## 0. Definitions
 
@@ -8,7 +8,7 @@ The “Agreement” refers, collectively, to all the terms, conditions, notices 
 
 The “Service” refers to the applications, software, products, and services provided by Exabyte.
 
-The “Website” refers to Exabyte’s website located at exabyte.io, and all content, services, and products provided by Exabyte at or through the Website. It also refers to Exabyte-owned subdomains, such as "platform.exabyte.io" and "docs.exabyte.io".
+The “Website” refers to Exabyte’s website located at mat3ra.com, and all content, services, and products provided by Exabyte at or through the Website. It also refers to Exabyte-owned subdomains, such as "platform.mat3ra.com" and "docs.mat3ra.com".
 
 “The User,” “You,” and “Your” refer to the individual person, company, or organization that has visited or is using the Website or Service; that accesses or uses any part of the Account; or that directs the use of the Account in the performance of its functions. A User must be at least 13 years of age. Special terms may apply for business or government Accounts.
 
