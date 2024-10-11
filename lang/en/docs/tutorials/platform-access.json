@@ -5,7 +5,7 @@
     "description": "In this short video, we will go through various ways of accessing Mat3ra platform. There are three main modes of accessing Mat3ra platform: (1) Web/browser interface, (2) Command line interface (CLI), and (3) API access.",
     "tags": [
         {
-            "...": "../../metadata/general.json#/tags"
+            "...": "../metadata/general.json#/tags"
         },
         "API",
         "CLI"
