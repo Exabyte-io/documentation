@@ -218,6 +218,9 @@ nav:
             - Interface, minimal strain (JupyterLite Session):                  tutorials/materials/jupyterlite-zsl.md
             - Import materials from files in various formats:                   tutorials/materials/import-from-files.md
 
+            - Specific:
+                - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-creation-point-substitution-graphene.md
+
 
 # COMMON UI COMPONENTS
     - Interface Components:
