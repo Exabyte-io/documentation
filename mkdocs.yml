@@ -204,9 +204,7 @@ nav:
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
             - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
-        - Made-Tools:
-            - Defects:
-                - Substitution Defect:                 tutorials/made-tools/defects/point-defect-substitution.md
+
         - Materials:
             - Overview:                                                         tutorials/materials/overview.md
             - VESTA via Remote Desktop:                                         tutorials/materials/vesta-remote-desktop.md
