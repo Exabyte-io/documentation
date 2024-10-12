@@ -108,7 +108,10 @@ plugins:
         enable_creation_date: false
     - search
     - tags
-    - macros
+    - macros:
+        include_dir: "lang/en/docs/includes"
+        render_by_default: false
+        force_render_paths: "lang/en/docs/includes"
     - include
 
 nav:
