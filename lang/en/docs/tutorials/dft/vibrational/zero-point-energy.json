@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Zero Point Energy: https://docs.exabyte.io/tutorials/dft/vibrational/zero-point-energy/"
+        "Calculate Zero Point Energy: https://docs.mat3ra.com/tutorials/dft/vibrational/zero-point-energy/"
     ],
     "description": "In this tutorial, we show how to calculate the Zero Point Energy using our Web Interface, for the simple case of crystalline silicon.",
     "title": "Exabyte.io Tutorial: Calculate Zero Point Energy",
