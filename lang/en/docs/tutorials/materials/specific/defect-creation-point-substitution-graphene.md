@@ -14,9 +14,8 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 We will focus on creating graphene-nitrogen structures from FIG. 1.
 Specifically, the material from FIG. 1. b) of the paper: 
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG 1. b)")
 
-![Point Defect, Substitution, 0](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0.png "Point Defect, Substitution, 0")
+![Point Defect, Substitution, 0](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0.png "Point Defect, Substitution, FIG. 1. b)")
 
 
 ## 1. Create Graphene Supercell
@@ -31,7 +30,7 @@ We then use the [Advanced](../../../materials-designer/header-menu/advanced/supe
 
 ## 2. Identify Defect Sites
 
-Next, we open the [3D editor](LINK) to identify the crystal site positions for the defects.
+Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the crystal site positions for the defects.
 
 ![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
 
@@ -39,13 +38,13 @@ Hover over the atoms to get the coordinates of the atoms to replace. Then copy/p
 
 ## 3. Create Nitrogen Defects and Vacancies
 
-For the defect creation, we will use the [JupyterLite](LINK) environment with the corresponding notebook.
+For the defect creation, we will use the [JupyterLite](../../../jupyterlite/overview.md) environment with the corresponding notebook.
 
 ## 3.1. Launch JupyterLite Session
 
-Select the [JupyterLite Transformation](LINK) menu item to launch the JupyterLite environment.
+Select the [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md) menu item to launch the JupyterLite environment.
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
+![JupyterLite Dialog](../../../images/materials-designer/jupyterlite_dialog/open-jupyterlite-dialog.webp)
 
 ## 3.2. Open `create_point_defect.ipynb` notebook
 
