@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Train Machine Learning Model: https://docs.exabyte.io/tutorials/ml/train-ml-model/"
+        "Train Machine Learning Model: https://docs.mat3ra.com/tutorials/ml/train-ml-model/"
     ],
     "description": "In this tutorial we show how to train a Machine Learning Model for predicting the band-gap of Materials containing Si and Ge, by making use of the Exabyte Machine Learning Engine.",
     "tags": [

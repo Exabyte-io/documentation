@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Charge Density Mesh: https://docs.exabyte.io/tutorials/dft/electronic/electronic-density-mesh/"
+        "Calculate Electronic Charge Density Mesh: https://docs.mat3ra.com/tutorials/dft/electronic/electronic-density-mesh/"
     ],
     "description": "In this tutorial, we show how to calculate and visualize the electronic charge density mesh using our Web Interface, for the simple case of crystalline silicon.",
     "title": "Exabyte.io Tutorial: Calculate Electronic Charge Density Mesh",

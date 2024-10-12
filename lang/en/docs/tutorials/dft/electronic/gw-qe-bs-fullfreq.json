@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Band Structure with GW and Full-frequency Integration: https://docs.exabyte.io/tutorials/dft/electronic/gw-qe-bs-fullfreq/"
+        "Calculate Electronic Band Structure with GW and Full-frequency Integration: https://docs.mat3ra.com/tutorials/dft/electronic/gw-qe-bs-fullfreq/"
     ],
     "description": "This tutorial page explains how to calculate the electronic band structure of a semiconducting material based on the GW Approximation and full-frequency integration along the imaginary axis. We consider crystalline silicon as a simple example, and use Quantum ESPRESSO as our main simulation engine, operated in conjunction with the SternheimerGW code.",
     "title": "Exabyte.io Tutorial: Calculate Electronic Band Structure with GW and Full-frequency Integration",
