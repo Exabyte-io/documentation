@@ -109,9 +109,9 @@ plugins:
     - search
     - tags
     - macros:
-        include_dir: "lang/en/docs/includes"
+        include_dir: "lang/en/docs/includes/"
         render_by_default: false
-        force_render_paths: "lang/en/docs/includes"
+        force_render_paths: "lang/en/docs/tutorials/materials-designer/"
     - include
 
 nav:
