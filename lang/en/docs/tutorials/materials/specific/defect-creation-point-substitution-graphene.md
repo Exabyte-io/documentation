@@ -1,3 +1,8 @@
+---
+# YAML header
+render_macros: true
+---
+
 # Substitutional Point Defects in Graphene
 
 ## 0. Introduction
@@ -107,8 +112,15 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 ## Interactive JupyterLite Notebook
 
+The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene.
+
+
+{% with origin_url=config.extra.jupyterlite.origin_url %}
+{% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
 {% with notebook_name='create_point_defect.ipynb' %}
-{% include 'includes/jupyterlite_embed.html' %}
+{% include 'jupyterlite_embed.html' %}
+{% endwith %}
+{% endwith %}
 {% endwith %}
 
 ## Tags
