@@ -1,6 +1,7 @@
 <div id="jupyterlite-embed-container" class="jupyterlite-embed-container" style="position: relative; width:100%; height:600px;">
   <iframe
     id="jupyterlite-iframe"
+    src="{{ origin_url }}/tree?path={{ notebooks_path_root }}/{{ notebook_name }}"
     width="100%"
     height="100%"
     style="border:none;"
@@ -14,14 +15,7 @@
 <script>
 (function() {
   var container = document.getElementById('jupyterlite-embed-container');
-  var iframe = document.getElementById('jupyterlite-iframe');
   var button = container.querySelector('.fullscreen-button');
-
-  // Set the iframe src based on data attributes
-  var originUrl = container.getAttribute('data-origin-url');
-  var notebooksPathRoot = container.getAttribute('data-notebooks-path-root');
-  var notebookName = container.getAttribute('data-notebook-name') || 'default_notebook.ipynb';
-  iframe.src = originUrl + '/tree?path=' + notebooksPathRoot + '/' + notebookName;
 
   button.addEventListener('click', function() {
     if (!document.fullscreenElement) {
@@ -48,7 +42,7 @@
   });
 
   document.addEventListener('fullscreenchange', function() {
-    button.textContent = document.fullscreenElement ? '⛶ Exit Full Screen' : '⛶ Full Screen';
+    button.textContent = document.fullscreenElement ? 'Exit Full Screen' : 'Full Screen';
   });
 })();
 </script>
