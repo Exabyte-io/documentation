@@ -5,7 +5,7 @@ render_macros: true
 
 # Substitutional Point Defects in Graphene
 
-## 0. Introduction
+## Introduction
 
 This tutorial demonstrates the process of creating materials with substitution defects, based on the work presented in the following manuscript, where nitrogen defects in graphene are studied.
 
@@ -20,18 +20,18 @@ We will focus on creating graphene-nitrogen structures from FIG. 1.
 Specifically, the material from FIG. 1. b) of the paper: 
 
 
-![Point Defect, Substitution, 0](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0.png "Point Defect, Substitution, FIG. 1. b)")
+![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0.png "Point Defect, Substitution, FIG. 1. b)")
 
 
 ## 1. Create Graphene Supercell
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
+![Standata Graphene Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.png "Standata Graphene Import")
 
 We then use the [Advanced](../../../materials-designer/header-menu/advanced/supercell.md) menu to create a supercell of graphene with a size of 4x4x1.
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
+![Supercell Creation for Graphene](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/2-advanced-supercell.png "Supercell Graphene")
 
 ## 2. Identify Defect Sites
 
@@ -72,24 +72,24 @@ SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 DEFECT_CONFIGS = [
     {
         "defect_type": "substitution",
-        "approximate_coordinate": [0.51, 0.5, 0.5],
-        "chemical_element": CHEMICAL_ELEMENT
+        "approximate_coordinate": [0.65, 0.25, 0.5],
+        "chemical_element": CHEMICAL_ELEMENT,
     },
-    {
+      {
         "defect_type": "substitution",
-        "approximate_coordinate": [0.5, 0.75, 0.5],
-        "chemical_element": CHEMICAL_ELEMENT
+        "approximate_coordinate": [0.75, 0.55, 0.5],
+        "chemical_element": CHEMICAL_ELEMENT,
     },
-    {
+      {
         "defect_type": "substitution",
-        "approximate_coordinate": [0.25, 0.5, 0.5],
-        "chemical_element": CHEMICAL_ELEMENT
+        "approximate_coordinate": [0.45, 0.25, 0.5],
+        "chemical_element": CHEMICAL_ELEMENT,
     },
-    {
+      {
         "defect_type": "vacancy",
-        "approximate_coordinate": [0.5, 0.5, 0.5]
-    }
-]
+        "approximate_coordinate": [0.55, 0.45, 0.5],
+    },
+]  
 ```
 
 ## 5. Run the Notebook
