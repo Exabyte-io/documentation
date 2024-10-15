@@ -45,17 +45,17 @@ Hover over the atoms to get the coordinates of the atoms to replace. Then copy/p
 
 For the defect creation, we will use the [JupyterLite](../../../jupyterlite/overview.md) environment with the corresponding notebook.
 
-## 3.1. Launch JupyterLite Session
+### 3.1. Launch JupyterLite Session
 
 Select the [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md) menu item to launch the JupyterLite environment.
 
 ![JupyterLite Dialog](../../../images/materials-designer/jupyterlite_dialog/open-jupyterlite-dialog.webp)
 
-## 3.2. Open `create_point_defect.ipynb` notebook
+### 3.2. Open `create_point_defect.ipynb` notebook
 
 Find `create_point_defect.ipynb` in the list of notebooks and click/double-click open it.
 
-## 3.3. Open and modify the notebook
+### 3.3. Open and modify the notebook
 
 Edit `create_point_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](LINK_TO_MADE_TOOLS_README) containing the approximate coordinates of the atoms to replace.
 
@@ -68,26 +68,31 @@ COORDINATE = None # default method will be ignored
 APPROXIMATE_COORDINATE = None   
 CHEMICAL_ELEMENT = "N"
 SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+USE_CARTESIAN_COORDINATES = True
 
 DEFECT_CONFIGS = [
     {
         "defect_type": "substitution",
-        "approximate_coordinate": [0.65, 0.25, 0.5],
+        "approximate_coordinate": [4.9, 2.85, 10],
         "chemical_element": CHEMICAL_ELEMENT,
+        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
     },
       {
         "defect_type": "substitution",
-        "approximate_coordinate": [0.75, 0.55, 0.5],
+        "approximate_coordinate": [3.7, 4.9, 10],
         "chemical_element": CHEMICAL_ELEMENT,
+        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
     },
       {
         "defect_type": "substitution",
-        "approximate_coordinate": [0.45, 0.25, 0.5],
+        "approximate_coordinate": [2.45, 2.85, 10],
         "chemical_element": CHEMICAL_ELEMENT,
+        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
     },
       {
         "defect_type": "vacancy",
-        "approximate_coordinate": [0.55, 0.45, 0.5],
+        "approximate_coordinate": [3.7, 3.55, 10],
+        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
     },
 ]  
 ```
