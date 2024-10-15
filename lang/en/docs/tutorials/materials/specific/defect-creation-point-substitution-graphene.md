@@ -20,7 +20,7 @@ We will focus on creating graphene-nitrogen structures from FIG. 1.
 Specifically, the material from FIG. 1. b) of the paper: 
 
 
-![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0.png "Point Defect, Substitution, FIG. 1. b)")
+![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-paper-image.png "Point Defect, Substitution, FIG. 1. b)")
 
 
 ## 1. Create Graphene Supercell
@@ -37,7 +37,7 @@ We then use the [Advanced](../../../materials-designer/header-menu/advanced/supe
 
 Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the crystal site positions for the defects.
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
+![3D Editor](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-threejs-editor-coordinates.png "3D Editor")
 
 Hover over the atoms to get the coordinates of the atoms to replace. Then copy/paste these coordinates into a text file for later use.
 
@@ -92,23 +92,28 @@ DEFECT_CONFIGS = [
 ]  
 ```
 
+![Notebook setup](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/5-jl-setup.png "Notebook setup")
+
 ## 5. Run the Notebook
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
+![Run All](/images/jupyterlite/run-all.png "Run All")
 
 ## 6. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
-![FIG](../../../images/data-in-objectstorage/dropbox-page.png "FIG")
+![Review the Results](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/6-jl-result-preview.png "Review the Results")
 
-## 7. Save the Material
+## 7. Pass the Material to Materials Designer
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
+![Final Material](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/7-wave-result.png "N-doped Graphene")
+
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
+
 
 ## Interactive JupyterLite Notebook
 
