@@ -1,4 +1,5 @@
-name: Update S3 sources
+name: Update S3 deploy
+
 on:
   push:
     branches:
@@ -6,10 +7,11 @@ on:
   schedule:
     - cron: '0 0 1 1 *'
   workflow_dispatch:
+
 jobs:
   build:
     name: Deploy docs
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.S3_ACCESS_KEY }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
@@ -24,7 +26,7 @@ jobs:
       - name: Set python 3 version
         uses: actions/setup-python@v5
         with:
-          python-version: "3.8"
+          python-version: "3.10"
 
       - name: Build pages
         uses: Exabyte-io/action-mkdocs-build@main
