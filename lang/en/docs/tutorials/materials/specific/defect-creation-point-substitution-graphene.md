@@ -127,7 +127,7 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='create_point_defect.ipynb' %}
+{% with notebook_name='specific_examples/defect_creation_point_substitution_graphene.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
