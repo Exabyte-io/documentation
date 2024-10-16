@@ -111,7 +111,7 @@ plugins:
     - macros:
         include_dir: "lang/en/docs/includes/"
         render_by_default: false
-        force_render_paths: "lang/en/docs/tutorials/materials-designer/"
+        # add header from https://mkdocs-macros-plugin.readthedocs.io/en/stable/rendering/#opt-in-through-the-config-file to enable in the specific markdown
     - include
 
 nav:
