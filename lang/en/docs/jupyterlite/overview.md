@@ -28,40 +28,31 @@ To access [JupyterLite](https://jupyterlite.mat3ra.com/lab/index.html) directly,
 https://jupyterlite.mat3ra.com/lab/index.html
 ```
 
-## Access data from the Platform in JupyterLite
 
-To access materials inside the JupyterLite environment launched from Materials Designer, use the following code snippet:
+## File Storage and Synchronization in JupyterLite
 
-```python
-from utils.jupyterlite import get_data
+Local File Storage
+When you open Jupyter notebooks or files on the JupyterLite (JL) server via a provided URL, such as from the Materials Designer or Mat3ra Platform, these files are stored locally on your browser. This means:
 
-get_data("materials_in", globals())
-```
+Local storage: Files and notebooks are saved to your local browser storage. They are not synced across different browsers or devices.
+No cross-device syncing: If you open the same URL on another machine or browser, it will not carry over any changes made in the first environment.
+File restoration: If a distributed notebook or file is deleted by the user, the next time you access the JupyterLite server, the deleted file will be replaced by the original version.
 
-Parameters:
+## Updating Notebooks and Files
 
-The first parameter specifies the name of the global variable (`"materials_in"`) where the received data will be stored.
-The second parameter, `globals()`, ensures that the function operates correctly across both Pyodide and Python environments. It allows `get_data` to dynamically interact with the global namespace of the script.
+When updates to JupyterLite or its API examples are released, it’s important to clear the local cache to ensure that the updated content is correctly loaded. Here's how to manage this:
 
-Data Handling:
+Clear local storage: You can either manually delete the files stored on your browser or clear the browser's local storage for JupyterLite to reload the updated versions.
+Cache refresh: After a JupyterLite update, you may need to delete the directory containing distributed notebooks and files to ensure the most up-to-date versions are loaded.
 
-The materials data is initially stored in a global variable named `data_from_host`, which is updated in response to changes in material selection or the materials themselves.
-In the context of the Pyodide environment, `data_from_host` becomes available after the Pyodide kernel has loaded and the extension set the data.
+## Synchronization Behavior
 
-### Send Materials Back to Materials Designer
+JupyterLite instances opened via Materials Designer, Mat3ra Platform, or by a provided URL (e.g., jupyterlite.mat3ra.com) behave slightly differently:
 
-To send the materials back to the Materials Designer, use the following code snippet:
+Per-machine sync: The files and notebooks opened in these instances are synced within the same browser and machine. Since they are loaded in an iframe (displaying the JupyterLite URL), they persist for that specific browser and device.
+Non-shared state: However, any changes or files are still specific to that browser instance, and they are not shared between devices or browsers unless explicitly copied or transferred.
 
-```python
-from utils.jupyterlite import send_data
 
-materials = [material1, material2, ...]
-send_data("materials", materials)
-```
-
-Parameters:
-
-The first parameter specifies the data that is being sent, which is "materials" in case for materials, this shouldn't be changed. The second parameter is the list of materials in ESSE format.
 
 ## Actions
 
@@ -97,3 +88,39 @@ To edit an existing notebook without modifying the original, user can create a c
 To copy a notebook, right-click on the notebook file in the file browser, select "Copy", and then paste it in the desired location.
 
 ![Copy Notebook](../images/jupyterlite/copy-notebook.png)
+
+
+## Access data from the Platform in JupyterLite
+
+To access materials inside the JupyterLite environment launched from Materials Designer, use the following code snippet:
+
+```python
+from utils.jupyterlite import get_data
+
+get_data("materials_in", globals())
+```
+
+Parameters:
+
+The first parameter specifies the name of the global variable (`"materials_in"`) where the received data will be stored.
+The second parameter, `globals()`, ensures that the function operates correctly across both Pyodide and Python environments. It allows `get_data` to dynamically interact with the global namespace of the script.
+
+Data Handling:
+
+The materials data is initially stored in a global variable named `data_from_host`, which is updated in response to changes in material selection or the materials themselves.
+In the context of the Pyodide environment, `data_from_host` becomes available after the Pyodide kernel has loaded and the extension set the data.
+
+### Send Materials Back to Materials Designer
+
+To send the materials back to the Materials Designer, use the following code snippet:
+
+```python
+from utils.jupyterlite import send_data
+
+materials = [material1, material2, ...]
+send_data("materials", materials)
+```
+
+Parameters:
+
+The first parameter specifies the data that is being sent, which is "materials" in case for materials, this shouldn't be changed. The second parameter is the list of materials in ESSE format.
