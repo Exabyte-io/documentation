@@ -775,7 +775,11 @@ nav:
             - Check Balance and Quota:                  cli/actions/balance-quota.md
 
     - JupyterLite Session:
-          - Overview:                                  jupyterlite/overview.md
+          - Overview:                                jupyterlite/overview.md
+          - Accessing JupyterLite:                   jupyterlite/accessing-jupyterlite.md
+          - Data Exchange:                           jupyterlite/data-exchange.md
+          - File Storage and Synchronization:        jupyterlite/file-storage-synchronization.md)
+          - Actions:                                 jupyterlite/actions.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
