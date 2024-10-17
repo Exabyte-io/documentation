@@ -778,7 +778,7 @@ nav:
           - Overview:                                jupyterlite/overview.md
           - Accessing JupyterLite:                   jupyterlite/accessing-jupyterlite.md
           - Data Exchange:                           jupyterlite/data-exchange.md
-          - File Storage and Synchronization:        jupyterlite/file-storage-synchronization.md)
+          - File Storage and Synchronization:        jupyterlite/file-storage-synchronization.md
           - Actions:                                 jupyterlite/actions.md
 
     - REST-API:
