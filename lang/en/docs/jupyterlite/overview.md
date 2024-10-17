@@ -16,11 +16,10 @@ The [**JupyterLite**](https://jupyterlite.readthedocs.io/en/stable/) environment
 The JupyterLite environment facilitates access to Jupyter notebooks with data from the main application. 
 It enables users to modify materials using Python and Jupyter notebooks with widely used packages such as `mat3ra-made`, `numpy`, `pymatgen`, and `ASE`.
 
-
 ## [Accessing JupyterLite](./accessing-jupyterlite.md)
 Provides a detailed guide on how to access JupyterLite via the **Materials Designer**, **Mat3ra Platform**, or a direct URL, with accompanying visuals.
 
-## [Data Transfer](./data-transfer.md)
+## [Data Exchange](./data-exchange.md)
 Explains how to transfer data between JupyterLite and Materials Designer, including code snippets for importing and exporting materials data.
 
 ## [File Storage and Synchronization](./file-storage-synchronization.md)
