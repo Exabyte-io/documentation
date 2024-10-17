@@ -1,7 +1,7 @@
 <div id="jupyterlite-embed-container" class="jupyterlite-embed-container" style="position: relative; width:100%; height:600px;">
   <iframe
     id="jupyterlite-iframe"
-    src="{{ origin_url }}/tree?path={{ notebooks_path_root }}/{{ notebook_name }}"
+    src="{% if notebooks_path_root and notebook_name %}{{ origin_url }}/tree?path={{ notebooks_path_root }}/{{ notebook_name }}{% else %}{{ origin_url }}{% endif %}"
     width="100%"
     height="100%"
     style="border:none;"

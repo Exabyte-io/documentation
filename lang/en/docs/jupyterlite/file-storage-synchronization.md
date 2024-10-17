@@ -1,4 +1,4 @@
-# File Storage and Synchronization in JupyterLite
+# JupyterLite: File Storage and Synchronization
 
 ## Local File Storage
 
