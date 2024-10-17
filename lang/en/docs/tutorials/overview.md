@@ -1,15 +1,10 @@
 # Tutorials
 
-Below we present a short video on various ways of accessing Mat3ra platform.
 The sub-pages under this section contain detailed tutorials. You can find
 specific tutorial from the index below or locate the corresponding entry in the
 sidebar navigation.
 
-<div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/vERldqp77bU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-
-## Index of Tutorials
+## Table of Contents
 <!-- this index is generated using scripts/generate_index_of_sub_section.py -->
 - [Overview](overview.md)
 - Jobs via Command Line
@@ -67,6 +62,7 @@ sidebar navigation.
         - [k-point convergence](dft/addons/kpt-convergence.md)
         - [Structural Relaxation](dft/addons/structural-relaxation.md)
 - General Functionality
+    - [Accessing the Platform](platform-access.md)
     - [Jupyter Notebook](other/jupyter.md)
     - [Restart from Previous Job](other/restart-job.md)
     - [Upload External Job Data](other/external-upload.md)

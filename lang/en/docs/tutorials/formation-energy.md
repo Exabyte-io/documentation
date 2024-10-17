@@ -1,3 +1,5 @@
+<!-- As of 2024-10-17, this tutorial is unused -->
+
 # Formation Energy - VASP
 
 This page explains how to calculate formation energy[^1] based on density
