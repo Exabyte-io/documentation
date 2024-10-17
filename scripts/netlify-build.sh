@@ -1,3 +1,4 @@
+#!/bin/bash
 git submodule update --recursive --init
 git lfs install
 git lfs pull
@@ -7,4 +8,4 @@ git lfs pull
 
 # pip packages are automatically installed by netlify
 # if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-mkdocs build
+python -m mkdocs build
