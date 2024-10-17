@@ -1,6 +1,15 @@
+---
+# YAML header
+render_macros: true
+---
+
 # Introduction to JupyterLite
 
 The [**JupyterLite**](https://jupyterlite.readthedocs.io/en/stable/) environment is a lightweight implementation of JupyterLab that runs entirely in the web browser. Without the need for setup and installation, user can open, edit and run Jupyter notebooks.
+
+{% with origin_url="https://jupyter.org/try-jupyter/lab/" %}
+{% include 'jupyterlite_embed.html' %}
+{% endwith %}
 
 ## JupyterLite Environment
 
@@ -19,3 +28,7 @@ Describes how JupyterLite stores files locally in the browser, discusses synchro
 
 ## [Actions](./actions.md)
 Covers the available actions in JupyterLite, including how to open, run, upload, and copy notebooks, with instructions on executing these actions.
+
+## Links
+
+- [JupyterLite Documentation](https://jupyterlite.readthedocs.io/en/stable/)
