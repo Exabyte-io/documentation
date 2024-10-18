@@ -6,9 +6,11 @@ JupyterLite environment can exchange data (1) either directly with the platform 
 
 ## Get data inside JupyterLite
 
-`get_data` is used to init a local variable and make it available inside the session.
+`get_data()` function is used to request data from the Platform or Materials Designer to be loaded into the variable `data_from_host` inside `globals()`.
 
-For example, to work with materials data inside the JupyterLite environment inside [Materials Designer](../materials-designer/overview.md), use the following code snippet:
+This `data_from_host` variable is updated by JS extension in response to changes in material selection for Materials Designer, or loads API keys when launched from the [Platform top menu](accessing-jupyterlite.md/#2-mat3ra-platform).
+
+For example, to work with materials from [Materials Designer](../materials-designer/overview.md), the user would request to write them into `materials_in` variable using the following code snippet:
 
 ```python
 from utils.jupyterlite import get_data
@@ -16,12 +18,7 @@ from utils.jupyterlite import get_data
 get_data("materials_in", globals())
 ```
 
-The first parameter specifies the name of the global variable (`"materials_in"`) where the received data will be stored. The second parameter, `globals()`, ensures the function operates correctly across both Pyodide and Python environments. It allows `get_data` to dynamically interact with the global namespace of the script.
-
-Data Handling:
-
-The materials data is initially stored in a global variable named `data_from_host`, which is updated in response to changes in material selection or the materials themselves.
-In the context of the Pyodide environment, `data_from_host` becomes available after the Pyodide kernel has loaded and the extension set the data.
+The first parameter specifies the name of the global variable `"materials_in"` where the received data will be stored. The second parameter, `globals()`, passes the globals of the current executing notebook.
 
 ## Send data outside
 
