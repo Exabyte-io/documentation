@@ -23,7 +23,14 @@ When updates to JupyterLite or its API examples are released, it’s important t
 - Clear local storage: You can either manually delete the files stored on your browser or clear the browser's local storage for JupyterLite to reload the updated versions.
 - Cache refresh: After a JupyterLite update, you may need to delete the directory containing distributed notebooks and files to ensure the most up-to-date versions are loaded.
 
-<!-- TODO: add visual -->
+Reset one notebook:
+
+<img data-gifffer="/images/jupyterlite/jl-delete-reset-notebook.gif" />
+
+Reset multiple notebooks:
+
+<img data-gifffer="/images/jupyterlite/jl-delete-reset-multiple.gif" />
+
 
 ## Synchronizing Files between sessions
 
