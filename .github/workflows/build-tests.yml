@@ -54,6 +54,11 @@ jobs:
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
           path: actions
 
+      - name: Configure repository
+        uses: ./actions/git/config
+        with:
+          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
+
       - name: Determine git tag
         id: get-tag-name
         uses: ./actions/git/version
@@ -61,5 +66,4 @@ jobs:
       - name: Publish new git tag and release
         uses: ./actions/git/release
         with:
-          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
           tag-name: ${{ steps.get-tag-name.outputs.tag-name }}
