@@ -1,7 +1,14 @@
-# Accessing Data from the Platform in JupyterLite
+# Data Exchange with JupyterLite
 
-To work with materials data inside the JupyterLite environment launched from Materials Designer, use the following code snippet:
+## Overview
 
+JupyterLite environment can exchange data (1) either directly with the platform or (2) with its sub-parts, such as the [Materials Designer](../materials-designer/overview.md).
+
+## Get data inside JupyterLite
+
+`get_data` is used to init a local variable and make it available inside the session.
+
+For example, to work with materials data inside the JupyterLite environment inside [Materials Designer](../materials-designer/overview.md), use the following code snippet:
 
 ```python
 from utils.jupyterlite import get_data
@@ -9,17 +16,14 @@ from utils.jupyterlite import get_data
 get_data("materials_in", globals())
 ```
 
-Parameters:
-
-The first parameter specifies the name of the global variable (`"materials_in"`) where the received data will be stored.
-The second parameter, `globals()`, ensures that the function operates correctly across both Pyodide and Python environments. It allows `get_data` to dynamically interact with the global namespace of the script.
+The first parameter specifies the name of the global variable (`"materials_in"`) where the received data will be stored. The second parameter, `globals()`, ensures the function operates correctly across both Pyodide and Python environments. It allows `get_data` to dynamically interact with the global namespace of the script.
 
 Data Handling:
 
 The materials data is initially stored in a global variable named `data_from_host`, which is updated in response to changes in material selection or the materials themselves.
 In the context of the Pyodide environment, `data_from_host` becomes available after the Pyodide kernel has loaded and the extension set the data.
 
-### Send Materials Back to Materials Designer
+## Send data outside
 
 To send the materials back to the Materials Designer, use the following code snippet:
 
