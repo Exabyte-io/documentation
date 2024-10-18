@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Band Structure with GW and Plasmon Pole Method: https://docs.exabyte.io/tutorials/dft/electronic/valence-band-offset/"
+        "Calculate Electronic Band Structure with GW and Plasmon Pole Method: https://docs.mat3ra.com/tutorials/dft/electronic/valence-band-offset/"
     ],
     "description": "This tutorial page explains how to calculate the valence band offset across a 2D interface using the potential lineup method.  In this example, we chose an interface of WS2 and MoS2 monolayers, and use Quantum ESPRESSO as our main simulation engine.",
     "title": "Mat3ra Tutorial: How to Calculate the Valence Band Offset",

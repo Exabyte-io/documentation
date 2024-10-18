@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Band Gap with HSE and VASP: https://docs.exabyte.io/tutorials/dft/electronic/hse-vasp-bg/"
+        "Calculate Band Gap with HSE and VASP: https://docs.mat3ra.com/tutorials/dft/electronic/hse-vasp-bg/"
     ],
     "description": "In this tutorial, we show how to calculate the electronic band gap through the HSE Hybrid Functional using our Web Interface and the VASP simulation engine, for the simple case of crystalline silicon.",
     "tags": [

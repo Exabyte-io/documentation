@@ -1,4 +1,4 @@
-name: Build documentation
+name: Build tests
 
 on:
   push:
@@ -13,8 +13,14 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: ["ubuntu-22.04"]
-        python-version: ["3.8", "3.9", "3.10", "3.11"]
+        os: ["ubuntu-24.04"]
+        python-version:
+          - "3.8"
+          - "3.9"
+          - "3.10"
+          - "3.11"
+          - "3.12"
+          - "3.13"
 
     steps:
       - name: Checkout repository and submodules

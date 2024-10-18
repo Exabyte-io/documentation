@@ -1,0 +1,32 @@
+{
+    "descriptionLinks": [
+        "Various ways of accessing Mat3ra platform: https://docs.mat3ra.com/tutorials/overview/"
+    ],
+    "description": "In this short video, we will go through various ways of accessing Mat3ra platform. There are three main modes of accessing Mat3ra platform: (1) Web/browser interface, (2) Command line interface (CLI), and (3) API access.",
+    "tags": [
+        {
+            "...": "../metadata/general.json#/tags"
+        },
+        "API",
+        "CLI"
+    ],
+    "title": "Mat3ra Tutorial: Various ways of accessing Mat3ra platform",
+    "youTubeCaptions": [
+        {
+            "text": "Another popular use case of our A P I access is among those using python notebooks. Nowadays, Jupyter notebooks are popular for big data analysis. If your workflow involves jupyter notebooks locally or on the cloud, such as Google Colab, you can run H P C jobs directly from your notebook via A P I.",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:18.000"
+        },
+        {
+            "text": "If interested, please visit our GitHub repository, A P I examples. Here you will find various examples notebooks. For example we can have a look at this notebook that runs a quantum espresso simulation. You will find how to setup A P I token, how to create and submit H P C jobs, monitor job status and finally fetch the output files and continue your data analysis on jupyter notebook.",
+            "startTime": "00:00:19.000",
+            "endTime": "00:00:43.000"
+        },
+        {
+            "text": "That's all for this short platform introduction. Now, it's your turn to explore more. Thank you for following along. <break time='0.1'/>",
+            "startTime": "00:00:45.000",
+            "endTime": "00:00:52.000"
+        }
+    ],
+    "youTubeId": ""
+}
