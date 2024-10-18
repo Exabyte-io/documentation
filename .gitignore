@@ -15,3 +15,6 @@ service-account-key.json
 # ignore media files in scripts folder
 scripts/*.mp3
 scripts/*.mp4
+
+# Pyenv
+.python-version
