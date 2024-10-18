@@ -46,6 +46,9 @@ extra:
     analytics:
         provider: google
         property: UA-69270713-5
+    jupyterlite:
+        origin_url: https://jupyterlite.mat3ra.com/lab
+        notebooks_path_root: api-examples/other/materials_designer
 
 markdown_extensions:
     - admonition
@@ -105,6 +108,11 @@ plugins:
         enable_creation_date: false
     - search
     - tags
+    - macros:
+        include_dir: "lang/en/docs/includes/"
+        render_by_default: false
+        # add header from https://mkdocs-macros-plugin.readthedocs.io/en/stable/rendering/#opt-in-through-the-config-file to enable in the specific markdown
+    - include
 
 nav:
     - Home: index.md
@@ -199,6 +207,7 @@ nav:
             - Restart from Previous Job:             tutorials/other/restart-job.md
             - Upload External Job Data:              tutorials/other/external-upload.md
             - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
+
         - Materials:
             - Overview:                                                         tutorials/materials/overview.md
             - VESTA via Remote Desktop:                                         tutorials/materials/vesta-remote-desktop.md
@@ -209,6 +218,9 @@ nav:
             - Interface, no strain minimization (Python Transformation):        tutorials/materials/interface-with-python.md
             - Interface, minimal strain (JupyterLite Session):                  tutorials/materials/jupyterlite-zsl.md
             - Import materials from files in various formats:                   tutorials/materials/import-from-files.md
+
+            - Specific:
+                - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-creation-point-substitution-graphene.md
 
 
 # COMMON UI COMPONENTS
@@ -762,6 +774,13 @@ nav:
             - Create Anaconda Environment:              cli/actions/create-anaconda-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
+
+    - JupyterLite Session:
+          - Overview:                                jupyterlite/overview.md
+          - Accessing JupyterLite:                   jupyterlite/accessing-jupyterlite.md
+          - Data Exchange:                           jupyterlite/data-exchange.md
+          - File Storage and Synchronization:        jupyterlite/file-storage-synchronization.md
+          - Actions:                                 jupyterlite/actions.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md

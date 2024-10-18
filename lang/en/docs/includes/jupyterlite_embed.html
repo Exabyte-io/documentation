@@ -1,0 +1,48 @@
+<div id="jupyterlite-embed-container" class="jupyterlite-embed-container" style="position: relative; width:100%; height:600px;">
+  <iframe
+    id="jupyterlite-iframe"
+    src="{% if notebooks_path_root and notebook_name %}{{ origin_url }}/tree?path={{ notebooks_path_root }}/{{ notebook_name }}{% else %}{{ origin_url }}{% endif %}"
+    width="100%"
+    height="100%"
+    style="border:none;"
+    sandbox="allow-scripts allow-same-origin allow-popups allow-forms allow-modals allow-top-navigation-by-user-activation allow-downloads"
+  ></iframe>
+  <button class="fullscreen-button" style="position: absolute; top: 10px; right: 10px; z-index: 1000; background-color: #f0f0f0; border: none; padding: 5px 10px; cursor: pointer;">
+    ⛶ Full Screen
+  </button>
+</div>
+
+<script>
+(function() {
+  var container = document.getElementById('jupyterlite-embed-container');
+  var button = container.querySelector('.fullscreen-button');
+
+  button.addEventListener('click', function() {
+    if (!document.fullscreenElement) {
+      if (container.requestFullscreen) {
+        container.requestFullscreen();
+      } else if (container.mozRequestFullScreen) {
+        container.mozRequestFullScreen();
+      } else if (container.webkitRequestFullscreen) {
+        container.webkitRequestFullscreen();
+      } else if (container.msRequestFullscreen) {
+        container.msRequestFullscreen();
+      }
+    } else {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      } else if (document.msExitFullscreen) {
+        document.msExitFullscreen();
+      }
+    }
+  });
+
+  document.addEventListener('fullscreenchange', function() {
+    button.textContent = document.fullscreenElement ? 'Exit Full Screen' : 'Full Screen';
+  });
+})();
+</script>
