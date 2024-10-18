@@ -1,6 +1,6 @@
 {
     "descriptionLinks": [
-        "Calculate Electronic Band Gap via GW Approximation: https://docs.exabyte.io/tutorials/dft/electronic/gw-vasp-bg/"
+        "Calculate Electronic Band Gap via GW Approximation: https://docs.mat3ra.com/tutorials/dft/electronic/gw-vasp-bg/"
     ],
     "description": "We illustrate in this animation how the results for a band gap computation on crystalline silicon can be further improved and made to be more accurate through the use of the GW Approximation.",
     "tags": [

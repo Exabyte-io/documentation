@@ -7,7 +7,7 @@ actual machine learning units.
 ## Example
 
 A diagram of an example workflow can be found below, based on the bank workflow located
-[here](https://platform.exabyte.io/analytics/workflows/rg3HcXd9Rg7hTa5Q3):
+[here](https://platform.mat3ra.com/analytics/workflows/rg3HcXd9Rg7hTa5Q3):
 
 ![Machine Learning Subworkflow Diagram with Automated Calculation Setup and Pipeline](../../../images/software-directory/machine-learning/python-ml/ml-train-diagram.png "Machine Learning Subworkflow Diagram with Automated Calculation Setup and Pipeline")
 
