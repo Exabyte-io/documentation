@@ -47,9 +47,9 @@ For the defect creation, we will use the [JupyterLite](../../../jupyterlite/over
 
 ### 3.1. Launch JupyterLite Session
 
-Select the [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md) menu item to launch the JupyterLite environment.
+Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/materials-designer/jupyterlite_dialog/open-jupyterlite-dialog.webp)
+![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.png "JupyterLite Dialog")
 
 ### 3.2. Open `create_point_defect.ipynb` notebook
 
