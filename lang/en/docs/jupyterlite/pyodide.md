@@ -9,7 +9,7 @@ JupyterLite uses [Pyodide](https://pyodide.org/en/stable/) as a kernel to run Py
 
 ## Overview
 
-Pyodide is a Python distribution for the browser and Node.js based on port of CPython to WebAssembly/Emscripten, enabling Python code execution directly in the browser. 
+Pyodide is a Python distribution for the browser based on port of CPython to WebAssembly/Emscripten, enabling Python code execution directly in the browser. 
 It includes a comprehensive set of Python packages and allows additional package installations from PyPI.
 
 ## Dependencies installation
