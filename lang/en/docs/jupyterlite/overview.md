@@ -16,6 +16,11 @@ The [**JupyterLite**](https://jupyterlite.readthedocs.io/en/stable/) environment
 The JupyterLite environment facilitates access to Jupyter notebooks with data from the main application. 
 It enables users to modify materials using Python and Jupyter notebooks with widely used packages such as `mat3ra-made`, `numpy`, `pymatgen`, and `ASE`.
 
+## [Pyodide](./pyodide.md)
+
+Introduces Pyodide -- kernel used in JupyterLite to run Python code in the browser.
+
+
 ## [Accessing JupyterLite](./accessing-jupyterlite.md)
 Provides a detailed guide on how to access JupyterLite via the **Materials Designer**, **Mat3ra Platform**, or a direct URL, with accompanying visuals.
 
