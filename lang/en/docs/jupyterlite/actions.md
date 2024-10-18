@@ -18,17 +18,17 @@ To run code cells, click on the cell you want to execute and press `Shift + Ente
 
 In most of the notebooks in the Materials Designer, the required action is to Run All Cells. To do this, click on the "Run" button in the toolbar and select "Run All Cells".
 
-![Run All Cells](../images/jupyterlite/run-all.png)
+![Run All Cells](../images/jupyterlite/run-all.webp)
 
 ## Upload File
 
 To upload a file, click on the "Upload" button in the file browser, select the file from your local system, and click "Open".
 
-![Upload File](../images/jupyterlite/upload-file.png)
+![Upload File](../images/jupyterlite/upload-file.webp)
 
 ## Copy Notebook
 
 To edit an existing notebook without modifying the original, user can create a copy of the notebook.
 To copy a notebook, right-click on the notebook file in the file browser, select "Copy", and then paste it in the desired location.
 
-![Copy Notebook](../images/jupyterlite/copy-notebook.png)
+![Copy Notebook](../images/jupyterlite/copy-notebook.webp)
