@@ -36,4 +36,6 @@ Reset multiple notebooks:
 
 To share changes between devices or browser sessions, including within different parts of the platform, one needs to explicitly copy and transfer/reupload the file.
 
-<!-- TODO: add visual -->
+Download and upload the notebook to move between Chrome and Safari sessions:
+
+<img data-gifffer="/images/jupyterlite/jl-download-upload.gif" />
