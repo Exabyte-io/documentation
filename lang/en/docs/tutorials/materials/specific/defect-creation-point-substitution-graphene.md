@@ -57,9 +57,9 @@ Find `create_point_defect.ipynb` in the list of notebooks and click/double-click
 
 ### 3.3. Open and modify the notebook
 
-Edit `create_point_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](LINK_TO_MADE_TOOLS_README) containing the approximate coordinates of the atoms to replace.
+Next, edit `create_point_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](https://github.com/Exabyte-io/made/blob/3d938b4d91a31323dca7a02acb12b646dbb26634/src/py/mat3ra/made/tools/build/defect/configuration.py#L32) containing the approximate coordinates of the atoms to replace.
 
-Adjust the "1.1. Set up defect parameters" cell in the notebook as follows:
+Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
 DEFECT_TYPE = "substitution"
@@ -97,6 +97,8 @@ DEFECT_CONFIGS = [
 ]  
 ```
 
+Here's the visual of the updated content:
+
 ![Notebook setup](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/5-jl-setup.webp "Notebook setup")
 
 ## 5. Run the Notebook
@@ -122,8 +124,7 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 ## Interactive JupyterLite Notebook
 
-The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene.
-
+The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene. Select "Run" > "Run All Cells".
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
