@@ -773,7 +773,7 @@ nav:
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
 
-    - JupyterLite Environnmet:
+    - JupyterLite Environment:
           - Overview:                                jupyterlite/overview.md
           - Accessing JupyterLite:                   jupyterlite/accessing-jupyterlite.md
           - Pyodide:                                 jupyterlite/pyodide.md
