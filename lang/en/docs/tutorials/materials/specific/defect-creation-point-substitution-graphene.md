@@ -124,8 +124,7 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 ## Interactive JupyterLite Notebook
 
-The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene.
-
+The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene. Select "Run" > "Run All Cells".
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
