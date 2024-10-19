@@ -38,28 +38,28 @@ jobs:
       - name: Build documentation
         uses: Exabyte-io/action-mkdocs-build@main
 
-  github-release:
-    runs-on: ubuntu-24.04
-    if: github.ref_name == 'master'
-    needs: [tests]
+  # github-release:
+  #   runs-on: ubuntu-24.04
+  #   if: github.ref_name == 'master'
+  #   needs: [tests]
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v4
 
-      - name: Checkout actions repository
-        uses: actions/checkout@v4
-        with:
-          repository: Exabyte-io/actions
-          token: ${{ secrets.BOT_GITHUB_TOKEN }}
-          path: actions
+  #     - name: Checkout actions repository
+  #       uses: actions/checkout@v4
+  #       with:
+  #         repository: Exabyte-io/actions
+  #         token: ${{ secrets.BOT_GITHUB_TOKEN }}
+  #         path: actions
 
-      - name: Determine git tag
-        id: get-tag-name
-        uses: ./actions/git/version
+  #     - name: Determine git tag
+  #       id: get-tag-name
+  #       uses: ./actions/git/version
 
-      - name: Publish new git tag and release
-        uses: ./actions/git/release
-        with:
-          github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
-          tag-name: ${{ steps.get-tag-name.outputs.tag-name }}
+  #     - name: Publish new git tag and release
+  #       uses: ./actions/git/release
+  #       with:
+  #         github-token: ${{ secrets.BOT_GITHUB_TOKEN }}
+  #         tag-name: ${{ steps.get-tag-name.outputs.tag-name }}
