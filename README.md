@@ -230,9 +230,11 @@ might be "copper-cu-nanoparticle-np-icosahedron-chemistry-nanomaterials-chemical
 thumb for whether an image title is keyword-stuffed or not is to ask: "Is this a natural way of describing the
 image that would actually be used in a spoken conversation?"
 
-Preferred Image Format
-The .webp format is the preferred one, due to its size-effectiveness on the web.
+#### Preferred Image Format `.webp`
+
+The .webp format is preferred due to its size-effectiveness on the web.
 To convert images to .webp format, make sure you have the `webp` package installed on your system. On MacOS, it can be done using Homebrew:
+
 ```bash
 brew install webp
 ```
