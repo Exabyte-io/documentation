@@ -279,7 +279,7 @@ nav:
             - People Explorer:                           collaboration/ui/people-explorer.md
         - Entity Sharing:
             - User Interface:                            collaboration/sharing/ui.md
-            - Actions:                                   collaboration/sharing/actions.md
+            - Actions:                                   collaboration/sharing/common-actions.md
             - Account Access Levels:                     collaboration/sharing/access-levels.md
         - Actions:
             - Organization > Overview:                  collaboration/actions/organization/overview.md
@@ -343,7 +343,7 @@ nav:
             - Parameters:                               methods-directory/pseudopotential/parameters.md
             - Precision:                                methods-directory/pseudopotential/precision.md
             - Important Settings:                       methods-directory/pseudopotential/important-settings.md
-            - Actions:                                  methods-directory/pseudopotential/actions.md
+            - Actions:                                  methods-directory/pseudopotential/common-actions.md
         - Linear Regression:
             - Overview:                                 methods-directory/linear-regression/overview.md
             - Parameters:                               methods-directory/linear-regression/parameters.md
@@ -765,7 +765,7 @@ nav:
         - Accounting:                                   cli/accounting.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
-            - Load / Unload Modules:                    cli/actions/modules-actions.md
+            - Load / Unload Modules:                    cli/actions/modules-common-actions.md
             - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
@@ -780,7 +780,7 @@ nav:
           - Dependencies and Imports:                jupyterlite/dependencies-installation.md
           - Data Exchange:                           jupyterlite/data-exchange.md
           - File Storage and Synchronization:        jupyterlite/file-storage-synchronization.md
-          - Actions:                                 jupyterlite/actions.md
+          - Common Actions:                          jupyterlite/common-actions.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
