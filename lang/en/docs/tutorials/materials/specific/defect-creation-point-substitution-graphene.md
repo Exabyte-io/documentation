@@ -126,9 +126,21 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene. Select "Run" > "Run All Cells".
 
-{% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_creation_point_substitution_graphene.ipynb" %}
+{% with origin_url=config.extra.jupyterlite.origin_url %}
+{% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
+{% with notebook_name='specific_examples/defect_creation_point_substitution_graphene.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
+{% endwith %}
+{% endwith %}
+
+<!--
+{# TODO: Update the origin_url
+    {% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_creation_point_substitution_graphene.ipynb" %}
+    {% include 'jupyterlite_embed.html' %}
+    {% endwith %}
+#}
+-->
 
 ## Tags
 
