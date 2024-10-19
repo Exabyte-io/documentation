@@ -14,20 +14,22 @@ If the same URL is opened on another machine or browser, it will not carry over 
 
 ### File restoration: 
 
-If a distributed notebook or file is deleted by the user, it is restored to the original version upon deletion.
+If the user deletes a distributed notebook or file, it is restored to the original version upon deletion.
 
 ## Updating Notebooks/Files
 
-When updates to JupyterLite or its API examples are released, it’s important to delete corresponding folder in JupyterLite or clear the local cache (for the `jupyterlite.mat3ra.com` URL) to ensure that the updated content is correctly loaded. Here's how to manage this:
+When updates to JupyterLite or its API examples are released, it’s important to delete the corresponding folder in JupyterLite or clear the local cache (for the `jupyterlite.mat3ra.com` URL) to ensure that the updated content is correctly loaded. Here's how to manage this:
 
-- Clear local storage: You can either manually delete the files stored on your browser or clear the browser's local storage for JupyterLite to reload the updated versions.
+- Clear local storage: You can manually delete the files stored on your browser or clear the browser's local storage so JupyterLite can reload the updated versions.
 - Cache refresh: After a JupyterLite update, you may need to delete the directory containing distributed notebooks and files to ensure the most up-to-date versions are loaded.
 
-Reset one notebook:
+### Reset one notebook:
+
+Select notebook in the sidebar, right-click, and select "delete" in the context menu.
 
 <img data-gifffer="/images/jupyterlite/jl-delete-reset-notebook.gif" />
 
-Reset multiple notebooks:
+### Reset multiple notebooks:
 
 <img data-gifffer="/images/jupyterlite/jl-delete-reset-multiple.gif" />
 
