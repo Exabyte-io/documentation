@@ -46,6 +46,9 @@ extra:
     analytics:
         provider: google
         property: UA-69270713-5
+    jupyterlite:
+        origin_url: https://jupyterlite.mat3ra.com/lab
+        notebooks_path_root: api-examples/other/materials_designer
 
 markdown_extensions:
     - admonition
@@ -105,6 +108,10 @@ plugins:
         enable_creation_date: false
     - search
     - tags
+    - macros:
+        include_dir: "lang/en/docs/includes/"
+        render_by_default: false
+        # add header from https://mkdocs-macros-plugin.readthedocs.io/en/stable/rendering/#opt-in-through-the-config-file to enable in the specific markdown
 
 nav:
     - Home: index.md
@@ -210,6 +217,9 @@ nav:
             - Interface, minimal strain (JupyterLite Session):                  tutorials/materials/jupyterlite-zsl.md
             - Import materials from files in various formats:                   tutorials/materials/import-from-files.md
 
+            - Specific:
+                - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-creation-point-substitution-graphene.md
+
 
 # COMMON UI COMPONENTS
     - Interface Components:
@@ -269,7 +279,7 @@ nav:
             - People Explorer:                           collaboration/ui/people-explorer.md
         - Entity Sharing:
             - User Interface:                            collaboration/sharing/ui.md
-            - Actions:                                   collaboration/sharing/actions.md
+            - Actions:                                   collaboration/sharing/common-actions.md
             - Account Access Levels:                     collaboration/sharing/access-levels.md
         - Actions:
             - Organization > Overview:                  collaboration/actions/organization/overview.md
@@ -333,7 +343,7 @@ nav:
             - Parameters:                               methods-directory/pseudopotential/parameters.md
             - Precision:                                methods-directory/pseudopotential/precision.md
             - Important Settings:                       methods-directory/pseudopotential/important-settings.md
-            - Actions:                                  methods-directory/pseudopotential/actions.md
+            - Actions:                                  methods-directory/pseudopotential/common-actions.md
         - Linear Regression:
             - Overview:                                 methods-directory/linear-regression/overview.md
             - Parameters:                               methods-directory/linear-regression/parameters.md
@@ -755,13 +765,22 @@ nav:
         - Accounting:                                   cli/accounting.md
         - Actions:
             - Overview:                                 cli/actions/overview.md
-            - Load / Unload Modules:                    cli/actions/modules-actions.md
+            - Load / Unload Modules:                    cli/actions/modules-common-actions.md
             - Customize Environment:                    cli/actions/customize.md
             - Add new software:                         cli/actions/add-software.md
             - Create Python Environment:                cli/actions/create-python-env.md
             - Create Anaconda Environment:              cli/actions/create-anaconda-env.md
             - List Clusters and Nodes:                  cli/actions/list-clusters.md
             - Check Balance and Quota:                  cli/actions/balance-quota.md
+
+    - JupyterLite Environment:
+          - Overview:                                jupyterlite/overview.md
+          - Accessing JupyterLite:                   jupyterlite/accessing-jupyterlite.md
+          - Pyodide:                                 jupyterlite/pyodide.md
+          - Dependencies and Imports:                jupyterlite/dependencies-installation.md
+          - Data Exchange:                           jupyterlite/data-exchange.md
+          - File Storage and Synchronization:        jupyterlite/file-storage-synchronization.md
+          - Common Actions:                          jupyterlite/common-actions.md
 
     - REST-API:
       - Overview:                                    rest-api/overview.md
