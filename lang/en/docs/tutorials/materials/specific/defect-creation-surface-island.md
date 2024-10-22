@@ -29,9 +29,54 @@ First, we navigate to [Materials Designer](../../../materials-designer/overview.
 
 ![Standata Graphene Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
 
-We then use the [Advanced](../../../materials-designer/header-menu/advanced/supercell.md) menu to create a slab of TiN with Miller indices (001), a thickness of 3 unit cells, and a supercell size of 9x9.
 
-![Supercell Creation for Graphene](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/2-advanced-supercell.webp "Supercell Graphene")
+Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a TiN slab.
+
+### 1.1. Launch JupyterLite Session
+
+Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
+
+![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+
+### 1.2. Open `create_slab.ipynb` notebook
+
+Find `create_slab.ipynb` in the list of notebooks and click/double-click open it.
+
+### 1.3. Open and modify the notebook
+
+Next, edit `create_slab.ipynb` notebook to modify the parameters by adding the following content to the "1.1. Set up slab parameters" cell in the notebook:
+
+```python
+# Enable interactive selection of terminations via UI prompt
+IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
+
+MILLER_INDICES = (0, 0, 1)
+THICKNESS = 3  # in atomic layers
+VACUUM = 10.0  # in angstroms
+XY_SUPERCELL_MATRIX = [[9, 0], [0, 9]]
+USE_ORTHOGONAL_Z = True
+USE_CONVENTIONAL_CELL = True
+
+# Index of the termination pair to be selected
+TERMINATION_INDEX = 0
+```
+
+### 1.4. Run the Notebook
+
+Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
+
+![Run All](/images/jupyterlite/run-all.webp "Run All")
+
+### 1.5. Analyze the Results
+
+After running the notebook, the user will be able to visualize the created TiN slab.
+
+![Review the Results](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/6-jl-result-preview.webp "Review the Results")
+
+### 1.6. Pass the Material to Materials Designer
+
+The user can pass the resulting material to the current Materials Designer environment for further analysis.
+
 
 ## 2. Identify Island vertices coordinates
 
@@ -65,11 +110,11 @@ Copy the below content and edit the "1.1. Set up defect parameters" cell in the 
 ISLAND_SHAPE = 'box'
 AUTO_ADD_VACUUM = True
 VACUUM_THICKNESS = 10.0
-NUMBER_OF_ADDED_LAYERS = 1
+NUMBER_OF_ADDED_LAYERS = 0.5
 
 BOX_PARAMS = {
     'min_coordinate': [0.25, 0.3, 0],
-    'max_coordinate': [0.75, 0.8, 0.7],
+    'max_coordinate': [0.75, 0.8, 1],
     "use_cartesian_coordinates": False
 }
 
@@ -122,4 +167,4 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## Tags
 
-`defects`, `TiN`, `island`, `surface`, `surface-defects`, `nitrogen`, `titatium`
+`defects`, `island`, `surface`, `surface-defects`, `TiN`, `nitrogen`, `titanium`
