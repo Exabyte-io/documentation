@@ -42,7 +42,7 @@ jobs:
     needs:
       - run-py-tests
     runs-on: ubuntu-24.04
-    if: (github.repository != 'Exabyte-io/template-definitions-js-py') && (github.ref_name == 'main')
+    if: (github.repository != 'Exabyte-io/template-definitions-js-py') && (github.ref_name == 'master')
 
     steps:
       -   name: Checkout this repository
