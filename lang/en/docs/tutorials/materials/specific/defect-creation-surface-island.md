@@ -53,7 +53,7 @@ IS_TERMINATIONS_SELECTION_INTERACTIVE = False
 MILLER_INDICES = (0, 0, 1)
 THICKNESS = 3  # in atomic layers
 VACUUM = 10.0  # in angstroms
-XY_SUPERCELL_MATRIX = [[9, 0], [0, 9]]
+XY_SUPERCELL_MATRIX = [[10, 0], [0, 10]]
 USE_ORTHOGONAL_Z = True
 USE_CONVENTIONAL_CELL = True
 
@@ -102,6 +102,16 @@ Find `create_island_defect.ipynb` in the list of notebooks and click/double-clic
 
 Next, edit `create_island_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](https://github.com/Exabyte-io/made/blob/3d938b4d91a31323dca7a02acb12b646dbb26634/src/py/mat3ra/made/tools/build/defect/configuration.py#L191) containing the cartesian coordinates of the island vertices.
 
+The expected island is 4.5x4.5 unit cells (9x9 atoms), for that on the supercell 10x10 (20x20 atoms) we need to choose coordinates to be 0.45 crystal units apart along lattice a and lattice b, and to make them in the center: [0.0, 0.0] and [0.45, 0.45]. 
+To adjust for the next layer to start from Ti atom on the edge, we'll shift the coordinates of left border by 0.05 (1/20 -- the fraction of every atom) and the top border by -0.05 (1/20).
+The z component of the first vertex of the box is 0, and the z component of the second vertex is 1 in crystal coordinates -- to cover the whole supercell in the z direction.
+
+The resulting coordinates are: [0.05, 0.0, 0], [0.45, 0.4, 1].
+
+To shift the island to the center of the supercell, we need to add 2 unit cells (2/10 of the supercell) to the coordinates of the island vertices.
+
+Resulting coordinates of centered island: [0.25, 0.2, 0], [0.65, 0.6, 1].
+
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
@@ -111,8 +121,8 @@ VACUUM_THICKNESS = 10.0
 NUMBER_OF_ADDED_LAYERS = 0.5
 
 BOX_PARAMS = {
-    'min_coordinate': [0.25, 0.3, 0],
-    'max_coordinate': [0.75, 0.8, 1],
+    'min_coordinate': [0.25, 0.2, 0],
+    'max_coordinate': [0.65, 0.6, 1],
     "use_cartesian_coordinates": False
 }
 
