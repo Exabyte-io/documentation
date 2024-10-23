@@ -12,7 +12,8 @@ This tutorial demonstrates the process of creating material with island on the s
 [//]: # (<embed src="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406" width="100%" height="300">)
 
 !!!note "Reference"
-    **D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene**, "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
+    **D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene**, 
+    "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a slab of TiN, identify the cartesian coordinates for an island on the surface, and build it. 
 
@@ -38,11 +39,8 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 1.2. Open `create_slab.ipynb` notebook
 
-Find `create_slab.ipynb` in the list of notebooks and double-click open it.
-
-### 1.3. Open and modify the notebook
+### 1.2. Open and modify the notebook
 
 Next, edit `create_slab.ipynb` notebook to modify the parameters by adding the following content to the "1.1. Set up slab parameters" cell in the notebook:
 
@@ -61,13 +59,13 @@ USE_CONVENTIONAL_CELL = True
 TERMINATION_INDEX = 0
 ```
 
-### 1.4. Run the Notebook
+### 1.3. Run the Notebook
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 1.5. Analyze the Results
+### 1.4. Analyze the Results
 
 After running the notebook, the user will be able to visualize the created TiN slab.
 
@@ -77,12 +75,16 @@ We don't need to save the material at this point, as we will recreate the slab w
 
 ## 2. Identifying the Island vertices coordinates
 
-We are creating an island defect that covers an area of 4.5x4.5 unit cells (which corresponds to 9x9 atoms). This island will be placed inside a 10x10 supercell (20x20 atoms). To position the island correctly, we need to select coordinates that are `0.45` crystal units apart along both lattice directions (a and b), ensuring the island is centered. The initial coordinates for this are `[0.0, 0.0]` and `[0.45, 0.45]`.
+We are creating an island defect that covers an area of 4.5x4.5 unit cells (which corresponds to 9x9 atoms). This island will be placed inside a 10x10 supercell (20x20 atoms). 
+To position the island correctly, we need to select coordinates that are `0.45` crystal units apart along both lattice directions (a and b), ensuring the island is centered. 
+
+The initial coordinates for this are `[0.0, 0.0]` and `[0.45, 0.45]`.
 
 To ensure the island starts from the Ti atom on the edge in the next layer, we will slightly adjust the coordinates:
 
-Shift the left border by `0.05` (1/20 of the distance between atoms),
-Shift the top border by `-0.05` (also 1/20 of the atom spacing).
+- Shift the left border by `0.05` (1/20 of the distance between atoms),
+- Shift the top border by `-0.05` (also 1/20 of the atom spacing). 
+
 For the z-axis, the first vertex will have a z-component of `0` (starting at the base of the supercell), and the second vertex will have a z-component of `1` (reaching the top of the supercell), ensuring the island spans the entire z-direction.
 
 The coordinates after these adjustments are: `[0.05, 0.0, 0]` and `[0.45, 0.4, 1]`.
