@@ -12,7 +12,7 @@ This tutorial demonstrates the process of creating material with island on the s
 [//]: # (<embed src="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406" width="100%" height="300">)
 
 !!!note "Reference"
-    D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene, "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
+    **D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene**, "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a slab of TiN, identify the cartesian coordinates for an island on the surface, and build it. 
 
@@ -20,7 +20,7 @@ We will focus on creating graphene-nitrogen structures from FIG. 2.
 Specifically, the material from FIG. 2. a) of the paper: 
 
 
-![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1. b)")
+![Surface Defect](/images/tutorials/materials/defects/defect_creation_surface_island/0.png "Surface Defect, Island FIG. 2. a)")
 
 
 ## 1. Create TiN Slab
@@ -67,13 +67,11 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 1.5. Analyze the Results
+### 1.5. Pass the Slab to Materials Designer
 
 After running the notebook, the user will be able to visualize the created TiN slab.
 
-![Review the Results](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/6-jl-result-preview.webp "Review the Results")
-
-### 1.6. Pass the Material to Materials Designer
+![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/1.png "Review the Results")
 
 The user can pass the resulting material to the current Materials Designer environment for further analysis.
 
