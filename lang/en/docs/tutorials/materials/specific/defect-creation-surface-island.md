@@ -23,7 +23,7 @@ Specifically, the material from FIG. 2. a) of the paper:
 ![Surface Defect](/images/tutorials/materials/defects/defect_creation_surface_island/0.png "Surface Defect, Island FIG. 2. a)")
 
 
-## 1. Create TiN Slab
+## 1. Create TiN Slab to preview the Surface
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
@@ -40,7 +40,7 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ### 1.2. Open `create_slab.ipynb` notebook
 
-Find `create_slab.ipynb` in the list of notebooks and click/double-click open it.
+Find `create_slab.ipynb` in the list of notebooks and double-click open it.
 
 ### 1.3. Open and modify the notebook
 
@@ -67,40 +67,14 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 1.5. Pass the Slab to Materials Designer
+### 1.5. Analyze the Results
 
 After running the notebook, the user will be able to visualize the created TiN slab.
 
 ![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/1.png "Review the Results")
 
-The user can pass the resulting material to the current Materials Designer environment for further analysis.
 
-
-## 2. Identify Island vertices coordinates
-
-Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the cartesian coordinates for the island vertices.
-
-![3D Editor](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-threejs-editor-coordinates.webp "3D Editor")
-
-Click on the atoms to get the coordinates on the surface. Then copy/paste these coordinates into a text file for later use.
-
-## 3. Create Island on the Surface
-
-For the defect creation, we will use the [JupyterLite](../../../jupyterlite/overview.md) environment with the corresponding notebook.
-
-### 3.1. Launch JupyterLite Session
-
-Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
-
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
-
-### 3.2. Open `create_point_defect.ipynb` notebook
-
-Find `create_island_defect.ipynb` in the list of notebooks and click/double-click open it.
-
-### 3.3. Open and modify the notebook
-
-Next, edit `create_island_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](https://github.com/Exabyte-io/made/blob/3d938b4d91a31323dca7a02acb12b646dbb26634/src/py/mat3ra/made/tools/build/defect/configuration.py#L191) containing the cartesian coordinates of the island vertices.
+## 2. Identifying the Island vertices coordinates
 
 We are creating an island defect that covers an area of 4.5x4.5 unit cells (which corresponds to 9x9 atoms). This island will be placed inside a 10x10 supercell (20x20 atoms). To position the island correctly, we need to select coordinates that are `0.45` crystal units apart along both lattice directions (a and b), ensuring the island is centered. The initial coordinates for this are `[0.0, 0.0]` and `[0.45, 0.45]`.
 
@@ -116,6 +90,24 @@ Finally, to move the island to the center of the supercell, add 2 unit cells (2/
 
 The final centered coordinates of the island are: `[0.25, 0.2, 0]` and `[0.65, 0.6, 1]`.
 
+These coordinates will be used in the next step to create the island on the surface.
+
+## 3. Create Island on the Surface
+
+### 3.1. Open `create_point_defect.ipynb` notebook
+
+Close the current notebook. `Introduction` notebook should be open by default.
+
+Find `create_island_defect.ipynb` in the list of notebooks and double-click open it.
+
+### 3.2. Modify the notebook
+
+Next, edit `create_island_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](https://github.com/Exabyte-io/made/blob/3d938b4d91a31323dca7a02acb12b646dbb26634/src/py/mat3ra/made/tools/build/defect/configuration.py#L191) containing the cartesian coordinates of the island vertices.
+
+With the same TiN material selected in the materials input and coordinates for the island vertices from the previous step, the user can create the island on the surface.
+
+Notice, that we did not create the slab yet, so it is necessary to provide slab parameters in this notebook.
+
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
@@ -124,10 +116,18 @@ AUTO_ADD_VACUUM = True
 VACUUM_THICKNESS = 10.0
 NUMBER_OF_ADDED_LAYERS = 0.5
 
-BOX_PARAMS = {
+BOX_PARAMETERS = {
     'min_coordinate': [0.25, 0.2, 0],
     'max_coordinate': [0.65, 0.6, 1],
     "use_cartesian_coordinates": False
+}
+
+DEFAULT_SLAB_PARAMETERS = {
+    "miller_indices": (0,0,1),
+    "thickness": 3,
+    "vacuum": 0.0,
+    "use_orthogonal_z": True,
+    "xy_supercell_matrix": [[10, 0], [0, 10]]
 }
 
 ```
@@ -136,19 +136,19 @@ Here's the visual of the updated content:
 
 ![Notebook setup](/images/tutorials/materials/defects/defect_creation_surface_island/island-setup.png "Notebook setup")
 
-## 5. Run the Notebook
+## 4. Run the Notebook
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-## 6. Analyze the Results
+## 5. Analyze the Results
 
 After running the notebook, the user will be able to visualize the created material with the island on the surface.
 
 ![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/original-result.png "Review the Results")
 
-## 7. Pass the Material to Materials Designer
+## 6. Pass the Material to Materials Designer
 
 The user can pass the resulting material to the current Materials Designer environment and save it.
 
