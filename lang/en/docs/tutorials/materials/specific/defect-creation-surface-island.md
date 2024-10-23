@@ -130,7 +130,7 @@ BOX_PARAMS = {
 
 Here's the visual of the updated content:
 
-![Notebook setup](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/5-jl-setup.webp "Notebook setup")
+![Notebook setup](/images/tutorials/materials/defects/defect_creation_surface_island/island-setup.png "Notebook setup")
 
 ## 5. Run the Notebook
 
@@ -142,13 +142,13 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook, the user will be able to visualize the created material with the island on the surface.
 
-![Review the Results](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/6-jl-result-preview.webp "Review the Results")
+![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/original-result.png "Review the Results")
 
 ## 7. Pass the Material to Materials Designer
 
 The user can pass the resulting material to the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/7-wave-result.webp "N-doped Graphene")
+![Final Material](/images/tutorials/materials/defects/defect_creation_surface_island/final-material.png "Island on the Surface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
