@@ -23,7 +23,7 @@ Specifically, the material from FIG. 2. a) of the paper:
 ![Surface Defect](/images/tutorials/materials/defects/defect_creation_surface_island/0.png "Surface Defect, Island FIG. 2. a)")
 
 
-## 1. Create TiN Slab to preview the Surface
+## 1. Create and preview TiN Slab
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
@@ -73,6 +73,7 @@ After running the notebook, the user will be able to visualize the created TiN s
 
 ![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/1.png "Review the Results")
 
+We don't need to save the material at this point, as we will recreate the slab with island on the surface in the next notebook. This step is needed to identify the coordinates of the island vertices.
 
 ## 2. Identifying the Island vertices coordinates
 
