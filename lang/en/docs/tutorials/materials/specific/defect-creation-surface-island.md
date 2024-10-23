@@ -102,15 +102,19 @@ Find `create_island_defect.ipynb` in the list of notebooks and click/double-clic
 
 Next, edit `create_island_defect.ipynb` notebook to modify the parameters by adding a list of [defect configuration objects](https://github.com/Exabyte-io/made/blob/3d938b4d91a31323dca7a02acb12b646dbb26634/src/py/mat3ra/made/tools/build/defect/configuration.py#L191) containing the cartesian coordinates of the island vertices.
 
-The expected island is 4.5x4.5 unit cells (9x9 atoms), for that on the supercell 10x10 (20x20 atoms) we need to choose coordinates to be 0.45 crystal units apart along lattice a and lattice b, and to make them in the center: [0.0, 0.0] and [0.45, 0.45]. 
-To adjust for the next layer to start from Ti atom on the edge, we'll shift the coordinates of left border by 0.05 (1/20 -- the fraction of every atom) and the top border by -0.05 (1/20).
-The z component of the first vertex of the box is 0, and the z component of the second vertex is 1 in crystal coordinates -- to cover the whole supercell in the z direction.
+We are creating an island defect that covers an area of 4.5x4.5 unit cells (which corresponds to 9x9 atoms). This island will be placed inside a 10x10 supercell (20x20 atoms). To position the island correctly, we need to select coordinates that are `0.45` crystal units apart along both lattice directions (a and b), ensuring the island is centered. The initial coordinates for this are `[0.0, 0.0]` and `[0.45, 0.45]`.
 
-The resulting coordinates are: [0.05, 0.0, 0], [0.45, 0.4, 1].
+To ensure the island starts from the Ti atom on the edge in the next layer, we will slightly adjust the coordinates:
 
-To shift the island to the center of the supercell, we need to add 2 unit cells (2/10 of the supercell) to the coordinates of the island vertices.
+Shift the left border by `0.05` (1/20 of the distance between atoms),
+Shift the top border by `-0.05` (also 1/20 of the atom spacing).
+For the z-axis, the first vertex will have a z-component of `0` (starting at the base of the supercell), and the second vertex will have a z-component of `1` (reaching the top of the supercell), ensuring the island spans the entire z-direction.
 
-Resulting coordinates of centered island: [0.25, 0.2, 0], [0.65, 0.6, 1].
+The coordinates after these adjustments are: `[0.05, 0.0, 0]` and `[0.45, 0.4, 1]`.
+
+Finally, to move the island to the center of the supercell, add 2 unit cells (2/10 of the supercell size) to both island vertex coordinates.
+
+The final centered coordinates of the island are: `[0.25, 0.2, 0]` and `[0.65, 0.6, 1]`.
 
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
