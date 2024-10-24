@@ -155,7 +155,7 @@ After running the notebook, the user will be able to visualize the created mater
 
 The user can pass the resulting material to the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/final-material.gif "Island on the Surface")
+<img data-gifffer="/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/final-material.gif" alt="Resulting Material: Island on the TiN Surface" />
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
