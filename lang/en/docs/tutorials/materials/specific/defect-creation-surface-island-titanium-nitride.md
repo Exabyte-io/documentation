@@ -21,7 +21,7 @@ We will focus on creating graphene-nitrogen structures from FIG. 2.
 Specifically, the material from FIG. 2. a) of the paper: 
 
 
-![Surface Defect](/images/tutorials/materials/defects/defect_creation_surface_island/0.png "Surface Defect, Island FIG. 2. a)")
+![Surface Defect](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/0.png "Surface Defect, Island FIG. 2. a)")
 
 
 ## 1. Create and preview TiN Slab
@@ -69,7 +69,7 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook, the user will be able to visualize the created TiN slab.
 
-![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/1.png "Review the Results")
+![Review the Results](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/1.png "Review the Results")
 
 We don't need to save the material at this point, as we will recreate the slab with island on the surface in the next notebook. This step is needed to identify the coordinates of the island vertices.
 
@@ -137,7 +137,7 @@ DEFAULT_SLAB_PARAMETERS = {
 
 Here's the visual of the updated content:
 
-![Notebook setup](/images/tutorials/materials/defects/defect_creation_surface_island/island-setup.png "Notebook setup")
+![Notebook setup](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/island-setup.png "Notebook setup")
 
 ## 4. Run the Notebook
 
@@ -149,13 +149,13 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook, the user will be able to visualize the created material with the island on the surface.
 
-![Review the Results](/images/tutorials/materials/defects/defect_creation_surface_island/original-result.png "Review the Results")
+![Review the Results](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/original-result.png "Review the Results")
 
 ## 6. Pass the Material to Materials Designer
 
 The user can pass the resulting material to the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/defects/defect_creation_surface_island/final-material.gif "Island on the Surface")
+![Final Material](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/final-material.gif "Island on the Surface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 

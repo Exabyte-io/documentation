@@ -219,7 +219,7 @@ nav:
 
             - Specific:
                 - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-creation-point-substitution-graphene.md
-                - Island Surface Defect Formation:                            tutorials/materials/specific/defect-creation-surface-island.md
+                - Island Surface Defect Formation in TiN:                     tutorials/materials/specific/defect-creation-surface-island-titanium-nitride.md
 
 
 # COMMON UI COMPONENTS
