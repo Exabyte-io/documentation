@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# TiN/TiN(001) Islands
+# Island Surface Defect Formation in TiN
 
 ## Introduction
 
