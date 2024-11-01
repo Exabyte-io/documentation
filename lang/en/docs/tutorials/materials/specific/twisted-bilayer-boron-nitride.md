@@ -11,7 +11,8 @@ This tutorial demonstrates the process of creating a twisted bilayer boron nitri
 
 !!!note "Manuscript"
     **Lede Xian, Dante M. Kennes, Nicolas Tancogne-Dejean, Massimo Altarelli, and Angel Rubio**, 
-    "Multiflat Bands and Strong Correlations in Twisted Bilayer Boron Nitride: Doping-Induced Correlated Insulator and Superconductor" Phys. Rev. Lett. 125, 086402 – Published 20 August 2020 DOI: 10.1021/acs.nanolett.9b00986
+    "Multiflat Bands and Strong Correlations in Twisted Bilayer Boron Nitride: Doping-Induced Correlated Insulator and Superconductor" Phys. Rev. Lett. 125, 086402, 20 August 2020
+    [DOI: 10.1021/acs.nanolett.9b00986](https://doi.org/10.1021/acs.nanolett.9b00986)
 
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to  create Hexagonal boron nitride bilayer structure configurations with 2 specific twist angles.
@@ -109,6 +110,11 @@ The interactive JupyterLite notebook for creating the twisted bilayer boron nitr
 {% endwith %}
 {% endwith %}
 {% endwith %}
+
+## References 
+
+1. **Lede Xian, Dante M. Kennes, Nicolas Tancogne-Dejean, Massimo Altarelli, and Angel Rubio**, 
+    "Multiflat Bands and Strong Correlations in Twisted Bilayer Boron Nitride: Doping-Induced Correlated Insulator and Superconductor" Phys. Rev. Lett. 125, 086402 – Published 20 August 2020 DOI: 10.1021/acs.nanolett.9b00986
 
 ## Tags
 
