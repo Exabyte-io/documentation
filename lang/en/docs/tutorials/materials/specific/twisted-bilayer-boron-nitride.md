@@ -51,7 +51,7 @@ VACUUM_Y = 5.0  # Vacuum along y on both sides, in Angstroms
 
 # Interface parameters
 TWIST_ANGLE = 2.64  # in degrees
-INTERFACE_DISTANCE = 3.0  # in Angstroms
+INTERFACE_DISTANCE = 3.23  # in Angstroms
 INTERFACE_VACUUM = 20.0  # in Angstroms
 
 # Visualization parameters
@@ -98,7 +98,7 @@ VACUUM_Y = 5.0  # Vacuum along y on both sides, in Angstroms
 
 # Interface parameters
 TWIST_ANGLE = 62.64  # in degrees
-INTERFACE_DISTANCE = 3.0  # in Angstroms
+INTERFACE_DISTANCE = 3.23  # in Angstroms
 INTERFACE_VACUUM = 20.0  # in Angstroms
 
 # Visualization parameters
