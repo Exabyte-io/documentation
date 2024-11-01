@@ -85,9 +85,10 @@ After reviewing the results, the user can pass the material to Materials Designe
 
 ## 3. Create a twisted bilayer boron nitride structure with a twist angle of 62.64°
 
-To create a twisted bilayer boron nitride structure with a twist angle of 62.64°, repeat the above steps with the following modifications.
+To create a twisted bilayer boron nitride structure with a twist angle of 62.64°, repeat the above steps 2.1 -- 2.5 with the following modifications.
  
-Set `TWIST_ANGLE = 62.64`.
+Set `TWIST_ANGLE = 62.64` in the "1.1. Set up slab parameters" cell in the notebook.
+
 
 ### 3.1. Analyze the Results and Pass to Materials Designer
 
