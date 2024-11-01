@@ -9,7 +9,7 @@ render_macros: true
 
 This tutorial demonstrates the process of creating a twisted bilayer boron nitride (tBBN) structure based on the work presented in the following manuscript.
 
-!!!note "Reference"
+!!!note "Manuscript"
     **Lede Xian, Dante M. Kennes, Nicolas Tancogne-Dejean, Massimo Altarelli, and Angel Rubio**, 
     "Multiflat Bands and Strong Correlations in Twisted Bilayer Boron Nitride: Doping-Induced Correlated Insulator and Superconductor" Phys. Rev. Lett. 125, 086402 – Published 20 August 2020 DOI: 10.1021/acs.nanolett.9b00986
 
