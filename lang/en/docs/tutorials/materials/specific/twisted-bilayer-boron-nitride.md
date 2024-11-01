@@ -106,24 +106,19 @@ SHOW_INTERMEDIATE_STEPS = True
 VISUALIZE_REPETITIONS = [1, 1, 1]
 ```
 
+![Notebook setup](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/jl-set-nb.png "Notebook setup")
 
 ### 2.2. Run the Notebook
 
 After setting the parameters, run the notebook to create the twisted bilayer boron nitride structure with a twist angle of 62.64°.
 
-### 2.3. Analyze the Results
+### 2.3. Analyze the Results and Pass to Materials Designer
 
 After running the notebook, the user will be able to visualize the created twisted bilayer boron nitride structure with a twist angle of 62.64°.
 
-![Review the Results](/images/tutorials/materials/specific/twisted-bilayer-boron-nitride/3.png "Review the Results")
-
-
-### 2.4. Pass the Material to Materials Designer
-
 After reviewing the results, the user can pass the material to Materials Designer for further analysis.
 
-<img src="/images/tutorials/materials/specific/twisted-bilayer-boron-nitride/2.gif" alt="Twisted Bilayer Boron Nitride Structure with 62.64° Twist Angle" />
-
+![Twisted Bilayer Boron Nitride Structure with 62.64° Twist Angle](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/tbbn-62_64.png "Twisted Bilayer Boron Nitride Structure with 62.64° Twist Angle")
 
 ## Interactive JupyterLite Notebook
 
