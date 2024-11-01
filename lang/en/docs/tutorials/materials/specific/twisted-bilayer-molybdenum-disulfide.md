@@ -80,11 +80,42 @@ After setting the parameters, run the notebook to create the twisted bilayer mol
 The generation might take some time.
 After that, the user can pass the material to Materials Designer for further analysis.
 
-![Result Material](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs.png "Result Material")
+![Result Material](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs.png "MoS2 Twisted Bilayer, 22 degrees")
 
 ## 3. Create a twisted bilayer MoS2 structure with other twist angles
 
 To create a twisted bilayer MoS2 structure with a different twist angle, repeat the steps above, adjusting the `TARGET_TWIST_ANGLE` and `INTERFACE_DISTANCE` parameters accordingly.
+
+```python
+TARGET_TWIST_ANGLE_0 = 0.0
+INTERFACE_DISTANCE_0 = 6.8
+```
+
+```python
+TARGET_TWIST_ANGLE = 13.0
+INTERFACE_DISTANCE = 6.5
+```
+
+```python
+TARGET_TWIST_ANGLE_2 = 22.0
+INTERFACE_DISTANCE_2 = 6.5
+```
+
+```python
+TARGET_TWIST_ANGLE_3 = 38.0
+INTERFACE_DISTANCE_3 = 6.5
+```
+
+```python
+TARGET_TWIST_ANGLE_4 = 47.0
+INTERFACE_DISTANCE_4 = 6.5
+```
+
+```python
+TARGET_TWIST_ANGLE_5 = 60.0
+INTERFACE_DISTANCE_5 = 6.2
+```
+
 
 ## Interactive JupyterLite Notebook
 
@@ -102,4 +133,4 @@ The interactive JupyterLite notebook for creating twisted bilayer MoS2 structure
 ## References
 
 1. Kaihui Liu, Liming Zhang, Ting Cao, Chenhao Jin, Diana Qiu, Qin Zhou, Alex Zettl, Peidong Yang, Steve G. Louie & Feng Wang, "Evolution of interlayer coupling in twisted molybdenum disulfide bilayers" Nature Communications volume 5, Article number: 4966 (2014) [DOI: 10.1038/ncomms5966](https://doi.org/10.1038/ncomms5966)
-2. Cao, Y., Fatemi, V., Fang, S. et al. Unconventional superconductivity in magic-angle graphene superlattices. Nature 556, 43–50 (2018). https://doi.org/10.1038/nature26160
+2. Cao, Y., Fatemi, V., Fang, S. et al. Unconventional superconductivity in magic-angle graphene superlattices. Nature 556, 43–50 (2018). [DOI: 10.1038/nature26160](https://doi.org/10.1038/nature26160)
