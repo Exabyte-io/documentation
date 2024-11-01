@@ -101,19 +101,19 @@ Here's the visual of the updated content:
 
 ![Notebook setup](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/5-jl-setup.webp "Notebook setup")
 
-## 5. Run the Notebook
+## 4. Run the Notebook
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-## 6. Analyze the Results
+## 5. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
 ![Review the Results](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/6-jl-result-preview.webp "Review the Results")
 
-## 7. Pass the Material to Materials Designer
+## 6. Pass the Material to Materials Designer
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
