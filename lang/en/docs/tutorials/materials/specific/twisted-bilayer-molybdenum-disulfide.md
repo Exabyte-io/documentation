@@ -75,15 +75,10 @@ After setting the parameters, run the notebook to create the twisted bilayer mol
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 2.4. Analyze the Results
+### 2.4. Analyze the Results and ass the Material to Materials Designer
 
-After running the notebook, the user will be able to visualize the created twisted bilayer molybdenum disulfide structure.
-
-![Review the Results](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-jl.png "Review the Results")
-
-### 2.5. Pass the Material to Materials Designer
-
-After reviewing the results, the user can pass the material to Materials Designer for further analysis.
+The generation might take some time.
+After that, the user can pass the material to Materials Designer for further analysis.
 
 ![Result Material](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs.png "Result Material")
 
@@ -104,4 +99,7 @@ The interactive JupyterLite notebook for creating twisted bilayer MoS2 structure
 {% endwith %}
 {% endwith %}
 
+## References
 
+1. Kaihui Liu, Liming Zhang, Ting Cao, Chenhao Jin, Diana Qiu, Qin Zhou, Alex Zettl, Peidong Yang, Steve G. Louie & Feng Wang, "Evolution of interlayer coupling in twisted molybdenum disulfide bilayers" Nature Communications volume 5, Article number: 4966 (2014) [DOI: 10.1038/ncomms5966](https://doi.org/10.1038/ncomms5966)
+2. Cao, Y., Fatemi, V., Fang, S. et al. Unconventional superconductivity in magic-angle graphene superlattices. Nature 556, 43–50 (2018). https://doi.org/10.1038/nature26160
