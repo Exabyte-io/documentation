@@ -7,7 +7,7 @@ render_macros: true
 
 ## Introduction
 
-This tutorial demonstrates the process of creating a twisted bilayer boron nitride (tBBN) structure based on the work presented in the following manuscript.
+This tutorial demonstrates the process of creating a twisted bilayer boron nitride (TBBN) structure based on the work presented in the following manuscript.
 
 !!!note "Manuscript"
     **Lede Xian, Dante M. Kennes, Nicolas Tancogne-Dejean, Massimo Altarelli, and Angel Rubio**, 
@@ -29,7 +29,7 @@ First, we navigate to [Materials Designer](../../../materials-designer/overview.
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a twisted bilayer boron nitride structure.
 
-## 2. Create a twisted bilayer boron nitride structure with a twist angle of 2.64°
+## 2. Create a TBBN structure with a twist angle of 2.64°
 
 ### 2.1 Launch JupyterLite Session
 
@@ -67,7 +67,7 @@ VISUALIZE_REPETITIONS = [1, 1, 1]
 
 ### 2.3. Run the Notebook
 
-After setting the parameters, run the notebook to create the twisted bilayer boron nitride structure.
+After setting the parameters, run the notebook with "Run" > "Run All" option to create the twisted bilayer boron nitride structure.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
@@ -84,14 +84,15 @@ After reviewing the results, the user can pass the material to Materials Designe
 
 ![Result Material](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/tbbn-result-wavejs.png "Result Material")
 
-## 3. Create a twisted bilayer boron nitride structure with a twist angle of 62.64°
+## 3. Create a TBBN structure with a twist angle of 62.64°
 
+### 3.1. Repeat the steps above
 To create a twisted bilayer boron nitride structure with a twist angle of 62.64°, repeat the above steps 2.1 -- 2.5 with the following modifications.
  
 Set `TWIST_ANGLE = 62.64` in the "1.1. Set up slab parameters" cell in the notebook.
 
 
-### 3.1. Analyze the Results and Pass to Materials Designer
+### 3.2. Analyze the Results and Pass to Materials Designer
 
 After running the notebook, the user will be able to visualize the created twisted bilayer boron nitride structure with a twist angle of 62.64°.
 
