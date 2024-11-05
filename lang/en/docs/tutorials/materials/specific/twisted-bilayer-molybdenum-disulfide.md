@@ -87,33 +87,33 @@ After that, the user can pass the material to Materials Designer for further ana
 To create a twisted bilayer MoS2 structure with a different twist angle, repeat the steps above, adjusting the `TARGET_TWIST_ANGLE` and `INTERFACE_DISTANCE` parameters accordingly.
 
 ```python
-TARGET_TWIST_ANGLE_0 = 0.0
-INTERFACE_DISTANCE_0 = 6.8
+TARGET_TWIST_ANGLE = 0.0
+INTERFACE_DISTANCE = 6.8
 ```
 
 ```python
-TARGET_TWIST_ANGLE = 13.0
+TARGET_TWIST_ANGLE =  13.0
+INTERFACE_DISTANCE =  6.5
+```
+
+```python
+TARGET_TWIST_ANGLE = 22.0
 INTERFACE_DISTANCE = 6.5
 ```
 
 ```python
-TARGET_TWIST_ANGLE_2 = 22.0
-INTERFACE_DISTANCE_2 = 6.5
+TARGET_TWIST_ANGLE = 38.0
+INTERFACE_DISTANCE = 6.5
 ```
 
 ```python
-TARGET_TWIST_ANGLE_3 = 38.0
-INTERFACE_DISTANCE_3 = 6.5
+TARGET_TWIST_ANGLE = 47.0
+INTERFACE_DISTANCE = 6.5
 ```
 
 ```python
-TARGET_TWIST_ANGLE_4 = 47.0
-INTERFACE_DISTANCE_4 = 6.5
-```
-
-```python
-TARGET_TWIST_ANGLE_5 = 60.0
-INTERFACE_DISTANCE_5 = 6.2
+TARGET_TWIST_ANGLE = 60.0
+INTERFACE_DISTANCE = 6.2
 ```
 
 
