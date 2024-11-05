@@ -106,7 +106,7 @@ The interactive JupyterLite notebook for creating the twisted bilayer boron nitr
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/interface_twisted_nanoribbons.ipynb' %}
+{% with notebook_name='specific_examples/interface_bilayer_twisted_nanoribbons_boron_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
