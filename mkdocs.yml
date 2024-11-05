@@ -218,10 +218,10 @@ nav:
             - Import materials from files in various formats:                   tutorials/materials/import-from-files.md
 
             - Specific:
-                - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-creation-point-substitution-graphene.md
-                - Island Surface Defect Formation in TiN:                     tutorials/materials/specific/defect-creation-surface-island-titanium-nitride.md
-                - Twisted Bilayer Boron Nitride:                       tutorials/materials/specific/twisted-bilayer-boron-nitride.md
-                - Twisted Bilayer Molybdenum Disulfide:                tutorials/materials/specific/twisted-bilayer-molybdenum-disulfide.md
+                - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-point-substitution-graphene.md
+                - Island Surface Defect Formation in TiN:                     tutorials/materials/specific/defect-surface-island-titanium-nitride.md
+                - Twisted Bilayer Boron Nitride:                       tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
+                - Twisted Bilayer Molybdenum Disulfide:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
