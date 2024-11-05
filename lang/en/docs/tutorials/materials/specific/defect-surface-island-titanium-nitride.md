@@ -166,7 +166,7 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/defect_creation_island.ipynb' %}
+{% with notebook_name='specific_examples/defect_surface_island_titanium_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
@@ -174,7 +174,7 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 <!--
 {# TODO: Update the origin_url
-    {% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_creation_island.ipynb" %}
+    {% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_surface_island_titanium_nitride.ipynb" %}
     {% include 'jupyterlite_embed.html' %}
     {% endwith %}
 #}

@@ -126,7 +126,7 @@ The interactive JupyterLite notebook for creating twisted bilayer MoS2 structure
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/twisted_interface_with_commensurate_lattices.ipynb' %}
+{% with notebook_name='specific_examples/interface_bilayer_twisted_commensurate_lattices_molybdenum_disulfide.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
