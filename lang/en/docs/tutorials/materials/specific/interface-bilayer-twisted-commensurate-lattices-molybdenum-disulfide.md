@@ -80,10 +80,13 @@ After setting the parameters, run the notebook to create the twisted bilayer mol
 The generation might take some time.
 After that, the user can pass the material to Materials Designer for further analysis.
 
-![Result Material](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs.png "MoS2 Twisted Bilayer, 22 degrees")
+The interface for 22 degrees twist is shown below.
+
+![Result Material, 22 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-22.png "MoS2 Twisted Bilayer, 22 degrees")
 
 ## 3. Create a twisted bilayer MoS2 structure with other twist angles
 
+### 3.1. Repeat the steps above
 To create a twisted bilayer MoS2 structure with a different twist angle, repeat the steps above, adjusting the `TARGET_TWIST_ANGLE` and `INTERFACE_DISTANCE` parameters accordingly.
 
 Values provided below come from the publication and show the resulting material that corresponds to those parameters.
@@ -93,30 +96,36 @@ TARGET_TWIST_ANGLE = 0.0
 INTERFACE_DISTANCE = 6.8
 ```
 
+![Result Material, 0 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-0.png "MoS2 Twisted Bilayer, 0 degrees")
+
+
 ```python
 TARGET_TWIST_ANGLE =  13.0
 INTERFACE_DISTANCE =  6.5
 ```
 
-```python
-TARGET_TWIST_ANGLE = 22.0
-INTERFACE_DISTANCE = 6.5
-```
+![Result Material, 13 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-13.png "MoS2 Twisted Bilayer, 13 degrees")
 
 ```python
 TARGET_TWIST_ANGLE = 38.0
 INTERFACE_DISTANCE = 6.5
 ```
 
+![Result Material, 38 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-38.png "MoS2 Twisted Bilayer, 38 degrees")
+
 ```python
 TARGET_TWIST_ANGLE = 47.0
 INTERFACE_DISTANCE = 6.5
 ```
 
+![Result Material, 47 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-47.png "MoS2 Twisted Bilayer, 47 degrees")
+
 ```python
 TARGET_TWIST_ANGLE = 60.0
 INTERFACE_DISTANCE = 6.2
 ```
+
+![Result Material, 60 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-60.png "MoS2 Twisted Bilayer, 60 degrees")
 
 
 ## Interactive JupyterLite Notebook
