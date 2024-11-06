@@ -31,7 +31,7 @@ First, we navigate to [Materials Designer](../../../materials-designer/overview.
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a twisted bilayer molybdenum disulfide structure.
 
 
-## 2. Create a twisted bilayer MoS2 structure with a twist angle of 22 degrees
+## 2. Create MoS2 bilayer with a twist angle of 22 degrees
 
 ### 2.1 Launch JupyterLite Session
 
@@ -75,16 +75,16 @@ After setting the parameters, run the notebook to create the twisted bilayer mol
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 2.4. Analyze the Results and ass the Material to Materials Designer
+### 2.4. View Results and pass to Materials Designer
 
 The generation might take some time.
-After that, the user can pass the material to Materials Designer for further analysis.
+After that, the user can pass the material to the Materials Designer for further analysis.
 
 The interface for 22 degrees twist is shown below.
 
 ![Result Material, 22 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-22.png "MoS2 Twisted Bilayer, 22 degrees")
 
-## 3. Create a twisted bilayer MoS2 structure with other twist angles
+## 3. Create bilayers with other twist angles
 
 ### 3.1. Repeat the steps above
 To create a twisted bilayer MoS2 structure with a different twist angle, repeat the steps above, adjusting the `TARGET_TWIST_ANGLE` and `INTERFACE_DISTANCE` parameters accordingly.
