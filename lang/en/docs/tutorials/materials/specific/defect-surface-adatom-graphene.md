@@ -201,5 +201,24 @@ DISTANCE_Z = 2.69
 
 ![Au Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-au.png "Au Adatom on Graphene Surface")
 
+## Interactive JupiterLite Notebook
 
+The interactive JupyterLite notebook for creating Graphene structures with metal adatoms can be accessed below. To run the notebook, click on the "Run All" button.
 
+{% with origin_url=config.extra.jupyterlite.origin_url %}
+{% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
+{% with notebook_name='specific_examples/defect_surface_adatom_graphene.ipynb' %}
+{% include 'jupyterlite_embed.html' %}
+{% endwith %}
+{% endwith %}
+{% endwith %}
+
+## References
+
+1. **Kevin T. Chan, J. B. Neaton, and Marvin L. Cohen**, 
+    "First-principles study of metal adatom adsorption on graphene" Phys. Rev. B 77, 235430, 2008
+    [DOI: 10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}.
+
+## Tags
+
+`adatom`, `graphene`, `metal`, `surface`, `defect`
