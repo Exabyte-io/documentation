@@ -90,7 +90,116 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 ### 3.1. Repeat the steps above
 
 To create a Graphene structure with other metal adatoms, repeat the steps above by changing the `CHEMICAL_ELEMENT`, `APPORXIMATE_POSITION_ON_SURFACE`, and `DISTANCE_Z` parameters according to he values in the table 1 of the manuscript.
+Notice, that some of the adatoms have more favorable position on top or bridge sites.
 
+For example, to create a Graphene structure with a Na adatom, adjust the parameters as follows:
+
+```python
+CHEMICAL_ELEMENT = "Na"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 2.28
+```
+
+![Na Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-na.png "Na Adatom on Graphene Surface")
+
+For K adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "K"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 2.60
+```
+
+![K Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-k.png "K Adatom on Graphene Surface")
+
+
+For Ca adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "Ca"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 2.29
+```
+
+![Ca Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-ca.png "Ca Adatom on Graphene Surface")
+
+
+For Al adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "Al"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 2.13
+```
+
+![Al Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-al.png "Al Adatom on Graphene Surface")
+
+
+For Ga adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "Ga"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 2.20
+```
+
+![Ga Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-ga.png "Ga Adatom on Graphene Surface")
+
+
+For In adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "In"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 2.45
+```
+
+![In Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-in.png "In Adatom on Graphene Surface")
+
+
+For Sn adatom on top site:
+```python
+CHEMICAL_ELEMENT = "Sn"
+APPROXIMATE_POSITION_ON_SURFACE = [7/12, 5/12]
+DISTANCE_Z = 2.82
+```
+
+![Sn Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-sn.png "Sn Adatom on Graphene Surface")
+
+
+For Ti adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "Ti"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 1.80
+```
+
+![Ti Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-ti.png "Ti Adatom on Graphene Surface")
+    
+For Fe adatom on hollow site:
+```python
+CHEMICAL_ELEMENT = "Fe"
+APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+DISTANCE_Z = 1.53
+```
+
+![Fe Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-fe.png "Fe Adatom on Graphene Surface")
+
+
+For Pd adatom on bridge site:
+```python
+CHEMICAL_ELEMENT = "Pd"
+APPROXIMATE_POSITION_ON_SURFACE = [3/8, 1/2]
+DISTANCE_Z = 2.21
+```
+
+
+![Pd Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-pd.png "Pd Adatom on Graphene Surface")
+
+
+For Au adatom on top site:
+```python
+CHEMICAL_ELEMENT = "Au"
+APPROXIMATE_POSITION_ON_SURFACE = [7/12, 5/12]
+DISTANCE_Z = 2.69
+```
+
+![Au Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-au.png "Au Adatom on Graphene Surface")
 
 
 
