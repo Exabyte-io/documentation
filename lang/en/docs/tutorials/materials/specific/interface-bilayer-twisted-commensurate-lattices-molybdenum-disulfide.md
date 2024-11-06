@@ -89,7 +89,7 @@ The interface for 22 degrees twist is shown below.
 ### 3.1. Repeat the steps above
 To create a twisted bilayer MoS2 structure with a different twist angle, repeat the steps above, adjusting the `TARGET_TWIST_ANGLE` and `INTERFACE_DISTANCE` parameters accordingly.
 
-Values provided below come from the publication and show the resulting material that corresponds to those parameters.
+Values for angle and associated interlayer separation provided below come from the description of Figure 4 in the publication, below each example has an image of the resulting material.
 
 ```python
 TARGET_TWIST_ANGLE = 0.0
