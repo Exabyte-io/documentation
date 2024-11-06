@@ -220,8 +220,8 @@ nav:
             - Specific:
                 - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-point-substitution-graphene.md
                 - Island Surface Defect Formation in TiN:                     tutorials/materials/specific/defect-surface-island-titanium-nitride.md
-                - Twisted Bilayer Boron Nitride:                       tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
-                - Twisted Bilayer Molybdenum Disulfide:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
+                - Twisted Bilayer h-BN nanoribbons:                       tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
+                - Twisted Bilayer MoS2 commensurate lattices:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
