@@ -29,7 +29,7 @@ First, we navigate to [Materials Designer](../../../materials-designer/overview.
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a twisted bilayer boron nitride structure.
 
-## 2. Create a TBBN structure with a twist angle of 2.64째
+## 2. Create bilayer with a twist angle of 2.64째
 
 ### 2.1 Launch JupyterLite Session
 
@@ -62,7 +62,6 @@ SHOW_INTERMEDIATE_STEPS = True
 VISUALIZE_REPETITIONS = [1, 1, 1]
 ```
 
-
 ![Notebook setup](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/jl-set-nb.png "Notebook setup")
 
 ### 2.3. Run the Notebook
@@ -77,9 +76,9 @@ After running the notebook, the user will be able to visualize the created twist
 
 ![Review the Results](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/tbbn-result-jl.png "Review the Results")
 
-### 2.5. Pass the Material to Materials Designer
+### 2.5. Pass Results to the Materials Designer
 
-After reviewing the results, the user can pass the material to Materials Designer for further analysis.
+After reviewing the results, the user can pass the material to the Materials Designer for further analysis.
 
 
 ![Result Material](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/tbbn-result-wavejs.png "Result Material")
@@ -92,11 +91,11 @@ To create a twisted bilayer boron nitride structure with a twist angle of 62.64�
 Set `TWIST_ANGLE = 62.64` in the "1.1. Set up slab parameters" cell in the notebook.
 
 
-### 3.2. Analyze the Results and Pass to Materials Designer
+### 3.2. View Results and pass to the Materials Designer
 
 After running the notebook, the user will be able to visualize the created twisted bilayer boron nitride structure with a twist angle of 62.64째.
 
-After reviewing the results, the user can pass the material to Materials Designer for further analysis.
+After reviewing the results, the user can pass the material to the Materials Designer for further analysis.
 
 ![Twisted Bilayer Boron Nitride Structure with 62.64째 Twist Angle](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/tbbn-62_64.png "Twisted Bilayer Boron Nitride Structure with 62.64째 Twist Angle")
 
