@@ -222,6 +222,7 @@ nav:
                 - Island Surface Defect Formation in TiN:                     tutorials/materials/specific/defect-surface-island-titanium-nitride.md
                 - Twisted Bilayer h-BN nanoribbons:                       tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
                 - Twisted Bilayer MoS2 commensurate lattices:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
+                - Adatom Surface Defects on Graphene:                          tutorials/materials/specific/defect-surface-adatom-graphene.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
