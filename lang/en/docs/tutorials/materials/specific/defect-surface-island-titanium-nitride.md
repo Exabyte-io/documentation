@@ -11,7 +11,7 @@ This tutorial demonstrates the process of creating material with island on the s
 
 [//]: # (<embed src="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406" width="100%" height="300">)
 
-!!!note "Reference"
+!!!note "Manuscript"
     **D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene**, 
     "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
 
@@ -166,7 +166,7 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/defect_creation_island.ipynb' %}
+{% with notebook_name='specific_examples/defect_surface_island_titanium_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
@@ -174,7 +174,7 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 <!--
 {# TODO: Update the origin_url
-    {% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_creation_island.ipynb" %}
+    {% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_surface_island_titanium_nitride.ipynb" %}
     {% include 'jupyterlite_embed.html' %}
     {% endwith %}
 #}

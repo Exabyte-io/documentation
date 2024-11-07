@@ -11,7 +11,7 @@ This tutorial demonstrates the process of creating materials with substitution d
 
 [//]: # (<embed src="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446" width="100%" height="300">)
 
-!!!note "Reference"
+!!!note "Manuscript"
     Yoshitaka Fujimoto and Susumu Saito, "Formation, stabilities, and electronic properties of nitrogen defects in graphene", Physical Review B, 2011. [DOI: 10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}.
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a supercell of graphene, identify the crystal site positions for defects, and introduce nitrogen atoms and vacancies accordingly.
@@ -20,7 +20,7 @@ We will focus on creating graphene-nitrogen structures from FIG. 1.
 Specifically, the material from FIG. 1. b) of the paper: 
 
 
-![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1. b)")
+![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1.")
 
 
 ## 1. Create Graphene Supercell
@@ -101,19 +101,19 @@ Here's the visual of the updated content:
 
 ![Notebook setup](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/5-jl-setup.webp "Notebook setup")
 
-## 5. Run the Notebook
+## 4. Run the Notebook
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-## 6. Analyze the Results
+## 5. Analyze the Results
 
 After running the notebook, the user will be able to visualize the structure of Graphene with substitution defects.
 
 ![Review the Results](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/6-jl-result-preview.webp "Review the Results")
 
-## 7. Pass the Material to Materials Designer
+## 6. Pass the Material to Materials Designer
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
@@ -126,21 +126,9 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in graphene. Select "Run" > "Run All Cells".
 
-{% with origin_url=config.extra.jupyterlite.origin_url %}
-{% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/defect_creation_point_substitution_graphene.ipynb' %}
+{% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_point_substitution_graphene.ipynb" %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
-{% endwith %}
-{% endwith %}
-
-<!--
-{# TODO: Update the origin_url
-    {% with origin_url="https://jupyterlite.mat3ra.com/retro/notebooks/?path=api-examples/other/materials_designer/specific_examples/defect_creation_point_substitution_graphene.ipynb" %}
-    {% include 'jupyterlite_embed.html' %}
-    {% endwith %}
-#}
--->
 
 ## Tags
 
