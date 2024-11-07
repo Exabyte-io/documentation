@@ -18,13 +18,13 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 The image shows the adatom on the graphene surface.
 
-![Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/me_adatom_on_hollow_graphene.png "Adatom on Graphene Surface")
+![Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/me_adatom_on_hollow_graphene.webp "Fig. 1. Adatom on Graphene Surface")
 
 ## 1. Load and preview Graphene structure
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Graphene Import](/images/tutorials/materials/specific/defect-surface-adatom-graphene/standata-import-graphene.png "Standata Graphene Import")
+![Standata Graphene Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a graphene structure with an adatom on the surface.
 
@@ -81,13 +81,13 @@ After running the notebook, the Graphene structure with a Li adatom on the surfa
 
 The user will be able to visualize the created structure and download the corresponding files.
 
-![Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-li.png "Li Adatom on Graphene Surface")
+![Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-li.webp "Li Adatom on Graphene Surface")
 
 ### 2.5. Pass the Material to Materials Designer
 
 After reviewing the results, the user can pass the material to Materials Designer for further analysis.
 
-![Final Material](/images/tutorials/materials/specific/defect-surface-adatom-graphene/wave-result-li.png "Li Adatom on Graphene Surface")
+![Final Material](/images/tutorials/materials/defects/defect-surface-adatom-graphene/wave-result-li.webp "Li Adatom on Graphene Surface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
@@ -106,7 +106,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 2.28
 ```
 
-![Na Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-na.png "Na Adatom on Graphene Surface")
+![Na Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-na.webp "Na Adatom on Graphene Surface")
 
 For K adatom on hollow site:
 ```python
@@ -115,7 +115,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 2.60
 ```
 
-![K Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-k.png "K Adatom on Graphene Surface")
+![K Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-k.webp "K Adatom on Graphene Surface")
 
 
 For Ca adatom on hollow site:
@@ -125,7 +125,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 2.29
 ```
 
-![Ca Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-ca.png "Ca Adatom on Graphene Surface")
+![Ca Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-ca.webp "Ca Adatom on Graphene Surface")
 
 
 For Al adatom on hollow site:
@@ -135,7 +135,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 2.13
 ```
 
-![Al Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-al.png "Al Adatom on Graphene Surface")
+![Al Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-al.webp "Al Adatom on Graphene Surface")
 
 
 For Ga adatom on hollow site:
@@ -145,7 +145,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 2.20
 ```
 
-![Ga Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-ga.png "Ga Adatom on Graphene Surface")
+![Ga Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-ga.webp "Ga Adatom on Graphene Surface")
 
 
 For In adatom on hollow site:
@@ -155,7 +155,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 2.45
 ```
 
-![In Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-in.png "In Adatom on Graphene Surface")
+![In Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-in.webp "In Adatom on Graphene Surface")
 
 
 For Sn adatom on top site:
@@ -165,7 +165,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [7/12, 5/12]
 DISTANCE_Z = 2.82
 ```
 
-![Sn Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-sn.png "Sn Adatom on Graphene Surface")
+![Sn Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-sn.webp "Sn Adatom on Graphene Surface")
 
 
 For Ti adatom on hollow site:
@@ -175,7 +175,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 1.80
 ```
 
-![Ti Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-ti.png "Ti Adatom on Graphene Surface")
+![Ti Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-ti.webp "Ti Adatom on Graphene Surface")
     
 For Fe adatom on hollow site:
 ```python
@@ -184,7 +184,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
 DISTANCE_Z = 1.53
 ```
 
-![Fe Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-fe.png "Fe Adatom on Graphene Surface")
+![Fe Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-fe.webp "Fe Adatom on Graphene Surface")
 
 
 For Pd adatom on bridge site:
@@ -195,7 +195,7 @@ DISTANCE_Z = 2.21
 ```
 
 
-![Pd Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-pd.png "Pd Adatom on Graphene Surface")
+![Pd Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-pd.webp "Pd Adatom on Graphene Surface")
 
 
 For Au adatom on top site:
@@ -205,7 +205,7 @@ APPROXIMATE_POSITION_ON_SURFACE = [7/12, 5/12]
 DISTANCE_Z = 2.69
 ```
 
-![Au Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/jl-result-preview-au.png "Au Adatom on Graphene Surface")
+![Au Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-au.webp "Au Adatom on Graphene Surface")
 
 ## Interactive JupiterLite Notebook
 
