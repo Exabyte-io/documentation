@@ -52,7 +52,7 @@ Next, edit `create_adatom_defect.ipynb` notebook to modify the parameters by cha
 
  - `SUPERCELL_MATRIX = [[4, 0, 0], [0, 4, 0], [0, 0, 1]]` - the supercell matrix
 
-Adjust the "1.1. Set up slab parameters" cell in the notebook according to:
+Copy the content below and adjust the "1.1. Set up slab parameters" cell in the notebook:
 
 ```python
 DEFECT_TYPE = "adatom"  
@@ -83,7 +83,7 @@ The user will be able to visualize the created structure and download the corres
 
 ![Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/jl-result-preview-li.webp "Li Adatom on Graphene Surface")
 
-### 2.5. Pass the Material to Materials Designer
+### 2.5. Pass the Material to the Materials Designer
 
 After reviewing the results, the user can pass the material to Materials Designer for further analysis.
 
