@@ -28,7 +28,7 @@ First, we navigate to [Materials Designer](../../../materials-designer/overview.
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a graphene structure with an adatom on the surface.
 
-## 2. Graphene structure with Li adatom
+## 2. Add Li adatom
 
 ### 2.1 Launch JupyterLite Session
 
@@ -91,7 +91,7 @@ After reviewing the results, the user can pass the material to Materials Designe
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
-## 3. Graphene with other metals adatoms
+## 3. Add other metal adatoms
 
 ### 3.1. Repeat the steps above
 
