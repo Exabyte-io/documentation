@@ -18,7 +18,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 The image shows the adatom on the graphene surface.
 
-![Adatom on Graphene Surface](/images/tutorials/materials/specific/defect-surface-adatom-graphene/adatom-on-graphene.png "Adatom on Graphene Surface")
+![Adatom on Graphene Surface](/images/tutorials/materials/defects/defect-surface-adatom-graphene/me_adatom_on_hollow_graphene.png "Adatom on Graphene Surface")
 
 ## 1. Load and preview Graphene structure
 
@@ -39,12 +39,18 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 ### 2.2. Open and modify the notebook
 
 Next, edit `create_adatom_defect.ipynb` notebook to modify the parameters by changing values:
-- `CHEMICAL_ELEMENT = "Li"` - the element of the adatom
-- `APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]` - position that corresponds to the hollow site in the center of the cell
-- `DISTANCE_Z = 1.71` - the distance between the adatom and the graphene surface (from the Table 1 in the manuscript)
-- `MILLER_INDICES = (0,0, 1)` - the Miller indices of the plane of Graphene
-- `SLAB_THICKNESS = 1` - the thickness of the Graphene monolayer slab 
-- `SUPERCELL_MATRIX = [[4, 0, 0], [0, 4, 0], [0, 0, 1]]` - the supercell matrix
+
+ - `CHEMICAL_ELEMENT = "Li"` - the element of the adatom
+
+ - `APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]` - position that corresponds to the hollow site in the center of the cell
+
+ - `DISTANCE_Z = 1.71` - the distance between the adatom and the graphene surface (from the Table 1 in the manuscript)
+
+ - `MILLER_INDICES = (0,0,1)` - the Miller indices of the plane of Graphene
+
+ - `SLAB_THICKNESS = 1` - the thickness of the Graphene monolayer slab
+
+ - `SUPERCELL_MATRIX = [[4, 0, 0], [0, 4, 0], [0, 0, 1]]` - the supercell matrix
 
 Adjust the "1.1. Set up slab parameters" cell in the notebook according to:
 
