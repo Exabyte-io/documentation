@@ -47,8 +47,10 @@ extra:
         provider: google
         property: UA-69270713-5
     jupyterlite:
-        origin_url: https://jupyterlite.mat3ra.com/lab
-        notebooks_path_root: api-examples/other/materials_designer
+        origin_url: https://jupyterlite.mat3ra.com/retro/notebooks
+        # Ucomment to use lab instead of notebook
+        # origin_url: https://jupyterlite.mat3ra.com/lab/tree
+        notebooks_path_root: made
 
 markdown_extensions:
     - admonition

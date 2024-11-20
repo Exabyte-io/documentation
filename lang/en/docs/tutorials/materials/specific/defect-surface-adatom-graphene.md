@@ -221,9 +221,7 @@ The interactive JupyterLite notebook for creating Graphene structures with metal
 
 ## References
 
-1. **Kevin T. Chan, J. B. Neaton, and Marvin L. Cohen**, 
-    "First-principles study of metal adatom adsorption on graphene" Phys. Rev. B 77, 235430, 2008
-    [DOI: 10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}.
+1. **Kevin T. Chan, J. B. Neaton, and Marvin L. Cohen**, "First-principles study of metal adatom adsorption on graphene" Phys. Rev. B 77, 235430, 2008 [DOI: 10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}.
 
 ## Tags
 
