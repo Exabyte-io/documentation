@@ -49,7 +49,7 @@ extra:
     jupyterlite:
         origin_url: https://jupyterlite.mat3ra.com/retro/notebook
         # Ucomment to use lab instead of notebook
-        # origin_url: https://jupyterlite.mat3ra.com/lab
+        # origin_url: https://jupyterlite.mat3ra.com/lab/tree
         notebooks_path_root: made
 
 markdown_extensions:
