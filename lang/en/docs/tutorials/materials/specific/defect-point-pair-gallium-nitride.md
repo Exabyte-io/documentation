@@ -21,26 +21,28 @@ We will focus on creating GaN-nitrogen structures from FIG. 1.
 Specifically, the material from FIG. 1. b) of the paper: 
 
 
-![Point Defect, Substitution, 0](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1.")
+![Point Pair Defects: Mg Substitution and Vacancy in GaN](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/0-figure-from-manuscript.png "Point Defect Pair: Substitution, Vacancy in GaN, FIG. 2.")
 
 
 ## 1. Create GaN Supercell
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the GaN material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata GaN Import](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/1-standata-GaN.webp "Standata GaN Import")
+![Standata GaN Import](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/1-standata-GaN.png "Standata GaN Import")
 
 We then use the [Advanced](../../../materials-designer/header-menu/advanced/supercell.md) menu to create a supercell of GaN with a size of 4x4x1.
 
-![Supercell Creation for GaN](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/2-advanced-supercell.webp "Supercell GaN")
+![Supercell Creation for GaN](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/2-advanced-supercell.png "Supercell GaN")
 
 ## 2. Identify Defect Sites
 
 Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the crystal site positions for the defects.
 
-![3D Editor](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/4-threejs-editor-coordinates.webp "3D Editor")
+![3D Editor](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/4-threejs-editor-coordinates.png "3D Editor")
 
 Hover over the atoms to get the coordinates of the atoms to replace. Then copy/paste these coordinates into a text file for later use.
+
+`[1.608, 4.642, 5.240]` for the Mg substitution defect and `[1.608, 4.642, 7.210]` for the nitrogen vacancy.
 
 ## 3. Create Nitrogen Defects and Vacancies
 
@@ -50,7 +52,7 @@ For the defect creation, we will use the [JupyterLite](../../../jupyterlite/over
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.png "JupyterLite Dialog")
 
 ### 3.2. Open `create_point_defect_pair.ipynb` notebook
 
@@ -63,24 +65,26 @@ Next, edit `create_point_defect_pair.ipynb` notebook to modify the parameters by
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
-SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 2]]
+SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
 # List of dictionaries with defect parameters
 PRIMARY_DEFECT_CONFIG = {
     "defect_type": "substitution",
-    "approximate_coordinate": [0.5, 0.5, 0.5],
+    "approximate_coordinate": [1.608, 4.642, 5.240],
     "chemical_element": "Mg",
+    "use_cartesian_coordinates": True,
 }
 
 SECONDARY_DEFECT_CONFIG = {
     "defect_type": "vacancy",
-    "approximate_coordinate": [0.5, 0.5, 0.65],
+    "approximate_coordinate": [1.608, 4.642, 7.210],
+    "use_cartesian_coordinates": True,
 }
 ```
 
 Here's the visual of the updated content:
 
-![Notebook setup](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/5-jl-setup.webp "Notebook setup")
+![Notebook setup](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/5-jl-setup.png "Notebook setup")
 
 ## 4. Run the Notebook
 
@@ -92,13 +96,13 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook, the user will be able to visualize the structure of GaN with substitution defects.
 
-![Review the Results](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/6-jl-result-preview.webp "Review the Results")
+![Review the Results](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/6-jl-result-preview.png "Review the Results")
 
 ## 6. Pass the Material to Materials Designer
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/7-wave-result.webp "N-doped GaN")
+![Final Material](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/7-wave-result.png "N-doped GaN")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
