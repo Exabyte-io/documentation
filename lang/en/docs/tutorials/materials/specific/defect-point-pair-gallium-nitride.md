@@ -18,7 +18,7 @@ This tutorial demonstrates the process of creating material with nitrogen vacanc
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a supercell of GaN, identify the crystal site positions for defects, and introduce nitrogen atoms and vacancies accordingly.
 
 We will focus on creating GaN-nitrogen structures from FIG. 1.
-Specifically, the material from FIG. 1. b) of the paper: 
+Specifically, the material from FIG. 2. c) of the manuscript: 
 
 
 ![Point Pair Defects: Mg Substitution and Vacancy in GaN](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/0-figure-from-manuscript.webp "Point Defect Pair: Substitution, Vacancy in GaN, FIG. 2.")
@@ -94,15 +94,15 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 ## 5. Analyze the Results
 
-After running the notebook, the user will be able to visualize the structure of GaN with substitution defects.
+After running the notebook, the user will be able to visualize the structure of GaN with substitution and vacancy defects.
 
 ![Review the Results](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/6-jl-result-preview.webp "Review the Results")
 
 ## 6. Pass the Material to Materials Designer
 
-The user can pass the material with substitution defects in the current Materials Designer environment and save it.
+The user can pass the resulting material in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/7-wave-result.webp "N-doped GaN")
+![Final Material](/images/tutorials/materials/defects/defect_point_pair_gallium_nitride/7-wave-result.webp "Vacancy and Mg Substitution in GaN")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
