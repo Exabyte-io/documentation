@@ -17,7 +17,7 @@ This tutorial demonstrates the process of creating material with nitrogen vacanc
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a supercell of GaN, identify the crystal site positions for defects, and introduce nitrogen atoms and vacancies accordingly.
 
-We will focus on creating GaN-nitrogen structures from FIG. 1.
+We will focus on creating GaN-nitrogen structures from the publication.
 Specifically, the material from FIG. 2. c) of the manuscript: 
 
 
@@ -127,4 +127,4 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## Tags
 
-`defects`, `impurities`, `doped-semiconductors`, `substitutional`, `point-defects`, `nitrogen`, `GaN`
+`defects`, `defect pair`, `substitutional`, `vacancy`, `point defects`, `impurities`, `doped semiconductors`,  `nitrogen`, `GaN`, `gallium nitride`
