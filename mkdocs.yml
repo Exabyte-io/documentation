@@ -221,6 +221,7 @@ nav:
 
             - Specific:
                 - Substitutional Point Defects in Graphene:                   tutorials/materials/specific/defect-point-substitution-graphene.md
+                - Vacancy-Substitution Pair Defects in GaN:                   tutorials/materials/specific/defect-point-pair-gallium-nitride.md
                 - Island Surface Defect Formation in TiN:                     tutorials/materials/specific/defect-surface-island-titanium-nitride.md
                 - Twisted Bilayer h-BN nanoribbons:                       tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
                 - Twisted Bilayer MoS2 commensurate lattices:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
