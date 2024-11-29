@@ -113,7 +113,7 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/defect_point_substitution_gallium_nitride.ipynb' %}
+{% with notebook_name='specific_examples/defect_point_pair_gallium_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
