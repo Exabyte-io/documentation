@@ -12,7 +12,7 @@ This tutorial demonstrates the process of creating passivated silicon nanowires 
 
 !!!note "Manuscript"
     B. Aradi, L. E. Ramos, P. Deák, Th. Köhler, F. Bechstedt, R. Q. Zhang, and Th. Frauenheim,
-    Theoretical study of the chemical gap tuning in silicon nanowires
+    "Theoretical study of the chemical gap tuning in silicon nanowires"
     Phys. Rev. B 76, 035305 (2007)
     DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305)
 
@@ -27,9 +27,10 @@ Specifically, the material from FIG. 1. of the publication:
 ## 1. Create Silicon Nanowire
 
 ### 3.1. Load Silicon Material
-First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the silicon material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Silicon Import](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/1-standata-silicon.webp "Standata Silicon Import")
+Since we're using Silicon, it can be already loaded as the default material and we can skip this step.
+
+Otherwise, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the silicon material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 ### 3.2. Launch JupyterLite Session
 
@@ -54,8 +55,11 @@ Finally, we'll define a custom coordinate condition to create a rhombus-shaped n
 The vertices of the rhombus are defined as follows:
 
 Bottom:`[0.5, 0.2, 0]`, 
+
 Left:`[0, 0.5, 0]`,
+
 Top:`[0.5, 1, 0]`,
+
 Right:`[1, 0.5, 0]`
 
 
@@ -126,7 +130,9 @@ After running the notebook and submitting the material, the user will be able to
 
 ## 4. Create Hydrogen Passivation
 
-### 4.1. Open `passivate_nanoribbon.ipynb` notebook
+### 4.1. Setup the Passivation
+
+Open JupyterLite Session again and select Silicon Nanowire material for Input Materials.
 
 Next, we need to passivate the silicon nanowire with hydrogen atoms.
 
@@ -165,13 +171,7 @@ Here's the visual of the updated content:
 
 ![Notebook setup](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/5-jl-setup.webp "Notebook setup")
 
-### 4.2. Run the Notebook
-
-Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
-
-![Run All](/images/jupyterlite/run-all.webp "Run All")
-
-### 4.3. Analyze the Results
+### 4.2. Run the notebook and analyze the results
 
 After running the notebook, the user will be able to visualize the structure of Silicon Nanowire with substitution defects.
 
