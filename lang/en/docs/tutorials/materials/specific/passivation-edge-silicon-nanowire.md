@@ -188,11 +188,11 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 ## Interactive JupyterLite Notebook
 
-The following JupyterLite notebook demonstrates the process of creating materials with substitution defects in silicon. Select "Run" > "Run All Cells".
+The following JupyterLite notebook demonstrates the process of creating materials with hydrogen passivation of silicon nanowire. Select "Run" > "Run All Cells".
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/defect_point_substitution_silicon.ipynb' %}
+{% with notebook_name='specific_examples/passivation_edge_silicon_nanowire.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
@@ -207,4 +207,4 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## Tags
 
-`defects`, `silicon`, `substitutional`, `point defects`, `hydrogen`, `passivation`
+ `silicon`, `hydrogen`, `passivation`, `nanowire`
