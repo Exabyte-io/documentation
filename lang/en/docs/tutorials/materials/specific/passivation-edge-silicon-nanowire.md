@@ -26,23 +26,23 @@ Specifically, the material from FIG. 1. of the publication:
 
 ## 1. Create Silicon Nanowire
 
-### 3.1. Load Silicon Material
+### 1.1. Load Silicon Material
 
 Since we're using Silicon, it can be already loaded as the default material and we can skip this step.
 
 Otherwise, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the silicon material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-### 3.2. Launch JupyterLite Session
+### 1.2. Launch JupyterLite Session
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
 ![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 3.3. Open `create_nanowire_custom_shapeipynb` notebook
+### 1.3. Open `create_nanowire_custom_shapeipynb` notebook
 
 Find `create_nanowire_custom_shape.ipynb` in the list of notebooks and click/double-click open it.
 
-### 3.4. Open and modify the notebook
+### 1.4. Open and modify the notebook
 
 Next, we need to create a nanowire wit ha custom shape.
 
@@ -71,7 +71,6 @@ import numpy as np
 from mat3ra.made.tools.utils.coordinate import CoordinateCondition
 
 USE_CARTESIAN_COORDINATES = False # Flag to use Cartesian coordinates for the center and radii
-
 # Wire parameters 
 MILLER_INDICES= (1,1,0)  # Miller indices of the nanowire direction
 SUPERCELL_MATRIX = [[3, 0, 0], [0, 2, 0], [0, 0, 2]] # Supercell matrix to cut the cylinder from
@@ -84,9 +83,7 @@ class CustomCoordinateCondition(CoordinateCondition):
 
     def condition(self, coordinate: List[float]) -> bool:
         coord = np.array(coordinate)
-
         v0, v1, v2, v3 = np.array(self.vertices)
-
         vec0 = v1 - v0
         vec1 = v2 - v1
         vec2 = v3 - v2
@@ -99,9 +96,10 @@ class CustomCoordinateCondition(CoordinateCondition):
         cross3 = np.cross(vec3, coord[:2] - v3[:2])
 
         # Check if point is inside the rhombus
-        return (np.all(cross0 >= 0) and np.all(cross1 >= 0) and np.all(cross2 >= 0) and np.all(cross3 >= 0)) or \
-               (np.all(cross0 <= 0) and np.all(cross1 <= 0) and np.all(cross2 <= 0) and np.all(cross3 <= 0))
-
+        return (np.all(cross0 >= 0) and np.all(cross1 >= 0) and \
+                np.all(cross2 >= 0) and np.all(cross3 >= 0)) or \
+               (np.all(cross0 <= 0) and np.all(cross1 <= 0) and \
+                np.all(cross2 <= 0) and np.all(cross3 <= 0))
 
 # Define the vertices of the rhombus
 vertices = [
@@ -114,11 +112,7 @@ vertices = [
 condition = CustomCoordinateCondition(vertices=vertices).condition
 ```
 
-Here's the visual of the updated content:
-
-![Notebook setup](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/2-jl-setup.webp "Notebook setup")
-
-## 3.5. Run the Notebook and use the Material
+## 1.5. Run the Notebook and use the Material
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
@@ -128,9 +122,9 @@ After running the notebook and submitting the material, the user will be able to
 
 ![Silicon Nanowire](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/3-silicon-nanowire.webp "Silicon Nanowire")
 
-## 4. Create Hydrogen Passivation
+## 2. Create Hydrogen Passivation
 
-### 4.1. Setup the Passivation
+### 2.1. Setup the Passivation
 
 Open JupyterLite Session again and select Silicon Nanowire material for Input Materials.
 
@@ -171,13 +165,13 @@ Here's the visual of the updated content:
 
 ![Notebook setup](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/5-jl-setup.webp "Notebook setup")
 
-### 4.2. Run the notebook and analyze the results
+### 2.2. Run the notebook and analyze the results
 
 After running the notebook, the user will be able to visualize the structure of Silicon Nanowire with substitution defects.
 
 ![Review the Results](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/6-jl-result-preview.webp "Review the Results")
 
-## 5. Pass the Material to Materials Designer
+## 3. Pass the Material to Materials Designer
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
