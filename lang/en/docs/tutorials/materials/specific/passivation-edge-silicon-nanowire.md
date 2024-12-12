@@ -135,7 +135,7 @@ Open JupyterLite Session again and select Silicon Nanowire material for Input Ma
 
 Next, we need to passivate the silicon nanowire with hydrogen atoms.
 
-Open the `passivate_nanoribbon.ipynb` notebook and set:
+Open the `passivate_edge.ipynb` notebook and set:
 
 `BOND_LENGTH = 1.46` -- Si-H bond length in Angstroms,
 
