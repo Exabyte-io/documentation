@@ -48,7 +48,9 @@ Next, we need to create a nanowire wit ha custom shape.
 
 We'll specify the orientation of the nanowire with Miller indices of `(1,1,0)` as described in the manuscript.
 
-Then we'll define a supercell matrix to add enough of material to cut the nanowire from: `[[3, 0, 0], [0, 2, 0], [0, 0, 2]]`.
+Then we'll define a supercell matrix to add enough of material to cut the nanowire from: 
+
+`[[3, 0, 0], [0, 2, 0], [0, 0, 2]]`.
 
 Finally, we'll define a custom coordinate condition to create a rhombus-shaped nanowire with coordinates of the vertices corresponding to the corners of the rhombus.
 
@@ -69,12 +71,15 @@ For that, edit `create_nanowire_custom_shape.ipynb` notebook to modify the param
 from typing import List
 import numpy as np
 from mat3ra.made.tools.utils.coordinate import CoordinateCondition
+# Flag to use Cartesian coordinates for the center and radii
+USE_CARTESIAN_COORDINATES = False 
 
-USE_CARTESIAN_COORDINATES = False # Flag to use Cartesian coordinates for the center and radii
-# Wire parameters 
-MILLER_INDICES= (1,1,0)  # Miller indices of the nanowire direction
-SUPERCELL_MATRIX = [[3, 0, 0], [0, 2, 0], [0, 0, 2]] # Supercell matrix to cut the cylinder from
-VACUUM = 10.0 # Vacuum thickness on the sides in Angstroms
+# Miller indices of the nanowire direction
+MILLER_INDICES= (1,1,0)  
+# Supercell matrix to cut the cylinder from
+SUPERCELL_MATRIX = [[3, 0, 0], [0, 2, 0], [0, 0, 2]] 
+# Vacuum thickness on the sides in Angstroms
+VACUUM = 10.0 
 ALIGN_ALONG_X = False
 
 # Custom Coordinate Condition for
@@ -122,7 +127,7 @@ After running the notebook and submitting the material, the user will be able to
 
 ![Silicon Nanowire](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/3-silicon-nanowire.webp "Silicon Nanowire")
 
-## 2. Create Hydrogen Passivation
+## 2. Passivate with Hydrogen
 
 ### 2.1. Setup the Passivation
 
