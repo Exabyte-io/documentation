@@ -55,6 +55,8 @@ parameters = {
 }
 ```
 
+![Setup for cuboctahedron cluster](/images/tutorials/materials/0d_materials/2-jl-setup.webp "Setup for cuboctahedron cluster")
+
 ### 2.3. Run the notebook
 
 Run the notebook by selecting "Run > Run All Cells" from the menu.
@@ -67,13 +69,13 @@ After running the notebook, the octahedral gold nanoparticle structure will be c
 
 The user will be able to visualize the created structure and download the corresponding files.
 
-![Octahedra Gold Nanocluster](/images/tutorials/materials/0d_materials/jl-result-preview-octahedra.webp "Octahedra Gold Nanocluster")
+![Cuboctahedron Gold Nanocluster](/images/tutorials/materials/0d_materials/3-jl-result-preview.webp "Cuboctahedron Gold Nanocluster")
 
 ### 2.5. Pass the Material to the Materials Designer
 
 After reviewing the results, the user can pass the material to Materials Designer for further analysis.
 
-![Final Material](/images/tutorials/materials/0d_materials/wave-result-au-cluster.webp "Final Material")
+![Final Material](/images/tutorials/materials/0d_materials/4-wave-result.webp "Final Material")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
@@ -85,7 +87,7 @@ Repeat the steps above to create gold nanoparticle structures with other shapes 
 
 To create the rest of the structures set the `shape` and other parameters accordingly:
 
-For Octahedron with 147 atoms:
+For Cuboctahedron with 147 atoms:
 
 ```python
 shape = ASENanoparticleShapesEnum.OCTAHEDRON
@@ -95,9 +97,9 @@ parameters = {
 }
 ```
 
-![Octahedron 147](/images/tutorials/materials/0d_materials/jl-result-preview-octahedron-147.webp "Octahedron 147")
+![Cuboctahedron 147](/images/tutorials/materials/0d_materials/jl-result-preview-octahedron-147.webp "Cuboctahedron 147")
 
-For Octahedron with 309 atoms:
+For Cuboctahedron with 309 atoms:
 
 ```python
 shape = ASENanoparticleShapesEnum.OCTAHEDRON
@@ -107,7 +109,7 @@ parameters = {
 }
 ```
 
-![Octahedron 309](/images/tutorials/materials/0d_materials/jl-result-preview-octahedron-309.webp "Octahedron 309")
+![Cuboctahedron 309](/images/tutorials/materials/0d_materials/jl-result-preview-octahedron-309.webp "Cuboctahedron 309")
 
 For Icosahedron with 55 atoms:
 
@@ -144,7 +146,7 @@ parameters = {
 
 ## Interactive JupiterLite Notebook
 
-The interactive JupyterLite notebook for creating Graphene structures with metal adatoms can be accessed below. To run the notebook, click on the "Run All" button.
+The interactive JupyterLite notebook for creating Gold Nanoclusters can be accessed below. To run the notebook, click on the "Run All" button.
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
