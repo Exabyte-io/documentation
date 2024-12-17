@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# Gold Nanoparticles
+# Gold Nanoclusters
 
 ## Introduction
 
