@@ -18,7 +18,7 @@ This tutorial demonstrates the process of creating a gold nanoparticle structure
 We use the [Materials Designer](../../../materials-designer/overview.md) to create gold nanoparticle structures of cuboctahedral and icosahedral shapes as shown in the image below.
 
 
-![Gold Nanoparticles](/images/tutorials/materials/0d_materials/0-manuscript-image.webp "Fig. 2. Gold Nanoparticles")
+![Gold Nanoparticles](/images/tutorials/materials/0d_materials/nanocluster_gold/0-manuscript-image.webp "Fig. 2. Gold Nanoparticles")
 
 ## 1. Load and preview Gold structure
 
@@ -55,7 +55,7 @@ parameters = {
 }
 ```
 
-![Setup for cuboctahedron cluster](/images/tutorials/materials/0d_materials/2-jl-setup.webp "Setup for cuboctahedron cluster")
+![Setup for cuboctahedron cluster](/images/tutorials/materials/0d_materials/nanocluster_gold/2-jl-setup.webp "Setup for cuboctahedron cluster")
 
 ### 2.3. Run the notebook
 
@@ -69,13 +69,13 @@ After running the notebook, the octahedral gold nanoparticle structure will be c
 
 The user will be able to visualize the created structure and download the corresponding files.
 
-![Cuboctahedron Gold Nanocluster](/images/tutorials/materials/0d_materials/3-jl-result-preview.webp "Cuboctahedron Gold Nanocluster")
+![Cuboctahedron Gold Nanocluster](/images/tutorials/materials/0d_materials/nanocluster_gold/3-jl-result-preview.webp "Cuboctahedron Gold Nanocluster")
 
 ### 2.5. Pass the Material to the Materials Designer
 
 After reviewing the results, the user can pass the material to Materials Designer for further analysis.
 
-![Final Material](/images/tutorials/materials/0d_materials/4-wave-result.webp "Final Material")
+![Final Material](/images/tutorials/materials/0d_materials/nanocluster_gold/4-wave-result.webp "Final Material")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
@@ -97,7 +97,7 @@ parameters = {
 }
 ```
 
-![Cuboctahedron 147](/images/tutorials/materials/0d_materials/jl-result-preview-octahedron-147.webp "Cuboctahedron 147")
+![Cuboctahedron 147](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-octahedron-147.webp "Cuboctahedron 147")
 
 For Cuboctahedron with 309 atoms:
 
@@ -109,7 +109,7 @@ parameters = {
 }
 ```
 
-![Cuboctahedron 309](/images/tutorials/materials/0d_materials/jl-result-preview-octahedron-309.webp "Cuboctahedron 309")
+![Cuboctahedron 309](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-octahedron-309.webp "Cuboctahedron 309")
 
 For Icosahedron with 55 atoms:
 
@@ -120,7 +120,7 @@ parameters = {
 }
 ```
 
-![Icosahedron 55](/images/tutorials/materials/0d_materials/jl-result-preview-icosahedron-55.webp "Icosahedron 55")
+![Icosahedron 55](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-icosahedron-55.webp "Icosahedron 55")
 
 For Icosahedron with 147 atoms:
 
@@ -131,7 +131,7 @@ parameters = {
 }
 ```
 
-![Icosahedron 147](/images/tutorials/materials/0d_materials/jl-result-preview-icosahedron-147.webp "Icosahedron 147")
+![Icosahedron 147](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-icosahedron-147.webp "Icosahedron 147")
 
 For Icosahedron with 309 atoms:
 
@@ -142,7 +142,7 @@ parameters = {
 }
 ```
 
-![Icosahedron 309](/images/tutorials/materials/0d_materials/jl-result-preview-icosahedron-309.webp "Icosahedron 309")
+![Icosahedron 309](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-icosahedron-309.webp "Icosahedron 309")
 
 ## Interactive JupiterLite Notebook
 
