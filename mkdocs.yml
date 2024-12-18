@@ -227,6 +227,7 @@ nav:
                 - Twisted Bilayer MoS2 commensurate lattices:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
                 - Adatom Surface Defects on Graphene:                          tutorials/materials/specific/defect-surface-adatom-graphene.md
                 - H-Passivated Silicon Nanowire:                                      tutorials/materials/specific/passivation-edge-silicon-nanowire.md
+                - Gold Nanoclusters:                                             tutorials/materials/specific/nanocluster-gold.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
