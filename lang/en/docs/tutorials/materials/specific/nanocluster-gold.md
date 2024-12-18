@@ -24,7 +24,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Gold Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-gold.webp "Standata Gold Import")
+![Standata Gold Import](/images/tutorials/materials/0d_materials/nanocluster_gold/1-standata-import-gold.webp "Standata Gold Import")
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a graphene structure with an adatom on the surface.
 
@@ -69,6 +69,8 @@ After running the notebook, the octahedral gold nanoparticle structure will be c
 
 The user will be able to visualize the created structure and download the corresponding files.
 
+For better view of the solid symmetry rotation of image might be needed like `"rotation": "45y,45x"` for the cuboctahedron.
+
 ![Cuboctahedron Gold Nanocluster](/images/tutorials/materials/0d_materials/nanocluster_gold/3-jl-result-preview.webp "Cuboctahedron Gold Nanocluster")
 
 ### 2.5. Pass the Material to the Materials Designer
@@ -97,7 +99,7 @@ parameters = {
 }
 ```
 
-![Cuboctahedron 147](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-octahedron-147.webp "Cuboctahedron 147")
+![Cuboctahedron 147](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-cuboctahedron-147.webp "Cuboctahedron 147")
 
 For Cuboctahedron with 309 atoms:
 
@@ -109,7 +111,7 @@ parameters = {
 }
 ```
 
-![Cuboctahedron 309](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-octahedron-309.webp "Cuboctahedron 309")
+![Cuboctahedron 309](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-cuboctahedron-309.webp "Cuboctahedron 309")
 
 For Icosahedron with 55 atoms:
 
