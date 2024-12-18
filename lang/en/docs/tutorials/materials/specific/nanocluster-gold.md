@@ -22,11 +22,11 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 ## 1. Load and preview Gold structure
 
-First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
+First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Gold material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 ![Standata Gold Import](/images/tutorials/materials/0d_materials/nanocluster_gold/1-standata-import-gold.webp "Standata Gold Import")
 
-Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a graphene structure with an adatom on the surface.
+Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create gold nanoparticle structures.
 
 ## 2. Create cuboctahedra
 
