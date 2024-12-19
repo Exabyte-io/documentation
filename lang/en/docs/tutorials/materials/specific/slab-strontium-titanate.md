@@ -86,7 +86,7 @@ material = rotate(material, axis=[1,0,0], angle=10)
 
 This will allow for symmetry breaking and correct detection for all possible terminations.
 
-![Rotate Material](/images/tutorials/materials/2d_materials/slab_strontium_titanate/jl-setup-rotate.webp "Rotate Material")
+![Rotate Material](/images/tutorials/materials/2d_materials/slab_strontium_titanate/jl-setup-rotation.webp "Rotate Material")
 
 ## 1.5. Run the notebook
 
