@@ -228,6 +228,7 @@ nav:
                 - Adatom Surface Defects on Graphene:                          tutorials/materials/specific/defect-surface-adatom-graphene.md
                 - H-Passivated Silicon Nanowire:                                      tutorials/materials/specific/passivation-edge-silicon-nanowire.md
                 - Gold Nanoclusters:                                             tutorials/materials/specific/nanocluster-gold.md
+                - SrTiO3 Slab:                                                  tutorials/materials/specific/slab-strontium-titanate.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
