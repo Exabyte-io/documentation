@@ -88,7 +88,7 @@ This will allow for symmetry breaking and correct detection for all possible ter
 
 ![Rotate Material](/images/tutorials/materials/2d_materials/slab_strontium_titanate/jl-setup-rotation.webp "Rotate Material")
 
-## 1.5. Run the notebook
+### 1.5. Run the notebook
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu.
 
@@ -105,7 +105,7 @@ After running the notebook, the slabs for different possible terminations should
 
 If the interactive selection of terminations is enabled, select the desired termination from the list or change the `TERMINATION_INDEX` parameter in the notebook and rerun it.
 
-### 2.2. Pass the Material to Materials Designer
+## 3. Pass the Material to Materials Designer
 
 The user can pass the material with the selected termination in the current Materials Designer environment and save it.
 
