@@ -134,7 +134,7 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 ## Interactive JupyterLite Notebook
 
-The interactive JupyterLite notebook for creating twisted bilayer MoS2 structures can be accessed below. To run the notebook, click on the "Run All" button.
+The interactive JupyterLite notebook for creating Gr/hBN interface can be accessed below. To run the notebook, click on the "Run All" button.
 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
@@ -148,16 +148,23 @@ The interactive JupyterLite notebook for creating twisted bilayer MoS2 structure
 ## References
 
 1. **Jeil Jung, Ashley M. DaSilva, Allan H. MacDonald & Shaffique Adam**
-    **Origin of the band gap in graphene on hexagonal boron nitride**
+
+    "Origin of the band gap in graphene on hexagonal boron nitride"
     Nature Communications volume 6, Article number: 6308 (2015)
     [DOI: 10.1038/ncomms7308](https://doi.org/10.1038/ncomms7308)
 
-2. **K. S. Novoselov,* A. Mishchenko, A. Carvalho, A. H. Castro Neto**
-    **2D materials and van der Waals heterostructures**
+2. **K. S. Novoselov, A. Mishchenko, A. Carvalho, A. H. Castro Neto**
+
+    "2D materials and van der Waals heterostructures"
     Science 353, 6298 (2016)
     [DOI: 10.1126/science.aac9439](https://doi.org/10.1126/science.aac9439)
 
 3. **Neelam Gupta, Saurav Sachin, Puja Kumari, Shivani Rania and Soumya Jyoti Ray**
-    Twistronics in two-dimensional transition metal dichalcogenide (TMD)-based van der Waals interface†
+    
+    "Twistronics in two-dimensional transition metal dichalcogenide (TMD)-based van der Waals interface"
     RSC Adv., 2024, 4, 1-10
     [DOI: 10.1039/D3RA06559F](https://doi.org/10.1039/D3RA06559F)
+
+## Tags
+
+`2D`, `Graphene`, `Hexagonal Boron Nitride`, `interface`, `stacking`
