@@ -20,14 +20,14 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 The Figure 7 shows the different stacking configurations of graphene on hBN.
 
-![Graphene on Hexagonal Boron Nitride](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/0-figure-from-manuscript.webp   "Graphene on Hexagonal Boron Nitride, FIG. 7")
+![Graphene on Hexagonal Boron Nitride](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/0-figure-from-manuscript.webp   "Graphene on Hexagonal Boron Nitride, FIG. 7")
 
 ## 1. Load and preview materials
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Graphene and Hexagonal BN materials from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 
-![Standata Graphene Import](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/standata-import-graphene.webp "Standata Graphene Import")
+![Standata Graphene and hBN Import](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/1-standata-import-gr-hbn.webp "Standata Graphene and hBN Import")
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create the target structures.
 
@@ -43,7 +43,9 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ### 2.2. Open and modify the notebook
 
-Next, edit `create_interface_with_min_strain_zsl.ipynb` notebook to modify the parameters by changing:
+Select the input materials with first one being the substrate (hBN) and the second one being the film (Graphene).
+
+Next, open `create_interface_with_min_strain_zsl.ipynb` notebook to modify the parameters by changing:
 
 Miller indices of both materials to `(0,0,1)`,
 
@@ -82,12 +84,12 @@ INTERFACE_DISTANCE = 3.4  # in Angstrom
 INTERFACE_VACUUM = 20.0  # in Angstrom
 ```
 
-![Notebook setup](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/jl-setup-notebook.webp "Notebook setup")
+![Notebook setup](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/2-jl-setup-notebook.webp "Notebook setup")
 
 
 ### 2.3. Run the Notebook
 
-After setting the parameters, run the notebook to create the twisted bilayer molybdenum disulfide structure.
+After setting the parameters, run the notebook to create the interface between hBN and Graphene.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
@@ -98,13 +100,13 @@ After that, the user can pass the material to the Materials Designer for further
 
 Interface between hBN and Graphene with the specified parameters is shown below.
 
-![Gr/hBN Interface ](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/jl-result-preview.webp "Gr/hBN Interface")
+![Gr/hBN Interface ](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/3-jl-result-preview.webp "Gr/hBN Interface")
 
 To shift graphene layer along the y-axis, the user can modify the last cell in the notebook to achieve different stacking configurations.
 
 As mentioned in the publication, the vector to slide the layers between AA, AB and BB configurations is `a/sqrt(3)`.
 
-One can achieve any multiples of shift vector by changing the value of `n` in the following code snippet:
+One can achieve any multiples of shift vector by changing the value of `n` in the following code snippet using the `interface_displace_part()` function from the `mat3ra.made.tools.modify` module.
 
 ```python
 import numpy as np
@@ -119,11 +121,13 @@ shifted_interface = interface_displace_part(
 
 ```
 
+![Shift Interface](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/4-jl-setup-shift.webp "Shift Interface")
+
 ## 3. Pass the Material to Materials Designer
 
 The user can pass the material with the interface in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/wave-result.webp "Graphene on Hexagonal Boron Nitride Interface")
+![Final Material](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/5-wave-result.webp "Graphene on Hexagonal Boron Nitride Interface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
