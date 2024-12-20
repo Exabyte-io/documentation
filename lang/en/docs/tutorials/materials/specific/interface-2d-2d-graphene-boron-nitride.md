@@ -5,8 +5,6 @@ render_macros: true
 
 # Interfaces between 2D Materials: hBN and Graphene
 
-(set MI orientation for both, thickness of 1, distance_z of 3.4 -- from the publication, slide along y-axis to achieve different stacking configurations, vector n*a/sqrt(3) shift)
-
 ## Introduction
 
 This tutorial demonstrates the process of creating interfaces with different stacking configurations between 2D materials, specifically hexagonal boron nitride (hBN) and graphene, based on the work presented in the following manuscript, where the electronic properties of hBN-graphene interfaces are studied.
@@ -93,15 +91,41 @@ After setting the parameters, run the notebook to create the twisted bilayer mol
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 2.4. View Results and pass to Materials Designer
+### 2.4. View Results and shift the layers
 
 The generation might take some time.
 After that, the user can pass the material to the Materials Designer for further analysis.
 
 Interface between hBN and Graphene with the specified parameters is shown below.
 
-![Gr/hBN Interface ](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/wave-result.webp "Gr/hBN Interface")
+![Gr/hBN Interface ](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/jl-result-preview.webp "Gr/hBN Interface")
 
+To shift graphene layer along the y-axis, the user can modify the last cell in the notebook to achieve different stacking configurations.
+
+As mentioned in the publication, the vector to slide the layers between AA, AB and BB configurations is `a/sqrt(3)`.
+
+One can achieve any multiples of shift vector by changing the value of `n` in the following code snippet:
+
+```python
+import numpy as np
+from mat3ra.made.tools.modify import interface_displace_part
+
+n = 1
+a = selected_interface.lattice.a
+shifted_interface = interface_displace_part(
+    interface=selected_interface, 
+    displacement=[0, n * a / np.sqrt(3), 0],
+    use_cartesian_coordinates=True)
+
+```
+
+## 3. Pass the Material to Materials Designer
+
+The user can pass the material with the interface in the current Materials Designer environment and save it.
+
+![Final Material](/images/tutorials/materials/interfaces/interface-2d-2d-graphene-boron-nitride/wave-result.webp "Graphene on Hexagonal Boron Nitride Interface")
+
+Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
 
 ## Interactive JupyterLite Notebook
