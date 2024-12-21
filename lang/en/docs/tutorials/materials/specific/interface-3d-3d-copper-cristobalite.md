@@ -83,7 +83,7 @@ INTERFACE_DISTANCE = 2.4  # in Angstrom
 INTERFACE_VACUUM = 18.0  # in Angstrom
 ```
 
-![Notebook setup](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/2-jl-setup-notebook.webp "Notebook setup")
+![Notebook setup](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/1-jl-setup-notebook.webp "Notebook setup")
 
 
 ### 2.3. Run the Notebook
@@ -99,14 +99,14 @@ After that, the user can pass the material to the Materials Designer for further
 
 Interface between Copper and Cristobalite with the specified parameters is shown below.
 
-![Cu/SiO2 Interface](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/3-jl-result-preview.webp "Cu/SiO2 Interface")
+![Cu/SiO2 Interface](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/2-jl-result-preview.webp "Cu/SiO2 Interface")
 
 
 ## 3. Pass the Material to Materials Designer
 
 The user can pass the material with the interface in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/5-wave-result.webp "Cu/SiO2 Interface")
+![Final Material](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/4-wave-result.webp "Cu/SiO2 Interface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
