@@ -110,6 +110,12 @@ The user can pass the material with the interface in the current Materials Desig
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
+## 4. Create Interfaces with other Terminations
+
+To create interfaces with other terminations, repeat the steps 1 - 4 and change the `TERMINATION_PAIR_INDEX` parameter to `1` to get the interface with `Cu/O` termination.
+
+Or use the interactive selection of terminations by setting `IS_TERMINATIONS_SELECTION_INTERACTIVE = True`, rerunning the notebook, and selecting the desired termination from the list. 
+
 
 ## Interactive JupyterLite Notebook
 
