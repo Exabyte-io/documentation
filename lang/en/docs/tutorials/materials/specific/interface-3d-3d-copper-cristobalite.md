@@ -92,7 +92,7 @@ After setting the parameters, run the notebook to create the interface between C
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 2.4. View Results and shift the layers
+### 2.4. View Results
 
 The generation might take some time.
 After that, the user can pass the material to the Materials Designer for further analysis.
@@ -106,7 +106,7 @@ Interface between Copper and Cristobalite with the specified parameters is shown
 
 The user can pass the material with the interface in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/4-wave-result.webp "Cu/SiO2 Interface")
+![Final Material](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/3-wave-result.webp "Cu/SiO2 Interface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
