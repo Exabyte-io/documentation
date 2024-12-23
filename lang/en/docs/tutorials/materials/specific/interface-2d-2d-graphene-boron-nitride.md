@@ -131,7 +131,7 @@ Preview of interfaces with different stacking configurations is shown below.
 
 The user can pass the material with the interface in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/5-wave-result.webp "Graphene on Hexagonal Boron Nitride Interface")
+![Final Material](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/6-wave-result.webp "Graphene on Hexagonal Boron Nitride Interface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
