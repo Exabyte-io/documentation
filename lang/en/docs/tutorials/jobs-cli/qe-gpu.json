@@ -1,0 +1,44 @@
+{
+    "descriptionLinks": [
+        "Accelerate Quantum ESPRESSO simulation with GPUs: https://docs.mat3ra.com/tutorials/jobs-cli/qe-gpu/"
+    ],
+    "description": "We walk through a step-by-step example of running a Quantum ESPRESSO job on a GPU enabled node. We see significant performance improvement by using CUDA/GPU-enabled version of Quantum ESPRESSO.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        {
+            "...": "../../models-directory/dft.json#/tags"
+        },
+        {
+            "...": "../../software-directory/modeling/quantum-espresso.json#/tags"
+        },
+        "CUDA",
+        "GPU",
+        "NVIDIA"
+    ],
+    "title": "Mat3ra Tutorial: Accelerate Quantum ESPRESSO simulation with GPUs",
+    "youTubeCaptions": [
+        {
+            "text": "Hello, and welcome to the matera tutorial series.",
+            "startTime": "00:00:00.000",
+            "endTime": "00:00:03.000"
+        },
+        {
+            "text": "In today's tutorial, we will go through a step-by-step example of running a Quantum ESPRESSO simulation on one of our GPU enabled compute nodes.",
+            "startTime": "00:00:04.000",
+            "endTime": "00:00:14.000"
+        },
+        {
+            "text": "At the moment, GPU build of Quantum ESPRESSO is only available via our command line interface, and soon it will be available in the web interface.",
+            "startTime": "00:00:15.000",
+            "endTime": "00:00:24.000"
+        },
+        {
+            "text": "Let's connect to the login node using SSH.",
+            "startTime": "00:00:25.000",
+            "endTime": "00:00:14.000"
+        }
+    ],
+    "youTubeId": ""
+}
