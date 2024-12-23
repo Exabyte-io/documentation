@@ -11,7 +11,6 @@ or [web terminal](../../remote-connection/web-terminal.md).
 2. Example job that we are going to run is available in git repository
 [exabyte-io/cli-job-examples](https://github.com/exabyte-io/cli-job-examples).
 You may clone the repository to your working directory:
-
 ```bash
 git clone https://github.com/exabyte-io/cli-job-examples
 cd espresso/gpu
@@ -26,7 +25,6 @@ queue, which comprises 8 CPUs and 1 NVIDIA V100 GPU per node.
 
 5. Since our compute node contains 8 CPUs with 1 GPU, we will run 1 MPI process
 with 8 OpenMP threads.
-
 ```bash
 module load espresso/7.4-cuda-12.4-cc-70
 export OMP_NUM_THREADS=8
@@ -34,14 +32,12 @@ mpirun -np 1 pw.x -npool 1 -ndiag 1 -in pw.cuo.scf.in > pw.cuo.gpu.scf.out
 ```
 
 6. Finally, we can submit our job using:
-
 ```bash
 qsub job.gpu.pbs
 ```
 
-Once, the job is completed, we can inspect the output file `pw.cuo.gpu.scf.out`.
+7. Once, the job is completed, we can inspect the output file `pw.cuo.gpu.scf.out`.
 We will see that GPU was used, and the job took about 1 minute wall time.
-
 ```
 Parallel version (MPI & OpenMP), running on       8 processor cores
 Number of MPI processes:                 1
@@ -57,9 +53,8 @@ Parallel routines
 PWSCF        :     37.94s CPU     50.77s WALL
 ```
 
-7. For comparison, we ran the same calculation using only CPUs, and it took
+8. For comparison, we ran the same calculation using only CPUs, and it took
 about 20 times longer.
-
 ```
 Parallel version (MPI), running on     8 processors
 
