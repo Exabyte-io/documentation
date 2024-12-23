@@ -6,7 +6,7 @@
 
 For a quick installation:
 
-1. Install dependencies: python 3 (tested on Python `3.8`-`3.13`), `pip`, `curl`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
+1. Install dependencies: python 3 (tested on Python `3.9`-`3.13`), `pip`, `curl`, [`virtualenv`](https://virtualenv.pypa.io/en/latest/installation/), git, [git-lfs](https://git-lfs.github.com/).
 
 2. Clone this repository:
 
