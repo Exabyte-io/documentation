@@ -123,6 +123,10 @@ shifted_interface = interface_displace_part(
 
 ![Shift Interface](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/4-jl-setup-shift.webp "Shift Interface")
 
+Preview of interfaces with different stacking configurations is shown below.
+
+![Shifted Interfaces](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/5-jl-result-preview.webp "Shifted Interfaces")
+
 ## 3. Pass the Material to Materials Designer
 
 The user can pass the material with the interface in the current Materials Designer environment and save it.
@@ -139,7 +143,7 @@ The interactive JupyterLite notebook for creating Gr/hBN interface can be access
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/interface_2d_2d_graphene_boron_nitride.ipynb' %}
+{% with notebook_name='specific_examples/interface_2d_2d_boron_nitride_graphene.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
