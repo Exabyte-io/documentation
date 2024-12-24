@@ -12,7 +12,7 @@ This tutorial demonstrates the process of creating interfaces between 2D and 3D 
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create interfaces between graphene and silicon dioxide with oxygen termination, as shown in the manuscript.
 
-The FIG. 1. (b) shows the interface structure between graphene and oxygen-terminated silicon dioxide.
+We will focus on replicating the material from FIG. 1. (b) -- with Graphene on O-terminated SiO<sub>2</sub>. The material (a) requires relaxation to correctly reproduce the structure, which is not covered in this tutorial.
 
 ![Graphene on Silicon Dioxide](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/0-figure-from-manuscript.webp "Graphene on Silicon Dioxide, FIG. 1(b)")
 
