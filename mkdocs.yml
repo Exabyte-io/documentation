@@ -230,6 +230,7 @@ nav:
                 - Gold Nanoclusters:                                             tutorials/materials/specific/nanocluster-gold.md
                 - SrTiO3 Slab:                                                  tutorials/materials/specific/slab-strontium-titanate.md
                 - Interface between Graphene and hBN:                          tutorials/materials/specific/interface-2d-2d-graphene-boron-nitride.md
+                - Interface between Copper and SiO2 (Cristobalite):                  tutorials/materials/specific/interface-3d-3d-copper-silicon-dioxide.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
