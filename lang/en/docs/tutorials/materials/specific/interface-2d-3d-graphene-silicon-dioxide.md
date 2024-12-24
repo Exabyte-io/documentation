@@ -122,3 +122,7 @@ The interactive JupyterLite notebook for creating interfaces between graphene an
     "Graphene–nickel interfaces: a review"
     Nanoscale 6, 2548-2562 (2014)
     [DOI: 10.1039/C3NR05279F](https://doi.org/10.1039/C3NR05279F)
+
+## Tags.
+
+`graphene`, `silicon dioxide`, `interface`, `2D`,`3D`, `oxygen`, `termination`
