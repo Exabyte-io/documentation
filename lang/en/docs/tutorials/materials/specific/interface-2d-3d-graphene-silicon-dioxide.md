@@ -1,3 +1,9 @@
+---
+# YAML header
+render_macros: true
+---
+
+
 # Interfaces between 2D and 3D Materials: Graphene on SiO2.
 
 ## Introduction.
