@@ -4,7 +4,7 @@ render_macros: true
 ---
 
 
-# Interfaces between 2D and 3D Materials: Graphene on SiO2.
+# Interfaces between 2D and 3D Materials: Graphene on SiO2 (alpha-quartz).
 
 ## Introduction.
 
