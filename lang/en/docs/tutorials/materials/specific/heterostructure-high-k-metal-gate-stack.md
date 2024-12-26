@@ -2,41 +2,72 @@
 
 ## Introduction
 
-This tutorial demonstrates how to create a high-k metal gate stack heterostructure consisting of four materials: Si (substrate), SiO2 (gate oxide), HfO2 (high-k dielectric), and TiN (metal gate). We'll use a sequential approach combining Zero Strain Layer (ZSL) and simple interface builders.
-
-The process involves first creating a critical Si/SiO2 interface using strain matching, then adding subsequent layers using simple interface builder to maintain the established structure.
-
-!!!note "Process Overview"
-    1. Create Si/SiO2 interface using ZSL matching (most critical interface)
-    2. Add HfO2 layer using simple interface builder
-    3. Add TiN layer using simple interface builder
+This tutorial demonstrates how to create a high-k metal gate stack heterostructure consisting of four materials: Si (substrate), SiO2 (gate oxide), HfO2 (high-k dielectric), and TiN (metal gate). The process involves:
+1. Creating individual slabs for HfO2 and TiN
+2. Building the Si/SiO2 interface using strain matching
+3. Adding the pre-created slabs sequentially using simple interface builder
 
 ## 1. Set Up Materials
 
-First, navigate to Materials Designer and import the following materials from Standata:
+First, navigate to Materials Designer and import from Standata:
 - Silicon (Si)
 - Silicon dioxide (SiO2)
 - Hafnium dioxide (HfO2)
 - Titanium nitride (TiN)
 
-![Materials Import](/images/tutorials/materials/interfaces/highk_metal_gate/materials-import.webp "Materials Import")
+## 2. Create HfO2 and TiN Slabs
 
-## 2. Create Si/SiO2 Interface
+Before building the stack, we need to create properly terminated slabs for HfO2 and TiN.
 
-### 2.1. Launch First JupyterLite Session
+### 2.1. Create HfO2 Slab
 
-Select "Advanced > JupyterLite Transformation" and open the `create_interface_with_min_strain_zsl.ipynb` notebook.
+Open `create_slab_with_termination.ipynb` and set parameters:
 
-### 2.2. Configure ZSL Interface Parameters
+```python
+# HfO2 slab parameters
+MILLER_INDICES = (0, 0, 1)
+THICKNESS = 4  # atomic layers
+VACUUM = 0.5  # Angstroms
+XY_SUPERCELL_MATRIX = [[1, 0], [0, 2]]
+USE_ORTHOGONAL_Z = True
+USE_CONVENTIONAL_CELL = True
 
-Modify the notebook parameters for the Si/SiO2 interface:
+# Select termination (usually first one is fine)
+TERMINATION_INDEX = 0
+```
+
+Run the notebook to create and save the HfO2 slab.
+
+### 2.2. Create TiN Slab
+
+Open another instance of `create_slab_with_termination.ipynb` for TiN:
+
+```python
+# TiN slab parameters
+MILLER_INDICES = (0, 0, 1)
+THICKNESS = 3  # atomic layers
+VACUUM = 10.0  # Angstroms - more vacuum for final layer
+XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+USE_ORTHOGONAL_Z = True
+USE_CONVENTIONAL_CELL = True
+
+TERMINATION_INDEX = 0
+```
+
+Run the notebook to create and save the TiN slab.
+
+## 3. Create Si/SiO2 Interface
+
+### 3.1. Launch ZSL Interface Builder
+
+Open `create_interface_with_min_strain_zsl.ipynb` and configure:
 
 ```python
 # Global parameters
 MAX_AREA = 200  # Maximum area for strain matching
-MAX_AREA_RATIO_TOL = 0.25  # Maximum area ratio tolerance
-MAX_ANGLE_TOLERANCE = 0.15  # Maximum angle tolerance
-MAX_LENGTH_TOLERANCE = 0.15  # Maximum length tolerance
+MAX_AREA_RATIO_TOL = 0.25
+MAX_ANGLE_TOLERANCE = 0.15
+MAX_LENGTH_TOLERANCE = 0.15
 
 # Structure parameters
 FILM_INDEX = 1  # SiO2
@@ -55,109 +86,87 @@ INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 5.0  # Angstroms
 ```
 
-### 2.3. Run ZSL Interface Creation
+### 3.2. Create Initial Interface
 
-Run the notebook to create the Si/SiO2 interface. The process will:
-1. Generate possible interfaces with different strains
-2. Plot strain vs. number of atoms
-3. Select the optimal interface configuration
+Run the notebook to create the Si/SiO2 interface. This is the most critical interface, so we use strain matching to optimize it.
 
-![Strain Plot](/images/tutorials/materials/interfaces/highk_metal_gate/strain-plot.webp "Strain vs Atoms Plot")
+## 4. Add HfO2 Layer
 
-## 3. Add HfO2 Layer
+### 4.1. Configure Simple Interface Builder
 
-### 3.1. Launch Second JupyterLite Session
-
-Open the `create_interface_with_no_strain.ipynb` notebook for adding the HfO2 layer.
-
-### 3.2. Configure Simple Interface Parameters
-
-Set the parameters for adding HfO2:
+Open `create_interface_with_no_strain.ipynb` and set:
 
 ```python
-# Enable scaling of film to match substrate
+# Important: Disable slab creation since we're using pre-created slab
 ENABLE_FILM_SCALING = True
-CREATE_SLABS = False
+CREATE_SLABS = False  # We already have our HfO2 slab
 
-FILM_INDEX = 0  # HfO2
-FILM_MILLER_INDICES = (0, 0, 1)
-FILM_THICKNESS = 4
-FILM_VACUUM = 0.5
-FILM_XY_SUPERCELL_MATRIX = [[1, 0], [0, 2]]
+FILM_INDEX = 0  # Pre-created HfO2 slab
+SUBSTRATE_INDEX = 1  # Si/SiO2 structure
 
-SUBSTRATE_INDEX = 1  # Previous Si/SiO2 structure
-SUBSTRATE_MILLER_INDICES = (0, 0, 1)
-SUBSTRATE_THICKNESS = 1  # Use full previous structure
-SUBSTRATE_VACUUM = 0.5
-
+# Interface parameters
 INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 0.5  # Angstroms
 ```
 
-### 3.3. Add HfO2 Layer
+### 4.2. Add HfO2
 
-Run the notebook to add the HfO2 layer. The simple interface builder will:
-1. Scale the HfO2 layer to match the substrate
-2. Position it at the specified distance
-3. Create the three-layer structure
+Run the notebook to add the pre-created HfO2 slab to the Si/SiO2 structure.
 
-## 4. Add TiN Layer
+## 5. Add TiN Layer
 
-### 4.1. Configure TiN Layer Parameters
+### 5.1. Configure Final Layer Addition
 
-In the same notebook or a new instance, set parameters for adding TiN:
+Use `create_interface_with_no_strain.ipynb` again:
 
 ```python
-FILM_INDEX = 1  # TiN
-FILM_MILLER_INDICES = (0, 0, 1)
-FILM_THICKNESS = 3
-FILM_VACUUM = 10.0  # Final vacuum layer
-FILM_USE_ORTHOGONAL_Z = True
+# Keep slabs disabled
+ENABLE_FILM_SCALING = True
+CREATE_SLABS = False  # Using pre-created TiN slab
 
-SUBSTRATE_INDEX = 0  # Previous Si/SiO2/HfO2 structure
-SUBSTRATE_MILLER_INDICES = (0, 0, 1)
-SUBSTRATE_THICKNESS = 1
-SUBSTRATE_VACUUM = 0.0
+FILM_INDEX = 1  # Pre-created TiN slab
+SUBSTRATE_INDEX = 0  # Si/SiO2/HfO2 structure
 
+# Final interface parameters
 INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 10.0  # Final vacuum spacing
 ```
 
-### 4.2. Complete the Stack
+### 5.2. Complete the Stack
 
-Run the notebook one final time to add the TiN layer and complete the stack.
+Run the notebook to add the TiN layer and complete the stack.
 
-## 5. Final Structure
+## 6. Analysis and Verification
 
-The final high-k metal gate stack should show:
-1. Crystalline Si substrate
-2. Well-matched Si/SiO2 interface
-3. HfO2 high-k dielectric layer
-4. TiN metal gate layer
-5. Appropriate vacuum spacing
+The final structure should show:
+1. Well-matched Si/SiO2 interface (from ZSL matching)
+2. Proper HfO2 slab orientation and termination
+3. Correct TiN slab placement and vacuum spacing
 
-![Final Stack](/images/tutorials/materials/interfaces/highk_metal_gate/final-stack.webp "Complete High-k Metal Gate Stack")
+Key characteristics to verify:
+- Interface distances between layers
+- Layer thicknesses
+- Surface terminations
+- Vacuum spacing
 
 ## Important Notes
 
-1. The Si/SiO2 interface is created using strain matching because it's the most critical interface for device performance
-2. Subsequent layers use simple interface builder to maintain the established structure
-3. Vacuum spacing is important between layers and at the top of the structure
-4. Miller indices and thicknesses can be adjusted based on specific requirements
-5. The final structure can be saved or exported for further analysis
+1. Creating slabs separately ensures proper terminations and orientations
+2. Setting `CREATE_SLABS = False` tells the interface builder to use pre-created slabs
+3. The Si/SiO2 interface uses strain matching for optimal contact
+4. Subsequent layers use simple interface builder to maintain structure
+5. Vacuum spacing is critical, especially for the final TiN layer
 
 ## References
 
 1. **D. A. Muller et al.**
     "The electronic structure at the atomic scale of ultrathin gate oxides"
     Nature 399, 758–761 (1999)
-    [DOI: 10.1038/21602](https://doi.org/10.1038/21602)
 
 2. **J. Robertson**
     "High dielectric constant gate oxides for metal oxide Si transistors"
     Reports on Progress in Physics 69, 327 (2006)
-    [DOI: 10.1088/0034-4885/69/2/R02](https://doi.org/10.1088/0034-4885/69/2/R02)
 
 ## Tags
 
-`interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`
+`slab-creation`, `interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`
