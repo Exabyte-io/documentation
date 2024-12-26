@@ -165,6 +165,19 @@ Run the notebook to add the TiN layer and complete the stack.
 
 ![Final Stack](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2-tin.webp "Final Stack")
 
+The user then can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
+
+## Interactive JupyterLite Notebook
+
+The following JupyterLite notebook demonstrates the process of creating material with island. Select "Run" > "Run All Cells".
+
+{% with origin_url=config.extra.jupyterlite.origin_url %}
+{% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
+{% with notebook_name='specific_examples/heterostructure_high_k_metal_gate_stack.ipynb' %}
+{% include 'jupyterlite_embed.html' %}
+{% endwith %}
+{% endwith %}
+{% endwith %}
 
 ## References
 
