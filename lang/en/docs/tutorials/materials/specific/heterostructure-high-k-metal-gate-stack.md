@@ -17,11 +17,15 @@ First, navigate to Materials Designer and import from [Standata](../../../materi
 - Hafnium dioxide (HfO2)
 - Titanium nitride (TiN)
 
+![Standata Import](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/import-standata.png "Standata Import")
+
 ## 2. Create HfO2 and TiN Slabs
 
 Before building the stack, we need to create properly terminated slabs for HfO2 and TiN.
 
 ### 2.1. Create HfO2 Slab
+
+More detailed instructions on slab creation can be found in the [SrTiO3 Slab](slab-strontium-titanate.md) tutorial.
 
 Open `create_slab_with_termination.ipynb` and set parameters:
 
@@ -40,7 +44,7 @@ TERMINATION_INDEX = 0
 
 Run the notebook to create the HfO2 slab and pass it to Materials Designer.
 
-![HfO2 slab](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-hfo2-slab-wave.png "HfO2 slab")
+![HfO2 slab](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-hfo2-slab-wave.png "HfO2 slab")
 
 ### 2.2. Create TiN Slab
 
@@ -60,7 +64,7 @@ TERMINATION_INDEX = 0
 
 Run the notebook to create and pass the TiN slab to Materials Designer.
 
-![TiN slab](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-tin-slab.png "TiN slab")
+![TiN slab](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-tin-slab.png "TiN slab")
 
 ## 3. Create Si/SiO2 Interface
 
@@ -69,13 +73,11 @@ Run the notebook to create and pass the TiN slab to Materials Designer.
 Open `create_interface_with_min_strain_zsl.ipynb` and configure:
 
 ```python
-# Global parameters
 MAX_AREA = 200  # Maximum area for strain matching
 MAX_AREA_RATIO_TOLERANCE = 0.25  # Maximum area ratio tolerance
 MAX_ANGLE_TOLERANCE = 0.15  # Maximum angle tolerance
 MAX_LENGTH_TOLERANCE = 0.15  # Maximum length tolerance
 
-# Structure parameters
 FILM_INDEX = 1  # SiO2
 FILM_MILLER_INDICES = (1, 0, 0)
 FILM_THICKNESS = 3
@@ -97,7 +99,7 @@ TERMINATION_PAIR_INDEX = 0
 
 We set a higher tolerances to achieve smaller cell with higher strain of the film (SiO2).
 
-![Interface Setup](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2.png "Interface Setup")
+![Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2.png "Interface Setup")
 
 ### 3.2. Create Initial Interface
 
@@ -107,6 +109,8 @@ Run the notebook to create the Si/SiO2 interface. This is the most critical inte
 
 ### 4.1. Configure Simple Interface Builder
 
+Open JupyterLite Session again and select the Si/SiO2 interface and HfO2 slab as input materials.
+
 Open `create_interface_with_no_strain.ipynb` and set:
 
 ```python
@@ -114,23 +118,29 @@ Open `create_interface_with_no_strain.ipynb` and set:
 ENABLE_FILM_SCALING = True
 CREATE_SLABS = False  # We already have our HfO2 slab
 
-FILM_INDEX = 0  # Pre-created HfO2 slab
-SUBSTRATE_INDEX = 1  # Si/SiO2 structure
+FILM_INDEX = 1  # Pre-created HfO2 slab
+SUBSTRATE_INDEX = 0  # Si/SiO2 structure
 
 # Interface parameters
 INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 0.5  # Angstroms
 ```
 
+Film is the material that will be strained (scaled) to match the substrate.
+
+![HfO2 Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2-hfo2.png "HfO2 Interface Setup")
+
 ### 4.2. Add HfO2
 
 Run the notebook to add the pre-created HfO2 slab to the Si/SiO2 structure.
 
-![Si/SiO2/HfO2](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2.png "Si/SiO2/HfO2")
+![Si/SiO2/HfO2](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2.png "Si/SiO2/HfO2")
 
 ## 5. Add TiN Layer
 
 ### 5.1. Configure Final Layer Addition
+
+Similar to steps in Section 4, we add the TiN layer to the Si/SiO2/HfO2 stack.
 
 Use `create_interface_with_no_strain.ipynb` again:
 
@@ -151,7 +161,7 @@ INTERFACE_VACUUM = 10.0  # Final vacuum spacing
 
 Run the notebook to add the TiN layer and complete the stack.
 
-![Final Stack](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2-tin.png "Final Stack")
+![Final Stack](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2-tin.png "Final Stack")
 
 
 ## References
