@@ -17,7 +17,7 @@ First, navigate to Materials Designer and import from [Standata](../../../materi
 - Hafnium dioxide (HfO2)
 - Titanium nitride (TiN)
 
-![Standata Import](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/import-standata.png "Standata Import")
+![Standata Import](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/import-standata.webp "Standata Import")
 
 ## 2. Create HfO2 and TiN Slabs
 
@@ -44,7 +44,7 @@ TERMINATION_INDEX = 0
 
 Run the notebook to create the HfO2 slab and pass it to Materials Designer.
 
-![HfO2 slab](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-hfo2-slab-wave.png "HfO2 slab")
+![HfO2 slab](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-hfo2-slab-wave.webp "HfO2 slab")
 
 ### 2.2. Create TiN Slab
 
@@ -64,7 +64,7 @@ TERMINATION_INDEX = 0
 
 Run the notebook to create and pass the TiN slab to Materials Designer.
 
-![TiN slab](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-tin-slab.png "TiN slab")
+![TiN slab](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-tin-slab.webp "TiN slab")
 
 ## 3. Create Si/SiO2 Interface
 
@@ -99,7 +99,7 @@ TERMINATION_PAIR_INDEX = 0
 
 We set a higher tolerances to achieve smaller cell with higher strain of the film (SiO2).
 
-![Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2.png "Interface Setup")
+![Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2.webp "Interface Setup")
 
 ### 3.2. Create Initial Interface
 
@@ -128,13 +128,13 @@ INTERFACE_VACUUM = 0.5  # Angstroms
 
 Film is the material that will be strained (scaled) to match the substrate.
 
-![HfO2 Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2-hfo2.png "HfO2 Interface Setup")
+![HfO2 Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2-hfo2.webp "HfO2 Interface Setup")
 
 ### 4.2. Add HfO2
 
 Run the notebook to add the pre-created HfO2 slab to the Si/SiO2 structure.
 
-![Si/SiO2/HfO2](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2.png "Si/SiO2/HfO2")
+![Si/SiO2/HfO2](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2.webp "Si/SiO2/HfO2")
 
 ## 5. Add TiN Layer
 
@@ -161,7 +161,7 @@ INTERFACE_VACUUM = 10.0  # Final vacuum spacing
 
 Run the notebook to add the TiN layer and complete the stack.
 
-![Final Stack](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2-tin.png "Final Stack")
+![Final Stack](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2-tin.webp "Final Stack")
 
 
 ## References
