@@ -7,9 +7,11 @@ This tutorial demonstrates how to create a high-k metal gate stack heterostructu
 2. Building the Si/SiO2 interface using strain matching
 3. Adding the pre-created slabs sequentially using simple interface builder
 
+We use the [Materials Designer](../../../materials-designer/overview.md) to create the high-k metal gate stack.
+
 ## 1. Set Up Materials
 
-First, navigate to Materials Designer and import from Standata:
+First, navigate to Materials Designer and import from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) the following materials:
 - Silicon (Si)
 - Silicon dioxide (SiO2)
 - Hafnium dioxide (HfO2)
@@ -36,7 +38,9 @@ USE_CONVENTIONAL_CELL = True
 TERMINATION_INDEX = 0
 ```
 
-Run the notebook to create and save the HfO2 slab.
+Run the notebook to create the HfO2 slab and pass it to Materials Designer.
+
+![HfO2 slab](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-hfo2-slab-wave.png "HfO2 slab")
 
 ### 2.2. Create TiN Slab
 
@@ -54,7 +58,9 @@ USE_CONVENTIONAL_CELL = True
 TERMINATION_INDEX = 0
 ```
 
-Run the notebook to create and save the TiN slab.
+Run the notebook to create and pass the TiN slab to Materials Designer.
+
+![TiN slab](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-tin-slab.png "TiN slab")
 
 ## 3. Create Si/SiO2 Interface
 
@@ -65,26 +71,33 @@ Open `create_interface_with_min_strain_zsl.ipynb` and configure:
 ```python
 # Global parameters
 MAX_AREA = 200  # Maximum area for strain matching
-MAX_AREA_RATIO_TOL = 0.25
-MAX_ANGLE_TOLERANCE = 0.15
-MAX_LENGTH_TOLERANCE = 0.15
+MAX_AREA_RATIO_TOLERANCE = 0.25  # Maximum area ratio tolerance
+MAX_ANGLE_TOLERANCE = 0.15  # Maximum angle tolerance
+MAX_LENGTH_TOLERANCE = 0.15  # Maximum length tolerance
 
 # Structure parameters
 FILM_INDEX = 1  # SiO2
 FILM_MILLER_INDICES = (1, 0, 0)
 FILM_THICKNESS = 3
+FILM_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
 FILM_VACUUM = 0.0
 FILM_USE_ORTHOGONAL_Z = True
 
 SUBSTRATE_INDEX = 0  # Si
 SUBSTRATE_MILLER_INDICES = (1, 0, 0)
 SUBSTRATE_THICKNESS = 4
+SUBSTRATE_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
 SUBSTRATE_VACUUM = 5.0
 SUBSTRATE_USE_ORTHOGONAL_Z = True
 
 INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 5.0  # Angstroms
+TERMINATION_PAIR_INDEX = 0
 ```
+
+We set a higher tolerances to achieve smaller cell with higher strain of the film (SiO2).
+
+![Interface Setup](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/jl-setup-notebook-si-sio2.png "Interface Setup")
 
 ### 3.2. Create Initial Interface
 
@@ -113,6 +126,8 @@ INTERFACE_VACUUM = 0.5  # Angstroms
 
 Run the notebook to add the pre-created HfO2 slab to the Si/SiO2 structure.
 
+![Si/SiO2/HfO2](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2.png "Si/SiO2/HfO2")
+
 ## 5. Add TiN Layer
 
 ### 5.1. Configure Final Layer Addition
@@ -136,36 +151,20 @@ INTERFACE_VACUUM = 10.0  # Final vacuum spacing
 
 Run the notebook to add the TiN layer and complete the stack.
 
-## 6. Analysis and Verification
+![Final Stack](/images/tutorials/materials/specific/heterostructure-high-k-metal-gate-stack/wave-result-si-sio2-hfo2-tin.png "Final Stack")
 
-The final structure should show:
-1. Well-matched Si/SiO2 interface (from ZSL matching)
-2. Proper HfO2 slab orientation and termination
-3. Correct TiN slab placement and vacuum spacing
-
-Key characteristics to verify:
-- Interface distances between layers
-- Layer thicknesses
-- Surface terminations
-- Vacuum spacing
-
-## Important Notes
-
-1. Creating slabs separately ensures proper terminations and orientations
-2. Setting `CREATE_SLABS = False` tells the interface builder to use pre-created slabs
-3. The Si/SiO2 interface uses strain matching for optimal contact
-4. Subsequent layers use simple interface builder to maintain structure
-5. Vacuum spacing is critical, especially for the final TiN layer
 
 ## References
 
 1. **D. A. Muller et al.**
     "The electronic structure at the atomic scale of ultrathin gate oxides"
     Nature 399, 758–761 (1999)
+    [DOI: 10.1038/21602](https://doi.org/10.1038/21602)
 
 2. **J. Robertson**
     "High dielectric constant gate oxides for metal oxide Si transistors"
     Reports on Progress in Physics 69, 327 (2006)
+    [DOI: 10.1088/0034-4885/69/2/R02](https://doi.org/10.1088/0034-4885/69/2/R02)
 
 ## Tags
 
