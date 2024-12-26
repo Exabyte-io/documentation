@@ -7,7 +7,9 @@ This tutorial demonstrates how to create a high-k metal gate stack heterostructu
 2. Building the Si/SiO2 interface using strain matching
 3. Adding the pre-created slabs sequentially using simple interface builder
 
-We use the [Materials Designer](../../../materials-designer/overview.md) to create the high-k metal gate stack.
+We use the [Materials Designer](../../../materials-designer/overview.md) to create the high-k metal gate stack as shown in the figure below.
+
+![High-k Metal Gate Stack](/images/tutorials/materials/heterostructures/heterostructure-high-k-metal-gate-stack/original-figure.webp "High-k Metal Gate Stack")
 
 ## 1. Set Up Materials
 
