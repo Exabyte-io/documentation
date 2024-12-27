@@ -8,6 +8,7 @@ render_macros: true
 ## Introduction
 
 This tutorial demonstrates how to create a high-k metal gate stack heterostructure consisting of four materials: Si (substrate), SiO2 (gate oxide), HfO2 (high-k dielectric), and TiN (metal gate). The process involves:
+
 1. Creating individual slabs for HfO2 and TiN
 2. Building the Si/SiO2 interface using strain matching
 3. Adding the pre-created slabs sequentially using simple interface builder
@@ -175,7 +176,7 @@ The user then can [save or download](../../../materials-designer/header-menu/inp
 
 ## Interactive JupyterLite Notebook
 
-The following JupyterLite notebook demonstrates the process of creating material with island. Select "Run" > "Run All Cells".
+The following JupyterLite notebook demonstrates the process of creating target material. Select "Run" > "Run All Cells".
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
@@ -201,4 +202,5 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## Tags
 
-`slab-creation`, `interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`
+`slab-creation`, `interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`, `Si`, `SiO2`, `HfO2`, `TiN`
+```
