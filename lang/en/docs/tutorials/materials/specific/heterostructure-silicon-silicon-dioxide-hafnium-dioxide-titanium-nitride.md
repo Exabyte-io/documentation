@@ -203,4 +203,3 @@ The following JupyterLite notebook demonstrates the process of creating target m
 ## Tags
 
 `slab-creation`, `interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`, `Si`, `SiO2`, `HfO2`, `TiN`
-```
