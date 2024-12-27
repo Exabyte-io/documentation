@@ -1,3 +1,8 @@
+---
+# YAML header
+render_macros: true
+---
+
 # Creating High-k Metal Gate Stack: Si/SiO2/HfO2/TiN
 
 ## Introduction
@@ -14,6 +19,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 ## 1. Set Up Materials
 
 First, navigate to Materials Designer and import from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) the following materials:
+
 - Silicon (Si)
 - Silicon dioxide (SiO2)
 - Hafnium dioxide (HfO2)
@@ -181,12 +187,14 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## References
 
-1. **D. A. Muller et al.**
+1. [QuantumATK tutorial](https://docs.quantumatk.com/tutorials/hkmg_builder/hkmg_builder.html)
+
+2. **D. A. Muller et al.**
     "The electronic structure at the atomic scale of ultrathin gate oxides"
     Nature 399, 758–761 (1999)
     [DOI: 10.1038/21602](https://doi.org/10.1038/21602)
 
-2. **J. Robertson**
+3. **J. Robertson**
     "High dielectric constant gate oxides for metal oxide Si transistors"
     Reports on Progress in Physics 69, 327 (2006)
     [DOI: 10.1088/0034-4885/69/2/R02](https://doi.org/10.1088/0034-4885/69/2/R02)
