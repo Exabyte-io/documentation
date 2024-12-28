@@ -20,7 +20,7 @@ We will focus on creating a structure similar to Figure 1 from the manuscript, w
 
 ## 1. Import Base Material
 
-First, we need to import the hexagonal boron nitride (hBN) material from the Standata database.
+First, we need to import the hexagonal boron nitride (hBN) material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) database.
 
 ### 1.1. Open Materials Designer
 
@@ -29,17 +29,10 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and cl
 ### 1.2. Import from Standata
 
 1. Select "Import from Standata" in the Input/Output menu
-2. In the search box, enter "Boron_Nitride"
-3. Select the 2D category
+2. In the search box, enter "Boron Nitride"
 4. Click on the hBN material to import it
 
-![Standata hBN Import](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/1-standata-hbn.webp "Standata hBN Import")
-
-### 1.3. Preview the Material
-
-After importing, user can preview the material in the 3D editor:
-
-![3D Preview of hBN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/2-3d-preview.webp "3D Preview of hBN")
+![Standata hBN Import](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata hBN Import")
 
 ## 2. Create hBN Nanoribbon
 
@@ -58,10 +51,12 @@ Find and open `create_nanoribbon.ipynb` in the list of notebooks. Edit the nanor
 ```python
 WIDTH = 8  # in number of atoms
 LENGTH = 14  # in number of atoms
-VACUUM_WIDTH = 0 
-VACUUM_LENGTH = 0
+VACUUM_WIDTH = 0  # in number of atoms
+VACUUM_LENGTH = 0 # in number of atoms
 EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 ```
+
+![Nanoribbon Parameters](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/2-jl-nb-setup-nanoribbon.webp "Nanoribbon Parameters")
 
 ### 2.3. Run the Notebook
 
@@ -75,7 +70,7 @@ After the notebook completes:
 2. User can view the structure in the 3D editor
 3. Verify the nanoribbon dimensions and edge type
 
-![Nanoribbon Preview](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/3-nanoribbon-preview.webp "Nanoribbon Preview")
+![Nanoribbon Preview](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/3-wave-preview-nanoribbon.webp "Nanoribbon Preview")
 
 
 ## 3. Create the Vacancy Defect
@@ -87,6 +82,7 @@ After creating the nanoribbon, we'll introduce the vacancy defect using the poin
 Open `create_point_defect.ipynb` and modify the defect configuration parameters:
 
 ```python
+SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 DEFECT_CONFIGS = [
     {
         "defect_type": "vacancy",
@@ -102,16 +98,20 @@ The configuration specifies:
 - `approximate_coordinate`: Position in crystal coordinates where the vacancy will be created
 - `use_cartesian_coordinates`: False to use fractional coordinates
 
+![Point Defect Parameters](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/4-jl-nb-setup-point-defect.webp "Point Defect Parameters")
+
 ### 3.2. Run the Notebook
 
 Click `Run` > `Run All` in the top menu for each notebook and wait for the results.
 
-## 4. Save the Material
+![Review the Results](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/5-jl-result-preview.webp "Review the Results")
 
+## 4. Save the Material
 
 After running both notebooks, user can visualize the structure of hBN with the vacancy defect in the Materials Designer 3D viewer.
 
-![Review the Results](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/1-result-preview.webp "Review the Results")
+![Vacancy in hBN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/6-wave-result.webp "Vacancy in hBN")
+
 
 [Save or download](../../../materials-designer/header-menu/input-output.md) in Material JSON format
 
