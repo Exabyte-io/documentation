@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Vacancy Point Defects in Hexagonal Boron Nitride
+# Vacancy Point Defects in Hexagonal Boron Nitride.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates the process of creating materials with vacancy point defects, based on the work presented in the following manuscript:
 
@@ -14,19 +14,19 @@ This tutorial demonstrates the process of creating materials with vacancy point 
 
 We use the [Materials Designer](../../../materials-designer/overview.md) and JupyterLite environment to create a nanoribbon of hexagonal boron nitride (hBN) and introduce vacancy defects. The process combines the capabilities of nanoribbon creation and point defect introduction.
 
-We will focus on creating a structure similar to Figure 1 from the manuscript, which demonstrates boron vacancy defects in hexagonal boron nitride:
+We will focus on creating a structure similar to Figure 6 from the manuscript, which demonstrates boron vacancy defects in hexagonal boron nitride:
 
 ![Vacancy in hBN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in hBN")
 
-## 1. Import Base Material
+## 1. Import Base Material.
 
 First, we need to import the hexagonal boron nitride (hBN) material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) database.
 
-### 1.1. Open Materials Designer
+### 1.1. Open Materials Designer.
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and click on the "Input/Output" menu.
 
-### 1.2. Import from Standata
+### 1.2. Import from Standata.
 
 1. Select "Import from Standata" in the Input/Output menu
 2. In the search box, enter "Boron Nitride"
@@ -34,17 +34,17 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and cl
 
 ![Standata hBN Import](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata hBN Import")
 
-## 2. Create hBN Nanoribbon
+## 2. Create hBN Nanoribbon.
 
 Next, we'll create a nanoribbon structure using the JupyterLite environment.
 
-### 2.1. Launch JupyterLite Session
+### 2.1. Launch JupyterLite Session.
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
 ![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 2.2. Open and Configure Nanoribbon Notebook
+### 2.2. Open and Configure Nanoribbon Notebook.
 
 Find and open `create_nanoribbon.ipynb` in the list of notebooks. Edit the nanoribbon parameters in section 1.1 of the notebook:
 
@@ -58,11 +58,11 @@ EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 
 ![Nanoribbon Parameters](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/2-jl-nb-setup-nanoribbon.webp "Nanoribbon Parameters")
 
-### 2.3. Run the Notebook
+### 2.3. Run the Notebook.
 
 Run the notebook by clicking `Run` > `Run All` in the top menu. This will create a nanoribbon structure from the imported hBN material.
 
-### 2.4. Review Nanoribbon in Materials Designer
+### 2.4. Review Nanoribbon in Materials Designer.
 
 After the notebook completes:
 
@@ -73,11 +73,11 @@ After the notebook completes:
 ![Nanoribbon Preview](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/3-wave-preview-nanoribbon.webp "Nanoribbon Preview")
 
 
-## 3. Create the Vacancy Defect
+## 3. Create the Vacancy Defect.
 
 After creating the nanoribbon, we'll introduce the vacancy defect using the point defect notebook.
 
-### 3.1. Open Point Defect Notebook
+### 3.1. Open Point Defect Notebook.
 
 Open `create_point_defect.ipynb` and modify the defect configuration parameters:
 
@@ -100,13 +100,13 @@ The configuration specifies:
 
 ![Point Defect Parameters](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/4-jl-nb-setup-point-defect.webp "Point Defect Parameters")
 
-### 3.2. Run the Notebook
+### 3.2. Run the Notebook.
 
-Click `Run` > `Run All` in the top menu for each notebook and wait for the results.
+Click `Run` > `Run All` in the top menu to run the notebook and preview the results.
 
 ![Review the Results](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/5-jl-result-preview.webp "Review the Results")
 
-## 4. Save the Material
+## 4. Save the Material.
 
 After running both notebooks, user can visualize the structure of hBN with the vacancy defect in the Materials Designer 3D viewer.
 
@@ -115,7 +115,7 @@ After running both notebooks, user can visualize the structure of hBN with the v
 
 [Save or download](../../../materials-designer/header-menu/input-output.md) in Material JSON format
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following JupyterLite notebooks demonstrate the complete process. Select "Run" > "Run All Cells".
 
@@ -127,10 +127,12 @@ The following JupyterLite notebooks demonstrate the complete process. Select "Ru
 {% endwith %}
 {% endwith %}
 
-## References
+## References.
 
 1. Fabian Bertoldo, Sajid Ali, Simone Manti & Kristian S. Thygesen, "Quantum point defects in 2D materials - the QPOD database", Nature, 2022. [DOI:10.1038/s41524-022-00730-w](https://doi.org/10.1038/s41524-022-00730-w){:target='_blank'}.
 
-## Tags
+2. Kohan A. F., Ceder G., Morgan D., Van de Walle C. G. (2000). First-principles study of native point defects in h-BN. Physical Review B, 61(23), 15019-15027. [DOI:10.1103/PhysRevB.61.15019](https://doi.org/10.1103/PhysRevB.61.15019){:target='_blank'}.
+
+## Tags.
 
 `defects`, `vacancy`, `point-defects`, `hBN`, `boron-nitride`, `2D-materials`
