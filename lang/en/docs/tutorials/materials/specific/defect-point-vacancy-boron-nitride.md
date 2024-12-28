@@ -12,15 +12,15 @@ This tutorial demonstrates the process of creating materials with vacancy point 
 !!!note "Manuscript"
     Fabian Bertoldo, Sajid Ali, Simone Manti & Kristian S. Thygesen, "Quantum point defects in 2D materials - the QPOD database", Nature, 2022. [DOI:10.1038/s41524-022-00730-w](https://doi.org/10.1038/s41524-022-00730-w){:target='_blank'}.
 
-We use the [Materials Designer](../../../materials-designer/overview.md) and JupyterLite environment to create a nanoribbon of hexagonal boron nitride (hBN) and introduce vacancy defects. The process combines the capabilities of nanoribbon creation and point defect introduction.
+We use the [Materials Designer](../../../materials-designer/overview.md) and JupyterLite environment to create a nanoribbon of hexagonal boron nitride (h-BN) and introduce vacancy defects. The process combines the capabilities of nanoribbon creation and point defect introduction.
 
 We will focus on creating a structure similar to Figure 6 from the manuscript, which demonstrates boron vacancy defects in hexagonal boron nitride:
 
-![Vacancy in hBN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in hBN")
+![Vacancy in h-BN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in h-BN")
 
 ## 1. Import Base Material.
 
-First, we need to import the hexagonal boron nitride (hBN) material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) database.
+First, we need to import the hexagonal boron nitride (h-BN) material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) database.
 
 ### 1.1. Open Materials Designer.
 
@@ -30,11 +30,11 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and cl
 
 1. Select "Import from Standata" in the Input/Output menu
 2. In the search box, enter "Boron Nitride"
-4. Click on the hBN material to import it
+4. Click on the h-BN material to import it
 
-![Standata hBN Import](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata hBN Import")
+![Standata h-BN Import](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata h-BN Import")
 
-## 2. Create hBN Nanoribbon.
+## 2. Create h-BN Nanoribbon.
 
 Next, we'll create a nanoribbon structure using the JupyterLite environment.
 
@@ -49,10 +49,10 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 Find and open `create_nanoribbon.ipynb` in the list of notebooks. Edit the nanoribbon parameters in section 1.1 of the notebook:
 
 ```python
-WIDTH = 8  # in number of atoms
-LENGTH = 14  # in number of atoms
-VACUUM_WIDTH = 0  # in number of atoms
-VACUUM_LENGTH = 0 # in number of atoms
+WIDTH = 3  # in number of unit cells
+LENGTH = 6  # in number of unit cells
+VACUUM_WIDTH = 0  # in number of unit cells
+VACUUM_LENGTH = 0 # in number of unit cells
 EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 ```
 
@@ -60,7 +60,7 @@ EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 
 ### 2.3. Run the Notebook.
 
-Run the notebook by clicking `Run` > `Run All` in the top menu. This will create a nanoribbon structure from the imported hBN material.
+Run the notebook by clicking `Run` > `Run All` in the top menu. This will create a nanoribbon structure from the imported h-BN material.
 
 ### 2.4. Review Nanoribbon in Materials Designer.
 
@@ -108,9 +108,9 @@ Click `Run` > `Run All` in the top menu to run the notebook and preview the resu
 
 ## 4. Save the Material.
 
-After running both notebooks, user can visualize the structure of hBN with the vacancy defect in the Materials Designer 3D viewer.
+After running both notebooks, user can visualize the structure of h-BN with the vacancy defect in the Materials Designer 3D viewer.
 
-![Vacancy in hBN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/6-wave-result.webp "Vacancy in hBN")
+![Vacancy in h-BN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/6-wave-result.webp "Vacancy in h-BN")
 
 
 [Save or download](../../../materials-designer/header-menu/input-output.md) in Material JSON format
@@ -135,4 +135,4 @@ The following JupyterLite notebooks demonstrate the complete process. Select "Ru
 
 ## Tags.
 
-`defects`, `vacancy`, `point-defects`, `hBN`, `boron-nitride`, `2D-materials`
+`defects`, `vacancy`, `point-defects`, `h-BN`, `boron-nitride`, `2D-materials`
