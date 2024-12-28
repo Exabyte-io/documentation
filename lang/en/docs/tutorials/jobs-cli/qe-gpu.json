@@ -30,15 +30,145 @@
             "endTime": "00:00:14.000"
         },
         {
-            "text": "At the moment, GPU build of Quantum ESPRESSO is only available via our command line interface, and soon it will be available in the web interface.",
+            "text": "We will see how we can dramatically improve the performance of our simulation using GPUs.",
             "startTime": "00:00:15.000",
-            "endTime": "00:00:24.000"
+            "endTime": "00:00:20.000"
+        },
+        {
+            "text": "At the moment, GPU build of Quantum ESPRESSO is only available via our command line interface, and soon it will be made available in the web interface.",
+            "startTime": "00:00:21.000",
+            "endTime": "00:00:30.000"
         },
         {
             "text": "Let's connect to the login node using SSH.",
-            "startTime": "00:00:25.000",
-            "endTime": "00:00:14.000"
+            "startTime": "00:00:31.000",
+            "endTime": "00:00:34.000"
+        },
+        {
+            "text": "You can use your terminal application and type S S H, your username at login dot matera dot com and press enter.",
+            "startTime": "00:00:35.000",
+            "endTime": "00:00:41.000"
+        },
+        {
+            "text": "If you need help on how to set up S S H, please visit our documentation site at docs dot matera dot com, and search S S H.",
+            "startTime": "00:00:42.000",
+            "endTime": "00:00:51.000"
+        },
+        {
+            "text": "Here you will find step by step guide to setup S S H key for seamless authentication.",
+            "startTime": "00:00:52.000",
+            "endTime": "00:00:57.000"
+        },
+        {
+            "text": "Note that it is also possible to connect to the login node from our web platform using the web terminal.",
+            "startTime": "00:00:58.000",
+            "endTime": "00:01:04.000"
+        },
+        {
+            "text": "Besides, <break time='0.5'/> it is also possible to run a command line job via bash workflow in our web platform.",
+            "startTime": "00:01:05.000",
+            "endTime": "00:01:12.000"
+        },
+        {
+            "text": "Create a new workflow. Select shell script as application.",
+            "startTime": "00:01:13.000",
+            "endTime": "00:01:16.000"
+        },
+        {
+            "text": "Add an execution unit and write your job script.",
+            "startTime": "00:01:17.000",
+            "endTime": "00:01:20.000"
+        },
+        {
+            "text": "For now, let's focus on the command line part.",
+            "startTime": "00:01:22.000",
+            "endTime": "00:01:24.000"
+        },
+        {
+            "text": "The example calculation we are going to demonstrate is available in our github repository C L I job examples.",
+            "startTime": "00:01:25.000",
+            "endTime": "00:01:33.000"
+        },
+        {
+            "text": "Please browse under espresso, then gpu, where you will find required input and reference output files.",
+            "startTime": "00:01:34.000",
+            "endTime": "00:01:39.000"
+        },
+        {
+            "text": "Once connected to the login node, let's navigate to your working directory, and clone our example repository.",
+            "startTime": "00:01:40.000",
+            "endTime": "00:01:47.000"
+        },
+        {
+            "text": "After cloning the repository, we also need to sync the L F S objects with git L F S pull.",
+            "startTime": "00:01:50.000",
+            "endTime": "00:01:56.000"
+        },
+        {
+            "text": "Let's navigate to our GPU example.",
+            "startTime": "00:01:57.000",
+            "endTime": "00:02:00.000"
+        },
+        {
+            "text": "Let's examine the P B S job script.",
+            "startTime": "00:02:03.000",
+            "endTime": "00:02:05.000"
+        },
+        {
+            "text": "We will run our job in GPU enabled G O F queue, we will request one node which has eight CPUs.",
+            "startTime": "00:02:07.000",
+            "endTime": "00:02:13.000"
+        },
+        {
+            "text": "To run quantum espresso jobs in GPUs, we need to load the CUDA build of quantum espresso.",
+            "startTime": "00:02:14.000",
+            "endTime": "00:02:19.000"
+        },
+        {
+            "text": "We set eight open M P threads and 1 M P I per GPU.",
+            "startTime": "00:02:20.000",
+            "endTime": "00:02:24.000"
+        },
+        {
+            "text": "We can also set parallelization options for k point and matrix diagonalization.",
+            "startTime": "00:02:25.000",
+            "endTime": "00:02:30.000"
+        },
+        {
+            "text": "Finally, we can submit our job with Q sub command. We can find the status of job with Q stat.",
+            "startTime": "00:02:31.000",
+            "endTime": "00:02:37.000"
+        },
+        {
+            "text": "Once the job is completed, we can examine the output file.",
+            "startTime": "00:02:38.000",
+            "endTime": "00:02:41.000"
+        },
+        {
+            "text": "We will see that the GPU acceleration was enabled for the calculation.",
+            "startTime": "00:02:44.000",
+            "endTime": "00:02:49.000"
+        },
+        {
+            "text": "If we scroll to the bottom of the file, we will see the total time taken by the program. The wall time for this job was slightly less than a minute.",
+            "startTime": "00:02:50.000",
+            "endTime": "00:02:58.000"
+        },
+        {
+            "text": "For comparison, we ran the same job using eight CPUs but without GPU acceleration, <break time='0.5'/> it took about 20 times longer.",
+            "startTime": "00:03:02.000",
+            "endTime": "00:03:10.000"
+        },
+        {
+            "text": "Now you may test different combination of M P I and open M P threads, different parallelization option, and see what gives you the best performance.",
+            "startTime": "00:03:11.000",
+            "endTime": "00:03:20.000"
+        },
+        {
+            "text": "Thank you for watching this tutorial and using our platform.",
+            "startTime": "00:03:21.000",
+            "endTime": "00:03:24.000"
         }
     ],
-    "youTubeId": ""
+    "youTubeId": "trLDEwWc3ho"
 }
