@@ -33,13 +33,15 @@ First, we need to import the platinum material from Standata:
 3. Select "Import from Standata"
 4. Search for "Pt" and select the bulk platinum material
 
+![Standata Import](/images/tutorials/materials/defects/defect_surface_step_platinum/0-standata-import-platinum.webp "Standata Import")
+
 ### 1.2. Launch JupyterLite Environment
 
 Select "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" to open JupyterLite.
 
 ### 1.3. Configure Slab Parameters
 
-Open a new notebook and set up the slab parameters:
+Open a `create_slab.ipynb` notebook and set up the slab parameters in the "1.1. Set up notebook" cell:
 
 ```python
 MATERIAL_NAME = "Pt"
@@ -58,26 +60,13 @@ These parameters will create a Pt(211) surface with:
 - Orthogonal z-axis
 - Using the conventional unit cell
 
+![Pt(211) Ruface Setup](/images/tutorials/materials/defects/defect_surface_step_platinum/1-jl-setup-nb-surface.webp "Pt(211) Surface Setup")
+
 ### 1.4. Create the Slab
 
-Use the following code to create the Pt(211) slab:
+Run the notebook by clicking `Run` > `Run All` in the top menu. The notebook will generate the Pt(211) surface.
 
-```python
-from mat3ra.made.tools.build.slab import SlabConfiguration, create_slab, get_terminations
-
-slab_configuration = SlabConfiguration(
-    bulk=material,
-    miller_indices=MILLER_INDICES,
-    thickness=THICKNESS,
-    vacuum=VACUUM,
-    xy_supercell_matrix=XY_SUPERCELL_MATRIX,
-    use_orthogonal_z=USE_ORTHOGONAL_Z,
-    use_conventional_cell=USE_CONVENTIONAL_CELL,
-)
-
-slab_terminations = get_terminations(slab_configuration)
-slab_211 = create_slab(slab_configuration, slab_terminations[0])
-```
+![Pt(211) Surface](/images/tutorials/materials/defects/defect_surface_step_platinum/1-wave-result-pt-surface.webp "Pt(211) Surface")
 
 ## Method 2: Creating Terrace Step on Pt(111)
 
@@ -86,11 +75,26 @@ slab_211 = create_slab(slab_configuration, slab_terminations[0])
 - Customizable terrace height
 - Better for complex step arrangements
 
-### 2.1. Create Pt(111) Surface
+### 2.1. Open Terrace Defect Notebook
 
-First, create a Pt(111) surface with the following parameters:
+First, open `create_terrace_defect.ipynb`and select Pt as the input material.
+
+### 2.2. Configure Terrace Parameters
+
+`CUT_DIRECTION = [0, 1, 1]`  -- Normal vector for cutting plane, which will give a perfect periodic match along x and a match along y after rotation.
+`DEFAULT_SLAB_PARAMETERS["miller_indices"] = (1, 1, 1)`  -- Miller indices for Pt(111) surface
+`DEFAULT_SLAB_PARAMETERS["xy_supercell_matrix"] = [[2, 0], [0, 2]]` -- Supercell matrix for final structure (which will effectively control the size of the terrace)
+
 
 ```python
+MATERIAL_INDEX = 0  # Which material to use from input list
+
+CUT_DIRECTION = [0, 1, 1]  # Normal vector describing a plane that cuts the terrace from added layers (Miller indices)
+PIVOT_COORDINATE = [0.5, 0.5, 0.5]  # Point the cutting plane passes through, in crystal coordinates
+NUMBER_OF_ADDED_LAYERS = 1  # Height of terrace in atomic layers
+USE_CARTESIAN_COORDINATES = False  # Use cartesian instead of crystal coordinates
+ROTATE_TO_MATCH_PBC = True  # Rotate to match periodic boundary conditions
+
 DEFAULT_SLAB_PARAMETERS = {
     "miller_indices": (1, 1, 1),
     "thickness": 6,
@@ -98,39 +102,20 @@ DEFAULT_SLAB_PARAMETERS = {
     "use_orthogonal_z": True,
     "xy_supercell_matrix": [[2, 0], [0, 2]]
 }
+
+SHOW_INTERMEDIATE_STEPS = True
+CELL_REPETITIONS_FOR_VISUALIZATION = [3, 3, 1]  # Structure repeat in view
 ```
 
-### 2.2. Configure Terrace Parameters
-
-Set up the terrace defect configuration:
-
-```python
-CUT_DIRECTION = [0, 1, 1]  # Normal vector for cutting plane
-PIVOT_COORDINATE = [0.5, 0.5, 0.5]  # Point the cutting plane passes through
-NUMBER_OF_ADDED_LAYERS = 1  # Height of terrace
-USE_CARTESIAN_COORDINATES = False
-ROTATE_TO_MATCH_PBC = True  # Rotate to match periodic boundary conditions
-```
+![Terrace Parameters](/images/tutorials/materials/defects/defect_surface_step_platinum/3-jl-nb-setup-terrace.webp "Terrace Parameters")
 
 ### 2.3. Create the Terrace
 
-Use TerraceSlabDefectBuilder to create the step:
+Run the notebook to create the Pt(111) surface with a terrace step.
 
-```python
-from mat3ra.made.tools.build.defect.builders import TerraceSlabDefectConfiguration, TerraceSlabDefectBuilder
+![Pt(111) Surface with Terrace Step](/images/tutorials/materials/defects/defect_surface_step_platinum/4-wave-result-pt-terrace.webp "Pt(111) Surface with Terrace Step")
 
-config = TerraceSlabDefectConfiguration(
-    crystal=slab_111,
-    cut_direction=CUT_DIRECTION,
-    pivot_coordinate=PIVOT_COORDINATE,
-    number_of_added_layers=NUMBER_OF_ADDED_LAYERS,
-    use_cartesian_coordinates=USE_CARTESIAN_COORDINATES,
-    rotate_to_match_pbc=ROTATE_TO_MATCH_PBC
-)
-
-builder = TerraceSlabDefectBuilder()
-terrace_slab = builder.get_material(config)
-```
+The user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
 ## Interactive JupyterLite Notebook
 
