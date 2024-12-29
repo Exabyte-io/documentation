@@ -19,6 +19,11 @@ We will demonstrate two methods:
 
 ## Method 1: Creating Pt(211) Step Surface
 
+- Creates a surface with inherent steps
+- Smaller unit cell
+- Fixed step geometry
+- Good for studying specific crystal faces
+
 ### 1.1. Import Base Material
 
 First, we need to import the platinum material from Standata:
@@ -76,6 +81,11 @@ slab_211 = create_slab(slab_configuration, slab_terminations[0])
 
 ## Method 2: Creating Terrace Step on Pt(111)
 
+- More flexible control over step placement
+- Larger surface area available
+- Customizable terrace height
+- Better for complex step arrangements
+
 ### 2.1. Create Pt(111) Surface
 
 First, create a Pt(111) surface with the following parameters:
@@ -121,22 +131,6 @@ config = TerraceSlabDefectConfiguration(
 builder = TerraceSlabDefectBuilder()
 terrace_slab = builder.get_material(config)
 ```
-
-## Comparing the Methods
-
-### Pt(211) Method
-
-- Creates a surface with inherent steps
-- Smaller unit cell
-- Fixed step geometry
-- Good for studying specific crystal faces
-
-### Terrace Builder Method
-
-- More flexible control over step placement
-- Larger surface area available
-- Customizable terrace height
-- Better for complex step arrangements
 
 ## Interactive JupyterLite Notebook
 
