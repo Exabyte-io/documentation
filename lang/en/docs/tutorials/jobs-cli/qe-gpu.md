@@ -6,13 +6,19 @@ only available via the Command Line Interface (CLI). We will see that we can
 dramatically speedup our Quantum ESPRESSO simulation by using GPUs.
 
 1. First connect to login node via [SSH client](../../remote-connection/ssh.md),
-or [web terminal](../../remote-connection/web-terminal.md).
+or [web terminal](../../remote-connection/web-terminal.md). Note that it is also
+possible to run CLI jobs by creating a [bash workflow](
+../../software-directory/scripting/shell/overview.md).
+
+    ![Wen Terminal](../../images/jobs-cli/open-web-terminal.webp)
 
 2. Example job that we are going to run is available in git repository
 [exabyte-io/cli-job-examples](https://github.com/exabyte-io/cli-job-examples).
 You may clone the repository to your working directory:
 ```bash
 git clone https://github.com/exabyte-io/cli-job-examples
+cd cli-job-examples
+git lfs pull
 cd espresso/gpu
 ```
 
@@ -65,6 +71,10 @@ Parallel routines
 
 PWSCF        :  18m 0.56s CPU  18m25.33s WALL
 ```
+
+You may experiment different combinations of MPI and OpenMP, various
+[parallelization options](https://www.quantum-espresso.org/Doc/user_guide/node20.html),
+and find what gives you the best performance.
 
 ## Step-by-step screenshare video
 
