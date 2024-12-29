@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# Terrace Steps on Platinum Surfaces
+# Terrace Steps on Platinum (111) Surface
 
 ## Introduction
 
@@ -13,6 +13,7 @@ This tutorial demonstrates two different approaches to creating terrace steps on
     Šljivančanin, Ž., & Hammer, B., "Oxygen dissociation at close-packed Pt terraces, Pt steps, and Ag-covered Pt steps studied with density functional theory." Surface Science, 515(1), 235–244. [DOI: 10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'}.
 
 We will demonstrate two methods:
+
 1. Creating a Pt(211) surface which inherently contains steps
 2. Creating a terrace step on a Pt(111) surface using the TerraceSlabDefectBuilder
 
