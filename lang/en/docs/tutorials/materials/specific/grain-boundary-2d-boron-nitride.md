@@ -63,71 +63,54 @@ EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
 !!!note "Important Parameter"
     The `DISTANCE_TOLERANCE` parameter (1.43 Å) is larger than B-N distances at the one specific spot in the boundary. This will cause certain nitrogen atoms to be removed during structure generation, which we'll need to restore later.
 
-## 2. Generate Grain Boundary
+## 2. Run the Notebook
 
-### 2.1. Run Initial Configuration
+Run the notebook by selecting "Run" > "Run All Cells".
 
-Run the first part of the notebook to:
-1. Load the h-BN structure
-2. Set up the grain boundary configuration
-3. Initialize the builder with the specified parameters
-
-### 2.2. Create and Analyze Grain Boundaries
-
-The notebook will:
-1. Generate possible grain boundary structures
-2. Display the number of structures found
-3. Show the actual twist angle and number of atoms for each structure
-4. Plot angle vs. number of atoms for all solutions
-
-![Solutions Analysis](/images/tutorials/materials/interfaces/grain_boundary_hbn/2-solutions.webp "Solutions Analysis")
-
-### 2.3. Review Selected Structure
-
-Select and visualize the grain boundary structure (by default, the first solution is used):
-
-```python
-selected_structure = grain_boundaries[0]
-visualize_materials(selected_structure, repetitions=[1, 1, 1])
-```
+![Initial h-BN Structure](/images/tutorials/materials/interfaces/grain_boundary_hbn/2-wave-result-1.webp "Initial h-BN Structure")
 
 ## 3. Restore Missing Nitrogen Atom
 
-Due to the `DISTANCE_TOLERANCE` setting, some nitrogen atoms at the boundary are removed. We need to restore them:
+Due to the `DISTANCE_TOLERANCE` setting, one nitrogen atom at the boundary is removed. We need to restore it:
 
 ### 3.1. Add Missing Nitrogen
 
-Use the adatom builder to add the missing nitrogen atom:
+Open JupyterLite Session and find `create_point_defect.ipynb` notebook.
+
+Select the h-BN grain boundary structure as input material and configure the adatom defect parameters in the "1.1. Set Notebook Parameters" section:
 
 ```python
-from mat3ra.made.tools.build.defect import AdatomSlabDefectBuilder, AdatomSlabPointDefectConfiguration
+DEFECT_TYPE = "interstitial"  # (e.g. "vacancy", "substitution", "interstitial")
+SITE_ID = None  # Site index of the defect
+COORDINATE = [0.5, 0.45, 0.5]  # Position of the defect in crystal coordinates
+APPROXIMATE_COORDINATE = None  # Approximate coordinates of the defect in crystal coordinates
+CHEMICAL_ELEMENT = "N"  # Element to be placed at the site (ignored for vacancy)
 
-config = AdatomSlabPointDefectConfiguration(
-    crystal=selected_structure,
-    chemical_element="N",
-    position_on_surface=[0.5, 0.45],
-    distance_z=0.01,
-)
+SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
-builder = AdatomSlabDefectBuilder()
-adjusted_structure = builder.get_material(config)
+# List of dictionaries with defect parameters
+DEFECT_CONFIGS = [
+    {
+        "defect_type": DEFECT_TYPE,
+        "coordinate": COORDINATE,
+        "chemical_element": CHEMICAL_ELEMENT,
+    }
+]
 ```
 
-### 3.2. Verify Final Structure
+### 3.2. Run the Notebook
 
-Review the completed structure:
-1. Check the atomic positions at the boundary
-2. Verify the restored nitrogen atom
-3. Confirm overall structure integrity
+Run the notebook to add the missing nitrogen atom to the h-BN grain boundary structure.
 
-![Final Structure](/images/tutorials/materials/interfaces/grain_boundary_hbn/3-final-structure.webp "Final Structure")
+![Final Structure Preview](/images/tutorials/materials/interfaces/grain_boundary_hbn/3-jl-result-preview.webp "Final Structure Preview")
 
-## 4. Save the Structure
+## 4. Pass Final Material to Materials Designer
 
-The final structure can be:
-1. Passed back to Materials Designer
-2. [Saved or downloaded](../../../materials-designer/header-menu/input-output.md) in Material JSON format
-3. Exported as a POSCAR file
+The user can pass the material with substitution defects in the current Materials Designer environment and save it.
+
+![Final Material](/images/tutorials/materials/interfaces/grain_boundary_hbn/4-wave-result-2.webp "Final Material")
+
+Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
 ## Interactive JupyterLite Notebook
 
@@ -135,7 +118,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/grain_boundary_2d_hbn.ipynb' %}
+{% with notebook_name='specific_examples/grain_boundary_2d_boron_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
