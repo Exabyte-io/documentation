@@ -19,7 +19,7 @@ We will focus on creating graphene with edge-induced ripples that match the patt
 
 ![Rippled Graphene](/images/tutorials/materials/2d_materials/rippled_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1.")
 
-## 1. Create Rippled Graphene
+## 1. Create Graphene Nanoribbon
 
 ### 1.1. Load Graphene Material
 
@@ -33,11 +33,38 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 1.3. Open `create_perturbation_custom.ipynb` notebook
+### 1.3. Open `create_nanoribbon.ipynb` notebook
+
+Find `create_nanoribbon.ipynb` in the list of notebooks and click/double-click to open it.
+
+### 1.4. Set up nanoribbon parameters
+
+Edit notebook to set the nanoribbon parameters:
+
+```python
+# Widths and lengths are in number of unit cells
+WIDTH = 40
+VACUUM_WIDTH = 10
+LENGTH = 40
+VACUUM_LENGTH = 0
+EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
+```
+
+![Setup Nanoribbon Parameters](/images/tutorials/materials/2d_materials/rippled_graphene/jl-setup-nanoribbon.webp "Setup Nanoribbon Parameters")
+
+### 1.5. Run the notebook
+
+After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu. This will create a graphene nanoribbon with the specified dimensions.
+
+![Nanoribbon Result](/images/tutorials/materials/2d_materials/rippled_graphene/jl-nanoribbon-preview.webp "Graphene Nanoribbon")
+
+## 2. Create Ripples in the Nanoribbon
+
+### 2.1. Open `create_perturbation_custom.ipynb` notebook
 
 Find `create_perturbation_custom.ipynb` in the list of notebooks and click/double-click to open it.
 
-### 1.4. Open and modify the notebook
+### 2.2. Set up perturbation parameters
 
 Next, we need to set up the parameters for creating rippled graphene.
 
@@ -99,13 +126,13 @@ Key parameters explained:
 - EDGE_WIDTH: Controls how far the ripples extend from the edges (0.25 in crystal coordinates)
 - PHASE_X/Y: Controls the phase shift of the ripple pattern
 
-### 1.5. Run the notebook
+### 2.3. Run the notebook
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-## 2. Analyze the Results
+## 3. Analyze the Results
 
 After running the notebook, the rippled graphene structure should appear in the preview.
 
@@ -121,7 +148,7 @@ Key features to verify:
 3. The ripple pattern should be symmetric
 4. The wavelength and amplitude should match the experimental observations
 
-## 3. Pass the Material to Materials Designer
+## 4. Pass the Material to Materials Designer
 
 The rippled graphene structure will be automatically passed back to the current Materials Designer environment where you can save it.
 
