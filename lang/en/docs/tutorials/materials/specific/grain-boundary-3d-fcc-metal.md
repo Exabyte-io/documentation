@@ -39,14 +39,12 @@ Select "Advanced > [JupyterLite Transformation](../../../materials-designer/head
 
 Find and open `create_grain_boundary.ipynb`. Edit the grain boundary parameters in section 1.1 of the notebook:
 
-`MATERIAL_NAME = "Cu"` -- Material name to search for in Standata.
 `PHASE_1_MILLER_INDICES = (3, 1, 0)` -- As described in the manuscript.
 `PHASE_2_MILLER_INDICES = (-3, -1, 0)` -- Opposite orientation to phase 1 to achieve symmetrical grain boundary.
 
 ```python
 # Enable interactive selection of terminations via UI prompt
 IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
-MATERIAL_NAME = "Cu"
 
 # Parameters for Phase 1
 PHASE_1_MILLER_INDICES = (3, 1, 0)
@@ -78,6 +76,8 @@ These parameters will create:
 - 4 atomic layers thickness for each phase
 - 2 Å gap between phases
 - Maximum area of 100 Å² for strain matching
+
+![Grain Boundary Parameters](/images/tutorials/materials/defects/grain_boundary_fcc_metal/2-jl-setup-nb.webp "Grain Boundary Parameters")
 
 ## 2. Run the Notebook
 
