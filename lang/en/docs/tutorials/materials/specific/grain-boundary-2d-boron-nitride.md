@@ -61,7 +61,7 @@ DISTANCE_TOLERANCE = 1.43  # in Angstroms
 EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
 ```
 
-![Notebook Setup](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/3-jl-setup-nb-gb.webp "Notebook Setup")
+![Notebook Setup](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/2-jl-setup-nb-gb.webp "Notebook Setup")
 
 !!!note "Important Parameter"
     The `DISTANCE_TOLERANCE` parameter (1.43 Å) is larger than B-N distances at the one specific spot in the boundary. This will cause certain nitrogen atoms to be removed during structure generation, which we'll need to restore later.
@@ -69,6 +69,8 @@ EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
 ## 2. Run the Notebook
 
 Run the notebook by selecting "Run" > "Run All Cells".
+
+The notebook will generate the h-BN grain boundary structure based on the parameters provided.
 
 ![Initial h-BN Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/4-wave-result-gb.webp "Initial h-BN Structure")
 
