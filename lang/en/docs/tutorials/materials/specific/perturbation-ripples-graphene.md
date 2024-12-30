@@ -3,17 +3,17 @@
 render_macros: true
 ---
 
-# Creating Rippled Graphene
+# Ripples in Graphene
 
 ## Introduction
 
-This tutorial demonstrates the process of creating rippled graphene based on the work presented in the following manuscript, where the mechanical properties of graphene edges were studied.
+This tutorial demonstrates the process of creating edge induced ripples in graphene nanosheet based on the work presented in the following manuscript, where the mechanical properties of graphene edges were studied.
 
 !!!note "Manuscript"
     Thompson-Flagg, R. C., Moura, M. J. B., & Marder, M.
     "Rippling of graphene"
     EPL (Europhysics Letters), 85(4), 46002 (2009)
-    [DOI: 10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002)
+    [DOI: 10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002){:target='_blank'}.
 
 We will focus on creating graphene with edge-induced ripples that match the patterns observed in experimental studies, as shown in FIG. 1.
 
@@ -45,7 +45,7 @@ Edit notebook in 1.2. to set generic perturbation parameters:
 
 ```python
 # Set whether to preserve geodesic distance and scale the cell accordingly to match PBC
-PRESERVE_GEODESIC_DISTANCE = True
+PRESERVE_GEODESIC_DISTANCE = False
 
 # Set whether to use Cartesian coordinates for the perturbation function
 USE_CARTESIAN_COORDINATES = False
@@ -135,7 +135,7 @@ The following JupyterLite notebook demonstrates the process of creating rippled 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/rippled_graphene.ipynb' %}
+{% with notebook_name='specific_examples/perturbation_ripple_graphene.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
@@ -161,6 +161,10 @@ If you need to adjust the ripple pattern, you can modify these key parameters:
 
 1. Thompson-Flagg, R. C., Moura, M. J. B., & Marder, M. (2009). Rippling of graphene. EPL (Europhysics Letters), 85(4), 46002. [DOI: 10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002)
 
+2. A. Fasolino, J. H. Los and M. I. Katsnelson, "Intrinsic ripples in graphene," Nature Materials, 6, 858-861 (2007). [DOI: 10.1038/nmat2011](https://doi.org/10.1038/nmat2011)
+
+3. L. A. Openov & A. I. Podlivaev, "Interaction of the Stone-Wales defects in graphene", Physics of the Solid State, 52, 1, 2010. [DOI: 10.1134/S1063783415070240](https://doi.org/10.1134/S1063783415070240)
+
 ## Tags
 
-`graphene`, `ripples`, `perturbation`, `2D materials`, `edge effects`
+`graphene`, `ripples`, `perturbation`, `2D materials`, `edge effects`, `C`
