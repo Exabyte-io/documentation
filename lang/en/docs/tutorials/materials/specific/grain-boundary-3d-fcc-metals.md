@@ -27,7 +27,7 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 2. Select "Import from Standata"
 3. Search for "Cu" and select the bulk copper material
 
-![Copper Material Import](/images/tutorials/materials/defects/grain_boundary_fcc_metal/1-standata-cu.webp "Copper Material Import")
+![Copper Material Import](/images/tutorials/materials/defects/grain_boundary_fcc_metal/1-standata-import-cu.webp "Copper Material Import")
 
 ### 1.2. Launch JupyterLite Session
 
