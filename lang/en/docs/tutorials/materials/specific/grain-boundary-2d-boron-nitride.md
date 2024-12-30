@@ -14,7 +14,7 @@ This tutorial demonstrates the process of creating 2D grain boundary structures 
 
 We will focus on creating h-BN grain boundary structures similar to Figure 2c from the manuscript:
 
-![h-BN Grain Boundary](/images/tutorials/materials/interfaces/grain_boundary_hbn/0-figure-from-manuscript.webp "h-BN Grain Boundary, FIG. 2c.")
+![h-BN Grain Boundary](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/0-figure-from-manuscript.webp "h-BN Grain Boundary, FIG. 2c.")
 
 ## 1. Create Initial h-BN Structure
 
@@ -26,7 +26,8 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 2. Select "Import from Standata"
 3. Search for "Boron_Nitride" and select the 2D h-BN material
 
-![h-BN Material Import](/images/tutorials/materials/interfaces/grain_boundary_hbn/1-standata-hbn.webp "h-BN Material Import")
+![Standata h-BN Import](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata h-BN Import")
+
 
 ### 1.2. Launch JupyterLite Session
 
@@ -38,7 +39,7 @@ Find and open `create_grain_boundary_film.ipynb`. Edit the grain boundary parame
 
 `TARGET_TWIST_ANGLE = 9.0` -- As described in the manuscript.
 `ANGLE_TOLERANCE = 0.5` -- Tolerance for twist angle matching, in degrees. 
-`BOUNDARY_GAP = 0.0` -- Gap between orientations in X direction, should be set to 0.0 for seamless boundaries.
+`BOUNDARY_GAP = 0.0` -- Gap between two phases in X direction, should be set to 0.0 for seamless boundary.
 `DISTANCE_TOLERANCE = 1.43` -- Distance tolerance for atom merging, in Angstroms. Set to be smaller than the B-N length to avoid symmetrical atoms.
 `EDGE_INCLUSION_TOLERANCE = 0.0` -- Edge inclusion parameter, in Angstroms. Controls the overlap of the second phase onto the first phase.
 
@@ -60,6 +61,8 @@ DISTANCE_TOLERANCE = 1.43  # in Angstroms
 EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
 ```
 
+![Notebook Setup](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/3-jl-setup-nb-gb.webp "Notebook Setup")
+
 !!!note "Important Parameter"
     The `DISTANCE_TOLERANCE` parameter (1.43 Å) is larger than B-N distances at the one specific spot in the boundary. This will cause certain nitrogen atoms to be removed during structure generation, which we'll need to restore later.
 
@@ -67,7 +70,7 @@ EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
 
 Run the notebook by selecting "Run" > "Run All Cells".
 
-![Initial h-BN Structure](/images/tutorials/materials/interfaces/grain_boundary_hbn/2-wave-result-1.webp "Initial h-BN Structure")
+![Initial h-BN Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/4-wave-result-gb.webp "Initial h-BN Structure")
 
 ## 3. Restore Missing Nitrogen Atom
 
@@ -98,19 +101,27 @@ DEFECT_CONFIGS = [
 ]
 ```
 
+![Notebook Setup](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/5-jl-setup-nb-final-gb.webp "Notebook Setup")
+
 ### 3.2. Run the Notebook
 
 Run the notebook to add the missing nitrogen atom to the h-BN grain boundary structure.
 
-![Final Structure Preview](/images/tutorials/materials/interfaces/grain_boundary_hbn/3-jl-result-preview.webp "Final Structure Preview")
+![Final Structure Preview](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/6-jl-result-preview-final-gb.webp "Final Structure Preview")
 
 ## 4. Pass Final Material to Materials Designer
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/interfaces/grain_boundary_hbn/4-wave-result-2.webp "Final Material")
+![Final Material](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/7-wave-result-final-gb.webp "Final Material")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
+
+## 5. Relaxation
+
+The relaxation can be performed elsewhere, and the resulting structure will be similar to the one shown in the manuscript.
+
+![Relaxed Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/8-wave-result-final-gb-relaxed.webp "Relaxed Structure")
 
 ## Interactive JupyterLite Notebook
 
