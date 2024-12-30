@@ -17,7 +17,7 @@ This tutorial demonstrates the process of creating edge induced ripples in graph
 
 We will focus on creating graphene with edge-induced ripples that match the patterns observed in experimental studies, as shown in FIG. 1.
 
-![Rippled Graphene](/images/tutorials/materials/2d_materials/rippled_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1.")
+![Rippled Graphene](/images/tutorials/materials/defects/perturbation_ripple_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1.")
 
 ## 1. Create Graphene Nanoribbon
 
@@ -25,7 +25,7 @@ We will focus on creating graphene with edge-induced ripples that match the patt
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Graphene Material](/images/tutorials/materials/2d_materials/rippled_graphene/original-material.webp "Graphene Material")
+![Standata Graphene Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
 
 ### 1.2. Launch JupyterLite Session
 
@@ -46,17 +46,17 @@ Edit notebook to set the nanoribbon parameters:
 WIDTH = 40
 VACUUM_WIDTH = 10
 LENGTH = 40
-VACUUM_LENGTH = 0
+VACUUM_LENGTH = 10
 EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 ```
 
-![Setup Nanoribbon Parameters](/images/tutorials/materials/2d_materials/rippled_graphene/jl-setup-nanoribbon.webp "Setup Nanoribbon Parameters")
+![Setup Nanoribbon Parameters](/images/tutorials/materials/defects/perturbation_ripple_graphene/2-jl-setup-nb-nanoribbon.webp "Setup Nanoribbon Parameters")
 
 ### 1.5. Run the notebook
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu. This will create a graphene nanoribbon with the specified dimensions.
 
-![Nanoribbon Result](/images/tutorials/materials/2d_materials/rippled_graphene/jl-nanoribbon-preview.webp "Graphene Nanoribbon")
+![Nanoribbon Result](/images/tutorials/materials/defects/perturbation_ripple_graphene/3-wave-result-nanoribbon.webp "Graphene Nanoribbon")
 
 ## 2. Create Ripples in the Nanoribbon
 
@@ -78,8 +78,6 @@ PRESERVE_GEODESIC_DISTANCE = False
 USE_CARTESIAN_COORDINATES = False
 MATERIAL_NAME = "Graphene"
 ```
-
-![Setup Generic Parameters](/images/tutorials/materials/2d_materials/rippled_graphene/jl-setup-generic.webp "Setup Generic Parameters")
 
 Then modify section 1.3 to define the custom perturbation function:
 
@@ -118,7 +116,7 @@ wave_pattern = (
 custom_sympy_function = AMPLITUDE * wave_pattern * edge_mask
 ```
 
-![Setup Perturbation Function](/images/tutorials/materials/2d_materials/rippled_graphene/jl-setup-function.webp "Setup Perturbation Function")
+![Setup Perturbation Function](/images/tutorials/materials/defects/perturbation_ripple_graphene/4-jl-setup-nb-final.webp "Setup Perturbation Function")
 
 Key parameters explained:
 - AMPLITUDE: Controls the height of the ripples (0.09 Å)
@@ -136,13 +134,13 @@ After setting the parameters, run the notebook by selecting "Run > Run All Cells
 
 After running the notebook, the rippled graphene structure should appear in the preview.
 
-![Rippled Graphene Result](/images/tutorials/materials/2d_materials/rippled_graphene/jl-result-preview.webp "Rippled Graphene Result")
-
 The visualization shows:
+
 - Top view: Displaying the overall ripple pattern across the graphene sheet
 - Side view (-90x rotation): Showing the height profile of the ripples
 
 Key features to verify:
+
 1. Ripples should appear strongest at the edges
 2. The center of the sheet should remain relatively flat
 3. The ripple pattern should be symmetric
@@ -152,7 +150,7 @@ Key features to verify:
 
 The rippled graphene structure will be automatically passed back to the current Materials Designer environment where you can save it.
 
-![Final Material](/images/tutorials/materials/2d_materials/rippled_graphene/wave-result.webp "Final Rippled Graphene")
+![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/5-wave-result-final.webp "Final Rippled Graphene")
 
 Or you can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
