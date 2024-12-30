@@ -122,7 +122,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/grain_boundary_3d_fcc_metal.ipynb' %}
+{% with notebook_name='specific_examples/grain_boundary_3d_fcc_metals.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
