@@ -119,10 +119,11 @@ custom_sympy_function = AMPLITUDE * wave_pattern * edge_mask
 ![Setup Perturbation Function](/images/tutorials/materials/defects/perturbation_ripple_graphene/4-jl-setup-nb-final.webp "Setup Perturbation Function")
 
 Key parameters explained:
-- AMPLITUDE: Controls the height of the ripples (0.09 Å)
-- WAVELENGTH: Controls the spacing between ripples (0.2 in crystal coordinates)
-- EDGE_WIDTH: Controls how far the ripples extend from the edges (0.25 in crystal coordinates)
-- PHASE_X/Y: Controls the phase shift of the ripple pattern
+
+- `AMPLITUDE` Controls the height of the ripples (0.09 Å)
+- `WAVELENGTH` Controls the spacing between ripples (0.2 in crystal coordinates)
+- `EDGE_WIDTH` Controls how far the ripples extend from the edges (0.25 in crystal coordinates)
+- `PHASE_X`/`PHASE_Y` Controls the phase shift of the ripple pattern
 
 ### 2.3. Run the notebook
 
@@ -148,11 +149,11 @@ Key features to verify:
 
 ## 4. Pass the Material to Materials Designer
 
-The rippled graphene structure will be automatically passed back to the current Materials Designer environment where you can save it.
+The rippled graphene structure will be automatically passed back to the current Materials Designer environment where user can save it.
 
 ![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/5-wave-result-final.webp "Final Rippled Graphene")
 
-Or you can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
+Or user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
 ## Interactive JupyterLite Notebook
 
@@ -168,7 +169,7 @@ The following JupyterLite notebook demonstrates the process of creating rippled 
 
 ## Parameters Fine-tuning
 
-If you need to adjust the ripple pattern, you can modify these key parameters:
+If user need to adjust the ripple pattern, user can modify these key parameters:
 
 1. To change ripple height:
    - Adjust AMPLITUDE (higher value = taller ripples)
