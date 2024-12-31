@@ -3,11 +3,11 @@
 render_macros: true
 ---
 
-# Interfaces between 2D Materials: hBN and Graphene
+# Interfaces between 2D Materials: h-BN and Graphene
 
 ## Introduction
 
-This tutorial demonstrates the process of creating interfaces with different stacking configurations between 2D materials, specifically hexagonal boron nitride (hBN) and graphene, based on the work presented in the following manuscript, where the electronic properties of hBN-graphene interfaces are studied.
+This tutorial demonstrates the process of creating interfaces with different stacking configurations between 2D materials, specifically hexagonal boron nitride (h-BN) and graphene, based on the work presented in the following manuscript, where the electronic properties of h-BN-graphene interfaces are studied.
 
 !!!note "Manuscript"
     **Jeil Jung, Ashley M. DaSilva, Allan H. MacDonald & Shaffique Adam**
@@ -18,7 +18,7 @@ This tutorial demonstrates the process of creating interfaces with different sta
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create interfaces and shift the layers along the y-axis to achieve different stacking configurations.
 
-The Figure 7 shows the different stacking configurations of graphene on hBN.
+The Figure 7 shows the different stacking configurations of graphene on h-BN.
 
 ![Graphene on Hexagonal Boron Nitride](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/0-figure-from-manuscript.webp   "Graphene on Hexagonal Boron Nitride, FIG. 7")
 
@@ -27,12 +27,12 @@ The Figure 7 shows the different stacking configurations of graphene on hBN.
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Graphene and Hexagonal BN materials from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 
-![Standata Graphene and hBN Import](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/1-standata-import-gr-hbn.webp "Standata Graphene and hBN Import")
+![Standata Graphene and h-BN Import](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/1-standata-import-gr-hbn.webp "Standata Graphene and h-BN Import")
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create the target structures.
 
 
-## 2. Create interface between hBN and Graphene
+## 2. Create interface between h-BN and Graphene
 
 ### 2.1 Launch JupyterLite Session
 
@@ -43,7 +43,7 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ### 2.2. Open and modify the notebook
 
-Select the input materials with first one being the substrate (hBN) and the second one being the film (Graphene).
+Select the input materials with first one being the substrate (h-BN) and the second one being the film (Graphene).
 
 Next, open `create_interface_with_min_strain_zsl.ipynb` notebook to modify the parameters by changing:
 
@@ -89,7 +89,7 @@ INTERFACE_VACUUM = 20.0  # in Angstrom
 
 ### 2.3. Run the Notebook
 
-After setting the parameters, run the notebook to create the interface between hBN and Graphene.
+After setting the parameters, run the notebook to create the interface between h-BN and Graphene.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
@@ -98,9 +98,9 @@ After setting the parameters, run the notebook to create the interface between h
 The generation might take some time.
 After that, the user can pass the material to the Materials Designer for further analysis.
 
-Interface between hBN and Graphene with the specified parameters is shown below.
+Interface between h-BN and Graphene with the specified parameters is shown below.
 
-![Gr/hBN Interface ](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/3-jl-result-preview.webp "Gr/hBN Interface")
+![Gr/h-BN Interface ](/images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/3-jl-result-preview.webp "Gr/h-BN Interface")
 
 To shift graphene layer along the y-axis, the user can modify the last cell in the notebook to achieve different stacking configurations.
 
@@ -138,7 +138,7 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 
 ## Interactive JupyterLite Notebook
 
-The interactive JupyterLite notebook for creating Gr/hBN interface can be accessed below. To run the notebook, click on the "Run All" button.
+The interactive JupyterLite notebook for creating Gr/h-BN interface can be accessed below. To run the notebook, click on the "Run All" button.
 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
