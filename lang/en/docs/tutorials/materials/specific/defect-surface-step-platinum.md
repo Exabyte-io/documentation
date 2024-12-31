@@ -131,6 +131,10 @@ Run the notebook to create the Pt(111) surface with a terrace step.
 
 ![Pt(111) Surface with Terrace Step](/images/tutorials/materials/defects/defect_surface_step_platinum/5-wave-result-pt-terrace.webp "Pt(111) Surface with Terrace Step")
 
+The same material with repetitions:
+
+![Pt(111) Surface with Terrace Step with repetitions](/images/tutorials/materials/defects/defect_surface_step_platinum/6-wave-result-pt-terrace-repetitions.webp "Pt(111) Surface with Terrace Step with repetitions")
+
 The user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
 ## Interactive JupyterLite Notebook.
