@@ -44,7 +44,7 @@ Find and open `create_grain_boundary.ipynb`. Edit the grain boundary parameters 
 
 ```python
 # Enable interactive selection of terminations via UI prompt
-IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
+IS_TERMINATIONS_SELECTION_INTERACTIVE = False
 
 # Parameters for Phase 1
 PHASE_1_MILLER_INDICES = (3, 1, 0)
@@ -122,7 +122,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/grain_boundary_3d_fcc_metals.ipynb' %}
+{% with notebook_name='specific_examples/grain_boundary_3d_fcc_metals_copper.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
