@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# Grain Boundaries in FCC Metals
+# Grain Boundaries in FCC Metals (Copper)
 
 ## Introduction
 
