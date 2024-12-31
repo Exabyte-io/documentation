@@ -102,9 +102,15 @@ After running the notebook, user can visualize the grain boundary structure:
 
 The resulting structure should show:
 
-- Clear interface between the two orientations
-- Proper atomic arrangement at the boundary
+- A clear interface between the two orientations
+- A proper atomic arrangement at the boundary
 - Minimal strain in the interface region
+
+Grain boundary from the top (XY) and side (XZ) views:
+
+![Final Material (XY)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary, XY view")
+
+![Final Material (XZ)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
 
 ## 4. Save the Structure
 
@@ -113,12 +119,6 @@ The final structure can be:
 1. Passed back to Materials Designer
 2. [Saved or downloaded](../../../materials-designer/header-menu/input-output.md) in Material JSON format
 3. Exported as a POSCAR file
-
-Grain boundary from the top (XY) and side (XZ) views:
-
-![Final Material (XY)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary, XY view")
-
-![Final Material (XZ)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
 
 ## Interactive JupyterLite Notebook
 
