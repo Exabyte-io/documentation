@@ -79,7 +79,7 @@ Configure the optimization parameters:
 # Grid parameters
 GRID_SIZE = (20, 20)  # Resolution of the x-y grid
 GRID_RANGE_X = (-0.5, 0.5)  # Range in crystal coordinates
-GRID_RANGE_Y = (-0.5, 0.5)  
+GRID_RANGE_Y = (-0.5, 0.5)
 USE_CARTESIAN = False  # Use crystal coordinates
 
 # Visualization parameters
