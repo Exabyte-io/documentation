@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# Grain Boundaries in FCC Metals
+# Grain Boundaries in FCC Metals (Copper)
 
 ## Introduction
 
@@ -44,7 +44,7 @@ Find and open `create_grain_boundary.ipynb`. Edit the grain boundary parameters 
 
 ```python
 # Enable interactive selection of terminations via UI prompt
-IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
+IS_TERMINATIONS_SELECTION_INTERACTIVE = False
 
 # Parameters for Phase 1
 PHASE_1_MILLER_INDICES = (3, 1, 0)
@@ -102,9 +102,17 @@ After running the notebook, user can visualize the grain boundary structure:
 
 The resulting structure should show:
 
-- Clear interface between the two orientations
-- Proper atomic arrangement at the boundary
+- A clear interface between the two orientations
+- A proper atomic arrangement at the boundary
 - Minimal strain in the interface region
+
+Grain boundary from the top (XY) and side (XZ) views:
+
+![Final Material (XY)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary, XY view")
+
+![Final Material (XZ)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
+
+The structure has differences from the original figure in the manuscript, since grain boundary achieved by strain-matching two symmetrical surfaces with no changes to either surfaces. Discrepancies might be removed with further adjustments like shifting the phases, removing atom layers and reconstructing the interface.
 
 ## 4. Save the Structure
 
@@ -114,15 +122,13 @@ The final structure can be:
 2. [Saved or downloaded](../../../materials-designer/header-menu/input-output.md) in Material JSON format
 3. Exported as a POSCAR file
 
-![Final Material](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary")
-
 ## Interactive JupyterLite Notebook
 
 The following JupyterLite notebook demonstrates the complete process. Select "Run" > "Run All Cells".
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/grain_boundary_3d_fcc_metals.ipynb' %}
+{% with notebook_name='specific_examples/grain_boundary_3d_fcc_metals_copper.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
