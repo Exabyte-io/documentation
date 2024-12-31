@@ -237,6 +237,7 @@ nav:
                 - High-k Metal Gate Stack (Si/SiO2/HfO2/TiN):                        tutorials/materials/specific/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride.md
                 - Ripple perturbation of a Graphene sheet:                               tutorials/materials/specific/perturbation-ripples-graphene.md
                 - Grain Boundary in FCC Metals (Copper):                                tutorials/materials/specific/grain-boundary-3d-fcc-metals-copper.md
+                - Grain Boundary (2D) in h-BN:                                   tutorials/materials/specific/grain-boundary-2d-boron-nitride.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
