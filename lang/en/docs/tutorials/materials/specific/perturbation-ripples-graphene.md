@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# Ripples in Graphene
+# Ripple perturbation of a Graphene sheet.
 
 ## Introduction
 
@@ -131,27 +131,17 @@ After setting the parameters, run the notebook by selecting "Run > Run All Cells
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-## 3. Analyze the Results
-
-After running the notebook, the rippled graphene structure should appear in the preview.
-
-The visualization shows:
-
-- Top view: Displaying the overall ripple pattern across the graphene sheet
-- Side view (-90x rotation): Showing the height profile of the ripples
-
-Key features to verify:
-
-1. Ripples should appear strongest at the edges
-2. The center of the sheet should remain relatively flat
-3. The ripple pattern should be symmetric
-4. The wavelength and amplitude should match the experimental observations
-
-## 4. Pass the Material to Materials Designer
+## 3. Pass the Material to Materials Designer
 
 The rippled graphene structure will be automatically passed back to the current Materials Designer environment where user can save it.
 
-![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/5-wave-result-final.webp "Final Rippled Graphene")
+Graphene with edge-induced ripples with amplitude of 0.09 crystal units.
+
+![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/5-wave-result-final.webp "Final Rippled Graphene, amplitude 0.09 crystal units")
+
+Graphene with edge-induced ripples with amplitude of 0.27 crystal units.
+
+![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/6-wave-result-final-2.webp "Final Rippled Graphene, amplitude 0.27 crystal units")
 
 Or user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
