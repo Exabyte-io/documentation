@@ -3,11 +3,11 @@
 render_macros: true
 ---
 
-# Passivation of Silicon (001) Surface
+# Passivation of Silicon (100) Surface
 
 ## Introduction
 
-This tutorial demonstrates how to passivate a reconstructed silicon (001) surface with hydrogen atoms, following the methodology described in the literature.
+This tutorial demonstrates how to passivate a reconstructed silicon (100) surface with hydrogen atoms, following the methodology described in the literature.
 
 !!!note "Manuscript"
     Hansen, U., & Vogl, P.
@@ -23,9 +23,9 @@ We will recreate the passivated surface structure shown in Fig. 8:
 
 ### 1.1. Load Base Material
 
-Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the reconstructed Si(100) surface from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) using the search term "Silicon.*100.*reconstructed".
+Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the reconstructed Si(100) surface from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Si Import](/images/tutorials/materials/surfaces/si_100_passivation/standata-import.webp "Import Si(100) from Standata")
+![Si(100) Structure](/images/tutorials/materials/surfaces/si_100_passivation/1-wave-original-material.webp "Si(100) Structure")
 
 ### 1.2. Launch JupyterLite Session
 
@@ -33,7 +33,20 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ### 1.3. Open Modified `create_supercell.ipynb` Notebook
 
-Open `create_supercell.ipynb` and replace the "Get input materials" cell with the following code to adjust the Si atom position:
+Open `create_supercell.ipynb`, select input material as the Si(100) structure, and set the supercell parameters in 1.1.:
+
+```python
+SUPERCELL_MATRIX = [
+    [1, 0, 0], 
+    [0, 1, 0], 
+    [0, 0, 1]
+] 
+
+# or use the scaling factor
+SCALING_FACTOR = None # [3, 3, 1]
+```
+
+Also add to the "Get input materials" cell the following code to adjust the Si atom position:
 
 ```python
 from utils.jupyterlite import get_materials
@@ -56,15 +69,18 @@ new_coordinates[index_to_adjust] = adjusted_coordinate
 material.set_coordinates(new_coordinates)
 ```
 
+![Supercell Parameters](/images/tutorials/materials/surfaces/si_100_passivation/2-jl-setup-nb-adjust.webp "Supercell Parameters Visualization")
+
 ### 1.4. Run Structure Adjustment
 
 Run the notebook using "Run > Run All Cells". This will:
+
 1. Load the Si(100) structure
 2. Adjust the position of the specified Si atom
 3. Create a supercell if specified in the parameters
 4. Visualize the adjusted structure
 
-![Adjusted Structure](/images/tutorials/materials/surfaces/si_100_passivation/adjusted-structure.webp "Adjusted Si(100) Structure")
+![Adjusted Structure](/images/tutorials/materials/surfaces/si_100_passivation/3-wave-adjusted-material.webp "Adjusted Si(100) Structure")
 
 ## 2. Passivate the Surface
 
@@ -91,36 +107,35 @@ CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]
 ```
 
 Key parameters explained:
-- `BOND_LENGTH`: Si-H bond length from literature
-- `SHADOWING_RADIUS`: Controls which atoms are considered surface atoms
-- `DEPTH`: How deep to look for surface atoms
 
-![Passivation Parameters](/images/tutorials/materials/surfaces/si_100_passivation/passivation-params.webp "Passivation Parameters Visualization")
+- `BOND_LENGTH`: Si-H bond length from literature.
+- `SHADOWING_RADIUS`: Controls which atoms are considered surface atoms, set to be below the distance between top Si atoms pair.
+- `SURFACE`: Passivate only the top surface.
+- `DEPTH`: How deep to look for surface atoms, set to include only top Si atoms.
+
+![Passivation Parameters](/images/tutorials/materials/surfaces/si_100_passivation/4-jl-setup-nb-passivation.webp "Passivation Parameters Visualization")
 
 ### 2.3. Run Passivation
 
 Run all cells in the notebook. The passivation process will:
+
 1. Detect surface Si atoms
 2. Add H atoms at the specified bond length
 3. Generate the passivated structure
+
+![Passivated Structure](/images/tutorials/materials/surfaces/si_100_passivation/5-jl-result-preview.webp "H-Passivated Si(100) Structure")
 
 ## 3. Analyze Results
 
 After running both notebooks, examine the final structure:
 
-### 3.1. Surface Structure
 Check that:
+
 - The adjusted Si atom position is correct
 - Surface reconstruction is maintained
 - H atoms are properly placed above surface Si atoms
 
-### 3.2. Bond Geometry
-Verify:
-- Si-H bond length is ~1.46 Å
-- H atoms are approximately perpendicular to the surface
-- No H atoms are added to subsurface Si atoms
-
-![Final Structure](/images/tutorials/materials/surfaces/si_100_passivation/final-structure.webp "Final H-Passivated Si(100)")
+![Final Structure](/images/tutorials/materials/surfaces/si_100_passivation/6-wave-result.webp "Final H-Passivated Si(100)")
 
 ## 4. Save Passivated Structure
 
@@ -135,7 +150,7 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/si_100_passivation.ipynb' %}
+{% with notebook_name='specific_examples/passivation_surface_silicon_surface.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
@@ -146,10 +161,12 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 To adjust the passivation:
 
 1. Surface Detection:
+
    - Increase `SHADOWING_RADIUS` to be more selective about surface atoms
    - Adjust `DEPTH` to control how deep to look for surface atoms
 
 2. Passivation:
+
    - Modify `BOND_LENGTH` for different Si-H distances
    - Change `SURFACE` to passivate different surfaces
    - Change `PASSIVANT` to use different passivating species
