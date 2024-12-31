@@ -17,7 +17,7 @@ This tutorial demonstrates how to create and optimize a Graphene/Ni(111) interfa
 
 We will recreate the interface structure and optimize the film position to match the experimental findings shown in the figure below:
 
-![Gr/Ni Interface](/images/tutorials/materials/interfaces/graphene_ni_111/optimal-position.webp "Optimal position of graphene on Ni(111)")
+![Gr/Ni Interface](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/0-figure-from-manuscript.webp "Optimal position of graphene on Ni(111)")
 
 ## 1. Create Interface Structure
 
@@ -25,7 +25,7 @@ We will recreate the interface structure and optimize the film position to match
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import both graphene and nickel materials from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Materials Import](/images/tutorials/materials/interfaces/graphene_ni_111/standata-import.webp "Import Graphene and Nickel from Standata")
+![Import Graphene and Ni](/images/materials-designer/import/import_from_standata.webp "Import Gr and Ni from Standata")
 
 ### 1.2. Launch JupyterLite Session
 
@@ -55,14 +55,15 @@ INTERFACE_DISTANCE = 2.58  # in Angstrom from literature
 INTERFACE_VACUUM = 20.0  # in Angstrom
 ```
 
+![Interface Parameters](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/2-jl-setup-nb-interface.webp "Interface parameters for Gr/Ni(111)")
+
 ### 1.5. Run interface creation
 
 Run the notebook using "Run > Run All Cells". This will:
+
 1. Create slabs from both materials
 2. Find the optimal lattice matching using the ZSL algorithm
 3. Generate the initial interface structure
-
-![Interface Creation Result](/images/tutorials/materials/interfaces/graphene_ni_111/interface-created.webp "Created Gr/Ni Interface")
 
 ## 2. Optimize Film Position
 
@@ -90,35 +91,28 @@ Key parameters explained:
 - `GRID_RANGE`: Search range in crystal coordinates
 - `USE_CARTESIAN`: Set to False for hexagonal systems
 
+![Optimization Parameters](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/3-jl-setup-nb-final.webp "Optimization parameters for Gr/Ni(111)")
+
 ### 2.3. Run optimization
 
 Run all cells in the notebook. The optimization will:
+
 1. Calculate energy landscape across different positions
 2. Find the global minimum energy position
 3. Generate visualizations of the results
 
-![Energy Landscape](/images/tutorials/materials/interfaces/graphene_ni_111/energy-landscape.webp "Energy landscape of film positions")
+![Energy Landscape](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/4-energy-landscape.webp "Energy landscape of film positions")
+
+![Energy Heatmap](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/5-energy-heatmap.webp "Energy heatmap of film positions")
 
 ## 3. Analyze Results
 
-After running both notebooks, examine the results:
+Compare the original and optimized interface structures to see the difference in the graphene position.
 
-### 3.1. Interface Structure
-- Verify the interface distance is ~2.58 Å
-- Check that the graphene layer is parallel to the Ni(111) surface
-- Confirm the supercell size is reasonable
+![Initial and optimized interface](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/6-jl-result-preview-compare.webp "Initial and optimized interface structures")
 
-### 3.2. Energy Landscape
-The energy landscape shows:
-1. Clear energy minima indicating preferred positions
-2. Periodic pattern matching the hexagonal symmetry
-3. Sharp peaks at unfavorable positions
+![Final Interface](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/7-wave-result-final.webp "Optimized Gr/Ni Interface")
 
-### 3.3. Optimal Position
-The optimized structure should show:
-- Carbon atoms positioned over Ni atoms and hollow sites
-- No significant distortion in the graphene layer
-- Proper registry between graphene and Ni surface atoms
 
 ## 4. Save Optimized Structure
 
@@ -133,7 +127,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/optimize-film-position-graphene-nickel-interface.ipynb' %}
+{% with notebook_name='specific_examples/optimize_film_position_graphene_nickel_interface.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
