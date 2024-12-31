@@ -112,6 +112,8 @@ Grain boundary from the top (XY) and side (XZ) views:
 
 ![Final Material (XZ)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
 
+The structure has differences from the original figure in the manuscript, since grain boundary achieved by strain-matching two symmetrical surfaces with no changes to either surfaces. Discrepancies might be removed with further adjustments like shifting the phases, removing atom layers and reconstructing the interface.
+
 ## 4. Save the Structure
 
 The final structure can be:
