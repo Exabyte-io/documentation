@@ -114,7 +114,11 @@ The final structure can be:
 2. [Saved or downloaded](../../../materials-designer/header-menu/input-output.md) in Material JSON format
 3. Exported as a POSCAR file
 
-![Final Material](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary")
+Grain boundary from the top (XY) and side (XZ) views:
+
+![Final Material (XY)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary, XY view")
+
+![Final Material (XZ)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
 
 ## Interactive JupyterLite Notebook
 
