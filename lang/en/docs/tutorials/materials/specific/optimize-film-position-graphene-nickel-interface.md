@@ -151,9 +151,9 @@ To adjust the interface optimization:
 
 1. Dahal, A., & Batzill, M. (2014). Graphene–nickel interfaces: a review. Nanoscale, 6(5), 2548-2562. [DOI: 10.1039/c3nr05279f](https://doi.org/10.1039/c3nr05279f)
 
-2. Gamo, Y., Nagashima, A., Wakabayashi, M., Terai, M., & Oshima, C. (1997). Atomic structure of monolayer graphite formed on Ni(111). Surface Science, 374(1-3), 61-64.
+2. Gamo, Y., Nagashima, A., Wakabayashi, M., Terai, M., & Oshima, C. (1997). Atomic structure of monolayer graphite formed on Ni(111). Surface Science, 374(1-3), 61-64. [DOI: 10.1016/S0039-6028(96)01307-3](https://www.sciencedirect.com/science/article/abs/pii/S0039602896007856)
 
-3. Bertoni, G., Calmels, L., Altibelli, A., & Serin, V. (2004). First-principles calculation of the electronic structure and EELS spectra at the graphene/Ni(111) interface. Physical Review B, 71(7).
+3. Bertoni, G., Calmels, L., Altibelli, A., & Serin, V. (2004). First-principles calculation of the electronic structure and EELS spectra at the graphene/Ni(111) interface. Physical Review B, 71(7). [DOI: 10.1103/PhysRevB.71.075402](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.075402)
 
 ## Tags
 
