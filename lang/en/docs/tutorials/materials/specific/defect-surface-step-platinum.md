@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Terrace Steps on Platinum (111) Surface
+# Terrace Steps on Platinum (111) Surface.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates two different approaches to creating terrace steps on platinum surfaces, based on the work presented in the following manuscript:
 
@@ -21,14 +21,14 @@ We will demonstrate two methods:
 1. Creating a Pt(211) surface which inherently contains steps
 2. Creating a terrace step on a Pt(111) surface using the TerraceSlabDefectBuilder
 
-## Method 1: Creating Pt(211) Step Surface
+## 1. Method I: Create Pt(211) Surface.
 
 - Creates a surface with inherent steps
 - Smaller unit cell
 - Fixed step geometry
 - Good for studying specific crystal faces
 
-### 1.1. Import Base Material
+### 1.1. Import Base Material.
 
 First, we need to import the platinum material from Standata:
 
@@ -39,11 +39,11 @@ First, we need to import the platinum material from Standata:
 
 ![Standata Import](/images/tutorials/materials/defects/defect_surface_step_platinum/1-standata-import-platinum.webp "Standata Import")
 
-### 1.2. Launch JupyterLite Environment
+### 1.2. Launch JupyterLite Environment.
 
 Select "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" to open JupyterLite.
 
-### 1.3. Configure Slab Parameters
+### 1.3. Configure Slab Parameters.
 
 Open a `create_slab.ipynb` notebook and set up the slab parameters in the "1.1. Set up notebook" cell:
 
@@ -67,24 +67,24 @@ These parameters will create a Pt(211) surface with:
 
 ![Pt(211) Surface Setup](/images/tutorials/materials/defects/defect_surface_step_platinum/2-jl-setup-nb-surface.webp "Pt(211) Surface Setup")
 
-### 1.4. Create the Slab
+### 1.4. Create the Slab.
 
 Run the notebook by clicking `Run` > `Run All` in the top menu. The notebook will generate the Pt(211) surface.
 
 ![Pt(211) Surface](/images/tutorials/materials/defects/defect_surface_step_platinum/3-wave-result-pt-211-surface.webp "Pt(211) Surface")
 
-## Method 2: Creating Terrace Step on Pt(111)
+## 2. Method II: Create Terrace Step Defect on Pt(111).
 
 - More flexible control over step placement
 - Larger surface area available
 - Customizable terrace height
 - Better for complex step arrangements
 
-### 2.1. Open Terrace Defect Notebook
+### 2.1. Open Terrace Defect Notebook.
 
 First, open `create_terrace_defect.ipynb`and select Pt as the input material.
 
-### 2.2. Configure Terrace Parameters
+### 2.2. Configure Terrace Parameters.
 
 `CUT_DIRECTION = [0, 1, 1]`  -- Normal vector for cutting plane, which will give a perfect periodic match along x and a match along y after rotation.
 `DEFAULT_SLAB_PARAMETERS["miller_indices"] = (1, 1, 1)`  -- Miller indices for Pt(111) surface
@@ -92,29 +92,40 @@ First, open `create_terrace_defect.ipynb`and select Pt as the input material.
 
 
 ```python
-MATERIAL_INDEX = 0  # Which material to use from input list
+# Material selection
+# Which material to use from input list
+MATERIAL_INDEX = 0  
 
-CUT_DIRECTION = [0, 1, 1]  # Normal vector describing a plane that cuts the terrace from added layers (Miller indices)
-PIVOT_COORDINATE = [0.5, 0.5, 0.5]  # Point the cutting plane passes through, in crystal coordinates
-NUMBER_OF_ADDED_LAYERS = 1  # Height of terrace in atomic layers
-USE_CARTESIAN_COORDINATES = False  # Use cartesian instead of crystal coordinates
-ROTATE_TO_MATCH_PBC = True  # Rotate to match periodic boundary conditions
+# Terrace parameters:
+# Normal vector describing a plane that cuts the terrace from added layers (Miller indices)
+CUT_DIRECTION = [0,1,1]  
+# Point the cutting plane passes through, in crystal coordinates
+PIVOT_COORDINATE = [0.5, 0.5, 0.5] 
+# Height of terrace in atomic layers
+NUMBER_OF_ADDED_LAYERS = 1  
+# Use cartesian instead of crystal coordinates
+USE_CARTESIAN_COORDINATES = False  
+# Rotate to match periodic boundary conditions
+ROTATE_TO_MATCH_PBC = True  
 
+# Slab parameters for creating a new slab if provided material is not a slab
 DEFAULT_SLAB_PARAMETERS = {
-    "miller_indices": (1, 1, 1),
+    "miller_indices": (1,1,1),
     "thickness": 6,
     "vacuum": 10.0,
     "use_orthogonal_z": True,
     "xy_supercell_matrix": [[2, 0], [0, 2]]
 }
 
+# Visualization parameters
 SHOW_INTERMEDIATE_STEPS = True
-CELL_REPETITIONS_FOR_VISUALIZATION = [3, 3, 1]  # Structure repeat in view
+# Structure repeat in view
+CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]  
 ```
 
 ![Terrace Parameters](/images/tutorials/materials/defects/defect_surface_step_platinum/4-jl-setup-nb-terrace.webp "Terrace Parameters")
 
-### 2.3. Create the Terrace
+### 2.3. Create the Terrace.
 
 Run the notebook to create the Pt(111) surface with a terrace step.
 
@@ -122,7 +133,7 @@ Run the notebook to create the Pt(111) surface with a terrace step.
 
 The user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following JupyterLite notebook demonstrates both approaches. Select "Run" > "Run All Cells" to execute the notebook.
 
@@ -134,10 +145,10 @@ The following JupyterLite notebook demonstrates both approaches. Select "Run" > 
 {% endwith %}
 {% endwith %}
 
-## References
+## References.
 
-1. Šljivančanin, Ž., & Hammer, B., "Oxygen dissociation at close-packed Pt terraces, Pt steps, and Ag-covered Pt steps studied with density functional theory." Surface Science, 515(1), 235–244.
+1. Šljivančanin, Ž., & Hammer, B., "Oxygen dissociation at close-packed Pt terraces, Pt steps, and Ag-covered Pt steps studied with density functional theory." Surface Science, 515(1), 235–244. [DOI: 10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'}.
 
-## Tags
+## Tags.
 
 `surface`, `platinum`, `terrace`, `step`, `slab`, `Pt(211)`, `Pt(111)`
