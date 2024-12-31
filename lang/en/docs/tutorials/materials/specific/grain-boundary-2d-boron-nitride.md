@@ -38,7 +38,7 @@ Select "Advanced > [JupyterLite Transformation](../../../materials-designer/head
 Find and open `create_grain_boundary_film.ipynb`. Edit the grain boundary parameters in section 1.1:
 
 `TARGET_TWIST_ANGLE = 9.0` -- As described in the manuscript.
-`ANGLE_TOLERANCE = 0.5` -- Tolerance for twist angle matching, in degrees. 
+`ANGLE_TOLERANCE = 0.5` -- Tolerance for twist angle matching, in degrees.
 `BOUNDARY_GAP = 0.0` -- Gap between two phases in X direction, should be set to 0.0 for seamless boundary.
 `DISTANCE_TOLERANCE = 1.43` -- Distance tolerance for atom merging, in Angstroms. Set to be smaller than the B-N length to avoid symmetrical atoms.
 `EDGE_INCLUSION_TOLERANCE = 0.0` -- Edge inclusion parameter, in Angstroms. Controls the overlap of the second phase onto the first phase.
@@ -119,11 +119,12 @@ The user can pass the material with substitution defects in the current Material
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
-## 5. Relaxation
+## 5. Manual Adjustment
 
-The relaxation can be performed elsewhere, and the resulting structure will be similar to the one shown in the manuscript.
+To fill the gaps between two phases edge atoms can be adjusted manually in Materials Designer 3D editor.
+The resulting structure should be similar to the one shown in the manuscript.
 
-![Relaxed Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/8-wave-result-final-gb-relaxed.webp "Relaxed Structure")
+![Adjusted Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/8-wave-result-final-gb-relaxed.webp "Adjusted Structure")
 
 ## Interactive JupyterLite Notebook
 
