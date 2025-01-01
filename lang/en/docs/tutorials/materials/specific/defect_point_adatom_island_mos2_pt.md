@@ -17,37 +17,21 @@ This tutorial demonstrates how to create a platinum island on MoS2 by sequential
 
 We will recreate the Pt island structure shown in Figure 4b:
 
-![Pt Island on MoS2](/images/tutorials/materials/defects/pt_island_mos2/fig4b-paper.webp "Pt island formation on MoS2")
+![Pt Island on MoS2](/images/tutorials/materials/defects/pt_island_mos2/0-figure-from-manuscript.webp "Pt island formation on MoS2")
 
 ## 1. Create MoS2 Substrate
 
 ### 1.1. Load Base Material
 
-Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the MoS2 2D material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) using the search term "MoS2.*2D".
+Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the MoS2 2D material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 ### 1.2. Launch JupyterLite Session
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-### 1.3. Open `create_point_defect.ipynb` Notebook
+### 1.3. Open `create_adatom_defect.ipynb` Notebook
 
-Find and open the `create_point_defect.ipynb` notebook. We'll use this notebook multiple times to add Pt adatoms sequentially.
-
-### 1.4. Create MoS2 Slab
-
-First, set up the slab parameters in the notebook:
-
-```python
-# Slab parameters
-MILLER_INDICES = (0, 0, 1)
-SLAB_THICKNESS = 1  # Single layer
-VACUUM = 10.0  # in Angstrom
-SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]
-```
-
-Run the slab creation cells to create a 3×3 supercell of MoS2.
-
-![MoS2 Slab](/images/tutorials/materials/defects/pt_island_mos2/mos2-slab.webp "3×3 MoS2 Slab")
+Find and open the `create_adatom_defect.ipynb` notebook. We'll use this notebook multiple times to add Pt adatoms sequentially.
 
 ## 2. Add Pt Adatoms
 
@@ -64,6 +48,12 @@ CHEMICAL_ELEMENT = "Pt"
 APPROXIMATE_POSITION_ON_SURFACE = [5/9, 4/9]  # Atop central Mo
 DISTANCE_Z = 1.2  # Distance from surface S atoms
 USE_CARTESIAN_COORDINATES = False
+
+# Slab parameters
+MILLER_INDICES = (0, 0, 1)
+SLAB_THICKNESS = 1  # Single layer
+VACUUM = 10.0  # in Angstrom
+SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]
 ```
 
 Run the notebook to add the first Pt atom.
@@ -72,12 +62,24 @@ Run the notebook to add the first Pt atom.
 
 ### 2.2. Second Pt Atom
 
-Modify the position for the second Pt atom:
+Reopen the notebook and modify the position for the second Pt atom:
 
 ```python
-APPROXIMATE_POSITION_ON_SURFACE = [2/9, 4/9]  # Next clockwise atop Mo
-DISTANCE_Z = 1.2
+DEFECT_TYPE = "adatom"
+PLACEMENT_METHOD = "coordinate"
+CHEMICAL_ELEMENT = "Pt"
+APPROXIMATE_POSITION_ON_SURFACE = [5/9, 4/9]  # Atop central Mo
+DISTANCE_Z = 1.2  # Distance from surface S atoms
+USE_CARTESIAN_COORDINATES = False
+
+# Slab parameters
+MILLER_INDICES = (0, 0, 1)
+SLAB_THICKNESS = 1  # Single layer
+VACUUM = 0.0  # in Angstrom
+SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 ```
+
+This time the supercell is set to a 1x1x1 and vacuum to 0.0 to not change the substrate.
 
 ### 2.3. Third Pt Atom
 
@@ -94,29 +96,34 @@ Finally, add the topmost Pt atom:
 
 ```python
 APPROXIMATE_POSITION_ON_SURFACE = [4/9, 5/9]  # Atop S
-DISTANCE_Z = 2.8  # DISTANCE_Z_S_Pt + DISTANCE_Z_Pt_Pt
+DISTANCE_Z = 1.6  #  # Distance between Pt atom layers, in Angstrom
 ```
 
-![Complete Island](/images/tutorials/materials/defects/pt_island_mos2/complete-island.webp "Complete Pt island structure")
+![Complete Island](/images/tutorials/materials/defects/pt_island_mos2/4-wave-result-top.webp "Complete Pt island structure")
+
+![Complete Island, side view](/images/tutorials/materials/defects/pt_island_mos2/5-wave-result-side.webp "Complete Pt island structure, side view")
 
 ## 3. Analyze the Structure
 
 After adding all Pt atoms, verify the following:
 
 ### 3.1. Base Layer Geometry
+
 - Three Pt atoms should form a triangular base
 - Each base Pt should be positioned atop Mo atoms
 - Distance from surface S atoms should be ~1.2 Å
 
 ### 3.2. Top Atom Position
+
 - Fourth Pt should be centered above the triangle
 - Position should be approximately above a surface S atom
 - Height should be ~2.8 Å from surface (1.6 Å from base Pt atoms)
 
 ## 4. Save the Structure
 
-The final structure will be automatically passed back to Materials Designer where you can:
-1. Save it in your workspace
+The final structure will be automatically passed back to Materials Designer where user can:
+
+1. Save it in userr workspace
 2. Export it in various formats
 3. Use it for further calculations
 
@@ -126,7 +133,7 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/pt_island_mos2.ipynb' %}
+{% with notebook_name='specific_examples/defect_point_adatom_island_mos2_pt.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
