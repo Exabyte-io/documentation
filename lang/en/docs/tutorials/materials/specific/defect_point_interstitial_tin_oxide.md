@@ -17,7 +17,7 @@ This tutorial demonstrates how to create an oxygen interstitial defect in tin mo
 
 We will recreate the O-interstitial defect structure shown in Fig. 4b:
 
-![SnO O-interstitial](/images/tutorials/materials/defects/sno_defect/fig4b-paper.webp "O-interstitial defect in SnO")
+![SnO O-interstitial](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO")
 
 ## 1. Prepare Base Structure
 
@@ -25,7 +25,7 @@ We will recreate the O-interstitial defect structure shown in Fig. 4b:
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the SnO material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) using the search term "SnO".
 
-![Standata SnO Import](/images/tutorials/materials/defects/sno_defect/standata-import.webp "Import SnO from Standata")
+![Original SnO](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/2-wave-original-material.webp "SnO from Standata, 2x2 repetitions")
 
 ### 1.2. Launch JupyterLite Session
 
@@ -33,7 +33,9 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 ### 1.3. Open `create_defect.ipynb` Notebook
 
-Find and open the `create_defect.ipynb` notebook. We'll modify its parameters to create the O-interstitial defect.
+Find and open the `create_defect.ipynb` notebook. Select "SnO" input material.
+
+We'll modify its parameters to create the O-interstitial defect.
 
 ### 1.4. Set Defect Parameters
 
@@ -51,6 +53,7 @@ DEFECT_CONFIGS = [{
     "placement_method": "voronoi_site"  # Use Voronoi analysis to find interstitial site
 }]
 ```
+![Defect Parameters](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/3-jl-setup-nb.webp "Defect parameters for O-interstitial in SnO")
 
 Key parameters explained:
 
@@ -63,13 +66,7 @@ Key parameters explained:
 
 ### 2.1. Run Supercell Creation
 
-Run the notebook cells through section 1.4 to create the supercell. Verify the structure looks correct:
-
-![SnO Supercell](/images/tutorials/materials/defects/sno_defect/sno-supercell.webp "SnO supercell structure")
-
-### 2.2. Create Defect Structure
-
-Continue running the notebook through sections 2.1 and 2.2. The notebook will:
+Run the notebook by selecting "Run" > "Run All Cells". This will:
 
 1. Initialize the defect configuration
 2. Create the O-interstitial at the specified position
@@ -78,6 +75,8 @@ Continue running the notebook through sections 2.1 and 2.2. The notebook will:
 ## 3. Analyze Results
 
 After creating the defect, examine the structure to verify:
+
+![SnO with O-interstitial defect](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/4-wave-result-material.webp "SnO with O-interstitial defect")
 
 ### 3.1. Defect Position
 
@@ -90,8 +89,6 @@ After creating the defect, examine the structure to verify:
 - Check distances to nearest Sn and O atoms
 - Verify no unrealistic atom overlaps
 - Confirm overall crystal structure is maintained
-
-![Final Structure](/images/tutorials/materials/defects/sno_defect/final-structure.webp "SnO with O-interstitial defect")
 
 ## 4. Save Defect Structure
 
@@ -136,10 +133,6 @@ To adjust the defect creation:
 
 1. Togo, A., Oba, F., & Tanaka, I. (2006). First-principles calculations of native defects in tin monoxide. Physical Review B, 74(19), 195128.
 
-2. Walsh, A., & Watson, G. W. (2004). Electronic structures of rocksalt, litharge, and herzenbergite SnO by density functional theory. Physical Review B, 70(23), 235114.
-
-3. Ogo, Y., et al. (2008). p-channel thin-film transistor using p-type oxide semiconductor, SnO. Applied Physics Letters, 93(3), 032113.
-
 ## Tags
 
-`SnO`, `defects`, `interstitial`, `oxygen`, `point defects`, `Sn`, `O`
+`SnO`, `defects`, `interstitial`, `voronoi`, `oxygen`, `point defects`, `Sn`, `O`
