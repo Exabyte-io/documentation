@@ -1,0 +1,145 @@
+---
+# YAML header
+render_macros: true
+---
+
+# O-interstitial Defect in SnO
+
+## Introduction
+
+This tutorial demonstrates how to create an oxygen interstitial defect in tin monoxide (SnO), following the methodology described in the literature.
+
+!!!note "Manuscript"
+    A. Togo, F. Oba, and I. Tanaka
+    "First-principles calculations of native defects in tin monoxide"
+    Physical Review B 74, 195128 (2006)
+    [DOI: 10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'}.
+
+We will recreate the O-interstitial defect structure shown in Fig. 4b:
+
+![SnO O-interstitial](/images/tutorials/materials/defects/sno_defect/fig4b-paper.webp "O-interstitial defect in SnO")
+
+## 1. Prepare Base Structure
+
+### 1.1. Load Base Material
+
+Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the SnO material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) using the search term "SnO".
+
+![Standata SnO Import](/images/tutorials/materials/defects/sno_defect/standata-import.webp "Import SnO from Standata")
+
+### 1.2. Launch JupyterLite Session
+
+Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
+
+### 1.3. Open `create_defect.ipynb` Notebook
+
+Find and open the `create_defect.ipynb` notebook. We'll modify its parameters to create the O-interstitial defect.
+
+### 1.4. Set Defect Parameters
+
+Replace the default parameters in section 1.1 with:
+
+```python
+# Supercell parameters
+SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
+# Defect parameters
+DEFECT_CONFIGS = [{
+    "defect_type": "interstitial",
+    "coordinate": [0.0, 0.5, 0.5],  # Position from the paper
+    "chemical_element": "O",
+    "placement_method": "voronoi_site"  # Use Voronoi analysis to find interstitial site
+}]
+```
+
+Key parameters explained:
+
+- `defect_type`: "interstitial" for adding an extra atom
+- `coordinate`: Position specified in crystal coordinates
+- `chemical_element`: "O" for oxygen interstitial
+- `placement_method`: "voronoi_site" to place atom at appropriate interstitial position
+
+## 2. Create the Defect
+
+### 2.1. Run Supercell Creation
+
+Run the notebook cells through section 1.4 to create the supercell. Verify the structure looks correct:
+
+![SnO Supercell](/images/tutorials/materials/defects/sno_defect/sno-supercell.webp "SnO supercell structure")
+
+### 2.2. Create Defect Structure
+
+Continue running the notebook through sections 2.1 and 2.2. The notebook will:
+
+1. Initialize the defect configuration
+2. Create the O-interstitial at the specified position
+3. Generate the final defect structure
+
+## 3. Analyze Results
+
+After creating the defect, examine the structure to verify:
+
+### 3.1. Defect Position
+
+- O interstitial should be at (0.0, 0.5, 0.5) in crystal coordinates
+- Position should be in a void space between Sn-O layers
+- Verify symmetry of surrounding atoms
+
+### 3.2. Local Structure
+
+- Check distances to nearest Sn and O atoms
+- Verify no unrealistic atom overlaps
+- Confirm overall crystal structure is maintained
+
+![Final Structure](/images/tutorials/materials/defects/sno_defect/final-structure.webp "SnO with O-interstitial defect")
+
+## 4. Save Defect Structure
+
+The defect structure will be automatically passed back to Materials Designer where you can:
+
+1. Save it in your workspace
+2. Export it in various formats
+3. Use it for further calculations
+
+## Interactive JupyterLite Notebook
+
+The following embedded notebook demonstrates the complete process. Select "Run" > "Run All Cells".
+
+{% with origin_url=config.extra.jupyterlite.origin_url %}
+{% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
+{% with notebook_name='specific_examples/defect_point_interstitial_tin_oxide.ipynb' %}
+{% include 'jupyterlite_embed.html' %}
+{% endwith %}
+{% endwith %}
+{% endwith %}
+{% include 'jupyterlite_embed.html' %}
+{% endwith %}
+{% endwith %}
+{% endwith %}
+
+## Parameter Fine-tuning
+
+To adjust the defect creation:
+
+1. Position Adjustment:
+
+   - Modify `coordinate` to place interstitial at different positions
+   - Try different `placement_method` options ("coordinate", "voronoi_site")
+   - Adjust position to match experimental observations
+
+2. Structure Size:
+
+   - Change `SUPERCELL_MATRIX` for larger/smaller systems
+   - Consider periodic boundary conditions effects
+
+## References
+
+1. Togo, A., Oba, F., & Tanaka, I. (2006). First-principles calculations of native defects in tin monoxide. Physical Review B, 74(19), 195128.
+
+2. Walsh, A., & Watson, G. W. (2004). Electronic structures of rocksalt, litharge, and herzenbergite SnO by density functional theory. Physical Review B, 70(23), 235114.
+
+3. Ogo, Y., et al. (2008). p-channel thin-film transistor using p-type oxide semiconductor, SnO. Applied Physics Letters, 93(3), 032113.
+
+## Tags
+
+`SnO`, `defects`, `interstitial`, `oxygen`, `point defects`, `Sn`, `O`
