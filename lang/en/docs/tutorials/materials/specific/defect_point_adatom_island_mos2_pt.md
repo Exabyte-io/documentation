@@ -56,9 +56,11 @@ VACUUM = 10.0  # in Angstrom
 SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]
 ```
 
+![Adatom Setup](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/1-jl-setup-nb.webp "Pt adatom setup")
+
 Run the notebook to add the first Pt atom.
 
-![First Pt](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/pt1-added.webp "First Pt atom added")
+![First Pt Adatom](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/2-jl-result-preview.webp "First Pt atom added")
 
 ### 2.2. Second Pt Atom
 
@@ -78,6 +80,8 @@ SLAB_THICKNESS = 1  # Single layer
 VACUUM = 0.0  # in Angstrom
 SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 ```
+
+![Second Pt Adatom](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/3-jl-setup-nb.webp "Second Pt atom setup")
 
 This time the supercell is set to a 1x1x1 and vacuum to 0.0 to not change the substrate.
 
