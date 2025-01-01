@@ -17,7 +17,7 @@ This tutorial demonstrates how to create a platinum island on MoS2 by sequential
 
 We will recreate the Pt island structure shown in Figure 4b:
 
-![Pt Island on MoS2](/images/tutorials/materials/defects/pt_island_mos2/0-figure-from-manuscript.webp "Pt island formation on MoS2")
+![Pt Island on MoS2](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/0-figure-from-manuscript.webp "Pt island formation on MoS2")
 
 ## 1. Create MoS2 Substrate
 
@@ -58,7 +58,7 @@ SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]
 
 Run the notebook to add the first Pt atom.
 
-![First Pt](/images/tutorials/materials/defects/pt_island_mos2/pt1-added.webp "First Pt atom added")
+![First Pt](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/pt1-added.webp "First Pt atom added")
 
 ### 2.2. Second Pt Atom
 
@@ -99,9 +99,9 @@ APPROXIMATE_POSITION_ON_SURFACE = [4/9, 5/9]  # Atop S
 DISTANCE_Z = 1.6  #  # Distance between Pt atom layers, in Angstrom
 ```
 
-![Complete Island](/images/tutorials/materials/defects/pt_island_mos2/4-wave-result-top.webp "Complete Pt island structure")
+![Complete Island](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/4-wave-result-top.webp "Complete Pt island structure")
 
-![Complete Island, side view](/images/tutorials/materials/defects/pt_island_mos2/5-wave-result-side.webp "Complete Pt island structure, side view")
+![Complete Island, side view](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/5-wave-result-side.webp "Complete Pt island structure, side view")
 
 ## 3. Analyze the Structure
 
