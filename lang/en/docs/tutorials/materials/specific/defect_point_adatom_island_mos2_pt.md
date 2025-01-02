@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# Pt Adatom Island on MoS2
+# Pt Nanoparticles on MoS2(001) Surface via Adatoms
 
 ## Introduction
 
@@ -29,79 +29,68 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-### 1.3. Open `create_adatom_defect.ipynb` Notebook
+### 1.3. Open `create_point_defect.ipynb` Notebook
 
-Find and open the `create_adatom_defect.ipynb` notebook. We'll use this notebook multiple times to add Pt adatoms sequentially.
+Find and open the `create_point_defect.ipynb` notebook. We'll configure all Pt adatoms at once using the new multiple defect configuration.
 
-## 2. Add Pt Adatoms
+## 2. Configure and Create Structure
 
-We'll add four Pt atoms sequentially to form the island. Each atom needs specific parameters to achieve the correct structure.
+### 2.1. Set Parameters
 
-### 2.1. First Pt Atom (Base)
-
-Set the following parameters for the first Pt atom:
+Set up the slab and defect parameters in the notebook:
 
 ```python
-DEFECT_TYPE = "adatom"
-PLACEMENT_METHOD = "coordinate"
-CHEMICAL_ELEMENT = "Pt"
-APPROXIMATE_POSITION_ON_SURFACE = [5/9, 4/9]  # Atop central Mo
-DISTANCE_Z = 1.2  # Distance from surface S atoms
-USE_CARTESIAN_COORDINATES = False
-
 # Slab parameters
-MILLER_INDICES = (0, 0, 1)
+MILLER_INDICES = (0, 0, 1)  # MoS2 basal plane
 SLAB_THICKNESS = 1  # Single layer
 VACUUM = 10.0  # in Angstrom
-SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]
+SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]  # 3x3 supercell
+
+# Defect configurations for all Pt atoms
+DEFECT_CONFIGS = [
+    {
+        "defect_type": "adatom",
+        "placement_method": "coordinate",
+        "chemical_element": "Pt",
+        "position_on_surface": [5/9, 4/9],  # First Pt: atop central Mo
+        "distance_z": 1.2, # Distance from surface S atoms
+        "use_cartesian_coordinates": False
+    },
+    {
+        "defect_type": "adatom",
+        "placement_method": "coordinate",
+        "chemical_element": "Pt",
+        "position_on_surface": [2/9, 4/9],  # Second Pt: next clockwise atop Mo
+        "distance_z": 1.2, # Distance from surface S atoms
+        "use_cartesian_coordinates": False
+    },
+    {
+        "defect_type": "adatom",
+        "placement_method": "coordinate",
+        "chemical_element": "Pt",
+        "position_on_surface": [5/9, 7/9],  # Third Pt: next clockwise atop Mo
+        "distance_z": 1.2, # Distance from surface S atoms
+        "use_cartesian_coordinates": False
+    },
+    {
+        "defect_type": "adatom",
+        "placement_method": "coordinate",
+        "chemical_element": "Pt",
+        "position_on_surface": [4/9, 5/9],  # Fourth Pt: centered atop S
+        "distance_z": 1.6,  # Distance between Pt atom layers, in Angstrom
+        "use_cartesian_coordinates": False
+    }
+]
 ```
 
-![Adatom Setup](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/1-jl-setup-nb.webp "Pt adatom setup")
+Key parameters explained:
 
-Run the notebook to add the first Pt atom.
-
-![First Pt Adatom](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/2-jl-result-preview.webp "First Pt atom added")
-
-### 2.2. Second Pt Atom
-
-Reopen the notebook and modify the position for the second Pt atom:
-
-```python
-DEFECT_TYPE = "adatom"
-PLACEMENT_METHOD = "coordinate"
-CHEMICAL_ELEMENT = "Pt"
-APPROXIMATE_POSITION_ON_SURFACE = [5/9, 4/9]  # Atop central Mo
-DISTANCE_Z = 1.2  # Distance from surface S atoms
-USE_CARTESIAN_COORDINATES = False
-
-# Slab parameters
-MILLER_INDICES = (0, 0, 1)
-SLAB_THICKNESS = 1  # Single layer
-VACUUM = 0.0  # in Angstrom
-SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
-```
-
-![Second Pt Adatom](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/3-jl-setup-nb.webp "Second Pt atom setup")
-
-This time the supercell is set to a 1x1x1 and vacuum to 0.0 to not change the substrate.
-
-### 2.3. Third Pt Atom
-
-Add the third Pt atom:
-
-```python
-APPROXIMATE_POSITION_ON_SURFACE = [5/9, 7/9]  # Next clockwise atop Mo
-DISTANCE_Z = 1.2
-```
-
-### 2.4. Fourth Pt Atom (Top)
-
-Finally, add the topmost Pt atom:
-
-```python
-APPROXIMATE_POSITION_ON_SURFACE = [4/9, 5/9]  # Atop S
-DISTANCE_Z = 1.6  #  # Distance between Pt atom layers, in Angstrom
-```
+- Base layer Pt atoms (first three configs):
+  * Positioned atop Mo atoms in a triangular arrangement
+  * Height 1.2 Å from surface S atoms to achieve separation from Mo atoms of 2.8 A -- from publication
+- Top Pt atom (fourth config):
+  * Centered above the triangle, atop S atom
+  * Height 1.6 Å from surface (1.6 Å from base Pt atoms)
 
 ![Complete Island](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/4-wave-result-top.webp "Complete Pt island structure")
 
