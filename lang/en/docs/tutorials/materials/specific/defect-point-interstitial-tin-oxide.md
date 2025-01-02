@@ -3,7 +3,7 @@
 render_macros: true
 ---
 
-# O-interstitial Defect in SnO
+# Oxygen interstitial Defect(s) in SnO.
 
 ## Introduction
 
@@ -15,7 +15,7 @@ This tutorial demonstrates how to create an oxygen interstitial defect in tin mo
     Physical Review B 74, 195128 (2006)
     [DOI: 10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'}.
 
-We will recreate the O-interstitial defect structure shown in Fig. 4b:
+We will recreate the O-interstitial defect structure shown in Fig. 4b using [Voronoi](https://github.com/Exabyte-io/made/blob/9e13b350eaaa5d49c81a3b30f76c165480825d72/src/py/mat3ra/made/tools/build/defect/builders.py#L125) placement method.
 
 ![SnO O-interstitial](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO")
 
@@ -109,10 +109,7 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 {% endwith %}
 {% endwith %}
 {% endwith %}
-{% include 'jupyterlite_embed.html' %}
-{% endwith %}
-{% endwith %}
-{% endwith %}
+
 
 ## Parameter Fine-tuning
 
