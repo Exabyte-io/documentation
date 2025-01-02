@@ -86,16 +86,25 @@ DEFECT_CONFIGS = [
 Key parameters explained:
 
 - Base layer Pt atoms (first three configs):
+
   * Positioned atop Mo atoms in a triangular arrangement
   * Height 1.2 Å from surface S atoms to achieve separation from Mo atoms of 2.8 A -- from publication
 - Top Pt atom (fourth config):
+
   * Centered above the triangle, atop S atom
-  * Height 1.6 Å from surface (1.6 Å from base Pt atoms)
+  * Height 1.6 Å from base Pt atoms (as they become the new surface layer)
+
 - `distance_z` sets the distance along the z-axis from the adatom to the topmost atom directly below it
+
+![Adatoms Setup](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/1-jl-setup-nb.webp "Pt adatoms setup")
 
 ### 2.2. Run the Notebook
 
 Execute the notebook to create the Pt island structure on MoS2 by selecting "Run" > "Run All Cells" from the JupyterLite menu.
+
+![Results Preview](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/2-jl-result-preview.webp "Pt island results preview")
+
+### 2.3. Pass the Result to Materials Designer
 
 The result can be passed to Materials Designer for visualization and viewed from the top:
 
