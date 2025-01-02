@@ -29,9 +29,9 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-### 1.3. Open `create_point_defect.ipynb` Notebook
+### 1.3. Open `create_adatom_defect.ipynb` Notebook
 
-Find and open the `create_point_defect.ipynb` notebook. We'll configure all Pt adatoms at once using the new multiple defect configuration.
+Find and open the `create_adatom_defect.ipynb` notebook. Select MoS2 as input material.
 
 ## 2. Configure and Create Structure
 
@@ -91,8 +91,17 @@ Key parameters explained:
 - Top Pt atom (fourth config):
   * Centered above the triangle, atop S atom
   * Height 1.6 Å from surface (1.6 Å from base Pt atoms)
+- `distance_z` sets the distance along the z-axis from the adatom to the topmost atom directly below it
+
+### 2.2. Run the Notebook
+
+Execute the notebook to create the Pt island structure on MoS2 by selecting "Run" > "Run All Cells" from the JupyterLite menu.
+
+The result can be passed to Materials Designer for visualization and viewed from the top:
 
 ![Complete Island](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/4-wave-result-top.webp "Complete Pt island structure")
+
+And from the side:
 
 ![Complete Island, side view](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/5-wave-result-side.webp "Complete Pt island structure, side view")
 
@@ -105,6 +114,7 @@ After adding all Pt atoms, verify the following:
 - Three Pt atoms should form a triangular base
 - Each base Pt should be positioned atop Mo atoms
 - Distance from surface S atoms should be ~1.2 Å
+- Relaxation is needed to achieve the exact geometry from the publication, can be performed elsewhere
 
 ### 3.2. Top Atom Position
 
@@ -116,9 +126,9 @@ After adding all Pt atoms, verify the following:
 
 The final structure will be automatically passed back to Materials Designer where user can:
 
-1. Save it in userr workspace
+1. Save it on the platform
 2. Export it in various formats
-3. Use it for further calculations
+3. Use it for further transformations
 
 ## Interactive JupyterLite Notebook
 
