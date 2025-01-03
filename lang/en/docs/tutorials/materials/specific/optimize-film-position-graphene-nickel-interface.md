@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Graphene/Ni(111) Interface Optimization
+# Graphene/Ni(111) Interface Optimization.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates how to create and optimize a Graphene/Ni(111) interface structure following the experimental observations presented in the literature. We will focus on finding the most energetically favorable position of graphene on the Ni(111) surface.
 
@@ -19,23 +19,23 @@ We will recreate the interface structure and optimize the film position to match
 
 ![Gr/Ni Interface](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/0-figure-from-manuscript.webp "Optimal position of graphene on Ni(111)")
 
-## 1. Create Interface Structure
+## 1. Create Interface Structure.
 
-### 1.1. Load Base Materials
+### 1.1. Load Base Materials.
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import both graphene and nickel materials from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 ![Import Graphene and Ni](/images/materials-designer/import/import_from_standata.webp "Import Gr and Ni from Standata")
 
-### 1.2. Launch JupyterLite Session
+### 1.2. Launch JupyterLite Session.
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-### 1.3. Open `create_interface_with_min_strain_zsl.ipynb` notebook
+### 1.3. Open `create_interface_with_min_strain_zsl.ipynb` notebook.
 
 Find and open the `create_interface_with_min_strain_zsl.ipynb` notebook. This notebook will help us create the initial interface structure.
 
-### 1.4. Set up interface parameters
+### 1.4. Set up interface parameters.
 
 Edit the notebook parameters to create the Gr/Ni(111) interface:
 
@@ -57,7 +57,7 @@ INTERFACE_VACUUM = 20.0  # in Angstrom
 
 ![Interface Parameters](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/2-jl-setup-nb-interface.webp "Interface parameters for Gr/Ni(111)")
 
-### 1.5. Run interface creation
+### 1.5. Run interface creation.
 
 Run the notebook using "Run > Run All Cells". This will:
 
@@ -65,13 +65,13 @@ Run the notebook using "Run > Run All Cells". This will:
 2. Find the optimal lattice matching using the ZSL algorithm
 3. Generate the initial interface structure
 
-## 2. Optimize Film Position
+## 2. Optimize Film Position.
 
-### 2.1. Open `optimize_film_position.ipynb` notebook
+### 2.1. Open `optimize_film_position.ipynb` notebook.
 
 Find and open the `optimize_film_position.ipynb` notebook which will help us find the optimal position of the graphene layer.
 
-### 2.2. Set optimization parameters
+### 2.2. Set optimization parameters.
 
 Configure the optimization parameters:
 
@@ -93,7 +93,7 @@ Key parameters explained:
 
 ![Optimization Parameters](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/3-jl-setup-nb-final.webp "Optimization parameters for Gr/Ni(111)")
 
-### 2.3. Run optimization
+### 2.3. Run optimization.
 
 Run all cells in the notebook. The optimization will:
 
@@ -105,7 +105,7 @@ Run all cells in the notebook. The optimization will:
 
 ![Energy Heatmap](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/5-energy-heatmap.webp "Energy heatmap of film positions")
 
-## 3. Analyze Results
+## 3. Analyze Results.
 
 Compare the original and optimized interface structures to see the difference in the graphene position.
 
@@ -114,14 +114,14 @@ Compare the original and optimized interface structures to see the difference in
 ![Final Interface](/images/tutorials/materials/optimization/optimize_film_position_graphene_nickel_interface/7-wave-result-final.webp "Optimized Gr/Ni Interface")
 
 
-## 4. Save Optimized Structure
+## 4. Save Optimized Structure.
 
 The optimized interface structure will be automatically passed back to Materials Designer where you can:
 1. Save it in the workspace
 2. Export it in various formats (JSON, POSCAR, etc.)
 3. Use it for further calculations
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following JupyterLite notebook demonstrates the complete process. Select "Run" > "Run All Cells".
 
@@ -133,7 +133,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 {% endwith %}
 {% endwith %}
 
-## Parameter Fine-tuning
+## Parameter Fine-tuning.
 
 To adjust the interface optimization:
 
@@ -147,7 +147,7 @@ To adjust the interface optimization:
    - Adjust `GRID_RANGE` to search different areas
    - Enable 3D visualization with `SHOW_3D_LANDSCAPE = True`
 
-## References
+## References.
 
 1. Dahal, A., & Batzill, M. (2014). Graphene–nickel interfaces: a review. Nanoscale, 6(5), 2548-2562. [DOI: 10.1039/c3nr05279f](https://doi.org/10.1039/c3nr05279f)
 
@@ -155,6 +155,6 @@ To adjust the interface optimization:
 
 3. Bertoni, G., Calmels, L., Altibelli, A., & Serin, V. (2004). First-principles calculation of the electronic structure and EELS spectra at the graphene/Ni(111) interface. Physical Review B, 71(7). [DOI: 10.1103/PhysRevB.71.075402](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.075402)
 
-## Tags
+## Tags.
 
 `graphene`, `nickel`, `interface`, `optimization`, `2D materials`, `surface science`, `Gr/Ni(111)`, `C`, `Ni`

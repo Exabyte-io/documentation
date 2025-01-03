@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Pt Nanoparticles on MoS2(001) Surface via Adatoms
+# Pt Nanoparticles on MoS2(001) Surface via Adatoms.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates how to create a platinum island on MoS2 by sequentially adding Pt adatoms, following the methodology described in the literature.
 
@@ -19,23 +19,23 @@ We will recreate the Pt island structure shown in Figure 4b:
 
 ![Pt Island on MoS2](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/0-figure-from-manuscript.webp "Pt island formation on MoS2")
 
-## 1. Create MoS2 Substrate
+## 1. Create MoS2 Substrate.
 
-### 1.1. Load Base Material
+### 1.1. Load Base Material.
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the MoS2 2D material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-### 1.2. Launch JupyterLite Session
+### 1.2. Launch JupyterLite Session.
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-### 1.3. Open `create_adatom_defect.ipynb` Notebook
+### 1.3. Open `create_adatom_defect.ipynb` Notebook.
 
 Find and open the `create_adatom_defect.ipynb` notebook. Select MoS2 as input material.
 
-## 2. Configure and Create Structure
+## 2. Configure and Create Structure.
 
-### 2.1. Set Parameters
+### 2.1. Set Parameters.
 
 Set up the slab and defect parameters in the notebook:
 
@@ -98,13 +98,13 @@ Key parameters explained:
 
 ![Adatoms Setup](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/1-jl-setup-nb.webp "Pt adatoms setup")
 
-### 2.2. Run the Notebook
+### 2.2. Run the Notebook.
 
 Execute the notebook to create the Pt island structure on MoS2 by selecting "Run" > "Run All Cells" from the JupyterLite menu.
 
 ![Results Preview](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/2-jl-result-preview.webp "Pt island results preview")
 
-### 2.3. Pass the Result to Materials Designer
+### 2.3. Pass the Result to Materials Designer.
 
 The result can be passed to Materials Designer for visualization and viewed from the top:
 
@@ -114,24 +114,24 @@ And from the side:
 
 ![Complete Island, side view](/images/tutorials/materials/defects/defect_point_adatom_island_mos2_pt/5-wave-result-side.webp "Complete Pt island structure, side view")
 
-## 3. Analyze the Structure
+## 3. Analyze the Structure.
 
 After adding all Pt atoms, verify the following:
 
-### 3.1. Base Layer Geometry
+### 3.1. Base Layer Geometry.
 
 - Three Pt atoms should form a triangular base
 - Each base Pt should be positioned atop Mo atoms
 - Distance from surface S atoms should be ~1.2 Å
 - Relaxation is needed to achieve the exact geometry from the publication, can be performed elsewhere
 
-### 3.2. Top Atom Position
+### 3.2. Top Atom Position.
 
 - Fourth Pt should be centered above the triangle
 - Position should be approximately above a surface S atom
 - Height should be ~2.8 Å from surface (1.6 Å from base Pt atoms)
 
-## 4. Save the Structure
+## 4. Save the Structure.
 
 The final structure will be automatically passed back to Materials Designer where user can:
 
@@ -139,7 +139,7 @@ The final structure will be automatically passed back to Materials Designer wher
 2. Export it in various formats
 3. Use it for further transformations
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following embedded notebook demonstrates the complete process. Select "Run" > "Run All Cells".
 
@@ -151,7 +151,7 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 {% endwith %}
 {% endwith %}
 
-## Parameter Fine-tuning
+## Parameter Fine-tuning.
 
 To adjust the island structure:
 
@@ -163,7 +163,7 @@ To adjust the island structure:
    - Adjust position to change island shape
    - Modify height to change Pt-Pt spacing
 
-## References
+## References.
 
 1. Saidi, W. A. (2015). Density Functional Theory Study of Nucleation and Growth of Pt Nanoparticles on MoS2(001) Surface. Crystal Growth & Design, 15(2), 642–652. [DOI: 10.1021/cg5013395](https://doi.org/10.1021/cg5013395){:target='_blank'}.
 
@@ -176,6 +176,6 @@ To adjust the island structure:
 5. Mahbube Hortamani, Peter Kratzer, and Matthias Scheffler, "Density-functional study of Mn monosilicide on the Si(111) surface:
 Film formation versus island nucleation", Phys. Rev. B 76, 235426 (2007). [DOI: 10.1103/PhysRevB.76.235426](https://doi.org/10.1103/PhysRevB.76.235426){:target='_blank'}.
 
-## Tags
+## Tags.
 
 `MoS2`, `platinum`, `adatoms`, `surface science`, `2D materials`, `nanoparticles`, `Mo`, `S`, `Pt`

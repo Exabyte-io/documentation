@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Gold Nanoclusters
+# Gold Nanoclusters.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates the process of creating a gold nanoparticle structures based on the work presented in the following manuscript.
 
@@ -20,7 +20,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 ![Gold Nanoparticles](/images/tutorials/materials/0d_materials/nanocluster_gold/0-manuscript-image.webp "Fig. 2. Gold Nanoparticles")
 
-## 1. Load and preview Gold structure
+## 1. Load and preview Gold structure.
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the Gold material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
@@ -28,15 +28,15 @@ First, we navigate to [Materials Designer](../../../materials-designer/overview.
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create gold nanoparticle structures.
 
-## 2. Create cuboctahedra
+## 2. Create cuboctahedra.
 
-### 2.1 Launch JupyterLite Session
+### 2.1 Launch JupyterLite Session.
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
 ![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 2.2. Open and modify the notebook
+### 2.2. Open and modify the notebook.
 
 Next, edit `create_cluster_ase.ipynb` notebook to modify the parameters by changing values:
 
@@ -57,13 +57,13 @@ parameters = {
 
 ![Setup for cuboctahedron cluster](/images/tutorials/materials/0d_materials/nanocluster_gold/2-jl-setup.webp "Setup for cuboctahedron cluster")
 
-### 2.3. Run the notebook
+### 2.3. Run the notebook.
 
 Run the notebook by selecting "Run > Run All Cells" from the menu.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
-### 2.4. Analyze the Results
+### 2.4. Analyze the Results.
 
 After running the notebook, the octahedral gold nanoparticle structure will be created. 
 
@@ -73,7 +73,7 @@ For better view of the solid symmetry rotation of image might be needed like `"r
 
 ![Cuboctahedron Gold Nanocluster](/images/tutorials/materials/0d_materials/nanocluster_gold/3-jl-result-preview.webp "Cuboctahedron Gold Nanocluster")
 
-### 2.5. Pass the Material to the Materials Designer
+### 2.5. Pass the Material to the Materials Designer.
 
 After reviewing the results, the user can pass the material to Materials Designer for further analysis.
 
@@ -81,9 +81,9 @@ After reviewing the results, the user can pass the material to Materials Designe
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
-## 3. Create clusters with other shapes and sizes
+## 3. Create clusters with other shapes and sizes.
 
-### 3.1. Repeat the steps above
+### 3.1. Repeat the steps above.
 
 Repeat the steps above to create gold nanoparticle structures with other shapes and sizes.
 
@@ -146,7 +146,7 @@ parameters = {
 
 ![Icosahedron 309](/images/tutorials/materials/0d_materials/nanocluster_gold/jl-result-preview-icosahedron-309.webp "Icosahedron 309")
 
-## Interactive JupiterLite Notebook
+## Interactive JupiterLite Notebook.
 
 The interactive JupyterLite notebook for creating Gold Nanoclusters can be accessed below. To run the notebook, click on the "Run All" button.
 
@@ -158,7 +158,7 @@ The interactive JupyterLite notebook for creating Gold Nanoclusters can be acces
 {% endwith %}
 {% endwith %}
 
-## References
+## References.
 
 1. **A. H. Larsen, J. Kleis, K. S. Thygesen, J. K. Nørskov, and K. W. Jacobsen**,
    "Electronic shell structure and chemisorption on gold nanoparticles",
@@ -166,6 +166,6 @@ The interactive JupyterLite notebook for creating Gold Nanoclusters can be acces
    [DOI: 10.1103/PhysRevB.84.245429](https://doi.org/10.1103/PhysRevB.84.245429){:target='_blank'}.
 
 
-## Tags
+## Tags.
 
 `gold`, `cluster`, `nanoparticle`, `cuboctahedron`, `icosahedron`
