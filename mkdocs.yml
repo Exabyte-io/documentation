@@ -230,6 +230,7 @@ nav:
                 - Twisted Bilayer MoS2 commensurate lattices:                tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
                 - Adatom Surface Defects on Graphene:                          tutorials/materials/specific/defect-surface-adatom-graphene.md
                 - H-Passivated Silicon Nanowire:                                      tutorials/materials/specific/passivation-edge-silicon-nanowire.md
+                - H-Passivated Silicon (100) Surface:                           tutorials/materials/specific/passivation-surface-silicon-surface.md
                 - Gold Nanoclusters:                                             tutorials/materials/specific/nanocluster-gold.md
                 - SrTiO3 Slab:                                                  tutorials/materials/specific/slab-strontium-titanate.md
                 - Interface between Graphene and h-BN:                          tutorials/materials/specific/interface-2d-2d-graphene-boron-nitride.md
@@ -240,6 +241,7 @@ nav:
                 - Grain Boundary in FCC Metals (Copper):                                tutorials/materials/specific/grain-boundary-3d-fcc-metals-copper.md
                 - Grain Boundary (2D) in h-BN:                                   tutorials/materials/specific/grain-boundary-2d-boron-nitride.md
                 - Gr/Ni(111) Interface Optimization:                                     tutorials/materials/specific/optimize-film-position-graphene-nickel-interface.md
+                - Pt Adatoms Island on MoS2:                                    tutorials/materials/specific/defect_point_adatom_island_mos2_pt.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
