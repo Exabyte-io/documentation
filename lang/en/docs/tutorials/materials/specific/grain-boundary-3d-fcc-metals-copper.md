@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Grain Boundaries in FCC Metals (Copper)
+# Grain Boundaries in FCC Metals (Copper).
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates the process of creating grain boundary structures in FCC metals, specifically copper, based on the work presented in the following manuscript, where structural phase transformations in metallic grain boundaries are studied.
 
@@ -17,9 +17,9 @@ We will focus on creating copper grain boundary structures similar to Figure 1b 
 
 ![Copper Grain Boundary](/images/tutorials/materials/defects/grain_boundary_fcc_metal/0-figure-from-manuscript.webp "Copper Grain Boundary, FIG. 1")
 
-## 1. Create Initial Copper Structure
+## 1. Create Initial Copper Structure.
 
-### 1.1. Load Copper Material
+### 1.1. Load Copper Material.
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the copper material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
@@ -29,13 +29,13 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 
 ![Copper Material Import](/images/tutorials/materials/defects/grain_boundary_fcc_metal/1-standata-import-cu.webp "Copper Material Import")
 
-### 1.2. Launch JupyterLite Session
+### 1.2. Launch JupyterLite Session.
 
 Select "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" to open JupyterLite.
 
 ![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 1.3. Open and Configure Notebook
+### 1.3. Open and Configure Notebook.
 
 Find and open `create_grain_boundary.ipynb`. Edit the grain boundary parameters in section 1.1 of the notebook:
 
@@ -79,16 +79,16 @@ These parameters will create:
 
 ![Grain Boundary Parameters](/images/tutorials/materials/defects/grain_boundary_fcc_metal/2-jl-setup-nb.webp "Grain Boundary Parameters")
 
-## 2. Run the Notebook
+## 2. Run the Notebook.
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu.
 
 ![Run All](/images/jupyterlite/run-all.webp "Run All")
 
 
-## 3. Analyze the Results
+## 3. Analyze the Results.
 
-### 3.1. Review the Structure
+### 3.1. Review the Structure.
 
 After running the notebook, user can visualize the grain boundary structure:
 
@@ -98,7 +98,7 @@ After running the notebook, user can visualize the grain boundary structure:
 
 ![Grain Boundary Preview](/images/tutorials/materials/defects/grain_boundary_fcc_metal/3-jl-result-preview.webp "Grain Boundary Preview")
 
-### 3.2. Structure Details
+### 3.2. Structure Details.
 
 The resulting structure should show:
 
@@ -114,7 +114,7 @@ Grain boundary from the top (XY) and side (XZ) views:
 
 The structure has differences from the original figure in the manuscript, since grain boundary achieved by strain-matching two symmetrical surfaces with no changes to either surfaces. Discrepancies might be removed with further adjustments like shifting the phases, removing atom layers and reconstructing the interface.
 
-## 4. Save the Structure
+## 4. Save the Structure.
 
 The final structure can be:
 
@@ -122,7 +122,7 @@ The final structure can be:
 2. [Saved or downloaded](../../../materials-designer/header-menu/input-output.md) in Material JSON format
 3. Exported as a POSCAR file
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following JupyterLite notebook demonstrates the complete process. Select "Run" > "Run All Cells".
 
@@ -134,10 +134,10 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 {% endwith %}
 {% endwith %}
 
-## References
+## References.
 
 1. Timofey Frolov, David L. Olmsted, Mark Asta & Yuri Mishin, "Structural phase transformations in metallic grain boundaries", Nature Communications, volume 4, Article number: 1899 (2013). [DOI: 10.1038/ncomms2919](https://www.nature.com/articles/ncomms2919)
 
-## Tags
+## Tags.
 
 `grain boundary`, `interface`, `copper`, `Cu`,  `FCC`, `metal`

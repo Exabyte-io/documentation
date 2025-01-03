@@ -3,9 +3,9 @@
 render_macros: true
 ---
 
-# Creating High-k Metal Gate Stack: Si/SiO2/HfO2/TiN
+# Creating High-k Metal Gate Stack: Si/SiO2/HfO2/TiN.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates how to create a high-k metal gate stack heterostructure consisting of four materials: Si (substrate), SiO2 (gate oxide), HfO2 (high-k dielectric), and TiN (metal gate). The process involves:
 
@@ -17,7 +17,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 ![High-k Metal Gate Stack](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/original-figure.webp "High-k Metal Gate Stack")
 
-## 1. Set Up Materials
+## 1. Set Up Materials.
 
 First, navigate to Materials Designer and import from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) the following materials:
 
@@ -28,11 +28,11 @@ First, navigate to Materials Designer and import from [Standata](../../../materi
 
 ![Standata Import](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/import-standata.webp "Standata Import")
 
-## 2. Create HfO2 and TiN Slabs
+## 2. Create HfO2 and TiN Slabs.
 
 Before building the stack, we need to create properly terminated slabs for HfO2 and TiN.
 
-### 2.1. Create HfO2 Slab
+### 2.1. Create HfO2 Slab.
 
 More detailed instructions on slab creation can be found in the [SrTiO3 Slab](slab-strontium-titanate.md) tutorial.
 
@@ -55,7 +55,7 @@ Run the notebook to create the HfO2 slab and pass it to Materials Designer.
 
 ![HfO2 slab](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/wave-result-hfo2-slab-wave.webp "HfO2 slab")
 
-### 2.2. Create TiN Slab
+### 2.2. Create TiN Slab.
 
 Open another instance of `create_slab_with_termination.ipynb` for TiN:
 
@@ -75,9 +75,9 @@ Run the notebook to create and pass the TiN slab to Materials Designer.
 
 ![TiN slab](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/wave-result-tin-slab.webp "TiN slab")
 
-## 3. Create Si/SiO2 Interface
+## 3. Create Si/SiO2 Interface.
 
-### 3.1. Launch ZSL Interface Builder
+### 3.1. Launch ZSL Interface Builder.
 
 Open `create_interface_with_min_strain_zsl.ipynb` and configure:
 
@@ -110,13 +110,13 @@ We set a higher tolerances to achieve smaller cell with higher strain of the fil
 
 ![Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/jl-setup-notebook-si-sio2.webp "Interface Setup")
 
-### 3.2. Create Initial Interface
+### 3.2. Create Initial Interface.
 
 Run the notebook to create the Si/SiO2 interface. This is the most critical interface, so we use strain matching to optimize it.
 
-## 4. Add HfO2 Layer
+## 4. Add HfO2 Layer.
 
-### 4.1. Configure Simple Interface Builder
+### 4.1. Configure Simple Interface Builder.
 
 Open JupyterLite Session again and select the Si/SiO2 interface and HfO2 slab as input materials.
 
@@ -139,15 +139,15 @@ Film is the material that will be strained (scaled) to match the substrate.
 
 ![HfO2 Interface Setup](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/jl-setup-notebook-si-sio2-hfo2.webp "HfO2 Interface Setup")
 
-### 4.2. Add HfO2
+### 4.2. Add HfO2.
 
 Run the notebook to add the pre-created HfO2 slab to the Si/SiO2 structure.
 
 ![Si/SiO2/HfO2](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/wave-result-si-sio2-hfo2.webp "Si/SiO2/HfO2")
 
-## 5. Add TiN Layer
+## 5. Add TiN Layer.
 
-### 5.1. Configure Final Layer Addition
+### 5.1. Configure Final Layer Addition.
 
 Similar to steps in Section 4, we add the TiN layer to the Si/SiO2/HfO2 stack.
 
@@ -166,7 +166,7 @@ INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 10.0  # Final vacuum spacing
 ```
 
-### 5.2. Complete the Stack
+### 5.2. Complete the Stack.
 
 Run the notebook to add the TiN layer and complete the stack.
 
@@ -174,7 +174,7 @@ Run the notebook to add the TiN layer and complete the stack.
 
 The user then can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following JupyterLite notebook demonstrates the process of creating target material. Select "Run" > "Run All Cells".
 
@@ -186,7 +186,7 @@ The following JupyterLite notebook demonstrates the process of creating target m
 {% endwith %}
 {% endwith %}
 
-## References
+## References.
 
 1. [QuantumATK tutorial](https://docs.quantumatk.com/tutorials/hkmg_builder/hkmg_builder.html)
 
@@ -200,6 +200,6 @@ The following JupyterLite notebook demonstrates the process of creating target m
     Reports on Progress in Physics 69, 327 (2006)
     [DOI: 10.1088/0034-4885/69/2/R02](https://doi.org/10.1088/0034-4885/69/2/R02)
 
-## Tags
+## Tags.
 
 `slab-creation`, `interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`, `Si`, `SiO2`, `HfO2`, `TiN`
