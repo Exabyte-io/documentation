@@ -241,6 +241,7 @@ nav:
                 - Grain Boundary in FCC Metals (Copper):                                tutorials/materials/specific/grain-boundary-3d-fcc-metals-copper.md
                 - Grain Boundary (2D) in h-BN:                                   tutorials/materials/specific/grain-boundary-2d-boron-nitride.md
                 - Gr/Ni(111) Interface Optimization:                                     tutorials/materials/specific/optimize-film-position-graphene-nickel-interface.md
+                - Pt Adatoms Island on MoS2:                                    tutorials/materials/specific/defect_point_adatom_island_mos2_pt.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
