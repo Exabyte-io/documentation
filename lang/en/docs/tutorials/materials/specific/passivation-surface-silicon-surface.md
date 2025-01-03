@@ -1,4 +1,16 @@
 ---
+tags:
+  - silicon
+  - surface
+  - passivation
+  - hydrogen
+  - Si(100)
+  - surface reconstruction
+  - Si
+  - H
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -180,6 +192,3 @@ To adjust the passivation:
 
 3. Boland, J. J. (1990). Structure of the H‐saturated Si(100) surface. Physical Review Letters, 65(26), 3325–3328.
 
-## Tags.
-
-`silicon`, `surface`, `passivation`, `hydrogen`, `Si(100)`, `surface reconstruction`, `Si`, `H`

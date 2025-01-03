@@ -1,4 +1,14 @@
 ---
+tags:
+  - graphene
+  - ripples
+  - perturbation
+  - 2D materials
+  - edge effects
+  - C
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -181,6 +191,3 @@ If user need to adjust the ripple pattern, user can modify these key parameters:
 
 3. L. A. Openov & A. I. Podlivaev, "Interaction of the Stone-Wales defects in graphene", Physics of the Solid State, 52, 1, 2010. [DOI: 10.1134/S1063783415070240](https://doi.org/10.1134/S1063783415070240)
 
-## Tags.
-
-`graphene`, `ripples`, `perturbation`, `2D materials`, `edge effects`, `C`

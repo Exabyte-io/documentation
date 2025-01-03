@@ -1,4 +1,17 @@
 ---
+tags:
+  - graphene
+  - nickel
+  - interface
+  - optimization
+  - 2D materials
+  - surface science
+  - Gr/Ni(111)
+  - C
+  - Ni
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -155,6 +168,3 @@ To adjust the interface optimization:
 
 3. Bertoni, G., Calmels, L., Altibelli, A., & Serin, V. (2004). First-principles calculation of the electronic structure and EELS spectra at the graphene/Ni(111) interface. Physical Review B, 71(7). [DOI: 10.1103/PhysRevB.71.075402](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.71.075402)
 
-## Tags.
-
-`graphene`, `nickel`, `interface`, `optimization`, `2D materials`, `surface science`, `Gr/Ni(111)`, `C`, `Ni`

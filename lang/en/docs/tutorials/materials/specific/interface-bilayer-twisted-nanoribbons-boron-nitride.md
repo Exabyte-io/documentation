@@ -1,4 +1,14 @@
 ---
+tags:
+  - twisted-bilayer
+  - nanoribbons
+  - boron-nitride
+  - BN
+  - boron
+  - nitrogen
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -115,8 +125,4 @@ The interactive JupyterLite notebook for creating the twisted bilayer boron nitr
 
 1. **Lede Xian, Dante M. Kennes, Nicolas Tancogne-Dejean, Massimo Altarelli, and Angel Rubio**, 
     "Multiflat Bands and Strong Correlations in Twisted Bilayer Boron Nitride: Doping-Induced Correlated Insulator and Superconductor" Phys. Rev. Lett. 125, 086402 – Published 20 August 2020 DOI: 10.1021/acs.nanolett.9b00986
-
-## Tags.
-
-`twisted-bilayer`,`nanoribbons`, `boron-nitride`,  `BN`, `boron`, `nitrogen`
 

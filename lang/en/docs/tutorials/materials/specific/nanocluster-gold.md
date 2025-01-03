@@ -1,4 +1,13 @@
 ---
+tags:
+  - gold
+  - cluster
+  - nanoparticle
+  - cuboctahedron
+  - icosahedron
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -166,6 +175,3 @@ The interactive JupyterLite notebook for creating Gold Nanoclusters can be acces
    [DOI: 10.1103/PhysRevB.84.245429](https://doi.org/10.1103/PhysRevB.84.245429){:target='_blank'}.
 
 
-## Tags.
-
-`gold`, `cluster`, `nanoparticle`, `cuboctahedron`, `icosahedron`

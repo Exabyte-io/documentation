@@ -1,4 +1,13 @@
 ---
+tags:
+  - slab
+  - strontium titanate
+  - SrTiO3
+  - terminations
+  - surface
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -133,6 +142,3 @@ The following JupyterLite notebook demonstrates the process of creating strontiu
 
 2. Atashi B. Mukhopadhyay, Javier F. Sanz, and Charles B. Musgrave "First-principles calculations of structural and electronic properties of monoclinic hafnia surfaces", Phys. Rev. B 73, 115330 (2006) DOI: [10.1103/PhysRevB.73.115330](https://doi.org/10.1103/PhysRevB.73.115330)
 
-## Tags.
-
-`slab`, `strontium titanate`, `SrTiO3`, `terminations`, `surface`

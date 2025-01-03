@@ -1,4 +1,18 @@
 ---
+tags:
+  - defects
+  - defect pair
+  - substitutional
+  - vacancy
+  - point defects
+  - impurities
+  - doped semiconductors
+  - nitrogen
+  - GaN
+  - gallium nitride
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -125,6 +139,3 @@ The following JupyterLite notebook demonstrates the process of creating material
    "Self-compensation due to point defects in Mg-doped GaN", Physical Review B, 2016.
    [DOI: 10.1103/PhysRevB.93.165207](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.165207){:target='_blank'}.
 
-## Tags.
-
-`defects`, `defect pair`, `substitutional`, `vacancy`, `point defects`, `impurities`, `doped semiconductors`,  `nitrogen`, `GaN`, `gallium nitride`

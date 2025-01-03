@@ -1,4 +1,15 @@
 ---
+tags:
+  - 3D
+  - copper
+  - cristobalite
+  - interface
+  - termination
+  - SiO2
+  - Cu
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -136,6 +147,3 @@ The interactive JupyterLite notebook for creating interfaces between Copper and 
     Molecular dynamics study of the adhesion of Cu/SiO2interfaces using a variable-charge interatomic potential. Physical Review B, 83(11). 
     [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327)
 
-## Tags.
-
-`3D`, `copper`, `cristobalite`, `interface`, `termination`, `SiO2`, `Cu`

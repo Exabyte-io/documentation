@@ -1,4 +1,15 @@
 ---
+tags:
+  - surface
+  - platinum
+  - terrace
+  - step
+  - slab
+  - Pt(211)
+  - Pt(111)
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -153,6 +164,3 @@ The following JupyterLite notebook demonstrates both approaches. Select "Run" > 
 
 1. Šljivančanin, Ž., & Hammer, B., "Oxygen dissociation at close-packed Pt terraces, Pt steps, and Ag-covered Pt steps studied with density functional theory." Surface Science, 515(1), 235–244. [DOI: 10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'}.
 
-## Tags.
-
-`surface`, `platinum`, `terrace`, `step`, `slab`, `Pt(211)`, `Pt(111)`

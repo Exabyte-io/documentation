@@ -1,4 +1,14 @@
 ---
+tags:
+  - grain-boundary
+  - h-BN
+  - 2D-materials
+  - interface
+  - twist-angle
+  - atom-restoration
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -142,6 +152,3 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 1. Qiucheng Li, et al., "Grain Boundary Structures and Electronic Properties of Hexagonal Boron Nitride on Cu(111)", ACS Nano 2015 9 (6), 6308-6315. [DOI: 10.1021/acs.nanolett.5b01852](https://doi.org/10.1021/acs.nanolett.5b01852)
 
-## Tags.
-
-`grain-boundary`, `h-BN`, `2D-materials`, `interface`, `twist-angle`, `atom-restoration`

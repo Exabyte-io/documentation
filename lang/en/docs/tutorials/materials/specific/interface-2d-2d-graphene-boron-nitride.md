@@ -1,4 +1,13 @@
 ---
+tags:
+  - 2D
+  - Graphene
+  - Hexagonal Boron Nitride
+  - interface
+  - stacking
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -169,6 +178,3 @@ The interactive JupyterLite notebook for creating Gr/h-BN interface can be acces
     RSC Adv., 2024, 4, 1-10
     [DOI: 10.1039/D3RA06559F](https://doi.org/10.1039/D3RA06559F)
 
-## Tags.
-
-`2D`, `Graphene`, `Hexagonal Boron Nitride`, `interface`, `stacking`

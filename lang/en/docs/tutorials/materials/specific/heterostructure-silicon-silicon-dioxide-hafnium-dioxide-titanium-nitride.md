@@ -1,4 +1,19 @@
 ---
+tags:
+  - slab-creation
+  - interfaces
+  - high-k
+  - metal-gate
+  - semiconductor
+  - heterostructure
+  - strain-matching
+  - Si
+  - SiO2
+  - HfO2
+  - TiN
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -200,6 +215,3 @@ The following JupyterLite notebook demonstrates the process of creating target m
     Reports on Progress in Physics 69, 327 (2006)
     [DOI: 10.1088/0034-4885/69/2/R02](https://doi.org/10.1088/0034-4885/69/2/R02)
 
-## Tags.
-
-`slab-creation`, `interfaces`, `high-k`, `metal-gate`, `semiconductor`, `heterostructure`, `strain-matching`, `Si`, `SiO2`, `HfO2`, `TiN`

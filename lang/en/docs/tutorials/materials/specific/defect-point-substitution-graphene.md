@@ -1,4 +1,13 @@
 ---
+tags:
+  - defects
+  - graphene
+  - substitutional
+  - point-defects
+  - nitrogen
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -139,6 +148,3 @@ The following JupyterLite notebook demonstrates the process of creating material
 1. Yoshitaka Fujimoto and Susumu Saito, "Formation, stabilities, and electronic properties of nitrogen defects in graphene", Physical Review B, 2011. [DOI: 10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}.
 
 
-## Tags.
-
-`defects`, `graphene`, `substitutional`, `point-defects`, `nitrogen`

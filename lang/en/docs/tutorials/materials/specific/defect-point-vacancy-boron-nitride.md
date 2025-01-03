@@ -1,4 +1,14 @@
 ---
+tags:
+  - defects
+  - vacancy
+  - point-defects
+  - h-BN
+  - boron-nitride
+  - 2D-materials
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -133,6 +143,3 @@ The following JupyterLite notebooks demonstrate the complete process. Select "Ru
 
 2. Kohan A. F., Ceder G., Morgan D., Van de Walle C. G. (2000). First-principles study of native point defects in h-BN. Physical Review B, 61(23), 15019-15027. [DOI:10.1103/PhysRevB.61.15019](https://doi.org/10.1103/PhysRevB.61.15019){:target='_blank'}.
 
-## Tags.
-
-`defects`, `vacancy`, `point-defects`, `h-BN`, `boron-nitride`, `2D-materials`

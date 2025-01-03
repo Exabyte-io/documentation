@@ -1,4 +1,15 @@
 ---
+tags:
+  - defects
+  - island
+  - surface
+  - surface-defects
+  - TiN
+  - nitrogen
+  - titanium
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -176,6 +187,3 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 1.  D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene, "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
 
-## Tags.
-
-`defects`, `island`, `surface`, `surface-defects`, `TiN`, `nitrogen`, `titanium`

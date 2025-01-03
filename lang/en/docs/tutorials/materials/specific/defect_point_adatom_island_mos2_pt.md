@@ -1,4 +1,17 @@
 ---
+tags:
+  - MoS2
+  - platinum
+  - adatoms
+  - surface science
+  - 2D materials
+  - nanoparticles
+  - Mo
+  - S
+  - Pt
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -176,6 +189,3 @@ To adjust the island structure:
 5. Mahbube Hortamani, Peter Kratzer, and Matthias Scheffler, "Density-functional study of Mn monosilicide on the Si(111) surface:
 Film formation versus island nucleation", Phys. Rev. B 76, 235426 (2007). [DOI: 10.1103/PhysRevB.76.235426](https://doi.org/10.1103/PhysRevB.76.235426){:target='_blank'}.
 
-## Tags.
-
-`MoS2`, `platinum`, `adatoms`, `surface science`, `2D materials`, `nanoparticles`, `Mo`, `S`, `Pt`

@@ -1,4 +1,15 @@
 ---
+tags:
+  - 2d-materials
+  - layers
+  - bilayer
+  - twisted
+  - commensurate
+  - molybdenum
+  - disulfide
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -146,6 +157,3 @@ The interactive JupyterLite notebook for creating twisted bilayer MoS2 structure
 1. Kaihui Liu, Liming Zhang, Ting Cao, Chenhao Jin, Diana Qiu, Qin Zhou, Alex Zettl, Peidong Yang, Steve G. Louie & Feng Wang, "Evolution of interlayer coupling in twisted molybdenum disulfide bilayers" Nature Communications volume 5, Article number: 4966 (2014) [DOI: 10.1038/ncomms5966](https://doi.org/10.1038/ncomms5966)
 2. Cao, Y., Fatemi, V., Fang, S. et al. Unconventional superconductivity in magic-angle graphene superlattices. Nature 556, 43–50 (2018). [DOI: 10.1038/nature26160](https://doi.org/10.1038/nature26160)
 
-## Tags.
-
-`2d-materials`, `layers`, `bilayer`, `twisted`, `commensurate`, `molybdenum`, `disulfide`

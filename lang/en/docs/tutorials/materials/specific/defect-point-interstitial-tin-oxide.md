@@ -1,4 +1,16 @@
 ---
+tags:
+  - SnO
+  - defects
+  - interstitial
+  - voronoi
+  - oxygen
+  - point defects
+  - Sn
+  - O
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -152,6 +164,3 @@ To adjust the defect creation:
    [DOI: 10.1103/PhysRevB.73.125205](https://doi.org/10.1103/PhysRevB.73.125205){:target='_blank'}.
 
 
-## Tags.
-
-`SnO`, `defects`, `interstitial`, `voronoi`, `oxygen`, `point defects`, `Sn`, `O`
