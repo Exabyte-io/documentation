@@ -15,7 +15,7 @@ This tutorial demonstrates how to create an oxygen interstitial defect in tin mo
     Physical Review B 74, 195128 (2006)
     [DOI: 10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'}.
 
-We will recreate the O-interstitial defect structure shown in Fig. 4b using [Voronoi](https://github.com/Exabyte-io/made/blob/9e13b350eaaa5d49c81a3b30f76c165480825d72/src/py/mat3ra/made/tools/build/defect/builders.py#L125) placement method.
+We will recreate the O-interstitial defect structure shown in Fig. 4 a) using [Voronoi](https://github.com/Exabyte-io/made/blob/9e13b350eaaa5d49c81a3b30f76c165480825d72/src/py/mat3ra/made/tools/build/defect/builders.py#L125) placement method.
 
 ![SnO O-interstitial](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO")
 
@@ -25,7 +25,7 @@ We will recreate the O-interstitial defect structure shown in Fig. 4b using [Vor
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the SnO material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) using the search term "SnO".
 
-![Original SnO](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/2-wave-original-material.webp "SnO from Standata, 2x2 repetitions")
+![Original SnO](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/2-wave-original-material.webp "SnO from Standata, 2x2x2 repetitions")
 
 ### 1.2. Launch JupyterLite Session
 
@@ -35,7 +35,7 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 
 Find and open the `create_defect.ipynb` notebook. Select "SnO" input material.
 
-We'll modify its parameters to create the O-interstitial defect.
+We'll modify its parameters to create the Sn-vacancy O-interstitial defects according to the image above.
 
 ### 1.4. Set Defect Parameters
 
@@ -43,19 +43,34 @@ Replace the default parameters in section 1.1 with:
 
 ```python
 # Supercell parameters
-SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+SUPERCELL_MATRIX = [[2, 0, 0], [0, 2, 0], [0, 0, 2]]
 
 # Defect parameters
-DEFECT_CONFIGS = [{
-    "defect_type": "interstitial",
-    "coordinate": [0.0, 0.5, 0.5],  # Position from the paper
-    "chemical_element": "O",
-    "placement_method": "voronoi_site"  # Use Voronoi analysis to find interstitial site
-}]
+DEFECT_CONFIGS = [
+    {
+        "defect_type": "vacancy",
+        # Coordiante will be resolved to nearest atom
+        "approximate_coordinate": [0.0, 0.25, 0.525],
+    },
+    {
+        "defect_type": "interstitial",
+        # Coordiante will be resolved to nearest Voronoi site
+        "coordinate": [0.0, 0.25, 0.35], 
+        "chemical_element": "O",
+        "placement_method": "voronoi_site"
+    }
+]
 ```
 ![Defect Parameters](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/3-jl-setup-nb.webp "Defect parameters for O-interstitial in SnO")
 
 Key parameters explained:
+
+First defect:
+
+- `defect_type`: "vacancy" for removing an atom
+- `approximate_coordinate`: Position specified in crystal coordinates (Sn as in publication)
+
+Second defect:
 
 - `defect_type`: "interstitial" for adding an extra atom
 - `coordinate`: Position specified in crystal coordinates
