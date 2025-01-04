@@ -135,7 +135,4 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## References.
 
-1. **Giacomo Miceli, Alfredo Pasquarello**,
-   "Self-compensation due to point defects in Mg-doped GaN", Physical Review B, 2016.
-   [DOI: 10.1103/PhysRevB.93.165207](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.165207){:target='_blank'}.
-
+Cite the following works: [@Miceli2016]

@@ -129,14 +129,4 @@ The interactive JupyterLite notebook for creating interfaces between graphene an
 
 ## References.
 
-1. **Yong-Ju Kang, Joongoo Kang, and K. J. Chang**
-    "Electronic structure of graphene and doping effect on SiO2"
-    Physical Review B 78, 115404 (2008)
-    [DOI: 10.1103/PhysRevB.78.115404](https://doi.org/10.1103/PhysRevB.78.115404)
-
-
-2. **Arjun Dahala  and  Matthias Batzill**
-    "Graphene–nickel interfaces: a review"
-    Nanoscale 6, 2548-2562 (2014)
-    [DOI: 10.1039/C3NR05279F](https://doi.org/10.1039/C3NR05279F)
-
+Cite the following works: [@Kang2008; @Dahal2014]

@@ -178,14 +178,5 @@ To adjust the island structure:
 
 ## References.
 
-1. Saidi, W. A. (2015). Density Functional Theory Study of Nucleation and Growth of Pt Nanoparticles on MoS2(001) Surface. Crystal Growth & Design, 15(2), 642–652. [DOI: 10.1021/cg5013395](https://doi.org/10.1021/cg5013395){:target='_blank'}.
-
-2. Jiao, M., Song, W., Qian, H.-J., Wang, Y., Wu, Z., Irle, S., & Morokuma, K. (2016). QM/MD studies on graphene growth from small islands on the Ni(111) surface. Nanoscale, 8(5), 3067–3074. doi:10.1039/c5nr07680c  [DOI: 10.1039/c5nr07680c](https://doi.org/10.1039/c5nr07680c){:target='_blank'}.
-
-3. Kristen A. Fichthorn and Matthias Scheffler, "Island Nucleation in Thin-Film Epitaxy: A First-Principles Investigation", Phys. Rev. Lett. 84, 5371 (2000). [DOI: 10.1103/PhysRevLett.84.5371](https://doi.org/10.1103/PhysRevLett.84.5371){:target='_blank'}.
-
-4. Jörg Neugebauer and Matthias Scheffler, "Mechanisms of island formation of alkali-metal adsorbates on Al(111)", Phys. Rev. Lett. 71, 577 (1993). [DOI: 10.1103/PhysRevLett.71.577](https://doi.org/10.1103/PhysRevLett.71.577){:target='_blank'}.
-
-5. Mahbube Hortamani, Peter Kratzer, and Matthias Scheffler, "Density-functional study of Mn monosilicide on the Si(111) surface:
-Film formation versus island nucleation", Phys. Rev. B 76, 235426 (2007). [DOI: 10.1103/PhysRevB.76.235426](https://doi.org/10.1103/PhysRevB.76.235426){:target='_blank'}.
+Cite the following works: [@Saidi2015], [@Jiao2016], [@Fichthorn2000], [@Neugebauer1993], [@Hortamani2007]
 

@@ -146,5 +146,4 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 ## References.
 
-1. Timofey Frolov, David L. Olmsted, Mark Asta & Yuri Mishin, "Structural phase transformations in metallic grain boundaries", Nature Communications, volume 4, Article number: 1899 (2013). [DOI: 10.1038/ncomms2919](https://www.nature.com/articles/ncomms2919)
-
+Cite the following work: [@Frolov2013]

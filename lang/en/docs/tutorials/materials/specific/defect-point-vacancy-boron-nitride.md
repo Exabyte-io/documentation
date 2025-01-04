@@ -139,7 +139,5 @@ The following JupyterLite notebooks demonstrate the complete process. Select "Ru
 
 ## References.
 
-1. Fabian Bertoldo, Sajid Ali, Simone Manti & Kristian S. Thygesen, "Quantum point defects in 2D materials - the QPOD database", Nature, 2022. [DOI:10.1038/s41524-022-00730-w](https://doi.org/10.1038/s41524-022-00730-w){:target='_blank'}.
-
-2. Kohan A. F., Ceder G., Morgan D., Van de Walle C. G. (2000). First-principles study of native point defects in h-BN. Physical Review B, 61(23), 15019-15027. [DOI:10.1103/PhysRevB.61.15019](https://doi.org/10.1103/PhysRevB.61.15019){:target='_blank'}.
+Cite the following works: [@Bertoldo2022; @Kohan2000]
 
