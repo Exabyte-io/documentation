@@ -155,12 +155,4 @@ To adjust the defect creation:
 
 ## References.
 
-1. Togo, A., Oba, F., & Tanaka, I. (2006). First-principles calculations of native defects in tin monoxide. Physical Review B, 74(19), 195128. [DOI: 10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'}.
-
-2. H. Wang, A. Chroneos, C. A. Londos, E. N. Sgourou & U. Schwingenschlögl, "Carbon related defects in irradiated silicon revisited" Scientific Reports 4, 4909 (2014).
-   [DOI: 10.1038/srep04909](https://doi.org/10.1038/srep04909){:target='_blank'}.
-
-3. Sutassana Na-Phattalung, M. F. Smith, Kwiseon Kim, Mao-Hua Du, Su-Huai Wei, S. B. Zhang, and Sukit Limpijumnong, "First-principles study of native defects in anatase Ti⁢O2", Phys. Rev. B 73, 125205 (2006).
-   [DOI: 10.1103/PhysRevB.73.125205](https://doi.org/10.1103/PhysRevB.73.125205){:target='_blank'}.
-
-
+Cite the following works: [@Togo2006], [@Wang2014], and [@Na-Phattalung2006].
