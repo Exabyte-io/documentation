@@ -24,8 +24,7 @@ This tutorial demonstrates the process of creating interfaces between 3D materia
     **Shan, T.-R., Devine, B. D., Phillpot, S. R., & Sinnott, S. B.** 
     "Molecular dynamics study of the adhesion of Cu/SiO2interfaces using a variable-charge interatomic potential."
     Physical Review B, 83(11). 
-    [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327) 
-
+    [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327) [@Shan2011].
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create interfaces between Cu and Cristobalite with different termination pairs.
 
@@ -142,8 +141,3 @@ The interactive JupyterLite notebook for creating interfaces between Copper and 
 {% endwith %}
 
 ## References.
-
-1. Shan, T.-R., Devine, B. D., Phillpot, S. R., & Sinnott, S. B. (2011). 
-    Molecular dynamics study of the adhesion of Cu/SiO2interfaces using a variable-charge interatomic potential. Physical Review B, 83(11). 
-    [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327)
-

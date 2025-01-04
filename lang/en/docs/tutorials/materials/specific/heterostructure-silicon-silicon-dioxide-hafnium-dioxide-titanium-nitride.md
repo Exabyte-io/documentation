@@ -203,15 +203,5 @@ The following JupyterLite notebook demonstrates the process of creating target m
 
 ## References.
 
-1. [QuantumATK tutorial](https://docs.quantumatk.com/tutorials/hkmg_builder/hkmg_builder.html)
-
-2. **D. A. Muller et al.**
-    "The electronic structure at the atomic scale of ultrathin gate oxides"
-    Nature 399, 758–761 (1999)
-    [DOI: 10.1038/21602](https://doi.org/10.1038/21602)
-
-3. **J. Robertson**
-    "High dielectric constant gate oxides for metal oxide Si transistors"
-    Reports on Progress in Physics 69, 327 (2006)
-    [DOI: 10.1088/0034-4885/69/2/R02](https://doi.org/10.1088/0034-4885/69/2/R02)
+Cite the following works: [@Muller1999; @Robertson2006], [QuantumATK tutorial](https://docs.quantumatk.com/tutorials/hkmg_builder/hkmg_builder.html)
 
