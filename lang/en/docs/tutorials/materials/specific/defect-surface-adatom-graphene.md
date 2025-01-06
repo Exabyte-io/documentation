@@ -21,7 +21,7 @@ This tutorial demonstrates the process of creating a graphene structure with an 
 !!!note "Manuscript"
     **Kevin T. Chan, J. B. Neaton, and Marvin L. Cohen**, 
     "First-principles study of metal adatom adsorption on graphene" Phys. Rev. B 77, 235430, 2008
-    [DOI: 10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}.
+    [DOI: 10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}. [@Chan2008]
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a graphene structure with a metal adatom on the surface.
 
@@ -229,5 +229,3 @@ The interactive JupyterLite notebook for creating Graphene structures with metal
 {% endwith %}
 
 ## References.
-
-Cite the following works: [@Chan2008]

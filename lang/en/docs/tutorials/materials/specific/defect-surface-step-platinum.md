@@ -21,7 +21,7 @@ render_macros: true
 This tutorial demonstrates two different approaches to creating terrace steps on platinum surfaces, based on the work presented in the following manuscript:
 
 !!!note "Manuscript"
-    Šljivančanin, Ž., & Hammer, B., "Oxygen dissociation at close-packed Pt terraces, Pt steps, and Ag-covered Pt steps studied with density functional theory." Surface Science, 515(1), 235–244. [DOI: 10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'}.
+    Šljivančanin, Ž., & Hammer, B., "Oxygen dissociation at close-packed Pt terraces, Pt steps, and Ag-covered Pt steps studied with density functional theory." Surface Science, 515(1), 235–244. [DOI: 10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'}. [@Sljivancanin2002]
 
 We will focus on creating platinum surface with terrace steps, as shown in FIG. 1. B:
 
@@ -161,5 +161,3 @@ The following JupyterLite notebook demonstrates both approaches. Select "Run" > 
 {% endwith %}
 
 ## References.
-
-Cite the following work: [@Sljivancanin2002]

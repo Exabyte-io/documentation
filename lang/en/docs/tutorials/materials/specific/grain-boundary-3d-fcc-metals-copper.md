@@ -21,7 +21,7 @@ This tutorial demonstrates the process of creating grain boundary structures in 
 
 
 !!!note "Manuscript"
-    Timofey Frolov, David L. Olmsted, Mark Asta & Yuri Mishin, "Structural phase transformations in metallic grain boundaries", Nature Communications, volume 4, Article number: 1899 (2013). [DOI: 10.1038/ncomms2919](https://www.nature.com/articles/ncomms2919){:target='_blank'}.
+    Timofey Frolov, David L. Olmsted, Mark Asta & Yuri Mishin, "Structural phase transformations in metallic grain boundaries", Nature Communications, volume 4, Article number: 1899 (2013). [DOI: 10.1038/ncomms2919](https://www.nature.com/articles/ncomms2919){:target='_blank'}. [@Frolov2013]
 
 We will focus on creating copper grain boundary structures similar to Figure 1b from the manuscript:
 
@@ -145,5 +145,3 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 {% endwith %}
 
 ## References.
-
-Cite the following work: [@Frolov2013]

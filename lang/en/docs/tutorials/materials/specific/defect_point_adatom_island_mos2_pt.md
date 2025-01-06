@@ -26,7 +26,7 @@ This tutorial demonstrates how to create a platinum island on MoS2 by sequential
     Saidi, W. A.
     "Density Functional Theory Study of Nucleation and Growth of Pt Nanoparticles on MoS2(001) Surface"
     Crystal Growth & Design, 15(2), 642–652. (2015)
-    [DOI: 10.1021/cg5013395](https://doi.org/10.1021/cg5013395){:target='_blank'}.
+    [DOI: 10.1021/cg5013395](https://doi.org/10.1021/cg5013395){:target='_blank'}. [@Saidi2015; @Jiao2016; @Fichthorn2000; @Neugebauer1993; @Hortamani2007]
 
 We will recreate the Pt island structure shown in Figure 4b:
 
@@ -177,6 +177,4 @@ To adjust the island structure:
    - Modify height to change Pt-Pt spacing
 
 ## References.
-
-Cite the following works: [@Saidi2015], [@Jiao2016], [@Fichthorn2000], [@Neugebauer1993], [@Hortamani2007]
 

@@ -24,7 +24,7 @@ This tutorial demonstrates the process of creating material with island on the s
 
 !!!note "Manuscript"
     **D. G. Sangiovanni, A. B. Mei, D. Edström, L. Hultman, V. Chirita, I. Petrov, and J. E. Greene**, 
-    "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}.
+    "Effects of surface vibrations on interlayer mass transport: Ab initio molecular dynamics investigation of Ti adatom descent pathways and rates from TiN/TiN(001) islands", Physical Review B, 2018. [DOI: 10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'}. [@Sangiovanni2018]
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a slab of TiN, identify the cartesian coordinates for an island on the surface, and build it. 
 
@@ -184,5 +184,3 @@ The following JupyterLite notebook demonstrates the process of creating material
 {% endwith %}
 
 ## References.
-
-Cite the following work: [@Sangiovanni2018]

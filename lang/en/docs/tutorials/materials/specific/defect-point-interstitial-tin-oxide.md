@@ -25,7 +25,7 @@ This tutorial demonstrates how to create an oxygen interstitial defect in tin mo
     A. Togo, F. Oba, and I. Tanaka
     "First-principles calculations of native defects in tin monoxide"
     Physical Review B 74, 195128 (2006)
-    [DOI: 10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'}.
+    [DOI: 10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'}. [@Togo2006; @Wang2014; @Na-Phattalung2006]
 
 We will recreate the O-interstitial defect structure shown in Fig. 4 a) using [Voronoi](https://github.com/Exabyte-io/made/blob/9e13b350eaaa5d49c81a3b30f76c165480825d72/src/py/mat3ra/made/tools/build/defect/builders.py#L125) placement method.
 
@@ -154,5 +154,3 @@ To adjust the defect creation:
    - Consider periodic boundary conditions effects
 
 ## References.
-
-Cite the following works: [@Togo2006], [@Wang2014], and [@Na-Phattalung2006].

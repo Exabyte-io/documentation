@@ -21,7 +21,7 @@ This tutorial demonstrates the process of creating materials with substitution d
 [//]: # (<embed src="https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446" width="100%" height="300">)
 
 !!!note "Manuscript"
-    Yoshitaka Fujimoto and Susumu Saito, "Formation, stabilities, and electronic properties of nitrogen defects in graphene", Physical Review B, 2011. [DOI: 10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}.
+    Yoshitaka Fujimoto and Susumu Saito, "Formation, stabilities, and electronic properties of nitrogen defects in graphene", Physical Review B, 2011. [DOI: 10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}. [@Yoshitaka2011]
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create a supercell of graphene, identify the crystal site positions for defects, and introduce nitrogen atoms and vacancies accordingly.
 
@@ -144,5 +144,3 @@ The following JupyterLite notebook demonstrates the process of creating material
 {% endwith %}
 
 ## References.
-
-Cite the following works: [@Yoshitaka2011]

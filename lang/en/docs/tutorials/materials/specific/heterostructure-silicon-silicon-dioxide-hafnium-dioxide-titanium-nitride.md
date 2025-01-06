@@ -28,6 +28,10 @@ This tutorial demonstrates how to create a high-k metal gate stack heterostructu
 2. Building the Si/SiO2 interface using strain matching
 3. Adding the pre-created slabs sequentially using simple interface builder
 
+!!!note "Reference"
+    QuantumATK tutorial: [High-k Metal Gate Stack Builder](https://docs.quantumatk.com/tutorials/hkmg_builder/hkmg_builder.html) [@Muller1999; @Robertson2006]
+    
+
 We use the [Materials Designer](../../../materials-designer/overview.md) to create the high-k metal gate stack as shown in the figure below.
 
 ![High-k Metal Gate Stack](/images/tutorials/materials/heterostructures/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride/original-figure.webp "High-k Metal Gate Stack")
@@ -202,6 +206,4 @@ The following JupyterLite notebook demonstrates the process of creating target m
 {% endwith %}
 
 ## References.
-
-Cite the following works: [@Muller1999; @Robertson2006], [QuantumATK tutorial](https://docs.quantumatk.com/tutorials/hkmg_builder/hkmg_builder.html)
 

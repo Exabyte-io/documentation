@@ -25,7 +25,7 @@ This tutorial demonstrates the process of creating interfaces between 2D and 3D 
     **Yong-Ju Kang, Joongoo Kang, and K. J. Chang**
     "Electronic structure of graphene and doping effect on SiO2"
     Physical Review B 78, 115404 (2008)
-    [DOI: 10.1103/PhysRevB.78.115404](https://doi.org/10.1103/PhysRevB.78.115404)
+    [DOI: 10.1103/PhysRevB.78.115404](https://doi.org/10.1103/PhysRevB.78.115404) [@Kang2008; @Dahal2014]
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create interfaces between graphene and silicon dioxide with oxygen termination, as shown in the manuscript.
 
@@ -128,5 +128,3 @@ The interactive JupyterLite notebook for creating interfaces between graphene an
 {% endwith %}
 
 ## References.
-
-Cite the following works: [@Kang2008; @Dahal2014]
