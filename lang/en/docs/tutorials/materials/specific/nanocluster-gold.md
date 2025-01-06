@@ -22,7 +22,7 @@ This tutorial demonstrates the process of creating a gold nanoparticle structure
     > **A. H. Larsen, J. Kleis, K. S. Thygesen, J. K. Nørskov, and K. W. Jacobsen**,
     > "Electronic shell structure and chemisorption on gold nanoparticles",
     > *Phys. Rev. B 84, 245429 (2011)*,
-    > [DOI: 10.1103/PhysRevB.84.245429](https://doi.org/10.1103/PhysRevB.84.245429){:target='_blank'}.
+    > [DOI: 10.1103/PhysRevB.84.245429](https://doi.org/10.1103/PhysRevB.84.245429){:target='_blank'}. [@Larsen2011]
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create gold nanoparticle structures of cuboctahedral and icosahedral shapes as shown in the image below.
 
@@ -168,10 +168,3 @@ The interactive JupyterLite notebook for creating Gold Nanoclusters can be acces
 {% endwith %}
 
 ## References.
-
-1. **A. H. Larsen, J. Kleis, K. S. Thygesen, J. K. Nørskov, and K. W. Jacobsen**,
-   "Electronic shell structure and chemisorption on gold nanoparticles",
-   *Phys. Rev. B 84, 245429 (2011)*,
-   [DOI: 10.1103/PhysRevB.84.245429](https://doi.org/10.1103/PhysRevB.84.245429){:target='_blank'}.
-
-
