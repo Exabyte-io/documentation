@@ -25,7 +25,7 @@ This tutorial demonstrates how to passivate a reconstructed silicon (100) surfac
     Hansen, U., & Vogl, P.
     "Hydrogen passivation of silicon surfaces: A classical molecular-dynamics study."
     Physical Review B, 57(20), 13295–13304. (1998)
-    [DOI: 10.1103/PhysRevB.57.13295](https://doi.org/10.1103/PhysRevB.57.13295){:target='_blank'}.
+    [DOI: 10.1103/PhysRevB.57.13295](https://doi.org/10.1103/PhysRevB.57.13295){:target='_blank'}. [@Hansen1998; @Northrup1991; @Boland1990]
 
 We will recreate the passivated surface structure shown in Fig. 8:
 
@@ -185,10 +185,3 @@ To adjust the passivation:
    - Change `PASSIVANT` to use different passivating species
 
 ## References.
-
-1. Hansen, U., & Vogl, P. (1998). Hydrogen passivation of silicon surfaces: A classical molecular-dynamics study. Physical Review B, 57(20), 13295–13304.
-
-2. Northrup, J. E. (1991). Structure of Si(100)H: Dependence on the H chemical potential. Physical Review B, 44(3), 1419–1422.
-
-3. Boland, J. J. (1990). Structure of the H‐saturated Si(100) surface. Physical Review Letters, 65(26), 3325–3328.
-

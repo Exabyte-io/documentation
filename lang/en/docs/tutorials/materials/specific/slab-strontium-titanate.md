@@ -23,7 +23,7 @@ This tutorial demonstrates the process of creating strontium titanate (SrTiO<sub
     R. I. Eglitis and David Vanderbilt
     "First-principles calculations of atomic and electronic structure of SrTiO3 (001) and (011) surfaces"
     Phys. Rev. B 77, 195408 (2008)
-    [DOI: 10.1103/PhysRevB.77.195408](https://doi.org/10.1103/PhysRevB.77.195408)
+    [DOI: 10.1103/PhysRevB.77.195408](https://doi.org/10.1103/PhysRevB.77.195408) [@Eglitis2008; @Mukhopadhyay2006]
 
 
 We will focus on creating SrTiO<sub>3</sub> (011) slabs with different terminations from FIG. 2.
@@ -137,8 +137,4 @@ The following JupyterLite notebook demonstrates the process of creating strontiu
 {% endwith %}
 
 ## References.
-
-1. R. I. Eglitis and David Vanderbilt, "First-principles calculations of atomic and electronic structure of SrTiO3 (001) and (011) surfaces", Phys. Rev. B 77, 195408 (2008) [DOI: 10.1103/PhysRevB.77.195408](https://doi.org/10.1103/PhysRevB.77.195408)
-
-2. Atashi B. Mukhopadhyay, Javier F. Sanz, and Charles B. Musgrave "First-principles calculations of structural and electronic properties of monoclinic hafnia surfaces", Phys. Rev. B 73, 115330 (2006) DOI: [10.1103/PhysRevB.73.115330](https://doi.org/10.1103/PhysRevB.73.115330)
 

@@ -1,4 +1,13 @@
 ---
+tags:
+    - silicon
+    - hydrogen
+    - passivation
+    - nanowire
+    - Si
+    - H
+hide:
+    - tags
 # YAML header
 render_macros: true
 ---
@@ -14,7 +23,7 @@ This tutorial demonstrates the process of creating passivated silicon nanowires 
     B. Aradi, L. E. Ramos, P. Deák, Th. Köhler, F. Bechstedt, R. Q. Zhang, and Th. Frauenheim,
     "Theoretical study of the chemical gap tuning in silicon nanowires"
     Phys. Rev. B 76, 035305 (2007)
-    DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305)
+    DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305) [@Aradi2007]
 
 
 We will focus on creating silicon nanowires with hydrogen passivation from FIG. 1.
@@ -199,11 +208,3 @@ The following JupyterLite notebook demonstrates the process of creating material
 
 ## References.
 
-1. B. Aradi, L. E. Ramos, P. Deák, Th. Köhler, F. Bechstedt, R. Q. Zhang, and Th. Frauenheim,
-   Theoretical study of the chemical gap tuning in silicon nanowires
-   Phys. Rev. B 76, 035305 (2007)
-   DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305)
-
-## Tags.
-
- `silicon`, `hydrogen`, `passivation`, `nanowire`

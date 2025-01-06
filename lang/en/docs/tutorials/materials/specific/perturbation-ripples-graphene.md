@@ -23,7 +23,7 @@ This tutorial demonstrates the process of creating edge induced ripples in graph
     Thompson-Flagg, R. C., Moura, M. J. B., & Marder, M.
     "Rippling of graphene"
     EPL (Europhysics Letters), 85(4), 46002 (2009)
-    [DOI: 10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002){:target='_blank'}.
+    [DOI: 10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002){:target='_blank'}. [@ThompsonFlagg2009; @Fasolino2007; @Openov2010]
 
 We will focus on creating graphene with edge-induced ripples that match the patterns observed in experimental studies, as shown in FIG. 1.
 
@@ -184,10 +184,3 @@ If user need to adjust the ripple pattern, user can modify these key parameters:
    - Adjust PHASE_X and PHASE_Y to modify the wave interference pattern
 
 ## References.
-
-1. Thompson-Flagg, R. C., Moura, M. J. B., & Marder, M. (2009). Rippling of graphene. EPL (Europhysics Letters), 85(4), 46002. [DOI: 10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002)
-
-2. A. Fasolino, J. H. Los and M. I. Katsnelson, "Intrinsic ripples in graphene," Nature Materials, 6, 858-861 (2007). [DOI: 10.1038/nmat2011](https://doi.org/10.1038/nmat2011)
-
-3. L. A. Openov & A. I. Podlivaev, "Interaction of the Stone-Wales defects in graphene", Physics of the Solid State, 52, 1, 2010. [DOI: 10.1134/S1063783415070240](https://doi.org/10.1134/S1063783415070240)
-
