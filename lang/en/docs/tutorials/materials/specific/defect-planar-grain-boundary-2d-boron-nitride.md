@@ -142,7 +142,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/grain_boundary_2d_boron_nitride.ipynb' %}
+{% with notebook_name='specific_examples/defect_planar_grain_boundary_2d_boron_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}

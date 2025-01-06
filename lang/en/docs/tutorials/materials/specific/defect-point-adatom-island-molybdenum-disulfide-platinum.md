@@ -158,7 +158,7 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/defect_point_adatom_island_mos2_pt.ipynb' %}
+{% with notebook_name='specific_examples/defect_point_adatom_island_molybdenum_disulfide_platinum.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}

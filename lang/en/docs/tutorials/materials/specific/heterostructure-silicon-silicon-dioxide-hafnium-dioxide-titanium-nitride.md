@@ -199,7 +199,7 @@ The following JupyterLite notebook demonstrates the process of creating target m
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/heterostructure_high_k_metal_gate_stack.ipynb' %}
+{% with notebook_name='specific_examples/heterostructure_silicon_silicon_dioxide_hafnium_dioxide_titanium_nitride.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}

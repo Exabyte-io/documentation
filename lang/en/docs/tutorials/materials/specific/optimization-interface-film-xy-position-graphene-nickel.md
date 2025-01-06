@@ -140,7 +140,7 @@ The following JupyterLite notebook demonstrates the complete process. Select "Ru
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/optimize_film_position_graphene_nickel_interface.ipynb' %}
+{% with notebook_name='specific_examples/optimization_interface_film_xy_position_graphene_nickel.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
