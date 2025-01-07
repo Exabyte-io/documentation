@@ -25,7 +25,7 @@ This tutorial demonstrates the process of creating grain boundary structures in 
 
 We will focus on creating copper grain boundary structures similar to Figure 1b from the manuscript:
 
-![Copper Grain Boundary](/images/tutorials/materials/defects/grain_boundary_fcc_metal/0-figure-from-manuscript.webp "Copper Grain Boundary, FIG. 1")
+![Copper Grain Boundary](/images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/0-figure-from-manuscript.webp "Copper Grain Boundary, FIG. 1")
 
 ## 1. Create Initial Copper Structure.
 
@@ -37,7 +37,7 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 2. Select "Import from Standata"
 3. Search for "Cu" and select the bulk copper material
 
-![Copper Material Import](/images/tutorials/materials/defects/grain_boundary_fcc_metal/1-standata-import-cu.webp "Copper Material Import")
+![Copper Material Import](/images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/1-standata-import-cu.webp "Copper Material Import")
 
 ### 1.2. Launch JupyterLite Session.
 
@@ -87,7 +87,7 @@ These parameters will create:
 - 2 Å gap between phases
 - Maximum area of 100 Å² for strain matching
 
-![Grain Boundary Parameters](/images/tutorials/materials/defects/grain_boundary_fcc_metal/2-jl-setup-nb.webp "Grain Boundary Parameters")
+![Grain Boundary Parameters](/images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/2-jl-setup-nb.webp "Grain Boundary Parameters")
 
 ## 2. Run the Notebook.
 
@@ -106,7 +106,7 @@ After running the notebook, user can visualize the grain boundary structure:
 - Check the atomic arrangement at the interface
 - Verify the orientation relationship between the two phases
 
-![Grain Boundary Preview](/images/tutorials/materials/defects/grain_boundary_fcc_metal/3-jl-result-preview.webp "Grain Boundary Preview")
+![Grain Boundary Preview](/images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/3-jl-result-preview.webp "Grain Boundary Preview")
 
 ### 3.2. Structure Details.
 
@@ -118,9 +118,9 @@ The resulting structure should show:
 
 Grain boundary from the top (XY) and side (XZ) views:
 
-![Final Material (XY)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary, XY view")
+![Final Material (XY)](/images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/4-wave-result.webp "Final Copper Grain Boundary, XY view")
 
-![Final Material (XZ)](/images/tutorials/materials/defects/grain_boundary_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
+![Final Material (XZ)](/images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/5-wave-result-xz.webp "Final Copper Grain Boundary, XZ view")
 
 The structure has differences from the original figure in the manuscript, since grain boundary achieved by strain-matching two symmetrical surfaces with no changes to either surfaces. Discrepancies might be removed with further adjustments like shifting the phases, removing atom layers and reconstructing the interface.
 

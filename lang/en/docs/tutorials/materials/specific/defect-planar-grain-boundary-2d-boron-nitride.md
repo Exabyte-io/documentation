@@ -24,7 +24,7 @@ This tutorial demonstrates the process of creating 2D grain boundary structures 
 
 We will focus on creating h-BN grain boundary structures similar to Figure 2c from the manuscript:
 
-![h-BN Grain Boundary](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/0-figure-from-manuscript.webp "h-BN Grain Boundary, FIG. 2c.")
+![h-BN Grain Boundary](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/0-figure-from-manuscript.webp "h-BN Grain Boundary, FIG. 2c.")
 
 ## 1. Create Initial h-BN Structure.
 
@@ -71,7 +71,7 @@ DISTANCE_TOLERANCE = 1.43  # in Angstroms
 EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
 ```
 
-![Notebook Setup](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/2-jl-setup-nb-gb.webp "Notebook Setup")
+![Notebook Setup](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/2-jl-setup-nb-gb.webp "Notebook Setup")
 
 !!!note "Important Parameter"
     The `DISTANCE_TOLERANCE` parameter (1.43 Å) is larger than B-N distances at the one specific spot in the boundary. This will cause certain nitrogen atoms to be removed during structure generation, which we'll need to restore later.
@@ -82,7 +82,7 @@ Run the notebook by selecting "Run" > "Run All Cells".
 
 The notebook will generate the h-BN grain boundary structure based on the parameters provided.
 
-![Initial h-BN Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/4-wave-result-gb.webp "Initial h-BN Structure")
+![Initial h-BN Structure](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/4-wave-result-gb.webp "Initial h-BN Structure")
 
 ## 3. Restore Missing Nitrogen Atom.
 
@@ -113,19 +113,19 @@ DEFECT_CONFIGS = [
 ]
 ```
 
-![Notebook Setup](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/5-jl-setup-nb-final-gb.webp "Notebook Setup")
+![Notebook Setup](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/5-jl-setup-nb-final-gb.webp "Notebook Setup")
 
 ### 3.2. Run the Notebook.
 
 Run the notebook to add the missing nitrogen atom to the h-BN grain boundary structure.
 
-![Final Structure Preview](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/6-jl-result-preview-final-gb.webp "Final Structure Preview")
+![Final Structure Preview](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/6-jl-result-preview-final-gb.webp "Final Structure Preview")
 
 ## 4. Pass Final Material to Materials Designer.
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/7-wave-result-final-gb.webp "Final Material")
+![Final Material](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/7-wave-result-final-gb.webp "Final Material")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
@@ -134,7 +134,7 @@ Or the user can [save or download](../../../materials-designer/header-menu/input
 To fill the gaps between two phases edge atoms can be adjusted manually in Materials Designer 3D editor.
 The resulting structure should be similar to the one shown in the manuscript.
 
-![Adjusted Structure](/images/tutorials/materials/defects/grain_boundary_2d_boron_nitride/8-wave-result-final-gb-relaxed.webp "Adjusted Structure")
+![Adjusted Structure](/images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/8-wave-result-final-gb-relaxed.webp "Adjusted Structure")
 
 ## Interactive JupyterLite Notebook.
 
