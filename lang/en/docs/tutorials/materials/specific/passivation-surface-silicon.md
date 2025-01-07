@@ -163,7 +163,7 @@ The following embedded notebook demonstrates the complete process. Select "Run" 
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/passivation_surface_silicon_surface.ipynb' %}
+{% with notebook_name='specific_examples/passivation_surface_silicon.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
