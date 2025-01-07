@@ -244,7 +244,7 @@ nav:
                 - Ripple perturbation of a Graphene sheet:                      tutorials/materials/specific/perturbation-ripples-graphene.md
                 - Grain Boundary in FCC Metals (Copper):                        tutorials/materials/specific/defect-planar-grain-boundary-3d-fcc-metals-copper.md
                 - Grain Boundary (2D) in h-BN:                                  tutorials/materials/specific/defect-planar-grain-boundary-2d-boron-nitride.md
-                - Gr/Ni(111) Interface Optimization:                            tutorials/materials/specific/optimization-interface-film-xy-position-graphene-nickel-interface.md
+                - Gr/Ni(111) Interface Optimization:                            tutorials/materials/specific/optimization-interface-film-xy-position-graphene-nickel.md
                 - Pt Adatoms Island on MoS2:                                    tutorials/materials/specific/defect-point-adatom-island-molybdenum-disulfide-platinum.md
 
 # COMMON UI COMPONENTS
