@@ -29,7 +29,7 @@ This tutorial demonstrates how to create an oxygen interstitial defect in tin mo
 
 We will recreate the O-interstitial defect structure shown in Fig. 4 a) using [Voronoi](https://github.com/Exabyte-io/made/blob/9e13b350eaaa5d49c81a3b30f76c165480825d72/src/py/mat3ra/made/tools/build/defect/builders.py#L125) placement method.
 
-![SnO O-interstitial](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO")
+![SnO O-interstitial](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO")
 
 ## 1. Prepare Base Structure.
 
@@ -37,7 +37,7 @@ We will recreate the O-interstitial defect structure shown in Fig. 4 a) using [V
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the SnO material from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md) using the search term "SnO".
 
-![Original SnO](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/2-wave-original-material.webp "SnO from Standata, 2x2x2 repetitions")
+![Original SnO](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/2-wave-original-material.webp "SnO from Standata, 2x2x2 repetitions")
 
 ### 1.2. Launch JupyterLite Session.
 
@@ -73,7 +73,7 @@ DEFECT_CONFIGS = [
     }
 ]
 ```
-![Defect Parameters](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/3-jl-setup-nb.webp "Defect parameters for O-interstitial in SnO")
+![Defect Parameters](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/3-jl-setup-nb.webp "Defect parameters for O-interstitial in SnO")
 
 Key parameters explained:
 
@@ -103,7 +103,7 @@ Run the notebook by selecting "Run" > "Run All Cells". This will:
 
 After creating the defect, examine the structure to verify:
 
-![SnO with O-interstitial defect](/images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/4-wave-result-material.webp "SnO with O-interstitial defect")
+![SnO with O-interstitial defect](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/4-wave-result-material.webp "SnO with O-interstitial defect")
 
 ### 3.1. Defect Position.
 

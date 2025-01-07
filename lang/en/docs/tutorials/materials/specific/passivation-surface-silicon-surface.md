@@ -29,7 +29,7 @@ This tutorial demonstrates how to passivate a reconstructed silicon (100) surfac
 
 We will recreate the passivated surface structure shown in Fig. 8:
 
-![Si(100) H-Passivated Surface](/images/tutorials/materials/passivation/passivation_surface_silicon/0-figure-from-manuscript.webp "H-Passivated Silicon (100)")
+![Si(100) H-Passivated Surface](../../../images/tutorials/materials/passivation/passivation_surface_silicon/0-figure-from-manuscript.webp "H-Passivated Silicon (100)")
 
 ## 1. Obtain the Silicon (100) Surface Structure.
 
@@ -37,7 +37,7 @@ We will recreate the passivated surface structure shown in Fig. 8:
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the reconstructed Si(100) surface from [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Si(100) Structure](/images/tutorials/materials/passivation/passivation_surface_silicon/1-wave-original-material.webp "Si(100) Structure")
+![Si(100) Structure](../../../images/tutorials/materials/passivation/passivation_surface_silicon/1-wave-original-material.webp "Si(100) Structure")
 
 ### 1.2. Launch JupyterLite Session.
 
@@ -82,7 +82,7 @@ new_coordinates[index_to_adjust] = adjusted_coordinate
 slab.set_coordinates(new_coordinates)
 ```
 
-![Supercell Parameters](/images/tutorials/materials/passivation/passivation_surface_silicon/2-jl-setup-nb-adjust.webp "Supercell Parameters Visualization")
+![Supercell Parameters](../../../images/tutorials/materials/passivation/passivation_surface_silicon/2-jl-setup-nb-adjust.webp "Supercell Parameters Visualization")
 
 ### 1.4. Run Structure Adjustment.
 
@@ -93,7 +93,7 @@ Run the notebook using "Run > Run All Cells". This will:
 3. Create a supercell if specified in the parameters
 4. Visualize the adjusted structure
 
-![Adjusted Structure](/images/tutorials/materials/passivation/passivation_surface_silicon/3-wave-adjusted-material.webp "Adjusted Si(100) Structure")
+![Adjusted Structure](../../../images/tutorials/materials/passivation/passivation_surface_silicon/3-wave-adjusted-material.webp "Adjusted Si(100) Structure")
 
 ## 2. Passivate the Surface.
 
@@ -126,7 +126,7 @@ Key parameters explained:
 - `SURFACE`: Passivate only the top surface.
 - `DEPTH`: How deep to look for surface atoms, set to include only top Si atoms.
 
-![Passivation Parameters](/images/tutorials/materials/passivation/passivation_surface_silicon/4-jl-setup-nb-passivate.webp "Passivation Parameters Visualization")
+![Passivation Parameters](../../../images/tutorials/materials/passivation/passivation_surface_silicon/4-jl-setup-nb-passivate.webp "Passivation Parameters Visualization")
 
 ### 2.3. Run Passivation.
 
@@ -136,7 +136,7 @@ Run all cells in the notebook. The passivation process will:
 2. Add H atoms at the specified bond length
 3. Generate the passivated structure
 
-![Passivated Structure](/images/tutorials/materials/passivation/passivation_surface_silicon/5-jl-result-preview.webp "H-Passivated Si(100) Structure")
+![Passivated Structure](../../../images/tutorials/materials/passivation/passivation_surface_silicon/5-jl-result-preview.webp "H-Passivated Si(100) Structure")
 
 ## 3. Analyze Results.
 
@@ -148,7 +148,7 @@ Check that:
 - Surface reconstruction is maintained
 - H atoms are properly placed above surface Si atoms
 
-![Final Structure](/images/tutorials/materials/passivation/passivation_surface_silicon/6-wave-result.webp "Final H-Passivated Si(100)")
+![Final Structure](../../../images/tutorials/materials/passivation/passivation_surface_silicon/6-wave-result.webp "Final H-Passivated Si(100)")
 
 ## 4. Save the Results.
 

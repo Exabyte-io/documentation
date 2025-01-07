@@ -27,7 +27,7 @@ This tutorial demonstrates the process of creating edge induced ripples in graph
 
 We will focus on creating graphene with edge-induced ripples that match the patterns observed in experimental studies, as shown in FIG. 1.
 
-![Rippled Graphene](/images/tutorials/materials/defects/perturbation_ripple_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1.")
+![Rippled Graphene](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1.")
 
 ## 1. Create Graphene Nanoribbon.
 
@@ -35,7 +35,7 @@ We will focus on creating graphene with edge-induced ripples that match the patt
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import the graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Graphene Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
+![Standata Graphene Import](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
 
 ### 1.2. Launch JupyterLite Session.
 
@@ -60,13 +60,13 @@ VACUUM_LENGTH = 10
 EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 ```
 
-![Setup Nanoribbon Parameters](/images/tutorials/materials/defects/perturbation_ripple_graphene/2-jl-setup-nb-nanoribbon.webp "Setup Nanoribbon Parameters")
+![Setup Nanoribbon Parameters](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/2-jl-setup-nb-nanoribbon.webp "Setup Nanoribbon Parameters")
 
 ### 1.5. Run the notebook.
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu. This will create a graphene nanoribbon with the specified dimensions.
 
-![Nanoribbon Result](/images/tutorials/materials/defects/perturbation_ripple_graphene/3-wave-result-nanoribbon.webp "Graphene Nanoribbon")
+![Nanoribbon Result](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/3-wave-result-nanoribbon.webp "Graphene Nanoribbon")
 
 ## 2. Create Ripples in the Nanoribbon.
 
@@ -126,7 +126,7 @@ wave_pattern = (
 custom_sympy_function = AMPLITUDE * wave_pattern * edge_mask
 ```
 
-![Setup Perturbation Function](/images/tutorials/materials/defects/perturbation_ripple_graphene/4-jl-setup-nb-final.webp "Setup Perturbation Function")
+![Setup Perturbation Function](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/4-jl-setup-nb-final.webp "Setup Perturbation Function")
 
 Key parameters explained:
 
@@ -147,11 +147,11 @@ The rippled graphene structure will be automatically passed back to the current 
 
 Graphene with edge-induced ripples with amplitude of 0.09 crystal units.
 
-![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/5-wave-result-final.webp "Final Rippled Graphene, amplitude 0.09 crystal units")
+![Final Material](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/5-wave-result-final.webp "Final Rippled Graphene, amplitude 0.09 crystal units")
 
 Graphene with edge-induced ripples with amplitude of 0.27 crystal units.
 
-![Final Material](/images/tutorials/materials/defects/perturbation_ripple_graphene/6-wave-result-final-2.webp "Final Rippled Graphene, amplitude 0.27 crystal units")
+![Final Material](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/6-wave-result-final-2.webp "Final Rippled Graphene, amplitude 0.27 crystal units")
 
 Or user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 

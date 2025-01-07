@@ -30,7 +30,7 @@ We will focus on creating silicon nanowires with hydrogen passivation from FIG. 
 
 Specifically, the material from FIG. 1. of the publication:
 
-![Passivated Silicon nanowire](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/0-figure-from-manuscript.webp "Passivated Silicon nanowire, FIG. 1.")
+![Passivated Silicon nanowire](../../../images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/0-figure-from-manuscript.webp "Passivated Silicon nanowire, FIG. 1.")
 
 
 ## 1. Create Silicon Nanowire.
@@ -134,7 +134,7 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook and submitting the material, the user will be able to visualize the structure of Silicon Nanowire.
 
-![Silicon Nanowire](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/3-silicon-nanowire.webp "Silicon Nanowire")
+![Silicon Nanowire](../../../images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/3-silicon-nanowire.webp "Silicon Nanowire")
 
 ## 2. Passivate with Hydrogen.
 
@@ -177,19 +177,19 @@ CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]
 
 Here's the visual of the updated content:
 
-![Notebook setup](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/5-jl-setup.webp "Notebook setup")
+![Notebook setup](../../../images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/5-jl-setup.webp "Notebook setup")
 
 ### 2.2. Run the notebook and analyze the results.
 
 After running the notebook, the user will be able to visualize the structure of Silicon Nanowire with substitution defects.
 
-![Review the Results](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/6-jl-result-preview.webp "Review the Results")
+![Review the Results](../../../images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/6-jl-result-preview.webp "Review the Results")
 
 ## 3. Pass the Material to Materials Designer.
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/7-wave-result.webp "H-Passivated Silicon Nanowire")
+![Final Material](../../../images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/7-wave-result.webp "H-Passivated Silicon Nanowire")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 

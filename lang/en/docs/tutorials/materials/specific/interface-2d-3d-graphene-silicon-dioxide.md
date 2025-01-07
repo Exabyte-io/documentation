@@ -31,7 +31,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 We will focus on replicating the material from FIG. 1. (b) -- with Graphene on O-terminated SiO<sub>2</sub>. The material (a) requires relaxation to correctly reproduce the structure, which is not covered in this tutorial.
 
-![Graphene on Silicon Dioxide](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/0-figure-from-manuscript.webp "Graphene on Silicon Dioxide, FIG. 1(b)")
+![Graphene on Silicon Dioxide](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/0-figure-from-manuscript.webp "Graphene on Silicon Dioxide, FIG. 1(b)")
 
 ## 1. Load and Preview Materials.
 
@@ -90,7 +90,7 @@ INTERFACE_DISTANCE = 2.58  # in Angstrom -- from manuscript
 INTERFACE_VACUUM = 20.0  # in Angstrom -- from manuscript
 ```
 
-![Notebook Setup](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/2-jl-setup-notebook.webp "Notebook Setup")
+![Notebook Setup](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/2-jl-setup-notebook.webp "Notebook Setup")
 
 ### 2.3 Run the Notebook
 
@@ -103,7 +103,7 @@ Run the notebook to generate the interface structure between graphene and silico
 The generation might take some time.
 After that, the user can pass the material to the Materials Designer for further analysis.
 
-![Gr/SiO2 Interface](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/3-jl-result-preview.webp "Gr/SiO2 Interface")
+![Gr/SiO2 Interface](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/3-jl-result-preview.webp "Gr/SiO2 Interface")
 
 ## 3. Pass the Material to Materials Designer.
 
@@ -111,7 +111,7 @@ After generating the interface structure, pass the material to the Materials Des
 
 The interface between graphene and silicon dioxide with oxygen termination is shown below.
 
-![Gr/SiO2 Interface](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/4-wave-result-material.webp "Gr/SiO2 Interface")
+![Gr/SiO2 Interface](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/4-wave-result-material.webp "Gr/SiO2 Interface")
 
 ## Interactive JupyterLite Notebook.
 

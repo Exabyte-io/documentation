@@ -30,7 +30,7 @@ This tutorial demonstrates how to create a platinum island on MoS2 by sequential
 
 We will recreate the Pt island structure shown in Figure 4b:
 
-![Pt Island on MoS2](/images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/0-figure-from-manuscript.webp "Pt island formation on MoS2")
+![Pt Island on MoS2](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/0-figure-from-manuscript.webp "Pt island formation on MoS2")
 
 ## 1. Create MoS2 Substrate.
 
@@ -109,23 +109,23 @@ Key parameters explained:
 
 - `distance_z` sets the distance along the z-axis from the adatom to the topmost atom directly below it
 
-![Adatoms Setup](/images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/1-jl-setup-nb.webp "Pt adatoms setup")
+![Adatoms Setup](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/1-jl-setup-nb.webp "Pt adatoms setup")
 
 ### 2.2. Run the Notebook.
 
 Execute the notebook to create the Pt island structure on MoS2 by selecting "Run" > "Run All Cells" from the JupyterLite menu.
 
-![Results Preview](/images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/2-jl-result-preview.webp "Pt island results preview")
+![Results Preview](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/2-jl-result-preview.webp "Pt island results preview")
 
 ### 2.3. Pass the Result to Materials Designer.
 
 The result can be passed to Materials Designer for visualization and viewed from the top:
 
-![Complete Island](/images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/4-wave-result-top.webp "Complete Pt island structure")
+![Complete Island](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/4-wave-result-top.webp "Complete Pt island structure")
 
 And from the side:
 
-![Complete Island, side view](/images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/5-wave-result-side.webp "Complete Pt island structure, side view")
+![Complete Island, side view](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/5-wave-result-side.webp "Complete Pt island structure, side view")
 
 ## 3. Analyze the Structure.
 

@@ -26,7 +26,7 @@ We use the [Materials Designer](../../../materials-designer/overview.md) and Jup
 
 We will focus on creating a structure similar to Figure 6 from the manuscript, which demonstrates boron vacancy defects in hexagonal boron nitride:
 
-![Vacancy in h-BN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in h-BN")
+![Vacancy in h-BN](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in h-BN")
 
 ## 1. Import Base Material.
 
@@ -42,7 +42,7 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and cl
 2. In the search box, enter "Boron Nitride"
 4. Click on the h-BN material to import it
 
-![Standata h-BN Import](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata h-BN Import")
+![Standata h-BN Import](../../../images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/standata-import-bn.png "Standata h-BN Import")
 
 ## 2. Create h-BN Nanoribbon.
 
@@ -66,7 +66,7 @@ VACUUM_LENGTH = 0 # in number of unit cells
 EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
 ```
 
-![Nanoribbon Parameters](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/2-jl-nb-setup-nanoribbon.webp "Nanoribbon Parameters")
+![Nanoribbon Parameters](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/2-jl-nb-setup-nanoribbon.webp "Nanoribbon Parameters")
 
 ### 2.3. Run the Notebook.
 
@@ -80,7 +80,7 @@ After the notebook completes:
 2. User can view the structure in the 3D editor
 3. Verify the nanoribbon dimensions and edge type
 
-![Nanoribbon Preview](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/3-wave-preview-nanoribbon.webp "Nanoribbon Preview")
+![Nanoribbon Preview](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/3-wave-preview-nanoribbon.webp "Nanoribbon Preview")
 
 
 ## 3. Create the Vacancy Defect.
@@ -108,19 +108,19 @@ The configuration specifies:
 - `approximate_coordinate`: Position in crystal coordinates where the vacancy will be created
 - `use_cartesian_coordinates`: False to use fractional coordinates
 
-![Point Defect Parameters](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/4-jl-nb-setup-point-defect.webp "Point Defect Parameters")
+![Point Defect Parameters](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/4-jl-nb-setup-point-defect.webp "Point Defect Parameters")
 
 ### 3.2. Run the Notebook.
 
 Click `Run` > `Run All` in the top menu to run the notebook and preview the results.
 
-![Review the Results](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/5-jl-result-preview.webp "Review the Results")
+![Review the Results](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/5-jl-result-preview.webp "Review the Results")
 
 ## 4. Save the Material.
 
 After running both notebooks, user can visualize the structure of h-BN with the vacancy defect in the Materials Designer 3D viewer.
 
-![Vacancy in h-BN](/images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/6-wave-result.webp "Vacancy in h-BN")
+![Vacancy in h-BN](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/6-wave-result.webp "Vacancy in h-BN")
 
 
 [Save or download](../../../materials-designer/header-menu/input-output.md) in Material JSON format

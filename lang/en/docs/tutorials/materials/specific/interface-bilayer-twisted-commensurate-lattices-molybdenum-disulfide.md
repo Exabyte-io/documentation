@@ -30,14 +30,14 @@ We use the [Materials Designer](../../../materials-designer/overview.md) to crea
 
 The Figure 4 shows the twisted bilayer MoS2 configurations.
 
-![Twisted Bilayer Molybdenum Disulfide](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/MoS2-twisted-bilayers.png   "Twisted Bilayer Molybdenum Disulfide")
+![Twisted Bilayer Molybdenum Disulfide](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/MoS2-twisted-bilayers.png   "Twisted Bilayer Molybdenum Disulfide")
 
 ## 1. Load and preview MoS2 structure.
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the MoS2 material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
 
-![Standata MoS2 Import](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/standata-import-mos2.png "Standata MoS2 Import")
+![Standata MoS2 Import](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/standata-import-mos2.png "Standata MoS2 Import")
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a twisted bilayer molybdenum disulfide structure.
 
@@ -77,7 +77,7 @@ SHOW_INTERMEDIATE_STEPS = True
 VISUALIZE_REPETITIONS = [3, 3, 1]
 ```
 
-![Notebook setup](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/jl-set-nb.png "Notebook setup")
+![Notebook setup](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/jl-set-nb.png "Notebook setup")
 
 
 ### 2.3. Run the Notebook.
@@ -93,7 +93,7 @@ After that, the user can pass the material to the Materials Designer for further
 
 The interface for 22 degrees twist is shown below.
 
-![Result Material, 22 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-22.png "MoS2 Twisted Bilayer, 22 degrees")
+![Result Material, 22 degrees](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-22.png "MoS2 Twisted Bilayer, 22 degrees")
 
 ## 3. Create bilayers with other twist angles.
 
@@ -107,7 +107,7 @@ TARGET_TWIST_ANGLE = 0.0
 INTERFACE_DISTANCE = 6.8
 ```
 
-![Result Material, 0 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-0.png "MoS2 Twisted Bilayer, 0 degrees")
+![Result Material, 0 degrees](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-0.png "MoS2 Twisted Bilayer, 0 degrees")
 
 
 ```python
@@ -115,28 +115,28 @@ TARGET_TWIST_ANGLE =  13.0
 INTERFACE_DISTANCE =  6.5
 ```
 
-![Result Material, 13 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-13.png "MoS2 Twisted Bilayer, 13 degrees")
+![Result Material, 13 degrees](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-13.png "MoS2 Twisted Bilayer, 13 degrees")
 
 ```python
 TARGET_TWIST_ANGLE = 38.0
 INTERFACE_DISTANCE = 6.5
 ```
 
-![Result Material, 38 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-38.png "MoS2 Twisted Bilayer, 38 degrees")
+![Result Material, 38 degrees](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-38.png "MoS2 Twisted Bilayer, 38 degrees")
 
 ```python
 TARGET_TWIST_ANGLE = 47.0
 INTERFACE_DISTANCE = 6.5
 ```
 
-![Result Material, 47 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-47.png "MoS2 Twisted Bilayer, 47 degrees")
+![Result Material, 47 degrees](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-47.png "MoS2 Twisted Bilayer, 47 degrees")
 
 ```python
 TARGET_TWIST_ANGLE = 60.0
 INTERFACE_DISTANCE = 6.2
 ```
 
-![Result Material, 60 degrees](/images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-60.png "MoS2 Twisted Bilayer, 60 degrees")
+![Result Material, 60 degrees](../../../images/tutorials/materials/interfaces/twisted-bilayer-molybdenum-disulfide/mos2-result-wavejs-60.png "MoS2 Twisted Bilayer, 60 degrees")
 
 
 ## Interactive JupyterLite Notebook.

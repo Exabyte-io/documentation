@@ -32,14 +32,14 @@ We will focus on creating graphene-nitrogen structures from FIG. 2.
 Specifically, the material from FIG. 2. a) of the paper: 
 
 
-![Surface Defect](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/0.png "Surface Defect, Island FIG. 2. a)")
+![Surface Defect](../../../images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/0.png "Surface Defect, Island FIG. 2. a)")
 
 
 ## 1. Create and preview TiN Slab.
 
 First, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the graphene material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Standata Graphene Import](/images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
+![Standata Graphene Import](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/1-standata-graphene.webp "Standata Graphene Import")
 
 
 Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment to create a TiN slab.
@@ -80,7 +80,7 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook, the user will be able to visualize the created TiN slab.
 
-![Review the Results](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/1.png "Review the Results")
+![Review the Results](../../../images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/1.png "Review the Results")
 
 We don't need to save the material at this point, as we will recreate the slab with island on the surface in the next notebook. This step is needed to identify the coordinates of the island vertices.
 
@@ -148,7 +148,7 @@ DEFAULT_SLAB_PARAMETERS = {
 
 Here's the visual of the updated content:
 
-![Notebook setup](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/island-setup.png "Notebook setup")
+![Notebook setup](../../../images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/island-setup.png "Notebook setup")
 
 ## 4. Run the Notebook.
 
@@ -160,7 +160,7 @@ Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and 
 
 After running the notebook, the user will be able to visualize the created material with the island on the surface.
 
-![Review the Results](/images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/original-result.png "Review the Results")
+![Review the Results](../../../images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/original-result.png "Review the Results")
 
 ## 6. Pass the Material to Materials Designer.
 

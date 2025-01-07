@@ -25,7 +25,7 @@ This tutorial demonstrates two different approaches to creating terrace steps on
 
 We will focus on creating platinum surface with terrace steps, as shown in FIG. 1. B:
 
-![Fig. 1.](/images/tutorials/materials/defects/defect_surface_step_platinum/0-figure-from-manuscript.webp "Fig. 1.")
+![Fig. 1.](../../../images/tutorials/materials/defects/defect_surface_step_platinum/0-figure-from-manuscript.webp "Fig. 1.")
 
 We will demonstrate two methods:
 
@@ -48,7 +48,7 @@ First, we need to import the platinum material from Standata:
 3. Select "Import from Standata"
 4. Search for "Pt" and select the bulk platinum material
 
-![Standata Import](/images/tutorials/materials/defects/defect_surface_step_platinum/1-standata-import-platinum.webp "Standata Import")
+![Standata Import](../../../images/tutorials/materials/defects/defect_surface_step_platinum/1-standata-import-platinum.webp "Standata Import")
 
 ### 1.2. Launch JupyterLite Environment.
 
@@ -76,13 +76,13 @@ These parameters will create a Pt(211) surface with:
 - Orthogonal z-axis
 - Using the conventional unit cell
 
-![Pt(211) Surface Setup](/images/tutorials/materials/defects/defect_surface_step_platinum/2-jl-setup-nb-surface.webp "Pt(211) Surface Setup")
+![Pt(211) Surface Setup](../../../images/tutorials/materials/defects/defect_surface_step_platinum/2-jl-setup-nb-surface.webp "Pt(211) Surface Setup")
 
 ### 1.4. Create the Slab.
 
 Run the notebook by clicking `Run` > `Run All` in the top menu. The notebook will generate the Pt(211) surface.
 
-![Pt(211) Surface](/images/tutorials/materials/defects/defect_surface_step_platinum/3-wave-result-pt-211-surface.webp "Pt(211) Surface")
+![Pt(211) Surface](../../../images/tutorials/materials/defects/defect_surface_step_platinum/3-wave-result-pt-211-surface.webp "Pt(211) Surface")
 
 ## 2. Method II: Create Terrace Step Defect on Pt(111).
 
@@ -134,17 +134,17 @@ SHOW_INTERMEDIATE_STEPS = True
 CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]  
 ```
 
-![Terrace Parameters](/images/tutorials/materials/defects/defect_surface_step_platinum/4-jl-setup-nb-terrace.webp "Terrace Parameters")
+![Terrace Parameters](../../../images/tutorials/materials/defects/defect_surface_step_platinum/4-jl-setup-nb-terrace.webp "Terrace Parameters")
 
 ### 2.3. Create the Terrace.
 
 Run the notebook to create the Pt(111) surface with a terrace step.
 
-![Pt(111) Surface with Terrace Step](/images/tutorials/materials/defects/defect_surface_step_platinum/5-wave-result-pt-terrace.webp "Pt(111) Surface with Terrace Step")
+![Pt(111) Surface with Terrace Step](../../../images/tutorials/materials/defects/defect_surface_step_platinum/5-wave-result-pt-terrace.webp "Pt(111) Surface with Terrace Step")
 
 The same material with repetitions:
 
-![Pt(111) Surface with Terrace Step with repetitions](/images/tutorials/materials/defects/defect_surface_step_platinum/6-wave-result-pt-terrace-repetitions.webp "Pt(111) Surface with Terrace Step with repetitions")
+![Pt(111) Surface with Terrace Step with repetitions](../../../images/tutorials/materials/defects/defect_surface_step_platinum/6-wave-result-pt-terrace-repetitions.webp "Pt(111) Surface with Terrace Step with repetitions")
 
 The user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 

@@ -30,7 +30,7 @@ This tutorial demonstrates how to create and optimize a Graphene/Ni(111) interfa
 
 We will recreate the interface structure and optimize the film position to match the experimental findings shown in the figure below:
 
-![Gr/Ni Interface](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/0-figure-from-manuscript.webp "Optimal position of graphene on Ni(111)")
+![Gr/Ni Interface](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/0-figure-from-manuscript.webp "Optimal position of graphene on Ni(111)")
 
 ## 1. Create Interface Structure.
 
@@ -68,7 +68,7 @@ INTERFACE_DISTANCE = 2.58  # in Angstrom from literature
 INTERFACE_VACUUM = 20.0  # in Angstrom
 ```
 
-![Interface Parameters](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/2-jl-setup-nb-interface.webp "Interface parameters for Gr/Ni(111)")
+![Interface Parameters](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/2-jl-setup-nb-interface.webp "Interface parameters for Gr/Ni(111)")
 
 ### 1.5. Run interface creation.
 
@@ -104,7 +104,7 @@ Key parameters explained:
 - `GRID_RANGE`: Search range in crystal coordinates
 - `USE_CARTESIAN`: Set to False for hexagonal systems
 
-![Optimization Parameters](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/3-jl-setup-nb-final.webp "Optimization parameters for Gr/Ni(111)")
+![Optimization Parameters](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/3-jl-setup-nb-final.webp "Optimization parameters for Gr/Ni(111)")
 
 ### 2.3. Run optimization.
 
@@ -114,17 +114,17 @@ Run all cells in the notebook. The optimization will:
 2. Find the global minimum energy position
 3. Generate visualizations of the results
 
-![Energy Landscape](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/4-energy-landscape.webp "Energy landscape of film positions")
+![Energy Landscape](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/4-energy-landscape.webp "Energy landscape of film positions")
 
-![Energy Heatmap](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/5-energy-heatmap.webp "Energy heatmap of film positions")
+![Energy Heatmap](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/5-energy-heatmap.webp "Energy heatmap of film positions")
 
 ## 3. Analyze Results.
 
 Compare the original and optimized interface structures to see the difference in the graphene position.
 
-![Initial and optimized interface](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/6-jl-result-preview-compare.webp "Initial and optimized interface structures")
+![Initial and optimized interface](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/6-jl-result-preview-compare.webp "Initial and optimized interface structures")
 
-![Final Interface](/images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/7-wave-result-final.webp "Optimized Gr/Ni Interface")
+![Final Interface](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/7-wave-result-final.webp "Optimized Gr/Ni Interface")
 
 
 ## 4. Save Optimized Structure.
