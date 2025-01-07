@@ -48,7 +48,7 @@ Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 
 ### 1.2. Open and modify the notebook.
@@ -74,7 +74,7 @@ TERMINATION_INDEX = 0
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ### 1.4. Analyze the Results.
 
@@ -154,7 +154,7 @@ Here's the visual of the updated content:
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ## 5. Analyze the Results.
 

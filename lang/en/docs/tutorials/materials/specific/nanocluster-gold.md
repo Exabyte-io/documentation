@@ -43,7 +43,7 @@ Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 2.2. Open and modify the notebook.
 
@@ -70,7 +70,7 @@ parameters = {
 
 Run the notebook by selecting "Run > Run All Cells" from the menu.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ### 2.4. Analyze the Results.
 

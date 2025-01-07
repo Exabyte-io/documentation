@@ -52,7 +52,7 @@ Next, we'll create a nanoribbon structure using the JupyterLite environment.
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 2.2. Open and Configure Nanoribbon Notebook.
 

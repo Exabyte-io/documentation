@@ -45,7 +45,7 @@ Otherwise, we navigate to [Materials Designer](../../../materials-designer/overv
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 1.3. Open `create_nanowire_custom_shapeipynb` notebook.
 
@@ -130,7 +130,7 @@ condition = CustomCoordinateCondition(vertices=vertices).condition
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 After running the notebook and submitting the material, the user will be able to visualize the structure of Silicon Nanowire.
 

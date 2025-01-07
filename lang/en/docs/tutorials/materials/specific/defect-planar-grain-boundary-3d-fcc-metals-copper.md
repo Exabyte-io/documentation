@@ -43,7 +43,7 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 
 Select "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" to open JupyterLite.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 1.3. Open and Configure Notebook.
 
@@ -93,7 +93,7 @@ These parameters will create:
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 
 ## 3. Analyze the Results.

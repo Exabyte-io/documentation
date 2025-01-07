@@ -58,7 +58,7 @@ For the defect creation, we will use the [JupyterLite](../../../jupyterlite/over
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 3.2. Open `create_point_defect.ipynb` notebook.
 
@@ -114,7 +114,7 @@ Here's the visual of the updated content:
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ## 5. Analyze the Results.
 

@@ -38,7 +38,7 @@ We will recreate the interface structure and optimize the film position to match
 
 Navigate to [Materials Designer](../../../materials-designer/overview.md) and import both graphene and nickel materials from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-![Import Graphene and Ni](/images/materials-designer/import/import_from_standata.webp "Import Gr and Ni from Standata")
+![Import Graphene and Ni](../../../images/materials-designer/import/import_from_standata.webp "Import Gr and Ni from Standata")
 
 ### 1.2. Launch JupyterLite Session.
 

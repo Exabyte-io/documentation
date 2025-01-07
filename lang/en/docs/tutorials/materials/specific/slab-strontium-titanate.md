@@ -42,7 +42,7 @@ Navigate to [Materials Designer](../../../materials-designer/overview.md) and im
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 1.3. Open `create_slab.ipynb` notebook.
 
@@ -101,7 +101,7 @@ This will allow for symmetry breaking and correct detection for all possible ter
 
 After setting the parameters, run the notebook by selecting "Run > Run All Cells" from the menu.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 
 ## 2. Analyze the Results.

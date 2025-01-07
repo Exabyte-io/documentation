@@ -46,7 +46,7 @@ Then use the [JupyterLite](../../../jupyterlite/overview.md) environment to crea
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 
 ### 2.2 Open and Modify the Notebook.
@@ -100,7 +100,7 @@ INTERFACE_VACUUM = 18.0  # in Angstrom
 
 After setting the parameters, run the notebook to create the interface between Cu and SiO₂.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ### 2.4. View Results.
 

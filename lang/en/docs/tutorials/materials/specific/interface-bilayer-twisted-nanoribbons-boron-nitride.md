@@ -45,7 +45,7 @@ Then we will use the [JupyterLite](../../../jupyterlite/overview.md) environment
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 2.2. Open and modify the notebook.
 
@@ -78,7 +78,7 @@ VISUALIZE_REPETITIONS = [1, 1, 1]
 
 After setting the parameters, run the notebook with "Run" > "Run All" option to create the twisted bilayer boron nitride structure.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ### 2.4. Analyze the Results.
 
