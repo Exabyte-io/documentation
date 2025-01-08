@@ -223,29 +223,29 @@ nav:
             - Interface, minimal strain (JupyterLite Session):                  tutorials/materials/jupyterlite-zsl.md
             - Import materials from files in various formats:                   tutorials/materials/import-from-files.md
 
-            - Specific:
-                - Substitutional Point Defects in Graphene:                     tutorials/materials/specific/defect-point-substitution-graphene.md
-                - Vacancy-Substitution Pair Defects in GaN:                     tutorials/materials/specific/defect-point-pair-gallium-nitride.md
-                - Vacancy Point Defect in h-BN:                                 tutorials/materials/specific/defect-point-vacancy-boron-nitride.md
-                - Interstitial Point Defect in SnO:                             tutorials/materials/specific/defect-point-interstitial-tin-oxide.md
-                - Island Surface Defect Formation in TiN:                       tutorials/materials/specific/defect-surface-island-titanium-nitride.md
-                - Step Surface Defect on Pt(111):                               tutorials/materials/specific/defect-surface-step-platinum.md
-                - Twisted Bilayer h-BN nanoribbons:                             tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
-                - Twisted Bilayer MoS2 commensurate lattices:                   tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
-                - Adatom Surface Defects on Graphene:                           tutorials/materials/specific/defect-surface-adatom-graphene.md
-                - H-Passivated Silicon Nanowire:                                tutorials/materials/specific/passivation-edge-nanowire-silicon.md
-                - H-Passivated Silicon (100) Surface:                           tutorials/materials/specific/passivation-surface-silicon.md
-                - Gold Nanoclusters:                                            tutorials/materials/specific/nanocluster-gold.md
-                - SrTiO3 Slab:                                                  tutorials/materials/specific/slab-strontium-titanate.md
-                - Interface between Graphene and h-BN:                          tutorials/materials/specific/interface-2d-2d-graphene-boron-nitride.md
-                - Interface between Copper and SiO2 (Cristobalite):             tutorials/materials/specific/interface-3d-3d-copper-silicon-dioxide.md
-                - Interface between Graphene and SiO2 (alpha-quartz):           tutorials/materials/specific/interface-2d-3d-graphene-silicon-dioxide.md
-                - High-k Metal Gate Stack (Si/SiO2/HfO2/TiN):                   tutorials/materials/specific/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride.md
-                - Ripple perturbation of a Graphene sheet:                      tutorials/materials/specific/perturbation-ripples-graphene.md
-                - Grain Boundary in FCC Metals (Copper):                        tutorials/materials/specific/defect-planar-grain-boundary-3d-fcc-metals-copper.md
-                - Grain Boundary (2D) in h-BN:                                  tutorials/materials/specific/defect-planar-grain-boundary-2d-boron-nitride.md
-                - Gr/Ni(111) Interface Optimization:                            tutorials/materials/specific/optimization-interface-film-xy-position-graphene-nickel.md
-                - Pt Adatoms Island on MoS2:                                    tutorials/materials/specific/defect-point-adatom-island-molybdenum-disulfide-platinum.md
+        - Publication Reproductions:
+            - Substitutional Point Defects in Graphene:                     tutorials/materials/specific/defect-point-substitution-graphene.md
+            - Vacancy-Substitution Pair Defects in GaN:                     tutorials/materials/specific/defect-point-pair-gallium-nitride.md
+            - Vacancy Point Defect in h-BN:                                 tutorials/materials/specific/defect-point-vacancy-boron-nitride.md
+            - Interstitial Point Defect in SnO:                             tutorials/materials/specific/defect-point-interstitial-tin-oxide.md
+            - Island Surface Defect Formation in TiN:                       tutorials/materials/specific/defect-surface-island-titanium-nitride.md
+            - Step Surface Defect on Pt(111):                               tutorials/materials/specific/defect-surface-step-platinum.md
+            - Twisted Bilayer h-BN nanoribbons:                             tutorials/materials/specific/interface-bilayer-twisted-nanoribbons-boron-nitride.md
+            - Twisted Bilayer MoS2 commensurate lattices:                   tutorials/materials/specific/interface-bilayer-twisted-commensurate-lattices-molybdenum-disulfide.md
+            - Adatom Surface Defects on Graphene:                           tutorials/materials/specific/defect-surface-adatom-graphene.md
+            - H-Passivated Silicon Nanowire:                                tutorials/materials/specific/passivation-edge-nanowire-silicon.md
+            - H-Passivated Silicon (100) Surface:                           tutorials/materials/specific/passivation-surface-silicon.md
+            - Gold Nanoclusters:                                            tutorials/materials/specific/nanocluster-gold.md
+            - SrTiO3 Slab:                                                  tutorials/materials/specific/slab-strontium-titanate.md
+            - Interface between Graphene and h-BN:                          tutorials/materials/specific/interface-2d-2d-graphene-boron-nitride.md
+            - Interface between Copper and SiO2 (Cristobalite):             tutorials/materials/specific/interface-3d-3d-copper-silicon-dioxide.md
+            - Interface between Graphene and SiO2 (alpha-quartz):           tutorials/materials/specific/interface-2d-3d-graphene-silicon-dioxide.md
+            - High-k Metal Gate Stack (Si/SiO2/HfO2/TiN):                   tutorials/materials/specific/heterostructure-silicon-silicon-dioxide-hafnium-dioxide-titanium-nitride.md
+            - Ripple perturbation of a Graphene sheet:                      tutorials/materials/specific/perturbation-ripples-graphene.md
+            - Grain Boundary in FCC Metals (Copper):                        tutorials/materials/specific/defect-planar-grain-boundary-3d-fcc-metals-copper.md
+            - Grain Boundary (2D) in h-BN:                                  tutorials/materials/specific/defect-planar-grain-boundary-2d-boron-nitride.md
+            - Gr/Ni(111) Interface Optimization:                            tutorials/materials/specific/optimization-interface-film-xy-position-graphene-nickel.md
+            - Pt Adatoms Island on MoS2:                                    tutorials/materials/specific/defect-point-adatom-island-molybdenum-disulfide-platinum.md
 
 # COMMON UI COMPONENTS
     - Interface Components:
