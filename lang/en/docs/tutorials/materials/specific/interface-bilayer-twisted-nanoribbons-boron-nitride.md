@@ -17,7 +17,7 @@ This tutorial demonstrates the process of creating a twisted bilayer boron nitri
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to  create Hexagonal boron nitride bilayer structure configurations with 2 specific twist angles.
 
-The image shows the twisted bilayer hBN structure with a twist angle of 2.64° (a) and 62.64° (b).
+The image shows the twisted bilayer h-BN structure with a twist angle of 2.64° (a) and 62.64° (b).
 
 ![Twisted Bilayer Boron Nitride](/images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/tbbn-paper-image.png "Twisted Bilayer Boron Nitride")
 
