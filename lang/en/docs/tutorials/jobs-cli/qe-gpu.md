@@ -1,3 +1,10 @@
+---
+tags:
+  - GPU
+  - CUDA
+hide:
+  - tags
+---
 # Accelerate Quantum ESPRESSO simulation with GPUs
 
 We will walk through a step-by-step example of running a Quantum ESPRESSO job on
