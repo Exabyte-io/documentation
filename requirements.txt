@@ -22,7 +22,7 @@ grpcio-status==1.66.2
 httplib2==0.22.0
 idna==3.10
 importlib_metadata==8.5.0
-Jinja2==3.1.4
+Jinja2==3.1.5
 livereload==2.6.3
 mkdocs-macros-plugin==1.2.0
 mkdocs-bibtex==2.16.2
