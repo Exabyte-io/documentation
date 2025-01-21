@@ -35,7 +35,7 @@ enabled, both `ssh` and `scp` commands should be available via both
     2. Scroll down the list to check if **OpenSSH Client** is listed. Otherwise,
     click the plus sign next to **Add a feature**, select **OpenSSH Client**,
     and click **Install**.
-    ![Windows 10 Apps and Features](../images/remote-connection/win10features.png)
+    ![Windows 10 Apps and Features](../images/remote-connection/win10features.png){:style="max-width: 400px !important;"}
     </details>
 
 - **Putty**[^3]: a widespread SSH client for Windows users, can be used as an
