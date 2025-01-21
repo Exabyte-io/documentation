@@ -223,7 +223,7 @@ nav:
             - Interface, minimal strain (JupyterLite Session):                  tutorials/materials/jupyterlite-zsl.md
             - Import materials from files in various formats:                   tutorials/materials/import-from-files.md
 
-        - Publication Reproductions:
+        - Reproducing Specific Manuscripts:
             - Substitutional Point Defects in Graphene:                     tutorials/materials/specific/defect-point-substitution-graphene.md
             - Vacancy-Substitution Pair Defects in GaN:                     tutorials/materials/specific/defect-point-pair-gallium-nitride.md
             - Vacancy Point Defect in h-BN:                                 tutorials/materials/specific/defect-point-vacancy-boron-nitride.md
