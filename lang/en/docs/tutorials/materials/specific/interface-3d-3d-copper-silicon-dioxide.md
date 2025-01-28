@@ -1,4 +1,15 @@
 ---
+tags:
+  - 3D
+  - copper
+  - cristobalite
+  - interface
+  - termination
+  - SiO2
+  - Cu
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -13,14 +24,13 @@ This tutorial demonstrates the process of creating interfaces between 3D materia
     **Shan, T.-R., Devine, B. D., Phillpot, S. R., & Sinnott, S. B.** 
     "Molecular dynamics study of the adhesion of Cu/SiO2interfaces using a variable-charge interatomic potential."
     Physical Review B, 83(11). 
-    [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327) 
-
+    [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327) [@Shan2011].
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create interfaces between Cu and Cristobalite with different termination pairs.
 
 The FIG. 1. shows the interfaces with different terminations between Cu and Cristobalite.
 
-![Copper on Cristobalite](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/0-figure-from-manuscript.webp   "Copper on Cristobalite, FIG. 1")
+![Copper on Cristobalite](../../../images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/0-figure-from-manuscript.webp   "Copper on Cristobalite, FIG. 1")
 
 
 ## 1. Load and Preview Materials.
@@ -36,7 +46,7 @@ Then use the [JupyterLite](../../../jupyterlite/overview.md) environment to crea
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 
 ### 2.2 Open and Modify the Notebook.
@@ -83,14 +93,14 @@ INTERFACE_DISTANCE = 2.4  # in Angstrom
 INTERFACE_VACUUM = 18.0  # in Angstrom
 ```
 
-![Notebook setup](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/1-jl-setup-notebook.webp "Notebook setup")
+![Notebook setup](../../../images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/1-jl-setup-notebook.webp "Notebook setup")
 
 
 ### 2.3. Run the Notebook.
 
 After setting the parameters, run the notebook to create the interface between Cu and SiO₂.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ### 2.4. View Results.
 
@@ -99,14 +109,14 @@ After that, the user can pass the material to the Materials Designer for further
 
 Interface between Copper and Cristobalite with the specified parameters is shown below.
 
-![Cu/SiO2 Interface](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/2-jl-result-preview.webp "Cu/SiO2 Interface")
+![Cu/SiO2 Interface](../../../images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/2-jl-result-preview.webp "Cu/SiO2 Interface")
 
 
 ## 3. Pass the Material to Materials Designer.
 
 The user can pass the material with the interface in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/3-wave-result.webp "Cu/SiO2 Interface")
+![Final Material](../../../images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/3-wave-result.webp "Cu/SiO2 Interface")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
@@ -131,11 +141,3 @@ The interactive JupyterLite notebook for creating interfaces between Copper and 
 {% endwith %}
 
 ## References.
-
-1. Shan, T.-R., Devine, B. D., Phillpot, S. R., & Sinnott, S. B. (2011). 
-    Molecular dynamics study of the adhesion of Cu/SiO2interfaces using a variable-charge interatomic potential. Physical Review B, 83(11). 
-    [DOI: 10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327)
-
-## Tags.
-
-`3D`, `copper`, `cristobalite`, `interface`, `termination`, `SiO2`, `Cu`

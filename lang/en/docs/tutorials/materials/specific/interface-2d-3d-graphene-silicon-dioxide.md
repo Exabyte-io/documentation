@@ -1,4 +1,15 @@
 ---
+tags:
+  - graphene
+  - silicon dioxide
+  - interface
+  - 2D
+  - 3D
+  - oxygen
+  - termination
+
+hide:
+  - tags
 # YAML header
 render_macros: true
 ---
@@ -14,13 +25,13 @@ This tutorial demonstrates the process of creating interfaces between 2D and 3D 
     **Yong-Ju Kang, Joongoo Kang, and K. J. Chang**
     "Electronic structure of graphene and doping effect on SiO2"
     Physical Review B 78, 115404 (2008)
-    [DOI: 10.1103/PhysRevB.78.115404](https://doi.org/10.1103/PhysRevB.78.115404)
+    [DOI: 10.1103/PhysRevB.78.115404](https://doi.org/10.1103/PhysRevB.78.115404) [@Kang2008; @Dahal2014]
 
 We use the [Materials Designer](../../../materials-designer/overview.md) to create interfaces between graphene and silicon dioxide with oxygen termination, as shown in the manuscript.
 
 We will focus on replicating the material from FIG. 1. (b) -- with Graphene on O-terminated SiO<sub>2</sub>. The material (a) requires relaxation to correctly reproduce the structure, which is not covered in this tutorial.
 
-![Graphene on Silicon Dioxide](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/0-figure-from-manuscript.webp "Graphene on Silicon Dioxide, FIG. 1(b)")
+![Graphene on Silicon Dioxide](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/0-figure-from-manuscript.webp "Graphene on Silicon Dioxide, FIG. 1(b)")
 
 ## 1. Load and Preview Materials.
 
@@ -34,7 +45,7 @@ Then use the [JupyterLite](../../../jupyterlite/overview.md) environment to crea
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
 ### 2.2 Open and Modify the Notebook.
 
@@ -79,20 +90,20 @@ INTERFACE_DISTANCE = 2.58  # in Angstrom -- from manuscript
 INTERFACE_VACUUM = 20.0  # in Angstrom -- from manuscript
 ```
 
-![Notebook Setup](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/2-jl-setup-notebook.webp "Notebook Setup")
+![Notebook Setup](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/2-jl-setup-notebook.webp "Notebook Setup")
 
 ### 2.3 Run the Notebook
 
 Run the notebook to generate the interface structure between graphene and silicon dioxide with oxygen termination.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 ### 2.4. View Results.
 
 The generation might take some time.
 After that, the user can pass the material to the Materials Designer for further analysis.
 
-![Gr/SiO2 Interface](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/3-jl-result-preview.webp "Gr/SiO2 Interface")
+![Gr/SiO2 Interface](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/3-jl-result-preview.webp "Gr/SiO2 Interface")
 
 ## 3. Pass the Material to Materials Designer.
 
@@ -100,7 +111,7 @@ After generating the interface structure, pass the material to the Materials Des
 
 The interface between graphene and silicon dioxide with oxygen termination is shown below.
 
-![Gr/SiO2 Interface](/images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/4-wave-result-material.webp "Gr/SiO2 Interface")
+![Gr/SiO2 Interface](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/4-wave-result-material.webp "Gr/SiO2 Interface")
 
 ## Interactive JupyterLite Notebook.
 
@@ -117,18 +128,3 @@ The interactive JupyterLite notebook for creating interfaces between graphene an
 {% endwith %}
 
 ## References.
-
-1. **Yong-Ju Kang, Joongoo Kang, and K. J. Chang**
-    "Electronic structure of graphene and doping effect on SiO2"
-    Physical Review B 78, 115404 (2008)
-    [DOI: 10.1103/PhysRevB.78.115404](https://doi.org/10.1103/PhysRevB.78.115404)
-
-
-2. **Arjun Dahala  and  Matthias Batzill**
-    "Graphene–nickel interfaces: a review"
-    Nanoscale 6, 2548-2562 (2014)
-    [DOI: 10.1039/C3NR05279F](https://doi.org/10.1039/C3NR05279F)
-
-## Tags.
-
-`graphene`, `silicon dioxide`, `interface`, `2D`,`3D`, `oxygen`, `termination`

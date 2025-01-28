@@ -1,11 +1,20 @@
 ---
+tags:
+    - silicon
+    - hydrogen
+    - passivation
+    - nanowire
+    - Si
+    - H
+hide:
+    - tags
 # YAML header
 render_macros: true
 ---
 
-# Passivation of Silicon Nanowire
+# Passivation of Silicon Nanowire.
 
-## Introduction
+## Introduction.
 
 This tutorial demonstrates the process of creating passivated silicon nanowires based on the work presented in the following manuscript, where the chemical gap tuning in silicon nanowires is studied.
 
@@ -14,35 +23,35 @@ This tutorial demonstrates the process of creating passivated silicon nanowires 
     B. Aradi, L. E. Ramos, P. Deák, Th. Köhler, F. Bechstedt, R. Q. Zhang, and Th. Frauenheim,
     "Theoretical study of the chemical gap tuning in silicon nanowires"
     Phys. Rev. B 76, 035305 (2007)
-    DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305)
+    DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305) [@Aradi2007]
 
 
 We will focus on creating silicon nanowires with hydrogen passivation from FIG. 1.
 
 Specifically, the material from FIG. 1. of the publication:
 
-![Passivated Silicon nanowire](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/0-figure-from-manuscript.webp "Passivated Silicon nanowire, FIG. 1.")
+![Passivated Silicon nanowire](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/0-figure-from-manuscript.webp "Passivated Silicon nanowire, FIG. 1.")
 
 
-## 1. Create Silicon Nanowire
+## 1. Create Silicon Nanowire.
 
-### 1.1. Load Silicon Material
+### 1.1. Load Silicon Material.
 
 Since we're using Silicon, it can be already loaded as the default material and we can skip this step.
 
 Otherwise, we navigate to [Materials Designer](../../../materials-designer/overview.md) and import the silicon material from the [Standata](../../../materials-designer/header-menu/input-output/standata-import.md).
 
-### 1.2. Launch JupyterLite Session
+### 1.2. Launch JupyterLite Session.
 
 Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/header-menu/advanced/jupyterlite-dialog.md)" menu item to launch the JupyterLite environment.
 
-![JupyterLite Dialog](/images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
+![JupyterLite Dialog](../../../images/jupyterlite/md-advanced-jl.webp "JupyterLite Dialog")
 
-### 1.3. Open `create_nanowire_custom_shapeipynb` notebook
+### 1.3. Open `create_nanowire_custom_shapeipynb` notebook.
 
 Find `create_nanowire_custom_shape.ipynb` in the list of notebooks and click/double-click open it.
 
-### 1.4. Open and modify the notebook
+### 1.4. Open and modify the notebook.
 
 Next, we need to create a nanowire wit ha custom shape.
 
@@ -117,19 +126,19 @@ vertices = [
 condition = CustomCoordinateCondition(vertices=vertices).condition
 ```
 
-## 1.5. Run the Notebook and use the Material
+## 1.5. Run the Notebook and use the Material.
 
 Run the notebook by clicking `Run` > `Run All` in the top menu to run cells and wait for the results to appear.
 
-![Run All](/images/jupyterlite/run-all.webp "Run All")
+![Run All](../../../images/jupyterlite/run-all.webp "Run All")
 
 After running the notebook and submitting the material, the user will be able to visualize the structure of Silicon Nanowire.
 
-![Silicon Nanowire](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/3-silicon-nanowire.webp "Silicon Nanowire")
+![Silicon Nanowire](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/3-silicon-nanowire.webp "Silicon Nanowire")
 
-## 2. Passivate with Hydrogen
+## 2. Passivate with Hydrogen.
 
-### 2.1. Setup the Passivation
+### 2.1. Setup the Passivation.
 
 Open JupyterLite Session again and select Silicon Nanowire material for Input Materials.
 
@@ -168,42 +177,34 @@ CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]
 
 Here's the visual of the updated content:
 
-![Notebook setup](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/5-jl-setup.webp "Notebook setup")
+![Notebook setup](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/5-jl-setup.webp "Notebook setup")
 
-### 2.2. Run the notebook and analyze the results
+### 2.2. Run the notebook and analyze the results.
 
 After running the notebook, the user will be able to visualize the structure of Silicon Nanowire with substitution defects.
 
-![Review the Results](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/6-jl-result-preview.webp "Review the Results")
+![Review the Results](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/6-jl-result-preview.webp "Review the Results")
 
-## 3. Pass the Material to Materials Designer
+## 3. Pass the Material to Materials Designer.
 
 The user can pass the material with substitution defects in the current Materials Designer environment and save it.
 
-![Final Material](/images/tutorials/materials/passivation/passivation_edge_silicon_nanowire/7-wave-result.webp "H-Passivated Silicon Nanowire")
+![Final Material](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/7-wave-result.webp "H-Passivated Silicon Nanowire")
 
 Or the user can [save or download](../../../materials-designer/header-menu/input-output.md) the material in Material JSON format or POSCAR format.
 
 
-## Interactive JupyterLite Notebook
+## Interactive JupyterLite Notebook.
 
 The following JupyterLite notebook demonstrates the process of creating materials with hydrogen passivation of silicon nanowire. Select "Run" > "Run All Cells".
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/passivation_edge_silicon_nanowire.ipynb' %}
+{% with notebook_name='specific_examples/passivation_edge_nanowire_silicon.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
 {% endwith %}
 
-## References
+## References.
 
-1. B. Aradi, L. E. Ramos, P. Deák, Th. Köhler, F. Bechstedt, R. Q. Zhang, and Th. Frauenheim,
-   Theoretical study of the chemical gap tuning in silicon nanowires
-   Phys. Rev. B 76, 035305 (2007)
-   DOI: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305)
-
-## Tags
-
- `silicon`, `hydrogen`, `passivation`, `nanowire`
