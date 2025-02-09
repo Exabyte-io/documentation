@@ -1,6 +1,6 @@
 # Specific Materials Examples
 
-This document contains links to the tutorials that demonstrate how to reproduce material structures from published scientific manuscripts. Each entry lists the tutorial name and the corresponding manuscript reference where available.
+This document contains links to the tutorials that demonstrate how to reproduce material structures from published scientific manuscripts. Each entry lists the tutorial name and the corresponding manuscript reference.
 
 ---
 
