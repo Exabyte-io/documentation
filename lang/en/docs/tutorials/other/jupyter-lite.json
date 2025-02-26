@@ -1,0 +1,182 @@
+{
+    "descriptionLinks": [
+        "Using Jupyter notebooks for data analysis: https://docs.mat3ra.com/tutorials/other/jupyter/"
+    ],
+    "description": "We present how we can use Jupyter notebooks in Mat3ra platform for data analysis.",
+    "tags": [
+        {
+            "...": "../../metadata/general.json#/tags"
+        },
+        "Jupyter",
+        "Python"
+    ],
+    "title": "Mat3ra Tutorial: Using Jupyter notebooks for data analysis",
+    "youTubeCaptions": [
+        {
+            "text": "Hi, <break time='0.5'/> in this short tutorial, we are going to present how we can use jupyter notebooks in matera platform for data analysis.",
+            "startTime": "00:00:00.500",
+            "endTime": "00:00:08.000"
+        },
+        {
+            "text": "It's a great option for those who are familiar with Python.",
+            "startTime": "00:00:08.500",
+            "endTime": "00:00:12.000"
+        },
+        {
+            "text": "Here we will specifically focus on how it can help us simplify the process of analyzing data obtained from DFT simulation..",
+            "startTime": "00:00:13.000",
+            "endTime": "00:00:22.000"
+        },
+        {
+            "text": "Let's head over to our platform. Use a web browser and visit platform dot matera dot com.",
+            "startTime": "00:00:23.000",
+            "endTime": "00:00:29.000"
+        },
+        {
+            "text": "We are going to create a DFT workflow to calculate bandstructure of silicon using quantum espresso.",
+            "startTime": "00:00:30.000",
+            "endTime": "00:00:36.000"
+        },
+        {
+            "text": "This calculation has three steps, <break time='1.0'/> first we perform self consistent field calculation.",
+            "startTime": "00:00:37.000",
+            "endTime": "00:00:43.000"
+        },
+        {
+            "text": "Then we add a unit for bands calculation.",
+            "startTime": "00:00:44.000",
+            "endTime": "00:00:47.000"
+        },
+        {
+            "text": "Finally, we add unit for postprocessing of bands using bands dot X.",
+            "startTime": "00:00:52.000",
+            "endTime": "00:00:55.000"
+        },
+        {
+            "text": "Save and exit workflow. <break time='0.5'/> Create a job with the workflow we have just created.",
+            "startTime": "00:00:58.000",
+            "endTime": "00:01:04.000"
+        },
+        {
+            "text": "Submit job for execution.",
+            "startTime": "00:01:20.000",
+            "endTime": "00:01:21.000"
+        },
+        {
+            "text": "Once the job is finished, we can see the summary of various results.",
+            "startTime": "00:01:25.000",
+            "endTime": "00:01:29.000"
+        },
+        {
+            "text": "Navigate to the files tab, and we will see all the output files are listed here.",
+            "startTime": "00:01:34.000",
+            "endTime": "00:01:39.000"
+        },
+        {
+            "text": "Now, we would like to do the post-processing of these output files using Python Jupyter notebook.",
+            "startTime": "00:01:40.000",
+            "endTime": "00:01:45.000"
+        },
+        {
+            "text": "There are a couple of different ways to run Jupyter notebook in our platform.",
+            "startTime": "00:01:46.000",
+            "endTime": "00:01:50.000"
+        },
+        {
+            "text": "Perhaps, the quickest way to launch Jupyter lite. Click the console icon on the top right and select Jupyter lite.",
+            "startTime": "00:01:51.000",
+            "endTime": "00:01:57.000"
+        },
+        {
+            "text": "Let's create a new notebook, <break time='2.0'/> and rename the notebook to bands analysis.",
+            "startTime": "00:02:01.000",
+            "endTime": "00:02:06.000"
+        },
+        {
+            "text": "Let's also open an example notebook.",
+            "startTime": "00:02:10.000",
+            "endTime": "00:02:13.000"
+        },
+        {
+            "text": "Here we will see that it is entirely possible to perform all the steps from a Jupyter notebook.",
+            "startTime": "00:02:16.000",
+            "endTime": "00:02:22.000"
+        },
+        {
+            "text": "Including authentication, <break time='0.25'/> workflow creation, <break time='0.25'/> job submission, <break time='0.25'/> job monitoring and <break time='0.25'/> fetch results.",
+            "startTime": "00:02:22.500",
+            "endTime": "00:02:29.000"
+        },
+        {
+            "text": "Now, let's copy the authentication part and run inside our bands analysis notebook.",
+            "startTime": "00:02:30.000",
+            "endTime": "00:02:35.000"
+        },
+        {
+            "text": "It will generate API keys and authenticate user seamlessly.",
+            "startTime": "00:02:36.000",
+            "endTime": "00:02:39.000"
+        },
+        {
+            "text": "It will also install a list of default packages.",
+            "startTime": "00:02:40.000",
+            "endTime": "00:02:43.000"
+        },
+        {
+            "text": "Next we initialize the jobs endpoint.",
+            "startTime": "00:02:45.000",
+            "endTime": "00:02:47.000"
+        },
+        {
+            "text": "Then we would like to fetch the output file.",
+            "startTime": "00:02:48.000",
+            "endTime": "00:02:50.000"
+        },
+        {
+            "text": "For this we need the job ID.",
+            "startTime": "00:02:55.000",
+            "endTime": "00:02:57.000"
+        },
+        {
+            "text": "Let's go back to job page.",
+            "startTime": "00:02:58.000",
+            "endTime": "00:03:00.000"
+        },
+        {
+            "text": "And copy the job ID.",
+            "startTime": "00:03:02.000",
+            "endTime": "00:03:04.000"
+        },
+        {
+            "text": "We would like to fetch the bands dot dat dot GNU file for bandstructure analysis.",
+            "startTime": "00:03:06.000",
+            "endTime": "00:03:10.000"
+        },
+        {
+            "text": "Let's save the results in a file named data dot TXT.",
+            "startTime": "00:03:12.000",
+            "endTime": "00:03:15.000"
+        },
+        {
+            "text": "Finally, we can use matplotlib to make our bandstructure plot.",
+            "startTime": "00:03:17.000",
+            "endTime": "00:03:21.000"
+        },
+        {
+            "text": "This use case is not specific to DFT data analysis. You can use Python notebooks to analyze or postprocess any data in our platform.",
+            "startTime": "00:03:22.000",
+            "endTime": "00:03:31.000"
+        },
+        {
+            "text": "Now, I hope you are excited to visit platform dot matera dot com, and give it a try.",
+            "startTime": "00:03:32.000",
+            "endTime": "00:03:36.000"
+        },
+        {
+            "text": "Thank you for following this tutorial and using our platform.",
+            "startTime": "00:03:37.000",
+            "endTime": "00:03:41.000"
+        }
+    ],
+    "youTubeId": "PXosTghiAzs"
+}

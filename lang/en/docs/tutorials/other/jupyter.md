@@ -4,11 +4,11 @@ This tutorial page explains how to create a Jupyter Notebook environment through
 
 ## Generate RESTFul API Tokens
 
-The Jupyter notebook environment in the present tutorial is used to run an IPython notebook from [Exabyte API Examples Repository](../../rest-api/api-examples.md) in which a connection is made to the RESTFul API to retrieve a list of materials. In order to establish the connection, one should generate RESTFul API tokens following the steps described in [here](../../rest-api/authentication.md). 
+The Jupyter notebook environment in the present tutorial is used to run an IPython notebook from [Exabyte API Examples Repository](../../rest-api/api-examples.md) in which a connection is made to the RESTFul API to retrieve a list of materials. In order to establish the connection, one should generate RESTFul API tokens following the steps described in [here](../../rest-api/authentication.md).
 
 ## Upload IPython Notebooks
 
-Jupyter Notebook is started on the account [Dropbox](../../data-in-objectstorage/dropbox.md) directory. This directory provides users with access to previously uploaded/created IPython notebooks. Here, **settings.py** file contains the variables required to configure the RESTFul API endpoints and **get_materials_by_formula.ipynb** from the [Exabyte API Examples Github Repository](../../rest-api/api-examples.md) are uploaded to Dropbox to be later used inside the Jupyter notebook environment. 
+Jupyter Notebook is started on the account [Dropbox](../../data-in-objectstorage/dropbox.md) directory. This directory provides users with access to previously uploaded/created IPython notebooks. Here, **settings.py** file contains the variables required to configure the RESTFul API endpoints and **get_materials_by_formula.ipynb** from the [Exabyte API Examples Github Repository](../../rest-api/api-examples.md) are uploaded to Dropbox to be later used inside the Jupyter notebook environment.
 
 ## Create Jupyter Job
 
@@ -20,7 +20,7 @@ Jupyter Notebook installation and configuration is handled through the Jupyter N
 
 ## Adjust Jupyter Notebook Environment
 
-Jupyter Notebook is installed inside a Python [virtual environment](https://virtualenv.pypa.io/en/latest/) with no additional packages initially. The environment can be customized by navigating to the [workflow tab](../../jobs-designer/workflow-tab.md) and adjusting the **configure.sh** script located inside the **notebook** unit. Here, we install [Exabyte API Client](../../rest-api/api-client.md) Python package to connect to Exabyte RESTFul API. 
+Jupyter Notebook is installed inside a Python [virtual environment](https://virtualenv.pypa.io/en/latest/) with no additional packages initially. The environment can be customized by navigating to the [workflow tab](../../jobs-designer/workflow-tab.md) and adjusting the **configure.sh** script located inside the **notebook** unit. Here, we install [Exabyte API Client](../../rest-api/api-client.md) Python package to connect to Exabyte RESTFul API.
 
 ## Submit Job
 
@@ -51,4 +51,13 @@ We demonstrate the steps mentioned above in the animation below.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/29B1GOnZPNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+## JupyterLite for data analysis
+
+In the below tutorial, we present how we can use JupyterLite session in Mat3ra
+platform to postprocess or analyze data.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/PXosTghiAzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
