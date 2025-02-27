@@ -1,6 +1,6 @@
 babel==2.16.0
 backports-abc==0.5
-cachetools==5.5.0
+cachetools==5.5.2
 certifi==2024.8.30
 chardet==4.0.0
 charset-normalizer==3.4.1

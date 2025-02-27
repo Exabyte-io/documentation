@@ -1,11 +1,11 @@
 {
     "descriptionLinks": [
-        "Using Jupyter notebooks for data analysis: https://docs.mat3ra.com/tutorials/other/jupyter/"
+        "Using Jupyter notebooks for data analysis: https://docs.mat3ra.com/jupyterlite/accessing-jupyterlite/"
     ],
     "description": "We present how we can use Jupyter notebooks in Mat3ra platform for data analysis.",
     "tags": [
         {
-            "...": "../../metadata/general.json#/tags"
+            "...": "../metadata/general.json#/tags"
         },
         "Jupyter",
         "Python"

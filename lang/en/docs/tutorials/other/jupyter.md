@@ -52,12 +52,3 @@ We demonstrate the steps mentioned above in the animation below.
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/29B1GOnZPNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-
-## JupyterLite for data analysis
-
-In the below tutorial, we present how we can use JupyterLite session in Mat3ra
-platform to postprocess or analyze data.
-
-<div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/PXosTghiAzs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
