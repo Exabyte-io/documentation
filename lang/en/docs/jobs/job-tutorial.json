@@ -1,0 +1,148 @@
+{
+  "descriptionLinks": ["Documentation: https://docs.mat3ra.com/jobs/overview/"],
+  "description": "Step-by-step guide on how to create jobs on Mat3ra platform.",
+  "tags": [
+    {
+      "...": "../metadata/general.json#/tags"
+    }
+  ],
+  "title": "Mat3ra Onboarding: How to create jobs?",
+  "youTubeCaptions": [
+    {
+      "text": "How to get started with creating and running jobs in matera platform?",
+      "startTime": "00:00:00.500",
+      "endTime": "00:00:04.500"
+    },
+    {
+      "text": "Creating job involves three steps.",
+      "startTime": "00:00:05.000",
+      "endTime": "00:00:07.100"
+    },
+    {
+      "text": "Specify the material system, such as crystal structure, lattice constants and atomic positions.",
+      "startTime": "00:00:08.000",
+      "endTime": "00:00:13.200"
+    },
+    {
+      "text": "Specify the workflow steps. <break time='0.25'/> Whether we are going to run a bandstructure calculation",
+      "startTime": "00:00:14.000",
+      "endTime": "00:00:19.200"
+    },
+    {
+      "text": "Or a molecular dynamics calculation or something else?",
+      "startTime": "00:00:19.500",
+      "endTime": "00:00:23.000"
+    },
+    {
+      "text": "Finally, depending on the system size, desired accuracy, and available resources, we can specify the compute parameters.",
+      "startTime": "00:00:23.500",
+      "endTime": "00:00:31.500"
+    },
+    {
+      "text": "Such as the required number of nodes, the number of processors per node.",
+      "startTime": "00:00:32.000",
+      "endTime": "00:00:35.700"
+    },
+    {
+      "text": "So, how do we specify the material system?",
+      "startTime": "00:00:36.000",
+      "endTime": "00:00:39.400"
+    },
+    {
+      "text": "There are a few different options in matera platform.",
+      "startTime": "00:00:40.000",
+      "endTime": "00:00:43.000"
+    },
+    {
+      "text": "We can upload structure files such as cif or vasp poscar formatted files from our local computer.",
+      "startTime": "00:00:45.000",
+      "endTime": "00:00:50.300"
+    },
+    {
+      "text": "We can search in the materials bank. Currently there are over ten thousand structures contributed by matera user community.",
+      "startTime": "00:00:54.000",
+      "endTime": "00:01:00.000"
+    },
+    {
+      "text": "Alternatively, <break time='0.25'/> We can import structure from third-party sources such as materials project.",
+      "startTime": "00:01:01.000",
+      "endTime": "00:01:07.000"
+    },
+    {
+      "text": "If you still cannot find your structure, click the create button and design your material from scratch using materials designer.",
+      "startTime": "00:01:08.000",
+      "endTime": "00:01:14.000"
+    },
+    {
+      "text": "Specify the lattice type, lattice constants, atomic positions, you have everything needed to generate any arbitrary structure.",
+      "startTime": "00:01:15.000",
+      "endTime": "00:01:24.000"
+    },
+    {
+      "text": "Next, <break time='0.25'/>how do we specify workflow steps?",
+      "startTime": "00:01:25.000",
+      "endTime": "00:01:29.000"
+    },
+    {
+      "text": "We can search in the workflow bank or create from scratch.",
+      "startTime": "00:01:30.000",
+      "endTime": "00:01:33.000"
+    },
+    {
+      "text": "We can find most common workflows in matera workflow bank.",
+      "startTime": "00:01:34.000",
+      "endTime": "00:01:37.000"
+    },
+    {
+      "text": "If required, we can always create workflows from scratch.",
+      "startTime": "00:01:39.000",
+      "endTime": "00:01:42.000"
+    },
+    {
+      "text": "Specify if you need sub-workflow. Add units and flavors as required.",
+      "startTime": "00:01:43.000",
+      "endTime": "00:01:47.000"
+    },
+    {
+      "text": "Once you have material and workflow in hand, navigate to job designer.",
+      "startTime": "00:01:53.000",
+      "endTime": "00:01:58.000"
+    },
+    {
+      "text": "Click create new job. We can organize our jobs under an existing project or create new project.",
+      "startTime": "00:01:59.000",
+      "endTime": "00:02:04.000"
+    },
+    {
+      "text": "Select a material or multiple materials as needed.",
+      "startTime": "00:02:05.000",
+      "endTime": "00:02:09.000"
+    },
+    {
+      "text": "Select workflow and adjust any important parameters.",
+      "startTime": "00:02:12.000",
+      "endTime": "00:02:15.000"
+    },
+    {
+      "text": "Navigate to compute tab and select cluster, queue type, number of nodes and number of processors per node.",
+      "startTime": "00:02:19.000",
+      "endTime": "00:02:24.000"
+    },
+    {
+      "text": "Save and exit job designer.",
+      "startTime": "00:02:25.000",
+      "endTime": "00:02:26.000"
+    },
+    {
+      "text": "Now our job creation is complete and ready to submit the job for execution.",
+      "startTime": "00:02:27.000",
+      "endTime": "00:02:33.000"
+    },
+    {
+      "text": "Now visit platform dot matera dot com and try yourself. Thank you for watching this tutorial and using our platform.",
+      "startTime": "00:02:34.000",
+      "endTime": "00:02:41.000"
+    }
+  ],
+  "youTubeId": "hT1VBFH7HHo"
+}

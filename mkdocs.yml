@@ -30,7 +30,7 @@ extra_javascript:
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2025.2.27"
+    version: "2025.5.29"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
