@@ -55,7 +55,7 @@ pytz==2024.2
 PyYAML==6.0.2
 pyyaml_env_tag==1.1
 regex==2024.9.11
-requests==2.32.3
+requests==2.32.4
 rsa==4.9.1
 singledispatch==3.4.0.4
 six==1.17.0
