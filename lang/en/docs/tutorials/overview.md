@@ -74,7 +74,6 @@ sidebar navigation.
     - [Interpolated Sets](materials/interpolated-sets.md)
     - [Molecule on a Surface](materials/molecule-surface.md)
     - [Interface, quick setup (3D Editor)](materials/slabs-interface.md)
-    - [Interface, no strain minimization (Python Transformation)](materials/interface-with-python.md)
     - [Interface, minimal strain (JupyterLite Session)](materials/jupyterlite-zsl.md)
     - [Import materials from files in various formats](materials/import-from-files.md)
 
