@@ -12,6 +12,8 @@ This dialog is accessible via the ["Advanced" menu](../advanced.md) option.
 
 The Dialog facilitates access to JupyterLite Environment where materials from the main application are available.
 
+The [Introduction.ipynb](https://jupyterlite.mat3ra.com/lab/tree?path=made/Introduction.ipynb) notebook provides the list and overview of all the notebooks available.
+
 ![JupyterLite Transformation dialog with Introduction.ipynb opened](../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation.webp "JupyterLite Transformation Dialog")
 
 ## Select Input Materials
