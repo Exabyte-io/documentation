@@ -1,6 +1,6 @@
 # JupyterLite Transformation Dialog
 
-The JupyterLite Transformation Dialog enables the modification of materials using Python, Jupyter notebooks with widely used packages (e.g. numpy, pymatgen, ASE, etc.) within the [JupyterLite environment](https://github.com/jupyterlite), a lightweight implementation of JupyterLab that runs entirely in the web browser.
+The JupyterLite Transformation Dialog enables the modification of materials using Python, Jupyter notebooks with widely used packages (e.g., numpy, pymatgen, ASE, etc.) within the [JupyterLite environment](https://github.com/jupyterlite), a lightweight implementation of JupyterLab that runs entirely in the web browser.
 
 ## Open Dialog
 
@@ -10,7 +10,9 @@ This dialog is accessible via the ["Advanced" menu](../advanced.md) option.
 
 ## JupyterLite Environment
 
-The Dialog facilitates access to JupyterLite Environment where materials from the main application are available.
+The Dialog facilitates access to the JupyterLite Environment where materials from the main application are available.
+
+The [Introduction.ipynb](https://jupyterlite.mat3ra.com/lab/tree?path=made/Introduction.ipynb) notebook provides a list and overview of all the notebooks available.
 
 ![JupyterLite Transformation dialog with Introduction.ipynb opened](../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation.webp "JupyterLite Transformation Dialog")
 
@@ -32,7 +34,7 @@ Learn how to access materials inside the JupyterLite environment launched from M
 
 ## Submit Results
 
-In most cases the result of the transformation is a set of materials that can be passed back to the Materials Designer. They will appear in the "Materials Out" dropdown at the bottom of the dialog. Select the materials you want to pass back to the Materials Designer and click the "Submit" button to complete the transformation.
+In most cases, the result of the transformation is a set of materials that can be passed back to the Materials Designer. They will appear in the "Materials Out" dropdown at the bottom of the dialog. Select the materials you want to pass back to the Materials Designer and click the "Submit" button to complete the transformation.
 
 ![JupyterLite Transformation dialog with materials_out dropdown opened](../../../images/materials-designer/jupyterlite_dialog/jupyterlite-transformation-submit-results.webp "Submit Results")
 
