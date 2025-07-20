@@ -15,12 +15,17 @@ To access JupyterLite from the Mat3ra Platform, click on the "Remote Access" ico
 
 ## 3. Direct Access
 
-To access [JupyterLite](https://jupyterlite.mat3ra.com/lab/tree?path=made/Introduction.ipynb) directly, navigate to the following URL:
+To access JupyterLite directly, navigate to the following URL:
+
+```
+https://jupyterlite.mat3ra.com/lab/index.html
+```
+
+To access the Introduction notebook summarizing the functionality available in [mat3ra-made](https://github.com/Exabyte-io/made):
 
 ```
 https://jupyterlite.mat3ra.com/lab/tree?path=made/Introduction.ipynb
 ```
-
 
 ## JupyterLite for data analysis
 
