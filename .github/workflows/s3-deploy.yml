@@ -3,7 +3,8 @@ name: Update S3 deploy
 on:
   push:
     branches:
-      - "master"
+      - "main"
+      - "dev"
   schedule:
     - cron: "0 0 1 1 *"
   workflow_dispatch:
@@ -31,13 +32,26 @@ jobs:
       - name: Build pages
         uses: Exabyte-io/action-mkdocs-build@main
 
-      - name: S3 Deploy
+      - name: Deploy to Production (dev branch, old docs)
+        if: github.ref == 'refs/heads/dev'
         uses: Reggionick/s3-deploy@v4
         with:
           folder: site
           bucket: docs.mat3ra.com
           bucket-region: ${{ secrets.S3_LOCATION }}
           dist-id: ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}
+          invalidation: /*
+          no-cache: true
+          private: true
+
+      - name: Deploy to Development (main branch, new docs)
+        if: github.ref == 'refs/heads/main'
+        uses: Reggionick/s3-deploy@v4
+        with:
+          folder: site
+          bucket: docs-new.mat3ra.com
+          bucket-region: ${{ secrets.S3_LOCATION_1 }}
+          dist-id: ${{ secrets.CLOUDFRONT_DEV_DISTRIBUTION_ID_1 }}
           invalidation: /*
           no-cache: true
           private: true
