@@ -43,12 +43,14 @@ We then use the [Advanced](../../../materials-designer/header-menu/advanced/supe
 ![Supercell Creation for Graphene](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/2-advanced-supercell.webp "Supercell Graphene")
 
 ## 2. Identify Defect Sites.
+Next, we can toggle the coordinates measurement in the editor to identify the crystal site positions for the defects.
 
-Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the crystal site positions for the defects.
+![Coordinates Measurement](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-toggle-measure-coordinates.webp "3D Editor Toggle Coordinates")
 
-![3D Editor](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-threejs-editor-coordinates.webp "3D Editor")
+Clicking on each atom will copy the coordinates of the atom to the clipboard as an array, which can then be pasted into the cell of the notebook and used to assign the defect coordinates.
 
-Hover over the atoms to get the coordinates of the atoms to replace. Then copy/paste these coordinates into a text file for later use.
+![3D Editor Coordinates](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-3d-editor-coordinates.webp "3D Editor Coordinates Copying")
+
 
 ## 3. Create Nitrogen Defects and Vacancies.
 
