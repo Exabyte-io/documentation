@@ -57,7 +57,9 @@ Cuboctahedron shape is achieved by setting parameters of the octahedron to be in
 Copy the content below and adjust the "1.1. Set up slab parameters" cell in the notebook:
 
 ```python
-shape = ASENanoparticleShapesEnum.OCTAHEDRON
+from mat3ra.made.tools.build.pristine_structures.zero_dimensional.nanoparticle import NanoparticleShapesEnum
+
+shape = NanoparticleShapesEnum.OCTAHEDRON
 parameters = {
     "length": 5,
     "cutoff": 2
@@ -101,7 +103,7 @@ To create the rest of the structures set the `shape` and other parameters accord
 For Cuboctahedron with 147 atoms:
 
 ```python
-shape = ASENanoparticleShapesEnum.OCTAHEDRON
+shape = NanoparticleShapesEnum.OCTAHEDRON
 parameters = {
     "length": 7,
     "cutoff": 3
@@ -113,7 +115,7 @@ parameters = {
 For Cuboctahedron with 309 atoms:
 
 ```python
-shape = ASENanoparticleShapesEnum.OCTAHEDRON
+shape = NanoparticleShapesEnum.OCTAHEDRON
 parameters = {
     "length": 9,
     "cutoff": 4

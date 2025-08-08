@@ -101,28 +101,39 @@ Run the notebook to create and pass the TiN slab to Materials Designer.
 Open `create_interface_with_min_strain_zsl.ipynb` and configure:
 
 ```python
-MAX_AREA = 200  # Maximum area for strain matching
-MAX_AREA_RATIO_TOLERANCE = 0.25  # Maximum area ratio tolerance
-MAX_ANGLE_TOLERANCE = 0.15  # Maximum angle tolerance
-MAX_LENGTH_TOLERANCE = 0.15  # Maximum length tolerance
-
 FILM_INDEX = 1  # SiO2
 FILM_MILLER_INDICES = (1, 0, 0)
 FILM_THICKNESS = 3
-FILM_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+FILM_TERMINATION_FORMULA = None  # if None, the first termination will be used
 FILM_VACUUM = 0.0
-FILM_USE_ORTHOGONAL_Z = True
+FILM_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+FILM_USE_ORTHOGONAL_C = True # Changed from FILM_USE_ORTHOGONAL_Z
 
 SUBSTRATE_INDEX = 0  # Si
 SUBSTRATE_MILLER_INDICES = (1, 0, 0)
 SUBSTRATE_THICKNESS = 4
-SUBSTRATE_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+SUBSTRATE_TERMINATION_FORMULA = None  # if None, the first termination will be used
 SUBSTRATE_VACUUM = 5.0
-SUBSTRATE_USE_ORTHOGONAL_Z = True
+SUBSTRATE_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+SUBSTRATE_USE_ORTHOGONAL_C = True # Changed from SUBSTRATE_USE_ORTHOGONAL_Z
 
 INTERFACE_DISTANCE = 2.5  # Angstroms
 INTERFACE_VACUUM = 5.0  # Angstroms
-TERMINATION_PAIR_INDEX = 0
+
+# Whether to convert materials to conventional cells before creating slabs.
+# To create interfaces with smaller cells, set this flag to False. (and pass already conventional cells as input)
+USE_CONVENTIONAL_CELL = True
+
+# Maximum area for the superlattice search algorithm (the final interface area will be smaller)
+MAX_AREA = 200  # in Angstrom^2
+# Additional fine-tuning parameters (increase values to get more strained matches):
+MAX_AREA_TOLERANCE = 0.25  # in Angstrom^2
+MAX_LENGTH_TOLERANCE = 0.15
+MAX_ANGLE_TOLERANCE = 0.15
+
+# Whether to reduce the resulting interface cell to the primitive cell after the interface creation.
+# If the reduction causes unexpected results, try increasing the `MAX_AREA` for search.
+REDUCE_RESULT_CELL_TO_PRIMITIVE = True
 ```
 
 We set a higher tolerances to achieve smaller cell with higher strain of the film (SiO2).

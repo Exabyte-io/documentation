@@ -64,7 +64,6 @@ Terminations can be selected interactively by setting the `IS_TERMINATIONS_SELEC
 Edit notebook in 1.1. to set parameters of slab:
 
 ```python
-
 # Enable interactive selection of terminations via UI prompt
 IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
 
@@ -72,10 +71,12 @@ MILLER_INDICES = (0, 1, 1)
 THICKNESS = 3  # in atomic layers
 VACUUM = 10.0  # in angstroms
 XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
-USE_ORTHOGONAL_Z = True
+USE_ORTHOGONAL_C = True
 USE_CONVENTIONAL_CELL = True
 
-# Index of the termination to be selected
+# Stoichiometric formula of the slab termination to be used.
+SLAB_TERMINATION_FORMULA = None
+# if None, the index of all possible terminations will be used
 TERMINATION_INDEX = 0
 ```
 

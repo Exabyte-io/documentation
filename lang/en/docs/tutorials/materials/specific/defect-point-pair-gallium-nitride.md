@@ -82,21 +82,28 @@ Next, edit `create_point_defect_pair.ipynb` notebook to modify the parameters by
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
+from types import SimpleNamespace
+
+# Selected material will be used as a unit cell to create a supercell first.
 SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
 # List of dictionaries with defect parameters
-PRIMARY_DEFECT_CONFIG = {
-    "defect_type": "substitution",
-    "approximate_coordinate": [1.608, 4.642, 5.240],
-    "chemical_element": "Mg",
-    "use_cartesian_coordinates": True,
-}
+PRIMARY_DEFECT_CONFIG = SimpleNamespace(
+    defect_type="substitution",
+    coordinate=[1.608, 4.642, 5.240],  # Approx. coord that will be resolved to the closest site
+    use_cartesian_coordinates=True,  # Use cartesian or crystal coordinates
+    chemical_element="Mg",
+    # "site_id": 0, # Index of the atom in the host material
+    # "coordinate": None, # Exact position (override the approximate coordinate)
+)
 
-SECONDARY_DEFECT_CONFIG = {
-    "defect_type": "vacancy",
-    "approximate_coordinate": [1.608, 4.642, 7.210],
-    "use_cartesian_coordinates": True,
-}
+SECONDARY_DEFECT_CONFIG = SimpleNamespace(
+    defect_type="vacancy",
+    approximate_coordinate=[1.608, 4.642, 7.210],  # Approx. coord that will be resolved to the closest site
+    use_cartesian_coordinates=True,
+    # "site_id": 0, # Index of the atom in the host material
+    # "coordinate": None, # Exact position (override the approximate coordinate)
+)
 ```
 
 Here's the visual of the updated content:

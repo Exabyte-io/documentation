@@ -52,12 +52,15 @@ Find `create_nanoribbon.ipynb` in the list of notebooks and click/double-click t
 Edit notebook to set the nanoribbon parameters:
 
 ```python
+# Index in the list of materials, to access as materials[MATERIAL_INDEX]
+MATERIAL_INDEX = 0
+
 # Widths and lengths are in number of unit cells
-WIDTH = 40
-VACUUM_WIDTH = 10
-LENGTH = 40
-VACUUM_LENGTH = 10
-EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
+WIDTH = 40 # in unit cells
+LENGTH = 40 # in unit cells
+VACUUM_WIDTH = 10.0 # in Angstroms
+VACUUM_LENGTH = 10.0 # in Angstroms
+EDGE_TYPE = "zigzag" # "zigzag" or "armchair"
 ```
 
 ![Setup Nanoribbon Parameters](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/2-jl-setup-nb-nanoribbon.webp "Setup Nanoribbon Parameters")
@@ -81,12 +84,47 @@ Next, we need to set up the parameters for creating rippled graphene.
 Edit notebook in 1.2. to set generic perturbation parameters:
 
 ```python
+import sympy as sp
+
 # Set whether to preserve geodesic distance and scale the cell accordingly to match PBC
 PRESERVE_GEODESIC_DISTANCE = False
 
+# Set the supercell matrix to apply to original material
+SUPERCELL_MATRIX = [[40, 0, 0], [0, 40, 0], [0, 0, 1]]
+
 # Set whether to use Cartesian coordinates for the perturbation function
 USE_CARTESIAN_COORDINATES = False
-MATERIAL_NAME = "Graphene"
+
+# Variables for the perturbation function (for SymPy)
+variable_names = ["x", "y", "z"]
+x, y, z = sp.symbols(variable_names)
+
+# Set the parameters for the perturbation function
+AMPLITUDE = 0.09  # Ripple amplitude
+WAVELENGTH = 0.2  # Wavelength of ripples
+EDGE_WIDTH = 0.25  # Width of edge effect
+PHASE_X = 0.0  # Phase shift for x direction
+PHASE_Y = sp.pi/2  # Phase shift for y direction
+
+# Create edge masks for both x and y using polynomial functions
+left_edge_x = sp.Max(0, (EDGE_WIDTH - x) / EDGE_WIDTH)
+right_edge_x = sp.Max(0, (x - (1 - EDGE_WIDTH)) / EDGE_WIDTH)
+left_edge_y = sp.Max(0, (EDGE_WIDTH - y) / EDGE_WIDTH)
+right_edge_y = sp.Max(0, (y - (1 - EDGE_WIDTH)) / EDGE_WIDTH)
+
+# Combine edge masks
+edge_mask_x = left_edge_x + right_edge_x
+edge_mask_y = left_edge_y + right_edge_y
+edge_mask = edge_mask_x + edge_mask_y
+
+# Wave pattern
+wave_pattern = (
+    sp.sin(2 * sp.pi * x / WAVELENGTH + PHASE_X) * 
+    sp.sin(2 * sp.pi * y / WAVELENGTH + PHASE_Y)
+)
+
+# Combine waves with edge mask
+custom_sympy_function = AMPLITUDE * wave_pattern * edge_mask
 ```
 
 Then modify section 1.3 to define the custom perturbation function:
