@@ -50,11 +50,14 @@ We then use the [Advanced](../../../materials-designer/header-menu/advanced/supe
 
 ## 2. Identify Defect Sites.
 
-Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the crystal site positions for the defects.
+Next, we can toggle the coordinates measurement in the editor to identify the crystal site positions for the defects.
 
-![3D Editor](../../../images/tutorials/materials/defects/defect_point_pair_gallium_nitride/4-threejs-editor-coordinates.webp "3D Editor")
+![Coordinates Measurement](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-toggle-measure-coordinates.webp "3D Editor Toggle Coordinates")
 
-Hover over the atoms to get the coordinates of the atoms to replace. Then copy/paste these coordinates into a text file for later use.
+Clicking on each atom will copy the coordinates of the atom to the clipboard as an array, which can then be pasted into the cell of the notebook and used to assign the defect coordinates.
+
+![3D Editor Coordinates](../../../images/tutorials/materials/defects/defect_point_pair_gallium_nitride/4-3d-editor-coordinates.webp "3D Editor Coordinates Copying")
+
 
 `[1.608, 4.642, 5.240]` for the Mg substitution defect and `[1.608, 4.642, 7.210]` for the nitrogen vacancy.
 
