@@ -59,13 +59,19 @@ Select "Advanced > [JupyterLite Transformation](../../../materials-designer/head
 Open a `create_slab.ipynb` notebook and set up the slab parameters in the "1.1. Set up notebook" cell:
 
 ```python
-MATERIAL_NAME = "Pt"
+# Enable interactive selection of terminations via UI prompt
+IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
+
 MILLER_INDICES = (2, 1, 1)
 THICKNESS = 6  # in atomic layers
 VACUUM = 10.0  # in angstroms
 XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
-USE_ORTHOGONAL_Z = True
+USE_ORTHOGONAL_C = True
 USE_CONVENTIONAL_CELL = True
+
+# Stoichiometric formula of the slab termination to be used.
+SLAB_TERMINATION_FORMULA = None
+# if None, the index of all possible terminations will be used
 TERMINATION_INDEX = 0
 ```
 
@@ -104,34 +110,27 @@ First, open `create_terrace_defect.ipynb`and select Pt as the input material.
 
 ```python
 # Material selection
-# Which material to use from input list
-MATERIAL_INDEX = 0  
+MATERIAL_INDEX = 0  # Which material to use from input list
 
-# Terrace parameters:
-# Normal vector describing a plane that cuts the terrace from added layers (Miller indices)
-CUT_DIRECTION = [0,1,1]  
-# Point the cutting plane passes through, in crystal coordinates
-PIVOT_COORDINATE = [0.5, 0.5, 0.5] 
-# Height of terrace in atomic layers
-NUMBER_OF_ADDED_LAYERS = 1  
-# Use cartesian instead of crystal coordinates
-USE_CARTESIAN_COORDINATES = False  
-# Rotate to match periodic boundary conditions
-ROTATE_TO_MATCH_PBC = True  
+# Terrace parameters
+CUT_DIRECTION = [0, 1, 1]  # Normal vector describing a plane that cuts the terrace from added layers (Miller indices)
+PIVOT_COORDINATE = [0.5, 0.5, 0.5]  # Point the cutting plane passes through, in crystal coordinates
+NUMBER_OF_ADDED_LAYERS = 1  # Height of terrace in atomic layers
+USE_CARTESIAN_COORDINATES = False  # Use cartesian instead of crystal coordinates
+ROTATE_TO_MATCH_PBC = True  # Rotate to match periodic boundary conditions
 
 # Slab parameters for creating a new slab if provided material is not a slab
 DEFAULT_SLAB_PARAMETERS = {
-    "miller_indices": (1,1,1),
+    "miller_indices": (1, 1, 1),
     "thickness": 6,
     "vacuum": 10.0,
-    "use_orthogonal_z": True,
+    "USE_ORTHOGONAL_C": True,
     "xy_supercell_matrix": [[2, 0], [0, 2]]
 }
 
 # Visualization parameters
 SHOW_INTERMEDIATE_STEPS = True
-# Structure repeat in view
-CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]  
+CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]  # Structure repeat in view
 ```
 
 ![Terrace Parameters](../../../images/tutorials/materials/defects/defect_surface_step_platinum/4-jl-setup-nb-terrace.webp "Terrace Parameters")

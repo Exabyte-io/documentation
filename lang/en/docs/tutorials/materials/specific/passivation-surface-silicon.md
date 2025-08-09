@@ -54,8 +54,8 @@ SUPERCELL_MATRIX = [
     [0, 0, 1]
 ] 
 
-# or use the scaling factor.
-SCALING_FACTOR = None # [3, 3, 1].
+# or use the scaling factor
+SCALING_FACTOR = None # [3, 3, 1]
 ```
 
 Also add to the "Get input materials" cell the following code to adjust the Si atom position:
@@ -106,17 +106,32 @@ Find and open the `passivate_slab.ipynb` notebook to add hydrogen atoms to the s
 Configure the following parameters for hydrogen passivation:
 
 ```python
-# Passivation parameters.
-PASSIVANT = "H"  # Chemical symbol for hydrogen.
-BOND_LENGTH = 1.46  # Si-H bond length in Angstroms.
-SURFACE = "top"  # Passivate only the top surface.
+# Material selection
+MATERIAL_INDEX = 0  # Which material to use from input list
 
-# Surface detection parameters.
-SHADOWING_RADIUS = 1.8  # In Angstroms.
-DEPTH = 0.5  # In Angstroms.
+# Passivation parameters
+PASSIVANT = "H"  # Chemical symbol of passivating atom
+BOND_LENGTH = 1.46  # Distance from surface to passivant, in Angstroms
+SURFACE = "top"  # Which surface to passivate: "top", "bottom" or "both"
 
-# Visualization parameters.
-CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]
+# Surface detection parameters
+SHADOWING_RADIUS = 1.8  # Radius to exclude subsurface atoms, in Angstroms
+DEPTH = 0.5  # How deep to look for surface atoms, in Angstroms
+
+BYPASS_SLAB_CREATION = False  # If True, will use input material directly
+
+# Slab parameters for creating a new slab if previous option is set to True
+DEFAULT_SLAB_PARAMETERS = {
+    "miller_indices": (0, 0, 1),
+    "thickness": 3,
+    "vacuum": 10.0,
+    "USE_ORTHOGONAL_C": True,
+    "xy_supercell_matrix": [[3, 0], [0, 3]]
+}
+
+# Visualization parameters
+SHOW_INTERMEDIATE_STEPS = True
+CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]  # Structure repeat in view
 ```
 
 Key parameters explained:
