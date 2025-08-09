@@ -54,23 +54,21 @@ We'll modify its parameters to create the Sn-vacancy O-interstitial defects acco
 Replace the default parameters in section 1.1 with:
 
 ```python
-# Supercell parameters.
+# Selected material will be used as a unit cell to create a supercell first.
 SUPERCELL_MATRIX = [[2, 0, 0], [0, 2, 0], [0, 0, 2]]
 
-# Defect parameters.
 DEFECT_CONFIGS = [
     {
-        "defect_type": "vacancy",
-        # Coordiante will be resolved to nearest atom.
-        "approximate_coordinate": [0.0, 0.25, 0.525],
+        "type": "vacancy",
+        "coordinate": [0.0, 0.25, 0.525],  # Crystal coordinates
+        "placement_method": "closest_site",
     },
     {
-        "defect_type": "interstitial",
-        # Coordiante will be resolved to nearest Voronoi site.
-        "coordinate": [0.0, 0.25, 0.35], 
-        "chemical_element": "O",
-        "placement_method": "voronoi_site"
-    }
+        "type": "interstitial",
+        "coordinate": [0.0, 0.25, 0.35],  # Crystal coordinates
+        "element": "O",
+        "placement_method": "voronoi_site",
+    },
 ]
 ```
 ![Defect Parameters](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/3-jl-setup-nb.webp "Defect parameters for O-interstitial in SnO")

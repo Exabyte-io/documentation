@@ -64,18 +64,30 @@ Next, edit `create_adatom_defect.ipynb` notebook to modify the parameters by cha
 Copy the content below and adjust the "1.1. Set up slab parameters" cell in the notebook:
 
 ```python
-DEFECT_TYPE = "adatom"  
-PLACEMENT_METHOD = "equidistant"
-CHEMICAL_ELEMENT = "Li"  
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]  
-USE_CARTESIAN_COORDINATES = False 
-DISTANCE_Z = 1.71
+# Index in the list of materials, to access as materials[MATERIAL_INDEX]
+MATERIAL_INDEX = 0
+ELEMENT = "Li"  # Chemical element of the adatom
+
+# Dictionaries are validated and converted to AdatomDefectDict objects below
+DEFECT_CONFIGS = [
+    {
+        "type": "adatom",
+        "coordinate_2d": [0.5, 0.5], # Crystal coordinates on the surface (x, y)
+        "distance_z": 1.71,  # Method to place the adatom
+        "element": ELEMENT,
+    }
+]
+
+
+PLACEMENT_METHOD = "equidistant"  # Method to place the adatom, e.g., "new_crystal_site", "exact_coordinate", "equidistant"
+
 
 # Slab parameters
-MILLER_INDICES = (0, 0, 1)  
-SLAB_THICKNESS = 1  
-VACUUM = 6 
-SUPERCELL_MATRIX = [[4, 0, 0], [0, 4, 0], [0, 0, 1]] 
+MILLER_INDICES = (0, 0, 1)  # Miller indices of the surface
+SLAB_THICKNESS = 1  # Thickness of the slab in unit cells
+VACUUM = 6.0  # Vacuum thickness in Angstrom
+XY_SUPERCELL_MATRIX = [[4, 0], [0, 4]]  # Supercell matrix for the slab
+TERMINATION_FORMULA = None  # Stoichiometric formula of the slab termination to be used.
 ```
 
 ### 2.3. Run the notebook.
@@ -111,7 +123,7 @@ For example, to create a Graphene structure with a Na adatom, adjust the paramet
 
 ```python
 CHEMICAL_ELEMENT = "Na"
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+COORDINATE_2D = [0.5, 0.5]
 DISTANCE_Z = 2.28
 ```
 
@@ -120,7 +132,7 @@ DISTANCE_Z = 2.28
 For K adatom on hollow site:
 ```python
 CHEMICAL_ELEMENT = "K"
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+COORDINATE_2D = [0.5, 0.5]
 DISTANCE_Z = 2.60
 ```
 
@@ -130,7 +142,7 @@ DISTANCE_Z = 2.60
 For Ca adatom on hollow site:
 ```python
 CHEMICAL_ELEMENT = "Ca"
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+COORDINATE_2D = [0.5, 0.5]
 DISTANCE_Z = 2.29
 ```
 
@@ -140,7 +152,7 @@ DISTANCE_Z = 2.29
 For Al adatom on hollow site:
 ```python
 CHEMICAL_ELEMENT = "Al"
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+COORDINATE_2D = [0.5, 0.5]
 DISTANCE_Z = 2.13
 ```
 
@@ -150,7 +162,7 @@ DISTANCE_Z = 2.13
 For Ga adatom on hollow site:
 ```python
 CHEMICAL_ELEMENT = "Ga"
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+COORDINATE_2D = [0.5, 0.5]
 DISTANCE_Z = 2.20
 ```
 
@@ -160,7 +172,7 @@ DISTANCE_Z = 2.20
 For In adatom on hollow site:
 ```python
 CHEMICAL_ELEMENT = "In"
-APPROXIMATE_POSITION_ON_SURFACE = [0.5, 0.5]
+COORDINATE_2D = [0.5, 0.5]
 DISTANCE_Z = 2.45
 ```
 
@@ -170,7 +182,7 @@ DISTANCE_Z = 2.45
 For Sn adatom on top site:
 ```python
 CHEMICAL_ELEMENT = "Sn"
-APPROXIMATE_POSITION_ON_SURFACE = [7/12, 5/12]
+COORDINATE_2D = [7/12, 5/12]
 DISTANCE_Z = 2.82
 ```
 

@@ -71,26 +71,39 @@ Adjust the "1.1. Set up slab parameters" cell in the notebook according to:
 # Enable interactive selection of terminations via UI prompt
 IS_TERMINATIONS_SELECTION_INTERACTIVE = False 
 
-FILM_INDEX = 1 # Index in the list of materials, to access as materials[FILM_INDEX]
+FILM_INDEX = 1  # Index in the list of materials, to access as materials[FILM_INDEX]
 FILM_MILLER_INDICES = (0, 0, 1)
 FILM_THICKNESS = 1  # in atomic layers
+FILM_TERMINATION_FORMULA = None  # if None, the first termination will be used
 FILM_VACUUM = 0.0  # in angstroms
 FILM_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
-FILM_USE_ORTHOGONAL_Z = True
+FILM_USE_ORTHOGONAL_C = True
 
 SUBSTRATE_INDEX = 0
 SUBSTRATE_MILLER_INDICES = (0, 0, 1)
 SUBSTRATE_THICKNESS = 1  # in atomic layers
+SUBSTRATE_TERMINATION_FORMULA = None  # if None, the first termination will be used
 SUBSTRATE_VACUUM = 0.0  # in angstroms
 SUBSTRATE_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
-SUBSTRATE_USE_ORTHOGONAL_Z = True
+SUBSTRATE_USE_ORTHOGONAL_C = True
 
-# Maximum area for the superlattice search algorithm
-MAX_AREA = 50 # in Angstrom^2
-# Set the termination pair indices
-TERMINATION_PAIR_INDEX = 0 # Will be overridden in interactive selection is used
-INTERFACE_DISTANCE = 3.4  # in Angstrom
-INTERFACE_VACUUM = 20.0  # in Angstrom
+INTERFACE_DISTANCE = 3.4  # Gap between substrate and film, in Angstrom
+INTERFACE_VACUUM = 20.0  # Vacuum over film, in Angstrom
+
+# Whether to convert materials to conventional cells before creating slabs.
+# To create interfaces with smaller cells, set this flag to False. (and pass already conventional cells as input)
+USE_CONVENTIONAL_CELL = True
+
+# Maximum area for the superlattice search algorithm (the final interface area will be smaller)
+MAX_AREA = 50  # in Angstrom^2
+# Additional fine-tuning parameters (increase values to get more strained matches):
+MAX_AREA_TOLERANCE = 0.09  # in Angstrom^2
+MAX_LENGTH_TOLERANCE = 0.05
+MAX_ANGLE_TOLERANCE = 0.02
+
+# Whether to reduce the resulting interface cell to the primitive cell after the interface creation.
+# If the reduction causes unexpected results, try increasing the `MAX_AREA` for search.
+REDUCE_RESULT_CELL_TO_PRIMITIVE = True
 ```
 
 ![Notebook setup](../../../images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/2-jl-setup-notebook.webp "Notebook setup")
@@ -126,8 +139,8 @@ a = selected_interface.lattice.a
 shifted_interface = interface_displace_part(
     interface=selected_interface, 
     displacement=[0, n * a / np.sqrt(3), 0],
-    use_cartesian_coordinates=True)
-
+    use_cartesian_coordinates=True,
+)
 ```
 
 ![Shift Interface](../../../images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/4-jl-setup-shift.webp "Shift Interface")

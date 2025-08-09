@@ -59,7 +59,7 @@ Adjust the "1.1. Set up slab parameters" cell in the notebook according to:
 
 ```python
 # Material selection and basic parameters
-FILM_INDEX = 0 # Index in the list of materials, to access as materials[FILM_INDEX]
+FILM_INDEX = 0  # Index in the list of materials, to access as materials[FILM_INDEX]
 SUBSTRATE_INDEX = None  # Can be None to use same material as film
 
 # Twisted interface parameters
@@ -67,10 +67,18 @@ TARGET_TWIST_ANGLE = 22.0  # in degrees
 INTERFACE_DISTANCE = 6.5  # in Angstroms
 INTERFACE_VACUUM = 20.0  # in Angstroms
 
-# Search algorithm parameters
-MAX_REPETITION = 6  # Maximum supercell matrix element value
+# Commensurate interface parameters (following the test pattern)
 ANGLE_TOLERANCE = 0.5  # in degrees
+MAX_SUPERCELL_MATRIX_INT = 6  # Maximum supercell matrix element value
 RETURN_FIRST_MATCH = True  # If True, returns first solution within tolerance
+
+# Slab creation parameters
+MILLER_INDICES = (0, 0, 1)  # Miller indices for slab creation
+NUMBER_OF_LAYERS = 1  # Number of layers in the slab
+USE_CONVENTIONAL_CELL = True
+USE_ORTHOGONAL_C = True
+
+STACKING_DIRECTION = "z" # Stacking direction for the slab, can be "x", "y", or "z"
 
 # Visualization parameters
 SHOW_INTERMEDIATE_STEPS = True

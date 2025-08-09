@@ -59,11 +59,15 @@ Select the "Advanced > [JupyterLite Transformation](../../../materials-designer/
 Find and open `create_nanoribbon.ipynb` in the list of notebooks. Edit the nanoribbon parameters in section 1.1 of the notebook:
 
 ```python
-WIDTH = 3  # in number of unit cells
-LENGTH = 6  # in number of unit cells
-VACUUM_WIDTH = 0  # in number of unit cells
-VACUUM_LENGTH = 0 # in number of unit cells
-EDGE_TYPE = "zigzag"  # "zigzag" or "armchair"
+# Index in the list of materials, to access as materials[MATERIAL_INDEX]
+MATERIAL_INDEX = 0
+
+# Widths and lengths are in number of unit cells
+WIDTH = 3 # in unit cells
+LENGTH = 6 # in unit cells
+VACUUM_WIDTH = 0 # in Angstroms
+VACUUM_LENGTH = 0 # in Angstroms
+EDGE_TYPE = "zigzag" # "zigzag" or "armchair"
 ```
 
 ![Nanoribbon Parameters](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/2-jl-nb-setup-nanoribbon.webp "Nanoribbon Parameters")
@@ -92,11 +96,14 @@ After creating the nanoribbon, we'll introduce the vacancy defect using the poin
 Open `create_point_defect.ipynb` and modify the defect configuration parameters:
 
 ```python
+# Selected material will be used as a unit cell to create a supercell first.
 SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
+
 DEFECT_CONFIGS = [
     {
-        "defect_type": "vacancy",
-        "approximate_coordinate": [0.5, 0.5, 0.5],
+        "type": "vacancy",
+        "coordinate": [0.5, 0.5, 0.5],
+        "placement_method": "closest_site",
         "use_cartesian_coordinates": False
     }
 ]

@@ -53,23 +53,26 @@ Next, edit `create_twisted_interface_with_nanoribbons.ipynb` notebook to modify 
 Adjust the "1.1. Set up slab parameters" cell in the notebook according to:
 
 ```python
-FILM_INDEX = 0  # Index in the list of materials, to access as materials[FILM_INDEX]
+# Material selection and basic parameters
+FILM_INDEX = 0 # Index in the list of materials, to access as materials[FILM_INDEX]
 SUBSTRATE_INDEX = None  # Can be None to use same material as film
 
-# Interface parameters
-TWIST_ANGLE = 2.64  # in degrees
+# Twisted interface parameters
+TARGET_TWIST_ANGLE = 2.64  # in degrees
 INTERFACE_DISTANCE = 3.23  # in Angstroms
 INTERFACE_VACUUM = 20.0  # in Angstroms
 
 # Nanoribbon parameters
 RIBBON_WIDTH = 50  # Width of the nanoribbon in unit cells
 RIBBON_LENGTH = 50  # Length of the nanoribbon in unit cells
-VACUUM_X = 5.0  # Vacuum along x on both sides, in Angstroms
-VACUUM_Y = 5.0  # Vacuum along y on both sides, in Angstroms
+VACUUM_WIDTH = 15.0  # Vacuum width around ribbons in Angstroms
+VACUUM_LENGTH = 15.0  # Vacuum length around ribbons in Angstroms
+VACUUM_X = 2.0  # Additional vacuum along x on both sides, in Angstroms
+VACUUM_Y = 2.0  # Additional vacuum along y on both sides, in Angstroms
 
 # Visualization parameters
 SHOW_INTERMEDIATE_STEPS = True
-VISUALIZE_REPETITIONS = [1, 1, 1]
+VISUALIZE_REPETITIONS = [3, 3, 1]
 ```
 
 ![Notebook setup](../../../images/tutorials/materials/interfaces/twisted-bilayer-boron-nitride/jl-set-nb.png "Notebook setup")

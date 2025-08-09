@@ -54,18 +54,39 @@ Edit the notebook parameters to create the Gr/Ni(111) interface:
 
 ```python
 # Material selection
-SUBSTRATE_NAME = "Nickel"
-FILM_NAME = "Graphene"
+FILM_INDEX = 1  # Index in the list of materials, to access as materials[FILM_INDEX]
+FILM_MILLER_INDICES = (0, 0, 1)
+FILM_THICKNESS = 1  # in atomic layers
+FILM_TERMINATION_FORMULA = None  # if None, the first termination will be used
+FILM_VACUUM = 0.0  # in angstroms
+FILM_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+FILM_USE_ORTHOGONAL_C = True
 
-# Slab parameters
+SUBSTRATE_INDEX = 0
 SUBSTRATE_MILLER_INDICES = (1, 1, 1)
 SUBSTRATE_THICKNESS = 4  # in atomic layers
-FILM_THICKNESS = 1  # in atomic layers
+SUBSTRATE_TERMINATION_FORMULA = None  # if None, the first termination will be used
+SUBSTRATE_VACUUM = 0.0  # in angstroms
+SUBSTRATE_XY_SUPERCELL_MATRIX = [[1, 0], [0, 1]]
+SUBSTRATE_USE_ORTHOGONAL_C = True
 
-# Interface parameters
+INTERFACE_DISTANCE = 2.58  # Gap between substrate and film, in Angstrom
+INTERFACE_VACUUM = 20.0  # Vacuum over film, in Angstrom
+
+# Whether to convert materials to conventional cells before creating slabs.
+# To create interfaces with smaller cells, set this flag to False. (and pass already conventional cells as input)
+USE_CONVENTIONAL_CELL = True
+
+# Maximum area for the superlattice search algorithm (the final interface area will be smaller)
 MAX_AREA = 50  # in Angstrom^2
-INTERFACE_DISTANCE = 2.58  # in Angstrom from literature
-INTERFACE_VACUUM = 20.0  # in Angstrom
+# Additional fine-tuning parameters (increase values to get more strained matches):
+MAX_AREA_TOLERANCE = 0.09  # in Angstrom^2
+MAX_LENGTH_TOLERANCE = 0.05
+MAX_ANGLE_TOLERANCE = 0.02
+
+# Whether to reduce the resulting interface cell to the primitive cell after the interface creation.
+# If the reduction causes unexpected results, try increasing the `MAX_AREA` for search.
+REDUCE_RESULT_CELL_TO_PRIMITIVE = True
 ```
 
 ![Interface Parameters](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/2-jl-setup-nb-interface.webp "Interface parameters for Gr/Ni(111)")
@@ -89,14 +110,16 @@ Find and open the `optimize_film_position.ipynb` notebook which will help us fin
 Configure the optimization parameters:
 
 ```python
+MATERIAL_INDEX = 0  # Index of the material to optimize
 # Grid parameters
 GRID_SIZE = (20, 20)  # Resolution of the x-y grid
-GRID_RANGE_X = (-0.5, 0.5)  # Range in crystal coordinates
-GRID_RANGE_Y = (-0.5, 0.5)
-USE_CARTESIAN = False  # Use crystal coordinates
+GRID_RANGE_X = (-0.5, 0.5)  # Range to search in x direction
+GRID_RANGE_Y = (-0.5, 0.5)  # Range to search in y direction
+USE_CARTESIAN = False  # Whether to use Cartesian coordinates
 
 # Visualization parameters
-STRUCTURE_REPETITIONS = [3, 3, 1]
+SHOW_3D_LANDSCAPE = False  # Whether to show 3D energy landscape
+STRUCTURE_REPETITIONS = [3, 3, 1]  # Repetitions for structure visualization
 ```
 
 Key parameters explained:

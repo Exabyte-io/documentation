@@ -54,21 +54,33 @@ Find and open `create_grain_boundary_film.ipynb`. Edit the grain boundary parame
 `EDGE_INCLUSION_TOLERANCE = 0.0` -- Edge inclusion parameter, in Angstroms. Controls the overlap of the second phase onto the first phase.
 
 ```python
+# Material selection
+MATERIAL_INDEX = 0  # Index in the list of materials
+
 # Grain boundary parameters
 TARGET_TWIST_ANGLE = 9.0  # in degrees
-BOUNDARY_GAP = 0.0  # Gap between orientations in X direction
-XY_SUPERCELL_MATRIX = [[1, 0], [0, 2]]
+BOUNDARY_GAP = 0.0  # Gap between two orientations in X direction, in Angstroms
+XY_SUPERCELL_MATRIX = [[1, 0], [0, 2]] # Supercell matrix to be applied to each of the orientations before matching
+MILLER_INDICES = (0, 0, 1)  # Miller indices for the supercell matching
+VACUUM = 10.0  # Vacuum thickness in Angstroms, added to the top and bottom of the grain boundary
 
 # Search algorithm parameters
-MAX_REPETITION = None
+MAX_REPETITION = None  # Maximum supercell matrix element value
 ANGLE_TOLERANCE = 0.5  # in degrees
-RETURN_FIRST_MATCH = True
+RETURN_FIRST_MATCH = True  # If True, returns first solution within tolerance
 
-# Distance tolerance for atom merging
+# Distance tolerance for two atoms to be considered too close. 
+# Used when merging two orientations to remove the atoms of the first one. 
+# Should be less than the expected bond length
 DISTANCE_TOLERANCE = 1.43  # in Angstroms
 
-# Edge inclusion parameter
+# How much to expand inclusion of the edge atoms for both orientations and fill in the gap region.
+# A fine-tuning parameter
 EDGE_INCLUSION_TOLERANCE = 0.0  # in Angstroms
+
+# Visualization parameters
+SHOW_INTERMEDIATE_STEPS = True
+CELL_REPETITIONS_FOR_VISUALIZATION = [3, 3, 1]
 ```
 
 ![Notebook Setup](../../../images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/2-jl-setup-nb-gb.webp "Notebook Setup")
@@ -95,21 +107,16 @@ Open JupyterLite Session and find `create_point_defect.ipynb` notebook.
 Select the h-BN grain boundary structure as input material and configure the adatom defect parameters in the "1.1. Set Notebook Parameters" section:
 
 ```python
-DEFECT_TYPE = "interstitial"  # (e.g. "vacancy", "substitution", "interstitial")
-SITE_ID = None  # Site index of the defect
-COORDINATE = [0.5, 0.45, 0.5]  # Position of the defect in crystal coordinates
-APPROXIMATE_COORDINATE = None  # Approximate coordinates of the defect in crystal coordinates
-CHEMICAL_ELEMENT = "N"  # Element to be placed at the site (ignored for vacancy)
-
+# Selected material will be used as a unit cell to create a supercell first.
 SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
 
-# List of dictionaries with defect parameters
 DEFECT_CONFIGS = [
     {
-        "defect_type": DEFECT_TYPE,
-        "coordinate": COORDINATE,
-        "chemical_element": CHEMICAL_ELEMENT,
-    }
+        "type": "interstitial",
+        "coordinate": [0.5, 0.45, 0.5],  # Crystal coordinates
+        "element": "N",
+        "placement_method": "closest_site",
+    },
 ]
 ```
 
