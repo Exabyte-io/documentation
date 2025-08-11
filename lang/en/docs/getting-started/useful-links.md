@@ -29,7 +29,6 @@ Some useful information when getting started with the Exabyte.io platform.
     <li>Example programmatic usage via Jupyter/command-line (CLI):
         <ul>
             <li><a href="/tutorials/jobs-cli/job-cli-example/" target="_blank">Run a command-line job</a></li>
-            <li><a href="/tutorials/other/external-upload/" target="_blank">Upload and parse external CLI data</a></li>
             <li><a href="/tutorials/other/jupyter/" target="_blank">Run a Jupyter Notebook connected to REST-API</a></li>
         </ul>
     </li>

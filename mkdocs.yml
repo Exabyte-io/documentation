@@ -211,7 +211,6 @@ nav:
             - Accessing the Platform:                tutorials/platform-access.md
             - Jupyter Notebook:                      tutorials/other/jupyter.md
             - Restart from Previous Job:             tutorials/other/restart-job.md
-            - Upload External Job Data:              tutorials/other/external-upload.md
             - TensorFlow (GPU):                      tutorials/general-functionality/tensorflow-gpu.md
         - Materials:
             - Overview:                                                         tutorials/materials/overview.md
@@ -639,16 +638,6 @@ nav:
             - Check status:                             jobs-cli/actions/check-status.md
             - Terminate:                                jobs-cli/actions/terminate.md
             - View Jobs List:                           jobs-cli/actions/view-job-list.md
-
-
-    - External Uploads:
-        - Overview:                                     external/overview.md
-        - Status:                                       external/status.md
-        - User Interface:
-            - Explorer:                                 external/ui/explorer.md
-        - Actions:
-            - Overview:                                 external/actions/overview.md
-            - Create:                                   external/actions/create.md
 
 
     - Properties:

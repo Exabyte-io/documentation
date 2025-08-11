@@ -65,7 +65,6 @@ sidebar navigation.
     - [Accessing the Platform](platform-access.md)
     - [Jupyter Notebook](other/jupyter.md)
     - [Restart from Previous Job](other/restart-job.md)
-    - [Upload External Job Data](other/external-upload.md)
     - [TensorFlow (GPU)](general-functionality/tensorflow-gpu.md)
 - Materials
     - [Overview](materials/overview.md)
