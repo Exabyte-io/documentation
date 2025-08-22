@@ -17,9 +17,6 @@ sidebar navigation.
     - [Magnetic Moment on Atoms by Specie](templating/set-magnetic-moment.md)
 - Machine Learning (ML)
     - [Overview](ml/overview.md)
-    - ExabyteML (legacy)
-        - [Train ML Model](ml/train-ml-model.md)
-        - [Predict New Properties](ml/predict-ml-properties.md)
     - Python ML
         - [Training a Regression Model](python-ml/train-regression-model.md)
         - [Predictions with Regression](python-ml/predict-with-regression.md)
