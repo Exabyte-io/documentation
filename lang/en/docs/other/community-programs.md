@@ -1,65 +1,57 @@
 # Community Programs
 
-> Last updated: Nov 3, 2019
+> Last updated: Aug 22, 2025
 
-<!--
+## Limited Free Compute for the Platform Users.
 
-# VASP On-demand
+!!!note "The Limited Free Compute Program starting in 2025."
+The Limited Free Compute Program is starting in 2025. Users are still welcome to submit their information.
 
-From Oct 2017 we are conducting an experimental program for academic users of VASP. Exabyte.io users that hold up-to-date license for VASP can access the software free of charge. In return, we would like to make results available in a form of a case study after the program ends.
+The program is targeted for users with current academic affiliations, however, we will consider private parties as well.
+Anyone can participate. For the selected users, we will provide computational resources free of charge on a case-by-case
+basis.
 
-> Without any promise, we may consider advocating for the interested people with a well formulated intent for accessing VASP who do not fit the current eligibility criteria in front of the original developers.
+### Applying for Limited Free Compute
 
-**In order to apply**:
-
-- send an email to support@exabyte.io with a subject containing "VASP-On-demand"
-- include the following information about yourself:
-    - Full name
-    - Institutional Affiliation
-    - Contact information of the VASP license holder: email, license number
-    - Title of the proposed project (200 characters max)
-    - Importance of the proposed project (2000 characters max)
-    - Execution plan, including approximate amount of computing required (2000 characters max)
-    - Whether you are interested in purchasing on-demand per core-hour access to VASP in the future
-
--->
-
-## Limited Free Access for Academic Users
-
-!!!note "The Free Access Program completed in May of 2020."
-    The last Free Access Program completed as of 2020/05. Users are still welcome to submit their information for any future similar programs.
-
-For users with current academic affiliation we can provide computational resources free of charge on a case-by-case basis.
-
-### Applying for Limited Free Access
-
+https://docs.google.com/forms/d/e/1FAIpQLSfgghQdRn8sBKespFk3FZSiEoTUmtR0cLhDn0d_rNmtcA-gZg/viewform?usp=dialog
 As below:
 
-1. Fill in <a href="https://docs.google.com/forms/d/12S-Phn7Wr3dy_8yjVh4908VGDtkD0zrl7x0n2TSXXk4" target="_blank">this online form</a>
-2. For new users - submit a registration request using an email address associated with your academic institution include the information requested in **3**.
-3. For existing users - if you use a personal email address during the registration, send an email to "support@exabyte.io" from the email address associated with your academic institution (ie. hosted on a ".edu" domain) with a subject containing "Free Access for Academic Users" 
-    
-we will review and enable access as appropriate. We will prioritize applications providing detailed information about the applicants (ie. Google Scholar, ResearchGate profile(s), links to prior publications) and the nature of the anticipated work.
- 
+1. Fill
+   in <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgghQdRn8sBKespFk3FZSiEoTUmtR0cLhDn0d_rNmtcA-gZg/viewform?usp=dialog" target="_blank">
+   this online form</a>
+2. For new users - submit a registration request using an email address associated with your academic institution
+   include the information requested in **3**.
+3. For existing users - if you use a personal email address during the registration, send an email to "
+   support@mat3ra.com" from the email address associated with your academic institution (ie. hosted on a ".edu" domain)
+   with a subject containing "Free Access for Academic Users"
+
+we will review and enable access as appropriate. We will prioritize applications providing detailed information about
+the applicants (ie. Google Scholar, ResearchGate profile(s), links to prior publications) and the nature of the
+anticipated work.
+
 ### Conditions
 
-Free access is limited to certain compute resources only and is subject to other limitations as below. We will consider adjusting the limitations according to the user feedback received. Contact "support@exabyte.io" for this.
- 
+Free access is limited to certain compute resources only and is subject to other limitations as below. We will consider
+adjusting the limitations according to the user feedback received. Contact "support@mat3ra.com" for this.
+
 #### Limitations
 
-| Feature  | Explanation  |
-| :------: | :----------: |
-| Max nodes per job   | 1     |
-| Max cores per job   | 4     |
-| Max job walltime  | 24 hours  |
-| Max job queued per user  | 4  |
-| Available Queues   | "D" only     |
-| Available Resources   | "cluster-009" only     |
-| Included Disk Quota   | 10 Gb     |
+To be specified later. Similar to the below:
+
+|         Feature         |    Explanation     |
+|:-----------------------:|:------------------:|
+|    Max nodes per job    |         1          |
+|    Max cores per job    |         4          |
+|    Max job walltime     |      24 hours      |
+| Max job queued per user |         4          |
+|    Available Queues     |      "D" only      |
+|   Available Resources   | "cluster-101" only |
+|   Included Disk Quota   |       10 Gb        |
 
 #### Acknowledgements
 
-Any/all published work derived from the Limited Free Access program must include the following Acknowledgement text and citation below.
+Any/all published work derived from the Limited Free Access program must include the following Acknowledgement text and
+citation below.
 
 **Acknowledgement text**
 
@@ -89,9 +81,6 @@ In Bibtex format:
 
 #### Publicity
 
-We plan to select some of the work performed under the Limited Free Access program to be highlighted in the online publication sources together with the cloud provider(s) enabling the computational infrastructure.
-
- 
-## Reach out to us
-
-We are friendly people like you, why not reach out to us with your suggestions and ideas? You may contact us at info@exabyte.io. If you are interested in joining our team, write to hi@exabyte.io with your resume and cover letter.
+We plan to select some of the work performed under the Limited Free Access program to be highlighted in the online
+publication sources together with the cloud provider(s) enabling the computational infrastructure.
+We will contact the users in advance to request permission for this.
