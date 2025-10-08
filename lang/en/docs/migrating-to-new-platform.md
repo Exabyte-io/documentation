@@ -76,6 +76,16 @@ You can sign in to the new platform with the same credentials you use for the cu
 4. Contact us for assistance with bulk data migration and best practices
 5. Validate your workflows on the new clusters (e.g., `cluster-001`, `cluster-002`, `cluster-003`, `cluster-101`)
 
+## CLI and Environment Modules with Apptainer
+
+See examples of module loading, `$EXEC_CMD`, and containerized execution in: [Apptainer and Environment Modules](jobs-cli/batch-scripts/apptainer.md)
+
+### Using in job scripts
+
+As below:
+
+```
+
 ## Contact and Support
 
 - For migration help (data movement, cluster selection, workflow updates), contact your Mat3ra representative or reach us via Support Widget in the platform header or `support@mat3ra.com`.
