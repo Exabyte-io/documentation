@@ -41,7 +41,7 @@ with 8 OpenMP threads.
 ```bash
 module load espresso/7.4-cuda-12.4-cc-70
 export OMP_NUM_THREADS=8
-mpirun -np 1 pw.x -npool 1 -ndiag 1 -in pw.cuo.scf.in > pw.cuo.gpu.scf.out
+mpirun -np 1 $EXEC_CMD pw.x -npool 1 -ndiag 1 -in pw.cuo.scf.in > pw.cuo.gpu.scf.out
 ```
 
 6. Finally, we can submit our job using:
