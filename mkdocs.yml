@@ -30,7 +30,7 @@ extra_javascript:
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2025.8.21"
+    version: "2025.9.25"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
@@ -121,6 +121,7 @@ plugins:
 
 nav:
     - Home: index.md
+    - Migrating to New Platform, Q4.2025: migrating-to-new-platform.md
 
 # INTRODUCTION
     - Getting Started:
@@ -627,6 +628,7 @@ nav:
             - General Structure:                        jobs-cli/batch-scripts/general-structure.md
             - Directives:                               jobs-cli/batch-scripts/directives.md
             - Working Directory:                        jobs-cli/batch-scripts/directories.md
+            - Apptainer & Environment Modules:          jobs-cli/batch-scripts/apptainer.md
             - Sample Scripts:                           jobs-cli/batch-scripts/sample-scripts.md
         - Actions:
             - Overview:                                 jobs-cli/actions/overview.md
