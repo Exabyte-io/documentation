@@ -6,7 +6,7 @@ We are excited to announce the immediate availability of the new iteration of th
 upgrade over previous monthly releases and introduces new infrastructure, compute options, and improvements to the
 overall user experience.
 
-!!! note "Important": For a smooth transition, both the old and the new platform versions will remain operational
+!!!note "Important": For a smooth transition, both the old and the new platform versions will remain operational
 through the end of 2025. See the timeline below.
 
 ---
