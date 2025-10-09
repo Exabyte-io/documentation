@@ -19,13 +19,13 @@ This is intended to provide free compute resources and keep the accounting of re
 
 | Name | Category[^2] | Mode[^3] | Charge Policy[^4] | Price Factor | Max Nodes per Job<sup>+</sup> | Max Nodes Total |
 |:----:|:------------:|:--------:|:-----------------:|:------------:|:-----------------------------:|:---------------:|
-|  D   |    debug     | ordinary |   core-seconds    |    10E-4     |               1               |        1        |
-|  OR  |   regular    |  saving  |   core-seconds    |    10E-4     |               1               |        0        |
-|  SR  |   regular    |  saving  |   core-seconds    |    10E-4     |               1               |        1        |
-|  OF  |     fast     |  saving  |    core-hours     |    10E-4     |               5               |        0        |
-|  SF  |     fast     |  saving  |    core-hours     |    10E-4     |               5               |        1        |
-| GPOF |     fast     |  saving  |    core-hours     |    10E-4     |               5               |        0        |
-| GPSF |     fast     |  saving  |    core-hours     |    10E-4     |               5               |        1        |
+|  D   |    debug     | ordinary |   core-seconds    |    1.0E-4    |               1               |        1        |
+|  OR  |   regular    |  saving  |   core-seconds    |    1.0E-4    |               1               |        0        |
+|  SR  |   regular    |  saving  |   core-seconds    |    1.0E-4    |               1               |        1        |
+|  OF  |     fast     |  saving  |    core-hours     |    1.0E-4    |               5               |        0        |
+|  SF  |     fast     |  saving  |    core-hours     |    1.0E-4    |               5               |        1        |
+| GPOF |     fast     |  saving  |    core-hours     |    1.0E-4    |               5               |        0        |
+| GPSF |     fast     |  saving  |    core-hours     |    1.0E-4    |               5               |        1        |
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
