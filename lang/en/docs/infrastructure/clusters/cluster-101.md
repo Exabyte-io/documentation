@@ -6,7 +6,7 @@ This cluster is hosted on [Microsoft Azure][^1] infrastructure and is intended t
 
 |    Name     |                     Hostname                      | Location |
 |:-----------:|:-------------------------------------------------:|:--------:|
-| cluster-103 | master-production-20250821-cluster-103.mat3ra.com | East US  |
+| cluster-101 | master-production-20250821-cluster-101.mat3ra.com | East US  |
 
 ## Queues
 
