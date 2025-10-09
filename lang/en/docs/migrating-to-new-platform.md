@@ -1,32 +1,44 @@
-# Migrating to the New Mat3ra Platform (Q4 2025)
+# Migrating to The New Platform (Q4 2025)
 
 > Last updated Oct 7, 2025.
 
-We are excited to announce the immediate availability of the new iteration of the Mat3ra platform. This is a significant upgrade over previous monthly releases and introduces new infrastructure, compute options, and improvements to the overall user experience.
+We are excited to announce the immediate availability of the new iteration of the Mat3ra platform. This is a significant
+upgrade over previous monthly releases and introduces new infrastructure, compute options, and improvements to the
+overall user experience.
 
-!!! note "Important": For a smooth transition, both the old and the new platform versions will remain operational through the end of 2025. See the timeline below.
+!!! note "Important": For a smooth transition, both the old and the new platform versions will remain operational
+through the end of 2025. See the timeline below.
 
 ---
 
 ## What’s New
 
-- **Free compute tier (cluster-101)**
-  - A new always-available free tier via `cluster-101`.
-  - Read more: [Free Tier and Community Access](other/community-programs.md) and [Cluster-101](infrastructure/clusters/cluster-101.md).
+### Free compute tier (cluster-101)
 
-- **New cloud infrastructure setup**
-  - Google Cloud Platform via `cluster-001` — see [GCP clusters](infrastructure/clusters/google.md)
-  - Amazon Web Services via `cluster-002` — see [AWS clusters](infrastructure/clusters/aws.md)
-  - Microsoft Azure via `cluster-003` — see [Azure clusters](infrastructure/clusters/azure.md)
-  - Updated set of instance types across providers, including larger CPU and GPU options
+A new always-available free tier via `cluster-101`. Read
+more: [Free Tier and Community Access](other/community-programs.md)
+and [Cluster-101](infrastructure/clusters/cluster-101.md).
 
-- **Operating system upgrade**
-  - Base OS updated to RHEL 9 across the new platform infrastructure
+### New cloud infrastructure setup
 
-- **Apptainer-based application deployment**
-  - Modernized packaging and runtime isolation for scientific applications
-  - See: [Jobs via Command Line](jobs-cli/overview.md) for updated CLI usage and examples
-  - We welcome contributions for additional applications your workflows require
+As below:
+
+- Google Cloud Platform via `cluster-001` — see [GCP clusters](infrastructure/clusters/google.md)
+- Amazon Web Services via `cluster-002` — see [AWS clusters](infrastructure/clusters/aws.md)
+- Microsoft Azure via `cluster-003` — see [Azure clusters](infrastructure/clusters/azure.md)
+- Updated set of instance types across providers, including larger CPU and GPU options
+
+### Operating system upgrade
+
+Base OS updated to RHEL 9 across the new platform infrastructure
+
+### Apptainer-based application deployment
+
+As below:
+
+- Modernized packaging and runtime isolation for scientific applications
+- See: [Jobs via Command Line](jobs-cli/batch-scripts/apptainer.md) for updated CLI usage and examples
+- We welcome contributions for additional applications your workflows require
 
 ---
 
@@ -43,28 +55,30 @@ You can sign in to the new platform with the same credentials you use for the cu
 
 ## Migration Timeline
 
-- **Now → Oct 31, 2025**
-  - Both old and new platforms are live. You can explore and begin migrating at your convenience.
+- **Now → Oct 31, 2025**:
+    - Both old and new platforms are live. You can explore and begin migrating at your convenience.
 
 - **On/after Nov 1, 2025**
-  - `https://platform.mat3ra.com` will route to the new platform
-  - The old platform will remain accessible at `https://platform-old.mat3ra.com`
-  - Equivalent routing changes will apply to related URLs (docs, login)
+    - `https://platform.mat3ra.com` will route to the new platform
+    - The old platform will remain accessible at `https://platform-old.mat3ra.com`
+    - Equivalent routing changes will apply to related URLs (docs, login)
 
 - **On/after Jan 1, 2026**
-  - Only the new platform will remain available
+    - Only the new platform will remain available
 
 ---
 
 ## What Gets Migrated Automatically
 
-- Application data stored in the platform database (entities, metadata, workflows, settings) is migrated automatically.
+Application data stored in the platform database (entities, metadata, workflows, settings) is migrated automatically.
 
 ## What Does NOT Migrate Automatically
 
-- Runtime files and bulk data stored on disk do not migrate automatically. Due to updated infrastructure libraries and layout in the new environment, data migration from legacy cluster homes and shares is handled on a case-by-case basis.
+Runtime files and bulk data stored on disk do not migrate automatically. Due to updated infrastructure libraries and
+layout in the new environment, data migration from legacy cluster homes and shares is handled on a case-by-case basis.
 
-> Tip: Review data locations under [Data on Disk > Directory Structure](data-on-disk/directories.md) and [Infrastructure > Login Node Directories](infrastructure/login/directories.md) to plan your migration.
+> Tip: Review data locations under [Data on Disk > Directory Structure](data-on-disk/directories.md)
+> and [Infrastructure > Login Node Directories](infrastructure/login/directories.md) to plan your migration.
 
 ---
 
@@ -78,15 +92,12 @@ You can sign in to the new platform with the same credentials you use for the cu
 
 ## CLI and Environment Modules with Apptainer
 
-See examples of module loading, `$EXEC_CMD`, and containerized execution in: [Apptainer and Environment Modules](jobs-cli/batch-scripts/apptainer.md)
+See examples of module loading, `$EXEC_CMD`, and containerized execution
+in: [Apptainer and Environment Modules](jobs-cli/batch-scripts/apptainer.md)
 
-### Using in job scripts
+## Contact Support
 
-As below:
-
-```
-
-## Contact and Support
-
-- For migration help (data movement, cluster selection, workflow updates), contact your Mat3ra representative or reach us via Support Widget in the platform header or `support@mat3ra.com`.
-- If you require a specific application or environment, please let us know — we welcome contributions and requests to expand supported software.
+- For migration help (data movement, cluster selection, workflow updates), contact your Mat3ra representative or reach
+  us via Support Widget in the platform header or `support@mat3ra.com`.
+- If you require a specific application or environment, please let us know — we welcome contributions and requests to
+  expand supported software.

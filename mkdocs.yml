@@ -86,7 +86,7 @@ theme:
         primary: indigo
         accent: indigo
     logo: "images/logo/logo-white.png"
-    favicon: "images/logo/favicon.ico"
+    favicon: "images/logo/favicon.svg"
     icon:
         edit: material/pencil
         repo: fontawesome/brands/github
@@ -121,7 +121,7 @@ plugins:
 
 nav:
     - Home: index.md
-    - Migrating to New Platform, Q4.2025: migrating-to-new-platform.md
+    - Migrating to New Platform:                         migrating-to-new-platform.md
 
 # INTRODUCTION
     - Getting Started:
