@@ -83,8 +83,8 @@ theme:
     name: material
     custom_dir: theme
     palette:
-        primary: indigo
-        accent: indigo
+        primary: deep purple
+        accent: deep purple
     logo: "images/logo/logo-white.png"
     favicon: "images/logo/favicon.ico"
     icon:
