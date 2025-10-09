@@ -1,5 +1,3 @@
-# Mat3ra Documentation
-
 Mat3ra is a platform for materials modeling from the atoms up. This documentation explains how to use the platform to
 design new materials and predict their properties using physics-based and AI/ML models powered by cloud HPC.
 
@@ -51,4 +49,4 @@ We respond to support requests within 24 hours during working hours (Pacific Tim
 [Help & Support](other/support.md) for ways to get assistance.
 
 !!! tip "Help us improve"
-If something is missing or unclear, please open the [Help & Support](other/support.md) page and get in touch.
+    If something is missing or unclear, please open the [Help & Support](other/support.md) page and get in touch.
