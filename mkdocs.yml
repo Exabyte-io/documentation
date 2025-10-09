@@ -1,9 +1,9 @@
 # get docs dir from the environment. Defaults to lang/en/docs.
 docs_dir: !!python/object/apply:os.getenv ["DOCS_DIR", "lang/en/docs"]
 
-site_name: Mat3ra Documentation
+site_name: Platform Documentation
 site_url: https://docs.mat3ra.com
-site_description: Documentation for the users of Mat3ra materials modeling platform.
+site_description: Mat3ra platform documentation.
 dev_addr: "localhost:8000"
 
 repo_name: 'exabyte-io/documentation'
