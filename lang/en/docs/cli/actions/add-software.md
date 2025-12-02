@@ -27,9 +27,11 @@ From: almalinux:9.7  # (2)!
     export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib:$LD_LIBRARY_PATH
 
 %post  # (5)!
-    # install dependencies
+    # enable additional repos
     dnf install -y epel-release
     dnf config-manager --set-enabled crb
+
+    # install dependencies
     dnf install -y gcc-gfortran \
         git \
         make \
