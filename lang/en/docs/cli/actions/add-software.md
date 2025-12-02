@@ -106,7 +106,7 @@ scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>
     together with the application.
 
 
-## Compiling software in our cluster
+## Compiling software in Mat3ra cluster
 In order to compile such new software a special permission is required to access
 the master nodes of our [computational clusters](
 ../../infrastructure/clusters/overview.md), where the compilation shall be
