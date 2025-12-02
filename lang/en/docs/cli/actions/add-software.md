@@ -98,7 +98,8 @@ Alternatively, user can secure copy the image file:
 scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>
 ```
 
-!!! Info Large libraries such as Intel OneAPI, NVIDIA HPC SDK, which are several
+!!! info
+    Large libraries such as Intel OneAPI, NVIDIA HPC SDK, which are several
     Gigabyte in size, can be mapped from our custer host instead of bundling
     together with the application.
 
