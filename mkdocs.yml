@@ -96,6 +96,7 @@ theme:
     features:
         - announce.dismiss
         - content.action.edit
+        - content.code.annotate
         - content.code.copy
         - content.tooltips
         - navigation.footer
