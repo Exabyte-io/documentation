@@ -1,14 +1,14 @@
 # Add New Software
 
-The user can compile new software on the [Command Line Interface](
+Users can compile their own software on the [Command Line Interface](
 ../overview.md) (CLI). This is helpful, for example, after introducing some
-changes or patches to the source code. Currently, majority of our applications
-are packaged as Apptainer[^1] (Singularity[^2]) containers along with their
-dependencies. In that way each application is independent of each other, and
-there is no conflict among dependencies. If you wish to run an application that
-is installed in our cluster, you are encouraged to build your application and
-dependencies as Apptainer/<wbr/>Singularity container. It is also possible to
-convert docker containers into Apptainer/<wbr/>Singularity image.
+changes or patches to the source code. Most of our applications are currently
+distributed as Apptainer[^1] (Singularity[^2]) containers, bundled with all
+required dependencies. This ensures that each application is isolated and avoids
+dependency conflicts. If you plan to run an application that is not installed in
+our cluster, we encourage you to package your code and its dependencies as an
+Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
+can be converted into an Apptainer/<wbr/>Singularity image.
 
 Below is an example Apptainer/<wbr/>Singularity definition to build Quantum
 ESPRESSO along with its dependencies.
@@ -74,7 +74,7 @@ From: almalinux:9  # (2)!
 ```
 
 1. Bootstrap from a Docker image
-2. Select your base image
+2. Select base image
 3. Metadata such as version, maintainer details, etc.
 4. Set runtime environment variables
 5. Build routine goes under the `post` section
