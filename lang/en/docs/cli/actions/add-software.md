@@ -24,7 +24,6 @@ From: almalinux:9  # (2)!
 
 %environment  # (4)!
     export PATH=/usr/lib64/openmpi/bin:/opt/qe-6.3/bin:$PATH
-    export LD_LIBRARY_PATH=/usr/lib64/openmpi/lib:$LD_LIBRARY_PATH
 
 %post  # (5)!
     # enable additional repos
