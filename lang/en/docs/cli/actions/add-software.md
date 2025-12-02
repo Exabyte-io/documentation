@@ -3,7 +3,7 @@
 The user can compile new software on the [Command Line Interface](
 ../overview.md) (CLI). This is helpful, for example, after introducing some
 changes or patches to the source code. Currently, majority of our applications
-are packaged as Apptainer (Singularity) containers along with their
+are packaged as Apptainer[^1] (Singularity[^2]) containers along with their
 dependencies. In that way each application is independent of each other, and
 there is no conflict among dependencies. If you wish to run an application that
 is installed in our cluster, you are encouraged to build your application and
@@ -122,7 +122,7 @@ package different from the ones offered [through environment modules](
 modules-actions.md#list-available-modules). This new versions might also include
 modifications to the source code by the user.
 
-We refer to the official documentation [^1] for the instructions on how to
+We refer to the official documentation[^3] for the instructions on how to
 compile Quantum ESPRESSO via CLI. Sample routines that allow for the compilation
 are demonstrated below:
 
@@ -149,4 +149,6 @@ make pw
 
 ## Links
 
-[^1]: [User’s Guide for Quantum ESPRESSO, Document](https://www.quantum-espresso.org/Doc/user_guide.pdf)
+[^1]: [Apptainer User Guide](https://apptainer.org/docs/user/latest/)
+[^2]: [Singularity User Guide](https://docs.sylabs.io/guides/latest/user-guide/)
+[^3]: [User’s Guide for Quantum ESPRESSO, Document](https://www.quantum-espresso.org/Doc/user_guide.pdf)
