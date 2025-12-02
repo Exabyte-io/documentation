@@ -16,7 +16,7 @@ ESPRESSO along with its dependencies.
 
 ```singularity title="espresso.def"
 Bootstrap: docker  # (1)!
-From: almalinux:9.7  # (2)!
+From: almalinux:9  # (2)!
 
 %labels  # (3)!
     Maintainer Mat3ra.com
@@ -32,7 +32,10 @@ From: almalinux:9.7  # (2)!
     dnf config-manager --set-enabled crb
 
     # install dependencies
-    dnf install -y gcc-gfortran \
+    dnf install -y autoconf \
+        gcc \
+        gcc-c++ \
+        gcc-gfortran \
         git \
         make \
         fftw-devel \
@@ -40,8 +43,7 @@ From: almalinux:9.7  # (2)!
         openblas-devel \
         openmpi-devel \
         scalapack-openmpi-devel \
-        wget \
-        which
+        wget
 
     # download QE and compile
     VERSION=6.3
@@ -95,6 +97,11 @@ Now, the image can be pulled from another machine with:
 apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<tag>
 ```
 
+!!! tip
+    - You may use GitHub workflow to build images and push to GHCR.
+    - When pulled a docker image, apptainer will automatically convert and save as
+    SIF file.
+
 Alternatively, user can secure copy the image file:
 ```bash
 scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>
@@ -105,6 +112,8 @@ scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>
     Gigabyte in size, can be mapped from our custer host instead of bundling
     together with the application.
 
+Please refer to our [CLI job examples](https://github.com/Exabyte-io/cli-job-examples)
+to find more about how to submit a job in Mat3ra cluster.
 
 ## Compiling software in Mat3ra cluster
 In order to compile such new software a special permission is required to access
@@ -144,7 +153,7 @@ make libfox
 make pw
 ```
 
-!!! warning "Compilation routines are given for demonstration only"
+!!! warning "Compilation routines are given for demonstration purpose only"
     The commands above are present to demonstrate the approach only and are
     limited in applicability. They do not include any consideration of the
     optimization of parallel performance, for example.
