@@ -103,9 +103,9 @@ apptainer build espresso.sif espresso.def
 ```
 
 Once the container is built, we are ready to run applications packaged in it.
-Please follow [this documentation page](../../jobs-cli/batch-scripts/apptainer.md)
-to find more about how to submit jobs and use apptainer. For practical
-templates, please visit [CLI job examples](
+Please follow [this documentation page](
+../../jobs-cli/batch-scripts/apptainer.md) to find more about how to submit jobs
+and use apptainer. For practical templates, please visit [CLI job examples](
 https://github.com/Exabyte-io/cli-job-examples).
 
 
@@ -148,4 +148,3 @@ scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>/
 
 [^1]: [Apptainer User Guide](https://apptainer.org/docs/user/latest/)
 [^2]: [Singularity User Guide](https://docs.sylabs.io/guides/latest/user-guide/)
-[^3]: [User’s Guide for Quantum ESPRESSO, Document](https://www.quantum-espresso.org/Doc/user_guide.pdf)
