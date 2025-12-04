@@ -10,8 +10,8 @@ our cluster, we encourage you to package your code and its dependencies as an
 Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
 can be converted into an Apptainer/<wbr/>Singularity image.
 
-Below is an example Apptainer/<wbr/>Singularity definition to build Quantum
-ESPRESSO along with its dependencies.
+Below is an example of Apptainer/<wbr/>Singularity definition to build Quantum
+ESPRESSO container along with its dependencies.
 
 
 ```singularity title="espresso.def"
@@ -20,10 +20,10 @@ From: almalinux:9  # (2)!
 
 %labels  # (3)!
     Maintainer Mat3ra.com
-    Version QE-6.3-gcc-openmpi-openblas
+    Version QE-7.5-gcc-openmpi-openblas
 
 %environment  # (4)!
-    export PATH=/usr/lib64/openmpi/bin:/opt/qe-6.3/bin:$PATH
+    export PATH=/usr/lib64/openmpi/bin:/opt/qe-7.5/bin:$PATH
 
 %post  # (5)!
     # enable additional repos
@@ -45,7 +45,7 @@ From: almalinux:9  # (2)!
         wget
 
     # download QE and compile
-    VERSION=6.3
+    VERSION=7.5
     INSTALL_PREFIX="/opt/qe-$VERSION"
     BUILD_DIR=~/tmp
     mkdir $BUILD_DIR
@@ -59,13 +59,13 @@ From: almalinux:9  # (2)!
     export FFLAGS="-O2 -fallow-argument-mismatch"
     export FCFLAGS="-O2 -fallow-argument-mismatch"
 
-    ./configure MPIF90=mpif90 CC=mpicc F90=gfortran F77=gfortran \
+    ./configure --prefix=${INSTALL_PREFIX} MPIF90=mpif90 CC=mpicc F90=gfortran F77=gfortran \
       --with-scalapack=yes \
       BLAS_LIBS="-lopenblas" LAPACK_LIBS="-lopenblas" \
       LDFLAGS="-Wl,-rpath,/usr/lib64/openmpi/lib -Wl,-rpath,/usr/lib64"
 
-    make all
-    make -B install
+    make all -j$(nproc)
+    make install
 
     # cleanup
     rm -rf $BUILD_DIR
@@ -78,20 +78,57 @@ From: almalinux:9  # (2)!
 4. Set runtime environment variables
 5. Build routine goes under the `post` section
 
-Container can be built with:
+!!! info
+    Large libraries such as Intel OneAPI suite, NVIDIA HPC SDK, which are
+    several Gigabyte in size, can be mapped from our custer host instead of
+    bundling together with the application.
+
+To build a container on Mat3ra clusters, please submit a [PBS batch script](
+../../jobs-cli/batch-scripts/overview.md). This ensures the resource-intensive
+build process runs on a compute node rather than the login node.
+
+```bash title="build-qe.pbs"
+#!/bin/bash
+#PBS -N Build_QE
+#PBS -j oe
+#PBS -l nodes=1
+#PBS -l ppn=4
+#PBS -l walltime=00:01:00:00
+#PBS -q OR
+#PBS -m abe
+#PBS -M info@mat3ra.com
+
+cd $PBS_O_WORKDIR
+apptainer build espresso.sif espresso.def
+```
+
+Once the container is built, we are ready to run applications packaged in it.
+Please follow [this documentation page](../../jobs-cli/batch-scripts/apptainer.md)
+to find more about how to submit jobs and use apptainer. For practical
+templates, please visit [CLI job examples](
+https://github.com/Exabyte-io/cli-job-examples).
+
+
+### Transfer external images
+
+You can build containers on your local machine or pull pre-built ones from
+sources like the such as [NVIDIA GPU Cloud](
+https://catalog.ngc.nvidia.com/orgs/hpc/containers/quantum_espresso). If
+Apptainer is installed locally, build the container using:
+
 ```bash
 apptainer build espresso.sif espresso.def
 ```
 
-Once the container image is build, it maybe pushed to a container registry such
-as [GitHub Container Registry](
+Once built, you can push the image to a container registry such as the
+[GitHub Container Registry](
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
 
 ```bash
 apptainer push espresso.sif oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<tag>
 ```
 
-Now, the image can be pulled from another machine with:
+Then, pull the image from the Mat3ra login node::
 ```bash
 apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<tag>
 ```
@@ -101,18 +138,11 @@ apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<t
     - When pulled a docker image, apptainer will automatically convert and save as
     SIF file.
 
-Alternatively, user can secure copy the image file:
+Alternatively, you can copy the local image file directly to the Mat3ra cluster
+via SCP:
 ```bash
-scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>
+scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>/
 ```
-
-!!! info
-    Large libraries such as Intel OneAPI, NVIDIA HPC SDK, which are several
-    Gigabyte in size, can be mapped from our custer host instead of bundling
-    together with the application.
-
-Please refer to our [CLI job examples](https://github.com/Exabyte-io/cli-job-examples)
-to find more about how to submit a job in Mat3ra cluster.
 
 ## Compiling software in Mat3ra cluster
 In order to compile such new software a special permission is required to access
