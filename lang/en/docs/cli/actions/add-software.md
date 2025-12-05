@@ -148,7 +148,7 @@ and use apptainer. For practical templates, please visit [CLI job examples](
 https://github.com/Exabyte-io/cli-job-examples).
 
 
-### Transfer external images
+## Transfer external images
 
 You can build containers on your local machine or pull pre-built ones from
 sources like the such as [NVIDIA GPU Cloud](
