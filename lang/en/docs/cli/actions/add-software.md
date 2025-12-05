@@ -2,19 +2,20 @@
 
 Users can compile their own software on Mat3ra cluster via the
 [Command Line Interface](../overview.md) (CLI). This is helpful, for example,
-after introducing some changes or patches to the source code. Most of our
-applications are currently distributed as Apptainer[^1] (Singularity[^2])
-containers, bundled with all required dependencies. This ensures that each
-application is isolated and avoids dependency conflicts. If you plan to run an
-application that is not installed in our cluster, we encourage you to package
-your code and its dependencies as an Apptainer/<wbr/>Singularity container. If
-you already have a Docker image, it can be converted into an Apptainer/
-Singularity image.
+after introducing some changes or patches to the source code, or if you need to
+run a specific version of an application that is not installed in Mat3ra
+clusters. Most of Mat3ra applications are currently distributed as
+Apptainer[^1] (Singularity[^2]) containers, bundled with all required
+dependencies. This ensures that each application is isolated and avoids
+dependency conflicts. If you plan to run an application that is not installed in
+our cluster, we encourage you to package your code and its dependencies as an
+Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
+can be converted into an Apptainer/<wbr/>Singularity image.
 
 ## Experiment in the Sandbox mode
 
-One can use sandbox mode to test and fine-tune the build steps. We can build a
-sandbox with `--sandbox` or `-s` flag:
+One can use Apptainer sandbox mode to test and fine-tune the build steps. We can
+build a sandbox with `--sandbox` or `-s` flag:
 ```bash
 apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 ```
@@ -22,21 +23,22 @@ apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 This will create a standard directory named `qe_sandbox` that contains the
 entire Linux OS tree (`/bin`, `/etc`, `/usr`).
 
-Now to install packages and save them to our sandbox folder, we need to enter
-into the container in writable mode (use `--writable` or `-w` flag). We will
-also need `--fakeroot` or `-f` flag to install software as root inside the
-container:
+Now to install packages and save them to the sandbox folder, we can enter into
+the container in shell (interactive) mode with write permission (use
+`--writable` or `-w` flag). We will also need `--fakeroot` or `-f` flag to
+install software as root inside the container:
 ```bash
 apptainer shell --writable --fakeroot qe_sandbox/
 ```
 
-Inside the apptainer shell, we can install packages and experiment
-interactively, for example:
+Once, inside the Apptainer shell, we can install packages and experiment
+interactively, as we do normally using the terminal, for example:
 ```bash
 dnf install gcc
 ```
 
-Once you are happy with the sandbox, enter `exit` to exit Apptainer shell.
+Once you are happy with the sandbox, you have tested all build steps, and
+installed everything you need, enter `exit` to exit Apptainer shell mode.
 
 
 ## Build container
@@ -54,7 +56,7 @@ rm -rf qe_sandbox
 ```
 
 Alternative to converting the sandbox folder to SIF image, we may create an
-apptainer definition with the finalized the build steps. Below is an example
+Apptainer definition with the finalized the build steps. Below is an example
 of Apptainer/<wbr/>Singularity definition to build Quantum ESPRESSO container
 along with its dependencies.
 
@@ -146,10 +148,12 @@ cd $PBS_O_WORKDIR
 apptainer build espresso.sif espresso.def
 ```
 
+## Run jobs using Apptainer
+
 Once the container is built, we are ready to run applications packaged in it.
 Please follow [this documentation page](
 ../../jobs-cli/batch-scripts/apptainer.md) to find more about how to submit jobs
-and use apptainer. For practical templates, please visit [CLI job examples](
+and use Apptainer. For practical templates, please visit [CLI job examples](
 https://github.com/Exabyte-io/cli-job-examples).
 
 
@@ -179,7 +183,7 @@ apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<t
 
 !!! tip
     - You may use GitHub workflow to build images and push to GHCR.
-    - When pulled a docker image, apptainer will automatically convert and save as
+    - When pulled a docker image, Apptainer will automatically convert and save as
     SIF file.
 
 Alternatively, you can copy the local image file directly to the Mat3ra cluster
