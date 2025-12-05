@@ -10,9 +10,48 @@ our cluster, we encourage you to package your code and its dependencies as an
 Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
 can be converted into an Apptainer/<wbr/>Singularity image.
 
-Below is an example of Apptainer/<wbr/>Singularity definition to build Quantum
-ESPRESSO container along with its dependencies.
+## Experiment with Sandbox mode
 
+One can use sandbox mode to experiment and fine-tune the build steps. We can
+build a sandbox with `--sandbox` or `-s` flag:
+```bash
+apptainer build --sandbox qe_sandbox/ docker://almalinux:9
+```
+
+This will create a standard directory named `qe_sandbox` that contains the
+entire Linux OS tree (/bin, /etc, /usr).
+
+Next, we to install packages, we need enter the container in writable mode
+(`--writable` or `-w`). We will also need `--fakeroot` or `-f` flag to install
+software as root inside the container:
+```bash
+apptainer shell --writable --fakeroot qe_sandbox/
+```
+
+Now we can install packages and experiment interactively, for example:
+```bash
+dnf install gcc
+```
+
+## Build container
+
+Once you are happy with the sandbox, enter `exit` to exit Apptainer shell. We
+may either package the sandbox into a final image:
+```bash
+apptainer build -f espresso.sif qe_sandbox/
+```
+
+Once the container is build, we may delete our sandbox folder. We need to set
+appropriate permission:
+```bash
+chmod -R u+rwX qe_sandbox
+rm -rf qe_sandbox
+```
+
+Alternative to converting the sandbox folder to SIF image, we may create an
+apptainer definition once we have finalized the build steps. Below is an example
+of Apptainer/<wbr/>Singularity definition to build Quantum ESPRESSO container
+along with its dependencies.
 
 ```singularity title="espresso.def"
 Bootstrap: docker  # (1)!
