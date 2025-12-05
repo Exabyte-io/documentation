@@ -1,55 +1,60 @@
 # Add New Software
 
-Users can compile their own software on the [Command Line Interface](
-../overview.md) (CLI). This is helpful, for example, after introducing some
-changes or patches to the source code. Most of our applications are currently
-distributed as Apptainer[^1] (Singularity[^2]) containers, bundled with all
-required dependencies. This ensures that each application is isolated and avoids
-dependency conflicts. If you plan to run an application that is not installed in
-our cluster, we encourage you to package your code and its dependencies as an
-Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
-can be converted into an Apptainer/<wbr/>Singularity image.
+Users can compile their own software on Mat3ra cluster via the
+[Command Line Interface](../overview.md) (CLI). This is helpful, for example,
+after introducing some changes or patches to the source code. Most of our
+applications are currently distributed as Apptainer[^1] (Singularity[^2])
+containers, bundled with all required dependencies. This ensures that each
+application is isolated and avoids dependency conflicts. If you plan to run an
+application that is not installed in our cluster, we encourage you to package
+your code and its dependencies as an Apptainer/<wbr/>Singularity container. If
+you already have a Docker image, it can be converted into an Apptainer/
+Singularity image.
 
-## Experiment with Sandbox mode
+## Experiment in the Sandbox mode
 
-One can use sandbox mode to experiment and fine-tune the build steps. We can
-build a sandbox with `--sandbox` or `-s` flag:
+One can use sandbox mode to test and fine-tune the build steps. We can build a
+sandbox with `--sandbox` or `-s` flag:
 ```bash
 apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 ```
 
 This will create a standard directory named `qe_sandbox` that contains the
-entire Linux OS tree (/bin, /etc, /usr).
+entire Linux OS tree (`/bin`, `/etc`, `/usr`).
 
-Next, we to install packages, we need enter the container in writable mode
-(`--writable` or `-w`). We will also need `--fakeroot` or `-f` flag to install
-software as root inside the container:
+Now to install packages and save them to our sandbox folder, we need to enter
+into the container in writable mode (use `--writable` or `-w` flag). We will
+also need `--fakeroot` or `-f` flag to install software as root inside the
+container:
 ```bash
 apptainer shell --writable --fakeroot qe_sandbox/
 ```
 
-Now we can install packages and experiment interactively, for example:
+Inside the apptainer shell, we can install packages and experiment
+interactively, for example:
 ```bash
 dnf install gcc
 ```
 
+Once you are happy with the sandbox, enter `exit` to exit Apptainer shell.
+
+
 ## Build container
 
-Once you are happy with the sandbox, enter `exit` to exit Apptainer shell. We
-may either package the sandbox into a final image:
+We may either package the sandbox directory into a final image:
 ```bash
 apptainer build -f espresso.sif qe_sandbox/
 ```
 
-Once the container is build, we may delete our sandbox folder. We need to set
-appropriate permission:
+After the container is build and saved as SIF image, we may delete our sandbox
+folder. We need to set appropriate permission in order to be able to delete:
 ```bash
 chmod -R u+rwX qe_sandbox
 rm -rf qe_sandbox
 ```
 
 Alternative to converting the sandbox folder to SIF image, we may create an
-apptainer definition once we have finalized the build steps. Below is an example
+apptainer definition with the finalized the build steps. Below is an example
 of Apptainer/<wbr/>Singularity definition to build Quantum ESPRESSO container
 along with its dependencies.
 
