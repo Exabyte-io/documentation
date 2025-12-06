@@ -14,15 +14,14 @@ can be converted into an Apptainer/<wbr/>Singularity image.
 
 ## Experiment in the Sandbox mode
 
-One can use Apptainer sandbox mode to test and fine-tune the build steps. We can
-initialize a sandbox with `--sandbox` or `-s` flag:
+Apptainer sandbox mode is helpful for testing and fine-tuning the build steps
+interactively. Initialize a sandbox with `--sandbox` or `-s` flag:
 ```bash
 apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 ```
 
-The above command will extract the AlmaLinux 9 Docker image to a standard
-directory named `qe_sandbox` that contains the entire Linux OS tree (`/bin`,
-`/etc`, `/usr`).
+The above command will extract the entire Linux OS tree (`/bin`, `/etc`, `/usr`)
+from AlmaLinux 9 Docker image to a standard directory named `qe_sandbox`.
 
 Now to install packages and save them to the sandbox folder, we can enter into
 the container in shell (interactive) mode with write permission (use
@@ -32,14 +31,14 @@ install software as root inside the container:
 apptainer shell --writable --fakeroot qe_sandbox/
 ```
 
-Once, inside the Apptainer shell, we can install packages and experiment
-interactively, as we normally do from the terminal, for example:
+Once, inside the Apptainer shell, we can install packages and run commands
+interactively, as we would normally do from the terminal, for example:
 ```bash
 dnf install gcc
 ```
 
-Once you are happy with the sandbox, you have tested all build steps, and
-installed everything you need, `exit` from the Apptainer shell mode.
+Once you are happy with the sandbox, tested the build steps, and installed
+everything you need, `exit` from the Apptainer shell mode.
 
 
 ## Build container
@@ -57,8 +56,8 @@ rm -rf qe_sandbox
 ```
 
 Alternative to converting the sandbox folder to SIF image, we may create an
-Apptainer definition with the finalized the build steps. Below is an example
-of Apptainer/<wbr/>Singularity definition to build Quantum ESPRESSO container
+Apptainer definition with the finalized build steps. Below is an example
+Apptainer/<wbr/>Singularity definition to build Quantum ESPRESSO container
 along with its dependencies.
 
 ```singularity title="espresso.def"
@@ -126,8 +125,9 @@ From: almalinux:9  # (2)!
 5. Build routine goes under the `post` section
 
 To build a container on Mat3ra clusters, please submit a [PBS batch script](
-../../jobs-cli/batch-scripts/overview.md). This ensures the resource-intensive
-build process runs on a compute node rather than the login node.
+../../jobs-cli/batch-scripts/overview.md) to perform the build task. This
+ensures the resource-intensive build process runs on a compute node rather than
+the login node.
 
 ```bash title="build-qe.pbs"
 #!/bin/bash
@@ -147,7 +147,9 @@ apptainer build espresso.sif espresso.def
 !!! info
     Large libraries such as Intel OneAPI suite, NVIDIA HPC SDK, which are
     several Gigabyte in size, can be mapped from our custer host instead of
-    bundling together with the application.
+    bundling together with the application. However, this is not applicable if
+    you need a different version of these libraries than the one provided in
+    Mat3ra clusters.
 
 ## Run jobs using Apptainer
 
