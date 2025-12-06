@@ -1,98 +1,32 @@
 # Running Jobs via Command Line Interface
 
-This page explains how to run a [job](../../jobs/overview.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform. The reader is recommended to first consult the [relevant part of the documentation](../../jobs-cli/overview.md) before proceeding further with the present Tutorial.
+This page explains how to run a [job](../../jobs/overview.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform.  The reader can consult the [relevant part of the documentation](../../jobs-cli/overview.md) for further details as you follow the tutorial.
+
+The reader is assumed to be familiar with basic command line navigation and file editing in linux. Before proceeding with the tutorial, the reader is advised to log into CLI using of the available [remote connection methods](../../remote-connection/overview.md).
  
-Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure. We will use [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) as an example simulations engine, however all command-line related directives apply universally.
+Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure. We will use [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) (**QE**) as an example simulations engine, however all command-line related directives apply universally.
 
 ## 1. Input File
+After [logging in](../../remote-connection/overview.md) and creating or navigating to the desired job [working directory](../../jobs-cli/batch-scripts/directories.md), we start by preparing an **input file**. For our example, we can copy-paste a **QE** input file from <a href="https://raw.githubusercontent.com/Exabyte-io/documentation/648565e031b6cbd5c86b1618a0ad16be41832a25/lang/en/docs/tutorials/jobs-cli/script_examples/pw.in" target="_blank" type="text/plain">this link</a>
+(opens in a new browser tab.) 
 
-We start with preparing an **input file** for [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md). Below is an example input file for performing a total ground-state "self-consistent field" (scf) energy computation, with pseudopotential paths set to use the default **"gbrv" set of pseudopotentials** [^1] implemented on our platform. 
+This input file instructs [**QE**](../../software-directory/modeling/quantum-espresso/overview.md) to perform a "self-consistent field" (scf) total energy computation for a supercell of  "Strontium Zirconate" (SrZrO3), in its equilibrium crystal structure (space group *Pnma* [^1]). (The reader is referred to the official documentation for the "PWscf" module of Quantum ESPRESSO [^2] [^3] for a description of the keyword parameters contained in our input example.)
 
-The material being considered in this particular example is a supercell of  "Strontium Zirconate" (SrZrO3), in its ground state equilibrium crystal structure with space group "Pnma" [^2]. The reader is referred to the official documentation for the "PWscf" module of Quantum ESPRESSO [^3] [^4] for a description of the keyword parameters contained here.
-
+Since we want to sweep the values of the lattice parameter, our example input file is using a template variable on line 15 of the file:
 ```fortran
-&control
-    calculation = 'scf',
-    restart_mode = 'from_scratch',
-    prefix = 'srzro'
-    tstress =.true.
-    tprnfor=.true.
-    outdir = './_outdir'
-    wfcdir = './'
-    prefix = '${celldm1}'
-    pseudo_dir = './_pseudo'
- /
- &system
-    ibrav = 1
     celldm(1) = ${celldm1},
-    nat = 40
-    ntyp = 3
-    ecutwfc = 40
-    ecutrho = 200
-    tot_charge = 0
-/
-&electrons
-   mixing_beta = 0.7
-   conv_thr = 1.0d-8
-/
-ATOMIC_SPECIES
- Sr 87.62     sr_pbe_gbrv_1.0.upf
- Zr 91.224    zr_pbe_gbrv_1.0.upf
- O  15.999    o_pbe_gbrv_1.2.upf
-ATOMIC_POSITIONS (crystal)
-Zr     0.250000000         0.250000000         0.250000000
-Zr     0.750000000         0.250000000         0.250000000
-Zr     0.250000000         0.750000000         0.250000000
-Zr     0.750000000         0.750000000         0.250000000
-Zr     0.250000000         0.250000000         0.750000000
-Zr     0.750000000         0.250000000         0.750000000
-Zr     0.250000000         0.750000000         0.750000000
-Zr     0.750000000         0.750000000         0.750000000
-Sr     0.000000000         0.000000000         0.000000000
-Sr     0.500000000         0.000000000         0.000000000
-Sr     0.000000000         0.500000000         0.000000000
-Sr     0.500000000         0.500000000         0.000000000
-Sr     0.000000000         0.000000000         0.500000000
-Sr     0.500000000         0.000000000         0.500000000
-Sr     0.000000000         0.500000000         0.500000000
-Sr     0.500000000         0.500000000         0.500000000
-O      0.000000000         0.250000000         0.250000000
-O      0.250000000         0.000000000         0.250000000
-O      0.250000000         0.250000000         0.000000000
-O      0.500000000         0.250000000         0.250000000
-O      0.750000000         0.000000000         0.250000000
-O      0.750000000         0.250000000         0.000000000
-O      0.000000000         0.750000000         0.250000000
-O      0.250000000         0.500000000         0.250000000
-O      0.250000000         0.750000000         0.000000000
-O      0.500000000         0.750000000         0.250000000
-O      0.750000000         0.500000000         0.250000000
-O      0.750000000         0.750000000         0.000000000
-O      0.000000000         0.250000000         0.750000000
-O      0.250000000         0.000000000         0.750000000
-O      0.250000000         0.250000000         0.500000000
-O      0.500000000         0.250000000         0.750000000
-O      0.750000000         0.000000000         0.750000000
-O      0.750000000         0.250000000         0.500000000
-O      0.000000000         0.750000000         0.750000000
-O      0.250000000         0.500000000         0.750000000
-O      0.250000000         0.750000000         0.500000000
-O      0.500000000         0.750000000         0.750000000
-O      0.750000000         0.500000000         0.750000000
-O      0.750000000         0.750000000         0.500000000
-K_POINTS (automatic)
-3 3 3 1 1 1
 ```
+indicating that the lattice parameter `celldm(1)` for the underlying simple cubic [Bravais Lattice](../../properties-directory/structural/lattice.md) of the crystal structure would need be defined by the combined `run.sh` script, as explained below.
 
-Note that we are using a template variable in place of `celldm(1)`, indicating the lattice parameter of the underlying simple cubic [Bravais Lattice](../../properties-directory/structural/lattice.md) of the crystal structure. These template variables are defined once the combined `run.sh` script is put together, as explained in what follows.
-
-We also need to copy the pseudopotential files into the current [working directory](../../jobs-cli/batch-scripts/directories.md) where the input file is stored, as follows.
+For pseudopotentials, our input file references (on lines 27-29) the default **"gbrv" set of pseudopotentials** [^4] implemented on our platform. To use them, we also need to copy the pseudopotential files into the current [working directory](../../jobs-cli/batch-scripts/directories.md) where the input file is stored:
 
 ```bash
 cp /export/share/pseudo/si/gga/pbe/gbrv/1.0/us/sr_pbe_gbrv_1.0.upf .
 cp /export/share/pseudo/zr/gga/pbe/gbrv/1.0/us/zr_pbe_gbrv_1.0.upf .
 cp /export/share/pseudo/o/gga/pbe/gbrv/1.0/us/o_pbe_gbrv_1.2.upf .
 ```
+
+This completes the standard **QE** input setup. Note that in the case of [**QE**](../../software-directory/modeling/quantum-espresso/overview.md) a single input file describes the atomic positions and all the calculation parameters; for other codes (e.g. [VASP](../../software-directory/modeling/vasp/overview.md)), multiple input files may need be created, as would be defined by the respective documentation. 
 
 ## 2. Batch Script
 
@@ -293,10 +227,10 @@ We conclude by inspecting the [status of the job](../../jobs-cli/actions/check-s
 
 ## Links
 
-[^1]: [GBRV pseudopotential library, Official Website](https://www.physics.rutgers.edu/gbrv/)
+[^1]: [Strontium Zirconate, Materials Project Website](https://materialsproject.org/materials/mp-4387/)
 
-[^2]: [Strontium Zirconate, Materials Project Website](https://materialsproject.org/materials/mp-4387/)
+[^2]: [PWscf User’s Guide, Document](https://www.quantum-espresso.org/Doc/pw_user_guide.pdf)
 
-[^3]: [PWscf User’s Guide, Document](https://www.quantum-espresso.org/Doc/pw_user_guide.pdf)
+[^3]: [PWscf Input File Description, Website](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
 
-[^4]: [PWscf Input File Description, Website](https://www.quantum-espresso.org/Doc/INPUT_PW.html)
+[^4]: [GBRV pseudopotential library, Official Website](https://www.physics.rutgers.edu/gbrv/)

@@ -7,7 +7,7 @@ sidebar navigation.
 ## Table of Contents
 <!-- this index is generated using scripts/generate_index_of_sub_section.py -->
 - [Overview](overview.md)
-- Jobs via Command Line
+- Jobs via Command Line: *you may skip this unless you are an experienced HPC user seeking familiar command line interface while transitioning to Mat3ra. For advanced platform functionality we recommend using web submission as described in subsequent sections.*
     - [Overview](jobs-cli/overview.md)
     - [Create + run a CLI Job](jobs-cli/job-cli-example.md)
     - [Import a CLI Job to Web Interface](jobs-cli/cli-job-import.md)
@@ -24,7 +24,7 @@ sidebar navigation.
         - [Training a Classifier](python-ml/train-classification-model.md)
         - [Predicting with a Classifier](python-ml/predict-with-classification.md)
     - [DeePMD (molecular dynamics)](ml/deepmd-mlff-with-espresso-cp-and-lammps.md)
-- Density Functional Theory
+- Density Functional Theory (DFT)
     - Electronic Properties
         - [Overview](dft/electronic/overview.md)
         - [Effective Screening Medium](dft/electronic/esm-qe.md)
