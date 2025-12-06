@@ -1,10 +1,10 @@
 # Add New Software
 
-Users can compile their own software on Mat3ra cluster via the
+Users can compile their own software via the
 [Command Line Interface](../overview.md) (CLI). This is helpful, for example,
-after introducing some changes or patches to the source code, or the user need
-to run a specific version of an application that is not installed in Mat3ra
-clusters. Most of Mat3ra applications are currently distributed as
+after introducing some changes or patches to the source code, or if users need
+to run a specific version of an application that is not installed "globally". 
+Most of the globally installed applications are currently distributed as
 Apptainer[^1] (Singularity[^2]) containers, bundled with all required
 dependencies. This ensures that each application is isolated and avoids
 dependency conflicts. If you plan to run an application that is not installed in
@@ -12,52 +12,60 @@ our cluster, we encourage you to package your code and its dependencies as an
 Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
 can be converted into an Apptainer/<wbr/>Singularity image.
 
-## Experiment in the Sandbox mode
+## Experiment in Sandbox mode
 
-Apptainer sandbox mode is helpful for testing and fine-tuning the build steps
-interactively. Initialize a sandbox with `--sandbox` or `-s` flag:
+Apptainer's sandbox mode is helpful for testing and fine-tuning the build steps
+interactively. To start it, first initialize a sandbox with `--sandbox` or `-s` flag:
+
 ```bash
 apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 ```
 
 The above command will extract the entire Linux OS tree (`/bin`, `/etc`, `/usr`)
-from AlmaLinux 9 Docker image to a standard directory named `qe_sandbox`.
+from the AlmaLinux 9 Docker image to a subdirectory named `qe_sandbox`.
 
-Now to install packages and save them to the sandbox folder, we can enter into
+Now, to install packages and save them to the sandbox folder, we can enter into
 the container in shell (interactive) mode with write permission (use
 `--writable` or `-w` flag). We will also need `--fakeroot` or `-f` flag to
-install software as root inside the container:
+Install software as root inside the container:
+
 ```bash
 apptainer shell --writable --fakeroot qe_sandbox/
 ```
 
-Once, inside the Apptainer shell, we can install packages and run commands
+Once inside the Apptainer shell, we can install packages and run commands
 interactively, as we would normally do from the terminal, for example:
+
 ```bash
 dnf install gcc
 ```
 
-Once you are happy with the sandbox, tested the build steps, and installed
+Once you are happy with the sandbox, have tested the build steps, and installed
 everything you need, `exit` from the Apptainer shell mode.
 
 
 ## Build container
+
+### Build from a sandbox folder
 
 We may either package the sandbox directory into a final image:
 ```bash
 apptainer build -f espresso.sif qe_sandbox/
 ```
 
-After the container is build and saved as SIF image, we may delete our sandbox
-folder. We need to set appropriate permission in order to be able to delete:
+After the container is built and saved as an SIF image, we may delete our sandbox
+folder. We need to set appropriate permissions to be able to delete:
+
 ```bash
 chmod -R u+rwX qe_sandbox
 rm -rf qe_sandbox
 ```
 
-Alternative to converting the sandbox folder to SIF image, we may create an
+### Build from a definition file
+
+Instead of converting the sandbox folder to an SIF image, we may first create an
 Apptainer definition with the finalized build steps. Below is an example
-Apptainer/<wbr/>Singularity definition to build Quantum ESPRESSO container
+Apptainer/<wbr/>Singularity definition to build a Quantum ESPRESSO container
 along with its dependencies.
 
 ```singularity title="espresso.def"
@@ -118,16 +126,24 @@ From: almalinux:9  # (2)!
     dnf clean all && rm -rf /var/lib/dnf /var/cache/dnf /var/cache/yum
 ```
 
+The general structure of this `.def` file is as follows:
+
 1. Bootstrap from a Docker image
 2. Select base image
-3. Metadata such as version, maintainer details, etc.
+3. Set Metadata such as version, maintainer details, etc.
 4. Set runtime environment variables
-5. Build routine goes under the `post` section
+5. Build routine, under the `post` section
 
-To build a container on Mat3ra clusters, please submit a [PBS batch script](
-../../jobs-cli/batch-scripts/overview.md) to perform the build task. This
-ensures the resource-intensive build process runs on a compute node rather than
-the login node.
+### Build Considerations
+
+#### Running resource-intensive builds in batch mode
+
+Prototyping the build is convenient using sandbox mode, but when the routines are clear
+and the `.def` file is ready, we suggest that users submit a [PBS batch script](
+../../jobs-cli/batch-scripts/overview.md) to perform the build tasks. This
+ensures that the resource-intensive build process runs on a compute node rather than
+the login node itself. As a side "perk", by doing so, we assert that the compute environment 
+is equivalent to the build environment.
 
 ```bash title="build-qe.pbs"
 #!/bin/bash
@@ -144,17 +160,19 @@ cd $PBS_O_WORKDIR
 apptainer build espresso.sif espresso.def
 ```
 
-!!! info
-    Large libraries such as Intel OneAPI suite, NVIDIA HPC SDK, which are
-    several Gigabyte in size, can be mapped from our custer host instead of
-    bundling together with the application. However, this is not applicable if
-    you need a different version of these libraries than the one provided in
-    Mat3ra clusters.
+#### Porting large libraries from the host 
+
+Large libraries such as the Intel OneAPI suite and NVIDIA HPC SDK, which are
+several gigabytes in size, can be mapped from our cluster host instead of
+bundling together with the application. However, this is not applicable if
+One needs a different version of these libraries than the one provided.
+
 
 ## Run jobs using Apptainer
 
 Once the container is built, we are ready to run applications packaged in it. A
 simple PBS job script would look like:
+
 ```bash title="run-qe.pbs"
 #!/bin/bash
 #PBS -N Run_QE
@@ -184,7 +202,7 @@ qstat
 ```
 
 Once the job is completed, all output files will be saved under the directory
-from where the job was submitted. Please follow [this documentation page](
+from which the job was submitted. Please follow [this documentation page](
 ../../jobs-cli/batch-scripts/apptainer.md) to find more about Apptainer
 integration. For practical templates, please visit[CLI job examples](
 https://github.com/Exabyte-io/cli-job-examples).
@@ -192,10 +210,11 @@ https://github.com/Exabyte-io/cli-job-examples).
 
 ## Transfer external images
 
-You can build containers on your local machine or pull pre-built ones from
-sources like the such as [NVIDIA GPU Cloud](
-https://catalog.ngc.nvidia.com/orgs/hpc/containers/quantum_espresso). If
-Apptainer is installed locally, build the container using:
+You can build containers on your local machine or use pull pre-built ones from
+sources such as [NVIDIA GPU Cloud](
+https://catalog.ngc.nvidia.com/orgs/hpc/containers/quantum_espresso). 
+
+If Apptainer is installed locally, build the container using:
 
 ```bash
 apptainer build espresso.sif espresso.def
@@ -209,28 +228,34 @@ https://docs.github.com/en/packages/working-with-a-github-packages-registry/work
 apptainer push espresso.sif oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<tag>
 ```
 
-Then, pull the image from the Mat3ra login node::
+Then, pull the image from the login node::
+
 ```bash
 apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<tag>
 ```
 
 !!! tip
     - You may use GitHub workflow to build images and push to GHCR.
-    - When pulled a docker image, Apptainer will automatically convert and save as
+    - When pulling a Docker image, Apptainer will automatically convert and save it as
     SIF file.
 
-Alternatively, you can copy the local image file directly to the Mat3ra cluster
+Alternatively, you can copy the local image file directly to the cluster
 via SCP:
+
 ```bash
 scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>/
 ```
 
-!!! note
-    Apptainer can use significant amount of cache disc space. We can use
-    `--disable-cache` flag or clean Apptainer cache periodically with:
-    ```
-    apptainer cache clean --force
-    ```
+## Other Notes
+
+### Cleaning Cache
+
+Apptainer can use a significant amount of cache disc space. We can use
+`--disable-cache` flag or clean Apptainer cache periodically with:
+
+```
+apptainer cache clean --force
+```
 
 ## Links
 
