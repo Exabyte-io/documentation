@@ -2,8 +2,8 @@
 
 Users can compile their own software on Mat3ra cluster via the
 [Command Line Interface](../overview.md) (CLI). This is helpful, for example,
-after introducing some changes or patches to the source code, or if you need to
-run a specific version of an application that is not installed in Mat3ra
+after introducing some changes or patches to the source code, or the user need
+to run a specific version of an application that is not installed in Mat3ra
 clusters. Most of Mat3ra applications are currently distributed as
 Apptainer[^1] (Singularity[^2]) containers, bundled with all required
 dependencies. This ensures that each application is isolated and avoids
@@ -15,13 +15,14 @@ can be converted into an Apptainer/<wbr/>Singularity image.
 ## Experiment in the Sandbox mode
 
 One can use Apptainer sandbox mode to test and fine-tune the build steps. We can
-build a sandbox with `--sandbox` or `-s` flag:
+initialize a sandbox with `--sandbox` or `-s` flag:
 ```bash
 apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 ```
 
-This will create a standard directory named `qe_sandbox` that contains the
-entire Linux OS tree (`/bin`, `/etc`, `/usr`).
+The above command will extract the AlmaLinux 9 Docker image to a standard
+directory named `qe_sandbox` that contains the entire Linux OS tree (`/bin`,
+`/etc`, `/usr`).
 
 Now to install packages and save them to the sandbox folder, we can enter into
 the container in shell (interactive) mode with write permission (use
@@ -32,13 +33,13 @@ apptainer shell --writable --fakeroot qe_sandbox/
 ```
 
 Once, inside the Apptainer shell, we can install packages and experiment
-interactively, as we do normally using the terminal, for example:
+interactively, as we normally do from the terminal, for example:
 ```bash
 dnf install gcc
 ```
 
 Once you are happy with the sandbox, you have tested all build steps, and
-installed everything you need, enter `exit` to exit Apptainer shell mode.
+installed everything you need, `exit` from the Apptainer shell mode.
 
 
 ## Build container
@@ -124,11 +125,6 @@ From: almalinux:9  # (2)!
 4. Set runtime environment variables
 5. Build routine goes under the `post` section
 
-!!! info
-    Large libraries such as Intel OneAPI suite, NVIDIA HPC SDK, which are
-    several Gigabyte in size, can be mapped from our custer host instead of
-    bundling together with the application.
-
 To build a container on Mat3ra clusters, please submit a [PBS batch script](
 ../../jobs-cli/batch-scripts/overview.md). This ensures the resource-intensive
 build process runs on a compute node rather than the login node.
@@ -147,6 +143,11 @@ build process runs on a compute node rather than the login node.
 cd $PBS_O_WORKDIR
 apptainer build espresso.sif espresso.def
 ```
+
+!!! info
+    Large libraries such as Intel OneAPI suite, NVIDIA HPC SDK, which are
+    several Gigabyte in size, can be mapped from our custer host instead of
+    bundling together with the application.
 
 ## Run jobs using Apptainer
 
@@ -191,6 +192,13 @@ via SCP:
 ```bash
 scp espresso.sif <username>@login.mat3ra.com:/cluster-001-home/<username>/
 ```
+
+!!! note
+    Apptainer can use significant amount of cache disc space. We can use
+    `--disable-cache` flag or clean Apptainer cache periodically with:
+    ```
+    apptainer cache clean --force
+    ```
 
 ## Links
 
