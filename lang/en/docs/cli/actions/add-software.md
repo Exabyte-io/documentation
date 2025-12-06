@@ -153,10 +153,40 @@ apptainer build espresso.sif espresso.def
 
 ## Run jobs using Apptainer
 
-Once the container is built, we are ready to run applications packaged in it.
-Please follow [this documentation page](
-../../jobs-cli/batch-scripts/apptainer.md) to find more about how to submit jobs
-and use Apptainer. For practical templates, please visit [CLI job examples](
+Once the container is built, we are ready to run applications packaged in it. A
+simple PBS job script would look like:
+```bash title="run-qe.pbs"
+#!/bin/bash
+#PBS -N Run_QE
+#PBS -j oe
+#PBS -l nodes=1
+#PBS -l ppn=4
+#PBS -l walltime=00:24:00:00
+#PBS -q OR
+#PBS -m abe
+#PBS -M info@mat3ra.com
+
+cd $PBS_O_WORKDIR
+
+apptainer exec --bind /export,/scratch,/dropbox,/cluster-001-share \
+  /path/to/espresso.sif pw.x -in pw.in > pw.out
+```
+
+Above we `--bind` several host paths to the container so that we can use items
+such as pseudopotential files stored under those locations. Submit job with:
+```bash
+qsub run-qe.pbs
+```
+
+Monitor job status:
+```bash
+qstat
+```
+
+Once the job is completed, all output files will be saved under the directory
+from where the job was submitted. Please follow [this documentation page](
+../../jobs-cli/batch-scripts/apptainer.md) to find more about Apptainer
+integration. For practical templates, please visit[CLI job examples](
 https://github.com/Exabyte-io/cli-job-examples).
 
 
