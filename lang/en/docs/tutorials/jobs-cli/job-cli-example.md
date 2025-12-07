@@ -2,7 +2,7 @@
 
 This page explains how to run a [job](../../jobs/overview.md) via the [Command Line Interface](../../cli/overview.md) (CLI) of our platform.  The reader can consult the [relevant part of the documentation](../../jobs-cli/overview.md) for further details as you follow the tutorial.
 
-The reader is assumed to be familiar with basic command line navigation and file editing in linux. Before proceeding with the tutorial, the reader is advised to log into CLI using of the available [remote connection methods](../../remote-connection/overview.md).
+The reader is assumed to be familiar with basic command line navigation and file editing in linux. Before proceeding with the tutorial, the reader is advised to log into CLI using one of the available [remote connection methods](../../remote-connection/overview.md).
  
 Here, we will use a template input file and a bash script to sweep the lattice parameter space for a given structure. We will use [Quantum ESPRESSO](../../software-directory/modeling/quantum-espresso/overview.md) (**QE**) as an example simulations engine, however all command-line related directives apply universally.
 
@@ -56,6 +56,7 @@ The rest of the Batch Script contains UNIX commands necessary for [loading the r
 
 ## 3. Shell Script
 
+Since we want to sweep the the lattice parameter space, we'll use a script to prepare and submit not just one job, but separate jobs for each lattice parameter value.
 The logic for parameter sweep calculations through shell scripting can be summarized as below (in pseudo code).
 
 ```bash
@@ -213,9 +214,9 @@ The user can view the currently submitted jobs and their statuses in CLI with th
 The reader is referred to the video below for an explanation on how to inspect the results of the above simulation under the [Web Interface](../../ui/overview.md) of our platform.
 
 
-## Animation
+## Animation of job submission and inspection
 
-We summarize the above-mentioned steps in the following video. 
+You can watch the following video illustrating job submission and inspection, starting from the pre-prepared `run.sh` script. 
 
 Here, we begin by entering the [Command Line Interface](../../cli/overview.md) via the [Web Terminal](../../remote-connection/web-terminal.md) connection method. We then navigate to the directory containing the `run.sh` script under the [Home Folder](../../infrastructure/clusters/directories.md) of `cluster-007`, where we submit it for execution. 
 
