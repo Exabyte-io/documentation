@@ -28,7 +28,7 @@ from the AlmaLinux 9 Docker image to a subdirectory named `qe_sandbox`.
 Now, to install packages and save them to the sandbox folder, we can enter into
 the container in shell (interactive) mode with write permission (use
 `--writable` or `-w` flag). We will also need `--fakeroot` or `-f` flag to
-Install software as root inside the container:
+install software as root inside the container:
 
 ```bash
 apptainer shell --writable --fakeroot qe_sandbox/
@@ -54,8 +54,8 @@ We may either package the sandbox directory into a final image:
 apptainer build -f espresso.sif qe_sandbox/
 ```
 
-After the container is built and saved as an SIF image, we may delete our
-sandbox folder. We need to set appropriate permissions to be able to delete:
+After the container is built and saved as SIF image, we may delete our sandbox
+folder. We need to set appropriate permissions to be able to delete:
 
 ```bash
 chmod -R u+rwX qe_sandbox
@@ -134,9 +134,14 @@ along with its dependencies.
     4. Set runtime environment variables
     5. Build routine, under the `post` section
 
+Now we are ready to build the container with:
+```bash
+apptainer build espresso.sif espresso.def
+```
+
 ### Build Considerations
 
-#### Running resource-intensive builds in batch mode
+#### **Running resource-intensive builds in batch mode**
 
 Prototyping the build is convenient using sandbox mode, but when the routines
 are clear and the `.def` file is ready, we suggest that users submit a
@@ -160,12 +165,64 @@ cd $PBS_O_WORKDIR
 apptainer build espresso.sif espresso.def
 ```
 
-#### Porting large libraries from the host
+#### **Porting large libraries from the host**
 
-Large libraries such as the Intel OneAPI suite and NVIDIA HPC SDK, which are
+Large libraries such as the Intel OneAPI suite, NVIDIA HPC SDK, which are
 several gigabytes in size, can be mapped from our cluster host instead of
 bundling together with the application. However, this is not applicable if one
 needs a different version of these libraries than the one provided.
+
+
+### How to build containers with GPU support
+
+In order to run applications with GPU acceleration, first we need to compile the
+GPU code with appropriate GPU libraries, which is done during the container
+build phase. Here we will describe how we can compile our application code using
+NVIDIA HPC SDK (which includes CUDA libraries) and package the compiled code as
+a containerized application. The process works even on systems without GPU
+devices or drivers, thanks to the availability of dummy shared objects (e.g.,
+`libcuda.so`) in recent versions of the NVHPC SDK and CUDA Toolkit. These dummy
+libraries allow the linker to complete compilation without requiring an actual
+GPU.
+
+As we mentioned in the above paragraph, NVIDIA HPC SDK (or CUDA Toolkit) is a
+large package, typically several gigabytes in size. Unless a specific version of
+CUDA is required, it’s more efficient to map the NVHPC installation available on
+the host cluster. Currently, NVHPC 25.3 with CUDA 12.8 is installed in the
+Mat3ra clusters. This version matches the NVIDIA driver version on the cluster's
+compute nodes.
+
+We build our GPU containers in two stages:
+
+1. **Base Image and Compilation Stage**: Start from a base image, install
+NVHPC, and other dependencies. Then, compile the application code.
+2. **Minimized Production Image**: Create a slim container by copying the
+compiled code and the smaller required dependencies into a new base image,
+omitting the NVHPC SDK.
+
+To run such container, we must `--bind` the NVHPC paths from the host and set
+appropriate `PATH` and `LD_LIBRARY_PATH` for apptainer. Specialized software
+libraries are installed under `/export/compute/software` in Mat3ra clusters.
+Also, to map the NVIDIA GPU drivers from compute node, we must use `--nv` flag.
+Now, to set `PATH` inside apptainer, we can set `APPTAINERENV_PREPEND_PATH` (or
+`APPTAINERENV_APPEND_PATH`) on the host. However, for other ENV variables such
+special Apptainer variable is not present, so we can use `APPTAINERENV_` prefix
+for them. So a typical job script would look like:
+```bash
+export APPTAINERENV_PREPEND_PATH="/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/hcoll/bin:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ompi/bin:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/bin:/export/compute/software/compilers/gcc/11.2.0/bin"
+
+export APPTAINERENV_LD_LIBRARY_PATH="/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/hcoll/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ompi/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/nccl_rdma_sharp_plugin/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/sharp/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/lib/ucx:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/nccl/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/compilers/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/cuda/12.8/lib64:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/math_libs/12.8/lib64:/export/compute/software/compilers/gcc/11.2.0/lib64:\${LD_LIBRARY_PATH}"
+
+apptainer exec --nv --bind /export,/cluster-001-share <path-to-image.sif> pw.x -in pw.in > pw.out
+```
+
+You may inspect modulefiles (e.g.,
+`/cluster-001-share/compute/modulefiles/applications/espresso/7.4.1-cuda-12.8 `)
+available in Mat3ra clusters and [job scripts](
+https://github.com/Exabyte-io/cli-job-examples/blob/main/espresso/gpu/job.gpu.pbs)
+to see how it is implemented in Mat3ra provided containers. Do not forget to use
+a GPU enabled queue, such as [GOF](../../infrastructure/clusters/google.md) to
+submit your GPU jobs.
 
 
 ## Run jobs using Apptainer
@@ -214,14 +271,8 @@ You can build containers on your local machine or use pull pre-built ones from
 sources such as [NVIDIA GPU Cloud](
 https://catalog.ngc.nvidia.com/orgs/hpc/containers/quantum_espresso).
 
-If Apptainer is installed locally, build the container using:
-
-```bash
-apptainer build espresso.sif espresso.def
-```
-
-Once built, you can push the image to a container registry such as the
-[GitHub Container Registry](
+If the container is build locally, you can push the image to a container
+registry such as the [GitHub Container Registry](
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
 
 ```bash
