@@ -185,20 +185,20 @@ devices or drivers, thanks to the availability of dummy shared objects (e.g.,
 libraries allow the linker to complete compilation without requiring an actual
 GPU.
 
-As we mentioned in the above paragraph, NVIDIA HPC SDK (or CUDA Toolkit) is a
-large package, typically several gigabytes in size. Unless a specific version of
-CUDA is required, it’s more efficient to map the NVHPC installation available on
+As mentioned the above, NVIDIA HPC SDK (or CUDA Toolkit) is a large package,
+typically several gigabytes in size. Unless a specific version of CUDA is
+required, it’s more efficient to map the NVHPC installation available on
 the host cluster. Currently, NVHPC 25.3 with CUDA 12.8 is installed in the
 Mat3ra clusters. This version matches the NVIDIA driver version on the cluster's
 compute nodes.
 
 We build our GPU containers in two stages:
 
-1. **Base Image and Compilation Stage**: Start from a base image, install
-NVHPC, and other dependencies. Then, compile the application code.
-2. **Minimized Production Image**: Create a slim container by copying the
-compiled code and the smaller required dependencies into a new base image,
-omitting the NVHPC SDK.
+1. **Base Image and Compilation Stage**: Install NVHPC and all other
+dependencies, and compile the application code.
+2. **Slim Production Image**: Create a final production container by copying
+only the compiled application and smaller dependencies (if any) into a new base
+image, omitting the NVHPC SDK.
 
 To run such container, we must `--bind` the NVHPC paths from the host and set
 appropriate `PATH` and `LD_LIBRARY_PATH` for apptainer. Specialized software
