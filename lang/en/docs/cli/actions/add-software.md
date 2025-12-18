@@ -7,7 +7,7 @@ to run a specific version of an application that is not installed "globally".
 The globally installed applications are currently distributed as
 Apptainer[^1] (Singularity[^2]) containers, bundled with all required
 dependencies. This ensures that each application is isolated and avoids
-dependency conflicts. 
+dependency conflicts.
 
 When planning to run an application that is not installed in
 our cluster, we encourage packaging code and its dependencies as an
@@ -55,8 +55,8 @@ We may either package the sandbox directory into a final image:
 apptainer build -f espresso.sif qe_sandbox/
 ```
 
-After the container is built and saved as an SIF image, we may delete our sandbox
-folder. We need to set appropriate permissions to be able to delete:
+After the container is built and saved as an SIF image, we may delete our
+sandbox folder. We need to set appropriate permissions to be able to delete:
 
 ```bash
 chmod -R u+rwX qe_sandbox
@@ -174,8 +174,9 @@ bundling together with the application. However, this is not applicable if one
 needs a different version of these libraries than the one provided.
 
 This can be done by using the `--bind` directives and passing the appropriate
-library location from the host, e.g., from `/cluster-001-share/compute/software/libraries` 
-or `/export/compute/software/libraries/`.
+library location from the host, e.g., from
+`/cluster-001-share/compute/software/libraries` or
+`/export/compute/software/libraries/`.
 
 See the GPU example below for more details.
 
@@ -183,11 +184,11 @@ See the GPU example below for more details.
 
 To run applications with GPU acceleration, first, we need to compile the
 GPU code with appropriate GPU libraries used, which is done during the container
-build phase. Here, we will describe how we can compile our application code using
-NVIDIA HPC SDK (which includes CUDA libraries) and package the compiled code as
-a containerized application. 
+build phase. Here, we will describe how we can compile our application code
+using NVIDIA HPC SDK (which includes CUDA libraries) and package the compiled
+code as a containerized application.
 
-The process works even on systems without GPU devices or drivers, 
+The process works even on systems without GPU devices or drivers,
 thanks to the availability of dummy shared objects (e.g.,
 `libcuda.so`) in recent versions of the NVHPC SDK and CUDA Toolkit. These dummy
 libraries allow the linker to complete compilation without requiring an actual
@@ -211,11 +212,12 @@ image, omitting the NVHPC SDK.
 To run such a container, we must `--bind` the NVHPC paths from the host and set
 appropriate `PATH` and `LD_LIBRARY_PATH` for apptainer. Specialized software
 libraries are installed under `/export/compute/software` in Mat3ra clusters.
-Also, to map the NVIDIA GPU drivers from the compute node, we must use the `--nv` flag.
-Now, to set `PATH` inside apptainer, we can set `APPTAINERENV_PREPEND_PATH` (or
-`APPTAINERENV_APPEND_PATH`) on the host. However, for other ENV variables, such
-special Apptainer variables, are not present, so we can use the `APPTAINERENV_` prefix
-for them. So a typical job script would look like:
+Also, to map the NVIDIA GPU drivers from the compute node, we must use the
+`--nv` flag. Now, to set `PATH` inside apptainer, we can set
+`APPTAINERENV_PREPEND_PATH` (or `APPTAINERENV_APPEND_PATH`) on the host.
+However, for other ENV variables, such special Apptainer variables are not
+present, so we can use the `APPTAINERENV_` prefix for them. So a typical job
+script would look like:
 
 ```bash
 export APPTAINERENV_PREPEND_PATH="/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/hcoll/bin:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ompi/bin:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/bin:/export/compute/software/compilers/gcc/11.2.0/bin"
@@ -229,7 +231,7 @@ To understand the details about library paths, one may inspect modulefiles (e.g.
 `/cluster-001-share/compute/modulefiles/applications/espresso/7.4.1-cuda-12.8 `)
 available in our clusters and [job scripts](
 https://github.com/Exabyte-io/cli-job-examples/blob/main/espresso/gpu/job.gpu.pbs)
-to see how it is implemented. Do not forget to use a GPU-enabled queue, 
+to see how it is implemented. Do not forget to use a GPU-enabled queue,
 such as [GOF](../../infrastructure/clusters/google.md) to submit your GPU jobs.
 
 
@@ -295,8 +297,8 @@ apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<t
 
 !!! tip
     - You may use GitHub workflow to build images and push to GHCR.
-    - When pulling a Docker image, Apptainer will automatically convert and save it as
-    SIF file.
+    - When pulling a Docker image, Apptainer will automatically convert and save
+    it as SIF file.
 
 Alternatively, you can copy the local image file directly to the cluster
 via SCP:
