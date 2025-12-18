@@ -2,22 +2,23 @@
 
 ## Overview
 Users can compile their own software via the
-[Command Line Interface](../overview.md) (CLI). This is helpful, for example,
-after introducing some changes or patches to the source code, or if users need
+[Command Line Interface](../overview.md) (CLI). This is helpful if users need
 to run a specific version of an application that is not installed "globally".
-Most of the globally installed applications are currently distributed as
+The globally installed applications are currently distributed as
 Apptainer[^1] (Singularity[^2]) containers, bundled with all required
 dependencies. This ensures that each application is isolated and avoids
-dependency conflicts. If you plan to run an application that is not installed in
-our cluster, we encourage you to package your code and its dependencies as an
-Apptainer/<wbr/>Singularity container. If you already have a Docker image, it
-can be converted into an Apptainer/<wbr/>Singularity image.
+dependency conflicts.
 
-## Experiment in Sandbox mode
+When planning to run an application that is not installed in
+our cluster, we encourage packaging code and its dependencies as an
+Apptainer/<wbr/>Singularity container. Existing Docker images
+can be converted into an Apptainer/<wbr/>Singularity images.
 
+## Using Sandbox mode
 Apptainer's sandbox mode is helpful for testing and fine-tuning the build steps
 interactively. To start it, first initialize a sandbox with `--sandbox` or `-s`
 flag:
+
 ```bash
 apptainer build --sandbox qe_sandbox/ docker://almalinux:9
 ```
@@ -28,7 +29,7 @@ from the AlmaLinux 9 Docker image to a subdirectory named `qe_sandbox`.
 Now, to install packages and save them to the sandbox folder, we can enter into
 the container in shell (interactive) mode with write permission (use
 `--writable` or `-w` flag). We will also need `--fakeroot` or `-f` flag to
-Install software as root inside the container:
+install software as root inside the container:
 
 ```bash
 apptainer shell --writable --fakeroot qe_sandbox/
@@ -45,9 +46,9 @@ Once you are happy with the sandbox, have tested the build steps, and installed
 everything you need, `exit` from the Apptainer shell mode.
 
 
-## Build container
+## Building containers
 
-### Build from a sandbox folder
+### Build from a Sandbox folder
 
 We may either package the sandbox directory into a final image:
 ```bash
@@ -134,6 +135,11 @@ along with its dependencies.
     4. Set runtime environment variables
     5. Build routine, under the `post` section
 
+Now we are ready to build the container with:
+```bash
+apptainer build espresso.sif espresso.def
+```
+
 ### Build Considerations
 
 #### Running resource-intensive builds in batch mode
@@ -163,9 +169,70 @@ apptainer build espresso.sif espresso.def
 #### Porting large libraries from the host
 
 Large libraries such as the Intel OneAPI suite and NVIDIA HPC SDK, which are
-several gigabytes in size, can be mapped from our cluster host instead of
+several gigabytes in size, can be mapped from the cluster host instead of
 bundling together with the application. However, this is not applicable if one
 needs a different version of these libraries than the one provided.
+
+This can be done by using the `--bind` directives and passing the appropriate
+library location from the host, e.g., from
+`/cluster-001-share/compute/software/libraries` or
+`/export/compute/software/libraries/`.
+
+See the GPU example below for more details.
+
+#### Building containers with GPU support
+
+To run applications with GPU acceleration, first, we need to compile the
+GPU code with appropriate GPU libraries used, which is done during the container
+build phase. Here, we will describe how we can compile our application code
+using NVIDIA HPC SDK (which includes CUDA libraries) and package the compiled
+code as a containerized application.
+
+The process works even on systems without GPU devices or drivers,
+thanks to the availability of dummy shared objects (e.g.,
+`libcuda.so`) in recent versions of the NVHPC SDK and CUDA Toolkit. These dummy
+libraries allow the linker to complete compilation without requiring an actual
+GPU.
+
+NVIDIA HPC SDK (or CUDA Toolkit) is a large package,
+typically several gigabytes in size. Unless a specific version of CUDA is
+required, it’s more efficient to map the NVHPC installation available on
+the host cluster. Currently, NVHPC 25.3 with CUDA 12.8 is installed in the
+Mat3ra clusters. This version matches the NVIDIA driver version on the cluster's
+compute nodes.
+
+We build our GPU containers in two stages:
+
+1. **Base Image and Compilation Stage**: Install NVHPC and all other
+dependencies, and compile the application code.
+2. **Slim Production Image**: Create a final production container by copying
+only the compiled application and smaller dependencies (if any) into a new base
+image, omitting the NVHPC SDK.
+
+To run such a container, we must `--bind` the NVHPC paths from the host and set
+appropriate `PATH` and `LD_LIBRARY_PATH` for apptainer. Specialized software
+libraries are installed under `/export/compute/software` in Mat3ra clusters.
+Also, to map the NVIDIA GPU drivers from the compute node, we must use the
+`--nv` flag. Now, to set `PATH` inside apptainer, we can set
+`APPTAINERENV_PREPEND_PATH` (or `APPTAINERENV_APPEND_PATH`) on the host.
+However, for other ENV variables, such special Apptainer variables are not
+present, so we can use the `APPTAINERENV_` prefix for them. So a typical job
+script would look like:
+
+```bash
+export APPTAINERENV_PREPEND_PATH="/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/hcoll/bin:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ompi/bin:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/bin:/export/compute/software/compilers/gcc/11.2.0/bin"
+
+export APPTAINERENV_LD_LIBRARY_PATH="/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/hcoll/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ompi/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/nccl_rdma_sharp_plugin/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/sharp/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/hpcx/hpcx-2.22.1/ucx/mt/lib/ucx:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/comm_libs/12.8/nccl/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/compilers/lib:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/cuda/12.8/lib64:/export/compute/software/libraries/nvhpc-25.3-cuda-12.8/Linux_x86_64/25.3/math_libs/12.8/lib64:/export/compute/software/compilers/gcc/11.2.0/lib64:\${LD_LIBRARY_PATH}"
+
+apptainer exec --nv --bind /export,/cluster-001-share <path-to-image.sif> pw.x -in pw.in > pw.out
+```
+
+To understand the details about library paths, one may inspect modulefiles (e.g.,
+`/cluster-001-share/compute/modulefiles/applications/espresso/7.4.1-cuda-12.8 `)
+available in our clusters and [job scripts](
+https://github.com/Exabyte-io/cli-job-examples/blob/main/espresso/gpu/job.gpu.pbs)
+to see how it is implemented. Do not forget to use a GPU-enabled queue,
+such as [GOF](../../infrastructure/clusters/google.md) to submit your GPU jobs.
 
 
 ## Run jobs using Apptainer
@@ -214,14 +281,8 @@ You can build containers on your local machine or use pull pre-built ones from
 sources such as [NVIDIA GPU Cloud](
 https://catalog.ngc.nvidia.com/orgs/hpc/containers/quantum_espresso).
 
-If Apptainer is installed locally, build the container using:
-
-```bash
-apptainer build espresso.sif espresso.def
-```
-
-Once built, you can push the image to a container registry such as the
-[GitHub Container Registry](
+If the container is build locally, you can push the image to a container
+registry such as the [GitHub Container Registry](
 https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry).
 
 ```bash
@@ -236,8 +297,8 @@ apptainer pull oras://ghcr.io/<user-or-org-name>/<namespace>/<container-name>:<t
 
 !!! tip
     - You may use GitHub workflow to build images and push to GHCR.
-    - When pulling a Docker image, Apptainer will automatically convert and save it as
-    SIF file.
+    - When pulling a Docker image, Apptainer will automatically convert and save
+    it as SIF file.
 
 Alternatively, you can copy the local image file directly to the cluster
 via SCP:
