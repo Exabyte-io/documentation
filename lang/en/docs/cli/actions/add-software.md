@@ -20,11 +20,11 @@ interactively. To start it, first initialize a sandbox with `--sandbox` or `-s`
 flag:
 
 ```bash
-apptainer build --sandbox qe_sandbox/ docker://almalinux:9
+apptainer build --sandbox gcc_sandbox/ docker://almalinux:9
 ```
 
 The above command will extract the entire Linux OS tree (`/bin`, `/etc`, `/usr`)
-from the AlmaLinux 9 Docker image to a subdirectory named `qe_sandbox`.
+from the AlmaLinux 9 Docker image to a subdirectory named `gcc_sandbox`.
 
 Now, to install packages and save them to the sandbox folder, we can enter into
 the container in shell (interactive) mode with write permission (use
@@ -32,7 +32,7 @@ the container in shell (interactive) mode with write permission (use
 install software as root inside the container:
 
 ```bash
-apptainer shell --writable --fakeroot qe_sandbox/
+apptainer shell --writable --fakeroot gcc_sandbox/
 ```
 
 Once inside the Apptainer shell, we can install packages and run commands
@@ -52,15 +52,20 @@ everything you need, `exit` from the Apptainer shell mode.
 
 We may either package the sandbox directory into a final image:
 ```bash
-apptainer build -f espresso.sif qe_sandbox/
+apptainer build -f gcc.sif gcc_sandbox/
+```
+
+We can verify that our container is working with:
+```bash
+apptainer exec gcc.sif gcc --version
 ```
 
 After the container is built and saved as an SIF image, we may delete our
 sandbox folder. We need to set appropriate permissions to be able to delete:
 
 ```bash
-chmod -R u+rwX qe_sandbox
-rm -rf qe_sandbox
+chmod -R u+rwX gcc_sandbox
+rm -rf gcc_sandbox
 ```
 
 ### Build from a definition file
