@@ -23,6 +23,17 @@ physics-based and AI/ML models powered by cloud HPC.
     Existing users: see [Migrating to the New Platform](
     migrating-to-new-platform.md) for timelines and guidance.
 
+
+## How to use this documentation
+
+The left sidebar is the global table of contents. Click any top-level item to
+expand sections. For a high-level tour of major features, see
+[Content highlights](getting-started/content-highlights.md).
+
+Please use the search box at the top to quickly find specific topics across the
+documentation.
+
+
 ## Quick start
 
 - [Run your first simulation (web)](getting-started/run-first-simulation/web-interface.md)
@@ -53,16 +64,6 @@ physics-based and AI/ML models powered by cloud HPC.
 - **Workflows**: [Overview](workflows/overview.md) · [Designer](workflow-designer/overview.md)
 - **REST API**: [Overview](rest-api/overview.md)
 
-## Searching
-
-Use the search box at the top to quickly find specific topics across the
-documentation.
-
-## How this site is organized
-
-The left sidebar is the global table of contents. Click any top-level item to
-expand sections. For a high-level tour of major features, see
-[Content highlights](getting-started/content-highlights.md).
 
 ## Support
 
