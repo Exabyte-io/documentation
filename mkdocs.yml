@@ -121,7 +121,7 @@ plugins:
         bibliography_template: "{{author}} ({{year}}). {{title}}. {{journal}}. {{volume}}. {{pages}}."
 
 nav:
-    - Home: index.md
+    - Home:                                              index.md
     - Migrating to New Platform:                         migrating-to-new-platform.md
 
 # INTRODUCTION
