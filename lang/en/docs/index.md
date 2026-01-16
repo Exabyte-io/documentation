@@ -36,7 +36,9 @@ documentation.
 
 ## Quick start
 
-- [Run your first simulation (web)](getting-started/run-first-simulation/web-interface.md)
+New to Mat3ra.com? Start here:
+
+- [Run your first simulation (web interface)](getting-started/run-first-simulation/web-interface.md)
 - [Run your first CLI job](getting-started/run-first-simulation/cli-job.md)
 - [Content highlights](getting-started/content-highlights.md)
 
