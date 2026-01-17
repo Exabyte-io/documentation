@@ -31,10 +31,11 @@ Each [account](../../accounts/overview.md) is pre-configured with a default
 [material](../../materials/overview.md) and [workflow](
 ../../workflows/overview.md). Silicon with standard FCC structure is the default
 material, and "Total Energy" calculation with Quantum ESPRESSO is the default
-workflow added to each account on creation. We also maintain a ["Bank"](
-../../entities-general/bank.md) (collection) of materials and workflows, which
-includes both Mat3ra-curated and user contributed material structures and
-workflows.
+workflow added to each account on creation. However, it is possible to set a
+different material and workflow as default during the account creation or later.
+We maintain a ["Bank"](../../entities-general/bank.md) (collection) of materials
+and workflows, which includes both Mat3ra-curated and user contributed material
+structures and workflows.
 
 
 ## 1. Material structure
