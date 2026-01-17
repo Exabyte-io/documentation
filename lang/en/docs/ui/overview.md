@@ -7,13 +7,13 @@ according to the page context and functionality.
 
 ## Global Components
 
-Below is the screenshot of the Exabyte platform homepage, showing the dashboard,
-left-hand sidebar expanded, and Account menu opened. There are three global UI
-components in the Mat3ra web interface:
+Below is the screenshot of the Exabyte platform homepage, expanded left-hand
+sidebar, and Account menu opened. There are three global UI components in the
+Mat3ra web interface:
 
-1. [header and footer areas](/general/ui/header-footer/)
-2. [left-hand sidebar](/general/ui/items-navigation/)
-3. [account menu](/general/ui/account-navigation/).
+1. [header and footer areas](header-footer.md)
+2. [left-hand sidebar](left-sidebar.md)
+3. [account menu](right-sidebar.md).
 
 <img src="/images/ui/ui-overview.webp" alt="UI Overview" title="UI Overview">
 
