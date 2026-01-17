@@ -15,7 +15,6 @@ Quota, Queue, Service Level                                   | This section sho
 Account Balance                                               | A snapshot of the user's current balance, quickly credit the balance using the Apply Credit Button
 <i class="zmdi zmdi-settings"></i> &nbsp; [Account Preferences](../accounts/ui/preferences-overview.md) | A link to [the user's account](../accounts/ui/profile-page.md) page. In here the user can find his/her profile, preferences and service level.
 <i class="zmdi zmdi-card"></i> &nbsp; [Billing & Payments](../accounts/payments-charges.md) | A link to the [billings and payments](../accounts/payments-charges.md) section. In here the user can inspect compute charges, payment records and payment methods.
-<i class="fa fa-terminal"></i> &nbsp; Terminal                | Access to an in-browser command line terminal through which the user can directly access his/her cloud account.
 <i class="fa fa-desktop"></i> &nbsp; Remote Desktop           | Opens a desktop session (VNC) on Exabyte.io remote server.
 <i class="zmdi zmdi-accounts-add"></i> &nbsp; Invite a friend | Earn credits by inviting people to join Exabyte.io
 <i class="zmdi zmdi-power"></i> &nbsp; Logout                 | Secure logout
@@ -54,11 +53,6 @@ methods <i class="zmdi zmdi-card zmdi-hc-border"></i>. More details about such
 billing and payments information can be found [here](
 ../accounts/accounting/overview.md).
 
-## Terminal and Remote Desktop
-
-The Terminal and Remote Desktop functionality provide alternative methods for
-accessing Accounts. More information about such practices can be retrieved
-[here](..//remote-connection/overview.md).
 
 ## Invite a Friend
 
