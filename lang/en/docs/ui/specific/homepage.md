@@ -48,15 +48,6 @@ Suggestions are also displayed in real time under the query bar, as new search
 keywords are being entered. They can be added as tags to the query by clicking
 them.
 
-### Animation
-
-The query functionality is demonstrated in the following animation. Here, we
-first navigate to the "Run Simulations" option under "Modeling and Simulations",
-and then we revert back to the original screen by deleting the corresponding
-tags.
-
-<img data-gifffer="/images/ui/gateway-query.gif" />
-
 
 ## Modeling and Simulations <i class="zmdi zmdi-cloud-outline-alt"></i>
 
