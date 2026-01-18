@@ -1,7 +1,8 @@
 # Left-hand Sidebar (Items Navigation)
 
-Click on the Mat3ra logo on the top-left corner of the page to open and navigate
-the left-hand sidebar as shown below.
+By default, the left-hand sidebar items are minimized with only icons visible,
+hovering mouse over the minimized sidebar will expand the sidebar as shown
+below.
 
 ![Left-hand Sidebar](../images/ui/ui-left-sidebar.webp "Left-hand Sidebar")
 
