@@ -13,7 +13,7 @@ Mat3ra web interface:
 
 1. [header and footer areas](header-footer.md)
 2. [left-hand sidebar](left-sidebar.md)
-3. [account menu](right-sidebar.md).
+3. [account menu](account-menu.md).
 
 <img src="/images/ui/ui-overview.webp" alt="UI Overview" title="UI Overview">
 

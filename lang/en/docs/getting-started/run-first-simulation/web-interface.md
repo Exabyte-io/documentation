@@ -20,12 +20,12 @@ various UI components of Mat3ra web platform.
 </iframe>
 </div>
 
-Running a job in Mat3ra web platform involves three main steps:
+Running simulations in Mat3ra web platform involves three main steps:
 
 1. Specify the material system by creating or importing crystal structure
 2. Create or import workflow, which specifies the simulation steps
-3. Create and submit job, where we set material(s), workflow steps and various
-  compute parameters.
+3. Create and submit job with material(s) of interest, workflow steps and
+  required compute parameters.
 
 Each [account](../../accounts/overview.md) is pre-configured with a default
 [material](../../materials/overview.md) and [workflow](
@@ -43,13 +43,13 @@ structures and workflows.
 There are several ways, we can add new material structures to our account
 collection:
 
-- Import a material structure from the [Materials Bank](
+- Import crystal structures from the [Materials Bank](
   ../../entities-general/bank.md)
-- Import a material structure from a third-party source such as
+- Import crystal structures from a third-party source such as
   [Materials Project](https://materialsproject.org/) using [Import](
   ../../materials/actions/import.md) action
-- Upload a material structure from your local computer such as CIF, POSCAR
-  format files using [Upload](../../materials/actions/upload.md) action
+- Upload crystal structures from your local computer such as CIF, POSCAR
+  formatted files using [Upload](../../materials/actions/upload.md) action
 - Create a new material structure from scratch using [Materials Designer](
   ../../materials-designer/overview.md).
 
@@ -62,7 +62,7 @@ column, as explained in more detail [here](
 details on how to [import](../../materials/actions/import.md) materials with the
 aid of the incorporated Mat3ra Materials Designer tool, as well as further
 setting a material as the [default](
-../../entities-general/actions/set-default.md) material for the account.
+../../entities-general/actions/set-default.md) for the account.
 
 
 ## 2. Workflow steps
@@ -93,7 +93,6 @@ Settings" or modify the [input files](
 ../../workflow-designer/unit-editor/input-templates.md) for individual units.
 
 ![Edit unit](../../images/getting-started/run-first-simulation-edit-unit.webp "Subworkflow overview in the Workflow Explorer")
-![Edit unit](../../images/getting-started/run-first-simulation-edit-unit.webp "Subworkflow overview in the Workflow Explorer")
 
 
 ## 3. Job Designer
@@ -107,12 +106,15 @@ then click on the "Create" job button.
 
 On the Job creation page, we can:
 
-- Select a [material](../../jobs-designer/materials-tab.md) or multiple
-  materials from our account collection
-- Click on the "Select Job Actions" dropdown menu, click "Select Workflow" and
-  select "Band Structure + Density of States" workflow that we imported earlier
+- Click on the "Select Job Actions" dropdown menu, and select a [material](
+  ../../jobs-designer/materials-tab.md) or multiple materials from user's
+  account collection (in this tutorial, we will use the default selection of
+  Silicon)
+- Agiain, click on the "Select Job Actions" dropdown menu, click
+  "Select Workflow" and choose "Band Structure + Density of States" workflow
+  that we imported earlier
 - Navigate among "Materials", "Workflow" and "Compute" tabs to review and adjust
-  various parameters.
+  various parameters if needed.
 
 ![Materials viewer](../../images/getting-started/run-first-simulation-tab-1-materials.webp "Materials viewer")
 
@@ -121,8 +123,8 @@ On the Job creation page, we can:
 
 [Materials Tab](../../jobs-designer/materials-tab.md) lets the user choose one
 or more previously imported [materials](../../materials/overview.md) for use
-during the calculation. We will proceed with the default structure of Silicon
-for this demonstration.
+in the calculation. We will proceed with the default structure of Silicon for
+this demonstration.
 
 
 ### 3.2. Workflow Tab
@@ -137,7 +139,9 @@ contain one [modeling engine](../../software/overview.md) and one
 [theoretical model](../../models/overview.md) (eg. [Quantum ESPRESSO](
 ../../software-directory/modeling/quantum-espresso/overview.md), or "espresso",
 and [density functional theory](../../models-directory/dft/overview.md)
-respectively).
+respectively). Therefore, if a simulation involves multiple simulation engines
+in the same workflow, e.g, Quantum ESPRESSO for DFT and LAMMPS for molecular
+dynamics, then we must create multiple subworkflows.
 
 The subworkflow ["Overview" tab](
 ../../workflow-designer/subworkflow-editor/overview-tab.md) contains individual
@@ -158,14 +162,14 @@ the job designer.
 ### 3.3. Compute Tab
 
 The ["Compute" tab](../../jobs-designer/compute-tab.md) lets the user set
-various compute parameters, such as the cluster, queue, number of nodes and
-processor cores to be used for the computation, maximum time limit and other
-relevant [compute parameters](../../infrastructure/compute/parameters.md). We
-set the maximum time limit for the calculation to properly schedule the
-allocation of resources. The format is HH:MM:SS, so that `01:00:00` corresponds
-to up to 1 hour runtime. One can also choose to be notified of the job status by
-clicking on his/her name in the ["Notifications" section](
-../../infrastructure/compute/parameters.md#notifications).
+various compute parameters, such as cluster, queue, number of nodes and
+number of processor cores per node to be used for the simulation, maximum time
+limit and other relevant [compute parameters](
+../../infrastructure/compute/parameters.md). We set the maximum time limit for
+the calculation to properly schedule the allocation of resources. The format is
+HH:MM:SS, so that `01:00:00` corresponds to up to 1 hour runtime. One can also
+choose to be notified of the job status by clicking on his/her name in the
+["Notifications" section](../../infrastructure/compute/parameters.md#notifications).
 
 ![Compute Tab](../../images/getting-started/run-first-simulation-tab-3-compute.webp "Compute Tab")
 
