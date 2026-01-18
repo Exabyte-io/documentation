@@ -1,3 +1,6 @@
+Welcome to the Mat3ra.com documentation! You have arrived at the right place to
+learn how to use our platform and make the best of it.
+
 Mat3ra.com offers a comprehensive high-performance computing (HPC) solution in
 the cloud with a special focus on materials simulation for both academia and
 industry. We offer an intuitive web interface for designing new materials,

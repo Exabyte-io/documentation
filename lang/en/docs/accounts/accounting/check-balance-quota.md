@@ -1,12 +1,12 @@
 # Account Balance and Storage Quota
 
-This page explains how users can check the current [Account Balance](../balance.md) and [Storage Quota](../quota.md) associated with the account under consideration. 
+This page explains how users can check the current [Account Balance](../balance.md) and [Storage Quota](../quota.md) associated with the account under consideration.
 
 There are two ways through which both pieces of information can be accessed and viewed simultaneously, listed below. The appearance of the interface components exhibiting the balance and quota information in each of these two cases is displayed in the respective images underneath each item.
 
-## In Right-hand sidebar
+## In Account Menu
 
-The information about both balance and quota is present in the [Right-hand sidebar](../../ui/right-sidebar.md) as shown in the visual below.
+The information about both balance and quota is present in the [Account Menu](../../ui/account-menu.md) as shown in the visual below.
 
 ![Account Snapshot](../../images/accounts/account-snapshot.png "Account Snapshot")
 
@@ -27,5 +27,4 @@ Furthermore, the current information about the Storage Quota across all the avai
 
 ![Storage Quota](../../images/accounts/storage-quota.png "Storage Quota")
 
-Two buttons are present at the top-right corner of the above interface widget: the first on the left <i class="zmdi zmdi-plus zmdi-hc-border"></i> can be used to [increase the Storage Quota](increase-quota.md), and the second on the right <i class="zmdi zmdi-refresh-alt zmdi-hc-border"></i> to refresh the displayed information. 
-
+Two buttons are present at the top-right corner of the above interface widget: the first on the left <i class="zmdi zmdi-plus zmdi-hc-border"></i> can be used to [increase the Storage Quota](increase-quota.md), and the second on the right <i class="zmdi zmdi-refresh-alt zmdi-hc-border"></i> to refresh the displayed information.

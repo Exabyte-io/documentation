@@ -1,10 +1,10 @@
-# Right-hand sidebar (account navigation)
+# Account Menu
 
 Clicking [Account Badge](../accounts/ui/account-badge.md) in the top right
 corner opens the Account Navigator modal on the right-hand side of the page. The
 general appearance of this sidebar is portrayed in the following image.
 
-![Right-hand sidebar](../images/ui/ui-right-sidebar.webp "Right-hand sidebar")
+![Account Menu](../images/ui/account-menu.webp "Account Menu")
 
 The following menu entries are worth noticing.
 
