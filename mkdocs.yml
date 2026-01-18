@@ -251,7 +251,7 @@ nav:
         - Overview:                                      ui/overview.md
         - Header and Footer:                             ui/header-footer.md
         - Left-hand Sidebar:                             ui/left-sidebar.md
-        - Right-hand Sidebar:                            ui/right-sidebar.md
+        - Account Menu:                                  ui/account-menu.md
         - Support:                                       ui/support.md
         - Specific:
             - Homepage Navigation:                       ui/specific/homepage.md
