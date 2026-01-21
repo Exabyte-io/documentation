@@ -153,8 +153,8 @@ nav:
         - Overview:                                  tutorials/overview.md
         - Jobs via Command Line:
             - Overview:                              tutorials/jobs-cli/overview.md
-            - Create + run a CLI Job:                tutorials/jobs-cli/job-cli-example.md
-            - Import a CLI Job to Web Interface:     tutorials/jobs-cli/cli-job-import.md
+            - Create, Run, and Inspect a CLI Job:    tutorials/jobs-cli/job-cli-example.md
+#            - Import a CLI Job to Web Interface:     tutorials/jobs-cli/cli-job-import.md
             - QE GPU Job:                            tutorials/jobs-cli/qe-gpu.md
         - Templating:
             - Overview:                              tutorials/templating/overview.md
