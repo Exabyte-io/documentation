@@ -1,7 +1,7 @@
 # User Dashboard
 
 The Dashboard page provides the user with an instant snapshot of the system
-status, and of his/her own recent work. Four main component panels can be
+status, and of his/<wbr/>her own recent work. Four main component panels can be
 recognized, as shown below.
 
 ![User Dashboard](../../images/ui/user-dashboard.webp "User Dashboard")
