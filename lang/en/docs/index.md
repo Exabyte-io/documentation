@@ -1,31 +1,10 @@
-Welcome to the Mat3ra.com documentation! You have arrived at the right place to
-learn how to use our platform and make the best of it.
+# Mat3ra.com platform documentation
 
-Mat3ra.com offers a comprehensive high-performance computing (HPC) solution in
-the cloud with a special focus on materials simulation for both academia and
-industry. We offer an intuitive web interface for designing new materials,
-managing workflows, running simulations, and organizing results and data in a
-more collaborative, accessible, and efficient way.
-
-Certainly, the command line interface (CLI) will remain a powerful choice among
-the advanced HPC users, so not only do we offer SSH connection to our platform,
-but we also offer a web terminal feature that can be used from any web browser
-on any device without the need for an SSH client or terminal application.
-
-Finally, we offer API access to our platform that allows integrating our
-platform features with other tools and applications, including access from
-within the Python Jupyter Notebook, a popular tool among data scientists and
-machine learning engineers.
-
-We are here to be part of your journey to accelerate your R&D on materials
-design and discovery in the AI/ML era. This documentation explains how you can
-use our platform to design new materials and simulate their properties using
-physics-based and AI/ML models powered by cloud HPC.
-
-!!!note "Migrating to the New Platform (Q4 2025)"
-    Existing users: see [Migrating to the New Platform](
-    migrating-to-new-platform.md) for timelines and guidance.
-
+Mat3ra.com is an online platform for digital materials R&D. 
+We offer a cloud-based interface for designing new materials,
+managing modeling and simulation workflows, performing simulations, 
+and organizing results and data in a collaborative, accessible, and searchable way. 
+This documentation explains how to use the platform.
 
 ## How to use this documentation
 
