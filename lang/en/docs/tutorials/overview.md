@@ -17,9 +17,6 @@ sidebar navigation.
     - [Magnetic Moment on Atoms by Specie](templating/set-magnetic-moment.md)
 - Machine Learning (ML)
     - [Overview](ml/overview.md)
-    - ExabyteML (legacy)
-        - [Train ML Model](ml/train-ml-model.md)
-        - [Predict New Properties](ml/predict-ml-properties.md)
     - Python ML
         - [Training a Regression Model](python-ml/train-regression-model.md)
         - [Predictions with Regression](python-ml/predict-with-regression.md)
@@ -65,7 +62,6 @@ sidebar navigation.
     - [Accessing the Platform](platform-access.md)
     - [Jupyter Notebook](other/jupyter.md)
     - [Restart from Previous Job](other/restart-job.md)
-    - [Upload External Job Data](other/external-upload.md)
     - [TensorFlow (GPU)](general-functionality/tensorflow-gpu.md)
 - Materials
     - [Overview](materials/overview.md)
@@ -74,7 +70,6 @@ sidebar navigation.
     - [Interpolated Sets](materials/interpolated-sets.md)
     - [Molecule on a Surface](materials/molecule-surface.md)
     - [Interface, quick setup (3D Editor)](materials/slabs-interface.md)
-    - [Interface, no strain minimization (Python Transformation)](materials/interface-with-python.md)
     - [Interface, minimal strain (JupyterLite Session)](materials/jupyterlite-zsl.md)
     - [Import materials from files in various formats](materials/import-from-files.md)
 

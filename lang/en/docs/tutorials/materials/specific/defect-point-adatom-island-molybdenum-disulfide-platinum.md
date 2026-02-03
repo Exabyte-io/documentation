@@ -53,47 +53,48 @@ Find and open the `create_adatom_defect.ipynb` notebook. Select MoS2 as input ma
 Set up the slab and defect parameters in the notebook:
 
 ```python
-# Slab parameters
-MILLER_INDICES = (0, 0, 1)  # MoS2 basal plane
-SLAB_THICKNESS = 1  # Single layer
-VACUUM = 10.0  # in Angstrom
-SUPERCELL_MATRIX = [[3, 0, 0], [0, 3, 0], [0, 0, 1]]  # 3x3 supercell
+# Index in the list of materials, to access as materials[MATERIAL_INDEX]
+MATERIAL_INDEX = 0
+ELEMENT = "Pt"  # Chemical element of the adatom
 
-# Defect configurations for all Pt atoms
+# Dictionaries are validated and converted to AdatomDefectDict objects below
 DEFECT_CONFIGS = [
     {
-        "defect_type": "adatom",
-        "placement_method": "coordinate",
-        "chemical_element": "Pt",
-        "position_on_surface": [5/9, 4/9],  # First Pt: atop central Mo
-        "distance_z": 1.2, # Distance from surface S atoms
-        "use_cartesian_coordinates": False
+        "type": "adatom",
+        "coordinate_2d": [5/9, 4/9], # Crystal coordinates on the surface (x, y)
+        "distance_z": 1.2,  # Method to place the adatom
+        "element": ELEMENT,
     },
     {
-        "defect_type": "adatom",
-        "placement_method": "coordinate",
-        "chemical_element": "Pt",
-        "position_on_surface": [2/9, 4/9],  # Second Pt: next clockwise atop Mo
-        "distance_z": 1.2, # Distance from surface S atoms
-        "use_cartesian_coordinates": False
+        "type": "adatom",
+        "coordinate_2d": [2/9, 4/9], # Crystal coordinates on the surface (x, y)
+        "distance_z": 1.2,  # Method to place the adatom
+        "element": ELEMENT,
     },
     {
-        "defect_type": "adatom",
-        "placement_method": "coordinate",
-        "chemical_element": "Pt",
-        "position_on_surface": [5/9, 7/9],  # Third Pt: next clockwise atop Mo
-        "distance_z": 1.2, # Distance from surface S atoms
-        "use_cartesian_coordinates": False
+        "type": "adatom",
+        "coordinate_2d": [5/9, 7/9], # Crystal coordinates on the surface (x, y)
+        "distance_z": 1.2,  # Method to place the adatom
+        "element": ELEMENT,
     },
     {
-        "defect_type": "adatom",
-        "placement_method": "coordinate",
-        "chemical_element": "Pt",
-        "position_on_surface": [4/9, 5/9],  # Fourth Pt: centered atop S
-        "distance_z": 1.6,  # Distance between Pt atom layers, in Angstrom
-        "use_cartesian_coordinates": False
-    }
+        "type": "adatom",
+        "coordinate_2d": [4/9, 5/9], # Crystal coordinates on the surface (x, y)
+        "distance_z": 1.6,  # Method to place the adatom
+        "element": ELEMENT,
+    },
 ]
+
+
+PLACEMENT_METHOD = "new_crystal_site"  # Method to place the adatom, e.g., "new_crystal_site", "exact_coordinate", "equidistant"
+
+
+# Slab parameters
+MILLER_INDICES = (0, 0, 1)  # Miller indices of the surface
+SLAB_THICKNESS = 1  # Thickness of the slab in unit cells
+VACUUM = 10.0  # Vacuum thickness in Angstrom
+XY_SUPERCELL_MATRIX = [[3, 0], [0, 3]]  # Supercell matrix for the slab
+TERMINATION_FORMULA = None  # Stoichiometric formula of the slab termination to be used.
 ```
 
 Key parameters explained:

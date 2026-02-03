@@ -112,7 +112,8 @@ Secondly, we prepare the [Batch Script](../../jobs-cli/batch-scripts/overview.md
 
 module add espresso
 cd $PBS_O_WORKDIR
-mpirun -np $PBS_NP pw.x -in pw.in > pw.out
+# $EXEC_CMD is set by the environment module
+mpirun -np $PBS_NP $EXEC_CMD pw.x -in pw.in > pw.out
 ```
 
 Just like before, we are using template variables again instead of the [project](../../jobs/projects.md) name and email. Variables starting with `$PBS` are automatically set by the [resource manager](../../infrastructure/resource/overview.md), and are known as the ["PBS Directives"](../../jobs-cli/batch-scripts/directives.md). 
@@ -258,7 +259,7 @@ EOF
 
 module add espresso
 cd \$PBS_O_WORKDIR
-mpirun -np \$PBS_NP pw.x -in srzro3_${celldm1}.in | tee srzro3_${celldm1}.out
+mpirun -np \$PBS_NP $EXEC_CMD pw.x -in srzro3_${celldm1}.in | tee srzro3_${celldm1}.out
 EOF
     qsub run_QE_${celldm1}.pbs
 done

@@ -63,10 +63,12 @@ MILLER_INDICES = (0, 0, 1)
 THICKNESS = 3  # in atomic layers
 VACUUM = 10.0  # in angstroms
 XY_SUPERCELL_MATRIX = [[10, 0], [0, 10]]
-USE_ORTHOGONAL_Z = True
+USE_ORTHOGONAL_C = True
 USE_CONVENTIONAL_CELL = True
 
-# Index of the termination pair to be selected
+# Stoichiometric formula of the slab termination to be used.
+SLAB_TERMINATION_FORMULA = None
+# if None, the index of all possible terminations will be used
 TERMINATION_INDEX = 0
 ```
 
@@ -125,25 +127,32 @@ Notice, that we did not create the slab yet, so it is necessary to provide slab 
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
-ISLAND_SHAPE = 'box'
-AUTO_ADD_VACUUM = True
-VACUUM_THICKNESS = 10.0
-NUMBER_OF_ADDED_LAYERS = 0.5
-
-BOX_PARAMETERS = {
+# Shape-specific parameters
+# Choose the island shape: 'cylinder', 'sphere', 'box', or 'triangular_prism'
+# and the corresponding parameters
+SHAPE_PARAMETERS = {
+    'shape': 'box',
     'min_coordinate': [0.25, 0.2, 0],
-    'max_coordinate': [0.65, 0.6, 1],
-    "use_cartesian_coordinates": False
+    'max_coordinate': [0.65, 0.6, 1]
 }
 
+# Common parameters
+CENTER_POSITION = [0.5, 0.5, 0.5]  # Center of the island
+USE_CARTESIAN_COORDINATES = False  # Use Cartesian coordinates for the island
+NUMBER_OF_ADDED_LAYERS = 0.5  # Number of layers to add to the island
+
+# Vacuum parameters for builder
+AUTO_ADD_VACUUM = True  # Automatically add vacuum to the slab
+VACUUM_THICKNESS = 10.0  # Thickness of the vacuum
+
+# Slab parameters for creating a new slab if provided material is not a slab
 DEFAULT_SLAB_PARAMETERS = {
     "miller_indices": (0,0,1),
     "thickness": 3,
     "vacuum": 0.0,
-    "use_orthogonal_z": True,
+    "use_orthogonal_c": True,
     "xy_supercell_matrix": [[10, 0], [0, 10]]
 }
-
 ```
 
 Here's the visual of the updated content:

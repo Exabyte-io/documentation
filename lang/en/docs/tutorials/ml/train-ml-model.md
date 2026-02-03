@@ -1,3 +1,4 @@
+[//]: # (This tutorial is deprecated)
 # Machine Learning: Train Linear Regression
 
 This tutorial demonstrates how to build a [machine learning (ML)](../../models-directory/machine-learning/overview.md) **training model** based upon a set of [materials](../../materials/overview.md) called **"train materials"**. This model can then be used to predict the [properties](../../properties/overview.md) of another set called **"target materials"**, based on the procedure outlined in a [separate tutorial](predict-ml-properties.md). 

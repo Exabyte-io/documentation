@@ -79,19 +79,21 @@ For that, edit `create_nanowire_custom_shape.ipynb` notebook to modify the param
 ```python
 from typing import List
 import numpy as np
-from mat3ra.made.tools.utils.coordinate import CoordinateCondition
-# Flag to use Cartesian coordinates for the center and radii
-USE_CARTESIAN_COORDINATES = False 
+from mat3ra.made.tools.helpers import CoordinateCondition
 
-# Miller indices of the nanowire direction
-MILLER_INDICES= (1,1,0)  
-# Supercell matrix to cut the cylinder from
-SUPERCELL_MATRIX = [[3, 0, 0], [0, 2, 0], [0, 0, 2]] 
-# Vacuum thickness on the sides in Angstroms
-VACUUM = 10.0 
+# Cross-section shape parameters
+CENTER_COORDINATE = [0.5, 0.5, 0.5] # Center of the cylinder in units specified by flag below
+MAJOR_RADIUS = 0.25 # Cylinder wire radius in units specified by the flag below
+MINOR_RADIUS = 0.1 # Cylinder wire radius in units specified by the flag below
+USE_CARTESIAN_COORDINATES = False # Flag to use Cartesian coordinates for the center and radii
+
+# Wire parameters 
+MILLER_INDICES= (1,1,0)  # Miller indices of the nanowire direction
+SUPERCELL_MATRIX = [[3, 0, 0], [0, 2, 0], [0, 0, 2]] # Supercell matrix to cut the cylinder from
+VACUUM = 10.0 # Vacuum thickness on the sides in Angstroms
 ALIGN_ALONG_X = False
 
-# Custom Coordinate Condition for
+# Custom Coordinate Condition for a hollow cylinder shape
 class CustomCoordinateCondition(CoordinateCondition):
     vertices: List[List[float]]
 
@@ -163,16 +165,20 @@ IS_COORDINATION_SELECTION_INTERACTIVE = False
 
 MATERIAL_INDEX = 0
 
-BOND_LENGTH = 1.46 # in Angstroms
-PASSIVANT = "H" # Chemical symbol of the passivant
-COORDINATION_SEARCH_RADIUS = 2.5 # in Angstroms (sphere in which to search for neighbors)
-COORDINATION_THRESHOLD = 3 # Coordination number below which to passivate
-MAX_BONDS_TO_SATURATE = 2 # Maximum number of bonds to saturate
+# Passivation parameters
+PASSIVANT = "H"  # Chemical element for passivating atom
+BOND_LENGTH = 1.46  # Distance from atom to passivant, in Angstroms
 
-SYMMETRY_TOLERANCE = 0.1 
+# Undercoordinated atoms search algorithm parameters
+COORDINATION_THRESHOLD = 3  # Coordination threshold, below which passivation is applied to the atom
+COORDINATION_SEARCH_RADIUS = 2.5  # Distance to look for neighbors for coordination, in Angstroms
+NUMBER_OF_BONDS_TO_PASSIVATE = 2  # Number of bonds to passivate per undercoordinated atom
 
+SYMMETRY_TOLERANCE = 0.1  # Tolerance for symmetry analysis of existing bonds
+
+# Visualization parameters
 SHOW_INTERMEDIATE_STEPS = True
-CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1] 
+CELL_REPETITIONS_FOR_VISUALIZATION = [1, 1, 1]  # Structure repeat in view
 ```
 
 Here's the visual of the updated content:

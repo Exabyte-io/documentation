@@ -43,12 +43,14 @@ We then use the [Advanced](../../../materials-designer/header-menu/advanced/supe
 ![Supercell Creation for Graphene](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/2-advanced-supercell.webp "Supercell Graphene")
 
 ## 2. Identify Defect Sites.
+Next, we can toggle the coordinates measurement in the editor to identify the crystal site positions for the defects.
 
-Next, we open the [3D editor](../../../materials-designer/3d-editor.md) to identify the crystal site positions for the defects.
+![Coordinates Measurement](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-toggle-measure-coordinates.webp "3D Editor Toggle Coordinates")
 
-![3D Editor](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-threejs-editor-coordinates.webp "3D Editor")
+Clicking on each atom will copy the coordinates of the atom to the clipboard as an array, which can then be pasted into the cell of the notebook and used to assign the defect coordinates.
 
-Hover over the atoms to get the coordinates of the atoms to replace. Then copy/paste these coordinates into a text file for later use.
+![3D Editor Coordinates](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/4-3d-editor-coordinates.webp "3D Editor Coordinates Copying")
+
 
 ## 3. Create Nitrogen Defects and Vacancies.
 
@@ -71,39 +73,38 @@ Next, edit `create_point_defect.ipynb` notebook to modify the parameters by addi
 Copy the below content and edit the "1.1. Set up defect parameters" cell in the notebook as follows:
 
 ```python
-DEFECT_TYPE = "substitution"
-SITE_ID = None # `from_site_id` method will be ignored
-COORDINATE = None # default method will be ignored
-APPROXIMATE_COORDINATE = None   
-CHEMICAL_ELEMENT = "N"
+# Selected material will be used as a unit cell to create a supercell first.
 SUPERCELL_MATRIX = [[1, 0, 0], [0, 1, 0], [0, 0, 1]]
-USE_CARTESIAN_COORDINATES = True
 
 DEFECT_CONFIGS = [
     {
-        "defect_type": "substitution",
-        "approximate_coordinate": [4.9, 2.85, 10],
-        "chemical_element": CHEMICAL_ELEMENT,
-        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
+        "type": "substitution",
+        "coordinate": [4.9, 2.85, 10],
+        "element": "N",
+        "placement_method": "closest_site",
+        "use_cartesian_coordinates": True
     },
       {
-        "defect_type": "substitution",
-        "approximate_coordinate": [3.7, 4.9, 10],
-        "chemical_element": CHEMICAL_ELEMENT,
-        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
+        "type": "substitution",
+        "coordinate": [3.7, 4.9, 10],
+        "element": "N",
+        "placement_method": "closest_site",
+        "use_cartesian_coordinates": True
     },
       {
-        "defect_type": "substitution",
-        "approximate_coordinate": [2.45, 2.85, 10],
-        "chemical_element": CHEMICAL_ELEMENT,
-        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
+        "type": "substitution",
+        "coordinate": [2.45, 2.85, 10],
+        "element": "N",
+        "placement_method": "closest_site",
+        "use_cartesian_coordinates": True
     },
       {
-        "defect_type": "vacancy",
-        "approximate_coordinate": [3.7, 3.55, 10],
-        "use_cartesian_coordinates": USE_CARTESIAN_COORDINATES
+        "type": "vacancy",
+        "coordinate": [3.7, 3.55, 10],
+        "placement_method": "closest_site",
+        "use_cartesian_coordinates": True
     },
-]  
+]
 ```
 
 Here's the visual of the updated content:

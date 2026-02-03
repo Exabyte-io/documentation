@@ -1,10 +1,10 @@
 # Content Highlights
 
-This page helps users quickly grasp the content of documentation. Use the table of contents on the left or the search bar in the header for more.
+This page helps users quickly grasp the content of the documentation. Use the table of contents on the left or the search bar in the header for more.
 
 ## Login
 
-We support two main login connection methods: through [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). One must have a valid username and password in order to login via either. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged-in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have a [Remote Desktop Environment](../remote-connection/remote-desktop.md) option available to them.
+We support two main login connection methods: through [Web Interface](../ui/overview.md), and [Command Line Interface (CLI)](../cli/overview.md). One must have a valid username and password in order to log in via either. Secure shell sessions use [key-based authentication](../remote-connection/ssh.md#generate-ssh-keys). Users logged in through the web interface can, without additional authentication, also access the CLI via the [Web Terminal](../remote-connection/web-terminal.md), and have a [Remote Desktop Environment](../remote-connection/remote-desktop.md) option available to them.
 
 The user can find out more about such connection methods under the [connection options page](../remote-connection/overview.md). The
 - <a href="http://platform.mat3ra.com/login" target="_blank">login page</a> is where the platform can be accessed.
@@ -19,11 +19,11 @@ We highlight three ways to input material geometries:
 
 > [Combinatorial sets](../materials-designer/header-menu/advanced/combinatorial-set.md), for example, make it possible to rapidly create a large number of material geometries.
 
-> [Toggle "isNonPeriodic"](../materials-designer/header-menu/edit.md), for example, makes it possible to a create a non-periodic structure, i.e. a molecule.
+> [Toggle "isNonPeriodic"](../materials-designer/header-menu/edit.md), for example, makes it possible to create a non-periodic structure, i.e., a molecule.
 
 ## Running Simulations
 
-We allow users to simulate materials to extract desired [properties](../properties/overview.md). In order to do so, one needs to [construct](../workflow-designer/overview.md) a simulation [workflow](../workflows/overview.md). For many properties we have a set of workflows available in the [workflows bank](../workflows/bank.md) that are available for [copy](../workflows/actions/copy-bank.md) by users.
+We allow users to simulate materials to extract desired [properties](../properties/overview.md). In order to do so, one needs to [construct](../workflow-designer/overview.md) a simulation [workflow](../workflows/overview.md). For many properties, we have a set of workflows available in the [workflows bank](../workflows/bank.md) that are available for [copy](../workflows/actions/copy-bank.md) by users.
 
 ### Workflows
 
@@ -65,11 +65,11 @@ Advanced users connecting to our CLI may [submit jobs directly through it](../jo
 
 -->
 
-## Exabyte Data Convention
+## Data Convention
 
 We employ a [data convention](../data-structured/overview.md) that supports storing materials, simulations and properties in an organized and easy-to-navigate manner. It is designed with collaborative access to data in mind, and has a flexible permission scheme allowing for complete privacy or wide publicity.
 
-We store all data about simulations and materials. Data originated from web application is automatically organized and searchable within the web interface. Data originated on command line is [accessible from within the web application](../data-in-objectstorage/overview.md), and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning applications. We further explain our approach [here](../data/overview.md).
+We store all data about simulations and materials. Data originated from a web application is automatically organized and searchable within the web interface. Data originated on the command line is [accessible from within the web application](../data-in-objectstorage/overview.md), and can also be further imported and organized for future search and potential use in advanced analytics / data mining / machine learning applications. We further explain our approach [here](../data/overview.md).
 
 Find out more under the following pages:
 
@@ -80,7 +80,7 @@ Find out more under the following pages:
 
 ## Account-related Items
 
-Other considerations related to accounts, their service and data ownership/permissions can be found under the links below:
+Other considerations related to accounts, their service, and data ownership/permissions can be found under the links below:
 
 - [accounts and their types](../accounts/overview.md)
 - [service levels and pricing](../pricing/service-levels.md)

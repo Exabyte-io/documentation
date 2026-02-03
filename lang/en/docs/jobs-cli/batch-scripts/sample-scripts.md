@@ -23,7 +23,8 @@ This example requests 1 node with 2 processors (cores) for 10 minutes, in the De
 
 cd $PBS_O_WORKDIR
 module load espresso
-mpirun -np $PBS_NP pw.x -in pw.input
+# $EXEC_CMD is set by the environment module
+mpirun -np $PBS_NP $EXEC_CMD pw.x -in pw.input
 ```
 
 ## On-demand regular (OR)
@@ -44,5 +45,6 @@ This example requests 1 node and 16 cores for 10 minutes, on the OR [queue](../.
 
 cd $PBS_O_WORKDIR
 module load vasp
-mpirun -np $PBS_NP vasp
+# $EXEC_CMD is set by the environment module
+mpirun -np $PBS_NP $EXEC_CMD vasp
 ```

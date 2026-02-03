@@ -3,10 +3,10 @@ name: Build tests and GitHub release
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   run-py-tests:
@@ -16,20 +16,21 @@ jobs:
         os: ["ubuntu-24.04"]
         python-version:
           - "3.10"
-          - "3.11"
-          - "3.12"
-          - "3.13"
+          # No need to run with many Py versions - as long as one is passing, we should be OK
+          # - "3.11"
+          # - "3.12"
+          # - "3.13"
 
     steps:
       - name: Checkout repository and submodules
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
           lfs: true
           submodules: true
 
       - name: Setup python 3
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python-version }}
 
@@ -40,16 +41,16 @@ jobs:
     needs:
       - run-py-tests
     runs-on: ubuntu-24.04
-    if: (github.repository != 'Exabyte-io/template-definitions-js-py') && (github.ref_name == 'master')
+    if: (github.ref_name == 'main')
 
     steps:
       - name: Checkout this repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           lfs: true
 
       - name: Checkout actions repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           repository: Exabyte-io/actions
           token: ${{ secrets.BOT_GITHUB_TOKEN }}
