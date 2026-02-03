@@ -1,12 +1,26 @@
-Mat3ra is a platform for materials modeling from the atoms up. This documentation explains how to use the platform to
-design new materials and predict their properties using physics-based and AI/ML models powered by cloud HPC.
+# Mat3ra.com platform documentation
 
-!!!note "Migrating to the New Platform (Q4 2025)"
-    Existing users: see [Migrating to the New Platform](migrating-to-new-platform.md) for timelines and guidance.
+Mat3ra.com is an online platform for digital materials R&D. 
+We offer a cloud-based interface for designing new materials,
+managing modeling and simulation workflows, performing simulations, 
+and organizing results and data in a collaborative, accessible, and searchable way. 
+This documentation explains how to use the platform.
+
+## How to use this documentation
+
+The left sidebar is the global table of contents. Click any top-level item to
+expand sections. For a high-level tour of major features, see
+[Content highlights](getting-started/content-highlights.md).
+
+Please use the search box at the top to quickly find specific topics across the
+documentation.
+
 
 ## Quick start
 
-- [Run your first simulation (web)](getting-started/run-first-simulation/web-interface.md)
+New to Mat3ra.com? Start here:
+
+- [Run your first simulation (web interface)](getting-started/run-first-simulation/web-interface.md)
 - [Run your first CLI job](getting-started/run-first-simulation/cli-job.md)
 - [Content highlights](getting-started/content-highlights.md)
 
@@ -34,19 +48,12 @@ design new materials and predict their properties using physics-based and AI/ML 
 - **Workflows**: [Overview](workflows/overview.md) · [Designer](workflow-designer/overview.md)
 - **REST API**: [Overview](rest-api/overview.md)
 
-## Searching
-
-Use the search box at the top to quickly find specific topics across the documentation.
-
-## How this site is organized
-
-The left sidebar is the global table of contents. Click any top-level item to expand sections. For a high-level tour of
-major features, see [Content highlights](getting-started/content-highlights.md).
 
 ## Support
 
-We respond to support requests within 24 hours during working hours (Pacific Time). See
-[Help & Support](other/support.md) for ways to get assistance.
+We respond to support requests within 24 hours during working hours (Pacific
+Time). See [Help & Support](other/support.md) for ways to get assistance.
 
 !!! tip "Help us improve"
-    If something is missing or unclear, please open the [Help & Support](other/support.md) page and get in touch.
+    If something is missing or unclear, please open the [Help & Support](
+    other/support.md) page and get in touch.

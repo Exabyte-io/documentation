@@ -8,7 +8,7 @@ Complete instructions on how to operate job submission via CLI can be found [in 
 
 We provide an an incorporated [Web Terminal](../../remote-connection/web-terminal.md) to conveniently access the CLI. Alternatively, the user can use the [SSH protocol](../../remote-connection/ssh.md).
 
-To use the former Web Terminal interface, open the [right-hand sidebar](../../ui/right-sidebar.md) and click `Terminal`.
+To use the former Web Terminal interface, open the [Account Menu](../../ui/account-menu.md) and click `Terminal`.
 
 The simulations that have been submitted through the main [Web Interface](../../ui/overview.md) are under the `data/<username>` sub-directory under the main [Login Home directory](../../infrastructure/login/directories.md).
 
@@ -29,7 +29,7 @@ A convenient way to get acquainted with our CLI is to start by copying the templ
 ```bash
 cp ~/job_script_templates/espresso/job.pbs ~/data/<username>/test_job/job.script
 ```
- 
+
 Copy any necessary simulation input files or executables into this current working directory as well.
 
 ### Edit submission script
@@ -41,23 +41,23 @@ In addition, if the user would like to alter runtime environment for the calcula
 Lastly, the options for choosing the queue to submit the job can be found [here](../../infrastructure/resource/queues.md).
 
 !!!tip "Accounting Project Parameter"
-    In order to specify a [project](../../jobs/projects.md) that the job should belong to and should be [charged upon](../../accounts/payments-charges.md), the instructions contained [in this page](../../jobs-cli/accounting.md) should be followed. 
+    In order to specify a [project](../../jobs/projects.md) that the job should belong to and should be [charged upon](../../accounts/payments-charges.md), the instructions contained [in this page](../../jobs-cli/accounting.md) should be followed.
 
 In the present tutorial we will proceed with the default submission script template, without modification.
 
 ## Submit job
 
-As a next step, the user can [submit the batch script](../../jobs-cli/actions/submit.md) for job execution using the `qsub` resource manager command: 
- 
+As a next step, the user can [submit the batch script](../../jobs-cli/actions/submit.md) for job execution using the `qsub` resource manager command:
+
 ```bash
  qsub job.script
 ```
- 
+
 Our resource management system will respond with a message letting know that the job was accepted.
 
 ## Monitor job
 
-In order to check on the [current status](../../jobs-cli/actions/check-status.md) of the job, type the following command. 
+In order to check on the [current status](../../jobs-cli/actions/check-status.md) of the job, type the following command.
 
 ```bash
 qstat
