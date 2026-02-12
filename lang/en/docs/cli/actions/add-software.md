@@ -14,7 +14,7 @@ container. Existing Docker images can be converted into an
 Apptainer/<wbr/>Singularity images.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/G1hfW_kS8oY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/G1hfW_kS8oY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Using Sandbox mode
