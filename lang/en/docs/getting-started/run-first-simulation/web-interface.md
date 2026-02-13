@@ -13,7 +13,7 @@ various UI components of Mat3ra web platform.
 <iframe class="gifffer"
     width="100%"
     height="100%"
-    src="https://www.youtube.com/embed/hT1VBFH7HHo"
+    src="https://www.youtube.com/embed/hT1VBFH7HHo?controls=0"
     frameborder="0"
     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
     allowfullscreen>
