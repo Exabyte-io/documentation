@@ -5,7 +5,7 @@
     "description": "How to build containerized applications with GPU support using Apptainer.",
     "tags": [
         {
-            "...": "../metadata/general.json#/tags"
+            "...": "../../metadata/general.json#/tags"
         },
         "apptainer",
         "container",
