@@ -4,15 +4,18 @@
 Users can compile their own software via the
 [Command Line Interface](../overview.md) (CLI). This is helpful if users need
 to run a specific version of an application that is not installed "globally".
-The globally installed applications are currently distributed as
-Apptainer[^1] (Singularity[^2]) containers, bundled with all required
-dependencies. This ensures that each application is isolated and avoids
-dependency conflicts.
+The globally installed applications are currently distributed as Apptainer[^1]
+(Singularity[^2]) containers, bundled with all required dependencies. This
+ensures that each application is isolated and avoids dependency conflicts.
 
-When planning to run an application that is not installed in
-our cluster, we encourage packaging code and its dependencies as an
-Apptainer/<wbr/>Singularity container. Existing Docker images
-can be converted into an Apptainer/<wbr/>Singularity images.
+When planning to run an application that is not installed in our cluster, we
+encourage packaging code and its dependencies as an Apptainer/<wbr/>Singularity
+container. Existing Docker images can be converted into an
+Apptainer/<wbr/>Singularity images.
+
+<div class="video-wrapper">
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/G1hfW_kS8oY?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Using Sandbox mode
 Apptainer's sandbox mode is helpful for testing and fine-tuning the build steps
