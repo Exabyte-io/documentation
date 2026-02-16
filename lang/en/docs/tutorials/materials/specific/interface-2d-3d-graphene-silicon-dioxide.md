@@ -134,7 +134,7 @@ The interactive JupyterLite notebook for creating interfaces between graphene an
 
 {% with origin_url=config.extra.jupyterlite.origin_url %}
 {% with notebooks_path_root=config.extra.jupyterlite.notebooks_path_root %}
-{% with notebook_name='specific_examples/interface_3d_2d_graphene_silicon_dioxide.ipynb' %}
+{% with notebook_name='specific_examples/interface_2d_3d_graphene_silicon_dioxide.ipynb' %}
 {% include 'jupyterlite_embed.html' %}
 {% endwith %}
 {% endwith %}
