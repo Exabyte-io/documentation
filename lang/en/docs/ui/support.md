@@ -6,7 +6,7 @@ respond to support requests as soon as possible, and, depending on the
 hours during business days. Clicking the `Support` button at the bottom-left
 corner of any page opens the following dialog.
 
-![support-widget](../images/ui/support-widget.webp "Support Widget")
+![support-widget](../images/ui/support-widget.png "Support Widget")
 
 ## Required Information
 
