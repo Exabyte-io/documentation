@@ -236,7 +236,7 @@ apptainer exec --nv --bind /export,/cluster-001-share <path-to-image.sif> pw.x -
 ```
 
 To understand the details about library paths, one may inspect modulefiles (e.g.,
-`/cluster-001-share/compute/modulefiles/applications/espresso/7.4.1-cuda-12.8 `)
+`/cluster-001-share/compute/modulefiles/applications/espresso/7.5-cuda-12.8`)
 available in our clusters and [job scripts](
 https://github.com/Exabyte-io/cli-job-examples/blob/main/espresso/gpu/job.gpu.pbs)
 to see how it is implemented. Do not forget to use a GPU-enabled queue,
