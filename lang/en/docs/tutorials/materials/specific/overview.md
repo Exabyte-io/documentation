@@ -38,7 +38,7 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 #### 2.1.1. Interface
 
-##### 2.1.1.1. Graphene/h-BN Interface <span class="btn badge b-info border-50">C-2D-INT-S</span>
+##### 2.1.1.1. Graphene/h-BN Interface <span class="btn badge b-info border-50">C-2D-INT-Z</span>
 
 **Structure**: [Create Graphene/h-BN Interface](interface-2d-2d-graphene-boron-nitride.md)  
 **Property**: Band Structure and Moire Pattern Analysis (Coming Soon)  
@@ -46,7 +46,7 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 ![Graphene on Hexagonal Boron Nitride](../../../images/tutorials/materials/interfaces/interface_2d_2d_graphene_boron_nitride/0-figure-from-manuscript.webp "Graphene on Hexagonal Boron Nitride, FIG. 7"){ style="max-height:500px;width:auto;" }
 
-##### 2.1.1.2. Graphene/SiO2 Interface <span class="btn badge b-info border-50">C-2D-INT-S</span>
+##### 2.1.1.2. Graphene/SiO2 Interface <span class="btn badge b-info border-50">C-2D-INT-Z</span>
 
 **Structure**: [Create Graphene/SiO2 Interface](interface-2d-3d-graphene-silicon-dioxide.md)  
 **Property**: Adhesion Energy Calculation (Coming Soon)  
@@ -54,13 +54,23 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 ![Graphene on Silicon Dioxide](../../../images/tutorials/materials/interfaces/interface_2d_3d_graphene_silicon_dioxide/0-figure-from-manuscript.webp "Graphene on Silicon Dioxide, FIG. 1(b)"){ style="max-height:500px;width:auto;" }
 
-##### 2.1.1.3. Copper/SiO2 Interface <span class="btn badge b-info border-50">C-2D-INT-S</span>
+##### 2.1.1.3. Copper/SiO2 Interface <span class="btn badge b-info border-50">C-2D-INT-Z</span>
 
 **Structure**: [Create Copper/Cristobalite Interface](interface-3d-3d-copper-silicon-dioxide.md)  
 **Property**: Interface Energy Calculation (Coming Soon)  
 **DOI**: [10.1103/PhysRevB.83.115327](https://doi.org/10.1103/PhysRevB.83.115327){:target='_blank'} [@Shan2011]
 
 ![Copper on Cristobalite](../../../images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/0-figure-from-manuscript.webp "Copper on Cristobalite, FIG. 1"){ style="max-height:500px;width:auto;" }
+
+
+##### 2.1.1.3 Graphene/Ni(111) Interface Optimization <span class="btn badge b-info border-50">C-2D-INT-Z</span>
+
+**Structure**: [Create Graphene/Ni(111) Interface](optimization-interface-film-xy-position-graphene-nickel.md)  
+**Property**: Optimal XY Position and Binding Energy (Coming Soon)  
+**DOI**: [10.1039/c3nr05279f](https://doi.org/10.1039/c3nr05279f){:target='_blank'} [@Dahal2014; @Gamo1997; @Bertoni2004]
+
+![Gr/Ni Interface](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/0-figure-from-manuscript.webp "Optimal position of graphene on Ni(111)"){ style="max-height:500px;width:auto;" }
+
 
 #### 2.1.2. Heterostack
 
@@ -228,7 +238,7 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 ![Si(100) H-Passivated Surface](../../../images/tutorials/materials/passivation/passivation_surface_silicon/0-figure-from-manuscript.webp "H-Passivated Silicon (100)"){ style="max-height:500px;width:auto;" }
 
-### 4.3. 3D Structures
+### 4.3. 2D Structures
 
 #### 4.3.1. Perturbation
 
@@ -239,17 +249,5 @@ This document provides a comprehensive catalog of materials science tutorials or
 **DOI**: [10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002){:target='_blank'} [@ThompsonFlagg2009; @Fasolino2007; @Openov2010]
 
 ![Rippled Graphene](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1."){ style="max-height:500px;width:auto;" }
-
-## 5. Special Cases
-
-### 5.1. Interface Optimization Studies
-
-#### 5.1.1. Graphene/Ni(111) Interface Optimization
-
-**Structure**: [Create Graphene/Ni(111) Interface](optimization-interface-film-xy-position-graphene-nickel.md)  
-**Property**: Optimal XY Position and Binding Energy (Coming Soon)  
-**DOI**: [10.1039/c3nr05279f](https://doi.org/10.1039/c3nr05279f){:target='_blank'} [@Dahal2014; @Gamo1997; @Bertoni2004]
-
-![Gr/Ni Interface](../../../images/tutorials/materials/optimization/optimization_interface_film_xy_position_graphene_nickel/0-figure-from-manuscript.webp "Optimal position of graphene on Ni(111)"){ style="max-height:500px;width:auto;" }
 
 ## References
