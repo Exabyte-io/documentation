@@ -63,7 +63,7 @@ This document provides a comprehensive catalog of materials science tutorials or
 ![Copper on Cristobalite](../../../images/tutorials/materials/interfaces/interface_3d_3d_copper_cristobalite/0-figure-from-manuscript.webp "Copper on Cristobalite, FIG. 1"){ style="max-height:500px;width:auto;" }
 
 
-##### 2.1.1.3 Graphene/Ni(111) Interface Optimization <span class="btn badge b-info border-50">C-2D-INT-Z</span>
+##### 2.1.1.4. Graphene/Ni(111) Interface Optimization <span class="btn badge b-info border-50">C-2D-INT-Z</span>
 
 **Structure**: [Create Graphene/Ni(111) Interface](optimization-interface-film-xy-position-graphene-nickel.md)  
 **Properties**: Optimal XY Position and Binding Energy (Coming Soon)  
@@ -106,47 +106,55 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 ## 3. Defective Structures
 
-### 3.1. 0D Structures
+### 3.1. 2D Structures
 
-#### 3.1.1. Substitution
+#### 3.1.1. Island
 
-##### 3.1.1.1. Substitutional Point Defects in Graphene <span class="btn badge b-info border-50">D-0D-SUB</span>
+##### 3.1.1.1. Island Surface Defect Formation in TiN <span class="btn badge b-info border-50">D-2D-ISL</span>
 
-**Structure**: [Create Substitutional Defects in Graphene](defect-point-substitution-graphene.md)  
-**Properties**: Formation Energy and Electronic Structure (Coming Soon)  
-**DOI**: [10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}
+**Structure**: [Create Island Defect on TiN Surface](defect-surface-island-titanium-nitride.md)  
+**Properties**: Formation Energy and Surface Stability (Coming Soon)  
+**DOI**: [10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'} [@Sangiovanni2018]
 
-![Point Defect, Substitution, 0](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1."){ style="max-height:500px;width:auto;" }
+![Surface Defect](../../../images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/0.png "Surface Defect, Island FIG. 2. a"){ style="max-height:500px;width:auto;" }
 
-#### 3.1.2. Defect Pair
+##### 3.1.1.2. Pt Adatoms Island on MoS2 <span class="btn badge b-info border-50">D-2D-ISL</span>
 
-##### 3.1.2.1. Vacancy-Substitution Pair Defects in GaN <span class="btn badge b-info border-50">D-0D-DFP</span>
+**Structure**: [Create Pt Island on MoS2](defect-point-adatom-island-molybdenum-disulfide-platinum.md)  
+**Properties**: Island Formation Energy and Growth Mechanism (Coming Soon)  
+**DOI**: [10.1021/cg5013395](https://doi.org/10.1021/cg5013395){:target='_blank'} [@Saidi2015; @Jiao2016; @Fichthorn2000; @Neugebauer1993; @Hortamani2007]
 
-**Structure**: [Create Vacancy-Substitution Pair in GaN](defect-point-pair-gallium-nitride.md)  
-**Properties**: Formation Energy and Charge Transition Levels (Coming Soon)  
-**DOI**: [10.1103/PhysRevB.93.165207](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.165207){:target='_blank'} [@Miceli2016]
+![Pt Island on MoS2](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/0-figure-from-manuscript.webp "Pt island formation on MoS2"){ style="max-height:500px;width:auto;" }
 
-![Point Pair Defects: Mg Substitution and Vacancy in GaN](../../../images/tutorials/materials/defects/defect_point_pair_gallium_nitride/0-figure-from-manuscript.webp "Point Defect Pair: Substitution, Vacancy{ style="max-height:500px;width:auto;" } in GaN, FIG. 2.")
+#### 3.1.2. Terrace
 
-#### 3.1.3. Vacancy
+##### 3.1.2.1. Step Surface Defect on Pt(111) <span class="btn badge b-info border-50">D-2D-TER</span>
 
-##### 3.1.3.1. Vacancy Point Defect in h-BN <span class="btn badge b-info border-50">D-0D-VAC</span>
+**Structure**: [Create Step Defect on Pt(111)](defect-surface-step-platinum.md)  
+**Properties**: Step Formation Energy and Adsorption Sites (Coming Soon)  
+**DOI**: [10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'} [@Sljivancanin2002]
 
-**Structure**: [Create Vacancy Defect in h-BN](defect-point-vacancy-boron-nitride.md)  
-**Properties**: Formation Energy and Magnetic Properties (Coming Soon)  
-**DOI**: [10.1038/s41524-022-00730-w](https://doi.org/10.1038/s41524-022-00730-w){:target='_blank'}
+![Step Surface Defect on Pt](../../../images/tutorials/materials/defects/defect_surface_step_platinum/0-figure-from-manuscript.webp "Fig. 1."){ style="max-height:500px;width:auto;" }
 
-![Vacancy in h-BN](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in h-BN"){ style="max-height:500px;width:auto;" }
+#### 3.1.3. Adatom
 
-#### 3.1.4. Interstitial
+##### 3.1.3.1. Adatom Surface Defects on Graphene <span class="btn badge b-info border-50">D-2D-ADA</span>
 
-##### 3.1.4.1. Interstitial Point Defect in SnO <span class="btn badge b-info border-50">D-0D-INT</span>
+**Structure**: [Create Adatom Defects on Graphene](defect-surface-adatom-graphene.md)  
+**Properties**: Adsorption Energy and Diffusion Barriers (Coming Soon)  
+**DOI**: [10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}
 
-**Structure**: [Create Interstitial Defect in SnO](defect-point-interstitial-tin-oxide.md)  
-**Properties**: Formation Energy and Diffusion Barriers (Coming Soon)  
-**DOI**: [10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'} [@Togo2006; @Wang2014; @Na-Phattalung2006]
+![Adatom on Graphene Surface](../../../images/tutorials/materials/defects/defect-surface-adatom-graphene/me_adatom_on_hollow_graphene.webp "Fig. 1. Adatom on Graphene Surface"){ style="max-height:500px;width:auto;" }
 
-![SnO O-interstitial](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO"){ style="max-height:500px;width:auto;" }
+#### 3.1.4. Grain Boundary Planar
+
+##### 3.1.4.1. Grain Boundary in h-BN <span class="btn badge b-info border-50">D-2D-GBP</span>
+
+**Structure**: [Create Grain Boundary in h-BN](defect-planar-grain-boundary-2d-boron-nitride.md)  
+**Properties**: Grain Boundary Formation Energy and Electronic Properties (Coming Soon)  
+**DOI**: [10.1021/acs.nanolett.5b01852](https://doi.org/10.1021/acs.nanolett.5b01852){:target='_blank'}
+
+![h-BN Grain Boundary](../../../images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/0-figure-from-manuscript.webp "h-BN Grain Boundary, FIG. 2c."){ style="max-height:500px;width:auto;" }
 
 ### 3.2. 1D Structures
 
@@ -160,71 +168,63 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 ![Copper Grain Boundary](../../../images/tutorials/materials/defects/defect_planar_grain_boundary_3d_fcc_metal/0-figure-from-manuscript.webp "Copper Grain Boundary, FIG. 1"){ style="max-height:500px;width:auto;" }
 
-### 3.3. 2D Structures
+### 3.3. 0D Structures
 
-#### 3.3.1. Island
+#### 3.3.1. Substitution
 
-##### 3.3.1.1. Island Surface Defect Formation in TiN <span class="btn badge b-info border-50">D-2D-ISL</span>
+##### 3.3.1.1. Substitutional Point Defects in Graphene <span class="btn badge b-info border-50">D-0D-SUB</span>
 
-**Structure**: [Create Island Defect on TiN Surface](defect-surface-island-titanium-nitride.md)  
-**Properties**: Formation Energy and Surface Stability (Coming Soon)  
-**DOI**: [10.1103/PhysRevB.97.035406](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.97.035406){:target='_blank'} [@Sangiovanni2018]
+**Structure**: [Create Substitutional Defects in Graphene](defect-point-substitution-graphene.md)  
+**Properties**: Formation Energy and Electronic Structure (Coming Soon)  
+**DOI**: [10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}
 
-![Surface Defect](../../../images/tutorials/materials/defects/defect-creation-surface-island-titanium-nitride/0.png "Surface Defect, Island FIG. 2. a"){ style="max-height:500px;width:auto;" }
+![Point Defect, Substitution, 0](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1."){ style="max-height:500px;width:auto;" }
 
-##### 3.3.1.2. Pt Adatoms Island on MoS2 <span class="btn badge b-info border-50">D-2D-ISL</span>
+#### 3.3.2. Defect Pair
 
-**Structure**: [Create Pt Island on MoS2](defect-point-adatom-island-molybdenum-disulfide-platinum.md)  
-**Properties**: Island Formation Energy and Growth Mechanism (Coming Soon)  
-**DOI**: [10.1021/cg5013395](https://doi.org/10.1021/cg5013395){:target='_blank'} [@Saidi2015; @Jiao2016; @Fichthorn2000; @Neugebauer1993; @Hortamani2007]
+##### 3.3.2.1. Vacancy-Substitution Pair Defects in GaN <span class="btn badge b-info border-50">D-0D-DFP</span>
 
-![Pt Island on MoS2](../../../images/tutorials/materials/defects/defect_point_adatom_island_molybdenum_disulfide_platinum/0-figure-from-manuscript.webp "Pt island formation on MoS2"){ style="max-height:500px;width:auto;" }
+**Structure**: [Create Vacancy-Substitution Pair in GaN](defect-point-pair-gallium-nitride.md)  
+**Properties**: Formation Energy and Charge Transition Levels (Coming Soon)  
+**DOI**: [10.1103/PhysRevB.93.165207](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.93.165207){:target='_blank'} [@Miceli2016]
 
-#### 3.3.2. Terrace
+![Point Pair Defects: Mg Substitution and Vacancy in GaN](../../../images/tutorials/materials/defects/defect_point_pair_gallium_nitride/0-figure-from-manuscript.webp "Point Defect Pair: Substitution, Vacancy in GaN, FIG. 2."){ style="max-height:500px;width:auto;" }
 
-##### 3.3.2.1. Step Surface Defect on Pt(111) <span class="btn badge b-info border-50">D-2D-TER</span>
+#### 3.3.3. Vacancy
 
-**Structure**: [Create Step Defect on Pt(111)](defect-surface-step-platinum.md)  
-**Properties**: Step Formation Energy and Adsorption Sites (Coming Soon)  
-**DOI**: [10.1016/s0039-6028(02)01908-8](https://doi.org/10.1016/s0039-6028(02)01908-8){:target='_blank'} [@Sljivancanin2002]
+##### 3.3.3.1. Vacancy Point Defect in h-BN <span class="btn badge b-info border-50">D-0D-VAC</span>
 
-![Step Surface Defect on Pt](../../../images/tutorials/materials/defects/defect_surface_step_platinum/0-figure-from-manuscript.webp "Fig. 1."){ style="max-height:500px;width:auto;" }
+**Structure**: [Create Vacancy Defect in h-BN](defect-point-vacancy-boron-nitride.md)  
+**Properties**: Formation Energy and Magnetic Properties (Coming Soon)  
+**DOI**: [10.1038/s41524-022-00730-w](https://doi.org/10.1038/s41524-022-00730-w){:target='_blank'}
 
-#### 3.3.3. Adatom
+![Vacancy in h-BN](../../../images/tutorials/materials/defects/defect_point_vacancy_boron_nitride/0-figure-from-manuscript.webp "Vacancy in h-BN"){ style="max-height:500px;width:auto;" }
 
-##### 3.3.3.1. Adatom Surface Defects on Graphene <span class="btn badge b-info border-50">D-2D-ADA</span>
+#### 3.3.4. Interstitial
 
-**Structure**: [Create Adatom Defects on Graphene](defect-surface-adatom-graphene.md)  
-**Properties**: Adsorption Energy and Diffusion Barriers (Coming Soon)  
-**DOI**: [10.1103/PhysRevB.77.235430](https://doi.org/10.1103/PhysRevB.77.235430){:target='_blank'}
+##### 3.3.4.1. Interstitial Point Defect in SnO <span class="btn badge b-info border-50">D-0D-INT</span>
 
-![Adatom on Graphene Surface](../../../images/tutorials/materials/defects/defect-surface-adatom-graphene/me_adatom_on_hollow_graphene.webp "Fig. 1. Adatom on Graphene Surface"){ style="max-height:500px;width:auto;" }
+**Structure**: [Create Interstitial Defect in SnO](defect-point-interstitial-tin-oxide.md)  
+**Properties**: Formation Energy and Diffusion Barriers (Coming Soon)  
+**DOI**: [10.1103/PhysRevB.74.195128](https://doi.org/10.1103/PhysRevB.74.195128){:target='_blank'} [@Togo2006; @Wang2014; @Na-Phattalung2006]
 
-#### 3.3.4. Grain Boundary Planar
-
-##### 3.3.4.1. Grain Boundary in h-BN <span class="btn badge b-info border-50">D-2D-GBP</span>
-
-**Structure**: [Create Grain Boundary in h-BN](defect-planar-grain-boundary-2d-boron-nitride.md)  
-**Properties**: Grain Boundary Formation Energy and Electronic Properties (Coming Soon)  
-**DOI**: [10.1021/acs.nanolett.5b01852](https://doi.org/10.1021/acs.nanolett.5b01852){:target='_blank'}
-
-![h-BN Grain Boundary](../../../images/tutorials/materials/defects/defect_planar_grain_boundary_2d_boron_nitride/0-figure-from-manuscript.webp "h-BN Grain Boundary, FIG. 2c."){ style="max-height:500px;width:auto;" }
+![SnO O-interstitial](../../../images/tutorials/materials/defects/defect_point_interstitial_tin_oxide/0-figure-from-manuscript.webp "O-interstitial defect in SnO"){ style="max-height:500px;width:auto;" }
 
 
 
 ## 4. Processed Structures
 
-### 4.1. 1D Structures
+### 4.1. 3D Structures
 
-#### 4.1.1. Passivated Edge
+#### 4.1.1. Perturbation
 
-##### 4.1.1.1. H-Passivated Silicon Nanowire <span class="btn badge b-info border-50">X-1D-PAS</span>
+##### 4.1.1.1. Ripple Perturbation of Graphene Sheet <span class="btn badge b-info border-50">X-3D-PER</span>
 
-**Structure**: [Create H-Passivated Si Nanowire](passivation-edge-nanowire-silicon.md)  
-**Properties**: Band Gap and Conductance Calculation (Coming Soon)  
-**DOI**: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305){:target='_blank'} [@Aradi2007]
+**Structure**: [Create Rippled Graphene Structure](perturbation-ripples-graphene.md)  
+**Properties**: Mechanical Properties and Band Structure Modulation (Coming Soon)  
+**DOI**: [10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002){:target='_blank'} [@ThompsonFlagg2009; @Fasolino2007; @Openov2010]
 
-![Passivated Silicon nanowire](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/0-figure-from-manuscript.webp "Passivated Silicon nanowire, FIG. 1."){ style="max-height:500px;width:auto;" }
+![Rippled Graphene](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1."){ style="max-height:500px;width:auto;" }
 
 ### 4.2. 2D Structures
 
@@ -238,16 +238,16 @@ This document provides a comprehensive catalog of materials science tutorials or
 
 ![Si(100) H-Passivated Surface](../../../images/tutorials/materials/passivation/passivation_surface_silicon/0-figure-from-manuscript.webp "H-Passivated Silicon (100)"){ style="max-height:500px;width:auto;" }
 
-### 4.3. 2D Structures
+### 4.3. 1D Structures
 
-#### 4.3.1. Perturbation
+#### 4.3.1. Passivated Edge
 
-##### 4.3.1.1. Ripple Perturbation of Graphene Sheet <span class="btn badge b-info border-50">X-3D-PER</span>
+##### 4.3.1.1. H-Passivated Silicon Nanowire <span class="btn badge b-info border-50">X-1D-PAS</span>
 
-**Structure**: [Create Rippled Graphene Structure](perturbation-ripples-graphene.md)  
-**Properties**: Mechanical Properties and Band Structure Modulation (Coming Soon)  
-**DOI**: [10.1209/0295-5075/85/46002](https://doi.org/10.1209/0295-5075/85/46002){:target='_blank'} [@ThompsonFlagg2009; @Fasolino2007; @Openov2010]
+**Structure**: [Create H-Passivated Si Nanowire](passivation-edge-nanowire-silicon.md)  
+**Properties**: Band Gap and Conductance Calculation (Coming Soon)  
+**DOI**: [10.1103/PhysRevB.76.035305](https://doi.org/10.1103/PhysRevB.76.035305){:target='_blank'} [@Aradi2007]
 
-![Rippled Graphene](../../../images/tutorials/materials/defects/perturbation_ripple_graphene/0-figure-from-manuscript.webp "Rippled Graphene, FIG. 1."){ style="max-height:500px;width:auto;" }
+![Passivated Silicon nanowire](../../../images/tutorials/materials/passivation/passivation_edge_nanowire_silicon/0-figure-from-manuscript.webp "Passivated Silicon nanowire, FIG. 1."){ style="max-height:500px;width:auto;" }
 
 ## References
