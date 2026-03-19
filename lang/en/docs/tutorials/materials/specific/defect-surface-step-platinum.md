@@ -7,6 +7,7 @@ tags:
   - slab
   - Pt(211)
   - Pt(111)
+  - D-2D-TER
 
 hide:
   - tags

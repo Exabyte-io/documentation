@@ -5,6 +5,7 @@ tags:
   - nanoparticle
   - cuboctahedron
   - icosahedron
+  - P-0D-NPR
 
 hide:
   - tags
