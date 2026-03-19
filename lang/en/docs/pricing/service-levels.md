@@ -25,19 +25,16 @@ The cost of other resources, such as disk storage or account members.
 Below is a quick comparison of our pricing for different [Service Levels](../accounts/service-levels.md).
 Readers are referred to [Service Levels](../accounts/service-levels.md) page for detailed information about available features.
 
-| Fees                                      | Free         | Pro            | Team           | Enterprise     |
-| :-------------                            | :----------- | :------------- | :------------- | :------------- |
-| Monthly Subscription Fee                  | -            | $10            | $30            | -              |
-| Yearly Subscription Fee                   | -            | $100           | $300           | $1,000         |
-| Minimum Compute Allocation[^1]            | -            | -              | $700           | $1,000         |
-| Total Minimum Commitment                  | -            | -              | $1000          | Contact Us     |
-| Additional Account Members - Member/Month | -            | -              | $20            | $20            |
-| Additional Account Members - Member/Year  | -            | -              | $200           | $200           |
-| Additional Disk Space - GB/Month          | -            | $0.2           | $0.2           | $0.2           |
-| Additional Dropbox Space - GB/Month       | -            | $0.2           | $0.2           | $0.2           |
-| Ordinary Compute Price - Core-Hour        | -            | $0.12          | $0.12          | $0.12          |
+| Fees                                      | Free         | Pro            | Enterprise     |
+| :-------------                            | :----------- | :------------- | :------------- |
+| Yearly Subscription Fee                   | -            | $100           | $3,600         |
+| Additional Account Members - Member/Month | -            | -              | $20            |
+| Additional Account Members - Member/Year  | -            | -              | $200           |
+| Additional Disk Space - GB/Month          | -            | $0.2           | $0.2           |
+| Additional Dropbox Space - GB/Month       | -            | $0.2           | $0.2           |
+| Ordinary Compute Price - Core-Hour        | -            | $0.12          | $0.12          |
 
-[^1]: Only for organizational accounts that opt for [wire-based electronic payments](../accounts/payments-charges.md#wire-based-payments).
+[^1]: For organizational accounts that opt for [wire-based electronic payments](../accounts/payments-charges.md#wire-based-payments).
 
 !!! note "Contact us for detailed pricing"
     For detailed pricing or a quotation please contact us at <a href="mailto:sales@exabyte.io" target="_blank">sales@exabyte.io</a>.
@@ -59,4 +56,4 @@ As the type of hardware and scheduling policies vary for different submission qu
 Detailed description of submission queues is available [here](../infrastructure/resource/queues.md). Clusters and associated hardware and pricing are explained in [this section](../infrastructure/clusters/overview.md)
 
 !!! tip "Least expensive pricing options"
-    The options explained above can be combined in order to achieve the least expensive pricing. For example, when "Enterprise" service level is used in combination with submission queues that belong to the "Saving" cost category, the resulting price per core hour can be as low as $0.024. When we take into account the performance per core [benchmarks](../benchmarks/2018-11-12-comparison.md#performance-per-core) this presents a unique performance per price option.
+    The options explained above can be combined in order to achieve the least expensive pricing. For example, when "Enterprise" service level is used in combination with submission queues that belong to the "Saving" cost category, the resulting price per core hour can be as low as $0.024.
