@@ -22,9 +22,9 @@ number of nodes can be increased upon [request](../../ui/support.md).
 |:------:|:------------:|:--------:|:-----------------:|:-----:|:-----------------------------:|:---------------:|
 |   D    |    debug     | ordinary |   core-seconds    | 4.002 |               1               |        1        |
 |   OR   |   regular    | ordinary |   core-seconds    | 1.275 |               1               |        1        |
-|   OF   |     fast     | ordinary |    core-hours     | 1.275 |               5               |        2        |
-| OFplus |     fast     | ordinary |    core-hours     | 1.275 |               5               |        2        |
-|  GOF   |     fast     | ordinary |    core-hours     | 6.110 |               5               |        1        |
+|   OF   |     fast     | ordinary |    core-hours     | 1.275 |               5               |        5        |
+| OFplus |     fast     | ordinary |    core-hours     | 1.275 |               5               |        5        |
+|  GOF   |     fast     | ordinary |    core-hours     | 6.110 |               2               |        2        |
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
