@@ -14,11 +14,11 @@ hide:
 render_macros: true
 ---
 
-# Band Structure of N-doped Graphene
+# Substitutional Point Defects in Graphene (Band Structure)
 
 ## Introduction
 
-This tutorial demonstrates the calculation of the band structure for nitrogen-substituted graphene, reproducing results from the following manuscript:
+This tutorial demonstrates the calculation of the band structure for graphene with vacancy and N substitutions, reproducing results from the following manuscript:
 
 !!!note "Manuscript"
     Yoshitaka Fujimoto and Susumu Saito, "Formation, stabilities, and electronic properties of nitrogen defects in graphene", Physical Review B, 2011. [DOI: 10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}. [@Yoshitaka2011]
