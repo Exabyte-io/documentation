@@ -35,6 +35,10 @@ from utils.auth import authenticate
 await authenticate()
 ```
 
+The process of authentication in JupyterLite notebook:
+
+<img data-gifffer="/images/jupyterlite/auth-jupyterlite-notebook.gif" alt="Authentication section in JupyterLite notebook" />
+
 #### Step 2: View User Code in Notebook
 
 The notebook will display an "Authentication Required" message with a unique user code:
