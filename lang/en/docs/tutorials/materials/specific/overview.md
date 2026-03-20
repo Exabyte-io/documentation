@@ -175,7 +175,7 @@ This document provides a comprehensive catalog of materials science tutorials or
 ##### 3.3.1.1. Substitutional Point Defects in Graphene <span class="btn badge b-info border-50">D-0D-SUB</span>
 
 **Structure**: [Create Substitutional Defects in Graphene](defect-point-substitution-graphene.md)  
-**Properties**: Calculate formation energies and band structure (Coming Soon)  
+**Properties**: [Calculate Band Structure of N-doped Graphene](defect-point-substitution-graphene-simulation.md)  
 **DOI**: [10.1103/PhysRevB.84.245446](https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.245446){:target='_blank'}
 
 ![Point Defect, Substitution, 0](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/0-figure-from-manuscript.webp "Point Defect, Substitution, FIG. 1."){ style="max-height:500px;width:auto;" }
