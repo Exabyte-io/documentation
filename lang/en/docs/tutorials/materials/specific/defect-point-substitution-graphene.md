@@ -5,6 +5,7 @@ tags:
   - substitutional
   - point-defects
   - nitrogen
+  - D-0D-SUB
 
 hide:
   - tags
