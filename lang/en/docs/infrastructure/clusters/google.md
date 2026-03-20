@@ -18,12 +18,13 @@ The list of currently enabled queues is given below. Price per core hour is show
 the [relative unit price](../../pricing/service-levels.md#comparison-table) and is subject to change at any time. Total
 number of nodes can be increased upon [request](../../ui/support.md).
 
-| Name | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job<sup>+</sup> | Max Nodes Total |
-|:----:|:------------:|:--------:|:-----------------:|:-----:|:-----------------------------:|:---------------:|
-|  D   |    debug     | ordinary |   core-seconds    | 4.002 |               1               |        1        |
-|  OR  |   regular    | ordinary |   core-seconds    | 1.275 |               1               |        1        |
-|  OF  |     fast     | ordinary |    core-hours     | 1.275 |               5               |        2        |
-| GOF  |     fast     | ordinary |    core-hours     | 6.110 |               5               |        1        |
+|  Name  | Category[^2] | Mode[^3] | Charge Policy[^4] | Price | Max Nodes per Job<sup>+</sup> | Max Nodes Total |
+|:------:|:------------:|:--------:|:-----------------:|:-----:|:-----------------------------:|:---------------:|
+|   D    |    debug     | ordinary |   core-seconds    | 4.002 |               1               |        1        |
+|   OR   |   regular    | ordinary |   core-seconds    | 1.275 |               1               |        1        |
+|   OF   |     fast     | ordinary |    core-hours     | 1.275 |               5               |        2        |
+| OFplus |     fast     | ordinary |    core-hours     | 1.275 |               5               |        2        |
+|  GOF   |     fast     | ordinary |    core-hours     | 6.110 |               5               |        1        |
 
 <sup>+</sup> please contact support to inquire about attempting a larger node count per job
 
@@ -31,12 +32,13 @@ number of nodes can be increased upon [request](../../ui/support.md).
 
 The following table contains hardware specifications for the above queues.
 
-| Name | Cores per Node | GPU per Node | Memory (GB) | Bandwidth (Gb/sec) |    VM Size     |
-|:----:|:--------------:|:------------:|:-----------:|:------------------:|:--------------:|
-|  D   |       2        |      -       |     15      |       &le;10       | n1-standard-4  |
-|  OR  |       4        |      -       |     15      |       &le;10       | h3-standard-88 |
-|  OF  |       4        |      -       |     15      |         10         | h3-standard-88 |
-| GOF  |       12       |      1       |     85      |        100         | a2-highgpu-1g  |
+|  Name  | Cores per Node | GPU per Node | Memory (GB) | Bandwidth (Gb/sec) |     VM Size      |
+|:------:|:--------------:|:------------:|:-----------:|:------------------:|:----------------:|
+|   D    |       2        |      -       |     15      |       &le;10       |  n1-standard-4   |
+|   OR   |       16       |      -       |     64      |       &le;10       |  c2-standard-16  |
+|   OF   |       60       |      -       |     240     |         10         |  c2-standard-60  |
+| OFplus |      192       |      -       |     720     |         10         | h4d-standard-192 |
+|  GOF   |       12       |      1       |     85      |        100         |  a2-highgpu-1g   |
 
 ## Links
 
