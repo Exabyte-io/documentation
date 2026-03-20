@@ -24,6 +24,9 @@ Introduces Pyodide -- kernel used in JupyterLite to run Python code in the brows
 ## [Accessing JupyterLite](./accessing-jupyterlite.md)
 Provides a detailed guide on how to access JupyterLite via the **Materials Designer**, **Mat3ra Platform**, or a direct URL, with accompanying visuals.
 
+## [Authentication](./authentication.md)
+Explains how to authenticate in Jupyter notebooks, with step-by-step instructions for the browser-based authentication process.
+
 ## [Dependencies Installation and Imports](./dependencies-installation.md)
 
 Explains how to install dependencies in Pyodide using the `micropip` package, with code snippets for installing the `numpy` package and the `mat3ra-api-examples` package.
