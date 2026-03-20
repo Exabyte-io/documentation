@@ -25,6 +25,10 @@ This tutorial demonstrates the calculation of the band structure for graphene wi
 
 This tutorial builds upon the [Substitutional Point Defects in Graphene](defect-point-substitution-graphene.md) tutorial, where we created the N-doped graphene structure. Here, we calculate its electronic band structure using Quantum ESPRESSO and compare with the published results.
 
+The figure below shows the band structure and atomic structure of N-doped graphene from the manuscript (Figure 3a):
+
+![Band Structure from Paper](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/band-structure-paper-figure.webp "Band structure and atomic structure of N-doped graphene from Fujimoto & Saito 2011, Figure 3a")
+
 The calculation uses density functional theory (DFT) with the local density approximation (LDA) and norm-conserving pseudopotentials, following the methodology described in the manuscript.
 
 ## Prerequisites.
@@ -150,7 +154,18 @@ The calculated band structure should show:
 - **Localized states** introduced by the nitrogen defects
 - **Band gap opening** (depending on defect configuration)
 
-These results can be compared with Figure 3 in the Fujimoto & Saito manuscript, which shows the electronic band structure for various nitrogen defect configurations in graphene.
+### Comparison with Published Results
+
+The figure below compares the band structure from the Fujimoto & Saito manuscript (left) with our calculated results (right):
+
+![Band Structure Comparison](../../../images/tutorials/materials/defects/defect_creation_point_substitution_graphene/band-structure-comparison.webp "Comparison of band structure: manuscript (left) vs. calculated (right)")
+
+The calculated band structure reproduces the key features from the manuscript, including:
+
+- The overall band dispersion along the K → Γ → M → K path
+- The position of bands relative to the Fermi level
+- The electronic structure modifications due to nitrogen substitution
+- The characteristic features near the K and Γ points
 
 ## Customization Options.
 
@@ -193,26 +208,9 @@ RELAXATION_KGRID = [6, 6, 1]  # K-point grid for relaxation
 If the material is not found in the uploads folder:
 
 1. Run the [defect creation notebook](defect-point-substitution-graphene.md) first
-2. Ensure the material is saved with the exact name "N-doped Graphene"
+2. Ensure the material is saved with the exact name that is used ("N-doped Graphene")
 3. Check that the material file is in the correct `uploads` folder
 
-### Job Fails or Takes Too Long.
-
-If the job fails or runs longer than expected:
-
-1. Start with debug mode to validate the setup
-2. Check the job logs for error messages
-3. Verify that energy cutoffs are appropriate for the pseudopotentials
-4. Reduce k-point sampling if needed for testing
-
-### Convergence Issues.
-
-If the calculation doesn't converge:
-
-1. Increase the number of SCF iterations
-2. Adjust mixing parameters
-3. Check that the structure is reasonable (no overlapping atoms)
-4. Verify pseudopotential compatibility
 
 ## Interactive JupyterLite Notebook.
 
