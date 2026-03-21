@@ -38,7 +38,7 @@ The following table contains hardware specifications for the above queues.
 |   OR   |       16       |      -       |     64      |       &le;10       |  c2-standard-16  |
 |   OF   |       60       |      -       |     240     |         10         |  c2-standard-60  |
 | OFplus |      192       |      -       |     720     |         10         | h4d-standard-192 |
-|  GOF   |       12       |      1       |     85      |        100         |  a2-highgpu-1g   |
+|  GOF   |       12       |      1       |     170     |        100         |  a2-highgpu-1g   |
 
 ## Links
 
