@@ -46,7 +46,7 @@ protobuf==5.29.6
 pyasn1==0.6.3
 pyasn1_modules==0.4.2
 pybtex==0.24.0
-Pygments==2.19.2
+Pygments==2.20.0
 pymdown-extensions==10.16.1
 pypandoc==1.16.2
 pyparsing==3.1.4
