@@ -23,12 +23,12 @@
             "endTime": "00:00:10.000"
         },
         {
-            "text": "If the desired workflow is not available, we can create a new workflow and select on of our available ML templates.",
+            "text": "If the desired workflow is not available, we can create a new workflow and select one of our available ML templates.",
             "startTime": "00:00:10.500",
             "endTime": "00:00:18.000"
         },
         {
-            "text": "If no such template is available, we can always create a new workflow from scratch and use our general purpose Python workflow.",
+            "text": "If no suitable template is found, we can always create a new workflow from scratch and use our general purpose Python workflow.",
             "startTime": "00:00:18.500",
             "endTime": "00:00:27.000"
         }
