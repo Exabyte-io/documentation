@@ -30,7 +30,7 @@ extra_javascript:
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2026.2.26"
+    version: "2026.3.26"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
@@ -711,6 +711,7 @@ nav:
             - Overview:                                 infrastructure/clusters/overview.md
             - Directory Structure:                      infrastructure/clusters/directories.md
             - Hardware Specifications:                  infrastructure/clusters/hardware.md
+            - Google Clusters:                          infrastructure/clusters/google.md
             - AWS Clusters:                             infrastructure/clusters/aws.md
             - Azure Clusters:                           infrastructure/clusters/azure.md
         - Resource Management:
