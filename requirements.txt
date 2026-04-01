@@ -57,6 +57,7 @@ pyyaml_env_tag==1.1
 regex==2024.9.11
 requests==2.33.1
 rsa==4.9.1
+setuptools==80.9.0
 singledispatch==3.4.0.4
 six==1.17.0
 smmap==5.0.3
