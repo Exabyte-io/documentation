@@ -7,13 +7,16 @@
         {
             "...": "../../metadata/general.json#/tags"
         },
-        "ML",
+        {
+            "...": "../../software/classification/machine-learning.json#/tags"
+        },
+        "MatterSim",
         "Python"
     ],
     "title": "Mat3ra Tutorial: Running Python-based ML workflows in Mat3ra platform",
     "youTubeCaptions": [
         {
-            "text": "Here we will learn, how to run Python-based ML workflows in Matera platform.",
+            "text": "Here we will discuss how to run any Python-based machine learning workflows in Matera platform.",
             "startTime": "00:00:00.250",
             "endTime": "00:00:05.000"
         },
@@ -31,6 +34,121 @@
             "text": "If no suitable template is found, we can always create a new workflow from scratch and use our general purpose Python workflow.",
             "startTime": "00:00:18.500",
             "endTime": "00:00:27.000"
+        },
+        {
+            "text": "Now, <break time='0.25'/> let's switch to platform dot matera dot com, and see how these various options work in practice.",
+            "startTime": "00:00:27.500",
+            "endTime": "00:00:33.000"
+        },
+        {
+            "text": "Option one: <break time='0.25'/> let's import an existing workflow from workflow bank that uses MatterSim machine learning model.",
+            "startTime": "00:00:33.500",
+            "endTime": "00:00:40.000"
+        },
+        {
+            "text": "Navigate to the workflow bank and search for 'MatterSim'.",
+            "startTime": "00:00:40.500",
+            "endTime": "00:00:44.000"
+        },
+        {
+            "text": "Before we can use this workflow to create a job, we need to copy it to our account collection.",
+            "startTime": "00:00:49.000",
+            "endTime": "00:00:54.000"
+        },
+        {
+            "text": "Once copied, <break time='0.25'/> it will appear under the workflows tab.",
+            "startTime": "00:00:55.000",
+            "endTime": "00:00:58.000"
+        },
+        {
+            "text": "We can open the workflow to inspect and edit it to our needs.",
+            "startTime": "00:00:58.500",
+            "endTime": "00:01:02.000"
+        },
+        {
+            "text": "As we see here, this workflow consists of three units.",
+            "startTime": "00:01:02.500",
+            "endTime": "00:01:06.000"
+        },
+        {
+            "text": "The first unit:  <break time='0.25'/> I O material gets the material data from the job context.",
+            "startTime": "00:01:06.500",
+            "endTime": "00:01:11.000"
+        },
+        {
+            "text": "The result is an array of materials data.",
+            "startTime": "00:01:11.500",
+            "endTime": "00:01:15.000"
+        },
+        {
+            "text": "The second unit: <break time='0.25'/> takes the first item of the data array and assign to another variable called 'material'.",
+            "startTime": "00:01:15.500",
+            "endTime": "00:01:22.000"
+        },
+        {
+            "text": "Finally, the MatterSim unit: <break time='0.25'/> takes the 'material' variable and uses it in the MatterSim python script to predict various material properties.",
+            "startTime": "00:01:22.500",
+            "endTime": "00:01:32.000"
+        },
+        {
+            "text": "Besides the input python script, the MatterSim unit also takes Python requirements file.",
+            "startTime": "00:01:32.500",
+            "endTime": "00:01:38.000"
+        },
+        {
+            "text": "We can add additional python packages to the requirements file if needed by your python script.",
+            "startTime": "00:01:38.500",
+            "endTime": "00:01:44.000"
+        },
+        {
+            "text": "Once happy with the changes, save and exit the workflow.",
+            "startTime": "00:01:44.500",
+            "endTime": "00:01:47.000"
+        },
+        {
+            "text": "Next, navigate to the job designer page, and click create new job <break time='0.25'/> let it be under the default project.",
+            "startTime": "00:01:47.500",
+            "endTime": "00:01:53.000"
+        },
+        {
+            "text": "As we see here, the jobs page is consists of three sections: <break time='0.25'/> material, workflow and compute parameters.",
+            "startTime": "00:01:53.500",
+            "endTime": "00:02:00.000"
+        },
+        {
+            "text": "For this demonstration, we will proceed with default material: silicon.",
+            "startTime": "00:02:00.500",
+            "endTime": "00:02:04.000"
+        },
+        {
+            "text": "Let's rename our job. Then we can select the workflow for our job, which in this case is the 'MatterSim' workflow we just imported.",
+            "startTime": "00:02:04.500",
+            "endTime": "00:02:13.000"
+        },
+        {
+            "text": "Depending on our compute needs, we may adjust various parameters such as cluster, queue, number of processors, time limit, etc.",
+            "startTime": "00:02:13.500",
+            "endTime": "00:02:21.000"
+        },
+        {
+            "text": "Finally, save and exit the job designer page.",
+            "startTime": "00:02:21.500",
+            "endTime": "00:02:25.000"
+        },
+        {
+            "text": "Now we are ready to submit the job for execution.",
+            "startTime": "00:02:25.500",
+            "endTime": "00:02:28.000"
+        },
+        {
+            "text": "Once the job is completed, we may open the MatterSim unit to view the standard output.",
+            "startTime": "00:02:28.500",
+            "endTime": "00:02:34.000"
+        },
+        {
+            "text": "All output files are listed under the Files tab. We can preview or download them for further analysis.",
+            "startTime": "00:02:36.000",
+            "endTime": "00:02:42.000"
         }
     ],
     "youTubeId": ""
