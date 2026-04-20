@@ -35,7 +35,7 @@ jobs:
           python-version: ${{ matrix.python-version }}
 
       - name: Build documentation
-        uses: Exabyte-io/action-mkdocs-build@25b5b41b8541d54e82f2c8d1b852155c9e937b13 # v1.0.1
+        uses: Exabyte-io/action-mkdocs-build@main
 
   publish-py-package:
     needs:
