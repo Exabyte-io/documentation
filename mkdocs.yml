@@ -713,6 +713,7 @@ nav:
             - Hardware Specifications:                  infrastructure/clusters/hardware.md
             - AWS Clusters:                             infrastructure/clusters/aws.md
             - Azure Clusters:                           infrastructure/clusters/azure.md
+            - Google Clusters:                          infrastructure/clusters/google.md
         - Resource Management:
             - Overview:                                 infrastructure/resource/overview.md
             - Category:                                 infrastructure/resource/category.md
