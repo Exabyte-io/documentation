@@ -10,13 +10,15 @@
         {
             "...": "../../software/classification/machine-learning.json#/tags"
         },
+        "Machine Learning Force Field",
+        "MLFF",
         "MatterSim",
         "Python"
     ],
     "title": "Mat3ra Tutorial: Running Python-based ML workflows in Mat3ra platform",
     "youTubeCaptions": [
         {
-            "text": "Here we will discuss how to run any Python-based machine learning workflows in Matera platform.",
+            "text": "Here we will discuss how to run any Python-based machine learning models in Matera platform.",
             "startTime": "00:00:00.250",
             "endTime": "00:00:05.000"
         },
@@ -96,7 +98,7 @@
             "endTime": "00:01:38.000"
         },
         {
-            "text": "We can add additional python packages to the requirements file if needed by your python script.",
+            "text": "We can add additional python packages to the requirements file if needed by our python script.",
             "startTime": "00:01:38.500",
             "endTime": "00:01:44.000"
         },
@@ -149,6 +151,56 @@
             "text": "All output files are listed under the Files tab. We can preview or download them for further analysis.",
             "startTime": "00:02:36.000",
             "endTime": "00:02:42.000"
+        },
+        {
+            "text": "Next: <break time='0.25'/> let's move into option two: <break time='0.25'/>this time instead of using a pre-existing workflow, we will create a new workflow.",
+            "startTime": "00:02:42.500",
+            "endTime": "00:02:50.000"
+        },
+        {
+            "text": "Click create a new workflow, <break time='0.25'/>, rename it to 'MatterSim', <break time='0.25'/> select Python as application, <break time='0.25'/> add an execution unit, <break time='0.25'/> edit unit, <break time='0.25'/> and select MatterSim flavor <break time='0.25'/> categorized under machine learning force field.",
+            "startTime": "00:02:50.500",
+            "endTime": "00:03:04.000"
+        },
+        {
+            "text": "In this case, <break time='0.25'/> we do not want to get our materials information from the job context, <break time='0.25'/> instead we want to define it using A S E library.",
+            "startTime": "00:03:04.500",
+            "endTime": "00:03:13.000"
+        },
+        {
+            "text": "Modify the python script to define silicon structure using A S E and remove the parts that no longer needed.",
+            "startTime": "00:03:13.500",
+            "endTime": "00:03:20.000"
+        },
+        {
+            "text": "Once the workflow is created, <break time='0.25'/> we can create and run jobs same way as we did in the previous step.",
+            "startTime": "00:03:20.500",
+            "endTime": "00:03:27.000"
+        },
+        {
+            "text": "Finally, <break time='0.25'/> let's discuss how we can run any other Python-based machine learning model that is not available in matera platform.",
+            "startTime": "00:03:27.500",
+            "endTime": "00:03:35.000"
+        },
+        {
+            "text": "In that case, <break time='0.25'/> we can select our general Python template, <break time='0.25'/> specify all necessary dependencies in the requirements file, <break time='0.25'/> and write our python script accordingly.",
+            "startTime": "00:03:35.500",
+            "endTime": "00:03:47.000"
+        },
+        {
+            "text": "As long as our M L model is Python-based, and all dependencies are installed, we can run it in Matera platform.",
+            "startTime": "00:03:47.500",
+            "endTime": "00:03:53.000"
+        },
+        {
+            "text": "Now, please visit platform dot matera dot com to try it out yourself.",
+            "startTime": "00:03:53.500",
+            "endTime": "00:03:57.000"
+        },
+        {
+            "text": "Thank you for watching this tutorial and using Matera platform.",
+            "startTime": "00:03:57.500",
+            "endTime": "00:04:02.000"
         }
     ],
     "youTubeId": ""
