@@ -10,12 +10,12 @@ In the expandable section below, the user can find the JSON representation of a 
   </summary>
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow.json"
     ```
 

@@ -30,7 +30,7 @@ extra_javascript:
 copyright: <a target="_blank" href="https://mat3ra.com">Exabyte Inc</a>. All rights reserved. | <a target="_blank" href="https://platform.mat3ra.com">Back to platform</a>
 
 extra:
-    version: "2026.2.26"
+    version: "2026.4.23"
     preload_javascript:
         - /extra/js/preload_hotjar.js
         - /extra/js/preload.js
@@ -54,8 +54,6 @@ extra:
 markdown_extensions:
     - admonition
     - attr_list
-    - codehilite:
-        linenums: true
     - def_list
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=footnotes#footnotes
     - footnotes:
@@ -72,6 +70,7 @@ markdown_extensions:
     # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=code+hi#highlighting-inline-code-blocks
     - pymdownx.highlight:
         pygments_lang_class: true
+        linenums: true
     - pymdownx.snippets
     - pymdownx.striphtml            # Strip html comments before processing
     - pymdownx.superfences          # Allow for code blocks "fencing"
@@ -171,6 +170,7 @@ nav:
                 - Training a Classifier:                  tutorials/python-ml/train-classification-model.md
                 - Predicting with a Classifier:           tutorials/python-ml/predict-with-classification.md
             - DeePMD (molecular dynamics):                tutorials/ml/deepmd-mlff-with-espresso-cp-and-lammps.md
+            - MatterSim:                                  tutorials/ml/mattersim.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
@@ -711,6 +711,7 @@ nav:
             - Overview:                                 infrastructure/clusters/overview.md
             - Directory Structure:                      infrastructure/clusters/directories.md
             - Hardware Specifications:                  infrastructure/clusters/hardware.md
+            - Google Clusters:                          infrastructure/clusters/google.md
             - AWS Clusters:                             infrastructure/clusters/aws.md
             - Azure Clusters:                           infrastructure/clusters/azure.md
             - Google Clusters:                          infrastructure/clusters/google.md

@@ -8,35 +8,35 @@ We provide below examples of JSON-based structured representation for an applica
 ## [Application](components.md)
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software/application.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software/application.json"
     ```
 
 ## [Executable](components.md#executables)
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software/executable.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software/executable.json"
     ```
 
 ## [Flavor](components.md#flavors)
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software/flavor.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software/flavor.json"
     ```
