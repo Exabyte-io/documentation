@@ -97,3 +97,8 @@ In the below animation, we walk you through the whole process.
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/W8NNH_WjtI8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+## References
+
+- [MatterSim GitHub repository](https://github.com/microsoft/mattersim)
+- [MatterSim documentation](https://microsoft.github.io/mattersim/)
