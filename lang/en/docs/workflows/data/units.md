@@ -7,36 +7,36 @@ For a description of unit input templating, the reader is referred to [this sect
 ## General Case
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit.json"
     ```
 
 ## Execution
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/execution.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/execution.json"
     ```
 
 ## Processing
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/processing.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/processing.json"
     ```
 
@@ -44,95 +44,95 @@ For a description of unit input templating, the reader is referred to [this sect
 
 ### DataFrame
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/io.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/io.json"
     ```
 
 ### API
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/io/api.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/io/api.json"
     ```
 
 ### Database
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/io/db.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/io/db.json"
     ```
 
 ### Object Storage
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/io/object_storage.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/io/object_storage.json"
     ```
 
 ## Assignment
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/assignment.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/assignment.json"
     ```
 
 ## Conditional
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/condition.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/condition.json"
     ```
 
 ## Map
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/map.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/map.json"
     ```
 
 ## Reduce
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/workflow/unit/reduce.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/workflow/unit/reduce.json"
     ```

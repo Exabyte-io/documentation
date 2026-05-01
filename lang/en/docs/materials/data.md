@@ -13,13 +13,13 @@ In the expandable section below, the user can find an example JSON representatio
 
 === "Schema"
 
-    ``` json
+    ```json
     --8<-- "data/esse/schema/material.json"
     ```
 
 === "Example"
 
-    ``` json
+    ```json
     --8<-- "data/esse/example/material.json"
     ```
 
