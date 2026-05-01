@@ -41,6 +41,55 @@ workflow you want to use.
 can open the MatterSim unit under workflow tab to see the standard output. All
 the input and outputs are available under the "Files" tab.
 
+## Creating MatterSim workflow
+
+In this section, we will describe how to create a new workflow and use MatterSim
+flavor/<wbr/>template.
+
+1. Navigate to the workflows page, and click on the "Create" new workflow button.
+2. Expand the "Details" section, select "Python Script" as application.
+3. Add a "executable" unit, and click "EDIT" unit button.
+![MatteSim add unit](../../images/tutorials/mattersim/mattersim-add-unit.webp "MatteSim add unit")
+4. Expand the "Details" section, and select "mlff: mattersim" as flavor.
+![MatteSim edit unit](../../images/tutorials/mattersim/mattersim-edit-unit.webp "MatteSim edit unit")
+5. Scroll down and edit the Python script if necessary. In this case, we want to
+use ASE library to create a material definition, instead of getting material
+from the job context.
+
+```python title="SCRIPT.PY"
+import torch
+from ase.units import GPa
+from mat3ra.made.tools.convert import to_ase
+from mattersim.forcefield import MatterSimCalculator
+
+device = "cuda" if torch.cuda.is_available() else "cpu"
+print(f"Running MatterSim on {device}")
+
+from ase.build import bulk
+material = bulk("Si", "diamond", a=5.43)
+
+material.calc = MatterSimCalculator(device=device)
+print(f"Energy (eV)                 = {material.get_potential_energy()}")
+print(f"Energy per atom (eV/atom)   = {material.get_potential_energy()/len(material)}")
+print(f"Forces of first atom (eV/A) = {material.get_forces()[0]}")
+print(f"Stress[0][0] (eV/A^3)       = {material.get_stress(voigt=False)[0][0]}")
+print(f"Stress[0][0] (GPa)          = {material.get_stress(voigt=False)[0][0] / GPa}")
+```
+
+6. Close unit modal by clicking on the "X" button in the top right.
+7. Save and exit the workflow editor.
+8. Now we can create a new job using this workflow, as we did in the previous
+section.
+
+### Running other Python-based Machine Learning Models
+
+If you want to run other Python-based Machine Learning Models, you can create a
+new workflow and use the same approach. In this case, select default "Python"
+flavor/<wbr/>template, add python dependencies to the "requirements.txt" tab,
+and write your Python script to the "script.py" tab.
+
+![General Python template](../../images/tutorials/mattersim/general-py-template.webp "General Python template")
+
 ## Step-by-step Video Tutorial
 
 In the below animation, we walk you through the whole process.
