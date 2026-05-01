@@ -54,8 +54,6 @@ extra:
 markdown_extensions:
     - admonition
     - attr_list
-    - codehilite:
-        linenums: true
     - def_list
     # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/?h=footnotes#footnotes
     - footnotes:
@@ -72,6 +70,7 @@ markdown_extensions:
     # https://squidfunk.github.io/mkdocs-material/reference/code-blocks/?h=code+hi#highlighting-inline-code-blocks
     - pymdownx.highlight:
         pygments_lang_class: true
+        linenums: true
     - pymdownx.snippets
     - pymdownx.striphtml            # Strip html comments before processing
     - pymdownx.superfences          # Allow for code blocks "fencing"
