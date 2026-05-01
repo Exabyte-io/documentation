@@ -171,6 +171,7 @@ nav:
                 - Training a Classifier:                  tutorials/python-ml/train-classification-model.md
                 - Predicting with a Classifier:           tutorials/python-ml/predict-with-classification.md
             - DeePMD (molecular dynamics):                tutorials/ml/deepmd-mlff-with-espresso-cp-and-lammps.md
+            - MatterSim:                                  tutorials/ml/mattersim.md
         - Density Functional Theory:
             - Electronic Properties:
                 - Overview:                                tutorials/dft/electronic/overview.md
