@@ -50,30 +50,16 @@ flavor/<wbr/>template.
 2. Expand the "Details" section, select "Python Script" as application.
 3. Add a "executable" unit, and click "EDIT" unit button.
 ![MatteSim add unit](../../images/tutorials/mattersim/mattersim-add-unit.webp "MatteSim add unit")
-4. Expand the "Details" section, and select "mlff: mattersim" as flavor.
+4. Expand the "Details" section, and select "mlff:mattersim:cell_relaxation" as
+flavor.
 ![MatteSim edit unit](../../images/tutorials/mattersim/mattersim-edit-unit.webp "MatteSim edit unit")
 5. Scroll down and edit the Python script if necessary. In this case, we want to
 use ASE library to create a material definition, instead of getting material
 from the job context.
 
 ```python title="SCRIPT.PY"
-import torch
-from ase.units import GPa
-from mat3ra.made.tools.convert import to_ase
-from mattersim.forcefield import MatterSimCalculator
-
-device = "cuda" if torch.cuda.is_available() else "cpu"
-print(f"Running MatterSim on {device}")
-
 from ase.build import bulk
-material = bulk("Si", "diamond", a=5.43)
-
-material.calc = MatterSimCalculator(device=device)
-print(f"Energy (eV)                 = {material.get_potential_energy()}")
-print(f"Energy per atom (eV/atom)   = {material.get_potential_energy()/len(material)}")
-print(f"Forces of first atom (eV/A) = {material.get_forces()[0]}")
-print(f"Stress[0][0] (eV/A^3)       = {material.get_stress(voigt=False)[0][0]}")
-print(f"Stress[0][0] (GPa)          = {material.get_stress(voigt=False)[0][0] / GPa}")
+ase_atoms = bulk("GaN", "wurtzite", a=3.189, c=5.185)
 ```
 
 6. Close unit modal by clicking on the "X" button in the top right.
@@ -90,13 +76,40 @@ and write your Python script to the "script.py" tab.
 
 ![General Python template](../../images/tutorials/mattersim/general-py-template.webp "General Python template")
 
+If your model can use multi-threading, you can specify necessary environment
+variables on top of your python script.
+
+```python title="SCRIPT.PY"
+import os
+
+# set number of CPUs to run on
+ncore = "2"
+
+# set env variables
+# have to set these before importing numpy or others
+os.environ["OMP_NUM_THREADS"] = ncore
+os.environ["OPENBLAS_NUM_THREADS"] = ncore
+os.environ["MKL_NUM_THREADS"] = ncore
+os.environ["VECLIB_MAXIMUM_THREADS"] = ncore
+os.environ["NUMEXPR_NUM_THREADS"] = ncore
+```
+
 ## Step-by-step Video Tutorial
 
 In the below animation, we walk you through the whole process.
 
 <div class="video-wrapper">
-<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/W8NNH_WjtI8?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/DBW3KjdtRyc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+
+!!!info "Shared virtual environment"
+    Python virtual environments are shared across different jobs, and users. As
+    long as the content (hash/fingerprint) of the requirements.txt file is the
+    same, the virtual environment will be reused. So a job might take longer
+    to complete for the first time, but subsequent runs will be faster as there
+    is no pip install required. If you are not getting the expected versions of
+    your dependencies, you can try to update the requirements.txt file with
+    exact versions of your dependencies.
 
 ## References
 
