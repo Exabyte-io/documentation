@@ -64,6 +64,8 @@ processors, time limit, etc.
     - The "Files" tab lists every input and output file for preview or
     download.
 
+![MatterSim total energy results](../../images/tutorials/mattersim/mattersim-results-total-energy.webp "MatterSim total energy results")
+
 
 ## 2. Creating a new workflow
 
