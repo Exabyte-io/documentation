@@ -1,143 +1,184 @@
-# Running MatterSim and other Python-based Machine Learning Models
+# Running MatterSim and Other Python-Based Machine Learning Models
 
-This tutorial walks through running [MatterSim](https://github.com/microsoft/mattersim)
-and other Python-based machine learning models on the Mat3ra platform. We cover
-three approaches, in order of increasing customization:
+[MatterSim](https://github.com/microsoft/mattersim) is a deep-learning
+interatomic potential trained across the periodic table for materials
+property prediction. This page describes how to run MatterSim and other
+Python-based Machine Learning (ML) models on the Mat3ra platform, in three
+approaches of increasing customization:
 
-1. Using an existing workflow from the Mat3ra bank.
-2. Creating a new workflow and choosing one of the available MatterSim
+1. Using a pre-built [workflow](../../workflows/overview.md) from the
+[Mat3ra bank](../../workflows/bank.md).
+2. Creating a new workflow from one of the available MatterSim
 flavors/<wbr/>templates.
-3. Using the general Python template and specifying all necessary dependencies
-in `requirements.txt`.
+3. Using the general Python flavor/<wbr/>template and supplying the
+dependencies through `requirements.txt`.
 
-We then describe how to run jobs on GPU and how to take advantage of
-multi-threading, and finish with a step-by-step video tutorial.
+The page also covers running jobs on a Graphics Processing Unit (GPU) and
+utilizing multi-threading, and closes with a step-by-step video walkthrough.
+
+!!!note "Prerequisites"
+    A Mat3ra account with access to a compute cluster is assumed. Familiarity
+    with the [Workflow Designer](../../workflow-designer/overview.md) and
+    [Jobs Designer](../../jobs-designer/overview.md) is recommended. For GPU
+    runs, access to a GPU queue is required.
 
 
 ## 1. Using a bank workflow
 
-### 1.1. Copy bank workflow
+A common approach is to import an existing workflow from the
+[Mat3ra bank](../../workflows/bank.md) into the user's account.
 
-The easiest way to run MatterSim calculations is to import a ready-made workflow
-from the Mat3ra bank into your account.
+### 1.1. Importing a bank workflow
 
-1. Navigate to the workflows bank from the left sidebar.
-2. Search for "MatterSim" and click "Copy" in the action column on the workflow
-you want to use (e.g. "MatterSim total energy").
-![Copy bank workflow](../../images/tutorials/mattersim/mattersim-bank-workflow.webp "Copy bank workflow")
-3. The workflow now appears in your own workflows list and is available for
-selection in the job creation process.
-4. Open the workflow to inspect or further modify it. The "MatterSim total
-energy" workflow consists of three units:
-    - I/O Material unit: fetches the input materials from the job context. Its
-    output is an array of materials.
-    - Assignment unit: takes the first item of that array and assigns it to a
-    new global variable named `MATERIAL`.
-    - MatterSim unit: builds an ASE material definition from `MATERIAL` and
-    runs MatterSim to predict total energy, stress, and other properties.
+1. Navigate to the *Workflows Bank* page from the left sidebar.
+2. Search for `MatterSim` and click **Copy** in the *Action* column on the
+desired workflow (e.g. *MatterSim total energy*). See
+[Copy bank workflow](../../workflows/actions/copy-bank.md) for details.
 
-    Beside the main `script.py`, the MatterSim unit also exposes a `utils.py`
-    helper script and a `requirements.txt` file. Add any additional Python
-    packages your script requires to the `requirements.txt`.
+    ![Copy bank workflow](../../images/tutorials/mattersim/mattersim-bank-workflow.webp "Copy bank workflow")
 
-![MatterSim workflow units](../../images/tutorials/mattersim/mattersim-workflow.webp "MatterSim workflow units")
+3. The workflow then appears in the user's *Workflows* list and becomes
+available for selection during job creation.
+4. The workflow can be opened for inspection or further modification. The
+*MatterSim total energy* workflow consists of three [units](../../workflows/components/units.md):
+
+    - **I/O Material unit** &mdash; fetches the input materials from the job
+    context. Its output is an array of materials.
+    - **Assignment unit** &mdash; takes the first item of that array and
+    assigns it to a new global variable named `MATERIAL`.
+    - **MatterSim unit** &mdash; builds an [Atomic Simulation Environment
+    (ASE)](https://wiki.fysik.dtu.dk/ase/) material definition from
+    `MATERIAL` and runs MatterSim to predict the total energy (eV), stress,
+    and other properties.
+
+    In addition to the main `script.py`, the MatterSim unit exposes a
+    `utils.py` helper script and a `requirements.txt` file. Extra Python
+    packages required by the script can be added to `requirements.txt`.
+
+    ![MatterSim workflow units](../../images/tutorials/mattersim/mattersim-workflow.webp "MatterSim workflow units")
 
 ### 1.2. Create and submit a job
 
-1. Navigate to the jobs designer page from the left sidebar and click "Create
-New Job". The page is organized in three sections: material, workflow, and
-compute parameters.
-2. In "Select Job Actions", pick the material and the workflow:
-    - Material: any structure works. The default Silicon is fine; the video
-    tutorial below uses a nickel slab.
-    - Workflow: the "MatterSim total energy" workflow you just imported.
-3. Optionally, rename the job (e.g. "MatterSim total energy") and adjust the
-compute parameters under the "Compute" section — cluster, queue, number of
-processors, time limit, etc.
-4. Save and exit the job designer.
-![MatterSim job creation](../../images/tutorials/mattersim/mattersim-job.webp "MatterSim job creation")
-5. Click "Run" in the "Actions" column to submit the job.
-6. Once the job completes, open the job viewer page:
-    - The "Results" tab shows a summary of the predicted output properties.
-    - The "Workflow" tab → MatterSim unit exposes the standard output (raw
-    log).
-    - The "Files" tab lists every input and output file for preview or
-    download.
+1. Open the [Jobs Designer](../../jobs-designer/overview.md) from the left
+sidebar and click **Create New Job**
+(see [Create job](../../jobs/actions/create.md)). The page is organized in
+three sections: [material](../../jobs-designer/materials-tab.md),
+[workflow](../../jobs-designer/workflow-tab.md), and
+[compute parameters](../../jobs-designer/compute-tab.md).
+2. In the **Select Job Actions** drop-down, choose the material and the
+workflow:
 
-![MatterSim total energy results](../../images/tutorials/mattersim/mattersim-results-total-energy.webp "MatterSim total energy results")
+    - **Material** &mdash; any structure is acceptable; the default is
+    Silicon, while the video walkthrough below uses a nickel slab.
+    - **Workflow** &mdash; the *MatterSim total energy* workflow imported
+    in the previous section.
+
+3. The job can be renamed (e.g. *MatterSim total energy*) and the
+[compute parameters](../../jobs-designer/compute-tab.md) (cluster, queue,
+number of processors, time limit, and others) can be adjusted under the
+*Compute* section.
+4. Save and exit the Jobs Designer.
+
+    ![MatterSim job creation](../../images/tutorials/mattersim/mattersim-job.webp "MatterSim job creation")
+
+5. Click **Run** in the *Actions* column to [submit](../../jobs/actions/run.md)
+the job.
+6. Once the job completes, the [Job Viewer](../../jobs/ui/viewer.md)
+exposes the results:
+
+    - The [*Results* tab](../../jobs/ui/results-tab.md) shows a summary of
+    the predicted output properties.
+    - The *Workflow* tab &rarr; *MatterSim* unit exposes the standard
+    output (raw log).
+    - The [*Files* tab](../../jobs/ui/files-tab.md) lists every input and
+    output file for preview or download.
+
+    ![MatterSim total energy results](../../images/tutorials/mattersim/mattersim-results-total-energy.webp "MatterSim total energy results")
 
 
 ## 2. Creating a new workflow
 
-When the workflow you need is not available in the bank, build one from an
-existing MatterSim flavor/<wbr/>template. The example below creates a *cell
-relaxation* workflow from scratch.
+When the desired workflow is not available in the bank, a new one can be
+built from an existing MatterSim flavor/<wbr/>template. The example below
+creates a *cell relaxation* workflow from scratch.
 
-1. Navigate to the workflows page and click "Create" new workflow.
-2. Expand the "Details" section and select "Python Script" as application.
-3. Add an "Executable" unit and click the "EDIT" unit button.
-![MatterSim add unit](../../images/tutorials/mattersim/mattersim-add-unit.webp "MatterSim add unit")
-4. Expand the "Details" section and select `mlff:mattersim:cell_relaxation` as
-the flavor.
-![MatterSim edit unit](../../images/tutorials/mattersim/mattersim-edit-unit.webp "MatterSim edit unit")
-5. Scroll down and edit the Python script if necessary. For example, to use
-ASE to build the input material directly (instead of pulling it from the job
-context), replace the material section with:
+1. Open the [Workflows](../../workflows/overview.md) page and click
+**Create** to start a new workflow.
+2. Expand the *Details* section and select **Python Script** as the
+application.
+3. Add an **Executable** unit and click **EDIT** to open the
+[Unit Editor](../../workflow-designer/unit-editor.md).
+
+    ![MatterSim add unit](../../images/tutorials/mattersim/mattersim-add-unit.webp "MatterSim add unit")
+
+4. Expand the *Details* section and select `mlff:mattersim:cell_relaxation`
+(under the *Machine Learning Force Field* category) as the flavor.
+
+    ![MatterSim edit unit](../../images/tutorials/mattersim/mattersim-edit-unit.webp "MatterSim edit unit")
+
+5. Scroll down to edit the Python script if necessary. As an example,
+in order to use ASE to build the input material directly (instead of
+pulling it from the job context), the material section can be replaced
+with:
 
     ```python title="SCRIPT.PY"
     ...
     from ase.build import bulk
+    # Lattice constants in Angstrom (Å)
     ase_atoms = bulk("GaN", "wurtzite", a=3.189, c=5.185)
     ...
     ```
 
-6. Close the unit modal by clicking the "X" button in the top right.
+    where `GaN` denotes Gallium Nitride.
+
+6. Close the Unit Editor by clicking the **X** button in the top right.
 7. Save and exit the workflow editor.
-8. Create and run a job using this workflow as we did in the previous section.
+8. Create and run a job using this workflow as in the previous section.
 
-![MatterSim cell relaxation results](../../images/tutorials/mattersim/mattersim-results-cell-relaxation.webp "MatterSim cell relaxation results")
+    ![MatterSim cell relaxation results](../../images/tutorials/mattersim/mattersim-results-cell-relaxation.webp "MatterSim cell relaxation results")
 
-When the job completes, the "Results" tab shows a side-by-side comparison of
-the initial and relaxed structures, and the "Files" tab contains both
+Once the job completes, the *Results* tab shows a side-by-side comparison
+of the initial and relaxed structures, and the *Files* tab contains both
 structures in `.cif` and `.poscar` formats.
 
 
 ## 3. Using the general Python template
 
-To run any Python-based ML model that is not covered by an existing workflow
-or flavor, use the general Python template:
+In order to run any Python-based ML model that is not covered by an
+existing workflow or flavor, the general Python flavor/<wbr/>template can
+be used:
 
-1. Create a new workflow as in the previous section, and select the default
-"Python" flavor/<wbr/>template.
-2. Add your dependencies in the "requirements.txt" tab.
-3. Write your code in the "script.py" tab.
+1. Create a new workflow as in the previous section, and select the
+default `python` flavor/<wbr/>template.
+2. Add the dependencies in the `requirements.txt` tab.
+3. Write the code in the `script.py` tab.
 
 ![General Python template](../../images/tutorials/mattersim/general-py-template.webp "General Python template")
 
-As long as the model is Python-based and its dependencies can be installed via
-pip, it will run on the Mat3ra platform.
+As long as the model is Python-based and its dependencies can be installed
+via `pip`, it runs on the Mat3ra platform.
 
 !!!info "Shared virtual environment"
-    Python virtual environments are shared across different jobs and users. As
-    long as the content (hash/fingerprint) of `requirements.txt` is the same,
-    the virtual environment will be reused. The first job may take longer to
-    complete because of `pip install`, but subsequent runs start faster as no
-    install is required. If you are not getting the expected versions of your
-    dependencies, pin them explicitly in `requirements.txt`.
+    Python virtual environments are shared across jobs and users. As long
+    as the content (hash/fingerprint) of `requirements.txt` is unchanged,
+    the same environment is reused. The first job may take longer to
+    complete because of `pip install`, but subsequent runs start faster as
+    no install is required. If the expected versions of the dependencies
+    are not picked up, they should be pinned explicitly in
+    `requirements.txt`.
 
 !!!tip "Multi-threading"
-    If your model can use multi-threading, set the necessary environment
-    variables at the top of your script, before importing NumPy or any other
-    library that utilizes multi-threading.
+    If the model can use multi-threading, the relevant environment
+    variables should be set at the top of the script &mdash; *before*
+    importing NumPy or any other library that utilizes them.
 
     ```python title="SCRIPT.PY"
     import os
 
-    # set number of CPUs to run on
+    # Number of CPU threads
     ncore = "2"
 
-    # set env variables
-    # have to set these before importing numpy or others
+    # Must be set before importing numpy or other thread-aware libraries
     os.environ["OMP_NUM_THREADS"] = ncore
     os.environ["OPENBLAS_NUM_THREADS"] = ncore
     os.environ["MKL_NUM_THREADS"] = ncore
@@ -148,12 +189,15 @@ pip, it will run on the Mat3ra platform.
 
 ## 4. Running on GPU
 
-To run a MatterSim job on GPU, submit it to one of the platform's GPU queues.
-For example, the video tutorial below uses the "MatterSim phonon dispersion"
-bank workflow on Google Cloud (Cluster-001) under the "GOF" queue.
+Because MatterSim is a [PyTorch](https://pytorch.org/)-based model, it
+benefits significantly from GPU execution. In order to run a MatterSim
+job on GPU, it should be submitted to one of the platform's GPU queues.
+For example, `GOF` queue on the [Google Cloud cluster](../../clusters/google.md)
+(internal identifier `Cluster-001`).
 
-To verify that the job actually runs on GPU, add a debug print to your script
-and check the standard output under the "Files" tab once the job completes:
+In order to verify that the job actually runs on GPU, a debug print can be
+added to the script and the standard output can be inspected under the
+*Files* tab once the job completes:
 
 ```python title="SCRIPT.PY"
 import torch
@@ -161,15 +205,19 @@ import torch
 print("Using GPU:", torch.cuda.is_available())
 ```
 
-When the run succeeds, the "Results" tab shows the phonon dispersion and the
-phonon density-of-states plots.
+For non-PyTorch frameworks the equivalent check should be used (for
+example, `tf.config.list_physical_devices('GPU')` for TensorFlow).
 
+When the run succeeds, the *Results* tab shows the phonon dispersion and
+the phonon density-of-states plots.
 
 ![MatterSim phonon dispersion results](../../images/tutorials/mattersim/mattersim-results-phonon.webp "MatterSim phonon dispersion results")
 
-## 5. Step-by-step Video Tutorial
 
-The animation below walks through the entire flow on the platform end-to-end.
+## 5. Video walkthrough
+
+The animation below walks through the entire flow on the platform
+end-to-end.
 
 <div class="video-wrapper">
 <iframe class="gifffer" width="100%" height="100%" src="https://www.youtube.com/embed/DBW3KjdtRyc?controls=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -178,5 +226,9 @@ The animation below walks through the entire flow on the platform end-to-end.
 
 ## 6. References
 
+- Yang, H. *et al.* "MatterSim: A Deep Learning Atomistic Model Across
+  Elements, Temperatures and Pressures." *arXiv:2405.04967* (2024).
+  [arxiv.org/abs/2405.04967](https://arxiv.org/abs/2405.04967)
 - [MatterSim GitHub repository](https://github.com/microsoft/mattersim)
 - [MatterSim documentation](https://microsoft.github.io/mattersim/)
+- [Atomic Simulation Environment (ASE)](https://wiki.fysik.dtu.dk/ase/)
