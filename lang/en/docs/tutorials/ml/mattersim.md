@@ -1,8 +1,22 @@
 # Running MatterSim and other Python-based Machine Learning Models
 
-## Using MatterSim bank workflow
+This tutorial will guide you through the process of running MatterSim and other
+Python-based Machine Learning Models on Matera platform. There are few different
+ways to run Python-based Machine Learning Models. We will cover the following
+approaches:
 
-### Copy bank workflow
+1. Using an existing workflow from Mat3ra bank
+2. Creating a new workflow and choosing one of the available flavors/templates
+3. Using a general Python template and specifying all necessary dependencies via
+Python `requirements.txt`
+
+We also discuss how to run jobs on GPUs, and take advantage of multi-threading.
+Finally, we present a step-by-step video tutorial.
+
+
+## 1. Using bank workflow
+
+### 1.1. Copy bank workflow
 
 The easiest way to run MatterSim calculations is to use an existing bank
 workflow. Before we can use a workflow to create a job, we need to copy it to
@@ -25,7 +39,7 @@ The workflow is consists of three units:
 
 ![MatteSim workflow units](../../images/tutorials/mattersim/mattersim-workflow.webp "MatteSim workflow units")
 
-### Create and submit job
+### 1.2. Create and submit job
 
 1. Navigate to the jobs designer page from the left sidebar.
 2. Click "Create New Job".
@@ -41,7 +55,7 @@ workflow you want to use.
 can open the MatterSim unit under workflow tab to see the standard output. All
 the input and outputs are available under the "Files" tab.
 
-## Creating MatterSim workflow
+## 2. Creating new workflow
 
 In this section, we will describe how to create a new workflow and use MatterSim
 flavor/<wbr/>template.
@@ -57,44 +71,55 @@ flavor.
 use ASE library to create a material definition, instead of getting material
 from the job context.
 
-```python title="SCRIPT.PY"
-from ase.build import bulk
-ase_atoms = bulk("GaN", "wurtzite", a=3.189, c=5.185)
-```
+    ```python title="SCRIPT.PY"
+    ...
+    from ase.build import bulk
+    ase_atoms = bulk("GaN", "wurtzite", a=3.189, c=5.185)
+    ...
+    ```
 
 6. Close unit modal by clicking on the "X" button in the top right.
 7. Save and exit the workflow editor.
 8. Now we can create a new job using this workflow, as we did in the previous
 section.
 
-### Running other Python-based Machine Learning Models
+!!!tip "Run models on GPU"
+    If you want to run your model on GPU, please submit your job in one of the
+    GPU queues. For example, "GOF" queue for Google Cloud (Cluster-001).
 
-If you want to run other Python-based Machine Learning Models, you can create a
-new workflow and use the same approach. In this case, select default "Python"
+## 3. Using general Python template
+
+If you want to run other Python-based Machine Learning Models that is not
+available in the workflow bank or flavors/templates list, you can create a new
+workflow and use the same approach. In this case, select default "Python"
 flavor/<wbr/>template, add python dependencies to the "requirements.txt" tab,
-and write your Python script to the "script.py" tab.
+and write your Python script in the "script.py" tab.
 
 ![General Python template](../../images/tutorials/mattersim/general-py-template.webp "General Python template")
 
-If your model can use multi-threading, you can specify necessary environment
-variables on top of your python script.
+As long as your model is Python-based, and dependencies can be installed via
+pip, you can run it on Matera platform.
 
-```python title="SCRIPT.PY"
-import os
+!!!tip "Multi-threading"
+    If your model can use multi-threading, you can specify necessary environment
+    variables on top of your python script.
 
-# set number of CPUs to run on
-ncore = "2"
+    ```python title="SCRIPT.PY"
+    import os
 
-# set env variables
-# have to set these before importing numpy or others
-os.environ["OMP_NUM_THREADS"] = ncore
-os.environ["OPENBLAS_NUM_THREADS"] = ncore
-os.environ["MKL_NUM_THREADS"] = ncore
-os.environ["VECLIB_MAXIMUM_THREADS"] = ncore
-os.environ["NUMEXPR_NUM_THREADS"] = ncore
-```
+    # set number of CPUs to run on
+    ncore = "2"
 
-## Step-by-step Video Tutorial
+    # set env variables
+    # have to set these before importing numpy or others
+    os.environ["OMP_NUM_THREADS"] = ncore
+    os.environ["OPENBLAS_NUM_THREADS"] = ncore
+    os.environ["MKL_NUM_THREADS"] = ncore
+    os.environ["VECLIB_MAXIMUM_THREADS"] = ncore
+    os.environ["NUMEXPR_NUM_THREADS"] = ncore
+    ```
+
+## 4. Step-by-step Video Tutorial
 
 In the below animation, we walk you through the whole process.
 
@@ -111,7 +136,7 @@ In the below animation, we walk you through the whole process.
     your dependencies, you can try to update the requirements.txt file with
     exact versions of your dependencies.
 
-## References
+## 5. References
 
 - [MatterSim GitHub repository](https://github.com/microsoft/mattersim)
 - [MatterSim documentation](https://microsoft.github.io/mattersim/)
