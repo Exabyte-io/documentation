@@ -16,13 +16,6 @@ dependencies through `requirements.txt`.
 The page also covers running jobs on a Graphics Processing Unit (GPU) and
 utilizing multi-threading, and closes with a step-by-step video walkthrough.
 
-!!!note "Prerequisites"
-    A Mat3ra account with access to a compute cluster is assumed. Familiarity
-    with the [Workflow Designer](../../workflow-designer/overview.md) and
-    [Jobs Designer](../../jobs-designer/overview.md) is recommended. For GPU
-    runs, access to a GPU queue is required.
-
-
 ## 1. Using a bank workflow
 
 A common approach is to import an existing workflow from the
