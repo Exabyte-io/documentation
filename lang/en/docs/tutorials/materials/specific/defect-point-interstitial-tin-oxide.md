@@ -8,6 +8,7 @@ tags:
   - point defects
   - Sn
   - O
+  - D-0D-INT
 
 hide:
   - tags

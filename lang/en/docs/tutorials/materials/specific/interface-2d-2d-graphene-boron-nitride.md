@@ -5,6 +5,7 @@ tags:
   - Hexagonal Boron Nitride
   - interface
   - stacking
+  - C-2D-INT-Z
 
 hide:
   - tags

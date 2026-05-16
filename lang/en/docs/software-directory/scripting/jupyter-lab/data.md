@@ -5,12 +5,12 @@
 We present in what follows the [structured representation](../../../data-structured/overview.md) for the [Jupyter Lab Application](overview.md).
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software_directory/scripting/jupyter-lab.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software_directory/scripting/jupyter-lab.json"
     ```
 

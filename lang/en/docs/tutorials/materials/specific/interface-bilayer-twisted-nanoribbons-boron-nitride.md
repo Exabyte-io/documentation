@@ -6,6 +6,7 @@ tags:
   - BN
   - boron
   - nitrogen
+  - C-2D-INT-T
 
 hide:
   - tags
