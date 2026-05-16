@@ -4,12 +4,12 @@ Below, the user can find an example [JSON structured representation](../../data-
 
 === "Schema"
 
-    ``` json
+    ```json
     --8<-- "data/esse/schema/models_directory/st/det/ml.json"
     ```
 
 === "Example"
 
-    ``` json
+    ```json
     --8<-- "data/esse/example/models_directory/st/det/ml.json"
     ```

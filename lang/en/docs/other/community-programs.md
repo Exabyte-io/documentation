@@ -1,6 +1,6 @@
 # Community Programs
 
-> Last updated: Oct 7, 2025
+> Last updated: Apr 11, 2026
 
 ## 1. Free Compute Tier for the Platform Users.
 
@@ -10,7 +10,7 @@ users.
 The primary goal of this program is to support academic research and education in the field of materials science and
 enable the community to explore the capabilities of our platform.
 
-The program is targeted for users with current academic affiliations, however, we welcome private parties as well.
+The program is targeted for users with current academic affiliations; however, we welcome private parties as well.
 
 The free tier access is available through [cluster-101](../infrastructure/clusters/cluster-101.md) only.
 
@@ -29,7 +29,7 @@ To be eligible for the Limited Free Compute program, users must meet the followi
 
 ### 1.2. Applying for Free Compute.
 
-As of now, no seprate application is needed. If you meet the eligibility criteria above, you can start using the
+As of now, no separate application is needed. If you meet the eligibility criteria above, you can start using the
 platform and its resources right away.
 
 We will review the user base periodically and reach out to the users who meet the eligibility criteria to inform them
@@ -37,31 +37,10 @@ about the program and its benefits.
 
 And consequently, we will screen out the users who do not meet the criteria.
 
-<!--
-
-### Applying for Limited Free Compute
-
-https://docs.google.com/forms/d/e/1FAIpQLSfgghQdRn8sBKespFk3FZSiEoTUmtR0cLhDn0d_rNmtcA-gZg/viewform?usp=dialog
-As below:
-
-1. Fill
-   in <a href="https://docs.google.com/forms/d/e/1FAIpQLSfgghQdRn8sBKespFk3FZSiEoTUmtR0cLhDn0d_rNmtcA-gZg/viewform?usp=dialog" target="_blank">
-   this online form</a>
-2. For new users - submit a registration request using an email address associated with your academic institution
-   include the information requested in **3**.
-3. For existing users - if you use a personal email address during the registration, send an email to "
-   support@mat3ra.com" from the email address associated with your academic institution (ie. hosted on a ".edu" domain)
-   with a subject containing "Free Access for Academic Users"
-
-we will review and enable access as appropriate. We will prioritize applications providing detailed information about
-the applicants (ie. Google Scholar, ResearchGate profile(s), links to prior publications) and the nature of the
-anticipated work.
-
--->
 
 ### 1.3. Free Compute Conditions.
 
-Free access is limited to the certain compute resources and is subject to other limitations as below.
+Free access is limited to certain compute resources and is subject to the following limitations.
 
 #### 1.3.1. Limitations
 
@@ -75,7 +54,7 @@ As below:
 | Max job queued per user |         10         |
 |    Available Queues     |      "D" only      |
 |   Available Resources   | "cluster-101" only |
-|   Included Disk Quota   |       10 Gb        |
+|   Default Disk Quota   |       10 Gb        |
 
 For more information, please see [cluster-101](../infrastructure/clusters/cluster-101.md).
 
@@ -84,7 +63,7 @@ For more information, please see [cluster-101](../infrastructure/clusters/cluste
 Any/all published work derived from any of the Community Programs listed here must include the following acknowledgement
 and citation.
 
-**Acknowledgement text**
+**Acknowledgment text**
 
 ```text
 The authors performed this work partially or in full using the Mat3ra.com 
@@ -94,25 +73,25 @@ platform [REFERENCE TO THE BELOW CITATION].
 **Citation**
 
 ```text
-Timur Bazhirov, "Data-centric online ecosystem for digital materials science.", 
-arxiv.org preprint, 2019, https://arxiv.org/abs/1902.10838
+Vsevolod Biryukov, Kamal Choudhary, Timur Bazhirov, "AI-ready design of realistic 2D materials and interfaces with Mat3ra-2D.", 
+arxiv.org preprint, 2026, https://arxiv.org/abs/2603.27886
 ``` 
 
-In Bibtex format:
+In BibTeX format:
 
 ```bibtex
-@article{Mat3ra-Platform-Reference,
-    title={Data-centric online ecosystem for digital materials science},
-    author={Bazhirov, Timur},
-    journal={arxiv.org/abs/1902.10838},
-    year={2019},
+@article{2026-mat3ra-2d,
+    title={AI-ready design of realistic 2D materials and interfaces with Mat3ra-2D},
+    author={Biryukov, Vsevolod, and Choudhary, Kamal, and Bazhirov, Timur},
+    journal={arxiv.org/abs/2603.27886},
+    year={2026},
 }
 ```
 
 ## 3. Publicity.
 
 We plan to select some of the work performed under the Free Compute Tier to be highlighted in the online
-publication sources, similar to the below:
+publication sources, similar to the following:
 
 - [Enabling new Science through Accessible Cloud HPC](https://www.mat3ra.com/news-and-blog-posts/enabling-new-science-through-accessible-modeling-and-simulations)
 - [Scientific Computing on Cloud Infrastructure](https://blogs.oracle.com/cloud-infrastructure/post/exabyteio-for-scientific-computing-on-oracle-cloud-infrastructure-hpc)

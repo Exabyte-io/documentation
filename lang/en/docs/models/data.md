@@ -6,12 +6,12 @@ The corresponding method components are also included in this example, and are e
 
 === "Schema"
 
-    ``` json
+    ```json
     --8<-- "data/esse/schema/model.json"
     ```
 
 === "Example"
 
-    ``` json
+    ```json
     --8<-- "data/esse/example/model.json"
     ```

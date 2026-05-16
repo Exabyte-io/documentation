@@ -5,11 +5,11 @@ workflow units adopt the [schema](../../../data-structured/overview.md) used
 by [Python Units](../../scripting/python/data.md).
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software_directory/scripting/python.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software_directory/scripting/python.json"
     ```

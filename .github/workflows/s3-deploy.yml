@@ -18,14 +18,14 @@ jobs:
       AWS_SECRET_ACCESS_KEY: ${{ secrets.S3_SECRET_KEY }}
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           fetch-depth: 0
           lfs: true
           submodules: true
 
       - name: Set python 3 version
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@a309ff8b426b58ec0e2a45f0f869d46889d02405 # v6.2.0
         with:
           python-version: "3.10"
 
@@ -34,7 +34,7 @@ jobs:
 
       - name: Deploy to Production (dev branch, old docs)
         if: github.ref == 'refs/heads/dev'
-        uses: Reggionick/s3-deploy@v4
+        uses: Reggionick/s3-deploy@04c48f45adfd7a34c66348cf9cd1b6cd117cc467 # v4.0.0
         with:
           folder: site
           bucket: docs.mat3ra.com
@@ -46,7 +46,7 @@ jobs:
 
       - name: Deploy to Development (main branch, new docs)
         if: github.ref == 'refs/heads/main'
-        uses: Reggionick/s3-deploy@v4
+        uses: Reggionick/s3-deploy@04c48f45adfd7a34c66348cf9cd1b6cd117cc467 # v4.0.0
         with:
           folder: site
           bucket: docs-new.mat3ra.com

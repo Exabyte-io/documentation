@@ -6,12 +6,12 @@ Below, the user can find an example JSON structured representation of a [Method]
 
 === "Schema"
 
-    ``` json
+    ```json
     --8<-- "data/esse/schema/method.json"
     ```
 
 === "Example"
 
-    ``` json
+    ```json
     --8<-- "data/esse/example/method.json"
     ```
