@@ -16,3 +16,10 @@ The ML model trained in the above-mentioned initial tutorial can then be employe
 We explain how large scale molecular dynamics simulation can be performed in our
 platform using DFT, DeePMD and LAMMPS - [Molecular dynamics using DeePMD](
 deepmd-mlff-with-espresso-cp-and-lammps.md).
+
+
+## Run MatterSim and other Python-based Machine Learning Models
+
+Run MatterSim and other Python-based Machine Learning Models for predicting
+various material properties -
+[Running MatterSim and other Python-based Machine Learning Models](mattersim.md).
