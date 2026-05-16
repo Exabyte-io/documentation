@@ -14,12 +14,12 @@ Also listed below, is an example of a JSON representation of the [total energy](
   </summary>
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/properties_directory/scalar/total_energy.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/properties_directory/scalar/total_energy.json"
     ```
 

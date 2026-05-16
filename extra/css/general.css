@@ -133,3 +133,8 @@ footer {
     color: grey;
     padding-top: 0.6em;
 }
+
+/* Hide line numbers in code blocks with only one line */
+.highlight:not(:has(.linenodiv .normal ~ .normal)) .linenos {
+    display: none;
+}

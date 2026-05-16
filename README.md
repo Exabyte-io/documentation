@@ -332,13 +332,13 @@ The [markdown_include](https://github.com/Exabyte-io/markdown-include) package i
 ```text
     === "Schema"
 
-        ``` json
+        ```json
         --8<-- "data/esse/schema/material.json"
         ```
 
     === "Example"
 
-        ``` json
+        ```json
         --8<-- "data/esse/example/material.json"
         ```
 ```

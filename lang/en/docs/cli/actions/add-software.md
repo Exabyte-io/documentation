@@ -144,6 +144,7 @@ along with its dependencies.
     5. Build routine, under the `post` section
 
 Now we are ready to build the container with:
+
 ```bash
 apptainer build espresso.sif espresso.def
 ```

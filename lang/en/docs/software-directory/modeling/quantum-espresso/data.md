@@ -5,23 +5,23 @@ We present in this page the [structured representations](../../../data-structure
 ## Application
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software_directory/modeling/espresso.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software_directory/modeling/espresso.json"
     ```
 
 ## Compute Parameters
 
 === "Schema"
-    ``` json
+    ```json
     --8<-- "data/esse/schema/software_directory/modeling/espresso/arguments.json"
     ```
 
 === "Example"
-    ``` json
+    ```json
     --8<-- "data/esse/example/software_directory/modeling/espresso/arguments.json"
     ```
