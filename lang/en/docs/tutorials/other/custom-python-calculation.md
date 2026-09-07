@@ -61,14 +61,10 @@ browser, and named in the `USER_ASSET_FILES` parameter. The notebook then
 uploads them next to the script, and the workflow fetches them into the same
 working directory, where the script opens them by name.
 
-A data file may be of any type — a table, a pseudopotential, a model checkpoint.
-Its size is what decides the route it takes, which
-[Section 6](#6-file-size) covers.
-
-!!!warning "Reserved file names"
-    The names `script.py`, `requirements.txt` and `material.json` are written by
-    the workflow itself. An upload under one of those names is refused, since it
-    would be overwritten before the script runs.
+A data file may be of any type and any size — a table, a pseudopotential, a
+model checkpoint — because data files go straight to object storage rather than
+through the platform. [Section 6](#6-file-size) covers what that means for the
+script itself.
 
 ### 1.4. Declare dependencies
 
@@ -176,20 +172,20 @@ application installed on the compute node. Its default example builds Quantum ES
 from `material.json` and runs an SCF and a band structure step for silicon with a pseudopotential
 from the platform's library. A pseudopotential of the user's own goes up through the same upload
 call as any data file — placed in the `uploads` folder, listed in `USER_ASSET_FILES`, with the
-script's `PSEUDO_DIR` pointed at the working directory — and Quantum ESPRESSO's own log then names
-the uploaded file as the one it read. Such a file can also be registered as a first-class
+script's `PSEUDO_DIR`, `PSEUDO_FILES` and `MASSES` set at the top of the script — and Quantum
+ESPRESSO's own log then names the uploaded file as the one it read. Such a file can also be registered as a first-class
 pseudopotential through the web interface, as described in
 [Upload a custom pseudopotential](../dft/upload-pseudopotential.md).
 
 
 ## 6. File size
 
-A file uploaded from the notebook or the web interface travels inside the request that carries it,
-encoded as text, so its size is bounded: roughly 75 MB through the web interface and 37 MB through
-the API — the same bound for a text file and a binary one. Anything larger is not sent through the platform at all — the platform signs a short-lived
-upload URL and the file goes straight to object storage, with no size limit. The notebook chooses
-between the two, so a script, a pseudopotential and a several-hundred-megabyte model checkpoint are
-all listed the same way in `USER_ASSET_FILES`.
+A file that travels inside the request carrying it is bounded by the size of that request:
+roughly 75 MB through the web interface and 37 MB through the API, the same bound for text and
+binary alike. The notebook sends only the script that way. Everything named in `USER_ASSET_FILES`
+takes the other route — the platform signs a short-lived upload URL and the file goes straight to
+object storage, with no size limit — so a pseudopotential and a several-hundred-megabyte model
+checkpoint are listed exactly the same way.
 
 The script is given one material per job, as `material.json`. A calculation over
 a set of materials at once is a different shape of workflow, and is not what this
