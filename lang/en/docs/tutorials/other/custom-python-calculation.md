@@ -202,7 +202,7 @@ The pages below cover the platform features this notebook builds on.
   the application the execution unit uses.
 - [JupyterLite]({{ interface_url }}/jupyterlite/overview/) — the in-browser
   notebook environment.
-- [File endpoint](../../rest-api/endpoints.md) — the API the notebook uploads
-  through, usable directly for the same purpose.
+- [File endpoint]({{ developers_url }}/rest-api/endpoints/) — the API the
+  notebook uploads through, usable directly for the same purpose.
 - [api-examples](https://github.com/mat3ra/api-examples) — the repository the
   notebook is maintained in.
