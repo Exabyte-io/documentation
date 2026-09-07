@@ -138,7 +138,7 @@ in the web interface. It consists of four
 - **I/O unit, object storage:** fetches the uploaded script and data files into
 the working directory. The notebook sets its input list from the upload it has
 just performed.
-- **I/O unit, material:** fetches the job's materials from the job context.
+- **I/O unit, material:** fetches the job's material through the API, by the id the job carries.
 - **Assignment unit:** takes the first material and assigns it to a global
 variable named `MATERIAL`.
 - **Execution unit:** runs a short runner script that writes `MATERIAL` to
@@ -202,5 +202,7 @@ The pages below cover the platform features this notebook builds on.
   the application the execution unit uses.
 - [JupyterLite]({{ interface_url }}/jupyterlite/overview/) — the in-browser
   notebook environment.
+- [File endpoint](../../rest-api/endpoints.md) — the API the notebook uploads
+  through, usable directly for the same purpose.
 - [api-examples](https://github.com/mat3ra/api-examples) — the repository the
   notebook is maintained in.
