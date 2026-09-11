@@ -31,14 +31,18 @@ using the interface created in the
     "Graphene-nickel interfaces: a review" Nanoscale, 6(5), 2548 (2014)
     [DOI: 10.1039/c3nr05279f](https://doi.org/10.1039/c3nr05279f) [@Dahal2014]
 
+    Its computed values are from **Jayeeta Lahiri et al.**, "Graphene growth and stability at nickel
+    surfaces", New J. Phys. 13, 025001 (2011)
+    [DOI: 10.1088/1367-2630/13/2/025001](https://doi.org/10.1088/1367-2630/13/2/025001) [@Lahiri2011]
+
 ### 1.1. What is being reproduced
 
 Graphene and Ni(111) are lattice-matched to within a fraction of a percent, so the film locks into
 a 1×1 registry. The review's section 2.1 collects the established structural facts: LEED I–V and
 ion scattering identify the adsorbed structure as one carbon **atop** a first-layer Ni atom and the
 other in the **fcc hollow**, 0.211 nm above the surface, with a 0.005 nm buckling in which the atop
-carbon sits further out. The review's computed values come from Lahiri *et al.*, New J. Phys. 13,
-025001 (2011) — open access, and the quantitative target here (its Table 1):
+carbon sits further out. The review's computed values come from Lahiri *et al.* [@Lahiri2011]
+(New J. Phys. 13, 025001 (2011), open access), whose Table 1 is the quantitative target here:
 
 | interface | work of adhesion (J/m²) | separation (Å) |
 |---|---|---|
@@ -68,27 +72,32 @@ if it is missing. The reduced cell is the 1×1 match: 2 carbon and 4 nickel atom
 
 ## 3. What is calculated
 
-Two tiers, both relaxed:
+Two tiers, both relaxed.
 
-1. **Fast tier — MACE-MP + D3, in the browser.** Each registry is placed (the surface sites are
-   measured from the substrate's own top layers, and each registry label is re-verified after
-   relaxation, so a structure that slid into a neighbouring registry cannot be reported under the
-   wrong name), bracketed by a rigid scan, then relaxed with the bottom substrate layers fixed —
-   the paper's scheme. Same-cell relaxed references (bare Ni slab, free-standing graphene) turn the
-   energies into works of adhesion: `W = [E(slab) + E(graphene) − E(interface)] / A`.
+**Fast tier — MACE-MP, run where the notebook runs.** Each registry is placed (the surface sites are
+measured from the substrate's own top layers, and each registry label is re-verified after
+relaxation; a structure that slid into a neighbouring registry is dropped rather than reported
+under the wrong name), bracketed by a rigid scan, then relaxed with the bottom substrate layers
+fixed — the paper's scheme. Same-cell relaxed references (bare Ni slab, free-standing graphene) turn
+the energies into works of adhesion: `W = [E(slab) + E(graphene) − E(interface)] / A`.
 
-   **The fast tier is expected to fail the energetic targets, and says so.** MACE-MP is PBE-trained,
-   and PBE-level physics is exactly what the paper rejects for this interface: chemisorption comes
-   out several times too weak. What the fast tier is good for is the geometry survey — the E(z)
-   curves, the two-minimum structure, and the dispersion-bound hollow, whose work of adhesion it
-   nearly matches (0.30 vs 0.31 J/m²). Its comparison table prints against the paper's values with
-   pass/fail per check and an honest per-tier verdict line.
+The fast tier does not reproduce the paper, and says so. MACE-MP is PBE-trained, and PBE-level
+physics is what the paper rejects for this interface. Run natively with D3 dispersion, it gives
+fcc 0.17 J/m² against the paper's 0.81, a separation of 1.98 Å against 2.16, and the atop carbon
+buckled toward the surface rather than away; the dispersion-bound hollow it does place near the
+paper's energy (0.30 against 0.31 J/m², though at 4.08 Å rather than 3.26). In the browser embed
+below, `torch-dftd` is not available, so the same tier runs without dispersion and the hollow
+registry reports itself unbound. What the fast tier delivers is the registry set, the two-branch
+energy landscape and the starting geometries for the precise tier; its table prints the MACE
+numbers beside the paper's so the gap is visible.
 
-2. **Precise tier — the paper's LDA on the platform.** One relaxation + total-energy job per
-   selected registry, starting from the MACE-relaxed geometry, plus the two same-cell references —
-   LDA (`pz`, GBRV ultrasoft — the platform carries the LDA set for both Ni and C), spin-polarized,
-   **no dispersion correction**, matching the paper: LDA binds this interface unaided, which is the
-   stated reason its authors chose it. This tier carries the reproduction claim.
+**Precise tier — the paper's LDA on the platform.** One fixed-cell relaxation per selected registry,
+starting from the MACE-relaxed geometry, plus the two same-cell references — LDA (`pz`, GBRV
+ultrasoft; the platform carries the LDA set for both Ni and C), spin-polarized for the Ni-containing
+structures and unpolarized for the non-magnetic graphene reference, no dispersion correction,
+matching the paper: LDA binds this interface unaided, which is the stated reason its authors chose
+it. Each job's final structure is read back, so separation and buckling are compared as well as the
+work of adhesion. This tier carries the reproduction claim.
 
 | registry | Fig. 1 | carbon sublattices | published target |
 |---|---|---|---|
@@ -102,8 +111,8 @@ Two tiers, both relaxed:
 | | fast tier | precise tier | Lahiri et al. |
 |---|---|---|---|
 | Method | MACE-MP-0 (large, float64) + D3 | LDA (`pz`), GBRV ultrasoft | LDA, all-electron LCAO (DMol) |
-| Spin | via training data | collinear, moment started at 0.7 μB on Ni | spin-polarized (bulk Ni: 0.56 μB) |
-| Relaxation | BFGS, bottom 2 Ni layers fixed | platform relaxation + total energy | bottom 2 of 5 Ni layers fixed |
+| Spin | via training data | collinear, moment started at 0.7 μB on Ni; graphene reference unpolarized | spin-polarized (bulk Ni: 0.56 μB) |
+| Relaxation | BFGS, bottom 2 Ni layers fixed | fixed-cell relaxation (`pw_relax`, `calculation = 'relax'`) | bottom 2 of 5 Ni layers fixed |
 | Cutoffs | — | 40 / 200 Ry (GBRV's published pair) | all-electron |
 | k-grid | — | 12×12×1 (multiple of 3, so K is on the mesh) | converged, not stated |
 | Smearing | — | Marzari-Vanderbilt cold, `degauss = 0.01` Ry | not stated |
@@ -144,16 +153,10 @@ that, because relaxation jobs outlast what a browser test may wait for.
 
 ### 5.5. Read the verdict
 
-The final cell restates the published targets and prints one verdict per tier:
-
-```
-Reproduces Lahiri et al. Table 1 [MACE tier]: no
-Reproduces Lahiri et al. Table 1 [DFT tier]: yes
-```
-
-The fast tier failing its energetic checks is the physics working as documented, not a bug — see
-section 3. The DFT-tier line appears once the selected registries and both references have
-finished.
+The final cell restates the published targets and prints one verdict line per tier, of the form
+`Reproduces Lahiri et al. Table 1 [<tier>]: yes|no`. The fast tier's line reads `no` — the physics
+working as documented, see section 3. The DFT-tier line is printed once the selected registries and
+both references have finished, over whatever was selected; the ordering check needs all three.
 
 ## 6. Troubleshooting
 
